@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,7 +223,20 @@ msgstr ""
 msgid "Our scene setup"
 msgstr "シーンのセットアップ"
 
-#: ../../docs/tutorials/animation/introduction.rst:119
+#: ../../docs/tutorials/animation/introduction.rst:121
+msgid ""
+"AnimationPlayer inherits from Node instead of Node2D or Node3D, which means "
+"that the child nodes will not inherit the transform from the parent nodes "
+"due to a bare Node being present in the hierarchy."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:125
+msgid ""
+"Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
+"a child of an AnimationPlayer node."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:128
 #, fuzzy
 msgid ""
 "The sprite holds an image texture. We animate that sprite to move between "
@@ -236,17 +249,7 @@ msgstr ""
 "スプライトのテクスチャとして使用します。開始点として、スプライトを画面上の左"
 "の位置に移動します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:126
-msgid ""
-"Adding animated nodes as children to the AnimationPlayer node is not "
-"required, but it is a nice way of distinguishing animated nodes from non-"
-"animated nodes in the Scene Tree."
-msgstr ""
-"アニメーションするノードを子としてAnimationPlayerノードに追加する必要はありま"
-"せんが、シーンツリー内のアニメーションするノードと非アニメーションノードを区"
-"別するのに便利な方法です。"
-
-#: ../../docs/tutorials/animation/introduction.rst:130
+#: ../../docs/tutorials/animation/introduction.rst:133
 msgid ""
 "Select the AnimationPlayer node, then click the \"Animation\" button in the "
 "animation editor. From the list select \"New\" (|Add Animation|) to add a "
@@ -257,26 +260,26 @@ msgstr ""
 "メーションを追加します。そして、ダイアログボックスにアニメーションの名前を入"
 "力します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:138
+#: ../../docs/tutorials/animation/introduction.rst:141
 msgid "Add a new animation"
 msgstr "新しいアニメーションの追加"
 
-#: ../../docs/tutorials/animation/introduction.rst:141
+#: ../../docs/tutorials/animation/introduction.rst:144
 msgid "Adding a track"
 msgstr "トラックの追加"
 
-#: ../../docs/tutorials/animation/introduction.rst:143
+#: ../../docs/tutorials/animation/introduction.rst:146
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
 "スプライトに新しいトラックを追加するには、それを選択してツールバーで見てくだ"
 "さい:"
 
-#: ../../docs/tutorials/animation/introduction.rst:149
+#: ../../docs/tutorials/animation/introduction.rst:152
 msgid "Convenience buttons"
 msgstr "便利なボタン"
 
-#: ../../docs/tutorials/animation/introduction.rst:151
+#: ../../docs/tutorials/animation/introduction.rst:154
 msgid ""
 "These switches and buttons allow you to add keyframes for the selected "
 "node's location, rotation, and scale respectively."
@@ -284,7 +287,7 @@ msgstr ""
 "これらのスイッチとボタンを使用すると、選択したノードの位置、回転、スケールに"
 "それぞれキーフレームを追加できます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:154
+#: ../../docs/tutorials/animation/introduction.rst:157
 msgid ""
 "Deselect rotation, because we are only interested in the location of our "
 "sprite for this tutorial and click on the key button."
@@ -292,7 +295,7 @@ msgstr ""
 "このチュートリアルではスプライトの位置にのみ関心があるため、回転の選択を解除"
 "し、キーボタンをクリックします。"
 
-#: ../../docs/tutorials/animation/introduction.rst:157
+#: ../../docs/tutorials/animation/introduction.rst:160
 #, fuzzy
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
@@ -301,7 +304,7 @@ msgstr ""
 "変形/位置のプロパティにトラックがまだ設定されていないため、Godotはこのトラッ"
 "クを設定する必要があるかどうかを尋ねます。 [作成]をクリックします。"
 
-#: ../../docs/tutorials/animation/introduction.rst:160
+#: ../../docs/tutorials/animation/introduction.rst:163
 msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
@@ -309,15 +312,15 @@ msgstr ""
 "これにより、タイムラインの先頭に新しいトラックと最初のキーフレームが作成され"
 "ます:"
 
-#: ../../docs/tutorials/animation/introduction.rst:166
+#: ../../docs/tutorials/animation/introduction.rst:169
 msgid "The sprite track"
 msgstr "スプライトトラック"
 
-#: ../../docs/tutorials/animation/introduction.rst:169
+#: ../../docs/tutorials/animation/introduction.rst:172
 msgid "The second keyframe"
 msgstr "2番目のキーフレーム"
 
-#: ../../docs/tutorials/animation/introduction.rst:171
+#: ../../docs/tutorials/animation/introduction.rst:174
 msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
@@ -325,7 +328,7 @@ msgstr ""
 "ここで、スプライトが向かうべき位置と、そこに到達するまでの時間を設定する必要"
 "があります。"
 
-#: ../../docs/tutorials/animation/introduction.rst:174
+#: ../../docs/tutorials/animation/introduction.rst:177
 msgid ""
 "Let's say, we want it to take 2 seconds to go to the other point. By default "
 "the animation is set to last only 1 second, so change this in the timeline "
@@ -335,11 +338,11 @@ msgstr ""
 "ションの持続時間は2秒に設定されているので、アニメーションパネルの下部パネルの"
 "タイムラインコントロールでこれを2に変更します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:181
+#: ../../docs/tutorials/animation/introduction.rst:184
 msgid "Animation length"
 msgstr "アニメーションの長さ"
 
-#: ../../docs/tutorials/animation/introduction.rst:183
+#: ../../docs/tutorials/animation/introduction.rst:186
 #, fuzzy
 msgid ""
 "Click on the timeline header near the 2-second mark and move the sprite to "
@@ -348,34 +351,34 @@ msgstr ""
 "2秒のマークの近くのタイムラインヘッダーをクリックし、スプライトを右側のター"
 "ゲット位置に移動します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:186
+#: ../../docs/tutorials/animation/introduction.rst:189
 msgid ""
 "Again, click the key button in the toolbar. This creates our second keyframe."
 msgstr ""
 "再度、ツールバーのキーボタンをクリックします。これにより、2番目のキーフレーム"
 "が作成されます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:190
+#: ../../docs/tutorials/animation/introduction.rst:193
 msgid "Run the animation"
 msgstr "アニメーションを実行する"
 
-#: ../../docs/tutorials/animation/introduction.rst:192
+#: ../../docs/tutorials/animation/introduction.rst:195
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr "[最初から再生] (|Play from beginning|) ボタンをクリックします。"
 
-#: ../../docs/tutorials/animation/introduction.rst:194
+#: ../../docs/tutorials/animation/introduction.rst:197
 msgid "Yay! Our animation runs:"
 msgstr "イェーイ！アニメーションが実行されます:"
 
-#: ../../docs/tutorials/animation/introduction.rst:199
+#: ../../docs/tutorials/animation/introduction.rst:202
 msgid "The animation"
 msgstr "アニメーション"
 
-#: ../../docs/tutorials/animation/introduction.rst:202
+#: ../../docs/tutorials/animation/introduction.rst:205
 msgid "Back and forth"
 msgstr "行ったり来たり"
 
-#: ../../docs/tutorials/animation/introduction.rst:204
+#: ../../docs/tutorials/animation/introduction.rst:207
 msgid ""
 "Godot has an additional feature here. Like said before, Godot always "
 "calculates the frames between two keyframes. In a loop, the first keyframe "
@@ -385,11 +388,11 @@ msgstr ""
 "間のフレームを計算します。ループでは、最後にキーフレームが指定されていない場"
 "合、最初のキーフレームが最後のキーフレームにもなります。"
 
-#: ../../docs/tutorials/animation/introduction.rst:212
+#: ../../docs/tutorials/animation/introduction.rst:215
 msgid "Animation loop"
 msgstr "アニメーションループ"
 
-#: ../../docs/tutorials/animation/introduction.rst:214
+#: ../../docs/tutorials/animation/introduction.rst:217
 #, fuzzy
 msgid ""
 "If you set the animation length to 4 seconds now, the animation moves back "
@@ -400,12 +403,12 @@ msgstr ""
 "す。トラックのループモードを変更すると、この動作を変更できます。これについて"
 "は、次の章で説明します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:219
-#: ../../docs/tutorials/animation/introduction.rst:227
+#: ../../docs/tutorials/animation/introduction.rst:222
+#: ../../docs/tutorials/animation/introduction.rst:230
 msgid "Track settings"
 msgstr "トラックの設定"
 
-#: ../../docs/tutorials/animation/introduction.rst:221
+#: ../../docs/tutorials/animation/introduction.rst:224
 msgid ""
 "Each track has a settings panel at the end, where you can set the update "
 "mode, the track interpolation, and the loop mode."
@@ -413,7 +416,7 @@ msgstr ""
 "各トラックの最後には、更新モード、トラック補間、ループモードを設定できる設定"
 "パネルがあります。"
 
-#: ../../docs/tutorials/animation/introduction.rst:229
+#: ../../docs/tutorials/animation/introduction.rst:232
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
@@ -421,19 +424,19 @@ msgstr ""
 "トラックの更新モードは、プロパティ値を更新するタイミングをGodotに指示します。"
 "これには次のものがあります:"
 
-#: ../../docs/tutorials/animation/introduction.rst:232
+#: ../../docs/tutorials/animation/introduction.rst:235
 msgid "Continuous: Update the property on each frame"
 msgstr "継続的: 各フレームのプロパティを更新します"
 
-#: ../../docs/tutorials/animation/introduction.rst:233
+#: ../../docs/tutorials/animation/introduction.rst:236
 msgid "Discrete: Only update the property on keyframes"
 msgstr "離散: キーフレームのプロパティのみを更新します"
 
-#: ../../docs/tutorials/animation/introduction.rst:234
+#: ../../docs/tutorials/animation/introduction.rst:237
 msgid "Trigger: Only update the property on keyframes or triggers"
 msgstr "トリガー: キーフレームまたはトリガーのプロパティのみを更新します"
 
-#: ../../docs/tutorials/animation/introduction.rst:235
+#: ../../docs/tutorials/animation/introduction.rst:238
 msgid ""
 "Capture: The current value of a property is remembered, and it will blend "
 "with the first animation key found"
@@ -441,11 +444,11 @@ msgstr ""
 "キャプチャ: プロパティの現在の値が記憶され、最初に見つかったアニメーション "
 "キーとブレンドされます"
 
-#: ../../docs/tutorials/animation/introduction.rst:240
+#: ../../docs/tutorials/animation/introduction.rst:243
 msgid "Track mode"
 msgstr "トラックモード"
 
-#: ../../docs/tutorials/animation/introduction.rst:242
+#: ../../docs/tutorials/animation/introduction.rst:245
 msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
@@ -453,7 +456,7 @@ msgstr ""
 "普通のアニメーションでは、通常は「継続的」を使用します。他のタイプは、複雑な"
 "アニメーションをスクリプト化するために使用されます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:245
+#: ../../docs/tutorials/animation/introduction.rst:248
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
@@ -461,27 +464,27 @@ msgstr ""
 "補間は、キーフレーム間のフレーム値を計算する方法をGodotに伝えます。次の補間"
 "モードがサポートされています:"
 
-#: ../../docs/tutorials/animation/introduction.rst:248
+#: ../../docs/tutorials/animation/introduction.rst:251
 msgid "Nearest: Set the nearest keyframe value"
 msgstr "近傍: 最も近いキーフレーム値を設定します"
 
-#: ../../docs/tutorials/animation/introduction.rst:249
+#: ../../docs/tutorials/animation/introduction.rst:252
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
 msgstr "リニア: 2つのキーフレーム間の線形関数計算に基づいて値を設定します"
 
-#: ../../docs/tutorials/animation/introduction.rst:251
+#: ../../docs/tutorials/animation/introduction.rst:254
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
 msgstr "キュービック: 2つのキーフレーム間の3次関数計算に基づいて値を設定します"
 
-#: ../../docs/tutorials/animation/introduction.rst:257
+#: ../../docs/tutorials/animation/introduction.rst:260
 msgid "Track interpolation"
 msgstr "トラック補間"
 
-#: ../../docs/tutorials/animation/introduction.rst:259
+#: ../../docs/tutorials/animation/introduction.rst:262
 msgid ""
 "Cubic interpolation leads to a more natural movement, where the animation is "
 "slower at a keyframe and faster between keyframes. This is usually used for "
@@ -492,7 +495,7 @@ msgstr ""
 "アニメーションに使用されます。リニア補間は、よりロボット的な動きを作成しま"
 "す。"
 
-#: ../../docs/tutorials/animation/introduction.rst:264
+#: ../../docs/tutorials/animation/introduction.rst:267
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
@@ -500,11 +503,11 @@ msgstr ""
 "Godotは 2つのループ モードをサポートしており、ループに設定されている場合、ア"
 "ニメーションに影響を与えます:"
 
-#: ../../docs/tutorials/animation/introduction.rst:270
+#: ../../docs/tutorials/animation/introduction.rst:273
 msgid "Loop modes"
 msgstr "ループモード"
 
-#: ../../docs/tutorials/animation/introduction.rst:272
+#: ../../docs/tutorials/animation/introduction.rst:275
 msgid ""
 "Clamp loop interpolation: When this is selected, the animation stops after "
 "the last keyframe for this track. When the first keyframe is reached again, "
@@ -514,7 +517,7 @@ msgstr ""
 "の後にアニメーションが停止します。最初のキーフレームに再び到達すると、アニ"
 "メーションはその値にリセットされます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:275
+#: ../../docs/tutorials/animation/introduction.rst:278
 msgid ""
 "Wrap loop interpolation: When this is selected, Godot calculates the "
 "animation after the last keyframe to reach the values of the first keyframe "
@@ -523,12 +526,12 @@ msgstr ""
 "ラップループ補間(Wrap): これを選択すると、Godotは最後のキーフレームの後もアニ"
 "メーションを計算して、最初のキーフレームの値に再び到達します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:280
-#: ../../docs/tutorials/animation/introduction.rst:293
+#: ../../docs/tutorials/animation/introduction.rst:283
+#: ../../docs/tutorials/animation/introduction.rst:296
 msgid "Keyframes for other properties"
 msgstr "その他のプロパティのキーフレーム"
 
-#: ../../docs/tutorials/animation/introduction.rst:282
+#: ../../docs/tutorials/animation/introduction.rst:285
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
@@ -537,7 +540,7 @@ msgstr ""
 "ありません。すべてのプロパティは、キーフレームを設定できるトラックとして使用"
 "できます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:285
+#: ../../docs/tutorials/animation/introduction.rst:288
 #, fuzzy
 msgid ""
 "If you select your sprite while the animation panel is visible, you get a "
@@ -549,11 +552,11 @@ msgstr ""
 "リックすると、Godotは自動的にトラックとキーフレームを現在のアニメーションに追"
 "加します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:296
+#: ../../docs/tutorials/animation/introduction.rst:299
 msgid "Edit keyframes"
 msgstr "キーフレームの編集"
 
-#: ../../docs/tutorials/animation/introduction.rst:298
+#: ../../docs/tutorials/animation/introduction.rst:301
 msgid ""
 "For advanced use and to edit keyframes in detail, You can click on them to "
 "bring up the keyframe editor in the inspector. You can use this to directly "
@@ -562,11 +565,11 @@ msgstr ""
 "高度な使用や詳細な編集のために、キーフレームをクリックすると、インスペクタで"
 "キーフレームエディタが表示されます。これを使用して、値を直接編集できます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:305
+#: ../../docs/tutorials/animation/introduction.rst:308
 msgid "Keyframe editor editing a key"
 msgstr "キーを編集するキーフレームエディタ"
 
-#: ../../docs/tutorials/animation/introduction.rst:307
+#: ../../docs/tutorials/animation/introduction.rst:310
 msgid ""
 "Additionally, you can also edit the easing value for this keyframe by "
 "clicking and dragging the easing setting. This tells Godot, how to change "
@@ -576,7 +579,7 @@ msgstr ""
 "レームのイージング値を編集することもできます。これは、このキーフレームに到達"
 "したときにプロパティ値を変更する方法をGodotに伝えます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:311
+#: ../../docs/tutorials/animation/introduction.rst:314
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
@@ -584,11 +587,11 @@ msgstr ""
 "通常、動きが「正しく見えない」場合は、この方法でアニメーションを微調整しま"
 "す。"
 
-#: ../../docs/tutorials/animation/introduction.rst:315
+#: ../../docs/tutorials/animation/introduction.rst:318
 msgid "Advanced: Call Method tracks"
 msgstr "高度: メソッド呼出しトラック"
 
-#: ../../docs/tutorials/animation/introduction.rst:317
+#: ../../docs/tutorials/animation/introduction.rst:320
 msgid ""
 "Godot's animation engine doesn't stop here. If you're already comfortable "
 "with Godot's scripting language :ref:`doc_gdscript` and :doc:`/classes/"
@@ -600,7 +603,7 @@ msgstr ""
 "ノードタイプがクラスであり、呼び出し可能なメソッドがたくさんあることがわかり"
 "ます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:323
+#: ../../docs/tutorials/animation/introduction.rst:326
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
@@ -608,7 +611,7 @@ msgstr ""
 "たとえば、\\ :ref:`class_AudioStreamPlayer` ノードタイプには、オーディオスト"
 "リームを再生するメソッドがあります。"
 
-#: ../../docs/tutorials/animation/introduction.rst:326
+#: ../../docs/tutorials/animation/introduction.rst:329
 msgid ""
 "Wouldn't it be great to use a method at a specific keyframe in an animation? "
 "This is where \"Call Method Tracks\" come in handy. These tracks reference a "
@@ -622,7 +625,7 @@ msgstr ""
 "キーフレームはメソッドの名前と引数を保持し、Godotはこのキーフレームに到達した"
 "ときに呼び出しを行います。"
 
-#: ../../docs/tutorials/animation/introduction.rst:332
+#: ../../docs/tutorials/animation/introduction.rst:335
 msgid ""
 "To demonstrate, we're going to use a call method track to play audio at a "
 "specific keyframe. Normally to play audio you should use an audio track, but "
@@ -632,7 +635,7 @@ msgstr ""
 "ディオを再生します。通常、オーディオを再生するにはオーディオトラックを使用す"
 "る必要がありますが、手法を示すためにこの方法で行います。"
 
-#: ../../docs/tutorials/animation/introduction.rst:336
+#: ../../docs/tutorials/animation/introduction.rst:339
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
@@ -640,23 +643,23 @@ msgstr ""
 "シーンツリーに :ref:`class_AudioStreamPlayer` を追加し、プロジェクトに配置し"
 "たオーディオファイルを使用してストリームを設定します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:339
+#: ../../docs/tutorials/animation/introduction.rst:342
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
 "アニメーションパネルのトラックコントロールで[トラックを追加] (|Add track|) を"
 "クリックします。"
 
-#: ../../docs/tutorials/animation/introduction.rst:342
+#: ../../docs/tutorials/animation/introduction.rst:345
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
 "可能なトラックタイプのリストから「メソッド呼出しトラック」を選択します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:347
+#: ../../docs/tutorials/animation/introduction.rst:350
 msgid "Add Call Method Track"
 msgstr "メソッド呼出しトラックの追加"
 
-#: ../../docs/tutorials/animation/introduction.rst:349
+#: ../../docs/tutorials/animation/introduction.rst:352
 msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
@@ -664,11 +667,11 @@ msgstr ""
 "選択ウィンドウで :ref:`class_AudioStreamPlayer` ノードを選択します。 Godot"
 "は、ノードへの参照を含むトラックを追加します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:355
+#: ../../docs/tutorials/animation/introduction.rst:358
 msgid "Select AudioStreamPlayer"
 msgstr "AudioStreamPlayerを選択"
 
-#: ../../docs/tutorials/animation/introduction.rst:357
+#: ../../docs/tutorials/animation/introduction.rst:360
 msgid ""
 "Right click the timeline where Godot should play the sample and click the "
 "\"Insert Key\" option. This will bring up a list of methods that can be "
@@ -678,7 +681,7 @@ msgstr ""
 "クリックします。これにより、AudioStreamPlayerノードに対して呼び出すことができ"
 "るメソッドのリストが表示されます。最初のものを選択します。"
 
-#: ../../docs/tutorials/animation/introduction.rst:364
+#: ../../docs/tutorials/animation/introduction.rst:367
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
 "`class_AudioStreamPlayer` node's \"play\" function and the stream plays."
@@ -686,7 +689,7 @@ msgstr ""
 "Godotがキーフレームに到達すると、Godotは :ref:`class_AudioStreamPlayer` ノー"
 "ドの \"play\" 関数を呼び出し、ストリームが再生されます。"
 
-#: ../../docs/tutorials/animation/introduction.rst:368
+#: ../../docs/tutorials/animation/introduction.rst:371
 msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,13 +78,12 @@ msgstr ""
 "mais otimizado e não inclui ferramentas como o editor e o depurador."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
-#, fuzzy
 msgid ""
 "Finally, Godot has a simple but efficient system for :ref:`creating DLCs as "
 "extra package files <doc_exporting_pcks>`."
 msgstr ""
-"Finalmente, Godot tem um sistema simples, mas eficiente para criar DLCs como "
-"arquivos extras de pacotes."
+"Finalmente, Godot tem um sistema simples, mas eficiente para :ref:`criar "
+"DLCs como arquivos extras de pacotes. <doc_exporting_pcks>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
 msgid ""
@@ -93,6 +92,10 @@ msgid ""
 "several PCK files by :ref:`exporting additional PCKs <doc_exporting_pcks>` "
 "and loading them at run-time."
 msgstr ""
+"Godot ainda não suporta o carregamento de arquivos PCK maiores que 2 GB. Se "
+"os dados de seu projeto exportado forem maiores que 2GM, você precisará "
+"dividi-los em vários arquivos PCK :ref:`exportando PCKs adicionais "
+"<doc_exporting_pcks>` e carregando-os em tempo de execução."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid "On mobile"
@@ -252,6 +255,10 @@ msgid ""
 "you a list of the scenes or resources in the project, and you have to select "
 "every scene or resource you want to export."
 msgstr ""
+"**Exportar todos os recursos do projeto** exportará todos os recursos do "
+"projeto. **Exportar cenas selecionadas** e **Exportar recursos "
+"selecionados** fornece uma lista das cenas ou recursos do projeto, e você "
+"deve selecionar cada cena ou recurso que deseja exportar."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:133
 msgid "Exporting from the command line"
@@ -296,13 +303,13 @@ msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
-"Muitas vezes é útil combinar o argumento ``-export`` com o argumento ``-"
+"Muitas vezes é útil combinar o sinalizador ``-export`` com o sinalizador ``-"
 "path`` e criar um conjunto prévio de exportação dedicado para exportação "
 "automatizada:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:161
 msgid "PCK versus ZIP pack file formats"
-msgstr ""
+msgstr "Formatos de arquivo PCK versus ZIP"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
@@ -310,15 +317,19 @@ msgid ""
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
+"Cada formato tem suas vantagens e desvantagens. PCK é o formato padrão e "
+"recomendado para a maioria dos casos de uso, mas você pode querer usar um "
+"arquivo ZIP, dependendo de suas necessidades."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:167
-#, fuzzy
 msgid "**PCK format:**"
-msgstr "Formato"
+msgstr "**Formato PCK:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:169
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
+"Formato sem compressão; Tamanho de arquivo maior, mas mais rápido para ler/"
+"gravar."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid ""
@@ -326,15 +337,20 @@ msgid ""
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
+"Não é legível e gravável utilizando ferramentas normalmente presentes no "
+"sistema operacional do usuário, embora existam `ferramentas de terceiros "
+"<https://github.com/hhyyrylainen/GodotPckTool>`__ para extrair e criar "
+"arquivos PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:175
-#, fuzzy
 msgid "**ZIP format:**"
-msgstr "Formato"
+msgstr "**Formato ZIP:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:177
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
+"Formato comprimido. Tamanho de arquivo menor, porém mais lento para ler/"
+"gravar."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:178
 msgid ""
@@ -342,6 +358,9 @@ msgid ""
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
+"Legível e gravável usando ferramentas normalmente presentes no sistema "
+"operacional do usuário. Isto pode ser útil para tornar o modding mais fácil "
+"(veja também :ref:`doc_exporting_pcks`)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:183
 msgid ""
@@ -350,6 +369,11 @@ msgid ""
 "use it automatically. Therefore, you have to create a *launcher script* that "
 "the player can double-click or run from a terminal to launch the project::"
 msgstr ""
+"Devido a um `bug conhecido <https://github.com/godotengine/godot/"
+"pull/42123>`__, ao usar um arquivo ZIP como um arquivo de pacote, o binário "
+"exportado não tentará usá-lo automaticamente. Portanto, você deve criar um "
+"*script de inicialização* que o player pode clicar duas vezes ou executar a "
+"partir de um terminal para iniciar o projeto::"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:195
 msgid ""
@@ -357,3 +381,6 @@ msgid ""
 "binary. On Linux, make sure to give executable permissions to the launcher "
 "script using the command ``chmod +x launch.sh``."
 msgstr ""
+"Salve o script do iniciador e coloque-o na mesma pasta do binário exportado. "
+"No Linux, certifique-se de dar permissões executáveis ao script do iniciador "
+"usando o comando ``chmod +x launch.sh``."

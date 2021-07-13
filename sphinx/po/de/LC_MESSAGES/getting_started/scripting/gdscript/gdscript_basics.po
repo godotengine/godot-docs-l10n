@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1679,8 +1679,8 @@ msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
-"Entfernt jedes ``break``. Sollte das standardmäßige ``break`` ungewünscht "
-"sein, so kann durch ein ``continue`` ein Fortfahren erzielt werden."
+"Entfernt jedes ``break``\\ s. Sollte das standardmäßige ``break`` "
+"ungewünscht sein, so kann durch ``continue`` ein Fortfahren erzielt werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "Change ``default`` to a single underscore."
@@ -1876,6 +1876,10 @@ msgid ""
 "script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
 "for more information."
 msgstr ""
+"Wenn sich das Skript im Verzeichnis ``res://addons/`` befindet, bewirkt "
+"``class_name`` nur dann, dass das Node im Dialog **Neues Node erstellen** "
+"angezeigt wird, wenn das Skript Teil eines *aktivierten* Editor-Plugins ist. "
+"Siehe :ref:`doc_making_plugins` für weitere Informationen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
@@ -1968,7 +1972,6 @@ msgstr ""
 "Notwendigkeit, sie beim Überladen explizit aufzurufen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-#, fuzzy
 msgid "Class constructor"
 msgstr "Klassen-Konstruktor"
 
@@ -2034,11 +2037,12 @@ msgstr ""
 "wie das ``e`` in ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
+#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
-"constructor as well, not just variables. eg.::"
+"constructor as well, not just variables, e.g.::"
 msgstr ""
 "Wenn der ``Idle.gd``'s ``_init`` Konstruktor 0 Argumente annimmt, muss er "
 "immer noch irgendeinen Wert an die ```State.gd`` Elternklasse übergeben, "

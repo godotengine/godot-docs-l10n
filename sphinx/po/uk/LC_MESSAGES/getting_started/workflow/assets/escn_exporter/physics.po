@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,19 @@ msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blender's "
 "physics tab:"
 msgstr ""
+"Експорт фізичних властивостей здійснюється шляхом увімкнення \"Твердого тіла"
+"\" (\"Rigid Body\") на вкладці фізики Blender:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:10
 msgid ""
 "By default, a single Blender object with rigid body enabled will export as "
 "three nodes: a PhysicsBody, a CollisionShape, and a MeshInstance."
 msgstr ""
+"За замовчуванням один об’єкт Blender із увімкненим твердим тілом "
+"експортується у вигляді трьох вузлів: PhysicsBody, CollisionShape та "
+"MeshInstance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body type"
 msgstr "Тип тіла"
 
@@ -44,11 +48,14 @@ msgid ""
 "These turn into Static and RigidBody nodes. To create a kinematic body, "
 "enable the \"animated\" checkbox on an \"Active\" body:"
 msgstr ""
+"Блендер має лише поняття \"Активне\" та \"Пасивне\" тверде тіло. Вони "
+"перетворюються на Static (статичні) та RigidBody (тверді) вузли. Щоб "
+"створити кінематичне тіло, увімкніть \"анімований\" (\"animated\") галочку "
+"на \"Активному\" (\"Active\") тілі:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Зіткнення"
+msgstr "Форми зіткнень"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:25
 msgid ""
@@ -57,10 +64,13 @@ msgid ""
 "the options in Blender's rigid body collision and rigid body dynamics "
 "interfaces are supported:"
 msgstr ""
+"Багато параметрів для форм зіткнень відсутні в Blender, а багато з форм "
+"зіткнень також відсутні. Однак підтримуються майже всі варіанти твердого "
+"зіткнення кузова та динаміки твердого тіла:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:39
 msgid "There are the following caveats:"
-msgstr ""
+msgstr "Є такі застереження:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:33
 msgid ""
@@ -68,6 +78,8 @@ msgid ""
 "Hull``, ``Capsule``, ``Sphere`` and ``Box`` are supported in both Blender "
 "and Godot"
 msgstr ""
+"Не всі форми зіткнення підтримуються. Тільки ``Mesh``, ``Convex Hull``, "
+"``Capsule``, ``Sphere`` і ``Box`` підтримуються і в Blender, і в Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:36
 msgid ""
@@ -76,6 +88,9 @@ msgid ""
 "collision mask is equal to its collision group. Most of the time, this is "
 "what you want."
 msgstr ""
+"У Godot ви можете мати різні групи зіткнень та маски зіткнень. У Blender у "
+"вас є лише групи зіткнень. Як результат, маска зіткнення експортованого "
+"об’єкта дорівнює його групі зіткнень. Найчастіше це те, що ви хочете."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:42
 msgid ""
@@ -83,10 +98,13 @@ msgid ""
 "rigid body enabled. The physics properties are taken from the parent-most "
 "rigid body, and the rest are used as collision shapes."
 msgstr ""
+"Для побудови складених фізичних форм створіть разом кілька об’єктів з "
+"увімкненим твердим тілом. Фізичні властивості взяті з найтвердішого для "
+"батьків тіла, а решта використовуються як форми зіткнення."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
 msgid "Collision geometry only"
-msgstr ""
+msgstr "Тільки геометрія зіткнення"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:49
 msgid ""
@@ -95,6 +113,10 @@ msgid ""
 "the collision shape. To only export the collision shape, set the object's "
 "maximum draw type to Wire:"
 msgstr ""
+"Часто вам потрібні різні геометрії для ваших сіток зіткнень та графічних "
+"сіток (мешів), але за замовчуванням експортер експортує сітку разом із "
+"формою зіткнення. Щоб експортувати лише форму зіткнення, встановіть "
+"максимальний тип витягування об’єкта на Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:56
 msgid ""
@@ -102,3 +124,6 @@ msgid ""
 "of the time, you want your collision geometry to be shown see-through when "
 "working on the models, so this works out fairly nicely."
 msgstr ""
+"Це також вплине на те, як об'єкт відображається у вікні перегляду Blender. "
+"Здебільшого ви хочете, щоб ваша геометрія зіткнення відображалася прозорою "
+"під час роботи з моделями, тому це працює досить гарно."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgid ""
 "are used in almost every file. This page is geared towards beginner "
 "contributors, but it can also be useful for those writing custom C++ modules."
 msgstr ""
-"Godot的C++代码库使用了几十种自定义方法和宏,这些方法和宏几乎在每个文件中都会用"
-"到.本页面向初学者,但对那些编写自定义C++模块的人也很有用."
+"Godot的C++代码库使用了几十种自定义方法和宏, 这些方法和宏几乎在每个文件中都会"
+"用到. 本页面向初学者, 但对那些编写自定义C++模块的人也很有用."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:11
 msgid "Print text"
@@ -38,7 +38,7 @@ msgstr "打印文本"
 msgid ""
 "If you need to add placeholders in your messages, use format strings as "
 "described below."
-msgstr "如果你需要在信息中添加占位符,请使用下面描述的格式字符串."
+msgstr "如果你需要在信息中添加占位符, 请使用下面描述的格式字符串."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:35
 msgid "Format a string"
@@ -49,16 +49,16 @@ msgid ""
 "The ``vformat()`` function returns a formatted :ref:`class_String`. It "
 "behaves in a way similar to C's ``sprintf()``:"
 msgstr ""
-"``vformat()`` 函数返回一个格式化的 :ref:`class_String` .它的行为方式类似于C语"
-"言的 ``sprintf()``:"
+"``vformat()`` 函数返回一个格式化的 :ref:`class_String` . 它的行为方式类似于C"
+"语言的 ``sprintf()``:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:51
 msgid ""
 "In most cases, try to use ``vformat()`` instead of string concatenation as "
 "it makes for more readable code."
 msgstr ""
-"在大多数情况下,尽量使用 ``vformat()`` 而不是字符串连接,因为这样可以使代码更易"
-"读."
+"在大多数情况下, 尽量使用 ``vformat()`` 而不是字符串连接, 因为这样可以使代码更"
+"易读."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:55
 msgid "Convert an integer or float to a string"
@@ -66,7 +66,7 @@ msgstr "将整数或浮点数转换为字符串"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:57
 msgid "This is mainly useful when printing numbers directly."
-msgstr "在直接打印数字时,这主要是有用的."
+msgstr "在直接打印数字时, 这主要是有用的."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:68
 msgid "Internationalize a string"
@@ -83,9 +83,9 @@ msgid ""
 "translated if they provide a translation for it. When contributing to the "
 "engine, this is generally the macro you should use for localizable strings."
 msgstr ""
-"``TTR()`` . **编辑器(\"工具\")的翻译** 只在编辑器中处理.如果用户在他们的一个"
-"项目中使用相同的文本,如果他们提供了翻译,但不会被翻译.在为引擎做贡献时,一般来"
-"说,这是你应该为可本地化字符串使用的宏."
+"``TTR()`` . **编辑器(\"工具\")的翻译** 只在编辑器中处理. 如果用户在他们的一个"
+"项目中使用相同的文本, 如果他们提供了翻译, 但不会被翻译. 在为引擎做贡献时, 一"
+"般来说, 这是你应该为可本地化字符串使用的宏."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:76
 msgid ""
@@ -93,16 +93,16 @@ msgid ""
 "projects if they provide a translation for the given string. This kind of "
 "translation shouldn't be used in editor-only code."
 msgstr ""
-"``RTR()`` . **运行时翻译** 如果提供给定字符串的翻译,将在项目中自动本地化,这种"
-"翻译不应该用在纯编辑器的代码中."
+"``RTR()`` . **运行时翻译** 如果提供给定字符串的翻译, 将在项目中自动本地化, 这"
+"种翻译不应该用在纯编辑器的代码中."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:87
 msgid ""
 "To insert placeholders in localizable strings, wrap the localization macro "
 "in a ``vformat()`` call as follows:"
 msgstr ""
-"要在可本地化字符串中插入占位符,请将本地化宏包裹在 ``vformat()`` 的调用中,如下"
-"所示:"
+"要在可本地化字符串中插入占位符, 请将本地化宏包裹在 ``vformat()`` 的调用中, 如"
+"下所示:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:97
 msgid ""
@@ -111,9 +111,9 @@ msgid ""
 "string will never match the translation as it will have the placeholder "
 "already replaced when it's passed to TranslationServer."
 msgstr ""
-"当同时使用 ``vformat()`` 和翻译宏时,总是将翻译宏包裹在 ``vformat()`` 中,而不"
-"是相反.否则,字符串永远不会与翻译匹配,因为当它传递给TranslationServer时,它的占"
-"位符已经被替换了."
+"当同时使用 ``vformat()`` 和翻译宏时, 总是将翻译宏包裹在 ``vformat()`` 中, 而"
+"不是相反. 否则, 字符串永远不会与翻译匹配, 因为当它传递给TranslationServer时, "
+"它的占位符已经被替换了."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:103
 msgid "Clamp a value"
@@ -124,8 +124,8 @@ msgid ""
 "Godot provides macros for clamping a value with a lower bound (``MAX``), an "
 "upper bound (``MIN``) or both (``CLAMP``):"
 msgstr ""
-"Godot提供了宏,用于用下限(``MAX``)、上限(``MIN``)或两者都有(``CLAMP``)的值进行"
-"限定:"
+"Godot提供了宏, 用于用下限(``MAX``), 上限(``MIN``)或两者都有(``CLAMP``)的值进"
+"行限定:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:117
 msgid ""
@@ -142,7 +142,7 @@ msgid ""
 "If you want to benchmark a piece of code but don't know how to use a "
 "profiler, use this snippet:"
 msgstr ""
-"如果你想对一段代码进行基准测试,但不知道如何使用分析器,可以使用这个代码段:"
+"如果你想对一段代码进行基准测试, 但不知道如何使用分析器, 可以使用这个代码段:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:135
 msgid ""
@@ -153,14 +153,14 @@ msgstr "这将打印从 ``begin`` 执行到 ``end`` 声明之间的花费时间.
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:140
 msgid ""
 "You may have to ``#include \"core/os/os.h\"`` if it's not present already."
-msgstr "如果还不存在,则可能需要 ``#include \"core/os/os.h\"`` ."
+msgstr "如果还不存在, 则可能需要 ``#include \"core/os/os.h\"`` ."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:142
 msgid ""
 "When opening a pull request, make sure to remove this snippet as well as the "
 "include if it wasn't there previously."
 msgstr ""
-"当打开一个pull request时,如果之前没有这个代码,请确保删除这个代码段以及"
+"当打开一个pull request时, 如果之前没有这个代码, 请确保删除这个代码段以及"
 "include."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
@@ -175,7 +175,7 @@ msgstr "有四种宏可供选择:"
 msgid ""
 "If a default value has been specified elsewhere, don't specify it again to "
 "avoid repetition:"
-msgstr "如果在其他地方已经指定了默认值,就不要再指定了,以免重复:"
+msgstr "如果在其他地方已经指定了默认值, 就不要再指定了, 以免重复:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:170
 msgid ""
@@ -183,8 +183,8 @@ msgid ""
 "and use ``GLOBAL_GET``/``EDITOR_GET`` in all other places where it's "
 "referenced."
 msgstr ""
-"建议每个设置只使用一次``GLOBAL_DEF``/``EDITOR_DEF``并在引用它的所有其他位置使"
-"用``GLOBAL_GET``/``EDITOR_GET``."
+"建议每个设置只使用一次 ``GLOBAL_DEF``/``EDITOR_DEF`` 并在引用它的所有其他位置"
+"使用 ``GLOBAL_GET``/``EDITOR_GET``."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:174
 msgid "Error macros"
@@ -193,7 +193,7 @@ msgstr "错误宏"
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:176
 msgid ""
 "Godot features many error macros to make error reporting more convenient."
-msgstr "Godot提供了许多错误宏,以便更方便地报告错误."
+msgstr "Godot提供了许多错误宏, 以便更方便地报告错误."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:180
 msgid ""
@@ -201,8 +201,8 @@ msgid ""
 "in ``assert()`` function. An error is reached if the condition inside "
 "evaluates to ``true``, not ``false``."
 msgstr ""
-"错误宏中的条件以GDScript内置的 ``assert()`` 函数的 **opposite** 方式工作.如果"
-"内部条件的计算结果为 ``true`` ,而不是 ``false`` ,则会出现错误."
+"错误宏中的条件以GDScript内置的 ``assert()`` 函数的 **opposite** 方式工作. 如"
+"果内部条件的计算结果为 ``true`` , 而不是 ``false`` , 则会出现错误."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:186
 msgid ""
@@ -212,9 +212,9 @@ msgid ""
 "don't know C++. In case a method was passed invalid arguments, you can print "
 "the invalid value in question to ease debugging."
 msgstr ""
-"此处仅记录具有自定义消息的变体,因为这些变体应始终用于新的贡献中. 确保提供的自"
-"定义消息包括足够的信息,即使人们不了解C ++,也可以使人们诊断问题. 如果方法传递"
-"了无效的参数,则可以打印有问题的无效值以简化调试."
+"此处仅记录具有自定义消息的变体, 因为这些变体应始终用于新的贡献中. 确保提供的"
+"自定义消息包括足够的信息, 即使人们不了解C ++, 也可以使人们诊断问题. 如果方法"
+"传递了无效的参数, 则可以打印有问题的无效值以简化调试."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:192
 msgid ""
@@ -222,33 +222,31 @@ msgid ""
 "necessary, remove ``_MSG`` at the end of the macro name and don't supply a "
 "message argument."
 msgstr ""
-"对于不需要显示可读性信息的内部错误检查,请删除宏名末尾的 ``_MSG`` ,并且不要提"
-"供信息参数."
+"对于不需要显示可读性信息的内部错误检查, 请删除宏名末尾的 ``_MSG`` , 并且不要"
+"提供信息参数."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:196
 msgid ""
 "Also, always try to return processable data so the engine can keep running "
 "well."
-msgstr "另外,总是尽量返回可处理的数据,这样引擎才能保持良好的运行."
+msgstr "另外, 总是尽量返回可处理的数据, 这样引擎才能保持良好的运行."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:240
-#, fuzzy
 msgid ""
 "See `core/error_macros.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "error_macros.h>`__ in Godot's codebase for more information about each error "
 "macro."
 msgstr ""
-"有关每个错误宏的更多信息,请参见Godot代码库中的 `core/error_macros.h <https://"
-"github.com/godotengine/godot/blob/master/core/error_macros.h>`__ ."
+"关于每个错误宏的更多信息，参见Godot代码库中的 `core/error_macros.h <https://"
+"github.com/godotengine/godot/blob/3.x/core/error_macros.h>`__ 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:243
-#, fuzzy
 msgid ""
 "Some functions return an error code (materialized by a return type of "
 "``Error``). This value can be returned directly from an error macro. See the "
 "list of available error codes in `core/error_list.h <https://github.com/"
 "godotengine/godot/blob/3.x/core/error_list.h>`__."
 msgstr ""
-"有些函数会返回一个错误代码(具体化为返回类型 ``Error`` ).这个值可以直接从错误"
-"宏返回.参见 `core/error_list.h <https://github.com/godotengine/godot/blob/"
-"master/core/error_list.h>`__ 中的可用错误代码列表."
+"一些函数会返回一个错误代码，通过返回类型 ``Error`` 具体化。这个值可以直接从一"
+"个错误宏中返回。参见 `core/error_list.h <https://github.com/godotengine/"
+"godot/blob/3.x/core/error_list.h>`__ 中的可用错误代码列表。"

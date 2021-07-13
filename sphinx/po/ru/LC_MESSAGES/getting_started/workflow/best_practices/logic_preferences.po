@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,15 +107,16 @@ msgstr ""
 "всегда создавать сценарий самостоятельно."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
+#, fuzzy
 msgid ""
 "If one wishes only to 'import' another class resource (script or scene), "
 "then using a preloaded constant is often the best course of action. However, "
-"in exceptional cases, one my wish not to do this:"
+"in exceptional cases, one may wish not to do this:"
 msgstr ""
-"Если кто-то хочет только «импортировать» ресурс другого класса (сценарий или "
+"Если кто-то хочет только 'импортировать' ресурс другого класса (сценарий или "
 "сцену), то использование предварительно загруженной константы часто является "
-"лучшим способом действий. Однако в исключительных случаях я не хочу этого "
-"делать:"
+"лучшим способом действий. Однако в исключительных случаях одно мое желание "
+"не делать этого:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -123,9 +124,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
-"Если «импортированный» класс может быть изменен, то вместо этого он должен "
-"быть свойством, инициализированным либо с помощью «экспорта», либо "
-"«загрузки» (и, возможно, даже не инициализированного позже)."
+"Если 'импортированный' класс подлежит изменению, то вместо этого он должен "
+"быть свойством, инициализированным либо с помощью ``export``, либо ``load`` "
+"(и, возможно, даже не инициализированного позже)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -149,7 +150,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr "Крупные уровни: статические и динамические"
+msgstr "Большие уровни: статические против динамических"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -169,7 +170,7 @@ msgid ""
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
 "Что ж, простой ответ: «когда этого требует производительность». Дилемма, "
-"связанная с этими двумя вариантами, является одним из старых вариантов "
+"связанная с этими двумя вариантами, является одним из старых вопросов "
 "программирования: оптимизировать ли память вместо скорости или наоборот?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
@@ -218,7 +219,7 @@ msgstr "Таким образом, лучшими вариантами были 
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr "Использовать статику для небольших игр."
+msgstr "Использовать статические уровни для небольших игр."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""

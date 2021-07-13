@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -431,9 +431,8 @@ msgid "``master``"
 msgstr "master"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
-#, fuzzy
 msgid "``puppet``"
-msgstr "fantoche"
+msgstr "``puppet``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
 msgid ""
@@ -662,6 +661,16 @@ msgid ""
 "words, those peers are set as puppets for that node by virtue of not being "
 "the network master of it)."
 msgstr ""
+"A configuração acima significa que apenas o par que possui o corpo afetado "
+"será responsável por dizer a todos os outros pares que seu corpo foi "
+"atordoado, após ser remotamente instruído a fazê-lo pela bomba do "
+"hospedeiro. O par proprietário, portanto (ainda no método ``exploded``) diz "
+"a todos os outros pares que seu nó de jogador foi atordoado. O par faz isso "
+"chamando remotamente o método ``stun`` em todas as instâncias daquele nó do "
+"jogador (nos outros pares). Porque o método ``stun`` tem a palavra-chave "
+"``puppet``, apenas os pares que não se definiram como o mestre da rede do nó "
+"irão chamá-lo (em outras palavras, esses pares são definidos como fantoches "
+"para aquele nó em virtude de não ser o mestre da rede)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
 msgid ""
@@ -686,9 +695,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "Exportando para a Web"
+msgstr "Exportando para servidores dedicados"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:455
 msgid ""
@@ -709,7 +717,7 @@ msgstr ""
 msgid ""
 "The bomberman example here is largely for illustrational purposes, and does "
 "not do anything on the host-side to handle the case where a peer uses a "
-"custom client to cheat by for example refusing to to stun itself. In the "
+"custom client to cheat by for example refusing to stun itself. In the "
 "current implementation such cheating is perfectly possible because each "
 "client is the network master of its own player, and the network master of a "
 "player is the one which decides whether to call the I-was-stunned method "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,12 +117,16 @@ msgid ""
 "You can choose the **Export Type** to select which features will be "
 "available:"
 msgstr ""
+"Puede elegir el ** Tipo de exportación ** para seleccionar qué funciones "
+"estarán disponibles:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
 "*Regular*: is the most compatible across browsers, will not support threads, "
 "nor GDNative."
 msgstr ""
+"* Regular *: es el más compatible en todos los navegadores, no admite "
+"subprocesos ni GDNative."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid ""
@@ -136,6 +140,8 @@ msgid ""
 "*GDNative*: enables GDNative support but makes the binary bigger and slower "
 "to load."
 msgstr ""
+"* GDNative *: habilita la compatibilidad con GDNative pero hace que el "
+"binario sea más grande y más lento de cargar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:51
 msgid ""
@@ -184,6 +190,8 @@ msgid ""
 "**Export types** other then *Regular* are not yet supported by the C# "
 "version."
 msgstr ""
+"** Tipos de exportación ** que no sean * Regular * aún no son compatibles "
+"con la versión C #."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Limitations"
@@ -209,6 +217,11 @@ msgid ""
 "the web page is served via a secure HTTPS connection (localhost is usually "
 "exempt from such requirement)."
 msgstr ""
+"Los proveedores de navegadores están haciendo más y más funcionalidades solo "
+"disponibles en `contextos seguros <https://developer.mozilla.org/en-US/docs/"
+"Web/Security/Secure_Contexts>` _, esto significa que tales características "
+"solo están disponibles si la página web se sirve a través de una conexión "
+"HTTPS segura (localhost generalmente está exento de tal requisito)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
@@ -283,6 +296,9 @@ msgid ""
 "The export will also copy the required GDNative ``.wasm`` files to the "
 "output folder (and must be uploaded to your server along with your game)."
 msgstr ""
+"La exportación también copiará los archivos requeridos de GDNative `` .wasm "
+"`` en la carpeta de salida (y debe cargarse en su servidor junto con su "
+"juego)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Full screen and mouse capture"
@@ -353,6 +369,8 @@ msgstr "Redes"
 msgid ""
 "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
+"Las redes de bajo nivel no se implementan debido a la falta de soporte en "
+"los navegadores."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -399,7 +417,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
 msgid "Clipboard"
-msgstr ""
+msgstr "Portapapeles"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -412,11 +430,11 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
 msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
-msgstr ""
+msgstr "Requiere un: ref: `secure context <doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
 msgid "Gamepads"
-msgstr ""
+msgstr "Mandos de juego"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
 msgid ""
@@ -427,6 +445,13 @@ msgid ""
 "reliable way to detect the gamepad information necessary to remap them based "
 "on model/vendor/OS due to privacy considerations."
 msgstr ""
+"Los Mandos no se detectarán hasta que se presione uno de sus botones. Los "
+"Mandos pueden tener un mapeo incorrecto dependiendo de la combinación de "
+"navegador / sistema operativo / mando, lamentablemente la API de Gamepad "
+"<https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/"
+"Using_the_Gamepad_API> `__ no proporcionan una forma fiable de detectar la "
+"información del mando necesaria para reasignarlos según el modelo / "
+"proveedor / sistema operativo debido a consideraciones de privacidad."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
 msgid "Boot splash is not displayed"
@@ -603,11 +628,12 @@ msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Cualquier otro valor de JavaScript se devuelve como ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:278
+#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
 "platforms other than HTML5, calling ``JavaScript.eval`` will also return "
-"``null``.  The availability of the singleton can be checked with the "
+"``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 "Las plantillas de exportación HTML5 pueden ser :ref:`built "

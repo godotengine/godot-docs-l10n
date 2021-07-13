@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,11 +89,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:48
-#, fuzzy
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
 "`doc_debugger_panel`."
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ""
+"Para mais informações sobre como usar o analisador de perfis embutido do "
+"Godot, veja :ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:52
 #, fuzzy
@@ -209,6 +210,18 @@ msgid ""
 "slowly load in some data. This delay can result in the CPU sitting around "
 "idle for a long time, and is referred to as a \"cache miss\"."
 msgstr ""
+"Os caches de CPU são algo que deve ser particularmente atento, especialmente "
+"ao comparar resultados de temporização de duas versões diferentes de uma "
+"função. Os resultados podem ser altamente dependentes se os dados estão no "
+"cache da CPU ou não. As CPUs não carregam dados diretamente da RAM do "
+"sistema, embora seja enorme em comparação com o cache da CPU (vários "
+"gigabytes em vez de alguns megabytes). Isso ocorre porque o acesso à RAM do "
+"sistema é muito lento. Em vez disso, as CPUs carregam dados de um banco de "
+"memória menor e mais rápido chamado cache. Carregar dados do cache é muito "
+"rápido, mas toda vez que você tenta carregar um endereço de memória que não "
+"está armazenado no cache, o cache deve fazer uma viagem para a memória "
+"principal e carregar lentamente alguns dados. Esse atraso pode fazer com que "
+"a CPU fique ociosa por um longo tempo e é conhecido como \"falha de cache\"."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:141
 msgid ""
@@ -296,9 +309,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:196
-#, fuzzy
 msgid "C++"
-msgstr "C++:"
+msgstr "C++"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:198
 msgid ""
@@ -310,7 +322,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:205
-#, fuzzy
 msgid "Threads"
 msgstr "Threads"
 
@@ -345,7 +356,7 @@ msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:224
 msgid "SceneTree"
-msgstr "Árvore de cena"
+msgstr "SceneTree"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:226
 msgid ""

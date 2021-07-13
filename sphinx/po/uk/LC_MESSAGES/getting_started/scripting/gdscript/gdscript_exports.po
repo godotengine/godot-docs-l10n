@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,6 +92,10 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
+"Цілі числа, що використовуються як бітові позначки, можуть зберігати "
+"декілька ``true``/``false`` (булевих) значень в одній властивості. За "
+"допомогою підказки щодо експорту ``int, FLAGS, ...``, їх можна встановити з "
+"редактора:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
 msgid ""
@@ -100,18 +104,26 @@ msgid ""
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
+"Ви повинні надати опис рядка для кожної позначки. У цьому прикладі ``Fire`` "
+"має значення 1, ``Water`` - 2, ``Earth`` - 4 і ``Wind`` відповідає значенню "
+"8. Зазвичай константи слід визначати відповідно (наприклад ``const "
+"ELEMENT_WIND = 8`` тощо)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
 msgstr ""
+"Також передбачені підказки щодо експорту для фізики та шарів візуалізації, "
+"визначених у параметрах проекту:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
+"Використання бітових значень вимагає певного розуміння побітових операцій. "
+"Якщо ви сумніваєтесь, використовуйте замість них логічні змінні."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
@@ -121,6 +133,8 @@ msgstr "Експорт масивів"
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Експортовані масиви можуть мати ініціалізатори, але вони повинні бути "
+"постійними виразами."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
@@ -128,10 +142,13 @@ msgid ""
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
+"Якщо експортований масив задає тип, який успадковується від Ресурса, "
+"значення масиву можна встановити в інспекторі, перетягуючи одночасно кілька "
+"файлів із панелі Файлова система."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid "Setting exported variables from a tool script"
-msgstr ""
+msgstr "Встановлення експортованих змінних зі скрипту інструмента"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
 msgid ""
@@ -141,11 +158,15 @@ msgid ""
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
 msgstr ""
+"При зміні значення експортованої змінної зі скрипту в :ref:"
+"`doc_gdscript_tool_mode`, значення в інспекторі не оновлюється автоматично. "
+"Щоб оновити його, викликайте :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` після встановлення "
+"значення експортованої змінної."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
-#, fuzzy
 msgid "Advanced exports"
-msgstr "Змінні середовища"
+msgstr "Розширений експорт"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
 msgid ""
@@ -153,6 +174,9 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
+"Не кожен вид експорту можна забезпечити на рівні самої мови, щоб уникнути "
+"зайвої складності проектування. Далі описуються деякі більш-менш загальні "
+"функції експорту, які можна реалізувати за допомогою API низького рівня."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
 msgid ""
@@ -163,23 +187,32 @@ msgid ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
+"Перш ніж читати далі, ви повинні ознайомитися з тим, як обробляються "
+"властивості та як їх можна налаштувати за допомогою методів :ref:`_set() "
+"<class_Object_method__get_property_list>`, :ref:`_get() "
+"<class_Object_method__get_property_list>`, та :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>`, як описано в :ref:"
+"`doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
+"Для прив'язки властивостей, що використовуються в вищезгаданих методах в C+"
+"+, дивіться :ref:`doc_binding_properties_using_set_get_property_list`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
+"Скрипт повинен працювати в режимі ``tool``, щоб вищезазначені методи могли "
+"працювати з редактора."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
-#, fuzzy
 msgid "Adding script categories"
-msgstr "Властивості вузла"
+msgstr "Додавання скрипту категорій"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
@@ -187,10 +220,13 @@ msgid ""
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
+"Для кращого візуального розрізнення властивостей в інспектор може бути "
+"вбудована спеціальна категорія скрипту, щоб діяти як розділювач. ``Script "
+"Variables`` є одним із прикладів вбудованої категорії."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
 msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr ""
+msgstr "``name`` це назва категорії, яка буде додана до інспектора;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
 msgid ""
@@ -199,21 +235,26 @@ msgid ""
 "it won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_CATEGORY`` вказує на те, що властивість слід розглядати як "
+"категорію скрипта, тому тип ``TYPE_NIL`` можна ігнорувати, оскільки він "
+"фактично не використовуватиметься для логіки скрипта, але його все одно "
+"потрібно визначити."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
-#, fuzzy
 msgid "Grouping properties"
-msgstr "Властивості вузла"
+msgstr "Групування властивостей"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
 msgid "A list of properties with similar names can be grouped."
-msgstr ""
+msgstr "Список властивостей з подібними назвами можна згрупувати."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
+"``name`` це назва групи, яка буде відображатися як розбірний список "
+"властивостей;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
 msgid ""
@@ -222,6 +263,10 @@ msgid ""
 "key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
 "this case."
 msgstr ""
+"кожна наступна властивість додана після властивості групи, буде згорнуто та "
+"скорочено відповідно до префікса, визначеного за допомогою ключа "
+"``hint_string``. Наприклад, у цьому випадку ``rotate_speed`` буде скорочено "
+"до ``speed``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
 msgid ""
@@ -230,3 +275,7 @@ msgid ""
 "won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_GROUP`` вказує на те, що властивість слід розглядати як "
+"групу скриптів, тому тип ``TYPE_NIL`` можна ігнорувати, оскільки він "
+"фактично не використовуватиметься для логіки скрипта, але його все одно "
+"потрібно визначити."

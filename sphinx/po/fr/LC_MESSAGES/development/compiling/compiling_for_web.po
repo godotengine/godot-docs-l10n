@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,8 @@ msgstr ""
 "nécessaire :"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
-#, fuzzy
 msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
-msgstr "`Emscripten 1.39.0+ <https://emscripten.org>`__."
+msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:14
 msgid "`Python 3.5+ <https://www.python.org/>`__."
@@ -130,35 +129,33 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:72
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have either the ``.threads`` or ``.gdnative`` "
 "suffix."
 msgstr ""
-"Les binaires résultants seront placés dans le sous-répertoire ``bin/``, "
-"généralement avec cette convention de nommage :"
+"Une fois terminé, le fichier résultant sera placé dans le sous-répertoire "
+"``bin``. Son nom aura le suffixe ``.threads`` ou ``.gdnative``."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:75
-#, fuzzy
 msgid ""
 "Finally, rename the zip archives to ``webassembly_release_threads.zip`` and "
 "``webassembly_release_gdnative.zip`` for the release template::"
 msgstr ""
-"Enfin, renommez l'archive zip en ``webassembly_release.zip`` pour le modèle "
-"release :"
+"Enfin, renommez les archives zip en ``webassembly_release_threads.zip`` et "
+"``webassembly_release_gdnative.zip`` pour le modèle release :"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:81
-#, fuzzy
 msgid ""
 "And ``webassembly_debug_threads.zip`` and ``webassembly_debug_gdnative.zip`` "
 "for the debug template::"
-msgstr "Et ``webassembly_debug.zip`` pour le modèle de débogage :"
+msgstr ""
+"Et ``webassembly_debug_threads.zip`` et ``webassembly_debug_gdnative.zip`` "
+"pour le modèle de débogage :"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:88
-#, fuzzy
 msgid "Building the Editor"
-msgstr "Éditeur de thèmes intégré."
+msgstr "Compilation de l'éditeur"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""

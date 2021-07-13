@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,16 +30,16 @@ msgid ""
 "compiled, optimized and without symbols, it would take some effort to find "
 "it."
 msgstr ""
-"发行游戏时,导出对话框为您提供了使用256位AES密钥加密脚本的选项.这样可以确保您"
-"的脚本不会以纯文本格式存储,并且不会被某些脚本小子轻易地剖析.当然,密钥需要存储"
-"在二进制文件中,但是如果对其进行了编译、优化并不带符号,则将需要一些努力才能找"
-"到它."
+"发行游戏时, 导出对话框为您提供了使用256位AES密钥加密脚本的选项. 这样可以确保"
+"您的脚本不会以纯文本格式存储, 并且不会被某些脚本小子轻易地剖析. 当然, 密钥需"
+"要存储在二进制文件中, 但是如果对其进行了编译, 优化并不带符号, 则将需要一些努"
+"力才能找到它."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:14
 msgid ""
 "For this to work, you need to build the export templates from source, with "
 "that same key."
-msgstr "为此,您需要使用相同的密钥从源代码构建导出模板."
+msgstr "为此, 您需要使用相同的密钥从源代码构建导出模板."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
@@ -50,12 +50,12 @@ msgid ""
 "Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from "
 "`this service <https://asecuritysite.com/encryption/keygen>`_."
 msgstr ""
-"生成一个十六进制的256位AES密钥.您可以使用 `此服务 <https://asecuritysite.com/"
-"encryption/keygen>`_ 的aes-256-cbc变体."
+"生成一个十六进制的256位AES密钥. 您可以使用 `此服务 <https://asecuritysite."
+"com/encryption/keygen>`_ 的aes-256-cbc变体."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:23
 msgid "Alternatively, you can generate it yourself by using OpenSSL:"
-msgstr "或者,您可以通过使用OpenSSL自己生成:"
+msgstr "或者, 您可以通过使用OpenSSL自己生成:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
 msgid "This should output the following to ``godot.gdkey`` file:"
@@ -66,27 +66,27 @@ msgid ""
 "You can generate the key without redirecting the output to a file, but that "
 "way you can minimize the risk of exposing the key."
 msgstr ""
-"您可以生成密钥,而无需将输出重定向到文件,但这样能将暴露密钥的风险降到最低."
+"您可以生成密钥, 而无需将输出重定向到文件, 但这样能将暴露密钥的风险降到最低."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:40
 msgid ""
 "Set this key as environment variable in the console that you will use to "
 "compile Godot, like this:"
-msgstr "在控制台中将此键设置为环境变量,将用于编译Godot,如下所示:"
+msgstr "在控制台中将此键设置为环境变量, 将用于编译Godot, 如下所示:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:56
 msgid ""
 "Compile Godot export templates and set them as custom export templates in "
 "the export preset options."
-msgstr "编译Godot导出模板,并在导出预设选项中将它们设置为自定义导出模板."
+msgstr "编译Godot导出模板, 并在导出预设选项中将它们设置为自定义导出模板."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:59
 msgid "Set the encryption key in the ``Script`` tab of the export preset:"
-msgstr "在导出预设的 ``脚本`` 选项卡中,设置加密密钥:"
+msgstr "在导出预设的 ``脚本`` 选项卡中, 设置加密密钥:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:63
 msgid "Export the project. The game should run with encrypted scripts now."
-msgstr "导出项目.游戏现在应该使用加密脚本运行."
+msgstr "导出项目. 游戏现在应该使用加密脚本运行."
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:66
 msgid "Possible Errors"
@@ -98,5 +98,5 @@ msgid ""
 "your Godot build. Godot is encrypting the scripts during export, but can't "
 "read them at runtime."
 msgstr ""
-"如果出现如下错误,这意味着密钥没有正确地包含在Godot构建中.Godot在导出过程中对"
-"脚本进行加密,但在运行时无法读取它们."
+"如果出现如下错误, 这意味着密钥没有正确地包含在Godot构建中.Godot在导出过程中对"
+"脚本进行加密, 但在运行时无法读取它们."

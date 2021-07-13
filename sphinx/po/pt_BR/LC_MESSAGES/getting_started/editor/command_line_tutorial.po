@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgstr "``--audio-driver <driver>``"
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
-"Driver de áudio. Use `` --help`` primeiro para exibir a lista de drivers "
+"Driver de áudio. Use ``--help`` primeiro para exibir a lista de drivers "
 "disponíveis."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
@@ -206,7 +206,7 @@ msgstr "``--video-driver <driver>``"
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
-"Driver de vídeo. Use `` --help`` primeiro para exibir a lista de drivers "
+"Driver de vídeo. Use ``--help`` primeiro para exibir a lista de drivers "
 "disponíveis."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
@@ -291,9 +291,9 @@ msgid ""
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
 "As opções de depuração estão disponíveis apenas no editor e nos modelos de "
-"exportação de depuração (eles exigem destinos de compilação `` debug`` ou `` "
-"release_debug``, consulte: ref: `doc_introduction_to_the_buildsystem_target` "
-"para obter mais detalhes)."
+"exportação de depuração (eles exigem destinos de compilação ``debug`` ou "
+"``release_debug``, consulte :ref:"
+"`doc_introduction_to_the_buildsystem_target` para obter mais detalhes)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "``-d``, ``--debug``"
@@ -321,7 +321,7 @@ msgstr "``--profiling``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
-msgstr "Habilite a criação de perfil no depurador de scripts."
+msgstr "Habilita a criação de perfil no depurador de scripts."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
@@ -384,7 +384,7 @@ msgstr "``--disable-crash-handler``"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
 msgstr ""
-"Desabilite o manipulador de falhas quando suportado pelo código da "
+"Desabilitar o manipulador de falhas quando suportado pelo código da "
 "plataforma."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
@@ -396,7 +396,7 @@ msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
 msgstr ""
-"Force um número fixo de quadros por segundo. Essa configuração desativa a "
+"Força um número fixo de quadros por segundo. Essa configuração desativa a "
 "sincronização em tempo real."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
@@ -405,7 +405,7 @@ msgstr "``--print-fps``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr "Imprima os quadros por segundo para o stdout."
+msgstr "Imprime os quadros por segundo para o stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
@@ -425,7 +425,7 @@ msgstr "``--check-only``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr "Apenas procure erros e saia (use com `` --script``)."
+msgstr "Apenas analisa erros e sai (use com ``--script``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
@@ -437,8 +437,8 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Exporte o projeto usando o destino de exportação especificado. Exporte "
-"apenas o pacote principal se o caminho terminar com .pck ou .zip (: ref: "
+"Exporta o projeto usando o destino de exportação especificado. Exporta "
+"apenas o pacote principal se o caminho terminar com .pck ou .zip (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
@@ -450,7 +450,7 @@ msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Como o ``--export``, mas usa o template de debug (:ref:`tools "
+"Como o ``--export``, mas usa o modelo de depuração (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -522,14 +522,15 @@ msgid "``--export-pack <preset> <path>``"
 msgstr "``--export <destino>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Como o ``--export``, mas usa o template de debug (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
+"Como `` --export``, mas apenas exporta o pacote de jogo para o preset "
+"fornecido. A extensão <caminho> determina se será no formato PCK ou ZIP. (:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` deve estar "
+"habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -542,9 +543,9 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"É Recomendado que o seu binário no Godot esteja na sua variável de ambiente "
+"É recomendado que o seu binário no Godot esteja na sua variável de ambiente "
 "PATH, de modo que possa ser executado facilmente de qualquer lugar digitando "
-"`` godot``. Você pode fazer isso no Linux colocando o binário do Godot em ``/"
+"``godot``. Você pode fazer isso no Linux colocando o binário do Godot em ``/"
 "usr/local/bin`` e certificando-se de que ele se chama ``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:153
@@ -566,12 +567,12 @@ msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
-"Isto pode ser feito dando o caminho para o arquivo `` project.godot`` do seu "
+"Isto pode ser feito dando o caminho para o arquivo ``project.godot`` do seu "
 "projeto como o primeiro argumento, assim:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:166
 msgid "Or by using the ``--path`` argument:"
-msgstr "Ou usando o argumento `` --path``:"
+msgstr "Ou usando o argumento ``--path``:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:172
 msgid ""
@@ -630,7 +631,7 @@ msgid ""
 "scene or else an error will be thrown upon opening."
 msgstr ""
 "Godot é o amigo do seu sistema de arquivos e não criará arquivos extras de "
-"metadados. Use `` rm`` para apagar um arquivo de cena. Certifique-se de que "
+"metadados. Use ``rm`` para apagar um arquivo de cena. Certifique-se de que "
 "nada faça referência a essa cena, senão um erro será lançado na abertura."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:226
@@ -689,14 +690,18 @@ msgid ""
 "special characters (such as \"Windows Desktop\"), it must be surrounded with "
 "quotes."
 msgstr ""
+"O nome do preset deve corresponder ao nome de um preset de exportação "
+"definido no arquivo ``export_presets.cfg`` do projeto. Se o nome da "
+"predefinição contiver espaços ou caracteres especiais (como \"Windows Desktop"
+"\"), ele deve ser colocado entre aspas."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
-"Para exportar uma versão de depuração do jogo, use a opção `` --export-"
-"debug`` em vez de `` --export``. Seus parâmetros e uso são os mesmos."
+"Para exportar uma versão de depuração do jogo, use a opção ``--export-"
+"debug`` em vez de ``--export``. Seus parâmetros e uso são os mesmos."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid ""
@@ -705,6 +710,10 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"Para exportar apenas um arquivo PCK, use a opção ``--export-pack`` seguida "
+"pelo nome da predefinição e pelo caminho de saída, com a extensão do "
+"arquivo, ao invés de ``--export``. A extensão do caminho de saída determina "
+"o formato do pacote, PCK ou ZIP."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid ""
@@ -713,6 +722,9 @@ msgid ""
 "the ``project.godot`` file, **not** relative to the current working "
 "directory."
 msgstr ""
+"Ao especificar um caminho relativo como o caminho para `--export`, `--export-"
+"debug` ou `--export-pack`, o caminho será relativo ao diretório que contém o "
+"arquivo ``project.godot``, **não** relativo ao diretório de trabalho atual."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:289
 msgid "Running a script"
@@ -729,27 +741,24 @@ msgstr ""
 "conversão em lote de ativos ou importação/exportação personalizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:295
-#, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
-msgstr "O script deve herdar do SceneTree ou do MainLoop."
+msgstr "O script deve herdar de ``SceneTree`` ou ``MainLoop``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:297
-#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "Aqui está um exemplo simples de como funciona:"
+msgstr "Aqui está um exemplo simples ``sayhello.gd`` de como funciona:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "And how to run it:"
 msgstr "E como executá-lo:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:315
-#, fuzzy
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
-"Se nenhum project.godot existir no caminho, o caminho atual é assumido como "
-"o diretório de trabalho atual (a menos que `` -path`` seja especificado)."
+"Se nenhum ``project.godot`` existir no caminho, o caminho atual é assumido "
+"como o diretório de trabalho atual (a menos que ``-path`` seja especificado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:318
 msgid ""
@@ -758,6 +767,10 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"A primeira linha de ``sayhello.gd`` acima é comumente referida como "
+"*shebang*. Se o binário Godot estiver em seu ``PATH`` como ``godot``, ele "
+"permite que você execute o script da seguinte forma em distribuições Linux "
+"modernas, bem como no macOS:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:330
 msgid ""
@@ -765,3 +778,6 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"Se o acima não funcionar em sua versão atual do Linux ou macOS, você sempre "
+"pode fazer com que o shebang execute Godot diretamente de onde está "
+"localizado da seguinte maneira:"

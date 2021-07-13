@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,9 +109,10 @@ msgstr ""
 msgid "You can achieve the same result in code:"
 msgstr "Vous pouvez obtenir le même résultat dans le code :"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:62
+#: ../../docs/tutorials/misc/pausing_games.rst:69
+#, fuzzy
 msgid ""
-"By default all nodes have this property in the \"Inherit\" state. This "
+"By default, all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
 "property is set on the parent node. If the parent is set to \"Inherit\" , "
 "then the grandparent will be checked and so on. Ultimately, if a state can't "
@@ -127,11 +128,11 @@ msgstr ""
 "pause dans SceneTree est utilisé. Cela signifie que, par défaut, lorsque le "
 "jeu est mis en pause, chaque nœud sera mis en pause."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:70
+#: ../../docs/tutorials/misc/pausing_games.rst:77
 msgid "So the three possible states for a node are:"
 msgstr "Ainsi, les trois états possibles pour un nœud sont :"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:72
+#: ../../docs/tutorials/misc/pausing_games.rst:79
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
@@ -139,7 +140,7 @@ msgstr ""
 "**Inherit** : L'exécution dépend de l'état du parent, du grand-parent, etc. "
 "Le premier parent qui a un état n'étant pas Inherit."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:74
+#: ../../docs/tutorials/misc/pausing_games.rst:81
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -147,7 +148,7 @@ msgstr ""
 "**Stop** : Arrête le nœud quoi qu'il arrive (et ses enfants en mode "
 "Inherit). Lorsqu'il est en pause, ce nœud n'est pas exécuté."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:76
+#: ../../docs/tutorials/misc/pausing_games.rst:83
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -155,11 +156,11 @@ msgstr ""
 "**Processus** : Exécute le nœud quoi qu'il arrive (et ses enfants en mode "
 "Inherit). En pause ou non, ce nœud sera exécuté."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:80
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:89
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -168,7 +169,7 @@ msgstr ""
 "contrôles à l'intérieur, et de régler son mode de pause sur \"Process\" puis "
 "de le cacher :"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:87
+#: ../../docs/tutorials/misc/pausing_games.rst:94
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -179,7 +180,7 @@ msgstr ""
 "branche de l'arbre des scènes continuera à fonctionner lorsqu'elle sera en "
 "pause."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:91
+#: ../../docs/tutorials/misc/pausing_games.rst:98
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
@@ -187,12 +188,12 @@ msgstr ""
 "Enfin, assurez-vous que lorsqu'un bouton de pause est pressé (n'importe quel "
 "bouton fera l'affaire), activez la pause et affichez l'écran de pause."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:109
+#: ../../docs/tutorials/misc/pausing_games.rst:116
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr ""
 "Pour arrêter la pause, faites le contraire lorsque l'écran de pause est "
 "fermé :"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:127
+#: ../../docs/tutorials/misc/pausing_games.rst:134
 msgid "And that should be all!"
 msgstr "Et ce devrait être tout !"

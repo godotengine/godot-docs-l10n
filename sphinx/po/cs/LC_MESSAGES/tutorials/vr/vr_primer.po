@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,46 +235,45 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_primer.rst:131
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
-"an open standard for VR and AR software. This plugin is early in "
-"development, only supports Linux and requires extra setup described in the "
-"repository."
+"an open standard for VR and AR software. Tested with SteamVR, Monada and "
+"Oculus OpenXR runtimes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:135
+#: ../../docs/tutorials/vr/vr_primer.rst:134
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:137
+#: ../../docs/tutorials/vr/vr_primer.rst:136
 msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:139
+#: ../../docs/tutorials/vr/vr_primer.rst:138
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:140
+#: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:142
+#: ../../docs/tutorials/vr/vr_primer.rst:141
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:146
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:148
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:151
+#: ../../docs/tutorials/vr/vr_primer.rst:150
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -291,7 +290,7 @@ msgid ""
 "system so 10 units = 1 meter."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:162
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
 "Especially VR taxes your game a lot more than most people realize. For "
@@ -299,7 +298,7 @@ msgid ""
 "there are three factors that make life extra difficult:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:166
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -307,7 +306,7 @@ msgid ""
 "in rendering images for both eyes"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:169
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -316,7 +315,7 @@ msgid ""
 "to ensure your users don't get motion sickness right off the bat."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:173
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -324,7 +323,7 @@ msgid ""
 "is less of an issue for most AR applications."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:177
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

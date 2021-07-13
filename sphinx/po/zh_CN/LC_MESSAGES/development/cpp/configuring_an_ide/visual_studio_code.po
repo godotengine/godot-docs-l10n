@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,20 +40,20 @@ msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
 "`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
-"确保C/C++扩展已经安装.你可以在 `官方文件<https://code.visualstudio.com/docs/"
-"languages/cpp>`_ 中找到说明."
+"确保C/C++扩展已经安装. 你可以在 `官方文件 <https://code.visualstudio.com/"
+"docs/languages/cpp>`_ 中找到说明."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 msgid ""
 "From the Visual Studio Code's main screen open the Godot root folder with "
 "**File > Open Folder...**."
-msgstr "现在在VS Code中打开克隆的godot文件夹**文件 > 打开文件夹...**."
+msgstr "现在在VS Code中打开克隆的godot文件夹 **文件 > 打开文件夹...** ."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
 msgid ""
 "Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
 "*Configure Task*."
-msgstr "按Ctrl + Shift + P打开命令提示符窗口,然后输入 *Configure Task*."
+msgstr "按Ctrl + Shift + P打开命令提示符窗口, 然后输入 *Configure Task*."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
 msgid "Select the **Create tasks.json file from template** option."
@@ -61,26 +61,26 @@ msgstr "选择从模板中创建tasks.json文件选项."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
 msgid "Then select **Others**."
-msgstr "然后选择\"其他\"."
+msgstr "然后选择 \"其他\"."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
 "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
 "section to it:"
 msgstr ""
-"在 ``tasks.json`` 文件中找到 ``\"tasks\"`` 数组,并在其中添加一个新部分:"
+"在 ``tasks.json`` 文件中找到 ``\"tasks\"`` 数组, 并在其中添加一个新部分:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid "An example of a filled out ``tasks.json``."
-msgstr "填好了``tasks.json``的一个例子."
+msgstr "填好了 ``tasks.json`` 的一个例子."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
 msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
-"参数可以根据你自己的设置和需要而不同.参见 :ref:"
-"`doc_introduction_to_the_buildsystem`以获取完整的参数列表."
+"参数可以根据你自己的设置和需要而不同. 参见 :ref:"
+"`doc_introduction_to_the_buildsystem` 以获取完整的参数列表."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 msgid "Debugging the project"
@@ -90,7 +90,7 @@ msgstr "调试项目"
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
-msgstr "为了构建项目,我们需要配置文件 ``launch.json``."
+msgstr "为了构建项目, 我们需要配置文件 ``launch.json``."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:62
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
@@ -99,22 +99,22 @@ msgstr "按Ctrl + Shift + D打开 ``运行`` 面板."
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
-msgstr "如果缺少 ``launch.json`` 文件,系统会提示你创建一个新的文件."
+msgstr "如果缺少 ``launch.json`` 文件, 系统会提示你创建一个新的文件."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
-"选择 **C++ (GDB/LLDB)** .这里可能还有其他特定平台的选项.如果选择了,请相应调整"
-"所提供的配置示例."
+"选择 **C++ (GDB/LLDB)** . 这里可能还有其他特定平台的选项. 如果选择了, 请相应"
+"调整所提供的配置示例."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
-"在 ``launch.json`` 文件中找到 ``\"configurations\"`` 数组,并添加一个新部分:"
+"在 ``launch.json`` 文件中找到 ``\"configurations\"`` 数组, 并添加一个新部分:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
 msgid "An example of a filled out ``launch.json``."
@@ -125,7 +125,7 @@ msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
 msgstr ""
-"``program`` [程序]下的名称取决于你的构建配置,例如启用 ``tools`` 的64位X11平"
+"``program`` [程序]下的名称取决于你的构建配置, 例如启用 ``tools`` 的64位X11平"
 "台 ``godot.x11.tools.64`` ."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
@@ -133,5 +133,5 @@ msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"如果遇到问题,也可在 `Godot社区论坛 <https://godotengine.org/community>`__ 中"
-"寻求帮助."
+"如果遇到问题, 也可在 `Godot 社区论坛 <https://godotengine.org/community>`__ "
+"中寻求帮助."

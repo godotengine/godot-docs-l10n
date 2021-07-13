@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,9 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
+"Godot sigue vagamente `Semantic Versioning <https://semver.org/>` __ con un "
+"sistema de versionado `` major.minor.patch`` , aunque con una interpretación "
+"de cada término adaptada a la complejidad de un motor de juego:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -50,6 +53,9 @@ msgid ""
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
+"La versión ``major`` es incrementada cuando ocurren rupturas de "
+"compatibilidad lo que implica un trabajo significante de porteo para mover "
+"proyectos de una mayor versión a otra."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -69,6 +75,11 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
+"La versión ``minor`` se incrementa para las versiones de funciones que no "
+"rompen la compatibilidad de manera importante. *Pueden* producirse fallas "
+"menores en la compatibilidad en áreas muy específicas en versiones "
+"secundarias, pero la gran mayoría de los proyectos no deberían verse "
+"afectados o requerir un trabajo de adaptación significativo."
 
 #: ../../docs/about/release_policy.rst:31
 msgid ""
@@ -78,6 +89,12 @@ msgid ""
 "feature, or modifying the interface of a given class, even if the rest of "
 "the engine API remains backwards compatible."
 msgstr ""
+"La razón para esto es que, como un motor de juegos, Godot cubre muchas áreas "
+"tales como renderizado, físicas, scripting, etc., y arreglar bugs o "
+"implementar nuevas características a estas áreas puede en algunas ocasiones "
+"cambiar el propio comportamiento de alguna característica, o modificar la "
+"interfaz de una clase determinada, incluso si el resto del API del motor se "
+"mantiene compatible con sus versiones anteriores."
 
 #: ../../docs/about/release_policy.rst:39
 msgid ""
@@ -85,6 +102,10 @@ msgid ""
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
+"Por lo tanto, se recomienda a todos los usuarios actualizar a una nueva "
+"versión secundaria, pero es necesario realizar algunas pruebas para "
+"asegurarse de que su proyecto aún se comporte como se espera en una nueva "
+"versión secundaria."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -93,6 +114,11 @@ msgid ""
 "support, and backporting safe usability enhancements. Patch releases are "
 "backwards compatible."
 msgstr ""
+"La versión ``parche`` se incrementa para las versiones de mantenimiento que "
+"se centran en la corrección de errores y problemas de seguridad, la "
+"implementación de nuevos requerimientos para el soporte de la plataforma, y "
+"el backport de mejoras de usabilidad seguras. Estas son compatibles con "
+"versiones anteriores."
 
 #: ../../docs/about/release_policy.rst:48
 msgid ""
@@ -120,6 +146,11 @@ msgid ""
 "name (for example patch updates for the 3.3 stable branch are developed in "
 "the ``3.3`` Git branch)."
 msgstr ""
+"Las combinaciones ``major.minor`` se denominan *ramas estables*. Cada rama "
+"estable comienza con una versión ``major.minor`` (sin el ``0`` para "
+"``patch``) y se desarrolla para las versiones de mantenimiento en una rama "
+"Git del mismo nombre (por ejemplo, las actualizaciones de parches para la "
+"rama estable 3.3 se desarrollan en la rama Git ``3.3``)."
 
 #: ../../docs/about/release_policy.rst:64
 msgid ""
@@ -128,6 +159,11 @@ msgid ""
 "In particular, the 3.2 stable branch received a number of new features in "
 "3.2.2 which would have warranted a ``minor`` version increment."
 msgstr ""
+"Como se mencionó en la introducción, la política de publicación de Godot "
+"está evolucionando, y las primeras versiones de Godot pueden no haber "
+"seguido las reglas anteriores al pie de la letra. En particular, la rama "
+"estable 3.2 recibió una serie de nuevas características en 3.2.2 que habrían "
+"justificado un incremento de versión ``minor``."
 
 #: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
@@ -140,6 +176,11 @@ msgid ""
 "stable branches on a *best effort* basis for as long as they have active "
 "users who need maintenance updates."
 msgstr ""
+"Las ramas estables son compatibles * como mínimo * hasta que se lance la "
+"siguiente rama estable y haya recibido su primera actualización de parche. "
+"En la práctica, apoyamos las sucursales estables en base al * mejor esfuerzo "
+"* mientras tengan usuarios activos que necesiten actualizaciones de "
+"mantenimiento."
 
 #: ../../docs/about/release_policy.rst:77
 msgid ""
@@ -149,6 +190,12 @@ msgid ""
 "new major version. This is the case for the 2.1 branch, and will be the case "
 "for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
+"Siempre que se lanza una nueva versión principal, hacemos de la rama estable "
+"anterior una versión con soporte a largo plazo y hacemos todo lo posible "
+"para proporcionar soluciones a los problemas que encuentran los usuarios de "
+"esa rama que no pueden migrar proyectos complejos a la nueva versión "
+"principal. Este es el caso de la rama 2.1, y será el caso de la última rama "
+"estable 3.x para cuando se lance Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:84
 msgid "**Version**"
@@ -175,34 +222,37 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "\"inestable\" *Enfoque actual del desarrollo (inestable).*"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
-msgstr ""
+msgstr "Q2 o Q3 2021"
 
 #: ../../docs/about/release_policy.rst:88
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
 msgstr ""
+"|soportado| *Beta.* Recibe nuevas características así como correcciones de "
+"errores mientras está en desarrollo."
 
 #: ../../docs/about/release_policy.rst:91
 msgid "Godot 3.3"
 msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "April 2021"
-msgstr "Marzo/Abril de 2021"
+msgstr "Abril de 2021"
 
 #: ../../docs/about/release_policy.rst:91
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
 msgstr ""
+"|soportado| Recibe correcciones para errores, problemas de seguridad y "
+"soporte de plataforma, así como mejoras de usabilidad compatibles con "
+"versiones anteriores."
 
 #: ../../docs/about/release_policy.rst:94
 msgid "Godot 3.2"
@@ -213,11 +263,12 @@ msgid "January 2020"
 msgstr "Enero de 2020"
 
 #: ../../docs/about/release_policy.rst:94
-#, fuzzy
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
-msgstr "|eol| Esta versión ya no es sostenida (Ultima actualización: 3.0.6)."
+msgstr ""
+"|eol| Ya no recibe soporte, ya que ha sido sustituido con la versión 3.3 "
+"compatible (Ultima actualización: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:97
 msgid "Godot 3.1"
@@ -297,13 +348,12 @@ msgid "December 2014"
 msgstr "Diciembre de 2014"
 
 #: ../../docs/about/release_policy.rst:117
-#, fuzzy
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
 msgstr ""
-"**Legenda:** |soporte| Soporte completo - |parcial| Soporte parcial - |eol| "
-"No hay soporte (fin de vida) - |inestable| Versión de desarrollo"
+"**Leyenda:** |soportado| Soporte completo - |parcial| Soporte parcial - |"
+"eol| No hay soporte (fin de vida) - |inestable| Versión de desarrollo"
 
 #: ../../docs/about/release_policy.rst:123
 msgid ""
@@ -319,15 +369,14 @@ msgid "When is the next release out?"
 msgstr "¿Cuándo sale el próximo lanzamiento?"
 
 #: ../../docs/about/release_policy.rst:131
-#, fuzzy
 msgid ""
 "While Godot contributors aren't working under any deadlines, we have "
 "historically had one major or minor release per year, with several "
 "maintenance updates between each."
 msgstr ""
 "Mientras que los colaboradores de Godot no trabajan bajo ninguna fecha "
-"limite, normalmente hay un lanzamiento mayor o menor de Godot disponible "
-"cada año."
+"limite, historicamente tenemos un lanzamiento mayor o menor por año con "
+"varias actualizaciones de mantenimiento entre ellas."
 
 #: ../../docs/about/release_policy.rst:135
 msgid ""
@@ -356,3 +405,7 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
+"En cuanto al próximo Godot 4.0, solo podemos decir que nuestro objetivo es "
+"un lanzamiento en ** 2021 **, pero es probable que cualquier estimación más "
+"cercana sea difícil de mantener. Las compilaciones alfa se publicarán tan "
+"pronto como se finalicen las características principales de Godot 4.0."

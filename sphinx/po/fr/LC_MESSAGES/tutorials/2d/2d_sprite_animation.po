@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,13 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
+#, fuzzy
 msgid ""
 "In this tutorial, you'll learn how to create 2D animated characters with the "
 "AnimatedSprite class and the AnimationPlayer. Typically, when you create or "
 "download an animated character, it will come in one of two ways: as "
 "individual images or as a single sprite sheet containing all the animation's "
-"frames.  Both can be animated in Godot with the AnimatedSprite class."
+"frames. Both can be animated in Godot with the AnimatedSprite class."
 msgstr ""
 "Dans ce tutoriel, vous apprendrez à créer des personnages animés en 2D avec "
 "la classe AnimatedSprite et l'AnimationPlayer. En général, lorsque vous "
@@ -41,10 +42,11 @@ msgstr ""
 "dans Godot avec la classe AnimatedSprite."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:14
+#, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
 "collection of individual images. Then we will animate a sprite sheet using "
-"this class.  Finally, we will learn another way to animate a sprite sheet "
+"this class. Finally, we will learn another way to animate a sprite sheet "
 "with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
@@ -174,9 +176,10 @@ msgid "Sprite sheet with AnimatedSprite"
 msgstr "Feuille de Sprite avec AnimationPlayer"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:118
+#, fuzzy
 msgid ""
 "You can also easily animate from a sprite sheet with the class "
-"``AnimatedSprite``.  We will use this public domain sprite sheet:"
+"``AnimatedSprite``. We will use this public domain sprite sheet:"
 msgstr ""
 "Vous pouvez aussi facilement animer à partir d'une feuille de sprite avec la "
 "classe ``AnimatedSprite``.  Nous utiliserons cette feuille de sprites du "
@@ -191,9 +194,10 @@ msgstr ""
 "\" pour la télécharger, puis copiez l'image dans le dossier de votre projet."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
+#, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
-"images.  Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
+"images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
 "select \"New SpriteFrames\"."
 msgstr ""
 "Configurez votre arbre de scènes de la même manière que vous le faisiez "
@@ -201,24 +205,27 @@ msgstr ""
 "et dans sa propriété *SpriteFrames*, sélectionnez \"New SpriteFrames\"."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
+#, fuzzy
 msgid ""
-"Click on the new SpriteFrames resource.  This time, when the bottom panel "
+"Click on the new SpriteFrames resource. This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
 "Cliquez sur la nouvelle ressource SpriteFrames. Cette fois, lorsque le "
 "panneau inférieur apparaît, sélectionnez \"Add frames from a Sprite Sheet\"."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
-msgid "You will be prompted to open a file.  Select your sprite sheet."
+#, fuzzy
+msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr ""
 "Vous serez invité à ouvrir un dossier. Sélectionnez votre feuille de sprite."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:133
+#, fuzzy
 msgid ""
-"A new window will open, showing your sprite sheet.  The first thing you will "
+"A new window will open, showing your sprite sheet. The first thing you will "
 "need to do is to change the number of vertical and horizontal images in your "
-"sprite sheet.  In this sprite sheet, we have four images horizontally and "
-"two images vertically."
+"sprite sheet. In this sprite sheet, we have four images horizontally and two "
+"images vertically."
 msgstr ""
 "Une nouvelle fenêtre s'ouvrira, montrant votre feuille de sprite.  La "
 "première chose à faire est de modifier le nombre d'images verticales et "
@@ -226,9 +233,10 @@ msgstr ""
 "nous avons quatre images horizontales et deux images verticales."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:137
+#, fuzzy
 msgid ""
 "Next, select the frames from the sprite sheet that you want to include in "
-"your animation.  We will select the top four, then click \"Add 4 frames\" to "
+"your animation. We will select the top four, then click \"Add 4 frames\" to "
 "create the animation."
 msgstr ""
 "Ensuite, sélectionnez les images de la feuille de sprites que vous voulez "
@@ -236,17 +244,19 @@ msgstr ""
 "puis nous cliquerons sur \"Ajouter 4 images\" pour créer l'animation."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:141
+#, fuzzy
 msgid ""
 "You will now see your animation under the list of animations in the bottom "
-"panel.  Double click on default to change the name of the animation to jump."
+"panel. Double click on default to change the name of the animation to jump."
 msgstr ""
 "Vous verrez maintenant votre animation sous la liste des animations dans le "
 "panneau du bas. Double-cliquez sur le nom par défaut pour changer le nom de "
 "l'animation de saut."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:145
+#, fuzzy
 msgid ""
-"Finally, check Playing on the  AnimatedSprite in the inspector to see your "
+"Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"
 msgstr ""
 "Enfin, allez voir votre grenouille sauter en jouant l'AnimatedSprite dans "
@@ -391,12 +401,13 @@ msgid "Summary"
 msgstr "Résumé"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:266
+#, fuzzy
 msgid ""
 "These examples illustrate the two classes you can use in Godot for 2D "
 "animation. ``AnimationPlayer`` is a bit more complex than "
 "``AnimatedSprite``, but it provides additional functionality, since you can "
 "also animate other properties like position or scale. The class "
-"``AnimationPlayer`` can also be used with an ``AnimatedSprite``.  Experiment "
+"``AnimationPlayer`` can also be used with an ``AnimatedSprite``. Experiment "
 "to see what works best for your needs."
 msgstr ""
 "Ces exemples illustrent les deux classes que vous pouvez utiliser dans Godot "

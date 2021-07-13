@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,8 +32,8 @@ msgid ""
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
-"``SpatialMaterial`` 是一种默认的3D材质,旨在提供艺术家在材质中寻找的大部分功"
-"能,而无需编写着色器代码. 但是,如果需要其他功能,可以将其转换为着色器代码."
+"``SpatialMaterial`` 是一种默认的3D材质, 旨在提供艺术家在材质中寻找的大部分功"
+"能, 而无需编写着色器代码. 但是, 如果需要其他功能, 可以将其转换为着色器代码."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
@@ -46,9 +46,9 @@ msgid ""
 "*Material* property of the node using the mesh (such as a MeshInstance "
 "node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
-"将 ``SpatialMaterial`` 添加到一个物体有三种方法.它可以在网格的 *Material(材"
-"质)* 属性中添加.可以用网格(比如一个 MeshInstance 节点)在节点的 *Material(材"
-"质)* 属性中添加,或者用网格在节点的 *Material Override(材质重载)* 属性中添加."
+"将 ``SpatialMaterial`` 添加到一个物体有三种方法. 它可以在网格的 *Material(材"
+"质)* 属性中添加. 可以用网格(比如一个 MeshInstance 节点)在节点的 *Material(材"
+"质)* 属性中添加, 或者用网格在节点的 *Material Override(材质重载)* 属性中添加."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
@@ -60,10 +60,10 @@ msgid ""
 "also override the regular material property of the node and the material "
 "property of the mesh."
 msgstr ""
-"如果你把材质加到网格本身上,每次那个网格被使用的时候都会有那个材质.如果你用网"
-"格向一个节点添加材质,那个材质仅会被那个节点使用,也会覆盖网格的材质属性.如果材"
-"质被添加到了节点的 *Material Override(材质覆盖)* 属性上,它仅会被那个节点使用,"
-"它也会覆盖那个节点的常规材质属性和网格的材质属性."
+"如果你把材质加到网格本身上, 每次那个网格被使用的时候都会有那个材质. 如果你用"
+"网格向一个节点添加材质, 那个材质仅会被那个节点使用, 也会覆盖网格的材质属性. "
+"如果材质被添加到了节点的 *Material Override(材质覆盖)* 属性上, 它仅会被那个节"
+"点使用, 它也会覆盖那个节点的常规材质属性和网格的材质属性."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
@@ -73,7 +73,7 @@ msgstr "标志"
 msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
-msgstr "空间材质有许多标记,用于确定材质的一般用途."
+msgstr "空间材质有许多标记, 用于确定材质的一般用途."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:37
 msgid "Transparent"
@@ -86,8 +86,8 @@ msgid ""
 "using a different technique (sorted from back to front and rendered in "
 "order)."
 msgstr ""
-"在Godot中,除非特别配置,否则材质不透明. 这背后的主要原因是透明材质使用一种不同"
-"的渲染技术(从后到前排序并按顺序渲染)."
+"在Godot中, 除非特别配置, 否则材质不透明. 这背后的主要原因是透明材质使用一种不"
+"同的渲染技术(从后到前排序并按顺序渲染)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:43
 msgid ""
@@ -95,14 +95,15 @@ msgid ""
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
 "SSR, etc.) that require perfectly opaque geometry."
 msgstr ""
-"这种技术效率较低(会发生许多状态变化),并且使得材质无法用于许多需要完全不透明几"
-"何形状的处理中/处理后效果(例如SSAO,SSR等)."
+"这种技术效率较低(会发生许多状态变化), 并且使得材质无法用于许多需要完全不透明"
+"几何形状的处理中/处理后效果(例如SSAO,SSR等)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:47
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
-msgstr "因此,除非另有说明,否则Godot中的材质是不透明的. 启用透明度的主要设置是:"
+msgstr ""
+"因此, 除非另有说明, 否则Godot中的材质是不透明的. 启用透明度的主要设置是:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:50
 msgid "Transparent flag (this one)"
@@ -110,7 +111,7 @@ msgstr "透明标记(这一个)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:51
 msgid "Blend mode set to other than \"Mix\""
-msgstr "混合模式设置为\"Mix(混合)\"以外的模式"
+msgstr "混合模式设置为 \"Mix(混合)\" 以外的模式"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:52
 msgid "Enabling distance or proximity fade"
@@ -126,8 +127,8 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
-"光照会改变alpha值,阴影部分是不透明的,而没有阴影的地方是透明的.对于AR中将阴影"
-"堆叠到一个照相机反馈中很有用."
+"光照会改变alpha值, 阴影部分是不透明的, 而没有阴影的地方是透明的. 对于AR中将阴"
+"影堆叠到一个照相机反馈中很有用."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:61
 msgid "Unshaded"
@@ -136,7 +137,7 @@ msgstr "Unshaded(无阴影)"
 #: ../../docs/tutorials/3d/spatial_material.rst:63
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
-msgstr "在大多数情况下,材质通常受到照明的影响(有阴影)."
+msgstr "在大多数情况下, 材质通常受到照明的影响(有阴影)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
@@ -144,8 +145,8 @@ msgid ""
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
-"但是,在某些情况下,您可能只想显示反射(颜色)而忽略其余部分. 切换此标志将删除所"
-"有阴影并显示纯净,未光照的颜色."
+"但是, 在某些情况下, 您可能只想显示反射(颜色)而忽略其余部分. 切换此标志将删除"
+"所有阴影并显示纯净, 未光照的颜色."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:72
 msgid "Vertex Lighting"
@@ -157,7 +158,7 @@ msgid ""
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
-"由于depth pre-pass (深度预通过),Godot的每像素成本或多或少是一致的.所有照明计"
+"由于depth pre-pass (深度预通过),Godot的每像素成本或多或少是一致的. 所有照明计"
 "算都是通过在每个像素上运行照明着色器来完成的."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:77
@@ -167,20 +168,20 @@ msgid ""
 "transparency (which is common in particle systems). Switching to per-vertex "
 "lighting may help in these cases."
 msgstr ""
-"由于这些计算成本很高,因此在某些极端情况下可以大大降低性能,例如绘制几层透明度"
-"(这在粒子系统中很常见). 在这些情况下,切换到每顶点光照可能会有所帮助."
+"由于这些计算成本很高, 因此在某些极端情况下可以大大降低性能, 例如绘制几层透明"
+"度(这在粒子系统中很常见). 在这些情况下, 切换到每顶点光照可能会有所帮助."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:82
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
-msgstr "此外,在低端或移动设备上,切换到顶点照明可以显着提高渲染性能."
+msgstr "此外, 在低端或移动设备上, 切换到顶点照明可以显着提高渲染性能."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
-msgstr "请记住,启用顶点照明时,只有定向照明会产生阴影(出于性能原因)."
+msgstr "请记住, 启用顶点照明时, 只有定向照明会产生阴影(出于性能原因)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid "No Depth Test"
@@ -192,8 +193,8 @@ msgid ""
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
-"为了使近距离物体出现在远处的物体上,进行深度测试. 禁用它会导致对象出现在其他所"
-"有内容之上(或之下)."
+"为了使近距离物体出现在远处的物体上, 进行深度测试. 禁用它会导致对象出现在其他"
+"所有内容之上(或之下)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:97
 msgid ""
@@ -201,7 +202,7 @@ msgid ""
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
-"禁用此选项对于在世界空间中绘制指标最有意义,并且与Material的 *Render "
+"禁用此选项对于在世界空间中绘制指标最有意义, 并且与Material的 *Render "
 "Priority* 属性一起效果很好(请参阅本页底部)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:104
@@ -215,7 +216,7 @@ msgid ""
 "those points can be resized (see below)."
 msgstr ""
 "此选项仅在渲染的几何体由点组成时有效(通常从3D DCC导入时由三角形组成). 如果是"
-"这样,那么这些点可以被调整大小(见下文)."
+"这样, 那么这些点可以被调整大小(见下文)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:111
 msgid "World Triplanar"
@@ -227,8 +228,8 @@ msgid ""
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
-"使用三平面映射时(见下文,在UV1和UV2设置中),在对象局部空间中计算三平面. 此选项"
-"使triplanar在世界空间中工作."
+"使用三平面映射时(见下文, 在UV1和UV2设置中), 在对象局部空间中计算三平面. 此选"
+"项使triplanar在世界空间中工作."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:118
 msgid "Fixed Size"
@@ -240,7 +241,7 @@ msgid ""
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
-"这使得无论距离如何,对象都以相同的大小呈现. 这主要用于指示物(无深度测试和高渲"
+"这使得无论距离如何, 对象都以相同的大小呈现. 这主要用于指示物(无深度测试和高渲"
 "染优先级)和某些类型的广告牌."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:125
@@ -280,8 +281,8 @@ msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default, they are ignored."
 msgstr ""
-"此设置允许选择默认情况下如何处理来自 3D 建模应用程序的顶点颜色,默认情况下,它"
-"们会被忽略."
+"此设置允许选择默认情况下如何处理来自 3D 建模应用程序的顶点颜色, 默认情况下, "
+"它们会被忽略."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
@@ -300,7 +301,7 @@ msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
-"大多数3D DCC可能会将顶点颜色导出为sRGB,因此切换此选项将有助于它们看起来正确."
+"大多数3D DCC可能会将顶点颜色导出为sRGB, 因此切换此选项将有助于它们看起来正确."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:161
 msgid "Parameters"
@@ -327,7 +328,7 @@ msgstr ""
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
-msgstr "** Burley:** 默认模式,原始的Disney Principled PBS漫反射算法."
+msgstr "** Burley:** 默认模式, 原始的Disney Principled PBS漫反射算法."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid "**Lambert:** Is not affected by roughness."
@@ -339,15 +340,15 @@ msgid ""
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
-"** Lambert Wrap:** 当粗糙度增加时,将Lambert拓展至覆盖90度以上. 适用于头发和模"
-"拟廉价的次表面散射. 这种实现是节能的."
+"** Lambert Wrap:** 当粗糙度增加时, 将Lambert拓展至覆盖90度以上. 适用于头发和"
+"模拟廉价的次表面散射. 这种实现是节能的."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:179
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
-"** Oren Nayar:** 此实现旨在将微表面考虑在内(通过粗糙度).适用于粘土类材质和某"
+"** Oren Nayar:** 此实现旨在将微表面考虑在内(通过粗糙度). 适用于粘土类材质和某"
 "些类型的布料."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:181
@@ -357,8 +358,8 @@ msgid ""
 "environment's ambient light settings or disable ambient light in the spatial "
 "material to achieve a better effect."
 msgstr ""
-"**Toon:** 为照明提供硬边缘,光滑度受粗糙度的影响. 建议您从环境的环境光设置中禁"
-"用sky contribution(天空补偿),或禁用空间材质中的环境光以获得更好的效果."
+"**Toon:** 为照明提供硬边缘, 光滑度受粗糙度的影响. 建议您从环境的环境光设置中"
+"禁用sky contribution(天空补偿), 或禁用空间材质中的环境光以获得更好的效果."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:189
 msgid "Specular Mode"
@@ -379,7 +380,7 @@ msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
 "but left here for the sake of compatibility."
 msgstr ""
-"**Blinn:** 在上一代引擎中很常见. 现在不值得使用,但为了兼容性而留在这里."
+"**Blinn:** 在上一代引擎中很常见. 现在不值得使用, 但为了兼容性而留在这里."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid "**Phong:** Same as above."
@@ -388,11 +389,11 @@ msgstr "** Phong:** 同上."
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
-msgstr "**Toon:** 创建一个toon blob,根据粗糙度改变大小."
+msgstr "**Toon:** 创建一个toon blob, 根据粗糙度改变大小."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:199
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr "**禁用:** 有时候blob很烦人.消失吧！"
+msgstr "**禁用:** 有时候blob很烦人. 消失吧！"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:204
 msgid "Blend Mode"
@@ -414,7 +415,7 @@ msgstr "**Mix:** 默认混合模式,alpha控制对象可见的程度."
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
-msgstr "**Add:** 物体添加性地混合,非常适合耀斑或类似火焰的效果."
+msgstr "**Add:** 物体添加性地混合, 非常适合耀斑或类似火焰的效果."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid "**Sub:** Object is subtracted."
@@ -435,11 +436,11 @@ msgstr "确定渲染背面时不绘制对象的哪一侧:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid "**Back:** The back of the object is culled when not visible (default)."
-msgstr "**Back:** 当不可见时,对象的背面被剔除(默认)."
+msgstr "**Back:** 当不可见时, 对象的背面被剔除(默认)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid "**Front:** The front of the object is culled when not visible."
-msgstr "**Front:** 当不可见时,物体的正面被剔除."
+msgstr "**Front:** 当不可见时, 物体的正面被剔除."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:224
 msgid ""
@@ -457,7 +458,7 @@ msgstr "指定何时必须进行深度渲染."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
-msgstr "**Opaque Only(仅限不透明,默认):** 仅为不透明对象绘制深度."
+msgstr "**Opaque Only(仅限不透明, 默认):** 仅为不透明对象绘制深度."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:232
 msgid ""
@@ -478,8 +479,8 @@ msgid ""
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
-"**Depth Pre-Pass(深度预通过):** 对于透明物体,首先使用不透明部分进行不透明的通"
-"过,然后在上方绘制透明度. 将此选项与透明草或树叶一起使用."
+"**Depth Pre-Pass(深度预通过):** 对于透明物体, 首先使用不透明部分进行不透明的"
+"通过, 然后在上方绘制透明度. 将此选项与透明草或树叶一起使用."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:242
 msgid "Line Width"
@@ -489,7 +490,7 @@ msgstr "Line Width(线宽度)"
 msgid ""
 "When drawing lines, specify the width of the lines being drawn. This option "
 "is not available on most modern hardware."
-msgstr "绘制线条时,指定要绘制的线条的宽度. 大多数现代硬件都不提供此选项."
+msgstr "绘制线条时, 指定要绘制的线条的宽度. 大多数现代硬件都不提供此选项."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:248
 msgid "Point Size"
@@ -497,7 +498,7 @@ msgstr "Point Size(点大小)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "When drawing points, specify the point size in pixels."
-msgstr "绘制点时,指定点大小(以像素为单位)."
+msgstr "绘制点时, 指定点大小(以像素为单位)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:253
 msgid "Billboard Mode"
@@ -517,7 +518,7 @@ msgstr "**Disabled:** 禁用广告牌模式."
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
-msgstr "**Enabled:** 启用广告牌模式,对象的-Z轴将始终面向摄像机."
+msgstr "**Enabled:** 启用广告牌模式, 对象的-Z轴将始终面向摄像机."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid ""
@@ -528,7 +529,7 @@ msgstr "** Y-Billboard:** 物体的X轴会始终与相机对齐."
 msgid ""
 "**Particles:** Most suited for particle systems, because it allows "
 "specifying animation options."
-msgstr "**Particles:** 最适合粒子系统,因为它允许指定动画选项."
+msgstr "**Particles:** 最适合粒子系统, 因为它允许指定动画选项."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:267
 msgid "The above options are only enabled for Particle Billboard."
@@ -555,8 +556,8 @@ msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
-"这通常用于创建廉价的轮廓. 添加第二个material pass,使其变为黑色, 无阴影"
-"(unshaded),反向剔除(Cull Front),并添加一些增长:"
+"这通常用于创建廉价的轮廓. 添加第二个material pass, 使其变为黑色, 无阴影"
+"(unshaded), 反向剔除(Cull Front), 并添加一些增长:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:288
 msgid "Use Alpha Scissor"
@@ -567,18 +568,19 @@ msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
-"当不需要\"0\"或\"1\"以外的透明度时,可以设置阈值以防止对象渲染半透明像素."
+"当不需要 \"0\" 或 \"1\" 以外的透明度时, 可以设置阈值以防止对象渲染半透明像素."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:295
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
 "it to use mid- and post-process effects such as SSAO, SSR, etc."
 msgstr ""
-"这通过不透明管道渲染对象,这更快,并允许它使用处理中/处理后效果,如SSAO,SSR等."
+"这通过不透明管道渲染对象, 这更快, 并允许它使用处理中/处理后效果, 如SSAO,SSR"
+"等."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:299
 msgid "Material colors, maps and channels"
-msgstr "材质颜色,贴图和通道"
+msgstr "材质颜色, 贴图和通道"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:301
 msgid ""
@@ -586,8 +588,8 @@ msgid ""
 "textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
-"除了参数之外,定义材质本身的是颜色,纹理和通道. Godot支持很多颜色,纹理和通道. "
-"它们在下面详细描述:"
+"除了参数之外, 定义材质本身的是颜色, 纹理和通道. Godot支持很多颜色, 纹理和通"
+"道. 它们在下面详细描述:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:306
 msgid "Albedo"
@@ -601,14 +603,14 @@ msgid ""
 "name mainly happened because, in PBR (Physically Based Rendering), this "
 "color affects many more calculations than just the diffuse lighting path."
 msgstr ""
-"*Albedo* 是材质的基色,所有其他设置都在其上运行. 设置为 *Unshaded* 时,这是唯一"
-"可见的颜色. 在以前版本的Godot中,这个通道被命名为 *Diffuse* . 名称的改变主要是"
-"因为在PBR(Physically Based Rendering, 基于物理渲染)中,这种颜色影响的计算远不"
-"止漫射光照路径."
+"*Albedo* 是材质的基色, 所有其他设置都在其上运行. 设置为 *Unshaded* 时, 这是唯"
+"一可见的颜色. 在以前版本的Godot中, 这个通道被命名为 *Diffuse* . 名称的改变主"
+"要是因为在PBR(Physically Based Rendering, 基于物理渲染)中, 这种颜色影响的计算"
+"远不止漫射光照路径."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:314
 msgid "Albedo color and texture can be used together as they are multiplied."
-msgstr "反射颜色(Albedo Color)和纹理可以一起使用,因为它们会被相乘."
+msgstr "反射颜色(Albedo Color)和纹理可以一起使用, 因为它们会被相乘."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:316
 msgid ""
@@ -616,8 +618,8 @@ msgid ""
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
-"反照率颜色和纹理的 *Alpha通道* 也用于对象透明度.如果你使用带 *alpha通道* 的颜"
-"色或纹理,请确保启用透明度或 *alpha scissoring* 以使其正常工作."
+"反照率颜色和纹理的 *Alpha通道* 也用于对象透明度. 如果你使用带 *alpha通道* 的"
+"颜色或纹理, 请确保启用透明度或 *alpha scissoring* 以使其正常工作."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:321
 msgid "Metallic"
@@ -631,7 +633,7 @@ msgid ""
 "reflected. This model is called \"energy-conserving\"."
 msgstr ""
 "由于其简单性,Godot使用金属模型而不是别的模型. 此参数定义材质的反射程度. 反射"
-"越多,漫射/环境光的影响越小,反射的光越多. 这种模型被称为\"能量守恒(energy-"
+"越多, 漫射/环境光的影响越小, 反射的光越多. 这种模型被称为 \"能量守恒(energy-"
 "conserving)\"."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:328
@@ -640,15 +642,16 @@ msgid ""
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
-"* Specular * 参数是反射率的一般数量(与 *Metallic* 不同,这不是能量守恒的,因此"
-"请将其保留为 ``0.5`` 并且除非你需要,否则不要碰它)."
+"* Specular * 参数是反射率的一般数量(与 *Metallic* 不同, 这不是能量守恒的, 因"
+"此请将其保留为 ``0.5`` 并且除非你需要, 否则不要碰它)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:332
 msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
-"最小的内部反射率是\"0.04\",因此不可能使材质完全不反射,就像在现实生活中一样."
+"最小的内部反射率是 \"0.04\", 因此不可能使材质完全不反射, 就像在现实生活中一"
+"样."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:338
 msgid "Roughness"
@@ -661,9 +664,9 @@ msgid ""
 "(simulating natural microsurfacing). Most common types of materials can be "
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
-"*粗糙度*会影响反射的发生方式. 值``0``使其成为完美的镜子,而``1``的值完全模糊了"
-"反射(模拟自然微表面). 最常见的材质类型可以通过*Metallic* 和 *Roughness* 的正"
-"确组合来实现."
+"*粗糙度* 会影响反射的发生方式. 值 ``0`` 使其成为完美的镜子, 而 ``1`` 的值完全"
+"模糊了反射(模拟自然微表面). 最常见的材质类型可以通过 *Metallic* 和 "
+"*Roughness* 的正确组合来实现."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:348
 msgid "Emission"
@@ -676,8 +679,9 @@ msgid ""
 "are used). This value is added to the resulting final image and is not "
 "affected by other lighting in the scene."
 msgstr ""
-"*发射* 指定材质发出的光量(请记住,这不包括环绕几何体的光,除非使用 :ref:"
-"`doc_gi_probes` ). 此值将添加到生成的最终图像中,并且不受场景中其他光照的影响."
+"*发射* 指定材质发出的光量(请记住, 这不包括环绕几何体的光, 除非使用 :ref:"
+"`doc_gi_probes` ). 此值将添加到生成的最终图像中, 并且不受场景中其他光照的影"
+"响."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
 msgid "Normal map"
@@ -690,9 +694,9 @@ msgid ""
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
-"法线贴图允许你设置一个代表更精细形状细节的纹理,这不会修改几何体,只会修改光的"
-"入射角.在Godot中,为了更好的压缩和更广泛的兼容性,只使用了法线贴图的红色和绿色"
-"通道."
+"法线贴图允许你设置一个代表更精细形状细节的纹理, 这不会修改几何体, 只会修改光"
+"的入射角. 在Godot中, 为了更好的压缩和更广泛的兼容性, 只使用了法线贴图的红色和"
+"绿色通道."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
@@ -701,8 +705,8 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
-"Godot需要法线贴图使用X +,Y-和Z +坐标.换言之,如果你导入了用于其他引擎的材质,就"
-"需要转换法线贴图,将它的Y轴翻转过来.否则,法线贴图显示的Y轴方向会相反."
+"Godot需要法线贴图使用X +,Y-和Z +坐标. 换言之, 如果你导入了用于其他引擎的材"
+"质, 就需要转换法线贴图, 将它的Y轴翻转过来. 否则, 法线贴图显示的Y轴方向会相反."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:374
 msgid ""
@@ -726,9 +730,9 @@ msgid ""
 "takes light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
-"一些织物具有小的微毛,导致光在其周围散射. Godot使用 *Rim* 参数模拟它. 与仅使用"
-"发射通道的其他边缘照明实施方式不同,这实际上考虑了光(没有光意味着没有边缘). 这"
-"使得效果显著地更加可信."
+"一些织物具有小的微毛, 导致光在其周围散射. Godot使用 *Rim* 参数模拟它. 与仅使"
+"用发射通道的其他边缘照明实施方式不同, 这实际上考虑了光(没有光意味着没有边"
+"缘). 这使得效果显著地更加可信."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:388
 msgid ""
@@ -737,9 +741,9 @@ msgid ""
 "for the rim. If *Tint* is ``1``, then the albedo of the material is used. "
 "Using intermediate values generally works best."
 msgstr ""
-"边缘大小取决于粗糙度,并且有一个特殊参数来指定它必须如何着色. 如果 *Tint* 为 "
-"``0``,则灯光的颜色用于边缘. 如果 *Tint* 是 ``1``,则使用材质的反照率.使用中间"
-"的值通常效果最佳."
+"边缘大小取决于粗糙度, 并且有一个特殊参数来指定它必须如何着色. 如果 *Tint* 为 "
+"``0``, 则灯光的颜色用于边缘. 如果 *Tint* 是 ``1``, 则使用材质的反照率. 使用中"
+"间的值通常效果最佳."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:394
 msgid "Clearcoat"
@@ -759,8 +763,8 @@ msgid ""
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
-"*Clearcoat* 参数用于为材质添加辅助的透明涂层. 这在汽车油漆和玩具中很常见.在实"
-"践中,它是在现有材质之上添加的较小的镜面高光."
+"*Clearcoat* 参数用于为材质添加辅助的透明涂层. 这在汽车油漆和玩具中很常见. 在"
+"实践中, 它是在现有材质之上添加的较小的镜面高光."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid "Anisotropy"
@@ -773,8 +777,8 @@ msgid ""
 "aluminum more realistic. It works especially well when combined with "
 "flowmaps."
 msgstr ""
-"这会更改镜面高光的形状并将其与切线空间对齐.各向异性通常与头发一起使用,或使诸"
-"如拉丝铝之类的材质更加逼真. 与流向贴图结合使用时效果特别好."
+"这会更改镜面高光的形状并将其与切线空间对齐. 各向异性通常与头发一起使用, 或使"
+"诸如拉丝铝之类的材质更加逼真. 与流向贴图结合使用时效果特别好."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:414
 msgid "Ambient Occlusion"
@@ -791,8 +795,8 @@ msgid ""
 msgstr ""
 "可以指定烘焙的环境遮挡贴图. 此贴图会影响有多少环境光到达物体每个表面(默认情况"
 "下它不会影响直接光). 虽然可以使用屏幕空间环境遮挡(Screen-Space Ambient "
-"Occlusion, SSAO)来生成环境遮挡,但没有什么能比良好烘焙的AO贴图的质量更好. 建议"
-"尽可能烘焙环境遮挡."
+"Occlusion, SSAO)来生成环境遮挡, 但没有什么能比良好烘焙的AO贴图的质量更好. 建"
+"议尽可能烘焙环境遮挡."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid "Depth"
@@ -806,9 +810,9 @@ msgid ""
 "objects, but it produces a realistic depth effect for textures. For best "
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
-"在材质上设置深度贴图会做一个ray-marching搜索,以模拟沿视图方向的空穴的正确位"
-"移. 这不是真正增加的几何,而是一种深度的幻觉. 它可能不适用于复杂的对象,但它会"
-"为纹理产生逼真的深度效果. 为获得最佳效果,*Depth* 应与法线贴图一起使用."
+"在材质上设置深度贴图会做一个ray-marching搜索, 以模拟沿视图方向的空穴的正确位"
+"移. 这不是真正增加的几何, 而是一种深度的幻觉. 它可能不适用于复杂的对象, 但它"
+"会为纹理产生逼真的深度效果. 为获得最佳效果,*Depth* 应与法线贴图一起使用."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:438
 msgid "Subsurface Scattering"
@@ -820,7 +824,8 @@ msgid ""
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
-"此效果模拟穿透物体表面,散射然后散出的光.创造逼真的皮肤,大理石,有色液体等有用."
+"此效果模拟穿透物体表面, 散射然后散出的光. 创造逼真的皮肤, 大理石, 有色液体等"
+"有用."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Transmission"
@@ -833,7 +838,7 @@ msgid ""
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
 "这可以控制有多少光从被点亮的一侧(正对灯光)传输到暗侧(背对灯光). 这适用于植物"
-"叶子,草,人耳等薄物体."
+"叶子, 草, 人耳等薄物体."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:458
 msgid "Refraction"
@@ -846,8 +851,8 @@ msgid ""
 "allows distorting the transparency in a way similar to refraction in real "
 "life."
 msgstr ""
-"当启用折射时,它会取代alpha混合,而Godot会尝试从正在渲染的对象后面获取信息. 这"
-"允许以类似于现实生活中的折射的方式扭曲透明度."
+"当启用折射时, 它会取代alpha混合, 而Godot会尝试从正在渲染的对象后面获取信息. "
+"这允许以类似于现实生活中的折射的方式扭曲透明度."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:469
 msgid "Detail"
@@ -859,8 +864,8 @@ msgid ""
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
-"Godot允许使用辅助反射和法线贴图生成细节纹理,可以通过多种方式进行混合. 通过将"
-"其与二级UV或三平面模式相结合,可以实现许多有趣的纹理."
+"Godot允许使用辅助反射和法线贴图生成细节纹理, 可以通过多种方式进行混合. 通过将"
+"其与二级UV或三平面模式相结合, 可以实现许多有趣的纹理."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
@@ -873,13 +878,13 @@ msgid ""
 "is for the regular material textures, different shades of gray are for "
 "partial blending of the material textures and detail textures."
 msgstr ""
-"Mask(遮罩):细节遮罩是一个黑白图像,用来控制纹理的混合位置.白色为细节纹理,黑色"
-"为常规材质纹理,不同深浅的灰色用于材质纹理和细节纹理的部分混合."
+"Mask(遮罩): 细节遮罩是一个黑白图像, 用来控制纹理的混合位置. 白色为细节纹理, "
+"黑色为常规材质纹理, 不同深浅的灰色用于材质纹理和细节纹理的部分混合."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:484
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
-msgstr "混合模式:有四种模式控制纹理的混合方式."
+msgstr "混合模式: 有四种模式控制纹理的混合方式."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""
@@ -887,8 +892,8 @@ msgid ""
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
-"融合:合并两个纹理的像素值.黑色时,仅显示材质纹理；白色时,仅显示细节纹理.灰色的"
-"值在两者之间创建一个平滑的混合."
+"融合: 合并两个纹理的像素值. 黑色时, 仅显示材质纹理；白色时, 仅显示细节纹理. "
+"灰色的值在两者之间创建一个平滑的混合."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:490
 msgid ""
@@ -896,8 +901,8 @@ msgid ""
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
-"相加:将一个纹理与另一个纹理的像素值相加.与融合模式不同的是,两个纹理在蒙板的白"
-"色部分而不是灰色部分完全混合.原始纹理在黑色部分基本没有变化"
+"相加: 将一个纹理与另一个纹理的像素值相加. 与融合模式不同的是, 两个纹理在蒙板"
+"的白色部分而不是灰色部分完全混合. 原始纹理在黑色部分基本没有变化"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:494
 msgid ""
@@ -906,22 +911,22 @@ msgid ""
 "subtraction in black parts, gray parts being different levels of subtraction "
 "based on the exact texture."
 msgstr ""
-"相减:将一个纹理的像素值与另一个纹理的像素值相减.第二种纹理在蒙版的白色部分被"
-"完全减去,在黑色部分只被减去一点,灰色部分根据具体实际纹理减去不同的程度."
+"相减: 将一个纹理的像素值与另一个纹理的像素值相减. 第二种纹理在蒙版的白色部分"
+"被完全减去, 在黑色部分只被减去一点, 灰色部分根据具体实际纹理减去不同的程度."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:499
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
-msgstr "相乘:将上方纹理中每个像素的 RGB 通道数与下方纹理中相应像素的值相乘."
+msgstr "相乘: 将上方纹理中每个像素的 RGB 通道数与下方纹理中相应像素的值相乘."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:502
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
-"Albedo:在此处放置要混合的反射纹理.如果此插槽中没有任何内容,则默认情况下将其解"
-"释为纯白."
+"Albedo: 在此处放置要混合的反射纹理. 如果此插槽中没有任何内容, 则默认情况下将"
+"其解释为纯白."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid ""
@@ -929,8 +934,8 @@ msgid ""
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
-"法线:在此处放置需要混合的法线纹理.如果这个槽中没有任何东西,它将被解释为一个平"
-"坦的法线贴图.即使材质未启用法线贴图也可以使用这个槽."
+"法线: 在此处放置需要混合的法线纹理. 如果这个槽中没有任何东西, 它将被解释为一"
+"个平坦的法线贴图. 即使材质未启用法线贴图也可以使用这个槽."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:510
 msgid "UV1 and UV2"
@@ -942,8 +947,8 @@ msgid ""
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
-"Godot每种材质支持两个UV通道.二级UV通常可用于环境遮挡或发射(烘焙的光照). UV可"
-"以缩放和偏移,这在使用重复纹理时很有用."
+"Godot每种材质支持两个UV通道. 二级UV通常可用于环境遮挡或发射(烘焙的光照). UV可"
+"以缩放和偏移, 这在使用重复纹理时很有用."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:517
 msgid "Triplanar Mapping"
@@ -956,16 +961,17 @@ msgid ""
 "Textures are sampled in X, Y and Z and blended by the normal. Triplanar "
 "mapping can be performed in either world space or object space."
 msgstr ""
-"UV1和UV2都支持三平面映射. 这是获得纹理坐标的另一种方法,有时称为\"自动纹理\". "
-"纹理在X,Y和Z中采样,并由法线混合. 可以在世界空间或对象空间中执行三平面映射."
+"UV1和UV2都支持三平面映射. 这是获得纹理坐标的另一种方法, 有时称为 \"自动纹理"
+"\". 纹理在X,Y和Z中采样, 并由法线混合. 可以在世界空间或对象空间中执行三平面映"
+"射."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:524
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
-"在下图中,你可以看到所有基元如何与世界三平面共享相同的材质,因此砖纹理在它们之"
-"间平滑地继续."
+"在下图中, 你可以看到所有基元如何与世界三平面共享相同的材质, 因此砖纹理在它们"
+"之间平滑地继续."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:530
 msgid "Proximity and distance fade"
@@ -988,7 +994,8 @@ msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
-"请记住,启用这些功能会启用Alpha混合,因此将它们用于整个场景通常不是一个好主意."
+"请记住, 启用这些功能会启用Alpha混合, 因此将它们用于整个场景通常不是一个好主"
+"意."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:544
 msgid "Render priority"
@@ -1000,5 +1007,5 @@ msgid ""
 "useful for transparent objects (or opaque objects that perform depth draw "
 "but no color draw, such as cracks on the floor)."
 msgstr ""
-"可以更改对象的渲染顺序,尽管这对于透明对象有用(或执行深度绘制但没有颜色绘制的"
-"不透明对象,例如地板上的裂缝)."
+"可以更改对象的渲染顺序, 尽管这对于透明对象有用(或执行深度绘制但没有颜色绘制的"
+"不透明对象, 例如地板上的裂缝)."

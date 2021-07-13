@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:4
 msgid "2D lights and shadows"
-msgstr ""
+msgstr "2D світло і тінь"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:7
 msgid "Introduction"
@@ -33,6 +33,11 @@ msgid ""
 "the resources used in the final demo and then describes how to make a scene "
 "like the demo step by step."
 msgstr ""
+"Цей урок пояснює, як працює 2D-освітлення в демонстраційному проекті `світло "
+"і тінь <https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"lights_and_shadows>`_. Він починається з короткого опису ресурсів, "
+"використаних у фінальній демонстрації, а потім описує, як поетапно зробити "
+"сцену з демонстрації."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
 msgid ""
@@ -42,6 +47,11 @@ msgid ""
 "downloaded from the Project Manager. Launch Godot and in the top bar select "
 "\"Templates\" and search for \"2D Lights and Shadows Demo\"."
 msgstr ""
+"Усі ресурси цього урока можна знайти в `офіційному демо сховищі <https://"
+"github.com/godotengine/godot-demo-projects>`_ на GitHub. Пропоную "
+"завантажити його перед початком роботи. Крім того, його можна завантажити з "
+"Менеджера Проекта. Запустіть Godot і на верхній панелі виберіть **Шаблони** "
+"та знайдіть \"2D Lights and Shadows Demo\"."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 msgid "Setup"
@@ -53,6 +63,9 @@ msgid ""
 "casters, and one for the background. I've included links to them all here if "
 "you want to download them separately from the demo."
 msgstr ""
+"Для цієї демонстрації ми використовуємо чотири текстури: дві для світла, "
+"одну для тіні і одну для фону. Я включив тут посилання на всі, якщо ви "
+"хочете завантажити їх окремо від демонстрації."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
 msgid ""
@@ -61,6 +74,10 @@ msgid ""
 "lights_and_shadows/background.png>`_) used in the demo. You do not "
 "necessarily need a background, but we use one for the demo."
 msgstr ""
+"Перша - це фонове зображення (`background.png <https://raw.githubusercontent."
+"com/godotengine/godot-demo-projects/master/2d/lights_and_shadows/background."
+"png>`_), яке використовується в демонстраційній версії. Вам не обов’язково "
+"потрібен фон, але ми використовуємо його для демонстрації."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
 msgid ""
@@ -69,6 +86,11 @@ msgid ""
 "lights_and_shadows/caster.png>`_) to use as our shadow caster object. For a "
 "top down game this could be a wall or any other object that casts a shadow."
 msgstr ""
+"Друга - це звичайне чорне зображення (`caster.png <https://raw."
+"githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
+"lights_and_shadows/caster.png>`_), яке буде використано в якості об'єкта, що "
+"відкидає тінь. Для гри зверху вниз це може бути стіна, або будь-який інший "
+"предмет, що кидає тінь."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:35
 msgid ""
@@ -79,6 +101,12 @@ msgid ""
 "1024x1024 pixels, so you should use it to cover 1024x1024 pixels in your "
 "game."
 msgstr ""
+"Далі йде саме світло (`light.png <https://raw.githubusercontent.com/"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/light.png>`_). "
+"Якщо натиснути посилання, ви помітите, наскільки воно велике. Зображення, "
+"яке ви використовуєте для світла, повинно охоплювати область, яку ви хочете, "
+"щоб ваше світло покривало. Це зображення має розмір 1024x1024 пікселів, тому "
+"ви повинні використовувати його для покриття 1024x1024 пікселів у грі."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:40
 msgid ""
@@ -88,6 +116,11 @@ msgid ""
 "light is and the larger light image to show the effect of the light upon the "
 "rest of the scene."
 msgstr ""
+"Нарешті, ми маємо зображення прожектора (`spot.png <https://raw."
+"githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
+"lights_and_shadows/spot.png>`_). Демо використовує крапку, щоб показати, де "
+"знаходиться світло, і більше світле зображення, щоб показати вплив світла на "
+"решту сцени."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 msgid "Nodes"
@@ -95,37 +128,38 @@ msgstr "Вузли"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid "The demo uses four different nodes:"
-msgstr ""
+msgstr "Демонстрація використовує чотири різні вузли:"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
-#, fuzzy
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`CanvasModulate <class_CanvasModulate>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:50
-#, fuzzy
 msgid ":ref:`Sprite <class_Sprite>`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`Sprite <class_Sprite>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:51
-#, fuzzy
 msgid ":ref:`Light2D <class_Light2D>`"
-msgstr ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Light2D <class_Light2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid ":ref:`LightOccluder2D <class_LightOccluder2D>`"
-msgstr ""
+msgstr ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:54
 msgid ""
 ":ref:`CanvasModulate<class_CanvasModulate>` is used to darken the scene."
 msgstr ""
+":ref:`CanvasModulate<class_CanvasModulate>` використовується для затемнення "
+"сцени."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:56
 msgid ""
 ":ref:`Sprites <class_Sprite>` are used to display the textures for the light "
 "blobs, the background, and for the shadow casters."
 msgstr ""
+":ref:`Sprites <class_Sprite>` використовуються для відображення текстур "
+"світлових плям, фону та об'єктів, що відкидають тінь."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:59
 msgid ""
@@ -134,6 +168,10 @@ msgid ""
 "to simulate lighting. But it can be used in other ways, for example masking "
 "out parts of the scene."
 msgstr ""
+":ref:`Light2Ds <class_Light2D>` використовуються для освітлення сцени. "
+"Зазвичай світло працює шляхом додавання вибраної текстури до решти сцени для "
+"імітації освітлення. Але його можна використовувати і іншими способами, "
+"наприклад, маскуванням частин сцени."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:63
 msgid ""
@@ -142,6 +180,10 @@ msgid ""
 "covered by the :ref:`Light2D <class_Light2D>` and their direction is based "
 "on the center of the :ref:`Light <class_Light2D>`."
 msgstr ""
+":ref:`LightOccluder2Ds <class_LightOccluder2D>` використовуються, щоб "
+"повідомляти шейдеру, які частини сцени відкидають тінь. Тіні з’являються "
+"лише на ділянках, покритих :ref:`Light2D <class_Light2D>` і їх напрямок "
+"залежить від центра :ref:`Світла <class_Light2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:68
 msgid "Lights"
@@ -153,24 +195,32 @@ msgid ""
 "Texture. They use additive blending to add the color of their texture to the "
 "scene."
 msgstr ""
+":ref:`Світла <class_Light2D>` охоплюють всю протяжність відповідної "
+"текстури. Вони використовують суміш добавок, щоб додати колір своєї фактури "
+"до сцени."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
 msgid ""
 ":ref:`Lights <class_Light2D>` have four ``Modes``: ``Add``, ``Sub``, "
 "``Mix``, and ``Mask``."
 msgstr ""
+":ref:`Світло <class_Light2D>` має чотири **Mode** *(Режими)*: ``Add``, "
+"``Sub``, ``Mix``, і ``Mask``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:77
 msgid ""
 "``Add`` adds the color of the light texture to the scene. It brightens the "
 "area under the light."
 msgstr ""
+"``Add`` додає колір текстури світла до сцени. Він освітлює область під "
+"світлом."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:79
 msgid ""
 "``Sub`` subtracts the color of the light from the scene. It darkens the area "
 "under the light."
 msgstr ""
+"``Sub`` віднімає колір світла зі сцени. Він затемнює область під світлом."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:81
 msgid ""
@@ -178,12 +228,16 @@ msgid ""
 "resulting brightness is halfway between the color of the light and the color "
 "underneath."
 msgstr ""
+"``Mix`` змішує колір світла з основою сцени. Отримана яскравість десь "
+"посередині між кольором світла та кольором під ним."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:84
 msgid ""
 "``Mask`` is used to mask out areas that are covered by the light. Masked out "
 "areas are hidden or revealed based on the color of the light."
 msgstr ""
+"``Mask`` використовується для маскування ділянок, покритих світлом. "
+"Замасковані ділянки приховані або розкриті залежно від кольору світла."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:87
 msgid ""
@@ -193,22 +247,31 @@ msgid ""
 "light source. A child :ref:`Sprite <class_Sprite>` is not necessary to make "
 "a :ref:`Light <class_Light2D>` work."
 msgstr ""
+"В демонстрації світло має два компоненти: власне :ref:`Light "
+"<class_Light2D>`(яке є ефектом світла) та пляма :ref:`Sprite "
+"<class_Sprite>`, яка є зображенням, що показує розташування джерела світла. "
+"Нащадок :ref:`Sprite <class_Sprite>` не потрібен для роботи :ref:`Light "
+"<class_Light2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:95
 msgid "Shadows"
-msgstr ""
+msgstr "Тіні"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:97
 msgid ""
 "Shadows are made by intersecting a :ref:`Light <class_Light2D>` with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>`."
 msgstr ""
+"Тіні створюються перетином :ref:`Light <class_Light2D>` з :ref:"
+"`LightOccluder2D <class_LightOccluder2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:99
 msgid ""
 "By default shadows are turned off. To turn them on click on the :ref:`Light "
 "<class_Light2D>` and under the Shadows section check ``Enabled``."
 msgstr ""
+"За замовчуванням тіні вимкнені. Щоб увімкнути їх, натисніть на :ref:`Light "
+"<class_Light2D>` і в розділі Тіні поставте галочку ``Enabled``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:102
 msgid ""
@@ -218,6 +281,12 @@ msgid ""
 "`LightOccluder2D <class_LightOccluder2D>` looks like a dark spot and in this "
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
+"У демонстраційній версії ми використовуємо :ref:`Sprite <class_Sprite>`з "
+"текстурою на ньому для створення об'єктів, що відкидають тінь, але насправді "
+"все, що вам потрібно - це пара :ref:`LightOccluder2D "
+"<class_LightOccluder2D>`. Сам по собі :ref:`LightOccluder2D "
+"<class_LightOccluder2D>` виглядає темною плямою, і в цій демонстрації :ref:"
+"`Sprite <class_Sprite>` - це просто чорний квадрат."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 msgid "Step by step"
@@ -229,6 +298,9 @@ msgid ""
 "step by step through the process of making a scene like the one found in the "
 "demo."
 msgstr ""
+"Тепер, коли ми розкрили основи використовуваних вузлів, ми можемо крок за "
+"кроком пройти процес створення сцени, подібної до тієї, що міститься в "
+"демонстрації."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:113
 msgid ""
@@ -238,6 +310,11 @@ msgid ""
 "can be any background you choose. For this style of shadow it is most likely "
 "to be a floor texture."
 msgstr ""
+"Спочатку додайте :ref:`Sprite <class_Sprite>` і встановіть його текстуру як "
+"`фонове зображення <https://raw.githubusercontent.com/godotengine/godot-demo-"
+"projects/master/2d/lights_and_shadows/background.png>`_. Для вашої гри це "
+"може бути будь-який фон, який ви оберете. Для цього стилю тіней це, швидше "
+"за все, текстура підлоги."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""
@@ -248,6 +325,12 @@ msgid ""
 "is set to ``add``. This means that each light adds its own color to whatever "
 "is underneath."
 msgstr ""
+"Далі створіть три :ref:`Light2D <class_Light2D>` і встановіть їх текстуру на "
+"`зображення світла <https://raw.githubusercontent.com/godotengine/godot-demo-"
+"projects/master/2d/lights_and_shadows/light.png>`_. Ви можете змінити їх "
+"колір у верхньому розділі. За замовчуванням тіні вимкнені, а **mode** "
+"встановлений на значенні ``add``. Це означає, що кожне світло додає свій "
+"колір усьому, що знаходиться під ним."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
 msgid ""

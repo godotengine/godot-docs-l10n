@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,14 @@ msgid "One-click deploy"
 msgstr "Déploiement en un clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
-msgid "Sounds good, what is it?"
-msgstr "Ça a l'air bien, qu'est-ce que c'est ?"
+#, fuzzy
+msgid "What is one-click deploy?"
+msgstr "Étapes de déploiement en un clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
+#, fuzzy
 msgid ""
-"This feature will pop up automatically once a platform is properly "
+"One-click deploy is a feature that is available once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
 "can go wrong at many levels (platform may not be configured correctly, SDK "
 "may be incorrectly installed, device may be improperly configured, etc.), "
@@ -41,11 +43,12 @@ msgstr ""
 "faire savoir à l'utilisateur qu'il existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
+#, fuzzy
 msgid ""
-"Some platforms (at the time of this writing, only Android) can detect when a "
-"USB device is connected to the computer, and offer the user to automatically "
-"export, install and run the project (in debug mode) on the device. This "
-"feature is called, in industry buzzwords, \"One-Click Deploy\"."
+"After adding an Android export preset marked as Runnable, Godot can detect "
+"when a USB device is connected to the computer and offer the user to "
+"automatically export, install and run the project (in debug mode) on the "
+"device. This feature is called *one-click deploy*."
 msgstr ""
 "Certaines plates-formes (au moment d'écrire ces lignes, seul Android) "
 "peuvent détecter quand un périphérique USB est connecté à l'ordinateur, et "
@@ -53,31 +56,85 @@ msgstr ""
 "projet (en mode debug) sur le périphérique. Cette fonctionnalité est "
 "appelée, dans les mots à la mode de l'industrie, \"One-Click Deploy\"."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
-msgid "Steps for one-click deploy"
-msgstr "Étapes de déploiement en un clic"
-
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
-msgid "Configure target platform."
-msgstr "Configurer la plate-forme cible."
-
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:22
 msgid ""
-"Configure device (make sure it's in developer mode, likes the computer, USB "
-"cable is plugged, USB is recognized, etc.)."
+"One-click deploy is only available once you've added an export template "
+"marked as **Runnable** in the Export dialog. You can mark several export "
+"presets as runnable, but only one preset per platform may be marked as "
+"runnable. If you mark a second preset in a given platform as runnable, the "
+"other preset will no longer be marked as runnable."
 msgstr ""
-"Configurez l'appareil (assurez-vous qu'il est en mode développeur, qu'il "
-"aime l'ordinateur, que le câble USB est branché, que l'USB est reconnu, "
-"etc.)."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
-msgid "Connect the device..."
-msgstr "Connecter l'appareil..."
-
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
-msgid "And voilà!"
-msgstr "Et voilà !"
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
+#, fuzzy
+msgid "Supported platforms"
+msgstr "Prend en charge toutes les plates-formes."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
-msgid "Click once... and deploy!"
-msgstr "Cliquez une fois... et déployez !"
+msgid ""
+"**Android:** Exports the project with debugging enabled and runs it on the "
+"connected device."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:34
+#, fuzzy
+msgid ""
+"Make sure to follow the steps described in :ref:`doc_exporting_for_android`. "
+"Otherwise, the one-click deploy button won't appear."
+msgstr ""
+"Vous devez également suivre les étapes mentionnées dans le tutoriel :ref:"
+"`doc_exporting_for_android` avant de tenter de créer un modèle d'exportation "
+"personnalisé."
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:37
+msgid ""
+"If you have more than one device connected, Godot will ask you which device "
+"the project should be exported to."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:40
+msgid ""
+"**HTML5:** Starts a local web server and runs the exported project by "
+"opening the default web browser."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:43
+msgid "Support for more platforms such as iOS is planned."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:46
+#, fuzzy
+msgid "Using one-click deploy"
+msgstr "Déploiement en un clic"
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:48
+msgid ""
+"If deploying to Android, enable developer mode on your mobile device then "
+"enable USB debugging in the device's settings."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:50
+msgid ""
+"After enabling USB debugging, connect the device to your PC using an USB "
+"cable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:52
+msgid "For advanced users, it should also be possible to use wireless ADB."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:54
+msgid ""
+"Make sure there is an export preset marked as **Runnable** for the target "
+"platform (Android or HTML5)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:56
+msgid ""
+"If everything is configured correctly and with no errors, platform-specific "
+"icons will appear in the top-right corner of the editor."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:58
+msgid "Click the button to export to the desired platform in one click."
+msgstr ""

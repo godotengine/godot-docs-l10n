@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,6 +100,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Headless Linux- und macOS-Server "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -387,7 +389,7 @@ msgstr "Gelenke"
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:275
 msgid "Areas to detect bodies entering or leaving it."
-msgstr "Bereiche, um Körper beim Betreten oder Verlassen zu erkennen"
+msgstr "Bereiche um Körper zu erkennen, die sie betreten oder verlassen."
 
 #: ../../docs/about/list_of_features.rst:136
 #: ../../docs/about/list_of_features.rst:277
@@ -639,6 +641,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Optionales Debanding zur Vermeidung von Color Banding (wirksam, "
+"wenn HDR-Rendering aktiviert ist)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -695,7 +699,6 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Multi-Sample Antialiasing (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Multi-Sample Antialiasing (MSAA)."
 
@@ -760,10 +763,9 @@ msgid "Ragdolls."
 msgstr "Ragdolls (Gliederpuppen)."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr ""
-"eingebaute Formen: Quader, Kugel, Kapsel, Zylinder (nur mit Projektil-"
+"Eingebaute Formen: Quader, Kugel, Kapsel, Zylinder (nur mit Projektil-"
 "Physik)."
 
 #: ../../docs/about/list_of_features.rst:280
@@ -863,7 +865,8 @@ msgstr ""
 "auszuführen oder um mehrere Prozessor-Cores zu nutzen."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -980,6 +983,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Audioeingang zur Aufnahme von Mikrofonen mit Echtzeitzugriff über die Klasse "
+"AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1134,6 +1139,8 @@ msgstr "Stift/Tablet Eingabe mit Erkennung des Anpressdrucks."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Gamepad-, Tastatur- und Mauseingabeunterstützung sind auch auf Android "
+"verfügbar."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1323,7 +1330,7 @@ msgstr "Unterstützung für Werbung mittels Third-Party Modulen."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Unterstützung für das Einbetten von Unteransichten auf Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"

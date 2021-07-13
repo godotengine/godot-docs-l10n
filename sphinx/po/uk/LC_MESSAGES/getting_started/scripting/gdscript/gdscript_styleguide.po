@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -325,9 +325,8 @@ msgstr ""
 "треба вивести, як текст, на екрані. Дивіться приклади нижче:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "Члени"
+msgstr "Числа"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -335,32 +334,36 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"Не пропускайте початкові чи кінцеві нулі у десяткових числах. Це робить їх "
+"менш читабельними і їх важче відразу відрізнити від цілих чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
-msgstr "**Правильно**:"
+msgstr "**Добре**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
-msgstr "**Неправильно**:"
+msgstr "**Погано**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
+"Використовуйте малі літери для літер у шістнадцяткових числах, оскільки їх "
+"менша висота полегшує читання числа."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
+"Скористайтеся підкресленнями GDScript у літералах, щоб зробити великі числа "
+"більш читабельними."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -377,15 +380,17 @@ msgstr ""
 "непослідовного коду."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
-#, fuzzy
 msgid "File names"
-msgstr "В'єтнамська"
+msgstr "Назви файлів"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:480
 msgid ""
 "Use snake_case for file names. For named classes, convert the PascalCase "
 "class name to snake_case::"
 msgstr ""
+"Використовуйте snake_case (слова маленькими буквами через підкреслення) для "
+"імен файлів. Для іменованих класів перетворіть ім’я класу PascalCase "
+"(нерозділені слова з великої букви) в snake_case:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
 msgid ""
@@ -393,6 +398,9 @@ msgid ""
 "also avoids case sensitivity issues that can crop up when exporting a "
 "project from Windows to other platforms."
 msgstr ""
+"Це узгоджується з тим, як файли C++ називаються у вихідному коді Godot. Це "
+"також дозволяє уникнути проблем з чутливістю до регістру, які можуть "
+"виникнути під час експорту проекту з Windows на інші платформи."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:498
 msgid "Classes and nodes"
@@ -583,9 +591,8 @@ msgstr ""
 "клас. Це демонструє приклад вище."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
-#, fuzzy
 msgid "Member variables"
-msgstr "Змінні середовища"
+msgstr "Змінні-члени"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid ""
@@ -593,9 +600,11 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Не оголошуйте змінні-члени, якщо вони використовуються лише локально в "
+"методі, оскільки це ускладнює код. Натомість оголосіть їх як локальні змінні "
+"в тілі методу."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
-#, fuzzy
 msgid "Local variables"
 msgstr "Локальні змінні"
 
@@ -605,6 +614,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Оголошуйте локальні змінні якомога ближче до їх першого використання. Це "
+"полегшує відстеження коду, без необхідності прокручувати занадто багато, щоб "
+"знайти де оголошено змінну."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid "Methods and static functions"
@@ -625,7 +637,6 @@ msgstr ""
 "додає вузол до дерева сцен."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
-#, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
@@ -663,27 +674,26 @@ msgstr ""
 "типізацію<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "Типи даних"
+msgstr "Заявлені типи"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
-msgstr ""
+msgstr "Щоб оголосити тип змінної, використовуйте ``<variable>: <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "Визначте тип повернення функції за допомогою стрілки ->"
+msgstr "Визначте тип повернення функції використовуючи ``-> <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "Типи даних"
+msgstr "Визначені типи"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
+"У більшості випадків можна дозволити компілятору вивести тип, використовуючи "
+"``:=``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:762
 msgid ""
@@ -692,3 +702,7 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"Однак у деяких випадках, коли контекст відсутній, компілятор повертається до "
+"типу повернення функції. Наприклад, ``get_node()`` не може вивести тип, якщо "
+"сцена чи файл вузла не завантажені в пам'ять. У цьому випадку слід чітко "
+"встановити тип."

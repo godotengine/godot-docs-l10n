@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,13 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot — это `Свободное и открытое программное обеспечение <https://en."
-"wikipedia.org/wiki/Free_and_open-source_software>`_, которое доступно под "
-"`OSI-утверждённой <https://opensource.org/licenses/MIT>`_ MIT лицензией. Это "
-"подразумевает как свободу распространения, так и свободу взаимодействия."
+"Godot - это `свободное программное обеспечение с открытым исходным кодом` "
+"<https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD"
+"%D0%BE%D0%B5_%D0%B8_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5_%D0%BF"
+"%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BE"
+"%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5>`_, доступное "
+"по `одобренной OSI` <https://opensource.org/licenses/MIT>`_ лицензии MIT. "
+"Это означает, что движок бесплатен и его использование ничем не ограничено."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -70,10 +73,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Всё содержимое этой документации публикуется под разрешительной лицензией "
-"Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/"
-"licenses/by/3.0/>`_), за авторством \"Juan Linietsky, Ariel Manzur и "
-"сообщество Godot Engine\"."
+"Все содержимое этой сопроводительной документации опубликовано под "
+"разрешительной лицензией Creative Commons Attribution 3.0 (`CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/3.0/>`_) с указанием авторства "
+"\"Хуан Линецкий, Ариэль Манзур и сообщество Godot Engine.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -269,16 +272,17 @@ msgstr ""
 "<doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
-"Есть несколько причин использовать GDScript — особенно если ваш проект "
-"находится на стадии прототипа, альфа/бета тестирования, или же просто не "
-"претендует на звание ААА-игры — но наиболее существенной причиной является "
-"общее **снижение сложности**."
+"Есть несколько причин использовать GDScript - особенно когда вы создаете "
+"прототип, находитесь на альфа-/бета-стадиях проекта или не создаете "
+"следующую игру класса AAA - но самая главная причина - это общее **снижение "
+"сложности.**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -548,7 +552,6 @@ msgstr ""
 "Почему Godot стремится сохранить свой набор основных функций маленьким?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
@@ -572,14 +575,13 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
-"**Техническое обслуживание и поверхность кода для ошибок.** Каждый раз, "
-"когда мы принимаем новый код в репозитории Godot, существующие участники "
-"часто берут на себя ответственность за его поддержание. Некоторые участники "
-"не всегда остаются после того, как их код объединили, что может затруднить "
-"нам поддержание кода. Это может привести к плохо поддерживаемым функциям с "
-"ошибками, которые никогда не будут исправлены. Вдобавок ко всему, "
-"«поверхность API», которую необходимо тестировать и проверять на наличие "
-"регрессий, со временем увеличивается."
+"**Сопровождение кода и поиск ошибок.** Каждый раз, когда мы принимаем новый "
+"код в репозиторий Godot, существующие авторы часто берут на себя "
+"ответственность за его сопровождение. Некоторые авторы не всегда остаются с "
+"нами после слияния их кода, что может затруднить сопровождение кода. Это "
+"может привести к появлению плохо поддерживаемых функций с ошибками, которые "
+"никогда не исправляются. Кроме того, \"поверхность API\", которую необходимо "
+"тестировать и проверять на наличие регрессий, со временем увеличивается."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -932,18 +934,17 @@ msgstr ""
 "случаев или проектов-примеров (если возможно)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Можно ли использовать Godot как библиотеку?"
+msgstr "Можно ли использовать Godot для создания не игровых приложений?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Небольшой размер дистрибутива Godot может сделать его подходящей "
+"Да! Godot обладает обширной встроенной системой пользовательского "
+"интерфейса, а небольшой размер дистрибутива может сделать его подходящей "
 "альтернативой таким фреймворкам, как Electron или Qt."
 
 #: ../../docs/about/faq.rst:366
@@ -952,12 +953,19 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"При создании неигрового приложения не забудьте включить :ref:`low-processor "
+"mode <class_ProjectSettings_property_application/run/low_processor_mode>` в "
+"настройках проекта, чтобы уменьшить использование центрального и "
+"графического процессоров."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Это значит, что мы бы не рекомендовали использовать Godot для создания "
+"*мобильного* приложения, поскольку режим с низким использованием процессора "
+"еще не поддерживается на мобильных платформах."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -965,6 +973,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Загляните в `Material Maker <https://github.com/RodZill4/material-maker>` __ "
+"и `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>` __ для "
+"примеров приложений с открытым исходным кодом, созданных с помощью Годо."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -997,7 +1008,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Какой инструментарий пользовательского интерфейса использует Godot?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1008,6 +1019,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot не использует стандартный набор инструментов :abbr: `ГИП (графический "
+"интерфейс пользователя)`, наподобие GTK, Qt или wxWidgets. Вместо этого "
+"Godot использует собственный набор инструментов пользовательского "
+"интерфейса, созданный с помощью OpenGL ES или Vulkan. Этот инструментарий "
+"представлен в виде узлов управления, которые используются для визуализации "
+"редактора (написанного на C++). Эти узлы управления также можно использовать "
+"в проектах на любом языке сценариев, поддерживаемом Godot."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1017,6 +1035,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Этот собственный набор инструментов позволяет использовать преимущества "
+"аппаратного ускорения и иметь единообразный внешний вид на всех платформах. "
+"Вдобавок ко всему, ему не нужно иметь дело с оговорками лицензирования LGPL, "
+"которые идут с GTK или Qt. Наконец, это означает, что Godot «ест свою "
+"собачью еду», поскольку сам редактор является одним из самых сложных "
+"пользователей системы пользовательского интерфейса Godot."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1024,9 +1048,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Этот собственный набор инструментов пользовательского интерфейса :ref:"
+"`нельзя использовать в качестве библиотеки <doc_faq_use_godot_as_library>`, "
+"но вы все равно можете :ref:`использовать Godot для создания неигровых "
+"приложений с помощью редактора <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr "Почему Godot не использует STL (Стандартную библиотеку шаблонов)"
 
 #: ../../docs/about/faq.rst:415

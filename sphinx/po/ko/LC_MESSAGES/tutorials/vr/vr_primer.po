@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,49 +306,48 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_primer.rst:131
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
-"an open standard for VR and AR software. This plugin is early in "
-"development, only supports Linux and requires extra setup described in the "
-"repository."
+"an open standard for VR and AR software. Tested with SteamVR, Monada and "
+"Oculus OpenXR runtimes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:135
+#: ../../docs/tutorials/vr/vr_primer.rst:134
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:137
+#: ../../docs/tutorials/vr/vr_primer.rst:136
 msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:139
+#: ../../docs/tutorials/vr/vr_primer.rst:138
 #, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr ""
 "`godot-cpp 저장소 <https://github.com/GodotNativeTools/godot-cpp>`_ 의 사본."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:140
+#: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:142
+#: ../../docs/tutorials/vr/vr_primer.rst:141
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:146
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr "고려해야 할 다른 사항"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:148
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
 msgstr ""
 "이 입문서도 알아두면 좋지만, 이를 넘어 간략하게 볼 몇 가지 사항이 있습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:151
+#: ../../docs/tutorials/vr/vr_primer.rst:150
 #, fuzzy
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
@@ -376,7 +375,7 @@ msgstr ""
 "는데, 이는 ARVROrigin 노드에서 world scale이란 이름으로 나타나 있습니다. 예"
 "를 들어, 속성 값을 10으로 설정하면 시스템은 10 단위 = 1미터로 인지합니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:162
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 #, fuzzy
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
@@ -388,7 +387,7 @@ msgstr ""
 "의 생각보다 게임에 많은 자원을 잡아 먹습니다. 모바일 VR의 경우, 더욱 주의해야"
 "합니다, 하지만 데스크톱 게임이라도, 세 가지 요인이 작업을 더욱 어렵게 합니다:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:166
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -400,7 +399,7 @@ msgstr ""
 "거나 파이프라인에있는 작업을 두 배로 늘리지는 않더라도, 두 눈을 위한 렌더링 "
 "이미지로 추가 작업 부하가 있습니다"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:169
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -414,7 +413,7 @@ msgstr ""
 "시 게임이 안정적인 90fps로 실행되어 사용자가 즉시 멀미를 느끼지 않도록 해야 "
 "합니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:173
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -426,7 +425,7 @@ msgstr ""
 "에 2160x2400의 결과로 렌더링합니다. 이는 대부분의 AR 애플리케이션에서 문제가 "
 "되지 않습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:177
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

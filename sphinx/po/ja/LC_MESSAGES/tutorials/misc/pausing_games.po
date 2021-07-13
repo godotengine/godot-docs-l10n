@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,10 @@ msgstr ""
 msgid "You can achieve the same result in code:"
 msgstr "コードで同じ結果を得ることができます:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:62
+#: ../../docs/tutorials/misc/pausing_games.rst:69
+#, fuzzy
 msgid ""
-"By default all nodes have this property in the \"Inherit\" state. This "
+"By default, all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
 "property is set on the parent node. If the parent is set to \"Inherit\" , "
 "then the grandparent will be checked and so on. Ultimately, if a state can't "
@@ -122,11 +123,11 @@ msgstr ""
 "の一時停止状態が使用されます。これは、デフォルトでは、ゲームが一時停止する"
 "と、すべてのノードが一時停止することを意味します。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:70
+#: ../../docs/tutorials/misc/pausing_games.rst:77
 msgid "So the three possible states for a node are:"
 msgstr "したがって、ノードの3つの可能な状態は次のとおりです:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:72
+#: ../../docs/tutorials/misc/pausing_games.rst:79
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
@@ -134,7 +135,7 @@ msgstr ""
 "**Inherit(継承)**: 親、祖父母などの状態に応じたプロセス。最初の親は非継承状態"
 "を持っている。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:74
+#: ../../docs/tutorials/misc/pausing_games.rst:81
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -142,7 +143,7 @@ msgstr ""
 "**Stop(停止)**: 無条件にノードを停止します(Inherit モードの子も)。一時停止す"
 "ると、このノードはもう処理されません。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:76
+#: ../../docs/tutorials/misc/pausing_games.rst:83
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -150,11 +151,11 @@ msgstr ""
 "**Process(処理)**: 無条件にノードを処理します(Inherit モードのも)。このノード"
 "は一時停止中か否かを問わず処理されます。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:80
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
 msgstr "例"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:89
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -162,7 +163,7 @@ msgstr ""
 "この例は、内部にコントロールを持つポップアップまたはパネルを作成し、一時停止"
 "モードを \"Process\" に設定してから非表示にします:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:87
+#: ../../docs/tutorials/misc/pausing_games.rst:94
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -172,7 +173,7 @@ msgstr ""
 "その状態を継承します。この場合、シーンツリーのこのブランチは、一時停止しても"
 "機能し続けます。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:91
+#: ../../docs/tutorials/misc/pausing_games.rst:98
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
@@ -180,11 +181,11 @@ msgstr ""
 "最後に、一時停止ボタンが押されたとき(どのボタンでも実行可能)、一時停止を有効"
 "にして一時停止画面を表示するようにします。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:109
+#: ../../docs/tutorials/misc/pausing_games.rst:116
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr ""
 "一時停止を解除するには、一時停止画面が閉じているときに反対の操作を行います:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:127
+#: ../../docs/tutorials/misc/pausing_games.rst:134
 msgid "And that should be all!"
 msgstr "そして、これですべてです！"

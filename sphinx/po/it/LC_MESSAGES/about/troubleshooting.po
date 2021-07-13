@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,12 +122,25 @@ msgstr ""
 "l'editor. È quindi possibile collegare nuovamente le periferiche."
 
 #: ../../docs/about/troubleshooting.rst:47
+msgid ""
+"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:49
+msgid ""
+"This is a `known issue <https://github.com/godotengine/godot/"
+"issues/32990>`__ caused by the third-party Stardock Fences application on "
+"Windows. The only known workaround is to disable Stardock Fences while using "
+"Godot."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
 "L'editor di Godot appare bloccato dopo aver fatto clic sulla console di "
 "sistema."
 
-#: ../../docs/about/troubleshooting.rst:49
+#: ../../docs/about/troubleshooting.rst:56
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -142,7 +155,7 @@ msgstr ""
 "all'interno della console di sistema. Godot non può ignorare questo "
 "comportamento specifico del sistema."
 
-#: ../../docs/about/troubleshooting.rst:54
+#: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -150,7 +163,7 @@ msgstr ""
 "Per risolvere questo problema, seleziona la finestra della console di "
 "sistema e premi Invio per uscire dalla modalità di selezione."
 
-#: ../../docs/about/troubleshooting.rst:58
+#: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
@@ -158,7 +171,7 @@ msgstr ""
 "Un testo come \"NO DC\" appare nell'angolo in alto a sinistra della finestra "
 "del gestore dei progetti e dell'editor."
 
-#: ../../docs/about/troubleshooting.rst:60
+#: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
@@ -166,7 +179,7 @@ msgstr ""
 "Questo è causato dal driver grafico NVIDIA che inietta un overlay per "
 "visualizzare le informazioni."
 
-#: ../../docs/about/troubleshooting.rst:62
+#: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
@@ -175,7 +188,7 @@ msgstr ""
 "impostazioni del driver grafico ai valori predefiniti nel pannello di "
 "controllo NVIDIA."
 
-#: ../../docs/about/troubleshooting.rst:65
+#: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
@@ -184,11 +197,11 @@ msgstr ""
 "su **X Screen 0 > OpenGL Settings** e deselezionate **Enable Graphics API "
 "Visual Indicator**."
 
-#: ../../docs/about/troubleshooting.rst:69
+#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr "La finestra del progetto appare sfocata, a differenza dell'editor."
 
-#: ../../docs/about/troubleshooting.rst:71
+#: ../../docs/about/troubleshooting.rst:78
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -199,7 +212,7 @@ msgstr ""
 "prestazioni, specialmente sulla sceda grafica integrata, dove il rendering "
 "di scene 3D in hiDPI è lento."
 
-#: ../../docs/about/troubleshooting.rst:75
+#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -210,12 +223,12 @@ msgstr ""
 "che il tuo progetto sia configurato per supportare :ref:`multiple resolution "
 "<doc_multiple_resolutions>`."
 
-#: ../../docs/about/troubleshooting.rst:80
+#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
 "La finestra del progetto non appare centrata quando eseguo il progetto."
 
-#: ../../docs/about/troubleshooting.rst:82
+#: ../../docs/about/troubleshooting.rst:89
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
@@ -228,7 +241,7 @@ msgstr ""
 "assicurati che il tuo progetto sia configurato per supportare :ref:`multiple "
 "resolution <doc_multiple_resolutions>`."
 
-#: ../../docs/about/troubleshooting.rst:88
+#: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
@@ -236,7 +249,7 @@ msgstr ""
 "Il progetto funziona quando viene eseguito dall'editor, ma non riesce a "
 "caricare alcuni file quando viene eseguito da una copia esportata."
 
-#: ../../docs/about/troubleshooting.rst:90
+#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -253,7 +266,7 @@ msgstr ""
 "specificare ``* .json`` nel filtro di esportazione non di risorse. Vedi :ref:"
 "`doc_exporting_projects_export_mode` per maggiori informazioni."
 
-#: ../../docs/about/troubleshooting.rst:97
+#: ../../docs/about/troubleshooting.rst:104
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "

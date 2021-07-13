@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,20 +23,19 @@ msgstr "Processo de importação"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr "Importando ativos em Godot 3.0+"
+msgstr "Importando assets no Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
-#, fuzzy
 msgid ""
 "Previously, importing assets in Godot 2.x required manual maintenance of a "
 "separate directory with source assets. Without doing this, it was impossible "
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
-"Anteriormente, a importação de ativos no Godot 2.x exigia a manutenção "
-"manual de um diretório separado com recursos de origem. Sem isso, era "
-"impossível especificar como converter e alterar os flags de importação para "
-"texturas, áudios, cenas etc."
+"Anteriormente, a importação de assets no Godot 2.x exigia a manutenção "
+"manual de um diretório separado com assets de origem. Sem isso, era "
+"impossível especificar como converter e alterar os sinalizadores de "
+"importação para texturas, arquivos de áudio, cenas, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 #, fuzzy
@@ -45,13 +44,13 @@ msgid ""
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
-"hidden in a res://.import folder."
+"hidden in a ``res://.import`` folder."
 msgstr ""
-"Em Godot 3.0, usamos uma abordagem mais moderna para importar: basta soltar "
-"seus ativos (arquivos de imagem, cenas, áudios, fontes, etc) diretamente na "
-"pasta do projeto (copiá-los manualmente com o explorador de arquivos do "
-"sistema operacional). O Godot importará automaticamente esses arquivos "
-"internamente e manterá os recursos importados ocultos em uma pasta res: //."
+"No Godot 3.0+, usamos uma abordagem mais moderna para importação: basta "
+"largar seus assets (arquivos de imagem, cenas, arquivos de áudio, fontes, "
+"etc) diretamente na pasta do projeto (copie-os manualmente com o explorador "
+"de arquivos do SO). O Godot importará automaticamente esses arquivos "
+"internamente e manterá os recursos importados ocultos em uma pasta res://."
 "import."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
@@ -62,54 +61,57 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"Isto significa que ao tentar acessar assets importados através de código "
+"você precisa usar o :ref:`Resource Loader<class_ResourceLoader>`, pois ele "
+"levará automaticamente em conta onde os arquivos internos são salvos. Se "
+"você tentar e acessar um asset importado utilizando a classe :ref:`File "
+"<class_File>` ele irá funcionar no editor, mas quebrará no projeto exportado."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"No entanto, o :ref:`Resource Loader<class_ResourceLoader>` não pode acessar "
+"arquivos não importados, apenas a classe :ref:`File <class_File>`pode."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "Alterando Parâmetros de Importação"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Alterar os parâmetros de importação de um ativo em Godot (novamente, lembre-"
-"se de que os parâmetros de importação estão presentes apenas nos tipos de "
-"recursos não nativo de Godot) é fácil. Selecione o recurso relevante na doca "
+"Para alterar os parâmetros de importação de um asset no Godot (novamente, "
+"lembre-se de que os parâmetros de importação estão presentes apenas nos "
+"tipos de recursos não nativo do Godot) selecione o recurso relevante na dock "
 "do sistema de arquivos:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
-#, fuzzy
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
-"Depois de ajustar os parâmetros, pressione \"Reimport\". Os parâmetros "
-"utilizados serão apenas para este ativo e serão usados em futuras "
+"Em seguida, depois de ajustar os parâmetros, pressione \"Reimportar\". Os "
+"parâmetros utilizados serão apenas para este asset e serão usados em futuras "
 "reimportações."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
-#, fuzzy
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
-"Alterar os parâmetros de importação de vários ativos ao mesmo tempo também é "
-"possível. Basta selecionar todos eles juntos na doca de recursos e os "
+"Alterar os parâmetros de importação de vários assets ao mesmo tempo também é "
+"possível. Basta selecionar todos eles juntos na dock de recursos e os "
 "parâmetros expostos serão aplicados a todos eles ao reimportar."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "Importando Imagens"
+msgstr "Reimportando múltiplos assets"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -119,6 +121,12 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"Ao trabalhar em um projeto, você pode descobrir que vários assets precisam "
+"ter os mesmos parâmetros alterados, como a ativação de mipmaps, mas você só "
+"quer que esses parâmetros específicos sejam alterados. Para fazer isto, "
+"selecione todos os assets que você quer reimportar no sistema de arquivos. "
+"Na aba de importação agora haverá uma caixa de seleção à esquerda de cada "
+"parâmetro de importação."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -127,6 +135,10 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Marque a caixa de seleção dos parâmetros que você deseja alterar nos seus "
+"assets importados e, em seguida, altere os parâmetros normalmente. "
+"Finalmente, clique no botão de reimportação e todos os assets selecionados "
+"serão reimportados apenas com esses parâmetros alterados."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
@@ -140,30 +152,32 @@ msgid ""
 msgstr ""
 "Quando a soma de verificação MD5 do ativo de origem for alterada, Godot "
 "executará uma reimportação automática, aplicando a predefinição configurada "
-"para esse ativo específico."
+"para esse asset específico."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
 msgstr "Arquivos gerados"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
+#, fuzzy
 msgid ""
-"Importing will add an extra <asset>.import file, containing the import "
+"Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"A importação adicionará um arquivo extra <asset> .import, contendo a "
-"configuração de importação. Certifique-se de cometer estes para o seu "
+"A importação adicionará um arquivo extra <asset>.import, contendo a "
+"configuração de importação. Certifique-se de fazer commit destes para o seu "
 "sistema de controle de versão!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#, fuzzy
 msgid ""
-"Additionally, extra assets will be preset in the hidden res://.import folder:"
+"Additionally, extra assets will be preset in the hidden ``res://.import`` "
+"folder:"
 msgstr ""
-"Além disso, os ativos extras serão predefinidos na pasta res: //.import "
+"Além disso, os assets extras serão predefinidos na pasta res: //.import "
 "oculta:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80
-#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -171,29 +185,29 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
-"Se qualquer um dos arquivos presentes nessa pasta for apagado (ou a pasta "
-"inteira), o recurso ou os ativos serão reimportados automaticamente. Dessa "
-"forma, confirmar essa pasta no sistema de controle de versão é opcional. "
-"Pode poupar tempo na reimportação do tempo ao fazer o check-out em outro "
-"computador, mas leva consideravelmente mais espaço e tempo de transferência. "
-"Escolha seu veneno!"
+"Se algum dos arquivos presentes nesta pasta for apagado (ou a pasta "
+"inteira), o asset ou assets serão reimportados automaticamente. Dessa forma, "
+"fazer o commit desta pasta para sistema de controle de versão é opcional. "
+"Pode poupar tempo na reimportação ao fazer o check-out em outro computador, "
+"mas leva consideravelmente mais espaço e tempo de transferência. Escolha seu "
+"veneno!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
-msgstr "Alterando o Tipo de Recurso de Importação"
+msgstr "Alterando o tipo de recurso de importação"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
-"Alguns recursos de origem podem ser importados como tipos diferentes de "
+"Alguns assets de origem podem ser importados como tipos diferentes de "
 "recursos. Para isso, selecione o tipo relevante de recurso desejado e "
-"pressione \"Reimport\":"
+"pressione \"Reimportar\":"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
-msgstr "Alterando Parâmetros de Importação Padrão"
+msgstr "Alterando parâmetros de importação padrão"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
@@ -203,9 +217,9 @@ msgid ""
 "cleared too:"
 msgstr ""
 "Diferentes tipos de jogos podem exigir padrões diferentes. Alterar os "
-"padrões por projeto pode ser obtido usando o menu \"Preset ..\". Além de "
-"alguns tipos de recursos que oferecem predefinições, a configuração padrão "
-"também pode ser salva e desmarcada:"
+"padrões por projeto pode ser obtido usando o menu \"Predefinição..\". Além "
+"de alguns tipos de recursos que oferecem predefinições, a configuração "
+"padrão também pode ser salva e apagada:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"

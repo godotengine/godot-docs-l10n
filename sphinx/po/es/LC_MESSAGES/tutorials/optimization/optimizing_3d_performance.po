@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:56
 msgid "Other occlusion techniques"
-msgstr ""
+msgstr "Otras técnicas de oclusión"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:58
 msgid ""
@@ -103,6 +103,10 @@ msgid ""
 "raster-based occlusion culling. Some of these may be available through add-"
 "ons and may be available in core Godot in the future."
 msgstr ""
+"Existen otras técnicas de oclusión como portales, PVS automáticos y "
+"eliminación selectiva de oclusión basada en ráster. Algunos de estos pueden "
+"estar disponibles a través de complementos y pueden estar disponibles en el "
+"core de Godot en el futuro."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:63
 msgid "Transparent objects"
@@ -154,6 +158,12 @@ msgid ""
 "replacing models at varying distance. You could use lower poly models, or "
 "use transparency to simulate more complex geometry."
 msgstr ""
+"En algunas situaciones, particularmente a distancia, puede ser una buena "
+"idea ** reemplazar geometrías complejas con versiones más simples **. El "
+"usuario final probablemente no podrá ver mucha diferencia. Considere mirar "
+"una gran cantidad de árboles a lo lejos. Existen varias estrategias para "
+"reemplazar modelos a diferentes distancias. Puede usar modelos con polígonos "
+"mas bajos o usar transparencia para simular geometrías más complejas."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:87
 msgid "Billboards and imposters"
@@ -168,6 +178,13 @@ msgid ""
 "into fill rate (for more information on fill rate, see :ref:"
 "`doc_gpu_optimization`)."
 msgstr ""
+"La versión más simple de usar la transparencia para lidiar con LOD son los "
+"billboards. Por ejemplo, puede utilizar un solo quad transparente para "
+"representar un árbol a distancia. Esto puede ser muy económico de "
+"renderizar, a menos que, por supuesto, haya muchos árboles uno frente al "
+"otro. En cuyo caso la transparencia puede comenzar a consumir la tasa de "
+"llenado (para obtener más información sobre la tasa de llenado, consulte: "
+"ref: `doc_gpu_optimization`)."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:95
 msgid ""
@@ -175,6 +192,9 @@ msgid ""
 "together as a group. This can be especially effective if you can see an area "
 "but cannot physically approach it in a game."
 msgstr ""
+"Una alternativa es renderizar no solo un árbol, sino un numero de arboles "
+"juntos como grupo. Esto puede ser efectivo especialmente si puedes ver el "
+"área pero no puedes aproximarte físicamente en el juego."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:99
 msgid ""
@@ -206,6 +226,7 @@ msgstr ""
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:115
 msgid "Also see the :ref:`Using MultiMesh <doc_using_multimesh>` doc."
 msgstr ""
+"Véase también el documento :ref:`Using MultiMesh <doc_using_multimesh>`."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
 msgid "Bake lighting"
@@ -250,13 +271,15 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:140
 msgid "Large worlds"
-msgstr ""
+msgstr "Mundos extensos"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
 msgid ""
 "If you are making large worlds, there are different considerations than what "
 "you may be familiar with from smaller games."
 msgstr ""
+"Si está creando mundos grandes, hay consideraciones diferentes que le puede "
+"ser familiar en los juegos más pequeños."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:145
 msgid ""
@@ -264,6 +287,10 @@ msgid ""
 "you move around the world. This can prevent memory use from getting out of "
 "hand, and also limit the processing needed to the local area."
 msgstr ""
+"Mundos grandes pueden necesitar ser construidos en tiles que se pueden "
+"cargar bajo demanda mientras se mueve por el mundo. Esto puede evitar que el "
+"uso de la memoria se vaya de las manos y también limitar el procesamiento "
+"necesario al área local."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
 msgid ""

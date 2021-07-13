@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,11 +266,12 @@ msgstr ""
 "potete leggere `GDScript scripting guide <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
 "Ci sono diverse ragioni per usare GDScript, specialmente quando si sta "
 "prototipando, in stadi alfa/beta del progetto, o non si sta creando il "
@@ -548,13 +549,12 @@ msgstr ""
 "principali?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot intenzionalmente non include funzionalità che possono essere "
+"Godot non include intenzionalmente funzionalità che possono essere "
 "implementate da componenti aggiuntivi a meno che non siano utilizzate molto "
 "spesso. Un esempio di questo sarebbe una funzionalità avanzata di "
 "intelligenza artificiale."
@@ -934,19 +934,19 @@ msgstr ""
 "come esempio (se possibile)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "È possibile utilizzare Godot come libreria?"
+msgstr ""
+"È possibile utilizzare Godot per creare applicazioni che non siano giochi?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Le ridotte dimensioni di Godot possono renderlo un'alternativa adatta a "
-"framework come Electron o Qt."
+"Sì! Godot dispone di un ampio sistema di UI integrato, e la sua piccola "
+"dimensione di distribuzione può renderlo un'alternativa adatta a framework "
+"come Electron o Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -954,12 +954,20 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Quando si crea un'applicazione che non sia un gioco, assicurarsi di "
+"abilitare :ref:`modalità basso-processore "
+"<class_ProjectSettings_property_application/run/low_processor_mode>` nelle "
+"Impostazioni Progetto per diminuire l'uso di CPU e GPU."
 
 #: ../../docs/about/faq.rst:370
+#, fuzzy
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Detto questo, non raccomandiamo l'uso di Godot per la creazione di "
+"un'applicazione *mobile* poiché la modalità a basso uso processore non è "
+"ancora supportata sulle piattaforme mobili."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -967,6 +975,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Controlla `Material Maker <https://github.com/RodZill4/material-maker>`__ e "
+"`Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ per esempi "
+"di applicazioni open source fatte con Godot."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -998,10 +1009,12 @@ msgstr ""
 "Godot. Ciò renderà più difficile trovare le risposte alle tue domande."
 
 #: ../../docs/about/faq.rst:393
+#, fuzzy
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Quale toolkit di interfaccia utente usa Godot?"
 
 #: ../../docs/about/faq.rst:395
+#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1010,8 +1023,16 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot non usa un toolkit standard :abbr:`GUI (Graphical User Interface)` "
+"come GTK, Qt o wxWidgets. Invece, Godot usa il proprio toolkit di "
+"interfaccia utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è "
+"esposto sotto forma di nodi di controllo, che sono usati per visualizzare "
+"l'editor (che è scritto in C++). Questi nodi di controllo possono anche "
+"essere utilizzati in progetti da qualsiasi linguaggio di scripting "
+"supportato da Godot."
 
 #: ../../docs/about/faq.rst:402
+#, fuzzy
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
 "and have a consistent appearance across all platforms. On top of that, it "
@@ -1019,16 +1040,27 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Questo toolkit personalizzato permette di beneficiare dell'accelerazione "
+"hardware e di avere un aspetto coerente su tutte le piattaforme. Oltre a "
+"questo, non ha a che fare con le limitazioni della licenza LGPL che vengono "
+"con GTK o Qt. Infine, questo significa che Godot sta \"mangiando il suo "
+"stesso cibo per cani\" poiché l'editor stesso è uno degli utilizzatori più "
+"complessi del sistema UI di Godot."
 
 #: ../../docs/about/faq.rst:408
+#, fuzzy
 msgid ""
 "This custom UI toolkit :ref:`can't be used as a library "
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Questo toolkit UI personalizzato :ref:`non può essere usato come libreria "
+"<doc_faq_use_godot_as_library>`, ma puoi ancora :ref:`usare Godot per creare "
+"applicazioni non di gioco usando l'editor <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr "Perchè Godot non usa STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:415

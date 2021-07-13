@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,29 +26,27 @@ msgid "Supported files"
 msgstr "Unterstützte Formate"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"Rohe Audiodaten sind im Allgemeinen groß und unerwünscht. Godot bietet zwei "
-"Hauptoptionen zum Importieren Ihrer Audiodaten: WAV und Ogg Vorbis."
+"Godot bietet drei Optionen für den Import Ihrer Audiodaten: WAV, Ogg Vorbis "
+"und MP3."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
 msgstr "Jeder hat unterschiedliche Vorteile."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
-#, fuzzy
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
 "lightweight on the CPU to play back (hundreds of simultaneous voices in this "
 "format are fine). The downside is that they take up a lot of disk space."
 msgstr ""
-"WAV-Dateien verwenden Rohdaten oder leichte Komprimierung, stellen nur "
-"geringe Anforderungen an die CPU für die Wiedergabe (Hunderte von Stimmen "
-"gleichzeitig in diesem Format sind in Ordnung), beanspruchen jedoch viel "
-"Platz."
+"WAV-Dateien verwenden Rohdaten oder eine leichte Komprimierung (IMA-ADPCM). "
+"Sie belasten die CPU bei der Wiedergabe nur wenig (Hunderte von "
+"gleichzeitigen Stimmen in diesem Format sind in Ordnung). Der Nachteil ist, "
+"dass sie sehr viel Speicherplatz benötigen."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:17
 msgid ""
@@ -68,6 +66,13 @@ msgid ""
 "and HTML5 projects where CPU resources are limited, especially when playing "
 "multiple compressed sounds at the same time (such as long ambient sounds)."
 msgstr ""
+"MP3-Dateien verwenden eine bessere Kompression als WAV mit IMA-ADPCM, aber "
+"eine schlechtere als Ogg Vorbis. Das bedeutet, dass eine MP3-Datei mit etwa "
+"gleicher Qualität wie Ogg Vorbis deutlich größer ist. Positiv ist, dass MP3 "
+"im Vergleich zu Ogg Vorbis weniger CPU-Belastung bei der Wiedergabe "
+"benötigt. Dies macht MP3 nützlich für mobile und HTML5-Projekte, bei denen "
+"die CPU-Ressourcen begrenzt sind, insbesondere wenn mehrere komprimierte "
+"Sounds gleichzeitig abgespielt werden (z. B. lange Umgebungsgeräusche)."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."

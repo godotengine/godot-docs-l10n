@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "Требования"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
-msgstr ""
+msgstr "Для составления шаблонов экспорта для Web необходимо следующее:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 #, fuzzy
@@ -62,6 +62,9 @@ msgid ""
 "usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
 "activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
 msgstr ""
+"Перед началом работы убедитесь, что ``emcc`` доступен в вашем PATH. Обычно "
+"это настраивается Emscripten SDK, например, при вызове ``emsdk activate`` и "
+"``source ./emsdk_env.sh``/ ``emsdk_env.bat``."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:27
 msgid ""
@@ -70,6 +73,10 @@ msgid ""
 "``target`` as either ``release`` for a release build or ``release_debug`` "
 "for a debug build::"
 msgstr ""
+"Откройте терминал и перейдите в корневой каталог исходного кода движка. "
+"Затем дайте команду SCons на сборку платформы JavaScript. Укажите ``target`` "
+"либо как ``release`` для сборки release, либо как ``release_debug`` для "
+"сборки debug::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:34
 msgid ""
@@ -78,6 +85,11 @@ msgid ""
 "singleton enabled. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
+"По умолчанию в движок будет встроен :ref:`JavaScript синглтон "
+"<doc_javascript_eval>`. В официальных шаблонах экспорта также включен "
+"синглтон JavaScript. Поскольку вызовы ``eval()`` могут представлять угрозу "
+"безопасности, опция ``javascript_eval`` может быть использована для сборки "
+"без синглтона::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:42
 msgid ""
@@ -86,16 +98,22 @@ msgid ""
 "``godot.javascript.opt.zip`` for release or ``godot.javascript.opt.debug."
 "zip`` for debug."
 msgstr ""
+"Теперь движок будет скомпилирован в WebAssembly с помощью Emscripten. После "
+"завершения работы полученный файл будет помещен в подкаталог ``bin``. Его "
+"имя будет ``godot.javascript.opt.zip`` для релиза или ``godot.javascript.opt."
+"debug.zip`` для отладки."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:47
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
+"Наконец, переименуйте zip-архив в ``webassembly_release.zip`` для шаблона "
+"релиза::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:52
 msgid "And ``webassembly_debug.zip`` for the debug template::"
-msgstr ""
+msgstr "И ``webassembly_debug.zip`` для отладочного шаблона::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:57
 msgid "Threads and GDNative"
@@ -107,39 +125,47 @@ msgid ""
 "performance and compatibility reasons. See the :ref:`export page "
 "<doc_javascript_export_options>` for more info."
 msgstr ""
+"Шаблоны экспорта по умолчанию не включают поддержку потоков и GDNative по "
+"причинам производительности и совместимости. Дополнительную информацию см. "
+"на странице :ref:`экспорт <doc_javascript_export_options>`."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:63
 msgid ""
 "You can build the export templates using the option ``threads_enabled=yes`` "
 "or ``gdnative_enabled=yes`` to enable threads or GDNative support::"
 msgstr ""
+"Вы можете создавать шаблоны экспорта, используя опцию "
+"``threads_enabled=yes`` или ``gdnative_enabled=yes`` для включения поддержки "
+"потоков или GDNative::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:72
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have either the ``.threads`` or ``.gdnative`` "
 "suffix."
 msgstr ""
-"Полученные исполняемые файлы помещаются в под-директорию bin/, и называются "
-"в соответствии с данными правилами наименования:"
+"По завершению итоговый файл будет сохранен в подкаталог ``bin``. Его имя "
+"будет иметь либо суффикс ``.threads``, либо ``.gdnative``."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:75
 msgid ""
 "Finally, rename the zip archives to ``webassembly_release_threads.zip`` and "
 "``webassembly_release_gdnative.zip`` for the release template::"
 msgstr ""
+"Наконец, переименуйте zip-архивы в ``webassembly_release_threads.zip`` и "
+"``webassembly_release_gdnative.zip`` для шаблона релиза::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:81
 msgid ""
 "And ``webassembly_debug_threads.zip`` and ``webassembly_debug_gdnative.zip`` "
 "for the debug template::"
 msgstr ""
+"И ``webassembly_debug_threads.zip`` и ``webassembly_debug_gdnative.zip`` для "
+"шаблона отладки::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:88
-#, fuzzy
 msgid "Building the Editor"
-msgstr "Встроенный редактор тем."
+msgstr "Сборка редактора"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""
@@ -147,6 +173,9 @@ msgid ""
 "the browser. The editor version requires threads support and is not "
 "recommended over the native build. You can build the editor with::"
 msgstr ""
+"Также можно собрать версию редактора Godot, которая может работать в "
+"браузере. Версия редактора требует поддержки потоков и не рекомендуется к "
+"использованию вместо нативной сборки. Вы можете собрать редактор с помощью::"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:96
 msgid ""
@@ -155,9 +184,15 @@ msgid ""
 "You can upload the zip content to your web server and visit it with your "
 "browser to use the editor."
 msgstr ""
+"После завершения работы полученный файл будет помещен в подкаталог ``bin``. "
+"Его имя будет ``godot.javascript.opt.tools.threads.zip``. Вы можете "
+"загрузить содержимое zip-файла на свой веб-сервер и посетить его с помощью "
+"браузера, чтобы воспользоваться редактором."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:100
 msgid ""
 "Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
 "server requirements."
 msgstr ""
+"Требования к веб-серверу см. на странице :ref:`экспорта "
+"<doc_javascript_export_options>`."

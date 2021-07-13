@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -480,7 +480,6 @@ msgid "How to change the anchor"
 msgstr "Як змінити прив'язку"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -490,11 +489,11 @@ msgid ""
 "a control node."
 msgstr ""
 "Як і будь-які властивості, ви можете редагувати 4 точки прив'язки в "
-"Інспекторі, але це самий зручніший спосіб. Коли ви вибираєте вузол контролю, "
-"над вікном перегляду, на панелі інструментів, з’являється меню макета "
-"(компонування). Воно дає вам список піктограм для встановлення всіх 4 якорів "
-"одним клацанням, замість того, щоб використовувати 4 властивості інспектора. "
-"Меню макета буде видно лише тоді, коли ви вибрали вузол контролю."
+"Інспекторі, але це не самий зручний спосіб. Коли ви вибираєте вузол "
+"контролю, над вікном перегляду, на панелі інструментів, з’являється меню "
+"макета (компонування). Воно дає вам список піктограм для встановлення всіх 4 "
+"якорів одним клацанням, замість того, щоб використовувати 4 властивості "
+"інспектора. Меню макета буде видно лише тоді, коли ви вибрали вузол контролю."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
@@ -505,7 +504,6 @@ msgid "Anchors are relative to the parent container"
 msgstr "Прив'язки відносно батьківського контейнера"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
-#, fuzzy
 msgid ""
 "Each anchor is a value between 0 and 1. For the left and top anchors, a "
 "value of 0 means that without any margin, the node's edges will align with "
@@ -524,7 +522,6 @@ msgstr ""
 "контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
-#, fuzzy
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
@@ -533,12 +530,10 @@ msgstr ""
 "практиці ви часто дозволяєте контейнеру оновлювати поля для вас"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
-#, fuzzy
 msgid "Margins change with the anchor"
 msgstr "Поля змінюються разом з прив'язкою"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
-#, fuzzy
 msgid ""
 "Margins update automatically when you move or resize a control node. They "
 "represent the distance from the control node's edges to its anchor, which is "
@@ -556,14 +551,12 @@ msgstr ""
 "розділі Rect, у інспекторі."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
-#, fuzzy
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
 msgstr ""
-"Поля на контейнері CenterContainer встановлена на прив'язці \"Повний "
+"Поля на контейнері CenterContainer встановлені на прив'язці \"Повний "
 "прямокутник\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
-#, fuzzy
 msgid ""
 "Try to change the anchors or nest your Control nodes inside Containers: the "
 "margins will update. You'll rarely need to edit the margins manually. Always "
@@ -581,14 +574,12 @@ msgstr ""
 "Використовуйте VBoxContainer. Детальніше про них нижче."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
-#, fuzzy
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
 "Використовуйте теги розмірів, щоб впливати на заповнення елементами "
 "інтерфейсу доступного простору"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
-#, fuzzy
 msgid ""
 "Every control node has Size Flags. They tell containers how the UI elements "
 "should scale. If you add the \"Fill\" flag to the Horizontal or Vertical "
@@ -599,36 +590,33 @@ msgid ""
 "over the node and resize it automatically."
 msgstr ""
 "Кожен вузол контролю має Size Flags. Вони розповідають контейнерам, як слід "
-"змінювати елементи інтерфейсу. Якщо ви додасте прапор \"Fill\" до "
+"змінювати елементи інтерфейсу. Якщо ви додасте галочку \"Fill\" до "
 "властивості Horizontal, або Vertical, обмежувальне поле вузла займе весь "
 "простір, який зможе, але воно поважатиме його братів та сестер і збереже їх "
-"розмір. Якщо в HBoxContainer є 3 вузли TextureRect, з прапорами \"Fill\" на "
+"розмір. Якщо в HBoxContainer є 3 вузли TextureRect, з галочками \"Fill\" на "
 "обох осях, вони займають третину наявного простору, але не більше. Контейнер "
 "візьме на себе вузол і змінить його розмір автоматично."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
-#, fuzzy
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
 msgstr "3 елементи інтерфейсу в HBoxContainer вирівняні горизонтально"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
-#, fuzzy
 msgid ""
 "The \"Expand\" flag lets the UI element take all the space it can, and push "
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
-"Прапорець \"Expand\" дозволяє елементу інтерфейсу зайняти весь простір, який "
+"Галочка \"Expand\" дозволяє елементу інтерфейсу зайняти весь простір, який "
 "він може, і потиснути своїх побратимів. Його обмежувальний прямокутник "
 "розшириться до країв його предка, або поки його розширення не заблокує інший "
 "вузол інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
-#, fuzzy
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
-"Той самий приклад, що і вище, але центральний вузол має прапорець \"Expand\""
+"Той самий приклад, що і вище, але центральний вузол має галочку \"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
@@ -639,12 +627,10 @@ msgstr ""
 "ефект може змінитися досить сильно, залежно від налаштування інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
-#, fuzzy
 msgid "Arrange control nodes automatically with containers"
 msgstr "Автоматична організація вузлів контролю з контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -658,7 +644,6 @@ msgstr ""
 "можете бачити ефект миттєво."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
-#, fuzzy
 msgid ""
 "Containers have a few special properties to control how they arrange UI "
 "elements. To change them, navigate down to the Custom Constants section in "
@@ -669,12 +654,10 @@ msgstr ""
 "Custom Constants (Власні константи) в інспекторі."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
-#, fuzzy
 msgid "The 5 most useful containers"
 msgstr "5 найкорисніших контейнерів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
-#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
@@ -683,18 +666,15 @@ msgstr ""
 "для більшості ігор буде достатньо декількох:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-#, fuzzy
 msgid "MarginContainer, to add margins around parts of the UI"
 msgstr ""
 "MarginContainer, щоб додати поля навколо частини інтерфейсу користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
-#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr "CenterContainer, центрує своїх нащадків у своїй обмежувальній коробці"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
-#, fuzzy
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
@@ -721,7 +701,6 @@ msgstr ""
 "текстури та кнопки, вони будуть складатися в купу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
-#, fuzzy
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
@@ -729,7 +708,6 @@ msgstr ""
 "батьківського контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
-#, fuzzy
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -742,18 +720,16 @@ msgstr ""
 "MarginContainer, який охоплює все вікно перегляду, щоб додати розділення між "
 "краєм вікна та інтерфейсом користувача. Ви можете встановити поле у верхній, "
 "лівій, правій, або нижній частині контейнера. Не потрібно встановлювати "
-"прапорець: натисніть відповідне поле та введіть будь-яке число. Він "
+"галочку: натисніть відповідне поле та введіть будь-яке число. Він "
 "активується автоматично."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
-#, fuzzy
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
 "MarginContainer додає 40-піксельний відступ навколо ігрового інтерфейсу "
 "користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
-#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -770,12 +746,10 @@ msgstr ""
 "стовпцями різного розміру, оскільки ви можете вкладати їх як забажаєте."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
-#, fuzzy
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr "HBoxContainer горизонтально вирівнює елементи інтерфейсу користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
-#, fuzzy
 msgid ""
 "VBoxContainer automatically arranges its children into a column. It puts "
 "them one after the other. If you use the separation parameter, it will leave "
@@ -792,7 +766,6 @@ msgstr ""
 "нащадком, або після останнього нащадка, зі скрипту."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
-#, fuzzy
 msgid ""
 "The GridContainer lets you arrange UI elements in a grid-like pattern. You "
 "can only control the number of columns it has, and it will set the number of "
@@ -806,14 +779,13 @@ msgstr ""
 "GridContainer дозволяє розташовувати елементи інтерфейсу користувача за "
 "сіткою. Ви можете лише керувати кількістю стовпців, які він має, і він "
 "встановлюватиме кількість рядків самостійно, виходячи з кількості нащадків. "
-"Якщо у вас дев'ять дітей і три стовпчики, у вас буде 9 ÷ 3 = 3 ряди. Додайте "
-"ще трьох нащадків, і у вас буде чотири ряди. Іншими словами, це створить "
-"нові рядки, коли ви додасте більше текстур і кнопок. Як і коробчасті "
-"контейнери, він має дві властивості, які встановлюють вертикальне та "
-"горизонтальне розділення між рядками та стовпцями відповідно."
+"Якщо у вас дев'ять нащадків і три стовпчики, у вас буде 9 ÷ 3 = 3 ряди. "
+"Додайте ще трьох нащадків, і у вас буде чотири ряди. Іншими словами, це "
+"створить нові рядки, коли ви додасте більше текстур і кнопок. Як і "
+"коробчасті контейнери, він має дві властивості, які встановлюють вертикальне "
+"та горизонтальне розділення між рядками та стовпцями відповідно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
-#, fuzzy
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "GridContainer з 2 стовпцями. Він розміщує кожен стовпець автоматично."
 

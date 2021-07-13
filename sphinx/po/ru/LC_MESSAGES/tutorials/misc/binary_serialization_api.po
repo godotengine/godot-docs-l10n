@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,15 +45,14 @@ msgid "Packet specification"
 msgstr "Пакетная сериализация"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
-#, fuzzy
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
-"Пакет спроектирован так чтобы всегда укладываться в 4 байта. Все значения "
-"закодированы от младшего к старшему(little endian). Все пакеты имеют "
-"целочисленный заголовок в 4 байта, определяющий тип данных:"
+"Пакет спроектирован всегда укладываться в 4 байта. Все значения закодированы "
+"от младшего к старшему(little endian). Все пакеты имеют целочисленный "
+"заголовок в 4 байта, определяющий тип данных."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:22
 msgid ""
@@ -327,7 +326,7 @@ msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "color"
-msgstr "color"
+msgstr "цвет"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "15"
@@ -1134,9 +1133,8 @@ msgid "Array length (Floats)"
 msgstr "Длина Массива (Числа с плавающей точкой)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
-#, fuzzy
 msgid "32-bits IEEE 754 float"
-msgstr "32 Битное IEE 754 Число с плавающей точкой"
+msgstr "32 Битное IEEE 754 Число с плавающей точкой"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"

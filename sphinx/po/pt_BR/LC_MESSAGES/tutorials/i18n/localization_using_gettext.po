@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,9 @@ msgid ""
 "supports loading translation files written in the GNU gettext (``.po``) "
 "format."
 msgstr ""
+"Em adição a :ref:`doc_importing_translations` em formato CSV, Godot também "
+"suporta carregar arquivos de tradução escritos no formato GNU gettext (``."
+"po``)."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:10
 msgid ""
@@ -36,16 +39,22 @@ msgid ""
 "html>`_. It's written with C projects in mind, but much of the advice also "
 "applies to Godot (with the exception of ``xgettext``)."
 msgstr ""
+"Para obter uma introdução ao gettext, consulte `A Quick Gettext Tutorial "
+"<https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-"
+"tutorial.html>`_. Ele foi escrito com projetos em C em mente, mas muitos dos "
+"conselhos também se aplicam ao Godot (com exceção de ``xgettext``)."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
 msgid "Advantages"
-msgstr ""
+msgstr "Vantagens"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:18
 msgid ""
 "gettext is a standard format, which can be edited using any text editor or "
 "GUI editors such as `Poedit <https://poedit.net/>`_."
 msgstr ""
+"gettext é um formato padrão, que pode ser editado usando qualquer editor de "
+"texto ou editores de GUI como `Poedit <https://poedit.net/>`_."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:20
 msgid ""
@@ -53,6 +62,9 @@ msgid ""
 "www.transifex.com/>`_ and `Weblate <https://weblate.org/>`_, which makes it "
 "easier for people to collaborate to localization."
 msgstr ""
+"gettext é suportado por plataformas de tradução como `Transifex <https://www."
+"transifex.com/>`_ e `Weblate <https://weblate.org/>`_, o que torna mais "
+"fácil para as pessoas colaborarem na localização."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:23
 msgid ""
@@ -67,16 +79,20 @@ msgid ""
 "Multiline strings are more convenient to edit in gettext files compared to "
 "CSV files."
 msgstr ""
+"Strings multilinhas são mais convenientes para editar em arquivos gettext em "
+"comparação com arquivos CSV."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:29
 msgid "Disadvantages"
-msgstr ""
+msgstr "Desvantagens"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:31
 msgid ""
 "gettext is a more complex format than CSV and can be harder to grasp for "
 "people new to software localization."
 msgstr ""
+"gettext é um formato mais complexo do que o CSV e pode ser mais difícil de "
+"entender para quem não conhece localização de software."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:33
 msgid ""
@@ -85,10 +101,14 @@ msgid ""
 "(``.mo``), translators can test their work without having to install gettext "
 "tools."
 msgstr ""
+"Pessoas que mantêm arquivos de localização terão que instalar ferramentas "
+"gettext em seus sistemas. No entanto, como o Godot não usa arquivos de "
+"objeto de mensagem compilados (``.mo``), os tradutores podem testar seu "
+"trabalho sem ter que instalar ferramentas gettext."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:39
 msgid "Caveats"
-msgstr ""
+msgstr "Ressalvas"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:41
 msgid ""
@@ -96,11 +116,13 @@ msgid ""
 "limited than the reference GNU gettext implementation), some features such "
 "as pluralization aren't supported."
 msgstr ""
+"Como o Godot usa seu próprio analisador de arquivo PO nos bastidores (que é "
+"mais limitado do que a implementação GNU gettext de referência), alguns "
+"recursos como pluralização não são suportados."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:46
-#, fuzzy
 msgid "Installing gettext tools"
-msgstr "Instalando o pacote"
+msgstr "Instalando ferramentas gettext"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:48
 msgid ""
@@ -108,6 +130,9 @@ msgid ""
 "operations, such as updating message files. Therefore, it's strongly "
 "recommended to install them."
 msgstr ""
+"As ferramentas gettext de linha de comando são necessárias para executar "
+"operações de manutenção, como atualizar arquivos de mensagens. Portanto, é "
+"altamente recomendável instalá-las."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:52
 msgid ""
@@ -115,6 +140,10 @@ msgid ""
 "io/articles/gettext-iconv-windows.html>`_. Any architecture and binary type "
 "(shared or static) works; if in doubt, choose the 64-bit static installer."
 msgstr ""
+"**Windows:** Baixe um instalador a partir `desta página <https://mlocati."
+"github.io/articles/gettext-iconv-windows.html>`_. Qualquer arquitetura e "
+"tipo binário (compartilhado ou estático) funciona; em caso de dúvida, "
+"escolha o instalador estático de 64 bits."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:56
 msgid ""
@@ -128,11 +157,12 @@ msgid ""
 "**Linux:** On most distributions, install the ``gettext`` package from your "
 "distribution's package manager."
 msgstr ""
+"**Linux:** Na maioria das distribuições, instale o pacote ``gettext`` do "
+"gerenciador de pacotes de sua distribuição."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "Configurando"
+msgstr "Criando o modelo PO (POT) manualmente"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:66
 msgid ""
@@ -141,12 +171,19 @@ msgid ""
 "be placed anywhere in the project directory, but it's recommended to keep it "
 "in a subdirectory, as each locale will be defined in its own file."
 msgstr ""
+"O Godot atualmente não suporta a extração de strings de origem usando "
+"``xgettext``, então o arquivo ``.pot`` deve ser criado manualmente. Este "
+"arquivo pode ser colocado em qualquer lugar do diretório do projeto, mas "
+"recomenda-se mantê-lo em um subdiretório, pois cada local será definido em "
+"seu próprio arquivo."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:71
 msgid ""
 "Create a directory named `locale` in the project directory. In this "
 "directory, save a file named ``messages.pot`` with the following contents:"
 msgstr ""
+"Crie um diretório chamado `locale` no diretório do projeto. Neste diretório, "
+"salve um arquivo denominado ``messages.pot`` com o seguinte conteúdo:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:83
 msgid ""
@@ -154,17 +191,20 @@ msgid ""
 "the source string (usually in English), ``msgstr`` will be the translated "
 "string."
 msgstr ""
+"Mensagens em gettext são feitas de pares ``msgid`` e ``msgstr``. ``msgid`` é "
+"a string fonte (geralmente em inglês), ``msgstr`` será a string traduzida."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:87
 msgid ""
 "The ``msgstr`` value in PO template files (``.pot``) should **always** be "
 "empty. Localization will be done in the generated ``.po`` files instead."
 msgstr ""
+"O valor ``msgstr`` em arquivos de modelo PO (``.pot``) deve **sempre** estar "
+"vazio. A localização será feita nos arquivos ``.po`` gerados."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "Configurando"
+msgstr "Criando o modelo PO (POT) usando pybabel"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:93
 msgid ""
@@ -172,10 +212,14 @@ msgid ""
 "automatically create and update the POT file from your scene files and "
 "scripts."
 msgstr ""
+"A ferramenta Python pybabel tem suporte para Godot e pode ser usada para "
+"criar e atualizar automaticamente o arquivo POT de seus arquivos de cena e "
+"scripts."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:96
 msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
 msgstr ""
+"Depois de instalar ``babel`` e ``babel-godot``, por exemplo, usando pip:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:102
 msgid ""
@@ -183,10 +227,13 @@ msgid ""
 "files pybabel needs to process (note that we process GDScript as Python, "
 "which is generally sufficient):"
 msgstr ""
+"Escreva um arquivo de mapeamento (por exemplo ``babelrc``) que indicará "
+"quais arquivos pybabel precisa processar (observe que processamos GDScript "
+"como Python, o que geralmente é suficiente):"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:114
 msgid "You can then run pybabel like so:"
-msgstr ""
+msgstr "Você pode então executar o pybabel assim:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:120
 msgid ""
@@ -195,10 +242,14 @@ msgid ""
 "well as properties named \"text\" (commonly used by Control nodes) and "
 "LineEdit's \"placeholder_text\" property."
 msgstr ""
+"Use a opção ``-k`` para especificar o que precisa ser extraído. Neste caso, "
+"os argumentos para :ref:`tr() <class_Object_method_tr>` serão traduzidos, "
+"assim como as propriedades chamadas \"text\" (comumente usadas pelos nós de "
+"Controle) e a propriedade \"placeholder_text\" do LineEdit."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
 msgid "Creating a messages file from a PO template"
-msgstr ""
+msgstr "Criando um arquivo de mensagens a partir de um modelo PO"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:128
 msgid ""
@@ -206,23 +257,29 @@ msgid ""
 "For instance, to create a French localization file, use the following "
 "command while in the ``locale`` directory:"
 msgstr ""
+"O comando ``msginit`` é usado para transformar um modelo PO em um arquivo de "
+"mensagens. Por exemplo, para criar um arquivo de localização em francês, use "
+"o seguinte comando enquanto estiver no diretório ``locale``:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:136
 msgid ""
 "The command above will create a file named ``fr.po`` in the same directory "
 "as the PO template."
 msgstr ""
+"O comando acima criará um arquivo chamado ``fr.po`` no mesmo diretório do "
+"modelo PO."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:139
 msgid ""
 "Alternatively, you can do that graphically using Poedit, or by uploading the "
 "POT file to your web platform of choice."
 msgstr ""
+"Alternativamente, você pode fazer isso graficamente usando o Poedit ou "
+"enviando o arquivo POT para a plataforma web de sua escolha."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
-#, fuzzy
 msgid "Loading a messages file in Godot"
-msgstr "Importando ativos em Godot 3.0+"
+msgstr "Carregando um arquivo de mensagens no Godot"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:145
 msgid ""
@@ -232,43 +289,61 @@ msgid ""
 "dialog. The locale will be inferred from the ``\"Language: <code>\\n\"`` "
 "property in the messages file."
 msgstr ""
+"Para registrar um arquivo de mensagens como uma tradução em um projeto, abra "
+"as **Configurações do Projeto** e vá para a aba ** Localização **. Em "
+"**Traduções**, clique em **Adicionar…** e escolha o arquivo ``.po`` na caixa "
+"de diálogo do arquivo. O locale será inferido da propriedade ``\"Language: "
+"<code>\\n\"`` no arquivo de mensagens."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:151
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
 "and testing translations in Godot."
 msgstr ""
+"Veja :ref:`doc_internationalizing_games` para mais informações sobre como "
+"importar e testar traduções no Godot."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
 msgid "Updating message files to follow the PO template"
-msgstr ""
+msgstr "Atualizando arquivos de mensagem para seguir o modelo PO"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:157
+#, fuzzy
 msgid ""
 "After updating the PO template, you will have to update message files so "
 "that they contain new strings, while removing strings that are no longer "
-"present in the PO template removed in the PO template. This can be done "
-"automatically using the ``msgmerge`` tool:"
+"present in the PO template. This can be done automatically using the "
+"``msgmerge`` tool:"
 msgstr ""
+"Depois de atualizar o modelo de PO, você terá que atualizar os arquivos de "
+"mensagem para que contenham novas sequências, enquanto remove as sequências "
+"que não estão mais presentes no modelo de PO. Isso pode ser feito "
+"automaticamente usando a ferramenta ``msgmerge``:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:167
 msgid ""
 "If you want to keep a backup of the original message file (which would be "
 "saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
 msgstr ""
+"Se você deseja manter um backup do arquivo da mensagem original (que seria "
+"salvo como ``fr.po~`` neste exemplo), remova o argumento ``--backup=none``."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
 msgid "Checking the validity of a PO file or template"
-msgstr ""
+msgstr "Verificando a validade de um arquivo ou modelo PO"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:173
 msgid ""
 "It is possible to check whether a gettext file's syntax is valid by running "
 "the command below:"
 msgstr ""
+"É possível verificar se a sintaxe de um arquivo gettext é válida executando "
+"o comando abaixo:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:180
 msgid ""
 "If there are syntax errors or warnings, they will be displayed in the "
 "console. Otherwise, ``msgfmt`` won't output anything."
 msgstr ""
+"Se houver erros de sintaxe ou avisos, eles serão exibidos no console. Caso "
+"contrário, ``msgfmt`` não exibirá nada."

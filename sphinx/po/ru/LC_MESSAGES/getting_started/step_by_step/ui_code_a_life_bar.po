@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,12 +198,12 @@ msgstr ""
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
-"``number_label`` отображает количество здоровья в числовом виде. Этот узел - "
+"``number_label`` отображает количество здоровья в числовом виде. Это узел "
 "``Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
-msgstr "``bar`` - это сама шкала здоровья. Этот узле - ``TextureProgress``"
+msgstr "``bar`` - сама шкала здоровья. Это узел ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
@@ -233,7 +233,7 @@ msgstr ""
 "В корне проекта, в папке `res://` вы найдете `LevelMockup`. Это основная "
 "игровая сцена с которой мы будем работать. Все компоненты, составляющие "
 "игру, находятся в папке `scenes/`. Папка `assets/` содержит игровые спрайты "
-"и шрифт для счетчика HP. В папке ' scripts/' вы найдете скрипты для врага, "
+"и шрифт для счетчика HP. В папке `scripts/` вы найдете скрипты для врага, "
 "игрока и GUI-контроллера."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
@@ -243,8 +243,8 @@ msgid ""
 "themselves."
 msgstr ""
 "Щелкните на значок редактирования сцены справа от узла в дереве сцены, чтобы "
-"открыть сцену в редакторе. Вы увидите, LifeBar и EnergyBar которые также "
-"являются сценами."
+"открыть сцену в редакторе. Вы увидите, LifeBar и EnergyBar которые являются "
+"под-сценами."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
@@ -784,7 +784,7 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
-"Мы нацелены на ``animated_health`` на ``self``, то есть на узел ``GUI``. "
+"Мы нацеливаем ``animated_health`` на ``self``, то есть на узел ``GUI``. "
 "Второе свойство interpolate\\_property узла ``Tween`` принимается в виде "
 "строки. Вот почему мы пишем это как ``\"animated_health\"``."
 
@@ -929,7 +929,6 @@ msgstr ""
 "несколькими анимациями параллельно для нас."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`Ctrl + F1` to jump back to the 2D Workspace. "
@@ -937,9 +936,9 @@ msgid ""
 "to the Inspector."
 msgstr ""
 "Во-первых, ``GUI`` необходимо подключиться к сигналу ``died`` у ``Player``, "
-"чтобы узнать, когда тот умер. Нажмите :kbd:`F1` для возврата в 2D-среду. "
-"Выберите вкладку ``Player`` в панели Сцен и щелкните на вкладку Узел рядом с "
-"Инспектором."
+"чтобы узнать, когда тот умер. Нажмите :kbd:`Ctrl + F1` для возврата в 2D-"
+"среду. Выберите узел ``Player`` в панели Сцен и щелкните на вкладку Узел "
+"рядом с Инспектором."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."

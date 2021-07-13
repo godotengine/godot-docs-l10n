@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,14 +149,14 @@ msgstr ""
 "statique 64 bits."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:56
-#, fuzzy
 msgid ""
 "**macOS:** Install gettext either using `Homebrew <https://brew.sh/>`_ with "
 "the ``brew install gettext`` command, or using `MacPorts <https://www."
 "macports.org/>`_ with the ``sudo port install gettext`` command."
 msgstr ""
-"**macOS :** Utilisez `Homebrew <https://brew.sh/>`_ pour installer gettext "
-"avec la commande ``brew install gettext``."
+"**macOS :** Installez gettext soit en utilisant `Homebrew <https://brew.sh/"
+">`_ avec la commande ``brew install gettext``, soit en utilisant `MacPorts "
+"<https://www.macports.org/>`_ avec la commande ``sudo port install gettext``."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:60
 msgid ""
@@ -320,11 +320,12 @@ msgid "Updating message files to follow the PO template"
 msgstr "Mise à jour des fichiers de messages pour suivre le modèle PO"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:157
+#, fuzzy
 msgid ""
 "After updating the PO template, you will have to update message files so "
 "that they contain new strings, while removing strings that are no longer "
-"present in the PO template removed in the PO template. This can be done "
-"automatically using the ``msgmerge`` tool:"
+"present in the PO template. This can be done automatically using the "
+"``msgmerge`` tool:"
 msgstr ""
 "Après la mise à jour du modèle PO, vous devrez mettre à jour les fichiers de "
 "message afin qu'ils contiennent de nouvelles chaînes, tout en supprimant les "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgid ""
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 "Use a codificação **UTF-8** sem uma `marca de ordem de byte <https://pt."
-"wikipedia.org/wiki/Marca_de_ordem_de_byte>)`_. *(padrão do editor)*"
+"wikipedia.org/wiki/Marca_de_ordem_de_byte>`_. *(padrão do editor)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
@@ -285,15 +285,14 @@ msgstr ""
 "texto de código desativado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
-#, fuzzy
 msgid ""
 "In the script editor, to toggle the selected code commented, press :kbd:"
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"No editor de script, para desativar e ativar o código selecionado, aperte "
-"<kbd>Ctrl</kbd><kbd>K</kbd>. Isso adiciona um sinal de # no início das "
-"linhas selecionadas."
+"No editor de script, para alternar o código selecionado comentado, aperte :"
+"kbd:`Ctrl + K`. Este recurso adiciona um sinal de # no início das linhas "
+"selecionadas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
@@ -334,18 +333,19 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"Não omita o zero à esquerda ou à direita em números de ponto flutuante. Caso "
+"contrário, isto os torna menos legíveis e mais difíceis de distinguir de "
+"inteiros à primeira vista."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
 msgstr "**Bom**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
 msgstr "**Ruim**:"
 
@@ -354,12 +354,16 @@ msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
+"Use letras minúsculas em números hexadecimais, pois sua altura mais baixa "
+"torna o número mais fácil de ler."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
+"Aproveite os sublinhados do GDScript em literais para tornar números grandes "
+"mais legíveis."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -376,15 +380,16 @@ msgstr ""
 "embutidas, o que deixa o seu código inconsistente."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
-#, fuzzy
 msgid "File names"
-msgstr "Arquivos gerados"
+msgstr "Nomes de arquivo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:480
 msgid ""
 "Use snake_case for file names. For named classes, convert the PascalCase "
 "class name to snake_case::"
 msgstr ""
+"Use snake_case para nomes de arquivo. Para classes nomeadas, converta o nome "
+"da classe PascalCase em snake_case::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
 msgid ""
@@ -392,6 +397,9 @@ msgid ""
 "also avoids case sensitivity issues that can crop up when exporting a "
 "project from Windows to other platforms."
 msgstr ""
+"Isto é consistente com a forma como os arquivos C++ são nomeados no código-"
+"fonte do Godot. Isto também evita problemas de sensibilidade de caixa que "
+"podem surgir ao exportar um projeto do Windows para outras plataformas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:498
 msgid "Classes and nodes"
@@ -559,7 +567,7 @@ msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr ""
-"Enums vêm depois de sinais, já que você pode usá-los como dicas de "
+"Enums vêm depois de sinais, já que você pode usá-los como inferências de "
 "exportação para outras propriedades."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
@@ -583,9 +591,8 @@ msgstr ""
 "isso que o exemplo acima mostra."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
-#, fuzzy
 msgid "Member variables"
-msgstr "Funções e Variáveis"
+msgstr "Variáveis de membro"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid ""
@@ -593,11 +600,13 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Não declare variáveis de membro se elas forem usadas apenas localmente em um "
+"método, pois torna o código mais difícil de seguir. Em vez disso, declare-as "
+"como variáveis locais no corpo do método."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
-#, fuzzy
 msgid "Local variables"
-msgstr "Variáveis Locais"
+msgstr "Variáveis locais"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
 msgid ""
@@ -605,6 +614,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Declare variáveis locais o mais pŕoximo possível de seu primeiro uso. Isto "
+"torna mais fácil seguir o código, sem ter que rolar muito para encontrar "
+"onde a variável foi declarada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid "Methods and static functions"
@@ -625,12 +637,11 @@ msgstr ""
 "ela adiciona um nó à árvore da cena."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
-#, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
 msgstr ""
-"Essas funções devem vir primeiro por que elas mostram como o objeto é "
+"Estas funções devem vir primeiro pois elas mostram como o objeto é "
 "inicializado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:693
@@ -660,26 +671,24 @@ msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
-"Desde o Godot 3.1, GDScript suporta :ref:`tipos estáticos "
-"opcionais<doc_gdscript_static_typing>`."
+"Desde o Godot 3.1, GDScript suporta :ref:`tipagem estática "
+"opcional<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "Tipos de espaços reservados"
+msgstr "Tipos declarados"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
-msgstr ""
+msgstr "Para declarar o tipo de uma variável, use ``<variável>: <tipo>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
 msgid "To declare the return type of a function, use ``-> <type>``:"
 msgstr "Para declarar o tipo de retorno de uma função, use ``-> <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "Tipos de espaços reservados"
+msgstr "Tipos inferidos"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
@@ -694,3 +703,7 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"No entanto, em alguns casos em que falta contexto, o compilador volta ao "
+"tipo de retorno da função. Por exemplo, ``get_node()`` não pode inferir um "
+"tipo a menos que a cena ou arquivo do nó seja carregado na memória. Nesse "
+"caso, você deve definir o tipo explicitamente."

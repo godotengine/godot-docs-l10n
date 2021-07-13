@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,12 +172,11 @@ msgstr ""
 "ключевое слово ``nameof`` (применяется к самому делегату)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
-#, fuzzy
 msgid ""
 "It is possible to bind values when establishing a connection by passing a "
 "Godot array."
 msgstr ""
-"При установлении соединения можно связать значения, передав массив объектов."
+"Возможно связывать значения при установке соединения передавая массив Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
@@ -260,11 +259,12 @@ msgstr ""
 "если архитектура будет 64-bit или 32-bit соответственно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
+#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
 "These names may change in the future. These are created from the "
-"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "Один из ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,6 +69,14 @@ msgid ""
 "and HTML5 projects where CPU resources are limited, especially when playing "
 "multiple compressed sounds at the same time (such as long ambient sounds)."
 msgstr ""
+"Los archivos MP3 utilizan una mejor compresión que WAV con IMA-ADPCM, pero "
+"peor que Ogg Vorbis. Esto significa que un archivo MP3 con una calidad "
+"aproximadamente igual a la de Ogg Vorbis será significativamente más grande. "
+"En el lado positivo, MP3 requiere menos uso de CPU para reproducirse en "
+"comparación con Ogg Vorbis. Esto hace que MP3 sea útil para proyectos mobile "
+"y HTML5 donde los recursos de la CPU son limitados, especialmente cuando se "
+"reproducen varios sonidos comprimidos al mismo tiempo (como sonidos "
+"ambientales largos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."
@@ -113,7 +121,7 @@ msgstr "Ogg Vorbis 128 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "24 KB"
-msgstr ""
+msgstr "24 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "Ogg Vorbis 128 Kb/s, stereo"

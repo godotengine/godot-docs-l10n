@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,29 +33,28 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
-"Godot有一个基于Variant的简单序列化API.它用于有效地将数据类型转换为字节数组.这"
-"个API用于 :ref:`class_File` 的 ``get_var`` 和 ``store_var`` 函数,以及 :ref:"
-"`class_PacketPeer` 的包API.这种格式 *不* 用于二进制场景和资源."
+"Godot有一个基于Variant的简单序列化API. 它用于有效地将数据类型转换为字节数组. "
+"这个API用于 :ref:`class_File` 的 ``get_var`` 和 ``store_var`` 函数, 以及 :"
+"ref:`class_PacketPeer` 的包API. 这种格式 *不* 用于二进制场景和资源."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
 msgid "Packet specification"
 msgstr "包规范"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
-#, fuzzy
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
-"该数据包被设计为总是被填充到4个字节.所有的值都是小端编码的.所有数据包都有一个"
-"4字节的头,代表一个整数,指定数据的类型:"
+"该数据包被设计为总是被填充到4个字节. 所有的值都是小端编码的. 所有数据包都有一"
+"个4字节的头, 代表一个整数, 指定数据的类型."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:22
 msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
-msgstr ""
+msgstr "最低值的两个字节用于确定类型，而最高值的两个字节包含标志::"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:102
@@ -454,10 +453,10 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
-"之后是实际的数据包内容,每种类型的数据包内容都不同.请注意,这是假设Godot是用单"
-"精度浮点数编译的,这是默认的.如果Godot是用双精度浮点数编译的,那么数据结构中 "
-"\"float\" 字段的长度应该是8,偏移量应该是 ``(offset - 4) * 2 + 4`` . \"float"
-"\" 类型本身总是使用双精度."
+"之后是实际的数据包内容, 每种类型的数据包内容都不同. 请注意, 这是假设Godot是用"
+"单精度浮点数编译的, 这是默认的. 如果Godot是用双精度浮点数编译的, 那么数据结构"
+"中 \"float\" 字段的长度应该是8, 偏移量应该是 ``(offset - 4) * 2 + 4`` . "
+"\"float\" 类型本身总是使用双精度."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 msgid "0: null"
@@ -600,7 +599,7 @@ msgstr "2: :ref:`int<class_int>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:110
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
-msgstr ""
+msgstr "如果没有设置标志(flags == 0)，整数将作为32位整数发送:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:115
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
@@ -612,6 +611,8 @@ msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
+"如果标志 ``ENCODE_FLAG_64`` 被设置（``flags & 1 == 1``），则整数被发送为64位"
+"整数:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:124
 msgid "64-bit signed integer"
@@ -625,7 +626,7 @@ msgstr "3: :ref:`float<class_float>`"
 msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
-msgstr ""
+msgstr "如果没有设置flags(flags == 0)，浮点数将作为32位单精度发送:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:135
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
@@ -696,20 +697,20 @@ msgid "Float"
 msgstr "(单精度)浮点数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#, fuzzy
 msgid "IEEE 754 single-precision float"
-msgstr "IEE 754格式的32位浮点数"
+msgstr "IEEE 754单精度浮点数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
+"如果标志 ``ENCODE_FLAG_64`` 被设置(``flags & 1 == 1``)，浮点数将作为64位双精"
+"度数字发送:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
-#, fuzzy
 msgid "IEEE 754 double-precision float"
-msgstr "IEE 754格式的32位浮点数"
+msgstr "IEEE 754双精度浮点数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:148
 msgid "4: :ref:`String<class_string>`"
@@ -798,33 +799,33 @@ msgstr "8: :ref:`Transform2D<class_transform2d>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:273
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:298
 msgid "The X component of the X column vector, accessed via [0][0]"
-msgstr "X列向量的X分量,可通过[0][0]访问"
+msgstr "X列向量的X分量, 可通过[0][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:207
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:275
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:300
 msgid "The Y component of the X column vector, accessed via [0][1]"
-msgstr "X列向量的Y分量,可通过[0][1]访问"
+msgstr "X列向量的Y分量, 可通过[0][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:209
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:279
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:304
 msgid "The X component of the Y column vector, accessed via [1][0]"
-msgstr "Y列向量的X分量,可通过[1][0]访问"
+msgstr "Y列向量的X分量, 可通过[1][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:281
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:306
 msgid "The Y component of the Y column vector, accessed via [1][1]"
-msgstr "Y列向量的Y分量,可通过[1][1]访问"
+msgstr "Y列向量的Y分量, 可通过[1][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:213
 msgid "The X component of the origin vector, accessed via [2][0]"
-msgstr "原始向量的X分量,可通过[2] [0]访问"
+msgstr "原始向量的X分量, 可通过[2] [0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:215
 msgid "The Y component of the origin vector, accessed via [2][1]"
-msgstr "原始向量的Y分量,可通过[2][1]访问"
+msgstr "原始向量的Y分量, 可通过[2][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:219
 msgid "9: :ref:`Plane<class_plane>`"
@@ -881,12 +882,12 @@ msgstr "12: :ref:`Basis<class_basis>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:277
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:302
 msgid "The Z component of the X column vector, accessed via [0][2]"
-msgstr "X列向量的Z分量,可通过[0][2]访问"
+msgstr "X列向量的Z分量, 可通过[0][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:283
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:308
 msgid "The Z component of the Y column vector, accessed via [1][2]"
-msgstr "Y列向量的Z分量,可通过[1][2]访问"
+msgstr "Y列向量的Z分量, 可通过[1][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:285
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:310
@@ -896,7 +897,7 @@ msgstr "28"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:285
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:310
 msgid "The X component of the Z column vector, accessed via [2][0]"
-msgstr "Z列向量的X分量,可通过[2][0]访问"
+msgstr "Z列向量的X分量, 可通过[2][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:287
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:312
@@ -906,7 +907,7 @@ msgstr "32"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:287
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:312
 msgid "The Y component of the Z column vector, accessed via [2][1]"
-msgstr "Z列向量的Y分量,可通过[2][1]访问"
+msgstr "Z列向量的Y分量, 可通过[2][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:289
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:314
@@ -916,7 +917,7 @@ msgstr "36"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:289
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:314
 msgid "The Z component of the Z column vector, accessed via [2][2]"
-msgstr "Z列向量的Z分量,可通过[2][2]访问"
+msgstr "Z列向量的Z分量, 可通过[2][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:293
 msgid "13: :ref:`Transform<class_transform>`"
@@ -928,7 +929,7 @@ msgstr "40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "The X component of the origin vector, accessed via [3][0]"
-msgstr "原始向量的X分量,可通过[3][0]访问"
+msgstr "原始向量的X分量, 可通过[3][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:318
 msgid "44"
@@ -936,7 +937,7 @@ msgstr "44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:318
 msgid "The Y component of the origin vector, accessed via [3][1]"
-msgstr "原点向量的Y分量,可通过[3][1]访问"
+msgstr "原点向量的Y分量, 可通过[3][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "48"
@@ -944,7 +945,7 @@ msgstr "48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "The Z component of the origin vector, accessed via [3][2]"
-msgstr "原点向量的Z分量,可通过[3][2]访问"
+msgstr "原点向量的Z分量, 可通过[3][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:324
 msgid "14: :ref:`Color<class_color>`"
@@ -953,17 +954,17 @@ msgstr "14: :ref:`Color<class_color>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:329
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:503
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
-msgstr "红色(一般为0...1,对于过亮的颜色可大于1)"
+msgstr "红色(一般为0...1, 对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:331
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:505
 msgid "Green (typically 0..1, can be above 1 for overbright colors)"
-msgstr "绿色(一般为0...1,对于过亮的颜色可大于1)"
+msgstr "绿色(一般为0...1, 对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:333
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:507
 msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
-msgstr "蓝色(一般为0...1,对于过亮的颜色可大于1)"
+msgstr "蓝色(一般为0...1, 对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:335
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:509
@@ -977,7 +978,7 @@ msgstr "15: :ref:`NodePath<class_nodepath>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
-msgstr "字符串长度,或新格式(val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
+msgstr "字符串长度, 或新格式(val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 msgid "For old format:"
@@ -1043,7 +1044,8 @@ msgstr "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
-msgstr "然后,对于``elements``的数量,使用相同的格式,一个接一个地使用密钥和值对."
+msgstr ""
+"然后, 对于 ``elements`` 的数量, 使用相同的格式, 一个接一个地使用密钥和值对."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 msgid "19: :ref:`Array<class_array>`"
@@ -1053,7 +1055,7 @@ msgstr "19: :ref:`Array<class_array>`"
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
-msgstr "然后,对于``elements``的数量,使用相同的格式一个接一个地输出值."
+msgstr "然后, 对于 ``elements`` 的数量, 使用相同的格式一个接一个地输出值."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:412
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"

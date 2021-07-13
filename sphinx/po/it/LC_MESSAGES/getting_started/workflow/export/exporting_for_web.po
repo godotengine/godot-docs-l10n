@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:106
-#, fuzzy
 msgid "Threads"
 msgstr "Discussioni"
 
@@ -322,8 +321,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+#, fuzzy
 msgid "Clipboard"
-msgstr ""
+msgstr "Appunti"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -339,8 +339,9 @@ msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
+#, fuzzy
 msgid "Gamepads"
-msgstr ""
+msgstr "Gamepads"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
 msgid ""
@@ -487,7 +488,7 @@ msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
 "platforms other than HTML5, calling ``JavaScript.eval`` will also return "
-"``null``.  The availability of the singleton can be checked with the "
+"``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 

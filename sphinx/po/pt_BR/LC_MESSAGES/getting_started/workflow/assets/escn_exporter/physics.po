@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
-#, fuzzy
 msgid "Physics properties"
-msgstr "Propriedades Físicas"
+msgstr "Propriedades de física"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:4
-#, fuzzy
 msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blender's "
 "physics tab:"
 msgstr ""
-"A exportação das propriedades físicas é feita habilitando o \"Corpo Rígido\" "
-"na aba física dos Misturadores:"
+"A exportação das propriedades de física é feita habilitando o \"Rigid Body\" "
+"na aba de física do Blender:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:10
 msgid ""
@@ -40,7 +38,6 @@ msgstr ""
 "como três nós: um PhysicsBody, um CollisionShape e um MeshInstance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body type"
 msgstr "Tipo de corpo"
 
@@ -86,17 +83,16 @@ msgstr ""
 "quanto no Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:36
-#, fuzzy
 msgid ""
 "In Godot, you can have different collision groups and collision masks. In "
 "Blender you only have collision groups. As a result, the exported object's "
 "collision mask is equal to its collision group. Most of the time, this is "
 "what you want."
 msgstr ""
-"Em Godot, você pode ter diferentes grupos de colisão e máscaras de colisão. "
+"No Godot, você pode ter diferentes grupos de colisão e máscaras de colisão. "
 "No Blender você só tem grupos de colisão. Como resultado, a máscara de "
 "colisão do objeto exportado é igual ao seu grupo de colisão. Na maioria das "
-"vezes, isso é o que você quer."
+"vezes, é isso que você deseja."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:42
 msgid ""
@@ -104,27 +100,25 @@ msgid ""
 "rigid body enabled. The physics properties are taken from the parent-most "
 "rigid body, and the rest are used as collision shapes."
 msgstr ""
-"Para criar compostos de formas de física, aparente vários objetos com rigid "
-"body habilitado. As propriedades de física são tiradas do corpo rígido pai "
-"mais superior, e o resto são usados como formas de colisão."
+"Para criar formas de física compostas, agrupe vários objetos com rigid body "
+"habilitado. As propriedades de física são tiradas do rigid body pai mais "
+"superior, e o resto é usado como formas de colisão."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
-#, fuzzy
 msgid "Collision geometry only"
 msgstr "Apenas geometria de colisão"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:49
-#, fuzzy
 msgid ""
 "Frequently you want different geometry for your collision meshes and your "
 "graphical meshes, but by default, the exporter will export a mesh along with "
 "the collision shape. To only export the collision shape, set the object's "
 "maximum draw type to Wire:"
 msgstr ""
-"Freqüentemente você quer uma geometria diferente para suas malhas de colisão "
+"Frequentemente você quer uma geometria diferente para suas malhas de colisão "
 "e suas malhas gráficas, mas por padrão o exportador exportará uma malha "
 "junto com a forma de colisão. Para exportar apenas o formato de colisão, "
-"defina o tipo de empate máximo do objeto como Fio:"
+"defina o tipo de desenho máximo do objeto para Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:56
 msgid ""

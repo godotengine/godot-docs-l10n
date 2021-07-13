@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
-#, fuzzy
 msgid "Using TileMaps"
-msgstr "Використання пробілів"
+msgstr "Використання TileMaps (Карти Плиток)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -37,6 +36,15 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"Карта плитки - це сітка плиток, яка використовується для створення макета "
+"гри. Використання вузлів :ref:`TileMap (Карта Плиток)<class_TileMap>` для "
+"проектування ваших рівнів має кілька переваг . По-перше, вони дають "
+"можливість намалювати макет, \"намалювавши\" плитки на сітці, що набагато "
+"швидше, ніж розміщення окремих вузлів :ref:`Sprite <class_Sprite>` по "
+"одному. По-друге, вони дозволяють створювати набагато більші рівні, оскільки "
+"вони оптимізовані для малювання великої кількості плиток. Нарешті, ви можете "
+"додати зіткнення, оклюзії та фігури навігації до плиток, додавши додаткову "
+"функціональність до TileMap."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
@@ -49,10 +57,15 @@ msgid ""
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"У цій демонстрації ми використаємо наступні плитки, взяті з художнього "
+"набору Кенні \"Абстрактний платформер\". Ви можете знайти повний комплект "
+"`тут <https://kenney.nl/assets/abstract-platformer>`_, але для цієї "
+"демонстрації ми дотримуватимемось цього невеликого набору."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"Створіть новий проект і помістіть вищевказане зображення в папку проекта."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -62,11 +75,15 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"При використанні набору плиток важливо, щоб сусідні плитки збігалися. За "
+"замовчуванням Godot імпортує 2D-зображення за допомогою інтерпольованого "
+"режиму \"фільтра\", що призведе до негарних меж між плитками. Виділіть "
+"зображення та натисніть вкладку Імпорт. Вимкніть ``Filter`` і натисніть "
+"\"Повторний імпорт\". Більше дивіться :ref:`doc_import_images`."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
-#, fuzzy
 msgid "TileMap node"
-msgstr "Фотоапарат"
+msgstr "Вузол TileMap (Карта Плиток)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -74,71 +91,84 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"Додайте до сцени новий вузол :ref:`TileMap <class_TileMap>`. За "
+"замовчуванням TileMap використовує квадратну сітку плиток. Ви також можете "
+"використовувати режим \"Ізометричний\" на основі перспективи або визначити "
+"власну форму плитки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"У розділі **Cell** *(Клітинка)* в Інспекторі є багато властивостей, які ви "
+"можете налаштувати, щоб налаштувати поведінку плитки вашої карти:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
-#, fuzzy
 msgid "``Cell Size``"
-msgstr "Center"
+msgstr "``Cell Size``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"Визначає розмір плитки. Має відповідати розміру ваших плиток у пікселях. "
+"Значення за замовчуванням - ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
-msgstr ""
+msgstr "``YSort``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"Призводить до того, що плитки малюються в порядку їх ``Y`` розташування, так "
+"що \"нижчі\" плитки малюються поверх \"вищих\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "``Half Offset`` і ``Tile Origin``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
-msgstr ""
+msgstr "Впливають на положення плитки відносно положення сітки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
-msgstr ""
+msgstr "``Quadrant``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"Визначає розмір шматка, який використовується для групового малювання. Може "
+"негативно вплинути на продуктивність. Не змінюйте його, якщо ви не знаєте, "
+"що робите."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "Перетворення"
+msgstr "``Custom Transform``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"Використовується для зміни форми плитки. Використовуйте його, якщо у вас "
+"плитка не квадратна."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"Усі ці параметри можна залишити за замовчуванням для цієї демонстрації."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Як створити проєкт"
+msgstr "Створення TileSet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -148,18 +178,27 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"Після того, як ви налаштували свою карту плиток, настав час додати :ref:"
+"`TileSet <class_TileSet>`. TileSet - це :ref:`Ресурс <class_Resource>`, що "
+"містить дані про ваші плитки - їх текстури, форми зіткнень та інші "
+"властивості. Коли гра запускається, TileMap об'єднує окремі плитки в один "
+"об'єкт."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"Щоб додати новий TileSet, клацніть на властивість **Tile Set** і виберіть "
+"**Новий TileSet**."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "Click on the TileSet property, and the \"TileSet\" panel will open at the "
 "bottom of the editor window:"
 msgstr ""
+"Клацніть на властивість TileSet, і внизу вікна редактора відкриється панель "
+"\"TileSet\":"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -167,6 +206,9 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"Спочатку потрібно додати текстуру(и), яку ви будете використовувати для "
+"плиток. Натисніть кнопку **Додати текстуру(и) до TileSet** і виберіть "
+"зображення ``tilesheet.png``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -174,6 +216,10 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
+"Далі натисніть **Нова окрема плитка** та перетягніть зображення, щоб вибрати "
+"плитку, яку ви хочете. Натисніть кнопку **Увімкнути прилипання**, щоб "
+"полегшити вибір плитки. Навколо вибраної плитки з’являється жовтий "
+"прямокутник."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
@@ -181,17 +227,21 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"Клацніть на TileMap в дереві сцени, і ви побачите, що новостворена плитка "
+"тепер відображається з правого боку. Клацніть у вікні перегляду, і ви "
+"зможете розміщувати плитки. Клацніть правою кнопкою миші, щоб видалити їх."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
 msgstr ""
+"Легко випадково вибрати та перемістити вузол карти плиток. Щоб цього "
+"уникнути, використовуйте кнопку блокування вузла:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Зіткнення"
+msgstr "Форми зіткнень"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
@@ -199,6 +249,9 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"Якщо ви створюєте карту, яка потребує зіткнень - наприклад, стін, підлоги чи "
+"інших перешкод - тоді вам потрібно буде додати форми зіткнення до плиток, "
+"які за вашим задумом мають бути \"твердими\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -208,15 +261,22 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
+"Клацніть на \"TileSet\" внизу вікна редактора, щоб повернутися до "
+"інструменту набору плиток. Клацніть плитку, яку ви визначили раніше "
+"(позначену жовтим кольором). Виберіть вкладку **Зіткнення** та натисніть "
+"кнопку **Створити прямокутник**. Переконайтеся, що у вас все ще ввімкнено "
+"прилипання сітки, а потім клацніть та пере-крийте плитку. Квадратна форма "
+"зіткнення виглядає світло-блакитним:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
+"Ви можете таким же чином додати до плитки фігури перешкоди та навігації."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr ""
+msgstr "Атлас плиток"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -224,10 +284,13 @@ msgid ""
 "tiles all at once using an atlas. This also allows you to randomly generate "
 "tiles from the group."
 msgstr ""
+"Замість того, щоб додавати окремі плитки по черзі, ви можете одночасно "
+"визначити групу плиток, використовуючи атлас. Він також дозволяє випадковим "
+"чином генерувати плитки з групи."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
-msgstr ""
+msgstr "Клацніть **Новий атлас** і виділіть увесь аркуш плиток."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
@@ -235,6 +298,9 @@ msgid ""
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
+"Якщо ви цього ще не зробили, обов’язково змініть **Крок** у **Snap options** "
+"на ``(64, 64)``, інакше ваші плитки можуть бути порубані на менші шматки. Ви "
+"можете знайти це в Інспекторі:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:143
 msgid ""
@@ -242,12 +308,17 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"Визначивши атлас, ви можете додати форми зіткнення до окремих плиток, як і "
+"раніше. Ви також можете натиснути **Піктограма**, щоб вибрати одну з плиток "
+"для представлення атласа."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr ""
+"Повернувшись до TileMap, ви можете вибрати плитку атласу, і побачите всі "
+"плитки, які вона містить:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
@@ -255,11 +326,12 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"На додаток до економії часу при визначенні плиток, це може допомогти "
+"групуванням подібних плиток, коли ви працюєте з великою кількістю плиток."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
-#, fuzzy
 msgid "Random tile priorities"
-msgstr "Випадковий нахил"
+msgstr "Випадкові пріоритети плитки"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:158
 msgid ""
@@ -270,16 +342,26 @@ msgid ""
 "twice as likely to be selected as a tile with priority 1, and a tile with "
 "priority 3 is 50% more likely to be selected than a tile with priority 2."
 msgstr ""
+"Якщо малювати за допомогою плиток атласу, увімкнення параметра **Увімкнути "
+"пріоритетність** призводить до випадкового вибору плиток. За замовчуванням "
+"кожна плитка в наборі плиток має однакову ймовірність появи. Ви можете "
+"змінити ймовірність, встановивши різні пріоритети для кожної плитки. "
+"Наприклад, плитка з пріоритетом 2 удвічі частіше буде обрана, ніж плитка з "
+"пріоритетом 1, а плитка з пріоритетом 3 на 50% частіше буде обрана, ніж "
+"плитка з пріоритетом 2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
-msgstr ""
+msgstr "Автоплитки"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
+"Автоплитки дозволяють визначити групу плиток, а потім додати правила для "
+"керування тим, яка плитка буде використовуватися для малювання на основі "
+"вмісту сусідніх клітинок."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
@@ -287,6 +369,10 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
+"Клацніть на **Нова автоплитка** та виділіть плитки, які хочете "
+"використовувати. Ви можете додати зіткнення, оклюзію, фігури навігації, "
+"пріоритети плиток та вибрати піктограму плитки таким же чином, як для атласу "
+"плиток."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
@@ -295,6 +381,11 @@ msgid ""
 "mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
 "\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
+"Вибір плитки контролюється бітовими масками. Бітові маски можна додати, "
+"натиснувши **Бітова маска**, і вибравши частину плиток, щоб додати або "
+"видалити біти в масці. Клацання лівою кнопкою миші на ділянці плитки додає "
+"біт, клацання правою кнопкою знімає \"вимкнено\", а клавіша Shift-ліва "
+"кнопка встановлює біт \"ігнорувати\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -305,6 +396,13 @@ msgid ""
 "more than one matching bitmask is found, one of them will be selected "
 "randomly, using the tile priorities."
 msgstr ""
+"Щоразу, коли Godot оновлює клітинку за допомогою автоплитки, він спочатку "
+"створює шаблон, на основі якого вже встановлені сусідні комірки. Потім він "
+"здійснює пошук автоплитки для однієї плитки з бітовою маскою, що відповідає "
+"створеному шаблону. Якщо відповідної бітової маски не знайдено, замість неї "
+"буде використана плитка \"піктограма\". Якщо знайдено більше однієї збіжної "
+"бітової маски, одна з них буде обрана випадковим чином, з використанням "
+"пріоритету плиток."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
@@ -313,20 +411,28 @@ msgid ""
 "\"Selected Tile\" heading. Allowed values are \"2x2\", \"3x3 (minimal)\", "
 "and \"3x3\"."
 msgstr ""
+"Правила узгодження бітової маски з шаблоном залежать від параметра режиму "
+"**Autotile Bitmask Mode** *(Режим бітової маски автоплитки)*. Його можна "
+"встановити на вкладці Інспектор під заголовком **Selected Tile** *(Вибрана "
+"плитка)*. Допустимі значення: \"2x2\", \"3x3 (minimal)\" і \"3x3\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
 msgstr ""
+"Усі \"увімкнені\" та \"вимкнені\" біти повинні відповідати бітовій масці, "
+"але біти \"ігнорування\" ігноруються."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
-msgstr ""
+msgstr "2x2"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
 msgstr ""
+"У режимі 2x2 кожна бітова маска містить чотири біти, по одному для кожного "
+"кута."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid ""
@@ -335,12 +441,18 @@ msgid ""
 "the top-left bit is set, the cell directly above, directly left, and "
 "diagonally above-left must be filled."
 msgstr ""
+"Якщо біт \"увімкнений\", всі клітинки, що межують з цим кутом, повинні бути "
+"заповнені за допомогою одної і тої ж автоплитки, щоб бітова маска збігалася. "
+"Наприклад, якщо встановлено біт ліворуч зверху, клітинки безпосередньо над, "
+"прямо зліва і по діагоналі ліворуч, потрібно заповнити."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:204
 msgid ""
 "Where a bit is \"off\", at least one cell connected to that corner must not "
 "be set using the same autotile."
 msgstr ""
+"Там, де біт \"вимкнений\", принаймні одну клітинку, що межує з цим кутом, не "
+"можна встановлювати за допомогою одної і тої ж автоплитки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:207
 msgid ""
@@ -348,57 +460,69 @@ msgid ""
 "would be needed to provide exactly one tile for each arrangement that this "
 "mode can test for."
 msgstr ""
+"Потрібно встановити принаймні один біт для плитки, яка буде "
+"використовуватися, тому в цілому потрібно буде 15 плиток, щоб забезпечити "
+"рівно одну плитку для кожного розташування, яке цей режим може перевірити."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid ""
 "2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
 "no neighbors and lines only one cell wide are not supported."
 msgstr ""
+"Режим 2x2 може збігатися лише з клітинками, які є частиною блоку 2 на 2 - "
+"клітинки без сусідів та ліній шириною лише в одну клітинку не підтримуються."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:214
 #: ../../docs/tutorials/2d/using_tilemaps.rst:246
 msgid "**Template - Generic:**"
-msgstr ""
+msgstr "**Шаблон - Загальний:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:216
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. It's "
 "designed for a TileMap cell size of 64x64."
 msgstr ""
+"Цей шаблон можна використовувати для перспектив убік або повністю зверху "
+"вниз. Він розроблений для розміру клітинки TileMap 64x64."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:219
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
 #: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Key:"
-msgstr ""
+msgstr "Ключ:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
 #: ../../docs/tutorials/2d/using_tilemaps.rst:267
 msgid "Red: \"on\""
-msgstr ""
+msgstr "Червоний: \"увімкнений\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 #: ../../docs/tutorials/2d/using_tilemaps.rst:255
 #: ../../docs/tutorials/2d/using_tilemaps.rst:268
 msgid "White: \"off\""
-msgstr ""
+msgstr "Білий: \"вимкнений\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
-msgstr ""
+msgstr "3x3 (minimal)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:229
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center). The 4 corner bits work the same as in 2x2 mode."
 msgstr ""
+"У режимі 3x3 (minimal) кожна бітова маска містить 9 бітів (4 кути, 4 ребра, "
+"1 центр). 4 кутові біти працюють так само, як і в режимі 2x2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
 msgstr ""
+"Коли бітовий край \"увімкнений\", клітинка, яка межує з цим краєм, повинна "
+"бути заповнена. Коли бітовий край \"вимкнений\", сусідня клітинка, повинна "
+"бути порожньою."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid ""
@@ -406,16 +530,23 @@ msgid ""
 "this mode, it makes no sense for a corner bit to be \"on\" when either edge "
 "bit adjacent to it is not \"on\"."
 msgstr ""
+"Центральний біт повинен бути \"увімкнений\" для будь-якої плитки, яку ви "
+"хочете використовувати. Зверніть увагу, що в цьому режимі немає сенсу "
+"\"вмикати\" кутовий біт , без \"увімкнення\", хоча б одного, сусіднього біта."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Загалом знадобиться 47 плиток, щоб забезпечити рівно одну бітову маску для "
+"кожного розташування, яке цей режим може перевірити."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:244
 msgid "Right-click an image and choose **Save image as…** to save it."
 msgstr ""
+"Клацніть зображення правою кнопкою мишки та виберіть **Зберегти зображення "
+"як ...**, щоб зберегти його."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid ""
@@ -424,67 +555,74 @@ msgid ""
 "have to use different subtile sizes for top-down templates as described "
 "below."
 msgstr ""
+"Цей шаблон можна використовувати для перспектив убік або повністю зверху "
+"вниз. Усі наведені нижче шаблони розроблені для розміру клітинки TileMap "
+"64x64, але, можливо, вам доведеться використовувати різні розміри підплиток "
+"для шаблонів зверху вниз, як описано нижче."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:260
 msgid "**Template - Generic 16 tiles:**"
-msgstr ""
+msgstr "**Шаблон - Загальний на 16 плиток:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
 "art styles the missing tiles will not be noticeable."
 msgstr ""
+"Цей шаблон можна використовувати для наборів плиток, які мають лише 16 "
+"плиток - для більш простих художніх стилів відсутні плитки не будуть помітні."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:269
 msgid "Blue-checkered: \"ignore\""
-msgstr ""
+msgstr "Синьо-білий: \"ігнорувати\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "**Template - Top-down floor in 3/4 perspective:**"
-msgstr ""
+msgstr "**Шаблон - Зверху вниз у перспективі 3/4:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:276
 msgid "Key (applies to the four templates below):"
-msgstr ""
+msgstr "Ключ (відноситься до чотирьох шаблонів нижче):"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:278
 msgid "Green: floor"
-msgstr ""
+msgstr "Зелений: підлога"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:279
 msgid "Cyan: wall"
-msgstr ""
+msgstr "Голубий: стіна"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:280
 msgid "Yellow: top of wall"
-msgstr ""
+msgstr "Жовтий: верх стіни"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "Grey: hidden due to overlap"
-msgstr ""
+msgstr "Сірий: прихований через перекриття"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:282
-#, fuzzy
 msgid "Transparent: air"
-msgstr "Прозорий"
+msgstr "Прозорий: повітря"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"
-msgstr ""
+msgstr "**Шаблон - Стіна зверху вниз у перспективі 3/4:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
-msgstr ""
+msgstr "**Шаблон - Стіна зверху вниз у перспективі 3/4 (товсті стіни):**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
 msgstr ""
+"При використанні цього шаблону встановіть для розміру підплитки TileSet "
+"значення ``Vector2(64, 88)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:296
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
-msgstr ""
+msgstr "**Шаблон - Стіна зверху вниз у перспективі 3/4 (високі стіни):**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:298
 msgid ""
@@ -492,32 +630,42 @@ msgid ""
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
 "size. This means the texture offset should be ``Vector2(0, -120)``:"
 msgstr ""
+"При використанні цього шаблону встановіть **Snap Options -> Step** "
+"*(Параметри прив'язки -> Крок)* значення ``Vector2(64, 184)`` і **Selected "
+"Tile -> Texture offset** *(Вибрана плитка -> Зміщення текстури)* на висоту "
+"мінус розмір клітинки. Це означає, що зміщення текстури має бути "
+"``Vector2(0, -120)``:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
+"У режимі 3x3 кожна бітова маска містить 9 бітів (4 кути, 4 ребра, 1 центр)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
+"Кожен біт перевіряє одну сусідню клітинку. Кутові біти перевіряють лише "
+"сусідні по діагоналі клітинки. Центральний біт повинен бути \"увімкнений\" "
+"для будь-якої плитки, яку ви хочете використовувати."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:312
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Всього потрібно 256 плиток, щоб забезпечити рівно одну бітову маску для "
+"кожного розташування, яке цей режим може перевірити."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:317
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "Вимикання небажаних модулів"
+msgstr "Відключення автоплиток"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:319
 msgid ""
@@ -525,10 +673,13 @@ msgid ""
 "and select tiles manually, by clicking \"Disable Autotile\" at the top of "
 "the tile selection window."
 msgstr ""
+"При використанні автоплитки можна вимкнути поведінку її та вибирати плитки "
+"вручну, натискаючи кнопку **Вимкнути автоплитки** у верхній частині вікна "
+"вибору плитки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:324
 msgid "Autotile binding"
-msgstr ""
+msgstr "Прив'язка автоплиток"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid ""
@@ -542,6 +693,17 @@ msgid ""
 "to the neighbor cell. You can find the id of an autotile using "
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
+"За замовчуванням автоплитка перевіряє лише сусідні комірки, заповнені за "
+"допомогою тих самих автоплиток. Цю поведінку можна замінити, щоб автоплитки "
+"зв’язувались між собою, або навіть прив’язувались до порожніх комірок. В "
+"даний час це можна зробити лише за допомогою скриптів. Вам потрібно буде "
+"додати скрипт до вашого набору плиток і визначити функцію з назвою "
+"``_is_tile_bound (drawn_id, сусед_id)``. Ця функція буде викликана для "
+"кожної сусідньої клітинки, яка не містить такої самої автоплитки, і повинна "
+"повертати значення ``true``, якщо ви хочете, щоб намальована клітинка "
+"\"прив'язувалася\" до сусідньої клітинки. Ви можете знайти ідентифікатор "
+"автоплитки за допомогою ``find_tile_by_name (ім'я)``, порожні клітинки "
+"отримують ідентифікатор -1."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
@@ -549,10 +711,13 @@ msgid ""
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
+"Зауважте, що для використання скрипта в редакторі він повинен починатися з "
+"оголошення ``tool``, і можливо, вам доведеться закрити та перезавантажити "
+"сцену, щоб ці зміни набрали чинності."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "Tips and tricks"
-msgstr ""
+msgstr "Поради та підказки"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:343
 msgid ""
@@ -560,19 +725,30 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
+"Якщо ви використовуєте :ref:`Camera2D<class_Camera2D>` для прокрутки свого "
+"рівня, ви можете помітити рядки, що з’являються між вашими плитками. Щоб "
+"виправити це, відкрийте **Параметри проекта** та ввімкніть **Use Pixel "
+"Snap** *(Використовувати прив'язку пікселів)* у розділі **Rendering/"
+"Quality** *(Візуалізація/Якість)*."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
+"Ви можете перевертати та обертати плитки, використовуючи піктограми у "
+"верхньому правому куті редактора."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:349
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
+"Щоб намалювати прямі лінії, утримуйте :kbd:`Shift` клацаючи та перетягуючи "
+"плитку."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:351
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+"Такі інструменти, як копіювання, вставлення та заповнення сегмента, можна "
+"знайти в меню \"TileMap\" у верхньому правому куті."

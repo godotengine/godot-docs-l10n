@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,10 +200,13 @@ msgid ""
 "for the knife. By adding the ammo variables to the knife, we don't need to "
 "worry about whether or not all our weapons have the same variables."
 msgstr ""
+"Если бы мы не добавили переменные патронов для ножа, нам пришлось бы "
+"добавить проверки для ножа. Добавив переменные патронов для ножа, нам не "
+"нужно беспокоиться о том, есть ли у всех наших оружий одинаковые переменные."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:125
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "Добавьте следующие переменные класса в ``Weapon_Rifle.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:133
 msgid ""
@@ -212,50 +215,61 @@ msgid ""
 "is_colliding()`` check so the player loses ammo regardless of whether the "
 "player hit something or not."
 msgstr ""
+"Затем добавьте следующее в ``fire_weapon``: ``ammo_in_weapon -= 1``. "
+"Убедитесь, что ``ammo_in_weapon -= 1`` находится вне проверки ``if ray."
+"is_colliding()``, чтобы игрок терял патроны независимо от того, ударил он по "
+"чему-то или нет."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
 msgid ""
 "Now all that's left is the knife. Add the following to ``Weapon_Knife.gd``:"
 msgstr ""
+"Теперь остался только нож. Добавьте следующее в файл ``Weapon_Knife.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:144
 msgid "Because the knife does not consume ammo, that is all we need to add."
-msgstr ""
+msgstr "Поскольку нож не расходует патроны, это все, что нам нужно добавить."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:148
 msgid "Now we need to change one thing in ``Player.gd``, that is to say,"
-msgstr ""
+msgstr "Теперь нам нужно изменить одну вещь в ``Player.gd``, а именно,"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:150
 msgid ""
 "how we're firing the weapons in ``process_input``. Change the code for "
 "firing weapons to the following:"
 msgstr ""
+"как мы стреляем из оружия в ``process_input``. Измените код для стрельбы из "
+"оружия следующим образом:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:165
 msgid ""
 "Now the weapons have a limited amount of ammo, and will stop firing when the "
 "player runs out."
 msgstr ""
+"Теперь оружие имеет ограниченное количество патронов и прекращает стрельбу, "
+"когда они заканчиваются."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:169
 msgid ""
 "Ideally, we'd like to let the player be able to see how much ammo is left. "
 "Let's make a new function called ``process_UI``."
 msgstr ""
+"В идеале мы бы хотели, чтобы игрок мог видеть, сколько патронов осталось. "
+"Давайте создадим новую функцию ``process_UI``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:171
 msgid "First, add ``process_UI(delta)`` to ``_physics_process``."
-msgstr ""
+msgstr "Во-первых, добавьте ``process_UI(delta)`` к ``_physics_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
 msgid "Now add the following to ``Player.gd``:"
-msgstr ""
+msgstr "Теперь добавьте следующее в ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:185
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 msgid "Let's go over what's happening:"
-msgstr ""
+msgstr "Давайте пройдемся по тому, что происходит:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
 msgid ""
@@ -263,12 +277,18 @@ msgid ""
 "``KNIFE``. If it is, we change the ``UI_status_label``'s text to only show "
 "the player's health since ``UNARMED`` and ``KNIFE`` do not consume ammo."
 msgstr ""
+"Во-первых, мы проверяем, является ли текущее оружие ``UNARMED`` или "
+"``KNIFE``. Если да, то мы изменяем текст метки ``UI_status_label``, чтобы "
+"она показывала только здоровье игрока, так как ``UNARMED`` и ``KNIFE`` не "
+"расходуют патроны."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:190
 msgid ""
 "If the player is using a weapon that consumes ammo, we first get the weapon "
 "node."
 msgstr ""
+"Если игрок использует оружие, которое расходует патроны, мы сначала получаем "
+"узел оружия."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
 msgid ""
@@ -282,29 +302,35 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:196
 msgid "Now we can see how much ammo the player has through the HUD."
-msgstr ""
+msgstr "Теперь мы можем видеть, сколько патронов у игрока, через HUD."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:199
 msgid "Adding reloading to the weapons"
-msgstr ""
+msgstr "Добавление перезарядки к оружию"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:201
 msgid ""
 "Now that the player can run out of ammo, we need a way to let the player "
 "fill them back up. Let's add reloading next!"
 msgstr ""
+"Теперь, когда у игрока могут закончиться патроны, нам нужен способ позволить "
+"игроку пополнить их. Давайте добавим перезарядку!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
 msgid ""
 "For reloading, we need to add a few more variables and a function to every "
 "weapon."
 msgstr ""
+"Для перезарядки нам нужно добавить еще несколько переменных и функцию к "
+"каждому оружию."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:214
 msgid ""
 "``CAN_RELOAD``: A boolean to track whether this weapon has the ability to "
 "reload"
 msgstr ""
+"``CAN_RELOAD``: Булево значение для отслеживания того, имеет ли это оружие "
+"возможность перезарядки"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:215
 msgid ""
@@ -312,22 +338,29 @@ msgid ""
 "ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
 "next part!"
 msgstr ""
+"``CAN_REFILL``: Булево значение для отслеживания того, можем ли мы пополнить "
+"запасные патроны этого оружия. Мы не будем использовать ``CAN_REFILL`` в "
+"этой части, но будем использовать в следующей!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:216
 msgid ""
 "``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon."
-msgstr ""
+msgstr "``RELOADING_ANIM_NAME``: Имя анимации перезарядки для этого оружия."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:218
 msgid ""
 "Now we need to add a function for handling reloading. Add the following "
 "function to ``Weapon_Pistol.gd``:"
 msgstr ""
+"Теперь нам нужно добавить функцию для обработки перезарядки. Добавьте "
+"следующую функцию в ``Weapon_Pistol.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
 msgid ""
 "First we define a variable to see whether or not this weapon can reload."
 msgstr ""
+"Сначала мы определим переменную, чтобы узнать, может ли это оружие "
+"перезаряжаться или нет."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,19 +34,19 @@ msgstr "类型转换和强制转换"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
-msgstr "C#是一种静态类型语言.因此,您无法执行以下操作:"
+msgstr "C#是一种静态类型语言. 因此, 您无法执行以下操作:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:21
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
-"方法 ``GetNode()`` 返回一个 ``Node`` 实例.在这种情况下,您必须将其显式转换为所"
-"需的派生类型, ``Sprite``."
+"方法 ``GetNode()`` 返回一个 ``Node`` 实例. 在这种情况下, 您必须将其显式转换为"
+"所需的派生类型, ``Sprite``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "For this, you have various options in C#."
-msgstr "为此,在C#中有多种选择."
+msgstr "为此, 在C#中有多种选择."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
@@ -58,8 +58,8 @@ msgid ""
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
-"如果返回的节点无法转换为Sprite,则抛出 ``InvalidCastException`` .如果您非常确"
-"定它不会失败,您可以使用它而不是 ``as`` 运算符."
+"如果返回的节点无法转换为Sprite, 则抛出 ``InvalidCastException`` . 如果您非常"
+"确定它不会失败, 您可以使用它而不是 ``as`` 运算符."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
@@ -70,8 +70,8 @@ msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
-"如果节点无法转换为 ``Sprite``,则 ``as`` 运算符返回 ``null``,因此它不能与值类"
-"型一起使用."
+"如果节点无法转换为 ``Sprite``, 则 ``as`` 运算符返回 ``null``, 因此它不能与值"
+"类型一起使用."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
@@ -87,16 +87,16 @@ msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
-"``GetNode <T>()`` 在返回之前强制转换节点.如果节点无法强制转换为所需类型,它将"
-"抛出一个 ``InvalidCastException``."
+"``GetNode <T>()`` 在返回之前强制转换节点. 如果节点无法强制转换为所需类型, 它"
+"将抛出一个 ``InvalidCastException``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
-"``GetNodeOrNull <T>()`` 使用 ``as`` 运算符,如果节点无法强制转换为所需类型,则"
-"返回 ``null``."
+"``GetNodeOrNull <T>()`` 使用 ``as`` 运算符, 如果节点无法强制转换为所需类型, "
+"则返回 ``null``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
@@ -108,15 +108,15 @@ msgid ""
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
-"要检查节点是否可以强制转换为 ``Sprite``,可以使用 ``is`` 运算符.如果节点无法转"
-"换为 ``Sprite``,则 ``is`` 运算符返回 ``false``,否则返回 ``true``."
+"要检查节点是否可以强制转换为 ``Sprite``, 可以使用 ``is`` 运算符. 如果节点无法"
+"转换为 ``Sprite``, 则 ``is`` 运算符返回 ``false``, 否则返回 ``true``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
-"对于更高级的类型检查,您可以查看 `模式匹配 <https://docs.microsoft.com/en-us/"
+"对于更高级的类型检查, 您可以查看 `模式匹配 <https://docs.microsoft.com/en-us/"
 "dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
@@ -128,7 +128,7 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
-"有关完整的C#示例,请参阅逐步 :ref:`doc_scripting` 教程中的 **处理信号** 部分."
+"有关完整的C#示例, 请参阅逐步 :ref:`doc_scripting` 教程中的 **处理信号** 部分."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
@@ -145,9 +145,9 @@ msgid ""
 "manually triggered by clicking the “Build” button at the top right corner of "
 "the editor window."
 msgstr ""
-"这些信号可以在编辑器或者在代码中使用 ``Connect`` 进行连接.如果想在编辑器中连"
-"接一个信号,你需要(重新)生成项目组件才能看到这个新的信号.生成操作可以点击 编辑"
-"窗口右上角的\"Build\" 按钮手动触发."
+"这些信号可以在编辑器或者在代码中使用 ``Connect`` 进行连接. 如果想在编辑器中连"
+"接一个信号, 你需要(重新)生成项目组件才能看到这个新的信号. 生成操作可以点击 编"
+"辑窗口右上角的 \"Build\" 按钮手动触发."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
@@ -158,15 +158,14 @@ msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
-"请注意,您始终可以使用 ``nameof`` 关键字引用信号名称(应用于 ``委托"
+"请注意, 您始终可以使用 ``nameof`` 关键字引用信号名称(应用于 ``委托"
 "(delegate)`` 本身)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
-#, fuzzy
 msgid ""
 "It is possible to bind values when establishing a connection by passing a "
 "Godot array."
-msgstr "建立连接时可以通过传递对象数组来绑定值."
+msgstr "在建立连接时，可以通过传递一个Godot数组来绑定值。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
@@ -178,10 +177,10 @@ msgid ""
 "`Godot.Object` or one of its subclasses."
 msgstr ""
 "信号支持所有 `内置类型 <https://docs.microsoft.com/en-us/dotnet/csharp/"
-"language-reference/keywords/built-in-types-table>`_ 的参数和绑定值,以及从 :"
-"ref:`Godot.Object <class_Object>` 派生的类.因此,任何 ``Node`` 或 "
-"``Reference`` 将自动兼容,但是自定义数据对象将需要从 ``Godot.Object`` 或其子类"
-"之中扩展."
+"language-reference/keywords/built-in-types-table>`_ 的参数和绑定值, 以及从 :"
+"ref:`Godot.Object <class_Object>` 派生的类. 因此, 任何 ``Node`` 或 "
+"``Reference`` 将自动兼容, 但是自定义数据对象将需要从 ``Godot.Object`` 或其子"
+"类之中扩展."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
@@ -189,8 +188,8 @@ msgid ""
 "that it should be executed before any use of said signals (with ``Connect`` "
 "or ``EmitSignal``)."
 msgstr ""
-"最后,可以通过调用 ``AddUserSignal`` 来创建信号,但要注意它应该在使用所述信号之"
-"前执行(使用 ``Connect`` 或 ``EmitSignal``)."
+"最后, 可以通过调用 ``AddUserSignal`` 来创建信号, 但要注意它应该在使用所述信号"
+"之前执行(使用 ``Connect`` 或 ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
 msgid "Preprocessor defines"
@@ -200,7 +199,7 @@ msgstr "预编译定义"
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
-msgstr "Godot有一组定义,可让您根据要编译的环境来更改C＃代码."
+msgstr "Godot有一组定义, 可让您根据要编译的环境来更改C＃代码."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -208,7 +207,7 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
-"如果是Godot 3.2之前创建的项目,你需要修改或重新生成你的 `csproj` 文件来使用这"
+"如果是Godot 3.2之前创建的项目, 你需要修改或重新生成你的 `csproj` 文件来使用这"
 "个功能(可与一个3.2+新项目中的 ``<DefineConstants>`` 相对比)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
@@ -217,13 +216,13 @@ msgstr "示例"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr "例如,你可以根据平台更改代码:"
+msgstr "例如, 你可以根据平台更改代码:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
-msgstr "或者你可以检测代码所在的引擎,这对于制作跨引擎库很有用:"
+msgstr "或者你可以检测代码所在的引擎, 这对于制作跨引擎库很有用:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
 msgid "Full list of defines"
@@ -237,55 +236,56 @@ msgstr "所有 Godot 项目都会定义 ``GODOT``."
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
-msgstr "按照架构是 64 位还是 32 位,会定义 ``GODOT_64`` 或 ``GODOT_32``."
+msgstr "按照架构是 64 位还是 32 位, 会定义 ``GODOT_64`` 或 ``GODOT_32``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
+#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
 "These names may change in the future. These are created from the "
-"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
-"按照操作系统,会定义 ``GODOT_X11``、``GODOT_WINDOWS``、``GODOT_OSX``、"
-"``GODOT_ANDROID``、``GODOT_IOS``、``GODOT_HTML5``,或者 ``GODOT_SERVER`` 中的"
-"一个.这些名称在未来可能会被更改.这些名称是由 :ref:`OS <class_OS>` 单例"
-"(singleton)中的 ``get_name()`` 方法创建的,但是 Godot 与 Mono 只能在其中一部分"
-"平台上运行."
+"按照操作系统, 会定义 ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, "
+"``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, 或者 ``GODOT_SERVER`` 中的"
+"一个. 这些名称在未来可能会被更改. 这些名称是由 :ref:`OS <class_OS>` 单例"
+"(singleton)中的 ``get_name()`` 方法创建的, 但是 Godot 与 Mono 只能在其中一部"
+"分平台上运行."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
-msgstr "在 **导出** 时,根据导出功能,还可能定义以下内容:"
+msgstr "在 **导出** 时, 根据导出功能, 还可能定义以下内容:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
-"``GODOT_PC`` 、 ``GODOT_MOBILE`` 或 ``GODOT_WEB`` 中的一种,取决于平台类型."
+"``GODOT_PC`` , ``GODOT_MOBILE`` 或 ``GODOT_WEB`` 中的一种, 取决于平台类型."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
-"``GODOT_ARM64_V8A`` 或 ``GODOT_ARMEABI_V7A`` 中的一个,仅在安卓系统上,取决于架"
-"构."
+"``GODOT_ARM64_V8A`` 或 ``GODOT_ARMEABI_V7A`` 中的一个, 仅在安卓系统上, 取决于"
+"架构."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
-msgstr "``GODOT_ARM64`` 或 ``GODOT_ARMV7`` 中的一个,仅在iOS上,取决于架构."
+msgstr "``GODOT_ARM64`` 或 ``GODOT_ARMV7`` 中的一个, 仅在iOS上, 取决于架构."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"``GODOT_S3TC`` 、 ``GODOT_ETC`` 和 ``GODOT_ETC2`` 中的任一种,取决于纹理压缩类"
+"``GODOT_S3TC`` , ``GODOT_ETC`` 和 ``GODOT_ETC2`` 中的任一种, 取决于纹理压缩类"
 "型."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
@@ -301,5 +301,5 @@ msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"如果想要参考一个示例项目,可以参考该OS测试demo:https://github.com/godotengine/"
-"godot-demo-projects/tree/master/misc/os_test"
+"如果想要参考一个示例项目, 可以参考该OS测试demo:https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"

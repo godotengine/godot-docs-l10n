@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,14 +29,14 @@ msgstr "处理"
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
-msgstr "Godot中的多个动作是由回调或虚函数触发的,因此无需编写始终运行的代码."
+msgstr "Godot中的多个动作是由回调或虚函数触发的, 因此无需编写始终运行的代码."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
-"但是,在每一帧上都需要处理脚本仍然很常见.有两种处理类型:空闲处理和物理处理."
+"但是, 在每一帧上都需要处理脚本仍然很常见. 有两种处理类型: 空闲处理和物理处理."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -45,8 +45,8 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"当在脚本中找到 :ref:`Node._process() <class_Node_method__process>` 方法时,将"
-"激活空闲处理.可以通过 :ref:`Node.set_process() "
+"当在脚本中找到 :ref:`Node._process() <class_Node_method__process>` 方法时, 将"
+"激活空闲处理. 可以通过 :ref:`Node.set_process() "
 "<class_Node_method_set_process>` 函数来打开或关闭."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
@@ -59,8 +59,8 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"重要的是要记住,调用 ``_process()`` 的频率取决于应用程序运行的每秒帧数(FPS).该"
-"速率会随着时间和设备的不同而变化."
+"重要的是要记住, 调用 ``_process()`` 的频率取决于应用程序运行的每秒帧数(FPS). "
+"该速率会随着时间和设备的不同而变化."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -69,19 +69,19 @@ msgid ""
 "``_process()``."
 msgstr ""
 "为了管理这种可变性有所帮助,``delta`` 参数包含自上次调用 ``_process()`` 以来经"
-"过的时间,以秒为单位的浮点数表示."
+"过的时间, 以秒为单位的浮点数表示."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
-msgstr "此参数可用于确保事物始终花费相同的时间,从而与游戏的FPS无关."
+msgstr "此参数可用于确保事物始终花费相同的时间, 从而与游戏的FPS无关."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."
-msgstr "例如,运动经常与时间增量相乘,以使运动速度既恒定又独立于帧速率."
+msgstr "例如, 运动经常与时间增量相乘, 以使运动速度既恒定又独立于帧速率."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -92,10 +92,10 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"用 ``_physics_process()`` 进行物理处理是相似的,但应将其用于必须在每个物理步骤"
-"之前进行的处理,例如控制角色.它始终在物理步骤之前运行,并且以固定的时间间隔调"
-"用:默认为每秒60次.您可以从\"项目设置\"的\"物理\"->\"通用\"->\"物理Fps\"下更改"
-"时间间隔."
+"用 ``_physics_process()`` 进行物理处理是相似的, 但应将其用于必须在每个物理步"
+"骤之前进行的处理, 例如控制角色. 它始终在物理步骤之前运行, 并且以固定的时间间"
+"隔调用: 默认为每秒60次. 您可以从 \"项目设置\" 的 \"物理\" ->\"通用\" ->\"物理"
+"Fps\" 下更改时间间隔."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -103,8 +103,8 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
-"然而,函数 ``_process()`` 不与物理同步.它的帧率不是恒定的,并且取决于硬件和游戏"
-"优化.在单线程游戏中它的执行是在的物理步骤之后完成的."
+"然而, 函数 ``_process()`` 不与物理同步. 它的帧率不是恒定的, 并且取决于硬件和"
+"游戏优化. 在单线程游戏中它的执行是在的物理步骤之后完成的."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
@@ -129,16 +129,16 @@ msgid ""
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Godot中的编组的工作方式类似于您可能在其他软件中遇到的标记.一个节点可以根据需"
-"要添加到任意多个编组.这是组织大型场景的一个有用特性.有两种方法可以向编组中添"
-"加节点.第一个是从UI,使用 ``节点`` 面板下的 ``Groups`` 按钮:"
+"Godot中的编组的工作方式类似于您可能在其他软件中遇到的标记. 一个节点可以根据需"
+"要添加到任意多个编组. 这是组织大型场景的一个有用特性. 有两种方法可以向编组中"
+"添加节点. 第一个是从UI, 使用 ``节点`` 面板下的 ``Groups`` 按钮:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"第二种方法是从代码.下面的脚本会在当前节点出现在场景树中后立即将其添加到 "
+"第二种方法是从代码. 下面的脚本会在当前节点出现在场景树中后立即将其添加到 "
 "``enemies`` 编组中."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
@@ -147,7 +147,7 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
-"这样,如果发现玩家潜入秘密基地,则可以使用 :ref:`SceneTree.call_group() "
+"这样, 如果发现玩家潜入秘密基地, 则可以使用 :ref:`SceneTree.call_group() "
 "<class_SceneTree_method_call_group>` 发出警报声来通知所有敌人:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
@@ -174,9 +174,9 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-":ref:`SceneTree <class_SceneTree>` 类提供了许多有用的方法,例如与场景、其节点"
-"层次结构、及节点编组交互.它使您可以轻松切换场景或重新加载场景,退出游戏或暂停"
-"和取消暂停游戏.它还有一些有趣的信号,如果您有空可以详细去查看！"
+":ref:`SceneTree <class_SceneTree>` 类提供了许多有用的方法, 例如与场景, 其节点"
+"层次结构, 及节点编组交互. 它使您可以轻松切换场景或重新加载场景, 退出游戏或暂"
+"停和取消暂停游戏. 它还有一些有趣的信号, 如果您有空可以详细去查看！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
@@ -190,9 +190,9 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
-"Godot 有一个通知系统.这个是非常底层的虚函数,通常不需要放入脚本代码里.只需要知"
-"道有这个系统的存在.例如,您可以在您的脚本里添加 :ref:`Object._notification() "
-"<class_Object_method__notification>` 函数:"
+"Godot 有一个通知系统. 这个是非常底层的虚函数, 通常不需要放入脚本代码里. 只需"
+"要知道有这个系统的存在. 例如, 您可以在您的脚本里添加 :ref:`Object."
+"_notification() <class_Object_method__notification>` 函数:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -200,8 +200,8 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overridable functions."
 msgstr ""
-":ref:`类参考手册 <toc-class-ref>`每个类的文档里都说明了它们能接收的通知.不过,"
-"GDScript在大多数情况下都提供了更简单的可重写函数."
+":ref:`类参考手册 <toc-class-ref>` 每个类的文档里都说明了它们能接收的通知. 不"
+"过,GDScript在大多数情况下都提供了更简单的可重写函数."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overridable functions"
@@ -211,13 +211,13 @@ msgstr "可重载函数"
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr "如下所述的这些可重载函数,可以应用于节点:"
+msgstr "如下所述的这些可重载函数, 可以应用于节点:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
-msgstr "如前所述,最好使用这些函数代替通知系统."
+msgstr "如前所述, 最好使用这些函数代替通知系统."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
@@ -228,13 +228,13 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"要通过代码创建节点,请像其他任何基于类的数据类型一样,调用 ``.new()`` 方法. 例"
-"如:"
+"要通过代码创建节点, 请像其他任何基于类的数据类型一样, 调用 ``.new()`` 方法. "
+"例如:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
-msgstr "要删除节点,无论是在场景内还是场景外,都必须使用 ``free()``:"
+msgstr "要删除节点, 无论是在场景内还是场景外, 都必须使用 ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -242,8 +242,8 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"当一个节点被释放时, 它也会释放其所有子节点.因此, 手动删除节点比看起来简单得"
-"多.释放基节点, 那么子树中的其他所有东西都会随之消失."
+"当一个节点被释放时, 它也会释放其所有子节点. 因此, 手动删除节点比看起来简单得"
+"多. 释放基节点, 那么子树中的其他所有东西都会随之消失."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -252,9 +252,9 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
-"当我们要删除当前\"阻塞\"的节点时,可能会发生这种情况,因为该节点正在发出信号或"
-"正在调用函数.这会导致游戏崩溃.使用调试器运行Godot通常能捕获这种情况并向您发出"
-"警告."
+"当我们要删除当前 \"阻塞\" 的节点时, 可能会发生这种情况, 因为该节点正在发出信"
+"号或正在调用函数. 这会导致游戏崩溃. 使用调试器运行Godot通常能捕获这种情况并向"
+"您发出警告."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
@@ -272,13 +272,13 @@ msgstr "实例化场景"
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
-msgstr "从代码实例化场景分两个步骤完成.第一步是从硬盘驱动器加载场景:"
+msgstr "从代码实例化场景分两个步骤完成. 第一步是从硬盘驱动器加载场景:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
-msgstr "预加载可以更方便,因为它是在解析时发生的(仅适用于GDScript):"
+msgstr "预加载可以更方便, 因为它是在解析时发生的(仅适用于GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -288,10 +288,10 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"但是 ``scene`` 还不是一个节点.它被打包在一个称为 :ref:`PackedScene "
-"<class_PackedScene>` 的特殊资源中.要想创建实际的节点,就必须调用函数 :ref:"
-"`PackedScene.instance() <class_PackedScene_method_instance>`.这将返回可以添加"
-"到活动场景的节点树:"
+"但是 ``scene`` 还不是一个节点. 它被打包在一个称为 :ref:`PackedScene "
+"<class_PackedScene>` 的特殊资源中. 要想创建实际的节点, 就必须调用函数 :ref:"
+"`PackedScene.instance() <class_PackedScene_method_instance>`. 这将返回可以添"
+"加到活动场景的节点树:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -300,9 +300,9 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"此两步过程的优点在于,打包的场景可以保持加载状态并可以随时使用,以便您可以根据"
-"需要创建尽可能多的实例.这对于在活动场景中快速实例化多个敌人、子弹、和其他实体"
-"特别有用."
+"此两步过程的优点在于, 打包的场景可以保持加载状态并可以随时使用, 以便您可以根"
+"据需要创建尽可能多的实例. 这对于在活动场景中快速实例化多个敌人, 子弹, 和其他"
+"实体特别有用."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
@@ -314,31 +314,34 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot有一个\"脚本类\"的功能,可以使用编辑器注册单个脚本.默认情况下,您只能通过"
-"直接加载文件访问未命名的脚本."
+"Godot有一个 \"脚本类\" 的功能, 可以使用编辑器注册单个脚本. 默认情况下, 您只能"
+"通过直接加载文件访问未命名的脚本."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
+#, fuzzy
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
-"an optional path to an image to use as an icon. You will then find your new "
-"type in the Node or Resource creation dialog."
+"an optional path to a PNG or SVG image to use as an icon (16×16 minimum, "
+"32×32 recommended). You will then find your new type in the Node or Resource "
+"creation dialog. Note that the icon will only appear after restarting the "
+"editor."
 msgstr ""
-"您可以命名脚本,并在编辑器中使用 ``class_name`` 关键字并后跟类名将其注册为类"
-"型.您可以添加逗号和可选的图像路径以用作图标.然后,您将在节点或资源创建对话框中"
-"找到您的新类型."
+"您可以命名脚本, 并在编辑器中使用 ``class_name`` 关键字并后跟类名将其注册为类"
+"型. 您可以添加逗号和可选的图像路径以用作图标. 然后, 您将在节点或资源创建对话"
+"框中找到您的新类型."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:423
 msgid "In Godot 3.1:"
 msgstr "在Godot 3.1中:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
-"只有GDScript和NativeScript,即C ++和其他GDNative支持的语言,可以注册脚本."
+"只有GDScript和NativeScript, 即C ++和其他GDNative支持的语言, 可以注册脚本."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:426
 msgid "Only GDScript creates global variables for each named script."
 msgstr "只有GDScript为每个命名脚本创建全局变量."

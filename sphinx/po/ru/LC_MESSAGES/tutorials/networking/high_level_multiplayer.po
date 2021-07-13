@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,13 +146,14 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
-"Большинство поддерживаемых платформ предлагают все или большинство из "
-"упомянутых высокоуровневых и низкоуровневых сетевых функций. Поскольку сеть "
-"всегда в значительной степени зависит от оборудования и операционной "
-"системы, некоторые функции могут изменяться или быть недоступны на некоторых "
-"целевых платформах. Платформа HTML5 в настоящее время предлагает только "
-"поддержку WebSocket и не имеет некоторых функций более высокого уровня, а "
-"также необработанный доступ к протоколам низкого уровня, таким как TCP и UDP."
+"Большинство поддерживаемых Godot платформ предлагают все или большинство "
+"упомянутых высокоуровневых и низкоуровневых сетевых функций. Однако, "
+"поскольку сетевое взаимодействие всегда зависит от оборудования и "
+"операционной системы, некоторые функции могут быть изменены или недоступны "
+"на некоторых целевых платформах. В частности, платформа HTML5 в настоящее "
+"время предлагает только поддержку WebSocket и не обладает некоторыми "
+"функциями более высокого уровня, а также необработанным доступом к "
+"протоколам низкого уровня, таким как TCP и UDP."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 #, fuzzy
@@ -373,7 +374,6 @@ msgid "``network_peer_disconnected(int id)``"
 msgstr "`network_peer_connected(int id)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
-#, fuzzy
 msgid ""
 "The above signals are called on every peer connected to the server "
 "(including on the server) when a new peer connects or disconnects. Clients "
@@ -387,28 +387,27 @@ msgid ""
 msgstr ""
 "Вышеуказанные сигналы вызываются на каждом узле, подключенном к серверу (в "
 "том числе на сервере), когда новый узел подключается или отключается. "
-"Клиенты будут подключаться с уникальным id больше 1, в то время как ID 1 "
-"всегда у сервера. Все что ниже 1 должно рассматриваться как недействительные "
-"id. Идентификатор локальной системы можно получить с помощью :ref:`SceneTree."
-"get_network_unique_id() <class_SceneTree_method_get_network_unique_id>`. Эти "
-"идентификаторы будут полезны в основном для управления лобби и, как правило, "
-"должны храниться, поскольку они идентифицируют подключенные узлы и, "
-"следовательно, игроков. Можно также использовать идентификаторы для отправки "
-"сообщений только определенным узлам."
+"Клиенты будут подключаться с уникальным ID больше 1, в то время как ID 1 "
+"всегда у сервера. Все что ниже 1 должны рассматриваться как "
+"недействительные. Вы можете получить ID локальной системы с помощью :ref:"
+"`SceneTree.get_network_unique_id() "
+"<class_SceneTree_method_get_network_unique_id>`. Эти идентификаторы будут "
+"полезны в основном для управления лобби и, как правило, должны храниться, "
+"поскольку они идентифицируют подключенные узлы и, следовательно, игроков. "
+"Можно также использовать идентификаторы для отправки сообщений только "
+"определенным узлам."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
 msgstr "Клиенты:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-#, fuzzy
 msgid "``connected_to_server``"
-msgstr "`connected_to_server`"
+msgstr "``connected_to_server``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-#, fuzzy
 msgid "``connection_failed``"
-msgstr "`connection_failed`"
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 #, fuzzy
@@ -885,12 +884,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
+#, fuzzy
 msgid ""
 "The bomberman example here is largely for illustrational purposes, and does "
 "not do anything on the host-side to handle the case where a peer uses a "
-"custom client to cheat by for example refusing to to stun itself. In the "
+"custom client to cheat by for example refusing to stun itself. In the "
 "current implementation such cheating is perfectly possible because each "
 "client is the network master of its own player, and the network master of a "
 "player is the one which decides whether to call the I-was-stunned method "
 "(``stun``) on all of the other peers and itself."
 msgstr ""
+"Пример игры bomberman дан здесь, по большей части, в иллюстративных целях и "
+"ничего не делает на стороне хоста для отслеживания случаев, когда "
+"подключающийся использует измененный клиент для жульничества, например "
+"отказываясь себя оглушать. В данной реализации такой обман вполне возможен "
+"потому что каждый клиент является сетевым мастером своего собственного "
+"персонажа и он решает, вызывать ли \"я-был-оглушен\"-метод (``stun``) на "
+"всех других пользователей и себя."

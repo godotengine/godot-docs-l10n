@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,8 +94,8 @@ msgid ""
 msgstr ""
 "Добавьте в сцену новый узел :ref:`TileMap <class_TileMap>`. По умолчанию "
 "TileMap использует квадратную сетку плиток. Вы также можете использовать "
-"перспективный «Изометрический» режим или определить свою собственную форму "
-"плитки."
+"основанный на перспективе «Изометрический» режим или определить свою "
+"собственную форму плитки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
@@ -165,8 +165,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
-"Для всех этих параметров в этой демонстрации можно оставить значения по "
-"умолчанию."
+"Все эти настройки могут быть оставлены в их значениях по-умолчанию для этой "
+"демонстрации."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
 msgid "Creating a TileSet"
@@ -192,7 +192,7 @@ msgid ""
 "TileSet\"."
 msgstr ""
 "Чтобы добавить новый TileSet, нажмите на свойство \"Tile Set\" и выберите "
-"\"New TileSet\"."
+"\"Новый TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
@@ -208,9 +208,9 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
-"Во-первых, вам нужно добавить текстуры, которые вы будете использовать для "
-"плиток. Нажмите кнопку «Add Texture(s) to TileSet» и выберите изображение "
-"``tilesheet.png``."
+"Во-первых, вам нужно добавить текстурy(-ы), которую(-ые) вы будете "
+"использовать для плиток. Нажмите кнопку «Добавить текстуру(-ы) в Набор "
+"плиток» и выберите изображение ``tilesheet.png``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -370,10 +370,10 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
-"Щёлкните «New Autotile» и выделите плитки, которые вы хотите использовать. "
-"Вы можете добавлять столкновения, перекрытие, формы навигации, приоритеты "
-"плитки и выбирать плитку для иконки так же, как и при работе с атласом "
-"плиток."
+"Нажмите «Новый автотайл» и перетащите, чтобы выбрать тайлы, которые вы "
+"хотите использовать. Вы можете добавлять столкновения, перекрытие, формы "
+"навигации, приоритеты тайла и выбирать тайл значка таким же образом, как и "
+"для тайлов атласа."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
@@ -603,12 +603,11 @@ msgstr "Желтый: верх стены"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "Grey: hidden due to overlap"
-msgstr ""
+msgstr "Серый: скрыт из-за перекрытия"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:282
-#, fuzzy
 msgid "Transparent: air"
-msgstr "Сортировка прозрачности"
+msgstr "Прозрачный: воздух"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"

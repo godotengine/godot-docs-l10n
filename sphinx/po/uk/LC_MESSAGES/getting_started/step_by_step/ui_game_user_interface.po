@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
-#, fuzzy
 msgid "Design the GUI"
-msgstr "Дизайн графічного інтерфейсу"
+msgstr "Проектування графічного інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -50,28 +48,24 @@ msgid "Create flexible UI components"
 msgstr "Створювати гнучкі компоненти інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
-#, fuzzy
 msgid "Use scene inheritance"
 msgstr "Використовувати наслідування сцен"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
-#, fuzzy
 msgid "Build a complex UI"
 msgstr "Будувати складні інтерфейси"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_gui_design.zip <files/"
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
-"Завантажте файли проєкту: :download:`ui_gui_design.zip <files/ui_gui_design."
-"zip>` і витягніть архів. Імпортуйте проєкт `start/` у Godot, щоб виконати "
+"Завантажте файли проекту: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>` і витягніть архів. Імпортуйте проект `start/` у Godot, щоб виконати "
 "цей урок. Папка `end/` містить кінцевий результат."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
-#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
@@ -80,12 +74,10 @@ msgstr ""
 "watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
-#, fuzzy
 msgid "Breaking down the UI"
 msgstr "Розбивання інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
-#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
@@ -121,7 +113,6 @@ msgid "The life and energy bars on the left"
 msgstr "Шкали здоров'я та енергії зліва"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -607,7 +598,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "Вузли прив'язуються до всього Background, але їх положення вимкнено"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -617,12 +607,11 @@ msgid ""
 msgstr ""
 "Давайте змінимо в ``Number`` властивості вирівнювання, щоб перемістити його "
 "вліво та в центр ``Background``. Виберіть вузол ``Number``, змініть його "
-"властивість ``Align`` на ``Left`` та властивість ``Valign`` на ``Center``. "
-"Потім трохи змініть розмір лівого краю, щоб додати трохи простору між лівим "
-"краєм ``Background`` та текстом."
+"властивість ``Align`` на Left та властивість ``Valign`` на Center. Потім "
+"трохи змініть розмір лівого краю, щоб додати трохи простору між лівим краєм "
+"``Background`` та текстом."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-#, fuzzy
 msgid "The Number node aligned to the left and center"
 msgstr "Вузол Number вирівняний ліворуч та по центру"
 

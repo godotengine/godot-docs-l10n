@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
 msgid "What are shaders?"
-msgstr "O que são sombreadores(shaders)?"
+msgstr "O que são shaders?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:7
 msgid "Introduction"
@@ -31,12 +31,18 @@ msgid ""
 "can be used to create interesting effects that run incredibly fast. You have "
 "also likely heard that they are terrifying. Both are true."
 msgstr ""
+"Então, você decidiu experimentar os shaders. Você provavelmente já ouviu "
+"falar que eles podem ser usados para criar efeitos interessantes que são "
+"executados de forma incrivelmente rápida. Você também deve ter ouvido falar "
+"que eles são assustadores. Ambos são verdadeiros."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:13
 msgid ""
 "Shaders can be used to create a wide range of effects (in fact everything "
 "drawn in a modern rendering engine is done with shaders)."
 msgstr ""
+"Shaders podem ser usados para criar uma ampla gama de efeitos (na verdade, "
+"tudo desenhado em um mecanismo de renderização moderno é feito com shaders)."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:16
 msgid ""
@@ -47,10 +53,16 @@ msgid ""
 "still unintuitive and restricting, especially for users who are used to "
 "GDScript."
 msgstr ""
+"Escrever shaders também pode ser muito difícil para pessoas não "
+"familiarizadas com eles. O Godot tenta tornar a escrita de shaders um pouco "
+"mais fácil, expondo muitos recursos integrados úteis e lidando com parte do "
+"trabalho de inicialização de nível inferior para você. No entanto, GLSL (a "
+"Linguagem de Shading do OpenGL, que o Godot usa) ainda não é intuitiva e é "
+"restritiva, especialmente para usuários que estão acostumados com GDScript."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:22
 msgid "But what are they?"
-msgstr ""
+msgstr "Mas o que são eles?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:24
 msgid ""
@@ -61,6 +73,12 @@ msgid ""
 "rendering because they are optimized for running thousands of instructions "
 "in parallel."
 msgstr ""
+"Shaders são um tipo especial de programa executado em Unidades de "
+"Processamento Gráfico (GPUs). A maioria dos computadores tem algum tipo de "
+"GPU, seja integrado em sua CPU ou discreto (o que significa que é um "
+"componente de hardware separado, por exemplo, a típica placa de vídeo). As "
+"GPUs são especialmente úteis para renderização porque são otimizadas para "
+"executar milhares de instruções em paralelo."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:29
 msgid ""
@@ -72,24 +90,38 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"A saída do shader normalmente são os pixels coloridos do objeto desenhado na "
+"janela de exibição. Mas alguns shaders permitem saídas especializadas (isso "
+"é especialmente verdadeiro para APIs como Vulkan). Shaders operam dentro da "
+"pipeline de shaders. O processo padrão é a pipeline de shader vertex -> "
+"fragment. O shader de vértice é usado para decidir onde cada vértice (ponto "
+"em um modelo 3D ou canto de um Sprite) vai e o shader de fragmento decide "
+"qual cor os pixels individuais recebem."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
 msgstr ""
+"Suponha que você queira atualizar todos os pixels em uma textura para uma "
+"determinada cor, na CPU você escreveria:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
 msgstr ""
+"Em um shader você tem acesso apenas ao interior do loop, de modo que o que "
+"você escreve se parece com isto:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"Você não tem controle sobre como esta função é chamada. Portanto, você deve "
+"projetar seus shaders de maneira diferente de como projetaria programas na "
+"CPU."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -100,6 +132,13 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"Uma consequência da pipeline do shader é que você não pode acessar os "
+"resultados de uma execução anterior do shader, não pode acessar outros "
+"pixels do pixel que está sendo desenhado e não pode escrever fora do pixel "
+"atual que está sendo desenhado. Isto permite que a GPU execute o shader para "
+"pixels diferentes em paralelo, pois eles não dependem um do outro. Essa "
+"falta de flexibilidade foi projetada para funcionar com a GPU, o que permite "
+"que os shaders sejam incrivelmente rápidos."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
@@ -174,11 +213,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
-#, fuzzy
 msgid ""
 "For more information about how shaders operate specifically in Godot, see "
 "the :ref:`Shaders <doc_shaders>` doc."
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ""
+"Para mais informações sobre como os shaders operam especificamente no Godot, "
+"consulte o documento :ref:`Shaders <doc_shaders>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:97
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,21 +76,18 @@ msgid "A normal grenade"
 msgstr "обычную гранату"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
-#, fuzzy
 msgid "A sticky grenade"
-msgstr "гранату-\"липучку\""
+msgstr "Липкую гранату"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
-#, fuzzy
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
 msgstr ""
 "Добавим возможность брать и бросать узлы :ref:`RigidBody <class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
-#, fuzzy
 msgid "To add joypad input for the player"
-msgstr "Добавми для игрока ввод с джойпада"
+msgstr "Добавим для игрока ввод с джойпада"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:26
 msgid "To add ammo and reloading for all weapons that consume ammo."
@@ -111,10 +108,9 @@ msgid "To add an automatic turret"
 msgstr "Добавим автоматическую турель"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
-#, fuzzy
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
 msgstr ""
-"Которая сможет стрелять, используя для пуль обьекты или :ref:`Raycast "
+"Которая сможет стрелять, используя для пуль объекты или :ref:`Raycast "
 "<class_Raycast>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
@@ -130,38 +126,34 @@ msgid "To add a simple main menu:"
 msgstr "Как добавить простое главное меню:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:34
-#, fuzzy
 msgid "With an options menu for changing how the game runs"
-msgstr "с настройками игры"
+msgstr "С меню настроек для того, как игра работает"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:35
 msgid "With a level select screen"
 msgstr "с экраном выбора уровня"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:36
-#, fuzzy
 msgid "To add a universal pause menu we can access anywhere"
-msgstr "Добавим возможность ставить игру на паузу в любом месте"
+msgstr "Добавим универсальное меню паузы, доступное из любого места"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:38
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
-"Несмотря на то, что этот урок может быть выполнен начинающими, мы советуем "
-"для начала выполнить :ref:`doc_your_first_game`, если у вас не было опыта "
-"работы с Godot или разработки игр."
+"Несмотря на то, что этот урок может быть выполнен начинающими, мы крайне "
+"рекомендуем для начала выполнить :ref:`doc_your_first_game`, если вы новичок "
+"в Godot и/или разработке игр **перед** изучением этой серии уроков."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
-#, fuzzy
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games, you will likely struggle making 3D games."
 msgstr ""
 "Помните: делать 3D игры намного сложнее чем 2D игры. Если вы не знаете как "
-"делать 2D игры, то при создании 3D игр, у вас возникнут струдности."
+"делать 2D игры, вероятнее всего вам будет трудно делать игры в 3D."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
 #, fuzzy
@@ -175,44 +167,40 @@ msgstr ""
 "игр."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
-#, fuzzy
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
-"Ассеты для этого урока можно найти здесь: :download:`Godot_FPS_Starter.zip "
+"Ресурсы для этого урока можно найти здесь: :download:`Godot_FPS_Starter.zip "
 "<files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
-#, fuzzy
 msgid ""
 "The provided starter assets contain an animated 3D model, a bunch of 3D "
 "models for making levels, and a few scenes already configured for this "
 "tutorial."
 msgstr ""
-"Предоставленные материалы содержат анимированую 3D модель, кучу моделей для "
-"создания уровней, и несколько уже настроеных сцен для урока."
+"Предоставленные стартовые материалы содержат анимированную 3D модель, кучу "
+"моделей для создания уровней, и несколько уже настроенных сцен для урока."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:54
-#, fuzzy
 msgid ""
 "All assets provided (unless otherwise noted) were originally created by "
 "TwistedTwigleg, with changes/additions by the Godot community. All original "
 "assets provided for this tutorial are released under the ``MIT`` license."
 msgstr ""
-"Все предоставленные материалы () были созданы за авторством TwistedTwigleg, "
-"с изменениями и добавлениями от сообщества Godot. Все оригинальные материалы "
-"для этого урока выпущены под лицензией ``MIT``."
+"Все предоставленные материалы (если иное не указано) были созданы "
+"TwistedTwigleg, с изменениями/добавлениями от сообщества Godot. Все "
+"оригинальные материалы для этого урока выпущены под лицензией ``MIT``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:57
-#, fuzzy
 msgid ""
 "Feel free to use these assets however you want! All original assets belong "
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
-"Можете использовать эти ассеты как захотите! Все оригинальные материалы "
-"принадлежат сообществу Godot, с остальными в списке ниже:"
+"Можете использовать эти ресурсы как захотите! Все оригинальные материалы "
+"принадлежат сообществу Godot, остальные принадлежат перечисленным ниже:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:59
 #, fuzzy
@@ -276,45 +264,42 @@ msgstr ""
 "Запустите Godot и откройте проект, включенный в предоставленных материалах."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:82
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
 "there are several pre-setup scenes we will be using throughout the tutorial "
 "series."
 msgstr ""
-"Хотя данные ассеты и не обязательны для работы со скриптами описанных в этих "
-"уроках, с ними следовать уроку будет намного легче, т.к среди них "
+"Хотя данные ресурсы и не обязательны для работы со скриптами описанных в "
+"этих уроках, с ними следовать уроку будет намного легче, т.к среди них "
 "присутствуют несколько заранее построенных сцен, которые мы будем "
-"использовать в течене всего этого курса."
+"использовать в течение всего этого курса."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:86
-#, fuzzy
 msgid ""
 "First, open the project settings and go to the \"Input Map\" tab. You'll "
 "find several actions have already been defined. We will be using these "
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
-"Для начала, откройте параметры проекта и откройте вкладку \"Список действий"
-"\". Заметьте, что определенные действия уже настроены. Мы будем использовать "
-"эти действия для нашего игрока. Если желаете, можете заменить горячие "
-"клавиши для этих действий на те, что вам удобнее."
+"Для начала, откройте настройки проекта и откройте вкладку \"Список действий"
+"\". Вы заметите, что некоторые действия уже определены. Мы будем "
+"использовать эти действия для нашего игрока. Если желаете, можете заменить "
+"горячие клавиши для этих действий."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:92
-#, fuzzy
 msgid "Let's take a second to see what we have in the starter assets."
-msgstr "Посмотрим, что же у нас есть в наших ассетах."
+msgstr "Давайте на секунду взглянем, что мы имеем в начальных ресурсах."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:94
-#, fuzzy
 msgid ""
 "Included in the starter assets are several scenes. For example, in ``res://"
 "`` we have 14 scenes, most of which we will be visiting as we go through "
 "this tutorial series."
 msgstr ""
-"У нас есть несколько сцен. Например, в папке ресурсов ``res://``имеется 14 "
-"сцен, большинство из которых мы просмотрим по ходу обучающего курса."
+"В стартовый набор входит несколько сцен. Например, в папке ресурсов ``res://"
+"``имеется 14 сцен, большинство из которых мы просмотрим по ходу обучающего "
+"курса."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:97
 msgid "For now let's open up ``Player.tscn``."
@@ -338,11 +323,11 @@ msgid "Making the FPS movement logic"
 msgstr "Создаем логику передвижения FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:106
-#, fuzzy
 msgid ""
 "Once you have ``Player.tscn`` open, let's take a quick look at how it is set "
 "up:"
-msgstr "После того, как вы открыли ``Player.tscn``, посмотрите как он построен"
+msgstr ""
+"После того, как вы открыли ``Player.tscn``, посмотрите как он построен:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:110
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid ""
 "`External editors are currently incompatible with Godot's \"Sync Script "
 "Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
 msgstr ""
-"`外部编辑器目前与Godot的 \"同步脚本修改 \"功能不兼容 <https://github.com/"
+"`外部编辑器目前与Godot的 \"同步脚本修改\" 功能不兼容 <https://github.com/"
 "godotengine/godot/issues/10946>`__"
 
 #: ../../docs/getting_started/editor/external_editor.rst:10
@@ -36,9 +36,9 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
-"Godot可以与外部文本编辑器(例如Sublime Text或Visual Studio Code)一起使用.要启"
-"用外部文本编辑器,请通过 ``编辑器 -> 编辑器设置 -> 文本编辑器 -> 外部`` 浏览至"
-"相关的编辑器设置"
+"Godot可以与外部文本编辑器(例如Sublime Text或Visual Studio Code)一起使用. 要启"
+"用外部文本编辑器, 请通过 ``编辑器 -> 编辑器设置 -> 文本编辑器 -> 外部`` 浏览"
+"至相关的编辑器设置"
 
 #: ../../docs/getting_started/editor/external_editor.rst:16
 msgid ""
@@ -47,9 +47,9 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
-"有两个字段:可执行文件路径和命令行标志.这些标志允许您将编辑器与Godot集成在一"
-"起,并向其传递文件路径以打开文件以及其他相关参数.Godot将替换标志字符串中的以下"
-"占位符:"
+"有两个字段: 可执行文件路径和命令行标志. 这些标志允许您将编辑器与Godot集成在一"
+"起, 并向其传递文件路径以打开文件以及其他相关参数.Godot将替换标志字符串中的以"
+"下占位符:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Field in Exec Flags"
@@ -117,7 +117,7 @@ msgstr "Atom/Sublime Text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{file}:{line}``"
-msgstr "``{file}:{line}``"
+msgstr "``{file}: {line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "JetBrains Rider"
@@ -133,7 +133,7 @@ msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:44
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr "``{project} --goto {file}:{line}:{col}``"
+msgstr "``{project} --goto {file}: {line}: {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "Vim (gVim)"
@@ -145,4 +145,4 @@ msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:49
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
-msgstr "对于Visual Studio Code,您将必须指向 ``code.cmd`` 文件."
+msgstr "对于Visual Studio Code, 您将必须指向 ``code.cmd`` 文件."

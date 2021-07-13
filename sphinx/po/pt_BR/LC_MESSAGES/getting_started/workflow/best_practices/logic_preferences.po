@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
-#, fuzzy
 msgid "Logic preferences"
-msgstr "Alterando a cena atual"
+msgstr "Preferências de lógica"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:6
 msgid ""
 "Ever wondered whether one should approach problem X with strategy Y or Z? "
 "This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"Já se perguntou se devemos abordar o problema X com a estratégia Y ou Z? "
+"Este artigo cobre uma variedade de tópicos relacionados a esses dilemas."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
-#, fuzzy
 msgid "Loading vs. preloading"
-msgstr "Carregando cenas"
+msgstr "Carregamento vs. pré-carregamento"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:12
 msgid ""
@@ -40,6 +40,10 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
+"No GDScript, existe o método global :ref:`preload "
+"<class_@GDScript_method_preload>`. Ele carrega recursos o mais cedo possível "
+"para antecipar as operações de \"carregamento\" e evitar o carregamento de "
+"recursos no meio de um código sensível ao desempenho."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
 msgid ""
@@ -50,12 +54,20 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
+"Sua contraparte, o método :ref:`load <class_@GDScript_method_load>`, carrega "
+"um recurso somente quando ele atinge a instrução de carregamento. Ou seja, "
+"ele carregará um recurso no local que pode causar lentidão quando ele ocorre "
+"no meio de processos sensíveis. A função ``load`` também é um apelido para :"
+"ref:`ResourceLoader.load(path) <class_ResourceLoader_method_load>` que é "
+"acessível a *todas* as linguagens de scripting."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
 "So, when exactly does preloading occur versus loading, and when should one "
 "use either? Let's see an example:"
 msgstr ""
+"Então, quando exatamente ocorre o pré-carregamento versus carregamento, e "
+"quando se deve usar qualquer algum deles? Vejamos um exemplo:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""
@@ -64,6 +76,10 @@ msgid ""
 "wish for it. To distinguish these situations, there are a few things one can "
 "consider:"
 msgstr ""
+"O pré-carregamento permite que o script manuseie todo o carregamento no "
+"momento em que se carrega o script. Pré-carregar é útil, mas também há "
+"momentos em que não se deseja. Para distinguir estas situações há algumas "
+"coisas que podemos considerar:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
@@ -72,6 +88,11 @@ msgid ""
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
+"Se não for possível determinar quando o script pode carregar, então pré-"
+"carregar um recurso, especialmente uma cena ou script, pode resultar em "
+"carregamentos adicionais inesperados. Isso pode levar a tempos de "
+"carregamento não intencionais e de comprimento variável em cima das "
+"operações de carregamento do script."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
@@ -79,13 +100,20 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"Se algo mais pudesse substituir o valor (como a inicialização exportada de "
+"uma cena), então pre-carregar o valor não teria sentido. Este ponto não é um "
+"fator significativo se a intenção é sempre criar o script por conta própria."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
+#, fuzzy
 msgid ""
 "If one wishes only to 'import' another class resource (script or scene), "
 "then using a preloaded constant is often the best course of action. However, "
-"in exceptional cases, one my wish not to do this:"
+"in exceptional cases, one may wish not to do this:"
 msgstr ""
+"Se alguém deseja apenas 'importar' outro recurso de classe (script ou cena), "
+"usar uma constante pré-carregada é geralmente o melhor curso de ação. No "
+"entanto, em casos excepcionais, não se deseja fazer isso:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -93,6 +121,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"Se a classe 'importada' estiver sujeita a mudanças, então ela deve ser uma "
+"propriedade, inicializada utilizando um ``export`` ou um ``load`` (e talvez "
+"nem mesmo inicializada até mais tarde)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -105,10 +136,19 @@ msgid ""
 "(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
 "the resources to delete themselves from memory)."
 msgstr ""
+"Se o script requer muitas dependências, e não se deseja consumir tanta "
+"memória, então pode-se desejar carregar e descarregar várias dependências "
+"durante a execução, conforme as circunstâncias mudam. Se alguém pré-carregar "
+"recursos em constantes, então a única maneira de descarregar estes recursos "
+"seria descarregar o script inteiro. Se ao invés disso eles são carregados, "
+"então pode-se defini-los como ``null`` e remover todas as referências ao "
+"recurso por completo (o que, como um tipo de extensão :ref:`Referência "
+"<referência_classe_Referência>`, fará com que os recursos se apaguem da "
+"memória)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "Fases grandes: estática vs. dinâmica"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -116,6 +156,10 @@ msgid ""
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
+"Se alguém está criando uma fase grande, quais circunstâncias são mais "
+"apropriadas? Eles deveriam criar a fase como um espaço estático? Ou eles "
+"deveriam carregar a fase em pedaços e mudar o conteúdo do mundo conforme "
+"necessário?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
@@ -123,6 +167,9 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"Bem, a resposta simples é \"quando o desempenho assim o exigir.\" O dilema "
+"associado às duas opções é uma das antigas opções de programação: a memória "
+"é otimizada em relação à velocidade ou vice-versa?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -131,6 +178,10 @@ msgid ""
 "Wasting users' RAM leads to programs running slow or outright crashing from "
 "everything else the computer tries to do at the same time."
 msgstr ""
+"A resposta ingênua é usar uma fase estática que carrega tudo ao mesmo tempo. "
+"Mas, dependendo do projeto, isto pode consumir uma grande quantidade de "
+"memória. Desperdiçar a RAM dos usuários leva a programas executarem devagar "
+"ou travamento total de tudo o que o computador tenta fazer ao mesmo tempo."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
@@ -140,6 +191,12 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"Não importa o que aconteça. deve-se quebrar cenas maiores em cenas menores "
+"(para ajudar na reutilização de assets). Desenvolvedores podem então "
+"projetar um nó que gerencia criação/carregamento e exclusão/descarregamento "
+"de recursos e nós em tempo real. Jogos com ambientes variáveis e grandes ou "
+"elementos gerados proceduralmente geralmente implementam estas estratégias "
+"para evitar o desperdício de memória."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -148,14 +205,18 @@ msgid ""
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
+"Por outro lado, codificar um sistema dinâmico é mais complexo, ou seja, usa "
+"lógica mais programada, o que resulta em oportunidades para erros e bugs. Se "
+"não tomar cuidado, é possível desenvolver um sistema que incha a dívida "
+"técnica da aplicação."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "Sendo assim, as melhores opções seriam..."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr ""
+msgstr "Para usar uma fase estática para jogos menores."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
@@ -164,6 +225,10 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"Se alguém tiver tempo/recursos em um jogo médio/grande, crie uma biblioteca "
+"ou plugin que possa codificar a gestão de nós e recursos. Se aperfeiçoada ao "
+"longo do tempo, de modo a melhorar a usabilidade e estabilidade, então ela "
+"pode evoluir para uma ferramenta confiável em todos os projetos."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -171,6 +236,10 @@ msgid ""
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
+"Codificar a lógica dinâmica para um jogo médio/grande porque se tem as "
+"habilidades de codificação, mas não o tempo ou recursos para refinar o "
+"código (o jogo tem que ser feito). Poderia potencialmente refatorar mais "
+"tarde para terceirizar o código em um plugin."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
@@ -178,3 +247,6 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"Para um exemplo das várias formas de trocar cenas durante a execução, por "
+"favor veja a documentação :ref:`\"Mudar cenas manualmente\" "
+"<doc_change_scenes_manually>`."

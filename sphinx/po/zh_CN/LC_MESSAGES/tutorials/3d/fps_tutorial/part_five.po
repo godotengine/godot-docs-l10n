@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid ""
 "In this part, we're going to add grenades to the player, give the player the "
 "ability to grab and throw objects, and add turrets!"
 msgstr ""
-"在这部分,我们要给玩家增加手榴弹,让玩家拥有抓取和投掷物体的能力,并添加炮塔!"
+"在这部分, 我们要给玩家增加手榴弹, 让玩家拥有抓取和投掷物体的能力, 并添加炮塔!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:13
 msgid ""
@@ -38,9 +38,9 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_four` will be the starting project for part 5"
 msgstr ""
-"在继续本教程的这一部分之前,我们假设您已经完成了 :ref:"
+"在继续本教程的这一部分之前, 我们假设您已经完成了 :ref:"
 "`doc_fps_tutorial_part_four`. 完成的项目来自 :ref:"
-"`doc_fps_tutorial_part_four`将成为第5部分的起始项目"
+"`doc_fps_tutorial_part_four` 将成为第5部分的起始项目"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:16
 msgid "Let's get started!"
@@ -54,7 +54,7 @@ msgstr "添加手榴弹"
 msgid ""
 "Firstly, let's give the player some grenades to play with. Open up ``Grenade."
 "tscn``."
-msgstr "首先,我们给玩家一些手榴弹,打开 ``Grenade.tscn`` ."
+msgstr "首先, 我们给玩家一些手榴弹, 打开 ``Grenade.tscn`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:23
 msgid ""
@@ -63,16 +63,16 @@ msgid ""
 "going to use :ref:`RigidBody <class_RigidBody>` nodes for our grenades so "
 "they bounce around the world in a (somewhat) realistic manner."
 msgstr ""
-"这里有几件事要注意,首先是手榴弹要使用 :ref:`RigidBody <class_RigidBody>` 节"
-"点.我们要为手榴弹使用 :ref:`RigidBody <class_RigidBody>` 节点,这样它们就会以"
-"有种表现现实的方式在世界范围内弹跳."
+"这里有几件事要注意, 首先是手榴弹要使用 :ref:`RigidBody <class_RigidBody>` 节"
+"点. 我们要为手榴弹使用 :ref:`RigidBody <class_RigidBody>` 节点, 这样它们就会"
+"以有种表现现实的方式在世界范围内弹跳."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:26
 msgid ""
 "The second thing to note is ``Blast_Area``. This is an :ref:`Area "
 "<class_Area>` node that will represent the blast radius of the grenade."
 msgstr ""
-"第二点需要注意的是 ``Blast_Area``. 这是一个 :ref:`Area <class_Area>` 节点,它"
+"第二点需要注意的是 ``Blast_Area``. 这是一个 :ref:`Area <class_Area>` 节点, 它"
 "代表手榴弹的爆炸半径."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:28
@@ -84,17 +84,18 @@ msgid ""
 "also emitted using world coordinates instead of local coordinates, so we "
 "have ``Local Coords`` unchecked as well."
 msgstr ""
-"最后,要注意的是 ``Explosion`` .这是 :ref:`Particles <class_Particles>` 节点,"
-"当手雷爆炸时,会发出爆炸效果.需注意,我们启用了 ``One shot`` ,是为了一次发射所"
-"有的粒子.粒子使用世界坐标而不是局部坐标发射的,所以没有选中 ``Local Coords`` ."
+"最后, 要注意的是 ``Explosion`` . 这是 :ref:`Particles <class_Particles>` 节"
+"点, 当手雷爆炸时, 会发出爆炸效果. 需注意, 我们启用了 ``One shot`` , 是为了一"
+"次发射所有的粒子. 粒子使用世界坐标而不是局部坐标发射的, 所以没有选中 ``Local "
+"Coords`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:32
 msgid ""
 "If you want, you can see how the particles are set up by looking through the "
 "particle's ``Process Material`` and ``Draw Passes``."
 msgstr ""
-"如果需要,您可以通过查看粒子的\"过程材质\"和\"绘制过程\"来查看粒子是如何设置"
-"的."
+"如果需要, 您可以通过查看粒子的 \"过程材质\" 和 \"绘制过程\" 来查看粒子是如何"
+"设置的."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:34
 msgid ""
@@ -106,38 +107,38 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:90
 msgid "Let's go over what's happening, starting with the class variables:"
-msgstr "让我们回顾一下正在发生的事情,从类变量开始:"
+msgstr "让我们回顾一下正在发生的事情, 从类变量开始:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:92
 msgid ""
 "``GRENADE_DAMAGE``: The amount of damage the grenade causes when it explodes."
-msgstr "``GRENADE DAMAGE``:手榴弹爆炸时造成的伤害量."
+msgstr "``GRENADE DAMAGE``: 手榴弹爆炸时造成的伤害量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:93
 msgid ""
 "``GRENADE_TIME``: The amount of time the grenade takes (in seconds) to "
 "explode once it's created/thrown."
-msgstr "``GRENADE_TIME``:手榴弹在创建/抛出后爆炸所需的时间(以秒为单位)."
+msgstr "``GRENADE_TIME``: 手榴弹在创建/抛出后爆炸所需的时间(以秒为单位)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:94
 msgid ""
 "``grenade_timer``: A variable for tracking how long the grenade has been "
 "created/thrown."
-msgstr "``grenade_timer``:一个变量,用于跟踪手榴弹被创建/抛出的时间."
+msgstr "``grenade_timer``: 一个变量, 用于跟踪手榴弹被创建/抛出的时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:95
 msgid ""
 "``EXPLOSION_WAIT_TIME``: The amount of time needed (in seconds) to wait "
 "before we destroy the grenade scene after the explosion"
 msgstr ""
-"``EXPLOSION_WAIT_TIME``:爆炸后我们摧毁手榴弹场景所需的等待时间(以秒为单位)"
+"``EXPLOSION_WAIT_TIME``: 爆炸后我们摧毁手榴弹场景所需的等待时间(以秒为单位)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:96
 msgid ""
 "``explosion_wait_timer``: A variable for tracking how much time has passed "
 "since the grenade exploded."
 msgstr ""
-"``explosion_wait_timer``:一个变量,用于跟踪自手榴弹爆炸以来已经过了多少时间."
+"``explosion_wait_timer``: 一个变量, 用于跟踪自手榴弹爆炸以来已经过了多少时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:97
 msgid ""
@@ -152,22 +153,22 @@ msgid ""
 "``grenade_mesh``: The :ref:`MeshInstance <class_MeshInstance>` for the "
 "grenade."
 msgstr ""
-"``grenade_mesh``:手榴弹的参考 :ref:`MeshInstance <class_MeshInstance>` ."
+"``grenade_mesh``: 手榴弹的参考 :ref:`MeshInstance <class_MeshInstance>` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:99
 msgid ""
 "``blast_area``: The blast :ref:`Area <class_Area>` used to damage things "
 "when the grenade explodes."
 msgstr ""
-"``blast_area``:爆炸 :ref:`Area <class_Area>` 用于在手榴弹爆炸时损坏东西."
+"``blast_area``: 爆炸 :ref:`Area <class_Area>` 用于在手榴弹爆炸时损坏东西."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:100
 msgid ""
 "``explosion_particles``: The :ref:`Particles <class_Particles>` that come "
 "out when the grenade explodes."
 msgstr ""
-"``explosion_particles``: :ref:`Particles <class_Particles>` ,当手榴弹爆炸时产"
-"生."
+"``explosion_particles``: :ref:`Particles <class_Particles>` , 当手榴弹爆炸时"
+"产生."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:102
 msgid ""
@@ -179,8 +180,8 @@ msgid ""
 "gets us the exact time the explosion particles will last."
 msgstr ""
 "注意 ``EXPLOSION_WAIT_TIME`` 是一个相当奇怪的数字(``0.48``). 这是因为我们希"
-"望 ``EXPLOSION_WAIT_TIME`` 等于爆炸粒子发射的时间长度,所以当粒子完成时我们会"
-"摧毁/释放手榴弹. 我们通过获取粒子的生命时间并将其除以粒子的速度刻度来计算"
+"望 ``EXPLOSION_WAIT_TIME`` 等于爆炸粒子发射的时间长度, 所以当粒子完成时我们会"
+"摧毁/释放手榴弹. 我们通过获取粒子的生命时间并将其除以粒子的速度刻度来计算 "
 "\"EXPLOSION_WAIT_TIME\". 这让我们得到了爆炸粒子持续的确切时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:108
@@ -191,7 +192,7 @@ msgstr "现在让我们把注意力转向 ``_ready`` ."
 msgid ""
 "First we get all the nodes we'll need and assign them to the proper class "
 "variables."
-msgstr "首先,我们得到需要的所有节点,并将它们分配到合适的类变量中."
+msgstr "首先, 我们得到需要的所有节点, 并将它们分配到合适的类变量中."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:112
 msgid ""
@@ -202,8 +203,8 @@ msgid ""
 msgstr ""
 "我们需要得到 :ref:`CollisionShape <class_CollisionShape>` 和 :ref:"
 "`MeshInstance <class_MeshInstance>` 因为类似于 :ref:"
-"`doc_fps_tutorial_part_four`中的目标,我们将隐藏手榴弹的网格并禁用碰撞形状 手"
-"榴弹爆炸了."
+"`doc_fps_tutorial_part_four` 中的目标, 我们将隐藏手榴弹的网格并禁用碰撞形状 "
+"手榴弹爆炸了."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:115
 msgid ""
@@ -223,8 +224,8 @@ msgid ""
 "emit in one shot. This is to be extra sure the particles will behave the way "
 "we expect them to."
 msgstr ""
-"当我们得到所有的节点并将它们分配给类变量后,确保爆炸粒子不会发射,并且它们被设"
-"置为一次发射.这是为了确保粒子会以我们期望的方式运行."
+"当我们得到所有的节点并将它们分配给类变量后, 确保爆炸粒子不会发射, 并且它们被"
+"设置为一次发射. 这是为了确保粒子会以我们期望的方式运行."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:123
 msgid "Now let's look at ``_process``."
@@ -237,9 +238,9 @@ msgid ""
 "grenade has to wait ``GRENADE_TIME`` seconds before exploding, allowing the :"
 "ref:`RigidBody <class_RigidBody>` to move around."
 msgstr ""
-"首先,我们检查 ``grenade_timer`` 是否小于 ``GRENADE_TIME`` .如果是,我们加上 "
-"``delta`` 并返回.这是为了让手榴弹在爆炸前必须等待 ``GRENADE_TIME`` 秒,让 :"
-"ref:`RigidBody <class_RigidBody>` 移动."
+"首先, 我们检查 ``grenade_timer`` 是否小于 ``GRENADE_TIME`` . 如果是, 我们加"
+"上 ``delta`` 并返回. 这是为了让手榴弹在爆炸前必须等待 ``GRENADE_TIME`` 秒, "
+"让 :ref:`RigidBody <class_RigidBody>` 移动."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:128
 msgid ""
@@ -250,11 +251,11 @@ msgid ""
 "whatever code under the check will only be called once, right when the "
 "grenade has waited long enough and needs to explode."
 msgstr ""
-"如果 ``grenade_timer`` 位于 ``GRENADE_TIMER`` 或更高,那么我们需要检查手榴弹是"
-"否等待了足够长的时间并且需要爆炸. 我们通过检查 ``explosion_wait_timer`` 是否"
-"等于 ``0`` 或更少来做到这一点. 因为我们将立即将 ``delta`` 添加到 "
-"``explosion_wait_timer`` ,所以检查下的任何代码只会被调用一次,就在手榴弹等待足"
-"够长并且需要爆炸时."
+"如果 ``grenade_timer`` 位于 ``GRENADE_TIMER`` 或更高, 那么我们需要检查手榴弹"
+"是否等待了足够长的时间并且需要爆炸. 我们通过检查 ``explosion_wait_timer`` 是"
+"否等于 ``0`` 或更少来做到这一点. 因为我们将立即将 ``delta`` 添加到 "
+"``explosion_wait_timer`` , 所以检查下的任何代码只会被调用一次, 就在手榴弹等待"
+"足够长并且需要爆炸时."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:132
 msgid ""
@@ -262,15 +263,15 @@ msgid ""
 "``explosion_particles`` to emit. Then we make ``grenade_mesh`` invisible, "
 "and disable ``rigid_shape``, effectively hiding the grenade."
 msgstr ""
-"如果手榴弹已经等待足够长的时间爆炸,我们首先告诉\"爆炸_粒子\"发射. 然后我们使 "
-"``grenade_mesh`` 不可见,并禁用 ``rigid_shape`` ,有效地隐藏了手榴弹."
+"如果手榴弹已经等待足够长的时间爆炸, 我们首先告诉 \"爆炸_粒子\" 发射. 然后我们"
+"使 ``grenade_mesh`` 不可见, 并禁用 ``rigid_shape`` , 有效地隐藏了手榴弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:135
 msgid ""
 "We then set the :ref:`RigidBody <class_RigidBody>`'s mode to ``MODE_STATIC`` "
 "so the grenade does not move."
 msgstr ""
-"然后我们将 :ref:`RigidBody <class_RigidBody>` 的模式设置为 ``MODE_STATIC`` ,"
+"然后我们将 :ref:`RigidBody <class_RigidBody>` 的模式设置为 ``MODE_STATIC`` , "
 "这样手榴弹就不会移动了."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:137
@@ -281,9 +282,9 @@ msgid ""
 "This makes it where the bodies exploded by the grenade will explode outwards "
 "from the grenade's position."
 msgstr ""
-"然后我们得到 ``blast_area`` 中的所有尸体,检查它们是否有 ``bullet_hit`` 方法或"
-"函数,如果有,我们调用它,并传入 ``GRENADE_DAMAGE`` 和从尸体查看手榴弹的变换.这"
-"样就使得被手榴弹爆炸的尸体会从手榴弹的位置向外爆炸."
+"然后我们得到 ``blast_area`` 中的所有尸体, 检查它们是否有 ``bullet_hit`` 方法"
+"或函数, 如果有, 我们调用它, 并传入 ``GRENADE_DAMAGE`` 和从尸体查看手榴弹的变"
+"换. 这样就使得被手榴弹爆炸的尸体会从手榴弹的位置向外爆炸."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:140
 msgid ""
@@ -291,8 +292,8 @@ msgid ""
 "``EXPLOSION_WAIT_TIME``. If it is, we add ``delta`` to "
 "``explosion_wait_timer``."
 msgstr ""
-"然后我们检查 ``explosion_wait_timer`` 是否小于 ``EXPLOSION_WAIT_TIME`` .如果"
-"小于,就在 ``explosion_wait_timer`` 上加上 ``delta`` ."
+"然后我们检查 ``explosion_wait_timer`` 是否小于 ``EXPLOSION_WAIT_TIME`` . 如果"
+"小于, 就在 ``explosion_wait_timer`` 上加上 ``delta`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:142
 msgid ""
@@ -303,11 +304,11 @@ msgid ""
 "`Particles <class_Particles>` play and we can free/destroy the grenade, as "
 "we no longer need it."
 msgstr ""
-"接下来,我们检查 ``explosion_wait_timer`` 是否大于或等于 "
-"``EXPLOSION_WAIT_TIME`` .因为我们添加了 ``delta`` ,所以只调用一次.如果 "
-"``explosion_wait_timer`` 大于或等于 ``EXPLOSION_WAIT_TIME`` ,说明手榴弹已经等"
-"待了足够长的时间,让 :ref:`Particles <class_Particles>` 播放,可以释放或销毁手"
-"榴弹,因为不再需要它了."
+"接下来, 我们检查 ``explosion_wait_timer`` 是否大于或等于 "
+"``EXPLOSION_WAIT_TIME`` . 因为我们添加了 ``delta`` , 所以只调用一次. 如果 "
+"``explosion_wait_timer`` 大于或等于 ``EXPLOSION_WAIT_TIME`` , 说明手榴弹已经"
+"等待了足够长的时间, 让 :ref:`Particles <class_Particles>` 播放, 可以释放或销"
+"毁手榴弹, 因为不再需要它了."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:148
 msgid ""
@@ -322,9 +323,9 @@ msgid ""
 "``Sticky_Area``. We will be using ``Stick_Area`` to detect when the sticky "
 "grenade has collided with the environment and needs to stick to something."
 msgstr ""
-"``Sticky_Grenade.tscn``几乎与``Grenade.tscn``相同,只有一个小的补充. 我们现在"
-"有第二个 :ref:`Area <class_Area>`,称为 ``Sticky_Area`` . 我们将使用"
-"\"Stick_Area\"来检测粘性手榴弹何时与环境相撞并需要粘在某物上."
+"``Sticky_Grenade.tscn`` 几乎与 ``Grenade.tscn`` 相同, 只有一个小的补充. 我们"
+"现在有第二个 :ref:`Area <class_Area>`, 称为 ``Sticky_Area`` . 我们将使用 "
+"\"Stick_Area\" 来检测粘性手榴弹何时与环境相撞并需要粘在某物上."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:154
 msgid ""
@@ -339,19 +340,19 @@ msgid ""
 "The code above is almost identical to the code for ``Grenade.gd``, so let's "
 "just go over what's changed."
 msgstr ""
-"上面的代码几乎与 ``Grenade.gd`` 的代码完全相同,所以让我们回顾一下已经改变的代"
-"码."
+"上面的代码几乎与 ``Grenade.gd`` 的代码完全相同, 所以让我们回顾一下已经改变的"
+"代码."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:246
 msgid "Firstly, we have a few more class variables:"
-msgstr "首先,我们还有几个类变量:"
+msgstr "首先, 我们还有几个类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:248
 msgid ""
 "``attached``: A variable for tracking whether or not the sticky grenade has "
 "attached to a :ref:`PhysicsBody <class_PhysicsBody>`."
 msgstr ""
-"``附加``:一个变量,用于跟踪粘性手榴弹是否附加到 :ref:`PhysicsBody "
+"``附加``: 一个变量, 用于跟踪粘性手榴弹是否附加到 :ref:`PhysicsBody "
 "<class_PhysicsBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:249
@@ -359,13 +360,14 @@ msgid ""
 "``attach_point``: A variable to hold a :ref:`Spatial <class_Spatial>` that "
 "will be at the position where the sticky grenade collided."
 msgstr ""
-"``attach_point``: 一个变量,用于保存 :ref:`Spatial <class_Spatial>` ,将位于粘"
-"性手榴弹碰撞的位置."
+"``attach_point``: 一个变量, 用于保存 :ref:`Spatial <class_Spatial>` , 将位于"
+"粘性手榴弹碰撞的位置."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:250
 msgid ""
 "``player_body``: The player's :ref:`KinematicBody <class_KinematicBody>`."
-msgstr "``player_body``:游戏角色的 :ref:`KinematicBody <class_KinematicBody>`."
+msgstr ""
+"``player_body``: 游戏角色的 :ref:`KinematicBody <class_KinematicBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:252
 msgid ""
@@ -374,9 +376,9 @@ msgid ""
 "player's :ref:`KinematicBody <class_KinematicBody>` so the sticky grenade "
 "does not stick to the player when the player throws it."
 msgstr ""
-"它们添加,是为了让粘性手雷能够粘在任何可能击中的 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 上.我们现在还需要玩家的 :ref:`KinematicBody "
-"<class_KinematicBody>` ,这样当玩家投掷手雷时,粘性手雷就不会粘在玩家身上."
+"它们添加, 是为了让粘性手雷能够粘在任何可能击中的 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 上. 我们现在还需要玩家的 :ref:`KinematicBody "
+"<class_KinematicBody>` , 这样当玩家投掷手雷时, 粘性手雷就不会粘在玩家身上."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:257
 msgid ""
@@ -384,8 +386,8 @@ msgid ""
 "a line of code so when any body enters ``Stick_Area``, the "
 "``collided_with_body`` function is called."
 msgstr ""
-"现在让我们来看看 ``_ready`` 中的小变化. 在 ``_ready`` 中我们添加了一行代码,因"
-"此当任何物体进入 ``Stick_Area`` 时,会调用 ``collided_with_body`` 函数."
+"现在让我们来看看 ``_ready`` 中的小变化. 在 ``_ready`` 中我们添加了一行代码, "
+"因此当任何物体进入 ``Stick_Area`` 时, 会调用 ``collided_with_body`` 函数."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:262
 msgid "Next let's take a look at ``collided_with_body``."
@@ -400,10 +402,10 @@ msgid ""
 "collided with is not itself. If we have collided with ourself, we ignore it "
 "by returning."
 msgstr ""
-"首先,我们要确保粘性手榴弹不与自己发生碰撞.因为粘性的 :ref:`Area "
+"首先, 我们要确保粘性手榴弹不与自己发生碰撞. 因为粘性的 :ref:`Area "
 "<class_Area>` 不知道自己是附着在手榴弹的 :ref:`RigidBody <class_RigidBody>` "
-"上的,所以我们需要通过检查是否与自己碰撞的主体不是自己,来确保它不会粘到自己身"
-"上.如果我们与自己相撞了,就通过返回来忽略它."
+"上的, 所以我们需要通过检查是否与自己碰撞的主体不是自己, 来确保它不会粘到自己"
+"身上. 如果我们与自己相撞了, 就通过返回来忽略它."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:269
 msgid ""
@@ -412,23 +414,23 @@ msgid ""
 "it. If the body the sticky grenade has collided with is indeed "
 "``player_body``, we ignore it by returning."
 msgstr ""
-"然后我们检查一下是否有东西分配给 ``player_body`` ,如果粘手榴弹碰撞的物体是投"
-"掷它的游戏角色. 如果粘手榴弹碰到的物体确实是 ``player_body``,我们会通过返回来"
-"忽略它."
+"然后我们检查一下是否有东西分配给 ``player_body`` , 如果粘手榴弹碰撞的物体是投"
+"掷它的游戏角色. 如果粘手榴弹碰到的物体确实是 ``player_body``, 我们会通过返回"
+"来忽略它."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:272
 msgid ""
 "Next, we check if the sticky grenade has attached to something already or "
 "not."
-msgstr "接下来,我们检查粘性手雷是否已经附着在某物上."
+msgstr "接下来, 我们检查粘性手雷是否已经附着在某物上."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:274
 msgid ""
 "If the sticky grenade is not attached, we then set ``attached`` to ``true`` "
 "so we know the sticky grenade has attached to something."
 msgstr ""
-"如果手榴弹被接触了,我们将 `attached` 设置为 `true` ,这样我们就知道粘性手榴弹"
-"附着在某物上."
+"如果手榴弹被接触了, 我们将 `attached` 设置为 `true` , 这样我们就知道粘性手榴"
+"弹附着在某物上."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:276
 msgid ""
@@ -436,9 +438,9 @@ msgid ""
 "of the body the sticky grenade collided with. We then set the :ref:`Spatial "
 "<class_Spatial>`'s position to the sticky grenade's current global position."
 msgstr ""
-"然后我们创建一个新的 :ref:`Spatial <class_Spatial>` 节点,并使其成为粘性手榴弹"
-"与之碰撞的物体的子节点. 然后我们将 :ref:`Spatial <class_Spatial>` 的位置设置"
-"为粘性手榴弹当前的全球位置."
+"然后我们创建一个新的 :ref:`Spatial <class_Spatial>` 节点, 并使其成为粘性手榴"
+"弹与之碰撞的物体的子节点. 然后我们将 :ref:`Spatial <class_Spatial>` 的位置设"
+"置为粘性手榴弹当前的全球位置."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:279
 msgid ""
@@ -449,8 +451,8 @@ msgid ""
 "body it collided with."
 msgstr ""
 "因为我们已经添加了 :ref:`Spatial <class_Spatial>` 作为粘性手榴弹碰撞的物体的"
-"一个子节点,它将跟随所述物体. 然后我们可以使用它 :ref:`Spatial "
-"<class_Spatial>` 来设置粘性手榴弹的位置,因此它总是在相对于它碰撞的物体的相同"
+"一个子节点, 它将跟随所述物体. 然后我们可以使用它 :ref:`Spatial "
+"<class_Spatial>` 来设置粘性手榴弹的位置, 因此它总是在相对于它碰撞的物体的相同"
 "位置."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:282
@@ -459,12 +461,12 @@ msgid ""
 "moving whatever body it has collided with. Finally, we set our mode to "
 "``MODE_STATIC`` so the grenade does not move."
 msgstr ""
-"然后我们禁用 ``rigid_shape`` ,这样粘手榴弹就不会一直移动它碰到的任何物体. 最"
-"后,我们将模式设置为\"MODE_STATIC\",因此手榴弹不会移动."
+"然后我们禁用 ``rigid_shape`` , 这样粘手榴弹就不会一直移动它碰到的任何物体. 最"
+"后, 我们将模式设置为 \"MODE_STATIC\", 因此手榴弹不会移动."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:287
 msgid "Finally, lets go over the few changes in ``_process``."
-msgstr "最后,让我们回顾一下 ``_process`` 中的一些变化."
+msgstr "最后, 让我们回顾一下 ``_process`` 中的一些变化."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:289
 msgid ""
@@ -481,8 +483,8 @@ msgid ""
 "<class_Spatial>` assigned to ``attach_point`` (using its global :ref:"
 "`Transform <class_Transform>`'s origin)."
 msgstr ""
-"如果连接了粘性手榴弹,我们确保附加的点不等于 ``null`` . 如果附加的点不等于 "
-"``null`` ,我们将粘性手榴弹的全局位置(使用其global :ref:`Transform "
+"如果连接了粘性手榴弹, 我们确保附加的点不等于 ``null`` . 如果附加的点不等于 "
+"``null`` , 我们将粘性手榴弹的全局位置(使用其global :ref:`Transform "
 "<class_Transform>` 的原点)设置为 :ref:`Spatial <的全局位置 class_Spatial>` 赋"
 "值给 ``attach_point`` (使用它的global :ref:`Transform <class_Transform>` 的原"
 "点)."
@@ -493,8 +495,8 @@ msgid ""
 "check to see if the sticky grenade has an attached point. If it does, we "
 "also call ``queue_free`` on the attach point, so it's also freed/destroyed."
 msgstr ""
-"在我们释放/销毁粘性手榴弹之前,现在唯一的另一个变化是检查粘性手榴弹是否有附着"
-"点. 如果是这样,我们也在连接点上调用 ``queue_free`` ,因此它也被释放/销毁."
+"在我们释放/销毁粘性手榴弹之前, 现在唯一的另一个变化是检查粘性手榴弹是否有附着"
+"点. 如果是这样, 我们也在连接点上调用 ``queue_free`` , 因此它也被释放/销毁."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:299
 msgid "Adding grenades to the player"
@@ -503,7 +505,7 @@ msgstr "向游戏角色添加手榴弹"
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:301
 msgid ""
 "Now we need to add some code to ``Player.gd`` so we can use the grenades."
-msgstr "现在我们需要在 ``Player.gd`` 中添加一些代码,以便我们可以使用手榴弹."
+msgstr "现在我们需要在 ``Player.gd`` 中添加一些代码, 以便我们可以使用手榴弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:303
 msgid ""
@@ -511,9 +513,9 @@ msgid ""
 "``Rotation_Helper``. Notice how in ``Rotation_Helper`` we have a node called "
 "``Grenade_Toss_Pos``. This is where we will be spawning the grenades."
 msgstr ""
-"首先,打开 ``Player.tscn`` 并展开节点树,直到您找到 ``Rotation_Helper`` . 注意"
-"在 ``Rotation_Helper`` 中我们有一个名为 ``Grenade_Toss_Pos`` 的节点. 我们将在"
-"这里生成手榴弹."
+"首先, 打开 ``Player.tscn`` 并展开节点树, 直到您找到 ``Rotation_Helper`` . 注"
+"意在 ``Rotation_Helper`` 中我们有一个名为 ``Grenade_Toss_Pos`` 的节点. 我们将"
+"在这里生成手榴弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:306
 msgid ""
@@ -522,15 +524,15 @@ msgid ""
 "``Grenade_Toss_Pos``, you can change the angle at which the grenades are "
 "tossed."
 msgstr ""
-"还要注意它是如何在\"X\"轴上轻微旋转的,它不是直指,而是略微向上. 通过改变"
-"\"Grenade_Toss_Pos\"的旋转,您可以改变投掷手榴弹的角度."
+"还要注意它是如何在 \"X\" 轴上轻微旋转的, 它不是直指, 而是略微向上. 通过改变 "
+"\"Grenade_Toss_Pos\" 的旋转, 您可以改变投掷手榴弹的角度."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:309
 msgid ""
 "Okay, now let's start making the grenades work with the player. Add the "
 "following class variables to ``Player.gd``:"
 msgstr ""
-"好的,现在让我们开始让手榴弹与游戏角色一起工作. 将以下类变量添加到``Player."
+"好的, 现在让我们开始让手榴弹与游戏角色一起工作. 将以下类变量添加到 ``Player."
 "gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:319
@@ -538,27 +540,27 @@ msgid ""
 "``grenade_amounts``: The amount of grenades the player is currently carrying "
 "(for each type of grenade)."
 msgstr ""
-"``grenade_amounts``:游戏角色当前携带的手榴弹数量(针对每种类型的手榴弹)."
+"``grenade_amounts``: 游戏角色当前携带的手榴弹数量(针对每种类型的手榴弹)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:320
 msgid ""
 "``current_grenade``: The name of the grenade the player is currently using."
-msgstr "``current_grenade``:游戏角色目前正在使用的手榴弹的名称."
+msgstr "``current_grenade``: 游戏角色目前正在使用的手榴弹的名称."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:321
 msgid "``grenade_scene``: The grenade scene we worked on earlier."
-msgstr "``grenade_scene``:我们之前工作的手榴弹场景."
+msgstr "``grenade_scene``: 我们之前工作的手榴弹场景."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:322
 msgid ""
 "``sticky_grenade_scene``: The sticky grenade scene we worked on earlier."
-msgstr "``sticky_grenade_scene``:我们之前工作过的粘手榴弹场景."
+msgstr "``sticky_grenade_scene``: 我们之前工作过的粘手榴弹场景."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:323
 msgid ""
 "``GRENADE_THROW_FORCE``: The force at which the player will throw the "
 "grenades."
-msgstr "``GRENADE_THROW_FORCE``:游戏角色投掷手榴弹的力量."
+msgstr "``GRENADE_THROW_FORCE``: 游戏角色投掷手榴弹的力量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:325
 msgid "Most of these variables are similar to how we have our weapons set up."
@@ -571,8 +573,8 @@ msgid ""
 "to make a more complex FPS with more grenades, you'd likely want to make a "
 "system for grenades similar to how we have the weapons set up."
 msgstr ""
-"虽然可以制作更模块化的手榴弹系统,但我发现仅仅两枚手榴弹的额外复杂性是不值得"
-"的. 如果您打算制造一个更复杂的FPS和更多的手榴弹,您可能想要建立一个类似于我们"
+"虽然可以制作更模块化的手榴弹系统, 但我发现仅仅两枚手榴弹的额外复杂性是不值得"
+"的. 如果您打算制造一个更复杂的FPS和更多的手榴弹, 您可能想要建立一个类似于我们"
 "如何设置武器的手榴弹系统."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:332
@@ -580,7 +582,7 @@ msgid ""
 "Now we need to add some code in ``_process_input`` Add the following to "
 "``_process_input``:"
 msgstr ""
-"现在我们需要在 ``_process_input`` 中添加一些代码.将以下内容添加到"
+"现在我们需要在 ``_process_input`` 中添加一些代码. 将以下内容添加到 "
 "``_process_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:362
@@ -594,8 +596,9 @@ msgid ""
 "currently using. Based on the name of the grenade the player is currently "
 "using, we change ``current_grenade`` to the opposite grenade name."
 msgstr ""
-"首先,我们检查 ``change_grenade`` 动作是否刚刚被按下.如果按下了,就检查玩家当前"
-"使用的手榴弹.根据手榴弹名称,将 ``current_grenade`` 改为相反的手榴弹名称."
+"首先, 我们检查 ``change_grenade`` 动作是否刚刚被按下. 如果按下了, 就检查玩家"
+"当前使用的手榴弹. 根据手榴弹名称, 将 ``current_grenade`` 改为相反的手榴弹名"
+"称."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:367
 msgid ""
@@ -603,8 +606,8 @@ msgid ""
 "If it has, we then check to see if the player has more than ``0`` grenades "
 "for the current grenade type selected."
 msgstr ""
-"接下来我们检查是否刚刚按下了 ``fire_grenade`` 动作. 如果有,我们检查游戏角色是"
-"否有超过\"0\"的手榴弹,用于当前选择的手榴弹类型."
+"接下来我们检查是否刚刚按下了 ``fire_grenade`` 动作. 如果有, 我们检查游戏角色"
+"是否有超过 \"0\" 的手榴弹, 用于当前选择的手榴弹类型."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:370
 msgid ""
@@ -613,9 +616,9 @@ msgid ""
 "player is currently using, we instance the proper grenade scene and assign "
 "it to ``grenade_clone``."
 msgstr ""
-"如果游戏角色拥有超过\"0\"的手榴弹,我们就会从当前手榴弹的手榴弹数量中移除一"
-"枚. 然后,根据游戏角色当前正在使用的手榴弹,我们实例化正确的手榴弹场景并将其分"
-"配给\"grenade_clone\"."
+"如果游戏角色拥有超过 \"0\" 的手榴弹, 我们就会从当前手榴弹的手榴弹数量中移除一"
+"枚. 然后, 根据游戏角色当前正在使用的手榴弹, 我们实例化正确的手榴弹场景并将其"
+"分配给 \"grenade_clone\"."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:373
 msgid ""
@@ -625,9 +628,9 @@ msgid ""
 "grenade so that it is launched forward, relative to the ``Z`` directional "
 "vector of ``grenade_clone``'s."
 msgstr ""
-"接下来,我们将 ``grenade_clone`` 添加为根节点的子节点,并将其global :ref:"
+"接下来, 我们将 ``grenade_clone`` 添加为根节点的子节点, 并将其global :ref:"
 "`Transform <class_Transform>` 设置为 ``Grenade_Toss_Pos`` 的global :ref:"
-"`Transform <class_Transform>`. 最后,我们对手榴弹施加一个冲动,使它相对于 "
+"`Transform <class_Transform>`. 最后, 我们对手榴弹施加一个冲动, 使它相对于 "
 "``grenade_clone`` 的 ``Z`` 方向向量向前发射."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:379
@@ -635,23 +638,23 @@ msgid ""
 "Now the player can use both types of grenades, but there are still a few "
 "things we should probably add before we move on to adding the other things."
 msgstr ""
-"现在游戏角色可以使用两种类型的手榴弹,但在我们继续添加其他东西之前,我们应该添"
-"加一些东西."
+"现在游戏角色可以使用两种类型的手榴弹, 但在我们继续添加其他东西之前, 我们应该"
+"添加一些东西."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:381
 msgid ""
 "We still need a way to show the player how many grenades are left, and we "
 "should probably add a way to get more grenades when the player picks up ammo."
 msgstr ""
-"我们仍然需要一种方法向游戏角色展示剩下多少手榴弹,我们应该在游戏角色拿起弹药时"
-"增加一种获得更多手榴弹的方法."
+"我们仍然需要一种方法向游戏角色展示剩下多少手榴弹, 我们应该在游戏角色拿起弹药"
+"时增加一种获得更多手榴弹的方法."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:383
 msgid ""
 "Firstly, let's change some of the code in ``Player.gd`` to show how many "
 "grenades are left. Change ``process_UI`` to the following:"
 msgstr ""
-"首先,修改 ``Player.gd`` 中的一些代码,以显示还剩多少颗手榴弹.将 "
+"首先, 修改 ``Player.gd`` 中的一些代码, 以显示还剩多少颗手榴弹. 将 "
 "``process_UI`` 改为如下:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:399
@@ -663,16 +666,16 @@ msgid ""
 "While we're still in ``Player.gd``, let's add a function to add grenades to "
 "the player. Add the following function to ``Player.gd``:"
 msgstr ""
-"当我们还在 ``Player.gd`` 时,让我们添加一个向游戏角色添加手榴弹的功能. 将以下"
-"函数添加到``Player.gd``:"
+"当我们还在 ``Player.gd`` 时, 让我们添加一个向游戏角色添加手榴弹的功能. 将以下"
+"函数添加到 ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:409
 msgid ""
 "Now we can add a grenade using ``add_grenade``, and it will automatically be "
 "clamped to a maximum of ``4`` grenades."
 msgstr ""
-"现在我们可以使用 ``add_grenade`` 添加一个手榴弹,它会自动被夹到最大的 ``4`` 手"
-"榴弹."
+"现在我们可以使用 ``add_grenade`` 添加一个手榴弹, 它会自动被夹到最大的 ``4`` "
+"手榴弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:411
 msgid ""
@@ -681,8 +684,8 @@ msgid ""
 "from ``clamp(grenade_amounts[current_grenade], 0, 4)`` to "
 "``clamp(grenade_amounts[current_grenade], 0, MAX_GRENADES)``"
 msgstr ""
-"如果需要,可以将\"4\"改为常量. 您需要创建一个新的全局常量,比如 "
-"``MAX_GRENADES`` ,然后将钳位从``clamp(grenade_amounts "
+"如果需要, 可以将 \"4\" 改为常量. 您需要创建一个新的全局常量, 比如 "
+"``MAX_GRENADES`` , 然后将钳位从``clamp(grenade_amounts "
 "[current_grenade],0,4)``更改为``clamp(grenade_amounts [current_grenade], 0,"
 "MAX_GRENADES)``"
 
@@ -690,13 +693,14 @@ msgstr ""
 msgid ""
 "If you do not want to limit how many grenades the player can carry, remove "
 "the line that clamps the grenades altogether!"
-msgstr "如果您不想限制游戏角色可以携带多少手榴弹,那就去掉完全夹住手榴弹的线！"
+msgstr "如果您不想限制游戏角色可以携带多少手榴弹, 那就去掉完全夹住手榴弹的线！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:416
 msgid ""
 "Now we have a function to add grenades, let's open up ``AmmoPickup.gd`` and "
 "use it!"
-msgstr "现在我们有一个添加手榴弹的功能,让我们打开 ``AmmoPickup.gd`` 并使用它！"
+msgstr ""
+"现在我们有一个添加手榴弹的功能, 让我们打开 ``AmmoPickup.gd`` 并使用它！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:418
 msgid ""
@@ -711,7 +715,7 @@ msgid ""
 "Now we are also checking to see if the body has the ``add_grenade`` "
 "function. If it does, we call it like we call ``add_ammo``."
 msgstr ""
-"现在我们还要检查主体是否有 ``add_grenade`` 函数. 如果是这样,我们称之为"
+"现在我们还要检查主体是否有 ``add_grenade`` 函数. 如果是这样, 我们称之为 "
 "\"add_ammo\"."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:435
@@ -721,7 +725,7 @@ msgid ""
 "``AmmoPickup.gd`` with the other class variables:"
 msgstr ""
 "您可能已经注意到我们正在使用一个尚未定义的新常量, ``GRENADE_AMOUNTS`` . 我们"
-"加上吧！ 使用其他类变量将以下类变量添加到``AmmoPickup.gd``:"
+"加上吧！ 使用其他类变量将以下类变量添加到 ``AmmoPickup.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:442
 msgid "``GRENADE_AMOUNTS``: The amount of grenades each pickup contains."
@@ -732,8 +736,8 @@ msgid ""
 "Notice how the second element in ``GRENADE_AMOUNTS`` is ``0``. This is so "
 "the small ammo pickup does not give the player any additional grenades."
 msgstr ""
-"注意 ``GRENADE_AMOUNTS`` 中的第二个元素是 ``0`` .这是为了让小弹药拾取器不给玩"
-"家任何额外的手榴弹."
+"注意 ``GRENADE_AMOUNTS`` 中的第二个元素是 ``0`` . 这是为了让小弹药拾取器不给"
+"玩家任何额外的手榴弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:449
 msgid "Now you should be able to throw grenades! Go give it a try!"
@@ -748,8 +752,8 @@ msgid ""
 "Next, let's give the player the ability to pick up and throw :ref:`RigidBody "
 "<class_RigidBody>` nodes."
 msgstr ""
-"接下来,让我们给玩家提供拾取和投掷 :ref:`RigidBody <class_RigidBody>` 节点的能"
-"力."
+"接下来, 让我们给玩家提供拾取和投掷 :ref:`RigidBody <class_RigidBody>` 节点的"
+"能力."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:457
 msgid "Open up ``Player.gd`` and add the following class variables:"
@@ -760,8 +764,8 @@ msgid ""
 "``grabbed_object``: A variable to hold the grabbed :ref:`RigidBody "
 "<class_RigidBody>` node."
 msgstr ""
-"``grabbed_object``:一个用于保存抓取的变量 :ref:`RigidBody <class_RigidBody>` "
-"节点."
+"``grabbed_object``: 一个用于保存抓取的变量 :ref:`RigidBody "
+"<class_RigidBody>` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:467
 msgid ""
@@ -780,13 +784,13 @@ msgid ""
 "``OBJECT_GRAB_RAY_DISTANCE``: The distance the :ref:`Raycast "
 "<class_Raycast>` goes. This is the player's grab distance."
 msgstr ""
-"``OBJECT_GRAB_RAY_DISTANCE``:距离 :ref:`Raycast <class_Raycast>` 去了. 这是游"
-"戏角色的抓地距离."
+"``OBJECT_GRAB_RAY_DISTANCE``: 距离 :ref:`Raycast <class_Raycast>` 去了. 这是"
+"游戏角色的抓地距离."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:471
 msgid ""
 "With that done, all we need to do is add some code to ``process_input``:"
-msgstr "完成后,我们需要做的就是在 ``process_input`` 中添加一些代码:"
+msgstr "完成后, 我们需要做的就是在 ``process_input`` 中添加一些代码:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:509
 msgid "Let's go over what's happening."
@@ -800,9 +804,9 @@ msgid ""
 "not using any weapons. This is a design choice, but I feel it gives "
 "``UNARMED`` a use."
 msgstr ""
-"首先,我们检查按下的是否是 ``fire`` 动作,以及玩家是否使用了 ``UNARMED`` "
-"'weapon' .这是因为我们只希望玩家在没有使用任何武器的时候,能够捡起和投掷物体."
-"这是一种设计上的选择,但我觉得让 ``UNARMED`` 有了用途."
+"首先, 我们检查按下的是否是 ``fire`` 动作, 以及玩家是否使用了 ``UNARMED`` "
+"'weapon' . 这是因为我们只希望玩家在没有使用任何武器的时候, 能够捡起和投掷物"
+"体. 这是一种设计上的选择, 但我觉得让 ``UNARMED`` 有了用途."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:515
 msgid "Next we check to see whether or not ``grabbed_object`` is ``null``."
@@ -813,7 +817,7 @@ msgid ""
 "If ``grabbed_object`` is ``null``, we want to see if we can pick up a :ref:"
 "`RigidBody <class_RigidBody>`."
 msgstr ""
-"如果 ``grabbed_object`` 是 ``null`` ,我们想看看我们是否可以选择 :ref:"
+"如果 ``grabbed_object`` 是 ``null`` , 我们想看看我们是否可以选择 :ref:"
 "`RigidBody <class_RigidBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:521
@@ -823,7 +827,7 @@ msgid ""
 "having to use a :ref:`Raycast <class_Raycast>` node."
 msgstr ""
 "我们首先从当前获得直接空间状态 :ref:`World <class_World>`. 这样我们就可以完全"
-"从代码中投射光线,而不必使用 :ref:`Raycast <class_Raycast>` 节点."
+"从代码中投射光线, 而不必使用 :ref:`Raycast <class_Raycast>` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:524
 msgid ""
@@ -843,8 +847,8 @@ msgid ""
 msgstr ""
 "然后我们通过将当前 :ref:`Viewport <class_Viewport>` 大小分成两半来得到屏幕的"
 "中心. 然后我们使用摄像机的 ``project_ray_origin`` 和 ``project_ray_normal`` "
-"获取射线的原点和终点. 如果您想了解有关这些函数如何工作的更多信息,请参阅 :ref:"
-"`Ray-casting <doc_ray-casting>`."
+"获取射线的原点和终点. 如果您想了解有关这些函数如何工作的更多信息, 请参阅 :"
+"ref:`Ray-casting <doc_ray-casting>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:529
 msgid ""
@@ -853,9 +857,9 @@ msgid ""
 "the player cannot carry themselves or the knife's collision :ref:`Area "
 "<class_Area>`."
 msgstr ""
-"接下来,我们将光线发送到空间状态,看看它是否得到了结果. 我们添加了游戏角色和刀"
-"子 :ref:`Area <class_Area>` 作为两个例外,因此游戏角色无法携带自己或刀的碰撞 :"
-"ref:`Area <class_Area>`."
+"接下来, 我们将光线发送到空间状态, 看看它是否得到了结果. 我们添加了游戏角色和"
+"刀子 :ref:`Area <class_Area>` 作为两个例外, 因此游戏角色无法携带自己或刀的碰"
+"撞 :ref:`Area <class_Area>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:532
 msgid ""
@@ -865,9 +869,9 @@ msgid ""
 "if the collider the ray collided with is a :ref:`RigidBody "
 "<class_RigidBody>`."
 msgstr ""
-"然后我们检查是否从射线上得到了一个结果.如果没有对象与射线发生碰撞,将返回一个"
-"空的Dictionary.如果Dictionary不是空的,即至少有一个对象发生了碰撞,,我们再看看"
-"射线碰撞的碰撞器是否是一个 :ref:`RigidBody <class_RigidBody>` ."
+"然后我们检查是否从射线上得到了一个结果. 如果没有对象与射线发生碰撞, 将返回一"
+"个空的Dictionary. 如果Dictionary不是空的, 即至少有一个对象发生了碰撞,, 我们再"
+"看看射线碰撞的碰撞器是否是一个 :ref:`RigidBody <class_RigidBody>` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:534
 msgid ""
@@ -876,9 +880,10 @@ msgid ""
 "mode on the :ref:`RigidBody <class_RigidBody>` we collided with to "
 "``MODE_STATIC`` so it doesn't move in our hands."
 msgstr ""
-"如果光线与 :ref:`RigidBody <class_RigidBody>` 相撞,我们将 ``grabbed_object`` "
-"设置为光线与光线相撞的对撞机. 然后我们将模式设置为 :ref:`RigidBody "
-"<class_RigidBody>` 我们与 ``MODE_STATIC`` 相撞,所以它不会在我们手中移动."
+"如果光线与 :ref:`RigidBody <class_RigidBody>` 相撞, 我们将 "
+"``grabbed_object`` 设置为光线与光线相撞的对撞机. 然后我们将模式设置为 :ref:"
+"`RigidBody <class_RigidBody>` 我们与 ``MODE_STATIC`` 相撞, 所以它不会在我们手"
+"中移动."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:537
 msgid ""
@@ -887,8 +892,8 @@ msgid ""
 "`RigidBody <class_RigidBody>` have no collision layer or mask, which means "
 "it will not be able to collide with anything as long as we are holding it."
 msgstr ""
-"最后,我们将抓取的 :ref:`RigidBody <class_RigidBody>` 的碰撞层和碰撞掩码设置"
-"为 ``0`` . 这将使得抓住 :ref:`RigidBody <class_RigidBody>` 没有碰撞层或掩码,"
+"最后, 我们将抓取的 :ref:`RigidBody <class_RigidBody>` 的碰撞层和碰撞掩码设置"
+"为 ``0`` . 这将使得抓住 :ref:`RigidBody <class_RigidBody>` 没有碰撞层或掩码, "
 "这意味着只要我们拿着它就不会碰到任何东西."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:542
@@ -897,7 +902,7 @@ msgid ""
 "<doc_physics_introduction_collision_layer_code_example>` for more "
 "information on Godot collision masks."
 msgstr ""
-"关于Godot碰撞掩码的更多信息,请参见 :ref:`物理介绍"
+"关于Godot碰撞掩码的更多信息, 请参见 :ref:`物理介绍 "
 "<doc_physics_introduction_collision_layer_code_example>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
@@ -905,7 +910,7 @@ msgid ""
 "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:"
 "`RigidBody <class_RigidBody>` the player is holding."
 msgstr ""
-"如果 ``grabbed_object`` 不是 ``null`` ,那么我们需要抛出游戏角色持有的 :ref:"
+"如果 ``grabbed_object`` 不是 ``null`` , 那么我们需要抛出游戏角色持有的 :ref:"
 "`RigidBody <class_RigidBody>` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
@@ -922,8 +927,8 @@ msgid ""
 "using ``MODE_RIGID``. While that is the case for this tutorial series, that "
 "may not be the case in other projects."
 msgstr ""
-"这是一个相当大的假设,即所有刚体都将使用\"MODE_RIGID\". 虽然本教程系列就是这种"
-"情况,但在其他项目中可能并非如此."
+"这是一个相当大的假设, 即所有刚体都将使用 \"MODE_RIGID\". 虽然本教程系列就是这"
+"种情况, 但在其他项目中可能并非如此."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
 msgid ""
@@ -932,8 +937,9 @@ msgid ""
 "class variable so you can change it back to the mode it was in before you "
 "picked it up."
 msgstr ""
-"如果你有不同模式的刚体,可能需要把你拾取的 :ref:`RigidBody <class_RigidBody>` "
-"的模式存储到一个类变量中,这样就可以把它改回拾取它之前的模式."
+"如果你有不同模式的刚体, 可能需要把你拾取的 :ref:`RigidBody "
+"<class_RigidBody>` 的模式存储到一个类变量中, 这样就可以把它改回拾取它之前的模"
+"式."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:557
 msgid ""
@@ -950,7 +956,7 @@ msgid ""
 "and mask to ``1``, so it can collide with anything on layer ``1`` again."
 msgstr ""
 "然后我们将抓取的 :ref:`RigidBody <class_RigidBody>` 的碰撞层和掩码设置为 "
-"``1`` ,这样它就可以再次与层 ``1`` 上的任何东西碰撞."
+"``1`` , 这样它就可以再次与层 ``1`` 上的任何东西碰撞."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:561
 msgid ""
@@ -962,18 +968,18 @@ msgid ""
 "would have the original collision layer/mask to set for them when you are "
 "reversing the process."
 msgstr ""
-"这又是一个相当大的假设,即所有刚体都只在碰撞层\"1\"上,所有碰撞掩模都在层"
-"\"1\"上. 如果您在其他项目中使用此脚本,您可能需要在变量中存储 :ref:`RigidBody "
-"<class_RigidBody>` 的碰撞图层/掩码,然后将它们更改为\"0\",这样您就可以 在您反"
-"转过程时为其设置的原始碰撞图层/蒙版."
+"这又是一个相当大的假设, 即所有刚体都只在碰撞层 \"1\" 上, 所有碰撞掩模都在层 "
+"\"1\" 上. 如果您在其他项目中使用此脚本, 您可能需要在变量中存储 :ref:"
+"`RigidBody <class_RigidBody>` 的碰撞图层/掩码, 然后将它们更改为 \"0\", 这样您"
+"就可以 在您反转过程时为其设置的原始碰撞图层/蒙版."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:564
 msgid ""
 "Finally, we set ``grabbed_object`` to ``null`` since the player has "
 "successfully thrown the held object."
 msgstr ""
-"最后,我们将 ``grabbed_object`` 设置为 ``null`` ,因为游戏角色已经成功抛出了被"
-"保持的对象."
+"最后, 我们将 ``grabbed_object`` 设置为 ``null`` , 因为游戏角色已经成功抛出了"
+"被保持的对象."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
@@ -989,8 +995,8 @@ msgid ""
 "moving the grabbed object here because it's only two lines, and then all of "
 "the grabbing/throwing code is in one place"
 msgstr ""
-"虽然技术上没有输入相关,但是将代码移动到此处的代码很容易,因为它只有两行,然后所"
-"有的抓取/抛出代码都在一个地方"
+"虽然技术上没有输入相关, 但是将代码移动到此处的代码很容易, 因为它只有两行, 然"
+"后所有的抓取/抛出代码都在一个地方"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:573
 msgid ""
@@ -998,8 +1004,8 @@ msgid ""
 "camera's position plus ``OBJECT_GRAB_DISTANCE`` in the direction the camera "
 "is facing."
 msgstr ""
-"如果游戏角色持有一个物体,我们将其全局位置设置为相机的位置以及相机朝向的方向上"
-"的\"OBJECT_GRAB_DISTANCE\"."
+"如果游戏角色持有一个物体, 我们将其全局位置设置为相机的位置以及相机朝向的方向"
+"上的 \"OBJECT_GRAB_DISTANCE\"."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:577
 msgid ""
@@ -1007,9 +1013,9 @@ msgid ""
 "While the player is holding an object, we do not want the player to be able "
 "to change weapons or reload, so change ``_physics_process`` to the following:"
 msgstr ""
-"在我们测试之前,我们需要在 ``_physics_process`` 中改变一些东西. 当游戏角色持有"
-"一个物体时,我们不希望游戏角色能够更换武器或重装,所以将 ``_physics_process`` "
-"改为:"
+"在我们测试之前, 我们需要在 ``_physics_process`` 中改变一些东西. 当游戏角色持"
+"有一个物体时, 我们不希望游戏角色能够更换武器或重装, 所以将 "
+"``_physics_process`` 改为:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
 msgid "Now the player cannot change weapons or reload while holding an object."
@@ -1020,7 +1026,7 @@ msgid ""
 "Now you can grab and throw RigidBody nodes while you're in the ``UNARMED`` "
 "state! Go give it a try!"
 msgstr ""
-"现在,当您处于\"UNARMED\"状态时,您可以抓住并抛出RigidBody节点！ 去尝试吧！"
+"现在, 当您处于 \"UNARMED\" 状态时, 您可以抓住并抛出RigidBody节点！ 去尝试吧！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:599
 msgid "Adding a turret"
@@ -1028,19 +1034,19 @@ msgstr "添加一个炮塔"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
 msgid "Next, let's make a turret to shoot the player!"
-msgstr "接下来,让我们制作一个炮塔射击游戏角色！"
+msgstr "接下来, 让我们制作一个炮塔射击游戏角色！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:603
 msgid ""
 "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
-msgstr "打开 ``Turret.tscn`` . 如果尚未展开,请展开 ``Turret`` ."
+msgstr "打开 ``Turret.tscn`` . 如果尚未展开, 请展开 ``Turret`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
 msgid ""
 "Notice how the turret is broken up into several parts: ``Base``, ``Head``, "
 "``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>` node."
 msgstr ""
-"请注意炮塔是如何被分解成几个部分: ``Base`` 、 ``Head`` 、 ``Vision_Area`` 和 "
+"请注意炮塔是如何被分解成几个部分: ``Base`` , ``Head`` , ``Vision_Area`` 和 "
 "``Smoke`` :ref:`Particles <class_Particles>` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:607
@@ -1050,8 +1056,8 @@ msgid ""
 "ref:`StaticBody <class_StaticBody>` and a :ref:`Raycast <class_Raycast>` "
 "node."
 msgstr ""
-"打开 ``Base`` ,你会发现是一个 :ref:`StaticBody <class_StaticBody>` 和一个网"
-"格.打开 ``Head`` ,你会发现有几个网格,一个 :ref:`StaticBody "
+"打开 ``Base`` , 你会发现是一个 :ref:`StaticBody <class_StaticBody>` 和一个网"
+"格. 打开 ``Head`` , 你会发现有几个网格, 一个 :ref:`StaticBody "
 "<class_StaticBody>` 和一个 :ref:`Raycast <class_Raycast>` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
@@ -1061,9 +1067,9 @@ msgid ""
 "meshes called ``Flash`` and ``Flash_2``. These will be the muzzle flash that "
 "briefly shows when the turret fires."
 msgstr ""
-"\"头部\"的一个注意事项是,如果我们使用光线投射,光线投射将是炮塔射击的地方. 我"
-"们还有两个网格叫做 ``Flash`` 和 ``Flash_2`` . 这些将是枪口闪光,简要显示炮塔开"
-"火时."
+"\"头部\" 的一个注意事项是, 如果我们使用光线投射, 光线投射将是炮塔射击的地方. "
+"我们还有两个网格叫做 ``Flash`` 和 ``Flash_2`` . 这些将是枪口闪光, 简要显示炮"
+"塔开火时."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:613
 msgid ""
@@ -1071,16 +1077,16 @@ msgid ""
 "ability to see. When something enters ``Vision_Area``, we'll assume the "
 "turret can see it."
 msgstr ""
-"``Vision_Area``是 :ref:`Area <class_Area>` 我们将用作炮塔的能力. 当某些东西进"
-"入\"Vision_Area\"时,我们会认为炮塔可以看到它."
+"``Vision_Area`` 是 :ref:`Area <class_Area>` 我们将用作炮塔的能力. 当某些东西"
+"进入 \"Vision_Area\" 时, 我们会认为炮塔可以看到它."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:615
 msgid ""
 "``Smoke`` is a :ref:`Particles <class_Particles>` node that will play when "
 "the turret is destroyed and repairing."
 msgstr ""
-"``Smoke``是一个 :ref:`Particles <class_Particles>` 节点将在炮塔被摧毁和修复时"
-"播放."
+"``Smoke`` 是一个 :ref:`Particles <class_Particles>` 节点将在炮塔被摧毁和修复"
+"时播放."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:619
 msgid ""
@@ -1088,68 +1094,68 @@ msgid ""
 "code for the turret. Select ``Turret`` and create a new script called "
 "``Turret.gd``. Add the following to ``Turret.gd``:"
 msgstr ""
-"现在我们已经了解了如何设置场景,让我们开始编写炮塔的代码. 选择 ``Turret`` 并创"
-"建一个名为 ``Turret.gd`` 的新脚本. 将以下内容添加到``Turret.gd``:"
+"现在我们已经了解了如何设置场景, 让我们开始编写炮塔的代码. 选择 ``Turret`` 并"
+"创建一个名为 ``Turret.gd`` 的新脚本. 将以下内容添加到 ``Turret.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
 msgid ""
 "This is quite a bit of code, so let's break it down function by function. "
 "Let's first look at the class variables:"
-msgstr "这是相当多的代码,所以让我们按功能分解它. 我们先来看一下类变量:"
+msgstr "这是相当多的代码, 所以让我们按功能分解它. 我们先来看一下类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 msgid ""
 "``use_raycast``: An exported boolean so we can change whether the turret "
 "uses objects or raycasting for bullets."
 msgstr ""
-"``use_raycast``: 一个导出的布尔值,以便我们可以改变炮塔是使用对象还是使用射线"
+"``use_raycast``: 一个导出的布尔值, 以便我们可以改变炮塔是使用对象还是使用射线"
 "发射子弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``TURRET_DAMAGE_BULLET``: The amount of damage a single bullet scene does."
-msgstr "``TURRET_DAMAGE_BULLET``:单个子弹场景造成的伤害量."
+msgstr "``TURRET_DAMAGE_BULLET``: 单个子弹场景造成的伤害量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
 msgstr ""
-"``TURRET_DAMAGE_RAYCAST``:单个损坏的数量 :ref:`Raycast <class_Raycast>` "
+"``TURRET_DAMAGE_RAYCAST``: 单个损坏的数量 :ref:`Raycast <class_Raycast>` "
 "bullet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``FLASH_TIME``: The amount of time (in seconds) the muzzle flash meshes are "
 "visible."
-msgstr "``FLASH_TIME``:枪口闪光网格的可见时间(以秒为单位)."
+msgstr "``FLASH_TIME``: 枪口闪光网格的可见时间(以秒为单位)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
 msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
-msgstr "``flash_timer``:一个变量,用于跟踪枪口闪光网格的可见时间."
+msgstr "``flash_timer``: 一个变量, 用于跟踪枪口闪光网格的可见时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
-msgstr "``FIRE_TIME``:发射子弹所需的时间(以秒为单位)."
+msgstr "``FIRE_TIME``: 发射子弹所需的时间(以秒为单位)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
-msgstr "``fire_timer``:一个变量,用于跟踪炮塔上次射击后经过的时间."
+msgstr "``fire_timer``: 一个变量, 用于跟踪炮塔上次射击后经过的时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
-msgstr "``node_turret_head``:一个用于保存 ``Head`` 节点的变量."
+msgstr "``node_turret_head``: 一个用于保存 ``Head`` 节点的变量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
 msgstr ""
-"``node_raycast``:一个变量,用于保存附加到炮塔头部的 :ref:`Raycast "
+"``node_raycast``: 一个变量, 用于保存附加到炮塔头部的 :ref:`Raycast "
 "<class_Raycast>` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
@@ -1157,7 +1163,7 @@ msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
-"``node_flash_one``:一个用于保存第一个枪口flash的变量 :ref:`MeshInstance "
+"``node_flash_one``: 一个用于保存第一个枪口flash的变量 :ref:`MeshInstance "
 "<class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
@@ -1165,76 +1171,76 @@ msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
-"``node_flash_two``:一个用于保存第二个枪口flash的变量 :ref:`MeshInstance "
+"``node_flash_two``: 一个用于保存第二个枪口flash的变量 :ref:`MeshInstance "
 "<class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
-msgstr "``ammo_in_turret``:目前炮塔中的弹药数量."
+msgstr "``ammo_in_turret``: 目前炮塔中的弹药数量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
-msgstr "``AMMO_IN_FULL_TURRET``:完整炮塔中的弹药数量."
+msgstr "``AMMO_IN_FULL_TURRET``: 完整炮塔中的弹药数量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
-msgstr "``AMMO_RELOAD_TIME``:炮塔重装的时间."
+msgstr "``AMMO_RELOAD_TIME``: 炮塔重装的时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
-msgstr "``ammo_reload_timer``:一个变量,用于跟踪炮塔重装的时间."
+msgstr "``ammo_reload_timer``: 一个变量, 用于跟踪炮塔重装的时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``current_target``: The turret's current target."
-msgstr "``current_target``:炮塔的当前目标."
+msgstr "``current_target``: 炮塔的当前目标."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
-msgstr "``is_active``:用于跟踪炮塔是否能够射向目标的变量."
+msgstr "``is_active``: 用于跟踪炮塔是否能够射向目标的变量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
 msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
-msgstr "``PLAYER_HEIGHT``:我们添加到目标的高度,所以我们不会在它的脚下射击."
+msgstr "``PLAYER_HEIGHT``: 我们添加到目标的高度, 所以我们不会在它的脚下射击."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
-msgstr "``smoke_particles``:用于保存烟雾粒子节点的变量."
+msgstr "``smoke_particles``: 用于保存烟雾粒子节点的变量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:806
 msgid "``turret_health``: The amount of health the turret currently has."
-msgstr "``turret_health``:炮塔目前的健康状况."
+msgstr "``turret_health``: 炮塔目前的健康状况."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
-msgstr "``MAX_TURRET_HEALTH``:完全愈合的炮塔的健康量."
+msgstr "``MAX_TURRET_HEALTH``: 完全愈合的炮塔的健康量."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:808
 msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
-msgstr "``DESTROYED_TIME``:被毁坏的炮塔修复自己所花费的时间(以秒为单位)."
+msgstr "``DESTROYED_TIME``: 被毁坏的炮塔修复自己所花费的时间(以秒为单位)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:809
 msgid ""
 "``destroyed_timer``: A variable for tracking the amount of time a turret has "
 "been destroyed."
-msgstr "``destroyed_timer``:一个变量,用于跟踪炮塔被摧毁的时间."
+msgstr "``destroyed_timer``: 一个变量, 用于跟踪炮塔被摧毁的时间."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:810
 msgid ""
 "``bullet_scene``: The bullet scene the turret fires (same scene as the "
 "player's pistol)"
-msgstr "``bullet_scene``:炮塔射击的子弹场景(与游戏角色的手枪相同的场景)"
+msgstr "``bullet_scene``: 炮塔射击的子弹场景(与游戏角色的手枪相同的场景)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:812
 msgid "Whew, that's quite a few class variables!"
-msgstr "哇,这是相当多的类变量！"
+msgstr "哇, 这是相当多的类变量！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
@@ -1246,28 +1252,28 @@ msgid ""
 "``body_exited`` signals to ``body_entered_vision`` and "
 "``body_exited_vision``, respectively."
 msgstr ""
-"首先,我们得到视觉区域,将 ``body_entered`` 和 ``body_exited`` 信号分别连接到 "
-"``body_entered_vision`` 和 ``body_exited_vision`` ."
+"首先, 我们得到视觉区域, 将 ``body_entered`` 和 ``body_exited`` 信号分别连接"
+"到 ``body_entered_vision`` 和 ``body_exited_vision`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:820
 msgid ""
 "We then get all the nodes and assign them to their respective variables."
-msgstr "然后,我们得到所有的节点,并将它们分配到各自的变量中."
+msgstr "然后, 我们得到所有的节点, 并将它们分配到各自的变量中."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:822
 msgid ""
 "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
 "turret cannot hurt itself."
 msgstr ""
-"接下来,我们给 :ref:`Raycast <class_Raycast>` 添加一些例外情况,这样炮塔就不能"
-"伤害自己了."
+"接下来, 我们给 :ref:`Raycast <class_Raycast>` 添加一些例外情况, 这样炮塔就不"
+"能伤害自己了."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
 msgid ""
 "Then we make both flash meshes invisible at start, since we are not going to "
 "be firing during ``_ready``."
 msgstr ""
-"然后我们在开始时使两个闪存网格都不可见,因为我们不会在\"_ready\"期间触发."
+"然后我们在开始时使两个闪存网格都不可见, 因为我们不会在 \"_ready\" 期间触发."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:826
 msgid ""
@@ -1275,15 +1281,15 @@ msgid ""
 "``smoke_particles`` variable. We also set ``emitting`` to ``false`` to "
 "ensure the particles are not emitting until the turret is broken."
 msgstr ""
-"然后我们得到烟雾粒子节点,并将其分配给 ``smoke_particles`` 变量.将 "
-"``emitting`` 设置为 ``false`` ,以确保炮塔在被破坏之前,粒子不会发射."
+"然后我们得到烟雾粒子节点, 并将其分配给 ``smoke_particles`` 变量. 将 "
+"``emitting`` 设置为 ``false`` , 以确保炮塔在被破坏之前, 粒子不会发射."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:829
 msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
 msgstr ""
-"最后,我们将炮塔的生命值设置为\"MAX_TURRET_HEALTH\",以便从完全健康状态开始."
+"最后, 我们将炮塔的生命值设置为 \"MAX_TURRET_HEALTH\", 以便从完全健康状态开始."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
@@ -1293,7 +1299,8 @@ msgstr "现在让我们来看看 ``_physics_process`` ."
 msgid ""
 "Firstly, we check whether the turret is active. If the turret is active, we "
 "want to process the firing code."
-msgstr "首先,我们检查炮塔是否处于激活状态.如果炮塔处于激活状态,则处理射击代码."
+msgstr ""
+"首先, 我们检查炮塔是否处于激活状态. 如果炮塔处于激活状态, 则处理射击代码."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:837
 msgid ""
@@ -1302,9 +1309,9 @@ msgid ""
 "gets to zero or less after we've subtracted ``delta``, we want to hide both "
 "of the flash meshes."
 msgstr ""
-"接下来,如果 ``flash_timer`` 大于0,意味着flash网格是可见的,我们要从 "
-"``flash_timer`` 中删除delta.如果 ``flash_timer`` 减去 ``delta`` 后变为0或更"
-"小,要隐藏两个flash网格."
+"接下来, 如果 ``flash_timer`` 大于0, 意味着flash网格是可见的, 我们要从 "
+"``flash_timer`` 中删除delta. 如果 ``flash_timer`` 减去 ``delta`` 后变为0或更"
+"小, 要隐藏两个flash网格."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
 msgid ""
@@ -1312,14 +1319,14 @@ msgid ""
 "we make the turret head look at it, adding ``PLAYER_HEIGHT`` so it is not "
 "aiming at the player's feet."
 msgstr ""
-"接下来,我们检查炮塔是否有目标.如果炮塔有目标,让炮塔的头部看向它,加上 "
-"``PLAYER_HEIGHT`` ,这样它就不会瞄准玩家的脚."
+"接下来, 我们检查炮塔是否有目标. 如果炮塔有目标, 让炮塔的头部看向它, 加上 "
+"``PLAYER_HEIGHT`` , 这样它就不会瞄准玩家的脚."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
 msgid ""
 "We then check whether the turret's health is greater than zero. If it is, we "
 "then check whether there is ammo in the turret."
-msgstr "然后我们检查炮塔的健康状况是否大于零,如果是,就检查炮塔里是否有弹药."
+msgstr "然后我们检查炮塔的健康状况是否大于零, 如果是, 就检查炮塔里是否有弹药."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:846
 msgid ""
@@ -1328,9 +1335,9 @@ msgid ""
 "``fire_timer``. If ``fire_timer`` is less than or equal to zero, the turret "
 "can fire a bullet, so we call the ``fire_bullet`` function."
 msgstr ""
-"如果有,我们检查 ``fire_timer`` 是否大于0,如果大于,则炮塔不能发射,需要从 "
-"``fire_timer`` 中删除 ``delta`` .如果 ``fire_timer`` 小于或等于零,炮塔可以发"
-"射子弹,则调用 ``fire_bullet`` 函数."
+"如果有, 我们检查 ``fire_timer`` 是否大于0, 如果大于, 则炮塔不能发射, 需要从 "
+"``fire_timer`` 中删除 ``delta`` . 如果 ``fire_timer`` 小于或等于零, 炮塔可以"
+"发射子弹, 则调用 ``fire_bullet`` 函数."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:849
 msgid ""
@@ -1340,10 +1347,10 @@ msgid ""
 "to zero, we set ``ammo_in_turret`` to ``AMMO_IN_FULL_TURRET`` because the "
 "turret has waited long enough to refill its ammo."
 msgstr ""
-"如果炮塔内没有任何弹药,我们检查 ``ammo_reload_timer`` 是否大于零,如果大于零,"
-"我们从 ``ammo_reload_timer`` 中减去 ``delta`` .如果 ``ammo_reload_timer`` 小"
-"于或等于零,我们将 ``ammo_in_turret`` 设置为 ``AMMO_IN_FULL_TURRET`` ,因为炮塔"
-"已经等待了足够长的时间来补充弹药."
+"如果炮塔内没有任何弹药, 我们检查 ``ammo_reload_timer`` 是否大于零, 如果大于"
+"零, 我们从 ``ammo_reload_timer`` 中减去 ``delta`` . 如果 "
+"``ammo_reload_timer`` 小于或等于零, 我们将 ``ammo_in_turret`` 设置为 "
+"``AMMO_IN_FULL_TURRET`` , 因为炮塔已经等待了足够长的时间来补充弹药."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:853
 msgid ""
@@ -1352,9 +1359,9 @@ msgid ""
 "less, we then check whether ``destroyed_timer`` is greater than zero. If it "
 "is, we subtract ``delta`` from ``destroyed_timer``."
 msgstr ""
-"接下来,我们检查炮塔的健康值是否小于或等于 ``0`` ,而不是它是否处于活动状态.如"
-"果炮塔的健康值为0或更少,我们检查 ``destroyed_timer`` 是否大于0.如果是,我们从 "
-"``destroyed_timer`` 中减去 ``delta`` ."
+"接下来, 我们检查炮塔的健康值是否小于或等于 ``0`` , 而不是它是否处于活动状态. "
+"如果炮塔的健康值为0或更少, 我们检查 ``destroyed_timer`` 是否大于0. 如果是, 我"
+"们从 ``destroyed_timer`` 中减去 ``delta`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
 msgid ""
@@ -1362,7 +1369,7 @@ msgid ""
 "``turret_health`` to ``MAX_TURRET_HEALTH`` and stop emitting smoke particles "
 "by setting ``smoke_particles.emitting`` to ``false``."
 msgstr ""
-"如果 ``destroyed_timer`` 小于或等于零,我们将 ``turret_health`` 设置为 "
+"如果 ``destroyed_timer`` 小于或等于零, 我们将 ``turret_health`` 设置为 "
 "``MAX_TURRET_HEALTH`` 并通过将 ``smoke_particles.emitting`` 设置为 ``false`` "
 "来停止冒烟."
 
@@ -1372,7 +1379,7 @@ msgstr "接下来让我们来看看 ``fire_bullet`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 msgid "Firstly, we check whether the turret is using a raycast."
-msgstr "首先,我们检查炮塔是否使用了射线投射."
+msgstr "首先, 我们检查炮塔是否使用了射线投射."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:865
 msgid ""
@@ -1381,7 +1388,7 @@ msgid ""
 "briefly."
 msgstr ""
 "使用射线投射的代码与 :ref:`doc_fps_tutorial_part_two` 中步枪的代码几乎完全相"
-"同,所以我只简单介绍一下."
+"同, 所以我只简单介绍一下."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
 msgid ""
@@ -1393,11 +1400,11 @@ msgid ""
 "damage a single raycast bullet does along with the raycast's transform. We "
 "then subtract ``1`` from ``ammo_in_turret``."
 msgstr ""
-"我们首先让raycast看向目标,确保raycast在没有任何障碍物的情况下能够击中目标.然"
-"后我们强制raycast更新,这样我们就能得到一帧完美的碰撞检查.然后,检查raycast是否"
-"与任何东西发生了碰撞.如果有,我们检查被碰撞的物体是否有 ``bullet_hit`` 方法.如"
-"果有,我们就调用它,并将单颗raycast子弹造成的伤害和raycast的变换一起传递进来.然"
-"后我们从 ``ammo_in_turret`` 中减去 ``1`` ."
+"我们首先让raycast看向目标, 确保raycast在没有任何障碍物的情况下能够击中目标. "
+"然后我们强制raycast更新, 这样我们就能得到一帧完美的碰撞检查. 然后, 检查"
+"raycast是否与任何东西发生了碰撞. 如果有, 我们检查被碰撞的物体是否有 "
+"``bullet_hit`` 方法. 如果有, 我们就调用它, 并将单颗raycast子弹造成的伤害和"
+"raycast的变换一起传递进来. 然后我们从 ``ammo_in_turret`` 中减去 ``1`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:873
 msgid ""
@@ -1406,9 +1413,9 @@ msgid ""
 "`doc_fps_tutorial_part_two`, so like with the raycast code, I'm only going "
 "to go over it briefly."
 msgstr ""
-"如果炮塔没有使用光线投射,我们会生成一个子弹对象. 这段代码几乎完全与手枪中的代"
-"码相同 :ref:`doc_fps_tutorial_part_two`,所以与光线播放代码一样,我只是简单地介"
-"绍一下."
+"如果炮塔没有使用光线投射, 我们会生成一个子弹对象. 这段代码几乎完全与手枪中的"
+"代码相同 :ref:`doc_fps_tutorial_part_two`, 所以与光线播放代码一样, 我只是简单"
+"地介绍一下."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:876
 msgid ""
@@ -1418,9 +1425,10 @@ msgid ""
 "the turret's constant class variables. We then subtract ``1`` from "
 "``ammo_in_turret``."
 msgstr ""
-"我们首先制作一个子弹克隆,并将其分配给 ``clone`` ,然后我们将其添加为根节点的一"
-"个子节点.我们将子弹的全局变换设置为枪管末端,由于它太小,所以将其放大,并使用炮"
-"塔的常量类变量设置其伤害和速度.然后从 ``ammo_in_turret`` 中减去 ``1`` ."
+"我们首先制作一个子弹克隆, 并将其分配给 ``clone`` , 然后我们将其添加为根节点的"
+"一个子节点. 我们将子弹的全局变换设置为枪管末端, 由于它太小, 所以将其放大, 并"
+"使用炮塔的常量类变量设置其伤害和速度. 然后从 ``ammo_in_turret`` 中减去 "
+"``1`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:880
 msgid ""
@@ -1430,16 +1438,16 @@ msgid ""
 "turret has used the last bullet in its ammo. If it has, we set "
 "``ammo_reload_timer`` to ``AMMO_RELOAD_TIME`` so the turret reloads."
 msgstr ""
-"然后,不管我们使用的是哪种子弹方式,都要让两个枪口闪光网格可见.我们将 "
+"然后, 不管我们使用的是哪种子弹方式, 都要让两个枪口闪光网格可见. 我们将 "
 "``flash_timer`` 和 ``fire_timer`` 分别设置为 ``FLASH_TIME`` 和 "
-"``FIRE_TIME`` .然后检查炮塔是否已经用完了最后一颗子弹.如果用完了,将 "
-"``ammo_reload_timer`` 设置为 ``ammo_reload_TIME`` ,这样炮塔就会重新装弹."
+"``FIRE_TIME`` . 然后检查炮塔是否已经用完了最后一颗子弹. 如果用完了, 将 "
+"``ammo_reload_timer`` 设置为 ``ammo_reload_TIME`` , 这样炮塔就会重新装弹."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
 msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
-msgstr "让我们看看接下来的 ``body_entered_vision`` ,谢天谢地,它很短."
+msgstr "让我们看看接下来的 ``body_entered_vision`` , 谢天谢地, 它很短."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
 msgid ""
@@ -1449,16 +1457,16 @@ msgid ""
 "`Area <class_Area>` is a :ref:`KinematicBody <class_KinematicBody>`."
 msgstr ""
 "我们首先通过检查 ``current_target`` 是否等于 ``null`` 来检查炮塔当前是否有目"
-"标. 如果炮塔没有目标,我们就检查刚刚进入 :ref:`Area <class_Area>` 视野的物体是"
-"一个 :ref:`KinematicBody <class_KinematicBody>` ."
+"标. 如果炮塔没有目标, 我们就检查刚刚进入 :ref:`Area <class_Area>` 视野的物体"
+"是一个 :ref:`KinematicBody <class_KinematicBody>` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:891
 msgid ""
 "We're assuming the turret should only fire at :ref:`KinematicBody "
 "<class_KinematicBody>` nodes since that is what the player is using."
 msgstr ""
-"我们假设炮塔应该只对 :ref:`KinematicBody <class_KinematicBody>` 节点进行射击,"
-"因为玩家使用的就是这个节点."
+"我们假设炮塔应该只对 :ref:`KinematicBody <class_KinematicBody>` 节点进行射"
+"击, 因为玩家使用的就是这个节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
 msgid ""
@@ -1467,7 +1475,7 @@ msgid ""
 "body, and set ``is_active`` to ``true``."
 msgstr ""
 "如果刚进入视觉的主体 :ref:`Area <class_Area>` 是 :ref:`KinematicBody "
-"<class_KinematicBody>`,我们将 ``current_target`` 设置为body,并将 "
+"<class_KinematicBody>`, 我们将 ``current_target`` 设置为body, 并将 "
 "``is_active`` 设置为 ``true`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
@@ -1480,8 +1488,8 @@ msgid ""
 "whether the body that has just left the turret's vision :ref:`Area "
 "<class_Area>` is the turret's target."
 msgstr ""
-"首先,我们检查炮塔是否有目标.如果有,检查刚刚离开炮塔的视野的物体 :ref:`Area "
-"<class_Area>`是否为炮塔的目标."
+"首先, 我们检查炮塔是否有目标. 如果有, 检查刚刚离开炮塔的视野的物体 :ref:"
+"`Area <class_Area>` 是否为炮塔的目标."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
 msgid ""
@@ -1490,13 +1498,13 @@ msgid ""
 "``is_active`` to ``false``, and reset all the variables related to firing "
 "the turret since the turret no longer has a target to fire at."
 msgstr ""
-"如果刚刚离开视野 :ref:`Area <class_Area>` 的机体是炮塔的当前目标,将 "
-"``current_target`` 设置为 ``null`` ,将 ``is_active`` 设置为 ``false`` ,并重置"
-"所有与发射炮塔有关的变量,因为炮塔已经没有目标可以发射."
+"如果刚刚离开视野 :ref:`Area <class_Area>` 的机体是炮塔的当前目标, 将 "
+"``current_target`` 设置为 ``null`` , 将 ``is_active`` 设置为 ``false`` , 并重"
+"置所有与发射炮塔有关的变量, 因为炮塔已经没有目标可以发射."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:908
 msgid "Finally, let's look at ``bullet_hit``."
-msgstr "最后,让我们看一下 ``bullet_hit`` ."
+msgstr "最后, 让我们看一下 ``bullet_hit`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:910
 msgid ""
@@ -1511,8 +1519,9 @@ msgid ""
 "set ``destroyed_timer`` to ``DESTROYED_TIME`` so the turret has to wait "
 "before being repaired."
 msgstr ""
-"然后,我们检查炮塔是否被摧毁,健康值为零或更少,如果被摧毁,就开始发射烟雾粒子,并"
-"将 ``destroyed_timer`` 设置为 ``DESTROYED_TIME`` ,这样炮塔在修复前就必须等待."
+"然后, 我们检查炮塔是否被摧毁, 健康值为零或更少, 如果被摧毁, 就开始发射烟雾粒"
+"子, 并将 ``destroyed_timer`` 设置为 ``DESTROYED_TIME`` , 这样炮塔在修复前就必"
+"须等待."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:917
 msgid ""
@@ -1523,14 +1532,14 @@ msgid ""
 "``TurretBodies.gd`` and attach it to whichever :ref:`StaticBody "
 "<class_StaticBody>` you have selected."
 msgstr ""
-"好了,所有这些都完成了,在炮塔准备使用之前,我们只有最后一件事要做.打开 "
-"``Turret.tscn`` 如果还没有打开的话,从 ``Base`` 或 ``Head`` 中选择一个 :ref:"
-"`StaticBody <class_StaticBody>` 节点.创建一个名为 ``TurretBodies.gd`` 的新脚"
-"本,并将其附加到你选择的任何一个 :ref:`StaticBody <class_StaticBody>` 节点上."
+"好了, 所有这些都完成了, 在炮塔准备使用之前, 我们只有最后一件事要做. 打开 "
+"``Turret.tscn`` 如果还没有打开的话, 从 ``Base`` 或 ``Head`` 中选择一个 :ref:"
+"`StaticBody <class_StaticBody>` 节点. 创建一个名为 ``TurretBodies.gd`` 的新脚"
+"本, 并将其附加到你选择的任何一个 :ref:`StaticBody <class_StaticBody>` 节点上."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:921
 msgid "Add the following code to ``TurretBodies.gd``:"
-msgstr "将以下代码添加到``TurretBodies.gd``:"
+msgstr "将以下代码添加到 ``TurretBodies.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:936
 msgid ""
@@ -1539,7 +1548,7 @@ msgid ""
 "`NodePath <class_NodePath>` to the ``Turret`` node."
 msgstr ""
 "这段代码所做的就是在 ``path_to_turret_root`` 所指向的任何节点上调用 "
-"``bullet_hit`` .回到编辑器,将 :ref:`NodePath <class_NodePath>` 分配给 "
+"``bullet_hit`` . 回到编辑器, 将 :ref:`NodePath <class_NodePath>` 分配给 "
 "``Turret`` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
@@ -1550,7 +1559,7 @@ msgid ""
 "``Turret`` node."
 msgstr ""
 "现在选择另一个 :ref:`StaticBody <class_StaticBody>` 节点(在 ``Body`` 或 "
-"``Head`` 中)并为其指定 ``TurretBodies.gd`` 脚本. 附加脚本后,再次将 :ref:"
+"``Head`` 中)并为其指定 ``TurretBodies.gd`` 脚本. 附加脚本后, 再次将 :ref:"
 "`NodePath <class_NodePath>` 分配给 ``Turret`` 节点."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:944
@@ -1559,8 +1568,8 @@ msgid ""
 "all the bullets use the ``bullet_hit`` function, we need to add that "
 "function to the player."
 msgstr ""
-"最后,我们需要做的是给玩家增加一种伤害的方式.由于所有的子弹都使用 "
-"``bullet_hit`` 函数,我们需要为玩家添加该函数."
+"最后, 我们需要做的是给玩家增加一种伤害的方式. 由于所有的子弹都使用 "
+"``bullet_hit`` 函数, 我们需要为玩家添加该函数."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:946
 msgid "Open ``Player.gd`` and add the following:"
@@ -1571,7 +1580,7 @@ msgid ""
 "With all that done, you should have fully operational turrets! Go place a "
 "few in one/both/all of the scenes and give them a try!"
 msgstr ""
-"完成所有这些后,您应该拥有完全可操作的炮塔！ 在一个/两个/所有场景中进行几次尝"
+"完成所有这些后, 您应该拥有完全可操作的炮塔！ 在一个/两个/所有场景中进行几次尝"
 "试！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
@@ -1592,13 +1601,13 @@ msgid ""
 "pause menu, add a respawn system for the player, and change/move the sound "
 "system so we can use it from any script."
 msgstr ""
-"在 :ref:`doc_fps_tutorial_part_six`中,我们将添加一个主菜单和一个暂停菜单,为游"
-"戏角色添加重新生成的系统,以及更改/移动声音系统,以便我们可以从任何脚本中使用"
-"它."
+"在 :ref:`doc_fps_tutorial_part_six` 中, 我们将添加一个主菜单和一个暂停菜单, "
+"为游戏角色添加重新生成的系统, 以及更改/移动声音系统, 以便我们可以从任何脚本中"
+"使用它."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:965
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr "如果你感到迷茫,请一定要再读一遍代码！"
+msgstr "如果你感到迷茫, 请一定要再读一遍代码！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:967
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,257 +26,294 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:9
+#, fuzzy
 msgid ""
-"Baked lightmaps are an alternative workflow for adding indirect (or baked) "
-"lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked "
+"Baked lightmaps are an alternative workflow for adding indirect (or fully "
+"baked) lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked "
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
-"almost no resources at run-time."
+"almost no resources at run-time. Also unlike GIProbe, baked lightmaps can "
+"optionally be used to store direct lighting, which provides even further "
+"performance gains."
 msgstr ""
-"烘焙的光影图是为场景添加间接(或烘焙)光照的另一种工作流程.与 :ref:"
-"`doc_gi_probes` 的方法不同,烘焙光照图在低端PC和移动设备上运行良好,因为运行时"
-"几乎不消耗资源."
+"烘焙的光影图是为场景添加间接(或烘焙)光照的另一种工作流程. 与 :ref:"
+"`doc_gi_probes` 的方法不同, 烘焙光照图在低端PC和移动设备上运行良好, 因为运行"
+"时几乎不消耗资源."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:14
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:15
+#, fuzzy
 msgid ""
-"Unlike ``GIProbe``\\ s, Baked Lightmaps are completely static. Once baked, "
-"they can't be modified at all. They also don't provide the scene with "
+"Unlike GIProbes, Baked Lightmaps are completely static. Once baked, they "
+"can't be modified at all. They also don't provide the scene with "
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
-"与 ``GIProbe``\\ s 不同的是,Baked Lightmaps[烘焙光照贴图]是完全静态的.一旦被"
-"烘焙,就不能被修改,也不能为场景提供反射,所以在内部用 :ref:"
+"与 ``GIProbe``\\ s 不同的是,Baked Lightmaps[烘焙光照贴图]是完全静态的. 一旦被"
+"烘焙, 就不能被修改, 也不能为场景提供反射, 所以在内部用 :ref:"
 "`doc_reflection_probes` 和它一起使用(或者在外部使用Sky)是获得好质量的要求."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:19
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:20
 msgid ""
 "As they are baked, they have fewer problems than ``GIProbe`` regarding light "
-"bleeding, and indirect light can look better if using Raytrace mode on high "
-"quality setting (but baking can take a while)."
+"bleeding, and indirect light will often look better. The downside is that "
+"baking lightmaps takes much longer than baking a GIProbe. While baking a "
+"GIProbe can be done in a matter of seconds, baking lightmaps will take "
+"several minutes if not more. This can slow down iteration speed "
+"significantly, so it is recommended to bake lightmaps only when you actually "
+"need to see changes in lighting."
 msgstr ""
-"由于它们是烘焙的,所以比 ``GIProbe`` 在光线渗出方面的问题要少,如果在高质量设置"
-"下使用Raytrace[光线跟踪]模式,间接光看起来会更好(但烘焙可能需要一段时间)."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:23
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:27
+msgid ""
+"Baking lightmaps will also reserve baked materials' UV2 slot, which means "
+"you can no longer use it for other purposes in materials (either in the "
+"built-in :ref:`doc_spatial_material` or in custom shaders)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:31
+#, fuzzy
 msgid ""
 "In the end, deciding which indirect lighting approach is better depends on "
-"your use case. In general, GIProbe looks better and is much easier to set "
-"up. For mobile or low-end compatibility, though, Baked Lightmaps are your "
-"only choice."
+"your use case. In general, GIProbe is easier to set up and works better with "
+"dynamic objects. For mobile or low-end compatibility, though, baked "
+"lightmaps are your only choice."
 msgstr ""
-"最后,决定哪种间接光照方式更好取决于你的使用案例.一般来说,GIProbe看起来更好,而"
-"且更容易设置.但对于移动或低端兼容性,Baked Lightmaps是你唯一的选择."
+"最后, 决定哪种间接光照方式更好取决于你的使用案例. 一般来说,GIProbe看起来更"
+"好, 而且更容易设置. 但对于移动或低端兼容性,Baked Lightmaps是你唯一的选择."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:29
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:37
 msgid "Visual comparison"
 msgstr "视觉比较"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:31
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:39
+#, fuzzy
 msgid ""
-"Here are some comparisons of how Baked Lightmaps vs. GIProbe look. Notice "
-"that lightmaps are more accurate, but also suffer from the fact that "
-"lighting is on an unwrapped texture, so transitions and resolution may not "
-"be that good. GIProbe looks less accurate (as it's an approximation), but "
-"smoother overall."
+"Here are some comparisons of how BakedLightmap vs. GIProbe look. Notice that "
+"lightmaps are more accurate, but also suffer from the fact that lighting is "
+"on an unwrapped texture, so transitions and resolution may not be that good. "
+"GIProbe looks less accurate (as it's an approximation), but smoother overall."
 msgstr ""
-"以下是Baked Lightmaps与GIProbe外观的比较. 请注意,光照贴图更准确,但也受到照明"
-"在未打开的纹理上的影响,因此过渡和分辨率可能不那么好. GIProbe看起来不太准确(因"
-"为它是近似值),但总体上更加平滑."
+"以下是Baked Lightmaps与GIProbe外观的比较. 请注意, 光照贴图更准确, 但也受到照"
+"明在未打开的纹理上的影响, 因此过渡和分辨率可能不那么好. GIProbe看起来不太准确"
+"(因为它是近似值), 但总体上更加平滑."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:40
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:48
 msgid "Setting up"
 msgstr "设置"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:42
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:50
 msgid ""
 "First of all, before the lightmapper can do anything, the objects to be "
 "baked need an UV2 layer and a texture size. An UV2 layer is a set of "
 "secondary texture coordinates that ensures any face in the object has its "
 "own place in the UV map. Faces must not share pixels in the texture."
 msgstr ""
-"首先,在光照贴图可以执行任何操作之前,要烘焙的对象需要UV2图层和纹理大小. UV2图"
-"层是一组辅助纹理坐标,可确保对象中的任何面在UV贴图中都有自己的位置. 面不得共享"
-"纹理中的像素."
+"首先, 在光照贴图可以执行任何操作之前, 要烘焙的对象需要UV2图层和纹理大小. UV2"
+"图层是一组辅助纹理坐标, 可确保对象中的任何面在UV贴图中都有自己的位置. 面不得"
+"共享纹理中的像素."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:47
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:55
 msgid ""
 "There are a few ways to ensure your object has a unique UV2 layer and "
 "texture size:"
 msgstr "这里有几种方法可以确保您的对象具有唯一的UV2层和纹理大小:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:50
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:58
+msgid "Unwrap on scene import"
+msgstr "解开场景导入"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:60
+#, fuzzy
+msgid ""
+"This is probably the best approach overall. The only downside is that, on "
+"large models, unwrapping can take a while on import. Nonetheless, Godot will "
+"cache the UV2 across reimports, so it will only be regenerated when needed."
+msgstr ""
+"总体来说, 这可能是最好的方法. 唯一的缺点是, 在大型模型上, 导入时解包可能需要"
+"一段时间. 只要在文件系统栏选择导入的场景, 然后进入导入选项卡. 在那里, 可以修"
+"改以下选项:"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:64
+#, fuzzy
+msgid ""
+"Select the imported scene in the filesystem dock, then go to the **Import** "
+"dock. There, the following option can be modified:"
+msgstr ""
+"总体来说, 这可能是最好的方法. 唯一的缺点是, 在大型模型上, 导入时解包可能需要"
+"一段时间. 只要在文件系统栏选择导入的场景, 然后进入导入选项卡. 在那里, 可以修"
+"改以下选项:"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:69
+#, fuzzy
+msgid ""
+"The **Light Baking** mode needs to be set to **Gen Lightmaps**. A texel size "
+"in world units must also be provided, as this will determine the final size "
+"of the lightmap texture (and, in consequence, the UV padding in the map)."
+msgstr ""
+"** Light Baking ** 光照烘焙模式需要设置为 **\"Gen Lightmaps\"** . 还必须提供"
+"世界单位的纹素大小, 因为这将确定光照贴图纹理的最终大小(并因此确定地图中的UV填"
+"充)."
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:73
+msgid ""
+"The effect of setting this option is that all meshes within the scene will "
+"have their UV2 maps properly generated."
+msgstr "设置此选项的效果是场景中的所有网格都将正确生成其UV2贴图."
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:78
+#, fuzzy
+msgid ""
+"When reusing a mesh within a scene, keep in mind that UVs will be generated "
+"for the first instance found. If the mesh is re-used with different scales "
+"(and the scales are wildly different, more than half or twice), this will "
+"result in inefficient lightmaps. Don't reuse a source mesh at significantly "
+"different scales if you are planning to use lightmapping."
+msgstr ""
+"作为警告: 当重用场景中的网格时, 请记住将为找到的第一个实例生成UV. 如果网格重"
+"复使用不同的比例(并且比例大不相同, 超过一半或两次), 这将导致低效的光照贴图. "
+"如果您计划使用光照贴图, 请不要在不同比例下重复使用源网格."
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:84
+msgid ""
+"Also, the ``*.unwrap_cache`` files should *not* be ignored in version "
+"control as these files guarantee that UV2 reimports are consistent across "
+"platforms and engine versions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:89
+msgid "Unwrap from within Godot"
+msgstr "从Godot内部解开"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:91
+msgid ""
+"Godot has an option to unwrap meshes and visualize the UV channels. It can "
+"be found in the Mesh menu:"
+msgstr "Godot可以选择打开网格并可视化UV通道. 它可以在Mesh菜单中找到:"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:96
+msgid ""
+"This will generate a second set of UV2 coordinates which can be used for "
+"baking, and it will also set the texture size automatically."
+msgstr "这将生成第二组UV2坐标, 可用于烘焙, 并且还将自动设置纹理大小."
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:100
 msgid "Unwrap from your 3D DCC"
 msgstr "从3D DCC展开"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:52
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:102
+#, fuzzy
 msgid ""
-"One option is to do it from your favorite 3D app. This approach is generally "
-"not recommended, but it's explained first so that you know it exists. The "
-"main advantage is that, on complex objects that you may want to re-import a "
-"lot, the texture generation process can be quite costly within Godot, so "
-"having it unwrapped before import can be faster."
+"The last option is to do it from your favorite 3D app. This approach is "
+"generally not recommended, but it's explained first so that you know it "
+"exists. The main advantage is that, on complex objects that you may want to "
+"re-import a lot, the texture generation process can be quite costly within "
+"Godot, so having it unwrapped before import can be faster."
 msgstr ""
-"一种选择是从您最喜欢的3D应用程序中进行. 通常不推荐这种方法,但首先要解释它,以"
-"便您知道它存在. 主要的优点是,在您可能想要重新导入很多的复杂对象上,纹理生成过"
-"程在Godot中可能非常昂贵,因此在导入之前将其解包可以更快."
+"一种选择是从您最喜欢的3D应用程序中进行. 通常不推荐这种方法, 但首先要解释它, "
+"以便您知道它存在. 主要的优点是, 在您可能想要重新导入很多的复杂对象上, 纹理生"
+"成过程在Godot中可能非常昂贵, 因此在导入之前将其解包可以更快."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:58
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:108
 msgid "Simply do an unwrap on the second UV2 layer."
 msgstr "只需在第二个UV2层上打开包装即可."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:62
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:112
+#, fuzzy
 msgid ""
-"And import normally. Remember you will need to set the texture size on the "
-"mesh after import."
-msgstr "并正常导入. 请记住,导入后需要在网格上设置纹理大小."
+"Then import the 3D scene normally. Remember you will need to set the texture "
+"size on the mesh after import."
+msgstr "并正常导入. 请记住, 导入后需要在网格上设置纹理大小."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:67
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:117
 msgid ""
 "If you use external meshes on import, the size will be kept. Be wary that "
 "most unwrappers in 3D DCCs are not quality oriented, as they are meant to "
 "work quickly. You will mostly need to use seams or other techniques to "
 "create better unwrapping."
 msgstr ""
-"如果在导入时使用外部网格,则将保留大小. 请注意,3D DCC中的大多数解包器都不是面"
-"向质量的,因为它们可以快速工作. 您通常需要使用接缝或其他技术来创建更好的展开."
+"如果在导入时使用外部网格, 则将保留大小. 请注意,3D DCC中的大多数解包器都不是面"
+"向质量的, 因为它们可以快速工作. 您通常需要使用接缝或其他技术来创建更好的展开."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:73
-msgid "Unwrap from within Godot"
-msgstr "从Godot内部解开"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:75
-msgid ""
-"Godot has an option to unwrap meshes and visualize the UV channels. It can "
-"be found in the Mesh menu:"
-msgstr "Godot可以选择打开网格并可视化UV通道. 它可以在Mesh菜单中找到:"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:80
-msgid ""
-"This will generate a second set of UV2 coordinates which can be used for "
-"baking, and it will also set the texture size automatically."
-msgstr "这将生成第二组UV2坐标,可用于烘焙,并且还将自动设置纹理大小."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:84
-msgid "Unwrap on scene import"
-msgstr "解开场景导入"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:86
-msgid ""
-"This is probably the best approach overall. The only downside is that, on "
-"large models, unwrapping can take a while on import. Just select the "
-"imported scene in the filesystem dock, then go to the Import tab. There, the "
-"following option can be modified:"
-msgstr ""
-"总体来说,这可能是最好的方法.唯一的缺点是,在大型模型上,导入时解包可能需要一段"
-"时间.只要在文件系统栏选择导入的场景,然后进入导入选项卡.在那里,可以修改以下选"
-"项:"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:93
-msgid ""
-"The **Light Baking** mode needs to be set to **\"Gen Lightmaps\"**. A texel "
-"size in world units must also be provided, as this will determine the final "
-"size of the lightmap texture (and, in consequence, the UV padding in the "
-"map)."
-msgstr ""
-"** Light Baking ** 光照烘焙模式需要设置为 **\"Gen Lightmaps\"** . 还必须提供"
-"世界单位的纹素大小,因为这将确定光照贴图纹理的最终大小(并因此确定地图中的UV填"
-"充)."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:97
-msgid ""
-"The effect of setting this option is that all meshes within the scene will "
-"have their UV2 maps properly generated."
-msgstr "设置此选项的效果是场景中的所有网格都将正确生成其UV2贴图."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:100
-msgid ""
-"As a word of warning: When reusing a mesh within a scene, keep in mind that "
-"UVs will be generated for the first instance found. If the mesh is re-used "
-"with different scales (and the scales are wildly different, more than half "
-"or twice), this will result in inefficient lightmaps. Just don't reuse a "
-"source mesh at different scales if you are planning to use lightmapping."
-msgstr ""
-"作为警告:当重用场景中的网格时,请记住将为找到的第一个实例生成UV. 如果网格重复"
-"使用不同的比例(并且比例大不相同,超过一半或两次),这将导致低效的光照贴图. 如果"
-"您计划使用光照贴图,请不要在不同比例下重复使用源网格."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:107
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid "Checking UV2"
 msgstr "检查UV2"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:109
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:125
 msgid ""
 "In the mesh menu mentioned before, the UV2 texture coordinates can be "
 "visualized. Make sure, if something is failing, to check that the meshes "
 "have these UV2 coordinates:"
 msgstr ""
-"在前面提到的网格菜单中,可以显示UV2纹理坐标. 如果出现问题,请确保检查网格是否具"
-"有以下UV2坐标:"
+"在前面提到的网格菜单中, 可以显示UV2纹理坐标. 如果出现问题, 请确保检查网格是否"
+"具有以下UV2坐标:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:115
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:131
 msgid "Setting up the scene"
 msgstr "设置场景"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:117
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:133
+#, fuzzy
 msgid ""
-"Before anything is done, a **BakedLightmap** Node needs to be added to a "
+"Before anything is done, a **BakedLightmap** node needs to be added to a "
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
 "scene, even on instanced scenes."
 msgstr ""
-"在做任何事情之前,需要在场景中添加一个**BakedLightmap** 节点.这将使该场景中的"
-"所有节点(和子节点),甚至是实例场景中的所有节点都能进行光照烘焙."
+"在做任何事情之前, 需要在场景中添加一个 **BakedLightmap** 节点. 这将使该场景中"
+"的所有节点(和子节点), 甚至是实例场景中的所有节点都能进行光照烘焙."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:123
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:139
 msgid ""
 "A sub-scene can be instanced several times, as this is supported by the "
 "baker, and each will be assigned a lightmap of its own (just make sure to "
 "respect the rule about scaling mentioned before):"
 msgstr ""
-"子场景可以多次实例化,因为这是由面包师支持的,并且每个子场景都将被分配一个自己"
-"的光照贴图(只需确保遵守前面提到的缩放规则):"
+"子场景可以多次实例化, 因为这是由面包师支持的, 并且每个子场景都将被分配一个自"
+"己的光照贴图(只需确保遵守前面提到的缩放规则):"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:128
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:144
 msgid "Configure bounds"
 msgstr "配置边界"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:130
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:146
 msgid ""
 "Lightmap needs an approximate volume of the area affected because it uses it "
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
-"光线贴图(Lightmap)需要一个受影响区域的近似体积,因为它将光线传递给在该体积内部"
-"的动态对象(稍后再谈).就像使用 ``GIProbe`` 一样,用体积覆盖场景:"
+"光线贴图(Lightmap)需要一个受影响区域的近似体积, 因为它将光线传递给在该体积内"
+"部的动态对象(稍后再谈). 就像使用 ``GIProbe`` 一样, 用体积覆盖场景:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:137
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid "Setting up meshes"
 msgstr "设置网格"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:139
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:155
+#, fuzzy
 msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
-"have the \"Use in Baked Light\" property enabled."
-msgstr "要使** MeshInstance **节点参与烘焙过程,需要启用``在烘焙灯中使用``属性."
+"have the **Use in Baked Light** property enabled."
+msgstr ""
+"要使 ** MeshInstance ** 节点参与烘焙过程, 需要启用 ``在烘焙灯中使用`` 属性."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:144
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:160
 msgid ""
 "When auto-generating lightmaps on scene import, this is enabled "
 "automatically."
-msgstr "在场景导入时自动生成光照贴图时,会自动启用此功能."
+msgstr "在场景导入时自动生成光照贴图时, 会自动启用此功能."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:147
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:163
 msgid "Setting up lights"
 msgstr "设置灯"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:149
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:165
 msgid ""
 "Lights are baked with indirect light by default. This means that "
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
-"默认情况下,灯光采用间接灯光烘焙. 这意味着阴影贴图和光照仍然是动态的并影响移动"
-"的物体,但是光线反射的光将被烘焙."
+"默认情况下, 灯光采用间接灯光烘焙. 这意味着阴影贴图和光照仍然是动态的并影响移"
+"动的物体, 但是光线反射的光将被烘焙."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:153
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:169
 msgid ""
 "Lights can be disabled (no bake) or be fully baked (direct and indirect). "
 "This can be controlled from the **Bake Mode** menu in lights:"
@@ -284,197 +321,320 @@ msgstr ""
 "灯可以禁用(不烘焙)或完全烘焙(直接和间接). 这可以通过灯光中的 **烘焙模式** 菜"
 "单进行控制:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:158
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:174
 msgid "The modes are:"
 msgstr "模式是:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:160
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:177
+#, fuzzy
+msgid "Disabled"
+msgstr "禁用力量。"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:179
+#, fuzzy
 msgid ""
-"**Disabled:** Light is ignored in baking. Keep in mind hiding a light will "
-"have no effect for baking, so this must be used instead."
+"The light is ignored when baking lightmaps. Keep in mind hiding a light will "
+"have no effect for baking, so this must be used instead of hiding the Light "
+"node."
 msgstr ""
-"**禁用:** 烘焙时忽略灯光. 请记住隐藏灯光对烘焙没有影响,因此必须使用此灯泡."
+"**禁用:** 烘焙时忽略灯光. 请记住隐藏灯光对烘焙没有影响, 因此必须使用此灯泡."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:161
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:182
 msgid ""
-"**Indirect:** This is the default mode. Only indirect lighting will be baked."
-msgstr "**间接:** 这是默认模式. 只会间接照明."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:162
-msgid ""
-"**All:** Both indirect and direct lighting will be baked. If you don't want "
-"the light to appear twice (dynamically and statically), simply hide it."
+"This is the mode to use for dynamic lighting effects such as explosions and "
+"weapon effects."
 msgstr ""
-"**全部:** 间接和直接照明都将被烘焙. 如果您不希望灯光出现两次(动态和静态),只需"
-"将其隐藏即可."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:165
-msgid "Baking quality"
-msgstr "烘焙质量"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:167
-msgid ""
-"``BakedLightmap`` uses, for simplicity, a voxelized version of the scene to "
-"compute lighting. Voxel size can be adjusted with the **Bake Subdiv** "
-"parameter. More subdivision results in more detail, but also takes more time "
-"to bake."
-msgstr ""
-"为简单起见, ``烘焙光照贴图(BakedLightmap)`` 使用场景的体素化版本来计算光照. "
-"可以使用 **烘焙细分(Bake Subdiv)** 参数调整体素大小. 更多细分会产生更多细节,"
-"但也需要更多时间来烘焙."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:171
-msgid ""
-"In general, the defaults are good enough. There is also a **Capture "
-"Subdivision** (that must always be equal to or less than the main "
-"subdivision), which is used for capturing light in dynamic objects (more on "
-"that later). Its default value is also good enough for most cases."
-msgstr ""
-"通常,默认值足够好. 还有一个 **捕捉细分(Capture Subdivision)** (必须始终等于或"
-"小于主细分),用于捕捉动态对象中的光(稍后会详细介绍). 对于更多情况,它的默认值也"
-"足够好."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:178
-msgid ""
-"Besides the capture size, quality can be modified by setting the **Bake "
-"Mode**. Two modes of capturing indirect are provided:"
-msgstr ""
-"除捕获大小外,还可以通过设置 **烘焙模式** 来修改质量. 提供了两种间接捕获模式:"
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:183
-msgid ""
-"**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
-"Looks similar to (but slightly better than) ``GIProbe``."
-msgstr ""
-"**Voxel Cone**: Trace:是默认的；它不太精确,但更快.看起来类似于(但比) "
-"``GIProbe`` 稍好."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:184
-msgid ""
-"**Ray Tracing**: This method is more precise, but can take considerably "
-"longer to bake. If used in low or medium quality, some scenes may produce "
-"grain."
-msgstr ""
-"**光线追踪(Ray Tracing)** :这种方法更精确,但烘焙时间可能要长得多. 如果以低质"
-"量或中等质量使用,某些场景可能会产生噪声颗粒."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:185
+#, fuzzy
+msgid "Indirect"
+msgstr "rect2"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
+msgid ""
+"This is the default mode, and is a compromise between performance and real-"
+"time friendliness. Only indirect lighting will be baked. Direct light and "
+"shadows are still real-time, as they would be without BakedLightmap."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:191
+msgid ""
+"This mode allows performing *subtle* changes to a light's color, energy and "
+"position while still looking fairly correct. For example, you can use this "
+"to create flickering static torches that have their indirect light baked."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:196
+msgid "All"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:198
+msgid ""
+"Both indirect and direct lighting will be baked. Since static surfaces can "
+"skip lighting and shadow computations entirely, this mode provides the best "
+"performance along with smooth shadows that never fade based on distance. The "
+"real-time light will not affect baked surfaces anymore, but it will still "
+"affect dynamic objects. When using the **All** bake mode on a light, dynamic "
+"objects will not cast real-time shadows onto baked surfaces, so you need to "
+"use a different approach such as blob shadows instead. Blob shadows can be "
+"implemented with a Sprite3D + RayCast setup, or a negative SpotLight "
+"pointing down with its bake mode set to **Disabled**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:208
+msgid ""
+"The light will not be adjustable at all during gameplay; moving it and "
+"changing its color will not have any effect on static surfaces."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:211
+msgid ""
+"Since bake modes can be adjusted on a per-light basis, it is possible to "
+"create hybrid baked light setups. One popular option is to use a real-time "
+"DirectionalLight with its bake mode set to **Indirect**, and use the **All** "
+"bake mode for OmniLights and SpotLights. This provides good performance "
+"while still allowing dynamic objects to cast real-time shadows in outdoor "
+"areas."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:218
 msgid "Baking"
 msgstr "烘焙"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:189
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:220
+#, fuzzy
 msgid ""
-"To begin the bake process, just push the big **Bake Lightmaps** button on "
-"top when selecting the ``BakedLightmap`` node:"
+"To begin the bake process, just push the **Bake Lightmaps** button on top "
+"when selecting the BakedLightmap node:"
 msgstr ""
-"要开始烘焙过程,只需在选择 ``BakedLightmap`` 节点时按下顶部的 ** 烘焙光照贴图"
+"要开始烘焙过程, 只需在选择 ``BakedLightmap`` 节点时按下顶部的 ** 烘焙光照贴图"
 "(Bake Lightmaps )** 大按钮:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:194
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:225
 msgid ""
 "This can take from seconds to minutes (or hours) depending on scene size, "
 "bake method and quality selected."
 msgstr ""
-"这可能需要几秒到几分钟(或几小时),具体取决于场景大小,烘焙方法和所选质量."
+"这可能需要几秒到几分钟(或几小时), 具体取决于场景大小, 烘焙方法和所选质量."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:198
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:229
+msgid "Balancing bake times with quality"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:231
+msgid ""
+"Since high-quality bakes can take very long (up to several hours for large "
+"complex scenes), it is recommended to use lower quality settings at first. "
+"Then, once you are confident with your scene's lighting setup, raise the "
+"quality settings and perform a \"final\" bake before exporting your project."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:237
 msgid "Configuring bake"
 msgstr "配置烘焙"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:200
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:239
 msgid "Several more options are present for baking:"
 msgstr "烘焙还有几种选择:"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:202
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:241
 msgid ""
-"**Bake Subdiv**: The Godot lightmapper uses a grid to transfer light "
-"information around; the default value is fine and should work for most "
-"cases. Increase it in case you want better lighting on small details or your "
-"scene is large."
+"**Bake Extents**: The size of the area affected. This can be edited in the "
+"3D editor viewport using the handles. Any object that can have lightmaps "
+"baked and is *touching* the bake extents will have lightmaps baked for it, "
+"but dynamic object capture will only work within the extents."
 msgstr ""
-"** 烘焙细分(Bake Subdiv)** : 光照贴图机(Godot lightmapper)使用网格来传输光信"
-"息. 默认值能很好地适用大多数情况.您希望更好地照亮小细节或您的场景很大,可以增"
-"大它."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:203
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:247
+#, fuzzy
+msgid "Tweaks"
+msgstr "扭捏"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:249
 msgid ""
-"**Capture Subdiv**: This is the grid used for real-time capture information "
-"(lighting dynamic objects). Default value is generally OK, it's usually "
-"smaller than Bake Subdiv and can't be larger than it."
+"**Quality:** Three bake quality modes are provided: Low, Medium, High, and "
+"Ultra. Higher quality takes more time, but result in a better-looking "
+"lightmap with less noise. The difference is especially noticeable with "
+"emissive materials or areas that get little to no direct lighting."
 msgstr ""
-"** Capture Subdiv**: 这是用于实时捕获信息的网格(照明动态对象). 默认值通常是"
-"OK,它通常小于Bake Subdiv并且不能大于它."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:204
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:253
 msgid ""
-"**Bake Quality**: Three bake quality modes are provided, Low, Medium and "
-"High. Higher quality takes more time."
-msgstr "**烘焙质量**:提供三种烘焙质量模式,低,中和高. 更高的质量需要更多的时间."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:205
-msgid ""
-"**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
-"Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
+"**Bounces:** The number of bounces to use for indirect lighting. The default "
+"value (3) is a good compromise between bake times and quality. Higher values "
+"will make light bounce around more times before it stops, which makes "
+"indirect lighting look smoother (but also brighter). During the initial "
+"lighting iteration work, it is recommended to decrease the number of bounces "
+"to 1 to speed up baking. Remember that your scene will be darker when "
+"decreasing the number of bounces."
 msgstr ""
-"**烘焙模式(Bake Mode)** :烘焙器可以使用两种不同的技术: *体素圆锥追踪(Voxel "
-"Cone Tracing )* (快速但近似),或 *光线追踪(RayTracing)* (慢但准确)."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:206
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:259
 msgid ""
-"**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
-"``GIProbe``."
-msgstr "**传播**: 用于*Voxel Cone Trace*模式.工作原理与 ``GIProbe`` 中一样."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:207
-msgid ""
-"**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
-"over white (1.0)."
-msgstr "**HDR** : 如果禁用,则光照贴图更小,但不能捕捉到任何超过白色的光线(1.0)."
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:208
-msgid ""
-"**Image Path**: Where lightmaps will be saved. By default, on the same "
-"directory as the scene (\".\"), but can be tweaked."
+"**Use Denoiser:** If enabled, uses OpenImageDenoise to make the lightmap "
+"significantly less noisy. This increases bake times and can occasionally "
+"introduce artifacts, but the result is often worth it."
 msgstr ""
-"**图像路径** : Lightmaps的保存位置.默认情况下,保存在与场景相同的目录下 (\"."
-"\"),但可以进行调整."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:209
-msgid "**Extents**: Size of the area affected (can be edited visually)"
-msgstr "**范围**:受影响区域的大小(可以直观地编辑)"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:262
+msgid ""
+"**Use Hdr:** If disabled, lightmaps are smaller on disk, but they won't be "
+"able to capture any light over white (1.0). This will result in visible "
+"clipping if you have bright lights in your scene. When HDR is disabled, "
+"banding may also be visible in the lightmap."
+msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:210
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:266
+msgid ""
+"**Use Color:** If disabled, lightmaps are smaller on disk, but the lightmap "
+"won't be able to store colored lighting. When baking indirect light only, "
+"the difference may be barely visible since indirect light is generally not "
+"highly saturated. However, when baking both direct and indirect lighting "
+"using the **All** bake mode on a light, this will turn colored lighting into "
+"grayscale lighting. This can be disabled together with HDR to get the "
+"smallest possible lightmap file at a given resolution."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:273
+msgid ""
+"**Bias:** The offset value to use for shadows in 3D units. You generally "
+"don't need to change this value, except if you run into issues with light "
+"bleeding or dark spots in your lightmap after baking. This setting does not "
+"affect real-time shadows casted on baked surfaces."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:277
+msgid ""
+"**Default Texels Per Unit:** For meshes that do not specify their own "
+"lightmap texel density, this will be used as the value. Higher values result "
+"in *lower-resolution* lightmaps, which result in faster bake times and lower "
+"file sizes at the cost of blurrier indirect lighting and shadows."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:283
+#, fuzzy
+msgid "Atlas"
+msgstr "Atlas Tiles(图块组)"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:285
+msgid ""
+"**Generate:** If enabled, a texture atlas will be generated for the "
+"lightmap. This results in more efficient rendering, but is only compatible "
+"with the GLES3 rendering backend. Disable this setting if your project is "
+"allowed to fall back to GLES2. (This is not the case by default and must be "
+"enabled in the Project Settings.) *This setting is ignored when the project "
+"is configured to use GLES2 by default.*"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:291
+msgid ""
+"**Max Size:** The maximum size of the atlas in pixels. Higher values result "
+"in a more efficient atlas, but are less compatible with old/low-end "
+"hardware. If in doubt, leave this setting on its default value (4096)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:296
+msgid "Capture"
+msgstr "捕获"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:298
+msgid ""
+"**Enabled:** This enables probe capture so that dynamic objects can "
+"*receive* indirect lighting. Regardless of this setting's value, dynamic "
+"objects will not be able to *contribute* indirect lighting to the scene. "
+"This is a limitation of lightmaps."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:301
+msgid ""
+"**Cell Size:** The distance between lightmap probes in 3D units. Higher "
+"values result in more sparse probe placement, which decreases bake times and "
+"file size at the cost of lower lighting accuracy for dynamic objects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:304
+msgid ""
+"**Quality:** The lightmap probe generation quality. Higher values result in "
+"more accurate lighting, but take longer to bake. This setting does not "
+"affect the *density* of the lightmap probes, only their quality."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:307
+msgid ""
+"**Propagation:** Similar to :ref:`GIProbe <doc_gi_probes>`'s Propagation "
+"property. Higher values result in brighter and more diffuse indirect "
+"lighting for dynamic objects. Adjust this value depending on your scene to "
+"make dynamic objects better fit with static baked lighting."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:313
+msgid "Data"
+msgstr "数据"
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:315
+#, fuzzy
 msgid ""
 "**Light Data**: Contains the light baked data after baking. Textures are "
 "saved to disk, but this also contains the capture data for dynamic objects, "
-"which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
-"you can save it to disk."
+"which can be heavy. If you are using a scene in ``.tscn`` format, you should "
+"save this resource to an external binary ``.lmbake`` file to avoid bloating "
+"the ``.tscn`` scene with binary data encoded in Base64."
 msgstr ""
-"**光数据(Light Data)** :包含烘焙后的光烘焙数据. 纹理保存到磁盘,但这也包含动态"
-"对象的捕获数据,这些数据可能有点大. 如果您使用.tscn格式(而不是.scn),则可以将其"
-"保存到磁盘."
+"**光数据(Light Data)** : 包含烘焙后的光烘焙数据. 纹理保存到磁盘, 但这也包含动"
+"态对象的捕获数据, 这些数据可能有点大. 如果您使用.tscn格式(而不是.scn), 则可以"
+"将其保存到磁盘."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:213
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:321
+msgid ""
+"The Light Data resource can be edited to adjust two additional properties:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:323
+msgid ""
+"**Energy:** Adjusts the lightmap's brightness. Higher values result in "
+"brighter lightmaps. This can be adjusted at run-time for short-lived dynamic "
+"effects such as thunderstorms. However, keep in mind that it will affect "
+"*all* baked lights."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:326
+msgid ""
+"**Interior:** If enabled, dynamic objects will not make use of environment "
+"lighting and will use light probes for ambient lighting exclusively. If "
+"disabled, both environment lighting and light probes are used to light up "
+"dynamic objects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:332
+msgid ""
+"The generated EXR file can be viewed and even edited using an image editor "
+"to perform post-processing if needed. However, keep in mind that changes to "
+"the EXR file will be lost when baking lightmaps again."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:337
 msgid "Dynamic objects"
 msgstr "动态对象"
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:215
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:339
+#, fuzzy
 msgid ""
-"In other engines or lightmapper implementations, you are required to "
-"manually place small objects called \"lightprobes\" all around the level to "
-"generate *capture* data. This is used to, then, transfer the light to "
+"In other engines or lightmapper implementations, you are generally required "
+"to manually place small objects called \"lightprobes\" all around the level "
+"to generate *capture* data. This is then used to transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
-"在其他引擎或lightmapper实现中,您需要手动在该级别周围放置称为``lightprobes``的"
-"小对象以生成* capture *数据. 然后,这用于将光传输到在场景中移动的动态对象."
+"在其他引擎或lightmapper实现中, 您需要手动在该级别周围放置称为 "
+"``lightprobes`` 的小对象以生成* capture *数据. 然后, 这用于将光传输到在场景中"
+"移动的动态对象."
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:220
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:344
 msgid ""
 "However, this implementation of lightmapping uses a different method. The "
 "process is automatic, so you don't have to do anything. Just move your "
 "objects around, and they will be lit accordingly. Of course, you have to "
 "make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""
-"但是,这种光照贴图的实现使用了不同的方法. 这个过程是自动的,所以您不必做任何事"
-"情. 只需移动物体,它们就会相应点亮. 当然,您必须确保相应地设置场景边界,否则它将"
-"无法工作."
+"但是, 这种光照贴图的实现使用了不同的方法. 这个过程是自动的, 所以您不必做任何"
+"事情. 只需移动物体, 它们就会相应点亮. 当然, 您必须确保相应地设置场景边界, 否"
+"则它将无法工作."

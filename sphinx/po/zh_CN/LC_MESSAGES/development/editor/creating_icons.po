@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,8 @@ msgid ""
 "from. In most cases, it's still recommended to create icons for new classes "
 "to improve the user experience."
 msgstr ""
-"当一个新类被创建并暴露于脚本时,编辑器的界面将显示一个默认图标,表示它从中继承"
-"的基类.在大多数情况下,仍然建议为新类创建图标以改善用户体验."
+"当一个新类被创建并暴露于脚本时, 编辑器的界面将显示一个默认图标, 表示它从中继"
+"承的基类. 在大多数情况下, 仍然建议为新类创建图标以改善用户体验."
 
 #: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
@@ -41,7 +41,7 @@ msgid ""
 "instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
 "editor."
 msgstr ""
-"要创建新图标,你首先需要安装一个矢量图形编辑器.例如,你可以使用开源的 "
+"要创建新图标, 你首先需要安装一个矢量图形编辑器. 例如, 你可以使用开源的 "
 "`Inkscape <https://inkscape.org/>` _编辑器."
 
 #: ../../docs/development/editor/creating_icons.rst:17
@@ -52,22 +52,22 @@ msgstr "克隆包含所有编辑器图标的 ``godot`` 资源库:"
 msgid ""
 "The icons must be created in a vector graphics editor in SVG format. There "
 "are two main requirements to follow:"
-msgstr "图标必须在矢量图形编辑器中以 SVG 格式创建.要遵循两个主要要求:"
+msgstr "图标必须在矢量图形编辑器中以 SVG 格式创建. 要遵循两个主要要求:"
 
 #: ../../docs/development/editor/creating_icons.rst:26
 msgid ""
 "Icons must be 16×16. In Inkscape, you can configure the document size in "
 "**File > Document Properties**."
 msgstr ""
-"图标必须是16×16.在Inkscape中,你可以在 **文件>文档属性** 中配置文档大小."
+"图标必须是16×16. 在Inkscape中, 你可以在 **文件>文档属性** 中配置文档大小."
 
 #: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
 "Lines should be snapped to pixels whenever possible to remain crisp at lower "
 "DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
-"线条应该尽可能地被捕捉到像素,以便在较低的DPI下保持清晰,你可以在Inkscape中创建"
-"一个16×16的网格来简化这个过程."
+"线条应该尽可能地被捕捉到像素, 以便在较低的DPI下保持清晰, 你可以在Inkscape中创"
+"建一个16×16的网格来简化这个过程."
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid ""
@@ -76,9 +76,9 @@ msgid ""
 "intended name in a case-sensitive manner. For example, to create an icon for "
 "CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
-"一旦你对图标的设计感到满意,就把图标保存在拷贝版本库的 ``editor/icons`` 文件夹"
-"中.图标的名称应该与预期的名称相匹配,并区分大小写.例如,要为CPUParticles2D创建"
-"一个图标,将文件命名为 ``CPUParticles2D.svg`` ."
+"一旦你对图标的设计感到满意, 就把图标保存在拷贝版本库的 ``editor/icons`` 文件"
+"夹中. 图标的名称应该与预期的名称相匹配, 并区分大小写. 例如, 要为"
+"CPUParticles2D创建一个图标, 将文件命名为 ``CPUParticles2D.svg`` ."
 
 #: ../../docs/development/editor/creating_icons.rst:37
 msgid "Color conversion for light editor themes"
@@ -98,8 +98,8 @@ msgstr ""
 "如果用户将其编辑器配置为使用浅色主题,Godot将根据 `一组预定义的颜色映射 "
 "<https://github.com/godotengine/godot/blob/"
 "b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
-"L184>`__ 来转换图标的颜色.这是为了确保图标始终以足够的对比度显示.尽量将图标的"
-"调色板限制在上面列表中的颜色.否则,您的图标在浅色背景下可能会变得难以预览."
+"L184>`__ 来转换图标的颜色. 这是为了确保图标始终以足够的对比度显示. 尽量将图标"
+"的调色板限制在上面列表中的颜色. 否则, 您的图标在浅色背景下可能会变得难以预览."
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
@@ -111,8 +111,8 @@ msgid ""
 "size so they can be efficiently parsed. Editor icons must be first optimized "
 "before being added to the engine, to do so:"
 msgstr ""
-"因为编辑器在加载时只呈现一次SVG,所以SVG的大小必须很小,这样才能有效地解析SVG."
-"在添加到引擎之前,必须首先优化编辑器图标,为此:"
+"因为编辑器在加载时只呈现一次SVG, 所以SVG的大小必须很小, 这样才能有效地解析"
+"SVG. 在添加到引擎之前, 必须首先优化编辑器图标, 为此:"
 
 #: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
@@ -122,7 +122,7 @@ msgid ""
 "``PATH`` environment variable."
 msgstr ""
 "从 `发布选项卡 <https://github.com/RazrFalcon/svgcleaner/releases/latest>`__ "
-"下载二进制文件,并将其放置在环境变量 ``PATH`` 中的一个位置, `svgcleaner "
+"下载二进制文件, 并将其放置在环境变量 ``PATH`` 中的一个位置, `svgcleaner "
 "<https://github.com/RazrFalcon/svgcleaner>`__ ."
 
 #: ../../docs/development/editor/creating_icons.rst:58
@@ -130,7 +130,7 @@ msgid ""
 "Run the command below, replacing ``svg_source.svg`` with the path to your "
 "SVG file (which can be a relative or absolute path):"
 msgstr ""
-"运行下面的命令,将 ``svg_source.svg`` 替换为SVG文件的路径(可以是相对或绝对路"
+"运行下面的命令, 将 ``svg_source.svg`` 替换为SVG文件的路径(可以是相对或绝对路"
 "径):"
 
 #: ../../docs/development/editor/creating_icons.rst:65
@@ -139,8 +139,8 @@ msgid ""
 "The optimized icon will be saved to ``svg_optimized.svg``. You can also "
 "change the destination parameter to any relative or absolute path you'd like."
 msgstr ""
-"``--multipass`` 开关可以提高压缩率,所以一定要包含它.优化后的图标将被保存为 "
-"``svg_optimized.svg`` .你也可以将目标参数改为相对或绝对路径."
+"``--multipass`` 开关可以提高压缩率, 所以一定要包含它. 优化后的图标将被保存为 "
+"``svg_optimized.svg`` . 你也可以将目标参数改为相对或绝对路径."
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -149,8 +149,8 @@ msgid ""
 "recommended to keep the source SVG around if you need to make further "
 "changes."
 msgstr ""
-"虽然这个优化步骤不会对图标的质量产生明显影响,但还是会删除指南等只属于编辑器的"
-"信息.因此,如果你需要做进一步的修改,建议将源SVG保留下来."
+"虽然这个优化步骤不会对图标的质量产生明显影响, 但还是会删除指南等只属于编辑器"
+"的信息. 因此, 如果你需要做进一步的修改, 建议将源SVG保留下来."
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
@@ -162,8 +162,8 @@ msgid ""
 "to add optimized icons to ``editor/icons`` in the main repository. Recompile "
 "the engine to make it pick up new icons for classes."
 msgstr ""
-"如果你对引擎本身有贡献,你应该pull request,在主仓库的 ``editor/icons`` 中添加"
-"优化的图标.重新编译引擎,使其获取新的类图标."
+"如果你对引擎本身有贡献, 你应该pull request, 在主仓库的 ``editor/icons`` 中添"
+"加优化的图标. 重新编译引擎, 使其获取新的类图标."
 
 #: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
@@ -172,15 +172,15 @@ msgid ""
 "don't need to make a separate pull request for your icons to be available "
 "within the editor as they can be self-contained."
 msgstr ""
-"也可以在模块内创建自定义图标.如果您要创建自己的模块,并且不打算将其与Godot集"
-"成,则不需要单独的拉取请求即可在编辑器中使用图标,因为它们可以独立存在."
+"也可以在模块内创建自定义图标. 如果您要创建自己的模块, 并且不打算将其与Godot集"
+"成, 则不需要单独的拉取请求即可在编辑器中使用图标, 因为它们可以独立存在."
 
 #: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
 msgstr ""
-"有关如何创建模块图标的特定说明,请参考 :ref:`创建自定义模块图标 "
+"有关如何创建模块图标的特定说明, 请参考 :ref:`创建自定义模块图标 "
 "<doc_custom_module_icons>`."
 
 #: ../../docs/development/editor/creating_icons.rst:92
@@ -189,7 +189,7 @@ msgstr "故障排除"
 
 #: ../../docs/development/editor/creating_icons.rst:94
 msgid "If icons don't appear in the editor, make sure that:"
-msgstr "如果图标没有出现在编辑器中,请确保:"
+msgstr "如果图标没有出现在编辑器中, 请确保:"
 
 #: ../../docs/development/editor/creating_icons.rst:96
 msgid ""
@@ -201,7 +201,7 @@ msgid ""
 "``modules/svg`` is enabled (it should be enabled by default). Without it, "
 "icons won't appear in the editor at all."
 msgstr ""
-"启用 ``modules/svg`` (默认情况下应该是启用的).没有它,图标针不会出现在编辑器"
+"启用 ``modules/svg`` (默认情况下应该是启用的). 没有它, 图标针不会出现在编辑器"
 "中."
 
 #: ../../docs/development/editor/creating_icons.rst:102

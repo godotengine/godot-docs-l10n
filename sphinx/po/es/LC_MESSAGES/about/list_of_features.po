@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Servidores Linux y macOS sin cabeza (headless) "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -637,6 +639,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* \"Debanding\" opcional para evitar las bandas de color (efectivo "
+"cuando se activa el renderizado HDR)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -692,9 +696,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antialiasing de múltiples muestras (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antialiasing de múltiples muestras (MSAA)."
+msgstr "Antialiasing aproximado rápido (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -759,11 +762,8 @@ msgid "Ragdolls."
 msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Formas integradas: cuboide, esfera, cápsula, cilindro (solo con la física "
-"Bullet o Bala)."
+msgstr "Formas integradas: cuboide, esfera, cápsula, cilindro."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -865,7 +865,8 @@ msgstr ""
 "asincrónicas o hacer uso de múltiples núcleos de procesador."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C #: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -985,6 +986,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Entrada de audio para grabar micrófonos con acceso en tiempo real usando la "
+"clase AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1143,6 +1146,8 @@ msgstr "Entrada de lápiz/tableta con soporte de presión."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"el soporte de entrada para mando, teclado y ratón se encuentra también "
+"disponible en Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1329,7 +1334,7 @@ msgstr "Soporte para anuncios utilizando módulos de terceros."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Soporte para la incrustación de subvistas en Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"

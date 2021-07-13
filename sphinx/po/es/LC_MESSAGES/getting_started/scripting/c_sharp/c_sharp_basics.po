@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,12 +98,17 @@ msgid ""
 "Install the latest stable version of `.NET Core SDK <https://dotnet."
 "microsoft.com/download/dotnet-core>`__ (3.1 as of writing)."
 msgstr ""
+"Instale la última versión estable de `.NET Core SDK <https://dotnet."
+"microsoft.com/download/dotnet-core>` __ (3.1 en el momento de la escritura)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:48
 msgid ""
 "From Godot 3.2.3 onwards, installing Mono SDK is not a requirement anymore, "
 "except it is required if you are building the engine from source."
 msgstr ""
+"Desde Godot 3.2.3 en adelante, la instalación de Mono SDK ya no es un "
+"requisito, excepto que es obligatorio si está construyendo el motor desde la "
+"fuente."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid ""
@@ -114,6 +119,13 @@ msgid ""
 "in the Mono SDK, but it can't build C# projects with the new ``csproj`` "
 "format, therefore .NET Core SDK is required for Godot 3.2.3+."
 msgstr ""
+"Godot agrupa las partes de Mono necesarias para ejecutar juegos ya "
+"compilados, sin embargo, Godot no incluye las herramientas necesarias para "
+"crear y compilar juegos, como MSBuild. Estas herramientas deben instalarse "
+"por separado. Las herramientas necesarias se incluyen en .NET Core SDK. "
+"MSBuild también se incluye en Mono SDK, pero no puede compilar proyectos C # "
+"con el nuevo formato ``csproj``, por lo que se requiere .NET Core SDK para "
+"Godot 3.2.3+."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 #, fuzzy
@@ -133,6 +145,8 @@ msgid ""
 "Be sure to install the 64-bit version of the SDK(s) if you are using the 64-"
 "bit version of Godot."
 msgstr ""
+"Asegúrese de instalar la versión de 64 bits de los SDK si está utilizando la "
+"versión de 64 bits de Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 #, fuzzy
@@ -197,12 +211,16 @@ msgstr "JetBrains Rider"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
 msgid "See the following sections for how to configure an external editor:"
 msgstr ""
+"Consulte las siguientes secciones para saber cómo configurar un editor "
+"externo:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:95
 msgid ""
 "After reading the \"Prerequisites\" section, you can download and install "
 "`JetBrains Rider <https://www.jetbrains.com/rider/download>`__."
 msgstr ""
+"Después de leer la sección \"Requisitos previos\", puede descargar e "
+"instalar `JetBrains Rider <https://www.jetbrains.com/rider/download>` __."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
@@ -243,6 +261,9 @@ msgid ""
 "`Visual Studio Code <https://code.visualstudio.com/download>`__ (aka VS "
 "Code)."
 msgstr ""
+"Después de leer la sección \"Requisitos previos\", puede descargar e "
+"instalar `Visual Studio Code <https://code.visualstudio.com/download>` __ "
+"(también conocido como VS Code)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:116
 #, fuzzy
@@ -308,10 +329,15 @@ msgid ""
 "required SDKs if you have the correct workloads selected, so you don't need "
 "to manually install the things listed in the \"Prerequisites\" section."
 msgstr ""
+"Descargue e instale la última versión de `Visual Studio <https://"
+"visualstudio.microsoft.com/downloads/>` __. Visual Studio incluirá los SDK "
+"necesarios si ha seleccionado las cargas de trabajo correctas, por lo que no "
+"es necesario que instale manualmente las cosas que se enumeran en la sección "
+"\"Requisitos previos\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
 msgid "While installing Visual Studio, select these workloads:"
-msgstr ""
+msgstr "Mientras instala Visual Studio, seleccione estos workloads:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:139
 #, fuzzy
@@ -320,7 +346,7 @@ msgstr "Desarrollo del motor"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:140
 msgid ".NET Core cross-platform development"
-msgstr ""
+msgstr "Desarrollo multiplataforma de .NET Core"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:144
 #, fuzzy
@@ -334,6 +360,10 @@ msgid ""
 "releases>`__. Double click on the downloaded file and follow the "
 "installation process."
 msgstr ""
+"A continuación, debe descargar la extensión de Godot Visual Studio desde "
+"github `aquí <https://github.com/godotengine/godot-csharp-visualstudio/"
+"releases>` __. Haga doble clic en el archivo descargado y siga el proceso de "
+"instalación."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 msgid "Creating a C# script"
@@ -585,6 +615,8 @@ msgid ""
 "As of Godot 3.2.3, Godot automatically downloads and sets up newly added "
 "NuGet packages the next time it builds the project."
 msgstr ""
+"A partir de Godot 3.2.3, Godot descarga y configura automáticamente los "
+"paquetes NuGet recién agregados la próxima vez que compila el proyecto."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
 msgid "Profiling your C# code"

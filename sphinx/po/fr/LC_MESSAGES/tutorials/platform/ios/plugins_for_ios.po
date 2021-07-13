@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,13 @@ msgid "Plugins for iOS"
 msgstr "Plugins pour iOS"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
-#, fuzzy
 msgid ""
 "At the moment Godot provides StoreKit, GameCenter, iCloud services plugins. "
 "They are using same model of asynchronous calls explained below."
 msgstr ""
-"Actuellement, il existe deux API iOS partiellement implémentées, GameCenter "
-"et Storekit. Toutes deux utilisent le même modèle d'appels asynchrones "
-"expliqué ci-dessous."
+"Pour le moment, Godot fournit les plugins de services StoreKit, GameCenter, "
+"iCloud. Ils utilisent le même modèle d'appels asynchrones expliqué ci-"
+"dessous."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
@@ -37,9 +36,8 @@ msgstr ""
 "Les accès ARKit et Camera sont également fournis sous forme de plugins."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:12
-#, fuzzy
 msgid "Accessing plugin singletons"
-msgstr "Accéder aux nœuds de scène"
+msgstr "Accéder aux singletons de plug-in"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid ""
@@ -52,9 +50,8 @@ msgstr ""
 "has_singleton()`, qui renvoie un singleton enregistré."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:18
-#, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
-msgstr "Voici un exemple d'un nœud squelettique avec deux os :"
+msgstr "Voici un exemple de la façon de procéder dans GDScript :"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:32
 msgid "Asynchronous methods"
@@ -279,13 +276,12 @@ msgstr ""
 "mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
-#, fuzzy
 msgid ""
 "The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
 msgstr ""
-"L'API du Game Center est disponible via le singleton \"GameCenter\". Elle "
-"comporte 9 méthodes :"
+"L'API Game Center est disponible via le singleton ``GameCenter``. Il possède "
+"les méthodes suivantes :"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:201
 msgid "``Error authenticate();``"

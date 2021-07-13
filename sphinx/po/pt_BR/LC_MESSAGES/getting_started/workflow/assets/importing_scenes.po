@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Importando cenas 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot scene importer"
-msgstr "Importador de cena Godot"
+msgstr "Importador de cena do Godot"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
@@ -40,33 +40,32 @@ msgstr ""
 "trabalhada no seu DCC 3D favorito será transferida o mais próximo possível."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-#, fuzzy
 msgid "Godot supports the following 3D *scene file formats*:"
 msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid ""
 "glTF 2.0 **(recommended)**. Godot has full support for both text (``.gltf``) "
 "and binary (``.glb``) formats."
-msgstr "glTF 2.0. Godot tem suporte total para formatos de texto e binários."
+msgstr ""
+"glTF 2.0 **(recomendado)**. Godot tem suporte total para formatos de texto "
+"(``gltf``) e binários (``.glb``)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
 msgstr "DAE (COLLADA), um formato mais antigo que é totalmente suportado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
-#, fuzzy
 msgid ""
 "OBJ (Wavefront) format + their MTL material files. This is also fully "
 "supported, but pretty limited (no support for pivots, skeletons, animations, "
 "PBR materials, ...)."
 msgstr ""
-"Formatos OBJ (Wavefront). Também é oferecido suporte completo, mas bastante "
-"limitado (sem suporte para pivots, esqueletos, etc)."
+"Formatos OBJ (Wavefront) + seus arquivos de material MTL. Também é oferecido "
+"suporte completo, mas bastante limitado (sem suporte para pivôs, esqueletos, "
+"animações, materiais PBR, ...)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
-#, fuzzy
 msgid "ESCN, a Godot-specific format that Blender can export with a plugin."
 msgstr ""
 "ESCN, um formato específico do Godot que o Blender pode exportar com um "
@@ -78,7 +77,7 @@ msgid ""
 "proprietary, so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
-"FBX, suportado através da biblioteca Open Asset Import. No entanto, FBX é "
+"FBX, suportado através da biblioteca Open Asset Import. No entanto, o FBX é "
 "proprietário, por isso recomendamos o uso de outros formatos listados acima, "
 "se adequado para o seu fluxo de trabalho."
 
@@ -120,9 +119,8 @@ msgstr ""
 "versão do software."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:39
-#, fuzzy
 msgid "Exporting glTF 2.0 files from Blender"
-msgstr "Exportando arquivos DAE no Blender"
+msgstr "Exportando arquivos glTF 2.0 do Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:41
 msgid ""
@@ -140,9 +138,9 @@ msgid ""
 "mesh and textures set up in Blender. When brought into Godot the textures "
 "are part of the object's material file."
 msgstr ""
-"arquivos binários glTF são as menores das três opções. Eles incluem a malha "
-"e texturas configuradas no Blender. Quando trazidas para Godot, as texturas "
-"fazem parte do arquivo do material do objeto."
+"Arquivos binários glTF são as menores das três opções. Eles incluem a malha "
+"e texturas configuradas no Blender. Quando trazidas para o Godot, as "
+"texturas fazem parte do arquivo do material do objeto."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:47
 msgid ""
@@ -150,9 +148,9 @@ msgid ""
 "provide extra functionality in Godot, and shouldn't be used since they have "
 "a larger file size."
 msgstr ""
-"arquivos embedded glTF funcionam da mesma forma que arquivos binários. Eles "
-"não fornecem funcionalidade extra em Godot, e não devem ser usados, pois têm "
-"um tamanho de arquivo maior."
+"Arquivos incorporados glTF funcionam da mesma forma que arquivos binários. "
+"Eles não fornecem funcionalidade extra no Godot, e não devem ser usados, "
+"pois têm um tamanho de arquivo maior."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:50
 msgid ""
@@ -171,7 +169,6 @@ msgstr ""
 "Se você não precisa de nenhum desses arquivos, tudo bem usar glTF binários."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
@@ -184,31 +181,30 @@ msgid "Exporting DAE files from Blender"
 msgstr "Exportando arquivos DAE no Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
 msgstr ""
-"O Blender possui suporte ao formato COLLADA nativamente, mas está quebrado e "
-"não deveria ser usado."
+"O Blender possui suporte ao COLLADA nativamente, mas não funciona "
+"adequadamente para as necessidades de game engines e não deve ser usado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
 "does not work in Blender 2.8 or newer, but there are plans to update it in "
 "the future."
 msgstr ""
-"A Godot oferece um `Plugin Python <https://github.com/godotengine/collada-"
-"exporter>`__ que faz um trabalho bem melhor de exportar cenas."
+"O Godot oferece um `plugin do Blender <https://github.com/godotengine/"
+"collada-exporter>`__ que irá exportar corretamente cenas COLLADA para uso em "
+"Godot. Ele não funciona no Blender 2.8 ou mais recente, mas há planos para "
+"atualizá-lo no futuro."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "Exporting ESCN files from Blender"
 msgstr "Exportando arquivos ESCN do Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
-#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -217,22 +213,22 @@ msgid ""
 "experimental."
 msgstr ""
 "O mais poderoso, chamado `godot-blender-exporter <https://github.com/"
-"godotengine/godot-blender-exporter>`__. Ele usa um arquivo .escn, o que é "
-"uma espécie de arquivo .tscn (arquivo Godot Scene); ele retém o máximo de "
-"informações possível sobre uma Blender Scene."
+"godotengine/godot-blender-exporter>`__. Ele usa um arquivo .escn, que é uma "
+"espécie de arquivo .tscn (arquivo de cena do Godot); ele retém o máximo de "
+"informações possível sobre uma cena do Blender. Entretanto, ele é "
+"considerado experimental."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
-"O exportador ESCN tem um detalhado `document <escn_exporter/index.html>`__ "
+"O exportador ESCN tem um `documento <escn_exporter/index.html>`__ detalhado "
 "descrevendo seu uso e funcionalidade."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
-#, fuzzy
 msgid "Exporting textures separately"
-msgstr "Importando Texturas"
+msgstr "Exportando texturas separadamente"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
@@ -244,17 +240,24 @@ msgid ""
 "armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/"
 "RodZill4/material-maker>`__."
 msgstr ""
+"Embora as texturas possam ser exportadas com um modelo em certos formatos de "
+"arquivo, como glTF 2.0, você também pode exportá-los separadamente. Godot "
+"usa PBR (renderização fisicamente baseada) para seus materiais, então se um "
+"programa de texturização pode exportar texturas PBR, eles podem funcionar no "
+"Godot. Isto inclui o `conjunto Substance <https://www.substance3d.com/>`__, "
+"`ArmorPaint (código aberto) <https://armorpaint.org/>`__, e `Material Maker "
+"(open source) <https://github.com/RodZill4/material-maker>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
-#, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para mais informações sobre os materiais do Godot, veja :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
-#, fuzzy
 msgid "Exporting considerations"
-msgstr "Outras considerações"
+msgstr "Considerações de exportação"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
@@ -265,6 +268,12 @@ msgid ""
 "exporting the scene will lead to more consistent results and should be done "
 "whenever possible."
 msgstr ""
+"Como as GPUs só podem renderizar triângulos, as malhas que contêm quads ou N-"
+"gons precisam ser *trianguladas* antes de poderem ser renderizadas. O Godot "
+"pode triangular malhas na importação, mas os resultados podem ser "
+"imprevisíveis ou incorretos, especialmente com N-gons. Independentemente da "
+"aplicação alvo, triangular *antes* de exportar a cena levará a resultados "
+"mais consistentes e deve ser feita sempre que possível."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
@@ -275,16 +284,25 @@ msgid ""
 "depending on the exporter, you may be able to find and enable a "
 "**Triangulate Faces** option in the export dialog."
 msgstr ""
+"Para evitar problemas com triangulação incorreta após a importação no Godot, "
+"é recomendado fazer o DCC 3D triangular objetos por conta própria. No "
+"Blender, isto pode ser feito ao adicionar um modificador Triangular aos seus "
+"objetos e certificar-se de que **Aplicar Modificadores** esteja marcado na "
+"caixa de diálogo de exportação. Alternativamente, dependendo do exportador, "
+"você pode encontrar e ativar a opção **Triangular Faces** na caixa de "
+"diálogo de exportação."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid ""
 "To avoid issues with 3D selection in the editor, it is recommended to apply "
 "the object transform in the 3D DCC before exporting the scene."
 msgstr ""
+"Para evitar problemas com a seleção 3D no editor, é recomendado aplicar a "
+"transformação do objeto no DCC 3D antes de exportar a cena."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid "Import workflows"
-msgstr "Importar fluxos de trabalho"
+msgstr "Fluxos de trabalho de importação"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:115
 msgid ""
@@ -336,8 +354,8 @@ msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
-"O processo de importação é altamente customizável, já que diferentes "
-"desenvolvedores possuem diferentes necessidades."
+"Já que diferentes desenvolvedores possuem diferentes necessidades, este "
+"processo de importação é altamente personalizável."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:129
 msgid "Import options"
@@ -372,9 +390,8 @@ msgid "Allows setting a specific name to the generated root node."
 msgstr "Permite setar um nome específico para o nó raiz gerado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
-#, fuzzy
 msgid "Root Scale"
-msgstr "Nome da Raiz"
+msgstr "Escala da Raiz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
 msgid "The scale of the root node."
@@ -474,6 +491,9 @@ msgid ""
 "Godot will not reimport materials that are stored in external files unless "
 "you remove the associated ``.material`` file before reimporting."
 msgstr ""
+"O Godot não irá reimportar materiais que estão armazenados em arquivos "
+"externos, a menos que você remova o arquivo ``.material`` associado antes de "
+"reimportar."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
 msgid ""
@@ -482,6 +502,10 @@ msgid ""
 "dock, going to the Import dock then setting **Material > Storage** to "
 "**Built-In** instead of **Files**."
 msgstr ""
+"Para forçar a reimportação de materiais sempre que a cena 3D é reimportada, "
+"altere o modo de armazenamento na cena 3D selecionando-o na dock do "
+"FileSystem, indo para a dock de Importação e configurando **Material > "
+"Storage** para **Built-In** em vez de **Files**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:216
 msgid "Keep On Reimport"
@@ -633,7 +657,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
 msgid "Ensure Tangents"
-msgstr "Garanta tangentes"
+msgstr "Garantir tangentes"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
 msgid ""
@@ -666,9 +690,8 @@ msgstr ""
 "diretamente com malhas em vez de cenas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
-#, fuzzy
 msgid "Light Baking"
-msgstr "Light Baking"
+msgstr "Gerando e Gravando Iluminação"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -710,9 +733,8 @@ msgstr ""
 "subdiretório com o nome da cena."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
-#, fuzzy
 msgid "Animation options"
-msgstr "Animações"
+msgstr "Opções de animação"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
 msgid ""
@@ -738,6 +760,10 @@ msgid ""
 "Otherwise, changes made to animations from Godot will be lost when the "
 "project is run."
 msgstr ""
+"Para modificar animações de uma cena 3D importada, você precisa alterar a "
+"opção de armazenamento da animação de **Embutido** para **Arquivos** na dock "
+"de Importação. Caso contrário, alterações feitas nas animações do Godot "
+"serão perdidas quando o projeto for executado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "FPS"
@@ -897,11 +923,16 @@ msgid ""
 "greater than zero. You can then name a clip, specify which frames it starts "
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
+"É possível especificar várias animações de uma única linha do tempo como "
+"clipes. Para que isso funcione, o modelo deve ter apenas uma animação "
+"chamada ``default``. Para criar clipes, altere a quantidade do clipe para "
+"algo maior que zero. Em seguida, você pode nomear um clipe, especificar em "
+"quais quadros ele começa e termina e escolher se a animação será repetida ou "
+"não."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
-#, fuzzy
 msgid "Scene inheritance"
-msgstr "Usar a herança de cena"
+msgstr "Herança de cena"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
 msgid ""
@@ -946,9 +977,8 @@ msgid "Other than that, everything is allowed!"
 msgstr "Fora isso, tudo é permitido!"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
-#, fuzzy
 msgid "Import hints"
-msgstr "Importando"
+msgstr "Inferências de importação"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
@@ -987,25 +1017,24 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "Todos os sufixos descritos abaixo possuem *sensibilidade de caixa*."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:419
 msgid "Remove nodes (-noimp)"
 msgstr "Remover os Nós (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
-#, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"Nomes de nó que tenham esse sufixo serão removidos no horário de importação, "
-"não importa qual seja o seu tipo. Eles não aparecerão na cena importada."
+"Nomes de nó que tenham o sufixo ``-noimp`` serão removidos no momento da "
+"importação, não importa qual seja o seu tipo. Eles não aparecerão na cena "
+"importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
-#, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr "Criar colisões (-col, -colionly, -convcolonly)"
+msgstr "Criar colisões (-col, -convcol, -colionly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid ""
@@ -1015,6 +1044,12 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"A opção ``-col`` funcionará apenas para objetos Mesh. Se for detectado, um "
+"nó de colisão estática filho será adicionado, usando a mesma geometria da "
+"malha. Isto criará uma forma de colisão de malha de triângulo, que é uma "
+"opção lenta, mas precisa para a detecção de colisão. Esta opção é "
+"normalmente o que você quer para geometria de fase (mas veja também ``-"
+"colonly`` abaixo)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid ""
@@ -1028,49 +1063,55 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"A opção ``-convcol`` criará uma :ref:`class_convexpolygonshape` em vez de "
+"uma :ref:`class_concavepolygonshape`. Ao contrário das malhas triangulares "
+"que podem ser côncavas, uma forma convexa só pode representar com precisão "
+"uma forma que não tenha ângulos côncavos (uma pirâmide é convexa, mas uma "
+"caixa oca é côncava). Devido a isso, formas de colisão convexas geralmente "
+"não são adequadas para geometria de fase. Ao representar malhas simples o "
+"suficiente, formas de colisão convexas podem resultar em desempenho melhor "
+"em comparação a formas de colisão triangulares. Esta opção é ideal para "
+"objetos simples ou dinâmicos que requerem detecção de colisão mais precisa."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:442
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"No entanto, muitas vezes é o caso de que a geometria visual é muito complexa "
-"ou muito irregular para colisões, o que acaba não funcionando bem."
+"No entanto, em ambos os casos, a geometria visual é muito complexa ou muito "
+"irregular para colisões. Isto pode criar falhas físicas e retardar o motor "
+"desnecessariamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:446
-#, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"Para resolver isso, existe o modificador \"-colonly\", que removerá a malha "
-"na importação e criará uma colisão de :ref:`class_staticbody` ao invés. Isso "
-"ajuda a malha visual e a colisão atual a serem separadas."
+"Para resolver isso, existe o modificador ``-colonly``. Ele removerá a malha "
+"na importação e criará uma colisão de :ref:`class_staticbody` em seu lugar. "
+"Isso ajuda a separação da malha visual e da colisão real."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
-#, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"A opção \"-convcolonly\" criará um :ref:`class_convexpolygonshap` em vez de "
-"um :ref:`class_concavepolygonshape`."
+"A opção ``-convcolonly`` funciona de maneira semelhante, mas criará um :ref:"
+"`class_convexpolygonshap` em vez disso."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"Opção \"-colonly\" também pode ser usada com os objetos vazios do Blender. "
-"Na importação, criará um :ref:`class_staticbody` com um nó de colisão como "
-"filho. O nó de colisão terá uma das várias formas predefinidas, dependendo "
-"do tipo de desenho vazio do Blender:"
+"A opção ``-colonly`` também pode ser usada com os objetos vazios do Blender. "
+"Na importação, ela criará um :ref:`class_staticbody` com um nó de colisão "
+"como filho. O nó de colisão terá uma das várias formas predefinidas, "
+"dependendo do tipo de desenho vazio do Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:459
 msgid "Single arrow will create a :ref:`class_rayshape`."
@@ -1123,59 +1164,54 @@ msgid "Create navigation (-navmesh)"
 msgstr "Criar navegação (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:482
-#, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
 msgstr ""
-"Um nó de malha com este sufixo será convertido em uma malha de navegação. O "
-"nó original da Malha será removido."
+"Um nó de malha com o sufixo ``-navmesh`` será convertido em uma malha de "
+"navegação. O nó original da Malha será removido no momento da importação."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:486
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Cria um Veículo (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:488
-#, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"Um nó de malha com este sufixo será importado como um filho de um nó :ref:"
-"`VeículoBody <class_VehicleBody>`."
+"Um nó de malha com o sufixo ``-vehicle`` será importado como um filho de um "
+"nó :ref:`class_VehicleBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:492
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Crie uma Roda de Veículo (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:494
-#, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"Um nó de malha com este sufixo será importado como um filho de um nó :ref:"
-"`VehicleWheel <class_VehicleWheel>`."
+"Um nó de malha com o sufixo ``-wheel`` será importado como um filho de um "
+"nó :ref:`class_VehicleWheel`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:498
 msgid "Rigid Body (-rigid)"
 msgstr "Rigid Body (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:500
-#, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"Um nó de malha com este sufixo será importado como um filho de um nó :ref:"
-"`VeículoBody <class_VehicleBody>`."
+"Um nó de malha com o sufixo ``-rigid`` será importado como um filho de um "
+"nó :ref:`<class_RigidBody>`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:503
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Loop de animação (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:505
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
@@ -1183,14 +1219,14 @@ msgid ""
 "a hyphen.**"
 msgstr ""
 "Clipes de animação no documento COLLADA que começam ou terminam com o token "
-"\"loop\" ou \"cycle\" serão importados como uma Animação do Godot com a flag "
-"de loop marcada. Isso é case-sensitive e não requer um hífen."
+"``loop`` ou ``cycle`` serão importados como uma Animação do Godot com o "
+"sinalizador de loop marcado. **Ao contrário dos outros sufixos descritos "
+"acima, isto não requer um hífen.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:509
-#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 "No Blender, isso requer o uso do Editor NLA e nomear a Ação com o prefixo ou "
-"sufixo \"loop\" ou \"cycle\"."
+"sufixo ``loop`` ou ``cycle``."

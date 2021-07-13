@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,9 +104,10 @@ msgid "Color space"
 msgstr "色空間"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
+#, fuzzy
 msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
-"appear slightly different between them  especially when lighting is used."
+"appear slightly different between them especially when lighting is used."
 msgstr ""
 "GLES2とGLES3は異なる色空間にあります。これは、特に照明を使用する場合、色がわ"
 "ずかに異なるように見えることを意味します。"
@@ -126,10 +127,11 @@ msgid "HDR"
 msgstr "\\ HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
+#, fuzzy
 msgid ""
 "GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
 "If HDR is set for your project, or for a given viewport, Godot will still "
-"user Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
+"use Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
 "range."
 msgstr ""
 "GLES2は、ハイダイナミックレンジ(HDR)レンダリング機能を使用できません。プロ"
@@ -137,11 +139,18 @@ msgstr ""
 "ビューポート値を ``0-1`` の範囲に制限する低ダイナミックレンジ(LDR)を使用しま"
 "す。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:53
+msgid ""
+"The Viewport **Debanding** property and associated project setting will also "
+"have no effect when HDR is disabled. This means debanding can't be used in "
+"GLES2."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
 msgstr "SpatialMaterialの機能"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
@@ -149,31 +158,31 @@ msgstr ""
 "GLES2では、\\ :ref:`SpatialMaterial <class_SpatialMaterial>` の次の高度なレン"
 "ダリング機能がありません:"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Refraction"
 msgstr "Refraction(屈折)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Subsurface scattering"
 msgstr "サブサーフェススキャタリング"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:63
 msgid "Anisotropy"
 msgstr "Anisotropy(異方性)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
 msgid "Clearcoat"
 msgstr "Clearcoat(クリアコート)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
 msgid "Depth mapping"
 msgstr "深度マッピング"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
 msgid "When using SpatialMaterials they will not even appear in the editor."
 msgstr "SpatialMaterialsを使用する場合、エディタには表示されません。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:66
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:69
 msgid ""
 "In custom :ref:`ShaderMaterials <class_ShaderMaterial>`, you can set values "
 "for these features but they will be non-functional. For example, you will "
@@ -185,66 +194,66 @@ msgstr ""
 "(通常はサブサーフェス スキャタリングを追加)を設定することはできますが、何も起"
 "こりません。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
 msgid "Environment features"
 msgstr "環境機能"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
 msgstr ""
 "GLES2では、\\ :ref:`Environment <class_Environment>` に次の機能がありません:"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
 msgid "Auto exposure"
 msgstr "自動露出"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
 msgid "Tonemapping"
 msgstr "トーンマッピング"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Screen space reflections"
 msgstr "スクリーンスペースリフレクション"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
 msgid "Screen space ambient occlusion"
 msgstr "スクリーンスペースアンビエントオクルージョン"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "That means that in GLES2 environments you can only set:"
 msgstr "つまり、GLES2の環境では次の設定のみが可能です:"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:82
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Sky (including procedural sky)"
 msgstr "空(手続き型の空を含む)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
 msgid "Ambient light"
 msgstr "環境光"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Fog"
 msgstr "Fog(霧)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:88
 msgid "Depth of field"
 msgstr "被写界深度"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:89
 msgid "Glow (also known as bloom)"
 msgstr "グロー(ブルームとも呼ばれます)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
 msgid "Adjustment"
 msgstr "調整"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:93
 msgid "GIProbes"
 msgstr "\\ GIProbes"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:95
 msgid ""
 ":ref:`GIProbes <class_GIProbe>` do not work in GLES2. Instead use :ref:"
 "`Baked Lightmaps <class_BakedLightmap>`. For a description of how baked "
@@ -255,11 +264,11 @@ msgstr ""
 "マップの機能の説明については、\\ :ref:`Baked Lightmaps tutorial "
 "<doc_baked_lightmaps>` を参照してください。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:99
 msgid "Contact shadows"
 msgstr "コンタクトシャドウ"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
 msgid ""
 "The ``shadow_contact`` property of :ref:`Lights <class_Light>` is not "
 "supported in GLES2 and so does nothing."
@@ -267,11 +276,11 @@ msgstr ""
 ":ref:`Lights <class_Light>` の ``shadow_contact`` プロパティはGLES2ではサポー"
 "トされていないため、何もしません。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:104
 msgid "Light performance"
 msgstr "ライトの性能"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:106
 msgid ""
 "In GLES2, performance scales poorly with several lights, as each light is "
 "processed in a separate render pass (in opposition to GLES3 which is all "
@@ -283,11 +292,11 @@ msgstr ""
 "パフォーマンスを実現するために、シーンをできるだけ少ないライトに制限してくだ"
 "さい。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:111
 msgid "Texture compression"
 msgstr "テクスチャ圧縮"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:110
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:113
 msgid ""
 "On mobile, GLES2 requires ETC texture compression, while GLES3 requires "
 "ETC2. ETC2 is enabled by default, so if exporting to mobile using GLES2 make "
@@ -299,7 +308,7 @@ msgstr ""
 "ポートする場合は、プロジェクト設定 ``rendering/vram_compression/import_etc`` "
 "を設定してからテクスチャを再インポートしてください。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:116
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:119
 msgid ""
 "Since ETC doesn't support transparency, you must reimport textures that "
 "contain an alpha channel to use the Uncompressed, Lossy or Lossless "
@@ -311,19 +320,19 @@ msgstr ""
 "る必要があります。これは、ファイルシステムドックでそれらを選択した後、イン"
 "ポートドックで実行できます。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:122
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:125
 msgid "Blend shapes"
 msgstr "形状のブレンド"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:124
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:127
 msgid "Blend shapes are not supported in GLES2."
 msgstr "ブレンドシェイプはGLES2ではサポートされていません。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:127
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:130
 msgid "Shading language"
 msgstr "シェーディング言語"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:129
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:132
 msgid ""
 "GLES3 provides many built-in functions that GLES2 does not. Below is a list "
 "of functions that are not available or are have limited support in GLES2."
@@ -331,7 +340,7 @@ msgstr ""
 "GLES3は、GLES2にはない多くの組み込み関数を提供します。以下は、GLES2で使用でき"
 "ない機能またはサポートが制限されている機能のリストです。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:132
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:135
 msgid ""
 "For a complete list of built-in GLSL functions see the :ref:`Shading "
 "Language doc <doc_shading_language>`."
@@ -339,92 +348,93 @@ msgstr ""
 "組み込みGLSL関数の完全なリストについては、\\ :ref:`Shading Language doc "
 "<doc_shading_language>` を参照してください。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:135
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:138
 msgid "Function"
 msgstr "関数"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:137
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:140
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
 msgstr "\\ vec_type **modf** ( vec_type x, out vec_type i )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:139
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:142
 msgid "vec_int_type **floatBitsToInt** ( vec_type x )"
 msgstr "\\ vec_int_type **floatBitsToInt** ( vec_type x )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:141
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:144
 msgid "vec_uint_type **floatBitsToUint** ( vec_type x )"
 msgstr "\\ vec_uint_type **floatBitsToUint** ( vec_type x )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:143
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:146
 msgid "vec_type **intBitsToFloat** ( vec_int_type x )"
 msgstr "\\ vec_type **intBitsToFloat** ( vec_int_type x )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:145
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:148
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type x )"
 msgstr "\\ vec_type **uintBitsToFloat** ( vec_uint_type x )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:150
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 msgstr "\\ ivec2 **textureSize** ( sampler2D_type s, int lod )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:149
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:150
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:152
 msgid "See workaround below"
 msgstr "以下の回避策を参照してください"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:149
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:152
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
 msgstr "\\ ivec2 **textureSize** ( samplerCube s, int lod )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:154
 msgid "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
 msgstr ""
 "\\ vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:154
 msgid "**bias** not available in vertex shader"
 msgstr "**bias** は頂点シェーダーでは使用できません"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:153
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:156
 msgid ""
 "vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 msgstr ""
 "\\ vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:158
 msgid "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
 msgstr "\\ vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:158
 msgid "Only available in vertex shader on some hardware"
 msgstr "一部のハードウェアの頂点シェーダーでのみ使用可能"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:157
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:160
 msgid "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 msgstr ""
 "\\ vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:159
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:162
+#, fuzzy
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"vec_type dPdy )"
 msgstr ""
 "\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy)"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:161
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:164
 msgid "vec_type **dFdx** ( vec_type p )"
 msgstr "\\ vec_type **dFdx** ( vec_type p )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:163
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:166
 msgid "vec_type **dFdy** ( vec_type p )"
 msgstr "\\ vec_type **dFdy** ( vec_type p )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:165
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
 msgid "vec_type **fwidth** ( vec_type p )"
 msgstr "\\ vec_type **fwidth** ( vec_type p )"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:171
 msgid ""
 "Functions not in GLES2's GLSL were added with Godots own shader standard "
 "library. These functions may perform worse in GLES2 compared to GLES3."
@@ -433,11 +443,11 @@ msgstr ""
 "た。これらの関数は、GLES3と比較してGLES2ではパフォーマンスが低下する可能性が"
 "あります。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:171
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:174
 msgid "``textureSize()`` workaround"
 msgstr "``textureSize()`` 回避策"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:173
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:176
 msgid ""
 "GLES2 does not support ``textureSize()``. You can get the size of a texture "
 "the old fashioned way by passing in a uniform with the texture size yourself."
@@ -445,11 +455,11 @@ msgstr ""
 "GLES2は ``textureSize()`` をサポートしていません。テクスチャサイズのユニ"
 "フォームを自分で渡すことで、古い方法でテクスチャのサイズを取得できます。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:189
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:192
 msgid "Built in variables and render modes"
 msgstr "組み込み変数とレンダリングモード"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:191
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:194
 msgid ""
 "Godot also provides many built-in variables and render modes. Some cannot be "
 "supported in GLES2. Below is a list of built-in variables and render modes "
@@ -461,30 +471,30 @@ msgstr ""
 "す。これらは、書き込まれたときに効果がなかったり、GLES2バックエンドの使用時に"
 "問題が発生したりする可能性さえあります。"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:199
 msgid "Variable / Render Mode"
 msgstr "変数/レンダリング モード"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:198
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:201
 msgid "``ensure_correct_normals``"
 msgstr "\\ ``ensure_correct_normals``"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:200
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:203
 msgid "``INSTANCE_ID``"
 msgstr "\\ ``INSTANCE_ID``"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:202
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:205
 msgid "``DEPTH``"
 msgstr "\\ ``DEPTH``"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:207
 msgid "``ANISOTROPY``"
 msgstr "\\ ``ANISOTROPY``"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:209
 msgid "``ANISOTROPY_FLOW``"
 msgstr "\\ ``ANISOTROPY_FLOW``"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:208
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:211
 msgid "``SSS_STRENGTH``"
 msgstr "\\ ``SSS_STRENGTH``"

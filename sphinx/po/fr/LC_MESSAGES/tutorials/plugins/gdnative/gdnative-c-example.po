@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,16 +38,14 @@ msgstr ""
 "suivre."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
-#, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
 "describe below in the `GDNative-demos repository <https://github.com/"
 "godotengine/gdnative-demos/tree/master/c/simple>`_."
 msgstr ""
 "Avant de commencer, vous pouvez télécharger le code source de l'objet "
-"exemple décrit ci-dessous dans le `dépôt GDNative-demos <https://docs."
-"godotengine.org/en/latest/tutorials/scripting/gdnative/gdnative_c_example."
-"html>`_."
+"exemple décrit ci-dessous dans le `dépôt GDNative-demos <https://github.com/"
+"godotengine/gdnative-demos/tree/master/c/simple>`_."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
 msgid ""
@@ -765,7 +763,6 @@ msgid "Creating the NativeScript (``.gdns``) file"
 msgstr "Création du fichier NativeScript (``.gdns``)"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:497
-#, fuzzy
 msgid ""
 "With our ``.gdnlib`` file we've told Godot how to load our library, now we "
 "need to tell it about our \"SIMPLE\" object class. We do this by creating a :"
@@ -774,7 +771,7 @@ msgid ""
 msgstr ""
 "Avec notre fichier ``.gdnlib`` nous avons dit à Godot comment charger notre "
 "bibliothèque, maintenant nous devons lui parler de notre classe d'objets "
-"\"Simple\". Pour ce faire, nous créons un fichier de ressources :ref:"
+"\"SIMPLE\". Pour ce faire, nous créons un fichier de ressources :ref:"
 "`NativeScript <class_NativeScript>` avec l'extension ``.gdns``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:501
@@ -786,7 +783,6 @@ msgstr ""
 "une nouvelle ressource dans l'inspecteur et sélectionnez ``NativeScript`` :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:506
-#, fuzzy
 msgid ""
 "The inspector will show a few properties that we need to fill. As *Class "
 "Name* we enter \"SIMPLE\" which is the object class name that we declared in "
@@ -795,7 +791,7 @@ msgid ""
 "*Load*:"
 msgstr ""
 "L'inspecteur nous montrera quelques propriétés que nous devons remplir. "
-"Comme *Class Name* nous entrons \"Simple\" qui est le nom de la classe "
+"Comme *Class Name* nous entrons \"SIMPLE\" qui est le nom de la classe "
 "d'objet que nous avons déclaré dans notre source C en appelant "
 "``godot_nativescript_register_class``. Nous devons également sélectionner "
 "notre fichier ``.gdnlib`` en cliquant sur *Library* et en sélectionnant "

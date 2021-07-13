@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,17 +145,18 @@ msgstr ""
 "る必要があります。そうでない場合、エディタに適切にロードされされません。次"
 "に :ref:`class_EditorPlugin` を継承する必要があります。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:76
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:77
+#, fuzzy
 msgid ""
 "In addition to the EditorPlugin script, any other GDScript that your plugin "
-"uses must *also* be a tool.  Any GDScript without ``tool`` imported into the "
+"uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
 "editor will act like an empty file!"
 msgstr ""
 "EditorPluginスクリプトに加えて、プラグインが使用する他のGDScriptは、\\ "
 "*tool* である必要があります。 エディタにインポートされた ``tool`` のない"
 "GDScriptは、空のファイルのようにふるまいます！"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:80
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:81
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
@@ -170,16 +171,16 @@ msgstr ""
 "アップすることをお勧めします。ありがたいことに、ダイアログはこれらのコール"
 "バックを生成します。 スクリプトは次のようになります:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:125
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:126
 msgid "This is a good template to use when creating new plugins."
 msgstr ""
 "これは、新しいプラグインを作成するときに使用するのに適したテンプレートです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:128
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:129
 msgid "A custom node"
 msgstr "カスタム ノード"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:130
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:131
 msgid ""
 "Sometimes you want a certain behavior in many nodes, such as a custom scene "
 "or control that can be reused. Instancing is helpful in a lot of cases, but "
@@ -193,7 +194,7 @@ msgstr ""
 "る適切な解決策は、カスタムの動作を持つノードを追加するプラグインを作成するこ"
 "とです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:138
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:139
 #, fuzzy
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
@@ -207,7 +208,7 @@ msgstr ""
 "またはNativeScriptを作成している場合は、そちらを代わりに使用することをお勧め"
 "します。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:143
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:144
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
 "<class_EditorPlugin_method_add_custom_type>` from the :ref:"
@@ -224,7 +225,7 @@ msgstr ""
 "必要です。このスクリプトは ``tool`` キーワードを使用する必要はありませんが、"
 "スクリプトをエディタで実行させるためにそれを追加できます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:150
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:151
 msgid ""
 "For this tutorial, we'll create a simple button that prints a message when "
 "clicked. For that, we'll need a simple script that extends from :ref:"
@@ -234,7 +235,7 @@ msgstr ""
 "を作成します。そのためには、\\ :ref:`class_Button` から拡張する簡単なスクリプ"
 "トが必要です。必要に応じて :ref:`class_BaseButton` を拡張することもできます:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:188
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:189
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You'll also need a 16×16 icon to show in the scene tree. "
@@ -250,7 +251,7 @@ msgstr ""
 "(`preload(\"res://icon.png\")`)を使用します。 必要に応じて、SVGアイコンを使用"
 "することもできます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:196
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:197
 msgid ""
 "Now, we need to add it as a custom type so it shows on the **Create New "
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
@@ -260,7 +261,7 @@ msgstr ""
 "て追加する必要があります。そのためには、\\ ``custom_node.gd`` スクリプトを次"
 "のように変更します:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:244
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
 msgid ""
 "With that done, the plugin should already be available in the plugin list in "
 "the **Project Settings**, so activate it as explained in `Checking the "
@@ -270,11 +271,11 @@ msgstr ""
 "に使用可能になっているはずなので、\\ `Checking the results`_ で説明されている"
 "ようにアクティブにします。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:247
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:248
 msgid "Then try it out by adding your new node:"
 msgstr "次に、新しいノードを追加して試してください:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:251
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:252
 msgid ""
 "When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
@@ -284,11 +285,11 @@ msgstr ""
 "ボタンにテキストを設定し、シーンを保存して実行します。 ボタンをクリックする"
 "と、コンソールにテキストが表示されます:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:258
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:259
 msgid "A custom dock"
 msgstr "カスタムドック"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:260
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:261
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
@@ -300,7 +301,7 @@ msgstr ""
 "ロールに基づいた単なるシーンであるため、通常のGUIシーンと同様の方法で作成され"
 "ます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:264
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:265
 msgid ""
 "Creating a custom dock is done just like a custom node. Create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
@@ -310,7 +311,7 @@ msgstr ""
 "my_custom_dock`` フォルダに新しい ``plugin.cfg`` ファイルを作成し、次のコンテ"
 "ンツを追加します:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:289
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:290
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill it with "
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
@@ -320,7 +321,7 @@ msgstr ""
 "切るために、\\ :ref:`前に見たテンプレート <doc_making_plugins_template_code> "
 "` を入力してください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:293
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:294
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
@@ -330,7 +331,7 @@ msgstr ""
 "必要があります。これは、標準のGodotシーンに他なりません。エディタで新しいシー"
 "ンを作成し、編集するだけです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:297
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:298
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -344,7 +345,7 @@ msgstr ""
 "必ず短くわかりやすい名前を付けてください。また、ボタンにテキストを追加するこ"
 "とを忘れないでください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:305
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:306
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -357,7 +358,7 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` クラスの関数 :ref:`add_control_to_dock() "
 "<class_EditorPlugin_method_add_control_to_dock>` を使用できます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:310
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:311
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
@@ -367,7 +368,7 @@ msgstr ""
 "必要があります。プラグインが非アクティブになったら、\\ **ドックを削除する** "
 "ことを忘れないでください。 スクリプトは次のようになります:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:371
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:372
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
@@ -375,11 +376,11 @@ msgstr ""
 "ドックは指定された位置に最初に表示されますが、ユーザーは自由に位置を変更し、"
 "結果のレイアウトを保存できることに注意してください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:375
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:376
 msgid "Checking the results"
 msgstr "結果の確認"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:377
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:378
 msgid ""
 "It's now time to check the results of your work. Open the **Project "
 "Settings** and click on the **Plugins** tab. Your plugin should be the only "
@@ -391,7 +392,7 @@ msgstr ""
 "せん。 表示されていない場合は、右上隅の[**アップデート**]ボタンをクリックしま"
 "す。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:384
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:385
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
@@ -401,11 +402,11 @@ msgstr ""
 "スをクリックして[**Active**]を選択します。設定ウィンドウを閉じる前に、ドック"
 "が表示されるはずです。これで、カスタムドックができました:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:391
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:392
 msgid "Going beyond"
 msgstr "今後の展開"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:393
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:394
 msgid ""
 "Now that you've learned how to make basic plugins, you can extend the editor "
 "in several ways. Lots of functionality can be added to the editor with "
@@ -417,7 +418,7 @@ msgstr ""
 "ジュールを詳しく掘り下げることなく、専用のエディタを作成するための強力な方法"
 "です。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:398
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:399
 msgid ""
 "You can make your own plugins to help yourself and share them in the `Asset "
 "Library <https://godotengine.org/asset-library/>`_ so that people can "

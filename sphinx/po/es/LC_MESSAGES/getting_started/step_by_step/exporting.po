@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,6 @@ msgstr ""
 "que hacer algunos cambios en la forma en que funciona el juego."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
@@ -98,9 +97,10 @@ msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"En **Proyecto > Ajustes de proyecto**, debajo de **Input Devices > "
+"Pointing**, activar **Emulate Touch From Mouse**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
@@ -110,17 +110,15 @@ msgstr ""
 "También queremos asegurarnos de que el juego se escala de modo consistente "
 "en pantallas de diferentes tamaños, por lo que en la configuración del "
 "proyecto vaya a *Display*, luego haz clic en *Window*. En las opciones "
-"*Stretch*, establece *Mode* en \"2d\" y *Aspect* en \"keep\". Esto asegura "
-"que el juego se escale consistentemente en pantallas de diferentes tamaños."
+"*Stretch*, establece *Mode* en \"2d\" y *Aspect* en \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
-#, fuzzy
 msgid ""
 "Since we are already in the **Window** settings, we should also set under "
 "**Handheld** the **Orientation** to ``portrait``."
 msgstr ""
-"Ya que estamos en la configuración de ventanas, también deberíamos "
-"establecer la *Orientación* a *Retrato* debajo de *Portátil*."
+"Ya que estamos en la configuración de ventanas, deberíamos establecer "
+"también en **Portátil** la **Orientación** a ``retrato``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:50
 msgid ""
@@ -146,34 +144,33 @@ msgid "Setting a main scene"
 msgstr "Configurando la escena principal"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. For this *Dodge the "
 "Creeps* example, in **Project -> Project Settings -> Application -> Run**, "
 "set **Main Scene** to ``Main.tscn`` by clicking the folder icon and "
 "selecting it."
 msgstr ""
-"Para cambiar el icono de la barra de tareas, dirígete a **Proyecto → "
-"Configuración del Proyecto → Application → Config → Icon**. Haz clic en el "
-"icono de la carpeta y selecciona el icono deseado."
+"La escena principal es en la que se iniciará el juego. Para este ejemplo "
+"*Dodge the Creeps*, ve a **Proyecto -> Configuración del proyecto -> "
+"Aplicación -> Ejecución**, establece **Escena Principal** a ``Main.tscn`` "
+"haciendo clic en el icono de la carpeta y seleccionándolo."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Export templates"
 msgstr "Plantillas de exportación"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform. You can also "
 "download them in Godot by clicking on **Editor -> Manage Export Templates**:"
 msgstr ""
-"Para exportar, es necesario descargar las *plantillas de exportación* de "
-"http://godotengine.org/download. Estas plantillas son versiones optimizadas "
-"del motor sin el editor precompilado para cada plataforma. También puedes "
-"descargarlos en Godot haciendo clic en *Editor -> Cargar Plantillas de "
-"Exportación*:"
+"Para exportar el proyecto, es necesario descargar las *plantillas de "
+"exportación* de http://godotengine.org/download. Estas plantillas son "
+"versiones optimizadas del motor sin el editor pre-compilado para cada "
+"plataforma. También puedes descargarlos desde Godot haciendo clic en *Editor "
+"-> Gestionar Plantillas de Exportación*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -188,7 +185,6 @@ msgstr ""
 "**Gestionar Plantillas de Exportación**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
@@ -210,7 +206,6 @@ msgid "Export presets"
 msgstr "Exportar Preajustes"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
@@ -219,7 +214,6 @@ msgstr ""
 "en *Proyecto -> Exportar*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
-#, fuzzy
 msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
@@ -229,7 +223,6 @@ msgstr ""
 "desee con diferentes ajustes."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
@@ -241,7 +234,6 @@ msgstr ""
 "solo."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
@@ -250,7 +242,6 @@ msgstr ""
 "completa de tu juego, como un `.apk` para Android o un `.exe` para Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
-#, fuzzy
 msgid ""
 "In the **Resources** and **Features** tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,35 +43,34 @@ msgid "Godot supports the following 3D *scene file formats*:"
 msgstr "Godot підтримує такі *формати файлів 3D- сцен*:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid ""
 "glTF 2.0 **(recommended)**. Godot has full support for both text (``.gltf``) "
 "and binary (``.glb``) formats."
-msgstr "glTF 2.0. Godot має повну підтримку тексту та бінарних форматів."
+msgstr ""
+"glTF 2.0 **(рекомендується)**. Godot має повну підтримку як текстового (``."
+"gltf``), так і бінарного (``.glb``) форматів."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
 msgstr "DAE (COLLADA), старіший формат, який повністю підтримується."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
-#, fuzzy
 msgid ""
 "OBJ (Wavefront) format + their MTL material files. This is also fully "
 "supported, but pretty limited (no support for pivots, skeletons, animations, "
 "PBR materials, ...)."
 msgstr ""
-"OBJ (Wavefront) формати. Також повністю підтримується, але з деякими "
-"обмеженнями (немає підтримки для поворотів, скелетів тощо)."
+"OBJ (Wavefront) формат + його файли матеріалів MTL. Також повністю "
+"підтримується, але з деякими обмеженнями (немає підтримки для поворотів, "
+"скелетів, анімації, PBR матеріалів, ...)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
-#, fuzzy
 msgid "ESCN, a Godot-specific format that Blender can export with a plugin."
 msgstr ""
 "ESCN, специфічний формат Godot, який Blender може експортувати за допомогою "
 "плагіна."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
-#, fuzzy
 msgid ""
 "FBX, supported via the Open Asset Import library. However, FBX is "
 "proprietary, so we recommend using other formats listed above, if suitable "
@@ -169,7 +168,6 @@ msgstr ""
 "актуальна, використовуйте бінарні glTF."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
@@ -190,7 +188,6 @@ msgstr ""
 "для потреб ігрових движків і не повинна використовуватися як є."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
@@ -198,14 +195,15 @@ msgid ""
 "the future."
 msgstr ""
 "Godot пропонує `плагін Blender<https://github.com/godotengine/collada-"
-"exporter>`_, який правильно експортує сцени COLLADA для використання в Godot."
+"exporter>`_, який правильно експортує сцени COLLADA для використання в "
+"Godot. Він не працює в Blender 2.8 або новіших версіях, але є плани оновити "
+"його в майбутньому."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "Exporting ESCN files from Blender"
 msgstr "Експорт файлів ESCN з Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
-#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -213,10 +211,10 @@ msgid ""
 "information as possible from a Blender scene. However, it is considered "
 "experimental."
 msgstr ""
-"Найпотужніший`godot-blender -експортер <https://github.com/godotengine/godot-"
+"Найпотужнішим є `godot-blender-exporter<https://github.com/godotengine/godot-"
 "blender-exporter>`__. Він використовує файл .escn, який є різновидом файлу ."
 "tscn (файл сцени Godot); він зберігає якомога більше інформації зі сцени "
-"Blender."
+"Blender. Однак він вважається експериментальним."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid ""
@@ -227,9 +225,8 @@ msgstr ""
 "описує його функціональність та використання."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
-#, fuzzy
 msgid "Exporting textures separately"
-msgstr "Імпортування текстур"
+msgstr "Експорт текстур окремо"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
@@ -241,19 +238,24 @@ msgid ""
 "armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/"
 "RodZill4/material-maker>`__."
 msgstr ""
+"Хоча текстури можна експортувати з моделлю у певних форматах файлів, таких "
+"як glTF 2.0, ви також можете експортувати їх окремо. Godot використовує PBR "
+"(фізично правильну візуалізацію) для своїх матеріалів, тому, якщо програма "
+"для текстурування може експортувати текстури PBR, вони можуть працювати в "
+"Godot. Сюди входять `Substance suite <https://www.substance3d.com/>`__, "
+"`ArmorPaint (з відкритим кодом) <https://armorpaint.org/>`__, і `Material "
+"Maker (з відкритим кодом) <https://github.com/RodZill4/material-maker>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
-#, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
 msgstr ""
-"Для додаткової інформації про запікання світла дивіться :ref:"
-"`doc_baked_lightmaps`."
+"Для отримання додаткової інформації про матеріали Godot дивіться :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
-#, fuzzy
 msgid "Exporting considerations"
-msgstr "Інші загальноприйняті правила"
+msgstr "Міркування щодо експорту"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
@@ -264,6 +266,13 @@ msgid ""
 "exporting the scene will lead to more consistent results and should be done "
 "whenever possible."
 msgstr ""
+"Оскільки графічні процесори можуть відтворювати лише трикутники, сітки "
+"(меші), що містять чотирикутники або N-кутники, повинні бути триангульовані "
+"(переведені в трикутники) перед тим, як їх можна відтворити. Godot може "
+"триангулювати сітки (меші) при імпорті, але результати можуть бути "
+"непередбачуваними або неправильними, особливо для N-кутників. Незалежно від "
+"цільової програми, тріангуляція перед експортом сцени призведе до більш "
+"послідовних результатів і повинна виконуватися по можливості."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
@@ -274,12 +283,21 @@ msgid ""
 "depending on the exporter, you may be able to find and enable a "
 "**Triangulate Faces** option in the export dialog."
 msgstr ""
+"Щоб уникнути проблем із некоректною тріангуляцією після імпортування в "
+"Godot, рекомендується зробити 3D-об'єкти триангуляції DCC самостійно. У "
+"Blender це можна зробити, додавши модифікатор Triangulate до своїх об’єктів "
+"і переконавшись, що у діалоговому вікні експорту встановлено галочку **Apply "
+"Modifiers**. Як варіант, залежно від експортера, ви можете знайти та "
+"ввімкнути опцію **Triangulate Faces** (Трикутні грані) у діалоговому вікні "
+"експорту."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid ""
 "To avoid issues with 3D selection in the editor, it is recommended to apply "
 "the object transform in the 3D DCC before exporting the scene."
 msgstr ""
+"Щоб уникнути проблем із виділенням 3D у редакторі, рекомендується "
+"застосувати перетворення об’єкта в 3D DCC перед експортом сцени."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid "Import workflows"
@@ -471,6 +489,9 @@ msgid ""
 "Godot will not reimport materials that are stored in external files unless "
 "you remove the associated ``.material`` file before reimporting."
 msgstr ""
+"Godot не буде повторно імпортувати матеріали, що зберігаються у зовнішніх "
+"файлах, якщо ви не видалите пов'язаний файл ``.material`` перед повторним "
+"імпортом."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
 msgid ""
@@ -479,6 +500,11 @@ msgid ""
 "dock, going to the Import dock then setting **Material > Storage** to "
 "**Built-In** instead of **Files**."
 msgstr ""
+"Щоб змусити повторно імпортувати матеріали кожного разу, коли повторно "
+"імпортується 3D-сцена, змініть режим зберігання матеріалів у 3D-сцені, "
+"вибравши його на панелі Файлова система, перейшовши до панелі Імпорт, а "
+"потім встановивши **Матеріал> Зберігання** на **Built-In** (Вбудований) "
+"замість **Files** (Файли)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:216
 msgid "Keep On Reimport"
@@ -728,6 +754,10 @@ msgid ""
 "Otherwise, changes made to animations from Godot will be lost when the "
 "project is run."
 msgstr ""
+"Щоб змінити анімацію із імпортованої 3D сцени, потрібно змінити параметр "
+"зберігання анімації з **Built-In** (Вбудований) на **Files** (Файли) на "
+"панелі Імпорт. Інакше зміни, внесені до анімації з Godot, будуть загублені "
+"під час запуску проекту."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "FPS"
@@ -887,6 +917,11 @@ msgid ""
 "greater than zero. You can then name a clip, specify which frames it starts "
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
+"У якості кліпів можна вказати кілька анімацій з однієї шкали часу. Щоб це "
+"працювало, модель повинна мати лише одну анімацію з іменем ``default``. Щоб "
+"створити кліпи, змініть кількість кліпів на щось більше нуля. Потім можна "
+"назвати кліп, вказати, на яких кадрах він запускається та зупиняється, і "
+"вибрати, чи буде анімація циклічною чи ні."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
 msgid "Scene inheritance"
@@ -990,9 +1025,8 @@ msgstr ""
 "незалежно від їх типу. Вони не з’являться на імпортованій сцені."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
-#, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr "Створити зіткнення (-col, -colonly, -convcolonly)"
+msgstr "Створення зіткнень (-col, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid ""
@@ -1002,6 +1036,12 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"Параметр ``-col`` працюватиме лише для об’єктів Mesh. Якщо він виявлений, "
+"буде додано дочірній вузол статичного зіткнення, що використовує ту ж "
+"геометрію, що і меш (сітка). Буде створена побудована з трикутників форма "
+"зіткнення, яка є повільним, але точним варіантом виявлення зіткнень. Цей "
+"варіант, як правило, потрібен для геометрії рівня (але дивіться також ``-"
+"colonly`` нижче)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid ""
@@ -1015,72 +1055,73 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"Опція ``-convcol`` створить :ref:`class_convexpolygonshape` замість :ref:"
+"`class_concavepolygonshape`. На відміну від побудованих з трикутників сіток, "
+"які можуть бути увігнутими, опукла форма може точно представляти лише "
+"фігуру, яка не має жодного увігнутого кута (піраміда опукла, а порожниста "
+"коробка увігнута). Через це опуклі форми зіткнення, як правило, не підходять "
+"для геометрії рівня. Представляючи досить прості сітки, опуклі форми "
+"зіткнення можуть призвести до кращих показників порівняно з формою зіткнення "
+"трикутникових сіток. Цей варіант ідеально підходить для простих або "
+"динамічних об'єктів, які вимагають здебільшого точного виявлення зіткнень."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:442
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"Однак нерідко трапляється так, що видима геометрія є надто складною, або "
-"занадто гладкою, для зіткнень, і в кінцевому підсумку не працює належним "
-"чином."
+"Однак в обох випадках візуальна геометрія може бути занадто складною або "
+"недостатньо гладкою для зіткнень. Це може спричинити збої у фізиці та "
+"непотрібно уповільнити роботу движка."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:446
-#, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"Для таких випадків існує суфікс \"-colonly\", який видалить сітку при "
-"імпорті та, натомість, створить зіткнення :ref:`class_staticbody`. Це "
-"допомагає розділити видиму сітку та фактичне зіткнення."
+"Для вирішення цієї проблеми існує модифікатор ``-colonly``. Він видалить "
+"сітку (меш) під час імпорту та створить зіткнення :ref:`class_staticbody`. "
+"Це допомагає відокремити візуальну сітку (меш) та фактичне зіткнення."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
-#, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"Суфікс \"-convcolonly\" створить :ref:`class_convexpolygonshape` замість :"
-"ref:`class_concavepolygonshape`."
+"Параметр ``-convcolonly`` працює подібним чином, але замість нього буде "
+"створено :ref:`class_convexpolygonshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"Суфікс \"-colonly\" також може використовуватися з порожніми об'єктами "
-"Blender. При імпорті він створить :ref:`class_staticbody з вузлом зіткнення "
+"Параметр ``-colonly`` також може використовуватися з порожніми об'єктами "
+"Blender. При імпорті він створить :ref:`class_staticbody` з вузлом зіткнення "
 "в якості нащадка. Вузол зіткнення матиме одну з заздалегідь визначених форм, "
 "залежно від типу порожнього об'єкта Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:459
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "Просто стрілка створить форму :ref:`class_rayshape`"
+msgstr "Просто стрілка створить форму :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:460
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "Куб створить :ref:`class_boxshape`"
+msgstr "Куб створить :ref:`class_boxshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:461
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "Зображення створить форму :ref:`class_planeshape`"
+msgstr "Зображення створить форму :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:462
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
-"Сфера (та інші, які не перераховані) створить форму :ref:`class_sphereshape`"
+"Сфера (та інші, які не перераховані) створить форму :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:464
 msgid ""
@@ -1088,9 +1129,11 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"По можливості, **намагайтеся використовувати кілька примітивних форм "
+"зіткнень** замість побудованої з трикутників сітки або опуклих фігур. "
+"Первісні форми часто мають найкращі характеристики та надійність."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:470
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
@@ -1098,72 +1141,69 @@ msgid ""
 msgstr ""
 "Для кращої видимості в редакторі Blender користувач може встановити параметр "
 "\"X-Ray\" на порожніх об'єктах зіткнення та встановити для них певний колір "
-"у розділі Налаштування користувача / Теми / 3D Перегляд / Порожняки (Empty)."
+"у розділі **Налаштування користувача > Теми > 3D Перегляд > Порожняки "
+"(Empty)**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:476
 msgid ""
 "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
 "shapes."
 msgstr ""
+"Дивіться :ref:`doc_collision_shapes_3d` для детального огляду форм зіткнення."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:480
 msgid "Create navigation (-navmesh)"
 msgstr "Створити навігацію (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:482
-#, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
 msgstr ""
-"Меш вузол (вузол сітки) з цим суфіксом буде перетворений на навігаційну "
-"сітку. Оригінальний вузол сітки буде видалений."
+"Вузол сітки (меша) з суфіксом ``-navmesh`` буде перетворений у навігаційну "
+"сітку. Оригінальний об'єкт Mesh буде видалено під час імпорту."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:486
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Створити VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:488
-#, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"Вузол сітки з цим суфіксом буде імпортований в якості нащадка вузла :ref:"
-"`VehicleBody <class_VehicleBody>`."
+"Вузол сітки з суфіксом ``-vehicle`` буде імпортований в якості нащадка "
+"вузла :ref:`class_VehicleBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:492
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Створити VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:494
-#, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"Вузол сітки з цим суфіксом буде імпортований в якості нащадка вузла :ref:"
-"`VehicleWheel <class_VehicleWheel>`."
+"Вузол сітки з суфіксом ``-wheel`` буде імпортований в якості нащадка вузла :"
+"ref:`class_VehicleWheel`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:498
 msgid "Rigid Body (-rigid)"
-msgstr ""
+msgstr "Тверде тіло (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:500
-#, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"Вузол сітки з цим суфіксом буде імпортований в якості нащадка вузла :ref:"
-"`VehicleBody <class_VehicleBody>`."
+"Вузол сітки з суфіксом ``-rigid`` буде імпортований як :ref:"
+"`class_RigidBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:503
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Цикл анімації (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:505
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
@@ -1171,14 +1211,14 @@ msgid ""
 "a hyphen.**"
 msgstr ""
 "Анімаційні кліпи в документі COLLADA, які починаються, або закінчуються "
-"приставкою \"loop\", або \"cycle\", будуть імпортовані як анімація Godot з "
-"встановленою галочкою циклу. Це залежне від регістру і не потребує дефісів."
+"приставкою ``loop`` чи ``cycle``, будуть імпортовані як анімація Godot з "
+"встановленою галочкою циклу. **На відміну від інших суфіксів, описаних вище, "
+"для цих не потрібен дефіс.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:509
-#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 "Для Blender це вимагає використання редактора NLA та іменування дії (Action) "
-"з префіксом, або суфіксом, \"loop\" або \"cycle\"."
+"з префіксом, або суфіксом, ``loop`` чи ``cycle``."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "Нетипові можливості"
+msgstr "Особливості C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -32,7 +31,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid "Type conversion and casting"
-msgstr ""
+msgstr "Перетворення типів і кастинг"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
 msgid ""
@@ -61,6 +60,9 @@ msgid ""
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
+"Повертає ``InvalidCastException`` якщо повернутий вузол неможливо "
+"перетворити в Sprite. Ви можете використовувати його замість оператора "
+"``as``, тільки, якщо впевнені, що він не викине помилку."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
@@ -71,6 +73,8 @@ msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
+"Оператор ``as`` повертає ``null``, якщо вузол не може бути переведений в "
+"Sprite, і з цієї причини він не може використовуватися з типами значень."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
@@ -88,12 +92,16 @@ msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
+"``GetNode<T>()`` переводить вузол перед поверненням. Він видасть, "
+"``InvalidCastException`` якщо вузол не може бути приведений до бажаного типу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
+"``GetNodeOrNull<T>()`` використовує оператор ``as`` і поверне ``null``, якщо "
+"вузол неможливо перетворити на потрібний тип."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
@@ -105,6 +113,9 @@ msgid ""
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
+"Щоб перевірити, чи можна перевести вузол у Sprite, можна скористатися "
+"оператором ``is``. Оператор ``is`` повертає false, якщо вузол не може бути "
+"приведений до Sprite, в іншому випадку він повертає true."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
@@ -159,13 +170,12 @@ msgstr ""
 "ключового слова ``nameof`` (застосованого до самого делегата)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
-#, fuzzy
 msgid ""
 "It is possible to bind values when establishing a connection by passing a "
 "Godot array."
 msgstr ""
-"Можна прив'язувати значення при встановленні з'єднання, передаючи масив "
-"об'єктів."
+"Можна встановити прив'язку значень при встановленні з'єднання, передавши "
+"масив Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
@@ -194,9 +204,8 @@ msgstr ""
 "зазначених сигналів (з ``Connect``, або ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "Обробка"
+msgstr "Preprocessor визначення"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
@@ -254,22 +263,22 @@ msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
 "These names may change in the future. These are created from the "
-"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "Щось одне з ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, "
-"``GODOT_ANDROID``, ``GODOT_HTML5``, або ``GODOT_SERVER``, залежно від "
-"операційної системи. Ці імена можуть змінитися в майбутньому. Вони створені "
-"за допомогою методу get_name() :ref:``ОС <class_OS>``, але далеко не кожна "
-"можлива ОС повертається методом як ОС, на якій працює Godot з Mono."
+"``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, або ``GODOT_SERVER``, "
+"залежно від операційної системи. Ці імена можуть змінитися в майбутньому. "
+"Вони створені за допомогою методу ``get_name()`` синглтона :ref:``ОС "
+"<class_OS>``, але далеко не кожна можлива ОС повертається методом як ОС, на "
+"якій працює Godot з Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
-#, fuzzy
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
-"Під час **експортування** також можна визначити таке, що залежить від "
+"Під час **експортування** також можна визначити наступне залежно від "
 "особливостей експорту:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
@@ -288,34 +297,32 @@ msgstr ""
 "архітектури."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
-"``GODOT_ARM64_V8A``, або ``GODOT_ARMEABI_V7A`` на Android, залежно від "
-"архітектури."
+"Або ``GODOT_ARM64``, або ``GODOT_ARMV7`` на iOS, залежно від архітектури."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
-#, fuzzy
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"Залежно від типу стиснення текстури ``GODOT_S3TC``, ``GODOT_ETC``, або "
-"``GODOT_ETC``."
+"Будь що з ``GODOT_S3TC``, ``GODOT_ETC``, чи ``GODOT_ETC2``, залежно від типу "
+"стиснення текстури."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"Будь-які користувацькі функції, додані в меню експорту, будуть написані "
+"великими літерами та матимуть префікс: ``foo`` -> ``GODOT_FOO``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Окрім цієї документації, ви також можете поглянути на різні `демонстраційні "
-"проєкти \"Godot\" <https://github.com/godotengine/godot-demo-projects>`_."
+"Щоб побачити приклад проекту, дивіться демонстраційну версію тестування ОС: "
+"https://github.com/godotengine/godot-demo-projects/tree/master/misc/os_test"

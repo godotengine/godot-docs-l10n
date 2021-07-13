@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,10 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:9
+#, fuzzy
 msgid ""
-"Very often, it is desired to make a shader that reads from the same screen "
-"to which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
+"It is often desired to make a shader that reads from the same screen to "
+"which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
 "difficult because of internal hardware limitations. GPUs are extremely "
 "parallel, so reading and writing causes all sorts of cache and coherency "
 "problems. As a result, not even the most modern hardware supports this "
@@ -42,10 +43,11 @@ msgstr ""
 "même le matériel le plus moderne ne le supporte pas correctement."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
+#, fuzzy
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
 "a back-buffer and then read from it while drawing. Godot provides a few "
-"tools that make this process easy!"
+"tools that make this process easy."
 msgstr ""
 "La solution consiste à faire une copie de l'écran, ou d'une partie de "
 "l'écran, dans une mémoire tampon, puis à la lire pendant le dessin. Godot "
@@ -177,7 +179,7 @@ msgstr ""
 "Avec une copie correcte du back-buffer, les deux sphères se mélangent "
 "correctement :"
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:104
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:111
 msgid ""
 "In 3D, there is less flexibility to solve this particular issue because the "
 "``SCREEN_TEXTURE`` is only captured once. Be careful when using "
@@ -190,7 +192,7 @@ msgstr ""
 "capture pas les objets transparents et peut capturer certains objets opaques "
 "qui se trouvent devant l'objet."
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:109
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
 msgid ""
 "You can reproduce the back-buffer logic in 3D by creating a :ref:`Viewport "
 "<class_Viewport>` with a camera in the same position as your object, and "
@@ -202,11 +204,11 @@ msgstr ""
 "objet, puis en utilisant la texture :ref:`Viewport <class_Viewport>` au lieu "
 "de ``SCREEN_TEXTURE``."
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:114
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:121
 msgid "Back-buffer logic"
 msgstr "Logique du back-buffer"
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:123
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
@@ -214,7 +216,7 @@ msgstr ""
 "Donc, pour être plus clair, voici comment fonctionne la logique de copie du "
 "backbuffer dans Godot :"
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:119
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:126
 msgid ""
 "If a node uses the ``SCREEN_TEXTURE``, the entire screen is copied to the "
 "back buffer before drawing that node. This only happens the first time; "
@@ -224,7 +226,7 @@ msgstr ""
 "back buffer avant de dessiner ce nœud. Cela ne se produit que la première "
 "fois ; les nœuds suivants ne déclenchent pas cela."
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:122
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:129
 msgid ""
 "If a BackBufferCopy node was processed before the situation in the point "
 "above (even if ``SCREEN_TEXTURE`` was not used), the behavior described in "
@@ -240,7 +242,7 @@ msgstr ""
 "utilisé dans un nœud pour la première fois et qu'aucun nœud BackBufferCopy "
 "(non désactivé) n'a été trouvé auparavant dans l'ordre de l'arbre."
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:128
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:135
 msgid ""
 "BackBufferCopy can copy either the entire screen or a region. If set to only "
 "a region (not the whole screen) and your shader uses pixels not in the "
@@ -257,13 +259,14 @@ msgstr ""
 "BackBufferCopy pour recopier une région de l'écran et d'utiliser ensuite "
 "``SCREEN_TEXTURE`` sur une autre région. Évitez ce comportement !"
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:137
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:144
 msgid "DEPTH_TEXTURE"
 msgstr "DEPTH_TEXTURE"
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:139
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:146
+#, fuzzy
 msgid ""
-"For 3D Shaders, it's also possible to access the screen depth buffer. For "
+"For 3D shaders, it's also possible to access the screen depth buffer. For "
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
@@ -272,7 +275,7 @@ msgstr ""
 "Cette texture n'est pas linéaire, elle doit être convertie via la matrice de "
 "projection inverse."
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:143
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:150
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
 msgstr "Le code suivant récupère la position 3D sous le pixel dessiné :"

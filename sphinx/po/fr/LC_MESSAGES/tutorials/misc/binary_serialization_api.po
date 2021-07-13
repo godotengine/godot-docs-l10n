@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgid "Packet specification"
 msgstr "Spécification des paquets"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
-#, fuzzy
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
@@ -53,7 +52,7 @@ msgstr ""
 "Le paquet est conçu pour être toujours rembourré(padded) à 4 octets. Toutes "
 "les valeurs sont encodées en little endian(little-endian-encoded). Tous les "
 "paquets ont un en-tête de 4 octets représentant un entier, spécifiant le "
-"type de données :"
+"type de données."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:22
 msgid ""
@@ -703,9 +702,8 @@ msgid "Float"
 msgstr "Float"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#, fuzzy
 msgid "IEEE 754 single-precision float"
-msgstr "IEE 754 32-Bits Float"
+msgstr "IEEE 754 single-precision float"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
 msgid ""
@@ -714,9 +712,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
-#, fuzzy
 msgid "IEEE 754 double-precision float"
-msgstr "IEE 754 32-Bits Float"
+msgstr "IEEE 754 double-precision float"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:148
 msgid "4: :ref:`String<class_string>`"

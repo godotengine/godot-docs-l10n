@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,11 +68,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK Platform-Tools versión 30.0.5 o posterior"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
 msgid "Android SDK Build-Tools version 30.0.3"
-msgstr ""
+msgstr "Android SDK Build-Tools versión 30.0.3"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 #, fuzzy
@@ -86,11 +86,11 @@ msgstr "Instala el Android SDK (versión de linea de comandos)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid "CMake version 3.10.2.4988404"
-msgstr ""
+msgstr "CMake versión 3.10.2.4988404"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "NDK version 21.4.7075529"
-msgstr ""
+msgstr "NDK versión 21.4.7075529"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
@@ -115,6 +115,8 @@ msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
+"Si está usando Linux, ** no use un SDK de Android proporcionado por los "
+"repositorios de su distribución, ya que a menudo estará desactualizado **."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 #, fuzzy
@@ -214,11 +216,26 @@ msgstr ""
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "Una vez configurado ¡todo está listo para exportar a Android!"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+msgid ""
+"If you get an error saying *\"Could not install to device.\"*, make sure you "
+"do not have an application with the same Android package name already "
+"installed on the device (but signed with a different key)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+msgid ""
+"If you have an application with the same Android package name but a "
+"different signing key already installed on the device, you **must** remove "
+"the application in question from the Android device before exporting to "
+"Android again."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Providing launcher icons"
 msgstr "Proporcionando íconos de inicio"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -230,11 +247,11 @@ msgstr ""
 "resolución (para pantallas de densidad ``xxxhdpi``) y generará "
 "automaticamente las variantes de menor resolución."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid "There are two types of icons required by Godot:"
 msgstr "Hay dos tipos de iconos requeridos por Godot:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
@@ -242,7 +259,7 @@ msgstr ""
 "**Main Icon:** El icono \"clásico\". Este será usado en todas las versiones "
 "de Android hasta Android 8 (Oreo), excluido. Debe tener al menos 192×192 px."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:101
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -258,7 +275,7 @@ msgstr ""
 "aspecto nativo. La aplicación de inicio controlará la animación y la "
 "máscara. Debe tener al menos 432×432 px."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -271,7 +288,7 @@ msgstr ""
 "servir para entender esas reglas y algunas de las capacidades de los iconos "
 "adaptivos."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:105
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
@@ -282,7 +299,7 @@ msgstr ""
 "con un diámetro de 66dp (264 píxeles en ``xxxhdpi``) para evitar que sea "
 "cortado por el lanzador."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:107
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
@@ -291,14 +308,14 @@ msgstr ""
 "una cadena de fallbacks, tratando el siguiente en la línea cuando el actual "
 "falla:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 "**Main Icon:** Icono principal provisto -> Icono de projecto -> Icono "
 "principal por defecto de Godot."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
@@ -307,7 +324,7 @@ msgstr ""
 "principal provisto -> Icono de proyecto -> Icono por defecto de primer plano "
 "de Godot."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
@@ -315,7 +332,7 @@ msgstr ""
 "**Adaptive Icon Background:** Icono de segundo plano provisto -> Icono de "
 "segundo plano por defecto de Godot."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 #, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
@@ -326,11 +343,11 @@ msgstr ""
 "resolución especificada. Este es el único modo en que la aplicación sea vea "
 "bien en todos los dispositivos y versiones de Android."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid "Exporting for Google Play Store"
 msgstr "Exportar para la Google Play Store"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:119
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -338,7 +355,7 @@ msgstr ""
 "Subir un APK a Google Play Store requiere que sea firmado usando un archivo "
 "keystore non-debug, el cual puede generarse así:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -351,23 +368,23 @@ msgstr ""
 "información sobre `APK signing <https://developer.android.com/studio/publish/"
 "app-signing>`__."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:129
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 "Ahora rellena los siguientes formularios en tus opciones predeterminadas de "
 "exportación Android:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:133
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
 "**Release:** Introduce la dirección a el archivo de almacén de claves que "
 "acabas de generar."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:134
 msgid "**Release User:** Replace with the key alias."
 msgstr "**Release User:** Reemplaza con el alias de la clave."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
@@ -376,7 +393,7 @@ msgstr ""
 "contraseña del almacén de datos y la contraseña de la clave tienen que ser "
 "iguales."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
@@ -387,7 +404,7 @@ msgstr ""
 "de repositorios públicos y agregarlo a tu archivo ``.gitignore`` o "
 "equivalente."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:141
 #, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
@@ -395,11 +412,11 @@ msgstr ""
 "No olvides desmarcar el botón ``Exportar con Depuración`` al seleccionar el "
 "nombre del APK."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:146
 msgid "Optimizing the APK size"
 msgstr "Optimizando el tamaño del APK"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:148
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -415,7 +432,7 @@ msgstr ""
 "librerías para una única arquitectura. Nota que aplicaciones que apunten a "
 "ARMv7 también funcionarán en ARMv8, lo opuesto no funcionará."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:155
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -433,7 +450,7 @@ msgstr ""
 "arquitectura en particular; creando un APK para ARMv7 y ARMv8 normalmente es "
 "suficiente para cubrir la mayoría de los dispositivos en uso hoy día."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:151
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:162
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

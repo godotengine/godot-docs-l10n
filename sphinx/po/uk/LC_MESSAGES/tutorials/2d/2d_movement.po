@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
-msgstr ""
+msgstr "Огляд руху в 2D просторі"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:7
 msgid "Introduction"
@@ -31,6 +31,10 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
+"Кожен початківець стикався з питанням: \"Як я буду переміщувати свого "
+"персонажа?\" Залежно від стилю гри, яку ви робите, ви можете мати особливі "
+"вимоги, але загалом рух у більшості 2D-ігор базується на невеликій кількості "
+"конструкцій."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -38,6 +42,9 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
+"Для цих прикладів ми використовуватимемо :ref:`KinematicBody2D "
+"<class_KinematicBody2D>`, але принципи будуть застосовуватися і до інших "
+"типів вузлів (Area2D, RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
@@ -50,6 +57,10 @@ msgid ""
 "You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
 "any other 2D image you have."
 msgstr ""
+"У кожному прикладі нижче використовується однакова настройка сцени. Почніть "
+"з ``KinematicBody2D`` з двома нащадками: ``Sprite`` і ``CollisionShape2D``. "
+"Ви можете використовувати піктограму Godot (\"icon.png\") для текстури "
+"спрайта, або будь-яке інше 2D зображення, яке у вас є."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
@@ -57,11 +68,13 @@ msgid ""
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
+"Відкрийте **Проект -> Параметри проекта** та виберіть вкладку **Карта "
+"введення**. Додайте такі дії (щоб дізнатися більше дивіться :ref:`Події "
+"Вводу <doc_inputevent>`):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
-#, fuzzy
 msgid "8-way movement"
-msgstr "Пересування"
+msgstr "8-бічний рух"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
@@ -70,10 +83,14 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
+"У цьому випадку ви хочете, щоб користувач користувався чотирма клавішами "
+"(стрілками вгору/вліво/вниз/вправо, або W/A/S/D) для переміщення у вибраному "
+"напрямку. Назва «8-бічний рух» походить від того, що гравець може рухатися "
+"по діагоналі, натискаючи дві клавіші одночасно."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr ""
+msgstr "Додайте скрипт до кінематичного тіла з таким кодом:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
@@ -82,18 +99,27 @@ msgid ""
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
+"У функції ``get_input()`` ми перевіряємо чотири клавішні події та "
+"підсумовуємо їх, щоб отримати вектор швидкості. Це добре тому, що дві "
+"протилежні клавіші відміняють одна одну, але також призведе до швидшого руху "
+"діагоналі через додавання двох напрямків."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
+"Ми можемо запобігти цьому *нормалізувавши* швидкість, тобто встановивши "
+"*довжину вектора* на ``1``, і помноживши на потрібну швидкість."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
+"Якщо ви ніколи раніше не використовували векторну математику або вам "
+"потрібно освіжити знання, ви можете переглянути пояснення використання "
+"вектора у Godot на :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:116
 msgid ""
@@ -101,10 +127,13 @@ msgid ""
 "you've set up input actions correctly as described in the :ref:"
 "`doc_2d_movement_setup` part of this tutorial."
 msgstr ""
+"Якщо вищенаведений код нічого не робить під час натискання клавіш, "
+"перевірте, чи правильно ви налаштували дії введення, як описано в частині :"
+"ref:`doc_2d_movement_setup` цього урока."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
-msgstr ""
+msgstr "Обертання + рух"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
@@ -113,6 +142,10 @@ msgid ""
 "the character, while up/down moves it forward or backward in whatever "
 "direction it's facing."
 msgstr ""
+"Цей тип руху іноді називають \"Астероїдним стилем\", оскільки він нагадує "
+"роботу цієї класичної аркадної гри. Натискання вліво/вправо обертає "
+"персонажа, тоді як вгору/вниз рухає його вперед, або назад, у будь-якому "
+"напрямку, до якого він спрямований."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
@@ -121,6 +154,10 @@ msgid ""
 "rotation. The rotation is applied directly to the body's ``rotation`` "
 "property."
 msgstr ""
+"Тут ми додали дві нові змінні для відстеження нашого напрямку обертання та "
+"швидкості. Знову ж таки, натискання обох клавіш одночасно призведе до "
+"скасування та не призведе до обертання. Обертання застосовується "
+"безпосередньо до властивості тіла ``rotation``."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
@@ -129,10 +166,14 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"Для встановлення швидкості ми використовуємо метод ``Vector2.rotated()`` "
+"так, щоб він вказував у тому ж напрямку, що і тіло. ``rotated()`` є корисною "
+"векторною функцією, яку ви можете використовувати в багатьох випадках, в "
+"яких за інших умов довелося б застосувати тригонометричні функції."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
-msgstr ""
+msgstr "Обертання + рух (мишкою)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
@@ -141,6 +182,9 @@ msgid ""
 "character will always \"look at\" the mouse pointer. The forward/back inputs "
 "remain the same, however."
 msgstr ""
+"Цей стиль руху є різновидом попереднього. Цього разу напрямок задається "
+"положенням мишки, замість клавіатури. Персонаж завжди буде \"дивитись\" на "
+"курсор мишки. Однак вхідні дані вперед/назад залишаються незмінними."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
@@ -148,16 +192,21 @@ msgid ""
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
+"Тут ми використовуємо метод :ref:`Node2D <class_Node2D>` ``look_at()``, щоб "
+"спрямувати гравця на певну позицію. Без цієї функції ви можете отримати той "
+"самий ефект, встановивши кут так:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
-msgstr ""
+msgstr "Клацай і рухайся"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
+"Цей останній приклад використовує лише мишку для управління персонажем. "
+"Натискання на екрані призведе до переміщення гравця до цільового місця."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
@@ -166,18 +215,27 @@ msgid ""
 "moves slightly past the position and tries to move back, only to move too "
 "far and repeat."
 msgstr ""
+"Зверніть увагу на перевірку ``distance_to()``, яку ми робимо перед "
+"переміщенням. Без цього тесту тіло буде \"тремтіти\", досягнувши цільового "
+"положення, коли воно просунеться трохи задалеко, спробує повернутися назад, "
+"знову проскочивши цільове положення, і так без кінця."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
+"Знявши коментар з рядка ``look_at()``, ви також повернете тіло в напрямку "
+"руху, якщо вам так більше подобається."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
+"Цей прийом також може бути використаний як основа \"відстежуючого\" "
+"персонажа. Позицією ``target`` *(ціль)* може бути будь-який об'єкт, до якого "
+"ви хочете перейти."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
@@ -189,9 +247,14 @@ msgid ""
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
+"Ці зразки коду можуть стати корисними в якості основи для ваших власних "
+"проектів. Сміливо використовуйте їх і експериментуйте з ними, щоб побачити, "
+"що ви можете зробити."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
+"Цей зразок проекту ви можете завантажити тут: :download:`2D_movement_demo."
+"zip <files/2D_movement_demo.zip>`"

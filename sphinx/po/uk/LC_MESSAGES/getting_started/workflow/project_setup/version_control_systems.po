@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
 msgid "Version Control Systems"
-msgstr ""
+msgstr "Системи контролю версій"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 msgid "Introduction"
@@ -33,11 +33,15 @@ msgid ""
 "you are using. VCS can be setup or shut down in the editor under **Project > "
 "Version Control**."
 msgstr ""
+"Godot прагне бути VCS доброзичливим та генерувати переважно читабельні та "
+"об’єднуючі файли. Godot також підтримує використання систем контролю версій "
+"у самому редакторі. Однак VCS у редакторі вимагає плагін для конкретного "
+"VCS, який ви використовуєте. VCS можна налаштувати або вимкнути в редакторі "
+"в меню **Проект> Керування версіями**."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
-#, fuzzy
 msgid "Official Git plugin"
-msgstr "Компіляція нашого додатка"
+msgstr "Офіційний плагін Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
 msgid ""
@@ -47,26 +51,35 @@ msgid ""
 "Documentation on how to use the Git plugin can be found `here <https://"
 "github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
+"Використання Git зсередини редактора підтримується офіційним плагіном. Ви "
+"можете знайти найновіші випуски `тут <https://github.com/godotengine/godot-"
+"git-plugin/releases>`__ (він недоступний у бібліотеці ресурсів). "
+"Документацію щодо використання плагіна Git можна знайти `тут <https://github."
+"com/godotengine/godot-git-plugin/wiki>`__."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
 msgid "Files to exclude from VCS"
-msgstr ""
+msgstr "Файли для виключення з VCS"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
 msgid "There are some folders Godot creates you should have your VCS ignore:"
-msgstr ""
+msgstr "Є кілька папок, які створює Godot, і які ваш VCS має ігнорувати:"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
 msgstr ""
+"``.import/``: Ця папка зберігає всі файли, які імпортується автоматично, на "
+"основі ваших вихідних ресурсів та їх позначок імпорту."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
 msgstr ""
+"``*.translation``: Ці файли є двійковими імпортованими перекладами, "
+"створеними з файлів CSV."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
 msgid ""
@@ -74,17 +87,21 @@ msgid ""
 "project, including sensitive information such as Android keystore "
 "credentials."
 msgstr ""
+"``export_presets.cfg``: Цей файл містить усі попередні налаштування експорту "
+"для проекту, включаючи конфіденційну інформацію, таку як облікові дані "
+"сховища ключів Android."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
 msgstr ""
+"``.mono/``: Ця папка зберігає автоматично генеровані Mono файли. Вона існує "
+"лише в проектах, що використовують Mono версію Godot."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
-#, fuzzy
 msgid "Working with Git on Windows"
-msgstr "Працюємо у Windows"
+msgstr "Робота з Git у Windows"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
 msgid ""
@@ -93,3 +110,7 @@ msgid ""
 "by Git due to their line endings being converted automatically. It is better "
 "to set this option as::"
 msgstr ""
+"Більшість клієнтів Git для Windows налаштовано з ``core.autocrlf`` "
+"встановленим на ``true``. Це може призвести до непотрібного позначення "
+"файлів як модифікованих Git через автоматичне перетворення закінчень їх "
+"рядків. Краще встановити цей параметр як:"

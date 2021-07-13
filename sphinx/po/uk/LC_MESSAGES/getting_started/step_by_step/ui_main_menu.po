@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -429,6 +429,7 @@ msgstr ""
 "Додавання контейнерів для автоматичного розміщення елементів інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -438,7 +439,7 @@ msgid ""
 "allow the user to resize the left and right areas using an interactive bar. "
 "On the other hand, ``HBoxContainer`` just splits itself into as many columns "
 "as it has children. Although you can deactivate the split container's resize "
-"behavior, I recommend to favor box containers."
+"behavior, it's recommended to favor box containers."
 msgstr ""
 "Наше головне меню має деякі поля по краях екрана. Воно розділене на дві "
 "частини: зліва ви маєте логотип та параметри меню. Праворуч у вас є "
@@ -526,7 +527,6 @@ msgstr ""
 "всередині CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -538,11 +538,11 @@ msgid ""
 msgstr ""
 "Щоб додати простору між меню і логотипом, ми використаємо ще один контейнер "
 "``VBoxContainer`` і його прапорці розмірів (Size Flags). Виберіть "
-"``VBoxContainer`` і натисніть ``Ctrl+A``, щоб додати в нього новий вузол. "
-"Додайте другий ``VBoxContainer`` та назвіть його *MenuOptions*. Виберіть усі "
-"три параметри меню ``Continue``, ``NewGame`` і ``Options`` та перетягніть їх "
-"всередину нового ``VBoxContainer``. Макет інтерфейсу повинен ледь змінитися, "
-"якщо він взагалі зміниться."
+"``VBoxContainer`` і натисніть :kbd:`Ctrl+A` (:kbd:`Cmd + A` на macOS), щоб "
+"додати в нього новий вузол. Додайте другий ``VBoxContainer`` та назвіть його "
+"*MenuOptions*. Виберіть усі три параметри меню ``Continue``, ``NewGame`` і "
+"``Options`` та перетягніть їх всередину нового ``VBoxContainer``. Макет "
+"інтерфейсу повинен ледь змінитися, якщо він взагалі зміниться."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
@@ -553,7 +553,6 @@ msgstr ""
 "інтерфейсу користувача."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -565,30 +564,27 @@ msgid ""
 msgstr ""
 "Тепер, коли ми згрупували параметри меню разом, ми можемо змусити їх "
 "контейнер розширитись, щоб зайняти якомога більше вертикального простору. "
-"Виберіть вузол ``MenuOptions``. У Інспекторі прокрутіть униз до розділу "
+"Виберіть вузол ``MenuOptions``. У Інспекторі прогорніть униз до розділу "
 "**Size Flags**. Клацніть на полі праворуч від властивості **Vertical** і "
-"встановіть прапорець **Expand** на додаток до **Fill**. Контейнер "
+"встановіть галочку **Expand** на додаток до **Fill**. Контейнер "
 "розширюється, щоб зайняти весь доступний вертикальний простір, поважаючи "
 "своїх сусідів, елементи ``Logo`` та ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
-"Щоб центрувати вузли у ``VBoxContainer``, прокрутіть до вершини Інспектора "
+"Щоб центрувати вузли у ``VBoxContainer``, прогорніть до вершини Інспектора "
 "та змініть властивість **Alignment** (Вирівнювання) на **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
 "Параметри меню повинні розташовуватися по центрі вертикалі в лівій колонці "
 "інтерфейсу користувача."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -603,7 +599,6 @@ msgstr ""
 "між параметрами меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
-#, fuzzy
 msgid "The final interface."
 msgstr "Кінцевий інтерфейс."
 
@@ -613,7 +608,6 @@ msgid ""
 msgstr "Без єдиного рядка коду ми маємо точне та чутливе головне меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -638,18 +632,18 @@ msgstr ""
 "положення та розміру елементів інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
-"Порядок, в якому ви гніздите, має значення. Щоб побачити, чи ваш інтерфейс "
-"користувача добре адаптується до різних співвідношень екрана, виберіть "
-"кореневий вузол, натисніть клавішу Q, щоб активувати режим вибору, виберіть "
-"контейнер і натисніть та перетягніть один з кутів контейнера, щоб змінити "
-"його розмір. Компоненти інтерфейсу повинні текти всередині нього."
+"Порядок, в якому ви розміщуєте вузли, має значення. Щоб побачити, чи ваш "
+"інтерфейс користувача добре адаптується до різних співвідношень екрана, "
+"виберіть кореневий вузол, натисніть клавішу :kbd:`Q`, щоб активувати режим "
+"вибору, виберіть контейнер і натисніть та перетягніть один з кутів "
+"контейнера, щоб змінити його розмір. Компоненти інтерфейсу повинні текти "
+"всередині нього."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
@@ -665,7 +659,6 @@ msgstr ""
 "та вниз."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -674,10 +667,10 @@ msgid ""
 "**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Ви можете змінити режим масштабування у параметрах проєкту: натисніть "
-"**Проєкт> Параметри проєкту** у верхньому меню. У лівій колонці вікна "
+"Ви можете змінити режим масштабування у параметрах проекту: натисніть "
+"**Проект> Параметри проекту** у верхньому меню. У лівій колонці вікна "
 "шукайте розділ **Display** (\"Відображення\"). Клацніть на підрозділ "
-"**Window**. У правій частині вікна ви знайдете розділ *Stretch** "
+"**Window**. У правій частині вікна ви знайдете розділ **Stretch** "
 "(Розтягування). Три налаштування **Mode** (Режим), **Aspect** (Аспект), і "
 "**Shrink** (Зменшення), керують розміром екрана. Для отримання додаткової "
 "інформації дивіться :ref:`doc_multiple_resolutions`."

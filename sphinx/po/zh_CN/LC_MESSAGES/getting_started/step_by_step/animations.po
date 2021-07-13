@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,9 +36,9 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
-"首先,让我们使用前面教程中的场景( :ref:`doc_splash_screen` ).目标是添加一个 ``"
-"淡入`` 动画到起始图像.为了防万一,这里是一个副本: :download:`robisplash.zip "
-"<files/robisplash.zip>`."
+"首先, 让我们使用前面教程中的场景( :ref:`doc_splash_screen` ). 目标是添加一个 "
+"``淡入`` 动画到起始图像. 为了防万一, 这里是一个副本: :download:`robisplash."
+"zip <files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
@@ -49,17 +49,17 @@ msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
-"首先,将一个 :ref:`AnimationPlayer <class_AnimationPlayer>` 节点添加到场景中,"
-"作为 ``background`` (根节点)的子节点:"
+"首先, 将一个 :ref:`AnimationPlayer <class_AnimationPlayer>` 节点添加到场景"
+"中, 作为 ``background`` (根节点)的子节点:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr "当选择这种类型的节点时,动画编辑器面板会出现:"
+msgstr "当选择这种类型的节点时, 动画编辑器面板会出现:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
-msgstr "动画编辑器面板保持可见,直到手动隐藏."
+msgstr "动画编辑器面板保持可见, 直到手动隐藏."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
@@ -70,8 +70,8 @@ msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
-"是时候创建一个新的动画了！按下动画按钮,然后在菜单中选择新建.在出现的对话框中"
-"输入动画名称 ``intro``."
+"是时候创建一个新的动画了！按下动画按钮, 然后在菜单中选择新建. 在出现的对话框"
+"中输入动画名称 ``intro``."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:40
 msgid ""
@@ -79,8 +79,8 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
-"现在我们有一个动画,属性检查器进入 ``动画编辑`` 模式.在此模式下,属性检查器的每"
-"个属性旁边都会显示一个钥匙图标.在Godot中,对象的任何属性都可以被动画化:"
+"现在我们有一个动画, 属性检查器进入 ``动画编辑`` 模式. 在此模式下, 属性检查器"
+"的每个属性旁边都会显示一个钥匙图标. 在Godot中, 对象的任何属性都可以被动画化:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "Editing the animation"
@@ -96,12 +96,12 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property to add a keyframe:"
 msgstr ""
-"在动画编辑器面板打开的情况下,选择 ``logo`` 节点,并将 ``Rect / Position`` 属性"
-"设置为 ``(118, -400)``,然后按该属性旁边的键按钮以添加关键帧:"
+"在动画编辑器面板打开的情况下, 选择 ``logo`` 节点, 并将 ``Rect / Position`` 属"
+"性设置为 ``(118, -400)``, 然后按该属性旁边的键按钮以添加关键帧:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
-msgstr "当对话框出现时,证明您正在创建一个新轨道."
+msgstr "当对话框出现时, 证明您正在创建一个新轨道."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
 msgid "The keyframe will be added in the animation player editor:"
@@ -109,15 +109,15 @@ msgstr "关键帧将添加到动画播放器编辑器中:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "点击此处,将编辑器光标及时向前移动:"
+msgstr "点击此处, 将编辑器光标及时向前移动:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
-"将 ``logo`` 的位置改为 ``(118, 0)``,并再次添加一个关键帧.当有两个具有不同值的"
-"关键帧,将产生动画."
+"将 ``logo`` 的位置改为 ``(118, 0)``, 并再次添加一个关键帧. 当有两个具有不同值"
+"的关键帧, 将产生动画."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
@@ -132,10 +132,10 @@ msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
-"点击 ``加载时自动播放(Autoplay on Load)`` 按钮,将动画设置为在场景开始时自动开"
-"始."
+"点击 ``加载时自动播放(Autoplay on Load)`` 按钮, 将动画设置为在场景开始时自动"
+"开始."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:83
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr "最终,当运行场景时,动画应该是这样的:"
+msgstr "最终, 当运行场景时, 动画应该是这样的:"

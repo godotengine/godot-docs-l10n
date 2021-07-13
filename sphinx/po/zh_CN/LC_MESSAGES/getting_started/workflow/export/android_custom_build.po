@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,13 +29,13 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
-"Godot提供了使用自定义构建Android模板的选项.与使用Godot附带的已预先构建好的模"
-"板不同,而是将实际的安卓Java项目安装到项目文件夹中.然后Godot将构建它,并在每次"
-"导出项目时将其作为导出模板使用."
+"Godot提供了使用自定义构建Android模板的选项. 与使用Godot附带的已预先构建好的模"
+"板不同, 而是将实际的安卓Java项目安装到项目文件夹中. 然后Godot将构建它, 并在每"
+"次导出项目时将其作为导出模板使用."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
 msgid "There are some reasons why you may want to do this:"
-msgstr "出于某些原因,您可能想要这样做:"
+msgstr "出于某些原因, 您可能想要这样做:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
@@ -52,6 +52,9 @@ msgid ""
 "android<doc_exporting_for_android>` up to **Setting it up in Godot**. After "
 "doing that, follow the steps below."
 msgstr ""
+"配置自定义构建是一个相当简单的过程。但首先你需要按照 :ref:`导出到"
+"android<doc_exporting_for_android>` 中的步骤，直到 **在Godot中设置它 ** 。做"
+"完这些后，按照下面的步骤进行。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:21
 msgid "Set up the custom build environment"
@@ -59,13 +62,13 @@ msgstr "设置自定义构建环境"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:23
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr "进入项目菜单,安装 *自定义构建* 模板:"
+msgstr "进入项目菜单, 安装 *自定义构建* 模板:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:27
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
 "download them."
-msgstr "确保已下载导出模板.如果没有,此菜单将帮助您下载它们."
+msgstr "确保已下载导出模板. 如果没有, 此菜单将帮助您下载它们."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:30
 msgid ""
@@ -74,9 +77,9 @@ msgid ""
 "your own add-ons<doc_android_plugin>`, or you really need to modify the "
 "project."
 msgstr ""
-"将在 ``res://android/build`` 下创建一个基于Gradle的Android项目,不需要编辑这些"
-"文件,除非你想 :ref:`创建你自己的add-ons<doc_android_plugin>` ,或者真的需要修"
-"改项目."
+"将在 ``res://android/build`` 下创建一个基于Gradle的Android项目, 不需要编辑这"
+"些文件, 除非你想 :ref:`创建你自己的 add-ons<doc_android_plugin>` , 或者真的需"
+"要修改项目."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Enabling the custom build and exporting"
@@ -87,7 +90,7 @@ msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
-"在 **Project > Export** [项目>导出]对话框中设置Android项目时,需要启用 "
+"在 **Project > Export** [项目>导出]对话框中设置Android项目时, 需要启用 "
 "**Custom Build** [自定义构建]:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
@@ -96,11 +99,11 @@ msgid ""
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
-"从现在开始,尝试导出项目或一键部署会调用 `Gradle <https://gradle.org/>`__ 构建"
-"系统来生成新的模板(每次都会出现这个窗口):"
+"从现在开始, 尝试导出项目或一键部署会调用 `Gradle <https://gradle.org/>`__ 构"
+"建系统来生成新的模板(每次都会出现这个窗口):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:49
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
-msgstr "生成的模板将在以后自动使用,因此不需要进一步的配置."
+msgstr "生成的模板将在以后自动使用, 因此不需要进一步的配置."

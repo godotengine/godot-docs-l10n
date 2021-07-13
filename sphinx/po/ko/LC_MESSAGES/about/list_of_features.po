@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,6 +99,7 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`헤드리스 Linux 및 macOS 서버 <doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -115,77 +116,75 @@ msgstr "편집기"
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:87
 #: ../../docs/about/list_of_features.rst:344
-#, fuzzy
 msgid "**Features:**"
-msgstr "**기능 태그**"
+msgstr "**기능들:**"
 
 #: ../../docs/about/list_of_features.rst:47
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "씬 트리"
+msgstr "씬 트리 편집기"
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Script editor."
-msgstr "GDScript"
+msgstr "스크립트 편집기"
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Visual Studio Code나 Vim과 같은 :ref:`외부 스크립트 편집기 "
+"<doc_external_editor>` 지원."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`디버거 <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "스레드 디버그는 아직 지원하지 않습니다."
 
 #: ../../docs/about/list_of_features.rst:54
-#, fuzzy
 msgid "Performance monitoring tools."
-msgstr "Godot에서 C#의 퍼포먼스"
+msgstr "성능 측정 툴."
 
 #: ../../docs/about/list_of_features.rst:55
-#, fuzzy
 msgid "Live script reloading."
-msgstr "씬 불러오기"
+msgstr "실시간 스크립트 리로딩"
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live scene editing."
-msgstr "씬 상속 사용하기"
+msgstr "실시간 씬 편집"
 
 #: ../../docs/about/list_of_features.rst:58
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"변경사항들은 편집기에 반영되며 프로젝트 실행을 중지한 이후에도 유지됩니다."
 
 #: ../../docs/about/list_of_features.rst:60
 msgid "Remote inspector."
-msgstr ""
+msgstr "원격 인스펙터."
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"변경사항들은 편집기에 반영되지 않으며 프로젝트 실행을 멈춘 이후에 유지되지 않"
+"습니다."
 
 #: ../../docs/about/list_of_features.rst:64
-#, fuzzy
 msgid "Live camera replication."
-msgstr "카메라 애니메이션"
+msgstr "실시간 카메라 복제"
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "편집기 내 카메라를 움직여 프로젝트 실행중에 결과를 볼 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "커뮤니티 참여로 지원되는 수십 가지 언어로 편집기를 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:70
 #, fuzzy
@@ -197,60 +196,68 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"편집기 기능 확장을 위한 플러그인들은 :ref:`애셋 라이브러리 "
+"<doc_what_is_assetlib>` 에서 다운로드받을 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:74
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"GDScript로 여러분만의 플러그인을 만들어 새로운 기능을 더하거나 워크플로를 더 "
+"빠르게 할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:75
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"프로젝트 매니저의 애셋 라이브러리에서 프로젝트를 다운로드받거나 직접 불러올 "
+"수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "2D graphics"
-msgstr ""
+msgstr "2D 그래픽"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:144
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**두 가지 렌더러가 사용 가능합니다:**"
 
 #: ../../docs/about/list_of_features.rst:82
 #: ../../docs/about/list_of_features.rst:147
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 3.0 렌더러 (데스크톱은 OpenGL 3.3을 사용합니다)."
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:147
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "하이엔드 비주얼. 데스크톱 플랫폼에 권장합니다."
 
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:153
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 2.0 렌더러 (데스크톱에서는 OpenGL 2.1을 사용합니다)."
 
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:150
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "모바일 또는 웹 플랫폼에 권장합니다."
 
 #: ../../docs/about/list_of_features.rst:89
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "스프라이트, 폴리곤 및 직선 렌더링."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Polygon2D나 Line2D 같이 직선이나 다각형을 그리기 위해 사용하는 고수준 도구들"
+"입니다."
 
 #: ../../docs/about/list_of_features.rst:93
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "애니메이션 스프라이트 제작 도우미로 AnimatedSprite가 있습니다."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Parallax layers."
@@ -815,7 +822,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:314
@@ -1160,6 +1167,8 @@ msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
 msgstr ""
+"여러분의 프로젝트의 현지화된 문자열들을 자동화된 GUI 요소로 사용하거나 "
+"``tr()`` 함수로 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:446
 msgid ""
@@ -1262,15 +1271,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "GUI system"
-msgstr "파일 시스템(File system)"
+msgstr "GUI 시스템"
 
 #: ../../docs/about/list_of_features.rst:484
 msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
+"Godot의 GUI는 Godot으로 게임을 만들 때 사용하는 것과 같은 동일한 컨트롤 노드"
+"를 이용하여 만들어졌습니다. 편집기 UI는 add-on을 사용하여 다양한 방법으로 확"
+"장하기 쉽습니다."
 
 #: ../../docs/about/list_of_features.rst:487
 #, fuzzy
@@ -1330,11 +1341,11 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:502
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
+"앵커를 사용하여 GUI요소들을 특정 코너 또는 모서리, 중앙에 고정시킵니다."
 
 #: ../../docs/about/list_of_features.rst:503
-#, fuzzy
 msgid "Containers to place GUI elements automatically following certain rules."
-msgstr "컨테이너를 추가하여 UI 요소들을 자동으로 놓기"
+msgstr "컨테이너를 추가하여 규칙에 따라 UI 요소들을 자동으로 놓기"
 
 #: ../../docs/about/list_of_features.rst:505
 #, fuzzy
@@ -1499,11 +1510,12 @@ msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:569
-#, fuzzy
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`완성된 스크립트<https://github.com/godotengine/godot/tree/master/misc/dist/"
+"shell>`__는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:572
 msgid ""
@@ -1533,11 +1545,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:581
 msgid "Godot 4.0 will be written in C++17."
-msgstr ""
+msgstr "Godot 4.0은 C++17로 작성될 것 입니다."
 
 #: ../../docs/about/list_of_features.rst:583
 msgid "Licensed under the permissive MIT license."
-msgstr ""
+msgstr "라이선스는 MIT 라이선스입니다."
 
 #: ../../docs/about/list_of_features.rst:585
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,23 +22,20 @@ msgid "Plugins for iOS"
 msgstr "Plugins für iOS"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
-#, fuzzy
 msgid ""
 "At the moment Godot provides StoreKit, GameCenter, iCloud services plugins. "
 "They are using same model of asynchronous calls explained below."
 msgstr ""
-"Derzeit sind zwei iOS APIs teilweise implementiert, GameCenter und Storekit. "
-"Beide verwenden dasselbe Modell für asynchrone Aufrufe, das unten erläutert "
-"wird."
+"Im Moment bietet Godot StoreKit, GameCenter, iCloud Services Plugins. Sie "
+"verwenden dasselbe Modell asynchroner Aufrufe, das unten erläutert wird."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:12
-#, fuzzy
 msgid "Accessing plugin singletons"
-msgstr "auf Szenen-Nodes zugreifen"
+msgstr "Zugriff auf Plugin-Singletons"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid ""
@@ -48,9 +45,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:18
-#, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
-msgstr "Hier ist ein Beispiel für einen Skelett-Node mit zwei Knochen:"
+msgstr "Hier ist ein Beispiel dafür, wie Sie dies in GDScript tun können:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:32
 msgid "Asynchronous methods"
@@ -109,13 +105,13 @@ msgid "Store Kit"
 msgstr "Store Kit"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"Implementiert in `Godot iOS InAppStore plugin <https://github.com/"
+"godotengine/godot-ios-plugins/blob/master/plugins/inappstore/in_app_store."
+"mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
@@ -240,22 +236,21 @@ msgid "Game Center"
 msgstr "Game Center"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
-"master/scene/audio/audio_player.cpp>`__"
+"Implementiert in `Godot iOS GameCenter Plugin <https://github.com/"
+"godotengine/godot-ios-plugins/blob/master/plugins/gamecenter/game_center."
+"mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
-#, fuzzy
 msgid ""
 "The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
 msgstr ""
-"Die Game Center API ist über das \"GameCenter\"-Singleton verfügbar. Es hat "
-"9 Methoden:"
+"Die Game Center API ist über das Singleton ``GameCenter`` verfügbar. Es hat "
+"die folgenden Methoden:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:201
 msgid "``Error authenticate();``"

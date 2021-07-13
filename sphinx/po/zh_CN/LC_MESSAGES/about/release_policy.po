@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,8 @@ msgid ""
 "happen depends on the choices of core contributors, and the needs of the "
 "community at a given time."
 msgstr ""
-"Godot的发布政策是不断变化的.以下内容是为了给各位提供一个大致的预期,但实际会发"
-"生什么取决于核心贡献者的选择,以及社区在特定时期的需求."
+"Godot的发布政策是不断变化的. 以下内容是为了给各位提供一个大致的预期, 但实际会"
+"发生什么取决于核心贡献者的选择, 以及社区在特定时期的需求."
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
@@ -41,8 +41,9 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
-"Godot松散地遵循了 `语义版本学<https://semver.org/>`__ ,采用了 ``major.minor."
-"patch`` 的版本系统,尽管对每个术语的解释都根据游戏引擎的复杂性进行了调整:"
+"Godot松散地遵循了 `语义版本学 <https://semver.org/>`__ , 采用了 ``major."
+"minor.patch`` 的版本系统, 尽管对每个术语的解释都根据游戏引擎的复杂性进行了调"
+"整:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -50,8 +51,8 @@ msgid ""
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
-"``major`` [主要]版本在发生重大不兼容时会增加,这意味着项目需要大量的移植工作才"
-"能从一个主要版本迁移另一个主要版本."
+"``major`` [主要]版本在发生重大不兼容时会增加, 这意味着项目需要大量的移植工作"
+"才能从一个主要版本迁移另一个主要版本."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -59,8 +60,8 @@ msgid ""
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
-"例如,将Godot项目从Godot 2.1移植到Godot 3.0时,需要通过转换工具运行项目,然后对"
-"工具无法自动完成的工作进行进一步的手动调整."
+"例如, 将Godot项目从Godot 2.1移植到Godot 3.0时, 需要通过转换工具运行项目, 然后"
+"对工具无法自动完成的工作进行进一步的手动调整."
 
 #: ../../docs/about/release_policy.rst:26
 msgid ""
@@ -69,9 +70,9 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
-"``minor`` [次要]版本在不严重破坏兼容性的功能发布时增加.在非常特定的领域中,小"
-"版本*可能*会出现轻微的兼容性问题,但绝大部分项目并不会受到影响或需要做大量的移"
-"植工作."
+"``minor`` [次要]版本在不严重破坏兼容性的功能发布时增加. 在非常特定的领域中, "
+"小版本 *可能* 会出现轻微的兼容性问题, 但绝大部分项目并不会受到影响或需要做大"
+"量的移植工作."
 
 #: ../../docs/about/release_policy.rst:31
 msgid ""
@@ -81,9 +82,9 @@ msgid ""
 "feature, or modifying the interface of a given class, even if the rest of "
 "the engine API remains backwards compatible."
 msgstr ""
-"原因在于,作为一个游戏引擎,Godot涵盖了渲染、物理、脚本等多个领域,修复某个领域"
-"的bug或实现新功能,有时可能需要改变某个功能的行为,或者修改某个类的接口,即便是"
-"引擎API的其他部分仍然向后兼容."
+"原因在于, 作为一个游戏引擎,Godot涵盖了渲染, 物理, 脚本等多个领域, 修复某个领"
+"域的bug或实现新功能, 有时可能需要改变某个功能的行为, 或者修改某个类的接口, 即"
+"便是引擎API的其他部分仍然向后兼容."
 
 #: ../../docs/about/release_policy.rst:39
 msgid ""
@@ -91,8 +92,8 @@ msgid ""
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
-"因此,建议所有用户升级到新的次要版本,但有必要进行一些测试,以确保你的项目在新的"
-"次要版本中仍能按照预期的方式运行."
+"因此, 建议所有用户升级到新的次要版本, 但有必要进行一些测试, 以确保你的项目在"
+"新的次要版本中仍能按照预期的方式运行."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -101,22 +102,22 @@ msgid ""
 "support, and backporting safe usability enhancements. Patch releases are "
 "backwards compatible."
 msgstr ""
-"``patch`` [补丁]版本是为维护版本而增加的,其重点是修复错误和安全问题,实现平台"
-"支持的新要求,以及可用性安全性增强.补丁版本是向后兼容的."
+"``patch`` [补丁]版本是为维护版本而增加的, 其重点是修复错误和安全问题, 实现平"
+"台支持的新要求, 以及可用性安全性增强. 补丁版本是向后兼容的."
 
 #: ../../docs/about/release_policy.rst:48
 msgid ""
 "Patch versions may include minor new features which do not impact the "
 "existing API, and thus have no risk of impacting existing projects."
 msgstr ""
-"补丁版本可能包含一些不影响现有API的小的新功能,因此没有影响现有项目的风险."
+"补丁版本可能包含一些不影响现有API的小的新功能, 因此没有影响现有项目的风险."
 
 #: ../../docs/about/release_policy.rst:53
 msgid ""
 "Updating to new patch versions is therefore considered safe and strongly "
 "recommended to all users of a given stable branch."
 msgstr ""
-"因此,更新到新的补丁版本被认为是安全的,并强烈推荐给特定稳定分支的所有用户."
+"因此, 更新到新的补丁版本被认为是安全的, 并强烈推荐给特定稳定分支的所有用户."
 
 #: ../../docs/about/release_policy.rst:56
 msgid ""
@@ -126,9 +127,9 @@ msgid ""
 "name (for example patch updates for the 3.3 stable branch are developed in "
 "the ``3.3`` Git branch)."
 msgstr ""
-"我们将 ``major.minor`` 组合称为 *table branches* [稳定分支].每个稳定分支都从"
-"一个 ``major.minor`` 版本开始(没有 ``0`` 表示 ``patch`` ),并在同名的Git分支中"
-"进一步开发维护版本(例如,3.3稳定分支的补丁更新在 ``3.3`` Git分支中开发)."
+"我们将 ``major.minor`` 组合称为 *table branches* [稳定分支]. 每个稳定分支都从"
+"一个 ``major.minor`` 版本开始(没有 ``0`` 表示 ``patch`` ), 并在同名的Git分支"
+"中进一步开发维护版本(例如,3.3稳定分支的补丁更新在 ``3.3`` Git分支中开发)."
 
 #: ../../docs/about/release_policy.rst:64
 msgid ""
@@ -137,9 +138,9 @@ msgid ""
 "In particular, the 3.2 stable branch received a number of new features in "
 "3.2.2 which would have warranted a ``minor`` version increment."
 msgstr ""
-"如导言中所述,Godot的发布规则在不断变化,早期的Godot版本可能没有严格遵守上述规"
-"则.特别是,3.2稳定分支在3.2.2中获得一些新的功能,这些新功能需要进行 ``minor`` "
-"版本递增."
+"如导言中所述,Godot的发布规则在不断变化, 早期的Godot版本可能没有严格遵守上述规"
+"则. 特别是,3.2稳定分支在3.2.2中获得一些新的功能, 这些新功能需要进行 "
+"``minor`` 版本递增."
 
 #: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
@@ -152,8 +153,8 @@ msgid ""
 "stable branches on a *best effort* basis for as long as they have active "
 "users who need maintenance updates."
 msgstr ""
-"在下一个稳定分支发布并获得第一个补丁更新之前,我们 至少会支持稳定分支.在实践"
-"中,只要有需要维护更新的活跃用户,我们就会以最大努力 的方式支持稳定分支."
+"在下一个稳定分支发布并获得第一个补丁更新之前, 我们 至少会支持稳定分支. 在实践"
+"中, 只要有需要维护更新的活跃用户, 我们就会以最大努力 的方式支持稳定分支."
 
 #: ../../docs/about/release_policy.rst:77
 msgid ""
@@ -163,9 +164,9 @@ msgid ""
 "new major version. This is the case for the 2.1 branch, and will be the case "
 "for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
-"每当一个新的主要版本发布时,我们都会对上一个稳定分支提供长期的支持,并尽最大努"
-"力为那些无法将复杂项目移植到新的主要版本中的旧版用户提供修复帮助.2.1分支如此,"
-"到Godot 4.0发布时,最新的3.x稳定分支也会如此."
+"每当一个新的主要版本发布时, 我们都会对上一个稳定分支提供长期的支持, 并尽最大"
+"努力为那些无法将复杂项目移植到新的主要版本中的旧版用户提供修复帮助.2.1分支如"
+"此, 到Godot 4.0发布时, 最新的3.x稳定分支也会如此."
 
 #: ../../docs/about/release_policy.rst:84
 msgid "**Version**"
@@ -192,35 +193,33 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "[unstable]*当前开发重点(不稳定).*"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
-msgstr ""
+msgstr "2021年第二或第三季度"
 
 #: ../../docs/about/release_policy.rst:88
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
-msgstr ""
+msgstr "|支持| *Beta.* 在开发过程中接收新功能以及错误修复。"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "Godot 3.3"
 msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "April 2021"
-msgstr "2021年3月/4月"
+msgstr "2021年4月"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
-msgstr "|supported| 接收错误、安全和平台支持的修复,以及向后兼容的可用性增强."
+msgstr ""
+"|supported| 接受对错误, 安全和平台支持问题的修复, 以及向后兼容的可用性增强."
 
 #: ../../docs/about/release_policy.rst:94
 msgid "Godot 3.2"
@@ -231,11 +230,10 @@ msgid "January 2020"
 msgstr "2020年1月"
 
 #: ../../docs/about/release_policy.rst:94
-#, fuzzy
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
-msgstr "|eol| 不再支持(最后更新:3.0.6)."
+msgstr "|eol| 不再支持, 因为被兼容的 3.3 版本完全取代了(最后更新: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:97
 msgid "Godot 3.1"
@@ -249,7 +247,7 @@ msgstr "三月2019"
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "3.1.2)."
-msgstr "|partial| 仅关键、安全和平台支持修复(最后更新:3.1.2)."
+msgstr "|partial| 仅关键, 安全和平台支持修复(最后更新:3.1.2)."
 
 #: ../../docs/about/release_policy.rst:100
 msgid "Godot 3.0"
@@ -275,7 +273,7 @@ msgstr "2016年7月"
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "2.1.6)."
-msgstr "|partial| 仅关键、安全和平台支持修复(最后更新:2.1.6)."
+msgstr "|partial| 仅关键, 安全和平台支持修复(最后更新:2.1.6)."
 
 #: ../../docs/about/release_policy.rst:105
 msgid "Godot 2.0"
@@ -322,7 +320,7 @@ msgstr ""
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
-msgstr "预览版的Godot版本并不打算用于生产,仅用于测试目的."
+msgstr "预览版的Godot版本并不打算用于生产, 仅用于测试目的."
 
 #: ../../docs/about/release_policy.rst:129
 msgid "When is the next release out?"
@@ -334,16 +332,16 @@ msgid ""
 "historically had one major or minor release per year, with several "
 "maintenance updates between each."
 msgstr ""
-"虽然Godot的贡献者并没有截止日期,但通常每年都会发布一个主要或次要的Godot版本,"
-"每一个版本之间都有数次维护更新."
+"虽然Godot的贡献者并没有截止日期, 但通常每年都会发布一个主要或次要的Godot版"
+"本, 每一个版本之间都有数次维护更新."
 
 #: ../../docs/about/release_policy.rst:135
 msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
 msgstr ""
-"自Godot 3.3以来,我们的目标是加快次要版本的开发周期,所以可以预期每3到6个月更新"
-"一个次要版本."
+"自Godot 3.3以来, 我们的目标是加快次要版本的开发周期, 所以可以预期每3到6个月更"
+"新一个次要版本."
 
 #: ../../docs/about/release_policy.rst:138
 msgid ""
@@ -351,8 +349,8 @@ msgid ""
 "very short development cycles, to provide users of the current stable branch "
 "with the latest bug fixes for their production needs."
 msgstr ""
-"维护(补丁)版本将根据需要发布,开发周期可能很短,作用是为当前稳定分支的用户提供"
-"最新的错误修复,以满足他们的生产需求."
+"维护(补丁)版本将根据需要发布, 开发周期可能很短, 作用是为当前稳定分支的用户提"
+"供最新的错误修复, 以满足他们的生产需求."
 
 #: ../../docs/about/release_policy.rst:142
 msgid ""
@@ -361,5 +359,6 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
-"至于即将到来的Godot 4.0,我们只能说,我们的目标是在 **2021年** 发布,再近的预期"
-"就很难保证了.一旦Godot 4.0的主要功能最终确定下来,我们就会尽快发布Alpha版本."
+"至于即将到来的Godot 4.0, 我们只能说, 我们的目标是在 **2021年** 发布, 再近的预"
+"期就很难保证了. 一旦Godot 4.0的主要功能最终确定下来, 我们就会尽快发布Alpha版"
+"本."

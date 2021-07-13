@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,10 +97,13 @@ msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:37
+#, fuzzy
 msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Server Linux e macOS senza testa "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -642,10 +645,13 @@ msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr "*GLES3:* Occlusione ambientale dello spazio dello schermo."
 
 #: ../../docs/about/list_of_features.rst:225
+#, fuzzy
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* debanding opzionale per evitare le bande di colore (efficace quando "
+"il rendering HDR è abilitato)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -703,7 +709,7 @@ msgstr "Antialiasing multi-campione (MSAA)."
 #: ../../docs/about/list_of_features.rst:245
 #, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antialiasing multi-campione (MSAA)."
+msgstr "Antialiasing approssimativo veloce (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -768,8 +774,7 @@ msgstr "Ragdolls."
 #: ../../docs/about/list_of_features.rst:279
 #, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Forme integrate: cuboide, sfera, capsula, cilindro (solo con fisica Bullet)."
+msgstr "Forme integrate: cuboide, sfera, capsula, cilindro."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -870,7 +875,8 @@ msgstr ""
 "asincrone o utilizzare più core del processore."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -987,10 +993,13 @@ msgstr ""
 "telecamera in 3D."
 
 #: ../../docs/about/list_of_features.rst:354
+#, fuzzy
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Ingresso audio per registrare i microfoni con accesso in tempo reale "
+"utilizzando la classe AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1143,9 +1152,12 @@ msgid "Pen/tablet input with pressure support."
 msgstr "Input penna/tablet con supporto della pressione."
 
 #: ../../docs/about/list_of_features.rst:408
+#, fuzzy
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Il supporto per l'input del gamepad, della tastiera e del mouse è "
+"disponibile anche su Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1333,8 +1345,9 @@ msgstr ""
 "Supporto per annunci pubblicitari che utilizzano moduli di terze parti."
 
 #: ../../docs/about/list_of_features.rst:472
+#, fuzzy
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Supporto per l'incorporazione di sottoview su Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"

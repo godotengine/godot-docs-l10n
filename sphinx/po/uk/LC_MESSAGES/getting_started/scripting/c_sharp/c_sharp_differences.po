@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
-#, fuzzy
 msgid "C# API differences to GDScript"
-msgstr "Відмінності API в GDScript"
+msgstr "Відмінності API C# в GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
@@ -96,15 +95,15 @@ msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
@@ -112,7 +111,7 @@ msgstr "перелік ``Variant.Type``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
@@ -162,19 +161,19 @@ msgstr "Винятки:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
@@ -231,14 +230,12 @@ msgstr ""
 "сигналу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr "Дивіться також: :ref:`c_sharp_signals`"
+msgstr "Дивіться також: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Ключове слово Onready"
+msgstr "Ключове слово `onready`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -246,29 +243,32 @@ msgid ""
 "until the ready function is called with `onready` (cf. :ref:"
 "`doc_gdscript_onready_keyword`). For example:"
 msgstr ""
+"GDScript має можливість відкласти ініціалізацію змінної-члена, доки функція "
+"ready не буде викликана з допомогою `onready` (дивіться :ref:"
+"`doc_gdscript_onready_keyword`). Наприклад:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:137
 msgid ""
 "However C# does not have this ability. To achieve the same effect you need "
 "to do this."
 msgstr ""
+"Однак C# не має цієї можливості. Для досягнення того ж ефекту вам потрібно "
+"зробити таке."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
 msgstr "Сінглтони"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
-#, fuzzy
 msgid ""
 "Singletons are available as static classes rather than using the singleton "
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
-"Синглтони доступні як статичні класи, а не використанням шаблону синглтону. "
-"Це робить код менш багатослівним, ніж це було б з властивістю ``Instance``."
+"Синглтони доступні як статичні класи, а не з допомогою шаблону синглтону. Це "
+"робить код менш багатослівним, ніж це було б з властивістю ``Instance``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:160
-#, fuzzy
 msgid ""
 "However, in some very rare cases this is not enough. For example, you may "
 "want to access a member from the base class ``Godot.Object``, like "
@@ -321,14 +321,14 @@ msgstr ""
 "регістру:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
-#, fuzzy
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
-"``Match``/``Matchn``/``ExprMatch``: Додатковий спосіб, крім ``Match`` і "
-"``Matchn``, що дозволяє явно вказати чутливість до регістру:"
+"``Match``/``Matchn``/``ExprMatch`` : Додатковий спосіб передбачений на "
+"додаток до ``Match`` і ``Matchn``, який дозволяє явно вказати чутливість до "
+"регістру:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:212
 msgid "Basis"
@@ -352,15 +352,13 @@ msgstr "Наступний метод був перетворений у вла�
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``get_scale()``"
-msgstr "get_scale()"
+msgstr "``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``Scale``"
-msgstr "Scale"
+msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:227
 msgid "Transform2D"
@@ -414,7 +412,7 @@ msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:254
 msgid "Rect2"
-msgstr ""
+msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:256
 msgid ""
@@ -424,11 +422,11 @@ msgstr "Наступне поле було перетворене у власт�
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
 msgid "``get_area()``"
@@ -468,11 +466,11 @@ msgstr "``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:289
 msgid "Array"
@@ -488,7 +486,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "``Array``"
-msgstr ""
+msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "``Godot.Collections.Array``"
@@ -638,7 +636,7 @@ msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:353
 msgid "``Color.Color8``"
-msgstr ""
+msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:354
 msgid "``is_inf``"
@@ -662,7 +660,6 @@ msgstr "``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:356
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:357
-#, fuzzy
 msgid "TODO"
 msgstr "ЩЕ НЕ НАПИСАНО."
 

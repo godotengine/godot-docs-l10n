@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,6 +100,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Servidores Headless Linux e macOS "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -249,7 +251,7 @@ msgstr "Recomendado para plataformas Web e dispositivos móveis."
 
 #: ../../docs/about/list_of_features.rst:89
 msgid "Sprite, polygon and line rendering."
-msgstr "Sprite, polignos e renderizador de linhas."
+msgstr "Sprites, polígonos e renderização de linhas."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
@@ -638,6 +640,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Debanding opcional para evitar color banding (efetiva quando a "
+"renderização HDR está ativa)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -693,9 +697,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antisserrilhado (MSAA) de várias amostras."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antisserrilhado (MSAA) de várias amostras."
+msgstr "Antialiasing aproximado rápido (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -783,11 +786,11 @@ msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:286
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr "*2D:* Shaders de vertíce, fragmento e luz customizados."
+msgstr "*2D:* Shaders de vertíce, fragmento e luz personalizados."
 
 #: ../../docs/about/list_of_features.rst:287
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr "*3D:* Shaders customizados para vértices, fragmentos, luzes e céu."
+msgstr "*3D:* Shaders personalizados para vértices, fragmentos, luzes e céu."
 
 #: ../../docs/about/list_of_features.rst:288
 msgid ""
@@ -825,7 +828,8 @@ msgstr "Sinais e grupos para comunicação entre scripts."
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
-"Suporte para :ref:`cross-language scripting <doc_cross_language_scripting>`."
+"Suporte para :ref:`scripting entre linguagens "
+"<doc_cross_language_scripting>`."
 
 #: ../../docs/about/list_of_features.rst:301
 msgid ""
@@ -859,11 +863,12 @@ msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
-":ref:`Use threads <doc_using_multiple_threads>`para executar ações "
+":ref:`Usa threads <doc_using_multiple_threads>`para executar ações "
 "assíncronas ou fazer uso de múltiplos núcleos de processador."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -893,7 +898,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:322
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ":ref:`ScriptVisual: <toc-learn-scripting-visual_script>`"
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:324
 msgid ""
@@ -981,6 +986,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Entrada de áudio para gravar microfones com acesso em tempo real usando a "
+"classe AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1013,7 +1020,8 @@ msgstr "Importar"
 #: ../../docs/about/list_of_features.rst:368
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr ""
-"Suporte para :ref:`plugins de importação customizados <doc_import_plugins>`."
+"Suporte para :ref:`plugins de importação personalizados "
+"<doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:370
 msgid "**Formats:**"
@@ -1137,6 +1145,8 @@ msgstr "Entrada de caneta/tablet com suporte a pressão."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Suporte para entrada de gamepad, teclado e mouse também estão disponíveis no "
+"Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1319,7 +1329,7 @@ msgstr "Suporte a anúncios usando módulos de terceira pessoa."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Suporte para incorporação de subvisão no Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
@@ -1426,11 +1436,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:505
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ":ref:`Stack <class_BoxContainer>` esboços ([i]layouts[/i])."
+msgstr "Layouts :ref:`Stack <class_BoxContainer>`."
 
 #: ../../docs/about/list_of_features.rst:506
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`Grid <class_GridContainer>` esboços ([i]layouts[/i]."
+msgstr "Layouts :ref:`Grid <class_GridContainer>`."
 
 #: ../../docs/about/list_of_features.rst:507
 msgid ""
@@ -1448,15 +1458,15 @@ msgstr ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
 msgstr ""
-"Escale para resoluções múltiplas usando os modos de alongamento `` 2d`` ou "
-"`` viewport``."
+"Escala para resoluções múltiplas usando os modos de alongamento ``2d`` ou `` "
+"viewport``."
 
 #: ../../docs/about/list_of_features.rst:512
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
 "Suporta qualquer proporção de aspecto usando âncoras e o aspecto de extensão "
-"`` expand``."
+"``expand``."
 
 #: ../../docs/about/list_of_features.rst:514
 msgid "**Theming:**"
@@ -1468,12 +1478,12 @@ msgstr "Editor de temas embutido."
 
 #: ../../docs/about/list_of_features.rst:518
 msgid "Generate a theme based on the current editor theme settings."
-msgstr "Gere um tema com base nas configurações de tema atuais do editor."
+msgstr "Gera um tema com base nas configurações de tema atuais do editor."
 
 #: ../../docs/about/list_of_features.rst:520
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ""
-"Temas baseados em vetores procedurais usando: ref: `class_StyleBoxFlat`."
+"Temas baseados em vetores procedurais usando :ref:`class_StyleBoxFlat`."
 
 #: ../../docs/about/list_of_features.rst:522
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
@@ -1483,7 +1493,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:524
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr "Temas baseados em textura usando: ref: `class_StyleBoxTexture`."
+msgstr "Temas baseados em textura usando :ref:`class_StyleBoxTexture`."
 
 #: ../../docs/about/list_of_features.rst:526
 msgid ""

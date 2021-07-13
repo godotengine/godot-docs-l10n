@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,16 +28,15 @@ msgstr ""
 "момент."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"Эта страница содержит список всех функций, которые поддерживаются в "
-"стабильной версии Godot (3.2). `Дополнительные функции <https://docs."
-"godotengine.org/en/latest/about/list_of_features.html>`__ присутствуют в "
+"Эта страница содержит список возможностей, которые поддерживаются в "
+"стабильной версии Godot (3.3). `Больше возможностей <https://docs."
+"godotengine.org/en/latest/about/list_of_features.html>`__ доступно в "
 "последней разрабатываемой версии (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
@@ -101,6 +100,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Безголовые серверы Linux и macOS "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -537,8 +538,7 @@ msgstr "Карты освещения запекаются на процессо
 #: ../../docs/about/list_of_features.rst:191
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
-"*GLES3:* Зонды GI (GI probes) (медленнее, в режиме полуреального "
-"времени(semi-real-time)). Поддерживает отражения."
+"*GLES3:* GI зонды (медленнее, полуреальное время). Поддерживает отражения."
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "**Reflections:**"
@@ -640,6 +640,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Дополнительная отладка во избежание цветовых полос (эффективно, "
+"когда включен HDR-рендеринг)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -698,9 +700,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Множественная выборка сглаживания (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Множественная выборка сглаживания (MSAA)."
+msgstr "Быстрое приблизительное сглаживание (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -767,10 +768,8 @@ msgid "Ragdolls."
 msgstr "Система Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Встроенные формы: куб, сфера, капсула, цилиндр (только с физикой Bullet)."
+msgstr "Встроенные формы: куб, сфера, капсула, цилиндр."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -872,7 +871,8 @@ msgstr ""
 "асинхронных действий или использования нескольких процессорных ядер."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -992,6 +992,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Аудиовход для записи микрофонов с доступом в реальном времени используя "
+"класс AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1148,6 +1150,8 @@ msgstr "Перо и планшет с поддержкой давления."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Поддержка ввода с помощью геймпада, клавиатуры и мыши также доступна на "
+"Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1335,7 +1339,7 @@ msgstr "Поддержка рекламы с использованием сто
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Поддержка внедрения подвида на Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"

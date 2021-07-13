@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,8 +45,8 @@ msgid ""
 "*Examples* section below)."
 msgstr ""
 "Uma variável exportada deve inicializada por uma expressão constante ou ter "
-"uma dica de exportação na forma de um argumento da palavra-chave ``export`` "
-"(veja abaixo a seção *Exemplos*)."
+"uma inferência de exportação na forma de um argumento da palavra-chave "
+"``export`` (veja abaixo a seção *Exemplos*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -84,46 +84,47 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
-msgstr "Exportando sinalizadores"
+msgstr "Exportando sinalizadores de bits"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
 "Inteiros usados como sinalizadores podem armazenar múltiplos valores "
-"``true``/``false`` (booleanos) em uma propriedade. Usando a dica de "
-"exportação ``int, FLAGS``, eles podem ser configurados a partir do editor::"
+"``true``/``false`` (booleanos) em uma propriedade. Usando a inferência de "
+"exportação ``int, FLAGS, ...``, eles podem ser configurados a partir do "
+"editor::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"Neste exemplo, ``Fire`` tem valor 1, ``Water`` tem valor 2, ``Earth`` tem "
-"valor 4 e ``Wind`` corresponde ao valor 8. Normalmente, constantes deveriam "
-"ser definidas em conformidade (por exemplo, ``const ELEMENT_WIND = 8`` e "
-"assim por diante)."
+"Você deve fornecer uma descrição em string para cada sinalizador. Neste "
+"exemplo, ``Fire`` tem valor 1, ``Water`` tem valor 2, ``Earth`` tem valor 4 "
+"e ``Wind`` corresponde ao valor 8. Normalmente, constantes deveriam ser "
+"definidas em conformidade (por exemplo, ``const ELEMENT_WIND = 8`` e assim "
+"por diante)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
 msgstr ""
+"Inferências de exportação também são fornecidas para as camadas de física e "
+"de renderização definidas nas configurações do projeto::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
-"O uso de sinalizadores exige certo conhecimento de operações bit a bit. Na "
-"dúvida, exporte variáveis boolianas."
+"O uso de sinalizadores de bit exige certo conhecimento de operações bit a "
+"bit. Na dúvida, exporte variáveis booleanas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
@@ -133,6 +134,8 @@ msgstr "Exportando arrays"
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Arrays exportados podem ter inicializadores, mas devem ser expressões "
+"constantes."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
@@ -140,10 +143,13 @@ msgid ""
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
+"Se o array exportado especificar um tipo que herda de Resource, os valores "
+"do array podem ser definidos no inspetor arrastando e soltando vários "
+"arquivos da dock Arquivos de uma vez."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid "Setting exported variables from a tool script"
-msgstr ""
+msgstr "Definindo variáveis exportadas a partir de um script de ferramenta"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
 msgid ""
@@ -153,11 +159,15 @@ msgid ""
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
 msgstr ""
+"Ao alterar o valor de uma variável exportada de um script em :ref:"
+"`doc_gdscript_tool_mode`, o valor no inspetor não será atualizado "
+"automaticamente. Para atualizá-lo chame :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` após definir o valor da "
+"variável exportada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
-#, fuzzy
 msgid "Advanced exports"
-msgstr "Funções e Variáveis"
+msgstr "Exports avançados"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
 msgid ""
@@ -165,6 +175,10 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
+"Nem todo tipo de export pode ser fornecido no nível da própria linguagem "
+"para evitar complexidade de design desnecessária. O seguinte descreve mais "
+"ou menos alguns recursos de exportação comuns que podem ser implementados "
+"com uma API de baixo nível."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
 msgid ""
@@ -175,23 +189,32 @@ msgid ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
+"Antes de continuar lendo, você deve se familiarizar com a forma como "
+"propriedades são tratadas e como elas podem ser personalizadas com os "
+"métodos :ref:`_set() <class_Object_method__get_property_list>`, :ref:`_get() "
+"<class_Object_method__get_property_list>`, e :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` como descrito em :ref:"
+"`doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
+"Para propriedades de ligação usando os métodos acima em C++, veja :ref:"
+"`doc_binding_properties_using_set_get_property_list`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
+"O script deve operar no modo de ``ferramenta`` para que os métodos acima "
+"possam funcionar dentro do editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
-#, fuzzy
 msgid "Adding script categories"
-msgstr "Propriedades do Node"
+msgstr "Adicionando categorias de script"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
@@ -199,10 +222,13 @@ msgid ""
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
+"Para uma melhor distinção visual das propriedades, uma categoria especial de "
+"script pode ser incorporada ao inspetor para atuar como um separador. "
+"``Script Variables`` é um exemplo de categoria embutida."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
 msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr ""
+msgstr "``name`` é o nome de uma categoria a ser adicionada ao inspetor;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
 msgid ""
@@ -211,21 +237,26 @@ msgid ""
 "it won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_CATEGORY`` indica que a propriedade deve ser tratada como "
+"uma categoria de script especificamente, então o tipo ``TYPE_NIL`` pode ser "
+"ignorado pois não será realmente usado para a lógica de script, mas deve ser "
+"definido de qualquer forma."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
-#, fuzzy
 msgid "Grouping properties"
-msgstr "Propriedades do Node"
+msgstr "Agrupando propriedades"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
 msgid "A list of properties with similar names can be grouped."
-msgstr ""
+msgstr "Uma lista de propriedades com nomes semelhantes pode ser agrupada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
+"``name`` é o nome de um grupo que será exibido como uma lista de "
+"propriedades que pode ser recolhida;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
 msgid ""
@@ -234,6 +265,10 @@ msgid ""
 "key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
 "this case."
 msgstr ""
+"cada propriedade sucessiva adicionada após a propriedade do grupo será "
+"recolhida e encurtada conforme determinado pelo prefixo definido por meio da "
+"chave ``hint_string``. Por exemplo, ``rotate_speed`` será encurtado para "
+"``speed`` neste caso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
 msgid ""
@@ -242,3 +277,7 @@ msgid ""
 "won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_GROUP`` indica que a propriedade deve ser tratada como um "
+"grupo de script especificamente, então o tipo ``TYPE_NIL`` pode ser "
+"ignorado, pois não será realmente usado para a lógica de script, mas deve "
+"ser definido de qualquer forma."

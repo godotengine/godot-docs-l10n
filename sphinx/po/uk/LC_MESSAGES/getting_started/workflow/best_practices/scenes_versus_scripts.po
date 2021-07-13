@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "Коли використовувати сцени, а коли скрипти"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"Ми вже висвітлювали, чим відрізняються сцени та скрипти. Скрипти визначають "
+"розширення класу движка з імперативним кодом, сцени з декларативним кодом."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -34,10 +36,14 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"В результаті можливості кожної системи різні. Сцени можуть визначати, як "
+"розширений клас ініціалізується, але не те, якою є його поведінка насправді. "
+"Сцени часто використовуються разом із скриптом, так що сцена діє як "
+"продовження декларативного коду скрипта."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "Анонімні типи"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -45,6 +51,9 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"*Можна* повністю визначити зміст сцен, використовуючи лише один скрипт. Це, "
+"по суті, те, що робить редактор Godot, тільки в конструкторі C++ зі своїх "
+"об'єктів."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -52,6 +61,9 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"Але вибір того, який із них використовувати, може бути дилемою. Створення "
+"примірників скриптів ідентично створенню внутрішніх класів движка, тоді як "
+"обробка сцен вимагає зміни в API:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -59,11 +71,13 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"Крім того, скрипти будуть працювати трохи повільніше, ніж сцени, через "
+"різницю в швидкості між движком і кодом скрипта. Чим більший і складніший "
+"вузол, тим більше підстав побудувати його як сцену."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
-#, fuzzy
 msgid "Named types"
-msgstr "Типи даних"
+msgstr "Названі типи"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -72,48 +86,53 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"У деяких випадках користувач може зареєструвати скрипт як новий тип у самому "
+"редакторі. Це відображає його як новий тип у діалоговому вікні створення "
+"вузла, або ресурса з необов’язковою піктограмою. У цих випадках можливість "
+"користування скриптом набагато спрощується. Замість того, щоб ..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "Знати базовий тип скрипта, який мав би використовуватися."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 msgid "Create an instance of that base type."
-msgstr ""
+msgstr "Створювати екземпляр цього базового типу."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
 msgid "Add the script to the node."
-msgstr ""
+msgstr "Додавати скрипт до вузла."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(Метод перетягування)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 msgid "Find the script in the FileSystem dock."
-msgstr ""
+msgstr "Знайти скрипт на вкладці Файлова система."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr ""
+msgstr "Перетягнути скрипт на вузол на вкладці Сцена."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(Метод властивості)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
 msgstr ""
+"Прогорнути вниз Інспектора, щоб знайти властивість ``script`` і вибрати її."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "Вибрати \"Завантажити\" зі спливаючого меню."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 msgid "Select the script from the file dialog."
-msgstr ""
+msgstr "Вибрати скрипт у діалоговому вікні файла."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -122,83 +141,99 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"З зареєстрованим скриптом, скриптовий тип стає варіантом створення, як і "
+"інші вузли та ресурси в системі. Не потрібно виконувати жодної з "
+"вищезазначених робіт. У діалоговому вікні створення навіть є рядок пошуку "
+"для пошуку типу за назвою."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 msgid "There are two systems for registering types..."
-msgstr ""
+msgstr "Існує дві системи реєстрації типів ..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ""
+msgstr ":ref:`Користувацькі Типи <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "Лише для редактора. Назви типів недоступні під час виконання."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "Не підтримує успадковані користувацькі типи."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "Інструмент ініціалізації. Створює вузол зі скриптом. Більше нічого."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"Редактор не знає про тип скрипта або його зв’язок з іншими типами механізмів "
+"чи скриптів."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "Дозволяє користувачам визначати піктограму."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
 msgstr ""
+"Працює для всіх скриптових мов, оскільки абстрактно стосується скриптових "
+"ресурсів."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"Налаштовується за допомогою :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`Класи Скриптів <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "Доступ до редактора та середовища виконання."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 msgid "Displays inheritance relationships in full."
-msgstr ""
+msgstr "Показує відносини спадкування в повному обсязі."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"Створює вузол зі скриптом, але також може змінювати типи або розширювати тип "
+"із редактора."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"Редактору відомі відносини спадкування між скриптами, класами скриптів та C+"
+"+ класами движка."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"Розробники движка повинні додавати підтримку мов вручну (як для розголошення "
+"імені, так і для доступності під час виконання)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "Тільки Godot 3.1+."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -206,6 +241,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"Редактор сканує папки проекту та реєструє будь-які відкриті імена для всіх "
+"мов скриптів. Кожна скриптова мова повинна реалізовувати власну підтримку "
+"для відкриття цієї інформації."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -214,6 +252,10 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"Обидві методології додають імена до діалогового вікна створення, але, "
+"зокрема, класи скриптів також дозволяють користувачам отримувати доступ до "
+"імені типу без завантаження ресурсу скрипта. Створення примірників та доступ "
+"до констант або статичних методів життєздатне з будь-якого місця."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -222,21 +264,29 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"Завдяки таким функціям, можна забажати, щоб тип був скриптом без сцени "
+"завдяки простоті використання, яку він надає користувачам. Ті, хто розробляє "
+"плагіни або створює власні інструменти для використання дизайнерами, оцінят "
+"зручність."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
 msgstr ""
+"З мінусів, це також означає необхідність використання, в основному, "
+"імперативного програмування."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Performance of Script vs PackedScene"
-msgstr ""
+msgstr "Виконання Скрипта та PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid ""
 "One last aspect to consider when choosing scenes and scripts is execution "
 "speed."
 msgstr ""
+"Останній аспект, який слід враховувати при виборі сцен та скриптів, - це "
+"швидкість виконання."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -244,6 +294,9 @@ msgid ""
 "initialize them grows much larger. Creating node hierarchies demonstrates "
 "this. Each Node's logic could be several hundred lines of code in length."
 msgstr ""
+"Зі збільшенням розміру об’єктів необхідний розмір скрипта для їх створення "
+"та ініціалізації стає набагато більшим. Створення ієрархій вузлів це "
+"демонструє. Логіка кожного вузла може складати кілька сотень рядків коду."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
 msgid ""
@@ -251,6 +304,10 @@ msgid ""
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
+"Наведений нижче приклад коду створює новий ``Node``, змінює його назву, "
+"призначає йому скрипт, встановлює майбутнього предка як власника, щоб він "
+"зберігався на диску разом з ним, і нарешті додає його в якості нащадка до "
+"вузла ``Main``:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
 msgid ""
@@ -258,6 +315,9 @@ msgid ""
 "instruction makes a call to the scripting API which leads to many \"lookups"
 "\" on the back-end to find the logic to execute."
 msgstr ""
+"Код скрипта набагато повільніший, ніж C++ код движка. Кожна інструкція "
+"викликає API скриптів, що веде до багатьох прихованих \"пошуків\" логіки "
+"виконання."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
 msgid ""
@@ -267,6 +327,11 @@ msgid ""
 "scenes in batches on the back-end and provide much better performance than "
 "scripts."
 msgstr ""
+"Сцени допомагають уникнути цієї проблеми з продуктивністю. :ref:`PackedScene "
+"<class_PackedScene>`, базовий тип, від якого сцени успадковуються, визначає "
+"ресурси, які використовують серіалізовані дані для створення об’єктів. "
+"Механізм може приховано обробляти сцени партіями та забезпечує набагато "
+"кращу продуктивність, ніж скрипти."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"
@@ -274,7 +339,7 @@ msgstr "Висновки"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:207
 msgid "In the end, the best approach is to consider the following:"
-msgstr ""
+msgstr "Зрештою, найкращим підходом є врахування наступного:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:209
 msgid ""
@@ -284,6 +349,11 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"Якщо хтось хоче створити базовий інструмент, який буде повторно використаний "
+"у кількох різних проектах і який, ймовірно, будуть використовувати люди всіх "
+"рівнів кваліфікації (включаючи тих, хто не називає себе \"програмістами\"), "
+"то, швидше за все, це повинен бути скрипт, і, навіть, із власним ім’ям/"
+"піктограмою."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:214
 msgid ""
@@ -291,6 +361,9 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"Якщо хтось хоче створити концепцію, яка є характерною для його гри, то це "
+"завжди має бути сцена. Сцени легше відстежувати/редагувати і вони "
+"забезпечують більший захист, ніж скрипти."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:218
 msgid ""
@@ -298,3 +371,6 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"Якщо хтось хотів би назвати сцену, тоді він все одно може зробити це в 3.1, "
+"оголосивши клас скрипта та надавши йому сцену як константу. Скрипт фактично "
+"стає простором імен:"

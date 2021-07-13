@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr "Projetar a GUI"
+msgstr "Projetando a GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -184,12 +184,11 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
-"Queremos que nossa interface ancore no topo da tela. Selecione o nó `` GUI`` "
+"Queremos que nossa interface ancore no topo da tela. Selecione o nó ``GUI`` "
 "e clique no botão Layout na parte superior da janela de exibição. Selecione "
-"a opção \"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu "
-"pai, a janela de exibição por padrão. Ele será redimensionado "
-"automaticamente no eixo vertical para criar espaço para seus componentes de "
-"UI filho."
+"a opção ``Top Wide``. O nó ``GUI`` irá ancorar na borda superior de seu pai, "
+"a janela de exibição por padrão. Ele será redimensionado automaticamente no "
+"eixo vertical para criar espaço para seus componentes de UI filho."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
@@ -550,17 +549,17 @@ msgstr ""
 "vamos duplicá-lo e usá-lo como modelo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
-#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
 "duplicate it. Drag and drop the new node under the ``Counters`` "
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
-"Sob o nó ``Bar``, selecione ``Count`` e pressione Ctrl D para duplicá-lo. "
-"Arraste e solte o novo nó sob o ``Counters`` ``HBoxContainer`` na parte "
-"inferior da árvore de cena. Você deve vê-lo redimensionar automaticamente. "
-"Não se preocupe com isso por enquanto, vamos corrigir o tamanho em breve."
+"Sob o nó ``Bar``, selecione ``Count`` e pressione :kbd:`Ctrl + D` para "
+"duplicá-lo. Arraste e solte o novo nó sob o ``Counters`` ``HBoxContainer`` "
+"na parte inferior da árvore de cena. Você deve vê-lo redimensionar "
+"automaticamente. Não se preocupe com isso por enquanto, vamos corrigir o "
+"tamanho em breve."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""
@@ -604,7 +603,6 @@ msgstr ""
 "Os nós ancoram em todo o plano de fundo, mas sua posição está desativada"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -612,15 +610,13 @@ msgid ""
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
-"Vamos alterar as propriedades de alinhamento do ``Number`` para movê-lo para "
-"a esquerda e para o centro do ``Background``. Selecione o nó ``Number``, "
-"altere sua propriedade ``Align`` para `left`(esquerda) e a propriedade "
-"``VAlign`` para `center`(centro). Em seguida, redimensione um pouco a borda "
-"esquerda para adicionar um preenchimento entre a borda esquerda do "
-"``Background`` e o texto."
+"Vamos mudar as propriedades de alinhamento do ``Number`` para movê-lo para a "
+"esquerda e centro do ``Background``. Selecione o nó ``Number``, altere sua "
+"propriedade ``Align`` para a esquerda e a propriedade ``Valign`` para o "
+"centro. Em seguida, redimensione sua borda esquerda um pouco para adicionar "
+"algum preenchimento entre a borda esquerda do ``Background`` e o texto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-#, fuzzy
 msgid "The Number node aligned to the left and center"
 msgstr "O nó Number alinhado à esquerda e ao centro"
 

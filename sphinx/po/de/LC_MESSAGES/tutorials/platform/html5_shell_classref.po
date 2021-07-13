@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr "Promise"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
+msgstr ":js:attr:`load <Engine.load>` **(** string basisPfad **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
@@ -75,9 +75,8 @@ msgid "void"
 msgstr "void"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
-#, fuzzy
 msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
-msgstr "`Engine.unload <#Engine.unload>`__ **(** **)**"
+msgstr "Attribut :js:attr:`unload <Engine.unload>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:84
@@ -87,38 +86,37 @@ msgid "boolean"
 msgstr "boolean"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
-#, fuzzy
 msgid ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 msgstr ""
-"`Engine.isWebGLAvailable <#Engine.isWebGLAvailable>`__ **(** *[ number "
-"majorVersion=1 ]* **)**"
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ Zahl "
+"majorVersion=1 ]* **)**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:31
 msgid "Instance Methods"
 msgstr "Instanzmethoden"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:34
-#, fuzzy
 msgid ""
 ":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
-msgstr "`engine.init <#engine.init>`__ **(** *[ string basePath ]* **)**"
+msgstr ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basisPfad ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
-#, fuzzy
 msgid ""
 ":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
 "ArrayBuffer file *[, string path ]* **)**"
 msgstr ""
-"`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
-"*[, string path ]* **)**"
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string Pfad ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:38
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
-":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig "
+"überschreibe**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 msgid ""
@@ -126,7 +124,7 @@ msgid ""
 "override **)**"
 msgstr ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
-"override **)**"
+"überschreibe**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 msgid ""
@@ -139,9 +137,8 @@ msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
-#, fuzzy
 msgid "Create a new Engine instance with the given configuration."
-msgstr "Erstellen Sie eine neue Instanz der Klasse ``Engine``."
+msgstr "Erzeugt eine neue Engine-Instanz mit der angegebenen Konfiguration."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Arguments"
@@ -169,9 +166,8 @@ msgid "Returns"
 msgstr "Rückgabe"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:63
-#, fuzzy
 msgid "A Promise that resolves once the engine is loaded."
-msgstr "Versprechen, das nach dem Laden der Datei aufgelöst wird."
+msgstr "Ein Versprechen, das sich einlöst, sobald die Engine geladen ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Return type"
@@ -182,13 +178,12 @@ msgid "Unload the engine to free memory."
 msgstr "Entladen Sie die Engine, um Speicher freizugeben."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:72
-#, fuzzy
 msgid ""
 "This method will be called automatically depending on the configuration. "
 "See :js:attr:`unloadAfterInit`."
 msgstr ""
-"Die erstellten Vorlagen werden anschließend automatisch verwendet, sodass "
-"keine weitere Konfiguration erforderlich ist."
+"Diese Methode wird je nach Konfiguration automatisch aufgerufen. Siehe :js:"
+"attr:`unloadAfterInit`."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:76
 msgid ""
@@ -203,11 +198,8 @@ msgstr ""
 "1.0*."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:81
-#, fuzzy
 msgid "If the given major version of WebGL is available."
-msgstr ""
-"``wahr``, wenn die angegebene Hauptversion von WebGL verfügbar ist, "
-"ansonsten ``falsch``."
+msgstr "Wenn die angegebene Hauptversion von WebGL verfügbar ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:86
 msgid "**Instance Methods**"
@@ -220,10 +212,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:96
-#, fuzzy
 msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
 msgstr ""
-"Dieses Versprechen löst sich ein, sobald die Engine geladen und "
+"Ein ``Promise``, das sich einlöst, sobald der Motor geladen und "
 "initialisiert ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:103
@@ -249,9 +240,10 @@ msgid "The file to preload."
 msgstr "Die Datei, die vorab geladen werden soll."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
-#, fuzzy
 msgid "If a ``string`` the file will be loaded from that path."
-msgstr "Wenn der Typ ``String`` ist, wird die Datei von diesem Pfad geladen."
+msgstr ""
+"Wenn eine ``Zeichenkette`` angegeben wird, dann wird die Datei aus diesem "
+"Pfad geladen."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:113
 msgid ""
@@ -266,9 +258,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:118
-#, fuzzy
 msgid "A Promise that resolves once the file is loaded."
-msgstr "Versprechen, das nach dem Laden der Datei aufgelöst wird."
+msgstr "Dieses Versprechen löst sich ein, sobald die Engine geladen ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:125
 msgid ""
@@ -285,12 +276,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:131
-#, fuzzy
 msgid ""
 "Fails if a canvas cannot be found on the page, or not specified in the "
 "configuration."
 msgstr ""
-"Schlägt fehl, wenn ein Canvas auf der Seite nicht gefunden werden kann."
+"Schlägt fehl, wenn ein Canvas auf der Seite nicht gefunden werden kann oder "
+"nicht in der Konfiguration angegeben ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:133
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:152
@@ -302,12 +293,11 @@ msgid "Promise that resolves once the engine started."
 msgstr "Dieses Versprechen löst sich ein, sobald die Engine gestartet ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:143
-#, fuzzy
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr ""
-"Starten Sie die Spielinstanz mit der angegebenen ausführbaren URL und der "
-"URL des Hauptpakets."
+"Startet die Spielinstanz mit dem angegebenen Konfigurations-Override (falls "
+"vorhanden)."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:145
 msgid ""
@@ -371,14 +361,12 @@ msgstr "Eigenschaften"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "type"
-msgstr "``type``"
+msgstr "Typ"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
-#, fuzzy
 msgid "name"
-msgstr "``name``"
+msgstr "Name"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:189
 msgid ":js:attr:`unloadAfterInit`"
@@ -425,9 +413,8 @@ msgstr ":js:attr:`canvasResizePolicy`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:290
-#, fuzzy
 msgid "Array.<string>"
-msgstr "Zeichenkette"
+msgstr "Array.<String>"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 msgid ":js:attr:`args`"
@@ -438,7 +425,6 @@ msgstr ":js:attr:`args`"
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
 msgstr "Funktion"
 
@@ -483,7 +469,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "value"
 msgstr "Wert"
 
@@ -530,12 +515,12 @@ msgstr ""
 "auszuwählen."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:260
-#, fuzzy
 msgid ""
 "The browser locale will be used if none is specified. See complete list of :"
 "ref:`supported locales <doc_locales>`."
 msgstr ""
-"Vollständige Liste der :ref:`unterstützten Gebietsschemata <doc_locales>`."
+"Die Browser-Sprachumgebung wird verwendet, wenn keine angegeben ist. Siehe "
+"vollständige Liste der :ref:`unterstützten Gebietsschemata <doc_locales>`."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:269
 msgid ""

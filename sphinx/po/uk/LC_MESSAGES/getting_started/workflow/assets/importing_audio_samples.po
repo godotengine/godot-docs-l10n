@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,33 +22,30 @@ msgid "Importing audio samples"
 msgstr "Імпорт аудіо нарізків"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Supported files"
-msgstr "Підтримувані формати зображень"
+msgstr "Підтримувані файли"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"Сирі аудіодані загалом великі і небажані. Godot пропонує два основні "
-"варіанти імпорту аудіоданих: WAV та Ogg Vorbis."
+"Godot пропонує три основні варіанти імпорту аудіоданих: WAV, Ogg Vorbis і "
+"MP3."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
 msgstr "Кожен має різні переваги."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
-#, fuzzy
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
 "lightweight on the CPU to play back (hundreds of simultaneous voices in this "
 "format are fine). The downside is that they take up a lot of disk space."
 msgstr ""
-"Файли WAV використовують необроблені дані, або легке стиснення, пред'являють "
-"кілька вимог до процесора для відтворення (сотні одночасних голосів у цьому "
-"форматі чудові), але займають значне місце."
+"Файли WAV використовують необроблені дані або легке стиснення (IMA-ADPCM). "
+"Вони легкі на процесорі для відтворення (сотні одночасних голосів у цьому "
+"форматі є чудовими). Недоліком є те, що вони займають багато місця на диску."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:17
 msgid ""
@@ -68,6 +65,13 @@ msgid ""
 "and HTML5 projects where CPU resources are limited, especially when playing "
 "multiple compressed sounds at the same time (such as long ambient sounds)."
 msgstr ""
+"Файли MP3 використовують краще стиснення, ніж WAV з IMA-ADPCM, але гірше, "
+"ніж Ogg Vorbis. Це означає, що файл MP3 із приблизно рівною якістю з Ogg "
+"Vorbis буде значно більшим. З іншого боку, MP3 вимагає менше використання "
+"процесора для відтворення, ніж Ogg Vorbis. Це робить MP3 корисним для "
+"мобільних проектів та проектів HTML5, де ресурси процесора обмежені, "
+"особливо при одночасному відтворенні кількох стиснених звуків (наприклад, "
+"довгих звуків навколишнього середовища)."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."
@@ -106,9 +110,8 @@ msgid "22 KB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
-#, fuzzy
 msgid "MP3 192 Kb/s, stereo"
-msgstr "Ogg Vorbis 128 Kb/s, стерео"
+msgstr "MP3 192 Kb/s, стерео"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "24 KB"
@@ -149,6 +152,10 @@ msgid ""
 "reducing their size greatly and ensuring correct trimming. Say no to SFX "
 "with baked reverb!"
 msgstr ""
+"Godot має :ref:`розгалужену систему <doc_audio_buses>` із вбудованими "
+"ефектами. Це позбавляє виконавців SFX необхідності додавати реверберацію до "
+"звукових ефектів, значно зменшуючи їх розмір та забезпечуючи правильне "
+"обрізання. Скажіть ні SFX із запеченим ревербератором!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "As you can see above, sound effects become huge with reverb added."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,31 +43,31 @@ msgid "Godot supports the following 3D *scene file formats*:"
 msgstr "Godot поддерживает следующие *3D форматы файлов сцен*:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid ""
 "glTF 2.0 **(recommended)**. Godot has full support for both text (``.gltf``) "
 "and binary (``.glb``) formats."
-msgstr "glTF 2.0. Godot полностью поддерживает текстовые и двоичные форматы."
+msgstr ""
+"glTF 2.0 **(рекомендовано)**. Godot полностью поддерживает текстовый (``."
+"gltf``) и двоичный (``.glb``) форматы."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
 msgstr "DAE (COLLADA), более старый формат, который полностью поддерживается."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
-#, fuzzy
 msgid ""
 "OBJ (Wavefront) format + their MTL material files. This is also fully "
 "supported, but pretty limited (no support for pivots, skeletons, animations, "
 "PBR materials, ...)."
 msgstr ""
-"OBJ (Wavefront) формат. Он также полностью поддерживается, но довольно "
-"ограничен (без поддержки точек привязки, скелетов и т.д.)."
+"Формат OBJ (Wavefront) + их файлы материалов MTL. Также полностью "
+"поддерживается, но довольно ограничен (без поддержки точек привязки, "
+"скелетов, анимаций, PBR материалов,...)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
-#, fuzzy
 msgid "ESCN, a Godot-specific format that Blender can export with a plugin."
 msgstr ""
-"ESCN, специальный формат Godot, который Blender может экспортировать с "
+"ESCN, специфический формат Godot, который Blender может экспортировать с "
 "помощью плагина."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
@@ -226,9 +226,8 @@ msgstr ""
 "описывающий его функции и использование."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
-#, fuzzy
 msgid "Exporting textures separately"
-msgstr "Импортирование текстур"
+msgstr "Экспортирование текстур раздельно"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
@@ -240,19 +239,25 @@ msgid ""
 "armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/"
 "RodZill4/material-maker>`__."
 msgstr ""
+"Хотя текстуры можно экспортировать вместе с моделью в определенных форматах "
+"файлов, таких как glTF 2.0, вы также можете экспортировать их отдельно. "
+"Godot использует PBR (физически основанный рендеринг) для своих материалов, "
+"поэтому если программа текстурирования может экспортировать PBR текстуры, "
+"они могут работать в Godot. К ним относятся `Substance suite <https://www."
+"substance3d.com/>`__, `ArmorPaint (open source) <https://armorpaint.org/"
+">`__, и `Material Maker (open source) <https://github.com/RodZill4/material-"
+"maker>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
-#, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
 msgstr ""
-"Для получения дополнительной информации о самих событиях посмотрите "
-"руководство :ref:`doc_inputevent`."
+"Для получения дополнительной информации о материалах Godot, посмотрите :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
-#, fuzzy
 msgid "Exporting considerations"
-msgstr "Другие соображения"
+msgstr "Размышления о экспорте"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
@@ -263,6 +268,13 @@ msgid ""
 "exporting the scene will lead to more consistent results and should be done "
 "whenever possible."
 msgstr ""
+"Поскольку графические процессоры могут отображать только треугольники, "
+"сетки, содержащие квадраты или N-угольники, должны быть *триангулированы*, "
+"прежде чем их можно будет визуализировать. Godot может триангулировать сетки "
+"при импорте, но результаты могут быть непредсказуемыми или неверными, "
+"особенно с N-угольниками. Независимо от целевого приложения, триангуляция "
+"*перед* экспортом сцены приведет к более согласованным результатам и должна "
+"выполняться по возможности."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
@@ -273,12 +285,21 @@ msgid ""
 "depending on the exporter, you may be able to find and enable a "
 "**Triangulate Faces** option in the export dialog."
 msgstr ""
+"Чтобы избежать проблем с неправильной триангуляцией после импорта в Godot, "
+"рекомендуется выполнять триангуляцию объектов в 3D-пакете самостоятельно. В "
+"Blender это можно сделать, добавив к вашим объектам модификатор "
+"Триангулировать и убедившись, что **Применить Модификаторы ** отмечен в "
+"диалоговом окне экспорта. В качестве альтернативы, в зависимости от "
+"экспортера, вы можете найти и включить параметр **Триангулировать грани** в "
+"диалоговом окне экспорта."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid ""
 "To avoid issues with 3D selection in the editor, it is recommended to apply "
 "the object transform in the 3D DCC before exporting the scene."
 msgstr ""
+"Чтобы избежать проблем с 3D-выбором в редакторе, рекомендуется применить "
+"преобразование объекта в 3D-пакете перед экспортом сцены."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid "Import workflows"
@@ -731,6 +752,10 @@ msgid ""
 "Otherwise, changes made to animations from Godot will be lost when the "
 "project is run."
 msgstr ""
+"Чтобы изменить анимацию из импортированной 3D-сцены, вам необходимо изменить "
+"параметр хранения анимации с **Встроенный** на **Файлы** в доке «Импорт». В "
+"противном случае изменения, внесенные в анимацию из Godot, будут потеряны "
+"при запуске проекта."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "FPS"

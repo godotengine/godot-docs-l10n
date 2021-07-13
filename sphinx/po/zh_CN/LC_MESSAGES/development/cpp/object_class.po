@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid ""
 "This page describes the C++ implementation of objects in Godot. Looking for "
 "the Object class reference? :ref:`Have a look here. <class_Object>`"
 msgstr ""
-"本页介绍了Godot中对象的C++实现.寻找Object类参考？ :ref:`请看这里."
+"本页介绍了Godot中对象的C++实现. 寻找Object类参考？ :ref:`请看这里. "
 "<class_Object>`"
 
 #: ../../docs/development/cpp/object_class.rst:12
@@ -41,11 +41,11 @@ msgid ""
 "a single macro like this."
 msgstr ""
 ":ref:`Object <class_object>` 几乎是所有类的基类.Godot中的大多数类都直接或间接"
-"继承自它.Object对象提供反射和可编辑的属性,声明它们就像使用单个宏一样."
+"继承自它.Object对象提供反射和可编辑的属性, 声明它们就像使用单个宏一样."
 
 #: ../../docs/development/cpp/object_class.rst:26
 msgid "This makes Objects gain a lot of functionality, like for example"
-msgstr "这使得Objects获得了很多功能,例如"
+msgstr "这使得Objects获得了很多功能, 例如"
 
 #: ../../docs/development/cpp/object_class.rst:36
 #: ../../docs/development/cpp/object_class.rst:94
@@ -57,12 +57,11 @@ msgid "References:"
 msgstr "参考:"
 
 #: ../../docs/development/cpp/object_class.rst:38
-#, fuzzy
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
 "h>`__"
 msgstr ""
-"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
 "h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
@@ -75,8 +74,8 @@ msgid ""
 "that inherit from Object, as well as dynamic bindings to all their methods "
 "properties and integer constants."
 msgstr ""
-"ClassDB是一个静态类,其中包含从Object继承的所有已注册类的完整列表,以及对其所有"
-"方法属性和整数常量的动态绑定."
+"ClassDB是一个静态类, 其中包含从Object继承的所有已注册类的完整列表, 以及对其所"
+"有方法属性和整数常量的动态绑定."
 
 #: ../../docs/development/cpp/object_class.rst:47
 msgid "Classes are registered by calling:"
@@ -86,11 +85,11 @@ msgstr "通过以下调用来注册类:"
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
-msgstr "注册它将允许通过脚本、代码实例化类,或在反序列化时再次创建它们."
+msgstr "注册它将允许通过脚本, 代码实例化类, 或在反序列化时再次创建它们."
 
 #: ../../docs/development/cpp/object_class.rst:56
 msgid "Registering as virtual is the same but it can't be instanced."
-msgstr "注册为虚拟是相同的,但它不能实例化."
+msgstr "注册为虚拟是相同的, 但它不能实例化."
 
 #: ../../docs/development/cpp/object_class.rst:62
 msgid ""
@@ -100,15 +99,15 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
-"Object派生类可以重写静态函数 ``static void _bind_methods()``.当一个类被注册"
-"时,将调用此静态函数来注册所有对象方法、属性、常量等.它只被调用一次.如果Object"
-"派生类已实例化但尚未注册,则它将自动注册为虚拟."
+"Object派生类可以重写静态函数 ``static void _bind_methods()``. 当一个类被注册"
+"时, 将调用此静态函数来注册所有对象方法, 属性, 常量等. 它只被调用一次. 如果"
+"Object派生类已实例化但尚未注册, 则它将自动注册为虚拟."
 
 #: ../../docs/development/cpp/object_class.rst:69
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
-msgstr "在 ``_bind_methods`` 里面,有几件事可以做.注册函数是一个:"
+msgstr "在 ``_bind_methods`` 里面, 有几件事可以做. 注册函数是一个:"
 
 #: ../../docs/development/cpp/object_class.rst:76
 msgid "Default values for arguments can be passed in reverse order:"
@@ -121,13 +120,13 @@ msgid ""
 "compiling on release, the macro ignores them, so the strings are unused and "
 "optimized away."
 msgstr ""
-"``D_METHOD`` 是一个宏,它将 ``methodname`` 转换为StringName以提高效率.参数名称"
-"用于自我检查,但在发布时进行编译时,宏会忽略它们,因此未使用字符串从而对其进行了"
-"优化."
+"``D_METHOD`` 是一个宏, 它将 ``methodname`` 转换为StringName以提高效率. 参数名"
+"称用于自我检查, 但在发布时进行编译时, 宏会忽略它们, 因此未使用字符串从而对其"
+"进行了优化."
 
 #: ../../docs/development/cpp/object_class.rst:87
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
-msgstr "有关更多示例,请查看Control或Object的 ``_bind_methods`` ."
+msgstr "有关更多示例, 请查看Control或Object的 ``_bind_methods`` ."
 
 #: ../../docs/development/cpp/object_class.rst:89
 msgid ""
@@ -135,16 +134,15 @@ msgid ""
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
 "a string passing the name can be passed for brevity."
 msgstr ""
-"如果只是添加不希望被彻底记录的模块和功能,可以安全地忽略 ``D_METHOD()`` 宏,并"
-"且为了简洁起见,可以传递传递名称的字符串."
+"如果只是添加不希望被彻底记录的模块和功能, 可以安全地忽略 ``D_METHOD()`` 宏, "
+"并且为了简洁起见, 可以传递传递名称的字符串."
 
 #: ../../docs/development/cpp/object_class.rst:96
-#, fuzzy
 msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "class_db.h>`__"
 msgstr ""
-"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:99
@@ -153,18 +151,19 @@ msgstr "常量"
 
 #: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
-msgstr "类通常有枚举,例如:"
+msgstr "类通常有枚举, 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:110
 msgid ""
 "For these to work when binding to methods, the enum must be declared "
 "convertible to int, for this a macro is provided:"
 msgstr ""
-"为了使这些在绑定到方法时起作用,枚举必须被声明为可转换为int,为此提供了一个宏:"
+"为了使这些在绑定到方法时起作用, 枚举必须被声明为可转换为int, 为此提供了一个"
+"宏:"
 
 #: ../../docs/development/cpp/object_class.rst:117
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
-msgstr "常量也可以绑定在 ``_bind_methods`` 中,通过使用:"
+msgstr "常量也可以绑定在 ``_bind_methods`` 中, 通过使用:"
 
 #: ../../docs/development/cpp/object_class.rst:125
 msgid "Properties (set/get)"
@@ -172,7 +171,7 @@ msgstr "属性(设置/获取)"
 
 #: ../../docs/development/cpp/object_class.rst:127
 msgid "Objects export properties, properties are useful for the following:"
-msgstr "对象导出属性,这些属性可用于以下用途:"
+msgstr "对象导出属性, 这些属性可用于以下用途:"
 
 #: ../../docs/development/cpp/object_class.rst:129
 msgid "Serializing and deserializing the object."
@@ -186,7 +185,7 @@ msgstr "为Object派生类创建可编辑值列表."
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
-msgstr "属性通常由PropertyInfo()类定义.通常构造为:"
+msgstr "属性通常由PropertyInfo()类定义. 通常构造为:"
 
 #: ../../docs/development/cpp/object_class.rst:139
 msgid "For example:"
@@ -198,8 +197,8 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
-"这是一个整数属性,名为 ``amount``,``hint`` 是一个范围,范围从0到49,步长为1(整"
-"数).它仅适用于编辑器(可视化编辑值),但不会被序列化."
+"这是一个整数属性, 名为 ``amount``,``hint`` 是一个范围, 范围从0到49, 步长为"
+"1(整数). 它仅适用于编辑器(可视化编辑值), 但不会被序列化."
 
 #: ../../docs/development/cpp/object_class.rst:149
 msgid "Another example:"
@@ -211,15 +210,15 @@ msgid ""
 "allow the defined hint ones. Since no usage flags were specified, the "
 "default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
-"这是一个字符串属性,可以接受任何字符串,但编辑器只允许定义的提示字符串.由于未指"
-"定使用标志,因此默认值为 ``PROPERTY_USAGE_STORAGE`` 和 "
+"这是一个字符串属性, 可以接受任何字符串, 但编辑器只允许定义的提示字符串. 由于"
+"未指定使用标志, 因此默认值为 ``PROPERTY_USAGE_STORAGE`` 和 "
 "``PROPERTY_USAGE_EDITOR``."
 
 #: ../../docs/development/cpp/object_class.rst:159
 msgid ""
 "There are plenty of hints and usage flags available in object.h, give them a "
 "check."
-msgstr "在object.h中有很多提示和用法标记,请对其进行检查."
+msgstr "在object.h中有很多提示和用法标记, 请对其进行检查."
 
 #: ../../docs/development/cpp/object_class.rst:162
 msgid ""
@@ -229,16 +228,16 @@ msgid ""
 "such as \"animation/frame\" which also make indexing impossible unless using "
 "operator []."
 msgstr ""
-"属性也可以像C#属性一样工作,并且可以使用索引从脚本访问,但通常不鼓励这种用法,因"
-"为使用函数是易读性的首选.许多属性也与类别绑定,例如 ``动画/帧``,除非使用操作"
-"符 ``[]``,否则也无法建立索引."
+"属性也可以像C#属性一样工作, 并且可以使用索引从脚本访问, 但通常不鼓励这种用"
+"法, 因为使用函数是易读性的首选. 许多属性也与类别绑定, 例如 ``动画/帧``, 除非"
+"使用操作符 ``[]``, 否则也无法建立索引."
 
 #: ../../docs/development/cpp/object_class.rst:168
 msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
 msgstr ""
-"从 ``_bind_methods()`` 开始,只要存在set/get函数,就可以创建和绑定属性.例如:"
+"从 ``_bind_methods()`` 开始, 只要存在set/get函数, 就可以创建和绑定属性. 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:175
 msgid "This creates the property using the setter and the getter."
@@ -253,7 +252,7 @@ msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
 msgstr ""
-"当需要更大的灵活性时(即在上下文中添加或删除属性),存在另一种创建属性的方法."
+"当需要更大的灵活性时(即在上下文中添加或删除属性), 存在另一种创建属性的方法."
 
 #: ../../docs/development/cpp/object_class.rst:185
 msgid ""
@@ -261,14 +260,14 @@ msgid ""
 "are NOT virtual, DO NOT make them virtual, they are called for every "
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
-"可以在Object派生类中重写以下函数,它们不是虚拟的,不要将它们设置为虚拟,它们会在"
-"每次重写时调用,而之前的函数不会失效(多级调用)."
+"可以在Object派生类中重写以下函数, 它们不是虚拟的, 不要将它们设置为虚拟, 它们"
+"会在每次重写时调用, 而之前的函数不会失效(多级调用)."
 
 #: ../../docs/development/cpp/object_class.rst:197
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
-msgstr "由于 ``p_property`` 必须按顺序与所需的名称进行比较,因此效率也较低."
+msgstr "由于 ``p_property`` 必须按顺序与所需的名称进行比较, 因此效率也较低."
 
 #: ../../docs/development/cpp/object_class.rst:201
 msgid "Dynamic casting"
@@ -277,7 +276,7 @@ msgstr "动态转型"
 #: ../../docs/development/cpp/object_class.rst:203
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
-msgstr "Godot在Object派生类之间提供动态转换,例如:"
+msgstr "Godot在Object派生类之间提供动态转换, 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:213
 msgid ""
@@ -286,9 +285,9 @@ msgid ""
 "platforms where a small binary size is ideal, such as HTML5 or consoles "
 "(with low memory footprint)."
 msgstr ""
-"如果强制转换失败,则返回NULL.这个系统使用RTTI,但是当RTTI被禁用时它也可以正常工"
-"作(虽然有点慢).这在二进制大小较小的平台上非常有用,例如HTML5或游戏主机(具有较"
-"小的内存占用)."
+"如果强制转换失败, 则返回NULL. 这个系统使用RTTI, 但是当RTTI被禁用时它也可以正"
+"常工作(虽然有点慢). 这在二进制大小较小的平台上非常有用, 例如HTML5或游戏主机"
+"(具有较小的内存占用)."
 
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
@@ -298,7 +297,7 @@ msgstr "信号"
 msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
-msgstr "对象可以定义一组信号(类似于其他语言的代理).连接它们很容易:"
+msgstr "对象可以定义一组信号(类似于其他语言的代理). 连接它们很容易:"
 
 #: ../../docs/development/cpp/object_class.rst:230
 msgid ""
@@ -312,7 +311,7 @@ msgstr ""
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
-msgstr "使用 ``ADD_SIGNAL`` 宏在 ``_bind_methods`` 中添加信号到类中,例如:"
+msgstr "使用 ``ADD_SIGNAL`` 宏在 ``_bind_methods`` 中添加信号到类中, 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:241
 msgid "References"
@@ -324,22 +323,21 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
-":ref:`Reference <class_reference>` 继承自Object并保存引用计数.它是引用计数对"
-"象类型的基础.必须使用Ref<>模板来声明它们.例如:"
+":ref:`Reference <class_reference>` 继承自Object并保存引用计数. 它是引用计数对"
+"象类型的基础. 必须使用Ref<>模板来声明它们. 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:255
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
-msgstr "``myref`` 是引用计数.当没有更多Ref<>模板指向它时,它将被释放."
+msgstr "``myref`` 是引用计数. 当没有更多Ref<>模板指向它时, 它将被释放."
 
 #: ../../docs/development/cpp/object_class.rst:261
-#, fuzzy
 msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "reference.h>`__"
 msgstr ""
-"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:264
@@ -354,22 +352,21 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
-":ref:`Resource <class_resource>` 继承自Reference,因此所有资源都被引用计数.资"
-"源可以选择包含引用磁盘上文件的路径.这可以用 ``resource.set_path(path)`` 设置."
-"这通常由资源加载器完成.没有两个不同的资源可以具有相同的路径,尝试这样做会导致"
-"错误."
+":ref:`Resource <class_resource>` 继承自Reference, 因此所有资源都被引用计数. "
+"资源可以选择包含引用磁盘上文件的路径. 这可以用 ``resource.set_path(path)`` 设"
+"置. 这通常由资源加载器完成. 没有两个不同的资源可以具有相同的路径, 尝试这样做"
+"会导致错误."
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resources without a path are fine too."
 msgstr "资源也可以没有路径."
 
 #: ../../docs/development/cpp/object_class.rst:277
-#, fuzzy
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
 msgstr ""
-"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
@@ -378,7 +375,7 @@ msgstr "资源加载"
 
 #: ../../docs/development/cpp/object_class.rst:282
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
-msgstr "可以使用ResourceLoader API加载资源,如下所示:"
+msgstr "可以使用ResourceLoader API加载资源, 如下所示:"
 
 #: ../../docs/development/cpp/object_class.rst:288
 msgid ""
@@ -386,20 +383,19 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
-"如果先前已加载对该资源的引用并且该引用在内存中,则资源加载器将返回该引用.这意"
-"味着只能同时从磁盘上引用的文件加载一个资源."
+"如果先前已加载对该资源的引用并且该引用在内存中, 则资源加载器将返回该引用. 这"
+"意味着只能同时从磁盘上引用的文件加载一个资源."
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "resourceinteractiveloader (TODO)"
 msgstr "resourceinteractiveloader(TODO)"
 
 #: ../../docs/development/cpp/object_class.rst:298
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_loader.h>`__"
 msgstr ""
-"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:301
@@ -417,15 +413,14 @@ msgid ""
 "bundled with the saved resource and assigned sub-IDs, like \"res://"
 "someresource.res::1\". This also helps to cache them when loaded."
 msgstr ""
-"实例将被保存.具有文件路径的子资源将被保存为对该资源的引用.没有路径的子资源将"
-"与保存的资源和分配的子ID捆绑在一起,例如 ``res://someresource.res::1``.这也有"
-"助于在加载时缓存它们."
+"实例将被保存. 具有文件路径的子资源将被保存为对该资源的引用. 没有路径的子资源"
+"将与保存的资源和分配的子ID捆绑在一起, 例如 ``res://someresource.res::1``. 这"
+"也有助于在加载时缓存它们."
 
 #: ../../docs/development/cpp/object_class.rst:317
-#, fuzzy
 msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_saver.h>`__"
 msgstr ""
-"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_saver.h>`__"

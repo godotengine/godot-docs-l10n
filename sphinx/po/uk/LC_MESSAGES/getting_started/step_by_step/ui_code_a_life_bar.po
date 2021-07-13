@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,14 @@ msgid "Intro"
 msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
-"У цьому уроці ви підключите персонажа до шкали здоров'я і оживите втрату "
+"У цьому уроці ви підключите персонажа до шкали здоров'я і анімуєте втрату "
 "здоров'я."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
-#, fuzzy
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
@@ -48,7 +46,6 @@ msgid "You will learn:"
 msgstr "Ви навчитеся:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
-#, fuzzy
 msgid "How to **connect** a character to a GUI with signals"
 msgstr "**підключати** персонажа до графічного інтерфейсу з допомогою сигналів"
 
@@ -935,7 +932,6 @@ msgstr ""
 "``Tween``, який паралельно управляє декількома анімаціями."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`Ctrl + F1` to jump back to the 2D Workspace. "
@@ -943,7 +939,7 @@ msgid ""
 "to the Inspector."
 msgstr ""
 "Спершу, ``GUI`` необхідно підключитися до сигналу ``Player`` ``died``, щоб "
-"знати, коли він помер. Натисніть :kbd:`F1` щоб повернутися до робочої "
+"знати, коли він помер. Натисніть :kbd:`Ctrl + F1` щоб повернутися до робочої "
 "області 2D. Виберіть вузол ``Player`` на панелі Сцена та натисніть на "
 "вкладку Вузол біля Інспектора."
 

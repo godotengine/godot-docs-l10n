@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,6 +99,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Позбавлені керівництва сервери Linux та "
+"macOS<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -763,9 +765,8 @@ msgid "Ragdolls."
 msgstr "Система Ragdolls (\"rag\" - ганчірка, \"doll\" - лялька)."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr "Вбудовані форми: куб, куля, капсула, циліндр (лише з фізикою Bullet)."
+msgstr "Вбудовані форми: куб, куля, капсула, циліндр."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -866,7 +867,8 @@ msgstr ""
 "асинхронних дій, або використання декількох ядер процесора."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -982,6 +984,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Аудіо вхід для запису мікрофонів з доступом в реальному часі за допомогою "
+"класу AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1137,6 +1141,7 @@ msgstr "Ввід пера/планшета з підтримкою тиску."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Підтримка вводу з геймпада, клавіатури та мишки також доступна на Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"

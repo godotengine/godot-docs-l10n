@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,13 +43,13 @@ msgid ""
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
-"hidden in a res://.import folder."
+"hidden in a ``res://.import`` folder."
 msgstr ""
 "У Godot 3.0 ми використовуємо більш сучасний підхід до імпорту: просто "
 "скиньте свої активи (файли зображень, сцени, аудіофайли, шрифти тощо) "
-"безпосередньо в теку проєкту (скопіюйте їх вручну за допомогою програми "
+"безпосередньо в теку проекта (скопіюйте їх вручну за допомогою програми "
 "провідника файлів ОС). Godot автоматично імпортує ці файли всередину і "
-"збереже імпортовані ресурси заховані у теці res://.import."
+"збереже імпортовані ресурси заховані у теці ``res://.import``."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -59,30 +59,36 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"Це означає, що при спробі отримати доступ до імпортованих активів за "
+"допомогою коду потрібно використовувати :ref:`завантажувач "
+"ресурсів<class_ResourceLoader>`, оскільки він автоматично враховує, де "
+"зберігаються внутрішні файли. Якщо ви спробуєте отримати доступ до "
+"імпортованого об’єкта за допомогою класу :ref:`File <class_File>`, він буде "
+"працювати в редакторі, але експортувати проект не вдасться."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"Однак :ref:`завантажувач ресурсів<class_ResourceLoader>` не може отримати "
+"доступ до неімпортних файлів, а клас :ref:`File <class_File>` може."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "Зміна параметрів імпорту"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Зміна параметрів імпорту об'єкта в Godot (знову ж таки, пам'ятайте, що "
+"Зміна параметрів імпорту активів в Godot (знову ж таки, пам'ятайте, що "
 "параметри імпорту присутні лише у нерідних типах ресурсів Godot) дуже "
 "проста. Виберіть відповідний ресурс на панелі Файлова система:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
-#, fuzzy
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
@@ -101,9 +107,8 @@ msgstr ""
 "всіх при повторному імпорті."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "Імпортування зображень"
+msgstr "Повторний імпорт кількох активів"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -113,6 +118,11 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"Під час роботи над проектом ви можете виявити, що для кількох активів "
+"потрібно змінити однакові параметри, наприклад, увімкнення mipmaps, але ви "
+"хочете змінити лише ці конкретні параметри. Для цього виберіть усі активи, "
+"які потрібно повторно імпортувати у файлову систему. На вкладці імпорту "
+"тепер буде галочка ліворуч від кожного параметра імпорту."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -121,10 +131,14 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Установіть галочку серед параметрів, які потрібно змінити для імпортованих "
+"активів, а потім змініть параметри в звичайному режимі. Нарешті, натисніть "
+"кнопку повторного імпорту, і кожен вибраний актив буде повторно імпортований "
+"із зміною лише цих параметрів."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
-msgstr ""
+msgstr "Автоматичний повторний імпорт"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
@@ -141,16 +155,19 @@ msgid "Files generated"
 msgstr "Згенеровані файли"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
+#, fuzzy
 msgid ""
-"Importing will add an extra <asset>.import file, containing the import "
+"Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
 "Імпорт додасть додатковий файл <asset> .import, що містить конфігурацію "
 "імпорту. Не забудьте скористатись цією системою контролю версій!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#, fuzzy
 msgid ""
-"Additionally, extra assets will be preset in the hidden res://.import folder:"
+"Additionally, extra assets will be preset in the hidden ``res://.import`` "
+"folder:"
 msgstr ""
 "Крім того, додаткові активи будуть встановлені в прихованій теці res://."
 "import:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,9 +40,8 @@ msgid ""
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
 "Godot é um `Software Livre e de Código Aberto <https://pt.wikipedia.org/wiki/"
-"Software_livre_e_de_código_aberto>`_ disponível sob a Licença MIT `OSI-"
-"approved <https://opensource.org/licenses/MIT>`_. Isso significa que é "
-"gratuito tanto na \"liberdade de expressão\" quanto na \"cerveja grátis.\""
+"Software_livre_e_de_código_aberto>`_ disponível sob a Licença MIT `aprovada "
+"pela OSI <https://opensource.org/licenses/MIT>`_."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -61,8 +60,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Você pode modificar, (re)distribuir e remixar o Godot o quanto você quiser, "
-"por qualquer motivo, seja ele comercial ou não-comercial."
+"Você é livre para modificar, distribuir, redistribuir e remixar o Godot como "
+"quiser, por qualquer motivo, seja ele não-comercial ou comercial."
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -110,7 +109,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "Quais plataformas são suportadas por Godot?"
+msgstr "Quais plataformas são suportadas pelo Godot?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
@@ -122,7 +121,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "macOS"
-msgstr "macOs"
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -269,11 +268,12 @@ msgstr ""
 "oferece, confira nosso guia `GDScript: <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
 "Há várias razões para usar o GDScript - especialmente quando você está "
 "criando protótipos, em estágios alfa/beta do seu projeto, ou não está "
@@ -445,9 +445,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
-"FBX é suportado através da biblioteca Open Asset Import. No entanto, FBX é "
-"proprietário, por isso recomendamos o uso de outros formatos listados acima, "
-"se adequado para o seu fluxo de trabalho."
+"O FBX é suportado através da biblioteca Open Asset Import. No entanto, o FBX "
+"é proprietário, por isso recomendamos o uso de outros formatos listados "
+"acima, se adequado para o seu fluxo de trabalho."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -549,7 +549,6 @@ msgstr ""
 "baixa?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
@@ -557,7 +556,7 @@ msgid ""
 msgstr ""
 "Godot intencionalmente não inclui funcionalidades que podem ser "
 "implementadas por [i]add-ons[/i] a não ser que sejam usadas muito "
-"frequentemente. Um exemplo disso seria o recurso de inteligência artifical "
+"frequentemente. Um exemplo disso seria o recurso de inteligência artificial "
 "avançada."
 
 #: ../../docs/about/faq.rst:211
@@ -634,12 +633,12 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
-"Por todas razões acima, temos que ser seletivos no que podemos aceitar como "
-"funcionalidade base na Godot. Esse é o motivo pelo qual pretendemos mover "
-"algumas funcionalidades para [i]add-ons[/i] oficiais em versões futuras na "
+"Por todas as razões acima, temos que ser seletivos no que podemos aceitar "
+"como funcionalidade base no Godot. Esse é o motivo pelo qual pretendemos "
+"mover algumas funcionalidades para add-ons oficiais em versões futuras do "
 "Godot. Em termos de tamanho do binário, isso também tem a vantagem de fazer "
 "com que você \"pague\" somente pelo que usa em seu projeto. (Enquanto isso, "
-"você pode :ref:`compilar templates de exportação personalizados com certas "
+"você pode :ref:`compilar modelos de exportação personalizados com certas "
 "funcionalidades desabilitadas <doc_optimizing_for_size>` para otimizar o "
 "tamanho de seu projeto.)"
 
@@ -845,15 +844,15 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Pode ser tentador querer trazer ideias ao Godot, como aquelas que resultam e "
-"mudanças massivas no núcleo, um tipo de mímica que outro motor de jogos faz, "
-"ou modos de trabalho alternativo que você iria querer dentro do editor. Tudo "
-"isso é ótimo e nós agradecemos por ter tantas pessoas motivadas querendo "
-"contribuir, porém, o foco do Godot é e sempre será, a funcionalidade central "
-"como descrita no `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
-"master/ROADMAP.md>`_, `consertando bugs e discutindo problemas <https://"
-"github.com/godotengine/godot/issues>`_, e discussão entre membros da "
-"comunidade do Godot."
+"Pode ser tentador querer trazer ideias ao Godot, como aquelas que resultam "
+"em mudanças massivas no núcleo, um tipo de mímica que outro motor de jogos "
+"faz, ou modos de trabalho alternativo que você iria querer dentro do editor. "
+"Tudo isso é ótimo e nós agradecemos por ter tantas pessoas motivadas "
+"querendo contribuir, porém, o foco do Godot é e sempre será, a "
+"funcionalidade central como descrita no `Roadmap <https://github.com/"
+"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `consertando bugs e "
+"discutindo problemas <https://github.com/godotengine/godot/issues>`_, e "
+"discussão entre membros da comunidade do Godot."
 
 #: ../../docs/about/faq.rst:334
 msgid ""
@@ -932,19 +931,18 @@ msgstr ""
 "teste ou projetos de exemplo (se aplicável)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "É possível utilizar a Godot como uma biblioteca?"
+msgstr "É possível usar o Godot para criar aplicativos que não sejam jogos?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"O tamanho de distribuição pequeno do Godot pode fazê-lo de uma alternativa "
-"para plataformas como Electron ou Qt."
+"Sim! O Godot possui um extenso sistema de UI embutido, e seu pequeno tamanho "
+"de distribuição pode torná-lo uma alternativa adequada para frameworks como "
+"Electron ou Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -952,12 +950,19 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Ao criar um aplicativo que não seja um jogo, tenha certeza de habilitar o :"
+"ref:`low-processor mode <class_ProjectSettings_property_application/run/"
+"low_processor_mode>` nas Configurações do Projeto para diminuir o uso da CPU "
+"e da GPU."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Dito isso, nós não vamos recomendar o uso do Godot para criar um *aplicativo "
+"mobile* visto que o modo low-processor ainda não é suportado em plataformas "
+"mobile."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -965,10 +970,13 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Confira `Material Maker <https://github.com/RodZill4/material-maker>`__ e "
+"`Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ para "
+"exemplos de aplicativos de código aberto desenvolvidos com o Godot."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
-msgstr "É possível utilizar a Godot como uma biblioteca?"
+msgstr "É possível utilizar o Godot como uma biblioteca?"
 
 #: ../../docs/about/faq.rst:382
 msgid ""
@@ -977,10 +985,10 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
-"Godot é desenvolvida para ser usada com sua interface de edição. "
+"O Godot é desenvolvido para ser usada com sua interface de edição. "
 "Recomendamos que você experimente, pois provavelmente economizará tempo a "
-"longo prazo. Não há planos de tornar Godot utilizável como uma biblioteca, "
-"pois isso tornaria o restante do mecanismo mais complicado e difícil de usar "
+"longo prazo. Não há planos de tornar o Godot utilizável como uma biblioteca, "
+"pois isso tornaria o restante do motor mais complicado e difícil de usar "
 "para usuários casuais."
 
 #: ../../docs/about/faq.rst:387
@@ -997,7 +1005,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Qual kit de ferramentas de interface do usuário o Godot usa?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1008,6 +1016,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"O Godot não usa um kit de ferramentas :abbr:`GUI (Interface Gráfica de "
+"Usuário)` padrão como GTK, Qt ou wxWidgets. Em vez disso, Godot usa seu "
+"próprio kit de ferramentas de interface de usuário, renderizado usando "
+"OpenGL ES ou Vulkan. Este kit de ferramentas é exposto na forma de nós "
+"Control, que são usados para renderizar o editor (que é escrito em C++). "
+"Estes nós Control também podem ser usados em projetos de qualquer linguagem "
+"de scripting suportada pelo Godot."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1017,6 +1032,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Este kit de ferramentas personalizado possibilita o benefício da aceleração "
+"de hardware e tem uma aparência consistente em todas as plataformas. Além "
+"disso, ele não precisa lidar com as ressalvas de licenciamento LGPL que vêm "
+"com GTK ou Qt. Por último, isso significa que o Godot está \"comendo sua "
+"própria comida de cachorro\", já que o próprio editor é um dos usuários mais "
+"complexos do sistema de UI do Godot."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1024,9 +1045,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Este kit de ferramentas de UI customizado :ref:`não pode ser usado como uma "
+"biblioteca <doc_faq_use_godot_as_library>`, mas você ainda pode :ref:`usar o "
+"Godot para criar aplicativos não-jogos usando o editor "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr ""
 "Por que Godot não usa STL (Standard Template Library, ou Biblioteca de "
 "Modelos Padrão)"

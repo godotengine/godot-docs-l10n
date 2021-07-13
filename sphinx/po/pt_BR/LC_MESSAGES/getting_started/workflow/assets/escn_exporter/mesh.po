@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,32 +22,30 @@ msgid "Mesh"
 msgstr "Malha"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
-#, fuzzy
 msgid "Modifiers"
-msgstr "Identificadores"
+msgstr "Modificadores"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
-"Há uma opção de exportação: código:`Apply Modifiers` para controlar se os "
-"modificadores de mesh são aplicados à mesh exportada."
+"Há uma opção de exportação :code:`Apply Modifiers` para controlar se os "
+"modificadores de malha são aplicados à malha exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
 msgstr "Forma chave"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
-#, fuzzy
 msgid ""
 "Exporting mesh shape key is supported, however exporting each shape key is "
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
-"Exportação de formas de mesh chave é suportada, contudo exportando cada "
-"forma chave é quase como exportar a mesh novamente, então não fique surpreso "
-"se levar muito tempo."
+"Exportação de formas chave de malha é suportada, contudo exportando cada "
+"forma chave é quase como exportar a malha novamente, então não fique "
+"surpreso se levar muito tempo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -60,8 +58,8 @@ msgid ""
 msgstr ""
 "Um monte de modificadores não são compatíveis com shape keys (por exemplo, o "
 "subsurface modifier), por isso, se você descobriu que você tem shape keys "
-"incorretamente exportadas, tente desativar :code:`Apply Modifiers\" e fazer "
-"a exportação novamente. Além disso, vale a pena relatar os modificadores "
+"incorretamente exportadas, tente desativar :code:`Apply Modifiers` e fazer a "
+"exportação novamente. Além disso, vale a pena relatar os modificadores "
 "incompatíveis para a `lista de problemas <https://github.com/godotengine/"
 "godot-blender-exporter/issues>`__, que ajuda a desenvolver o exportador para "
 "ter uma maior precisão de checagem de modificadores."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,18 +50,17 @@ msgid ""
 msgstr ""
 "Para fazer isso, o exportador tenta encontrar materiais do Godot com nomes "
 "que correspondam aos do nome do material no Blender. Então, se você exportar "
-"um objeto no Blender com o nome do material `` PurpleDots``, o exportador "
-"procurará o arquivo `` PurpleDots.tres`` e o atribuirá ao objeto. Se este "
-"arquivo não for um `` SpatialMaterial`` ou `` ShaderMaterial`` ou se não "
-"puder ser encontrado, o exportador irá retornar a exportar o material do "
-"Blender."
+"um objeto no Blender com o nome do material ``PurpleDots``, o exportador "
+"procurará o arquivo ``PurpleDots.tres`` e o atribuirá ao objeto. Se este "
+"arquivo não for um ``SpatialMaterial`` ou ``ShaderMaterial`` ou se não puder "
+"ser encontrado, o exportador irá retornar a exportar o material do Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
-"Onde o exportador procura o arquivo `` .tres`` é determinado pela opção "
+"Onde o exportador procura o arquivo ``.tres`` é determinado pela opção "
 "\"Material Search Paths\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
@@ -75,10 +74,10 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
-"Diretório do Projeto - Tenta encontrar o `` project.Godot`` e procura "
-"recursivamente através de subdiretórios. Se `` project.Godot`` não puder ser "
-"encontrado, será lançado um erro. Isso é útil para a maioria dos projetos em "
-"que conflitos de nomenclatura são improváveis."
+"Diretório do Projeto - Tenta encontrar o ``project.Godot`` e procura "
+"recursivamente através de subdiretórios. Se ``project.Godot`` não puder ser "
+"encontrado ocorrerá um erro. Isso é útil para a maioria dos projetos em que "
+"conflitos de nomenclatura são improváveis."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
@@ -86,19 +85,18 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
-"Diretório de Exportação - Procure materiais em subdiretórios do local de "
-"exportação. Isso é útil para projetos em que você pode ter nomes de "
+"Diretório de Exportação - Procura materiais em subdiretórios do local de "
+"exportação. Isst é útil para projetos em que você pode ter nomes de "
 "materiais duplicados e precisar de mais controle sobre qual material é "
 "atribuído."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
-msgstr "Nenhum - Não procure materiais. Exportá-los do arquivo do Blender."
+msgstr "Nenhum - Não procura materiais. Exporta-os do arquivo do Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "Modelos de Exportação"
+msgstr "Exportação de materiais Cycles/EEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -128,11 +126,10 @@ msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
-"nós de sombreamento, exceto``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
+"nós de sombreamento, exceto ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
 "``Glass``, ``add shader`` e ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:50
-#, fuzzy
 msgid ""
 "If possible, try to use PrincipledBSDF node with GGX distribution as the "
 "output shader node, it is the only one guaranteed to be exactly correct. "
@@ -143,20 +140,20 @@ msgstr ""
 "apenas baseados em aproximação."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"A outra maneira que os materiais são manipulados é o exportador para exportá-"
-"los do Blender. Atualmente, apenas a cor difusa e algumas bandeiras (por "
-"exemplo, sem sombra) são exportadas."
+"Às vezes, os materiais podem não ser válidos para exportação (por exemplo, "
+"tem algum nó não suportado) ou está usando o mecanismo interno do Blender, "
+"apenas a cor difusa e alguns sinalizadores (por exemplo, sem sombra) são "
+"exportados e formam um Material Spatial."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
-msgstr "Gere materiais externos"
+msgstr "Gerar materiais externos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""

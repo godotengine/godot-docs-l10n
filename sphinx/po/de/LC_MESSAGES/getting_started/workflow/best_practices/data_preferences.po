@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,8 +214,9 @@ msgstr ""
 "N-mal (lineare Zeit)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
+#, fuzzy
 msgid ""
-"**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
+"**Get, Set:** Fastest *by position*. E.g. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
 "**Get, Set:** Schnellste *nach Position*. Kann den 0., 2., 10. Datensatz "
@@ -549,10 +550,9 @@ msgid ""
 "structures. With it, one can design their own List, Binary Search Tree, "
 "Heap, Splay Tree, Graph, Disjoint Set, and any host of other options."
 msgstr ""
-"Objekte bieten Benutzern auch die Möglichkeit, noch spezialisiertere "
-"Datenstrukturen zu erstellen. Damit kann man eine eigene Liste, einen "
-"binären Suchbaum, einen Heap, einen Splay-Baum, ein Diagramm, ein disjunktes "
-"Set und eine Vielzahl anderer Optionen entwerfen."
+"Objekte ermöglichen Nutzern spezialisierte Datenstrukturen zu erstellen. "
+"Damit können eigene Listen, Binäre Suchbäume, Heaps, Splay Trees, Graphen, "
+"Disjoint Sets und vieles mehr erstellt werden."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:228
 msgid ""
@@ -566,19 +566,19 @@ msgstr ""
 "sind, und als solches könnte es nützlich sein einen eigenen Knotentyp für "
 "Baumstrukturen zu definieren."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
 msgstr ""
-"Von hier aus kann man dann eigene Strukturen mit spezifischen Eigenschaften "
-"erstellen, die nur durch die eigene Vorstellungskraft begrenzt sind."
+"Daher kann nun jede erdenkliche Art von spezialisierten Strukturen erstellt "
+"werden."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:280
 msgid "Enumerations: int vs. string"
 msgstr "Aufzählungen: int im Vergleich zu string"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:282
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
@@ -591,29 +591,28 @@ msgstr ""
 "nur wenn das ` `export`` Schlüsselwort in GDScript verwendet wird). Es "
 "bleibt die Frage: \"Was soll ich nun nehmen?\""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
 "languages prioritizes usability over performance."
 msgstr ""
-"Man kann beide Varianten verwenden, je nachdem, was komfortabler ist. Dieses "
-"Feature ist GDScript-spezifisch und lässt sich nicht auf Godot-Scripting im "
-"Allgemeinen übertragen; die Sprache legt mehr Wert auf Nutzbarkeit als auf "
-"Geschwindigkeit."
+"Die kurze Antwort wäre \"was auch immer dir mehr liegt\". Das ist ein "
+"spezielles Merkmal das nur GDScript hat, und nicht allgemein Godot Skripte - "
+"die GDScript Sprache bevorzugt Nutzbarkeit über Geschwindigkeit."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
 "languages' conventions though, then one should use integers."
 msgstr ""
-"Auf technischer Ebene sind Integer-Vergleiche (konstante Zeitkomplexität) "
-"schneller als String-Vergleiche (lineare Zeitkomplexität). Auch wenn man "
-"sich an den Konventionen anderer Programmiersprachen orientieren möchte, "
-"sollte man Integer verwenden."
+"Im Detail erklärt - Ganzzahlenwert-Vergleiche (Konstanter Zeitverbrauch) "
+"passieren schneller als Zeichenkettenvergleiche (Lineare Zeitverbrauch). "
+"Möchte man sich an den Konventionen anderer Programmiersprachen orienteren "
+"sollte man Ganzzahlenwerte nutzen."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -621,13 +620,13 @@ msgid ""
 "integer enum, one would have to write a Dictionary that maps the "
 "corresponding string value for each enum."
 msgstr ""
-"Das Hauptproblem mit Integer-Enumerationswerten taucht bei der *Ausgabe* "
-"auf. Ein Versuch, einen Integer-Wert MY_ENUM auszugeben, wird ``5`` oder so "
-"produzieren statt etwas selbsterklärendes wie ``\"MyEnum\"``. Um den "
-"symbolischen Namen eines Integer-Enums auszugeben, müsste man ein Dictionary "
-"bereitstellen, welches den Integer-Wert auf den entsprechenden String mappt."
+"Das Hauptproblem mit Ganzzahlenwerte ist die *Ausgabe* des "
+"Enumerationswertes. Mit Ganzzahlenwerte würde beim Ausgeben von MY_ENUM ` "
+"`5`` oder so ausgegeben werden, anstatt ``\"MyEnum\"``. Um einen Text "
+"auszugeben müsste man den Ganzzahlenwert mit einem Dictionary (Wörterbuch) "
+"mappen."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -639,12 +638,12 @@ msgstr ""
 "es Sinn, Strings statt Integer zu verwenden. Dadurch muss keine separate "
 "Datenstruktur zum Ausgeben der symbolischen Namen bereitgestellt werden."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:307
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr "AnimatedTexture, AnimatedSprite, AnimationPlayer und AnimationTree"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:309
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -653,7 +652,7 @@ msgstr ""
 "verwenden? Die Antwort ist für neue Godot-Benutzer möglicherweise nicht "
 "sofort klar."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -662,17 +661,17 @@ msgstr ""
 "Engine als animierte Schleife und nicht als statisches Bild zeichnet. "
 "Benutzer können verändern..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr ""
 "die Geschwindigkeit, mit der es sich über jeden Abschnitt der Textur bewegt "
 "(fps)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:318
 msgid "the number of regions contained within the texture (frames)."
 msgstr "die Anzahl der in der Textur enthaltenen Bereiche (Frames)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:320
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -684,7 +683,7 @@ msgstr ""
 "dass dies keine zusätzliche Logik von Seiten der Engine erfordert. Die "
 "schlechte Nachricht ist, dass der Benutzer sehr wenig Kontrolle hat."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:325
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -703,7 +702,7 @@ msgstr ""
 "für viele autoanimierende Hintergründe integrieren, die alle in einem "
 "einzigen gebündelten Renderaufruf gerendert werden."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -717,7 +716,7 @@ msgstr ""
 "Geschwindigkeit, regionalen Versatz und Ausrichtung zu steuern. Dies macht "
 "sie gut geeignet, um 2D-Frame-basierte Animationen zu steuern."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -731,7 +730,7 @@ msgstr ""
 "Sie ein Node :ref:`AnimationPlayer <class_AnimationPlayer>` in Verbindung "
 "mit dem AnimatedSprite verwenden."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:345
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
@@ -739,13 +738,13 @@ msgstr ""
 "AnimationPlayers sind auch das Werkzeug, das man verwenden muss, wenn man "
 "komplexere 2D-Animationssysteme entwerfen möchte, wie z. B...."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
 "**Ausschnitt-Animationen:** Bearbeiten der Transformationen von Sprites zur "
 "Laufzeit."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:350
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -756,11 +755,11 @@ msgstr ""
 "die Textur im Verhältnis zu den Beziehungen der Knochen zueinander dehnen "
 "und verbiegen."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:355
 msgid "A mix of the above."
 msgstr "Eine Mischung aus dem oberen."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:357
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

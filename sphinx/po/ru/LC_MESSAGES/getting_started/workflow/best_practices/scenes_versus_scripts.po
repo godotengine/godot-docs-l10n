@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,7 +299,6 @@ msgstr ""
 "это скорость выполнения."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
-#, fuzzy
 msgid ""
 "As the size of objects increases, the scripts' necessary size to create and "
 "initialize them grows much larger. Creating node hierarchies demonstrates "
@@ -311,14 +310,12 @@ msgstr ""
 "кода."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
-#, fuzzy
 msgid ""
 "The code example below creates a new ``Node``, changes its name, assigns a "
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
-"Давайте посмотрим на простой пример создания единственного дочернего "
-"``узла``. Приведенный ниже код создаёт новый узел, меняет его имя, назначает "
+"Приведенный ниже код создаёт новый узел ``Node``, меняет его имя, назначает "
 "ему сценарий, устанавливает его будущего родителя в качестве его владельца, "
 "чтобы он сохранялся на диске вместе с ним, и, наконец, добавляет его в "
 "качестве дочернего элемента главного узла ``Main``:"

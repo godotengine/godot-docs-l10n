@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,12 +38,13 @@ msgstr ""
 "и т.д."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
-"hidden in a res://.import folder."
+"hidden in a ``res://.import`` folder."
 msgstr ""
 "В Godot 3.0+ мы используем более современный подход к импорту: просто "
 "перетащите свои ассеты (файлы изображений, сцены, аудиофайлы, шрифты и т.д.) "
@@ -158,8 +159,9 @@ msgid "Files generated"
 msgstr "Генерируемые файлы"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
+#, fuzzy
 msgid ""
-"Importing will add an extra <asset>.import file, containing the import "
+"Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
 "При импорте будет добавлен дополнительный файл <asset> .import, содержащий "
@@ -167,8 +169,10 @@ msgstr ""
 "версий!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#, fuzzy
 msgid ""
-"Additionally, extra assets will be preset in the hidden res://.import folder:"
+"Additionally, extra assets will be preset in the hidden ``res://.import`` "
+"folder:"
 msgstr ""
 "Кроме того, дополнительные ресурсы будут предварительно настроены в скрытой "
 "папке res://.import:"

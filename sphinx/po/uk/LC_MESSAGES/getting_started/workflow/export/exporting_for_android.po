@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,12 +68,10 @@ msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr "Android SDK Platform-Tools версії 30.0.5, чи новіша"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
-#, fuzzy
 msgid "Android SDK Build-Tools version 30.0.3"
-msgstr "Android SDK Build-Tools версії 30.0.1"
+msgstr "Android SDK Build-Tools версії 30.0.3"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
-#, fuzzy
 msgid "Android SDK Platform 29"
 msgstr "Android SDK Platform 29"
 
@@ -211,11 +209,26 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 "По завершенні цих налаштувань у вас буде все готово до експорту на Android!"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+msgid ""
+"If you get an error saying *\"Could not install to device.\"*, make sure you "
+"do not have an application with the same Android package name already "
+"installed on the device (but signed with a different key)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+msgid ""
+"If you have an application with the same Android package name but a "
+"different signing key already installed on the device, you **must** remove "
+"the application in question from the Android device before exporting to "
+"Android again."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Providing launcher icons"
 msgstr "Надання піктограм панелі запуску"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -227,11 +240,11 @@ msgstr ""
 "високої роздільної здатності (для екранів щільності ``xxxhdpi``) і "
 "автоматично генерує варіанти нижчої роздільної здатності."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid "There are two types of icons required by Godot:"
 msgstr "Godot має два типи піктограм:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
@@ -240,7 +253,7 @@ msgstr ""
 "на всіх версіях Android до Android 8 (Oreo). Має бути принаймні 192 × 192 "
 "пікселів."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:101
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -256,7 +269,7 @@ msgstr ""
 "запуску користувача буде керувати анімацією та маскуванням значка. Має бути "
 "принаймні 432 × 432 пікселів."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -268,7 +281,7 @@ msgstr ""
 "designing-adaptive-icons-515af294c783>`_, яка допомагає зрозуміти ці правила "
 "та деякі можливості адаптивних піктограм."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:105
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
@@ -278,7 +291,7 @@ msgstr ""
 "елементів піктограм всередині безпечної зони: відцентроване коло діаметром "
 "66dp (264 пікселі на ``xxxhdpi``), щоб уникнути їх обрізки на панелі запуску."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:107
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
@@ -287,14 +300,14 @@ msgstr ""
 "допомогою резервного ланцюжка, вставляючи наступний у черзі, коли поточний "
 "не вдається:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 "**Головна піктограма:** Надана головна піктограма -> Піктограма проекту -> "
 "Основна піктограма Godot за замовчуванням."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
@@ -303,7 +316,7 @@ msgstr ""
 "плану -> Головна піктограма, що надається -> Піктограма проекту -> "
 "Піктограма переднього плану Godot за замовчуванням."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
@@ -311,7 +324,7 @@ msgstr ""
 "**Адаптивний фон піктограми:** Надана піктограма фону -> Піктограма фону "
 "Godot за замовчуванням."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
 "specified resolutions. This way, your application will look great on all "
@@ -321,11 +334,11 @@ msgstr ""
 "роздільною здатністю. Таким чином, ваш додаток буде чудово виглядати на всіх "
 "пристроях та версіях Android."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid "Exporting for Google Play Store"
 msgstr "Експорт для Google Play Store"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:119
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -333,7 +346,7 @@ msgstr ""
 "Завантажуючи файл APK у Google Play Store вам потрібно підписатися "
 "використовуючи неналагоджуваний файл ключів; такий файл можна сформувати так:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -346,20 +359,20 @@ msgstr ""
 "більше про `підписування файлів APK <https://developer.android.com/studio/"
 "publish/app-signing>`__."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:129
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "Тепер заповніть такі форми у ваших зразках експорту Android:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:133
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
 "**Release:** (Випуск:) Введіть шлях до щойно створеного файлу сховища ключів."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:134
 msgid "**Release User:** Replace with the key alias."
 msgstr "**Release User:** Замінити псевдонімом ключа."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
@@ -367,7 +380,7 @@ msgstr ""
 "**Release Password:** Пароль ключа. Зверніть увагу, що пароль сховища ключів "
 "і пароль ключа в даний час мають бути однаковими."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
@@ -378,19 +391,18 @@ msgstr ""
 "загальнодоступних сховищ і додати у свій файл ``.gitignore``, або "
 "аналогічний."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
-#, fuzzy
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:141
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
-"Не забудьте зняти прапорець **Export With Debug** (Експортувати з "
-"налагодженням), вибираючи назву файлу APK."
+"Не забудьте зняти галочку **Export With Debug** (Експортувати з "
+"налагодженням) під час експортування."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:146
 msgid "Optimizing the APK size"
 msgstr "Оптимізація розміру APK"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:148
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -406,7 +418,7 @@ msgstr ""
 "лише для однієї архітектури. Зауважте, що програми, націлені на ARMv7, також "
 "можуть працювати на пристроях ARMv8, але навпаки, ні."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:155
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -425,7 +437,7 @@ msgstr ""
 "APK для ARMv7 та ARMv8 зазвичай достатньо для охоплення більшості пристроїв, "
 "що використовуються сьогодні."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:151
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:162
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

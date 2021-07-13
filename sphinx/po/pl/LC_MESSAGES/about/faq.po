@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,11 +267,12 @@ msgstr ""
 "w `Przewodniku po GDScript<gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
 "Istnieje kilka powodów, dla których warto korzystać z GDScript - szczególnie "
 "gdy prototypujesz, na etapie alfa/beta swojego projektu lub nie tworzysz "
@@ -549,7 +550,6 @@ msgstr ""
 "Dlaczego Godot dąży do tego ,aby jego podstawowe funkcje były niewielkie?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
@@ -573,6 +573,14 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Utrzymanie kodu oraz przestrzeń dla bugów.** Przy każdorazowej akceptacji "
+"kodu do repozytorium silnika Godot, istniejący kontrybutor bierze na siebie "
+"obowiązek utrzymania kodu. Niektórzy kontrybutorzy, niestety, nie biorą na "
+"siebie tego obowiązku, co może prowadzić do problemów z utrzymaniem dodanego "
+"kodu. To z kolei prowadzić może do słabo utrzymanych obszarów z błędami "
+"które nigdy nie zostają naprawione. Dodatkowo, \"szerokość interfejsu\" "
+"biblioteki poszerza się z czasem, powodując powiększenie ilości funkcji "
+"potrzebujących testowania i utrzymania."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -581,6 +589,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Łatwość kontrybucji.** Trzymając bazę kodu małą i czystą, może ona być "
+"łatwiejsza i szybsza w kompilacji. To z kolei przedkłada się na łatwość "
+"rozpoczęcia pracy w Godot dla nowych kontrybutorów, bez wymogu kupna "
+"szybkiego i drogiego sprzętu."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -907,9 +919,9 @@ msgstr ""
 "liczb, sposobów testowania lub przykładowych projektów (o ile to możliwe)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Czy jest możliwe używać Godota jako biblioteki?"
+msgstr ""
+"Czy jest możliwe używać Godota do tworzenia aplikacji nie będących grami?"
 
 #: ../../docs/about/faq.rst:363
 msgid ""
@@ -917,6 +929,9 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"Tak! Godot oferuje rozbudowany system UI, a jego niewielki rozmiar "
+"dystrybucji może uczynić go odpowiednią alternatywą dla frameworków takich "
+"jak Electron lub Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -968,7 +983,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Jakiego zestawu narzędzi do obsługi interfejsu używa Godot?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -997,7 +1012,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr "Dlaczego Godot nie używa STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:415

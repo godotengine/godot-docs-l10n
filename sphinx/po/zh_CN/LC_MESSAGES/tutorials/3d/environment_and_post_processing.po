@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a new post-"
 "processing system with many available effects right out of the box."
 msgstr ""
-"Godot 3提供了重新设计的环境资源(Environment resource),以及一个全新的后期处理"
-"(post-processing)系统,其开箱即用,具有许多可用的效果."
+"Godot 3提供了重新设计的环境资源(Environment resource), 以及一个全新的后期处理"
+"(post-processing)系统, 其开箱即用, 具有许多可用的效果."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
 msgid "Environment"
@@ -40,9 +40,9 @@ msgid ""
 "effects, and adjustments. By itself it does nothing, but it becomes enabled "
 "once used in one of the following locations in order of priority:"
 msgstr ""
-"Environment资源存储控制渲染环境所需的所有信息. 这包括天空,环境照明,色调映射,"
-"效果和调整. 它本身什么都不做,但是一旦在以下位置之一中按优先级顺序使用它就会启"
-"用:"
+"Environment资源存储控制渲染环境所需的所有信息. 这包括天空, 环境照明, 色调映"
+"射, 效果和调整. 它本身什么都不做, 但是一旦在以下位置之一中按优先级顺序使用它"
+"就会启用:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:18
 msgid "Camera node"
@@ -58,7 +58,7 @@ msgstr "环境可以设置为相机. 它将优先于任何其他设置."
 msgid ""
 "This is mostly useful when wanting to override an existing environment, but "
 "in general it's a better idea to use the option below."
-msgstr "这在想要覆盖现有环境时非常有用,但通常使用下面的选项更好."
+msgstr "这在想要覆盖现有环境时非常有用, 但通常使用下面的选项更好."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
 msgid "WorldEnvironment node"
@@ -69,8 +69,8 @@ msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
 "per active scene tree. Adding more than one will result in a warning."
 msgstr ""
-"WorldEnvironment节点可以添加到任何场景,但每个活动场景树只能存在一个. 添加多个"
-"将导致警告."
+"WorldEnvironment节点可以添加到任何场景, 但每个活动场景树只能存在一个. 添加多"
+"个将导致警告."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:35
 msgid ""
@@ -79,7 +79,7 @@ msgid ""
 "which makes it quite useful."
 msgstr ""
 "添加的任何环境都具有比默认环境更高的优先级(如下所述). 这意味着它可以在每个场"
-"景的基础上被覆盖,这使它非常有用."
+"景的基础上被覆盖, 这使它非常有用."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
 msgid "Default environment"
@@ -91,8 +91,8 @@ msgid ""
 "Environment was set to a Camera or WorldEnvironment. Just head to Project "
 "Settings -> Rendering -> Environment:"
 msgstr ""
-"可以设置默认环境,当没有将环境设置为Camera或WorldEnvironment时,该环境可用作后"
-"备环境. 只需前往项目设置 ->渲染 ->环境:"
+"可以设置默认环境, 当没有将环境设置为Camera或WorldEnvironment时, 该环境可用作"
+"后备环境. 只需前往项目设置 ->渲染 ->环境:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:48
 msgid ""
@@ -100,8 +100,8 @@ msgid ""
 "environment (``default_env.tres``). If one needs to be created, save it to "
 "disk before referencing it here."
 msgstr ""
-"从项目管理器创建的新项目带有默认环境(``default_env.tres``). 如果需要创建一个,"
-"请将其保存到磁盘,然后再在此处引用它."
+"从项目管理器创建的新项目带有默认环境(``default_env.tres``). 如果需要创建一"
+"个, 请将其保存到磁盘, 然后再在此处引用它."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
 msgid "Environment options"
@@ -125,8 +125,8 @@ msgid ""
 "can also change how objects are affected by ambient and reflected light."
 msgstr ""
 "\"背景(Background) \"部分包含有关如何填充背景的设置(屏幕中未绘制对象的部分). "
-"在Godot 3.0中,背景不仅用于显示图像或颜色,还可以改变物体受环境光和反射光影响的"
-"方式."
+"在Godot 3.0中, 背景不仅用于显示图像或颜色, 还可以改变物体受环境光和反射光影响"
+"的方式."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:68
 msgid "There are many ways to set the background:"
@@ -143,7 +143,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
 msgid "**Custom Color** is like Clear Color, but with a custom color value."
 msgstr ""
-"**自定义颜色(Custom Color)** 与清晰颜色(Clear Color)类似,但具有自定义颜色值."
+"**自定义颜色(Custom Color)** 与清晰颜色(Clear Color)类似, 但具有自定义颜色值."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:72
 msgid ""
@@ -160,7 +160,7 @@ msgid ""
 "value for drawing the background. The sky will only be used for reflection "
 "and ambient light."
 msgstr ""
-"** 颜色+天空(Color + Sky )** 可让您定义天空(如上所示),但使用恒定颜色值绘制背"
+"** 颜色+天空(Color + Sky )** 可让您定义天空(如上所示), 但使用恒定颜色值绘制背"
 "景. 天空仅用于反射和环境光."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
@@ -173,8 +173,8 @@ msgid ""
 "geometry with the same intensity. It is global and independent of lights "
 "that might be added to the scene."
 msgstr ""
-"环境(如此处定义)是一种光,它影响具有相同强度的每个几何体. 它是全局的,独立于可"
-"能添加到场景中的灯光."
+"环境(如此处定义)是一种光, 它影响具有相同强度的每个几何体. 它是全局的, 独立于"
+"可能添加到场景中的灯光."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
 msgid ""
@@ -183,8 +183,8 @@ msgid ""
 "the *Sky* (as described before, but a sky needs to be set as background for "
 "this to be enabled)."
 msgstr ""
-"有两种类型的环境光: *环境色* (恒定颜色乘以材质反射),然后从 *天空* 获得一个(如"
-"前所述,但天空需要设置为背景) 启用)."
+"有两种类型的环境光: *环境色* (恒定颜色乘以材质反射), 然后从 *天空* 获得一个"
+"(如前所述, 但天空需要设置为背景) 启用)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:89
 msgid ""
@@ -192,9 +192,9 @@ msgid ""
 "color and sky using the **Sky Contribution** setting (this value is 1.0 by "
 "default for convenience, so only the sky affects objects)."
 msgstr ""
-"当 *天空(Sky)* 设置为背景时,可以使用 **天空贡献度(Sky Contribution)** 设置在"
-"环境颜色(ambient color)和天空(sky)之间进行混合(为方便起见,此值默认为1.0,因此"
-"只有天空会影响对象)."
+"当 *天空(Sky)* 设置为背景时, 可以使用 **天空贡献度(Sky Contribution)** 设置在"
+"环境颜色(ambient color)和天空(sky)之间进行混合(为方便起见, 此值默认为1.0, 因"
+"此只有天空会影响对象)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
@@ -204,7 +204,7 @@ msgstr "以下是不同环境光对场景的影响比较:"
 msgid ""
 "Finally, there is an **Energy** setting, which is a multiplier. It's useful "
 "when working with HDR."
-msgstr "最后有一个 **能量(Energy)** 设置,这是一个乘数,在使用HDR时非常有用."
+msgstr "最后有一个 **能量(Energy)** 设置, 这是一个乘数, 在使用HDR时非常有用."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:100
 msgid ""
@@ -215,15 +215,16 @@ msgid ""
 "indirect light propagates. Below is a comparison, in terms of quality, "
 "between using a flat ambient color and a GIProbe:"
 msgstr ""
-"一般来说,环境光应该只用于简单的场景和大型外景,或是出于性能考虑(环境光消耗少),"
-"但它不能提供最好的光照质量.最好是用ReflectionProbe或GIProbe生成环境光,这样可"
-"以更忠实地模拟间接光的传播方式.下面是使用平面环境色和GIProbe在质量上的比较:"
+"一般来说, 环境光应该只用于简单的场景和大型外景, 或是出于性能考虑(环境光消耗"
+"少), 但它不能提供最好的光照质量. 最好是用ReflectionProbe或GIProbe生成环境光, "
+"这样可以更忠实地模拟间接光的传播方式. 下面是使用平面环境色和GIProbe在质量上的"
+"比较:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:109
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
-msgstr "使用上述方法之一,物体获得恒定的环境照明,由来自探头的环境光代替."
+msgstr "使用上述方法之一, 物体获得恒定的环境照明, 由来自探头的环境光代替."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:113
 msgid "Fog"
@@ -235,8 +236,8 @@ msgid ""
 "The physical effect is actually pretty complex, but Godot provides a good "
 "approximation. There are two kinds of fog in Godot:"
 msgstr ""
-"雾,就像在现实生活中一样,使远处的物体逐渐消失成均匀的颜色. 物理效果实际上非常"
-"复杂,但Godot提供了一个很好的近似. Godot有两种雾:"
+"雾, 就像在现实生活中一样, 使远处的物体逐渐消失成均匀的颜色. 物理效果实际上非"
+"常复杂, 但Godot提供了一个很好的近似. Godot有两种雾:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
 msgid ""
@@ -248,14 +249,14 @@ msgid ""
 "**Height Fog:** This one is applied to any objects below (or above) a "
 "certain height, regardless of the distance from the camera."
 msgstr ""
-"**高度雾:** 此高度应用于任何低于(或高于)某个高度的物体,无论距离相机的距离如"
+"**高度雾:** 此高度应用于任何低于(或高于)某个高度的物体, 无论距离相机的距离如"
 "何."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:124
 msgid ""
 "Both of these fog types can have their curve tweaked, making their "
 "transition more or less sharp."
-msgstr "这两种雾类型都可以调整它们的曲线,使它们的过渡或多或少变得清晰."
+msgstr "这两种雾类型都可以调整它们的曲线, 使它们的过渡或多或少变得清晰."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:126
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
@@ -267,16 +268,16 @@ msgid ""
 "the fog. When looking towards a directional light (usually a sun), the color "
 "of the fog will be changed, simulating the sunlight passing through the fog."
 msgstr ""
-"第一个是 **太阳量** ,它利用雾的太阳颜色属性. 当朝向定向光(通常是太阳)时,雾的"
-"颜色将会改变,模拟穿过雾的阳光."
+"第一个是 **太阳量** , 它利用雾的太阳颜色属性. 当朝向定向光(通常是太阳)时, 雾"
+"的颜色将会改变, 模拟穿过雾的阳光."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:132
 msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
-"第二个是** Transmit Enabled **,模拟更逼真的透光率. 在实践中,它使光线在雾中更"
-"加突出."
+"第二个是 ** Transmit Enabled ** , 模拟更逼真的透光率. 在实践中, 它使光线在雾"
+"中更加突出."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:138
 msgid "Tonemap"
@@ -297,24 +298,24 @@ msgid ""
 "result is not that strong. Tone mapping options are:"
 msgstr ""
 "从电影和游戏行业中使用的标准曲线的简短列表中选择将应用于场景的色调映射曲线. "
-"色调映射可以使亮区和暗区更均匀,即使结果不那么强. 色调映射选项包括:"
+"色调映射可以使亮区和暗区更均匀, 即使结果不那么强. 色调映射选项包括:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:147
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
-msgstr "**模式:** 色调映射模式,可以是线性,Reindhart,Filmic或Aces."
+msgstr "**模式:** 色调映射模式, 可以是线性,Reindhart,Filmic或Aces."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:148
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
-msgstr "**曝光:** 色调映射曝光,模拟随时间接收的光量."
+msgstr "**曝光:** 色调映射曝光, 模拟随时间接收的光量."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid ""
 "**White:** Tone mapping white, which simulates where in the scale white is "
 "located (by default 1.0)."
-msgstr "**White:** 色调映射白色,模拟缩放白色的位置(默认为1.0)."
+msgstr "**White:** 色调映射白色, 模拟缩放白色的位置(默认为1.0)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:152
 msgid "Auto Exposure (HDR)"
@@ -329,9 +330,9 @@ msgid ""
 "simulates the camera (or eye) in an effort to adapt between light and dark "
 "locations and their different amounts of light."
 msgstr ""
-"尽管在大多数情况下,照明和纹理都受到艺术家的严格控制,但Godot通过自动曝光机制支"
-"持简单的高动态范围实现. 当将内部区域与低光和户外相结合时,这通常用于真实性. 自"
-"动曝光模拟相机(或眼睛),以适应明暗位置和不同光量."
+"尽管在大多数情况下, 照明和纹理都受到艺术家的严格控制, 但Godot通过自动曝光机制"
+"支持简单的高动态范围实现. 当将内部区域与低光和户外相结合时, 这通常用于真实"
+"性. 自动曝光模拟相机(或眼睛), 以适应明暗位置和不同光量."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:165
 msgid ""
@@ -342,9 +343,10 @@ msgid ""
 "directional light. Normally, values between 3.0 and 6.0 are enough to "
 "simulate indoor-outdoor conditions."
 msgstr ""
-"使用自动曝光的最简单方法是确保室外灯(或其他强光)的能量超过1.0.这是通过调整它"
-"们的 **能量** 乘数(对灯本身)来实现的.为了使其保持一致,**天空** 通常也需要使用"
-"能量乘数,以配合定向光.通常情况下,数值在3.0到6.0之间,就足以模拟室内室外条件."
+"使用自动曝光的最简单方法是确保室外灯(或其他强光)的能量超过1.0. 这是通过调整它"
+"们的 **能量** 乘数(对灯本身)来实现的. 为了使其保持一致, **天空** 通常也需要使"
+"用能量乘数, 以配合定向光. 通常情况下, 数值在3.0到6.0之间, 就足以模拟室内室外"
+"条件."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:171
 msgid ""
@@ -352,21 +354,21 @@ msgid ""
 "pixels that go over the tonemap **White** will bleed to the glow buffer, "
 "creating the typical bloom effect in photography."
 msgstr ""
-"通过将自动曝光与* Glow *后期处理相结合(更多内容如下),超过色调图** **的像素将"
-"会流向发光缓冲区,从而在摄影中创造典型的绽放效果."
+"通过将自动曝光与* Glow *后期处理相结合(更多内容如下), 超过色调图 ** ** 的像素"
+"将会流向发光缓冲区, 从而在摄影中创造典型的绽放效果."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:177
 msgid ""
 "The user-controllable values in the Auto Exposure section come with sensible "
 "defaults, but you can still tweak them:"
-msgstr "\"自动曝光\"部分中的用户可控值具有合理的默认值,但您仍然可以调整它们:"
+msgstr "\"自动曝光\" 部分中的用户可控值具有合理的默认值, 但您仍然可以调整它们:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:182
 msgid ""
 "**Scale:** Value to scale the lighting. Brighter values produce brighter "
 "images, smaller ones produce darker ones."
 msgstr ""
-"**比例:** 用于缩放照明的值. 较亮的值会产生较亮的图像,较小的值会产生较暗的图"
+"**比例:** 用于缩放照明的值. 较亮的值会产生较亮的图像, 较小的值会产生较暗的图"
 "像."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:183
@@ -385,7 +387,7 @@ msgstr "** Max Luma:** 自动曝光旨在调整的最大亮度."
 msgid ""
 "**Speed:** Speed at which luminance corrects itself. The higher the value, "
 "the faster correction happens."
-msgstr "**速度:** 亮度校正的速度. 值越高,发生的校正越快."
+msgstr "**速度:** 亮度校正的速度. 值越高, 发生的校正越快."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:188
 msgid "Mid- and post-processing effects"
@@ -409,9 +411,9 @@ msgid ""
 "objects are in contact with each other (object over floor, over a table, "
 "floating on water, etc)."
 msgstr ""
-"虽然Godot支持三种反射数据源(Sky,ReflectionProbe和GIProbe),但它们可能无法为所"
-"有情况提供足够的细节. 屏幕空间反射最有意义的场景是物体彼此接触(地板上的物体,"
-"桌子上的物体,漂浮在水面上等)."
+"虽然Godot支持三种反射数据源(Sky,ReflectionProbe和GIProbe), 但它们可能无法为所"
+"有情况提供足够的细节. 屏幕空间反射最有意义的场景是物体彼此接触(地板上的物体, "
+"桌子上的物体, 漂浮在水面上等)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:205
 msgid ""
@@ -420,8 +422,8 @@ msgid ""
 "be used to make characters, cars, etc. reflect on surrounding surfaces when "
 "moving around."
 msgstr ""
-"另一个优点(即使只启用最小),它是实时工作(而其他类型的反射是预先计算的).这可以"
-"用来使人物、汽车等在移动时反射到周围的表面上."
+"另一个优点(即使只启用最小), 它是实时工作(而其他类型的反射是预先计算的). 这可"
+"以用来使人物, 汽车等在移动时反射到周围的表面上."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:209
 msgid ""
@@ -432,26 +434,27 @@ msgstr "一些用户控制的参数可用于更好地调整技术:"
 msgid ""
 "**Max Steps** determines the length of the reflection. The bigger this "
 "number, the more costly it is to compute."
-msgstr "**最大步数** 确定反射的长度. 这个数字越大,计算成本就越高."
+msgstr "**最大步数** 确定反射的长度. 这个数字越大, 计算成本就越高."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:212
 msgid ""
 "**Fade In** allows adjusting the fade-in curve, which is useful to make the "
 "contact area softer."
-msgstr "**淡入** 允许调整淡入曲线,这有助于使接触区域更柔和."
+msgstr "**淡入** 允许调整淡入曲线, 这有助于使接触区域更柔和."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:213
 msgid ""
 "**Fade Out** allows adjusting the fade-out curve, so the step limit fades "
 "out softly."
-msgstr "**淡出** 允许调整淡出曲线,因此步长限制会轻微淡出."
+msgstr "**淡出** 允许调整淡出曲线, 因此步长限制会轻微淡出."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:214
 msgid ""
 "**Depth Tolerance** can be used for screen-space-ray hit tolerance to gaps. "
 "The bigger the value, the more gaps will be ignored."
 msgstr ""
-"** Depth Tolerance **可用于屏幕空间射线对间隙的容差. 值越大,忽略的差距就越大."
+"** Depth Tolerance ** 可用于屏幕空间射线对间隙的容差. 值越大, 忽略的差距就越"
+"大."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:215
 msgid ""
@@ -463,7 +466,7 @@ msgstr "**粗糙度** 将应用屏幕空间模糊来近似具有此材质特征�
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent objects can't be reflected."
-msgstr "请记住,屏幕空间反射仅适用于反射不透明几何体. 透明对象无法反映."
+msgstr "请记住, 屏幕空间反射仅适用于反射不透明几何体. 透明对象无法反映."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:220
 msgid "Screen-Space Ambient Occlusion (SSAO)"
@@ -478,10 +481,10 @@ msgid ""
 "methods proposed previously act more on a larger scale (large regions) than "
 "at the smaller geometry level."
 msgstr ""
-"正如在 **环境** 部分提到的,光节点的光线无法到达的区域会被环境光照亮(要么是因"
-"为它在半径之外,要么是阴影).Godot可以使用GIProbe、ReflectionProbe、Sky或恒定的"
-"环境色来模拟这种情况.但问题是,之前提出的所有方法都更多地作用于较大的尺度(大区"
-"域),而不是较小的几何层面."
+"正如在 **环境** 部分提到的, 光节点的光线无法到达的区域会被环境光照亮(要么是因"
+"为它在半径之外, 要么是阴影).Godot可以使用GIProbe, ReflectionProbe, Sky或恒定"
+"的环境色来模拟这种情况. 但问题是, 之前提出的所有方法都更多地作用于较大的尺度"
+"(大区域), 而不是较小的几何层面."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:231
 msgid ""
@@ -489,8 +492,8 @@ msgid ""
 "Reflection probes have more local detail, but not enough to simulate "
 "situations where light is not able to fill inside hollow or concave features."
 msgstr ""
-"恒定环境色和Sky在任何地方都是一样的,而GI和反射探针的局部细节较多,但不足以模拟"
-"光线无法填充到中空或凹面特征内部的情况."
+"恒定环境色和Sky在任何地方都是一样的, 而GI和反射探针的局部细节较多, 但不足以模"
+"拟光线无法填充到中空或凹面特征内部的情况."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:235
 msgid ""
@@ -498,8 +501,8 @@ msgid ""
 "the image below, its purpose is to make sure concave areas are darker, "
 "simulating a narrower path for the light to enter:"
 msgstr ""
-"这可以用屏幕空间环境遮挡来模拟.如下图所示,它的目的是确保凹陷区域更暗,模拟光线"
-"进入的较窄路径:"
+"这可以用屏幕空间环境遮挡来模拟. 如下图所示, 它的目的是确保凹陷区域更暗, 模拟"
+"光线进入的较窄路径:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:241
 msgid ""
@@ -507,8 +510,8 @@ msgid ""
 "able to appreciate it. This is because SSAO only acts on *ambient* light, "
 "not direct light."
 msgstr ""
-"启用此效果,打开灯光并且无法欣赏它是一个常见的错误. 这是因为SSAO仅作用于* "
-"ambient * light,而不是直接光."
+"启用此效果, 打开灯光并且无法欣赏它是一个常见的错误. 这是因为SSAO仅作用于* "
+"ambient * light, 而不是直接光."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:244
 msgid ""
@@ -517,15 +520,15 @@ msgid ""
 "light too, use the **Light Affect** parameter (even though this is not "
 "correct, some artists like how it looks)."
 msgstr ""
-"这就是为什么在上图中,直射光下效果不太明显的原因(在左边).如果你想强制SSAO也在"
-"直射光下工作,请使用 **Light Affect** [光线影响]参数(尽管并这不好,但有些设计师"
-"喜欢它的外观)."
+"这就是为什么在上图中, 直射光下效果不太明显的原因(在左边). 如果你想强制SSAO也"
+"在直射光下工作, 请使用 **Light Affect** [光线影响]参数(尽管并这不好, 但有些设"
+"计师喜欢它的外观)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:248
 msgid ""
 "SSAO looks best when combined with a real source of indirect light, like "
 "GIProbe:"
-msgstr "当与真正的间接光源结合时,SSAO看起来最好,比如GIProbe:"
+msgstr "当与真正的间接光源结合时,SSAO看起来最好, 比如GIProbe:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:252
 msgid "Tweaking SSAO is possible with several parameters:"
@@ -536,7 +539,7 @@ msgid ""
 "**Radius/Intensity:** To control the radius or intensity of the occlusion, "
 "these two parameters are available. Radius is in world (Metric) units."
 msgstr ""
-"**半径/强度:** 要控制遮挡的半径或强度,可以使用这两个参数. 半径是世界(公制)单"
+"**半径/强度:** 要控制遮挡的半径或强度, 可以使用这两个参数. 半径是世界(公制)单"
 "位."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:257
@@ -552,14 +555,14 @@ msgid ""
 "**Bias:** This can be tweaked to solve self occlusion, though the default "
 "generally works well enough."
 msgstr ""
-"**偏差(Bias):** 这可以通过调整来解决自我遮挡问题,但默认情况下通常效果不错."
+"**偏差(Bias):** 这可以通过调整来解决自我遮挡问题, 但默认情况下通常效果不错."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:259
 msgid ""
 "**Light Affect:** SSAO only affects ambient light, but increasing this "
 "slider can make it also affect direct light. Some artists prefer this effect."
 msgstr ""
-"**光线影响(Light Affect):** SSAO仅影响环境光线,但增加此滑块可能会影响直射光"
+"**光线影响(Light Affect):** SSAO仅影响环境光线, 但增加此滑块可能会影响直射光"
 "线. 有些艺术家喜欢这种效果."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
@@ -569,9 +572,9 @@ msgid ""
 "greater than 0 multiply the AO texture by the SSAO effect to varying "
 "degrees. This does not affect materials without an AO texture."
 msgstr ""
-"** Ao通道影响(Ao Channel Affect):** 如果使用零值,则仅将材质的AO纹理用于环境光"
-"遮挡； SSAO将不适用.大于0的值会在不同程度上将AO纹理乘以SSAO效果.这不会影响没"
-"有AO纹理的材料."
+"** Ao通道影响(Ao Channel Affect):** 如果使用零值, 则仅将材质的AO纹理用于环境"
+"光遮挡； SSAO将不适用. 大于0的值会在不同程度上将AO纹理乘以SSAO效果. 这不会影"
+"响没有AO纹理的材料."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
 msgid ""
@@ -589,17 +592,17 @@ msgid ""
 "better (with a bit of dithering-like effect), but does not preserve local "
 "detail as well."
 msgstr ""
-"**模糊(Blur):** 使用的模糊内核类型. 1x1内核是一个简单的模糊,可以更好地保留局"
-"部细节,但效率不高(通常在上面的高质量设置下效果更好),而3x3会更好地柔化图像(有"
-"一点像抖动效果)但不保留局部 细节也是如此."
+"**模糊(Blur):** 使用的模糊内核类型. 1x1内核是一个简单的模糊, 可以更好地保留局"
+"部细节, 但效率不高(通常在上面的高质量设置下效果更好), 而3x3会更好地柔化图像"
+"(有一点像抖动效果)但不保留局部 细节也是如此."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:263
 msgid ""
 "**Edge Sharpness**: This can be used to preserve the sharpness of edges "
 "(avoids areas without AO on creases)."
 msgstr ""
-"**边缘清晰度(Edge Sharpness)** :这可用于保持边缘的清晰度(避免折痕处没有AO的区"
-"域)."
+"**边缘清晰度(Edge Sharpness)** : 这可用于保持边缘的清晰度(避免折痕处没有AO的"
+"区域)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:266
 msgid "Depth of Field / Far Blur"
@@ -611,8 +614,8 @@ msgid ""
 "behind a given range. It has an initial **Distance** with a **Transition** "
 "region (in world units):"
 msgstr ""
-"此效果可模拟高端相机的焦距. 它模糊了给定范围后面的物体. 它有一个** **距离**, "
-"**过渡** 区域(世界单位):"
+"此效果可模拟高端相机的焦距. 它模糊了给定范围后面的物体. 它有一个 ** ** 距离 "
+"**, ** 过渡** 区域(世界单位):"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:274
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:286
@@ -620,7 +623,8 @@ msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
 "tweaking the **Quality** may be needed in order to avoid artifacts."
 msgstr ""
-"** Amount **参数控制模糊量. 对于较大的模糊,可能需要调整 **质量** 以避免伪影."
+"** Amount ** 参数控制模糊量. 对于较大的模糊, 可能需要调整 **质量** 以避免伪"
+"影."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:278
 msgid "Depth of Field / Near Blur"
@@ -633,7 +637,7 @@ msgid ""
 "initial **Distance** with a **Transition** region (in world units):"
 msgstr ""
 "此效果可模拟高端相机的焦距. 它使靠近相机的物体模糊(在远处模糊的相反方向上作"
-"用). 它有一个** **距离**, **过渡** 区域(世界单位):"
+"用). 它有一个 ** ** 距离 **, ** 过渡** 区域(世界单位):"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:289
 msgid ""
@@ -651,16 +655,16 @@ msgid ""
 "the media (be it analog or digital), it generally bleeds outwards to darker "
 "regions of the image. This is simulated in Godot with the **Glow** effect."
 msgstr ""
-"在摄影和胶片中,当光量超过介质支持的最大值(无论是模拟还是数字)时,它通常会向外"
-"渗出到图像的较暗区域. 这是在Godot中用** Glow **效果模拟的."
+"在摄影和胶片中, 当光量超过介质支持的最大值(无论是模拟还是数字)时, 它通常会向"
+"外渗出到图像的较暗区域. 这是在Godot中用 ** Glow ** 效果模拟的."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:303
 msgid ""
 "By default, even if the effect is enabled, it will be weak or invisible. One "
 "of two conditions need to happen for it to actually show:"
 msgstr ""
-"默认情况下,即使启用了效果,它也会变弱或不可见. 实际显示它需要发生的两个条件之"
-"一:"
+"默认情况下, 即使启用了效果, 它也会变弱或不可见. 实际显示它需要发生的两个条件"
+"之一:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:306
 msgid ""
@@ -672,17 +676,17 @@ msgid ""
 "threshold."
 msgstr ""
 "像素中的光线超过 **HDR阈值** (其中0是所有光线都超过该阈值,1.0是光线超过色调映"
-"射器 **白** 值).通常情况下,这个值应该在1.0,但它可以调低,以允许更多的光线渗入."
-"还有一个额外的参数, **HDR Scale** ,允许对超过阈值的光线进行缩放(使其更亮或更"
-"暗)."
+"射器 **白** 值). 通常情况下, 这个值应该在1.0, 但它可以调低, 以允许更多的光线"
+"渗入. 还有一个额外的参数, **HDR Scale** , 允许对超过阈值的光线进行缩放(使其更"
+"亮或更暗)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:310
 msgid ""
 "The Bloom effect has a value set greater than 0. As it increases, it sends "
 "the whole screen to the glow processor at higher amounts."
 msgstr ""
-"Bloom效果的值设置大于0.随着它的增加,它会以更高的数量将整个屏幕发送到辉光处理"
-"器."
+"Bloom效果的值设置大于0. 随着它的增加, 它会以更高的数量将整个屏幕发送到辉光处"
+"理器."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:314
 msgid "Both will cause the light to start bleeding out of the brighter areas."
@@ -690,14 +694,14 @@ msgstr "两者都会导致光从较亮的区域开始流血."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:316
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
-msgstr "一旦看到发光,就可以通过一些额外的参数来控制它:"
+msgstr "一旦看到发光, 就可以通过一些额外的参数来控制它:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
 msgid ""
 "**Intensity** is an overall scale for the effect, it can be made stronger or "
 "weaker (0.0 removes it)."
 msgstr ""
-"**强度(Intensity)** 是效果的整体比例,可以将其增强或减弱(0.0可以将其删除)."
+"**强度(Intensity)** 是效果的整体比例, 可以将其增强或减弱(0.0可以将其删除)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:319
 msgid ""
@@ -706,8 +710,8 @@ msgid ""
 "this is not needed, as the size can be more efficiently adjusted with the "
 "**Levels**."
 msgstr ""
-"**强度(Strength)** 是指高斯滤波器内核的处理强度.数值越大,滤波器越饱和并向外扩"
-"展.一般来说,不需要改变这个值,因为可以通过 **Levels** 更有效地调整大小."
+"**强度(Strength)** 是指高斯滤波器内核的处理强度. 数值越大, 滤波器越饱和并向外"
+"扩展. 一般来说, 不需要改变这个值, 因为可以通过 **Levels** 更有效地调整大小."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
 msgid "The **Blend Mode** of the effect can also be changed:"
@@ -719,8 +723,8 @@ msgid ""
 "image with no blending involved. In general, it's too strong to be used, but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
-"**添加剂(Additive)** 是最强的,因为它只是在图像上添加了发光效果而不涉及混合. "
-"一般来说,它太强大而无法使用,但在低强度Bloom下可以看起来很好(产生梦幻般的效"
+"**添加剂(Additive)** 是最强的, 因为它只是在图像上添加了发光效果而不涉及混合. "
+"一般来说, 它太强大而无法使用, 但在低强度Bloom下可以看起来很好(产生梦幻般的效"
 "果)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
@@ -728,15 +732,15 @@ msgid ""
 "**Screen** is the default one. It ensures glow never brights more than "
 "itself and works great as an all around."
 msgstr ""
-"**屏幕** 是默认值. 它确保发光永远不会比自身更亮,并且可以很好地作为一个整体."
+"**屏幕** 是默认值. 它确保发光永远不会比自身更亮, 并且可以很好地作为一个整体."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
 msgid ""
 "**Softlight** is the weakest one, producing only a subtle color disturbance "
 "around the objects. This mode works best on dark scenes."
 msgstr ""
-"**Softlight** 是最弱的一种,只会在物体周围产生微妙的色彩干扰. 此模式在黑暗场景"
-"中效果最佳."
+"**Softlight** 是最弱的一种, 只会在物体周围产生微妙的色彩干扰. 此模式在黑暗场"
+"景中效果最佳."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid ""
@@ -751,13 +755,13 @@ msgid ""
 "hazy glows covering the whole screen:"
 msgstr ""
 "为了改变辉光效果的大小和形状,Godot提供 **级别(Levels)** . 较小的级别是在物体"
-"周围出现的强光晕,而大的级别是覆盖整个屏幕的朦胧光晕:"
+"周围出现的强光晕, 而大的级别是覆盖整个屏幕的朦胧光晕:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:334
 msgid ""
 "The real strength of this system, though, is to combine levels to create "
 "more interesting glow patterns:"
-msgstr "然而,这个系统的真正优势在于结合水平来创造更有趣的发光模式:"
+msgstr "然而, 这个系统的真正优势在于结合水平来创造更有趣的发光模式:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
 msgid ""
@@ -766,8 +770,8 @@ msgid ""
 "**Bicubic Upscaling** gets rids of it, at a minimal performance cost. *Note "
 "that this is effective only when using the GLES3 backend.*"
 msgstr ""
-"最后,随着最高的图层在对微小模糊图像的拉伸中被创建,我们可能会看到一些块状模"
-"糊. 启用 **Bicubic Upscaling** 可以以最低的性能成本拜托它.**注意这只有在使用"
+"最后, 随着最高的图层在对微小模糊图像的拉伸中被创建, 我们可能会看到一些块状模"
+"糊. 启用 **Bicubic Upscaling** 可以以最低的性能成本拜托它. **注意这只有在使用"
 "GLES3时才有效.**"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:347
@@ -784,7 +788,7 @@ msgstr "在处理结束时,Godot提供了进行一些标准图像调整的可能
 msgid ""
 "The first one is being able to change the typical Brightness, Contrast, and "
 "Saturation:"
-msgstr "第一个是能够改变典型的亮度,对比度和饱和度:"
+msgstr "第一个是能够改变典型的亮度, 对比度和饱和度:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:359
 msgid ""

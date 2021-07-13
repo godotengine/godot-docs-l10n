@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,22 +348,25 @@ msgstr ""
 "リプトにアクセスできます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
+#, fuzzy
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
-"an optional path to an image to use as an icon. You will then find your new "
-"type in the Node or Resource creation dialog."
+"an optional path to a PNG or SVG image to use as an icon (16×16 minimum, "
+"32×32 recommended). You will then find your new type in the Node or Resource "
+"creation dialog. Note that the icon will only appear after restarting the "
+"editor."
 msgstr ""
 "``class_name`` キーワードの後にクラスの名前を付けた後に、スクリプトに名前を付"
 "け、エディタにタイプとして登録できます。カンマを追加した後にアイコンとして使"
 "用する画像のパスを追加できます。これで、ノードまたはリソース作成ダイアログで"
 "新しいタイプを見つける事ができます。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:423
 msgid "In Godot 3.1:"
 msgstr "Godot 3.1の場合:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -371,6 +374,6 @@ msgstr ""
 "スクリプトを登録できるのは、GDScriptおよびNativeScript、つまりC++およびその他"
 "のGDNativeを使用した言語のみです。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:426
 msgid "Only GDScript creates global variables for each named script."
 msgstr "GDScriptのみが、名前付きスクリプトごとにグローバル変数を作成します。"

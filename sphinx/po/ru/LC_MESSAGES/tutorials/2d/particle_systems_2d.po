@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
-msgstr "Взрывчатость"
+msgstr "Взрывоопасность"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
@@ -213,9 +213,9 @@ msgid ""
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
 "forces particles to be emitted all together. Ranges are:"
 msgstr ""
-"Если время жизни равно ``1`` и количество частиц 10, это означает, что "
-"частица будет испускаться каждые 0,1 секунды. Параметр ``explosiveness`` "
-"изменяет это и заставляет частицы испускаться все разом. Диапазоны:"
+"Если продолжительность жизни равна ``1`` и имеется 10 частиц, это означает, "
+"что частица будет испускаться каждую 0,1 секунды. Параметр \"explosiveness\" "
+"меняет это и заставляет частицы испускаться все вместе. Диапазоны:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
@@ -410,15 +410,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
-msgstr "** Flatness **"
+msgstr "Flatness"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
-msgstr "Это свойство применяется только для 3D-частиц."
+msgstr "Это свойство полезно только для 3D-частиц."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Gravity"
-msgstr "** Gravity **"
+msgstr "Gravity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:214
 msgid "The gravity applied to every particle."
@@ -426,7 +426,7 @@ msgstr "Гравитация применяется к каждой частиц
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:219
 msgid "Initial Velocity"
-msgstr "** Initial Velocity **"
+msgstr "Initial Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:221
 msgid ""
@@ -435,17 +435,17 @@ msgid ""
 "described further below)."
 msgstr ""
 "Начальная скорость - это скорость, с которой будут испускаться частицы (в "
-"пикселях / сек). Позднее скорость может быть изменена под действием "
-"гравитации или сил (как описано ниже)."
+"пикселях/сек). Позднее скорость может быть изменена под действием силы "
+"тяжести или других ускорений (как описано ниже)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid "Angular Velocity"
-msgstr "** Angular Velocity **"
+msgstr "Angular Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:230
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
-"Угловая скорость — это начальная угловая скорость, применяемая к частицам."
+"Угловая скорость - это начальная угловая скорость, применяемая к частицам."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "Spin Velocity"
@@ -461,12 +461,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:241
 msgid "Orbit Velocity"
-msgstr "** Orbit Velocity **"
+msgstr "Orbit Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:243
 msgid "Orbit velocity is used to make particles turn around their center."
-msgstr ""
-"``Orbit Velocity`` используется для вращения частиц вокруг своего центра."
+msgstr "Orbit Velocity используется для вращения частиц вокруг своего центра."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:248
 msgid "Linear Acceleration"
@@ -486,7 +485,7 @@ msgid ""
 "center. If negative, they are absorbed towards it."
 msgstr ""
 "Если это ускорение положительное, частицы ускоряются от центра. Если "
-"отрицательное, то стремятся к нему."
+"отрицательное, они поглощаются им."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Tangential Acceleration"
@@ -497,8 +496,8 @@ msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr ""
-"Это ускорение будет использовать касательный вектор к центру. Комбинирование "
-"с радиальным ускорением может создать красивые эффекты."
+"Это ускорение будет использовать касательный вектор к центру. Комбинация с "
+"радиальным ускорением может дать хорошие эффекты."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Damping"
@@ -510,9 +509,9 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
-"Демпфирование придаёт трение частицам, заставляя их останавливаться. Это "
-"особенно полезно для искр или взрывов, частицы в которых рождаются с высокой "
-"линейной скоростью, а затем замедляются по мере своего угасания."
+"Демпфирование приводит к трению частиц, заставляя их останавливаться. Это "
+"особенно полезно для искр или взрывов, которые обычно начинаются с высокой "
+"линейной скорости и затем прекращаются по мере исчезновения."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Angle"
@@ -524,7 +523,7 @@ msgid ""
 "mostly useful randomized."
 msgstr ""
 "Определяет начальный угол частицы (в градусах). Этот параметр в основном "
-"применяется случайно."
+"полезен в случайном порядке."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 msgid "Scale"
@@ -576,12 +575,12 @@ msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr ""
-"Убедитесь, что установлен ``ParticlesMaterial`` и выбран узел "
-"``Particles2D``. На Панели инструментов должно появиться меню «Частицы»:"
+"Убедитесь, что задан ParticlesMaterial и выбран узел Particles2D. На панели "
+"инструментов должно появиться меню «Частицы»:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Open it and select \"Load Emission Mask\":"
-msgstr "Откройте его и выберите ``Load Emission Mask``:"
+msgstr "Откройте его и выберите \"Загрузить маску излучения\":"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "Then select which texture you want to use as your mask:"
@@ -605,13 +604,13 @@ msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
-"Твердые пиксели: частицы будут появляться из любой области текстуры, за "
+"Залитые пиксели: Частицы будут появляться из любой области текстуры, за "
 "исключением прозрачных областей."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr "Пограничные пиксели: Частицы появляются из внешних краев текстуры."
+msgstr "Граничные пиксели: Частицы будут появляться на внешних краях текстуры."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:340
 msgid ""
@@ -634,24 +633,24 @@ msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
 msgstr ""
-"``Capture from Pixel `` заставит частицы наследовать цвет маски в своих "
-"точках рождения."
+"``Из пикселя`` заставит частицы унаследовать цвет маски в своих точках "
+"появления."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:352
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr ""
-"После того, как вы нажмете «ОК», маска будет сгенерирована и установлена на "
-"``ParticlesMaterial`` в разделе ``Emission Shape``:"
+"После того, как вы нажмете \"ОК\", маска будет сгенерирована и установлена "
+"на ParticlesMaterial в разделе ``Emission Shape``:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:356
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
-"Все значения в этом разделе были автоматически сгенерированы ``Load Emission "
-"Mask``, поэтому их обычно не изменяют."
+"Все значения в этом разделе были автоматически сгенерированы меню «Загрузить "
+"маску излучения», поэтому их, как правило, следует оставить в покое."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:359
 msgid ""
@@ -659,5 +658,5 @@ msgid ""
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
 "Изображение не следует добавлять напрямую в ``Point Texture`` или ``Color "
-"Texture``. Вместо этого всегда следует использовать меню ``Load Emission "
-"Mask``."
+"Texture``. Вместо этого всегда следует использовать меню «Загрузить маску "
+"излучения»."

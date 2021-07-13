@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,13 +200,12 @@ msgid "``d``"
 msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
-#, fuzzy
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"**Десятковий інтеграл**. Очікує інтегральне, або дійсне, число (буде "
-"похилене)."
+"**Десятковий інтеграл**. Очікує інтегральне, або дійсне, число (буде в "
+"десятковому вигляді)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -287,7 +286,6 @@ msgid "``.``"
 msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
-#, fuzzy
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
@@ -320,7 +318,6 @@ msgid "Padding"
 msgstr "Фаска"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
-#, fuzzy
 msgid ""
 "The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
 "``9``) characters are used for padding. This allows printing several values "
@@ -376,12 +373,18 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"За допомогою символу ``*`` (*зірочки*), можна встановити відступ або "
+"точність, не змінюючи рядок форматування. Він використовується замість "
+"цілого числа у специфікаторі формату. Потім при форматуванні передаються "
+"значення для заповнення та точності:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
+"Все ще можна заповнити нулями в цілочисельних заповнювачах, додавши ``0`` "
+"перед ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
@@ -392,6 +395,8 @@ msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
+"Щоб вставити символ ``%`` у форматований рядок, його потрібно приховати, щоб "
+"він перестав читатися як заповнювач. Це робиться шляхом подвоєння символа:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -442,6 +447,8 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
+"``\"Привіт, {name} {version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -451,7 +458,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "Привіт, Godette 3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -460,7 +467,7 @@ msgstr "індекс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr ""
+msgstr "``\"Привіт, {0} {1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
@@ -471,6 +478,8 @@ msgstr "суміш"
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
+"``\"Привіт, {0} {version}!\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -484,22 +493,24 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
+"``\"Привіт, {name} {version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr ""
+msgstr "``\"Привіт, {0} {1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr ""
+msgstr "``\"Привіт, {name} {0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "no index"
-msgstr ""
+msgstr "без індекса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr ""
+msgstr "``\"Привіт, {} {}!\".format([\"Godette\", 3.0], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
@@ -515,7 +526,7 @@ msgstr "Інфікс (за замовчанням)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr ""
+msgstr "``\"Привіт, {0} {1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
@@ -529,7 +540,7 @@ msgstr "Суфікс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr ""
+msgstr "``\"Привіт, 0% 1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
@@ -537,7 +548,7 @@ msgstr "Префікс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr ""
+msgstr "``\"Привіт, %0 %1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
 msgid ""
@@ -545,12 +556,16 @@ msgid ""
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
+"Поєднання метода ``String.format`` з оператором може бути корисним, оскільки "
+"``String.format`` не має способу маніпулювати поданням чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
+"``\"Привіт, {0} {version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"

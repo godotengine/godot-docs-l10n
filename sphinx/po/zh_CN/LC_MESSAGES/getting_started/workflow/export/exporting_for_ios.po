@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
-"这些是在Xcode中加载Godot项目的步骤.这允许您构建和部署到iOS设备,为App Store构"
-"建一个发行版本,并执行您通常可以使用Xcode执行的所有其他操作."
+"这些是在Xcode中加载Godot项目的步骤. 这允许您构建和部署到iOS设备, 为App Store"
+"构建一个发行版本, 并执行您通常可以使用Xcode执行的所有其他操作."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 msgid "Requirements"
@@ -37,13 +37,13 @@ msgstr "需求"
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
-msgstr "您必须从运行安装了Xcode的macOS的计算机中,为iOS导出."
+msgstr "您必须从运行安装了Xcode的macOS的计算机中, 为iOS导出."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
-msgstr "下载Godot导出模板.使用Godot菜单:编辑器 > 管理导出模板"
+msgstr "下载Godot导出模板. 使用Godot菜单: 编辑器 > 管理导出模板"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
 msgid "Export a Godot project to Xcode"
@@ -54,20 +54,20 @@ msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
-"在Godot编辑器中,从 **项目** 菜单打开 **导出** 窗口.导出窗口打开后,点击 **添"
-"加..** 并选择 **iOS** ."
+"在Godot编辑器中, 从 **项目** 菜单打开 **导出** 窗口. 导出窗口打开后, 点击 **"
+"添加..** 并选择 **iOS** ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
 msgid ""
 "The following export options are required. Leaving any blank will cause the "
 "exporter to throw an error:"
-msgstr "需要以下导出选项.留下任何空白会导致导出器抛出错误:"
+msgstr "需要以下导出选项. 留下任何空白会导致导出器抛出错误:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:25
 msgid ""
 "In the **Application** category * **App Store Team ID** and (Bundle) "
 "**Identifier**"
-msgstr "在 **应用程序** 类别 * **应用程序商店团队ID** 和(捆绑包)**标识符中**"
+msgstr "在 **应用程序** 类别 * **应用程序商店团队ID** 和(捆绑包) **标识符中**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
@@ -85,13 +85,13 @@ msgstr "**Portrait Launch Screens** 类别中的所有内容"
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
-msgstr "点击 **导出项目** 后,仍有两个重要选项:"
+msgstr "点击 **导出项目** 后, 仍有两个重要选项:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
-msgstr "**Path** 是一个空文件夹,它将包含导出的Xcode项目文件."
+msgstr "**Path** 是一个空文件夹, 它将包含导出的Xcode项目文件."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
@@ -105,20 +105,20 @@ msgid ""
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
-"本教程使用 **exported_xcode_project_name** ,但您将使用您的项目的名称.当您在以"
-"下步骤中看到 **exported_xcode_project_name** 时,请将其替换为您使用的名称."
+"本教程使用 **exported_xcode_project_name** , 但您将使用您的项目的名称. 当您在"
+"以下步骤中看到 **exported_xcode_project_name** 时, 请将其替换为您使用的名称."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:42
 msgid ""
 "Avoid using spaces when you choose your **exported_xcode_project_name** as "
 "this can lead to corruption in your XCode project file."
 msgstr ""
-"选择 **exported_xcode_project_name** 时,避免使用空格,因为这可能会导致XCode项"
-"目文件错误."
+"选择 **exported_xcode_project_name** 时, 避免使用空格, 因为这可能会导致XCode"
+"项目文件错误."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:45
 msgid "When the export completes, the output folder should look like this:"
-msgstr "导出完成后,输出文件夹应如下所示:"
+msgstr "导出完成后, 输出文件夹应如下所示:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:49
 msgid ""
@@ -137,15 +137,15 @@ msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
-"上面的方法创建了一个可以为发布而构建的导出项目,但每次在Godot中进行更改时,都必"
-"须重新导出."
+"上面的方法创建了一个可以为发布而构建的导出项目, 但每次在Godot中进行更改时, 都"
+"必须重新导出."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:58
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
-"在开发过程中,您可以通过将Godot项目文件直接链接到您的应用程序,来加快此过程."
+"在开发过程中, 您可以通过将Godot项目文件直接链接到您的应用程序, 来加快此过程."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:61
 msgid "In the following example:"
@@ -166,8 +166,8 @@ msgid ""
 "**godot_project_to_export** must not be the same as "
 "**exported_xcode_project_name** to prevent signing issues in Xcode."
 msgstr ""
-"**godot_project_to_export**和 **exported_xcode_project_name**必须不一样,以免"
-"Xcode出现签名问题."
+"**godot_project_to_export** 和 **exported_xcode_project_name** 必须不一样, 以"
+"免Xcode出现签名问题."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "Steps to link a Godot project folder to Xcode"
@@ -179,7 +179,7 @@ msgstr "从一个导出的iOS项目开始(按照上述步骤)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:73
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
-msgstr "在Finder中,将Godot项目文件夹拖到Xcode文件浏览器中."
+msgstr "在Finder中, 将Godot项目文件夹拖到Xcode文件浏览器中."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:77
 msgid ""
@@ -187,8 +187,8 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
-"3.在对话框中,确保选中 **创建文件夹引用** .这意味着您将能够继续在其当前位置编"
-"辑您的Godot项目."
+"3. 在对话框中, 确保选中 **创建文件夹引用** . 这意味着您将能够继续在其当前位置"
+"编辑您的Godot项目."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:82
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
@@ -196,7 +196,7 @@ msgstr "请参阅Xcode文件浏览器中的 **godot_project_to_export** 文件�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:83
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
-msgstr "从Xcode项目中删除 **exported_xcode_project_name.pck**."
+msgstr "从Xcode项目中删除 **exported_xcode_project_name.pck** ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:87
 msgid ""
@@ -204,8 +204,8 @@ msgid ""
 "named **godot_path** (this is the real key name) with a value "
 "**godot_project_to_export** (this is the name of your project)"
 msgstr ""
-"6.打开 **exported_xcode_project_name-Info.plist**,并添加一个名为 "
-"**godot_path** 的字符串属性(这是真正的密钥名称),其值为 "
+"6. 打开 **exported_xcode_project_name-Info.plist** , 并添加一个名为 "
+"**godot_path** 的字符串属性(这是真正的密钥名称), 其值为 "
 "**godot_project_to_export** (这是项目的名称)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:93
@@ -213,8 +213,8 @@ msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
-"就这样！您现在可以在Godot编辑器中编辑项目；并在想要在设备上运行时,在Xcode中构"
-"建它."
+"就这样！您现在可以在Godot编辑器中编辑项目；并在想要在设备上运行时, 在Xcode中"
+"构建它."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:97
 msgid "Plugins for iOS"
@@ -224,4 +224,4 @@ msgstr "iOS的插件"
 msgid ""
 "Special iOS plugins can be used in Godot. Check out the :ref:"
 "`doc_plugins_for_ios` page."
-msgstr "在Godot中可以使用特殊的iOS插件.查看 :ref:`doc_plugins_for_ios` 页面."
+msgstr "在Godot中可以使用特殊的iOS插件. 查看 :ref:`doc_plugins_for_ios` 页面."

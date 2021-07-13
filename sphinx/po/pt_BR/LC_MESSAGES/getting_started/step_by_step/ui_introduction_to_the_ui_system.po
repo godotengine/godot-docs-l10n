@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid ""
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
 "Para aprender como controlar a interface e conectá-la a outros scripts, "
-"leia: ref:`Crie sua primeira interface de jogo em Godot "
+"leia :ref:`Crie sua primeira interface de jogo em Godot "
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
@@ -271,7 +271,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -279,7 +278,7 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** é como TextureRect, exceto que tem 5 slots de textura: um "
+"**TextureButton** é como TextureRect, exceto por ter 6 slots de textura: um "
 "para cada um dos estados do botão. Na maioria das vezes, você usará as "
 "texturas Normal, Pressed e Hover. Focused é útil se sua interface monitora a "
 "entrada do teclado. O sexto slot de imagem, o Click Mask, permite definir a "
@@ -347,9 +346,9 @@ msgstr ""
 "Para animar a barra, você vai querer olhar para a seção Range. Defina as "
 "propriedades ``Min`` e ``Max`` para definir o intervalo do medidor. Por "
 "exemplo, para representar a vida de um personagem, você vai querer definir "
-"``Min`` para ``0, `` e ``Max`` para a vida máxima do personagem. Altere a "
+"``Min`` para ``0,`` e ``Max`` para a vida máxima do personagem. Altere a "
 "propriedade ``Value`` para atualizar a barra. Se você deixar os valores "
-"``Min`` e ``Max`` para o padrão de ``0`` e ``100, `` e definir a propriedade "
+"``Min`` e ``Max`` para o padrão de ``0`` e ``100,`` e definir a propriedade "
 "``Value`` para ``40``, 40% da textura ``Progress`` aparecerá, e 60% dela "
 "permanecerá oculta."
 
@@ -413,20 +412,20 @@ msgstr ""
 "flexíveis no Godot:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "**Place UI elements precisely with anchors:** Use the **Layout** menu to "
 "place and resize a UI element relative to its parent."
 msgstr ""
-"Do outro lado, você tem o menu de layout. Ele ajuda você a ancorar, "
-"posicionar e redimensionar um elemento de interface do usuário dentro de seu "
-"pai."
+"**Coloque elementos de UI precisamente com âncoras:** Use o menu **Layout** "
+"para posicionar e redimensionar um elemento de UI em relação ao seu pai."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "**Arrange control nodes automatically with containers:** Use container nodes "
 "to automatically scale and place UI elements."
 msgstr ""
+"**Organize nós de controle automaticamente com contêineres:** Use os nós de "
+"contêiner para dimensionar e posicionar automaticamente os elementos da UI."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -585,7 +584,7 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
-"Todo nó de controle possui sinalizadores de tamanho. Eles dizem aos "
+"Todo nó de controle possui Sinalizadores de Tamanho. Eles dizem aos "
 "contêineres como os elementos da interface do usuário devem ser "
 "dimensionados. Se você adicionar o sinalizador \"Fill\" à propriedade "
 "Horizontal ou Vertical, a caixa delimitadora do nó ocupará todo o espaço "
@@ -667,11 +666,8 @@ msgstr ""
 "a maioria dos jogos, um punhado será suficiente:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-#, fuzzy
 msgid "MarginContainer, to add margins around parts of the UI"
-msgstr ""
-"MarginContainer, para adicionar margens em torno da parte da interface do "
-"usuário"
+msgstr "MarginContainer, para adicionar margens em torno da parte da UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "CenterContainer, to center its children in its bounding box"

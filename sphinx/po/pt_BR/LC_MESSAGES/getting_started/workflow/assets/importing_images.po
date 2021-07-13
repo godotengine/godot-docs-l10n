@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
-#, fuzzy
 msgid "Importing images"
-msgstr "Importando Imagens"
+msgstr "Importação de imagens"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-#, fuzzy
 msgid "Supported image formats"
-msgstr "Animação por Sprites"
+msgstr "Formatos de imagem suportados"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
-#, fuzzy
 msgid "Godot can import the following image formats:"
-msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
+msgstr "O Godot pode importar os seguintes formatos de imagem:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:11
 msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - Sem suporte para imagens de 16 bits por pixel. Apenas "
+"imagens de 1 bit, 4 bits, 8 bits, 24 bits, e 32 bits por pixel são "
+"suportadas."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
-#, fuzzy
 msgid ""
 "DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
-"Superfície do DirectDraw (`` .dds``) - Se houver mipmaps na textura, eles "
-"serão carregados diretamente. Isso pode ser usado para obter efeitos usando "
-"mipmaps personalizados."
+"DirectDraw Surface (``.dds``) - Se mipmaps estiverem presentes na textura, "
+"eles serão carregados diretamente. Isso pode ser usado para obter efeitos "
+"usando mipmaps personalizados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:16
-#, fuzzy
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
@@ -58,7 +56,6 @@ msgstr ""
 "panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:18
-#, fuzzy
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
@@ -67,30 +64,26 @@ msgstr ""
 "panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:20
-#, fuzzy
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
-"JPEG (``.jpg``, ``.jpeg```) - Não suporta transparência de acordo com as "
-"limitações do formato."
+"JPEG (``.jpg``, ``.jpeg``) - Não suporta transparência pelas limitações do "
+"formato."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:22
-#, fuzzy
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
-"PNG (``.png```) - A precisão é limitada a 8 bits por canal na importação "
-"(sem imagens HDR)."
+"PNG (``.png``) - A precisão é limitada a 8 bits por canal na importação (sem "
+"imagens HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:24
-#, fuzzy
 msgid "Truevision Targa (``.tga``)"
 msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:25
-#, fuzzy
 msgid ""
 "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
 "github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
@@ -99,32 +92,29 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
-"SVG (``.svg``, ``.svgz``) - SVGs são rasterizados utilizando ``NanoSVG "
+"SVG (``.svg``, ``.svgz``) - SVGs são rasterizados utilizando `NanoSVG "
 "<https://github.com/memononen/nanosvg>`__ ao importá-los. O suporte é "
-"limitado; os vetores complexos podem não renderizar corretamente. Para "
-"vetores complexos, renderizá-los a PNGs usando o Inkscape é muitas vezes uma "
-"solução melhor. Isto pode ser automatizado graças à sua \"interface de linha "
-"de comando\" <https://wiki.inkscape.org/wiki/index.php/"
+"limitado; vetores complexos podem não renderizar corretamente. Para vetores "
+"complexos, renderizá-los paraa PNGs usando o Inkscape é muitas vezes uma "
+"solução melhor. Isto pode ser automatizado graças à sua `interface de linha "
+"de comando <https://wiki.inkscape.org/wiki/index.php/"
 "Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
-#, fuzzy
 msgid "WebP (``.webp``)"
-msgstr "WebP (``.webp```)"
+msgstr "WebP (``.webp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-#, fuzzy
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
-"Se você compilou o editor Godot a partir da fonte com módulos específicos "
+"Se você compilou o editor do Godot a partir da fonte com módulos específicos "
 "desabilitados, alguns formatos podem não estar disponíveis."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
-#, fuzzy
 msgid "Importing textures"
-msgstr "Importando Texturas"
+msgstr "Importação de Texturas"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -152,11 +142,12 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
-"Esta opção faz Godot ficar ciente de quando uma textura (a qual é importada "
-"para 2D por padrão) é usada em 3D. Se isso acontecer, as configurações são "
-"mudadas de modo que as flags da textura são favoráveis à 3D (mipmaps, filtro "
-"e repeat se tornam habilitados e compressão é mudada para VRAM). Textura "
-"também é reimportada automaticamente."
+"Esta opção faz o Godot ficar ciente de quando uma textura (a qual é "
+"importada para 2D por padrão) é usada em 3D. Se isso acontecer, as "
+"configurações são mudadas de modo que os sinalizadores da textura são mais "
+"amigáveis para 3D (mipmaps, filtro e repeat se tornam habilitados e "
+"compressão é mudada para VRAM). A textura também é reimportada "
+"automaticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:55
 msgid "Compression"
@@ -177,19 +168,18 @@ msgid "Compress Mode"
 msgstr "Modo de compactação"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:63
-#, fuzzy
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"Compressão VRAM: Este é o modo de compressão mais comum para recursos 3D. O "
-"arquivo no disco é reduzido e o uso de memória de vídeo também é reduzido "
-"consideravelmente. Para 3D, pode apresentar artefatos indesejados no entanto."
+"**Compressão VRAM:** Este é o modo de compressão mais comum para assets 3D. "
+"O arquivo no disco é reduzido e o uso de memória de vídeo também é reduzido "
+"consideravelmente (geralmente por um fator entre 4 e 6). Este modo deve ser "
+"evitado para 2D, pois exibe artefatos perceptíveis."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:67
-#, fuzzy
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -197,58 +187,56 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"Compactação sem perdas: essa é a compactação mais comum para ativos 2D. Ele "
-"mostra ativos sem qualquer tipo de artefato e a compactação de disco é "
-"decente. Ele vai usar uma quantidade consideravelmente maior de memória de "
-"vídeo do que a VRAM."
+"**Compressão sem perdas:** Esta é a compactação mais comum para assets 2D. "
+"Ela mostra assets sem qualquer tipo de artefato, e a compactação do disco é "
+"decente. No entanto, ela vai usar uma quantidade consideravelmente maior de "
+"memória de vídeo do que a VRAM. Esta também é a configuração recomentada "
+"para pixel art."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
-#, fuzzy
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
-"** Compressão com perdas: ** Esta é uma boa opção para grandes recursos 2D. "
-"Ele possui alguns artefatos, mas menos que a VRAM e o tamanho do arquivo é "
-"várias vezes menor em comparação com Sem Perdas ou Descomprimido. O uso da "
-"memória de vídeo não diminui nesse modo; é o mesmo que com a compactação sem "
-"perdas ou sem compactação."
+"**Compressão com perdas:** Esta é uma boa opção para grandes assets 2D. Ela "
+"possui alguns artefatos, mas menos que a VRAM e o tamanho do arquivo é "
+"várias vezes menor em comparação com Sem Perdas ou Sem Compressão. O uso da "
+"memória de vídeo não diminui nesse modo; é o mesmo que com a Compressão Sem "
+"Serdas ou Sem Compressão."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
-#, fuzzy
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
-"Descompactado: Útil apenas para formatos que não podem ser compactados (como "
-"float bruto)."
+"**Sem Compressão:** Útil apenas para formatos que não podem ser comprimidos "
+"(como imagens flutuantes brutas)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
-#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
-"Nesta tabela, cada uma das quatro opções é descrita junto com suas vantagens "
-"e desvantagens (| boa | = Melhor, | ruim | = Pior):"
+"Nesta tabela, cada uma das quatro opções são descritas junto com suas "
+"vantagens e desvantagens (|good| = melhor, |bad| = pior):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Uncompressed"
-msgstr "Descomprimido"
+msgstr "Sem Compressão"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress Lossless (PNG)"
-msgstr "Comprimir sem perdas (PNG)"
+msgstr "Compressão sem perdas (PNG)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress Lossy (WebP)"
-msgstr "Comprimir com perdas (WebP)"
+msgstr "Compressão com perdas (WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress VRAM"
-msgstr "Comprimir com VRAM"
+msgstr "Compressão com VRAM"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Description"
@@ -278,7 +266,7 @@ msgstr "Tamanho no Disco"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|bad| Large"
-msgstr "|ruim| Ampla"
+msgstr "|bad| Grande"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|regular| Small"
@@ -286,7 +274,7 @@ msgstr "|regular| Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|good| Very Small"
-msgstr "|bom| Muito Pequeno"
+msgstr "|good| Muito Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "Memory Usage"
@@ -294,11 +282,11 @@ msgstr "Uso de Memória"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|good| Small"
-msgstr "|bom| Pequeno"
+msgstr "|good| Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "Performance"
-msgstr "Performance"
+msgstr "Desempenho"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
@@ -308,7 +296,7 @@ msgstr "|regular| Normal"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|good| Fast"
-msgstr "|bom | Rápido"
+msgstr "|good| Rápido"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Quality Loss"
@@ -316,7 +304,7 @@ msgstr "Perda de Qualidade"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|good| None"
-msgstr "|bom| Nenhum"
+msgstr "|good| Nenhum"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|regular| Slight"
@@ -324,7 +312,7 @@ msgstr "|regular| Leve"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|bad| Moderate"
-msgstr "|ruim| Moderado"
+msgstr "|bad| Moderado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Load Time"
@@ -332,7 +320,7 @@ msgstr "Tempo de Carregamento"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|bad| Slow"
-msgstr "|ruim| Lento"
+msgstr "|bad| Lento"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "HDR Mode"
@@ -347,10 +335,10 @@ msgid ""
 "that do not."
 msgstr ""
 "O Godot suporta texturas de alta faixa dinâmica (como .HDR ou .EXR). Esses "
-"são principalmente úteis como céus panorâmicos equirretangulares (ou "
-"[i]skyboxes[/i]) de alta faixa dinâmica (a Internet tem muitos se você "
-"pesquisar por eles), que substituem Cubemaps no Godot 2.x. Os PCs modernos "
-"suportam o formato VRAM BC6H, mas ainda existem muitos que não suportam."
+"são mais úteis como céus panorâmicos equirretangulares de alta faixa "
+"dinâmica (a Internet tem muitos se você pesquisar por eles), que substituem "
+"Cubemaps no Godot 2.x. Os PCs modernos suportam o formato VRAM BC6H, mas "
+"ainda existem muitos que não suportam."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
 msgid ""
@@ -418,7 +406,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Flags"
-msgstr "Bandeiras"
+msgstr "Sinalizadores"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid ""
@@ -430,19 +418,17 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Repeat"
-msgstr "Repetir"
+msgstr "Repetição"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
-#, fuzzy
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
-"Esta configuração é mais utilizada em 3D do que em 2D (por isso geralmente é "
-"desativada em 2D). Ela faz coordenadas UV que ultrapassem intervalo 0,0 - "
-"1,1 fazerem um \"laço\" (loop). Repetição pode opcionalmente ser definida "
-"para o modo espelhado."
+"Esta configuração é mais utilizada em 3D, por isso geralmente é desativada "
+"em 2D. Ela faz coordenadas UV que ultrapassem intervalo 0,0 - 1,1 fazerem um "
+"\"laço\" (loop)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid "Repeating can optionally be set to mirrored mode."
@@ -453,17 +439,16 @@ msgid "Filter"
 msgstr "Filtro"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
-#, fuzzy
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
-"Quando os pixels se tornam maiores que os pixels da tela, essas opções "
-"ativam a interpolação linear para eles. O resultado é uma textura mais suave "
-"(menos parecida com blocos). Essa configuração pode ser comumente usada em "
-"2D e 3D, mas geralmente é desativada ao criar jogos pixel-perfect."
+"Quando os pixels se tornam maiores que os pixels da tela, esta opção ativa a "
+"interpolação linear para eles. O resultado é uma textura mais suave (menos "
+"parecida com blocos). Essa configuração pode ser comumente usada em 2D e 3D, "
+"mas geralmente é desativada ao criar jogos pixel-perfect."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Mipmaps"
@@ -540,7 +525,6 @@ msgid "Process"
 msgstr "Processo"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:176
-#, fuzzy
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""

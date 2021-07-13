@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,8 +147,8 @@ msgid ""
 "The Godot renderer is a little different to what is out there. It's designed "
 "to minimize GPU state changes as much as possible. :ref:`SpatialMaterial "
 "<class_SpatialMaterial>` does a good job at reusing materials that need "
-"similar shaders.  if custom shaders are used, make sure to reuse them as "
-"much as possible. Godot's priorities are:"
+"similar shaders. If custom shaders are used, make sure to reuse them as much "
+"as possible. Godot's priorities are:"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:87
@@ -335,8 +335,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:198
+#, fuzzy
 msgid "Texture compression"
-msgstr ""
+msgstr "Compressione delle texture"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:200
 msgid ""

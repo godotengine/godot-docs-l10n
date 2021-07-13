@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,30 +27,27 @@ msgstr "Анімація підтримується:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "анімація перетворень всіх типів об'єктів"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "анімація перетворень кісток"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Зберегти анімацію"
+msgstr "анімація по ключах форм"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Дублювати анімацію"
+msgstr "анімація світла"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Перейменувати анімацію"
+msgstr "анімація камери"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "Кілька дій для одного об'єкта"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -58,16 +55,21 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"У більшості ігор один об’єкт має кілька анімацій і перемикається між ними. "
+"Цей додаток підтримує експорт декількох дій одночасно в один AnimationPlayer "
+"і полегшує перемикання дій."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Цей робочий процес використовує змішувач nla_tracks. Ось короткий посібник з "
+"використання цієї функції:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Stash active action**"
-msgstr ""
+msgstr "**1. Приховати активні дії**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -75,14 +77,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Нова створена дія - це завжди активна дія, прив’язана до об’єкта. Є кілька "
+"способів розмістити активну дію в треку НЛА, один з них, звичайно, зробити "
+"це в ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Або це можна зробити, приховуючи дію в ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Перевірити стан NLA треків**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -90,25 +95,28 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Трек NLA може бути, ``mute`` або ``unmute``, експортер експортує весь "
+"``mute`` NLA трек як окрему дію, в той час як всі ``unmute`` NLA треки "
+"поєднуються з кожною дією (включаючи дію дії), що експортується."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
-msgstr ""
+msgstr "**3. Експортувати сцену**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "Переконайтеся, що опція ``Export Stashed Actions`` увімкнена."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
+"Потім усі приховані дії, а також активні дії експортуються в AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
-#, fuzzy
 msgid "Constraints"
-msgstr "Константи"
+msgstr "Обмеження"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -117,11 +125,14 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
+"Іноді складна анімація будується з обмеженням об'єкта; звичайним прикладом є "
+"зворотна кінематика. Додаток автоматично перевіряє, чи має об’єкт певні "
+"обмеження; якщо це відбувається, всі обмеження обробляються у дії, а потім "
+"експортуються разом з об'єктом."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
-#, fuzzy
 msgid "Animation Mode"
-msgstr "Анімація"
+msgstr "Режим Анімації"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -130,20 +141,26 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
+"Godot і Blender мають різну структуру для зберігання даних анімації. У Godot "
+"дані анімації зберігаються у вузлі AnimationPlayer, а не в кожному "
+"анімованому вузлі. Для того, щоб виправити цю непослідовність і при цьому "
+"зробити анімацію універсальною, цей додаток має три режими експорту анімації."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**Режим \"Анімація як дії\"**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Ставтесь до всієї анімації як до дій об’єкта, тому в експортованій сцені "
+"кожен об’єкт матиме власний AnimationPlayer і зберігатиме свої дії."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Режим \"Анімація сцени\"**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -151,10 +168,14 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Якщо ви хочете, щоб ваша анімація давала такий самий результат, як "
+"відтворення на часовій шкалі Blender, це те, що ви хочете. У цьому режимі "
+"всі анімації сцени розміщуються лише в одному програвачі AnimationPlayer у "
+"корені сцени."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**Режим \"Анімація як дія зі стисненням\"**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -164,3 +185,8 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"Цей режим має дуже подібну поведінку до режиму \"Анімація як дія\", але він "
+"може генерувати менше AnimationPlayer; об'єкти у відносинах предки-нащадки "
+"мали б спільний доступ до свого AnimationPlayer. Це корисно, коли у вас є "
+"кілька скелетів, і кожен скелет і меш мають дії; тоді один скелет мав би "
+"лише один AnimationPlayer."

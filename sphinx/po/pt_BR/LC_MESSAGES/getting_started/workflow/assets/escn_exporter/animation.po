@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,8 @@ msgid "transform animation of pose bones"
 msgstr "transformar animação de ossos de pose"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Animação por Sprites"
+msgstr "animação de chaves de forma"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "light animation"
@@ -69,7 +68,6 @@ msgstr ""
 "de como utilizar esta funcionalidade:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-#, fuzzy
 msgid "**1. Stash active action**"
 msgstr "**2. Esconder a ação ativa**"
 
@@ -90,7 +88,7 @@ msgstr "Ou pode ser feito juntando a ação em ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr "**2. Verificar o status 'mute' das faixas NLA **"
+msgstr "**2. Verificar o estado mute das faixas NLA**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -104,58 +102,52 @@ msgstr ""
 "ação) sendo exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid "**3. Export the scene**"
-msgstr "**4. Exporte a cena**"
+msgstr "**4. Exportar a cena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr "Certifique-se de que a opção ``Export Stashed Actions`` está ativada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
-#, fuzzy
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
-"Todas as ações ocultas, assim como as ações ativas, são exportadas para um "
-"AnimationPlayer."
+"Em seguida, todas as ações escondidas, bem como a ação ativa, são exportadas "
+"para um AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
-#, fuzzy
 msgid "Constraints"
-msgstr "Constantes"
+msgstr "Restrições"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
-"Às vezes, a animação complicada é construída com restrição de objetos; Um "
+"Às vezes, umaa animação complicada é construída com restrição de objetos; Um "
 "exemplo usual é a cinemática inversa. O complemento verifica automaticamente "
 "se um objeto tem alguma restrição; se isso acontecer, todas as restrições "
 "serão inseridas em todas suas ações e depois exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
-#, fuzzy
 msgid "Animation Mode"
-msgstr "Animação"
+msgstr "Modo de Animação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
-#, fuzzy
 msgid ""
 "Godot and Blender have different structure to store animation data. In Godot "
 "animation data is stored in an AnimationPlayer node, instead of in each "
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
-"Godot e Blender tem estruturas diferentes para armazenar dados de animação. "
+"Godot e Blender têm estruturas diferentes para armazenar dados de animação. "
 "No Godot os dados de animação são armazenados em um nó AnimationPlayer, em "
-"vez de em cada nó animado. Para contornar esse problema e manter a animação "
-"versátil, esses add-on têm três modos de exportar animação."
+"vez de em cada nó animado. Para contornar este problema e manter a animação "
+"versátil, este add-on tem três modos de exportar animação."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
@@ -188,7 +180,6 @@ msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "**Modo 'Animações como Ações com Alongamento'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
-#, fuzzy
 msgid ""
 "This mode has very similar behavior of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "本教程将介绍如何使用官方Godot插件为 *Oculus Quest* 开发
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:12
 msgid "Before starting, there are two things you need to do:"
-msgstr "在开始之前,你有2件事情需要做:"
+msgstr "在开始之前, 你有2件事情需要做:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:14
 msgid ""
@@ -41,7 +41,7 @@ msgid ""
 "`doc_exporting_for_android` page. This leads you through installing the "
 "toolset that Godot needs to export to Android devices."
 msgstr ""
-"首先你需要完成 :ref:`doc_exporting_for_android` 页面上的步骤.这将引导你安装"
+"首先你需要完成 :ref:`doc_exporting_for_android` 页面上的步骤. 这将引导你安装"
 "Godot导出到Android设备所需的工具集."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:18
@@ -50,8 +50,8 @@ msgid ""
 "manually download it from `here <https://github.com/GodotVR/godot-oculus-"
 "mobile-asset>`__."
 msgstr ""
-"接下来你需要Quest插件.你可以从资产库中获得它,或者从 `这里<https://github.com/"
-"GodotVR/godot-oculus-mobile-asset>`__ 手动下载."
+"接下来你需要Quest插件. 你可以从资产库中获得它, 或者从 `这里 <https://github."
+"com/GodotVR/godot-oculus-mobile-asset>`__ 手动下载."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:22
 msgid "Setting Up Godot"
@@ -59,21 +59,21 @@ msgstr "设置Godot"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:24
 msgid "To get started open Godot and create a new project."
-msgstr "要开始,请打开Godot并创建一个新的项目."
+msgstr "要开始, 请打开Godot并创建一个新的项目."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:28
 msgid ""
 "Make sure to choose the ``GLES2`` renderer. Due to the Quest's GPU this "
 "backend is far better suited for the Quest."
-msgstr "确保选择 ``GLES2`` 渲染器,由于Quest的GPU,这个后端更适合Quest."
+msgstr "确保选择 ``GLES2`` 渲染器, 由于Quest的GPU, 这个后端更适合Quest."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:31
 msgid ""
 "Copy the addons folder from the Oculus Mobile asset into your Godot project. "
 "Your project tree should look similar to this:"
 msgstr ""
-"将Oculus Mobile资产中的addons文件夹复制到你的Godot项目中,你的项目树应该类似于"
-"这样:"
+"将Oculus Mobile资产中的addons文件夹复制到你的Godot项目中, 你的项目树应该类似"
+"于这样:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:36
 msgid "Now you can start building the main scene:"
@@ -89,7 +89,7 @@ msgid ""
 "<class_ARVRCamera>` and two :ref:`ARVRController <class_ARVRController>` "
 "nodes."
 msgstr ""
-"然后在原节点上添加三个子节点,一个 :ref:`ARVRCamera <class_ARVRCamera>` 和两"
+"然后在原节点上添加三个子节点, 一个 :ref:`ARVRCamera <class_ARVRCamera>` 和两"
 "个 :ref:`ARVRController <class_ARVRController>` 节点."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:40
@@ -118,36 +118,38 @@ msgid ""
 "controllers."
 msgstr ""
 "最后添加一个 :ref:`MeshInstance <class_MeshInstance>` 作为我们第一个 :ref:"
-"`ARVRController <class_ARVRController>` 的子节点,并创建一个盒子形状,调整盒子"
-"的大小,使每个边都设置为 0.1.现在复制 :ref:`MeshInstance "
+"`ARVRController <class_ARVRController>` 的子节点, 并创建一个盒子形状, 调整盒"
+"子的大小, 使每个边都设置为 0.1. 现在复制 :ref:`MeshInstance "
 "<class_MeshInstance>` 并将其移动到第二个 :ref:`ARVRController "
-"<class_ARVRController>` 节点.这些节点将代表我们的控制器."
+"<class_ARVRController>` 节点. 这些节点将代表我们的控制器."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:46
 msgid "Now add a script to the main node and add the following code:"
-msgstr "现在给主节点添加一个脚本,并添加以下代码:"
+msgstr "现在给主节点添加一个脚本, 并添加以下代码:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
-msgstr "将项目导出到Quest之前,您需要做三件事."
+msgstr "将项目导出到Quest之前, 您需要做三件事."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
 "First go into the project settings and make sure that the main scene is the "
 "scene we run. Godot does not ask you to set this on export."
-msgstr "首先进入项目设置,确保主场景是运行的场景,Godot不要求你在导出时设置这个."
+msgstr ""
+"首先进入项目设置, 确保主场景是运行的场景,Godot不要求你在导出时设置这个."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:84
+#, fuzzy
 msgid ""
-"Then go into the export menu and configure a new Android export. if you "
+"Then go into the export menu and configure a new Android export. If you "
 "still haven't gone through the :ref:`doc_exporting_for_android` page do it "
 "now. If you didn't you'll have some red messages on this screen."
 msgstr ""
-"然后进入导出菜单,配置一个新的Android导出.如果你还没有通过 :ref:"
-"`doc_exporting_for_android` 页面配置,现在就去做.如果没做,会在这个屏幕上看到一"
-"些红色信息."
+"然后进入导出菜单, 配置一个新的Android导出. 如果你还没有通过 :ref:"
+"`doc_exporting_for_android` 页面配置, 现在就去做. 如果没做, 会在这个屏幕上看"
+"到一些红色信息."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:89
 msgid ""
@@ -155,8 +157,8 @@ msgid ""
 "settings. First change the XR Mode to ``Oculus Mobile VR``. Then change the "
 "Degrees of Freedom mode to ``6DOF``."
 msgstr ""
-"如果你这样做了,可以继续前进,并对导出设置进行一些小的修改,首先将XR模式改为 "
-"``Oculus Mobile VR`` .然后将自由度模式改为 ``6DOF`` ."
+"如果你这样做了, 可以继续前进, 并对导出设置进行一些小的修改, 首先将XR模式改为 "
+"``Oculus Mobile VR`` . 然后将自由度模式改为 ``6DOF`` ."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
 msgid "Now save and close the export window."
@@ -172,12 +174,12 @@ msgid ""
 "an Oculus app on it and link it up to your Quest. Start the Oculus app. "
 "Press the settings cogwheel on the bottom right hand side. Select your Quest:"
 msgstr ""
-"最后拿出手机,当你拿到Quest时,需要在手机上安装一个Oculus应用,并将其与Quest链"
-"接,启动Oculus应用,按右下角的设置齿轮,选择你的Quest:"
+"最后拿出手机, 当你拿到Quest时, 需要在手机上安装一个Oculus应用, 并将其与Quest"
+"链接, 启动Oculus应用, 按右下角的设置齿轮, 选择你的Quest:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:107
 msgid "Select \"More Settings\", and select \"Developer Mode\":"
-msgstr "选择\"More Settings\"[更多设置],选择\"Developer Mode\"[开发者模式]:"
+msgstr "选择\"More Settings\"[更多设置], 选择\"Developer Mode\"[开发者模式]:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:111
 msgid "Now turn developer mode on:"
@@ -194,9 +196,9 @@ msgid ""
 "the little Android button that should be visible in the top right hand side "
 "of your Godot window. It should build your game and export it to the Quest."
 msgstr ""
-"用提供的USB线将Quest连接到电脑上.把Quest打开,它可能会给出一些对话框,让PC允许"
-"部署应用程序.现在点击Godot窗口右上方的Android小按钮,应该是可见的.它应该会构建"
-"你的游戏并将其导出到Quest."
+"用提供的USB线将Quest连接到电脑上. 把Quest打开, 它可能会给出一些对话框, 让PC允"
+"许部署应用程序. 现在点击Godot窗口右上方的Android小按钮, 应该是可见的. 它应该"
+"会构建你的游戏并将其导出到Quest."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:123
 msgid ""
@@ -205,9 +207,9 @@ msgid ""
 "quest that contains a lot of scenes to get help you on your way including "
 "really nice controller meshes."
 msgstr ""
-"上面的内容只是让你的项目在Quest上运行的最低限度,并不会很令人兴奋.Holger "
-"Dammertz为Quest制作了一个很棒的工具包,其中包含了很多场景,可以帮助你走上成功之"
-"路,包括非常漂亮的控制器网格."
+"上面的内容只是让你的项目在Quest上运行的最低限度, 并不会很令人兴奋.Holger "
+"Dammertz为Quest制作了一个很棒的工具包, 其中包含了很多场景, 可以帮助你走上成功"
+"之路, 包括非常漂亮的控制器网格."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:128
 msgid ""
@@ -222,5 +224,5 @@ msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."
 msgstr ""
-"如果你想帮助改进这个插件,请加入我们的行列 `here <https://github.com/GodotVR/"
+"如果你想帮助改进这个插件, 请加入我们的行列 `here <https://github.com/GodotVR/"
 "godot_oculus_mobile>`__ ."

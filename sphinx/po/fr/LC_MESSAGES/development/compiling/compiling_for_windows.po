@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,7 +236,6 @@ msgid "Selecting a compiler"
 msgstr "Sélection d'un compilateur"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:109
-#, fuzzy
 msgid ""
 "SCons will automatically find and use an existing Visual Studio "
 "installation. If you do not have Visual Studio installed, it will attempt to "
@@ -245,11 +244,12 @@ msgid ""
 "builds cannot be performed from the MSYS2 or MinGW shells. Use either ``cmd."
 "exe`` or PowerShell instead."
 msgstr ""
-"SCons trouvera et utilisera automatiquement une installation Visual Studio "
-"existante. Si vous n'avez pas Visual Studio d'installé, il essaiera "
-"d'utiliser MinGW à la place. Si vous avez déjà Visual Studio d'installé et "
-"que vous voulez utiliser MinGW, passez ``use_mingw=yes`` à la ligne de "
-"commande SCons."
+"SCons trouvera et utilisera automatiquement une installation existante de "
+"Visual Studio. Si vous n'avez pas Visual Studio installé, il essaiera "
+"d'utiliser MinGW à la place. Si vous avez déjà Visual Studio installé et que "
+"vous voulez utiliser MinGW, passez ``use_mingw=yes`` à la ligne de commande "
+"de SCons. Notez que les compilations MSVC ne peuvent pas être effectuées à "
+"partir des shells MSYS2 ou MinGW. Utilisez plutôt ``cmd.exe`` ou PowerShell."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:116
 msgid ""
@@ -334,7 +334,6 @@ msgstr ""
 "SCons ``target=release_debug``."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:153
-#, fuzzy
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
@@ -344,7 +343,7 @@ msgstr ""
 "Si vous compilez Godot avec MinGW, vous pouvez rendre le binaire encore plus "
 "petit et plus rapide en ajoutant l'option SCons ``use_lto=yes``. "
 "L'optimisation du temps de connexion étant un processus gourmand en mémoire, "
-"cela nécessitera environ 3 Go de RAM disponible lors de la compilation."
+"cela nécessitera environ 7 Go de RAM disponible lors de la compilation."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:158
 msgid ""

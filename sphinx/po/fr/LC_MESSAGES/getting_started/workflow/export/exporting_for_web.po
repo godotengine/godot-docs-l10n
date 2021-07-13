@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,6 @@ msgstr ""
 "comme les erreurs JavaScript, moteur et WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
-#, fuzzy
 msgid ""
 "`There are significant bugs when running HTML5 projects on iOS <https://"
 "github.com/godotengine/godot/issues?q=is:issue+is:open+label:platform:"
@@ -52,10 +51,11 @@ msgid ""
 "also result in better performance."
 msgstr ""
 "`Il y a des bogues importants lors de l'exécution de projets HTML5 sur iOS "
-"<https://github.com/godotengine/godot/issues/26554>`__ (quel que soit le "
-"navigateur). Nous recommandons d'utiliser la :ref:`fonctionnalité "
-"d'exportation native de iOS <doc_exporting_for_ios>` à la place, car elle "
-"permet également d'obtenir de meilleures performances."
+"<https://github.com/godotengine/godot/issues?q=is:issue+is:open+label:"
+"platform:html5+ios>`__ (quel que soit le navigateur). Nous recommandons "
+"d'utiliser la :ref:`fonctionnalité d'exportation native de iOS "
+"<doc_exporting_for_ios>` à la place, car elle permet également d'obtenir de "
+"meilleures performances."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
 msgid "WebGL 2"
@@ -118,12 +118,16 @@ msgid ""
 "You can choose the **Export Type** to select which features will be "
 "available:"
 msgstr ""
+"Vous pouvez choisir le **Type d'exportation** pour sélectionner les "
+"fonctionnalités qui seront disponibles :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
 "*Regular*: is the most compatible across browsers, will not support threads, "
 "nor GDNative."
 msgstr ""
+"*Regular* : est le plus compatible avec tous les navigateurs, ne supporte "
+"pas les threads, ni GDNative."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid ""
@@ -131,12 +135,17 @@ msgid ""
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
 "SharedArrayBuffer>`__"
 msgstr ""
+"*Threads* : le navigateur devra prendre en charge `SharedArrayBuffer "
+"<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/"
+"Global_Objects/SharedArrayBuffer>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
 msgid ""
 "*GDNative*: enables GDNative support but makes the binary bigger and slower "
 "to load."
 msgstr ""
+"*GDNative* : active le support GDNative mais rend le binaire plus gros et "
+"plus lent à charger."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:51
 msgid ""
@@ -145,6 +154,10 @@ msgid ""
 "(enabling both **For Desktop** and **For Mobile** will result in a bigger, "
 "but more compatible export)."
 msgstr ""
+"Si vous prévoyez d'utiliser :ref:`Compression VRAM <doc_import_images>`, "
+"assurez-vous que **Vram Texture Compression** est activée pour les "
+"plateformes ciblées (activer à la fois **For Desktop** et **For Mobile** "
+"entraînera une exportation plus grosse, mais plus compatible)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
 msgid ""
@@ -166,7 +179,6 @@ msgstr ""
 "tierces, d'inclure du CSS ou d'exécuter du code JavaScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:63
-#, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the generated HTML file specifically for the "
@@ -176,16 +188,18 @@ msgid ""
 msgstr ""
 "Chaque projet doit générer son propre fichier HTML. Lors de l'exportation, "
 "plusieurs caractères génériques de texte sont remplacés dans le fichier HTML "
-"**généré** spécifiquement pour les options d'exportation données. Toute "
-"modification directe du fichier HTML **généré** sera perdue dans les "
-"exportations futures. Pour personnaliser le fichier généré, voir :ref:"
-"`doc_customizing_html5_shell`."
+"généré spécifiquement pour les options d'exportation données. Toute "
+"modification directe du fichier HTML généré sera perdue dans les "
+"exportations futures. Pour personnaliser le fichier généré, utilisez "
+"l'option **Custom HTML shell**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 msgid ""
 "**Export types** other then *Regular* are not yet supported by the C# "
 "version."
 msgstr ""
+"**Export types** autres que *Regular* ne sont pas encore pris en charge par "
+"la version C#."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Limitations"
@@ -211,6 +225,12 @@ msgid ""
 "the web page is served via a secure HTTPS connection (localhost is usually "
 "exempt from such requirement)."
 msgstr ""
+"Les fournisseurs de navigateurs rendent de plus en plus de fonctionnalités "
+"disponibles uniquement dans des `contextes sécurisés <https://developer."
+"mozilla.org/en-US/docs/Web/Security/Secure_Contexts>`_, ce qui signifie que "
+"ces fonctionnalités ne sont disponibles que si la page web est servie via "
+"une connexion HTTPS sécurisée (localhost est généralement exempt de cette "
+"exigence)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
@@ -261,6 +281,9 @@ msgid ""
 "only available if the appropriate **Export Type** is set and support for it "
 "across browsers is still limited."
 msgstr ""
+"Comme mentionné :ref:`au-dessus de <doc_javascript_export_options>` le multi-"
+"threading n'est disponible que si le **Export Type** approprié est défini et "
+"sa prise en charge par les navigateurs est encore limitée."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid ""
@@ -269,6 +292,10 @@ msgid ""
 "`cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/"
 "Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 msgstr ""
+"Nécessite un :ref:`secure context <doc_javascript_secure_contexts>`. Les "
+"navigateurs commencent également à exiger que la page web soit servie avec "
+"des `cross-origin isolation headers spécifique <https://developer.mozilla."
+"org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid "GDNative"
@@ -279,12 +306,17 @@ msgid ""
 "As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only "
 "available if the appropriate **Export Type** is set."
 msgstr ""
+"Comme mentionné :ref:`au-dessus <doc_javascript_export_options>` GDNative "
+"n'est disponible que si le **Export Type** approprié est défini."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "The export will also copy the required GDNative ``.wasm`` files to the "
 "output folder (and must be uploaded to your server along with your game)."
 msgstr ""
+"L'exportation copiera également les fichiers GDNative ``.wasm`` nécessaires "
+"dans le dossier de sortie (et doivent être téléchargés sur votre serveur "
+"avec votre jeu)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Full screen and mouse capture"
@@ -346,6 +378,8 @@ msgid ""
 "Access to microphone requires a :ref:`secure context "
 "<doc_javascript_secure_contexts>`."
 msgstr ""
+"L'accès au microphone nécessite un:ref:`secure context "
+"<doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid "Networking"
@@ -355,6 +389,8 @@ msgstr "Réseau"
 msgid ""
 "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
+"La mise en réseau de bas niveau n'est pas mise en œuvre en raison de "
+"l'absence de support dans les navigateurs."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -362,9 +398,11 @@ msgid ""
 "requests <doc_http_request_class>`, :ref:`WebSocket (client) "
 "<doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are supported."
 msgstr ""
+"Actuellement, seuls :ref:`HTTP client <doc_http_client_class>`, :ref:`HTTP "
+"requests <doc_http_request_class>`, :ref:`WebSocket (client) "
+"<doc_websocket>` et :ref:`WebRTC <doc_webrtc>` sont supportés."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
-#, fuzzy
 msgid "The HTTP classes also have several restrictions on the HTML5 platform:"
 msgstr "Les classes HTTP ont plusieurs restrictions sur la plate-forme HTML5 :"
 
@@ -401,7 +439,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
 msgid "Clipboard"
-msgstr ""
+msgstr "Presse-papiers"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -610,11 +648,12 @@ msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Toute autre valeur JavaScript est retournée comme ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:278
+#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
 "platforms other than HTML5, calling ``JavaScript.eval`` will also return "
-"``null``.  The availability of the singleton can be checked with the "
+"``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 "Les modèles d'exportation HTML5 peuvent être :ref:`compilé "

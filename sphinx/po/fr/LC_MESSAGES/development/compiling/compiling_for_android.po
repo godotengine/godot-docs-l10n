@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,11 +75,8 @@ msgstr ""
 "outils en ligne de commande sont suffisants)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:29
-#, fuzzy
 msgid "Required SDK components will be automatically installed."
-msgstr ""
-"Les composants SDK requis seront automatiquement installés par Gradle (sauf "
-"le NDK)."
+msgstr "Les composants SDK requis seront automatiquement installés."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:30
 msgid ""
@@ -144,7 +141,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:66
-#, fuzzy
 msgid ""
 "To set the environment variable on Windows, press :kbd:`Windows + R`, type "
 "\"control system\", then click on **Advanced system settings** in the left "
@@ -156,16 +152,14 @@ msgstr ""
 "variables** dans la fenêtre qui apparaît."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:70
-#, fuzzy
 msgid ""
 "To set the environment variable on Linux or macOS, use ``export "
 "ANDROID_SDK_ROOT=/path/to/android-sdk`` where ``/path/to/android-sdk`` "
 "points to the root of the SDK directories."
 msgstr ""
-"Pour définir ces variables d'environnement sous Linux ou macOS, utilisez "
-"``export ANDROID_HOME=/path/to/android-sdk`` et ``export ANDROID_NDK_ROOT=/"
-"path/to/android-ndk`` où ``/path/to/android-sdk`` et ``/path/to/android-"
-"ndk`` pointent vers la racine des répertoires SDK et NDK."
+"Pour définir la variable d'environnement sous Linux ou macOS, utilisez "
+"``export ANDROID_SDK_ROOT=/path/to/android-sdk`` où ``/path/to/android-sdk`` "
+"pointe vers la racine des répertoires du SDK."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:75
 msgid "Building the export templates"
@@ -348,18 +342,17 @@ msgid "Platform doesn't appear in SCons"
 msgstr "La plate-forme n'apparaît pas dans SCons"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:202
-#, fuzzy
 msgid ""
 "Double-check that you've set the ``ANDROID_SDK_ROOT`` environment variable. "
 "This is required for the platform to appear in SCons' list of detected "
 "platforms. See :ref:`Setting up the buildsystem "
 "<doc_android_setting_up_the_buildsystem>` for more information."
 msgstr ""
-"Vérifiez que vous avez bien défini les variables d'environnement "
-"\"ANDROID_HOME\" et \"ANDROID_NDK_ROOT\". Ceci est nécessaire pour que la "
-"plate-forme apparaisse dans la liste des plates-formes détectées par SCons. "
-"Voir :ref:`Configuration du système de construction "
-"<doc_android_setting_up_the_buildsystem>` pour plus d'informations."
+"Vérifiez que vous avez défini la variable d'environnement "
+"``ANDROID_SDK_ROOT``. Ceci est nécessaire pour que la plateforme apparaisse "
+"dans la liste des plateformes détectées de SCons. Voir :ref:`Configurer le "
+"système de construction <doc_android_setting_up_the_buildsystem>` pour plus "
+"d'informations."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:209
 msgid "Application not installed"

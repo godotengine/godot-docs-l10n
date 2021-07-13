@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,8 +176,8 @@ msgid "Search Help"
 msgstr "Cerca aiuto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
-msgid ":kbd:`Shift + F1`"
-msgstr ":kbd:`Shift + F1`"
+msgid ":kbd:`F1`"
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
@@ -253,7 +253,7 @@ msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr "Apri scena"
+msgstr "Apri una scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -269,7 +269,7 @@ msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr "Chiudi scena"
+msgstr "Chiudi la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -303,7 +303,7 @@ msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr "Salva scena"
+msgstr "Salva la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -449,7 +449,7 @@ msgstr "``editor/file_quit``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr "Esci e torna alla lista progetti"
+msgstr "Esci e torna alla lista dei progetti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -464,6 +464,7 @@ msgid "``editor/quit_to_project_list``"
 msgstr "``editor/quit_to_project_list``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
+#, fuzzy
 msgid "Take Screenshot"
 msgstr "Acquisisci una schermata"
 
@@ -481,7 +482,7 @@ msgstr "``editor/take_screenshot``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr "Abilita/Disabilita modalità a schermo intero"
+msgstr "Commuta la modalità a schermo intero"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -548,7 +549,7 @@ msgstr "``editor/stop``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr "Esegui scena"
+msgstr "Esegui la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -565,7 +566,7 @@ msgstr "``editor/play_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr "Avvia scena personalizzata"
+msgstr "Avvia una scena personalizzata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -583,7 +584,7 @@ msgstr "``editor/play_custom_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr "Espandi Pannello Inferiore"
+msgstr "Espandi il pannello inferiore"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -740,8 +741,9 @@ msgid "``canvas_item_editor/ruler_mode``"
 msgstr "``canvas_item_editor/ruler_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
+#, fuzzy
 msgid "Use Smart Snap"
-msgstr "Usa lo Snap intelligente"
+msgstr "Usa lo scatto intelligente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -752,8 +754,9 @@ msgid "``canvas_item_editor/use_smart_snap``"
 msgstr "``canvas_item_editor/use_smart_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
+#, fuzzy
 msgid "Use Grid Snap"
-msgstr "Usa Griglia Magnetica"
+msgstr "Usa la griglia magnetica"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -932,8 +935,9 @@ msgid "3D / Spatial Editor"
 msgstr "Editor 3D / Spatial"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
+#, fuzzy
 msgid "Toggle Freelook"
-msgstr "Abilita/Disabilita Vista libera"
+msgstr "Commuta la vista libera"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -1050,16 +1054,18 @@ msgid "``spatial_editor/local_coords``"
 msgstr "``spatial_editor/local_coords``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
+#, fuzzy
 msgid "Use Snap"
-msgstr "Usa Snap"
+msgstr "Scatta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
 msgstr "``spatial_editor/snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
+#, fuzzy
 msgid "Snap Object to Floor"
-msgstr "Posa l'oggetto sul suolo"
+msgstr "Scatta l'oggetto sul suolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -1575,7 +1581,7 @@ msgstr "``script_text_editor/delete_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr "Attiva/Disattiva Commento"
+msgstr "Commuta i commenti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -1752,7 +1758,7 @@ msgstr "``script_text_editor/auto_indent``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr "Abilita/Disabilita i segnalibri"
+msgstr "Commuta i segnalibri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -1817,7 +1823,7 @@ msgstr "``script_text_editor/goto_line``"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr "Attiva/Disattiva Punto D'Interruzione"
+msgstr "Commuta la riga corrente come punto d'interruzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -2216,7 +2222,7 @@ msgstr "Debugger"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr "Passo dentro all'istruzione"
+msgstr "Fai un passo all'interno"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -2228,7 +2234,7 @@ msgstr "``debugger/step_into``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr "Passo successivo"
+msgstr "Fai un passo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -2304,7 +2310,7 @@ msgstr "``file_dialog/toggle_hidden_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr "Commuta preferito"
+msgstr "Commuta lo stato di preferito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -2401,9 +2407,8 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr "``file_dialog/move_favorite_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
-#, fuzzy
 msgid "FileSystem Dock"
-msgstr "Riquadro del FileSystem"
+msgstr "Pannello del file system"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"

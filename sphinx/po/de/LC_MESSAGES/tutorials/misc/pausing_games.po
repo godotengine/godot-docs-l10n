@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,9 +108,10 @@ msgstr ""
 msgid "You can achieve the same result in code:"
 msgstr "Sie können das gleiche Ergebnis im Code erzielen:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:62
+#: ../../docs/tutorials/misc/pausing_games.rst:69
+#, fuzzy
 msgid ""
-"By default all nodes have this property in the \"Inherit\" state. This "
+"By default, all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
 "property is set on the parent node. If the parent is set to \"Inherit\" , "
 "then the grandparent will be checked and so on. Ultimately, if a state can't "
@@ -126,11 +127,11 @@ msgstr ""
 "der Pausenstatus in Szenenbaum verwendet. Dies bedeutet, wenn das Spiel "
 "angehalten wird, wird standardmäßig jeder Node angehalten."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:70
+#: ../../docs/tutorials/misc/pausing_games.rst:77
 msgid "So the three possible states for a node are:"
 msgstr "Die drei möglichen Zustände für einen Node sind also:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:72
+#: ../../docs/tutorials/misc/pausing_games.rst:79
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
@@ -138,7 +139,7 @@ msgstr ""
 "**Erben**: Prozess abhängig vom Status des Elternteils, Großelternteils usw. "
 "Der erste Elternteil, der einen Nicht-Vererbungsstatus hat."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:74
+#: ../../docs/tutorials/misc/pausing_games.rst:81
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -147,7 +148,7 @@ msgstr ""
 "Vererbungsmodus). Wenn dieser Node angehalten wird, wird er nicht "
 "verarbeitet."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:76
+#: ../../docs/tutorials/misc/pausing_games.rst:83
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -156,11 +157,11 @@ msgstr ""
 "Vererbungsmodus). Egal ob angehalten oder nicht, wird dieser Node "
 "verarbeitet."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:80
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
 msgstr "Beispiel"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:89
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -169,7 +170,7 @@ msgstr ""
 "darin enthaltenen Steuerelementen. Stellen Sie den Pausenmodus auf "
 "\"Verarbeiten\" und blenden Sie es dann aus:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:87
+#: ../../docs/tutorials/misc/pausing_games.rst:94
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -179,7 +180,7 @@ msgstr ""
 "Kinder und Enkelkinder diesen Status. Auf diese Weise funktioniert dieser "
 "Zweig des Szenenbaums nach einer Pause weiter."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:91
+#: ../../docs/tutorials/misc/pausing_games.rst:98
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
@@ -188,12 +189,12 @@ msgstr ""
 "welche Taste), aktivieren Sie die Pause und zeigen Sie den Pause-Bildschirm "
 "an."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:109
+#: ../../docs/tutorials/misc/pausing_games.rst:116
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr ""
 "Gehen Sie beim Schließen des Pausenbildschirms wie folgt vor, um die Pause "
 "zu entfernen:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:127
+#: ../../docs/tutorials/misc/pausing_games.rst:134
 msgid "And that should be all!"
 msgstr "Und das sollte alles sein!"

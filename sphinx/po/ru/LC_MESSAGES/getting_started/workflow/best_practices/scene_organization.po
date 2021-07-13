@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,9 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
-"Чтобы исправить эти проблемы, необходимо создать экземпляры подсцены, не "
-"требуя подробностей об их среде. Нужно быть уверенным в том, что подсцена "
-"создаст сама себя, не придавая значения тому, как её использовать."
+"Чтобы исправить эти проблемы, необходимо создать экземпляры под-сцены, не "
+"требуя подробностей об их окружении. Нужно быть уверенным в том, что под-"
+"сцена создаст сама себя, не придавая значения тому, как её использовать."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -107,7 +107,6 @@ msgstr ""
 "всё, что им нужно, в пределах самих себя."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:42
-#, fuzzy
 msgid ""
 "If a scene must interact with an external context, experienced developers "
 "recommend the use of `Dependency Injection <https://en.wikipedia.org/wiki/"
@@ -116,7 +115,7 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
-"Если сцена должна взаимодействовать с внешним содержанием, опытные "
+"Если сцена должна взаимодействовать с внешним контекстом, опытные "
 "разработчики рекомендуют использовать `Внедрение Зависимости <https://ru."
 "wikipedia.org/wiki/%D0%92%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_"
 "%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8>`_. Эта "
@@ -126,13 +125,12 @@ msgstr ""
 "и неожиданное поведение."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:49
-#, fuzzy
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
 msgstr ""
-"Чтобы это сделать, вам стоит раскрыть данные и затем положиться на "
-"родительскую связь чтобы все это инициализировать:"
+"Для этого необходимо предоставить данные, а затем положиться на родительскую "
+"связь чтобы все это инициализировать:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
 #, fuzzy
@@ -172,28 +170,26 @@ msgid "Initialize a NodePath."
 msgstr "Инициализируйте NodePath (\"Путь узла\")."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
-#, fuzzy
 msgid ""
 "These options hide the points of access from the child node. This in turn "
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
-"Эти опции прячут точки доступа от узла-ребенка. Этот ход оставляет ребенка "
-"**слабо связанным** со своим окружением. Вы можете использовать это в другом "
-"контексте без дополнительных изменений в его API."
+"Эти опции прячут точки доступа от дочернего узла. Этот ход оставляет "
+"дочерний элемент **слабо связанным** со своим окружением. Можно использовать "
+"это в другом контексте без дополнительных изменений в его API."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:156
-#, fuzzy
 msgid ""
 "Although the examples above illustrate parent-child relationships, the same "
 "principles apply towards all object relations. Nodes which are siblings "
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
-"Хотя примеры выше иллюстрируют отношения родитель-ребенок, идентичные "
-"принципы применимы ко всем связям объектов. Узлы которые являются братьями и "
-"сестрами должны знать свои иерархии только когда предок посредничает в их "
-"коммуникациях и ссылках."
+"Хотя примеры выше иллюстрируют отношения родительский элемент-дочерний "
+"элемент, идентичные принципы применимы ко всем связям объектов. Узлы которые "
+"являются соседними должны знать свои иерархии только когда предок "
+"посредничает в их коммуникациях и ссылках."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:203
 msgid ""
@@ -319,11 +315,12 @@ msgid "Choosing a node tree structure"
 msgstr "Структура нода"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:254
+#, fuzzy
 msgid ""
 "So, a developer starts work on a game only to stop at the vast possibilities "
 "before them. They might know what they want to do, what systems they want to "
 "have, but *where* to put them all? Well, how one goes about making their "
-"game is always up to them. One can construct node trees in a myriad of ways. "
+"game is always up to them. One can construct node trees in countless ways. "
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
@@ -444,10 +441,11 @@ msgstr ""
 "сценами."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
+#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
-"on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
+"on the reasons, please see the :ref:`Autoloads versus regular nodes "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
 "Если у вас есть системы, которые изменяют данные других систем, следует "

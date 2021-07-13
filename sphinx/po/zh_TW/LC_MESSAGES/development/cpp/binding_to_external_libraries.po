@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,11 +77,12 @@ msgid ""
 msgstr "接著，我們需要建立 ``SCsub`` 檔案，這樣一來建置系統才能編譯此模組："
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:121
+#, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
-"library files.  See the library's official documentation for specific "
-"instructions on how to do this for your operation system.  We've included "
-"the installation commands for Linux below, for reference."
+"library files. See the library's official documentation for specific "
+"instructions on how to do this for your operation system. We've included the "
+"installation commands for Linux below, for reference."
 msgstr ""
 "要取得 .a 函式庫檔案，則需要在機器上安裝外部函式庫。請參考該函式庫的官方說明"
 "文件以瞭解如何在作業系統上安裝的說明。作為參考，我們在此包含了於 Linux 上安裝"
@@ -100,10 +101,11 @@ msgstr ""
 "的，有些檔案對於 Godot 來說可能會有點問題。請務必檢查授權條款與服務條款。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:137
+#, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
-"module code self-contained.  The festival and speech_tools libraries can be "
+"module code self-contained. The festival and speech_tools libraries can be "
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
@@ -121,10 +123,11 @@ msgstr ""
 "料夾內) 加為子模組 (Submodule) 來將這些函式庫連結過來，如下所示："
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:156
+#, fuzzy
 msgid ""
-"Please note that Git submodules are not used in the Godot repository.  If "
-"you are developing a module to be merged into the main Godot repository, you "
-"should not use submodules.  If your module doesn't get merged in, you can "
+"Please note that Git submodules are not used in the Godot repository. If you "
+"are developing a module to be merged into the main Godot repository, you "
+"should not use submodules. If your module doesn't get merged in, you can "
 "always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 "請注意，Godot 儲存庫中未使用到 Git 子模組。若你正在開發即將合併進 Godot 主儲"
@@ -147,18 +150,18 @@ msgstr ""
 "若要為模組新增自定編譯器旗標，則需要先複製 ``env`` 變數，以免修改到整個 "
 "Godot 建置用的旗標 (進而導致發生錯誤)。下列為使用自定旗標的 ``SCsub`` 範例："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:196
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 msgid "The final module should look like this:"
 msgstr "最終的模組應該長這樣："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:214
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr "使用模組"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr "現在，可以在任何腳本內使用剛才建立的模組了："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:225
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "說出文字時，輸出應未 ``is_spoken: True`` 。"

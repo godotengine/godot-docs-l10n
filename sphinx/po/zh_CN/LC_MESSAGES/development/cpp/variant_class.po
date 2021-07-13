@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,9 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
-"Variant 是 Godot 中最重要的数据类型,也是引擎中最重要的类.Variant仅占用20个字"
-"节,并且几乎可以在其中存储任何引擎数据类型.Variant 很少用于长时间保存信息,而主"
-"要用于通信、编辑、序列化和移动数据."
+"Variant 是 Godot 中最重要的数据类型, 也是引擎中最重要的类.Variant仅占用20个字"
+"节, 并且几乎可以在其中存储任何引擎数据类型.Variant 很少用于长时间保存信息, 而"
+"主要用于通信, 编辑, 序列化和移动数据."
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
-msgstr "被散列,因此可以快速将其与其他Variant对象进行比较"
+msgstr "被散列, 因此可以快速将其与其他Variant对象进行比较"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
@@ -72,20 +72,20 @@ msgstr "用于推迟调用或在线程之间交换数据."
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
-msgstr "被序列化为二进制并存储到磁盘,或通过网络传输."
+msgstr "被序列化为二进制并存储到磁盘, 或通过网络传输."
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
-msgstr "被序列化为文本,并将其用于打印值和可编辑的设置."
+msgstr "被序列化为文本, 并将其用于打印值和可编辑的设置."
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
-msgstr "用作导出的属性,因此编辑器可以对其进行普通地编辑."
+msgstr "用作导出的属性, 因此编辑器可以对其进行普通地编辑."
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr "用于字典、数组、解析器等."
+msgstr "用于字典, 数组, 解析器等."
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -93,8 +93,8 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
-"基本上,由于有了Variant类,编写Godot本身就容易得多,因为它可以轻松完成C++不常见"
-"的高度动态的结构.今天就成为Variant的朋友吧."
+"基本上, 由于有了Variant类, 编写Godot本身就容易得多, 因为它可以轻松完成C++不常"
+"见的高度动态的结构. 今天就成为Variant的朋友吧."
 
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
@@ -102,17 +102,16 @@ msgid "References:"
 msgstr "参考:"
 
 #: ../../docs/development/cpp/variant_class.rst:40
-#, fuzzy
 msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
 "h>`__"
 msgstr ""
-"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
-"variant.h>`__"
+"`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
+"h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr "容器:字典(Dictionary)和数组(Array)"
+msgstr "容器: 字典(Dictionary)和数组(Array)"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -121,17 +120,17 @@ msgid ""
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
 msgstr ""
-"他们都是使用 Variant 实现的.字典可以将用作键的任何数据类型与任何其他数据类型"
-"进行匹配.数组仅包含Variant数组.当然,Variant还可以在内部容纳一个Dictionary和一"
-"个Array,从而使其更加灵活."
+"他们都是使用 Variant 实现的. 字典可以将用作键的任何数据类型与任何其他数据类型"
+"进行匹配. 数组仅包含Variant数组. 当然,Variant还可以在内部容纳一个Dictionary和"
+"一个Array, 从而使其更加灵活."
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
 msgstr ""
-"对容器的修改将修改对该容器的所有引用.如果需要多线程访问,则应创建一个互斥锁以"
-"将其锁定."
+"对容器的修改将修改对该容器的所有引用. 如果需要多线程访问, 则应创建一个互斥锁"
+"以将其锁定."
 
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
@@ -139,18 +138,15 @@ msgid ""
 msgstr "Godot 3.0 删除了对容器的写时拷贝(:abbr:`COW(Copy-on-write)`)模式支持."
 
 #: ../../docs/development/cpp/variant_class.rst:59
-#, fuzzy
 msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "dictionary.h>`__"
 msgstr ""
-"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
-#, fuzzy
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
 msgstr ""
-"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
-"h>`__"
+"`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"

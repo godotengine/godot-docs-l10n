@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,10 +30,10 @@ msgid ""
 "optionally write vertex, fragment, and light processor functions to affect "
 "how objects are drawn."
 msgstr ""
-"空间着色器用于为三维对象着色.它们是Godot提供的最复杂的着色器类型.空间着色器是"
-"高度可配置的,具有不同的渲染模式和不同的渲染选项(例如:次表面散射、透射、环境遮"
-"挡、边缘照明等).用户可以选择编辑顶点、片段、和光照处理器功能,以影响如何绘制对"
-"象."
+"空间着色器用于为三维对象着色. 它们是Godot提供的最复杂的着色器类型. 空间着色器"
+"是高度可配置的, 具有不同的渲染模式和不同的渲染选项(例如: 次表面散射, 透射, 环"
+"境遮挡, 边缘照明等). 用户可以选择编辑顶点, 片段, 和光照处理器功能, 以影响如何"
+"绘制对象."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:12
 msgid "Render modes"
@@ -57,7 +57,7 @@ msgstr "**blend_mix**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
 msgid "Mix blend mode (alpha is transparency), default."
-msgstr "混合混合模式(alpha是透明度),默认."
+msgstr "混合混合模式(alpha是透明度), 默认."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
 msgid "**blend_add**"
@@ -241,7 +241,7 @@ msgstr "**skip_vertex_transform**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
 msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
-msgstr "VERTEX/NORMAL/等.需要在顶点函数中手动进行转换."
+msgstr "VERTEX/NORMAL/等. 需要在顶点函数中手动进行转换."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
 msgid "**world_vertex_coords**"
@@ -249,7 +249,7 @@ msgstr "**world_vertex_coords**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
 msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
-msgstr "VERTEX/NORMAL/等.是以世界坐标而不是局部坐标修改的."
+msgstr "VERTEX/NORMAL/等. 是以世界坐标而不是局部坐标修改的."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
 msgid "**ensure_correct_normals**"
@@ -293,8 +293,8 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
-"光照会改变alpha值,阴影部分是不透明的,而没有阴影的地方是透明的.对于AR中将阴影"
-"堆叠到一个照相机反馈中很有用."
+"光照会改变alpha值, 阴影部分是不透明的, 而没有阴影的地方是透明的. 对于AR中将阴"
+"影堆叠到一个照相机反馈中很有用."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
 msgid "Built-ins"
@@ -307,9 +307,9 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
-"标记为 \"in\" 的值是只读的.标记为 \"out\" 的值是可以选择写入的,不一定包含合理"
-"的值.标记为 \"inout\" 的值提供一个合理的默认值,并且可以选择写入.采样器不是写"
-"入的对象,它们没有被标记."
+"标记为 \"in\" 的值是只读的. 标记为 \"out\" 的值是可以选择写入的, 不一定包含合"
+"理的值. 标记为 \"inout\" 的值提供一个合理的默认值, 并且可以选择写入. 采样器不"
+"是写入的对象, 它们没有被标记."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:89
 msgid "Global built-ins"
@@ -317,7 +317,7 @@ msgstr "全局内置"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr "全局内置的功能随处可见,包括自定义功能."
+msgstr "全局内置的功能随处可见, 包括自定义功能."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
@@ -333,7 +333,7 @@ msgstr "in float **TIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:96
 msgid "Global time, in seconds."
-msgstr "全球时间,以秒为单位."
+msgstr "全球时间, 以秒为单位."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
 msgid "Vertex built-ins"
@@ -346,28 +346,28 @@ msgid ""
 "modified and be passed through as they came."
 msgstr ""
 "顶点数据(``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) 是在本地模型空间"
-"中呈现.如果不写入,这些值将不会被修改,并按其原来的样子传递."
+"中呈现. 如果不写入, 这些值将不会被修改, 并按其原来的样子传递."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:106
 msgid ""
 "They can optionally be presented in world space by using the "
 "*world_vertex_coords* render mode."
 msgstr ""
-"通过使用 *world_vertex_coords* 渲染模式,它们可以选择性地在世界空间中呈现."
+"通过使用 *world_vertex_coords* 渲染模式, 它们可以选择性地在世界空间中呈现."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
 msgid ""
 "Users can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
-"用户可以禁用内置的modelview变换(以后仍会发生投影),并通过以下代码手动完成:"
+"用户可以禁用内置的modelview变换(以后仍会发生投影), 并通过以下代码手动完成:"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:122
 msgid ""
 "Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
-"其他的内置函数,如UV、UV2和COLOR,如果没有修改,也会传递给fragment片段函数."
+"其他的内置函数, 如UV, UV2和COLOR, 如果没有修改, 也会传递给fragment片段函数."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:124
 msgid ""
@@ -376,27 +376,28 @@ msgid ""
 "is ignored and projection does not happen. However, the value passed to the "
 "fragment shader still comes from ``VERTEX``."
 msgstr ""
-"用户可以使用内置的\"位置\"覆盖模型视图矩阵和投影转换.当使用\"位置\"时,将忽略"
-"\"顶点\"中的值,不会发生投影.然而,传递给片段着色器的值仍然来自于\"顶点\"."
+"用户可以使用内置的 \"位置\" 覆盖模型视图矩阵和投影转换. 当使用 \"位置\" 时, "
+"将忽略 \"顶点\" 中的值, 不会发生投影. 然而, 传递给片段着色器的值仍然来自于 "
+"\"顶点\"."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
-"对于实例化,INSTANCE_CUSTOM变量包含实例自定义数据. 使用粒子时,此信息通常是:"
+"对于实例化,INSTANCE_CUSTOM变量包含实例自定义数据. 使用粒子时, 此信息通常是:"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "**x**: Rotation angle in radians."
-msgstr "** x**: 以弧度表示的旋转角度."
+msgstr "** x** : 以弧度表示的旋转角度."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
 msgid "**y**: Phase during lifetime (0 to 1)."
-msgstr "** y**: 寿命期间的相位(0到1)."
+msgstr "** y** : 寿命期间的相位(0到1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 msgid "**z**: Animation frame."
-msgstr "** z**: 动画帧."
+msgstr "** z** : 动画帧."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
 msgid ""
@@ -404,8 +405,8 @@ msgid ""
 "default particles material. When writing a custom particle shader, this "
 "value can be used as desired."
 msgstr ""
-"这允许你轻松地将着色器调整为使用默认粒子材质的粒子系统.在编写自定义粒子着色器"
-"时,可以根据需要使用这个值."
+"这允许你轻松地将着色器调整为使用默认粒子材质的粒子系统. 在编写自定义粒子着色"
+"器时, 可以根据需要使用这个值."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
@@ -469,7 +470,7 @@ msgstr "输入输出mat4 **MODELVIEW_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "Model space to view space transform (use if possible)."
-msgstr "用于查看空间变换的模型空间(如果可能,请使用)."
+msgstr "用于查看空间变换的模型空间(如果可能, 请使用)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "inout mat4 **INV_PROJECTION_MATRIX**"
@@ -491,11 +492,11 @@ msgstr "局部坐标中的顶点."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "out vec4  **POSITION**"
-msgstr "输出vec4  **POSITION**"
+msgstr "输出vec4 **POSITION**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "If written to, overrides final vertex position."
-msgstr "如果写入,则覆盖最终顶点位置."
+msgstr "如果写入, 则覆盖最终顶点位置."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
@@ -608,8 +609,8 @@ msgid ""
 "properties, and if you don't write to them, Godot will optimize away the "
 "corresponding functionality."
 msgstr ""
-"Godot片段处理器函数的默认用法是设置对象的材质属性,并让内置渲染器处理最终的阴"
-"影.但是,你无需使用所有这些属性,如果你不写入它们,Godot将优化掉相应的功能."
+"Godot片段处理器函数的默认用法是设置对象的材质属性, 并让内置渲染器处理最终的阴"
+"影. 但是, 你无需使用所有这些属性, 如果你不写入它们,Godot将优化掉相应的功能."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
@@ -622,8 +623,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
-"屏幕空间中像素中心的坐标.``xy``表示窗口位置,如果不使用``DEPTH``,则``z``表示片"
-"段深度.原点在左下角."
+"屏幕空间中像素中心的坐标.``xy`` 表示窗口位置, 如果不使用 ``DEPTH``, 则 ``z`` "
+"表示片段深度. 原点在左下角."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
@@ -646,7 +647,7 @@ msgstr "in vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid "Vertex that comes from vertex function (default, in view space)."
-msgstr "来自顶点函数的顶点(默认情况下,在视图空间中)."
+msgstr "来自顶点函数的顶点(默认情况下, 在视图空间中)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:336
@@ -663,11 +664,11 @@ msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
 msgid "``true`` if current face is front face."
-msgstr "``true`` ,如果当前面是正面."
+msgstr "``true`` , 如果当前面是正面."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 msgid "Normal that comes from vertex function (default, in view space)."
-msgstr "来自于顶点函数的法向量(默认情况下,在视图空间中)."
+msgstr "来自于顶点函数的法向量(默认情况下, 在视图空间中)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 msgid "Tangent that comes from vertex function."
@@ -683,7 +684,7 @@ msgstr "out vec3 **NORMALMAP**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
-msgstr "如果从纹理中读取法线而不是NORMAL,在这里设置normal."
+msgstr "如果从纹理中读取法线而不是NORMAL, 在这里设置normal."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "out float **NORMALMAP_DEPTH**"
@@ -739,7 +740,7 @@ msgstr "out float **ALPHA**"
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
-msgstr "Alpha (0..1);如果写入,材质将进入透明管道."
+msgstr "Alpha (0..1);如果写入, 材质将进入透明管道."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid "out float **ALPHA_SCISSOR**"
@@ -747,7 +748,7 @@ msgstr "out float **ALPHA_SCISSOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "如果写入,则丢弃低于一定量alpha的值."
+msgstr "如果写入, 则丢弃低于一定量alpha的值."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
 msgid "out float **METALLIC**"
@@ -764,7 +765,7 @@ msgstr "out float **SPECULAR**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
-msgstr "镜面.默认为0.5,最好不要修改,除非你想改变IOR."
+msgstr "镜面. 默认为0.5, 最好不要修改, 除非你想改变IOR."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
 msgid "Roughness (0..1)."
@@ -776,7 +777,7 @@ msgstr "out float **RIM**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
-msgstr "边缘(0-1区间).如果使用,Godot计算边缘照明."
+msgstr "边缘(0-1区间). 如果使用,Godot计算边缘照明."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:246
 msgid "out float **RIM_TINT**"
@@ -786,7 +787,7 @@ msgstr "out float **RIM_TINT**"
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
-msgstr "边缘色调,从0(白色)到1(反射).如果使用,Godot会计算边缘光照."
+msgstr "边缘色调, 从0(白色)到1(反射). 如果使用,Godot会计算边缘光照."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
 msgid "out float **CLEARCOAT**"
@@ -794,7 +795,7 @@ msgstr "out float **CLEARCOAT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
-msgstr "小幅增加镜面团块.如果使用,Godot计算清漆涂层."
+msgstr "小幅增加镜面团块. 如果使用,Godot计算清漆涂层."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid "out float **CLEARCOAT_GLOSS**"
@@ -802,7 +803,7 @@ msgstr "out float **CLEARCOAT_GLOSS**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
-msgstr "清漆涂层的光泽度.如果使用,Godot计算清漆涂层."
+msgstr "清漆涂层的光泽度. 如果使用,Godot计算清漆涂层."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:252
 msgid "out float **ANISOTROPY**"
@@ -818,7 +819,7 @@ msgstr "out vec2 **ANISOTROPY_FLOW**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:254
 msgid "Distortion direction, use with flowmaps."
-msgstr "失真方向,与流程图一起使用."
+msgstr "失真方向, 与流程图一起使用."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:256
 msgid "out float **SSS_STRENGTH**"
@@ -828,7 +829,7 @@ msgstr "out float **SSS_STRENGTH**"
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
-msgstr "次表面散射强度.如果使用,物体将应用次表面散射."
+msgstr "次表面散射强度. 如果使用, 物体将应用次表面散射."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
 msgid "out vec3 **TRANSMISSION**"
@@ -838,7 +839,7 @@ msgstr "out vec3 **TRANSMISSION**"
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
-msgstr "传输掩码(默认值0,0,0).允许光穿过物体.只在使用时应用."
+msgstr "传输掩码(默认值0,0,0). 允许光穿过物体. 只在使用时应用."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:260
 msgid "out vec3 **EMISSION**"
@@ -854,7 +855,7 @@ msgstr "out float **AO**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
-msgstr "环境遮挡.与预焙环境遮挡一起使用."
+msgstr "环境遮挡. 与预焙环境遮挡一起使用."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 msgid "out float **AO_LIGHT_AFFECT**"
@@ -862,7 +863,7 @@ msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 msgid "How much AO affects lights (0..1; default 0)."
-msgstr "环境遮挡对灯光的影响程度(取值在0到1之间.默认为0)."
+msgstr "环境遮挡对灯光的影响程度(取值在0到1之间. 默认为0)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid "sampler2D **SCREEN_TEXTURE**"
@@ -872,7 +873,7 @@ msgstr "sampler2D **SCREEN_TEXTURE**"
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
-msgstr "内置纹理,用于从屏幕上读取. Mipmap包含越来越模糊的副本."
+msgstr "内置纹理, 用于从屏幕上读取. Mipmap包含越来越模糊的副本."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
 msgid "sampler2D **DEPTH_TEXTURE**"
@@ -882,7 +883,7 @@ msgstr "sampler2D **DEPTH_TEXTURE**"
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
-msgstr "内置纹理,用于从屏幕读取深度. 必须使用INV_PROJECTION转换为线性."
+msgstr "内置纹理, 用于从屏幕读取深度. 必须使用INV_PROJECTION转换为线性."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
 msgid "out float **DEPTH**"
@@ -920,23 +921,23 @@ msgid ""
 "fragment function to calculate the lighting for you (subject to the "
 "render_mode)."
 msgstr ""
-"编写光处理器功能是完全可选的.您可以通过设置渲染_模式为\"无阴影\"来跳过光照函"
-"数.如果没有写入光照函数,Godot将使用片段函数中写入的材质属性来为您计算光照(取"
-"决于渲染_模式)."
+"编写光处理器功能是完全可选的. 您可以通过设置渲染_模式为 \"无阴影\" 来跳过光照"
+"函数. 如果没有写入光照函数,Godot将使用片段函数中写入的材质属性来为您计算光照"
+"(取决于渲染_模式)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
 msgid ""
 "To write a light function, assign something to ``DIFFUSE_LIGHT`` or "
 "``SPECULAR_LIGHT``. Assigning nothing means no light is processed."
 msgstr ""
-"要写一个光照函数,要给 ``DIFFUSE_LIGHT`` 或 ``SPECULAR_LIGHT`` 指定一些东西.不"
-"指定任何东西意味着不处理光照."
+"要写一个光照函数, 要给 ``DIFFUSE_LIGHT`` 或 ``SPECULAR_LIGHT`` 指定一些东西. "
+"不指定任何东西意味着不处理光照."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
-msgstr "每个像素中的每个光都调用光照函数.在每个光类型的循环中被调用."
+msgstr "每个像素中的每个光都调用光照函数. 在每个光类型的循环中被调用."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
 msgid ""
@@ -949,8 +950,8 @@ msgid ""
 "If you want the lights to add together, add the light contribution to "
 "``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
 msgstr ""
-"如果你想把这些光照加在一起,使用\"+=\"运算符将光线添加到\"漫反射_光照\"函数中,"
-"而不是覆盖它."
+"如果你想把这些光照加在一起, 使用 \"+=\" 运算符将光线添加到 \"漫反射_光照\" 函"
+"数中, 而不是覆盖它."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:303
 msgid ""
@@ -959,9 +960,9 @@ msgid ""
 "is enabled in the Project Settings. (It's enabled by default on mobile "
 "platforms.)"
 msgstr ""
-"如果启用了``vertex_lighting``渲染模式,或者在项目设置中启用了**Rendering渲染"
-">Quality质量>Shading着色>强制顶点着色**,则不会运行``light()``函数.(在移动平台"
-"上默认启用.)"
+"如果启用了 ``vertex_lighting`` 渲染模式, 或者在项目设置中启用了 **Rendering渲"
+"染>Quality质量>Shading着色>强制顶点着色** , 则不会运行 ``light()`` 函数.(在移"
+"动平台上默认启用.)"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:311
 msgid "Elapsed total time in seconds."
@@ -973,8 +974,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
-"屏幕空间中像素中心的坐标.``xy``表示窗口位置,如果不使用``DEPTH``,则``z``表示片"
-"段深度.原点在左下角."
+"屏幕空间中像素中心的坐标.``xy`` 表示窗口位置, 如果不使用 ``DEPTH``, 则 ``z`` "
+"表示片段深度. 原点在左下角."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid "in vec3 **NORMAL**"
@@ -982,11 +983,11 @@ msgstr "in vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid "Normal vector, in view space."
-msgstr "法向量,在视图空间中."
+msgstr "法向量, 在视图空间中."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:336
 msgid "View vector, in view space."
-msgstr "视图向量,在视图空间中."
+msgstr "视图向量, 在视图空间中."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
 msgid "in vec3 **LIGHT**"
@@ -994,7 +995,7 @@ msgstr "in vec3 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
 msgid "Light Vector, in view space."
-msgstr "灯光向量,在视图空间中."
+msgstr "灯光向量, 在视图空间中."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:340
 msgid "in vec3 **ATTENUATION**"

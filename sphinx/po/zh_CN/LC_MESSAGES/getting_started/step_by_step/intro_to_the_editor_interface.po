@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,13 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"这篇教程将带你快速上手Godot的界面.我们将了解 **项目管理器、 停靠面板、 工作区"
+"这篇教程将带你快速上手Godot的界面. 我们将了解 **项目管理器, 停靠面板, 工作区"
 "** 以及初步运用引擎须知的一切."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
-msgstr "你可以 `在此处下载Godot引擎 <https://godotengine.org/download/>`_ ."
+msgstr "你可以 `在此处下载Godot 引擎 <https://godotengine.org/download/>`_ ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -45,16 +45,16 @@ msgid ""
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"启动Godot后,你会首先看到项目管理器窗口.因为你目前还没有项目,所以会有一个弹窗,"
-"询问你是否想要打开素材库,点击取消即可,我们稍后再回来看这个东西."
+"启动Godot后, 你会首先看到项目管理器窗口. 因为你目前还没有项目, 所以会有一个弹"
+"窗, 询问你是否想要打开素材库, 点击取消即可, 我们稍后再回来看这个东西."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"当启动Godot,看到的第一个窗口就是项目管理器.它允许创建、移除、导入或运行游戏项"
-"目."
+"当启动Godot, 看到的第一个窗口就是项目管理器. 它允许创建, 移除, 导入或运行游戏"
+"项目."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 msgid ""
@@ -70,9 +70,9 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"在 **模板** 选项卡里,你可以从素材库中下载开源的项目模板和示例来帮助你快速入"
-"门.只需选择你想要的模板或示例,然后点击下载.下载完成后,点击安装并选择项目存储"
-"路径.更多相关内容我们会在 :ref:`doc_what_is_assetlib` 中学习."
+"在 **模板** 选项卡里, 你可以从素材库中下载开源的项目模板和示例来帮助你快速入"
+"门. 只需选择你想要的模板或示例, 然后点击下载. 下载完成后, 点击安装并选择项目"
+"存储路径. 更多相关内容我们会在 :ref:`doc_what_is_assetlib` 中学习."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
@@ -84,15 +84,15 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"要创建新项目,点击右侧的 ``新建项目`` 按钮.为其命名并在计算机上选择一个空文件"
-"夹来保存它,最后选择一个渲染器."
+"要创建新项目, 点击右侧的 ``新建项目`` 按钮. 为其命名并在计算机上选择一个空文"
+"件夹来保存它, 最后选择一个渲染器."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
 msgstr ""
-"点击浏览按钮,打开Godot文件浏览器并选择位置.或者直接在项目路径字段输入目录路"
+"点击浏览按钮, 打开Godot文件浏览器并选择位置. 或者直接在项目路径字段输入目录路"
 "径."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:53
@@ -102,8 +102,8 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"当看到右侧出现绿色的勾,表示引擎检测到了一个空文件夹．你也可以点击项目名称旁边"
-"的 ``创建``按钮 ,Godot会创建项目并在编辑器打开它."
+"当看到右侧出现绿色的勾, 表示引擎检测到了一个空文件夹．你也可以点击项目名称旁"
+"边的 ``创建`` 按钮 ,Godot会创建项目并在编辑器打开它."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
 msgid ""
@@ -113,23 +113,24 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"在这个步骤你可以选择渲染后端(OpenGL ES 3.0 或者 OpenGL ES 2.0).两者的优缺点已"
-"经列出帮助你做出选择,详细内容请参考 :ref:`doc_gles2_gles3_differences` 你也可"
-"以在之后任何时候通过项目设置面板来更改渲染后端.对于本样例内容,两者任选其一都"
-"是ok的."
+"在这个步骤你可以选择渲染后端(OpenGL ES 3.0 或者 OpenGL ES 2.0). 两者的优缺点"
+"已经列出帮助你做出选择, 详细内容请参考 :ref:`doc_gles2_gles3_differences` 你"
+"也可以在之后任何时候通过项目设置面板来更改渲染后端. 对于本样例内容, 两者任选"
+"其一都是ok的."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
-msgstr "当你完成之后,点击``创建 & 编辑``.引擎会帮你创建项目并在编辑器中打开."
+msgstr ""
+"当你完成之后, 点击 ``创建 & 编辑``. 引擎会帮你创建项目并在编辑器中打开."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"下次打开项目管理器的时候,就可以在列表里看到新项目了.双击它可以在编辑器打开."
+"下次打开项目管理器的时候, 就可以在列表里看到新项目了. 双击它可以在编辑器打开."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
@@ -137,12 +138,12 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
-"可以用类似方式导入已有项目.点击导入按钮,找到含有项目或 ``project.godot`` 文件"
-"的目录就可以导入并编辑它了."
+"可以用类似方式导入已有项目. 点击导入按钮, 找到含有项目或 ``project.godot`` 文"
+"件的目录就可以导入并编辑它了."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "如果目录路径正确,会看到绿色的对号."
+msgstr "如果目录路径正确, 会看到绿色的对号."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid "Your first look at Godot's editor"
@@ -154,14 +155,15 @@ msgid ""
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"欢迎来到戈多!打开项目后,您会看到编辑器的整个界面,顶部有菜单项,停靠在视窗顶端"
-"处."
+"欢迎来到戈多!打开项目后, 您会看到编辑器的整个界面, 顶部有菜单项, 停靠在视窗顶"
+"端处."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
-msgstr "在顶部,从左到右,可以看到 **主菜单** 、**工作区** 以及 **各调试按钮** ."
+msgstr ""
+"在顶部, 从左到右, 可以看到 **主菜单** , **工作区** 以及 **各调试按钮** ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -172,7 +174,7 @@ msgstr "**文件系统面板** 是您管理项目文件和资产的地方."
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
-msgstr "**场景面板**列出了活动场景的内容,**检视器**用于管理场景内容的属性."
+msgstr "**场景面板** 列出了活动场景的内容, **检视器** 用于管理场景内容的属性."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
@@ -180,8 +182,8 @@ msgid ""
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"中间上方有 **工具栏**,你可以用它移动、缩放或锁定你的场景物件.它会随着工作区的"
-"不同而切换."
+"中间上方有 **工具栏** , 你可以用它移动, 缩放或锁定你的场景物件. 它会随着工作"
+"区的不同而切换."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 msgid ""
@@ -189,8 +191,8 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That's "
 "why they're folded by default."
 msgstr ""
-"**底部面板** 有输出、调试器、音频、动画,它们比较宽,会占用宝贵的空间.所以它们"
-"默认是折叠状态."
+"**底部面板** 有输出, 调试器, 音频, 动画, 它们比较宽, 会占用宝贵的空间. 所以它"
+"们默认是折叠状态."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "The workspaces"
@@ -199,49 +201,48 @@ msgstr "工作区"
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
-msgstr "可以在顶部看到有四个工作区按钮:2D、3D、脚本和素材库."
+msgstr "可以在顶部看到有四个工作区按钮:2D, 3D, 脚本和素材库."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`Ctrl + F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"对所有类型的游戏都需要使用 **2D 工作区** .除了用于2D游戏外,也是构建UI界面的地"
-"方.按 :kbd:`F1`(或 :kbd:`Alt + 1`在macOS上) 访问它."
+"对所有类型的游戏都需要使用 **2D 工作区** . 除了用于2D游戏外, 也是构建UI界面的"
+"地方. 按 :kbd:`F1` (或 :kbd:`Alt + 1` 在macOS上) 访问它."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`Ctrl + F2` (or :kbd:`Alt + 2` on macOS) to access "
 "it."
 msgstr ""
-"在**3D工作区**中,你可以使用网格、灯光,并设计3D游戏的关卡.按 :kbd:`F2`(或 :"
-"kbd:`Alt + 2`在macOS上)进入."
+"在 **3D工作区** 中, 你可以使用网格, 灯光, 并设计3D游戏的关卡. 按 :kbd:`F2` "
+"(或 :kbd:`Alt + 2` 在macOS上)进入."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
-msgstr "注意工具栏下的透视图按钮,它会打开一个与3D视图相关的选项列表."
+msgstr "注意工具栏下的透视图按钮, 它会打开一个与3D视图相关的选项列表."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
-msgstr "更多关于 **3D 工作区** 的细节,请查看 :ref:`doc_introduction_to_3d`."
+msgstr "更多关于 **3D 工作区** 的细节, 请查看 :ref:`doc_introduction_to_3d`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 #, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`Ctrl + F3` (or :"
-"kbd:`Alt + 3` on macOS) to access it, and :kbd:`Shift + F1` to search the "
-"reference."
+"kbd:`Alt + 3` on macOS) to access it, and :kbd:`F1` (or :kbd:`Alt + Space` "
+"on macOS) to search the reference."
 msgstr ""
-"**Script**工作区是一个完整的代码编辑器,具有调试、自动补全和内置的代码参考等."
-"按 :kbd:`F3`(或 :kbd:`Alt + 3`在macOS上)进入,按 :kbd:`Shift + F1`搜索引用."
+"**Script** 工作区是一个完整的代码编辑器，具有调试器、丰富的自动完成功能和内置"
+"代码引用。按 :kbd:`Ctrl + F3`（或 :kbd:`Alt + 3` 在macOS上）访问它，按 :kbd:"
+"`Shift + F1` 来搜索引用。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
@@ -249,26 +250,26 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
-"要在编写脚本时,搜索引擎中的类、方法、属性、常量或信号的信息,请使用脚本工作区"
-"右上方的 \"搜索帮助 \"按钮."
+"要在编写脚本时, 搜索引擎中的类, 方法, 属性, 常量或信号的信息, 请使用脚本工作"
+"区右上方的 \"搜索帮助\" 按钮."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
-msgstr "会弹出一个新窗口,以便查找你所需的信息."
+msgstr "会弹出一个新窗口, 以便查找你所需的信息."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
-msgstr "单击要查找的项目,然后按\"打开\".项目的文档将显示在脚本工作区中."
+msgstr "单击要查找的项目, 然后按 \"打开\". 项目的文档将显示在脚本工作区中."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
-msgstr "最后, **素材库** 是一个免费的插件、脚本、资源仓库,可用于项目."
+msgstr "最后, **素材库** 是一个免费的插件, 脚本, 资源仓库, 可用于项目."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 msgid "Modify the interface"
@@ -280,12 +281,12 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
-"Godot的界面存在于单一窗口中.不能把它拆分到多个屏幕中,不过可以使用外置的代码编"
-"辑器如Atom或Visual Studio一起工作."
+"Godot的界面存在于单一窗口中. 不能把它拆分到多个屏幕中, 不过可以使用外置的代码"
+"编辑器如Atom或Visual Studio一起工作."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid "Move and resize docks"
-msgstr "移动、重新调整面板尺寸"
+msgstr "移动, 重新调整面板尺寸"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:173
 msgid ""
@@ -303,5 +304,5 @@ msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"进入 ``Editor(编辑器)`` 菜单和 ``Editor Settings(编辑器设置)`` ,对编辑器的外"
+"进入 ``Editor(编辑器)`` 菜单和 ``Editor Settings(编辑器设置)`` , 对编辑器的外"
 "观和感觉进行微调."

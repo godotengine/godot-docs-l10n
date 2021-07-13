@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,14 @@ msgid "Games and internationalization"
 msgstr "Jogos e internacionalização"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
-#, fuzzy
 msgid ""
 "The world is full of different languages and cultures, so nowadays games are "
 "released in several languages. To handle this, internationalized text must "
 "be supported in any modern game engine."
 msgstr ""
-"O mundo é cheio de diferentes mercados e culturas e, para maximizar lucros™, "
-"hoje em dia os jogos são lançados em várias línguas. Para resolver isso, "
-"texto internacionalizado precisa ser suportado em qualquer game engine "
-"moderna."
+"O mundo é cheio de diferentes idiomas e culturas, por isso hoje em dia os "
+"jogos são lançados em vários idiomas. Para resolver isso, texto "
+"internacionalizado precisa ser suportado em qualquer game engine moderna."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:13
 msgid ""
@@ -102,7 +100,7 @@ msgid ""
 "without a `byte order mark <https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 msgstr ""
-"Para permitir suporte eficiente a traduções, Godot possui um importador "
+"Para permitir suporte eficiente a traduções, o Godot possui um importador "
 "especial que pode ler arquivos CSV. Todos os editores de planilhas (seja ele "
 "LibreOffice, Microsoft Office, Google Docs, etc.) podem exportar para este "
 "formato, então o único requisito é que os arquivos tenham uma organização "
@@ -123,7 +121,6 @@ msgstr ""
 "excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
-#, fuzzy
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
@@ -132,15 +129,13 @@ msgstr ""
 "Google Sheets em seu lugar."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
-#, fuzzy
 msgid "CSV files must be formatted as follows:"
-msgstr "Os arquivos CSV devem ser formatados da seguinte forma:"
+msgstr "Arquivos CSV devem ser formatados da seguinte forma:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
-#, fuzzy
 msgid "keys"
-msgstr "Chaves"
+msgstr "chaves"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang1>"
@@ -183,7 +178,7 @@ msgid ""
 "left empty or having any content. Here's an example:"
 msgstr ""
 "As tags \"lang\" precisam representar um idioma, que precisa ser uma dos :"
-"ref:`locales válidos <doc_locales>` suportados pela engine. As tags\"KEY\" "
+"ref:`locales válidos <doc_locales>` suportados pela engine. As tags \"KEY\" "
 "devem ser únicas e representar uma string universalmente (elas geralmente "
 "são em caixa alta, para diferenciar de outras strings). Estas chaves serão "
 "substituídas durante a execução pela string traduzida correspondente. Note "
@@ -226,7 +221,7 @@ msgstr "PERGUNTAR"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "How are you?"
-msgstr "Como vai você?"
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "Cómo está?"
@@ -241,7 +236,6 @@ msgid "BYE"
 msgstr "DESPEDIDA"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
-#, fuzzy
 msgid "Goodbye"
 msgstr "Goodbye"
 
@@ -301,7 +295,7 @@ msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
-"Godot tratará os arquivos CSV como traduções por padrão. Ele irá importá-los "
+"O Godot tratará arquivos CSV como traduções por padrão. Ele irá importá-los "
 "e gerar um ou mais arquivos de recursos de tradução comprimidos ao lado dele."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:111
@@ -316,19 +310,17 @@ msgstr ""
 "tempo de execução também."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:116
-#, fuzzy
 msgid ""
 "Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
-"Selecione o arquivo ``.csv`` e acesse o dock \"Importar\" para definir as "
+"Selecione o arquivo ``.csv`` e acesse a dock **Importar** para definir as "
 "opções de importação. Você pode alternar a compressão das traduções "
 "importadas e selecionar o delimitador para usar ao analisar o arquivo CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:122
-#, fuzzy
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
-"Certifique-se de clicar em \"Reimportar\" após qualquer alteração nessas "
+"Certifique-se de clicar em **Reimportar** após qualquer alteração nessas "
 "opções."

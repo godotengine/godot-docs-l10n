@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Custom HTML page for Web export"
 msgstr "导出自定义HTML页面"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:6
-#, fuzzy
 msgid ""
 "While Web export templates provide a default HTML page fully capable of "
 "launching the project without any further customization, it may be "
@@ -30,9 +29,9 @@ msgid ""
 "be directly controlled from the outside yet, such page allows to customize "
 "the initialization process for the engine."
 msgstr ""
-"虽然Web导出模板提供了一个默认的HTML页面,完全能够启动项目而不需要任何进一步的"
-"定制,但创建一个自定义的HTML页面可能是有益的.虽然游戏本身不能从外部直接控制,但"
-"这种页面允许自定义引擎的初始化过程."
+"虽然Web导出模板提供了一个默认的HTML页面，完全能够在没有任何进一步定制的情况下"
+"启动项目，但创建一个自定义的HTML页面可能是有益的。虽然游戏本身还不能轻易地从"
+"外部直接控制，但这样的页面允许自定义引擎的初始化过程。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
 msgid "Some use-cases where customizing the default page is useful include:"
@@ -54,34 +53,30 @@ msgstr "从主资源包文件以外的目录中加载引擎文件；"
 msgid ""
 "Adding a click-to-play button so that games can be started in the fullscreen "
 "mode;"
-msgstr "添加一个\"即点即玩\"按钮,使游戏可以在全屏模式下启动；"
+msgstr "添加一个 \"即点即玩\" 按钮, 使游戏可以在全屏模式下启动；"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
-msgstr "在引擎启动之前加载一些额外的文件,以便稍后在文件系统中可用；"
+msgstr "在引擎启动之前加载一些额外的文件, 以便稍后在文件系统中可用；"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
 msgid ""
 "Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` "
 "script."
-msgstr "传递自定义\"命令行\"参数,例如 ``-s`` 启动``MainLoop``脚本."
+msgstr "传递自定义 \"命令行\" 参数, 例如 ``-s`` 启动 ``MainLoop`` 脚本."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
 "misc/dist/html/full-size.html>`__ but the following template can be used as "
 "a much simpler example:"
 msgstr ""
-"默认的HTML页面可在Godot引擎存储库中找到,位于 `/misc/dist/html/full-size.html "
-"<https://github.com/godotengine/godot/blob/master/misc/dist/html/full- size."
-"html>`__ ,可以用作参考实现. 另一个示例HTML页面位于 `/misc/dist/html/fixed-"
-"size.html <https://github.com/godotengine/godot/blob/master/misc/dist/html/"
-"fixed-size.html>`__ . 与默认设置不同的是,它具有一个固定大小的画布区域,并且在"
-"其下方有一个输出小部件."
+"默认的HTML页面可在Godot引擎仓库 `/misc/dist/html/full-size.html <https://"
+"github.com/godotengine/godot/blob/master/misc/dist/html/full-size.html>`__ 中"
+"找到, 但以下模板可作为一个更简单的例子:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:44
 msgid "Setup"
@@ -94,11 +89,13 @@ msgid ""
 "``<canvas>`` element, and some simple JavaScript code that calls the :js:"
 "class:`Engine` class."
 msgstr ""
+"如上面的例子所示，它主要是一个普通的HTML文档，有几个占位符需要在导出时替换，"
+"一个html ``<canvas>`` 元素，和一些简单的JavaScript代码，调用 :js:class:"
+"`Engine` 类。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:49
-#, fuzzy
 msgid "The only required placeholders are:"
-msgstr "类型占位符"
+msgstr "唯一需要的占位符是:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:51
 msgid ""
@@ -107,6 +104,9 @@ msgid ""
 "in the HTML as a ``<script>``. The name is generated from the *Export Path* "
 "during the export process."
 msgstr ""
+"``$GODOT_URL`` : 主JavaScript文件的名称，它提供了启动引擎所需的 :js:class:"
+"`Engine` 类，必须作为 ``<script>`` 包含在HTML中。这个名字是在导出过程中从*导"
+"出路径Export Path* 生成的。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
 msgid ""
@@ -114,19 +114,22 @@ msgid ""
 "can be later overridden. See :js:attr:`EngineConfig` for the full list of "
 "overrides."
 msgstr ""
+"``$GODOT_CONFIG`` : 一个JavaScript对象，包含导出选项，以后可以被重写。参见 :"
+"js:attr:`EngineConfig` 获取完整的重写列表。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:60
 msgid ""
 "The following optional placeholders will enable some extra features in your "
 "cusstom HTML template."
-msgstr ""
+msgstr "以下可选的占位符将在你的自定义HTML模板中实现一些额外的功能。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
-#, fuzzy
 msgid ""
 "``$GODOT_PROJECT_NAME``: The project name as defined in the Project "
 "Settings. It is a good idea to use it as a ``<title>`` in your template."
-msgstr "``$GODOT_PROJECT_NAME``:项目设置中定义的项目名称."
+msgstr ""
+"``$GODOT_PROJECT_NAME``: 在项目设置中定义的项目名称。在你的模板中使用它作为 "
+"``<title>`` 是一个好主意。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:66
 msgid ""
@@ -137,41 +140,42 @@ msgid ""
 "the HTML ``head`` element from the Godot Editor, e.g. for different Web "
 "export presets."
 msgstr ""
-"``$GODOT_HEAD_INCLUDE``.在HTML文件中,在``<head>``标签结尾前包含的一个自定义字"
-"符串.它是在*Html / Head Include*部分的导出选项中自定义的.虽然你可以完全控制你"
-"所创建的HTML页面,但这个变量对于从Godot Editor中配置HTML``head``元素的部分内容"
-"很有用,例如,对于不同的Web导出预设."
+"``$GODOT_HEAD_INCLUDE``. 在HTML文件中, 在 ``<head>`` 标签结尾前包含的一个自定"
+"义字符串. 它是在*Html / Head Include*部分的导出选项中自定义的. 虽然你可以完全"
+"控制你所创建的HTML页面, 但这个变量对于从Godot Editor中配置HTML``head`` 元素的"
+"部分内容很有用, 例如, 对于不同的Web导出预设."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:72
 msgid ""
 "When the custom page is ready, it can be selected in the export options "
 "under the *Html / Custom Html Shell* section."
 msgstr ""
-"当自定义页面准备好后,可以在 *Html / Custom Html Shell* 部分的导出选项中选择."
+"当自定义页面准备好后, 可以在 *Html / Custom Html Shell* 部分的导出选项中选择."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:78
 msgid "Starting the project"
 msgstr "启动项目"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:79
-#, fuzzy
 msgid ""
 "To be able to start the game, you need to write a script that initializes "
 "the engine — the control code. This process consists of three steps, though "
 "as shown most of them can be skipped depending on how much customization is "
 "needed (or be left to a default behavior)."
 msgstr ""
-"为了能够启动游戏,你需要写一个初始化引擎的脚本--控制代码.这个过程包括三个步骤,"
-"尽管其中一些步骤可以跳过,并留下一个默认的行为."
+"为了能够启动游戏，你需要写一个脚本来初始化引擎 — 控制代码。这个过程包括三个步"
+"骤，不过如图所示，其中大部分步骤可以跳过，这取决于需要多少定制化的内容，或者"
+"留给默认行为。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:83
 msgid ""
 "See the :ref:`HTML5 shell class reference <doc_html5_shell_classref>`, for "
 "the full list of methods and options available."
 msgstr ""
+"参见 :ref:`HTML5 shell类参考 <doc_html5_shell_classref>` ，以获得可用方法和选"
+"项的完整列表。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:85
-#, fuzzy
 msgid ""
 "First, the engine must be loaded, then it needs to be initialized, and after "
 "this the project can finally be started. You can perform every of these "
@@ -181,12 +185,13 @@ msgid ""
 "prototype.startGame>` method optionally overriding any :js:attr:"
 "`EngineConfig` parameters."
 msgstr ""
-"首先,引擎必须被加载,然后需要初始化,在这之后,项目才能最终启动.你可以手动执行这"
-"些步骤,而且能控制许多东西.然而,在最简单的情况下,你需要做的就是创建一个 :js:"
-"class:`Engine` 类的实例,然后调用 :js:meth:`engine.startGame` 方法."
+"首先，引擎必须被加载，然后需要被初始化，在这之后，项目最终可以被启动。你可以"
+"手动执行这些步骤中的每一步，而且控制得很好。然而，在最简单的情况下，你需要做"
+"的是用导出的配置创建一个 :js:class:`Engine` 类的实例，然后调用 :js:meth:"
+"`engine.startGame <Engine.prototype.startGame>` 方法，可选择重写任何 :js:"
+"attr:`EngineConfig` 参数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:101
-#, fuzzy
 msgid ""
 "This snippet of code automatically loads and initializes the engine before "
 "starting the game. It uses the given configuration to to load the engine. "
@@ -195,9 +200,10 @@ msgid ""
 "track if the game was loaded correctly without blocking execution or relying "
 "on polling."
 msgstr ""
-"这段代码在启动游戏前自动加载并初始化引擎.它使用给定的可执行文件路径来推断加载"
-"引擎的路径. :js:meth:`engine.startGame` 方法是异步的,并返回一个 ``Promise`` ."
-"这允许你的控制代码跟踪游戏是否被正确加载,而无需阻止执行或依赖轮询."
+"这段代码在启动游戏前自动加载和初始化引擎。它使用给定的配置来加载引擎。 :js:"
+"meth:`engine.startGame <Engine.prototype.startGame>` 方法是异步的，返回一个 "
+"``Promise`` 。这允许你的控制代码跟踪游戏是否被正确加载，而无需阻塞执行或依赖"
+"轮询。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:106
 msgid ""
@@ -208,6 +214,10 @@ msgid ""
 "(and any other extra file) via the :js:meth:`engine.preloadFile <Engine."
 "prototype.preloadFile>` method."
 msgstr ""
+"如果你的项目需要对启动参数和依赖文件进行特别控制，可以使用 :js:meth:`engine."
+"start <Engine.prototype.start>` 方法来代替。注意，这个方法不会自动预加载 "
+"``pck`` 文件，所以你可能要通过 :js:meth:`engine.preloadFile <Engine."
+"prototype.preloadFile>` 方法手动预加载它和任何其他额外的文件。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
 msgid ""
@@ -215,27 +225,25 @@ msgid ""
 "init>` to perform specific actions after the module initialization, but "
 "before the engine starts."
 msgstr ""
+"另外，你也可以手动 :js:meth:`engine.init <Engine.prototype.init>` 在模块初始"
+"化之后，但在引擎启动之前，执行特定的动作。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:114
 msgid ""
 "This process is a bit more complex, but gives you full control over the "
 "engine startup process."
-msgstr ""
+msgstr "这个过程有点复杂，但可以让你完全控制引擎的启动过程。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:133
-#, fuzzy
 msgid ""
 "To load the engine manually the :js:meth:`Engine.load` static method must be "
 "called. As this method is static, multiple engine instances can be spawned "
 "if the share the same ``wasm``."
 msgstr ""
-"要手动加载引擎,必须调用 :js:meth:`Engine.load` 静态方法.因为这个方法是静态的,"
-"所以可以用完全相同的 ``basePath`` 生成多个引擎实例.如果一个实例需要一个不同"
-"的 ``basePath`` ,你可以在启动游戏之前使用该路径调用 :js:meth:`engine.init` 方"
-"法."
+"要手动加载引擎，必须调用 :js:meth:`Engine.load` 静态方法。由于这个方法是静态"
+"的，如果多个引擎实例共享相同的 ``wasm`` ，就可以产生多个引擎实例。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:136
-#, fuzzy
 msgid ""
 "Multiple instances cannot be spawned by default, as the engine is "
 "immediately unloaded after it is initialized. To prevent this from happening "
@@ -244,10 +252,10 @@ msgid ""
 "unload` static method. Unloading the engine frees browser memory by "
 "unloading files that are no longer needed once the instance is initialized."
 msgstr ""
-"默认情况下不能生成多个实例,因为引擎在初始化后会立即卸载.为了防止这种情况发生,"
-"可以调用 :js:meth:`engine.setUnloadAfterInit` 方法.之后仍然可以通过调用 :js:"
-"meth:`Engine.unload` 静态方法手动卸载引擎.卸载引擎通过卸载实例初始化后不再需"
-"要的文件来释放浏览器内存."
+"默认情况下不能生成多个实例，因为引擎被初始化后会立即卸载。为了防止这种情况发"
+"生，请看 :js:attr:`unloadAfterInit` 覆盖选项。之后仍然可以通过调用 :js:meth:"
+"`Engine.unload` 静态方法来手动卸载引擎。卸载引擎可以通过卸载实例初始化后不再"
+"需要的文件来释放浏览器内存。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
 msgid "Customizing the behavior"
@@ -257,7 +265,7 @@ msgstr "自定义行为"
 msgid ""
 "In the Web environment several methods can be used to guarantee that the "
 "game will work as intended."
-msgstr "在Web环境下,可以使用几种方法来保证游戏能够按照预期的方式运行."
+msgstr "在Web环境下, 可以使用几种方法来保证游戏能够按照预期的方式运行."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
 msgid ""
@@ -266,12 +274,11 @@ msgid ""
 "method. It optionally takes an argument that allows to test for a specific "
 "major version of WebGL."
 msgstr ""
-"如果您的目标是WebGL的特定版本,或者只是想检查WebGL是否可用,您可以调用 :js:"
-"meth:`Engine.isWebGLAvailable` 方法.它可以选择接受一个参数,允许测试WebGL的特"
-"定主要版本."
+"如果您的目标是WebGL的特定版本, 或者只是想检查WebGL是否可用, 您可以调用 :js:"
+"meth:`Engine.isWebGLAvailable` 方法. 它可以选择接受一个参数, 允许测试WebGL的"
+"特定主要版本."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
-#, fuzzy
 msgid ""
 "As the real executable file does not exist in the Web environment, the "
 "engine only stores a virtual filename formed from the base name of loaded "
@@ -280,58 +287,56 @@ msgid ""
 "defines the name of the automatically started main pack. The :js:attr:"
 "`executable` override option can be used to override this value."
 msgstr ""
-"由于真正的可执行文件在Web环境中并不存在,引擎只存储一个由加载的引擎文件的基名"
-"形成的虚拟文件名.这个值会影响 :ref:`OS.get_executable_path() "
-"<class_OS_method_get_executable_path>` 方法的输出,并定义自动启动的主包名称. :"
-"js:meth:`engine.setExecutableName` 方法可以用来覆盖这个值."
+"由于真正的可执行文件不存在于Web环境中，引擎只存储一个由加载的引擎文件的基本名"
+"称形成的虚拟文件名。这个值会影响 :ref:`OS.get_executable_path() "
+"<class_OS_method_get_executable_path>` 方法的输出，并定义自动启动的主包的名"
+"称。:js:attr:`executable` 选项可以用来重写这个值。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
 msgid "Customizing the presentation"
 msgstr "自定义演示文稿"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
-#, fuzzy
 msgid ""
 "Several configuration options can be used to further customize the look and "
 "behavior of the game on your page."
-msgstr "有几种方法可以用来进一步定制您页面上的游戏外观和行为."
+msgstr "有几个配置选项可以用来进一步定制你页面上游戏的外观和行为。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
-#, fuzzy
 msgid ""
 "By default, the first canvas element on the page is used for rendering. To "
 "use a different canvas element the :js:attr:`canvas` override option can be "
 "used. It requires a reference to the DOM element itself."
 msgstr ""
-"默认情况下,页面上的第一个画布元素被用于渲染.要使用不同的canvas元素,可以使用 :"
-"js:meth:`engine.setCanvas` 方法.它需要一个DOM元素本身的引用."
+"默认情况下，页面上的第一个canvas元素被用于渲染。要使用一个不同的画布元素，可"
+"以使用 :js:attr:`canvas` 选项重写。它需要一个对DOM元素本身的引用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:168
 msgid ""
 "The way the engine resize the canvas can be configured via the :js:attr:"
 "`canvasResizePolicy` override option."
 msgstr ""
+"引擎调整画布大小的方式可以通过 :js:attr:`canvasResizePolicy` 覆盖选项进行配"
+"置。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
-#, fuzzy
 msgid ""
 "If your game takes some time to load, it may be useful to display a custom "
 "loading UI which tracks the progress. This can be achieved with the :js:attr:"
 "`onProgress` callback option, which allows to set up a callback function "
 "that will be called regularly as the engine loads new bytes."
 msgstr ""
-"如果你的游戏需要一些时间来加载,那么显示一个自定义的加载UI来跟踪进度可能会很有"
-"用.这可以通过 :js:meth:`engine.setProgressFunc` 方法来实现,该方法允许设置一个"
-"回调函数,在引擎加载新字节时定期调用."
+"如果你的游戏需要一些时间来加载，显示一个跟踪进度的自定义加载UI可能是有用的。"
+"这可以通过 :js:attr:`onProgress` 回调选项来实现，它允许设置一个回调函数，当引"
+"擎加载新字节时，该函数将被定期调用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:182
 msgid ""
 "Be aware that in some cases ``total`` can be ``0``. This means that it "
 "cannot be calculated."
-msgstr "请注意,在某些情况下, ``total`` 可能是 ``0`` .这意味着无法计算."
+msgstr "请注意, 在某些情况下, ``total`` 可能是 ``0`` . 这意味着无法计算."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
-#, fuzzy
 msgid ""
 "If your game supports multiple languages, the :js:attr:`locale` override "
 "option can be used to force a specific locale, provided you have a valid "
@@ -339,10 +344,10 @@ msgid ""
 "which languages a user may prefer. This way the language code can be taken "
 "from the ``Accept-Language`` HTTP header, or determined by a GeoIP service."
 msgstr ""
-"如果你的游戏支持多种语言,只要你有一个有效的语言代码字符串,就可以使用 :js:"
-"meth:`engine.setLocale` 方法来设置一个特定的语言环境.使用服务器端的逻辑来确定"
-"用户可能更喜欢哪种语言可能是个好办法.这样一来,语言代码可以从 ``Accept-"
-"Language`` HTTP头中获取,或者由GeoIP服务确定."
+"如果你的游戏支持多种语言， :js:attr:`locale` 覆盖选项可以用来强制使用一个特定"
+"的语言，只要你有一个有效的语言代码字符串。使用服务器端的逻辑来确定用户可能喜"
+"欢哪种语言可能较好。这样，语言代码可以从 ``Accept-Language`` HTTP头中获取，或"
+"者由GeoIP服务决定。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid "Debugging"
@@ -357,9 +362,10 @@ msgid ""
 "This behavior can be customized by setting your own functions to handle "
 "messages."
 msgstr ""
-"要调试导出的项目,可能需要读取引擎生成的标准输出和错误流.这与编辑器控制台窗口"
-"中显示的输出类似.默认情况下,标准的 ``console.log`` 和 ``console.warning`` 分"
-"别用于输出和错误流.这种行为可以通过设置自己的函数来处理消息来定制."
+"要调试导出的项目, 可能需要读取引擎生成的标准输出和错误流. 这与编辑器控制台窗"
+"口中显示的输出类似. 默认情况下, 标准的 ``console.log`` 和 ``console."
+"warning`` 分别用于输出和错误流. 这种行为可以通过设置自己的函数来处理消息来定"
+"制."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
 msgid ""
@@ -367,12 +373,11 @@ msgid ""
 "the output stream, and the :js:attr:`onPrintError` override option to set a "
 "callback function for the error stream."
 msgstr ""
+"使用 :js:attr:`onPrint` 覆盖选项为输出流设置一个回调函数，以及 :js:attr:"
+"`onPrintError` 覆盖选项为错误流设置一个回调函数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:209
-#, fuzzy
 msgid ""
 "When handling the engine output keep in mind, that it may not be desirable "
 "to print it out in the finished product."
-msgstr ""
-"当处理引擎输出时,请记住,在生产环境中打印出来可能并不可取,如果要控制当前执行是"
-"否真的是调试构建,可以使用 ``$GODOT_DEBUG_ENABLED`` 占位符."
+msgstr "在处理引擎输出时，请记住，在成品中打印出来可能是不可取的。"

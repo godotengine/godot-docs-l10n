@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 "A classe ``Engine`` fornece métodos para carregar e inicializar projetos "
 "exportados na Web. Para configurações de exportação padrão, isto já é parte "
 "da página HTML exportada. Para entender o uso prático da classe ``Engine``, "
-"veja :ref: `Personalizar página HTML para exportação Web "
+"veja :ref:`Personalizar página HTML para exportação Web "
 "<doc_customizing_html5_shell>`."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
@@ -240,9 +240,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:109
-#, fuzzy
 msgid "The file to preload."
-msgstr "O resultado final"
+msgstr "O arquivo a ser pré-carregado."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
 msgid "If a ``string`` the file will be loaded from that path."
@@ -332,9 +331,8 @@ msgid "The location where the file will be created."
 msgstr "A ação oculta, enquanto desativada, ainda será exportada."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
-#, fuzzy
 msgid "The content of the file."
-msgstr "O caminho absoluto para o arquivo"
+msgstr "O conteúdo do arquivo."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:172
 #, fuzzy
@@ -629,10 +627,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:325
-#, fuzzy
 msgid "Files are delivered with server-side chunked compression"
 msgstr ""
-"Os arquivos são entregues com compactação em pedaços por parte do servidor"
+"Os arquivos são entregues com compressão fragmentada do lado do servidor"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:326
 msgid "Files are delivered with server-side compression on Chromium"
@@ -640,13 +637,12 @@ msgstr ""
 "Os arquivos são entregues com compactação do lado do servidor no Chromium"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:327
-#, fuzzy
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
-"Nem todos os downloads de arquivos começaram ainda(normalmente em servidores "
-"sem multi-threading )"
+"Nem todos os downloads de arquivos foram iniciados ainda (geralmente em "
+"servidores sem multi-threading)"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:329
 msgid "The current amount of downloaded bytes so far."

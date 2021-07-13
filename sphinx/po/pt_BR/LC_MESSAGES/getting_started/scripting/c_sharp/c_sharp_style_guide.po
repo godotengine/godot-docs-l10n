@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,15 +81,14 @@ msgstr ""
 "apenas no C# 7.1 ou posterior."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
-#, fuzzy
 msgid ""
 "For detailed information on C# features in different versions, please see "
 "`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
 ">`_."
 msgstr ""
-"Para obter informações detalhadas sobre os recursos do C# em diferentes "
-"versões, consulte `What's New in C# <https://docs.microsoft.com/en-us/dotnet/"
-"csharp/whats-new/>`_."
+"Para obter informações detalhadas sobre as funcionalidades do C# em "
+"diferentes versões, consulte `Novidades no C# <https://docs.microsoft.com/pt-"
+"br/dotnet/csharp/whats-new/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 msgid "Formatting"
@@ -116,13 +115,12 @@ msgstr ""
 "para arquivos `csproj`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_."
 msgstr ""
-"Use a codificação UTF-8 sem uma marca de ordem de byte (BOM <https://en."
-"wikipedia.org/wiki/Byte_order_mark>)."
+"Use a codificação UTF-8 sem uma `marca de ordem de byte <https://pt."
+"wikipedia.org/wiki/Marca_de_ordem_de_byte>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 #, fuzzy
@@ -144,14 +142,13 @@ msgid "Line breaks and blank lines"
 msgstr "Quebras de Linha e Linhas em Branco"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
-#, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
 "placing the brace associated with a control statement on the next line, "
 "indented to the same level:"
 msgstr ""
-"Para uma regra geral de recuo, siga `The 'Allman Style' <https://en."
+"Para uma regra geral de recuo, siga `o \"estilo Allman\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Allman_style>`_ que recomenda colocar a "
 "chave associada a uma declaração de controle na próxima linha, recuada para "
 "a mesmo nível:"
@@ -187,7 +184,6 @@ msgid "Between method, properties, and inner type declarations."
 msgstr "Entre o método, propriedades e declarações de tipo interno."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
-#, fuzzy
 msgid "At the end of each file."
 msgstr "No final de cada arquivo."
 
@@ -255,7 +251,6 @@ msgid "Between accessors in a single line accessor block."
 msgstr "Entre os acessadores em um bloco de acessador de linha única."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
-#, fuzzy
 msgid "After a comma which is not at the end of a line."
 msgstr "Depois de uma vírgula que não está no fim de uma linha."
 
@@ -390,9 +385,8 @@ msgid "Rather than:"
 msgstr "Ao invés de:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Funções e Variáveis"
+msgstr "Variáveis de membro"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
@@ -400,11 +394,13 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Não declare variáveis de membro se elas forem usadas apenas localmente em um "
+"método, pois torna o código mais difícil de seguir. Em vez disso, declare-as "
+"como variáveis locais no corpo do método."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
-#, fuzzy
 msgid "Local variables"
-msgstr "Variáveis Locais"
+msgstr "Variáveis locais"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
 msgid ""
@@ -412,6 +408,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Declare variáveis locais o mais pŕoximo possível de seu primeiro uso. Isto "
+"torna mais fácil seguir o código, sem ter que rolar muito para encontrar "
+"onde a variável foi declarada."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 #, fuzzy

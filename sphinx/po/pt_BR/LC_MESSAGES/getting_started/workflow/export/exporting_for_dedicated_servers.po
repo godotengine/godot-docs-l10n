@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "Exportando para a Web"
+msgstr "Exportando para servidores dedicados"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:6
 msgid ""
@@ -28,23 +27,21 @@ msgid ""
 "doesn't have a GPU or display server available, you'll need to use a server "
 "build of Godot."
 msgstr ""
-"Se você quer rodar seu projeto em um servidor dedicado, que não possue GPU "
-"ou uma tela disponível, você vai precisar usar uma build do Godot para "
-"servidor."
+"Se você quer executar seu projeto em um servidor dedicado, que não possui "
+"GPU ou uma tela disponível, você vai precisar usar uma compilação do Godot "
+"para servidor."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "oferecer suporte a mods"
+msgstr "Suporte de plataforma"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
-#, fuzzy
 msgid ""
 "**Linux:** `Download an official Linux server binary <https://godotengine."
 "org/download/server>`__. To compile a server binary from source, follow "
 "instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
-"**Linux:** `Download an official Linux server binary <https://godotengine."
+"**Linux:** `Baixe um binário oficial de servidor Linux <https://godotengine."
 "org/download/server>`__. Para compilar o binário do servidor, da fonte, siga "
 "as instruções em :ref:`doc_compiling_for_x11`."
 
@@ -57,7 +54,6 @@ msgstr ""
 "<doc_compiling_for_osx>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
-#, fuzzy
 msgid ""
 "**Windows:** There is no dedicated server build for Windows yet. As an "
 "alternative, you can use the ``--no-window`` command-line argument to "
@@ -66,20 +62,21 @@ msgid ""
 "on the Windows machine."
 msgstr ""
 "**Windows:** Não existe uma build de servidor para Windows no momento. Como "
-"alternatina, você pode usar o argumento de linha de comando ``--no-window`` "
-"para previnir que o Godot crie uma janela."
+"alternativa, você pode usar o argumento de linha de comando ``--no-window`` "
+"para prevenir que o Godot crie uma janela. Observe que mesmo com o argumento "
+"de linha de comando ``--no-window``, você precisará ter o suporte a OpenGL "
+"disponível na máquina Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
-#, fuzzy
 msgid ""
 "If your project uses C#, you'll have to use a Mono-enabled server binary."
 msgstr ""
-"Se o seu projeto usa C#, você precisará usar um servidor binário Mono-"
-"enabled."
+"Se o seu projeto usa C#, você precisará usar um servidor binário habilitado "
+"para Mono."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:24
 msgid "\"Headless\" versus \"server\" binaries"
-msgstr ""
+msgstr "Binários \"headless\" versus \"server\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:26
 msgid ""
@@ -95,7 +92,7 @@ msgid ""
 "editor functionality, and is therefore smaller and more optimized."
 msgstr ""
 "**Servidor:** Use este para rodar servidores dedicados. Este não contém a "
-"funcionalidade editor, e portanto, é menor e mais otimizado."
+"funcionalidade do editor, e portanto é menor e mais otimizado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:32
 msgid ""
@@ -103,32 +100,40 @@ msgid ""
 "be used for exporting projects. This binary *can* be used to run dedicated "
 "servers, but it's not recommended as it's larger and less optimized."
 msgstr ""
+"**Headless:** Este binário contém a funcionalidade do editor e destina-se a "
+"ser usado para exportar projetos. Este binário *pode* ser usado para rodar "
+"servidores dedicados, mas não é recomendado porque é maior e menos otimizado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:37
-#, fuzzy
 msgid "Exporting a PCK file"
-msgstr "Exportação para PC"
+msgstr "Exportando um arquivo PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Há algumas coisas para observar:"
+msgstr "Há duas maneiras de exportar um projeto para um servidor:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
+"Crie uma predefinição de exportação Linux/X11, defina um modelo de "
+"exportação Release personalizado que aponte para o binário do servidor e "
+"exporte o projeto normalmente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
 msgstr ""
+"Exporte apenas um arquivo PCK, de preferência de uma predefinição de "
+"exportação Linux/X11."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
 msgstr ""
+"Ambos os métodos devem resultar em saída idêntica. O texto abaixo descreve a "
+"abordagem do arquivo PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
 msgid ""
@@ -146,11 +151,8 @@ msgstr ""
 "PCK final, então você pode deixá-lo como está."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
-#, fuzzy
 msgid "See :ref:`doc_exporting_projects` for more information."
-msgstr ""
-"Veja :ref:`Executando código no editor <doc_running_code_in_the_editor>` "
-"para mais informações."
+msgstr "Veja :ref:`doc_exporting_projects` para mais informações."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:58
 msgid ""
@@ -158,6 +160,9 @@ msgid ""
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
+"Se você estiver exportando o projeto de um editor headless, chame o editor "
+"headless com a opção `--export-pack` enquanto estiver na pasta do projeto "
+"para exportar apenas um arquivo PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
@@ -166,10 +171,10 @@ msgid ""
 "possibly be. Support for stripping unneeded resources from a PCK for server "
 "usage is planned in a future Godot release."
 msgstr ""
-"O arquivo PCK incluirá recursos que não são necesssário para o servidor, "
+"O arquivo PCK incluirá recursos que não são necessários para o servidor, "
 "como texturas e efeitos sonoros. Isso significa que o arquivo PCK será maior "
-"do que possivelmente seria. Suporte para retirar recursos desnecessários do "
-"PCK para uso em servidor, está planejado para uma atualização futura do "
+"do que possivelmente seria. O suporte para retirar recursos desnecessários "
+"do PCK para uso em servidor está planejado para uma atualização futura do "
 "Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:69
@@ -178,15 +183,14 @@ msgid ""
 "client and dedicated server build. This can be useful if you want to ship a "
 "single archive that can be used both as a client and dedicated server."
 msgstr ""
-"O lado bom é que isso permite que o mesmo arquivo PCK seja usado, tanto por "
-"cliente, quanto por servidor. Isso pode ser útil se você deseja enviar um "
-"único arquivo que pode ser usado, tanto por cliente, quanto por servidor "
-"dedicado."
+"O lado bom é que isto permite que o mesmo arquivo PCK seja usado tanto por "
+"um cliente quanto por uma compilação dedicada de servidor. Isto pode ser "
+"útil se você deseja enviar um único arquivo que pode ser usado tanto como "
+"cliente quanto como um servidor dedicado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "Preparando o projeto"
+msgstr "Preparando a distribuição do servidor"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:76
 msgid ""
@@ -198,16 +202,15 @@ msgid ""
 "file using the ``--main-pack`` command-line argument::"
 msgstr ""
 "Depois de baixar ou compilar um binário de servidor, você deve colocá-lo na "
-"mesma pasta que o arquivo PCk que você exportou. O binário de servidor deve "
-"ter o mesmo nome que o PCK(sem contar a extensão). Isso permite que o Godot "
+"mesma pasta que o arquivo PCK que você exportou. O binário de servidor deve "
+"ter o mesmo nome que o PCK (sem contar a extensão). Isto permite que o Godot "
 "detecte e use o arquivo PCK automaticamente. Se você quer iniciar um "
 "servidor com um PCK que tem um nome diferente , você pode especificar o "
 "caminho para o arquivo PCK utilizando o argumento ``--main-pack``::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "Exportando para a Web"
+msgstr "Iniciando o servidor dedicado"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -216,12 +219,19 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"Se o cliente e o servidor fizerem parte do mesmo projeto do Godot, você terá "
+"que adicionar uma maneira de iniciar o servidor diretamente usando um "
+"argumento de linha de comando. Isto pode ser feito adicionando o seguinte "
+"trecho de código no método ``_ready()`` de sua cena principal (ou um "
+"singleton) ::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
 msgstr ""
+"Alternativamente, você pode fazer com que o servidor dedicado sempre seja "
+"inicializado se um binário headless ou de servidor for detectado:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -229,6 +239,9 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"Se seu cliente e servidor são projetos do Godot separados, seu servidor "
+"provavelmente deve ser configurado de uma maneira onde a execução da cena "
+"principal iniciará um servidor automaticamente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"
@@ -256,6 +269,6 @@ msgid ""
 "outside the scope of this tutorial)."
 msgstr ""
 "Se você já tem experiência com contêineres, você pode considerar colocar seu "
-"servidor dedicado em um `Docker <https://www.docker.com/>`__ contêiner. "
-"Dessa maneira, ele pode ser usado mais facilmente em uma configuração "
+"servidor dedicado em um contêiner `Docker <https://www.docker.com/>`__. "
+"Desta maneira, ele pode ser usado mais facilmente em uma configuração "
 "escalar automática (que está fora do escopo desse tutorial)."

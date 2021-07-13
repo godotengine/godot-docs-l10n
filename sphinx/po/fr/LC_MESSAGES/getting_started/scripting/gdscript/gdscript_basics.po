@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1577,9 +1577,7 @@ msgid ""
 msgstr ""
 "Une fonction peut être déclarée statique. Lorsqu'une fonction est statique, "
 "elle n'a pas accès aux variables membres de l'instance ou à ``self``. Ceci "
-"est principalement utile pour faire des bibliothèques de fonctions d'aide :\n"
-"PS : Dit plus explicitement, vous pouvez accéder uniquement aux variables "
-"créées à l'intérieur de la fonction statique"
+"est principalement utile pour faire des bibliothèques de fonctions helpers :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
 msgid "Statements and control flow"
@@ -1878,7 +1876,6 @@ msgstr ""
 "apparaîtra alors avec sa nouvelle icône dans l'éditeur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
-#, fuzzy
 msgid ""
 "If the script is located in the ``res://addons/`` directory, ``class_name`` "
 "will only cause the node to show up in the **Create New Node** dialog if the "
@@ -1886,8 +1883,8 @@ msgid ""
 "for more information."
 msgstr ""
 "Si le script est situé dans le répertoire ``res://addons/``, ``class_name`` "
-"ne fera apparaître le noeud dans la boîte de dialogue **Créer un nouveau "
-"noeud** que si le script fait partie d'un plugin d'éditeur *activé*. Voir :"
+"ne fera apparaître le nœud dans la boîte de dialogue **Créer un nouveau "
+"nœud** que si le script fait partie d'un plugin d'éditeur *activé*. Voir :"
 "ref:`doc_making_plugins` pour plus d'informations."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
@@ -1982,7 +1979,6 @@ msgstr ""
 "fonction explicitement lorsqu'elle est surchargée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-#, fuzzy
 msgid "Class constructor"
 msgstr "Constructeur de classe"
 
@@ -2046,11 +2042,12 @@ msgstr ""
 "même ``e`` passé à ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
+#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
-"constructor as well, not just variables. eg.::"
+"constructor as well, not just variables, e.g.::"
 msgstr ""
 "Si le constructeur ``_init`` de ``Idle.gd`` prend 0 arguments, il doit tout "
 "de même transmettre une valeur à la classe de base ``State.gd``, même si "

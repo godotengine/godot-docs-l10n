@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,13 +79,12 @@ msgstr ""
 "налагоджувач."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
-#, fuzzy
 msgid ""
 "Finally, Godot has a simple but efficient system for :ref:`creating DLCs as "
 "extra package files <doc_exporting_pcks>`."
 msgstr ""
-"Нарешті, Godot має просту, але ефективну систему для створення DLC, як "
-"додаткових пакетних файлів."
+"Нарешті, Godot має просту, але ефективну систему для :ref:`створення DLC, як "
+"додаткових пакетних файлів <doc_exporting_pcks>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
 msgid ""
@@ -94,6 +93,10 @@ msgid ""
 "several PCK files by :ref:`exporting additional PCKs <doc_exporting_pcks>` "
 "and loading them at run-time."
 msgstr ""
+"Godot поки не підтримує завантаження файлів PCK розміром більше 2 ГБ. Якщо "
+"дані експортованого проекту перевищують 2 ГБ, вам потрібно буде розділити їх "
+"на кілька файлів PCK, :ref:`експортуючи додаткові файли "
+"PCK<doc_exporting_pcks>` та завантаживши їх під час виконання."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid "On mobile"
@@ -251,6 +254,11 @@ msgid ""
 "you a list of the scenes or resources in the project, and you have to select "
 "every scene or resource you want to export."
 msgstr ""
+"**Export all resources in the project** *(Експорт всіх ресурсів у проекті)* "
+"експортуватиме кожен ресурс у проекті. **Export selected scenes** *(Експорт "
+"вибраних сцен)* і **Export selected resources** *(Експорт вибраних "
+"ресурсів)* надає вам список сцен або ресурсів у проекті, і ви повинні "
+"вибрати кожну сцену або ресурс, який потрібно експортувати."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:133
 msgid "Exporting from the command line"
@@ -300,7 +308,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:161
 msgid "PCK versus ZIP pack file formats"
-msgstr ""
+msgstr "Формати файлів PCK та ZIP"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
@@ -308,15 +316,17 @@ msgid ""
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
+"Кожен формат має свої плюси і мінуси. PCK є типовим та рекомендованим "
+"форматом для більшості випадків використання, але ви можете замість нього "
+"скористатися архівом ZIP, залежно від ваших потреб."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:167
-#, fuzzy
 msgid "**PCK format:**"
-msgstr "Платформи"
+msgstr "**Формат PCK:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:169
 msgid "Uncompressed format. Larger file size, but faster to read/write."
-msgstr ""
+msgstr "Нестиснутий формат. Більший розмір файлу, але швидше читання/запис."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid ""
@@ -324,15 +334,19 @@ msgid ""
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
+"Неможливо прочитати та записати за допомогою інструментів, які зазвичай "
+"присутні в операційній системі користувача, хоча існують `сторонні "
+"інструменти<https://github.com/hhyyrylainen/GodotPckTool>`__ для вилучення "
+"та створення файлів PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:175
-#, fuzzy
 msgid "**ZIP format:**"
-msgstr "Платформи"
+msgstr "**Формат ZIP:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:177
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
+"Стиснутий формат. Менший розмір файлу, але повільніший для читання/запису."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:178
 msgid ""
@@ -340,6 +354,9 @@ msgid ""
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
+"доступний для читання та запису за допомогою інструментів, які зазвичай "
+"присутні в операційній системі користувача. Це може бути корисно для "
+"полегшення моддингу (дивіться також :ref:`doc_exporting_pcks`)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:183
 msgid ""
@@ -348,6 +365,11 @@ msgid ""
 "use it automatically. Therefore, you have to create a *launcher script* that "
 "the player can double-click or run from a terminal to launch the project::"
 msgstr ""
+"Через `відому помилку<https://github.com/godotengine/godot/pull/42123>`__, "
+"під час використання ZIP-файлу як файлу пакета експортований двійковий файл "
+"не намагатиметься використовувати його автоматично. Тому вам потрібно "
+"створити *скрипт запуску*, який гравець може двічі клацнути або запустити з "
+"терміналу, щоб запустити проект:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:195
 msgid ""
@@ -355,3 +377,6 @@ msgid ""
 "binary. On Linux, make sure to give executable permissions to the launcher "
 "script using the command ``chmod +x launch.sh``."
 msgstr ""
+"Збережіть скрипт запуску та розмістіть його в тій же папці, що і "
+"експортований двійковий файл. У Linux переконайтеся, що надаєте виконувані "
+"дозволи скрипту запуску за допомогою команди ``chmod +x launch.sh``."

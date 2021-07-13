@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,11 +208,26 @@ msgstr ""
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "設定が完了すれば、Androidにエクスポートできるようになります!"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+msgid ""
+"If you get an error saying *\"Could not install to device.\"*, make sure you "
+"do not have an application with the same Android package name already "
+"installed on the device (but signed with a different key)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+msgid ""
+"If you have an application with the same Android package name but a "
+"different signing key already installed on the device, you **must** remove "
+"the application in question from the Android device before exporting to "
+"Android again."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Providing launcher icons"
 msgstr "ランチャーアイコンの提供"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -223,11 +238,11 @@ msgstr ""
 "すために使用されます。 Godotは高解像度アイコン(``xxxhdpi`` 密度画面用)のみを"
 "必要とし、低解像度のバリアントを自動的に生成します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid "There are two types of icons required by Godot:"
 msgstr "Godotに必要なアイコンには2つのタイプがあります:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
 #, fuzzy
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
@@ -236,7 +251,7 @@ msgstr ""
 "**Main Icon**: 『クラシック版』のアイコン。これはAndroid 8 (Oreo) 未満の全"
 "Androidバージョンにて使用されます。最低でも 192x192 ピクセルが必要。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:101
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -252,7 +267,7 @@ msgstr ""
 "ングは、ランチャーによってコントロールされます。最低でも 432x432 ピクセルが必"
 "要。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -264,7 +279,7 @@ msgstr ""
 "する\\ `すばらしい記事を公開 <https://medium.com/google-design/designing-"
 "adaptive-icons-515af294c783>`_ (英語)しています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:105
 #, fuzzy
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
@@ -276,7 +291,7 @@ msgstr ""
 "す。セーフゾーンは中心から半径 66dp (``xxxhdpi``\\ で264ピクセル) の円形で"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:107
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
@@ -284,14 +299,14 @@ msgstr ""
 "もし要求されるアイコンを指定しなかった場合、Godotは失敗するたびにフォールバッ"
 "ク チェーンから次のものを試し、置き換えます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 "**Main Icon:** 指定されたメイン アイコン -> プロジェクト アイコン -> デフォル"
 "トのGodotメインアイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
@@ -299,7 +314,7 @@ msgstr ""
 "**Adaptive Icon Foreground:** 指定された前面アイコン -> 指定されたメイン アイ"
 "コン -> プロジェクト アイコン -> デフォルトのGodot前面アイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
@@ -307,7 +322,7 @@ msgstr ""
 "**Adaptive Icon Background:** 指定された背景アイコン -> デフォルトのGodot背景"
 "アイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 #, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
@@ -318,11 +333,11 @@ msgstr ""
 "奨します。それがAndroidの全デバイスおよび全バージョンで、あなたのアプリケー"
 "ションが良く見えるようにする唯一の方法です。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid "Exporting for Google Play Store"
 msgstr "Google Playストア用にエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:119
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -331,7 +346,7 @@ msgstr ""
 "ルを使用して署名する必要があります。このようなファイルは次のように生成できま"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -343,19 +358,19 @@ msgstr ""
 "て、\\ `APK 署名 <https://developer.android.com/studio/publish/app-"
 "signing>`_ の詳細をご覧ください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:129
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "次に、Android エクスポートプリセットで次のフォームに入力します:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:133
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr "**Release:** 生成したばかりのキーストアファイルへのパスを入力します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:134
 msgid "**Release User:** Replace with the key alias."
 msgstr "**Release User:** キーエイリアスで置き換えます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
@@ -363,7 +378,7 @@ msgstr ""
 "**Release Password:** キーパスワード。現在、キーストアのパスワードとキーのパ"
 "スワードは同じでなければならないことに注意してください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
@@ -373,7 +388,7 @@ msgstr ""
 "ジョン管理システムを使用する場合は、パブリックリポジトリから削除し、 ``."
 "gitignore`` ファイルまたは同等のファイルに追加する必要があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:141
 #, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
@@ -381,11 +396,11 @@ msgstr ""
 "APKの名前を選択する際は、[** Export with Debug **]チェックボックスをオフにす"
 "ることを忘れないでください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:146
 msgid "Optimizing the APK size"
 msgstr "APKサイズの最適化"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:148
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -401,7 +416,7 @@ msgstr ""
 "テクチャのライブラリのみを含むAPKが作成されます。 ARMv7をターゲットとするアプ"
 "リケーションはARMv8デバイスでも実行できますが、その逆は当てはまりません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:155
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -419,7 +434,7 @@ msgstr ""
 "クチャをターゲットにする必要があります。通常、ARMv7およびARMv8用のAPKを作成す"
 "るだけで、現在使用されているほとんどのデバイスをカバーできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:151
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:162
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

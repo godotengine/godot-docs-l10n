@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "Alterando o ícone do aplicativo para Windows"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -27,11 +27,14 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"Por padrão, o ícone do projeto exportado será o ícone do Godot. Você "
+"provavelmente vai querer mudar isso para seu projeto. Existem dois tipos de "
+"ícones que podem ser alterados no Windows: o ícone do arquivo e o ícone da "
+"barra de tarefas."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "Criando um projeto"
+msgstr "Criando um arquivo ICO"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -40,18 +43,26 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"O Windows não usa formatos como png ou jpg para ícones de aplicativo. Em vez "
+"disso, ele usa um formato somente para Windows chamado ICO. Você pode criar "
+"seu ícone de aplicativo em qualquer programa, mas terá que convertê-lo para "
+"um arquivo ICO usando um programa como o GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"`Este tutorial em vídeo <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ "
+"explica como exportar um arquivo ICO com o GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"Também é possível converter uma imagem PNG para um arquivo ICO amigável ao "
+"hiDPI usando este comando do `ImageMagick <https://www.imagemagick.org/>`_:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
 msgid ""
@@ -75,17 +86,18 @@ msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
+"O ícone da barra de tarefas é o ícone que aparece na barra de tarefas quando "
+"seu projeto está sendo executado."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
-#, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
-"A cena principal é na qual o seu jogo iniciará. Em *Projeto -> Opções do "
-"Projeto -> Aplicação -> Rodar*, defina *Cena Principal* para \"Main.tscn\" "
-"clicando no ícone da pasta e selecionando-a."
+"Para alterar o ícone da barra de tarefas, vá para **Projeto → Opções do "
+"Projeto → Aplicação → Config → Windows Native Icon**. Clique no ícone da "
+"pasta e selecione seu arquivo ICO."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:51
 msgid ""
@@ -93,6 +105,9 @@ msgid ""
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"Esta configuração só altera o ícone do jogo exportado no Windows. Para "
+"definir o ícone para macOS, use ``Macos Native Icon``. E para qualquer outra "
+"plataforma, use a configuração ``Icon``."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
@@ -106,12 +121,19 @@ msgid ""
 "choose to enable the **Embed Pck** option for your Windows export preset in "
 "the Export dialog."
 msgstr ""
+"Existem `problemas conhecidos <https://github.com/godotengine/godot/"
+"issues/33466>`__ ao alterar o ícone do aplicativo em executáveis que "
+"incorporam um arquivo PCK. É recomendado evitar usar o rcedit por enquanto "
+"se você excolher a opção **Embed Pck** para sua predefinição de exportação "
+"no diálogo de Exportar."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
+"O ícone do arquivo é o ícone do executável que você clica para iniciar o "
+"projeto."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
@@ -119,6 +141,9 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"Antes de selecioná-lo nas opções de exportação, você precisará instalar uma "
+"ferramenta extra chamada **rcedit**. Você pode baixá-la `aqui <https://"
+"github.com/electron/rcedit/releases>`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
@@ -127,12 +152,18 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"Após o download, você precisa dizer ao Godot o caminho para o executável "
+"rcedit em seu computador. Vá para **Editor → Configurações do Editor → "
+"Export → Windows**. Clique no ícone da pasta para a entrada **rcedit**. "
+"Navegue e selecione o executável rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"Os usuários de Linux e macOS também precisarão instalar o `WINE <https://www."
+"winehq.org/>`_ para usar o rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
@@ -141,6 +172,10 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"Agora você deve ter tudo pronto para alterar o ícone do arquivo. Para fazer "
+"isso, você precisa especificar o ícone ao exportar. Vá para **Projeto → "
+"Exportar**. Assumindo que você já tenha criado uma predefinição Windows "
+"Desktop, selecione seu ícone em formato ICO no campo **Application → Icon**."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
@@ -150,12 +185,21 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
+"Se o rcedit falhar em alterar o ícone, você pode em vez disso :ref:`compilar "
+"seus próprios modelos de exportação Windows <doc_compiling_for_windows>` com "
+"o ícone alterado. Para isso, substitua o `platform/windows/godot.ico "
+"<https://github.com/godotengine/godot/blob/master/platform/windows/godot."
+"ico>`__ pelo seu próprio arquivo ICO *antes* de compilar os modelos de "
+"exportação."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
+"Uma vez feito isso, você pode especificar seus modelos de exportação como "
+"modelos de exportação personalizados na predefinição de exportação do "
+"Windows do seu projeto."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
@@ -165,6 +209,8 @@ msgstr "Testando o resultado"
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
+"Agora você pode exportar o projeto. Se funcionou corretamente, você deve ver "
+"isto:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
@@ -172,3 +218,6 @@ msgid ""
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
+"Se seu ícone não estiver aparecendo corretamente, no Windows 10, tente "
+"limpar o cache de ícones. Para isso, abra a caixa de diálogo **Executar** e "
+"digite ``ie4uinit.exe -ClearIconCache`` ou ``ie4uinit.exe -show``."

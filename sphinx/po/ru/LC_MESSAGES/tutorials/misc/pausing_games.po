@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,9 +107,10 @@ msgstr ""
 msgid "You can achieve the same result in code:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/pausing_games.rst:62
+#: ../../docs/tutorials/misc/pausing_games.rst:69
+#, fuzzy
 msgid ""
-"By default all nodes have this property in the \"Inherit\" state. This "
+"By default, all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
 "property is set on the parent node. If the parent is set to \"Inherit\" , "
 "then the grandparent will be checked and so on. Ultimately, if a state can't "
@@ -125,11 +126,11 @@ msgstr ""
 "будет использовано состояние SceneTree/ Это означает, что по умолчанию, "
 "когда игра ставится на паузу каждая нода будет остановлена."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:70
+#: ../../docs/tutorials/misc/pausing_games.rst:77
 msgid "So the three possible states for a node are:"
 msgstr "Существует три возможных состояния для ноды:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:72
+#: ../../docs/tutorials/misc/pausing_games.rst:79
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
@@ -137,7 +138,7 @@ msgstr ""
 "**Inherit**: Процесс зависит от состояния родителя, родителя-родителя, итд. "
 "Т.е первый родитель который будет иметь не-Inherit состояние."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:74
+#: ../../docs/tutorials/misc/pausing_games.rst:81
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -145,7 +146,7 @@ msgstr ""
 "**Stop**: Останавливает ноду в любом случае (и потомков в состоянии "
 "Inherit). Когда пауза происходит эта нода не будет обрабатываться."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:76
+#: ../../docs/tutorials/misc/pausing_games.rst:83
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -153,11 +154,11 @@ msgstr ""
 "**Process**: Обрабатывать эту ноду в любом случае (и потомков в состоянии "
 "Inherit). Вне зависимости от паузы эта нода будет обрабатываться."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:80
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
 msgstr "Пример"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:89
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -165,7 +166,7 @@ msgstr ""
 "Например создадим поп-ап или панель с элементами управления внутри, "
 "установим режим паузы в \"Process\" а затем скроем её:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:87
+#: ../../docs/tutorials/misc/pausing_games.rst:94
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -175,7 +176,7 @@ msgstr ""
 "потомки потомков будут наследовать это состояние. Таким образом, эта часть "
 "дерева сцены продолжит работу во время паузы."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:91
+#: ../../docs/tutorials/misc/pausing_games.rst:98
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
@@ -183,10 +184,10 @@ msgstr ""
 "Наконец, сделайте так чтобы нажатая кнопка паузы (любая кнопка подойдёт), "
 "включала паузу и показывала экран паузы."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:109
+#: ../../docs/tutorials/misc/pausing_games.rst:116
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr "Для отключения паузы, сделайте обратное когда экран паузы закрывается:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:127
+#: ../../docs/tutorials/misc/pausing_games.rst:134
 msgid "And that should be all!"
 msgstr "Вот и всё!"

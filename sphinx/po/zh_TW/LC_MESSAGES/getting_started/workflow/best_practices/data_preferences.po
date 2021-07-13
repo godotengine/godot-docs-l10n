@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,8 +191,9 @@ msgstr ""
 "的副本 (一樣是常數時間，但比較慢)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
+#, fuzzy
 msgid ""
-"**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
+"**Get, Set:** Fastest *by position*. E.g. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
 "**取值、設值：** **依位置** 最快。如，可要求第 0、第 2 與第 10 筆記錄…等。但"
@@ -489,17 +490,17 @@ msgstr ""
 "與客製化資料結構不相關的東西，因此，在自行製作樹狀結構的時候，可以考慮自行建"
 "立自製的 Node 型別。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
 msgstr "就這樣，我們能製作適用於特定功能的客製化結構。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:280
 msgid "Enumerations: int vs. string"
 msgstr "列舉類型：整數 vs. 字串"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:282
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
@@ -511,7 +512,7 @@ msgstr ""
 "GDScript 中使用 ``export`` 關鍵字時使用)。這裡便沿伸出了一個問題，「要使用哪"
 "一個？」"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
@@ -521,7 +522,7 @@ msgstr ""
 "的，而不是 Godot 中所有的腳本語言都這樣。GDScript 首先考慮的是易用性而非效"
 "能。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
@@ -530,7 +531,7 @@ msgstr ""
 "但技術上來說，整數型別的比較 (常數時間) 比字串比較 (線型時間) 要來得快。如果"
 "想保持與其他語言一樣的慣例，則應該用整數。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -542,7 +543,7 @@ msgstr ""
 "印出 MY_ENUM 會得到 ``5`` 這樣的值，而不是 ``\"MyEnum\"`` 。如果要印出整數列"
 "舉類型，就必須要寫一個將字串值映射到各個列舉值的字典 (Dictionary)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -552,13 +553,13 @@ msgstr ""
 "若使用列舉類型的主要是為了要印出數值，而且想將相關的概念群組化，則可以使用字"
 "串。這樣一來，就不需要在印出數值時使用另一個分開的資料結構。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:307
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
 "\\ AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:309
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -566,7 +567,7 @@ msgstr ""
 "在哪個情況下該用哪個 Godot 動畫類別？對於新的 Godot 使用者來說，可能無法馬上"
 "清楚答案。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -574,15 +575,15 @@ msgstr ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` 是引擎繪製為動畫循環的紋理貼"
 "圖，而不是靜態圖片。使用者可以進行如下操作……"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr "在紋理貼圖的各個部分移動的速率 (FPS)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:318
 msgid "the number of regions contained within the texture (frames)."
 msgstr "紋理貼圖中包含的區域數量 (幀數)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:320
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -593,7 +594,7 @@ msgstr ""
 "域的順序繪製。好消息是，這個過程不會在引擎這邊產生額外的邏輯。但壞消息是，使"
 "用者幾乎沒什麼控制權。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:325
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -610,7 +611,7 @@ msgstr ""
 "<class_TileSet>` 中，然後跟 :ref:`TileMap <class_TileMap>` 整合使用，來製作許"
 "多會在單一繪製呼叫中同時算繪的自動動畫背景。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -623,7 +624,7 @@ msgstr ""
 "畫，並且可以控制動畫的播放速度、區域偏移量與方向。這種使用方式盒適合用來控制"
 "基於影格的 2D 動畫。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -635,7 +636,7 @@ msgstr ""
 "於影格的動畫之其他周邊元素)，則需要使用 :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` 來搭配 AnimatedSprite。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:345
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
@@ -643,11 +644,11 @@ msgstr ""
 "當想設計更複雜的 2D 動畫系統時，AnimationPlayer 也是必要工具。更複雜的 2D 動"
 "畫系統包含…"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr "**剪影動畫：** 在執行階段編輯 Sprite 的變換。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:350
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -656,11 +657,11 @@ msgstr ""
 "**2D 網格動畫：** 為 Sprite 的材質定義一個區域，並將其骨骼固定在裡面。接著我"
 "們為骨骼製作動畫，依據骨骼之間互相的關係來縮放紋理貼圖。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:355
 msgid "A mix of the above."
 msgstr "上述類型的組合。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:357
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

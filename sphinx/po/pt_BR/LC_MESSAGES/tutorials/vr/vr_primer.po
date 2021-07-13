@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,6 +150,17 @@ msgid ""
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
+":ref:`ARVROrigin <class_ARVROrigin>` é um nó importante, você deve ter um e "
+"apenas um deles em algum lugar em sua cena. Este nó mapeia o centro de seu "
+"espaço de rastreamento do mundo real para um local em seu mundo virtual. "
+"Todo o resto é rastreado posicionalmente em relação a este ponto. Onde esse "
+"ponto está exatamente difere de uma implementação para outra, mas o melhor "
+"exemplo para entender como esse nó funciona é dar uma olhada em um local em "
+"escala de sala. Embora tenhamos funções para ajustar o ponto para centralizá-"
+"lo no player por padrão, o ponto de origem será o local central da sala em "
+"que você está. Conforme você anda fisicamente pela sala, a localização do "
+"HMD é rastreada em relação a esta posição central e o rastreamento é "
+"espelhado no mundo virtual."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
@@ -241,46 +252,45 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_primer.rst:131
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
-"an open standard for VR and AR software. This plugin is early in "
-"development, only supports Linux and requires extra setup described in the "
-"repository."
+"an open standard for VR and AR software. Tested with SteamVR, Monada and "
+"Oculus OpenXR runtimes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:135
+#: ../../docs/tutorials/vr/vr_primer.rst:134
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:137
+#: ../../docs/tutorials/vr/vr_primer.rst:136
 msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:139
+#: ../../docs/tutorials/vr/vr_primer.rst:138
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:140
+#: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:142
+#: ../../docs/tutorials/vr/vr_primer.rst:141
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:146
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:148
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:151
+#: ../../docs/tutorials/vr/vr_primer.rst:150
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -296,8 +306,21 @@ msgid ""
 "scale. For instance, setting this to a value of 10 changes our coordinate "
 "system so 10 units = 1 meter."
 msgstr ""
+"A primeira são as nossas unidades. Em jogos 3D normais, você não precisa "
+"pensar muito sobre as unidades. Contanto que tudo esteja na mesma escala, "
+"uma caixa com o tamanho de 1 por 1 por 1 unidade pode ser de qualquer "
+"tamanho, desde um filho que você pode segurar na mão até algo do tamanho de "
+"um edifício. Em AR e VR, isso muda porque as coisas em seu mundo virtual são "
+"mapeadas para coisas no mundo real. Se você avança 1 metro no mundo real, "
+"mas só avança 1 cm no mundo virtual, você tem um problema. O mesmo com a "
+"posição de seus controladores; se não aparecerem no espaço relativo correto, "
+"quebra a imersão para o jogador. A maioria das plataformas VR, incluindo "
+"nosso servidor AR/VR, assume que 1 unidade = 1 metro. O servidor AR/VR, no "
+"entanto, possui uma propriedade que, por conveniência, também é exposta no "
+"nó ARVROrigin chamada de escala mundial. Por exemplo, definir isso para um "
+"valor de 10 muda nosso sistema de coordenadas, então 10 unidades = 1 metro."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:162
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
 "Especially VR taxes your game a lot more than most people realize. For "
@@ -305,7 +328,7 @@ msgid ""
 "there are three factors that make life extra difficult:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:166
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -313,7 +336,7 @@ msgid ""
 "in rendering images for both eyes"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:169
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -322,7 +345,7 @@ msgid ""
 "to ensure your users don't get motion sickness right off the bat."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:173
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -330,7 +353,7 @@ msgid ""
 "is less of an issue for most AR applications."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_primer.rst:177
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

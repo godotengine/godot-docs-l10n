@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,13 +71,12 @@ msgstr ""
 "outils de ligne de commande pour Xcode si vous ne les avez pas déjà."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
-#, fuzzy
 msgid ""
 "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
 "you can easily install SCons and yasm using the following command::"
 msgstr ""
-"Si vous avez installé `Homebrew <https://brew.sh/>`_, vous pouvez facilement "
-"installer SCons et yasm en utilisant la commande suivante :"
+"De même, si vous avez `MacPorts <https://www.macports.org/>`_ installé, vous "
+"pouvez facilement installer SCons et yasm en utilisant la commande suivante :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:33
 msgid ""
@@ -101,11 +100,8 @@ msgid "To compile for Intel (x86-64) powered Macs, use::"
 msgstr "Pour compiler pour les Macs équipés Intel (x86-64), utilisez :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:45
-#, fuzzy
 msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
-msgstr ""
-"Pour compiler pour les Macs équipés Apple Silicon (ARM64), utilisez "
-"(uniquement pour Godot 3.2.3+) :"
+msgstr "Pour compiler pour les Macs équipés Apple Silicon (ARM64), utilisez :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:49
 msgid ""
@@ -197,7 +193,6 @@ msgid "For ARM64 (Apple M1)::"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:106
-#, fuzzy
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands blocks and then use ``lipo`` to bundle them together::"

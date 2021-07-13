@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Camadas de canvas"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Janela de Exibição e itens de Canvas"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -33,6 +33,11 @@ msgid ""
 "Each item will inherit its parent's transform. This means that when the "
 "parent is moved, the children will move too."
 msgstr ""
+"Nós 2D normais, como :ref:`Node2D <class_Node2D>` ou :ref:`Control "
+"<class_Control>` ambos herdam de :ref:`CanvasItem <class_CanvasItem>`, que é "
+"a base para todos os nós 2D. CanvasItems podem ser organizados em árvores. "
+"Cada item herdará a transformação de seu pai. Isso significa que quando o "
+"pai é movido, os filhos também se movem."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
@@ -40,6 +45,8 @@ msgid ""
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
+"Os nós CanvasItem, e nós herdados deles, são filhos diretos ou indiretos de "
+"uma :ref:`Viewport <class_Viewport>`, e serão exibidos através dela."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -49,6 +56,11 @@ msgid ""
 "it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"Uma Viewport tem a propriedade :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>`, que permite aplicar uma "
+"transformação personalizada :ref:`Transform2D <class_Transform2D>` à "
+"hierarquia CanvasItem que a contém. Nós como :ref:`Camera2D "
+"<class_Camera2D>` funcionam alterando essa transformação."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -56,18 +68,25 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"Efeitos como rolagem são melhor alcançados manipulando a propriedade de "
+"transformação do canvas. Essa abordagem é mais eficiente do que mover o item "
+"do canvas raiz (e, portanto, toda a cena)."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
+"Normalmente, porém, não queremos que *tudo* no jogo ou aplicativo estejam "
+"sujeitos à transformação de canvas. Exemplos disso são:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr ""
+"**Planos de fundo Paralax**: planos de fundo que se movem mais lentamente do "
+"que o resto do estágio."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -76,16 +95,22 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**UI**: Pense em uma interface de usuário (UI) ou uma head-up display (HUD) "
+"sobreposta à nossa visão do mundo do jogo. Queremos um contador de vida, "
+"exibição de pontuação e outros elementos para manter suas posições na tela "
+"mesmo quando nossa visão do mundo do jogo está mudando."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
 msgstr ""
+"**Transições**: Podemos desejar que os efeitos visuais usados para as "
+"transições (fades, misturas) permaneçam em um local fixo na tela."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
-msgstr ""
+msgstr "Como esses problemas podem ser resolvidos em uma única árvore de cena?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
@@ -101,6 +126,14 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
+"A resposta é :ref:`CanvasLayer <class_CanvasLayer>`, que é um nó que "
+"adiciona uma camada de renderização 2D separada para todos os seus filhos e "
+"netos. Filhos da janela de visualização desenharão por padrão na camada "
+"\"0\", enquanto um CanvasLayer desenhará em qualquer camada numérica. "
+"Camadas com um número maior serão desenhadas acima daquelas com um número "
+"menor. CanvasLayers também têm sua própria transformação e não dependem da "
+"transformação de outras camadas. Isso permite que a UI seja fixada no espaço "
+"da tela enquanto nossa visão do mundo do jogo muda."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -108,6 +141,9 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"Um exemplo disso é a criação de um fundo de paralax. Isso pode ser feito com "
+"um CanvasLayer na camada \"-1\". A tela com os pontos, contador de vida e "
+"botão de pausa também pode ser criada na camada \"1\"."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
@@ -118,6 +154,8 @@ msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"CanvasLayers são independentes da ordem da árvore e dependem apenas do "
+"número da camada, portanto, podem ser instanciados quando necessário."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
@@ -129,3 +167,10 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"CanvasLayers não são necessários para controlar a ordem de desenho dos nós. "
+"A maneira padrão de garantir que um nó seja desenhado corretamente 'na "
+"frente' ou 'atrás' dos outros é manipular a ordem dos nós no painel da cena. "
+"Talvez contraintuitivamente, os nós superiores no painel de cena são "
+"desenhados *atrás* dos inferiores na janela de exibição. Os nós 2d também "
+"possuem uma propriedade para controlar sua ordem de desenho (veja :ref:"
+"`Node2D.z_index <class_Node2D_property_z_index>`)."

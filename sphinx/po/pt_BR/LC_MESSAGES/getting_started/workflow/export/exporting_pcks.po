@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,9 +100,8 @@ msgid "more modular project structure"
 msgstr "estrutura de projeto mais modular"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
-#, fuzzy
 msgid "users don't have to replace the entire game"
-msgstr "usuários não têm que substituir todo o jogo"
+msgstr "os usuários não precisam substituir o jogo inteiro"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -234,7 +233,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr "Abrindo arquivos PCK em tempo de execução"
+msgstr "Abrindo arquivos PCK durante a execução"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""
@@ -251,7 +250,6 @@ msgstr ""
 "contém uma cena de teste \"mod_scene.tscn\" em sua raiz."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
-#, fuzzy
 msgid ""
 "By default, if you import a file with the same file path/name as one you "
 "already have in your project, the imported one will replace it. This is "
@@ -260,12 +258,12 @@ msgid ""
 "of creating patches for one's own game. A PCK file of this kind can fix the "
 "content of a previously loaded PCK."
 msgstr ""
-"Se você importar um arquivo com o mesmo caminho/nome do arquivo que você já "
-"tem em seu projeto, o importado irá substituí-lo. Isso é algo para se ter "
-"cuidado ao criar DLC ou mods (resolvido facilmente com uma ferramenta "
-"isolando mods para uma subpasta de mods específicos). No entanto, também é "
-"uma maneira de criar patches para o próprio jogo. Um arquivo PCK deste tipo "
-"pode corrigir o conteúdo de um PCK anteriormente carregado."
+"Por padrão, se você importar um arquivo com o mesmo caminho/nome do arquivo "
+"que você já tem em seu projeto, o importado irá substituí-lo. Isso é algo "
+"para se ter cuidado ao criar DLC ou mods (resolvido facilmente com uma "
+"ferramenta isolando mods para uma subpasta de mods específicos). No entanto, "
+"também é uma maneira de criar patches para o próprio jogo. Um arquivo PCK "
+"deste tipo pode corrigir o conteúdo de um PCK anteriormente carregado."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
 msgid ""
@@ -273,17 +271,20 @@ msgid ""
 "`ProjectSettings.load_resource_pack() "
 "<class_ProjectSettings_method_load_resource_pack>`."
 msgstr ""
+"Para cancelar este comportamento, passe ``false`` como o segundo argumento "
+"para :ref:`ProjectSettings.load_resource_pack() "
+"<class_ProjectSettings_method_load_resource_pack>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:127
-#, fuzzy
 msgid ""
 "For a C# project, you need to build the DLL and place it in the project "
 "directory first. Then, before loading the resource pack, you need to load "
 "its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
 msgstr ""
 "Para um projeto em C#, você precisa construir a DLL e colocá-la no diretório "
-"do projeto primeiro. Depois, antes de carregar o pacote de recursos, você "
-"precisa carregar a DLL da seguinte forma: ``Assembly.LoadFile(\"mod.dll\")``"
+"do projeto primeiro. Em seguida, antes de carregar o pacote de recursos, "
+"você precisa carregar a DLL da seguinte forma: ``Assembly.LoadFile(\"mod.dll"
+"\")``"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
 msgid "Summary"

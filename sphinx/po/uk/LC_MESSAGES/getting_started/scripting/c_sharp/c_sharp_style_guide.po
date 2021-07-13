@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,6 +161,7 @@ msgstr "Для простих ініціалізаторів об'єктів, м
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr ""
+"Для абстрактних автоматичних властивостей, оголошень індексатора або подій."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 msgid "Insert a blank line:"
@@ -361,9 +362,8 @@ msgid "Rather than:"
 msgstr "Замість:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Змінні середовища"
+msgstr "Змінні-члени"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
@@ -371,9 +371,11 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Не оголошуйте змінні-члени, якщо вони використовуються лише локально в "
+"методі, оскільки це ускладнює код. Натомість оголосіть їх як локальні змінні "
+"в тілі методу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
-#, fuzzy
 msgid "Local variables"
 msgstr "Локальні змінні"
 
@@ -383,6 +385,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Оголошуйте локальні змінні якомога ближче до їх першого використання. Це "
+"полегшує відстеження коду, без необхідності прокручувати занадто багато, щоб "
+"знайти де оголошено змінну."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"
@@ -408,7 +413,7 @@ msgstr "Використовуйте явні модифікатори дост�
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:317
 msgid "Use properties instead of non-private fields."
-msgstr ""
+msgstr "Використовуйте властивості замість неприватних полів."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:318
 msgid ""
@@ -449,3 +454,6 @@ msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
 msgstr ""
+"Використовуйте безпечне переведення (каст), коли існує можливість, що "
+"значення має інший тип, в противному випадку використовуйте - пряме "
+"переведення (каст)."

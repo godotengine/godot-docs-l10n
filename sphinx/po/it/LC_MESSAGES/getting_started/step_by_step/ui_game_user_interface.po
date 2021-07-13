@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -472,6 +472,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
+#, fuzzy
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -480,8 +481,16 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
+"Entrerai nella risorsa ``Dynamic Font``. Apri la categoria ``Font``` e "
+"clicca sul campo accanto a ``Font Data``. Clicca sul pulsante ``Carica``. "
+"Nel browser dei file, naviga fino alla cartella assets/font e fai doppio "
+"clic su ``Comfortaa-Bold.ttf`` per aprirlo. Dovresti vedere l'aggiornamento "
+"del font nella finestra. Apri la categoria delle impostazioni per cambiare "
+"la dimensione del carattere. Imposta la proprietà ``Size`` ad un valore più "
+"alto, come ``24`` o ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
+#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -492,10 +501,20 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
+"Ora abbiamo bisogno che la linea di base del testo, il bordo inferiore del "
+"numero, si allinei con la texture HP sulla sinistra. Per farlo, sempre nella "
+"risorsa ``DynamicFont``, puoi modificare la proprietà ``Bottom`` sotto la "
+"categoria ``Extra Spacing``. Aggiunge un po' di imbottitura in basso al "
+"testo. Clicca sul nodo ``Number`` nella scheda Scene per tornare alle "
+"proprietà del nodo e cambia il ``Valign`` in ``Bottom``. Per regolare la "
+"linea di base del testo, clicca nuovamente sul campo del font sotto la "
+"categoria ``Custom Font`` e regola la proprietà ``Bottom`` fino a quando il "
+"testo si allinea con il nodo ``Title``. Ho usato un valore di ``2`` pixel."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
+#, fuzzy
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "Con un valore Bottom di 2 pixel, il Numero si allinea con il Titolo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
@@ -519,6 +538,7 @@ msgstr ""
 "tutto ciò di cui abbiamo bisogno."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
+#, fuzzy
 msgid ""
 "Select the Bar node and add a ``TextureProgress`` inside of it. Name it "
 "``Gauge``. In the inspector unfold the ``Textures`` section. Head to the "
@@ -527,6 +547,12 @@ msgid ""
 "onto the ``Progress`` slot. Under the ``Range`` class in the inspector, "
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
+"Selezionate il nodo Bar e aggiungete una ``TextureProgress`` al suo interno. "
+"Chiamatelo ``Gauge``. Nell'ispettore dispiega la sezione ``Texture``. Vai al "
+"dock FileSystem e trascina la texture ``lifebar_bg.png`` sullo slot "
+"``Under``. Fai lo stesso con l'immagine ``lifebar_fill.png`` e trascinala "
+"sullo slot ``Progress``. Sotto la classe ``Range`` nell'ispettore, cambia la "
+"proprietà ``Value`` a ``50`` per vedere l'indicatore riempirsi."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
@@ -554,14 +580,21 @@ msgstr ""
 "barra. Quindi lo duplicheremo e lo useremo come modello."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
+#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
 "duplicate it. Drag and drop the new node under the ``Counters`` "
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
+"Sotto il nodo ``Bar``, seleziona ``Count`` e premi :kbd:`Ctrl + D` per "
+"duplicarlo. Trascina il nuovo nodo sotto la ``Counters`` ``HBoxContainer`` "
+"in fondo all'albero della scena. Dovresti vedere che si ridimensiona "
+"automaticamente. Non preoccuparti di questo per ora, sistemeremo le "
+"dimensioni presto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
+#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -570,12 +603,19 @@ msgid ""
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
 msgstr ""
+"Rinomina il nodo ``Count2`` in ``Counter``. A differenza delle barre, "
+"vogliamo che il numero sia a sinistra e un'icona a destra. La configurazione "
+"è la stessa: abbiamo bisogno di uno sfondo (un ``NinePatchRect``), il titolo "
+"e i nodi numero. Il nodo ``Title`` è un ``TextureRect``, quindi è quello che "
+"ci serve per visualizzare l'icona. Nell'albero della scena, seleziona il "
+"nodo ``Title`` e rinominalo in ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
 msgstr "Ecco come dovrebbe apparire il tuo albero dei nodi"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
+#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -584,12 +624,21 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
+"Con il nodo ``Icon`` selezionato, nell'ispettore, scorri in alto per vedere "
+"lo slot ``Texture``. Vai al dock FileSystem sulla sinistra e seleziona la "
+"``bombs_icon.png``. Trascinala e rilasciala nello slot ``Texture``. Nella "
+"scheda Scene seleziona entrambi i nodi ``Icon`` e ``Number``. Clicca sul "
+"menu Layout nella barra degli strumenti nella parte superiore della finestra "
+"e seleziona ``Full Rect``. Entrambi i nodi si aggiorneranno per adattarsi "
+"alla dimensione dello ``Sfondo``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
+#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
-msgstr ""
+msgstr "I nodi si ancorano all'intero Sfondo, ma la loro posizione è spenta"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
+#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -597,10 +646,16 @@ msgid ""
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
+"Cambiamo le proprietà di allineamento del ``Number`` per spostarlo a "
+"sinistra e al centro dello ``Sfondo``. Seleziona il nodo ``Number``, cambia "
+"la sua proprietà ``Align`` a sinistra e la proprietà ``Valign`` al centro. "
+"Poi ridimensiona un po' il suo bordo sinistro per aggiungere del padding tra "
+"il bordo sinistro dello ``Sfondo`` e il testo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
+#, fuzzy
 msgid "The Number node aligned to the left and center"
-msgstr ""
+msgstr "Il nodo Number allineato a sinistra e al centro"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
 msgid ""

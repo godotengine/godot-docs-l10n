@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,18 +90,17 @@ msgid "Script setup"
 msgstr "GDScript"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
-#, fuzzy
 msgid ""
 "The feature of inheritance is useful for getting started with this design "
 "principle. A class should be created that describes the base features of the "
 "player. For now, a player will be limited to two actions: **move left**, "
 "**move right**. This means there will be two states: **idle** and **run**."
 msgstr ""
-"A funcionalidade de herança é útil para começar com esse princípio de "
+"A funcionalidade de herança é útil para começar com este princípio de "
 "design. Uma classe deve ser criada que descreva as funcionalidades básicas "
 "do jogador. Por enquanto, um jogador estará limitado a duas ações: **move "
-"left**, ** move right**. Isso significa que haverá dois estados: **idle** e "
-"** run**."
+"left**, **move right**. Isso significa que haverá dois estados: **idle** e "
+"**run**."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
@@ -142,15 +141,14 @@ msgstr ""
 "cohesion.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:78
-#, fuzzy
 msgid ""
 "Second, there are some methods in the script for moving, but no "
 "implementation. The state script just uses ``pass`` to show that it will not "
 "execute any instructions when the methods are called. This is important."
 msgstr ""
-"Segundo, existem alguns métodos no script para mover, mas nenhuma "
+"Em segundo lugar, existem alguns métodos no script para mover, mas nenhuma "
 "implementação. O script de estado apenas usa ``pass`` para mostrar que não "
-"executará nenhuma instrução quando os métodos forem chamados. Isto é "
+"executará nenhuma instrução quando os métodos forem chamados. Isso é "
 "importante."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
@@ -251,7 +249,6 @@ msgid "Project setup"
 msgstr "Configuração do projeto"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:236
-#, fuzzy
 msgid ""
 "This tutorial made an assumption that the node it would be attached to "
 "contained a child node which is an :ref:`AnimatedSprite "
@@ -260,11 +257,12 @@ msgid ""
 "idle and run animations. Also, the top-level node is assumed to be a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
-"Este tutorial fez uma suposição que o nó seria anexado que contém um nó "
-"filho é um :ref:`AnimatedSprite <class_AnimatedSprite>`. Também existe a "
-"suposição de que :ref:`AnimatedSprite <class_AnimatedSprite>` tenha pelo "
-"menos duas animações, as animações idle e run. Além disso, supõe-se que o nó "
-"de nível superior seja :ref:`KinematicBody2D <class_KinematicBody2D>`."
+"Este tutorial assumiu que o nó ao qual seria anexado continha um nó filho "
+"que é um :ref:`AnimatedSprite <class_AnimatedSprite>`. Também existe a "
+"suposição de que este :ref:`AnimatedSprite <class_AnimatedSprite>` tem pelo "
+"menos duas animações, as animações inativas e de execução. Além disso, o nó "
+"de nível superior é considerado um :ref:`KinematicBody2D "
+"<class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:243
 #, fuzzy

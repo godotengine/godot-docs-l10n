@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,14 +26,14 @@ msgid ""
 "Many of Godot's debugging tools, including the debugger, can be found in the "
 "debugger panel at the bottom of the screen. Click on **Debugger** to open it."
 msgstr ""
-"在屏幕下方的调试器面板中,可以找到包括调试器在内的许多Godot的调试工具.点击 **"
-"调试器** 即可打开."
+"在屏幕下方的调试器面板中, 可以找到包括调试器在内的许多Godot的调试工具. 点击 "
+"**调试器** 即可打开."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:11
 msgid ""
 "The debugger panel is split into several tabs, each focusing on a specific "
 "task."
-msgstr "调试器面板被分成几个标签,每个标签专注于一个特定的任务."
+msgstr "调试器面板被分成几个标签, 每个标签专注于一个特定的任务."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:14
 msgid "Debugger"
@@ -43,7 +43,7 @@ msgstr "调试器"
 msgid ""
 "The Debugger tab opens automatically when the GDScript compiler reaches a "
 "breakpoint in your code."
-msgstr "当GDScript编译器在你的代码中达到一个断点时,调试器选项卡会自动打开."
+msgstr "当GDScript编译器在你的代码中达到一个断点时, 调试器选项卡会自动打开."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:19
 msgid ""
@@ -51,8 +51,8 @@ msgid ""
 "information about the state of the object, and buttons to control the "
 "program's execution."
 msgstr ""
-"它给你提供了一个 `栈跟踪<https://en.wikipedia.org/wiki/Stack_trace>`__ ,对象"
-"的状态信息,以及控制程序执行的按钮."
+"它给你提供了一个 `栈跟踪 <https://en.wikipedia.org/wiki/Stack_trace>`__ , 对"
+"象的状态信息, 以及控制程序执行的按钮."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:23
 msgid "You can use the buttons in the top-right corner to:"
@@ -62,7 +62,7 @@ msgstr "你可以使用右上角的按钮来:"
 msgid ""
 "Skip all breakpoints. That way, you can save breakpoints for future "
 "debugging sessions."
-msgstr "跳过所有断点.这样一来,你就可以为将来的调试会话保存断点."
+msgstr "跳过所有断点. 这样一来, 你就可以为将来的调试会话保存断点."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:27
 msgid "Copy the current error message."
@@ -73,21 +73,21 @@ msgid ""
 "**Step Into** the code. This button takes you to the next line of code, and "
 "if it's a function, it steps line-by-line through the function."
 msgstr ""
-"**步入** 代码.这个按钮将带你进入下一行代码,如果是函数,它将逐行进入函数."
+"**步入** 代码. 这个按钮将带你进入下一行代码, 如果是函数, 它将逐行进入函数."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:30
 msgid ""
 "**Step Over** the code. This button goes to the next line of code, but it "
 "doesn't step line-by-line through functions."
-msgstr "**步过** 的代码.这个按钮会进入下一行代码,但它不会逐行跳过函数."
+msgstr "**步过** 的代码. 这个按钮会进入下一行代码, 但它不会逐行跳过函数."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:32
 msgid "**Break**. This button pauses the game's execution."
-msgstr "**Break**. 这个按钮会暂停执行游戏."
+msgstr "**Break** . 这个按钮会暂停执行游戏."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:33
 msgid "**Continue**. This button resumes the game after a breakpoint or pause."
-msgstr "**继续**.该按钮在断点或暂停后恢复游戏."
+msgstr "**继续** . 该按钮在断点或暂停后恢复游戏."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:37
 msgid ""
@@ -95,8 +95,8 @@ msgid ""
 "<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
 "debugger."
 msgstr ""
-"如果代码是 :ref:`在线程<doc_using_multiple_threads>` 中运行,断点不会中断.这是"
-"当前GDScript调试器的一个限制."
+"如果代码是 :ref:`在线程 <doc_using_multiple_threads>` 中运行, 断点不会中断. "
+"这是当前GDScript调试器的一个限制."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
@@ -110,7 +110,7 @@ msgstr "这是运行游戏时打印错误和警告信息的地方."
 #: ../../docs/tutorials/debug/debugger_panel.rst:46
 msgid ""
 "You can disable specific warnings in **Project Settings > Debug > GDScript**."
-msgstr "您可以在**项目设置>调试> GDScript**中禁用特定的警告."
+msgstr "您可以在 **项目设置>调试> GDScript** 中禁用特定的警告."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
@@ -120,7 +120,7 @@ msgstr "性能分析器"
 msgid ""
 "The debugger comes with three profilers for your processor, network "
 "operations, and video memory."
-msgstr "调试器带有三个剖析器,分别用于你的处理器、网络操作和视频内存."
+msgstr "调试器带有三个剖析器, 分别用于你的处理器, 网络操作和视频内存."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:54
 msgid ""
@@ -138,10 +138,10 @@ msgid ""
 "records won't go away unless you click clear, or close the game, reopen it "
 "and start the profiler again."
 msgstr ""
-"与其他调试工具不同,剖析器不会自动启动.它可以在游戏过程中随时按启动按钮启动.你"
-"甚至可以在打开游戏之前启动剖析器,以剖析启动性能.它也可以在游戏运行时启动和停"
-"止,而不会丢失上次运行时的信息.它记录的信息不会消失,除非你点击清除,或者关闭游"
-"戏,重新打开游戏并再次启动剖析器."
+"与其他调试工具不同, 剖析器不会自动启动. 它可以在游戏过程中随时按启动按钮启"
+"动. 你甚至可以在打开游戏之前启动剖析器, 以剖析启动性能. 它也可以在游戏运行时"
+"启动和停止, 而不会丢失上次运行时的信息. 它记录的信息不会消失, 除非你点击清"
+"除, 或者关闭游戏, 重新打开游戏并再次启动剖析器."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:65
 msgid ""
@@ -150,9 +150,9 @@ msgid ""
 "are everything that contributes to frame time, and they should each have a "
 "value for time and calls for the current frame you are looking at."
 msgstr ""
-"启动和停止剖析器后,你应该看到左边有被跟踪的东西,右边有一个图表.左边列出的项目"
-"是一切有助于查看帧时间的东西,它们应该每个都有一个时间的值,并对你正在看的当前"
-"帧进行调用."
+"启动和停止剖析器后, 你应该看到左边有被跟踪的东西, 右边有一个图表. 左边列出的"
+"项目是一切有助于查看帧时间的东西, 它们应该每个都有一个时间的值, 并对你正在看"
+"的当前帧进行调用."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:70
 msgid ""
@@ -160,8 +160,8 @@ msgid ""
 "looking at. You can change this by using the up or down arrows, typing in "
 "the frame number, or clicking on the graph."
 msgstr ""
-"右上角的帧号告诉你当前正在查看的帧.你可以通过使用向上或向下箭头,输入帧号,或点"
-"击图形来更改."
+"右上角的帧号告诉你当前正在查看的帧. 你可以通过使用向上或向下箭头, 输入帧号, "
+"或点击图形来更改."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:74
 msgid ""
@@ -169,8 +169,8 @@ msgid ""
 "you can check and uncheck the box next to an item to add or remove it from "
 "the graph."
 msgstr ""
-"如果你想在图形中添加一些东西,或者觉得它看起来太杂乱,你可以勾选和取消勾选某项"
-"旁边的方框,以便从图形中添加或删除它."
+"如果你想在图形中添加一些东西, 或者觉得它看起来太杂乱, 你可以勾选和取消勾选某"
+"项旁边的方框, 以便从图形中添加或删除它."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
@@ -183,9 +183,9 @@ msgid ""
 "incoming and outgoing network interactions. It also features a bandwidth "
 "meter that displays the total bandwidth usage at any given moment."
 msgstr ""
-"网络剖析器包含了所有通过多人游戏API进行通信的节点列表,对于每个节点,还包含了一"
-"些传入和传出网络交互量的计数器.它还具有一个带宽表,可以显示任何特定时刻的总带"
-"宽使用情况."
+"网络剖析器包含了所有通过多人游戏API进行通信的节点列表, 对于每个节点, 还包含了"
+"一些传入和传出网络交互量的计数器. 它还具有一个带宽表, 可以显示任何特定时刻的"
+"总带宽使用情况."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
@@ -199,9 +199,9 @@ msgid ""
 "open while the game is running, you can open it later and see how the values "
 "changed."
 msgstr ""
-"监视器是游戏运行时几个方面的图表,如FPS、内存使用情况、场景中的节点数量等等.所"
-"有的监控器都会自动跟踪统计,所以即使游戏运行时一个监控器没有打开,你也可以在以"
-"后打开它,查看数值的变化."
+"监视器是游戏运行时几个方面的图表, 如FPS, 内存使用情况, 场景中的节点数量等等. "
+"所有的监控器都会自动跟踪统计, 所以即使游戏运行时一个监控器没有打开, 你也可以"
+"在以后打开它, 查看数值的变化."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
@@ -215,9 +215,9 @@ msgid ""
 "RAM that resource is using. There is also a total video RAM usage number at "
 "the top right of the panel."
 msgstr ""
-"**视频内存** 标签显示了游戏运行时的视频内存使用情况.它按资源路径提供了每一个"
-"使用视频内存的资源列表,资源的类型,资源的格式,以及该资源使用了多少视频内存.在"
-"面板的右上方还有一个视频RAM使用总量的数字."
+"**视频内存** 标签显示了游戏运行时的视频内存使用情况. 它按资源路径提供了每一个"
+"使用视频内存的资源列表, 资源的类型, 资源的格式, 以及该资源使用了多少视频内"
+"存. 在面板的右上方还有一个视频RAM使用总量的数字."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
@@ -227,7 +227,7 @@ msgstr "杂项"
 msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
-msgstr "**杂项** 选项卡包含一些工具,用于识别您在运行时点击的控制节点:"
+msgstr "**杂项** 选项卡包含一些工具, 用于识别您在运行时点击的控制节点:"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:110
 msgid ""

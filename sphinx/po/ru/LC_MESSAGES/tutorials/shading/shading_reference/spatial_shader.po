@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "Описание"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
 msgid "**blend_mix**"
-msgstr ""
+msgstr "**blend_mix**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
 msgid "Mix blend mode (alpha is transparency), default."
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
 msgid "**blend_add**"
-msgstr ""
+msgstr "**blend_add**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
 msgid "Additive blend mode."
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
 msgid "**blend_sub**"
-msgstr ""
+msgstr "**blend_sub**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
 msgid "Subtractive blend mode."
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
 msgid "**blend_mul**"
-msgstr ""
+msgstr "**blend_mul**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
 msgid "Multiplicative blend mode."
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
 msgid "**depth_draw_opaque**"
-msgstr ""
+msgstr "**depth_draw_opaque**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
 msgid "Only draw depth for opaque geometry (not transparent)."
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
 msgid "**depth_draw_always**"
-msgstr ""
+msgstr "**depth_draw_always**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
 msgid "Always draw depth (opaque and transparent)."
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
 msgid "**depth_draw_never**"
-msgstr ""
+msgstr "**depth_draw_never**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
 msgid "Never draw depth."
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
 msgid "**depth_draw_alpha_prepass**"
-msgstr ""
+msgstr "**depth_draw_alpha_prepass**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
 msgid "Do opaque depth pre-pass for transparent geometry."
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
 msgid "**depth_test_disable**"
-msgstr ""
+msgstr "**depth_test_disable**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
 msgid "Disable depth testing."
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
 msgid "**cull_front**"
-msgstr ""
+msgstr "**cull_front**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
 msgid "Cull front-faces."
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:37
 msgid "**cull_back**"
-msgstr ""
+msgstr "**cull_back**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:37
 msgid "Cull back-faces (default)."
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:39
 msgid "**cull_disabled**"
-msgstr ""
+msgstr "**cull_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:39
 msgid "Culling disabled (double sided)."
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
 msgid "**unshaded**"
-msgstr ""
+msgstr "**unshaded**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
 msgid "Result is just albedo. No lighting/shading happens in material."
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
 msgid "**diffuse_lambert**"
-msgstr ""
+msgstr "**diffuse_lambert**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
 msgid "Lambert shading for diffuse (default)."
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
 msgid "**diffuse_lambert_wrap**"
-msgstr ""
+msgstr "**diffuse_lambert_wrap**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
 msgid "Lambert wrapping (roughness dependent) for diffuse."
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
 msgid "**diffuse_oren_nayar**"
-msgstr ""
+msgstr "**diffuse_oren_nayar**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
 msgid "Oren Nayar for diffuse."
@@ -179,7 +179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:49
 msgid "**diffuse_burley**"
-msgstr ""
+msgstr "**diffuse_burley**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:49
 msgid "Burley (Disney PBS) for diffuse."
@@ -187,7 +187,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:51
 msgid "**diffuse_toon**"
-msgstr ""
+msgstr "**diffuse_toon**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:51
 msgid "Toon shading for diffuse."
@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:53
 msgid "**specular_schlick_ggx**"
-msgstr ""
+msgstr "**specular_schlick_ggx**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:53
 msgid "Schlick-GGX for specular (default)."
@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:55
 msgid "**specular_blinn**"
-msgstr ""
+msgstr "**specular_blinn**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:55
 msgid "Blinn for specular (compatibility)."
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:57
 msgid "**specular_phong**"
-msgstr ""
+msgstr "**specular_phong**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:57
 msgid "Phong for specular (compatibility)."
@@ -219,7 +219,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:59
 msgid "**specular_toon**"
-msgstr ""
+msgstr "**specular_toon**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:59
 msgid "Toon for specular."
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
 msgid "**specular_disabled**"
-msgstr ""
+msgstr "**specular_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
 msgid "Disable specular."
@@ -235,7 +235,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
 msgid "**skip_vertex_transform**"
-msgstr ""
+msgstr "**skip_vertex_transform**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
 msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
@@ -243,7 +243,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
 msgid "**world_vertex_coords**"
-msgstr ""
+msgstr "**world_vertex_coords**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
 msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
@@ -259,7 +259,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "**vertex_lighting**"
-msgstr ""
+msgstr "**vertex_lighting**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "Use vertex-based lighting."
@@ -997,7 +997,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:352
 msgid "Roughness."
-msgstr ""
+msgstr "Шероховатость."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:354
 msgid "in vec3 **TRANSMISSION**"

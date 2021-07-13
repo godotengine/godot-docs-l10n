@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,12 +37,12 @@ msgid ""
 "From the Material itself in the form of the emission color (though it does "
 "not affect nearby objects unless baked)."
 msgstr ""
-"以自发光颜色(Emission Color)的形式从材质(Material)本身发出,(虽然除非烘培贴图,"
-"否则它不会影响附近的物体)."
+"以自发光颜色(Emission Color)的形式从材质(Material)本身发出,(虽然除非烘培贴"
+"图, 否则它不会影响附近的物体)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr "光节点: 方向光(Directional),万向光(Omni),和聚光灯(Spot)."
+msgstr "光节点: 方向光(Directional), 万向光(Omni), 和聚光灯(Spot)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
@@ -69,8 +69,8 @@ msgid ""
 "There are three types of light nodes: `Directional light`_, `Omni light`_ "
 "and `Spot light`_. Let's take a look at the common parameters for lights:"
 msgstr ""
-"如前所述,有三种类型的光节点: 方向光 `Directional light`_ ,万向光 `Omni "
-"light`_ 和聚光灯 `Spot light`_ .让我们来看看光的通用参数:"
+"如前所述, 有三种类型的光节点: 方向光 `Directional light`_ , 万向光 `Omni "
+"light`_ 和聚光灯 `Spot light`_ . 让我们来看看光的通用参数:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:31
 msgid "Each one has a specific function:"
@@ -78,14 +78,14 @@ msgstr "它们每一个都有特定的功能:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:33
 msgid "**Color**: Base color for emitted light."
-msgstr "**Color(颜色)** :发光的基色."
+msgstr "**Color(颜色)** : 发光的基色."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:34
 msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
-"**Energy(能量)** :能量乘数.这对于使灯光饱和或使用 :ref:"
+"**Energy(能量)** : 能量乘数. 这对于使灯光饱和或使用 :ref:"
 "`doc_high_dynamic_range` 非常有用."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:35
@@ -93,30 +93,30 @@ msgid ""
 "**Indirect Energy**: Secondary multiplier used with indirect light (light "
 "bounces). This works in baked light or GIProbe."
 msgstr ""
-"**Indirect Energy(间接能量)** :与间接光一起使用的次级乘数(光是会反弹的). 这适"
-"用于烘焙的光线或GIProbe(GI探针)."
+"**Indirect Energy(间接能量)** : 与间接光一起使用的次级乘数(光是会反弹的). 这"
+"适用于烘焙的光线或GIProbe(GI探针)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:36
 msgid ""
 "**Negative**: Light becomes subtractive instead of additive. It's sometimes "
 "useful to manually compensate some dark corners."
 msgstr ""
-"**Negative(减色)** :光变为减色而不是添加. 手动补偿一些黑暗角落有时很有用."
+"**Negative(减色)** : 光变为减色而不是添加. 手动补偿一些黑暗角落有时很有用."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
 msgid ""
 "**Specular**: Affects the intensity of the specular blob in objects affected "
 "by this light. At zero, this light becomes a pure diffuse light."
 msgstr ""
-"**反射(Specular)** :影响受此光影响的物体中镜面反射高光斑点的强度. 在值为零时,"
-"该光变为纯漫反射光."
+"**反射(Specular)** : 影响受此光影响的物体中镜面反射高光斑点的强度. 在值为零"
+"时, 该光变为纯漫反射光."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:38
 msgid ""
 "**Bake Mode**: Sets the bake mode for the light. For more information see :"
 "ref:`doc_baked_lightmaps`"
 msgstr ""
-"**Bake Mode(烘培模式)** :设置灯光的烘焙模式.有关更多信息,请参见 :ref:"
+"**Bake Mode(烘培模式)** : 设置灯光的烘焙模式. 有关更多信息, 请参见 :ref:"
 "`doc_baked_lightmaps`"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:39
@@ -127,6 +127,9 @@ msgid ""
 "adjust the ``cast_shadow`` property on the GeometryInstance to the desired "
 "value."
 msgstr ""
+"**剔除蒙版Cull Mask**: 在下面选定的图层中的物体将受到此光的影响。请注意，通过"
+"这个遮罩禁用的对象仍然会投射阴影。如果你不希望被禁用的物体投射阴影，请将"
+"GeometryInstance上的 ``cast_shadow`` 属性调整为所需值。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:45
 msgid "Shadow mapping"
@@ -139,27 +142,28 @@ msgid ""
 "There is a list of generic shadow parameters, each also has a specific "
 "function:"
 msgstr ""
-"灯光可以可选地投射阴影. 这使它们具有更好的真实感(光线不会照到被遮挡的区域),但"
-"它会带来更大的性能开销.有一个通用阴影参数列表,每个参数也有一个特定的功能:"
+"灯光可以可选地投射阴影. 这使它们具有更好的真实感(光线不会照到被遮挡的区域), "
+"但它会带来更大的性能开销. 有一个通用阴影参数列表, 每个参数也有一个特定的功能:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
 msgid "**Enabled**: Check to enable shadow mapping in this light."
-msgstr "**Enabled(启用)** :勾选以启用阴影贴图."
+msgstr "**Enabled(启用)** : 勾选以启用阴影贴图."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:52
 msgid ""
 "**Color**: Areas occluded are multiplied by this color. It is black by "
 "default, but it can be changed to tint shadows."
 msgstr ""
-"**Color(颜色)** :遮挡的区域会被乘以此颜色. 默认为黑色,但可以更改来给阴影染色."
+"**Color(颜色)** : 遮挡的区域会被乘以此颜色. 默认为黑色, 但可以更改来给阴影染"
+"色."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:53
 msgid ""
 "**Bias**: When this parameter is too small, self shadowing occurs. When too "
 "large, shadows separate from the casters. Tweak to what works best for you."
 msgstr ""
-"**Bias(偏移)** :当此参数太小时,阴影会打在物体自己身上. 当太大时,阴影与物体本"
-"体分开. 调整到最适合你的状态."
+"**Bias(偏移)** : 当此参数太小时, 阴影会打在物体自己身上. 当太大时, 阴影与物体"
+"本体分开. 调整到最适合你的状态."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
 msgid ""
@@ -167,15 +171,15 @@ msgid ""
 "generated by the bias. Contact shadows are only available when using the "
 "GLES3 backend."
 msgstr ""
-"**Contact(接触)** :执行一个短促的屏幕空间光线投射,以减少上述偏差产生的间隙.接"
-"触阴影仅在使用GLES3后端是可用."
+"**Contact(接触)** : 执行一个短促的屏幕空间光线投射, 以减少上述偏差产生的间"
+"隙. 接触阴影仅在使用GLES3后端是可用."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:55
 msgid ""
 "**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
-"**Reverse Cull Faces(反向剔除平面)** :某些场景在阴影渲染时, 开启反向平面剔除"
+"**Reverse Cull Faces(反向剔除平面)** : 某些场景在阴影渲染时, 开启反向平面剔除"
 "会工作得更好."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:57
@@ -183,12 +187,12 @@ msgid ""
 "Below is an image of what tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
-"下图是调整Bias(偏移)的样子. 默认值适用于大多数情况,但通常取决于几何的大小和复"
-"杂程度."
+"下图是调整Bias(偏移)的样子. 默认值适用于大多数情况, 但通常取决于几何的大小和"
+"复杂程度."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:62
 msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
-msgstr "最后,如果无法解决间隙,** Contact(接触)** 选项可以帮助:"
+msgstr "最后, 如果无法解决间隙, ** Contact(接触)** 选项可以帮助:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:66
 msgid ""
@@ -196,8 +200,8 @@ msgid ""
 "resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
-"任何类型的偏差问题都可以通过增加阴影贴图分辨率来解决,尽管这可能会导致低端硬件"
-"性能下降."
+"任何类型的偏差问题都可以通过增加阴影贴图分辨率来解决, 尽管这可能会导致低端硬"
+"件性能下降."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:70
 msgid "Directional light"
@@ -210,8 +214,8 @@ msgid ""
 "be used whenever possible (although it's not the cheapest shadow-map to "
 "compute, but more on that later)."
 msgstr ""
-"这是最常见的光线类型,代表了很远的光源(如太阳).它也是计算中最便宜的光,应该尽可"
-"能使用(虽然它不是计算起来最便宜的阴影贴图,但这点稍后再说)."
+"这是最常见的光线类型, 代表了很远的光源(如太阳). 它也是计算中最便宜的光, 应该"
+"尽可能使用(虽然它不是计算起来最便宜的阴影贴图, 但这点稍后再说)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:76
 msgid ""
@@ -221,7 +225,7 @@ msgid ""
 "the node does not affect the lighting at all and can be anywhere."
 msgstr ""
 "定向光模拟覆盖整个场景的无限数量的平行光线. 定向光节点由指示光线方向的大箭头"
-"表示. 但是,节点的位置根本不会影响照明,它可以在任何地方."
+"表示. 但是, 节点的位置根本不会影响照明, 它可以在任何地方."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:83
 msgid ""
@@ -229,8 +233,8 @@ msgid ""
 "others stay dark. Most light types have specific parameters, but directional "
 "lights are pretty simple in nature, so they don't."
 msgstr ""
-"每个表面的正面被光线照射,而其他部分则保持黑暗. 大多数灯光类型都有特定的参数,"
-"但定向灯本质上非常简单,所以它们没有."
+"每个表面的正面被光线照射, 而其他部分则保持黑暗. 大多数灯光类型都有特定的参"
+"数, 但定向灯本质上非常简单, 所以它们没有."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:87
 msgid "Directional shadow mapping"
@@ -243,8 +247,8 @@ msgid ""
 "distance). There is, however, a problem with this approach because objects "
 "closer to the camera receive blocky shadows."
 msgstr ""
-"为了计算阴影贴图,会从正交视图(仅深度)渲染整个场景(或直到最大距离).但是,这种方"
-"法存在问题,因为靠近相机的物体会得到块状阴影."
+"为了计算阴影贴图, 会从正交视图(仅深度)渲染整个场景(或直到最大距离). 但是, 这"
+"种方法存在问题, 因为靠近相机的物体会得到块状阴影."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:95
 msgid ""
@@ -253,17 +257,17 @@ msgid ""
 "shadow map. This allows small areas close to the viewer to have the same "
 "shadow resolution as a huge, far-away area."
 msgstr ""
-"为了解决这个问题,使用了名为\"Parallel Split Shadow Maps\"(平行分割阴影,或"
-"PSSM)的技术. 这将视锥体分成2或4个区域.每个区域都有自己的阴影贴图. 这允许靠近"
+"为了解决这个问题, 使用了名为\"Parallel Split Shadow Maps\"(平行分割阴影, 或"
+"PSSM)的技术. 这将视锥体分成2或4个区域. 每个区域都有自己的阴影贴图. 这允许靠近"
 "观察者的小区域具有与巨大的遥远区域相同的阴影分辨率."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:100
 msgid "With this, shadows become more detailed:"
-msgstr "有了它,阴影变得更加详细:"
+msgstr "有了它, 阴影变得更加详细:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:104
 msgid "To control PSSM, a number of parameters are exposed:"
-msgstr "为了控制PSSM,暴露了许多参数:"
+msgstr "为了控制PSSM, 暴露了许多参数:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:108
 msgid ""
@@ -273,18 +277,18 @@ msgid ""
 "values generally work well, but tweaking the first split a bit is common to "
 "give more detail to close objects (like a character in a third person game)."
 msgstr ""
-"每个分割距离都是相对于相机最远处(或阴影 **Max Distance(最大距离)** ,如果大于"
-"零)控制的,因此 *0.0* 是眼睛位置, *1.0* 是阴影在一定距离处结束的位置.分割介于"
-"两者之间. 默认值通常效果很好,但调整第一个分割数值是很常见的,可以为近处对象提"
-"供更多细节(比如第三人称游戏中的角色)."
+"每个分割距离都是相对于相机最远处(或阴影 **Max Distance(最大距离)** , 如果大于"
+"零)控制的, 因此 *0.0* 是眼睛位置, *1.0* 是阴影在一定距离处结束的位置. 分割介"
+"于两者之间. 默认值通常效果很好, 但调整第一个分割数值是很常见的, 可以为近处对"
+"象提供更多细节(比如第三人称游戏中的角色)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
 msgstr ""
-"始终确保根据场景需要设置阴影 *Max Distance(最大距离)* . 最大距离越近,阴影的质"
-"量越高."
+"始终确保根据场景需要设置阴影 *Max Distance(最大距离)* . 最大距离越近, 阴影的"
+"质量越高."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:117
 msgid ""
@@ -292,8 +296,8 @@ msgid ""
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
-"有时,一个分割与下一个之间的过渡看起来很糟糕. 要解决此问题,可以打开 **\"Blend "
-"Splits\"(混合分割)** 选项,牺牲细节以换取更平滑的过渡:"
+"有时, 一个分割与下一个之间的过渡看起来很糟糕. 要解决此问题, 可以打开 **"
+"\"Blend Splits\"(混合分割)** 选项, 牺牲细节以换取更平滑的过渡:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:123
 msgid ""
@@ -301,8 +305,8 @@ msgid ""
 "shadowing when objects are perpendicular to the light. The only downside is "
 "that it makes the shadow a bit thinner."
 msgstr ""
-"当物体垂直于光线时,**\"Normal Bias\"(法线偏差)** 参数可用于修复自阴影的特殊情"
-"况. 唯一的缺点是它使阴影更薄."
+"当物体垂直于光线时, **\"Normal Bias\"(法线偏差)** 参数可用于修复自阴影的特殊"
+"情况. 唯一的缺点是它使阴影更薄."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid ""
@@ -311,7 +315,7 @@ msgid ""
 "this value can fix them."
 msgstr ""
 "**\"Bias Split Scale\"(偏差分割缩放)** 参数可以控制远处分割的额外偏差. 如果仅"
-"在远处的分割上发生自阴影,则此值可以修复它们."
+"在远处的分割上发生自阴影, 则此值可以修复它们."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:132
 msgid "Finally, the **\"Depth Range\"** has two settings:"
@@ -324,8 +328,8 @@ msgid ""
 "This is the default and generally desired, but it reduces the effective "
 "shadow resolution."
 msgstr ""
-"**Stable(稳定)** :在相机移动时保持阴影稳定,并且当靠近阴影边缘时出现在轮廓中的"
-"块保持原位. 这是默认, 通常想要的设置,但会降低有效的阴影分辨率."
+"**Stable(稳定)** : 在相机移动时保持阴影稳定, 并且当靠近阴影边缘时出现在轮廓中"
+"的块保持原位. 这是默认, 通常想要的设置, 但会降低有效的阴影分辨率."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:135
 msgid ""
@@ -334,9 +338,9 @@ msgid ""
 "at the same time the shadow looks more detailed (so this effect may be "
 "subtle enough to be forgiven)."
 msgstr ""
-"**Optimized(最优)** :会尝试在任何给定时间达到最大可用分辨率. 这可能会导致阴影"
-"边缘出现\"移动锯\"效果,但同时阴影看起来更加细致(因此这种效果可能非常轻微,可以"
-"被原谅)."
+"**Optimized(最优)** : 会尝试在任何给定时间达到最大可用分辨率. 这可能会导致阴"
+"影边缘出现 \"移动锯\" 效果, 但同时阴影看起来更加细致(因此这种效果可能非常轻"
+"微, 可以被原谅)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:137
 msgid "Just experiment which setting works better for your scene."
@@ -355,7 +359,7 @@ msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
 msgstr ""
-"增加它可以解决偏差问题,但会降低性能. 阴影贴图(Shadow mapping)是一门调整的艺"
+"增加它可以解决偏差问题, 但会降低性能. 阴影贴图(Shadow mapping)是一门调整的艺"
 "术."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:146
@@ -366,7 +370,7 @@ msgstr "全向光"
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
-msgstr "全向光是一种点光源,可在所有方向上发射光,直至给定半径."
+msgstr "全向光是一种点光源, 可在所有方向上发射光, 直至给定半径."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid ""
@@ -374,19 +378,19 @@ msgid ""
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
-"在现实生活中,光衰减是个和距离成反比的函数,这意味着全向光没有半径.这是一个问"
-"题,因为这意味着计算几个全向光会变得很困难."
+"在现实生活中, 光衰减是个和距离成反比的函数, 这意味着全向光没有半径. 这是一个"
+"问题, 因为这意味着计算几个全向光会变得很困难."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:156
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
-msgstr "为了解决这个问题,引入了 *Range(范围)* 和衰减函数."
+msgstr "为了解决这个问题, 引入了 *Range(范围)* 和衰减函数."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:160
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
-msgstr "这两个参数允许调整其在视觉上的工作方式,以便找到美学上令人愉悦的结果."
+msgstr "这两个参数允许调整其在视觉上的工作方式, 以便找到美学上令人愉悦的结果."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:166
 msgid "Omni shadow mapping"
@@ -405,7 +409,7 @@ msgid ""
 "later is more correct, but costlier."
 msgstr ""
 "全向光阴影可以渲染为 **\"Dual Paraboloid\"(双抛物面)或\"Cube Mapped\"(方形映"
-"射)**. 前者渲染速度很快但会导致变形,而后者更正确但成本更高."
+"射)** . 前者渲染速度很快但会导致变形, 而后者更正确但成本更高."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:177
 msgid ""
@@ -414,9 +418,9 @@ msgid ""
 "(more on that at the end), it may not make a difference in performance for "
 "most scenes."
 msgstr ""
-"如果渲染的对象大部分是不规则的,那么Dual Paraboloid 通常就足够了. 无论怎么说,"
-"由于这些阴影被缓存在阴影图集中(后面会详细讲),对于大多数场景而言,它可能不会对"
-"性能产生影响."
+"如果渲染的对象大部分是不规则的, 那么Dual Paraboloid 通常就足够了. 无论怎么"
+"说, 由于这些阴影被缓存在阴影图集中(后面会详细讲), 对于大多数场景而言, 它可能"
+"不会对性能产生影响."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:182
 msgid "Spot light"
@@ -429,8 +433,8 @@ msgid ""
 "reflectors, spots, etc. This type of light is also attenuated towards the "
 "opposite direction it points to."
 msgstr ""
-"聚光灯类似于全向光,除了它们只发光到锥形(或\"截断\"). 它们可用于模拟手电筒,汽"
-"车灯,反射器,光点等.这种类型的光也会向其指向的相反方向衰减."
+"聚光灯类似于全向光, 除了它们只发光到锥形(或 \"截断\"). 它们可用于模拟手电筒, "
+"汽车灯, 反射器, 光点等. 这种类型的光也会向其指向的相反方向衰减."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:191
 msgid ""
@@ -438,17 +442,17 @@ msgid ""
 "and add two extra parameters:"
 msgstr ""
 "聚光灯和 **Omni Light(全向光)** 共用 **Range(范围)** 和 **Attenuation(衰"
-"减)**,并添加两个额外参数:"
+"减)** , 并添加两个额外参数:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:193
 msgid "**Angle**: The aperture angle of the light"
-msgstr "**Angle(角度)** :光线的光圈角度"
+msgstr "**Angle(角度)** : 光线的光圈角度"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:194
 msgid ""
 "**Angle Attenuation**: The cone attenuation, which helps soften the cone "
 "borders."
-msgstr "**Angle Attenuation(角度衰减)** :锥形衰减,有助于软化锥形边界."
+msgstr "**Angle Attenuation(角度衰减)** : 锥形衰减, 有助于软化锥形边界."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:197
 msgid "Spot shadow mapping"
@@ -460,8 +464,8 @@ msgid ""
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
 "you should consider using an Omni light instead."
 msgstr ""
-"聚光灯不需要任何阴影映射参数. 请记住,在超过89度的光圈下,阴影会停止对聚光灯起"
-"作用,你应该考虑使用全向光."
+"聚光灯不需要任何阴影映射参数. 请记住, 在超过89度的光圈下, 阴影会停止对聚光灯"
+"起作用, 你应该考虑使用全向光."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:203
 msgid "Shadow atlas"
@@ -473,8 +477,8 @@ msgid ""
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
 "configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
-"与具有自己的阴影纹理的定向光不同,全向光和聚光灯被分配了阴影图集的槽位. 可以在"
-"Project Settings(项目设置) -> Render(渲染) -> Quality(质量) -> Shadow "
+"与具有自己的阴影纹理的定向光不同, 全向光和聚光灯被分配了阴影图集的槽位. 可以"
+"在Project Settings(项目设置) -> Render(渲染) -> Quality(质量) -> Shadow "
 "Atlas(阴影图集) 中配置此图集."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:210
@@ -487,7 +491,7 @@ msgstr "这个分辨率适用于整个影子图集. 该地图集分为四个象�
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
-msgstr "每个象限可以细分,分配任意数量的阴影贴图. 以下是默认细分方式:"
+msgstr "每个象限可以细分, 分配任意数量的阴影贴图. 以下是默认细分方式:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:218
 msgid ""
@@ -497,37 +501,38 @@ msgid ""
 "away from view and proportionally smaller."
 msgstr ""
 "分配逻辑很简单. 最大的阴影贴图大小(当不使用细分时)表示一个屏幕大小(或更大)的"
-"光.细分区块(较小的贴图)表示远离视图并且成比例地较小的光的阴影."
+"光. 细分区块(较小的贴图)表示远离视图并且成比例地较小的光的阴影."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:223
 msgid "Every frame, the following procedure is performed for all lights:"
-msgstr "每一帧,以下过程被应用于所有光:"
+msgstr "每一帧, 以下过程被应用于所有光:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:225
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
 msgstr ""
-"检查灯光是否在正确大小的插槽上. 如果没有,重新渲染它并将其移动到更大/更小的插"
+"检查灯光是否在正确大小的插槽上. 如果没有, 重新渲染它并将其移动到更大/更小的插"
 "槽."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
-msgstr "检查影响阴影贴图的任何对象是否已更改. 如果是的话,重新渲染光线."
+msgstr "检查影响阴影贴图的任何对象是否已更改. 如果是的话, 重新渲染光线."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:227
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
-msgstr "如果上述情况均未发生,则不执行任何操作,阴影保持不变."
+msgstr "如果上述情况均未发生, 则不执行任何操作, 阴影保持不变."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:229
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
-msgstr "如果一个象限中的槽位满了,光线会被推回到更小的槽位中,取决于大小和距离."
+msgstr ""
+"如果一个象限中的槽位满了, 光线会被推回到更小的槽位中, 取决于大小和距离."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:231
 msgid ""
@@ -535,9 +540,9 @@ msgid ""
 "separate one in some cases (for example, a top-down game where all lights "
 "are around the same size and quadrants may all have the same subdivision)."
 msgstr ""
-"此分配策略适用于大多数游戏,但在某些情况下你可能会想用一个单独分开的贴图(例如,"
-"一个自上向下看的游戏,其中所有灯光大小大概相同,所有象限的细分可能会具有相同大"
-"小)."
+"此分配策略适用于大多数游戏, 但在某些情况下你可能会想用一个单独分开的贴图(例"
+"如, 一个自上向下看的游戏, 其中所有灯光大小大概相同, 所有象限的细分可能会具有"
+"相同大小)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:235
 msgid "Shadow filter quality"

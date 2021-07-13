@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,8 +215,9 @@ msgstr ""
 "(линейное время)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
+#, fuzzy
 msgid ""
-"**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
+"**Get, Set:** Fastest *by position*. E.g. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
 "**Получить, установить:** Самый быстрый *по позиции*. Может запрашивать 0-ю, "
@@ -559,7 +560,7 @@ msgstr ""
 "структуре данных. Таким образом, при построении древовидных структур может "
 "быть полезно создать собственный тип узла."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
@@ -567,11 +568,11 @@ msgstr ""
 "Здесь можно создавать свои собственные структуры с определенными функциями, "
 "ограниченными только собственным воображением."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:280
 msgid "Enumerations: int vs. string"
 msgstr "Перечисления: int vs. string"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:282
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
@@ -584,17 +585,17 @@ msgstr ""
 "(последнее только при использовании ключевого слова ``export`` в GDScript). "
 "Тогда возникает вопрос: \"какой использовать?\""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
 "languages prioritizes usability over performance."
 msgstr ""
-"Короткий ответ: «то, что вам удобнее». Это особенность GDScript, а не "
-"скриптов Godot в целом; Языки ставят удобство использования выше "
-"производительности."
+"Короткий ответ: «то, что вам удобнее». Это особенность, специфическая для "
+"GDScript, а не для скриптов Godot в целом; Языки ставят удобство "
+"использования выше производительности."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
@@ -605,7 +606,7 @@ msgstr ""
 "то хочет сохранить конвенции других языков, то следует использовать целые "
 "числа."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -620,7 +621,7 @@ msgstr ""
 "словарь, который отображает соответствующее строковое значение для каждого "
 "перечисления."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -632,14 +633,14 @@ msgstr ""
 "смысл использовать их как строки. Таким образом, отдельная структура данных "
 "для выполнения при печати не нужна."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:307
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
 "AnimatedTexture против AnimatedSprite против AnimationPlayer против "
 "AnimationTree"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:309
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -647,7 +648,7 @@ msgstr ""
 "При каких обстоятельствах следует использовать каждый из классов анимации "
 "Godot? Ответ может быть не сразу понятен новым пользователям Godot."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -656,17 +657,17 @@ msgstr ""
 "движок рисует как анимированный цикл, а не как статическое изображение. "
 "Пользователи могут манипулировать ..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr ""
 "скорость, с которой он перемещается по каждому участку текстуры (кадров в "
 "секунду)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:318
 msgid "the number of regions contained within the texture (frames)."
 msgstr "количество областей, содержащихся в текстуре (кадрах)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:320
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -678,7 +679,7 @@ msgstr ""
 "это не требует дополнительной логики со стороны движка. Плохая новость в "
 "том, что у пользователей очень мало контроля."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:325
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -697,7 +698,7 @@ msgstr ""
 "многих автоанимированных фонов, которые все визуализируют в одном вызове "
 "пакетной отрисовки."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -711,7 +712,7 @@ msgstr ""
 "управлять их скоростью, региональным смещением и ориентацией. Это делает их "
 "удобными для управления 2D-анимацией на основе кадра."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -725,7 +726,7 @@ msgstr ""
 "необходимо использовать :ref:`AnimationPlayer <class_AnimationPlayer>` узел "
 "в сочетании с AnimatedSprite."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:345
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
@@ -733,13 +734,13 @@ msgstr ""
 "AnimationPlayers - это также инструмент, который необходимо использовать, "
 "если они хотят создавать более сложные системы 2D-анимации, такие как ..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
 "**Cut-Out animations:** редактирование преобразований спрайтов во время "
 "выполнения."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:350
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -749,11 +750,11 @@ msgstr ""
 "к ней скелета. Затем анимируются кости, которые растягивают и изгибают "
 "текстуру пропорционально соотношению костей друг с другом."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:355
 msgid "A mix of the above."
 msgstr "Смесь вышеперечисленного."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:357
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

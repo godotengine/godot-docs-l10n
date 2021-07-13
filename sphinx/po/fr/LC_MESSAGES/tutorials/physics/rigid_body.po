@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
-#, fuzzy
 msgid "Using RigidBody"
-msgstr "Utiliser RigidBody2D"
+msgstr "Utilisation de RigidBody"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
@@ -45,7 +44,6 @@ msgid "How to control a rigid body"
 msgstr "Comment contrôler un corps rigide"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
-#, fuzzy
 msgid ""
 "A rigid body's behavior can be altered by setting its properties, such as "
 "mass and weight. A physics material needs to be added to the rigid body to "
@@ -54,10 +52,13 @@ msgid ""
 "`RigidBody <class_RigidBody>` and :ref:`PhysicsMaterial "
 "<class_PhysicsMaterial>` for the full list of properties and their effects."
 msgstr ""
-"Le comportement d'un corps rigide peut être modifié en réglant ses "
-"propriétés, telles que la friction, la masse, le rebond, etc. Ces propriétés "
-"peuvent être définies dans l'inspecteur ou via un code. Voir :ref:`RigidBody "
-"<class_RigidBody>` pour la liste complète des propriétés et leurs effets."
+"Le comportement d'un corps rigide peut être modifié en définissant ses "
+"propriétés, telles que la masse et le poids. Un matériau physique doit être "
+"ajouté au corps rigide pour ajuster sa friction et son rebond, et définir "
+"s'il est absorbant et/ou rugueux. Ces propriétés peuvent être définies dans "
+"l'inspecteur ou via le code. Voir :ref:`RigidBody <class_RigidBody>` et :ref:"
+"`PhysicsMaterial <class_PhysicsMaterial>` pour la liste complète des "
+"propriétés et leurs effets."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:21
 msgid ""

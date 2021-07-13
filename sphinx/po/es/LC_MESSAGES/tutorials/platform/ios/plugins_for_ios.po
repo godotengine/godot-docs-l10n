@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -294,7 +294,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
 msgid "Authenticates a user in Game Center."
-msgstr ""
+msgstr "Autentica a un usuario en Game Center."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
 msgid "post_score"
@@ -302,20 +302,20 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 msgid "Posts a score to a Game Center leaderboard."
-msgstr ""
+msgstr "Publica una puntuación en una tabla de clasificación de Game Center."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:252
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:441
 msgid "Takes a Dictionary as a parameter, with two fields:"
-msgstr ""
+msgstr "Toma un diccionario como parámetro, con dos campos:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:254
 msgid "``score`` a float number"
-msgstr ""
+msgstr "``score`` un numero float"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:255
 msgid "``category`` a string with the category name"
-msgstr ""
+msgstr "``category`` un string con el nombre de categoría"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:257
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:304
@@ -328,15 +328,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:291
 msgid "Modifies the progress of a Game Center achievement."
-msgstr ""
+msgstr "Modifica el progreso de un logro de Game Center."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:296
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
-msgstr ""
+msgstr "Toma un diccionario como parámetro, con 3 campos:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:298
 msgid "``name`` (string) the achievement name"
-msgstr ""
+msgstr "``name`` (string) el nombre del logro"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:299
 msgid ""
@@ -349,6 +349,8 @@ msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr ""
+"``show_completion_banner`` (bool) si Game Center debe mostrar un banner de "
+"logros en la parte superior de la pantalla"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:335
 msgid "reset_achievements"
@@ -356,7 +358,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:337
 msgid "Clears all Game Center achievements. The function takes no parameters."
-msgstr ""
+msgstr "Borra todos los logros de Game Center. La función no toma parámetros."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:364
 msgid "request_achievements"
@@ -367,6 +369,8 @@ msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr ""
+"Solicita todos los logros de Game Center en los que el jugador ha "
+"progresado. La función no toma parámetros."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
 msgid "request_achievement_descriptions"

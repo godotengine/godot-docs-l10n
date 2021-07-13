@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,33 +22,31 @@ msgid "Importing audio samples"
 msgstr "Importing audio samples (импорт звуковых образцов)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Supported files"
-msgstr "Поддерживаемые форматы изображения"
+msgstr "Поддерживаемые файлы"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"Необработанные аудиоданные обычно имеют большой размер и нежелательны. Godot "
-"предоставляет два основных варианта импорта аудиоданных: WAV и Ogg Vorbis."
+"Godot предоставляет три основных варианта импорта ваших аудиоданных: WAV, "
+"Ogg Vorbis и MP3."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
 msgstr "Каждый из них имеет различные преимущества."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
-#, fuzzy
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
 "lightweight on the CPU to play back (hundreds of simultaneous voices in this "
 "format are fine). The downside is that they take up a lot of disk space."
 msgstr ""
-"Файлы WAV используют необработанные данные или лёгкое сжатие, мало требуют "
-"от ЦП воспроизведения (сотни одновременных голосов в этом формате вполне "
-"подойдут), но занимают значительное место."
+"Файлы WAV используют необработанные данные или лёгкое сжатие(IMA-ADPCM). Они "
+"легковесны для CPU при воспроизведении (сотни одновременных голосов в этом "
+"формате - норма). Недостатком является то, что они занимают много места на "
+"диске."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:17
 msgid ""
@@ -113,9 +111,8 @@ msgid "22 KB"
 msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
-#, fuzzy
 msgid "MP3 192 Kb/s, stereo"
-msgstr "Ogg Vorbis 128 Kb/s, стерео"
+msgstr "MP3 192 Kb/s, стерео"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "24 KB"

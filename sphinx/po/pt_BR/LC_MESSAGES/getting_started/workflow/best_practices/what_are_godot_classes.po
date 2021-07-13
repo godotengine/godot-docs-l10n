@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "Applying object-oriented principles in Godot"
-msgstr ""
+msgstr "Aplicando princípios de orientação a objetos em Godot"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
 "The engine offers two main ways to create reusable objects: scripts and "
 "scenes. Neither of these technically define classes under the hood."
 msgstr ""
+"O motor oferece duas maneiras principais de criar objetos reutilizáveis: "
+"scripts e cenas. Nenhum deles define tecnicamente as classes subjacentes."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:9
 msgid ""
@@ -33,22 +35,30 @@ msgid ""
 "programming principles to the scripts and scenes that compose your game. "
 "That is why it's useful to understand how we can think of them as classes."
 msgstr ""
+"Ainda assim, muitas das melhores práticas usando o Godot envolvem a "
+"aplicação de princípios de programação orientada a objetos aos scripts e "
+"cenas que compõem seu jogo. É por isso que é útil entender como podemos "
+"pensar neles como classes."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:13
 msgid ""
 "This guide briefly explains how scripts and scenes work in the engine's core "
 "to help you understand how they work under the hood."
 msgstr ""
+"Este guia explica resumidamente como os scripts e as cenas funcionam no "
+"núcleo do motor para ajudá-lo a entender como eles funcionam nos bastidores."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:17
 msgid "How scripts work in the engine"
-msgstr ""
+msgstr "Como os scripts funcionam no motor"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:19
 msgid ""
 "The engine provides built-in classes like :ref:`Node <class_Node>`. You can "
 "extend those to create derived types using a script."
 msgstr ""
+"O motor fornece classes incorporadas como :ref:`Node <class_Node>`. Você "
+"pode estendê-las para criar tipos derivados usando um script."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
 msgid ""
@@ -56,6 +66,9 @@ msgid ""
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
+"Esses scripts não são tecnicamente classes. Em vez disso, são recursos que "
+"informam ao motor uma sequência de inicializações para executar em uma das "
+"classes integradas do motor."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
 msgid ""
@@ -63,26 +76,26 @@ msgid ""
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
 "class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
+"As classes internas do Godot possuem métodos que registram os dados de uma "
+"classe com um :ref: `ClassDB <class_ClassDB>`. Este banco de dados fornece "
+"acesso em tempo de execução às informações da classe. ``ClassDB`` contém "
+"informações sobre classes como:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
-#, fuzzy
 msgid "Properties."
-msgstr "Propriedades do Node"
+msgstr "Propriedades."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:30
-#, fuzzy
 msgid "Methods."
-msgstr "Métodos Estáticos"
+msgstr "Métodos."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "Constantes"
+msgstr "Constantes."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "Sinais"
+msgstr "Sinais."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid ""
@@ -91,12 +104,18 @@ msgid ""
 "records and the object's base types' records to see if the object supports "
 "the operation."
 msgstr ""
+"Este ``ClassDB`` é o que os objetos verificam ao realizar uma operação como "
+"acessar uma propriedade ou chamar um método. Ele verifica os registros do "
+"banco de dados e os registros dos tipos base do objeto para ver se o objeto "
+"suporta a operação."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:38
 msgid ""
 "Attaching a :ref:`Script <class_Script>` to your object extends the methods, "
 "properties, and signals available from the ``ClassDB``."
 msgstr ""
+"Anexar um :ref:`Script <class_Script>` ao seu objeto estende os métodos, "
+"propriedades e sinais disponíveis da ``ClassDB``."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:43
 msgid ""
@@ -106,6 +125,11 @@ msgid ""
 "they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
+"Mesmo os scripts que não usam a palavra-chave ``extends`` herdam "
+"implicitamente da classe :ref:`Reference <class_Reference>` da base do "
+"motor. Como resultado, você pode instanciar scripts sem a palavra-chave "
+"``extends`` do código. Uma vez que eles estendem ``Reference``, você não "
+"pode anexá-los a um :ref:`Node <class_Node>`."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:49
 msgid "Scenes"
@@ -118,6 +142,10 @@ msgid ""
 "inheritable groups of nodes. Creating a scene is similar to having a script "
 "that creates nodes and adds them as children using ``add_child()``."
 msgstr ""
+"O comportamento das cenas tem muitas semelhanças com as classes, então pode "
+"fazer sentido pensar em uma cena como uma classe. As cenas são grupos de nós "
+"reutilizáveis, instanciados e herdáveis. Criar uma cena é semelhante a ter "
+"um script que cria nós e os adiciona como filhos usando ``add_child()``."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:55
 msgid ""
@@ -125,27 +153,29 @@ msgid ""
 "scene's nodes. As such, the scene is often an extension of the script's "
 "declarative code."
 msgstr ""
+"Muitas vezes emparelhamos uma cena com um nó raiz com script que faz uso dos "
+"nós da cena. Como tal, a cena é muitas vezes uma extensão do código "
+"declarativo do script."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "The content of a scene helps to define:"
-msgstr ""
+msgstr "O conteúdo de uma cena ajuda a definir:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:60
-#, fuzzy
 msgid "What nodes are available to the script"
-msgstr "O papel do roteiro"
+msgstr "Quais nós estão disponíveis para o script"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:61
 msgid "How they are organized"
-msgstr ""
+msgstr "Como eles são organizados"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:62
 msgid "How they are initialized"
-msgstr ""
+msgstr "Como eles são inicializados"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "What signal connections they have with each other"
-msgstr ""
+msgstr "Que conexões de sinal eles têm uns com os outros"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
 msgid ""
@@ -154,15 +184,23 @@ msgid ""
 "apply to written code also apply to scenes: single responsibility, "
 "encapsulation, and others."
 msgstr ""
+"Por que isto é importante para a organização da cena? Porque instâncias de "
+"cenas *são* objetos. Como resultado, muitos princípios de orientação a "
+"objetos que se aplicam ao código escrito também se aplicam a cenas: "
+"responsabilidade única, encapsulamento e outros."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
 "The scene is *always an extension of the script attached to its root node*, "
 "so you can interpret it as part of a class."
 msgstr ""
+"A cena é *sempre uma extensão do script anexado ao seu nó raiz*, então você "
+"pode interpretá-la como parte de uma classe."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:72
 msgid ""
 "Most of the techniques explained in this best practices series build on this "
 "point."
 msgstr ""
+"A maioria das técnicas explicadas nesta série de melhores práticas se baseia "
+"neste ponto."

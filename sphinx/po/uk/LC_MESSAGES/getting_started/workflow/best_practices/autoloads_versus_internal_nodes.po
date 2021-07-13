@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus regular nodes"
-msgstr ""
+msgstr "Автоматичне і звичайне завантаження вузлів"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -29,17 +29,23 @@ msgid ""
 "freed when you change the scene from code with :ref:`SceneTree.change_scene "
 "<class_SceneTree_method_change_scene>`."
 msgstr ""
+"Godot пропонує функцію автоматичного завантаження вузлів у корені проекту, "
+"що дозволяє вам отримати до них глобальний доступ, які можуть виконувати "
+"роль Singleton: :ref:`doc_singletons_autoload`. Ці автоматично завантажені "
+"вузли не звільняються, коли ви змінюєте сцену з коду за допомогою :ref:"
+"`SceneTree.change_scene <class_SceneTree_method_change_scene>`."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
 "In this guide, you will learn when to use the Autoload feature, and "
 "techniques you can use to avoid it."
 msgstr ""
+"У цьому посібнику ви дізнаєтесь, коли слід використовувати функцію "
+"автозавантаження, та прийоми уникнення цього."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
-#, fuzzy
 msgid "The cutting audio issue"
-msgstr "Тестування та звітування щодо вад"
+msgstr "Вирішення аудіо проблем"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
 msgid ""
@@ -48,6 +54,10 @@ msgid ""
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
+"Інші движки можуть заохочувати створення класів менеджерів, синглтонів, які "
+"організовують багато функціональних можливостей, у доступний глобально "
+"об'єкт. Godot пропонує багато способів уникнути глобального стану завдяки "
+"дереву вузлів та сигналам."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
 msgid ""
@@ -57,6 +67,10 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
+"Наприклад, припустимо, ми будуємо платформер і хочемо збирати монети, які "
+"відтворюють звуковий ефект. Для цього є вузол: :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>`. Проте якщо ми викликаємо ``AudioStreamPlayer`` в "
+"час, коли він вже відтворює звук, новий звук перериває перший."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
 msgid ""
@@ -67,6 +81,12 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
+"Рішенням є кодування глобального, автоматично завантаженого класу менеджера "
+"звуку. Він генерує вузли ``AudioStreamPlayer``, які циклічно перетворюються "
+"по мірі надходження кожного нового запиту на звукові ефекти. Скажімо, ми "
+"викликаємо клас ``Sound``, ви можете використовувати його з будь-якого місця "
+"у своєму проекті, викликавши ``Sound.play(\"coin_pickup.ogg\")``. Це вирішує "
+"проблему в короткий термін, але спричиняє більше проблем:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
 msgid ""
@@ -74,12 +94,18 @@ msgid ""
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
+"**Глобальний стан**: один об’єкт тепер відповідає за дані всіх об’єктів. "
+"Якщо клас ``Sound`` має помилки, або не має AudioStreamPlayer, усі вузли, що "
+"викликають його, можуть зламатися."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
+"**Глобальний доступ**: тепер, коли будь-який об’єкт може викликати ``Sound."
+"play(sound_path)`` з будь-якого місця, більше не існує простого способу "
+"знайти джерело помилки."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -87,6 +113,10 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**Глобальний розподіл ресурсів**: за допомогою пулу вузлів "
+"``AudioStreamPlayer``, що зберігається з самого початку, ви можете мати "
+"занадто мало помилок і стикатися з ними, або занадто багато і "
+"використовувати більше пам'яті, ніж вам потрібно."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -94,44 +124,58 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"Щодо глобального доступу, то проблема полягає в тому, що будь-який код де "
+"завгодно може передати неправильні дані для автоматичного завантаження "
+"``Sound`` в нашому прикладі. Як результат, досліджуваний домен для "
+"виправлення помилки охоплює весь проект."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
 msgstr ""
+"Коли ви зберігаєте код всередині сцени, в аудіо можуть бути задіяні лише "
+"один або два скрипти."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
+"Порівняйте це з тим, коли кожна сцена зберігає в собі стільки вузлів "
+"``AudioStreamPlayer``, скільки їй потрібно, і всі ці проблеми зникають:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"Кожна сцена управляє власною інформацією про стан. Якщо є проблема з даними, "
+"це спричинить проблеми лише в одній сцені."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"Кожна сцена має доступ лише до власних вузлів. Тепер, якщо є помилка, легко "
+"знайти, який вузол винен."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "Кожна сцена розподіляє точно необхідну кількість ресурсів."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "Керування спільною функціональністю чи даними"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"Ще однією причиною використання автозавантаження може бути те, що ви хочете "
+"повторно використовувати той самий метод, або дані, для багатьох сцен."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -139,29 +183,36 @@ msgid ""
 "provides that feature for an individual scene using the :ref:`class_name "
 "<doc_scripting_continued_class_name>` keyword in GDScript."
 msgstr ""
+"У разі функцій, ви можете створити новий тип ``Node`` *(вузла)*, який "
+"забезпечує цю функцію для окремої сцени з допомогою ключового слова :ref:"
+"`class_name <doc_scripting_continued_class_name>` в GDScript."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "Що стосується даних, то ви можете:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
 msgstr ""
+"Створити новий тип :ref:`Ресурса <class_Resource>` для спільного "
+"використання даних."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"Зберігати дані в об'єкті, до якого має доступ кожен вузол, наприклад, "
+"використовуючи властивість ``owner`` для доступу до кореневого вузла сцени."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
 msgid "When you should use an Autoload"
-msgstr ""
+msgstr "Коли слід використовувати автозавантаження"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
-msgstr ""
+msgstr "Автозавантажені вузли можуть спростити ваш код у деяких випадках:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""
@@ -169,12 +220,18 @@ msgid ""
 "database, then an autoload can be a good tool. There is no scripting API in "
 "Godot to create and manage static data otherwise."
 msgstr ""
+"**Статичні дані**: якщо вам потрібні дані, призначені виключно для одного "
+"класу, наприклад бази даних, то автозавантаження може бути хорошим "
+"інструментом. У Godot не існує API скриптів для створення та управління "
+"статичними даними в іншому випадку."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:89
 msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
 msgstr ""
+"**Статичні функції**: створення бібліотеки функцій, які повертають лише "
+"значення."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
 msgid ""
@@ -183,6 +240,10 @@ msgid ""
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
+"**Системи з широким обсягом**: Якщо синглтон керує власною інформацією, а не "
+"вторгується в дані інших об’єктів, то це чудовий спосіб створити системи, "
+"які обробляють завдання широкого масштабу. Наприклад, квест або система "
+"діалогу."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""
@@ -192,6 +253,11 @@ msgid ""
 "``class_name`` keyword instead to get auto-completion for a type in your "
 "entire project."
 msgstr ""
+"До Godot 3.1 інше використання було лише для зручності: автозавантаження "
+"мають глобальну змінну для свого імені, згенеровану в GDScript, що дозволяє "
+"вам викликати їх із будь-якого файлу скрипта у вашому проекті. Але тепер ви "
+"можете використовувати ключове слово ``class_name`` замість того, щоб "
+"отримати автоматичне заповнення для типу у всьому вашому проекті."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:103
 msgid ""
@@ -200,9 +266,16 @@ msgid ""
 "automatically as a child of the root of your scene tree, regardless of your "
 "game's node structure or which scene you run, e.g. by pressing :kbd:`F6` key."
 msgstr ""
+"Автозавантаження - це не зовсім синглтон. Ніщо не заважає створювати копії "
+"автоматично завантаженого вузла. Це лише інструмент, який автоматично "
+"завантажує вузол як дочірній матеріал кореня дерева ваших сцен, незалежно "
+"від структури вузла вашої гри або сцени, яку ви запускаєте, наприклад, "
+"натисканням клавіші :kbd:`F6`."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:108
 msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
+"Як результат, ви можете отримати автоматично завантажений вузол, наприклад, "
+"``Sound``, за допомогою виклику ``get_node(\"/root/Sound\")``."

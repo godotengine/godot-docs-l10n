@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Serveurs headless Linux et macOS "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -705,9 +707,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antialiasing multi-échantillon (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antialiasing multi-échantillon (MSAA)."
+msgstr "Antialiasing approximatif rapide (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -772,11 +773,8 @@ msgid "Ragdolls."
 msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Formes intégrées : cuboïde, sphère, capsule, cylindre (uniquement avec la "
-"physique Bullet)."
+msgstr "Formes intégrées : cuboïde, sphère, capsule, cylindre."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -880,7 +878,8 @@ msgstr ""
 "actions asynchrones ou utiliser plusieurs cœurs de processeur."
 
 #: ../../docs/about/list_of_features.rst:312
-msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+#, fuzzy
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C# : <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:314
@@ -1002,6 +1001,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Entrée audio pour enregistrer des microphones avec accès en temps réel en "
+"utilisant la classe AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1161,6 +1162,8 @@ msgstr "Saisie au stylet/tablette avec support de la pression."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"La prise en charge de la manette de jeu, du clavier et de la souris est "
+"également disponible sur Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1350,7 +1353,7 @@ msgstr "Support des annonces publicitaires en utilisant des modules tiers."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Prise en charge de l'intégration de sous-vues sur Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,12 @@ msgstr "核心类型"
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
-msgstr "Godot具有构成其核心的丰富的类和模板集,并且所有内容都基于它们构建."
+msgstr "Godot具有构成其核心的丰富的类和模板集, 并且所有内容都基于它们构建."
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
 "This reference will try to list them in order for their better understanding."
-msgstr "这份参考将试着按顺序列出它们,使之更容易被理解."
+msgstr "这份参考将试着按顺序列出它们, 使之更容易被理解."
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
@@ -43,8 +43,8 @@ msgid ""
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
 msgstr ""
-"Godot使用标准的C99数据类型,如 ``uint8_t``, ``uint32_t``, ``int64_t`` 等,现在"
-"每个编译器都支持.为这些东西重新造轮子并不有趣,因为它使代码更难阅读."
+"Godot使用标准的C99数据类型, 如 ``uint8_t``, ``uint32_t``, ``int64_t`` 等, 现"
+"在每个编译器都支持. 为这些东西重新造轮子并不有趣, 因为它使代码更难阅读."
 
 #: ../../docs/development/cpp/core_types.rst:20
 msgid ""
@@ -54,15 +54,15 @@ msgid ""
 "at least a 32 bits bus and can do such operations in one cycle. It makes "
 "code more readable too."
 msgstr ""
-"通常,除非使用大型结构或数组,否则不必在意是否使用给定任务的最有效数据类型.除非"
-"必要,否则 ``int`` 将用于大多数代码.这样做是因为如今每个设备至少具有32位总线,"
-"并且可以在一个周期中执行这样的操作.它也使代码更具可读性."
+"通常, 除非使用大型结构或数组, 否则不必在意是否使用给定任务的最有效数据类型. "
+"除非必要, 否则 ``int`` 将用于大多数代码. 这样做是因为如今每个设备至少具有32位"
+"总线, 并且可以在一个周期中执行这样的操作. 它也使代码更具可读性."
 
 #: ../../docs/development/cpp/core_types.rst:26
 msgid ""
 "For files or memory sizes, ``size_t`` is used, which is warranted to be 64 "
 "bits."
-msgstr "对于文件或内存大小,使用 ``size_t`` ,保证为64位."
+msgstr "对于文件或内存大小, 使用 ``size_t`` , 保证为64位."
 
 #: ../../docs/development/cpp/core_types.rst:29
 msgid ""
@@ -71,9 +71,9 @@ msgid ""
 "However, by default, this has not been forced and CharType maps directly to "
 "wchar_t."
 msgstr ""
-"对于Unicode字符,使用CharType而不是wchar_t,因为许多体系结构具有4个字节长的"
-"wchar_t,其中可能需要2个字节.但是,默认情况下,这不会被强制,CharType会直接映射到"
-"wchar_t."
+"对于Unicode字符, 使用CharType而不是wchar_t, 因为许多体系结构具有4个字节长的"
+"wchar_t, 其中可能需要2个字节. 但是, 默认情况下, 这不会被强制,CharType会直接映"
+"射到wchar_t."
 
 #: ../../docs/development/cpp/core_types.rst:35
 #: ../../docs/development/cpp/core_types.rst:132
@@ -87,12 +87,11 @@ msgid "References:"
 msgstr "参考:"
 
 #: ../../docs/development/cpp/core_types.rst:37
-#, fuzzy
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "typedefs.h>`__"
 msgstr ""
-"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
@@ -106,9 +105,9 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
-"PC是一个很棒的体系结构.计算机通常具有GB级的RAM,TB级的存储空间和千兆赫兹级的"
-"CPU,当应用程序需要更多资源时,操作系统将交换不活动的资源.其他架构(如移动设备或"
-"游戏主机)在这些方面通常有很多限制."
+"PC是一个很棒的体系结构. 计算机通常具有GB级的RAM,TB级的存储空间和千兆赫兹级的"
+"CPU, 当应用程序需要更多资源时, 操作系统将交换不活动的资源. 其他架构(如移动设"
+"备或游戏主机)在这些方面通常有很多限制."
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -117,9 +116,9 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
-"最常见的内存模型是堆,应用程序会从中请求一块内存区域,底层操作系统会试着从某处"
-"找到一块适合这样的内存并返回它.这通常效果最好,并且很灵活,但是随着时间的流逝和"
-"滥用,这可能会导致分段."
+"最常见的内存模型是堆, 应用程序会从中请求一块内存区域, 底层操作系统会试着从某"
+"处找到一块适合这样的内存并返回它. 这通常效果最好, 并且很灵活, 但是随着时间的"
+"流逝和滥用, 这可能会导致分段."
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -129,9 +128,9 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
-"分段缓慢地产生对于大多数常见分配而言太小的孔洞,从而浪费了内存.关于堆和分段的"
-"文献有很多,因此在此不再赘述.现代操作系统使用分页内存,这有助于减轻但不能解决分"
-"段问题."
+"分段缓慢地产生对于大多数常见分配而言太小的孔洞, 从而浪费了内存. 关于堆和分段"
+"的文献有很多, 因此在此不再赘述. 现代操作系统使用分页内存, 这有助于减轻但不能"
+"解决分段问题."
 
 #: ../../docs/development/cpp/core_types.rst:58
 msgid ""
@@ -142,10 +141,10 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
-"然而,许多的研究和测试显示出,在给出足够内存的情况下,如果最大分配大小所占堆最大"
-"大小的比例,低于一个给定比例阈值,即未曾使用的内存比例,分段这件事就不会随着时间"
-"的推移成为问题.换句话说,留出10-20％的可用内存空间,再执行小额内存分配,您也没"
-"事."
+"然而, 许多的研究和测试显示出, 在给出足够内存的情况下, 如果最大分配大小所占堆"
+"最大大小的比例, 低于一个给定比例阈值, 即未曾使用的内存比例, 分段这件事就不会"
+"随着时间的推移成为问题. 换句话说, 留出10-20％的可用内存空间, 再执行小额内存分"
+"配, 您也没事."
 
 #: ../../docs/development/cpp/core_types.rst:65
 msgid ""
@@ -157,10 +156,10 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
-"Godot确保所有的可动态分配的对象都很小(最多不到几kb).但是如果出现很大的分配(像"
-"图像、网格几何数据或大数组),会怎样呢？在这种情况下,Godot可以选择使用动态内存"
-"池.内存会被锁定以进行访问操作；如果内存不足,则内存池会根据需要进行重新排列和"
-"压缩.根据游戏的需要,程序员可以配置动态内存池的大小."
+"Godot确保所有的可动态分配的对象都很小(最多不到几kb). 但是如果出现很大的分配"
+"(像图像, 网格几何数据或大数组), 会怎样呢？在这种情况下,Godot可以选择使用动态"
+"内存池. 内存会被锁定以进行访问操作；如果内存不足, 则内存池会根据需要进行重新"
+"排列和压缩. 根据游戏的需要, 程序员可以配置动态内存池的大小."
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
@@ -172,8 +171,8 @@ msgid ""
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
-"Godot有许多工具可用于跟踪游戏中的内存使用情况,尤其是在调试期间.因此,不应使用"
-"常规的C和C++库调用.相反,Godot提供了一些其它的供您使用."
+"Godot有许多工具可用于跟踪游戏中的内存使用情况, 尤其是在调试期间. 因此, 不应使"
+"用常规的C和C++库调用. 相反,Godot提供了一些其它的供您使用."
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
@@ -183,7 +182,7 @@ msgstr "Godot提供了一些宏可以用来处理C风格的内存分配:"
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard C "
 "library."
-msgstr "这些等效于标准C库中通常的malloc、realloc、free."
+msgstr "这些等效于标准C库中通常的malloc, realloc, free."
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
@@ -191,14 +190,14 @@ msgstr "这些宏可以用来处理C++风格的内存分配:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr "这些等效于new、delete、new[]和delete[]."
+msgstr "这些等效于new, delete, new[]和delete[]."
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
-"memnew/memdelete也使用一点C++的小技巧,在对象创建之后和删除之前,通知对象."
+"memnew/memdelete也使用一点C++的小技巧, 在对象创建之后和删除之前, 通知对象."
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
@@ -206,14 +205,14 @@ msgid ""
 "standard vector class, and is very similar to vector in the C++ standard "
 "library. To create a PoolVector buffer, use this:"
 msgstr ""
-"对于动态内存,提供了PoolVector<>模板.PoolVector是一个标准的Vector类,与C++标准"
-"库中的vector非常相似.要创建PoolVector缓冲区,请使用以下命令:"
+"对于动态内存, 提供了PoolVector<>模板.PoolVector是一个标准的Vector类, 与C++标"
+"准库中的vector非常相似. 要创建PoolVector缓冲区, 请使用以下命令:"
 
 #: ../../docs/development/cpp/core_types.rst:114
 msgid ""
 "PoolVector can be accessed using the [] operator and a few helpers exist for "
 "this:"
-msgstr "可以使用[]运算符访问PoolVector,并且存在一些帮助:"
+msgstr "可以使用[]运算符访问PoolVector, 并且存在一些帮助:"
 
 #: ../../docs/development/cpp/core_types.rst:126
 msgid ""
@@ -222,26 +221,24 @@ msgid ""
 "dynamic memory operations, as read() and write() are too slow for a large "
 "amount of accesses."
 msgstr ""
-"这些操作允许从PoolVectors快速读/写并保持锁定直到它们超出作用域.但是,"
-"PoolVectors应该用于小型动态内存操作,因为read()和write()对于大量访问来说太慢"
+"这些操作允许从PoolVectors快速读/写并保持锁定直到它们超出作用域. 但是,"
+"PoolVectors应该用于小型动态内存操作, 因为read()和write()对于大量访问来说太慢"
 "了."
 
 #: ../../docs/development/cpp/core_types.rst:134
-#, fuzzy
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/3.x/core/os/"
 "memory.h>`__"
 msgstr ""
-"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/3.x/core/os/"
 "memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
-#, fuzzy
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "pool_vector.cpp>`__"
 msgstr ""
-"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:138
@@ -275,8 +272,8 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
-"它们很简单,旨在尽可能小,因为C++中的模板经常被内联,并且在调试符号和代码中使二"
-"进制大小更加大.可以使用指针迭代List、Set和Map,如下所示:"
+"它们很简单, 旨在尽可能小, 因为C++中的模板经常被内联, 并且在调试符号和代码中使"
+"二进制大小更加大. 可以使用指针迭代List, Set和Map, 如下所示:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
@@ -286,44 +283,39 @@ msgstr "Vector<>类还具有一些不错的功能:"
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
-msgstr "它会在写入时进行复制,因此只要不对其进行修改,制作拷贝就很容易."
+msgstr "它会在写入时进行复制, 因此只要不对其进行修改, 制作拷贝就很容易."
 
 #: ../../docs/development/cpp/core_types.rst:162
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
-msgstr "通过在引用计数器上使用原子操作,来支持多线程."
+msgstr "通过在引用计数器上使用原子操作, 来支持多线程."
 
 #: ../../docs/development/cpp/core_types.rst:168
-#, fuzzy
 msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/3.x/core/vector."
 "h>`__"
 msgstr ""
-"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"`core/vector.h <https://github.com/godotengine/godot/blob/3.x/core/vector."
 "h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
-#, fuzzy
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
-#, fuzzy
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
 msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
+"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
-#, fuzzy
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/3.x/core/map.h>`__"
 msgstr ""
-"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
+"`core/map.h <https://github.com/godotengine/godot/blob/3.x/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
@@ -336,18 +328,17 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
-"Godot 还提供了一个字符串类 String.Godot还提供了String类. 此类具有大量功能,在"
-"所有函数(如大小写操作)和utf8解析/提取中均提供全面的Unicode支持,以及提供用于转"
-"换和可视化的帮助函数."
+"Godot 还提供了一个字符串类 String.Godot还提供了String类. 此类具有大量功能, 在"
+"所有函数(如大小写操作)和utf8解析/提取中均提供全面的Unicode支持, 以及提供用于"
+"转换和可视化的帮助函数."
 
 #: ../../docs/development/cpp/core_types.rst:184
-#, fuzzy
 msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
 "h>`__"
 msgstr ""
-"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
-"ustring.h>`__"
+"`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
@@ -360,9 +351,9 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
-"字符串名称和字符串类似,不同的是它们是唯一的.从字符串创建StringName会为所有相"
-"等的字符串产生唯一的内部指针.StringNames对于将字符串用作标识符非常有用,因为比"
-"较它们基本上是在比较指针."
+"字符串名称和字符串类似, 不同的是它们是唯一的. 从字符串创建StringName会为所有"
+"相等的字符串产生唯一的内部指针.StringNames对于将字符串用作标识符非常有用, 因"
+"为比较它们基本上是在比较指针."
 
 #: ../../docs/development/cpp/core_types.rst:194
 msgid ""
@@ -371,12 +362,11 @@ msgid ""
 msgstr "创建一个字符串名称(尤其是一个新的) 是慢的, 但比较它们是快的."
 
 #: ../../docs/development/cpp/core_types.rst:200
-#, fuzzy
 msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "string_name.h>`__"
 msgstr ""
-"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/string_name.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
@@ -386,13 +376,12 @@ msgstr "数学类型"
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""
 "There are several linear math types available in the core/math directory."
-msgstr "在core/math目录中,有几种线性代数常用的类型."
+msgstr "在core/math目录中, 有几种线性代数常用的类型."
 
 #: ../../docs/development/cpp/core_types.rst:211
-#, fuzzy
 msgid "`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
 msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+"`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
@@ -402,15 +391,14 @@ msgstr "节点路径"
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
-msgstr "这是一种特殊的数据类型,用于在场景树中存储路径并快速引用它们."
+msgstr "这是一种特殊的数据类型, 用于在场景树中存储路径并快速引用它们."
 
 #: ../../docs/development/cpp/core_types.rst:222
-#, fuzzy
 msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "node_path.h>`__"
 msgstr ""
-"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
@@ -423,12 +411,11 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
-"RID是资源ID.服务使用这些来引用存储在其中的数据.RID是不透明的,这意味着它们引用"
-"的数据不能直接访问.RID是唯一的,甚至对于不同类型的引用数据也是如此."
+"RID是资源ID. 服务使用这些来引用存储在其中的数据.RID是不透明的, 这意味着它们引"
+"用的数据不能直接访问.RID是唯一的, 甚至对于不同类型的引用数据也是如此."
 
 #: ../../docs/development/cpp/core_types.rst:235
-#, fuzzy
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
 msgstr ""
-"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
+"`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"

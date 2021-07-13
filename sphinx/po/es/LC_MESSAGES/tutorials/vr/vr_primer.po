@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -342,32 +342,32 @@ msgstr ""
 "una API de código abierto y drivers para auriculares."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:131
+#, fuzzy
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
-"an open standard for VR and AR software. This plugin is early in "
-"development, only supports Linux and requires extra setup described in the "
-"repository."
+"an open standard for VR and AR software. Tested with SteamVR, Monada and "
+"Oculus OpenXR runtimes."
 msgstr ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ soporta OpenXR, un "
 "estándar abierto para software de RV y AR. Este plugin está en una fase "
 "temprana de desarrollo, sólo soporta Linux y requiere una configuración "
 "extra descrita en el repositorio."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:135
+#: ../../docs/tutorials/vr/vr_primer.rst:134
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
 "Estos plugins pueden ser descargados de GitHub o de la Biblioteca de "
 "Recursos de Godot."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:137
+#: ../../docs/tutorials/vr/vr_primer.rst:136
 msgid "In addition to the plugins, there are several official demos."
 msgstr "Además de los plugins, hay varias demostraciones oficiales."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:139
+#: ../../docs/tutorials/vr/vr_primer.rst:138
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:140
+#: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
@@ -375,7 +375,7 @@ msgstr ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (el "
 "tutorial de este proyecto es :ref:`doc_vr_starter_tutorial_part_one`)."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:142
+#: ../../docs/tutorials/vr/vr_primer.rst:141
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
@@ -384,11 +384,11 @@ msgstr ""
 "implementaciones de características de RV como el movimiento y la recogida "
 "de objetos."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:146
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr "Otras cosas a considerar"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:148
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
@@ -396,7 +396,7 @@ msgstr ""
 "Hay algunos otros temas que necesitamos tocar brevemente en este manual que "
 "son importantes de conocer."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:151
+#: ../../docs/tutorials/vr/vr_primer.rst:150
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -428,7 +428,7 @@ msgstr ""
 "ejemplo, si lo establecemos en un valor de 10, cambia nuestro sistema de "
 "coordenadas de modo que 10 unidades = 1 metro."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:162
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
 "Especially VR taxes your game a lot more than most people realize. For "
@@ -441,7 +441,7 @@ msgstr ""
 "pero incluso para los juegos de escritorio, hay tres factores que hacen la "
 "vida extra difícil:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:166
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -453,7 +453,7 @@ msgstr ""
 "apoyo a la nueva extensión MultiView OpenGL en mente, todavía hay una carga "
 "de trabajo extra en la prestación de imágenes para ambos ojos"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:169
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -468,7 +468,7 @@ msgstr ""
 "funcionen a un nivel estable de 90fps para asegurarte de que tus usuarios no "
 "se mareen de inmediato."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:173
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -481,7 +481,7 @@ msgstr ""
 "renderizando cada ojo a 2160x2400. Esto es menos problemático para la "
 "mayoría de las aplicaciones de RA."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:177
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

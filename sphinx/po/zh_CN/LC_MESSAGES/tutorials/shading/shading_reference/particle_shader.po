@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,9 +28,9 @@ msgid ""
 "color, position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
-"粒子着色器是一种特殊类型的顶点着色器,在物体被绘制之前运行.它们用于计算材质属"
-"性,如颜色、位置和旋转.它们与CanvasItem或Spatial的任何常规材质一起绘制,这取决"
-"于它们是2D还是3D."
+"粒子着色器是一种特殊类型的顶点着色器, 在物体被绘制之前运行. 它们用于计算材质"
+"属性, 如颜色, 位置和旋转. 它们与CanvasItem或Spatial的任何常规材质一起绘制, 这"
+"取决于它们是2D还是3D."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:11
 msgid ""
@@ -39,9 +39,9 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain only a vertex processor "
 "function that outputs multiple properties (see built-ins below)."
 msgstr ""
-"粒子着色器是独特的,因为它们不用于绘制对象本身；被用来计算粒子的性质,然后由空"
-"间着色器的画布组件使用.它们只包含一个顶点处理器函数,输出多个属性的内置函数(见"
-"下文)."
+"粒子着色器是独特的, 因为它们不用于绘制对象本身；被用来计算粒子的性质, 然后由"
+"空间着色器的画布组件使用. 它们只包含一个顶点处理器函数, 输出多个属性的内置函"
+"数(见下文)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:16
 msgid ""
@@ -53,17 +53,17 @@ msgid ""
 "shaders that discard the data they have calculated once they draw to the "
 "frame buffer."
 msgstr ""
-"粒子着色器使用转换反馈着色器,这是一种单独运行的特殊类型的顶点着色器.它像普通"
-"顶点着色器那样在缓冲区中接受数据,但是也输出到数据缓冲区,而不是输出到片段着色"
-"器进行像素处理.正因为如此,转换反馈着色器可以在每次运行时自行构建,与其他着色器"
-"不同,其他着色器一旦绘制到帧缓冲区,就会丢弃它们计算的数据."
+"粒子着色器使用转换反馈着色器, 这是一种单独运行的特殊类型的顶点着色器. 它像普"
+"通顶点着色器那样在缓冲区中接受数据, 但是也输出到数据缓冲区, 而不是输出到片段"
+"着色器进行像素处理. 正因为如此, 转换反馈着色器可以在每次运行时自行构建, 与其"
+"他着色器不同, 其他着色器一旦绘制到帧缓冲区, 就会丢弃它们计算的数据."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:23
 msgid ""
 "Particle shaders are only available in the GLES3 backend. If you need "
 "particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
 msgstr ""
-"粒子着色器仅在GLES3后端中可用. 如果您需要在GLES2中使用粒子系统,请使用 :ref:"
+"粒子着色器仅在GLES3后端中可用. 如果您需要在GLES2中使用粒子系统, 请使用 :ref:"
 "`CPUParticles <class_CPUParticles>`."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:27
@@ -102,7 +102,7 @@ msgstr "**disable_velocity**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "Ignore **VELOCITY** value."
-msgstr "忽略**VELOCITY**值."
+msgstr "忽略 **VELOCITY** 值."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 msgid "Built-ins"
@@ -115,9 +115,9 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
-"标记为 \"in\" 的值是只读的.标记为 \"out\" 的值是可以选择写入的,不一定包含合理"
-"的值.标记为 \"inout\" 的值提供一个合理的默认值,并且可以选择写入.采样器不是写"
-"入的对象,它们没有被标记."
+"标记为 \"in\" 的值是只读的. 标记为 \"out\" 的值是可以选择写入的, 不一定包含合"
+"理的值. 标记为 \"inout\" 的值提供一个合理的默认值, 并且可以选择写入. 采样器不"
+"是写入的对象, 它们没有被标记."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
 msgid "Global built-ins"
@@ -125,7 +125,7 @@ msgstr "全局内置"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:50
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr "全局内置的功能随处可见,包括自定义功能."
+msgstr "全局内置的功能随处可见, 包括自定义功能."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
@@ -138,7 +138,7 @@ msgstr "in float **TIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
 msgid "Global time, in seconds."
-msgstr "全球时间,以秒为单位."
+msgstr "全球时间, 以秒为单位."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "Vertex built-ins"
@@ -150,8 +150,8 @@ msgid ""
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
 "the ``COLOR`` variable."
 msgstr ""
-"为了在SpatialMaterial中使用 ``COLOR`` 变量,将 ``use_vertex_as_albedo`` 设置"
-"为 ``true`` .在ShaderMaterial中,用 ``COLOR`` 变量访问它."
+"为了在SpatialMaterial中使用 ``COLOR`` 变量, 将 ``use_vertex_as_albedo`` 设置"
+"为 ``true`` . 在ShaderMaterial中, 用 ``COLOR`` 变量访问它."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "inout vec4 **COLOR**"
@@ -160,7 +160,7 @@ msgstr "输入输出vec4 **COLOR**"
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
-msgstr "粒子的颜色,可以写入Mesh的顶点函数中,也可以访问."
+msgstr "粒子的颜色, 可以写入Mesh的顶点函数中, 也可以访问."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "inout vec3 **VELOCITY**"
@@ -168,7 +168,7 @@ msgstr "输入输出vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle velocity, can be modified."
-msgstr "粒子速度,可以修改."
+msgstr "粒子速度, 可以修改."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "out float **MASS**"
@@ -176,7 +176,7 @@ msgstr "out float **MASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
-msgstr "粒子质量,用于吸引器(在3.1中没有实现)."
+msgstr "粒子质量, 用于吸引器(在3.1中没有实现)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "inout bool **ACTIVE**"
@@ -184,7 +184,7 @@ msgstr "输入输出bool **ACTIVE**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "``true`` when Particle is active, can be set to ``false``."
-msgstr "当粒子被激活时为 ``true`` ,可以设置为 ``false`` ."
+msgstr "当粒子被激活时为 ``true`` , 可以设置为 ``false`` ."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in bool **RESTART**"
@@ -201,7 +201,7 @@ msgstr "输入输出vec4 **CUSTOM**"
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr "自定义粒子数据.可从网格着色器作为**实例化_自定义**访问."
+msgstr "自定义粒子数据. 可从网格着色器作为 **实例化_自定义** 访问."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "inout mat4 **TRANSFORM**"

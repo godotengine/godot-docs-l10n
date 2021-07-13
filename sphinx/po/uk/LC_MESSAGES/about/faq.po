@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -268,11 +268,12 @@ msgstr ""
 "`GDScript scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
 "Є декілька причин використовувати GDScript -- особливо, якщо ви займаєтесь "
 "прототипуванням, знаходитесь в альфа/беті стадіях розробки вашого проєкту "
@@ -547,7 +548,6 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "Чому Godot зберігає невеликий набір основних функцій?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
@@ -925,19 +925,18 @@ msgstr ""
 "або прикладних проєктів (якщо це застосовується)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Чи можливо використовувати Godot як бібліотеку ?"
+msgstr "Чи можливо використовувати Godot для створення не ігрових додатків?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Невеликий розмір дистрибутиву Godot робить його непоганою альтернативою для "
-"таких фреймворків, як Electron, чи Qt."
+"Так! Godot має об'ємну вбудовану систему інтерфейсу користувача, і невеликий "
+"розмір, що робить його непоганою альтернативою для таких фреймворків, як "
+"Electron, чи Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -945,12 +944,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"При створенні не ігрового додатка не забудьте увімкнути :ref:`low-processor "
+"mode <class_ProjectSettings_property_application/run/low_processor_mode>` в "
+"Параметрах Проекту щоб зменшити використання CPU і GPU."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Тим не менш, ми не рекомендуємо використовувати Godot для створення "
+"*мобільного* додатка, оскільки режим з низьким процесором поки не "
+"підтримується на мобільних платформах."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -958,6 +963,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Загляньте в `Material Maker <https://github.com/RodZill4/material-maker>`__ "
+"і `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ для "
+"прикладів програм із відкритим кодом, зроблених за допомогою Godot."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -990,6 +998,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
 msgstr ""
+"Який набір інструментів користувальницького інтерфейсу використовує Godot?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1000,6 +1009,14 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot не використовує стандартний набір інструментів :abbr:`GUI (Графічного "
+"Інтерфейсу Користувача)`, як GTK, Qt або wxWidgets. Натомість Godot "
+"використовує власний набір інструментів користувальницького інтерфейсу, "
+"відтворений за допомогою OpenGL ES або Vulkan. Цей набір інструментів "
+"представлений у вигляді вузлів керування, які використовуються для "
+"візуалізації редактора (який написаний на C++). Ці вузли управління також "
+"можуть бути використані в проектах на будь-якій скриптовій мові, що "
+"підтримується Godot."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1009,6 +1026,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Цей спеціальний набір інструментів дає змогу отримати вигоду від апаратного "
+"прискорення та мати стабільний вигляд на всіх платформах. На додачу до "
+"цього, йому не доведеться мати справу із застереженнями щодо ліцензування "
+"LGPL, які поставляються з GTK або Qt. Нарешті, це означає, що Godot «їсть "
+"власну собачу їжу», оскільки сам редактор є одним із найскладніших "
+"користувачів системи інтерфейсу Godot."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1016,9 +1039,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Цей власний набір інструментів інтерфейсу користувача :ref:`не можна "
+"використати, як бібліотеку <doc_faq_use_godot_as_library>`, проте ви все ще "
+"можете :ref:`використати Godot для створення не ігрових додатків "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr "Чому Godot не використовує STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:415

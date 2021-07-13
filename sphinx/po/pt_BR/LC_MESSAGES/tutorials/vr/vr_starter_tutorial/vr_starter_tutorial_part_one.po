@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,28 +88,25 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:26
-#, fuzzy
 msgid ""
 "How to create a :ref:`RigidBody <class_RigidBody>`-based system that allows "
 "for picking up, dropping, and throwing RigidBody nodes using the VR "
 "controllers."
 msgstr ""
-"Adicionar a habilidade de agarrar e arremessar nós :ref:`RigidBody "
-"<class_RigidBody>`"
+"Como criar um sistema baseado em :ref:`RigidBody <class_RigidBody>` que "
+"permite pegar, largar e lançar nós RigidBody utilizando os controladores VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:27
-#, fuzzy
 msgid "How to create simple destroyable target."
-msgstr "Adicionando uma torre"
+msgstr "Como criar um alvo simples e destruível."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:28
-#, fuzzy
 msgid ""
 "How to create some special :ref:`RigidBody <class_RigidBody>`-based objects "
 "that can destroy the targets."
 msgstr ""
-"Adicionar a habilidade de agarrar e arremessar nós :ref:`RigidBody "
-"<class_RigidBody>`"
+"Como criar alguns objetos especiais baseados em :ref:`RigidBody "
+"<class_RigidBody>`que podem destruir os alvos."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:30
 #, fuzzy
@@ -161,11 +158,8 @@ msgid "The font used is Titillium-Regular"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:49
-#, fuzzy
 msgid "The font is licensed under the SIL Open Font License, Version 1.1"
-msgstr ""
-"A fonte usada é **Titillium-Regular**, licenciada sob a ``SIL Open Font "
-"License, Version 1.1``."
+msgstr "A fonte é licenciada sob a SIL Open Font License, Versão 1.1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:51
 msgid ""
@@ -1196,7 +1190,7 @@ msgstr ""
 msgid ""
 "If ``held_object`` is not equal to ``null``, then the VR controller is "
 "holding something. We then check to see if the object that is being held, "
-"``held_object``, extends a class called ``VR_Interactable_Rigidbody``. we "
+"``held_object``, extends a class called ``VR_Interactable_Rigidbody``. We "
 "have not made ``VR_Interactable_Rigidbody`` yet, but "
 "``VR_Interactable_Rigidbody`` will be a custom class we will use on all of "
 "the special/custom :ref:`RigidBody <class_RigidBody>`-based nodes in the "
@@ -1288,6 +1282,19 @@ msgid ""
 "name ``NO_PICKUP``, then we assign the ``rigid_body`` variable to the :ref:"
 "`RigidBody <class_RigidBody>` node and break the for loop."
 msgstr ""
+"Para cada nó :ref:`PhysicsBody <class_PhysicsBody>`, verificamos se ele é, "
+"ou se estende, um nó :ref:`RigidBody <class_RigidBody>` usando ``se body for "
+"RigidBody``, que retornará ``true`` se o nó :ref:`PhysicsBody "
+"<class_PhysicsBody>`for ou estender o nó :ref:`RigidBody <class_RigidBody>`. "
+"Se o objeto é um :ref:`RigidBody <class_RigidBody>`, então verificamos para "
+"ter certeza de que não há uma variável/constante chamada ``NO_PICKUP`` "
+"definida no corpo. Fazemos isso porque se você deseja ter nós :ref:"
+"`RigidBody <class_RigidBody>` que não podem ser captados, tudo que você "
+"precisa fazer é definir uma constante/variável chamada ``NO_PICKUP`` e o "
+"controlador VR será incapaz de pegar. Se o nó :ref:`RigidBody "
+"<class_RigidBody>` não tem uma variável/constante definida com o nome "
+"``NO_PICKUP``, então atribuímos a variável ``rigid_body`` ao nó :ref:"
+"`RigidBody <class_RigidBody>` e quebramos o loop for."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:814
 msgid ""
@@ -1655,9 +1662,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:999
-#, fuzzy
 msgid "Let's quickly go through what this script."
-msgstr "O papel do roteiro"
+msgstr "Vamos examinar rapidamente o que é este script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1003
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,14 +77,14 @@ msgstr ""
 "використовують їх."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
-msgstr "Настанови по стилю C#"
+msgstr "Настанови по стилю"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
+"Для узгодженості проектів рекомендуємо дотримуватися наступних вказівок:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -94,11 +94,18 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"Використовуйте **snake_case** для назв папок та файлів (за винятком скриптів "
+"C#). Це обходить проблеми з чутливістю до регістру, які можуть з’явитися "
+"після експорту проекту в Windows. Скрипти C# є винятком із цього правила, "
+"оскільки домовленість полягає у присвоєнні їм назви класу, яка має бути в "
+"PascalCase."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
 msgstr ""
+"Використовуйте **PascalCase** для назв вузлів, оскільки це відповідає "
+"вбудованому стилю."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -108,6 +115,11 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"Загалом, зберігайте сторонні ресурси в папці верхнього рівня ``addons/``, "
+"навіть якщо це не плагіни редактора. Це полегшує відстеження файлів "
+"сторонніх виробників. З цього правила є деякі винятки; наприклад, якщо ви "
+"використовуєте сторонні ігрові ресурси для персонажа, то має сенс включити "
+"їх до тієї самої папки, що і сцени персонажів та скрипти."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
@@ -171,7 +183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid "Case sensitivity"
-msgstr ""
+msgstr "Чутливість до регістру"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:98
 msgid ""
@@ -182,12 +194,22 @@ msgid ""
 "stick to ``snake_case`` naming for all files in the project (and lowercase "
 "characters in general)."
 msgstr ""
+"У Windows та останніх версіях macOS за замовчуванням використовуються "
+"нечутливі до регістру файлові системи, тоді як у дистрибутивах Linux за "
+"замовчуванням використовується чутлива до регістру файлова система. Це може "
+"спричинити проблеми після експорту проекту, оскільки віртуальна файлова "
+"система PCK Godot чутлива до регістру. Щоб цього уникнути, рекомендується "
+"дотримуватися стилю snake_case для іменування усіх файлів у проекті (та "
+"малих символів загалом)."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:107
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
+"Ви можете порушити це правило, коли в керівництві по стилю рекомендує інше "
+"(наприклад, в посібник зі стилю C#). Однак будьте послідовними, щоб уникнути "
+"помилок."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
 msgid ""
@@ -196,6 +218,9 @@ msgid ""
 "Subsystem for Linux feature, run the following command in a PowerShell "
 "window::"
 msgstr ""
+"У Windows 10, щоб уникнути помилок, пов’язаних з чутливістю до регістру, ви "
+"також можете зробити папку проекту чутливою до регістру. Увімкнувши функцію "
+"Windows Subsystem для Linux, запустіть таку команду у вікні PowerShell:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:120
 msgid ""
@@ -203,3 +228,6 @@ msgid ""
 "following line in a PowerShell window *running as Administrator* then reboot "
 "when asked::"
 msgstr ""
+"Якщо ви не ввімкнули Windows Subsystem для Linux, ви можете ввести наступний "
+"рядок у вікні PowerShell, що *працює від імені адміністратора*, а потім "
+"перезавантажити на запит:"

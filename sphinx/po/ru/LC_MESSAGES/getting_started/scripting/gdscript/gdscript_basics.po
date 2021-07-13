@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1684,7 +1684,7 @@ msgstr "Существует 6 типов шаблонов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid "Constant pattern"
-msgstr "Постоянный (константный) шаблон"
+msgstr "Постоянный шаблон"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "Constant primitives, like numbers and strings::"
@@ -1771,8 +1771,8 @@ msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
-"Работает так же, как и шаблон массива. Каждый ключ должен быть постоянным "
-"шаблоном (constant pattern)."
+"Работает так же, как шаблон массива. Каждый ключ должен быть постоянным "
+"шаблоном."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid ""
@@ -1938,14 +1938,12 @@ msgid ""
 "are called in all parent classes automatically. There is no need to call "
 "them explicitly when overloading them."
 msgstr ""
-"Помните, что функции по умолчанию, такие как ``_init``, и большинство "
-"уведомлений (notifications), таких как ``_enter_tree``, ``_exit_tree``, "
-"``_process``, ``_physics_process`` и др. вызываются во всех базовых классах "
-"автоматически. А значит, нет необходимости вызывать их вручную при "
-"перегрузке этих функций."
+"Функции по умолчанию, такие как ``_init``, и большинство уведомлений, таких "
+"как ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process`` и "
+"др. вызываются во всех родительских классах автоматически. Нет необходимости "
+"вызывать их вручную при перегрузке этих функций."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-#, fuzzy
 msgid "Class constructor"
 msgstr "Конструктор класса"
 
@@ -1969,7 +1967,7 @@ msgid ""
 msgstr ""
 "В отличие от вызова обычной функции, как в приведенном выше примере с ``."
 "some_func``, если конструктор из унаследованного класса принимает аргументы, "
-"то они передаются следующим образом:"
+"то они передаются следующим образом::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
 msgid "This is better explained through examples. Consider this scenario::"
@@ -2008,11 +2006,12 @@ msgstr ""
 "является тем же ``e`` переданным в ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
+#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
-"constructor as well, not just variables. eg.::"
+"constructor as well, not just variables, e.g.::"
 msgstr ""
 "если конструктор ``_init`` в ``Idle.gd`` принимает ноль аргументов, то ему "
 "все равно нужно передать некоторое значение в родительский класс ``State."
@@ -2157,7 +2156,6 @@ msgid "Memory management"
 msgstr "Управление памятью"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2173,7 +2171,7 @@ msgstr ""
 "наследование, расширяются **Reference**. Если это нежелательно, то класс "
 "должен наследовать :ref:`class_Object` вручную и вызывать instance.free(). "
 "Чтобы избежать циклов ссылок, которые не могут быть освобождены, для "
-"создания слабых ссылок предусмотрена функция ``weakref``."
+"создания слабых ссылок предусмотрена функция ``weakref``. Вот пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
@@ -2390,7 +2388,7 @@ msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
 "Не забывайте сохранять новое состояние функции при использовании нескольких "
-"``yield``:"
+"``yield``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1583
 msgid "Coroutines & signals"
@@ -2456,9 +2454,8 @@ msgstr ""
 "промежуточных возвратов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Ключевое слово Onready"
+msgstr "ключевое слово `onready`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""

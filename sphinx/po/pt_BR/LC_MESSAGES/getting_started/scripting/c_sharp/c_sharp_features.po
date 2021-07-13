@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "Funções personalizadas"
+msgstr "Funcionalidades do C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
-#, fuzzy
 msgid ""
 "This page provides an overview of the commonly used features of both C# and "
 "Godot and how they are used together."
@@ -32,12 +30,10 @@ msgstr ""
 "e no Godot e como eles são usados juntos."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
-#, fuzzy
 msgid "Type conversion and casting"
 msgstr "Conversão de Tipos e Casting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
-#, fuzzy
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
@@ -62,7 +58,6 @@ msgid "**Casting and Type Checking**"
 msgstr "**Casting e Verificação de Tipo**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
-#, fuzzy
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
@@ -77,18 +72,16 @@ msgid "**Using the AS operator**"
 msgstr "**Usando o operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
-#, fuzzy
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
-"O operador ``as`` retorna nulo se o nó não pode ser fundido para Sprite e "
-"por esta razão não pode ser usado com tipos de valor."
+"O operador ``as`` retorna ``null`` se o nó não pode ser convertido para "
+"Sprite, e por esta razão, não pode ser usado com tipos de valor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
-#, fuzzy
 msgid "**Using the generic methods**"
-msgstr "**Usando o operador AS**"
+msgstr "**Usando os métodos genéricos**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
@@ -107,20 +100,18 @@ msgstr ""
 "para o tipo desejado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
-#, fuzzy
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
-"O operador ``as`` retorna nulo se o nó não pode ser fundido para Sprite e "
-"por esta razão não pode ser usado com tipos de valor."
+"``GetNodeOrNull<T>()`` usa o operador ``as`` e retornará ``null`` se o "
+"código não puder ser convertido para o tipo desejado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
 msgstr "**Verificação de tipo usando o operador IS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
-#, fuzzy
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
@@ -150,7 +141,7 @@ msgid ""
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
 "Para um exemplo completo de C#, veja a seção **Manipulando um sinal** no "
-"tutorial passo a passo: ref: `doc_scripting`."
+"tutorial passo a passo :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
@@ -196,7 +187,6 @@ msgstr ""
 "array."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
-#, fuzzy
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -205,13 +195,12 @@ msgid ""
 "compatible automatically, but custom data objects will need to extend from "
 "`Godot.Object` or one of its subclasses."
 msgstr ""
-"Os sinais suportam parâmetros e valores vinculados de todos os `tipos "
-"incorporados <https://docs.microsoft.com/en-us/dotnet/csharp/language-"
-"reference/keywords/built-in-types-table>`_ e Classes derivadas de: ref: "
-"`Godot.Object <class_Object>`. Consequentemente, qualquer ``Node`` ou "
-"``Reference`` será compatível automaticamente, mas os objetos de dados "
-"personalizados precisarão ser estendidos de `Godot.Object` ou de uma de suas "
-"subclasses."
+"Sinais suportam parâmetros e valores vinculados de todos os `tipos internos "
+"<https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/"
+"built-in-types-table>`_ e Classes derivadas de :ref:`Godot.Object "
+"<class_Object>`. Consequentemente, qualquer ``Node`` ou ``Reference`` será "
+"compatível automaticamente, mas os objetos de dados personalizados "
+"precisarão ser estendidos de `Godot.Object` ou de uma de suas subclasses."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
@@ -224,9 +213,8 @@ msgstr ""
 "sinais (com ``Connect`` ou ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "Processamentos"
+msgstr "Definições de pré-processamento"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
@@ -237,7 +225,6 @@ msgstr ""
 "dependendo do ambiente para o qual está compilando."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
-#, fuzzy
 msgid ""
 "If you created your project before Godot 3.2, you have to modify or "
 "regenerate your `csproj` file to use this feature (compare "
@@ -269,15 +256,15 @@ msgstr "Lista completa de definições"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr "`` GODOT`` é sempre definido para projetos Godot."
+msgstr "``GODOT`` é sempre definido para projetos Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
-"Um dos `GODOT_64` ou `GODOT_32` é definido dependendo se a arquitetura é 64-"
-"bit ou 32-bit."
+"Um dos ``GODOT_64`` ou ``GODOT_32`` são definidos dependendo se a "
+"arquitetura é 64-bit ou 32-bit."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 #, fuzzy
@@ -285,54 +272,48 @@ msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
 "These names may change in the future. These are created from the "
-"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
-"Um dos `GODOT_X11`, `GODOT_WINDOWS`, `GODOT_OSX`, `GODOT_ANDROID`, "
-"`GODOT_HTML5`, ou `GODOT_SERVER` dependendo do sistema operacional. Esses "
+"Um dos ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
+"``GODOT_IOS``, ``GODOT_HTML5``, ou ``GODOT_SERVER`` dependendo do SO. Esses "
 "nomes podem mudar no futuro. Estes são criados a partir do método "
-"``get_name()`` do singleton :ref:``OS <class_OS>``, mas não todos os "
-"possíveis S.O que o método retorna é um sistema operacional que Godot com o "
-"Mono é executado."
+"``get_name()`` do singleton :ref:`OS <class_OS>`, mas nem todo SO possível "
+"que o método retorna é um SO que Godot com o Mono é executado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
-#, fuzzy
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
-"Quando **exportar**, também pode ser definido o seguinte, dependendo das "
+"Ao **exportar**, o seguinte também pode ser definido dependendo das "
 "características de exportação:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
-#, fuzzy
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
-"Um dos ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB```, dependendo do tipo "
+"Um dos ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB``, dependendo do tipo "
 "de plataforma."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
-"Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android, "
+"Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android "
 "dependendo da arquitetura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
-"Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android, "
-"dependendo da arquitetura."
+"Um dos ``GODOT_ARM64`` ou ``GODOT_ARMV7`` apenas no iOS, dependendo da "
+"arquitetura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
-#, fuzzy
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
@@ -341,13 +322,12 @@ msgstr ""
 "de compressão de textura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
-#, fuzzy
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
 "Quaisquer recursos personalizados adicionados no menu de exportação serão "
-"capitalizados e prefixados: ``foo`` -> ``GODOT_FOO```."
+"capitalizados e prefixados: ``foo`` -> ``GODOT_FOO``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
 msgid ""

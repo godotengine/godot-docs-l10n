@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,6 @@ msgstr ""
 "налагодження**, таку як помилки JavaScript, редактора і WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
-#, fuzzy
 msgid ""
 "`There are significant bugs when running HTML5 projects on iOS <https://"
 "github.com/godotengine/godot/issues?q=is:issue+is:open+label:platform:"
@@ -51,10 +50,10 @@ msgid ""
 "also result in better performance."
 msgstr ""
 "Трапляється багато помилок при запуску проектів HTML5 на iOS <https://github."
-"com/godotengine/godot/issues/26554>`__ (незалежно від браузера). Ми "
-"рекомендуємо використовувати :ref:`рідну функцію експорту iOS "
-"<doc_exporting_for_ios>`, оскільки це також призведе до кращої "
-"продуктивності."
+"com/godotengine/godot/issues?q=is:issue+is:open+label:platform:html5+ios>`__ "
+"(незалежно від браузера). Ми рекомендуємо використовувати :ref:`рідну "
+"функцію експорту iOS <doc_exporting_for_ios>`, оскільки це також призведе до "
+"кращої продуктивності."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
 msgid "WebGL 2"
@@ -103,18 +102,24 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"Якщо доступний робочий шаблон веб-експорту, у редакторі з’являється кнопка "
+"між кнопками *Зупинити сцену* та *Відтворити відредаговану сцену*, щоб "
+"швидко відкрити гру у браузері за замовчуванням для тестування."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid ""
 "You can choose the **Export Type** to select which features will be "
 "available:"
 msgstr ""
+"Ви можете вибрати **Тип експорту**, щоб вибрати, які функції будуть доступні:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
 "*Regular*: is the most compatible across browsers, will not support threads, "
 "nor GDNative."
 msgstr ""
+"*Regular* *(Звичайний)*: є найбільш сумісним із браузерами, не підтримує "
+"потоки, а також GDNative."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid ""
@@ -122,12 +127,17 @@ msgid ""
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
 "SharedArrayBuffer>`__"
 msgstr ""
+"*Threads* *(Потоковий)*: вимагає від браузера підтримки `SharedArrayBuffer "
+"<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/"
+"Global_Objects/SharedArrayBuffer>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
 msgid ""
 "*GDNative*: enables GDNative support but makes the binary bigger and slower "
 "to load."
 msgstr ""
+"*GDNative*: включає підтримку GDNative, але робить двійковий файл більшим і "
+"повільнішим для завантаження."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:51
 msgid ""
@@ -136,12 +146,19 @@ msgid ""
 "(enabling both **For Desktop** and **For Mobile** will result in a bigger, "
 "but more compatible export)."
 msgstr ""
+"Якщо ви плануєте використовувати :ref:`стиснення VRAM<doc_import_images>`, "
+"переконайтеся, що **Vram Texture Compression** увімкнено для цільових "
+"платформ (увімкнення **For Desktop** *(для настільних)* і **For Mobile** "
+"*(для мобільних)* призведе до більшого, але більш сумісного експорту)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Якщо вказано шлях до файлу **Custom HTML shell** *(користувацької оболонки "
+"HTML)*, то він буде використаний замість сторінки HTML за замовчуванням. "
+"Дивіться :ref:`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
 msgid ""
@@ -149,6 +166,9 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Head Include** додається до елемента ``<head>`` згенерованої HTML-"
+"сторінки. Це дозволяє, наприклад, завантажувати веб-шрифти та сторонні "
+"JavaScript API, включати CSS, або запускати код JavaScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:63
 msgid ""
@@ -158,12 +178,18 @@ msgid ""
 "lost in future exports. To customize the generated file, use the **Custom "
 "HTML shell** option."
 msgstr ""
+"Кожен проект повинен генерувати власний HTML-файл. При експорті декілька "
+"текстових заповнювачів замінюються у згенерованому файлі HTML спеціально для "
+"заданих параметрів експорту. Будь-які прямі зміни до цього файлу HTML будуть "
+"втрачені в майбутньому експорті. Щоб налаштувати згенерований файл, "
+"скористайтесь опцією **Custom HTML shell** *(Користувацька оболонка HTML)*."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 msgid ""
 "**Export types** other then *Regular* are not yet supported by the C# "
 "version."
 msgstr ""
+"**Типи експорту**, всі, крім *Regular*, ще не підтримуються версією C#."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Limitations"
@@ -189,6 +215,11 @@ msgid ""
 "the web page is served via a secure HTTPS connection (localhost is usually "
 "exempt from such requirement)."
 msgstr ""
+"Постачальники браузерів роблять все більше функціональних можливостей "
+"доступними лише в `захищеному контексті <https://developer.mozilla.org/en-US/"
+"docs/Web/Security/Secure_Contexts>`_, це означає, що такі функції доступні "
+"лише в тому випадку, якщо веб-сторінка обслуговується через захищене "
+"з'єднання HTTPS (localhost зазвичай звільняється від такої вимоги)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
@@ -197,6 +228,10 @@ msgid ""
 "if the functionality you're interested in has an issue yet. If not, open one "
 "to communicate your interest."
 msgstr ""
+"Перевірте `список відкритих проблем HTML5 на GitHub <https://github.com/"
+"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__, щоб "
+"побачити, чи є серед них виявлена вами проблема. Якщо нема, відкрийте таку, "
+"щоб повідомити про свій інтерес."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "Using cookies for data persistence"
@@ -234,6 +269,9 @@ msgid ""
 "only available if the appropriate **Export Type** is set and support for it "
 "across browsers is still limited."
 msgstr ""
+"Як зазначалося :ref:`вище<doc_javascript_export_options>`, багатопоточність "
+"доступна лише в тому випадку, якщо встановлено відповідний **Export Type** "
+"*(тип експорту)* і підтримка його в браузерах все ще обмежена."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid ""
@@ -242,6 +280,10 @@ msgid ""
 "`cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/"
 "Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 msgstr ""
+"Потрібен :ref:`захищений контекст<doc_javascript_secure_contexts>`. Браузери "
+"також починають вимагати, щоб веб-сторінка обслуговувалась специфічними "
+"`заголовками ізоляції перехресного походження<https://developer.mozilla.org/"
+"en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid "GDNative"
@@ -252,16 +294,21 @@ msgid ""
 "As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only "
 "available if the appropriate **Export Type** is set."
 msgstr ""
+"Як зазначалося :ref:`вище<doc_javascript_export_options>`, GDNative "
+"доступний лише за умови встановлення відповідного **Export Type** *(типу "
+"експорту)*."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "The export will also copy the required GDNative ``.wasm`` files to the "
 "output folder (and must be uploaded to your server along with your game)."
 msgstr ""
+"Експорт також скопіює необхідні GDNative файли ``.wasm`` у вихідну папку (і "
+"їх потрібно завантажити на ваш сервер разом із грою)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "Повний екран та захват мишки"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
@@ -272,6 +319,12 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
+"Браузери не дозволяють довільно **входити в повноекранний режим**. Те саме "
+"стосується **захоплення курсору**. Натомість ці дії повинні відбуватися як "
+"відповідь на подію введення JavaScript. У Godot, перехід в повноекранний "
+"режим відбувається внаслідок натискання вхідної події зворотного виклику, "
+"такої як ``_input`` або ``_unhandled_input``. Запиту синглтона :ref:"
+"`class_Input` недостатньо, відповідна подія введення має бути активною."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
 msgid ""
@@ -279,6 +332,9 @@ msgid ""
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"З тієї ж причини налаштування проекту на весь екран не працює, якщо движок "
+"не запускається з дійсного обробника вхідних подій. Це вимагає :ref:"
+"`налаштування сторінки HTML <doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
 msgid "Audio"
@@ -289,6 +345,8 @@ msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome обмежує спосіб відтворення веб-сайтами аудіо. Можливо, гравцю буде "
+"потрібно клацнути, торкнутися або натиснути клавішу, щоб увімкнути звук."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
 msgid ""
@@ -296,12 +354,17 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google пропонує додаткову інформацію про їх `політику автоматичного "
+"відтворення Web Audio<https://sites.google.com/a/chromium.org/dev/audio-"
+"video/autoplay>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "Access to microphone requires a :ref:`secure context "
 "<doc_javascript_secure_contexts>`."
 msgstr ""
+"Доступ до мікрофона вимагає :ref:`захищеного контексту "
+"<doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid "Networking"
@@ -311,6 +374,7 @@ msgstr "Робота у мережі"
 msgid ""
 "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
+"Мережі низького рівня не реалізовані через відсутність підтримки у браузерах."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -318,41 +382,47 @@ msgid ""
 "requests <doc_http_request_class>`, :ref:`WebSocket (client) "
 "<doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are supported."
 msgstr ""
+"В даний час підтримуються лише :ref:`HTTP клієнт <doc_http_client_class>`, :"
+"ref:`HTTP запити <doc_http_request_class>`, :ref:`WebSocket (клієнт) "
+"<doc_websocket>` і :ref:`WebRTC <doc_webrtc>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "The HTTP classes also have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "Класи HTTP також мають кілька обмежень щодо платформи HTML5:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "Доступ або зміна ``StreamPeer`` неможлива"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid "Threaded/Blocking mode is not available"
-msgstr ""
+msgstr "Потоковий/Блокуючий режими не доступні"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:165
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
+"Неможливі зміни більше одного разу за кадр, тому опитування в циклі зависне"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
 msgid "No chunked responses"
-msgstr ""
+msgstr "Немає фрагментованих відповідей"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "Перевірку хосту не можна вимкнути"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
+"Підпорядковується `політиці того самого походження<https://developer.mozilla."
+"org/en-US/docs/Web/Security/Same-origin_policy>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
 msgid "Clipboard"
-msgstr ""
+msgstr "Буфер обміну"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -361,15 +431,19 @@ msgid ""
 "docs/Web/API/Clipboard_API>`__, additionally, due to the API asynchronous "
 "nature might not be reliable when accessed from GDScript."
 msgstr ""
+"Синхронізація буфера обміну між движком та операційною системою вимагає "
+"браузера, що підтримує `API буфера обміну<https://developer.mozilla.org/en-"
+"US/docs/Web/API/Clipboard_API>`__, крім того, через асинхронний характер API "
+"може бути ненадійним при доступі з GDScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
 msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
-msgstr ""
+msgstr "Потрібен :ref:`захищений контекст<doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
 msgid "Gamepads"
-msgstr ""
+msgstr "Геймпади"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
 msgid ""
@@ -380,10 +454,17 @@ msgid ""
 "reliable way to detect the gamepad information necessary to remap them based "
 "on model/vendor/OS due to privacy considerations."
 msgstr ""
+"Геймпади не будуть виявлені, доки не буде натиснута одна з їхніх кнопок. "
+"Геймпади можуть мати неправильне відображення залежно від комбінації "
+"браузера/ОС/геймпада, на жаль `API Gamepad<https://developer.mozilla.org/en-"
+"US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API>`__ не забезпечує "
+"надійного способу виявлення інформації про геймпад, необхідної для їх "
+"повторного призначення на основі моделі/постачальника/ОС через міркування "
+"конфіденційності."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "Заставка завантаження не відображається"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid ""
@@ -391,21 +472,27 @@ msgid ""
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
+"Сторінка HTML за замовчуванням не відображає заставку завантаження під час "
+"завантаження. Однак зображення експортується як файл PNG, тому :ref:"
+"`користувацькі HTML-сторінки<doc_customizing_html5_shell>` можуть "
+"відображати його."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
-#, fuzzy
 msgid "Shader language limitations"
-msgstr "Зберегти анімацію"
+msgstr "Обмеження мови шейдерів"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:201
 msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
+"При експорті проекту GLES2 у HTML5 буде використовуватися WebGL 1.0. WebGL "
+"1.0 не підтримує динамічні цикли, тому шейдери, що використовують їх, там не "
+"працюватимуть."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Serving the files"
-msgstr ""
+msgstr "Обслуговування файлів"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
@@ -413,6 +500,10 @@ msgid ""
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Експорт для Інтернету генерує декілька файлів, що подаються з веб-сервера, "
+"включаючи сторінку HTML за замовчуванням для презентації. Можна "
+"використовувати власний HTML-файл, дивіться :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
 msgid ""
@@ -420,6 +511,9 @@ msgid ""
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"Створений файл ``.html`` можна використовувати як ``DirectoryIndex`` на "
+"серверах Apache, і його можна перейменовувати, наприклад, ``index.html`` у "
+"будь-який час, за замовчуванням його назва незалежна."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:215
 msgid ""
@@ -427,6 +521,9 @@ msgid ""
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
 "common on most web game hosting sites."
 msgstr ""
+"Сторінка HTML малює гру на максимальному розмірі у вікні браузера. Таким "
+"чином його можна вставити в ``<iframe>`` розмір гри, як це поширено на "
+"більшості веб-сайтів хостингу веб-ігор."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:219
 msgid ""
@@ -438,6 +535,14 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"Інші експортовані файли подаються такими, якими вони є, поруч із файлом ``."
+"html``, без зміни назв. Файл ``.wasm`` представляє собою двійковий модуль "
+"WebAssembly реалізації движка. Файл ``.pck`` є основним пакетом Godot, що "
+"містить вашу гру. Файл ``.js`` містить стартовий код і використовується "
+"файлом ``.html`` для доступу до движка. Файл ``.png`` містить заставку "
+"завантаження. Він не використовується на HTML-сторінці за замовчуванням, але "
+"включений для :ref:`користувацьких сторінок "
+"HTML<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:227
 msgid ""
@@ -445,12 +550,17 @@ msgid ""
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
 "`application/wasm`."
 msgstr ""
+"Файл ``.pck`` є бінарним, і, як правило , поставляється з MIME-типом :"
+"mimetype:`application/octet-stream`. Файл ``.wasm`` поставляється в вигляді :"
+"mimetype:`application/wasm`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
+"Постачання модуля WebAssembly (``.wasm``) з MIME-типом відмінним від :"
+"mimetype:`application/wasm` може запобігти деякій оптимізації запуску."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:235
 msgid ""
@@ -459,10 +569,14 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"Передача файлів із стисненням на стороні сервера рекомендується, особливо "
+"для файлів ``.pck`` і ``.wasm``, які зазвичай мають великий розмір. Модуль "
+"WebAssembly стискає особливо добре, приблизно до чверті свого початкового "
+"розміру за допомогою стиснення gzip."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:240
 msgid "**Hosts that provide on-the-fly compression:** GitHub Pages (gzip)"
-msgstr ""
+msgstr "**Хости, що забезпечують швидке стискання:** GitHub Pages (gzip)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:242
 msgid ""
@@ -470,10 +584,13 @@ msgid ""
 "(`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-"
 "compression/>`__)"
 msgstr ""
+"**Хости, які не забезпечують швидке стискання:** itch.io, GitLab Pages "
+"(`підтримує ручне попереднє стиснення<https://webd97.de/post/gitlab-pages-"
+"compression/>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:248
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "Виклик JavaScript із скрипта"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:250
 msgid ""
@@ -483,49 +600,66 @@ msgid ""
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
+"У веб-збірках реалізовано синглтон ``JavaScript``. Він пропонує єдиний метод "
+"із назвою ``eval``, який працює подібно до однойменної функції JavaScript. "
+"Він приймає рядок як аргумент і виконує його як код JavaScript. Це дозволяє "
+"скриптовим мовам інтегрованим в Godot взаємодіяти з браузером неможливими "
+"шляхами."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:261
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"Значення останнього оператора JavaScript перетворюється у значення GDScript "
+"і повертається ``eval()`` за певних обставин:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:264
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
-msgstr ""
+msgstr "``number`` JavaScript повертається як :ref:`class_float` GDScript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:265
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
-msgstr ""
+msgstr "``boolean`` JavaScript повертається як :ref:`class_bool` GDScript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:266
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
-msgstr ""
+msgstr "``string`` JavaScript повертається як :ref:`class_String` GDScript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:267
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"JavaScript ``ArrayBuffer``, ``TypedArray`` і ``DataView`` повертаються як :"
+"ref:`class_PoolByteArray` GDScript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:276
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "Будь-яке інше значення JavaScript повертається як ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:278
+#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
 "platforms other than HTML5, calling ``JavaScript.eval`` will also return "
-"``null``.  The availability of the singleton can be checked with the "
+"``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
+"Шаблони експорту HTML5 можуть бути :ref:`побудовані <doc_compiling_for_web>` "
+"без підтримки синглтонів для покращення безпеки. З такими шаблонами та на "
+"платформах, відмінних від HTML5, виклик ``JavaScript.eval`` буде також "
+"повертати ``null``. Наявність синглтона можна перевірити за допомогою "
+"``JavaScript`` :ref:`тега функції <doc_feature_tags>`:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:292
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"Багаторядні рядки GDScript, оточені 3 лапками, ``\"\"\"`` як зазначено вище "
+"в ``my_func3()``, корисні для збереження коду JavaScript читабельним."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:295
 msgid ""
@@ -533,3 +667,7 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"Метод ``eval`` також приймає другий, додатковий аргумент Boolean, який "
+"визначає , чи слід виконати код в глобальному контексті виконання, за "
+"замовчуванням ``false`` , щоб запобігти забрудненню глобального простору "
+"імен:"

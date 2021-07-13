@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -616,9 +616,8 @@ msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
-#, fuzzy
 msgid "Comparisons"
-msgstr "Confronti"
+msgstr "Comparazioni"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``in``"
@@ -735,7 +734,6 @@ msgid "``\"Hello\"``, ``\"Hi\"``"
 msgstr "``\"Ciao\"``, ``\"Salve\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
-#, fuzzy
 msgid "Strings"
 msgstr "Stringhe"
 
@@ -776,10 +774,13 @@ msgid "Comments"
 msgstr "Commenti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
+#, fuzzy
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr ""
+"Qualsiasi cosa da un ``#`` alla fine della linea è ignorata ed è considerata "
+"un commento."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:325
 #, fuzzy
@@ -801,8 +802,10 @@ msgid "Basic built-in types"
 msgstr "Tipi base incorporati (built-in)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
+#, fuzzy
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr ""
+"Una variabile in GDScript può essere assegnata a diversi tipi built-in."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "null"
@@ -970,8 +973,9 @@ msgid "GDScript also supports :ref:`doc_gdscript_printf`."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
+#, fuzzy
 msgid "Vector built-in types"
-msgstr ""
+msgstr "Tipi vettoriali incorporati"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ":ref:`Vector2 <class_Vector2>`"
@@ -1018,10 +1022,13 @@ msgid ":ref:`Plane <class_Plane>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
+#, fuzzy
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"Tipo di piano 3D in forma normalizzata che contiene un campo vettoriale "
+"``normale`` e una distanza scalare ``d``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
 msgid ":ref:`Quat <class_Quat>`"
@@ -1064,13 +1071,16 @@ msgid ":ref:`Transform <class_Transform>`"
 msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
+#, fuzzy
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3D Transform contiene un campo Basis ``basis`` e un campo Vector3 ``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
+#, fuzzy
 msgid "Engine built-in types"
-msgstr ""
+msgstr "Tipi integrati del motore"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`Color <class_Color>`"
@@ -1089,30 +1099,38 @@ msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:468
+#, fuzzy
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
+"Percorso compilato di un nodo usato principalmente nel sistema delle scene. "
+"Può essere facilmente assegnato a, e da, una stringa."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
+#, fuzzy
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"ID risorsa (RID). I server usano RID generici per fare riferimento a dati "
+"opachi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
 msgid ":ref:`Object <class_Object>`"
 msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
+#, fuzzy
 msgid "Base class for anything that is not a built-in type."
-msgstr ""
+msgstr "Classe base per tutto ciò che non è un tipo incorporato."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:482
+#, fuzzy
 msgid "Container built-in types"
-msgstr ""
+msgstr "Tipi di contenitori incorporati"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`Array <class_Array>`"
@@ -1136,40 +1154,55 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:508
+#, fuzzy
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: Un array di byte (interi da 0 a "
+"255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
+#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Un array di interi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
+#, fuzzy
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
-msgstr ""
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: Un array di float."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:511
+#, fuzzy
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
-msgstr ""
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: Un array di stringhe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:512
+#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Un array di oggetti :ref:"
+"`Vector2 <class_Vector2>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:513
+#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Un array di oggetti :ref:"
+"`Vector3 <class_Vector3>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:514
+#, fuzzy
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Un array di oggetti :ref:"
+"`Color <class_Color>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:517
 msgid ":ref:`Dictionary <class_Dictionary>`"
@@ -1189,10 +1222,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
+#, fuzzy
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"Per aggiungere una chiave a un dizionario esistente, accedervi come una "
+"chiave esistente e assegnarle::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
 msgid ""
@@ -1204,7 +1240,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
-#, fuzzy
 msgid "Data"
 msgstr "Dati"
 
@@ -1213,11 +1248,15 @@ msgid "Variables"
 msgstr "Variabili"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
+#, fuzzy
 msgid ""
 "Variables can exist as class members or local to functions. They are created "
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
+"Le variabili possono esistere come membri di classe o locali alle funzioni. "
+"Sono create con la parola chiave ``var`` e possono, opzionalmente, essere "
+"assegnate ad un valore al momento dell'inizializzazione."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid ""
@@ -1344,7 +1383,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
-#, fuzzy
 msgid "Enums"
 msgstr "Enumerazioni"
 
@@ -1481,16 +1519,25 @@ msgid "if/else/elif"
 msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
+#, fuzzy
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
 "Parenthesis around conditions are allowed, but not required. Given the "
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"Le condizioni semplici sono create usando la sintassi ``if``/`else``/"
+"`elif``. Le parentesi intorno alle condizioni sono permesse, ma non "
+"richieste. Data la natura dell'indentazione basata sulla tabulazione, "
+"``elif`` può essere usato al posto di ``else``/`if`` per mantenere un "
+"livello di indentazione."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
+#, fuzzy
 msgid "Short statements can be written on the same line as the condition::"
 msgstr ""
+"Le dichiarazioni brevi possono essere scritte sulla stessa linea della "
+"condizione::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
 msgid ""
@@ -1499,10 +1546,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"I cicli semplici sono creati usando la sintassi ``while``. I cicli possono "
+"essere interrotti usando ``break`` o continuati usando ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
 msgid ""
@@ -1542,8 +1592,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
+#, fuzzy
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Cambia ``default`` con un singolo trattino basso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 #, fuzzy
@@ -1559,8 +1610,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
+#, fuzzy
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Ci sono 6 tipi di modelli:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid "Constant pattern"
@@ -1583,8 +1635,10 @@ msgid "Wildcard pattern"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
+#, fuzzy
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
+"Questo schema corrisponde a tutto. È scritto come un singolo trattino basso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
@@ -1634,10 +1688,13 @@ msgid "Dictionary pattern"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
+#, fuzzy
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Funziona allo stesso modo del modello di array. Ogni chiave deve essere un "
+"pattern costante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid ""
@@ -1652,8 +1709,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
+#, fuzzy
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Ogni subpattern deve essere separato da una virgola."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
@@ -1834,7 +1892,7 @@ msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
-"constructor as well, not just variables. eg.::"
+"constructor as well, not just variables, e.g.::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
@@ -1862,7 +1920,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
-#, fuzzy
 msgid "Exports"
 msgstr "Esportazioni"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,11 +260,12 @@ msgstr ""
 "하세요."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
-"complexity.**"
+"complexity**."
 msgstr ""
 "GDScript를 사용하는 여러 이유가 있습니다--특히 프로토타입을 만드는 경우, 프로"
 "젝트의 알파/베타 수준의 스테이지를 만드는 경우에, 혹은 만드는 게임이 AAA급이 "
@@ -518,14 +519,13 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "왜 Godot은 주요 특징을 작게 유지하려고 하나요?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot는 add-on으로 구현할 수 있는 기능들은, 아주 자주 쓰의지 않는 한, 의도적"
-"으로 포함하지 않습니다. 고급 인공 지능 같은 것이 좋은 예가 되겠지요."
+"Godot은 매우 자주 쓰이지 않는 이상 의도적으로 add-on으로 구현할 수 있는 기능"
+"들은 포함하지 않습니다. 고급 인공 지능 같은 것이 좋은 예입니다."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
@@ -870,9 +870,8 @@ msgstr ""
 "추가 점수가 될 것입니다."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Godot는 라이브러리로서 사용될 수 있을까요?"
+msgstr "Godot을 게임이 아닌 응용프로그램 제작에 사용할 수 있을까요?"
 
 #: ../../docs/about/faq.rst:363
 msgid ""
@@ -880,6 +879,8 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"예! Godot는 광범위한 내장 UI 시스템을 특징으로하며 작은 배포 크기로 인해 "
+"Electron 또는 Qt와 같은 프레임 워크에 적합한 대안이 될 수 있습니다."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -887,12 +888,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"게임이 아닌 응용 프로그램을 제작할 때는 CPU와 GPU 사용율을 줄이기 위해 반드"
+"시 프로젝트 설정에서 :ref:`low-processor mode "
+"<class_ProjectSettings_property_application/run/low_processor_mode>`를 활성화"
+"해주세요."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"그렇긴 하지만 *모바일* 응용 프로그램 제작에는 Godot을 사용하지 말아 주세요. "
+"아직 저사양모드가 모바일 플랫폼에서는 지원되지 않습니다."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -900,6 +907,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Godot으로 만든 오픈소스 예제 어플리케이션으로 `Material Maker <https://"
+"github.com/RodZill4/material-maker>`__ 와 `Pixelorama <https://github.com/"
+"Orama-Interactive/Pixelorama>`__ 를 참고하세요."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -930,7 +940,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Godot는 어떤 사용자 인터페이스 툴킷을 사용합니까?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -941,6 +951,11 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot은 GTK나 Qt, wxWidgets와 같은 표준 :abbr:`GUI (Graphical User "
+"Interface)` 툴킷을 사용하지 않는 대신 OpenGL ES나 Vulcan으로 렌더링하는 자체 "
+"유저 인터페이스 툴킷을 사용합니다. 이 툴킷은 (C++로 작성된) 에디터를 렌더링"
+"할 때 사용되는 컨트롤 노드의 형태로 노출되어 있습니다. 물론 이 컨트롤 노드들"
+"은 Godot이 지원하는 어느 스크립트 언어로든지 사용할 수 있습니다."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -950,6 +965,11 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"이 자체 툴킷 덕분에 하드웨어 가속으로부터 혜택을 받고 모든 플랫폼을 아울러 일"
+"정한 외관을 가질 수 있습니다. 그에 더해 GTK나 Qt에 붙어있는 LGPL 라이센스과 "
+"고투를 벌일 필요도 없읍니다. 마지막으로 편집기 자체가 Godot UI 시스템의 가장 "
+"복잡한 구현 중 하나이기 때문에 Godot은 \"개밥 먹이기(eating its own dog "
+"food)\"를 하는 것이기도 합니다."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -957,9 +977,13 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"이 자체 UI 툴킷은 :ref:`라이브러리로 사용할 수 없지만 "
+"<doc_faq_use_godot_as_library>`, 여전히 :ref:`편집기를 이용하여 Godot으로 비"
+"게임 어플리케이션을 만들 수는 있습니다 <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-msgid "Why does Godot not use STL (Standard Template Library)"
+#, fuzzy
+msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr "Godot가 STL (표준 템플릿 라이브러리)을 사용하지 않는 이유"
 
 #: ../../docs/about/faq.rst:415
@@ -1047,9 +1071,9 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
-"Godot은 자체 유형 캐스팅 시스템을 제공하는데, 내부적으로 런타임 유형 정보를 "
-"사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
-"로 상당히 작은 이진 크기를 얻을 수 있습니다."
+"Godot은 선택적으로 런타임 유형 정보를 사용하는 자체 유형 캐스팅 시스템을 제공"
+"합니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능을 더 소모하지만 상"
+"당히 작은 바이너리 크기를 얻을 수 있습니다."
 
 #: ../../docs/about/faq.rst:444
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"

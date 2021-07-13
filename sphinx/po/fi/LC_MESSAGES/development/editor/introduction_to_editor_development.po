@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,10 +95,18 @@ msgstr ""
 #: ../../docs/development/editor/introduction_to_editor_development.rst:47
 msgid ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
-"editor/editor_node.cpp>`__: Main editor initialization file."
+"editor/editor_node.cpp>`__: Main editor initialization file. Effectively the "
+"\"main scene\" of the editor."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:48
+#: ../../docs/development/editor/introduction_to_editor_development.rst:49
+msgid ""
+"`editor/project_manager.cpp <https://github.com/godotengine/godot/blob/3.x/"
+"editor/project_manager.cpp>`__: Main project manager initialization file. "
+"Effectively the \"main scene\" of the project manager."
+msgstr ""
+
+#: ../../docs/development/editor/introduction_to_editor_development.rst:51
 msgid ""
 "`editor/plugins/canvas_item_editor_plugin.cpp <https://github.com/"
 "godotengine/godot/blob/3.x/editor/plugins/canvas_item_editor_plugin.cpp>`__: "
@@ -106,7 +114,7 @@ msgid ""
 "editing modes, overlaid helpers/panels, …)."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:50
+#: ../../docs/development/editor/introduction_to_editor_development.rst:53
 msgid ""
 "`editor/plugins/spatial_editor_plugin.cpp <https://github.com/godotengine/"
 "godot/blob/3.x/editor/plugins/spatial_editor_plugin.cpp>`__: The 3D editor "
@@ -114,7 +122,7 @@ msgid ""
 "overlaid panels, …)."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:52
+#: ../../docs/development/editor/introduction_to_editor_development.rst:55
 msgid ""
 "`editor/spatial_editor_gizmos.cpp <https://github.com/godotengine/godot/"
 "blob/3.x/editor/spatial_editor_gizmos.cpp>`__: Where the 3D editor gizmos "
@@ -122,34 +130,34 @@ msgid ""
 "are drawn by the nodes themselves."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:57
+#: ../../docs/development/editor/introduction_to_editor_development.rst:60
 msgid "Editor dependencies in ``scene/`` files"
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:59
+#: ../../docs/development/editor/introduction_to_editor_development.rst:62
 msgid ""
 "When working on an editor feature, you may have to modify files in Godot's "
 "GUI nodes, which you can find in the ``scene/`` folder."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:62
+#: ../../docs/development/editor/introduction_to_editor_development.rst:65
 msgid ""
 "One rule to keep in mind is that you must **not** introduce new dependencies "
 "to ``editor/`` includes in other folders such as ``scene/``. This applies "
 "even if you use ``#ifdef TOOLS_ENABLED``."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:66
+#: ../../docs/development/editor/introduction_to_editor_development.rst:69
 msgid ""
 "To make the codebase easier to follow and more self-contained, the allowed "
 "dependency order is:"
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:69
+#: ../../docs/development/editor/introduction_to_editor_development.rst:72
 msgid "``editor/`` -> ``scene/`` -> ``servers/`` -> ``core/``"
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:71
+#: ../../docs/development/editor/introduction_to_editor_development.rst:74
 msgid ""
 "This means that files in ``editor/`` can depend on includes from ``scene/``, "
 "``servers/``, and ``core/``. But, for example, while ``scene/`` can depend "
@@ -157,19 +165,19 @@ msgid ""
 "from ``editor/``."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:75
+#: ../../docs/development/editor/introduction_to_editor_development.rst:78
 msgid ""
 "Currently, there are some dependencies to ``editor/`` includes in ``scene/`` "
 "files, but `they are in the process of being removed <https://github.com/"
 "godotengine/godot/issues/29730>`__."
 msgstr ""
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:80
+#: ../../docs/development/editor/introduction_to_editor_development.rst:83
 #, fuzzy
 msgid "Development tips"
 msgstr "Kehitys"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:82
+#: ../../docs/development/editor/introduction_to_editor_development.rst:85
 msgid ""
 "To iterate quickly on the editor, we recommend to set up a test project and :"
 "ref:`open it from the command line <doc_command_line_tutorial>` after "

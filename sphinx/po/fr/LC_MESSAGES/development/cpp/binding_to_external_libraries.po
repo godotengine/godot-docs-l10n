@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,11 +85,12 @@ msgstr ""
 "compilation compile ce module :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:121
+#, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
-"library files.  See the library's official documentation for specific "
-"instructions on how to do this for your operation system.  We've included "
-"the installation commands for Linux below, for reference."
+"library files. See the library's official documentation for specific "
+"instructions on how to do this for your operation system. We've included the "
+"installation commands for Linux below, for reference."
 msgstr ""
 "Vous devrez installer la bibliothèque externe sur votre ordinateur pour "
 "obtenir les fichiers bibliothèques .a. Regardez la documentation officielle "
@@ -113,10 +114,11 @@ msgstr ""
 "conditions d'utilisation."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:137
+#, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
-"module code self-contained.  The festival and speech_tools libraries can be "
+"module code self-contained. The festival and speech_tools libraries can be "
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
@@ -138,10 +140,11 @@ msgstr ""
 "dessous :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:156
+#, fuzzy
 msgid ""
-"Please note that Git submodules are not used in the Godot repository.  If "
-"you are developing a module to be merged into the main Godot repository, you "
-"should not use submodules.  If your module doesn't get merged in, you can "
+"Please note that Git submodules are not used in the Godot repository. If you "
+"are developing a module to be merged into the main Godot repository, you "
+"should not use submodules. If your module doesn't get merged in, you can "
 "always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 "Veuillez noter que les sous-modules Git ne sont pas utilisés dans le dépôt "
@@ -169,20 +172,20 @@ msgstr ""
 "n'ajoute pas ces drapeaux à la construction de Godot (ce qui peut causer des "
 "erreurs). Exemple `SCsub` avec des drapeaux personnalisés :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:196
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 msgid "The final module should look like this:"
 msgstr "Le module final devrait ressembler à cela :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:214
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr "Utilisation du module"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 "Vous pouvez maintenant utiliser votre module nouvellement créé à partir de "
 "n'importe quel script :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:225
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "Et la sortie sera ``is_spoken: True`` si le texte est prononcé."

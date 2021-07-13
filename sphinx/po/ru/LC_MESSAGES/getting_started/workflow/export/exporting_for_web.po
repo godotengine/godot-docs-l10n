@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,12 +116,16 @@ msgid ""
 "You can choose the **Export Type** to select which features will be "
 "available:"
 msgstr ""
+"Вы можете выбрать **Тип экспорта**, чтобы выбрать, какие функции будут "
+"доступны:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
 "*Regular*: is the most compatible across browsers, will not support threads, "
 "nor GDNative."
 msgstr ""
+"*Regular*: наиболее совместим с браузерами, не будет поддерживать потоки и "
+"GDNative."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid ""
@@ -129,12 +133,17 @@ msgid ""
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
 "SharedArrayBuffer>`__"
 msgstr ""
+"*Threads*: потребуется, чтобы браузер поддерживал `SharedArrayBuffer "
+"<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/"
+"Global_Objects/SharedArrayBuffer>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
 msgid ""
 "*GDNative*: enables GDNative support but makes the binary bigger and slower "
 "to load."
 msgstr ""
+"*GDNative*: включает поддержку GDNative, но увеличивает размер двоичного "
+"файла и замедляет загрузку."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:51
 msgid ""
@@ -143,6 +152,10 @@ msgid ""
 "(enabling both **For Desktop** and **For Mobile** will result in a bigger, "
 "but more compatible export)."
 msgstr ""
+"Если вы планируете использовать :ref:`Сжатие VRAM <doc_import_images>`, "
+"убедитесь, что **Сжатие текстур Vram** включено для целевых платформ "
+"(включение **для настольных компьютеров** и **для мобильных** приведет к "
+"большему, но более совместимому экспорту)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
 msgid ""
@@ -182,7 +195,7 @@ msgstr ""
 msgid ""
 "**Export types** other then *Regular* are not yet supported by the C# "
 "version."
-msgstr ""
+msgstr "**Типы экспорта**, кроме *Regular*, пока не поддерживаются версией C#."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Limitations"
@@ -208,6 +221,11 @@ msgid ""
 "the web page is served via a secure HTTPS connection (localhost is usually "
 "exempt from such requirement)."
 msgstr ""
+"Поставщики браузеров делают все больше и больше функций, доступных только в "
+"`безопасных контекстах <https://developer.mozilla.org/en-US/docs/Web/"
+"Security/Secure_Contexts>` _, это означает, что такие функции доступны "
+"только в том случае, если веб-страница обслуживается через безопасное "
+"соединение HTTPS (localhost обычно освобождается от такого требования)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
@@ -258,6 +276,10 @@ msgid ""
 "only available if the appropriate **Export Type** is set and support for it "
 "across browsers is still limited."
 msgstr ""
+"Как уже упоминалось :ref:`выше <doc_javascript_export_options>` "
+"многопоточность доступна только в том случае, если установлен "
+"соответствующий **Тип экспорта** и его поддержка в браузерах по-прежнему "
+"ограничена."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid ""
@@ -266,6 +288,10 @@ msgid ""
 "`cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/"
 "Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 msgstr ""
+"Требуется :ref:`безопасный контекст <doc_javascript_secure_contexts>`. "
+"Браузеры также начинают требовать, чтобы веб-страница обслуживалась с "
+"определенными `заголовками изоляции между источниками <https://developer."
+"mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy > `__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid "GDNative"
@@ -276,12 +302,17 @@ msgid ""
 "As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only "
 "available if the appropriate **Export Type** is set."
 msgstr ""
+"Как уже упоминалось :ref:`выше <doc_javascript_export_options>` GDNative "
+"доступен, только если установлен соответствующий **Тип экспорта**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "The export will also copy the required GDNative ``.wasm`` files to the "
 "output folder (and must be uploaded to your server along with your game)."
 msgstr ""
+"При экспорте также будут скопированы необходимые файлы GDNative с "
+"расширением ``.wasm `` в выходную папку (их необходимо загрузить на ваш "
+"сервер вместе с игрой)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Full screen and mouse capture"
@@ -341,6 +372,8 @@ msgid ""
 "Access to microphone requires a :ref:`secure context "
 "<doc_javascript_secure_contexts>`."
 msgstr ""
+"Для доступа к микрофону требуется :ref:`безопасный контекст "
+"<doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid "Networking"
@@ -350,6 +383,7 @@ msgstr "Сеть"
 msgid ""
 "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
+"Сеть на низком уровне не реализована из-за отсутствия поддержки в браузерах."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -357,6 +391,9 @@ msgid ""
 "requests <doc_http_request_class>`, :ref:`WebSocket (client) "
 "<doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are supported."
 msgstr ""
+"В настоящее время поддерживаются только :ref:`HTTP-клиент "
+"<doc_http_client_class>`, :ref:`HTTP-запросы <doc_http_request_class>`, :ref:"
+"`WebSocket (клиент) <doc_websocket>` и :ref:`WebRTC <doc_webrtc>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 #, fuzzy
@@ -396,7 +433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
 msgid "Clipboard"
-msgstr ""
+msgstr "Буфер обмена"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -405,15 +442,19 @@ msgid ""
 "docs/Web/API/Clipboard_API>`__, additionally, due to the API asynchronous "
 "nature might not be reliable when accessed from GDScript."
 msgstr ""
+"Синхронизация буфера обмена между движком и операционной системой требует "
+"браузер, поддерживающий API буфера обмена `<https://developer.mozilla.org/en-"
+"US/docs/Web/API/Clipboard_API> `__, кроме того, из-за асинхронного характера "
+"API может быть ненадежным при доступе из GDScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
 msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
-msgstr ""
+msgstr "Требуется :ref:`безопасный контекст <doc_javascript_secure_contexts>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
 msgid "Gamepads"
-msgstr ""
+msgstr "Геймпады"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
 msgid ""
@@ -424,6 +465,13 @@ msgid ""
 "reliable way to detect the gamepad information necessary to remap them based "
 "on model/vendor/OS due to privacy considerations."
 msgstr ""
+"Геймпады не будут обнаружены, пока не будет нажата одна из их кнопок. "
+"Геймпады могут иметь неправильное отображение в зависимости от комбинации "
+"браузера/ОС/геймпада, к сожалению, `API Геймпада <https://developer.mozilla."
+"org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API>`__ не обеспечивают "
+"надежный способ обнаружения информации геймпада, необходимой для их "
+"переназначения на основе модели/поставщика/ОС из соображений "
+"конфиденциальности."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
 msgid "Boot splash is not displayed"
@@ -537,7 +585,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:240
 msgid "**Hosts that provide on-the-fly compression:** GitHub Pages (gzip)"
-msgstr ""
+msgstr "**Хосты, предоставляющие сжатие на лету:** GitHub Pages (gzip)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:242
 msgid ""
@@ -545,6 +593,9 @@ msgid ""
 "(`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-"
 "compression/>`__)"
 msgstr ""
+"**Хосты, которые не предоставляют сжатие на лету:**itch.io, GitLab Pages "
+"(`поддерживает предварительное сжатие gzip вручную <https://webd97.de/post/"
+"gitlab-pages-compression/>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:248
 msgid "Calling JavaScript from script"
@@ -603,11 +654,12 @@ msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Любое другое значение в Javascript возвращено как ``null`` (``ноль``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:278
+#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
 "platforms other than HTML5, calling ``JavaScript.eval`` will also return "
-"``null``.  The availability of the singleton can be checked with the "
+"``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 "Шаблоны экспорта HTML5 могут быть :ref:`собраны <doc_compiling_for_web>` без "

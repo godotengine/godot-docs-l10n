@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:4
 msgid "Compiling with Mono"
-msgstr ""
+msgstr "Компиляция с помощью Mono"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 msgid "Requirements"
@@ -27,7 +27,7 @@ msgstr "Требования"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:11
 msgid "Mono 6.12.0 or greater"
-msgstr ""
+msgstr "Mono 6.12.0 или выше"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:12
 msgid "MSBuild"
@@ -35,23 +35,27 @@ msgstr "MSBuild"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:13
 msgid "NuGet"
-msgstr ""
+msgstr "NuGet"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:14
 msgid "**On Linux/macOS only:** pkg-config"
-msgstr ""
+msgstr "** Только для Linux/macOS:** pkg-config"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
 msgid ""
 "You may need to import necessary certificates for NuGet to perform HTTPS "
 "requests."
 msgstr ""
+"Вам может понадобиться импортировать необходимые сертификаты для NuGet для "
+"выполнения HTTPS-запросов."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
 msgid ""
 "The recommended method is to use **curl**'s CA (Certificate Autorities) "
 "certificate bundle."
 msgstr ""
+"Рекомендуемый метод - использовать пакет сертификатов **curl** для CA "
+"(Certificate Autorities)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:21
 msgid ""
@@ -59,12 +63,18 @@ msgid ""
 "run it from the Mono command line prompt (or the regular prompt if you added "
 "Mono's ``bin`` directory to your ``PATH`` environment variable)::"
 msgstr ""
+"Выполните следующие команды, чтобы загрузить и импортировать его. В Windows "
+"вы можете запустить ее из приглашения командной строки Mono (или из обычного "
+"приглашения, если вы добавили каталог Mono ``bin`` в переменную окружения "
+"``PATH``)::"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:29
 msgid ""
 "Alternatively, you can use the following command, though it's deprecated and "
 "may not work correctly::"
 msgstr ""
+"В качестве альтернативы можно использовать следующую команду, хотя она "
+"устарела и может работать некорректно::"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:34
 #, fuzzy
@@ -78,22 +88,28 @@ msgid ""
 "installation directory by passing the ``mono_prefix`` command-line option to "
 "SCons; e.g. ``scons [...] mono_prefix=%ProgramFiles%/Mono``."
 msgstr ""
+"По умолчанию SCons пытается найти Mono в реестре Windows в Windows или через "
+"``pkg-config`` на других платформах. Вы можете указать другой каталог "
+"установки, передав SCons параметр командной строки ``mono_prefix``; "
+"например, ``scons [...] mono_prefix=%ProgramFiles%/Mono``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:41
 msgid ""
 "This is the directory that contains the subdirectories ``include`` and "
 "``lib``."
-msgstr ""
+msgstr "Это каталог, который содержит подкаталоги ``include`` и ``lib``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:44
 msgid "Enable the Mono module"
-msgstr ""
+msgstr "Включите модуль Mono"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:46
 msgid ""
 "By default, the Mono module is disabled when building. To enable it, add the "
 "option ``module_mono_enabled=yes`` to the SCons command line."
 msgstr ""
+"По умолчанию модуль Mono отключен при сборке. Чтобы включить его, добавьте "
+"опцию ``module_mono_enabled=yes`` в командную строку SCons."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:50
 msgid "Generate the glue"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:4
 msgid "Controllers, gamepads, and joysticks"
-msgstr ""
+msgstr "控制器、游戏板和操纵杆"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:6
 msgid ""
@@ -27,12 +27,13 @@ msgid ""
 "`SDL game controller database <https://github.com/gabomdq/"
 "SDL_GameControllerDB>`__."
 msgstr ""
+"Godot支持数百种控制器模型，这要归功于社区提供的 `SDL游戏控制器数据库 "
+"<https://github.com/gabomdq/SDL_GameControllerDB>`__ 。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:9
-#, fuzzy
 msgid ""
 "Controllers are supported on Windows, macOS, Linux, Android, iOS, and HTML5."
-msgstr "Godot支持Windows、macOS、Linux、Android和iOS的游戏内音频录制."
+msgstr "控制器支持Windows、macOS、Linux、Android、iOS和HTML5。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:11
 msgid ""
@@ -42,29 +43,32 @@ msgid ""
 "don't hesitate to `report bugs on GitHub <https://github.com/godotengine/"
 "godot/blob/master/CONTRIBUTING.md#reporting-bugs>`__."
 msgstr ""
+"请注意，诸如方向盘、方向盘踏板和 `HOTAS <https://en.wikipedia.org/wiki/"
+"HOTAS>`__ 等更专业的设备测试较少，可能并不总是按照预期工作。如果你有机会使用"
+"这些设备，不要犹豫 `在GitHub <https://github.com/godotengine/godot/blob/"
+"master/CONTRIBUTING.md#reporting-bugs>`__ 上报告错误。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:16
 msgid "In this guide, you will learn:"
-msgstr "在本指南中,您将学会:"
+msgstr "在本指南中, 您将学会:"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:18
 msgid ""
 "**How to write your input logic to support both keyboard and controller "
 "inputs.**"
-msgstr ""
+msgstr "**如何编写你的输入逻辑以支持键盘和控制器输入.**"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:19
 msgid "**How controllers can behave differently from keyboard/mouse input.**"
-msgstr ""
+msgstr "**控制器的行为如何与键盘/鼠标输入不同.**"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:20
 msgid "**Troubleshooting issues with controllers in Godot.**"
-msgstr ""
+msgstr "**解决Godot中控制器的问题**"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:23
-#, fuzzy
 msgid "Supporting universal input"
-msgstr "为通用Windows平台导出"
+msgstr "支持通用导出"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:25
 msgid ""
@@ -74,11 +78,14 @@ msgid ""
 "should create *input actions* in the Project Settings which will then refer "
 "to specified key and controller inputs."
 msgstr ""
+"由于Godot的输入动作系统，Godot使得支持键盘和控制器输入成为可能，而不需要编写"
+"单独的代码路径。你应该在项目设置中创建 *输入动作* ，然后引用指定的按键和控制"
+"器输入，而不是在你的脚本中硬编码按键或控制器按钮。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:31
 msgid ""
 "Input actions are explained in detail on the :ref:`doc_inputevent` page."
-msgstr ""
+msgstr "输入动作在 :ref:`doc_inputevent` 页面上有详细解释。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:35
 msgid ""
@@ -86,21 +93,24 @@ msgid ""
 "action (such as looking around in a first-person game) will require "
 "different code paths since these have to be handled separately."
 msgstr ""
+"与键盘输入不同，支持鼠标和控制器输入的动作将需要不同的代码路径，例如在第一人"
+"称游戏中四处查看，因为这些必须被分开处理。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:40
-#, fuzzy
 msgid "Which Input singleton method should I use?"
-msgstr "我应该使用哪一个？"
+msgstr "我应该使用哪个输入单例方法？"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
 msgid "In Godot 4.0, there are 3 ways to get input in an analog-aware way:"
-msgstr ""
+msgstr "在Godot 4.0中，有3种方式以模拟感知的方式获得输入:"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
 msgid ""
 "When you have two axes (such as joystick or WASD movement) and want both "
 "axes to behave as a single input, use ``Input.get_vector()``:"
 msgstr ""
+"当你有两个轴，如操纵杆或WASD运动，并希望两个轴都表现为单一输入时，使用 "
+"``Input.get_vector()`` :"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:74
 msgid ""
@@ -108,12 +118,16 @@ msgid ""
 "stick), or when you want to handle separate axes individually, use ``Input."
 "get_axis()``:"
 msgstr ""
+"当你有一个轴可以双向移动时，比如飞行操纵杆上的油门，或者你想单独处理不同的轴"
+"时，使用 ``Input.get_axis()`` :"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:95
 msgid ""
 "For other types of analog input, such as handling a trigger or handling one "
 "direction at a time, use ``Input.get_action_strength()``:"
 msgstr ""
+"对于其他类型的模拟输入，例如处理一个触发器或一次处理一个方向，使用 ``Input."
+"get_action_strength()`` :"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:109
 msgid ""
@@ -121,6 +135,8 @@ msgid ""
 "values), such as controller buttons, mouse buttons or keyboard keys, use "
 "``Input.is_action_pressed()``:"
 msgstr ""
+"对于非模拟数字/布尔输入（只有 \"按下 \" 或 \"未按下 \" 的值），如控制器按钮、"
+"鼠标按钮或键盘按键，使用 ``Input.is_action_pressed()`` :"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:125
 msgid ""
@@ -128,20 +144,24 @@ msgid ""
 "``Input.get_axis()`` aren't available. Only ``Input.get_action_strength()`` "
 "and ``Input.is_action_pressed()`` are available in Godot 3.2."
 msgstr ""
+"在4.0之前的Godot版本，如3.2， ``Input.get_vector()`` 和 ``Input.get_axis()`` "
+"不可用。只有 ``Input.get_action_strength()`` 和 ``Input."
+"is_action_pressed()`` 在Godot 3.2中可用。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:130
 msgid "Differences between keyboard/mouse and controller input"
-msgstr ""
+msgstr "键盘/鼠标和控制器输入之间的差异"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:132
 msgid ""
 "If you're used to handling keyboard and mouse input, you may be surprised by "
 "how controllers handle specific situations."
 msgstr ""
+"如果您习惯于处理键盘和鼠标输入，可能会对控制器处理特定情况的方式感到惊讶。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:136
 msgid "Dead zone"
-msgstr ""
+msgstr "盲区"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
 msgid ""
@@ -155,6 +175,11 @@ msgid ""
 "This phenomenon is known as *drifting* and can be more noticeable on old or "
 "faulty controllers."
 msgstr ""
+"与键盘和鼠标不同，控制器提供带有 *模拟* 输入的轴。模拟输入的好处是它们为动作"
+"提供了额外的灵活性。不像数字输入只能提供 ``0.0`` 和 ``1.0`` 的强度，模拟输入"
+"可以提供 ``0.0`` 和 ``1.0`` 之间的 *任何* 强度。缺点是没有死区系统，由于控制"
+"器的物理结构，模拟轴的强度永远不会等于 ``0.0`` 。相反，它将徘徊在一个低值，"
+"如 ``0.062`` 。这种现象被称为 *漂移* ，在旧的或有问题的控制器上会更加明显。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:147
 msgid ""
@@ -168,6 +193,12 @@ msgid ""
 "dead zone value is high enough to ignore the input caused by joystick "
 "drifting, but is low enough to not ignore actual input from the player."
 msgstr ""
+"让我们把赛车游戏作为一个现实世界的例子。由于有了模拟输入，我们可以将汽车慢慢"
+"地转向一个或另一个方向。然而，如果没有死区系统，即使玩家不接触操纵杆，汽车也"
+"会自己慢慢转向。这是因为方向轴的强度在我们期望的时候不会等于 ``0.0`` 。因为我"
+"们不希望我们的车在这种情况下自动转向，我们定义了一个 \"死区\" 值 ``0.2`` ，它"
+"将忽略所有强度低于 ``0.2`` 的输入。一个理想的死区值是足够高的，可以忽略操纵杆"
+"漂移引起的输入，但又足够低，不会忽略玩家的实际输入。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:157
 msgid ""
@@ -177,11 +208,13 @@ msgid ""
 "get_vector()``, the deadzone can be specified, or otherwise it will "
 "calculate the average deadzone value from all of the actions in the vector."
 msgstr ""
+"Godot有一个内置的死区系统来解决这个问题。默认值是 ``0.2`` ，但你可以在项目设"
+"置的输入映射选项卡中根据每个动作增加或减少它。对于 ``Input.get_vector()`` ，"
+"可以指定死区，否则它将从向量中的所有动作计算出平均死区值。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:164
-#, fuzzy
 msgid "\"Echo\" events"
-msgstr "触摸事件"
+msgstr "\"Echo\" 事件"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:166
 msgid ""
@@ -190,6 +223,9 @@ msgid ""
 "(also known as \"echo\" events). This is because the operating system never "
 "sends \"echo\" events for controller input in the first place."
 msgstr ""
+"与键盘输入不同，按住一个控制器按钮，如D-pad方向， **不会** 产生固定间隔的重复"
+"输入事件（也被称为 \"回声\" 事件）。这是因为操作系统首先不会为控制器输入发送 "
+"\"回声\" 事件。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:171
 msgid ""
@@ -199,25 +235,28 @@ msgid ""
 "regular intervals. This can be accomplished with the help of a :ref:"
 "`class_Timer` node."
 msgstr ""
+"如果你想让控制器按钮发送回声事件，你将不得不通过代码生成 :ref:"
+"`class_InputEvent` 对象，并使用 :ref:`Input.parse_input_event() "
+"<class_Input_method_parse_input_event>` 定期解析它们。这可以在 :ref:"
+"`class_Timer` 节点的帮助下完成。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:178
 msgid "Troubleshooting"
 msgstr "故障排除"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
-#, fuzzy
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
 "com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
 "+gamepad>`__ on GitHub."
 msgstr ""
-"参见GitHub上与网页编辑器相关的 `公开问题列表<https://github.com/godotengine/"
-"godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic"
-"%3Aeditor>`__ ,了解已知的bug列表."
+"你可以在GitHub上查看 `控制器支持的已知问题列表 <https://github.com/"
+"godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
+"+gamepad>`__ 。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
 msgid "My controller isn't recognized by Godot."
-msgstr ""
+msgstr "Godot无法识别我的控制器。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
 msgid ""
@@ -225,10 +264,12 @@ msgid ""
 "can use the `Gamepad Tester <https://gamepad-tester.com/>`__ website to "
 "confirm that your controller is recognized."
 msgstr ""
+"首先，检查你的控制器是否被其他应用程序识别。你可以使用 `Gamepad Tester "
+"<https://gamepad-tester.com/>`__ 网站来确认你的控制器被识别。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:194
 msgid "My controller has incorrectly mapped buttons or axes."
-msgstr ""
+msgstr "我的控制器的按钮或轴映射不正确。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:196
 msgid ""
@@ -238,6 +279,9 @@ msgid ""
 "included in the next Godot version by opening a pull request on the linked "
 "repository."
 msgstr ""
+"如果按钮被错误地映射，这可能是由于来自 `SDL游戏控制器数据库 <https://github."
+"com/gabomdq/SDL_GameControllerDB>`__ 的错误的映射。你可以在链接的存储库中打开"
+"一个拉取请求，为下一个Godot版本提供一个更新的映射。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:201
 msgid ""
@@ -247,6 +291,9 @@ msgid ""
 "test it by defining the ``SDL_GAMECONTROLLERCONFIG`` environment variable "
 "before running Godot:"
 msgstr ""
+"有很多方法来创建映射。一个选择是使用 `官方Joypads演示 <https://godotengine."
+"org/asset-library/asset/140>`__ 中的映射向导。一旦你有了控制器可工作的映射，"
+"你可以在运行Godot之前通过定义 ``SDL_GAMECONTROLLERCONFIG`` 环境变量来测试它:"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:222
 msgid ""
@@ -255,10 +302,13 @@ msgid ""
 "add_joy_mapping() <class_Input_method_add_joy_mapping>` as early as possible "
 "in a script's ``_ready()`` function."
 msgstr ""
+"要在非桌面平台上测试映射，或者用额外的控制器映射来分发你的项目，你可以通过调"
+"用 :ref:`Input.add_joy_mapping() <class_Input_method_add_joy_mapping>` 尽早在"
+"脚本的 `_ready()` 函数中添加它们。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:228
 msgid "My controller works on a given platform, but not on another platform."
-msgstr ""
+msgstr "我的控制器在特定的平台上工作，但在另一个平台上却不能。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:231
 msgid "macOS"
@@ -269,11 +319,12 @@ msgid ""
 "Controllers are currently only supported on x86-based Macs. This means "
 "controllers won't work on Macs featuring ARM processors such as the Apple M1."
 msgstr ""
+"控制器目前只支持基于x86的Mac电脑。这意味着控制器不能在采用ARM处理器的Mac上工"
+"作，如苹果M1。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:237
-#, fuzzy
 msgid "Linux"
-msgstr "在Linux上:"
+msgstr "Linux"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:239
 msgid ""
@@ -282,6 +333,9 @@ msgid ""
 "``udev=yes`` was passed on the SCons command line. This made controller "
 "hotplugging support unavailable in self-compiled binaries."
 msgstr ""
+"在Godot 3.3之前，官方的Godot可执行文件在编译时支持udev，但自编译的可执行文件"
+"在编译时不支持udev，除非在SCons命令行中传递 ``udev=yes`` 。这使得控制器的热插"
+"拔支持在自编译的可执行文件中不可用。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:245
 msgid "HTML5"
@@ -294,9 +348,14 @@ msgid ""
 "browsers. As a result, you may have to instruct your players to use a "
 "different browser if they can't get their controller to work."
 msgstr ""
+"与 \"本地\" 平台相比，HTML5 控制器的支持通常不太可靠。各个浏览器对控制器的支"
+"持质量往往相差甚远。因此，如果玩家无法使用他们的控制器，你可能不得不指示他们"
+"使用不同的浏览器。"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:252
 msgid ""
 "Also, note that `controller support was significantly improved <https://"
 "github.com/godotengine/godot/pull/45078>`__ in Godot 3.3 and later."
 msgstr ""
+"另外，请注意，在Godot 3.3及以后的版本中，对 `控制器的支持得到了很大的改善 "
+"<https://github.com/godotengine/godot/pull/45078>`__ 。"

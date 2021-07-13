@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -648,7 +648,7 @@ msgstr "Потрійне if/else (якщо/інакше)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``as``"
-msgstr ""
+msgstr "``as``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 #, fuzzy
@@ -684,9 +684,8 @@ msgid "Base 10 integer"
 msgstr "Ціле число за десятковою системою числення"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
-#, fuzzy
 msgid "``0x8f51``"
-msgstr "``0x8F51``"
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 16 (hexadecimal) integer"
@@ -745,6 +744,8 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
+"Цілі та десяткові числа можуть розділятись символом ``_`` для кращої "
+"читабельності. Усі наступні способи запису чисел є дійсними:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
@@ -763,7 +764,6 @@ msgid "Built-in types"
 msgstr "Вбудовані типи"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -840,67 +840,64 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
 "Послідовність символів у `форматі Unicode <https://en.wikipedia.org/wiki/"
-"Unicode>`_. Рядки (текст) можуть містити `стандартні escape послідовності з "
-"С <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript також "
-"підтримує :ref:`doc_gdscript_printf`."
+"Unicode>`_. Рядки (текст) можуть містити наступні escape послідовності:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "**Escape sequence**"
-msgstr ""
+msgstr "**Escape послідовності**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "**Expands to**"
-msgstr ""
+msgstr "**Розширюються**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "Newline (line feed)"
-msgstr ""
+msgstr "Новий рядок (перенесення рядка)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Horizontal tab character"
-msgstr ""
+msgstr "Горизонтальний символ табуляції"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Carriage return"
-msgstr ""
+msgstr "Повернення каретки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "Alert (beep/bell)"
-msgstr ""
+msgstr "Попередження (звуковий сигнал/дзвінок)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "Formfeed page break"
@@ -908,47 +905,47 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "Vertical tab character"
-msgstr ""
+msgstr "Вертикальний символ табуляції"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "Double quote"
-msgstr ""
+msgstr "Подвійні лапки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "Single quote"
-msgstr ""
+msgstr "Одинарні лапки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Backslash"
-msgstr ""
+msgstr "Зворотний слеш"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
+msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
-msgstr ""
+msgstr "GDScript також підтримує :ref:`doc_gdscript_printf`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
 msgid "Vector built-in types"
@@ -1199,7 +1196,6 @@ msgstr ""
 "ключі."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
-#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
@@ -1208,9 +1204,8 @@ msgid ""
 msgstr ""
 "Також підтримується синтаксис таблиць в стилі Lua. Стиль Lua використовує "
 "``=`` замість ``:`` і не використовує лапки для позначення ключів (що "
-"дозволяє писати трохи менше). Однак зауважте, що, як і будь-який "
-"ідентифікатор GDScript, ключі, записані у цій формі, не можуть починатися з "
-"цифри."
+"дозволяє писати трохи менше). Однак, ключі, записані у цій формі, не можуть "
+"починатися з цифри (як і будь-який ідентифікатор GDScript)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
 msgid ""
@@ -1228,6 +1223,11 @@ msgid ""
 "the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
 "<class_Object_method_set>` methods instead."
 msgstr ""
+"Синтаксис дужок може використовуватися для доступу до властивостей будь-"
+"якого :ref:`class_Object`, а не лише до словників. Майте на увазі, що спроба "
+"індексувати неіснуючу властивість спричинить помилку скрипту . Щоб цього "
+"уникнути, використовуйте методи :ref:`Object.get() "
+"<class_Object_method_get>` та :ref:`Object.set() <class_Object_method_set>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
 msgid "Data"
@@ -1369,10 +1369,16 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"Константи - це значення, які ви не можете змінити під час роботи гри. Їх "
+"значення має бути відоме під час компіляції. Використання ключового слова "
+"``const`` дозволяє надати значенню константи назву. Спроба присвоїти "
+"значення константі після її оголошення буде давати вам помилку."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
 msgstr ""
+"Ми рекомендуємо використовувати константи для значень які не призначені для "
+"зміни."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -1393,6 +1399,10 @@ msgid ""
 "still be modified afterwards. They can't be reassigned with another value "
 "though."
 msgstr ""
+"Оскільки масиви та словники передаються за посиланням, константи є \"плоскими"
+"\". Це означає, що якщо ви оголосите в якості константи масив, чи словник, "
+"його все ще можна буде змінити згодом. Однак їх не можна замінити іншим "
+"значенням."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
 msgid "Enums"
@@ -1500,9 +1510,8 @@ msgstr ""
 "функція не матиме значення для повернення."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:769
-#, fuzzy
 msgid "Referencing functions"
-msgstr "Довідка функцій"
+msgstr "Посилання на функції"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid ""
@@ -1540,9 +1549,8 @@ msgstr ""
 "основному корисно для створення бібліотек допоміжних функцій:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
-#, fuzzy
 msgid "Statements and control flow"
-msgstr "Оператори і контрольний потік"
+msgstr "Оператори і управління потоком"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:802
 msgid ""
@@ -1591,14 +1599,13 @@ msgstr ""
 "бути перервані, з допомогою ``break``, або продовжені з ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
-#, fuzzy
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
 "loop variable. When iterating over a dictionary, the *key* is stored in the "
 "loop variable."
 msgstr ""
-"Для повторення(ітерації) діапазону, наприклад масиву, або таблиці, "
+"Для повторення (ітерації) діапазону, наприклад масиву, або таблиці, "
 "використовується цикл *for*. Під час ітерації над масивом поточний елемент "
 "масиву зберігається у змінній циклу. Під час ітерації над словником у "
 "змінній циклу зберігається індекс."
@@ -1646,7 +1653,6 @@ msgid "**Control flow**:"
 msgstr "**Потік керування**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
-#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
@@ -1655,9 +1661,9 @@ msgid ""
 msgstr ""
 "Шаблони перевіряються зверху вниз. Якщо шаблон відповідає, відповідний блок "
 "буде виконаний. Після цього виконання продовжується нижче оператора "
-"``match``. Якщо ви хочете продовжити перевірку, ви можете скористатися "
-"``continue`` для зупинки виконання в поточному блоці і перевірки тих, що "
-"знаходяться під ним."
+"``match``. Ви можете скористатися ``continue`` для зупинки виконання в "
+"поточному блоці і перевірки на наявність додаткового збігу в шаблонах під "
+"ним."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid "There are 6 pattern types:"
@@ -1684,9 +1690,8 @@ msgid "Wildcard pattern"
 msgstr "Шаблон Wildcard"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
-#, fuzzy
 msgid "This pattern matches everything. It's written as a single underscore."
-msgstr "Цей шаблон відповідає всім. Це написано як окреме підкреслення."
+msgstr "Цей шаблон відповідає усьому. Він прописаний як окреме підкреслення."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
@@ -1720,7 +1725,7 @@ msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
-"Відповідає масиву. Кожен окремий елемент шаблону масиву є самим шаблоном, "
+"Відповідає масиву. Кожен окремий елемент масиву шаблона є самим шаблоном, "
 "тому ви можете вкласти їх."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
@@ -1732,13 +1737,12 @@ msgstr ""
 "шаблон, інакше шаблон не збігатиметься."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:971
-#, fuzzy
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
 msgstr ""
-"**Масив відкритого типу**: Масив може бути більшим за шаблон, зробивши "
-"останній під-шаблон ``..``."
+"**Масив відкритого типу**: Масив може стати більшим за шаблон, під час "
+"виконання останнього під-шаблону ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
 msgid "Every subpattern has to be comma-separated."
@@ -1769,6 +1773,8 @@ msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
+"**Відкритий словник**: Словник може стати більшим за шаблон при виконанні "
+"останнього підшаблону ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
 msgid "Every subpattern has to be comma separated."
@@ -1830,6 +1836,10 @@ msgid ""
 "script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
 "for more information."
 msgstr ""
+"Якщо скрипт знаходиться в каталозі ``res://addons/``, вузол ``class_name`` "
+"з’явиться у діалоговому вікні **Створити новий вузол** лише в тому випадку, "
+"якщо скрипт є частиною *увімкненого* плагіна редактора. Дивіться :ref:"
+"`doc_making_plugins` для додаткової інформації."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
@@ -1908,7 +1918,6 @@ msgstr ""
 "слово ``super`` в інших мовах):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
-#, fuzzy
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -1921,7 +1930,6 @@ msgstr ""
 "викликати при перевантаженні."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-#, fuzzy
 msgid "Class constructor"
 msgstr "Конструктор класу"
 
@@ -1989,9 +1997,9 @@ msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
-"constructor as well, not just variables. eg.::"
+"constructor as well, not just variables, e.g.::"
 msgstr ""
-"Якщо ``_init`` конструктор ``Idle.gd`` приймає 0 аргументів, він все одно "
+"Якщо ``_init`` конструктор в ``Idle.gd`` приймає 0 аргументів, він все одно "
 "потребує якогось значення для батьківського класу ``State.gd``, навіть якщо "
 "нічого з ним не робить. Це приводить нас до того, що ви можете передавати "
 "літерали в базовий конструктор, а не лише змінні. Наприклад:"
@@ -2101,7 +2109,6 @@ msgid "Tool mode"
 msgstr "Режим інструмента"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
-#, fuzzy
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -2135,7 +2142,6 @@ msgid "Memory management"
 msgstr "Управління пам'яттю"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2150,8 +2156,8 @@ msgstr ""
 "лише підрахунок посилань. За замовчуванням усі класи, які не визначають "
 "успадкування, поширюють **Довідку**. Якщо цього не потрібно, клас повинен "
 "успадкувати :ref:`class_Object` вручну і повинен викликати instance.free (). "
-"Щоб уникнути еталонних циклів, які неможливо звільнити, передбачена функція "
-"``weakref`` створення слабких посилань."
+"Щоб уникнути еталонних циклів, які неможливо звільнити, передбачена функція :"
+"ref:`class_WeakRef` створення слабких посилань."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
@@ -2399,32 +2405,42 @@ msgstr "``my_func`` продовжить виконання лише після 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
 msgid "You can also get the signal's argument once it's emitted by an object:"
 msgstr ""
+"Ви також можете отримати аргумент сигналу, коли його випромінює об'єкт:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1619
 msgid ""
 "If there is more than one argument, ``yield`` returns an array containing "
 "the arguments::"
 msgstr ""
+"Якщо аргументів є більше, ``yield`` повертає масив, що містить аргументи:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
+#, fuzzy
 msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
+"Якщо ви не впевнені, може функція повертати чи ні, чи може вона повертати "
+"кілька разів, ви можете подати ``completed`` сигналу через умову:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
+#, fuzzy
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
 "``while`` would be redundant here as the ``completed`` signal is only "
 "emitted when the function didn't yield anymore."
 msgstr ""
+"Це гарантує, що функція повертає те, що вона повинна була повернути, "
+"незалежно від того, чи використовувались coroutines програми всередині. "
+"Зверніть увагу, що використання тут ``while`` було б зайвим, оскільки сигнал "
+"``completed`` випромінюється лише тоді, коли функція більше не дає "
+"результату."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Ключове слово Onready"
+msgstr "Ключове слово `onready`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
@@ -2455,7 +2471,6 @@ msgid "Assert keyword"
 msgstr "Ключове слово Assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1692
-#, fuzzy
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2465,12 +2480,11 @@ msgid ""
 "depending on whether the project is run in a debug build."
 msgstr ""
 "Ключове слово ``assert`` може бути використано для перевірки умов в "
-"налагоджувальних збірках. У твердженнях, що не налагоджують, ці твердження "
-"ігноруються. Це означає, що вираз, переданий як аргумент, не буде оцінено в "
-"проєкті, експортованому в режимі випуску. Через це твердження не повинні "
+"налагоджувальних збірках. Ці твердження ігноруються у не налагоджуваних "
+"збірках. Це означає, що вираз, переданий як аргумент, не буде оцінено в "
+"проекті, експортованому в режимі випуску. Через це твердження повинні **не** "
 "містити виразів, які мають побічні ефекти. В іншому випадку поведінка "
-"скрипту може змінюватись залежно від того, чи виконується проєкт у "
-"налагодженні."
+"скрипту може змінюватись залежно від того в якій збірці запускається проект."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1704
 msgid ""

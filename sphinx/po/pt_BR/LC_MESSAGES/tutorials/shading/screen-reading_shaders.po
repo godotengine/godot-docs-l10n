@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr "Introdução"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:9
 msgid ""
-"Very often, it is desired to make a shader that reads from the same screen "
-"to which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
+"It is often desired to make a shader that reads from the same screen to "
+"which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
 "difficult because of internal hardware limitations. GPUs are extremely "
 "parallel, so reading and writing causes all sorts of cache and coherency "
 "problems. As a result, not even the most modern hardware supports this "
@@ -39,7 +39,7 @@ msgstr ""
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
 "a back-buffer and then read from it while drawing. Godot provides a few "
-"tools that make this process easy!"
+"tools that make this process easy."
 msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
@@ -130,7 +130,7 @@ msgstr ""
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:104
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:111
 msgid ""
 "In 3D, there is less flexibility to solve this particular issue because the "
 "``SCREEN_TEXTURE`` is only captured once. Be careful when using "
@@ -138,7 +138,7 @@ msgid ""
 "capture some opaque objects that are in front of the object."
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:109
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
 msgid ""
 "You can reproduce the back-buffer logic in 3D by creating a :ref:`Viewport "
 "<class_Viewport>` with a camera in the same position as your object, and "
@@ -146,24 +146,24 @@ msgid ""
 "``SCREEN_TEXTURE``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:114
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:121
 msgid "Back-buffer logic"
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:123
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:119
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:126
 msgid ""
 "If a node uses the ``SCREEN_TEXTURE``, the entire screen is copied to the "
 "back buffer before drawing that node. This only happens the first time; "
 "subsequent nodes do not trigger this."
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:122
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:129
 msgid ""
 "If a BackBufferCopy node was processed before the situation in the point "
 "above (even if ``SCREEN_TEXTURE`` was not used), the behavior described in "
@@ -173,7 +173,7 @@ msgid ""
 "tree-order."
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:128
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:135
 msgid ""
 "BackBufferCopy can copy either the entire screen or a region. If set to only "
 "a region (not the whole screen) and your shader uses pixels not in the "
@@ -183,18 +183,18 @@ msgid ""
 "different region. Avoid this behavior!"
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:137
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:144
 msgid "DEPTH_TEXTURE"
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:139
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:146
 msgid ""
-"For 3D Shaders, it's also possible to access the screen depth buffer. For "
+"For 3D shaders, it's also possible to access the screen depth buffer. For "
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
 
-#: ../../docs/tutorials/shading/screen-reading_shaders.rst:143
+#: ../../docs/tutorials/shading/screen-reading_shaders.rst:150
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
 msgstr ""

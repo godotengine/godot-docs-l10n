@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
-#, fuzzy
 msgid "Custom builds for Android"
-msgstr "Exportando para Android"
+msgstr "Compilações personalizadas para Android"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -42,11 +41,11 @@ msgstr "Existem algumas razões para você querer fazer isso:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
-msgstr "Modifique o projeto antes dele ser construído."
+msgstr "Modificar o projeto antes dele ser compilado."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr "Adicione SDKs externos utilizados no seu projeto."
+msgstr "Adicionar SDKs externos utilizados no seu projeto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
@@ -58,17 +57,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:21
 msgid "Set up the custom build environment"
-msgstr ""
+msgstr "Configure o ambiente de compilação personalizado"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:23
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr ""
+msgstr "Vá para o menu Projeto e instale o modelo de *Custom Build*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:27
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
 "download them."
 msgstr ""
+"Certifique-se de que os modelos de exportação estejam baixados. Caso "
+"contrário, este menu ajudará você a baixá-los."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:30
 msgid ""
@@ -77,16 +78,22 @@ msgid ""
 "your own add-ons<doc_android_plugin>`, or you really need to modify the "
 "project."
 msgstr ""
+"Um projeto Android baseado em Gradle será criado em ``res://android/build``. "
+"Editar estes arquivos não é necessário a menos que você queira :ref:`criar "
+"seus próprios add-ons <doc_android_plugin>`, ou você realmente precise "
+"modificar o projeto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Enabling the custom build and exporting"
-msgstr ""
+msgstr "Habilitando a compilação personalizada e exportando"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:38
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
+"Ao configurar o projeto Android na caixa de diálogo **Projeto > Exportar**, "
+"**Custom Build** precisa ser ativado:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
 msgid ""
@@ -94,9 +101,14 @@ msgid ""
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
+"A partir de agora, tentar exportar o projeto ou implantar com um clique irá "
+"chamar o sistema de compilação do `Gradle <https://gradle.org/>`__ para "
+"gerar novos modelos (esta janela aparecerá todas as vezes):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:49
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
 msgstr ""
+"Os modelos construídos serão usados automaticamente depois, portanto, "
+"nenhuma configuração adicional é necessária."

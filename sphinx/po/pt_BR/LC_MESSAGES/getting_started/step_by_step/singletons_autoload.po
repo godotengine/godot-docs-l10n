@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,6 @@ msgstr ""
 "continuamente esses dados ao alterar cenas é trabalhoso e pode ser lento."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -74,10 +73,10 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"O `Padrão Singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`_ é "
-"uma ferramenta útil para se usar quando é necessário armazenar informações "
-"entre cenas. No nosso caso é possível reusar a mesma cena ou classe para "
-"múltiplos singletons, contanto que eles tenham diferentes nomes."
+"O `padrão Singleton <https://pt.wikipedia.org/wiki/Singleton>`_ é uma "
+"ferramenta útil para se usar quando é necessário armazenar informações entre "
+"cenas. No nosso caso é possível reusar a mesma cena ou classe para múltiplos "
+"singletons, contanto que eles tenham diferentes nomes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
@@ -113,16 +112,21 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot não tornará AutoLoad um singleton \"true\" de acordo com o design "
+"pattern. Ele ainda pode ser instanciado mais de uma vez pelo usuário, se "
+"desejado."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
-msgstr "O AutoLoad"
+msgstr "AutoLoad"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
 msgstr ""
+"Você pode criar um Autoload para carregar a cena ou um script que herda :ref:"
+"`class_Node`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
 #, fuzzy
@@ -329,3 +333,8 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"Alternativamente, se o tempo de carregamento é relativamente curto (menos "
+"que 3 segundos ou por aí), você pode exibir uma \"placa de carregamento\" "
+"mostrando algum tipo de elemento 2D logo antes de trocar a cena. Você pode, "
+"então, escondê-lo logo após a cena ser trocada. Isto pode ser usado para "
+"indicar ao jogador que uma cena está sendo carregada."

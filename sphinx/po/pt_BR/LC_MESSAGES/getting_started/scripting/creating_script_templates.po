@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
-#, fuzzy
 msgid "Creating script templates"
-msgstr "Criando um Script"
+msgstr "Criando modelos de script"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:6
 msgid ""
@@ -36,18 +35,17 @@ msgid ""
 "possible to modify existing and create new ones, both per project and the "
 "editor."
 msgstr ""
-"Um conjunto de templates padrão para script já é providenciada, mas também é "
-"possível modificar as já existentes ou criar novas, tanto para o projeto "
+"Um conjunto de modelos de script já é fornecido por padrão, mas também é "
+"possível modificar os já existentes ou criar novos, tanto para o projeto "
 "quanto para o editor."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
-#, fuzzy
 msgid "Locating the templates"
-msgstr "Movendo o Jogador"
+msgstr "Localizando os modelos"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
-msgstr "Existem dois lugares onde as templates pode ser manipuladas."
+msgstr "Existem dois lugares onde os modelos pode ser manipulados."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:20
 msgid "Editor-defined templates"
@@ -58,8 +56,8 @@ msgid ""
 "These are available globally throughout any project. The location of these "
 "templates are determined per each OS:"
 msgstr ""
-"Essa estão disponíveis para todos os projetos. A localização dessas "
-"templates é determinada por cada SO(Sistema Operacional) em particular:"
+"Estes estão disponíveis para todos os projetos. A localização destes modelos "
+"é determinada por cada SO em particular:"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:25
 msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
@@ -79,41 +77,38 @@ msgid ""
 "built-in templates automatically, so this logic can be used to reset the "
 "default templates in case you've accidentally overwritten them."
 msgstr ""
-"Se nenhuma \"script_tamplates\" for detectada, o Godot irá criar um conjunto "
-"de templates automaticamente, essa mesma lógica pode ser usada para reverter "
-"as templates ao estado original, caso você acidentalmente tenha cometido "
-"algum erro."
+"Se nenhum \"script_templates\" for detectado, o Godot irá criar um conjunto "
+"de modelos automaticamente, essa mesma lógica pode ser usada para reverter "
+"os modelos ao estado original, caso você acidentalmente tenha cometido algum "
+"erro."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:34
-#, fuzzy
 msgid "Project-defined templates"
-msgstr "Arquivos do projeto"
+msgstr "Modelos definidos pelo projeto"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:36
-#, fuzzy
 msgid ""
 "The default path to search for templates is the ``res://script_templates/`` "
 "directory. The path can be changed by configuring the ``editor/"
 "script_templates_search_path`` setting in the :ref:`ProjectSettings "
 "<class_ProjectSettings>`, both via code and the editor."
 msgstr ""
-"O caminho padrão para buscar templates é o diretório ``res://"
-"script_templates/``. O caminho pode ser mudado nas configurações do editor, "
-"na propriedade ``editor/script_templates_search_path``, veja a :ref:"
-"`ProjectSettings <class_ProjectSettings>`. Tanto via código quanto pelo "
-"próprio editor."
+"O caminho padrão para buscar modelos é o diretório ``res://script_templates/"
+"``. O caminho pode ser mudado configurando a opção ``editor/"
+"script_templates_search_path`` em :ref:`ProjectSettings "
+"<class_ProjectSettings>`, tanto via código quanto pelo editor."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:41
 msgid ""
 "If no ``script_templates`` directory is found within a project, it is simply "
 "ignored."
 msgstr ""
-"Se nenhum diretório para ``script_templates``for encontrado no projeto, "
-"então é simplesmente ignorado."
+"Se nenhum diretório``script_templates`` for encontrado no projeto, então é "
+"simplesmente ignorado."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:45
 msgid "Language support and overriding behavior"
-msgstr "Suporte para línguas e mudaça de funcionalidades"
+msgstr "Suporte para idiomas e comportamento de sobreposição"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:47
 msgid ""
@@ -123,9 +118,9 @@ msgid ""
 "GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
 msgstr ""
 "Dependendo de como uma linguagem em particular implementa a geração de "
-"scripts a partir de templates, é possível criar uma template que possa ser "
-"reconhecida por essa linguagem de acordo com a extensão do arquivo template. "
-"Para o Gdscript e o C#, as extensões devem ser ``gd`` e ``cs`` "
+"scripts a partir de modelos, é possível criar um modelo que possa ser "
+"reconhecido por essa linguagem de acordo com a extensão do arquivo do "
+"modelo. Para o GDScript e o C#, as extensões devem ser ``gd`` e ``cs`` "
 "respectivamente."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:52
@@ -137,23 +132,25 @@ msgid ""
 "won't be visible throughout the project's filesystem anymore, yet the "
 "templates can be modified by an external text editor anytime."
 msgstr ""
-"As templates para script têm a mesma extensão que arquivos de script "
-"normais. Isso pode levar o analizador a tratar esse arquivos templates como "
-"scripts. Para evitar isso, tenha certeza de criar um arquivo chamado ``."
-"gdignore`` dentro da pasta que contém as templates. Essa pasta não será mais "
-"visível através do sistema de arquivos do projeto; as templates ainda podem "
-"ser modificadas por qualquer editor de texto externo."
+"Os modelos de script têm a mesma extensão que arquivos de script normais. "
+"Isso pode levar a um problema de um analisador de scripts que trata esses "
+"modelos como scripts. Para evitar isso, tenha certeza de criar um arquivo "
+"chamado ``.gdignore`` dentro da pasta que contém os modelos. Essa pasta não "
+"será mais visível através do sistema de arquivos do projeto; os modelos "
+"ainda podem ser modificados por qualquer editor de texto externo."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:59
 msgid ""
 "The built-in editor templates are automatically shadowed by the project-"
 "specific templates given both scripts have the same filename."
 msgstr ""
+"Os modelos de editor integrados são automaticamente ocultados pelos modelos "
+"específicos do projeto, dado que ambos os scripts têm o mesmo nome de "
+"arquivo."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:63
-#, fuzzy
 msgid "Default template"
-msgstr "Recursos padrão"
+msgstr "Modelo padrão"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:65
 msgid ""
@@ -161,25 +158,25 @@ msgid ""
 "cannot be configured nor overridden, but you can use these as the base for "
 "creating other templates."
 msgstr ""
-"A template \"Padrão\" sempre é gerada dinamicamente para cada linguagem e "
-"não pode ser configurada ou modificada, mas você pode usá-la como base para "
-"criar outras templates."
+"O modelo ``Padrão`` sempre é gerado dinamicamente por linguagem e não pode "
+"ser configurado ou sobreposto, mas você pode usá-lo como base para criar "
+"outros modelos."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:116
-#, fuzzy
 msgid "List of template placeholders"
-msgstr "Múltiplos espaços reservados"
+msgstr "Lista de placeholders de modelo"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:118
 msgid ""
 "The following describes the complete list of built-in template placeholders "
 "which are currently implemented."
 msgstr ""
+"O seguinte descreve a lista completa de placeholders de modelo integrados "
+"que estão embutidos atualmente."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:122
-#, fuzzy
 msgid "Base placeholders"
-msgstr "Múltiplos espaços reservados"
+msgstr "Placeholders base"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
@@ -217,15 +214,14 @@ msgid ""
 "``text_editor/indent/size`` settings in the :ref:`EditorSettings "
 "<class_EditorSettings>` respectively."
 msgstr ""
-"Marcador de indentação. O tipo exato e quantidade de espaços em branco "
+"Placeholder de indentação. O tipo exato e quantidade de espaços em branco "
 "usados para a indentação é determinado pelas propriedades ``text_editor/"
 "indent/type`` e ``text_editor/indent/size`` respectivamente, veja :ref:"
 "`EditorSettings <class_EditorSettings>`."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:139
-#, fuzzy
 msgid "Type placeholders"
-msgstr "Múltiplos espaços reservados"
+msgstr "Placeholders de tipo"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:141
 msgid ""
@@ -234,9 +230,9 @@ msgid ""
 "completion/add_type_hints`` setting in the :ref:`EditorSettings "
 "<class_EditorSettings>`."
 msgstr ""
-"Essa só são relevantes para o Gdscript com tipo estático. Se os marcadores "
-"serão realmente substituido, ou não, é determinado pela propriedade "
-"``text_editor/completion/add_type_hints`` na :ref:`EditorSettings "
+"Estes só são relevantes para o GDScript com tipo estático. Se os "
+"placeholders são realmente substituidos é determinado pela propriedade "
+"``text_editor/completion/add_type_hints`` em :ref:`EditorSettings "
 "<class_EditorSettings>`."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
@@ -257,7 +253,6 @@ msgid "``%STRING_TYPE%``"
 msgstr "``%STRING_TYPE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:151
-#, fuzzy
 msgid "``: String``"
 msgstr "``: String``"
 

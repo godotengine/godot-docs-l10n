@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
-"Auf :ref:`doc_using_the_web_editor` sind die Einschränkungen des HTML5 "
-"Editors zu sehen."
+"Schauen sie sich :ref:`doc_using_the_web_editor`an, für Vorbehalte, die für "
+"die HTML5-Version des Godot-Editors spezifisch sind."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -123,12 +123,25 @@ msgstr ""
 "öffnen. Sie können das Peripheriegerät danach wieder anschließen."
 
 #: ../../docs/about/troubleshooting.rst:47
+msgid ""
+"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:49
+msgid ""
+"This is a `known issue <https://github.com/godotengine/godot/"
+"issues/32990>`__ caused by the third-party Stardock Fences application on "
+"Windows. The only known workaround is to disable Stardock Fences while using "
+"Godot."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
 "Der Godot Editor scheint einzufrieren, nachdem die Systemkonsole angeklickt "
 "wurde."
 
-#: ../../docs/about/troubleshooting.rst:49
+#: ../../docs/about/troubleshooting.rst:56
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -142,7 +155,7 @@ msgstr ""
 "die Anwendung und lässt Sie Text innerhalb der Konsole auswählen. Godot kann "
 "dieses System-spezifische Verhalten nicht überschreiben."
 
-#: ../../docs/about/troubleshooting.rst:54
+#: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -150,7 +163,7 @@ msgstr ""
 "Wählen Sie um dies zu beheben das Fenster der Systemkonsole aus und drücken "
 "Sie Enter, um den Auswahlmodus zu verlassen."
 
-#: ../../docs/about/troubleshooting.rst:58
+#: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
@@ -158,7 +171,7 @@ msgstr ""
 "Einige Texte wie \"NO DC\" werden in der oberen linken Ecke des "
 "Projektmanagers und des Editorfensters angezeigt."
 
-#: ../../docs/about/troubleshooting.rst:60
+#: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
@@ -166,7 +179,7 @@ msgstr ""
 "Dies wird durch den NVIDIA-Grafiktreiber verursacht, der ein Overlay zur "
 "Anzeige von Informationen einfügt."
 
-#: ../../docs/about/troubleshooting.rst:62
+#: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
@@ -175,7 +188,7 @@ msgstr ""
 "Grafiktreibereinstellungen in der NVIDIA-Systemsteuerung auf die "
 "Standardwerte zurück."
 
-#: ../../docs/about/troubleshooting.rst:65
+#: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
@@ -184,11 +197,11 @@ msgstr ""
 "settings``, gehen Sie zu **X Screen 0 > OpenGL Settings** und entfernen Sie "
 "das Häkchen bei **Enable Graphics API Visual Indicator**."
 
-#: ../../docs/about/troubleshooting.rst:69
+#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr "Das Projektfenster erscheint im Gegensatz zum Editor unscharf."
 
-#: ../../docs/about/troubleshooting.rst:71
+#: ../../docs/about/troubleshooting.rst:78
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -199,7 +212,7 @@ msgstr ""
 "Performance erhöht werden, wohingegen das Rendern von 3D Sczenen in hiDPI "
 "langsam ist."
 
-#: ../../docs/about/troubleshooting.rst:75
+#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -210,12 +223,12 @@ msgstr ""
 "sich ausserdem, dass die Konfiguration Ihres Projektes :ref:`mehrere "
 "Auflösungen <doc_multiple_resolutions>` unterstützt."
 
-#: ../../docs/about/troubleshooting.rst:80
+#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
 "Das Projektfenster erscheint nicht zentriert, wenn Ich das Projekt ausführe."
 
-#: ../../docs/about/troubleshooting.rst:82
+#: ../../docs/about/troubleshooting.rst:89
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
@@ -228,7 +241,7 @@ msgstr ""
 "zulassen**. Stellen Sie außerdem sicher Ihr Projekt so zu konfigurieren, "
 "dass es :ref:`mehrere Auflösungen <doc_multiple_resolutions>` unterstützt."
 
-#: ../../docs/about/troubleshooting.rst:88
+#: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
@@ -236,7 +249,7 @@ msgstr ""
 "Das Projekt funktioniert, wenn es vom Editor ausgeführt wird, aber scheitert "
 "beim Laden einiger Dateien, falls es von einer exportierten Kopie läuft."
 
-#: ../../docs/about/troubleshooting.rst:90
+#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -254,7 +267,7 @@ msgstr ""
 "Exportfilter angeben. Weitere Informationen finden Sie unter :ref:"
 "`doc_exporting_projects_export_mode`."
 
-#: ../../docs/about/troubleshooting.rst:97
+#: ../../docs/about/troubleshooting.rst:104
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "

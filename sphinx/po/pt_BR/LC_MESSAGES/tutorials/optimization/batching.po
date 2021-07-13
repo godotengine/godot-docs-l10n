@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,17 +42,12 @@ msgid ""
 "number of draw calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:21
-#, fuzzy
-msgid "2D batching is currently only supported when using the GLES2 renderer."
-msgstr "ETC1 (recomendado ao utilizar o renderizador GLES2)."
-
-#: ../../docs/tutorials/optimization/batching.rst:24
+#: ../../docs/tutorials/optimization/batching.rst:20
 #, fuzzy
 msgid "Draw calls"
 msgstr "Desvantagens"
 
-#: ../../docs/tutorials/optimization/batching.rst:26
+#: ../../docs/tutorials/optimization/batching.rst:22
 msgid ""
 "In 2D, we need to tell the GPU to render a series of primitives (rectangles, "
 "lines, polygons etc). The most obvious technique is to tell the GPU to "
@@ -61,7 +56,7 @@ msgid ""
 "\" (this is called a draw call)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:32
+#: ../../docs/tutorials/optimization/batching.rst:28
 msgid ""
 "While this is conceptually simple from the engine side, GPUs operate very "
 "slowly when used in this manner. GPUs work much more efficiently if you tell "
@@ -69,13 +64,13 @@ msgid ""
 "will call a \"batch\"."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:37
+#: ../../docs/tutorials/optimization/batching.rst:33
 msgid ""
 "It turns out that they don't just work a bit faster when used in this "
 "manner; they work a *lot* faster."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:40
+#: ../../docs/tutorials/optimization/batching.rst:36
 msgid ""
 "As Godot is designed to be a general-purpose engine, the primitives coming "
 "into the Godot renderer can be in any order, sometimes similar, and "
@@ -86,12 +81,11 @@ msgid ""
 "while requiring few (if any) changes to your Godot project."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:49
-#, fuzzy
+#: ../../docs/tutorials/optimization/batching.rst:45
 msgid "How it works"
-msgstr "Aqui está um exemplo simples de como funciona:"
+msgstr "Como funciona"
 
-#: ../../docs/tutorials/optimization/batching.rst:51
+#: ../../docs/tutorials/optimization/batching.rst:47
 msgid ""
 "Instructions come into the renderer from your game in the form of a series "
 "of items, each of which can contain one or more commands. The items "
@@ -101,23 +95,23 @@ msgid ""
 "Others, such as sprites, may only contain a single command (a rectangle)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:58
+#: ../../docs/tutorials/optimization/batching.rst:54
 msgid "The batcher uses two main techniques to group together primitives:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:60
+#: ../../docs/tutorials/optimization/batching.rst:56
 msgid "Consecutive items can be joined together."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:61
+#: ../../docs/tutorials/optimization/batching.rst:57
 msgid "Consecutive commands within an item can be joined to form a batch."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:64
+#: ../../docs/tutorials/optimization/batching.rst:60
 msgid "Breaking batching"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:66
+#: ../../docs/tutorials/optimization/batching.rst:62
 msgid ""
 "Batching can only take place if the items or commands are similar enough to "
 "be rendered in one draw call. Certain changes (or techniques), by necessity, "
@@ -125,41 +119,40 @@ msgid ""
 "\"breaking batching\"."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:70
+#: ../../docs/tutorials/optimization/batching.rst:66
 msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:72
-#, fuzzy
+#: ../../docs/tutorials/optimization/batching.rst:68
 msgid "Change of texture."
-msgstr "Importando Texturas"
+msgstr "Mudança de textura."
 
-#: ../../docs/tutorials/optimization/batching.rst:73
+#: ../../docs/tutorials/optimization/batching.rst:69
 msgid "Change of material."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:74
+#: ../../docs/tutorials/optimization/batching.rst:70
 msgid "Change of primitive type (say, going from rectangles to lines)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:78
+#: ../../docs/tutorials/optimization/batching.rst:74
 msgid ""
 "For example, if you draw a series of sprites each with a different texture, "
 "there is no way they can be batched."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:82
+#: ../../docs/tutorials/optimization/batching.rst:78
 msgid "Determining the rendering order"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:84
+#: ../../docs/tutorials/optimization/batching.rst:80
 msgid ""
 "The question arises, if only similar items can be drawn together in a batch, "
 "why don't we look through all the items in a scene, group together all the "
 "similar items, and draw them together?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:88
+#: ../../docs/tutorials/optimization/batching.rst:84
 msgid ""
 "In 3D, this is often exactly how engines work. However, in Godot's 2D "
 "renderer, items are drawn in \"painter's order\", from back to front. This "
@@ -167,35 +160,33 @@ msgid ""
 "overlap."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:92
+#: ../../docs/tutorials/optimization/batching.rst:88
 msgid ""
 "This also means that if we try and draw objects on a per-texture basis, then "
 "this painter's order may break and objects will be drawn in the wrong order."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:95
+#: ../../docs/tutorials/optimization/batching.rst:91
 msgid "In Godot, this back-to-front order is determined by:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:97
+#: ../../docs/tutorials/optimization/batching.rst:93
 msgid "The order of objects in the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:98
+#: ../../docs/tutorials/optimization/batching.rst:94
 msgid "The Z index of objects."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:99
-#, fuzzy
+#: ../../docs/tutorials/optimization/batching.rst:95
 msgid "The canvas layer."
-msgstr "O jogador"
+msgstr "A camada de canvas."
+
+#: ../../docs/tutorials/optimization/batching.rst:96
+msgid ":ref:`class_YSort` nodes."
+msgstr "nós :ref:`class_YSort`."
 
 #: ../../docs/tutorials/optimization/batching.rst:100
-#, fuzzy
-msgid ":ref:`class_YSort` nodes."
-msgstr ":ref:`RID <class_rid>`"
-
-#: ../../docs/tutorials/optimization/batching.rst:104
 msgid ""
 "You can group similar objects together for easier batching. While doing so "
 "is not a requirement on your part, think of it as an optional approach that "
@@ -203,29 +194,29 @@ msgid ""
 "`doc_batching_diagnostics` section to help you make this decision."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:110
+#: ../../docs/tutorials/optimization/batching.rst:106
 #, fuzzy
 msgid "A trick"
 msgstr "Tijolos"
 
-#: ../../docs/tutorials/optimization/batching.rst:112
+#: ../../docs/tutorials/optimization/batching.rst:108
 msgid ""
 "And now, a sleight of hand. Even though the idea of painter's order is that "
 "objects are rendered from back to front, consider 3 objects ``A``, ``B`` and "
 "``C``, that contain 2 different textures: grass and wood."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:118
+#: ../../docs/tutorials/optimization/batching.rst:114
 msgid "In painter's order they are ordered::"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:124
+#: ../../docs/tutorials/optimization/batching.rst:120
 msgid ""
 "Because of the texture changes, they can't be batched and will be rendered "
 "in 3 draw calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:127
+#: ../../docs/tutorials/optimization/batching.rst:123
 msgid ""
 "However, painter's order is only needed on the assumption that they will be "
 "drawn *on top* of each other. If we relax that assumption, i.e. if none of "
@@ -234,11 +225,11 @@ msgid ""
 "of this?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:133
+#: ../../docs/tutorials/optimization/batching.rst:129
 msgid "Item reordering"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:137
+#: ../../docs/tutorials/optimization/batching.rst:133
 msgid ""
 "It turns out that we can reorder items. However, we can only do this if the "
 "items satisfy the conditions of an overlap test, to ensure that the end "
@@ -249,17 +240,17 @@ msgid ""
 "(see below), in order to balance the costs and benefits in your project."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:151
+#: ../../docs/tutorials/optimization/batching.rst:147
 msgid ""
 "Since the texture only changes once, we can render the above in only 2 draw "
 "calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:155
+#: ../../docs/tutorials/optimization/batching.rst:151
 msgid "Lights"
 msgstr "Luzes"
 
-#: ../../docs/tutorials/optimization/batching.rst:157
+#: ../../docs/tutorials/optimization/batching.rst:153
 msgid ""
 "Although the batching system's job is normally quite straightforward, it "
 "becomes considerably more complex when 2D lights are used. This is because "
@@ -270,7 +261,7 @@ msgid ""
 "being a draw call:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:177
+#: ../../docs/tutorials/optimization/batching.rst:173
 msgid ""
 "That is a lot of draw calls: 8 for only 2 sprites. Now, consider we are "
 "drawing 1,000 sprites. The number of draw calls quickly becomes astronomical "
@@ -278,44 +269,44 @@ msgid ""
 "drastically slow down 2D rendering."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:182
+#: ../../docs/tutorials/optimization/batching.rst:178
 msgid ""
 "However, if you remember our magician's trick from item reordering, it turns "
 "out we can use the same trick to get around painter's order for lights!"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:185
+#: ../../docs/tutorials/optimization/batching.rst:181
 msgid ""
 "If ``A`` and ``B`` are not overlapping, we can render them together in a "
 "batch, so the drawing process is as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:198
+#: ../../docs/tutorials/optimization/batching.rst:194
 msgid ""
 "That is only 4 draw calls. Not bad, as that is a 2× reduction. However, "
 "consider that in a real game, you might be drawing closer to 1,000 sprites."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:201
+#: ../../docs/tutorials/optimization/batching.rst:197
 msgid "**Before:** 1000 × 4 = 4,000 draw calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:202
+#: ../../docs/tutorials/optimization/batching.rst:198
 msgid "**After:** 1 × 4 = 4 draw calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:204
+#: ../../docs/tutorials/optimization/batching.rst:200
 msgid ""
 "That is a 1000× decrease in draw calls, and should give a huge increase in "
 "performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:208
+#: ../../docs/tutorials/optimization/batching.rst:204
 #, fuzzy
 msgid "Overlap test"
 msgstr "Funções substituíveis"
 
-#: ../../docs/tutorials/optimization/batching.rst:210
+#: ../../docs/tutorials/optimization/batching.rst:206
 msgid ""
 "However, as with the item reordering, things are not that simple. We must "
 "first perform the overlap test to determine whether we can join these "
@@ -325,7 +316,7 @@ msgid ""
 "the costs."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:216
+#: ../../docs/tutorials/optimization/batching.rst:212
 msgid ""
 "Also consider that depending on the arrangement of primitives in the "
 "viewport, the overlap test will sometimes fail (because the primitives "
@@ -335,12 +326,12 @@ msgid ""
 "this lighting optimization."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:223
+#: ../../docs/tutorials/optimization/batching.rst:219
 #, fuzzy
 msgid "Light scissoring"
 msgstr "Processo de importação"
 
-#: ../../docs/tutorials/optimization/batching.rst:225
+#: ../../docs/tutorials/optimization/batching.rst:221
 msgid ""
 "Batching can make it more difficult to cull out objects that are not "
 "affected or partially affected by a light. This can increase the fill rate "
@@ -349,7 +340,7 @@ msgid ""
 "draw calls."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:230
+#: ../../docs/tutorials/optimization/batching.rst:226
 msgid ""
 "In order to counter this problem (and speed up lighting in general), "
 "batching introduces light scissoring. This enables the use of the OpenGL "
@@ -359,7 +350,7 @@ msgid ""
 "the light to *that area only*."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:237
+#: ../../docs/tutorials/optimization/batching.rst:233
 msgid ""
 "Light scissoring is controlled with the :ref:`scissor_area_threshold "
 "<class_ProjectSettings_property_rendering/batching/lights/"
@@ -370,7 +361,7 @@ msgid ""
 "result in performance gains when you're using 2D lighting."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:245
+#: ../../docs/tutorials/optimization/batching.rst:241
 msgid ""
 "The relationship between the threshold and whether a scissor operation takes "
 "place is not always straightforward. Generally, it represents the pixel area "
@@ -381,37 +372,37 @@ msgid ""
 "saved for the operation to be useful."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:253
+#: ../../docs/tutorials/optimization/batching.rst:249
 msgid ""
 "The exact relationship is probably not necessary for users to worry about, "
 "but is included in the appendix out of interest: :ref:"
 "`doc_batching_light_scissoring_threshold_calculation`"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:260
+#: ../../docs/tutorials/optimization/batching.rst:256
 msgid ""
 "Bottom right is a light, the red area is the pixels saved by the scissoring "
 "operation. Only the intersection needs to be rendered."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:264
+#: ../../docs/tutorials/optimization/batching.rst:260
 #, fuzzy
 msgid "Vertex baking"
 msgstr "Tipos básicos de vetor"
 
-#: ../../docs/tutorials/optimization/batching.rst:266
+#: ../../docs/tutorials/optimization/batching.rst:262
 msgid "The GPU shader receives instructions on what to draw in 2 main ways:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:268
+#: ../../docs/tutorials/optimization/batching.rst:264
 msgid "Shader uniforms (e.g. modulate color, item transform)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:269
+#: ../../docs/tutorials/optimization/batching.rst:265
 msgid "Vertex attributes (vertex color, local transform)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:271
+#: ../../docs/tutorials/optimization/batching.rst:267
 msgid ""
 "However, within a single draw call (batch), we cannot change uniforms. This "
 "means that naively, we would not be able to batch together items or commands "
@@ -421,37 +412,37 @@ msgid ""
 "color modulate as well."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:278
+#: ../../docs/tutorials/optimization/batching.rst:274
 msgid ""
 "To get around this problem, the batching can \"bake\" some of the uniforms "
 "into the vertex attributes."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:281
+#: ../../docs/tutorials/optimization/batching.rst:277
 msgid ""
 "The item transform can be combined with the local transform and sent in a "
 "vertex attribute."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:283
+#: ../../docs/tutorials/optimization/batching.rst:279
 msgid ""
 "The final modulate color can be combined with the vertex colors, and sent in "
 "a vertex attribute."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:286
+#: ../../docs/tutorials/optimization/batching.rst:282
 msgid ""
 "In most cases, this works fine, but this shortcut breaks down if a shader "
 "expects these values to be available individually rather than combined. This "
 "can happen in custom shaders."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:291
+#: ../../docs/tutorials/optimization/batching.rst:287
 #, fuzzy
 msgid "Custom shaders"
 msgstr "Iteradores personalizados"
 
-#: ../../docs/tutorials/optimization/batching.rst:293
+#: ../../docs/tutorials/optimization/batching.rst:289
 msgid ""
 "As a result of the limitation described above, certain operations in custom "
 "shaders will prevent vertex baking and therefore decrease the potential for "
@@ -459,21 +450,21 @@ msgid ""
 "caveats currently apply:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:298
+#: ../../docs/tutorials/optimization/batching.rst:294
 msgid ""
 "Reading or writing ``COLOR`` or ``MODULATE`` disables vertex color baking."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:299
+#: ../../docs/tutorials/optimization/batching.rst:295
 msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:302
+#: ../../docs/tutorials/optimization/batching.rst:298
 #, fuzzy
 msgid "Project Settings"
 msgstr "Configuração do Projeto"
 
-#: ../../docs/tutorials/optimization/batching.rst:304
+#: ../../docs/tutorials/optimization/batching.rst:300
 msgid ""
 "To fine-tune batching, a number of project settings are available. You can "
 "usually leave these at default during development, but it's a good idea to "
@@ -483,25 +474,25 @@ msgid ""
 "more information."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:312
+#: ../../docs/tutorials/optimization/batching.rst:308
 #, fuzzy
 msgid "rendering/batching/options"
 msgstr "Animações"
 
-#: ../../docs/tutorials/optimization/batching.rst:314
+#: ../../docs/tutorials/optimization/batching.rst:310
 msgid ""
 ":ref:`use_batching <class_ProjectSettings_property_rendering/batching/"
 "options/use_batching>` - Turns batching on or off."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:318
+#: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
 ":ref:`use_batching_in_editor <class_ProjectSettings_property_rendering/"
 "batching/options/use_batching_in_editor>` Turns batching on or off in the "
 "Godot editor. This setting doesn't affect the running project in any way."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:323
+#: ../../docs/tutorials/optimization/batching.rst:319
 msgid ""
 ":ref:`single_rect_fallback <class_ProjectSettings_property_rendering/"
 "batching/options/single_rect_fallback>` - This is a faster way of drawing "
@@ -509,12 +500,12 @@ msgid ""
 "it's not recommended."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:329
+#: ../../docs/tutorials/optimization/batching.rst:325
 #, fuzzy
 msgid "rendering/batching/parameters"
 msgstr "Alterando Parâmetros de Importação"
 
-#: ../../docs/tutorials/optimization/batching.rst:331
+#: ../../docs/tutorials/optimization/batching.rst:327
 msgid ""
 ":ref:`max_join_item_commands <class_ProjectSettings_property_rendering/"
 "batching/parameters/max_join_item_commands>` - One of the most important "
@@ -526,7 +517,7 @@ msgid ""
 "the best value may be project dependent."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:339
+#: ../../docs/tutorials/optimization/batching.rst:335
 msgid ""
 ":ref:`colored_vertex_format_threshold "
 "<class_ProjectSettings_property_rendering/batching/parameters/"
@@ -537,7 +528,7 @@ msgid ""
 "commands, above which it switches to baked colors."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:347
+#: ../../docs/tutorials/optimization/batching.rst:343
 msgid ""
 ":ref:`batch_buffer_size <class_ProjectSettings_property_rendering/batching/"
 "parameters/batch_buffer_size>` - This determines the maximum size of a "
@@ -545,7 +536,7 @@ msgid ""
 "decreasing for mobile if RAM is at a premium."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:352
+#: ../../docs/tutorials/optimization/batching.rst:348
 msgid ""
 ":ref:`item_reordering_lookahead <class_ProjectSettings_property_rendering/"
 "batching/parameters/item_reordering_lookahead>` - Item reordering can help "
@@ -554,17 +545,17 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:359
+#: ../../docs/tutorials/optimization/batching.rst:355
 msgid "rendering/batching/lights"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:361
+#: ../../docs/tutorials/optimization/batching.rst:357
 msgid ""
 ":ref:`scissor_area_threshold <class_ProjectSettings_property_rendering/"
 "batching/lights/scissor_area_threshold>` - See light scissoring."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:365
+#: ../../docs/tutorials/optimization/batching.rst:361
 msgid ""
 ":ref:`max_join_items <class_ProjectSettings_property_rendering/batching/"
 "lights/max_join_items>` - Joining items before lighting can significantly "
@@ -573,11 +564,11 @@ msgid ""
 "to use here."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:373
+#: ../../docs/tutorials/optimization/batching.rst:369
 msgid "rendering/batching/debug"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:375
+#: ../../docs/tutorials/optimization/batching.rst:371
 msgid ""
 ":ref:`flash_batching <class_ProjectSettings_property_rendering/batching/"
 "debug/flash_batching>` - This is purely a debugging feature to identify "
@@ -587,18 +578,18 @@ msgid ""
 "export, only for testing."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:382
+#: ../../docs/tutorials/optimization/batching.rst:378
 msgid ""
 ":ref:`diagnose_frame <class_ProjectSettings_property_rendering/batching/"
 "debug/diagnose_frame>` - This will periodically print a diagnostic batching "
 "log to the Godot IDE / console."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:388
+#: ../../docs/tutorials/optimization/batching.rst:384
 msgid "rendering/batching/precision"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:390
+#: ../../docs/tutorials/optimization/batching.rst:386
 msgid ""
 ":ref:`uv_contract <class_ProjectSettings_property_rendering/batching/"
 "precision/uv_contract>` - On some hardware (notably some Android devices) "
@@ -608,18 +599,18 @@ msgid ""
 "coordinates to compensate for precision errors on devices."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:398
+#: ../../docs/tutorials/optimization/batching.rst:394
 msgid ""
 ":ref:`uv_contract_amount <class_ProjectSettings_property_rendering/batching/"
 "precision/uv_contract_amount>` - Hopefully, the default amount should cure "
 "artifacts on most devices, but this value remains adjustable just in case."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:406
+#: ../../docs/tutorials/optimization/batching.rst:402
 msgid "Diagnostics"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:408
+#: ../../docs/tutorials/optimization/batching.rst:404
 msgid ""
 "Although you can change parameters and examine the effect on frame rate, "
 "this can feel like working blindly, with no idea of what is going on under "
@@ -630,15 +621,15 @@ msgid ""
 "possible performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:416
+#: ../../docs/tutorials/optimization/batching.rst:412
 msgid "Reading a diagnostic"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:441
+#: ../../docs/tutorials/optimization/batching.rst:437
 msgid "This is a typical diagnostic."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:443
+#: ../../docs/tutorials/optimization/batching.rst:439
 msgid ""
 "**joined_item:** A joined item can contain 1 or more references to items "
 "(nodes). Generally, joined_items containing many references is preferable to "
@@ -647,7 +638,7 @@ msgid ""
 "item."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:448
+#: ../../docs/tutorials/optimization/batching.rst:444
 msgid ""
 "**batch R:** A batch containing rectangles. The second number is the number "
 "of rects. The second number in square brackets is the Godot texture ID, and "
@@ -656,150 +647,184 @@ msgid ""
 "``MULTI`` is good as it indicates successful batching."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:453
+#: ../../docs/tutorials/optimization/batching.rst:449
 msgid ""
 "**batch D:** A default batch, containing everything else that is not "
 "currently batched."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:457
+#: ../../docs/tutorials/optimization/batching.rst:453
 #, fuzzy
 msgid "Default batches"
 msgstr "Recursos padrão"
 
-#: ../../docs/tutorials/optimization/batching.rst:459
+#: ../../docs/tutorials/optimization/batching.rst:455
 msgid ""
 "The second number following default batches is the number of commands in the "
 "batch, and it is followed by a brief summary of the contents::"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:475
+#: ../../docs/tutorials/optimization/batching.rst:471
 msgid ""
 "You may see \"dummy\" default batches containing no commands; you can ignore "
 "those."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:478
+#: ../../docs/tutorials/optimization/batching.rst:474
 msgid "Frequently asked questions"
 msgstr "Perguntas Frequentes"
 
-#: ../../docs/tutorials/optimization/batching.rst:481
+#: ../../docs/tutorials/optimization/batching.rst:477
 msgid "I don't get a large performance increase when enabling batching."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:483
+#: ../../docs/tutorials/optimization/batching.rst:479
 msgid ""
 "Try the diagnostics, see how much batching is occurring, and whether it can "
 "be improved"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:485
+#: ../../docs/tutorials/optimization/batching.rst:481
 msgid "Try changing batching parameters in the Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:486
+#: ../../docs/tutorials/optimization/batching.rst:482
 msgid "Consider that batching may not be your bottleneck (see bottlenecks)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:489
+#: ../../docs/tutorials/optimization/batching.rst:485
 msgid "I get a decrease in performance with batching."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:491
+#: ../../docs/tutorials/optimization/batching.rst:487
 msgid ""
 "Try the steps described above to increase the number of batching "
 "opportunities."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:492
+#: ../../docs/tutorials/optimization/batching.rst:488
 msgid ""
 "Try enabling :ref:`single_rect_fallback "
 "<class_ProjectSettings_property_rendering/batching/options/"
 "single_rect_fallback>`."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:494
+#: ../../docs/tutorials/optimization/batching.rst:490
 msgid ""
 "The single rect fallback method is the default used without batching, and it "
 "is approximately twice as fast. However, it can result in flickering on some "
 "hardware, so its use is discouraged."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:497
+#: ../../docs/tutorials/optimization/batching.rst:493
 msgid ""
 "After trying the above, if your scene is still performing worse, consider "
 "turning off batching."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:501
+#: ../../docs/tutorials/optimization/batching.rst:497
 msgid "I use custom shaders and the items are not batching."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:503
+#: ../../docs/tutorials/optimization/batching.rst:499
 msgid ""
 "Custom shaders can be problematic for batching, see the custom shaders "
 "section"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:506
+#: ../../docs/tutorials/optimization/batching.rst:502
 msgid "I am seeing line artifacts appear on certain hardware."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:508
+#: ../../docs/tutorials/optimization/batching.rst:504
 msgid ""
 "See the :ref:`uv_contract <class_ProjectSettings_property_rendering/batching/"
 "precision/uv_contract>` project setting which can be used to solve this "
 "problem."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:513
+#: ../../docs/tutorials/optimization/batching.rst:509
 msgid "I use a large number of textures, so few items are being batched."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:515
+#: ../../docs/tutorials/optimization/batching.rst:511
 msgid ""
 "Consider using texture atlases. As well as allowing batching, these reduce "
 "the need for state changes associated with changing textures."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:519
+#: ../../docs/tutorials/optimization/batching.rst:515
 msgid "Appendix"
 msgstr ""
 
+#: ../../docs/tutorials/optimization/batching.rst:518
+msgid "Batched primitives"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:520
+msgid ""
+"Not all primitives can be batched. Batching is not guaranteed either, "
+"especially with primitives using an antialiased border. The following "
+"primitive types are currently available:"
+msgstr ""
+
 #: ../../docs/tutorials/optimization/batching.rst:524
-msgid "Light scissoring threshold calculation"
+msgid "RECT"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:525
+msgid "NINEPATCH (depending on wrapping mode)"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:526
+msgid "POLY"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:527
+msgid "LINE"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:529
+msgid ""
+"With non-batched primitives, you may be able to get better performance by "
+"drawing them manually with polys in a ``_draw()`` function. See :ref:"
+"`doc_custom_drawing_in_2d` for more information."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:536
+msgid "Light scissoring threshold calculation"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/batching.rst:538
 msgid ""
 "The actual proportion of screen pixel area used as the threshold is the :ref:"
 "`scissor_area_threshold <class_ProjectSettings_property_rendering/batching/"
 "lights/scissor_area_threshold>` value to the power of 4."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:531
+#: ../../docs/tutorials/optimization/batching.rst:543
 msgid "For example, on a screen size of 1920×1080, there are 2,073,600 pixels."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:533
+#: ../../docs/tutorials/optimization/batching.rst:545
 msgid "At a threshold of 1,000 pixels, the proportion would be::"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:538
+#: ../../docs/tutorials/optimization/batching.rst:550
 msgid ""
 "So a :ref:`scissor_area_threshold <class_ProjectSettings_property_rendering/"
 "batching/lights/scissor_area_threshold>` of ``0.15`` would be a reasonable "
 "value to try."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:542
+#: ../../docs/tutorials/optimization/batching.rst:554
 msgid ""
 "Going the other way, for instance with a :ref:`scissor_area_threshold "
 "<class_ProjectSettings_property_rendering/batching/lights/"
 "scissor_area_threshold>` of ``0.5``::"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/batching.rst:549
+#: ../../docs/tutorials/optimization/batching.rst:561
 msgid ""
 "If the number of pixels saved is greater than this threshold, the scissor is "
 "activated."
