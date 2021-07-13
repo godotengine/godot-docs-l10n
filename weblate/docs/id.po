@@ -28,6 +28,7 @@
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2021.
 # triarts <agung.triarta.h@gmail.com>, 2019.
+# undisputedgoose <diablodvorak@gmail.com>, 2021.
 # yusuf afandi <afandi.yusuf.04@gmail.com>, 2020.
 #
 msgid ""
@@ -35,8 +36,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-06-02 13:32+0200\n"
-"PO-Revision-Date: 2021-05-26 05:32+0000\n"
-"Last-Translator: fikrirozan <fikrirozanimadudin@gmail.com>\n"
+"PO-Revision-Date: 2021-07-05 18:38+0000\n"
+"Last-Translator: undisputedgoose <diablodvorak@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -44,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -1086,8 +1087,8 @@ msgid ""
 msgstr ""
 "Sejak Godot hanya memilki beberapa orang yang mengerjakan renderer, kami "
 "lebih memilih sedikit backend renderer untuk di rawat. Di atas itu, "
-"menggunakan satu API di semua platform  membolehkan untuk menjaga "
-"konsistensi dengan sedikit masalah tentang platform-specific."
+"menggunakan satu API di semua platform membolehkan untuk menjaga konsistensi "
+"dengan sedikit masalah tentang platform-specific."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -1095,9 +1096,9 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
-"Dijangka panjang, kami mungkin mengembangkan sebuah Direct3D renderer untuk "
-"Godot(khusuya untuk Xbox), tapi Vulkan dan OpenGL tetap bertahan sebagai "
-"backend rendering utama disemua platform, termasuk Windows."
+"Dalam jangka panjang, kami mungkin mengembangkan sebuah renderer Direct3D 12 "
+"untuk Godot(khususnya untuk Xbox), tapi Vulkan dan OpenGL tetap menjadi "
+"rendering backend utama disemua platform, termasuk Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
@@ -14275,7 +14276,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Masukkan Kunci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -14338,7 +14339,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
-msgstr ""
+msgstr "Aktifkan Mode Tampilan Bebas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -14346,7 +14347,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
-msgstr ""
+msgstr "Tampilan Bebas Kiri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
@@ -14359,7 +14360,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
-msgstr ""
+msgstr "Tampilan Bebas Kanan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
@@ -14371,7 +14372,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
-msgstr ""
+msgstr "Tampilan Bebas Maju"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
@@ -14379,7 +14380,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
-msgstr ""
+msgstr "Tampilan Bebas Mundur"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
@@ -14387,7 +14388,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
-msgstr ""
+msgstr "Tampilan Bebas Atas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
@@ -14395,7 +14396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
-msgstr ""
+msgstr "Tampilan Bebas Bawah"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
@@ -14403,7 +14404,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
-msgstr ""
+msgstr "Pengubah Kecepatan Tampilan Bebas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
@@ -14415,7 +14416,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
-msgstr ""
+msgstr "Pengubah Lambat Tampilan Bebas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
@@ -14464,7 +14465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Tempelkan Objek ke Lantai"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -14477,7 +14478,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Tampilan Atas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -14489,7 +14490,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Tampilan Bawah"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -14501,7 +14502,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Tampilan Depan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -14513,7 +14514,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Tampilan Belakang"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -14525,7 +14526,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Tampilan Kanan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -14537,7 +14538,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Tampilan Kiri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -14549,7 +14550,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Beralih Tampilan Ortogonal/Perspektif"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -14560,9 +14561,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Animasi"
+msgstr "Masukkan Kunci Animasi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -14574,7 +14574,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
-msgstr ""
+msgstr "Fokus asal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
@@ -14586,7 +14586,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
-msgstr ""
+msgstr "Pemilihan Fokus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
@@ -14643,9 +14643,8 @@ msgid "``spatial_editor/1_viewport``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
-#, fuzzy
 msgid "2 Viewports"
-msgstr "Viewports"
+msgstr "2 Tampilan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -14660,9 +14659,8 @@ msgid "``spatial_editor/2_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
-#, fuzzy
 msgid "2 Viewports (Alt)"
-msgstr "Viewports"
+msgstr "2 Tampilan (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -14677,9 +14675,8 @@ msgid "``spatial_editor/2_viewports_alt``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
-#, fuzzy
 msgid "3 Viewports"
-msgstr "Viewports"
+msgstr "3 Tampilan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -14754,7 +14751,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Salin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -15498,7 +15495,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Kembalikan Semula Pandangan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -15839,7 +15836,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Gandakan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -15916,7 +15913,7 @@ msgstr "AnimationTree(Daftar animasi)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Duplikat Pilihan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -15940,7 +15937,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "Hapus Pilihan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"

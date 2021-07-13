@@ -74,6 +74,7 @@
 # spesknight <m.sernesi@tiscali.it>, 2018-2020.
 # Ste d f <sdfilippo84@gmail.com>, 2018.
 # Stefano Merazzi <asso99@hotmail.com>, 2019.
+# The Pirate Dude <thepiratedude@protonmail.com>, 2021.
 # trollodel <supertutto01@gmail.com>, 2020.
 # Vinny Horgan <vinnyhorgan@gmail.com>, 2020.
 # xxssmaoxx <simon.dottor@gmail.com>, 2018.
@@ -83,8 +84,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-06-02 13:32+0200\n"
-"PO-Revision-Date: 2021-06-02 01:32+0000\n"
-"Last-Translator: Riteo Siuga <lorenzocerqua@tutanota.com>\n"
+"PO-Revision-Date: 2021-07-13 06:14+0000\n"
+"Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -92,7 +93,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -205,7 +206,6 @@ msgstr ""
 "sinistra."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
@@ -213,9 +213,9 @@ msgid ""
 "the top-level ``index.html`` in a web browser."
 msgstr ""
 "Puoi anche `scaricare una copia HTML <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ per la lettura "
-"offline (aggiornata ogni lunedì). Estrai l'archivio ZIP poi apri il livello "
-"superiore ``index.html`` in un browser web."
+"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ per "
+"la lettura offline (aggiornata ogni lunedì). Estrai l'archivio ZIP poi apri "
+"il livello superiore ``index.html`` in un browser web."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -1156,13 +1156,12 @@ msgstr ""
 "principali?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot intenzionalmente non include funzionalità che possono essere "
+"Godot non include intenzionalmente funzionalità che possono essere "
 "implementate da componenti aggiuntivi a meno che non siano utilizzate molto "
 "spesso. Un esempio di questo sarebbe una funzionalità avanzata di "
 "intelligenza artificiale."
@@ -1542,19 +1541,19 @@ msgstr ""
 "come esempio (se possibile)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "È possibile utilizzare Godot come libreria?"
+msgstr ""
+"È possibile utilizzare Godot per creare applicazioni che non siano giochi?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Le ridotte dimensioni di Godot possono renderlo un'alternativa adatta a "
-"framework come Electron o Qt."
+"Sì! Godot dispone di un ampio sistema di UI integrato, e la sua piccola "
+"dimensione di distribuzione può renderlo un'alternativa adatta a framework "
+"come Electron o Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -1562,12 +1561,20 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Quando si crea un'applicazione che non sia un gioco, assicurarsi di "
+"abilitare :ref:`modalità basso-processore "
+"<class_ProjectSettings_property_application/run/low_processor_mode>` nelle "
+"Impostazioni Progetto per diminuire l'uso di CPU e GPU."
 
 #: ../../docs/about/faq.rst:370
+#, fuzzy
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Detto questo, non raccomandiamo l'uso di Godot per la creazione di "
+"un'applicazione *mobile* poiché la modalità a basso uso processore non è "
+"ancora supportata sulle piattaforme mobili."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1575,6 +1582,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Controlla `Material Maker <https://github.com/RodZill4/material-maker>`__ e "
+"`Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ per esempi "
+"di applicazioni open source fatte con Godot."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -1606,10 +1616,12 @@ msgstr ""
 "Godot. Ciò renderà più difficile trovare le risposte alle tue domande."
 
 #: ../../docs/about/faq.rst:393
+#, fuzzy
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Quale toolkit di interfaccia utente usa Godot?"
 
 #: ../../docs/about/faq.rst:395
+#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1618,8 +1630,16 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot non usa un toolkit standard :abbr:`GUI (Graphical User Interface)` "
+"come GTK, Qt o wxWidgets. Invece, Godot usa il proprio toolkit di "
+"interfaccia utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è "
+"esposto sotto forma di nodi di controllo, che sono usati per visualizzare "
+"l'editor (che è scritto in C++). Questi nodi di controllo possono anche "
+"essere utilizzati in progetti da qualsiasi linguaggio di scripting "
+"supportato da Godot."
 
 #: ../../docs/about/faq.rst:402
+#, fuzzy
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
 "and have a consistent appearance across all platforms. On top of that, it "
@@ -1627,13 +1647,23 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Questo toolkit personalizzato permette di beneficiare dell'accelerazione "
+"hardware e di avere un aspetto coerente su tutte le piattaforme. Oltre a "
+"questo, non ha a che fare con le limitazioni della licenza LGPL che vengono "
+"con GTK o Qt. Infine, questo significa che Godot sta \"mangiando il suo "
+"stesso cibo per cani\" poiché l'editor stesso è uno degli utilizzatori più "
+"complessi del sistema UI di Godot."
 
 #: ../../docs/about/faq.rst:408
+#, fuzzy
 msgid ""
 "This custom UI toolkit :ref:`can't be used as a library "
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Questo toolkit UI personalizzato :ref:`non può essere usato come libreria "
+"<doc_faq_use_godot_as_library>`, ma puoi ancora :ref:`usare Godot per creare "
+"applicazioni non di gioco usando l'editor <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -2143,10 +2173,13 @@ msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:37
+#, fuzzy
 msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Server Linux e macOS senza testa "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -2691,10 +2724,13 @@ msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr "*GLES3:* Occlusione ambientale dello spazio dello schermo."
 
 #: ../../docs/about/list_of_features.rst:225
+#, fuzzy
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* debanding opzionale per evitare le bande di colore (efficace quando "
+"il rendering HDR è abilitato)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -2752,7 +2788,7 @@ msgstr "Antialiasing multi-campione (MSAA)."
 #: ../../docs/about/list_of_features.rst:245
 #, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antialiasing multi-campione (MSAA)."
+msgstr "Antialiasing approssimativo veloce (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -2817,8 +2853,7 @@ msgstr "Ragdolls."
 #: ../../docs/about/list_of_features.rst:279
 #, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Forme integrate: cuboide, sfera, capsula, cilindro (solo con fisica Bullet)."
+msgstr "Forme integrate: cuboide, sfera, capsula, cilindro."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -3044,10 +3079,13 @@ msgstr ""
 "telecamera in 3D."
 
 #: ../../docs/about/list_of_features.rst:354
+#, fuzzy
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Ingresso audio per registrare i microfoni con accesso in tempo reale "
+"utilizzando la classe AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -3202,9 +3240,12 @@ msgid "Pen/tablet input with pressure support."
 msgstr "Input penna/tablet con supporto della pressione."
 
 #: ../../docs/about/list_of_features.rst:408
+#, fuzzy
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Il supporto per l'input del gamepad, della tastiera e del mouse è "
+"disponibile anche su Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -3396,8 +3437,9 @@ msgstr ""
 "Supporto per annunci pubblicitari che utilizzano moduli di terze parti."
 
 #: ../../docs/about/list_of_features.rst:472
+#, fuzzy
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Supporto per l'incorporazione di sottoview su Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
@@ -3898,7 +3940,7 @@ msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 #: ../../docs/about/docs_changelog.rst:185
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Estensioni"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
@@ -4414,28 +4456,29 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "| unstable | *Focus attuale dello sviluppo (instabile).*"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
-msgstr ""
+msgstr "Q2 o Q3 2021"
 
 #: ../../docs/about/release_policy.rst:88
+#, fuzzy
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
 msgstr ""
+"|supported| *Beta.* Riceve nuove funzionalità e correzioni di bug durante lo "
+"sviluppo."
 
 #: ../../docs/about/release_policy.rst:91
 msgid "Godot 3.3"
 msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "April 2021"
-msgstr "Marzo/Aprile 2021"
+msgstr "Aprile 2021"
 
 #: ../../docs/about/release_policy.rst:91
 #, fuzzy
@@ -4443,8 +4486,8 @@ msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
 msgstr ""
-"|supported| Riceve correzioni a bug, problemi di sicurezza e di supporto di "
-"piattaforme, insieme a miglioramenti di usabilità retro compatibili."
+"|supported| Riceve correzioni per bug, problemi di sicurezza e di supporto "
+"di piattaforme, insieme a miglioramenti di usabilità retro compatibili."
 
 #: ../../docs/about/release_policy.rst:94
 msgid "Godot 3.2"
@@ -4459,7 +4502,9 @@ msgstr "Gennaio 2020"
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
-msgstr "|eol| Non più supportato (ultimo aggiornamento: 3.0.6)."
+msgstr ""
+"|eol| Non più supportato in quanto completamente sostituito dalla versione "
+"3.3 compatibile (ultimo aggiornamento: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:97
 msgid "Godot 3.1"
@@ -4820,8 +4865,8 @@ msgid ""
 "`Ctrl + F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
 "Userai lo **Spazio di Lavoro 2D** per tutti i tipi di giochi. Oltre ai "
-"giochi 2D, è qui che potrai creare le tue interfacce. Premi :kbd:`F1` (o :"
-"kbd:`Alt + 1` su macOS) per accedervi."
+"giochi 2D, è qui che potrai creare le tue interfacce. Premi :kbd:`Ctrl + F1` "
+"(o :kbd:`Alt + 1` su macOS) per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 #, fuzzy
@@ -4831,8 +4876,8 @@ msgid ""
 "it."
 msgstr ""
 "Nello **Spazio di lavoro 3D** puoi utilizzare modelli, luci e progettare "
-"livelli per giochi 3D. Premi :kbd:`F2` (oppure :kbd:`Alt + 2` su macOS) per "
-"accedervi."
+"livelli per giochi 3D. Premi :kbd:`Ctrl + F2` (oppure :kbd:`Alt + 2` su "
+"macOS) per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
@@ -4858,9 +4903,9 @@ msgid ""
 "reference."
 msgstr ""
 "Lo spazio di lavoro **Script** è un editor di codice completo, con un "
-"debugger, auto-completamento e documentazione integrata. Premi :kbd:`F3` (o :"
-"kbd:`Alt + 3` su macOS) per accedervi, e :kbd:`F4` per cercare nella "
-"documentazione."
+"debugger, ricco auto-completamento e documentazione integrata. Premi :kbd:"
+"`Ctrl + F3` (o :kbd:`Alt + 3` su macOS) per accedervi, e :kbd:`Shift + F1` "
+"per cercare nella documentazione."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
@@ -8867,10 +8912,10 @@ msgid ""
 "**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
-"Vogliamo anche assicurarci che il gioco sia in scala costante su schermi di "
-"dimensioni diverse, quindi nelle impostazioni del progetto andate su "
-"**Visualizza**, poi cliccate su **Finestra**. Nelle opzioni **Stretch**, "
-"impostare **Mode** su ``2d`` e **Aspect** su ``keep``."
+"Vogliamo anche assicurarci che il gioco venga scalato coerentemente su "
+"schermi di dimensioni diverse, quindi nelle impostazioni del progetto andate "
+"su **Display**, poi cliccate su **Window**. Nelle opzioni **Stretch**, "
+"impostate **Mode** su ``2d`` e **Aspect** su ``keep``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
@@ -8982,7 +9027,7 @@ msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
-"Crea un nuovo pofilo di esportazione cliccando su \"Aggiungi.....\" e "
+"Crea un nuovo profilo di esportazione cliccando su **Aggiungi.....** e "
 "selezionando una piattaforma. È possibile creare quanti profili tu voglia, "
 "con impostazioni diverse."
 
@@ -9039,11 +9084,11 @@ msgid ""
 "you want to make. Then click **Export Project** and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
-"L'esportazione su PC è la stessa per tuttu e tre i sistemi operativi "
-"supportati. Apri la finestra di esportazione e clicca su \"Add.....\" per "
-"creare i preset che desideri. Quindi fai clic su \"Esporta progetto\" e "
+"L'esportazione su PC è la stessa per tutti e tre i sistemi operativi "
+"supportati. Apri la finestra di esportazione e clicca su \"Aggiungi.....\" "
+"per creare i preset che desideri. Quindi fai clic su \"Esporta progetto\" e "
 "scegli un nome e una cartella di destinazione. Scegli una posizione al di "
-"fuori dalla cartella del progetto."
+"*fuori* dalla cartella del progetto."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #, fuzzy
@@ -9059,10 +9104,10 @@ msgid ""
 "either case, the compressed file contains a macOS ``.app`` that you can "
 "double-click and run."
 msgstr ""
-"Quando esporti per macOS, tramite un computer macOS, otterrai un file '."
-"dmg', mentre se usi Linux o Windows otterrai un file '.zip'. In entrambi i "
-"casi, il file compresso contiene un `.app` per macOS che è possibile "
-"eseguire con un doppio click."
+"Quando si esporta per macOS, se si esporta da un computer macOS, ci si "
+"ritrova con un file ``.dmg``, mentre usando Linux o Windows si produce un ``."
+"zip``. In entrambi i casi, il file compresso contiene un ``.app`` per macOS "
+"che puoi fare doppio clic ed eseguire."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
 #, fuzzy
@@ -9105,8 +9150,8 @@ msgid ""
 "Open JDK (**version 8 is required**, more recent versions won't work): "
 "https://adoptopenjdk.net/index.html"
 msgstr ""
-"Aprire JDK (è richiesta la versione 8, le versioni più recenti non "
-"funzionano): https://adoptopenjdk.net/index.html"
+"Aprire JDK (**è richiesta la versione 8**, le versioni più recenti non "
+"funzioneranno): https://adoptopenjdk.net/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
 #, fuzzy
@@ -9148,9 +9193,12 @@ msgid ""
 "your game is in landscape mode (i.e. the window width in pixels is greater "
 "than the window height), leave this on **Landscape**."
 msgstr ""
-"Ora sei pronto per l'esportazione. Clicca su *Project -> Export* e aggiungi "
-"un preset per Android (vedi sopra). Seleziona i preset per Android e sotto "
-"*Opzioni* vai su *Schermo* e imposta *Orientamento* su \"Ritratto\"."
+"Ora sei pronto per esportare. Clicca su **Progetto -> Esporta** e aggiungi "
+"un preset per Android (vedi sopra). Seleziona il preset Android appena "
+"aggiunto. Sotto **Opzioni**, vai su **Schermo** e imposta **Orientamento** "
+"su **Portrait**. Se il tuo gioco è in modalità paesaggio (cioè la larghezza "
+"della finestra in pixel è maggiore dell'altezza della finestra), lascia "
+"questo su **Landscape**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:364
 #, fuzzy
@@ -9206,10 +9254,10 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "**Membership** section."
 msgstr ""
-"Prima dell'esportazione, è necessario completare alcune impostazioni per la "
-"corretta esportazione del progetto. In primo luogo, ''l'Id team dell'App "
-"Store\", che puoi trovare accedendo al tuo account sviluppatore Apple e "
-"cercando nella sezione \"Appartenenza\"."
+"Prima di esportare, ci sono alcune impostazioni che *devono* essere "
+"completate affinché il progetto venga esportato con successo. In primo "
+"luogo, l'**App Store Team Id**, che potete trovare accedendo al vostro "
+"account sviluppatore Apple e cercando nella sezione **Membership**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:393
 msgid "You must also provide icons and splash screen images as shown below:"
@@ -9220,8 +9268,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
 #, fuzzy
 msgid "Click **Export Project** and select a destination folder."
-msgstr ""
-"Fare clic su \"Esporta progetto\" e selezionare una cartella di destinazione."
+msgstr "Clicca su **Export Project** e seleziona una cartella di destinazione."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
 msgid ""
@@ -9238,10 +9285,10 @@ msgid ""
 "Xcode build procedure is beyond the scope of this tutorial. See https://help."
 "apple.com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
-"Ora è possibile aprire il progetto in Xcode e costruire il progetto per iOS. "
-"La procedura di compilazione di Xcode va oltre lo scopo di questo tutorial. "
-"Visionare https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 per "
-"ulteriori informazioni."
+"Ora potete aprire il progetto in Xcode e costruire il progetto per iOS. La "
+"procedura di compilazione di Xcode va oltre lo scopo di questo tutorial. "
+"Vedere https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 per maggiori "
+"informazioni."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:410
 msgid "HTML5 (web)"
@@ -9253,8 +9300,8 @@ msgid ""
 "Click **Export Project** on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
-"Fare clic su \"Esporta progetto\" sul preset HTML5. Non è necessario "
-"modificare le impostazioni predefinite."
+"Fare clic su **Export Project** sul preset HTML5. Non abbiamo bisogno di "
+"cambiare nessuna delle impostazioni predefinite."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:415
 msgid ""
@@ -9271,8 +9318,8 @@ msgid ""
 "server. If you don't have one set up on your computer, you can search online "
 "to find suggestions for your specific OS."
 msgstr ""
-"La visualizzazione del file `.html` nel tuo browser ti permette di giocare. "
-"Tuttavia, non è possibile aprire il file direttamente, deve essere servito "
+"Visualizzando il file ``.html`` nel tuo browser puoi giocare al gioco. "
+"Tuttavia, non puoi aprire il file direttamente. Invece, deve essere servito "
 "da un server web. Se non ne hai uno impostato sul tuo computer, puoi cercare "
 "online per trovare suggerimenti per il tuo specifico sistema operativo."
 
@@ -9283,8 +9330,9 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
-"Usa il tuo browser per aprire l'indirizzo URL del file html. Il caricamento "
-"potrebbe impiegare qualche secondo prima di mostrare la schermata d'avvio."
+"Punta il tuo browser all'URL dove hai messo il file HTML. Potresti dover "
+"aspettare qualche istante mentre il gioco viene caricato prima di vedere la "
+"schermata iniziale."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:430
 #, fuzzy
@@ -11665,6 +11713,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
+#, fuzzy
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -11673,8 +11722,16 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
+"Entrerai nella risorsa ``Dynamic Font``. Apri la categoria ``Font``` e "
+"clicca sul campo accanto a ``Font Data``. Clicca sul pulsante ``Carica``. "
+"Nel browser dei file, naviga fino alla cartella assets/font e fai doppio "
+"clic su ``Comfortaa-Bold.ttf`` per aprirlo. Dovresti vedere l'aggiornamento "
+"del font nella finestra. Apri la categoria delle impostazioni per cambiare "
+"la dimensione del carattere. Imposta la proprietà ``Size`` ad un valore più "
+"alto, come ``24`` o ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
+#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -11685,10 +11742,20 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
+"Ora abbiamo bisogno che la linea di base del testo, il bordo inferiore del "
+"numero, si allinei con la texture HP sulla sinistra. Per farlo, sempre nella "
+"risorsa ``DynamicFont``, puoi modificare la proprietà ``Bottom`` sotto la "
+"categoria ``Extra Spacing``. Aggiunge un po' di imbottitura in basso al "
+"testo. Clicca sul nodo ``Number`` nella scheda Scene per tornare alle "
+"proprietà del nodo e cambia il ``Valign`` in ``Bottom``. Per regolare la "
+"linea di base del testo, clicca nuovamente sul campo del font sotto la "
+"categoria ``Custom Font`` e regola la proprietà ``Bottom`` fino a quando il "
+"testo si allinea con il nodo ``Title``. Ho usato un valore di ``2`` pixel."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
+#, fuzzy
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "Con un valore Bottom di 2 pixel, il Numero si allinea con il Titolo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
@@ -11712,6 +11779,7 @@ msgstr ""
 "tutto ciò di cui abbiamo bisogno."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
+#, fuzzy
 msgid ""
 "Select the Bar node and add a ``TextureProgress`` inside of it. Name it "
 "``Gauge``. In the inspector unfold the ``Textures`` section. Head to the "
@@ -11720,6 +11788,12 @@ msgid ""
 "onto the ``Progress`` slot. Under the ``Range`` class in the inspector, "
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
+"Selezionate il nodo Bar e aggiungete una ``TextureProgress`` al suo interno. "
+"Chiamatelo ``Gauge``. Nell'ispettore dispiega la sezione ``Texture``. Vai al "
+"dock FileSystem e trascina la texture ``lifebar_bg.png`` sullo slot "
+"``Under``. Fai lo stesso con l'immagine ``lifebar_fill.png`` e trascinala "
+"sullo slot ``Progress``. Sotto la classe ``Range`` nell'ispettore, cambia la "
+"proprietà ``Value`` a ``50`` per vedere l'indicatore riempirsi."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
@@ -11747,14 +11821,21 @@ msgstr ""
 "barra. Quindi lo duplicheremo e lo useremo come modello."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
+#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
 "duplicate it. Drag and drop the new node under the ``Counters`` "
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
+"Sotto il nodo ``Bar``, seleziona ``Count`` e premi :kbd:`Ctrl + D` per "
+"duplicarlo. Trascina il nuovo nodo sotto la ``Counters`` ``HBoxContainer`` "
+"in fondo all'albero della scena. Dovresti vedere che si ridimensiona "
+"automaticamente. Non preoccuparti di questo per ora, sistemeremo le "
+"dimensioni presto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
+#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -11763,12 +11844,19 @@ msgid ""
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
 msgstr ""
+"Rinomina il nodo ``Count2`` in ``Counter``. A differenza delle barre, "
+"vogliamo che il numero sia a sinistra e un'icona a destra. La configurazione "
+"è la stessa: abbiamo bisogno di uno sfondo (un ``NinePatchRect``), il titolo "
+"e i nodi numero. Il nodo ``Title`` è un ``TextureRect``, quindi è quello che "
+"ci serve per visualizzare l'icona. Nell'albero della scena, seleziona il "
+"nodo ``Title`` e rinominalo in ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
 msgstr "Ecco come dovrebbe apparire il tuo albero dei nodi"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
+#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -11777,12 +11865,21 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
+"Con il nodo ``Icon`` selezionato, nell'ispettore, scorri in alto per vedere "
+"lo slot ``Texture``. Vai al dock FileSystem sulla sinistra e seleziona la "
+"``bombs_icon.png``. Trascinala e rilasciala nello slot ``Texture``. Nella "
+"scheda Scene seleziona entrambi i nodi ``Icon`` e ``Number``. Clicca sul "
+"menu Layout nella barra degli strumenti nella parte superiore della finestra "
+"e seleziona ``Full Rect``. Entrambi i nodi si aggiorneranno per adattarsi "
+"alla dimensione dello ``Sfondo``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
+#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
-msgstr ""
+msgstr "I nodi si ancorano all'intero Sfondo, ma la loro posizione è spenta"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
+#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -11790,10 +11887,16 @@ msgid ""
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
+"Cambiamo le proprietà di allineamento del ``Number`` per spostarlo a "
+"sinistra e al centro dello ``Sfondo``. Seleziona il nodo ``Number``, cambia "
+"la sua proprietà ``Align`` a sinistra e la proprietà ``Valign`` al centro. "
+"Poi ridimensiona un po' il suo bordo sinistro per aggiungere del padding tra "
+"il bordo sinistro dello ``Sfondo`` e il testo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
+#, fuzzy
 msgid "The Number node aligned to the left and center"
-msgstr ""
+msgstr "Il nodo Number allineato a sinistra e al centro"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
 msgid ""
@@ -13523,8 +13626,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
+#, fuzzy
 msgid "File system"
-msgstr ""
+msgstr "File system"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
 msgid ""
@@ -13725,7 +13829,6 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:33
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:224
-#, fuzzy
 msgid "SceneTree"
 msgstr "Albero della scena"
 
@@ -13908,7 +14011,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
-#, fuzzy
 msgid "Singletons (AutoLoad)"
 msgstr "Singletons (AutoLoad)"
 
@@ -15147,8 +15249,9 @@ msgid "Some example Exec Flags for various editors include:"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
+#, fuzzy
 msgid "Exec Flags"
-msgstr ""
+msgstr "Bandiere di esecuzione"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "Geany/Kate"
@@ -15424,7 +15527,7 @@ msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr "Apri scena"
+msgstr "Apri una scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -15440,7 +15543,7 @@ msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr "Chiudi scena"
+msgstr "Chiudi la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -15474,7 +15577,7 @@ msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr "Salva scena"
+msgstr "Salva la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -15620,7 +15723,7 @@ msgstr "``editor/file_quit``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr "Esci e torna alla lista progetti"
+msgstr "Esci e torna alla lista dei progetti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -15635,6 +15738,7 @@ msgid "``editor/quit_to_project_list``"
 msgstr "``editor/quit_to_project_list``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
+#, fuzzy
 msgid "Take Screenshot"
 msgstr "Acquisisci una schermata"
 
@@ -15652,7 +15756,7 @@ msgstr "``editor/take_screenshot``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr "Abilita/Disabilita modalità a schermo intero"
+msgstr "Commuta la modalità a schermo intero"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -15719,7 +15823,7 @@ msgstr "``editor/stop``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr "Esegui scena"
+msgstr "Esegui la scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -15736,7 +15840,7 @@ msgstr "``editor/play_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr "Avvia scena personalizzata"
+msgstr "Avvia una scena personalizzata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -15754,7 +15858,7 @@ msgstr "``editor/play_custom_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr "Espandi Pannello Inferiore"
+msgstr "Espandi il pannello inferiore"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -15911,8 +16015,9 @@ msgid "``canvas_item_editor/ruler_mode``"
 msgstr "``canvas_item_editor/ruler_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
+#, fuzzy
 msgid "Use Smart Snap"
-msgstr "Usa lo Snap intelligente"
+msgstr "Usa lo scatto intelligente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -15923,8 +16028,9 @@ msgid "``canvas_item_editor/use_smart_snap``"
 msgstr "``canvas_item_editor/use_smart_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
+#, fuzzy
 msgid "Use Grid Snap"
-msgstr "Usa Griglia Magnetica"
+msgstr "Usa la griglia magnetica"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -16103,8 +16209,9 @@ msgid "3D / Spatial Editor"
 msgstr "Editor 3D / Spatial"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
+#, fuzzy
 msgid "Toggle Freelook"
-msgstr "Abilita/Disabilita Vista libera"
+msgstr "Commuta la vista libera"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -16221,16 +16328,18 @@ msgid "``spatial_editor/local_coords``"
 msgstr "``spatial_editor/local_coords``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
+#, fuzzy
 msgid "Use Snap"
-msgstr "Usa Snap"
+msgstr "Scatta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
 msgstr "``spatial_editor/snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
+#, fuzzy
 msgid "Snap Object to Floor"
-msgstr "Posa l'oggetto sul suolo"
+msgstr "Scatta l'oggetto sul suolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -16746,7 +16855,7 @@ msgstr "``script_text_editor/delete_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr "Attiva/Disattiva Commento"
+msgstr "Commuta i commenti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -16923,7 +17032,7 @@ msgstr "``script_text_editor/auto_indent``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr "Abilita/Disabilita i segnalibri"
+msgstr "Commuta i segnalibri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -16988,7 +17097,7 @@ msgstr "``script_text_editor/goto_line``"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr "Attiva/Disattiva Punto D'Interruzione"
+msgstr "Commuta la riga corrente come punto d'interruzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -17389,7 +17498,7 @@ msgstr "Debugger"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr "Passo dentro all'istruzione"
+msgstr "Fai un passo all'interno"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -17401,7 +17510,7 @@ msgstr "``debugger/step_into``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr "Passo successivo"
+msgstr "Fai un passo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -17477,7 +17586,7 @@ msgstr "``file_dialog/toggle_hidden_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr "Commuta preferito"
+msgstr "Commuta lo stato di preferito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -17574,9 +17683,8 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr "``file_dialog/move_favorite_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
-#, fuzzy
 msgid "FileSystem Dock"
-msgstr "Riquadro del FileSystem"
+msgstr "Pannello del file system"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -19204,9 +19312,8 @@ msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
-#, fuzzy
 msgid "Comparisons"
-msgstr "Confronti"
+msgstr "Comparazioni"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``in``"
@@ -19325,7 +19432,6 @@ msgid "``\"Hello\"``, ``\"Hi\"``"
 msgstr "``\"Ciao\"``, ``\"Salve\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
-#, fuzzy
 msgid "Strings"
 msgstr "Stringhe"
 
@@ -19366,10 +19472,13 @@ msgid "Comments"
 msgstr "Commenti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
+#, fuzzy
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr ""
+"Qualsiasi cosa da un ``#`` alla fine della linea è ignorata ed è considerata "
+"un commento."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:325
 #, fuzzy
@@ -19391,8 +19500,10 @@ msgid "Basic built-in types"
 msgstr "Tipi base incorporati (built-in)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
+#, fuzzy
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr ""
+"Una variabile in GDScript può essere assegnata a diversi tipi built-in."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
@@ -19561,8 +19672,9 @@ msgid "GDScript also supports :ref:`doc_gdscript_printf`."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
+#, fuzzy
 msgid "Vector built-in types"
-msgstr ""
+msgstr "Tipi vettoriali incorporati"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ":ref:`Vector2 <class_Vector2>`"
@@ -19609,10 +19721,13 @@ msgid ":ref:`Plane <class_Plane>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
+#, fuzzy
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"Tipo di piano 3D in forma normalizzata che contiene un campo vettoriale "
+"``normale`` e una distanza scalare ``d``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
 msgid ":ref:`Quat <class_Quat>`"
@@ -19655,13 +19770,16 @@ msgid ":ref:`Transform <class_Transform>`"
 msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
+#, fuzzy
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3D Transform contiene un campo Basis ``basis`` e un campo Vector3 ``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
+#, fuzzy
 msgid "Engine built-in types"
-msgstr ""
+msgstr "Tipi integrati del motore"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`Color <class_Color>`"
@@ -19680,30 +19798,38 @@ msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:468
+#, fuzzy
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
+"Percorso compilato di un nodo usato principalmente nel sistema delle scene. "
+"Può essere facilmente assegnato a, e da, una stringa."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
+#, fuzzy
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"ID risorsa (RID). I server usano RID generici per fare riferimento a dati "
+"opachi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
 msgid ":ref:`Object <class_Object>`"
 msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
+#, fuzzy
 msgid "Base class for anything that is not a built-in type."
-msgstr ""
+msgstr "Classe base per tutto ciò che non è un tipo incorporato."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:482
+#, fuzzy
 msgid "Container built-in types"
-msgstr ""
+msgstr "Tipi di contenitori incorporati"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`Array <class_Array>`"
@@ -19727,40 +19853,55 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:508
+#, fuzzy
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: Un array di byte (interi da 0 a "
+"255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
+#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Un array di interi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
+#, fuzzy
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
-msgstr ""
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: Un array di float."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:511
+#, fuzzy
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
-msgstr ""
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: Un array di stringhe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:512
+#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Un array di oggetti :ref:"
+"`Vector2 <class_Vector2>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:513
+#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Un array di oggetti :ref:"
+"`Vector3 <class_Vector3>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:514
+#, fuzzy
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Un array di oggetti :ref:"
+"`Color <class_Color>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:517
 msgid ":ref:`Dictionary <class_Dictionary>`"
@@ -19780,10 +19921,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
+#, fuzzy
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"Per aggiungere una chiave a un dizionario esistente, accedervi come una "
+"chiave esistente e assegnarle::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
 msgid ""
@@ -19796,7 +19940,6 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
-#, fuzzy
 msgid "Data"
 msgstr "Dati"
 
@@ -19809,11 +19952,15 @@ msgid "Variables"
 msgstr "Variabili"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
+#, fuzzy
 msgid ""
 "Variables can exist as class members or local to functions. They are created "
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
+"Le variabili possono esistere come membri di classe o locali alle funzioni. "
+"Sono create con la parola chiave ``var`` e possono, opzionalmente, essere "
+"assegnate ad un valore al momento dell'inizializzazione."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid ""
@@ -19948,7 +20095,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
-#, fuzzy
 msgid "Enums"
 msgstr "Enumerazioni"
 
@@ -20087,16 +20233,25 @@ msgid "if/else/elif"
 msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
+#, fuzzy
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
 "Parenthesis around conditions are allowed, but not required. Given the "
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"Le condizioni semplici sono create usando la sintassi ``if``/`else``/"
+"`elif``. Le parentesi intorno alle condizioni sono permesse, ma non "
+"richieste. Data la natura dell'indentazione basata sulla tabulazione, "
+"``elif`` può essere usato al posto di ``else``/`if`` per mantenere un "
+"livello di indentazione."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
+#, fuzzy
 msgid "Short statements can be written on the same line as the condition::"
 msgstr ""
+"Le dichiarazioni brevi possono essere scritte sulla stessa linea della "
+"condizione::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
 msgid ""
@@ -20105,10 +20260,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"I cicli semplici sono creati usando la sintassi ``while``. I cicli possono "
+"essere interrotti usando ``break`` o continuati usando ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
 msgid ""
@@ -20148,8 +20306,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
+#, fuzzy
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Cambia ``default`` con un singolo trattino basso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 #, fuzzy
@@ -20165,8 +20324,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
+#, fuzzy
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Ci sono 6 tipi di modelli:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid "Constant pattern"
@@ -20189,8 +20349,10 @@ msgid "Wildcard pattern"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
+#, fuzzy
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
+"Questo schema corrisponde a tutto. È scritto come un singolo trattino basso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
@@ -20240,10 +20402,13 @@ msgid "Dictionary pattern"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
+#, fuzzy
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Funziona allo stesso modo del modello di array. Ogni chiave deve essere un "
+"pattern costante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid ""
@@ -20258,8 +20423,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
+#, fuzzy
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Ogni subpattern deve essere separato da una virgola."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
@@ -20469,7 +20635,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
-#, fuzzy
 msgid "Exports"
 msgstr "Esportazioni"
 
@@ -21120,8 +21285,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
+#, fuzzy
 msgid "Duck typing"
-msgstr ""
+msgstr "Tipizzazione ad anatra (duck typing)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -21541,10 +21707,13 @@ msgstr "**Male**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:81
+#, fuzzy
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
+"Usate 2 livelli di rientro per distinguere le linee di continuazione dai "
+"normali blocchi di codice."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
@@ -21579,8 +21748,11 @@ msgid "Surround functions and class definitions with two blank lines:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
+#, fuzzy
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
+"Usate una riga vuota all'interno delle funzioni per separare le sezioni "
+"logiche."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
@@ -22794,20 +22966,26 @@ msgid "Integer"
 msgstr "Numero intero"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
+#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"Imposta **padding**. Imbottito con spazi o con zeri se l'intero inizia con "
+"``0`` in un segnaposto intero. Se usato dopo ``.``, vedi ``.``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
 msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
+#, fuzzy
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"Prima di ``f```, imposta **precisione** a 0 cifre decimali. Può essere "
+"seguito da numeri per cambiare. Imbottito con zeri."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 #, fuzzy
@@ -23362,7 +23540,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
-#, fuzzy
 msgid "Ports"
 msgstr "Porte"
 
@@ -23656,7 +23833,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
-#, fuzzy
 msgid "Engine Singleton"
 msgstr "Engine Singleton"
 
@@ -23693,7 +23869,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
-#, fuzzy
 msgid "Scene Node"
 msgstr "Scene Node"
 
@@ -23753,7 +23928,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
-#, fuzzy
 msgid "Comment"
 msgstr "Commento"
 
@@ -23776,7 +23950,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
-#, fuzzy
 msgid "Condition"
 msgstr "Condizione"
 
@@ -23789,7 +23962,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
-#, fuzzy
 msgid "Iterator"
 msgstr "Iteratore"
 
@@ -23822,7 +23994,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
-#, fuzzy
 msgid "Sequence"
 msgstr "Sequenza"
 
@@ -23850,7 +24021,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
-#, fuzzy
 msgid "Switch"
 msgstr "Switch"
 
@@ -23873,7 +24043,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
-#, fuzzy
 msgid "Built-In"
 msgstr "Incorporato"
 
@@ -23898,7 +24067,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
-#, fuzzy
 msgid "Call"
 msgstr "Chiamata"
 
@@ -23909,7 +24077,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
-#, fuzzy
 msgid "Constructors"
 msgstr "Costruttori"
 
@@ -23921,7 +24088,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
-#, fuzzy
 msgid "Destructor"
 msgstr "Distruttore"
 
@@ -23943,7 +24109,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
-#, fuzzy
 msgid "Get/Set"
 msgstr "Ottieni/Imposta"
 
@@ -23954,7 +24119,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
-#, fuzzy
 msgid "Wait"
 msgstr "Aspettare"
 
@@ -23978,7 +24142,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
-#, fuzzy
 msgid "Yield Signal"
 msgstr "Yield Signal"
 
@@ -23987,7 +24150,6 @@ msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
-#, fuzzy
 msgid "Index"
 msgstr "Indice"
 
@@ -24338,7 +24500,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
-#, fuzzy
 msgid "In Visual Studio Code:"
 msgstr "In Visual Studio Code:"
 
@@ -25088,7 +25249,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:212
-#, fuzzy
 msgid "Basis"
 msgstr "Base"
 
@@ -25145,7 +25305,6 @@ msgid "``Rotation``"
 msgstr "``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:243
-#, fuzzy
 msgid "Plane"
 msgstr "Piano"
 
@@ -25336,9 +25495,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
-#, fuzzy
 msgid "Variant"
-msgstr "Variante"
+msgstr "Variant"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -26049,7 +26207,6 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
-#, fuzzy
 msgid "Placeholder"
 msgstr "Segnaposto"
 
@@ -26852,7 +27009,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:112
-#, fuzzy
 msgid "Normal Map"
 msgstr "Normal Map"
 
@@ -26893,7 +27049,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 #: ../../docs/tutorials/3d/spatial_material.rst:30
-#, fuzzy
 msgid "Flags"
 msgstr "Bandiere"
 
@@ -27191,7 +27346,6 @@ msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
-#, fuzzy
 msgid "Trimming"
 msgstr "Rifinitura"
 
@@ -27208,7 +27362,6 @@ msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:73
-#, fuzzy
 msgid "Looping"
 msgstr "Looping"
 
@@ -27805,7 +27958,6 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Storage"
 msgstr "Archiviazione"
 
@@ -27880,7 +28032,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
-#, fuzzy
 msgid "Meshes"
 msgstr "Meshes"
 
@@ -27985,8 +28136,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
+#, fuzzy
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Garantire le tangenti"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
 msgid ""
@@ -30948,7 +31100,6 @@ msgstr ""
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:7
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:205
-#, fuzzy
 msgid "Threads"
 msgstr "Discussioni"
 
@@ -31068,8 +31219,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+#, fuzzy
 msgid "Clipboard"
-msgstr ""
+msgstr "Appunti"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
@@ -31085,8 +31237,9 @@ msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
+#, fuzzy
 msgid "Gamepads"
-msgstr ""
+msgstr "Gamepads"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
 msgid ""
@@ -33879,7 +34032,6 @@ msgid "How can these problems be solved in a single scene tree?"
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
-#, fuzzy
 msgid "CanvasLayers"
 msgstr "CanvasLayers"
 
@@ -34721,7 +34873,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
-#, fuzzy
 msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
 
@@ -36502,8 +36653,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
+#, fuzzy
 msgid "Spatial node"
-msgstr ""
+msgstr "Nodo Spatial"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -36523,8 +36675,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
+#, fuzzy
 msgid "3D content"
-msgstr ""
+msgstr "Contenuto 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -36536,8 +36689,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
+#, fuzzy
 msgid "DCC-created models"
-msgstr ""
+msgstr "Modelli creati da DCC"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
@@ -36555,8 +36709,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
+#, fuzzy
 msgid "Generated geometry"
-msgstr ""
+msgstr "Geometria generata"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
@@ -36577,8 +36732,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
+#, fuzzy
 msgid "Immediate geometry"
-msgstr ""
+msgstr "Geometria immediata"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
@@ -36625,8 +36781,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
+#, fuzzy
 msgid "3D viewport"
-msgstr ""
+msgstr "Riquadro di visualizzazione 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
@@ -36643,8 +36800,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
+#, fuzzy
 msgid "Coordinate system"
-msgstr ""
+msgstr "Sistema di coordinate"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
@@ -36712,8 +36870,9 @@ msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
+#, fuzzy
 msgid "View menu"
-msgstr ""
+msgstr "Visualizza menu"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
@@ -36733,8 +36892,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
+#, fuzzy
 msgid "Default environment"
-msgstr ""
+msgstr "Ambiente predefinito"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
@@ -38338,8 +38498,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
+#, fuzzy
 msgid "Light nodes"
-msgstr ""
+msgstr "Nodi di luce"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
@@ -38453,8 +38614,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:70
+#, fuzzy
 msgid "Directional light"
-msgstr ""
+msgstr "Luce direzionale"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:72
 msgid ""
@@ -38580,8 +38742,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:146
+#, fuzzy
 msgid "Omni light"
-msgstr ""
+msgstr "Luce omnidirezionale"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:148
 msgid ""
@@ -38633,8 +38796,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:182
+#, fuzzy
 msgid "Spot light"
-msgstr ""
+msgstr "Riflettore"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:184
 msgid ""
@@ -39294,8 +39458,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:107
+#, fuzzy
 msgid "Checking UV2"
-msgstr ""
+msgstr "Controllo di UV2"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:109
 msgid ""
@@ -39640,8 +39805,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
+#, fuzzy
 msgid "Ambient Light"
-msgstr ""
+msgstr "Luce ambientale"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
@@ -40452,8 +40618,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:76
+#, fuzzy
 msgid "Using GridMap"
-msgstr ""
+msgstr "Usare GridMap"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
@@ -40757,7 +40924,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:60
-#, fuzzy
 msgid "CSGPolygon"
 msgstr "CSGPolygon"
 
@@ -40816,7 +40982,6 @@ msgid "every edge must connect to only two other faces."
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:94
-#, fuzzy
 msgid "CSGCombiner"
 msgstr "CSGCombiner"
 
@@ -41101,16 +41266,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/index.rst:2
+#, fuzzy
 msgid "FPS tutorial"
-msgstr ""
+msgstr "Tutorial FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
 msgstr "Parte 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
+#, fuzzy
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Introduzione al tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
@@ -42119,8 +42286,9 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1139
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1025
+#, fuzzy
 msgid "Final notes"
-msgstr ""
+msgstr "Note finali"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:841
 msgid ""
@@ -43912,8 +44080,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:22
+#, fuzzy
 msgid "Changing levels"
-msgstr ""
+msgstr "Cambiare i livelli"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:24
 msgid ""
@@ -44002,8 +44171,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:90
+#, fuzzy
 msgid "Adding ammo"
-msgstr ""
+msgstr "Aggiunta di munizioni"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
 msgid ""
@@ -44441,8 +44611,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:471
+#, fuzzy
 msgid "Adding sounds"
-msgstr ""
+msgstr "Aggiungere suoni"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:473
 msgid ""
@@ -48172,17 +48343,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:918
-#, fuzzy
 msgid "gun_revolver_pistol_shot_04,"
 msgstr "gun_revolver_pistol_shot_04,"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:919
-#, fuzzy
 msgid "gun_semi_auto_rifle_cock_02,"
 msgstr "gun_semi_auto_rifle_cock_02,"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:920
-#, fuzzy
 msgid "gun_submachine_auto_shot_00_automatic_preview_01"
 msgstr "gun_submachine_auto_shot_00_automatic_preview_01"
 
@@ -51139,8 +51307,9 @@ msgid "And in 3D:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
+#, fuzzy
 msgid "Raycast query"
-msgstr ""
+msgstr "Interrogazione di Raycast"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -51944,8 +52113,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
+#, fuzzy
 msgid "Vector math"
-msgstr ""
+msgstr "Matematica vettoriale"
 
 #: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
@@ -52034,8 +52204,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:81
+#, fuzzy
 msgid "Member access"
-msgstr ""
+msgstr "Accesso dei membri"
 
 #: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
@@ -52043,8 +52214,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:105
+#, fuzzy
 msgid "Adding vectors"
-msgstr ""
+msgstr "Aggiunta di vettori"
 
 #: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
@@ -52063,8 +52235,9 @@ msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:126
+#, fuzzy
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Moltiplicazione scalare"
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
@@ -52083,8 +52256,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:150
+#, fuzzy
 msgid "Practical applications"
-msgstr ""
+msgstr "Applicazioni pratiche"
 
 #: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
@@ -52127,8 +52301,9 @@ msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:180
+#, fuzzy
 msgid "Unit vectors"
-msgstr ""
+msgstr "Vettori unitari"
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
@@ -52188,8 +52363,9 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:251
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#, fuzzy
 msgid "Dot product"
-msgstr ""
+msgstr "Prodotto scalare"
 
 #: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
@@ -55551,7 +55727,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:135
-#, fuzzy
 msgid "BlendSpace2D"
 msgstr "BlendSpace2D"
 
@@ -56733,9 +56908,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:237
-#, fuzzy
 msgid "Linux"
-msgstr "Su Linux:"
+msgstr "Linux"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:239
 msgid ""
@@ -62353,8 +62527,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:219
+#, fuzzy
 msgid "Render target"
-msgstr ""
+msgstr "Obiettivo del rendering"
 
 #: ../../docs/tutorials/viewports/viewports.rst:221
 msgid ""
@@ -63621,8 +63796,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:16
+#, fuzzy
 msgid "Data types"
-msgstr ""
+msgstr "Tipi di dati"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:18
 msgid "Most GLSL ES 3.0 datatypes are supported:"
@@ -64099,12 +64275,14 @@ msgid "Operator"
 msgstr "Operatore"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
+#, fuzzy
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (più alto)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
+#, fuzzy
 msgid "parenthetical grouping"
-msgstr ""
+msgstr "raggruppamento parentetico"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 #, fuzzy
@@ -64244,12 +64422,13 @@ msgid "5"
 msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
+#, fuzzy
 msgid "bit-wise shift"
-msgstr ""
+msgstr "spostamento bit-wise"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 msgid "**<<, >>**"
-msgstr ""
+msgstr "**<<, >>**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
@@ -64276,8 +64455,9 @@ msgid "equality"
 msgstr "uguaglianza"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
+#, fuzzy
 msgid "**==, !=**"
-msgstr ""
+msgstr "**==, !=**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
@@ -64351,8 +64531,9 @@ msgid "**&&**"
 msgstr "**&&**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
+#, fuzzy
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (più basso)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "logical inclusive OR"
@@ -64418,8 +64599,9 @@ msgid "**inout**: Means the argument is fully passed via reference."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:412
+#, fuzzy
 msgid "Example below:"
-msgstr ""
+msgstr "Esempio qui sotto:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:421
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:57
@@ -64439,8 +64621,9 @@ msgid "Varying can also be an array:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:457
+#, fuzzy
 msgid "Interpolation qualifiers"
-msgstr ""
+msgstr "Qualificatori di interpolazione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:459
 msgid ""
@@ -64537,8 +64720,9 @@ msgid "Used as color"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#, fuzzy
 msgid "**int, float**"
-msgstr ""
+msgstr "**int, float**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
 msgid "hint_range(min, max[, step])"
@@ -64920,7 +65104,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "Ceil"
-msgstr ""
+msgstr "Parte intera"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
 msgid "vec_type **fract** (vec_type x)"
@@ -65669,8 +65853,9 @@ msgid "**specular_disabled**"
 msgstr "**specular_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
+#, fuzzy
 msgid "Disable specular."
-msgstr ""
+msgstr "Disattiva speculare."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
@@ -66215,8 +66400,9 @@ msgid "out float **METALLIC**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
+#, fuzzy
 msgid "Metallic (0..1)."
-msgstr ""
+msgstr "Metallico (0..1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 msgid "out float **SPECULAR**"
@@ -66228,8 +66414,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
+#, fuzzy
 msgid "Roughness (0..1)."
-msgstr ""
+msgstr "Ruvidità (0..1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "out float **RIM**"
@@ -66326,8 +66513,9 @@ msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
+#, fuzzy
 msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **SCREEN_TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid ""
@@ -66336,8 +66524,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
+#, fuzzy
 msgid "sampler2D **DEPTH_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **DEPTH_TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
 msgid ""
@@ -66465,8 +66654,9 @@ msgid "in vec3 **ALBEDO**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:345
+#, fuzzy
 msgid "Base albedo."
-msgstr ""
+msgstr "Albedo di base."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:347
 msgid "in vec3 **LIGHT_COLOR**"
@@ -66617,8 +66807,9 @@ msgid "in mat4 **EXTRA_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
+#, fuzzy
 msgid "Extra transform."
-msgstr ""
+msgstr "Trasformazione extra."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:122
 msgid "Instance custom data."
@@ -66813,8 +67004,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
+#, fuzzy
 msgid "sampler2D **TEXTURE**"
-msgstr ""
+msgstr "sampler2D **TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
 msgid "Current texture in use for CanvasItem."
@@ -67012,16 +67204,18 @@ msgid "inout mat4 **TRANSFORM**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
+#, fuzzy
 msgid "Particle transform."
-msgstr ""
+msgstr "Trasformazione delle particelle."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
 msgid "in float **LIFETIME**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
+#, fuzzy
 msgid "Particle lifetime."
-msgstr ""
+msgstr "Durata delle particelle."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:83
 msgid "in float **DELTA**"
@@ -67726,8 +67920,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:88
+#, fuzzy
 msgid "Shader magic"
-msgstr ""
+msgstr "Magia degli shader"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:92
 msgid ""
@@ -68385,8 +68580,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:4
+#, fuzzy
 msgid "Shader materials"
-msgstr ""
+msgstr "Materiali dello shader"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:9
 msgid ""
@@ -68835,8 +69031,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:4
+#, fuzzy
 msgid "Screen-reading shaders"
-msgstr ""
+msgstr "Shader per la lettura dello schermo"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:9
 msgid ""
@@ -68892,8 +69089,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:48
+#, fuzzy
 msgid "SCREEN_TEXTURE example"
-msgstr ""
+msgstr "Esempio di SCREEN_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:50
 msgid ""
@@ -68960,8 +69158,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:114
+#, fuzzy
 msgid "Back-buffer logic"
-msgstr ""
+msgstr "Logica del back-buffer"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
 msgid ""
@@ -70446,8 +70645,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#, fuzzy
 msgid "Network master"
-msgstr ""
+msgstr "Master di rete"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
@@ -71532,8 +71732,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:17
+#, fuzzy
 msgid "Submission guidelines"
-msgstr ""
+msgstr "Linee guida per la presentazione"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:19
 msgid ""
@@ -78224,8 +78425,9 @@ msgid "Receipt validation"
 msgstr "Convalida della ricevuta"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:18
+#, fuzzy
 msgid "Install tracking"
-msgstr ""
+msgstr "Installare il monitoraggio"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:19
 msgid "Ads"
@@ -78261,8 +78463,9 @@ msgid "Login"
 msgstr "Accesso"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:26
+#, fuzzy
 msgid "Cloud saves"
-msgstr ""
+msgstr "Salvataggi nel cloud"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:27
 msgid "Leaderboards and scores"
@@ -78980,8 +79183,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:105
+#, fuzzy
 msgid "**dependencies**:"
-msgstr ""
+msgstr "**dipendenze**:"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:107
 msgid ""
@@ -79055,8 +79259,9 @@ msgid "Here's an example of how to do this in GDScript:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:32
+#, fuzzy
 msgid "Asynchronous methods"
-msgstr ""
+msgstr "Metodi asincroni"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:34
 msgid ""
@@ -79100,8 +79305,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:83
+#, fuzzy
 msgid "Store Kit"
-msgstr ""
+msgstr "Kit negozio"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
 #, fuzzy
@@ -79160,8 +79366,9 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:370
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:402
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:459
+#, fuzzy
 msgid "Response event"
-msgstr ""
+msgstr "Evento di risposta"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:119
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:159
@@ -79182,8 +79389,9 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:344
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:374
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:406
+#, fuzzy
 msgid "On error:"
-msgstr ""
+msgstr "In caso di errore:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:131
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:234
@@ -79192,8 +79400,9 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:354
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:384
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:416
+#, fuzzy
 msgid "On success:"
-msgstr ""
+msgstr "In caso di successo:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:142
 #, fuzzy
@@ -79226,8 +79435,9 @@ msgid "The response events will be dictionaries with the following fields:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:194
+#, fuzzy
 msgid "Game Center"
-msgstr ""
+msgstr "Game Center"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
 #, fuzzy
@@ -79406,8 +79616,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:463
+#, fuzzy
 msgid "On close:"
-msgstr ""
+msgstr "In chiusura:"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
 msgid "HTML5 shell class reference"
@@ -79757,29 +79968,35 @@ msgid "name"
 msgstr "``name``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:189
+#, fuzzy
 msgid ":js:attr:`unloadAfterInit`"
-msgstr ""
+msgstr ":js:attr:`unloadAfterInit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:236
+#, fuzzy
 msgid "HTMLCanvasElement"
-msgstr ""
+msgstr "HTMLCanvasElement"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
+#, fuzzy
 msgid ":js:attr:`canvas`"
-msgstr ""
+msgstr ":js:attr:`canvas`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:193
+#, fuzzy
 msgid ":js:attr:`executable`"
-msgstr ""
+msgstr ":js:attr:`executable`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:195
+#, fuzzy
 msgid ":js:attr:`mainPack`"
-msgstr ""
+msgstr ":js:attr:`mainPack`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:197
+#, fuzzy
 msgid ":js:attr:`locale`"
-msgstr ""
+msgstr ":js:attr:`locale`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:278
@@ -79788,8 +80005,9 @@ msgid "number"
 msgstr "Membri"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
+#, fuzzy
 msgid ":js:attr:`canvasResizePolicy`"
-msgstr ""
+msgstr ":js:attr:`canvasResizePolicy`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:290
@@ -79798,8 +80016,9 @@ msgid "Array.<string>"
 msgstr "string"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
+#, fuzzy
 msgid ":js:attr:`args`"
-msgstr ""
+msgstr ":js:attr:`args`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
@@ -79811,24 +80030,29 @@ msgid "function"
 msgstr "Funzione"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
+#, fuzzy
 msgid ":js:attr:`onExecute`"
-msgstr ""
+msgstr ":js:attr:`onExecute`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
+#, fuzzy
 msgid ":js:attr:`onExit`"
-msgstr ""
+msgstr ":js:attr:`onExit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
+#, fuzzy
 msgid ":js:attr:`onProgress`"
-msgstr ""
+msgstr ":js:attr:`onProgress`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
+#, fuzzy
 msgid ":js:attr:`onPrint`"
-msgstr ""
+msgstr ":js:attr:`onPrint`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
+#, fuzzy
 msgid ":js:attr:`onPrintError`"
-msgstr ""
+msgstr ":js:attr:`onPrintError`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:216
 msgid ""
@@ -79885,8 +80109,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:246
+#, fuzzy
 msgid "``\"\"``"
-msgstr ""
+msgstr "``\"\"``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:250
 msgid ""
@@ -79929,8 +80154,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:280
+#, fuzzy
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:284
 #, fuzzy
@@ -80504,8 +80730,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:52
+#, fuzzy
 msgid "Mutexes"
-msgstr ""
+msgstr "Mutexes"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:54
 msgid ""
@@ -82929,8 +83156,9 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:198
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
+#, fuzzy
 msgid "Texture compression"
-msgstr ""
+msgstr "Compressione delle texture"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:200
 msgid ""
@@ -84031,8 +84259,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:63
+#, fuzzy
 msgid "Transparent objects"
-msgstr ""
+msgstr "Oggetti trasparenti"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
 msgid ""
@@ -84496,8 +84725,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/pausing_games.rst:45
+#, fuzzy
 msgid "White-listing nodes"
-msgstr ""
+msgstr "Nodi della lista bianca"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:47
 msgid ""
@@ -84584,8 +84814,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
+#, fuzzy
 msgid "Packet specification"
-msgstr ""
+msgstr "Specifica dei pacchetti"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
 msgid ""
@@ -85177,8 +85408,9 @@ msgid "Imaginary Z"
 msgstr "Z immaginaria"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:245
+#, fuzzy
 msgid "Real W"
-msgstr ""
+msgstr "W reale"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 msgid "11: :ref:`AABB<class_aabb>`"
@@ -86577,7 +86809,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
-msgstr "Distribuisci con Debug remoto"
+msgstr "Distribuisci con debug remoto"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
@@ -86620,7 +86852,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
-msgstr "Navigazione Visibile"
+msgstr "Navigazione visibile"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -88201,12 +88433,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:164
-#, fuzzy
 msgid "(32 bits)"
 msgstr "(32 bits)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:171
-#, fuzzy
 msgid "(64 bits)"
 msgstr "(64 bits)"
 
@@ -88915,7 +89145,6 @@ msgid "Configuring the environment"
 msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:53
-#, fuzzy
 msgid "darling-dmg"
 msgstr "darling-dmg"
 
@@ -89315,7 +89544,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_web.rst:88
 #, fuzzy
 msgid "Building the Editor"
-msgstr "Editor di temi integrato."
+msgstr "Editor di temi integrato"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""
@@ -90156,8 +90385,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
+#, fuzzy
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagramma dell'architettura"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -92177,7 +92407,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:293
-#, fuzzy
 msgid "resourceinteractiveloader (TODO)"
 msgstr "resourceinteractiveloader (TODO)"
 
@@ -92191,8 +92420,9 @@ msgstr ""
 "core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:301
+#, fuzzy
 msgid "Resource saving"
-msgstr ""
+msgstr "Risparmio di risorse"
 
 #: ../../docs/development/cpp/object_class.rst:303
 msgid "Saving a resource can be done with the resource saver API:"
@@ -93442,8 +93672,8 @@ msgid ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/editor_node.cpp>`__: Main editor initialization file."
 msgstr ""
-"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp>`_"
+"`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
+"editor/editor_node.cpp>`__: File di inizializzazione dell'editor principale."
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:48
 msgid ""
@@ -93929,8 +94159,9 @@ msgid "There are five main sections inside the TSCN file:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:25
+#, fuzzy
 msgid "File Descriptor"
-msgstr ""
+msgstr "Descrittore di file"
 
 #: ../../docs/development/file_formats/tscn.rst:26
 #: ../../docs/development/file_formats/tscn.rst:275
@@ -96280,8 +96511,9 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:94
 #: ../../docs/community/contributing/code_style_guidelines.rst:288
+#, fuzzy
 msgid "Pre-commit hook"
-msgstr ""
+msgstr "Gancio pre-commit"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:96
 msgid ""
@@ -98054,7 +98286,6 @@ msgid "Result"
 msgstr "Risultato"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
-#, fuzzy
 msgid "[Class]"
 msgstr "[Class]"
 
@@ -98072,7 +98303,6 @@ msgid "Move the :ref:`class_sprite`."
 msgstr "Sposta lo :ref:`class_sprite`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:242
-#, fuzzy
 msgid "[method methodname]"
 msgstr "[method methodname]"
 
@@ -98090,7 +98320,6 @@ msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:244
-#, fuzzy
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
 
@@ -98103,7 +98332,6 @@ msgid "Call [method Spatial.hide]."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:246
-#, fuzzy
 msgid "[member membername]"
 msgstr "[member membername]"
 
@@ -98121,7 +98349,6 @@ msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:248
-#, fuzzy
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
 
@@ -98134,7 +98361,6 @@ msgid "Get [member Node2D.scale]."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:250
-#, fuzzy
 msgid "[signal signalname]"
 msgstr "[signal signalname]"
 
@@ -98152,7 +98378,6 @@ msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
-#, fuzzy
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
 
@@ -98205,7 +98430,6 @@ msgid "[code] [/code]"
 msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
-#, fuzzy
 msgid "Monospace"
 msgstr "Monospace"
 

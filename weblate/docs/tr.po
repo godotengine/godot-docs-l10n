@@ -30,6 +30,7 @@
 # Kağan Akpınar <kaganakpinar30@gmail.com>, 2020.
 # Mehmet Akif Duba <dubamehmetakif@gmail.com>, 2019.
 # Mertcan Duman <mertcan.dmn16@gmail.com>, 2019.
+# M.Haytham Karamuk <a_developer_2002@outlook.com>, 2021.
 # monolifed <monolifed@gmail.com>, 2018.
 # Muhammet Mustafa Tozlu <m.mustafatozlu@gmail.com>, 2019.
 # Mustafa Turhan <odunluzikkim@gmail.com>, 2019.
@@ -59,8 +60,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-06-02 13:32+0200\n"
-"PO-Revision-Date: 2021-05-26 05:32+0000\n"
-"Last-Translator: ali aydın <alimxaydin@gmail.com>\n"
+"PO-Revision-Date: 2021-06-20 18:34+0000\n"
+"Last-Translator: M.Haytham Karamuk <a_developer_2002@outlook.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -68,7 +69,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.7\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -1508,12 +1509,20 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Oyun olmayan bir uygulama geliştirirken, :ref:`low-processor mode "
+"<class_ProjectSettings_property_application/run/low_processor_mode>`(düşük "
+"işlemci modu) seçeneğinin etkinleştirildiğinden emin olun. Proje "
+"Ayarlarından etkinleştirilen bu özellik sayesinde CPU ve GPU kullanımı "
+"azalacaktır."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Dediğimiz gibi, Godot'u *mobil* bir uygulama yapmak için kullanmanızı "
+"tavsiye etmiyoruz. Çünkü düşük işlemci modu henüz mobil cihazlarda "
+"desteklenmiyor."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1521,6 +1530,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Godot ile yapılmış açık kaynaklı örnek uygulamaları incelemek için şunlara "
+"göz atabilirsiniz: `Material Maker <https://github.com/RodZill4/material-"
+"maker>`__ `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -1553,9 +1565,10 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Godot'un kullandığı kullanıcı arayüzü kiti nedir?"
 
 #: ../../docs/about/faq.rst:395
+#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1564,6 +1577,9 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot, GTKİ Qt veya wxWidgets gibi bir standart grafiksel kullanıcı arayüzü "
+"(GUI) kullanmaz. Bunun yerine kullanıcı OpenGL ES veya Vulkan ile "
+"oluşturulan kendi kullanıcı arayüzü kitini kullanır."
 
 #: ../../docs/about/faq.rst:402
 msgid ""

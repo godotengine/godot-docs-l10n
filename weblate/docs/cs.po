@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-06-02 13:32+0200\n"
-"PO-Revision-Date: 2021-04-26 15:59+0000\n"
+"PO-Revision-Date: 2021-07-13 06:14+0000\n"
 "Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -147,17 +147,16 @@ msgstr ""
 "vás zajímá. Také můžete využít vyhledávaní v levém horním rohu."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
-"Můžete si také stáhnout HTML kopii <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ pro offline "
-"čtení (aktualizováno každé pondělí). Rozbalte archiv ZIP a poté otevřete "
-"horní úroveň ``index.html`` ve webovém prohlížeči."
+"Můžete si také `stáhnout HTML kopii <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ pro "
+"offline čtení (aktualizováno každé pondělí). Rozbalte archiv ZIP a poté "
+"otevřete horní úroveň ``index.html`` ve webovém prohlížeči."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -1413,19 +1412,18 @@ msgstr ""
 "nebo příkladů projektů (pokud jsou k dispozici)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Je možné Godot použít jako knihovnu?"
+msgstr "Je možné použít Godot k vytváření jiných než herních aplikací?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Malá velikost distribuce Godot z něj činí vhodnou alternativu k frameworkům "
-"jako Electron nebo Qt."
+"Ano! Godot má rozsáhlý vestavěný systém uživatelského rozhraní a díky své "
+"malé distribuční velikosti může být vhodnou alternativou k frameworkům jako "
+"Electron nebo Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -2569,9 +2567,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Vícenásobné vyhlazování (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Vícenásobné vyhlazování (MSAA)."
+msgstr "Rychlé přibližné vyhlazování (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -2634,9 +2631,8 @@ msgid "Ragdolls."
 msgstr "Ragdoll."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr "Vestavěné tvary: kvádr, koule, kapsle, válec (pouze s fyzikou Bullet)."
+msgstr "Vestavěné tvary: kvádr, koule, kapsle, válec."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -4141,9 +4137,8 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Aktuální zaměření vývoje (nestabilní).*"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
@@ -4160,9 +4155,8 @@ msgid "Godot 3.3"
 msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "April 2021"
-msgstr "březen/duben 2021"
+msgstr "Duben 2021"
 
 #: ../../docs/about/release_policy.rst:91
 msgid ""
@@ -4179,11 +4173,12 @@ msgid "January 2020"
 msgstr "Leden 2020"
 
 #: ../../docs/about/release_policy.rst:94
-#, fuzzy
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
-msgstr "|eol| Již není podporována (poslední update: 3.0.6)."
+msgstr ""
+"|eol| Již není podporována, protože byla plně nahrazena kompatibilní verzí "
+"3.3 (poslední aktualizace: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:97
 msgid "Godot 3.1"
@@ -4523,7 +4518,6 @@ msgstr ""
 "AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
@@ -4531,19 +4525,18 @@ msgid ""
 msgstr ""
 "Pracovní plochu **2D** budete používat pro všechny typy her. Kromě 2D her je "
 "2D pracoviště také místem, kde budete vytvářet uživatelské rozhraní pro vaše "
-"hry. Pro rychlý přístup stiskněte klávesy :kbd:`F1` (nebo :kbd:`Alt + 1` v "
-"systému MacOS) ."
+"hry. Pro rychlý přístup stiskněte klávesy :kbd:`Ctrl+F1` (nebo :kbd:`Alt + "
+"1` v systému MacOS)."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`Ctrl + F2` (or :kbd:`Alt + 2` on macOS) to access "
 "it."
 msgstr ""
 "Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
-"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`F2` (nebo :kbd:`Alt "
-"+ 2` v systému MacOS) ."
+"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`Ctrl + F2` (nebo :"
+"kbd:`Alt + 2` v systému MacOS) ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
@@ -4561,7 +4554,6 @@ msgstr ""
 "ploše**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`Ctrl + F3` (or :"
@@ -4569,9 +4561,9 @@ msgid ""
 "reference."
 msgstr ""
 "Pracovní plocha **Skript** je kompletní editor kódu s debuggerem, bohatým "
-"automatickým dokončováním a vestavěnou referenční dokumentací Stiskněte :kbd:"
-"`F3` (nebo :kbd:`Alt + 3` v systému MacOS) pro přístup na plochu a :kbd:`Alt "
-"+ F1` pro hledání v referenční dokumentaci."
+"automatickým dokončováním a vestavěnou referenční dokumentací. Stiskněte :"
+"kbd:`Ctrl + F3` (nebo :kbd:`Alt + 3` v systému MacOS) pro přístup na plochu "
+"a :kbd:`Shift + F1` pro hledání v referenční dokumentaci."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
@@ -8437,7 +8429,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
@@ -8445,9 +8436,12 @@ msgid ""
 "**Aspect** to ``keep``."
 msgstr ""
 "Chceme také zajistit, aby hra odpovídala původnímu měřítku na obrazovkách "
-"různých velikostí, takže v nastavení projektu přejděte na *Display*, poté "
-"klikněte na *Window*. V možnostech *Stretch* nastavte *Mode* na \"2d\" a "
-"*Aspect* na \"keep\"."
+"různých velikostí, takže v nastavení projektu přejděte na **Display**, poté "
+"klikněte na **Window**. V možnostech **Stretch** nastavte **Mode** na ``2d`` "
+"a **Aspect** na ``keep``.Chceme také zajistit, aby hra odpovídala původnímu "
+"měřítku na obrazovkách různých velikostí, takže v nastavení projektu "
+"přejděte na **Display**, poté klikněte na **Window**. V možnostech "
+"**Stretch** nastavte **Mode** na ``2d`` a **Aspect** na ``keep``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
@@ -12780,7 +12774,6 @@ msgstr ""
 "více animací najednou a to paralelně."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`Ctrl + F1` to jump back to the 2D Workspace. "
@@ -12788,8 +12781,8 @@ msgid ""
 "to the Inspector."
 msgstr ""
 "Nejprve se musí ``GUI`` připojit k signálu ``Player`` ``died``, aby se "
-"dozvěděl, až ``Player`` zemře. Stisknutím :kbd:`F1` přejdete zpět do 2D "
-"pracovního prostoru. Vyberte uzel ``Player`` v doku scény a klikněte na "
+"dozvěděl, až ``Player`` zemře. Stisknutím :kbd:`Ctrl + F1` přejdete zpět do "
+"2D pracovního prostoru. Vyberte uzel ``Player`` v doku scény a klikněte na "
 "kartu Uzel vedle Inspektora."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
@@ -13807,9 +13800,8 @@ msgstr ""
 "písmena v názvech souborů a cest."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
-#, fuzzy
 msgid "Using SceneTree"
-msgstr "SceneTree"
+msgstr "Použití SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
@@ -15748,9 +15740,8 @@ msgid "Open 2D Editor"
 msgstr "Otevřít 2D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid ":kbd:`Ctrl + F1`"
-msgstr ":kbd:`Ctrl + F12`"
+msgstr ":kbd:`Ctrl + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
@@ -15782,9 +15773,8 @@ msgid "Open Script Editor"
 msgstr "Otevřít Editor Skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
-#, fuzzy
 msgid ":kbd:`Ctrl + F3`"
-msgstr ":kbd:`Ctrl + F`"
+msgstr ":kbd:`Ctrl + F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
@@ -19228,7 +19218,7 @@ msgstr "Okamžitě přeskočí na další iteraci cyklu ``for`` nebo ``while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid "pass"
-msgstr "předat"
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid ""
@@ -20138,7 +20128,7 @@ msgstr "Kontejnerové vestavěné typy"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`Array <class_Array>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array (Pole) <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
 msgid ""
@@ -20351,7 +20341,7 @@ msgstr "Třídy skriptů deklarované pomocí klíčového slova ``class_name``.
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:615
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:85
 msgid "Casting"
-msgstr ""
+msgstr "Přetypování"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:617
 msgid ""
@@ -20359,30 +20349,41 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"Hodnoty přiřazené typovaným proměnným musí mít kompatibilní typ. Pokud je "
+"potřeba vynutit, aby hodnota byla určitého typu, zejména pro typy objektů, "
+"můžete použít operátor přetypování ``as``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:621
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"Přetypování mezi objektovými typy vrací stejný objekt, pokud je hodnota "
+"stejného typu jako je typ na který se přetypovává nebo je jeho potomkem."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:629
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
+"Pokud hodnota není potomkem (podtypem), výsledkem operace přetypování je "
+"hodnota ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:636
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"V případě vestavěných typů budou tyto typy, pokud to bude možné, násilně "
+"převedeny, jinak engine vyvolá chybu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:645
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with the scene tree::"
 msgstr ""
+"Přetypování je také užitečné pro lepší typovou bezpečnost proměnných při "
+"interakci se stromem scény:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
@@ -20401,10 +20402,14 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"Konstanty jsou hodnoty, které nelze za běhu hry měnit. Jejich hodnota musí "
+"být známa při kompilaci. Použití klíčového slova ``const`` umožňuje dát "
+"konstantní hodnotě jméno. Při pokusu přiřadit hodnotu konstantě po její "
+"deklaraci dojde k chybě."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
-msgstr ""
+msgstr "Doporučujeme používat konstanty vždy, když se hodnota nemá měnit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -20425,22 +20430,30 @@ msgid ""
 "still be modified afterwards. They can't be reassigned with another value "
 "though."
 msgstr ""
+"Protože pole a slovníky jsou předávány odkazem (referencí), kostanty jsou "
+"tzv \"mělké\". To znamená, že i když deklarujete pole nebo slovník jako "
+"konstantu , jejjí hodnoty můžou být následně měněny. Refrence na takový "
+"konstantní slovník či pole však změněna už být nemůže a to ani přiřazením."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
 msgid "Enums"
-msgstr ""
+msgstr "Enums (Výčty)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
+"Enumy jsou v podstatě zkratkou pro konstanty a jsou docela užitečné, pokud "
+"chcete nějaké konstantě přiřadit po sobě jdoucí celá čísla."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
+"Pokud výčtu dáte jméno, vloží všechny klíče do konstantního slovníku tohoto "
+"jména."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:698
 msgid ""
@@ -20448,6 +20461,9 @@ msgid ""
 "constants. They should be accessed prefixed by the enum's name (``Name."
 "KEY``); see an example below."
 msgstr ""
+"V Godotu 3.1 a novějších verzích nejsou klíče pojmenovaného výčtu "
+"registrovány jako globální konstanty. Mělo by se k nim přistupovat s "
+"předponou názvu enumu (``Name.KEY``); viz příklad níže."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:718
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
@@ -20463,11 +20479,18 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
+"Funkce vždy patří do `třídy <Classes_>`_. Priorita rozsahu platnosti pro "
+"vyhledávání proměnných je: lokální → člen třídy → globální. Proměnná "
+"``self`` je vždy k dispozici a je poskytována jako možnost přístupu k členům "
+"třídy, ale není vždy vyžadována (a na rozdíl od Pythonu *není* posílána jako "
+"první argument funkce)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Funkce se může ``vrátit hodnotu`` v libovolném okamžiku. Výchozí návratová "
+"hodnota je ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid ""
@@ -20475,17 +20498,21 @@ msgid ""
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Funkce mohou mít také specifikaci typu pro argumenty a pro návratovou "
+"hodnotu. Typy pro argumenty lze přidat podobně jako u proměnných::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:741
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
-msgstr ""
+msgstr "Pokud má argument funkce výchozí hodnotu, je možné typ odvodit::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:746
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"Návratový typ funkce lze zadat za seznamem argumentů pomocí symbolu šipky "
+"(``->```)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
 msgid ""
@@ -20494,6 +20521,9 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"Funkce s návratovým typem **musí** vracet správnou hodnotu. Nastavení typu "
+"``void`` znamená, že funkce nic nevrací. Void funkce mohou vracet dříve "
+"pomocí klíčového slova ``return``, ale nemohou vracet žádnou hodnotu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:761
 msgid ""
@@ -20503,10 +20533,15 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"Ne-void funkce musí **vždy** vracet hodnotu, takže pokud váš kód obsahuje "
+"příkazy větvení (například konstrukce ``if``/``else``), všechny možné cesty "
+"musí mít návratovou hodnotu. Např. pokud máte ``return`` uvnitř bloku "
+"``if``, ale ne za ním, editor zobrazí chybovou hlášku, protože pokud se blok "
+"neprovede, funkce nebude mít platnou hodnotu, kterou by mohla vrátit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:769
 msgid "Referencing functions"
-msgstr ""
+msgstr "Odkazování na funkce"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid ""
@@ -20515,6 +20550,9 @@ msgid ""
 "another function or be returned from other functions. This is for "
 "performance reasons."
 msgstr ""
+"Na rozdíl od jazyka Python **nejsou** funkce v jazyce GDScript objekty první "
+"třídy. To znamená, že je nelze ukládat do proměnných, předávat jako argument "
+"jiné funkci nebo je vracet z jiných funkcí. Stojí za tím výkonnostní důvody."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
 msgid ""
@@ -20522,10 +20560,13 @@ msgid ""
 "variable, or pass it to another function as an argument) one must use the "
 "``call`` or ``funcref`` helpers::"
 msgstr ""
+"Pro odkaz na funkci podle jména za běhu programu (např. pro její uložení do "
+"proměnné nebo předání jiné funkci jako argument) je třeba použít pomocné "
+"příkazy ``call`` nebo ``funcref``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:789
 msgid "Static functions"
-msgstr ""
+msgstr "Statické funkce"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:791
 msgid ""
@@ -20533,10 +20574,13 @@ msgid ""
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions::"
 msgstr ""
+"Funkce může být deklarována jako statická. Pokud je funkce statická, nemá "
+"přístup k členským proměnným instance ani k ``self``. To je užitečné hlavně "
+"pro vytváření knihoven pomocných funkcí::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
 msgid "Statements and control flow"
-msgstr ""
+msgstr "Příkazy pro řízení běhu programu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:802
 msgid ""
@@ -20544,10 +20588,12 @@ msgid ""
 "structures, etc (see below). ``;`` as a statement separator is entirely "
 "optional."
 msgstr ""
+"Příkazy jsou standardní a může to být přiřazení, volání funkce, struktury "
+"toku řízení atd. (viz níže). ``;`` jako oddělovač příkazů je zcela nepovinný."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:807
 msgid "if/else/elif"
-msgstr ""
+msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
 msgid ""
@@ -20556,22 +20602,30 @@ msgid ""
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"Jednoduché podmínky se vytvářejí pomocí syntaxe ``if``/``else``/`elif``. "
+"Závorky kolem podmínek jsou povoleny, ale nejsou povinné. Vzhledem k povaze "
+"odsazení na základě tabulátoru lze pro zachování úrovně odsazení použít "
+"místo ``else``/``if`` ``elif``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
 msgid "Short statements can be written on the same line as the condition::"
-msgstr ""
+msgstr "Krátké příkazy lze psát na stejném řádku jako podmínku::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
 msgid ""
 "Sometimes, you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
+"Někdy můžete chtít přiřadit jinou počáteční hodnotu na základě logického "
+"výrazu. V takovém případě se hodí tzv. ternární if výrazy::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"Jednoduché cykly se vytvářejí pomocí syntaxe ``while``. Cykly lze přerušit "
+"pomocí ``break`` nebo v nich pokračovat pomocí ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
 msgid ""
@@ -20580,6 +20634,10 @@ msgid ""
 "loop variable. When iterating over a dictionary, the *key* is stored in the "
 "loop variable."
 msgstr ""
+"Pro cykly s pevným počtem opakování, například průchod polem nebo tabulkou, "
+"se používá smyčka ``for``. Při průchodu polem je aktuální prvek pole uložen "
+"v proměnné cyklu. Při průchodu slovníkem je v proměnné cyklu uložen aktuální "
+"*klíč*."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:885
 msgid ""
@@ -20587,36 +20645,41 @@ msgid ""
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
 msgstr ""
+"Příkaz ``match`` slouží k větvení provádění programu. Je to ekvivalent "
+"příkazu ``switch``, který se vyskytuje v mnoha jiných jazycích, ale nabízí "
+"některé další vlastnosti."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:888
 msgid "Basic syntax::"
-msgstr ""
+msgstr "Základní syntaxe::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:899
 msgid "**Crash-course for people who are familiar with switch statements**:"
-msgstr ""
+msgstr "**Kurz pro lidi, kteří znají příkazy switch**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:901
 msgid "Replace ``switch`` with ``match``."
-msgstr ""
+msgstr "Nahraďte ``switch`` příkazem ``match``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:902
 msgid "Remove ``case``."
-msgstr ""
+msgstr "Odstraňte ``case``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:903
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
+"Odstraňte všechny ``break``. Pokud nechcete ``break`` ve výchozím nastavení, "
+"můžete použít ``continue`` pro přerušení."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Změňte ``default`` na jedno podtržítko."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid "**Control flow**:"
-msgstr ""
+msgstr "**Pořadí vyhodnocování**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
 msgid ""
@@ -20625,10 +20688,14 @@ msgid ""
 "below the ``match`` statement. You can use ``continue`` to stop execution in "
 "the current block and check for an additional match in the patterns below it."
 msgstr ""
+"Vzory jsou vyhodnocovány shora dolů. Pokud vzor vyhovuje, provede se jemu "
+"odpovídající blok. Poté se pokračuje ve vykonávání pod příkazem ``match``. "
+"Pomocí příkazu ``continue`` můžete zastavit provádění v aktuálním bloku a "
+"kontrolovat další shodu ve vzorech pod aktuálním blokem."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Typově existuje 6 vzorů:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid "Constant pattern"
@@ -20636,7 +20703,7 @@ msgstr "Konstantní vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "Constant primitives, like numbers and strings::"
-msgstr ""
+msgstr "Prosté konstanty, jako jsou čísla a řetězce::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
 msgid "Variable pattern"
@@ -20644,25 +20711,27 @@ msgstr "Variabilní vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
 msgid "Matches the contents of a variable/enum::"
-msgstr ""
+msgstr "Porovnává obsah proměnné/výčtového typu (enum)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
 msgid "Wildcard pattern"
-msgstr ""
+msgstr "Vzor zástupného znaku"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
 msgid "This pattern matches everything. It's written as a single underscore."
-msgstr ""
+msgstr "Tento vzor vyhovuje všemu. Zapisuje se jedním podtržítkem."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
 msgstr ""
+"Lze jej použít jako ekvivalent ``default`` v příkaze ``switch`` z jiných "
+"jazyků::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:964
 msgid "Binding pattern"
-msgstr "Vazebný vzor"
+msgstr "Spojovací vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
 msgid ""
@@ -20670,77 +20739,92 @@ msgid ""
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns::"
 msgstr ""
+"Spojovací vzor zavádí novou proměnnou. Podobně jako vzor zástupného znaku "
+"vyhovuje všemu a navíc odpovídající hodnotu pojmenovává. Je to obzvláště "
+"důležité pro vzory pole a slovníku::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
 msgid "Array pattern"
-msgstr ""
+msgstr "Vzor pole"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:967
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
+"Porovnává pole. Každý jednotlivý prvek pole je sám o sobě vzorem takže je "
+"možné vzory vnořovat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Nejprve se testuje délka pole, která musí být stejná jako velikost vzoru, "
+"jinak vzor nevyhovuje."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:971
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
 msgstr ""
+"**Pole s otevřeným koncem**: Pole může být delší než vzor, když jako "
+"poslední dílčí vzor použijeme ``...``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
 msgid "Every subpattern has to be comma-separated."
-msgstr ""
+msgstr "Každý dílčí vzor musí být oddělen čárkou."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1012
 msgid "Dictionary pattern"
-msgstr ""
+msgstr "Vzor slovníku"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
-msgstr ""
+msgstr "Funguje stejně jako vzor pole. Každý klíč musí být konstantní vzor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Nejprve se testuje velikost slovníku, která musí být stejná jako velikost "
+"vzoru, jinak vzor testování nevyhovuje."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
+"**Slovník s otevřeným koncem**: Slovník může být větší než vzor, když jako "
+"poslední dílčí vzor použijeme ``...``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Každý dílčí vzor musí být oddělen čárkou."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
-msgstr ""
+msgstr "Pokud hodnotu nezadáte, kontroluje se pouze existence klíče."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "A value pattern is separated from the key pattern with a ``:``."
-msgstr ""
+msgstr "Vzor hodnoty je od vzoru klíče oddělen znakem ``:``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1025
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Násobné vzory"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1015
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
 msgstr ""
+"Můžete zadat i více vzorů oddělených čárkou. Tyto vzory nesmějí obsahovat "
+"žádné spojovací vzory."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
 msgid "Classes"
@@ -20752,6 +20836,10 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``::"
 msgstr ""
+"Ve výchozím nastavení jsou všechny soubory skriptů nepojmenovanými třídami. "
+"V takovém případě se na ně můžete odkazovat pouze pomocí cesty k souboru, a "
+"to buď pomocí relativní, nebo absolutní cesty. Pokud například pojmenujete "
+"soubor skriptu ``character.gd``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
 msgid ""
@@ -20760,6 +20848,10 @@ msgid ""
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor::"
 msgstr ""
+"Místo toho můžete třídu pojmenovat a zaregistrovat ji jako nový typ v "
+"editoru Godot. K tomu slouží klíčové slovo ``class_name``. Můžete přidat "
+"volitelnou čárkou oddělenou cestou k obrázku, abyste ho mohli použít jako "
+"ikonu. Vaše třída se pak v editoru objeví s touto novou ikonou::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
 msgid ""
@@ -20768,10 +20860,14 @@ msgid ""
 "script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
 "for more information."
 msgstr ""
+"Pokud je skript umístěn v adresáři ``res://addons/``, ``class_name`` "
+"způsobí, že se uzel zobrazí v dialogovém okně **Vytvořit nový uzel** pouze v "
+"případě, že je skript součástí *povoleného* zásuvného modulu editoru. Více "
+"informací naleznete v :ref:`doc_making_plugins`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "Zde je příklad souboru třídy:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1084
 msgid ""
@@ -20782,47 +20878,57 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
+"Syntaxe třídy Godot je kompaktní: může obsahovat pouze členské proměnné nebo "
+"funkce. Můžete používat statické funkce, ale ne statické členské proměnné. "
+"Stejně tak engine inicializuje proměnné při každém vytvoření instance, a to "
+"včetně polí a slovníků. To je v duchu bezpečnosti vláken, protože skripty "
+"mohou být inicializovány v samostatných vláknech, aniž by o tom uživatel "
+"věděl."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1092
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
-msgstr ""
+msgstr "Dědičnost"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
 msgid "A class (stored as a file) can inherit from:"
-msgstr ""
+msgstr "Třída (uložená jako soubor) může dědit z:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1096
 msgid "A global class."
-msgstr ""
+msgstr "Globální třídy."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
 msgid "Another class file."
-msgstr ""
+msgstr "Dalšího souboru třídy."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "Vnitřní třídy uvnitř jiného souboru třídy."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "Vícenásobné dědění není povoleno."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr ""
+msgstr "Dědičnost používá klíčové slovo ``extends``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1114
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
+"Chcete-li zjistit, zda daná instance dědí z dané třídy, můžete použít "
+"klíčové slovo ``is``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
 msgstr ""
+"Chcete-li zavolat funkci v *rodičovské třídě* (tj. ve třídě, kterou "
+"``extend``-ed (rozšířila) aktuální třída), přidejte k názvu funkce ``.``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
 msgid ""
@@ -20831,6 +20937,10 @@ msgid ""
 "call them, you can prefix them with ``.`` (like the ``super`` keyword in "
 "other languages)::"
 msgstr ""
+"To je užitečné zejména proto, že funkce v rozšiřujících třídách nahrazují "
+"funkce se stejným názvem ve svých rodičovských třídách. Pokud je přesto "
+"chcete volat, můžete jim dát předponu ``.`` (podobně jako klíčové slovo "
+"``super`` v jiných jazycích)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid ""
@@ -20839,10 +20949,14 @@ msgid ""
 "are called in all parent classes automatically. There is no need to call "
 "them explicitly when overloading them."
 msgstr ""
+"Výchozí funkce jako ``_init`` a většina oznámení, jako ``_enter_tree``, "
+"``_exit_tree``, ``_process``, ``_physics_process`` atd., jsou volány ve "
+"všech rodičovských třídách automaticky. Při jejich přetěžování je není třeba "
+"explicitně volat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 msgid "Class constructor"
-msgstr ""
+msgstr "Konstruktor třídy"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
 msgid ""
@@ -20851,6 +20965,9 @@ msgid ""
 "automatically when inheriting a class. So, there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
+"Konstruktor třídy volaný při tvorbě jejich instancí se jmenuje ``_init``. "
+"Jak již bylo zmíněno, konstruktory rodičovských tříd se v třídách potomků "
+"volají automaticky. Obvykle tedy není třeba volat ``._init()`` explicitně."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
 msgid ""
@@ -20858,14 +20975,17 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this::"
 msgstr ""
+"Na rozdíl od volání běžné funkce, jako ve výše uvedeném příkladě s ``."
+"some_func``, se případné argumenty rodičovskému konstruktoru předávají "
+"takto::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
 msgid "This is better explained through examples. Consider this scenario::"
-msgstr ""
+msgstr "To se lépe vysvětluje na příkladech. Vezměme si tento scénář:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
 msgid "There are a few things to keep in mind here:"
-msgstr ""
+msgstr "Je třeba mít na paměti několik věcí:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid ""
@@ -20874,18 +20994,25 @@ msgid ""
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``."
 msgstr ""
+"Pokud zděděná (rodičovská) třída (``State.gd``) definuje konstruktor "
+"``_init``, který přijímá argumenty (v tomto případě ``e``), pak dědící třída "
+"tj. potomek (``Idle.gd``) *musí* definovat také ``_init`` a předat příslušné "
+"parametry rodičovskému konstruktoru ``_init`` třídy ``State.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1188
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
 msgstr ""
+"``Idle.gd`` může mít jiný počet argumentů než rodičovská třída ``State.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
 msgstr ""
+"Ve výše uvedeném příkladu je ``e`` předané konstruktoru ``State.gd`` stejné "
+"``e`` předané konstruktoru ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
 msgid ""
@@ -20894,20 +21021,27 @@ msgid ""
 "This brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. eg.::"
 msgstr ""
+"Pokud nemá konstruktor ``_init`` třídy ``Idle.gd`` žádné argumenty, musí "
+"stále předávat určitou hodnotu nadřazené třídě ``State.gd``, a to i když by "
+"nedělal nic jiného. Tím se dostáváme k faktu, že základnímu konstruktoru lze "
+"předávat i literály, nejen proměnné. např.::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid "Inner classes"
-msgstr ""
+msgstr "Vnitřní třídy"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
+"Soubor třídy může obsahovat vnitřní třídy. Vnitřní třídy se definují pomocí "
+"klíčového slova ``class``. Jejich instance se vytváříí pomocí ``Jménotřídy."
+"new()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid "Classes as resources"
-msgstr ""
+msgstr "Třídy jako zdroje"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
 msgid ""
@@ -20917,19 +21051,23 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
+"Třídy uložené jako soubory se považují za :ref:`zdroje<class_GDScript>`. "
+"Přistupovat k nim lze po jejich načtení z disku. K tomu slouží funkce "
+"``load`` nebo ``preload`` (viz níže). Vytvoření instance třídy načteného "
+"zdroje se provádí voláním funkce ``new`` na objektu této třídy::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 msgid "Exports"
-msgstr ""
+msgstr "Exporty"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
-msgstr ""
+msgstr "Dokumentace o exportech byla přesunuta do :ref:`doc_gdscript_exports`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1254
 msgid "Setters/getters"
-msgstr ""
+msgstr "Setters/getters"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1256
 msgid ""
@@ -20937,12 +21075,17 @@ msgid ""
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
+"Často je užitečné vědět, že se členská proměnná třídy z nějakého důvodu "
+"změní. Může být také žádoucí nějakým způsobem zapouzdřit (rozuměj omezit) "
+"přístup k ní."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
+"K tomu účelu GDScript nabízí syntaxi *setter/getter* pomocí klíčového slova "
+"``setget``. Používá se přímo za definicí proměnné:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
 msgid ""
@@ -20953,10 +21096,16 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example::"
 msgstr ""
+"Kdykoli je hodnota ``proměnné`` změněna *externím* zdrojem (tj. ne lokálním "
+"použitím ve třídě), zavolá se funkce *setter* (``setterfunc`` výše). To se "
+"stane *předtím*, než se změní hodnota. Funkce *setter* musí rozhodnout, co s "
+"novou hodnotou udělá. A naopak, když se přistupuje k ``proměnné``, musí "
+"funkce *getter* (``getterfunc`` výše) ``vrátit`` požadovanou hodnotu. Níže "
+"je uveden příklad::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Either of the *setter* or *getter* functions can be omitted::"
-msgstr ""
+msgstr "Lze vynechat kteroukoli z funkcí *setter* nebo *getter* ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
 msgid ""
@@ -20964,16 +21113,21 @@ msgid ""
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
 "validating input."
 msgstr ""
+"Settery a gettery jsou užitečné při :ref:`exportování proměnných "
+"<doc_gdscript_exports>` do editoru ve skriptech nástrojů nebo zásuvných "
+"modulů pro ověřování vstupů."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
+"Jak již bylo řečeno, *lokální* přístup *nespustí* setter a getter. Zde je "
+"příklad:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
 msgid "Tool mode"
-msgstr ""
+msgstr "Tool mode"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 msgid ""
@@ -20983,10 +21137,15 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file::"
 msgstr ""
+"Ve výchozím nastavení se skripty v editoru nespouštějí a lze měnit pouze "
+"exportované vlastnosti. V některých případech je všaj žádoucí, aby se uvnitř "
+"editoru spustily (pokud neiniciují herní kód nebo se tomu ručně vyhýbají). "
+"Pro tyto účely existuje klíčové slovo ``tool``, které musí být umístěno na "
+"začátek souboru::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
-msgstr ""
+msgstr "Více informací naleznete v :ref:`doc_running_code_in_the_editor`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
 msgid ""
@@ -20994,10 +21153,14 @@ msgid ""
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
+"Buďte opatrní při uvolňování uzlů pomocí ``queue_free()`` nebo ``free()`` ve "
+"skriptech nástrojů (zejména u vlastníka skriptu). Protože skripty nástrojů "
+"spouštějí svůj kód v editoru, může jejich nesprávné použití vést k pádu "
+"editoru."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
 msgid "Memory management"
-msgstr ""
+msgstr "Správa paměti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 msgid ""
@@ -21009,6 +21172,14 @@ msgid ""
 "reference cycles that can't be freed, a :ref:`class_WeakRef` function is "
 "provided for creating weak references. Here is an example:"
 msgstr ""
+"Pokud třída dědí z :ref:`class_Reference`, budou instance uvolněny, jakmile "
+"se již nebudou používat. Neexistuje žádný garbage collector, pouze počítání "
+"referencí. Ve výchozím nastavení všechny třídy, které nedefinují dědičnost, "
+"dědí z **Reference**. Pokud to není žádoucí, pak musí třída dědit :ref:"
+"`class_Object` ručně a musí volat ``instance.free()``. Aby se předešlo "
+"referenčním cyklům, které nelze uvolnit, je k dispozici funkce :ref:"
+"`class_WeakRef` pro vytváření tzv. weak referencí (neuvažují se př itestu "
+"uvolnění instance). Zde je příklad:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
@@ -21016,6 +21187,8 @@ msgid ""
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
+"Pokud se nepoužívají reference, lze ke kontrole, zda byl objekt uvolněn, "
+"použít příkaz ``is_instance_valid(instance)``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
@@ -24711,7 +24884,6 @@ msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
@@ -24721,8 +24893,9 @@ msgid ""
 msgstr ""
 "Je třeba (znovu) sestavit projektu, kdykoli chcete vidět nové exportované "
 "proměnné nebo signály v editoru. Toto sestavení lze spustit ručně kliknutím "
-"na slovo **Mono** v dolní části okna editoru, abyste odkryli panel Mono, "
-"poté klikněte na tlačítko **Vybrat projekt**."
+"na nápis **Build** v pravém horním rohu editoru. Můžete také kliknout na "
+"tlačítko **Mono** v dolní části okna editoru, čímž se zobrazí panel Mono, a "
+"poté kliknout na tlačítko **Sestavit projekt**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:236
 msgid ""
@@ -34097,9 +34270,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
-#, fuzzy
 msgid "Using TileMaps"
-msgstr "Použití souboru"
+msgstr "Používání TileMaps"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
@@ -37161,9 +37333,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
-#, fuzzy
 msgid "There are two main ways to alleviate banding:"
-msgstr "Zdroje lze ukládat dvěma způsoby. Mohou to být:"
+msgstr "Existují dva hlavní způsoby, jak zmírnit páskování:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
@@ -40214,9 +40385,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:4
-#, fuzzy
 msgid "Using GridMaps"
-msgstr "Použít mřížkové přichytávání"
+msgstr "Používání GridMaps"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:9
 msgid ""
@@ -49684,9 +49854,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Physics material"
-msgstr "Fyzika"
+msgstr "Fyzikální materiál"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:57
 msgid ""
@@ -55102,9 +55271,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "Using AnimationTree"
-msgstr "Strom animací"
+msgstr "Použití AnimationTree (Stromu animací)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -56311,9 +56479,8 @@ msgid "**Troubleshooting issues with controllers in Godot.**"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:23
-#, fuzzy
 msgid "Supporting universal input"
-msgstr "Aspekty exportu"
+msgstr "Podpora univerzálního vstupu"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:25
 msgid ""
@@ -56448,7 +56615,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
-#, fuzzy
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
 "com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
@@ -56456,7 +56622,7 @@ msgid ""
 msgstr ""
 "Seznam známých chyb najdete v `seznamu otevřených problémů na GitHubu "
 "týkajících se webového editoru <https://github.com/godotengine/godot/issues?"
-"q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__."
+"q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__."
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
 msgid "My controller isn't recognized by Godot."
@@ -60822,9 +60988,8 @@ msgstr ""
 "prvek získal svoji přirozenou velikost."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:4
-#, fuzzy
 msgid "Using Containers"
-msgstr "Kontejnery"
+msgstr "Používání kontejnerů"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:6
 msgid ""
@@ -61781,20 +61946,18 @@ msgid "Here is a list of common Control nodes with their name next to them:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/control_node_gallery.rst:8
-#, fuzzy
 msgid ""
 "The Control Gallery demo pictured above can be found `on GitHub <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/gui/"
 "control_gallery>`__."
 msgstr ""
 "Pokud vám při učení vyhovují více příklady, můžete se také podívat na různé "
-"\"Godot demo projekty <https://github.com/godotengine/godot-demo-projects"
-"\"'_."
+"`Godot demo projekty <https://github.com/godotengine/godot-demo-projects/"
+"tree/master/gui/control_gallery>`__."
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
-#, fuzzy
 msgid "Using Viewports"
-msgstr "2 výřezy"
+msgstr "Používání výřezů"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
@@ -68145,9 +68308,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:4
-#, fuzzy
 msgid "Using VisualShaders"
-msgstr "Vizuální shadery"
+msgstr "Použití nástroje VisualShaders"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:6
 msgid ""
@@ -83723,9 +83885,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:64
-#, fuzzy
 msgid "Sending your own quit notification"
-msgstr "Godot oznámení"
+msgstr "Odesílání vlastního oznámení o ukončení"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:66
 msgid ""
@@ -88527,9 +88688,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:88
-#, fuzzy
 msgid "Building the Editor"
-msgstr "Vestavěný editor motivů."
+msgstr "Vestavěný editor motivů"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""
@@ -90562,11 +90722,12 @@ msgid "References:"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:37
-#, fuzzy
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "typedefs.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
@@ -90735,29 +90896,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:168
-#, fuzzy
 msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/3.x/core/vector."
 "h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/3.x/core/vector."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
-#, fuzzy
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
-#, fuzzy
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
-#, fuzzy
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/3.x/core/map.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/3.x/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:176
 msgid ""
@@ -90768,11 +90930,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:184
-#, fuzzy
 msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
 "h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
@@ -90808,9 +90971,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:211
-#, fuzzy
 msgid "`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 #: ../../docs/development/file_formats/tscn.rst:136
@@ -90824,11 +90987,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:222
-#, fuzzy
 msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "node_path.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
@@ -90843,10 +91007,10 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:235
 #: ../../docs/development/cpp/custom_godot_servers.rst:319
-#, fuzzy
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
@@ -90918,11 +91082,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:40
-#, fuzzy
 msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
 "h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
+"h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
@@ -90954,10 +91119,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:60
-#, fuzzy
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
@@ -90986,11 +91151,12 @@ msgid "This makes Objects gain a lot of functionality, like for example"
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:38
-#, fuzzy
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
 "h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
@@ -91056,11 +91222,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:96
-#, fuzzy
 msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "class_db.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
@@ -91251,11 +91418,12 @@ msgid "Resources without a path are fine too."
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:277
-#, fuzzy
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
@@ -92416,14 +92584,12 @@ msgid "Editor development"
 msgstr "Vývoj editoru"
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:4
-#, fuzzy
 msgid "Introduction to editor development"
-msgstr "Úvod do exportu"
+msgstr "Úvod do vývoje editoru"
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:6
-#, fuzzy
 msgid "On this page, you will learn:"
-msgstr "Naučíte se:"
+msgstr "Na této stránce se dozvíte:"
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:8
 msgid "The **design decisions** behind the Godot editor."
@@ -92466,9 +92632,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:33
-#, fuzzy
 msgid "Directory structure"
-msgstr "Struktura souborů"
+msgstr "Struktura adresářů"
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:35
 msgid ""
@@ -92563,9 +92728,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:80
-#, fuzzy
 msgid "Development tips"
-msgstr "Vývoj"
+msgstr "Tipy pro vývoj"
 
 #: ../../docs/development/editor/introduction_to_editor_development.rst:82
 msgid ""

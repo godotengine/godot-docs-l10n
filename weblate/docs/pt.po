@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# André Silva <andre.olivais@gmail.com>, 2021.
 # DeeJayLSP <djlsplays@gmail.com>, 2020-2021.
 # João Lopes <linux-man@hotmail.com>, 2020-2021.
 # ssantos <ssantos@web.de>, 2021.
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-06-02 13:32+0200\n"
-"PO-Revision-Date: 2021-05-10 15:32+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2021-07-03 10:33+0000\n"
+"Last-Translator: André Silva <andre.olivais@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pt/>\n"
 "Language: pt\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -131,7 +132,6 @@ msgstr ""
 "função de busca no canto superior esquerdo."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
@@ -140,7 +140,7 @@ msgid ""
 msgstr ""
 "Também pode `descarregar uma cópia em HTML <https://nightly.link/godotengine/"
 "godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ para ler "
-"offline (atualizada toda Segunda-feira). Extraia o arquivo ZIP e abra "
+"offline (atualizada todas as segundas-feiras). Extraia o arquivo ZIP e abra "
 "``index.html`` na raiz num navegador da web."
 
 #: ../../docs/index.rst:45
@@ -1077,16 +1077,14 @@ msgstr ""
 "baixa?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot intencionalmente não inclui funcionalidades que podem ser "
-"implementadas por [i]add-ons[/i] a não ser que sejam usadas muito "
-"frequentemente. Um exemplo disso seria o recurso de inteligência artifical "
-"avançada."
+"Godot não inclui funcionalidades que podem ser implementadas por [i]add-ons[/"
+"i] intencionalmente, a não ser que sejam usadas muito frequentemente. Um "
+"exemplo disso seria uma função de inteligência artifical avançada."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
@@ -1458,19 +1456,18 @@ msgstr ""
 "teste ou projetos de exemplo (se aplicável)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "É possível utilizar a Godot como uma biblioteca?"
+msgstr "É possível utilizar a Godot para criar aplicações que não sejam jogos?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"O tamanho de distribuição pequeno do Godot pode fazê-lo de uma alternativa "
-"para plataformas como Electron ou Qt."
+"Sim! O tamanho de distribuição pequeno do Godot, juntamente com o seu "
+"sistema de UI built-in, pode fazê-lo de uma alternativa para plataformas "
+"como Electron ou Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
