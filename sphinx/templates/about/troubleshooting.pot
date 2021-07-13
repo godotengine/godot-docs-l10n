@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,61 +65,69 @@ msgid "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:47
-msgid "The Godot editor appears frozen after clicking the system console."
+msgid "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:49
-msgid "When running Godot on Windows with the system console enabled, you can accidentally enable *selection mode* by clicking inside the command window. This Windows-specific behavior pauses the application to let you select text inside the system console. Godot cannot override this system-specific behavior."
+msgid "This is a `known issue <https://github.com/godotengine/godot/issues/32990>`__ caused by the third-party Stardock Fences application on Windows. The only known workaround is to disable Stardock Fences while using Godot."
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:54
+msgid "The Godot editor appears frozen after clicking the system console."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:56
+msgid "When running Godot on Windows with the system console enabled, you can accidentally enable *selection mode* by clicking inside the command window. This Windows-specific behavior pauses the application to let you select text inside the system console. Godot cannot override this system-specific behavior."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:61
 msgid "To solve this, select the system console window and press Enter to leave selection mode."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:58
+#: ../../docs/about/troubleshooting.rst:65
 msgid "Some text such as \"NO DC\" appears in the top-left corner of the project manager and editor window."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:60
+#: ../../docs/about/troubleshooting.rst:67
 msgid "This is caused by the NVIDIA graphics driver injecting an overlay to display information."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:62
+#: ../../docs/about/troubleshooting.rst:69
 msgid "To disable this overlay on Windows, restore your graphics driver settings to the default values in the NVIDIA Control Panel."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:65
+#: ../../docs/about/troubleshooting.rst:72
 msgid "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen 0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:69
+#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:71
+#: ../../docs/about/troubleshooting.rst:78
 msgid "Unlike the editor, the project isn't marked as DPI-aware by default. This is done to improve performance, especially on integrated graphics, where rendering 3D scenes in hiDPI is slow."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:75
+#: ../../docs/about/troubleshooting.rst:82
 msgid "To resolve this, open **Project > Project Settings** and enable **Display > Window > Dpi > Allow Hidpi**. On top of that, make sure your project is configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:80
+#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:82
+#: ../../docs/about/troubleshooting.rst:89
 msgid "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. To resolve this, open **Project > Project Settings** and enable **Display > Window > Dpi > Allow Hidpi**. On top of that, make sure your project is configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:88
+#: ../../docs/about/troubleshooting.rst:95
 msgid "The project works when run from the editor, but fails to load some files when running from an exported copy."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:90
+#: ../../docs/about/troubleshooting.rst:97
 msgid "This is usually caused by forgetting to specify a filter for non-resource files in the Export dialog. By default, Godot will only include actual *resources* into the PCK file. Some files commonly used, such as JSON files, are not considered resources. For example, if you load ``test.json`` in the exported project, you need to specify ``*.json`` in the non-resource export filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:97
+#: ../../docs/about/troubleshooting.rst:104
 msgid "On Windows, this can also be due to :ref:`case sensitivity <doc_project_organization_case_sensitivity>` issues. If you reference a resource in your script with a different case than on the filesystem, loading will fail once you export the project. This is because the virtual PCK filesystem is case-sensitive, while Windows's filesystem is case-insensitive by default."
 msgstr ""

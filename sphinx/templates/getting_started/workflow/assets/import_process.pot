@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "Previously, importing assets in Godot 2.x required manual maintenance of 
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-msgid "In Godot 3.0+, we use a more modern approach to importing: Simply drop your assets (image files, scenes, audio files, fonts, etc) directly in the project folder (copy them manually with your OS file explorer). Godot will automatically import these files internally and keep the imported resources hidden in a res://.import folder."
+msgid "In Godot 3.0+, we use a more modern approach to importing: Simply drop your assets (image files, scenes, audio files, fonts, etc) directly in the project folder (copy them manually with your OS file explorer). Godot will automatically import these files internally and keep the imported resources hidden in a ``res://.import`` folder."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
@@ -81,11 +81,11 @@ msgid "Files generated"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
-msgid "Importing will add an extra <asset>.import file, containing the import configuration. Make sure to commit these to your version control system!"
+msgid "Importing will add an extra ``<asset>.import`` file, containing the import configuration. Make sure to commit these to your version control system!"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
-msgid "Additionally, extra assets will be preset in the hidden res://.import folder:"
+msgid "Additionally, extra assets will be preset in the hidden ``res://.import`` folder:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80

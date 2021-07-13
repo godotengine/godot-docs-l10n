@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:32+0200\n"
+"POT-Creation-Date: 2021-07-13 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,22 +32,22 @@ msgstr ""
 msgid "Just like :ref:`doc_making_plugins`, we start out by making a new plugin, getting a ``plugin.cfg`` file created, and start with our :ref:`class_EditorPlugin`.  However, instead of using ``add_custom_node`` or ``add_control_to_dock`` we'll use ``add_inspector_plugin``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:40
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:41
 msgid "EditorInspectorPlugin"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:42
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:43
 msgid "To actually connect into the Inspector, we create a :ref:`class_EditorInspectorPlugin` class. This script provides the \"hooks\" to the inspector. Thanks to this class, the editor will call the functions within the EditorInspectorPlugin while it goes through the process of building the UI for the inspector. The script is used to check if we should enable ourselves for any :ref:`class_Object` that is currently in the inspector (including any :ref:`class_Resource` that is embedded!)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:50
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:51
 msgid "Once enabled, EditorInspectorPlugin has methods that allow for adding :ref:`class_EditorProperty` nodes or just custom :ref:`class_Control` nodes to the beginning and end of the inspector for that :ref:`class_Object`, or for overriding or changing existing property editors."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:84
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:85
 msgid "EditorProperty"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:86
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:87
 msgid "Next, we define the actual :ref:`class_EditorProperty` custom value editor that we want instantiated to edit integers. This is a custom :ref:`class_Control` and we can add any kinds of additional nodes to make advanced widgets to embed in the inspector."
 msgstr ""
