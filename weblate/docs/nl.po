@@ -12,6 +12,7 @@
 # frank <frankvprive@gmail.com>, 2018.
 # Freek De Sagher <freek.desagher@student.uantwerpen.be>, 2020.
 # Gaetan Deglorie <sharkithepointed@gmail.com>, 2018-2019.
+# Hugo van de Kuilen <hugo.vandekuilen1234567890@gmail.com>, 2021.
 # jaron maene <jaron.maene@gmail.com>, 2018.
 # jef dered <themen098s@vivaldi.net>, 2019.
 # Julian <jdhoogvorst@gmail.com>, 2019-2020.
@@ -36,16 +37,16 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-05-26 05:32+0000\n"
-"Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
-"docs/nl/>\n"
+"PO-Revision-Date: 2021-08-02 02:00+0000\n"
+"Last-Translator: Hugo van de Kuilen <hugo.vandekuilen1234567890@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -156,16 +157,16 @@ msgstr ""
 "functionaliteit in de linker bovenhoek gebruiken."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
-"Jij kan ook een 'html kopie installeren <https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>` voor "
-"offline gebruik (dit woord elke maandag bijgewerkt)."
+"Je kan ook een `html kopie installeren <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ voor "
+"offline gebruik (dit woord elke maandag bijgewerkt). Pak het ZIP archief uit "
+"en open ``index.html`` in een web browser."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -821,7 +822,6 @@ msgstr ""
 "van de kracht die GDScript jou biedt."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -829,8 +829,9 @@ msgid ""
 "complexity**."
 msgstr ""
 "Er zijn verschillende redenen om GDScript te gebruiken -- zeker wanneer je "
-"werkt aan prototypes of aan alpha/beta projecten -- maar de voornaamste "
-"reden is de **vermindering van complexiteit.**"
+"werkt aan prototypes, aan de alpha/beta fase van projecten of als je niet "
+"werkt aan de volgende AAA game -- maar de voornaamste reden is dat het alles "
+"**wat makkelijker maakt**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -954,13 +955,12 @@ msgstr ""
 "Squirrel, JS, AS, enz.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Vertragingen ofwel een onnodig hoog geheugengebruik door de garbage "
-"collector (Lua, Python, JS, AS, etc.)."
+"De automatische geheugenbeheerder zorgde voor stotters en onnodig veel "
+"geheugen gebruik (Lua, Python, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
@@ -1062,6 +1062,7 @@ msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
 msgstr "Waarom gebruikt Godot Vulkan of OpenGL in plaats van Direct3D?"
 
 #: ../../docs/about/faq.rst:189
+#, fuzzy
 msgid ""
 "Godot aims for cross-platform compatibility and open standards first and "
 "foremost. OpenGL and Vulkan are the technologies that are both open and "
@@ -1069,6 +1070,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot streefd naar compatibiliteit over meerdere platformen en allereerst "
+"open standaarden. OpenGL en Vulkan zijn technologiën die open en beschikbaar "
+"zijn op (bijna) alle platformen. Mede door deze design keus, zal een project "
+"gemaakt met Godot op Window uit zichzelf ook op Linux, macOS en anderen "
+"afspelen."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -1088,10 +1094,14 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Op de lange termijn, zullen we misschien een Direct3D 12 renderer "
+"ontwikkelen voor Godot (vooral voor Xbox compatibiliteit), maar Vulkan en "
+"OpenGL zullen de standaard render backend zijn voor alle platformen, ook "
+"Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "Waarom probeert Godot zijn kern functie-set zo klein te houden?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -12224,7 +12234,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:224
 msgid "SceneTree"
-msgstr ""
+msgstr "ScèneBoom"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""

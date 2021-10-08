@@ -12,6 +12,7 @@
 # IoeCmcomc <hopdaigia2004@gmail.com>, 2021.
 # Kê Luyện <tranminhluyen.1993@gmail.com>, 2019.
 # mth2610 <mth2610@gmail.com>, 2018.
+# Nguyen Mao <maonguyen199873@gmail.com>, 2021.
 # Peter Anh <peteranh3105@gmail.com>, 2019.
 # Rev <revolnoom7801@gmail.com>, 2021.
 # Steve Dang <bynguu@outlook.com>, 2019-2020.
@@ -24,8 +25,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-05-31 10:33+0000\n"
-"Last-Translator: Giacat Buile <hatconan20024@gmail.com>\n"
+"PO-Revision-Date: 2021-09-15 00:47+0000\n"
+"Last-Translator: IoeCmcomc <hopdaigia2004@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/vi/>\n"
 "Language: vi\n"
@@ -33,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -142,7 +143,6 @@ msgstr ""
 "bên trái."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
@@ -151,8 +151,8 @@ msgid ""
 msgstr ""
 "Bạn cũng có thể `tải một bản sao HTML <https://nightly.link/godotengine/"
 "godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip> `__ để đọc "
-"offline (cập nhật thứ hai hàng tuần). Giải nén ZIP rồi hãy mở tệp ``index."
-"html`` bằng trình duyệt."
+"offline (cập nhật thứ hai hàng tuần). Giải nén tệp zip rồi mở ``index.html`` "
+"bằng trình duyệt."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -168,7 +168,6 @@ msgstr ""
 "được thứ bạn muốn, xin hãy cho chúng tôi biết!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -177,13 +176,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"Gửi một vấn đề (issue) hoặc kéo yêu cầu (pull request) trên `GitHub "
-"repository <https://github.com/godotengine/godot-docs/issues>`_, cùng giúp "
-"`dịch bộ tài liệu <https://hosted.weblate.org/engage/godot-engine/>`_ thành "
-"ngôn ngữ của bạn, hoặc thảo luận cùng nhau trên cả kênh ``#documentation`` "
-"trong `Discord <https://discord.gg/zH7NUgz>`_, hoặc trên kênh ``#godotengine-"
-"doc`` ở `irc.freenode.net <http://webchat.freenode.net/?"
-"channels=#godotengine-doc>`_!"
+"Tạo một vấn đề (issue) hoặc yêu cầu (pull request) trên `GitHub repository "
+"<https://github.com/godotengine/godot-docs/issues>`_, giúp chúng tôi `dịch "
+"bộ tài liệu <https://hosted.weblate.org/engage/godot-engine/>`_ thành ngôn "
+"ngữ của bạn, thảo luận cùng nhau trên kênh ``#documentation`` trong `Discord "
+"<https://discord.gg/zH7NUgz>`_, hoặc ``#godotengine-doc`` ở `"
+"irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:62
 msgid "weblate_widget"
@@ -326,7 +324,7 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
-"Nếu bạn gặp khó khắn với một trong số các bài hướng dẫn hoặc dự án của bạn, "
+"Nếu bạn gặp khó khăn với một trong số các bài hướng dẫn hoặc dự án của bạn, "
 "bạn có thể tìm kiếm giúp đỡ trên các :ref:`Kênh cộng "
 "đồng<doc_community_channels>`, đặc biệt là Discord cộng đồng của Godot, Q&A "
 "và IRC."
@@ -455,7 +453,6 @@ msgstr ""
 "phần mềm, lịch sử, giấy phép, tác giả, vv. Nó cũng chứa :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -463,9 +460,9 @@ msgid ""
 "tutorial which should be the entry point for all new users."
 msgstr ""
 "Phần :ref:`sec-learn` là phần chính *raison d'être* của tài liệu này vì nó "
-"chứa tất cả các thông tin cần thiết về việc sử dụng phần mềm để tạo ra các "
-"trò chơi. Nó bắt đầu bằng bài :ref:`Step by step <toc-learn-step_by_step>` "
-"hướng dẫn mà nên là điểm xuất phát cho tất cả người dùng mới."
+"chứa tất cả các thông tin cần thiết về việc sử dụng phần mềm để có thể tạo "
+"ra các trò chơi. Nó bắt đầu bằng bài :ref:`Step by step <toc-learn-"
+"step_by_step>` và đây là điểm xuất phát tốt cho những người dùng mới."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -698,16 +695,14 @@ msgstr ""
 "dựa trên ARM với Linux, như Raspberry Pi."
 
 #: ../../docs/about/faq.rst:57
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Một vài người dùng cũng báo cáo về việc xây dựng và sử dụng Godot thành công "
-"trên các hệ thống dựa trên ARM với linux, như Raspberry Pi. Đồng thời cũng "
-"có 1 số nhóm không chính thức xây dựng cho 1 số consoles. Tuy nhiên, không "
-"có gì được bao gồm trong build scripts hoặc mô hình xuất bản."
+"Ngoài ra, cũng có 1 số phiên bản không chính thức được xây dựng cho 1 số "
+"consoles. Tuy nhiên, không thứ gì trong những phiên bản này được xuất hiện "
+"trong bản chính thức cho đến hiện tại."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
@@ -783,7 +778,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "GDScript là gì và tại sao tôi nên sử dụng nó?"
 
 #: ../../docs/about/faq.rst:95
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -802,7 +796,6 @@ msgstr ""
 "dẫn sử dụng GDScript <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -810,8 +803,8 @@ msgid ""
 "complexity**."
 msgstr ""
 "Có vài lí do để sử dụng GDScript-- đặc biệt khi bạn đang viết bản chạy thử, "
-"trong quá trình alpha/beta của dự án, hoặc không có ý định tạo ra tựa game "
-"AAA tiếp theo--nhưng lí do nổi bật nhất đó là **giảm độ phức tạp.**"
+"trong quá trình alpha/beta của dự án, hoặc không có ý định tạo ra một tựa "
+"game AAA--nhưng lí do nổi bật nhất đó là **giảm độ phức tạp.**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -4175,16 +4168,15 @@ msgid "Your first look at Godot's editor"
 msgstr "Cái nhìn đầu tiên của bạn về editor (trình soạn thảo) của Godot,"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Chào mừng bạn đến Godot! Với dự án mở của bạn, bạn sẽ thấy giao diện của "
-"editor với 3D viewport đang hoạt động. Bạn có thể thay đổi không gian làm "
-"việc hiện tại ở phía trên của giao diện. Nhấp vào 2D để chuyển sang không "
-"gian làm việc 2D."
+"Chào mừng bạn đến Godot! Với dự án mới mở, bạn sẽ thấy giao diện của editor "
+"với 3D viewport đang hoạt động. Bạn có thể thay đổi không gian làm việc hiện "
+"tại ở phía trên của giao diện. Nhấp vào 2D để chuyển sang không gian làm "
+"việc 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
@@ -4380,7 +4372,6 @@ msgstr ""
 "ra các công thức mới và món ngon cho khách của bạn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
-#, fuzzy
 msgid ""
 "So, how does a chef create a recipe? Recipes are divided into two sections: "
 "the first is the ingredients and the second is the instructions to prepare "
@@ -4388,9 +4379,9 @@ msgid ""
 "creation."
 msgstr ""
 "Vì vậy, làm thế nào để một đầu bếp tạo ra một công thức? Bí quyết được chia "
-"thành hai phần: phần thứ nhất là nguyên liệu và phần thứ hai là hướng dẫn để "
-"chuẩn bị. Bằng cách này, bất cứ ai cũng có thể làm theo công thức và thưởng "
-"thức sáng tạo tuyệt vời của bạn."
+"thành hai phần: thứ nhất là nguyên liệu và thứ hai là công thức. Bằng cách "
+"này, bất cứ ai cũng có thể thực hiện và thưởng thức sự sáng tạo tuyệt vời "
+"của bạn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -5919,7 +5910,7 @@ msgstr "Mà sẽ hiển thị một bộ đếm tăng dẫn sau mỗi từng khu
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "Nhóm (Groups)"
+msgstr "Nhóm"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -6684,7 +6675,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
 msgid "Sprite animation"
-msgstr "Hoạt hình Sprite (Sprite animation)"
+msgstr "Sprite động"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 #, fuzzy
@@ -15011,7 +15002,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Nâng nút lên"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -15026,7 +15017,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Hạ nút xuống"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -15270,7 +15261,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "Go to Function"
-msgstr "Đi tới Hàm"
+msgstr "Đi tới hàm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -22812,14 +22803,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Các dự án demo về OS testing có thể tìm thấy ở `<https://github.com/"
+"godotengine/godot-demo-projects>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
@@ -59690,15 +59679,13 @@ msgid "Here is a list of common Control nodes with their name next to them:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/control_node_gallery.rst:8
-#, fuzzy
 msgid ""
 "The Control Gallery demo pictured above can be found `on GitHub <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/gui/"
 "control_gallery>`__."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Các hình ảnh demo của Control Gallery có thể được tìm thấy ở `<https://github"
+".com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
 #, fuzzy
@@ -60733,14 +60720,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:452
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Hãy xem qua ví dụ về 3D viewport scaling ở `Godot demo projects "
+"<https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
 msgid "Using a Viewport as a texture"
@@ -69801,12 +69786,9 @@ msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:138
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`Demo dự án Godot Oculus <https://github.com/GodotVR/godot-oculus-demo>`_."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
@@ -70055,14 +70037,12 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Bạn có thể tìm thấy dự án hoàn thiện ở `OpenVR GitHub repository "
+"<https://github.com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
@@ -73341,14 +73321,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
-#, fuzzy
 msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Nếu bạn muốn giúp đỡ để hoàn thiện plugin này, tham gia với chúng tôi tại `"
+"đây <https://github.com/GodotVR/godot_oculus_mobile>`__."
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
@@ -75246,14 +75224,12 @@ msgid "SCons as a build tool,"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
-#, fuzzy
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
 "cpp>`__."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"một bản sao của `godot-cpp repository <https://github.com/godotengine/godot-"
+"cpp>`__."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
 msgid ""
@@ -76299,15 +76275,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
-#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
 "android_iap>`__."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Nếu bạn cần một vài dự án minh họa, bạn có thể tìm thấy ở `đây "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
+"android_iap>`__."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
@@ -76531,9 +76506,8 @@ msgid ""
 "The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
 "Godot iOS plugins."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
+"Godot iOS plugins."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:44
 msgid ""
@@ -76559,14 +76533,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:53
-#, fuzzy
 msgid ""
 "Download the Godot engine source from the `Godot GitHub page <https://github."
 "com/godotengine/godot>`_."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Tải về mã nguồn của Godot engine ở `Godot GitHub page <https://github.com/"
+"godotengine/godot>`_."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:55
 msgid ""
@@ -84176,7 +84148,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
-msgstr ""
+msgstr "Điều hướng nhìn thấy được"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -87386,14 +87358,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:354
-#, fuzzy
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Trong trường hợp muốn build trình biên dịch đa nền tảng, hãy dùng `build "
+"scripts <https://github.com/godotengine/godot-mono-builds>`_."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:357
 msgid ""
@@ -88972,9 +88942,8 @@ msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "typedefs.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/typedefs"
+".h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
@@ -89083,24 +89052,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:134
-#, fuzzy
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/3.x/core/os/"
 "memory.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/3.x/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
-#, fuzzy
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "pool_vector.cpp>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
@@ -89184,14 +89149,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:184
-#, fuzzy
 msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
 "h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
@@ -89243,14 +89206,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:222
-#, fuzzy
 msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "node_path.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
@@ -89370,23 +89331,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:59
-#, fuzzy
 msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "dictionary.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 #, fuzzy
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
@@ -89680,14 +89637,12 @@ msgid "Resources without a path are fine too."
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:277
-#, fuzzy
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/resource"
+".h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
@@ -92960,14 +92915,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:33
-#, fuzzy
 msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Nếu bạn muốn đóng góp vào phần hướng dẫn, mã nguồn có thể được tìm thấy ở `"
+"đây <https://github.com/godotengine/godot-docs>`_."
 
 #: ../../docs/community/contributing/pr_workflow.rst:36
 msgid ""
@@ -94597,14 +94550,12 @@ msgid "To get started, you need to:"
 msgstr ""
 
 #: ../../docs/community/contributing/building_the_manual.rst:12
-#, fuzzy
 msgid ""
 "Clone the `godot-docs repository <https://github.com/godotengine/godot-docs/"
 ">`__."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Clone the `godot-docs repository <https://github.com/godotengine/godot-docs/"
+">`__."
 
 #: ../../docs/community/contributing/building_the_manual.rst:13
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
@@ -94617,14 +94568,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/building_the_manual.rst:16
-#, fuzzy
 msgid ""
 "Install the Sphinx extensions defined in the `godot-docs repository <https://"
 "github.com/godotengine/godot-docs/>`__ ``requirements.txt`` file."
 msgstr ""
-"Ngoài bộ tài liệu này, bạn cũng có thể xem thử các dự án demo có sẵn của "
-"Godot `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Cài đặt Sphinx extensions ở `godot-docs repository <https://github.com/"
+"godotengine/godot-docs/>`__ ``requirements.txt`` file."
 
 #: ../../docs/community/contributing/building_the_manual.rst:19
 msgid ""

@@ -16,28 +16,33 @@
 # Gamebel Developer <david.agung.satrio@gmail.com>, 2021.
 # Hanz <hanzhaxors@gmail.com>, 2021.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
+# Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>, 2021.
 # Jacque Fresco <aidter@use.startmail.com>, 2021.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
+# Nasrul Aziz <aziznasrul85@gmail.com>, 2021.
 # Naufal Adriansyah <naufaladrn90@gmail.com>, 2021.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
 # Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2021.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # RIDHO NURUL ADILLA <ridhonuruladilla@gmail.com>, 2021.
+# Romi Kusuma Bakti <romikusumab@gmail.com>, 2021.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2021.
 # triarts <agung.triarta.h@gmail.com>, 2019.
+# Tsaqib Fadhlurrahman Soka <sokatsaqib@gmail.com>, 2021.
 # undisputedgoose <diablodvorak@gmail.com>, 2021.
 # yusuf afandi <afandi.yusuf.04@gmail.com>, 2020.
+# zephyroths <ridho.hikaru@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-07-05 18:38+0000\n"
-"Last-Translator: undisputedgoose <diablodvorak@gmail.com>\n"
+"PO-Revision-Date: 2021-10-07 10:25+0000\n"
+"Last-Translator: Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -45,7 +50,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -96,7 +101,7 @@ msgstr ""
 "Ini adalah dokumentasi untuk versi stabil 3.3. Ingin melihat dokumentasi "
 "dari versi **dalam pengembangan** saat ini? `Silakan menuju ke <https://docs."
 "godotengine.org/en/latest>`_. Anda juga bisa menelusuri dokumentasi untuk "
-"versi stabil `3.1 <https://docs.godotengine.org/en/3.1>`_ sebelumnya."
+"versi stabil `3.2 <https://docs.godotengine.org/en/3.2>`_ sebelumnya."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -156,16 +161,15 @@ msgstr ""
 "kiri atas."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
-"Anda juga dapat `mengunduh salinan HTML`<https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>` __ untuk "
-"membaca luring (diperbaharui setiap senin). Ekstrak arsip ZIP-nya dan buka "
+"Anda juga dapat `mengunduh salinan HTML <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/master/godot-docs-html.zip>`__ untuk "
+"membaca luring (diperbarui setiap senin). Ekstrak arsip ZIP-nya dan buka "
 "level atas ``index.html`` dalam browser."
 
 #: ../../docs/index.rst:45
@@ -827,17 +831,16 @@ msgstr ""
 "sejarah, dan  gambaran tentang apa yang disediakan oleh GDScript,."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity**."
 msgstr ""
-"Ada beberapa alasan untuk menggunakan GDScript--Terutama bila anda sedang "
-"membuat prototype, saat proyek anda berada pada fase alpha/beta, atau jika "
+"Ada beberapa alasan untuk menggunakan GDScript--Terutama jika Anda sedang "
+"membuat prototipe, saat proyek anda berada pada fase alpha/beta, atau jika "
 "anda sedang tidak membuat game AAA yang selanjutnya--tetapi alasan yang "
-"paling penting adalah **pengurangan dalam kompleksitas.**"
+"paling penting adalah **pengurangan kompleksitas**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1106,14 +1109,13 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "Mengapa Godot ingin menjaga fitur intinya tetap kecil?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot dengan sangaja tidak termasuk fitur yang bisa diimplementasikan oleh "
-"add-ons kecuali mereka digunakan sangat sering. Salah satu contohnya adalah "
+"Godot sengaja tidak memasukkan fitur yang bisa diimplementasikan oleh add-"
+"ons kecuali fitur itu sering digunakan. Salah satu contohnya adalah "
 "fungsionalitas AI tingkat lanjut."
 
 #: ../../docs/about/faq.rst:211
@@ -1493,19 +1495,17 @@ msgstr ""
 "atau contoh projects(jika bisa diterapkan)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Apakah memungkinkan untuk menggunakan Godot sebagai pustaka (library)?"
+msgstr "Apakah Godot dapat digunakan untuk membuat aplikasi selain game?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Ukuran distribusi godot yang kecil membuatnya cocok sebagai alternatif "
-"framework seperti Electron atau Qt."
+"Ya! Godot dilengkapi dengan sistem UI bawaan, dan ukurannya yang kecil "
+"membuatnya cocok sebagai alternatif framework seperti Electron dan Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -1513,12 +1513,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Saat membuat aplikasi bukan game, pastikan untuk mengaktifkan :ref:`low-"
+"processor mode <class_ProjectSettings_property_application/run/"
+"low_processor_mode>`di Project Setting untuk mengurangi penggunaan CPU dan "
+"GPU."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Meskipun begitu, kami tidak merekomendasikan Godot untuk membuat aplikasi "
+"*mobile* karena mode low-processor belum didukung pada platform mobile."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1526,6 +1532,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Lihat juga `Pembuat Material <https://github.com/RodZill4/material-maker>`__ "
+"dan `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ sebagai "
+"contoh aplikasi sumber terbuka yang dibuat menggunakan Godot."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -1558,7 +1567,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Toolkit antarmuka pengguna apa yang digunakan Godot?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1569,6 +1578,12 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot tidak menggunakan toolkit :abbr:`GUI (Graphical User Interface)` "
+"standar seperti GTK, Qt atau wxWidgets. Sebagai gantinya, Godot menggunakan "
+"toolkit antarmuka penggunanya sendiri, yang dirender menggunakan OpenGL ES "
+"atau Vulkan. Toolkit ini diekspos dalam bentuk Control node, yang digunakan "
+"untuk merender editor (yang ditulis dalam C++). Node Kontrol ini juga dapat "
+"digunakan dalam proyek dari bahasa skrip apa pun yang didukung oleh Godot."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1578,6 +1593,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Toolkit khusus ini memungkinkan untuk memanfaatkan akselerasi perangkat "
+"keras dan memiliki tampilan yang konsisten di semua platform. Selain itu, "
+"tidak harus berurusan dengan peringatan lisensi LGPL yang datang dengan GTK "
+"atau Qt. Terakhir, ini berarti Godot \"memakan makanan anjingnya sendiri\" "
+"karena editornya sendiri adalah salah satu pengguna sistem UI Godot yang "
+"paling kompleks."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1585,11 +1606,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Toolkit UI suaian ini :ref:`tidak bisa digunakan sebagai pustaka "
+"<doc_faq_use_godot_as_library>`, tetapi Anda masih bisa :ref:`menggunakan "
+"Godot untuk membuat aplikasi selain game menggunakan editor "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Kenapa Godot tidak menggunakan STL(Standard Template Library)"
+msgstr "Kenapa Godot tidak menggunakan STL (Pustaka Templat Standar)?"
 
 #: ../../docs/about/faq.rst:415
 msgid ""
@@ -2027,14 +2051,13 @@ msgstr ""
 "oleh Godot."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"Halaman ini mencantumkan fitur yang didukung oleh versi stabil Godot (3.2) "
+"Halaman ini mencantumkan fitur yang didukung dalam versi stabil Godot (3.3) "
 "saat ini. `Fitur lainnya <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>` __ tersedia di versi pengembangan terbaru (4.0)."
 
@@ -2099,6 +2122,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Headless server untuk Linux dan macOS "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -2754,10 +2779,8 @@ msgid "Ragdolls."
 msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Bentuk bawaan: kuboid, bola, kapsul, silinder (hanya dengan fisika Bullet)."
+msgstr "Bentuk bawaan: kuboid, bola, kapsul, silinder."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -2860,7 +2883,6 @@ msgstr ""
 "asinkron atau menggunakan beberapa inti prosesor."
 
 #: ../../docs/about/list_of_features.rst:312
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
@@ -2982,6 +3004,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Input audio untuk merekam mikrofon dengan akses real-time menggunakan class "
+"AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -3138,6 +3162,7 @@ msgstr "Masukan pena / tablet dengan dukungan tekanan."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Dukungan input gamepad, papan tik, dan tetikus juga tersedia di Android."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -3328,7 +3353,7 @@ msgstr "Dukungan iklan menggunakan modul pihak ketiga."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Dukungan untuk penyematan subview di Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
@@ -3624,6 +3649,8 @@ msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
+"`Skrip penyelesaian <https://github.com/godotengine/godot/tree/master/misc/"
+"dist/shell>`__ tersedia untuk Bash, zsh, dan fish."
 
 #: ../../docs/about/list_of_features.rst:572
 msgid ""
@@ -3687,17 +3714,16 @@ msgid "Documentation changelog"
 msgstr "Dokumentasi log perubahan"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
 "many updates to the :ref:`class reference <toc-class-ref>`. Below is a list "
 "of new tutorials added since version 3.1."
 msgstr ""
-"Dokumentasi terus-menerus ditingkatkan. Rilis versi 3.1 termasuk banyak "
-"tutorial, banyak perbaikan dan pembaruan untuk tutorial lama, dan banyak "
-"update ke class reference(referensi klass). Dibawah adalah daftar tuturial "
-"baru yang ditambahkan sejak versi 3.0."
+"Dokumentasi terus-menerus ditingkatkan. Rilis versi 3.2 menawarkan banyak "
+"tutorial, perbaikan dan pembaruan untuk tutorial lama, serta pembaruan :ref:`"
+"referensi kelas <toc-class-ref>`. Berikut daftar tutorial baru yang telah "
+"ditambahkan sejak versi 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -3733,9 +3759,8 @@ msgid ":ref:`doc_2d_sprite_animation`"
 msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ":ref:`doc_complying_with_licenses`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -3793,9 +3818,8 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
@@ -4155,7 +4179,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
-msgstr ""
+msgstr "Pemversian Godot"
 
 #: ../../docs/about/release_policy.rst:14
 msgid ""
@@ -4163,6 +4187,9 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
+"Godot secara longgar mengikuti `Semantic Versioning <https://semver.org/>`__ "
+"dengan sistem versi ``major.minor.patch``, meskipun dengan interpretasi "
+"setiap istilah yang disesuaikan dengan kompleksitas mesin game:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -4170,6 +4197,9 @@ msgid ""
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
+"Versi ``mayor`` bertambah ketika terjadi kerusakan kompatibilitas besar yang "
+"menyiratkan pekerjaan port yang signifikan untuk memindahkan proyek dari "
+"satu versi utama ke versi utama lainnya."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -4177,6 +4207,10 @@ msgid ""
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
+"Misalnya, mem-porting proyek Godot dari Godot 2.1 ke Godot 3.0 mengharuskan "
+"menjalankan proyek melalui alat konversi, dan kemudian melakukan sejumlah "
+"penyesuaian lebih lanjut secara manual untuk apa yang tidak dapat dilakukan "
+"alat secara otomatis."
 
 #: ../../docs/about/release_policy.rst:26
 msgid ""
@@ -4185,6 +4219,11 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
+"Versi ``minor`` ditambahkan untuk rilis fitur yang tidak merusak "
+"kompatibilitas secara signifikan. Kerusakan kompatibilitas kecil di area "
+"yang sangat spesifik *mungkin* terjadi dalam versi minor, tetapi sebagian "
+"besar proyek tidak boleh terpengaruh atau memerlukan pekerjaan porting yang "
+"signifikan."
 
 #: ../../docs/about/release_policy.rst:31
 msgid ""
@@ -4194,6 +4233,11 @@ msgid ""
 "feature, or modifying the interface of a given class, even if the rest of "
 "the engine API remains backwards compatible."
 msgstr ""
+"Alasan untuk ini adalah bahwa sebagai mesin permainan, Godot mencakup banyak "
+"area seperti rendering, fisika, skrip, dll., dan memperbaiki bug atau "
+"menerapkan fitur baru di area tertentu terkadang memerlukan perubahan "
+"perilaku fitur, atau memodifikasi antarmuka kelas tertentu, bahkan jika API "
+"mesin lainnya tetap kompatibel."
 
 #: ../../docs/about/release_policy.rst:39
 msgid ""
@@ -4278,20 +4322,20 @@ msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:86
 msgid "~2021 (see below)"
-msgstr ""
+msgstr "~2021 (lihat di bawah)"
 
 #: ../../docs/about/release_policy.rst:86
+#, fuzzy
 msgid "|unstable| *Current focus of development (unstable).*"
-msgstr ""
+msgstr "|tidak stabil| *Fokus pengembangan saat ini (tidak stabil)*."
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
-msgstr ""
+msgstr "Q2 atau Q3 2021"
 
 #: ../../docs/about/release_policy.rst:88
 msgid ""
@@ -5283,7 +5327,7 @@ msgstr ""
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
 "Pada gambar di atas, Skena B telah ditambahkan ke Skena A sebagai sebuah "
-"instance."
+"contoh."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
@@ -11991,7 +12035,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:224
 msgid "SceneTree"
-msgstr ""
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -13139,7 +13183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
-msgstr "Path"
+msgstr "Jalur"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
@@ -14008,7 +14052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Perluas Panel Bawah"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -14911,7 +14955,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Ganti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -15053,7 +15097,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "Simbol Lengkap"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -15319,9 +15363,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "Scripting"
+msgstr "Editor Skrip"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -15694,7 +15737,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Kembali"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -15999,7 +16042,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "Cari Tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -16097,7 +16140,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Pilih"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -16204,7 +16247,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
-msgstr ""
+msgstr "Mode Bitmask"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -16228,7 +16271,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "Icon Mode"
-msgstr ""
+msgstr "Mode Ikon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -17168,7 +17211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid "export"
-msgstr "export"
+msgstr "ekspor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid ""
@@ -20993,7 +21036,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "Padding"
+msgstr "Lapisan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -22080,7 +22123,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr ""
+msgstr "Hasil"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -25018,7 +25061,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "Skala"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -29361,9 +29404,8 @@ msgid "One-click deploy"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
-#, fuzzy
 msgid "What is one-click deploy?"
-msgstr "Dukungan penuh Unicode termasuk emoji."
+msgstr "Apa itu peluncuran satu-klik?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -60594,13 +60636,12 @@ msgid "Common use case scenarios"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:269
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
-"Bagaimana seharusnya assets dibuat untuk menangani banyak resolusi dan aspek "
-"rasio?"
+"Pengaturan berikut adalah rekomendasi untuk dukungan banyak resolusi dan "
+"juga aspek rasio."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:273
 msgid "Desktop game"
@@ -82438,7 +82479,7 @@ msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "color"
-msgstr ""
+msgstr "warna"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "15"
@@ -85128,7 +85169,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
-msgstr "Target"
+msgstr "Sasaran"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"

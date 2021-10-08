@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-07-13 06:14+0000\n"
+"PO-Revision-Date: 2021-07-16 05:47+0000\n"
 "Last-Translator: duniyal ras <duniyalr@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
@@ -802,7 +802,6 @@ msgstr ""
 "را مطالعه کنید: Ref: `راهنمای اسکریپتینگ GDScript <doc_gdscript>."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -811,7 +810,7 @@ msgid ""
 msgstr ""
 "دلایل مختلفی برای استفاده از GDScript وجود دارد - به ویژه هنگامی که در حال "
 "نمونه سازی هستید ، در مراحل آلفا / بتا پروژه خود ، یا در حال ایجاد عنوان "
-"بعدی AAA نیستید - اما برجسته ترین دلیل کاهش کلی پیچیدگی است. **"
+"بعدی AAA نیستید - اما برجسته ترین دلیل کاهش کلی پیچیدگی است**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1549,9 +1548,8 @@ msgstr ""
 "<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "چرا گودوت از STL استفاده نمی کند (کتابخانه الگوی استاندارد)"
+msgstr "چرا گودوت از STL استفاده نمی کند (کتابخانه الگوی استاندارد)؟"
 
 #: ../../docs/about/faq.rst:415
 msgid ""
@@ -1821,6 +1819,8 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"زمانی که راهنمای ویرایشگر در بخش های Inspector و Node dock نمایان می شود "
+"چشمک می زند."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -1829,6 +1829,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"این یک `مشکل شناخته شده است <https://github.com/godotengine/godot/issues/"
+"32990>`__ که به وسیله برنامه Stardock Fences رو ویندوز ایجاد می شود. تنها "
+"راه شناخته شده برای آن غیرفعال کردن این برنامه در زمان هایی است که از گودوت "
+"استفاده می کنید."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -2342,55 +2346,62 @@ msgstr "محیط هایی که تشخیص می دهند اجسام به آن ه�
 #: ../../docs/about/list_of_features.rst:136
 #: ../../docs/about/list_of_features.rst:277
 msgid "**Collision detection:**"
-msgstr ""
+msgstr "**تشخیص برخورد:**"
 
 #: ../../docs/about/list_of_features.rst:138
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "اشکال تعبیه شده: خط، جعبه، دایره، کپسول."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"چندضلعی های برخورد (که می توان به صورت دستی کشید یا آن را از یک Sprite در "
+"ویرایشگر تولید کرد)."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "3D graphics"
-msgstr ""
+msgstr "گرافیک سه بعدی"
 
 #: ../../docs/about/list_of_features.rst:148
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "انجام HDR rendering توسط sRGB."
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "استفاده از LDR rendering برای مطابقت بهتر."
 
 #: ../../docs/about/list_of_features.rst:152
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"تمام امکانات در دسترس نیستند. این ویژگی ها تنها زمانی قابل استفاده هستند که "
+"از OpenGL ES نسخه 3.0 که در زیر به صورت *GLES3* نشان داده شده است استفاده "
+"کنید."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "**Camera:**"
-msgstr ""
+msgstr "**دوربین.**"
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "دوربین های Perspectiv، orthographic و frustum-offset."
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**rendering برای اساس فیزیک (Physically-based rendering):**"
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "مدل Disney PBR را دنبال می کند."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"از سیستم کاری roughness-metallic استفاده می کند که پشتیبانی از طرح های ORM "
+"را ممکن می سازد."
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "Normal mapping."
@@ -2401,72 +2412,83 @@ msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3:* مطابقت توسط Parallax/relief که میزان جزییات را براساس فاصله به صورت "
+"خودکار تنظیم می کند."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "*GLES3:*پراکندگی زیرسطح و سرایت."
 
 #: ../../docs/about/list_of_features.rst:166
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:*ناپدید شدن در نزدیکی (گرد و غبار ملایم)."
 
 #: ../../docs/about/list_of_features.rst:167
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"شفاف شدن در فاصله که میتوان از مخلوط کردن alpha یا از تکنیک dithering برای "
+"جلوگیری از عبور از میان کانال ارتباطی شفاف استفاده کرد."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr ""
+"تکنیک Dithering (ترکیب نقطه هاى رنگارنگ براى یک رنگ جدید) می تواند توسط هر "
+"پیکسل یا توسط هر شی (object) پیاده سازی شود."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**نورپردازی زنده:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "نورهای جهت دار (خورشید/ماه). تا 4 عدد برای هر scene."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "نورهای چند سویه."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "نورهای نقطه ای با زاویه مخروطی و قدرت قابل تعیین."
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**سایه زنی:**"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*DirectionalLight:*Orthogonal (سریعترین)، PSSM دوشکافه و چهارشکافه. مخلوط "
+"کردن بین شکاف ها هم پشتیبانی می شود."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* به صورت سهمی دوتایی(سریع) یا انطباق مکعبی(cubemap) که البته "
+"کندتر است ولی دقت بالاتری دارد. از طرح های رنگی پروژکتور به صورت پاناروما "
+"پشتیبانی می شود."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "*SpotLight:* طرح تکی."
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**روشنایی سراسری با نورپردازی غیرمستقیم:**"
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "نقشه های نوری پخته ( سریع اما قابلیت بروزرسانی در زمان اجرا را ندارند)."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "نقشه های نوری در CPU پردازش می شوند."
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."

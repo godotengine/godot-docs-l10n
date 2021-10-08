@@ -2,6 +2,8 @@
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# abidin toumi <abidin24@disroot.org>, 2021.
+# abubakrAlsaab <madeinsudan19@gmail.com>, 2021.
 # Airbus5717 <Abdussamadf350@gmail.com>, 2020.
 # amrdarweesh <amr.darweesh@gmail.com>, 2020.
 # Anas <anas.ghamdi61@gmail.com>, 2020.
@@ -10,6 +12,7 @@
 # Bellachia Mohamed Bahaa Eddine <bellachiamohamedbahaa@gmail.com>, 2019.
 # Codes Otaku <ilyas.gamerz@gmail.com>, 2018.
 # Games Toon <xxtvgoodxx@gmail.com>, 2021.
+# Hareth Mohammed <harethpy@gmail.com>, 2021.
 # HASSAN GAMER - حسن جيمر <gamerhassan55@gmail.com>, 2021.
 # Hatim Jamal <hatimjamal8@gmail.com>, 2021.
 # Ibraheem Tawfik <tawfikibraheem@gmail.com>, 2019.
@@ -37,8 +40,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-07-13 06:14+0000\n"
-"Last-Translator: HASSAN GAMER - حسن جيمر <gamerhassan55@gmail.com>\n"
+"PO-Revision-Date: 2021-09-13 10:47+0000\n"
+"Last-Translator: Hareth Mohammed <harethpy@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -47,7 +50,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -57,7 +60,7 @@ msgstr "بشكل عام"
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
 msgid "Getting started"
-msgstr "ابدء"
+msgstr "ابدأ"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
@@ -77,15 +80,15 @@ msgstr "مراجع الصنف"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.3* branch"
-msgstr "وثائق غودوت - الاصدار *3.3*"
+msgstr "وثائق محرك غو-دوت - الإصدار *3.3*"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"وثائق غودوت متوفرة بعدة لغات وبإصدارات مختلفة. اضغط على \"إقرأ الوثائق\" في "
-"الجزء السفلي من الشريط الجانبي لمشاهدة قائمة اللغات والإصدارات."
+"وثائق محرك غو-دوت متوفرة بعدة لغات وبإصدارات مختلفة. اضغط على \"إقرأ "
+"الوثائق\" في الجزء السفلي من الشريط الجانبي لمشاهدة قائمة اللغات والإصدارات."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -96,9 +99,9 @@ msgid ""
 "en/3.2>`_ branch."
 msgstr ""
 "هذه هي الوثائق الخاصة بالإصدار 3.3 المستقر. هل تبحث عن وثائق الإصدار الحالي "
-"**التطوير** ؟ 'إلقِ نظرة هنا =https://docs.godotengine.org/en/latest>'_. "
-"يمكنك أيضًا تصفح وثائق الإصدارات السابقة المستقرة '3.1 2.3.1 &amp; https://"
-"docs.godotengine.org/en/3.1>__."
+"**تحت التطوير** ؟ 'إلقِ نظرة هنا =https://docs.godotengine.org/en/latest>'_. "
+"يمكنك أيضًا تصفح وثائق الإصدارات السابقة المستقرة '3.1 2.3.1 &amp; "
+"https://docs.godotengine.org/en/3.1>__."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -958,7 +961,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:161
 msgid "As of Godot 3.0, glTF is supported."
-msgstr "بداية من Godot 3.0,  سوف يتم دعم glTF ."
+msgstr "بداية من Godot 3.0, سوف يتم دعم ضيغةglTF ."
 
 #: ../../docs/about/faq.rst:163
 msgid ""
@@ -1062,14 +1065,13 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "لماذا يهدف غودوت على ابقاء مجموعة ميزات اساسه صغيرة؟"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"غودوت لا يتضمن ميزات التي يمكن تحقيقا كأضافات عمدا الا اذا عندما يتم "
-"استخدامها كثيرا. مثال على هذا هو وظائف ذكاء اصطناعي متقدمة."
+"محرك غودوت لا يتضمن ميزات التي يمكن أضافتها من الأضافات الا اذا عندما يتم "
+"استخدامها كثيرا. مثال على هذا هو وظائف ذكاء الاصطناعي المتقدم."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
@@ -16403,7 +16405,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
-msgstr "غودوت"
+msgstr "غو-دوت"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133

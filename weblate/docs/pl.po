@@ -6,6 +6,7 @@
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018-2019, 2021.
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
 # Aleksandra Granacka <agranacka96@gmail.com>, 2020-2021.
+# A M <augim3@gmail.com>, 2021.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Antek Karaś <antos.karas@gmail.com>, 2019-2020.
 # Arczi Moti <gonzo115@gmail.com>, 2020.
@@ -38,6 +39,7 @@
 # Maciej Cywiński <cyvvilek@gmail.com>, 2020.
 # Maciej Krzyżanowski <krzmaciek@gmail.com>, 2020-2021.
 # Maciej <WriteToFeniks@gmail.com>, 2019-2020.
+# Marek Malaria <to.tylko.dla.kont@gmail.com>, 2021.
 # Mateusz Grzonka <alpinus4@gmail.com>, 2020.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019-2020.
@@ -77,8 +79,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-07-05 18:38+0000\n"
-"Last-Translator: cerkiewny <mstarzycki@gmail.com>\n"
+"PO-Revision-Date: 2021-09-24 01:24+0000\n"
+"Last-Translator: Marek Malaria <to.tylko.dla.kont@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -87,7 +89,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -857,7 +859,6 @@ msgstr ""
 "w `Przewodniku po GDScript<gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -865,9 +866,9 @@ msgid ""
 "complexity**."
 msgstr ""
 "Istnieje kilka powodów, dla których warto korzystać z GDScript - szczególnie "
-"gdy prototypujesz, na etapie alfa/beta swojego projektu lub nie tworzysz "
+"gdy prototypujesz, na etapie alfa/beta twojego projektu lub nie tworzysz "
 "kolejnego tytułu AAA-ale najbardziej istotnym powodem jest ogólna ** "
-"redukcja złożoności. **"
+"redukcja złożoności**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1224,6 +1225,14 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Z wyżej wymienionych względów, musimy być wybredni co akceptujemy jako "
+"rdzenna funkcjonalność w Godot. Dlatego chcemy przenieść niektóre rdzenne "
+"funkcjonalności do oficjalnie wspieranych dodatków w przyszłych wersjach "
+"Godot. W kwestii rozmiaru binarek, to także pozwala ci płacić jedynie za to "
+"co rzeczywiście używasz w swoim projekcie. (W międzyczasie możesz :ref: `"
+"skompilować dedykowane szablony eksportu z nieużywanymi funkcjami "
+"wyłączonymi <doc_optimizing_for_size>` by zoptymalizować rozmiar dystrybucji "
+"swojego projektu)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1529,12 +1538,19 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Przy tworzeniu aplikacji nie będącej grą, upewnij się by włączyć :ref: `tryb "
+"niskiego wykorzystania procesora <class_ProjectSettings_property_application/"
+"run/low_precessro_mode>` w Ustawieniach Projektu by zmniejszyć zużycie "
+"procesora oraz karty graficznej."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"W związku z tym nie polecamy używania Godot by stworzyć *mobilną* aplikację, "
+"ponieważ tryb niskiego wykorzystania procesora jeszcze nie jest wspierany na "
+"platformach przenośnych."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1542,6 +1558,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Sprawdź `Material Maker <https://github.com/RodZill4/material-maker>`__ oraz`"
+"Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ dla "
+"przykładów open-source aplikacji stworzonych z Godotem."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -1584,8 +1603,16 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot nie używa standardowego :abbr:`GUI (Graphical User Interface)` zestawy "
+"narzędzi jak GTK, Qt czy wxWidgets. Zamiast tego Godot używa własnego "
+"zestawu narzędzi do interfejsu, renderowane używając OpenGL ES lub Vulcan. "
+"Te zestawy narzędzi są dostępne w postaci Węzłów kontrolnych, które są "
+"używane do renderowania edytora (napisanego w C++). Te Węzły Kontrolne mogą "
+"także być używane w projektach za pomocą każdego języka skryptowego "
+"wspieranego przez Godot."
 
 #: ../../docs/about/faq.rst:402
+#, fuzzy
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
 "and have a consistent appearance across all platforms. On top of that, it "
@@ -1593,6 +1620,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Ten niestandardowy zestaw narzędzi umożliwia korzystanie z akceleracji "
+"sprzętowej i zapewnia spójny wygląd na wszystkich platformach. Co więcej, "
+"nie musi radzić sobie z zastrzeżeniami licencyjnymi LGPL, które są "
+"dostarczane z GTK lub Qt. Wreszcie, oznacza to, że Godot (nie korzysta z "
+"zewnętrznych edytorów/narzędzi) , ponieważ sam edytor jest jednym z "
+"najbardziej złożonych użytkowników systemu interfejsu Godota."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1600,11 +1633,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Ten niestandardowy zestaw narzędzi interfejsu użytkownika :ref:`nie może być "
+"używany jako biblioteka <doc_faq_use_godot_as_library>`, ale nadal możesz "
+":ref:`używać Godota do tworzenia aplikacji innych niż gry za pomocą edytora "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Dlaczego Godot nie używa STL (Standard Template Library)"
+msgstr "Dlaczego Godot nie używa STL (Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:415
 msgid ""
@@ -1786,10 +1822,13 @@ msgstr ""
 "Godota i możliwych rozwiązań."
 
 #: ../../docs/about/troubleshooting.rst:10
+#, fuzzy
 msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Zobacz :ref:`doc_using_the_web_editor` konkretne zastrzeżenia wersji HTML5 "
+"edytora Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -1879,6 +1918,7 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Etykietki edytora w dokach Inspektor i Węzły migają, gdy są wyświetlane."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -1887,6 +1927,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Jest to `znany problem <https://github.com/godotengine/godot/issues/32990>`"
+"__ spowodowany przez aplikację Stardock Fences innej firmy w systemie "
+"Windows. Jedynym znanym obejściem jest wyłączenie Stardock Fences podczas "
+"korzystania z Godota."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -1919,12 +1963,16 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Niektóre teksty, takie jak „NO DC” pojawiają się w lewym górnym rogu okna "
+"menedżera projektu i edytora."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Jest to spowodowane przez sterownik graficzny NVIDIA stosujący nakładkę w "
+"celu wyświetlenia informacji."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid ""
@@ -1939,6 +1987,9 @@ msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Aby wyłączyć tą nakładkę na systemie Linux otwórz ``nvidia-settings`` , "
+"przejdź do **X Screen 0 > OpenGL Settings** potem odznacz **Enable Graphics "
+"API Visual Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
@@ -2107,6 +2158,7 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Serwery bezgłowe Linux i macOS <doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -2482,8 +2534,9 @@ msgstr ""
 "rozpraszanie, aby uniknąć przechodzenia przez potok przezroczystości."
 
 #: ../../docs/about/list_of_features.rst:169
+#, fuzzy
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "Dithering można określić na podstawie co-piksel lub co-obiekt."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "**Real-time lighting:**"
@@ -2510,12 +2563,17 @@ msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*DirectionalLight:* Ortogonalny (najszybszy), PSSM 2-częściowy i 4-"
+"częściowy. Obsługuje mieszanie między podziałami."
 
 #: ../../docs/about/list_of_features.rst:181
+#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* Podwójna paraboloida (szybka) lub cubemapa (wolniejsza, ale "
+"dokładniejsza). Obsługuje kolorowe tekstury nakładane w postaci panoram."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "*SpotLight:* Single texture."
@@ -2554,6 +2612,8 @@ msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"Szybkie generowane odbicia lub wolne odbicia w czasie rzeczywistym przy "
+"użyciu ReflectionProbe. Opcjonalnie można włączyć korekcję paralaksy."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid "*GLES3:* Screen-space reflections."
@@ -15276,7 +15336,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr "Zresetuj powiększenie"
+msgstr "Wyzeruj zbliżenie"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -15404,7 +15464,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr "Podwój wielkość siatki"
+msgstr "Zwiększ krok siatki 2 razy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -15416,7 +15476,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr "Zmniejsz wielkość siatki dwukrotnie"
+msgstr "Zmniejsz krok siatki 2 razy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -15492,7 +15552,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr "Skala płótna podglądu"
+msgstr "Podejrzyj skalę płótna"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -27261,7 +27321,7 @@ msgstr "Zapisywanie gry"
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr "Skala"
+msgstr "Skaluj"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -31917,9 +31977,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
-#, fuzzy
 msgid "Supported platforms"
-msgstr "Wspiera wszystkie platformy."
+msgstr "Wspierane platformy"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid ""
@@ -40014,9 +40073,8 @@ msgid "The modes are:"
 msgstr "Tymi są:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
-#, fuzzy
 msgid "Disabled"
-msgstr "Wyłączenie działającej siły."
+msgstr "Wyłączony"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
 msgid ""
@@ -64296,11 +64354,12 @@ msgid "Common use case scenarios"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:269
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
-msgstr "Jak tworzyć assety by wspierały różne rozdzielczości i proporcje?"
+msgstr ""
+"Następujące ustawienia są rekomendowane dla poprawnego wspierania wielu "
+"rozdzielczości i formatów obrazu."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:273
 msgid "Desktop game"
@@ -77156,12 +77215,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:851
-#, fuzzy
 msgid ""
 "``SWORD_DAMAGE``: A constant to define the amount of damage the sword does. "
 "This damage is applied to every object in the sword on every "
 "``_physics_process`` call"
-msgstr "``DAMAGE``: Liczba obrażeń jakie zadaje pojedynczy pocisk."
+msgstr ""
+"``SWORD_DAMAGE``: Stała definiujące ilość obrażeń, które zadaje miecz. Te "
+"obrażenia są zastosowane do każdego obiektu miecza w każdym wywołaniu "
+"``_physics_process``"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:852
 msgid ""
@@ -80428,9 +80489,8 @@ msgid "**name**: name of the plugin"
 msgstr "Nazwa (nazwa opcji)"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:121
-#, fuzzy
 msgid "**name**: name of the plugin."
-msgstr "Nazwa (nazwa opcji)"
+msgstr "**name**: nazwa wtyczki."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:122
 msgid ""
@@ -99478,9 +99538,8 @@ msgstr ""
 "Skopiuj to repozytorium: `<https://github.com/godotengine/godot-cpp>`__."
 
 #: ../../docs/community/contributing/building_the_manual.rst:13
-#, fuzzy
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
-msgstr "`Python 2.7+ lub Python 3.5+ <https://www.python.org/>`__."
+msgstr "Zainstaluj `Sphinx <https://www.sphinx-doc.org/>`__"
 
 #: ../../docs/community/contributing/building_the_manual.rst:14
 msgid ""

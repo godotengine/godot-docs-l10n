@@ -3,6 +3,8 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # 507GamerLab <tyfnyakut@outlook.com>, 2019.
+# Adem B <ad3mdev@gmail.com>, 2021.
+# Alaaddin Biçici <alaaddinbicici@gmail.com>, 2021.
 # ali aydın <alimxaydin@gmail.com>, 2021.
 # alkahesto <gs_dogan05@hotmail.com>, 2019.
 # Altan Demirkilic <demirkilic@gmail.com>, 2018.
@@ -17,6 +19,7 @@
 # Ceyhun Sezenoglu <sezenoglu@gmail.com>, 2018.
 # Efruz Yıldırır <efruzyildirir@gmail.com>, 2020.
 # ege1212 <owlphp@gmail.com>, 2019.
+# Ege Esin <ege_e@icloud.com>, 2021.
 # Emre Altinagac <emrealtinagac@gmail.com>, 2019-2020.
 # furkan atalar <fatalar55@gmail.com>, 2020-2021.
 # Gökay Okyay <gokayokyay@hotmail.com>, 2020.
@@ -28,6 +31,7 @@
 # İlker Civelek <ilkercivelek34@gmail.com>, 2018.
 # Kaan Genç <kaan@kaangenc.me>, 2020.
 # Kağan Akpınar <kaganakpinar30@gmail.com>, 2020.
+# Lucifer25x <umudyt2006@gmail.com>, 2021.
 # Mehmet Akif Duba <dubamehmetakif@gmail.com>, 2019.
 # Mertcan Duman <mertcan.dmn16@gmail.com>, 2019.
 # M.Haytham Karamuk <a_developer_2002@outlook.com>, 2021.
@@ -51,6 +55,7 @@
 # Suleyman Poyraz <zaryob.dev@gmail.com>, 2020.
 # The Recon <reconmovyie@gmail.com>, 2021.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
+# Ufuk Ardıç <ufukrdc@gmail.com>, 2021.
 # Vedat Günel <gunel15@itu.edu.tr>, 2020.
 # Yusuf Osman YILMAZ <wolfkan4219@gmail.com>, 2020.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
@@ -60,8 +65,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-07-13 14:01+0200\n"
-"PO-Revision-Date: 2021-06-20 18:34+0000\n"
-"Last-Translator: M.Haytham Karamuk <a_developer_2002@outlook.com>\n"
+"PO-Revision-Date: 2021-09-24 01:24+0000\n"
+"Last-Translator: Adem B. <ad3mdev@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -69,7 +74,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -177,18 +182,17 @@ msgstr ""
 "kullanabilirsiniz."
 
 #: ../../docs/index.rst:41
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
-"Ayrıca çevrimdışı okuma yapmak için belgelerin `HTML kopyasını <https://"
-"nightly.link/godotengine/godot-docs/workflows/build_offline_docs/3.3/godot-"
-"docs-html.zip>indirebilirsiniz` (her pazartesi güncellenir). Zip arşivini "
-"açın ve en üst seviyedeki \"index.html\" üzerinden web tarayıcı programı ile "
-"belgeleri okuyun."
+"Ayrıca çevrimdışı okuyabilmek için belgelerin `HTML <https://nightly.link/"
+"godotengine/godot-docs/workflows/build_offline_docs/3.3/godot-docs-"
+"html.zip>kopyasını indirebilirsiniz` (her pazartesi güncellenir). "
+"Sıkıştırılmış dosyayı ayıklayın ve ayıkladıktan sonra ``index.html`` "
+"üzerinden web tarayıcısı ile belgeleri okuyabilirsiniz."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -425,7 +429,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
-msgstr "döküman hakkında"
+msgstr "Doküman hakkında"
 
 #: ../../docs/about/introduction.rst:59
 msgid ""
@@ -841,7 +845,6 @@ msgstr ""
 "için, bakınız: ref: `GDScript komut dosyası kılavuzu <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -850,7 +853,7 @@ msgid ""
 msgstr ""
 "Özellikle prototip ve alfa / beta aşamasındaysanız veya gişe rekorları "
 "kıracak bir şey yapmıyorsanız, GDScript'i kullanmanın birçok nedeni vardır. "
-"Ancak asıl neden, genel \\ ** karmaşıklığı azaltılmasıdır. ** **"
+"Ancak asıl neden, genel \\ **karmaşıklığın azaltılmasıdır**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1490,9 +1493,8 @@ msgstr ""
 "(varsa) getirmek sizin için bonus puandır."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Godot'u bir kütüphane olarak kullanmak mümkün müdür?"
+msgstr "Oyun dışı uygulamalar oluşturmak için Godot kullanmak mümkün müdür?"
 
 #: ../../docs/about/faq.rst:363
 #, fuzzy
@@ -3156,7 +3158,7 @@ msgstr "Basınç destekli kalem/tablet girişi."
 #: ../../docs/about/list_of_features.rst:408
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
-msgstr ""
+msgstr "Gamepad, klavye ve fare girdi desteği ayrıca Android'de de mevcuttur."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -4354,13 +4356,12 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|kararsız| *Mevcut gelişim odağı (kararsız).*"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "Godot 3.3"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
 msgid "Q2 or Q3 2021"
-msgstr ""
+msgstr "2021'in 2. veya 3. çeyreği"
 
 #: ../../docs/about/release_policy.rst:88
 msgid ""
@@ -4373,9 +4374,8 @@ msgid "Godot 3.3"
 msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "April 2021"
-msgstr "Mart/Nisan 2021"
+msgstr "Nisan 2021"
 
 #: ../../docs/about/release_policy.rst:91
 #, fuzzy
@@ -5868,10 +5868,9 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
-"Microsoft'un C # oyun geliştiricileri arasında favori olduğu için, bunun "
-"için resmi destek ekledik. C #, kendisi için yazılmış tonlarca kod içeren "
-"olgun bir dildir ve Microsoft'tan cömert bir bağış sayesinde destek "
-"eklenmiştir."
+"Microsoft'un C# oyun geliştiricileri arasında favori olduğu için, bunun için "
+"resmi destek ekledik. C#, kendisi için yazılmış tonlarca kod içeren olgun "
+"bir dildir ve Microsoft'tan cömert bir bağış sayesinde destek eklenmiştir."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
@@ -5915,9 +5914,9 @@ msgid ""
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
-"Herhangi bir C ++ sürümü kullanılabilir ve oluşturulan paylaşılan "
-"kitaplıklar için derleyici markalarını ve sürümlerini karıştırmak, dahili "
-"bir C API Köprüsü kullanımımız sayesinde mükemmel çalışır."
+"Herhangi bir C++ sürümü kullanılabilir ve oluşturulan paylaşılan kitaplıklar "
+"için derleyici markalarını ve sürümlerini karıştırmak, dahili bir C API "
+"Köprüsü kullanımımız sayesinde mükemmel çalışır."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -6266,11 +6265,12 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-"Bu eğitim göz önüne alındığında, ``get_node(yol)`` işlevinin nasıl çalıştığı "
-"hakkında bir yanlış anlama vardır. Verilen bir düğüm için, ``get_node(yol)`` "
-"hemen alttaki düğüm için arama yapar. Yukarıdaki kodda bunun anlamı, Düğme, "
-"Panel düğümünün alt düğümü olmalı. Eğer Düğme Etiket'in alt düğümü olsaydı, "
-"bu ögeyi seçmek için gerekli kod şu şekilde olmalıydı:"
+"Bu eğitim göz önüne alındığında, ``get_node(yol)`` işlevinin nasıl "
+"çalıştığına dair oldukça bilinen bir yanlış anlaşılma vardır. Verilen bir "
+"düğüm için, ``get_node(yol)`` hemen alttaki düğüm için arama yapar. "
+"Yukarıdaki kodda bunun anlamı, Düğme, Panel düğümünün alt düğümü olmalı. "
+"Eğer Düğme Etiket'in alt düğümü olsaydı, bu ögeyi seçmek için gerekli kod şu "
+"şekilde olmalıydı:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:332
 msgid "Also, remember that nodes are referenced by name, not by type."
@@ -8458,7 +8458,7 @@ msgstr "Kesitçi"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1311
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
+msgstr "Bu adreslerde bu projenin tamamlanmış bir versiyonunu bulabilirsiniz:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
@@ -8471,7 +8471,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
 msgid "Exporting"
-msgstr ""
+msgstr "Dışa Aktarım"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -8480,6 +8480,11 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Elinizde çalışan bir oyun olduğuna göre, muhtemelen başarınızı diğerleriyle "
+"paylaşmak isteyeceksiniz. Ancak, arkadaşlarınıza sırf projenizi açabilsin "
+"diye Godot indirme ricasında bulunmanız, çok da pratik olmayabilir. Bunun "
+"yerine, projeni *dışa aktarabilir*, herkes tarafından çalıştırılabilecek bir "
+"\"paket\"e dönüştürebilirsin."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -12511,7 +12516,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:224
 msgid "SceneTree"
-msgstr ""
+msgstr "SahneAğacı"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -15647,11 +15652,11 @@ msgstr "Girintiyi Boşluklara Dönüştür"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Cmd + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "``script_text_editor/convert_indent_to_spaces``"
@@ -15663,11 +15668,11 @@ msgstr "Girintiyi Sekmelere Dönüştür"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Cmd + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "``script_text_editor/convert_indent_to_tabs``"
@@ -15679,11 +15684,11 @@ msgstr "Kendinden Girintili"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Cmd + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "``script_text_editor/auto_indent``"
@@ -15695,11 +15700,11 @@ msgstr "Yer imleri Aç / Kapat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Cmd + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "``script_text_editor/toggle_bookmark``"
@@ -15711,7 +15716,7 @@ msgstr "Sonraki Yerimine Git"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "``script_text_editor/goto_next_bookmark``"
@@ -15731,7 +15736,7 @@ msgstr "İşleve Git"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Cmd + J`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "``script_text_editor/goto_function``"
@@ -15743,11 +15748,11 @@ msgstr "Satıra Git"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
-msgstr ""
+msgstr ":kbd:`Ctrl + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Cmd + L`"
-msgstr ""
+msgstr ":kbd:`Cmd + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "``script_text_editor/goto_line``"
@@ -15773,11 +15778,11 @@ msgstr "Tüm Kesme Noktalarını Kaldır"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Cmd + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`⌘ + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "``script_text_editor/remove_all_breakpoints``"
@@ -15789,7 +15794,7 @@ msgstr "Sonraki Kesme Noktasına Git"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "``script_text_editor/goto_next_breakpoint``"
@@ -15801,11 +15806,11 @@ msgstr "Önceki Kesme Noktasına Git"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Cmd + ,`"
-msgstr ""
+msgstr ":kbd:`⌘ + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "``script_text_editor/goto_previous_breakpoint``"
@@ -15817,11 +15822,11 @@ msgstr "Bağlamsal Yardım"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
-msgstr ""
+msgstr ":kbd:`Alt + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + Shift + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Shift + Boşluk`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "``script_text_editor/contextual_help``"
@@ -15849,7 +15854,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid ":kbd:`Shift + Alt + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Yukarı Ok`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid "``script_editor/window_move_up``"
@@ -15857,24 +15862,23 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid ":kbd:`Shift + Alt + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Aşağı Ok`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "Açıklama"
+msgstr "Sonraki Betik"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Cmd + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid "``script_editor/next_script``"
@@ -15882,15 +15886,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "Previous Script"
-msgstr ""
+msgstr "Önceki Betik"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Ctrl + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Cmd + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "``script_editor/prev_script``"
@@ -15898,7 +15902,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr "Kapatılan betiği tekrar Aç"
+msgstr "Kapatılan Betiği Yeniden Aç"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -15910,11 +15914,11 @@ msgstr "Kaydet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Cmd + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "``script_editor/save``"
@@ -15938,12 +15942,12 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr "Geçmişe Dönüş"
+msgstr "Önceki Geçmiş"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid ":kbd:`Alt + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Sol Ok`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "``script_editor/history_previous``"
@@ -15951,7 +15955,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr "Sonrakine İlerle"
+msgstr "Sonraki Geçmiş"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -15968,11 +15972,11 @@ msgstr "Kapat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Cmd + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "``script_editor/close_file``"
@@ -15985,11 +15989,11 @@ msgstr "Çalıştır"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Ctrl + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Cmd + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid "``script_editor/run_file``"
@@ -16001,11 +16005,11 @@ msgstr "Betikler Panelini Aç/Kapa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
-msgstr ""
+msgstr ":kbd:`Ctrl + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Cmd + \\\\`"
-msgstr ""
+msgstr ":kbd:`Cmd + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "``script_editor/toggle_scripts_panel``"
@@ -16091,7 +16095,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
-msgstr "İşlev Yap"
+msgstr "İşlev Üret"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -16234,11 +16238,11 @@ msgstr "Gizli Dosyalari Aç / Kapat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
-msgstr ""
+msgstr ":kbd:`Ctrl + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Cmd + H`"
-msgstr ""
+msgstr ":kbd:`Cmd + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "``file_dialog/toggle_hidden_files``"
@@ -16258,7 +16262,7 @@ msgstr "Aç / Kapat Biçimi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
-msgstr ""
+msgstr ":kbd:`Alt + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "``file_dialog/toggle_mode``"
@@ -16270,11 +16274,11 @@ msgstr "Klasör Oluştur"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
-msgstr ""
+msgstr ":kbd:`Ctrl + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Cmd + N`"
-msgstr ""
+msgstr ":kbd:`Cmd + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "``file_dialog/create_folder``"
@@ -16312,12 +16316,12 @@ msgstr "Beğenileni Yukarı Taşı"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Ctrl + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Yukarı Ok`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Cmd + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Yukarı Ok`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "``file_dialog/move_favorite_up``"
@@ -25364,7 +25368,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "Ölçekle"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -57097,7 +57101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:276
 msgid "Persian (Iran)"
-msgstr ""
+msgstr "Türkçe (Türkiye)"
 
 #: ../../docs/tutorials/i18n/locales.rst:278
 msgid "ff_SN"
