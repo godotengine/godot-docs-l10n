@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,542 +24,550 @@ msgstr ""
 msgid "Some developers like using the command line extensively. Godot is designed to be friendly to them, so here are the steps for working entirely from the command line. Given the engine relies on almost no external libraries, initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:15
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:16
+msgid "On Windows and Linux, you can run a Godot binary in a terminal by specifying its relative or absolute path."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:19
+msgid "On macOS, the process is different due to Godot being contained within an ``.app`` bundle (which is a *folder*, not a file). To run a Godot binary from a terminal on macOS, you have to ``cd`` to the folder where the Godot application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` followed by any command line arguments. If you've renamed the application bundle from ``Godot`` to another name, make sure to edit this command line accordingly."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Command line reference"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:17
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:30
 msgid "**General options**"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Command"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Description"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "Display the list of command line options."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "``--version``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "Display the version string."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "``-v``, ``--verbose``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "Use verbose stdout mode."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "``--quiet``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:31
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "**Run options**"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "``-e``, ``--editor``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Start the editor instead of running the scene (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid "``-p``, ``--project-manager``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid "Start the project manager, even if a project is auto-detected (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "``-q``, ``--quit``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "Quit after the first iteration."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid "``-l <locale>``, ``--language <locale>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid "Use a specific locale (<locale> being a two-letter code). See :ref:`doc_locales` for more details."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "``--path <directory>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "``-u``, ``--upwards``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "Scan folders upwards for 'project.godot' file."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "``--main-pack <file>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "Path to a pack (.pck) file to load."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "``--render-thread <mode>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model <class_ProjectSettings_property_rendering/threads/thread_model>` for more details."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "``--remote-fs <address>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "``--audio-driver <driver>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid "``--video-driver <driver>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "**Display options**"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "``-f``, ``--fullscreen``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "Request fullscreen mode."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "``-m``, ``--maximized``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "Request a maximized window."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "``-w``, ``--windowed``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "Request windowed mode."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "``-t``, ``--always-on-top``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "Request an always-on-top window."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "``--resolution <W>x<H>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Request window resolution."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "``--position <X>,<Y>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "Request window position."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "``--low-dpi``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "Force low-DPI mode (macOS and Windows only)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
 msgid "``--no-window``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
-msgid "Disable window creation (Windows only). Useful together with ``--script``."
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
+msgid "Run with invisible window. Useful together with ``--script``."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "**Debug options**"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Debug options are only available in the editor and debug export templates (they require ``debug`` or ``release_debug`` build targets, see :ref:`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "``-d``, ``--debug``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "Debug (local stdout debugger)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid "``-b``, ``--breakpoints``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 instead)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "``--profiling``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "Enable profiling in the script debugger."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "``--remote-debug <address>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "Remote debug (``<host/IP>:<port>`` address)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "``--debug-collisions``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Show collision shapes when running the scene."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "``--debug-navigation``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "Show navigation polygons when running the scene."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "``--frame-delay <ms>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "``--time-scale <scale>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid "``--disable-render-loop``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid "Disable render loop so rendering only occurs when called explicitly from script."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "``--disable-crash-handler``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Disable crash handler when supported by the platform code."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid "``--fixed-fps <fps>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid "Force a fixed number of frames per second. This setting disables real-time synchronization."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "``--print-fps``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "Print the frames per second to the stdout."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "**Standalone tools**"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "Run a script."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "``--check-only``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "Only parse for errors and quit (use with ``--script``)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid "``--export <target>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid "Export the project using the given export target. Export only main pack if path ends with .pck or .zip (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid "``--export-debug <target>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid "Like ``--export``, but use debug template (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid "``--doctool <path>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid "Dump the engine API reference to the given <path> in XML format, merging if existing files are found (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "``--no-docbase``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Disallow dumping the base types (used with ``--doctool``, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid "``--build-solutions``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid "Build the scripting solutions (e.g. for C# projects, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "``--gdnative-generate-json-api``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "``--test <test>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid "``--export-pack <preset> <path>``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid "Like ``--export``, but only export the game pack for the given preset. The <path> extension determines whether it will be in PCK or ZIP format. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:158
 msgid "Path"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:160
 msgid "It is recommended that your Godot binary be in your PATH environment variable, so it can be executed easily from any place by typing ``godot``. You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and making sure it is called ``godot``."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
 msgid "Setting the project path"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:155
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid "Depending on where your Godot binary is located and what your current working directory is, you may need to set the path to your project for any of the following commands to work correctly."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:159
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
 msgid "This can be done by giving the path to the ``project.godot`` file of your project as either the first argument, like this:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
 msgid "Or by using the ``--path`` argument:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:185
 msgid "For example, the full command for exporting your game (as explained below) might look like this:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:192
 msgid "Creating a project"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:182
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:195
 msgid "Creating a project from the command line can be done by navigating the shell to the desired place and making a project.godot file."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:193
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:206
 msgid "The project can now be opened with Godot."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:197
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:210
 msgid "Running the editor"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:199
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:212
 msgid "Running the editor is done by executing Godot with the ``-e`` flag. This must be done from within the project directory or a subdirectory, otherwise the command is ignored and the project manager appears."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:207
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:220
 msgid "If a scene has been created and saved, it can be edited later by running the same code with that scene as argument."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:215
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
 msgid "Erasing a scene"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:217
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:230
 msgid "Godot is friends with your filesystem and will not create extra metadata files. Use ``rm`` to erase a scene file. Make sure nothing references that scene or else an error will be thrown upon opening."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:226
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:239
 msgid "Running the game"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:241
 msgid "To run the game, simply execute Godot within the project directory or subdirectory."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:235
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:248
 msgid "When a specific scene needs to be tested, pass that scene to the command line."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:243
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:256
 msgid "Debugging"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:245
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:258
 msgid "Catching errors in the command line can be a difficult task because they just fly by. For this, a command line debugger is provided by adding ``-d``. It works for running either the game or a simple scene."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:260
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:273
 msgid "Exporting"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:262
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid "Exporting the project from the command line is also supported. This is especially useful for continuous integration setups. The version of Godot that is headless (server build, no video) is ideal for this."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:271
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid "The preset name must match the name of an export preset defined in the project's ``export_presets.cfg`` file. If the preset name contains spaces or special characters (such as \"Windows Desktop\"), it must be surrounded with quotes."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:288
 msgid "To export a debug version of the game, use the ``--export-debug`` switch instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:278
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 msgid "To export only a PCK file, use the ``--export-pack`` option followed by the preset name and output path, with the file extension, instead of ``--export``. The output path extension determines the package's format, either PCK or ZIP."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid "When specifying a relative path as the path for `--export`, `--export-debug` or `--export-pack`, the path will be relative to the directory containing the ``project.godot`` file, **not** relative to the current working directory."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:289
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:302
 msgid "Running a script"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid "It is possible to run a simple ``.gd`` script from the command line. This feature is especially useful in large projects, e.g. for batch conversion of assets or custom import/export."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:295
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:310
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:321
 msgid "And how to run it:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:315
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:328
 msgid "If no ``project.godot`` exists at the path, current path is assumed to be the current working directory (unless ``--path`` is specified)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:318
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:331
 msgid "The first line of ``sayhello.gd`` above is commonly referred to as a *shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows you to run the script as follows in modern Linux distributions, as well as macOS:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:330
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:343
 msgid "If the above doesn't work in your current version of Linux or macOS, you can always have the shebang run Godot straight from where it is located as follows:"
 msgstr ""

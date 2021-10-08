@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,109 +113,129 @@ msgid "*Needs testing*: the issue/pull request could not be completely tested an
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:70
-msgid "*PR welcome / hero wanted!*: Contributions for issues with these labels are especially welcome. Note that this **doesn't** mean you can't work on issues without these labels."
+msgid "*Performance*: issues that directly impact engine or editor performance. Can also be used for pull requests that improve performance or add low-end-friendly options. Should not be coupled with *Usability*."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
+msgid "*PR welcome / Hero wanted!*: Contributions for issues with these labels are especially welcome. Note that this **doesn't** mean you can't work on issues without these labels."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:76
+msgid "*Regression*: the bug appeared after a stable release not exhibiting the bug was released."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:78
+msgid "*Salvageable*: the pull request can't be merged due to design issues or merge conflicts and its author is not active anymore. However, it can still be picked up by an external contributor to bring it to a mergeable state. To do so, you need to open a new pull request based on the original pull request."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid "*Tracker*: issue used to track other issues (like all issues related to the plugin system)."
 msgstr ""
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:75
-msgid "*Usability*: issues that directly impact user usability."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:77
-msgid "The categories are used for general triage of the issues. They can be combined in some way when relevant, e.g. an issue can be labelled *Enhancement* and *Usability* at the same time if it's an issue to improve usability. Or *Feature proposal* and *Discussion* if it's a non-consensual feature request, or one that is not precise enough to be worked on."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:83
-msgid "**Topics:**"
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:85
-msgid "*Assetlib*: relates to issues with the asset library."
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:84
+msgid "*Usability*: issues that directly impact user usability. Should not be coupled with *Performance*."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
-msgid "*Audio*: relates to the audio features (low and high level)."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:87
-msgid "*Buildsystem*: relates to building issues, either linked to the SCons buildsystem or to compiler peculiarities."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:89
-msgid "*Core*: anything related to the core engine. It might be further split later on as it's a pretty big topic."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:91
-msgid "*Drivers*: relates to issues with the drivers used by the engine."
+msgid "The categories are used for general triage of the issues. They can be combined in some way when relevant, e.g. an issue can be labelled *Enhancement* and *Usability* at the same time if it's an issue to improve usability. Or *Feature proposal* and *Discussion* if it's a non-consensual feature request, or one that is not precise enough to be worked on."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:92
-msgid "*Editor*: relates to issues in the editor (mainly UI)."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:93
-msgid "*GDNative*: relates to the GDNative module."
+msgid "**Topics:**"
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:94
-msgid "*GDScript*: relates to GDScript."
+msgid "*2D*: relates to 2D-specific issues. Should be coupled with one of the labels below, and should not be coupled with *3D*."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
-msgid "*Mono*: relates to the C# / Mono bindings."
+msgid "*3D*: relates to 3D-specific issues. Should be coupled with one of the labels below, and should not be coupled with *2D*."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
-msgid "*Network*: relates to networking."
+msgid "*Assetlib*: relates to issues with the asset library."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:97
-msgid "*Physics*: relates to the physics engine (2D/3D)."
+msgid "*Audio*: relates to the audio features (low and high level)."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:98
-msgid "*Plugin*: relates to problems encountered while writing plugins."
-msgstr ""
-
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:99
-msgid "*Porting*: relates to some specific platforms."
+msgid "*Buildsystem*: relates to building issues, either linked to the SCons buildsystem or to compiler peculiarities."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:100
-msgid "*Rendering*: relates to the 2D and 3D rendering engines."
+msgid "*Core*: anything related to the core engine. It might be further split later on as it's a pretty big topic."
 msgstr ""
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:101
-msgid "*VisualScript*: relates to issues with the visual scripting language."
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:102
+msgid "*Drivers*: relates to issues with the drivers used by the engine."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:103
-msgid "Issues would typically correspond to only one topic, though it's not unthinkable to see issues that fit two bills. The general idea is that there will be specialized contributors teams behind all topics, so they can focus on the issues labelled with their team's topic."
+msgid "*Editor*: relates to issues in the editor (mainly UI)."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:104
+msgid "*GDNative*: relates to the GDNative module."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:105
+msgid "*GDScript*: relates to GDScript."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:106
+msgid "*Mono*: relates to the C# / Mono bindings."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:107
+msgid "*Network*: relates to networking."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:108
-msgid "**Platforms:**"
+msgid "*Physics*: relates to the physics engine (2D/3D)."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:109
+msgid "*Plugin*: relates to problems encountered while writing plugins."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
-msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
+msgid "*Porting*: relates to some specific platforms."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:111
+msgid "*Rendering*: relates to the 2D and 3D rendering engines."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:112
+msgid "*VisualScript*: relates to issues with the visual scripting language."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:114
+msgid "Issues would typically correspond to only one topic, though it's not unthinkable to see issues that fit two bills. The general idea is that there will be specialized contributors teams behind all topics, so they can focus on the issues labelled with their team's topic."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:119
+msgid "**Platforms:**"
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:121
+msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:123
 msgid "By default, it is assumed that a given issue applies to all platforms. If one of the platform labels is used, it is then exclusive and the previous assumption doesn't stand anymore (so if it's a bug on e.g. Android and Linux exclusively, select those two platforms)."
 msgstr ""
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:118
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:129
 msgid "Milestones"
 msgstr ""
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:120
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:131
 msgid "`Milestones <https://github.com/godotengine/godot/milestones>`_ correspond to planned future versions of Godot for which there is an existing roadmap. Issues that fit in the said roadmap should be filed under the corresponding milestone; if they don't correspond to any current roadmap, they should be left without milestone. As a rule of thumb, an issue corresponds to a given milestone if it concerns a feature that is new in the milestone, or a critical bug that can't be accepted in any future stable release, or anything that Juan wants to work on right now. :)"
 msgstr ""
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:129
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:140
 msgid "Contributors are free to pick issues regardless of their assigned milestone; if a fix is proposed for a bug that was not deemed urgent and thus without milestone, it would likely still be very welcome."
 msgstr ""

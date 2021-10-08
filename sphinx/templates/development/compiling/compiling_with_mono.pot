@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "You may need to import necessary certificates for NuGet to perform HTTPS 
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
-msgid "The recommended method is to use **curl**'s CA (Certificate Autorities) certificate bundle."
+msgid "The recommended method is to use **curl**'s CA (Certificate Authorities) certificate bundle."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:21
@@ -423,29 +423,21 @@ msgid "Path to the Mono installation directory for the target platform and archi
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:379
-msgid "**xbuild_fallback**\\ =yes | **no**"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_with_mono.rst:381
-msgid "Whether to fallback to xbuild if MSBuild is not available."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:385
+#: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid "Whether to link the Mono runtime statically."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:386
+#: ../../docs/development/compiling/compiling_with_mono.rst:382
 msgid "The default is **yes** for iOS and WASM, and **no** for other platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:388
+#: ../../docs/development/compiling/compiling_with_mono.rst:384
 msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:390
+#: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid "Whether to copy the Mono framework assemblies and configuration files required by the Godot editor."
 msgstr ""
