@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -407,8 +407,8 @@ msgid ""
 msgstr ""
 "我们首先将 ``velocity(速度)`` 设置为 ``(0, 0)``——默认情况下玩家不应该移动. 然"
 "后我们检查每个输入并从 ``velocity(速度)`` 中进行加/减以获得总方向. 例如, 如果"
-"您同时按住 ``right(向右)`` 和 ``down(向下)``, 则生成的 ``velocity(速度)`` 速"
-"度将为 ``(1, 1)``. 在这种情况下, 由于我们同时向水平和垂直两个方向进行移动, 因"
+"您同时按住 ``right(向右)`` 和 ``down(向下)``, 则生成的 ``velocity(速度)`` 向"
+"量将为 ``(1, 1)``. 在这种情况下, 由于我们同时向水平和垂直两个方向进行移动, 因"
 "此玩家斜向移动的速度将会比水平移动要 *更快*."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
@@ -625,8 +625,8 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
-"如果在引擎的碰撞处理过程中发生, 禁用区域的碰撞形状可能会导致错误. 使用 "
-"``set_delayed()`` 告诉Godot等待禁用该形状, 直到可以安全地这样做为止."
+"如果在引擎的碰撞处理过程中禁用区域的碰撞形状可能会导致错误. 使用 "
+"``set_deferred()`` 告诉Godot等待可以安全地禁用形状时再这样做."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 msgid ""
@@ -1236,7 +1236,7 @@ msgstr "*自动换行*:\"开\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "StartButton"
-msgstr "StartButton"
+msgstr "开始按钮"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Text* : ``Start``"

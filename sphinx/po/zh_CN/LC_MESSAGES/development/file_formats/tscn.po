@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:4
 msgid "TSCN file format"
-msgstr "TSCN文件格式"
+msgstr "TSCN 文件格式"
 
 #: ../../docs/development/file_formats/tscn.rst:6
 msgid ""
@@ -29,9 +29,9 @@ msgid ""
 "compiled into binary ``.scn`` files stored inside the .import folder. This "
 "reduces the data size and speeds up loading."
 msgstr ""
-"TSCN(文本场景)文件格式表示Godot内部的单个场景树. 其优点是易于阅读, 并且易于版"
-"本控制系统进行管理. 导入期间,TSCN文件被编译为存储在 ``.import`` 文件夹中的二"
-"进制 ``.scn`` 文件. 这样可以减小数据大小并加快加载速度."
+"TSCN（文本场景）文件格式表示 Godot 内部的单个场景树，其优点是易于人类阅读，并"
+"且便于使用版本控制系统进行管理。导入时，TSCN 文件会被编译为二进制的 ``.scn`` "
+"文件，存储在 .import 文件夹中。这样的做法可以减小数据大小并且提高加载速度。"
 
 #: ../../docs/development/file_formats/tscn.rst:12
 msgid ""
@@ -39,8 +39,8 @@ msgid ""
 "but is used to indicate to Godot that the file has been exported from "
 "another program and should not be edited by the user from within Godot."
 msgstr ""
-"ESCN(导出场景)文件格式与TSCN文件格式相同, 但是用于向Godot指示该文件已从另一个"
-"程序导出, 并且不应由用户在Godot内部进行编辑."
+"ESCN（导出场景）文件格式与 TSCN 文件格式相同，但是用于向 Godot 表明该文件是从"
+"另一个程序导出的，不应由用户在 Godot 内部进行编辑。"
 
 #: ../../docs/development/file_formats/tscn.rst:16
 msgid ""
@@ -49,9 +49,9 @@ msgid ""
 "master/scene/resources/resource_format_text.cpp>`_ in the "
 "``ResourceFormatLoaderText`` class."
 msgstr ""
-"对于那些寻求完整描述的人来说, 解析在 `resource_format_text.cpp <https://"
-"github.com/godotengine/godot/blob/master/scene/resources/"
-"resource_format_text.cpp>`_ 文件的 ``ResourceFormatLoaderText`` 类中进行处理."
+"如果想要完整的描述，对这些文件格式的解析是在 `resource_format_text.cpp "
+"<https://github.com/godotengine/godot/blob/master/scene/resources/"
+"resource_format_text.cpp>`_ 的 ``ResourceFormatLoaderText`` 类中进行处理的。"
 
 #: ../../docs/development/file_formats/tscn.rst:21
 msgid "File structure"
@@ -59,7 +59,7 @@ msgstr "文件结构"
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "There are five main sections inside the TSCN file:"
-msgstr "TSCN文件中有五个主要部分:"
+msgstr "TSCN 文件分为五个主要部分："
 
 #: ../../docs/development/file_formats/tscn.rst:25
 msgid "File Descriptor"
@@ -84,7 +84,6 @@ msgid "Connections"
 msgstr "连接"
 
 #: ../../docs/development/file_formats/tscn.rst:31
-#, fuzzy
 msgid ""
 "The file descriptor looks like ``[gd_scene load_steps=3 format=2]`` and "
 "should be the first entry in the file. The ``load_steps`` parameter is equal "
@@ -94,9 +93,11 @@ msgid ""
 "but this will affect loading bars and any other piece of code relying on "
 "that value."
 msgstr ""
-"文件描述符看起来像 ``[gd_scene load_steps=1 format=2]``, 应该是文件中的第一"
-"项. 从理论上讲, ``load_steps`` 参数应该是文件中资源的数量. 但是, 实际上, 它的"
-"值似乎无关紧要."
+"类似 ``[gd_scene load_steps=3 format=2]`` 的就是文件描述符，应该是文件的第一"
+"条记录。这里的 ``load_steps`` 参数等于资源总数（包括内部和外部）加一（文件本"
+"身）。文件中不包含资源时 ``load_steps`` 会被省略。即便 ``load_steps`` 不正"
+"确，引擎仍然能够正确加载文件，但是加载进度条和其它一些使用该值的代码会受影"
+"响。"
 
 #: ../../docs/development/file_formats/tscn.rst:38
 msgid ""

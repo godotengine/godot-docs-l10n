@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,6 +100,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`ヘッドレス Linux 及び macOS サーバー "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -616,6 +618,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* カラーバンディングを回避するためのオプションのデバンディング（HDRレ"
+"ンダリングが有効になっている場合に有効）。"
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -670,9 +674,8 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "マルチサンプル アンチエイリアシング (MSAA)。"
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "マルチサンプル アンチエイリアシング (MSAA)。"
+msgstr "高速近似アンチエイリアス(FXAA)。"
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
@@ -731,11 +734,10 @@ msgid "Ragdolls."
 msgstr "ラグドール。"
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr ""
-"ビルトインのシェイプ:立方体・球・カプセル型・円柱（Bullet 物理エンジンに備"
-"わっているもののみ）。"
+"組み込みのシェイプ:立方体・球・カプセル型・円柱（Bullet 物理エンジンに備わっ"
+"ているもののみ）。"
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -761,8 +763,9 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* 頂点、フラグメント、ライト、天球用のカスタムのシェーダ。"
 
 #: ../../docs/about/list_of_features.rst:288
+#, fuzzy
 msgid ""
-"Text-based shaders using a `shader language inspired by GLSL "
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
 "`GLSLにインスパイアされたシェーダ言語 <doc_shading_language>`\\ を使うテキス"
@@ -833,9 +836,8 @@ msgstr ""
 "複数のプロセッサコアを利用したりできます。"
 
 #: ../../docs/about/list_of_features.rst:312
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -949,6 +951,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"AudioEffectCaptureクラスを使ったリアルタイムにアクセスできる録音マイクの音声"
+"入力。"
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1101,6 +1105,8 @@ msgstr "筆圧対応のペン/タブレット入力。"
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"Androidでは、ゲームパッド、キーボード、マウスによる入力もサポートされていま"
+"す。"
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1281,7 +1287,7 @@ msgstr "サードパーティモジュールを利用した広告に対応。"
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Androidでサブビューの埋め込みに対応。"
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
@@ -1617,10 +1623,11 @@ msgstr ""
 "<doc_ways_to_contribute>`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:589
+#, fuzzy
 msgid ""
-"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
-"documents features that have been agreed upon and may be implemented in "
-"future Godot releases."
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
 msgstr ""
 "`ロードマップ <https://github.com/godotengine/godot-roadmap>`__ リポジトリに"
 "は、合意されて今後の Godot リリースで実装される可能性のある機能が記載されてい"

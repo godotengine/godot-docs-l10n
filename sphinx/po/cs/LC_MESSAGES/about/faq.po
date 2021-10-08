@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,7 +267,6 @@ msgstr ""
 "GDScript <doc_gdscript>` ."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -276,7 +275,7 @@ msgid ""
 msgstr ""
 "Existuje několik důvodů, proč používat GDScript - zejména když "
 "prototypujete, ve fázích alfa / beta vašeho projektu nebo nevytváříte další "
-"titul AAA -, ale nejdůležitějším důvodem je celkové **snížení složitosti.**"
+"titul AAA -, ale nejdůležitějším důvodem je celkové **snížení složitosti.**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -536,7 +535,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "Proč se Godot snaží udržet svou základní sadu funkcí malou?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -544,10 +543,13 @@ msgid ""
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot záměrně neobsahuje funkce, které lze implementovat pomocí doplňků, "
+"pokud nejsou používány velmi často. Příkladem mohou být pokročilé funkce "
+"umělé inteligence."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
-msgstr ""
+msgstr "Existuje několik důvodů:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -559,6 +561,13 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Údržba kódu a vyhledávání chyb.** Pokaždé, když do úložiště Godot přijmeme "
+"nový kód, stávající přispěvatelé často přebírají odpovědnost za jeho údržbu. "
+"Někteří přispěvatelé po začlenění svého kódu ne vždy zůstávají, což nám může "
+"ztížit údržbu daného kódu. To může vést ke špatně udržovaným funkcím s "
+"chybami, které nejsou nikdy opraveny. Kromě toho se \"plocha API\", kterou "
+"je třeba testovat a kontrolovat, zda nedošlo k regresi, v průběhu času "
+"neustále zvětšuje."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -567,6 +576,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Snadné přispívání.** Díky tomu, že je kódová základna malá a přehledná,ji "
+"lzei i nadále rychle a snadno kompilovat ze zdrojových kódů. Noví "
+"přispěvatelé tak mohou s Godotem snáze začít pracovat, aniž by museli "
+"kupovat špičkový hardware."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -575,6 +588,10 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**Udržování malé velikosti binárního souboru pro editor.** Ne každý má "
+"rychlé připojení k internetu. Zajištění toho, aby si každý mohl stáhnout "
+"editor Godot, rozbalit jej a spustit za méně než 5 minut, činí Godot "
+"přístupnějším pro vývojáře ve všech zemích."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -585,6 +602,12 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**Zachování malé velikosti binárních souborů pro exportní šablony.** To "
+"přímo ovlivňuje velikost projektů exportovaných pomocí Godotu. U mobilních a "
+"webových platforem je udržení nízké velikosti souborů prvořadé pro zajištění "
+"rychlé instalace a načítání na málo výkonných zařízeních. Opět existuje "
+"mnoho zemí, kde není snadno dostupný vysokorychlostní internet. Navíc v "
+"těchto zemích často platí přísné limity pro využívání dat."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -597,6 +620,14 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Ze všech výše uvedených důvodů si musíme vybírat, co můžeme v Godotu "
+"považovat za základní funkce. Proto se snažíme v budoucích verzích Godotu "
+"přesunout některé základní funkce do oficiálně podporovaných doplňků. Z "
+"hlediska velikosti binárních souborů to má také tu výhodu, že budete platit "
+"pouze za to, co ve svém projektu skutečně používáte. (Mezitím můžete :ref:"
+"`kompilovat vlastní exportní šablony s vypnutými nepoužívanými funkcemi "
+"<doc_optimizing_for_size>` a optimalizovat tak distribuční velikost svého "
+"projektu)."
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -897,12 +928,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Při vytváření neherní aplikace nezapomeňte v nastavení projektu povolit :ref:"
+"`low-processor mode <class_ProjectSettings_property_application/run/"
+"low_processor_mode>`, abyste snížili využití CPU a GPU."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Přesto bychom nedoporučovali používat Godot k vytváření *mobilních* "
+"aplikací, protože nízkoprocesorový režim zatím není na mobilních platformách "
+"podporován."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -910,6 +947,10 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Podívejte se na `Material Maker <https://github.com/RodZill4/material-"
+"maker>`__ a `Pixelorama <https://github.com/Orama-Interactive/"
+"Pixelorama>`__, kde najdete příklady open source aplikací vytvořených pomocí "
+"Godotu."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -942,7 +983,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Jaký toolkit uživatelského rozhraní Godot používá?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -953,6 +994,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot nepoužívá standardní :abbr:`GUI (Graphical User Interface)` sadu "
+"nástrojů jako GTK, Qt nebo wxWidgets. Místo toho Godot používá vlastní sadu "
+"nástrojů uživatelského rozhraní vykreslovanou pomocí OpenGL ES nebo Vulkan. "
+"Tato sada nástrojů je vystavena ve formě uzlů Control, které se používají k "
+"vykreslování editoru (který je napsán v jazyce C++). Tyto uzly Control lze "
+"také použít v projektech z libovolného skriptovacího jazyka podporovaného "
+"systémem Godot."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -962,6 +1010,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Tato vlastní sada nástrojů umožňuje využívat hardwarovou akceleraci a mít "
+"konzistentní vzhled na všech platformách. Kromě toho se nemusí potýkat s "
+"licenčními výhradami LGPL, které jsou spojeny s GTK nebo Qt. V neposlední "
+"řadě to znamená, že Godot \"žere vlastní psí žrádlo\", protože samotný "
+"editor je jedním z nejsložitějších uživatelů systému uživatelského rozhraní "
+"Godot."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -969,11 +1023,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Tuto vlastní sadu nástrojů uživatelského rozhraní :ref:`nelze použít jako "
+"knihovnu <doc_faq_use_godot_as_library>`, ale stále můžete :ref:`použít "
+"Godot k vytváření neherních aplikací pomocí editoru "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Proč Godot nepoužívá STL (Standard Template Library)"
+msgstr "Proč Godot nepoužívá STL (Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:415
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
 msgid "GDScript exports"
-msgstr ""
+msgstr "Exporty GDScriptu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
 msgid "Introduction to exports"
@@ -32,6 +32,10 @@ msgid ""
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
+"V Godotu lze členy třídy exportovat. To znamená, že jejich hodnota se uloží "
+"spolu se zdrojem (například :ref:`scene <class_PackedScene>`), ke kterému "
+"jsou připojeny. Budou také k dispozici pro editaci v editoru vlastností. "
+"Exportování se provádí pomocí klíčového slova ``export``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
 msgid ""
@@ -39,6 +43,9 @@ msgid ""
 "export hint in the form of an argument to the ``export`` keyword (see the "
 "*Examples* section below)."
 msgstr ""
+"Exportovaná proměnná musí být inicializována konstantním výrazem nebo musí "
+"mít rychlou nápovědu k exportu ve formě argumentu klíčového slova ``export`` "
+"(viz níže část *Příklady*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -47,16 +54,22 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
+"Jednou ze základních výhod exportu členských proměnných je jejich "
+"viditelnost a editovatelnost v editoru. Výtvarníci a herní designéři tak "
+"mohou upravovat hodnoty, které později ovlivňují chod programu. K tomu "
+"slouží speciální syntaxe exportu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
+"Exportování vlastností lze provádět i v jiných jazycích, například v jazyce "
+"C#. Syntaxe se liší v závislosti na jazyce."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
 msgid "Examples"
-msgstr ""
+msgstr "Příklady"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
 msgid ""
@@ -64,10 +77,13 @@ msgid ""
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
+"Je třeba poznamenat, že i když skript není v editoru spuštěn, exportované "
+"vlastnosti jsou stále editovatelné. Toho lze využít ve spojení se :ref:"
+"`skriptem v režimu \"tool\" <doc_gdscript_tool_mode>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
-msgstr ""
+msgstr "Exportování bitových příznaků"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 msgid ""
@@ -75,6 +91,9 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
+"Celá čísla používaná jako bitové příznaky mohou v jedné vlastnosti uchovávat "
+"více hodnot ``true``/``false`` (boolean). Pomocí exportní nápovědy ``int, "
+"FLAGS, ...`` je lze nastavit z editoru::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
 msgid ""
@@ -83,27 +102,36 @@ msgid ""
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
+"U každého příznaku je nutné zadat řetězcový popis. V tomto příkladu má "
+"``Fire`` hodnotu 1, ``Water`` hodnotu 2, ``Earth`` hodnotu 4 a ``Wind`` "
+"odpovídá hodnotě 8. Obvykle by měly být odpovídajícím způsobem definovány "
+"konstanty (např. ``const ELEMENT_WIND = 8`` a tak dále)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
 msgstr ""
+"Nápovědy k exportu jsou k dispozici také pro fyzikální a vykreslovací vrstvy "
+"definované v nastavení projektu::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
+"Používání bitových příznaků vyžaduje určitou znalost bitových operací. V "
+"případě pochybností používejte raději logické proměnné."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
-msgstr ""
+msgstr "Exportování polí"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Exportovaná pole mohou mít inicializátory, ale musí to být konstantní výrazy."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
@@ -111,10 +139,13 @@ msgid ""
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
+"Pokud exportované pole určuje typ, který dědí od typu Resource, lze hodnoty "
+"pole nastavit v inspektoru přetažením několika souborů najednou z doku "
+"FileSystem ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid "Setting exported variables from a tool script"
-msgstr ""
+msgstr "Nastavení exportovaných proměnných ze skriptu nástroje"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
 msgid ""
@@ -124,10 +155,15 @@ msgid ""
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
 msgstr ""
+"Při změně hodnoty exportované proměnné ze skriptu v režimu :ref:"
+"`doc_gdscript_tool_mode` se hodnota v inspektoru automaticky neaktualizuje. "
+"Chcete-li ji aktualizovat, zavolejte :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` po nastavení hodnoty "
+"exportované proměnné."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
 msgid "Advanced exports"
-msgstr ""
+msgstr "Pokročilé exporty"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
 msgid ""
@@ -135,6 +171,10 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
+"Ne každý typ exportu lze poskytnout na úrovni samotného jazyka, takový návrh "
+"by byl zbytečně složitý. Následující text popisuje některé více či méně "
+"obvyklé vlastnosti exportu, které lze implementovat pomocí nízkoúrovňového "
+"API."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
 msgid ""
@@ -145,22 +185,32 @@ msgid ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
+"Před dalším čtením byste se měli seznámit s tím, jak se s vlastnostmi "
+"pracuje a jak je lze upravit pomocí :ref:`_set() "
+"<class_Object_method__get_property_list>`, :ref:`_get() "
+"<class_Object_method__get_property_list>` a :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` metodami popsanými v :ref:"
+"`doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
+"Vazba vlastností pomocí výše uvedených metod v C++, viz :ref:"
+"`doc_binding_properties_using_set_get_property_list`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
+"Skript musí pracovat v režimu ``tool``, aby výše uvedené metody mohly "
+"fungovat v editoru."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
 msgid "Adding script categories"
-msgstr "Přidání kategorií skriptů"
+msgstr "Přidání kategorií skriptu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
@@ -168,10 +218,13 @@ msgid ""
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
+"Pro lepší vizuální rozlišení vlastností lze do inspektora vložit speciální "
+"kategorii skriptu, která slouží jako oddělovač. Příkladem takové kategorie "
+"jsou vestavěné ``Script Variables``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
 msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr ""
+msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
 msgid ""
@@ -180,20 +233,26 @@ msgid ""
 "it won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_CATEGORY`` označuje, že vlastnost by měla být považována za "
+"kategorii skriptů, takže typ ``TYPE_NIL`` může být ignorován, protože ve "
+"skutečnosti nebude použit pro logiku skriptování, ale přesto musí být "
+"definován."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
 msgid "Grouping properties"
-msgstr ""
+msgstr "Seskupování vlastností"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
 msgid "A list of properties with similar names can be grouped."
-msgstr ""
+msgstr "Seznam vlastností s podobnými názvy lze seskupit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
+"``name`` je název skupiny, která bude zobrazena jako skládací seznam "
+"vlastností;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
 msgid ""
@@ -202,6 +261,9 @@ msgid ""
 "key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
 "this case."
 msgstr ""
+"každá další vlastnost přidaná za vlastnost skupiny bude sbalena a zkrácena "
+"podle prefixu definovaného pomocí klíče ``hint_string``. Například "
+"``rotate_speed`` bude v tomto případě zkrácena na ``speed``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
 msgid ""
@@ -210,3 +272,7 @@ msgid ""
 "won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_GROUP`` označuje, že vlastnost by měla být považována za "
+"skupinu skriptů, takže typ ``TYPE_NIL`` může být ignorován, protože ve "
+"skutečnosti nebude použit pro logiku skriptování, ale přesto musí být "
+"definován."

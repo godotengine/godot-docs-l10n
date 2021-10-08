@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,10 @@ msgid "Plugins for iOS"
 msgstr "Plugins pour iOS"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
+#, fuzzy
 msgid ""
-"At the moment Godot provides StoreKit, GameCenter, iCloud services plugins. "
-"They are using same model of asynchronous calls explained below."
+"Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
+"are using same model of asynchronous calls explained below."
 msgstr ""
 "Pour le moment, Godot fournit les plugins de services StoreKit, GameCenter, "
 "iCloud. Ils utilisent le même modèle d'appels asynchrones expliqué ci-"
@@ -35,11 +36,20 @@ msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 "Les accès ARKit et Camera sont également fournis sous forme de plugins."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:12
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:11
+#, fuzzy
+msgid ""
+"Latest updates, documentation and source code can be found at `Godot iOS "
+"plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
+msgstr ""
+"Si vous participer à la documentation, son dépôt peut être trouvé `ici "
+"<https://github.com/godotengine/godot-docs>`_."
+
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid "Accessing plugin singletons"
 msgstr "Accéder aux singletons de plug-in"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:16
 msgid ""
 "To access plugin functionality, you first need to check that the plugin is "
 "exported and available by calling the `Engine.has_singleton()` function, "
@@ -49,22 +59,22 @@ msgstr ""
 "le plugin est exporté et disponible en appelant la fonction `Engine."
 "has_singleton()`, qui renvoie un singleton enregistré."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:18
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:20
 msgid "Here's an example of how to do this in GDScript:"
 msgstr "Voici un exemple de la façon de procéder dans GDScript :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:32
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:34
 msgid "Asynchronous methods"
 msgstr "Méthodes asynchrones"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:34
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:36
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
 msgstr ""
 "Lors de la demande d'une opération asynchrone, la méthode ressemblera à "
 "ceci :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:41
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:43
 msgid ""
 "The parameter will usually be a Dictionary, with the information necessary "
 "to make the request, and the call will have two phases. First, the method "
@@ -82,7 +92,7 @@ msgstr ""
 "configurée, etc). Si la valeur d'erreur est 'OK', un événement de réponse "
 "est produit et ajouté à la file d'attente des 'pending events'. Exemple :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:68
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:70
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
 "through the pending_event interface, even if it's an error, or a network "
@@ -97,11 +107,11 @@ msgstr ""
 "Si l'une des API ne se comporte pas de cette manière, cela doit être traité "
 "comme un bogue."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:74
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:76
 msgid "The pending event interface consists of two methods:"
 msgstr "L'interface des événements en attente se compose de deux méthodes :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:76
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:78
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
@@ -109,7 +119,7 @@ msgstr ""
 "``get_pending_event_count()`` Renvoie le nombre d'événements en attente dans "
 "la file d'attente."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:79
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:81
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
@@ -117,11 +127,11 @@ msgstr ""
 "``Variant pop_pending_event()`` Extrait(pops) le premier événement de la "
 "file d'attente et le renvoie."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:83
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
 msgid "Store Kit"
 msgstr "Kit de magasin"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
@@ -130,7 +140,7 @@ msgstr ""
 "godotengine/godot-ios-plugins/blob/master/plugins/inappstore/in_app_store."
 "mm>`_."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:89
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
@@ -138,41 +148,41 @@ msgstr ""
 "L'API du Store Kit est accessible par le singleton ``InAppStore``. Il est "
 "initialisé automatiquement."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:90
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:92
 msgid "``Error purchase(Variant p_params);``"
 msgstr "``Error purchase(Variant p_params);``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:91
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:93
 msgid "``Error request_product_info(Variant p_params);``"
 msgstr "``Error request_product_info(Variant p_params);``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:92
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:94
 msgid "``Error restore_purchases();``"
 msgstr "``Error restore_purchases();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:94
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:96
 msgid "and the pending_event interface"
 msgstr "et l'interface pending_event"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:102
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:104
 msgid "purchase"
 msgstr "acheter"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:104
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:106
 msgid "Purchases a product id through the Store Kit API."
 msgstr ""
 "Achète un identifiant de produit par l'intermédiaire de l'API du kit de "
 "magasin."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:107
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:147
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:250
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:294
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:439
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:109
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:149
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:252
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:296
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:441
 msgid "Parameters"
 msgstr "Paramètres"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:109
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:111
 msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product id. Example:"
@@ -180,21 +190,9 @@ msgstr ""
 "Prend un dictionnaire comme paramètre, avec un champ, ``product_id``, une "
 "chaîne de caractère(string) avec votre identifiant de produit. Exemple :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:117
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:157
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:181
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:219
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:264
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:311
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:340
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:370
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:402
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:459
-msgid "Response event"
-msgstr "Événement de réponse"
-
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:119
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:159
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:183
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:221
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:266
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:313
@@ -202,40 +200,52 @@ msgstr "Événement de réponse"
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:372
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:404
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:461
-msgid "The response event will be a dictionary with the following fields:"
-msgstr "L'événement de réponse sera un dictionnaire avec les champs suivants :"
+msgid "Response event"
+msgstr "Événement de réponse"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:121
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:161
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:223
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:268
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:315
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:344
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:374
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:406
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:463
+msgid "The response event will be a dictionary with the following fields:"
+msgstr "L'événement de réponse sera un dictionnaire avec les champs suivants :"
+
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:123
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:225
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:317
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:346
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:376
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:408
 msgid "On error:"
 msgstr "En cas d'erreur :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:131
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:234
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:279
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:325
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:354
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:384
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:416
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:133
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:236
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:281
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:327
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:356
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:386
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:418
 msgid "On success:"
 msgstr "En cas de succès :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:142
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:144
 msgid "request_product_info"
 msgstr "request_product_info"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:144
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:146
 msgid "Requests the product info on a list of product IDs."
 msgstr ""
 "Demande l'information sur le produit dans une liste d'identifiants de "
 "produits."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:149
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:151
 msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_ids``, a string "
 "array with a list of product ids. Example:"
@@ -244,11 +254,11 @@ msgstr ""
 "tableau de chaînes de caractères avec une liste d'identifiants de produits. "
 "Exemple :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:175
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:177
 msgid "restore_purchases"
 msgstr "restore_purchases"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:177
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:179
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product id."
@@ -257,16 +267,16 @@ msgstr ""
 "Cela créera des événements de réponse pour chaque identifiant de produit "
 "acheté précédemment."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:183
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:185
 msgid "The response events will be dictionaries with the following fields:"
 msgstr ""
 "Les événements de réponse seront des dictionnaires avec les champs suivants :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:194
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
 msgid "Game Center"
 msgstr "Game Center"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
@@ -275,7 +285,7 @@ msgstr ""
 "godotengine/godot-ios-plugins/blob/master/plugins/gamecenter/game_center."
 "mm>`_."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:200
 msgid ""
 "The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
@@ -283,97 +293,97 @@ msgstr ""
 "L'API Game Center est disponible via le singleton ``GameCenter``. Il possède "
 "les méthodes suivantes :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:201
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:203
 msgid "``Error authenticate();``"
 msgstr "``Error authenticate();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:202
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:204
 msgid "``bool is_authenticated();``"
 msgstr "``bool is_authenticated();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:203
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:205
 msgid "``Error post_score(Variant p_score);``"
 msgstr "``Error post_score(Variant p_score);``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:204
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:206
 msgid "``Error award_achievement(Variant p_params);``"
 msgstr "``Error award_achievement(Variant p_params);``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:205
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:207
 msgid "``void reset_achievements();``"
 msgstr "``void reset_achievements();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:206
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:208
 msgid "``void request_achievements();``"
 msgstr "``void request_achievements();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:207
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:209
 msgid "``void request_achievement_descriptions();``"
 msgstr "``void request_achievement_descriptions();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:208
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
 msgid "``Error show_game_center(Variant p_params);``"
 msgstr "``Error show_game_center(Variant p_params);``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:209
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:211
 msgid "``Error request_identity_verification_signature();``"
 msgstr "``Error request_identity_verification_signature();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:211
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:213
 msgid "plus the standard pending event interface."
 msgstr "plus l'interface standard d'événement en attente."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:214
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
 msgid "authenticate"
 msgstr "authentifier"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:218
 msgid "Authenticates a user in Game Center."
 msgstr "Authentifie un utilisateur dans le Game Center."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 msgid "post_score"
 msgstr "post_score"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:249
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "Affiche un score dans le classement du Game Center."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:252
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:441
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:254
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:443
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr "Prend un dictionnaire comme paramètre, avec deux champs :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:254
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:256
 msgid "``score`` a float number"
 msgstr "Le ``score`` est un nombre flottant"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:255
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:257
 msgid "``category`` a string with the category name"
 msgstr "``category`` une chaîne de caractères avec le nom de la catégorie"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:257
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:304
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:259
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:306
 msgid "Example:"
 msgstr "Exemple :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:289
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:291
 msgid "award_achievement"
 msgstr "award_achievement"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:291
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:293
 msgid "Modifies the progress of a Game Center achievement."
 msgstr "Modifie la progression d'un achèvement du Game Center."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:296
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:298
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr "Prend un dictionnaire comme paramètre, avec 3 champs :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:298
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:300
 msgid "``name`` (string) the achievement name"
 msgstr "``name`` (chaîne de caractères) le nom de l'achèvement"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:299
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
@@ -381,7 +391,7 @@ msgstr ""
 "``progress`` (float) de l'avancement de l'achèvement de 0,0 à 100,0 (passée "
 "à ``GKAchievement::percentComplete``)"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:303
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
@@ -389,21 +399,21 @@ msgstr ""
 "``show_completion_banner`` (bool) si le Game Center doit afficher une "
 "bannière d'achèvement en haut de l'écran"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:335
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:337
 msgid "reset_achievements"
 msgstr "reset_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:337
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:339
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 "Efface tous les achèvements du Game Center. La fonction ne prend aucun "
 "paramètre."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:364
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:366
 msgid "request_achievements"
 msgstr "request_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:366
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:368
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
@@ -411,11 +421,11 @@ msgstr ""
 "Demandez tous les achèvements du Game Center sur lesquelles le joueur a "
 "progressé. La fonction ne prend aucun paramètre."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:398
 msgid "request_achievement_descriptions"
 msgstr "request_achievement_descriptions"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:398
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:400
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
@@ -423,11 +433,11 @@ msgstr ""
 "Demandez la description de toutes les achèvements du Game Center, quel que "
 "soit le progrès réalisé. La fonction ne prend aucun paramètre."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:433
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:435
 msgid "show_game_center"
 msgstr "show_game_center"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:435
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:437
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
@@ -435,7 +445,7 @@ msgstr ""
 "Affiche la superposition intégrée du Game Center montrant les classements, "
 "les achèvements et les défis."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:443
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:445
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
@@ -445,7 +455,7 @@ msgstr ""
 "Accepte \"default\", \"leaderboards\", \"achievements\" ou \"challenges\". "
 "La valeur par défaut est \"default\"."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:446
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:448
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -457,10 +467,10 @@ msgstr ""
 "\"default\" est configuré pour afficher les classements). S'il n'est pas "
 "spécifié, le Game Center affichera le classement global."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:451
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:453
 msgid "Examples:"
 msgstr "Exemples :"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:463
+#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:465
 msgid "On close:"
 msgstr "En clôture :"

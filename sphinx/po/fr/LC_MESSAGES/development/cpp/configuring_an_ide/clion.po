@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,10 +117,17 @@ msgid ""
 "debug Godot by using the `Attach to process <https://www.jetbrains.com/help/"
 "clion/attaching-to-local-process.html>`__ feature."
 msgstr ""
+"Comme CLion ne prend pas en charge SCons, vous ne pourrez pas compiler, "
+"lancer et déboguer Godot à partir de CLion en une seule étape. Vous devrez "
+"d'abord `compiler godot vous-même <https://docs.godotengine.org/en/stable/"
+"development/compiling/index.html>`__ et exécuter le binaire sans CLion. Vous "
+"pourrez ensuite déboguer Godot en utilisant la fonctionnalité `Attacher au "
+"processus <https://www.jetbrains.com/help/clion/attaching-to-local-process."
+"html>`__."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:52
 msgid "Run the compilation in debug mode by entering ``scons``."
-msgstr ""
+msgstr "Exécutez la compilation en mode débogage en entrant ``scons``."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:54
 msgid ""
@@ -129,18 +136,24 @@ msgid ""
 "--path path/to/your/godot/project``. To run the project instead of editing "
 "it, remove the ``--editor`` argument."
 msgstr ""
+"Exécutez le binaire que vous avez créé (dans le répertoire bin). Si vous "
+"voulez déboguer un projet spécifique, exécutez le binaire avec les arguments "
+"suivants : ``--editor --path path/to/your/godot/project``. Pour exécuter le "
+"projet au lieu de le modifier, supprimez l'argument ``--editor``."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:56
 msgid "In CLion, go to **Run > Attach to Process...**"
-msgstr ""
+msgstr "Dans CLion, allez dans **Run > Attach to Process...**"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:61
 msgid "Find and Select godot in the list (or type the binary name/Process ID)"
 msgstr ""
+"Trouvez et sélectionnez godot dans la liste (ou tapez le nom binaire/l'ID du "
+"processus)"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:66
 msgid "You can now use the debugging tools from CLion."
-msgstr ""
+msgstr "Vous pouvez maintenant utiliser les outils de débogage de CLion."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:70
 msgid ""
@@ -148,3 +161,6 @@ msgid ""
 "manager window. Don't forget to add the ``--path path/to/your/godot/"
 "project`` argument to debug a project."
 msgstr ""
+"Si vous exécutez le binaire sans aucun argument, vous ne déboguerez que la "
+"fenêtre du gestionnaire de projet. N'oubliez pas d'ajouter l'argument ``--"
+"path path/to/your/godot/project`` pour déboguer un projet."

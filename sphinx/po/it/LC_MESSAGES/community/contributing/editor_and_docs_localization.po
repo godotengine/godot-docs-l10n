@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -393,6 +393,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:314
+#, fuzzy
 msgid ""
 "In the above example, ``[code]name[/code]``, ``[code]alpha[/code]``, and "
 "``[Color]`` should *not* be translated, as they refer respectively to "
@@ -402,6 +403,13 @@ msgid ""
 "you can translate the name of the variable which holds the result (``red "
 "= ...``)."
 msgstr ""
+"Nell'esempio precedente, ``[code]name[/code]``, ``[code]alpha[/code]``, e "
+"``[Color]`` non dovrebbero *non* essere tradotti, poiché si riferiscono "
+"rispettivamente a nomi di argomenti e a una classe dell'API Godot. Allo "
+"stesso modo, il contenuto del ``[codeblock]`` non dovrebbe essere tradotto, "
+"poiché ``ColorN`` è una funzione dell'API Godot e ``\"red\"`` è uno dei "
+"colori nominati che supporta. Al massimo, puoi tradurre il nome della "
+"variabile che contiene il risultato (``red = ...``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:321
 msgid ""
@@ -413,11 +421,16 @@ msgstr ""
 "originale."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:326
+#, fuzzy
 msgid ""
 "See our documentation for class reference writers for the :ref:`list of "
 "BBCode-like tags <doc_updating_the_class_reference_bbcode>` which are used "
 "throughout the class reference."
 msgstr ""
+"Vedi la nostra documentazione per gli scrittori di riferimenti di classe per "
+"la :ref:`lista di tag simili al BBCode "
+"<doc_updating_the_class_reference_bbcode>` che sono usati in tutto il "
+"riferimento di classe."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:331
 #, fuzzy
@@ -425,12 +438,17 @@ msgid "Offline translation and testing"
 msgstr "Internazionalizzazione"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:333
+#, fuzzy
 msgid ""
 "While we advise using the Weblate interface to write translations, you also "
 "have the possibility to download the PO file locally to translate it with "
 "your preferred PO editing application, such as `Poedit <https://poedit.net/"
 ">`__ or `Lokalize <https://userbase.kde.org/Lokalize>`__."
 msgstr ""
+"Mentre consigliamo di usare l'interfaccia Weblate per scrivere le "
+"traduzioni, hai anche la possibilità di scaricare il file PO localmente per "
+"tradurlo con la tua applicazione di editing PO preferita, come `Poedit "
+"<https://poedit.net/>`__ o `Lokalize <https://userbase.kde.org/Lokalize>`__."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:338
 msgid ""
@@ -464,25 +482,39 @@ msgstr ""
 "l'interfaccia online in modo da lavorare sempre sull'ultima versione."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:355
+#, fuzzy
 msgid ""
 "If you want to test changes locally (especially for the editor translation), "
 "you can use the downloaded PO file and :ref:`compile Godot from source <toc-"
 "devel-compiling>`."
 msgstr ""
+"Se vuoi testare i cambiamenti localmente (specialmente per la traduzione "
+"dell'editor), puoi usare il file PO scaricato e :ref:`compilare Godot da "
+"sorgente <toc-devel-compiling>`."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:358
+#, fuzzy
 msgid ""
 "Rename the editor translation PO file to ``<lang>.po`` (e.g. ``eo.po`` for "
 "Esperanto) and place it in the ``editor/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/editor/translations>`__)."
 msgstr ""
+"Rinomina il file PO di traduzione dell'editor in ``<lang>.po`` (ad esempio "
+"``eo.po`` per l'esperanto) e mettilo nella cartella ``editor/translations/`` "
+"(`GitHub <https://github.com/godotengine/godot/tree/master/editor/"
+"translations>`__)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:362
+#, fuzzy
 msgid ""
 "You can also test class reference changes the same way by renaming the PO "
 "file similarly and placing it in the ``doc/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/doc/translations>`__)."
 msgstr ""
+"Puoi anche testare le modifiche ai riferimenti di classe allo stesso modo "
+"rinominando il file PO in modo simile e mettendolo nella cartella ``doc/"
+"translations/``` (`GitHub <https://github.com/godotengine/godot/tree/master/"
+"doc/translations>`__)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:367
 msgid "Localizing documentation images"
@@ -573,6 +605,7 @@ msgstr ""
 "fr.png`` per la localizzazione francese."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:406
+#, fuzzy
 msgid ""
 "Finally, on godot-docs-l10n_, recreate the same folder structure as for the "
 "original image in the ``images`` subfolder (`GitHub <https://github.com/"
@@ -580,9 +613,18 @@ msgid ""
 "translated image there. In our example, the end result should be ``images/"
 "getting_started/step_by_step/img/project_manager_first_open.fr.png``."
 msgstr ""
+"Infine, su godot-docs-l10n_, ricrea la stessa struttura di cartelle "
+"dell'immagine originale nella sottocartella ``images`` (`GitHub <https://"
+"github.com/godotengine/godot-docs-l10n/tree/master/images>`_), e mettici la "
+"tua immagine tradotta. Nel nostro esempio, il risultato finale dovrebbe "
+"essere ``images/getting_started/step_by_step/img/project_manager_first_open."
+"fr.png``."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:412
+#, fuzzy
 msgid ""
 "Repeat this for other images and :ref:`make a Pull Request "
 "<doc_pr_workflow>`."
 msgstr ""
+"Ripeti questo per altre immagini e :ref:`fai una Pull Request "
+"<doc_pr_workflow>`."

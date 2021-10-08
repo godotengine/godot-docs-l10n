@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:9
-#, fuzzy
 msgid ""
 "It is often desired to make a shader that reads from the same screen to "
 "which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
@@ -40,10 +39,9 @@ msgstr ""
 "la tâche très difficile en raison de limitations matérielles internes. Les "
 "GPU sont extrêmement parallèles, de sorte que la lecture et l'écriture "
 "causent toutes sortes de problèmes de cache et de cohérence. Par conséquent, "
-"même le matériel le plus moderne ne le supporte pas correctement."
+"même le matériel le plus moderne ne cela supporte pas correctement."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
-#, fuzzy
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
 "a back-buffer and then read from it while drawing. Godot provides a few "
@@ -51,7 +49,7 @@ msgid ""
 msgstr ""
 "La solution consiste à faire une copie de l'écran, ou d'une partie de "
 "l'écran, dans une mémoire tampon, puis à la lire pendant le dessin. Godot "
-"fournit quelques outils qui rendent ce processus facile !"
+"fournit quelques outils qui rendent ce processus facile."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"
@@ -264,7 +262,6 @@ msgid "DEPTH_TEXTURE"
 msgstr "DEPTH_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:146
-#, fuzzy
 msgid ""
 "For 3D shaders, it's also possible to access the screen depth buffer. For "
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "

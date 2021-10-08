@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "une configuration d’importation pour les textures, l’audio, les scènes, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -51,7 +50,7 @@ msgstr ""
 "polices, etc.) directement dans le répertoire du projet (copiez les "
 "manuellement avec l’explorateur de fichier de votre système d’exploitation). "
 "Godot importera automatiquement ces fichiers en interne et gardera les "
-"ressources importées cachées dans un répertoire res://.import."
+"ressources importées cachées dans un répertoire ``res://.import``."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -163,23 +162,21 @@ msgid "Files generated"
 msgstr "Fichiers générés"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
-#, fuzzy
 msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"Importer ajoutera un fichier <asset>.import en plus, contenant la "
+"Importer ajoutera un fichier ``<asset>.import`` en plus, contenant la "
 "configuration d’importation. Veillez à bien versionner ceux-ci sur votre "
 "système de contrôle de version !"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
-#, fuzzy
 msgid ""
 "Additionally, extra assets will be preset in the hidden ``res://.import`` "
 "folder:"
 msgstr ""
 "En outre, des ressources supplémentaires seront prédéfinies dans le dossier "
-"caché res://.import :"
+"caché ``res://.import`` :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""

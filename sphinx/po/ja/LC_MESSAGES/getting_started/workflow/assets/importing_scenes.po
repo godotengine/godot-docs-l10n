@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,11 +176,21 @@ msgstr ""
 "Blenderは、glTFファイルで放射性テクスチャ(emissive texture)をエクスポートしま"
 "せん。モデルで使用する場合は、個別に持ち込む必要があります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
+msgid ""
+"By default, Blender has backface culling disabled on materials and will "
+"export materials to match how they render in Blender. This means that "
+"materials in Godot will have their cull mode set to **Disabled**. This can "
+"decrease performance since backfaces will be rendered, even when they are "
+"being culled by other faces. To resolve this, enable **Backface Culling** in "
+"Blender's Materials tab, then export the scene to glTF again."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting DAE files from Blender"
 msgstr "BlenderからDAEファイルをエクスポートする"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
@@ -188,7 +198,7 @@ msgstr ""
 "BlenderにはCOLLADAサポートが組み込まれていますが、ゲームエンジンのニーズでは"
 "適切に機能しないため、そのままでは使用しないでください。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 #, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
@@ -199,11 +209,11 @@ msgstr ""
 "Godotは、Godotで使用するためにCOLLADAシーンを正しくエクスポートする `Blender"
 "プラグイン<https://github.com/godotengine/collada-exporter>` を提供します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:78
 msgid "Exporting ESCN files from Blender"
 msgstr "BlenderからESCNファイルをエクスポートする"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 #, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
@@ -217,7 +227,7 @@ msgstr ""
 "これは .tscn ファイル(Godotシーンファイル)の別名のようなものです。Blenderの"
 "シーンから、可能な限り多くの情報をエクスポートします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
@@ -225,12 +235,12 @@ msgstr ""
 "ESCNエクスポーターには、その機能と使用法を説明する詳細な `ドキュメント "
 "<escn_exporter/index.html>`__ があります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 #, fuzzy
 msgid "Exporting textures separately"
 msgstr "テクスチャのインポート"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:92
 msgid ""
 "While textures can be exported with a model in certain file formats, such as "
 "glTF 2.0, you can also export them separately. Godot uses PBR (physically "
@@ -241,7 +251,7 @@ msgid ""
 "RodZill4/material-maker>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:97
 #, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
@@ -249,12 +259,12 @@ msgstr ""
 "スレッドの詳細については、次を参照してください:"
 "ref:'doc_using_multiple_threads' 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:100
 #, fuzzy
 msgid "Exporting considerations"
 msgstr "その他の考慮事項"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
 "Since GPUs can only render triangles, meshes that contain quads or N-gons "
 "have to be *triangulated* before they can be rendered. Godot can triangulate "
@@ -264,7 +274,7 @@ msgid ""
 "whenever possible."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid ""
 "To avoid issues with incorrect triangulation after importing in Godot, it is "
 "recommended to make the 3D DCC triangulate objects on its own. In Blender, "
@@ -274,17 +284,17 @@ msgid ""
 "**Triangulate Faces** option in the export dialog."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
 msgid ""
 "To avoid issues with 3D selection in the editor, it is recommended to apply "
 "the object transform in the 3D DCC before exporting the scene."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:120
 msgid "Import workflows"
 msgstr "ワークフローのインポート"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:115
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:122
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
@@ -293,7 +303,7 @@ msgstr ""
 "フローを使用できます。多くのオプションに応じて、次の方法でシーンを読み込む場"
 "合があります:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:118
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
@@ -301,7 +311,7 @@ msgstr ""
 "外部マテリアル (デフォルト): 各マテリアルがファイル リソースに保存される場"
 "所。それらに対する変更は保持されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
@@ -309,7 +319,7 @@ msgstr ""
 "外部メッシュ: 各メッシュが別のファイルに保存される場所。多くのユーザーは、直"
 "接メッシュを扱うことを好みます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:120
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
@@ -317,7 +327,7 @@ msgstr ""
 "外部アニメーション: ソースが変更されたときに、保存したアニメーションを変更お"
 "よびマージできるようにします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:128
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
@@ -325,11 +335,11 @@ msgstr ""
 "外部シーン: インポートされたシーンの各ルートノードを個別のシーンとして保存し"
 "ます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:122
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:129
 msgid "Single scene: A single scene file with everything built in."
 msgstr "シングルシーン: すべてが組み込まれた単一のシーンファイル。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:133
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
@@ -337,23 +347,23 @@ msgstr ""
 "開発者によってニーズが異なるように、このインポートプロセスは高度にカスタマイ"
 "ズ可能です。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
 msgid "Import options"
 msgstr "インポートオプション"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:131
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:138
 msgid "The importer has several options, which will be discussed below:"
 msgstr "インポーターには、以下で説明するいくつかのオプションがあります:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:143
 msgid "Nodes"
 msgstr "ノード"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:139
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
 msgid "Root Type"
 msgstr "ルートタイプ(Root Type)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:141
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:148
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
@@ -361,27 +371,27 @@ msgstr ""
 "デフォルトでは、読み込まれたシーンのルート ノードのタイプは \"Spatial\" です"
 "が、これは変更できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
 msgid "Root Name"
 msgstr "ルート名(Root Name)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid "Allows setting a specific name to the generated root node."
 msgstr "生成されたルート ノードに特定の名前を設定できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:156
 msgid "Root Scale"
 msgstr "ルートの大きさ(Root Scale)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
 msgid "The scale of the root node."
 msgstr "ルートノードの大きさ。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
 msgid "Custom Script"
 msgstr "カスタムスクリプト(Custom Script)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:163
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
@@ -390,11 +400,11 @@ msgstr ""
 "インポート後にシーン全体を処理する特別なスクリプトを提供できます。これは、後"
 "処理、マテリアルの変更、ジオメトリの面白い処理などに最適です。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:167
 msgid "Create a script like this:"
 msgstr "次のようなスクリプトを作成します:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid ""
 "The ``post_import`` function takes the imported scene as argument (the "
 "parameter is actually the root node of the scene). The scene that will "
@@ -404,14 +414,14 @@ msgstr ""
 "は実際にはシーンのルートノードです)。最終的に使用されるシーンを返す必要があり"
 "ます。別のものでもかまいません。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:184
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:203
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
 msgid "Storage"
 msgstr "ストレージ(Storage)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
 "nodes below the root will each be a separate scene and instanced into the "
@@ -421,7 +431,7 @@ msgstr ""
 "ると、ルートの下にあるノードがそれぞれ別々のシーンになり、インポートされた"
 "シーンにインスタンス化されることを指定できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
@@ -429,15 +439,15 @@ msgstr ""
 "もちろん、このようなインポートされたシーンを他の場所に手動でインスタンス化す"
 "ることもできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:187
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid "Materials"
 msgstr "マテリアル"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
 msgid "Location"
 msgstr "場所(Location)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
@@ -445,7 +455,7 @@ msgstr ""
 "Godot は、メッシュまたはノード内のマテリアルをサポートします。デフォルトで"
 "は、マテリアルは各ノードに配置されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid ""
 "Materials can be stored within the scene or in external files. By default, "
 "they are stored in external files so editing them is possible. This is "
@@ -456,7 +466,7 @@ msgstr ""
 "ファイルに保存されるため、編集が可能です。これは、ほとんどの3D DDC にはGodot"
 "のマテリアル・オプションと同じであるためです。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:209
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
@@ -464,13 +474,13 @@ msgstr ""
 "マテリアルがシーン内に組み込まれていると、ソース シーンが変更され、再インポー"
 "トされるたびにマテリアルが失われます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
 msgid ""
 "Godot will not reimport materials that are stored in external files unless "
 "you remove the associated ``.material`` file before reimporting."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:217
 msgid ""
 "To force reimporting materials every time the 3D scene is reimported, change "
 "the material storage mode in the 3D scene by selecting it in the FileSystem "
@@ -478,11 +488,11 @@ msgid ""
 "**Built-In** instead of **Files**."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:216
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "Keep On Reimport"
 msgstr "再インポート時に保持(Keep On Reimport)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:218
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -492,15 +502,15 @@ msgstr ""
 "たフィーチャーを保持し、ソース シーンから送信されたものを無視します。このオプ"
 "ションは、マテリアルがファイルとして保存されている場合にのみ存在します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
 msgid "Meshes"
 msgstr "メッシュ(Meshes)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid "Compress"
 msgstr "圧縮(Compress)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:228
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
@@ -508,11 +518,11 @@ msgstr ""
 "メッシュは、スペースを節約するためにメッシュの複数の側面に対してあまり正確で"
 "ない数値を使用するようにします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:248
 msgid "These are:"
 msgstr "これらは:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:239
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
@@ -520,49 +530,49 @@ msgstr ""
 "変換マトリックス(位置、回転、およびスケール):　32ビット浮動小数点数を16ビット"
 "符号付き整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
 msgstr "頂点:　32ビット浮動小数点数から16ビット符号付き整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "法線:　32ビット浮動小数点数から32ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:242
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "接線:　32ビット浮動小数点数から32ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "頂点の色:　32ビット浮動小数点数から32ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:237
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV:　32ビット浮動小数点数から32ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV2:　32ビット浮動小数点数から32ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:239
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr "頂点ウェイト:　32ビット浮動小数点数から16ビット符号なし整数にします。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
@@ -570,25 +580,25 @@ msgstr ""
 "アーマチュア・ボーン: 　32ビット浮動小数点数から16ビット符号なし整数にしま"
 "す。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:248
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
 msgstr ""
 "配列インデックス:　要素数に応じた32ビットまたは16ビットの符号なし整数へ。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:252
 msgid "Additional info:"
 msgstr "追加情報:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
 "UV2 = 詳細テクスチャとベイク処理されたライトマップテクスチャの2番目のUVチャネ"
 "ル。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:252
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
@@ -596,7 +606,7 @@ msgstr ""
 "配列インデックス = 上記の配列の各要素に番号を付す数値の配列。つまり、頂点と法"
 "線に番号を付けます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -609,11 +619,11 @@ msgstr ""
 "域をカバーする複数のメッシュがインポートされている場合、このメッシュのイン"
 "ポートを圧縮すると、ジオメトリまたは頂点が正確な場所にないことがあります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:260
 msgid "Ensure Tangents"
 msgstr "接線の確認(Ensure Tangents)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -625,7 +635,7 @@ msgstr ""
 "す。 GodotはこれにMikktspaceを使用しますが、エクスポーターで生成する方が常に"
 "良い結果になります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
@@ -634,7 +644,7 @@ msgstr ""
 "メッシュは、組み込みではなく別々のファイル (リソース) に格納できます。オブ"
 "ジェクトを直接ビルドする場合を除き、これはあまり実用的ではありません。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:273
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
@@ -642,26 +652,26 @@ msgstr ""
 "このオプションは、シーンの代わりに直接メッシュを操作することを好む人を支援す"
 "るために提供されています。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid "Light Baking"
 msgstr "ライトベーキング(Light Baking)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:279
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "メッシュがベイク処理されたライトマップで使用されるかどうか。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:274
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr ""
 "**無効(Disabled):** メッシュはベイク処理されたライトマップでは使用されませ"
 "ん。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:282
 msgid "**Enable:** The mesh is used in baked lightmaps."
 msgstr ""
 "**有効(Enable):** メッシュはベイク処理されたライトマップで使用されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:276
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
@@ -669,17 +679,17 @@ msgstr ""
 "**ライトマップ生成(Gen Lightmaps):** メッシュはベイク処理されたライトマップで"
 "使用され、ライトマップの第2UVレイヤーに展開します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:278
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:285
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
 "ライトのベイク処理の詳細については、\\ :ref:`doc_baked_lightmaps` を参照して"
 "ください。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
 msgid "External Files"
 msgstr "外部ファイル(External Files)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:290
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
@@ -687,11 +697,11 @@ msgstr ""
 "生成されたメッシュとマテリアルは、必要に応じてシーンの名前を持つサブディレク"
 "トリに格納できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:294
 msgid "Animation options"
 msgstr "アニメーションオプション"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:296
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -704,11 +714,11 @@ msgstr ""
 "タイムラインに配置するか、最悪の場合、各アニメーションを個別のファイルに配置"
 "する必要があります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:296
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid "Import of animations is enabled by default."
 msgstr "アニメーションのインポート(Import)はデフォルトで有効になっています。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:300
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
 "To modify animations from an imported 3D scene, you need to change the "
 "animation storage option from **Built-In** to **Files** in the Import dock. "
@@ -716,11 +726,11 @@ msgid ""
 "project is run."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
 msgid "FPS"
 msgstr "フレームレート(FPS)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:314
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -732,11 +742,11 @@ msgstr ""
 "集に使用する1秒あたりのフレーム数を指定してください。これを行わないと、アニ"
 "メーションが不安定になる場合があります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
 msgid "Filter Script"
 msgstr "フィルタ・スクリプト(Filter Script)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:314
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:321
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
@@ -744,7 +754,7 @@ msgstr ""
 "特別な構文でフィルタースクリプトを指定して、どのアニメーションのどのトラック"
 "を保持するかを決定することができます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -760,7 +770,7 @@ msgstr ""
 "文字を区別しないマッチパターンを使用して実行され、\\ ``?`` および ``*`` ワイ"
 "ルドカードを使用します(``String.matchn()`` を内部で使用しています)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:323
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
@@ -771,7 +781,7 @@ msgstr ""
 "メントで開始する必要があります。たとえば、インポートされた、名前が ``\"_Loop"
 "\"``で終わるすべてのアニメーションにフィルタを適用する場合は::"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:329
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
 msgid ""
 "Similarly, additional patterns can be added to the same line, separated by "
 "commas. Here is a modified example to additionally *include* all animations "
@@ -783,7 +793,7 @@ msgstr ""
 "``\"Attack\"`` で終わる名前を持つすべてのアニメーションを\\ *除外*\\ する設定"
 "を追加した変更例です::"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:342
 msgid ""
 "Following the animation selection filter statement, we add track filtering "
 "patterns to indicate which animation tracks should be kept or discarded. If "
@@ -795,7 +805,7 @@ msgstr ""
 "します。トラック・フィルタ・パターンが指定されていない場合、一致するアニメー"
 "ション内のすべてのトラックは破棄されます！"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:339
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid ""
 "It's important to note that track filter statements are applied in order for "
 "each track within the animation, this means that one line may include a "
@@ -809,7 +819,7 @@ msgstr ""
 "ルールによって除外されたトラックが、フィルタ・スクリプトのさらに下のルールに"
 "よって再度追加される場合もあります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:344
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
@@ -819,7 +829,7 @@ msgstr ""
 "すが、名前に ``\"arm\"`` が含まれている場合を除き、\\ ``\"Skeleton\"`` の ``"
 "\"Control\"``で終わっているトラックは破棄します::"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
@@ -829,12 +839,12 @@ msgstr ""
 "が、\\ ``\"Skeleton:Head\"`` や ``Skeleton:Arm_Left_Control`` などのトラック"
 "は保持されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:363
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr "``+`` または ``-`` で始まらないトラック・フィルタ行は無視されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:361
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
@@ -844,11 +854,11 @@ msgstr ""
 "に保存できます。これにより、アニメーションにカスタムトラックを追加し、再読み"
 "込み後も保持できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:365
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid "Optimizer"
 msgstr "オプティマイザー(Optimizer)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:367
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -859,11 +869,11 @@ msgstr ""
 "にアニメーションが壊れている疑いがない限り、これは常にオンにする必要がありま"
 "す。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
 msgid "Clips"
 msgstr "クリップ(Clips)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. For this to work, the model must have only one animation that is "
@@ -878,11 +888,11 @@ msgstr ""
 "始し、どのフレームで停止するかを指定し、アニメーションをループさせるかどうか"
 "を選択することができます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:389
 msgid "Scene inheritance"
 msgstr "シーンの継承"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -894,7 +904,7 @@ msgstr ""
 "gltf``\\ 、\\ ``.obj``\\ ファイルが3Dモデリングアプリから再エクスポートされた"
 "場合)、Godotはシーン全体を再インポートする必要があるため変更は出来ません。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:387
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -904,29 +914,29 @@ msgstr ""
 "は可能です。インポートしたシーンを開こうとすると、次のダイアログが表示されま"
 "す:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:399
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr "継承されたシーンでは、変更の唯一の制限は次のとおりです:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:401
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr "ノードは削除できません(ただし、どこにでも追加できます)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
 msgstr "サブリソースは編集できません(このために上記のように外部に保存します)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:397
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid "Other than that, everything is allowed!"
 msgstr "それ以外は、すべてが許可されています！"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:409
 msgid "Import hints"
 msgstr "インポートのヒント"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
@@ -934,15 +944,15 @@ msgstr ""
 "多くの場合、シーンを編集する場合、エクスポート後に実行する必要がある一般的な"
 "タスクがあります:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid "Adding collision detection to objects."
 msgstr "オブジェクトへのコリジョン検出の追加。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:407
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
 msgid "Setting objects as navigation meshes."
 msgstr "オブジェクトをナビゲーションメッシュとして設定する。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
@@ -950,7 +960,7 @@ msgstr ""
 "ゲーム エンジンで使用されていないノードの削除 (モデリングに使用される特定のラ"
 "イトなど)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:417
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -962,15 +972,15 @@ msgstr ""
 "Godotはそれらのオブジェクトの名前のサフィックスを検出し、自動的にアクションを"
 "実行します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "All the suffixes described below are *case-sensitive*."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:419
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:426
 msgid "Remove nodes (-noimp)"
 msgstr "ノードの削除 (-noimp)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:428
 #, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
@@ -979,12 +989,12 @@ msgstr ""
 "このサフィックスを持つノード名は、インポート時に、その型に関係なく削除されま"
 "す。読み込まれたシーンには表示されません。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:432
 #, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "コリジョンの作成 (-col、-colonly、-convcolonly)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:434
 msgid ""
 "The option ``-col`` will work only for Mesh objects. If it is detected, a "
 "child static collision node will be added, using the same geometry as the "
@@ -993,7 +1003,7 @@ msgid ""
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:440
 msgid ""
 "The option ``-convcol`` will create a :ref:`class_convexpolygonshape` "
 "instead of a :ref:`class_concavepolygonshape`. Unlike triangle meshes which "
@@ -1006,7 +1016,7 @@ msgid ""
 "mostly-accurate collision detection."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:442
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:449
 #, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
@@ -1016,7 +1026,7 @@ msgstr ""
 "ただし、視覚的ジオメトリが複雑すぎたり、コリジョンに対してスムーズでなかった"
 "りして、うまく機能しないことがよくあります。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:446
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:453
 #, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
@@ -1027,7 +1037,7 @@ msgstr ""
 "`class_staticbody` の衝突を作成する \"-colonly\" 修飾子が存在します。これによ"
 "り、視覚的なメッシュと実際のコリジョンを分離できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:457
 #, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
@@ -1036,7 +1046,7 @@ msgstr ""
 "オプション \"-convcolonly\" は、\\ :ref:`class_concavepolygonshape` の代わり"
 "に :ref:`class_convexpolygonshape` を作成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:459
 #, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
@@ -1049,33 +1059,33 @@ msgstr ""
 "ます。コリジョンノードには、Blenderの空の描画タイプに応じて、事前定義されたい"
 "くつかの形状があります:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:459
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:466
 msgid "Single arrow will create a :ref:`class_rayshape`."
 msgstr "単一の矢印(Single arrow)は :ref:`class_rayshape` を作成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:460
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:467
 msgid "Cube will create a :ref:`class_boxshape`."
 msgstr "キューブは :ref:`class_boxshape` を作成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:461
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:468
 msgid "Image will create a :ref:`class_planeshape`."
 msgstr "イメージ :ref:`class_planeshape` を作成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:462
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:469
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
 "球、(およびリストされていない他のもの)は :ref:`class_sphereshape` を作成しま"
 "す。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:464
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:471
 msgid ""
 "When possible, **try to use a few primitive collision shapes** instead of "
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:470
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:477
 #, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
@@ -1086,17 +1096,17 @@ msgstr ""
 "Ray」オプションを設定し、プリファレンス/テーマ/3Dビュー/エンプティでそれらに"
 "明確な色を設定できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:476
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:483
 msgid ""
 "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
 "shapes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:480
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:487
 msgid "Create navigation (-navmesh)"
 msgstr "ナビゲーションの作成(-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:482
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:489
 #, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
@@ -1105,11 +1115,11 @@ msgstr ""
 "このサフィックスを持つメッシュノードは、ナビゲーションメッシュに変換されま"
 "す。元のメッシュノードが削除されます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:486
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:493
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "VehicleBodyの作成(-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:488
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:495
 #, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
@@ -1118,11 +1128,11 @@ msgstr ""
 "このサフィックスを持つメッシュノードは、\\ :ref:`VehicleBody "
 "<class_VehicleBody>` ノードの子としてインポートされます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:492
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:499
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "VehicleWheelの作成[-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:494
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:501
 #, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
@@ -1131,11 +1141,11 @@ msgstr ""
 "このサフィックスを持つメッシュノードは、\\ :ref:`VehicleWheel "
 "<class_VehicleWheel>` ノードの子としてインポートされます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:498
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:505
 msgid "Rigid Body (-rigid)"
 msgstr "リジッドボディ(-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:500
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:507
 #, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
@@ -1144,11 +1154,11 @@ msgstr ""
 "このサフィックスを持つメッシュノードは、\\ :ref:`VehicleBody "
 "<class_VehicleBody>` ノードの子としてインポートされます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:503
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:510
 msgid "Animation loop (-loop, -cycle)"
 msgstr "アニメーションループ(-loop、-cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:505
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:512
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
@@ -1160,7 +1170,7 @@ msgstr ""
 "ポートされます。**これは上記で示したような他のサフィックスとは違い、ハイフン"
 "は不要です。**"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:509
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:516
 #, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "

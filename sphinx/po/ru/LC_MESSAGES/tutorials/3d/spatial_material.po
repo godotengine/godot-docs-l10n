@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
-msgstr ""
+msgstr "Spatial Material"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:7
 msgid "Introduction"
@@ -50,6 +50,10 @@ msgid ""
 "*Material* property of the node using the mesh (such as a MeshInstance "
 "node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
+"Есть три способа добавить к объекту ``SpatialMaterial``. Его можно добавить "
+"в свойства *Material* mesh. . Его можно добавить в свойства *Material* ноды, "
+"использующей mesh(например, к ноде MeshInstance), или в property *Material "
+"Override* ноды, использующей mesh."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
@@ -61,6 +65,13 @@ msgid ""
 "also override the regular material property of the node and the material "
 "property of the mesh."
 msgstr ""
+"Если вы добавите материал к самой сетке, каждый раз, когда эта сетка будет "
+"использоваться, она будет иметь этот материал. Если вы добавите материал к "
+"узлу, использующему сетку, материал будет использоваться только этим узлом, "
+"он также переопределит свойство материала сетки. Если материал добавлен в "
+"свойство *Material Override* узла, он будет использоваться только этим "
+"узлом. Он также будет переопределять обычное свойство материала узла и "
+"свойство материала сетки."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
@@ -122,7 +133,7 @@ msgstr "Включение резкости или размытия дистан
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Use Shadow to Opacity"
-msgstr ""
+msgstr "Используйте тень для непрозрачности"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
 msgid ""
@@ -130,10 +141,13 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"Освещение изменяет альфа-канал так, что затененные области становятся "
+"непрозрачными, а незатененные - прозрачными. Полезно для наложения теней на "
+"камеру в AR."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:61
 msgid "Unshaded"
-msgstr ""
+msgstr "Незатененный"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:63
 msgid ""
@@ -154,7 +168,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:72
 msgid "Vertex Lighting"
-msgstr ""
+msgstr "Вершинное освещение"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:74
 msgid ""
@@ -197,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid "No Depth Test"
-msgstr ""
+msgstr "Нет Теста На Глубину"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:93
 msgid ""
@@ -221,7 +235,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:104
 msgid "Use Point Size"
-msgstr ""
+msgstr "Использовать размер точки"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:106
 msgid ""
@@ -235,7 +249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:111
 msgid "World Triplanar"
-msgstr ""
+msgstr "Мировая трипланарность"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:113
 msgid ""
@@ -249,7 +263,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:118
 msgid "Fixed Size"
-msgstr ""
+msgstr "Фиксированный размер"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid ""
@@ -263,7 +277,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:125
 msgid "Do Not Receive Shadows"
-msgstr ""
+msgstr "Не получать тени"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:127
 msgid ""
@@ -274,7 +288,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:131
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "Отключить окружающий свет"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid ""
@@ -285,15 +299,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:137
 msgid "Ensure Correct Normals"
-msgstr ""
+msgstr "Убедитесь, что нормали верны"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
 msgid "Fixes normals when non-uniform scaling is used."
-msgstr ""
+msgstr "Исправляет нормали при использовании неравномерного масштабирования."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid "Vertex Color"
-msgstr ""
+msgstr "Цвет вершины"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
 #, fuzzy
@@ -306,7 +320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
-msgstr ""
+msgstr "Использовать как Альбедо"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
 msgid "Choosing this option means vertex color is used as albedo color."
@@ -323,6 +337,8 @@ msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
+"Большинство 3D DCC, скорее всего, экспортируют цвета вершин в sRGB, поэтому "
+"включение этой опции поможет им выглядеть правильно."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:161
 msgid "Parameters"
@@ -333,26 +349,32 @@ msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
+"``SpatialMaterial`` также имеет несколько настраиваемых параметров для "
+"настройки многих аспектов рендеринга:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
 msgid "Diffuse Mode"
-msgstr ""
+msgstr "Диффузный режим"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:171
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
 "object. The default is *Burley*. Other modes are also available:"
 msgstr ""
+"Указывает алгоритм, используемый при диффузном рассеянии света при попадании "
+"на объект. По умолчанию используется *Burley*. Также доступны другие режимы:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:174
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
+"**Burley:** Режим по умолчанию, оригинальный алгоритм диффузии Disney "
+"Principled PBS."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid "**Lambert:** Is not affected by roughness."
-msgstr ""
+msgstr "**Lambert:** Не подвержен влиянию шероховатости."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:176
 msgid ""
@@ -360,12 +382,18 @@ msgid ""
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
+"**Lambert Wrap:** Расширяет Lambert для охвата более 90 градусов при "
+"увеличении шероховатости. Отлично подходит для волос и моделирования "
+"дешевого подповерхностного рассеяния. Эта реализация экономит энергию."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:179
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
+"**Oren Nayar:** Эта реализация направлена на учет микрошлифов (через "
+"шероховатость). Хорошо работает для глиноподобных материалов и некоторых "
+"типов ткани."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:181
 msgid ""
@@ -374,231 +402,289 @@ msgid ""
 "environment's ambient light settings or disable ambient light in the spatial "
 "material to achieve a better effect."
 msgstr ""
+"**Toon:** Обеспечивает жесткий срез для освещения, сглаживание зависит от "
+"шероховатости. Для достижения лучшего эффекта рекомендуется отключить "
+"влияние неба в настройках окружающего освещения в окружении или отключить "
+"окружающее освещение в пространственном (spatial) материале."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:189
 msgid "Specular Mode"
-msgstr ""
+msgstr "Зеркальный режим"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:191
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
 "represents the shape of a light source reflected in the object."
 msgstr ""
+"Определяет, как будет отображаться спекулярный шар. Спекулярное пятно "
+"представляет собой форму источника света, отраженного от объекта."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:194
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
+"**ShlickGGX:** Самый распространенный блоб, используемый PBR 3D движками в "
+"настоящее время."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:195
 msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
 "but left here for the sake of compatibility."
 msgstr ""
+"**Blinn:** Распространен в движках предыдущего поколения. Не стоит "
+"использовать в настоящее время, но оставлен здесь ради совместимости."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid "**Phong:** Same as above."
-msgstr ""
+msgstr "**Phong:** Тоже, что и выше."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
+"**Toon:** Создает toon блоб, размер которого меняется в зависимости от "
+"шероховатости."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:199
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr ""
+msgstr "**Disabled:** Иногда блоб мешает. Прочь!"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:204
 msgid "Blend Mode"
-msgstr ""
+msgstr "Режим смешивания"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:206
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than *Mix* forces the object to go through the transparent pipeline."
 msgstr ""
+"Управляет режимом наложения материала. Имейте в виду, что любой режим, кроме "
+"*Смешивания*, заставляет объект проходить через прозрачный конвейер."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:209
 msgid ""
 "**Mix:** Default blend mode, alpha controls how much the object is visible."
 msgstr ""
+"**Mix:** Режим наложения по умолчанию, альфа управляет тем, насколько объект "
+"виден."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:210
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
 msgstr ""
+"**Add:** Объект смешивается аддитивно, хорошо подходит для бликов или "
+"некоторых огненных эффектов."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid "**Sub:** Object is subtracted."
-msgstr ""
+msgstr "**Sub:** Объект вычитается."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:213
 msgid "**Mul:** Object is multiplied."
-msgstr ""
+msgstr "**Mul:** Объект умножается."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:218
 msgid "Cull Mode"
-msgstr ""
+msgstr "Режим отбраковки"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
 msgstr ""
+"Определяет, какая сторона объекта не рисуется при отрисовке задних граней:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid "**Back:** The back of the object is culled when not visible (default)."
 msgstr ""
-"**Назад:** Задняя часть объекта отбраковывается, когда не видна (по "
-"умолчанию)."
+"**Back:** Задняя часть объекта обрезается, если она не видна (по умолчанию)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid "**Front:** The front of the object is culled when not visible."
-msgstr ""
+msgstr "**Front:** Передняя часть объекта отсеивается, если она не видна."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:224
 msgid ""
 "**Disabled:** Used for objects that are double-sided (no culling is "
 "performed)."
 msgstr ""
+"**Disabled:** Используется для объектов, которые являются двусторонними (не "
+"производится выбраковка)."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:227
+#: ../../docs/tutorials/3d/spatial_material.rst:228
+msgid ""
+"By default, Blender has backface culling disabled on materials and will "
+"export materials to match how they render in Blender. This means that "
+"materials in Godot will have their cull mode set to **Disabled**. This can "
+"decrease performance since backfaces will be rendered, even when they are "
+"being culled by other faces. To resolve this, enable **Backface Culling** in "
+"Blender's Materials tab, then export the scene to glTF again."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:236
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "Режим прорисовки глубины"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:229
+#: ../../docs/tutorials/3d/spatial_material.rst:238
 msgid "Specifies when depth rendering must take place."
-msgstr ""
+msgstr "Указывает, когда должен происходить рендеринг глубины."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:231
+#: ../../docs/tutorials/3d/spatial_material.rst:240
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
 msgstr ""
+"**Opaque Only (default):** Глубина рисуется только для непрозрачных объектов."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:232
+#: ../../docs/tutorials/3d/spatial_material.rst:241
 msgid ""
 "**Always:** Depth draw is drawn for both opaque and transparent objects."
 msgstr ""
+"**Всегда:** Отрисовка глубины рисуется как для непрозрачных, так и для "
+"прозрачных объектов."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:233
+#: ../../docs/tutorials/3d/spatial_material.rst:242
 msgid ""
 "**Never:** No depth draw takes place (do not confuse this with the No Depth "
 "Test option above)."
 msgstr ""
+"**Никогда:** Рисование глубины не выполняется (не путайте это с опцией «Без "
+"проверки глубины» выше)."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:235
+#: ../../docs/tutorials/3d/spatial_material.rst:244
 msgid ""
 "**Depth Pre-Pass:** For transparent objects, an opaque pass is made first "
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
+"**Предварительный проход глубины:** Для прозрачных объектов сначала "
+"выполняется непрозрачный проход с непрозрачными частями, затем прозрачность "
+"прорисовывается выше. Используйте этот вариант с прозрачной травой или "
+"листвой деревьев."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:242
+#: ../../docs/tutorials/3d/spatial_material.rst:251
 msgid "Line Width"
-msgstr ""
+msgstr "Ширина линии"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:244
+#: ../../docs/tutorials/3d/spatial_material.rst:253
 msgid ""
 "When drawing lines, specify the width of the lines being drawn. This option "
 "is not available on most modern hardware."
 msgstr ""
+"При рисовании линий укажите ширину рисуемых линий. Эта опция недоступна на "
+"большинстве современных аппаратных средств."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:248
+#: ../../docs/tutorials/3d/spatial_material.rst:257
 msgid "Point Size"
-msgstr ""
+msgstr "Размер точки"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:250
+#: ../../docs/tutorials/3d/spatial_material.rst:259
 msgid "When drawing points, specify the point size in pixels."
-msgstr ""
+msgstr "При рисовании точек укажите размер точки в пикселях."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:253
+#: ../../docs/tutorials/3d/spatial_material.rst:262
 msgid "Billboard Mode"
-msgstr ""
+msgstr "Режим рекламного щита"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:255
+#: ../../docs/tutorials/3d/spatial_material.rst:264
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
 "faces the camera:"
 msgstr ""
+"Включает режим рекламного щита для рисования материалов. Это контролирует, "
+"как объект смотрит в камеру:"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:258
+#: ../../docs/tutorials/3d/spatial_material.rst:267
 msgid "**Disabled:** Billboard mode is disabled."
-msgstr ""
+msgstr "**Отключено:** Режим рекламного щита отключен."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:259
+#: ../../docs/tutorials/3d/spatial_material.rst:268
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
 msgstr ""
+"**Включено:** Режим рекламного щита включен, ось -Z объекта всегда будет "
+"обращена к камере."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:261
+#: ../../docs/tutorials/3d/spatial_material.rst:270
 msgid ""
 "**Y-Billboard:** The object's X axis will always be aligned with the camera."
-msgstr ""
+msgstr "**Y-Рекламный щит** Ось X объекта всегда будет выровнена с камерой."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:262
+#: ../../docs/tutorials/3d/spatial_material.rst:271
 msgid ""
 "**Particles:** Most suited for particle systems, because it allows "
 "specifying animation options."
 msgstr ""
+"**Частицы:** Наиболее подходит для систем частиц, так как позволяет "
+"указывать параметры анимации."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:267
+#: ../../docs/tutorials/3d/spatial_material.rst:276
 msgid "The above options are only enabled for Particle Billboard."
 msgstr ""
+"Вышеуказанные параметры доступны только для частиц с режимом рекламного щита."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:270
+#: ../../docs/tutorials/3d/spatial_material.rst:279
 msgid "Billboard Keep Scale"
-msgstr ""
-
-#: ../../docs/tutorials/3d/spatial_material.rst:272
-msgid "Enables scaling a mesh in billboard mode."
-msgstr ""
-
-#: ../../docs/tutorials/3d/spatial_material.rst:275
-msgid "Grow"
-msgstr ""
-
-#: ../../docs/tutorials/3d/spatial_material.rst:277
-msgid "Grows the object vertices in the direction pointed by their normals:"
-msgstr ""
+msgstr "Сохранять масштаб рекламного щита"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:281
+msgid "Enables scaling a mesh in billboard mode."
+msgstr "Включает масштабирование сетки в режиме билборда."
+
+#: ../../docs/tutorials/3d/spatial_material.rst:284
+msgid "Grow"
+msgstr "Расти"
+
+#: ../../docs/tutorials/3d/spatial_material.rst:286
+msgid "Grows the object vertices in the direction pointed by their normals:"
+msgstr "Увеличивает вершины объекта в направлении, указанном их нормалями:"
+
+#: ../../docs/tutorials/3d/spatial_material.rst:290
 msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
+"Это обычно используется для создания дешевых контуров. Добавьте второй "
+"проход по материалу, сделайте его черным и незатененным, сделайте обратную "
+"обработку (Cull Front) и добавьте растушевку:"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:288
+#: ../../docs/tutorials/3d/spatial_material.rst:297
 msgid "Use Alpha Scissor"
-msgstr ""
+msgstr "Используйте Альфа-Ножницы"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:290
+#: ../../docs/tutorials/3d/spatial_material.rst:299
 msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
+"Когда прозрачность, отличная от ``0`` или ``1``, не требуется, можно "
+"установить порог, чтобы объект не отображал полупрозрачные пиксели."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:295
+#: ../../docs/tutorials/3d/spatial_material.rst:304
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
 "it to use mid- and post-process effects such as SSAO, SSR, etc."
 msgstr ""
+"Это визуализирует объект через непрозрачный конвейер, который работает "
+"быстрее и позволяет использовать эффекты промежуточной и постобработки, "
+"такие как SSAO, SSR и т.д."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:299
+#: ../../docs/tutorials/3d/spatial_material.rst:308
 msgid "Material colors, maps and channels"
 msgstr "Цвета материалов, карт и каналов"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:301
+#: ../../docs/tutorials/3d/spatial_material.rst:310
 msgid ""
 "Besides the parameters, what defines materials themselves are the colors, "
 "textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
+"Помимо параметров, определяющими сами материалы являются цвета, текстуры и "
+"каналы. Godot поддерживает обширный их список. Они подробно описаны ниже:"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:306
+#: ../../docs/tutorials/3d/spatial_material.rst:315
 msgid "Albedo"
-msgstr ""
+msgstr "Альбедо"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:308
+#: ../../docs/tutorials/3d/spatial_material.rst:317
 msgid ""
 "*Albedo* is the base color for the material, on which all the other settings "
 "operate. When set to *Unshaded*, this is the only color that is visible. In "
@@ -606,81 +692,114 @@ msgid ""
 "name mainly happened because, in PBR (Physically Based Rendering), this "
 "color affects many more calculations than just the diffuse lighting path."
 msgstr ""
+"*Albedo* - это базовый цвет материала, на который опираются все остальные "
+"настройки. Когда установлено значение *Unshaded*, это единственный видимый "
+"цвет. В предыдущих версиях Godot этот канал назывался *Diffuse*. Изменение "
+"названия произошло в основном потому, что в PBR (Physically Based Rendering) "
+"этот цвет влияет на гораздо большее количество вычислений, чем просто "
+"диффузный путь освещения."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:314
+#: ../../docs/tutorials/3d/spatial_material.rst:323
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
+"Альбедо цвета и текстуры можно использовать вместе, так как они умножаются."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:316
+#: ../../docs/tutorials/3d/spatial_material.rst:325
 msgid ""
 "*Alpha channel* in albedo color and texture is also used for the object "
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
+"*Альфа-канал* в цвете альбедо и текстуре также используется для прозрачности "
+"объекта. Если вы используете цвет или текстуру с *альфа-каналом*, убедитесь, "
+"что вы включили прозрачность или *alpha scissoring**, чтобы они работали."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:321
+#: ../../docs/tutorials/3d/spatial_material.rst:330
 msgid "Metallic"
-msgstr ""
+msgstr "Металлический"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:323
+#: ../../docs/tutorials/3d/spatial_material.rst:332
 msgid ""
 "Godot uses a metallic model over competing models due to its simplicity. "
 "This parameter defines how reflective the material is. The more reflective, "
 "the less diffuse/ambient light affects the material and the more light is "
 "reflected. This model is called \"energy-conserving\"."
 msgstr ""
+"Godot использует металлическую модель вместо конкурирующих моделей из-за ее "
+"простоты. Этот параметр определяет, насколько отражающим является материал. "
+"Чем больше отражение, тем меньше рассеянный/внешний свет влияет на материал "
+"и тем больше света отражается. Эта модель называется \"энергосберегающей\"."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:328
+#: ../../docs/tutorials/3d/spatial_material.rst:337
 msgid ""
 "The *Specular* parameter is a general amount for the reflectivity (unlike "
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
+"Параметр *Specular* - это общая величина для отражения (в отличие от "
+"*Metallic*, этот параметр не экономит энергию, поэтому оставьте его на "
+"``0.5`` и не трогайте его, если вам это не нужно)."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:332
+#: ../../docs/tutorials/3d/spatial_material.rst:341
 msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
+"Минимальная внутренняя отражательная способность составляет ``0,04``, "
+"поэтому невозможно сделать материал полностью неотражающим, как и в реальной "
+"жизни."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:338
+#: ../../docs/tutorials/3d/spatial_material.rst:347
 msgid "Roughness"
-msgstr ""
+msgstr "Шероховатость"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:340
+#: ../../docs/tutorials/3d/spatial_material.rst:349
 msgid ""
 "*Roughness* affects the way reflection happens. A value of ``0`` makes it a "
 "perfect mirror while a value of ``1`` completely blurs the reflection "
 "(simulating natural microsurfacing). Most common types of materials can be "
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
+"*Roughness* влияет на то, как происходит отражение. Значение ``0`` делает "
+"его идеальным зеркалом, а значение ``1`` полностью размывает отражение "
+"(имитируя естественную микрошлифовку). Большинство распространенных типов "
+"материалов могут быть получены при правильном сочетании *Металлик* и "
+"*Шероховатость*."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:348
+#: ../../docs/tutorials/3d/spatial_material.rst:357
 msgid "Emission"
-msgstr ""
+msgstr "Излучение"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:350
+#: ../../docs/tutorials/3d/spatial_material.rst:359
 msgid ""
 "*Emission* specifies how much light is emitted by the material (keep in mind "
 "this does not include light surrounding geometry unless :ref:`doc_gi_probes` "
 "are used). This value is added to the resulting final image and is not "
 "affected by other lighting in the scene."
 msgstr ""
+"*Emission* определяет, сколько света испускается материалом (имейте в виду, "
+"что это не включает свет, окружающий геометрию, если не используются :ref:"
+"`doc_gi_probes`). Это значение добавляется к конечному изображению и не "
+"зависит от другого освещения в сцене."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:358
+#: ../../docs/tutorials/3d/spatial_material.rst:367
 #, fuzzy
 msgid "Normal map"
 msgstr "Normal Map"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:360
+#: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
+"Нормальное отображение (Англа: нормал маппинг) позволяет задать текстуру, "
+"которая отображает более мелкие детали формы. Это не изменяет геометрию, "
+"только угол падения света. В Godot используются только красный и зеленый "
+"каналы карт нормалей для лучшего сжатия и более широкой совместимости."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:369
+#: ../../docs/tutorials/3d/spatial_material.rst:378
 msgid ""
 "Godot requires the normal map to use the X+, Y- and Z+ coordinates. In other "
 "words, if you've imported a material made to be used with another engine, "
@@ -693,7 +812,7 @@ msgstr ""
 "нормалей, чтобы ее ось Y была перевернута. В противном случае направление "
 "карты нормалей может показаться инвертированным по оси Y."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:374
+#: ../../docs/tutorials/3d/spatial_material.rst:383
 msgid ""
 "More information about normal maps (including a coordinate order table for "
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
@@ -703,11 +822,11 @@ msgstr ""
 "координат для популярных движков) можно найти `здесь <http://wiki.polycount."
 "com/wiki/Normal_Map_Technical_Details>`__."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:379
+#: ../../docs/tutorials/3d/spatial_material.rst:388
 msgid "Rim"
-msgstr ""
+msgstr "Обод"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:381
+#: ../../docs/tutorials/3d/spatial_material.rst:390
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
@@ -715,51 +834,68 @@ msgid ""
 "takes light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
+"Некоторые ткани имеют небольшой микромех, который заставляет свет "
+"рассеиваться вокруг него. Godot эмулирует это с помощью параметра *Rim*. В "
+"отличие от других реализаций освещения обода, которые просто используют "
+"канал излучения, этот параметр действительно учитывает свет (нет света - нет "
+"обода). Это делает эффект значительно более правдоподобным."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:388
+#: ../../docs/tutorials/3d/spatial_material.rst:397
 msgid ""
 "Rim size depends on roughness, and there is a special parameter to specify "
 "how it must be colored. If *Tint* is ``0``, the color of the light is used "
 "for the rim. If *Tint* is ``1``, then the albedo of the material is used. "
 "Using intermediate values generally works best."
 msgstr ""
+"Размер обода зависит от шероховатости, и есть специальный параметр, "
+"указывающий, как он должен быть окрашен. Если *Tint* равен ``0``, то для "
+"обода используется цвет света. Если *Tint* равен ``1``, то используется "
+"альбедо материала. Обычно лучше всего использовать промежуточные значения."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:394
+#: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid "Clearcoat"
-msgstr ""
+msgstr "Прозрачное покрытие"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:396
 #: ../../docs/tutorials/3d/spatial_material.rst:405
-#: ../../docs/tutorials/3d/spatial_material.rst:427
-#: ../../docs/tutorials/3d/spatial_material.rst:440
-#: ../../docs/tutorials/3d/spatial_material.rst:460
+#: ../../docs/tutorials/3d/spatial_material.rst:414
+#: ../../docs/tutorials/3d/spatial_material.rst:436
+#: ../../docs/tutorials/3d/spatial_material.rst:449
+#: ../../docs/tutorials/3d/spatial_material.rst:469
 msgid "*This feature is only available when using the GLES3 backend.*"
-msgstr ""
+msgstr "*Эта функция доступна только при использовании бэкенда GLES3*"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:398
+#: ../../docs/tutorials/3d/spatial_material.rst:407
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
+"Параметр *Clearcoat* используется для добавления к материалу вторичного "
+"прозрачного слоя. Это часто встречается в автомобильных красках и игрушках. "
+"На практике это меньший спекулярный слой, добавленный поверх существующего "
+"материала."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:403
+#: ../../docs/tutorials/3d/spatial_material.rst:412
 msgid "Anisotropy"
-msgstr ""
+msgstr "Анизотропия"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:407
+#: ../../docs/tutorials/3d/spatial_material.rst:416
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
 "Anisotropy is commonly used with hair, or to make materials such as brushed "
 "aluminum more realistic. It works especially well when combined with "
 "flowmaps."
 msgstr ""
+"Это изменяет форму спекулярного пятна и выравнивает его по касательной к "
+"пространству. Анизотропия обычно используется в волосах или для придания "
+"реалистичности таким материалам, как матовый алюминий. Она особенно хорошо "
+"работает в сочетании с картами потоков."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:414
+#: ../../docs/tutorials/3d/spatial_material.rst:423
 msgid "Ambient Occlusion"
-msgstr ""
+msgstr "Внешнее перекрытие"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:416
+#: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
 "how much ambient light reaches each surface of the object (it does not "
@@ -768,12 +904,18 @@ msgid ""
 "quality of a well-baked AO map. It is recommended to bake ambient occlusion "
 "whenever possible."
 msgstr ""
+"Можно указать запеченную карту окклюзии окружающего света. Эта карта влияет "
+"на то, сколько окружающего света достигает каждой поверхности объекта (по "
+"умолчанию она не влияет на прямой свет). Хотя для создания окклюзии можно "
+"использовать Screen-Space Ambient Occlusion (SSAO), ничто не сравнится с "
+"качеством хорошо пропеченной карты AO. Рекомендуется запекать окружающее "
+"затенение всегда, когда это возможно."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:425
+#: ../../docs/tutorials/3d/spatial_material.rst:434
 msgid "Depth"
 msgstr "Глубина"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:429
+#: ../../docs/tutorials/3d/spatial_material.rst:438
 msgid ""
 "Setting a depth map on a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -781,84 +923,116 @@ msgid ""
 "objects, but it produces a realistic depth effect for textures. For best "
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
+"Установка карты глубины на материале производит поиск по лучам, чтобы "
+"имитировать правильное перемещение полостей вдоль направления обзора. Это не "
+"настоящая добавленная геометрия, а иллюзия глубины. Это может не работать "
+"для сложных объектов, но создает реалистичный эффект глубины для текстур. "
+"Для достижения наилучших результатов *Глубину* следует использовать вместе с "
+"обычным отображением."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:438
+#: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Подповерхностное рассеяние"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:442
+#: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
+"Этот эффект имитирует свет, который проникает через поверхность объекта, "
+"рассеивается, а затем выходит наружу. Это полезно для создания реалистичной "
+"кожи, мрамора, цветных жидкостей и т.д."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:449
+#: ../../docs/tutorials/3d/spatial_material.rst:458
 msgid "Transmission"
-msgstr ""
+msgstr "Пропускание света (о свойстве материала)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:451
+#: ../../docs/tutorials/3d/spatial_material.rst:460
 msgid ""
 "This controls how much light from the lit side (visible to light) is "
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
+"Это определяет, сколько света с освещенной стороны (видимой для света) "
+"передается на темную сторону (противоположную от света). Это хорошо работает "
+"для тонких объектов, таких как листья растений, трава, человеческие уши и т. "
+"д."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:458
+#: ../../docs/tutorials/3d/spatial_material.rst:467
 msgid "Refraction"
-msgstr ""
+msgstr "Преломление"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:462
+#: ../../docs/tutorials/3d/spatial_material.rst:471
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
 "to fetch information from behind the object being rendered instead. This "
 "allows distorting the transparency in a way similar to refraction in real "
 "life."
 msgstr ""
+"Когда включена функция преломления, она заменяет альфа-смешивание, и вместо "
+"этого Godot пытается извлечь информацию из-за визуализируемого объекта. Это "
+"позволяет искажать прозрачность способом, аналогичным преломлению в реальной "
+"жизни."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:469
+#: ../../docs/tutorials/3d/spatial_material.rst:478
 msgid "Detail"
-msgstr ""
+msgstr "Деталь"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:471
+#: ../../docs/tutorials/3d/spatial_material.rst:480
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
+"Godot позволяет использовать вторичное альбедо и карты нормалей для создания "
+"детальной текстуры, которую можно смешивать многими способами. Комбинируя "
+"это со вторичными ультрафиолетовыми или трехплоскостными режимами, можно "
+"получить много интересных текстур."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:477
+#: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid "There are several settings that control how detail is used."
 msgstr ""
+"Существует несколько настроек, которые управляют тем, как используется "
+"детализация."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:479
+#: ../../docs/tutorials/3d/spatial_material.rst:488
 msgid ""
 "Mask: The detail mask is a black and white image used to control where the "
 "blending takes place on a texture. White is for the detail textures, Black "
 "is for the regular material textures, different shades of gray are for "
 "partial blending of the material textures and detail textures."
 msgstr ""
+"Маска детализации: это черно-белое изображение, используемое для управления "
+"тем, где происходит смешивание текстуры. Белый - для текстур деталей, черный "
+"- для обычных текстур материалов, различные оттенки серого - для частичного "
+"смешивания текстур материалов и текстур деталей."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:484
+#: ../../docs/tutorials/3d/spatial_material.rst:493
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
+"Режим наложения: Эти четыре режима управляют тем, как текстуры смешиваются "
+"вместе."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:486
+#: ../../docs/tutorials/3d/spatial_material.rst:495
 msgid ""
 "Mix: Combines pixel values of both textures. At black, only show the "
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
+"Смешивание: Объединяет значения пикселей обеих текстур. В черном цвете "
+"отображается только текстура материала, в белом - только текстура деталей. "
+"Значения серого создают плавное смешение между ними."
 
-#: ../../docs/tutorials/3d/spatial_material.rst:490
+#: ../../docs/tutorials/3d/spatial_material.rst:499
 msgid ""
 "Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:494
+#: ../../docs/tutorials/3d/spatial_material.rst:503
 msgid ""
 "Sub: Subtracts pixel values of one texture with the other. The second "
 "texture is completely subtracted at white parts of a mask with only a little "
@@ -866,41 +1040,41 @@ msgid ""
 "based on the exact texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:499
+#: ../../docs/tutorials/3d/spatial_material.rst:508
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:502
+#: ../../docs/tutorials/3d/spatial_material.rst:511
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:505
+#: ../../docs/tutorials/3d/spatial_material.rst:514
 msgid ""
 "Normal: This is where you put a normal texture you want to blend. If nothing "
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:510
+#: ../../docs/tutorials/3d/spatial_material.rst:519
 msgid "UV1 and UV2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:512
+#: ../../docs/tutorials/3d/spatial_material.rst:521
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:517
+#: ../../docs/tutorials/3d/spatial_material.rst:526
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:519
+#: ../../docs/tutorials/3d/spatial_material.rst:528
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -908,17 +1082,17 @@ msgid ""
 "mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:524
+#: ../../docs/tutorials/3d/spatial_material.rst:533
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:530
+#: ../../docs/tutorials/3d/spatial_material.rst:539
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:532
+#: ../../docs/tutorials/3d/spatial_material.rst:541
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -927,17 +1101,17 @@ msgid ""
 "only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:538
+#: ../../docs/tutorials/3d/spatial_material.rst:547
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:544
+#: ../../docs/tutorials/3d/spatial_material.rst:553
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:546
+#: ../../docs/tutorials/3d/spatial_material.rst:555
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,59 +117,67 @@ msgid ""
 "com/godotengine/webrtc-native/releases>`__."
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:41
+#: ../../docs/tutorials/networking/webrtc.rst:42
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/webrtc.rst:48
 msgid "Minimal connection example"
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:43
+#: ../../docs/tutorials/networking/webrtc.rst:50
 msgid ""
 "This example will show you how to create a WebRTC connection between two "
 "peers in the same application. This is not very useful in real life, but "
 "will give you a good overview of how a WebRTC connection is set up."
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:91
+#: ../../docs/tutorials/networking/webrtc.rst:98
 #, fuzzy
 msgid "This will print:"
 msgstr "Wyświetli:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:99
+#: ../../docs/tutorials/networking/webrtc.rst:106
 #, fuzzy
 msgid "Local signaling example"
 msgstr "Przykład strzelanki"
 
-#: ../../docs/tutorials/networking/webrtc.rst:101
+#: ../../docs/tutorials/networking/webrtc.rst:108
 msgid ""
 "This example expands on the previous one, separating the peers in two "
 "different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as "
 "a signaling server."
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:141
+#: ../../docs/tutorials/networking/webrtc.rst:148
 msgid "And now for the local signaling server:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:143
+#: ../../docs/tutorials/networking/webrtc.rst:150
 msgid ""
 "This local signaling server is supposed to be used as a :ref:`singleton "
 "<doc_singletons_autoload>` to connect two peers in the same scene."
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:177
+#: ../../docs/tutorials/networking/webrtc.rst:184
 #, fuzzy
 msgid "Then you can use it like this:"
 msgstr "Utwórz skrypt, wyglądający tak:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:198
+#: ../../docs/tutorials/networking/webrtc.rst:205
 #, fuzzy
 msgid "This will print something similar to this:"
 msgstr "Otworzy to edytor tekstu:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:206
+#: ../../docs/tutorials/networking/webrtc.rst:213
 msgid "Remote signaling with WebSocket"
 msgstr ""
 
-#: ../../docs/tutorials/networking/webrtc.rst:208
+#: ../../docs/tutorials/networking/webrtc.rst:215
 msgid ""
 "A more advanced demo using WebSocket for signaling peers and :ref:"
 "`WebRTCMultiplayer <class_WebRTCMultiplayer>` is available in the `godot "

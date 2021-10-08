@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
 msgid "List of features"
-msgstr "특징 리스트"
+msgstr "기능 목록"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
-"이 페이지는 현재 Godot가 지원하는 모든 기능들을 나열하는 것에 목적을 두고 있"
-"습니다."
+"이 페이지의 목표는 현재 Godot가 지원하는 모든 기능을 나열하는 것입니다."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -34,9 +33,9 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"이 페이지는 현재 안정화된 버전 Godot (3.3)이 지원하는 기능들을 나열하고 있으"
-"며, 최신 개발버전 (4.0)에서는 더 많은 기능들을 `<https://docs.godotengine."
-"org/en/latest/about/list_of_features.html>`__ 제공할 것입니다."
+"이 페이지는 현재 stable 버전 Godot (3.3)이 지원하는 기능들을 나열하고 있으"
+"며, latest development 버전(4.0)에서는 `더 많은 기능들 <https://docs."
+"godotengine.org/ko/latest/about/list_of_features.html>`__\\ 을 제공합니다."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
@@ -48,7 +47,7 @@ msgstr "플랫폼"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr "** 편집기와 내 보낸 프로젝트를 모두 실행할 수 있습니다. **"
+msgstr "**편집기와 내보낸 프로젝트를 모두 실행할 수 있는 플랫폼:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -76,11 +75,11 @@ msgstr "공식 바이너리는 Ubuntu 14.04에서 컴파일됩니다."
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr "웹 어셈블리(파이어폭스,크롬,엣지,오페라)를 통한 HTML5 ."
+msgstr "웹어셈블리(Firefox, Chrome, Edge, Opera)를 통한 HTML5."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "**Runs exported projects:**"
-msgstr "**내보낸 프로젝트 실행:**"
+msgstr "**내보낸 프로젝트를 실행할 수 있는 플랫폼:**"
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "Android 4.4 and later."
@@ -92,7 +91,7 @@ msgstr "iOS 10.0 이상."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`Consoles <doc_consoles>`."
+msgstr ":ref:`콘솔 <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:37
 msgid ""
@@ -106,26 +105,26 @@ msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
-"Godot는 가능한 한 플랫폼 독립적이고 비교적 쉽게 새로운 플랫폼으로 이식 할 수 "
-"있는 것을 목표로합니다."
+"Godot는 가능한 한 플랫폼 독립적이고 비교적 쉽게 새로운 플랫폼으로 이식할 수 "
+"있는 것을 목표로 합니다."
 
 #: ../../docs/about/list_of_features.rst:43
 msgid "Editor"
-msgstr "편집기"
+msgstr "에디터"
 
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:87
 #: ../../docs/about/list_of_features.rst:344
 msgid "**Features:**"
-msgstr "**기능들:**"
+msgstr "**기능:**"
 
 #: ../../docs/about/list_of_features.rst:47
 msgid "Scene tree editor."
-msgstr "씬 트리 편집기"
+msgstr "씬 트리 에디터."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "Script editor."
-msgstr "스크립트 편집기"
+msgstr "스크립트 에디터."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -141,7 +140,7 @@ msgstr "GDScript :ref:`디버거 <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "No support for debugging in threads yet."
-msgstr "스레드 디버그는 아직 지원하지 않습니다."
+msgstr "스레드 디버깅은 아직 지원하지 않습니다."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Performance monitoring tools."
@@ -149,18 +148,18 @@ msgstr "성능 측정 툴."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid "Live script reloading."
-msgstr "실시간 스크립트 리로딩"
+msgstr "실시간 스크립트 리로딩."
 
 #: ../../docs/about/list_of_features.rst:56
 msgid "Live scene editing."
-msgstr "실시간 씬 편집"
+msgstr "실시간 씬 편집."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
-"변경사항들은 편집기에 반영되며 프로젝트 실행을 중지한 이후에도 유지됩니다."
+"변경사항들은 에디터에 반영되며 프로젝트 실행을 중지한 이후에도 유지됩니다."
 
 #: ../../docs/about/list_of_features.rst:60
 msgid "Remote inspector."
@@ -171,49 +170,48 @@ msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
-"변경사항들은 편집기에 반영되지 않으며 프로젝트 실행을 멈춘 이후에 유지되지 않"
+"변경사항들은 에디터에 반영되지 않으며 프로젝트 실행을 멈춘 이후에 유지되지 않"
 "습니다."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Live camera replication."
-msgstr "실시간 카메라 복제"
+msgstr "실시간 카메라 복제."
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr "편집기 내 카메라를 움직여 프로젝트 실행중에 결과를 볼 수 있습니다."
+msgstr "편집기 내 카메라를 움직여 프로젝트 실행 중에 결과를 볼 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "커뮤니티 참여로 지원되는 수십 가지 언어로 편집기를 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:70
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "플러그인(Plugin)"
+msgstr "**플러그인:**"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
-"편집기 기능 확장을 위한 플러그인들은 :ref:`애셋 라이브러리 "
-"<doc_what_is_assetlib>` 에서 다운로드받을 수 있습니다."
+"편집기 기능 확장을 위한 플러그인은 :ref:`애셋 라이브러리 "
+"<doc_what_is_assetlib>`\\ 에서 다운로드받을 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:74
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
-"GDScript로 여러분만의 플러그인을 만들어 새로운 기능을 더하거나 워크플로를 더 "
-"빠르게 할 수 있습니다."
+"GDScript로 여러분만의 플러그인을 만들어 새로운 기능을 추가하거나 워크플로를 "
+"빠르게 만들 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:75
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
-"프로젝트 매니저의 애셋 라이브러리에서 프로젝트를 다운로드받거나 직접 불러올 "
-"수 있습니다."
+"프로젝트 매니저(Project Manager)의 애셋 라이브러리(Asset Library)에서 프로젝"
+"트를 다운로드받거나 직접 불러올 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "2D graphics"
@@ -222,27 +220,27 @@ msgstr "2D 그래픽"
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:144
 msgid "**Two renderers available:**"
-msgstr "**두 가지 렌더러가 사용 가능합니다:**"
+msgstr "**두 가지 렌더러 사용 가능:**"
 
 #: ../../docs/about/list_of_features.rst:82
 #: ../../docs/about/list_of_features.rst:147
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr "OpenGL ES 3.0 렌더러 (데스크톱은 OpenGL 3.3을 사용합니다)."
+msgstr "OpenGL ES 3.0 렌더러(데스크톱 플랫폼에서는 OpenGL 3.3 사용)."
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:147
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr "하이엔드 비주얼. 데스크톱 플랫폼에 권장합니다."
+msgstr "하이엔드 비주얼. 데스크톱 플랫폼에 권장."
 
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:153
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr "OpenGL ES 2.0 렌더러 (데스크톱에서는 OpenGL 2.1을 사용합니다)."
+msgstr "OpenGL ES 2.0 렌더러(데스크톱에서는 OpenGL 2.1 사용)."
 
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:150
 msgid "Recommended on mobile and Web platforms."
-msgstr "모바일 또는 웹 플랫폼에 권장합니다."
+msgstr "모바일 또는 웹 플랫폼에 권장."
 
 #: ../../docs/about/list_of_features.rst:89
 msgid "Sprite, polygon and line rendering."
@@ -252,645 +250,662 @@ msgstr "스프라이트, 폴리곤 및 직선 렌더링."
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
-"Polygon2D나 Line2D 같이 직선이나 다각형을 그리기 위해 사용하는 고수준 도구들"
-"입니다."
+"Line2D, Polygon2D같이 직선이나 폴리곤을 그리기 위해 사용하는 고수준 도구."
 
 #: ../../docs/about/list_of_features.rst:93
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr "애니메이션 스프라이트 제작 도우미로 AnimatedSprite가 있습니다."
+msgstr "애니메이션 스프라이트 제작 도우미 AnimatedSprite."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Parallax layers."
-msgstr ""
+msgstr "패럴랙스 레이어."
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "레이어를 여러 번 자동으로 복제해 의사 3D 지원."
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "노멀 맵을 통한 2D 라이팅."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "거칠거나 부드러운 그림자 표현."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"비트맵(BitmapFont)을 사용하거나 FreeType(DynamicFont)을 사용하여 래스터라이징"
+"한 글꼴 렌더링."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "비트맵 글꼴은 BMFont와 같은 도구로 내보낼 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont는 색상이 있는 글꼴뿐만 아니라 흑백 글꼴도 지원합니다. TTF와 OTF "
+"형식을 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:107
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
-msgstr ""
+msgstr "DynamicFont는 글꼴 아웃라인 두께 및 색상 조절을 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:108
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
-msgstr ""
+msgstr "더 높은 해상도에서도 글꼴이 선명하게 보이도록 글꼴 오버샘플링 지원."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "GPU 기반 파티클과 커스텀 파티클 셰이더 지원."
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:217
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "파티클"
+msgstr "CPU 기반 파티클."
 
 #: ../../docs/about/list_of_features.rst:114
-#, fuzzy
 msgid "2D tools"
-msgstr "tool"
+msgstr "2D 도구"
 
 #: ../../docs/about/list_of_features.rst:116
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "스무딩(smoothing)과 드래그 마진(drag margin)이 적용된 2D 카메라."
 
 #: ../../docs/about/list_of_features.rst:117
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "2D 공간에서의 경로를 표현하는 Path2D 노드."
 
 #: ../../docs/about/list_of_features.rst:119
 #: ../../docs/about/list_of_features.rst:258
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "에디터에서 그리거나 절차적으로 생성할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "노드가 Path2D 경로를 따라갈 수 있게 하는 PathFollow2D 노드."
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2D 기하 도우미 클래스."
 
 #: ../../docs/about/list_of_features.rst:123
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "텍스처를 입힌 2D 선을 그릴 수 있는 Line2D 노드."
 
 #: ../../docs/about/list_of_features.rst:126
-#, fuzzy
 msgid "2D physics"
-msgstr "물리(Physics)"
+msgstr "2D 물리"
 
 #: ../../docs/about/list_of_features.rst:128
 #: ../../docs/about/list_of_features.rst:266
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "물리 속성"
+msgstr "**물리 물체:**"
 
 #: ../../docs/about/list_of_features.rst:130
 #: ../../docs/about/list_of_features.rst:268
-#, fuzzy
 msgid "Static bodies."
-msgstr "정적 함수(Static functions)"
+msgstr "정적 물체(static bodies)."
 
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "Rigid bodies."
-msgstr "리지드 바디 모드"
+msgstr "강체(rigid bodies)."
 
 #: ../../docs/about/list_of_features.rst:132
 #: ../../docs/about/list_of_features.rst:270
-#, fuzzy
 msgid "Kinematic bodies."
-msgstr "키네마틱 충돌 응답"
+msgstr "동적 물체(kinematic bodies)."
 
 #: ../../docs/about/list_of_features.rst:133
 #: ../../docs/about/list_of_features.rst:272
 msgid "Joints."
-msgstr ""
+msgstr "관절(Joints)."
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:275
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "물체가 들어오거나 나가는 것을 감지하는 영역."
 
 #: ../../docs/about/list_of_features.rst:136
 #: ../../docs/about/list_of_features.rst:277
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "3차원에서 충돌 감지"
+msgstr "**콜리전 감지:**"
 
 #: ../../docs/about/list_of_features.rst:138
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "기본 모양: 선, 박스, 원, 캡슐."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"콜리전 폴리곤(편집기에서 직접 그리거나 스프라이트로부터 생성될 수 있습니다)."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "3D graphics"
-msgstr ""
+msgstr "3D 그래픽"
 
 #: ../../docs/about/list_of_features.rst:148
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "sRGB를 사용한 HDR 렌더링."
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "더 나은 호환성의 LDR 렌더링."
 
 #: ../../docs/about/list_of_features.rst:152
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"모든 기능을 사용할 수 있는 건 아닙니다. 아래 *GSES3*\\ 으로 표시된 기능들은 "
+"OpenGL ES 3.0 렌더러로만 사용 가능합니다."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "**Camera:**"
-msgstr ""
+msgstr "**카메라:**"
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr ""
+"투시(perspective), 직교(orthographic) 및 프러스텀 오프셋(frustum-offset) 카메"
+"라."
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**물리 기반 렌더링**"
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "디즈니의 PBR 모델을 따릅니다."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"ORM 텍스처를 지원하는 러프니스-메탈릭(roughness-metallic) 워크플로를 사용합니"
+"다."
 
 #: ../../docs/about/list_of_features.rst:163
-#, fuzzy
 msgid "Normal mapping."
-msgstr "노말맵"
+msgstr "노멀 매핑."
 
 #: ../../docs/about/list_of_features.rst:164
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3:* 거리 기반 자동 세부 수준 패럴랙스(parallax)/릴리프(relief) 매핑."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr ""
+"*GLES3:* 서브서피스 스캐터링(sub-surface scattering) 및 투과(transmittance)."
 
 #: ../../docs/about/list_of_features.rst:166
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:* 근접(Proximity) 페이드(가벼운 파티클)."
 
 #: ../../docs/about/list_of_features.rst:167
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"투명 파이프라인을 통과하지 않기 위해 알파 블렌딩이나 디더링(dithering)을 사용"
+"할 수 있는 디스턴스 페이드(distance face)."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "디더링은 픽셀 기반 또는 오브젝트 기반으로 판별합니다."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**실시간 라이팅:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Directional lights (sun/moon). Up to 4 per scene."
 msgstr ""
+"디렉셔널(방향성) 라이트(directional lights) (태양 또는 달). 씬에 최대 4개까"
+"지 가능."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "옴니디렉셔널(전방위) 라이트(Omnidirectional lights)."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "원뿔 모양의 각도와 감쇠가 조절 가능한 스포트라이트."
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**그림자 매핑**"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*방향성 라이트(DirectionalLight):* 직교 (가장 빠름), PSSM 2-split 및 4-"
+"split. 스플릿 간에 블렌딩 가능합니다."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*옴니 라이트(OmniLight):* 쌍포물선(빠름) 또는 큐브맵(느리지만 정확). 색이 있"
+"는 프로젝터 텍스처를 파노라마 형태로 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:183
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "텍스처 가져오기"
+msgstr "*스포트라이트:* 단일 텍스처."
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**간접 라이팅을 통한 글로벌 일루미네이션:**"
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "라이트맵 굽기(빠르지만 실행시간 중에 갱신할 수 없습니다)."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "라이트맵은 CPU로 구울 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr ""
+msgstr "*GLES3:* GI 프로브 (느리지만 준실시간). 반사를 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:193
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "반사"
+msgstr "**반사**"
 
 #: ../../docs/about/list_of_features.rst:195
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "*GLES3:* 복셀 기반 반사 (GI 프로브 사용중에만 가능)."
 
 #: ../../docs/about/list_of_features.rst:196
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"미리 구운 빠른 반사 또는 ReflectionProbe를 이용한 느린 실시간 반사. 시차 보정"
+"을 옵션으로 활성화할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* 스크린 공간 반사."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "Reflection techniques can be mixed together for greater accuracy."
-msgstr ""
+msgstr "반사 기술들은 더 높은 정확도를 위해 혼합해서 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "**Sky:**"
-msgstr ""
+msgstr "**하늘:**"
 
 #: ../../docs/about/list_of_features.rst:203
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "파노라마 하늘 (HDRI 사용)."
 
 #: ../../docs/about/list_of_features.rst:204
-#, fuzzy
 msgid "Procedural sky."
-msgstr ":ref:`Particle 셰이더 <doc_particle_shader>`"
+msgstr "절차적 하늘."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "**Fog:**"
-msgstr ""
+msgstr "**안개:**"
 
 #: ../../docs/about/list_of_features.rst:208
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "조절 가능한 감쇠 커브를 이용한 깊이 안개(depth fog)."
 
 #: ../../docs/about/list_of_features.rst:209
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "감쇠 조절 가능한 높이 안개(height fog)(바닥 또는 천장)."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"(태양의 색상과 맞추기 위해) 카메라 방향에 따른 자동 깊이 안개 색상 지원."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
+"투과율(transmittance) 옵션을 통해 빛이 안개에서도 더 보일 수 있게 할 수 있습"
+"니다."
 
 #: ../../docs/about/list_of_features.rst:214
-#, fuzzy
 msgid "**Particles:**"
-msgstr "파티클"
+msgstr "**파티클**"
 
 #: ../../docs/about/list_of_features.rst:216
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "*GLES3:* GPU 기반 파티클과 커스텀 파티클 셰이더 지원."
 
 #: ../../docs/about/list_of_features.rst:219
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "처리(Process)하기"
+msgstr "**포스트 프로세싱**"
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "톤 매핑(선형, Reinhard, 필름, ACES)."
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
+msgstr "*GLES3:* 뷰포트 밝기에 기초한 자동 노출 보정."
 
 #: ../../docs/about/list_of_features.rst:223
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* 가깝거나 먼 피사계 심도."
 
 #: ../../docs/about/list_of_features.rst:224
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "*GLES3:* 스크린 공간 앰비언트 어클루전."
 
 #: ../../docs/about/list_of_features.rst:225
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* 컬러 밴딩(color banding)을 피하기 위한 디밴딩(HDR 렌더링이 활성화된 "
+"경우 효과적입니다)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"bicubic 업스케일 옵션을 통한 글로우/블룸 및 몇몇 블렌딩 모드를 사용할 수 있습"
+"니다(스크린, 소프트 라이트, Add, Replace)."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "1차원 램프를 사용한 색상 교정."
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "밝기, 대비 및 채도 조정."
 
 #: ../../docs/about/list_of_features.rst:231
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**기능 태그**"
+msgstr "**텍스처 필터링:**"
 
 #: ../../docs/about/list_of_features.rst:233
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "근접, 이중선형, 삼중선형 또는 비등방성 필터링."
 
 #: ../../docs/about/list_of_features.rst:235
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "TextureProgress"
+msgstr "**텍스처 압축:**"
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* 고품질 압축을 위한 BPTC(macOS에서는 지원되지 않음)."
 
 #: ../../docs/about/list_of_features.rst:238
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (macOS는 지원하지 않음)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (GLES2 렌더러에 적합)."
 
 #: ../../docs/about/list_of_features.rst:240
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "*GLES3:* S3TC (모바일/웹 플랫폼은 지원하지 않음)."
 
 #: ../../docs/about/list_of_features.rst:242
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**안티 앨리어싱:**"
 
 #: ../../docs/about/list_of_features.rst:244
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "여러 인스턴스"
+msgstr "다중 샘플링 안티앨리어싱 (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "여러 인스턴스"
+msgstr "고속 근사 안티앨리어싱 (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"이 효과들의 대부분은 더 나은 성능 또는 더 나은 품질을 위해 조절할 수 있습니"
+"다. Godot를 오프라인 렌더링에 사용할 때 유용합니다."
 
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "3D tools"
-msgstr "tool"
+msgstr "3D 도구"
 
 #: ../../docs/about/list_of_features.rst:253
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
-msgstr ""
+msgstr "기본 메시: 육면체, 원통/원뿔, (반)구, 각기둥, 평면, 사각형."
 
 #: ../../docs/about/list_of_features.rst:254
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`절차적 기하학 <toc-procedural_geometry>`"
+msgstr ":ref:`절차적 기하 생성 <toc-procedural_geometry>`\\ 을 위한 도구."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+":ref:`구조적 입체기하학 <doc_csg_tools>`\\ (프로토타이핑을 위해 의도됨)."
 
 #: ../../docs/about/list_of_features.rst:256
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "3D 공간에서의 경로를 나타내는 Path3D 노드."
 
 #: ../../docs/about/list_of_features.rst:259
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "노드가 Path3D 경로를 따라가도록 하는 PathFollow3D 노드."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "3D 기하 도우미 클래스."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "3D physics"
-msgstr "물리(Physics)"
+msgstr "3D 물리(Physics)"
 
 #: ../../docs/about/list_of_features.rst:271
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "차체 (Vehicle bodies, 시뮬레이션이 아닌 오락용 물리입니다)."
 
 #: ../../docs/about/list_of_features.rst:273
 msgid "Soft bodies."
-msgstr ""
+msgstr "연체 (Soft bodies)."
 
 #: ../../docs/about/list_of_features.rst:274
-#, fuzzy
 msgid "Ragdolls."
-msgstr "래그돌(Ragdoll) 시스템"
+msgstr "래그돌(Ragdoll)."
 
 #: ../../docs/about/list_of_features.rst:279
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
+msgstr "기본 모형: 직육면체, 구, 캡슐, 원통."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "어느 메시든 편집기에서 삼각형 콜리전을 생성합니다."
 
 #: ../../docs/about/list_of_features.rst:281
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
+"어느 메시에서든 편집기에서 하나 이상의 컨벡스 콜리전 모양을 생성합니다."
 
 #: ../../docs/about/list_of_features.rst:284
 msgid "Shaders"
-msgstr ""
+msgstr "셰이더"
 
 #: ../../docs/about/list_of_features.rst:286
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "*2D:* 커스텀 버텍스, 프래그먼트, 라이트 셰이더."
 
 #: ../../docs/about/list_of_features.rst:287
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
+msgstr "*3D:* 커스텀 버텍스, 프래그먼트, 라이트 및 하늘 셰이더."
 
 #: ../../docs/about/list_of_features.rst:288
+#, fuzzy
 msgid ""
-"Text-based shaders using a `shader language inspired by GLSL "
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"`GLSL에서 영감을 얻은 셰이더 언어 <doc_shading_language>`\\ 를 사용한 텍스트 "
+"기반 셰이더."
 
 #: ../../docs/about/list_of_features.rst:289
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "외부 텍스트 편집기 사용하기"
+msgstr "비주얼 셰이더 편집기."
 
 #: ../../docs/about/list_of_features.rst:291
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr "비주얼 셰이더 플러그인 지원."
 
 #: ../../docs/about/list_of_features.rst:294
 msgid "Scripting"
 msgstr "스크립팅(Scripting)"
 
 #: ../../docs/about/list_of_features.rst:296
-#, fuzzy
 msgid "**General:**"
-msgstr "일반"
+msgstr "**일반:**"
 
 #: ../../docs/about/list_of_features.rst:298
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "객체 지향 디자인과 구성"
+msgstr "노드를 확장하는 스크립트를 통한 객체 지향 디자인 패턴."
 
 #: ../../docs/about/list_of_features.rst:299
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "시그널과 그룹을 이용한 스크립트 간 통신."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
-msgstr ""
+msgstr ":ref:`교차 언어 스크립팅 <doc_cross_language_scripting>` 지원."
 
 #: ../../docs/about/list_of_features.rst:301
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
-msgstr ""
+msgstr "벡터나 트랜스폼 같은 다양한 2D 및 3D 선형대수 데이터 타입 지원."
 
 #: ../../docs/about/list_of_features.rst:303
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:305
-#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
-"Godot 3.1부터, GDScript는 :ref:`선택 정적 타이핑<doc_gdscript_static_typing>`"
-"\\ 을 지원합니다."
+":ref:`선택적 정적 타이핑 <doc_gdscript_static_typing>`\\ 을 포함한 :ref:`고수"
+"준 인터프리터 언어 <doc_gdscript>`."
 
 #: ../../docs/about/list_of_features.rst:307
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "파이썬 구문과 비슷합니다."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "Github에서 구문 강조 지원."
 
 #: ../../docs/about/list_of_features.rst:309
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+":ref:`쓰레드를 사용하여 <doc_using_multiple_threads>` 비동기 액션이나 멀티코"
+"어 작업을 할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:312
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
+"파일 크기를 작게 하고 의존성을 낮추기 위해 별도의 바이너리로 패키징하였습니"
+"다."
 
 #: ../../docs/about/list_of_features.rst:315
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Mono 6.x 버전을 사용합니다."
 
 #: ../../docs/about/list_of_features.rst:317
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "C# 7.0의 구문과 기능을 모두 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:319
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "지원되는 애니메이션"
+msgstr "모든 플랫폼을 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
-msgstr ""
+msgstr "IDE 기능을 사용할 수 있도록 외부 편집기를 사용하는 것을 권장합니다."
 
 #: ../../docs/about/list_of_features.rst:322
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:324
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
-msgstr ""
+msgstr ":ref:`그래프 기반 비주얼 스크립팅 언어 <doc_what_is_visual_script>`."
 
 #: ../../docs/about/list_of_features.rst:325
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"전체 프로젝트를 만들기 위한 용도보다는 (난이도에 따른 로직과 같이) 특정 용도"
+"로 사용할 때 가장 좋습니다."
 
 #: ../../docs/about/list_of_features.rst:328
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:330
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"고성능이 필요하거나 서드파티 통합을 해야 할 경우 네이티브 바이너리에 연결할 "
+"수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:332
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"성능이 적합하다면 게임 스크립트로는 GDScript나 C#을 사용할 것을 권장합니다."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "공식 C, C++언어 바인딩."
 
 #: ../../docs/about/list_of_features.rst:337
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "여러분이 사용하는 어느 빌드 시스템이나 언어든 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:339
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
-msgstr ""
+msgstr "커뮤니티에 의해 유지되는 D, Kotlin, Python, Nim, Rust 바인딩."
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Audio"
@@ -898,122 +913,118 @@ msgstr "오디오"
 
 #: ../../docs/about/list_of_features.rst:346
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "모노, 스테레오, 5.1 그리고 7.1채널 출력."
 
 #: ../../docs/about/list_of_features.rst:347
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "2D와 3D에서의 위치/비위치 플레이백."
 
 #: ../../docs/about/list_of_features.rst:349
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "2D와 3D에서의 도플러 효과를 선택적으로 지원."
 
 #: ../../docs/about/list_of_features.rst:351
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
+"수십 개의 효과가 포함되고 재 라우팅 가능한 :ref:`오디오 버스 "
+"<doc_audio_buses>` 및 효과 지원."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
-msgstr ""
+msgstr "3D 공간에서 카메라와 다른 위치에서의 소리를 듣기 위한 Listenr3D 노드."
 
 #: ../../docs/about/list_of_features.rst:354
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
-msgstr ""
+msgstr "AudioEffectCapture 클래스를 이용한 실시간 마이크로폰 오디오 입력."
 
 #: ../../docs/about/list_of_features.rst:355
-#, fuzzy
 msgid "MIDI input."
-msgstr "입력"
+msgstr "MIDI 입력."
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "MIDI 출력은 아직 지원되지 않습니다."
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**사용된 API 목록:**"
 
 #: ../../docs/about/list_of_features.rst:361
-#, fuzzy
 msgid "*Windows:* WASAPI."
-msgstr "**Windows**"
+msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "*macOS:* CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:363
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio 또는 ALSA."
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "Import"
-msgstr "가져오기"
+msgstr "불러오기"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ":ref:`맞춤 타입 <doc_making_plugins>`"
+msgstr ":ref:`커스텀 임포트 플러그인 <doc_import_plugins>` 지원."
 
 #: ../../docs/about/list_of_features.rst:370
-#, fuzzy
 msgid "**Formats:**"
-msgstr "형식"
+msgstr "**형식:**"
 
 #: ../../docs/about/list_of_features.rst:372
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "**콘솔:** :ref:`doc_consoles` 을 확인하세요"
+msgstr "*이미지:* :ref:`doc_import_images` 를 참고하세요."
 
 #: ../../docs/about/list_of_features.rst:373
-#, fuzzy
 msgid "*Audio:*"
-msgstr "오디오"
+msgstr "*오디오:*"
 
 #: ../../docs/about/list_of_features.rst:375
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "IMA-ADPCM 압축 옵션을 포함한 WAV."
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:379
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "씬"
+msgstr "*3D 씬:*"
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(권장)*."
 
 #: ../../docs/about/list_of_features.rst:382
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (Blender에"
+"서 바로 내보내기)."
 
 #: ../../docs/about/list_of_features.rst:384
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (실험 기능)."
 
 #: ../../docs/about/list_of_features.rst:385
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)."
 
 #: ../../docs/about/list_of_features.rst:386
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
-msgstr ""
+msgstr "Wavefront OBJ (정적 씬에서만 가능, 메시로 직접 로드할 수 있습니다)."
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Input"
@@ -1024,57 +1035,63 @@ msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
 msgstr ""
+"하드코딩된 입력 이벤트 또는 다시 매핑할 수 있는 입력 액션을 이용한 입력 매핑 "
+"시스템."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"입력 축 값은 deadzone을 설정하여 두 개의 다른 액션으로 매핑할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:394
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "같은 코드로 키보드와 게임패드 둘 다 지원이 가능합니다."
 
 #: ../../docs/about/list_of_features.rst:396
-#, fuzzy
 msgid "Keyboard input."
-msgstr "키보드 단축키"
+msgstr "키보드 입력."
 
 #: ../../docs/about/list_of_features.rst:398
 msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"\"실 기기\" 모드로 키를 매핑하여 키보드 레이아웃에 독립적이게 할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:400
-#, fuzzy
 msgid "Mouse input."
-msgstr "옵션들 가져오기"
+msgstr "마우스 입력."
 
 #: ../../docs/about/list_of_features.rst:402
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"마우스 커서를 보이게 하거나 숨길 수 있고 입력을 캡쳐하거나 윈도우 영역 안으"
+"로 강제하게 할 수도 있습니다."
 
 #: ../../docs/about/list_of_features.rst:403
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"입력이 캡쳐되는 경우 Windows나 Linux에서는 OS의 마우스 가속 설정에 맞춰 입력"
+"의 로우값을(raw input) 사용하게 됩니다."
 
 #: ../../docs/about/list_of_features.rst:406
 msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr ""
+msgstr "게임패드 입력(최대 8개 컨트롤러까지 동시 입력 가능)."
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "펜/태블릿의 압력에 의한 입력 지원."
 
 #: ../../docs/about/list_of_features.rst:408
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
-msgstr ""
+msgstr "Android에서도 게임패드, 키보드, 마우스 입력 지원이 가능합니다."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1082,20 +1099,19 @@ msgstr "네비게이션"
 
 #: ../../docs/about/list_of_features.rst:413
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "2D와 3D에서의 A* 알고리즘."
 
 #: ../../docs/about/list_of_features.rst:414
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "애니메이션 모드"
+msgstr "네비게이션 메시."
 
 #: ../../docs/about/list_of_features.rst:415
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr ""
+msgstr "동적 장애물 회피 기능은 Godot 4.0에서 지원할 예정."
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "편집기에서 네비게이션 메시 생성."
 
 #: ../../docs/about/list_of_features.rst:419
 msgid "Networking"
@@ -1103,50 +1119,50 @@ msgstr "네트워킹(Networking)"
 
 #: ../../docs/about/list_of_features.rst:421
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "StreamPeer와 TCP_Server를 사용한 저수준 TCP 네트워킹."
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "PacketPeer와 UDPServer를 이용한 저수준 UDP 네트워킹."
 
 #: ../../docs/about/list_of_features.rst:423
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "HTTPClient를 사용한 저수준 HTTP 요청."
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "HTTPRequest를 사용한 고수준 HTTP 요청."
 
 #: ../../docs/about/list_of_features.rst:426
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "번들된 인증서를 사용한 HTTPS 기본 지원."
 
 #: ../../docs/about/list_of_features.rst:428
-#, fuzzy
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr "하이 레벨 멀티플레이어(High level multiplayer)"
+msgstr "UDP와 ENet을 사용한 고수준 멀티플레이어(High level multiplayer) API."
 
 #: ../../docs/about/list_of_features.rst:430
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "원격 프로시저 호출(RPCs)을 사용한 자동 레플리케이션."
 
 #: ../../docs/about/list_of_features.rst:431
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "신뢰/비신뢰/순차적 전송 지원."
 
 #: ../../docs/about/list_of_features.rst:433
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "모든 플랫폼에서 WebSocket 클라이언트 및 서버 사용 가능."
 
 #: ../../docs/about/list_of_features.rst:434
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "모든 플랫폼에서 WebRTC 클라이언트 및 서버 사용 가능."
 
 #: ../../docs/about/list_of_features.rst:435
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
 msgstr ""
+"NAT 안에서 서버 운영시 포트 포워딩을 사용하기 위한 요구사항인 UPnP 지원."
 
 #: ../../docs/about/list_of_features.rst:439
 msgid "Internationalization"
@@ -1154,13 +1170,15 @@ msgstr "현지화(Internationalization)"
 
 #: ../../docs/about/list_of_features.rst:441
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "이모지를 포함한 Unicode 전체 지원."
 
 #: ../../docs/about/list_of_features.rst:442
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
+":ref:`CSV <doc_internationalizing_games>` 또는 :ref:`gettext "
+"<doc_localization_using_gettext>`\\ 를 이용하여 현지화 문자열 저장."
 
 #: ../../docs/about/list_of_features.rst:444
 msgid ""
@@ -1174,101 +1192,105 @@ msgstr ""
 msgid ""
 "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
 msgstr ""
+"오른쪽에서 왼쪽으로 쓰는 텍스트 설정 및 텍스트 성형은 Godot 4.0에서 지원 예"
+"정."
 
 #: ../../docs/about/list_of_features.rst:449
 msgid "Windowing and OS integration"
-msgstr ""
+msgstr "윈도우화 및 운영체제 통합"
 
 #: ../../docs/about/list_of_features.rst:451
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
-msgstr ""
+msgstr "프로젝트에서 생성한 윈도우 이동, 크기 조절, 최소화 및 최대화."
 
 #: ../../docs/about/list_of_features.rst:452
-#, fuzzy
 msgid "Change the window title and icon."
-msgstr "파일 아이콘 바꾸기"
+msgstr "윈도우 제목 및 아이콘 변경."
 
 #: ../../docs/about/list_of_features.rst:453
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
-msgstr ""
+msgstr "주의 요청 (대부분의 플랫폼의 제목표시줄에 깜빡임 발생)."
 
 #: ../../docs/about/list_of_features.rst:454
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "전체화면 모드를 요청합니다."
+msgstr "전체 화면 모드."
 
 #: ../../docs/about/list_of_features.rst:456
 msgid ""
 "Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
 "this way. Use a Viewport with a different resolution instead."
 msgstr ""
+"전용 전체화면을 사용하는 것이 아니기 때문에 이 방법으로는 화면 해상도가 바뀌"
+"지 않습니다. Viewport를 다른 해상도로 설정해보세요."
 
 #: ../../docs/about/list_of_features.rst:459
 msgid "Borderless window (fullscreen or non-fullscreen)."
-msgstr ""
+msgstr "테두리 없는 창 (전체 화면 또는 비 전체 화면)."
 
 #: ../../docs/about/list_of_features.rst:460
 msgid "Ability to keep the window always on top."
-msgstr ""
+msgstr "윈도우를 항상 앞에 두기."
 
 #: ../../docs/about/list_of_features.rst:461
 msgid "Transparent window with per-pixel transparency."
-msgstr ""
+msgstr "픽셀 단위 투명도를 이용한 반투명 윈도우."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid "Global menu integration on macOS."
-msgstr ""
+msgstr "macOS의 글로벌 메뉴 통합."
 
 #: ../../docs/about/list_of_features.rst:463
 msgid "Execute commands in a blocking or non-blocking manner."
-msgstr ""
+msgstr "블로킹 또는 논블로킹으로 명령 실행 가능."
 
 #: ../../docs/about/list_of_features.rst:464
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
 "registered on the system)."
 msgstr ""
+"기본 또는 (시스템에 등록된) 커스텀 프로토콜 처리를 사용한 파일 위치 및 URL 열"
+"기."
 
 #: ../../docs/about/list_of_features.rst:465
-#, fuzzy
 msgid "Parse custom command line arguments."
-msgstr "명령줄 인수."
+msgstr "맞춤형 명령줄 인수 파싱."
 
 #: ../../docs/about/list_of_features.rst:468
-#, fuzzy
 msgid "Mobile"
-msgstr "모바일에서"
+msgstr "모바일"
 
 #: ../../docs/about/list_of_features.rst:470
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "안드로이드 및 iOS 인앱 결제 지원."
 
 #: ../../docs/about/list_of_features.rst:471
 msgid "Support for advertisements using third-party modules."
-msgstr ""
+msgstr "서드파티 모듈을 사용한 광고 지원."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Android에서 subview 임베딩 지원."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
-msgstr ""
+msgstr "XR 지원 (AR 및 VR)"
 
 #: ../../docs/about/list_of_features.rst:477
 msgid "Support for ARKit on iOS out of the box."
-msgstr ""
+msgstr "iOS의 ARKit을 기본 지원."
 
 #: ../../docs/about/list_of_features.rst:478
 msgid "Support for the OpenXR and OpenVR APIs."
-msgstr ""
+msgstr "OpenXR 및 OpenVR API 지원."
 
 #: ../../docs/about/list_of_features.rst:479
 msgid ""
 "Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
 "to plugins."
 msgstr ""
+"플러그인 지원 덕분에 오큘러스 퀘스트나 HTC Vive와 같은 유명한 VR 헤드셋들이 "
+"지원됩니다."
 
 #: ../../docs/about/list_of_features.rst:482
 msgid "GUI system"
@@ -1279,134 +1301,134 @@ msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
-"Godot의 GUI는 Godot으로 게임을 만들 때 사용하는 것과 같은 동일한 컨트롤 노드"
-"를 이용하여 만들어졌습니다. 편집기 UI는 add-on을 사용하여 다양한 방법으로 확"
-"장하기 쉽습니다."
+"Godot의 GUI는 Godot로 게임을 만들 때 사용하는 것과 같은 동일한 컨트롤 노드를 "
+"이용하여 만들어졌습니다. 편집기 UI는 add-on을 사용하여 다양한 방법으로 확장하"
+"기 쉽습니다."
 
 #: ../../docs/about/list_of_features.rst:487
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "노드(Node)"
+msgstr "**노드(Node)**"
 
 #: ../../docs/about/list_of_features.rst:489
-#, fuzzy
 msgid "Buttons."
-msgstr "버튼"
+msgstr "버튼."
 
 #: ../../docs/about/list_of_features.rst:490
 msgid "Checkboxes, check buttons, radio buttons."
-msgstr ""
+msgstr "체크박스, 체크버튼, 라디오버튼."
 
 #: ../../docs/about/list_of_features.rst:491
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
-msgstr ""
+msgstr "LineEdit(한 줄)과 TextEdit(여러 줄)을 사용한 문자 입력 지원."
 
 #: ../../docs/about/list_of_features.rst:492
 msgid "Dropdown menus using PopupMenu and OptionButton."
-msgstr ""
+msgstr "PopupMenu 및 OptionButton을 사용한 Dropdown 메뉴."
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "Scrollbars."
-msgstr ""
+msgstr "스크롤바."
 
 #: ../../docs/about/list_of_features.rst:494
-#, fuzzy
 msgid "Labels."
-msgstr "Label"
+msgstr "레이블."
 
 #: ../../docs/about/list_of_features.rst:495
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+":ref:`BBCode로 형식화된 텍스트 <doc_bbcode_in_richtextlabel>`\\ 를 위한 "
+"RichTextLabel."
 
 #: ../../docs/about/list_of_features.rst:496
 msgid "Trees (can also be used to represent tables)."
-msgstr ""
+msgstr "트리 (테이블을 표현할 때에도 사용 가능)."
 
 #: ../../docs/about/list_of_features.rst:497
 msgid ""
 "Containers (horizontal, vertical, grid, center, margin, draggable "
 "splitter, ...)."
 msgstr ""
+"컨테이너 (수평, 수직, 그리드, center, margin, draggable splitter, ...)."
 
 #: ../../docs/about/list_of_features.rst:498
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "컨트롤은 회전하거나 크기를 키울 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**사이징:**"
 
 #: ../../docs/about/list_of_features.rst:502
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
-msgstr ""
-"앵커를 사용하여 GUI요소들을 특정 코너 또는 모서리, 중앙에 고정시킵니다."
+msgstr "GUI 요소들을 특정 코너 또는 모서리, 중앙에 고정시키는 앵커."
 
 #: ../../docs/about/list_of_features.rst:503
 msgid "Containers to place GUI elements automatically following certain rules."
-msgstr "컨테이너를 추가하여 규칙에 따라 UI 요소들을 자동으로 놓기"
+msgstr "일정한 규칙에 따라 GUI 요소들을 자동으로 배치하는 컨테이너."
 
 #: ../../docs/about/list_of_features.rst:505
-#, fuzzy
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`레이아웃."
 
 #: ../../docs/about/list_of_features.rst:506
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`Sprite <class_Sprite>`"
+msgstr ":ref:`Grid <class_GridContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:507
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 msgstr ""
+":ref:`Margin <class_MarginContainer>` 및 :ref:`centered "
+"<class_CenterContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:509
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
-msgstr ""
+msgstr ":ref:`Draggable splitter <class_SplitContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:511
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
-msgstr ""
+msgstr "``2d`` 또는 ``viewport`` 늘리기 모드를 이용한 다중 해상도 스케일."
 
 #: ../../docs/about/list_of_features.rst:512
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
-msgstr ""
+msgstr "앵커와 ``expand`` 늘리기 비율을 이용하여 어느 종횡비라도 지원 가능."
 
 #: ../../docs/about/list_of_features.rst:514
 msgid "**Theming:**"
-msgstr ""
+msgstr "**테마:**"
 
 #: ../../docs/about/list_of_features.rst:516
-#, fuzzy
 msgid "Built-in theme editor."
-msgstr "편집기 실행하기"
+msgstr "내장 테마 편집기."
 
 #: ../../docs/about/list_of_features.rst:518
 msgid "Generate a theme based on the current editor theme settings."
-msgstr ""
+msgstr "현재 편집기 테마 세팅에 기반하여 테마 생성 가능."
 
 #: ../../docs/about/list_of_features.rst:520
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
-msgstr ""
+msgstr ":ref:`class_StyleBoxFlat`\\ 를 사용한 벡터 기반 절차적 테마."
 
 #: ../../docs/about/list_of_features.rst:522
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
-msgstr ""
+msgstr "둥근 모서리와 굽은 모서리, 그림자 및 테두리당 너비 지원."
 
 #: ../../docs/about/list_of_features.rst:524
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr ""
+msgstr ":ref:`class_StyleBoxTexture`\\ 를 사용한 텍스트 기반 테마."
 
 #: ../../docs/about/list_of_features.rst:526
 msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
 msgstr ""
+"Godot의 작은 배포 크기는 Electron이나 Qt같은 프레임워크의 적절한 대안이 될 "
+"수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:530
 msgid "Animation"
@@ -1414,26 +1436,26 @@ msgstr "애니메이션"
 
 #: ../../docs/about/list_of_features.rst:532
 msgid "Direct kinematics and inverse kinematics."
-msgstr ""
+msgstr "직접 운동학(direct kinematics)과 역 운동학(inverse kinematics)."
 
 #: ../../docs/about/list_of_features.rst:533
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
+"모든 속성(property)에 대해 보간법을 커스터마이즈할 수 있는 애니메이팅 지원."
 
 #: ../../docs/about/list_of_features.rst:534
 msgid "Support for calling methods in animation tracks."
-msgstr ""
+msgstr "애니메이션 트랙에서 메서드 호출 지원."
 
 #: ../../docs/about/list_of_features.rst:535
 msgid "Support for playing sounds in animation tracks."
-msgstr ""
+msgstr "애니메이션 트랙에서 음향 지원."
 
 #: ../../docs/about/list_of_features.rst:536
 msgid "Support for Bézier curves in animation."
-msgstr ""
+msgstr "애니메이션에서 베지에 곡선(Bézier curves) 지원."
 
 #: ../../docs/about/list_of_features.rst:539
-#, fuzzy
 msgid "Formats"
 msgstr "형식"
 
@@ -1442,40 +1464,42 @@ msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
 msgstr ""
+"씬과 리소스는 :ref:`텍스트 기반 <doc_tscn_file_format>` 또는 바이너리 형식으"
+"로 저장할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:543
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
-msgstr ""
+msgstr "텍스트 기반 형식은 사람이 읽을 수 있고, 버전 컨트롤 친화적입니다."
 
 #: ../../docs/about/list_of_features.rst:544
 msgid "Binary formats are faster to save/load for large scenes/resources."
-msgstr ""
+msgstr "바이너리 형식은 큰 씬 또는 리소스에 대해 저장과 불러오기가 빠릅니다."
 
 #: ../../docs/about/list_of_features.rst:546
 msgid "Read and write text or binary files using :ref:`class_File`."
-msgstr ""
+msgstr ":ref:`class_File`\\ 을 이용해 텍스트나 바이너리 파일을 읽고 쓰기."
 
 #: ../../docs/about/list_of_features.rst:548
 msgid "Can optionally be compressed or encrypted."
-msgstr ""
+msgstr "압축하거나 암호화할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:550
 msgid "Read and write :ref:`class_JSON` files."
-msgstr ""
+msgstr ":ref:`class_JSON` 파일 읽고 쓰기."
 
 #: ../../docs/about/list_of_features.rst:551
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
-msgstr ""
+msgstr ":ref:`class_ConfigFile`\\ 을 이용해 INI 스타일 설정 파일 읽고 쓰기."
 
 #: ../../docs/about/list_of_features.rst:553
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
-msgstr ""
+msgstr "벡터, 컬러를 포함한 모든 Godot 데이터 타입을 (역)직렬화할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:555
 msgid "Read XML files using :ref:`class_XMLParser`."
-msgstr ""
+msgstr ":ref:`class_XMLParser`\\ 을 이용한 XML 파일 읽기."
 
 #: ../../docs/about/list_of_features.rst:556
 msgid ""
@@ -1483,12 +1507,16 @@ msgid ""
 "into a ZIP archive, or directly into the executable for single-file "
 "distribution."
 msgstr ""
+"게임 데이터를 PCK 파일(빠른 검색에 최적화된 전용 포맷), ZIP 파일, 또는 직접 "
+"실행 가능한 한 개의 파일 안에 압축."
 
 #: ../../docs/about/list_of_features.rst:558
 msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
+"모드와 DLC를 지원하기 위해 엔진이 읽을 수 있는 :ref:`추가적인 PCK 파일 내보내"
+"기 <doc_exporting_pcks>`."
 
 #: ../../docs/about/list_of_features.rst:562
 msgid "Miscellaneous"
@@ -1499,53 +1527,60 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
+"필요할 때 씬 트리의 오버헤드를 무시할 수 있는 :ref:`서버에 대한 낮은 수준의 "
+"접근 <doc_using_servers>`."
 
 #: ../../docs/about/list_of_features.rst:566
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "명령줄 인수."
+msgstr "자동화를 위한 명령줄 인터페이스."
 
 #: ../../docs/about/list_of_features.rst:568
 msgid "Export and deploy projects using continuous integration platforms."
-msgstr ""
+msgstr "지속적인 통합 플랫폼을 사용하여 프로젝트를 내보내고 배포합니다."
 
 #: ../../docs/about/list_of_features.rst:569
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`완성된 스크립트<https://github.com/godotengine/godot/tree/master/misc/dist/"
-"shell>`__는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
+"`완성된 스크립트 <https://github.com/godotengine/godot/tree/master/misc/dist/"
+"shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:572
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
+"엔진 바이너리와 정적으로 연결된 :ref:`C++ 모듈 <doc_custom_modules_in_c++>` "
+"지원."
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Engine and editor written in C++03."
-msgstr ""
+msgstr "C++03으로 작성된 엔진과 편집기."
 
 #: ../../docs/about/list_of_features.rst:576
-#, fuzzy
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
-"godot의 UI 시스템이 어떻게 작동하는지 알아보려면 :"
-"doc:'ui_introduction_to_the_ui_system'를 먼저 읽어보세요."
+"GCC, Clang과 MSVC를 사용해 :ref:`컴파일 "
+"<doc_introduction_to_the_buildsystem>`\\ 될 수 있습니다. MinGW 또한 지원됩니"
+"다."
 
 #: ../../docs/about/list_of_features.rst:578
+#, fuzzy
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
+"패키지(packagers)에 우호적입니다. 대부분의 경우, 시스템 라이브러리는 Godot가 "
+"제공하는 라이브러리 대신 사용할 수 있습니다. 빌드 시스템은 아무것도 다운로드"
+"하지 않습니다. 빌드는 완전히 재현할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:581
 msgid "Godot 4.0 will be written in C++17."
-msgstr "Godot 4.0은 C++17로 작성될 것 입니다."
+msgstr "Godot 4.0은 C++17로 작성될 것입니다."
 
 #: ../../docs/about/list_of_features.rst:583
 msgid "Licensed under the permissive MIT license."
@@ -1555,11 +1590,14 @@ msgstr "라이선스는 MIT 라이선스입니다."
 msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
-msgstr ""
+msgstr ":ref:`기여를 환영하는 <doc_ways_to_contribute>` 공개된 개발 프로세스."
 
 #: ../../docs/about/list_of_features.rst:589
+#, fuzzy
 msgid ""
-"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
-"documents features that have been agreed upon and may be implemented in "
-"future Godot releases."
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
 msgstr ""
+"`로드맵 <https://github.com/godotengine/godot-roadmap>`__ 저장소에는 합의된 "
+"기능과 향후 Godot 릴리스에서 구현될 수 있는 기능이 설명되어 있습니다."

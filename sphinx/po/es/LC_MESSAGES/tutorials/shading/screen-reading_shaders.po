@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,15 +43,14 @@ msgstr ""
 "hardware más moderno lo soporta adecuadamente."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
-#, fuzzy
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
 "a back-buffer and then read from it while drawing. Godot provides a few "
 "tools that make this process easy."
 msgstr ""
-"La solución es hacer una copia de la pantalla, o de una parte de la "
-"pantalla, a un búfer y luego leer de ella mientras se dibuja. ¡Godot "
-"proporciona algunas herramientas que hacen este proceso fácil.!"
+"La solución alternativa es hacer una copia de la pantalla, o una parte de la "
+"pantalla, en un búfer de respaldo y luego leer de él mientras dibuja. Godot "
+"proporciona algunas herramientas que facilitan este proceso."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"

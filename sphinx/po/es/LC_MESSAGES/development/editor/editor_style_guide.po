@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "Introducción"
 
 #: ../../docs/development/editor/editor_style_guide.rst:9
 msgid "Thanks for your interest in contributing to the Godot editor!"
-msgstr ""
+msgstr "¡Gracias por tú interes en contribuir al editor de Godot!"
 
 #: ../../docs/development/editor/editor_style_guide.rst:11
 msgid ""
@@ -35,6 +35,10 @@ msgid ""
 "editor. Following this style guide will help your contribution get merged "
 "faster since there will be fewer review steps required."
 msgstr ""
+"Está página describe los estilos de gramática y escritura usados a lo largo "
+"del editor de Godot. Seguir esta guía de estilos ayudará a que tú "
+"contribución se fusione (merge) más rapido ya que se necesitarán menos pasos "
+"para su revisión."
 
 #: ../../docs/development/editor/editor_style_guide.rst:16
 msgid "Writing style"
@@ -45,6 +49,8 @@ msgid ""
 "**Write messages (errors, warnings, ...) as full sentences.** They should "
 "start with an uppercase letter and end with a period."
 msgstr ""
+"**Escribe mensajes (errores, advertencias, ...) como frases completas.** Las "
+"frases deberían empezar con letra mayúscula y acabar con un punto."
 
 #: ../../docs/development/editor/editor_style_guide.rst:20
 msgid ""
@@ -65,12 +71,18 @@ msgid ""
 "(``''``). Double quotes should be used to quote user input, file paths and "
 "possibly other things depending on the context."
 msgstr ""
+"**Usa comillas dobles en los mensajes** (``\"\"``) en vez de comillas "
+"simples (``''``). Las comillas dobles deberían usarse para citar la entrada "
+"de usuario, rutas de archivos y posiblemente otras cosas dependiendo del "
+"contexto."
 
 #: ../../docs/development/editor/editor_style_guide.rst:31
 msgid ""
 "Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
 "guidelines outlined above."
 msgstr ""
+"De manera adicional a las guías resaltadas arriba intenta seguir :ref:"
+"`doc_docs_writing_guidelines`."
 
 #: ../../docs/development/editor/editor_style_guide.rst:35
 msgid "Button and menu texts"
@@ -78,28 +90,30 @@ msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:37
 msgid "Capitalize text in buttons and menu actions:"
-msgstr ""
+msgstr "Capitalizar el texto de los botones y los menús de acción:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:39
 msgid "**Good:** *Open Editor Data Folder*"
-msgstr ""
+msgstr "**Bien:** *Open Editor Data Folder*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:40
 msgid "**Bad:** *Open editor data folder*"
-msgstr ""
+msgstr "**Mal:** *Open editor data folder*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:42
 msgid ""
 "If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
 msgstr ""
+"Si un menú de acción abre un dialogo modal, añade el sufijo de elipsis (``..."
+"``)."
 
 #: ../../docs/development/editor/editor_style_guide.rst:44
 msgid "**Good:** *Editor Settings...*"
-msgstr ""
+msgstr "**Bien:** *Editor Settings...*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
 msgid "**Bad:** *Editor Settings*"
-msgstr "**Mal:** *Ajustes del editor*"
+msgstr "**Mal:** *Editor Settings*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
 msgid "Inspector sections"

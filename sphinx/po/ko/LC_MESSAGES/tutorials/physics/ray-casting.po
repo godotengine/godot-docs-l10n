@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
-"게임 개발에서 일반적인 과제로 광선을 (혹은 맞춤 형태 객체를) 투사하고, 닿은 "
-"것이 무엇인지 확인하는 것입니다. 광선 투사를 하면 복잡한 동작도 만들 수 있는"
-"데, 예를 들면 AI가 있습니다. 이 튜토리얼에서는 어떻게 광선 추적을 하는지 2D"
+"게임 개발에서 일반적인 과제로 광선을 (혹은 맞춤 모양 오브젝트를) 투사하고, 닿"
+"은 것이 무엇인지 확인하는 것입니다. 광선 투사를 하면 복잡한 동작도 만들 수 있"
+"는데, 예를 들면 AI가 있습니다. 이 튜토리얼에서는 어떻게 광선 추적을 하는지 2D"
 "와 3D에서 설명하겠습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
@@ -70,11 +70,11 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
-"물리 세계에서, Godot는 모든 로우 레벨 충돌과 물리 정보를 *공간(Space)*\\ 에 "
-"저장합니다. (2D 물리의) 현재 2d 공간은 :ref:`CanvasItem.get_world_2d().space "
-"<class_CanvasItem_method_get_world_2d>`\\ 으로 접근해서 가져올 수 있습니다. "
-"3D의 경우는 :ref:`Spatial.get_world().space <class_Spatial_method_get_world>`"
-"\\ 으로 가져올 수 있습니다."
+"물리 세계에서, Godot는 모든 로우 레벨 콜리전과 물리 정보를 *공간(Space)*\\ "
+"에 저장합니다. (2D 물리의) 현재 2d 공간은 :ref:`CanvasItem.get_world_2d()."
+"space <class_CanvasItem_method_get_world_2d>`\\ 으로 접근해서 가져올 수 있습"
+"니다. 3D의 경우는 :ref:`Spatial.get_world().space "
+"<class_Spatial_method_get_world>`\\ 으로 가져올 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -152,13 +152,13 @@ msgid ""
 "information:"
 msgstr ""
 "결과는 딕셔너리입니다. 만약 광선이 아무 것도 건드리지 않으면, 딕셔너리는 텅 "
-"비게 될 것입니다. 만약 충돌했을 경우 충돌 정보가 포함됩니다:"
+"비게 될 것입니다. 만약 무언가에 맞는다면 콜리전 정보가 포함됩니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
-msgstr "충돌이 발생할 경우 ``결과`` 딕셔너리에는 다음 데이터가 포함됩니다:"
+msgstr "콜리전이 발생할 경우 ``결과`` 딕셔너리에는 다음 데이터가 포함됩니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
@@ -166,7 +166,7 @@ msgstr "데이터는 Vector3 좌표를 사용하는 3D 공간에서와 유사합
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr "충돌 예외"
+msgstr "콜리전 예외"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -186,18 +186,19 @@ msgid ""
 "of how to use it from a KinematicBody2D or any other collision object node:"
 msgstr ""
 "자체 교차를 방지하기 위해, ``intersect_ray()`` 함수는 예외 배열인 선택적 세 "
-"번째 파라미터를 취할 수 있습니다. 이것은 KinematicBody2D 또는 다른 충돌 개체 "
-"노드에서 사용하는 방법의 예입니다:"
+"번째 파라미터를 취할 수 있습니다. 이것은 KinematicBody2D 또는 다른 콜리전 오"
+"브젝트 노드에서 사용하는 방법의 예입니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
-msgstr "예외 배열에는 개체 또는 RID가 포함될 수 있습니다."
+msgstr "예외 배열에는 오브젝트 또는 RID가 포함될 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr "충돌 마스크"
+msgstr "콜리전 마스크"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
+#, fuzzy
 msgid ""
 "While the exceptions method works fine for excluding the parent body, it "
 "becomes very inconvenient if you need a large and/or dynamic list of "
@@ -205,8 +206,8 @@ msgid ""
 "layer/mask system."
 msgstr ""
 "예외 방법은 부모 body를 제외하고도 잘 작동하지만, 많은 and/or 동적 예외 목록"
-"이 필요한 경우 매우 불편하게 됩니다. 이 경우 충돌 계층/마스크 시스템을 사용하"
-"는 것이 훨씬 효율적입니다."
+"이 필요한 경우 매우 불편하게 됩니다. 이 경우 콜리전 레이어/마스크 시스템을 사"
+"용하는 것이 훨씬 효율적입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 #, fuzzy
@@ -215,9 +216,9 @@ msgid ""
 "For example, to use the same mask as the parent body, use the "
 "``collision_mask`` member variable:"
 msgstr ""
-"``intersect_ray()`` 의 네 번째 선택적인 인수는 충돌 마스크이다. 예를 들어 부"
-"모body와 동일한 마스크를 사용하려면 ``collision_mask`` 멤버 변수를 사용해야 "
-"합니다:"
+"``intersect_ray()``\\ 의 네 번째 선택적인 인수는 콜리전 마스크입니다. 예를 들"
+"어 부모 body와 동일한 마스크를 사용하려면 ``collision_mask`` 멤버 변수를 사용"
+"해야 합니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:224
 msgid ""

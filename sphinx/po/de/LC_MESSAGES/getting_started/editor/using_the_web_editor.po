@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,6 +121,13 @@ msgstr "Keine GDNative Unterstützung."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
+"No debugging support. This means GDScript debugging/profiling, live scene "
+"editing, the Remote Scene tree dock and other features that rely on the "
+"debugger protocol will not work."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:53
+msgid ""
 "No project exporting. As a workaround, you can download the project source "
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
@@ -130,13 +137,13 @@ msgstr ""
 "herunterladen und mithilfe einer `nativen Version des Godot-Editors <https://"
 "godotengine.org/download>`__ exportieren."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:53
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:56
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
 "Der Editor warnt nicht beim Schließen eines Tabs mit ungespeicherten "
 "Änderungen."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:54
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:57
 msgid ""
 "No lightmap baking support. You can still use existing lightmaps if they "
 "were baked with a native version of the Godot editor (e.g. by importing an "
@@ -146,7 +153,7 @@ msgstr ""
 "existierende Lightmaps verwendet werden, die zuvor mit einer nativen Version "
 "des Editors generiert wurden (z.B. durch den Import eines Projekts)."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:58
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:61
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
@@ -154,15 +161,15 @@ msgstr ""
 "Folgende Funktionen werden vermutlich aufgrund von inhärenten Limitierungen "
 "der Web-Plattform nie unterstützt:"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:61
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:64
 msgid "No support for external script editors."
 msgstr "Keine Unterstützung für externe Skript-Editoren."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:62
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:65
 msgid "No support for Android one-click deploy."
 msgstr "Keine Unterstützung für das Aufspielen mit einem Klick für Android."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:66
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:69
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
 "github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
@@ -173,15 +180,15 @@ msgstr ""
 "%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__ für eine Liste der bekannten "
 "Fehler."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:70
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:73
 msgid "Importing a project"
 msgstr "Importieren eines Projekts"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:72
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:75
 msgid "To import an existing project, the current process is as follows:"
 msgstr "Der Prozess um ein existierendes Projekt zu importieren ist wie folgt:"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:74
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:77
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
@@ -189,7 +196,7 @@ msgstr ""
 "Geben Sie über das Feld **Preload project ZIP** eine ZIP-Datei an, die im "
 "HTML5-Dateisystem vorgeladen werden soll."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:76
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:79
 msgid ""
 "Run the editor by clicking **Start Godot editor**. The Godot project manager "
 "should appear after 10-20 seconds. On slower machines or connections, "
@@ -200,7 +207,7 @@ msgstr ""
 "langsamen Geräten oder Verbindungen kann das Laden bis zu einer Minute in "
 "Anspruch nehmen."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:79
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:82
 msgid ""
 "In the dialog that appears at the middle of the window, specify a name for "
 "the folder to create then click the **Create Folder** button (it doesn't "
@@ -211,13 +218,13 @@ msgstr ""
 "Schaltfläche **Ordner erstellen** (der Name muss nicht mit dem Namen des ZIP-"
 "Archivs übereinstimmen)."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:82
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:85
 msgid "Click **Install & Edit** and the project will open in the editor."
 msgstr ""
 "Klicken Sie auf **Installieren & Bearbeiten**, um das Projekt im Editor zu "
 "öffnen."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:86
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:89
 msgid ""
 "It's important to place the project folder somewhere in ``/home/web_user/``. "
 "If your project folder is placed outside ``/home/web_user/``, you will lose "
@@ -227,7 +234,7 @@ msgstr ""
 "`` angelegt wird. Wenn sich Ihr Projektordner nicht im Verzeichnis ``/home/"
 "web_user/`` befindet, geht Ihr Projekt beim Schließen des Editors verloren!"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:90
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:93
 msgid ""
 "When you follow the steps described above, the project folder will always be "
 "located in ``/home/web_user/projects``, keeping it safe."
@@ -236,11 +243,11 @@ msgstr ""
 "Projektordner immer im Verzeichnis ``/home/web_user/projects`` befinden und "
 "daher sicher sein."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:94
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:97
 msgid "Editing and running a project"
 msgstr "Ein Projekt bearbeiten und ausführen"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:96
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:99
 msgid ""
 "Unlike the native version of Godot, the web editor is constrained to a "
 "single window. Therefore, it cannot open a new window when running the "
@@ -253,7 +260,7 @@ msgstr ""
 "Schaltfläche \"Ausführen\" oder Drücken von :kbd:`F5`, als würde das "
 "ausgeführte Projekt das Editorfenster \"ersetzen\"."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:101
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:104
 msgid ""
 "The web editor offers an alternative way to deal with the editor and game "
 "windows (which are now \"tabs\"). You can switch between the **Editor** and "
@@ -266,11 +273,11 @@ msgstr ""
 "auch das laufende Spiel oder den Editor schließen, indem Sie auf die "
 "Schaltfläche **×** neben diesen Registerkarten klicken."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:107
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:110
 msgid "Where are my project files?"
 msgstr "Wo sind meine Projektdateien?"
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:109
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:112
 msgid ""
 "Due to browser security limitations, the editor will save the project files "
 "to the browser's IndexedDB storage. This storage isn't accessible as a "
@@ -281,7 +288,7 @@ msgstr ""
 "kein normaler Ordner auf Ihrem Rechner, sondern ist in Form einer Datenbank "
 "abstrahiert."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:113
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:116
 msgid ""
 "You can download the project files as a ZIP archive by using **Project > "
 "Tools > Download Project Source**. This can be used to export the project "
@@ -293,7 +300,7 @@ msgstr ""
 "einem `native Godot editor <https://godotengine.org/download>`__ exportiert "
 "werden, da der Export aus dem Web-Editor noch nicht unterstützt wird."
 
-#: ../../docs/getting_started/editor/using_the_web_editor.rst:118
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:121
 msgid ""
 "In the future, it may be possible to use the `HTML5 FileSystem API <https://"
 "developer.mozilla.org/en-US/docs/Web/API/FileSystem>`__ to store the project "

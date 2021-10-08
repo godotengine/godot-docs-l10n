@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,12 +43,17 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
+"Průvodci stylem nejsou zamýšleny jako striktní pravidla. Občas se může stát, "
+"že některé z níže uvedených pokynů nebudete moci použít. V takovém případě "
+"se řiďte vlastním úsudkem a požádejte kolegy vývojáře o radu."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:20
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
 msgstr ""
+"Obecně platí, že udržování konzistentního kódu v projektech a v týmu je "
+"důležitější než dodržování tohoto návodu do puntíku."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
 msgid ""
@@ -66,31 +71,39 @@ msgstr "Formátování"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:53
 msgid "Encoding and special characters"
-msgstr ""
+msgstr "Kódování a speciální znaky"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:55
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
+"Pro zalomení řádků používejte znaky pro posuv řádku (**LF**), nikoli CRLF "
+"nebo CR. *(výchozí nastavení editoru)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
+"Na konci každého souboru použijte jeden znak posuvu řádku. *(výchozí "
+"nastavení editoru)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
+"Použijte kódování **UTF-8** bez značky pořadí bajtů <https://en.wikipedia."
+"org/wiki/Byte_order_mark>`_. *(výchozí nastavení editoru)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
+"Pro odsazení použijte místo mezer **Tabulátory**. *(výchozí nastavení "
+"editoru)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
-msgstr ""
+msgstr "Odsazení"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:63
 msgid ""
@@ -106,7 +119,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:256
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:280
 msgid "**Good**:"
-msgstr ""
+msgstr "**Dobré**:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:73
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:92
@@ -117,13 +130,15 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:264
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:286
 msgid "**Bad**:"
-msgstr ""
+msgstr "**Špatné**:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:81
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
+"K odlišení pokračovaní řádků od běžných bloků kódu použijte 2 úrovně "
+"odsazení."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:102
 msgid "Line breaks and blank lines"
@@ -141,7 +156,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:132
 msgid "Blank lines"
-msgstr ""
+msgstr "Prázdné řádky"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
 msgid "Surround function definitions with one (and only one) blank line:"
@@ -155,11 +170,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
 msgid "Line length"
-msgstr ""
+msgstr "Délka řádku"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:151
 msgid "Keep individual lines of code under 100 characters."
-msgstr ""
+msgstr "Udržujte jednotlivé řádky kódu pod 100 znaků."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:153
 msgid ""
@@ -170,7 +185,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:158
 msgid "One statement per line"
-msgstr ""
+msgstr "Jeden příkaz na řádek"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
@@ -178,17 +193,19 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
-msgstr ""
+msgstr "Jedinou výjimkou z tohoto pravidla je ternární operátor:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:189
 msgid "Comment spacing"
-msgstr ""
+msgstr "Mezery mezi komentáři"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:191
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
+"Běžné komentáře by měly začínat mezerou, nikoli však kód, který "
+"zakomentováváte. To pomáhá odlišit textové komentáře od vypnutého kódu."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
@@ -204,7 +221,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
-msgstr ""
+msgstr "Mezery"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:223
 msgid ""
@@ -214,7 +231,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
-msgstr ""
+msgstr "Nepoužívejte mezery k zarovnání výrazů na výšku:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
 msgid "Floating-point numbers"
@@ -241,7 +258,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:293
 msgid "Naming conventions"
-msgstr ""
+msgstr "Konvence pojmenování"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:295
 msgid ""
@@ -249,14 +266,17 @@ msgid ""
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
+"Tyto konvence pojmenování odpovídají stylu Godot Engine. Jejich porušení "
+"způsobí, že váš kód bude v rozporu se zabudovanými konvencemi pro "
+"pojmenování, což povede k nekonzistentnímu kódu."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
 msgid "Functions and variables"
-msgstr ""
+msgstr "Funkce a proměnné"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:302
 msgid "Use snake\\_case to name functions and variables:"
-msgstr ""
+msgstr "Pro pojmenování funkcí a proměnných použijte snake\\_case:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 msgid "Constants"
@@ -267,10 +287,12 @@ msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
+"Zapisujte konstanty pomocí CONSTANT\\_CASE, tj. všemi velkými písmeny s "
+"podtržítkem (\\_) pro oddělení slov:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
 msgid "Code order"
-msgstr ""
+msgstr "Pořadí kódu"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
 msgid "We suggest to organize shader code this way:"
@@ -282,6 +304,9 @@ msgid ""
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
+"Pořadí jsme optimalizovali tak, aby bylo snadné číst kód shora dolů, aby "
+"vývojáři, kteří čtou kód poprvé, pochopili, jak funguje, a aby se předešlo "
+"chybám souvisejícím s pořadím deklarace proměnných."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
 msgid "This code order follows two rules of thumb:"
@@ -307,3 +332,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Lokální proměnné deklarujte co nejblíže jejich prvnímu použití. To usnadňuje "
+"sledování kódu, aniž byste museli příliš rolovat, abyste našli místo, kde "
+"byla proměnná deklarována."

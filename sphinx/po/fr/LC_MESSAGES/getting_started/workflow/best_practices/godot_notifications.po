@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,17 +338,19 @@ msgstr ""
 "l'arbre."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
+#, fuzzy
 msgid ""
 "When instantiating a script or a standalone scene, nodes are not added to "
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
-"Instead, only the ``_init`` and later ``_ready`` calls occur."
+"Instead, only the ``_init`` call occurs. When the scene is added to the "
+"SceneTree, the ``_enter_tree`` and ``_ready`` calls occur."
 msgstr ""
 "Lors de l'instanciation d'un script ou d'une scène autonome, les nœuds ne "
 "sont pas ajoutés à l'arbre des scènes lors de la création, de sorte qu'aucun "
 "rappel de ``_enter_tree`` n'est déclenché. Au lieu de cela, seuls les appels "
 "``_init`` et plus tard ``_ready`` se produisent."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:239
 msgid ""
 "If one needs to trigger behavior that occurs as nodes parent to another, "
 "regardless of whether it occurs as part of the main/active scene or not, one "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,10 +30,13 @@ msgstr ""
 "Godota i możliwych rozwiązań."
 
 #: ../../docs/about/troubleshooting.rst:10
+#, fuzzy
 msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Zobacz :ref:`doc_using_the_web_editor` konkretne zastrzeżenia wersji HTML5 "
+"edytora Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -123,6 +126,7 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Etykietki edytora w dokach Inspektor i Węzły migają, gdy są wyświetlane."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -131,6 +135,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Jest to `znany problem <https://github.com/godotengine/godot/"
+"issues/32990>`__ spowodowany przez aplikację Stardock Fences innej firmy w "
+"systemie Windows. Jedynym znanym obejściem jest wyłączenie Stardock Fences "
+"podczas korzystania z Godota."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -163,12 +171,16 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Niektóre teksty, takie jak „NO DC” pojawiają się w lewym górnym rogu okna "
+"menedżera projektu i edytora."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Jest to spowodowane przez sterownik graficzny NVIDIA stosujący nakładkę w "
+"celu wyświetlenia informacji."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid ""
@@ -183,6 +195,9 @@ msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Aby wyłączyć tą nakładkę na systemie Linux otwórz ``nvidia-settings`` , "
+"przejdź do **X Screen 0 > OpenGL Settings** potem odznacz **Enable Graphics "
+"API Visual Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."

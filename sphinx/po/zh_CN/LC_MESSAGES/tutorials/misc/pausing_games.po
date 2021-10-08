@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,16 +64,16 @@ msgstr "这样做会产生以下行为:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:36
 msgid "2D and 3D physics will be stopped."
-msgstr "2D和3D物理将被停止."
+msgstr "2D 和 3D 物理将被停止."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
 msgid ""
 "``_process`` and ``_physics_process`` will not be called anymore in nodes."
-msgstr "将不再在节点中调用 \"_处理\" 和 \"_物理_处理\" 函数."
+msgstr "``_process`` 和 ``_physics_process`` 将不再会被节点调用."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:38
 msgid "``_input`` and ``_input_event`` will not be called anymore either."
-msgstr "\"_输入\" 和 \"_输入_事件\" 也不再被调用."
+msgstr "``_input`` 和 ``_input_event`` 也不再被调用."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:40
 msgid ""
@@ -102,7 +102,6 @@ msgid "You can achieve the same result in code:"
 msgstr "你可以在代码中实现同样的结果:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:69
-#, fuzzy
 msgid ""
 "By default, all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
@@ -112,10 +111,10 @@ msgid ""
 "This means that, by default, when the game is paused every node will be "
 "paused."
 msgstr ""
-"默认情况下, 所有节点的此属性都是 ``继承`` 状态. 这意味着, 它们只会处理(或不处"
-"理), 具体取决于父节点上设置的相同属性. 如果父项设置为 ``继承``, 则将检查祖父"
-"项, 依此类推. 最终, 如果在任何祖父中找不到状态, 则使用SceneTree中的暂停状态. "
-"这意味着, 默认情况下, 当游戏暂停时, 每个节点都将暂停."
+"默认情况下，所有节点的这个属性都是“Inherit（继承）”状态，也就是说，它们会根据"
+"父节点上这个属性的取值来决定处理与否。如果父节点也是“Inherit”，那么就会去检查"
+"祖父节点，以此类推。最终，如果祖宗们都没有更改过状态，那么就会使用 SceneTree "
+"的暂停状态。也就是说，在游戏暂停时默认所有节点也都会被暂停下来。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:77
 msgid "So the three possible states for a node are:"
@@ -126,23 +125,24 @@ msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
 msgstr ""
-"**继承** : 进程取决于父, 祖父节点等的状态. 具有非继承状态的第一个父节点."
+"**Inherit（继承）** ：处理与否取决于父、祖父等等节点中第一个非 Inherit 状态的"
+"节点。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:81
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
 msgstr ""
-"**停止** : 无论什么情况下, 停止节点(以及继承模式下的子节点). 当暂停时, 此节点"
-"将不会被放入进程."
+"**Stop（停止）** ：无条件停止节点（以及 Inherit 模式的子节点）。暂停时该节点"
+"不会进行处理。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:83
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
 msgstr ""
-"**进程** : 无论什么情况下, 处理节点(以及继承模式下的子节点). 无论暂停或不暂"
-"停, 此节点仍会在进程中."
+"**Process（处理）** ：无条件处理节点（以及 Inherit 模式的子节点）。无论暂停与"
+"否，该节点都会进行处理。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
@@ -162,8 +162,8 @@ msgid ""
 "grandchildren will inherit that state. This way, this branch of the scene "
 "tree will continue working when paused."
 msgstr ""
-"只需设置暂停弹出窗口的根节点项为 ``进程``, 所有子孙都将继承该状态. 这样, 场景"
-"树的这个分支将在暂停时继续工作."
+"只需设置暂停弹出窗口的根节点项为 \"Process\" , 所有子孙都将继承该状态. 这样, "
+"场景树的这个分支将在暂停时继续工作."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:98
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "AudioStreamPlayer"
 msgstr "AudioStreamPlayer"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:29
+#: ../../docs/tutorials/audio/audio_streams.rst:31
 msgid ""
 "This is the standard, non-positional stream player. It can play to any bus. "
 "In 5.1 sound setups, it can send audio to stereo mix or front speakers."
@@ -80,11 +80,11 @@ msgstr ""
 "en cualquier bus. En configuraciones de sonido 5.1, puede enviar audio a la "
 "mezcla estéreo o a los altavoces frontales."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:33
+#: ../../docs/tutorials/audio/audio_streams.rst:35
 msgid "AudioStreamPlayer2D"
 msgstr "AudioStreamPlayer2D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:35
+#: ../../docs/tutorials/audio/audio_streams.rst:39
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 2D positional "
 "environment. When close to the left of the screen, the panning will go left. "
@@ -94,7 +94,7 @@ msgstr ""
 "posición 2D. Cuando esté cerca de la izquierda de la pantalla, la panorámica "
 "irá hacia la izquierda. Cuando esté cerca del lado derecho, irá a la derecha."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:41
+#: ../../docs/tutorials/audio/audio_streams.rst:45
 msgid ""
 "Area2Ds can be used to divert sound from any AudioStreamPlayer2Ds they "
 "contain to specific buses. This makes it possible to create buses with "
@@ -106,11 +106,11 @@ msgstr ""
 "buses con diferentes calidades de reverberación o sonido para manejar la "
 "acción que ocurre en una parte determinada del mundo del juego."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:49
+#: ../../docs/tutorials/audio/audio_streams.rst:53
 msgid "AudioStreamPlayer3D"
 msgstr "AudioStreamPlayer3D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:51
+#: ../../docs/tutorials/audio/audio_streams.rst:57
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 3D positional "
 "environment. Depending on the location of the player relative to the screen, "
@@ -122,14 +122,14 @@ msgstr ""
 "pantalla, puede posicionar el sonido en estéreo, 5.1 o 7.1 dependiendo de la "
 "configuración de audio elegida."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:55
+#: ../../docs/tutorials/audio/audio_streams.rst:61
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr ""
 "Similar a AudioStreamPlayer2D, un Area puede desviar el sonido a un bus de "
 "audio."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:59
+#: ../../docs/tutorials/audio/audio_streams.rst:65
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
@@ -137,11 +137,11 @@ msgstr ""
 "A diferencia de la 2D, la versión 3D de AudioStreamPlayer tiene algunas "
 "opciones más avanzadas:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:64
+#: ../../docs/tutorials/audio/audio_streams.rst:70
 msgid "Reverb buses"
 msgstr "Buses de reverberación"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:66
+#: ../../docs/tutorials/audio/audio_streams.rst:72
 msgid ""
 "Godot allows for 3D audio streams that enter a specific Area node to send "
 "dry and wet audio to separate buses. This is useful when you have several "
@@ -154,7 +154,7 @@ msgstr ""
 "habitaciones. Esto se hace habilitando este tipo de reverberación en la "
 "sección **Reverb Bus** de las propiedades del Area:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:73
+#: ../../docs/tutorials/audio/audio_streams.rst:79
 msgid ""
 "At the same time, a special bus layout is created where each area receives "
 "the reverb info from each area. A Reverb effect needs to be created and "
@@ -165,7 +165,7 @@ msgstr ""
 "un efecto de reverberación en cada bus de reverberación para completar la "
 "configuración del efecto deseado:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:79
+#: ../../docs/tutorials/audio/audio_streams.rst:85
 msgid ""
 "The Area's **Reverb Bus** section also has a parameter named **Uniformity**. "
 "Some types of rooms bounce sounds more than others (like a warehouse), so "
@@ -179,11 +179,11 @@ msgstr ""
 "casi uniformemente a través de la habitación aunque la fuente pueda estar "
 "lejos. Jugando con este parámetro se puede simular ese efecto."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:86
+#: ../../docs/tutorials/audio/audio_streams.rst:92
 msgid "Doppler"
 msgstr "Doppler"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:88
+#: ../../docs/tutorials/audio/audio_streams.rst:94
 msgid ""
 "When the relative velocity between an emitter and listener changes, this is "
 "perceived as an increase or decrease in the pitch of the emitted sound. "
@@ -195,7 +195,7 @@ msgstr ""
 "puede rastrear los cambios de velocidad en los nodos AudioStreamPlayer3D y "
 "Camera. Ambos nodos tienen esta propiedad, que debe ser activada manualmente:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:95
+#: ../../docs/tutorials/audio/audio_streams.rst:101
 msgid ""
 "Enable it by setting it depending on how objects will be moved: use **Idle** "
 "for objects moved using ``_process``, or **Physics** for objects moved using "

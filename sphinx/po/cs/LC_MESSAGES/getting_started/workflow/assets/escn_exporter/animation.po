@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,23 +23,23 @@ msgstr "Animace"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "Animation supported:"
-msgstr "Animace podporována:"
+msgstr "Podporované animace:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "transformační animace všech typů objektů"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "transformace animace pozice kostí"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 msgid "shape key animation"
-msgstr "tvar klíčové animace"
+msgstr "animace klíče tvaru"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "light animation"
-msgstr "světelná animace"
+msgstr "animace světla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "camera animation"
@@ -47,7 +47,7 @@ msgstr "animace kamery"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "Více akcí pro jeden objekt"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -55,16 +55,21 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"Ve většině her má jeden objekt několik animací, mezi kterými lze přepínat. "
+"Tento doplněk podporuje export více akcí současně do jednoho "
+"AnimationPlayeru a usnadňuje přepínání akcí."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Tento pracovní postup využívá blender nla_tracks. Zde je stručný návod, jak "
+"tuto funkci používat:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Stash active action**"
-msgstr ""
+msgstr "**1. Uložit aktivní akci**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -72,14 +77,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Nově vytvořená akce je vždy aktivní akcí vázanou na objekt. Existuje několik "
+"způsobů, jak umístit aktivní akci do stopy NLA, jedním z nich je samozřejmě "
+"použití ``NLA Editoru``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Nebo toho lze dosáhnout uložením akce do ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Kontrola stavu ztlumení stop NLA**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -87,20 +95,25 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Stopa NLA může být ``mute`` nebo ``unmute``, exportér vyexportuje všechny "
+"stopy NLA ``mute`` jako samostatnou akci, zatímco všechny stopy NLA "
+"``unmute`` smíchá do každé exportované akce (včetně akce akce)."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
-msgstr ""
+msgstr "**3. Export scény**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "Zkontrolujte, zda je zapnuta možnost ``Exportovat uložené akce``."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
+"Poté jsou všechny uložené akce i aktivní akce exportovány do přehrávače "
+"animací."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
@@ -113,10 +126,14 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
+"Někdy se složité animace vytvářejí pomocí omezení objektu; obvyklým "
+"příkladem je inverzní kinematika. Doplněk by automaticky kontroloval, zda má "
+"objekt nějaké omezení; pokud ano, všechna omezení se zapracují do akcí a "
+"poté se exportují spolu s objektem."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
-msgstr "Uzel animace"
+msgstr "Animační režim"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -125,20 +142,26 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
+"Godot a Blender mají odlišnou strukturu pro ukládání animačních dat. V "
+"Godotu jsou animační data uložena v uzlu AnimationPlayer, nikoli v každém "
+"animovaném uzlu. Aby se tato nejednotnost odstranila a animace se stále "
+"přehrávala univerzálně, má tento doplněk tři režimy exportu animace."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**Režim 'Animace jako akce'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Všechny animace považujte za akce objektů, takže v exportované scéně bude "
+"mít každý objekt svůj AnimationPlayer a zachová si své akce."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Režim \"Animace scény \"**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -146,10 +169,14 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Pokud chcete, aby vaše animace generovala stejný výsledek jako při "
+"přehrávání na časové ose Blenderu, je tento režim právě pro vás. V tomto "
+"režimu jsou všechny animace ve scéně umístěny pouze do jednoho "
+"AnimationPlayeru v kořenu scény."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**Režim 'Animace jako zkuštěná akce'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -159,3 +186,7 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"Tento režim se chová velmi podobně jako režim \"Animace jako akce\", ale je "
+"schopen generovat méně AnimationPlayerů; objekty ve vztahu rodič-dítě budou "
+"sdílet svůj AnimationPlayer. To je užitečné, pokud máte několik rigů a každý "
+"Skeleton a Mesh má akce; pak by jeden rig měl právě jeden AnimationPlayer."

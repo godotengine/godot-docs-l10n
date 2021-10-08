@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,11 +81,19 @@ msgstr ""
 "容. 更多细节请参见 :ref:`high-level multiplayer "
 "<doc_high_level_multiplayer>` 一节."
 
-#: ../../docs/tutorials/networking/websocket.rst:24
+#: ../../docs/tutorials/networking/websocket.rst:25
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:31
 msgid "Minimal client example"
 msgstr "最小客户端示例"
 
-#: ../../docs/tutorials/networking/websocket.rst:26
+#: ../../docs/tutorials/networking/websocket.rst:33
 msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
@@ -93,31 +101,32 @@ msgstr ""
 "本示例将向您展示如何创建与远程服务器的 WebSocket 连接, 以及如何发送和接收数"
 "据."
 
-#: ../../docs/tutorials/networking/websocket.rst:79
+#: ../../docs/tutorials/networking/websocket.rst:86
 msgid "This will print:"
 msgstr "这将打印:"
 
-#: ../../docs/tutorials/networking/websocket.rst:87
+#: ../../docs/tutorials/networking/websocket.rst:94
 msgid "Minimal server example"
 msgstr "最小服务器示例"
 
-#: ../../docs/tutorials/networking/websocket.rst:89
+#: ../../docs/tutorials/networking/websocket.rst:96
+#, fuzzy
 msgid ""
-"This example will show you how to create a WebSocket server that listen for "
+"This example will show you how to create a WebSocket server that listens for "
 "remote connections, and how to send and receive data."
 msgstr ""
 "本示例将向您展示如何创建一个监听远程连接的 WebSocket 服务器, 以及如何发送和接"
 "收数据."
 
-#: ../../docs/tutorials/networking/websocket.rst:145
+#: ../../docs/tutorials/networking/websocket.rst:152
 msgid "This will print (when a client connects) something similar to this:"
 msgstr "这将打印(当客户端连接时)与此类似的东西:"
 
-#: ../../docs/tutorials/networking/websocket.rst:153
+#: ../../docs/tutorials/networking/websocket.rst:160
 msgid "Advanced chat demo"
 msgstr "高级聊天演示"
 
-#: ../../docs/tutorials/networking/websocket.rst:155
+#: ../../docs/tutorials/networking/websocket.rst:162
 msgid ""
 "A more advanced chat demo which optionally uses the multiplayer mid-level "
 "abstraction and a high level multiplayer demo are available in the `godot "

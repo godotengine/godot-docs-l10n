@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -901,9 +901,8 @@ msgid "Appendix"
 msgstr "附录"
 
 #: ../../docs/tutorials/optimization/batching.rst:518
-#, fuzzy
 msgid "Batched primitives"
-msgstr "随机图块优先级"
+msgstr "批量处理图元"
 
 #: ../../docs/tutorials/optimization/batching.rst:520
 msgid ""
@@ -911,22 +910,24 @@ msgid ""
 "especially with primitives using an antialiased border. The following "
 "primitive types are currently available:"
 msgstr ""
+"并不是所有图元都支持做批量处理。系统也无法保证一定会进行批量处理，图元使用抗"
+"锯齿边缘时尤其无法保证。可以使用以下类型的图元："
 
 #: ../../docs/tutorials/optimization/batching.rst:524
 msgid "RECT"
-msgstr ""
+msgstr "RECT"
 
 #: ../../docs/tutorials/optimization/batching.rst:525
 msgid "NINEPATCH (depending on wrapping mode)"
-msgstr ""
+msgstr "NINEPATCH（由 wrapping mode 环绕模式决定）"
 
 #: ../../docs/tutorials/optimization/batching.rst:526
 msgid "POLY"
-msgstr ""
+msgstr "POLY"
 
 #: ../../docs/tutorials/optimization/batching.rst:527
 msgid "LINE"
-msgstr ""
+msgstr "LINE"
 
 #: ../../docs/tutorials/optimization/batching.rst:529
 msgid ""
@@ -934,6 +935,8 @@ msgid ""
 "drawing them manually with polys in a ``_draw()`` function. See :ref:"
 "`doc_custom_drawing_in_2d` for more information."
 msgstr ""
+"如果图元未做批量处理，你可能可以通过在 ``_draw()`` 函数中手动绘制多边形来获得"
+"性能提升。更多信息见 :ref:`doc_custom_drawing_in_2d` 。"
 
 #: ../../docs/tutorials/optimization/batching.rst:536
 msgid "Light scissoring threshold calculation"

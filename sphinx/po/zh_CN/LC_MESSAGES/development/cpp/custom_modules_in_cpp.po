@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,14 +83,14 @@ msgstr "使用 C++ 编写整个新游戏, 因为您离不开 C++."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr "创新新模块"
+msgstr "创建新模块"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
-#, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Godot and compile it <toc-devel-compiling>`."
-msgstr "在创建模块之前, 请确保下载Godot的源代码并进行编译. 文档中有相关教程."
+msgstr ""
+"创建模块之前，请先 :ref:`下载 Godot 源代码并编译 <toc-devel-compiling>` 。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -106,6 +106,8 @@ msgid ""
 "The example module will be called \"summator\" (``godot/modules/summator``). "
 "Inside we will create a simple summator class:"
 msgstr ""
+"实例模块的名字就叫“summator（加法器）”（ ``godot/modules/summator`` ）。我们"
+"在里面创建一个简单的加法器类："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:74
 msgid "And then the cpp file."

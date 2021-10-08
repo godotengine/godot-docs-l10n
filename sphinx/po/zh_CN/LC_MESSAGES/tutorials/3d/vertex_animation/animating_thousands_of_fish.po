@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,13 +210,12 @@ msgstr ""
 "的波浪."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:117
-#, fuzzy
 msgid ""
 "The last motion is the twist, which is a panning roll along the spine. "
 "Similarly to the pivot, we first construct a rotation matrix."
 msgstr ""
-"最后一个动作是扭转, 也就是沿着脊柱滚动. 类似轴心运动, 我们首先构造一个旋转矩"
-"阵."
+"最后一个动作是扭转，也就是沿着脊柱滚动。类似轴心运动，我们首先构造一个旋转矩"
+"阵。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
 msgid ""
@@ -243,28 +242,27 @@ msgid ""
 "need to limit the panning motions to the back half of the fish. To do this, "
 "we create a new variable, ``mask``."
 msgstr ""
-"通常鱼主要使用身体的后半部分游泳. 因此, 我们需要将平移运动限制在鱼的后半部"
-"分. 为此, 我们创建一个新变量 \"遮罩\"."
+"通常鱼主要使用身体的后半部分游泳，所以我们需要将平移运动限制在鱼的后半部分。"
+"为此，我们创建一个新变量 ``mask`` （遮罩）。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:144
-#, fuzzy
 msgid ""
 "``mask`` is a float that goes from ``0`` at the front of the fish to ``1`` "
 "at the end using ``smoothstep`` to control the point at which the transition "
 "from ``0`` to ``1`` happens."
 msgstr ""
-"\"遮罩\" 是一个浮点数, 它使用 \"平滑步进\" 控制从 \"0\" 到 \"1\" 之间发生转换"
-"的点, 从鱼最前面的 \"0\" 到最后的 \"1\"."
+"``mask`` 是个浮点数，从鱼头的 ``0`` 过渡到鱼尾的 ``1`` ，我们用 "
+"``smoothstep`` 来控制在哪里进行由 ``0`` 到 ``1`` 的过渡。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:152
 msgid "Below is an image of the fish with ``mask`` used as ``COLOR``:"
-msgstr "以下是这条鱼的图片, 使用 \"颜色\" 作为 \"遮罩\":"
+msgstr "下面是把 ``COLOR`` 设置成 ``mask`` 后这条鱼的样子："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:156
 msgid ""
 "For the wave, we multiply the motion by ``mask`` which will limit it to the "
 "back half."
-msgstr "对于波浪, 我们将运动乘以 \"遮罩\", 这就把它限制在后半部分."
+msgstr "我们在做波浪运动的地方乘以 ``mask`` 就可以把动作限制在后半部分。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
 msgid ""
@@ -404,15 +402,14 @@ msgid ""
 msgstr "如果你关注性能问题, 试着使用GLES2运行场景或摆放更少的鱼."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:232
-#, fuzzy
 msgid ""
 "Notice how all the fish are all in the same position in their swim cycle? It "
 "makes them look very robotic. The next step is to give each fish a different "
 "position in the swim cycle so the entire school looks more organic."
 msgstr ""
-"你注意到所有的鱼在它们的游泳周期中都处于相同的位置吗？这让他们看起来很机械刻"
-"板. 下一步是让每条鱼在游泳周期中处于不同的位置, 这样整个鱼群看起来就更加生动"
-"自然了."
+"你应该已经注意到所有鱼的游泳动作都是同步的了吧？这样看上去非常机械。下一步我"
+"们要做的就是让每一条鱼都处于游泳周期的不同位置，这样整个鱼群看起来就会更自"
+"然。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:237
 msgid "Animating a school of fish"

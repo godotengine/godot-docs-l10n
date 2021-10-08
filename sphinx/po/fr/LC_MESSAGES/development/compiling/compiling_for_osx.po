@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,6 +176,9 @@ msgid ""
 "editor) and respectively for ``target=release`` (release template) and "
 "``target=release_debug``."
 msgstr ""
+"Pour compiler des modèles d'exportation pour macOS, vous devez compiler avec "
+"``tools=no`` (pas d'éditeur) et respectivement pour ``target=release`` "
+"(modèle de version) et ``target=release_debug``."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:92
 msgid ""
@@ -183,14 +186,18 @@ msgid ""
 "and ARM64 architectures. You can also create export templates that support "
 "only one of those two architectures by leaving out the ``lipo`` step below."
 msgstr ""
+"Les modèles officiels sont des binaires universels qui prennent en charge "
+"les architectures Intel x86_64 et ARM64. Vous pouvez également créer des "
+"modèles d'exportation qui ne prennent en charge qu'une seule de ces deux "
+"architectures en omettant l'étape ``lipo`` ci-dessous."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:96
 msgid "For Intel x86_64::"
-msgstr ""
+msgstr "Pour Intel x86_64 :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:101
 msgid "For ARM64 (Apple M1)::"
-msgstr ""
+msgstr "Pour ARM64 (Apple M1) :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:106
 msgid ""
@@ -211,12 +218,21 @@ msgid ""
 "otherwise replace the ``.universal`` extension with the one of your arch-"
 "specific binaries)::"
 msgstr ""
+"Pour créer un paquet ``.app`` comme dans les builds officiels, vous devez "
+"utiliser le modèle situé dans ``misc/dist/osx_template.app``. Les builds "
+"release et debug doivent être placés dans ``osx_template.app/Contents/"
+"MacOS`` avec les noms ``godot_osx_release.64`` et ``godot_osx_debug.64`` "
+"respectivement. Vous pouvez le faire avec les commandes suivantes (en "
+"supposant une compilation universelle, sinon remplacez l'extension ``."
+"universal`` par celle de vos binaires spécifiques à l'architecture) :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:125
 msgid ""
 "You can then zip the ``osx_template.app`` folder to reproduce the ``osx."
 "zip`` template from the official Godot distribution::"
 msgstr ""
+"Vous pouvez ensuite zipper le dossier ``osx_template.app`` pour reproduire "
+"le modèle ``osx.zip`` de la distribution officielle de Godot :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:131
 msgid "Cross-compiling for macOS from Linux"

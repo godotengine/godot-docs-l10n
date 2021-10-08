@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,9 +193,8 @@ msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:86
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "Desenvolvimento"
+msgstr "MonoDevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid "Visual Studio for Mac"
@@ -300,6 +299,10 @@ msgid ""
 "**C# Godot** from the dropdown menu. Now, when you start the debugger in VS "
 "Code your Godot project will run."
 msgstr ""
+"Para configurar um projeto para depuração, abra a pasta do seu projeto no "
+"VSCODE. Vá até a aba Run e clique em **create a launch.json file**. "
+"Selecione **C# Godot** no menu flutuante. Agora, quando você começar o "
+"depurador no VS Code, o seu projeto na Godot irá iniciar."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:129
 msgid "Visual Studio (Windows only)"
@@ -341,6 +344,9 @@ msgid ""
 "releases>`__. Double click on the downloaded file and follow the "
 "installation process."
 msgstr ""
+"Agora, você precisa baixar a extensão Godot Visual Studio do github `aqui "
+"<https://github.com/godotengine/godot-csharp-visualstudio/releases>`__. Dê "
+"um duplo clique no arquivo instalado e siga o processo de instalação."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 msgid "Creating a C# script"
@@ -589,6 +595,8 @@ msgid ""
 "As of Godot 3.2.3, Godot automatically downloads and sets up newly added "
 "NuGet packages the next time it builds the project."
 msgstr ""
+"A partir da versão 3.2.3, o Godot automaticamente baixa e instala os últimos "
+"pacotes NuGet na próxima vez que ele compila o projeto."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
 msgid "Profiling your C# code"

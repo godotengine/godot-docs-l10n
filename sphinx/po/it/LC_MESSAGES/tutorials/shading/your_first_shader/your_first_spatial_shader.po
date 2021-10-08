@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,6 +273,7 @@ msgid "Once you set it up and should look like this."
 msgstr "Una volta che l'hai installato e dovrebbe avere questo aspetto."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:170
+#, fuzzy
 msgid ""
 "Now, access the noise texture using the ``texture()`` function. "
 "``texture()`` takes a texture as the first argument and a ``vec2`` for the "
@@ -286,6 +287,17 @@ msgid ""
 "of the channels as the height. In this case we'll use the ``r``, or ``x`` "
 "channel."
 msgstr ""
+"Ora, accedete alla noise texture usando la funzione ``texture()``. La "
+"funzione ``texture()`` prende una texture come primo argomento e un ``vec2`` "
+"per la posizione sulla texture come secondo argomento. Usiamo i canali ``x`` "
+"e ``z`` di ``VERTEX`` per determinare dove cercare sulla texture. Nota che "
+"le coordinate del PlaneMesh sono all'interno dell'intervallo [-1,1] (per una "
+"dimensione di 2), mentre le coordinate della texture sono all'interno di "
+"[0,1], quindi per normalizzare dividiamo per la dimensione del PlaneMesh 2.0 "
+"e aggiungiamo 0.5. ``texture()`` restituisce un ``vec4`` dei canali ``r, g, "
+"b, a``` nella posizione. Poiché la noise texture è in scala di grigi, tutti "
+"i valori sono gli stessi, quindi possiamo usare uno qualsiasi dei canali "
+"come altezza. In questo caso useremo il canale ``r``, o ``x``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:183
 msgid ""
@@ -307,7 +319,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
-#, fuzzy
 msgid "Uniforms"
 msgstr "Uniformi"
 

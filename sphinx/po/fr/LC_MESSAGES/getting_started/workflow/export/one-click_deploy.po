@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,10 @@ msgid "One-click deploy"
 msgstr "Déploiement en un clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
-#, fuzzy
 msgid "What is one-click deploy?"
-msgstr "Étapes de déploiement en un clic"
+msgstr "Qu'est-ce que le déploiement en un clic ?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
-#, fuzzy
 msgid ""
 "One-click deploy is a feature that is available once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
@@ -35,26 +33,25 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
-"Cette fonction apparaîtra automatiquement une fois qu'une plate-forme est "
-"correctement configurée et qu'un périphérique pris en charge est connecté à "
-"l'ordinateur. Comme les choses peuvent mal tourner à plusieurs niveaux (la "
-"plate-forme peut ne pas être configurée correctement, le SDK peut être mal "
-"installé, le périphérique peut être mal configuré, etc.), il est bon de "
-"faire savoir à l'utilisateur qu'il existe."
+"Le déploiement en un clic est une fonction qui est disponible une fois "
+"qu'une plate-forme est correctement configurée et qu'un périphérique pris en "
+"charge est connecté à l'ordinateur. Comme les choses peuvent mal tourner à "
+"plusieurs niveaux (la plate-forme peut ne pas être configurée correctement, "
+"le SDK peut être mal installé, le périphérique peut être mal configuré, "
+"etc.), il est bon de faire savoir à l'utilisateur qu'il existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
-#, fuzzy
 msgid ""
 "After adding an Android export preset marked as Runnable, Godot can detect "
 "when a USB device is connected to the computer and offer the user to "
 "automatically export, install and run the project (in debug mode) on the "
 "device. This feature is called *one-click deploy*."
 msgstr ""
-"Certaines plates-formes (au moment d'écrire ces lignes, seul Android) "
-"peuvent détecter quand un périphérique USB est connecté à l'ordinateur, et "
-"offrir à l'utilisateur d'exporter, installer et exécuter automatiquement le "
-"projet (en mode debug) sur le périphérique. Cette fonctionnalité est "
-"appelée, dans les mots à la mode de l'industrie, \"One-Click Deploy\"."
+"Après avoir ajouté un préréglage d'exportation Android marqué comme "
+"Runnable, Godot peut détecter quand un périphérique USB est connecté à "
+"l'ordinateur et proposer à l'utilisateur d'exporter, d'installer et "
+"d'exécuter automatiquement le projet (en mode débogage) sur le périphérique. "
+"Cette fonctionnalité est appelée *déploiement en un clic*."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:22
 msgid ""
@@ -64,77 +61,96 @@ msgid ""
 "runnable. If you mark a second preset in a given platform as runnable, the "
 "other preset will no longer be marked as runnable."
 msgstr ""
+"Le déploiement en un clic n'est disponible que si vous avez ajouté un modèle "
+"d'exportation marqué comme **Runnable** dans la boîte de dialogue Export. "
+"Vous pouvez marquer plusieurs modèles d'exportation comme runnable, mais un "
+"seul modèle par plate-forme peut être marqué comme runnable. Si vous marquez "
+"un deuxième préréglage dans une plate-forme donnée comme étant runnable, "
+"l'autre préréglage ne sera plus marqué comme étant runnable."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
-#, fuzzy
 msgid "Supported platforms"
-msgstr "Prend en charge toutes les plates-formes."
+msgstr "Plateformes prises en charge"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid ""
 "**Android:** Exports the project with debugging enabled and runs it on the "
 "connected device."
 msgstr ""
+"**Android :** Exporte le projet avec le débogage activé et l'exécute sur "
+"l'appareil connecté."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:34
-#, fuzzy
 msgid ""
 "Make sure to follow the steps described in :ref:`doc_exporting_for_android`. "
 "Otherwise, the one-click deploy button won't appear."
 msgstr ""
-"Vous devez également suivre les étapes mentionnées dans le tutoriel :ref:"
-"`doc_exporting_for_android` avant de tenter de créer un modèle d'exportation "
-"personnalisé."
+"Veillez à suivre les étapes décrites dans :ref:`doc_exporting_for_android`. "
+"Sinon, le bouton de déploiement en un clic n'apparaîtra pas."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:37
 msgid ""
 "If you have more than one device connected, Godot will ask you which device "
 "the project should be exported to."
 msgstr ""
+"Si vous avez plus d'un appareil connecté, Godot vous demandera dans quel "
+"appareil le project sera exporté."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:40
 msgid ""
 "**HTML5:** Starts a local web server and runs the exported project by "
 "opening the default web browser."
 msgstr ""
+"**HTML5 :** Démarre un serveur web local and lance le projet exporté en "
+"ouvrant le navigateur web par défaut."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:43
 msgid "Support for more platforms such as iOS is planned."
-msgstr ""
+msgstr "Le support pour d'avantage de platformes comme IOS est prévu."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:46
-#, fuzzy
 msgid "Using one-click deploy"
-msgstr "Déploiement en un clic"
+msgstr "Utilisation du déploiement en un clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:48
 msgid ""
 "If deploying to Android, enable developer mode on your mobile device then "
 "enable USB debugging in the device's settings."
 msgstr ""
+"Si vous déployez sur Android, activez le mode développeur sur votre appareil "
+"mobile puis activé le débogage USB dans les paramètres de l'appareil."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:50
 msgid ""
 "After enabling USB debugging, connect the device to your PC using an USB "
 "cable."
 msgstr ""
+"Après avoir activé le débogage USB, connectez l'appareil à votre PC en "
+"utilisant un câble USB."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:52
 msgid "For advanced users, it should also be possible to use wireless ADB."
 msgstr ""
+"Pour les utilisateurs avancés, il devrait également être possible d'utiliser "
+"l'ADB sans fil."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:54
 msgid ""
 "Make sure there is an export preset marked as **Runnable** for the target "
 "platform (Android or HTML5)."
 msgstr ""
+"Assurez vous qu'il y ait un préréglage d'exportation marqué en tant que "
+"**Runnable** pour la platforme cible (Android ou HTML5)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:56
 msgid ""
 "If everything is configured correctly and with no errors, platform-specific "
 "icons will appear in the top-right corner of the editor."
 msgstr ""
+"Si tout est correctement configuré et qu'il n'y a pas d'erreurs, les icônes "
+"spécifiques aux plateformes apparaîtront dans le coin en haut à droite de "
+"l'éditeur."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:58
 msgid "Click the button to export to the desired platform in one click."
-msgstr ""
+msgstr "Cliquez le bouton pour exporter sur la platforme désirée en un clique."

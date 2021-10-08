@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,9 +87,9 @@ msgstr ""
 "dans les projets 2D lorsque l'on utilise des textures à gradient lisse."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
-#, fuzzy
 msgid "There are two main ways to alleviate banding:"
-msgstr "Il y a plusieurs façons de régler l'arrière-plan :"
+msgstr ""
+"Il y a deux façons principales de réduire l'effet de postérisation HDR :"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
@@ -99,6 +99,13 @@ msgid ""
 "also requires HDR to be enabled in the Project Settings (which is the "
 "default)."
 msgstr ""
+"Activez **Use Debanding** dans les paramètres du projet. Cela permet "
+"d'appliquer un shader de réduction de l'effet de postérisation HDR plein "
+"écran comme effet de post-traitement et cela utilise peut de ressource. La "
+"réduction de l'effet de postérisation HDR plein écran n'est pris en charge "
+"que lorsque vous utilisez les moteurs de rendu GLES3 ou Vulkan. Il nécessite "
+"également que la fonction HDR soit activée dans les paramètres du projet (ce "
+"qui est le cas par défaut)."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:41
 msgid ""
@@ -109,6 +116,13 @@ msgid ""
 "your project is rendered in LDR, which means it will work when using the "
 "GLES2 renderer."
 msgstr ""
+"Vous pouvez également intégrer du bruit dans vos textures. Ceci est "
+"principalement efficace en 2D, par exemple pour les effets de vignettage. En "
+"3D, vous pouvez également utiliser un `custom debanding shader <https://"
+"github.com/fractilegames/godot-gles2-debanding-material>`__ à appliquer sur "
+"vos *materials*. Cette technique fonctionne même si votre projet est rendu "
+"en LDR, ce qui signifie qu'elle fonctionnera lorsque vous utiliserez le "
+"moteur de rendu GLES2."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid ""

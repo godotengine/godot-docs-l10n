@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:4
 msgid "Making trees"
-msgstr ""
+msgstr "Создание деревьев"
 
 #: ../../docs/tutorials/content/making_trees.rst:6
 msgid ""
 "This is a short tutorial on how to make trees and other types of vegetation "
 "from scratch."
 msgstr ""
+"Это краткое руководство о том, как создавать деревья и другие виды "
+"растительности с нуля."
 
 #: ../../docs/tutorials/content/making_trees.rst:8
 #, fuzzy
@@ -39,11 +41,11 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:13
 msgid "Start with a tree"
-msgstr ""
+msgstr "Начните с дерева"
 
 #: ../../docs/tutorials/content/making_trees.rst:15
 msgid "I took this tree from SketchFab:"
-msgstr ""
+msgstr "Я взял это дерево из SketchFab:"
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
@@ -51,11 +53,11 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
-msgstr ""
+msgstr "и открыл его в Blender."
 
 #: ../../docs/tutorials/content/making_trees.rst:24
 msgid "Paint with vertex colors"
-msgstr ""
+msgstr "Рисование цветами вершин"
 
 #: ../../docs/tutorials/content/making_trees.rst:26
 msgid ""
@@ -64,20 +66,27 @@ msgid ""
 "painting tool of your favorite 3D modelling program and paint something like "
 "this:"
 msgstr ""
+"Первое, что вы, возможно, захотите сделать, это использовать цвета вершин "
+"для рисования того, как сильно будет раскачиваться дерево при ветре. Просто "
+"используйте инструмент рисования цвета вершин в вашей любимой программе 3D-"
+"моделирования и нарисуйте что-то вроде этого:"
 
 #: ../../docs/tutorials/content/making_trees.rst:30
 msgid ""
 "This is a bit exaggerated, but the idea is that color indicates how much "
 "sway affects every part of the tree. This scale here represents it better:"
 msgstr ""
+"Это немного преувеличено, но идея в том, что цвет показывает, насколько "
+"сильно качание влияет на каждую часть дерева. Эта шкала представляет это "
+"лучше:"
 
 #: ../../docs/tutorials/content/making_trees.rst:35
 msgid "Write a custom shader for the leaves"
-msgstr ""
+msgstr "Напишите пользовательский шейдер для листьев"
 
 #: ../../docs/tutorials/content/making_trees.rst:37
 msgid "This is a simple example of a shader for leaves:"
-msgstr ""
+msgstr "Это простой пример шейдера для листьев:"
 
 #: ../../docs/tutorials/content/making_trees.rst:44
 msgid ""
@@ -88,12 +97,20 @@ msgid ""
 "can be duplicated, moved, etc. and it will still work together with other "
 "trees."
 msgstr ""
+"Это пространственный шейдер. В нем нет обрезки спереди/сзади (поэтому листья "
+"видны с обеих сторон), и используется альфа-препасс, поэтому меньше "
+"артефактов глубины, возникающих при использовании прозрачности (и листья "
+"отбрасывают тень). Наконец, для эффекта качания рекомендуется использовать "
+"мировые координаты, чтобы дерево можно было дублировать, перемещать и т.д., "
+"и оно все равно будет работать вместе с другими деревьями."
 
 #: ../../docs/tutorials/content/making_trees.rst:51
 msgid ""
 "Here, the texture is read, as well as a transmission color, which is used to "
 "add some back-lighting to the leaves, simulating subsurface scattering."
 msgstr ""
+"Здесь считывается текстура, а также цвет передачи, который используется для "
+"добавления подсветки листьям, имитируя подповерхностное рассеивание."
 
 #: ../../docs/tutorials/content/making_trees.rst:67
 msgid ""
@@ -102,14 +119,19 @@ msgid ""
 "that the strength is multiplied by the color. Every axis uses a different "
 "small near 1.0 multiplication factor so axes don't appear in sync."
 msgstr ""
+"Это код для создания колыхания листьев. Он прост (просто использует "
+"синусоиду, умноженную на время и положение оси, но работает хорошо). "
+"Обратите внимание, что сила умножается на цвет. Каждая ось использует свой "
+"маленький коэффициент умножения, близкий к 1.0, поэтому оси не "
+"синхронизируются."
 
 #: ../../docs/tutorials/content/making_trees.rst:70
 msgid "Finally, all that's left is the fragment shader:"
-msgstr ""
+msgstr "Наконец, все, что осталось, - это шейдер фрагментов:"
 
 #: ../../docs/tutorials/content/making_trees.rst:83
 msgid "And this is pretty much it."
-msgstr ""
+msgstr "И это практически все."
 
 #: ../../docs/tutorials/content/making_trees.rst:85
 msgid ""
@@ -117,11 +139,14 @@ msgid ""
 "(thus no alpha prepass is needed) and does not require transmission to work. "
 "Both shaders can be improved by adding normal mapping, AO and other maps."
 msgstr ""
+"Шейдер trunk похож, за исключением того, что он не записывается в альфа-"
+"канал (поэтому не требуется предварительный альфа-пасс) и не требует "
+"передачи для работы. Оба шейдера можно улучшить, добавив нормальное "
+"отображение, AO и другие карты."
 
 #: ../../docs/tutorials/content/making_trees.rst:88
-#, fuzzy
 msgid "Improving the shader"
-msgstr "Движение Игрока"
+msgstr "Улучшение шейдера"
 
 #: ../../docs/tutorials/content/making_trees.rst:90
 msgid ""
@@ -130,6 +155,10 @@ msgid ""
 "how Crysis does this (focus mostly on the sway code, as many other "
 "techniques shown there are obsolete):"
 msgstr ""
+"Есть много других ресурсов о том, как это сделать, которые вы можете "
+"прочитать. Теперь, когда вы знаете основы, рекомендуем прочитать главу из "
+"GPU Gems3 о том, как Crysis делает это (сосредоточьтесь в основном на коде "
+"sway, так как многие другие методы, показанные там, устарели):"
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"

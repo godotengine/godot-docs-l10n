@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
 msgid "Array vs. Dictionary vs. Object"
-msgstr "数组VS字典VS对象"
+msgstr "数组、字典、对象"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
 msgid ""
@@ -103,10 +103,11 @@ msgid ""
 "<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
 "`Object <class_Object>` s."
 msgstr ""
-"Godot将所有变量存储在 `Variant <https://docs.godotengine.org/en/latest/"
-"development/cpp/variant_class.html>`_ 类的脚本API中.``Variant`` 可以存储与 "
-"``Variant`` 兼容的数据结构, 例如 :ref:`Array <class_Array>` 和 :ref:"
-"`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object>` ."
+"Godot 把脚本 API 中的所有变量都存储在 `Variant <https://docs.godotengine.org/"
+"zh_CN/latest/development/cpp/variant_class.html>`_ 类中。变体（Variant）本身"
+"也可以存储兼容变体的数据结构，例如 :ref:`Array <class_Array>` （数组）、 :"
+"ref:`Dictionary <class_Dictionary>` （字典）、 :ref:`Object <class_Object>` "
+"（对象）。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -114,8 +115,8 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
-"Godot将数组实现为 ``Vector<Variant>``. 引擎将数组内容存储在一个连续的内存段"
-"中, 也就是说, 它们是连续相邻的."
+"Godot 使用 ``Vector<Variant>`` 实现数组。引擎会将数组内容存储在一段连续的内存"
+"之中，也就是说，元素与元素之间是相邻的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -125,94 +126,95 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
-"对于不熟悉C++的人来说,``Vector`` 是传统C++库中数组对象的名称. 它是一个 \"模板"
-"化\" 类型, 这意味着它的记录只能包含特定的类型(用尖括号表示). 举个例子, 一个 :"
-"ref:`PoolStringArray <class_PoolStringArray>` 类似于一个 ``Vector<String>``."
+"如果你不熟悉 C++ 的话，这里的 Vector 是传统 C++ 库中熟组对象的名称，是个“模"
+"板”类型，也就是说它只能存储特定类型的数据（用尖括号表示）。所以举例来说，:"
+"ref:`PoolStringArray <class_PoolStringArray>` 其实就类似于 "
+"``Vector<String>`` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"
-msgstr "连续的内存存储意味着以下操作性能:"
+msgstr "因为是在内存中连续存储，所以执行各种操作的性能如下："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr "**迭代** : 最快. 非常适合循环."
+msgstr "**迭代** ：最快，非常适合循环。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
 msgid "Op: All it does is increment a counter to get to the next record."
-msgstr "运行: 它所做的就是增加一个计数器, 以得到下一个记录."
+msgstr "操作：把计数器加一即可获取下一个元素。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
-msgstr "**插入, 删除, 移动** : 依赖于位置. 一般慢."
+msgstr "**插入、删除、移动** ：与位置相关，一般较慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
 msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
 "(to make room / fill space)."
-msgstr "运行: 添加/删除/移动内容, 涉及移动相邻的记录(腾出房间/填补空间)."
+msgstr ""
+"操作：元素的添加、删除、移动需要移动与之相邻的元素（腾出地方或者填充空缺）。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
 msgid "Fast add/remove *from the end*."
-msgstr "快速的 *从末尾* 添加/删除."
+msgstr "在 *末尾* 添加、删除很快。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr "慢速的 *从任意位置* 添加/删除."
+msgstr "在 *任意位置* 添加、删除较慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
 msgid "Slowest add/remove *from the front*."
-msgstr "最慢的 *从前面* 添加/删除."
+msgstr "在 *开头* 添加、删除最慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
 msgid "If doing many inserts/removals *from the front*, then..."
-msgstr "如果执行多次 *从前面* 插入/删除, 那么…"
+msgstr "如果需要在 *开头* 执行多次插入、删除操作，那么……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
 msgid "invert the array."
-msgstr "反转数组."
+msgstr "反转数组。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr "执行一个循环, 该循环 *在末尾* 执行数组更改."
+msgstr "通过循环在 *末尾* 执行数组更改。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
 msgid "re-invert the array."
-msgstr "重新反转数组."
+msgstr "再把数组反转回来。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:85
 msgid ""
 "This makes only 2 copies of the array (still constant time, but slow) versus "
 "copying roughly 1/2 of the array, on average, N times (linear time)."
 msgstr ""
-"这只是复制了数组的两个副本(仍然是常数时间, 但是速度很慢), 大约复制了数组的"
-"1/2, 平均N次(线性时间)."
+"这样就只复制了两次数组（虽然比较慢，但还是常数时间），否则就得把平均大概一半"
+"的数组复制 N 遍（线性时间）。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
-#, fuzzy
 msgid ""
 "**Get, Set:** Fastest *by position*. E.g. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
-"**取值, 设值** :*按位置* 最快. 例如: 可以请求第0, 第2, 第10条记录, 诸如此类, "
-"但不能指定想要哪个记录."
+"**取值、设值** ：因为是 *按位置* 存取的，所以最快。例如你可以请求第 0 个、第 "
+"2 个、第 10 个等等的元素，但不能按照元素的值来请求。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
-msgstr "操作: 从数组起始位置到所需索引的1个加法运算."
+msgstr "操作：把起始位置做一次加法，得到所需的索引。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr "**查找** : 最慢. 识别一个数值的索引/位置."
+msgstr "**查找** ：最慢。根据值获取索引，也就是位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
-msgstr "操作: 必须遍历数组并比较值, 直到找到匹配的为止."
+msgstr "操作：必须遍历数组，一个个元素做比较，直到找到匹配的为止。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
-msgstr "性能也取决于是否需要一个详尽的搜索."
+msgstr "性能同时也取决于是否需要查遍整个数组才能找到目标。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
 msgid ""

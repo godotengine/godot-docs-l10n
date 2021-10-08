@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,8 +84,9 @@ msgstr ""
 "装MinGW和其他依赖项::"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:37
+#, fuzzy
 msgid ""
-"For each MSYS2 MinGW subsystem, you should then run `pip install scons` in "
+"For each MSYS2 MinGW subsystem, you should then run `pip3 install scons` in "
 "its shell."
 msgstr "对于每个MSYS2 MinGW子系统, 你应该在其shell中运行`pip install scons`."
 
@@ -119,7 +120,8 @@ msgid "To install SCons open the command prompt and run the following command."
 msgstr "要安装SCons, 请打开命令提示符并运行以下命令."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:55
-msgid "``python -m pip install scons``"
+#, fuzzy
+msgid "``python -m pip3 install scons``"
 msgstr "``python -m pip install scons``"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:57
@@ -214,7 +216,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:104
 msgid "Compiling"
-msgstr "开始编译"
+msgstr "编译"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:107
 msgid "Selecting a compiler"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:4
-#, fuzzy
 msgid "Procedural geometry"
-msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
+msgstr "Процедурная геометрия"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:6
 msgid ""
@@ -29,10 +28,14 @@ msgid ""
 "benefits and drawbacks, so it is best to understand each one and how it can "
 "be useful in a given situation."
 msgstr ""
+"Существует множество способов процедурно генерировать геометрию в Godot. В "
+"этой серии уроков мы рассмотрим несколько из них. У каждой техники есть свои "
+"преимущества и недостатки, поэтому лучше всего понимать каждую из них и то, "
+"как она может быть полезна в той или иной ситуации."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:20
 msgid "What is geometry?"
-msgstr "Генерация геометрии?"
+msgstr "Что такое геометрия?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:22
 msgid ""
@@ -43,7 +46,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid "What is a Mesh?"
-msgstr "Типы Шейдеров?"
+msgstr "Что такое меш?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:28
 msgid ""
@@ -53,6 +56,11 @@ msgid ""
 "`MultiMeshInstance <class_MultiMeshInstance>`. While they are all related, "
 "they have slightly different uses."
 msgstr ""
+"Многие вещи в Godot имеют название mesh: :ref:`Mesh <class_Mesh>`, :ref:"
+"`ArrayMesh <class_ArrayMesh>`, :ref:`MeshInstance <class_MeshInstance>`, :"
+"ref:`MultiMesh <class_MultiMesh>`, и :ref:`MultiMeshInstance "
+"<class_MultiMeshInstance>`. Хотя все они связаны между собой, их "
+"использование несколько отличается."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:32
 msgid ""
@@ -63,6 +71,12 @@ msgid ""
 "different parts of your scene with different materials or transformations "
 "(scale, rotation, position etc.)."
 msgstr ""
+"Meshes и ArrayMeshes - это ресурсы, которые рисуются с помощью узла "
+"MeshInstance. Такие ресурсы, как Meshes и ArrayMeshes, не могут быть "
+"добавлены в сцену напрямую. MeshInstance представляет один экземпляр сетки в "
+"вашей сцене. Вы можете повторно использовать одну сетку в нескольких "
+"MeshInstance, чтобы рисовать ее в разных частях сцены с разными материалами "
+"или преобразованиями (масштаб, поворот, положение и т.д.)."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:38
 msgid ""
@@ -89,6 +103,12 @@ msgid ""
 "construct a Mesh manually by passing in an array containing the surface "
 "information."
 msgstr ""
+"Сетка состоит из одной или нескольких поверхностей. Поверхность - это "
+"массив, состоящий из нескольких подмассивов, содержащих вершины, нормали, UV "
+"и т.д. Обычно процесс построения поверхностей и сеток скрыт от пользователя "
+"в :ref:`VisualServer <class_VisualServer>`, но с помощью ArrayMeshes "
+"пользователь может построить сетку вручную, передав массив, содержащий "
+"информацию о поверхности."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:54
 msgid "Surfaces"
@@ -112,6 +132,11 @@ msgid ""
 "information. For example, the array located at ``ArrayMesh.ARRAY_NORMAL`` is "
 "a :ref:`PoolVector3Array <class_PoolVector3Array>` of vertex normals."
 msgstr ""
+"Массив поверхности представляет собой массив длиной ``ArrayMesh.ARRAY_MAX``. "
+"Каждая позиция в массиве заполняется подмассивом, содержащим информацию о "
+"каждой вершине. Например, массив, расположенный по адресу ``ArrayMesh."
+"ARRAY_NORMAL``, представляет собой :ref:`PoolVector3Array "
+"<class_PoolVector3Array>` нормалей вершин."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:66
 msgid ""
@@ -126,6 +151,17 @@ msgid ""
 "vertex data between triangles, which is not always desired (e.g. when you "
 "want per-face normals)."
 msgstr ""
+"Массив поверхности может быть индексированным или неиндексированным. Создать "
+"неиндексированный массив так же просто, как не присваивать массиву индекс "
+"``ArrayMesh.ARRAY_INDEX``. Неиндексированный массив хранит уникальную "
+"информацию о вершинах для каждого треугольника, что означает, что когда два "
+"треугольника имеют общую вершину, она дублируется в массиве. Индексированный "
+"массив поверхностей хранит информацию о вершинах только для каждой "
+"уникальной вершины, а затем также хранит массив индексов, которые указывают, "
+"как построить треугольники из массива вершин. В целом, использование "
+"индексированного массива быстрее, но это означает, что вам придется "
+"разделять вершинные данные между треугольниками, что не всегда желательно "
+"(например, когда вам нужны нормали для каждой грани)."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 msgid "Tools"
@@ -169,6 +205,8 @@ msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
 "vertices, faces, and edges that can be modified at runtime."
 msgstr ""
+"MeshDataTool - это ресурс, преобразующий данные Mesh в массивы вершин, "
+"граней и ребер, которые могут быть изменены во время выполнения."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:94
 #, fuzzy
@@ -229,21 +267,24 @@ msgstr ""
 "руководство :ref:`Input Event Tutorial<doc_inputevent>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:118
-#, fuzzy
 msgid "Which one should I use?"
-msgstr "Что такое GDScript и зачем мне его использовать?"
+msgstr "Какой из них мне следует использовать?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:120
 msgid ""
 "Which method you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
 msgstr ""
+"Какой метод вы используете, зависит от того, чего вы хотите добиться и какой "
+"вид процедуры вам удобен."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:122
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
 "(meshes) that don't change over time."
 msgstr ""
+"И SurfaceTool, и ArrayMesh отлично подходят для создания статической "
+"геометрии (сетки), которая не меняется со временем."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:124
 msgid ""
@@ -251,6 +292,9 @@ msgid ""
 "is more a little more challenging. Additionally, SurfaceTool has a few "
 "quality of life methods such as ``generate_normals()`` and ``index()``."
 msgstr ""
+"Использование ArrayMesh немного быстрее, чем использование SurfaceTool, но "
+"API немного сложнее. Кроме того, у SurfaceTool есть несколько методов, таких "
+"как ``generate_normals()`` и ``index()``."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:127
 msgid ""
@@ -259,6 +303,11 @@ msgid ""
 "every frame anyway it provides a much easier interface that may even be a "
 "little faster than generating an ArrayMesh every frame."
 msgstr ""
+"ImmediateGeometry регенерирует сетку каждый кадр, поэтому он намного "
+"медленнее, чем ArrayMesh или SurfaceTool. Однако, если вам нужно, чтобы "
+"геометрия менялась каждый кадр в любом случае, этот инструмент предоставляет "
+"гораздо более простой интерфейс, который может быть даже немного быстрее, "
+"чем генерация ArrayMesh каждый кадр."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:131
 msgid ""
@@ -269,3 +318,9 @@ msgid ""
 "needed. The MeshDataTool is best used if you are going to be using an "
 "algorithm that requires access to the face or edge array."
 msgstr ""
+"MeshDataTool не является быстрым, но он дает вам доступ ко всем видам "
+"свойств сетки, которые вы не можете получить с помощью других инструментов "
+"(края, грани и т.д.). Он невероятно полезен, когда вам нужны такие данные "
+"для преобразования сетки, но его не стоит использовать, если эта информация "
+"не нужна. MeshDataTool лучше использовать, если вы собираетесь использовать "
+"алгоритм, требующий доступа к массиву граней или ребер."

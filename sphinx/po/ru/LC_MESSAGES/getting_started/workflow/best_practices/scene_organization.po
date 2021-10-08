@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,22 +133,19 @@ msgstr ""
 "связь чтобы все это инициализировать:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
-#, fuzzy
 msgid ""
 "Connect to a signal. Extremely safe, but should be used only to \"respond\" "
 "to behavior, not start it. Note that signal names are usually past-tense "
 "verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
-"Подключитесь к сигналу. Очень безопасно, но стоит использовать только для "
-"\"ответа\" на поведение, не для его запуска. Имейте ввиду что названия "
-"сигналов обычно глаголы в прошедшем времени, вроде \"entered\" (\"вошел\"), "
-"\"skill_activated\"(\"способность_активирована\"), или \"item_collected"
-"\"(предмет_получен)."
+"Подключитесь к сигналу. Чрезвычайно безопасно, но должно использоваться "
+"только для \"ответа\" на поведение, а не для его запуска. Обратите внимание, "
+"что имена сигналов обычно являются глаголами прошедшего времени, например "
+"\"вошел\", \"навык_активирован\" или \"предмет_собран\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:73
-#, fuzzy
 msgid "Call a method. Used to start behavior."
-msgstr "Вызовите метод. Используется для старта поведения."
+msgstr "Вызов метода. Используется для запуска поведения."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:92
 #, fuzzy
@@ -161,9 +158,8 @@ msgstr ""
 "поведения."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:112
-#, fuzzy
 msgid "Initialize a Node or other Object reference."
-msgstr "Инициализируйте Узел или другую ссылку Объекта."
+msgstr "Инициализация ссылки на Node или другой Object."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:131
 msgid "Initialize a NodePath."
@@ -310,12 +306,10 @@ msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr "`YAGNI <https://ru.wikipedia.org/wiki/YAGNI>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
-#, fuzzy
 msgid "Choosing a node tree structure"
-msgstr "Структура нода"
+msgstr "Выбор структуры дерева нод"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:254
-#, fuzzy
 msgid ""
 "So, a developer starts work on a game only to stop at the vast possibilities "
 "before them. They might know what they want to do, what systems they want to "
@@ -325,11 +319,12 @@ msgid ""
 "a decent structure to start with."
 msgstr ""
 "Итак, разработчик начинает работу над игрой только для того, чтобы "
-"остановиться на огромных возможностях, которые перед ним открываются. Он "
-"может знать, что он хочет делать, какие системы он хочет иметь, но где их "
-"все разместить? Что ж, как делать свою игру, всегда зависит от него. Дерево "
-"узлов можно построить множеством способов. Но для тех, кто не уверен, это "
-"полезное руководство может дать им образец достойной структуры для начала."
+"остановиться перед огромными возможностями. Они могут знать, что они хотят "
+"сделать, какие системы они хотят иметь, но *где* их разместить? То, как "
+"человек будет создавать свою игру, всегда зависит от него самого. Дерево "
+"узлов можно построить бесчисленными способами. Но для тех, кто не уверен, "
+"это полезное руководство может дать им образец достойной структуры для "
+"начала."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
 msgid ""
@@ -441,7 +436,6 @@ msgstr ""
 "сценами."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
-#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
@@ -449,9 +443,9 @@ msgid ""
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
 "Если у вас есть системы, которые изменяют данные других систем, следует "
-"определять их как свои собственные сценарии или сцены, а не как "
-"автозагрузки. Дополнительные сведения о причинах см. в документации :ref:"
-"`'Автозагрузки против внутренних узлов' "
+"определять их как свои собственные сценарии или сцены, а не помещать их "
+"автозагрузку. Дополнительные сведения о причинах см. в документации :ref:"
+"`'Автозагрузка против внутренних узлов' "
 "<doc_autoloads_versus_internal_nodes>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:312

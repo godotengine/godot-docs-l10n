@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
-"다른 씬을 자식으로 불러오거나 그렇지 않을 \"마스터\" 씬을 사용할 수 있습니"
+"다른 씬을 자손으로 불러오거나 그렇지 않을 \"마스터\" 씬을 사용할 수 있습니"
 "다. 하지만 그렇게 하면 바르게 작동하기 위해 더 이상 씬들을 개별적으로 실행할 "
 "수 없다는 것을 의미합니다."
 
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr "이 개념을 사용해서, 다음과 같은 객체를 만드실 수 있습니다:"
+msgstr "이 개념을 사용해서, 다음과 같은 오브젝트를 만드실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 #, fuzzy
@@ -149,8 +149,8 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
-"여기서 원하는 씬이나 스크립트를 추가하실 수 있습니다. 목록에서 각 항목에는 노"
-"드의 ``name`` 속성으로 지정하는 이름이 필요합니다. 전역 씬 트리에 추가된 항목"
+"여기에서 원하는 씬이나 스크립트를 추가할 수 있습니다. 목록의 각 항목에는 노드"
+"의 ``name`` 속성으로 할당되는 이름이 필요합니다. 전역 씬 트리에 추가된 항목"
 "의 순서는 위/아래 방향키를 사용해 조작할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
@@ -176,9 +176,9 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
-"씬 트리에서 다른 노드와 마찬가지로 오토로드 객체 (스크립트 혹은 씬)는 접근됩"
-"니다. 사실, 실행하는 씬 트리를 보신다면, 오토로드 된 노드가 나타나는 것을 보"
-"실 수 있습니다:"
+"씬 트리에서 다른 노드와 마찬가지로 오토로드 오브젝트 (스크립트 혹은 씬)는 접"
+"근됩니다. 사실, 실행하는 씬 트리를 보신다면, 오토로드 된 노드가 나타나는 것"
+"을 보실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid "Custom scene switcher"
@@ -263,8 +263,8 @@ msgid ""
 "This means that the last child of root is always the loaded scene."
 msgstr ""
 "스크립트로 돌아가서, `_ready()` 함수에서 현재 씬을 가져와야 합니다. (버튼이 "
-"있는) 현재 씬과 ``global.gd`` 는 둘 다 루트의 자식이지만, 오토로드 된 노드는 "
-"항상 첫 번째 입니다. 즉, 루트의 마지막 자식은 항상 불러온 씬이라는 것입니다."
+"있는) 현재 씬과 ``global.gd`` 는 둘 다 루트의 자손이지만, 오토로드 된 노드는 "
+"항상 첫 번째 입니다. 즉, 루트의 마지막 자손은 항상 불러온 씬이라는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -476,12 +476,22 @@ msgid ""
 "and landscape mode, use 720×720 as the project's base window size in the "
 "Project Settings."
 msgstr ""
+"Pour prendre en charge les modes portrait et paysage avec un facteur "
+"d'échelle similaire déterminé automatiquement, définissez la résolution de "
+"base de votre projet comme étant un *carré* (rapport d'aspect 1:1) plutôt "
+"qu'un rectangle. Par exemple, si vous souhaitez concevoir une résolution de "
+"base de 1280×720 mais que vous souhaitez prendre en charge les modes "
+"portrait et paysage, utilisez 720×720 comme taille de fenêtre de base du "
+"projet dans les paramètres du projet."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
 msgid ""
 "To allow the user to choose their preferred screen orientation at run-time, "
 "remember to set **Display > Window > Handheld > Orientation** to ``sensor``."
 msgstr ""
+"Pour permettre à l'utilisateur de choisir l'orientation de son écran au "
+"moment de l'exécution, n'oubliez pas de définir **Display > Window > "
+"Handheld > Orientation** sur ``sensor``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:243
 msgid "Stretch Shrink"
@@ -538,24 +548,23 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid "Common use case scenarios"
-msgstr ""
+msgstr "Scénarios d'utilisation courante"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:269
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
-"Comment créer des ressources pour gérer plusieurs résolutions et rapports "
-"d'aspect ?"
+"Les paramètres suivants sont recommandés pour bien prendre en charge les "
+"résolutions et les rapports d'aspect multiples."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:273
 msgid "Desktop game"
-msgstr ""
+msgstr "Jeu d'ordinateur de bureau"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:275
 msgid "**Non-pixel art:**"
-msgstr ""
+msgstr "**Art non pixelisé :**"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
 msgid ""
@@ -563,6 +572,10 @@ msgid ""
 "have a display smaller than 1920×1080, set **Test Width** and **Test "
 "Height** to lower values to make the window smaller when the project starts."
 msgstr ""
+"Définissez la largeur de la fenêtre de base à ``1920`` et la hauteur de la "
+"fenêtre à ``1080``. Si vous avez un écran plus petit que 1920×1080, "
+"définissez **Test Width** et **Test Height** à des valeurs inférieures pour "
+"que la fenêtre soit plus petite au démarrage du projet."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:280
 msgid ""
@@ -574,12 +587,20 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"Si vous ciblez principalement les appareils haut de gamme, réglez la largeur "
+"de la fenêtre de base sur ``3840`` et sa hauteur sur ``2160``. Cela vous "
+"permet de fournir des ressources 2D de plus haute résolution, ce qui donne "
+"des visuels plus nets au prix d'une utilisation plus importante de la "
+"mémoire et de la taille des fichiers. Notez que cela rendra les textures non-"
+"mipmapées granuleuses sur les appareils à basse résolution, assurez-vous "
+"donc de suivre les instructions décrites dans :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:287
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:334
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:353
 msgid "Set the stretch mode to ``2d``."
-msgstr ""
+msgstr "Réglez le mode d'étirement sur ``2d``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:288
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:335
@@ -589,6 +610,9 @@ msgid ""
 "aspect ratios and makes better use of tall smartphone displays (such as 18:9 "
 "or 19:9 aspect ratios)."
 msgstr ""
+"Définissez l'aspect de l'étirement sur ``expand``. Cela permet de prendre en "
+"charge plusieurs rapports d'aspect et de mieux utiliser les grands écrans de "
+"smartphones (tels que les rapports d'aspect 18:9 ou 19:9)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:290
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:337
@@ -597,11 +621,12 @@ msgid ""
 "Configure Control nodes' anchors to snap to the correct corners using the "
 "**Layout** menu."
 msgstr ""
+"Configurez les ancrages des nœuds de Control pour qu'ils s'accrochent aux "
+"bons coins en utilisant le menu **Layout**."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:292
-#, fuzzy
 msgid "**Pixel art:**"
-msgstr "**Format PCK :**"
+msgstr "**Pixel art :**"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:294
 msgid ""
@@ -610,11 +635,16 @@ msgid ""
 "sizes will require using higher resolution artwork, unless you intend to "
 "show more of the game world at a given time."
 msgstr ""
+"Définissez la taille de la fenêtre de base en fonction de la taille de la "
+"fenêtre que vous souhaitez utiliser. La plupart des jeux en pixel art "
+"utilisent des fenêtres de taille comprise entre 256×224 et 640×480. Si la "
+"taille de la fenêtre est supérieure, vous devrez utiliser des illustrations "
+"à plus haute résolution, à moins que vous n'ayez l'intention de montrer une "
+"plus grande partie du monde du jeu à un moment donné."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:298
-#, fuzzy
 msgid "Set the stretch mode to ``viewport``."
-msgstr "Définissez le ``shader_type`` sur ``particles``."
+msgstr "Définissez le mode d'étirement sur ``viewport``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:299
 msgid ""
@@ -622,12 +652,19 @@ msgid ""
 "black bars). As an alternative, you can set the stretch aspect to ``expand`` "
 "to support multiple aspect ratios."
 msgstr ""
+"Définissez l'aspect de l'étirement sur ``keep`` pour appliquer un seul "
+"rapport d'aspect (avec des barres noires). Vous pouvez également définir "
+"l'aspect de l'étirement sur ``expand`` pour prendre en charge plusieurs "
+"rapports d'aspect."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:302
 msgid ""
 "If using the ``expand`` stretch aspect, Configure Control nodes' anchors to "
 "snap to the correct corners using the **Layout** menu."
 msgstr ""
+"Si vous utilisez l'aspect d'étirement ``expand``, configurez les ancrages "
+"des nœuds Control pour qu'ils s'accrochent aux bons coins à l'aide du menu "
+"**Layout**."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:307
 msgid ""
@@ -637,6 +674,11 @@ msgid ""
 "3D viewport, you should use the ``2d`` stretch mode instead of the "
 "``viewport`` stretch mode."
 msgstr ""
+"Le mode d'étirement ``viewport`` fournit un rendu basse résolution qui est "
+"ensuite étiré à la taille finale de la fenêtre. Si vous acceptez que les "
+"sprites puissent se déplacer ou tourner dans des positions \"sub-pixel\" ou "
+"si vous souhaitez avoir une fenêtre 3D haute résolution, vous devriez "
+"utiliser le mode d'étirement ``2d`` au lieu du mode d'étirement ``viewport``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:313
 msgid ""
@@ -646,20 +688,31 @@ msgid ""
 "this, use an add-on such as the `Integer Resolution Handler <https://github."
 "com/Yukitty/godot-addon-integer_resolution_handler>`__."
 msgstr ""
+"Godot n'a actuellement aucun moyen d'imposer une mise à l'échelle entière "
+"lors de l'utilisation du mode d'étirement ``2d`` ou ``viewport``, ce qui "
+"signifie que le pixel art peut sembler mauvais si la taille finale de la "
+"fenêtre n'est pas un multiple de la taille de la fenêtre de base. Pour "
+"corriger cela, utilisez un add-on tel que le `Integer Resolution Handler "
+"<https://github.com/Yukitty/godot-addon-integer_resolution_handler>`__."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:319
 msgid "Mobile game in landscape mode"
-msgstr ""
+msgstr "Jeu mobile en mode paysage"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:321
 msgid ""
 "Godot is configured to use landscape mode by default. This means you don't "
 "need to change the display orientation project setting."
 msgstr ""
+"Godot est configuré pour utiliser le mode paysage par défaut. Cela signifie "
+"que vous n'avez pas besoin de modifier le paramètre du projet relatif à "
+"l'orientation de l'affichage."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:324
 msgid "Set the base window width to ``1280`` and window height to ``720``."
 msgstr ""
+"Définissez la largeur de la fenêtre de base à ``1280`` et la hauteur de la "
+"fenêtre à ``720``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:325
 msgid ""
@@ -673,14 +726,27 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"Si vous ciblez principalement les appareils haut de gamme, réglez la largeur "
+"de la fenêtre de base sur ``1920`` et sa hauteur sur ``1080``. Cela vous "
+"permet de fournir des ressources 2D de plus haute résolution, ce qui donne "
+"des visuels plus nets, mais au prix d'une utilisation de la mémoire et d'une "
+"taille de fichier plus élevées. De nombreux appareils ont des écrans de "
+"résolution encore plus élevée (1440p), mais la différence avec le 1080p est "
+"à peine visible étant donné la petite taille des écrans de smartphones. "
+"Notez que cela rendra les textures non-mipmapées granuleuses sur les "
+"appareils à basse résolution, assurez-vous donc de suivre les instructions "
+"décrites dans :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:340
 msgid "Mobile game in portrait mode"
-msgstr ""
+msgstr "Jeu mobile en mode portrait"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:342
 msgid "Set the base window width to ``720`` and window height to ``1080``."
 msgstr ""
+"Définissez la largeur de la fenêtre de base à ``720`` et la hauteur de la "
+"fenêtre à ``1080``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:343
 msgid ""
@@ -694,15 +760,26 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"Si vous ciblez principalement les appareils haut de gamme, définissez la "
+"largeur de la fenêtre de base sur ``1080`` et sa hauteur sur ``1920``. Cela "
+"vous permet de fournir des ressources 2D de plus haute résolution, ce qui "
+"donne des visuels plus nets, mais au prix d'une utilisation de la mémoire et "
+"d'une taille de fichier plus élevées. De nombreux appareils ont des écrans "
+"de résolution encore plus élevée (1440p), mais la différence avec le 1080p "
+"est à peine visible étant donné la petite taille des écrans de smartphones. "
+"Notez que cela rendra les textures non-mipmapées granuleuses sur les "
+"appareils à basse résolution, assurez-vous donc de suivre les instructions "
+"décrites dans :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:352
 msgid "Set **Display > Window > Handheld > Orientation** to ``portrait``."
 msgstr ""
+"Définissez **Display > Window > Handheld > Orientation** sur ``portrait``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:359
-#, fuzzy
 msgid "Non-game application"
-msgstr "Normalisation"
+msgstr "Application n'étant pas des jeux vidéos"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:361
 msgid ""
@@ -710,16 +787,22 @@ msgid ""
 "intend to target. This is not required, but this ensures that you design "
 "your UI with small window sizes in mind."
 msgstr ""
+"Définissez la largeur et la hauteur de la fenêtre de base sur la plus petite "
+"taille de fenêtre que vous avez l'intention de cibler. Ce n'est pas "
+"obligatoire, mais cela vous permet de concevoir votre interface utilisateur "
+"en tenant compte des petites tailles de fenêtre."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:363
 msgid "Keep the stretch mode to its default value, ``disabled``."
-msgstr ""
+msgstr "Gardez le mode d'étirement à sa valeur par défaut, ``disabled``."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:364
 msgid ""
 "Keep the stretch aspect to its default value, ``ignore`` (its value won't be "
 "used since the stretch mode is ``disabled``)."
 msgstr ""
+"Conservez l'aspect d'étirement à sa valeur par défaut, ``ignore`` (sa valeur "
+"ne sera pas utilisée puisque le mode d'étirement est ``disabled``)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:366
 msgid ""
@@ -727,6 +810,10 @@ msgid ""
 "script's ``_ready()`` function. This prevents the user from resizing the "
 "application below a certain size, which could break the UI layout."
 msgstr ""
+"Vous pouvez définir une taille de fenêtre minimale en définissant ``OS."
+"min_window_size`` dans la fonction ``_ready()`` d'un script. Cela empêche "
+"l'utilisateur de redimensionner l'application en dessous d'une certaine "
+"taille, ce qui pourrait casser la disposition de l'interface utilisateur."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:372
 msgid ""
@@ -735,11 +822,16 @@ msgid ""
 "is recommended to leave **Allow Hidpi** disabled in non-game applications to "
 "allow for the OS to use its low-DPI fallback."
 msgstr ""
+"Godot ne prend pas encore en charge le remplacement manuel du facteur "
+"d'échelle 2D, il n'est donc pas possible d'avoir un support hiDPI dans les "
+"applications non liées au jeu. Pour cette raison, il est recommandé de "
+"laisser **Allow Hidpi** désactivé dans les applications non liées au jeu "
+"pour permettre au système d'exploitation d'utiliser sa solution de repli à "
+"faible DPI."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:378
-#, fuzzy
 msgid "hiDPI support"
-msgstr "Support de tierce partie"
+msgstr "Support hiDPI"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:380
 msgid ""
@@ -748,6 +840,11 @@ msgid ""
 "operating system's DPI fallback scaling will be faster than letting the "
 "application scale itself (even when using the ``viewport`` stretch mode)."
 msgstr ""
+"Par défaut, les projets Godot ne sont pas considérés comme DPI-aware par le "
+"système d'exploitation. Ceci est fait pour améliorer les performances sur "
+"les systèmes bas de gamme, puisque la mise à l'échelle DPI du système "
+"d'exploitation sera plus rapide que de laisser l'application s'adapter elle-"
+"même (même en utilisant le mode d'étirement ``viewport``)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:385
 msgid ""
@@ -756,12 +853,19 @@ msgid ""
 "uses fullscreen, it's recommended to enable **Display > Window > Dpi > Allow "
 "Hidpi** in the Project Settings."
 msgstr ""
+"Cependant, l'échelle de repli DPI fournie par le système d'exploitation ne "
+"fonctionne pas bien avec le mode plein écran. Si vous souhaitez obtenir des "
+"images nettes sur des écrans hiDPI ou si votre projet utilise le mode plein "
+"écran, il est recom **Display > Window > Dpi > Allow Hidpi** dans les "
+"paramètres du projet."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:390
 msgid ""
 "**Allow Hidpi** is only effective on Windows and macOS. It's ignored on all "
 "other platforms."
 msgstr ""
+"**Allow Hidpi** n'est efficace que sur Windows et macOS. Elle est ignorée "
+"sur toutes les autres plateformes."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:395
 msgid ""
@@ -769,6 +873,9 @@ msgid ""
 "from the editor will only be DPI-aware if **Allow Hidpi** is enabled in the "
 "Project Settings."
 msgstr ""
+"L'éditeur Godot lui-même est toujours marqué comme DPI-aware. L'exécution du "
+"projet à partir de l'éditeur ne sera DPI-aware que si **Allow Hidpi** est "
+"activé dans les paramètres du projet."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:402
 msgid "Reducing aliasing on downsampling"

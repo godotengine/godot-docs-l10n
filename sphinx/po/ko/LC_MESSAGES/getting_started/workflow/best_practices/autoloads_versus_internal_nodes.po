@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,10 @@ msgid ""
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
-"다른 엔진에서는 전역으로 접근 가능할 개체에 다양한 기능을 구성하는 \"관리자"
-"\" 클래스를 만들어 쓰는 것을 권장할 지도 모릅니다. Godot는 이러한 객체의 크기"
-"를 줄이는 방식을 지원하는 것으로 커집니다. 대신 내용물을 가능한 한 개별 노드"
-"로 이동시킵니다."
+"다른 엔진에서는 전역으로 접근 가능할 오브젝트에 다양한 기능을 구성하는 \"관리"
+"자\" 클래스를 만들어 쓰는 것을 권장할 지도 모릅니다. Godot는 이러한 오브젝트"
+"의 크기를 줄이는 방식을 지원하는 것으로 커집니다. 대신 내용물을 가능한 한 개"
+"별 노드로 이동시킵니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
 #, fuzzy
@@ -94,8 +94,8 @@ msgid ""
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
-"**전역 상태**: 한 객체가 이제 모든 객체의 데이터를 담당합니다. SFX가 오류가 "
-"발생하거나 AudioStreamPlayer를 사용할 수 없다면, 전부 망가집니다."
+"**전역 상태**: 한 오브젝트가 이제 모든 오브젝트의 데이터를 담당합니다. SFX가 "
+"오류가 발생하거나 AudioStreamPlayer를 사용할 수 없다면, 전부 망가집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 #, fuzzy
@@ -103,9 +103,9 @@ msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
-"**전역 접근**: 이제 모든 객체가 어디서든 `SFX.play(sound_path)`\\ 를 호출할 "
-"수 있습니다, SFX 버그가 어디서 시작했는 지를 아는 쉬운 방법은 더 이상 없습니"
-"다."
+"**전역 접근**: 이제 모든 오브젝트가 어디서든 `SFX.play(sound_path)`\\ 를 호출"
+"할 수 있습니다, SFX 버그가 어디서 시작했는 지를 아는 쉬운 방법은 더 이상 없습"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -187,9 +187,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
-#, fuzzy
 msgid "When you should use an Autoload"
-msgstr "그러면 언제 오토로드를 *사용해야 할까요*?"
+msgstr "언제 오토로드를 사용해야 하는지"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
@@ -216,10 +215,10 @@ msgid ""
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
-"싱글톤이 자체 정보를 관리하고 있고, 다른 객체의 데이터에 침범하지 않는다면, "
-"넓은 범위의 작업을 다루기 위해 \"시스템\" 클래스를 만드는 것이 좋은 방법입니"
-"다. 예를 들어 타겟팅 시스템, 퀘스트 시스템, 아니면 대화 상자 시스템이 대표적"
-"인 싱글톤 구현 사례입니다."
+"싱글톤이 자체 정보를 관리하고 있고, 다른 오브젝트의 데이터에 침범하지 않는다"
+"면, 넓은 범위의 작업을 다루기 위해 \"시스템\" 클래스를 만드는 것이 좋은 방법"
+"입니다. 예를 들어 타겟팅 시스템, 퀘스트 시스템, 아니면 대화 상자 시스템이 대"
+"표적인 싱글톤 구현 사례입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""

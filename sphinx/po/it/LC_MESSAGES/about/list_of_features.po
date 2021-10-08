@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,6 @@ msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:37
-#, fuzzy
 msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
@@ -645,7 +644,6 @@ msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr "*GLES3:* Occlusione ambientale dello spazio dello schermo."
 
 #: ../../docs/about/list_of_features.rst:225
-#, fuzzy
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
@@ -707,7 +705,6 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antialiasing multi-campione (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:245
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Antialiasing approssimativo veloce (FXAA)."
 
@@ -772,7 +769,6 @@ msgid "Ragdolls."
 msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:279
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr "Forme integrate: cuboide, sfera, capsula, cilindro."
 
@@ -801,8 +797,9 @@ msgstr ""
 "*3D:* Shader personalizzati per vertici, frammenti, illuminazione e cielo."
 
 #: ../../docs/about/list_of_features.rst:288
+#, fuzzy
 msgid ""
-"Text-based shaders using a `shader language inspired by GLSL "
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
 "Shader basati su testo che utilizzano un `linguaggio shader ispirato a GLSL "
@@ -875,9 +872,8 @@ msgstr ""
 "asincrone o utilizzare più core del processore."
 
 #: ../../docs/about/list_of_features.rst:312
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -993,7 +989,6 @@ msgstr ""
 "telecamera in 3D."
 
 #: ../../docs/about/list_of_features.rst:354
-#, fuzzy
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
@@ -1152,7 +1147,6 @@ msgid "Pen/tablet input with pressure support."
 msgstr "Input penna/tablet con supporto della pressione."
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
@@ -1699,10 +1693,11 @@ msgstr ""
 "<doc_ways_to_contribute>``."
 
 #: ../../docs/about/list_of_features.rst:589
+#, fuzzy
 msgid ""
-"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
-"documents features that have been agreed upon and may be implemented in "
-"future Godot releases."
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
 msgstr ""
 "La ` tabella di marcia <https://github.com/godotengine/godot-roadmap>`__ "
 "repository di documenti delle caratteristiche che sono state concordate e "

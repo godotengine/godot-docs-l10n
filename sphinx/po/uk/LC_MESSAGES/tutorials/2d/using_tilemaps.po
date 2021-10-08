@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Карта плитки - це сітка плиток, яка використовується для створення макета "
 "гри. Використання вузлів :ref:`TileMap (Карта Плиток)<class_TileMap>` для "
-"проектування ваших рівнів має кілька переваг . По-перше, вони дають "
+"проєктування ваших рівнів має кілька переваг . По-перше, вони дають "
 "можливість намалювати макет, \"намалювавши\" плитки на сітці, що набагато "
 "швидше, ніж розміщення окремих вузлів :ref:`Sprite <class_Sprite>` по "
 "одному. По-друге, вони дозволяють створювати набагато більші рівні, оскільки "
@@ -65,7 +65,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
-"Створіть новий проект і помістіть вищевказане зображення в папку проекта."
+"Створіть новий проєкт і помістіть вищевказане зображення в папку проєкта."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -641,8 +641,9 @@ msgid "3x3"
 msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
+#, fuzzy
 msgid ""
-"In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
+"In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
 "У режимі 3x3 кожна бітова маска містить 9 бітів (4 кути, 4 ребра, 1 центр)"
 
@@ -720,14 +721,16 @@ msgid "Tips and tricks"
 msgstr "Поради та підказки"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:343
+#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
-"Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
+"Settings and enable **Use Gpu Pixel Snap** in the **Rendering > 2d > "
+"Snapping** section."
 msgstr ""
 "Якщо ви використовуєте :ref:`Camera2D<class_Camera2D>` для прокрутки свого "
 "рівня, ви можете помітити рядки, що з’являються між вашими плитками. Щоб "
-"виправити це, відкрийте **Параметри проекта** та ввімкніть **Use Pixel "
+"виправити це, відкрийте **Параметри проєкта** та ввімкніть **Use Pixel "
 "Snap** *(Використовувати прив'язку пікселів)* у розділі **Rendering/"
 "Quality** *(Візуалізація/Якість)*."
 

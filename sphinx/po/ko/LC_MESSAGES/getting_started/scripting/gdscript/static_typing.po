@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,7 +205,7 @@ msgid ""
 "automatically from the assigned value. But you can still do so to make the "
 "intent of your code clearer."
 msgstr ""
-"상수에 대해서는 Godot이 자동으로 대입된 값으로부터 타입을 인식하기 때문에 타"
+"상수에 대해서는 Godot가 자동으로 대입된 값으로부터 타입을 인식하기 때문에 타"
 "입 힌트를 쓸 필요가 없습니다. 하지만 여전히 코드의 의도를 명확히 하려면 그렇"
 "게 하는게 좋습니다."
 
@@ -263,7 +263,7 @@ msgid ""
 msgstr ""
 "게임에 ``Area2D를 확장하는`` 적이 있다고 상상합시다. 거기에 "
 "``PlayerController`` 스크립트가 붙은 ``KinematicBody2D``, 즉 플레이어가 충돌"
-"해야 합니다. ``on_body_entered`` 시그널을 사용하면 충돌을 감지할 수 있습니"
+"해야 합니다. ``on_body_entered`` 시그널을 사용하면 콜리전을 감지할 수 있습니"
 "다. 타입형 코드로, 감지한 바디는 일반 ``PhysicsBody2D``\\ 이 될 것이며, "
 "``_on_body_entered`` 콜백의 ``PlayerController``\\ 가 아닐 것입니다."
 
@@ -304,7 +304,6 @@ msgid "Safe lines"
 msgstr "안전 라인"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
-#, fuzzy
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -312,13 +311,13 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
-"안전 라인을 보장하기 위해 형 변환을 사용할 수도 있습니다. 안전 라인은 애매모"
-"호한 코드가 형안전한지 알려주는 Godot 3.1에서 새로 추가된 도구입니다. 정적 타"
-"입과 동적 타입을 섞어서 대입시킬 수 있기 때문에 Godot은 런타임에 오류가 발생"
-"할 지에 대한 여부를 판명할 충분한 정보가 없습니다."
+"안전 라인을 보장하기 위해 타입 변환을 사용할 수도 있습니다. 안전 라인은 "
+"Godot 3.1에 새로 추가된 도구인데, 애매모호한 코드가 타입 안전한지 알려줍니"
+"다. 스크립트에서 정적 타입과 동적 타입을 섞어서 사용할 수 있기 때문에 Godot"
+"가 이 명령이 런타임에 오류가 발생시킬지 판단하기에는 정보가 충분하지 않습니"
+"다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
-#, fuzzy
 msgid ""
 "This happens when you get a child node. Let's take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -327,12 +326,12 @@ msgid ""
 "classes it extends. With dynamic GDScript, you also don't care about the "
 "node's type as long as it has the methods you need to call."
 msgstr ""
-"이것은 자식 노드를 얻을 때 발생합니다. 타이머를 예로 들어봅니다: 동적 코드를 "
-"통해, ``$Timer``\\ 로 노드를 얻을 수 있습니다. GDScript는 `덕 타이핑 "
-"<https://stackoverflow.com/a/4205163/8125343>`__\\ 을 지원하기 때문에, 타이머"
-"가 ``Timer`` 타입에 속해 있다면, ``Node``\\ 와 ``Object``\\ 에도 속해있는 것"
-"입니다, 확장된 두 클래스이죠. 동적 GDScript로, 또한 호출하는데 필요한 메서드"
-"를 가진다면, 노드 타입에 대해 걱정하지 않아도 됩니다."
+"자손 노드를 얻을 때 이런 일이 발생합니다. 타이머를 예로 들어봅시다: 동적 코드"
+"를 통해, ``$Timer`` 로 노드를 얻을 수 있습니다. GDScript는 `덕 타이핑 "
+"<https://stackoverflow.com/a/4205163/8125343>`__ 을 지원하기 때문에, 타이머"
+"가 ``Timer`` 타입에 속해 있다면, ``Node`` 와 ``Object`` 에도 속해있는 것입니"
+"다, 확장된 두 클래스이죠. 동적 GDScript를 사용하면 호출하는데 필요한 메서드"
+"만 가지고 있는 한 노드 타입에 대해 걱정하지 않아도 됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
 msgid ""
@@ -341,14 +340,14 @@ msgid ""
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
-"노드를 얻을 때 예상하는 타입을 Godot에게 말하기 위해 캐스팅을 사용할 수 있습"
-"니다: ``($Timer as Timer)``,  ``($Player as KinematicBody2D)`` 등. Godot는 타"
-"입이 작동하는지 확인하고, 작동한다면 스크립트 편집기 왼쪽의 줄 숫자가 초록색"
-"으로 바뀔 것입니다."
+"노드를 얻을 때 예상되는 타입을 Godot에게 알리기 위해 캐스팅을 사용할 수 있습"
+"니다: ``($Timer as Timer)``, ``($Player as KinematicBody2D)``\\ 등. Godot가 "
+"타입이 올바른지 확인한 다음, 만약 올바르다면 스크립트 편집기 왼쪽의 줄 숫자"
+"가 초록색으로 바뀔 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
-msgstr ""
+msgstr "비안전 라인(line 7) vs 안전 라인(line 6 and 8)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
 msgid ""
@@ -384,7 +383,6 @@ msgid "Typed or dynamic: stick to one style"
 msgstr "타입형 혹은 동적: 하나의 스타일을 고수하기"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
-#, fuzzy
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But "
 "it's recommended to stick to either style for consistency in your codebase, "
@@ -392,113 +390,106 @@ msgid ""
 "the same guidelines, and faster to read and understand other people's code."
 msgstr ""
 "타입형 GDScript와 동적 GDScript는 같은 프로젝트에 공존할 수 있습니다. 하지만 "
-"코드 베이스의 일관성과 동료들을 위해, 저는 하나의 스타일을 고수하기를 추천합"
-"니다. 같은 가이드라인을 따른다면 모두가 함께 일하기 더 쉽고, 다른 사람의 코드"
-"를 읽고 이해하는데 더 빠를 것입니다."
+"코드베이스의 일관성과 동료들을 위해, 둘 중 하나의 스타일을 고수하는 것을 권장"
+"합니다. 같은 가이드라인을 따른다면 모두가 함께 일하기 더 쉽고, 다른 사람의 코"
+"드를 읽고 이해하는데 더 빠를 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
-#, fuzzy
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
 "discussed above. Here's an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
-"타입형 코드는 조금 더 쓸 것이 많지만, 위에서 말한대로 이득을 얻습니다. 여기 "
-"같은, 빈 스크립트 예제가 있습니다, 동적 스타일에서는 이렇습니다:"
+"타입형 코드는 조금 더 써야 할 것이 많지만, 위에서 말한 이득을 얻을 수 있습니"
+"다. 여기 같은, 빈 스크립트 예제가 있습니다, 동적 스타일에서는 이렇습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:272
 msgid "And with static typing:"
 msgstr "그리고 정적 타입형에서는 이렇습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
-#, fuzzy
 msgid ""
 "As you can see, you can also use types with the engine's virtual methods. "
 "Signal callbacks, like any methods, can also use types. Here's a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
-"보시다시피, 엔진의 가상 메서드로 타입형을 사용할 수도 있습니다. 메서드와 같"
-"은 시그널 콜백도 타입형을 사용할 수 있습니다. 이것이 동적 스타일에서 "
+"보시다시피, 엔진의 가상 메서드로 타입을 사용할 수도 있습니다. 시그널 콜백도 "
+"다른 메서드처럼 타입형을 사용할 수 있습니다. 동적 스타일에서 "
 "``body_entered`` 시그널입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:295
 msgid "And the same callback, with type hints:"
-msgstr "그리고 타입형 힌트를 쓴 같은 콜백입니다:"
+msgstr "그리고 타입 힌트를 쓴 같은 콜백입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
-#, fuzzy
 msgid ""
 "You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
-"자유롭게 바꿀 수 있습니다, 예를 들어 자체 타입을 지닌 ``CollisionObject2D``"
-"\\ 는 자동으로 매개변수를 캐스트합니다:"
+"예를 들어 ``CollisionObject2D`` 타입을 여러분만의 자체 타입으로 바꾸어 자동으"
+"로 매개변수를 캐스팅하도록 할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
-#, fuzzy
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it's "
 "anything else, like an ``Area2D``, or any node that doesn't extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
-"``bullet`` 변수는 여기서 ``CollisionObject2D``\\ 를 가질 수 있습니다 ,하지만 "
-"그것이 우리의 ``Bullet``\\ 이어야 합니다, 프로젝트에 생성한 노드 말이죠. "
-"``Area2D``\\ 나 ``Bullet``\\ 을 확장하지 않는 다른 노드라면, ``bullet`` 변수"
-"는 ``null``\\ 이 될 것입니다."
+"``bullet`` 변수는 어떤 ``CollisionObject2D`` 값이든 가질 수 있지만, 여기서는 "
+"이 변수가 우리의 프로젝트에서 만든 노드인 ``Bullet`` 임을 확실히 합니다. "
+"``Area2D`` 나 ``Bullet`` 을 확장하지 않는 다른 노드인 경우, ``bullet`` 변수"
+"는 ``null`` 이 될 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 msgid "Warning system"
 msgstr "경고 시스템(Warning system)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
-#, fuzzy
 msgid ""
 "Documentation about the GDScript warning system has been moved to :ref:"
 "`doc_gdscript_warning_system`."
-msgstr "내보내기에 관한 서술은 :ref:`doc_gdscript_exports`\\ 로 옮겨졌습니다."
+msgstr ""
+"GDScript의 경고 시스템에 대한 관한 문서는 :ref:`doc_gdscript_exports` 로 옮겨"
+"졌습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
-#, fuzzy
 msgid "Cases where you can't specify types"
 msgstr "타입을 지정할 수 없는 경우"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid ""
 "To wrap up this introduction, let's cover a few cases where you can't use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
-"이 소개를 마무리하며, 타입형 힌트를 사용할 수 없는 몇 몇 경우를 알아봅시다. "
-"밑의 모든 예제는 **오류를 유발합니다**."
+"이 소개를 마무리하며, 타입형 힌트를 사용할 수 없는 몇몇 경우를 알아봅시다. 밑"
+"의 모든 예제는 **오류를 유발합니다**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:332
-#, fuzzy
 msgid "You can't use Enums as types:"
-msgstr "열거형(Enum)을 타입으로 사용할 수 없습니다:"
+msgstr "열거형(Enum)은 타입으로 사용할 수 없습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
-#, fuzzy
 msgid ""
 "You can't specify the type of individual members in an array. This will give "
 "you an error:"
-msgstr "배열에서 각 멤버의 타입을 지정할 수 없습니다. 오류를 줄 것입니다:"
+msgstr ""
+"배열에서 각 멤버의 타입을 지정할 수 없습니다. 그렇게 할 경우 오류를 줄 것입니"
+"다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:346
-#, fuzzy
 msgid ""
 "You can't force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
 "``for`` 루프에서 타입의 할당을 강제할 수 없습니다, ``for`` 키워드 루프에서 "
-"각 요소는 이미 다른 타입을 갖고 있기 때문입니다. 따라서 작성할 수 **없습니다"
-"**:"
+"각 요소는 이미 다른 타입을 갖고 있기 때문입니다. 따라서 아래와 같은 코드는 작"
+"성할 수 **없습니다**:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
-#, fuzzy
 msgid "Two scripts can't depend on each other in a cyclic fashion:"
-msgstr "두 개의 스크립트가 주기적으로 서로에게 의지할 수 없습니다:"
+msgstr "두 개의 스크립트가 서로에게 의지하며 사이클을 만들 수 없습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
 msgid "Summary"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1111,9 +1111,8 @@ msgstr ""
 "Des valeurs par défaut peuvent également être attribuées aux uniforms :"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
-#, fuzzy
 msgid "Built-in variables"
-msgstr "Édition des variables"
+msgstr "Variables intégrées"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
 msgid ""
@@ -1123,21 +1122,24 @@ msgid ""
 "(``vertex``, ``fragment`` or ``light``). For a list of the build-in "
 "variables that are available, please see the corresponding pages:"
 msgstr ""
+"Un grand nombre de variables intégrées sont disponibles, comme ``UV``, "
+"``COLOR`` et ``VERTEX``. Les variables disponibles dépendent du type de "
+"shader (``spatial``, ``canvas_item`` ou ``particule``) et de la fonction "
+"utilisée (``vertex``, ``fragment`` ou ``light``). Pour une liste des "
+"variables intégrées qui sont disponibles, veuillez consulter les pages "
+"correspondantes :"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Shader Spatial <doc_spatial_shader>`"
+msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
-#, fuzzy
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
-msgstr ":ref:`canvas_item <doc_canvas_item_shader>` : Pour le rendu 2D."
+msgstr ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
-#, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`Shaders de particule <doc_particle_shader>`"
+msgstr ":ref:`Particle shaders <doc_particle_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "Built-in functions"

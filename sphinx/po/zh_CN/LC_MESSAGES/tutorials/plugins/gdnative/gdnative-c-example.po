@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,10 +100,11 @@ msgstr ""
 "Studio 2015或更高版本, 或者MinGW-w64."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
+#, fuzzy
 msgid ""
-"A Git clone of the `godot_headers repository <https://github.com/godotengine/"
-"godot_headers>`_: these are the C headers for Godot's public API exposed to "
-"GDNative."
+"A Git clone of the `godot-headers repository <https://github.com/godotengine/"
+"godot-headers.git>`_: these are the C headers for Godot's public API exposed "
+"to GDNative."
 msgstr ""
 "`godot_headers repository <https://github.com/godotengine/godot_headers>` _: "
 "这些是暴露在GDNative中的Godot公共API的C头文件."
@@ -121,16 +122,18 @@ msgid "This will download the required files into that folder."
 msgstr "这会将所需文件下载到该文件夹中."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
+#, fuzzy
 msgid ""
-"If you plan to use Git for your GDNative project, you can also add "
-"``godot_headers`` as a Git submodule."
+"If you plan to use Git for your GDNative project, you can also add ``godot-"
+"headers`` as a Git submodule."
 msgstr ""
 "如果你打算在GDNative项目中使用Git, 你也可以添加 ``godot_headers`` 作为Git子模"
 "块."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
+#, fuzzy
 msgid ""
-"The ``godot_headers`` repository has different branches. As Godot evolves, "
+"The ``godot-headers`` repository has different branches. As Godot evolves, "
 "so does GDNative. While we try to preserve compatibility between version, "
 "you should always build your GDNative module against headers matching the "
 "Godot stable branch (e.g. ``3.1``) and ideally actual release (e.g. ``3.1.1-"
@@ -144,8 +147,9 @@ msgstr ""
 "建的GDNative模块 *可能* 会在新版本的引擎上运行, 但反之则不行."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
+#, fuzzy
 msgid ""
-"The ``master`` branch of the ``godot_headers`` repository is kept in line "
+"The ``master`` branch of the ``godot-headers`` repository is kept in line "
 "with the ``master`` branch of Godot and thus contains the GDNative class and "
 "structure definitions that will work with the latest development builds."
 msgstr ""
@@ -153,10 +157,11 @@ msgstr ""
 "此包含了GDNative类和结构定义, 可以在最新的开发版本中运行."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
+#, fuzzy
 msgid ""
 "If you want to write a GDNative module for a stable version of Godot, look "
 "at the available Git tags (with ``git tags``) for the one matching your "
-"engine version. In the ``godot_headers`` repository, such tags are prefixed "
+"engine version. In the ``godot-headers`` repository, such tags are prefixed "
 "with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for "
 "use with Godot 3.1.1. In your cloned repository, you can do:"
 msgstr ""
@@ -196,9 +201,10 @@ msgstr ""
 "让我们从编写我们的主代码开始. 最终, 我们希望有一个文件结构, 看起来像这样:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
+#, fuzzy
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
-"``godot_headers`` Git clone. This will create the ``simple`` folder and "
+"``godot-headers`` Git clone. This will create the ``simple`` folder and "
 "``project.godot`` file. Then manually create a ``src`` folder alongside the "
 "``simple`` folder, and a ``bin`` subfolder in the ``simple`` folder."
 msgstr ""
@@ -339,6 +345,7 @@ msgstr ""
 "函数和析构函数的描述."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:250
+#, fuzzy
 msgid ""
 "We then tell Godot about our methods (well our one method in this case), by "
 "calling ``nativescript_register_method`` for each method of our class. In "
@@ -346,7 +353,7 @@ msgid ""
 "handle pointer. The second is again the name of the object class we're "
 "registering. The third is the name of our function as it will be known to "
 "GDScript. The fourth is our attributes setting (see "
-"``godot_method_rpc_mode`` enum in ``godot_headers/nativescript/"
+"``godot_method_rpc_mode`` enum in ``godot-headers/nativescript/"
 "godot_nativescript.h`` for possible values). The fifth and final parameter "
 "is a description of which function to call when the method gets called."
 msgstr ""
@@ -462,7 +469,7 @@ msgstr "这就是我们模块的完整源代码."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:349
 msgid "Compiling"
-msgstr "开始编译"
+msgstr "编译"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:351
 msgid ""

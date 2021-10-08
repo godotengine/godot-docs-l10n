@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
-msgstr ""
+msgstr "Exportér Blender ESCN"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"Tato kapitola se týká zásuvného modulu pro Blender s názvem \"Godot Blender "
+"Exporter\", který si můžete stáhnout zde: https://github.com/godotengine/"
+"godot-blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
 msgid ""
@@ -34,14 +37,17 @@ msgid ""
 "format called ESCN, which is similar to TSCN (text format) but will be "
 "imported as binary SCN for performance."
 msgstr ""
+"Tento zásuvný modul lze použít k exportu scén Blenderu ve formátu scény "
+"specifickém pro Godot, který se nazývá ESCN a je podobný TSCN (textový "
+"formát), ale kvůli výkonu se importuje jako binární SCN."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
-msgstr ""
+msgstr "Podrobnosti o exportu"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "Zakázání konkrétních objektů"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -49,16 +55,22 @@ msgid ""
 "for baking). An object will not be exported if it is not rendered in the "
 "scene. This can be set in the outliner:"
 msgstr ""
+"Někdy nechcete některé objekty exportovat (např. modely ve vysokém rozlišení "
+"používané pro baking (metoda předpočítaného renderingu)). Objekt nebude "
+"exportován, pokud není ve scéně vykreslen. To lze nastavit v nástroji "
+"outliner:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Objekty skryté ve výřesu budou exportovány, ale ve scéně Godot skryté "
+"zůstanou."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"
-msgstr ""
+msgstr "Integrace vícero sestavení"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 msgid ""
@@ -69,3 +81,9 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory are present in the Godot-Blender-exporter repository."
 msgstr ""
+"Pokud máte stovky souborů modelů, nechcete, aby vaši umělci ztráceli čas "
+"ručním exportem blend souborů . Pro boj s tímto problémem poskytuje exportér "
+"funkci pythonu ``io_scene_godot.export(out_file_path)``, kterou lze zavolat "
+"pro export souboru. To umožňuje snadnou integraci s jinými systémy "
+"sestavení. Příklad Makefile a pythonovského skriptu, který exportuje všechny "
+"směsi v adresáři, se nachází v repozitáři Godot-Blender-exporter."

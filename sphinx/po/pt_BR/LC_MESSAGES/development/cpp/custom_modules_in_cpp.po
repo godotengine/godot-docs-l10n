@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,6 +152,8 @@ msgid ""
 "With multiple sources, you can also add each file individually to a Python "
 "string list:"
 msgstr ""
+"Com múltiplas fontes, você também pode adicionar cada arquivo "
+"individualmente à uma lista de strings Python:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:162
 msgid ""
@@ -178,6 +180,8 @@ msgid ""
 "And finally, the configuration file for the module, this is a simple python "
 "script that must be named ``config.py``:"
 msgstr ""
+"E finalmente, o arquivo de configuração para o módulo, é um simples script "
+"python que deve ser nomeado ``config.py``:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:205
 msgid ""
@@ -190,6 +194,8 @@ msgid ""
 "And that's it. Hope it was not too complex! Your module should look like "
 "this:"
 msgstr ""
+"E é isso. Espero que não tenha sido complexo demais! Seu módulo deveria ser "
+"parecer assim:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:220
 msgid ""
@@ -197,6 +203,9 @@ msgid ""
 "for every platform (instructions in the previous sections), your module will "
 "be included."
 msgstr ""
+"Você pode zipar (compactar em ZIP) e compartilhar o módulo com todo mundo. "
+"Quando gerando para cada plataforma (instruções na seção anterior), seu "
+"módulo deve ser incluído."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:224
 msgid ""
@@ -207,7 +216,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:229
 msgid "Using the module"
-msgstr ""
+msgstr "Usando o módulo"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:231
 msgid "You can now use your newly created module from any script:"
@@ -302,19 +311,25 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:310
 msgid "Improving the build system for development"
-msgstr ""
+msgstr "Melhorando o sistema de build para desenvolvimento"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:312
+#, fuzzy
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
+"Até aqui nós definimos um limpo e simples SCub que nos permite adicionar "
+"fonte de nosso novo módulo como parte do binário da Godot."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:315
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
+"Essa estratégia estática é ótima quando nós queremos gerar um versão de "
+"lançamento de nosso jogo dado que queremos todos os módulos em um binário "
+"único."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:318
 msgid ""
@@ -329,6 +344,9 @@ msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
 msgstr ""
+"A solução para evitar tal custo é gerar build de nossos próprios módulos "
+"como uma biblioteca compartilhada que será dinamicamente carregada quando "
+"iniciar o binário de nosso jogo."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:364
 msgid ""
@@ -366,7 +384,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
 msgid "Writing custom documentation"
-msgstr ""
+msgstr "Escrevendo documentação personalizada"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
 msgid ""
@@ -546,7 +564,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:549
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
-msgstr ""
+msgstr "Use macro ``GDCLASS`` para herança, então Godot pode embrulhá-la"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:550
 msgid ""

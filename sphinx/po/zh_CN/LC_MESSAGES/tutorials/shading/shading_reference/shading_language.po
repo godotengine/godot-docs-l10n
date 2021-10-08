@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -741,8 +741,8 @@ msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
-"当导出 GLES2 项目到 HTML5时, WebGL 1.0将被使用. WebGL 1.0不支持动态循环, 所以"
-"使用这些的着色器将不会工作."
+"导出 GLES2 项目到 HTML5 时，会使用 WebGL 1.0。WebGL 1.0 不支持动态循环，所以"
+"使用这一特性的着色器会失效。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:381
 msgid "Discarding"
@@ -1021,9 +1021,8 @@ msgid "Uniforms can also be assigned default values:"
 msgstr "Uniforms也可以分配默认值:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
-#, fuzzy
 msgid "Built-in variables"
-msgstr "编辑变量"
+msgstr "内置变量"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
 msgid ""
@@ -1033,21 +1032,22 @@ msgid ""
 "(``vertex``, ``fragment`` or ``light``). For a list of the build-in "
 "variables that are available, please see the corresponding pages:"
 msgstr ""
+"有大量类似 ``UV`` 、 ``COLOR`` 、 ``VERTEX`` 的内置变量可用。具体有哪些变量可"
+"用取决于着色器的类型（ ``spatial`` 、 ``canvas_item`` 以及 ``particle`` ）和"
+"所在的函数（ ``vertex`` 、 ``fragment`` 以及 ``light`` ）。可用的内置变量列表"
+"见对应的页面："
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
-#, fuzzy
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
-msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: 用于2D渲染."
+msgstr ":ref:`画布物品着色器 <doc_canvas_item_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
-#, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`粒子着色器 <doc_particle_shader>`"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "Built-in functions"
@@ -1077,7 +1077,7 @@ msgstr "函数"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
 msgid "vec_type **radians** (vec_type degrees)"
-msgstr "vec_type **弧度** (vec_type 度)"
+msgstr "vec_type **radians** (vec_type degrees度)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
 msgid "Convert degrees to radians"
@@ -1085,7 +1085,7 @@ msgstr "将度数转换为弧度"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
 msgid "vec_type **degrees** (vec_type radians)"
-msgstr "vec_type **度** ( vec_type 弧度)"
+msgstr "vec_type **degrees** ( vec_type radians弧度)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
 msgid "Convert radians to degrees"
@@ -1505,7 +1505,7 @@ msgstr "点乘"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "vec3 **cross** (vec3 a, vec3 b)"
-msgstr "vec3 **叉乘(cross)** (vec3 a, vec3 b)"
+msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "Cross product"
@@ -1513,7 +1513,7 @@ msgstr "叉乘"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "vec_type **normalize** (vec_type x)"
-msgstr "vec_type **归一化** (vec_type x)"
+msgstr "vec_type **normalize** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "Normalize to unit length"
@@ -1561,7 +1561,7 @@ msgstr "矩阵外积"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "mat_type **transpose** (mat_type m)"
-msgstr "mat_type **转置** (mat_type m)"
+msgstr "mat_type **transpose** (mat_type m)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "Transpose matrix"
@@ -1577,7 +1577,7 @@ msgstr "矩阵行列式"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "mat_type **inverse** (mat_type m)"
-msgstr "mat_type **取反** (mat_type m)"
+msgstr "mat_type **inverse** (mat_type m)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "Inverse matrix"
@@ -1633,7 +1633,7 @@ msgstr "Bool vector 对比 != int/uint/float vectors"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
 msgid "bool **any** (bvec_type x)"
-msgstr "bool **任意** (bvec_type x)"
+msgstr "bool **any** (bvec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
 msgid "Any component is ``true``"
@@ -1641,7 +1641,7 @@ msgstr "任何组件都是 ``true``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "bool **all** (bvec_type x)"
-msgstr "bool **全部** (bvec_type x)"
+msgstr "bool **all** (bvec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "All components are ``true``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -612,27 +612,27 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid ""
-"**Additive** is the strongest one, as it just adds the glow effect over the "
+"**Additive** is the strongest one, as it only adds the glow effect over the "
 "image with no blending involved. In general, it's too strong to be used, but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid ""
-"**Screen** is the default one. It ensures glow never brights more than "
-"itself and works great as an all around."
+"**Screen** ensures glow never brightens more than itself and it works great "
+"as an all around."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
 msgid ""
-"**Softlight** is the weakest one, producing only a subtle color disturbance "
-"around the objects. This mode works best on dark scenes."
+"**Softlight** is the default and weakest one, producing only a subtle color "
+"disturbance around the objects. This mode works best on dark scenes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
-"just shows the glow effect without the image below."
+"only shows the glow effect without the image below."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:328

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:4
-#, fuzzy
 msgid "Using the ArrayMesh"
-msgstr "Массив"
+msgstr "Использование ArrayMesh"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:6
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`"
 msgstr ""
+"В этом учебнике будут представлены основы использования :ref:`ArrayMesh "
+"<class_arraymesh>`"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:8
 msgid ""
@@ -34,6 +35,10 @@ msgid ""
 "<class_ArrayMesh_method_add_surface_from_arrays>`, which takes up to four "
 "parameters. The first two are required, while the second two are optional."
 msgstr ""
+"Для этого мы будем использовать функцию :ref:`add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`, которая принимает до "
+"четырех параметров. Первые два являются обязательными, а вторые два - "
+"необязательными."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:11
 msgid ""
@@ -42,6 +47,10 @@ msgid ""
 "is triangles, lines, points, etc. A complete list can be found under the :"
 "ref:`Mesh <class_mesh>` class reference page."
 msgstr ""
+"Первый - это ``PrimitiveType'', это концепция OpenGL, которая указывает GPU, "
+"как расположить примитив на основе заданных вершин, будь то треугольники, "
+"линии, точки и т. д. Полный список можно найти на странице справочника "
+"класса :ref:`Mesh <class_mesh>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:16
 msgid ""
@@ -50,10 +59,14 @@ msgid ""
 "stores a ``Pool**Array`` (e.g. PoolVector3Array, PoolIntArray, etc.) for "
 "each type of information."
 msgstr ""
+"Второй - это собственно массив, в котором хранится информация о сетке. "
+"Массив представляет собой обычный массив Godot, который строится с пустыми "
+"скобками ``[]``. Он хранит ``Pool**Array`` (например, PoolVector3Array, "
+"PoolIntArray и т.д.) для каждого типа информации."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:20
 msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr ""
+msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array или PoolVector2Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:21
 msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
@@ -197,6 +210,12 @@ msgid ""
 "are having trouble understanding it or want to learn more about procedural "
 "geometry in general, you can use any tutorial that you find online."
 msgstr ""
+"Здесь приведен пример кода для генерации сферы. Хотя код представлен на "
+"GDScript, в подходе к генерации сферы нет ничего специфичного для Godot. Эта "
+"реализация не имеет ничего общего с ArrayMeshes и является просто общим "
+"подходом к генерации сферы. Если у вас возникли трудности с пониманием или "
+"вы хотите узнать больше о процедурной геометрии в целом, вы можете "
+"воспользоваться любым учебником, который найдете в Интернете."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:203
 msgid "Combined with the code above, this code will generate a sphere."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,6 +99,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Headless Linux and macOS servers "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -620,6 +622,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Volitelný debanding pro zamezení barevného proužkování (účinné při "
+"zapnutém vykreslování HDR)."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
@@ -769,8 +773,9 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Vlastní vertex , fragmentové, světelné shadery a shadery oblohy."
 
 #: ../../docs/about/list_of_features.rst:288
+#, fuzzy
 msgid ""
-"Text-based shaders using a `shader language inspired by GLSL "
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
 "Textové shadery používající `shader jazyk inspirovaný GLSL "
@@ -841,9 +846,8 @@ msgstr ""
 "akcí nebo k využití více jader procesorů."
 
 #: ../../docs/about/list_of_features.rst:312
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C #: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C #: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -955,6 +959,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Zvukový vstup pro záznam mikrofonů s přístupem v reálném čase pomocí třídy "
+"AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "MIDI input."
@@ -1010,7 +1016,7 @@ msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "*3D scenes:*"
@@ -1107,6 +1113,8 @@ msgstr "Vstup pera / tabletu s tlakovou podporou."
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
+"V systému Android je k dispozici také podpora vstupu z gamepadu, klávesnice "
+"a myši."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Navigation"
@@ -1288,7 +1296,7 @@ msgstr "Podpora reklam pomocí modulů třetích stran."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Podpora vkládání dílčích pohledů v systému Android."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "XR support (AR and VR)"
@@ -1625,10 +1633,11 @@ msgstr ""
 "Otevřený proces vývoje s :ref:`příspěvky vítány <doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:589
+#, fuzzy
 msgid ""
-"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
-"documents features that have been agreed upon and may be implemented in "
-"future Godot releases."
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
 msgstr ""
 "`Road mapa <https://github.com/godotengine/godot-roadmap>`_ úložiště "
 "dokumentuje funkce, které již byly dohodnuty a mohou být implementovány v "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr "번역 가져오기"
+msgstr "번역 불러오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
@@ -98,7 +98,7 @@ msgid ""
 "Byte_order_mark>`__."
 msgstr ""
 "작품을 완성하고 번역에 효율적인 지원을 하기 위해, Godot는 CSV 파일을 읽을 수 "
-"있는 특수 가져오기를 갖고 있습니다. 모든 스프레드시트 편집기는 (Libreoffice, "
+"있는 특수 임포터를 갖고 있습니다. 모든 스프레드시트 편집기는 (Libreoffice, "
 "Microsoft Office, Google Docs 등이 있죠) 이 형식으로 내보낼 수 있습니다, 따라"
 "서 필요한 것은 파일이 특별한 배열로 되어야 하는 것입니다. CSV 파일은 UTP-8 인"
 "코딩으로 저장되어야 하며 다음과 같은 형식이어야 합니다:"
@@ -265,15 +265,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:106
 msgid "CSV importer"
-msgstr "CSV 가져오기"
+msgstr "CSV 임포터"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:108
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
-"Godot은 CSV 파일을 기본적으로 번역을 취급합니다. 파일을 가져오고 옆에 하나 이"
-"상의 압축된 번역 리소스 파일을 생성합니다."
+"Godot는 기본값으로 CSV 파일들을 번역 파일로 취급합니다. 그것들을 불러오면 옆"
+"에 하나 이상의 압축된 번역 리소스 파일을 생성합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:111
 msgid ""
@@ -281,9 +281,9 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
-"가져오기는 또한 게임을 실행할 때 불러올 번역 목록에 번역을 추가할 것입니다, "
-"project.godot (혹은 프로젝트 설정)에서 지정됩니다. Godot는 런타임에 번역을 불"
-"러오거나 삭제할 수 있도록 합니다."
+"불러오기는 또한 게임을 실행할 때 project.godot (혹은 프로젝트 설정)에 명시된 "
+"불러올 번역 목록에 번역을 추가할 것입니다. Godot는 런타임에 번역을 로드하거"
+"나 제거할 수 있도록 합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:116
 msgid ""

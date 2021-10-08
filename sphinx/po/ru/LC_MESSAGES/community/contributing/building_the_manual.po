@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,13 @@ msgid ""
 "Sphinx docs engine. This allows you to have local HTML files and build the "
 "documentation as a PDF, EPUB, or LaTeX file, for example."
 msgstr ""
+"На этой странице объясняется, как создать локальную копию руководства Godot "
+"с помощью движка Sphinx docs. Это позволяет вам иметь локальные HTML файлы и "
+"создавать документацию, например, в виде PDF, EPUB или LaTeX файла."
 
 #: ../../docs/community/contributing/building_the_manual.rst:10
 msgid "To get started, you need to:"
-msgstr ""
+msgstr "Чтобы начать, вам необходимо:"
 
 #: ../../docs/community/contributing/building_the_manual.rst:12
 #, fuzzy
@@ -44,15 +47,16 @@ msgstr ""
 "projects>`_."
 
 #: ../../docs/community/contributing/building_the_manual.rst:13
-#, fuzzy
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
-msgstr "`Python 2.7+ или Python 3.5+ <https://www.python.org/downloads/>`__."
+msgstr "Установите `Sphinx <https://www.sphinx-doc.org/>`__"
 
 #: ../../docs/community/contributing/building_the_manual.rst:14
 msgid ""
 "To build the docs as HTML files, install the `readthedocs.org theme <https://"
 "github.com/snide/sphinx_rtd_theme>`__."
 msgstr ""
+"Чтобы собирать документы в виде HTML-файлов, установите тему `readthedocs."
+"org <https://github.com/snide/sphinx_rtd_theme>`__."
 
 #: ../../docs/community/contributing/building_the_manual.rst:16
 #, fuzzy
@@ -71,77 +75,103 @@ msgid ""
 "python.org/>`__. Ensure that you install and use Python 3. Here are the "
 "commands to clone the repository and then install all requirements."
 msgstr ""
+"Мы рекомендуем использовать `pip <https://pip.pypa.io>`__, менеджер пакетов "
+"Python для установки всех этих инструментов. Он поставляется с "
+"предустановленным `Python <https://www.python.org/>`__. Убедитесь, что вы "
+"установили и используете Python 3. Вот команды для клонирования репозитория "
+"и последующей установки всех зависимостей."
 
-#: ../../docs/community/contributing/building_the_manual.rst:29
+#: ../../docs/community/contributing/building_the_manual.rst:24
 msgid ""
-"On Linux distributions, you may need to write ``pip3`` instead of ``pip`` "
-"because you generally have both Python 2 and 3 installed on your system. "
-"Alternatively, you can explicitly ask Python 3 to execute its version of pip "
-"as a module like so: ``python3 -m pip``."
+"You may need to write ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) "
+"instead of ``pip3``. If both approaches fail, `check that you have pip3 "
+"installed <https://pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:34
+#: ../../docs/community/contributing/building_the_manual.rst:33
 msgid ""
 "With the programs installed, you can build the HTML documentation from the "
 "root folder of this repository with the following command:"
 msgstr ""
+"Если программы установлены, вы можете собрать HTML-документацию из корневой "
+"папки этого хранилища с помощью следующей команды:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:45
+#: ../../docs/community/contributing/building_the_manual.rst:44
 #, fuzzy
 msgid "If you run into errors, you may try the following command:"
 msgstr "Чтобы клонировать ваш форк из GitHub, используйте следующую команду:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:51
+#: ../../docs/community/contributing/building_the_manual.rst:50
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
 "swapping, which slows it down. If you have at least 16 GB of RAM, you can "
 "speed up compilation by running:"
 msgstr ""
+"Сборка документации требует не менее 8 ГБ оперативной памяти для работы без "
+"подкачки дисков, что замедляет ее. Если у вас не менее 16 ГБ оперативной "
+"памяти, вы можете ускорить компиляцию, выполнив:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:63
+#: ../../docs/community/contributing/building_the_manual.rst:62
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files."
 msgstr ""
+"Компиляция займет некоторое время, так как папка ``classes/`` содержит сотни "
+"файлов."
 
-#: ../../docs/community/contributing/building_the_manual.rst:66
+#: ../../docs/community/contributing/building_the_manual.rst:65
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
 msgstr ""
+"Затем вы можете просмотреть документацию, открыв ``_build/html/index.html`` "
+"в своем веб-браузере."
 
-#: ../../docs/community/contributing/building_the_manual.rst:69
+#: ../../docs/community/contributing/building_the_manual.rst:68
 msgid ""
 "In case you of a ``MemoryError`` or ``EOFError``, you can remove the "
 "``classes/`` folder and run ``make`` again. This will drop the class "
 "references from the final HTML documentation but will keep the rest intact."
 msgstr ""
+"В случае возникновения ``MemoryError`` или ``EOFError``, вы можете удалить "
+"папку ``classes/`` и запустить ``make`` снова. Это приведет к удалению "
+"ссылок на классы из конечной HTML-документации, но все остальное останется "
+"нетронутым."
 
-#: ../../docs/community/contributing/building_the_manual.rst:73
+#: ../../docs/community/contributing/building_the_manual.rst:72
 msgid ""
 "If you delete the ``classes/`` folder, do not use ``git add .`` when working "
 "on a pull request or the whole ``classes/`` folder will be removed when you "
 "commit. See `#3157 <https://github.com/godotengine/godot-docs/"
 "issues/3157>`__ for more detail."
 msgstr ""
+"Если вы удалите папку ``classes/``, не используйте ``git add .`` при работе "
+"над запросом на пулл-реквест, иначе вся папка ``classes/`` будет удалена при "
+"коммите. Более подробную информацию смотрите `#3157 <https://github.com/"
+"godotengine/godot-docs/issues/3157>`__ здесь."
 
-#: ../../docs/community/contributing/building_the_manual.rst:79
+#: ../../docs/community/contributing/building_the_manual.rst:78
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
 msgstr ""
+"Кроме того, вы можете собрать документацию, запустив программу sphinx-build "
+"вручную:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:87
+#: ../../docs/community/contributing/building_the_manual.rst:86
 msgid "Building with Sphinx and virtualenv"
-msgstr ""
+msgstr "Сборка с помощью Sphinx и virtualenv"
 
-#: ../../docs/community/contributing/building_the_manual.rst:89
+#: ../../docs/community/contributing/building_the_manual.rst:88
 msgid ""
 "If you want your Sphinx installation scoped to the project, you can install "
 "sphinx-build using virtualenv. To do so, run this command from this "
 "repository's root folder:"
 msgstr ""
+"Если вы хотите, чтобы установка Sphinx была привязана к проекту, вы можете "
+"установить sphinx-build с помощью virtualenv. Для этого выполните эту "
+"команду из корневой папки этого репозитория:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:99
+#: ../../docs/community/contributing/building_the_manual.rst:98
 msgid "Then, run ``make html`` as shown above."
-msgstr ""
+msgstr "Затем запустите ``make html``, как показано выше."

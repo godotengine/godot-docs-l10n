@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
-msgstr "Resolución de problemas"
+msgstr "Solución De Problemas"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
@@ -34,15 +34,15 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
-"Ver :ref: `doc_using_the_web_editor` para avisos específicos a la versión "
-"HTML5 del editor Godot."
+"Ver :ref: `doc_using_the_web_editor` para advertencias específicas de la "
+"versión HTML5 del editor Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
-"Todo lo que hago en el editor o en el manejador del proyecto aparece "
+"Todo lo que hago en el editor o en el administrador de proyectos aparece "
 "retrasado por un fotograma."
 
 #: ../../docs/about/troubleshooting.rst:16
@@ -97,9 +97,8 @@ msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
-"Si usatilizass una computadora que permite intercambiar entre tarjetas "
-"gráficas como NVIDIA Optimus, puedes usar la tarjeta gráfica dedicada para "
-"ejecutar Godot."
+"Si tú ordenador permite intercambiar entre tarjetas gráficas, como NVIDIA "
+"Optimus, puedes usar una tarjeta gráfica dedicada para ejecutar Godot."
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
@@ -126,6 +125,8 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Los globos de información de herramientas del Editor en los muelles "
+"Inspector y Nodo parpadean cuando son mostrados."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -134,11 +135,15 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Esto es un `known issue <https://github.com/godotengine/godot/"
+"issues/32990>`__ causado por la aplicación de terceros Stardock Fences en "
+"Windows. La única solución conocida es deshabilitar Stardock Fences mientras "
+"se utiliza Godot."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
-"El editor de Godot aparece congelado después de clickear la consola del "
+"El editor de Godot se congela después de hacer clic en la consola del "
 "sistema."
 
 #: ../../docs/about/troubleshooting.rst:56
@@ -166,8 +171,8 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
-"Un texto como \"NO DC\" aparece en el ricón superior izquierda de la "
-"ventanas del gestionador de projectos y del editor."
+"Un texto como \"NO DC\" aparece en la esquina superior izquierda de la "
+"ventana del administrador de proyectos y del editor."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
@@ -191,9 +196,9 @@ msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
-"Para desactivar esta superposición en Linux, abra ``nvidia-settings``, vaya "
-"a **X Screen 0 > OpenGL Settings** luego desmarque **Enable Graphics API "
-"Visual Indicator**."
+"Para desactivar esta superposición en Linux, abre ``nvidia-settings``, ve a "
+"**X Screen 0 > OpenGL Settings** y desmarca **Enable Graphics API Visual "
+"Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."

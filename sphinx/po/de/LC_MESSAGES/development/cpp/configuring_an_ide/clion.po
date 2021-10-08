@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,11 @@ msgid ""
 "`Android Studio <doc_configuring_an_ide_android_studio>` which can also be "
 "used by CLion."
 msgstr ""
+"CLion benötigt eine ``CMakeLists.txt`` Datei als Projektdatei, was für Godot "
+"problematisch ist, da es das SCons Buildsystem anstelle von CMake verwendet. "
+"Es gibt jedoch eine ``CMakeLists.txt``-Konfiguration für :ref:`Android "
+"Studio <doc_configuring_an_ide_android_studio>`, die auch von CLion "
+"verwendet werden kann."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:17
 msgid ""
@@ -48,6 +53,9 @@ msgid ""
 "project. If you've already opened another project, choose **File > Open** "
 "from the top menu."
 msgstr ""
+"Wählen Sie im Begrüßungsfenster von CLion die Option zum Importieren eines "
+"bestehenden Projekts. Wenn Sie bereits ein anderes Projekt geöffnet haben, "
+"wählen Sie **Datei > Öffnen** aus dem oberen Menü."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
 msgid ""
@@ -55,6 +63,10 @@ msgid ""
 "nativeSrcsConfigs`` (the ``CMakeLists.txt`` file is located there) and "
 "select it (but *not* the ``CMakeLists.txt`` file itself), then click **OK**."
 msgstr ""
+"Navigieren Sie zu ``<Godot-Stammverzeichnis>/platform/android/java/"
+"nativeSrcsConfigs`` (die Datei ``CMakeLists.txt`` befindet sich dort) und "
+"wählen Sie sie aus (aber *nicht* die Datei ``CMakeLists.txt`` selbst), dann "
+"klicken Sie **OK**."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
 msgid "The folder containing the ``CMakeLists.txt`` file."
@@ -72,6 +84,8 @@ msgid ""
 "Choose **Tools > CMake > Change Project Root** from the top menu and select "
 "the Godot root folder."
 msgstr ""
+"Wählen Sie **Tools > CMake > Change Project Root** aus dem oberen Menü und "
+"wählen Sie den Godot-Stammordner."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:40
 msgid ""
@@ -104,6 +118,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:52
 msgid "Run the compilation in debug mode by entering ``scons``."
 msgstr ""
+"Führen Sie die Kompilierung im Debug-Modus aus, indem Sie ``scons`` eingeben."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:54
 msgid ""
@@ -115,7 +130,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:56
 msgid "In CLion, go to **Run > Attach to Process...**"
-msgstr ""
+msgstr "Gehen Sie in CLion zu **Ausführen > An Prozess anhängen...**"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:61
 msgid "Find and Select godot in the list (or type the binary name/Process ID)"
@@ -123,7 +138,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:66
 msgid "You can now use the debugging tools from CLion."
-msgstr ""
+msgstr "Sie können nun die Debugging-Tools von CLion verwenden."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:70
 msgid ""

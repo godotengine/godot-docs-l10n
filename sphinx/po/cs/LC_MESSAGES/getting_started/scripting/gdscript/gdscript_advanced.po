@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: Úvod do dynamických jazyků"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 msgid "About"
@@ -31,66 +31,71 @@ msgid ""
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"Tento návod má sloužit jako stručný návod, jak efektivněji používat "
+"GDScript. Zaměřuje se na běžné případy specifické pro tento jazyk, ale "
+"obsahuje také mnoho informací o dynamicky typovaných jazycích."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
+"Má být užitečné zejména pro programátory s malými nebo žádnými předchozími "
+"zkušenostmi s dynamicky typovanými jazyky."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr ""
+msgstr "Dynamická povaha"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "Výhody a nevýhody dynamického typování"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
-msgstr ""
+msgstr "GDScript je dynamicky typovaný jazyk. Jeho hlavními výhodami jsou:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "Jazyk je jednoduchý a snadno se učí."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
-msgstr ""
+msgstr "Většinu kódu lze zapsat a změnit rychle a bez potíží."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
-msgstr ""
+msgstr "Méně napsaného kódu znamená méně chyb a omylů k opravě."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "Snadnější čtení kódu (méně nepořádku)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "Pro testování není nutná žádná kompilace."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "Runtime je malinký."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "Duck typing a polymorfismus jako přirozená vlastnost návrhu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "Hlavními nevýhodami jsou:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "Menší výkon než staticky typované jazyky."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr ""
+msgstr "Obtížnější refaktorizace (symboly nelze dohledat)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -98,12 +103,17 @@ msgid ""
 "typed languages only appear while running the code (because expression "
 "parsing is more strict)."
 msgstr ""
+"Některé chyby, které by ve staticky typovaných jazycích byly typicky "
+"odhaleny při kompilaci, se objeví až za běhu programu(protože parsování "
+"výrazů je přísnější)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
 msgstr ""
+"Menší flexibilita při automatickém dokončování kódu (některé typy proměnných "
+"jsou známy až za běhu)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -115,10 +125,17 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
+"To v praxi znamená, že Godot + GDScript jsou kombinací určenou k rychlému a "
+"efektivnímu vytváření her. Pro hry, které jsou velmi náročné na výpočetní "
+"výkon a nemohou využívat vestavěné nástroje enginu (jako jsou vektorové "
+"typy, fyzikální engine, matematická knihovna atd.), je zde také možnost "
+"použit jazyk C++. Díky tomu můžete většinu hry stále vytvářet v jazyce "
+"GDScript a v oblastech, které potřebují zvýšit výkon, přidat malé kousky "
+"jazyka C++."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "Proměnné a přiřazení"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -126,30 +143,35 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"Všechny proměnné v dynamicky typovaném jazyce jsou \"variantní\". To "
+"znamená, že jejich typ není pevně stanoven a mění se pouze přiřazením. "
+"Příklad:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "Statické:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "Dynamické:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "Jako argumenty funkce:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
+"Funkce jsou také dynamické povahy, což znamená, že je lze volat s různými "
+"argumenty, například:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "Ukazatele a odkazování:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -158,6 +180,10 @@ msgid ""
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
+"Ve statických jazycích, jako jsou C nebo C++ (a do jisté míry i Java a C#), "
+"se rozlišuje mezi proměnnou a ukazatelem/odkazem na proměnnou. Druhá "
+"jmenovaná umožňuje modifikovat objekt jinými funkcemi předáním odkazu na "
+"původní objekt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -166,18 +192,23 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
+"V jazycích C# nebo Java je vše, co není vestavěný typ (int, float, někdy "
+"String), vždy ukazatel nebo reference. Reference se také automaticky "
+"uvolňují, což znamená, že jsou vymazány, když se již nepoužívají. Dynamicky "
+"typované jazyky mají tendenci používat tento paměťový model také. Některé "
+"příklady:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -188,10 +219,16 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"V jazyce GDScript se funkcím předávají hodnotou pouze základní typy (int, "
+"float, string a vektorové typy) (hodnota se kopíruje). Vše ostatní "
+"(instance, pole, slovníky atd.) se předává odkazem. Třídy, které dědí :ref:"
+"`class_Reference` (výchozí, pokud není nic zadáno), budou automaticky "
+"uvolněny, pokud se nepoužívají, ale je povolena i ruční správa paměti, pokud "
+"dědí ručně z :ref:`class_Object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr ""
+msgstr "Pole"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -199,24 +236,29 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"Pole v dynamicky typovaných jazycích mohou obsahovat mnoho různých smíšených "
+"datových typů a jsou vždy dynamická (mohou kdykoli měnit velikost). "
+"Srovnejte například pole ve staticky typovaných jazycích:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr ""
+msgstr "A v jazyce GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"V dynamicky typovaných jazycích mohou pole sloužit i jako jiné datové typy, "
+"například seznamy:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "Nebo neuspořádané množiny:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "Slovníky"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -226,6 +268,11 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
+"Slovníky jsou v dynamicky typovaných jazycích mocným nástrojem. Většina "
+"programátorů, kteří přišli ze staticky typovaných jazyků (jako je C++ nebo "
+"C#), jejich existenci ignoruje a zbytečně si tím komplikuje život. Tento "
+"datový typ se v takových jazycích zpravidla nevyskytuje (nebo jen v omezené "
+"podobě)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -235,22 +282,31 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"Slovníky mohou mapovat libovolnou hodnotu na libovolnou jinou hodnotu, "
+"přičemž se vůbec nehledí na datový typ použitý jako klíč nebo hodnota. "
+"Navzdory všeobecnému přesvědčení jsou efektivní, protože je lze "
+"implementovat pomocí hashovacích tabulek. Ve skutečnosti jsou tak efektivní, "
+"že některé jazyky jdou tak daleko, že implementují pole jako slovníky."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "Příklad slovníku:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
 msgstr ""
+"Slovníky jsou také dynamické, klíče lze kdykoli přidat nebo odebrat bez "
+"větších nároků na výkon:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"Ve většině případů lze dvourozměrná pole často snáze implementovat pomocí "
+"slovníků. Zde je jednoduchý příklad hry s bitevní lodí:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -259,60 +315,67 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
+"Slovníky lze použít také jako datové značky nebo rychlé struktury. Ačkoli se "
+"slovníky v jazyce GDScript podobají pythonovským slovníkům, podporují také "
+"syntaxi a indexování ve stylu jazyka Lua, což je užitečné pro zápis "
+"počátečních stavů a rychlých struktur:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:319
 msgid "For & while"
-msgstr ""
+msgstr "For & while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:321
 msgid "Iterating in some statically typed languages can be quite complex:"
 msgstr ""
+"Iterace v některých staticky typovaných jazycích může být poměrně složitá:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr ""
+msgstr "V dynamicky typovaných jazycích je to obvykle značně zjednodušeno:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
+"Kontejnerové datové typy (pole a slovníky) jsou iterovatelné. Slovníky "
+"umožňují procházení podle klíčů:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
-msgstr ""
+msgstr "Iterace pomocí indexů je také možná:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
-msgstr ""
+msgstr "Funkce range() je schopna pobrat až 3 argumenty:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some statically typed programming language examples:"
-msgstr ""
+msgstr "Některé příklady staticky typovaných programovacích jazyků:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
-msgstr ""
+msgstr "Lze přeložit do:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
-msgstr ""
+msgstr "Zpětná smyčka se provádí pomocí záporného čítače:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
-msgstr ""
+msgstr "Se stane:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 msgid "While"
-msgstr ""
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr ""
+msgstr "Smyčky while() jsou všude stejné:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr ""
+msgstr "Vlastní iterátory"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -321,20 +384,27 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
+"Pokud výchozí iterátory nevyhovují vašim potřebám, můžete si vytvořit "
+"vlastní iterátory tak, že ve svém skriptu přetížíte funkce ``_iter_init``, "
+"``_iter_next`` a ``_iter_get`` třídy Variant. Následuje příklad implementace "
+"dopředného iterátoru:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
-msgstr ""
+msgstr "A lze jej použít jako jakýkoli jiný iterátor:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:462
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
+"Ujistěte se, že jste resetovali stav iterátoru v ``_iter_init``, jinak "
+"vnořené smyčky for, které používají vlastní iterátory, nebudou fungovat "
+"podle vašeho očekávání."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
-msgstr ""
+msgstr "Kachní typování (Duck typing)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -343,6 +413,10 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
+"Jedním z nejobtížnějších konceptů, které je třeba pochopit při přechodu ze "
+"staticky typovaného jazyka na dynamický, je kachní typování. Díky kachnímu "
+"typování je celkový návrh kódu mnohem jednodušší a přímočařejší, ale na "
+"první pohled není zřetelné, jak to celé funguje."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
@@ -350,6 +424,9 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
+"Jako příklad si představte situaci, kdy do tunelu padá velký kámen a rozbíjí "
+"vše, co mu stojí v cestě. Kód pro kámen by ve staticky typovaném jazyce "
+"vypadal takto:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -361,6 +438,13 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
+"Tímto způsobem by vše, co lze rozbít kamenem, muselo zdědit Smashable. Pokud "
+"by postava, nepřítel, kus nábytku čí malý kámen byly rozbitné, musely by "
+"dědit od třídy Smashable, což by případně vyžadovalo vícenásobnou dědičnost. "
+"Pokud by vícenásobná dědičnost nebyla žádoucí, pak by musely dědit společnou "
+"třídu, jako je Entity. Přesto by nebylo příliš elegantní přidávat virtuální "
+"metodu ``smash()`` do Entity pouze pro případ, že jen některé Entity budou "
+"rozbitné."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -368,6 +452,9 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
+"V dynamicky typovaných jazycích to není problém. Duck typing zajišťuje, že "
+"stačí definovat funkci ``smash()`` pouze tam, kde je to nutné, a to je vše. "
+"Není třeba uvažovat o dědičnosti, bázových třídách atd."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -377,25 +464,32 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
+"A to je vše. Pokud má objekt, který narazil do velkého kamene, metodu "
+"smash(), bude zavolána. Není třeba dědičnosti ani polymorfismu. Dynamicky "
+"typované jazyky se starají pouze o to, aby instance měla požadovanou metodu "
+"nebo člen, nikoli o to, co dědí, nebo o typ třídy. Definice kachního "
+"typování by to měla objasnit:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
 msgstr ""
+"*\"Když vidím ptáka, který chodí jako kachna, plave jako kachna a kváká jako "
+"kachna, říkám mu kachna. \"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
-msgstr ""
+msgstr "V tomto případě to znamená:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
-msgstr ""
+msgstr "*\"Pokud lze předmět rozbít, je jedno, co to je, prostě ho rozbij. \"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr ""
+msgstr "Ano, měli bychom to nazývat Hulk typing."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""
@@ -404,8 +498,14 @@ msgid ""
 "exist (like Objective C), but GDScript is stricter, so checking if the "
 "function exists is desirable:"
 msgstr ""
+"Je možné, že zasažený objekt nemá funkci smash(). Některé dynamicky typované "
+"jazyky prostě ignorují volání metody, pokud neexistuje (například Objective "
+"C), ale GDScript je přísnější, takže je žádoucí kontrolovat, zda funkce "
+"existuje:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""
+"Pak stačí definovat tuto metodu a vše, čeho se kámen dotkne, může být "
+"rozbito."

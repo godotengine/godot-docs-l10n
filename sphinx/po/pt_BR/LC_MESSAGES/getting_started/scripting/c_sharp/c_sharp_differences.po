@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,9 +247,8 @@ msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr "Veja também: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Palavra-chave Onready"
+msgstr "Palavra-chave `onready`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -257,12 +256,17 @@ msgid ""
 "until the ready function is called with `onready` (cf. :ref:"
 "`doc_gdscript_onready_keyword`). For example:"
 msgstr ""
+"GDScript tem a habilidade de adiar a inicialização de uma variável de membro "
+"(member variable) até que a função _ready seja chamada com `onready` (cf. :"
+"ref:`doc_gdscript_onready_keyword`). Por exemplo:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:137
 msgid ""
 "However C# does not have this ability. To achieve the same effect you need "
 "to do this."
 msgstr ""
+"Contudo, o C# não possui essa funcionalidade. Para atingir o mesmo efeito, "
+"você precisa fazer isso."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
@@ -564,44 +568,36 @@ msgid "``float[]``"
 msgstr "float[]"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
-#, fuzzy
 msgid "``PoolStringArray``"
-msgstr "PoolStringArray"
+msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
-#, fuzzy
 msgid "``String[]``"
-msgstr "String[]"
+msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
-#, fuzzy
 msgid "``PoolColorArray``"
-msgstr "PoolColorArray"
+msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Color[]"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:302
-#, fuzzy
 msgid "``PoolVector2Array``"
-msgstr "PoolVector2Array"
+msgstr "``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:302
-#, fuzzy
 msgid "``Vector2[]``"
-msgstr "Vector2[]"
+msgstr "``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
-#, fuzzy
 msgid "``PoolVector3Array``"
-msgstr "PoolVector3Array"
+msgstr "``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
-#, fuzzy
 msgid "``Vector3[]``"
-msgstr "Vector3[]"
+msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 #, fuzzy

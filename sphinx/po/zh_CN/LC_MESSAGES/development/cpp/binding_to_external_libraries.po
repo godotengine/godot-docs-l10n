@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,15 +76,15 @@ msgid ""
 msgstr "接下来, 需要创建一个 ``SCsub`` 文件, 以便构建系统编译此模块:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:121
-#, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files. See the library's official documentation for specific "
 "instructions on how to do this for your operation system. We've included the "
 "installation commands for Linux below, for reference."
 msgstr ""
-"您需要在计算机上安装外部库才能获取.a库文件. 有关如何为您的操作系统执行此操作"
-"的特定说明, 请参见库的官方文档. 我们在下面包含了Linux的安装命令, 以供参考."
+"你需要在自己的机器上安装该外部库才能获取 .a 库文件。至于如何在你的操作系统中"
+"一步步安装，请参考该库的官方文档。作为参考，我们这里包含了用来在 Linux 下安装"
+"命令。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 msgid ""
@@ -99,7 +99,6 @@ msgstr ""
 "许可证兼容. 请务必检查许可证和使用条款."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:137
-#, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -107,9 +106,9 @@ msgid ""
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
-"外部库也需要安装在模块内部, 以使编译器可以访问源文件, 同时保持模块代码独立. "
-"可以通过 ``git`` 使用以下命令从 ``modules/tts/`` 目录中安装 ``Festival`` 和 "
-"``Speech_tools`` 库:"
+"外部库也需要被安装到你的模块之中，这样编译器就可以访问到源代码，保持模块独立"
+"于外界环境。可以使用如下的 git 命令从 modules/tts/ 目录安装 festival 和 "
+"speech_tools："
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
@@ -121,16 +120,15 @@ msgstr ""
 "(从 ``modules/tts/`` 目录中)来链接它们, 如下所示:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:156
-#, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
 "are developing a module to be merged into the main Godot repository, you "
 "should not use submodules. If your module doesn't get merged in, you can "
 "always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
-"请注意,Godot仓库中不使用Git子模块. 如果你开发的模块要被合并到Godot主仓库, 你"
-"不应该使用子模块. 如果你的模块没有被合并, 你可以尝试将外部库作为GDNative C+"
-"+插件来实现."
+"请注意，Godot 仓库中不使用 Git 的子模块（submodule）功能。如果你希望让自己开"
+"发的模块合并入 Godot 主仓库，请不要使用子模块。如果你的模块没法合并进主仓库，"
+"那么还是可以尝试把它实现为 GDNative C++ 插件。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""

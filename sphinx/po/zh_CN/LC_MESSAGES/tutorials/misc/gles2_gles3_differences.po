@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,13 +98,12 @@ msgid "Color space"
 msgstr "色彩空间"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
-#, fuzzy
 msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
 "appear slightly different between them especially when lighting is used."
 msgstr ""
-"GLES2和GLES3位于不同的色彩空间中. 这表示颜色之间会有细微的差别, 特别是在使用"
-"灯光的时候."
+"GLES2 和 GLES3 所用的色彩空间不同。也就是说两者之间的颜色会有细微的差别，特别"
+"是在使用灯光的时候。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
 msgid ""
@@ -118,18 +117,18 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
 msgid "HDR"
-msgstr "高动态范围"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
-#, fuzzy
 msgid ""
 "GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
 "If HDR is set for your project, or for a given viewport, Godot will still "
 "use Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
 "range."
 msgstr ""
-"GLES2不能够使用高动态范围(HDR)渲染功能. 如果你的项目或某个视口设置了HDR,Godot"
-"仍将使用低动态范围(LDR), 将视口值限制在 ``0-1`` 范围内."
+"GLES2 无法使用高动态范围（High Dynamic Range、HDR）渲染特性。如果你的项目或者"
+"某个特定的视图使用了 HDR，Godot 仍会使用低动态范围（Low Dynamic Range、"
+"LDR），视图中的取值会被限制在 ``0-1`` 的范围内。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:53
 msgid ""
@@ -137,16 +136,20 @@ msgid ""
 "have no effect when HDR is disabled. This means debanding can't be used in "
 "GLES2."
 msgstr ""
+"禁用 HDR 时，Viewport 的 **Debanding（条带消除）** 属性和相关的项目设置也会失"
+"效。所以在 GLES2 中无法使用条带消除功能。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
-msgstr "空间材质特性"
+msgstr "SpatialMaterial 的特性"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
-msgstr "在GLES2中, 在: 参考:` 空间材质 <类_空间材质>` 中缺少以下高级渲染特性:"
+msgstr ""
+"在 GLES2 中， :ref:`SpatialMaterial <class_SpatialMaterial>` 缺失如下高级渲染"
+"特性："
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Refraction"
@@ -393,7 +396,6 @@ msgstr ""
 "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:162
-#, fuzzy
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy )"

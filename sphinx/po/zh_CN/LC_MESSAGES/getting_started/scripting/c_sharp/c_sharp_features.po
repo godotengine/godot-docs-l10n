@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,13 +193,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
 msgid "Preprocessor defines"
-msgstr "预编译定义"
+msgstr "预处理器符号定义"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
-msgstr "Godot有一组定义, 可让您根据要编译的环境来更改C＃代码."
+msgstr "为了能够根据目标编译环境改变 C# 代码，Godot 提供了一组符号定义。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -230,16 +230,15 @@ msgstr "完整的定义列表"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr "所有 Godot 项目都会定义 ``GODOT``."
+msgstr "所有 Godot 项目都会定义 ``GODOT`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
-msgstr "按照架构是 64 位还是 32 位, 会定义 ``GODOT_64`` 或 ``GODOT_32``."
+msgstr "根据架构是 64 位还是 32 位，会定义 ``GODOT_64`` 或 ``GODOT_32`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
-#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
@@ -247,11 +246,11 @@ msgid ""
 "``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
-"按照操作系统, 会定义 ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, "
-"``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, 或者 ``GODOT_SERVER`` 中的"
-"一个. 这些名称在未来可能会被更改. 这些名称是由 :ref:`OS <class_OS>` 单例"
-"(singleton)中的 ``get_name()`` 方法创建的, 但是 Godot 与 Mono 只能在其中一部"
-"分平台上运行."
+"根据操作系统，会定义 ``GODOT_X11`` 、 ``GODOT_WINDOWS`` 、 ``GODOT_OSX`` 、 "
+"``GODOT_ANDROID`` 、 ``GODOT_IOS`` 、 ``GODOT_HTML5`` 、 ``GODOT_SERVER`` 的"
+"其中之一，将来可能会更改这些名称。这些名称是根据 :ref:`OS <class_OS>` 单例的 "
+"``get_name()`` 方法创建的，但这个函数所能够返回的操作系统并不是都能够运行使"
+"用 Mono 的 Godot。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""

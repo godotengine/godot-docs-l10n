@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,19 @@ msgstr ""
 "この例のために、ボタンが付いたシンプルなUIを作成します。ボタンを押すと、指定"
 "されたURLへのHTTPリクエストが開始されます。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:12
+#: ../../docs/tutorials/networking/http_request_class.rst:13
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/http_request_class.rst:19
 msgid "Preparing scene"
 msgstr "シーンの準備"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:14
+#: ../../docs/tutorials/networking/http_request_class.rst:21
 msgid ""
 "Create a new empty scene, add a CanvasLayer as the root node and add a "
 "script to it. Then add two child nodes to it: a Button and an HTTPRequest "
@@ -56,11 +64,11 @@ msgstr ""
 "追加します。次に、2つの子ノード、ButtonおよびHTTPRequestノードを追加します。"
 "次のシグナルをCanvasLayerスクリプトに接続する必要があります:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:16
+#: ../../docs/tutorials/networking/http_request_class.rst:23
 msgid "Button.pressed: When the button is pressed, we will start the request."
 msgstr "Button.pressed:ボタンを押すと、要求が開始されます。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:17
+#: ../../docs/tutorials/networking/http_request_class.rst:24
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
@@ -68,11 +76,11 @@ msgstr ""
 "HTTPRequest.request_completed: 要求が完了すると、要求されたデータが引数として"
 "取得されます。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:22
+#: ../../docs/tutorials/networking/http_request_class.rst:29
 msgid "Scripting"
 msgstr "スクリプト"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:24
+#: ../../docs/tutorials/networking/http_request_class.rst:31
 msgid ""
 "Below is all the code we need to make it work. The URL points to an online "
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
@@ -82,7 +90,7 @@ msgstr ""
 "モッカーを指します。定義済みのJSON文字列を返し、データにアクセスするために解"
 "析します。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:65
+#: ../../docs/tutorials/networking/http_request_class.rst:72
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
@@ -90,7 +98,7 @@ msgstr ""
 "これにより、コンソールに ``(hello:world)`` が表示されます。helloがキーであ"
 "り、worldが値であり、どちらも文字列です。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:67
+#: ../../docs/tutorials/networking/http_request_class.rst:74
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
@@ -99,7 +107,7 @@ msgstr ""
 "`JSONParseResult <class_JSONParseResult>` のクラスリファレンスを参照してくだ"
 "さい。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:69
+#: ../../docs/tutorials/networking/http_request_class.rst:76
 msgid ""
 "Note that you may want to check whether the ``result`` equals "
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
@@ -110,7 +118,7 @@ msgstr ""
 "JSONクラスリファレンスと :ref:`HTTPRequest <class_HTTPRequest>` を参照してく"
 "ださい。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:71
+#: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
 "array, with each string containing a header in the format ``\"header: value"
@@ -122,7 +130,7 @@ msgstr ""
 "たとえば、カスタムユーザーエージェント(HTTP ``user-agent`` ヘッダー)を設定す"
 "るには、次を使用できます:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:85
+#: ../../docs/tutorials/networking/http_request_class.rst:92
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
 "may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
@@ -131,7 +139,7 @@ msgstr ""
 "<doc_ssl_certificates>` で説明されている手順を実行する必要がある場合があるこ"
 "とに注意してください。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:87
+#: ../../docs/tutorials/networking/http_request_class.rst:94
 msgid ""
 "Also, when calling APIs using authorization, be aware that someone might "
 "analyse and decompile your released application and thus may gain access to "
@@ -146,11 +154,11 @@ msgstr ""
 "タベースアクセスの資格情報などを埋め込むことはお勧めできません。可能な限り、"
 "攻撃者にとって有用な情報を提供しないでください。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:91
+#: ../../docs/tutorials/networking/http_request_class.rst:98
 msgid "Sending data to server"
 msgstr "サーバーへのデータの送信"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:93
+#: ../../docs/tutorials/networking/http_request_class.rst:100
 msgid ""
 "Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
@@ -160,7 +168,7 @@ msgstr ""
 "バーにデータを送信する必要がある場合はどうでしょうか？一般的な方法は次のとお"
 "りです:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:116
+#: ../../docs/tutorials/networking/http_request_class.rst:123
 msgid ""
 "Keep in mind that you have to wait for a request to finish before sending "
 "another one. Making multiple request at once requires you to have one node "

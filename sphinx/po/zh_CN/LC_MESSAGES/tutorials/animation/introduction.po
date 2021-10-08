@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:106
 msgid "Tutorial: Creating a simple animation"
-msgstr "教程: 创建一个简单的动画"
+msgstr "教程：创建简单的动画"
 
 #: ../../docs/tutorials/animation/introduction.rst:109
 msgid "Scene setup"
@@ -196,7 +196,8 @@ msgid ""
 "For this tutorial, we'll create an AnimationPlayer node and a sprite node as "
 "its child."
 msgstr ""
-"在本教程中, 我们将创建一个AnimationPlayer节点和一个sprite节点作为其子节点."
+"在本教程中，我们将创建一个 AnimationPlayer 节点，并将精灵（Sprite）节点作为其"
+"子节点。"
 
 #: ../../docs/tutorials/animation/introduction.rst:117
 msgid "Our scene setup"
@@ -208,12 +209,15 @@ msgid ""
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
+"AnimationPlayer 继承自 Node 而不是 Node2D 或者 Node3D。因为层级中间出现了普通"
+"的 Node 节点，所以它的子节点不会继承父节点的变换。"
 
 #: ../../docs/tutorials/animation/introduction.rst:125
 msgid ""
 "Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
 "a child of an AnimationPlayer node."
 msgstr ""
+"所以，不建议把具有 2D 或者 3D 变换的节点设置成 AnimationPlayer 节点的子节点。"
 
 #: ../../docs/tutorials/animation/introduction.rst:128
 msgid ""
@@ -222,9 +226,8 @@ msgid ""
 "the sprite's texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
-"这个精灵拥有一个图像纹理. 我们对该精灵进行动画处理, 使其在屏幕上的两点之间移"
-"动. 在本教程中, 使用默认的Godot图标作为精灵的纹理. 将精灵移动到屏幕上的左边位"
-"置作为起点."
+"精灵拥有图片纹理，我们会让它在屏幕上的两点之间做移动动画。本教程使用默认的 "
+"Godot 图标作为该精灵的纹理。将精灵移动到屏幕左侧作为起点。"
 
 #: ../../docs/tutorials/animation/introduction.rst:133
 msgid ""
@@ -232,13 +235,12 @@ msgid ""
 "animation editor. From the list select \"New\" (|Add Animation|) to add a "
 "new animation. And Enter a name for the animation in the dialog box."
 msgstr ""
-"选择AnimationPlayer节点, 然后点击动画编辑器中的 \"Animation\" 按钮. 从列表中"
-"选择 \"New\" (|Add Animation|)来添加一个新的动画. 并在对话框中为该动画输入一"
-"个名称."
+"选中 AnimationPlayer 节点，然后点击动画编辑器中的“动画”按钮。从列表中选择“新"
+"建”（ |Add Animation| ）来添加一个新的动画，并在对话框中为该动画输入名称。"
 
 #: ../../docs/tutorials/animation/introduction.rst:141
 msgid "Add a new animation"
-msgstr "添加一个新的动画"
+msgstr "添加新动画"
 
 #: ../../docs/tutorials/animation/introduction.rst:144
 msgid "Adding a track"

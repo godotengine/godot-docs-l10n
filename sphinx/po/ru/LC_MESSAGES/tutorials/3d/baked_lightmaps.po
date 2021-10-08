@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,12 +155,16 @@ msgid ""
 "Godot has an option to unwrap meshes and visualize the UV channels. It can "
 "be found in the Mesh menu:"
 msgstr ""
+"У Godot есть возможность разворачивать сетки и визуализировать "
+"ультрафиолетовые каналы. Его можно найти в пункте меню «Mesh»:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:96
 msgid ""
 "This will generate a second set of UV2 coordinates which can be used for "
 "baking, and it will also set the texture size automatically."
 msgstr ""
+"Это создаст второй набор координат UV2, которые можно использовать для "
+"выпечки, а также автоматически установит размер текстуры."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:100
 msgid "Unwrap from your 3D DCC"
@@ -177,13 +181,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:108
 msgid "Simply do an unwrap on the second UV2 layer."
-msgstr ""
+msgstr "Просто разверните второй слой UV2."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:112
 msgid ""
 "Then import the 3D scene normally. Remember you will need to set the texture "
 "size on the mesh after import."
 msgstr ""
+"Затем импортируйте 3D-сцену в обычном режиме. Помните, что вам нужно будет "
+"установить размер текстуры на сетке после импорта."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:117
 msgid ""
@@ -192,6 +198,10 @@ msgid ""
 "work quickly. You will mostly need to use seams or other techniques to "
 "create better unwrapping."
 msgstr ""
+"Если при импорте вы используете внешние сетки, размер будет сохранен. Будьте "
+"осторожны, большинство разверток в 3D DCC не ориентированы на качество, так "
+"как они предназначены для быстрой работы. В основном вам нужно будет "
+"использовать швы или другие методы, чтобы лучше развернуть."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid "Checking UV2"
@@ -233,6 +243,10 @@ msgid ""
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
+"Карта освещения нуждается в приблизительном объеме затронутой области, "
+"поскольку она использует ее для передачи света динамическим объектам внутри "
+"нее (подробнее об этом позже). Просто установите значения для сцены, как вы "
+"делаете с `GIProbe`.:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 #, fuzzy
@@ -313,7 +327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:196
 msgid "All"
-msgstr ""
+msgstr "Все"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid ""
@@ -327,6 +341,18 @@ msgid ""
 "implemented with a Sprite3D + RayCast setup, or a negative SpotLight "
 "pointing down with its bake mode set to **Disabled**."
 msgstr ""
+"Как косвенное, так и прямое освещение будет запекаться. Поскольку "
+"статические поверхности могут полностью пропустить вычисления освещения и "
+"теней, этот режим обеспечивает наилучшую производительность наряду с "
+"плавными тенями, которые никогда не исчезают в зависимости от расстояния. "
+"Свет в реальном времени больше не будет влиять на запеченные поверхности, но "
+"он все еще будет влиять на динамические объекты. При использовании режима "
+"запекания **All** для света динамические объекты не будут отбрасывать тени в "
+"реальном времени на запеченные поверхности, поэтому вместо этого необходимо "
+"использовать другой подход, например, сгустковые тени. Сгустковые тени можно "
+"реализовать с помощью установки Sprite3D + RayCast или отрицательного "
+"SpotLight, направленного вниз, с режимом запекания, установленным на "
+"**Disabled**."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""

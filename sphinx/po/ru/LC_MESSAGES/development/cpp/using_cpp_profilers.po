@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:146
 msgid "Xcode Instruments"
-msgstr ""
+msgstr "Инструменты Xcode"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:148
 msgid ""
@@ -299,12 +299,17 @@ msgid ""
 "target...** and specify the path to the Godot binary, command line arguments "
 "and environment variables in the next window."
 msgstr ""
+"В окне Time Profiler нажмите на меню **Target**, выберите **Choose target..."
+"** и укажите путь к двоичному файлу Godot, аргументы командной строки и "
+"переменные окружения в следующем окне."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:159
 msgid ""
 "You can also attach the Time Profiler to a running process by selecting it "
 "from the **Target** menu."
 msgstr ""
+"Вы также можете прикрепить Time Profiler к запущенному процессу, выбрав его "
+"в меню **Target**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:162
 msgid ""
@@ -316,25 +321,34 @@ msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click the **Stop** button."
 msgstr ""
+"Выполните действия, которые вы хотите профилировать в редакторе или проекте. "
+"Когда закончите, нажмите кнопку **Стоп**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:169
 msgid "Wait for the results to appear."
-msgstr ""
+msgstr "Подождите, пока появятся результаты."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:170
 msgid ""
 "At the bottom of the window you will see a call tree for all CPU threads "
 "started, and the **Heaviest Stack Trace** overview."
 msgstr ""
+"В нижней части окна вы увидите дерево вызовов для всех запущенных потоков "
+"ЦП, а также обзор **Heaviest Stack Trace**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:172
 msgid ""
 "Select **Hide system libraries** in the **Call Tree** menu (at the bottom of "
 "window) to remove external modules."
 msgstr ""
+"Выберите **Скрыть системные библиотеки** (Hide system libraries) в меню "
+"**Дерево вызовов** (Call Tree) (в нижней части окна), чтобы удалить внешние "
+"модули."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:174
 msgid ""
 "You can use the timeline at the top of the window to display details for the "
 "specific time period."
 msgstr ""
+"Вы можете использовать временную шкалу в верхней части окна для отображения "
+"подробностей за определенный период времени."

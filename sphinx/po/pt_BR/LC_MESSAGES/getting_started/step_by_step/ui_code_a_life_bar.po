@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,9 +70,8 @@ msgid ":doc:`ui_main_menu`"
 msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr ":ref:`Interfaces Godot <doc_godot_interfaces>`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -214,7 +213,6 @@ msgstr ""
 "qualquer valor ou método de qualquer outro nó"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
@@ -427,7 +425,6 @@ msgstr ""
 "nó conectado *logo após* a mudança acontecer."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -653,7 +650,6 @@ msgstr ""
 "atribuí-la ao `` new_value`` diretamente"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -662,8 +658,8 @@ msgid ""
 msgstr ""
 "Também chame `` update_health`` no final da função `` _ready`` para "
 "inicializar o `` text`` do nó `` Number`` com o valor correto no início do "
-"jogo. Pressione F5 para testar o jogo: a barra de vida é atualizada a cada "
-"ataque!"
+"jogo. Pressione :kbd:`F5` para testar o jogo: a barra de vida é atualizada a "
+"cada ataque!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
@@ -925,7 +921,6 @@ msgstr ""
 "`` Tween`` enquanto ele gerencia múltiplas animações em paralelo para nós."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`Ctrl + F1` to jump back to the 2D Workspace. "
@@ -933,9 +928,9 @@ msgid ""
 "to the Inspector."
 msgstr ""
 "Primeiro, o `` GUI`` precisa se conectar ao sinal `` died`` do `` Player`` "
-"para saber quando ele morreu. Pressione: kbd: `F1` para voltar ao espaço de "
-"trabalho 2D. Selecione o nó `` Player`` na doca Scene e clique na aba Node "
-"ao lado do Inspector."
+"para saber quando ele morreu. Pressione: kbd: `Ctrl + F1` para voltar ao "
+"espaço de trabalho 2D. Selecione o nó `` Player`` na doca Scene e clique na "
+"aba Node ao lado do Inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
@@ -1035,7 +1030,6 @@ msgstr ""
 "Tween`` novamente:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -1043,8 +1037,7 @@ msgid ""
 msgstr ""
 "Desta vez nós mudamos a propriedade ``modulate`` e a animamos de "
 "``start_color`` para ``end_color``. A duração é de um segundo, com uma "
-"transição linear. Aqui, novamente, já que a transição é linear, a suavização "
-"não importa. Aqui está o método `` _on_Player_died`` completo:"
+"transição linear. Aqui está o método `` _on_Player_died`` completo:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"

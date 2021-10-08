@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,17 +27,25 @@ msgid "Tutorial"
 msgstr "Tutorial"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
+#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Questo è un semplice tutorial per stabilire l'idea di base di come funziona "
+"il sottosistema GUI. L'obiettivo è quello di creare un semplice schermata "
+"iniziale statica."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
+#, fuzzy
 msgid ""
 "Following is a file with the assets that will be used. The extracted files "
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"Di seguito c'è un file con gli asset che verranno utilizzati. I file "
+"estratti possono essere messi direttamente nella cartella del tuo progetto e "
+"Godot li importerà automaticamente."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 #, fuzzy
@@ -50,35 +58,51 @@ msgid "Setting up"
 msgstr "Impostare"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
+#, fuzzy
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Imposta la risoluzione dello schermo a 800x450 in Project Settings e imposta "
+"una nuova scena come questa:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
+#, fuzzy
 msgid ""
 "The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"I nodi \"background\" e \"logo\" sono di tipo :ref:`TextureRect "
+"<class_TextureRect>`. Per visualizzare un'immagine, trascinate la risorsa "
+"corrispondente alla proprietà texture."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
+#, fuzzy
 msgid ""
 "The node \"start\" is a :ref:`TextureButton <class_TextureButton>`. It takes "
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"Il nodo \"start\" è un :ref:`TextureButton <class_TextureButton>`. Prende "
+"diverse immagini per diversi stati, ma in questo esempio verranno fornite "
+"solo quelle normali e premute:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
+#, fuzzy
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "Infine, il nodo \"copyright\" è un :ref:`Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
+#, fuzzy
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "La vostra scena finale dovrebbe assomigliare a questa."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
+#, fuzzy
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Andate avanti ed eseguite il progetto. Se sei soddisfatto dei risultati, "
+"continua con il prossimo tutorial."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgid ""
 "how to use Godot."
 msgstr ""
 "**왜 2D인가요?** 3D 게임은 2D 게임보다 훨씬 더 복잡합니다. 게임 개발 과정과 "
-"Godot을 잘 알기 전까지는 2D 게임을 개발하는 것이 좋습니다."
+"Godot를 잘 알기 전까지는 2D 게임을 개발하는 것이 좋습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:29
 msgid "Project setup"
@@ -139,8 +139,8 @@ msgid ""
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"처음으로 정의할 씬은 ``Player`` 객체입니다. 별도의 Player 씬을 만들면 게임의 "
-"다른 부분을 만들기 전에 따로 실험해 볼 수 있다는 장점이 있습니다."
+"처음으로 정의할 씬은 ``Player`` 오브젝트입니다. 별도의 Player 씬을 만들면 게"
+"임의 다른 부분을 만들기 전에 따로 실험해 볼 수 있다는 장점이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -182,10 +182,10 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
-"``Player`` 노드에 자식을 추가하기 전에, 실수로 자식을 클릭해서 자식이 움직이"
+"``Player`` 노드에 자손을 추가하기 전에, 실수로 자손을 클릭해서 자손이 움직이"
 "거나 크기가 바뀌지 않도록 해야 합니다. 노드를 선택하고 자물쇠 오른쪽에 있는 "
-"아이콘을 클릭하세요. 노드의 툴 팁에는 \"객체의 자식을 선택하지 않도록 해요."
-"\" 라고 표시됩니다."
+"아이콘을 클릭하세요. 노드의 툴 팁에는 \"오브젝트의 자손을 선택하지 않도록 해"
+"요.\" 라고 표시됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
 #, fuzzy
@@ -236,7 +236,7 @@ msgid ""
 "\"SpriteFrames\" panel:"
 msgstr ""
 "``Player`` 노드를 클릭하고 :ref:`AnimatedSprite <class_AnimatedSprite>` 노드"
-"를 자식으로 추가하세요. ``AnimatedSprite``\\ 는 플레이어의 외형과 애니메이션"
+"를 자손으로 추가하세요. ``AnimatedSprite``\\ 는 플레이어의 외형과 애니메이션"
 "을 다루게 됩니다. 노드 옆을 보면 주의 표시가 있습니다. ``AnimatedSprite``\\ "
 "는 :ref:`SpriteFrames <class_SpriteFrames>` 리소스가 필요합니다. "
 "SpriteFrames 리소스는 보여줄 수 있는 애니메이션 목록을 보여줍니다. 리소스를 "
@@ -282,9 +282,9 @@ msgid ""
 "cover the sprite:"
 msgstr ""
 "마지막으로, :ref:`CollisionShape2D <class_CollisionShape2D>`\\ 를 ``Player``"
-"\\ 의 자식으로 추가하세요. 이것이 플레이어의 \"hitbox\", 즉 충돌 영역의 범위"
-"를 결정합니다. 이 캐릭터에게는, ``CapsuleShape2D`` 노드가 가장 적합합니다, 그"
-"러므로 인스펙터(Inspecter)의 \"Shape\" 옆에 \"<비었음>\"\" -> \"새 "
+"\\ 의 자손으로 추가하세요. 이것이 플레이어의 \"hitbox\", 즉 콜리전 영역의 범"
+"위를 결정합니다. 이 캐릭터에게는, ``CapsuleShape2D`` 노드가 가장 적합합니다, "
+"그러므로 인스펙터(Inspecter)의 \"Shape\" 옆에 \"<비었음>\"\" -> \"새 "
 "CapsuleShape2D\"를 클릭하세요.  스프라이트를 덮도록 두 개의 크기 핸들로 크기"
 "를 조정하세요:"
 
@@ -337,7 +337,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid "Start by declaring the member variables this object will need:"
-msgstr "이 객체가 필요로 하는 멤버 변수를 선언함으로써 시작합시다:"
+msgstr "이 오브젝트가 필요로 하는 멤버 변수를 선언함으로써 시작합시다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -407,12 +407,12 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
-"먼저, 입력을 확인해야 합니다 - 플레이어가 키를 누르는 것이라 할까요? 이 게임"
-"에서, 우리는 입력을 확인하기 위한 4개의 방향키를 갖고 있습니다. 입력 액션은 "
-"프로젝트 설정의 \"Input Map\"에서 정의할 수 있습니다. 사용자 지정 이벤트를 정"
-"의하고 이를 다른 키, 마우스 이벤트, 혹은 다른 입력으로 지정할 수도 있습니다. "
-"이 데모에서는, 우리는 키보드에 있는 방향키가 지정된 기본 이벤트를 사용할 것입"
-"니다."
+"먼저, 입력을 확인해야 합니다 - 플레이어가 키를 누르는 중일까요? 이 게임에서, "
+"우리는 방향키 입력을 확인해야 합니다. 입력 액션은 프로젝트 설정(Project "
+"Settings)의 \"Input Map\"에 정의되어 있습니다. 여기에서 사용자 지정 이벤트를 "
+"정의하고 여기에 다른 키, 마우스 이벤트, 혹은 다른 입력을 할당할 수도 있습니"
+"다. 이 데모에서, 우리는 키보드의 방향키가 할당된 기본 이벤트를 사용할 것입니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:240
 #, fuzzy
@@ -488,7 +488,7 @@ msgid ""
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
 "GDScript에서, ``$``\\ 는 현재 노드에서 상대적인 경로에 있는 노드를 반환하거"
-"나, 노드가 없다면 ``null`` 값을 반환합니다. AnimatedSprite가 현재 노드의 자식"
+"나, 노드가 없다면 ``null`` 값을 반환합니다. AnimatedSprite가 현재 노드의 자손"
 "인 상태이므로, ``$AnimatedSprite``\\ 를 사용할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:326
@@ -603,7 +603,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:446
 msgid "Preparing for collisions"
-msgstr "충돌 준비하기"
+msgstr "콜리전 준비하기"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:448
 msgid ""
@@ -628,7 +628,7 @@ msgid ""
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
 "이것은 \"hit\"라 불리는 사용자 지정 시그널을 정의해서 적과 충돌할 때 우리의 "
-"플레이어가 방출하도록 (내보내도록) 합니다. 우리는 ``Area2D`` 로 그 충돌을 감"
+"플레이어가 방출하도록 (내보내도록) 합니다. 우리는 ``Area2D``\\ 로 콜리전을 감"
 "지할 겁니다. ``Player`` 노드를 선택하고 인스펙터(Inspecter) 탭 옆의 \"노드\" "
 "탭을 클릭하고 플레이어가 방출할 수 있는 시그널들을 확인해 보세요:"
 
@@ -662,7 +662,7 @@ msgid ""
 "signal more than once."
 msgstr ""
 "매번 적이 플레이어를 때리면, 시그널이 방출됩니다. 우리는 두 번 이상 ``hit`` "
-"시그널이 발동되지 않도록 플레이어의 충돌을 비활성화 해야 합니다."
+"시그널이 발동되지 않도록 플레이어의 콜리전을 비활성화 해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:506
 #, fuzzy
@@ -671,9 +671,9 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
-"엔진의 충돌 처리 중에 영역의 충돌 모양을 비활성화 하는 것은 오류를 초래할 수 "
-"있습니다. ``set_deferred()``\\ 를 사용하면 Godot가 모양을 비활성화해도 안전"
-"할 때까지 기다려줍니다."
+"엔진의 콜리전 처리 중에 영역의 콜리전 모양을 비활성화 하는 것은 오류를 초래"
+"할 수 있습니다. ``set_deferred()``\\ 를 사용하면 Godot가 모양을 비활성화해도 "
+"안전할 때까지 기다려줍니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 #, fuzzy
@@ -744,7 +744,7 @@ msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
-"플레이어 씬에서 한 것과 마찬가지로, 자식이 선택되지 않도록 설정하는 것을 잊지"
+"플레이어 씬에서 한 것과 마찬가지로, 자손이 선택되지 않도록 설정하는 것을 잊지"
 "마세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:556
@@ -802,8 +802,8 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` (under \"Transform\" in the Inspector)."
 msgstr ""
-"``Player`` 씬처럼, 충돌을 위한 ``CapsuleShape2D`` 을 추가합니다. 이미지와 모"
-"양이 같도록, ``Node2D`` 아래 ``Rotation Degrees`` 속성을 ``90`` 으로 설정해"
+"``Player`` 씬처럼, 콜리전을 위한 ``CapsuleShape2D`` 을 추가합니다. 이미지와 "
+"모양이 같도록, ``Node2D`` 아래 ``Rotation Degrees`` 속성을 ``90`` 으로 설정해"
 "야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
@@ -859,10 +859,9 @@ msgid ""
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here."
 msgstr ""
-"씬을 실행할 때 매 순간마다 다른 \"무작위\" 숫자의 순서를 원한다면 "
-"``randomize()`` 를 사용해야 합니다. ``randomize()`` 를 우리의 ``Main`` 씬에 "
-"사용할꺼니까, 더이상 여기 있으면 안됩니다. ``randi() % n`` 은 ``0`` 과 "
-"``n-1`` 사이의 무작위 정수 값을 얻는 기본적인 방법입니다."
+"씬을 실행할 때 매 순간마다 \"무작위\" 숫자 배열이 다르기를 원한다면 "
+"``randomize()``\\ 를 사용해야 합니다. ``randomize()``\\ 를 우리의 ``Main`` 씬"
+"에 사용할 것이므로 여기서는 필요하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:649
 #, fuzzy
@@ -898,7 +897,7 @@ msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"``Main`` 의 자식으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
+"``Main`` 의 자손으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
 "지으세요 (값은 초 단위 입니다):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:681
@@ -971,7 +970,7 @@ msgid ""
 msgstr ""
 "메인 노드는 새로운 적들을 스폰할 것이고 우리는 그들이 화면 모서리 아무 위치에"
 "서나 나타나도록 만들고 싶습니다. :ref:`Path2D <class_Path2D>` 노드를 "
-"``Main`` 의 자식으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
+"``Main`` 의 자손으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
 "택한다면, 당신은 편집기 위쪽에 새로운 버튼들이 보일 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
@@ -1012,7 +1011,7 @@ msgid ""
 "to select a random position and direction along the path."
 msgstr ""
 "이제 경로를 정의하기 위해, :ref:`PathFollow2D <class_PathFollow2D>` 노드를 "
-"``MobPath`` 의 자식으로 추가한 후, ``MobSpawnLocation`` 이라고 이름짓습니다. "
+"``MobPath`` 의 자손으로 추가한 후, ``MobSpawnLocation`` 이라고 이름짓습니다. "
 "이 노드는 자동으로 회전하고 이동하면서 경로를 따라갈 것입니다, 그래서 우리는 "
 "이걸로 경로를 따라 임의의 위치와 방향을 선택하기 위해 사용할 수 있습니다."
 
@@ -1205,13 +1204,13 @@ msgid ""
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
-"UI 요소에 기초가 되는 노드는 :ref:`Control <class_Control>` 입니다. UI를 만들"
-"기 위해, 우리는 두 가지 형식의 :ref:`Control <class_Control>` 노드를 쓸겁니"
-"다: :ref:`Label <class_Label>` 과 :ref:`Button <class_Button>` 입니다."
+"UI 요소에 기초가 되는 노드는 :ref:`Control <class_Control>`\\ 입니다. UI를 만"
+"들기 위해, 우리는 두 가지 타입의 :ref:`Control <class_Control>` 노드를 쓸겁니"
+"다: :ref:`Label <class_Label>`\\ 과 :ref:`Button <class_Button>`\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr "다음에 맞춰 ``HUD`` 노드의 자식으로 추가하세요:"
+msgstr "다음에 맞춰 ``HUD`` 노드의 자손으로 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
@@ -1536,7 +1535,6 @@ msgid "Background"
 msgstr "배경(Background)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
-#, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1545,11 +1543,11 @@ msgid ""
 "color you like and select \"Layout\" -> \"Full Rect\" so that it covers the "
 "screen."
 msgstr ""
-"기본 회색 배경은 그렇게 멋지지는 않습니다, 그래서 색깔을 바꿔봅시다. 그 방법"
-"들 중 하나는 :ref:`ColorRect <class_ColorRect>` 노드를 사용하는 것입니다. "
-"``Main`` 바로 밑 첫 번째 노드로 놓아서 다른 노드들 뒤에 그려지도록 하세요. "
-"``ColorRect`` 는 오직 하나의 속성만 가지고 있습니다: ``Color`` 입니다. 원하"
-"는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
+"회색 기본 배경은 그다지 매력적이지 않아요, 그러니 색깔을 바꿔봅시다. 그 방법 "
+"중 하나는 :ref:`ColorRect <class_ColorRect>` 노드를 사용하는 것입니다. "
+"``Main`` 바로 밑의 첫 번째 노드로 만들어서 다른 노드의 뒤에 그려지도록 하세"
+"요. ``ColorRect``\\ 에는 오직 하나의 속성: ``Color``\\ 만 있습니다. 원하는 색"
+"깔을 고르고 \"Layout\" -> \"Full Rect\"를 선택해서 화면을 덮어주세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
 #, fuzzy
@@ -1584,7 +1582,7 @@ msgid ""
 "corresponding audio file."
 msgstr ""
 "두 개의 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` 노드를 ``Main`` "
-"의 자식으로 추가하세요. 하나는 ``Music`` 으로, 다른 하나는 ``DeathSound`` 로 "
+"의 자손으로 추가하세요. 하나는 ``Music`` 으로, 다른 하나는 ``DeathSound`` 로 "
 "이름 지으세요. 각각에서, ``Stream`` 속성을 클릭하시고 \"Load\"를 선택해서 이"
 "름에 맞는 오디오 파일을 선택하세요."
 

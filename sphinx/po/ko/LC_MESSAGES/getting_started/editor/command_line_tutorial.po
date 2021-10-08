@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,71 +33,88 @@ msgstr ""
 "부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 워크플로"
 "에 적합하게 만듭니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:15
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:16
+msgid ""
+"On Windows and Linux, you can run a Godot binary in a terminal by specifying "
+"its relative or absolute path."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:19
+msgid ""
+"On macOS, the process is different due to Godot being contained within an ``."
+"app`` bundle (which is a *folder*, not a file). To run a Godot binary from a "
+"terminal on macOS, you have to ``cd`` to the folder where the Godot "
+"application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` "
+"followed by any command line arguments. If you've renamed the application "
+"bundle from ``Godot`` to another name, make sure to edit this command line "
+"accordingly."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Command line reference"
 msgstr "명령줄 참조"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:17
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:30
 msgid "**General options**"
 msgstr "**일반적인 설정**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Command"
 msgstr "명령"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Description"
 msgstr "설명"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
 msgstr "``-h``, ``--help``, ``/?``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "Display the list of command line options."
 msgstr "명령줄 설정 목록을 표시합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "``--version``"
 msgstr "``--version``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "Display the version string."
 msgstr "버전 문자열을 표시합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "``-v``, ``--verbose``"
 msgstr "``-v``, ``--verbose``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "Use verbose stdout mode."
 msgstr "Verbose 표준 출력 모드를 사용합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "``--quiet``"
 msgstr "``--quiet``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr "조용한 모드. 표준 출력 메시지를 내지 않습니다. 오류는 계속 표시됩니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:31
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "**Run options**"
 msgstr "**실행 설정**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -105,11 +122,11 @@ msgstr ""
 "씬을 실행하는 대신 편집기를 시작합니다 (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 이 켜져있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid "``-p``, ``--project-manager``"
 msgstr "``-p``, ``--project-manager``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -117,19 +134,19 @@ msgstr ""
 "프로젝트가 자동으로 감지되어도, 프로젝트 매니저를 먼저 시작합니다. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>`\\ 이 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "``-q``, ``--quit``"
 msgstr "``-q``, ``--quit``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "Quit after the first iteration."
 msgstr "첫 반복 이후에 종료합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid "``-l <locale>``, ``--language <locale>``"
 msgstr "``-l <locale>``, ``--language <locale>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
@@ -137,37 +154,37 @@ msgstr ""
 "특정 로케일 (두 문장 코드로 된 <locale>)을 사용합니다. 더 자세한 정보는 :ref:"
 "`doc_locales`\\ 을 참고하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
 "프로젝트를 향하는 경로 (<directory>에는 'project.godot' 파일이 있어야 합니"
 "다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "``-u``, ``--upwards``"
 msgstr "``-u``, ``--upwards``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "Scan folders upwards for 'project.godot' file."
 msgstr "'project.godot' 파일을 찾기 위해 위로 폴더를 스캔합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "Path to a pack (.pck) file to load."
 msgstr "불러올 팩 (.pck) 파일을 향하는 경로."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid ""
 "Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
@@ -177,111 +194,111 @@ msgstr ""
 "`Thread Model <class_ProjectSettings_property_rendering/threads/"
 "thread_model>`\\ 를 참고하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "원격 파일 시스템 (``<host/IP>[:<port>]`` 주소)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 "오디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 ``--help``\\ 를 먼"
 "저 사용하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid "``--video-driver <driver>``"
 msgstr "``--video-driver <driver>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 "비디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 ``--help``\\ 를 먼"
 "저 사용하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "**Display options**"
 msgstr "**디스플레이 설정**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "``-f``, ``--fullscreen``"
 msgstr "``-f``, ``--fullscreen``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "Request fullscreen mode."
 msgstr "전체화면 모드를 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "``-m``, ``--maximized``"
 msgstr "``-m``, ``--maximized``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "Request a maximized window."
 msgstr "최대화된 창을 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "``-w``, ``--windowed``"
 msgstr "``-w``, ``--windowed``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "Request windowed mode."
 msgstr "창모드를 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "``-t``, ``--always-on-top``"
 msgstr "``-t``, ``--always-on-top``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "Request an always-on-top window."
 msgstr "항상 위로 고정된(always-on-top) 창을 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "``--resolution <W>x<H>``"
 msgstr "``--resolution <W>x<H>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Request window resolution."
 msgstr "창 해상도를 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "Request window position."
 msgstr "창 위치를 요청합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "``--low-dpi``"
 msgstr "``--low-dpi``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "Force low-DPI mode (macOS and Windows only)."
 msgstr "낮은 DPI 모드를 강제합니다 (macOS와 Windows만 가능)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
 msgid "``--no-window``"
 msgstr "``--no-window``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
-msgid ""
-"Disable window creation (Windows only). Useful together with ``--script``."
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
+#, fuzzy
+msgid "Run with invisible window. Useful together with ``--script``."
 msgstr ""
 "창 만들기를 끕니다 (Windows만 가능). ``--script``\\ 와 함께 쓰면 유용합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "**Debug options**"
 msgstr "**디버그 설정**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "Debug options are only available in the editor and debug export templates "
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
@@ -291,19 +308,19 @@ msgstr ""
 "(``debug`` 또는 ``release_debug`` 빌드 대상이 필요합니다. 더 자세한 정보는 :"
 "ref:`doc_introduction_to_the_buildsystem_target`\\ 을 참고하세요)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "``-d``, ``--debug``"
 msgstr "``-d``, ``--debug``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "Debug (local stdout debugger)."
 msgstr "디버그 (지역 표준 디버거)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid "``-b``, ``--breakpoints``"
 msgstr "``-b``, ``--breakpoints``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
@@ -311,61 +328,61 @@ msgstr ""
 "중단점 목록. 소스::라인으로 쉼표로 구분되며, 공백이 없습니다 (대신 %%20을 사"
 "용합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "Enable profiling in the script debugger."
 msgstr "스크립트 디버거에서 프로파일링을 켭니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "``--remote-debug <address>``"
 msgstr "``--remote-debug <address>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "Remote debug (``<host/IP>:<port>`` address)."
 msgstr "원격 디버그 (``<host/IP>:<port>`` 주소)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Show collision shapes when running the scene."
-msgstr "씬을 실행할 때 충돌 모양을 보이기."
+msgstr "씬을 실행할 때 콜리전 모양을 보여줍니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "Show navigation polygons when running the scene."
-msgstr "씬을 실행할 때 내비게이션 폴리곤을 보이기."
+msgstr "씬을 실행할 때 내비게이션 폴리곤을 보여줍니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr "높은 CPU 점유율을 시험합니다 (각 프레임을 <ms> 밀리초만큼 지연합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
 "실행 시간 규모를 제한합니다 (1.0이 기본 속도이며, 높은 값일 수록 더 빠릅니"
 "다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid "``--disable-render-loop``"
 msgstr "``--disable-render-loop``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
@@ -373,19 +390,19 @@ msgstr ""
 "렌더 루프를 끕니다. 따라서 스크립트에서 명시적으로 호출할 때만 렌더링을 합니"
 "다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "``--disable-crash-handler``"
 msgstr "``--disable-crash-handler``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Disable crash handler when supported by the platform code."
 msgstr "플랫폼 코드가 지원하는 경우 충돌 핸들러를 끕니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid "``--fixed-fps <fps>``"
 msgstr "``--fixed-fps <fps>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
@@ -393,39 +410,39 @@ msgstr ""
 "FPS(초당 프레임)을 고정된 숫자로 제한합니다. 이 설정은 실시간 동기화를 끕니"
 "다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "Print the frames per second to the stdout."
 msgstr "표준 출력에 FPS(초당 프레임)를 프린트합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "**Standalone tools**"
 msgstr "**독립형 도구**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "``-s <script>``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "Run a script."
 msgstr "스크립트를 실행합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "Only parse for errors and quit (use with ``--script``)."
 msgstr "오류만 구문 분석하고 종료합니다 (``--script``\\ 와 함께 사용합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid "``--export <target>``"
 msgstr "``--export <target>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid ""
 "Export the project using the given export target. Export only main pack if "
 "path ends with .pck or .zip (:ref:`tools "
@@ -435,11 +452,11 @@ msgstr ""
 "로 확장자 이름으로 끝나는 경우, 메인 팩만 내보냅니다 (:ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid "``--export-debug <target>``"
 msgstr "``--export-debug <target>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -447,11 +464,11 @@ msgstr ""
 "``--export``\\ 와 비슷하지만 디버그 템플릿을 사용합니다 (:ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid "``--doctool <path>``"
 msgstr "``--doctool <path>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid ""
 "Dump the engine API reference to the given <path> in XML format, merging if "
 "existing files are found (:ref:`tools "
@@ -461,11 +478,11 @@ msgstr ""
 "다면 병합합니다. (:ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "``--no-docbase``"
 msgstr "``--no-docbase``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -474,11 +491,11 @@ msgstr ""
 "ref:`tools(도구) <doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어"
 "야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -486,11 +503,11 @@ msgstr ""
 "스크립팅 솔루션을 빌드합니다 (예: C# 프로젝트 용. :ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "``--gdnative-generate-json-api``"
 msgstr "``--gdnative-generate-json-api``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -498,11 +515,11 @@ msgstr ""
 "GDNative 바인딩을 위해 Godot API의 JSON 덤프를 만듭니다 (:ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "``--test <test>``"
 msgstr "``--test <test>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -511,12 +528,12 @@ msgstr ""
 "합니다. (:ref:`tools(도구) <doc_introduction_to_the_buildsystem_tools>`\\ 가 "
 "켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 #, fuzzy
 msgid "``--export-pack <preset> <path>``"
 msgstr "``--export <target>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 #, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
@@ -526,11 +543,11 @@ msgstr ""
 "``--export``\\ 와 비슷하지만 디버그 템플릿을 사용합니다 (:ref:`tools(도구) "
 "<doc_introduction_to_the_buildsystem_tools>`\\ 가 켜져 있어야 합니다)."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:158
 msgid "Path"
 msgstr "경로"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:160
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -541,11 +558,11 @@ msgstr ""
 "든 쉽게 실행하도록 하는 것을 추천합니다. Linux에서 Godot 바이너리를 ``/usr/"
 "local/bin``\\ 에 배치하여, ``godot``\\ 라고 부르게 하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
 msgid "Setting the project path"
 msgstr "프로젝트 경로 설정하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:155
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid ""
 "Depending on where your Godot binary is located and what your current "
 "working directory is, you may need to set the path to your project for any "
@@ -554,7 +571,7 @@ msgstr ""
 "Godot 바이너리의 위치와 현재 작업 디렉토리의 위치에 따라, 다음 명령 중 하나"
 "가 제대로 작동하려면 프로젝트의 경로를 설정해야 합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:159
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
@@ -562,11 +579,11 @@ msgstr ""
 "프로젝트의``project.godot`` 파일에 대한 경로를 다음과 같이 첫 번째 인자로 주"
 "면 됩니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
 msgid "Or by using the ``--path`` argument:"
 msgstr "혹은 ``--path`` 인자를 사용합니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:185
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
@@ -574,11 +591,11 @@ msgstr ""
 "예를 들어, (아래에서 설명할) 게임을 내보내는 전체 명령은 다음과 같을 것입니"
 "다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:192
 msgid "Creating a project"
 msgstr "프로젝트 생성하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:182
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:195
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
@@ -586,25 +603,25 @@ msgstr ""
 "명령줄에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot 파"
 "일을 작성하십시오."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:193
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:206
 msgid "The project can now be opened with Godot."
 msgstr "프로젝트는 이제 Godot로 열릴 수 있습니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:197
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:210
 msgid "Running the editor"
 msgstr "편집기 실행하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:199
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:212
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"편집기는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
-"하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프로젝트 관"
-"리자가 나타납니다."
+"Godot를 ``-e`` 플래그로 실행하면 편집기가 실행됩니다. 이 작업은 프로젝트 디렉"
+"토리 또는 하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프"
+"로젝트 매니저가 나타납니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:207
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:220
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
@@ -612,11 +629,11 @@ msgstr ""
 "씬을 만들고 저장한다면, 나중에 해당 씬을 인수로 사용하여 동일한 코드를 실행하"
 "여 편집할 수 있습니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:215
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
 msgid "Erasing a scene"
 msgstr "씬 지우기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:217
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:230
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
@@ -626,11 +643,11 @@ msgstr ""
 "입니다. ``rm`` 을 사용해 씬 파일을 지웁니다. 참조하는 씬이 없다면 오류가 발생"
 "할 것입니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:226
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:239
 msgid "Running the game"
 msgstr "게임 실행하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:241
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
@@ -638,17 +655,17 @@ msgstr ""
 "게임을 실행하려면, 간단히 프로젝트 디렉토리나 하위 디렉토리에서 Godot를 실행"
 "하면 됩니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:235
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:248
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령줄로 전달하세요."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:243
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:256
 msgid "Debugging"
 msgstr "디버깅"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:245
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:258
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
@@ -658,11 +675,11 @@ msgstr ""
 "수 있습니다. 이를 위해 명령줄 디버거는 ``-d``\\ 를 추가하여 제공합니다. 게임"
 "이나 간단한 씬을 실행하는 데 모두 사용됩니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:260
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:273
 msgid "Exporting"
 msgstr "내보내기(Exporting)"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:262
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
@@ -672,7 +689,7 @@ msgstr ""
 "용합니다. Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이런 점에서 이상적"
 "입니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:271
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid ""
 "The preset name must match the name of an export preset defined in the "
 "project's ``export_presets.cfg`` file. If the preset name contains spaces or "
@@ -680,7 +697,7 @@ msgid ""
 "quotes."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:288
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
@@ -688,7 +705,7 @@ msgstr ""
 "게임의 디버그 버전을 내보내기 위해, ``--export`` 대신 ``--export-debug`` 스위"
 "치를 사용하세요. 매개 변수와 사용법은 동일합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:278
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
 "preset name and output path, with the file extension, instead of ``--"
@@ -696,7 +713,7 @@ msgid ""
 "PCK or ZIP."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid ""
 "When specifying a relative path as the path for `--export`, `--export-debug` "
 "or `--export-pack`, the path will be relative to the directory containing "
@@ -704,44 +721,42 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:289
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:302
 msgid "Running a script"
 msgstr "스크립트 실행하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
-#, fuzzy
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
 "feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 맞"
-"춤 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
+"춤 불러오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:295
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 #, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "스크립트는 SceneTree나 MainLoop에서 상속해야 합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:310
 #, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "어떻게 작동하는 지의 예제입니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:321
 msgid "And how to run it:"
 msgstr "그리고 어떻게 실행하는 지의 예제입니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:315
-#, fuzzy
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:328
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
-"project.godot이 경로에 존재하지 않으면, 현재 경로는 (``-path`` 가 지정되지 않"
+"project.godot가 경로에 존재하지 않으면, 현재 경로는 (``-path`` 가 지정되지 않"
 "는 한) 현재 작업 디렉토리로 가정합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:318
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:331
 msgid ""
 "The first line of ``sayhello.gd`` above is commonly referred to as a "
 "*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
@@ -749,7 +764,7 @@ msgid ""
 "macOS:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:330
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:343
 msgid ""
 "If the above doesn't work in your current version of Linux or macOS, you can "
 "always have the shebang run Godot straight from where it is located as "

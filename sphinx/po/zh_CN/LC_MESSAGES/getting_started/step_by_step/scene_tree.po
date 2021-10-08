@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 msgid "Using SceneTree"
-msgstr "使用场景树SceneTree"
+msgstr "使用场景树 SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
@@ -31,12 +31,12 @@ msgid ""
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
-"在之前的教程中, 所有内容都围绕节点的概念展开. 场景是节点的集合. 一旦进入 *场"
-"景树*, 它们就会被激活."
+"在之前的教程中，所有内容都是围绕节点这一概念展开的。场景是节点的合集，节点一"
+"进入 *场景树* 就会被激活。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr "``主循环(MainLoop)``"
+msgstr "主循环 MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -45,8 +45,8 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
-"Godot内部的工作方式如下所示. 有 :ref:`OS <class_OS>` 类, 它是在开始时运行的唯"
-"一实例. 之后, 加载所有驱动程序, 服务, 脚本语言, 场景系统等."
+"Godot 内部的工作方式是这样的：开始的时候只会有一个 :ref:`OS <class_OS>` 类的"
+"实例在运行，然后才会把驱动程序、服务器、脚本语言、场景系统等等这些加载进来。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 msgid ""
@@ -55,9 +55,9 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
-"初始化完成后, 需要为 :ref:`OS <class_OS>` 提供一个 :ref:`MainLoop "
-"<class_MainLoop>` 来运行. 至此, 所有这些都是内部工作(如果您有兴趣查看内部如何"
-"工作, 则可以在源代码中查看 ``main/main.cpp`` 文件)."
+"初始化完成后，就会为 :ref:`OS <class_OS>` 提供一个 :ref:`MainLoop "
+"<class_MainLoop>` 来运行。目前为止的所有内容都是内部工作（如果您有兴趣查看内"
+"部如何工作，可以在源代码中查看 main/main.cpp 文件）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 msgid ""
@@ -66,13 +66,13 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
-"用户程序或游戏将在 ``主循环(MainLoop)`` 中启动. 该类具有一些方法, 用于初始"
-"化, 空闲(帧同步回调), 固定(物理同步回调), 和输入. 同样, 这是低级的, 并且在"
-"Godot中制作游戏时, 编写自己的 ``主循环(MainLoop)`` 意义不大."
+"用户程序或游戏会在 MainLoop 中启动，这个类包含初始化、空闲（帧同步回调）、固"
+"定（物理同步回调）、输入等方法。当然这也属于底层，用 Godot 制作游戏时几乎不会"
+"遇到需要自行编写 MainLoop 的情况。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:33
 msgid "SceneTree"
-msgstr "场景树"
+msgstr "场景树 SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""

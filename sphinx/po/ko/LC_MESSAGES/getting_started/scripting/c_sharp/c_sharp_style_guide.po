@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,7 @@ msgstr "간단한 속성 접근자를 위해."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
-msgstr "간단한 객체, 배열, 혹은 컬렉션 이니셜라이저를 위해."
+msgstr "간단한 오브젝트, 배열, 혹은 컬렉션 이니셜라이저를 위해."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
@@ -335,7 +335,6 @@ msgstr ""
 "*'id'*\\ 는 약자가 **아닙니다**, 따라서 일반적인 식별자로 취급해야 합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
-#, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -344,9 +343,9 @@ msgid ""
 "``IDamageable``."
 msgstr ""
 "일반적으로 타입 이름을 식별자의 접두사로 사용하는 것은 바람직하지 않습니다, "
-"예를 들면  *'string strText'*\\ 나 *'float fPower'*\\ 가 있죠. 하지만 예외로 "
-"인터페이스에서, **반드시** 이름의 접두어 대문자 *'I'*\\ 를 갖는 것이 있습니"
-"다, *'IInventoryHolder'*\\ 나 *'IDamageable'*\\ 이 있죠."
+"예를 들면 ``string strText``\\ 나 ``float fPower``\\ 가 있죠. 하지만 예외로 "
+"인터페이스에서, **반드시** 이름의 접두어 대문자 ``I``\\ 를 갖는 것이 있습니"
+"다, ``IInventoryHolder``\\ 나 ``IDamageable``\\ 이 해당됩니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
 msgid ""
@@ -396,17 +395,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"
-msgstr "암시적 형식 지역 변수"
+msgstr "암시적 타입 지역 변수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:284
-#, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
-"지역 변수의 선언을 위해 암시적 형식 (*'var'*)를 사용하는 것을 생각해보세요, "
-"하지만 할당의 오른쪽에서 **타입이 분명할 때만** 해야합니다:"
+"지역 변수의 선언을 위해 암시적 타입 (``var``)을 사용하는 것을 고려해보세요, "
+"하지만 할당의 오른쪽이 **타입이 분명할 때만** 해야합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
 msgid "Other considerations"

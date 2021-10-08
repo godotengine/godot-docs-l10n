@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1059,9 +1059,8 @@ msgid "Appendix"
 msgstr "Annexe"
 
 #: ../../docs/tutorials/optimization/batching.rst:518
-#, fuzzy
 msgid "Batched primitives"
-msgstr "Priorités des tuiles aléatoires"
+msgstr "Primitives par lot"
 
 #: ../../docs/tutorials/optimization/batching.rst:520
 msgid ""
@@ -1069,22 +1068,26 @@ msgid ""
 "especially with primitives using an antialiased border. The following "
 "primitive types are currently available:"
 msgstr ""
+"Toutes les primitives ne peuvent pas être mises en lots. La mise en lot "
+"n'est pas non plus garantie, en particulier avec les primitives utilisant "
+"une bordure avec antialiasing. Les types de primitives suivants sont "
+"actuellement disponibles :"
 
 #: ../../docs/tutorials/optimization/batching.rst:524
 msgid "RECT"
-msgstr ""
+msgstr "RECT"
 
 #: ../../docs/tutorials/optimization/batching.rst:525
 msgid "NINEPATCH (depending on wrapping mode)"
-msgstr ""
+msgstr "NINEPATCH (selon le mode de wrapping)"
 
 #: ../../docs/tutorials/optimization/batching.rst:526
 msgid "POLY"
-msgstr ""
+msgstr "POLY"
 
 #: ../../docs/tutorials/optimization/batching.rst:527
 msgid "LINE"
-msgstr ""
+msgstr "LINE"
 
 #: ../../docs/tutorials/optimization/batching.rst:529
 msgid ""
@@ -1092,6 +1095,9 @@ msgid ""
 "drawing them manually with polys in a ``_draw()`` function. See :ref:"
 "`doc_custom_drawing_in_2d` for more information."
 msgstr ""
+"Avec les primitives non mises en lot, vous pouvez obtenir de meilleures "
+"performances en les dessinant manuellement avec des polys dans une fonction "
+"``_draw()``. Voir :ref:`doc_custom_drawing_in_2d` pour plus d'informations."
 
 #: ../../docs/tutorials/optimization/batching.rst:536
 msgid "Light scissoring threshold calculation"

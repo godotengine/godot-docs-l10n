@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,8 @@ msgid ""
 "While GLES2 supports ``DEPTH_TEXTURE`` in shaders, it may not work on some "
 "old hardware (especially mobile)."
 msgstr ""
+"Хотя GLES2 поддерживает ``DEPTH_TEXTURE`` в шейдерах, это может не работать "
+"на некоторых старых аппаратных средствах (особенно мобильных)."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
 msgid "Color space"
@@ -106,22 +108,24 @@ msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
 "appear slightly different between them especially when lighting is used."
 msgstr ""
+"GLES2 и GLES3 находятся в разных цветовых пространствах. Это означает, что "
+"цвета между ними будут немного отличаться, особенно при использовании "
+"освещения."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
-#, fuzzy
 msgid ""
 "If your game is going to use both GLES2 and GLES3, you can use an ``if`` "
 "statement check and see if the output is in sRGB, using ``OUTPUT_IS_SRGB``. "
 "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
 msgstr ""
-"В GLES2 это не нужно. Если ваша игра использует и GLES2 и GLES3, оберните "
-"код в условные операторы ``if`` проверяющие что вы ваш вывод в формате sRGB, "
-"используя ``OUTPUT_IS_SRGB``."
+"Если ваша игра будет использовать как GLES2, так и GLES3, вы можете "
+"использовать оператор ``if`` для проверки, является ли вывод sRGB, используя "
+"``OUTPUT_IS_SRGB``. ``OUTPUT_IS_SRGB`` имеет значение ``true`` в GLES2 и "
+"``false`` в GLES3."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
-#, fuzzy
 msgid "HDR"
-msgstr "HUD"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -130,6 +134,11 @@ msgid ""
 "use Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
 "range."
 msgstr ""
+"GLES2 не способен использовать функции рендеринга с высоким динамическим "
+"диапазоном (HDR). Если HDR установлен для вашего проекта или для данного "
+"видового экрана, Godot все равно будет использовать низкий динамический "
+"диапазон (LDR), который ограничивает значения видового экрана диапазоном "
+"``0-1``."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:53
 msgid ""
@@ -137,10 +146,13 @@ msgid ""
 "have no effect when HDR is disabled. This means debanding can't be used in "
 "GLES2."
 msgstr ""
+"Свойство Viewport **Debanding** и связанные с ним настройки проекта также не "
+"будут иметь эффекта, если HDR отключен. Это означает, что дебандинг не может "
+"быть использован в GLES2."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
-msgstr "Возможности SpatialMaterial"
+msgstr "Особенности SpatialMaterial"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid ""
@@ -152,27 +164,27 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Refraction"
-msgstr ""
+msgstr "Преломление"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Subsurface scattering"
-msgstr ""
+msgstr "Subsurface scattering (Подповерхностное рассеяние)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:63
 msgid "Anisotropy"
-msgstr ""
+msgstr "Анизотропия"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
 msgid "Clearcoat"
-msgstr ""
+msgstr "Прозрачное покрытие"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
 msgid "Depth mapping"
-msgstr "Отображение глубины"
+msgstr "Depth mapping (Глубин-маппинг)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
 msgid "When using SpatialMaterials they will not even appear in the editor."
-msgstr ""
+msgstr "При использовании SpatialMaterials они даже не появятся в редакторе."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:69
 msgid ""
@@ -181,21 +193,27 @@ msgid ""
 "still be able to set the ``SSS`` built-in (which normally adds subsurface "
 "scattering) in your shader, but nothing will happen."
 msgstr ""
+"В пользовательских :ref:`ShaderMaterials <class_ShaderMaterial>`, вы можете "
+"установить значения для этих функций, но они будут нефункциональны. "
+"Например, вы все еще сможете установить встроенное значение ``SSS`` (которое "
+"обычно добавляет подповерхностное рассеивание) в вашем шейдере, но ничего не "
+"произойдет."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
-#, fuzzy
 msgid "Environment features"
-msgstr "Функции и Переменные"
+msgstr "Особенности окружающей среды"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
 msgstr ""
+"В GLES2 отсутствуют следующие возможности в :ref:`Environment "
+"<class_Environment>`:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
 msgid "Auto exposure"
-msgstr "Авто экспозиция"
+msgstr "Автоматическая экспозиция"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
 msgid "Tonemapping"
@@ -203,15 +221,15 @@ msgstr "Тонирование"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Screen space reflections"
-msgstr "Отражения в экранном пространстве"
+msgstr "Отражения в пространстве экрана"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
 msgid "Screen space ambient occlusion"
-msgstr ""
+msgstr "Окружающая окклюзия в пространстве экрана"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "That means that in GLES2 environments you can only set:"
-msgstr "Это означает что в среде GLES2 вы можете установить только:"
+msgstr "Это означает, что в среде GLES2 вы можете только установить:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Sky (including procedural sky)"

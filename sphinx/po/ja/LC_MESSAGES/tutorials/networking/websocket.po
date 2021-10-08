@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,11 +89,19 @@ msgstr ""
 "`high-level multiplayer <doc_high_level_multiplayer>` のセクションを参照して"
 "ください。"
 
-#: ../../docs/tutorials/networking/websocket.rst:24
+#: ../../docs/tutorials/networking/websocket.rst:25
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:31
 msgid "Minimal client example"
 msgstr "最小限のクライアントの例"
 
-#: ../../docs/tutorials/networking/websocket.rst:26
+#: ../../docs/tutorials/networking/websocket.rst:33
 msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
@@ -101,31 +109,32 @@ msgstr ""
 "この例では、リモートサーバーへのWebSocket接続を作成する方法と、データを送受信"
 "する方法を示します。"
 
-#: ../../docs/tutorials/networking/websocket.rst:79
+#: ../../docs/tutorials/networking/websocket.rst:86
 msgid "This will print:"
 msgstr "これは次のように出力されます:"
 
-#: ../../docs/tutorials/networking/websocket.rst:87
+#: ../../docs/tutorials/networking/websocket.rst:94
 msgid "Minimal server example"
 msgstr "最小限のサーバーの例"
 
-#: ../../docs/tutorials/networking/websocket.rst:89
+#: ../../docs/tutorials/networking/websocket.rst:96
+#, fuzzy
 msgid ""
-"This example will show you how to create a WebSocket server that listen for "
+"This example will show you how to create a WebSocket server that listens for "
 "remote connections, and how to send and receive data."
 msgstr ""
 "この例では、リモート接続をリッスンするWebSocketサーバーを作成する方法と、デー"
 "タを送受信する方法を示します。"
 
-#: ../../docs/tutorials/networking/websocket.rst:145
+#: ../../docs/tutorials/networking/websocket.rst:152
 msgid "This will print (when a client connects) something similar to this:"
 msgstr "これは(クライアントが接続したときに)次のようなものを出力します:"
 
-#: ../../docs/tutorials/networking/websocket.rst:153
+#: ../../docs/tutorials/networking/websocket.rst:160
 msgid "Advanced chat demo"
 msgstr "高度なチャットデモ"
 
-#: ../../docs/tutorials/networking/websocket.rst:155
+#: ../../docs/tutorials/networking/websocket.rst:162
 msgid ""
 "A more advanced chat demo which optionally uses the multiplayer mid-level "
 "abstraction and a high level multiplayer demo are available in the `godot "

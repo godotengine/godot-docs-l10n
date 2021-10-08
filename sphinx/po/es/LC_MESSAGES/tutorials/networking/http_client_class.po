@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,15 @@ msgstr ""
 "desees echarle un vistazo a :ref:`HTTPRequest <class_HTTPRequest>` primero, "
 "que tiene un tutorial disponible :ref:`aquí <doc_http_request_class>`."
 
-#: ../../docs/tutorials/networking/http_client_class.rst:10
+#: ../../docs/tutorials/networking/http_client_class.rst:12
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/http_client_class.rst:17
 msgid ""
 "Here's an example of using the :ref:`HTTPClient <class_HTTPClient>` class. "
 "It's just a script, so it can be run by executing:"
@@ -42,6 +50,6 @@ msgstr ""
 "<class_HTTPClient>`. Es solo un script, por lo que se puede correr "
 "ejecutando:"
 
-#: ../../docs/tutorials/networking/http_client_class.rst:23
+#: ../../docs/tutorials/networking/http_client_class.rst:30
 msgid "It will connect and fetch a website."
 msgstr "Se conectará y buscará un sitio web."

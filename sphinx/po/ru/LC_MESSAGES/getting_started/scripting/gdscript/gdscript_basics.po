@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,7 +197,7 @@ msgstr "Выход из выполнения текущего ``for`` или ``w
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid "continue"
-msgstr "продолжить"
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid ""
@@ -2006,14 +2006,13 @@ msgstr ""
 "является тем же ``e`` переданным в ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables, e.g.::"
 msgstr ""
-"если конструктор ``_init`` в ``Idle.gd`` принимает ноль аргументов, то ему "
+"Если конструктор ``_init`` в ``Idle.gd`` принимает ноль аргументов, то ему "
 "все равно нужно передать некоторое значение в родительский класс ``State."
 "gd``, даже если он ничего не делает. Что подводит нас к тому, что литералы "
 "можно передавать не только переменным, но и в базовом конструкторе. Например:"

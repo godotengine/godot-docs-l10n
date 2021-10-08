@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,7 +263,6 @@ msgstr ""
 "をお読み下さい。"
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -272,7 +271,7 @@ msgid ""
 msgstr ""
 "GDScriptを使用する理由は幾つもありますが、特に、試作やアルファ/ベータ版の段階"
 "にある場合や、大作を作るのでない場合などが挙げられます。しかし一番の理由は、"
-"全体的に\\ **複雑さを減らせることです。**"
+"全体的に **複雑さを減らせることです**。"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -528,7 +527,6 @@ msgstr ""
 "なぜGodotはそのコア機能セットを小さいままにすることを目指しているのですか？"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
@@ -894,7 +892,6 @@ msgstr ""
 "当する場合)はボーナスポイントをもたらします。"
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
 msgstr "ライブラリとしてGodotを使用できますか？"
 
@@ -913,12 +910,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"ゲーム以外のアプリケーションを作成する場合、プロジェクト設定で :ref:`low-"
+"processor mode <class_ProjectSettings_property_application/run/"
+"low_processor_mode>`を有効にして、CPUとGPUの使用量を減らしてください。"
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"ただし、モバイルプラットフォームでは low-processor モードがまだサポートされて"
+"いないため、Godotを使用して *モバイル* アプリケーションを作成することはお勧め"
+"しません。"
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -926,6 +929,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Godotで作成されたオープンソースアプリケーションの例については、 `Material "
+"Maker <https://github.com/RodZill4/material-maker>`__ と `Pixelorama "
+"<https://github.com/Orama-Interactive/Pixelorama>`__ をご覧ください。"
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -957,7 +963,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Godot はどのユーザーインターフェースツールキットを使いますか？"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -968,6 +974,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godotは、GTK、Qt、wxWidgetsなどの標準の :abbr:`GUI (Graphical User "
+"Interface)` ツールキットを使用しません。代わりに、Godotは、OpenGLESまたは"
+"Vulkanを使用してレンダリングされた独自のユーザーインターフェイスツールキット"
+"を使用します。このツールキットは、エディター（C ++で記述されている）のレンダ"
+"リングに使用されるコントロールノードの形式で公開されます。これらのコントロー"
+"ルノードは、Godotでサポートされている任意のスクリプト言語のプロジェクトでも使"
+"用できます。"
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -977,6 +990,11 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"このカスタムツールキットを使用すると、ハードウェア アクセラレーションのメリッ"
+"トを受けられ、すべてのプラットフォームで一貫した外観を実現できます。その上、"
+"GTKやQtに付随するLGPLライセンス制限に対処する必要がありません。最後に、エディ"
+"タ自体がGodotのUIシステムを特に複雑に応用しているユーザの一つなので、Godotは"
+"「ドッグフーディング」しています。"
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -984,11 +1002,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"このカスタムUIツールキットを\\ :ref:`ライブラリとして使用することはできませ"
+"ん <doc_faq_use_godot_as_library>`\\ が、しかしエディタを使えばGodotで\\ :"
+"ref:`ゲーム以外のアプリケーションを作成する <doc_faq_non_game_applications>`"
+"\\ ことはできます。"
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "なぜGodotはSTL (Standard Template Library)を使わないのですか"
+msgstr "なぜGodotはSTL (Standard Template Library)を使わないのですか？"
 
 #: ../../docs/about/faq.rst:415
 msgid ""

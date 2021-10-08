@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,15 +190,13 @@ msgid "Add the Godot engine library as a dependency to your plugin module:"
 msgstr "将Godot引擎库作为依赖项添加到插件模块:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:59
-#, fuzzy
 msgid ""
 "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
 "from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
 "``godot-lib.4.0.stable.aar``)."
 msgstr ""
-"从 `Godot 下载页面 <https://godotengine.org/download>`_ 下载Godot引擎库"
-"( ``godot-lib.<版本(version)>.<状态(status)>.arr`` )(例如: ``godot-lib.3.2.2."
-"stable.arr`` )."
+"从 `Godot 下载页 <https://godotengine.org/download>`_ 下载 Godot 引擎库"
+"（ ``godot-lib.<版本>.<状态>.aar`` ，例如 ``godot-lib.4.0.stable.aar`` ）。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:60
 msgid ""
@@ -218,15 +216,13 @@ msgstr ""
 "``implementation`` 改为 ``compileOnly`` ."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:64
-#, fuzzy
 msgid ""
 "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
 "from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
 "``godot-lib.3.2.2.stable.aar``)."
 msgstr ""
-"从 `Godot 下载页面 <https://godotengine.org/download>`_ 下载Godot引擎库"
-"( ``godot-lib.<版本(version)>.<状态(status)>.arr`` )(例如: ``godot-lib.3.2.2."
-"stable.arr`` )."
+"从 `Godot 下载页 <https://godotengine.org/download>`_ 下载 Godot 引擎库"
+"（ ``godot-lib.<版本>.<状态>.aar`` ，例如 ``godot-lib.3.2.2.stable.aar`` ）。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:66
 msgid "Update the plugin ``AndroidManifest.xml`` file:"
@@ -295,9 +291,8 @@ msgid "The configuration file format is as follow::"
 msgstr "配置文件格式如下:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:95
-#, fuzzy
 msgid "[dependencies]"
-msgstr "**依赖** :"
+msgstr "[dependencies]"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:97
 msgid ""
@@ -305,6 +300,9 @@ msgid ""
 "android:remote-dep1:0.0.1\", \"example.plugin.android:remote-dep2:0.0.1\"] "
 "custom_maven_repos=[\"http://repo.mycompany.com/maven2\"]"
 msgstr ""
+"local=[\"local_dep1.aar\", \"local_dep2.aar\"] remote=[\"example.plugin."
+"android:remote-dep1:0.0.1\", \"example.plugin.android:remote-dep2:0.0.1\"] "
+"custom_maven_repos=[\"http://repo.mycompany.com/maven2\"]"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:117
 msgid "The ``config`` section and fields are required and defined as follow:"
@@ -312,26 +310,23 @@ msgstr "``config`` 部分和字段是必须的, 定义如下:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:119
 msgid "**name**: name of the plugin"
-msgstr "**名称(name)** :(插件的名称)"
+msgstr "**name**：插件的名称"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:121
-#, fuzzy
 msgid "**name**: name of the plugin."
-msgstr "**名称(name)** :(插件的名称)"
+msgstr "**name**：插件的名称。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:122
-#, fuzzy
 msgid ""
 "**binary_type**: can be either ``local`` or ``remote``. The type affects the "
 "**binary** field."
 msgstr ""
-"**二进制类型(binary_type)** : 可以是 ``local`` 或 ``remote`` . 类型影响 **二"
-"进制(binary)** 字段"
+"**binary_type**：可以是 ``local`` 或 ``remote``。类型影响 **binary** 字段。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:123
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:125
 msgid "**binary**:"
-msgstr "**二进制(binary)** :"
+msgstr "**binary**："
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:127
 msgid ""
@@ -380,16 +375,15 @@ msgstr ""
 "路径可以是相对的或绝对的."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:139
-#, fuzzy
 msgid ""
 "If **binary_type** is ``remote``, then this should be a declaration for a "
 "`remote gradle binary <https://developer.android.com/studio/build/"
 "dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
 "plugin:0.0.0``)."
 msgstr ""
-"如果 **binary_type** 是 ``remote`` , 那么这应该是一个 `remote gradle 二进制 "
+"如果 **binary_type** 是 ``remote`` ，那么这应该是一个 `remote gradle 二进制 "
 "<https://developer.android.com/studio/build/dependencies#dependency-types>`_ "
-"(例如:``org.godot.example:my-plugin:0.0.0`` )的声明."
+"（例如： ``org.godot.example:my-plugin:0.0.0`` ）的声明。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
 msgid ""
@@ -477,14 +471,14 @@ msgid "Reference implementations"
 msgstr "参考方案"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:178
-#, fuzzy
 msgid ""
 "`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
 "godot_oculus_mobile>`_ - `Bundled gdnative resources <https://github.com/"
 "GodotVR/godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/"
 "godot_ovrmobile>`_"
 msgstr ""
-"`捆绑的gdnative 资源 <https://github.com/GodotVR/godot_oculus_mobile/tree/"
+"`Godot Oculus Mobile 插件 <https://github.com/GodotVR/godot_oculus_mobile>`_ "
+"- `捆绑的 gdnative 资源 <https://github.com/GodotVR/godot_oculus_mobile/tree/"
 "master/plugin/src/main/assets/addons/godot_ovrmobile>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:180
@@ -508,16 +502,15 @@ msgid "Check ``adb logcat`` for possible problems, then:"
 msgstr "检查 ``adb logcat`` 是否存在可能的问题, 然后:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:191
-#, fuzzy
 msgid ""
 "Check that the methods exposed by the plugin used the following Java types: "
 "``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``org."
 "godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java."
 "lang.String[]``."
 msgstr ""
-"检查插件暴露的方法是否使用了下列Java类型. ``void``, ``boolean``, ``int``, "
+"检查插件暴露的方法是否使用了下列 Java 类型： ``void``, ``boolean``, ``int``, "
 "``float``, ``java.lang.String``, ``org.godotengine.godot.Dictionary``, "
-"``int[]``, ``byte[]``, ``float[]``, ``java.lang.String[]``."
+"``int[]``, ``byte[]``, ``float[]``, ``java.lang.String[]`` 。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:192
 msgid "More complex datatypes are not supported for now."

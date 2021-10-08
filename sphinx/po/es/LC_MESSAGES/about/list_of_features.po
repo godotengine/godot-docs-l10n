@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -790,8 +790,9 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Sombreadores personalizados de vértice, fragmento, luz y cielo."
 
 #: ../../docs/about/list_of_features.rst:288
+#, fuzzy
 msgid ""
-"Text-based shaders using a `shader language inspired by GLSL "
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
 "Sombreadores basados en texto que utilizan un `lenguaje de sombreado "
@@ -865,9 +866,8 @@ msgstr ""
 "asincrónicas o hacer uso de múltiples núcleos de procesador."
 
 #: ../../docs/about/list_of_features.rst:312
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C #: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C #: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -1683,10 +1683,11 @@ msgstr ""
 "<doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:589
+#, fuzzy
 msgid ""
-"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
-"documents features that have been agreed upon and may be implemented in "
-"future Godot releases."
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
 msgstr ""
 "El \"mapa de ruta\" <https://github.com/godotengine/godot-roadmap>`__ "
 "repositorio de documentos tiene características que han sido acordadas y "

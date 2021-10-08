@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:4
-#, fuzzy
 msgid "GDScript grammar"
-msgstr "Строки формата GDScript"
+msgstr "Грамматика GDScript"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:6
 msgid ""
@@ -28,6 +27,9 @@ msgid ""
 "wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_, for reference "
 "purposes."
 msgstr ""
+"Это формальная грамматика GDScript, написанная на `EBNF <https://en."
+"wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_, для справочных "
+"целей."
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:9
 msgid ""
@@ -36,3 +38,7 @@ msgid ""
 "grammar definition. Inconsistencies here likely mean an error in this "
 "grammar, not a bug in GDScript."
 msgstr ""
+"Эта грамматика носит только описательный характер, полученный из справочной "
+"документации и текущей реализации. Парсер GDScript **не** генерируется на "
+"основе определения грамматики. Несоответствия здесь, скорее всего, означают "
+"ошибку в этой грамматике, а не ошибку в GDScript."

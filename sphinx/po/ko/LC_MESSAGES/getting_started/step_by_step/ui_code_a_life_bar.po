@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,9 +122,9 @@ msgid ""
 msgstr ""
 "시그널은 옵저버 패턴의 Godot 버전입니다. 그들로 메시지를 전달할 수 있습니다. "
 "다른 노드들은 시그널을 **방출(emits)** 하고 정보를 받을 수 있는 다른 물체와 "
-"연결할 수 있습니다. 이것은 사용자 인터페이스와 업적 달성 시스템에 많이 쓰일 "
-"강력한 도구입니다. 그러나 그것들을 남용하기를 권하진 않습니다. 두 노드를 연결"
-"하면 노드 간의 커플링이 생겨납니다. 많은 연결이 있다면, 관리하기가 어려워집니"
+"연결할 수 있습니다. 이것은 유저 인터페이스와 업적 달성 시스템에 많이 쓰일 강"
+"력한 도구입니다. 그러나 그것들을 남용하기를 권하진 않습니다. 두 노드를 연결하"
+"면 노드 간의 커플링이 생겨납니다. 많은 연결이 있다면, 관리하기가 어려워집니"
 "다. GDquest의 `signals video tutorial <https://youtu.be/l0BkQxF7X3E>`_ 에서 "
 "더 많은 정보를 보실 수 있습니다."
 
@@ -180,7 +180,7 @@ msgstr "씬에는 배경 스프라이트, GUI, 그리고 두 캐릭터가 있습
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
-msgstr "GUI 씬이 자식으로 보이게 놓은 씬 트리"
+msgstr "GUI 씬이 자손으로 보이게 놓은 씬 트리"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""
@@ -188,8 +188,8 @@ msgid ""
 "comes with a barebones script where we get the path to nodes that exist "
 "inside the scene:"
 msgstr ""
-"GUI 씬은 게임 사용자 인터페이스 전체를 캡슐화 합니다. 씬 안에 존재하는 노드"
-"의 경로를 얻는 스크립트와 함께 제공됩니다:"
+"GUI 씬은 게임의 그래픽 유저 인터페이스 전체를 캡슐화 합니다. 씬 안에 존재하"
+"는 노드의 경로를 얻는 스크립트와 함께 제공됩니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
-msgstr "Player 씬이 자식으로 설정된 씬 트리"
+msgstr "Player 씬이 자손으로 설정된 씬 트리"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
@@ -411,7 +411,6 @@ msgstr ""
 "일어난 *바로 직후* 에 업데이트 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -424,7 +423,7 @@ msgid ""
 msgstr ""
 "시그널이 파생된, 옵저버 패턴은, 여전히 노드 분기 간의 연결을 추가합니다. 하지"
 "만 일반적으로 두 개의 분리된 클래스 사이를 연결하기 위해 직접 노드를 접근하"
-"는 것보다 더 가볍고 더 안전합니다. 부모 노드가 자식 노드의 값을 가져올 수 있"
+"는 것보다 더 가볍고 더 안전합니다. 부모 노드가 자손 노드의 값을 가져올 수 있"
 "습니다. 하지만 별도의 가지에서 이 작업을 한다면 시그널을 더 선호할 것입니다. "
 "더 많은 정보는 `Observer pattern <http://gameprogrammingpatterns.com/"
 "observer.html>`_ 에서 Game Programming Patterns 를 읽어보세요. `전체 책 "

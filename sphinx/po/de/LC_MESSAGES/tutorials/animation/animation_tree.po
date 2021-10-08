@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,6 +123,8 @@ msgid ""
 "Animation Blend nodes, which are used within ``AnimationNodeBlendTree`` as "
 "single-graph blending via multiple input ports."
 msgstr ""
+"Animation Blend-Knoten, die innerhalb des ``AnimationNodeBlendTree`` als "
+"Single-Graph-Blending über mehrere Eingangsports verwendet werden."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
@@ -135,12 +137,18 @@ msgid ""
 "``AnimationNodeAnimation``: Selects an animation from the list and plays it. "
 "This is the simplest root node, and generally not used directly as root."
 msgstr ""
+"AnimationNodeAnimation``: Wählt eine Animation aus der Liste aus und spielt "
+"sie ab. Dies ist der einfachste Wurzel-Node und wird im Allgemeinen nicht "
+"direkt als Wurzel verwendet."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:53
 msgid ""
 "``AnimationNodeBlendTree``: Contains many *blend* type nodes, such as mix, "
 "blend2, blend3, one shot, etc. This is one of the most commonly used roots."
 msgstr ""
+"``AnimationNodeBlendTree``: Enthält viele Nodes vom Typ *blend*, z. B. mix, "
+"blend2, blend3, one shot usw. Dies ist einer der am häufigsten verwendeten "
+"Nodes."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:54
 msgid ""
@@ -148,12 +156,19 @@ msgid ""
 "graph. Each node is used as a *state*, and provides multiple functions to "
 "alternate between states."
 msgstr ""
+"``AnimationNodeStateMachine``: Enthält mehrere Wurzel-Nodes als "
+"untergeordnete Nodes in einem Diagramm. Jeder Node wird als *State* "
+"verwendet und bietet mehrere Funktionen, um zwischen den Zuständen zu "
+"wechseln."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:55
 msgid ""
 "``AnimationNodeBlendSpace2D``: Allows placing root nodes in a 2D blend "
 "space. Control the blend position in 2D to mix between multiple animations."
 msgstr ""
+"AnimationNodeBlendSpace2D``: Ermöglicht die Platzierung von Wurzel-Nodes in "
+"einem 2D-Überblendungsraum. Steuern Sie die Überblendungsposition in 2D, um "
+"zwischen mehreren Animationen zu wechseln (überblenden)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:56
 msgid "``AnimationNodeBlendSpace1D``: Simplified version of the above (1D)."
@@ -162,31 +177,41 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:59
 msgid "Blend tree"
-msgstr ""
+msgstr "BlendTree (Baum überblenden)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:61
 msgid ""
 "An ``AnimationNodeBlendTree`` can contain both root and regular nodes used "
 "for blending. Nodes are added to the graph from a menu:"
 msgstr ""
+"Ein ``AnimationNodeBlendTree`` kann sowohl Wurzel- als auch reguläre Nodes "
+"enthalten, die zum Überblenden verwendet werden. Nodes werden dem Graphen "
+"über ein Menü hinzugefügt:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:65
 msgid ""
 "All blend trees contain an ``Output`` node by default, and something has to "
 "be connected to it in order for animations to play."
 msgstr ""
+"Alle BlendTrees enthalten standardmäßig einen ``Output``-Knoten, an den "
+"etwas angeschlossen werden muß, damit die Animationen abgespielt werden "
+"können."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:67
 msgid ""
 "The easiest way to test this functionality is to connect an ``Animation`` "
 "node to it directly:"
 msgstr ""
+"Der einfachste Weg diese Funktionalität zu testen besteht darin, einen "
+"``Animation``-Node direkt mit ihm zu verbinden:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:71
 msgid ""
 "This will simply play back the animation. Make sure that the "
 "``AnimationTree`` is active for something to actually happen."
 msgstr ""
+"Damit wird die Animation einfach abgespielt. Stellen Sie sicher, dass der "
+"``AnimationTree`` aktiv ist, damit tatsächlich etwas passiert."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:73
 msgid "Following is a short description of available nodes:"
@@ -229,7 +254,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
-msgstr ""
+msgstr "Seek (Suche)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
@@ -237,9 +262,9 @@ msgid ""
 "of the animation graph. Use this node type to play an ``Animation`` from the "
 "start or a certain playback position inside the ``AnimationNodeBlendTree``."
 msgstr ""
-"Dieser Knoten kann verwendet werden, um einen Suchbefehl für beliebige "
-"Unterkinder des Animationsgraphen zu veranlassen. Verwenden Sie diesen "
-"Knotentyp, um eine ``Animation`` ab dem Start oder einer bestimmten "
+"Dieser Node kann verwendet werden, um einen Suchbefehl für beliebige "
+"untergeordnete Nodes des Animationsgraphen zu veranlassen. Verwenden Sie "
+"diesen Node-Typ, um eine ``Animation`` ab dem Start oder einer bestimmten "
 "Abspielposition innerhalb des ``AnimationNodeBlendTree`` abzuspielen."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:101

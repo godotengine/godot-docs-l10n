@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,6 +131,8 @@ msgid ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer buffer **)**"
 msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** Zeichenfolgenpfad, "
+"ArrayBuffer buffer **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
@@ -329,7 +331,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:164
 msgid "The location where the file will be created."
-msgstr ""
+msgstr "Der Ort, an dem die Datei erstellt werden soll."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
 msgid "The content of the file."
@@ -604,7 +606,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:312
 msgid "The status code returned by Godot on exit."
-msgstr ""
+msgstr "Der von Godot beim Beenden zurückgegebene Statuscode."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:317
 msgid "A callback function for displaying download progress."
@@ -640,11 +642,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:329
 msgid "The current amount of downloaded bytes so far."
-msgstr ""
+msgstr "Die aktuelle Anzahl der bisher heruntergeladenen Bytes."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:332
 msgid "The total amount of bytes to be downloaded."
-msgstr ""
+msgstr "Die Gesamtmenge der herunterzuladenden Bytes."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:337
 msgid ""

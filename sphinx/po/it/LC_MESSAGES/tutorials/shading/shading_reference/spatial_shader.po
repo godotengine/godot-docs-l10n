@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,6 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
-#, fuzzy
 msgid "**blend_mix**"
 msgstr "**blend_mix**"
 
@@ -57,7 +56,6 @@ msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
-#, fuzzy
 msgid "**blend_add**"
 msgstr "**blend_add**"
 
@@ -66,7 +64,6 @@ msgid "Additive blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
-#, fuzzy
 msgid "**blend_sub**"
 msgstr "**blend_sub**"
 
@@ -75,7 +72,6 @@ msgid "Subtractive blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
-#, fuzzy
 msgid "**blend_mul**"
 msgstr "**blend_mul**"
 
@@ -84,7 +80,6 @@ msgid "Multiplicative blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
-#, fuzzy
 msgid "**depth_draw_opaque**"
 msgstr "**depth_draw_opaque**"
 
@@ -93,7 +88,6 @@ msgid "Only draw depth for opaque geometry (not transparent)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
-#, fuzzy
 msgid "**depth_draw_always**"
 msgstr "**depth_draw_always**"
 
@@ -102,7 +96,6 @@ msgid "Always draw depth (opaque and transparent)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
-#, fuzzy
 msgid "**depth_draw_never**"
 msgstr "**depth_draw_never**"
 
@@ -111,7 +104,6 @@ msgid "Never draw depth."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
-#, fuzzy
 msgid "**depth_draw_alpha_prepass**"
 msgstr "**depth_draw_alpha_prepass**"
 
@@ -120,7 +112,6 @@ msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
-#, fuzzy
 msgid "**depth_test_disable**"
 msgstr "**depth_test_disable**"
 
@@ -129,16 +120,15 @@ msgid "Disable depth testing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
-#, fuzzy
 msgid "**cull_front**"
 msgstr "**cull_front**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
+#, fuzzy
 msgid "Cull front-faces."
-msgstr ""
+msgstr "Elimina le facce frontali."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:37
-#, fuzzy
 msgid "**cull_back**"
 msgstr "**cull_back**"
 
@@ -147,7 +137,6 @@ msgid "Cull back-faces (default)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:39
-#, fuzzy
 msgid "**cull_disabled**"
 msgstr "**cull_disabled**"
 
@@ -156,7 +145,6 @@ msgid "Culling disabled (double sided)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
-#, fuzzy
 msgid "**unshaded**"
 msgstr "**unshaded**"
 
@@ -165,7 +153,6 @@ msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
-#, fuzzy
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
@@ -174,7 +161,6 @@ msgid "Lambert shading for diffuse (default)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
-#, fuzzy
 msgid "**diffuse_lambert_wrap**"
 msgstr "**diffuse_lambert_wrap**"
 
@@ -183,7 +169,6 @@ msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
-#, fuzzy
 msgid "**diffuse_oren_nayar**"
 msgstr "**diffuse_oren_nayar**"
 
@@ -192,7 +177,6 @@ msgid "Oren Nayar for diffuse."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:49
-#, fuzzy
 msgid "**diffuse_burley**"
 msgstr "**diffuse_burley**"
 
@@ -201,7 +185,6 @@ msgid "Burley (Disney PBS) for diffuse."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:51
-#, fuzzy
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
 
@@ -210,7 +193,6 @@ msgid "Toon shading for diffuse."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:53
-#, fuzzy
 msgid "**specular_schlick_ggx**"
 msgstr "**specular_schlick_ggx**"
 
@@ -219,7 +201,6 @@ msgid "Schlick-GGX for specular (default)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:55
-#, fuzzy
 msgid "**specular_blinn**"
 msgstr "**specular_blinn**"
 
@@ -228,7 +209,6 @@ msgid "Blinn for specular (compatibility)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:57
-#, fuzzy
 msgid "**specular_phong**"
 msgstr "**specular_phong**"
 
@@ -237,7 +217,6 @@ msgid "Phong for specular (compatibility)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:59
-#, fuzzy
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
 
@@ -246,7 +225,6 @@ msgid "Toon for specular."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
-#, fuzzy
 msgid "**specular_disabled**"
 msgstr "**specular_disabled**"
 
@@ -256,7 +234,6 @@ msgid "Disable specular."
 msgstr "Disattiva speculare."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
-#, fuzzy
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
 
@@ -265,7 +242,6 @@ msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
-#, fuzzy
 msgid "**world_vertex_coords**"
 msgstr "**world_vertex_coords**"
 
@@ -283,7 +259,6 @@ msgid "Use when non-uniform scale is applied to mesh."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
-#, fuzzy
 msgid "**vertex_lighting**"
 msgstr "**vertex_lighting**"
 
@@ -347,7 +322,6 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:309
-#, fuzzy
 msgid "Built-in"
 msgstr "Incorporato"
 
@@ -408,12 +382,14 @@ msgid "**x**: Rotation angle in radians."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
+#, fuzzy
 msgid "**y**: Phase during lifetime (0 to 1)."
-msgstr ""
+msgstr "**y**: Fase durante la vita (da 0 a 1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#, fuzzy
 msgid "**z**: Animation frame."
-msgstr ""
+msgstr "**z**: frame di animazione."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
 msgid ""
@@ -1028,7 +1004,6 @@ msgid "in float **ROUGHNESS**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:352
-#, fuzzy
 msgid "Roughness."
 msgstr "Rugosità."
 

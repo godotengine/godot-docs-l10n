@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1977,7 +1977,6 @@ msgstr ""
 "``e`` předané konstruktoru ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -2162,6 +2161,9 @@ msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
+"Signály představují nástroj pro vyslání zprávy objektem tak, aby na ní mohly "
+"ostatní objekty reagovat. Chcete-li pro třídu vytvořit vlastní signály, "
+"použijte klíčové slovo ``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
 msgid ""
@@ -2171,12 +2173,19 @@ msgid ""
 "`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
 "the Game Programming Patterns ebook."
 msgstr ""
+"Signály představují mechanismus zpětného volání tzv. `Callback <https://en."
+"wikipedia.org/wiki/Callback_(computer_programming)>`_. Plní také roli "
+"Pozorovatelů (Observers), což je běžný návrhový vzor. Další informace "
+"naleznete v tutoriálu `Observer <https://gameprogrammingpatterns.com/"
+"observer.html>`_ v elektronické knize Návrhové vzory ve hrách ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
+"Tyto signály můžete spojit s metodami stejným způsobem, jakým připojujete "
+"vestavěné signály uzlů jako :ref:`class_Button` nebo :ref:`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid ""
@@ -2184,10 +2193,13 @@ msgid ""
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
+"V příkladu níže připojíme signál ``health_depleted`` uzlu ``Character`` k "
+"uzlu ``Game``. Když uzel ``Character`` vyšle signál, zavolá se funkce "
+"``_on_Character_health_depleted`` herního uzlu::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "You can emit as many arguments as you want along with a signal."
-msgstr ""
+msgstr "Spolu se signálem můžete vyslat libovolný počet argumentů."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1405
 msgid ""
@@ -2195,6 +2207,10 @@ msgid ""
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
+"Zde je příklad, kdy je to užitečné. Řekněme, že chceme mít na obrazovce "
+"ukazatel života, který bude reagovat na změny zdraví pomocí animace, ale "
+"zároveň v našem stromu scén chceme udržet uzly uživatelského rozhraní a "
+"hráče oddělené."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
 msgid ""
@@ -2204,12 +2220,20 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"V našem skriptu ``Character.gd`` definujeme signál ``health_changed`` a "
+"vyšleme jej pomocí :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` a z uzlu ``Game``, který je v našem "
+"stromu scén výše, jej připojíme k ``Lifebar`` pomocí metody :ref:`Object."
+"connect() <class_Object_method_connect>`::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
+"Chcete-li používat signály, musí vaše třída dědit třídu ``Object`` nebo "
+"jakýkoli typ, který ji podědil, například ``Node``, ``KinematicBody``, "
+"``Control``..."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1453
 msgid ""
@@ -2217,18 +2241,23 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
+"V uzlu ``Game`` získáme uzly ``Character`` a ``Lifebar``, pak připojíme "
+"``Character``, který signál vysílá, k přijemci, v tomto případě k uzlu "
+"``Lifebar``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
+"To umožňuje uzlu \"Lifebar\" reagovat na změny stavu zdraví, aniž by byl "
+"součástí uzlu \"Character\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
-msgstr ""
+msgstr "Volitelné názvy argumentů můžete psát do závorek za definici signálu::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1476
 msgid ""
@@ -2237,6 +2266,10 @@ msgid ""
 "of arguments when you emit signals; it's up to you to emit the correct "
 "values."
 msgstr ""
+"Argumenty signálu se zobrazují v doku Uzel editoru a Godot je pro vás může "
+"použít k vytvoření funkcí zpětného volání. Při vlastním vysílání signálů "
+"však stále můžete vyslat signál s libovolným počtem argumentů. Je tedy na "
+"vás, abyste vyslali v dané situaci korektní hodnoty."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1482
 msgid ""
@@ -2245,6 +2278,10 @@ msgid ""
 "values. These bound arguments are unique to each connection, and the values "
 "will stay the same."
 msgstr ""
+"GDScript může navázat pole hodnot na spojení mezi signálem a metodou. Když "
+"je signál vyslán, metoda zpětného volání obdrží navázané hodnoty. Tyto "
+"svázané argumenty jsou pro každé spojení jedinečné a hodnoty zůstávají "
+"stejné."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1487
 msgid ""
@@ -2252,6 +2289,9 @@ msgid ""
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
+"Toto pole hodnot můžete použít k přidání dalších konstantních informací ke "
+"spojení, pokud vám samotný vysílaný signál neposkytuje ke všem potřebným "
+"údajům přístup ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1491
 msgid ""
@@ -2261,16 +2301,23 @@ msgid ""
 "that took damage. So when we connect the signal to the in-game console, we "
 "can add the character's name in the binds array argument::"
 msgstr ""
+"V návaznosti na výše uvedený příklad řekněme, že chceme zobrazit protokol "
+"poškození, které utrpěla každá postava na obrazovce, například ``Hráč1 "
+"utrpěl 22 poškození.``. Signál ``health_changed`` nám neposkytuje jméno "
+"poškozené postavy. Když tedy signál připojíme k herní konzoly ``BattleLog``, "
+"můžeme v argumentu připojeného pole přidat jméno postavy::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
+"Náš uzel ``BattleLog`` tak obdrží v připojeném poli jako dodatečný argument "
+"jméno poškozeného prvku::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1518
 msgid "Coroutines with yield"
-msgstr ""
+msgstr "Koroutiny s yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
 msgid ""
@@ -2282,26 +2329,34 @@ msgid ""
 "and return whatever the function returns. Once resumed, the state object "
 "becomes invalid. Here is an example::"
 msgstr ""
+"GDScript nabízí podporu `korutin <https://en.wikipedia.org/wiki/Coroutine>`_ "
+"prostřednictvím vestavěné funkce :ref:`yield<class_@GDScript_method_yield>`. "
+"Zavoláním ``yield()`` dojde k okamžitému návratu z aktuální funkce, přičemž "
+"návratovou hodnotou bude aktuální zmrazený stav téže funkce. Volání "
+"``resume()`` na tomto výsledném objektu pak pokračuje v provádění zmrazené "
+"funkce a vrátí její výsledek. Po obnovení se stavový objekt stane neplatným. "
+"Zde je příklad::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1541
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1562
 msgid "Will print::"
-msgstr ""
+msgstr "Vytiskne::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1547
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr ""
+"Je také možné předavat hodnoty mezi ``yield()`` a ``resume()``,, například::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
-msgstr ""
+msgstr "Nezapomeňte uložit nový stav funkce, pokud používáte více ``yield``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1583
 msgid "Coroutines & signals"
-msgstr ""
+msgstr "Koroutiny a signály"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1585
 msgid ""
@@ -2309,27 +2364,34 @@ msgid ""
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples::"
 msgstr ""
+"Skutečná síla ``yield`` je v jeho použití společně se signály. ``yield`` je "
+"schopno přijmout dva argumenty, objekt a signál. Po přijetí signálu se znovu "
+"zahájí provádění. Zde je několik příkladů::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr ""
+"Samotné koroutiny používají signál ``completed``, když přejdou do neplatného "
+"stavu, například::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1610
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
+"``my_func`` bude pokračovat ve vykonávání až po stisknutí obou tlačítek."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
 msgid "You can also get the signal's argument once it's emitted by an object:"
-msgstr ""
+msgstr "Můžete také získat argument signálu, po jeho vyslání objektem:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1619
 msgid ""
 "If there is more than one argument, ``yield`` returns an array containing "
 "the arguments::"
 msgstr ""
+"Pokud je argumentů více, ``yield`` vrátí pole obsahující všechny argumenty::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
 msgid ""
@@ -2337,6 +2399,9 @@ msgid ""
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
+"Pokud si nejste jisti, zda funkce může nebo nemůže vyvolat yield, či zda "
+"použije yield vícekrát, můžete aplikovat yield se signálem ``completed`` "
+"podmíněně:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
@@ -2345,10 +2410,14 @@ msgid ""
 "``while`` would be redundant here as the ``completed`` signal is only "
 "emitted when the function didn't yield anymore."
 msgstr ""
+"Tím je zajištěno, že funkce vrátí výsledek, který se od ní očekává, bez "
+"ohledu na to, zda byly interně použity koroutiny. Všimněte si, že použití "
+"``while`` by zde bylo zbytečné, protože signál ``completed`` je emitován "
+"pouze tehdy, když funkce vyčerpala možnosti použití yield."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "`onready` keyword"
-msgstr ""
+msgstr "klíčové slovo `onready`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
@@ -2357,6 +2426,10 @@ msgid ""
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to ``Node._ready()`` is made."
 msgstr ""
+"Při použití uzlů je běžné chtít uchovávat odkazy na části scény v proměnné. "
+"Jelikož u scén je zaručeno, že budou konfigurovány pouze při vstupu do "
+"aktivního stromu scén, dílčí uzly lze získat pouze při volání funkce ``Node."
+"ready ()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
 msgid ""
@@ -2365,10 +2438,14 @@ msgid ""
 "defers initialization of a member variable until ``_ready()`` is called. It "
 "can replace the above code with a single line::"
 msgstr ""
+"To může být poněkud těžkopádné, zejména když se hromadí uzly a externí "
+"odkazy. GDScript má proto klíčové slovo ``onready``, které odkládá "
+"inicializaci členské proměnné až do volání ``_ready()``. Lze jím nahradit "
+"výše uvedený kód jediným řádkem::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1690
 msgid "Assert keyword"
-msgstr ""
+msgstr "Klíčové slovo Assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1692
 msgid ""
@@ -2379,9 +2456,17 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
+"Klíčové slovo ``assert`` lze použít ke kontrole podmínek při ladění . Při "
+"ostatních sestaveních jsou tato tvrzení ignorována. To znamená, že výraz "
+"předaný jako argument nebude v projektu exportovaném v režimu release "
+"vyhodnocován. Z tohoto důvodu nesmí aserce **obsahovat** výrazy, které mají "
+"side effects. Jinak by se chování skriptu lišilo v závislosti na tom, zda je "
+"či není projekt sestavován pro ladění ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1704
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+"Při spuštění projektu z editoru se projekt pozastaví, pokud dojde k chybě "
+"příkazu ``assert``."

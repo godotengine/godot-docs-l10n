@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -549,7 +549,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:378
 msgid "Open up ``Pause_Popup.tscn``."
-msgstr ""
+msgstr "Откройте ``Pause_Popup.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:380
 msgid ""
@@ -558,6 +558,11 @@ msgid ""
 "from :ref:`Popup <class_Popup>`, which means :ref:`WindowDialog "
 "<class_WindowDialog>` can act like a popup."
 msgstr ""
+"Обратите внимание, что корневой узел в ``Pause_Popup`` является :ref:"
+"`WindowDialog <class_WindowDialog>`; :ref:`WindowDialog "
+"<class_WindowDialog>` наследуется от :ref:`Popup <class_Popup>`, что "
+"означает, что :ref:`WindowDialog <class_WindowDialog>` может действовать как "
+"всплывающее окно."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:383
 msgid ""
@@ -567,6 +572,11 @@ msgid ""
 "makes it so it will continue to process even when the game is paused, which "
 "we need in order to interact with the UI elements."
 msgstr ""
+"Выберите ``Pause_Popup`` и прокрутите вниз до тех пор, пока не доберетесь до "
+"меню ``Pause`` в инспекторе. Обратите внимание, что режим паузы установлен "
+"на ``process``, а не на ``inherit``, как это обычно делается по умолчанию. "
+"Это позволяет продолжить обработку, даже когда игра приостановлена, что нам "
+"необходимо для взаимодействия с элементами пользовательского интерфейса."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:387
 msgid ""
@@ -576,6 +586,11 @@ msgid ""
 "couple of signals in ``Globals.gd``, we'll write all the code for the popup "
 "there."
 msgstr ""
+"Теперь, когда мы рассмотрели, как устроен ``Pause_Popup.tscn``, давайте "
+"напишем код, чтобы заставить его работать. Обычно мы прикрепляем скрипт к "
+"корневому узлу сцены, ``Pause_Popup`` в данном случае, но поскольку нам "
+"нужно получить пару сигналов в ``Globals.gd``, мы напишем весь код для "
+"всплывающего окна там."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:399
 msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
@@ -583,11 +598,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:400
 msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
-msgstr ""
+msgstr "``POPUP_SCENE``: Всплывающая сцена, которую мы рассматривали ранее."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:401
 msgid "``popup``: A variable to hold the pop up scene."
-msgstr ""
+msgstr "``popup``: Переменная для хранения всплывающей сцены."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:403
 msgid ""
@@ -605,18 +620,25 @@ msgid ""
 "check to make sure ``Globals.gd`` does not already have a ``popup`` open by "
 "checking to see if ``popup`` is equal to ``null``."
 msgstr ""
+"Во-первых, мы проверяем, нажато ли действие ``ui_cancel``. Затем мы "
+"проверяем, что ``Globals.gd`` не имеет уже открытого ``popup``, проверяя, "
+"что ``popup`` равен ``null``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:431
 msgid ""
 "If ``Globals.gd`` do not have a pop-up open, we instance ``POPUP_SCENE`` and "
 "assign it to ``popup``."
 msgstr ""
+"Если ``Globals.gd`` не имеет открытого всплывающего окна, мы создаем "
+"экземпляр ``POPUP_SCENE`` и присваиваем его ``popup``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:433
 msgid ""
 "We then get the quit button and assign its ``pressed`` signal to "
 "``popup_quit``, which we will be adding shortly."
 msgstr ""
+"Затем мы получаем кнопку выхода и назначаем ее сигнал ``pressed`` на "
+"``popup_quit``, который мы добавим в ближайшее время."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:435
 msgid ""
@@ -624,6 +646,9 @@ msgid ""
 "<class_WindowDialog>` and the ``pressed`` signal from the resume button to "
 "``popup_closed``, which we will be adding shortly."
 msgstr ""
+"Далее, мы присваиваем сигнал ``popup_hide`` из :ref:`WindowDialog "
+"<class_WindowDialog>` и сигнал ``pressed`` из кнопки возобновления для "
+"``popup_closed``, которую мы добавим в ближайшее время."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:438
 msgid ""
@@ -631,6 +656,9 @@ msgid ""
 "We then tell ``popup`` to pop up at the center of the screen using "
 "``popup_centered``."
 msgstr ""
+"Затем мы добавляем ``popup`` как дочерний элемент ``canvas_layer``, чтобы он "
+"рисовался сверху. Затем мы указываем ``popup``, чтобы он появлялся в центре "
+"экрана, используя ``popup_centered``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:440
 msgid ""
@@ -653,6 +681,8 @@ msgid ""
 "Now, we need to add the functions to which we've connected the signals. "
 "Let's add ``popup_closed`` first."
 msgstr ""
+"Теперь нам нужно добавить функции, к которым мы подключили сигналы. Сначала "
+"добавим ``popup_closed``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:451
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:466
@@ -663,12 +693,15 @@ msgstr ""
 msgid ""
 "``popup_closed`` will resume the game and destroy the pop-up if there is one."
 msgstr ""
+"``popup_closed`` возобновит игру и уничтожит всплывающее окно, если оно есть."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:464
 msgid ""
 "``popup_quit`` is similar, but we're also making sure the mouse is visible "
 "and changing scenes to the title screen."
 msgstr ""
+"``popup_quit`` похож, но мы также убеждаемся, что мышь видна, и меняем сцену "
+"на титульный экран."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:481
 msgid ""
@@ -676,6 +709,9 @@ msgid ""
 "``MOUSE_MODE_VISIBLE`` to ensure the mouse is visible in the main menu, "
 "destroy the pop-up if there is one, and change scenes to the main menu."
 msgstr ""
+"``popup_quit`` возобновит игру, установит режим мыши на "
+"``MOUSE_MODE_VISIBLE``, чтобы мышь была видна в главном меню, уничтожит "
+"всплывающее окно, если оно есть, и сменит сцену на главное меню."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:486
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,9 @@ msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
 msgstr ""
+"Les deux octets de valeur la plus faible servent à déterminer le type, "
+"tandis que les deux octets de valeur la plus élevée contiennent des "
+"drapeaux :"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:102
@@ -607,6 +610,8 @@ msgstr "2 : :ref:`int<class_int>`"
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
 msgstr ""
+"Si aucun drapeau n'est défini (flags == 0), le nombre entier est envoyé "
+"comme un nombre entier de 32 bits :"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:115
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
@@ -618,6 +623,8 @@ msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
+"Si le drapeau ``ENCODE_FLAG_64`` est activé (``flags & 1 == 1``), le nombre "
+"entier est envoyé sous forme de nombre entier 64 bits :"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:124
 msgid "64-bit signed integer"
@@ -632,6 +639,8 @@ msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
 msgstr ""
+"Si aucun drapeau n'est défini (flags == 0), le flottant est envoyé en tant "
+"que précision simple de 32 bits :"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:135
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
@@ -710,6 +719,8 @@ msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
+"Si le drapeau ``ENCODE_FLAG_64`` est défini (``flags & 1 == 1``), le "
+"flottant est envoyé sous la forme d'un nombre double précision de 64 bits :"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
 msgid "IEEE 754 double-precision float"

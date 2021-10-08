@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,6 @@ msgstr ""
 "명합니다."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
-#, fuzzy
 msgid ""
 "All the resources for this tutorial can be found in the `official demo "
 "repository <https://github.com/godotengine/godot-demo-projects>`_ on GitHub. "
@@ -52,8 +51,8 @@ msgstr ""
 "이번 튜토리얼에서 사용된 모든 리소스(resources)는 `공식 데모 저장소 <https://"
 "github.com/godotengine/godot-demo-projects>`_ 깃허브(github)에서 찾아볼 수 있"
 "습니다. 저는 시작하기 전에 데모를 다운로드 하기를 추천합니다. 프로젝트 매니저"
-"에서 다운할 수도 있습니다. Godot을 실행하고 상단의 바에서 \"템플릿\"을 선택해"
-"서 \"2D Lights and Shadows Demo\"를 검색합니다."
+"에서 다운로드할 수도 있습니다. Godot를 실행하고 상단의 바에서 \"템플릿\"을 선"
+"택해서 \"2D Lights and Shadows Demo\"를 검색합니다."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 msgid "Setup"
@@ -133,8 +132,9 @@ msgid "The demo uses four different nodes:"
 msgstr "이 데모에서는 다음과 같은 네 가지 노드를 사용합니다:"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
+#, fuzzy
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
-msgstr ""
+msgstr ":ref:`CanvasModulate <class_CanvasModulate>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:50
 msgid ":ref:`Sprite <class_Sprite>`"
@@ -145,8 +145,9 @@ msgid ":ref:`Light2D <class_Light2D>`"
 msgstr ":ref:`Light2D <class_Light2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
+#, fuzzy
 msgid ":ref:`LightOccluder2D <class_LightOccluder2D>`"
-msgstr ""
+msgstr ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:54
 msgid ""
@@ -198,7 +199,7 @@ msgid ""
 "Texture. They use additive blending to add the color of their texture to the "
 "scene."
 msgstr ""
-":ref:`lights _light2D` 는 각 텍스처의 전체 범위를 다룹니다. They use "
+":ref:`Lights <class_Light2D>` 는 각 텍스처의 전체 범위를 다룹니다. They use "
 "additive blending to add the color of their texture to the scene."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
@@ -250,7 +251,7 @@ msgid ""
 msgstr ""
 "데모에서 빛은 두 가지 구성요소를 가집니다. :ref:`Light <class_Light2D>` 그자"
 "체 (빛효과) 와 광원의 위치를 보여주는 이미지 :ref:`Sprite <class_Sprite>` 블"
-"롭입니다. :ref:`Sprite <class_Sprite>` 자식은 :ref:`Light <class_Light2D>` 만"
+"롭입니다. :ref:`Sprite <class_Sprite>` 자손은 :ref:`Light <class_Light2D>` 만"
 "들 필요는 없습니다."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:95
@@ -346,7 +347,7 @@ msgid ""
 "of the :ref:`Light <class_Light2D>` node, which is why we want the blob to "
 "be centered on its parent :ref:`Light <class_Light2D>`."
 msgstr ""
-"다음으로 각 :ref:`Light <class_Light2D>` 노드에 자식 :ref:`Sprite "
+"다음으로 각 :ref:`Light <class_Light2D>` 노드에 자손 :ref:`Sprite "
 "<class_Sprite>` 를 추가하고 :ref:`Sprite <class_Sprite>` 텍스처를 `블롭 이미"
 "지 <https://raw.githubusercontent.com/godotengine/godot-demo-projects/"
 "master/2d/lights_and_shadows/spot.png>`_로 설정합니다. 각 스프라이트는 :ref:"
@@ -416,10 +417,10 @@ msgid ""
 "magical chest, or anything else."
 msgstr ""
 "각각의 그림자 캐스터는 :ref:`Sprite <class_Sprite>` 로 만들어졌고 :ref:"
-"`LightOccluder2D <class_LightOccluder2D>` 를 자식으로 가집니다. 데모에서는 :"
+"`LightOccluder2D <class_LightOccluder2D>` 를 자손으로 가집니다. 데모에서는 :"
 "ref:`Sprite <class_Sprite>` 가 텍스처로 `caster image <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
-"lights_and_shadows/caster.png>` 설정하고 다른 것은 없습니다. 자식 :ref:"
+"lights_and_shadows/caster.png>` 설정하고 다른 것은 없습니다. 자손 :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` 는 마법이 일어나는 장소입니다. 게임"
 "에서 :ref:`Sprite <class_Sprite>` 는 검정색 상자 이상일 수 있습니다; 스프라이"
 "트는 무슨 물체가 됐건 그림자가 드리우는 이미지가 될 수 있습니다: 벽, 마법 상"
@@ -445,7 +446,7 @@ msgstr ""
 msgid ""
 "The first setting, ``Closed`` can be either ``on`` or ``off``. A closed "
 "polygon occludes light coming from all directions. An open polygon only "
-"occludes light from one direction"
+"occludes light from one direction."
 msgstr ""
 "첫 번째 설정 ``Closed``\\ 는 켜거나 끌 수 있습니다.. 닫힌 폴리곤은 모든 방향"
 "에서 오는 빛을 차단합니다. 열린 폴리곤은 한 방향에서만 오는 빛을 차단합니다"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -336,7 +336,7 @@ msgstr ""
 "`Physics2DServer <class_Physics2DServer>`, et déplace un :ref:`CanvasItem "
 "<class_CanvasItem>` lorsque le corps bouge."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:192
+#: ../../docs/tutorials/optimization/using_servers.rst:193
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
@@ -346,11 +346,11 @@ msgstr ""
 "et 3D sont identiques (en utilisant respectivement :ref:`RigidBody "
 "<class_RigidBody>` et :ref:`PhysicsServer <class_PhysicsServer>`)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:196
+#: ../../docs/tutorials/optimization/using_servers.rst:197
 msgid "Getting data from the servers"
 msgstr "Obtention des données depuis les serveurs"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:198
+#: ../../docs/tutorials/optimization/using_servers.rst:199
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -369,7 +369,7 @@ msgstr ""
 "considérablement les performances si vous les appelez à chaque trame (et la "
 "raison ne sera pas évidente)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:204
+#: ../../docs/tutorials/optimization/using_servers.rst:205
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

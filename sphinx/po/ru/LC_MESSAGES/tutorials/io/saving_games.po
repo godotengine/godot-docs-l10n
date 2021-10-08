@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:4
 msgid "Saving games"
-msgstr ""
+msgstr "Сохранение игр"
 
 #: ../../docs/tutorials/io/saving_games.rst:7
 msgid "Introduction"
@@ -33,16 +33,23 @@ msgid ""
 "objects. This will allow the save function to scale as the game grows more "
 "complex."
 msgstr ""
+"Игры с сохранением могут быть сложными. Например, может быть желательно "
+"сохранить информацию о нескольких объектах на нескольких уровнях. "
+"Продвинутые системы сохранения игр должны позволять сохранять дополнительную "
+"информацию о произвольном количестве объектов. Это позволит масштабировать "
+"функцию сохранения по мере усложнения игры."
 
 #: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
 msgstr ""
+"Если вы хотите сохранить конфигурацию пользователя, вы можете использовать "
+"для этого класс :ref:`class_ConfigFile`."
 
 #: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
-msgstr ""
+msgstr "Идентификация постоянных объектов"
 
 #: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
@@ -51,6 +58,10 @@ msgid ""
 "tutorial, we will use groups to mark and handle objects to be saved, but "
 "other methods are certainly possible."
 msgstr ""
+"Во-первых, мы должны определить, какие объекты мы хотим сохранить между "
+"игровыми сессиями и какую информацию мы хотим сохранить от этих объектов. В "
+"этом учебнике мы будем использовать группы для маркировки и обработки "
+"объектов для сохранения, но, конечно, возможны и другие методы."
 
 #: ../../docs/tutorials/io/saving_games.rst:28
 msgid ""
@@ -58,12 +69,19 @@ msgid ""
 "in the :ref:`doc_scripting_continued` tutorial, we can do this through "
 "either the GUI or script. Let's add the relevant nodes using the GUI:"
 msgstr ""
+"Мы начнем с добавления объектов, которые мы хотим сохранить, в группу "
+"\"Persist\". Как и в учебнике :ref:`doc_scripting_continued`, мы можем "
+"сделать это с помощью графического интерфейса или сценария. Давайте добавим "
+"соответствующие узлы с помощью графического интерфейса:"
 
 #: ../../docs/tutorials/io/saving_games.rst:34
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
 msgstr ""
+"Когда это будет сделано, когда нам понадобится сохранить игру, мы сможем "
+"получить все объекты для сохранения, а затем сказать им всем сохраниться с "
+"помощью этого скрипта:"
 
 #: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"
@@ -80,16 +98,26 @@ msgid ""
 "needs to contain a save function that returns this data. The save function "
 "will look like this:"
 msgstr ""
+"Следующим шагом является сериализация данных. Это значительно упрощает "
+"считывание и сохранение данных на диске. В данном случае мы предполагаем, "
+"что каждый член группы Persist является экземпляром узла и, следовательно, "
+"имеет путь. В GDScript есть вспомогательные функции для этого, такие как :"
+"ref:`to_json() <class_@GDScript_method_to_json>` и :ref:`parse_json() "
+"<class_@GDScript_method_parse_json>`, поэтому мы будем использовать словарь. "
+"Наш узел должен содержать функцию сохранения, которая возвращает эти данные. "
+"Функция сохранения будет выглядеть следующим образом:"
 
 #: ../../docs/tutorials/io/saving_games.rst:119
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "value_of_variable }``, which will be useful when loading."
 msgstr ""
+"Это дает нам словарь со стилем ``{\"имя_переменной\":value_of_variable }``, "
+"который будет полезен при загрузке."
 
 #: ../../docs/tutorials/io/saving_games.rst:124
 msgid "Saving and reading data"
-msgstr ""
+msgstr "Сохранение и чтение данных"
 
 #: ../../docs/tutorials/io/saving_games.rst:126
 msgid ""
@@ -117,6 +145,11 @@ msgid ""
 "can use the filename and parent values to achieve that. Here is our load "
 "function:"
 msgstr ""
+"Игра сохранена! Загрузка также довольно проста. Для этого мы будем читать "
+"каждую строку, использовать функцию parse_json(), чтобы считать ее обратно в "
+"dict, а затем выполнять итерации над dict, чтобы считать наши значения. Но "
+"сначала нам нужно будет создать объект, и для этого мы можем использовать "
+"значения имени файла и родителя. Вот наша функция load:"
 
 #: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
@@ -124,10 +157,13 @@ msgid ""
 "anywhere across the scene tree! Each object can store different data "
 "depending on what it needs to save."
 msgstr ""
+"Теперь мы можем сохранять и загружать произвольное количество объектов, "
+"расположенных практически в любом месте дерева сцены! Каждый объект может "
+"хранить различные данные в зависимости от того, что ему нужно сохранить."
 
 #: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
-msgstr ""
+msgstr "Некоторые примечания"
 
 #: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
@@ -136,6 +172,10 @@ msgid ""
 "complicated and will need to be heavily customized based on the needs of the "
 "individual project."
 msgstr ""
+"Мы подробно остановились на настройке состояния игры для загрузки. В "
+"конечном итоге от создателя проекта зависит, куда будет направлена большая "
+"часть этой логики. Это часто бывает сложно и требует значительной настройки "
+"в зависимости от потребностей конкретного проекта."
 
 #: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
@@ -147,3 +187,12 @@ msgid ""
 "also need a way to link children to parents as the :ref:`NodePath "
 "<class_nodepath>` will likely be invalid."
 msgstr ""
+"Кроме того, наша реализация предполагает, что никакие объекты Persist не "
+"являются дочерними для других объектов Persist. В противном случае будут "
+"создаваться недопустимые пути. Чтобы учесть вложенные объекты Persist, "
+"рассмотрите возможность поэтапного сохранения объектов. Сначала загрузите "
+"родительские объекты, чтобы они были доступны для вызова :ref:`add_child() "
+"<class_node_method_add_child>`, когда загружаются дочерние объекты. Вам "
+"также понадобится способ связать дочерние объекты с родительскими, "
+"поскольку :ref:`NodePath <class_nodepath>`, скорее всего, будет "
+"недействительным."

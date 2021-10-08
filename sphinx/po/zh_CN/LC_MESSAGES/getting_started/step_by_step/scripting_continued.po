@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr "编写脚本(续)"
+msgstr "编写脚本（续）"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
@@ -29,14 +29,15 @@ msgstr "处理"
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
-msgstr "Godot中的多个动作是由回调或虚函数触发的, 因此无需编写始终运行的代码."
+msgstr "Godot 中有许多动作是由回调或虚函数触发的，因此无需编写始终运行的代码。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
-"但是, 在每一帧上都需要处理脚本仍然很常见. 有两种处理类型: 空闲处理和物理处理."
+"但是，在每一帧上都需要处理脚本仍然很常见。有两种处理类型：空闲处理和物理处"
+"理。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -45,13 +46,13 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"当在脚本中找到 :ref:`Node._process() <class_Node_method__process>` 方法时, 将"
-"激活空闲处理. 可以通过 :ref:`Node.set_process() "
-"<class_Node_method_set_process>` 函数来打开或关闭."
+"当在脚本中找到 :ref:`Node._process() <class_Node_method__process>` 方法时，将"
+"激活空闲处理。可以通过 :ref:`Node.set_process() "
+"<class_Node_method_set_process>` 函数来打开或关闭。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr "这个方法将在每次绘制帧时被调用:"
+msgstr "这个方法将在每次绘制帧时被调用："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -59,8 +60,8 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"重要的是要记住, 调用 ``_process()`` 的频率取决于应用程序运行的每秒帧数(FPS). "
-"该速率会随着时间和设备的不同而变化."
+"重要的是要记住，调用 ``_process()`` 的频率取决于应用程序运行的每秒帧数"
+"（FPS）。该速率会随着时间和设备的不同而变化。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -68,8 +69,8 @@ msgid ""
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"为了管理这种可变性有所帮助,``delta`` 参数包含自上次调用 ``_process()`` 以来经"
-"过的时间, 以秒为单位的浮点数表示."
+"为了帮助管理这种可变性，``delta`` 参数包含了自上次调用 ``_process()`` 以来所"
+"经过的秒数，以浮点数表示。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -190,9 +191,9 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
-"Godot 有一个通知系统. 这个是非常底层的虚函数, 通常不需要放入脚本代码里. 只需"
-"要知道有这个系统的存在. 例如, 您可以在您的脚本里添加 :ref:`Object."
-"_notification() <class_Object_method__notification>` 函数:"
+"Godot 有一个通知系统。通知非常底层，大多数都有对应的虚函数，所以在编写脚本时"
+"通常不需要用到。只需要知道有这个系统的存在就行。例如，你可以在自己的脚本里添"
+"加 :ref:`Object._notification() <class_Object_method__notification>` 函数："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -200,24 +201,24 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overridable functions."
 msgstr ""
-":ref:`类参考手册 <toc-class-ref>` 每个类的文档里都说明了它们能接收的通知. 不"
-"过,GDScript在大多数情况下都提供了更简单的可重写函数."
+":ref:`类参考手册 <toc-class-ref>` 每个类的文档里都说明了它们能接收的通知。不"
+"过大多数情况下，GDScript 都提供了更简单的可覆盖函数。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overridable functions"
-msgstr "可重载函数"
+msgstr "可覆盖函数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr "如下所述的这些可重载函数, 可以应用于节点:"
+msgstr "这些可覆盖函数可以用于节点，描述如下："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
-msgstr "如前所述, 最好使用这些函数代替通知系统."
+msgstr "如前所述，最好使用这些函数代替通知系统。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
@@ -318,7 +319,6 @@ msgstr ""
 "通过直接加载文件访问未命名的脚本."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
-#, fuzzy
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -327,9 +327,10 @@ msgid ""
 "creation dialog. Note that the icon will only appear after restarting the "
 "editor."
 msgstr ""
-"您可以命名脚本, 并在编辑器中使用 ``class_name`` 关键字并后跟类名将其注册为类"
-"型. 您可以添加逗号和可选的图像路径以用作图标. 然后, 您将在节点或资源创建对话"
-"框中找到您的新类型."
+"在 ``class_name`` 关键字后面加上类的名称可以给脚本命名并将其注册为编辑器中的"
+"类型。再在后面加上逗号和可选的图片路径就可以设置图标（图片需要是 PNG 或者 "
+"SVG 格式，最小 16×16、推荐 32×32）。你可以在创建节点或者创建资源的对话框里找"
+"到你添加的类型。注意，重启编辑器后才会显示图标。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:423
 msgid "In Godot 3.1:"

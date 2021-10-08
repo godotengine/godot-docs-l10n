@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,14 +93,12 @@ msgid "Creating a new module"
 msgstr "Créer un nouveau module"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
-#, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Godot and compile it <toc-devel-compiling>`."
 msgstr ""
-"Avant de créer un module, assurez-vous d'abord de récupérer le code source "
-"de Godot et de le compiler. Il y a des tutoriels dans la documentation à ce "
-"sujet."
+"Avant de créer un module, assurez-vous de :ref:`télécharger le code source "
+"de Godot et de le compiler <toc-devel-compiling>`."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -117,6 +115,8 @@ msgid ""
 "The example module will be called \"summator\" (``godot/modules/summator``). "
 "Inside we will create a simple summator class:"
 msgstr ""
+"L'exemple de module sera appelé \"summator\" (``godot/modules/summator``). A "
+"l'intérieur, nous allons créer une simple classe summator :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:74
 msgid "And then the cpp file."

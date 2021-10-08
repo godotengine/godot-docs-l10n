@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,29 +171,29 @@ msgstr "Godot提供了几种开箱即用的容器类型, 因为它们有不同�
 
 #: ../../docs/tutorials/gui/gui_containers.rst:65
 msgid "Box Containers"
-msgstr "Box容器"
+msgstr "格子容器（Box Containers）"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:67
-#, fuzzy
 msgid ""
 "Arranges child controls vertically or horizontally (via :ref:`HBoxContainer "
 "<class_HBoxContainer>` and :ref:`VBoxContainer <class_VBoxContainer>`). In "
 "the opposite of the designated direction (as in, vertical for an horizontal "
 "container), it just expands the children."
 msgstr ""
-"垂直或水平排列子控件(通过 :ref:`水平盒子容器 <class_HBoxContainer>` 和 :ref:`"
-"垂直盒子容器 <class_VBoxContainer>` ). 在指定方向的相反方向(如水平容器的垂直"
-"方向), 只是扩大了子节点的范围."
+"将子控件垂直或者水平排列（使用 :ref:`HBoxContainer <class_HBoxContainer>` "
+"和 :ref:`VBoxContainer <class_VBoxContainer>` ）。而在相对方向上（比如水平容"
+"器的垂直方向），子节点会被扩展。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:73
 msgid ""
 "These containers make use of the *Ratio* property for children with the "
 "*Expand* flag set."
-msgstr "这些容器使用 *Ratio比例* 属性, 用于设置 *Expand扩展* 标记的子容器."
+msgstr ""
+"这些容器会用到设置了 *Expand（扩展）* 选项的子节点的 *Ratio（比例）* 属性。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:76
 msgid "Grid Container"
-msgstr "Grid Container网格容器"
+msgstr "网格容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:78
 msgid ""
@@ -201,12 +201,12 @@ msgid ""
 "<class_GridContainer>`, amount of columns must be specified). Uses both the "
 "vertical and horizontal expand flags."
 msgstr ""
-"在网格布局中排列子控件(通过 :ref:`网格容器 <class_GridContainer>` , 必须指定"
-"列的数量). 同时使用垂直和水平扩展标记."
+"将子控件按照网格排列（使用 :ref:`GridContainer <class_GridContainer>` ，必须"
+"指定列数），会同时用到垂直和水平扩展选项。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:84
 msgid "Margin Container"
-msgstr "Margin Container边距容器"
+msgstr "边距容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:86
 msgid ""
@@ -214,8 +214,8 @@ msgid ""
 "`MarginContainer <class_MarginContainer>`). Padding will be added on the "
 "margins depending on the theme configuration."
 msgstr ""
-"子控件被扩展到该控件的边界(通过 :ref:`边距容器 <class_MarginContainer>` ). 根"
-"据主题配置, 将在页边距上添加填充."
+"将子节点扩展到该控件的边界（使用 :ref:`MarginContainer "
+"<class_MarginContainer>` ），会根据主题的设置来添加不同大小的边距。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
 msgid ""
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
 msgid "Tab Container"
-msgstr "Tab Container标签容器"
+msgstr "选项卡容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:100
 msgid ""
@@ -235,34 +235,32 @@ msgid ""
 "(via :ref:`TabContainer <class_TabContainer>`), with only the *current* one "
 "visible."
 msgstr ""
-"允许您将多个子控件堆叠在一起(通过 :ref:`选项卡容器 <class_TabContainer>`), 只"
-"有 *current当前* 可见."
+"允许你将多个子控件堆叠在一起（使用 :ref:`TabContainer "
+"<class_TabContainer>` ），只会显示 *当前* 控件。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:105
 msgid ""
 "Changing the *current* one is done via tabs located at the top of the "
 "container, via clicking:"
-msgstr "通过点击位于容器顶部的选项卡, 来标记 *current当前* 选项卡:"
+msgstr "点击容器顶部的选项卡可以更改 *当前* 控件："
 
 #: ../../docs/tutorials/gui/gui_containers.rst:109
 msgid ""
 "The titles are generated from the node names by default (although they can "
 "be overridden via *TabContainer* API)."
 msgstr ""
-"默认情况下, 标题是由节点名称生成的(尽管它们可以通过 *TabContainer* API被重"
-"写)."
+"标题默认是根据节点名称生成的（尽管可以通过 *TabContainer* 的 API 重写）。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:111
 msgid ""
 "Settings such as tab placement and *StyleBox* can be modified in the "
 "*TabContainer* theme overrides."
 msgstr ""
-"在 *TabContainer选项卡容器* 主题覆盖中, 可以修改选项卡位置和 *StyleBox盒子样"
-"式* 等内容."
+"可以在 *TabContainer* 的主题覆盖项中修改类似选项卡位置和 *StyleBox* 等设置。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:114
 msgid "Split Container"
-msgstr "Split Container拆分容器"
+msgstr "拆分容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:116
 msgid ""
@@ -271,15 +269,15 @@ msgid ""
 "`VSplitContainer <class_VSplitContainer>`). Respects both horizontal and "
 "vertical flags, as well as *Ratio*."
 msgstr ""
-"只接受一两个子控件, 然后将它们与除数并排放置(通过 :ref:`水平分割容器 "
-"<class_HSplitContainer>` 和 :ref:`垂直分割容器 <class_VSplitContainer>`). 同"
-"时考虑水平和垂直标记, 以及 *Ratio比例* ."
+"只接受单个或者两个子控件，会将它们相邻放置，中间是分隔线（使用 :ref:"
+"`HSplitContainer <class_HSplitContainer>` 和 :ref:`VSplitContainer "
+"<class_VSplitContainer>` ），会使用到水平和垂直选项以及 *Ratio* 属性。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:122
 msgid ""
 "The divisor can be dragged around to change the size relation between both "
 "children:"
-msgstr "可以拖动除数来改变两个子元素之间的大小关系:"
+msgstr "可以通过拖动分隔线来调整两个子节点所占区域的大小："
 
 #: ../../docs/tutorials/gui/gui_containers.rst:128
 msgid "PanelContainer"
@@ -291,9 +289,9 @@ msgid ""
 "whole area (via :ref:`PanelContainer <class_PanelContainer>`, respecting the "
 "*StyleBox* margins). It respects both the horizontal and vertical size flags."
 msgstr ""
-"绘制 *StyleBox样式盒子* 的简单容器, 然后将子节点扩大到整个区域(通过 :ref:`面"
-"板容器 <class_PanelContainer>` , 考虑 *样式盒子* 的边距). 它同时考虑水平和垂"
-"直尺寸标记."
+"绘制 *StyleBox* 的简单容器，会将子节点扩大到整个区域（使用 :ref:"
+"`PanelContainer <class_PanelContainer>` ，会考虑 * StyleBox* 的边距）。它同时"
+"考虑水平和垂直尺寸选项。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:136
 msgid ""
@@ -341,8 +339,8 @@ msgid ""
 "child, and it will display it as if it was an image (via :ref:"
 "`ViewportContainer <class_ViewportContainer>`)."
 msgstr ""
-"这是一个特殊的控件, 它只接受单个 *Viewport视窗* 节点作为子节点, 它会像显示图"
-"像一样显示它(通过 :ref:`视窗容器 <class_ViewportContainer>`)."
+"这是一个特殊的控件，只接受单个 *Viewport* 节点作为子节点，并且会把它作为图片"
+"显示（使用 :ref:`ViewportContainer <class_ViewportContainer>`）。"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
 msgid "Creating custom Containers"
@@ -353,5 +351,5 @@ msgid ""
 "It is possible to easily create a custom container using script. Here is an "
 "example of a simple container that fits children to its rect size:"
 msgstr ""
-"可以使用脚本轻松地创建自定义容器. 下面是一个简单容器的例子, 它适合于其矩形大"
-"小的子容器:"
+"可以使用脚本轻松地创建自定义容器。下面是一个简单容器的例子，它会根据自身的矩"
+"形尺寸调整子节点："

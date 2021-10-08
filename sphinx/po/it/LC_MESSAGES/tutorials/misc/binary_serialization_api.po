@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,9 +112,8 @@ msgid "2"
 msgstr "2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
-#, fuzzy
 msgid "integer"
-msgstr "numero intero"
+msgstr "intero"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "3"
@@ -214,7 +213,6 @@ msgid "4"
 msgstr "4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
-#, fuzzy
 msgid "string"
 msgstr "string"
 
@@ -360,7 +358,6 @@ msgid "18"
 msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
-#, fuzzy
 msgid "dictionary"
 msgstr "dictionary"
 
@@ -369,7 +366,6 @@ msgid "19"
 msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
-#, fuzzy
 msgid "array"
 msgstr "array"
 
@@ -449,7 +445,6 @@ msgid "27"
 msgstr "27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:85
-#, fuzzy
 msgid "max"
 msgstr "max"
 
@@ -464,7 +459,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
-#, fuzzy
 msgid "0: null"
 msgstr "0: null"
 
@@ -502,7 +496,6 @@ msgstr "1: :ref:`bool<class_bool>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:484
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:499
-#, fuzzy
 msgid "Offset"
 msgstr "Offset"
 
@@ -536,7 +529,6 @@ msgstr "Offset"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:484
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:499
-#, fuzzy
 msgid "Len"
 msgstr "Len"
 
@@ -597,8 +589,9 @@ msgid "Integer"
 msgstr "Numero intero"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:104
+#, fuzzy
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 per False, 1 per True"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:108
 msgid "2: :ref:`int<class_int>`"
@@ -699,7 +692,6 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:505
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:507
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:509
-#, fuzzy
 msgid "Float"
 msgstr "Float"
 
@@ -736,7 +728,6 @@ msgstr "X"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:353
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:376
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:462
-#, fuzzy
 msgid "Bytes"
 msgstr "Bytes"
 
@@ -786,8 +777,9 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:183
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:262
+#, fuzzy
 msgid "Y size"
-msgstr ""
+msgstr "Dimensione Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
 msgid "7: :ref:`Vector3<class_vector3>`"
@@ -798,7 +790,7 @@ msgstr "7: :ref:`Vector3<class_vector3>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:492
 #, fuzzy
 msgid "Z coordinate"
-msgstr "Coordinata successiva"
+msgstr "Coordinata Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:200
 msgid "8: :ref:`Transform2D<class_transform2d>`"
@@ -856,7 +848,6 @@ msgid "Normal Z"
 msgstr "Normale Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:230
-#, fuzzy
 msgid "Distance"
 msgstr "Distance"
 
@@ -889,8 +880,9 @@ msgid "11: :ref:`AABB<class_aabb>`"
 msgstr "11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:264
+#, fuzzy
 msgid "Z size"
-msgstr ""
+msgstr "Dimensione Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:268
 msgid "12: :ref:`Basis<class_basis>`"
@@ -1043,12 +1035,14 @@ msgid "Every name string is padded to 4 bytes."
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:382
+#, fuzzy
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr ""
+msgstr "16: :ref:`RID<class_rid>` (non supportato)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:385
+#, fuzzy
 msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr ""
+msgstr "17: :ref:`Object<class_object>` (non supportato)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:388
 msgid "18: :ref:`Dictionary<class_dictionary>`"
@@ -1084,12 +1078,10 @@ msgid "Array length (Bytes)"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
-#, fuzzy
 msgid "8..8+length"
 msgstr "8..8+length"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
-#, fuzzy
 msgid "Byte"
 msgstr "Byte"
 
@@ -1112,7 +1104,6 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
-#, fuzzy
 msgid "8..8+length\\*4"
 msgstr "8..8+length\\*4"
 
@@ -1156,12 +1147,10 @@ msgid "Array length"
 msgstr "Vettore"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
-#, fuzzy
 msgid "8..8+length\\*8"
 msgstr "8..8+length\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
-#, fuzzy
 msgid "8..12+length\\*8"
 msgstr "8..12+length\\*8"
 
@@ -1170,17 +1159,14 @@ msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:488
-#, fuzzy
 msgid "8..8+length\\*12"
 msgstr "8..8+length\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:490
-#, fuzzy
 msgid "8..12+length\\*12"
 msgstr "8..12+length\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:492
-#, fuzzy
 msgid "8..16+length\\*12"
 msgstr "8..16+length\\*12"
 
@@ -1189,21 +1175,17 @@ msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:503
-#, fuzzy
 msgid "8..8+length\\*16"
 msgstr "8..8+length\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:505
-#, fuzzy
 msgid "8..12+length\\*16"
 msgstr "8..12+length\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:507
-#, fuzzy
 msgid "8..16+length\\*16"
 msgstr "8..16+length\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:509
-#, fuzzy
 msgid "8..20+length\\*16"
 msgstr "8..20+length\\*16"

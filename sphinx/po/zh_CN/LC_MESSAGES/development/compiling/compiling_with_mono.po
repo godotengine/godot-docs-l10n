@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,9 @@ msgid ""
 msgstr "您可能需要导入必要的证书, 以使NuGet执行HTTPS请求."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
+#, fuzzy
 msgid ""
-"The recommended method is to use **curl**'s CA (Certificate Autorities) "
+"The recommended method is to use **curl**'s CA (Certificate Authorities) "
 "certificate bundle."
 msgstr "推荐的方法是使用 **curl** 的CA(Certificate Autorities)证书捆绑."
 
@@ -684,31 +685,23 @@ msgid ""
 msgstr "目标平台和体系结构的Mono安装目录的路径."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:379
-msgid "**xbuild_fallback**\\ =yes | **no**"
-msgstr "**xbuild_fallback** \\ =yes | **no**"
-
-#: ../../docs/development/compiling/compiling_with_mono.rst:381
-msgid "Whether to fallback to xbuild if MSBuild is not available."
-msgstr "如果MSBuild不可用, 是否回退到xbuild."
-
-#: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
 msgstr "**mono_static** \\ =yes | no"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:385
+#: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid "Whether to link the Mono runtime statically."
 msgstr "是否静态链接Mono运行时."
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:386
+#: ../../docs/development/compiling/compiling_with_mono.rst:382
 msgid ""
 "The default is **yes** for iOS and WASM, and **no** for other platforms."
 msgstr "iOS和WASM默认为 **是** , 其他平台为 **否** ."
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:388
+#: ../../docs/development/compiling/compiling_with_mono.rst:384
 msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr "**copy_mono_root** \\ =yes | **no**"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:390
+#: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."

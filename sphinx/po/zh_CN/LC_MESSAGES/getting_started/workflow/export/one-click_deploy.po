@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,10 @@ msgid "One-click deploy"
 msgstr "一键部署"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
-#, fuzzy
 msgid "What is one-click deploy?"
-msgstr "一键部署的步骤"
+msgstr "什么是一键部署？"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
-#, fuzzy
 msgid ""
 "One-click deploy is a feature that is available once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
@@ -35,21 +33,20 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
-"一旦平台配置正确, 且支持的设备连接到电脑上, 这个功能就会自动弹出. 由于事情可"
-"能会在很多层面上出错(平台可能没有正确配置,SDK可能安装错误, 设备可能配置不当"
-"等), 所以让用户知道它的存在是件好事."
+"平台配置正确并且将支持的设备连接到电脑上之后，就可以使用一键部署功能。因为能"
+"出错的地方太多了（平台可能没有配置正确、SDK 可能没有正确安装、设备可能配置错"
+"了等等），所以最好让用户先知道有这样的功能。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
-#, fuzzy
 msgid ""
 "After adding an Android export preset marked as Runnable, Godot can detect "
 "when a USB device is connected to the computer and offer the user to "
 "automatically export, install and run the project (in debug mode) on the "
 "device. This feature is called *one-click deploy*."
 msgstr ""
-"一些平台(写这篇文章的时候, 只有Android)可以检测到USB设备连接到电脑上, 并为用"
-"户提供在设备上自动导出, 安装和运行项目(在调试模式下). 这个功能用业界的流行语"
-"来说, 叫做 \"一键部署\"."
+"添加 Android 导出预设项并且标记为可执行之后，Godot 就可以检测到有 USB 设备插"
+"到了电脑上，并且允许用户在该设备上自动导出、安装、然后运行（调试模式的）项"
+"目。这个功能就叫 *一键部署* 。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:22
 msgid ""
@@ -59,76 +56,79 @@ msgid ""
 "runnable. If you mark a second preset in a given platform as runnable, the "
 "other preset will no longer be marked as runnable."
 msgstr ""
+"在导出对话框中添加导出模版并标记为 **可执行** 后便可使用一键部署。你可以同时"
+"将多个导出预设项标记为可执行，但同一平台被标记为可执行的只能有一个。如果你把"
+"该平台的第二个预设项标记为可执行，其它预设项的标记会被取消。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
-#, fuzzy
 msgid "Supported platforms"
-msgstr "支持所有平台."
+msgstr "支持的平台"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid ""
 "**Android:** Exports the project with debugging enabled and runs it on the "
 "connected device."
-msgstr ""
+msgstr "**Android:** 将在导出项目时启用调试，并在连接的设备上运行。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:34
-#, fuzzy
 msgid ""
 "Make sure to follow the steps described in :ref:`doc_exporting_for_android`. "
 "Otherwise, the one-click deploy button won't appear."
 msgstr ""
-"此外, 在尝试构建自定义导出模板之前, 您仍然需要按照 :ref:"
-"`doc_exporting_for_android` 教程中提到的步骤进行操作."
+"请确认已经按照 :ref:`doc_exporting_for_android` 中提到的步骤进行操作，否则不"
+"会出现一键部署按钮。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:37
 msgid ""
 "If you have more than one device connected, Godot will ask you which device "
 "the project should be exported to."
-msgstr ""
+msgstr "如果你连接的设备超过一台，Godot会询问你想导出项目到哪台设备。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:40
 msgid ""
 "**HTML5:** Starts a local web server and runs the exported project by "
 "opening the default web browser."
-msgstr ""
+msgstr "**HTML5:** 将启动本地网页服务器，并打开默认网页浏览器运行导出的项目。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:43
 msgid "Support for more platforms such as iOS is planned."
-msgstr ""
+msgstr "针对包含iOS在内的更多平台的支持在计划之中。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:46
-#, fuzzy
 msgid "Using one-click deploy"
-msgstr "一键部署"
+msgstr "使用一键部署"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:48
 msgid ""
 "If deploying to Android, enable developer mode on your mobile device then "
 "enable USB debugging in the device's settings."
 msgstr ""
+"如果是部署到Android，请在你的移动设备上打开开发者模式，然后在设备设置中启用"
+"USB调试。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:50
 msgid ""
 "After enabling USB debugging, connect the device to your PC using an USB "
 "cable."
-msgstr ""
+msgstr "打开USB调试后，将设备通过USB线连接到PC。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:52
 msgid "For advanced users, it should also be possible to use wireless ADB."
-msgstr ""
+msgstr "如果你是高级用户，也可以使用无线ADB。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:54
 msgid ""
 "Make sure there is an export preset marked as **Runnable** for the target "
 "platform (Android or HTML5)."
 msgstr ""
+"确认目标平台（Android 或者 HTML5）有一个被标记为 **可执行** 的导出预设项。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:56
 msgid ""
 "If everything is configured correctly and with no errors, platform-specific "
 "icons will appear in the top-right corner of the editor."
-msgstr ""
+msgstr "如果这些都配置正确并且没有报错，编辑器右上角会出现平台对应的图标。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:58
 msgid "Click the button to export to the desired platform in one click."
-msgstr ""
+msgstr "点击该按钮一键导出到所需的平台。"

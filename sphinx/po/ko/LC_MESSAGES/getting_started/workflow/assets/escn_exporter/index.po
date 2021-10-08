@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
-"이 챕터는 블렌더 플러그인  \"Godot Blender Exporter\"와 관련이 있습니다, 여기"
+"이 챕터는 블렌더 플러그인 \"Godot Blender Exporter\"와 관련이 있습니다, 여기"
 "서 다운로드 할 수 있습니다: https://github.com/godotengine/godot-blender-"
 "exporter"
 
@@ -38,8 +38,8 @@ msgid ""
 "imported as binary SCN for performance."
 msgstr ""
 "이 플러그인은 블렌더 씬을 Godot 특화된 씬 형식인 ESCN으로 내보내는 데 사용할 "
-"수 있습니다, TSCN (텍스트 형식)과 유사하지만 퍼포먼스를 위해 이진 SCN으로 가"
-"져옵니다."
+"수 있습니다, ESCN은 TSCN (텍스트 형식)과 유사하지만 퍼포먼스를 위해 바이너리 "
+"SCN으로 불러와집니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
@@ -47,7 +47,7 @@ msgstr "내보내기에 대한 세부 정보"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
-msgstr "특정 객체를 비활성화하기"
+msgstr "특정 오브젝트를 비활성화하기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -55,15 +55,16 @@ msgid ""
 "for baking). An object will not be exported if it is not rendered in the "
 "scene. This can be set in the outliner:"
 msgstr ""
-"때때로 일부 객체는 내보내지 않도록 하고 싶습니다 (예: 베이크에 사용되는 높은 "
-"리소스의 모델). 씬에 렌더가 되지 않으면 객체는 내보내지지 않을 것입니다. 이"
-"는 아웃라이너에서 설정할 수 있습니다:"
+"때때로 일부 오브젝트는 내보내지 않도록 하고 싶습니다 (예: 베이크에 사용되는 "
+"높은 리소스의 모델). 씬에 렌더가 되지 않으면 오브젝트는 내보내지지 않을 것입"
+"니다. 이는 아웃라이너에서 설정할 수 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
-msgstr "객체를 뷰포드에서 숨기면, 내보내지지만 Godot 씬에서는 숨겨질 것입니다."
+msgstr ""
+"오브젝트를 뷰포드에서 숨기면, 내보내지지만 Godot 씬에서는 숨겨질 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"

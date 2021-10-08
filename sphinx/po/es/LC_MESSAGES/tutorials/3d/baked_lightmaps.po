@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,14 @@ msgid ""
 "significantly, so it is recommended to bake lightmaps only when you actually "
 "need to see changes in lighting."
 msgstr ""
+"A medida que se están horneando las texturas (baking), tienen menos "
+"problemas que ``GIProbe`` con respecto a la purga de la luz, y la luz "
+"indirecta a menudo se verá mejor. La desventaja es que hornear mapas de luz "
+"lleva mucho más tiempo que hornear una ``GIProbe``. Mientras que hornear una "
+"``GIProbe`` se puede hacer en cuestión de segundos, hornear mapas de luz "
+"tomará varios minutos, si no más. Esto puede ralentizar significativamente "
+"la velocidad de iteración, por lo que se recomienda hornear mapas de luz "
+"solo cuando realmente necesite ver cambios en la iluminación."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:27
 msgid ""
@@ -72,6 +80,10 @@ msgid ""
 "you can no longer use it for other purposes in materials (either in the "
 "built-in :ref:`doc_spatial_material` or in custom shaders)."
 msgstr ""
+"Los mapas de luz para hornear (baking) también reservarán la ranura UV2 de "
+"los materiales horneados, lo que significa que ya no podrá usarlos para "
+"otros fines en los materiales (ya sea en el incorporado :ref:"
+"`doc_spatial_material` o en sombreadores personalizados)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
 #, fuzzy
@@ -134,17 +146,15 @@ msgid "Unwrap on scene import"
 msgstr "Unwrap al importar escena"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:60
-#, fuzzy
 msgid ""
 "This is probably the best approach overall. The only downside is that, on "
 "large models, unwrapping can take a while on import. Nonetheless, Godot will "
 "cache the UV2 across reimports, so it will only be regenerated when needed."
 msgstr ""
-"Este es probablemente el mejor enfoque en general. La única desventaja es "
-"que, en los modelos grandes, el proceso de unwrapping puede llevar un tiempo "
-"considerable en la importación. Simplemente selecciona la escena importada "
-"en el panel de Sistema de Archivos, luego ve al panel Importar. Allí se "
-"puede modificar la siguiente opción:"
+"Este es probablemente el mejor enfoque en general. El único inconveniente es "
+"que, en modelos grandes, el desenvolvimiento puede tardar un poco en la "
+"importación. No obstante, Godot guardará en caché la UV2 a través de las "
+"reimportaciones, por lo que sólo se regenerará cuando sea necesario."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:64
 #, fuzzy
@@ -200,6 +210,9 @@ msgid ""
 "control as these files guarantee that UV2 reimports are consistent across "
 "platforms and engine versions."
 msgstr ""
+"Además, los archivos ``*.unwrap_cache`` *no* deben ignorarse en el control "
+"de versiones, ya que estos archivos garantizan que las reimportaciones de "
+"UV2 sean consistentes en todas las plataformas y versiones del motor."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:89
 msgid "Unwrap from within Godot"
@@ -286,7 +299,6 @@ msgid "Setting up the scene"
 msgstr "Configurando la escena"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:133
-#, fuzzy
 msgid ""
 "Before anything is done, a **BakedLightmap** node needs to be added to a "
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
@@ -302,7 +314,7 @@ msgid ""
 "baker, and each will be assigned a lightmap of its own (just make sure to "
 "respect the rule about scaling mentioned before):"
 msgstr ""
-"Se puede instanciar una subescena varias veces, ya que esto es apoyado por "
+"Se puede instanciar una sub-escena varias veces, ya que esto es apoyado por "
 "el baker, y a cada una se le asignará un mapa de luz propio (sólo asegúrese "
 "de respetar la regla sobre el escalado mencionada anteriormente):"
 
@@ -319,14 +331,13 @@ msgstr ""
 "Lightmap necesita un volumen aproximado del área afectada porque lo utiliza "
 "para transferir la luz a los objetos dinámicos que se encuentran en su "
 "interior (más sobre eso más adelante). Sólo cubre la escena con el volumen "
-"como lo haces con \"GIProbe\":"
+"como lo haces con ``GIProbe``:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid "Setting up meshes"
 msgstr "Configurando mallas"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:155
-#, fuzzy
 msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
 "have the **Use in Baked Light** property enabled."
@@ -352,9 +363,10 @@ msgid ""
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
-"Las luces se baked con luz indirecta por defecto. Esto significa que los "
-"mapas de sombras y la iluminación siguen siendo dinámicos y afectan a los "
-"objetos en movimiento, pero la luz que rebota de esa luz se baked."
+"Las luces se hornean (bake) con luz indirecta por defecto. Esto significa "
+"que los mapas de sombras y la iluminación siguen siendo dinámicos y afectan "
+"a los objetos en movimiento, pero la luz que rebota de esa luz será horneada "
+"(baked)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:169
 msgid ""
@@ -370,31 +382,30 @@ msgid "The modes are:"
 msgstr "Los modos son:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
-#, fuzzy
 msgid "Disabled"
-msgstr "Variable"
+msgstr "Disabled"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
-#, fuzzy
 msgid ""
 "The light is ignored when baking lightmaps. Keep in mind hiding a light will "
 "have no effect for baking, so this must be used instead of hiding the Light "
 "node."
 msgstr ""
-"**Disabled:** La luz es ignorada en la cocción. Ten en cuenta que ocultar "
-"una luz no tendrá ningún efecto para la baking, así que esto debe ser usado "
-"en su lugar."
+"**Disabled:** La luz es ignorada en el horneado de mapas de luces. Ten en "
+"cuenta que ocultar una luz no tendrá ningún efecto para el baking, así que "
+"esto debe ser usado en su lugar."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:182
 msgid ""
 "This is the mode to use for dynamic lighting effects such as explosions and "
 "weapon effects."
 msgstr ""
+"Este es el modo a utilizar para efectos de iluminación dinámicos como "
+"explosiones y efectos de armas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:185
-#, fuzzy
 msgid "Indirect"
-msgstr "rect2"
+msgstr "Indirect"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid ""
@@ -402,6 +413,10 @@ msgid ""
 "time friendliness. Only indirect lighting will be baked. Direct light and "
 "shadows are still real-time, as they would be without BakedLightmap."
 msgstr ""
+"Este es el modo predeterminado, representa un equilibrio entre el "
+"rendimiento y la facilidad de uso en tiempo real. Solo se horneará la "
+"iluminación indirecta. La luz directa y las sombras siguen siendo en tiempo "
+"real, como lo serían sin un BakedLightmap."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:191
 msgid ""
@@ -409,10 +424,14 @@ msgid ""
 "position while still looking fairly correct. For example, you can use this "
 "to create flickering static torches that have their indirect light baked."
 msgstr ""
+"Este modo permite realizar cambios *sutiles* en el color, la energía y la "
+"posición de una luz sin dejar de parecer aproximadamente correcta. Por "
+"ejemplo, puede usar esto para crear antorchas estáticas parpadeantes que "
+"tienen su luz indirecta horneada."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:196
 msgid "All"
-msgstr ""
+msgstr "All"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid ""
@@ -426,12 +445,25 @@ msgid ""
 "implemented with a Sprite3D + RayCast setup, or a negative SpotLight "
 "pointing down with its bake mode set to **Disabled**."
 msgstr ""
+"Se horneará tanto la iluminación indirecta como la directa. Dado que las "
+"superficies estáticas pueden omitir los cálculos de iluminación y sombras "
+"por completo, este modo proporciona el mejor rendimiento junto con sombras "
+"suaves que nunca se desvanecen según la distancia. La luz en tiempo real ya "
+"no afectará a las superficies horneadas, pero seguirá afectando a los "
+"objetos dinámicos. Al usar el modo de horneado **All** en una luz, los "
+"objetos dinámicos no proyectarán sombras en tiempo real sobre las "
+"superficies horneadas, por lo que debe usar un enfoque diferente, como "
+"sombras de manchas. Las sombras de manchas se pueden implementar con una "
+"configuración Sprite3D + RayCast, o un SpotLight negativo apuntando hacia "
+"abajo con su modo de horneado configurado en **Disabled**."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "The light will not be adjustable at all during gameplay; moving it and "
 "changing its color will not have any effect on static surfaces."
 msgstr ""
+"La luz no se podrá ajustar durante el juego. Las luces en movimiento o que "
+"cambien su color no tendrán ningún efecto sobre las superficies estáticas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:211
 msgid ""
@@ -442,13 +474,19 @@ msgid ""
 "while still allowing dynamic objects to cast real-time shadows in outdoor "
 "areas."
 msgstr ""
+"Dado que los modos de horneado se pueden ajustar por luz, es posible crear "
+"configuraciones híbridas de luz horneada. Una opción popular es usar un "
+"DirectionalLight en tiempo real con su modo de horneado configurado en "
+"**Indirect**, y usar el modo de horneado **All** para OmniLights y "
+"SpotLights. Esto proporciona un buen rendimiento al tiempo que permite que "
+"los objetos dinámicos proyecten sombras en tiempo real en áreas al aire "
+"libre."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:218
 msgid "Baking"
-msgstr "Horneado"
+msgstr "Horneando (Baking)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:220
-#, fuzzy
 msgid ""
 "To begin the bake process, just push the **Bake Lightmaps** button on top "
 "when selecting the BakedLightmap node:"
@@ -467,7 +505,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:229
 msgid "Balancing bake times with quality"
-msgstr ""
+msgstr "Equilibrar los tiempos de horneado (bake) con la calidad"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:231
 msgid ""
@@ -476,6 +514,11 @@ msgid ""
 "Then, once you are confident with your scene's lighting setup, raise the "
 "quality settings and perform a \"final\" bake before exporting your project."
 msgstr ""
+"Debido a que el baking de alta calidad pueden llevar mucho tiempo (hasta "
+"varias horas para escenas grandes y complejas), se recomienda utilizar "
+"ajustes de menor calidad al principio. Luego, una vez que esté seguro con la "
+"configuración de iluminación de su escena, aumente la configuración de "
+"calidad y realice un horneado \"final\" antes de exportar su proyecto."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:237
 msgid "Configuring bake"
@@ -492,11 +535,15 @@ msgid ""
 "baked and is *touching* the bake extents will have lightmaps baked for it, "
 "but dynamic object capture will only work within the extents."
 msgstr ""
+"**Bake Extents**: el tamaño del área afectada. Esto se puede editar en la "
+"ventana gráfica del editor 3D usando las manijas. Cualquier objeto que pueda "
+"tener mapas de luz horneados y esté *tocando* las extensiones de horneado "
+"tendrá mapas de luz horneados, pero la captura dinámica de objetos solo "
+"funcionará dentro de las extensiones."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:247
-#, fuzzy
 msgid "Tweaks"
-msgstr "Tweaking (ajustes)"
+msgstr "Tweaks (ajustes)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:249
 msgid ""
@@ -505,6 +552,11 @@ msgid ""
 "lightmap with less noise. The difference is especially noticeable with "
 "emissive materials or areas that get little to no direct lighting."
 msgstr ""
+"**Calidad:** Se proporcionan tres modos de calidad de horneado: Low, Medium, "
+"High, Ultra. Una calidad más alta lleva más tiempo, pero da como resultado "
+"un mapa de luz de mejor aspecto con menos ruido. La diferencia es "
+"especialmente notable con materiales emisores o áreas que reciben poca o "
+"ninguna iluminación directa."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:253
 msgid ""
@@ -638,6 +690,8 @@ msgstr ""
 msgid ""
 "The Light Data resource can be edited to adjust two additional properties:"
 msgstr ""
+"El recurso Light Data se puede editar para ajustar dos propiedades "
+"adicionales:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:323
 msgid ""

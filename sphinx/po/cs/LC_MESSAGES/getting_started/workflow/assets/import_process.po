@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "Proces importu"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Import zdrojů v Godotu 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
+"Dříve vyžadoval import prostředků v systému Godot 2.x ruční správu "
+"samostatného adresáře se zdrojovými prostředky. Bez toho nebylo možné určit, "
+"jak konvertovat a měnit importní příznaky pro textury, zvukové soubory, "
+"scény atd."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -41,6 +45,11 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a ``res://.import`` folder."
 msgstr ""
+"V Godotu 3.0+ používáme modernější přístup k importu: Jednoduše vložte své "
+"prostředky (obrazové soubory, scény, zvukové soubory, písma atd.) přímo do "
+"složky projektu (zkopírujte je ručně pomocí průzkumníka souborů v operačním "
+"systému). Godot tyto soubory automaticky interně naimportuje a importované "
+"zdroje uchová skryté ve složce ``res://.import``."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -50,16 +59,25 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"To znamená, že při pokusu o přístup k importovaným prostředkům "
+"prostřednictvím kódu musíte použít :ref:`Resource "
+"Loader<class_ResourceLoader>`, protože automaticky zohledňuje, kde jsou "
+"interní soubory uloženy. Pokud se pokusíte přistupovat k importovanému "
+"prostředku pomocí třídy :ref:`Soubor <class_Filer>`, bude to fungovat v "
+"editoru, ale v exportovaném projektu ani náhodou."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"Třída :ref:`Resource Loader<class_ResourceLoader>` však nemá přístup k "
+"neimportovaným souborům, toho je schopna pouze třída :ref:`File "
+"<class_File>`` ."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
-msgstr ""
+msgstr "Změna parametrů importu"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
 msgid ""
@@ -67,12 +85,17 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
+"Chcete-li změnit parametry importu zdroje v systému Godot (opět mějte na "
+"paměti, že parametry importu jsou přítomny pouze pro nenativní typy zdrojů "
+"Godot), vyberte příslušný zdroj v doku souborového systému:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
+"Po úpravě parametrů stiskněte tlačítko \"Reimport\". Tyto parametry budou "
+"použity pouze pro tento zdroj při všech dalších reimportech."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -80,10 +103,13 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"Je také možné změnit parametry importu několika zdrojů najednou. Stačí je v "
+"doku zdrojů všechny vybrat a změněné parametry se pro ně při opětovném "
+"importu použijí hromadně."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Reimporting multiple assets"
-msgstr ""
+msgstr "Opětovný import více položek"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -93,6 +119,11 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"Při práci na projektu můžete zjistit, že je třeba změnit stejné parametry u "
+"několika zdrojů, například povolit mipmapy, ale chcete změnit pouze tyto "
+"konkrétní parametry. Za tímto účelem vyberte v systému souborů každý zdroj, "
+"který chcete znovu importovat. Na kartě import se nyní vlevo od každého "
+"parametru importu objeví zaškrtávací políčko."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -101,10 +132,13 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Zaškrtněte políčko u parametrů, které chcete u importovaných zdrojů změnit, "
+"a poté parametry normálně změňte. Nakonec klikněte na tlačítko reimportovat "
+"a každý vybraný zdroj bude znovu importován pouze se změněnými parametry."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
-msgstr ""
+msgstr "Automatický reimport"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
@@ -112,22 +146,27 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"Pokud se kontrolní součet MD5 položky zdroje změní, Godot provede jeho "
+"automatický reimport a použije předvolbu nakonfigurovanou pro daný zdroj."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
-msgstr ""
+msgstr "Vygenerované soubory"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Při importu se přidá další soubor ``<asset>.import``, který obsahuje "
+"konfiguraci importu. Nezapomeňte jej promítnout do systému správy verzí!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
 "Additionally, extra assets will be preset in the hidden ``res://.import`` "
 "folder:"
 msgstr ""
+"Navíc budou ve skryté složce ``res://.import`` přednastaveny další zdroje:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""
@@ -137,20 +176,28 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
+"Pokud dojde k vymazání některého ze souborů v této složce (nebo celé "
+"složky), zdroj nebo zdroje budou automaticky reimportovány. Odeslání této "
+"složky do systému správy verzí je proto volitelné. Může zkrátit dobu "
+"opětovného importu při kontrole na jiném počítači, ale zabere podstatně více "
+"místa a času pro přenos. Vyberte si svoje!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
-msgstr ""
+msgstr "Změna typu importovaného zdroje"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
+"Některé zdrojové položky lze importovat jako různé typy zdrojů. Za tímto "
+"účelem vyberte příslušný typ požadovaného zdroje a stiskněte tlačítko "
+"\"Reimport\":"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "Změna výchozích parametrů importu"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
@@ -159,19 +206,27 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"Různé typy her mohou vyžadovat různá výchozí nastavení. Změnu výchozích "
+"nastavení pro jednotlivé projekty lze provést pomocí nabídky \"Přednastavit.."
+"\". Kromě toho, že některé typy zdrojů nabízejí vlastní předvolby, lze "
+"výchozí nastavení také uložit či smazat:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "Klíčem je jednoduchost!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"Jedná se o velmi jednoduchý pracovní postup, na se dá zvyknout velice "
+"rychle. Podporuje také korektnější způsob nakládání se zdroji."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"Pro import je k dispozici mnoho typů zdrojů, proto pokračujte ve čtení, "
+"abyste pochopili, jak se všemi pracovat!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -526,31 +526,41 @@ msgid ""
 "This comment style guide applies to all programming languages used within "
 "Godot's codebase."
 msgstr ""
+"Ce guide de style de commentaires s'applique à tous les langages de "
+"programmation utilisés dans la base de code de Godot."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:311
 msgid ""
 "Begin comments with a space character to distinguish them from disabled code."
 msgstr ""
+"Commencez les commentaires par un caractère espace pour les distinguer du "
+"code désactivé."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:312
 msgid ""
 "Use sentence case for comments. Begin comments with an uppercase character "
 "and always end them with a period."
 msgstr ""
+"Utilisez la casse pour les commentaires. Commencez vos commentaires par une "
+"majuscule et terminez-les toujours par un point."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:314
 msgid "Reference variable/function names and values using backticks."
 msgstr ""
+"Référencez les noms et les valeurs des variables/fonctions en utilisant des "
+"backticks."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:315
 msgid "Wrap comments to ~100 characters."
-msgstr ""
+msgstr "Limitez les commentaires à ~100 caractères."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:316
 msgid ""
 "You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as adominitions "
 "when needed."
 msgstr ""
+"Vous pouvez utiliser ``TODO:``, ``FIXME:``, ``NOTE:``, ou ``HACK:`` comme "
+"avertissements si nécessaire."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:319
 #: ../../docs/community/contributing/code_style_guidelines.rst:342
@@ -562,6 +572,8 @@ msgid ""
 "Don't repeat what the code says in a comment. Explain the *why* rather than "
 "*how*."
 msgstr ""
+"Ne répétez pas ce que dit le code dans un commentaire. Expliquez le "
+"*pourquoi* plutôt que *comment*."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:329
 msgid "**Bad:**"
@@ -574,9 +586,17 @@ msgid ""
 "exposed to scripting. This is because exposed methods should be documented "
 "in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
 msgstr ""
+"Vous pouvez utiliser des commentaires de style Javadoc au-dessus des "
+"définitions de fonctions ou de macros. Il est recommandé d'utiliser les "
+"commentaires de style Javadoc *seulement* pour les méthodes qui ne sont pas "
+"exposées aux scripts. En effet, les méthodes exposées doivent être "
+"documentées dans la référence XML :ref:`class "
+"<doc_updating_the_class_reference>` à la place."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:354
 msgid ""
 "For member variables, don't use Javadoc-style comments but use single-line "
 "comments instead:"
 msgstr ""
+"Pour les variables membres, n'utilisez pas de commentaires de type Javadoc "
+"mais plutôt des commentaires d'une seule ligne :"

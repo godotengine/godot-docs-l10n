@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,17 +165,17 @@ msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
 msgid "Get project/editor settings"
-msgstr "获取project/editor设置"
+msgstr "获取项目/编辑器设置"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
 msgid "There are four macros available for this:"
-msgstr "有四种宏可供选择:"
+msgstr "有四种宏可供选择："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
 "If a default value has been specified elsewhere, don't specify it again to "
 "avoid repetition:"
-msgstr "如果在其他地方已经指定了默认值, 就不要再指定了, 以免重复:"
+msgstr "如果在其他地方已经指定了默认值，就不要再指定了，以免重复："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:170
 msgid ""
@@ -184,7 +184,7 @@ msgid ""
 "referenced."
 msgstr ""
 "建议每个设置只使用一次 ``GLOBAL_DEF``/``EDITOR_DEF`` 并在引用它的所有其他位置"
-"使用 ``GLOBAL_GET``/``EDITOR_GET``."
+"使用 ``GLOBAL_GET``/``EDITOR_GET``\\ 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:174
 msgid "Error macros"
@@ -193,7 +193,7 @@ msgstr "错误宏"
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:176
 msgid ""
 "Godot features many error macros to make error reporting more convenient."
-msgstr "Godot提供了许多错误宏, 以便更方便地报告错误."
+msgstr "Godot 提供了许多错误宏，可以更方便地报告错误。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:180
 msgid ""
@@ -201,8 +201,8 @@ msgid ""
 "in ``assert()`` function. An error is reached if the condition inside "
 "evaluates to ``true``, not ``false``."
 msgstr ""
-"错误宏中的条件以GDScript内置的 ``assert()`` 函数的 **opposite** 方式工作. 如"
-"果内部条件的计算结果为 ``true`` , 而不是 ``false`` , 则会出现错误."
+"错误宏中的条件和 GDScript 内置的 ``assert()`` 函数的\\ **相反**\\ 。如果其中"
+"的条件计算结果为 ``true`` 而不是 ``false``\\ ，就会认为出现了错误。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:186
 msgid ""
@@ -212,9 +212,9 @@ msgid ""
 "don't know C++. In case a method was passed invalid arguments, you can print "
 "the invalid value in question to ease debugging."
 msgstr ""
-"此处仅记录具有自定义消息的变体, 因为这些变体应始终用于新的贡献中. 确保提供的"
-"自定义消息包括足够的信息, 即使人们不了解C ++, 也可以使人们诊断问题. 如果方法"
-"传递了无效的参数, 则可以打印有问题的无效值以简化调试."
+"此处仅记录具有自定义消息的变体，因为新的贡献应该始终使用这些变体。确保提供的"
+"自定义消息包括足够的信息，让不了解 C++ 的人也可以诊断问题。如果某个方法拿到了"
+"无效的参数，则可以打印有问题的无效值以简化调试。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:192
 msgid ""
@@ -222,14 +222,14 @@ msgid ""
 "necessary, remove ``_MSG`` at the end of the macro name and don't supply a "
 "message argument."
 msgstr ""
-"对于不需要显示可读性信息的内部错误检查, 请删除宏名末尾的 ``_MSG`` , 并且不要"
-"提供信息参数."
+"对于不需要显示可读性信息的内部错误检查，请删除宏名末尾的 ``_MSG``\\ ，并且不"
+"要提供信息参数。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:196
 msgid ""
 "Also, always try to return processable data so the engine can keep running "
 "well."
-msgstr "另外, 总是尽量返回可处理的数据, 这样引擎才能保持良好的运行."
+msgstr "另外，总是尽量返回可处理的数据，这样引擎才能保持良好的运行。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:240
 msgid ""
@@ -237,8 +237,8 @@ msgid ""
 "error_macros.h>`__ in Godot's codebase for more information about each error "
 "macro."
 msgstr ""
-"关于每个错误宏的更多信息，参见Godot代码库中的 `core/error_macros.h <https://"
-"github.com/godotengine/godot/blob/3.x/core/error_macros.h>`__ 。"
+"关于每个错误宏的更多信息，参见 Godot 代码库中的 `core/error_macros.h "
+"<https://github.com/godotengine/godot/blob/3.x/core/error_macros.h>`__\\ 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:243
 msgid ""
@@ -247,6 +247,6 @@ msgid ""
 "list of available error codes in `core/error_list.h <https://github.com/"
 "godotengine/godot/blob/3.x/core/error_list.h>`__."
 msgstr ""
-"一些函数会返回一个错误代码，通过返回类型 ``Error`` 具体化。这个值可以直接从一"
-"个错误宏中返回。参见 `core/error_list.h <https://github.com/godotengine/"
-"godot/blob/3.x/core/error_list.h>`__ 中的可用错误代码列表。"
+"一些函数会返回错误代码（体现为 ``Error`` 返回类型），这个值可以直接从错误宏中"
+"返回。参见 `core/error_list.h <https://github.com/godotengine/godot/blob/3.x/"
+"core/error_list.h>`__ 中的可用错误代码列表。"

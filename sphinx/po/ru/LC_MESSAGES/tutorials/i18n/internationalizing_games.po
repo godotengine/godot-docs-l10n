@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:4
 msgid "Internationalizing games"
-msgstr ""
+msgstr "Интернационализация игр"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:7
 msgid "Introduction"
@@ -44,16 +44,25 @@ msgid ""
 "covered in the :ref:`doc_importing_translations` tutorial, so this one could "
 "be seen more like a follow-up to that one."
 msgstr ""
+"Локализацией обычно занимаются специальные студии, нанятые для этой работы, "
+"и, несмотря на огромное количество программного обеспечения и форматов "
+"файлов, наиболее распространенным способом локализации по сей день остаются "
+"электронные таблицы. Процесс создания электронных таблиц и их импорта уже "
+"рассмотрен в учебнике :ref:`doc_importing_translations`, поэтому этот урок "
+"можно рассматривать как продолжение этого."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
 msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
+"В качестве примера мы будем использовать официальную демонстрацию; вы можете "
+"`скачать ее из библиотеки ассетов <https://godotengine.org/asset-library/"
+"asset/134>`_."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
 msgid "Configuring the imported translation"
-msgstr ""
+msgstr "Настройка импортированного перевода"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
 msgid ""
@@ -61,14 +70,19 @@ msgid ""
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
+"Переводы могут обновляться и повторно импортироваться при их изменении, но "
+"они все равно должны быть добавлены в проект. Это делается в разделе "
+"**Проект → Настройки проекта → Локализация**:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
 msgid "The above dialog is used to add or remove translations project-wide."
 msgstr ""
+"Приведенное выше диалоговое окно используется для добавления или удаления "
+"переводов в рамках всего проекта."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
-msgstr ""
+msgstr "Локализация ресурсов"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
 msgid ""
@@ -76,16 +90,21 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
+"Также можно указать Godot использовать альтернативные версии ассетов "
+"(ресурсов) в зависимости от текущего языка. Для этого можно использовать "
+"вкладку **Remaps**:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
 "Select the resource to be remapped, then add some alternatives for each "
 "locale."
 msgstr ""
+"Выберите ресурс для перемапирования, затем добавьте несколько альтернатив "
+"для каждой локали."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:52
 msgid "Converting keys to text"
-msgstr ""
+msgstr "Преобразование ключей в текст"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
@@ -95,6 +114,11 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
+"Некоторые элементы управления, такие как :ref:`Button <class_Button>` и :ref:"
+"`Label <class_Label>`, автоматически получают перевод, если их текст "
+"соответствует ключу перевода. Например, если текст метки имеет значение "
+"\"MAIN_SCREEN_GREETING1\" и этот ключ существует в текущем переводе, то "
+"текст будет автоматически переведен."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -106,12 +130,22 @@ msgid ""
 "send a :ref:`Object.notification<class_Object_method_notification>` to "
 "update the translation::"
 msgstr ""
+"Такое поведение автоматического перевода может быть нежелательным в "
+"некоторых случаях. Например, при использовании Label для отображения имени "
+"игрока вы, скорее всего, не захотите, чтобы имя игрока переводилось, если "
+"оно соответствует ключу перевода. Чтобы отключить автоматический перевод на "
+"конкретном узле, используйте :ref:`Object."
+"set_message_translation<class_Object_method_set_message_translation>` и "
+"отправьте :ref:`Object.notification<class_Object_method_notification>` для "
+"обновления перевода::"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:74
 msgid ""
 "For more complex UI nodes such as OptionButtons, you may have to use this "
 "instead::"
 msgstr ""
+"Для более сложных узлов пользовательского интерфейса, таких как "
+"OptionButton, возможно, придется использовать следующее::"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:83
 msgid ""
@@ -119,10 +153,13 @@ msgid ""
 "used. This will just look up the text in the translations and convert it if "
 "found:"
 msgstr ""
+"В коде можно использовать функцию :ref:`Object.tr() "
+"<class_Object_method_tr>`. Она будет просто искать текст в переводах и "
+"преобразовывать его, если он найден:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:93
 msgid "Making controls resizable"
-msgstr ""
+msgstr "Изменение размеров элементов управления"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:95
 msgid ""
@@ -132,6 +169,11 @@ msgid ""
 "<class_Container>` can be useful, as well as the text wrapping options "
 "available in :ref:`Label <class_Label>`."
 msgstr ""
+"Один и тот же текст на разных языках может сильно отличаться по длине. Для "
+"этого обязательно прочитайте руководство по :ref:`doc_size_and_anchors`, так "
+"как динамическая настройка размеров элементов управления может помочь. :ref:"
+"`Container <class_Container>` может быть полезен, также как и опции "
+"обертывания текста, доступные в :ref:`Label <class_Label>`."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:102
 msgid "TranslationServer"

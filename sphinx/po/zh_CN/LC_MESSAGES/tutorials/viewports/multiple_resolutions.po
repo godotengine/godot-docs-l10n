@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -477,22 +477,21 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid "Common use case scenarios"
-msgstr ""
+msgstr "常见使用场景"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:269
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
-msgstr "如果要适配多种分辨率和纵横比, 素材应做哪些处理？"
+msgstr "如果要适配多种分辨率和纵横比，推荐使用以下设置。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:273
 msgid "Desktop game"
-msgstr ""
+msgstr "桌面游戏"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:275
 msgid "**Non-pixel art:**"
-msgstr ""
+msgstr "**非像素风：**"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
 msgid ""
@@ -500,6 +499,9 @@ msgid ""
 "have a display smaller than 1920×1080, set **Test Width** and **Test "
 "Height** to lower values to make the window smaller when the project starts."
 msgstr ""
+"将基础窗口宽度设置为 ``1920`` 、窗口高度设置为 ``1080`` 。如果你的显示器小于 "
+"1920×1080，就将 **Test Width** 和 **Test Height** （测试宽度和测试高度）设置"
+"为较小的值，项目启动时就会将窗口调小。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:280
 msgid ""
@@ -511,12 +513,17 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"或者如果你主要针对的是高端设备，那么就把基础窗口宽度设置为 ``3840`` 、窗口高"
+"度设置为 ``2160`` 。这样你就可以提供更高分辨率的 2D 素材，用更高的内存占用和"
+"文件大小换取更清晰的画面。注意，这样做会让未做 mipmap 的纹理在低分辨率设备上"
+"具有颗粒感，请参考 :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling` 进行操作。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:287
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:334
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:353
 msgid "Set the stretch mode to ``2d``."
-msgstr ""
+msgstr "将拉伸模式（Stretch Mode）设置为 ``2d`` 。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:288
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:335
@@ -526,6 +533,8 @@ msgid ""
 "aspect ratios and makes better use of tall smartphone displays (such as 18:9 "
 "or 19:9 aspect ratios)."
 msgstr ""
+"将拉伸比例（Stretch Aspect）设置为 ``expand`` （扩展）。这样可以支持多种分辨"
+"率，并且能够更好地利用较长的智能手机屏幕（例如 18:9 和 19:9 的长宽比）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:290
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:337
@@ -533,12 +542,11 @@ msgstr ""
 msgid ""
 "Configure Control nodes' anchors to snap to the correct corners using the "
 "**Layout** menu."
-msgstr ""
+msgstr "使用 **布局** 菜单将 Control 节点的锚点吸附到正确的角落。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:292
-#, fuzzy
 msgid "**Pixel art:**"
-msgstr "**PCK格式:**"
+msgstr "**像素风：**"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:294
 msgid ""
@@ -547,11 +555,13 @@ msgid ""
 "sizes will require using higher resolution artwork, unless you intend to "
 "show more of the game world at a given time."
 msgstr ""
+"将基础窗口大小设置为你想要使用的视图尺寸。多数像素风游戏使用的视图尺寸在 "
+"256×224 和 640×480 之间。视图尺寸越大，所需素材的分辨率也就越高，除非你想要显"
+"示更大的游戏世界区域。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:298
-#, fuzzy
 msgid "Set the stretch mode to ``viewport``."
-msgstr "将 \"着色器_类型\" 设置为 \"粒子\"."
+msgstr "将拉伸模式（Stretch Mode）设置为 ``viewport`` （视图）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:299
 msgid ""
@@ -559,12 +569,17 @@ msgid ""
 "black bars). As an alternative, you can set the stretch aspect to ``expand`` "
 "to support multiple aspect ratios."
 msgstr ""
+"将拉伸比例（Stretch Aspect）设置为 ``keep`` （保持）可以（通过添加黑条的方"
+"式）强制使用固定的长宽比。如果你想支持不同长宽比的话，也可以把拉伸模式设置为 "
+"``expand`` （扩展）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:302
 msgid ""
 "If using the ``expand`` stretch aspect, Configure Control nodes' anchors to "
 "snap to the correct corners using the **Layout** menu."
 msgstr ""
+"如果选用 ``expand`` 拉伸比例，使用 **布局** 菜单将 Control 节点的锚点吸附到正"
+"确的角落。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:307
 msgid ""
@@ -574,6 +589,9 @@ msgid ""
 "3D viewport, you should use the ``2d`` stretch mode instead of the "
 "``viewport`` stretch mode."
 msgstr ""
+"``viewport`` 拉伸模式会先以较低分辨率渲染，然后拉伸到最终窗口的大小。如果你能"
+"够接受精灵可以移动或者旋转到“次像素”位置，或者希望有高分辨率的 3D 视图，可以"
+"把 ``viewport`` 拉伸模式换成 ``2d`` 模式。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:313
 msgid ""
@@ -583,20 +601,24 @@ msgid ""
 "this, use an add-on such as the `Integer Resolution Handler <https://github."
 "com/Yukitty/godot-addon-integer_resolution_handler>`__."
 msgstr ""
+"Godot 目前无法在使用 ``2d`` 和 ``viewport`` 拉伸模式时强制使用整数倍缩放，也"
+"就是说，如果最终的窗口大小不是基础窗口大小的倍数，像素画的显示效果可能比较糟"
+"糕。可以使用类似 `Integer Resolution Handler <https://github.com/Yukitty/"
+"godot-addon-integer_resolution_handler>`__ 的插件解决这一问题。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:319
 msgid "Mobile game in landscape mode"
-msgstr ""
+msgstr "横屏的手机游戏"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:321
 msgid ""
 "Godot is configured to use landscape mode by default. This means you don't "
 "need to change the display orientation project setting."
-msgstr ""
+msgstr "Godot 默认使用横屏模式，所以你无需在项目设置中调整显示方向。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:324
 msgid "Set the base window width to ``1280`` and window height to ``720``."
-msgstr ""
+msgstr "将基础窗口宽度设置为 ``1280`` ，窗口高度设置为 ``720`` 。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:325
 msgid ""
@@ -610,14 +632,20 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"或者如果你主要针对的是高端设备，那么就把基础窗口宽度设置为 ``1920`` 、窗口高"
+"度设置为 ``1080`` 。这样你就可以提供更高分辨率的 2D 素材，用更高的内存占用和"
+"文件大小换取更清晰的画面。很多设备拥有更高分辨率的显示屏（1440p），但因为智能"
+"手机的屏幕比较小，所以很难看出和 1080p 的区别。注意，这样做会让未做 mipmap 的"
+"纹理在低分辨率设备上具有颗粒感，请参考 :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling` 进行操作。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:340
 msgid "Mobile game in portrait mode"
-msgstr ""
+msgstr "竖屏的手机游戏"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:342
 msgid "Set the base window width to ``720`` and window height to ``1080``."
-msgstr ""
+msgstr "将基础窗口宽度设置为 ``720`` ，窗口高度设置为 ``1080`` 。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:343
 msgid ""
@@ -631,15 +659,22 @@ msgid ""
 "the instructions described in :ref:"
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
+"或者如果你主要针对的是高端设备，那么就把基础窗口宽度设置为 ``1080`` 、窗口高"
+"度设置为 ``1920`` 。这样你就可以提供更高分辨率的 2D 素材，用更高的内存占用和"
+"文件大小换取更清晰的画面。很多设备拥有更高分辨率的显示屏（1440p），但因为智能"
+"手机的屏幕比较小，所以很难看出和 1080p 的区别。注意，这样做会让未做 mipmap 的"
+"纹理在低分辨率设备上具有颗粒感，请参考 :ref:"
+"`doc_multiple_resolutions_reducing_aliasing_on_downsampling` 进行操作。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:352
 msgid "Set **Display > Window > Handheld > Orientation** to ``portrait``."
 msgstr ""
+"将 **Display > Window > Handheld > Orientation** 设置为 ``portrait`` （竖"
+"屏）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:359
-#, fuzzy
 msgid "Non-game application"
-msgstr "归一化"
+msgstr "非游戏应用"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:361
 msgid ""
@@ -647,16 +682,20 @@ msgid ""
 "intend to target. This is not required, but this ensures that you design "
 "your UI with small window sizes in mind."
 msgstr ""
+"将基础窗口宽高设置为你想要支持的最小窗口尺寸。这不是必须的，但是可以保证你在"
+"设计 UI 时考虑较小的窗口尺寸。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:363
 msgid "Keep the stretch mode to its default value, ``disabled``."
-msgstr ""
+msgstr "保持拉伸模式（Stretch Mode）为默认值 ``disabled（禁用）`` 。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:364
 msgid ""
 "Keep the stretch aspect to its default value, ``ignore`` (its value won't be "
 "used since the stretch mode is ``disabled``)."
 msgstr ""
+"保持拉伸比例（Stretch Aspect）为默认值 ``ignore（忽略）`` （因为拉伸模式是 "
+"``disabled`` ，所以这里的值不会被用到）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:366
 msgid ""
@@ -664,6 +703,8 @@ msgid ""
 "script's ``_ready()`` function. This prevents the user from resizing the "
 "application below a certain size, which could break the UI layout."
 msgstr ""
+"你可以在脚本的 ``_ready()`` 函数中通过设置 ``OS.min_window_size`` 来定义窗口"
+"的最小尺寸。这样可以防止用户将应用窗口缩得过小，导致 UI 布局的问题。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:372
 msgid ""
@@ -672,11 +713,12 @@ msgid ""
 "is recommended to leave **Allow Hidpi** disabled in non-game applications to "
 "allow for the OS to use its low-DPI fallback."
 msgstr ""
+"Godot 尚未支持手动设置 2D 缩放比例，所以无法在非游戏应用中支持 hiDPI。因此，"
+"推荐为非游戏应用禁用 **Allow Hidpi** 选项，操作系统会回退到低 DPI。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:378
-#, fuzzy
 msgid "hiDPI support"
-msgstr "第三方支持"
+msgstr "支持 hiDPI 高分辨率屏幕"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:380
 msgid ""
@@ -685,6 +727,9 @@ msgid ""
 "operating system's DPI fallback scaling will be faster than letting the "
 "application scale itself (even when using the ``viewport`` stretch mode)."
 msgstr ""
+"默认情况下，操作系统会认为 Godot 项目是 DPI 无关的。因为操作系统的 DPI 回退缩"
+"放比让应用程序自己做缩放要快很多（即便用的是 ``viewport`` 拉伸模式），所以这"
+"样做可以提高在低端系统上的性能。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:385
 msgid ""
@@ -693,12 +738,17 @@ msgid ""
 "uses fullscreen, it's recommended to enable **Display > Window > Dpi > Allow "
 "Hidpi** in the Project Settings."
 msgstr ""
+"不过操作系统的 DPI 回退缩放功能在全屏模式下并不好用。如果你想在 hiDPI 显示器"
+"下得到清晰的画面，又或者想要支持全屏，那么推荐启用项目设置中的 **Display > "
+"Window > Dpi > Allow Hidpi** 。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:390
 msgid ""
 "**Allow Hidpi** is only effective on Windows and macOS. It's ignored on all "
 "other platforms."
 msgstr ""
+"**Allow Hidpi（允许 hiDPI）** 仅在 Windows 和 macOS 上有效，其它平台会忽略这"
+"个选项。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:395
 msgid ""
@@ -706,6 +756,8 @@ msgid ""
 "from the editor will only be DPI-aware if **Allow Hidpi** is enabled in the "
 "Project Settings."
 msgstr ""
+"Godot 编辑器本身是打开了这个选项，与 DPI 相关的。但在编辑器中运行项目时，只有"
+"在项目设置里启用 **Allow Hidpi** 才会让项目与 DPI 相关。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:402
 msgid "Reducing aliasing on downsampling"

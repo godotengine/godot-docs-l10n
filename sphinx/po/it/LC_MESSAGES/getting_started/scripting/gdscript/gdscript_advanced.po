@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
+#, fuzzy
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: Un'introduzione ai linguaggi dinamici"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 msgid "About"
@@ -44,54 +45,69 @@ msgid "Dynamic nature"
 msgstr "Natura dinamica"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
+#, fuzzy
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "Pro & contro della tipizzazione dinamica"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
+#, fuzzy
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
 msgstr ""
+"GDScript è un linguaggio dinamicamente tipizzato. Come tale, i suoi "
+"principali vantaggi sono che:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
+#, fuzzy
 msgid "Most code can be written and changed quickly and without hassle."
 msgstr ""
+"La maggior parte del codice può essere scritto e cambiato rapidamente e "
+"senza problemi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
+#, fuzzy
 msgid "Less code written means less errors & mistakes to fix."
-msgstr ""
+msgstr "Meno codice scritto significa meno errori ed errori da correggere."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
+#, fuzzy
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "Più facile leggere il codice (meno disordine)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
+#, fuzzy
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "Non è richiesta alcuna compilazione per il test."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
+#, fuzzy
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "Il tempo di esecuzione è minuscolo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
+#, fuzzy
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "Mentre i principali svantaggi sono:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
+#, fuzzy
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "Meno prestazioni rispetto ai linguaggi tipizzati staticamente."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
+#, fuzzy
 msgid "More difficult to refactor (symbols can't be traced)"
 msgstr ""
+"Più difficile da rifattorizzare (i simboli non possono essere tracciati)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -139,8 +155,9 @@ msgid "Dynamic:"
 msgstr "Dinamico:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
+#, fuzzy
 msgid "As function arguments:"
-msgstr ""
+msgstr "Come argomenti della funzione:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""

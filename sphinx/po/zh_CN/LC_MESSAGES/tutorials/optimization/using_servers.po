@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,7 +298,7 @@ msgstr ""
 "`RigidBody2D <class_RigidBody2D>`, 并在物体移动时移动一个 :ref:`CanvasItem "
 "<class_CanvasItem>`."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:192
+#: ../../docs/tutorials/optimization/using_servers.rst:193
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
@@ -307,11 +307,11 @@ msgstr ""
 "3D版本应该非常相似, 因为2D和3D物理服务器是相同的(分别使用 :ref:`RigidBody "
 "<class_RigidBody>` 和 :ref:`PhysicsServer <class_PhysicsServer>` )."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:196
+#: ../../docs/tutorials/optimization/using_servers.rst:197
 msgid "Getting data from the servers"
 msgstr "从服务器获取数据"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:198
+#: ../../docs/tutorials/optimization/using_servers.rst:199
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -327,7 +327,7 @@ msgstr ""
 "东西, 直到函数被实际调用. 如果你每一帧都调用它们, 这将严重降低性能(而且原因不"
 "会很明显)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:204
+#: ../../docs/tutorials/optimization/using_servers.rst:205
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

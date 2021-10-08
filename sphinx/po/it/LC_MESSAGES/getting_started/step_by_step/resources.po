@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,24 +22,36 @@ msgid "Resources"
 msgstr "Risorse"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
+#, fuzzy
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Nodi e risorse"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
+#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
+"Fino a questo tutorial, ci siamo concentrati sulla classe :ref:`Node "
+"<class_Node>` in Godot perché è quella che si usa per codificare il "
+"comportamento e la maggior parte delle caratteristiche del motore si basano "
+"su di essa. C'è un altro datatype che è altrettanto importante: :ref:"
+"`Resource <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
+#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
 "physics, arrange user interfaces, etc. **Resources** are **data "
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"I *Nodi* danno funzionalità: disegnano sprites, modelli 3D, simulano la "
+"fisica, organizzano le interfacce utente, ecc. Le **risorse** sono "
+"**contenitori di dati**. Non fanno nulla da soli: invece, i nodi usano i "
+"dati contenuti nelle risorse."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -52,88 +64,131 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
+#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
+"Quando il motore carica una risorsa dal disco, **la carica solo una volta**. "
+"Se una copia di quella risorsa è già in memoria, provare a caricare di nuovo "
+"la risorsa restituirà ogni volta la stessa copia. Poiché le risorse "
+"contengono solo dati, non c'è bisogno di duplicarle."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
+#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
 "many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"Ogni oggetto, sia esso un Nodo o una Risorsa, può esportare proprietà. Ci "
+"sono molti tipi di proprietà, come String, integer, Vector2, ecc., e ognuno "
+"di questi tipi può diventare una risorsa. Questo significa che sia i nodi "
+"che le risorse possono contenere risorse come proprietà:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
+#, fuzzy
 msgid "External vs built-in"
-msgstr ""
+msgstr "Esterno vs integrato"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
+#, fuzzy
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
+msgstr "Ci sono due modi per salvare le risorse. Possono essere:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
+#, fuzzy
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "**Esterno** a una scena, salvato sul disco come file individuale."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
+#, fuzzy
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
 msgstr ""
+"**Built-in**, salvato all'interno del file ``.tscn`` o del file ``.scn`` a "
+"cui sono allegati."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
+#, fuzzy
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Per essere più specifici, qui c'è una :ref:`Texture <class_Texture>` in un "
+"nodo :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
+#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
+"Cliccando sull'anteprima della risorsa possiamo visualizzare e modificare le "
+"proprietà della risorsa."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
+#, fuzzy
 msgid ""
 "The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"La proprietà path ci dice da dove viene la risorsa. In questo caso, viene da "
+"un'immagine PNG chiamata ``robi.png``. Quando la risorsa proviene da un file "
+"come questo, è una risorsa esterna. Se si cancella il percorso o questo "
+"percorso è vuoto, diventa una risorsa integrata."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
+#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
 "and save, Godot will save the image inside the ``.tscn`` scene file."
 msgstr ""
+"Il passaggio tra risorse incorporate ed esterne avviene quando salvi la "
+"scena. Nell'esempio sopra, se cancelli il percorso ``res://robi.png\"`` e "
+"salvi, Godot salverà l'immagine all'interno del file di scena ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
+#, fuzzy
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Anche se si salva una risorsa incorporata, quando si istanzia una scena più "
+"volte, il motore ne carica solo una copia."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
+#, fuzzy
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Caricare risorse dal codice"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:72
+#, fuzzy
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Ci sono due modi per caricare risorse dal codice. Primo, si può usare la "
+"funzione ``load()`` in qualsiasi momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
+#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Puoi anche ``precaricare`` le risorse. A differenza di ``load``, questa "
+"funzione leggerà il file dal disco e lo caricherà a tempo di compilazione. "
+"Di conseguenza, non puoi chiamare preload con un percorso variabile: devi "
+"usare una stringa costante."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 #, fuzzy
@@ -141,26 +196,38 @@ msgid "Loading scenes"
 msgstr "Caricamento delle scene"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
+#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"Anche le scene sono risorse, ma c'è una fregatura. Le scene salvate su disco "
+"sono risorse di tipo :ref:`PackedScene <class_PackedScene>`. La scena è "
+"impacchettata dentro una risorsa."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
+"Per ottenere un'istanza della scena, dovete usare il metodo :ref:"
+"`PackedScene.instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
+#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"Questo metodo crea i nodi nella gerarchia della scena, li configura e "
+"restituisce il nodo radice della scena. Potete poi aggiungerlo come figlio "
+"di qualsiasi altro nodo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
+#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -168,6 +235,11 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
+"L'approccio ha diversi vantaggi. Poiché la funzione :ref:`PackedScene."
+"instance() <class_PackedScene_method_instance>` è veloce, potete creare "
+"nuovi nemici, proiettili, effetti, ecc. senza doverli caricare di nuovo dal "
+"disco ogni volta. Ricordate che, come sempre, le immagini, le mesh, ecc. "
+"sono tutte condivise tra le istanze della scena."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 #, fuzzy
@@ -175,12 +247,17 @@ msgid "Freeing resources"
 msgstr "Liberare le risorse"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
+#, fuzzy
 msgid ""
 "When a ``Resource`` is no longer in use, it will automatically free itself. "
 "Since, in most cases, Resources are contained in Nodes, when you free a "
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"Quando una ``Resource`` non è più in uso, si libera automaticamente. Poiché, "
+"nella maggior parte dei casi, le risorse sono contenute nei nodi, quando si "
+"libera un nodo, il motore libera anche tutte le risorse che possiede se "
+"nessun altro nodo le usa."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
 msgid "Creating your own resources"
@@ -205,49 +282,77 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
+#, fuzzy
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Possono definire delle costanti, quindi le costanti di altri campi di dati o "
+"oggetti non sono necessarie."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
+#, fuzzy
 msgid ""
 "They can define methods, including setter/getter methods for properties. "
 "This allows for abstraction and encapsulation of the underlying data. If the "
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Possono definire metodi, inclusi metodi setter/getter per le proprietà. "
+"Questo permette l'astrazione e l'incapsulamento dei dati sottostanti. Se la "
+"struttura dello script Resource deve cambiare, non è necessario che cambi "
+"anche il gioco che usa la Resource."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
+#, fuzzy
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Possono definire segnali, in modo che le risorse possano innescare risposte "
+"ai cambiamenti nei dati che gestiscono."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
+#, fuzzy
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Hanno proprietà definite, quindi gli utenti sanno al 100% che i loro dati "
+"esisteranno."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
+#, fuzzy
 msgid ""
 "Resource auto-serialization and deserialization is a built-in Godot Engine "
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"L'auto-serializzazione e deserializzazione delle risorse è una "
+"caratteristica integrata in Godot Engine. Gli utenti non hanno bisogno di "
+"implementare una logica personalizzata per importare/esportare i dati di un "
+"file di risorse."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
+#, fuzzy
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Le risorse possono anche serializzare le sotto-risorse in modo ricorsivo, il "
+"che significa che gli utenti possono progettare strutture di dati ancora più "
+"sofisticate."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
+#, fuzzy
 msgid ""
 "Users can save Resources as version-control-friendly text files (\\*.tres). "
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Gli utenti possono salvare le risorse come file di testo adatti al controllo "
+"delle versioni (\\*.tres). All'esportazione di un gioco, Godot serializza i "
+"file di risorse come file binari (\\*.res) per una maggiore velocità e "
+"compressione."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -258,23 +363,29 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
+#, fuzzy
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
-msgstr ""
+msgstr "Possono estendere **altri** tipi di risorse oltre alla risorsa base."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:183
+#, fuzzy
 msgid "Godot makes it easy to create custom Resources in the Inspector."
-msgstr ""
+msgstr "Godot rende facile creare risorse personalizzate nell'Ispettore."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
+#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"Create un semplice oggetto Resource nell'Ispettore. Questo può anche essere "
+"un tipo che deriva da Resource, purché il vostro script estenda quel tipo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:186
+#, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr ""
+msgstr "Imposta la proprietà ``script`` nell'Ispettore come tuo script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:188
 msgid ""
@@ -295,7 +406,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
-msgstr ""
+msgstr "Vediamo alcuni esempi."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
@@ -314,28 +425,41 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:319
+#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
+"Invece di limitarsi a inserire i valori del dizionario, si potrebbe anche, "
+"in alternativa..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:321
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
+"Importa una tabella di valori da un foglio di calcolo e genera queste coppie "
+"chiave-valore, o..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:323
+#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"Progettate una visualizzazione all'interno dell'editor e create un semplice "
+"plugin che lo aggiunge all'Inspector quando aprite questo tipo di risorse."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:326
+#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"CurveTables sono la stessa cosa, tranne che sono mappati su un array di "
+"valori float o su un oggetto risorsa :ref:`Curve <class_Curve>`/:ref:"
+"`Curve2D <class_Curve2D>>."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""

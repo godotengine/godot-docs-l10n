@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
 msgid "GDScript warning system"
-msgstr ""
+msgstr "GDScript výstražný systém"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
 msgid ""
@@ -28,12 +28,18 @@ msgid ""
 "It's here to help you avoid mistakes that are hard to spot during "
 "development, and that may lead to runtime errors."
 msgstr ""
+"Systém varování GDScript doplňuje :ref:`statické "
+"typování<doc_gdscript_static_typing>` (ale může fungovat i bez statického "
+"typování). Je tu proto, aby vám pomohl vyhnout se chybám, které se během "
+"vývoje těžko odhalují a které mohou vést k chybám za běhu."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
 msgid ""
 "You can configure warnings in the Project Settings under the section called "
 "**Gdscript**:"
 msgstr ""
+"Varování můžete nakonfigurovat v Nastavení projektu v části nazvané "
+"**Gdscript**:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
 msgid "Warning system project settings"
@@ -44,10 +50,12 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor's status bar. The example below has 3 warnings:"
 msgstr ""
+"Seznam varování pro aktivní soubor GDScript najdete ve stavovém řádku "
+"editoru skriptů. Níže uvedený příklad obsahuje 3 varování:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
 msgid "Warning system example"
-msgstr ""
+msgstr "Příklad systému varování"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
 msgid ""
@@ -57,10 +65,14 @@ msgid ""
 "corresponding line and the code won't trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"Chcete-li ignorovat konkrétní varování v jednom souboru, vložte speciální "
+"komentář ve tvaru ``# warning-ignore:warning-id`` nebo klikněte na odkaz "
+"ignorovat napravo od popisu varování. Godot přidá komentář nad příslušný "
+"řádek a kód již nebude příslušné varování vyvolávat:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
 msgid "Warning system ignore example"
-msgstr ""
+msgstr "Příklad ignorování výstražného systému"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
 msgid ""
@@ -68,6 +80,10 @@ msgid ""
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
 "warnings of all types in a file add the comment ``# warnings-disable`` to it."
 msgstr ""
+"Můžete také zvolit ignorování nejen jednoho, ale všech varování určitého "
+"typu v tomto souboru pomocí ``# warning-ignore-all:warning-id``. Chcete-li "
+"ignorovat všechna varování v souboru, přidejte komentář ``# warnings-"
+"disable``."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:42
 msgid ""
@@ -77,7 +93,12 @@ msgid ""
 "on this option. Here's the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"Varování nezabrání spuštění hry, ale pokud chcete, můžete je změnit na "
+"chyby. Tímto způsobem se hra nezkompiluje, pokud neopravíte všechna "
+"varování. Přejděte do sekce ``GDScript`` v Nastavení projektu a zapněte tuto "
+"možnost. Zde je stejný soubor jako v předchozím příkladu s přepnutím "
+"varování na chyby:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
 msgid "Warnings as errors"
-msgstr ""
+msgstr "Varování jako chyby"

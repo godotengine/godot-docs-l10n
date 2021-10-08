@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "部分概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
-msgstr "在这部分中, 我们将为游戏角色提供武器."
+msgstr "在这部分中，我们将为游戏角色提供武器。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:13
 msgid ""
@@ -36,8 +36,8 @@ msgid ""
 "with transitions, and the weapons will interact with objects in the "
 "environment."
 msgstr ""
-"到这部分结束时, 您将拥有一个可以使用小刀发射手枪, 步枪和攻击的游戏角色. 游戏"
-"角色现在还将拥有过渡动画, 并且武器将与环境中的对象进行交互."
+"在这部分结束时，你拥有的游戏角色将可以使用手枪、步枪发射子弹，并且可以用小刀"
+"攻击。游戏角色现在也会有过渡动画，武器也可以和环境中的物体互动。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:17
 msgid ""
@@ -55,7 +55,7 @@ msgstr "让我们开始吧！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:23
 msgid "Making a system to handle animations"
-msgstr "制作系统来处理动画"
+msgstr "制作一个处理动画的系统"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:25
 msgid ""
@@ -81,7 +81,7 @@ msgstr "将以下代码添加到 ``AnimationPlayer_Manager.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:152
 msgid "Lets go over what this script is doing:"
-msgstr "让我们来看看这个脚本正在做什么:"
+msgstr "让我们来看看这个脚本正在做什么："
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:156
 msgid "Lets start with this script's class variables:"
@@ -97,7 +97,7 @@ msgstr "``states``: 用于保存动画状态的字典. (以下进一步说明)"
 msgid ""
 "``animation_speeds``: A dictionary for holding all the speeds at which we "
 "want to play our animations."
-msgstr "``animation_speeds``: 一个字典, 用来保存我们想要播放的动画的所有速度."
+msgstr "``animation_speeds``: 一个字典，用来保存所有想播放动画的速度。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:160
 msgid ""
@@ -117,8 +117,8 @@ msgid ""
 "``states`` is structured like a basic state machine. Here is roughly how "
 "``states`` is set up:"
 msgstr ""
-"如果您熟悉状态机, 那么您可能已经注意到 ``states`` 的结构类似于基本状态机. 这"
-"里大致是如何设置 ``states``:"
+"如果您熟悉状态机，那么你可能已经注意到， ``states`` 的结构类似基本状态机.。以"
+"下是设置 ``states`` 的大致情况："
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:166
 msgid ""
@@ -128,9 +128,10 @@ msgid ""
 "state, we can only transition to ``Knife_equip``, ``Pistol_equip``, "
 "``Rifle_equip``, and ``Idle_unarmed``."
 msgstr ""
-"``states`` 是一个字典, 键是当前状态的名称, 值是一个数组, 里面有可以转换的所有"
-"动画及状态. 例如, 如果当前处于 ``Idle_unarmed`` 状态, 只能过渡到 "
-"``Knife_equip`` , ``Pistol_equip`` , ``Rifle_equip`` 和 ``Idle_unarmed`` ."
+"``states`` 是一个字典，其中 key 是当前状态的名称，value 则是一个数组，包含所"
+"有可以转换的动画（即状态）。例如，如果当前处于 ``Idle_unarmed`` 状态，就只能"
+"过渡到 ``Knife_equip`` , ``Pistol_equip`` , ``Rifle_equip`` , "
+"``Idle_unarmed`` ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:171
 msgid ""
@@ -140,9 +141,9 @@ msgid ""
 "some states into others, as will be explained further below in "
 "``animation_ended``."
 msgstr ""
-"如果我们尝试转换到未包含在我们所处状态的可能转换状态中的状态, 那么我们会收到"
-"警告消息并且动画不会更改. 我们也可以自动从一些状态转换到其他状态, 这将在下面"
-"的 \"animation_ended\" 中进一步解释."
+"如果我们尝试转换的状态，不在当前可以转换的状态里，那么我们会得到警告信息，动"
+"画也不会改变。同样，我们也可以让某状态，自动转换成另一种状态，这一点将在后面"
+"的 ``animation_ended`` 中进一步解释。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:175
 msgid ""
@@ -2166,7 +2167,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr "如果你感到迷茫, 请一定要再读一遍代码！"
+msgstr "如果你感到迷茫，请一定要再读一遍代码！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,8 @@ msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
 "repositories as it will often be outdated**."
 msgstr ""
+"Sous Linux, **n'utilisez pas un SDK Android fourni par les dépôts de votre "
+"distribution car il est souvent obsolète**."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:33
 msgid "Gradle (will be downloaded and installed automatically if missing)."
@@ -122,10 +124,14 @@ msgid ""
 "SDK. If you downloaded the Android command-line tools, this would be the "
 "folder where you extracted the contents of the ZIP archive."
 msgstr ""
+"Définissez la variable d'environnement ``ANDROID_SDK_ROOT`` pour qu'elle "
+"pointe vers le SDK Android. Si vous avez téléchargé les outils de ligne de "
+"commande Android, il s'agit du dossier dans lequel vous avez extrait le "
+"contenu de l'archive ZIP."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:51
 msgid "Install the necessary SDK components in this folder:"
-msgstr ""
+msgstr "Installez les composants SDK nécessaires dans ce dossier :"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:53
 msgid ""
@@ -133,12 +139,17 @@ msgid ""
 "``android_sdk_path`` is the path to the Android SDK, then answering all the "
 "prompts with ``y``:"
 msgstr ""
+"Acceptez les licences des composants SDK en exécutant la commande suivante "
+"où ``android_sdk_path`` est le chemin vers le SDK Android, puis répondez à "
+"toutes les questions par ``y`` :"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:60
 msgid ""
 "Complete setup by running the following command where ``android_sdk_path`` "
 "is the path to the Android SDK."
 msgstr ""
+"Terminez l'installation en exécutant la commande suivante où "
+"``android_sdk_path`` est le chemin vers le SDK Android."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:66
 msgid ""

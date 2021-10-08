@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -490,8 +490,8 @@ msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
 msgstr ""
-"객체의 구조와 초기화 함수인 ``_init``\\ 과 ``_ready``\\ 는 런타임에서 객체를 "
-"수정하도록 함수 이전에 옵니다."
+"오브젝트의 구조와 초기화 함수인 ``_init``\\ 과 ``_ready``\\ 는 런타임에서 오"
+"브젝트를 수정하도록 함수 이전에 옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
 msgid "Class declaration"
@@ -567,7 +567,7 @@ msgid ""
 msgstr ""
 "GDScript 컴파일러는 onready 변수를 ``_ready`` 콜백 바로 이전에 실행합니다. 따"
 "라서 노드 종속성을 처리할 때 사용할 수 있습니다. 말 그대로 씬에서 클래스에 의"
-"존하는 자식 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
+"존하는 자손 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 #, fuzzy
@@ -607,9 +607,9 @@ msgid ""
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
-"엔진이 메모리에 객체를 만들 때 호출하는 ``_init()`` 콜백 메서드로 시작하세"
-"요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백이 "
-"옵니다."
+"엔진이 메모리에 오브젝트를 만들 때 호출하는 ``_init()`` 콜백 메서드로 시작하"
+"세요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백"
+"이 옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
 #, fuzzy
@@ -617,7 +617,8 @@ msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
 msgstr ""
-"이 함수가 객체를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니다."
+"이 함수가 오브젝트를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니"
+"다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:693
 msgid ""
@@ -626,8 +627,8 @@ msgid ""
 "and interactions with the game engine."
 msgstr ""
 "``_unhandled_input()``\\ 과 ``_physics_process``\\ 와 같은 다른 내장 가상 콜"
-"백은 다음에 나와야 합니다. 이 메서드는 객체의 메인 루프와 게임 엔진과의 상호"
-"작용을 제어합니다."
+"백은 다음에 나와야 합니다. 이 메서드는 오브젝트의 메인 루프와 게임 엔진과의 "
+"상호작용을 제어합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid ""

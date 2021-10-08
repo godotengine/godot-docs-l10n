@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:4
 msgid "TSCN file format"
-msgstr ""
+msgstr "Формат файла TSCN"
 
 #: ../../docs/development/file_formats/tscn.rst:6
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "compiled into binary ``.scn`` files stored inside the .import folder. This "
 "reduces the data size and speeds up loading."
 msgstr ""
+"Формат файла TSCN (текстовая сцена) представляет собой единое дерево сцен "
+"внутри Godot. Преимущество файлов TSCN в том, что они в основном читаемы "
+"человеком и просты для управления системами контроля версий. Во время "
+"импорта файлы TSCN компилируются в двоичные файлы ``.scn``, хранящиеся в "
+"папке .import. Это уменьшает размер данных и ускоряет загрузку."
 
 #: ../../docs/development/file_formats/tscn.rst:12
 msgid ""
@@ -36,6 +41,9 @@ msgid ""
 "but is used to indicate to Godot that the file has been exported from "
 "another program and should not be edited by the user from within Godot."
 msgstr ""
+"Формат файла ESCN (экспортированная сцена) идентичен формату файла TSCN, но "
+"используется для указания Godot, что файл был экспортирован из другой "
+"программы и не должен редактироваться пользователем внутри Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:16
 msgid ""
@@ -44,6 +52,10 @@ msgid ""
 "master/scene/resources/resource_format_text.cpp>`_ in the "
 "``ResourceFormatLoaderText`` class."
 msgstr ""
+"Для тех, кто ищет полное описание, парсинг выполняется в файле "
+"`resource_format_text.cpp <https://github.com/godotengine/godot/blob/master/"
+"scene/resources/resource_format_text.cpp>`_ в классе "
+"``ResourceFormatLoaderText``."
 
 #: ../../docs/development/file_formats/tscn.rst:21
 msgid "File structure"
@@ -99,6 +111,10 @@ msgid ""
 "for all of the items in the section. For example, the heading of all "
 "external resources should start with ``[ext_resource .....]``."
 msgstr ""
+"Эти разделы должны появляться по порядку, но их бывает трудно различить. "
+"Единственное различие между ними - это первый элемент в заголовке для всех "
+"элементов раздела. Например, заголовок всех внешних ресурсов должен "
+"начинаться с ``[ext_resource .....]``."
 
 #: ../../docs/development/file_formats/tscn.rst:43
 msgid ""
@@ -106,16 +122,21 @@ msgid ""
 "``). However, comments will be discarded when saving the file using the "
 "Godot editor."
 msgstr ""
+"Файл TSCN может содержать однострочные комментарии, начинающиеся с точки с "
+"запятой (``;``). Однако комментарии будут отброшены при сохранении файла с "
+"помощью редактора Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:47
 msgid "Entries inside the file"
-msgstr ""
+msgstr "Записи внутри файла"
 
 #: ../../docs/development/file_formats/tscn.rst:49
 msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
 "where resource_type is one of:"
 msgstr ""
+"Заголовок выглядит как ``[<resource_type> key=value key=value "
+"key=value ...]``, где тип_ресурса является одним из:"
 
 #: ../../docs/development/file_formats/tscn.rst:53
 msgid "``ext_resource``"
@@ -201,6 +222,9 @@ msgid ""
 "incomplete. Fortunately, it is easy to find out because you can simply save "
 "a file with that node in it. Some example nodes are:"
 msgstr ""
+"Подобно внутреннему ресурсу, документ для каждого узла в настоящее время "
+"является неполным. К счастью, это легко выяснить, так как вы можете просто "
+"сохранить файл с этим узлом. Примерами узлов являются:"
 
 #: ../../docs/development/file_formats/tscn.rst:138
 msgid "NodePath"
@@ -214,6 +238,12 @@ msgid ""
 "``NodePath()`` to point to its skeleton. Likewise, Animation tracks use "
 "``NodePath()`` to point to node properties to animate."
 msgstr ""
+"Древовидной структуры недостаточно для представления всей сцены. Godot "
+"использует структуру ``NodePath(Path/To/Node)`` для ссылки на другой узел "
+"или атрибут узла в любом месте дерева сцены. Например, MeshInstance "
+"использует ``NodePath()`` для указания на свой скелет. Аналогично, треки "
+"анимации используют ``NodePath()`` для указания на свойства узла для "
+"анимации."
 
 #: ../../docs/development/file_formats/tscn.rst:165
 msgid "Skeleton"
@@ -225,6 +255,9 @@ msgid ""
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
+"Узел Skeleton наследует узел Spatial, но также может иметь список костей, "
+"описанных в парах ключ-значение в формате ``bones/Id/Attribute=Value``. "
+"Атрибуты костей состоят из:"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 msgid "``name``"

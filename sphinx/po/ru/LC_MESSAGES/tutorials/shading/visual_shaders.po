@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,6 +77,8 @@ msgid ""
 "The ``Add Node`` button displays a popup menu to let you add nodes to the "
 "shader graph."
 msgstr ""
+"Кнопка ``Add Node`` отображает всплывающее меню, позволяющее добавлять узлы "
+"в шейдерный граф."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:43
 msgid ""
@@ -125,9 +127,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:71
-#, fuzzy
 msgid "This popup has the following properties:"
-msgstr "HUD отображает следующую информацию:"
+msgstr "Это всплывающее окно имеет следующие свойства:"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:73
 msgid ""
@@ -143,6 +144,10 @@ msgid ""
 "so if you suddenly closed the popup you can easily restore its previous "
 "state."
 msgstr ""
+"Его размер может быть изменен по горизонтали и вертикали, что позволяет "
+"отображать больше содержимого. Трансформация размера и положение содержимого "
+"дерева сохраняются между вызовами, поэтому если вы внезапно закрыли "
+"всплывающее окно, вы можете легко восстановить его предыдущее состояние."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:79
 msgid ""
@@ -152,7 +157,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:81
 msgid "You can also drag and drop nodes from the popup onto the graph."
-msgstr ""
+msgstr "Вы также можете перетаскивать узлы из всплывающего окна на график."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:83
 msgid ""
@@ -160,6 +165,9 @@ msgid ""
 "first. Try to add some of the nodes, plug them in the output socket and "
 "observe what happens."
 msgstr ""
+"Хотя во всплывающем окне узлы отсортированы по категориям, поначалу это "
+"может показаться чрезмерно сложным. Попробуйте добавить несколько узлов, "
+"подключите их к выходному разъему и понаблюдайте, что произойдет."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:87
 msgid ""
@@ -200,6 +208,15 @@ msgid ""
 "tab. The outputs are initialized to their zero value by default. The node is "
 "located under the Special tab and can be used in all shader modes."
 msgstr ""
+"Узел ``Expression`` позволяет вам писать выражения на языке Godot Shading "
+"Language (GLSL-подобном) внутри ваших визуальных шейдеров. Узел имеет кнопки "
+"для добавления любого количества необходимых портов ввода и вывода и может "
+"быть изменен в размерах. Вы также можете задать имя и тип каждого порта. "
+"Введенное вами выражение будет немедленно применено к материалу (как только "
+"фокус покинет текстовое поле выражения). Любые ошибки синтаксического "
+"анализа или компиляции будут выведены на вкладку Output. По умолчанию выходы "
+"инициализируются нулевым значением. Узел находится на вкладке Special и "
+"может использоваться во всех режимах шейдера."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:113
 msgid ""

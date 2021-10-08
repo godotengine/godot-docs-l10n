@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr "오디오 샘플 가져오기"
+msgstr "오디오 샘플 불러오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 #, fuzzy
@@ -27,13 +27,12 @@ msgid "Supported files"
 msgstr "지원되는 애니메이션"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"순수 오디오 데이터는 일반적으로 크고 바람직하지 않습니다. Godot는 오디오 데이"
-"터를 가져오기 위해 두 가지 주요 설정을 제공합니다: WAV와 OGG Vorbis입니다."
+"Godot는 오디오 데이터를 불러오기 위해 세 가지 옵션을 제공합니다: WAV, OGG, "
+"Vorbis."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
@@ -156,10 +155,10 @@ msgid ""
 "reducing their size greatly and ensuring correct trimming. Say no to SFX "
 "with baked reverb!"
 msgstr ""
-"Godot 3+는 내장 효과가 있는 놀라운 버스 시스템을 갖고 있습니다. 이걸로 SFX 아"
-"티스트가 음향 효과에 울림(reverb)을 추가하는 번거로움을 줄여주며, 파일 크기"
-"를 크게 줄이고 올바른 트리밍을 보장합니다. 베이크된 reverb인 SFX에 아니라고 "
-"말해봐요!"
+"Godo은 내장 효과가 있는 놀라운 버스 시스템을 갖고 있습니다. 이걸로 SFX 아티스"
+"트가 음향 효과에 울림(reverb)을 추가하는 번거로움을 줄여주며, 파일 크기를 크"
+"게 줄이고 올바른 트리밍을 보장합니다. 구워진 reverb인 SFX에 아니라고 말해봐"
+"요!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "As you can see above, sound effects become huge with reverb added."
@@ -181,9 +180,8 @@ msgstr ""
 "생하는 순간 대기 시간이 추가됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
-#, fuzzy
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
-msgstr "Trimming 설정이 활성화된 상태로 WAV로 가져오면 이를 해결합니다."
+msgstr "**Trimming** 설정이 활성화된 상태로 WAV 포맷으로 불러오면 해결됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:73
 msgid "Looping"
@@ -201,10 +199,9 @@ msgstr ""
 "용합니다. 핑퐁 루핑 역시 지원합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:80
-#, fuzzy
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"대안으로, 가져오기 화면은 \"loop\" 설정을 갖고 있고 이걸로 가져올 때 전체 샘"
-"플에 루핑을 활성화할 수 있습니다."
+"대안으로, 불러오기 독은 전체 샘플을 불러올 때 루프(loop)를 활성화할 수 있는 "
+"**Loop** 설정을 갖고 있습니다."

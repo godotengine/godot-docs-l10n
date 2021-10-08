@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -568,7 +568,7 @@ msgstr "与其他脚本语言通信"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
-msgstr "在 :ref:`doc_cross_language_scripting` 中有详细解释."
+msgstr "在 :ref:`doc_cross_language_scripting` 中有详细解释。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
@@ -580,17 +580,17 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
-"可以使用C#的 `yield 关键字 <https://docs.microsoft.com/en-US/dotnet/csharp/"
-"language-reference/keywords/yield>`_ 来实现类似于GDScript的带有单个参数的 "
-"``yield`` 的功能."
+"可以使用 C# 的 `yield 关键字 <https://docs.microsoft.com/en-US/dotnet/csharp/"
+"language-reference/keywords/yield>`_ 来实现类似于 GDScript 中带有单个参数的 "
+"``yield`` 的功能。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
-"通过 ``async/await`` 和 ``Godot.Object.ToSignal`` 可以实现 ``yield`` 对信号的"
-"相同效果."
+"通过 async/await 和 ``Godot.Object.ToSignal`` 可以实现 ``yield`` 对信号的相同"
+"效果。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:343
 msgid "Other differences"
@@ -601,12 +601,12 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
-"``preload`` 在GDScript中可用, 在C#中不可用. 请使用 ``GD.Load`` 或 "
-"``ResourceLoader.Load`` 替代."
+"``preload`` 在 GDScript 中可用，在 C# 中不可用。请使用 ``GD.Load`` 或 "
+"``ResourceLoader.Load`` 替代。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:348
 msgid "Other differences:"
-msgstr "其他差异:"
+msgstr "其他差异："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:353
 msgid "``Color8``"

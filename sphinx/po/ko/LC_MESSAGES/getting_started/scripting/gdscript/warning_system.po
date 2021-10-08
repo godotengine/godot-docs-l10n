@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,37 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
-#, fuzzy
 msgid "GDScript warning system"
-msgstr "경고 시스템(Warning system)"
+msgstr "GDScript 경고 시스템(Warning system)"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
-#, fuzzy
 msgid ""
 "The GDScript warning system complements :ref:`static typing "
 "<doc_gdscript_static_typing>` (but it can work without static typing too). "
 "It's here to help you avoid mistakes that are hard to spot during "
 "development, and that may lead to runtime errors."
 msgstr ""
-"경고 시스템은 타입형 GDScript를 보완해줍니다. 개발 중에 발생하기 쉽고 런타임 "
-"오류를 일으키는 실수를 피하도록 도와줍니다."
+"경고 시스템은 :ref:`타입형 GDScript <doc_gdscript_static_typing>` 를 보완해줍"
+"니다(정적 타이핑 없이도 동작할 수 있습니다). 이 시스템은 개발 중에 찾아내기 "
+"힘들어 런타임 오류를 유발하는 실수를 피하도록 도와줍니다."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
-#, fuzzy
 msgid ""
 "You can configure warnings in the Project Settings under the section called "
 "**Gdscript**:"
-msgstr ""
-"프로젝트 설정에서 ``GDScript``\\ 라고 하는 섹션에서 경고를 구성할 수 있습니"
-"다:"
+msgstr "프로젝트 설정의 **GDScript** 섹션에서 경고를 설정할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
 msgstr "경고 시스템 프로젝트 설정"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
-#, fuzzy
 msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor's status bar. The example below has 3 warnings:"
@@ -57,12 +51,10 @@ msgstr ""
 "수 있습니다. 밑의 예제는 3개의 경고를 갖습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
-#, fuzzy
 msgid "Warning system example"
 msgstr "경고 시스템 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -70,13 +62,12 @@ msgid ""
 "corresponding line and the code won't trigger the corresponding warning "
 "anymore:"
 msgstr ""
-"한 파일에서 특정한 경고를 무시하려면, ``# warning-ignore:경고-id``\\ 와 같은 "
-"형태의 특수 주석을 삽입하세요. 아니면 경고의 설명 오른쪽의 무시하기(Ignore)"
-"를 클릭하세요. Godot는 해당하는 줄 위에 주석을 추가해서 더 이상 해당 경고를 "
-"주지 않게 됩니다:"
+"한 파일에서 특정한 경고를 무시하려면, ``#warning-ignore:경고-id`` 와 같은 형"
+"태의 특수 주석을 삽입할 수 있고, 또는 경고의 설명 오른쪽의 무시하기(Ignore)"
+"를 클릭하여 무시할 수도 있습니다. Godot는 해당하는 줄 위에 주석을 추가해서 "
+"더 이상 해당 경고를 주지 않게 됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
-#, fuzzy
 msgid "Warning system ignore example"
 msgstr "경고 시스템 무시 예제"
 
@@ -86,12 +77,11 @@ msgid ""
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
 "warnings of all types in a file add the comment ``# warnings-disable`` to it."
 msgstr ""
-"그리고 파일에서 단순히 한 경고가 아닌 특정 유형의 모든 경고를 선택할 수 있습"
-"니다. 주석은 ``# warning-ignore-all:경고-id``\\ 입니다. 파일에서 모든 유형의 "
-"모든 경고를 무시하려면 ``# warnings-disable`` 주석을 추가하면 됩니다."
+"그리고 ``#warning-ignore-all:경고-id`` 주석으로 파일에서 단순히 하나의 경고"
+"가 아닌 특정 유형의 모든 경고를 무시하도록 선택할 수 있습니다. 파일에서 모든 "
+"유형의 모든 경고를 무시하려면 ``# warnings-disable`` 주석을 추가하면 됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:42
-#, fuzzy
 msgid ""
 "Warnings won't prevent the game from running, but you can turn them into "
 "errors if you'd like. This way your game won't compile unless you fix all "
@@ -99,12 +89,11 @@ msgid ""
 "on this option. Here's the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
-"경고는 게임 실행을 방해하지 않지만, 원한다면 오류로 바꿀 수 있습니다. 이 방법"
-"으로 모든 오류를 고치지 않는다면 게임이 컴파일 되지 않을 것입니다. 프로젝트 "
-"설정의 ``GDScript`` 섹션으로 가서 이 설정을 킵니다. 이전 예제와 같은 파일로 "
-"경고가 오류로 바뀐 것입니다:"
+"경고는 게임 실행을 방해하지는 않지만, 원한다면 오류로 바꿀 수 있습니다. 이 방"
+"법으로 모든 오류를 고치지 않는다면 게임이 컴파일되지 않게 할 수 있습니다. 프"
+"로젝트 설정의 ``GDScript`` 섹션으로 가서 이 설정을 킵니다. 아래는 이전 예제"
+"와 같은 파일로 경고가 오류로 바뀐 것입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
-#, fuzzy
 msgid "Warnings as errors"
-msgstr "오류와 같은 경고"
+msgstr "경고를 오류로 처리"

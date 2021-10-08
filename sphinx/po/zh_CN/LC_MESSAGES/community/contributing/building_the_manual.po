@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/building_the_manual.rst:4
-#, fuzzy
 msgid "Building the manual with Sphinx"
-msgstr "构建C++绑定"
+msgstr "使用 Sphinx 构建手册"
 
 #: ../../docs/community/contributing/building_the_manual.rst:6
 msgid ""
@@ -28,38 +27,39 @@ msgid ""
 "Sphinx docs engine. This allows you to have local HTML files and build the "
 "documentation as a PDF, EPUB, or LaTeX file, for example."
 msgstr ""
+"本页面描述使用 Sphinx 文档引擎构建本地 Godot 手册的方法。你可以用它来获得本地"
+"的 HTML 文件以及诸如 PDF、EPUB、LaTeX 形式的文档。"
 
 #: ../../docs/community/contributing/building_the_manual.rst:10
-#, fuzzy
 msgid "To get started, you need to:"
-msgstr "在我们开始之前, 您需要一些东西:"
+msgstr "开始前你需要："
 
 #: ../../docs/community/contributing/building_the_manual.rst:12
-#, fuzzy
 msgid ""
 "Clone the `godot-docs repository <https://github.com/godotengine/godot-docs/"
 ">`__."
 msgstr ""
-"`godot-cpp repository <https://github.com/godotengine/godot-cpp>`__ 的副本."
+"克隆 `godot-docs 仓库 <https://github.com/godotengine/godot-docs/>`__ 。"
 
 #: ../../docs/community/contributing/building_the_manual.rst:13
-#, fuzzy
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
-msgstr "`Python 3.5+ <https://www.python.org/>`__."
+msgstr "安装 `Sphinx <https://www.sphinx-doc.org/>`__"
 
 #: ../../docs/community/contributing/building_the_manual.rst:14
 msgid ""
 "To build the docs as HTML files, install the `readthedocs.org theme <https://"
 "github.com/snide/sphinx_rtd_theme>`__."
 msgstr ""
+"如果要构建 HTML 格式的文档，安装 `readthedocs.org 主题 <https://github.com/"
+"snide/sphinx_rtd_theme>`__ 。"
 
 #: ../../docs/community/contributing/building_the_manual.rst:16
-#, fuzzy
 msgid ""
 "Install the Sphinx extensions defined in the `godot-docs repository <https://"
 "github.com/godotengine/godot-docs/>`__ ``requirements.txt`` file."
 msgstr ""
-"`godot-cpp repository <https://github.com/godotengine/godot-cpp>`__ 的副本."
+"安装 `godot-docs 仓库 <https://github.com/godotengine/godot-docs/>`__ 的 "
+"``requirements.txt`` 文件中定义的 Sphinx 扩展。"
 
 #: ../../docs/community/contributing/building_the_manual.rst:19
 msgid ""
@@ -68,77 +68,90 @@ msgid ""
 "python.org/>`__. Ensure that you install and use Python 3. Here are the "
 "commands to clone the repository and then install all requirements."
 msgstr ""
+"我们推荐使用 Python 的包管理器 `pip <https://pip.pypa.io>`__ 来安装这些工具，"
+"这个管理器是 `Python <https://www.python.org/>`__ 自带的。请确保安装并使用的"
+"是 Python 3。以下为用来克隆仓库并安装所需工具的命令。"
 
-#: ../../docs/community/contributing/building_the_manual.rst:29
+#: ../../docs/community/contributing/building_the_manual.rst:24
 msgid ""
-"On Linux distributions, you may need to write ``pip3`` instead of ``pip`` "
-"because you generally have both Python 2 and 3 installed on your system. "
-"Alternatively, you can explicitly ask Python 3 to execute its version of pip "
-"as a module like so: ``python3 -m pip``."
+"You may need to write ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) "
+"instead of ``pip3``. If both approaches fail, `check that you have pip3 "
+"installed <https://pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:34
+#: ../../docs/community/contributing/building_the_manual.rst:33
 msgid ""
 "With the programs installed, you can build the HTML documentation from the "
 "root folder of this repository with the following command:"
 msgstr ""
+"安装好这些程序后，你就可以在该仓库的根目录构建 HTML 文档了。使用如下命令："
 
-#: ../../docs/community/contributing/building_the_manual.rst:45
-#, fuzzy
+#: ../../docs/community/contributing/building_the_manual.rst:44
 msgid "If you run into errors, you may try the following command:"
-msgstr "要从GitHub克隆您的fork, 请使用以下命令:"
+msgstr "如果你遇到了错误，可以试试以下命令："
 
-#: ../../docs/community/contributing/building_the_manual.rst:51
+#: ../../docs/community/contributing/building_the_manual.rst:50
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
 "swapping, which slows it down. If you have at least 16 GB of RAM, you can "
 "speed up compilation by running:"
 msgstr ""
+"磁盘交换会拖慢文档构建的速度，关闭后需要至少 8 GB 的内存。如果你有至少 16 GB "
+"的内存，可以这样加速编译："
 
-#: ../../docs/community/contributing/building_the_manual.rst:63
+#: ../../docs/community/contributing/building_the_manual.rst:62
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files."
 msgstr ""
+"因为 ``classes/`` 文件夹里包含了上百个文件，所以编译的过程会花上一些时间。"
 
-#: ../../docs/community/contributing/building_the_manual.rst:66
+#: ../../docs/community/contributing/building_the_manual.rst:65
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
-msgstr ""
+msgstr "完成后就可以在网页浏览器里打开 ``_build/html/index.html`` 查看文档了。"
 
-#: ../../docs/community/contributing/building_the_manual.rst:69
+#: ../../docs/community/contributing/building_the_manual.rst:68
 msgid ""
 "In case you of a ``MemoryError`` or ``EOFError``, you can remove the "
 "``classes/`` folder and run ``make`` again. This will drop the class "
 "references from the final HTML documentation but will keep the rest intact."
 msgstr ""
+"如果你遇到了 ``MemoryError`` 或者 ``EOFError`` ，可以把 ``classes/`` 文件夹删"
+"除然后重新执行 ``make`` 。这样会在最终的 HTML 文档中删除类参考文档，其它内容"
+"还是一致的。"
 
-#: ../../docs/community/contributing/building_the_manual.rst:73
+#: ../../docs/community/contributing/building_the_manual.rst:72
 msgid ""
 "If you delete the ``classes/`` folder, do not use ``git add .`` when working "
 "on a pull request or the whole ``classes/`` folder will be removed when you "
 "commit. See `#3157 <https://github.com/godotengine/godot-docs/"
 "issues/3157>`__ for more detail."
 msgstr ""
+"一旦删除 ``classes/`` 文件夹，在处理 Pull Request（拉取请求）时请勿使用 "
+"``git add .`` ，否则整个 ``classes/`` 文件夹的删除都会记录进你的提交之中。详"
+"情见 `#3157 <https://github.com/godotengine/godot-docs/issues/3157>` 。"
 
-#: ../../docs/community/contributing/building_the_manual.rst:79
+#: ../../docs/community/contributing/building_the_manual.rst:78
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
-msgstr ""
+msgstr "或者你也可以手动调用 sphinx-build 程序来构建文档："
 
-#: ../../docs/community/contributing/building_the_manual.rst:87
+#: ../../docs/community/contributing/building_the_manual.rst:86
 msgid "Building with Sphinx and virtualenv"
-msgstr ""
+msgstr "使用 Sphinx 和 virtualenv 构建"
 
-#: ../../docs/community/contributing/building_the_manual.rst:89
+#: ../../docs/community/contributing/building_the_manual.rst:88
 msgid ""
 "If you want your Sphinx installation scoped to the project, you can install "
 "sphinx-build using virtualenv. To do so, run this command from this "
 "repository's root folder:"
 msgstr ""
+"如果你希望安装的 Sphinx 仅限于当前项目，可以用 virtualenv 来安装 sphinx-"
+"build。在仓库根目录执行这个命令即可："
 
-#: ../../docs/community/contributing/building_the_manual.rst:99
+#: ../../docs/community/contributing/building_the_manual.rst:98
 msgid "Then, run ``make html`` as shown above."
-msgstr ""
+msgstr "然后就可以和之前一样执行 ``make html`` 。"

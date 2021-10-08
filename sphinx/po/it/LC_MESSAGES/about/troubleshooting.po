@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,9 +122,12 @@ msgstr ""
 "l'editor. È quindi possibile collegare nuovamente le periferiche."
 
 #: ../../docs/about/troubleshooting.rst:47
+#, fuzzy
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"I tooltip dell'editor nell'Inspector e nei dock dei nodi lampeggiano quando "
+"vengono visualizzati."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -133,6 +136,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Questo è un problema noto <https://github.com/godotengine/godot/"
+"issues/32990>`__ causato dall'applicazione di terze parti Stardock Fences su "
+"Windows. L'unica soluzione conosciuta è disabilitare Stardock Fences mentre "
+"si usa Godot."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."

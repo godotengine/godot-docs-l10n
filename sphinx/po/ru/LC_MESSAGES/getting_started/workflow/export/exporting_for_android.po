@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,14 @@ msgid "Exporting for Android"
 msgstr "Экспорт для Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
 msgstr ""
-"Экспорт для Android имеет меньше требований, чем компиляция Godot для него. "
-"Следующие шаги подробно описывают, что необходимо для настройки SDK и движка."
+"Экспорт для Android имеет меньше требований, чем компиляция Godot для "
+"Android. В следующих шагах подробно описано, что необходимо для настройки "
+"Android SDK и движка."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
@@ -114,18 +114,16 @@ msgstr ""
 "репозиториями вашего дистрибутива, поскольку он часто будет устаревшим**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 8"
 msgstr "Установите OpenJDK 8"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
 msgstr ""
-"Загрузите и установите`OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, более новые версии не работают."
+"Скачайте и установите `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid "Create a debug.keystore"
@@ -216,6 +214,9 @@ msgid ""
 "do not have an application with the same Android package name already "
 "installed on the device (but signed with a different key)."
 msgstr ""
+"Если вы получаете ошибку *\"Could not install to device.\"*, убебитесь что "
+"вы не имеете установленную программу с таким же названием пакета Android (но "
+"подписанную другим ключём)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
@@ -224,6 +225,9 @@ msgid ""
 "the application in question from the Android device before exporting to "
 "Android again."
 msgstr ""
+"Если вы имеете программу с таким же названием пакета Android но с другим "
+"ключём, вы **обязаны** удалить программу с устройства Android перед "
+"повторным экспортом на Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Providing launcher icons"
@@ -327,15 +331,14 @@ msgstr ""
 "icon -> Default Godot background icon."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
-#, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
 "specified resolutions. This way, your application will look great on all "
 "Android devices and versions."
 msgstr ""
-"Настоятельно рекомендуется предоставить все запрашиваемые значки, и по "
-"крайней мере с указанными разрешениями. Только так ваше приложение будет "
-"отлично смотреться на всех устройствах и версиях Android."
+"Настоятельно рекомендуется предоставить все требуемые иконки с указанными "
+"разрешениями. Таким образом, ваше приложение будет отлично выглядеть на всех "
+"устройствах и версиях Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid "Exporting for Google Play Store"
@@ -396,12 +399,9 @@ msgstr ""
 "аналогичный."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:141
-#, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
-msgstr ""
-"Не забудьте снять флажок **Export With Debug** (экспорт с отладкой) при "
-"выборе имени APK."
+msgstr "Не забудьте снять флажок **Export With Debug** при экспорте."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:146
 msgid "Optimizing the APK size"

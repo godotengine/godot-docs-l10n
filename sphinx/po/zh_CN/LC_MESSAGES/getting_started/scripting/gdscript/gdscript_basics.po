@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -744,10 +744,9 @@ msgid ""
 "are passed by reference so they are shared. (Pooled arrays such as "
 "``PoolByteArray`` are still passed as values.)"
 msgstr ""
-"内置类型是堆栈分配的. 它们作为值传递. 这意味着在每次赋值或将它们作为参数传递"
-"给函数时都会创建一个副本. 唯一的例外是 ``数组(Array)`` 和 ``字典"
-"(Dictionaries)`` , 它们是通过引用传递的, 所以它们是共享的.(池数组如 "
-"``PoolByteArray`` 仍作为值传递.)"
+"内置类型是分配在栈上的，按值传递。这意味着在每次赋值或将它们作为参数传递给函"
+"数时都会创建一个副本。唯一的例外是数组 ``Array`` 和字典 ``Dictionary`` ，它们"
+"是共享的，按引用传递。（类似 ``PoolByteArray`` 的池数组还是按值传递的。）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:334
 msgid "Basic built-in types"
@@ -755,7 +754,7 @@ msgstr "基本内置类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
 msgid "A variable in GDScript can be assigned to several built-in types."
-msgstr "GDScript中的变量可以分配给多个内置类型."
+msgstr "GDScript 中的变量可以赋值为不同的内置类型。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "null"
@@ -765,7 +764,7 @@ msgstr "null"
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
-msgstr "``null`` 是一个空数据类型, 不包含任何信息, 不能分配任何其他值."
+msgstr "``null`` 是一个空数据类型，不包含任何信息，不能赋值为任何其他值。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:345
 msgid ":ref:`bool <class_bool>`"
@@ -773,7 +772,7 @@ msgstr ":ref:`bool <class_bool>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:347
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
-msgstr "``boolean`` 的缩写, 只能包含 ``true`` 或 ``false``."
+msgstr "“boolean”（布尔）的缩写，只能包含 ``true`` 或 ``false`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
 msgid ":ref:`int <class_int>`"
@@ -784,8 +783,8 @@ msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
 msgstr ""
-"``integer`` 的缩写, 它存储整数(正数和负数). 它存储为64位值, 等效于C++中的 `` "
-"int64_t``."
+"“integer”（整数）的缩写，存储整数（正数和负数）。存储的是 64 位值，等效于 C+"
+"+ 中的 ``int64_t`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
 msgid ":ref:`float <class_float>`"
@@ -798,9 +797,9 @@ msgid ""
 "data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
 "single-precision \"float\" values."
 msgstr ""
-"使用浮点值存储实数, 包括小数. 它存储为64位值, 相当于C++中的 ``double``. 注"
-"意: 当前,``Vector2``, ``Vector3`` 和 ``PoolRealArray`` 之类的数据结构存储32位"
-"单精度 ``浮点`` 值."
+"使用浮点值存储实数，包括小数。存储的是 64 位值，等效于 C++ 中的 ``double`` 。"
+"注意：目前类似 Vector2、Vector3、PoolRealArray 的数据结构存储的是 32 位单精"
+"度“float”值。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid ":ref:`String <class_String>`"
@@ -811,8 +810,8 @@ msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
-"`Unicode 格式 <https://en.wikipedia.org/wiki/Unicode>`_ 的字符序列. 字符串可"
-"以包含以下转义序列:"
+"`Unicode 格式 <https://en.wikipedia.org/wiki/Unicode>`_ 的字符序列。字符串可"
+"以包含以下转义序列："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "**Escape sequence**"
@@ -926,7 +925,7 @@ msgstr ":ref:`Vector2 <class_Vector2>`"
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
-msgstr "2D vector(向量)类型包含 ``x`` 和 ``y`` 字段. 也可以像数组一样访问."
+msgstr "2D 向量类型，包含 ``x`` 和 ``y`` 字段，也可以像数组一样访问。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -937,8 +936,8 @@ msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Also contains an ``end`` field which is ``position + size``."
 msgstr ""
-"2D矩形类型包含两个向量字段: ``position`` 和 ``size``. 还包含一个 ``end`` 字"
-"段, 即 ``position + size``."
+"2D 矩形类型，包含两个向量字段： ``position`` 和 ``size`` 。还包含一个 "
+"``end`` 字段，即 ``position + size`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
 msgid ":ref:`Vector3 <class_Vector3>`"
@@ -948,7 +947,7 @@ msgstr ":ref:`Vector3 <class_Vector3>`"
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
-msgstr "3D向量类型包含 ``x`` , ``y`` 与 ``z`` 字段. 也能够像数组一样访问."
+msgstr "3D 向量类型，包含 ``x`` 、 ``y`` 与 ``z`` 字段，也可以像数组一样访问。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:420
 msgid ":ref:`Transform2D <class_Transform2D>`"
@@ -1072,8 +1071,8 @@ msgid ""
 "dictionaries (see below). The array can resize dynamically. Arrays are "
 "indexed starting from index ``0``. Negative indices count from the end."
 msgstr ""
-"任意对象类型的泛型序列, 包括其他数组或字典(见下文). 数组可以动态调整大小. 数"
-"组索引从 ``0`` 开始. 从Godot 2.1开始, 负索引表示从尾部开始计数."
+"任意对象类型的泛型序列，包括其他数组或字典（见下文）。数组可以动态调整大小。"
+"数组索引从 ``0`` 开始。负索引表示从尾部开始计数."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
 msgid ""
@@ -1084,10 +1083,10 @@ msgid ""
 "use less memory, but are atomic and tend to run slower than generic arrays. "
 "They are therefore only recommended to use for large data sets:"
 msgstr ""
-"GDScript数组在内存中线性分配以提高速度. 但是, 大型数组(包含数万个元素)可能会"
-"导致内存碎片. 如果这是一个问题, 则可以使用特定类型的数组. 它们只接受单个数据"
-"类型. 它们避免了内存碎片, 并使用了更少的内存, 但是它们是原子的, 并且运行起来"
-"比通用数组要慢. 因此, 建议仅将它们用于大型数据集:"
+"GDScript 数组在内存中线性分配以提高速度。但是，大型数组（包含数万个元素）可能"
+"会导致内存碎片。如果在意这个问题，可以使用特定类型的数组。它们只接受单个数据"
+"类型。它们避免了内存碎片并使用更少的内存，但是它们是原子的，运行起来容易比通"
+"用数组要慢。因此，建议仅将它们用于大型数据集："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:508
 msgid ""
@@ -1847,16 +1846,15 @@ msgstr ""
 "的 ``e`` 是相同的."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
 "This brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables, e.g.::"
 msgstr ""
-"如果 ``Idle.gd`` 的 ``_init`` 构造函数接受0个参数, 即使它什么也不做, 它仍需要"
-"将一些值传递给 ``State.gd`` 父类. 这带给我们一个事实, 即您也可以在基本构造函"
-"数中传递文字, 而不仅仅是变量. 例如:"
+"如果 ``Idle.gd`` 的 ``_init`` 构造函数接受0个参数，即使它什么也不做也仍然需要"
+"将一些值传递给 ``State.gd`` 父类。当然，我们除了可以给基类构造函数传变量之"
+"外，也可以传字面量，例如："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid "Inner classes"
@@ -1925,10 +1923,10 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example::"
 msgstr ""
-"每当 ``变量`` 的值被 *外部的* 源(即不是来自类中的本地用法)修改时,*setter* 函"
-"数(上面的 ``setterfunc``)将被调用. 这发生在值改变 *之前* .*setter* 必须决定如"
-"何处理新值. 反之亦然, 当访问 ``变量`` 时, 必须用 *getter* 函数(上面的 "
-"``getterfunc`` ) ``返回`` 所需的值. 下面是一个示例:"
+"每当 ``variable`` 的值被\\ *外部*\\代码（即不是来自该类中的本地使用）修改时，"
+"*setter* 函数（上面的 ``setterfunc``）就会被调用。这发生在值改变\\ *之前*。"
+"*setter* 必须决定如何处理新值。反之亦然，当 ``variable`` 被访问时，*getter* "
+"函数（上面的 ``getterfunc``）必须 ``return`` 所需的值。下面是一个示例："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Either of the *setter* or *getter* functions can be omitted::"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr "Atlas Tiles(图块组)"
+msgstr "图集图块"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -261,12 +261,12 @@ msgid ""
 "tiles all at once using an atlas. This also allows you to randomly generate "
 "tiles from the group."
 msgstr ""
-"你可以使用地图集(atlas)一次定义一组图块, 而不必一次添加一个图块. 这也允许你从"
-"组中随机生成图块."
+"除了逐个添加单独图块之外，你还可以通过图集（Atlas）来一次定义一组图块。这样你"
+"就可以从这一组图块中随机生成图块了。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
-msgstr "点击 \"新建合集\", 然后拖动以选择整个图块."
+msgstr "点击“新建图集”然后把整张图块表（Tile Sheet）拖进去。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
@@ -283,14 +283,14 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
-"一旦你定义了图块组, 你就可以像以前一样将碰撞形状(Collision Shape)添加到各个图"
-"块上. 你也可以点击 \"Icon\" 来选择其中一个作为整个图块组的图标."
+"定义好图集之后，你就可以和之前一样单独为每一个图块添加碰撞形状。你还可以点"
+"击“图标”，挑选用来代表这个图集的图块。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
-msgstr "回到TileMap, 你可以选择图块组, 你会看到它所包含的所有图块:"
+msgstr "回到 TileMap，选中图集图块后就可以看到它所包含的所有图块："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
@@ -298,7 +298,8 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
-"除了节省定义图块的时间外, 这可以帮助你在处理大量图块时将类似的图块分组在一起."
+"除了节省定义图块的时间外，这还可以帮你在处理大量图块时将类似的图块分组在一"
+"起。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid "Random tile priorities"
@@ -313,10 +314,10 @@ msgid ""
 "twice as likely to be selected as a tile with priority 1, and a tile with "
 "priority 3 is 50% more likely to be selected than a tile with priority 2."
 msgstr ""
-"使用Atlas拼贴进行绘制时, 启用 \"使用优先级\" 选项会导致随机选择拼贴. 默认情况"
-"下, 图块集中的每个图块发生的可能性均等. 您可以通过为每个图块设置不同的优先级"
-"来更改可能性. 例如, 优先级为2的图块被选择的可能性是优先级为1的图块的两倍, 优"
-"先级为3的图块的选择可能性是优先级为2的图块."
+"使用图集图块进行绘制时，启用“使用优先级”选项会导致随机选择图块。默认情况下，"
+"图块集中所有图块出现的可能性都相等。你可以通过为每个图块设置不同的优先级来调"
+"整可能性的大小。例如，优先级为 2 的图块被选择的可能性是优先级为 1 的图块的两"
+"倍，优先级为 3 的图块被选择的可能性比优先级为 2 的图块多 50%。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
@@ -327,8 +328,8 @@ msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
-"自动图块允许你定义一组图块, 然后添加规则以根据相邻单元格的内容来控制使用哪个"
-"图块进行绘制."
+"自动图块允许你定义一组图块，然后添加规则以根据相邻单元格的内容来控制使用哪个"
+"图块进行绘制。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
@@ -336,8 +337,8 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
-"单击 \"新建自动图块\", 并拖动以选择要使用的图块. 以与合集图块相同的方式添加碰"
-"撞, 遮挡, 导航形状, 图块优先级以及选择图标."
+"点击“新建自动图块”然后框选你想要的图块。你可以使用和图集图块一样的方法来设置"
+"碰撞、遮罩、导航形状、图块优先级、以及设置图块图标。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
@@ -346,10 +347,10 @@ msgid ""
 "mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
 "\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
-"图块的选择是由位位掩码 (Bitmask) 来控制的. 可以通过点击 \"Bitmask\" 来新增位"
-"掩码, 然后点击图块中要新增或移除位位掩码的部分. 左键点击图块中的区域来新增位"
-"元, 右键点击则可移除\"关闭 (Off)\",Shift + 左键点击则可设定\"忽略 "
-"(Ignore)\"位元."
+"图块的选择由位掩码（Bitmask）控制。点击“位掩码”，然后在图块上点击不同的位置就"
+"可以添加或者删除掩码（Mask）的位（Bit），从而设置位掩码。在图块上的对应区域单"
+"击左键可以添加位，单击右键则是删除“off”，按住 Shift 单击左键可以设"
+"置“ignore（忽略）”位。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -360,10 +361,10 @@ msgid ""
 "more than one matching bitmask is found, one of them will be selected "
 "randomly, using the tile priorities."
 msgstr ""
-"当 Godot 使用自动图块来更新其中一格图块格 (Cell) 时,Godot 会先依据周边已经设"
-"定好的图块格来建立图块样式. 接著再使用建立好的样式来以与其位位掩码相符的单一"
-"图块来建立自动图块. 若没有找到相符的位位掩码, 则会改用 \"icon\" 图块. 若有找"
-"到多个相符的位位掩码, 则会依照图块优先度随机选择一个."
+"Godot 使用自动图块更新某个单元格时，会首先根据周围单元格的填充情况创建模式，"
+"并在这个自动图块中查找位掩码与该模式相符的图块。如果没有找到相符的位掩码，就"
+"会用作为“图标”的那个图块。如果相符的图块不止一个，就会根据图块优先级进行随机"
+"选择。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
@@ -372,16 +373,16 @@ msgid ""
 "\"Selected Tile\" heading. Allowed values are \"2x2\", \"3x3 (minimal)\", "
 "and \"3x3\"."
 msgstr ""
-"位掩码与图集的匹配规则取决于图集的自动位掩码模式. 可以在 \"属性面板\" 分页中"
-"的\"Selected Tile\"底下设定该规则. 可设定的值有 \"2x2\" , \"3x3 "
-"(minimal)\"与 \"3x3\"."
+"位掩码与模式的匹配规则取决于图块集的自动图块位掩码模式（Autotile Bitmask "
+"Mode），可以在“检查器”面板的“Selected Tile（所选图块）”下设置。可设定的值"
+"有“2x2”“3x3 (minimal)”以及“3x3”。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
 msgstr ""
-"位掩码必须满足所有 \"on\" 和 \"off'位才能匹配, 但 \"ignore\" 位会被忽略."
+"位掩码中设为“on”和“off”的位必须一致才能匹配成功，而“ignore”的位会被忽略。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
@@ -580,8 +581,9 @@ msgid "3x3"
 msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
+#, fuzzy
 msgid ""
-"In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
+"In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr "在3x3模式下, 每个位掩码包含9位(4个角,4个边缘,1个中心)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:309
@@ -648,10 +650,12 @@ msgid "Tips and tricks"
 msgstr "提示和技巧"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:343
+#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
-"Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
+"Settings and enable **Use Gpu Pixel Snap** in the **Rendering > 2d > "
+"Snapping** section."
 msgstr ""
 "如果你使用 :ref:`Camera2D <class_Camera2D>` 来滚动显示你的关卡, 则可能会注意"
 "到在图块之间出现了一些线条. 要解决此问题, 请打开 \"项目设置\", 然后在 "

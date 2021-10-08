@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,6 @@ msgid "Color space"
 msgstr "Espace de couleurs"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
-#, fuzzy
 msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
 "appear slightly different between them especially when lighting is used."
@@ -129,7 +128,6 @@ msgid "HDR"
 msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
-#, fuzzy
 msgid ""
 "GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
 "If HDR is set for your project, or for a given viewport, Godot will still "
@@ -137,9 +135,9 @@ msgid ""
 "range."
 msgstr ""
 "GLES2 n'est pas capable d'utiliser les fonctions de rendu de High Dynamic "
-"Range (HDR). Si le HDR est défini pour votre projet, ou pour une fenêtre "
-"donnée, Godot utilisera toujours le Low Dynamic Range (LDR) qui limite les "
-"valeurs de la fenêtre à la plage ``0-1``."
+"Range (HDR). Si le HDR est défini pour votre projet, ou pour un viewport "
+"donné, Godot utilisera toujours le Low Dynamic Range (LDR) qui limite les "
+"valeurs duviewport à la plage ``0-1``."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:53
 msgid ""
@@ -147,6 +145,10 @@ msgid ""
 "have no effect when HDR is disabled. This means debanding can't be used in "
 "GLES2."
 msgstr ""
+"La propriété Viewport **Debanding** et le paramètre de projet associé "
+"n'auront également aucun effet lorsque le HDR est désactivé. Cela signifie "
+"que la réduction de l'effet de postérisation HDR (débanding) ne peut pas "
+"être utilisé dans GLES2."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
@@ -423,13 +425,12 @@ msgstr ""
 "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:162
-#, fuzzy
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy )"
 msgstr ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"vec_type dPdy )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:164
 msgid "vec_type **dFdx** ( vec_type p )"

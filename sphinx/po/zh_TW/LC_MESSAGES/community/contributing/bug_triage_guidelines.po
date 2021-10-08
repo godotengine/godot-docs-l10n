@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,15 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:70
 msgid ""
-"*PR welcome / hero wanted!*: Contributions for issues with these labels are "
+"*Performance*: issues that directly impact engine or editor performance. Can "
+"also be used for pull requests that improve performance or add low-end-"
+"friendly options. Should not be coupled with *Usability*."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:73
+#, fuzzy
+msgid ""
+"*PR welcome / Hero wanted!*: Contributions for issues with these labels are "
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
@@ -185,7 +193,22 @@ msgstr ""
 "迎貢獻者參與。請注意，有這個 Label **不代表** 沒有這些 Label 的 Issue 你就不"
 "能處理。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:73
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:76
+msgid ""
+"*Regression*: the bug appeared after a stable release not exhibiting the bug "
+"was released."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:78
+msgid ""
+"*Salvageable*: the pull request can't be merged due to design issues or "
+"merge conflicts and its author is not active anymore. However, it can still "
+"be picked up by an external contributor to bring it to a mergeable state. To "
+"do so, you need to open a new pull request based on the original pull "
+"request."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid ""
 "*Tracker*: issue used to track other issues (like all issues related to the "
 "plugin system)."
@@ -193,11 +216,14 @@ msgstr ""
 "**Tracker**: 追蹤用。用來跟進其他 Issue 的 Issue (如所有與外掛系統有關的 "
 "Issue)。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:75
-msgid "*Usability*: issues that directly impact user usability."
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:84
+#, fuzzy
+msgid ""
+"*Usability*: issues that directly impact user usability. Should not be "
+"coupled with *Performance*."
 msgstr "**Usability**: 可用性。直接影響使用者可用性的 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:77
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid ""
 "The categories are used for general triage of the issues. They can be "
 "combined in some way when relevant, e.g. an issue can be labelled "
@@ -210,19 +236,31 @@ msgstr ""
 "**Usability**。某個未達共識或描述不夠精確的功能請求會同時被標上 **Feature "
 "proposal** 與 **Discussion**。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:83
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:92
 msgid "**Topics:**"
 msgstr "**主題：**"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:85
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:94
+msgid ""
+"*2D*: relates to 2D-specific issues. Should be coupled with one of the "
+"labels below, and should not be coupled with *3D*."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:95
+msgid ""
+"*3D*: relates to 3D-specific issues. Should be coupled with one of the "
+"labels below, and should not be coupled with *2D*."
+msgstr ""
+
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Assetlib*: relates to issues with the asset library."
 msgstr "**Assetlib**: 與素材庫有關的 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:86
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:97
 msgid "*Audio*: relates to the audio features (low and high level)."
 msgstr "**Audio**: 與音訊功能有關的 Issue (不論低階或高階)。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:87
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:98
 msgid ""
 "*Buildsystem*: relates to building issues, either linked to the SCons "
 "buildsystem or to compiler peculiarities."
@@ -230,7 +268,7 @@ msgstr ""
 "**Buildsystem**: 與建置有關的 Issue，可能與 SCons 建置系統或其他特定編譯器有"
 "關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:89
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:100
 msgid ""
 "*Core*: anything related to the core engine. It might be further split later "
 "on as it's a pretty big topic."
@@ -238,51 +276,51 @@ msgstr ""
 "**Core**: 任何與核心引擎有關的 Issue。如果是足夠大的主題，可能會進一步被拆分"
 "成多個 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:91
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:102
 msgid "*Drivers*: relates to issues with the drivers used by the engine."
 msgstr "**Drivers** 與 Godot 所用的驅動程式有關的 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:92
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:103
 msgid "*Editor*: relates to issues in the editor (mainly UI)."
 msgstr "**Editor**: 與編輯器有關的 Issue (主要為 UI)。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:93
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:104
 msgid "*GDNative*: relates to the GDNative module."
 msgstr "**GDNative**: 與 GDNative 模組有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:94
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:105
 msgid "*GDScript*: relates to GDScript."
 msgstr "**GDScript**: 與 GDScript 有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:95
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:106
 msgid "*Mono*: relates to the C# / Mono bindings."
 msgstr "**Mono**: 與 C# / Mono 繫結有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:96
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:107
 msgid "*Network*: relates to networking."
 msgstr "**Network**: 與網路有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:97
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:108
 msgid "*Physics*: relates to the physics engine (2D/3D)."
 msgstr "**Physics**: 與物理引擎有關 (2D/3D)。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:98
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:109
 msgid "*Plugin*: relates to problems encountered while writing plugins."
 msgstr "**Plugin**: 與撰寫外掛時遇到的問題有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:99
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:110
 msgid "*Porting*: relates to some specific platforms."
 msgstr "**Porting**: 與某些特定平台有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:100
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:111
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
 msgstr "**Rendering**: 與 2D、3D 算繪引擎有關。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:101
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:112
 msgid "*VisualScript*: relates to issues with the visual scripting language."
 msgstr "**VisualScript**: 與視覺腳本 (VisualScript) 語言有關的 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:103
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:114
 msgid ""
 "Issues would typically correspond to only one topic, though it's not "
 "unthinkable to see issues that fit two bills. The general idea is that there "
@@ -293,16 +331,16 @@ msgstr ""
 "概念是希望每個主題背後都有專門的貢獻者團隊，這樣這些團隊就能各自專注於標上該"
 "主題標籤的 Issue。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:108
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:119
 msgid "**Platforms:**"
 msgstr "**平台：**"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:110
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:121
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
 msgstr ""
 "**Android**, **HTML5**, **iOS**, **Linux**, **macOS**, **Windows**, **UWP**"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:112
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:123
 msgid ""
 "By default, it is assumed that a given issue applies to all platforms. If "
 "one of the platform labels is used, it is then exclusive and the previous "
@@ -313,11 +351,11 @@ msgstr ""
 "Label，則表示剛才這個假設不適用 (也就是如這個 Bug 是在 Android 或 Linux 上才"
 "會出現的，那麼就加上這兩個平台)。"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:118
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:129
 msgid "Milestones"
 msgstr "Milestone (里程碑)"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:120
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:131
 msgid ""
 "`Milestones <https://github.com/godotengine/godot/milestones>`_ correspond "
 "to planned future versions of Godot for which there is an existing roadmap. "
@@ -335,7 +373,7 @@ msgstr ""
 "絕對不該在未來穩定版更新中出現的 Bug、或是任何 Juan 馬上就想處理的東西，就該"
 "對應到相關 Milestone :)"
 
-#: ../../docs/community/contributing/bug_triage_guidelines.rst:129
+#: ../../docs/community/contributing/bug_triage_guidelines.rst:140
 msgid ""
 "Contributors are free to pick issues regardless of their assigned milestone; "
 "if a fix is proposed for a bug that was not deemed urgent and thus without "

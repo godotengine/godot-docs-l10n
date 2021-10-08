@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,8 +123,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:93
 msgid ""
-"``godot-cpp`` now includes ``godot_headers`` as a nested submodule, if "
-"you've manually downloaded them please make sure to place ``godot_headers`` "
+"``godot-cpp`` now includes ``godot-headers`` as a nested submodule, if "
+"you've manually downloaded them please make sure to place ``godot-headers`` "
 "inside of the ``godot-cpp`` folder."
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:168
 msgid ""
-"You should now have ``demo``, ``godot-cpp``, ``godot_headers``, and ``src`` "
+"You should now have ``demo``, ``godot-cpp``, ``godot-headers``, and ``src`` "
 "directories in your GDNative module."
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:387
 msgid ""
 "Once you've downloaded the ``SConstruct`` file, place it in your GDNative "
-"module folder besides ``godot-cpp``, ``godot_headers`` and ``demo``, then "
+"module folder besides ``godot-cpp``, ``godot-headers`` and ``demo``, then "
 "run:"
 msgstr ""
 
@@ -436,6 +436,11 @@ msgid ""
 "project, which means the data pack won't contain libraries that are "
 "incompatible with the target platform."
 msgstr ""
+"Раздел ``entry`` - это важный бит: он сообщает Godot расположение "
+"динамической библиотеки в файловой системе проекта для каждой поддерживаемой "
+"платформы. Это также приведет к экспорту *только* этого файла при экспорте "
+"проекта, что означает, что пакет данных не будет содержать библиотек, "
+"несовместимых с целевой платформой."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:445
 msgid ""
@@ -444,12 +449,18 @@ msgid ""
 "GDNative plugin implements someone else's library and requires you to supply "
 "a third-party dynamic library with your project."
 msgstr ""
+"Наконец, раздел ``зависимости`` позволяет вам указать дополнительные "
+"динамические библиотеки, которые также должны быть включены. Это важно, "
+"когда ваш плагин GDNative реализует чужую библиотеку и требует, чтобы вы "
+"предоставили стороннюю динамическую библиотеку вместе с проектом."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:450
 msgid ""
 "If you double click on the ``gdexample.gdnlib`` file within Godot, you'll "
 "see there are far more options to set:"
 msgstr ""
+"Если вы дважды щелкните по файлу ``gdexample.gdnlib`` в Godot, вы увидите, "
+"что есть гораздо больше опций, которые можно установить:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:455
 msgid ""
@@ -457,6 +468,9 @@ msgid ""
 "added to our plugin. We'll name it ``gdexample.gdns`` for our gdexample "
 "NativeScript."
 msgstr ""
+"Второй файл, который нам нужно создать, - это файл, используемый каждым "
+"NativeScript, который мы добавили в наш плагин. Мы назовем его ``gdexample."
+"gdns`` для нашего NativeScript gdexample."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:471
 msgid ""
@@ -467,12 +481,20 @@ msgid ""
 "``class_name`` which identifies the NativeScript in our plugin we want to "
 "use."
 msgstr ""
+"Это стандартный ресурс Godot; вы могли бы просто создать его непосредственно "
+"в сцене, но сохранение его в файл значительно упрощает его повторное "
+"использование в других местах. Этот ресурс указывает на наш файл gdnlib, "
+"чтобы Godot мог знать, какая динамическая библиотека содержит наш "
+"NativeScript. Он также определяет ``class_name``, который идентифицирует "
+"NativeScript в нашем плагине, который мы хотим использовать."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:477
 msgid ""
 "Time to jump back into Godot. We load up the main scene we created way back "
 "in the beginning and now add a Sprite to our scene:"
 msgstr ""
+"Пора вернуться в Godot. Мы загрузим главную сцену, которую мы создали в "
+"самом начале, и теперь добавим спрайт в нашу сцену:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:482
 msgid ""
@@ -480,10 +502,13 @@ msgid ""
 "the ``centered`` property and drag our ``gdexample.gdns`` file onto the "
 "``script`` property of the sprite:"
 msgstr ""
+"Мы назначим логотип Godot этому спрайту в качестве текстуры, отключим "
+"свойство ``centered`` и перетащим наш файл ``gdexample.gdns`` на свойство "
+"``cript`` спрайта:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:488
 msgid "We're finally ready to run the project:"
-msgstr ""
+msgstr "Наконец-то мы готовы к запуску проекта:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:493
 msgid "Adding properties"
@@ -496,6 +521,10 @@ msgid ""
 "ways of doing this. You can either bind directly to a member or use a setter "
 "and getter function."
 msgstr ""
+"GDScript позволяет добавлять свойства в сценарий с помощью ключевого слова "
+"``export``. В GDNative вы должны зарегистрировать свойства, и есть два "
+"способа сделать это. Вы можете либо привязаться непосредственно к члену, "
+"либо использовать функции setter и getter."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:502
 msgid ""

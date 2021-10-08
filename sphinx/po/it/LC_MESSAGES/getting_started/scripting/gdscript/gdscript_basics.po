@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -932,7 +932,6 @@ msgid "Vertical tab character"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
-#, fuzzy
 msgid "``\\\"``"
 msgstr "``\\\"``"
 
@@ -941,7 +940,6 @@ msgid "Double quote"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
-#, fuzzy
 msgid "``\\'``"
 msgstr "``\\'``"
 
@@ -950,7 +948,6 @@ msgid "Single quote"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
-#, fuzzy
 msgid "``\\\\``"
 msgstr "``\\\\``"
 
@@ -1313,7 +1310,6 @@ msgid "Script classes declared with the ``class_name`` keyword."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:615
-#, fuzzy
 msgid "Casting"
 msgstr "Conversione del tipo"
 
@@ -1714,9 +1710,12 @@ msgid "Every subpattern has to be comma separated."
 msgstr "Ogni subpattern deve essere separato da una virgola."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
+#, fuzzy
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
 msgstr ""
+"Se non si specifica un valore, viene controllata solo l'esistenza della "
+"chiave."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "A value pattern is separated from the key pattern with a ``:``."
@@ -1800,12 +1799,14 @@ msgid "Another class file."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
+#, fuzzy
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "Una classe interna in un altro file di classe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
+#, fuzzy
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "L'ereditarietà multipla non è consentita."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
 msgid "Inheritance uses the ``extends`` keyword::"
@@ -1901,14 +1902,19 @@ msgid "Inner classes"
 msgstr "Classi interne"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
+#, fuzzy
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
+"Un file di classe può contenere classi interne. Le classi interne sono "
+"definite usando la parola chiave ``class``. Sono istanziate usando la "
+"funzione ``ClassName.new()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
+#, fuzzy
 msgid "Classes as resources"
-msgstr ""
+msgstr "Classi come risorse"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
 msgid ""
@@ -1940,10 +1946,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
+#, fuzzy
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
+"Per questo, GDScript fornisce una sintassi *setter/getter* usando la parola "
+"chiave ``setget``. Viene usata direttamente dopo la definizione di una "
+"variabile:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
 msgid ""
@@ -2167,8 +2177,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1583
+#, fuzzy
 msgid "Coroutines & signals"
-msgstr ""
+msgstr "Coroutine & segnali"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1585
 msgid ""

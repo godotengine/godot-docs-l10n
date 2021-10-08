@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,8 @@ msgid "Which Input singleton method should I use?"
 msgstr "我应该使用哪个输入单例方法？"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
-msgid "In Godot 4.0, there are 3 ways to get input in an analog-aware way:"
+#, fuzzy
+msgid "There are 3 ways to get input in an analog-aware way:"
 msgstr "在Godot 4.0中，有3种方式以模拟感知的方式获得输入:"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
@@ -139,10 +140,11 @@ msgstr ""
 "鼠标按钮或键盘按键，使用 ``Input.is_action_pressed()`` :"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:125
+#, fuzzy
 msgid ""
-"In Godot versions before 4.0, such as 3.2, ``Input.get_vector()`` and "
+"In Godot versions before 3.4, such as 3.3, ``Input.get_vector()`` and "
 "``Input.get_axis()`` aren't available. Only ``Input.get_action_strength()`` "
-"and ``Input.is_action_pressed()`` are available in Godot 3.2."
+"and ``Input.is_action_pressed()`` are available in Godot 3.3."
 msgstr ""
 "在4.0之前的Godot版本，如3.2， ``Input.get_vector()`` 和 ``Input.get_axis()`` "
 "不可用。只有 ``Input.get_action_strength()`` 和 ``Input."
@@ -312,7 +314,7 @@ msgstr "我的控制器在特定的平台上工作，但在另一个平台上却
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:231
 msgid "macOS"
-msgstr "macOS系统"
+msgstr "macOS"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid ""

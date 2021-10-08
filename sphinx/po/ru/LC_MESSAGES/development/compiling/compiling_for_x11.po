@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,6 +144,8 @@ msgstr "Компиляция"
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
+"Запустите терминал, перейдите в корневой каталог исходного кода движка и "
+"введите:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:103
 msgid ""
@@ -163,6 +165,8 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
+"Если вы хотите компилировать с использованием Clang, а не GCC, используйте "
+"эту команду:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid ""
@@ -229,11 +233,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:164
 msgid "(32 bits)"
-msgstr ""
+msgstr "(32 бита)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:171
 msgid "(64 bits)"
-msgstr ""
+msgstr "(64 бита)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:178
 msgid ""
@@ -293,6 +297,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:221
+msgid ""
+"After the build is completed, a new binary with a ``.llvm`` suffix will be "
+"created in the ``bin/`` folder."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:224
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:4
+#, fuzzy
 msgid "Advanced post-processing"
-msgstr ""
+msgstr "Post-elaborazione avanzata"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:7
 msgid "Introduction"
@@ -158,6 +159,18 @@ msgid ""
 "linearize it, we multiply it by the inverse of the projection matrix, which "
 "in Godot, is accessible with the variable ``INV_PROJECTION_MATRIX``."
 msgstr ""
+"I valori restituiti da ``DEPTH_TEXTURE`` sono compresi tra ``0`` e ``1`` e "
+"non sono lineari. Quando si visualizza la profondità direttamente dalla "
+"``DEPTH_TEXTURE``, tutto sembrerà quasi bianco a meno che non sia molto "
+"vicino. Questo perché il buffer di profondità memorizza gli oggetti più "
+"vicini alla telecamera utilizzando più bit di quelli più lontani, quindi la "
+"maggior parte dei dettagli nel buffer di profondità si trova vicino alla "
+"telecamera. Per far sì che il valore di profondità si allinei con le "
+"coordinate del mondo o del modello, abbiamo bisogno di linearizzare il "
+"valore. Quando applichiamo la matrice di proiezione alla posizione dei "
+"vertici, il valore z è reso non lineare, quindi per linearizzarlo, lo "
+"moltiplichiamo per l'inverso della matrice di proiezione, che in Godot, è "
+"accessibile con la variabile ``INV_PROJECTION_MATRIX``."
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:99
 msgid ""
@@ -190,8 +203,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:146
+#, fuzzy
 msgid "An optimization"
-msgstr ""
+msgstr "Un'ottimizzazione"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:148
 msgid ""

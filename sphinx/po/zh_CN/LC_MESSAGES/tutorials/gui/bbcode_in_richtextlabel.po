@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:4
 msgid "BBCode in RichTextLabel"
-msgstr "RichTextLabel中的BBCode"
+msgstr "RichTextLabel 中的 BBCode"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:7
 msgid "Introduction"
@@ -33,9 +33,9 @@ msgid ""
 "the text be one color, or only one part of the text be centered. To get "
 "around this limitation you would use a :ref:`class_RichTextLabel`."
 msgstr ""
-"标签节点非常适合显示基本文本, 但它们有局限性. 如果更改文本的颜色或其对齐方"
-"式, 则该更改会影响标签节点中的所有文本. 不能让一部分文本用一种颜色, 或者只有"
-"一部分文本居中. 要绕过此限制, 可以使用 :ref:`class_RichTextLabel` ."
+"Label 节点非常适合显示基本文本，但它们有局限性。如果更改文本的颜色或对齐方"
+"式，则该更改会影响标签节点中的所有文本。没法只让一部分文本用一种颜色，或者只"
+"居中一部分文本。要绕过此限制，可以使用 :ref:`class_RichTextLabel` 。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:15
 msgid ""
@@ -43,8 +43,8 @@ msgid ""
 "Control. It has a built-in API for generating the markup, but can also parse "
 "a BBCode."
 msgstr ""
-":ref:`class_RichTextLabel` 允许在一个控件中显示复杂的文本标记. 它有一个内置的"
-"API用于生成标记, 也可以解析一个BBCode."
+":ref:`class_RichTextLabel` 允许在一个控件中显示复杂的文本标记。它内置用来生成"
+"标记的 API，同时也可以对 BBCode 进行解析。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:18
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:22
 msgid "Using BBCode"
-msgstr "使用富文本(BBCode)"
+msgstr "使用 BBCode"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 msgid ""
@@ -67,16 +67,16 @@ msgid ""
 "this happens, you need to toggle the \"Enabled\" checkbox in the \"Bb Code\" "
 "section (``bbcode_enabled``)."
 msgstr ""
-"对于统一格式的文本, 您可以写入 \"Text\" 属性, 但如果您想使用BBCode标记, 您应"
-"该使用 \"Bb Code\" 部分的 \"Text\" 属性来代替( ``bbcode_text`` ). 写入这个属"
-"性将触发对您的标记的解析, 以按要求格式化文本. 在这之前, 你需要切换 \"Bb代码"
-"\" 部分的 \"启用\" 复选框( ``bbcode_enabled`` )."
+"你可以把格式统一的文本写在“Text”属性里，但如果想用 BBCode 标记，你就应该换成"
+"使用“Bb Code”部分的“Text”属性（ ``bbcode_text`` ）。写入这个属性将触发对你的"
+"标记的解析，从而按要求对文本进行格式化。在这之前，你需要打开“Bb Code”部分"
+"的“Enabled”复选框（ ``bbcode_enabled`` ）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:32
 msgid ""
 "For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
 "\" with a blue color."
-msgstr "例如, ``BBCode [color=blue]blue[/color]`` 将会出现蓝色的单词 \"blue\"."
+msgstr "例如，``BBCode [color=blue]blue[/color]`` 将会出现蓝色的单词“blue”。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid ""
@@ -86,9 +86,9 @@ msgid ""
 "property or you'll lose the BBCode markup. All changes to the text must be "
 "done in the BBCode parameter."
 msgstr ""
-"你可能注意到, 在写入\"Bb Code\"下的 \"Text\" 属性后, 常规的 \"Text\" 属性现在"
-"更新为不带BBCode标签的文本. 虽然Text属性将由BBCode属性更新, 但你不能编辑Text"
-"属性, 否则将丢失BBCode标签. 对文本的所有更改都必须在BBCode参数中完成."
+"填写完 BBCode 的“Text”属性后，你可以看到普通的“Text”属性变成了不带 BBCode 的"
+"版本。这个文本属性会随 BBCode 属性更新，但你不能去编辑，否则就会丢失 BBCode "
+"标记。所有修改都必须在 BBCode 参数里完成。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:44
 msgid ""
@@ -104,7 +104,7 @@ msgstr "目前还没有用于控制文本垂直居中的BBCode标签."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:50
 msgid "Reference"
-msgstr "可用标签参考"
+msgstr "参考"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "Command"
@@ -120,7 +120,7 @@ msgstr "描述"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "**bold**"
-msgstr "**bold**"
+msgstr "**加粗**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "``[b]{text}[/b]``"
@@ -132,7 +132,7 @@ msgstr "使得 {text} 呈现粗体."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "**italics**"
-msgstr "**italics**"
+msgstr "**斜体**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "``[i]{text}[/i]``"
@@ -144,7 +144,7 @@ msgstr "使得 {text} 呈现斜体."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "**underline**"
-msgstr "**underline**"
+msgstr "**下划线**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "``[u]{text}[/u]``"
@@ -156,7 +156,7 @@ msgstr "使得 {text} 呈现下划线."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "**strikethrough**"
-msgstr "**strikethrough**"
+msgstr "**删除线**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "``[s]{text}[/s]``"
@@ -164,11 +164,11 @@ msgstr "``[s]{text}[/s]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "Makes {text} strikethrough."
-msgstr "使{text}删除."
+msgstr "在 {text} 上显示删除线。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "**code**"
-msgstr "**code**"
+msgstr "**代码**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "``[code]{text}[/code]``"
@@ -176,11 +176,11 @@ msgstr "``[code]{text}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "Makes {text} use the code font (which is typically monospace)."
-msgstr "使{text}使用代码字体(通常为等宽字体)."
+msgstr "使得 {text} 使用代码字体（通常为等宽字体）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "**center**"
-msgstr "**center**"
+msgstr "**居中**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "``[center]{text}[/center]``"
@@ -192,7 +192,7 @@ msgstr "使得 {text} 水平居中."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "**right**"
-msgstr "**right**"
+msgstr "**右对齐**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "``[right]{text}[/right]``"
@@ -204,7 +204,7 @@ msgstr "使得 {text} 右对齐."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "**fill**"
-msgstr "**fill**"
+msgstr "**填充**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "``[fill]{text}[/fill]``"
@@ -216,7 +216,7 @@ msgstr "使{text}填充RichTextLabel的宽度."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "**indent**"
-msgstr "**indent**"
+msgstr "**缩进**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "``[indent]{text}[/indent]``"
@@ -228,7 +228,7 @@ msgstr "增加 {text} 的缩进级别."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "**url**"
-msgstr "**url**"
+msgstr "**URL**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "``[url]{url}[/url]``"
@@ -240,7 +240,7 @@ msgstr "按原样显示{url}, 为其加下划线并使其可点击."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "**url (ref)**"
-msgstr "**url (ref)**"
+msgstr "**URL（引用）**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "``[url=<url>]{text}[/url]``"
@@ -248,11 +248,11 @@ msgstr "``[url=<url>]{text}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "Makes {text} reference <url> (underlined and clickable)."
-msgstr "使得{text }呈现且点击后相当于点击 <url> ."
+msgstr "让 {text} 引用 <url>（加下划线并可点击）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "**image**"
-msgstr "**image**"
+msgstr "**图片**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "``[img]{path}[/img]``"
@@ -265,7 +265,7 @@ msgstr "插入由资源路径 {path} 所指示的图片."
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "**resized image**"
-msgstr "**resized image**"
+msgstr "**调整大小后的图片**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "``[img=<width>]{path}[/img]``"
@@ -285,7 +285,7 @@ msgstr "插入由资源路径 {path} 所指示的图片, 指定其宽与高."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "**font**"
-msgstr "**font**"
+msgstr "**字体**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "``[font=<path>]{text}[/font]``"
@@ -297,7 +297,7 @@ msgstr "为 {text} 内容设置自定义字体, 字体由 <path> 指定."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "**color**"
-msgstr "**color**"
+msgstr "**颜色**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "``[color=<code/name>]{text}[/color]``"
@@ -310,7 +310,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "**table**"
-msgstr "**table**"
+msgstr "**表格**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "``[table=<number>]{cells}[/table]``"
@@ -322,7 +322,7 @@ msgstr "创建一个包含 <number>列数的表."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "**cell**"
-msgstr "**cell**"
+msgstr "**单元格**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "``[cell]{text}[/cell]``"
@@ -334,7 +334,7 @@ msgstr "将带有{text}的单元格添加到表格中."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 msgid "Built-in color names"
-msgstr "内置的颜色名称列表"
+msgstr "内置的颜色名称"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:95
 msgid "List of valid color names for the [color=<name>] tag:"

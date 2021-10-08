@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "Formátovací řetězce GDScriptu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDScript nabízí vlastnost nazvanou *formátové řetězce*, která umožňuje "
+"opakované použití textových šablon pro rychlé vytváření podobných řetězců."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -33,6 +35,9 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"Formátovací řetězce jsou stejné jako normální řetězce, jen obsahují určité "
+"zástupné znaky. Tyto zástupné znaky pak lze snadno nahradit parametry "
+"předanými formátovacímu řetězci."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -41,14 +46,18 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"Například s ``%s`` jako zástupným znakem lze formátovací řetězec ``\"Hello "
+"%s, how are you?``` snadno změnit na ``\"Hello World, how are you?\"``. "
+"Všimněte si, že zástupný znak je uprostřed řetězce; jeho úprava by bez "
+"formátovacích řetězců mohla být těžkopádná."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Použití v GDScriptu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr ""
+msgstr "Prohlédněte si tento konkrétní příklad GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -56,6 +65,8 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"Zástupné znaky vždy začínají znakem ``%``, ale další znak nebo znaky, "
+"*specifikátor formátu*, určují, jak bude daná hodnota převedena na řetězec."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -66,6 +77,12 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"``%s``, který vidíte ve výše uvedeném příkladu, je nejjednodušší zástupný "
+"znak a funguje pro většinu případů: převádí hodnotu stejným způsobem, jakou "
+"by ji převedl implicitní převod řetězce nebo ``str()``. Řetězce zůstanou "
+"beze změny, logické hodnoty se transformují buď na ``\"True\"`` nebo ``"
+"\"False\"``, celé nebo reálné číslo se změní na desetinné, ostatní typy "
+"obvykle vracejí svá data v lidsky čitelné podobě."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -74,26 +91,35 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"V jazyce GDScript existuje také další způsob formátování textu, a to metoda "
+"``String.format()```. Ta nahradí všechny výskyty určitého znaku v řetězci "
+"určitou hodnotou. Metoda může pracovat s poli nebo slovníky pro dvojice klíč/"
+"hodnota."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Pole lze použít s klíči nebo indexy, oba styly lze i kombinovat (viz "
+"příklady níže). Na pořadí záleží pouze při použití indexového nebo smíšeného "
+"stylu pole."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "Rychlý příklad v GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"Existují i další `formátové specifikátory`_, ale ty jsou použitelné pouze "
+"při použití operátoru ``%``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Více zástupných symbolů"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -101,16 +127,23 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
+"Formátovací řetězce mohou obsahovat více zástupných znaků. V takovém případě "
+"jsou hodnoty předávány ve formě pole, jedna hodnota na každý zástupný znak "
+"(pokud není použit specifikátor formátu s ``*``, viz `dynamické "
+"vyplňování`_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"Všimněte si, že hodnoty jsou vkládány popořádku. Nezapomeňte, že všechny "
+"zástupné symboly musí být nahrazeny najednou, takže je potřeba i "
+"odpovídající počet hodnot."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "Specifikátory formátu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -119,10 +152,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"V zástupných znacích lze použít i jiné specifikátory formátu než ``s``. "
+"Skládají se z jednoho nebo více znaků. Některé z nich fungují samy o sobě "
+"podobně jako ``s``, některé se objevují před jinými znaky, některé fungují "
+"pouze s určitými hodnotami nebo znaky."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "Typy zástupných symbolů"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -130,84 +167,98 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"Jeden a to právě jeden z nich se musí vždy objevit jako poslední znak ve "
+"specifikátoru formátu. Kromě ``s`` vyžadují všechny ostatní určité typy "
+"parametrů."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
+"**Jednoduchý** převod na řetězec pomocí implicitní metody konverze na String."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"Jeden znak **Unicode**. Očekává 8bitové celé číslo bez znaménka (0-255) pro "
+"codepoint nebo jednoznakový řetězec."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"**desítkové celé číslo**. Očekává celé nebo reálné číslo (bude zaokrouhleno)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"**osmičkové celé číslo**. Očekává celé nebo reálné číslo (bude zaokrouhleno)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"**hexadecimální celé číslo** s **malými** písmeny. Očekává celé nebo reálné "
+"číslo (bude zaokrouhleno)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"**hexadecimální celé číslo** s **velkými** písmeny. Očekává celé nebo reálné "
+"číslo (bude zaokrouhleno)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "**desítkové reálné** číslo. Očekává celé nebo reálné číslo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "Modifikátory zástupných symbolů"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"Tyto znaky se objevují před výše uvedenými. Některé z nich fungují pouze za "
+"určitých podmínek."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
@@ -215,27 +266,31 @@ msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr ""
+msgstr "V číselných specifikátorech **zobrazí znaménko +**, pokud je kladné."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
-msgstr ""
+msgstr "Číslo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"Nastavení **vyplnění**. Doplněno mezerami nebo nulami, pokud celé číslo "
+"začíná ``0`` v celočíselném zástupném znaku. Při použití za ``.`` viz ``.``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"Před ``f`` nastaví **přesnost** na 0 desetinných míst. Může následovat celé "
+"číslo pro změnu přesnosti. Zarovnáváno nulami."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
@@ -243,21 +298,23 @@ msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr ""
+msgstr "**Zarovnává doprava**, nikoli doleva."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
+"**Dynamické vyplňování**, očekávejte další celočíselný parametr pro "
+"nastavení vyplňování nebo přesnosti za ``.``, viz `dynamické vyplňování`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "Odsazení"
+msgstr "Zarovnávání"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -265,16 +322,24 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"Znaky ``.``` (*tečka*), ``*`` (*hvězdička*), ``-`` (*minus*) a číslice "
+"(``0``-``9``) se používají pro zarovnávání. To umožňuje tisk několika hodnot "
+"zarovnaných vertikálně jako ve sloupci, pokud je použito písmo s pevnou "
+"šířkou."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
+"Chcete-li řetězec zarovnat na minimální délku, přidejte ke specifikátoru "
+"celé číslo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
+"Pokud celé číslo začíná ``0``, jsou celočíselné hodnoty doplněny nulami "
+"namísto mezer:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -283,16 +348,22 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"Přesnost lze u reálných čísel zadat přidáním znaku ``.`` (*tečka*), za "
+"kterým následuje celé číslo. Bez uvedení celého čísla za ``.`` se použije "
+"přesnost 0 se zaokrouhlením na celočíselnou hodnotu. Celé číslo, které se má "
+"použít pro zarovnání, se musí objevit před tečkou."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"Znak ``-`` způsobí zarovnání vpravo, nikoli vlevo, což je užitečné pro "
+"zarovnávání textu vpravo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "Dynamické zarovnávání"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -301,32 +372,41 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"Pomocí znaku ``*``` (*hvězdička*) lze nastavit zarovnání nebo přesnost bez "
+"úpravy formátovacího řetězce. Používá se místo celého čísla ve specifikátoru "
+"formátu. Hodnoty pro zarovnání a přesnost se pak předávají při formátování:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
+"V celočíselných zástupných znacích je stále možné zarovnávat nulami přidáním "
+"``0``` před ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "Escape sekvence"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
+"Chcete-li do formátovacího řetězce vložit prostý znak ``%``, je třeba jej "
+"escapovat. Tak se zabrání jeho čtení jako zástupného znaku. Toto se provádí "
+"zdvojením znaku:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "Příklady formátovacích metod"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"Následuje několik příkladů použití různých volání metody ``String.format``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
@@ -335,36 +415,38 @@ msgstr "**Typ**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**Styl**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
-msgstr ""
+msgstr "**Příklad**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
-msgstr ""
+msgstr "**Výsledek**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid "Dictionary"
-msgstr ""
+msgstr "Slovník"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "klíč"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -374,83 +456,88 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "Hi, Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr ""
+msgstr "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "mix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Array"
-msgstr ""
+msgstr "Pole"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr ""
+msgstr "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr ""
+msgstr "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "no index"
-msgstr ""
+msgstr "žádný index"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr ""
+msgstr "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"Zástupné znaky lze také přizpůsobit pomocí ``String.format``, zde je několik "
+"příkladů této funkce."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr ""
+msgstr "Infix (výchozí)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr ""
+msgstr "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "Hi, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
-msgstr ""
+msgstr "Postfix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr ""
+msgstr "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
@@ -458,7 +545,7 @@ msgstr "Prefix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr ""
+msgstr "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
 msgid ""
@@ -466,13 +553,17 @@ msgid ""
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
+"Kombinace metody ``String.format`` a operátoru ``%`` by mohla být užitečná, "
+"protože ``String.format`` nemá možnost manipulovat s reprezentací čísel."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "Hi, Godette v3.11"

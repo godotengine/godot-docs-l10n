@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgid "Which Input singleton method should I use?"
 msgstr "Что такое GDScript и зачем мне его использовать?"
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
-msgid "In Godot 4.0, there are 3 ways to get input in an analog-aware way:"
+msgid "There are 3 ways to get input in an analog-aware way:"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
@@ -126,9 +126,9 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:125
 msgid ""
-"In Godot versions before 4.0, such as 3.2, ``Input.get_vector()`` and "
+"In Godot versions before 3.4, such as 3.3, ``Input.get_vector()`` and "
 "``Input.get_axis()`` aren't available. Only ``Input.get_action_strength()`` "
-"and ``Input.is_action_pressed()`` are available in Godot 3.2."
+"and ``Input.is_action_pressed()`` are available in Godot 3.3."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:130
@@ -157,6 +157,16 @@ msgid ""
 "This phenomenon is known as *drifting* and can be more noticeable on old or "
 "faulty controllers."
 msgstr ""
+"В отличие от клавиатур и мышей, контроллеры предлагают оси с *аналоговыми* "
+"входами. Преимущество аналоговых входов в том, что они обеспечивают "
+"дополнительную гибкость действий. В отличие от цифровых входов, которые "
+"могут обеспечить силу только ``0.0`` и ``1.0``, аналоговый вход может "
+"обеспечить *любую* силу между ``0.0`` и ``1.0``. Недостатком является то, "
+"что без системы мертвых зон сила аналоговой оси никогда не будет равна "
+"``0.0`` из-за того, как физически построен контроллер. Вместо этого она "
+"будет задерживаться на низком значении, таком как ``0.062``. Это явление "
+"известно как *дрейф* и может быть более заметно на старых или неисправных "
+"контроллерах."
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:147
 msgid ""
@@ -170,6 +180,16 @@ msgid ""
 "dead zone value is high enough to ignore the input caused by joystick "
 "drifting, but is low enough to not ignore actual input from the player."
 msgstr ""
+"В качестве реального примера возьмем гоночную игру. Благодаря аналоговым "
+"входам мы можем медленно направлять автомобиль в ту или иную сторону. Однако "
+"без системы мертвых зон автомобиль будет медленно двигаться сам по себе, "
+"даже если игрок не прикасается к джойстику. Это происходит потому, что сила "
+"оси направления не будет равна ``0.0``, когда мы этого ожидаем. Поскольку мы "
+"не хотим, чтобы в этом случае автомобиль управлялся сам по себе, мы "
+"определяем значение \"мертвой зоны\" ``0.2``, которое будет игнорировать все "
+"входные данные, сила которых меньше ``0.2``. Идеальное значение мертвой зоны "
+"достаточно высоко, чтобы игнорировать ввод, вызванный дрейфом джойстика, но "
+"достаточно низко, чтобы не игнорировать фактический ввод от игрока."
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:157
 msgid ""

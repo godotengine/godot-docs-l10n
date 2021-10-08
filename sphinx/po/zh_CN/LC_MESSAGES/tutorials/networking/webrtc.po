@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,11 +146,19 @@ msgstr ""
 "native>`__ , 以获取说明和最新的 `发布 <https://github.com/godotengine/webrtc-"
 "native/releases>`__ ."
 
-#: ../../docs/tutorials/networking/webrtc.rst:41
+#: ../../docs/tutorials/networking/webrtc.rst:42
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/webrtc.rst:48
 msgid "Minimal connection example"
 msgstr "最小连接示例"
 
-#: ../../docs/tutorials/networking/webrtc.rst:43
+#: ../../docs/tutorials/networking/webrtc.rst:50
 msgid ""
 "This example will show you how to create a WebRTC connection between two "
 "peers in the same application. This is not very useful in real life, but "
@@ -159,15 +167,15 @@ msgstr ""
 "这个例子将向您展示如何在同一应用程序中的两个对等体之间创建WebRTC连接. 这在现"
 "实场景中并不是很有用, 但会让你对如何设置WebRTC连接有一个很好的概览."
 
-#: ../../docs/tutorials/networking/webrtc.rst:91
+#: ../../docs/tutorials/networking/webrtc.rst:98
 msgid "This will print:"
 msgstr "这将打印:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:99
+#: ../../docs/tutorials/networking/webrtc.rst:106
 msgid "Local signaling example"
 msgstr "本地信号示例"
 
-#: ../../docs/tutorials/networking/webrtc.rst:101
+#: ../../docs/tutorials/networking/webrtc.rst:108
 msgid ""
 "This example expands on the previous one, separating the peers in two "
 "different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as "
@@ -176,11 +184,11 @@ msgstr ""
 "这个例子在上一个例子的基础上进行了扩展, 将对等体分离在两个不同的场景中, 并使"
 "用 :ref:`singleton <doc_singletons_autoload>` 作为信号服务器."
 
-#: ../../docs/tutorials/networking/webrtc.rst:141
+#: ../../docs/tutorials/networking/webrtc.rst:148
 msgid "And now for the local signaling server:"
 msgstr "现在是本地信号服务器:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:143
+#: ../../docs/tutorials/networking/webrtc.rst:150
 msgid ""
 "This local signaling server is supposed to be used as a :ref:`singleton "
 "<doc_singletons_autoload>` to connect two peers in the same scene."
@@ -188,19 +196,19 @@ msgstr ""
 "这个本地信号服务器应该是作为一个 :ref:`singleton <doc_singletons_autoload>` "
 "来连接同一场景中的两个对等体."
 
-#: ../../docs/tutorials/networking/webrtc.rst:177
+#: ../../docs/tutorials/networking/webrtc.rst:184
 msgid "Then you can use it like this:"
 msgstr "然后, 您可以这样使用它:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:198
+#: ../../docs/tutorials/networking/webrtc.rst:205
 msgid "This will print something similar to this:"
 msgstr "将打印出类似这样的内容:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:206
+#: ../../docs/tutorials/networking/webrtc.rst:213
 msgid "Remote signaling with WebSocket"
 msgstr "使用WebSocket进行远程信号传输"
 
-#: ../../docs/tutorials/networking/webrtc.rst:208
+#: ../../docs/tutorials/networking/webrtc.rst:215
 msgid ""
 "A more advanced demo using WebSocket for signaling peers and :ref:"
 "`WebRTCMultiplayer <class_WebRTCMultiplayer>` is available in the `godot "

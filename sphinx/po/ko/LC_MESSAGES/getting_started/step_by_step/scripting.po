@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Godot 3.0 이전까지는 스크립트하는 방법이 :ref:`GDScript<doc_gdscript>`\\ 밖"
-"에 없었습니다. 현재 Godot는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 별개"
-"로 스크립트 언어를 추가하는 기능도 있습니다!"
+"Godot 3.0 이전까지는 스크립팅하는 방법이 :ref:`GDScript<doc_gdscript>`\\ 밖"
+"에 없었습니다. 현재 Godot에는 4개(그래요, 4개!)의 공식 언어가 있고 별개로 스"
+"크립트 언어를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -111,8 +111,8 @@ msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
-"쓰레기 수집을 쓰지 않습니다. 때문에 결정론적으로 인한 약간의 자동화를 교환합"
-"니다 (어쨌든 대부분의 오브젝트들은 참조 카운트됩니다)."
+"가비지 컬렉터를 쓰지 않습니다. 때문에 결정론적으로 약간의 자동화를 교환합니"
+"다 (어쨌든 대부분의 오브젝트들은 참조 카운트됩니다)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -120,8 +120,8 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
-"더 많은 성능이 필요하다면 (GDNative를 통해) C++의 코드 섹션을 쉽게 최적화할 "
-"수 있습니다. 엔진을 전부 다시 컴파일 하지 않아도 됩니다."
+"더 많은 성능이 필요하다면 (GDNative를 통해) 동적인 특성으로 C++의 코드 섹션"
+"을 쉽게 최적화할 수 있습니다. 엔진을 전부 다시 컴파일하지 않아도 됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
-msgstr "VisualScript"
+msgstr "비주얼스크립트"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -151,17 +151,17 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
-"Visual scripting은 비 프로그래머 뿐만 아니라 경험 있는 프로그래머도 게임 디자"
-"이너나 아티스트와 같은 사람들이 코드 일부분을 보기 쉽게 만들어 주는 멋진 도구"
-"입니다."
+"Visual scripting은 비 프로그래머 뿐만 아니라 게임 디자이너나 아티스트와 같은 "
+"사람들이 코드 일부분을 보기 쉽게 하고 싶은 경험 있는 프로그래머에게도 멋진 도"
+"구입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
-"프로그래머는 이것으로 상태 시스템이나 맞춤 시각 노드 워크플로를 만들 수도 있"
-"습니다 - 예를 들면 대화 시스템이죠."
+"프로그래머는 이것으로 상태 시스템이나 사용자 지정 시각 노드 워크플로를 만들 "
+"수도 있습니다 - 예를 들면 대화 시스템이죠."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
@@ -182,8 +182,8 @@ msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
-"비록 쓰레기 수집에 대해 알아야 하지만 이것은 퍼포먼스와 사용의 용이성 두가지"
-"를 절충하고 있습니다."
+"비록 가비지 컬렉터에 대해 알아야 하지만 이것은 성능과 사용 용이성 두 가지를 "
+"절충하고 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -194,9 +194,9 @@ msgid ""
 "is the only officially supported .NET option."
 msgstr ""
 "Godot가 `Mono <https://mono-project.com>`_ .NET 런타임을 사용하기 때문에, 이"
-"론적으로 모든 제 3자 .NET 라이브러리나 프레임워크를 Godot의 스크립트로 사용"
-"할 수 있습니다. F#, Boo, ClojureCLR와 같은 공용 언어 인프라 호환 프로그래밍 "
-"언어 또한 가능합니다. 하지만 실제로는 C#만 공식으로 지원하는 .NET 옵션입니다."
+"론적으로 F#, Boo, ClojureCLR와 같은 공통 언어 기반 호환 프로그래밍 언어를 포"
+"함한 모든 제 3자 .NET 라이브러리나 프레임워크를 Godot의 스크립트로 사용할 수 "
+"있습니다. 하지만 실제로는 C#만 공식으로 지원하는 .NET 옵션입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
 msgid "GDNative / C++"
@@ -208,8 +208,7 @@ msgid ""
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
 "마지막으로 3.0 출시에 가장 빛나는 추가 요소입니다: GDNative는 Godot를 다시 컴"
-"파일 하지 않아도 (심지어 재시작을 하지 않아도) C++에서 스크립트할 수 있습니"
-"다."
+"파일하지 않아도 (심지어 재시작하지 않아도) C++로 스크립팅할 수 있게 해줍니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -217,33 +216,32 @@ msgid ""
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
-"모든 C++버전을 사용할 수 있고, 내부 C API Bridge를 사용해서 생성한 공유 라이"
-"브러리의 컴파일러 브랜드와 버전을 완벽하게 혼합할 수 있습니다."
+"내부 C API Bridge를 사용한 덕분에 모든 C++버전을 사용할 수 있고, 생성된 공유 "
+"라이브러리의 컴파일러 브랜드와 버전을 완벽하게 혼합할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
 "Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
-"이 언어는 성능 분야에는 최고이지만 게임 전체에 사용할 필요는 없습니다. 다른 "
-"부분은 GDScript나 VisualScript을 통해 다른 부분을 작성할 수 있기 때문이죠. 그"
-"러나 이 API는 명확하고 사용하기 쉽습니다. 이 API의 대부분은 Godot의 실제 C++ "
-"API와 유사합니다."
+"이 언어는 성능 분야에는 최고이지만 게임 전체에 사용할 필요는 없습니다. "
+"GDScript나 VisualScript을 통해 다른 부분을 작성할 수 있기 때문이죠. 그러나 "
+"이 API는 명확하고 사용하기 쉽습니다. 이 API의 대부분은 Godot의 실제 C++ API"
+"와 유사합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
-"더 많은 언어는 GDNative 인터페이스를 통해 사용할 수 있지만 이 인터페이스에 대"
-"한 공식적인 지원은 없습니다."
+"더 많은 언어를 GDNative 인터페이스를 통해 사용할 수 있지만 그에 대한 공식적"
+"인 지원은 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
-msgstr "씬 스크립트하기"
+msgstr "씬 스크립팅하기"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:92
 msgid ""
@@ -251,9 +249,8 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
-"본 튜토리얼의 나머지 부분에서는 Button과 Label로 이루어진 GUI 씬을 설정합니"
-"다. 여기서 Button을 누르면 Label이 업데이트됩니다. 이를 통해 다음을 설명합니"
-"다:"
+"본 튜토리얼의 나머지 부분에서는 Button을 누르면 Label이 업데이트되는 Button"
+"과 Label로 이루어진 GUI 씬을 만듭니다. 이를 통해 다음을 설명합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
@@ -268,16 +265,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "씬의 다른 노드에 접근할 수 있는 스크립트를 작성하기."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"계속하기 전에 :ref:`GDScript<doc_gdscript>` 참조를 반드시 읽어 보기 바랍니"
-"다. 이 언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 몇 "
-"분 정도 밖에 걸리지 않습니다."
+"계속하기 전에 :ref:`GDScript<doc_gdscript>` 참고 문서를 반드시 훑어 보고 북마"
+"크하시기 바랍니다. 이 언어는 간단하게 설계되었고, 참고 문서가 짧기 때문에 개"
+"념을 파악하는 데 몇 분 정도밖에 걸리지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -289,14 +285,16 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"이전 튜토리얼에서 여전히 \"instancing\" 프로젝트가 열려 있는 경우 해당 프로젝"
+"트를 종료(프로젝트(Project) -> 프로젝트 목록으로 돌아가기(Quit to Project "
+"List))하고 새 프로젝트를 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"씬 탭에서 \"자식 노드 추가하기(Add Child Node)\" 대화 상자를 사용해서 (혹은 "
+"씬 탭에서 \"자손 노드 추가하기(Add Child Node)\" 대화 상자를 사용해서 (혹은 "
 "``Ctrl+A`` 키로) 다음 노드로 이루어진 계층 구조를 만듭니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:112
@@ -309,7 +307,7 @@ msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
-msgstr "버튼"
+msgstr "Button"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "The scene tree should look like this:"
@@ -325,7 +323,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:126
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr "마지막으로 ``sayhello.tscn``\\ 와 같은 이름으로 씬을 저장합니다."
+msgstr "마지막으로 ``sayhello.tscn``\\ 과 같은 이름으로 씬을 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:131
 msgid "Adding a script"
@@ -377,7 +375,7 @@ msgid ""
 "script property under Inspector:"
 msgstr ""
 "이제 스크립트가 만들어지고 노드에 추가됩니다. 스크립트가 추가된 것은 노드 옆"
-"의 \"스크립트 열기(Open script)\" 아이콘으로 확인할 수 있습니다. 인스펙터"
+"의 \"스크립트 열기(Open Script)\" 아이콘으로 확인할 수 있습니다. 인스펙터"
 "(Inspector) 아래의 Script 속성에서도 확인할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:158
@@ -395,9 +393,9 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"안에 많은 내용이 있지는 않습니다. ``_ready()`` 함수는 노드와 노드의 모든 자식"
-"이 활성 씬으로 들어갈 때 호출됩니다. **참고:** ``_ready()`` 는 생성자가 아닙"
-"니다. 생성자는 ``_init()``\\ 입니다."
+"안에 많은 내용이 있지는 않습니다. ``_ready()`` 함수는 노드와 노드의 모든 자손"
+"이 활성 씬으로 들어갈 때 호출됩니다. **참고:** ``_ready()``\\ 는 생성자가 아"
+"닙니다. 생성자는 ``_init()``\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"
@@ -411,9 +409,9 @@ msgid ""
 "words, the script inherits the functions provided by that node."
 msgstr ""
 "스크립트는 노드에 행위를 추가합니다. 스크립트는 노드가 작동하는 방식 말고도, "
-"자식, 부모, 형제 등과 같은 다른 노드와 상호 작용하는 방식을 제어합니다. 스크"
-"립트의 지역 범위는 노드입니다. 다시 말해, 스크립트는 노드가 제공하는 함수에 "
-"속합니다."
+"자손, 부모, 형제자매(동기) 등과 같은 다른 노드와 상호 작용하는 방식을 제어합"
+"니다. 스크립트의 지역 범위는 노드입니다. 다시 말해, 스크립트는 노드가 제공하"
+"는 함수에 속합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid "Handling a signal"
@@ -428,8 +426,8 @@ msgid ""
 msgstr ""
 "시그널(Signal)은 특정 행동을 할 때 \"방출(emit)\"합니다. 그리고 시그널은 스크"
 "립트 인스턴스의 모든 함수에 연결될 수 있습니다. 시그널은 대부분 GUI 노드에서 "
-"사용됩니다. 하지만 다른 노드에도 시그널이 있고, 스크립트에서 맞춤 시그널을 정"
-"의할 수도 있습니다."
+"사용됩니다. 하지만 다른 노드에도 시그널이 있고, 스크립트에서 사용자 정의 시그"
+"널을 정의할 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:188
 msgid ""
@@ -438,10 +436,10 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"이 단계에서, \"pressed\" 시그널을 맞춤 함수에 연결할 것입니다. 먼저 연결을 형"
-"성하고, 그런 다음 맞춤 함수를 정의합니다. Godot에서는 연결을 만드는 두 가지 "
-"방법을 제공합니다: 편집기의 시각적 인터페이스를 통해 연결하거나, 코드를 통해 "
-"연결합니다."
+"이 단계에서, \"pressed\" 시그널을 사용자 정의 함수에 연결할 것입니다. 먼저 연"
+"결을 형성하고, 그런 다음 사용자 정의 함수를 정의합니다. Godot에서는 연결을 만"
+"드는 두 가지 방법을 제공합니다: 편집기의 시각적 인터페이스를 통해 연결하거"
+"나, 코드를 통해 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:193
 msgid ""
@@ -449,8 +447,8 @@ msgid ""
 "let's cover how the editor interface works for future reference."
 msgstr ""
 "이 튜토리얼 시리즈의 나머지에서는 코드 메서드를 사용하겠습니다. 그러나 나중"
-"에 이것을 보고 참조할 수 있도록 어떻게 편집기 인터페이스가 작동하는지 알아봅"
-"시다."
+"에 이것을 보고 참조할 수 있도록 어떻게 편집기 인터페이스가 작동하는지부터 알"
+"아봅시다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:196
 msgid ""
@@ -466,8 +464,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"\"BaseButton\" 아래에 있는 \"pressed()\"를 고르고 오른쪽 아래 \"연결하기..."
-"(Connect...)\" 버튼을 누릅니다. 연결 만들기 대화 상자가 열립니다."
+"\"BaseButton\" 아래에 있는 \"pressed()\"를 선택하고 오른쪽 아래 \"연결하기..."
+"(Connect...)\" 버튼을 누르면 연결 만들기 대화 상자가 열립니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:206
 msgid ""
@@ -484,7 +482,7 @@ msgid ""
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
 "대화 상자 하단에서 만들 메서드 이름을 보여줍니다. 기본적으로 메서드 이름은 방"
-"출하는 노드의 이름 (지금의 경우는 \"Button\")을 포함하고 있습니다. 즉, "
+"출하는 노드의 이름(지금의 경우는 \"Button\")을 포함하고 있습니다. 즉, "
 "``_on_[방출하는노드]_[시그널이름]``\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
@@ -503,10 +501,10 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"이 튜토리얼을 달성하기 위해, 우리는 Godot 프로그래머들이 가장 잘 사용하는 함"
-"수를 소개하겠습니다: :ref:`Node.get_node() <class_Node_method_get_node>`. 이 "
-"함수는 스크립트가 있는 노드 기준 상대적인 경로를 사용해서 씬에 있는 노드를 가"
-"져옵니다."
+"이를 위해, Godot 프로그래머들이 가장 많이 사용하는 함수: :ref:`Node."
+"get_node() <class_Node_method_get_node>`\\ 를 소개하겠습니다. 이 함수는 씬의 "
+"어느 곳에서나 스크립트를 포함한 노드와 관계 있는 노드들을 가져오기 위한 경로"
+"를 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
 msgid ""
@@ -530,13 +528,12 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "다음으로 버튼이 눌릴 때 호출하는 함수를 작성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:257
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"마지막으로 버튼의 \"pressed\" 시그널을 ``_ready()``\\ 에 연결하도록 :ref:"
-"`Object.connect() <class_Object_method_connect>`\\ 를 사용합니다."
+"마지막으로 :ref:`Object.connect() <class_Object_method_connect>`\\ 를 사용해"
+"서 버튼의 \"pressed\" 시그널을 ``_on_Button_pressed()``\\ 에 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:273
 msgid "The final script should look like this:"
@@ -559,23 +556,22 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 "이 튜토리얼에 관한 일반적인 오해로 ``get_node(path)``\\ 가 작동하는 방식이 있"
-"습니다. 주어진 노드는 ``get_node(path)``\\ 가 바로 아래의 자식을 찾습니다. "
-"위 코드에서 Button은 Panel의 자식이라는 것이죠. 만일 버튼이 Panel이 아니라 "
-"Label의 자식이었다면, 나오는 코드는 다음과 같을 것입니다:"
+"습니다. 주어진 노드는 ``get_node(path)``\\ 는 바로 아래의 자손을 찾습니다. "
+"위 코드에서 Button은 Panel의 자손이라는 것이죠. 만일 버튼이 Panel이 아니라 "
+"Label의 자손이었다면, 나오는 코드는 다음과 같을 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:332
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr "또한 노드는 이름으로 참조됩니다. 유형이 아닙니다."
+msgstr "또한 노드는 타입이 아닌 이름으로 참조된다는 걸 기억하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:336
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"연결 대화 상자의 오른쪽 패널은 특정 값을 연결된 함수의 매개변수에 묶기 위한 "
-"것입니다. 다른 유형의 값을 추가하거나 제거할 수 있습니다."
+"연결 대화상자의 'advanced' 패널은 특정 값을 연결된 함수의 매개변수에 묶기 위"
+"한 것입니다. 서로 다른 유형의 값을 추가하거나 제거할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid ""

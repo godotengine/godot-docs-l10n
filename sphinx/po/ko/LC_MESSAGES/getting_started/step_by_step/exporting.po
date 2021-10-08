@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,10 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
-"이제 당신은 작업한 게임을 갖고 있으니, 당신의 성공을 남과 나누고 싶을 겁니"
-"다. 하지만, 그렇다고 친구에게 Godot를 다운로드하고 프로젝트를 열라고 요청하"
-"는 것은 실용적이지 못합니다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환"
-"해서 누구나 열 수 있도록 *내보내기* 가 가능합니다."
+"이제 게임이 작동하므로, 성공을 다른 사람들과 공유하고 싶을 겁니다. 그러나, 친"
+"구에게 Godot를 다운로드하고 프로젝트를 열라고 요청하는 것은 실용적이지 못합니"
+"다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환해서 누구나 열 수 있도록 "
+"*내보내기*\\ 가 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 #, fuzzy
@@ -125,9 +125,9 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"다음으로, 우리는 입력 메소드를 변경하기 위해 ``Player.gd`` 스크립트를 수정해"
-"야 합니다. 키 입력을 지우고 플레이어가 터치 (나 클릭) 이벤트로 설정된 \"타깃"
-"\"을 향해 움직이도록 합니다."
+"다음으로, 우리는 입력 메서드를 변경하기 위해 ``Player.gd`` 스크립트를 수정해"
+"야 합니다. 키 입력을 지우고 플레이어가 터치 (또는 클릭) 이벤트로 설정된 \"타"
+"깃\"을 향해 움직이도록 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:54
 msgid ""
@@ -279,26 +279,24 @@ msgid "Click **Save** and the engine will build the export files."
 msgstr "\"저장\"을 누르면 엔진이 내보내기 파일을 만들겁니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:314
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export from a macOS computer, you'll end up "
 "with a ``.dmg`` file, while using Linux or Windows produces a ``.zip``. In "
 "either case, the compressed file contains a macOS ``.app`` that you can "
 "double-click and run."
 msgstr ""
-"macOS 컴퓨터에서 작업한다면, macOS로 내보낼 때, 파일을 `.dmg` 파일로 만들 것"
-"이고, 반면에 Linux나 Windows는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
-"파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
+"macOS 컴퓨터에서, macOS로 내보낸다면, `.dmg` 파일이 생성될 것이고, Linux나 "
+"Windows는 `.zip` 파일을 생성합니다. 어떤 경우든지, 압축된 파일은 더블 클릭해"
+"서 실행할 수 있는 macOS의 ``.app``\\ 파일을 포함하고 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
-#, fuzzy
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
-"Windows에서, 당신이 내보낸 실행 파일이 기존과 다른 아이콘을 갖도록 하고 싶다"
-"면, 수동으로 교체해야합니다. 여기를 참고하세요: :ref:"
+"Windows에서, 당신이 내보낸 실행 파일의 아이콘을 기본으로 설정된 것과 다르게 "
+"하고 싶다면, 수동으로 교체해야 합니다. 여기를 참고하세요: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:326
@@ -414,13 +412,12 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:386
-#, fuzzy
 msgid ""
 "To build your game for iOS, you must have a computer running macOS with "
 "Xcode installed."
 msgstr ""
-"iOS에 게임이 돌아가게 하고 싶다면, 당신은 macOS와 Xcode가 실행되는 컴퓨터를 "
-"갖고 있어야 합니다."
+"iOS용 게임을 빌드하고 싶다면, Xcode가 설치된 macOS가 실행되는 컴퓨터가 필요합"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
 #, fuzzy

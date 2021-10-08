@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,8 +253,9 @@ msgstr ""
 "但是, 发出信号时仍然可以发出任意数量的参数；所以由你来决定是否发出正确的值."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
+#, fuzzy
 msgid ""
-"To pass values, add them as the second argument to the ``emit_signal`` "
+"To pass values, add them as subsequent arguments to the ``emit_signal`` "
 "function:"
 msgstr "要传递数值, 请将数值作为第二个参数添加到 ``emit_signal`` 函数中:"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,7 +263,6 @@ msgid "Choosing a node tree structure"
 msgstr "选择一个节点树结构"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:254
-#, fuzzy
 msgid ""
 "So, a developer starts work on a game only to stop at the vast possibilities "
 "before them. They might know what they want to do, what systems they want to "
@@ -272,10 +271,10 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
-"因此, 一个开发者开始开发一款游戏, 却在眼前的巨大可能性面前止步不前. 他们可能"
-"知道自己想做什么, 他们想要什么样的系统, 但是把它们都放在 *哪里* 呢？好吧, 如"
-"何创造他们的游戏总是取决于他们自己. 可以用多种方法构造节点树. 但是, 对于那些"
-"不确定的人来说, 这篇有用的指南可以为他们提供一个良好结构的示例来开始."
+"从前有个开发者开始开发游戏，却因为海量的可能性而犹豫不前。他可能知道自己想做"
+"什么、想要什么样的系统，但是应该把这些东西落实在 *哪里* 呢？好吧，自己做的游"
+"戏当然自己说了算。虽然节点树的构造方法有无数种，但对于没把握的人而言，这份指"
+"南可以展示一个比较像样的结构作为基础。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
 msgid ""
@@ -375,16 +374,15 @@ msgstr ""
 "节点手动添加. 否则,GUI节点也会在场景转换时自行删除."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
-#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
 "on the reasons, please see the :ref:`Autoloads versus regular nodes "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
-"如果人们具有修改其他系统数据的系统, 则应将其定义为他们自己的脚本或场景, 而不"
-"是自动加载. 有关原因的更多信息, 请参见 :ref:`自动加载VS 内部节点 "
-"<doc_autoloads_versus_internal_nodes>` 文档."
+"如果一个系统需要修改另一个系统的数据，那么就应该把它们分别定义成单独的脚本或"
+"者场景，不应该使用自动加载。其原因请参考文档 :ref:`自动加载与普通节点 "
+"<doc_autoloads_versus_internal_nodes>` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:312
 msgid ""

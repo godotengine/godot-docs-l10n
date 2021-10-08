@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,11 +162,19 @@ msgstr ""
 "native/releases>`__ finden Sie im `webrtc-native plugin repository <https://"
 "github.com/godotengine/webrtc-native>`__."
 
-#: ../../docs/tutorials/networking/webrtc.rst:41
+#: ../../docs/tutorials/networking/webrtc.rst:42
+msgid ""
+"When exporting to Android, make sure to enable the [code]INTERNET[/code] "
+"permission in the Android export preset before exporting the project or "
+"using one-click deploy. Otherwise, network communication of any kind will be "
+"blocked by Android."
+msgstr ""
+
+#: ../../docs/tutorials/networking/webrtc.rst:48
 msgid "Minimal connection example"
 msgstr "minimales Verbindungs Beispiel"
 
-#: ../../docs/tutorials/networking/webrtc.rst:43
+#: ../../docs/tutorials/networking/webrtc.rst:50
 msgid ""
 "This example will show you how to create a WebRTC connection between two "
 "peers in the same application. This is not very useful in real life, but "
@@ -177,15 +185,15 @@ msgstr ""
 "sehr nützlich, gibt Ihnen jedoch einen guten Überblick über den Aufbau einer "
 "WebRTC-Verbindung."
 
-#: ../../docs/tutorials/networking/webrtc.rst:91
+#: ../../docs/tutorials/networking/webrtc.rst:98
 msgid "This will print:"
 msgstr "Dies zeigt:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:99
+#: ../../docs/tutorials/networking/webrtc.rst:106
 msgid "Local signaling example"
 msgstr "lokales Signalisierungs-Beispiel"
 
-#: ../../docs/tutorials/networking/webrtc.rst:101
+#: ../../docs/tutorials/networking/webrtc.rst:108
 msgid ""
 "This example expands on the previous one, separating the peers in two "
 "different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as "
@@ -195,11 +203,11 @@ msgstr ""
 "verschiedenen Szenen und verwendet ein :ref:`Singleton "
 "<doc_singletons_autoload>` als Signalisierungsserver."
 
-#: ../../docs/tutorials/networking/webrtc.rst:141
+#: ../../docs/tutorials/networking/webrtc.rst:148
 msgid "And now for the local signaling server:"
 msgstr "Kommen wir jetzt zum lokalen Signalisierungsserver:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:143
+#: ../../docs/tutorials/networking/webrtc.rst:150
 msgid ""
 "This local signaling server is supposed to be used as a :ref:`singleton "
 "<doc_singletons_autoload>` to connect two peers in the same scene."
@@ -208,19 +216,19 @@ msgstr ""
 "<doc_singletons_autoload>` verwendet werden um zwei Peers in derselben Szene "
 "zu verbinden."
 
-#: ../../docs/tutorials/networking/webrtc.rst:177
+#: ../../docs/tutorials/networking/webrtc.rst:184
 msgid "Then you can use it like this:"
 msgstr "Nun kann es wie folgt genutzt werden:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:198
+#: ../../docs/tutorials/networking/webrtc.rst:205
 msgid "This will print something similar to this:"
 msgstr "Dies wird etwas ähnliches wie dies hier ausgeben:"
 
-#: ../../docs/tutorials/networking/webrtc.rst:206
+#: ../../docs/tutorials/networking/webrtc.rst:213
 msgid "Remote signaling with WebSocket"
 msgstr "Remote-Signalisierung mit WebSocket"
 
-#: ../../docs/tutorials/networking/webrtc.rst:208
+#: ../../docs/tutorials/networking/webrtc.rst:215
 msgid ""
 "A more advanced demo using WebSocket for signaling peers and :ref:"
 "`WebRTCMultiplayer <class_WebRTCMultiplayer>` is available in the `godot "

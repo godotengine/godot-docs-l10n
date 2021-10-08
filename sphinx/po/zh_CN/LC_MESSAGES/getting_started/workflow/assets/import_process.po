@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 "做, 就无法指定如何转换和更改纹理, 音频文件, 场景等的导入标志."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -44,9 +43,10 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a ``res://.import`` folder."
 msgstr ""
-"在Godot 3.0+中, 我们使用一种更现代的导入方法: 只需将素材(图像文件, 场景, 音频"
-"文件, 字体等)直接拖到项目文件夹中(使用系统文件资源管理器手动复制它们).Godot将"
-"自动在内部导入这些文件, 并将导入的素材隐藏在 ``res://.import`` 文件夹中."
+"在 Godot 3.0+ 中，我们使用一种更现代的导入方法：只需将素材（图像文件、场景、"
+"音频文件、字体等）直接拖到项目文件夹中（使用系统文件资源管理器手动复制）。"
+"Godot 将自动在内部导入这些文件，并将导入的素材隐藏在 ``res://.import`` 文件夹"
+"中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -143,20 +143,18 @@ msgid "Files generated"
 msgstr "生成的文件"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
-#, fuzzy
 msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"导入将添加一个额外的 <asset>.import文件, 其中包含导入配置. 确保将这些提交到您"
-"的版本控制系统！"
+"导入时会生成额外的 ``<素材>.import`` 文件，包含了导入配置。记得把它们加入你的"
+"版本控制系统！"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
-#, fuzzy
 msgid ""
 "Additionally, extra assets will be preset in the hidden ``res://.import`` "
 "folder:"
-msgstr "此外, 额外的素材将预设在隐藏的 ``res://.import`` 文件夹中:"
+msgstr "此外，额外的素材会被放在隐藏的 ``res://.import`` 文件夹中："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""

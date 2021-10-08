@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Viz :ref:`doc_using_the_web_editor`, kde jsou uvedena upozornění specifická "
+"pro verzi HTML5 editoru Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -119,6 +121,7 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Popisky nástrojů editoru v docích Inspektor a Uzel při zobrazení blikají."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -127,6 +130,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Jedná se o `známý problém <https://github.com/godotengine/godot/"
+"issues/32990>`__ způsobený aplikací třetí strany Stardock Fences v systému "
+"Windows. Jediným známým řešením je vypnutí aplikace Stardock Fences při "
+"používání Godotu."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -159,24 +166,33 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"V levém horním rohu okna správce projektu a editoru se zobrazí text, "
+"například \"NO DC\"."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Je to způsobeno tím, že grafický ovladač NVIDIA vkládá překryvnou vrstvu pro "
+"zobrazení informací."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Chcete-li toto překrytí v systému Windows zakázat, obnovte nastavení "
+"grafického ovladače na výchozí hodnoty v ovládacím panelu NVIDIA."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Chcete-li toto překrytí v Linuxu zakázat, otevřete ``nvidia-settings``, "
+"přejděte na **X Screen 0 > OpenGL Settings** a zrušte zaškrtnutí **Enable "
+"Graphics API Visual Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."

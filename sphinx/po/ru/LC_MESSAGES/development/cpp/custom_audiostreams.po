@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:4
 msgid "Custom AudioStreams"
-msgstr ""
+msgstr "Пользовательские аудиопотоки"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "AudioStreamPlayer binds onto an AudioStream to emit PCM data into an "
 "AudioServer which manages audio drivers."
 msgstr ""
+"AudioStream - это базовый класс всех объектов, передающих звук. "
+"AudioStreamPlayer привязывается к AudioStream для передачи PCM-данных в "
+"AudioServer, который управляет аудиодрайверами."
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:13
 msgid ""
@@ -39,12 +42,20 @@ msgid ""
 "and exposes itself to GDScript. AudioStream references its own internal "
 "custom AudioStreamPlayback which translates AudioStream into PCM data."
 msgstr ""
+"Все аудиоресурсы требуют наличия двух классов, основанных на аудио: "
+"AudioStream и AudioStreamPlayback. Как контейнер данных, AudioStream "
+"содержит ресурс и открывает себя для GDScript. AudioStream ссылается на свой "
+"собственный внутренний пользовательский AudioStreamPlayback, который "
+"переводит AudioStream в данные PCM."
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:19
 msgid ""
 "This guide assumes the reader knows how to create C++ modules. If not, refer "
 "to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
+"Это руководство предполагает, что читатель знает, как создавать модули на C+"
+"+. Если это не так, обратитесь к этому руководству :ref:"
+"`doc_custom_modules_in_c++`."
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:23
 #: ../../docs/development/cpp/custom_audiostreams.rst:117
@@ -73,7 +84,7 @@ msgstr "Для чего это?"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
-msgstr ""
+msgstr "Привязка внешних библиотек (таких как Wwise, FMOD и т.д.)."
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:32
 msgid "Adding custom audio queues"
@@ -81,7 +92,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:33
 msgid "Adding support for more audio formats"
-msgstr ""
+msgstr "Добавление поддержки большего количества аудиоформатов"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:36
 msgid "Create an AudioStream"

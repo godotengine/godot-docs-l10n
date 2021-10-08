@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"그럼 어떻게 셰프가 레시피를 만들까요? 레시피는 두 가지 과정으로 나누어 집니"
-"다: 첫 째는 재료, 둘 째는 조리 방법입니다. 이 과정으로 누구나 레시피를 따라"
-"서 훌륭한 음식을 맛 볼 수 있을 겁니다."
+"그럼 셰프는 어떻게 레시피를 만들까요? 레시피는 두 가지 과정으로 나뉩니다: 첫"
+"째는 재료, 둘째는 조리 방법입니다. 이 과정으로 누구나 레시피를 따라서 훌륭한 "
+"음식을 맛볼 수 있을 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -76,9 +76,9 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
-"일단 기초로 한번 시작해봅시다. 노드는 게임을 만들기 위한 기초 건축 벽돌입니"
-"다. 앞서 말했듯이 노드는 다양한 특수 기능을 갖고 있습니다. 하지만 이 모든 노"
-"드들은 이러한 성질을 갖습니다:"
+"일단 기초부터 시작해봅시다. 노드는 게임을 만들기 위한 기본적인 건축 벽돌입니"
+"다. 위에서 언급했듯이, 노드는 다양한 특수 기능을 수행할 수 있습니다. 모든 노"
+"드에는 다음과 같은 속성이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
@@ -86,7 +86,7 @@ msgstr "이름이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr "편집할 수 있는 속성을 갖고 있습니다."
+msgstr "편집할 수 있는 속성이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
@@ -94,18 +94,19 @@ msgstr "각 프레임을 처리하기 위한 콜백을 받을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr "(더 많은 기능을 갖기 위해) 확장될 수 있습니다."
+msgstr "(더 많은 기능을 포함하기 위해) 확장될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr "다른 노드의 자식으로 추가될 수 있습니다."
+msgstr "다른 노드의 자손으로 추가될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
+#, fuzzy
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
-"마지막이 중요합니다. 노드는 다른 노드를 자식으로 가질 수 있습니다. 이런 식으"
+"마지막이 중요합니다. 노드는 다른 노드를 자손으로 가질 수 있습니다. 이런 식으"
 "로 배열된다면 노드들은 **트리(Tree)**\\ 가 됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
@@ -115,8 +116,8 @@ msgid ""
 "combining them allows for the creation of more complex functions."
 msgstr ""
 "Godot에서 이런 방식으로 노드들을 배열하는 것은 프로젝트를 조직화하는데 강력"
-"한 도구가 됩니다. 각 노드들이 다른 기능을 가지고 있기에, 그들을 묶는 것으로 "
-"훨씬 복잡한 기능을 구현할 수 있습니다."
+"한 도구가 됩니다. 각 노드가 다른 기능이 있기에, 그들을 묶는 것으로 훨씬 복잡"
+"한 기능을 구현할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -124,7 +125,7 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
-"와닿지 않더라도 걱정하지 마세요. 앞으로 몇 몇 섹션에서 계속 노드에 대해 알아"
+"와닿지 않더라도 걱정하지 마세요. 앞으로 몇몇 섹션에서 계속 노드에 대해 알아"
 "볼 것입니다. 여기서 기억할 점은 노드가 있고 이런 방식으로 서로 배열될 수 있"
 "는 점입니다."
 
@@ -149,7 +150,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr "항상 하나의 루트 노드를 갖습니다."
+msgstr "항상 하나의 루트 노드만 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
@@ -157,7 +158,7 @@ msgstr "디스크에 저장하고 다시 불러올 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "*인스턴스(Instance)*\\ 될수 있습니다 (더 자세한 설명은 나중에)."
+msgstr "*인스턴스(Instance)*\\ 화 될 수 있습니다(더 자세한 설명은 나중에)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -173,13 +174,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
-"기본적으로 Godot 편집기는 **씬 편집기**\\ 입니다. 사용자 인터페이스말고도 2D"
-"와 3D 씬을 편집하기 위한 도구가 많이 있지만, 편집기는 씬을 편집하는 것과 씬"
-"을 구성하는 노드들이란 개념으로 있습니다."
+"기본적으로 Godot 에디터는 **씬 에디터**\\ 입니다. 유저 인터페이스 말고도 2D"
+"와 3D 씬을 편집하기 위한 도구가 많이 있지만, 에디터는 씬과 씬을 구성하는 노드"
+"들을 편집하는 개념을 기반으로 합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Editor"
-msgstr "편집기"
+msgstr "에디터"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -207,10 +208,10 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
-"작업을 하려면 Label 노드를 추가해야 합니다. 씬 독의 왼쪽 위에 있는 \"자식 노"
+"작업을 하려면 Label 노드를 추가해야 합니다. 씬 독의 왼쪽 위에 있는 \"자손 노"
 "드 추가하기(Add Child Node\" 버튼을 클릭하세요 (더하기 아이콘처럼 생겼습니"
-"다). 이 버튼은 씬에 새 노드를 추가하는 기본 방법입니다. 그리고 자식을 추가하"
-"면 항상 현재 선택된 노드의 자식으로 노드가 추가됩니다 (비어있는 씬의 경우 노"
+"다). 이 버튼은 씬에 새 노드를 추가하는 기본 방법입니다. 그리고 자손을 추가하"
+"면 항상 현재 선택된 노드의 자손으로 노드가 추가됩니다 (비어있는 씬의 경우 노"
 "드는 \"루트\" 노드로 추가됩니다)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
@@ -225,9 +226,9 @@ msgid ""
 msgstr ""
 "(루트 노드가 없는) 비어있는 씬에서, 씬 독은 씬에 루트 노드를 빠르게 추가하는 "
 "여러 설정을 보여줍니다. \"2D 씬(2D Scene)\"은 Node2D 노드를, \"3D 씬(3D "
-"Scene)\"은 Spatial 노드를, \"사용자 인터페이스(User Interface)\"는 Control 노"
-"드를 추가합니다. 그리고 \"맞춤 노드(Custom Node)\"는 선택한 아무 노드든지 추"
-"가합니다 (즉, \"자식 노드 추가하가(Add Child Node)\" 버튼을 누른 것과 같습니"
+"Scene)\"은 Spatial 노드를, \"유저 인터페이스(User Interface)\"는 Control 노드"
+"를 추가합니다. 그리고 \"맞춤 노드(Custom Node)\"는 선택한 아무 노드든지 추가"
+"합니다 (즉, \"자손 노드 추가하기(Add Child Node)\" 버튼을 누른 것과 같습니"
 "다). 또한 자주 쓰는 노드를 창에 표시하려면 별 모양 아이콘을 누르면 됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
@@ -250,14 +251,14 @@ msgid ""
 msgstr ""
 "그러면 이 씬에 Label 노드를 추가하려면 맞춤 노드(Custom Node)를 클릭하거나 위"
 "의 노드 추가하기(Add Node) 버튼을 클릭하세요. 비어있는 씬이 아니라면 노드 추"
-"가하기 버튼으로 선택한 노드의 자식 노드를 추가할 수 있습니다."
+"가하기 버튼으로 선택한 노드의 자손 노드를 추가할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
-"그러면 노드 만들기(Create Node) 대화 상자가 열립니다. 만들 수 있는 노드가 길"
+"그러면 Node 만들기(Create Node) 대화 상자가 열립니다. 만들 수 있는 노드가 길"
 "게 나열되어 있죠:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
@@ -265,7 +266,8 @@ msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"거기서 \"Label\" 노드를 먼저 선택하세요. 검색이 가장 빠른 방법일 것입니다:"
+"거기서 \"Label\" 노드를 먼저 선택하세요. 검색하는게 가장 빠른 방법일 것입니"
+"다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
@@ -280,16 +282,15 @@ msgid ""
 "viewport."
 msgstr ""
 "먼저 (Label이 2D 노드 유형이기 때문에) 씬이 2D 편집기로 바뀝니다. 그리고 "
-"Label은 선택한 상태로 뷰포트의 왼쪽 위에 나타납니다."
+"Label은 선택된 상태로 뷰포트의 왼쪽 위에 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
-#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"노드는 씬 트리 편집기에 나타납니다 (오른쪽 위 상자), 그리고 Label 속성은 인스"
-"펙터(Inspecter)에 나타납니다 (오른쪽 아래 상자)."
+"노드는 씬(Scene) 독의 씬 트리 편집기에 나타나고, Label 속성은 인스펙터"
+"(Inspecter)에 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -304,8 +305,8 @@ msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
-"좋아요. 씬을 실행할 모든 준비가 되었습니다! 상단 메뉴에서 버튼 중 씬 실행"
-"(PLAY SCENE) 버튼을 누르세요 (혹은 F6 키를 누르세요):"
+"좋아요. 씬을 실행할 모든 준비가 되었습니다! 상단 메뉴에서 씬 실행(PLAY "
+"SCENE) 버튼을 누르세요(혹은 :kbd:`F6` 키를 누르세요):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -330,11 +331,11 @@ msgid ""
 "are from inside the game."
 msgstr ""
 "그러면 재미난 일이 일어납니다. 파일 대화 상자는 특별하기 때문에, 프로젝트 안"
-"에만 저장할 수 있습니다. 프로젝트의 루트는 \"res://\"로 \"리소스 경로"
+"에만 저장할 수 있습니다. 프로젝트의 루트는 ``res://``\\ 로 \"리소스 경로"
 "(resource path)\"를 의미합니다. 즉, 파일은 프로젝트 안에만 저장할 수 있다는 "
-"것입니다. 나중에 Godot에서 파일을 관리할 때 \"res://\"가 리소스 경로라는 사실"
-"을 기억하세요. 이것만 안다면 플랫폼의 종류나 설치 경로와 관계없이 게임 내에"
-"서 리소스 파일을 찾을 수 있습니다."
+"것입니다. 나중에 Godot에서 파일을 관리할 때 ``res://``\\ 가 리소스 경로라는 "
+"사실을 기억하세요. 이것만 안다면 플랫폼의 종류나 설치 경로와 관계없이 게임 내"
+"에서 리소스 파일을 찾을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
@@ -354,10 +355,9 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
-"데모가 즉시 작동하지 않을 수 있습니다. 모니터 중 하나가 hiDPI 화면으로 설정"
-"한 경우, **프로젝트(Project) → 프로젝트 설정(Project Settings) → Display → "
-"Window**\\ 로 가세요. 그런 다음 **Dpi** 아래에 있는 **Allow Hidpi** 설정을 켜"
-"세요."
+"데모가 즉시 작동하지 않고 모니터 중 적어도 하나가 hiDPI 화면인 경우, **프로젝"
+"트(Project) → 프로젝트 설정(Project Settings) → Display → Window**\\ 로 가세"
+"요. 그런 다음 **Dpi** 아래에 있는 **Allow Hidpi** 설정을 켜세요."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
@@ -371,8 +371,9 @@ msgid ""
 "scene that will be loaded any time the project is run."
 msgstr ""
 "좋아요. 프로젝트를 설정할 시간입니다. 지금 할 수 있는 일은 현재 씬을 실행하"
-"는 것 뿐입니다. 하지만 프로젝트는 여러 개의 씬을 갖기 때문에, 어느 한 씬을 메"
-"인 씬으로 설정해야 합니다. 프로젝트를 실행하면 언제나 불러오는 씬이죠."
+"는 것 뿐입니다. 하지만 프로젝트에는 여러 개의 씬이 있기 때문에, 어느 한 씬을 "
+"메인 씬으로 설정해야 합니다. 메인 씬은 프로젝트를 실행하면 언제나 불러오는 씬"
+"이죠."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
@@ -399,7 +400,7 @@ msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"창을 열었다면 메인 씬을 선택합시다. 'Application/Run/Main Scene' 속성으로 가"
+"창을 열었다면 메인 씬을 선택합시다. `Application/Run/Main Scene` 속성으로 가"
 "서 'hello.tscn'을 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
@@ -407,8 +408,8 @@ msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
-"이렇게 바꾸면 이제 어떤 씬을 편집하는 중이든 간에, 기본 실행(Play) 버튼을 누"
-"르면 (혹은 F5 키를 누르면) 설정한 씬이 실행됩니다."
+"이렇게 바꾸면 이제 어떤 씬을 편집하는 중이든 간에, 기본 실행(Play) 버튼(또"
+"는 :kbd:`F5` )을 누르면 설정한 씬이 실행됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""

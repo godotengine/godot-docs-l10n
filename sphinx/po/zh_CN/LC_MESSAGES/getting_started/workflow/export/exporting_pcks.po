@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,19 +212,18 @@ msgid "Opening PCK files at runtime"
 msgstr "在运行时打开 ``PCK`` 文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
+#, fuzzy
 msgid ""
-"To import a PCK file, one uses a one-liner. Keep in mind, there is no error "
-"or exception if the import fails. Instead, one might have to create some "
-"validation code as a layer on top. The following example expects a “mod.pck” "
-"file in the directory of the games executable. The PCK file contains a "
-"“mod_scene.tscn” test scene in its root."
+"To import a PCK file, one uses the ProjectSettings singleton. The following "
+"example expects a “mod.pck” file in the directory of the games executable. "
+"The PCK file contains a “mod_scene.tscn” test scene in its root."
 msgstr ""
 "要导入PCK文件, 可以使用单行程序. 请记住, 如果导入失败, 不会出现错误或异常. 相"
 "反, 可能必须在顶部创建一些验证代码作为一层. 以下示例在游戏可执行文件的目录中"
 "需要一个 ``mod.pck`` 文件.PCK文件在其根目录中包含 ``mod_scene.tscn`` 测试场"
 "景."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
 msgid ""
 "By default, if you import a file with the same file path/name as one you "
 "already have in your project, the imported one will replace it. This is "
@@ -238,7 +237,7 @@ msgstr ""
 "易解决). 但是, 这也是为自己的游戏创建补丁的一种方式, 这种PCK文件可以修复先前"
 "加载的PCK的内容."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:129
 msgid ""
 "To opt out of this behavior, pass ``false`` as the second argument to :ref:"
 "`ProjectSettings.load_resource_pack() "
@@ -247,7 +246,7 @@ msgstr ""
 "为了退出这个行为, 把 ``false`` 作为第二个参数传递给 :ref:`ProjectSettings."
 "load_resource_pack() <class_ProjectSettings_method_load_resource_pack>`."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:133
 msgid ""
 "For a C# project, you need to build the DLL and place it in the project "
 "directory first. Then, before loading the resource pack, you need to load "
@@ -256,11 +255,11 @@ msgstr ""
 "对于C#项目, 您必需先构建DLL并把它放在项目目录中. 然后, 在加载资源包之前, 您需"
 "要按如下方法加载它的DLL:``Assembly.LoadFile(\"mod.dll\")``"
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:138
 msgid "Summary"
 msgstr "总结"
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:140
 msgid ""
 "This tutorial should illustrate how easy adding mods, patches or DLC to a "
 "game is. The most important thing is to identify how one plans to distribute "

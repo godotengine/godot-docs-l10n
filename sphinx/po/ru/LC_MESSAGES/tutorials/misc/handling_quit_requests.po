@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,17 +60,22 @@ msgid ""
 "> Quit On Go Back** is checked in the Project Settings (which is the "
 "default)."
 msgstr ""
+"На Android вместо этого отправляется ``MainLoop."
+"NOTIFICATION_WM_GO_BACK_REQUEST``. Нажатие кнопки Back приведет к выходу из "
+"приложения, если **Application > Config > Quit On Go Back** отмечено в "
+"настройках проекта (по умолчанию)."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:28
 msgid ""
 "``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS "
 "devices don't have a physical Back button."
 msgstr ""
+"``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` не поддерживается на iOS, "
+"поскольку устройства iOS не имеют физической кнопки Back."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:31
-#, fuzzy
 msgid "Handling the notification is done as follows (on any node):"
-msgstr "Обрабатывайте это следующим образом(на любой ноде):"
+msgstr "Обработка уведомления выполняется следующим образом (на любом узле):"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:48
 msgid ""
@@ -89,9 +94,8 @@ msgstr ""
 "поведение выхода когда выход запрашивается, что может быть изменено:"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:64
-#, fuzzy
 msgid "Sending your own quit notification"
-msgstr "Обработка уведомления"
+msgstr "Отправка собственного уведомления о выходе"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:66
 msgid ""
@@ -103,7 +107,14 @@ msgid ""
 "(such as saving, confirming the quit, or debugging), even if you try to "
 "delay the line that forces the quit."
 msgstr ""
+"Хотя заставить приложение закрыться можно, вызвав :ref:`SceneTree.quit "
+"<class_SceneTree_method_quit>`, это не приведет к отправке *уведомления о "
+"выходе*. Это означает, что функция, описанная выше, не будет вызвана. Выход "
+"по вызову :ref:`SceneTree.quit <class_SceneTree_method_quit>` не позволит "
+"завершить пользовательские действия (такие как сохранение, подтверждение "
+"выхода или отладка), даже если вы попытаетесь задержать строку, заставляющую "
+"выйти."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:73
 msgid "Instead, you should send a quit request:"
-msgstr ""
+msgstr "Вместо этого следует отправить запрос на выход:"

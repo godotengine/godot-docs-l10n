@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,21 +19,23 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr "Mesh"
+msgstr "Sítě (Mesh)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
-msgstr ""
+msgstr "Modifikátory"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"Existuje možnost exportu :code:`Apply Modifiers`, která řídí, zda se na "
+"exportovanou síť aplikují modifikátory."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "Klíč tvaru"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -41,6 +43,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
+"Export klíče tvaru sítě je podporován, ale export každého klíče tvaru je "
+"téměř tak náročný jako další export sítě, takže nebuďte překvapeni, že to "
+"trvá relativně dlouho."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -51,3 +56,10 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"Mnoho modifikátorů není kompatibilních s tvarovými klíči (např. modifikátor "
+"podpovrchových ploch), takže pokud jste zjistili, že máte vyexportované "
+"nesprávné tvarové klíče, zkuste vypnout :code:`Apply Modifiers` a provést "
+"export znovu. Kromě toho se vyplatí nahlásit nekompatibilní modifikátor do "
+"`seznamu problémů <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__, což pomůže vývoji exportéru, aby měl přesnější kontrolu "
+"modifikátorů."

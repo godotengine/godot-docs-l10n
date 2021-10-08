@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,18 +286,18 @@ msgid ""
 "<class_CanvasItem>` when the body moves."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:192
+#: ../../docs/tutorials/optimization/using_servers.rst:193
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
 "<class_PhysicsServer>` respectively)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:196
+#: ../../docs/tutorials/optimization/using_servers.rst:197
 msgid "Getting data from the servers"
 msgstr "Daten bekommen von den Servern"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:198
+#: ../../docs/tutorials/optimization/using_servers.rst:199
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -308,7 +308,7 @@ msgid ""
 "(and it won't be obvious why)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:204
+#: ../../docs/tutorials/optimization/using_servers.rst:205
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

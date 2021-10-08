@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,29 +19,35 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:2
 msgid "Lights"
-msgstr ""
+msgstr "Světla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:4
 msgid ""
 "By default, lamps in Blender have shadows enabled. This can cause "
 "performance issues in Godot."
 msgstr ""
+"Ve výchozím nastavení mají lampy v Blenderu povoleny stíny. To může v Godotu "
+"způsobovat problémy s výkonem."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:8
 msgid ""
 "Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
 "is released, this will be removed and this part of the exporter will change."
 msgstr ""
+"Lampy se exportují pomocí nastavení \"Blender Render\". Po vydání Blenderu "
+"2.8 bude toto nastavení odstraněno a tato část exportéru se změní."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:11
 msgid ""
 "Sun, point and spot lamps are all exported from Blender along with many of "
 "their properties:"
 msgstr ""
+"Slunce, bodové a reflektorové lampy jsou exportovány z programu Blender "
+"spolu s mnoha svými vlastnostmi:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
 msgid "There are some things to note:"
-msgstr ""
+msgstr "Je třeba si uvědomit několik věcí:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -49,12 +55,17 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
+"V programu Blender vrhá světlo světlo až do nekonečna. V Godotu je omezeno "
+"vzdáleností útlumu. Chcete-li dosáhnout co největší shody mezi viewportem a "
+"Godotem, zaškrtněte políčko \"Sphere\". (Zvýrazněno zeleně)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:21
 msgid ""
 "Light attenuation models differ between Godot and Blender. The exporter "
 "attempts to make them match, but it isn't always very good."
 msgstr ""
+"Modely útlumu světla se v programech Godot a Blender liší. Exportér se je "
+"snaží sladit, ale ne vždy se mu to daří."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:23
 msgid ""
@@ -62,8 +73,11 @@ msgid ""
 "The exporter attempts to make them similar, but it doesn't always look the "
 "same."
 msgstr ""
+"Modely úhlového útlumu reflektorového světla se v Godotu a Blenderu také "
+"liší. Exportér se je snaží přiblížit, ale ne vždy to vypadá stejně."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:26
 msgid ""
 "There is no difference between buffer shadow and ray shadow in the export."
 msgstr ""
+"V exportu není žádný rozdíl mezi stíny ``Buffer Shadow`` a ``Ray Shadow``."

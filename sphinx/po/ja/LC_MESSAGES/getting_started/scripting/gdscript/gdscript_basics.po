@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,9 +224,8 @@ msgid "class"
 msgstr "\\ class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "クラスを定義します。"
+msgstr "内部クラスを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 #, fuzzy
@@ -235,7 +234,7 @@ msgstr "\\ class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "クラス名とスクリプトのアイコン(オプション)を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -743,6 +742,8 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
+"Integerとfloatの数値は可読性のために ``_`` で分割することができます。以下の数"
+"値表現はすべて有効です::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
@@ -902,38 +903,36 @@ msgid "``\\v``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
-#, fuzzy
 msgid "Vertical tab character"
-msgstr "キネマティックキャラクター(2D)"
+msgstr "垂直タブ文字"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "Double quote"
-msgstr ""
+msgstr "二重引用符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
-#, fuzzy
 msgid "Single quote"
-msgstr "シングルトン"
+msgstr "一重引用符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Backslash"
-msgstr ""
+msgstr "バックスラッシュ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
@@ -1882,8 +1881,8 @@ msgid ""
 "other languages)::"
 msgstr ""
 "これはクラスを拡張する関数を親クラス内の同じ名前の関数を置き換えるために特に"
-"便利です。 それらを呼び出したいのであれば、 前に``.`` を付けて下さい(他の言語"
-"の ``super`` キーワードのように)::"
+"便利です。 それらを呼び出したいのであれば、 前に ``.`` を付けて下さい(他の言"
+"語の ``super`` キーワードのように)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid ""
@@ -1920,8 +1919,8 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this::"
 msgstr ""
-"``.some_func`` を使用した上記の例のように、通常の関数の呼び出しとは異なり、継"
-"承したクラスのコンストラクタが引数を取得する場合、それらは次のように渡されま"
+"``.some_func`` を使用した上記の例のような通常の関数の呼び出しとは異なり、継承"
+"したクラスのコンストラクタが引数を取得する場合、それらは次のように渡されま"
 "す::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
@@ -1941,10 +1940,10 @@ msgid ""
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``."
 msgstr ""
-"継承クラス(``State.gd``)が ``_init`` コンストラクタを定義し、それが引数を取る"
-"場合(このケースは ``e`` )、``State.gd`` の継承クラス(``Idle.gd``)も``_init``"
-"を定義し、 ``State.gd`` から ``_init`` に適切なパラメータを渡す *必要* があり"
-"ます。"
+"継承元のクラス(``State.gd``)が ``_init`` コンストラクタを定義し、それが引数を"
+"取る場合(このケースは ``e`` )、 ``State.gd`` の継承クラス(``Idle.gd``)も "
+"``_init`` を定義し、 ``State.gd`` の ``_init`` に適切なパラメータを渡す *必要"
+"* があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1188
 msgid ""
@@ -1962,7 +1961,6 @@ msgstr ""
 "渡されるのと同じ ``e`` です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -1970,8 +1968,8 @@ msgid ""
 "constructor as well, not just variables, e.g.::"
 msgstr ""
 "``Idle.gd`` の ``_init`` コンストラクタが0の引数を取る場合、何もしなくても "
-"``State.gd`` 親クラスに値を渡す必要があります。つまり変数だけでなく、基本コン"
-"ストラクターにもリテラルを渡すことができます。 例::"
+"``State.gd`` 親クラスに値を渡す必要があります。変数だけでなくリテラルも基本コ"
+"ンストラクタに渡すことができます。 例::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid "Inner classes"
@@ -2012,7 +2010,7 @@ msgstr "エクスポート"
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
-"エキスポートについてのドキュメントは :ref:`doc_gdscript_exports`に移動しまし"
+"エクスポートについてのドキュメントは :ref:`doc_gdscript_exports` に移動しまし"
 "た。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1254
@@ -2046,12 +2044,12 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example::"
 msgstr ""
-"``variable`` の値が*外部*ソースによって変更されると(つまり、クラス内のローカ"
-"ルでの使用によるものではありません)、必ず*setter*関数(上記の ``setterfunc`` )"
-"が呼び出されます。これは、値が変更される*前*に発生します。*setter*は、新しい"
-"値の処理方法を決定する必要があります。逆に、 ``variable`` がアクセスされる"
-"と、*getter*関数(上記の ``getterfunc`` )は目的の値を ``return`` する必要があ"
-"ります。次に例を示します::"
+"``variable`` の値が *外部* ソースによって変更されると(つまり、クラス内のロー"
+"カルでの使用によるものではありません)、必ず *setter* 関数(上記の "
+"``setterfunc`` )が呼び出されます。これは値が変更される *前* に 発生します。 "
+"*setter* は新しい値の処理方法を決定する必要があります。逆に、 ``variable`` が"
+"アクセスされると *getter* 関数(上記の ``getterfunc`` )は目的の値を "
+"``return`` する必要があります。次に例を示します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Either of the *setter* or *getter* functions can be omitted::"
@@ -2063,17 +2061,17 @@ msgid ""
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
 "validating input."
 msgstr ""
-"Settersとgetters は、ツールスクリプトまたはプラグインのエディタへ、検証中の入"
-"力をするために: ref:`変数を書き出す: <doc_gdscript_exports>`場合に特に便利で"
-"す。"
+"Setterとgetterは、ツールスクリプトまたはプラグインにおいて、入力を検証するた"
+"めエディタへ\\ :ref:`変数をエクスポートする<doc_gdscript_exports>`\\ 場合に特"
+"に便利です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
-"前述したように、*ローカル*アクセスはsetter とgetterを*起動しません*。この例を"
-"次に示します:"
+"前述したように、 *ローカル* アクセスはsetter とgetterを *起動しません* 。この"
+"例を次に示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
 msgid "Tool mode"
@@ -2114,7 +2112,6 @@ msgid "Memory management"
 msgstr "メモリ管理"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2181,9 +2178,9 @@ msgid ""
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
-"下の例では、我々は``Character``ノードから``Game``ノードへ "
-"``health_depleted`` シグナルを接続します。``Character``ノードがシグナルを発信"
-"したとき、gameノードの ``_on_Character_health_depleted`` が呼ばれます。"
+"下の例では、``Character`` ノードから ``Game`` ノードへ ``health_depleted`` シ"
+"グナルを接続します。 ``Character`` ノードがシグナルを発信したとき、gameノード"
+"の ``_on_Character_health_depleted`` が呼ばれます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "You can emit as many arguments as you want along with a signal."
@@ -2208,18 +2205,18 @@ msgid ""
 "method::"
 msgstr ""
 "``Character.gd`` スクリプト内で ``health_changed`` シグナルを定義し :ref:"
-"`Object.emit_signal() <class_Object_method_emit_signal>`を使って発信し、それ"
+"`Object.emit_signal() <class_Object_method_emit_signal>` を使って発信し、それ"
 "をシーンツリーの上層の ``Game`` ノードから、 :ref:`Object.connect() "
-"<class_Object_method_connect>` メソッドを使って``Lifebar`` へ接続します::"
+"<class_Object_method_connect>` メソッドを使って ``Lifebar`` へ接続します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
-"シグナルを使うにはクラスが ``Object`` クラスを直接継承しているか、もしくは"
-"``Object``を継承している``Node``、 ``KinematicBody``、``Control``等を継承して"
-"いる必要があります。"
+"シグナルを使うにはクラスが ``Object`` クラスを直接継承しているか、もしくは "
+"``Object`` を継承している ``Node`` 、 ``KinematicBody`` 、 ``Control`` 等を継"
+"承している必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1453
 msgid ""
@@ -2229,15 +2226,15 @@ msgid ""
 msgstr ""
 "``Game`` ノード内で ``Character`` ノードと ``Lifebar`` ノードを取得し、そし"
 "て character と受信者を接続し 、 character にシグナルを受信者へ送信させます、"
-"受信者はこのケースでは``Lifebar`` ノードです。"
+"受信者はこのケースでは ``Lifebar`` ノードです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
-"これは``Character`` ノードとのカップリングをせずに ``Lifebar`` に体力の変化を"
-"受信することを可能にします。"
+"これは ``Character`` ノードとのカップリングをせずに ``Lifebar`` に体力の変化"
+"を受信することを可能にします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
 msgid ""
@@ -2254,7 +2251,7 @@ msgid ""
 msgstr ""
 "これらの引数はエディタのノードドックに表示され、Godot はこれらを使いコール"
 "バック関数を生成します。しかし、シグナルを発信する際に、異なる個数の引数を送"
-"信することもできます。その上限は正しい値の個数までです。"
+"信することもできます。正しい値を発信するかはあなた次第です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1482
 msgid ""

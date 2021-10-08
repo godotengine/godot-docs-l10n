@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,71 +32,88 @@ msgstr ""
 "讓你完全在命令行中作業的步驟。由於引擎幾乎不以來外部函式庫，所以啟動時間非常"
 "快速，便讓 Godot 也很適合在這種工作流程中使用。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:15
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:16
+msgid ""
+"On Windows and Linux, you can run a Godot binary in a terminal by specifying "
+"its relative or absolute path."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:19
+msgid ""
+"On macOS, the process is different due to Godot being contained within an ``."
+"app`` bundle (which is a *folder*, not a file). To run a Godot binary from a "
+"terminal on macOS, you have to ``cd`` to the folder where the Godot "
+"application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` "
+"followed by any command line arguments. If you've renamed the application "
+"bundle from ``Godot`` to another name, make sure to edit this command line "
+"accordingly."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Command line reference"
 msgstr "命令列參照說明"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:17
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:30
 msgid "**General options**"
 msgstr "**通用選項**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Command"
 msgstr "指令"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:20
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:34
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:62
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:90
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:120
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:33
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:47
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:75
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:103
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:133
 msgid "Description"
 msgstr "說明"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
 msgstr "``-h``, ``--help``, ``/?``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:22
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:35
 msgid "Display the list of command line options."
 msgstr "顯示所有可用的命令列選項。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "``--version``"
 msgstr "``--version``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:24
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:37
 msgid "Display the version string."
 msgstr "顯示版本資訊。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "``-v``, ``--verbose``"
 msgstr "``-v``, ``--verbose``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:39
 msgid "Use verbose stdout mode."
 msgstr "使用詳細標準輸出 (Stdout) 模式。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "``--quiet``"
 msgstr "``--quiet``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:41
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr "靜默模式，不輸出任何標準輸出 (Stdout) 訊息。仍會顯示錯誤。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:31
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "**Run options**"
 msgstr "**執行選項**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:36
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -104,11 +121,11 @@ msgstr ""
 "開啟編輯器而非執行場景（必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid "``-p``, ``--project-manager``"
 msgstr "``-p``, ``--project-manager``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:38
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:51
 msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -116,19 +133,19 @@ msgstr ""
 "開啟專案管理員，即使已自動偵測到專案（必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "``-q``, ``--quit``"
 msgstr "``-q``, ``--quit``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:40
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:53
 msgid "Quit after the first iteration."
 msgstr "首次迭代後退出。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid "``-l <locale>``, ``--language <locale>``"
 msgstr "``-l <locale>``, ``--language <locale>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:55
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
@@ -136,35 +153,35 @@ msgstr ""
 "使用指定的區域代碼（<locale> 為兩個字母的代碼）。詳細請參考 :ref:"
 "`doc_locales` 。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:44
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr "專案路徑（<directory> 內必須包含一個「project.godot」檔案）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "``-u``, ``--upwards``"
 msgstr "``-u``, ``--upwards``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "Scan folders upwards for 'project.godot' file."
 msgstr "向上層資料夾搜尋「project.godot」檔案。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:48
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:61
 msgid "Path to a pack (.pck) file to load."
 msgstr "欲載入之 Pack (.pck) 檔。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:50
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid ""
 "Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
@@ -173,106 +190,106 @@ msgstr ""
 "算繪器執行緒模式（「unsafe」、「safe」、「separate」）。詳細請參考 :ref:`執行"
 "緒模型 <class_ProjectSettings_property_rendering/threads/thread_model>` 。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:52
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:65
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "遠端檔案系統（ ``<host/IP>[:<port>]`` 位址）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:54
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr "音效驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid "``--video-driver <driver>``"
 msgstr "``--video-driver <driver>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:56
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr "視訊驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:59
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "**Display options**"
 msgstr "**顯示選項**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "``-f``, ``--fullscreen``"
 msgstr "``-f``, ``--fullscreen``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:64
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid "Request fullscreen mode."
 msgstr "指定全螢幕模式。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "``-m``, ``--maximized``"
 msgstr "``-m``, ``--maximized``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:66
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:79
 msgid "Request a maximized window."
 msgstr "指定視窗最大化。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "``-w``, ``--windowed``"
 msgstr "``-w``, ``--windowed``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:68
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "Request windowed mode."
 msgstr "指定視窗模式。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "``-t``, ``--always-on-top``"
 msgstr "``-t``, ``--always-on-top``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:70
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:83
 msgid "Request an always-on-top window."
 msgstr "指定永遠顯示於最上層之視窗。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "``--resolution <W>x<H>``"
 msgstr "``--resolution <W>x<H>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:72
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Request window resolution."
 msgstr "指定視窗解析度。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:74
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid "Request window position."
 msgstr "指定視窗位置。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "``--low-dpi``"
 msgstr "``--low-dpi``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "Force low-DPI mode (macOS and Windows only)."
 msgstr "強制低 DPI 模式（僅限 macOS 與 Windows）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
 msgid "``--no-window``"
 msgstr "``--no-window``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:78
-msgid ""
-"Disable window creation (Windows only). Useful together with ``--script``."
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:91
+#, fuzzy
+msgid "Run with invisible window. Useful together with ``--script``."
 msgstr "關閉視窗建立（僅限 Windows）。適合與 ``--script`` 一起使用。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:81
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "**Debug options**"
 msgstr "**偵錯選項**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:85
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "Debug options are only available in the editor and debug export templates "
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
@@ -281,133 +298,133 @@ msgstr ""
 "偵錯選項僅適用於編輯器與匯出樣板（但必須使用 ``debug`` 或 ``release_debug`` "
 "來建置目標，詳細請參考 :ref:`doc_introduction_to_the_buildsystem_target` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "``-d``, ``--debug``"
 msgstr "``-d``, ``--debug``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:92
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid "Debug (local stdout debugger)."
 msgstr "除錯（本機標準輸出 (Stdout) 除錯工具）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid "``-b``, ``--breakpoints``"
 msgstr "``-b``, ``--breakpoints``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:94
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:107
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
 msgstr "以 source::line，逗號分隔配對，無空白（顯示 %%20）來列出中斷點。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:96
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:109
 msgid "Enable profiling in the script debugger."
 msgstr "在腳本除錯工具中啟用分析。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "``--remote-debug <address>``"
 msgstr "``--remote-debug <address>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:98
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:111
 msgid "Remote debug (``<host/IP>:<port>`` address)."
 msgstr "遠端除錯（ ``<host/IP>:<port>`` 位址）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:100
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Show collision shapes when running the scene."
 msgstr "執行場景時顯示碰撞區域。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:102
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid "Show navigation polygons when running the scene."
 msgstr "執行場景時顯示導航多邊形。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:104
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr "模擬 CPU 高負載（每幀延遲 <ms> 毫秒）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:106
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:119
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr "強制時間縮放（值越早則越快，1.0 為正常速度）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid "``--disable-render-loop``"
 msgstr "``--disable-render-loop``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:108
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:121
 msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
 msgstr "禁用算繪循環，將只在腳本內明確呼叫時才進行算繪。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "``--disable-crash-handler``"
 msgstr "``--disable-crash-handler``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:110
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Disable crash handler when supported by the platform code."
 msgstr "若平台代碼支援，禁用 Crash Handler。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid "``--fixed-fps <fps>``"
 msgstr "``--fixed-fps <fps>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:112
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
 msgstr "強制固定數 FPS。該設定將禁用即時同步。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:114
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:127
 msgid "Print the frames per second to the stdout."
 msgstr "在標準輸出上印出 FPS。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:117
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "**Standalone tools**"
 msgstr "**獨立工具**"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "``-s <script>``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:122
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:135
 msgid "Run a script."
 msgstr "執行腳本。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:137
 msgid "Only parse for errors and quit (use with ``--script``)."
 msgstr "僅解析錯誤並退出（與 ``--script`` 一起使用）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid "``--export <target>``"
 msgstr "``--export <target>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:126
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid ""
 "Export the project using the given export target. Export only main pack if "
 "path ends with .pck or .zip (:ref:`tools "
@@ -416,11 +433,11 @@ msgstr ""
 "使用指定的匯出目標來匯出專案。若路徑以 .pck 或 .zip 結尾則只匯出 Main "
 "Pack（必須啟用 :ref:`工具 <doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid "``--export-debug <target>``"
 msgstr "``--export-debug <target>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -428,11 +445,11 @@ msgstr ""
 "與 ``--export`` 相同，但使用除錯樣板（必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid "``--doctool <path>``"
 msgstr "``--doctool <path>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:143
 msgid ""
 "Dump the engine API reference to the given <path> in XML format, merging if "
 "existing files are found (:ref:`tools "
@@ -441,11 +458,11 @@ msgstr ""
 "將引擎的 API 參照文件以 XML 格式傾印至指定的 <path> 路徑，若檔案存在則合併"
 "（必須啟用 :ref:`工具 <doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "``--no-docbase``"
 msgstr "``--no-docbase``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -453,11 +470,11 @@ msgstr ""
 "禁用傾印基礎型別（與 ``--doctool`` 一起使用，必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -465,11 +482,11 @@ msgstr ""
 "建置腳本解決方案 (Solution)（如用於 C# 專案，必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "``--gdnative-generate-json-api``"
 msgstr "``--gdnative-generate-json-api``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -477,11 +494,11 @@ msgstr ""
 "產生用於 GDNative 綁定的 Godot API JSON 傾印（必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "``--test <test>``"
 msgstr "``--test <test>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -489,11 +506,11 @@ msgstr ""
 "指定單元測試。先使用 ``--help`` 以列出所有測試。（必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid "``--export-pack <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:140
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
@@ -503,11 +520,11 @@ msgstr ""
 "副檔名來判斷匯出的格式是 PCK 還是 ZIP。(必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` )。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:158
 msgid "Path"
 msgstr "路徑"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:160
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -518,11 +535,11 @@ msgstr ""
 "``godot`` 即可執行。在 Linux 中可以將 Godot 二進位執行檔放在 ``/usr/local/"
 "bin`` 並確保該檔案命名為 ``godot`` 。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
 msgid "Setting the project path"
 msgstr "設定專案路徑"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:155
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid ""
 "Depending on where your Godot binary is located and what your current "
 "working directory is, you may need to set the path to your project for any "
@@ -531,28 +548,28 @@ msgstr ""
 "依據 Godot 的二進位執行檔放置位置以及目前工作目錄的不同，可能需要為下列指令設"
 "定專案路徑才可正確執行。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:159
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
 "可以通過為第一個參數指定專案 ``project.godot`` 檔案所在的路徑來完成，如："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:166
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
 msgid "Or by using the ``--path`` argument:"
 msgstr "或是使用 ``--path`` 引數："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:172
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:185
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr "舉例來說，用於匯出遊戲（下方會說明）的完整指令看起來會像這樣："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:179
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:192
 msgid "Creating a project"
 msgstr "建立專案"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:182
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:195
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
@@ -560,15 +577,15 @@ msgstr ""
 "可以通過將 Shell 導航至欲建立專案的位置並建立 project.godot 檔案來在命令列中"
 "建立專案。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:193
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:206
 msgid "The project can now be opened with Godot."
 msgstr "該專案即可以 Godot 開啟。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:197
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:210
 msgid "Running the editor"
 msgstr "執行編輯器"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:199
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:212
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
@@ -577,17 +594,17 @@ msgstr ""
 "可以使用 ``-e`` 旗標執行 Godot 來開啟編輯器。必須在專案目錄或其子目錄內完成，"
 "否則該指令會被忽略並開啟專案管理員。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:207
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:220
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr "若已有建立並保存場景，則之後可使用相同的指令並以該場景作為參數來編輯。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:215
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
 msgid "Erasing a scene"
 msgstr "清除場景"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:217
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:230
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
@@ -596,27 +613,27 @@ msgstr ""
 "Godot 對檔案系統友善，且不會建立額外的後設資料檔案。可使用 ``rm`` 來清除專案"
 "檔案。請確保沒有其他東西參照到該場景，否則開啟時會拋出錯誤。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:226
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:239
 msgid "Running the game"
 msgstr "執行遊戲"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:228
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:241
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr "欲執行遊戲，僅需於專案目錄或子目錄內執行 Godot。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:235
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:248
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr "若需要測試特定的場景，則可將該場景傳入命令行。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:243
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:256
 msgid "Debugging"
 msgstr "偵錯"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:245
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:258
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
@@ -625,11 +642,11 @@ msgstr ""
 "在命令列中找出錯誤可能很困難。為此，可以通過加上 ``-d`` 引數來使用命令列除錯"
 "工具。該工具可以用於執行遊戲或場景。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:260
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:273
 msgid "Exporting"
 msgstr "匯出"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:262
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
@@ -639,7 +656,7 @@ msgstr ""
 "Integration）設定特別有用。無周邊版本的 Godot （伺服器建置，無視訊功能）亦是"
 "最佳選擇。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:271
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid ""
 "The preset name must match the name of an export preset defined in the "
 "project's ``export_presets.cfg`` file. If the preset name contains spaces or "
@@ -647,7 +664,7 @@ msgid ""
 "quotes."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:288
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
@@ -655,7 +672,7 @@ msgstr ""
 "欲匯出除錯版本的遊戲，請使用 ``--export-debug`` 而非 ``--export`` 。其參數與"
 "用法皆相同。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:278
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
 "preset name and output path, with the file extension, instead of ``--"
@@ -666,7 +683,7 @@ msgstr ""
 "接上匯出預設設定的名稱與輸出路徑，並加上副檔名。輸出路徑的副檔名是依據套件格"
 "式判斷的，必須為 PCK 或 ZIP 其一。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid ""
 "When specifying a relative path as the path for `--export`, `--export-debug` "
 "or `--export-pack`, the path will be relative to the directory containing "
@@ -674,11 +691,11 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:289
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:302
 msgid "Running a script"
 msgstr "執行腳本"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
 "feature is especially useful in large projects, e.g. for batch conversion of "
@@ -687,19 +704,19 @@ msgstr ""
 "可欲命令列中執行簡單的 ``.gd`` 腳本。對於大型專案來說特別有用，如大量的素材轉"
 "換或自定匯入／匯出。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:295
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "該腳本必須繼承 ``SceneTree`` 或 ``MainLoop`` 。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:310
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "下列為一個簡單的 ``sayhello.gd`` 範例，用來說明如何運作："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:321
 msgid "And how to run it:"
 msgstr "以及如何執行："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:315
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:328
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
@@ -707,7 +724,7 @@ msgstr ""
 "若路徑中無 ``project.godot`` ，則目前的路徑將被視為目前的工作目錄（除非指定 "
 "``--path`` ）。"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:318
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:331
 msgid ""
 "The first line of ``sayhello.gd`` above is commonly referred to as a "
 "*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
@@ -718,7 +735,7 @@ msgstr ""
 "Godot 的二進位執行檔有在 ``PATH`` 中，並且名稱為 ``godot`` 的話，則這行 "
 "Shebang 就能讓腳本在現代 Linux 發行版下執行，而 macOS 也可以："
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:330
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:343
 msgid ""
 "If the above doesn't work in your current version of Linux or macOS, you can "
 "always have the shebang run Godot straight from where it is located as "

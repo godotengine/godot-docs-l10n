@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,12 +101,12 @@ msgid ""
 "records and the object's base types' records to see if the object supports "
 "the operation."
 msgstr ""
-"게다가 ClassDB는 어떤 객체가 언제 연산을 수행하는 지를 확인합니다. 속성에 액"
-"세스하는가? 메서드를 호출하는가? 시그널을 방출하는가? 이 모두를 데이터베이스"
-"의 기록 (그리고 객체의 기본 타입의 기록)에서 확인함으로써 객체가 연산을 지원"
-"하는 지 여부를 볼 수 있습니다. 모든 C++ 객체는 정적 `_bind_methods()` 함수를 "
-"정의하는데 이걸로 데이터베이스에 등록한 C++ 내용물이 무엇이고 어떻게 등록했는"
-"지를 설명합니다."
+"게다가 ClassDB는 어떤 오브젝트가 언제 연산을 수행하는 지를 확인합니다. 속성"
+"에 액세스하는가? 메서드를 호출하는가? 시그널을 방출하는가? 이 모두를 데이터베"
+"이스의 기록 (그리고 오브젝트의 기본 타입의 기록)에서 확인함으로써 오브젝트가 "
+"연산을 지원하는 지 여부를 볼 수 있습니다. 모든 C++ 오브젝트는 정적 "
+"`_bind_methods()` 함수를 정의하는데 이걸로 데이터베이스에 등록한 C++ 내용물"
+"이 무엇이고 어떻게 등록했는지를 설명합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:38
 msgid ""
@@ -155,14 +155,12 @@ msgid "What nodes are available to the script"
 msgstr "어떤 노드를 스크립트에서 사용할 수 있는가"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:61
-#, fuzzy
 msgid "How they are organized"
-msgstr "어떻게 그들이 조직되어있는지?"
+msgstr "어떻게 그들이 조직되어 있는지"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:62
-#, fuzzy
 msgid "How they are initialized"
-msgstr "어떻게 그들이 초기화되는지?"
+msgstr "어떻게 그들이 초기화되는지"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "What signal connections they have with each other"
@@ -176,9 +174,9 @@ msgid ""
 "apply to written code also apply to scenes: single responsibility, "
 "encapsulation, and others."
 msgstr ""
-"자, 왜 이렇게 씬 조직이 중요할까요? 씬이 *바로* 객체라는 것을 이해해야합니"
-"다. 때로는 하나의 씬과 스크립트과 붙은 루트 노드로 된 씬을 하위 노드로 사용하"
-"는 경우도 있습니다. 즉, 씬은 때로 스크립트의 선언적 코드의 확장이 됩니다."
+"자, 왜 이렇게 씬 조직이 중요할까요? 씬이 *바로* 오브젝트라는 것을 이해해야합"
+"니다. 때로는 하나의 씬과 스크립트과 붙은 루트 노드로 된 씬을 하위 노드로 사용"
+"하는 경우도 있습니다. 즉, 씬은 때로 스크립트의 선언적 코드의 확장이 됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""

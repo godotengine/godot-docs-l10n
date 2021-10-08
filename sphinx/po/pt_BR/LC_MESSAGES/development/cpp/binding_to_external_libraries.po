@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,6 +123,10 @@ msgid ""
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
+"Se você quer adicionar flags customizadas do compilador quando gerando seu "
+"módulo, você precisa clonar `env` primeiro, então ele não adicionará essas "
+"flags ao Godot inteiro (que pode causar erros). Exemplo `SCub` com flags "
+"customizadas:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 #, fuzzy
@@ -131,7 +135,7 @@ msgstr "O roteiro final deveria se parecer com isto:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
-msgstr ""
+msgstr "Usando o módulo"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"

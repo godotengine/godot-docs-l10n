@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing images"
-msgstr ""
+msgstr "Import obrázků"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Supported image formats"
@@ -27,13 +27,15 @@ msgstr "Podporované formáty obrázků"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid "Godot can import the following image formats:"
-msgstr ""
+msgstr "Godot umí importovat následující formáty obrázků:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:11
 msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - Nepodporuje 16bit per pixel. Podporovány jsou pouze obrázky "
+"s 1bit, 4bit, 8bit, 24bit a 32bit per pixel."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
@@ -41,33 +43,42 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface (``.dds``) - Pokud jsou v textuře přítomny mipmapy, "
+"načtou se přímo. Toho lze využít k dosažení efektů pomocí vlastních mipmap."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:16
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Podporuje HDR (velmi doporučeno pro panoramatickou "
+"oblohu)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:18
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Podporuje HDR (velmi doporučeno pro panoramatickou "
+"oblohu)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:20
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``, ``.jpeg``) - Nepodporuje průhlednost podle omezení formátu."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:22
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png``) - přesnost je při importu omezena na 8 bitů na kanál (žádné "
+"obrázky HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:24
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (\".tga\")"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:25
 msgid ""
@@ -78,20 +89,28 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVG jsou při importu rastrovány pomocí `NanoSVG "
+"<https://github.com/memononen/nanosvg>`__. Podpora je omezená; složité "
+"vektory se nemusí vykreslovat správně. Pro složité vektory je často lepším "
+"řešením jejich vykreslení do PNG pomocí aplikace Inkscape. To lze "
+"automatizovat díky jeho rozhraní příkazového řádku <https://wiki.inkscape."
+"org/wiki/index.php/Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "WebP (``.webp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"Pokud jste editor Godot zkompilovali ze zdrojových kódů s vypnutými "
+"specifickými moduly, některé formáty nemusí být k dispozici."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid "Importing textures"
-msgstr ""
+msgstr "Import textur"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -99,14 +118,17 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"Výchozí akcí v systému Godot je import obrázků jako textur. Textury jsou "
+"uloženy ve video paměti a nelze k nim přistupovat přímo. Díky tomu je jejich "
+"kreslení efektivní."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid "Import options are vast:"
-msgstr ""
+msgstr "Možnosti importu jsou rozsáhlé:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:49
 msgid "Detect 3D"
-msgstr ""
+msgstr "Detekovat 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid ""
@@ -116,10 +138,15 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"Tato volba umožňuje Godotu zjistit, kdy je textura (která je ve výchozím "
+"nastavení importována pro 2D) použita ve 3D. Pokud k tomu dojde, změní se "
+"nastavení tak, aby příznaky textury byly přívětivější pro 3D (povolí se "
+"mipmapy, filtr a opakování, komprese se změní na VRAM). Textura se také "
+"automaticky znovu importuje."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:55
 msgid "Compression"
-msgstr ""
+msgstr "Komprese"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:57
 msgid ""
@@ -127,10 +154,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"Obrázky jsou jedním z největších zdrojů ve hře. Aby se s nimi dalo efektivně "
+"pracovat, je třeba je komprimovat. Godot nabízí několik metod komprese v "
+"závislosti na případu použití."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:61
 msgid "Compress Mode"
-msgstr ""
+msgstr "Režim komprese"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:63
 msgid ""
@@ -139,6 +169,10 @@ msgid ""
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
+"**Komprese VRAM:** Jedná se o nejběžnější režim komprese pro 3D zdroje. "
+"Zmenší se velikost na disku a výrazně se sníží i využití videopaměti "
+"(obvykle 4 až 6krát). Tomuto režimu byste se měli vyhnout pro 2D, protože "
+"vykazuje znatelné artefakty."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:67
 msgid ""
@@ -148,6 +182,10 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
+"**Bezztrátová komprese:** Jedná se o nejběžnější režim komprese pro 2D "
+"zdroje. Zobrazuje obrázky bez jakýchkoli artefaktů a komprese na disku je "
+"slušná. Využije však podstatně více videopaměti než komprese VRAM. Jedná se "
+"také o doporučené nastavení pro pixel art."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
 msgid ""
@@ -156,34 +194,43 @@ msgid ""
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**Zrátová komprese:** Tato možnost je vhodná pro velké 2D soubory. Má určité "
+"artefakty, ale menší než VRAM a velikost souboru je několikanásobně menší ve "
+"srovnání s bezztrátovou kompresí či nekomprimovanou položkou. Využití "
+"videopaměti se tímto režimem nesnižuje; je stejné jako u Bezztrátové "
+"komprese nebo Nekomprimovaného zdroje."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
+"**Nekomprimované:** Užitečné pouze pro formáty, které nelze komprimovat "
+"(například surové obrázky typu float)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
+"V této tabulce jsou popsány všechny čtyři možnosti a jejich výhody a "
+"nevýhody (|dobrá| = nejlepší, |špatná| = nejhorší):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Uncompressed"
-msgstr ""
+msgstr "Nekomprimované"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress Lossless (PNG)"
-msgstr ""
+msgstr "Bezztrátová komprese (PNG)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress Lossy (WebP)"
-msgstr ""
+msgstr "Ztrátová komprese (WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress VRAM"
-msgstr ""
+msgstr "Komprese VRAM"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Description"
@@ -191,86 +238,86 @@ msgstr "Popis"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "Uloženo jako nezpracované obrazové body"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Stored as PNG"
-msgstr ""
+msgstr "Uloženo jako PNG"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Stored as WebP"
-msgstr ""
+msgstr "Uloženo jako WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr ""
+msgstr "Uloženo jako S3TC/BC nebo PVRTC/ETC v závislosti na platformě"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Size on Disk"
-msgstr ""
+msgstr "Velikost na disku"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|bad| Large"
-msgstr ""
+msgstr "|bad| Velká"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|regular| Small"
-msgstr ""
+msgstr "|regular| Malá"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|good| Velmi malá"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "Memory Usage"
-msgstr ""
+msgstr "Využití paměti"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|good| Small"
-msgstr ""
+msgstr "|good| Malé"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "Performance"
-msgstr ""
+msgstr "Výkon"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|regular| Normální"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|good| Fast"
-msgstr ""
+msgstr "|good| Rychlý"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Quality Loss"
-msgstr ""
+msgstr "Ztráta kvality"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|good| None"
-msgstr ""
+msgstr "|good| Žádná"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|retular| Mírná"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|bad| Mírná"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Load Time"
-msgstr ""
+msgstr "Doba načítání"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|bad| Pomalé"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "HDR Mode"
-msgstr ""
+msgstr "HDR Mode"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid ""
@@ -280,16 +327,24 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
+"Godot podporuje textury s vysokým dynamickým rozsahem (ve formátu .HDR nebo ."
+"EXR). Ty jsou většinou užitečné jako rovnoramenné panoramatické oblohy s "
+"vysokým dynamickým rozsahem (na internetu jich najdete spoustu, pokud je "
+"budete hledat), které nahrazují Cubemaps v Godotu 2.x. Moderní počítače "
+"podporují formát BC6H VRAM, ale stále existuje spousta počítačů, které jej "
+"nepodporují."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
+"Pokud chcete, aby Godot zajistil plnou kompatibilitu z hlediska druhu "
+"textur, povolte možnost \"Vynutit RGBE\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:112
 msgid "Normal Map"
-msgstr ""
+msgstr "Normálová mapa"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid ""
@@ -301,6 +356,14 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
+"Při použití textury jako normálové mapy jsou vyžadovány pouze červený a "
+"zelený kanál. Vzhledem k tomu, že běžné algoritmy komprese textur vytvářejí "
+"artefakty, které v normálových mapách nevypadají příliš hezky, je pro tato "
+"data nejvhodnější kompresní formát RGTC. Vynucením této možnosti na hodnotu "
+"\"Povoleno\" Godot importuje obrázek jako komprimovaný RGTC. Ve výchozím "
+"nastavení je nastavena na \"Detekovat\", což znamená, že pokud bude textura "
+"někdy použita jako normálová mapa, bude změněna na \"Povoleno\" a "
+"automaticky znovu importována."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
@@ -308,6 +371,9 @@ msgid ""
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
+"Všimněte si, že komprese RGTC ovlivňuje výsledný obraz normálové mapy. "
+"Budete muset upravit vlastní shadery, které používají normálovou mapu, aby "
+"tuto skutečnost zohlednily."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
@@ -316,6 +382,11 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot vyžaduje, aby normálová mapa používala souřadnice X+, Y- a Z+. Jinými "
+"slovy, pokud jste importovali materiál vytvořený pro použití v jiném enginu, "
+"možná budete muset normálovou mapu převést tak, aby byla její osa Y "
+"převrácená. V opačném případě se může zdát, že směr normálové mapy je na ose "
+"Y převrácený."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
@@ -323,20 +394,25 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Další informace o normálových mapách (včetně tabulky pořadí souřadnic pro "
+"populární enginy) najdete `zde <http://wiki.polycount.com/wiki/"
+"Normal_Map_Technical_Details>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Flags"
-msgstr ""
+msgstr "Příznaky"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"Při importu obrázku jako textury lze přepínat mezi mnoha nastaveními v "
+"závislosti na konkrétním případu použití."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Repeat"
-msgstr ""
+msgstr "Opakování"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid ""
@@ -344,14 +420,16 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
+"Toto nastavení se nejčastěji používá ve 3D, a proto je ve 2D zpravidla "
+"vypnuto. Nastavuje UV souřadnice přesahující rozsah 0,0 - 1,1 na \"smyčku\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid "Repeating can optionally be set to mirrored mode."
-msgstr ""
+msgstr "Opakování lze volitelně nastavit do zrcadlového režimu."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid "Filter"
-msgstr ""
+msgstr "Filtr"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
@@ -360,10 +438,14 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"Pokud jsou pixely větší než pixely obrazovky, tato možnost pro ně povolí "
+"lineární interpolaci. Výsledkem je hladší (méně kostrbatá) textura. Toto "
+"nastavení lze běžně použít ve 2D a 3D, ale při tvorbě her s dokonalým "
+"pixelovým rozlišením je obvykle vypnuto."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmapy"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
@@ -372,40 +454,49 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"Když jsou pixely menší než obrazovka, nastupují mipmapy. Pomáhají snížit "
+"zrnitý efekt při zmenšování textur. Mějte na paměti, že na starším hardwaru "
+"(GLES2, hlavně mobilní zařízení) existují určité požadavky na použití mipmap:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "Šířka a výška textury musí být mocniny 2"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "Opakování musí být povoleno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"Při vytváření her a aplikací pro telefony mějte na paměti výše uvedené, když "
+"chcete plnou kompatibilitu a zároveň potřebujte mipmapy."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
+"Při práci ve 3D by měla být zapnuta mipmapa, protože to také zvyšuje výkon "
+"(pro vzdálenější objekty se používají menší verze textury)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid "Anisotropic"
-msgstr ""
+msgstr "Anizotropní"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:165
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
+"Pokud jsou textury takřka rovnoběžné s pohledem (např. podlahy), tato "
+"možnost jim dodá více detailů tím, že sníží rozmazání."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:168
 msgid "SRGB"
-msgstr ""
+msgstr "SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:170
 msgid ""
@@ -414,19 +505,24 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
+"Godot používá při vykreslování 3D lineární barevný prostor. Aby barvy "
+"vypadaly správně, musí být tato volba zapnutá u textur mapovaných do kanálů "
+"albeda nebo detailů. Při nastavení režimu \"Detekce\" bude textura při "
+"použití v kanálech albedo označena jako SRGB."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:174
 msgid "Process"
-msgstr ""
+msgstr "Proces"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:176
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
+"Na obrázky importované jako textury lze použít některé speciální procesy."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:179
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Oprava okraje Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:181
 msgid ""
@@ -434,16 +530,20 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
+"Tím se pixely stejné okolní barvy dostanou z průhlednosti do neprůhlednosti. "
+"Pomáhá zmírnit efekt obrysů při exportu obrázků z Photoshopu apod."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:186
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr ""
+"Pokud není potřeba nastavit konkrétní hodnoty, je dobré nechat ji ve "
+"výchozím nastavení zapnutou."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid "Premultiplied Alpha"
-msgstr ""
+msgstr "Přednásobená Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:191
 msgid ""
@@ -452,10 +552,14 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"Alternativou pro opravu ztmavených okrajů je použití přednásobené alfa. "
+"Povolením této možnosti bude textura převedena do tohoto formátu. Mějte na "
+"paměti, že na prvcích plátna, které to potřebují, bude třeba vytvořit "
+"materiál, který bude používat režim prolnutí PREMULT ALPHA."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:195
 msgid "HDR as sRGB"
-msgstr ""
+msgstr "HDR jako sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:197
 msgid ""
@@ -463,10 +567,13 @@ msgid ""
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
+"Několik souborů HDR je poškozeno a obsahuje barevná data sRGB. Doporučujeme "
+"je nepoužívat, ale v nejhorším případě zapnutím této možnosti dosáhnete "
+"toho, že budou vypadat správně."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:200
 msgid "Invert Color"
-msgstr ""
+msgstr "Invertovat barvu"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:202
 msgid ""
@@ -474,14 +581,17 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"Obrátí barvu obrázku. To je užitečné například pro převod výškové mapy "
+"vygenerované externím programem na mapu hloubky pro použití s :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "Svg"
-msgstr ""
+msgstr "Svg"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:208
 msgid "Scale"
-msgstr ""
+msgstr "Měřítko"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -489,3 +599,6 @@ msgid ""
 "image. The default scale (1.0) will make the imported SVG match its original "
 "design scale."
 msgstr ""
+"Tato možnost se vztahuje pouze na soubory SVG. Ovládá měřítko obrázku SVG. "
+"Při výchozím měřítku (1,0) bude importovaný SVG odpovídat původnímu měřítku "
+"návrhu."

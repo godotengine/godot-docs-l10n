@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,12 +232,11 @@ msgid "Opening PCK files at runtime"
 msgstr "Відкриття файлів PCK під час виконання"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
+#, fuzzy
 msgid ""
-"To import a PCK file, one uses a one-liner. Keep in mind, there is no error "
-"or exception if the import fails. Instead, one might have to create some "
-"validation code as a layer on top. The following example expects a “mod.pck” "
-"file in the directory of the games executable. The PCK file contains a "
-"“mod_scene.tscn” test scene in its root."
+"To import a PCK file, one uses the ProjectSettings singleton. The following "
+"example expects a “mod.pck” file in the directory of the games executable. "
+"The PCK file contains a “mod_scene.tscn” test scene in its root."
 msgstr ""
 "Щоб імпортувати файл PCK, використовується один-вкладиш (one-liner). "
 "Пам'ятайте, що помилки, чи винятку, якщо імпорт не вдається, немає. "
@@ -245,7 +244,7 @@ msgstr ""
 "приклад очікує на файл “mod.pck” в каталозі виконуваних ігор. Файл PCK "
 "містить у своєму корені тестову сцену “mod_scene.tscn”."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
 msgid ""
 "By default, if you import a file with the same file path/name as one you "
 "already have in your project, the imported one will replace it. This is "
@@ -255,13 +254,13 @@ msgid ""
 "content of a previously loaded PCK."
 msgstr ""
 "Якщо ви імпортуєте файл із тим самим шляхом/ім'ям файлу, який ви вже маєте у "
-"своєму проекті, імпортований файл замінить його. Це те, на що слід вважати "
+"своєму проєкті, імпортований файл замінить його. Це те, на що слід вважати "
 "при створенні DLC, або модів (вирішується легко за допомогою інструменту, що "
 "виділяє моди до певної під-папки модів). Однак це також спосіб створення "
 "патчів для власної гри. Файл PCK такого типу може виправити вміст "
 "завантаженої раніше PCK."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:129
 msgid ""
 "To opt out of this behavior, pass ``false`` as the second argument to :ref:"
 "`ProjectSettings.load_resource_pack() "
@@ -271,7 +270,7 @@ msgstr ""
 "аргумента в :ref:`ProjectSettings.load_resource_pack() "
 "<class_ProjectSettings_method_load_resource_pack>`."
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:133
 msgid ""
 "For a C# project, you need to build the DLL and place it in the project "
 "directory first. Then, before loading the resource pack, you need to load "
@@ -281,11 +280,11 @@ msgstr ""
 "каталозі проєктів. Потім перед завантаженням пакета ресурсів потрібно "
 "завантажити його DLL наступним чином: ``Assembly.LoadFile(\"mod.dll\")``"
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:138
 msgid "Summary"
 msgstr "Підсумок"
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:140
 msgid ""
 "This tutorial should illustrate how easy adding mods, patches or DLC to a "
 "game is. The most important thing is to identify how one plans to distribute "

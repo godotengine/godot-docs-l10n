@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 "editor."
 msgstr ""
 "Набір шаблонів скриптів надається за замовчуванням, але також можна "
-"змінювати існуючі та створювати нові, як для проекту, так і для редактора."
+"змінювати існуючі та створювати нові, як для проєкту, так і для редактора."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
 msgid "Locating the templates"
@@ -55,7 +55,7 @@ msgid ""
 "These are available globally throughout any project. The location of these "
 "templates are determined per each OS:"
 msgstr ""
-"Вони доступні глобально в рамках будь-якого проекту. Розташування цих "
+"Вони доступні глобально в рамках будь-якого проєкту. Розташування цих "
 "шаблонів визначається для кожної ОС:"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:25
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:34
 msgid "Project-defined templates"
-msgstr "Шаблони, визначені проектом"
+msgstr "Шаблони, визначені проєктом"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:36
 msgid ""
@@ -102,7 +102,7 @@ msgid ""
 "If no ``script_templates`` directory is found within a project, it is simply "
 "ignored."
 msgstr ""
-"Якщо в проекті не знайдено каталог ``script_templates``, то він просто "
+"Якщо в проєкті не знайдено каталог ``script_templates``, то він просто "
 "ігнорується."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:45
@@ -132,9 +132,9 @@ msgid ""
 msgstr ""
 "Шаблони скриптів мають те саме розширення, що і звичайні файли скриптів. Це "
 "може призвести до проблеми з парсером скриптів, який розглядає ці шаблони як "
-"справжні скрипти в рамках проекту. Щоб цього уникнути, не забудьте "
+"справжні скрипти в рамках проєкту. Щоб цього уникнути, не забудьте "
 "проігнорувати каталог, що їх містить, створивши файл ``.gdignore``. Каталог "
-"більше не буде видно у всій файловій системі проекту, проте шаблони можуть "
+"більше не буде видно у всій файловій системі проєкту, проте шаблони можуть "
 "бути змінені зовнішнім текстовим редактором у будь-який час."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:59
@@ -143,7 +143,7 @@ msgid ""
 "specific templates given both scripts have the same filename."
 msgstr ""
 "Вбудовані шаблони редактора автоматично перекриваються шаблонами для "
-"конкретного проекта, оскільки обидва скрипти мають однакову назву файлу."
+"конкретного проєкта, оскільки обидва скрипти мають однакову назву файлу."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:63
 msgid "Default template"

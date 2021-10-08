@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,19 +112,19 @@ msgstr "主题选项"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:57
 msgid "Each kind of option in a theme can be:"
-msgstr "一个主题中的每种选项可以是:"
+msgstr "一个主题中的每种选项可以是："
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:59
 msgid ""
 "**An integer constant**: A single numerical constant. Generally used to "
 "define spacing between components or alignment."
-msgstr "**整数常量** : 一个数值常量. 通用用于定义组件之间的间距和对齐相关设置."
+msgstr "**整数常量** ：一个数值常量，一般用于定义组件的间距和对齐相关设置。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:61
 msgid ""
 "**A Color**: A single color, with or without transparency. Colors are "
 "usually applied to fonts and icons."
-msgstr "**颜色** : 单一颜色, 具不具备透明度皆可. 颜色通常应用于字体和图标."
+msgstr "**颜色** ：单一颜色，具不具备透明度皆可。颜色通常应用于字体和图标。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:63
 msgid ""
@@ -132,22 +132,22 @@ msgid ""
 "are, they represent handles to pick or icons in a complex control (such as a "
 "file dialog)."
 msgstr ""
-"**纹理** : 一个单独的图像. 纹理并不经常使用, 但当它们被使用时, 表示复杂控件中"
-"的选取手柄或图标, 如文件对话框."
+"**纹理** ：一个单独的图像。纹理并不经常使用，但当它们被使用时，表示复杂控件中"
+"的选取手柄或图标（如文件对话框）。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:66
 msgid ""
 "**A Font**: Every control that uses text can be assigned the fonts used to "
 "draw strings."
-msgstr "**字体** : 每个使用文本的控件都可以设置字体用于绘制字符串."
+msgstr "**字体** ：每个使用文本的控件都可以设置字体用于绘制字符串。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:68
 msgid ""
 "**A StyleBox**: Stylebox is a resource that defines how to draw a panel in "
 "varying sizes (more information on them later)."
 msgstr ""
-"**风格箱** : 风格箱是一种资源, 用以定义如何绘制不同大小的面板 (之后见更多信"
-"息)."
+"**样式盒** ：样式盒（Stylebox）是一种资源，用以定义如何绘制不同大小的面板（更"
+"多信息见下文）。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:71
 msgid "Every option is associated with:"
@@ -267,9 +267,9 @@ msgid ""
 "not stretch when the texture is stretched. This is called nine-patch or "
 "\"3x3\" stretching:"
 msgstr ""
-"从 ``Styles`` 中, 打开可能显示 \"null\" 旁边的 \"Normal\" 下拉菜单, 创建一个 "
-"\"New StyleBoxTexture\" , 然后编辑它. 一个纹理样式盒子包含一个纹理和边距的尺"
-"寸, 当纹理被拉伸时, 边距不会被拉伸. 这就是所谓的九宫格或 \"3x3\" 拉伸:"
+"在 ``Styles`` 中，打开可能显示“空”旁边的“Normal”下拉菜单，选择“新建 "
+"StyleBoxTexture”，然后编辑。纹理样式盒包含一个纹理和边距的尺寸，当纹理被拉伸"
+"时，边距不会被拉伸。这就是所谓的九宫格或“3x3”拉伸："
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:169
 msgid ""
@@ -278,9 +278,9 @@ msgid ""
 "supplied font as the button font and change the font color to black. Soon, "
 "your button will look different and retro:"
 msgstr ""
-"重复上述步骤并添加其他资源. 示例文件中没有提供 \"Hover\" 或 \"Disabled\" 的图"
-"像, 因此使用与 \"Normal\" 状态相同的 stylebox. 将提供的字体设置为按钮字体, 并"
-"将字体颜色更改为黑色. 很快地, 您的按钮将看起来不同了, 并且变得复古:"
+"重复上述步骤并添加其他资源。示例文件中没有提供“Hover”和“Disabled”的图片，因此"
+"使用与“Normal”状态相同的样式盒。将提供的字体设置为按钮字体，并将字体颜色更改"
+"为黑色。很快地，你的按钮就看起来不同了，并且变得复古："
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:176
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,14 +134,13 @@ msgstr ""
 "ref:`class_EditorPlugin`."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:77
-#, fuzzy
 msgid ""
 "In addition to the EditorPlugin script, any other GDScript that your plugin "
 "uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
 "editor will act like an empty file!"
 msgstr ""
-"除了EditorPlugin脚本之外, 插件所使用的任何其他GDScript也必须是一个tool. 任何"
-"没有 ``tool`` 导入编辑器的GDScript都会像一个空文件一样!"
+"除了这个 EditorPlugin 脚本之外，插件用到的其他 GDScript *也* 必须是工具脚本。"
+"没有 ``tool`` 的 GDScript 在导入编辑器后都会像空文件一样！"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:81
 msgid ""

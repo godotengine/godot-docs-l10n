@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,8 @@ msgstr ""
 "Skopiuj to repozytorium: `<https://github.com/godotengine/godot-cpp>`__."
 
 #: ../../docs/community/contributing/building_the_manual.rst:13
-#, fuzzy
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
-msgstr "`Python 2.7+ lub Python 3.5+ <https://www.python.org/>`__."
+msgstr "Zainstaluj `Sphinx <https://www.sphinx-doc.org/>`__"
 
 #: ../../docs/community/contributing/building_the_manual.rst:14
 msgid ""
@@ -69,52 +68,51 @@ msgid ""
 "commands to clone the repository and then install all requirements."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:29
+#: ../../docs/community/contributing/building_the_manual.rst:24
 msgid ""
-"On Linux distributions, you may need to write ``pip3`` instead of ``pip`` "
-"because you generally have both Python 2 and 3 installed on your system. "
-"Alternatively, you can explicitly ask Python 3 to execute its version of pip "
-"as a module like so: ``python3 -m pip``."
+"You may need to write ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) "
+"instead of ``pip3``. If both approaches fail, `check that you have pip3 "
+"installed <https://pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:34
+#: ../../docs/community/contributing/building_the_manual.rst:33
 msgid ""
 "With the programs installed, you can build the HTML documentation from the "
 "root folder of this repository with the following command:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:45
+#: ../../docs/community/contributing/building_the_manual.rst:44
 #, fuzzy
 msgid "If you run into errors, you may try the following command:"
 msgstr "Scena Mob będzie korzystać z następujących węzłów:"
 
-#: ../../docs/community/contributing/building_the_manual.rst:51
+#: ../../docs/community/contributing/building_the_manual.rst:50
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
 "swapping, which slows it down. If you have at least 16 GB of RAM, you can "
 "speed up compilation by running:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:63
+#: ../../docs/community/contributing/building_the_manual.rst:62
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:66
+#: ../../docs/community/contributing/building_the_manual.rst:65
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:69
+#: ../../docs/community/contributing/building_the_manual.rst:68
 msgid ""
 "In case you of a ``MemoryError`` or ``EOFError``, you can remove the "
 "``classes/`` folder and run ``make`` again. This will drop the class "
 "references from the final HTML documentation but will keep the rest intact."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:73
+#: ../../docs/community/contributing/building_the_manual.rst:72
 msgid ""
 "If you delete the ``classes/`` folder, do not use ``git add .`` when working "
 "on a pull request or the whole ``classes/`` folder will be removed when you "
@@ -122,23 +120,23 @@ msgid ""
 "issues/3157>`__ for more detail."
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:79
+#: ../../docs/community/contributing/building_the_manual.rst:78
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:87
+#: ../../docs/community/contributing/building_the_manual.rst:86
 msgid "Building with Sphinx and virtualenv"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:89
+#: ../../docs/community/contributing/building_the_manual.rst:88
 msgid ""
 "If you want your Sphinx installation scoped to the project, you can install "
 "sphinx-build using virtualenv. To do so, run this command from this "
 "repository's root folder:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:99
+#: ../../docs/community/contributing/building_the_manual.rst:98
 msgid "Then, run ``make html`` as shown above."
 msgstr ""

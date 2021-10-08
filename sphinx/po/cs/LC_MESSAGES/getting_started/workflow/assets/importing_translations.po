@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "Importování překladů"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Hry a internacionalizace"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "released in several languages. To handle this, internationalized text must "
 "be supported in any modern game engine."
 msgstr ""
+"Svět je plný různých jazyků a kultur, a proto jsou dnes hry vydávány v "
+"několika jazycích. Aby to bylo možné zvládnout, musí být v každém moderním "
+"herním enginu podporován internacionalizovaný text."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:13
 msgid ""
@@ -39,6 +42,10 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"V běžných desktopových nebo mobilních aplikacích se internacionalizovaný "
+"text obvykle nachází v souborech se zdroji (nebo v souborech .po pro soubory "
+"GNU). Hry však mohou používat o několik řádů více textu než aplikace, takže "
+"musí podporovat efektivní metody pro práci se spoustou vícejazyčného textu."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:19
 msgid ""
@@ -49,6 +56,12 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"Existují dva přístupy k vytváření vícejazyčných jazykových her a aplikací. "
+"Oba jsou založeny na systému klíč:hodnota. Prvním je použití jednoho z "
+"jazyků jako klíče (obvykle angličtiny), druhým je použití specifického "
+"identifikátoru. První přístup je pravděpodobně jednodušší pro vývoj, pokud "
+"je hra vydána nejprve v angličtině, později v dalších jazycích, ale "
+"naprostou noční můrou, pokud se pracuje s mnoha jazyky najednou."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:27
 msgid ""
@@ -57,6 +70,10 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"Obecně se ve hrách používá druhý přístup a pro každý řetězec se používá "
+"jedinečné ID. To umožňuje revidovat text při překladu do jiných jazyků. "
+"Jedinečným ID může být číslo, řetězec nebo řetězec s číslem (stejně je to "
+"jen jedinečný řetězec)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:32
 msgid ""
@@ -64,10 +81,13 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Pokud potřebujete výkonnější formát souboru, Godot podporuje také načítání "
+"překladů zapsaných ve formátu gettext ``.po``. Podrobnosti viz :ref:"
+"`doc_localization_using_gettext`."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:37
 msgid "Translation format"
-msgstr ""
+msgstr "Formát překladu"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:39
 msgid ""
@@ -78,6 +98,11 @@ msgid ""
 "without a `byte order mark <https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 msgstr ""
+"Pro doplnění a efektivní podporu překladů je Godot vybaven speciálním "
+"importérem, který umí číst soubory CSV. Většina tabulkových editorů ví jak "
+"exportovat do tohoto formátu, takže jediným požadavkem je, aby soubory měly "
+"speciální uspořádání. Soubory CSV **musí** být uloženy v kódování UTF-8 bez "
+"`značky pořadí bajtů <https://en.wikipedia.org/wiki/Byte_order_mark>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:47
 msgid ""
@@ -86,51 +111,57 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Ve výchozím nastavení Microsoft Excel vždy ukládá soubory CSV v kódování "
+"ANSI, nikoli UTF-8. Neexistuje žádný vestavěný způsob, jak to udělat, "
+"východiskem však mohou být řešení popsaná `zde <https://stackoverflow.com/"
+"questions/4221176/excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Místo toho doporučujeme použít `LibreOffice <https://www.libreoffice.org/"
+">`__ nebo Google Sheets."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 msgid "CSV files must be formatted as follows:"
-msgstr ""
+msgstr "Soubory CSV musí být naformátovány následujícím způsobem:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "keys"
-msgstr ""
+msgstr "keys"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:66
 msgid ""
@@ -142,82 +173,90 @@ msgid ""
 "and \"Key1\" will be different keys. The top-left cell is ignored and can be "
 "left empty or having any content. Here's an example:"
 msgstr ""
+"Značky \"lang\" musí představovat jazyk, který musí být jedním z :ref:`valid "
+"locales <doc_locales>` podporovaných enginem. Značky \"KEY\" musí být "
+"jedinečné a reprezentovat univerzální řetězec (obvykle se píší velkými "
+"písmeny, aby se odlišily od ostatních řetězců). Tyto klíče budou za běhu "
+"nahrazeny odpovídajícím přeloženým řetězcem. Všimněte si, že velká a malá "
+"písmena jsou důležitá, \"KEY1\" a \"Key1\" budou různé klíče. Levá horní "
+"buňka je ignorována a může zůstat prázdná nebo mít libovolný obsah. Zde je "
+"příklad:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "GREET"
-msgstr ""
+msgstr "GREET"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "Hola, amigo!"
-msgstr ""
+msgstr "Hola, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "ASK"
-msgstr ""
+msgstr "ASK"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "How are you?"
-msgstr ""
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "BYE"
-msgstr ""
+msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Goodbye"
-msgstr ""
+msgstr "Goodbye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "QUOTE"
-msgstr ""
+msgstr "QUOTE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Hello\" said the man."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:87
 msgid ""
@@ -231,16 +270,28 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
+"Stejný příklad je uveden níže jako soubor prostého textu oddělený čárkami, "
+"který by měl být výsledkem úpravy výše uvedeného v tabulce. Při editaci "
+"verze ve formátu prostého textu nezapomeňte přikládat dvojité uvozovky "
+"jakékoli zprávě, která obsahuje čárky, konce řádků nebo dvojité uvozovky, "
+"aby čárky nebyly analyzovány jako oddělovače, konce řádků nevytvářely nové "
+"položky a dvojité uvozovky nebyly analyzovány jako ohraničující znaky. "
+"Ujistěte se, že escapujete libovolné dvojité uvozovky ve zprávě tím, že jim "
+"přeřadíte další dvojitou uvozovku. Případně můžete v možnostech importu "
+"vybrat jiný oddělovač než čárku."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:106
 msgid "CSV importer"
-msgstr ""
+msgstr "Importér CSV"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:108
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot ve výchozím nastavení zpracovává soubory CSV jako překlady. "
+"Naimportuje je a k nim vygeneruje jeden nebo více komprimovaných souborů s "
+"přeloženými zdroji."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:111
 msgid ""
@@ -248,6 +299,10 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"Importem se překlad také přidá do seznamu překladů, které se mají načíst při "
+"spuštění hry. Tento seznam je uvedený v souboru project.godot (nebo v "
+"nastavení projektu). Godot umožňuje také načítání a odebírání překladů za "
+"běhu."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:116
 msgid ""
@@ -255,7 +310,12 @@ msgid ""
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"Vyberte soubor ``.csv`` a přejděte do doku **Import**, kde můžete definovat "
+"možnosti importu. Můžete přepnout kompresi importovaných překladů a vybrat "
+"oddělovač, který se má použít při analýze souboru CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:122
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
+"Po jakékoli změně těchto možností nezapomeňte kliknout na tlačítko **Znovu "
+"importovat**."

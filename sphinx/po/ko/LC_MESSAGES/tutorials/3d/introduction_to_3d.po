@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid ""
 "images)."
 msgstr ""
 "이미지 컨텐츠를 불러오고 그리는 것이 직설적인 2D와는 다르게 3D는 약간 더 어렵"
-"습니다. 컨텐츠는 Godot으로 가져오려면 특수한 3D 도구(일반적으로 DCCs 라고 함)"
+"습니다. 컨텐츠는 Godot으로 불러오려면 특수한 3D 도구(일반적으로 DCCs 라고 함)"
 "로 만들고 교환 파일 형식으로 내보내야 합니다(3D 형식이 이미지만큼 표준화되지 "
 "않음)."
 
@@ -103,27 +103,26 @@ msgid "DCC-created models"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
-#, fuzzy
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
 "entire scenes (just as they look in the DCC), including animation, skeletal "
 "rigs, blend shapes, etc."
 msgstr ""
-"Godot에서 3D 모델을 가져오기 위한 두 가지 파이프라인이 있습니다. 가장 보편적"
-"인 첫번째는 :ref:`doc_importing_3d_scenes` 와 같이 전체 씬(애니메이션, 골격 "
-"리그(skeletal rigs), 도형 혼합(blend shapes) 등을 포함)을 가져옵니다."
+"Godot에서 3D 모델을 불러오기 위한 두 가지 파이프라인이 있습니다. 가장 보편적"
+"인 첫번째는 :ref:`doc_importing_3d_scenes`\\ 와 같이 애니메이션, 골격 리그"
+"(skeletal rigs), 모양 혼합(blend shapes) 등을 포함한 전체 씬을 (DCC에서 보이"
+"는 것과 같이) 가져옵니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
-#, fuzzy
 msgid ""
 "The second pipeline is by importing simple .OBJ files as mesh resources, "
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
-"두 번째 파이프라인은 .OBJ 파일을 메시 리소스로 단순하게 가져오는 것입니다. 디"
-"스플레이를 위해 :ref:`MeshInstance <class_MeshInstance>` 노드에 넣을 수도 있"
-"습니다."
+"두 번째 파이프라인은 간단한 .OBJ 파일을 메시 리소스로 가져오는 것입니다. 이"
+"는 디스플레이를 위해 :ref:`MeshInstance <class_MeshInstance>` 노드에 넣을 수"
+"도 있습니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
@@ -148,15 +147,14 @@ msgstr ""
 "tangents 등을 위한 도우미를 제공합니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
-#, fuzzy
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
-"어쨌든, 이 메소드는 정적 지오메트리(자주 업데이트되지 않는 모델)를 생성하기 "
-"위한 것입니다. 정점 배열을 만들고 3D API에 배열을 제출하는 것은 상당한 성능 "
-"비용이 있습니다"
+"어쨌든, 이 메서드는 정적 기하(자주 업데이트되지 않는 모델)를 생성하기 위한 것"
+"입니다. 정점 배열을 만들고 3D API에 배열을 제출하는 것은 상당한 성능 비용이 "
+"있습니다"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
@@ -311,7 +309,7 @@ msgstr ""
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
-msgstr ""
+msgstr "뷰 옵션은 뷰포트의 툴바에서 \"보기\" 메뉴에 의해 제어됩니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"

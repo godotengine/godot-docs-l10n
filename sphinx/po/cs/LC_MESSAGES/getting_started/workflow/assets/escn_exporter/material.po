@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "Materiály"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "Použití stávajících materiálů Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:7
 msgid ""
@@ -33,6 +33,10 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"Jedním ze způsobů, jak může exportér zpracovávat materiály, je pokusit se "
+"přiřadit materiál Blenderu k existujícímu materiálu Godot. Výhodou tohoto "
+"postupu je možnost využít všechny funkce materiálového systému Godot, ale "
+"znamená to, že model s použitým materiálem v Blenderu neuvidíte."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
@@ -43,16 +47,24 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
+"Za tímto účelem se exportér pokusí najít materiály Godot s názvy, které se "
+"shodují s názvy materiálů v programu Blender. Pokud tedy exportujete objekt "
+"v Blenderu s názvem materiálu ``PurpleDots``, pak exportér vyhledá soubor "
+"``PurpleDots.tres`` a přiřadí jej objektu. Pokud tento soubor není "
+"``SpatialMaterial`` nebo ``ShaderMateriál`` nebo pokud jej nelze najít, pak "
+"se exportér vrátí k exportu materiálu z Blenderu."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"Místo, kde exportér hledá soubor ``.tres``, je určeno volbou \"Material "
+"Search Paths\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
-msgstr ""
+msgstr "Může nabývat hodnot:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
@@ -61,6 +73,9 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"Adresář projektu - Pokusí se najít adresář ``project.Godot`` a rekurzivně "
+"prohledá podadresáře. Pokud ``project.Godot`` nenajde, vyhodí chybu. To je "
+"užitečné pro většinu projektů, kde jsou konflikty názvů nepravděpodobné."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
@@ -68,14 +83,17 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"Adresář exportu - vyhledá materiály v podadresářích umístění exportu. To je "
+"užitečné pro projekty, kde můžete mít duplicitní názvy materiálů a "
+"potřebujete mít větší kontrolu nad tím, jaký materiál bude přiřazen."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
-msgstr ""
+msgstr "Žádné - Nevyhledá materiály. Exportujte je ze souboru Blenderu."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
 msgid "Export of Cycles/EEVEE materials"
-msgstr ""
+msgstr "Export materiálů Cycles/EEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -83,24 +101,29 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"Exportér má primitivní podporu pro převod stromu uzlů materiálů Cycles/EEVEE "
+"na materiál Godot Shader. Všimněte si, že některé uzly Shaderu nejsou zatím "
+"podporovány kvůli obtížím při implementaci, což jsou:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "všechny ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"uzly shaderu kromě ``PrincipledBSDF``, ``Difuse``, ``Glossy``, ``Glass``, "
+"``add shader`` a ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:50
 msgid ""
@@ -108,6 +131,9 @@ msgid ""
 "output shader node, it is the only one guaranteed to be exactly correct. "
 "Others are just based on approximation."
 msgstr ""
+"Pokud je to možné, zkuste jako výstupní shaderový uzel použít uzel "
+"PrincipledBSDF s distribucí GGX, jen u něj je zaručena přesná správnost. "
+"Ostatní jsou založeny pouze na aproximaci."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
 msgid ""
@@ -116,10 +142,14 @@ msgid ""
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
+"Někdy se může stát, že materiál není pro export platný (např. má nějaký "
+"nepodporovaný uzel) nebo používá interní engine Blenderu, exportuje se pouze "
+"difúzní barva a několik příznaků (např. nestínovaný) a tvoří prostorový "
+"materiál."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
-msgstr ""
+msgstr "Generování externích materiálů"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""
@@ -127,9 +157,14 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"Výchozí konfigurace exportu materiálů by měla všechny materiály uchovávat v "
+"interním souboru ``escn``. Existuje volba, která by mohla povolit generování "
+"externího souboru ``.material``, když se soubor ``escn`` otevře v Godotu."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:67
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"Soubor ``.material`` lze přiřadit k libovolnému slotu materiálu jako externí "
+"zdroj."

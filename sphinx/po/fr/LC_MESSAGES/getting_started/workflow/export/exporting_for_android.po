@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr "Exporter pour Android"
+msgstr "Exportation vers Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
@@ -218,6 +218,9 @@ msgid ""
 "do not have an application with the same Android package name already "
 "installed on the device (but signed with a different key)."
 msgstr ""
+"Si vous obtenez une erreur indiquant *\"Could not install to device.\"*, "
+"assurez-vous qu'une application portant le même nom de paquet Android n'est "
+"pas déjà installée sur l'appareil (mais signée avec une clé différente)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
@@ -226,6 +229,10 @@ msgid ""
 "the application in question from the Android device before exporting to "
 "Android again."
 msgstr ""
+"Si une application ayant le même nom de paquet Android mais une clé de "
+"signature différente est déjà installée sur l'appareil, vous **devez** "
+"supprimer l'application en question de l'appareil Android avant de "
+"l'exporter à nouveau vers Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Providing launcher icons"

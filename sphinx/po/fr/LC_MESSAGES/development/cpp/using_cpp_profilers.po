@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:2
-#, fuzzy
 msgid "Using C++ profilers"
-msgstr "Utilisation d'un fichier"
+msgstr "Utilisation des profileurs C++"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:4
 msgid ""
 "To optimize Godot's performance, you need to know what to optimize first. To "
 "this end, profilers are useful tools."
 msgstr ""
+"Pour optimiser les performances de Godot, vous devez d'abord savoir ce qu'il "
+"faut optimiser. À cette fin, les profileurs sont des outils utiles."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:9
 msgid ""
@@ -34,26 +35,28 @@ msgid ""
 "may be useful in cases where the GDScript profiler is not accurate enough or "
 "is missing information due to bugs in the profiler."
 msgstr ""
+"Il existe un profileur GDScript intégré dans l'éditeur, mais l'utilisation "
+"du profileur C++ peut être utile dans les cas où le profileur GDScript n'est "
+"pas assez précis ou manque d'informations en raison de bogues dans le "
+"profileur."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:14
-#, fuzzy
 msgid "Recommended profilers"
-msgstr "Profileurs externes"
+msgstr "Profileurs recommandés"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:16
 msgid "`VerySleepy <http://www.codersnotes.com/sleepy/>`__ (Windows only)"
 msgstr ""
+"`VerySleepy <http://www.codersnotes.com/sleepy/>`__ (Windows seulement)"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:17
 msgid "`HotSpot <https://github.com/KDAB/hotspot>`__ (Linux only)"
-msgstr ""
+msgstr "`HotSpot <https://github.com/KDAB/hotspot>`__ (Linux seulement)"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:18
-#, fuzzy
 msgid "`Xcode Instruments <https://developer.apple.com/xcode/>`__ (macOS only)"
 msgstr ""
-"`XCode avec le SDK iOS <https://developer.apple.com/xcode/download>`__ (une "
-"image dmg)"
+"`Xcode Instruments <https://developer.apple.com/xcode/>`__ (macOS seulement)"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:20
 msgid ""
@@ -61,6 +64,9 @@ msgid ""
 "standalone operation and limited feature set tends to make them easier to "
 "use."
 msgstr ""
+"Ces profileurs ne sont peut-être pas les options les plus puissantes ou les "
+"plus flexibles, mais leur fonctionnement autonome et leur ensemble limité de "
+"fonctionnalités tendent à les rendre plus faciles à utiliser."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:25
 msgid ""
@@ -71,6 +77,13 @@ msgid ""
 "at the root of the VerySleepy installation folder. This folder is generally "
 "located at ``C:\\Program Files\\Very Sleepy CS``."
 msgstr ""
+"Dans sa dernière version stable (0.90 au moment de l'écriture), VerySleepy "
+"se fige lors du chargement des symboles de débogage. Pour résoudre ce "
+"problème, quittez VerySleepy puis enregistrez `ce fichier dbghelpms.dll "
+"<https://github.com/AlanIWBFT/verysleepy/"
+"raw/0523fde86f24139fd4a041319f8b59ace12f602b/dbghelp_x64/dbghelpms.dll>`__ à "
+"la racine du dossier d'installation de VerySleepy. Ce dossier est "
+"généralement situé à ``C:\\Program Files\\Very Sleepy CS``."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:31
 msgid ""
@@ -79,6 +92,10 @@ msgid ""
 "raw/0523fde86f24139fd4a041319f8b59ace12f602b/dbghelp_x86/dbghelpms.dll>`__ "
 "in the ``32`` folder of the VerySleepy installation folder."
 msgstr ""
+"Si vous déboguez une application 32 bits au lieu de 64 bits, enregistrez `ce "
+"fichier dbghelpms.dll <https://github.com/AlanIWBFT/verysleepy/"
+"raw/0523fde86f24139fd4a041319f8b59ace12f602b/dbghelp_x86/dbghelpms.dll>`__ "
+"dans le dossier ``32`` du dossier d'installation de VerySleepy."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:36
 msgid "Setting up Godot"
@@ -91,20 +108,29 @@ msgid ""
 "include debugging symbols, since these would make the download size "
 "significantly larger."
 msgstr ""
+"Pour obtenir des informations de profilage utiles, il est **absolument "
+"nécessaire** d'utiliser une version de Godot qui inclut des symboles de "
+"débogage. Les binaires officiels n'incluent pas les symboles de débogage, "
+"car ceux-ci augmenteraient considérablement la taille du téléchargement."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:42
 msgid ""
 "To get profiling data that best matches the production environment, you "
 "should compile binaries with the following SCons options:"
 msgstr ""
+"Pour obtenir des données de profilage qui correspondent le mieux à "
+"l'environnement de production, vous devez compiler les binaires avec les "
+"options SCons suivantes :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:45
 msgid "For editor binaries: ``target=release_debug use_lto=yes``"
-msgstr ""
+msgstr "Pour les binaires de l'éditeur : ``target=release_debug use_lto=yes``"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:46
 msgid "For debug export templates: ``target=release_debug use_lto=yes``"
 msgstr ""
+"Pour les modèles d'exportation de débogage : ``target=release_debug "
+"use_lto=yes``"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:47
 msgid ""
@@ -112,6 +138,9 @@ msgid ""
 "- ``debug_symbols=yes`` is required as export templates are stripped from "
 "debugging symbols by default."
 msgstr ""
+"Pour les modèles d'exportation de version : ``tools=no target=release "
+"debug_symbols=yes`` - ``debug_symbols=yes`` est nécessaire car les modèles "
+"d'exportation sont dépourvus de symboles de débogage par défaut."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:50
 msgid ""
@@ -119,6 +148,9 @@ msgid ""
 "``target=debug`` without LTO), but results will naturally be less "
 "representative of real world conditions."
 msgstr ""
+"Il est possible de faire tourner un profileur sur des builds moins optimisés "
+"(par exemple ``target=debug`` sans LTO), mais les résultats seront "
+"naturellement moins représentatifs des conditions réelles."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:55
 msgid ""
@@ -126,10 +158,14 @@ msgid ""
 "after compiling the binaries. Otherwise, you will no longer get useful "
 "profiling information when running a profiler."
 msgstr ""
+"N'enlevez *pas* les symboles de débogage sur les binaires en utilisant la "
+"commande ``strip`` après avoir compilé les binaires. Sinon, vous "
+"n'obtiendrez plus d'informations de profilage utiles lorsque vous utiliserez "
+"un profileur."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:60
 msgid "Benchmarking startup/shutdown times"
-msgstr ""
+msgstr "Analyse comparative(Benchmarking) des temps de démarrage et d'arrêt"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:62
 msgid ""
@@ -139,22 +175,28 @@ msgid ""
 "option works with ``--editor``, ``--project-manager`` or ``--path <path to "
 "project directory>`` (which runs a project directly)."
 msgstr ""
+"Si vous cherchez à optimiser les performances de démarrage/arrêt de Godot, "
+"vous pouvez indiquer au profileur d'utiliser l'option de ligne de commande "
+"``--quit`` sur le binaire Godot. Ceci quittera Godot juste après son "
+"démarrage. L'option ``--quit`` fonctionne avec ``--editor``, ``--project-"
+"manager`` ou ``--path <path to project directory>`` (qui exécute un projet "
+"directement)."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:70
-#, fuzzy
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more command line arguments "
 "supported by Godot."
-msgstr "Voir :ref:`command line tutorial <doc_command_line_tutorial>`."
+msgstr ""
+"Voir :ref:`doc_command_line_tutorial` pour plus d'arguments de ligne de "
+"commande supportés par Godot."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:74
-#, fuzzy
 msgid "Profiler-specific instructions"
-msgstr "Introduction à la physique"
+msgstr "Instructions spécifiques au profileur"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:77
 msgid "VerySleepy"
-msgstr ""
+msgstr "VerySleepy"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:79
 msgid ""
@@ -163,26 +205,36 @@ msgid ""
 "will not track the child process since the project manager will spawn a "
 "child process for every project edited or run."
 msgstr ""
+"Démarrez d'abord l'éditeur Godot ou votre projet. Si vous démarrez le "
+"gestionnaire de projet, assurez-vous de modifier ou d'exécuter un projet en "
+"premier. Sinon, le profileur ne suivra pas le processus enfant puisque le "
+"gestionnaire de projet créera un processus enfant pour chaque projet édité "
+"ou exécuté."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:83
 msgid ""
 "Open VerySleepy and select the Godot executable in the list of processes on "
 "the left:"
 msgstr ""
+"Ouvrez VerySleepy et sélectionnez l'exécutable Godot dans la liste des "
+"processus à gauche :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:87
 msgid "Click the **Profile All** button on the right to start profiling."
 msgstr ""
+"Cliquez sur le bouton **Profile All** à droite pour commencer le profilage."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:88
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click **Stop** (*not* Abort)."
 msgstr ""
+"Effectuez les actions que vous souhaitez profiler dans l'éditeur ou le "
+"projet. Lorsque vous avez terminé, cliquez sur **Stop** (*pas* Abort)."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:89
 msgid "Wait for the results window to appear."
-msgstr ""
+msgstr "Attendez que la fenêtre des résultats s'affiche."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:90
 msgid ""
@@ -192,31 +244,40 @@ msgid ""
 "then choosing **Filter Module to <Godot executable name>** in the dropdown "
 "that appears."
 msgstr ""
+"Une fois que la fenêtre de résultats apparaît, filtrez la vue pour supprimer "
+"les modules externes (tels que le pilote graphique). Vous pouvez filtrer par "
+"module en trouvant une ligne dont le **Module** correspond au nom de "
+"l'exécutable Godot, en faisant un clic droit sur cette ligne puis en "
+"choisissant **Filter Module to <Nom de l'exécutable Godot>** dans la liste "
+"déroulante qui apparaît."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:94
-#, fuzzy
 msgid "Your results window should now look something like this:"
-msgstr "Votre squelette final devrait ressembler à ceci :"
+msgstr "Votre fenêtre de résultats devrait maintenant ressembler à ceci :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:99
 msgid "HotSpot"
-msgstr ""
+msgstr "HotSpot"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:101
 msgid "Open HotSpot. Click **Record Data**:"
-msgstr ""
+msgstr "Ouvrez HotSpot. Cliquez sur **Record Data** :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:105
 msgid ""
 "In the next window, specify the path to the Godot binary that includes debug "
 "symbols."
 msgstr ""
+"Dans la fenêtre suivante, indiquez le chemin d'accès au binaire Godot qui "
+"inclut les symboles de débogage."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:106
 msgid ""
 "Specify command line arguments to run a specific project, with or without "
 "the editor."
 msgstr ""
+"Spécifiez les arguments de la ligne de commande pour exécuter un projet "
+"spécifique, avec ou sans l'éditeur."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:107
 msgid ""
@@ -224,6 +285,9 @@ msgid ""
 "used for the ``--path`` command line argument. Otherwise, it must be set to "
 "that the relative path to the project is valid."
 msgstr ""
+"Le chemin du répertoire de travail peut être n'importe quoi si un chemin "
+"absolu est utilisé pour l'argument de ligne de commande ``--path``. Sinon, "
+"il doit être défini pour que le chemin relatif du projet soit valide."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:110
 msgid ""
@@ -232,14 +296,19 @@ msgid ""
 "events can be captured. Otherwise, some events may be missing in the "
 "capture. Your settings should now look something like this:"
 msgstr ""
+"Assurez-vous que **Elevate Privileges** est coché si vous avez des "
+"privilèges administratifs. Bien que cela ne soit pas essentiel pour le "
+"profilage de Godot, cela permet de s'assurer que tous les événements peuvent "
+"être capturés. Sinon, certains événements peuvent manquer dans la capture. "
+"Vos paramètres devraient maintenant ressembler à ceci :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:117
-#, fuzzy
 msgid ""
 "Click **Start Recording** and perform the actions you wish to profile in the "
 "editor/project."
 msgstr ""
-"Cliquez sur **Installer & Éditer** et le projet s'ouvrira dans l'éditeur."
+"Cliquez sur **Start Recording** et effectuez les actions que vous souhaitez "
+"profiler dans l'éditeur/le projet."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:118
 msgid ""
@@ -247,12 +316,18 @@ msgid ""
 "HotSpot to stop profiling early. Stopping profiling early can result in "
 "cleaner profiles if you're not interested in the engine's quit procedure."
 msgstr ""
+"Quittez l'éditeur/le projet normalement ou utilisez le bouton **Stop "
+"Profiling** dans HotSpot pour arrêter le profilage prématurément. L'arrêt "
+"précoce du profilage peut donner des profils plus propres si vous n'êtes pas "
+"intéressé par la procédure de sortie du moteur."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:121
 msgid ""
 "Click **View Results** and wait for the profiling visualization to be "
 "generated:"
 msgstr ""
+"Cliquez sur **View Results** et attendez que la visualisation du profilage "
+"soit générée :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:125
 msgid ""
@@ -262,6 +337,12 @@ msgid ""
 "functions are therefore the most important ones to optimize, since "
 "optimizing them will improve performance the most."
 msgstr ""
+"Utilisez les onglets en haut de la page pour naviguer entre les différentes "
+"vues. Ces vues présentent les mêmes données, mais de manière différente. "
+"L'onglet **Flame Graph** est un bon moyen de voir en un coup d'œil quelles "
+"fonctions prennent le plus de temps. Ces fonctions sont donc les plus "
+"importantes à optimiser, car c'est en les optimisant que vous améliorerez le "
+"plus les performances."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:130
 msgid ""
@@ -270,6 +351,10 @@ msgid ""
 "thread. This lets you see threads that can be a bottleneck at a given point "
 "in time."
 msgstr ""
+"En bas de tous les onglets, à l'exception de **Summary**, vous verrez "
+"également une liste des threads CPU lancés par le moteur parmi lesquels "
+"l'utilisation du CPU pour chaque thread. Cela vous permet de voir les "
+"threads qui peuvent être un goulot d'étranglement à un moment donné."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:138
 msgid ""
@@ -278,26 +363,34 @@ msgid ""
 "then setting the **Launch Application** dropdown option to **Attach To "
 "Process(es)**."
 msgstr ""
+"Si vous ne voulez pas que la procédure de démarrage soit incluse dans le "
+"profil, vous pouvez également attacher le HotSpot à un processus en cours "
+"d'exécution en cliquant sur **Record Data** puis en réglant l'option du menu "
+"déroulant **Launch Application** sur **Attach To Process(es)**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:143
 msgid ""
 "This process attachment-based workflow is similar to the one used by "
 "VerySleepy."
 msgstr ""
+"Ce flux de travail basé sur l'attachement au processus est similaire à celui "
+"utilisé par VerySleepy."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:146
 msgid "Xcode Instruments"
-msgstr ""
+msgstr "Xcode Instruments"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:148
 msgid ""
 "Open Xcode. Select **Open Developer Tool** - **Instruments** from the "
 "**Xcode** app menu:"
 msgstr ""
+"Ouvrez Xcode. Sélectionnez **Open Developer Tool** - **Instruments** dans le "
+"menu de l’application **Xcode** :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:149
 msgid "Double-click on **Time Profiler** in the **Instruments** window:"
-msgstr ""
+msgstr "Double-cliquez sur **Time Profiler** dans la fenêtre **Instruments** :"
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:153
 msgid ""
@@ -305,42 +398,58 @@ msgid ""
 "target...** and specify the path to the Godot binary, command line arguments "
 "and environment variables in the next window."
 msgstr ""
+"Dans la fenêtre Time Profiler, cliquez sur le menu **Target**, sélectionnez "
+"**Choose target...** et spécifiez le chemin d'accès au binaire Godot, les "
+"arguments de ligne de commande et les variables d'environnement dans la "
+"fenêtre suivante."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:159
 msgid ""
 "You can also attach the Time Profiler to a running process by selecting it "
 "from the **Target** menu."
 msgstr ""
+"Vous pouvez également attacher le Time Profiler à un processus en cours "
+"d'exécution en le sélectionnant dans le menu **Target**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:162
 msgid ""
 "Click the **Start an immediate mode recording** button to start profiling."
 msgstr ""
+"Cliquez sur le bouton **Start an immediate mode recording** pour commencer "
+"le profilage."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:166
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click the **Stop** button."
 msgstr ""
+"Effectuez les actions que vous souhaitez profiler dans l'éditeur ou le "
+"projet. Lorsque vous avez terminé, cliquez sur le bouton **Stop**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:169
 msgid "Wait for the results to appear."
-msgstr ""
+msgstr "Attendez que les résultats s'affichent."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:170
 msgid ""
 "At the bottom of the window you will see a call tree for all CPU threads "
 "started, and the **Heaviest Stack Trace** overview."
 msgstr ""
+"En bas de la fenêtre, vous verrez un arbre d'appel pour tous les threads CPU "
+"lancés, et la vue d'ensemble du **Heaviest Stack Trace**."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:172
 msgid ""
 "Select **Hide system libraries** in the **Call Tree** menu (at the bottom of "
 "window) to remove external modules."
 msgstr ""
+"Sélectionnez **Hide system libraries** dans le menu **Call Tree** (au bas de "
+"la fenêtre) pour supprimer les modules externes."
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:174
 msgid ""
 "You can use the timeline at the top of the window to display details for the "
 "specific time period."
 msgstr ""
+"Vous pouvez utiliser la ligne de temps en haut de la fenêtre pour afficher "
+"les détails pour une période spécifique."

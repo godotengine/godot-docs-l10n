@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid ""
 msgstr ""
 "Godot надає можливість використовувати власні зразки Android для збірки. "
 "Замість того, щоб використовувати вже заздалегідь створений зразок, який "
-"постачається з Godot, у папку вашого проекту встановлюється фактичний проект "
+"постачається з Godot, у папку вашого проєкту встановлюється фактичний проєкт "
 "Android Java. Потім Godot буде створювати його та використовувати, як зразок "
-"експорту кожного разу, коли ви експортуєте проект."
+"експорту кожного разу, коли ви експортуєте проєкт."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
 msgid "There are some reasons why you may want to do this:"
@@ -41,11 +41,11 @@ msgstr "Є кілька причин, через які ви можете не �
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
-msgstr "Зміна проекту до його збірки."
+msgstr "Зміна проєкту до його збірки."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr "Додавання зовнішніх SDK, які збираються разом із вашим проектом."
+msgstr "Додавання зовнішніх SDK, які збираються разом із вашим проєктом."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
@@ -65,7 +65,7 @@ msgstr "Налаштування середовища власної збірк�
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:23
 msgid "Go to the Project menu, and install the *Custom Build* template:"
 msgstr ""
-"Перейдіть в меню **Проект** та встановіть шаблон **Custom Build** (Власна "
+"Перейдіть в меню **Проєкт** та встановіть шаблон **Custom Build** (Власна "
 "збірка):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:27
@@ -83,9 +83,9 @@ msgid ""
 "your own add-ons<doc_android_plugin>`, or you really need to modify the "
 "project."
 msgstr ""
-"Проект Android на базі Gradle буде створений в ``res://android/build``. "
+"Проєкт Android на базі Gradle буде створений в ``res://android/build``. "
 "Редагувати ці файли не потрібно, якщо ви не хочете :ref:`створювати власні "
-"доповнення<doc_android_plugin>`, або вам дійсно потрібно змінити проект."
+"доповнення<doc_android_plugin>`, або вам дійсно потрібно змінити проєкт."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Enabling the custom build and exporting"
@@ -96,7 +96,7 @@ msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
-"При створенні проекту Android в **Проект > Експорт** необхідно увімкнути "
+"При створенні проєкту Android в **Проєкт > Експорт** необхідно увімкнути "
 "**Custom Build** (Власна збірка):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
@@ -105,7 +105,7 @@ msgid ""
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
-"Відтепер спроба експортувати проект, або розгортання одним клацанням, "
+"Відтепер спроба експортувати проєкт, або розгортання одним клацанням, "
 "викликатиме систему побудови `Gradle <https://gradle.org/>`__ для створення "
 "нових шаблонів (це вікно буде появлятися кожного разу):"
 

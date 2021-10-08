@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:9
-#, fuzzy
 msgid ""
 "It is often desired to make a shader that reads from the same screen to "
 "which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
@@ -35,19 +34,18 @@ msgid ""
 "problems. As a result, not even the most modern hardware supports this "
 "properly."
 msgstr ""
-"很多时候, 人们希望制作一个着色器, 从它所写入的同一个屏幕上读取信息. 由于内部"
-"硬件的限制,3D API, 如OpenGL或DirectX, 使之非常困难.GPU是极其并行的, 所以读写"
-"会导致各种缓存和一致性问题. 因此, 即使是最现代的硬件也无法正确支持这一点."
+"很多人想要让着色器在写屏幕的同时读取该屏幕的数据。因为内部硬件限制，OpenGL "
+"和 DirectX 等 3D API 都很难实现这一功能。GPU 是极其并行的，所以同时进行读写会"
+"导致各种缓存和一致性问题。因此，即便是最新的硬件也对此进行无法正确的支持。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
-#, fuzzy
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
 "a back-buffer and then read from it while drawing. Godot provides a few "
 "tools that make this process easy."
 msgstr ""
-"解决办法是将屏幕或屏幕的一部分复制到一个后备缓冲区, 然后在绘图时从那里读取."
-"Godot提供了一些工具, 使这一过程变得很容易!"
+"解决办法是将屏幕或屏幕的一部分复制到一个后备缓冲区，然后在绘图时从那里读取。"
+"Godot提供了一些工具，使这一过程变得很容易。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"
@@ -232,14 +230,13 @@ msgid "DEPTH_TEXTURE"
 msgstr "DEPTH_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:146
-#, fuzzy
 msgid ""
 "For 3D shaders, it's also possible to access the screen depth buffer. For "
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
-"对于3D着色器, 也可以访问屏幕深度缓冲区. 为此, 使用了 ``DEPTH_TEXTURE`` 内置. "
-"这个纹理不是线性的；它必须通过反投影矩阵进行转换."
+"3D 着色器也可以访问屏幕深度缓冲，使用内置的 ``DEPTH_TEXTURE`` 即可。该纹理不"
+"是线性的；必须通过逆投影矩阵进行转换。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:150
 msgid ""

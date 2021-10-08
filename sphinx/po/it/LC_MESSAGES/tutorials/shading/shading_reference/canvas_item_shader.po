@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,6 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:19
-#, fuzzy
 msgid "**blend_mix**"
 msgstr "**blend_mix**"
 
@@ -60,7 +59,6 @@ msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:21
-#, fuzzy
 msgid "**blend_add**"
 msgstr "**blend_add**"
 
@@ -69,7 +67,6 @@ msgid "Additive blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:23
-#, fuzzy
 msgid "**blend_sub**"
 msgstr "**blend_sub**"
 
@@ -78,7 +75,6 @@ msgid "Subtractive blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:25
-#, fuzzy
 msgid "**blend_mul**"
 msgstr "**blend_mul**"
 
@@ -87,7 +83,6 @@ msgid "Multiplicative blend mode."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:27
-#, fuzzy
 msgid "**blend_premul_alpha**"
 msgstr "**blend_premul_alpha**"
 
@@ -105,7 +100,6 @@ msgid "Disable blending, values (including alpha) are written as-is."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
-#, fuzzy
 msgid "**unshaded**"
 msgstr "**unshaded**"
 
@@ -114,7 +108,6 @@ msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
-#, fuzzy
 msgid "**light_only**"
 msgstr "**light_only**"
 
@@ -123,7 +116,6 @@ msgid "Only draw on light pass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
-#, fuzzy
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
 
@@ -157,7 +149,6 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:165
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:218
-#, fuzzy
 msgid "Built-in"
 msgstr "Incorporato"
 
@@ -231,12 +222,14 @@ msgid "**x**: Rotation angle in radians."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:110
+#, fuzzy
 msgid "**y**: Phase during lifetime (0 to 1)."
-msgstr ""
+msgstr "**y**: Fase durante la vita (da 0 a 1)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
+#, fuzzy
 msgid "**z**: Animation frame."
-msgstr ""
+msgstr "**z**: frame di animazione."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
 msgid "in mat4 **WORLD_MATRIX**"

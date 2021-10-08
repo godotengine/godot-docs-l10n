@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:4
-#, fuzzy
 msgid "Testing pull requests"
-msgstr "Pull-Anfrage ausgeben"
+msgstr "Testen von Pull Requests"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:6
 msgid ""
@@ -28,6 +27,10 @@ msgid ""
 "with engine development, you may be asked to test those pull requests with a "
 "Godot build that includes code from the pull request in question."
 msgstr ""
+"Viele Leute entwickeln neue Funktionen oder beheben Fehler auf GitHub. Um "
+"bei der Engine-Entwicklung zu helfen, werden Sie möglicherweise gebeten, "
+"diese Pull-Requests mit einem Godot-Build zu testen, der Code aus dem "
+"betreffenden Pull-Request enthält."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:10
 msgid ""
@@ -35,10 +38,14 @@ msgid ""
 "godot/pulls>`__ have continuous builds available. These builds let you try "
 "out pull requests without having to compile anything from source."
 msgstr ""
+"Dank GitHub Actions sind für alle `Pull Requests <https://github.com/"
+"godotengine/godot/pulls>`__ Continuous Builds verfügbar. Mit diesen Builds "
+"können Sie Pull-Requests ausprobieren, ohne selbst den Quellcode kompilieren "
+"zu müssen."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:15
 msgid "Downloading a compiled build"
-msgstr ""
+msgstr "Herunterladen eines kompilierten Builds"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:17
 msgid ""
@@ -46,6 +53,10 @@ msgid ""
 "in users may download builds directly from GitHub Actions, the procedure "
 "varies depending on whether you have a GitHub account or not."
 msgstr ""
+"Sie können Pull-Request-Builds von GitHub Actions herunterladen. Da nur "
+"angemeldete Benutzer Builds direkt von GitHub Actions herunterladen können, "
+"variiert die Vorgehensweise, je nachdem, ob Sie ein GitHub-Konto haben oder "
+"nicht."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:23
 msgid ""
@@ -54,16 +65,23 @@ msgid ""
 "request locally, you can :ref:`compile the pull request branch from source "
 "<doc_testing_pull_requests_compile>` instead."
 msgstr ""
+"Aufgrund einer Einschränkung der GitHub-Aktionen sind Builds nur für 90 Tage "
+"nach der letzten Aktualisierung der Pull-Request verfügbar. Wenn Sie eine "
+"Pull-Request dennoch lokal ausprobieren möchten, können Sie stattdessen :ref:"
+"`den Pull-Request-Branch aus dem Quellcode kompilieren "
+"<doc_testing_pull_requests_compile>`."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:30
 msgid "If you have a GitHub account"
-msgstr ""
+msgstr "Wenn Sie ein GitHub-Konto haben"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:32
 msgid ""
 "Open the pull request page. Click the **Checks** tab near the top of the "
 "page:"
 msgstr ""
+"Öffnen Sie die Pull-Request-Seite. Klicken Sie auf die Registerkarte "
+"**Checks** oben auf der Seite:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:36
 msgid ""
@@ -71,12 +89,18 @@ msgid ""
 "clicking it then choose the type of build you need (editor or export "
 "template). If in doubt, select an editor build:"
 msgstr ""
+"Wählen Sie in der Liste der Plattformen, die links erscheint, Ihre Plattform "
+"aus, indem Sie darauf klicken, und wählen Sie dann den Typ des Builds, den "
+"Sie benötigen (Editor oder Exportvorlage). Wählen Sie im Zweifelsfall einen "
+"Editor-Build:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:42
 msgid ""
 "Click the **Artifacts** dropdown on the right of the page then click the "
 "artifact's name to download it:"
 msgstr ""
+"Klicken Sie auf das Dropdown-Menü **Artifacts** rechts auf der Seite und "
+"dann auf den Namen des Artefakts, um es herunterzuladen:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:47
 #: ../../docs/community/contributing/testing_pull_requests.rst:79
@@ -87,10 +111,17 @@ msgid ""
 "request builds, it may be better to disable Windows SmartScreen or `disable "
 "macOS Gatekeeper <https://disable-gatekeeper.github.io/>`__ permanently."
 msgstr ""
+"Extrahieren Sie das ZIP-Archiv und führen Sie die ausführbare Datei aus. "
+"Beachten Sie, dass Windows- und macOS-Binärdateien nicht code-signiert sind. "
+"Das bedeutet, dass Sie möglicherweise eine Sicherheitswarnung umgehen "
+"müssen, bevor Sie die Datei ausführen können. Wenn Sie häufig Pull-Request-"
+"Builds testen, ist es möglicherweise besser, Windows SmartScreen oder `macOS "
+"Gatekeeper <https://disable-gatekeeper.github.io/>`__ dauerhaft zu "
+"deaktivieren."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:54
 msgid "If you don't have a GitHub account"
-msgstr ""
+msgstr "Wenn Sie kein GitHub-Konto haben"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:56
 msgid ""
@@ -98,6 +129,9 @@ msgid ""
 "the third-party `nightly.link <https://nightly.link>`__ service to generate "
 "a universal download link."
 msgstr ""
+"Wenn Sie kein GitHub-Konto haben und sich auch nicht dafür anmelden können, "
+"können Sie den Drittanbieter-Dienst `nightly.link <https://nightly.link>`__ "
+"verwenden, um einen universellen Download-Link zu erzeugen."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:60
 #: ../../docs/community/contributing/testing_pull_requests.rst:94
@@ -105,6 +139,8 @@ msgid ""
 "Open the pull request page. Click the *fork*'s branch name near the top of "
 "the page:"
 msgstr ""
+"Öffnen Sie die Pull-Request-Seite. Klicken Sie auf den Namen des Branches "
+"des *forks* am oberen Rand der Seite:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:64
 msgid ""
@@ -114,6 +150,13 @@ msgid ""
 "wish to download artifacts for. *After* clicking on the file (which opens "
 "the file view), copy the page URL from your browser's address bar."
 msgstr ""
+"Wenn Sie sich nun auf der Seite des Forks befinden, klicken Sie auf den "
+"Ordner ``.github`` am Anfang der Dateiliste. Klicken Sie dann auf den Ordner "
+"``workflows`` (der sich innerhalb des Ordners ``.github`` befindet). Klicken "
+"Sie auf die Workflow-Datei für die Plattform, für die Sie Artefakte "
+"herunterladen möchten. *Nach* dem Klicken auf die Datei (wodurch sich die "
+"Dateiansicht öffnet), kopieren Sie die URL der Seite aus der Adressleiste "
+"Ihres Browsers."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:69
 msgid ""
@@ -123,14 +166,20 @@ msgid ""
 "links** on the right. If the the format of the URL you pasted is correct, "
 "you should be presented with a page like this:"
 msgstr ""
+"Öffnen Sie die Website `nightly.link <https://nightly.link>`__ und fügen Sie "
+"die soeben kopierte URL in das Textfeld ein, das sich unter der Überschrift "
+"**Paste a GitHub link, get a nightly.link!** befindet. Nachdem Sie die URL "
+"eingefügt haben, klicken Sie rechts auf **Links abrufen**. Wenn das Format "
+"der URL, die Sie eingefügt haben, korrekt ist, sollte eine Seite wie diese "
+"angezeigt werden:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:77
 msgid "Click the URL of the artifact you wish to download."
-msgstr ""
+msgstr "Klicken Sie auf die URL des Artefakts, das Sie herunterladen möchten."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:88
 msgid "Compiling a pull request branch from source"
-msgstr ""
+msgstr "Kompilieren eines Pull-Request-Branches aus dem Quellcode"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:90
 msgid ""
@@ -138,15 +187,24 @@ msgid ""
 "than 90 days ago, or to test on platforms and configurations that are not "
 "supported by Godot's GitHub Actions setup."
 msgstr ""
+"Dieser Ansatz kann für Pull-Requests erforderlich sein, die vor mehr als 90 "
+"Tagen zuletzt aktualisiert wurden, oder um auf Plattformen und "
+"Konfigurationen zu testen, die von Godots GitHub Actions-Setup nicht "
+"unterstützt werden."
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:98
 msgid ""
 "Now that you are on the fork's branch page, click the green **Code** button "
 "on the right of the page then choose **Download ZIP** in the dropdown:"
 msgstr ""
+"Wenn Sie sich nun auf der Seite des Forks befinden, klicken Sie auf die "
+"grüne Schaltfläche **Code** rechts auf der Seite und wählen Sie dann **ZIP "
+"herunterladen** im Dropdown-Menü:"
 
 #: ../../docs/community/contributing/testing_pull_requests.rst:103
 msgid ""
 "Extract the ZIP archive and follow the :ref:`compiling <toc-devel-"
 "compiling>` instructions for your operating system."
 msgstr ""
+"Entpacken Sie das ZIP-Archiv und befolgen Sie den :ref:`Kompileranweisungen "
+"<toc-devel-compiling>` für Ihr Betriebssystem."

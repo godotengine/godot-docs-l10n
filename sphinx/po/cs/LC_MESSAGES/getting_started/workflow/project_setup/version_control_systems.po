@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
 msgid "Version Control Systems"
-msgstr ""
+msgstr "Systémy pro správu verzí"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 msgid "Introduction"
@@ -33,10 +33,15 @@ msgid ""
 "you are using. VCS can be setup or shut down in the editor under **Project > "
 "Version Control**."
 msgstr ""
+"Godot se snaží být přívětivý k VCS a generovat většinou čitelné a slučitelné "
+"soubory. Godot také podporuje používání systémů pro správu verzí v samotném "
+"editoru. VCS v editoru však vyžaduje zásuvný modul pro konkrétní VCS, který "
+"používáte. VCS lze nastavit nebo vypnout v editoru : **Projekt > Řízení "
+"verzí**."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
 msgid "Official Git plugin"
-msgstr ""
+msgstr "Oficiální zásuvný modul Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
 msgid ""
@@ -46,26 +51,37 @@ msgid ""
 "Documentation on how to use the Git plugin can be found `here <https://"
 "github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
+"Používání systému Git v editoru je podporováno oficiálním zásuvným modulem. "
+"Nejnovější verze najdete `zde <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__ (není k dispozici v knihovně zdrojů). Dokumentaci k "
+"používání zásuvného modulu Git naleznete `zde <https://github.com/"
+"godotengine/godot-git-plugin/wiki>`__."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
 msgid "Files to exclude from VCS"
-msgstr ""
+msgstr "Soubory k vyloučení z VCS"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
 msgid "There are some folders Godot creates you should have your VCS ignore:"
 msgstr ""
+"Některé složky vytvořené systémem Godot byste měli ve správě verzí ignorovat:"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
 msgstr ""
+"``.import/``: V této složce jsou uloženy všechny soubory, které se "
+"automaticky importují na základě vašich zdrojových prostředků a jejich "
+"importních příznaků."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
 msgstr ""
+"``*.translation``: Tyto soubory jsou binární importované překlady "
+"vygenerované ze souborů CSV."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
 msgid ""
@@ -73,16 +89,21 @@ msgid ""
 "project, including sensitive information such as Android keystore "
 "credentials."
 msgstr ""
+"``export_presets.cfg``: Tento soubor obsahuje všechny předvolby exportu pro "
+"projekt, včetně citlivých informací, jako jsou pověření k úložišti klíčů "
+"Android."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
 msgstr ""
+"``.mono/``: V této složce jsou uloženy automaticky generované soubory Mono. "
+"Existuje pouze v projektech, které používají verzi Godot Mono."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
 msgid "Working with Git on Windows"
-msgstr ""
+msgstr "Práce se systémem Git v systému Windows"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
 msgid ""
@@ -91,3 +112,7 @@ msgid ""
 "by Git due to their line endings being converted automatically. It is better "
 "to set this option as::"
 msgstr ""
+"Většina klientů systému Git pro Windows je nakonfigurována s parametrem "
+"``core.autocrlf`` nastaveným na ``true``. To může vést k tomu, že soubory "
+"budou v systému Git zbytečně označeny jako změněné, protože jejich konce "
+"řádků budou automaticky převedeny. Je lepší nastavit tuto volbu jako::"

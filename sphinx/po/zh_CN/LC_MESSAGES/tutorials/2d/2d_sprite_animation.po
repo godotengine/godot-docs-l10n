@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,13 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
 msgid "2D Sprite animation"
-msgstr "2D Sprite animation (2D 精灵动画)"
+msgstr "2D 精灵动画"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:7
 msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you'll learn how to create 2D animated characters with the "
 "AnimatedSprite class and the AnimationPlayer. Typically, when you create or "
@@ -34,13 +33,12 @@ msgid ""
 "individual images or as a single sprite sheet containing all the animation's "
 "frames. Both can be animated in Godot with the AnimatedSprite class."
 msgstr ""
-"在本教程中, 你将学习如何使用AnimatedSprite节点和AnimationPlayer节点创建2D动画"
-"角色. 通常, 当你创建或下载动画化的角色时, 它将以两种方式出现: 作为单独的图像"
-"或一个包含所有动画帧的单张sprite sheet(sprite 清单). 两者都可以使用"
-"AnimatedSprite节点在Godot中进行动画处理."
+"在本教程中，你将学习如何使用 AnimatedSprite（动画精灵）类和 AnimationPlayer "
+"来创建 2D 动画角色。无论是自己绘制还是直接下载现成的，拿到的动画角色素材一般"
+"就是两种形式：一系列单独的图片，或者一张包含所有动画帧的精灵表（Sprite "
+"Sheet）。两者都可以使用 Godot 的 AnimatedSprite 类进行动画。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:14
-#, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
 "collection of individual images. Then we will animate a sprite sheet using "
@@ -48,10 +46,10 @@ msgid ""
 "with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
-"首先, 我们将使用 :ref:`AnimatedSprite <class_AnimatedSprite>` 动画化单个图像"
-"的集合. 然后我们将使用此节点为sprite sheet(精灵合集)制作动画. 最后, 我们将学"
-"习使用 :ref:`AnimationPlayer <class_AnimationPlayer>` 和 :ref:`Sprite "
-"<class_Sprite>` 的 *Animation* 属性对一个 sprite sheet 进行动画."
+"我们首先会用 :ref:`AnimatedSprite <class_AnimatedSprite>` 来把一系列单独的图"
+"片做成动画，然后我们再会这个类来把精灵表做成动画，最后我们还会学习使用 :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` 和 :ref:`Sprite <class_Sprite>` 的 "
+"*Animation* （动画）属性来把精灵表做成动画。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:19
 msgid ""
@@ -63,7 +61,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
 msgid "Individual images with AnimatedSprite"
-msgstr "各自独立的图像与AnimatedSprite (动画化精灵)"
+msgstr "AnimateSprite 与若干单独的图片"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
 msgid ""
@@ -158,16 +156,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
 msgid "Sprite sheet with AnimatedSprite"
-msgstr "带有AnimatedSprite[动画精灵]的精灵表"
+msgstr "AnimateSprite 与精灵表"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:118
-#, fuzzy
 msgid ""
 "You can also easily animate from a sprite sheet with the class "
 "``AnimatedSprite``. We will use this public domain sprite sheet:"
 msgstr ""
-"您还可以使用类 \"AnimatedSprite\" 从Sprite sheet (精灵清单)轻松设置动画. 我们"
-"将使用此公共域精灵表:"
+"你还可以很方便地使用 ``AnimatedSprite`` 把精灵表做成动画。我们会用到这张公共"
+"领域的精灵表："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:122
 msgid ""
@@ -177,72 +174,64 @@ msgstr ""
 "右键单击图片, 选择 \"图片另存为\" 来下载图片, 然后将图片复制到项目文件夹中."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
-#, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
 "images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
 "select \"New SpriteFrames\"."
 msgstr ""
-"设置场景树的方式与以前使用单个图像时相同. 选择 ``AnimatedSprite`` , 并在其 "
-"*SpriteFrames* 属性中, 选择\"New SpriteFrames\"."
+"设置场景树的方法与之前使用单独图片的时候相同。选中 ``AnimatedSprite`` 后在 "
+"*SpriteFrames* （精灵帧）属性里选择“新建 SpriteFrames”。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
-#, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource. This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
-"点击新建 SpriteFrames 资源, 你会看到一个新的面板出现在编辑器窗口的底部, 选择"
-"\"从精灵表中添加帧(Add frames from a Sprite Sheet)\"."
+"点击创建出来的 SpriteFrames 资源。底部面板出现后，这次我们选择“从精灵表中添加"
+"帧”。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
-#, fuzzy
 msgid "You will be prompted to open a file. Select your sprite sheet."
-msgstr "将提示您打开一个文件. 选择您的Sprite sheet (精灵清单)."
+msgstr "在弹出的打开文件对话框中，选择你的精灵表。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:133
-#, fuzzy
 msgid ""
 "A new window will open, showing your sprite sheet. The first thing you will "
 "need to do is to change the number of vertical and horizontal images in your "
 "sprite sheet. In this sprite sheet, we have four images horizontally and two "
 "images vertically."
 msgstr ""
-"一个新的窗口将打开, 显示您选择的Sprite sheet (精灵清单). 您需要做的第一件事就"
-"是更改精灵表中的垂直和水平方的正确图像数量. 在这个Sprite sheet (精灵清单)中, "
-"水平有四个图像, 垂直有2个图像."
+"接下来会打开一个新的窗口，里面会显示刚才的精灵表。你首先需要修改精灵表中纵向"
+"和横向的图片数量，我们的这张精灵表里横向有四张图片、纵向有两张。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:137
-#, fuzzy
 msgid ""
 "Next, select the frames from the sprite sheet that you want to include in "
 "your animation. We will select the top four, then click \"Add 4 frames\" to "
 "create the animation."
 msgstr ""
-"接下来, 从要包含在动画中的Sprite sheet (精灵清单)中选择帧. 我们将选择前四个, "
-"然后单击\"Add 4 frames(添加4帧)\"来创建动画."
+"然后，在精灵表中选择动画中想要包含的帧。这里我们选中上面的四个，然后点击“添"
+"加 4 帧”来创建动画。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:141
-#, fuzzy
 msgid ""
 "You will now see your animation under the list of animations in the bottom "
 "panel. Double click on default to change the name of the animation to jump."
 msgstr ""
-"现在, 您将在底部面板中的动画列表下看到您的动画. 双击default将动画的名称更改为"
-"jump."
+"现在你就可以看到在底部面板的动画列表里看到这个动画了。双击 default（默认），"
+"然后把动画的名称改成 jump（跳跃）。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:145
-#, fuzzy
 msgid ""
 "Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"
 msgstr ""
-"最后, 在AnimatedSprite(动画精灵)的inspector(检查器面板)勾选Playing(播放)就可"
-"以看到你的青蛙跳动画！"
+"最后，在检查器中勾选 AnimatedSprite 的 Playing（播放）就可以看到青蛙跳起来"
+"了！"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "Sprite sheet (精灵清单)和 AnimationPlayer(动画播放器)"
+msgstr "AnimationPlayer 与精灵表"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:153
 msgid ""
@@ -359,7 +348,6 @@ msgid "Summary"
 msgstr "总结"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:266
-#, fuzzy
 msgid ""
 "These examples illustrate the two classes you can use in Godot for 2D "
 "animation. ``AnimationPlayer`` is a bit more complex than "
@@ -368,6 +356,8 @@ msgid ""
 "``AnimationPlayer`` can also be used with an ``AnimatedSprite``. Experiment "
 "to see what works best for your needs."
 msgstr ""
-"这些例子展示了你可以在Godot中使用的两个2D动画类. 每种方法都有其好处."
-"``AnimationPlayer`` 比 ``AnimatedSprite`` 更复杂一些, 但它提供了额外的功能, "
-"因为你还可以对其他属性如位置或比例进行动画. 试验一下, 看看哪种最适合你的需要."
+"以上的例子演示了使用 Godot 提供的两个类来制作 2D 动画的方法。 "
+"``AnimationPlayer`` 相比 ``AnimatedSprite`` 而言略显复杂，但同时也提供了更多"
+"的功能，因为你还可以同时动画位置和缩放之类的其它的属性。 ``AnimationPlayer`` "
+"也可以和 ``AnimatedSprite`` 配合使用，你可以自己试一试，看看怎样的做法更适合"
+"你自己。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature tags"
-msgstr ""
+msgstr "Štítky (tagy) pro vlastnosti"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 msgid "Introduction"
@@ -30,54 +30,60 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
+"Godot má speciální systém označování dostupnosti funkcí. Každá *funkce* je "
+"reprezentována jako řetězec, který může odkazovat na mnoho z následujících "
+"položek:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "Název platformy."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "Architektura platformy (64bitová nebo 32bitová, x86 nebo ARM)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr ""
+msgstr "Typ platformy (stolní počítač, mobilní zařízení, web)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr ""
+msgstr "Podporované algoritmy komprese textur na platformě."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
+"Zda je sestavení ``debug`` nebo ``release`` (``debug`` zahrnuje editor)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr ""
+msgstr "Zda je projekt spuštěn z editoru, nebo jako samostatná binárka."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
-msgstr ""
+msgstr "Mnoho dalších věcí."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
-msgstr ""
+msgstr "Funkce lze za běhu vyhledávat rozhraní singletonu voláním:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
-msgstr ""
+msgstr "Výchozí vlastnosti"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:30
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
 msgstr ""
+"Zde je seznam většiny tagů pro vlastnostiv systému v Godot. Mějte na paměti, "
+"že jsou **citlivé na velikost písmen**:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Feature tag**"
-msgstr ""
+msgstr "**Tag pro vlastnost**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
@@ -85,91 +91,91 @@ msgstr "**Popis**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "**Android**"
-msgstr ""
+msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr ""
+msgstr "Běží na Androidu"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
-msgstr ""
+msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
-msgstr ""
+msgstr "Spuštění v HTML5"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
-msgstr ""
+msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ""
+msgstr ":ref:`JavaScript singleton <doc_javascript_eval>` je k dispozici"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
-msgstr ""
+msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
-msgstr ""
+msgstr "Běží na macOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "**iOS**"
-msgstr ""
+msgstr "**iOS**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "Running on iOS"
-msgstr ""
+msgstr "Běží na iOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
-msgstr ""
+msgstr "** UWP **"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
-msgstr ""
+msgstr "Běží na UWP"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "**Windows**"
-msgstr ""
+msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
-msgstr ""
+msgstr "Běží na Windows"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "Běží na X11 (Linux/BSD desktop)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
-msgstr ""
+msgstr "** Server **"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
-msgstr ""
+msgstr "Běh na platformě headless serveru"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
-msgstr ""
+msgstr "**ladění**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr ""
+msgstr "Běží na sestavení ladění (včetně editoru)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr ""
+msgstr "**uvolnění**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr ""
+msgstr "Běží na buildu vydání"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
@@ -177,133 +183,135 @@ msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr ""
+msgstr "Běží na sestavení editoru"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
-msgstr ""
+msgstr "**samostatný**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr ""
+msgstr "Běží na sestavě bez editoru"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr ""
+msgstr "Běží na 64bitové verzi (libovolná architektura)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
-msgstr ""
+msgstr "Běží na 32bitové verzi (libovolná architektura)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
-msgstr ""
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
-msgstr ""
+msgstr "Běží na 64bitové verzi x86"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
-msgstr ""
+msgstr "Běží na 32bitové verzi x86"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
-msgstr ""
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
-msgstr ""
+msgstr "Běží na 64bitové verzi ARM"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
-msgstr ""
+msgstr "**arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "Running on a 32-bit ARM build"
-msgstr ""
+msgstr "Běží na 32bitové verzi ARM"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
-msgstr ""
+msgstr "**mobilní**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
-msgstr ""
+msgstr "Hostitelský OS je mobilní platforma"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
-msgstr ""
+msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr ""
+msgstr "Hostitelský operační systém je platforma PC (stolní počítač/notebook)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
-msgstr ""
+msgstr "**web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
-msgstr ""
+msgstr "Hostitelský OS je webový prohlížeč"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
-msgstr ""
+msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "Podporovány jsou textury využívající kompresi ETC1"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
-msgstr ""
+msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "Podporovány jsou textury využívající kompresi ETC2"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "Podporovány jsou textury využívající kompresi S3TC (DXT/BC)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
-msgstr ""
+msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "Podporovány jsou textury využívající kompresi PVRTC"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
-msgstr ""
+msgstr "Vlastní funkce"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
+"Do sestavení je možné přidat vlastní funkce; použijte příslušné pole v "
+"předvolbě *exportu* k jeho vygenerování:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
-msgstr ""
+msgstr "Přepsání nastavení projektu"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
@@ -311,6 +319,9 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
+"Funkce lze použít k přepsání konkrétních konfiguračních hodnot v *Nastavení "
+"projektu*. To umožňuje lépe přizpůsobit jakoukoli konfiguraci při "
+"sestavování."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -318,10 +329,13 @@ msgid ""
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"V následujícím příkladu je přidána jiná ikona pro demo sestavení hry (které "
+"bylo upraveno ve speciální předvolbě exportu, která naoplátku obsahuje pouze "
+"demo úrovně)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
-msgstr ""
+msgstr "Po přepsání se přidá nové pole pro tuto konkrétní konfiguraci:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:114
 msgid ""
@@ -331,20 +345,27 @@ msgid ""
 "setting with the desired feature tag(s) if you want them to override base "
 "project settings on all platforms and configurations."
 msgstr ""
+"Při použití funkce :ref:`nastavení projektu \"override.cfg\" "
+"<class_ProjectSettings>` (která se značkami funkcí nesouvisí) nezapomeňte, "
+"že značky funkcí stále platí. Proto se ujistěte, že *také* přepíšete "
+"nastavení požadovanou značkou (značkami) funkcí, pokud chcete, aby přepsaly "
+"základní nastavení projektu na všech platformách a konfiguracích."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:122
 msgid "Default overrides"
-msgstr ""
+msgstr "Výchozí přepsání"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:124
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
+"Ve výchozím nastavení je již mnoho nastavení, která jsou přepisovatelná; "
+"najdete je v mnoha částech nastavení projektu."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:130
 msgid "Customizing the build"
-msgstr ""
+msgstr "Přizpůsobení sestavení"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:132
 msgid ""
@@ -352,3 +373,6 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"Značky funkcí lze použít také k přizpůsobení procesu sestavení, a to "
+"napsáním vlastního **ExportPlugin**. Používají se také k určení, která "
+"sdílená knihovna se načte a vyexportuje v **GDNative**."

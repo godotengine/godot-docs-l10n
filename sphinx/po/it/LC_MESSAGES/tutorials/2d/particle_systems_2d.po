@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,6 @@ msgid "Your Particles2D node should now be emitting white points downward."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
-#, fuzzy
 msgid "Texture"
 msgstr "Texture"
 
@@ -118,27 +117,30 @@ msgid "Time parameters"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
-#, fuzzy
 msgid "Lifetime"
-msgstr "Tutta la vita"
+msgstr "Durata di vita"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
+#, fuzzy
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
+"Il tempo in secondi che ogni particella rimarrà in vita. Quando la durata di "
+"vita finisce, una nuova particella viene creata per sostituirla."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
-msgstr ""
+msgstr "Durata di vita: 0.5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
-msgstr ""
+msgstr "Durata di vita: 4.0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
+#, fuzzy
 msgid "One Shot"
-msgstr ""
+msgstr "Un colpo"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
@@ -161,8 +163,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:97
+#, fuzzy
 msgid "Speed Scale"
-msgstr ""
+msgstr "Scala di velocità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid ""
@@ -184,12 +187,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
+#, fuzzy
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr ""
+msgstr "0: emette particelle a intervalli regolari (valore predefinito)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:111
+#, fuzzy
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: Emettere tutte le particelle simultaneamente."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
@@ -208,8 +213,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
+#, fuzzy
 msgid "Fixed FPS"
-msgstr ""
+msgstr "FPS fisso"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
@@ -220,8 +226,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:136
+#, fuzzy
 msgid "Fract Delta"
-msgstr ""
+msgstr "Fract Delta"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
@@ -232,8 +239,9 @@ msgid "Drawing parameters"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
+#, fuzzy
 msgid "Visibility Rect"
-msgstr ""
+msgstr "Rettangolo di Visibilità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
@@ -284,8 +292,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
+#, fuzzy
 msgid "Draw Order"
-msgstr ""
+msgstr "Ordine di disegno"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -295,8 +304,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:179
+#, fuzzy
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "Impostazioni di ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
 #, fuzzy
@@ -349,8 +359,9 @@ msgid "The gravity applied to every particle."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:219
+#, fuzzy
 msgid "Initial Velocity"
-msgstr ""
+msgstr "Velocità iniziale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:221
 msgid ""
@@ -360,16 +371,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
+#, fuzzy
 msgid "Angular Velocity"
-msgstr ""
+msgstr "Velocità angolare"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:230
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
+#, fuzzy
 msgid "Spin Velocity"
-msgstr ""
+msgstr "Velocità di rotazione"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:235
 msgid ""
@@ -378,24 +391,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:241
+#, fuzzy
 msgid "Orbit Velocity"
-msgstr ""
+msgstr "Velocità dell'orbita"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:243
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:248
+#, fuzzy
 msgid "Linear Acceleration"
-msgstr ""
+msgstr "Accelerazione lineare"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:250
 msgid "The linear acceleration applied to each particle."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:253
+#, fuzzy
 msgid "Radial Acceleration"
-msgstr ""
+msgstr "Accelerazione radiale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:255
 msgid ""
@@ -404,8 +420,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:261
+#, fuzzy
 msgid "Tangential Acceleration"
-msgstr ""
+msgstr "Accelerazione tangenziale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid ""
@@ -437,7 +454,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
-#, fuzzy
 msgid "Scale"
 msgstr "Scala"
 
@@ -454,8 +470,9 @@ msgid "Used to change the color of the particles being emitted."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:298
+#, fuzzy
 msgid "Hue variation"
-msgstr ""
+msgstr "Variazione di tonalità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:300
 msgid ""

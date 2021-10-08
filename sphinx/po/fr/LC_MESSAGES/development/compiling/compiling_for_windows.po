@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 14:01+0200\n"
+"POT-Creation-Date: 2021-10-08 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,8 +89,9 @@ msgstr ""
 "suivante :"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:37
+#, fuzzy
 msgid ""
-"For each MSYS2 MinGW subsystem, you should then run `pip install scons` in "
+"For each MSYS2 MinGW subsystem, you should then run `pip3 install scons` in "
 "its shell."
 msgstr ""
 "Pour chaque sous-système MinGW de MSYS2, vous devez ensuite exécuter `pip "
@@ -130,7 +131,8 @@ msgstr ""
 "suivante."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:55
-msgid "``python -m pip install scons``"
+#, fuzzy
+msgid "``python -m pip3 install scons``"
 msgstr "``python -m pip install scons``"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:57
@@ -218,6 +220,9 @@ msgid ""
 "add the Godot source folder to the list of exceptions in your antivirus "
 "software."
 msgstr ""
+"Pour éviter les ralentissements causés par une recherche continue de virus "
+"pendant la compilation, ajoutez le dossier source de Godot à la liste des "
+"exceptions de votre logiciel antivirus."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:97
 msgid ""
@@ -226,6 +231,12 @@ msgid ""
 "**Virus & threat protection setting** and scroll down to **Exclusions**. "
 "Click **Add or remove exclusions** then add the Godot source folder."
 msgstr ""
+"Pour Windows Defender, appuyez sur la touche :kbd:`Windows`, tapez \"Windows "
+"Defender Settings\" puis appuyez sur :kbd:`Enter`. Sous **Protection contre "
+"les virus et les menaces**, allez dans **Paramètre de protection contre les "
+"virus et les menaces** et faites défiler jusqu'à **Exclusions**. Cliquez sur "
+"**Ajouter ou supprimer des exclusions** puis ajoutez le dossier source de "
+"Godot."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:104
 msgid "Compiling"
