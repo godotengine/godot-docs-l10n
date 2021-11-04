@@ -84,7 +84,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-10-08 12:36+0200\n"
-"PO-Revision-Date: 2021-10-01 03:16+0000\n"
+"PO-Revision-Date: 2021-10-24 20:52+0000\n"
 "Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -1573,8 +1573,8 @@ msgid ""
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
 "Detto questo, non raccomandiamo l'uso di Godot per la creazione di "
-"un'applicazione *mobile* poiché la modalità a basso uso processore non è "
-"ancora supportata sulle piattaforme mobili."
+"un'applicazione *mobile* poiché la modalità low-processor non è ancora "
+"supportata sulle piattaforme mobile."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1632,10 +1632,10 @@ msgstr ""
 "Godot non usa un toolkit standard :abbr:`GUI (Graphical User Interface)` "
 "come GTK, Qt o wxWidgets. Invece, Godot usa il proprio toolkit di "
 "interfaccia utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è "
-"esposto sotto forma di nodi di controllo, che sono usati per visualizzare "
-"l'editor (che è scritto in C++). Questi nodi di controllo possono anche "
-"essere utilizzati in progetti da qualsiasi linguaggio di scripting "
-"supportato da Godot."
+"esposto sotto forma di nodi Control, che sono usati per visualizzare "
+"l'editor (che è scritto in C++). Questi nodi Control possono anche essere "
+"utilizzati in progetti da qualsiasi linguaggio di scripting supportato da "
+"Godot."
 
 #: ../../docs/about/faq.rst:402
 #, fuzzy
@@ -3128,7 +3128,7 @@ msgstr "*Linux:* PulseAudio o ALSA."
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "Import"
-msgstr "Importazione"
+msgstr "Importa"
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -3817,9 +3817,9 @@ msgid ""
 "proposals>`__ lists features that have been requested by the community and "
 "may be implemented in future Godot releases."
 msgstr ""
-"La ` tabella di marcia <https://github.com/godotengine/godot-roadmap>`__ "
-"repository di documenti delle caratteristiche che sono state concordate e "
-"che potrebbero essere implementate nelle future versioni di Godot."
+"Il `repository delle proposte di Godot <https://github.com/godotengine/godot-"
+"proposals>`__ elenca le caratteristiche che sono state richieste dalla "
+"comunità e che potrebbero essere implementate nelle future versioni di Godot."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
@@ -4463,9 +4463,8 @@ msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:86
-#, fuzzy
 msgid "~2022 (see below)"
-msgstr "~2021 (vedi sotto)"
+msgstr "~2022 (vedi sotto)"
 
 #: ../../docs/about/release_policy.rst:86
 msgid "|unstable| *Current focus of development (unstable).*"
@@ -4476,9 +4475,8 @@ msgid "Godot 3.4"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:88
-#, fuzzy
 msgid "Q4 2021"
-msgstr "Q2 o Q3 2021"
+msgstr "Q4 2021"
 
 #: ../../docs/about/release_policy.rst:88
 msgid ""
@@ -4653,11 +4651,10 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
-"Per quanto riguarda il rilascio di Godot 4.0, possiamo solamente dire che "
-"cerchiamo di puntare al **2021** come anno di rilascio, ma una stima più "
-"vicina molto probabilmente sarebbe molto difficile da rispettare. Versioni "
-"alpha saranno rilasciate una volta che le funzioni principali di Godot 4.0 "
-"saranno finalizzate."
+"Per quanto riguarda l'imminente Godot 4.0, possiamo solo dire che puntiamo a "
+"un rilascio nel **2022**, ma qualsiasi stima più accurata sarà probabilmente "
+"difficile da rispettare. Le build alfa saranno pubblicate non appena le "
+"caratteristiche principali di Godot 4.0 saranno finalizzate."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot's editor"
@@ -6802,11 +6799,12 @@ msgid ""
 "creation dialog. Note that the icon will only appear after restarting the "
 "editor."
 msgstr ""
-"Puoi nominare uno script e registrarlo come un tipo nell'editor con la "
-"parola chiave ``class_name`` seguita dal nome della classe. Puoi aggiungere "
-"una virgola ed opzionalmente un percorso ad un'immagine da usare come icona. "
-"Potrai ora trovare il tuo nuovo tipo nella finestra di creazione di nodi o "
-"risorse."
+"Puoi nominare uno script e registrarlo come tipo nell'editor con la parola "
+"chiave ``class_name`` seguita dal nome della classe. Puoi aggiungere una "
+"virgola e un percorso opzionale a un'immagine PNG o SVG da usare come icona "
+"(minimo 16×16, consigliato 32×32). Troverai quindi il tuo nuovo tipo nella "
+"finestra di dialogo di creazione del nodo o della risorsa. Nota che l'icona "
+"apparirà solo dopo aver riavviato l'editor."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:423
 msgid "In Godot 3.1:"
@@ -7097,7 +7095,7 @@ msgid ""
 "To pass values, add them as subsequent arguments to the ``emit_signal`` "
 "function:"
 msgstr ""
-"Per passare dei valori aggiungili come secondo argomento alla funzione "
+"Per passare dei valori, aggiungeteli come argomenti successivi alla funzione "
 "``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:278
@@ -14077,6 +14075,7 @@ msgstr ""
 "dati contenuti nelle risorse."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
+#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some "
@@ -14085,6 +14084,12 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
+"Qualsiasi cosa che Godot salva o carica dal disco è una risorsa. Che sia una "
+"scena (un file ``.tscn`` o ``.scn``), un'immagine, uno script... Ecco alcuni "
+"esempi di ``Risorsa``: :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 #, fuzzy
@@ -35147,8 +35152,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:14
+#, fuzzy
 msgid "Canvas transform"
-msgstr ""
+msgstr "Trasformazione Canvas"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:16
 msgid ""
@@ -35179,8 +35185,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:36
+#, fuzzy
 msgid "Stretch transform"
-msgstr ""
+msgstr "Allunga la trasformazione"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:38
 msgid ""
@@ -35201,8 +35208,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
+#, fuzzy
 msgid "Transform order"
-msgstr ""
+msgstr "Ordine di trasformazione"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
@@ -35211,8 +35219,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:58
+#, fuzzy
 msgid "Transform functions"
-msgstr ""
+msgstr "Funzioni di trasformazione"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
@@ -57648,8 +57657,9 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:70
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:118
+#, fuzzy
 msgid "Input events"
-msgstr ""
+msgstr "Eventi di ingresso"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:72
 msgid ""
@@ -78846,12 +78856,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
+#, fuzzy
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
 "``godot-headers`` Git clone. This will create the ``simple`` folder and "
 "``project.godot`` file. Then manually create a ``src`` folder alongside the "
 "``simple`` folder, and a ``bin`` subfolder in the ``simple`` folder."
 msgstr ""
+"Apri Godot e crea un nuovo progetto chiamato \"simple\" insieme al tuo clone "
+"Git di ``godot-headers``. Questo creerà la cartella ``simple`` e il file "
+"``project.godot``. Poi crea manualmente una cartella ``src`` accanto alla "
+"cartella ``simple``, e una sottocartella ``bin`` nella cartella ``simple``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:131
 msgid ""
@@ -79372,11 +79387,15 @@ msgid "Do make sure you clone recursive to pull in both repositories:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:93
+#, fuzzy
 msgid ""
 "``godot-cpp`` now includes ``godot-headers`` as a nested submodule, if "
 "you've manually downloaded them please make sure to place ``godot-headers`` "
 "inside of the ``godot-cpp`` folder."
 msgstr ""
+"``godot-cpp`` ora include ``godot-headers`` come sottomodulo annidato, se li "
+"hai scaricati manualmente assicurati di mettere ``godot-headers`` dentro la "
+"cartella ``godot-cpp``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:97
 msgid ""
@@ -79483,10 +79502,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:168
+#, fuzzy
 msgid ""
 "You should now have ``demo``, ``godot-cpp``, ``godot-headers``, and ``src`` "
 "directories in your GDNative module."
 msgstr ""
+"Ora dovresti avere le directory ``demo``, ``godot-cpp``, ``godot-headers`` e "
+"``src`` nel tuo modulo GDNative."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:171
 msgid ""
@@ -79614,11 +79636,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:387
+#, fuzzy
 msgid ""
 "Once you've downloaded the ``SConstruct`` file, place it in your GDNative "
 "module folder besides ``godot-cpp``, ``godot-headers`` and ``demo``, then "
 "run:"
 msgstr ""
+"Una volta che hai scaricato il file ``SConstruct``, mettilo nella tua "
+"cartella dei moduli GDNative oltre a ``godot-cpp``, ``godot-headers`` e "
+"``demo``, poi eseguilo:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:394
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
@@ -80788,44 +80814,63 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:136
+#, fuzzy
 msgid ""
 "**plist**: should have keys and values that should be present in ``Info."
 "plist`` file."
 msgstr ""
+"**plist**: dovrebbe avere chiavi e valori che dovrebbero essere presenti nel "
+"file ``Info.plist``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
+#, fuzzy
 msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
-msgstr ""
+msgstr "Ogni linea dovrebbe seguire lo schema: ``KeyName:KeyType=KeyValue``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:139
+#, fuzzy
 msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
 msgstr ""
+"I valori supportati per ``KeyType`` sono ``string``, ``integer```, "
+"``boolean``, ``raw``, ``string_input``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
+#, fuzzy
 msgid ""
 "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be "
 "used."
 msgstr ""
+"Se non viene usato nessun tipo (ad esempio: ``KeyName=\"KeyValue\"``) verrà "
+"usato il tipo ``string``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:141
+#, fuzzy
 msgid ""
 "If ``raw`` type is used value for coresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr ""
+"Se viene usato il tipo ``raw`` il valore per la chiave corrispondente sarà "
+"memorizzato in ``Info.plist`` come è."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
+#, fuzzy
 msgid ""
 "If ``string_input`` type is used you will be able to modify value in Export "
 "window."
 msgstr ""
+"Se si usa il tipo ``string_input`` si potrà modificare il valore nella "
+"finestra Export."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
+#, fuzzy
 msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
 "are using same model of asynchronous calls explained below."
 msgstr ""
+"Godot fornisce StoreKit, GameCenter, servizi iCloud e altri plugin. Usano lo "
+"stesso modello di chiamate asincrone spiegato di seguito."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
@@ -80837,8 +80882,9 @@ msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
 msgstr ""
-"Se stai contribuendo alla documentazione, il repository può essere trovato "
-"qui <https://github.com/godotengine/godot-docs>`_."
+"Gli ultimi aggiornamenti, la documentazione e il codice sorgente possono "
+"essere trovati su `Godot iOS plugins repository <https://github.com/"
+"godotengine/godot-ios-plugins>`_"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 #, fuzzy
@@ -89580,10 +89626,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:37
+#, fuzzy
 msgid ""
 "For each MSYS2 MinGW subsystem, you should then run `pip3 install scons` in "
 "its shell."
 msgstr ""
+"Per ogni sottosistema MSYS2 MinGW, si dovrebbe poi eseguire `pip3 install "
+"scons` nella sua shell."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:40
 #: ../../docs/development/compiling/compiling_for_x11.rst:29
@@ -89618,7 +89667,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:55
 msgid "``python -m pip3 install scons``"
-msgstr ""
+msgstr "``python -m pip3 install scons``"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:57
 msgid ""
@@ -90157,10 +90206,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:221
+#, fuzzy
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
+"Dopo che la compilazione è stata completata, un nuovo binario con un "
+"suffisso ``.llvm`` verrà creato nella cartella ``bin/``."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:224
 msgid ""
@@ -91261,10 +91313,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
+#, fuzzy
 msgid ""
 "The recommended method is to use **curl**'s CA (Certificate Authorities) "
 "certificate bundle."
 msgstr ""
+"Il metodo raccomandato è quello di utilizzare il bundle di certificati CA "
+"(Certificate Authorities) di **curl**."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:21
 msgid ""
@@ -92855,24 +92910,35 @@ msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:158
+#, fuzzy
 msgid ""
 "Due to sporadic performance issues, it is recommended to use LLDB over GDB "
 "on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
 "marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is "
 "installed."
 msgstr ""
+"A causa di sporadici problemi di prestazioni, si raccomanda di usare LLDB "
+"invece di GDB su sistemi basati su Unix. Assicuratevi che sia installata "
+"l'estensione <https://marketplace.visualstudio.com/items?itemName=vadimcn."
+"vscode-lldb>`_ di CodeLLDB."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:162
+#, fuzzy
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
 msgstr ""
+"Se si incontrano problemi con lldb, si può considerare l'uso di gdb (vedere "
+"la configurazione di X11_gdb)."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:164
+#, fuzzy
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
 msgstr ""
+"Si noti che lldb potrebbe funzionare meglio con build basate su llvm. "
+"Vedere :ref:`doc_compiling_for_x11` per ulteriori informazioni."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:166
 msgid ""
@@ -94152,12 +94218,18 @@ msgid "Saving a resource can be done with the resource saver API:"
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:309
+#, fuzzy
 msgid ""
 "Instance will be saved. Sub resources that have a path to a file will be "
 "saved as a reference to that resource. Sub resources without a path will be "
 "bundled with the saved resource and assigned sub-IDs, like ``res://"
 "someresource.res::1``. This also helps to cache them when loaded."
 msgstr ""
+"L'istanza sarà salvata. Le risorse secondarie che hanno un percorso a un "
+"file saranno salvate come riferimento a quella risorsa. Le risorse "
+"secondarie senza un percorso saranno raggruppate con la risorsa salvata e "
+"saranno assegnati dei sub-ID, come ``res://someresource.res::1``. Questo "
+"aiuta anche a metterle in cache quando vengono caricate."
 
 #: ../../docs/development/cpp/object_class.rst:317
 #, fuzzy
@@ -98990,26 +99062,39 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:70
+#, fuzzy
 msgid ""
 "*Performance*: issues that directly impact engine or editor performance. Can "
 "also be used for pull requests that improve performance or add low-end-"
 "friendly options. Should not be coupled with *Usability*."
 msgstr ""
+"*Performance*: problemi che hanno un impatto diretto sulle prestazioni del "
+"motore o dell'editor. Può anche essere usato per richieste di pull che "
+"migliorano le prestazioni o aggiungono opzioni di fascia bassa. Non dovrebbe "
+"essere accoppiato con *Usabilità*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
+#, fuzzy
 msgid ""
 "*PR welcome / Hero wanted!*: Contributions for issues with these labels are "
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
+"*PR benvenuto / Cercasi eroe!*: I contributi per i problemi con queste "
+"etichette sono particolarmente benvenuti. Nota che questo **non** significa "
+"che non puoi lavorare su questioni senza queste etichette."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:76
+#, fuzzy
 msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
 "was released."
 msgstr ""
+"*Regressione*: il bug è apparso dopo il rilascio di una versione stabile che "
+"non presentava il bug."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:78
+#, fuzzy
 msgid ""
 "*Salvageable*: the pull request can't be merged due to design issues or "
 "merge conflicts and its author is not active anymore. However, it can still "
@@ -99017,6 +99102,11 @@ msgid ""
 "do so, you need to open a new pull request based on the original pull "
 "request."
 msgstr ""
+"*Salvageable*: la richiesta di pull non può essere unita a causa di problemi "
+"di progettazione o conflitti di unione e il suo autore non è più attivo. "
+"Tuttavia, può ancora essere raccolta da un collaboratore esterno per "
+"portarla ad uno stato mergeable. Per farlo, è necessario aprire una nuova "
+"richiesta di pull basata sulla richiesta di pull originale."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid ""
@@ -99025,10 +99115,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:84
+#, fuzzy
 msgid ""
 "*Usability*: issues that directly impact user usability. Should not be "
 "coupled with *Performance*."
 msgstr ""
+"*Usabilità*: problemi che hanno un impatto diretto sull'usabilità "
+"dell'utente. Non dovrebbe essere accoppiato con *Performance*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid ""
@@ -99048,12 +99141,18 @@ msgid ""
 "*2D*: relates to 2D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *3D*."
 msgstr ""
+"*2D*: si riferisce a problemi specifici del 2D. Dovrebbe essere accoppiato "
+"con una delle etichette sottostanti, e non dovrebbe essere accoppiato con "
+"*3D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid ""
 "*3D*: relates to 3D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *2D*."
 msgstr ""
+"*3D*: si riferisce a questioni specifiche del 3D. Dovrebbe essere accoppiato "
+"con una delle etichette sottostanti, e non dovrebbe essere accoppiato con "
+"*2D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Assetlib*: relates to issues with the asset library."
@@ -99221,11 +99320,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/building_the_manual.rst:24
+#, fuzzy
 msgid ""
 "You may need to write ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) "
 "instead of ``pip3``. If both approaches fail, `check that you have pip3 "
 "installed <https://pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
+"Potrebbe essere necessario scrivere ``python3 -m pip`` (Unix) o ``py -m "
+"pip`` (Windows) invece di ``pip3``. Se entrambi gli approcci falliscono, "
+"`controllate di avere pip3 installato <https://pip.pypa.io/en/stable/"
+"installation/>`__."
 
 #: ../../docs/community/contributing/building_the_manual.rst:33
 #, fuzzy

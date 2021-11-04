@@ -6,6 +6,7 @@
 # Ignotas Gražys <ignotas.gr@gmail.com>, 2020.
 # Kornelijus <kornelijus.github@gmail.com>, 2018.
 # Kornelijus Tvarijanavičius <kornelitvari@protonmail.com>, 2020-2021.
+# Lukas Hamm <ideallygrey@tuta.io>, 2021.
 # Vagnerlandio Nunes <vagnerlandio@gmail.com>, 2018.
 #
 msgid ""
@@ -13,27 +14,28 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-10-08 12:36+0200\n"
-"PO-Revision-Date: 2021-02-22 21:30+0000\n"
-"Last-Translator: Kornelijus Tvarijanavičius <kornelitvari@protonmail.com>\n"
+"PO-Revision-Date: 2021-10-15 13:52+0000\n"
+"Last-Translator: Lukas Hamm <ideallygrey@tuta.io>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 4.5\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
-msgstr ""
+msgstr "Bendras"
 
 #: ../../docs/index.rst:73
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
 msgid "Getting started"
-msgstr ""
+msgstr "Pradėti"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
@@ -41,7 +43,7 @@ msgstr "Pamokos"
 
 #: ../../docs/index.rst:114
 msgid "Development"
-msgstr ""
+msgstr "Vystymasis"
 
 #: ../../docs/index.rst:125
 msgid "Community"
@@ -49,18 +51,20 @@ msgstr "Bendruomenė"
 
 #: ../../docs/index.rst:135
 msgid "Class reference"
-msgstr ""
+msgstr "Klasės nuoroda"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Godot Docs – *master* branch"
+msgstr "Godot Docs – *master* šaka"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"„Godot“ dokumentai pateikiami įvairiomis kalbomis ir versijomis. "
+"Išskleiskite šoninės juostos apačioje esantį skydelį „Skaityti dokumentus“, "
+"kad pamatytumėte sąrašą."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -80893,7 +80897,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "color"
-msgstr ""
+msgstr "spalva"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "15"
