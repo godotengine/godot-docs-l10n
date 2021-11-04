@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,11 +122,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:201
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:225
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:272
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:302
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:767
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:313
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:350
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:375
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:395
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:815
 msgid "**Good**:"
 msgstr "**良い例**:"
 
@@ -136,11 +137,12 @@ msgstr "**良い例**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:231
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:282
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:773
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:357
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:833
 msgid "**Bad**:"
 msgstr "**悪い例**:"
 
@@ -228,22 +230,52 @@ msgid "The only exception to that rule is the ternary operator:"
 msgstr "その規則の唯一の例外は三項演算子です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
-msgid "Avoid unnecessary parentheses"
-msgstr "不要なかっこ()を入れない"
+msgid "Format multiline statements for readability"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
+"When you have particularly long ``if`` statements or nested ternary "
+"expressions, wrapping them over multiple lines improves readability. Since "
+"continuation lines are still part of the same expression, 2 indent levels "
+"should be used instead of one."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:303
+msgid ""
+"GDScript allows wrapping statements using multiple lines using parentheses "
+"or backslashes. Parentheses are favored in this style guide since they make "
+"for easier refactoring. With backslashes, you have to ensure that the last "
+"line never contains a backslash at the end. With parentheses, you don't have "
+"to worry about the last line having a backslash at the end."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
+msgid ""
+"When wrapping a conditional expression over multiple lines, the ``and``/"
+"``or`` keywords should be placed at the beginning of the line continuation, "
+"not at the end of the previous line."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
+msgid "Avoid unnecessary parentheses"
+msgstr "不要なかっこ()を入れない"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:346
+#, fuzzy
+msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
-"necessary for order of operations, they only reduce readability."
+"necessary for order of operations or wrapping over multiple lines, they only "
+"reduce readability."
 msgstr ""
 "式や条件文に括弧を付けないでください。 操作の順序に必要な場合を除き、可読性が"
 "低下するだけです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:365
 msgid "Boolean operators"
 msgstr "ブール演算子"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:367
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
@@ -251,15 +283,15 @@ msgstr ""
 "最もアクセスしやすいように、ブール演算子のプレーンな英語バージョンを優先しま"
 "す:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:369
 msgid "Use ``and`` instead of ``&&``."
 msgstr "``&&`` の代わりに ``and`` を使用します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid "Use ``or`` instead of ``||``."
 msgstr "``||`` の代わりに ``or`` を使用します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:372
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -267,11 +299,11 @@ msgstr ""
 "また、ブール演算子をかっこで囲んであいまいさを解消することもできます。これに"
 "より、長い式が読みやすくなります。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:390
 msgid "Comment spacing"
 msgstr "コメントスペース"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:392
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
@@ -280,7 +312,7 @@ msgstr ""
 "はスペースは付けません。これにより、テキストコメントと無効化したコードを区別"
 "できます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:411
 msgid ""
 "In the script editor, to toggle the selected code commented, press :kbd:"
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
@@ -290,11 +322,11 @@ msgstr ""
 "`Ctrl + K` を押します。この機能は、選択した行の先頭に単一の#記号を追加します"
 "(#記号があれば逆に削除します)。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:416
 msgid "Whitespace"
 msgstr "スペース"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:418
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
@@ -302,15 +334,15 @@ msgstr ""
 "演算子の前後およびコンマの後には常に1つのスペースを使用します。また、辞書参照"
 "や関数呼び出しに余分なスペースを入れないでください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "式を垂直方向に揃えるためにスペースを使用しないでください:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:450
 msgid "Quotes"
 msgstr "引用符"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
@@ -318,49 +350,49 @@ msgstr ""
 "シングルクォートを使えばエスケープする文字数を減らせる場合以外は、なるべくダ"
 "ブルクォートを使用するようにします。下記の例を見てください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:470
 #, fuzzy
 msgid "Numbers"
 msgstr "メンバー"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:472
 msgid ""
 "Don't omit the leading or trailing zero in floating-point numbers. "
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:489
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
 #, fuzzy
 msgid "**Good**::"
 msgstr "**良い例**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:508
 #, fuzzy
 msgid "**Bad**::"
 msgstr "**悪い例**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:486
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:519
 msgid "Naming conventions"
 msgstr "命名規則"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:473
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:521
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
@@ -369,45 +401,45 @@ msgstr ""
 "これらの命名規則は、Godot Engineスタイルに従います。これらを壊すと、コードが"
 "組み込みの命名規則と衝突し、コードの一貫性が失われます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:526
 #, fuzzy
 msgid "File names"
 msgstr "ファイル名"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:480
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:528
 msgid ""
 "Use snake_case for file names. For named classes, convert the PascalCase "
 "class name to snake_case::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
 msgid ""
 "This is consistent with how C++ files are named in Godot's source code. This "
 "also avoids case sensitivity issues that can crop up when exporting a "
 "project from Windows to other platforms."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:498
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
 msgid "Classes and nodes"
 msgstr "クラスとノード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid "Use PascalCase for class and node names:"
 msgstr "クラス名とノード名には PascalCase を使用します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:506
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:554
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr "クラスを定数または変数にロードするときにもPascalCaseを使用します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:513
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:561
 msgid "Functions and variables"
 msgstr "関数と変数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:515
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:563
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "関数と変数に名前を付けるには、snake\\ _caseを使用します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:522
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
@@ -415,19 +447,19 @@ msgstr ""
 "ユーザーがオーバーライドする必要がある仮想メソッド関数、プライベート関数、お"
 "よびプライベート変数の前に単一のアンダースコア(\\_)を追加します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:579
 msgid "Signals"
 msgstr "シグナル"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:581
 msgid "Use the past tense to name signals:"
 msgstr "過去形を使用してシグナルに名前を付けます:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:589
 msgid "Constants and enums"
 msgstr "定数と列挙型"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:543
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
@@ -435,7 +467,7 @@ msgstr ""
 "CONSTANT\\ _CASEで定数を記述します。つまり、すべて大文字でアンダースコア(\\_)"
 "を使用して単語を区切ります:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
@@ -443,11 +475,11 @@ msgstr ""
 "列挙型の\\ *名前*\\ にはPascalCaseを、そのメンバーには定数なのでCONSTANT"
 "\\_CASEを使用します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:612
 msgid "Code order"
 msgstr "コードの順序"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:566
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:614
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
@@ -456,11 +488,11 @@ msgstr ""
 "は、\\ :ref:`formatting` を参照してください。命名規則については、\\ :ref:"
 "`naming_conventions` を参照してください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:569
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
 msgid "We suggest to organize GDScript code this way:"
 msgstr "次のようにGDScriptコードを整理することをお勧めします:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:592
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:640
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
@@ -470,23 +502,23 @@ msgstr ""
 "どのように機能するかを理解しやすくし、変数宣言の順序に関連するエラーを回避し"
 "ます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:596
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
 msgid "This code order follows four rules of thumb:"
 msgstr "このコードの順序は、次の4つの経験則に従います:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:646
 msgid "Properties and signals come first, followed by methods."
 msgstr "プロパティとシグナルが最初に来て、メソッドがそれに続きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:599
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:647
 msgid "Public comes before private."
 msgstr "パブリックはプライベートの前に来ます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
 msgid "Virtual callbacks come before the class's interface."
 msgstr "仮想コールバックは、クラスのインターフェースの前に来ます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:601
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:649
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
@@ -494,11 +526,11 @@ msgstr ""
 "オブジェクトの構築関数と初期化関数、\\ ``_init`` と ``_ready`` は実行時にオブ"
 "ジェクトを変更する関数の前に来ます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
 msgid "Class declaration"
 msgstr "クラス宣言"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:656
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
@@ -506,7 +538,7 @@ msgstr ""
 "コードがエディタで実行されることを意図している場合、スクリプトの最初の行に "
 "``tool`` キーワードを置きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
@@ -516,13 +548,13 @@ msgstr ""
 "でGDScriptファイルをグローバルタイプに変換できます。詳細については、\\ :ref:"
 "`doc_gdscript` を参照してください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:663
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr ""
 "次に、クラスが組み込み型を拡張する場合は、\\ `extends` キーワードを追加しま"
 "す。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:665
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
@@ -532,11 +564,11 @@ msgstr ""
 "ります。これを使用して、クラスの役割をチームメイトに説明したり、それがどのよ"
 "うに機能するか、他の開発者がどのように使用するかなどを説明したりできます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:629
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
 msgid "Signals and properties"
 msgstr "シグナルとプロパティ"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:631
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:679
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
@@ -544,7 +576,7 @@ msgstr ""
 "追加ドキュメントの後に、シグナル宣言、続いてプロパティ、つまりメンバー変数を"
 "記述します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:634
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
@@ -552,7 +584,7 @@ msgstr ""
 "列挙型は、他のプロパティのエクスポートヒントとして使用できるため、シグナルの"
 "後に来る必要があります。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
@@ -560,7 +592,7 @@ msgstr ""
 "次に、定数、エクスポートされた変数、public、private、およびonready変数をこの"
 "順序で記述します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:710
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -571,39 +603,39 @@ msgstr ""
 "す。これを使用して、ノードの依存関係をキャッシュしたり、クラスが依存している"
 "シーン内の子ノードを取得したりできます。これは上記の例が示すものです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:716
 #, fuzzy
 msgid "Member variables"
 msgstr "メンバアクセス"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:718
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:723
 #, fuzzy
 msgid "Local variables"
 msgstr "ローカル変数(LocalVarSet/LocalVarGet)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:725
 msgid ""
 "Declare local variables as close as possible to their first use. This makes "
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:730
 msgid "Methods and static functions"
 msgstr "メソッドと静的関数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:732
 msgid "After the class's properties come the methods."
 msgstr "クラスのプロパティの後にメソッドが続きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:686
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:734
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -613,7 +645,7 @@ msgstr ""
 "バックメソッドで開始します。 そしてGodotがノードをシーンツリーに追加するとき"
 "に呼び出す ``_ready()`` コールバックを続けます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:738
 #, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
@@ -622,7 +654,7 @@ msgstr ""
 "これらの関数は、オブジェクトの初期化方法を示すため、最初に来る必要がありま"
 "す。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:693
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -632,7 +664,7 @@ msgstr ""
 "想コールバックが次に来る必要があります。これらは、オブジェクトのメインループ"
 "とゲームエンジンとの相互作用を制御します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:745
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
@@ -640,46 +672,58 @@ msgstr ""
 "クラスの残りのインターフェイスであるパブリックメソッドとプライベートメソッド"
 "は、この順序でその後に続きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:734
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:782
 msgid "Static typing"
 msgstr "静的型付け"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:736
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:784
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 "Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:787
 #, fuzzy
 msgid "Declared types"
 msgstr "名前付き型"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:789
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:795
 msgid "To declare the return type of a function, use ``-> <type>``:"
 msgstr "関数の戻り値の定義をするには、``-> <type>``を使ってください:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:802
 #, fuzzy
 msgid "Inferred types"
 msgstr "コアタイプ"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:804
 #, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
 "コンパイラにタイプヒントを推測させる場合、コロンとイコールは一緒に書いて下さ"
 "い: ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:762
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:810
 msgid ""
 "However, in a few cases when context is missing, the compiler falls back to "
 "the function's return type. For example, ``get_node()`` cannot infer a type "
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:821
+msgid ""
+"Alternatively, you can use the ``as`` keyword to cast the return type, and "
+"that type will be used to infer the type of the var."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:831
+msgid ""
+"This option is also considered more :ref:`type-"
+"safe<doc_gdscript_static_typing_safe_lines>` than the first."
 msgstr ""

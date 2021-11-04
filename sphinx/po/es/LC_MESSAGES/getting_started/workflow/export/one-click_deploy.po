@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "What is one-click deploy?"
 msgstr "¿Qué es la implementación con un clic?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
-#, fuzzy
 msgid ""
 "One-click deploy is a feature that is available once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
@@ -34,27 +33,25 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
-"Esta característica aparecerá automáticamente una vez que una nueva "
-"plataforma sea configurada correctamente y que un dispositivo soportado esté "
-"conectado a la computadora. Ya que las cosas pueden fallar en muchos niveles "
-"(que la plataforma no se ha configurado correctamente, el SDK pudo haberse "
-"instalado con errores, el dispositivo puede estar mal configurado, etc.), es "
-"bueno dejar que el usuario sepa que existe."
+"El despliegue con un clic es una función que está disponible una vez que una "
+"plataforma está configurada correctamente y un dispositivo compatible está "
+"conectado a la computadora. Dado que las cosas pueden salir mal en muchos "
+"niveles (es posible que la plataforma no esté configurada correctamente, el "
+"SDK puede estar instalado incorrectamente, el dispositivo puede estar "
+"configurado incorrectamente, etc.), es bueno que el usuario sepa que existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
-#, fuzzy
 msgid ""
 "After adding an Android export preset marked as Runnable, Godot can detect "
 "when a USB device is connected to the computer and offer the user to "
 "automatically export, install and run the project (in debug mode) on the "
 "device. This feature is called *one-click deploy*."
 msgstr ""
-"Algunas plataformas (en el momento de escribir este artículo, sólo Android) "
-"pueden detectar cuándo un dispositivo USB está conectado a la computadora y "
-"ofrecer al usuario la posibilidad de exportar, instalar y ejecutar "
-"automáticamente el proyecto (en modo depuración) en el dispositivo. Esta "
-"característica se llama, en palabras de moda de la industria, \"Despliegue "
-"con un solo clic\" (o \"One-Click Deploy\")."
+"Después de agregar un ajuste preestablecido de exportación de Android "
+"marcado como Ejecutable, Godot puede detectar cuándo un dispositivo USB está "
+"conectado a la computadora y ofrecer al usuario exportar, instalar y "
+"ejecutar automáticamente el proyecto (en modo de depuración) en el "
+"dispositivo. Esta característica se llama *despliegue con un clic*."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:22
 msgid ""
@@ -64,11 +61,12 @@ msgid ""
 "runnable. If you mark a second preset in a given platform as runnable, the "
 "other preset will no longer be marked as runnable."
 msgstr ""
-"El despliegue con un solo clic solo está disponible una vez hayas añadido al "
-"menos una plantilla de exportación como **Ejecutable** en el diálogo "
-"Exportar. Puedes marcar más de un ajuste preestablecido como ejecutable, "
-"pero, por plataforma, solo podrás marcar uno, los demás ajustes "
-"preestablecidos de dicha plataforma se desmarcarán."
+"El despliegue con un clic sólo está disponible una vez que haya agregado una "
+"plantilla de exportación marcada como **Ejecutable** en el cuadro de diálogo "
+"Exportar. Puede marcar varios ajustes preestablecidos de exportación como "
+"ejecutables, pero sólo un ajuste preestablecido por plataforma puede "
+"marcarse como ejecutable. Si marca un segundo preset en una plataforma "
+"determinada como ejecutable, el otro preset ya no se marcará como ejecutable."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
 msgid "Supported platforms"
@@ -111,9 +109,8 @@ msgid "Support for more platforms such as iOS is planned."
 msgstr "Está previsto el soporte a más plataformas, como iOS."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:46
-#, fuzzy
 msgid "Using one-click deploy"
-msgstr "Despliegue con un solo clic"
+msgstr "Despliegue con un sólo clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:48
 msgid ""

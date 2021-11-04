@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,26 +176,28 @@ msgstr ""
 "commande suivante dans une invite de commande : ``type nul > .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
+#, fuzzy
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
-"using the ``load()`` and ``preload()`` methods."
+"using the ``load()`` and ``preload()`` methods. Ignoring a folder will also "
+"automatically hide it from the FileSystem dock, which can be useful to "
+"reduce clutter."
 msgstr ""
 "Une fois le dossier ignoré, les ressources de ce dossier ne peuvent plus "
 "être chargées en utilisant les méthodes ``load()`` et ``preload()``."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
 msgid ""
-"Ignoring a folder will also automatically hide it from the FileSystem dock, "
-"which can be useful to reduce clutter."
+"Note that the ``.gdignore`` file's contents are ignored, which is why the "
+"file should be empty. It does not support patterns like ``.gitignore`` files "
+"do."
 msgstr ""
-"Ignorer un dossier le cachera aussi automatiquement du dock FileSystem, ce "
-"qui peut être utile pour réduire l'encombrement."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:97
 msgid "Case sensitivity"
 msgstr "Sensibilité à la casse"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:98
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:99
 msgid ""
 "Windows and recent macOS versions use case-insensitive filesystems by "
 "default, whereas Linux distributions use a case-sensitive filesystem by "
@@ -212,7 +214,7 @@ msgstr ""
 "est recommandé de s'en tenir au nommage ``snake_case`` pour tous les "
 "fichiers du projet (et les caractères minuscules en général)."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:107
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
@@ -221,7 +223,7 @@ msgstr ""
 "contraire (comme le guide de style C#). Néanmoins, soyez cohérent pour "
 "éviter les erreurs."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:111
 msgid ""
 "On Windows 10, to further avoid mistakes related to case sensitivity, you "
 "can also make the project folder case-sensitive. After enabling the Windows "
@@ -233,7 +235,7 @@ msgstr ""
 "avoir activé la fonction Sous-système Windows pour Linux, exécutez la "
 "commande suivante dans une fenêtre PowerShell :"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:120
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:121
 msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "

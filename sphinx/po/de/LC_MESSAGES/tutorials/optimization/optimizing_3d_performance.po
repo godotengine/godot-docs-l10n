@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,19 +79,12 @@ msgstr ""
 "noch die Leistung."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:33
-#, fuzzy
 msgid ""
 "One way we can potentially reduce the amount to be rendered is to take "
-"advantage of occlusion. As of Godot 3.3, there is no built in support for "
-"occlusion in Godot. However, with careful design you can still get many of "
-"the advantages."
+"advantage of occlusion."
 msgstr ""
-"Eine Möglichkeit die zu rendernde Menge möglicherweise zu reduzieren besteht "
-"darin, die Umgebungsverdeckung (Okklusion) zu nutzen. Ab Version 3.2.2 gibt "
-"es in Godot keine integrierte Unterstützung für die Okklusion. Bei "
-"sorgfältiger Gestaltung können Sie jedoch viele der Vorteile nutzen."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:37
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:36
 #, fuzzy
 msgid ""
 "For instance, in our city street scenario, you may be able to work out in "
@@ -107,47 +100,67 @@ msgstr ""
 "Ihr Betrachter in der Straße ``A`` befindet (möglicherweise unter Verwendung "
 "von Godot-Bereichen). Dann können Sie die anderen Straßen ausblenden."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:43
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:42
 #, fuzzy
 msgid ""
-"This is a manual version of what is known as a \"potentially visible set\". "
-"It is a very powerful technique for speeding up rendering. You can also use "
-"it to restrict physics or AI to the local area, and speed these up as well "
-"as rendering."
+"This example is a manual version of what is known as a *potentially visible "
+"set*. It is a very powerful technique for speeding up rendering. You can "
+"also use it to restrict physics or AI to the local area, and speed these up "
+"as well as rendering."
 msgstr ""
 "Dies ist eine manuelle Version eines sogenannten ´potenziell sichtbaren Sets"
 "´. Es ist eine sehr leistungsfähige Technik um das Rendern zu beschleunigen. "
 "Sie können es auch verwenden um Physik oder KI auf den lokalen Bereich zu "
 "beschränken und diese sowie das Rendern zu beschleunigen."
 
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:48
+#, fuzzy
+msgid "Portal Rendering"
+msgstr "Rendern"
+
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:50
 msgid ""
-"In some cases, you may have to adapt your level design to add more occlusion "
-"opportunities. For example, you may have to add more walls to prevent the "
-"player from seeing too far away, which would decrease performance due to the "
-"lost opportunies for occlusion culling."
+"However, there is a much easier way to take advantage of occlusion. Godot "
+"features an advanced portal rendering system, which can perform occlusion "
+"culling from cameras and lights. See :ref:`doc_rooms_and_portals`."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:56
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:54
+msgid ""
+"This is not a fully automatic system and it requires some manual setup. "
+"However, it potentially offers significant performance increases."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:59
+msgid ""
+"In some cases, you can adapt your level design to add more occlusion "
+"opportunities. For example, you can add more walls to prevent the player "
+"from seeing too far away, which would decrease performance due to the lost "
+"opportunies for occlusion culling."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
 msgid "Other occlusion techniques"
 msgstr "Andere Verdeckungstechniken"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:58
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:67
+#, fuzzy
 msgid ""
-"There are other occlusion techniques such as portals, automatic PVS, and "
-"raster-based occlusion culling. Some of these may be available through add-"
-"ons and may be available in core Godot in the future."
+"As well as the portal system and manual methods, there are various other "
+"occlusion techniques such as raster-based occlusion culling. Some of these "
+"may be available through add-ons or may be available in core Godot in the "
+"future."
 msgstr ""
 "Es gibt andere Verdeckungstechniken wie Portale, automatisches PVS und "
 "rasterbasierte Umgebungsverdeckung. Einige davon sind möglicherweise über "
 "Addons verfügbar und werden möglicherweise in Zukunft in Godot verfügbar "
 "sein."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:63
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:72
 msgid "Transparent objects"
 msgstr "Transparente Objekte"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:74
 #, fuzzy
 msgid ""
 "Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader "
@@ -167,7 +180,7 @@ msgstr ""
 "versuchen Sie diesen zu einer separaten Oberfläche mit eigenen Material zu "
 "wandeln."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:73
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:82
 msgid ""
 "For more information, see the :ref:`GPU optimizations "
 "<doc_gpu_optimization>` doc."
@@ -175,11 +188,11 @@ msgstr ""
 "Für mehr Informationen siehe diese Anleitung :ref:`GPU optimizations "
 "<doc_gpu_optimization>`."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:77
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:86
 msgid "Level of detail (LOD)"
 msgstr "Detailgrad (LOD=Level of detail)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:79
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:88
 #, fuzzy
 msgid ""
 "In some situations, particularly at a distance, it can be a good idea to "
@@ -197,11 +210,11 @@ msgstr ""
 "können niedrigere Polygon-Modelle verwenden oder Transparenz verwenden, um "
 "komplexere Geometrien zu simulieren."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:87
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:96
 msgid "Billboards and imposters"
 msgstr "Billboards und Imposters"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:89
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:98
 msgid ""
 "The simplest version of using transparency to deal with LOD is billboards. "
 "For example, you can use a single transparent quad to represent a tree at "
@@ -217,7 +230,7 @@ msgstr ""
 "In diesem Fall kann die Transparenz die Füllrate beeinträchtigen (weitere "
 "Informationen zur Füllrate finden Sie unter :ref:`doc_gpu_optimization`)."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:95
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:104
 msgid ""
 "An alternative is to render not just one tree, but a number of trees "
 "together as a group. This can be especially effective if you can see an area "
@@ -227,7 +240,7 @@ msgstr ""
 "als Gruppe zusammen zu rendern. Dies kann besonders effektiv sein, wenn Sie "
 "im Spiel einen Bereich sehen, sich diesem jedoch nicht nähern können."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:99
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:108
 msgid ""
 "You can make imposters by pre-rendering views of an object at different "
 "angles. Or you can even go one step further, and periodically re-render a "
@@ -245,11 +258,11 @@ msgstr ""
 "sein bis es läuft, kann sich jedoch je nach Art des von Ihnen durchgeführten "
 "Projekts lohnen."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:107
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:116
 msgid "Use instancing (MultiMesh)"
 msgstr "MultiMesh-Intanzen verwenden"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:109
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
 msgid ""
 "If several identical objects have to be drawn in the same place or nearby, "
 "try using :ref:`MultiMesh <class_MultiMesh>` instead. MultiMesh allows the "
@@ -264,15 +277,15 @@ msgstr ""
 "Gras, Partikel und alles andere, bei dem Sie Tausende identischer Objekte "
 "haben."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:115
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
 msgid "Also see the :ref:`Using MultiMesh <doc_using_multimesh>` doc."
 msgstr "Siehe auch das :ref:`MultiMesh nutzen <doc_using_multimesh>` Dokument."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:127
 msgid "Bake lighting"
 msgstr "Beleuchtung einbrennen"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:120
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:129
 msgid ""
 "Lighting objects is one of the most costly rendering operations. Realtime "
 "lighting, shadows (especially multiple lights), and GI are especially "
@@ -284,7 +297,7 @@ msgstr ""
 "besonders teuer. Sie sind möglicherweise einfach zu viel für mobile Geräte "
 "mit geringerem Stromverbrauch."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
 msgid ""
 "**Consider using baked lighting**, especially for mobile. This can look "
 "fantastic, but has the downside that it will not be dynamic. Sometimes, this "
@@ -294,7 +307,7 @@ msgstr ""
 "Mobilgeräte. Dies kann fantastisch aussehen, hat aber den Nachteil nicht "
 "dynamisch zu sein. Manchmal ist dies ein Kompromiss, der sich aber lohnt."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:128
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:137
 msgid ""
 "In general, if several lights need to affect a scene, it's best to use :ref:"
 "`doc_baked_lightmaps`. Baking can also improve the scene quality by adding "
@@ -304,11 +317,11 @@ msgstr ""
 "Allgemeinen :ref:`doc_baked_lightmaps`. Das einbrennen kann auch die "
 "Szenenqualität verbessern, indem indirekte Lichtreflexe hinzugefügt werden."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
 msgid "Animation and skinning"
 msgstr "Animation und Skinning"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:144
 msgid ""
 "Animation and vertex animation such as skinning and morphing can be very "
 "expensive on some platforms. You may need to lower the polycount "
@@ -320,11 +333,11 @@ msgstr ""
 "die Anzahl der Polygone für animierte Modelle erheblich senken oder die "
 "Anzahl der auf dem Bildschirm angezeigten Modelle gleichzeitig begrenzen."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:140
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
 msgid "Large worlds"
 msgstr "Große Welten"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:151
 msgid ""
 "If you are making large worlds, there are different considerations than what "
 "you may be familiar with from smaller games."
@@ -332,7 +345,7 @@ msgstr ""
 "Wenn Sie große Welten erschaffen, gibt es andere Überlegungen als die, die "
 "Sie aus kleineren Spielen kennen."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:145
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:154
 msgid ""
 "Large worlds may need to be built in tiles that can be loaded on demand as "
 "you move around the world. This can prevent memory use from getting out of "
@@ -343,7 +356,7 @@ msgstr ""
 "die erforderliche Verarbeitung auf den lokalen Bereich und kann verhindern, "
 "dass die Speichernutzung außer Kontrolle gerät."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:158
 #, fuzzy
 msgid ""
 "There may also be rendering and physics glitches due to floating point error "

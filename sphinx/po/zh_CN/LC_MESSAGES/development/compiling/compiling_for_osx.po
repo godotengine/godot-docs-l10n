@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,15 +147,22 @@ msgstr "要编译一个 *精简* 构建, 它提供了编辑器功能, 可以自�
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid ""
-"To compile a *server* build which is optimized to run dedicated game "
+"To compile a debug *server* build which can be used with :ref:`remote "
+"debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:85
+#, fuzzy
+msgid ""
+"To compile a release *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr "要编译一个经过优化以运行专用游戏的 *服务器* 版本, 使用以下构建选项::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:86
+#: ../../docs/development/compiling/compiling_for_osx.rst:91
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:88
+#: ../../docs/development/compiling/compiling_for_osx.rst:93
 msgid ""
 "To build macOS export templates, you have to compile with ``tools=no`` (no "
 "editor) and respectively for ``target=release`` (release template) and "
@@ -164,7 +171,7 @@ msgstr ""
 "要建立macOS的导出模板，你必须用 ``tools=no`` （无编辑器）进行编译，并分别为 "
 "``target=release`` （发布模板）和 ``target=release_debug``."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:92
+#: ../../docs/development/compiling/compiling_for_osx.rst:97
 msgid ""
 "Official templates are universal binaries which support both Intel x86_64 "
 "and ARM64 architectures. You can also create export templates that support "
@@ -173,15 +180,15 @@ msgstr ""
 "官方模板是通用的二进制文件，同时支持英特尔x86_64和ARM64架构。你也可以通过省略"
 "下面的 ``lipo`` 步骤，创建只支持架构中的一种的导出模板。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:96
+#: ../../docs/development/compiling/compiling_for_osx.rst:101
 msgid "For Intel x86_64::"
 msgstr "对于英特尔 x86_64::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:101
+#: ../../docs/development/compiling/compiling_for_osx.rst:106
 msgid "For ARM64 (Apple M1)::"
 msgstr "对于 ARM64 (Apple M1)::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:106
+#: ../../docs/development/compiling/compiling_for_osx.rst:111
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands blocks and then use ``lipo`` to bundle them together::"
@@ -189,7 +196,7 @@ msgstr ""
 "要在一个单一的 \"Universal 2\" 二进制文件中支持两种架构，请运行上述两个命令"
 "块，然后使用 ``lipo`` 将它们捆绑在一起::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:112
+#: ../../docs/development/compiling/compiling_for_osx.rst:117
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_template.app``. The release and "
@@ -205,7 +212,7 @@ msgstr ""
 "``godot_osx_debug.64`` 。你可以用下面的命令来做（假设是通用构建，否则将 ``."
 "universal`` 扩展名替换为你的特定档案的二进制文件）::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:125
+#: ../../docs/development/compiling/compiling_for_osx.rst:130
 msgid ""
 "You can then zip the ``osx_template.app`` folder to reproduce the ``osx."
 "zip`` template from the official Godot distribution::"
@@ -213,11 +220,11 @@ msgstr ""
 "然后你可以压缩 ``osx_template.app`` 文件夹来复制Godot官方发行的 ``osx.zip`` "
 "模板::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:131
+#: ../../docs/development/compiling/compiling_for_osx.rst:136
 msgid "Cross-compiling for macOS from Linux"
 msgstr "从Linux交叉编译macOS"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:133
+#: ../../docs/development/compiling/compiling_for_osx.rst:138
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
@@ -229,7 +236,7 @@ msgstr ""
 "tpoechtrager/osxcross>`__ , 以便能够使用macOS作为目标. 首先, 按照说明来安装"
 "它:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:138
+#: ../../docs/development/compiling/compiling_for_osx.rst:143
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
@@ -238,21 +245,21 @@ msgstr ""
 "在你的机器上某处克隆 `OSXCross 资源库 <https://github.com/tpoechtrager/"
 "osxcross>`__ (或者下载一个ZIP文件并解压缩), 例如::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:144
+#: ../../docs/development/compiling/compiling_for_osx.rst:149
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
 "按照说明打包SDK:https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:146
+#: ../../docs/development/compiling/compiling_for_osx.rst:151
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
 "按照说明安装OSXCross:https://github.com/tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:149
+#: ../../docs/development/compiling/compiling_for_osx.rst:154
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
@@ -261,11 +268,11 @@ msgstr ""
 "之后, 你需要将 ``OSXCROSS_ROOT`` 定义为OSXCross的安装路径(与你克隆软件库/提取"
 "压缩包的地方相同), 例如::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:155
+#: ../../docs/development/compiling/compiling_for_osx.rst:160
 msgid "Now you can compile with SCons like you normally would::"
 msgstr "现在你可以像平时一样用SCons进行编译::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:159
+#: ../../docs/development/compiling/compiling_for_osx.rst:164
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "

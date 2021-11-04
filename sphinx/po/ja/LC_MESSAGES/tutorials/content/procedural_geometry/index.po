@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,20 +302,22 @@ msgstr ""
 "シュ)の生成に最適です。"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:124
+#, fuzzy
 msgid ""
 "Using an ArrayMesh is slightly faster than using a SurfaceTool, but the API "
-"is more a little more challenging. Additionally, SurfaceTool has a few "
-"quality of life methods such as ``generate_normals()`` and ``index()``."
+"is a little more challenging. Additionally, SurfaceTool has a few quality of "
+"life methods such as ``generate_normals()`` and ``index()``."
 msgstr ""
 "ArrayMeshの使用は、SurfaceToolの使用よりもわずかに高速ですが、APIはもう少し挑"
 "戦的です。さらに、SurfaceToolには ``generate_normals()`` や ``index()`` など"
 "の利便性向上メソッドがいくつかあります。"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:127
+#, fuzzy
 msgid ""
 "ImmediateGeometry regenerates the mesh every frame, so it is much slower "
 "than ArrayMesh or SurfaceTool. However, if you need the geometry to change "
-"every frame anyway it provides a much easier interface that may even be a "
+"every frame anyway, it provides a much easier interface that may even be a "
 "little faster than generating an ArrayMesh every frame."
 msgstr ""
 "ImmediateGeometryはフレームごとにメッシュを再生成するため、ArrayMeshや"
@@ -324,11 +326,12 @@ msgstr ""
 "し速い可能性がある、はるかに簡単なインターフェイスを提供します。"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:131
+#, fuzzy
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "
 "etc.). It is incredibly useful when you need that sort of data to transform "
-"the mesh, but it is not a good idea to use if that information is not "
+"the mesh, but it is not a good idea to use it if that information is not "
 "needed. The MeshDataTool is best used if you are going to be using an "
 "algorithm that requires access to the face or edge array."
 msgstr ""

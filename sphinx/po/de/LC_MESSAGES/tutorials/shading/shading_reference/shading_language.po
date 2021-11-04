@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,14 +54,14 @@ msgid "Most GLSL ES 3.0 datatypes are supported:"
 msgstr "Die meisten GLSL ES 3.0 Datentypen werden unterstützt:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
 msgid "Type"
 msgstr "Art"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:479
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -75,7 +75,7 @@ msgstr ""
 "Void Datentyp, nur nützlich für Funktionen die nichts zurück übergeben."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 msgid "**bool**"
 msgstr "**bool**"
 
@@ -108,7 +108,7 @@ msgid "Four-component vector of booleans."
 msgstr "Vier-Komponenten Vektor mit Booleschen."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:33
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 msgid "**int**"
 msgstr "**int**"
 
@@ -174,7 +174,7 @@ msgid "Four-component vector of unsigned integers."
 msgstr "Vier-Komponenten Vektor mit Ganzzahl ohne Vorzeichen."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:49
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 msgid "**float**"
 msgstr "**float**"
 
@@ -183,7 +183,7 @@ msgid "Floating-point scalar."
 msgstr "Gleitkomma-Skalar."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 msgid "**vec2**"
 msgstr "**vec2**"
 
@@ -192,7 +192,7 @@ msgid "Two-component vector of floating-point values."
 msgstr "Zwei-Komponenten Vektor mit Fließkomma-Werten."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 msgid "**vec3**"
 msgstr "**vec3**"
 
@@ -201,8 +201,8 @@ msgid "Three-component vector of floating-point values."
 msgstr "Drei-Komponenten Vektor mit Fließkomma-Werten."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "**vec4**"
 msgstr "**vec4**"
 
@@ -227,8 +227,8 @@ msgid "3x3 matrix, in column major order."
 msgstr "3x3 Matrix, in spaltenweiser Anordnung."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "**mat4**"
 msgstr "**mat4**"
 
@@ -237,12 +237,12 @@ msgid "4x4 matrix, in column major order."
 msgstr "4x4 Matrix, in spaltenweiser Anordnung."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:63
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
 msgid "**sampler2D**"
 msgstr "**sampler2D**"
 
@@ -814,25 +814,46 @@ msgid "Varyings"
 msgstr "Variiert"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:423
+#, fuzzy
 msgid ""
-"To send data from the vertex to the fragment processor function, *varyings* "
-"are used. They are set for every primitive vertex in the *vertex processor*, "
-"and the value is interpolated for every pixel in the fragment processor."
+"To send data from the vertex to the fragment (or light) processor function, "
+"*varyings* are used. They are set for every primitive vertex in the *vertex "
+"processor*, and the value is interpolated for every pixel in the *fragment "
+"processor*."
 msgstr ""
 "Um Daten vom Vertex an die Fragment-Prozessorfunktion zu senden, werden "
 "*Variationen* verwendet. Sie werden für jeden einfachen Vertex im *Vertex-"
 "Prozessor* festgelegt und der Wert wird für jedes Pixel im Fragment-"
 "Prozessor interpoliert."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:440
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:445
 msgid "Varying can also be an array:"
 msgstr "Eine Variation kann auch ein Array sein:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:457
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:462
+msgid ""
+"It's also possible to send data from *fragment* to *light* processors using "
+"*varying* keyword. To do so you can assign it in the *fragment* and later "
+"use it in the *light* function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
+msgid ""
+"Note that varying may not be assigned in custom functions or a *light "
+"processor* function like:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:498
+msgid ""
+"This limitation was introduced to prevent incorrect usage before "
+"initialization."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
 msgid "Interpolation qualifiers"
 msgstr "Interpolations-Kennzeichnungsmerkmale"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:459
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
 msgid ""
 "Certain values are interpolated during the shading pipeline. You can modify "
 "how these interpolations are done by using *interpolation qualifiers*."
@@ -841,27 +862,27 @@ msgstr ""
 "die Ausführung dieser Interpolationen mithilfe von "
 "*Interpolationsqualifizierern* ändern."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
 msgid "There are two possible interpolation qualifiers:"
 msgstr "Es gibt zwei mögliche Interpolations-Kennzeichnungsmerkmale:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:479
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
 msgid "Qualifier"
 msgstr "Merkmal"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
 msgid "**flat**"
 msgstr "**flat**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
 msgid "The value is not interpolated."
 msgstr "Der Wert ist nicht interpoliert."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 msgid "**smooth**"
 msgstr "**smooth**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default."
@@ -869,11 +890,11 @@ msgstr ""
 "Der Wert ist interpoliert in einer perspektivisch korrekten Art. Dies ist "
 "der Standard."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
 msgid "Uniforms"
 msgstr "Uniforms"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:490
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
 msgid ""
 "Passing values to shaders is possible. These are global to the whole shader "
 "and are called *uniforms*. When a shader is later assigned to a material, "
@@ -886,7 +907,7 @@ msgstr ""
 "Parameter darin angezeigt. Uniforms können nicht aus dem Shader heraus "
 "geschrieben werden."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:500
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
 msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
@@ -894,7 +915,7 @@ msgstr ""
 "Sie können Uniforms im Editor im Material festlegen. Oder Sie können sie "
 "über GDScript erstellen:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:506
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
 msgid ""
 "The first argument to ``set_shader_param`` is the name of the uniform in the "
 "shader. It must match *exactly* to the name of the uniform in the shader or "
@@ -904,7 +925,7 @@ msgstr ""
 "Shader. Es muss *genau* mit dem Namen des Uniform im Shader übereinstimmen, "
 "sonst wird es nicht erkannt."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
@@ -914,7 +935,7 @@ msgstr ""
 "Godot optionale Shader-Hinweise, damit der Compiler versteht welche Uniform "
 "verwendet wird."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
 msgid ""
 "It's important to understand that textures that are supplied as color "
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
@@ -925,83 +946,83 @@ msgstr ""
 "B. ``hint_albedo``), da die 3D-Engine von Godot im linearen Farbraum "
 "gerendert wird."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:566
 msgid "Full list of hints below:"
 msgstr "Hier eine komplette Liste von Hinweisen:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
 msgid "Hint"
 msgstr "Hinweis"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
 msgid "hint_color"
 msgstr "hint_color"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
 msgid "Used as color"
 msgstr "genutzt als Farbe"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
 msgid "**int, float**"
 msgstr "**int, float**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
 msgid "hint_range(min, max[, step])"
 msgstr "hint_range(min, max[, step])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
 msgid "Used as range (with min/max/step)"
 msgstr "genutzt als Bereich (mit Min/Max/Schritt)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
 msgid "hint_albedo"
 msgstr "hint_albedo"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
 msgid "Used as albedo color, default white"
 msgstr "genutzt als Albedofarbe, Standard ist weiß"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
 msgid "hint_black_albedo"
 msgstr "hint_black_albedo"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
 msgid "Used as albedo color, default black"
 msgstr "genutzt als Albedofarbe, Standard ist schwarz"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
 msgid "hint_normal"
 msgstr "hint_normal"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
 msgid "Used as normalmap"
 msgstr "Als NormalMap verwenden"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
 msgid "hint_white"
 msgstr "hint_white"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
 msgid "As value, default to white."
 msgstr "als Wert, Standard ist weiß"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
 msgid "hint_black"
 msgstr "hint_black"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
 msgid "As value, default to black"
 msgstr "als Wert, Standard ist schwarz"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
 msgid "hint_aniso"
 msgstr "hint_aniso"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
 msgid "As flowmap, default to right."
 msgstr "Als FlowMap, standardmäßig nach rechts."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:588
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
 "variables from GDScript to shaders, Godot converts the type automatically. "
@@ -1011,35 +1032,35 @@ msgstr ""
 "von GDScript an Shader übergeben, konvertiert Godot den Typ automatisch. "
 "Unten finden Sie eine Tabelle der entsprechenden Typen:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
 msgid "GDScript type"
 msgstr "GDScript-Typ"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
 msgid "GLSL type"
 msgstr "GLSL Typ"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 msgid "**Vector2**"
 msgstr "**Vector2**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 msgid "**Vector3**"
 msgstr "**Vector3**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "**Color**"
 msgstr "**Color**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 msgid "**Transform**"
 msgstr "**Transform**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "**Transform2D**"
 msgstr "**Transform2D**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
 msgid ""
 "Be careful when setting shader uniforms from GDScript, no error will be "
 "thrown if the type does not match. Your shader will just exhibit undefined "
@@ -1049,16 +1070,16 @@ msgstr ""
 "der Typ nicht übereinstimmt wird kein Fehler ausgegeben. Ihr Shader zeigt "
 "nur undefiniertes Verhalten."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:614
 msgid "Uniforms can also be assigned default values:"
 msgstr "Uniforms können auch Standardwerte zugewiesen werden:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:624
 #, fuzzy
 msgid "Built-in variables"
 msgstr "Variablen bearbeiten"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:626
 msgid ""
 "A large number of built-in variables are available, like ``UV``, ``COLOR`` "
 "and ``VERTEX``. What variables are available depends on the type of shader "
@@ -1067,26 +1088,26 @@ msgid ""
 "variables that are available, please see the corresponding pages:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
 #, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
 msgstr ":ref:`Spatial-Shader <doc_spatial_shader>`"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:630
 #, fuzzy
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
 msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: für 2D Rendering."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
 #, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
 msgstr ":ref:`Partikelshader <doc_particle_shader>`"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:634
 msgid "Built-in functions"
 msgstr "Eingebaute Funktionen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:636
 msgid ""
 "A large number of built-in functions are supported, conforming to GLSL ES "
 "3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
@@ -1097,7 +1118,7 @@ msgstr ""
 "vec_uint_type, vec_bool_type verwendet wird, kann sie ein Skalar oder Vektor "
 "sein."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
 msgid ""
 "For a list of the functions that are not available in the GLES2 backend, "
 "please see the :ref:`Differences between GLES2 and GLES3 doc "
@@ -1107,766 +1128,766 @@ msgstr ""
 "Sie im :ref:`Unterschiede zwischen GLES2- und GLES3-Dokument "
 "<doc_gles2_gles3_differences>`."
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
 msgid "Function"
 msgstr "Funktion"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr "vec_type **radians** (vec_type degrees)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
 msgid "Convert degrees to radians"
 msgstr "konvertiert Grad nach Radiant"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr "vec_type **degrees** (vec_type radians)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
 msgid "Convert radians to degrees"
 msgstr "konvertiert Radiant nach Grad"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
 msgid "vec_type **sin** (vec_type x)"
 msgstr "vec_type **sin** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
 msgid "Sine"
 msgstr "Sinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "vec_type **cos** (vec_type x)"
 msgstr "vec_type **cos** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "Cosine"
 msgstr "Kosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
 msgid "vec_type **tan** (vec_type x)"
 msgstr "vec_type **tan** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
 msgid "Tangent"
 msgstr "Tangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 msgid "vec_type **asin** (vec_type x)"
 msgstr "vec_type **asin** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 msgid "Arcsine"
 msgstr "Arkussinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
 msgid "vec_type **acos** (vec_type x)"
 msgstr "vec_type **acos** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
 msgid "Arccosine"
 msgstr "Arkuskosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
 msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr "vec_type **atan** (vec_type y_over_x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
 msgid "Arctangent"
 msgstr "Arkustangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
 msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr "vec_type **atan** (vec_type y, vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
 msgid "Arctangent to convert vector to angle"
 msgstr "Arkustangens um einen Vektor in einem Winkel zu konvertieren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
 msgid "vec_type **sinh** (vec_type x)"
 msgstr "vec_type **sinh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
 msgid "Hyperbolic sine"
 msgstr "Hyperbolischer Sinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
 msgid "vec_type **cosh** (vec_type x)"
 msgstr "vec_type **cosh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
 msgid "Hyperbolic cosine"
 msgstr "Hyperbolischer Kosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
 msgid "vec_type **tanh** (vec_type x)"
 msgstr "vec_type **tanh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
 msgid "Hyperbolic tangent"
 msgstr "Hyperbolischer Tangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "vec_type **asinh** (vec_type x)"
 msgstr "vec_type **asinh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "Inverse hyperbolic sine"
 msgstr "Inverser Hyperbolischer Sinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
 msgid "vec_type **acosh** (vec_type x)"
 msgstr "vec_type **acosh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
 msgid "Inverse hyperbolic cosine"
 msgstr "Inverser Hyperbolischer Kosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
 msgid "vec_type **atanh** (vec_type x)"
 msgstr "vec_type **atanh** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
 msgid "Inverse hyperbolic tangent"
 msgstr "Inverser Hyperbolischer Tangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
 msgstr ""
 "Potenz (undefiniert falls ``x`` < 0 oder falls ``x`` = 0 und ``y`` <= 0)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
 msgid "vec_type **exp** (vec_type x)"
 msgstr "vec_type **exp** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
 msgid "Base-e exponential"
 msgstr "Basis-e exponentiell"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 msgid "vec_type **exp2** (vec_type x)"
 msgstr "vec_type **exp2** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 msgid "Base-2 exponential"
 msgstr "Basis-2 exponentiell"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "vec_type **log** (vec_type x)"
 msgstr "vec_type **log** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "Natural logarithm"
 msgstr "natürlicher Logarithmus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
 msgid "vec_type **log2** (vec_type x)"
 msgstr "vec_type **log2** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
 msgid "Base-2 logarithm"
 msgstr "Basis-2 Logarithmus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
 msgid "vec_type **sqrt** (vec_type x)"
 msgstr "vec_type **sqrt** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
 msgid "Square root"
 msgstr "Quadratwurzel"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
 msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr "vec_type **inversesqrt** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
 msgid "Inverse square root"
 msgstr "inverse Quadratwurzel"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
 msgid "vec_type **abs** (vec_type x)"
 msgstr "vec_type **abs** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
 msgid "Absolute"
 msgstr "Absolut"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
 msgid "ivec_type **abs** (ivec_type x)"
 msgstr "ivec_type **abs** (ivec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
 msgid "vec_type **sign** (vec_type x)"
 msgstr "vec_type **sign** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
 msgid "Sign"
 msgstr "Vorzeichen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
 msgid "ivec_type **sign** (ivec_type x)"
 msgstr "ivec_type **sign** (ivec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
 msgid "vec_type **floor** (vec_type x)"
 msgstr "vec_type **floor** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
 msgid "Floor"
 msgstr "Abrundungsfunktion (Gauß-Klammer)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
 msgid "vec_type **round** (vec_type x)"
 msgstr "vec_type **round** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
 msgid "Round"
 msgstr "runden"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr "vec_type **roundEven** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "Round to the nearest even number"
 msgstr "runden auf die nächste gerade Zahl"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
 msgid "vec_type **trunc** (vec_type x)"
 msgstr "vec_type **trunc** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
 msgid "Truncation"
 msgstr "kürzen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
 msgid "vec_type **ceil** (vec_type x)"
 msgstr "vec_type **ceil** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
 msgid "Ceil"
 msgstr "Aufrundungsfunktion"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
 msgid "vec_type **fract** (vec_type x)"
 msgstr "vec_type **fract** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
 msgid "Fractional"
 msgstr "Bruchteil"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
 msgid "vec_type **mod** (vec_type x, vec_type y)"
 msgstr "vec_type **mod** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "Remainder"
 msgstr "Rest"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "vec_type **mod** (vec_type x , float y)"
 msgstr "vec_type **mod** (vec_type x , float y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr "vec_type **modf** (vec_type x, out vec_type i)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "Fractional of ``x``, with ``i`` as integer part"
 msgstr "Bruch von ``x``, mit ``i`` als Ganzzahl-Teil"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr "vec_type  **min** (vec_type a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "Minimum"
 msgstr "Minimum"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr "vec_type  **max** (vec_type a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "Maximum"
 msgstr "Maximum"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 msgstr "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
 msgid "Clamp to ``min..max``"
 msgstr "Beschränken auf ``min..max``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
 msgid "float **mix** (float a, float b, float c)"
 msgstr "float **mix** (float a, float b, float c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
 msgid "Linear interpolate"
 msgstr "Lineare Interpolation"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
 msgid "Linear interpolate (scalar coefficient)"
 msgstr "lineare Interpolation (Skalar Koeffizient)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "Linear interpolate (vector coefficient)"
 msgstr "Lineare Interpolation (Vector Koeffizient)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
 msgid "Linear interpolate (boolean-vector selection)"
 msgstr "Lineare Interpolation (Boolesche-Vector Selektion)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "vec_type **step** (vec_type a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
 msgstr "``b[i] < a[i] ? 0.0 : 1.0``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
 msgid "vec_type **step** (float a, vec_type b)"
 msgstr "vec_type **step** (float a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
 msgid "``b[i] < a ? 0.0 : 1.0``"
 msgstr "``b[i] < a ? 0.0 : 1.0``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
 msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
 msgid "Hermite interpolate"
 msgstr "Hermiteinterpolation"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
 msgstr "vec_type **smoothstep** (float a, float b, vec_type c)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
 msgid "bvec_type **isnan** (vec_type x)"
 msgstr "bvec_type **isnan** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
 msgid "Returns ``true`` if scalar or vector component is ``NaN``"
 msgstr "Liefert ``true`` wenn die Skalar oder Vektor-Komponente ``NaN`` ist"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
 msgid "bvec_type **isinf** (vec_type x)"
 msgstr "bvec_type **isinf** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
 msgid "Returns ``true`` if scalar or vector component is ``INF``"
 msgstr "Liefert ``true`` wenn die Skalar oder Vektor-Komponente ``INF`` ist"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr "ivec_type **floatBitsToInt** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
 msgid "Float->Int bit copying, no conversion"
 msgstr "Fließkomma->Ganzzahl - Bitweise-Kopieren, keine Konvertierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr "uvec_type **floatBitsToUint** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
 msgid "Float->UInt bit copying, no conversion"
 msgstr ""
 "Fließkomma->vorzeichenlose Ganzzahl - Bitweise-Kopieren, keine Konvertierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr "vec_type **intBitsToFloat** (ivec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "Int->Float bit copying, no conversion"
 msgstr "Ganzzahl->Fließkomma - Bitweise-Kopieren, keine Konvertierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr "vec_type **uintBitsToFloat** (uvec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
 msgid "UInt->Float bit copying, no conversion"
 msgstr ""
 "vorzeichenlose Ganzzahl->Fließkomma - Bitweise-Kopieren, keine Konvertierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
 msgid "float **length** (vec_type x)"
 msgstr "float **length** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
 msgid "Vector length"
 msgstr "Vektorlänge"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr "float **distance** (vec_type a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
 msgid "Distance between vectors i.e ``length(a - b)``"
 msgstr "Abstand zwischen Vektoren, also ``length(a - b)``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr "float **dot** (vec_type a, vec_type b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
 msgid "Dot product"
 msgstr "Skalarprodukt (Punktprodukt)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
 msgid "Cross product"
 msgstr "Kreuzprodukt"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
 msgid "vec_type **normalize** (vec_type x)"
 msgstr "vec_type **normalize** (vec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
 msgid "Normalize to unit length"
 msgstr "normalisieren auf die Einheitslänge"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr "vec3 **reflect** (vec3 I, vec3 N)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
 msgid "Reflect"
 msgstr "Reflektieren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr "vec3 **refract** (vec3 I, vec3 N, float eta)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
 msgid "Refract"
 msgstr "Ablenken"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
 msgid "If ``dot(Nref, I)`` < 0, return N, otherwise –N"
 msgstr "Falls ``dot(Nref, I)`` < 0, liefere N zurück, ansonsten –N"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
 msgid "Matrix component multiplication"
 msgstr "Matrizenmultiplikation"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr "mat_type **outerProduct** (vec_type column, vec_type row)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
 msgid "Matrix outer product"
 msgstr "Matrix-Außenprodukt"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
 msgid "mat_type **transpose** (mat_type m)"
 msgstr "mat_type **transpose** (mat_type m)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
 msgid "Transpose matrix"
 msgstr "Matrix transponieren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
 msgid "float **determinant** (mat_type m)"
 msgstr "float **determinant** (mat_type m)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
 msgid "Matrix determinant"
 msgstr "Matrix-Determinante"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
 msgid "mat_type **inverse** (mat_type m)"
 msgstr "mat_type **inverse** (mat_type m)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
 msgid "Inverse matrix"
 msgstr "Matrix invertieren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr "bvec_type **lessThan** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
 msgid "Bool vector comparison on < int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für < int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
 msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
 msgstr "bvec_type **greaterThan** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
 msgid "Bool vector comparison on > int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für > int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:779
 msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:779
 msgid "Bool vector comparison on <= int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für <= int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:781
 msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:781
 msgid "Bool vector comparison on >= int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für >= int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
 msgid "bvec_type **equal** (vec_type x, vec_type y)"
 msgstr "bvec_type **equal** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
 msgid "Bool vector comparison on == int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für == int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
 msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **notEqual** (vec_type x, vec_type y)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
 msgid "Bool vector comparison on != int/uint/float vectors"
 msgstr "Boolescher-Vektorvergleich für != int/uint/float-Vektoren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:787
 msgid "bool **any** (bvec_type x)"
 msgstr "bool **any** (bvec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:787
 msgid "Any component is ``true``"
 msgstr "Irgendeine Komponente ist ``true``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:789
 msgid "bool **all** (bvec_type x)"
 msgstr "bool **all** (bvec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:789
 msgid "All components are ``true``"
 msgstr "Alle Komponenten sind ``true``"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:791
 msgid "bvec_type **not** (bvec_type x)"
 msgstr "bvec_type **not** (bvec_type x)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:791
 msgid "Invert boolean vector"
 msgstr "Booleschen Vektor invertieren"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:793
 msgid "ivec2 **textureSize** (sampler2D_type s, int lod)"
 msgstr "ivec2 **textureSize** (sampler2D_type s, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:793
 msgid "Get the size of a 2D texture"
 msgstr "Größe einer 2D Textur holen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:795
 msgid "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
 msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:795
 msgid "Get the size of a 2D texture array"
 msgstr "Größe eines 2D-Textur-Arrays ermitteln"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:797
 msgid "ivec3 **textureSize** (sampler3D s, int lod)"
 msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:797
 msgid "Get the size of a 3D texture"
 msgstr "Größe einer 3D-Textur ermitteln"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:799
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
 msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:799
 msgid "Get the size of a cubemap texture"
 msgstr "Größe einer CubeMap-Textur ermitteln"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:801
 msgid "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:801
 msgid "Perform a 2D texture read"
 msgstr "2D-Texturlesung durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:803
 msgid "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 msgstr "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:803
 msgid "Perform a 2D texture array read"
 msgstr "2D-Textur-Arraylesung durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:805
 msgid "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
 msgstr "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:805
 msgid "Perform a 3D texture read"
 msgstr "Liest eine 3D Textur ein"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:807
 msgid "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
 msgstr "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:807
 msgid "Perform a cubemap texture read"
 msgstr "CubeMap-Texturlesung durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:809
 msgid "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
 msgstr "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:809
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:811
 msgid "Perform a 2D texture read with projection"
 msgstr "2D-Texturlesung mit Projektion durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:811
 msgid "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
 msgstr "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:813
 msgid "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
 msgstr "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:813
 msgid "Perform a 3D texture read with projection"
 msgstr "3D-Texturlesung mit Projektion durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:815
 msgid "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
 msgstr "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:815
 msgid "Perform a 2D texture read at custom mipmap"
 msgstr "2D-Texturlesung in einer benutzerdefinierten MipMap durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:817
 msgid "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
 msgstr "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:817
 msgid "Perform a 2D texture array read at custom mipmap"
 msgstr "2D-Textur-Arraylesung in einer benutzerdefinierten MipMap durchführen"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:819
 msgid "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
 msgstr "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:819
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:821
 msgid "Perform a 3D texture read at custom mipmap"
 msgstr "Liest eine 3D Textur aus einer benutzerdefinierten Mipmap"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:821
 msgid "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
 msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:779
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:823
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
 msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:779
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:781
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:823
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:825
 msgid "Perform a 2D texture read with projection/LOD"
 msgstr "Liest eine 2D Textur mit Projektion/LOD"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:781
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:825
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
 msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:827
 msgid "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
 msgstr "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:827
 msgid "Perform a 3D texture read with projection/LOD"
 msgstr "Liest eine 3D Textur mit Projektion/LOD"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:829
 msgid "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
 msgstr "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:787
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:789
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:829
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:831
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:833
 msgid "Fetch a single texel using integer coordinates"
 msgstr "Ein einzelnes Texel mit ganzzahligen Koordinaten ermitteln"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:787
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:831
 msgid "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
 msgstr "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:789
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:833
 msgid "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
 msgstr "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:791
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:835
 msgid "vec_type **dFdx** (vec_type p)"
 msgstr "vec_type **dFdx** (vec_type p)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:791
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:835
 msgid "Derivative in ``x`` using local differencing"
 msgstr "Ableitung in ``x`` unter Verwendung lokaler Differenzierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:793
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:837
 msgid "vec_type **dFdy** (vec_type p)"
 msgstr "vec_type **dFdy** (vec_type p)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:793
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:837
 msgid "Derivative in ``y`` using local differencing"
 msgstr "Ableitung in ``y`` unter Verwendung lokaler Differenzierung"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:795
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:839
 msgid "vec_type **fwidth** (vec_type p)"
 msgstr "vec_type **fwidth** (vec_type p)"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:795
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:839
 msgid "Sum of absolute derivative in ``x`` and ``y``"
 msgstr "Summe der absoluten Ableitung in ``x`` und ``y``"

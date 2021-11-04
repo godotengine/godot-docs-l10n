@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr "오디오 샘플 불러오기"
+msgstr "오디오 샘플 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 #, fuzzy
@@ -31,8 +31,8 @@ msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"Godot는 오디오 데이터를 불러오기 위해 세 가지 옵션을 제공합니다: WAV, OGG, "
-"Vorbis."
+"Godot는 오디오 데이터를 가져오기 위해 세 가지 옵션을 제공합니다: WAV, OGG "
+"Vorbis 및 MP3."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
@@ -175,13 +175,13 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
-"종종 발생하는 문제로 파형을 가져올 때 시작과 끝에 긴 묵음이 있는 것입니다. 이"
+"종종 발생하는 문제로 파형을 내보낼 때 시작과 끝에 긴 묵음이 있는 것입니다. 이"
 "것은 파형을 저장할 때 DAW에 의해 삽입되며, 불필요하게 파일 크기를 키우면서 재"
 "생하는 순간 대기 시간이 추가됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
-msgstr "**Trimming** 설정이 활성화된 상태로 WAV 포맷으로 불러오면 해결됩니다."
+msgstr "**Trimming** 설정이 활성화된 상태로 WAV 포맷으로 가져오면 해결됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:73
 msgid "Looping"
@@ -203,5 +203,5 @@ msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"대안으로, 불러오기 독은 전체 샘플을 불러올 때 루프(loop)를 활성화할 수 있는 "
+"대안으로, 가져오기 독은 전체 샘플을 가져올 때 루프(loop)를 활성화할 수 있는 "
 "**Loop** 설정을 갖고 있습니다."

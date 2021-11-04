@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
-"Godot 使用 *场景* 工作. 这意味着用您最喜爱的3D软件制作的整个场景可以尽可能完"
+"Godot 使用 *场景* 工作. 这意味着用你最喜爱的3D软件制作的整个场景可以尽可能完"
 "整地被导入."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
@@ -170,6 +170,10 @@ msgid ""
 "being culled by other faces. To resolve this, enable **Backface Culling** in "
 "Blender's Materials tab, then export the scene to glTF again."
 msgstr ""
+"默认情况下，Blender 在材质上禁用背面剔除，导出材质时匹配其在 Blender 中的渲染"
+"方式。这意味着 Godot 中的材质会将其剔除模式设置为 **Disabled** 。这会降低性"
+"能，因为背面将被渲染，即使它们不可见。要解决此问题，请在 Blender 的材质选项卡"
+"中启用 **Backface Culling** ，然后再次将场景导出为 glTF。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting DAE files from Blender"

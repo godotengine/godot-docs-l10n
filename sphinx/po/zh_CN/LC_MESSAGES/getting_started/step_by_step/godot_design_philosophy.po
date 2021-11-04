@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Godot的设计理念"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr "既然您已经小试身手, 让我们谈谈Godot的设计."
+msgstr "既然你已经小试身手, 让我们谈谈Godot的设计."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -44,16 +44,16 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
-"这个页面是为了帮助您通过godot的一些核心功能来理解它的工作原理. 这个页面既不是"
-"godot特性的介绍列表, 也不会对各个引擎做比较. 要知道哪一种引擎更适合您的项目, "
-"您需要自己尝试一下并了解各个引擎对设计和局限性."
+"这个页面是为了帮助你通过godot的一些核心功能来理解它的工作原理. 这个页面既不是"
+"godot特性的介绍列表, 也不会对各个引擎做比较. 要知道哪一种引擎更适合你的项目, "
+"你需要自己尝试一下并了解各个引擎对设计和局限性."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:19
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"如果您正在寻找引擎特性的概述, 请观看 `探索免费游戏引擎Godot 3 <https://youtu."
+"如果你正在寻找引擎特性的概述, 请观看 `探索免费游戏引擎Godot 3 <https://youtu."
 "be/4v3qge-3CqQ>`_ ."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
@@ -77,14 +77,14 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
-"首先,Godot可以让您 **组合或聚合** 场景. 就像嵌套的预制件一样: 您可以创建"
+"首先,Godot可以让你 **组合或聚合** 场景. 就像嵌套的预制件一样: 你可以创建"
 "BlinkingLight场景, 并创建使用BlinkingLight的BrokenLantern场景. 然后, 创建一个"
 "充满BrokenLanterns的城市. 更改BlinkingLight的颜色, 保存, 城市中的所有"
 "BrokenLantern都会立即更新."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
 msgid "On top of that, you can **inherit** from any scene."
-msgstr "最重要的是, 您可以从任何场景 **继承** ."
+msgstr "最重要的是, 你可以从任何场景 **继承** ."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
 msgid ""
@@ -134,7 +134,7 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"``Sprite`` 是 ``Node2D``,``CanvasItem`` 和 ``Node`` 类型. 它具有三个父类的所"
+"``Sprite`` 是 ``Node2D``, ``CanvasItem`` 和 ``Node`` 类型. 它具有三个父类的所"
 "有属性和特性, 比如 ``transforms`` 或者绘制自定义形状和渲染自定义着色的能力."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
@@ -163,8 +163,8 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
-"我们的目标是提供一个完整的软件包来创建游戏以及持续的用户体验. 您仍然可以和外"
-"部程序一起工作, 只要有一个导入插件做支持. 或者您可以自己创建一个, 比如 "
+"我们的目标是提供一个完整的软件包来创建游戏以及持续的用户体验. 你仍然可以和外"
+"部程序一起工作, 只要有一个导入插件做支持. 或者你可以自己创建一个, 比如 "
 "`Tiled Map 导入器 <https://github.com/vnen/godot-tiled-importer>`__ ."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
@@ -194,7 +194,7 @@ msgid ""
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
-"请注意, 使用GDNative, 您可以编写出使用类似C, C++, Rust或Python(使用Cython编译"
+"请注意, 使用GDNative, 你可以编写出使用类似C, C++, Rust或Python(使用Cython编译"
 "器)这类的编译语言编写的高性能代码, 而无需重新编译引擎."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
@@ -207,7 +207,7 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
-"*VisualScript是一种基于节点的编程语言, 可以很好地集成到编辑器中. 您可以将节点"
+"*VisualScript是一种基于节点的编程语言, 可以很好地集成到编辑器中. 你可以将节点"
 "或资源拖放到图中以创建新的代码块.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97

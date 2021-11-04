@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr "불러오기 방법"
+msgstr "가져오기 과정"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr "Godot 3.0+에서 애셋 불러오기"
+msgstr "Godot 3.0+에서 애셋 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -32,9 +32,9 @@ msgid ""
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
-"이제까지는, Godot 2.x에서 애셋을 불러오려면 원본 애셋이 있는 별개의 디렉토리"
+"이제까지는, Godot 2.x에서 애셋을 가져오려면 원본 애셋이 있는 별개의 디렉토리"
 "를 수동으로 유지보수해야 했습니다. 이렇게 하지 않으면, 텍스처, 오디오 파일, "
-"씬 등을 위한 불러오기 플래그를 전환하고 변경하는 방식을 지정하는 일은 불가능"
+"씬 등을 위한 가져오기 플래그를 전환하고 변경하는 방식을 지정하는 일은 불가능"
 "했습니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
@@ -45,9 +45,9 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a ``res://.import`` folder."
 msgstr ""
-"Godot 3.0에서는, 불러오기에 더 현대적인 접근법을 사용합니다: 간단히 애셋(이미"
+"Godot 3.0에서는, 가져오기에 더 현대적인 접근법을 사용합니다: 간단히 애셋(이미"
 "지 파일, 씬, 오디오 파일, 폰트 등)을 프로젝트 폴더에 직접 드롭합니다(OS 파일 "
-"탐색기로 애셋을 수동으로 복사합니다). Godot은 이 파일을 내부로 불러오며 가져"
+"탐색기로 애셋을 수동으로 복사합니다). Godot은 이 파일을 내부로 가져오며 가져"
 "온 리소스를 ``res://.import`` 폴더에 숨겨 놓습니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
-msgstr "불러오기의 매개변수 변경하기"
+msgstr "가져오기의 매개변수 변경하기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
 msgid ""
@@ -75,8 +75,8 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Godot에서 애셋의 불러오기 매개변수를 변경하는 것은 쉽습니다(다시 말하지만, 불"
-"러오기 매개변수는 오직 네이티브가 아닌 Godot 리소스 타입에만 있습니다). 파일 "
+"Godot에서 애셋의 가져오기 매개변수를 변경하는 것은 쉽습니다(다시 말하지만, 가"
+"져오기 매개변수는 오직 네이티브가 아닌 Godot 리소스 타입에만 있습니다). 파일 "
 "시스템 독에서 관련된 리소스를 선택합니다:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
@@ -84,8 +84,8 @@ msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
-"매개변수를 조정한 후에, \"다시 불러오기\"를 눌러줍니다. 매개변수는 이 애셋과 "
-"향후 다시 불러오기에만 사용될 것입니다."
+"매개변수를 조정한 후에, \"다시 가져오기\"를 눌러줍니다. 매개변수는 이 애셋과 "
+"향후 다시 가져오기에만 사용될 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -93,12 +93,12 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
-"여러 애셋 불러오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
-"에서 모두를 선택하고 다시 불러올 때 가져온 매개변수를 적용합니다."
+"여러 애셋 가져오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
+"에서 모두를 선택하고 다시 가져올 때 가져온 매개변수를 적용합니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Reimporting multiple assets"
-msgstr "여러 애셋들을 다시 불러오기"
+msgstr "여러 애셋들을 다시 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
-msgstr "자동으로 다시 불러오기"
+msgstr "자동으로 다시 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
@@ -139,7 +139,7 @@ msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"불러오기는 추가로 ``<asset>.import`` 파일을 생성하는데, 불러오기 설정이 거기"
+"가져오기는 추가로 ``<asset>.import`` 파일을 생성하는데, 가져오기 구성이 거기"
 "에 들어있습니다. 이것을 버전 제어 시스템에 커밋하도록 하세요!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
@@ -159,26 +159,26 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
-"이 폴더에 있는 파일이 (혹은 폴더 전체가) 지워진다면, 애셋은 자동으로 다시 불"
-"러올 것입니다. 따라서, 이 폴더를 버전 제어 시스템에 커밋하는 것은 선택적입니"
-"다. 다른 컴퓨터에서 확인할 때 다시 불러오는 시간이 짧을 수 있지만, 상당히 많"
+"이 폴더에 있는 파일이 (혹은 폴더 전체가) 지워진다면, 애셋은 자동으로 다시 가"
+"져올 것입니다. 따라서, 이 폴더를 버전 제어 시스템에 커밋하는 것은 선택적입니"
+"다. 다른 컴퓨터에서 확인할 때 다시 가져오는 시간이 짧을 수 있지만, 상당히 많"
 "은 시간과 공간을 잡아먹습니다. 오십보백보입니다!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
-msgstr "불러오기 리소스 타입 변경하기"
+msgstr "가져오기 리소스 타입 변경하기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
-"일부 원본 애셋은 리소스의 다른 타입으로 불러올 수 있습니다. 이를 위해, 원하"
-"는 리소스의 관련된 타입을 선택하고 \"Reimport\"를 누르세요:"
+"일부 원본 애셋은 리소스의 다른 타입으로 가져올 수 있습니다. 이를 위해, 원하"
+"는 리소스의 관련된 타입을 선택하고 \"다시 가져오기\"를 누르세요:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
-msgstr "디폴트 불러오기 매개변수 변경하기"
+msgstr "디폴트 가져오기 매개변수 변경하기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
@@ -208,5 +208,5 @@ msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
-"많은 타입의 애셋을 불러오기로 이용할 수 있습니다, 따라서 이 모든 것들을 가지"
+"많은 타입의 애셋을 가져오기로 이용할 수 있습니다, 따라서 이 모든 것들을 가지"
 "고 작업하는 방법을 이해하기 위해 계속 읽어주세요!"

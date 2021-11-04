@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:4
-#, fuzzy
 msgid "Random number generation"
-msgstr "Funciones Random"
+msgstr "Generación de números aleatorios"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:6
 msgid ""
@@ -48,10 +47,13 @@ msgid ""
 "`pseudorandom number generators <https://en.wikipedia.org/wiki/"
 "Pseudorandom_number_generator>`__ (PRNGs)."
 msgstr ""
+"Las computadoras no pueden generar números aleatorios \"verdaderos\". En su "
+"lugar, se basan en `generadores de números pseudoaleatorios <https://en."
+"wikipedia.org/wiki/Pseudorandom_number_generator>`__ (PRNGs)."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:21
 msgid "Global scope versus RandomNumberGenerator class"
-msgstr ""
+msgstr "Alcance global versus clase RandomNumberGenerator"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:23
 msgid ""
@@ -66,6 +68,8 @@ msgid ""
 "Global scope methods are easier to set up, but they don't offer as much "
 "control."
 msgstr ""
+"Los métodos de alcance global son más fáciles de configurar, pero no ofrecen "
+"tanto control."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:28
 msgid ""
@@ -75,12 +79,19 @@ msgid ""
 "<class_RandomNumberGenerator_method_randfn>`. On top of that, it allows "
 "creating multiple instances each with their own seed."
 msgstr ""
+"RandomNumberGenerator requiere más código para usar, pero expone muchos "
+"métodos que no se encuentran en el alcance global, como :ref:"
+"`randi_range()<class_RandomNumberGenerator_method_randi_range>` y :ref:"
+"`randfn() <class_RandomNumberGenerator_method_randfn>`. Además de eso, "
+"permite crear múltiples instancias, cada una con su propia semilla."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:34
 msgid ""
 "This tutorial uses global scope methods, except when the method only exists "
 "in the RandomNumberGenerator class."
 msgstr ""
+"Este tutorial usa métodos de alcance global, excepto cuando el método sólo "
+"existe en la clase RandomNumberGenerator."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:38
 msgid "The randomize() method"
@@ -93,31 +104,44 @@ msgid ""
 "only once when your project starts to initialize the random seed.** Calling "
 "it multiple times is unnecessary and may impact performance negatively."
 msgstr ""
+"En el ámbito global, puede encontrar un método :ref:`randomize()<class_@ "
+"GDScript_method_randomize>`. **Este método debe llamarse sólo una vez cuando "
+"su proyecto comienza a inicializar la semilla aleatoria.** Llamarlo varias "
+"veces es innecesario y puede afectar el rendimiento de manera negativa."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:45
+#, fuzzy
 msgid ""
-"Putting it in your main scene script's ``_ready()`` method is a good choice::"
+"Putting it in your main scene script's ``_ready()`` method is a good choice:"
 msgstr ""
+"Ponerlo en el método ``_ready()`` de la secuencia de comandos de la escena "
+"principal es una buena opción::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:50
+#: ../../docs/tutorials/math/random_number_generation.rst:60
+#, fuzzy
 msgid ""
 "You can also set a fixed random seed instead using :ref:`seed() "
 "<class_@GDScript_method_seed>`. Doing so will give you *deterministic* "
-"results across runs::"
+"results across runs:"
 msgstr ""
+"También puede establecer una semilla aleatoria fija en su lugar usando :ref:"
+"`seed() <class_@GDScript_method_seed>`. Si lo hace, obtendrá resultados "
+"*deterministicos* en las ejecuciones::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:59
+#: ../../docs/tutorials/math/random_number_generation.rst:80
+#, fuzzy
 msgid ""
 "When using the RandomNumberGenerator class, you should call ``randomize()`` "
-"on the instance since it has its own seed::"
+"on the instance since it has its own seed:"
 msgstr ""
+"Al usar la clase RandomNumberGenerator, debe llamar a ``randomize()`` en la "
+"instancia ya que tiene su propia semilla::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:66
-#, fuzzy
+#: ../../docs/tutorials/math/random_number_generation.rst:95
 msgid "Getting a random number"
-msgstr "Configurando la escena principal"
+msgstr "Obtener un número aleatorio"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:68
+#: ../../docs/tutorials/math/random_number_generation.rst:97
 msgid ""
 "Let's look at some of the most commonly used functions and methods to "
 "generate random numbers in Godot."
@@ -125,109 +149,159 @@ msgstr ""
 "Veamos algunas de las funciones y métodos más utilizados para generar "
 "números aleatorios en Godot."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:71
+#: ../../docs/tutorials/math/random_number_generation.rst:100
+#, fuzzy
 msgid ""
 "The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
 "number between 0 and 2^32-1. Since the maximum value is huge, you most "
 "likely want to use the modulo operator (``%``) to bound the result between 0 "
-"and the denominator::"
+"and the denominator:"
 msgstr ""
+"La función :ref:`randi() <class_@GDScript_method_randi>`devuelve un número "
+"aleatorio entre 0 y 2^32-1. Dado que el valor máximo es enorme, lo más "
+"probable es que desee utilizar el operador de módulo (``%``) para delimitar "
+"el resultado entre 0 y el denominador::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:82
+#: ../../docs/tutorials/math/random_number_generation.rst:122
 msgid ""
 ":ref:`randf() <class_@GDScript_method_randf>` returns a random floating-"
 "point number between 0 and 1. This is useful to implement a :ref:"
 "`doc_random_number_generation_weighted_random_probability` system, among "
 "other things."
 msgstr ""
+":ref:`randf() <class_@GDScript_method_randf>` devuelve un número de punto "
+"flotante aleatorio entre 0 y 1. Esto es útil para implementar un sistema : "
+"ref: :ref:`doc_random_number_generation_weighted_random_probability`, entre "
+"otras cosas."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:87
+#: ../../docs/tutorials/math/random_number_generation.rst:127
+#, fuzzy
 msgid ""
 ":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
 "floating-point number following a `normal distribution <https://en.wikipedia."
 "org/wiki/Normal_distribution>`__. This means the returned value is more "
 "likely to be around the mean (0.0 by default), varying by the deviation (1.0 "
-"by default)::"
+"by default):"
 msgstr ""
+":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` devuelve un "
+"número de punto-flotante aleatorio siguiendo una `distribución normal "
+"<https://en.wikipedia.org/wiki/Normal_distribution>`__. Esto significa que "
+"es más probable que el valor devuelto esté alrededor de la media (0.0 por "
+"defecto), variando por la desviación (1.0 por defecto)::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:97
+#: ../../docs/tutorials/math/random_number_generation.rst:148
+#, fuzzy
 msgid ""
 ":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
 "``from`` and ``to``, and returns a random floating-point number between "
-"``from`` and ``to``::"
+"``from`` and ``to``:"
 msgstr ""
+":ref:`rand_range() <class_@GDScript_method_rand_range>` toma dos argumentos "
+"``desde`` y ``hasta``, y devuelve un número de punto-flotante entre "
+"``desde`` y ``hasta``::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:104
+#: ../../docs/tutorials/math/random_number_generation.rst:163
+#, fuzzy
 msgid ""
 ":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
 "``from`` and ``to``, and returns a random integer between ``from`` and "
-"``to``::"
+"``to``:"
 msgstr ""
+":ref:`RandomNumberGenerator.randi_range() "
+"<class_RandomNumberGenerator_method_randi_range>` toma dos argumentos "
+"``desde`` and ``hasta``, y devuelve un entero aleatorio entre ``desde`` y "
+"``hasta``::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:114
+#: ../../docs/tutorials/math/random_number_generation.rst:182
 msgid "Get a random array element"
-msgstr ""
+msgstr "Obtener un elemento aleatorio de un array"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:116
+#: ../../docs/tutorials/math/random_number_generation.rst:184
+#, fuzzy
 msgid ""
-"We can use random integer generation to get a random element from an array::"
+"We can use random integer generation to get a random element from an array:"
 msgstr ""
+"Podemos usar la generación de enteros aleatorios para obtener un elemento "
+"aleatorio de una array::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:136
+#: ../../docs/tutorials/math/random_number_generation.rst:228
+#, fuzzy
 msgid ""
 "To prevent the same fruit from being picked more than once in a row, we can "
-"add more logic to this method::"
+"add more logic to this method:"
 msgstr ""
+"Para evitar que se recoja la misma fruta más de una vez seguidas, podemos "
+"agregar más lógica a este método::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:167
+#: ../../docs/tutorials/math/random_number_generation.rst:293
 msgid ""
 "This approach can be useful to make random number generation feel less "
 "repetitive. Still, it doesn't prevent results from \"ping-ponging\" between "
 "a limited set of values. To prevent this, use the :ref:`shuffle bag "
 "<doc_random_number_generation_shuffle_bags>` pattern instead."
 msgstr ""
+"Este enfoque puede ser útil para hacer que la generación de números "
+"aleatorios se sienta menos repetitiva. Aún así, no evita que los resultados "
+"\"hagan ping-pong\" entre un conjunto limitado de valores. Para evitar esto, "
+"use el patrón :ref:`shuffle bag <doc_random_number_generation_shuffle_bags>` "
+"en su lugar."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:173
+#: ../../docs/tutorials/math/random_number_generation.rst:299
 msgid "Get a random dictionary value"
-msgstr ""
+msgstr "Obtener un valor de diccionario aleatorio"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:175
-msgid "We can apply similar logic from arrays to dictionaries as well::"
-msgstr ""
+#: ../../docs/tutorials/math/random_number_generation.rst:301
+#, fuzzy
+msgid "We can apply similar logic from arrays to dictionaries as well:"
+msgstr "Podemos aplicar una lógica similar de arrays a diccionarios:"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:201
+#: ../../docs/tutorials/math/random_number_generation.rst:329
 msgid "Weighted random probability"
-msgstr ""
+msgstr "Probabilidad aleatoria ponderada"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:203
+#: ../../docs/tutorials/math/random_number_generation.rst:331
+#, fuzzy
 msgid ""
 "The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
 "point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
-"probability where different outcomes have different likelihoods::"
+"probability where different outcomes have different likelihoods:"
 msgstr ""
+"El método :ref:`randf() <class_@GDScript_method_randf>` devuelve un número "
+"de punto flotante entre 0.0 y 1.0. Podemos usar esto para crear una "
+"probabilidad \"ponderada\" donde diferentes resultados tienen diferentes "
+"probabilidades::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:230
+#: ../../docs/tutorials/math/random_number_generation.rst:394
 msgid "\"Better\" randomness using shuffle bags"
-msgstr ""
+msgstr "Una aleatoriedad \"mejor\" usando shuffle bags"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:232
+#: ../../docs/tutorials/math/random_number_generation.rst:396
 msgid ""
 "Taking the same example as above, we would like to pick fruits at random. "
 "However, relying on random number generation every time a fruit is selected "
 "can lead to a less *uniform* distribution. If the player is lucky (or "
 "unlucky), they could get the same fruit three or more times in a row."
 msgstr ""
+"Tomando el mismo ejemplo anterior, nos gustaría recoger frutas al azar. Sin "
+"embargo, confiar en la generación de números aleatorios cada vez que se "
+"selecciona una fruta puede llevar a una distribución menos *uniforme*. Si el "
+"jugador tiene suerte (o mala suerte), podría obtener la misma fruta tres o "
+"más veces seguidas."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:237
+#: ../../docs/tutorials/math/random_number_generation.rst:401
 msgid ""
 "You can accomplish this using the *shuffle bag* pattern. It works by "
 "removing an element from the array after choosing it. After multiple "
 "selections, the array ends up empty. When that happens, you reinitialize it "
 "to its default value::"
 msgstr ""
+"Puede lograr esto usando el patrón *shuffle bag*. Funciona eliminando un "
+"elemento del array después de elegirlo. Después de varias selecciones, la "
+"matriz termina vacía. Cuando eso sucede, lo reinicializa a su valor "
+"predeterminado::"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:267
+#: ../../docs/tutorials/math/random_number_generation.rst:431
 msgid ""
 "When running the above code, there is a chance to get the same fruit twice "
 "in a row. Once we picked a fruit, it will no longer be a possible return "
@@ -235,23 +309,36 @@ msgid ""
 "back to its default value, making it possible to have the same fruit again, "
 "but only once."
 msgstr ""
+"Al ejecutar el código anterior, existe la posibilidad de obtener la misma "
+"fruta dos veces seguidas. Una vez que seleccionamos una fruta, ya no será un "
+"valor de retorno posible a menos que el array esté vacío. Cuando el array "
+"esté vacío, la restablecemos a su valor predeterminado, lo que hace posible "
+"tener la misma fruta nuevamente, pero sólo una vez."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:273
-#, fuzzy
+#: ../../docs/tutorials/math/random_number_generation.rst:437
 msgid "Random noise"
-msgstr "Randomness (Aleatoriedad)"
+msgstr "Ruido aleatorio"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:275
+#: ../../docs/tutorials/math/random_number_generation.rst:439
 msgid ""
 "The random number generation shown above can show its limits when you need a "
 "value that *slowly* changes depending on the input. The input can be a "
 "position, time, or anything else."
 msgstr ""
+"La generación de números aleatorios que se muestra arriba puede mostrar sus "
+"límites cuando necesita un valor que *lentamente* cambia según el input. El "
+"input puede ser una posición, una hora o cualquier otra cosa."
 
-#: ../../docs/tutorials/math/random_number_generation.rst:279
+#: ../../docs/tutorials/math/random_number_generation.rst:443
+#, fuzzy
 msgid ""
 "To achieve this, you can use random *noise* functions. Noise functions are "
 "especially popular in procedural generation to generate realistic-looking "
 "terrain. Godot provides :ref:`class_opensimplexnoise` for this, which "
-"supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise::"
+"supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise:"
 msgstr ""
+"Para lograr esto, puede utilizar funciones de *ruido* aleatorio. Las "
+"funciones de ruido son especialmente populares en la generación de "
+"procedimientos para generar un terreno de apariencia realista. Godot "
+"proporciona :ref:`class_opensimplexnoise` para esto, que admite ruido 1D, "
+"2D, 3D y 4D. Aquí hay un ejemplo con ruido 1D::"

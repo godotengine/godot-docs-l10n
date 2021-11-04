@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "使用场景树 SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
@@ -56,7 +56,7 @@ msgid ""
 "you are ever interested to see how this works internally)."
 msgstr ""
 "初始化完成后，就会为 :ref:`OS <class_OS>` 提供一个 :ref:`MainLoop "
-"<class_MainLoop>` 来运行。目前为止的所有内容都是内部工作（如果您有兴趣查看内"
+"<class_MainLoop>` 来运行。目前为止的所有内容都是内部工作（如果你有兴趣查看内"
 "部如何工作，可以在源代码中查看 main/main.cpp 文件）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
@@ -173,9 +173,10 @@ msgid ""
 msgstr "当节点直接或间接连接到根视图时, 它成为 *场景树* 的一部分."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
+#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
-"_enter_tree() and _ready() callbacks (as well as _exit_tree())."
+"``_enter_tree()`` and ``_ready()`` callbacks (as well as ``_exit_tree()``)."
 msgstr ""
 "这意味着, 如之前教程中所述, 它将获得 ``_enter_tree()`` 和 ``_ready()`` 回调函"
 "数(以及 ``_exit_tree()``)."

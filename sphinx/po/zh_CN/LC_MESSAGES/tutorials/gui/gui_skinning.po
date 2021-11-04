@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,284 +18,352 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:4
-msgid "GUI skinning"
-msgstr "GUI 外观定制"
+#, fuzzy
+msgid "Introduction to GUI skinning"
+msgstr "CSG节点简介"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:7
-msgid "Oh, beautiful GUI!"
-msgstr "哦, 漂亮的GUI!"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:9
+#: ../../docs/tutorials/gui/gui_skinning.rst:6
 msgid ""
-"This tutorial is about advanced skinning of a user interface. Most games "
-"generally don't need this, as they end up just relying on :ref:`Label "
-"<class_Label>`, :ref:`TextureRect <class_TextureRect>`, :ref:`TextureButton "
-"<class_TextureButton>` and :ref:`TextureProgress <class_TextureProgress>`."
+"It is essential for a game to provide clear, informative, and yet visually "
+"pleasing user interface to its players. While :ref:`Control <class_Control>` "
+"nodes come with a decently functional look out of the box, there is always "
+"room for uniqueness and case-specific tuning. For this purpose Godot engine "
+"includes a system for GUI skinning (or theming), which allows you to "
+"customize the look of every control in your user interface, including your "
+"custom controls."
 msgstr ""
-"本教程是关于用户界面的高级外观定制. 大多数游戏一般不需要这个, 因为他们最终只"
-"依赖 :ref:`Label <class_Label>`, :ref:`TextureRect <class_TextureRect>`, :"
-"ref:`TextureButton <class_TextureButton>` 和 :ref:`TextureProgress "
-"<class_TextureProgress>`."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:15
+#: ../../docs/tutorials/gui/gui_skinning.rst:13
 msgid ""
-"However, many types of games often need complex user interfaces, like MMOs, "
-"traditional RPGs, Simulators, Strategy, etc. These kinds of interface are "
-"also common in some games that include editors to create content, or "
-"interfaces for network connectivity."
+"Here is an example of this system in action — a game with the GUI that is "
+"radically different from the default UI theme of the engine:"
 msgstr ""
-"然而, 许多类型的游戏往往需要复杂的用户界面, 如MMO, 传统RPG, 模拟, 战略等. 这"
-"类界面在一些游戏中也很常见, 包括创建内容的编辑器, 或网络连接的界面."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:20
+#: ../../docs/tutorials/gui/gui_skinning.rst:19
+msgid "A \"Gear Up!\" screen in Tank Kings, courtesy of Winterpixel Games"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:21
 msgid ""
-"Godot's user interface uses these kinds of control with the default theme, "
-"but they can be skinned to resemble pretty much any kind of user interface."
+"Beyond achieving a unique look for your game, this system also enables "
+"developers to provide customization options to the end users, including "
+"accessibility settings. UI themes are applied in a cascading manner (i.e. "
+"they propagate from parent controls to their children), which means that "
+"font settings or adjustments for colorblind users can be applied in a single "
+"place and affect the entire UI tree. Of course this system can also be used "
+"for gameplay purposes: your hero-based game can change its style for the "
+"selected player character, or you can give different flavors to the sides in "
+"your team-based project."
 msgstr ""
-"Godot的用户界面使用了这些带有默认主题的控件, 但它们可以被换上皮肤, 以类似于几"
-"乎任何类型的用户界面."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:25
-msgid "Theme"
-msgstr "主题"
+#: ../../docs/tutorials/gui/gui_skinning.rst:31
+msgid "Basics of themes"
+msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:27
+#: ../../docs/tutorials/gui/gui_skinning.rst:33
 msgid ""
-"The GUI is skinned through the :ref:`Theme <class_Theme>` resource. Theme "
-"contains all the information required to change the entire visual styling of "
-"all controls. Theme options are named, so it's not obvious which name "
-"changes what (especially from code), but several tools are provided. The "
-"ultimate place to look at what each theme option is for each control, which "
-"will always be more up to date than any documentation, is the file `scene/"
-"resources/default_theme/default_theme.cpp <https://github.com/godotengine/"
-"godot/blob/master/scene/resources/default_theme/default_theme.cpp>`__. The "
-"rest of this document will explain the different tools used to customize the "
-"theme."
+"The skinning system is driven by the :ref:`Theme <class_Theme>` resource. "
+"Every Godot project has an inherent default theme that contains the settings "
+"used by the built-in control nodes. This is what gives the controls their "
+"distinct look out of the box. A theme only describes the configuration, "
+"however, and it is still the job of each individual control to use that "
+"configuration in the way it requires to display itself. This is important to "
+"remember when implementing :ref:`your own custom controls "
+"<doc_custom_gui_controls>`."
 msgstr ""
-"GUI通过 :ref:`Theme <class_Theme>` 资源进行外观定制. 主题包含改变所有控件的整"
-"体样式所需的所有信息. 主题选项是命名的, 所以哪个名称更改什么并不明显(尤其是从"
-"代码中), 但提供了几个工具. 查看每个控件的每个主题选项的最终地方是 `scene/"
-"resources/default_theme/default_theme.cpp <https://github.com/godotengine/"
-"godot/blob/master/scene/resources/default_theme/default_theme.cpp>`__ 文件, "
-"它总是比任何文档都更新及时. 本文档的其余部分将说明用于定制主题的不同工具."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:38
+#: ../../docs/tutorials/gui/gui_skinning.rst:42
 msgid ""
-"A Theme can be applied to any control in the scene. As a result, all "
-"children and grand-children controls will use that same theme, too (unless "
-"another theme is specified further down the tree). If a value is not found "
-"in a theme, it will be searched in themes higher up in the hierarchy, "
-"towards the root. If nothing was found, the default theme is used. This "
-"system allows for flexible overriding of themes in complex user interfaces."
+"Even the Godot editor itself relies on the default theme. But it doesn't "
+"look the same as a Godot project, because it applies its own heavily "
+"customized theme on top of the default one. In principle, this works exactly "
+"like it would in your game as explained :ref:`below "
+"<doc_gui_theme_in_project>`."
 msgstr ""
-"一个主题可以应用于场景中的任何控件. 因此, 所有的子级和孙级控件也将使用相同的"
-"主题, 除非在树的下面指定了另一个主题. 如果在一个主题中没有找到一个值, 那么它"
-"将在层次结构中朝着根的方向高层主题中搜索. 如果没有找到, 则使用默认主题. 当前"
-"系统允许在复杂的用户界面中灵活地重写主题."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:48
-msgid ""
-"Don't use the custom theme option in the Project Settings, as there are "
-"known bugs with theme propagation. Instead, apply your theme to the root "
-"Control node's Theme property. It will propagate to instanced scenes "
-"automatically. To get correct theming in the editor for instanced scenes, "
-"you can apply the theme resource to the instanced scene's root node as well."
-msgstr ""
-"不要使用 Project Settings 中的自定义主题选项, 因为主题传播存在已知的错误. 取"
-"而代之的是, 将你的主题应用到根控制节点的主题属性中. 它将自动传播到实例场景"
-"中. 要想在编辑器中获得正确的实例场景主题, 你还可以将主题资源也应用到实例场景"
-"的根节点."
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:55
-msgid "Theme options"
+#, fuzzy
+msgid "Theme items"
 msgstr "主题选项"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:57
-msgid "Each kind of option in a theme can be:"
-msgstr "一个主题中的每种选项可以是："
+#: ../../docs/tutorials/gui/gui_skinning.rst:50
+msgid ""
+"The configuration that is stored in a theme consists of theme items. Each "
+"item has a unique name and must be one of the following data types:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:53
+msgid "**Color**"
+msgstr "**Color**"
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:55
+msgid ""
+"A :ref:`color <class_Color>` value, which is often used for fonts and "
+"backgrounds. Colors can also be used for modulation of controls and icons."
+msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:59
-msgid ""
-"**An integer constant**: A single numerical constant. Generally used to "
-"define spacing between components or alignment."
-msgstr "**整数常量** ：一个数值常量，一般用于定义组件的间距和对齐相关设置。"
+#, fuzzy
+msgid "**Constant**"
+msgstr "常量"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:61
 msgid ""
-"**A Color**: A single color, with or without transparency. Colors are "
-"usually applied to fonts and icons."
-msgstr "**颜色** ：单一颜色，具不具备透明度皆可。颜色通常应用于字体和图标。"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:63
-msgid ""
-"**A Texture**: A single image. Textures are not often used, but when they "
-"are, they represent handles to pick or icons in a complex control (such as a "
-"file dialog)."
+"An integer value, which can be used either for numeric properties of "
+"controls (such as the item separation in a :ref:`BoxContainer "
+"<class_BoxContainer>`), or for boolean flags (such as the drawing of "
+"relationship lines in a :ref:`Tree <class_Tree>`)."
 msgstr ""
-"**纹理** ：一个单独的图像。纹理并不经常使用，但当它们被使用时，表示复杂控件中"
-"的选取手柄或图标（如文件对话框）。"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:66
-msgid ""
-"**A Font**: Every control that uses text can be assigned the fonts used to "
-"draw strings."
-msgstr "**字体** ：每个使用文本的控件都可以设置字体用于绘制字符串。"
+#: ../../docs/tutorials/gui/gui_skinning.rst:65
+#, fuzzy
+msgid "**Font**"
+msgstr "**字体**"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:68
+#: ../../docs/tutorials/gui/gui_skinning.rst:67
 msgid ""
-"**A StyleBox**: Stylebox is a resource that defines how to draw a panel in "
-"varying sizes (more information on them later)."
+"A :ref:`font <class_Font>` resource, which is used by controls that display "
+"text. Fonts contain most text rendering settings, except for its size and "
+"color. On top of that, alignment and text direction are controlled by "
+"individual controls."
 msgstr ""
-"**样式盒** ：样式盒（Stylebox）是一种资源，用以定义如何绘制不同大小的面板（更"
-"多信息见下文）。"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:71
-msgid "Every option is associated with:"
-msgstr "每个选项都与以下内容关联:"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:73
-msgid "A name (the name of the option)"
-msgstr "名称 (选项的名称)"
+#: ../../docs/tutorials/gui/gui_skinning.rst:72
+#, fuzzy
+msgid "**Icon**"
+msgstr "**图标地址** :"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:74
-msgid "A Control (the name of the control)"
-msgstr "控件 (控件的名称)"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:76
-msgid "An example usage:"
-msgstr "示例用法:"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:95
 msgid ""
-"In the example above, a new theme is created. The \"font_color\" option is "
-"changed and then applied to a label. Therefore, the label's text (and all "
-"children and grandchildren labels) will be red."
+"A :ref:`texture <class_Texture>` resource, which is normally used to display "
+"an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
-"在上面的例子中, 一个新主题被创建.\"font_color\" 选项被改变, 然后应用于一个标"
-"签. 进而, 该标签的文本以及所有子级和孙级标签, 将是红色."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:99
+#: ../../docs/tutorials/gui/gui_skinning.rst:77
+#, fuzzy
+msgid "**StyleBox**"
+msgstr "**样式**"
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:79
 msgid ""
-"It is possible to override those options without using the theme directly, "
-"and only for a specific control, by using the override API in :ref:`Control."
-"add_color_override() <class_Control_method_add_color_override>`:"
+"A :ref:`StyleBox <class_StyleBox>` resource, a collection of configuration "
+"options which define the way a UI panel should be displayed. This is not "
+"limited to the :ref:`Panel <class_Panel>` control, as styleboxes are used by "
+"many controls for their backgrounds and overlays."
 msgstr ""
-"通过使用 :ref:`Control.add_color_override() "
-"<class_Control_method_add_color_override>` 中的重写API, 可以在不直接使用主题"
-"的情况下覆盖这些选项, 这只针对特定的控件:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:114
+#: ../../docs/tutorials/gui/gui_skinning.rst:85
+#, fuzzy
+msgid "Theme types"
+msgstr "命名的类型"
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:87
 msgid ""
-"In the inline help of Godot (in the Script tab), you can check which theme "
-"options are overridable, or check the :ref:`Control <class_Control>` class "
-"reference."
+"To help with the organization of its items each theme is separated into "
+"types, and each item must belong to a single type. In other words, each "
+"theme item is defined by its name, its data type and its theme type. This "
+"combination must be unique within the theme. For example, there cannot be "
+"two color items named ``font_color`` in a type called ``Label``, but there "
+"can be another ``font_color`` item in a type ``LineEdit``."
 msgstr ""
-"在Godot的内置帮助中(在脚本选项卡中), 你可以查看哪些主题选项是可重写的, 或者查"
-"看 :ref:`Control <class_Control>` 类的参考."
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:118
+#: ../../docs/tutorials/gui/gui_skinning.rst:94
+msgid ""
+"The default Godot theme comes with multiple theme types already defined, one "
+"for every built-in control node that uses UI skinning. The example above "
+"contains actual theme items present in the default theme. You can refer to "
+"the **Theme Properties** section in the class reference for each control to "
+"see which items are available to it and its child classes."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:101
+msgid ""
+"Child classes can use theme items defined for their parent class (``Button`` "
+"and its derivatives being a good example of that). In fact, every control "
+"can use every theme item of any theme type, if it needs to (but for the "
+"clarity and predictability we try to avoid that in the engine)."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:106
+msgid ""
+"It is important to remember that for child classes that process is "
+"automated. Whenever a built-in control requests a theme item from the theme "
+"it can omit the theme type, and its class name will be used instead. On top "
+"of that, the class names of its parent classes will also be used in turn. "
+"This allows changes to the parent class, such as ``Button``, to affect all "
+"derived classes without the need to customize every one of them."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:113
+msgid ""
+"You can also define your own theme types, and additionally customize both "
+"built-in controls and your own controls. Because built-in controls have no "
+"knowledge of your custom theme types, you must utilize scripts to access "
+"those items. All control nodes have several methods that allow to fetch "
+"theme items from the theme that is applied to them. Those methods accept the "
+"theme type as one of the arguments."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:131
 msgid "Customizing a control"
 msgstr "自定义控件"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:120
-msgid ""
-"If only a few controls need to be skinned, it is often not necessary to "
-"create a new theme. Controls offer their theme options as special kinds of "
-"properties. If checked, overriding will take place:"
-msgstr ""
-"如果只需要外观定制少数几个控件, 通常没有必要创建一个新主题. 控件提供其主题选"
-"项作为特殊类型的属性(在检查面板上). 一旦勾选, 覆写就会生效:"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:126
-msgid ""
-"As can be seen in the image above, theme options have little check boxes. If "
-"checked, they can be used to override the value of the theme just for that "
-"control."
-msgstr ""
-"从上面的图片中可以看出, 主题选项有一些小复选框. 如果选中, 它们可以用来覆盖该"
-"控件的主题属性值."
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:131
-msgid "Creating a theme"
-msgstr "创建主题"
-
 #: ../../docs/tutorials/gui/gui_skinning.rst:133
 msgid ""
-"The simplest way to create a theme is to edit a theme resource. Create a "
-"Theme from the resource menu; the editor will appear immediately. After "
-"that, save it (for example, with the name mytheme.theme):"
+"Each control node can be customized directly without the use of themes. This "
+"is called local overrides. Every theme property from the control's class "
+"reference can be overridden directly on the control itself, using either the "
+"Inspector dock, or scripts. This allows to make granular changes to a "
+"particular part of the UI, while not affecting anything else in the project, "
+"including this control's children."
 msgstr ""
-"创建一个主题的最简单方法是编辑一个主题资源. 从资源菜单中创建一个主题；编辑器"
-"随之出现. 之后, 保存它 (例如, 名称为mytheme.theme):"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:139
-msgid ""
-"This will create an empty theme that can later be loaded and assigned to "
-"controls."
-msgstr "这将创建一个空主题, 之后可以将其加载并分配给控件."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:143
-msgid "Example: theming a button"
-msgstr "示例: 指定一个按钮的主题"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:145
 msgid ""
-"Download these assets (:download:`skin_assets.zip <files/skin_assets.zip>`) "
-"and add them to your project. Open the theme editor, click on \"Edit Theme\" "
-"and select \"Add Class Items\":"
+"Local overrides are less useful for the visual flair of your user interface, "
+"especially if you aim for consistency. However, for layout nodes these are "
+"essential. Nodes such as :ref:`BoxContainer <class_BoxContainer>` and :ref:"
+"`GridContainer <class_GridContainer>` use theme constants for defining "
+"separation between their children, and :ref:`MarginContainer "
+"<class_MarginContainer>` stores its customizable margins in its theme items."
 msgstr ""
-"下载这些资产(:download:`skin_assets.zip <files/skin_assets.zip>` )并将它们添"
-"加到你的项目中. 打开主题编辑器, 点击 \"编辑主题\", 选择 \"Add Class Items\" :"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:151
+#: ../../docs/tutorials/gui/gui_skinning.rst:150
 msgid ""
-"A menu will appear prompting the type of control to create. Select \"Button"
-"\":"
-msgstr "然后将出现一个菜单, 提示要创建的控件类型. 选择 \"Button\":"
+"Whenever a control has a local theme item override, this is the value that "
+"it uses. Values provided by the theme are ignored."
+msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:156
-msgid ""
-"Immediately, all button theme options will appear in the property editor, "
-"where they can be edited:"
-msgstr "所有按钮主题选项都将立刻显示在属性面板中, 可以在其中进行编辑:"
+#, fuzzy
+msgid "Customizing a project"
+msgstr "创建一个项目"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:161
+#: ../../docs/tutorials/gui/gui_skinning.rst:158
 msgid ""
-"From ``Styles``, open the \"Normal\" drop-down menu next to where it "
-"probably says \"null\" and create a \"New StyleBoxTexture\", then edit it. A "
-"texture stylebox contains a texture and the size of the margins that will "
-"not stretch when the texture is stretched. This is called nine-patch or "
-"\"3x3\" stretching:"
+"Out of the box each project adopts the default project theme provided by "
+"Godot. The default theme itself is constant and cannot be changed, but its "
+"items can be overridden with a custom theme. Custom themes can be applied in "
+"two ways: as a project setting, and as a node property throughout the tree "
+"of control nodes."
 msgstr ""
-"在 ``Styles`` 中，打开可能显示“空”旁边的“Normal”下拉菜单，选择“新建 "
-"StyleBoxTexture”，然后编辑。纹理样式盒包含一个纹理和边距的尺寸，当纹理被拉伸"
-"时，边距不会被拉伸。这就是所谓的九宫格或“3x3”拉伸："
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:169
+#: ../../docs/tutorials/gui/gui_skinning.rst:163
 msgid ""
-"Repeat the steps and add the other assets. There is no hover or disabled "
-"image in the example files, so use the same stylebox as in normal. Set the "
-"supplied font as the button font and change the font color to black. Soon, "
-"your button will look different and retro:"
+"There are two project settings that can be adjusted to affect your entire "
+"project: :ref:`gui/theme/custom<class_ProjectSettings_property_gui/theme/"
+"custom>` allows you to set a custom project-wide theme, and :ref:`gui/theme/"
+"custom_font<class_ProjectSettings_property_gui/theme/custom_font>` does the "
+"same to the default fallback font. When a theme item is requested by a "
+"control node the custom project theme, if present, is checked first. Only if "
+"it doesn't have the item the default theme is checked."
 msgstr ""
-"重复上述步骤并添加其他资源。示例文件中没有提供“Hover”和“Disabled”的图片，因此"
-"使用与“Normal”状态相同的样式盒。将提供的字体设置为按钮字体，并将字体颜色更改"
-"为黑色。很快地，你的按钮就看起来不同了，并且变得复古："
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:176
+#: ../../docs/tutorials/gui/gui_skinning.rst:170
 msgid ""
-"Save this theme to the .theme file. Go to the 2D editor and create a few "
-"buttons:"
-msgstr "把这个主题保存到 .theme文件中. 转到2D编辑器, 创建几个按钮:"
-
-#: ../../docs/tutorials/gui/gui_skinning.rst:181
-msgid ""
-"Now, go to the root node of the scene and locate the \"theme\" property, "
-"replace it with the theme that was just created. It should look like this:"
+"This allows you to configure the default look of every Godot control with a "
+"single theme resource, but you can go more granular than that. Every control "
+"node also has a :ref:`theme <class_Control_property_theme>` property, which "
+"allows you to set a custom theme for the branch of nodes starting with that "
+"control. This means that the control and all of its children, and their "
+"children in turn, would first check that custom theme resource before "
+"falling back on the project and the default themes."
 msgstr ""
-"现在, 转到场景的根节点, 找到 \"theme\" 属性, 用刚刚创建的主题替换它. 它应该看"
-"起来像这样:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:186
-msgid "Congratulations! You have created a reusable GUI Theme!"
-msgstr "恭喜咯！您已经创建了一个可反复使用的 GUI 主题!"
+#: ../../docs/tutorials/gui/gui_skinning.rst:178
+msgid ""
+"Instead of changing the project setting you can set the custom theme "
+"resource to the root-most control node of your entire UI branch to almost "
+"the same effect. While in the running project it will behave as expected, "
+"individual scenes will still display using the default theme when previewing "
+"or running them directly. To fix that you can set the same theme resource to "
+"the root control of each individual scene."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:184
+msgid ""
+"For example, you can have a certain style for buttons in your project theme, "
+"but want a different look for buttons inside of a popup dialog. You can set "
+"a custom theme resource to the root control of your popup and define a "
+"different style for buttons within that resource. As long as the chain of "
+"control nodes between the root of the popup and the buttons is "
+"uninterrupted, those buttons will use the styles defined in the theme "
+"resource that is closest to them. All other controls will still be styled "
+"using the project-wide theme and the default theme styles."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:192
+#, fuzzy
+msgid ""
+"To sum it up, for an arbitrary control its theme item lookup would look "
+"something like this:"
+msgstr "您最后的场景应该是这样的:"
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:195
+msgid "Check for local overrides of the same data type and name."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:196
+msgid "Using control's class name and parent class names:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:198
+msgid ""
+"Check every control starting from itself and see if it has a theme property "
+"set;"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:199
+msgid ""
+"If it does, check that theme for the matching item of the same name, data "
+"and theme type;"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:200
+msgid ""
+"If there is no custom theme or it doesn't have the item, move to the parent "
+"control;"
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:201
+msgid ""
+"Repeat steps a-c. until the root of the tree is reached, or a non-control "
+"node is reached."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:203
+msgid ""
+"Using control's class name check the project-wide theme, if it's present."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:204
+msgid "Using control's class name check the default theme."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:206
+msgid ""
+"Even if the item doesn't exist in any theme, a corresponding default value "
+"for that data type will be returned."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:210
+#, fuzzy
+msgid "Beyond controls"
+msgstr "流控制"
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:212
+msgid ""
+"Naturally, themes are an ideal type of resource for storing configuration "
+"for something visual. While the support for theming is built into control "
+"nodes, other nodes can use them as well, just like any other resource."
+msgstr ""
+
+#: ../../docs/tutorials/gui/gui_skinning.rst:216
+msgid ""
+"An example of using themes for something beyond controls can be a modulation "
+"of sprites for the same units on different teams in a strategy game. A theme "
+"resource can define a collection of colors, and sprites (with a help from "
+"scripts) can use those colors to draw the texture. The main benefit being "
+"that you could make different themes using the same theme items for red, "
+"blue, and green teams, and swap them with a single resource change."
+msgstr ""

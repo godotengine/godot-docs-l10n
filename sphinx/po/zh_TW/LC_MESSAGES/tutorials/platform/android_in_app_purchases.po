@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,7 +118,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:127
 #, fuzzy
 msgid "Full example:"
 msgstr "計時器範例"
@@ -134,38 +134,46 @@ msgid ""
 "for it."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:109
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:106
+msgid ""
+"Then, wait for the ``_on_purchases_updated`` callback and handle the "
+"purchase result:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Check if the user purchased an item"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:111
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
 "To get all purchases, call ``queryPurchases``. Unlike most of the other "
 "functions, ``queryPurchases`` is a synchronous operation and returns a :ref:"
 "`Dictionary <class_Dictionary>` with a status code and either an array of "
-"purchases or an error message."
+"purchases or an error message. Only active subscriptions and non-consumed "
+"one-time purchases are returned."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:142
 #, fuzzy
 msgid "Consumables"
 msgstr "常數"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:144
 msgid ""
 "If your in-app item is not a one-time purchase but a consumable item (e.g. "
 "coins) which can be purchased multiple times, you can consume an item by "
 "calling ``consumePurchase`` with a purchase token. Call ``queryPurchases`` "
 "to get the purchase token. Calling ``consumePurchase`` automatically "
-"acknowledges a purchase."
+"acknowledges a purchase. Consuming a product allows the user to purchase it "
+"again, and removes it from appearing in subsequent ``queryPurchases`` calls."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:161
 #, fuzzy
 msgid "Subscriptions"
 msgstr "說明"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:163
 msgid ""
 "Subscriptions don't work much different from regular in-app items. Just use "
 "``\"subs\"`` as second argument to ``querySkuDetails`` to get subscription "

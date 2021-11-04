@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,11 @@ msgid "TSCN file format"
 msgstr "TSCNファイル形式"
 
 #: ../../docs/development/file_formats/tscn.rst:6
+#, fuzzy
 msgid ""
 "The TSCN (text scene) file format represents a single scene tree inside "
-"Godot. TSCN files have the advantage of being mostly human-readable and easy "
-"for version control systems to manage. During import, TSCN files are "
-"compiled into binary ``.scn`` files stored inside the .import folder. This "
-"reduces the data size and speeds up loading."
+"Godot. Unlike binary SCN files, TSCN files have the advantage of being "
+"mostly human-readable and easy for version control systems to manage."
 msgstr ""
 "TSCN(テキストのシーン)ファイル形式は、Godot内の単一のシーンツリーを表しま"
 "す。 TSCNファイルには、ほぼ人間が読み取り可能で、バージョン管理システムが管理"
@@ -35,17 +34,22 @@ msgstr ""
 "保存されたバイナリ ``.scn`` ファイルにコンパイルされます。これにより、データ"
 "サイズが小さくなり、読み込みが高速化されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:12
+#: ../../docs/development/file_formats/tscn.rst:10
+#, fuzzy
 msgid ""
 "The ESCN (exported scene) file format is identical to the TSCN file format, "
 "but is used to indicate to Godot that the file has been exported from "
-"another program and should not be edited by the user from within Godot."
+"another program and should not be edited by the user from within Godot. "
+"Unlike SCN and TSCN files, during import, ESCN files are compiled to binary "
+"SCN files stored inside the ``.import/`` folder. This reduces the data size "
+"and speeds up loading, as binary formats are faster to load compared to text-"
+"based formats."
 msgstr ""
 "ESCN(エクスポートされたシーン)ファイル形式はTSCNファイル形式と同じですが、"
 "ファイルが別のプログラムからエクスポートされており、ユーザーがGodot内から編集"
 "してはならないことをGodotに示すために使用されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:16
+#: ../../docs/development/file_formats/tscn.rst:18
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
@@ -57,37 +61,37 @@ msgstr ""
 "cpp>`_ ファイルの ``ResourceFormatLoaderText`` クラスで処理されるので、そちら"
 "を確認してみてください。"
 
-#: ../../docs/development/file_formats/tscn.rst:21
+#: ../../docs/development/file_formats/tscn.rst:23
 msgid "File structure"
 msgstr "ファイル構造"
 
-#: ../../docs/development/file_formats/tscn.rst:23
+#: ../../docs/development/file_formats/tscn.rst:25
 msgid "There are five main sections inside the TSCN file:"
 msgstr "TSCNファイルには、次の5つの主要なセクションがあります:"
 
-#: ../../docs/development/file_formats/tscn.rst:25
+#: ../../docs/development/file_formats/tscn.rst:27
 msgid "File Descriptor"
 msgstr "ファイル記述子"
 
-#: ../../docs/development/file_formats/tscn.rst:26
-#: ../../docs/development/file_formats/tscn.rst:277
+#: ../../docs/development/file_formats/tscn.rst:28
+#: ../../docs/development/file_formats/tscn.rst:279
 msgid "External resources"
 msgstr "外部リソース"
 
-#: ../../docs/development/file_formats/tscn.rst:27
-#: ../../docs/development/file_formats/tscn.rst:299
+#: ../../docs/development/file_formats/tscn.rst:29
+#: ../../docs/development/file_formats/tscn.rst:301
 msgid "Internal resources"
 msgstr "内部リソース"
 
-#: ../../docs/development/file_formats/tscn.rst:28
+#: ../../docs/development/file_formats/tscn.rst:30
 msgid "Nodes"
 msgstr "ノード"
 
-#: ../../docs/development/file_formats/tscn.rst:29
+#: ../../docs/development/file_formats/tscn.rst:31
 msgid "Connections"
 msgstr "接続"
 
-#: ../../docs/development/file_formats/tscn.rst:31
+#: ../../docs/development/file_formats/tscn.rst:33
 #, fuzzy
 msgid ""
 "The file descriptor looks like ``[gd_scene load_steps=3 format=2]`` and "
@@ -103,7 +107,7 @@ msgstr ""
 "ファイル内のリソースの数でなければなりません。ただし、実際には、その値は重要"
 "ではないようです。"
 
-#: ../../docs/development/file_formats/tscn.rst:38
+#: ../../docs/development/file_formats/tscn.rst:40
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
 "them. The only difference between them is the first element in the heading "
@@ -115,7 +119,7 @@ msgstr ""
 "とえば、すべての外部リソースの見出しは ``[ext_resource .....]`` で始まる必要"
 "があります。"
 
-#: ../../docs/development/file_formats/tscn.rst:43
+#: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
 "A TSCN file may contain single-line comments starting with a semicolon (``;"
 "``). However, comments will be discarded when saving the file using the "
@@ -125,11 +129,11 @@ msgstr ""
 "ります。ただし、Godotエディタを使用してファイルを保存すると、コメントは破棄さ"
 "れます。"
 
-#: ../../docs/development/file_formats/tscn.rst:47
+#: ../../docs/development/file_formats/tscn.rst:49
 msgid "Entries inside the file"
 msgstr "ファイル内のエントリ"
 
-#: ../../docs/development/file_formats/tscn.rst:49
+#: ../../docs/development/file_formats/tscn.rst:51
 msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
 "where resource_type is one of:"
@@ -137,23 +141,23 @@ msgstr ""
 "見出しは ``[<resource_type> key=value key=value key=value ...]`` のようになり"
 "ます。ここで、resource_typeは次のいずれかです:"
 
-#: ../../docs/development/file_formats/tscn.rst:53
+#: ../../docs/development/file_formats/tscn.rst:55
 msgid "``ext_resource``"
 msgstr "\\ ``ext_resource``"
 
-#: ../../docs/development/file_formats/tscn.rst:54
+#: ../../docs/development/file_formats/tscn.rst:56
 msgid "``sub_resource``"
 msgstr "\\ ``sub_resource``"
 
-#: ../../docs/development/file_formats/tscn.rst:55
+#: ../../docs/development/file_formats/tscn.rst:57
 msgid "``node``"
 msgstr "\\ ``node``"
 
-#: ../../docs/development/file_formats/tscn.rst:56
+#: ../../docs/development/file_formats/tscn.rst:58
 msgid "``connection``"
 msgstr "\\ ``connection``"
 
-#: ../../docs/development/file_formats/tscn.rst:58
+#: ../../docs/development/file_formats/tscn.rst:60
 msgid ""
 "Below every heading comes zero or more ``key = value`` pairs. The values can "
 "be complex datatypes such as Arrays, Transforms, Colors, and so on. For "
@@ -163,11 +167,11 @@ msgstr ""
 "列、幾何学変換、色などの複雑なデータ型にすることができます。たとえば、spatial"
 "ノードは次のようになります:"
 
-#: ../../docs/development/file_formats/tscn.rst:69
+#: ../../docs/development/file_formats/tscn.rst:71
 msgid "The scene tree"
 msgstr "シーンツリー"
 
-#: ../../docs/development/file_formats/tscn.rst:71
+#: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
 "its name, parent and (most of the time) a type. For example ``[node type="
@@ -177,31 +181,31 @@ msgstr ""
 "よび(ほとんどの場合)タイプで構成されます。たとえば、\\ ``[node type=\"Camera"
 "\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 
-#: ../../docs/development/file_formats/tscn.rst:75
+#: ../../docs/development/file_formats/tscn.rst:77
 msgid "Other valid keywords include:"
 msgstr "その他の有効なキーワードは次のとおりです:"
 
-#: ../../docs/development/file_formats/tscn.rst:77
+#: ../../docs/development/file_formats/tscn.rst:79
 msgid "``instance``"
 msgstr "\\ ``instance``"
 
-#: ../../docs/development/file_formats/tscn.rst:78
+#: ../../docs/development/file_formats/tscn.rst:80
 msgid "``instance_placeholder``"
 msgstr "\\ ``instance_placeholder``"
 
-#: ../../docs/development/file_formats/tscn.rst:79
+#: ../../docs/development/file_formats/tscn.rst:81
 msgid "``owner``"
 msgstr "\\ ``owner``"
 
-#: ../../docs/development/file_formats/tscn.rst:80
+#: ../../docs/development/file_formats/tscn.rst:82
 msgid "``index`` (if two nodes have the same name)"
 msgstr "\\ ``index`` (2 つのノードが同じ名前の場合)"
 
-#: ../../docs/development/file_formats/tscn.rst:81
+#: ../../docs/development/file_formats/tscn.rst:83
 msgid "``groups``"
 msgstr "\\ ``groups``"
 
-#: ../../docs/development/file_formats/tscn.rst:83
+#: ../../docs/development/file_formats/tscn.rst:85
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
 "``parent=Path/To/Node`` entry in its heading. All scene files should have "
@@ -219,7 +223,7 @@ msgstr ""
 "場合、パスは ``\".\"``(相対パス)である必要があります。シーンツリーの例を次に"
 "示します(ただし、ノードの内容は含んでいません):"
 
-#: ../../docs/development/file_formats/tscn.rst:99
+#: ../../docs/development/file_formats/tscn.rst:101
 msgid ""
 "Similar to the internal resource, the document for each node is currently "
 "incomplete. Fortunately, it is easy to find out because you can simply save "
@@ -229,11 +233,11 @@ msgstr ""
 "すが幸いにも、そのノードを含むファイルを保存するだけで簡単に見つけられます。"
 "ノードの例を次に示します:"
 
-#: ../../docs/development/file_formats/tscn.rst:138
+#: ../../docs/development/file_formats/tscn.rst:140
 msgid "NodePath"
 msgstr "\\ NodePath"
 
-#: ../../docs/development/file_formats/tscn.rst:140
+#: ../../docs/development/file_formats/tscn.rst:142
 msgid ""
 "A tree structure is not enough to represent the whole scene. Godot uses a "
 "``NodePath(Path/To/Node)`` structure to refer to another node or attribute "
@@ -248,11 +252,11 @@ msgstr ""
 "ラックは ``NodePath()`` を使用して、アニメーション化するノードプロパティを指"
 "し示します。"
 
-#: ../../docs/development/file_formats/tscn.rst:165
+#: ../../docs/development/file_formats/tscn.rst:167
 msgid "Skeleton"
 msgstr "スケルトン"
 
-#: ../../docs/development/file_formats/tscn.rst:167
+#: ../../docs/development/file_formats/tscn.rst:169
 msgid ""
 "The Skeleton node inherits the Spatial node, but also may have a list of "
 "bones described in key-value pairs in the format ``bones/Id/"
@@ -262,36 +266,36 @@ msgstr ""
 "の形式でキーと値のペアで記述されたボーンのリストも持つ場合があります。ボーン"
 "の属性は次のもので構成されます:"
 
-#: ../../docs/development/file_formats/tscn.rst:171
+#: ../../docs/development/file_formats/tscn.rst:173
 msgid "``name``"
 msgstr "``name``"
 
-#: ../../docs/development/file_formats/tscn.rst:172
+#: ../../docs/development/file_formats/tscn.rst:174
 msgid "``parent``"
 msgstr "\\ ``parent``"
 
-#: ../../docs/development/file_formats/tscn.rst:173
+#: ../../docs/development/file_formats/tscn.rst:175
 msgid "``rest``"
 msgstr "\\ ``rest``"
 
-#: ../../docs/development/file_formats/tscn.rst:174
+#: ../../docs/development/file_formats/tscn.rst:176
 msgid "``pose``"
 msgstr "\\ ``pose``"
 
-#: ../../docs/development/file_formats/tscn.rst:175
-#: ../../docs/development/file_formats/tscn.rst:395
+#: ../../docs/development/file_formats/tscn.rst:177
+#: ../../docs/development/file_formats/tscn.rst:397
 msgid "``enabled``"
 msgstr "\\ ``enabled``"
 
-#: ../../docs/development/file_formats/tscn.rst:176
+#: ../../docs/development/file_formats/tscn.rst:178
 msgid "``bound_children``"
 msgstr "\\ ``bound_children``"
 
-#: ../../docs/development/file_formats/tscn.rst:178
+#: ../../docs/development/file_formats/tscn.rst:180
 msgid "``name`` must be the first attribute of each bone."
 msgstr "``name`` は各ボーンの最初の属性でなければなりません。"
 
-#: ../../docs/development/file_formats/tscn.rst:179
+#: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
 "the bone list is built to a bone tree."
@@ -299,15 +303,15 @@ msgstr ""
 "``parent`` は、ボーンリスト内の親ボーンのインデックスです。親インデックスを使"
 "用してボーン リストはボーン ツリーに構築されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:181
+#: ../../docs/development/file_formats/tscn.rst:183
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr "``rest`` は、その「休息」位置にある骨の変換行列です。"
 
-#: ../../docs/development/file_formats/tscn.rst:182
+#: ../../docs/development/file_formats/tscn.rst:184
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
 msgstr "``pose`` はポーズ行列です。基準として ``rest`` を使用します。"
 
-#: ../../docs/development/file_formats/tscn.rst:183
+#: ../../docs/development/file_formats/tscn.rst:185
 msgid ""
 "``bound_children`` is a list of ``NodePath()`` which point to "
 "BoneAttachments belonging to this bone."
@@ -315,15 +319,15 @@ msgstr ""
 "``bound_children`` は、このボーンに属するBoneAttachmentsを指す "
 "``NodePath()`` のリストです。"
 
-#: ../../docs/development/file_formats/tscn.rst:186
+#: ../../docs/development/file_formats/tscn.rst:188
 msgid "Here's an example of a skeleton node with two bones:"
 msgstr "2つのボーンを持つスケルトンノードの例を次に示します:"
 
-#: ../../docs/development/file_formats/tscn.rst:207
+#: ../../docs/development/file_formats/tscn.rst:209
 msgid "BoneAttachment"
 msgstr "\\ BoneAttachment"
 
-#: ../../docs/development/file_formats/tscn.rst:209
+#: ../../docs/development/file_formats/tscn.rst:211
 msgid ""
 "BoneAttachment node is an intermediate node to describe some node being "
 "parented to a single bone in a Skeleton node. The BoneAttachment has a "
@@ -335,15 +339,15 @@ msgstr ""
 "NameOfBone`` 属性があり、親である対応するボーンの ``bound_children`` リストに"
 "はBoneAttachmentノードがあります。"
 
-#: ../../docs/development/file_formats/tscn.rst:214
+#: ../../docs/development/file_formats/tscn.rst:216
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr "スケルトンのボーンを親とする1つのMeshInstanceの例:"
 
-#: ../../docs/development/file_formats/tscn.rst:239
+#: ../../docs/development/file_formats/tscn.rst:241
 msgid "AnimationPlayer"
 msgstr "\\ AnimationPlayer"
 
-#: ../../docs/development/file_formats/tscn.rst:241
+#: ../../docs/development/file_formats/tscn.rst:243
 msgid ""
 "AnimationPlayer works as an animation library. It stores animations listed "
 "in the format ``anim/Name=SubResource(ResourceId)``; each line refers to an "
@@ -357,11 +361,11 @@ msgstr ""
 "スは、AnimationPlayerのルートノードを使用します。ルートノードは "
 "``root_node=NodePath(Path/To/Node)`` として保存されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:261
+#: ../../docs/development/file_formats/tscn.rst:263
 msgid "Resources"
 msgstr "リソース"
 
-#: ../../docs/development/file_formats/tscn.rst:263
+#: ../../docs/development/file_formats/tscn.rst:265
 msgid ""
 "Resources are components that make up the nodes. For example, a MeshInstance "
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
@@ -371,7 +375,7 @@ msgstr ""
 "には、付随するArrayMeshリソースがあります。ArrayMeshリソースは、TSCNファイル"
 "の内部または外部のいずれかである場合があります。"
 
-#: ../../docs/development/file_formats/tscn.rst:267
+#: ../../docs/development/file_formats/tscn.rst:269
 msgid ""
 "References to the resources are handled by ``id`` numbers in the resource's "
 "heading. External resources and internal resources are referred to with "
@@ -384,7 +388,7 @@ msgstr ""
 "``SubResource(id)`` で参照されます。内部リソースと外部リソースを参照する方法"
 "は異なるため、内部リソースと外部リソースの両方に同じIDを使用できます。"
 
-#: ../../docs/development/file_formats/tscn.rst:273
+#: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
 "\" path=....]``, you would use ``ExtResource(3)``."
@@ -392,7 +396,7 @@ msgstr ""
 "たとえば、リソース ``[ext_resource id=3 type=\"PackedScene\" path=....]`` を"
 "参照するには、\\ ``ExtResource(3)`` を使用します。"
 
-#: ../../docs/development/file_formats/tscn.rst:279
+#: ../../docs/development/file_formats/tscn.rst:281
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of a path, a type and an ID."
@@ -400,7 +404,7 @@ msgstr ""
 "外部リソースは、TSCNファイル自体に含まれていないリソースへのリンクです。外部"
 "リソースは、パス、タイプ、およびIDで構成されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:282
+#: ../../docs/development/file_formats/tscn.rst:284
 msgid ""
 "Godot always generates absolute paths relative to the resource directory and "
 "thus prefixed with ``res://``, but paths relative to the TSCN file's "
@@ -410,11 +414,11 @@ msgstr ""
 "いうプレフィックスを付けますが、TSCNファイルの場所を基準としたパスも有効で"
 "す。"
 
-#: ../../docs/development/file_formats/tscn.rst:286
+#: ../../docs/development/file_formats/tscn.rst:288
 msgid "Some example external resources are:"
 msgstr "外部リソースの例を次に示します:"
 
-#: ../../docs/development/file_formats/tscn.rst:294
+#: ../../docs/development/file_formats/tscn.rst:296
 msgid ""
 "Like TSCN files, a TRES file may contain single-line comments starting with "
 "a semicolon (``;``). However, comments will be discarded when saving the "
@@ -424,7 +428,7 @@ msgstr ""
 "トが含まれる場合があります。ただし、Godotエディタを使用してリソースを保存する"
 "と、コメントは破棄されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:301
+#: ../../docs/development/file_formats/tscn.rst:303
 msgid ""
 "A TSCN file can contain meshes, materials and other data. These are "
 "contained in the *internal resources* section of the file. The heading for "
@@ -438,7 +442,7 @@ msgstr ""
 "す。内部リソースには、各見出しの下に ``key = value`` のペアもあります。たとえ"
 "ば、カプセルのコリジョン形状は次のようになります:"
 
-#: ../../docs/development/file_formats/tscn.rst:315
+#: ../../docs/development/file_formats/tscn.rst:317
 msgid ""
 "Some internal resources contain links to other internal resources (such as a "
 "mesh having a material). In this case, the referring resource must appear "
@@ -450,7 +454,7 @@ msgstr ""
 "現する必要があります。これは、ファイルの内部リソースセクションで順序が重要で"
 "あることを意味します。"
 
-#: ../../docs/development/file_formats/tscn.rst:320
+#: ../../docs/development/file_formats/tscn.rst:322
 msgid ""
 "Unfortunately, documentation on the formats for these subresources isn't "
 "complete. Some examples can be found by inspecting saved resource files, but "
@@ -460,11 +464,11 @@ msgstr ""
 "ん。いくつかの例は保存されたリソースファイルを調べることで見つけることができ"
 "ますが、他の例はGodotのソースを調べることでのみ見つけることができます。"
 
-#: ../../docs/development/file_formats/tscn.rst:325
+#: ../../docs/development/file_formats/tscn.rst:327
 msgid "ArrayMesh"
 msgstr "\\ ArrayMesh"
 
-#: ../../docs/development/file_formats/tscn.rst:327
+#: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format ``surface"
 "\\Index={}``. Each surface is a set of vertices and a material."
@@ -472,27 +476,27 @@ msgstr ""
 "ArrayMeshは、それぞれが ``surface\\Index={}`` という形式のいくつかのサーフェ"
 "スで構成されています。各サーフェスは、頂点とマテリアルのセットです。"
 
-#: ../../docs/development/file_formats/tscn.rst:330
+#: ../../docs/development/file_formats/tscn.rst:332
 msgid "TSCN files support two surface formats:"
 msgstr "TSCNファイルは、次の2つのサーフェス形式をサポートします:"
 
-#: ../../docs/development/file_formats/tscn.rst:332
+#: ../../docs/development/file_formats/tscn.rst:334
 msgid "For the old format, each surface has three essential keys:"
 msgstr "古い形式では、各サーフェスには3つの重要なキーがあります:"
 
-#: ../../docs/development/file_formats/tscn.rst:334
+#: ../../docs/development/file_formats/tscn.rst:336
 msgid "``primitive``"
 msgstr "\\ ``primitive``"
 
-#: ../../docs/development/file_formats/tscn.rst:335
+#: ../../docs/development/file_formats/tscn.rst:337
 msgid "``arrays``"
 msgstr "\\ ``arrays``"
 
-#: ../../docs/development/file_formats/tscn.rst:336
+#: ../../docs/development/file_formats/tscn.rst:338
 msgid "``morph_arrays``"
 msgstr "\\ ``morph_arrays``"
 
-#: ../../docs/development/file_formats/tscn.rst:338
+#: ../../docs/development/file_formats/tscn.rst:340
 msgid ""
 "``primitive`` is an enumerate variable, ``primitive=4`` which is "
 "``PRIMITIVE_TRIANGLES`` is frequently used."
@@ -500,43 +504,43 @@ msgstr ""
 "``primitive`` は列挙型変数で、\\ ``primitive =4`` である "
 "``PRIMITIVE_TRIANGLES`` がよく使用されます。"
 
-#: ../../docs/development/file_formats/tscn.rst:341
+#: ../../docs/development/file_formats/tscn.rst:343
 msgid "``arrays`` is a two-dimensional array, it contains:"
 msgstr "``arrays`` は2次元配列であり、次のものが含まれます:"
 
-#: ../../docs/development/file_formats/tscn.rst:343
+#: ../../docs/development/file_formats/tscn.rst:345
 msgid "Vertex positions array"
 msgstr "頂点位置配列"
 
-#: ../../docs/development/file_formats/tscn.rst:344
+#: ../../docs/development/file_formats/tscn.rst:346
 msgid "Tangents array"
 msgstr "接線配列"
 
-#: ../../docs/development/file_formats/tscn.rst:345
+#: ../../docs/development/file_formats/tscn.rst:347
 msgid "Vertex colors array"
 msgstr "頂点カラー配列"
 
-#: ../../docs/development/file_formats/tscn.rst:346
+#: ../../docs/development/file_formats/tscn.rst:348
 msgid "UV array 1"
 msgstr "UV配列1"
 
-#: ../../docs/development/file_formats/tscn.rst:347
+#: ../../docs/development/file_formats/tscn.rst:349
 msgid "UV array 2"
 msgstr "UV配列2"
 
-#: ../../docs/development/file_formats/tscn.rst:348
+#: ../../docs/development/file_formats/tscn.rst:350
 msgid "Bone indexes array"
 msgstr "ボーンインデックス配列"
 
-#: ../../docs/development/file_formats/tscn.rst:349
+#: ../../docs/development/file_formats/tscn.rst:351
 msgid "Bone weights array"
 msgstr "ボーンウェイト配列"
 
-#: ../../docs/development/file_formats/tscn.rst:350
+#: ../../docs/development/file_formats/tscn.rst:352
 msgid "Vertex indexes array"
 msgstr "頂点インデックス配列"
 
-#: ../../docs/development/file_formats/tscn.rst:352
+#: ../../docs/development/file_formats/tscn.rst:354
 msgid ""
 "``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` "
 "without the vertex indexes array."
@@ -544,15 +548,15 @@ msgstr ""
 "``morph_arrays`` はモーフの配列です。各モーフは、頂点インデックス配列を持たな"
 "いまさに　``配列`` です。"
 
-#: ../../docs/development/file_formats/tscn.rst:355
+#: ../../docs/development/file_formats/tscn.rst:357
 msgid "An example of ArrayMesh:"
 msgstr "ArrayMeshの例:"
 
-#: ../../docs/development/file_formats/tscn.rst:379
+#: ../../docs/development/file_formats/tscn.rst:381
 msgid "Animation"
 msgstr "アニメーション"
 
-#: ../../docs/development/file_formats/tscn.rst:381
+#: ../../docs/development/file_formats/tscn.rst:383
 msgid ""
 "An animation resource consists of tracks. Besides, it has ``length``, "
 "``loop`` and ``step`` applied to all the tracks."
@@ -560,11 +564,11 @@ msgstr ""
 "アニメーションリソースはトラックで構成されます。また、すべてのトラックに適用"
 "される ``length``\\ 、\\ ``loop`` そして ``step`` があります。"
 
-#: ../../docs/development/file_formats/tscn.rst:384
+#: ../../docs/development/file_formats/tscn.rst:386
 msgid "``length`` and ``step`` are both durations in seconds."
 msgstr "``length`` と ``step`` はどちらも秒単位の期間です。"
 
-#: ../../docs/development/file_formats/tscn.rst:386
+#: ../../docs/development/file_formats/tscn.rst:388
 msgid ""
 "Each track is described by a list of key-value pairs in the format ``tracks/"
 "Id/Attribute``. Each track includes:"
@@ -572,31 +576,31 @@ msgstr ""
 "各トラックは、\\ ``tracks/Id/Attribute`` 形式のキーと値のペアのリストによって"
 "記述されます。各トラックには以下が含まれます:"
 
-#: ../../docs/development/file_formats/tscn.rst:389
+#: ../../docs/development/file_formats/tscn.rst:391
 msgid "``type``"
 msgstr "\\ ``type``"
 
-#: ../../docs/development/file_formats/tscn.rst:390
+#: ../../docs/development/file_formats/tscn.rst:392
 msgid "``path``"
 msgstr "\\ ``path``"
 
-#: ../../docs/development/file_formats/tscn.rst:391
+#: ../../docs/development/file_formats/tscn.rst:393
 msgid "``interp``"
 msgstr "\\ ``interp``"
 
-#: ../../docs/development/file_formats/tscn.rst:392
+#: ../../docs/development/file_formats/tscn.rst:394
 msgid "``keys``"
 msgstr "\\ ``keys``"
 
-#: ../../docs/development/file_formats/tscn.rst:393
+#: ../../docs/development/file_formats/tscn.rst:395
 msgid "``loop_wrap``"
 msgstr "\\ ``loop_wrap``"
 
-#: ../../docs/development/file_formats/tscn.rst:394
+#: ../../docs/development/file_formats/tscn.rst:396
 msgid "``imported``"
 msgstr "\\ ``imported``"
 
-#: ../../docs/development/file_formats/tscn.rst:397
+#: ../../docs/development/file_formats/tscn.rst:399
 msgid ""
 "The ``type`` must be the first attribute of each track. The value of "
 "``type`` can be:"
@@ -604,19 +608,19 @@ msgstr ""
 "``type`` は各トラックの最初の属性でなければなりません。\\ ``type``の値は次の"
 "とおりです:"
 
-#: ../../docs/development/file_formats/tscn.rst:400
+#: ../../docs/development/file_formats/tscn.rst:402
 msgid "``transform``"
 msgstr "\\ ``transform``"
 
-#: ../../docs/development/file_formats/tscn.rst:401
+#: ../../docs/development/file_formats/tscn.rst:403
 msgid "``value``"
 msgstr "\\ ``value``"
 
-#: ../../docs/development/file_formats/tscn.rst:402
+#: ../../docs/development/file_formats/tscn.rst:404
 msgid "``method``"
 msgstr "\\ ``method``"
 
-#: ../../docs/development/file_formats/tscn.rst:404
+#: ../../docs/development/file_formats/tscn.rst:406
 msgid ""
 "The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the "
 "path to the animated node or attribute, relative to the root node defined in "
@@ -626,7 +630,7 @@ msgstr ""
 "AnimationPlayerで定義されたルートノードを基準とした、アニメーション化された"
 "ノードまたは属性へのパスです。"
 
-#: ../../docs/development/file_formats/tscn.rst:408
+#: ../../docs/development/file_formats/tscn.rst:410
 #, fuzzy
 msgid ""
 "The ``interp`` is the method to interpolate frames from the keyframes. It is "
@@ -635,22 +639,22 @@ msgstr ""
 "``interp`` はキーフレームからフレームを補間する方法です。これは列挙型変数であ"
 "り、値を持つことができます:"
 
-#: ../../docs/development/file_formats/tscn.rst:411
+#: ../../docs/development/file_formats/tscn.rst:413
 #, fuzzy
 msgid "``0`` (constant)"
 msgstr "0 (定数)"
 
-#: ../../docs/development/file_formats/tscn.rst:412
+#: ../../docs/development/file_formats/tscn.rst:414
 #, fuzzy
 msgid "``1`` (linear)"
 msgstr "1 (リニア)"
 
-#: ../../docs/development/file_formats/tscn.rst:413
+#: ../../docs/development/file_formats/tscn.rst:415
 #, fuzzy
 msgid "``2`` (cubic)"
 msgstr "2 (キュービック)"
 
-#: ../../docs/development/file_formats/tscn.rst:415
+#: ../../docs/development/file_formats/tscn.rst:417
 msgid ""
 "The ``keys`` correspond to the keyframes. It appears as a "
 "``PoolRealArray()``, but may have a different structure for tracks with "
@@ -659,7 +663,7 @@ msgstr ""
 "``keys`` はキーフレームに対応しています。\\ ``PoolRealArray()`` として表示さ"
 "れますが、異なるタイプのトラックに対して異なる構造を持つ場合があります。"
 
-#: ../../docs/development/file_formats/tscn.rst:418
+#: ../../docs/development/file_formats/tscn.rst:420
 msgid ""
 "A Transform track uses every 12 real numbers in the ``keys`` to describe a "
 "keyframe. The first number is the timestamp. The second number is the "

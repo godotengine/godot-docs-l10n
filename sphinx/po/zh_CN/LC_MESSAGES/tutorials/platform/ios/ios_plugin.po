@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,38 +330,38 @@ msgstr ""
 "**linker_flags** : 包含一个链接器标志的列表, 在导出插件时添加到Xcode项目中."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:136
-#, fuzzy
 msgid ""
 "**plist**: should have keys and values that should be present in ``Info."
 "plist`` file."
-msgstr ""
-"**plist** : 应该出现在 ``Info.plist`` 文件中的键和值, 模式如下: ``键名=\"键值"
-"\"``"
+msgstr "**plist**: 应该有键和值，应该存在于 ``Info.plist`` 文件中。"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
 msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
-msgstr ""
+msgstr "每行应遵循模式: ``KeyName:KeyType=KeyValue``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:139
 msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
 msgstr ""
+"``KeyType`` 支持的值是 ``string``, ``integer``, ``boolean``, ``raw``, "
+"``string_input``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
 msgid ""
 "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be "
 "used."
 msgstr ""
+"如果没有使用类型，例如: ``KeyName=\"KeyValue\"`` ，将使用 ``string`` 类型。"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:141
 msgid ""
 "If ``raw`` type is used value for coresponding key will be stored in ``Info."
 "plist`` as is."
-msgstr ""
+msgstr "如果使用 ``raw`` 类型，对应键的值将按原样存储在 ``Info.plist`` 中。"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
 msgid ""
 "If ``string_input`` type is used you will be able to modify value in Export "
 "window."
-msgstr ""
+msgstr "如果使用 ``string_input`` 类型，你将能够在导出窗口中修改值。"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,16 +35,18 @@ msgstr ""
 "す。エディタの使い方、プロジェクトの構成方法、2Dゲームの作りかたを学びます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
+#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
-"entirely, you should start here: :ref:`doc_scripting`."
+"entirely, you should start here: :ref:`doc_scripting`. If you want to use C# "
+"in Godot, please also read :ref:`doc_c_sharp` before continuing."
 msgstr ""
 "このプロジェクトはGodotエンジンへの入門用です。これは、あなたがすでにプログラ"
 "ミングの経験があるものとして書かれています。もし、まったくプログラミングの経"
 "験がなければ、\\ :ref:`doc_scripting`\\ から開始してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:18
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:19
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
@@ -52,7 +54,7 @@ msgstr ""
 "このゲームは「クリープをよけろ！」といいます。あなたのキャラクターはできるだ"
 "け長く動いて敵を避けなければなりません。以下が最終結果のプレビューです:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:24
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:25
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process and "
@@ -61,11 +63,11 @@ msgstr ""
 "**なぜ2Dから？** 3Dゲームは2Dより複雑です。ゲーム開発のプロセスやGodotの使い"
 "方をよく理解するまでは、2Dにとどまるべきです。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:29
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid "Project setup"
 msgstr "プロジェクトの設定"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:31
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:32
 msgid ""
 "Launch Godot and create a new project. Then, download :download:"
 "`dodge_assets.zip <files/dodge_assets.zip>`. This contains the images and "
@@ -77,7 +79,7 @@ msgstr ""
 "画像とサウンドが含まれます。これらのファイルをプロジェクトのフォルダに展開し"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:36
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:37
 msgid ""
 "For this tutorial, we will assume you are familiar with the Godot editor. If "
 "you haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation "
@@ -87,7 +89,7 @@ msgstr ""
 "まだ\\ :ref:`doc_scenes_and_nodes`\\ を読んでいない場合は、プロジェクトのセッ"
 "トアップ方法とエディタの使用についての説明があるので、先に読んでください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:40
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:41
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on Project -> Project Settings -> Display -> Window "
@@ -97,7 +99,7 @@ msgstr ""
 "必要があります。プロジェクト -> プロジェクト設定 -> Display -> Windowの順にク"
 "リックして 「Width」 を ``480`` に、「Height」を ``720`` にセットします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:44
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
 "Also in this section, under the \"Stretch\" options, set ``Mode`` to \"2d\" "
 "and ``Aspect`` to \"keep\". This ensures that the game scales consistently "
@@ -107,11 +109,11 @@ msgstr ""
 "``Aspect`` を「keep」にします。これによって、異なるサイズのスクリーンでも、同"
 "じようにゲームが拡大縮小されて表示されます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:49
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:50
 msgid "Organizing the project"
 msgstr "プロジェクトの編成"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:51
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:52
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -127,11 +129,11 @@ msgstr ""
 "ロジェクトのルートフォルダにシーンとスクリプトを保存します。プロジェクトフォ"
 "ルダは、左下隅の[ファイルシステム] ドックで確認できます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:62
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Player scene"
 msgstr "Playerシーン"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:64
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
@@ -141,11 +143,11 @@ msgstr ""
 "て作成する利点の 1 つは、たとえゲームの他の部分を作成する前であっても、個別に"
 "テストができることです。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:69
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid "Node structure"
 msgstr "ノード構成"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:71
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:72
 msgid ""
 "To begin, we need to choose a root node for the player object. As a general "
 "rule, a scene's root node should reflect the object's desired functionality "
@@ -157,7 +159,7 @@ msgstr ""
 "である* か）を反映する必要があります。「その他のノード」のボタンをクリックし"
 "て、シーンに :ref:`Area2D <class_Area2D>`` ノードを加えます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:78
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:79
 msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
@@ -165,7 +167,7 @@ msgstr ""
 "Godotは、シーンツリーのノードの横に警告アイコンを表示します。現時点では無視し"
 "て構いません。後で対処します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:81
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:82
 msgid ""
 "With ``Area2D`` we can detect objects that overlap or run into the player. "
 "Change the node's name to ``Player`` by double-clicking on it. Now that "
@@ -177,7 +179,7 @@ msgstr ""
 "``Player`` に変更します。シーンのルートノードを決めたので、これにノードを追加"
 "して機能を追加できます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:86
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:87
 msgid ""
 "Before we add any children to the ``Player`` node, we want to make sure we "
 "don't accidentally move or resize them by clicking on them. Select the node "
@@ -189,7 +191,7 @@ msgstr ""
 "リックします。ツールチップには「オブジェクトの子を選択不可にする。」と書いて"
 "あります"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:93
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:94
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
@@ -197,11 +199,11 @@ msgstr ""
 "シーンを保存します。 [シーン]-> [シーンを保存]をクリックするか、Windows/Linux"
 "では :kbd:`Ctrl + S` を押し、macOSでは :kbd:`Cmd + S` を押します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:95
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr "このプロジェクトでは、Godotの命名規則に従います。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:97
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:98
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
@@ -210,7 +212,7 @@ msgstr ""
 "用し、定数はALL_CAPSを使用します(\\ :ref:`doc_gdscript_styleguide`\\ を参"
 "照)。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:101
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
@@ -222,11 +224,11 @@ msgstr ""
 "(\\ :ref:`doc_c_sharp_styleguide`\\ を参照)。シグナルを接続するときは、メソッ"
 "ド名を正確に入力してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:108
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:109
 msgid "Sprite animation"
 msgstr "スプライトアニメーション"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -246,7 +248,7 @@ msgstr ""
 "「[空]」→「新規 SpriteFrames」をクリックします。これにより、SpriteFramesパネ"
 "ルが自動的に開きます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:121
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:122
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -262,7 +264,7 @@ msgstr ""
 "``playerGrey_walk[1/2]`` という名前の各アニメーションの 2 つの画像をパネルの "
 "「アニメーション フレーム」側にドラッグします:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:130
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:131
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -273,7 +275,7 @@ msgstr ""
 "あります。 ``AnimatedSprite`` ノードをクリックし、 ``Scale`` プロパティを "
 "``(0.5,0.5)`` に設定します。``Node2D`` の下のインスペクタにあります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:137
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:138
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -289,19 +291,19 @@ msgstr ""
 "CapsuleShape2D」をクリックします。2つのサイズハンドルを使用して、スプライトを"
 "覆うようにシェイプのサイズを変更します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:146
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:147
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "完了すると、 ``Player`` シーンは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:150
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:151
 msgid "Make sure to save the scene again after these changes."
 msgstr "これらの変更後は、必ずシーンを再度保存してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:153
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:154
 msgid "Moving the player"
 msgstr "プレイヤーを動かす"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:155
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:156
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the "
@@ -311,7 +313,7 @@ msgstr ""
 "を追加します。 ``Player`` ノードをクリックし、「スクリプトをアタッチ」ボタン"
 "をクリックします:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:161
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:162
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
@@ -319,7 +321,7 @@ msgstr ""
 "スクリプト設定ウィンドウ内の設定はそのままで構いません。「作成」をクリックし"
 "てください:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:165
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
@@ -327,19 +329,11 @@ msgstr ""
 "C#スクリプトまたはその他の言語を作成する場合は、作成を実行する前に [言語] ド"
 "ロップダウン メニューから言語を選択します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:169
-msgid ""
-"If this is your first time encountering GDScript, please read :ref:"
-"`doc_scripting` before continuing."
-msgstr ""
-"GDScriptに初めて触れる場合は、続行する前に\\ :ref:`doc_scripting`\\ をお読み"
-"ください。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:172
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:170
 msgid "Start by declaring the member variables this object will need:"
 msgstr "まず、このオブジェクトに必要なメンバー変数を宣言します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:193
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:191
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -355,7 +349,7 @@ msgstr ""
 "値を変更すると、スクリプトに記述された値が上書きされることに注意してくださ"
 "い。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:200
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:198
 msgid ""
 "If you're using C#, you need to (re)build the project assemblies whenever "
 "you want to see new export variables or signals. This build can be manually "
@@ -367,7 +361,7 @@ msgstr ""
 "ウィンドウの下部にある「Mono」をクリックしてMonoパネルを表示し、「Build "
 "Project」ボタンをクリックして手動でトリガーできます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:208
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:206
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
@@ -375,7 +369,7 @@ msgstr ""
 "``_ready()`` 関数は、ノードがシーンツリーに入ると呼び出されます。これは、ゲー"
 "ムウィンドウのサイズを調べる良いタイミングです:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:224
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:222
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -387,19 +381,19 @@ msgstr ""
 "更新しますが、これは頻繁に変更されることが予想されます。プレイヤーの場合、次"
 "のことを行う必要があります:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:229
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:227
 msgid "Check for input."
 msgstr "入力をチェックします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:230
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:228
 msgid "Move in the given direction."
 msgstr "指定した方向に移動します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:231
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:229
 msgid "Play the appropriate animation."
 msgstr "適切なアニメーションを再生します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:233
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:231
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -415,7 +409,7 @@ msgstr ""
 "デモでは、キーボードの矢印キーに割り当てられているデフォルトのイベントを使用"
 "します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:240
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:238
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it's pressed or ``false`` if it isn't."
@@ -424,7 +418,7 @@ msgstr ""
 "ます。これは、押された場合は ``true`` 、押されていない場合は ``false`` を返し"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:302
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:300
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -441,7 +435,7 @@ msgstr ""
 "方向と垂直方向の動きを追加しているため、プレイヤーは水平方向に移動した場合よ"
 "りも、斜め方向に\\ *速く*\\ 移動します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:307
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, then multiply by the desired speed. This means no more "
@@ -451,7 +445,7 @@ msgstr ""
 "さ*\\ を ``1`` に設定し、それから希望の速度を乗算します。これは、これ以上速い"
 "対角移動がないことを意味します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:313
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
@@ -462,7 +456,7 @@ msgstr ""
 "す。これは知っておくと良いですが、このチュートリアルの残りの部分では必要ない"
 "でしょう。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:317
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:315
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
@@ -470,7 +464,7 @@ msgstr ""
 "また、AnimatedSpriteの ``play()`` または ``stop()`` を呼び出せるようにするた"
 "め、プレイヤーが移動中かどうかも確認します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:320
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:318
 msgid ""
 "``$`` is shorthand for ``get_node()``. So in the code above, ``"
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
@@ -480,7 +474,7 @@ msgstr ""
 "$AnimatedSprite.play()`` は ``get_node(\"AnimatedSprite\").play()`` と同じで"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:323
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:321
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
@@ -490,7 +484,7 @@ msgstr ""
 "が見つからない場合は ``null`` を返します。 AnimatedSpriteは現在のノードの子で"
 "あるため、\\ ``$AnimatedSprite`` を使用できます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:326
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:324
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
@@ -503,7 +497,7 @@ msgstr ""
 "限をかける事です。\\ ``_process`` 関数の下部に追加して下さい (`else` までイン"
 "デントしないように注意):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:347
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:345
 msgid ""
 "The `delta` parameter in the `_process()` function refers to the *frame "
 "length* - the amount of time that the previous frame took to complete. Using "
@@ -514,7 +508,7 @@ msgstr ""
 "了するまでに要した時間を参照します。この値を使うことで、動きの処理はフレーム"
 "レートの変動の影響を受けなくなります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:352
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:350
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
@@ -522,11 +516,11 @@ msgstr ""
 "「シーンを実行」(``F6``)をクリックして、スクリーンで全方向にプレイヤーを移動"
 "できることを確認してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:355
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:353
 msgid "If you get an error in the \"Debugger\" panel that says"
 msgstr "「デバッガ」パネルで以下のようなエラーが発生した場合"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:357
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
@@ -534,7 +528,7 @@ msgstr ""
 "``null インスタンス上の ベース 'null インスタンス' の関数 'play' を呼び出そう"
 "としています。``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:359
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
@@ -544,11 +538,11 @@ msgstr ""
 "ド名は大文字と小文字を区別するので、\\ ``$NodeName`` はシーン ツリーに表示さ"
 "れている名前と一致させる必要があります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:364
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:362
 msgid "Choosing animations"
 msgstr "アニメーションの選択"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:366
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:364
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -565,7 +559,7 @@ msgstr ""
 "垂直に反転させれば、下への動きになります。では、このコードを ``_process()`` "
 "関数の最後に配置します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:401
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:399
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
 "programmers. Since we're doing a comparison test (boolean) and also "
@@ -576,7 +570,7 @@ msgstr ""
 "較テスト（ブール値）とブール値の代入を行っていますが、両方とも同時に行うこと"
 "ができます。次のコードと、上記の1行でのブール値代入とを比べてみましょう。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:425
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:423
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
@@ -584,7 +578,7 @@ msgstr ""
 "もう一度シーンを再生して、それぞれの方向のアニメーションが正しいことを確認し"
 "てください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:428
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:426
 msgid ""
 "A common mistake here is to type the names of the animations wrong. The "
 "animation names in the SpriteFrames panel must match what you type in the "
@@ -596,7 +590,7 @@ msgstr ""
 "たものと一致していなければなりません。もしアニメーションの名前を ``\"Walk"
 "\"`` とした場合、コード中では大文字の \"W\" も使わなければなりません。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:433
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:431
 msgid ""
 "When you're sure the movement is working correctly, add this line to "
 "``_ready()``, so the player will be hidden when the game starts:"
@@ -604,11 +598,11 @@ msgstr ""
 "動きが正しく機能していることを確認したら、次の行を ``_ready()`` に追加して、"
 "ゲームの開始時にプレイヤーが非表示になるようにします:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:446
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:444
 msgid "Preparing for collisions"
 msgstr "コリジョン(衝突/当り判定)の準備"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:448
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:446
 msgid ""
 "We want ``Player`` to detect when it's hit by an enemy, but we haven't made "
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
@@ -617,11 +611,11 @@ msgstr ""
 "``Player`` には敵に攻撃されたことを検知してもらいたいのですが、まだ敵を作って"
 "いません！Godotの\\ *シグナル*\\ 機能を使って動作させるので、大丈夫です。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:452
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid "Add the following at the top of the script, after ``extends Area2D``:"
 msgstr "スクリプトの先頭で ``extends Area2d`` の後に、次の行を追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:466
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:464
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
@@ -633,7 +627,7 @@ msgstr ""
 "します。 ``Player`` ノードを選択し、インスペクタタブの横にある「ノード」タブ"
 "をクリックすると、プレイヤーが発信するシグナルのリストが表示されます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:473
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:471
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` "
@@ -649,7 +643,7 @@ msgstr ""
 "をクリックしてください。Godotはプレイヤーのスクリプトに自動的に関数を作成しま"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:482
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:480
 msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
@@ -657,7 +651,7 @@ msgstr ""
 "信号がこの関数に接続されていることを示す緑色のアイコンに注意してください。次"
 "のコードを関数に追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:502
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:500
 msgid ""
 "Each time an enemy hits the player, the signal is going to be emitted. We "
 "need to disable the player's collision so that we don't trigger the ``hit`` "
@@ -666,7 +660,7 @@ msgstr ""
 "敵がプレイヤーに当たるたびに、シグナルが発せられます。プレイヤーの衝突を無効"
 "にして、 ``hit`` シグナルを複数回トリガーしないようにする必要があります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:506
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:504
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
@@ -676,7 +670,7 @@ msgstr ""
 "きにエラーが発生する可能性があります。 ``set_deferred()`` を使用すると、安全"
 "にシェイプを無効にできるようになるまでGodotを待機させることができます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:508
 msgid ""
 "The last piece is to add a function we can call to reset the player when "
 "starting a new game."
@@ -684,11 +678,11 @@ msgstr ""
 "最後のピースとなるのは、新しいゲームの開始時にPlayerをリセットするため、呼び"
 "出す関数を追加することです。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:531
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid "Enemy scene"
 msgstr "Enemyシーン"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:533
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:531
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
@@ -698,7 +692,7 @@ msgstr ""
 "ん。モブは画面の端でランダムに生まれると、ランダムな方向を選び、一直線に進み"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:537
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
@@ -706,37 +700,37 @@ msgstr ""
 "これから ``Mob`` シーンを作り、それを\\ *インスタンス化*\\ して、ゲーム内に任"
 "意の数の独立したモブを作成します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:540
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:538
 msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
 "インスタンス化の詳細については、\\ :ref:`doc_instancing`\\ を参照してくださ"
 "い。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:541
 msgid "Node setup"
 msgstr "ノードの設定"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid "Click Scene -> New Scene and add the following nodes:"
 msgstr "[シーン → 新規シーン] をクリックして、次のノードを追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:547
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>`\\ ( ``Mob`` という名前)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:549
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr "\\ :ref:`AnimatedSprite <class_AnimatedSprite>`\\"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:550
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:548
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr "\\ :ref:`CollisionShape2D <class_CollisionShape2D>`\\"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:551
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:549
 msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:553
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
@@ -744,7 +738,7 @@ msgstr ""
 "Playerシーンと同様に、選択できないように子を設定することを忘れないでくださ"
 "い。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:556
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:554
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
@@ -757,7 +751,7 @@ msgstr ""
 "のチェックボックスをオフにします。これにより、モブが互いに衝突しないようにな"
 "ります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:563
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:561
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
@@ -768,22 +762,22 @@ msgstr ""
 "\\ 、\\ ``walk``\\ です。 artフォルダ内には、各アニメーション用の画像が2枚あ"
 "ります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:567
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:565
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "全てのアニメーションの \"Speed (FPS)\" を ``3`` に調整してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:571
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:569
 msgid "Set the ``Playing`` property in the Inspector to “On”."
 msgstr "インスペクタの ``Playing`` プロパティを「On」に設定します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:573
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
 "モブにバラエティを持たせるために、1つのアニメーションをランダムに選択します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:575
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -791,7 +785,7 @@ msgstr ""
 "プレイヤーの画像と同様に、これらのモブ画像は縮小する必要があります。 "
 "``AnimatedSprite`` の ``Scale`` プロパティを ``(0.75, 0.75)`` に設定します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:578
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:576
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
@@ -801,19 +795,19 @@ msgstr ""
 "を画像に合わせるには、\\ ``Rotation Degrees`` プロパティを ``90`` に設定する"
 "必要があります (インスペクタの「Transform」の下にあります)。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:582
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:580
 msgid "Save the scene."
 msgstr "シーンを保存します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:585
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:583
 msgid "Enemy script"
 msgstr "Enemyスクリプト"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:587
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "``Mob`` にスクリプトを追加し、次のメンバー変数を追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:611
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:609
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -822,7 +816,7 @@ msgstr ""
 "モブを生み出す時、各モブの移動速度について ``min_speed`` と ``max_speed`` の"
 "間のランダムな値を選択します (すべて同じ速度で移動していると退屈なので)。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:615
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:613
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
@@ -830,7 +824,7 @@ msgstr ""
 "それでは、スクリプトの残りの部分を見てみましょう。 ``_ready()`` では、次の3つ"
 "のアニメーションタイプのいずれかをランダムに選択します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:637
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
@@ -840,7 +834,7 @@ msgstr ""
 "取得します。これは3つのアニメーション名をすべて含む配列を返します: ``[\"walk"
 "\", \"swim\", \"fly\"]`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:641
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:639
 msgid ""
 "We then need to pick a random number between ``0`` and ``2`` to select one "
 "of these names from the list (array indices start at ``0``). ``randi() % n`` "
@@ -850,7 +844,7 @@ msgstr ""
 "す（配列のインデックスは ``0`` から始まります）。 ``randi() % n`` は ``0`` か"
 "ら ``n-1`` の間の乱数を選びます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
@@ -860,7 +854,7 @@ msgstr ""
 "``randomize()`` を使用する必要があります。 ``Main`` シーンで ``randomize()`` "
 "を使用するので、ここでは必要はありません。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:649
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the "
@@ -870,15 +864,15 @@ msgstr ""
 "``VisibilityNotifier2D`` ノードの ``screen_exited()`` シグナルを接続し、次の"
 "コードを追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:666
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:664
 msgid "This completes the `Mob` scene."
 msgstr "これで `Mob` シーンが完成します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:669
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:667
 msgid "Main scene"
 msgstr "Mainシーン"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:671
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:669
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
@@ -889,13 +883,13 @@ msgstr ""
 "ることを確認してください。「インスタンス」ボタンをクリックして、保存した "
 "``Player.tscn`` を選択します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:676
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr "次に ``Main`` の子供として以下のノードを追加します(値は秒単位です)。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:679
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -903,7 +897,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>`\\ ( ``MobTimer`` という名前) - モブが出現する頻度"
 "を制御する"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -911,7 +905,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` ( ``ScoreTimer`` という名前) - 一秒ごとに得点を上"
 "げる"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -919,7 +913,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` ( ``StartTimer`` という名前) - 開始する前に遅延さ"
 "せる"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -927,24 +921,24 @@ msgstr ""
 "\\ :ref:`Position2D <class_Position2D>` (``StartPosition`` という名前) - プレ"
 "イヤーの開始位置を示す"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "各 ``Timer`` ノードの ``Wait Time`` プロパティを次のように設定します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
 msgid "``MobTimer``: ``0.5``"
 msgstr "\\ ``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
 msgid "``ScoreTimer``: ``1``"
 msgstr "\\ ``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``StartTimer``: ``2``"
 msgstr "\\ ``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:693
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -952,11 +946,11 @@ msgstr ""
 "さらに、 ``StartTimer`` の ``One Shot`` プロパティを「On」に設定し、 "
 "``StartPosition`` ノードの ``Position`` を ``(240, 450)`` に設定します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:695
 msgid "Spawning mobs"
 msgstr "モブの生成"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:699
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -968,7 +962,7 @@ msgstr ""
 "<class_Path2D>`\\ ノードを追加します。 ``Path2D`` を選択すると、エディタの上"
 "部にいくつかの新しいボタンが表示されます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:706
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:704
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -981,7 +975,7 @@ msgstr ""
 "ドスナップを使う]が選択されていることを確認します。このオプションは、[ロック]"
 "ボタンの左側にあり、「交差する線と磁石」のアイコンで表示されています。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:714
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:712
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -989,7 +983,7 @@ msgstr ""
 "*時計回り*\\ にパスを描画します。そうしないと、モブは\\ *内側*\\ ではなく\\ *"
 "外側*\\ を向いて発生します！"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:719
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:717
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -997,7 +991,7 @@ msgstr ""
 "画像にポイント ``4`` を配置した後、「カーブを閉じる」ボタンをクリックすると、"
 "カーブが完成します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:720
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -1009,15 +1003,15 @@ msgstr ""
 "けます。このノードは自動的に回転し、パスの移動に従うので、パスに沿ってランダ"
 "ムな位置と方向を選択できます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:727
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:725
 msgid "Your scene should look like this:"
 msgstr "シーンは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:730
 msgid "Main script"
 msgstr "Mainスクリプト"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:734
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -1026,7 +1020,7 @@ msgstr ""
 "``export(PackedScene)`` を使用して、インスタンス化するMobシーンを選択できるよ"
 "うにします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:774
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
@@ -1034,11 +1028,11 @@ msgstr ""
 "``Main`` ノードをクリックすると、インスペクタの「Script Variables(スクリプト"
 "変数)」の下に ``Mob`` プロパティがあります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:775
 msgid "You can assign this property's value in two ways:"
 msgstr "このプロパティの値は、ふたつの方法で指定できます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:779
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
@@ -1046,7 +1040,7 @@ msgstr ""
 "「ファイルシステム」パネルから ``Mob.tscn`` をドラッグし、 ``Mob`` プロパティ"
 "にドロップします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:781
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:779
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
@@ -1054,7 +1048,7 @@ msgstr ""
 "[空] の隣にある下矢印をクリックして「読み込み」を選び、\\ ``Mob.tscn`` を選択"
 "します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:784
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:782
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
@@ -1063,7 +1057,7 @@ msgstr ""
 "クセスします。ノードドックでは、シグナルタブが選択されていることを確認してく"
 "ださい。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:787
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:785
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -1083,7 +1077,7 @@ msgstr ""
 "ドを追加し、さらに、新しいゲームのための設定を行う ``new_game`` 関数も追加し"
 "ます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:828
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. "
@@ -1095,7 +1089,7 @@ msgstr ""
 "``StartTimer`` は他の2つのタイマーを開始します。\\ ``ScoreTimer`` はスコアを1"
 "増やします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:855
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:853
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -1106,14 +1100,14 @@ msgstr ""
 "て開始位置をランダムに選択してから、mobを動かします。 ``PathFollow2D`` ノード"
 "はパスに沿って自動的に回転するので、それを使用してmobの方向と位置を決めます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:861
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
 "注意点として、新しいインスタンスは ``add_child()`` を使ってシーンに追加しなけ"
 "ればなりません。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
@@ -1123,11 +1117,11 @@ msgstr ""
 "*ラジアン*\\ を使用します。度を使用する方が快適な場合は、 ``deg2rad()`` 関数"
 "と ``rad2deg()`` 関数を使用して 2 つの間で変換する必要があります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Testing the scene"
 msgstr "シーンのテスト"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
@@ -1135,7 +1129,7 @@ msgstr ""
 "シーンをテストして、すべてが動作していることを確認してみましょう。これを "
 "``_ready()`` に追加してください:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
 "automatically when the game launches. Press the \"Play\" button and select "
@@ -1145,7 +1139,7 @@ msgstr ""
 "ときに自動的に実行されるシーンです。「実行」ボタンを押して、プロンプトが表示"
 "されたら ``Main.tscn`` を選択してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
@@ -1153,7 +1147,7 @@ msgstr ""
 "プレイヤーを移動でき、モブが発生したり、モブに当たった時にプレイヤーが消える"
 "ようになっているはずです。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
@@ -1161,11 +1155,11 @@ msgstr ""
 "全て動作していることが確認できたら、 ``_ready()`` から ``new_game()`` の呼び"
 "出しを削除してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 msgid "HUD"
 msgstr "ヘッドアップディスプレイ(HUD)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -1179,7 +1173,7 @@ msgstr ""
 "は、ゲームビューの上にオーバーレイとして表示される情報表示である「ヘッドアッ"
 "プディスプレイ」の略です。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -1189,23 +1183,23 @@ msgstr ""
 "よりも上のレイヤにUI要素を描画することができるため、表示される情報がプレイ"
 "ヤーやモブなどのゲーム要素によって隠されることがなくなります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "The HUD needs to display the following information:"
 msgstr "HUDには、次の情報を表示する必要があります:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "``ScoreTimer`` によって変更されるスコア。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:958
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "「Game Over」や「Get Ready! (よーい！)」 などのメッセージ"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
 msgid "A \"Start\" button to begin the game."
 msgstr "ゲームを開始する「スタート」ボタン。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:963
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1215,27 +1209,27 @@ msgstr ""
 "るには、\\ :ref:`ラベル <class_Label>`\\ と\\ :ref:`ボタン <class_Button>`\\ "
 "の2種類の\\ :ref:`コントロール <class_Control>`\\ ノードを使用します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "``HUD`` ノードの子として次を作成します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr "``ScoreLabel`` という名前の\\ :ref:`ラベル <class_Label>`\\ 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr "``Message`` という名前の\\ :ref:`Label <class_Label>`\\ 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:971
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr "``StartButton`` という名前の\\ :ref:`ボタン <class_Button>`\\ 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` という名前の\\ :ref:`Timer <class_Timer>`\\ 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1247,11 +1241,11 @@ msgstr ""
 "せん。そこで、ゲームアセットに含まれる 「Xolonium-Regular.ttf」というフォント"
 "ファイルがあります。 このフォントを使用するには、次のようにしてください:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:979
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:977
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "「カスタムフォント」で 「新しい動的フォント」を選択します"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:983
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:981
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1261,7 +1255,7 @@ msgstr ""
 "を選択し、\"Xolonium-Regular.ttf\" ファイルを選択します。 また、フォントの "
 "``Size`` も設定する必要があります。 ``64`` の設定はうまく機能します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:989
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:987
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
@@ -1271,7 +1265,7 @@ msgstr ""
 "をクリックして「コピー」を選択し、他の２つのコントロールノードの同じ場所に"
 "「ペースト」してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:993
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:991
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1287,7 +1281,7 @@ msgstr ""
 "詳細は\\ :ref:`doc_design_interfaces_with_the_control_nodes`\\ を参照してくだ"
 "さい。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:998
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
@@ -1295,7 +1289,7 @@ msgstr ""
 "以下に示すようにノードを配置します。「レイアウト」ボタンをクリックして、コン"
 "トロールノードのレイアウトを設定します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1005
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -1303,64 +1297,64 @@ msgstr ""
 "ノードをドラッグして手動で配置したり、より正確な配置を行うには、次の設定を使"
 "用します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"Top Wide\""
 msgstr "\\ *Layout* : \"Top Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
 msgid "*Text* : ``0``"
 msgstr "\\ *Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1013
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Align* : \"Center\""
 msgstr "\\ *Align* : \"Center\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
 msgid "Message"
 msgstr "Message"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "\\ *Layout* : \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "\\ *Text* : ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Autowrap* : \"On\""
 msgstr "\\ *Autowrap* : \"On\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "StartButton"
 msgstr "\\ StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "*Text* : ``Start``"
 msgstr "\\ *Text* : ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid "*Layout* : \"Center Bottom\""
 msgstr "\\ *Layout* : \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Margin* :"
 msgstr "\\ *Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid "Top: ``-200``"
 msgstr "\\ Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
 msgid "Bottom: ``-100``"
 msgstr "\\ Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
@@ -1368,11 +1362,11 @@ msgstr ""
 "``MessageTimer`` 上で、\\ ``Wait Time`` を ``2`` に設定し、\\ ``One Shot`` プ"
 "ロパティを「On」に設定してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1036
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid "Now add this script to ``HUD``:"
 msgstr "次に、このスクリプトを ``HUD`` に追加します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1055
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1053
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
@@ -1380,7 +1374,7 @@ msgstr ""
 "``start_game`` シグナルは、ボタンが押されたことを ``Main`` ノードに通知しま"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1075
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
@@ -1388,7 +1382,7 @@ msgstr ""
 "この関数は、「Get Ready」などのメッセージを一時的に表示させたい場合に呼び出さ"
 "れます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1397,7 +1391,7 @@ msgstr ""
 "この関数は、プレイヤーが負けたときに呼び出されます。 2秒間「Game Over」と表示"
 "され、タイトル画面に戻り、少し間を置いて「Start」ボタンが表示されます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1115
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -1409,11 +1403,11 @@ msgstr ""
 "に、\"Start\" ボタンを表示する前に少し時間を置きたい場合など、遅延させるのに"
 "非常に役立ちます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "この関数はスコアが変わるたびに ``Main`` によって呼び出されます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
@@ -1421,11 +1415,11 @@ msgstr ""
 "``MessageTimer`` の ``timeout()`` シグナルと ``StartButton`` の "
 "``pressed()`` シグナルを接続してから、下記のコードを新しい関数に加えます:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid "Connecting HUD to Main"
 msgstr "HUDをメインに接続する"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
@@ -1436,7 +1430,7 @@ msgstr ""
 "置します。ツリー全体は次のようになるはずです。何も見落としていないか確認して"
 "ください:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1444,7 +1438,7 @@ msgstr ""
 "次に、 ``HUD`` 機能を ``Main`` のスクリプトに接続します。これには、 ``Main`` "
 "シーンにいくつかの追加が必要です:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1174
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1172
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by typing \"new_game\" in the "
@@ -1456,18 +1450,18 @@ msgstr ""
 "``new_game()`` 関数に接続します。スクリプトの ``func new_game()`` の横に緑色"
 "の接続アイコンが表示されていることを確認してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1177
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
 "``new_game()`` で、スコア表示を更新し、「Get Ready」メッセージを表示します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()`` では、対応する ``HUD`` 関数を呼び出す必要があります:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1475,7 +1469,7 @@ msgstr ""
 "最後に、これを ``_on_ScoreTimer_timeout()`` に追加して、変更されたスコアと同"
 "期して表示を維持します:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1215
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1484,11 +1478,11 @@ msgstr ""
 "す。メインシーンを選択するように求められますので、 ``Main.tscn`` を選択しま"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid "Removing old creeps"
 msgstr "古い「クリープ」を削除する"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -1501,7 +1495,7 @@ msgstr ""
 "の開始時には消したほうがいいでしょう。それには、\\ *すべて*\\ のモブたちに自"
 "身の削除を指示する方法が必要です。これは「グループ」機能を使えば可能です。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1226
 msgid ""
 "In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
 "to the Inspector (the same place where you find the node's signals). Next to "
@@ -1513,7 +1507,7 @@ msgstr ""
 "ル」の横にある「グループ」をクリックして、新しいグループ名を入力して「追加」"
 "をクリックします。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
@@ -1521,7 +1515,7 @@ msgstr ""
 "これですべてのモブが 「mobs」グループに入るようになります。あとは、 ``Main`` "
 "内の ``game_over()`` 関数に次の行を追加します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1245
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
@@ -1529,11 +1523,11 @@ msgstr ""
 "``call_group()`` 関数はグループ内の全てのノードに対して名前付きの関数を呼び出"
 "します - この場合は全てのモブに自分自身を削除するように指示しています。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
 msgid "Finishing up"
 msgstr "仕上げ"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1253
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1543,11 +1537,11 @@ msgstr ""
 "めにもう少し「精彩」を加えるための、いくつかの残りの手順です。あなた自身のア"
 "イデアによって、ゲームプレイを自由に拡張してください。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1256
 msgid "Background"
 msgstr "Background(背景)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1563,7 +1557,7 @@ msgstr ""
 "す。好きな色を選択し、「レイアウト」→「Rect全面」を選べば、画面はそれで覆われ"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1264
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
@@ -1571,11 +1565,11 @@ msgstr ""
 "背景画像がある場合は、代わりに ``TextureRect`` ノードを使用して、それを追加す"
 "ることもできます。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1268
 msgid "Sound effects"
 msgstr "効果音"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1272
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1587,7 +1581,7 @@ msgstr ""
 "レイヤーが負けたとき用の ``gameover.wav`` という2つのサウンドファイルがありま"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1277
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1275
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1599,7 +1593,7 @@ msgstr ""
 "``DeathSound`` と名前を付けます。各ファイルにて ``Stream`` プロパティをクリッ"
 "クし、「読み込み」を選択してから、対応するオーディオファイルを選択します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1282
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1280
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1607,15 +1601,15 @@ msgstr ""
 "音楽を再生するには、 ``new_game()`` 関数に ``$Music.play()`` を追加し、 "
 "``game_over()`` 関数に ``$Music.stop()`` を追加します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1285
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1283
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "最後に、 ``game_over()`` 関数に ``$DeathSound.play()`` を追加します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1286
 msgid "Keyboard shortcut"
 msgstr "キーボード ショートカット"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1290
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
@@ -1625,7 +1619,7 @@ msgstr ""
 "てゲームを開始できると便利です。それには ``Button`` ノードの「Shortcut」プロ"
 "パティを使用すれば可能です。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1292
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1641,7 +1635,7 @@ msgstr ""
 "*Action* プロパティに ``ui_select`` という名前を入力します。これは、スペース"
 "バーに関連付けられたデフォルトの入力イベントです。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1302
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1300
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
@@ -1649,18 +1643,18 @@ msgstr ""
 "スタートボタンが表示されたら、クリックするか、\\ :kbd:`Space` を押してゲーム"
 "を開始します。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1304
 msgid "Project files"
 msgstr "プロジェクトファイル"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1311
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "You can find a completed version of this project at these locations:"
 msgstr "このプロジェクトの完成バージョンは、次の場所にあります。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1307
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "\\ https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1308
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "\\ https://github.com/godotengine/godot-demo-projects"

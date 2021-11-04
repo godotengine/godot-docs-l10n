@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,16 +31,17 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
-"Начиная с версии 3.1, Godot поддерживает физику тряпичных кукол(ragdolls). "
-"Куклы зависят от симуляции физики для создания реалистичной процедурной "
-"анимации. Они используются для анимаций смерти во многих играх."
+"Начиная с версии 3.1, Godot поддерживает физику тряпичных кукол (ragdolls). "
+"Для создания реалистичной процедурной анимации тряпичные куклы используют "
+"физическое моделирование. Они используются для анимации смерти во многих "
+"играх."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
-"В этом руководстве, мы будем использовать пример Platformer3D для установки "
-"ragdoll."
+"В этом учебном пособии мы будем использовать пример Platformer3D для "
+"настройки тряпичной куклы."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -68,16 +69,18 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
-"Как во многих других возможностях в движке, существует узел для установки "
-"рэгдолла: узел :ref:`PhysicalBone <class_PhysicalBone>`. Для упрощения "
-"настройки, вы можете создать узлы ``PhysicalBone`` через возможность "
-"\"Создать физический скелет\" в узле скелетона."
+"Как и для многих других возможностей движка существует узел для настройки "
+"куклы: :ref:`PhysicalBone <class_PhysicalBone>`. Для упрощения настройки Вы "
+"можете создать узлы ``PhysicalBone`` через функцию \"Создать физический "
+"скелет\" в узле скелетона."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
+"Откройте демо платформера в Godot, а затем сцену Robi. Выберите узел "
+"``Skeleton``. В меню верхней панели появится кнопка скелета:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
 msgid ""
@@ -85,17 +88,21 @@ msgid ""
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
 "skeleton and pin joints to connect them together:"
 msgstr ""
+"Щелкните его и выберите опцию ``Создать физический скелет``. Godot будет "
+"генерировать узлы ``PhysicalBone`` и формы столкновений для каждой кости "
+"скелета и штыревые крепления для их соединения:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
+"Некоторые из созданных костей не являются необходимыми: например, "
+"кость``MAIN``. Мы очистим скелет, удалив её."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
-#, fuzzy
 msgid "Cleaning up the skeleton"
-msgstr "Создание сценариев сцены"
+msgstr "Очистка скелета"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:36
 msgid ""
@@ -103,6 +110,10 @@ msgid ""
 "so you want to remove every bone that is too small to make a difference in "
 "the simulation, as well as all utility bones."
 msgstr ""
+"Каждая ``PhysicalBone``, которую должен моделировать движок, ухудшает "
+"производительность, поэтому Вы захотите удалить каждую кость, которая "
+"слишком мала, чтобы оказывать влияние на моделирование, а также все "
+"вспомогательные кости."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:38
 msgid ""
@@ -111,6 +122,10 @@ msgid ""
 "one for the palm, one for the thumb, and a last one for the other four "
 "fingers."
 msgstr ""
+"Например, если мы берем гуманоида, Вы не захотите иметь физические кости для "
+"каждого пальца. Вместо этого Вы можете использовать единственную кость для "
+"всей руки, или одну для ладони, одну для большого пальца и последнюю для "
+"остальных четырех пальцев."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:40
 msgid ""
@@ -118,21 +133,26 @@ msgid ""
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""
+"Удалите эти физические кости: ``MASTER``, ``waist``, ``neck``, "
+"``headtracker``. Это даст нам оптимизированный скелет и облегчит управление "
+"куклой."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
-#, fuzzy
 msgid "Collision shape adjustment"
-msgstr "Видимые области соприкосновения"
+msgstr "Настройка форм столкновений"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
 "The next task is adjusting the collision shape and the size of physical "
 "bones to match the part of the body that each bone should simulate."
 msgstr ""
+"Следующая задача — настроить форму столкновений и размеры физических костей "
+"так, чтобы они соответствовали частям тела, которые должна моделировать "
+"каждая кость."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
 msgid "Joints adjustment"
-msgstr ""
+msgstr "Настройка суставов"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
@@ -143,6 +163,12 @@ msgid ""
 "constraint type in the ``Joint`` section. There, you can change the "
 "constraint's orientation and its limits."
 msgstr ""
+"Как только Вы настроили формы столкновения, Ваша кукла почти готова. Вы "
+"просто хотите настроить суставы для более качественного моделирования. У "
+"узлов ``PhysicalBone`` есть неограниченный сустав, назначенный на них по "
+"умолчанию. Чтобы изменить сустав, выберите ``PhysicalBone`` и поменяйте тип "
+"ограничения в разделе ``Joint``. Там Вы можете изменить ориентацию "
+"ограничения и ее пределы."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:56
 msgid "This is the final result:"
@@ -150,7 +176,7 @@ msgstr "Это и есть финальный результат:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:61
 msgid "Simulating the ragdoll"
-msgstr ""
+msgstr "Моделирование куклы"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:63
 msgid ""
@@ -159,33 +185,43 @@ msgid ""
 "method. Attach a script to the skeleton node and call the method in the "
 "``_ready`` method:"
 msgstr ""
+"Теперь кукла готова к использованию. Для запуска моделирования и "
+"воспроизведения анимации куклы необходимо вызвать метод "
+"``physical_bones_start_simulation``. Присоедините скрипт к скелетному узлу и "
+"вызовите метод в ``_ready`` методе:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
+"Чтобы остановить моделирование, вызовите метод "
+"``physical_bones_stop_simulation()``."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
 "You can also limit the simulation to only a few bones. To do so, pass the "
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
+"Можно также ограничить моделирование только несколькими костями. Для этого "
+"передайте имена костей в качестве параметра. Вот пример частичного "
+"моделирования куклы:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
-msgstr ""
+msgstr "Слой столкновения и маска"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
+"Не забудьте правильно настроить слои столкновений и маски, чтобы капсула "
+"``KinematicBody`` не попала в путь физического моделирования:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
 msgstr ""
-"Для получения дополнительной информации о самих событиях посмотрите "
-"руководство :ref:`doc_inputevent`."
+"Для получения дополнительной информации см. :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 "usando valores que van del 0 al 1. Esto nos da dos puntos que se mueven a lo "
 "largo de los segmentos a medida que cambiamos el valor de ``t`` del 0 al 1."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:37
+#: ../../docs/tutorials/math/beziers_and_curves.rst:45
 msgid ""
 "We then interpolate ``q0`` and ``q1`` to obtain a single point ``r`` that "
 "moves along a curve."
@@ -81,20 +81,20 @@ msgstr ""
 "Luego interpolamos ``q0`` y ``q1`` para obtener un único punto ``r`` que se "
 "mueve a lo largo de una curva."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:46
+#: ../../docs/tutorials/math/beziers_and_curves.rst:59
 msgid "This type of is called a *Quadratic Bezier* curve."
 msgstr "Este tipo de curva se llama curva de *Bezier Cuadrática*."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:50
-#: ../../docs/tutorials/math/beziers_and_curves.rst:114
+#: ../../docs/tutorials/math/beziers_and_curves.rst:63
+#: ../../docs/tutorials/math/beziers_and_curves.rst:165
 msgid "*(Image credit: Wikipedia)*"
 msgstr "*(Crédito de la imagen: Wikipedia)*"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:53
+#: ../../docs/tutorials/math/beziers_and_curves.rst:66
 msgid "Cubic Bezier"
 msgstr "Bezier Cúbico"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:55
+#: ../../docs/tutorials/math/beziers_and_curves.rst:68
 msgid ""
 "Building upon the previous example, we can get more control by interpolating "
 "between four points."
@@ -102,7 +102,7 @@ msgstr ""
 "Basándonos en el ejemplo anterior, podemos obtener más control interpolando "
 "entre cuatro puntos."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:60
+#: ../../docs/tutorials/math/beziers_and_curves.rst:73
 msgid ""
 "We first use a function with four parameters to take four points as an "
 "input, ``p0``, ``p1``, ``p2`` and ``p3``:"
@@ -110,7 +110,7 @@ msgstr ""
 "Primero usamos una función con cuatro parámetros para tomar cuatro puntos "
 "como entrada, ``p0``, ``p1``, ``p2`` y ``p3``:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:68
+#: ../../docs/tutorials/math/beziers_and_curves.rst:88
 msgid ""
 "We apply a linear interpolation to each couple of points to reduce them to "
 "three:"
@@ -118,25 +118,25 @@ msgstr ""
 "Aplicamos una interpolación lineal a cada par de puntos para reducirlos a "
 "tres:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:78
+#: ../../docs/tutorials/math/beziers_and_curves.rst:104
 msgid "We then take our three points and reduce them to two:"
 msgstr "Luego tomamos nuestros tres puntos y los reducimos a dos:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:86
+#: ../../docs/tutorials/math/beziers_and_curves.rst:117
 msgid "And to one:"
 msgstr "Y a uno:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:94
+#: ../../docs/tutorials/math/beziers_and_curves.rst:130
 msgid "Here is the full function:"
 msgstr "Aquí está la función completa:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:110
+#: ../../docs/tutorials/math/beziers_and_curves.rst:161
 msgid ""
 "The result will be a smooth curve interpolating between all four points:"
 msgstr ""
 "El resultado será una curva suave que interpola entre los cuatro puntos:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:116
+#: ../../docs/tutorials/math/beziers_and_curves.rst:167
 msgid ""
 "Cubic Bezier interpolation works the same in 3D, just use ``Vector3`` "
 "instead of ``Vector2``."
@@ -144,11 +144,11 @@ msgstr ""
 "La interpolación de Bezier Cúbica funciona igual en 3D, sólo que usa "
 "``Vector3`` en lugar de ``Vector2``."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:120
+#: ../../docs/tutorials/math/beziers_and_curves.rst:171
 msgid "Adding control points"
 msgstr "Agregando puntos de control"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:122
+#: ../../docs/tutorials/math/beziers_and_curves.rst:173
 msgid ""
 "Building upon Cubic Bezier, we can change the way two of the points work to "
 "control the shape of our curve freely. Instead of having ``p0``, ``p1``, "
@@ -158,26 +158,26 @@ msgstr ""
 "puntos funcionan para controlar la forma de nuestra curva libremente. En "
 "lugar de tener ``p0``, ``p1``, ``p2`` y ``p3``, los guardaremos como:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:126
+#: ../../docs/tutorials/math/beziers_and_curves.rst:177
 msgid "``point0 = p0``: Is the first point, the source"
 msgstr "``point0 = p0``: Es el primer punto, la fuente"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:127
+#: ../../docs/tutorials/math/beziers_and_curves.rst:178
 msgid "``control0 = p1 - p0``: Is a vector relative to the first control point"
 msgstr ""
 "``control0 = p1 - p0``: Es un vector relativo al primer punto de control"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:128
+#: ../../docs/tutorials/math/beziers_and_curves.rst:179
 msgid ""
 "``control1 = p3 - p2``: Is a vector relative to the second control point"
 msgstr ""
 "``control1 = p3 - p2``: Es un vector relativo al segundo punto de control"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:129
+#: ../../docs/tutorials/math/beziers_and_curves.rst:180
 msgid "``point1 = p3``: Is the second point, the destination"
 msgstr "``point1 = p3``: Es el segundo punto, el destino"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:131
+#: ../../docs/tutorials/math/beziers_and_curves.rst:182
 msgid ""
 "This way, we have two points and two control points which are relative "
 "vectors to the respective points. If you've used graphics or animation "
@@ -187,7 +187,7 @@ msgstr ""
 "relativos a los respectivos puntos. Si has usado software de gráficos o de "
 "animación antes, esto puede resultar familiar:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:137
+#: ../../docs/tutorials/math/beziers_and_curves.rst:188
 msgid ""
 "This is how graphics software presents Bezier curves to the users, and how "
 "they work and look in Godot."
@@ -195,11 +195,11 @@ msgstr ""
 "Así es como el software de gráficos presenta las curvas de Bezier a los "
 "usuarios, y cómo funcionan y se ven en Godot."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:141
+#: ../../docs/tutorials/math/beziers_and_curves.rst:192
 msgid "Curve2D, Curve3D, Path and Path2D"
 msgstr "Curve2D, Curve3D, Path y Path2D"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:143
+#: ../../docs/tutorials/math/beziers_and_curves.rst:194
 msgid ""
 "There are two objects that contain curves: :ref:`Curve3D <class_Curve3D>` "
 "and :ref:`Curve2D <class_Curve2D>` (for 3D and 2D respectively)."
@@ -207,7 +207,7 @@ msgstr ""
 "Existen dos objetos que contienen curvas: :ref:`Curve3D <class_Curve3D>` y :"
 "ref:`Curve2D <class_Curve2D>` (para 3D y 2D respectivamente)."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:145
+#: ../../docs/tutorials/math/beziers_and_curves.rst:196
 msgid ""
 "They can contain several points, allowing for longer paths. It is also "
 "possible to set them to nodes: :ref:`Path <class_Path>` and :ref:`Path2D "
@@ -217,7 +217,7 @@ msgstr ""
 "posible establecerlos en nodos: :ref:`Path <class_Path>` y :ref:`Path2D "
 "<class_Path2D>` (también para 3D y 2D respectivamente):"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:149
+#: ../../docs/tutorials/math/beziers_and_curves.rst:200
 msgid ""
 "Using them, however, may not be completely obvious, so following is a "
 "description of the most common use cases for Bezier curves."
@@ -226,11 +226,11 @@ msgstr ""
 "continuación se describen los casos de uso más comunes de las curvas de "
 "Bezier."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:152
+#: ../../docs/tutorials/math/beziers_and_curves.rst:203
 msgid "Evaluating"
 msgstr "Evaluando"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:154
+#: ../../docs/tutorials/math/beziers_and_curves.rst:205
 msgid ""
 "Just evaluating them may be an option, but in most cases it's not very "
 "useful. The big drawback with Bezier curves is that if you traverse them at "
@@ -247,11 +247,11 @@ msgstr ""
 "hay una forma matemáticamente simple de atravesar la curva a velocidad "
 "constante."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:156
+#: ../../docs/tutorials/math/beziers_and_curves.rst:207
 msgid "Let's do a simple example with the following pseudocode:"
 msgstr "Hagamos un ejemplo simple con el siguiente pseudocódigo:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:170
+#: ../../docs/tutorials/math/beziers_and_curves.rst:230
 msgid ""
 "As you can see, the speed (in pixels per second) of the circle varies, even "
 "though ``t`` is increased at constant speed. This makes beziers difficult to "
@@ -261,11 +261,11 @@ msgstr ""
 "aunque ``t`` se incrementa a velocidad constante. Esto hace que las beziers "
 "sean difíciles de usar para cualquier cosa práctica fuera de la caja."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:173
+#: ../../docs/tutorials/math/beziers_and_curves.rst:233
 msgid "Drawing"
 msgstr "Dibujando"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:175
+#: ../../docs/tutorials/math/beziers_and_curves.rst:235
 msgid ""
 "Drawing beziers (or objects based on the curve) is a very common use case, "
 "but it's also not easy. For pretty much any case, Bezier curves need to be "
@@ -277,7 +277,7 @@ msgstr ""
 "convertidas en algún tipo de segmento. Sin embargo, esto normalmente es "
 "difícil sin crear una cantidad muy alta de ellos."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:177
+#: ../../docs/tutorials/math/beziers_and_curves.rst:237
 msgid ""
 "The reason is that some sections of a curve (specifically, corners) may "
 "require considerable amounts of points, while other sections may not:"
@@ -286,7 +286,7 @@ msgstr ""
 "esquinas) pueden requerir cantidades considerables de puntos, mientras que "
 "otras secciones pueden no necesitarlos:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:181
+#: ../../docs/tutorials/math/beziers_and_curves.rst:241
 msgid ""
 "Additionally, if both control points were ``0, 0`` (remember they are "
 "relative vectors), the Bezier curve would just be a straight line (so "
@@ -296,7 +296,7 @@ msgstr ""
 "vectores relativos), la curva de Bezier sería sólo una línea recta (por lo "
 "que dibujar una gran cantidad de puntos sería un desperdicio)."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:183
+#: ../../docs/tutorials/math/beziers_and_curves.rst:243
 msgid ""
 "Before drawing Bezier curves, *tessellation* is required. This is often done "
 "with a recursive or divide and conquer function that splits the curve until "
@@ -307,7 +307,7 @@ msgstr ""
 "curva hasta que la cantidad de curvatura se vuelve menor que un cierto "
 "umbral."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:185
+#: ../../docs/tutorials/math/beziers_and_curves.rst:245
 msgid ""
 "The *Curve* classes provide this via the :ref:`Curve2D.tessellate() "
 "<class_Curve2D_method_tessellate>` function (which receives optional "
@@ -319,11 +319,11 @@ msgstr ""
 "opcionales ``stages`` de recursividad y ángulo de ``tolerance``). De esta "
 "manera, dibujar algo basado en una curva es más fácil."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:189
+#: ../../docs/tutorials/math/beziers_and_curves.rst:249
 msgid "Traversal"
 msgstr "Traversal"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:191
+#: ../../docs/tutorials/math/beziers_and_curves.rst:251
 msgid ""
 "The last common use case for the curves is to traverse them. Because of what "
 "was mentioned before regarding constant speed, this is also difficult."
@@ -331,8 +331,7 @@ msgstr ""
 "El último caso de uso común de las curvas es atravesarlas. Debido a lo que "
 "se mencionó antes sobre la velocidad constante, esto también es difícil."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:193
-#, fuzzy
+#: ../../docs/tutorials/math/beziers_and_curves.rst:253
 msgid ""
 "To make this easier, the curves need to be *baked* into equidistant points. "
 "This way, they can be approximated with regular interpolation (which can be "
@@ -342,15 +341,15 @@ msgid ""
 "get_baked_length()<class_Curve2D_method_get_baked_length>`. The first call "
 "to either of them will bake the curve internally."
 msgstr ""
-"Para hacerlo más fácil, las curvas deben ser \" horneadas \" en puntos "
+"Para hacerlo más fácil, las curvas deben ser *horneadas*(creadas) en puntos "
 "equidistantes. De esta manera, pueden ser aproximadas con una interpolación "
 "regular (que puede ser mejorada aún más con una opción cúbica). Para ello, "
 "sólo hay que utilizar el método :ref:`Curve."
 "interpolate_baked()<class_Curve_method_interpolate_baked>` junto con :ref:"
 "`Curve2D.get_baked_length()<class_Curve2D_method_get_baked_length>`. La "
-"primera llamada a cualquiera de ellos horneará la curva internamente."
+"primera llamada a cualquiera de ellos creará la curva internamente."
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:196
+#: ../../docs/tutorials/math/beziers_and_curves.rst:256
 msgid ""
 "Traversal at constant speed, then, can be done with the following pseudo-"
 "code:"
@@ -358,6 +357,6 @@ msgstr ""
 "Travesía a velocidad constante, entonces, puede hacerse con el siguiente "
 "pseudo-código:"
 
-#: ../../docs/tutorials/math/beziers_and_curves.rst:207
+#: ../../docs/tutorials/math/beziers_and_curves.rst:277
 msgid "And the output will, then, move at constant speed:"
 msgstr "Y la salida, entonces, se moverá a velocidad constante:"

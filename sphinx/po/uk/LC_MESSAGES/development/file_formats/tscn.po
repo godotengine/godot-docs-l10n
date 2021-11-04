@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,20 +25,22 @@ msgstr "Формати відео"
 #: ../../docs/development/file_formats/tscn.rst:6
 msgid ""
 "The TSCN (text scene) file format represents a single scene tree inside "
-"Godot. TSCN files have the advantage of being mostly human-readable and easy "
-"for version control systems to manage. During import, TSCN files are "
-"compiled into binary ``.scn`` files stored inside the .import folder. This "
-"reduces the data size and speeds up loading."
+"Godot. Unlike binary SCN files, TSCN files have the advantage of being "
+"mostly human-readable and easy for version control systems to manage."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:12
+#: ../../docs/development/file_formats/tscn.rst:10
 msgid ""
 "The ESCN (exported scene) file format is identical to the TSCN file format, "
 "but is used to indicate to Godot that the file has been exported from "
-"another program and should not be edited by the user from within Godot."
+"another program and should not be edited by the user from within Godot. "
+"Unlike SCN and TSCN files, during import, ESCN files are compiled to binary "
+"SCN files stored inside the ``.import/`` folder. This reduces the data size "
+"and speeds up loading, as binary formats are faster to load compared to text-"
+"based formats."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:16
+#: ../../docs/development/file_formats/tscn.rst:18
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
@@ -46,38 +48,38 @@ msgid ""
 "``ResourceFormatLoaderText`` class."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:21
+#: ../../docs/development/file_formats/tscn.rst:23
 #, fuzzy
 msgid "File structure"
 msgstr "Деструктор"
 
-#: ../../docs/development/file_formats/tscn.rst:23
+#: ../../docs/development/file_formats/tscn.rst:25
 msgid "There are five main sections inside the TSCN file:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:25
+#: ../../docs/development/file_formats/tscn.rst:27
 msgid "File Descriptor"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:26
-#: ../../docs/development/file_formats/tscn.rst:277
+#: ../../docs/development/file_formats/tscn.rst:28
+#: ../../docs/development/file_formats/tscn.rst:279
 msgid "External resources"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:27
-#: ../../docs/development/file_formats/tscn.rst:299
+#: ../../docs/development/file_formats/tscn.rst:29
+#: ../../docs/development/file_formats/tscn.rst:301
 msgid "Internal resources"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:28
+#: ../../docs/development/file_formats/tscn.rst:30
 msgid "Nodes"
 msgstr "Вузли"
 
-#: ../../docs/development/file_formats/tscn.rst:29
+#: ../../docs/development/file_formats/tscn.rst:31
 msgid "Connections"
 msgstr "З'єднання"
 
-#: ../../docs/development/file_formats/tscn.rst:31
+#: ../../docs/development/file_formats/tscn.rst:33
 msgid ""
 "The file descriptor looks like ``[gd_scene load_steps=3 format=2]`` and "
 "should be the first entry in the file. The ``load_steps`` parameter is equal "
@@ -88,7 +90,7 @@ msgid ""
 "that value."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:38
+#: ../../docs/development/file_formats/tscn.rst:40
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
 "them. The only difference between them is the first element in the heading "
@@ -96,90 +98,90 @@ msgid ""
 "external resources should start with ``[ext_resource .....]``."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:43
+#: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
 "A TSCN file may contain single-line comments starting with a semicolon (``;"
 "``). However, comments will be discarded when saving the file using the "
 "Godot editor."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:47
+#: ../../docs/development/file_formats/tscn.rst:49
 msgid "Entries inside the file"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:49
+#: ../../docs/development/file_formats/tscn.rst:51
 msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
 "where resource_type is one of:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:53
+#: ../../docs/development/file_formats/tscn.rst:55
 #, fuzzy
 msgid "``ext_resource``"
 msgstr "ext_resource"
 
-#: ../../docs/development/file_formats/tscn.rst:54
+#: ../../docs/development/file_formats/tscn.rst:56
 #, fuzzy
 msgid "``sub_resource``"
 msgstr "sub_resource"
 
-#: ../../docs/development/file_formats/tscn.rst:55
+#: ../../docs/development/file_formats/tscn.rst:57
 #, fuzzy
 msgid "``node``"
 msgstr "node"
 
-#: ../../docs/development/file_formats/tscn.rst:56
+#: ../../docs/development/file_formats/tscn.rst:58
 #, fuzzy
 msgid "``connection``"
 msgstr "З'єднання"
 
-#: ../../docs/development/file_formats/tscn.rst:58
+#: ../../docs/development/file_formats/tscn.rst:60
 msgid ""
 "Below every heading comes zero or more ``key = value`` pairs. The values can "
 "be complex datatypes such as Arrays, Transforms, Colors, and so on. For "
 "example, a spatial node looks like:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:69
+#: ../../docs/development/file_formats/tscn.rst:71
 msgid "The scene tree"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:71
+#: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
 "its name, parent and (most of the time) a type. For example ``[node type="
 "\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:75
+#: ../../docs/development/file_formats/tscn.rst:77
 msgid "Other valid keywords include:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:77
+#: ../../docs/development/file_formats/tscn.rst:79
 #, fuzzy
 msgid "``instance``"
 msgstr "Екземпляр"
 
-#: ../../docs/development/file_formats/tscn.rst:78
+#: ../../docs/development/file_formats/tscn.rst:80
 #, fuzzy
 msgid "``instance_placeholder``"
 msgstr "instance_placeholder"
 
-#: ../../docs/development/file_formats/tscn.rst:79
+#: ../../docs/development/file_formats/tscn.rst:81
 #, fuzzy
 msgid "``owner``"
 msgstr "Center"
 
-#: ../../docs/development/file_formats/tscn.rst:80
+#: ../../docs/development/file_formats/tscn.rst:82
 msgid "``index`` (if two nodes have the same name)"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:81
+#: ../../docs/development/file_formats/tscn.rst:83
 #, fuzzy
 msgid "``groups``"
 msgstr "Групи"
 
-#: ../../docs/development/file_formats/tscn.rst:83
+#: ../../docs/development/file_formats/tscn.rst:85
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
 "``parent=Path/To/Node`` entry in its heading. All scene files should have "
@@ -190,18 +192,18 @@ msgid ""
 "content):"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:99
+#: ../../docs/development/file_formats/tscn.rst:101
 msgid ""
 "Similar to the internal resource, the document for each node is currently "
 "incomplete. Fortunately, it is easy to find out because you can simply save "
 "a file with that node in it. Some example nodes are:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:138
+#: ../../docs/development/file_formats/tscn.rst:140
 msgid "NodePath"
 msgstr "NodePath"
 
-#: ../../docs/development/file_formats/tscn.rst:140
+#: ../../docs/development/file_formats/tscn.rst:142
 msgid ""
 "A tree structure is not enough to represent the whole scene. Godot uses a "
 "``NodePath(Path/To/Node)`` structure to refer to another node or attribute "
@@ -210,80 +212,80 @@ msgid ""
 "``NodePath()`` to point to node properties to animate."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:165
+#: ../../docs/development/file_formats/tscn.rst:167
 msgid "Skeleton"
 msgstr "Каркас"
 
-#: ../../docs/development/file_formats/tscn.rst:167
+#: ../../docs/development/file_formats/tscn.rst:169
 msgid ""
 "The Skeleton node inherits the Spatial node, but also may have a list of "
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:171
+#: ../../docs/development/file_formats/tscn.rst:173
 msgid "``name``"
 msgstr "Назва"
 
-#: ../../docs/development/file_formats/tscn.rst:172
+#: ../../docs/development/file_formats/tscn.rst:174
 #, fuzzy
 msgid "``parent``"
 msgstr "parent"
 
-#: ../../docs/development/file_formats/tscn.rst:173
+#: ../../docs/development/file_formats/tscn.rst:175
 #, fuzzy
 msgid "``rest``"
 msgstr "rest"
 
-#: ../../docs/development/file_formats/tscn.rst:174
+#: ../../docs/development/file_formats/tscn.rst:176
 #, fuzzy
 msgid "``pose``"
 msgstr "pose"
 
-#: ../../docs/development/file_formats/tscn.rst:175
-#: ../../docs/development/file_formats/tscn.rst:395
+#: ../../docs/development/file_formats/tscn.rst:177
+#: ../../docs/development/file_formats/tscn.rst:397
 #, fuzzy
 msgid "``enabled``"
 msgstr "enabled"
 
-#: ../../docs/development/file_formats/tscn.rst:176
+#: ../../docs/development/file_formats/tscn.rst:178
 #, fuzzy
 msgid "``bound_children``"
 msgstr "bound_children"
 
-#: ../../docs/development/file_formats/tscn.rst:178
+#: ../../docs/development/file_formats/tscn.rst:180
 msgid "``name`` must be the first attribute of each bone."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:179
+#: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
 "the bone list is built to a bone tree."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:181
+#: ../../docs/development/file_formats/tscn.rst:183
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:182
+#: ../../docs/development/file_formats/tscn.rst:184
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:183
+#: ../../docs/development/file_formats/tscn.rst:185
 msgid ""
 "``bound_children`` is a list of ``NodePath()`` which point to "
 "BoneAttachments belonging to this bone."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:186
+#: ../../docs/development/file_formats/tscn.rst:188
 msgid "Here's an example of a skeleton node with two bones:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:207
+#: ../../docs/development/file_formats/tscn.rst:209
 msgid "BoneAttachment"
 msgstr "BoneAttachment"
 
-#: ../../docs/development/file_formats/tscn.rst:209
+#: ../../docs/development/file_formats/tscn.rst:211
 msgid ""
 "BoneAttachment node is an intermediate node to describe some node being "
 "parented to a single bone in a Skeleton node. The BoneAttachment has a "
@@ -291,15 +293,15 @@ msgid ""
 "parent has the BoneAttachment node in its ``bound_children`` list."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:214
+#: ../../docs/development/file_formats/tscn.rst:216
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:239
+#: ../../docs/development/file_formats/tscn.rst:241
 msgid "AnimationPlayer"
 msgstr "AnimationPlayer"
 
-#: ../../docs/development/file_formats/tscn.rst:241
+#: ../../docs/development/file_formats/tscn.rst:243
 msgid ""
 "AnimationPlayer works as an animation library. It stores animations listed "
 "in the format ``anim/Name=SubResource(ResourceId)``; each line refers to an "
@@ -308,18 +310,18 @@ msgid ""
 "Node)``."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:261
+#: ../../docs/development/file_formats/tscn.rst:263
 msgid "Resources"
 msgstr "Ресурси"
 
-#: ../../docs/development/file_formats/tscn.rst:263
+#: ../../docs/development/file_formats/tscn.rst:265
 msgid ""
 "Resources are components that make up the nodes. For example, a MeshInstance "
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
 "may be either internal or external to the TSCN file."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:267
+#: ../../docs/development/file_formats/tscn.rst:269
 msgid ""
 "References to the resources are handled by ``id`` numbers in the resource's "
 "heading. External resources and internal resources are referred to with "
@@ -328,37 +330,37 @@ msgid ""
 "have the same ID for both an internal and external resource."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:273
+#: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
 "\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:279
+#: ../../docs/development/file_formats/tscn.rst:281
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of a path, a type and an ID."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:282
+#: ../../docs/development/file_formats/tscn.rst:284
 msgid ""
 "Godot always generates absolute paths relative to the resource directory and "
 "thus prefixed with ``res://``, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:286
+#: ../../docs/development/file_formats/tscn.rst:288
 msgid "Some example external resources are:"
 msgstr "Ось декілька прикладів зовнішніх ресурсів:"
 
-#: ../../docs/development/file_formats/tscn.rst:294
+#: ../../docs/development/file_formats/tscn.rst:296
 msgid ""
 "Like TSCN files, a TRES file may contain single-line comments starting with "
 "a semicolon (``;``). However, comments will be discarded when saving the "
 "resource using the Godot editor."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:301
+#: ../../docs/development/file_formats/tscn.rst:303
 msgid ""
 "A TSCN file can contain meshes, materials and other data. These are "
 "contained in the *internal resources* section of the file. The heading for "
@@ -367,7 +369,7 @@ msgid ""
 "pairs under each heading. For example, a capsule collision shape looks like:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:315
+#: ../../docs/development/file_formats/tscn.rst:317
 msgid ""
 "Some internal resources contain links to other internal resources (such as a "
 "mesh having a material). In this case, the referring resource must appear "
@@ -375,207 +377,207 @@ msgid ""
 "internal resources section."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:320
+#: ../../docs/development/file_formats/tscn.rst:322
 msgid ""
 "Unfortunately, documentation on the formats for these subresources isn't "
 "complete. Some examples can be found by inspecting saved resource files, but "
 "others can only be found by looking through Godot's source."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:325
+#: ../../docs/development/file_formats/tscn.rst:327
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#: ../../docs/development/file_formats/tscn.rst:327
+#: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format ``surface"
 "\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:330
+#: ../../docs/development/file_formats/tscn.rst:332
 msgid "TSCN files support two surface formats:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:332
+#: ../../docs/development/file_formats/tscn.rst:334
 msgid "For the old format, each surface has three essential keys:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:334
+#: ../../docs/development/file_formats/tscn.rst:336
 #, fuzzy
 msgid "``primitive``"
 msgstr "primitive"
 
-#: ../../docs/development/file_formats/tscn.rst:335
+#: ../../docs/development/file_formats/tscn.rst:337
 #, fuzzy
 msgid "``arrays``"
 msgstr "PoolFloatArray"
 
-#: ../../docs/development/file_formats/tscn.rst:336
+#: ../../docs/development/file_formats/tscn.rst:338
 #, fuzzy
 msgid "``morph_arrays``"
 msgstr "morph_arrays"
 
-#: ../../docs/development/file_formats/tscn.rst:338
+#: ../../docs/development/file_formats/tscn.rst:340
 msgid ""
 "``primitive`` is an enumerate variable, ``primitive=4`` which is "
 "``PRIMITIVE_TRIANGLES`` is frequently used."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:341
+#: ../../docs/development/file_formats/tscn.rst:343
 msgid "``arrays`` is a two-dimensional array, it contains:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:343
+#: ../../docs/development/file_formats/tscn.rst:345
 #, fuzzy
 msgid "Vertex positions array"
 msgstr "``x.attribute``"
 
-#: ../../docs/development/file_formats/tscn.rst:344
+#: ../../docs/development/file_formats/tscn.rst:346
 msgid "Tangents array"
 msgstr "Масив дотичних"
 
-#: ../../docs/development/file_formats/tscn.rst:345
+#: ../../docs/development/file_formats/tscn.rst:347
 msgid "Vertex colors array"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:346
+#: ../../docs/development/file_formats/tscn.rst:348
 msgid "UV array 1"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:347
+#: ../../docs/development/file_formats/tscn.rst:349
 msgid "UV array 2"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:348
+#: ../../docs/development/file_formats/tscn.rst:350
 #, fuzzy
 msgid "Bone indexes array"
 msgstr "Масив дотичних"
 
-#: ../../docs/development/file_formats/tscn.rst:349
+#: ../../docs/development/file_formats/tscn.rst:351
 #, fuzzy
 msgid "Bone weights array"
 msgstr "Масив дотичних"
 
-#: ../../docs/development/file_formats/tscn.rst:350
+#: ../../docs/development/file_formats/tscn.rst:352
 msgid "Vertex indexes array"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:352
+#: ../../docs/development/file_formats/tscn.rst:354
 msgid ""
 "``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` "
 "without the vertex indexes array."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:355
+#: ../../docs/development/file_formats/tscn.rst:357
 msgid "An example of ArrayMesh:"
 msgstr "Приклад ArrayMesh:"
 
-#: ../../docs/development/file_formats/tscn.rst:379
+#: ../../docs/development/file_formats/tscn.rst:381
 msgid "Animation"
 msgstr "Анімація"
 
-#: ../../docs/development/file_formats/tscn.rst:381
+#: ../../docs/development/file_formats/tscn.rst:383
 msgid ""
 "An animation resource consists of tracks. Besides, it has ``length``, "
 "``loop`` and ``step`` applied to all the tracks."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:384
+#: ../../docs/development/file_formats/tscn.rst:386
 msgid "``length`` and ``step`` are both durations in seconds."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:386
+#: ../../docs/development/file_formats/tscn.rst:388
 msgid ""
 "Each track is described by a list of key-value pairs in the format ``tracks/"
 "Id/Attribute``. Each track includes:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:389
+#: ../../docs/development/file_formats/tscn.rst:391
 msgid "``type``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:390
+#: ../../docs/development/file_formats/tscn.rst:392
 #, fuzzy
 msgid "``path``"
 msgstr "``$NodePath``"
 
-#: ../../docs/development/file_formats/tscn.rst:391
+#: ../../docs/development/file_formats/tscn.rst:393
 #, fuzzy
 msgid "``interp``"
 msgstr "Center"
 
-#: ../../docs/development/file_formats/tscn.rst:392
+#: ../../docs/development/file_formats/tscn.rst:394
 #, fuzzy
 msgid "``keys``"
 msgstr "keys"
 
-#: ../../docs/development/file_formats/tscn.rst:393
+#: ../../docs/development/file_formats/tscn.rst:395
 #, fuzzy
 msgid "``loop_wrap``"
 msgstr "loop_wrap"
 
-#: ../../docs/development/file_formats/tscn.rst:394
+#: ../../docs/development/file_formats/tscn.rst:396
 #, fuzzy
 msgid "``imported``"
 msgstr "imported"
 
-#: ../../docs/development/file_formats/tscn.rst:397
+#: ../../docs/development/file_formats/tscn.rst:399
 msgid ""
 "The ``type`` must be the first attribute of each track. The value of "
 "``type`` can be:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:400
+#: ../../docs/development/file_formats/tscn.rst:402
 #, fuzzy
 msgid "``transform``"
 msgstr "'transform'"
 
-#: ../../docs/development/file_formats/tscn.rst:401
+#: ../../docs/development/file_formats/tscn.rst:403
 #, fuzzy
 msgid "``value``"
 msgstr "'value'"
 
-#: ../../docs/development/file_formats/tscn.rst:402
+#: ../../docs/development/file_formats/tscn.rst:404
 #, fuzzy
 msgid "``method``"
 msgstr "'method'"
 
-#: ../../docs/development/file_formats/tscn.rst:404
+#: ../../docs/development/file_formats/tscn.rst:406
 msgid ""
 "The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the "
 "path to the animated node or attribute, relative to the root node defined in "
 "the AnimationPlayer."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:408
+#: ../../docs/development/file_formats/tscn.rst:410
 msgid ""
 "The ``interp`` is the method to interpolate frames from the keyframes. It is "
 "an enum variable with one of the following values:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:411
+#: ../../docs/development/file_formats/tscn.rst:413
 #, fuzzy
 msgid "``0`` (constant)"
 msgstr "0 (сталий)"
 
-#: ../../docs/development/file_formats/tscn.rst:412
+#: ../../docs/development/file_formats/tscn.rst:414
 #, fuzzy
 msgid "``1`` (linear)"
 msgstr "1 (лінійний)"
 
-#: ../../docs/development/file_formats/tscn.rst:413
+#: ../../docs/development/file_formats/tscn.rst:415
 #, fuzzy
 msgid "``2`` (cubic)"
 msgstr "2 (кубічний)"
 
-#: ../../docs/development/file_formats/tscn.rst:415
+#: ../../docs/development/file_formats/tscn.rst:417
 msgid ""
 "The ``keys`` correspond to the keyframes. It appears as a "
 "``PoolRealArray()``, but may have a different structure for tracks with "
 "different types."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:418
+#: ../../docs/development/file_formats/tscn.rst:420
 msgid ""
 "A Transform track uses every 12 real numbers in the ``keys`` to describe a "
 "keyframe. The first number is the timestamp. The second number is the "

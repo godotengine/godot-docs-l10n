@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,15 +52,15 @@ msgstr "\"随着问题域的大小增加, 算法的运行时间长度…\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr "常量时间,``O(1)``:\"…不会增加.\""
+msgstr "常量时间, ``O(1)``: \"…不会增加.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr "对数时间,``O(log n)``:\"…以缓慢的速度增长.\""
+msgstr "对数时间, ``O(log n)``: \"…以缓慢的速度增长.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
-msgstr "线性时间,``O(n)``:\"…以同样的速度增长.\""
+msgstr "线性时间, ``O(n)``: \"…以同样的速度增长.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
 msgid "Etc."
@@ -595,7 +595,7 @@ msgid ""
 "`TileMap <class_TileMap>` for many auto-animating backgrounds that all "
 "render in a single batched draw call."
 msgstr ""
-"另外请注意,``AnimatedTexture`` 是一个 :ref:`Resource <class_Resource>`, 与此"
+"另外请注意, ``AnimatedTexture`` 是一个 :ref:`Resource <class_Resource>`, 与此"
 "处讨论的其他 :ref:`Node <class_Node>` 对象不同. 可以创建一个 :ref:`Sprite "
 "<class_Sprite>` 节点, 该节点使用 ``AnimatedTexture`` 作为其纹理. 或者(其他方"
 "法做不到的)可以将 ``AnimatedTexture`` 作为图块, 添加到一个 :ref:`TileSet "
@@ -631,7 +631,7 @@ msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
 msgstr ""
-"如果你想设计更复杂的二维动画系统,``AnimationPlayer`` 也是你的必备工具, 例如…"
+"如果你想设计更复杂的二维动画系统, ``AnimationPlayer`` 也是你的必备工具, 例如…"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:4
-#, fuzzy
 msgid "Using Area2D"
-msgstr "Использование карт тайлов"
+msgstr "Использование Area2D"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:7
 msgid "Introduction"
@@ -35,12 +34,21 @@ msgid ""
 "tutorial, we'll look at the :ref:`Area2D <class_Area2D>` node and show some "
 "examples of how it can be used."
 msgstr ""
+"Godot предлагает ряд объектов столкновений в 2D и 3D как для обнаружения "
+"столкновений, так и для реагирования на них. Определение, какие из них "
+"использовать в Вашем проекте, может оказаться сложным. Избежать проблем и "
+"упростить разработку можно, если понимать, как работает каждый из них и "
+"каковы его достоинства и недостатки. В этом учебном пособии мы рассмотрим "
+"узел :ref:`Area2D <class_Area2D>` и покажем некоторые примеры его "
+"использования."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:15
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
 msgstr ""
+"Этот документ предполагает, что вы знакомы с различными физическими телами "
+"Godot. Сначала прочитайте :ref:`doc_physics_introduction`."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:19
 msgid "What is an area?"
@@ -53,6 +61,11 @@ msgid ""
 "entering, and exiting. Areas also allow for overriding local physics "
 "properties. We'll explore each of these functions below."
 msgstr ""
+"Area2D определяет область в 2D пространстве. В этой области можно "
+"обнаруживать перекрытия, вхождения и выходы с другими узлами :ref:"
+"`CollisionObject2D <class_CollisionObject2D>`. Области также позволяют "
+"переопределять свойства локальной физики. Ниже мы рассмотрим каждую из этих "
+"функций."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:27
 msgid "Area properties"
@@ -61,28 +74,35 @@ msgstr "Свойства области"
 #: ../../docs/tutorials/physics/using_area_2d.rst:29
 msgid "Areas have many properties you can use to customize their behavior."
 msgstr ""
+"Области имеют множество свойств, которые можно использовать для настройки их "
+"поведения."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:33
 msgid ""
 "The first eight properties are used to configure the area's physics override "
 "behavior. We'll look at how to use those in the section below."
 msgstr ""
+"Первые восемь свойств используются для переопределения поведения физики "
+"области. Мы рассмотрим, как использовать их в разделе ниже."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:36
 msgid "*Monitoring* and *Monitorable* are used to enable and disable the area."
 msgstr ""
+"*Monitoring* и *Monitorable* используются для включения и отключения области."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:38
 msgid ""
 "The \"Collision\" section is where you configure the area's collision "
 "layer(s) and mask(s)."
-msgstr ""
+msgstr "В разделе «Collision» настраиваются слои столкновений и масок области."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:41
 msgid ""
 "The \"Audio Bus\" section allows you to override audio in the area, for "
 "example to apply an audio effect when the player moves through."
 msgstr ""
+"Раздел «Audio Bus» позволяет переопределить звук в области, например, "
+"применить звуковой эффект при прохождении через неё игрока."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:44
 msgid ""
@@ -90,11 +110,13 @@ msgid ""
 "so it also provides properties inherited from that class, such as "
 "``input_pickable``."
 msgstr ""
+"Обратите внимание, что Area2D расширяет :ref:`CollisionObject2D "
+"<class_CollisionObject2D>`, поэтому также предоставляет свойства, "
+"унаследованные от этого класса, такие как ``input_pickable``."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:48
-#, fuzzy
 msgid "Overlap detection"
-msgstr "Переопределяемые функции"
+msgstr "Обнаружение перекрытий"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:50
 msgid ""
@@ -102,6 +124,10 @@ msgid ""
 "detection. When you need to know that two objects have touched, but don't "
 "need physical collision, you can use an area to notify you of the contact."
 msgstr ""
+"Возможно, наиболее распространенным использованием узлов Area2D является "
+"обнаружение контактов и перекрытий. Если нужно знать, что два объекта "
+"коснулись, но они не нуждаются в симуляции физического столкновения, можно "
+"использовать область для уведомления о контакте."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:54
 msgid ""
@@ -109,10 +135,13 @@ msgid ""
 "coin is not a solid object - the player can't stand on it or push it - we "
 "just want it to disappear when the player touches it."
 msgstr ""
+"Например, мы делаем монету для игрока. Монета не является твердым объектом. "
+"Игрок не может стоять на ней или толкать её. Мы просто хотим, чтобы она "
+"исчезла, когда игрок прикасается к ней."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:58
 msgid "Here's the node setup for the coin:"
-msgstr ""
+msgstr "Вот настройка узла для монеты:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:62
 msgid ""
@@ -122,48 +151,62 @@ msgid ""
 "``KinematicBody2D`` (and therefore a ``CollisionObject2D`` type), so we'll "
 "connect the ``body_entered`` signal."
 msgstr ""
+"Чтобы обнаружить перекрытие, мы подключим соответствующий сигнал к Area2d. "
+"Используемый сигнал зависит от типа узла игрока. Если игрок является другой "
+"областью, используйте ``area_entered``. Однако предположим, что наш игрок "
+"является ``KinematicBody2D`` (и, следовательно, типом "
+"``CollisionObject2D``), поэтому мы подключим сигнал ``body_entered``."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:68
 msgid ""
 "If you're not familiar with using signals, see :ref:`doc_signals` for an "
 "introduction."
 msgstr ""
+"Если вы не знакомы с использованием сигналов, см. :ref:`doc_signals` для "
+"введения."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:90
 msgid "Now our player can collect the coins!"
-msgstr ""
+msgstr "Теперь наш игрок может собирать монеты!"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:92
-#, fuzzy
 msgid "Some other usage examples:"
-msgstr "Другой пример:"
+msgstr "Некоторые другие примеры использования:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:94
 msgid ""
 "Areas are great for bullets and other projectiles that hit and deal damage, "
 "but don't need any other physics such as bouncing."
 msgstr ""
+"Области отлично подходят для пуль и других снарядов, которые поражают и "
+"наносят ущерб, но не нуждаются в какой-либо другой физике, такой как отскок."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:95
 msgid ""
 "Use a large circular area around an enemy to define its \"detect\" radius. "
 "When the player is outside the area, the enemy can't \"see\" it."
 msgstr ""
+"Используйте большую круговую область вокруг противника для задания радиуса "
+"обнаружения. Когда игрок находится за пределами области противник не может "
+"его «увидеть»."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:96
 msgid ""
 "\"Security cameras\" - In a large level with multiple cameras, attach areas "
 "to each camera and activate them when the player enters."
 msgstr ""
+"«Камеры безопасности» — на большом уровне с несколькими камерами прикрепите "
+"области к каждой камере и активируйте их при входе игрока."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:98
 msgid ""
 "See the :ref:`doc_your_first_game` for an example of using Area2D in a game."
 msgstr ""
+"Пример использования Area2D в игре см. в разделе :ref:`doc_your_first_game`."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:101
 msgid "Area influence"
-msgstr ""
+msgstr "Области влияния"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:103
 msgid ""
@@ -172,17 +215,26 @@ msgid ""
 "property. When areas overlap, they are processed in *Priority* order (higher "
 "priority areas are processed first). There are four options for override:"
 msgstr ""
+"Второе основное использование узлов области состоит в изменении физики. По "
+"умолчанию область этого делать не будет, но это можно включить с помощью "
+"свойства *Space Override*. Если области перекрываются, они обрабатываются в "
+"порядке *Priority* (сначала обрабатываются области с более высоким "
+"приоритетом). Существует четыре варианта переопределения:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:108
 msgid ""
 "*Combine* - The area adds its values to what has been calculated so far."
 msgstr ""
+"*Combine* — область добавляет свои значения к вычисленным на данный момент "
+"значениям."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:109
 msgid ""
 "*Replace* - The area replaces physics properties, and lower priority areas "
 "are ignored."
 msgstr ""
+"*Replace* — область заменяет физические свойства, а области с более низким "
+"приоритетом игнорируются."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:110
 msgid ""
@@ -190,48 +242,61 @@ msgid ""
 "been calculated so far (in priority order), ignoring any lower priority "
 "areas."
 msgstr ""
+"*Combine-Replace* — область добавляет свои значения силы тяжести/упругости к "
+"тем значениям, которые были рассчитаны до этого момента (в порядке "
+"приоритета), игнорируя любые области с более низким приоритетом."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:111
 msgid ""
 "*Replace-Combine* - The area replaces any gravity/damping calculated so far, "
 "but keeps calculating the rest of the areas."
 msgstr ""
+"*Replace-Combine* — область заменяет любую рассчитанную до этого момента "
+"гравитацию/упругость, но продолжает вычислять остальные области."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:113
 msgid ""
 "Using these properties, you can create very complex behavior with multiple "
 "overlapping areas."
 msgstr ""
+"С помощью этих свойств можно создать очень сложное поведение с несколькими "
+"перекрывающимися областями."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:116
 msgid "The physics properties that can be overridden are:"
-msgstr ""
+msgstr "Физические свойства, которые можно переопределить:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:118
 msgid "*Gravity* - Gravity's strength inside the area."
-msgstr ""
+msgstr "*Gravity* — Сила гравитации внутри области."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:119
 msgid ""
 "*Gravity Vec* - Gravity's direction. This vector does not need to be "
 "normalized."
 msgstr ""
+"*Gravity Vec* — Направление силы тяжести. Этот вектор не нуждается в "
+"нормализации."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:120
 msgid ""
 "*Linear Damp* - How quickly objects stop moving - linear velocity lost per "
 "second."
 msgstr ""
+"*Linear Damp* — Как быстро объекты перестают двигаться — уменьшение линейной "
+"скорости в секунду."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:121
 msgid ""
 "*Angular Damp* - How quickly objects stop spinning - angular velocity lost "
 "per second."
 msgstr ""
+"*Angular Damp* — Как быстро объекты перестают вращаться — уменьшение угловой "
+"скорости в секунду."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:124
 msgid "Point gravity"
-msgstr ""
+msgstr "Точечная сила тяжести"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:126
 msgid ""
@@ -240,6 +305,10 @@ msgid ""
 "property. Values are relative to the Area2D, so for example using ``(0, 0)`` "
 "will attract objects to the center of the area."
 msgstr ""
+"Свойство *Gravity Point* позволяет создать «аттрактор». Гравитация в области "
+"будет рассчитываться в направлении точки, заданной свойством *Gravity Vec*. "
+"Значения относятся к Area2D, поэтому, например, использование ``(0, 0)`` "
+"будет притягивать объекты в центр области."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:132
 msgid "Examples"
@@ -250,6 +319,8 @@ msgid ""
 "The example project attached below has three areas demonstrating physics "
 "override."
 msgstr ""
+"Приведенный ниже пример проекта имеет три области, демонстрирующие "
+"переопределение физики."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:139
 msgid ""

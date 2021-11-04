@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "escenas, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -51,7 +50,7 @@ msgstr ""
 "audio, fuentes, etc.) directamente en la carpeta del proyecto (cópielos "
 "manualmente con el explorador de archivos de su sistema operativo). Godot "
 "importará automáticamente estos archivos internamente y mantendrá los "
-"recursos importados ocultos en una carpeta res: //.import."
+"recursos importados ocultos en una carpeta ``res: //. Import``."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -161,23 +160,21 @@ msgid "Files generated"
 msgstr "Archivos generados"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
-#, fuzzy
 msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"Al importar se agregará un archivo adicional <asset>.import, que contiene la "
-"configuración de importación ¡Asegúrate de enviarlos a tu sistema de control "
-"de versiones!"
+"Al importar se agregará un archivo adicional ``<asset>.import``, que "
+"contiene la configuración de importación ¡Asegúrate de enviarlos a tu "
+"sistema de control de versiones!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
-#, fuzzy
 msgid ""
 "Additionally, extra assets will be preset in the hidden ``res://.import`` "
 "folder:"
 msgstr ""
-"Además, los assets adicionales estarán preestablecidos en la carpeta oculta "
-"res://.import:"
+"Además, Los activos adicionales estarán preestablecidos en la carpeta oculta "
+"``res: //. import``:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:4
 msgid "Physics introduction"
-msgstr ""
+msgstr "Введение в физику"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "When a collision is detected, you typically want something to happen. This "
 "is known as **collision response**."
 msgstr ""
+"При разработке игры часто нужно знать, когда два объекта в игре пересекаются "
+"или сталкиваются. Это называется **обнаружением столкновений**. При "
+"обнаружении столкновения, как правило, требуется, чтобы что-либо произошло. "
+"Это называется **реакцией на столкновение**."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:11
 msgid ""
@@ -36,6 +40,11 @@ msgid ""
 "project can be confusing. You can avoid problems and simplify development if "
 "you understand how each works and what their pros and cons are."
 msgstr ""
+"Godot предлагает ряд объектов столкновений в 2D и 3D как для обнаружения "
+"столкновений, так и для реагирования на них. Определение, какие из них "
+"использовать в Вашем проекте, может оказаться сложным. Избежать проблем и "
+"упростить разработку можно, если понимать, как работает каждый из них и "
+"каковы его достоинства и недостатки."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
@@ -43,15 +52,15 @@ msgstr "В этом руководстве вы узнаете:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
-msgstr ""
+msgstr "Четыре типа объектов столкновений в Godot"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:19
 msgid "How each collision object works"
-msgstr ""
+msgstr "Как работает каждый объект столкновений"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:20
 msgid "When and why to choose one type over another"
-msgstr ""
+msgstr "Когда и почему выбирать один тип среди других"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:22
 msgid ""
@@ -59,17 +68,21 @@ msgid ""
 "collision shape has a direct equivalent in 3D and in most cases they work in "
 "much the same way."
 msgstr ""
+"В примерах этого документа будут использоваться 2D объекты. Каждый 2D "
+"физический объект и форма столкновений имеют прямой эквивалент в 3D и в "
+"большинстве случаев работают одинаковыми способами."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
-#, fuzzy
 msgid "Collision objects"
-msgstr "Видимые области соприкосновения"
+msgstr "Объекты столкновений"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
 msgstr ""
+"Godot предлагает четыре вида физических тел, расширяющих :ref:"
+"`CollisionObject2D <class_CollisionObject2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
@@ -82,11 +95,17 @@ msgid ""
 "``Area2D`` can also be used to override physics properties, such as gravity "
 "or damping, in a defined area."
 msgstr ""
+"Узлы ``Area2D`` обеспечивают **обнаружение** и **влияние**. Они могут "
+"определять, когда объекты перекрываются, и испускать сигналы при входе или "
+"выходе тел. Кроме того, ``Area2D`` можно использовать для переопределения "
+"физических свойств, таких, как сила тяжести или упругость, в определенной "
+"области."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
+"Остальные три тела расширяют :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
@@ -99,6 +118,10 @@ msgid ""
 "collision. They are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"Статическое тело — это тело, которое не перемещается физическим движком. Он "
+"участвует в обнаружении столкновений, но не движется в ответ на "
+"столкновение. Чаще всего используется для объектов, являющихся частью среды, "
+"или не требующих какого-либо динамического поведения."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
@@ -111,6 +134,10 @@ msgid ""
 "impulses, etc.) and the physics engine calculates the resulting movement. :"
 "ref:`Read more about using rigid bodies. <doc_rigid_body>`"
 msgstr ""
+"Это узел реализует симуляцию 2D физики. Вы не управляете RigidBody2D "
+"напрямую, а прикладываете к нему силы (гравитация, импульсы и т. д.), и "
+"физический движок вычисляет результирующее движение. :ref:`Подробнее об "
+"использовании твёрдых тел. <doc_rigid_body>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
@@ -121,11 +148,12 @@ msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
 msgstr ""
+"Тело, которое обеспечивает обнаружение столкновений, но не физику. Все "
+"движения и реакции на столкновения должны быть реализованы в коде."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Physics material"
-msgstr "Материал частиц"
+msgstr "Физический материал"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:57
 msgid ""
@@ -144,12 +172,18 @@ msgid ""
 "as children. These shapes are used to define the object's collision bounds "
 "and to detect contact with other objects."
 msgstr ""
+"Физическое тело может содержать любое количество :ref:`Shape2D "
+"<class_Shape2D>` объектов в качестве потомков. Эти формы используются для "
+"определения границ столкновения объекта и обнаружения контакта с другими "
+"объектами."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:68
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
 msgstr ""
+"Чтобы обнаруживать столкновения, объекту должен быть назначен хотя бы один "
+"``Shape2D``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:71
 msgid ""
@@ -158,6 +192,10 @@ msgid ""
 "<class_CollisionPolygon2D>` as a child of the object. These nodes allow you "
 "to draw the shape directly in the editor workspace."
 msgstr ""
+"Наиболее распространенным способом назначения формы является добавление :ref:"
+"`CollisionShape2D <class_CollisionShape2D>` или :ref:`CollisionPolygon2D "
+"<class_CollisionPolygon2D>` как дочернего элемента объекта. Такие узлы "
+"позволят Вам рисовать форму непосредственно в рабочем пространстве редактора."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:75
 msgid ""
@@ -167,10 +205,15 @@ msgid ""
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
+"Будьте осторожны и никогда не масштабируйте формы столкновений в редакторе. "
+"Свойство «Масштаб» в инспекторе должно оставаться ``(1, 1)``. При изменении "
+"размера формы столкновения всегда следует использовать параметры размера, а "
+"не параметры масштаба ``Node2D``. Масштабирование формы может привести к "
+"неожиданному поведению при столкновении."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
 msgid "Physics process callback"
-msgstr ""
+msgstr "Обратный вызов для физических процессов"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:86
 msgid ""
@@ -191,6 +234,14 @@ msgid ""
 "the default 60 Hz physics update rate, it will typically be equal to "
 "``0.01666...`` (but not always, see below)."
 msgstr ""
+"Чтобы избежать этой проблемы, любой код, которому требуется доступ к "
+"свойствам тела, должен выполняться в обратном вызове :ref:`Node."
+"_physics_process() <class_Node_method__physics_process>`, который вызывается "
+"перед каждым шагом расчёта физики с постоянной частотой кадров (по умолчанию "
+"60 раз в секунду). Этому методу будет передан параметр ``delta``, являющимся "
+"числом с плавающей запятой, равным времени, прошедшему в секундах с момента "
+"последнего шага. При использовании частоты обновления физики по умолчанию 60 "
+"Гц она обычно будет равна ``0,01666...`` (но не всегда, см. ниже)."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid ""
@@ -198,11 +249,13 @@ msgid ""
 "physics calculations, so that the game behaves correctly if you change the "
 "physics update rate or if the player's device can't keep up."
 msgstr ""
+"Рекомендуется всегда использовать параметр ``delta`` в Ваших физических "
+"вычислениях, чтобы игра вела себя правильно, если Вы измените скорость "
+"обновления физики, или если устройство игрока будет тормозить."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:108
-#, fuzzy
 msgid "Collision layers and masks"
-msgstr "Видимые области соприкосновения"
+msgstr "Слои и маски столкновений"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:110
 msgid ""
@@ -212,10 +265,15 @@ msgid ""
 "and **masks**. Each ``CollisionObject2D`` has 20 different physics layers it "
 "can interact with."
 msgstr ""
+"Одной из самых мощных, но часто неправильно понимаемых возможностей в "
+"системе столкновений является система слоёв столкновений. Она позволяет "
+"создавать сложные взаимодействия между различными объектами. Ключевыми "
+"понятиями являются **слои** и **маски**. Каждый ``CollisionObject2D`` имеет "
+"20 различных физических слоев, с которыми он может взаимодействовать."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid "Let's look at each of the properties in turn:"
-msgstr ""
+msgstr "Рассмотрим каждое из свойств по очереди:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid "collision_layer"
@@ -226,6 +284,8 @@ msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
+"Здесь описываются слои, на которых **отображается** объект. По умолчанию все "
+"тела находятся на слое ``1``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:125
 msgid "collision_mask"
@@ -237,12 +297,17 @@ msgid ""
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
+"Здесь описываются слои, которые будут использоваться для **сканирования** "
+"телом столкновений. Если объект не находится в одном из слоев маски, тело "
+"игнорирует его. По умолчанию все тела сканируют слой ``1``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:127
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
+"Эти свойства можно настроить с помощью кода или путем их редактирования в "
+"инспекторе."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
 msgid ""
@@ -250,11 +315,13 @@ msgid ""
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
+"Отслеживать, для чего используется каждый слой, может быть затруднительно, "
+"поэтому может оказаться полезным назначить имена используемым слоям. Имена "
+"можно присвоить в меню Настройки проекта - > Имена слоев."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:136
-#, fuzzy
 msgid "GUI example"
-msgstr "Входящие события"
+msgstr "Пример GUI"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:138
 msgid ""
@@ -263,6 +330,10 @@ msgid ""
 "collisions with both Enemy and Coin, but Enemy and Coin should ignore each "
 "other."
 msgstr ""
+"В игре есть четыре типа узлов: «Стены», «Игрок», «Враг» и «Монета». И Игрок, "
+"и Враг должны сталкиваться со стенами. Узел Игрок должен обнаруживать "
+"столкновения как с Враг, так и с Монета, но Враг и Монета должны "
+"игнорировать друг друга."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:143
 msgid ""
@@ -272,11 +343,15 @@ msgid ""
 "should interact with. For example, the Player's settings would look like "
 "this:"
 msgstr ""
+"Начните с именования слоев 1-4: «walls», «player», «enemies» и «coins» и "
+"поместите каждый тип узла в соответствующий слой с помощью свойства «Слой». "
+"Затем задайте свойство «Маска» каждого узла, выбрав слои, с которыми он "
+"должен взаимодействовать. Например, настройки игрока будут выглядеть "
+"следующим образом:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
-#, fuzzy
 msgid "Code example"
-msgstr "Пример таймера"
+msgstr "Пример кода"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:156
 msgid ""
@@ -285,12 +360,18 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"В вызовах функций слои задаются как битовая маска. Если функция включает все "
+"слои по умолчанию, маска слоя будет задана как ``0x7fffffff``. Код может "
+"использовать двоичное, шестнадцатеричное или десятичное представление для "
+"масок слоев в зависимости от предпочтений пользователя."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:161
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
+"Код, эквивалентный приведенному выше примеру, в котором были включены уровни "
+"1, 3 и 4, будет следующим:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:181
 msgid "Area2D"
@@ -303,28 +384,37 @@ msgid ""
 "be used to override physics properties, such as gravity or damping, in a "
 "defined area."
 msgstr ""
+"Узлы областей обеспечивают **обнаружение ** и **влияние**. Они могут "
+"обнаруживать перекрытия объектов и испускать сигналы при входе или выходе "
+"тел. Области также могут использоваться для переопределения физических "
+"свойств, таких как сила тяжести или упругости в определенной области."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:188
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
-msgstr ""
+msgstr "Есть три основных варианта использования :ref:`Area2D <class_Area2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:190
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr ""
+"Переопределение физических параметров (таких как гравитация) в данной "
+"области."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
+"Обнаружение, когда другие тела входят или выходят из области или какие тела "
+"находятся в настоящее время в области."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid "Checking other areas for overlap."
-msgstr ""
+msgstr "Проверка других областей на перекрытие."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:196
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr ""
+"По умолчанию области также получают ввод с помощью мыши и сенсорного экрана."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid "StaticBody2D"
@@ -338,28 +428,35 @@ msgid ""
 "**as if** it were moving, using its ``constant_linear_velocity`` and "
 "``constant_angular_velocity`` properties."
 msgstr ""
+"Статическое тело — это тело, которое не перемещается физическим движком. Оно "
+"участвует в обнаружении столкновений, но не движется в ответ на "
+"столкновение. Однако, оно может передавать движение или вращение "
+"столкнувшемуся телу, **как если бы** оно двигалось, используя его "
+"свойства``constant_linear_velocity`` и ``constant_angular_velocity``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:206
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"Узлы ``StaticBody2D`` чаще всего используются для объектов, которые являются "
+"частью среды, или которым не требуется какое-либо динамическое поведение."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:209
 msgid "Example uses for ``StaticBody2D``:"
-msgstr ""
+msgstr "Примеры использования ``StaticBody2D``:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:211
 msgid "Platforms (including moving platforms)"
-msgstr ""
+msgstr "Платформы (включая движущиеся платформы)"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:212
 msgid "Conveyor belts"
-msgstr ""
+msgstr "Конвейерные ленты"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:213
 msgid "Walls and other obstacles"
-msgstr ""
+msgstr "Стены и другие препятствия"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "RigidBody2D"
@@ -373,12 +470,18 @@ msgid ""
 "collisions with other bodies, and collision responses, such as bouncing, "
 "rotating, etc."
 msgstr ""
+"Реализует симуляцию 2D-физики. Вы не управляете :ref:`RigidBody2D "
+"<class_RigidBody2D>` напрямую. Вместо этого к нему применяются силы, и "
+"физический движок вычисляет результирующее движение, включая столкновения с "
+"другими телами и реакции на столкновения, такие как отскок, поворот и т.д."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:224
 msgid ""
 "You can modify a rigid body's behavior via properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
+"Поведение твёрдого тела можно изменить с помощью таких свойств, как «Масса», "
+"«Трение» или «Отскок», которые можно задать в инспекторе."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:227
 msgid ""
@@ -386,6 +489,9 @@ msgid ""
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
+"На поведение тела также влияют свойства мира, заданные в `Свойства проекта - "
+"> Физика`, или вход в :ref:`Area2D <class_Area2D>`, переопределяющего "
+"глобальные свойства физики."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:231
 msgid ""
@@ -394,40 +500,52 @@ msgid ""
 "by the physics engine. The body will wake up when forces are applied, either "
 "by a collision or via code."
 msgstr ""
+"Когда твёрдое тело находится в состоянии покоя и какое-то время не "
+"двигалось, оно «засыпает». Спящее тело ведёт себя как статическое тело, и "
+"его силы не рассчитываются физическим движком. Тело будет просыпаться либо "
+"при приложении сил, либо при столкновении, либо при помощи кода."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:237
 msgid "Rigid body modes"
-msgstr ""
+msgstr "Режимы твёрдого тела"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:239
 msgid "A rigid body can be set to one of four modes:"
-msgstr ""
+msgstr "Твёрдое тело может быть установлено в один из четырех режимов:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:241
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
+"**Твёрдое** — тело ведет себя как физический объект. Оно сталкивается с "
+"другими телами и реагирует на приложенные к нему силы. Это режим по "
+"умолчанию."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:242
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
+"**Статичное** — тело ведет себя как :ref:`StaticBody2D <class_StaticBody2D>` "
+"и не двигается."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:243
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
+"**Персонаж** — аналогично режиму «Твёрдое», но тело не может вращаться."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:244
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
+"**Кинематическое** — Тело ведет себя как :ref:`KinematicBody2D "
+"<class_KinematicBody2D>` и должно перемещаться кодом."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:247
 msgid "Using RigidBody2D"
-msgstr ""
+msgstr "Использование RigidBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:249
 msgid ""
@@ -437,6 +555,12 @@ msgid ""
 "create RigidBody2Ds and adjust their properties. Stacking, falling, and "
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
+"Одним из преимуществ использования жесткого тела является то, что различные "
+"поведения можно получить «бесплатно», без написания какого-либо кода. "
+"Например, если бы Вы делали игру в стиле «Angry Birds» с падающими блоками, "
+"Вам нужно было бы просто создать различные RigidBody2D и скорректировать их "
+"свойства. Штабелирование, падение и отскок будут автоматически "
+"рассчитываться с помощью физического движка."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:255
 msgid ""
@@ -450,10 +574,19 @@ msgid ""
 "which allows for safely changing properties and synchronizing them with the "
 "physics engine."
 msgstr ""
+"Однако, если вы хотите иметь некоторый контроль над телом, Вам следует быть "
+"осторожным — изменение ``position``, ``linear_velocity`` или других "
+"физических свойств твёрдого тела может привести к неожиданному поведению. "
+"Если необходимо изменить какое-либо из связанных с физикой свойств, следует "
+"использовать обратный вызов :ref:`_integrate_forces() "
+"<class_RigidBody2D_method__integrate_forces>`вместо ``_physics_process ()``. "
+"В этом обратном вызове вы имеете доступ к :ref:`Physics2DDirectBodyState "
+"<class_Physics2DDirectBodyState>` тела, что позволяет безопасно изменять "
+"свойства и синхронизировать их с физическим движком."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:264
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
-msgstr ""
+msgstr "Например, вот код космического корабля в стиле «Asterioids»:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:309
 msgid ""
@@ -461,6 +594,10 @@ msgid ""
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
+"Обратите внимание, что мы не устанавливаем свойства ``linear_velocity`` или "
+"``angular_velocity`` напрямую, а, скорее, прикладываем силы (``thrust`` и "
+"``torque``) к телу и позволяем физическому движку рассчитать результирующее "
+"движение."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:313
 msgid ""
@@ -470,10 +607,15 @@ msgid ""
 "ref:`can_sleep <class_RigidBody2D_property_can_sleep>` property. Be aware "
 "that this can have a negative effect on performance."
 msgstr ""
+"Когда жесткое тело переходит в спящий режим, функция ``_integrate_forces()`` "
+"не вызывается. Чтобы переопределить это поведение, необходимо сохранить тело "
+"в рабочем состоянии, создав столкновение, применив к нему силу или отключив "
+"свойство :ref:`can_sleep <class_RigidBody2D_property_can_sleep>`. Помните, "
+"что это может негативно сказаться на производительности."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:320
 msgid "Contact reporting"
-msgstr ""
+msgstr "Отслеживание контактов"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:322
 msgid ""
@@ -486,6 +628,14 @@ msgid ""
 "<class_Physics2DDirectBodyState_method_get_contact_count>` and related "
 "functions."
 msgstr ""
+"По умолчанию твёрдые тела не отслеживают контакты, поскольку это может "
+"потребовать огромного объема памяти, если в сцене находится много тел. Чтобы "
+"включить отслеживание контактов, задайте для свойства :ref:"
+"`contacts_reported <class_RigidBody2D_property_contacts_reported>` ненулевое "
+"значение. Контакты могут быть получены через :ref:`Physics2DDirectBodyState."
+"get_contact_count() "
+"<class_Physics2DDirectBodyState_method_get_contact_count>` и связанные с ним "
+"функции."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
@@ -493,6 +643,9 @@ msgid ""
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
+"Мониторинг контактов через сигналы можно включить с помощью свойства :ref:"
+"`contact_monitor <class_RigidBody2D_property_contact_monitor>`. Список "
+"доступных сигналов см. в разделе :ref:`RigidBody2D <class_RigidBody2D>`."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:334
 msgid "KinematicBody2D"
@@ -505,6 +658,10 @@ msgid ""
 "friction. Instead, they must be controlled by the user via code. The physics "
 "engine will not move a kinematic body."
 msgstr ""
+":ref:`KinematicBody2D <class_KinematicBody2D>` обнаруживают столкновения с "
+"другими телами, но на них не влияют физические свойства, такие как "
+"гравитация или трение. Вместо этого они должны управляться пользователем "
+"через код. Физический движок не будет перемещать кинематическое тело."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:341
 msgid ""
@@ -514,10 +671,16 @@ msgid ""
 "if a collision is detected with another body. After the body has collided, "
 "any collision response must be coded manually."
 msgstr ""
+"При перемещении кинематического тела не следует устанавливать его "
+"``position`` непосредственно. Вместо этого используются методы "
+"``move_and_collide()`` или ``move_and_slide()``. Эти методы перемещают тело "
+"по заданному вектору, и оно мгновенно останавливается, если обнаруживается "
+"столкновение с другим телом. После того как тело столкнулось, любая реакция "
+"на столкновение должна быть закодирована вручную."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid "Kinematic collision response"
-msgstr ""
+msgstr "Реакция кинематического тела на столкновение"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
@@ -526,6 +689,9 @@ msgid ""
 "collision response depends on which method you used to move the "
 "KinematicBody2D."
 msgstr ""
+"После столкновения тело может отскочить, начать скользить по стене или "
+"изменить свойства объекта, в который оно попало. Способ обработки реакции на "
+"столкновение зависит от способа перемещения KinematicBody2D."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:355
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
@@ -538,16 +704,21 @@ msgid ""
 "information about the collision and the colliding body. You can use this "
 "information to determine the response."
 msgstr ""
+"При использовании ``move_and_collide()`` функция возвращает объект :ref:"
+"`KinematicCollision2D <class_KinematicCollision2D>`, который содержит "
+"информацию о столкновении и столкнувшемся теле. Эту информацию можно "
+"использовать для определения реакции."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:362
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
+"Например, если нужно найти точку в пространстве, где произошло столкновение:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:393
 msgid "Or to bounce off of the colliding object:"
-msgstr ""
+msgstr "Или отскочить от объекта, с которым столкнулись:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:422
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
@@ -561,21 +732,34 @@ msgid ""
 "``move_and_slide()`` provides a convenient way to implement sliding movement "
 "without writing much code."
 msgstr ""
+"Скольжение является общей реакцией на столкновение; представьте себе игрока, "
+"движущегося вдоль стен в игре с видом сверху, или бегающего вверх и вниз по "
+"склонам в платформере. Хотя этот ответ и можно закодировать самостоятельно "
+"после использования ``move_and_collide()``, ``move_and_slide()`` "
+"обеспечивает более удобный способ реализации скользящего движения без "
+"написания большого количества кода."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:430
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
+"``move_and_slide()`` автоматически включает временной интервал в свои "
+"расчеты, поэтому **не умножайте** вектор скорости на ``delta``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:434
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
+"Например, используйте следующий код для создания персонажа, который может "
+"ходить по земле (включая уклоны) и прыгать, когда стоит на земле:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:501
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
 msgstr ""
+"Дополнительные сведения по использованию ``move_and_slide()`` см. в разделе :"
+"ref:`doc_kinematic_character_2d`, включая демонстрационный проект с "
+"подробным кодом."

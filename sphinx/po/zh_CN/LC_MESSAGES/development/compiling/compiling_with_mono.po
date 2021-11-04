@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,11 +48,10 @@ msgid ""
 msgstr "您可能需要导入必要的证书, 以使NuGet执行HTTPS请求."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
-#, fuzzy
 msgid ""
 "The recommended method is to use **curl**'s CA (Certificate Authorities) "
 "certificate bundle."
-msgstr "推荐的方法是使用 **curl** 的CA(Certificate Autorities)证书捆绑."
+msgstr "推荐的方法是使用 **curl** 的 CA（证书颁发机构）证书绑定。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:21
 msgid ""
@@ -541,7 +540,7 @@ msgid ""
 msgstr ""
 "导出模板还必须包括每个目标平台的BCL(基础类库).Godot在 ``<templates>/bcl/"
 "<target_platform>`` 中查找BCL文件夹, 其中 ``<target_platform>`` 是传递给"
-"SCons``platform`` 选项的相同名称, 例如.``<templates>/bcl/windows``, "
+"SCons ``platform`` 选项的相同名称, 例如. ``<templates>/bcl/windows``, "
 "``<templates>/bcl/javascript``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:323
@@ -642,7 +641,7 @@ msgid ""
 "apple-darwin-mono-sgen``."
 msgstr ""
 "构建完成后, 将可执行文件复制到Godot AOT编译器目录下. 可执行文件的名称是 ``<三"
-">-mono-sgen``, 例如:``aarch64-apple-darwin-mono-sgen``.``aarch64-apple-"
+">-mono-sgen``, 例如:``aarch64-apple-darwin-mono-sgen``. ``aarch64-apple-"
 "darwin-mono-sgen``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:361

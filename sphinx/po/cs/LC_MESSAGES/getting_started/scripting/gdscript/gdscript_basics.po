@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,7 @@ msgid "else"
 msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "for"
 msgstr "for"
 
@@ -169,7 +169,7 @@ msgid "See for_."
 msgstr "Viz for_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:837
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
 msgid "while"
 msgstr "while"
 
@@ -178,7 +178,7 @@ msgid "See while_."
 msgstr "Viz while_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:883
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid "match"
 msgstr "match"
 
@@ -541,204 +541,207 @@ msgid "Multiplication / Division / Remainder"
 msgstr "Násobení / dělení / zbytek"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
+#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
-"available for ints (\"fmod\" for floats)"
+"available for ints (\"fmod\" for floats), and is additionally used for "
+"Format Strings"
 msgstr ""
 "Tyto operátory se chovají stejně jako v jazyce C++. Celočíselné dělení je "
 "useknuto, místo aby vracelo zlomkové číslo, a operátor % je k dispozici "
 "pouze pro inty (\"fmod\" pro floaty)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``+``"
 msgstr "``+``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "Addition / Concatenation of arrays"
 msgstr "Sčítání / spojování polí"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "``-``"
 msgstr "``-``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "Subtraction"
 msgstr "Odčítání"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "``<<`` ``>>``"
 msgstr "``<<`` ``>>``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "Bit shifting"
 msgstr "Posouvání bitů"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "``&``"
 msgstr "``&``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "Bitwise AND"
 msgstr "Bitově AND"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "``^``"
 msgstr "``^``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "Bitwise XOR"
 msgstr "Bitový XOR"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "``|``"
 msgstr "``|``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "Bitwise OR"
 msgstr "Bitové OR"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Comparisons"
 msgstr "Porovnání"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``in``"
 msgstr "``in``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "Content test"
 msgstr "Test obsahu"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "``!`` ``not``"
 msgstr "``!`` ``not``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "Boolean NOT"
 msgstr "Logický NOT"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "``and`` ``&&``"
 msgstr "``and`` ``&&``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "Boolean AND"
 msgstr "Logické AND"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``or`` ``||``"
 msgstr "``or`` ``||``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "Boolean OR"
 msgstr "Logické OR"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``if x else``"
 msgstr "``if x else``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Ternary if/else"
 msgstr "Ternární if/else"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``as``"
 msgstr "``as``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "Type casting"
 msgstr "Přetypování"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
-msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
+#, fuzzy
+msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
 msgstr "Přiřazení (nejnižší priorita)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:284
 msgid "Literals"
 msgstr "Literály"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "**Literal**"
 msgstr "**Literál**"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "**Type**"
 msgstr "**Typ**"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``45``"
 msgstr "``45``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 10 integer"
 msgstr "Celé číslo základu 10"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``0x8f51``"
 msgstr "``0x8f51``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Base 16 (hexadecimal) integer"
 msgstr "Celé číslo o základu 16 (hexadecimální)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``0b101010``"
 msgstr "``0b101010``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "Base 2 (binary) integer"
 msgstr "Celé číslo základu 2 (binární)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``3.14``, ``58.1e-10``"
 msgstr "``3.14``, ``58.1e-10``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Floating-point number (real)"
 msgstr "Číslo s plovoucí desetinnou čárkou (reálné)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "``\"Hello\"``, ``\"Hi\"``"
 msgstr "``\"Hello\"``, ``\"Hi\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Strings"
 msgstr "Řetězce"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``\"\"\"Hello\"\"\"``"
 msgstr "``\"\"\"Hello\"\"\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "Multiline string"
 msgstr "Víceřádkový řetězec"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "``@\"Node/Label\"``"
 msgstr "``@\"Node/Label\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid ":ref:`class_NodePath` or StringName"
 msgstr ":ref:`class_NodePath` nebo jméno Stringu"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Shorthand for ``get_node(\"NodePath\")``"
 msgstr "Zkratka pro ``get_node(\"NodePath\")``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
@@ -746,22 +749,22 @@ msgstr ""
 "Celá a pohyblivá čísla mohou být oddělena znakem ``_``, aby byla lépe "
 "čitelná. Všechny následující způsoby zápisu čísel jsou platné::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
 msgid "Comments"
 msgstr "Komentáře"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:317
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr ""
 "Cokoli od ''#'' do konce řádku je ignorováno a je považováno za komentář."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:325
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
 msgid "Built-in types"
 msgstr "Vestavěné typy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:329
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -776,19 +779,19 @@ msgstr ""
 "se o tzv. referenční typy, anglicky reference types.(Sdružená pole, jako je "
 "``PoolByteArray``, se stále předávají jako hodnoty.)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:334
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
 msgid "Basic built-in types"
 msgstr "Základní vestavěné typy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:338
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr "Proměnné mouhou v jazyce GDScript nabývat několika vestavěných typů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
 msgid "null"
 msgstr "null"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:343
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
@@ -796,19 +799,19 @@ msgstr ""
 "``null`` je prázdný datový typ, který neobsahuje žádné informace a nelze mu "
 "přiřadit žádnou jinou hodnotu."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:345
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:347
 msgid ":ref:`bool <class_bool>`"
 msgstr ":ref:`bool <class_bool>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:347
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:349
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr "Zkratka pro \"boolean\", může obsahovat pouze ``true`` nebo ``false``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid ":ref:`int <class_int>`"
 msgstr ":ref:`int <class_int>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
@@ -817,11 +820,11 @@ msgstr ""
 "záporná). Ukládá se jako 64bitová hodnota, což v jazyce C++ odpovídá "
 "\"int64_t\"."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:358
 msgid ":ref:`float <class_float>`"
 msgstr ":ref:`float <class_float>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:358
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
 msgid ""
 "Stores real numbers, including decimals, using floating-point values. It is "
 "stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
@@ -833,11 +836,11 @@ msgstr ""
 "+. Poznámka: V současné době datové struktury jako Vector2, Vector3 a "
 "PoolRealArray ukládají 32bitové hodnoty \"float\" se single přesností."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
@@ -845,116 +848,116 @@ msgstr ""
 "Posloupnost znaků ve formátu `Unicode <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Řetězce mohou obsahovat následující escape sekvence:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "**Escape sequence**"
 msgstr "Escape sekvence"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "**Expands to**"
 msgstr "**Rozšiřuje se na**"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\n``"
 msgstr "``\\n``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Newline (line feed)"
 msgstr "Nový řádek (line feed)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\t``"
 msgstr "``\\t``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Horizontal tab character"
 msgstr "Vodorovný znak tabulátoru"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\r``"
 msgstr "``\\r``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "Carriage return"
 msgstr "návrat vozíku"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\a``"
 msgstr "``\\a``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Alert (beep/bell)"
 msgstr "Výstraha (pípnutí / zvonek)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\b``"
 msgstr "``\\b``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "Backspace"
 msgstr "Backspace"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "``\\f``"
 msgstr "``\\f``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "Formfeed page break"
 msgstr "Přerušení stránky Formfeed"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\v``"
 msgstr "``\\v``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "Vertical tab character"
 msgstr "Svislý znak tabulátoru"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\\"``"
 msgstr "``\\\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "Double quote"
 msgstr "Dvojitá uvozovka"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\'``"
 msgstr "``\\'``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Single quote"
 msgstr "Jednoduchá uvozovka"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\\\``"
 msgstr "``\\\\``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Backslash"
 msgstr "Zpětné lomítko"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid "``\\uXXXX``"
 msgstr "``\\uXXXX``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
 msgstr ""
 "codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
 msgstr "GDScript také podporuje :ref:`doc_gdscript_printf`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:401
 msgid "Vector built-in types"
 msgstr "Vektorové vestavěné typy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ":ref:`Vector2 <class_Vector2>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
@@ -962,11 +965,11 @@ msgstr ""
 "2D vektorový typ obsahující pole ``x`` a ``y``. Lze k němu přistupovat také "
 "jako k poli."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:412
 msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Also contains an ``end`` field which is ``position + size``."
@@ -974,11 +977,11 @@ msgstr ""
 "Typ 2D Obdélník obsahující dvě pole vektorů: ``position (pozic)`` a ``size "
 "(velikost)``. Obsahuje také pole ``end``, což je ``position + size``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:416
 msgid ":ref:`Vector3 <class_Vector3>`"
 msgstr ":ref:`Vector3 <class_Vector3>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:416
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:418
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
@@ -986,19 +989,19 @@ msgstr ""
 "3D vektorový typ obsahující pole ``x``, ``y`` a ``z``. Lze k němu "
 "přistupovat také jako k poli."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:420
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:424
 msgid "3×2 matrix used for 2D transforms."
 msgstr "matice (matrix) 3×2 používaná pro 2D transformace."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:425
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
 msgid ":ref:`Plane <class_Plane>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:429
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
@@ -1006,11 +1009,11 @@ msgstr ""
 "Typ 3D roviny v normalizovaném tvaru, který obsahuje ``normál`` vektorové "
 "pole normály k rovině a skalární vzdálenost ``d``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:433
 msgid ":ref:`Quat <class_Quat>`"
 msgstr ":ref:`Quat <class_Quat>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
@@ -1018,11 +1021,11 @@ msgstr ""
 "Kvaternion je datový typ používaný k reprezentaci 3D rotace. Je užitečný pro "
 "interpolaci rotací."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:439
 msgid ":ref:`AABB <class_AABB>`"
 msgstr ":ref:`AABB <class_AABB>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:439
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid ""
 "Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
 "``position`` and ``size``. Also contains an ``end`` field which is "
@@ -1032,11 +1035,11 @@ msgstr ""
 "``position`` a ``size``. Obsahuje také pole ``end``, což je ``position + "
 "size``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:444
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
 msgid ":ref:`Basis <class_Basis>`"
 msgstr ":ref:`Basis <class_Basis>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:448
 msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
@@ -1044,25 +1047,25 @@ msgstr ""
 "matice 3x3 používaná pro 3D rotaci a měřítko. Obsahuje 3 vektorová pole "
 "(``x``, ``y`` a ``z``) a lze k ní přistupovat také jako k poli 3D vektorů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:451
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
 msgid ":ref:`Transform <class_Transform>`"
 msgstr ":ref:`Transform <class_Transform>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:455
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
 "3D transformace obsahuje pole Basis ``basis`` a pole Vector3 ``origin``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:459
 msgid "Engine built-in types"
 msgstr "Vestavěné typy enginu"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
 msgid ":ref:`Color <class_Color>`"
 msgstr ":ref:`Color <class_Color>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:464
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
@@ -1070,11 +1073,11 @@ msgstr ""
 "Datový typ Color (barva) obsahuje pole ``r``, ``g``, ``b`` a ``a``. Lze k "
 "nim také přistupovat jako ``h``, ``s`` a ``v`` pro odstín/sytost/hodnotu."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:466
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:468
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:468
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:470
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
@@ -1082,33 +1085,33 @@ msgstr ""
 "Zkompilovaná cesta k uzlu, která se používá hlavně v systému scény. Lze ji "
 "snadno vytvořit/přiřadit z/do typu String (řetězec)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:476
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
 "ID zdroje (RID). Servery používají generické identifikátory RID k odkazování "
 "na neprůhledná data."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
 msgid ":ref:`Object <class_Object>`"
 msgstr ":ref:`Object <class_Object>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:481
 msgid "Base class for anything that is not a built-in type."
 msgstr "Základní třída pro cokoli, co není vestavěným typem."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:482
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:484
 msgid "Container built-in types"
 msgstr "Kontejnerové vestavěné typy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
 msgid ":ref:`Array <class_Array>`"
 msgstr ":ref:`Array (Pole) <class_Array>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:489
 msgid ""
 "Generic sequence of arbitrary object types, including other arrays or "
 "dictionaries (see below). The array can resize dynamically. Arrays are "
@@ -1118,7 +1121,7 @@ msgstr ""
 "slovníků (viz níže). Velikost pole se může dynamicky měnit. Pole jsou "
 "indexována od indexu ``0``. Záporné indexy se počítají od konce."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:503
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1135,7 +1138,7 @@ msgstr ""
 "atomická a mají tendenci pracovat pomaleji než obecná pole. Doporučuje se je "
 "proto používat pouze pro velké objemy dat:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:508
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
@@ -1143,19 +1146,19 @@ msgstr ""
 ":ref:`PoolByteArray <class_PoolByteArray>` : pole bajtů (celá čísla od 0 do "
 "255)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:511
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
 msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: pole celých čísel."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:512
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: pole floatů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:511
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:513
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
 msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: Pole řetězců."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:512
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:514
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
@@ -1163,7 +1166,7 @@ msgstr ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: <class_Vector2>``: pole "
 "objektů :ref:`Vector2 <class_Vector2>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:513
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:515
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
@@ -1171,7 +1174,7 @@ msgstr ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: <class_Vector3>``: pole "
 "objektů :ref:`Vector3 <class_Vector3>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:514
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:516
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
@@ -1179,17 +1182,17 @@ msgstr ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: Pole objektů :ref:`Color "
 "<class_Color>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:517
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:519
 msgid ":ref:`Dictionary <class_Dictionary>`"
 msgstr ":ref:`Dictionary (Slovník) <class_Dictionary>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:519
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:521
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
 "Asociativní kontejner, který obsahuje hodnoty odkazované pomocí jedinečných "
 "klíčů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:534
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
@@ -1201,7 +1204,7 @@ msgstr ""
 "je o něco méně náročné na zápis). Klíče zapsané v tomto tvaru však nemohou "
 "začínat číslicí (jako jakýkoli identifikátor GDScript)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:548
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
@@ -1209,7 +1212,7 @@ msgstr ""
 "Chcete-li přidat klíč do existujícího slovníku, přistupujte k němu jako "
 "kdyby již existoval a přiřaďte do něho hodnotu ::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:564
 msgid ""
 "The bracket syntax can be used to access properties of any :ref:"
 "`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
@@ -1224,15 +1227,15 @@ msgstr ""
 "ref:`Object.set() <class_Object_method_set>`, které v takovém případě vrátí "
 "null."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:571
 msgid "Data"
 msgstr "Data"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:572
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
 msgid "Variables"
 msgstr "Proměnné"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 msgid ""
 "Variables can exist as class members or local to functions. They are created "
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
@@ -1242,7 +1245,7 @@ msgstr ""
 "proměnné funkcí. Vytvářejí se pomocí klíčového slova ``var`` a při "
 "inicializaci jim může být volitelně přiřazena hodnota."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:587
 msgid ""
 "Variables can optionally have a type specification. When a type is "
 "specified, the variable will be forced to have always that same type, and "
@@ -1252,7 +1255,7 @@ msgstr ""
 "bude proměnná nucena mít vždy stejný typ a pokus o přiřazení nekompatibilní "
 "hodnoty vyvolá chybu."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:589
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
@@ -1260,7 +1263,7 @@ msgstr ""
 "Typy se v deklaraci proměnné uvádějí pomocí symbolu ``:`` (dvojtečka) za "
 "názvem proměnné, za kterým následuje typ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:597
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:599
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
@@ -1268,7 +1271,7 @@ msgstr ""
 "Pokud je proměnná inicializována v rámci deklarace, lze typ odvodit, takže "
 "je možné název typu vynechat::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:603
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:605
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
@@ -1276,19 +1279,19 @@ msgstr ""
 "Odvození typu je možné pouze v případě, že přiřazovaná hodnota má definovaný "
 "typ, jinak dojde k chybě."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:608
 msgid "Valid types are:"
 msgstr "Platné typy jsou:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:608
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:610
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
 msgstr "Vestavěné typy (Array, Vektor2, int, String, atd.)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:609
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:611
 msgid "Engine classes (Node, Resource, Reference, etc.)."
 msgstr "Třídy Engine (Node, Resource, Reference atd.)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:610
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:612
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
@@ -1296,7 +1299,7 @@ msgstr ""
 "Názvy konstant, pokud obsahují zdroj skriptu (``MyScript``, pokud jste "
 "deklarovali ``const MyScript = preload(\"res://my_script.gd\")``)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:611
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:613
 msgid ""
 "Other classes in the same script, respecting scope (``InnerClass."
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
@@ -1306,15 +1309,15 @@ msgstr ""
 "(``InnerClass.NestedClass``, pokud jste deklarovali ``class NestedClass`` "
 "uvnitř ``class InnerClass`` ve shodném rozsahu platnosti)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:612
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:614
 msgid "Script classes declared with the ``class_name`` keyword."
 msgstr "Třídy skriptů deklarované pomocí klíčového slova ``class_name``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:617
 msgid "Casting"
 msgstr "Přetypování"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:617
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
 msgid ""
 "Values assigned to typed variables must have a compatible type. If it's "
 "needed to coerce a value to be of a certain type, in particular for object "
@@ -1324,7 +1327,7 @@ msgstr ""
 "potřeba vynutit, aby hodnota byla určitého typu, zejména pro typy objektů, "
 "můžete použít operátor přetypování ``as``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:623
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
@@ -1332,7 +1335,7 @@ msgstr ""
 "Přetypování mezi objektovými typy vrací stejný objekt, pokud je hodnota "
 "stejného typu jako je typ na který se přetypovává nebo je jeho potomkem."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:629
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:631
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
@@ -1340,7 +1343,7 @@ msgstr ""
 "Pokud hodnota není potomkem (podtypem), výsledkem operace přetypování je "
 "hodnota ``null``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:636
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:638
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
@@ -1348,7 +1351,7 @@ msgstr ""
 "V případě vestavěných typů budou tyto typy, pokud to bude možné, násilně "
 "převedeny, jinak engine vyvolá chybu."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:645
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:647
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with the scene tree::"
@@ -1356,11 +1359,11 @@ msgstr ""
 "Přetypování je také užitečné pro lepší typovou bezpečnost proměnných při "
 "interakci se stromem scény:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
 msgid "Constants"
 msgstr "Konstanty"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:659
 msgid ""
 "Constants are values you cannot change when the game is running. Their value "
 "must be known at compile-time. Using the ``const`` keyword allows you to "
@@ -1372,11 +1375,11 @@ msgstr ""
 "konstantní hodnotě jméno. Při pokusu přiřadit hodnotu konstantě po její "
 "deklaraci dojde k chybě."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:664
 msgid "We recommend using constants whenever a value is not meant to change."
 msgstr "Doporučujeme používat konstanty vždy, když se hodnota nemá měnit."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:677
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
@@ -1384,11 +1387,11 @@ msgstr ""
 "Ačkoli typ konstanty je převedený z přiřazené hodnoty, je i možné daný typ "
 "specifikovat::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:681
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:683
 msgid "Assigning a value of an incompatible type will raise an error."
 msgstr "Při priřazení hodnoty nekompatibilního typu bude výsledkem error."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:685
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:687
 msgid ""
 "Since arrays and dictionaries are passed by reference, constants are \"flat"
 "\". This means that if you declare a constant array or dictionary, it can "
@@ -1400,11 +1403,11 @@ msgstr ""
 "konstantu , jejjí hodnoty můžou být následně měněny. Refrence na takový "
 "konstantní slovník či pole však změněna už být nemůže a to ani přiřazením."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
 msgid "Enums"
 msgstr "Enums (Výčty)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:694
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
@@ -1412,7 +1415,7 @@ msgstr ""
 "Enumy jsou v podstatě zkratkou pro konstanty a jsou docela užitečné, pokud "
 "chcete nějaké konstantě přiřadit po sobě jdoucí celá čísla."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:697
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
@@ -1420,7 +1423,7 @@ msgstr ""
 "Pokud výčtu dáte jméno, vloží všechny klíče do konstantního slovníku tohoto "
 "jména."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:698
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:700
 msgid ""
 "In Godot 3.1 and later, keys in a named enum are not registered as global "
 "constants. They should be accessed prefixed by the enum's name (``Name."
@@ -1430,11 +1433,11 @@ msgstr ""
 "registrovány jako globální konstanty. Mělo by se k nim přistupovat s "
 "předponou názvu enumu (``Name.KEY``); viz příklad níže."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:718
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
 msgid "Functions"
 msgstr "Funkce"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:722
 msgid ""
 "Functions always belong to a `class <Classes_>`_. The scope priority for "
 "variable look-up is: local → class member → global. The ``self`` variable is "
@@ -1448,14 +1451,14 @@ msgstr ""
 "třídy, ale není vždy vyžadována (a na rozdíl od Pythonu *není* posílána jako "
 "první argument funkce)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
 "Funkce se může ``vrátit hodnotu`` v libovolném okamžiku. Výchozí návratová "
 "hodnota je ``null``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:737
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
@@ -1464,12 +1467,12 @@ msgstr ""
 "Funkce mohou mít také specifikaci typu pro argumenty a pro návratovou "
 "hodnotu. Typy pro argumenty lze přidat podobně jako u proměnných::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:741
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:743
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr "Pokud má argument funkce výchozí hodnotu, je možné typ odvodit::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:746
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:748
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
@@ -1477,7 +1480,7 @@ msgstr ""
 "Návratový typ funkce lze zadat za seznamem argumentů pomocí symbolu šipky "
 "(``->```)::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:754
 msgid ""
 "Functions that have a return type **must** return a proper value. Setting "
 "the type as ``void`` means the function doesn't return anything. Void "
@@ -1488,7 +1491,7 @@ msgstr ""
 "``void`` znamená, že funkce nic nevrací. Void funkce mohou vracet dříve "
 "pomocí klíčového slova ``return``, ale nemohou vracet žádnou hodnotu."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:761
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:763
 msgid ""
 "Non-void functions must **always** return a value, so if your code has "
 "branching statements (such as an ``if``/``else`` construct), all the "
@@ -1502,11 +1505,11 @@ msgstr ""
 "``if``, ale ne za ním, editor zobrazí chybovou hlášku, protože pokud se blok "
 "neprovede, funkce nebude mít platnou hodnotu, kterou by mohla vrátit."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:769
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid "Referencing functions"
 msgstr "Odkazování na funkce"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:773
 msgid ""
 "Contrary to Python, functions are *not* first-class objects in GDScript. "
 "This means they cannot be stored in variables, passed as an argument to "
@@ -1517,7 +1520,7 @@ msgstr ""
 "třídy. To znamená, že je nelze ukládat do proměnných, předávat jako argument "
 "jiné funkci nebo je vracet z jiných funkcí. Stojí za tím výkonnostní důvody."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:777
 msgid ""
 "To reference a function by name at run-time, (e.g. to store it in a "
 "variable, or pass it to another function as an argument) one must use the "
@@ -1527,11 +1530,11 @@ msgstr ""
 "proměnné nebo předání jiné funkci jako argument) je třeba použít pomocné "
 "příkazy ``call`` nebo ``funcref``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:789
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:791
 msgid "Static functions"
 msgstr "Statické funkce"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:791
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:793
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
@@ -1541,11 +1544,11 @@ msgstr ""
 "přístup k členským proměnným instance ani k ``self``. To je užitečné hlavně "
 "pro vytváření knihoven pomocných funkcí::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:802
 msgid "Statements and control flow"
 msgstr "Příkazy pro řízení běhu programu"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:802
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:804
 msgid ""
 "Statements are standard and can be assignments, function calls, control flow "
 "structures, etc (see below). ``;`` as a statement separator is entirely "
@@ -1554,11 +1557,11 @@ msgstr ""
 "Příkazy jsou standardní a může to být přiřazení, volání funkce, struktury "
 "toku řízení atd. (viz níže). ``;`` jako oddělovač příkazů je zcela nepovinný."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:807
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
 msgid "if/else/elif"
 msgstr "if/else/elif"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:811
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
 "Parenthesis around conditions are allowed, but not required. Given the "
@@ -1570,11 +1573,11 @@ msgstr ""
 "odsazení na základě tabulátoru lze pro zachování úrovně odsazení použít "
 "místo ``else``/``if`` ``elif``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:825
 msgid "Short statements can be written on the same line as the condition::"
 msgstr "Krátké příkazy lze psát na stejném řádku jako podmínku::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:832
 msgid ""
 "Sometimes, you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
@@ -1582,7 +1585,14 @@ msgstr ""
 "Někdy můžete chtít přiřadit jinou počáteční hodnotu na základě logického "
 "výrazu. V takovém případě se hodí tzv. ternární if výrazy::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:838
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
@@ -1590,7 +1600,7 @@ msgstr ""
 "Jednoduché cykly se vytvářejí pomocí syntaxe ``while``. Cykly lze přerušit "
 "pomocí ``break`` nebo v nich pokračovat pomocí ``continue``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:875
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
@@ -1602,7 +1612,7 @@ msgstr ""
 "v proměnné cyklu. Při průchodu slovníkem je v proměnné cyklu uložen aktuální "
 "*klíč*."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:885
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:910
 msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
@@ -1612,23 +1622,23 @@ msgstr ""
 "příkazu ``switch``, který se vyskytuje v mnoha jiných jazycích, ale nabízí "
 "některé další vlastnosti."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:888
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid "Basic syntax::"
 msgstr "Základní syntaxe::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:899
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:924
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr "**Kurz pro lidi, kteří znají příkazy switch**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:901
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:926
 msgid "Replace ``switch`` with ``match``."
 msgstr "Nahraďte ``switch`` příkazem ``match``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:902
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:927
 msgid "Remove ``case``."
 msgstr "Odstraňte ``case``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:903
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
@@ -1636,15 +1646,15 @@ msgstr ""
 "Odstraňte všechny ``break``. Pokud nechcete ``break`` ve výchozím nastavení, "
 "můžete použít ``continue`` pro přerušení."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:929
 msgid "Change ``default`` to a single underscore."
 msgstr "Změňte ``default`` na jedno podtržítko."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:932
 msgid "**Control flow**:"
 msgstr "**Pořadí vyhodnocování**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:934
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
@@ -1656,35 +1666,35 @@ msgstr ""
 "Pomocí příkazu ``continue`` můžete zastavit provádění v aktuálním bloku a "
 "kontrolovat další shodu ve vzorech pod aktuálním blokem."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid "There are 6 pattern types:"
 msgstr "Typově existuje 6 vzorů:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:950
 msgid "Constant pattern"
 msgstr "Konstantní vzor"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:941
 msgid "Constant primitives, like numbers and strings::"
 msgstr "Prosté konstanty, jako jsou čísla a řetězce::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:962
 msgid "Variable pattern"
 msgstr "Variabilní vzor"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:953
 msgid "Matches the contents of a variable/enum::"
 msgstr "Porovnává obsah proměnné/výčtového typu (enum)::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:976
 msgid "Wildcard pattern"
 msgstr "Vzor zástupného znaku"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:965
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr "Tento vzor vyhovuje všemu. Zapisuje se jedním podtržítkem."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:967
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
@@ -1692,11 +1702,11 @@ msgstr ""
 "Lze jej použít jako ekvivalent ``default`` v příkaze ``switch`` z jiných "
 "jazyků::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:964
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:989
 msgid "Binding pattern"
 msgstr "Spojovací vzor"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
 "matches everything - and also gives that value a name. It's especially "
@@ -1706,11 +1716,11 @@ msgstr ""
 "vyhovuje všemu a navíc odpovídající hodnotu pojmenovává. Je to obzvláště "
 "důležité pro vzory pole a slovníku::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid "Array pattern"
 msgstr "Vzor pole"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:967
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
@@ -1718,7 +1728,7 @@ msgstr ""
 "Porovnává pole. Každý jednotlivý prvek pole je sám o sobě vzorem takže je "
 "možné vzory vnořovat."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
@@ -1726,7 +1736,7 @@ msgstr ""
 "Nejprve se testuje délka pole, která musí být stejná jako velikost vzoru, "
 "jinak vzor nevyhovuje."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:971
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
@@ -1734,21 +1744,21 @@ msgstr ""
 "**Pole s otevřeným koncem**: Pole může být delší než vzor, když jako "
 "poslední dílčí vzor použijeme ``...``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Every subpattern has to be comma-separated."
 msgstr "Každý dílčí vzor musí být oddělen čárkou."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1012
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1037
 msgid "Dictionary pattern"
 msgstr "Vzor slovníku"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1013
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr "Funguje stejně jako vzor pole. Každý klíč musí být konstantní vzor."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1015
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
@@ -1756,7 +1766,7 @@ msgstr ""
 "Nejprve se testuje velikost slovníku, která musí být stejná jako velikost "
 "vzoru, jinak vzor testování nevyhovuje."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1017
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
@@ -1764,24 +1774,24 @@ msgstr ""
 "**Slovník s otevřeným koncem**: Slovník může být větší než vzor, když jako "
 "poslední dílčí vzor použijeme ``...``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1019
 msgid "Every subpattern has to be comma separated."
 msgstr "Každý dílčí vzor musí být oddělen čárkou."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1021
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
 msgstr "Pokud hodnotu nezadáte, kontroluje se pouze existence klíče."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1023
 msgid "A value pattern is separated from the key pattern with a ``:``."
 msgstr "Vzor hodnoty je od vzoru klíče oddělen znakem ``:``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1025
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1050
 msgid "Multiple patterns"
 msgstr "Násobné vzory"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1015
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1040
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
@@ -1789,11 +1799,11 @@ msgstr ""
 "Můžete zadat i více vzorů oddělených čárkou. Tyto vzory nesmějí obsahovat "
 "žádné spojovací vzory."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1053
 msgid "Classes"
 msgstr "Třídy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1055
 msgid ""
 "By default, all script files are unnamed classes. In this case, you can only "
 "reference them using the file's path, using either a relative or an absolute "
@@ -1804,7 +1814,7 @@ msgstr ""
 "to buď pomocí relativní, nebo absolutní cesty. Pokud například pojmenujete "
 "soubor skriptu ``character.gd``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1068
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
@@ -1816,7 +1826,7 @@ msgstr ""
 "volitelnou čárkou oddělenou cestou k obrázku, abyste ho mohli použít jako "
 "ikonu. Vaše třída se pak v editoru objeví s touto novou ikonou::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1082
 msgid ""
 "If the script is located in the ``res://addons/`` directory, ``class_name`` "
 "will only cause the node to show up in the **Create New Node** dialog if the "
@@ -1828,11 +1838,11 @@ msgstr ""
 "případě, že je skript součástí *povoleného* zásuvného modulu editoru. Více "
 "informací naleznete v :ref:`doc_making_plugins`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1087
 msgid "Here's a class file example:"
 msgstr "Zde je příklad souboru třídy:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1084
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1109
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -1848,35 +1858,35 @@ msgstr ""
 "mohou být inicializovány v samostatných vláknech, aniž by o tom uživatel "
 "věděl."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1092
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1117
 msgid "Inheritance"
 msgstr "Dědičnost"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
 msgid "A class (stored as a file) can inherit from:"
 msgstr "Třída (uložená jako soubor) může dědit z:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1096
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
 msgid "A global class."
 msgstr "Globální třídy."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1122
 msgid "Another class file."
 msgstr "Dalšího souboru třídy."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1123
 msgid "An inner class inside another class file."
 msgstr "Vnitřní třídy uvnitř jiného souboru třídy."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1125
 msgid "Multiple inheritance is not allowed."
 msgstr "Vícenásobné dědění není povoleno."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1127
 msgid "Inheritance uses the ``extends`` keyword::"
 msgstr "Dědičnost používá klíčové slovo ``extends``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1114
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
@@ -1884,7 +1894,7 @@ msgstr ""
 "Chcete-li zjistit, zda daná instance dědí z dané třídy, můžete použít "
 "klíčové slovo ``is``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1151
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
@@ -1892,7 +1902,7 @@ msgstr ""
 "Chcete-li zavolat funkci v *rodičovské třídě* (tj. ve třídě, kterou "
 "``extend``-ed (rozšířila) aktuální třída), přidejte k názvu funkce ``.``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1156
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
@@ -1904,7 +1914,7 @@ msgstr ""
 "chcete volat, můžete jim dát předponu ``.`` (podobně jako klíčové slovo "
 "``super`` v jiných jazycích)::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1164
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -1916,11 +1926,11 @@ msgstr ""
 "všech rodičovských třídách automaticky. Při jejich přetěžování je není třeba "
 "explicitně volat."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
 msgid "Class constructor"
 msgstr "Konstruktor třídy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1173
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -1931,7 +1941,7 @@ msgstr ""
 "Jak již bylo zmíněno, konstruktory rodičovských tříd se v třídách potomků "
 "volají automaticky. Obvykle tedy není třeba volat ``._init()`` explicitně."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -1941,15 +1951,15 @@ msgstr ""
 "some_func``, se případné argumenty rodičovskému konstruktoru předávají "
 "takto::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr "To se lépe vysvětluje na příkladech. Vezměme si tento scénář:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1208
 msgid "There are a few things to keep in mind here:"
 msgstr "Je třeba mít na paměti několik věcí:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -1961,14 +1971,14 @@ msgstr ""
 "tj. potomek (``Idle.gd``) *musí* definovat také ``_init`` a předat příslušné "
 "parametry rodičovskému konstruktoru ``_init`` třídy ``State.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1188
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1213
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
 msgstr ""
 "``Idle.gd`` může mít jiný počet argumentů než rodičovská třída ``State.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1214
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
@@ -1976,7 +1986,7 @@ msgstr ""
 "Ve výše uvedeném příkladu je ``e`` předané konstruktoru ``State.gd`` stejné "
 "``e`` předané konstruktoru ``Idle.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -1988,11 +1998,11 @@ msgstr ""
 "nedělal nic jiného. Tím se dostáváme k faktu, že základnímu konstruktoru lze "
 "předávat i literály, nejen proměnné. např.::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
 msgid "Inner classes"
 msgstr "Vnitřní třídy"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
@@ -2001,11 +2011,11 @@ msgstr ""
 "klíčového slova ``class``. Jejich instance se vytváříí pomocí ``Jménotřídy."
 "new()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1253
 msgid "Classes as resources"
 msgstr "Třídy jako zdroje"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1255
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -2018,20 +2028,20 @@ msgstr ""
 "``load`` nebo ``preload`` (viz níže). Vytvoření instance třídy načteného "
 "zdroje se provádí voláním funkce ``new`` na objektu této třídy::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1272
 msgid "Exports"
 msgstr "Exporty"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1276
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr "Dokumentace o exportech byla přesunuta do :ref:`doc_gdscript_exports`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1279
 msgid "Setters/getters"
 msgstr "Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1281
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -2041,7 +2051,7 @@ msgstr ""
 "změní. Může být také žádoucí nějakým způsobem zapouzdřit (rozuměj omezit) "
 "přístup k ní."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1284
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -2049,7 +2059,7 @@ msgstr ""
 "K tomu účelu GDScript nabízí syntaxi *setter/getter* pomocí klíčového slova "
 "``setget``. Používá se přímo za definicí proměnné:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1291
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -2065,11 +2075,11 @@ msgstr ""
 "funkce *getter* (``getterfunc`` výše) ``vrátit`` požadovanou hodnotu. Níže "
 "je uveden příklad::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr "Lze vynechat kteroukoli z funkcí *setter* nebo *getter* ::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1314
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
@@ -2079,7 +2089,7 @@ msgstr ""
 "<doc_gdscript_exports>` do editoru ve skriptech nástrojů nebo zásuvných "
 "modulů pro ověřování vstupů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -2087,11 +2097,11 @@ msgstr ""
 "Jak již bylo řečeno, *lokální* přístup *nespustí* setter a getter. Zde je "
 "příklad:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1334
 msgid "Tool mode"
 msgstr "Tool mode"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -2105,11 +2115,11 @@ msgstr ""
 "Pro tyto účely existuje klíčové slovo ``tool``, které musí být umístěno na "
 "začátek souboru::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1350
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr "Více informací naleznete v :ref:`doc_running_code_in_the_editor`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1352
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
@@ -2120,11 +2130,11 @@ msgstr ""
 "spouštějí svůj kód v editoru, může jejich nesprávné použití vést k pádu "
 "editoru."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1358
 msgid "Memory management"
 msgstr "Správa paměti"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1360
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2143,7 +2153,7 @@ msgstr ""
 "`class_WeakRef` pro vytváření tzv. weak referencí (neuvažují se př itestu "
 "uvolnění instance). Zde je příklad:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2152,11 +2162,11 @@ msgstr ""
 "Pokud se nepoužívají reference, lze ke kontrole, zda byl objekt uvolněn, "
 "použít příkaz ``is_instance_valid(instance)``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1364
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid "Signals"
 msgstr "Signály"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
@@ -2165,7 +2175,7 @@ msgstr ""
 "ostatní objekty reagovat. Chcete-li pro třídu vytvořit vlastní signály, "
 "použijte klíčové slovo ``signal``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -2179,7 +2189,7 @@ msgstr ""
 "naleznete v tutoriálu `Observer <https://gameprogrammingpatterns.com/"
 "observer.html>`_ v elektronické knize Návrhové vzory ve hrách ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
@@ -2187,7 +2197,7 @@ msgstr ""
 "Tyto signály můžete spojit s metodami stejným způsobem, jakým připojujete "
 "vestavěné signály uzlů jako :ref:`class_Button` nebo :ref:`class_RigidBody`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1414
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
@@ -2197,11 +2207,11 @@ msgstr ""
 "uzlu ``Game``. Když uzel ``Character`` vyšle signál, zavolá se funkce "
 "``_on_Character_health_depleted`` herního uzlu::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1428
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr "Spolu se signálem můžete vyslat libovolný počet argumentů."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1405
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
@@ -2212,7 +2222,7 @@ msgstr ""
 "zároveň v našem stromu scén chceme udržet uzly uživatelského rozhraní a "
 "hráče oddělené."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2226,7 +2236,7 @@ msgstr ""
 "stromu scén výše, jej připojíme k ``Lifebar`` pomocí metody :ref:`Object."
 "connect() <class_Object_method_connect>`::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1475
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
@@ -2235,7 +2245,7 @@ msgstr ""
 "jakýkoli typ, který ji podědil, například ``Node``, ``KinematicBody``, "
 "``Control``..."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
@@ -2245,7 +2255,7 @@ msgstr ""
 "``Character``, který signál vysílá, k přijemci, v tomto případě k uzlu "
 "``Lifebar``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1492
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
@@ -2253,13 +2263,13 @@ msgstr ""
 "To umožňuje uzlu \"Lifebar\" reagovat na změny stavu zdraví, aniž by byl "
 "součástí uzlu \"Character\"."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1495
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr "Volitelné názvy argumentů můžete psát do závorek za definici signálu::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1476
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1501
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -2271,7 +2281,7 @@ msgstr ""
 "však stále můžete vyslat signál s libovolným počtem argumentů. Je tedy na "
 "vás, abyste vyslali v dané situaci korektní hodnoty."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1482
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -2283,7 +2293,7 @@ msgstr ""
 "svázané argumenty jsou pro každé spojení jedinečné a hodnoty zůstávají "
 "stejné."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1487
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
@@ -2293,7 +2303,7 @@ msgstr ""
 "spojení, pokud vám samotný vysílaný signál neposkytuje ke všem potřebným "
 "údajům přístup ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1491
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1516
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2307,7 +2317,7 @@ msgstr ""
 "poškozené postavy. Když tedy signál připojíme k herní konzoly ``BattleLog``, "
 "můžeme v argumentu připojeného pole přidat jméno postavy::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
@@ -2315,11 +2325,11 @@ msgstr ""
 "Náš uzel ``BattleLog`` tak obdrží v připojeném poli jako dodatečný argument "
 "jméno poškozeného prvku::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1518
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1543
 msgid "Coroutines with yield"
 msgstr "Koroutiny s yield"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1545
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -2337,28 +2347,28 @@ msgstr ""
 "funkce a vrátí její výsledek. Po obnovení se stavový objekt stane neplatným. "
 "Zde je příklad::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1541
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1566
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1587
 msgid "Will print::"
 msgstr "Vytiskne::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1547
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1572
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr ""
 "Je také možné předavat hodnoty mezi ``yield()`` a ``resume()``,, například::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1593
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr "Nezapomeňte uložit nový stav funkce, pokud používáte více ``yield``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1583
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1608
 msgid "Coroutines & signals"
 msgstr "Koroutiny a signály"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1585
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1610
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2368,7 +2378,7 @@ msgstr ""
 "schopno přijmout dva argumenty, objekt a signál. Po přijetí signálu se znovu "
 "zahájí provádění. Zde je několik příkladů::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1623
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
@@ -2376,24 +2386,24 @@ msgstr ""
 "Samotné koroutiny používají signál ``completed``, když přejdou do neplatného "
 "stavu, například::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1610
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1635
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 "``my_func`` bude pokračovat ve vykonávání až po stisknutí obou tlačítek."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
 msgid "You can also get the signal's argument once it's emitted by an object:"
 msgstr "Můžete také získat argument signálu, po jeho vyslání objektem:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1619
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid ""
 "If there is more than one argument, ``yield`` returns an array containing "
 "the arguments::"
 msgstr ""
 "Pokud je argumentů více, ``yield`` vrátí pole obsahující všechny argumenty::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1662
 msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
@@ -2403,7 +2413,7 @@ msgstr ""
 "použije yield vícekrát, můžete aplikovat yield se signálem ``completed`` "
 "podmíněně:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1684
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2415,11 +2425,11 @@ msgstr ""
 "``while`` by zde bylo zbytečné, protože signál ``completed`` je emitován "
 "pouze tehdy, když funkce vyčerpala možnosti použití yield."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1692
 msgid "`onready` keyword"
 msgstr "klíčové slovo `onready`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1694
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2431,7 +2441,7 @@ msgstr ""
 "aktivního stromu scén, dílčí uzly lze získat pouze při volání funkce ``Node."
 "ready ()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1707
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2443,11 +2453,11 @@ msgstr ""
 "inicializaci členské proměnné až do volání ``_ready()``. Lze jím nahradit "
 "výše uvedený kód jediným řádkem::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1715
 msgid "Assert keyword"
 msgstr "Klíčové slovo Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1717
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2463,7 +2473,7 @@ msgstr ""
 "side effects. Jinak by se chování skriptu lišilo v závislosti na tom, zda je "
 "či není projekt sestavován pro ladění ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1704
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1729
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

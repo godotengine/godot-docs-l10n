@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -525,6 +525,7 @@ msgstr ""
 "élimination n'est effectuée)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:228
+#, fuzzy
 msgid ""
 "By default, Blender has backface culling disabled on materials and will "
 "export materials to match how they render in Blender. This means that "
@@ -533,6 +534,14 @@ msgid ""
 "being culled by other faces. To resolve this, enable **Backface Culling** in "
 "Blender's Materials tab, then export the scene to glTF again."
 msgstr ""
+"Par défaut, Blender a désactivé l'élimination de la face arrière des "
+"matériaux et exporte les matériaux pour correspondre à la façon dont ils "
+"sont rendus dans Blender. Cela signifie que les matériaux dans Godot auront "
+"leur mode d'élimination de face arrière réglé sur **Disabled**. Cela peut "
+"diminuer les performances puisque les faces arrière seront rendues, même si "
+"elles sont réduites par d'autres faces. Pour résoudre ce problème, activez "
+"**Backface Culling** dans l'onglet Materials de Blender, puis exportez à "
+"nouveau la scène vers glTF."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:236
 msgid "Depth Draw Mode"

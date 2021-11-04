@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "自定义Godot服务"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
@@ -140,7 +140,7 @@ msgid ""
 "static instance and ``init()`` creates the managed thread; "
 "``unregister_types.cpp`` cleans up the server."
 msgstr ""
-"服务在 ``register_types.cpp`` 中分配. 构造函数设置静态实例,``init()`` 创建托"
+"服务在 ``register_types.cpp`` 中分配. 构造函数设置静态实例, ``init()`` 创建托"
 "管线程； ``unregister_types.cpp`` 清理服务."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:328

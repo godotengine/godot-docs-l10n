@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,11 @@ msgstr "概要"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
-msgstr "实例化有许多方便的用途. 一目了然, 通过实例化您拥有:"
+msgstr "实例化有许多方便的用途. 一目了然, 通过实例化你拥有:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr "细分场景, 使它们更易于管理的能力."
+msgstr "对场景进行细分的能力让这些场景能够更简单地被管理."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr "例如, 这是一个简单的射击游戏可以想象的方式:"
+msgstr "举个例子，这是一个简单的射击游戏可以被想象成的样子:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
@@ -101,16 +101,18 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
-"在编程游戏(或一般软件)上花费的大量时间主要用于设计架构并使游戏组件适合该架"
-"构. 基于场景的设计取代了这种方法, 使开发更快, 更直接, 允许专注于游戏逻辑本"
-"身. 因为大多数游戏组件直接映射到场景, 所以使用基于场景实例化的设计意味着需要"
-"很少的其他架构代码."
+"编写游戏(或一般软件)的大量时间都被用于设计架构并使游戏组件适合该架构. 基于场"
+"景的设计取代了这种方法, 并使开发更快, 更直接, 能够让你去专注于游戏逻辑本身. "
+"因为大多数游戏组件都是直接映射到一个场景, 所以使用基于场景实例化的设计意味着"
+"需要很少的其他架构代码."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
-msgstr "我们来看看另一个更复杂的开放世界类游戏的示例, 它有很多素材和嵌套元素:"
+msgstr ""
+"我们来看看另一个更复杂的开放世界类游戏的示例, 这个示例包括有很多素材和嵌套元"
+"素:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -150,7 +152,7 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
-"使用Godot, 就可以很容易地像这样迭代您的游戏, 因为您需要做的就是创建和实例化更"
+"使用Godot, 就可以很容易地像这样迭代你的游戏, 因为你需要做的就是创建和实例化更"
 "多的场景. 编辑器UI也被设计成对程序员和非程序员一样友好. 一个典型的团队开发过"
 "程会涉及2D或3D美术工作者, 关卡设计师, 游戏设计师, 和动画师, 他们都可以这个编"
 "辑器界面工作."
@@ -165,8 +167,8 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
-"很多进阶的信息全部同时掉到了你身上. 然而, 本教程最重要部分是建立一个如何在实"
-"际项目中使用场景和实例化的意识."
+"这确实是很多高级的信息突然一次性堆给你。然而，本教程最重要部分是建立一个如何"
+"在实际项目中使用场景和实例化的意识."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""

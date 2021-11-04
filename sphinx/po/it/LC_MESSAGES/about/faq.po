@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,8 +46,9 @@ msgid "In short:"
 msgstr "In breve:"
 
 #: ../../docs/about/faq.rst:16
+#, fuzzy
 msgid ""
-"You are free to download and use Godot for any purpose, personal, non-"
+"You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
 "Sei libero di scaricare e utilizzare Godot per qualsiasi scopo: personale, "
@@ -965,8 +966,8 @@ msgid ""
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
 "Detto questo, non raccomandiamo l'uso di Godot per la creazione di "
-"un'applicazione *mobile* poiché la modalità a basso uso processore non è "
-"ancora supportata sulle piattaforme mobili."
+"un'applicazione *mobile* poiché la modalità low-processor non è ancora "
+"supportata sulle piattaforme mobile."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1024,10 +1025,10 @@ msgstr ""
 "Godot non usa un toolkit standard :abbr:`GUI (Graphical User Interface)` "
 "come GTK, Qt o wxWidgets. Invece, Godot usa il proprio toolkit di "
 "interfaccia utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è "
-"esposto sotto forma di nodi di controllo, che sono usati per visualizzare "
-"l'editor (che è scritto in C++). Questi nodi di controllo possono anche "
-"essere utilizzati in progetti da qualsiasi linguaggio di scripting "
-"supportato da Godot."
+"esposto sotto forma di nodi Control, che sono usati per visualizzare "
+"l'editor (che è scritto in C++). Questi nodi Control possono anche essere "
+"utilizzati in progetti da qualsiasi linguaggio di scripting supportato da "
+"Godot."
 
 #: ../../docs/about/faq.rst:402
 #, fuzzy

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,16 +57,18 @@ msgstr ""
 "语法."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+#, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
-"syntax varies depending on the language."
+"syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
+"information on C# exports."
 msgstr "导出属性也可以使用其他语言(例如C#)来完成. 语法因语言而异."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:34
 msgid "Examples"
 msgstr "示例"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:137
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
@@ -75,20 +77,20 @@ msgstr ""
 "必须注意, 即使在编辑器中未运行脚本, 导出的属性仍可编辑. 可以与 :ref:`使用工具"
 "模式的脚本 <doc_gdscript_tool_mode>` 结合使用."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:142
 msgid "Exporting bit flags"
 msgstr "导出位标志"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
 "用作位标志的整数可以在一个属性中存储多个 ``true``/ ``false`` (布尔值)值. 通过"
-"使用导出提示 ``int, FLAGS`` , 可以从属性检查器中设置它们:"
+"使用导出提示 ``int, FLAGS, ...`` , 可以从属性检查器中设置它们:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:151
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
@@ -99,28 +101,28 @@ msgstr ""
 "(Water)`` 的值是2, ``土(Earth)`` 的值是4, ``风(Wind)`` 对应的值是8. 通常, 应"
 "相应地定义常量(例如 ``const ELEMENT_WIND = 8`` 等等)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:156
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
 msgstr "也可以为项目设置中定义的物理层和渲染层提供导出提示:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:163
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr "使用位标志需要对位操作有一定的了解. 如果有疑问, 请使用布尔变量代替."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:167
 msgid "Exporting arrays"
 msgstr "导出数组"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:169
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr "导出的数组可以具有初始化器, 但是它们必须是常量表达式."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:171
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
@@ -129,11 +131,11 @@ msgstr ""
 "如果导出的数组指定了从Resource继承的类型, 则可以通过一次从FileSystem扩展坞中"
 "拖放多个文件来在检查器中设置数组值."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:209
 msgid "Setting exported variables from a tool script"
 msgstr "从工具脚本设置导出变量"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:211
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -146,11 +148,11 @@ msgstr ""
 "`property_list_changed_notify() "
 "<class_Object_method_property_list_changed_notify>` ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:218
 msgid "Advanced exports"
 msgstr "导出进阶"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
 msgid ""
 "Not every type of export can be provided on the level of the language itself "
 "to avoid unnecessary design complexity. The following describes some more or "
@@ -159,7 +161,7 @@ msgstr ""
 "为了避免不必要的复杂设计, 不是所有导出类型都在语言层面上提供. 下面将说明一些"
 "能用底层API实现的, 较为常见的导出方法."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
@@ -174,7 +176,7 @@ msgstr ""
 "<class_Object_method__get_property_list>` 方式进行定制的. 详情可参阅 :ref:"
 "`doc_accessing_data_or_logic_from_object` ."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:231
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
@@ -182,17 +184,17 @@ msgstr ""
 "要用上述方法绑定属性, 参阅 :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:234
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr "脚本必须在 ``tool`` 模式运行, 上述方法才能在编辑器内运行."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
 msgid "Adding script categories"
 msgstr "对脚本中的属性添加类别"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:240
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
@@ -201,11 +203,11 @@ msgstr ""
 "为了在视觉上更好区分各个属性, 可以将特殊的脚本分类作为分割线嵌入属性检查器. "
 "``Script Variables`` 就是一种内建分类."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:257
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` 是要加入属性面板中的分类的名字;"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:259
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
 "a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
@@ -216,21 +218,21 @@ msgstr ""
 "``TYPE_NIL`` 这个类型, 因为它其实并没有被脚本逻辑所处理. 但无论如何, 你还是要"
 "在这儿定义它."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:264
 msgid "Grouping properties"
 msgstr "对属性进行分组"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:266
 msgid "A list of properties with similar names can be grouped."
 msgstr "名称类似的属性们可以添加为一组."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:280
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr "``name`` 是包含了一组属性的可折叠群组的名称;"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:283
 msgid ""
 "every successive property added after the group property will be collapsed "
 "and shortened as determined by the prefix defined via the ``hint_string`` "
@@ -241,7 +243,7 @@ msgstr ""
 "叠, 并以其为前缀缩写名称. 例如, 本例中的 ``rotate_speed`` 将会被缩写为 "
 "``speed``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
 "script group specifically, so the type ``TYPE_NIL`` can be ignored as it "

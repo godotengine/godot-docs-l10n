@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:1
+msgid ".. _doc_real_time_navigation_3d:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:4
+msgid "Real Time Navigation (3D)"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:7
+msgid "Introduction"
+msgstr "소개"
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:9
+msgid ""
+"Godot provides two nodes which can be used to achieve real time navigation "
+"in a 3D environment, :ref:`Navigation <class_Navigation>` and :ref:"
+"`NavigationMeshInstance <class_NavigationMeshInstance>`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:12
+msgid ""
+"A navigation mesh instance is used to hold a :ref:`NavigationMesh "
+"<class_NavigationMesh>`, "
+"which defines what areas in a scene can be navigated to. The :ref:"
+"`Navigation <class_Navigation>` node is then used for "
+"pathfinding with the navigation mesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:17
+#, fuzzy
+msgid "Setting up navigation"
+msgstr "빛 설정하기"
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:19
+msgid ""
+"To add navigation to a scene you need to add a navigation node, then "
+"a navigation mesh instance as a child of the navigation node. With the "
+"navigation mesh instance selected you need to go to the inspector and "
+"create a new navigation mesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:24
+msgid ".. image:: img/new_navigation_mesh.png"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:26
+msgid ""
+"Click on the navigation mesh and you can now alter the properties that "
+"define how the navigation mesh is generated. You can find a full "
+"description for each of the properties in the class reference here: :ref:"
+"`NavigationMesh <class_NavigationMesh>`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:31
+msgid ""
+"After making the changes you want the mesh can be generated by clicking "
+"**Bake NavMesh** in the toolbar."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:34
+msgid ".. image:: img/bake_navmesh.png"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:36
+msgid ""
+"Once the mesh has finished generating you should see the transparent "
+"navigation mesh above the areas in your scene that can be navigated to."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:39
+msgid ".. image:: img/baked_navmesh.png"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:41
+msgid ""
+"Keep in mind that the navmesh shows where the center of an entity can "
+"go. For example, if you set the agent radius to 0.5 then your "
+"navigation mesh will have a distance of 0.5 from any ledges or walls "
+"to prevent clipping into the wall or hanging off of the edge."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:47
+msgid "Generating a path"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:49
+msgid ""
+"To get a path between two areas on a map you use the navigation node "
+"method ``get_simple_path()``. The first argument is a Vector3 of the "
+"starting location, the next is a Vector3 of the end location. And the "
+"last argument is a boolean for whether or not agent properties of a "
+"navmesh are considered when generating a path."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:55
+msgid ""
+"The method will return a :ref:`PoolVector3Array "
+"<class_PoolVector3Array>` consisting of "
+"points that make a path. If there is no way to navigate to the end "
+"location the method will return a blank :ref:`PoolVector3Array "
+"<class_PoolVector3Array>`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:60
+#, fuzzy
+msgid "Official example project"
+msgstr "예제 프로젝트"
+
+#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:62
+msgid ""
+"There is an official example project on how to use 3D navigation. "
+"You can find the repository `here <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/navmesh>`__. "
+"It can also be found in the asset library."
+msgstr ""

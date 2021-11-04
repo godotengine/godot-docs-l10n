@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -294,11 +294,11 @@ msgstr ""
 "Pokud se pokusíte použít ``as`` na vestavěný typ a nepodaří se to, Godot "
 "ukončí provádění chybovou hláškou."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
 msgid "Safe lines"
 msgstr "Bezpečné řádky"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:186
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -312,7 +312,7 @@ msgstr ""
 "kombinovat typovaný a dynamický kód, nemá Godot občas dostatek informací, "
 "aby věděl, zda instrukce za běhu vyvolá chybu, nebo ne."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:192
 msgid ""
 "This happens when you get a child node. Let's take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -328,7 +328,7 @@ msgstr ""
 "``Object``, tj. dvěma třídami, které rozšiřuje. V dynamickém jazyce GDScript "
 "vás také nezajímá typ uzlu, pokud má metody, které potřebujete volat."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:200
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
@@ -340,21 +340,21 @@ msgstr ""
 "ujistí, že typ funguje, a pokud ano, číslo řádku se v levé části editoru "
 "skriptu změní na zelené."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Nebezpečný kód (řádek 7) vs Bezpečný kód (řádek 6 a 8)"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:212
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
 "V nastavení editoru můžete bezpečné čáry vypnout nebo změnit jejich barvu."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
 msgid "Define the return type of a function with the arrow ->"
 msgstr "Definujte návratový typ funkce pomocí šipky ->"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:217
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
@@ -362,7 +362,7 @@ msgstr ""
 "Chcete-li definovat návratový typ funkce, napište za její deklaraci pomlčku "
 "a pravoúhlou závorku ``->`` a za ní návratový typ:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:223
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:225
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
@@ -370,15 +370,15 @@ msgstr ""
 "Typ ``void`` znamená, že funkce nic nevrací. Stejně jako u proměnných můžete "
 "použít libovolný typ:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:232
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:234
 msgid "You can also use your own nodes as return types:"
 msgstr "Jako návratové typy můžete použít i vlastní uzly:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:248
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
 msgid "Typed or dynamic: stick to one style"
 msgstr "Typizované nebo dynamické: držte se jednoho stylu"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:252
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But "
 "it's recommended to stick to either style for consistency in your codebase, "
@@ -391,7 +391,7 @@ msgstr ""
 "všechny je snazší spolupracovat, pokud dodržujete stejné zásady, rychleji se "
 "pak čte a chápe cizí kód."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:258
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
 "discussed above. Here's an example of the same, empty script, in a dynamic "
@@ -400,11 +400,11 @@ msgstr ""
 "Zadaný kód vyžaduje trochu více psaní, ale získáte výhody, které jsme "
 "probrali výše. Zde je příklad stejného prázdného skriptu v dynamickém stylu:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:272
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:274
 msgid "And with static typing:"
 msgstr "A se statickým typováním:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:288
 msgid ""
 "As you can see, you can also use types with the engine's virtual methods. "
 "Signal callbacks, like any methods, can also use types. Here's a "
@@ -414,11 +414,11 @@ msgstr ""
 "volání signálů, stejně tak jako libovolná jiná metoda, mohou používat typy "
 "též. Zde je signál ``body_entered`` v dynamickém stylu:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:295
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:297
 msgid "And the same callback, with type hints:"
 msgstr "A stejné zpětné volání s typy:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:304
 msgid ""
 "You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
@@ -426,7 +426,7 @@ msgstr ""
 "Můžete nahradit např. typ ``CollisionObject2D`` svým vlastním typem, aby se "
 "parametrům automaticky přiřazoval typ:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:315
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it's "
@@ -439,11 +439,11 @@ msgstr ""
 "uzel, který nerozšiřuje (nedědí) ``Bullet``, proměnná ``bullet`` bude "
 "``null``."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid "Warning system"
 msgstr "Systém varování"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:325
 msgid ""
 "Documentation about the GDScript warning system has been moved to :ref:"
 "`doc_gdscript_warning_system`."
@@ -451,11 +451,11 @@ msgstr ""
 "Dokumentace k systému varování GDScriptu byla přesunuta na :ref:"
 "`doc_gdscript_warning_system`."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid "Cases where you can't specify types"
 msgstr "Případy, kdy nelze zadat typy"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:331
 msgid ""
 "To wrap up this introduction, let's cover a few cases where you can't use "
 "type hints. All the examples below **will trigger errors**."
@@ -463,17 +463,17 @@ msgstr ""
 "Na závěr tohoto úvodu se věnujme několika případům, kdy nelze použít typy. "
 "Všechny níže uvedené příklady **vyvolají chyby**."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:332
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:334
 msgid "You can't use Enums as types:"
 msgstr "Enumy nelze používat jako typy:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:341
 msgid ""
 "You can't specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr "Typ jednotlivých prvků pole nelze určit. Vyvolá to chybu:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:346
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:348
 msgid ""
 "You can't force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
@@ -482,15 +482,15 @@ msgstr ""
 "Přiřazení typů v cyklu ``for`` nelze vynutit, protože každý prvek, nad "
 "kterým cyklus ``for`` iteruje, má již jiný typ. Nemůžete tedy **napsat**:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:358
 msgid "Two scripts can't depend on each other in a cyclic fashion:"
 msgstr "Dva skripty na sobě nemohou cyklicky záviset:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Summary"
 msgstr "Shrnutí"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:383
 msgid ""
 "Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
 "helps you write more structured code, avoid common errors, and create "

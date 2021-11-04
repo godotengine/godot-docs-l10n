@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,26 +154,39 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:70
+#, fuzzy
 msgid ""
 "*Performance*: issues that directly impact engine or editor performance. Can "
 "also be used for pull requests that improve performance or add low-end-"
 "friendly options. Should not be coupled with *Usability*."
 msgstr ""
+"*Performance*: problemi che hanno un impatto diretto sulle prestazioni del "
+"motore o dell'editor. Può anche essere usato per richieste di pull che "
+"migliorano le prestazioni o aggiungono opzioni di fascia bassa. Non dovrebbe "
+"essere accoppiato con *Usabilità*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
+#, fuzzy
 msgid ""
 "*PR welcome / Hero wanted!*: Contributions for issues with these labels are "
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
+"*PR benvenuto / Cercasi eroe!*: I contributi per i problemi con queste "
+"etichette sono particolarmente benvenuti. Nota che questo **non** significa "
+"che non puoi lavorare su questioni senza queste etichette."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:76
+#, fuzzy
 msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
 "was released."
 msgstr ""
+"*Regressione*: il bug è apparso dopo il rilascio di una versione stabile che "
+"non presentava il bug."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:78
+#, fuzzy
 msgid ""
 "*Salvageable*: the pull request can't be merged due to design issues or "
 "merge conflicts and its author is not active anymore. However, it can still "
@@ -181,6 +194,11 @@ msgid ""
 "do so, you need to open a new pull request based on the original pull "
 "request."
 msgstr ""
+"*Salvageable*: la richiesta di pull non può essere unita a causa di problemi "
+"di progettazione o conflitti di unione e il suo autore non è più attivo. "
+"Tuttavia, può ancora essere raccolta da un collaboratore esterno per "
+"portarla ad uno stato mergeable. Per farlo, è necessario aprire una nuova "
+"richiesta di pull basata sulla richiesta di pull originale."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid ""
@@ -189,10 +207,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:84
+#, fuzzy
 msgid ""
 "*Usability*: issues that directly impact user usability. Should not be "
 "coupled with *Performance*."
 msgstr ""
+"*Usabilità*: problemi che hanno un impatto diretto sull'usabilità "
+"dell'utente. Non dovrebbe essere accoppiato con *Performance*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid ""
@@ -212,12 +233,18 @@ msgid ""
 "*2D*: relates to 2D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *3D*."
 msgstr ""
+"*2D*: si riferisce a problemi specifici del 2D. Dovrebbe essere accoppiato "
+"con una delle etichette sottostanti, e non dovrebbe essere accoppiato con "
+"*3D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid ""
 "*3D*: relates to 3D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *2D*."
 msgstr ""
+"*3D*: si riferisce a questioni specifiche del 3D. Dovrebbe essere accoppiato "
+"con una delle etichette sottostanti, e non dovrebbe essere accoppiato con "
+"*2D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Assetlib*: relates to issues with the asset library."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,10 +152,10 @@ msgid ""
 "in some cases it might still be relevant to keep your changes only for your "
 "own project, if they are too specific."
 msgstr ""
-"您自己的代码将由其他开发人员审查和改进, 并将直接在上游项目中进一步维护, 因此"
-"您不必在每次迁移到新版本时重新应用自己的更改. 另一方面, 它也是一种责任, 因为"
-"您所做的更改必须足够通用才能对所有用户有益, 而不仅仅是对您的项目有益；因此, "
-"在某些情况下, 如果更改过于具体, 则仅在您自己的项目中保留可能依然有用."
+"你自己的代码将由其他开发人员审查和改进, 并将直接在上游项目中进一步维护, 因此"
+"你不必在每次迁移到新版本时重新应用自己的更改. 另一方面, 它也是一种责任, 因为"
+"你所做的更改必须足够通用才能对所有用户有益, 而不仅仅是对你的项目有益；因此, "
+"在某些情况下, 如果更改过于具体, 则仅在你自己的项目中保留可能依然有用."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:78
 msgid ""
@@ -261,14 +261,14 @@ msgstr "测试开发版本"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:124
 msgid "To help with the testing, you have several possibilities:"
-msgstr "为了帮助进行测试, 您有以下几种可能性:"
+msgstr "为了帮助进行测试, 你有以下几种可能性:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
 msgstr ""
-"按照针对您的平台的 :ref:`编译 <toc-devel-compiling>` 页面中的说明, 自己从源代"
+"按照针对你的平台的 :ref:`编译 <toc-devel-compiling>` 页面中的说明, 自己从源代"
 "码编译引擎."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:129
@@ -312,7 +312,7 @@ msgid ""
 "issue\" button."
 msgstr ""
 "Godot使用 `GitHub 的问题跟踪器 <https://github.com/godotengine/godot/"
-"issues>`_ 来获取错误报告和改进建议. 您需要一个GitHub帐户才能在那里开启新问"
+"issues>`_ 来获取错误报告和改进建议. 你需要一个GitHub帐户才能在那里开启新问"
 "题, 然后点击 ``新问题`` 按钮."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:149
@@ -335,8 +335,8 @@ msgid ""
 "and hopefully fix it. Here are some of the most important infos that you "
 "should always provide:"
 msgstr ""
-"因此, 您应该始终问自己: 要提供什么相关信息, 以便其他Godot贡献者可以理解bug, "
-"发现并希望修复该它. 以下是您应始终提供的一些最重要的信息:"
+"因此, 你应该始终问自己: 要提供什么相关信息, 以便其他Godot贡献者可以理解bug, "
+"发现并希望修复该它. 以下是你应始终提供的一些最重要的信息:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:161
 msgid ""
@@ -366,10 +366,11 @@ msgid ""
 "the start helps to speed up the diagnosis."
 msgstr ""
 "**Godot版本.** 这是必须的. 某些问题可能仅存在于当前稳定版本, 但在开发分支中已"
-"修复, 或者相反. 您可能还在使用Godot的过时版本, 遇到更高版本中已修复的已知问"
+"修复, 或者相反. 你可能还在使用Godot的过时版本, 遇到更高版本中已修复的已知问"
 "题, 因此从一开始就知道这一点有助于加快诊断速度."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:176
+#, fuzzy
 msgid ""
 "**How to reproduce the bug.** In the majority of cases, bugs are "
 "reproducible, i.e. it is possible to trigger them reliably by following some "
@@ -377,16 +378,16 @@ msgid ""
 "everyone can try to reproduce the issue and confirm it. Ideally, make a demo "
 "project that reproduces this issue out of the box, zip it and attach it to "
 "the issue (you can do this by drag and drop). Even if you think that the "
-"issue is trivial to reproduce, adding a minimal project that lets reproduce "
-"it is a big added value. You have to keep in mind that there are thousands "
-"of issues in the tracker, and developers can only dedicate little time to "
-"each issue."
+"issue is trivial to reproduce, adding a minimal project that lets everyone "
+"reproduce it is a big added value. You have to keep in mind that there are "
+"thousands of issues in the tracker, and developers can only dedicate little "
+"time to each issue."
 msgstr ""
 "**如何重现bug.** 在大多数情况下,bug是可重现的, 即可以通过遵循某些步骤切实地触"
 "发它们. 请始终尽可能清楚地描述这些步骤, 以便每个人都可以尝试重现问题并进行确"
 "认. 理想情况下, 制作一个演示项目, 可以立即重现此问题, 将其压缩并将其附加到问"
-"题中(您可以通过拖放操作完成此操作). 即使您认为该问题很难重现, 添加一个最小的"
-"项目来重现该问题也是很划算. 您必须记住, 跟踪器中有成千上万的问题, 开发人员只"
+"题中(你可以通过拖放操作完成此操作). 即使你认为该问题很难重现, 添加一个最小的"
+"项目来重现该问题也是很划算. 你必须记住, 跟踪器中有成千上万的问题, 开发人员只"
 "能花很少的时间处理每个问题."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:187
@@ -395,7 +396,7 @@ msgid ""
 "area prefilled with our issue template. Please try to follow it so that all "
 "issues are consistent and provide the required information."
 msgstr ""
-"点击 ``新问题`` 按钮时, 应向您显示预填充我们的问题模板的文本区域. 请尝试遵循"
+"点击 ``新问题`` 按钮时, 应向你显示预填充我们的问题模板的文本区域. 请尝试遵循"
 "它, 以便所有问题保持一致并提供所需信息."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:192

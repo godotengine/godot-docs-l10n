@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,18 +140,26 @@ msgid ""
 "marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is "
 "installed."
 msgstr ""
+"En raison de problèmes de performances sporadiques, il est recommandé "
+"d'utiliser LLDB plutôt que GDB sur les systèmes basés sur Unix. Assurez-vous "
+"que l'extension `CodeLLDB <https://marketplace.visualstudio.com/items?"
+"itemName=vadimcn.vscode-lldb>`_ est installée."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:162
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
 msgstr ""
+"Si vous rencontrez des problèmes avec lldb, vous pouvez envisager d'utiliser "
+"gdb (voir la configuration X11_gdb)."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:164
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
 msgstr ""
+"Notez que lldb peut mieux fonctionner avec les compilations basées sur llvm. "
+"Voir :ref:`doc_compiling_for_x11` pour plus d'informations."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:166
 msgid ""

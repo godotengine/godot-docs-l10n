@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "使用视区作为纹理"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:9
 msgid ""
@@ -348,7 +348,7 @@ msgid ""
 "typically reserved for mixing two floats together; ``mix`` can take any "
 "values whether it be floats or vector types."
 msgstr ""
-"要在 GLSL 中创建渐变, 我们使用 ``mix`` 函数.``mix`` 需要两个值来插值和第三个"
+"要在 GLSL 中创建渐变, 我们使用 ``mix`` 函数. ``mix`` 需要两个值来插值和第三个"
 "参数来选择在它们之间插入多少, 实质上它将两个值 *混合* 在一起. 在其他API中, 此"
 "函数通常称为 ``lerp`` . 虽然 ``lerp`` 通常用于将两个浮点数混合在一起, 但 "
 "``mix`` 可以取任何值, 无论它是浮点数还是向量类型."

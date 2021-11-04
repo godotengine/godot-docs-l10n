@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "信号"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:10
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
@@ -44,8 +44,8 @@ msgid ""
 "You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"您可以在这里http://gameprogrammingpatterns.com/observer.html阅读有关观察者模"
-"式的更多信息"
+"您可以在这里http://gameprogrammingpatterns.com/observer.html（或https://gpp."
+"tkchu.me/observer.html中文版）阅读有关观察者模式的更多信息"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
@@ -85,9 +85,9 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
-"对于 ``Sprite`` 的纹理, 可以使用Godot图标, 或您喜欢的任何其他图像. 为此, 请"
-"在 ``Sprite`` 的 ``Texture`` 属性下拉菜单中选择 ``Load``. 将脚本附加到根节"
-"点, 但尚未添加任何代码."
+"对于 ``Sprite`` 的纹理，可以使用Godot图标，或您喜欢的任何其他图像。为此，请"
+"在 ``Sprite`` 的 ``Texture`` 属性下拉菜单中选择 ``Load加载``。在根节点上附加"
+"一个脚本，但先不要在上面添加任何代码。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
@@ -146,9 +146,9 @@ msgid ""
 "method, as each signal propagation will result in different values for those "
 "extra call arguments."
 msgstr ""
-"如果你切换高级菜单, 你会在右侧看到, 你可以绑定任意数量的不同类型的参数. 当你"
-"有多个信号连接到同一个方法时, 这将很有用, 因为每个信号的传播, 可能会附加不同"
-"值的调用参数."
+"如果你启用高级开关，您将在右侧看到您可以绑定任意数量、（可能）不同类型的参"
+"数。当你有多个信号连接到同一个方法时，这将很有用，因为每个信号的传播，可能会"
+"附加不同值的调用参数。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
@@ -157,9 +157,9 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"窗口底部是一个标有\"Receiver Method\"的字段. 这是您要使用的目标节点脚本中的函"
-"数名称. 默认情况下,Godot将使用命名约定 ``_on_<node_name>_<signal_name>`` 创建"
-"此函数, 但如果你想要修改它也可以."
+"窗口底部有一个标有“Receiver Method接收方法”的输入框。这是您要使用的目标节点脚"
+"本中的函数名称。 默认情况下，Godot将使用命名约定 ``_on_<节点名>_<信号名>`` 创"
+"建此函数名，但如果你想要修改它也可以。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
@@ -212,9 +212,8 @@ msgid ""
 "connection:"
 msgstr ""
 "要使用代码进行连接, 我们可以使用 ``connect`` 函数. 将把它放在 ``_ready()`` 函"
-"数中, 这样连接就会在运行时创建. 函数的语法是 ``<source_node>."
-"connect(<signal_name>, <target_node>, <target_function_name>)``. 下面是我们的"
-"计时器连接的代码:"
+"数中, 这样连接就会在运行时创建. 函数的语法是 ``<源节点>.connect(<信号名>, <目"
+"标节点>, <目标方法名>)``. 下面是我们的计时器连接的代码:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
@@ -255,9 +254,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:248
 #, fuzzy
 msgid ""
-"To pass values, add them as subsequent arguments to the ``emit_signal`` "
+"To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "要传递数值, 请将数值作为第二个参数添加到 ``emit_signal`` 函数中:"
+msgstr "要传递数值，请将它们作为后续参数添加到 ``emit_signal`` 函数中："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"

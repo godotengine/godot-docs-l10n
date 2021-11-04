@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,18 +235,14 @@ msgid "Opening PCK files at runtime"
 msgstr "Открытие файлов PCK во время выполнения"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
-#, fuzzy
 msgid ""
 "To import a PCK file, one uses the ProjectSettings singleton. The following "
 "example expects a “mod.pck” file in the directory of the games executable. "
 "The PCK file contains a “mod_scene.tscn” test scene in its root."
 msgstr ""
-"Чтобы импортировать PCK файл, вам можно использовать всего одну строку кода. "
-"Но держите в уме, что нет ошибки или какой-нибудь особой ситуации при "
-"неудачи с импортом. Вместо этого, вам придется создать код для проверки "
-"этого поверх всего остального. Приведенный пример предполагает наличие файла "
-"“mod.pck„ в папке с исполняемым файлом игры. Этот PCK файл содержит "
-"“mod_scene.tscn„, тестовую сцену в своей корневой папке."
+"Для импорта файла PCK используется синглтон ProjectSettings. В следующем "
+"примере ожидается наличие файла «mod.pck» в каталоге исполняемого файла "
+"игры. Файл PCK содержит в своем корне тестовую сцену «mod_scene.tscn»."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
 msgid ""

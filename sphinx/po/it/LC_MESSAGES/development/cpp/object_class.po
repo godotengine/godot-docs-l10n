@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -380,12 +380,18 @@ msgid "Saving a resource can be done with the resource saver API:"
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:309
+#, fuzzy
 msgid ""
 "Instance will be saved. Sub resources that have a path to a file will be "
 "saved as a reference to that resource. Sub resources without a path will be "
 "bundled with the saved resource and assigned sub-IDs, like ``res://"
 "someresource.res::1``. This also helps to cache them when loaded."
 msgstr ""
+"L'istanza sarà salvata. Le risorse secondarie che hanno un percorso a un "
+"file saranno salvate come riferimento a quella risorsa. Le risorse "
+"secondarie senza un percorso saranno raggruppate con la risorsa salvata e "
+"saranno assegnati dei sub-ID, come ``res://someresource.res::1``. Questo "
+"aiuta anche a metterle in cache quando vengono caricate."
 
 #: ../../docs/development/cpp/object_class.rst:317
 #, fuzzy

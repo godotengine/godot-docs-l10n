@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D scenes"
-msgstr "3D 씬 불러오기"
+msgstr "3D 씬 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot scene importer"
-msgstr "Godot 씬 불러오기"
+msgstr "Godot 씬 임포터"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
@@ -83,7 +83,7 @@ msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
 msgstr ""
-"텍스처와 씬 파일을 함께 프로젝트 저장소에 복사하면 Godot가 완전히 불러올 것입"
+"텍스처와 씬 파일을 함께 프로젝트 저장소에 복사하면 Godot가 완전히 가져올 것입"
 "니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:29
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr "Maya와 3DS Max에서 DAE 파일을 가져오기"
+msgstr "Maya와 3DS Max에서 DAE 파일 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:31
 msgid ""
@@ -115,9 +115,8 @@ msgstr ""
 "이트 되진 않지만 잘 작동합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:39
-#, fuzzy
 msgid "Exporting glTF 2.0 files from Blender"
-msgstr "블렌더에서 DAE 파일 가져오기"
+msgstr "블렌더에서 glTF 2.0 파일 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:41
 msgid ""
@@ -168,7 +167,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting DAE files from Blender"
-msgstr "블렌더에서 DAE 파일 가져오기"
+msgstr "블렌더에서 DAE 파일 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
 #, fuzzy
@@ -187,11 +186,11 @@ msgid ""
 "the future."
 msgstr ""
 "Godot는 `파이썬 플러그인 <https://github.com/godotengine/collada-exporter>`__"
-"\\ 을 지원하며 씬을 가져오는 작업이 훨씬 더 좋을 것입니다."
+"\\ 을 지원하며 씬을 내보내는 작업이 훨씬 더 좋을 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:78
 msgid "Exporting ESCN files from Blender"
-msgstr "블렌더에서 ESCN 파일 가져오기"
+msgstr "블렌더에서 ESCN 파일 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 #, fuzzy
@@ -216,9 +215,8 @@ msgstr ""
 "html>`__\\ 를 갖고 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
-#, fuzzy
 msgid "Exporting textures separately"
-msgstr "텍스처 가져오기"
+msgstr "텍스처를 각각 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:92
 msgid ""
@@ -270,15 +268,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:120
 msgid "Import workflows"
-msgstr "불러오기 워크플로"
+msgstr "가져오기 워크플로"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:122
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
-"Godot 씬 임포터는 어떻게 데이터를 불러오는지에 따라 서로 다른 워크플로를 허용"
-"합니다. 많은 옵션에 따라, 다음을 통해 씬을 불러올 수 있습니다:"
+"Godot 씬 임포터는 어떻게 데이터를 가져오는지에 따라 서로 다른 워크플로를 허용"
+"합니다. 많은 옵션에 따라, 다음을 통해 씬을 가져올 수 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
 msgid ""
@@ -308,7 +306,7 @@ msgstr ""
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
-msgstr "외부 씬: 불러온 씬의 각 루트 노드를 별도의 씬으로 저장합니다."
+msgstr "외부 씬: 가져온 씬의 각 루트 노드를 별도의 씬으로 저장합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:129
 msgid "Single scene: A single scene file with everything built in."
@@ -319,12 +317,12 @@ msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
-"다른 개발자가 다른 요구가 있듯이, 이 불러오기 처리는 많이 커스터마이징 할 수 "
+"다른 개발자가 다른 요구가 있듯이, 이 가져오기 처리는 많이 커스터마이징 할 수 "
 "있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
 msgid "Import options"
-msgstr "설정 불러오기"
+msgstr "옵션 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:138
 msgid "The importer has several options, which will be discussed below:"
@@ -343,7 +341,7 @@ msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
-"기본적으로, 불러온 씬의 루트 노드 타입은 \"Spatial\"이지만, 수정될 수 있습니"
+"기본적으로, 가져온 씬의 루트 노드 타입은 \"Spatial\"이지만, 수정될 수 있습니"
 "다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
@@ -375,7 +373,7 @@ msgid ""
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
-"특수 스크립트로 불러오기 후 전체 씬을 처리하기 위해 제공할 수 있습니다. 후처"
+"특수 스크립트로 가져오기 후 전체 씬을 처리하기 위해 제공할 수 있습니다. 후처"
 "리, 머티리얼 변경, 아니면 기하학으로 하는 재미있는 짓 등에 좋습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:167
@@ -388,7 +386,7 @@ msgid ""
 "parameter is actually the root node of the scene). The scene that will "
 "finally be used must be returned. It can be a different one."
 msgstr ""
-"``post_import`` 함수는 불러온 씬을 인수로 받습니다 (매개변수는 사실 씬의 루"
+"``post_import`` 함수는 가져온 씬을 인수로 받습니다 (매개변수는 사실 씬의 루"
 "트 노드입니다). 마지막으로 사용되는 씬은 반환되어야 합니다. 그것은 다른 것일 "
 "수 있습니다."
 
@@ -405,15 +403,15 @@ msgid ""
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
-"기본적으로, Godot은 하나의 씬을 불러옵니다. 이 옵션으로 루트 아래의 노드들이 "
-"각각 별개의 씬으로 되고 불러온 씬에 인스턴스화되는 것을 명시할 수 있게 해줍니"
+"기본적으로, Godot은 하나의 씬을 가져옵니다. 이 옵션으로 루트 아래의 노드들이 "
+"각각 별개의 씬으로 되고 가져온 씬에 인스턴스화되는 것을 명시할 수 있게 해줍니"
 "다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
-msgstr "물론 불러온 씬을 다른 곳에서 인스턴스화하는 것도 수동으로 작동합니다."
+msgstr "물론 가져온 씬을 다른 곳에서 인스턴스화하는 것도 수동으로 작동합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid "Materials"
@@ -447,7 +445,7 @@ msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr ""
-"머티리얼이 내장형이라면, 원본 씬을 수정하고 다시 불러올 때마다 없어질 것입니"
+"머티리얼이 내장형이라면, 원본 씬을 수정하고 다시 가져올 때마다 없어질 것입니"
 "다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
@@ -466,7 +464,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "Keep On Reimport"
-msgstr "Keep On Reimport(다시 불러오기 유지)"
+msgstr "다시 가져오기 유지(Keep On Reimport)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""
@@ -604,7 +602,7 @@ msgid ""
 msgstr ""
 "이로 인해 몇몇 상황에서 정밀도가 떨어질 수 있으니, 필요하다면 이 옵션을 비활"
 "성화할 수 있습니다. 예를 들어, 메시가 매우 크거나 큰 영역을 포함하는 여러 메"
-"시를 불러온다면, 메시 불러오기를 압축하는 것이 기하 사이의 간격 생성, 꼭짓점"
+"시를 가져온다면, 메시 가져오기를 압축하는 것이 기하 사이의 간격 생성, 꼭짓점"
 "이 있어야 할 자리에 없는 현상이 발생할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:260
@@ -620,7 +618,7 @@ msgid ""
 msgstr ""
 "노말 맵핑 된 텍스처가 사용된다면, 메시는 탄젠트 배열을 가져야 합니다. 이 설정"
 "으로 원본 씬에서 탄젠트 배열이 없다면 생성하게 해줍니다. Godot는 Mikktspace"
-"를 사용하지만, 가져오기에서 생성하는 것이 항상 더 좋습니다."
+"를 사용하지만, 익스포터에서 생성하는 것이 항상 더 좋습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid ""
@@ -696,7 +694,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid "Import of animations is enabled by default."
-msgstr "애니메이션 불러오기는 기본적으로 활성화되어 있습니다."
+msgstr "애니메이션 가져오기는 기본적으로 활성화되어 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
@@ -717,8 +715,8 @@ msgid ""
 "specify the frames per second used to edit them. Failing to do this may "
 "result in shaky animations."
 msgstr ""
-"대부분의 3D 불러오기 형식은 프레임 대신 초당 타임라인으로 애니메이션을 저장합"
-"니다. 애니메이션을 가능한 한 충실하게 불러오기 위해서는, 편집에 사용된 초 당 "
+"대부분의 3D 내보내기 형식은 프레임 대신 초당 타임라인으로 애니메이션을 저장합"
+"니다. 애니메이션을 가능한 한 충실하게 가져오기 위해서는, 편집에 사용된 초 당 "
 "프레임을 명시하세요. 이를 잘못하면 떨리는 애니메이션을 만들게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
@@ -804,7 +802,7 @@ msgid ""
 msgstr ""
 "기본적으로, 애니메이션은 내장되어 저장됩니다. 대신 파일로 애니메이션을 저장"
 "할 수도 있습니다. 이렇게 하면 맞춤 트랙을 애니메이션에 추가할 수 있고, 다시 "
-"불러온 후에도 이를 유지할 수 있습니다."
+"가져온 후에도 이를 유지할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid "Optimizer"
@@ -816,7 +814,7 @@ msgid ""
 "the animation considerably. In general, this should always be turned on "
 "unless you suspect that an animation might be broken due to it being enabled."
 msgstr ""
-"애니메이션을 불러올 때 옵티마이저(optimizer)가 실행되어 애니메이션의 크기는 "
+"애니메이션을 가져올 때 옵티마이저(optimizer)가 실행되어 애니메이션의 크기는 "
 "상당히 줄어듭니다. 일반적으로, 옵티마이저가 활성화되어 있기 때문에 애니메이션"
 "이 손상되었다고 의심되는 상황이 아니라면 항상 활성화되어 있어야 합니다."
 
@@ -844,9 +842,9 @@ msgid ""
 "(source ``.dae``, ``.gltf``, ``.obj`` file re-exported from 3D modelling "
 "app), Godot will re-import the whole scene."
 msgstr ""
-"많은 상황에서, 불러온 씬을 수정하고 싶을 것입니다. 기본적으로 원본 애셋(3D 모"
-"델링 앱에서 다시 불러온 원본 .dae, .gltf, .obj 파일)이 바뀌기 때문에 그렇게 "
-"할 수는 없고 , Godot는 전체 씬을 다시 불러올 것입니다."
+"많은 상황에서, 가져온 씬을 수정하고 싶을 것입니다. 기본적으로 원본 애셋(3D 모"
+"델링 앱에서 다시 내보낸 원본 .dae, .gltf, .obj 파일)이 바뀌기 때문에 그렇게 "
+"할 수는 없고 , Godot는 전체 씬을 다시 가져올 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid ""
@@ -854,7 +852,7 @@ msgid ""
 "Inheritance*. Try to open the imported scene and the following dialog will "
 "appear:"
 msgstr ""
-"하지만, *씬 상속*\\ 을 사용하면 로컬로 수정하는 것이 가능합니다. 불러온 씬을 "
+"하지만, *씬 상속*\\ 을 사용하면 로컬로 수정하는 것이 가능합니다. 가져온 씬을 "
 "열면 다음 대화 상자가 나타납니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:399
@@ -879,7 +877,7 @@ msgstr "그 외에는 모든 것이 허용됩니다!"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:409
 msgid "Import hints"
-msgstr "불러오기 힌트"
+msgstr "가져오기 힌트"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
 msgid ""
@@ -911,7 +909,7 @@ msgid ""
 "automatically."
 msgstr ""
 "이 워크플로를 간단히 하기 위해, Godot는 3D 모델링 소프트웨어에서 오브젝트의 "
-"이름에 붙일 수 있는 몇몇 접미사를 제공합니다. 불러올 때, Godot는 이를 감지하"
+"이름에 붙일 수 있는 몇몇 접미사를 제공합니다. 가져올 때, Godot는 이를 감지하"
 "고 자동으로 동작을 수행합니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
@@ -927,8 +925,8 @@ msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"``-noimp`` 접미사를 갖고 있는 오브젝트가 어떤 타입이든지 불러올 때 제거될 것"
-"입니다.불러온 씬에서 나타나지 않습니다."
+"``-noimp`` 접미사를 갖고 있는 오브젝트가 어떤 타입이든지 가져올 때 제거될 것"
+"입니다. 가져온 씬에서 나타나지 않습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:432
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
@@ -972,7 +970,7 @@ msgid ""
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"이를 해결하기 위해, ``-colonly`` 모디파이어(modifier)가 존재합니다, 불러올 "
+"이를 해결하기 위해, ``-colonly`` 모디파이어(modifier)가 존재합니다, 가져올 "
 "때 메시를 제거하고 대신 :ref:`class_staticbody` 콜리전을 생성합니다. 이렇게 "
 "하면 시각적 메시와 실제 콜리전을 분리할 수 있습니다."
 
@@ -1067,7 +1065,7 @@ msgid ""
 "ref:`class_VehicleBody` node."
 msgstr ""
 "``-vehicle`` 접미사를 가진 메시 노드는 :ref:`VehicleBody "
-"<class_VehicleBody>` 노드의 자손으로 불러오게 됩니다."
+"<class_VehicleBody>` 노드의 자손으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:499
 msgid "Create a VehicleWheel (-wheel)"
@@ -1079,7 +1077,7 @@ msgid ""
 "`class_VehicleWheel` node."
 msgstr ""
 "``-wheel`` 접미사를 가진 메시 노드는 :ref:`VehicleWheel "
-"<class_VehicleWheel>` 노드의 자손으로 불러오게 됩니다."
+"<class_VehicleWheel>` 노드의 자손으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:505
 msgid "Rigid Body (-rigid)"
@@ -1091,7 +1089,7 @@ msgid ""
 "`class_RigidBody`."
 msgstr ""
 "``-rigid`` 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` "
-"노드의 자손으로 불러오게 됩니다."
+"노드의 자손으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:510
 msgid "Animation loop (-loop, -cycle)"
@@ -1105,7 +1103,7 @@ msgid ""
 "a hyphen.**"
 msgstr ""
 "COLLADA 문서에서 ``loop``\\ 나 ``cycle``\\ 토큰으로 시작하거나 끝나는 애니메"
-"이션 클립은 루프 플래그가 설정된 Godot 애니메이션으로 불러와질 것입니다. **위"
+"이션 클립은 루프 플래그가 설정된 Godot 애니메이션으로 가져와질 것입니다. **위"
 "에서 설명된 다른 접미사와 다르게, 하이픈(-)이 필요하지 않습니다.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:516

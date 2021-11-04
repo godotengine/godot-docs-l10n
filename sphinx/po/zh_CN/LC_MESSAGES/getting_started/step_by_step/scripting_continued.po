@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid ""
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"为了帮助管理这种可变性，``delta`` 参数包含了自上次调用 ``_process()`` 以来所"
+"为了帮助管理这种可变性， ``delta`` 参数包含了自上次调用 ``_process()`` 以来所"
 "经过的秒数，以浮点数表示。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -95,7 +95,7 @@ msgid ""
 msgstr ""
 "用 ``_physics_process()`` 进行物理处理是相似的, 但应将其用于必须在每个物理步"
 "骤之前进行的处理, 例如控制角色. 它始终在物理步骤之前运行, 并且以固定的时间间"
-"隔调用: 默认为每秒60次. 您可以从 \"项目设置\" 的 \"物理\" ->\"通用\" ->\"物理"
+"隔调用: 默认为每秒60次. 你可以从 \"项目设置\" 的 \"物理\" ->\"通用\" ->\"物理"
 "Fps\" 下更改时间间隔."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
@@ -255,7 +255,7 @@ msgid ""
 msgstr ""
 "当我们要删除当前 \"阻塞\" 的节点时, 可能会发生这种情况, 因为该节点正在发出信"
 "号或正在调用函数. 这会导致游戏崩溃. 使用调试器运行Godot通常能捕获这种情况并向"
-"您发出警告."
+"你发出警告."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
@@ -301,7 +301,7 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"此两步过程的优点在于, 打包的场景可以保持加载状态并可以随时使用, 以便您可以根"
+"此两步过程的优点在于, 打包的场景可以保持加载状态并可以随时使用, 以便你可以根"
 "据需要创建尽可能多的实例. 这对于在活动场景中快速实例化多个敌人, 子弹, 和其他"
 "实体特别有用."
 

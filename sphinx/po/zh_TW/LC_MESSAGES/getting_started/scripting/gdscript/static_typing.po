@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -268,11 +268,11 @@ msgid ""
 "error."
 msgstr "若試著轉換型別為內建型別而失敗的話，Godot 會拋出錯誤。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
 msgid "Safe lines"
 msgstr "安全行"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:186
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -285,7 +285,7 @@ msgstr ""
 "中混合有型別與動態的程式碼，有時候 Godot 無法確保某個程式碼是否會在執行時產生"
 "錯誤。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:192
 msgid ""
 "This happens when you get a child node. Let's take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -300,7 +300,7 @@ msgstr ""
 "Timer 同時也會是其繼承的 ``Node`` 與 ``Object`` 兩個類別。使用動態 GDScript "
 "時，只要節點上有我們需要的方法，就不需要去在意節點是什麼型別。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:200
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
@@ -311,20 +311,20 @@ msgstr ""
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)`` …等。Godot 會確保該型"
 "別是否有效，而有效的話則會將腳本編輯器左邊的行號變成綠色。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "非安全行 (第 7 行) vs 安全行 (第 6 行與第 8 行)"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:212
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr "可以在編輯器設定中關閉安全行或更改安全行的色彩。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
 msgid "Define the return type of a function with the arrow ->"
 msgstr "使用箭頭 -> 來定義函式的回傳值型別"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:217
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
@@ -332,21 +332,21 @@ msgstr ""
 "要定義函式的回傳值型別，可以在函式定義後加上一個減號與右角括號 ``->`` ，再寫"
 "上回傳型別："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:223
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:225
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
 msgstr "型別 ``void`` 表示函式不回傳任何東西。與變數一樣，可以使用任何型別："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:232
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:234
 msgid "You can also use your own nodes as return types:"
 msgstr "也可以使用自定節點來作為回傳型別："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:248
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
 msgid "Typed or dynamic: stick to one style"
 msgstr "靜態或動態：只選擇一種風格"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:252
 #, fuzzy
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But "
@@ -358,7 +358,7 @@ msgstr ""
 "風格來在程式碼中保持一貫性，團隊成員也應固定來保持一貫。若大家都遵守同一個方"
 "針的話，也更容易一起工作並更快地閱讀理解他人的程式碼。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:258
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
 "discussed above. Here's an example of the same, empty script, in a dynamic "
@@ -367,11 +367,11 @@ msgstr ""
 "使用型別程式碼可能會需要寫更多程式碼，但同時也能享受剛才提到的優點。下列為使"
 "用動態風格的空白腳本範例："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:272
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:274
 msgid "And with static typing:"
 msgstr "加上靜態型別定義："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:288
 msgid ""
 "As you can see, you can also use types with the engine's virtual methods. "
 "Signal callbacks, like any methods, can also use types. Here's a "
@@ -380,18 +380,18 @@ msgstr ""
 "像上面這樣，在虛擬方法中也可以使用型別。訊號回呼與其他方法一樣也可以使用型"
 "別。下列為動態風格的 ``body_entered`` 訊號範例："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:295
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:297
 msgid "And the same callback, with type hints:"
 msgstr "而相同的回呼，加上型別定義："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:304
 msgid ""
 "You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
 "``CollisionObject2D`` 可以自由替換為任何自定型別，並自動轉換參數的型別："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:315
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it's "
@@ -402,22 +402,22 @@ msgstr ""
 "bullet 是專案中的 ``Bullet`` 節點。若 bullet 是其他如 ``Area2D`` 之類沒有繼"
 "承 ``Bullet`` 的節點，則 ``bullet`` 變數會是 ``null`` 。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid "Warning system"
 msgstr "警告系統"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:325
 msgid ""
 "Documentation about the GDScript warning system has been moved to :ref:"
 "`doc_gdscript_warning_system`."
 msgstr ""
 "有關 GDScript 警告系統的文件已移至 :ref:`doc_gdscript_warning_system` 。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid "Cases where you can't specify types"
 msgstr "無法指定型別的情況"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:331
 msgid ""
 "To wrap up this introduction, let's cover a few cases where you can't use "
 "type hints. All the examples below **will trigger errors**."
@@ -425,17 +425,17 @@ msgstr ""
 "在結束這篇教學前，我們再來說說無法使用型別定義的一些情況。接下來所有的例子都"
 "會 **觸發錯誤** 。"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:332
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:334
 msgid "You can't use Enums as types:"
 msgstr "列舉類型不能作為型別定義："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:341
 msgid ""
 "You can't specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr "無法為陣列中個別成員指定型別。下列例子會產生錯誤："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:346
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:348
 msgid ""
 "You can't force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
@@ -444,15 +444,15 @@ msgstr ""
 "無法強制在 ``for`` 迴圈上指定型別，因為 ``for`` 關鍵字迴圈上的每個元素都有不"
 "同的型別。也就是說， **不能** 這樣寫："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:358
 msgid "Two scripts can't depend on each other in a cyclic fashion:"
 msgstr "兩個腳本不能互相依賴，會導致循環："
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Summary"
 msgstr "總結"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:383
 msgid ""
 "Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
 "helps you write more structured code, avoid common errors, and create "

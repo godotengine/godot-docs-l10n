@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid ""
 "contribute."
 msgstr ""
 "但参考手册尚未完善. 有些方法, 变量和信号缺乏描述. 其他则随着最新版本进行了更"
-"改, 需要更新. 开发人员不能自己编写整个参考手册.Godot需要您和我们所有人为此做"
+"改, 需要更新. 开发人员不能自己编写整个参考手册.Godot需要你和我们所有人为此做"
 "出贡献."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:16
@@ -58,7 +58,7 @@ msgid ""
 "comment in an existing one) to let others know so they don't start working "
 "on the same thing too."
 msgstr ""
-"**重要:** 如果您打算进行较大的更改或做出更大的贡献, 通常最好创建一个问题(或在"
+"**重要:** 如果你打算进行较大的更改或做出更大的贡献, 通常最好创建一个问题(或在"
 "现有问题中发表评论), 让其他人知道, 以便他们不会也开始从事同一件事."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:21
@@ -93,7 +93,7 @@ msgstr "分叉 `Godot 存储库 <https://github.com/godotengine/godot>`_"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:32
 msgid "Clone your fork on your computer"
-msgstr "在电脑上克隆您的分叉"
+msgstr "在电脑上克隆你的分叉"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:33
 msgid "Edit the class file in ``doc/classes/`` to write documentation"
@@ -101,7 +101,7 @@ msgstr "在 ``doc/classes/`` 中编辑类文件以写入文档"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:34
 msgid "Commit your changes and push them to your fork"
-msgstr "提交您的更改并把它们推到您的分叉上"
+msgstr "提交你的更改并把它们推到你的分叉上"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:35
 msgid "Make a pull request on the Godot repository"
@@ -138,7 +138,7 @@ msgstr "保持分叉与其他贡献者同步"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:46
 msgid "Create a pull request so your improvements end in the official docs"
-msgstr "创建拉取请求, 以便您的改进最终在官方文档中"
+msgstr "创建拉取请求, 以便你的改进最终在官方文档中"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:48
 msgid ""
@@ -156,7 +156,7 @@ msgstr "分叉Godot"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:53
 msgid "Fork the Godot Engine into a GitHub repository of your own."
-msgstr "分叉Godot引擎到您自己的GitHub存储库."
+msgstr "分叉Godot引擎到你自己的GitHub存储库."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:55
 msgid "Clone the repository on your computer:"
@@ -176,7 +176,7 @@ msgid ""
 "The new branch is the same as your master branch, until you start to write "
 "API docs. In the ``doc/`` folder, you'll find the class reference."
 msgstr ""
-"在您开始编写API文档之前, 新分支与主分支相同. 在 ``doc /`` 文件夹中, 您将找到"
+"在你开始编写API文档之前, 新分支与主分支相同. 在 ``doc /`` 文件夹中, 你将找到"
 "类参考手册."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:70
@@ -189,20 +189,20 @@ msgid ""
 "will fall behind it, and you'll have to synchronize it. Especially if other "
 "contributors update the class reference while you work on it."
 msgstr ""
-"其他编写者为Godot的文档做出了贡献. 您的本地存储库将落后于它, 您将不得不同步"
-"它. 特别是如果其他贡献者在您处理它时更新类参考手册."
+"其他编写者为Godot的文档做出了贡献. 你的本地存储库将落后于它, 你将不得不同步"
+"它. 特别是如果其他贡献者在你处理它时更新类参考手册."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:74
 msgid ""
 "First add an ``upstream`` git *remote* to work with. Remotes are links to "
 "online repositories you can download new files from."
 msgstr ""
-"首先添加一个 ``upstream`` git *remote* 来使用. 远程数据库是您可以从在线存储库"
+"首先添加一个 ``upstream`` git *remote* 来使用. 远程数据库是你可以从在线存储库"
 "中下载新文件的链接."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:80
 msgid "You can check the list of all remote servers with:"
-msgstr "您可以使用以下命令检查所有远程服务器的列表:"
+msgstr "你可以使用以下命令检查所有远程服务器的列表:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:86
 msgid ""
@@ -224,13 +224,13 @@ msgid ""
 "Godot repository. Then, it will reapply your local changes on top."
 msgstr ""
 "此命令将首先 ``获取(fetch)``, 或下载最新版本的Godot存储库. 然后, 它将重新应用"
-"您的本地更改."
+"你的本地更改."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:104
 msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
-msgstr "如果您进行了更改, 且不希望保留在本地分支中, 则请使用以下命令:"
+msgstr "如果你进行了更改, 且不希望保留在本地分支中, 则请使用以下命令:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:111
 msgid ""
@@ -270,8 +270,8 @@ msgid ""
 "`doc_introduction_to_the_buildsystem` page), and then run the following "
 "command (assuming 64-bit Linux):"
 msgstr ""
-"在源代码中修改类时, 文档模板可能会过时. 为了确保您正在编辑最新版本, 首先需要"
-"编译Godot(您可以按照 :ref:`doc_introduction_to_the_buildsystem` 页面), 然后运"
+"在源代码中修改类时, 文档模板可能会过时. 为了确保你正在编辑最新版本, 首先需要"
+"编译Godot(你可以按照 :ref:`doc_introduction_to_the_buildsystem` 页面), 然后运"
 "行以下命令(假设64位Linux):"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:133
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:140
 msgid "You are now ready to edit this file to add stuff."
-msgstr "您现在可以编辑此文件以添加内容."
+msgstr "你现在可以编辑此文件以添加内容."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:142
 msgid ""
@@ -296,24 +296,24 @@ msgid ""
 "forcefully need to go through these steps (unless you know that the class "
 "you plan to edit *has* been modified recently)."
 msgstr ""
-"**注意:** 如果最近已由其他撰稿人完成, 则您不必强行执行这些步骤(除非您知道您计"
+"**注意:** 如果最近已由其他撰稿人完成, 则你不必强行执行这些步骤(除非你知道你计"
 "划编辑的类最近 *已* 被修改过)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:145
 msgid "Push and request a pull of your changes"
-msgstr "推送并请求拉取您的更改"
+msgstr "推送并请求拉取你的更改"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:147
 msgid ""
 "Once your modifications are finished, push your changes on your GitHub "
 "repository:"
-msgstr "完成修改后, 在GitHub存储库上推送您的更改:"
+msgstr "完成修改后, 在GitHub存储库上推送你的更改:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:156
 msgid ""
 "When it's done, you can ask for a Pull Request via the GitHub UI of your "
 "Godot fork."
-msgstr "完成后, 您可以通过Godot分叉的GitHub UI请求拉取请求."
+msgstr "完成后, 你可以通过Godot分叉的GitHub UI请求拉取请求."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:160
 msgid ""
@@ -337,7 +337,7 @@ msgstr ""
 msgid ""
 "TL;DR: If you don't know what you're doing exactly, do not edit files from "
 "GitHub."
-msgstr "总结: 如果您不知道自己在做什么, 请不要编辑GitHub中的文件."
+msgstr "总结: 如果你不知道自己在做什么, 请不要编辑GitHub中的文件."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:165
 msgid "How to edit class XML"
@@ -351,7 +351,7 @@ msgid ""
 "and updates the XML automatically."
 msgstr ""
 "在 ``doc/classes/`` 中编辑所选类的文件以更新类参考手册. 该文件夹包含每个类的"
-"XML文件.XML列出了您在类参考手册中找到的常量和方法.Godot自动生成并更新XML."
+"XML文件.XML列出了你在类参考手册中找到的常量和方法.Godot自动生成并更新XML."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:169
 msgid ""
@@ -423,7 +423,7 @@ msgid ""
 "line in the XML file will result in a new paragraph."
 msgstr ""
 "用清晰简单的语言编写. 始终遵循 :ref:`撰写指南 <doc_docs_writing_guidelines>` "
-"以使您的描述简短易读. 在描述中 **不要留下空行** :XML文件中的每一行都将生成一"
+"以使你的描述简短易读. 在描述中 **不要留下空行** :XML文件中的每一行都将生成一"
 "个新段落."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:189
@@ -697,7 +697,7 @@ msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
-"没问题. 将其留下, 并在您请求提取更改时列出跳过的方法. 别的编写者会处理它."
+"没问题. 将其留下, 并在你请求提取更改时列出跳过的方法. 别的编写者会处理它."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:313
 msgid ""
@@ -705,7 +705,7 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
-"您仍然可以在GitHub上查看Godot源代码中方法的实现. 此外, 如果您有疑问, 请随时"
+"你仍然可以在GitHub上查看Godot源代码中方法的实现. 此外, 如果你有疑问, 请随时"
 "在 `问答网站 <https://godotengine.org/qa/>`__ 和IRC(freenode, #godotengine)上"
 "询问."
 

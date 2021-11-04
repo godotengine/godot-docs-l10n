@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,15 +131,15 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:117
+#: ../../docs/development/compiling/optimizing_for_size.rst:116
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:'doc_overriding_build_options'。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:120
+#: ../../docs/development/compiling/optimizing_for_size.rst:119
 msgid "Optimizing for size instead of speed"
 msgstr "スピードの代わりにサイズを最適化する"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:121
 #, fuzzy
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
@@ -148,17 +148,17 @@ msgstr ""
 "Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
 "するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:129
+#: ../../docs/development/compiling/optimizing_for_size.rst:128
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 "WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
 "なっています。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:132
+#: ../../docs/development/compiling/optimizing_for_size.rst:131
 msgid "Compiling with link-time optimization"
 msgstr "リンク時最適化を使用したコンパイル"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:134
+#: ../../docs/development/compiling/optimizing_for_size.rst:133
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -169,7 +169,7 @@ msgstr ""
 "り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
 "排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:143
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 #, fuzzy
 msgid ""
 "Linking becomes much slower and more RAM consuming with this option, so it "
@@ -178,11 +178,11 @@ msgstr ""
 "このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
 "要があります。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:147
+#: ../../docs/development/compiling/optimizing_for_size.rst:146
 msgid "Stripping binaries"
 msgstr "バイナリの除去"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:148
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""

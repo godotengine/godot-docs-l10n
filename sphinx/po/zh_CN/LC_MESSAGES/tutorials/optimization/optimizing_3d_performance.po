@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,14 +72,10 @@ msgstr ""
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:33
 msgid ""
 "One way we can potentially reduce the amount to be rendered is to take "
-"advantage of occlusion. As of Godot 3.3, there is no built in support for "
-"occlusion in Godot. However, with careful design you can still get many of "
-"the advantages."
+"advantage of occlusion."
 msgstr ""
-"我们有可能减少渲染量的一个方法是利用遮挡. 从Godot 3.3开始,Godot中没有内置的闭"
-"塞支持. 然而, 通过精心设计, 你仍然可以获得许多优势."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:37
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:36
 msgid ""
 "For instance, in our city street scenario, you may be able to work out in "
 "advance that you can only see two other streets, ``B`` and ``C``, from "
@@ -88,48 +84,70 @@ msgid ""
 "``A`` (perhaps using Godot Areas), then you can hide the other streets."
 msgstr ""
 "例如, 在我们的城市街道场景中, 你可能会事先计算出, 从街道 ``A`` 只能看到另外两"
-"条街道,``B`` 和 ``C``.``D`` 到 ``Z`` 的街道是隐藏的. 为了利用遮挡的优势, 你所"
-"要做的就是计算出什么时候你的观察者在街道 ``A`` 中(也许使用Godot区域), 然后你"
-"就可以隐藏其他街道."
+"条街道, ``B`` 和 ``C``. ``D`` 到 ``Z`` 的街道是隐藏的. 为了利用遮挡的优势, 你"
+"所要做的就是计算出什么时候你的观察者在街道 ``A`` 中(也许使用Godot区域), 然后"
+"你就可以隐藏其他街道."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:43
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:42
+#, fuzzy
 msgid ""
-"This is a manual version of what is known as a \"potentially visible set\". "
-"It is a very powerful technique for speeding up rendering. You can also use "
-"it to restrict physics or AI to the local area, and speed these up as well "
-"as rendering."
+"This example is a manual version of what is known as a *potentially visible "
+"set*. It is a very powerful technique for speeding up rendering. You can "
+"also use it to restrict physics or AI to the local area, and speed these up "
+"as well as rendering."
 msgstr ""
 "这是一个手动版本的所谓 \"潜在可见集\". 这是一种非常强大的技术, 可以加快渲染速"
 "度. 你也可以用它将物理或AI限制在局部区域, 并加快这些以及渲染的速度."
 
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:48
+#, fuzzy
+msgid "Portal Rendering"
+msgstr "渲染"
+
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:50
 msgid ""
-"In some cases, you may have to adapt your level design to add more occlusion "
-"opportunities. For example, you may have to add more walls to prevent the "
-"player from seeing too far away, which would decrease performance due to the "
-"lost opportunies for occlusion culling."
+"However, there is a much easier way to take advantage of occlusion. Godot "
+"features an advanced portal rendering system, which can perform occlusion "
+"culling from cameras and lights. See :ref:`doc_rooms_and_portals`."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:54
+msgid ""
+"This is not a fully automatic system and it requires some manual setup. "
+"However, it potentially offers significant performance increases."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:59
+#, fuzzy
+msgid ""
+"In some cases, you can adapt your level design to add more occlusion "
+"opportunities. For example, you can add more walls to prevent the player "
+"from seeing too far away, which would decrease performance due to the lost "
+"opportunies for occlusion culling."
 msgstr ""
 "在某些情况下, 你可能不得不调整你的关卡设计来增加更多的遮挡机会. 例如, 你可能"
 "需要增加更多的墙来防止玩家看得太远, 这样会因为失去了遮挡机会而降低性能."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:56
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
 msgid "Other occlusion techniques"
 msgstr "其他遮挡技术"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:58
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:67
+#, fuzzy
 msgid ""
-"There are other occlusion techniques such as portals, automatic PVS, and "
-"raster-based occlusion culling. Some of these may be available through add-"
-"ons and may be available in core Godot in the future."
+"As well as the portal system and manual methods, there are various other "
+"occlusion techniques such as raster-based occlusion culling. Some of these "
+"may be available through add-ons or may be available in core Godot in the "
+"future."
 msgstr ""
 "还有其他的遮挡技术, 如门户, 自动PVS和基于光栅的遮挡剔除. 其中一些技术可以通过"
 "附加组件获得, 将来可能会在核心Godot中获得."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:63
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:72
 msgid "Transparent objects"
 msgstr "透明物体"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:74
 msgid ""
 "Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader "
 "<class_Shader>` to improve performance. This, however, can not be done with "
@@ -144,17 +162,17 @@ msgstr ""
 "染, 以便与后面的物体混合. 因此, **尽量少使用透明对象** . 如果一个物体有一小部"
 "分是透明的, 尽量让这部分成为一个独立的表面, 有自己的材质."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:73
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:82
 msgid ""
 "For more information, see the :ref:`GPU optimizations "
 "<doc_gpu_optimization>` doc."
 msgstr "更多信息, 请参阅 :ref:`GPU optimizations <doc_gpu_optimization>` 文档."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:77
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:86
 msgid "Level of detail (LOD)"
 msgstr "细节程度(LOD)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:79
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:88
 msgid ""
 "In some situations, particularly at a distance, it can be a good idea to "
 "**replace complex geometry with simpler versions**. The end user will "
@@ -167,11 +185,11 @@ msgstr ""
 "最终用户可能看不出什么区别. 考虑看看远处的大量树木. 有几种策略可以替换不同距"
 "离的模型. 您可以使用较低的多边形模型, 或者使用透明度来模拟更复杂的几何体."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:87
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:96
 msgid "Billboards and imposters"
 msgstr "Billboards和imposters"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:89
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:98
 msgid ""
 "The simplest version of using transparency to deal with LOD is billboards. "
 "For example, you can use a single transparent quad to represent a tree at "
@@ -185,7 +203,7 @@ msgstr ""
 "下, 透明度可能会开始吞噬填充率(关于填充率的更多信息, 请参见 :ref:"
 "`doc_gpu_optimization`)."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:95
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:104
 msgid ""
 "An alternative is to render not just one tree, but a number of trees "
 "together as a group. This can be especially effective if you can see an area "
@@ -194,7 +212,7 @@ msgstr ""
 "另一种方法是不只渲染一棵树, 而是将一些树作为一组来渲染. 如果你能看到一个区"
 "域, 但在游戏中不能实际接近它, 这可能是特别有效的."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:99
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:108
 msgid ""
 "You can make imposters by pre-rendering views of an object at different "
 "angles. Or you can even go one step further, and periodically re-render a "
@@ -208,11 +226,11 @@ msgstr ""
 "需要将观察者移动相当长的距离, 视角才会发生显著变化. 这可能是复杂的工作, 但可"
 "能是值得的, 这取决于你正在制作的项目类型."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:107
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:116
 msgid "Use instancing (MultiMesh)"
 msgstr "使用多网格(MultiMesh)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:109
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
 msgid ""
 "If several identical objects have to be drawn in the same place or nearby, "
 "try using :ref:`MultiMesh <class_MultiMesh>` instead. MultiMesh allows the "
@@ -224,15 +242,15 @@ msgstr ""
 "<class_MultiMesh>` 来代替.MultiMesh允许以很小的性能代价来绘制成千上万的对象, "
 "这使得它非常适合用于绘制羊群, 草地, 粒子以及其他任何有成千上万相同对象的地方."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:115
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
 msgid "Also see the :ref:`Using MultiMesh <doc_using_multimesh>` doc."
 msgstr "另请参阅 :ref:`Using MultiMesh <doc_using_multimesh>` 文档."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:127
 msgid "Bake lighting"
 msgstr "烘焙照明"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:120
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:129
 msgid ""
 "Lighting objects is one of the most costly rendering operations. Realtime "
 "lighting, shadows (especially multiple lights), and GI are especially "
@@ -242,7 +260,7 @@ msgstr ""
 "对物体进行照明是最昂贵的渲染操作之一. 实时光照, 阴影(尤其是很多灯光)和 GI 都"
 "特别昂贵. 对于低功率的移动设备来说, 它们可能根本无法处理."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
 msgid ""
 "**Consider using baked lighting**, especially for mobile. This can look "
 "fantastic, but has the downside that it will not be dynamic. Sometimes, this "
@@ -251,7 +269,7 @@ msgstr ""
 "**考虑使用烘焙照明** , 尤其是移动端, 这看起来很棒, 但有一个缺点, 那就是它不是"
 "动态的, 有时, 这需要做出的权衡."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:128
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:137
 msgid ""
 "In general, if several lights need to affect a scene, it's best to use :ref:"
 "`doc_baked_lightmaps`. Baking can also improve the scene quality by adding "
@@ -260,11 +278,11 @@ msgstr ""
 "一般来说, 如果几个灯光需要影响一个场景, 最好使用 :ref:"
 "`doc_baked_lightmaps` . 烘焙也可以通过增加间接光的反弹来提高场景的质量."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
 msgid "Animation and skinning"
 msgstr "动画和皮肤"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:144
 msgid ""
 "Animation and vertex animation such as skinning and morphing can be very "
 "expensive on some platforms. You may need to lower the polycount "
@@ -274,17 +292,17 @@ msgstr ""
 "在某些平台上, 动画和顶点动画(如换肤和变形)可能非常昂贵. 你可能需要大大降低动"
 "画模型的多边形数量, 或者任何时候限制屏幕上的模型数量."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:140
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
 msgid "Large worlds"
 msgstr "庞大的世界"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:151
 msgid ""
 "If you are making large worlds, there are different considerations than what "
 "you may be familiar with from smaller games."
 msgstr "如果您要制作大型游戏, 则与小型游戏可能会有所不同."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:145
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:154
 msgid ""
 "Large worlds may need to be built in tiles that can be loaded on demand as "
 "you move around the world. This can prevent memory use from getting out of "
@@ -293,7 +311,7 @@ msgstr ""
 "大型的世界可能需要用碎片建立, 可以在你在世界中移动时按需加载, 这可以防止内存"
 "使用失控, 也可以将所需的处理限制在局部区域."
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:158
 msgid ""
 "There may also be rendering and physics glitches due to floating point error "
 "in large worlds. You may be able to use techniques such as orienting the "

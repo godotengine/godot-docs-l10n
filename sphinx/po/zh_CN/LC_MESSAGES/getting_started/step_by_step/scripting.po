@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "编写脚本"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -75,21 +75,21 @@ msgstr "简单, 优雅, 设计上为Lua, Python, Squirrel等语言用户所熟�
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "快速加载和编译."
+msgstr "加载和编译非常快."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
-"编辑器集成非常令人愉快, 有属于被编辑场景的节点, 信号, 以及其它条目的代码补全"
-"功能."
+"内置的编辑器拥有着对于节点, 信号, 以及其它很多条目的代码补全功能, 让人工作时"
+"事半功倍."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
-msgstr "有内建的矢量类型(比如Vector, Transform等), 大量使用线性代数时非常有效."
+msgstr "内建的矢量类型(比如Vector, Transform等)让线性代数的大量使用效率极高."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -121,7 +121,7 @@ msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
-"如果还没决定好, 并且对编程有经验, 特别是动态类型语言, 那就选择GDScript吧！"
+"如果还没决定好, 并且有编程经验, 特别是动态类型语言, 那就选择GDScript吧！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
@@ -161,14 +161,14 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
-"由于微软的C#是游戏开发者的最爱, 我们增加了官方支持.C#是一种成熟的语言, 人们为"
-"它编写了大量代码, 而且支持增加得益于微软的慷慨捐赠."
+"由于微软的C#是游戏开发者的最爱，我们增加了对C#的官方支持。C#是一个成熟的语"
+"言，而且人们为它编写了大量代码。能够对它的支持得益于微软慷慨的馈赠。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
-msgstr "它在性能和易用性之间有很好的折衷, 尽管必须注意它的垃圾回收器."
+msgstr "它在性能和易用性之间有很好的折衷, 尽管必须注意它的垃圾回收机制."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -191,8 +191,8 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
-"最后是3.0版本的一个亮点:GDNative允许使用C++编写脚本, 无需重新编译(甚至都不用"
-"重启)Godot."
+"最后是3.0版本的一个最大的亮点：GDNative允许使用C++编写脚本，无需重新编译(甚至"
+"都不用重启)Godot。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -320,7 +320,7 @@ msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"脚本创建对话框会弹出. 这个对话框允许您设置脚本语言, 类名和其它相关选项."
+"脚本创建对话框会弹出. 这个对话框允许你设置脚本语言, 类名和其它相关选项."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:141
 msgid ""
@@ -347,7 +347,7 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
-"然后将创建脚本并将其添加到节点上. 您可以在 \"场景\" 选项卡中的节点旁边的 \"打"
+"然后将创建脚本并将其添加到节点上. 你可以在 \"场景\" 选项卡中的节点旁边的 \"打"
 "开脚本\" 图标, 以及 \"属性检查器\" 下的脚本属性中看到:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:158
@@ -365,7 +365,7 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"这里没有多少内容.``_ready()`` 函数在节点及其所有子节点进入活动场景时被调用. "
+"这里没有多少内容. ``_ready()`` 函数在节点及其所有子节点进入活动场景时被调用. "
 "**注意:** ``_ready()`` 并不是构造器；构造器是 ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
@@ -395,7 +395,7 @@ msgid ""
 "define custom signals in your own scripts."
 msgstr ""
 "当某种特定类型的动作发生时, 信号被 \"发出\", 并且它们可以连接到任意脚本实例的"
-"任意函数. 信号主要用于GUI节点, 尽管其他节点也有信号, 您甚至可以在自己的脚本中"
+"任意函数. 信号主要用于GUI节点, 尽管其他节点也有信号, 你甚至可以在自己的脚本中"
 "定义自定义信号."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:188
@@ -476,7 +476,7 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"为了方便起见, 删除 ``extends Panel`` 下面的所有内容. 您将手动填写脚本的其余部"
+"为了方便起见, 删除 ``extends Panel`` 下面的所有内容. 你将手动填写脚本的其余部"
 "分."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:225
@@ -507,11 +507,11 @@ msgstr "脚本最终看起来是这个样子:"
 #: ../../docs/getting_started/step_by_step/scripting.rst:306
 msgid ""
 "Run the scene and press the button. You should get the following result:"
-msgstr "运行场景并按下按钮, 您应该得到以下结果:"
+msgstr "运行场景并按下按钮, 你应该得到以下结果:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:310
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "您好啊！恭喜您完成了您的第一个场景脚本."
+msgstr "你好啊！恭喜你完成了你的第一个场景脚本."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
@@ -520,7 +520,7 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-"关于本教程的一个常见的误解是 ``get_node(path)`` 的工作原理. 对于给定的节点,"
+"关于本教程的一个常见的误解是 ``get_node(path)`` 的工作原理. 对于给定的节点, "
 "``get_node(path)`` 搜索其直接子节点. 在上面的代码中, 这意味着Button必须是"
 "Panel的子项. 如果Button是Label的子项, 则获得它的代码是:"
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,15 +41,21 @@ msgid ""
 "classes they support."
 msgstr "如果使用其他语言(C#, C++), 它们支持的线程类可能会更容易使用."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:18
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:19
+msgid ""
+"Before using a built-in class in a thread, read :ref:`doc_thread_safe_apis` "
+"first to check whether it can be safely used in a thread."
+msgstr ""
+
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:23
 msgid "Creating a Thread"
 msgstr "创建线程"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:20
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:25
 msgid "Creating a thread is very simple, just use the following code:"
 msgstr "创建一个线程非常简单, 只需使用以下代码:"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:46
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:51
 msgid ""
 "Your function will, then, run in a separate thread until it returns. Even if "
 "the function has returned already, the thread must collect it, so call :ref:"
@@ -61,11 +67,11 @@ msgstr ""
 "wait_to_finish()<class_Thread_method_wait_to_finish>` , 它将等待线程完成(如果"
 "还没有完成), 然后妥善处理它."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:52
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:57
 msgid "Mutexes"
 msgstr "Mutexes"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:54
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:59
 msgid ""
 "Accessing objects or data from multiple threads is not always supported (if "
 "you do it, it will cause unexpected behaviors or crashes). Read the :ref:"
@@ -75,7 +81,7 @@ msgstr ""
 "并不总是支持从多个线程访问对象或数据(如果你这样做, 会导致意外行为或崩溃). 请"
 "阅读 :ref:`doc_thread_safe_apis` 文档, 了解哪些引擎API支持多线程访问."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:59
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:64
 msgid ""
 "When processing your own data or calling your own functions, as a rule, try "
 "to avoid accessing the same data directly from different threads. You may "
@@ -87,7 +93,7 @@ msgstr ""
 "相同的数据. 你可能会遇到同步问题, 因为数据被修改后,CPU核之间并不总是更新. 当"
 "从不同线程访问一个数据时, 一定要使用 :ref:`Mutex<class_Mutex>` ."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:65
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:70
 msgid ""
 "When calling :ref:`Mutex.lock()<class_Mutex_method_lock>`, a thread ensures "
 "that all other threads will be blocked (put on suspended state) if they try "
@@ -100,15 +106,15 @@ msgstr ""
 "`Mutex.unlock()<class_Mutex_method_unlock>` 来解锁该mutex时, 其他线程将被允许"
 "继续锁定(但每次只能锁定一个)."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:71
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:76
 msgid "Here is an example of using a Mutex:"
 msgstr "下面是一个使用 Mutex 的例子:"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:106
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:111
 msgid "Semaphores"
 msgstr "Semaphores"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:108
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:113
 msgid ""
 "Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
 "it when to work and let it suspend when it isn't doing anything. For this, :"
@@ -121,7 +127,7 @@ msgstr ""
 "函数 :ref:`Semaphore.wait()<class_Semaphore_method_wait>` 来暂停它的工作, 直"
 "到有数据到达."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:114
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:119
 msgid ""
 "The main thread, instead, uses :ref:`Semaphore."
 "post()<class_Semaphore_method_post>` to signal that data is ready to be "

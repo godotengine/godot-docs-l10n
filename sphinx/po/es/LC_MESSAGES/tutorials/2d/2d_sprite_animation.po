@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you'll learn how to create 2D animated characters with the "
 "AnimatedSprite class and the AnimationPlayer. Typically, when you create or "
@@ -34,9 +33,9 @@ msgid ""
 "individual images or as a single sprite sheet containing all the animation's "
 "frames. Both can be animated in Godot with the AnimatedSprite class."
 msgstr ""
-"En este tutorial aprenderás cómo crear personajes 2D animados con la case "
+"En este tutorial aprenderás cómo crear personajes 2D animados con la clase "
 "AnimatedSprite y AnimationPlayer. Típicamente, cuando creas o descargas un "
-"personaje animado, este viene en uno de estos dos modos: como imágenes "
+"personaje animado, éste viene en uno de estos dos modos: como imágenes "
 "individuales o como una sola hoja de sprites conteniendo todos los frames de "
 "la animación. Ambos pueden ser animados en Godot con la clase AnimatedSprite."
 
@@ -191,7 +190,6 @@ msgstr ""
 "proyecto."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
-#, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
 "images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
@@ -199,23 +197,22 @@ msgid ""
 msgstr ""
 "Configura tu árbol de escena de la misma forma que lo hiciste previamente "
 "cuando usaste imágenes individuales. Selecciona el ``AnimatedSprite`` y en "
-"su propiedad *SpriteFrames*, selecciona \"New SpriteFrames\"."
+"su propiedad *Frames*, selecciona \"Nuevo SpriteFrames\"."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
-#, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource. This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
-"Haz clic en el nuevo recurso SpriteFrames. Esta vez aparecerá un panel en la "
-"parte inferior, selecciona \"Añadir frames desde un Sprite Sheet\"."
+"Haz clic en el nuevo recurso de SpriteFrames. Esta vez, cuando aparezca un "
+"panel en la parte inferior, selecciona \"Añadir Frames desde un Sprite Sheet"
+"\"."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
 msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr "Se te pedirá que abras un archivo. Selecciona tu hoja de sprites."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:133
-#, fuzzy
 msgid ""
 "A new window will open, showing your sprite sheet. The first thing you will "
 "need to do is to change the number of vertical and horizontal images in your "
@@ -238,7 +235,6 @@ msgstr ""
 "haremos clic en \"Añadir 4 cuadros\" para crear la animación."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:141
-#, fuzzy
 msgid ""
 "You will now see your animation under the list of animations in the bottom "
 "panel. Double click on default to change the name of the animation to jump."
@@ -247,7 +243,6 @@ msgstr ""
 "Haz doble clic sobre default para cambiar el nombre de la animación a jump."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:145
-#, fuzzy
 msgid ""
 "Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,6 +124,10 @@ msgid ""
 "editing, the Remote Scene tree dock and other features that rely on the "
 "debugger protocol will not work."
 msgstr ""
+"Sin soporte para depuración. Esto significa que la depuración/creación de "
+"perfiles de GDScript, la edición de escenas en vivo, el panel del árbol de "
+"Escena Remota y otras características que dependen del protocolo del "
+"depurador no funcionarán."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid ""
@@ -139,7 +143,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:56
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
-"El editor no te avisa cuando cierres una pestaña con modificaciones no "
+"El editor no le advertirá cuando cierre la pestaña con modificaciones no "
 "guardadas."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:57
@@ -157,17 +161,16 @@ msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
 msgstr ""
-"No es probable que se permitan las herramientas siguentes por las "
-"limitaciones inherentes del plataforma Web:"
+"Las siguientes características son poco probables de ser soportadas debido a "
+"las limitaciones inherentes de la plataforma Web:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:64
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "No hay soporte para salida MIDI todavía."
+msgstr "Sin soporte para editores de scripts externos."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:65
 msgid "No support for Android one-click deploy."
-msgstr "Pasos para el despliegue con un solo clic."
+msgstr "Sin soporte para el deploy en Android con sólo un click."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:69
 msgid ""
@@ -181,13 +184,12 @@ msgstr ""
 "conocidos."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:73
-#, fuzzy
 msgid "Importing a project"
-msgstr "Importando el proyecto"
+msgstr "Importando un proyecto"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:75
 msgid "To import an existing project, the current process is as follows:"
-msgstr "Para importar un proyecto existente:"
+msgstr "Para importar un proyecto existente, el proceso actual es como sigue:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:77
 msgid ""
@@ -203,8 +205,8 @@ msgid ""
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""
-"Ejecute el editor haciendo clic en **Start Godot editor**. El gestor de "
-"proyectos Godot debería aparecer después de 10-20 segundos. En máquinas o "
+"Ejecute el editor haciendo clic en **Iniciar editor Godot**. El gestor de "
+"proyectos de Godot debería aparecer después de 10-20 segundos. En máquinas o "
 "conexiones más lentas, la carga puede tardar hasta un minuto."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:82
@@ -219,7 +221,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:85
 msgid "Click **Install & Edit** and the project will open in the editor."
-msgstr "Haga clic en **Crear y editar ** y el proyecto se abrirá en el editor."
+msgstr ""
+"Haga clic en **Instalar y editar ** y el proyecto se abrirá en el editor."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:89
 msgid ""
@@ -250,10 +253,11 @@ msgid ""
 "project. Instead, when you run the project by clicking the Run button or "
 "pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
 msgstr ""
-"A diferencia de la versión nativa de Godot, el editor web está limitado usar "
-"una ventana única. Por lo tanto, no puede abrir una ventana nueva para "
-"ejectuar el proyecto. Cuando ejecutas el proyecto con el botón Run or la "
-"tecla :kbd:`F5`, aparecerá en lugar de la ventana del editor."
+"A diferencia de la versión nativa de Godot, el editor web está limitado a "
+"una sola ventana. Por lo tanto, no puede abrir una ventana nueva cuando el "
+"proyecto esté ejecutándose. En su lugar, cuando ejecute el proyecto haciendo "
+"clic en el botón Ejecutar o presionando: kbd: `F5`, aparecerá\" reemplazar\" "
+"la ventana del editor."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:104
 msgid ""
@@ -263,15 +267,14 @@ msgid ""
 "game or editor by clicking the **×** button next to those tabs."
 msgstr ""
 "El editor web dispone una manera alternativa de gestionar las ventanas del "
-"editor y del juego con pestañas. Puedes navegar entre las ventanas "
-"**Editor** y **Juego** con los botones superiores. Además puedes cerrar un "
-"juego en marcha or el editor con pulsar el botón **x** al lado de las "
-"pestañas."
+"editor y del juego (que ahora son \"pestañas\"). Puedes navegar entre las "
+"ventanas **Editor** y **Juego** con los botones superiores. Además puedes "
+"cerrar un juego en marcha o el editor con pulsar el botón **x** al lado de "
+"las pestañas."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:110
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "¿Dónde están mis prefabs?"
+msgstr "¿Dónde están los archivos de mi proyecto?"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:112
 msgid ""
@@ -280,9 +283,9 @@ msgid ""
 "regular folder on your machine, but is abstracted away in a database."
 msgstr ""
 "Debido a las limitaciones de seguridad del navegador, el editor guardará los "
-"archivos del proyecto en el almacenamiento de la base de datos indexada del "
+"archivos del proyecto en el almacenamiento conocido como IndexedDB del "
 "navegador. No se puede acceder a este almacenamiento como una carpeta normal "
-"en su máquina, pero se extrae en una base de datos."
+"en su máquina, pero es abstraído en una base de datos."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:116
 msgid ""

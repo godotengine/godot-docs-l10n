@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,290 +232,331 @@ msgid "``[url]{url}[/url]``"
 msgstr "``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
-msgid "Show {url} as such, underline it and make it clickable."
+msgid ""
+"Show {url} as such, underline it and make it clickable. **Must be handled "
+"with the \"meta_clicked\" signal to have an effect.** See :ref:"
+"`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 #, fuzzy
 msgid "**url (ref)**"
 msgstr "**url (ref)**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "``[url=<url>]{text}[/url]``"
 msgstr "``[url=<url>]{testo}[/url]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
-msgid "Makes {text} reference <url> (underlined and clickable)."
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
+msgid ""
+"Makes {text} reference <url> (underlined and clickable). **Must be handled "
+"with the \"meta_clicked\" signal to have an effect.** See :ref:"
+"`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 #, fuzzy
 msgid "**image**"
 msgstr "**immagine**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "``[img]{path}[/img]``"
 msgstr "``[img]{percorso}[/img]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "Insert image at resource {path}."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "**resized image**"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 #, fuzzy
 msgid "``[img=<width>]{path}[/img]``"
 msgstr "``[img=<width>]{path}[/img]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "Insert image at resource {path} using <width> (keeps ratio)."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 #, fuzzy
 msgid "``[img=<width>x<height>]{path}[/img]``"
 msgstr "``[img=<width>x<height>]{path}[/img]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "Insert image at resource {path} using <width>×<height>."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 #, fuzzy
 msgid "**font**"
 msgstr "**font**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "``[font=<path>]{text}[/font]``"
 msgstr "``[font=<percorso>]{testo}[/font]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "Use custom font at <path> for {text}."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 #, fuzzy
 msgid "**color**"
 msgstr "**colore**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "``[color=<code/name>]{text}[/color]``"
 msgstr "``[color=<codice/nome>]{testo}[/color]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:91
 #, fuzzy
 msgid "**table**"
 msgstr "**table**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:91
 #, fuzzy
 msgid "``[table=<number>]{cells}[/table]``"
 msgstr "``[table=<number>]{cells}[/table]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:91
 msgid "Creates a table with <number> of columns."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 #, fuzzy
 msgid "**cell**"
 msgstr "**cell**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 #, fuzzy
 msgid "``[cell]{text}[/cell]``"
 msgstr "``[cell]{text}[/cell]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 msgid "Adds cells with the {text} to the table."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:97
 msgid "Built-in color names"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:95
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:99
 msgid "List of valid color names for the [color=<name>] tag:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:97
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:101
 #, fuzzy
 msgid "aqua"
 msgstr "aqua"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:98
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:102
 #, fuzzy
 msgid "black"
 msgstr "black"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:99
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:103
 #, fuzzy
 msgid "blue"
 msgstr "blue"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:100
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:104
 #, fuzzy
 msgid "fuchsia"
 msgstr "fuchsia"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:101
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:105
 #, fuzzy
 msgid "gray"
 msgstr "gray"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:102
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:106
 #, fuzzy
 msgid "green"
 msgstr "green"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:103
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:107
 #, fuzzy
 msgid "lime"
 msgstr "lime"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:104
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:108
 #, fuzzy
 msgid "maroon"
 msgstr "maroon"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:105
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:109
 #, fuzzy
 msgid "navy"
 msgstr "navy"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:106
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:110
 #, fuzzy
 msgid "purple"
 msgstr "purple"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:107
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:111
 #, fuzzy
 msgid "red"
 msgstr "red"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:108
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:112
 #, fuzzy
 msgid "silver"
 msgstr "silver"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:109
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:113
 #, fuzzy
 msgid "teal"
 msgstr "teal"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:110
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:114
 #, fuzzy
 msgid "white"
 msgstr "white"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:111
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:115
 #, fuzzy
 msgid "yellow"
 msgstr "yellow"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:114
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:118
 msgid "Hexadecimal color codes"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:116
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:120
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``."
+"``[color=#ffffff]white[/color]``. Short RGB color codes such as ``#6f2`` "
+"(equivalent to ``#66ff22``) are also supported."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:118
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:123
 msgid ""
 "For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
-"alpha channel is the **first** component of the color code, not the last one."
+"alpha channel is the **first** component of the color code, not the last "
+"one. Short RGBA color codes such as ``#86f2`` (equivalent to ``#8866ff22``) "
+"are also supported."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:122
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:130
+msgid "Handling ``[url]`` tag clicks"
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:132
+msgid ""
+"By default, ``[url]`` tags do nothing when clicked. This is to allow "
+"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
+"a web browser."
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:135
+msgid ""
+"To handle clicked ``[url]`` tags, connect the RichTextLabel node's :ref:"
+"`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal to a script "
+"function."
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:138
+msgid ""
+"For example, the following method can be connected to ``meta_clicked`` to "
+"open clicked URLs using the user's default web browser::"
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:148
+msgid ""
+"For more advanced use cases, it's also possible to store JSON in an "
+"``[url]`` tag's option and parse it in the function that handles the "
+"``meta_clicked`` signal. For example: ``[url={\"example\": \"value\"}]JSON[/"
+"url]``"
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:153
 msgid "Image vertical offset"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:124
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:155
 msgid "You use a custom font for your image in order to align it vertically."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:126
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:157
 #, fuzzy
 msgid "Create a ``BitmapFont`` resource"
 msgstr "Creare le proprie risorse"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:127
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:158
 msgid ""
 "Set this bitmap font with a positive value for the ``ascent`` property, "
 "that's your height offset"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:128
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:159
 msgid ""
 "Set the BBCode tag this way: ``[font=<font-path>][img]{image-path}[/img][/"
 "font]``"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:162
 msgid "Animation effects"
 msgstr "Effetti d'animazione"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:133
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:164
 msgid ""
 "BBCode can also be used to create different text animation effects. Five "
 "customizable effects are provided out of the box, and you can easily create "
 "your own."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:137
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:168
 #, fuzzy
 msgid "Wave"
 msgstr "Onda"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:141
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:172
 msgid ""
 "Wave makes the text go up and down. Its tag format is ``[wave amp=50 freq=2]"
 "[/wave]``. ``amp`` controls how high and low the effect goes, and ``freq`` "
 "controls how fast the text goes up and down."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:146
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:177
 #, fuzzy
 msgid "Tornado"
 msgstr "Tornado"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:150
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:181
 msgid ""
 "Tornao makes the text move around in a circle. Its tag format is ``[tornado "
 "radius=5 freq=2][/tornado]``. ``radius`` is the radius of the circle that "
 "controls the offset, ``freq`` is how fast the text moves in a circle."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:156
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:187
 #, fuzzy
 msgid "Shake"
 msgstr "Scuotere"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:160
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:191
 msgid ""
 "Shake makes the text shake. Its tag format is ``[shake rate=5 level=10][/"
 "shake]``. ``rate`` controls how fast the text shakes, ``level`` controls how "
 "far the text is offset from the origin."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:165
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:196
 #, fuzzy
 msgid "Fade"
 msgstr "Dissolvenza"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:169
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:200
 msgid ""
 "Fade creates a fade effect over the text that is not animated. Its tag "
 "format is ``[fade start=4 length=14][/fade]``. ``start`` controls the "
@@ -524,12 +565,12 @@ msgid ""
 "take place."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:176
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:207
 #, fuzzy
 msgid "Rainbow"
 msgstr "Arcobaleno"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:180
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
 msgid ""
 "Rainbow gives the text a rainbow color that changes over time. Its tag "
 "format is ``[rainbow freq=0.2 sat=10 val=20][/rainbow]``. ``freq`` is the "
@@ -537,21 +578,22 @@ msgid ""
 "rainbow, ``val`` is the value of the rainbow."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:186
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:217
 msgid "Custom BBCode tags and text effects"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:188
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:219
 msgid ""
 "You can extend the :ref:`class_RichTextEffect` resource type to create your "
 "own custom BBCode tags. You begin by extending the :ref:"
 "`class_RichTextEffect` resource type. Add the ``tool`` prefix to your "
 "GDScript file if you wish to have these custom effects run within the editor "
 "itself. The RichTextLabel does not need to have a script attached, nor does "
-"it need to be running in ``tool`` mode."
+"it need to be running in ``tool`` mode. The new effect will be activable in "
+"the Inspector through the **Custom Effects** property."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:194
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:226
 msgid ""
 "There is only one function that you need to extend: "
 "``_process_custom_fx(char_fx)``. Optionally, you can also provide a custom "
@@ -560,12 +602,12 @@ msgid ""
 "to determine what the BBCode tag should be."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:200
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:232
 #, fuzzy
 msgid "``_process_custom_fx``"
 msgstr "``_process_custom_fx``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:202
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:234
 msgid ""
 "This is where the logic of each effect takes place and is called once per "
 "character during the draw phase of text rendering. This passes in a :ref:"
@@ -573,47 +615,47 @@ msgid ""
 "the associated character is rendered:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:206
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:238
 msgid ""
 "``identity`` specifies which custom effect is being processed. You should "
 "use that for code flow control."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:208
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:240
 msgid ""
 "``relative_index`` tells you how far into a given custom effect block you "
 "are in as an index."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:210
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:242
 msgid ""
 "``absolute_index`` tells you how far into the entire text you are as an "
 "index."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:243
 msgid ""
 "``elapsed_time`` is the total amount of time the text effect has been "
 "running."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:212
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:244
 msgid ""
 "``visible`` will tell you whether the character is visible or not and will "
 "also allow you to hide a given portion of text."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:214
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:246
 msgid ""
 "``offset`` is an offset position relative to where the given character "
 "should render under normal circumstances."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:216
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:248
 msgid "``color`` is the color of a given character."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:217
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:249
 msgid ""
 "Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
 "given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
@@ -623,7 +665,7 @@ msgid ""
 "its ` `env`` Dictionary. See below for more usage examples."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:223
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:255
 msgid ""
 "The last thing to note about this function is that it is necessary to return "
 "a boolean ``true`` value to verify that the effect processed correctly. This "
@@ -632,25 +674,25 @@ msgid ""
 "cropped up in their custom effect logic."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:228
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:260
 msgid "Here are some examples of custom effects:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:231
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:263
 #, fuzzy
 msgid "Ghost"
 msgstr "Fantasma"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:254
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:286
 #, fuzzy
 msgid "Pulse"
 msgstr "Impulso"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:281
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:313
 #, fuzzy
 msgid "Matrix"
 msgstr "Matrice"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:316
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:348
 msgid "This will add a few new BBCode commands, which can be used like so:"
 msgstr ""

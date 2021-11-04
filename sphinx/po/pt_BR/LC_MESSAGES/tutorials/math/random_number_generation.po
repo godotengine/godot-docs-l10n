@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,42 +88,42 @@ msgstr ""
 
 #: ../../docs/tutorials/math/random_number_generation.rst:45
 msgid ""
-"Putting it in your main scene script's ``_ready()`` method is a good choice::"
+"Putting it in your main scene script's ``_ready()`` method is a good choice:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:50
+#: ../../docs/tutorials/math/random_number_generation.rst:60
 msgid ""
 "You can also set a fixed random seed instead using :ref:`seed() "
 "<class_@GDScript_method_seed>`. Doing so will give you *deterministic* "
-"results across runs::"
+"results across runs:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:59
+#: ../../docs/tutorials/math/random_number_generation.rst:80
 msgid ""
 "When using the RandomNumberGenerator class, you should call ``randomize()`` "
-"on the instance since it has its own seed::"
+"on the instance since it has its own seed:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:66
+#: ../../docs/tutorials/math/random_number_generation.rst:95
 #, fuzzy
 msgid "Getting a random number"
 msgstr "Definindo uma cena principal"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:68
+#: ../../docs/tutorials/math/random_number_generation.rst:97
 msgid ""
 "Let's look at some of the most commonly used functions and methods to "
 "generate random numbers in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:71
+#: ../../docs/tutorials/math/random_number_generation.rst:100
 msgid ""
 "The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
 "number between 0 and 2^32-1. Since the maximum value is huge, you most "
 "likely want to use the modulo operator (``%``) to bound the result between 0 "
-"and the denominator::"
+"and the denominator:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:82
+#: ../../docs/tutorials/math/random_number_generation.rst:122
 msgid ""
 ":ref:`randf() <class_@GDScript_method_randf>` returns a random floating-"
 "point number between 0 and 1. This is useful to implement a :ref:"
@@ -131,46 +131,46 @@ msgid ""
 "other things."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:87
+#: ../../docs/tutorials/math/random_number_generation.rst:127
 msgid ""
 ":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
 "floating-point number following a `normal distribution <https://en.wikipedia."
 "org/wiki/Normal_distribution>`__. This means the returned value is more "
 "likely to be around the mean (0.0 by default), varying by the deviation (1.0 "
-"by default)::"
+"by default):"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:97
+#: ../../docs/tutorials/math/random_number_generation.rst:148
 msgid ""
 ":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
 "``from`` and ``to``, and returns a random floating-point number between "
-"``from`` and ``to``::"
+"``from`` and ``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:104
+#: ../../docs/tutorials/math/random_number_generation.rst:163
 msgid ""
 ":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
 "``from`` and ``to``, and returns a random integer between ``from`` and "
-"``to``::"
+"``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:114
+#: ../../docs/tutorials/math/random_number_generation.rst:182
 msgid "Get a random array element"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:116
+#: ../../docs/tutorials/math/random_number_generation.rst:184
 msgid ""
-"We can use random integer generation to get a random element from an array::"
+"We can use random integer generation to get a random element from an array:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:136
+#: ../../docs/tutorials/math/random_number_generation.rst:228
 msgid ""
 "To prevent the same fruit from being picked more than once in a row, we can "
-"add more logic to this method::"
+"add more logic to this method:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:167
+#: ../../docs/tutorials/math/random_number_generation.rst:293
 msgid ""
 "This approach can be useful to make random number generation feel less "
 "repetitive. Still, it doesn't prevent results from \"ping-ponging\" between "
@@ -178,30 +178,30 @@ msgid ""
 "<doc_random_number_generation_shuffle_bags>` pattern instead."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:173
+#: ../../docs/tutorials/math/random_number_generation.rst:299
 msgid "Get a random dictionary value"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:175
-msgid "We can apply similar logic from arrays to dictionaries as well::"
+#: ../../docs/tutorials/math/random_number_generation.rst:301
+msgid "We can apply similar logic from arrays to dictionaries as well:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:201
+#: ../../docs/tutorials/math/random_number_generation.rst:329
 msgid "Weighted random probability"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:203
+#: ../../docs/tutorials/math/random_number_generation.rst:331
 msgid ""
 "The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
 "point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
-"probability where different outcomes have different likelihoods::"
+"probability where different outcomes have different likelihoods:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:230
+#: ../../docs/tutorials/math/random_number_generation.rst:394
 msgid "\"Better\" randomness using shuffle bags"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:232
+#: ../../docs/tutorials/math/random_number_generation.rst:396
 msgid ""
 "Taking the same example as above, we would like to pick fruits at random. "
 "However, relying on random number generation every time a fruit is selected "
@@ -209,7 +209,7 @@ msgid ""
 "unlucky), they could get the same fruit three or more times in a row."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:237
+#: ../../docs/tutorials/math/random_number_generation.rst:401
 msgid ""
 "You can accomplish this using the *shuffle bag* pattern. It works by "
 "removing an element from the array after choosing it. After multiple "
@@ -217,7 +217,7 @@ msgid ""
 "to its default value::"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:267
+#: ../../docs/tutorials/math/random_number_generation.rst:431
 msgid ""
 "When running the above code, there is a chance to get the same fruit twice "
 "in a row. Once we picked a fruit, it will no longer be a possible return "
@@ -226,22 +226,22 @@ msgid ""
 "but only once."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:273
+#: ../../docs/tutorials/math/random_number_generation.rst:437
 #, fuzzy
 msgid "Random noise"
 msgstr "Funções estáticas"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:275
+#: ../../docs/tutorials/math/random_number_generation.rst:439
 msgid ""
 "The random number generation shown above can show its limits when you need a "
 "value that *slowly* changes depending on the input. The input can be a "
 "position, time, or anything else."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:279
+#: ../../docs/tutorials/math/random_number_generation.rst:443
 msgid ""
 "To achieve this, you can use random *noise* functions. Noise functions are "
 "especially popular in procedural generation to generate realistic-looking "
 "terrain. Godot provides :ref:`class_opensimplexnoise` for this, which "
-"supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise::"
+"supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise:"
 msgstr ""

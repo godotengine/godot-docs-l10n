@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "提交资源到资源馆"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:9
 msgid ""
@@ -64,37 +64,33 @@ msgstr ""
 "受, 资源需要满足一些要求才能被批准."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
-#, fuzzy
 msgid ""
 "The asset must **work**. If the asset doesn't run or otherwise doesn't work "
 "in the specified Godot version, then it will be rejected."
 msgstr ""
-"该资产必须能运行, 如果该资源在指定的Godot版本中无法运行或无法工作, 那么它将被"
-"拒绝."
+"资产必须能够 **work** 工作 。如果该资产不能工作或在指定的Godot版本中不能工"
+"作，那么它将被拒绝。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
-#, fuzzy
 msgid ""
 "The asset must have a proper **.gitignore** file. It's important to keep "
 "redundant data out of the repository. `Here's a template. <https://raw."
 "githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore>`_"
 msgstr ""
-"资源必须有一个适合的 **.gitignore** 文件. 重要的一点, 不要把多余的数据放在仓"
-"库里.` 这里有一个模板. <https://github.com/github/gitignore/blob/master/"
-"Godot.gitignore>`_"
+"该资产必须有一个合适的 **.gitignore** 文件。把多余的数据从版本库中剔除是很重"
+"要的。这里有一个模板 `Here's a template. <https://raw.githubusercontent.com/"
+"aaronfranke/gitignore/godot/Godot.gitignore>`_"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
-#, fuzzy
 msgid ""
 "No **submodules**, or any submodules must be non-essential. GitHub does not "
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
-"没有子模块, 或者所以子模块必须是非必要的.GitHub不会在下载的ZIP文件中包含子模"
-"块, 所以如果资源需要子模块内容, 你的资源将无法使用."
+"没有子模块 **submodules**，或者任何子模块必须是非必要的。GitHub不包括下载的"
+"ZIP文件中的子模块，所以如果你的资产需要子模块的内容，将无法使用。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:40
-#, fuzzy
 msgid ""
 "The **license** needs to be correct. The license listed on the asset library "
 "must match the license in the repository. The repo MUST have a license file, "
@@ -102,29 +98,27 @@ msgid ""
 "license text itself and a copyright statement that includes the year(s) and "
 "copyright holder."
 msgstr ""
-"许可证必须正确. 资源库中列出的许可证必须与仓库中的许可证一致. 仓库必须有一个"
-"许可证文件, 叫做 \"LICENSE\" 或 \"LICENSE.md\". 这个文件必须包含许可证文本本"
-"身和版权声明, 包括年份和版权持有人."
+"许可证 **license** 需是正确。资产库中列出的许可证必须与版本库中的许可证一致。"
+"版本库需要有一个许可证文件，称为 \"LICENSE\" 或 \"LICENSE.md\" 。这个文件必须"
+"包含许可证文本本身和版权声明，包括年份和版权所有者。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:46
-#, fuzzy
 msgid ""
 "Use proper **English** for the name and description of your asset. This "
 "includes using correct capitalization, and using full sentences in the "
 "description. You can also include other languages, but there should at least "
 "be an English version."
 msgstr ""
-"使用正确的英语来描述资源的名称和说明, 这包括使用正确的大写字母, 并在描述中使"
-"用完整的句子."
+"在你的资产名称和描述中使用正确的 **English** 。这包括使用正确的大写字母，并在"
+"描述中使用完整的句子。你也可以包括其他语言，但至少应该有一个英文版本。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
-#, fuzzy
 msgid ""
 "The icon link must be a **direct link**. For icons hosted on GitHub, the "
 "link must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
-"图标链接必须是直接链接. 对于GitHub上的图标, 链接必须以 \"raw."
-"githubusercontent.com\" 开头, 而不是 \"github.com\"."
+"图标链接必须是一个 **direct link** 直接链接。对于托管在GitHub上的图标，链接必"
+"须以 \"raw.githubusercontent.com\" 开头，而不是 \"github.com\"。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:55
 msgid "Recommendations"
@@ -140,34 +134,33 @@ msgstr ""
 "源库成为所有用户体验更好的地方."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:61
-#, fuzzy
 msgid ""
 "Fix or suppress all script **warnings**. The warning system is there to help "
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
-"修复或禁止所有脚本警告, 警告的作用是帮助识别代码中的问题, 但使用你的资源的人"
-"不需要看到它们."
+"修复或禁止所有脚本警告**warnings** 。警告系统可帮助识别您的代码问题，但使用您"
+"的资产的人不需要看到它们。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:65
-#, fuzzy
 msgid ""
 "Make your code conform to the official **style guides**. Having a consistent "
 "style helps other people read your code, and it also helps if other people "
 "wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
-"让代码符合官方的风格指南. 拥有一致的风格有助于其他人阅读代码, 也有助于其他人"
-"为资源做出贡献. 参见: :ref:`doc_gdscript_styleguide` 或 :ref:"
-"`doc_c_sharp_styleguide`."
+"使你的代码符合官方的 **风格指南** 。有一致的风格有助于其他人阅读你的代码，如"
+"果其他人希望为你的资产做贡献，将会有帮助。参阅 :ref:"
+"`doc_gdscript_styleguide` 或 :ref:`doc_c_sharp_styleguide`。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
+#, fuzzy
 msgid ""
 "If you have screenshots in your repo, place them in their own subfolder and "
-"add a **.gdignore** file in the same folder (note: **gd**, not **git**). "
-"This prevents Godot from importing your screenshots. On Windows, open a "
-"command prompt in the project folder and run ``type nul > .gdignore`` to "
-"create a file whose name starts with a period."
+"add an empty **.gdignore** file in the same folder (note: **gd**, not "
+"**git**). This prevents Godot from importing your screenshots. On Windows, "
+"open a command prompt in the project folder and run ``type nul > .gdignore`` "
+"to create a file whose name starts with a period."
 msgstr ""
 "如果存储库里有截图, 把它们放在子文件夹里, 并在同一文件夹里添加一个 **."
 "gdignore** 文件(注意: 是 **gd** , 不是 **git** ), 这样可以防止Godot导入截图. "
@@ -175,11 +168,12 @@ msgstr ""
 "建一个名字以句号开头的文件."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:76
-#, fuzzy
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "**example files** in the asset."
-msgstr "如果你的资源是一个用于处理其他文件的库, 请考虑在资源中加入示例文件."
+msgstr ""
+"如果您的资产是用于处理其他文件的库，请考虑在资产中包含示例文件 **example "
+"files** 。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:79
 msgid ""
@@ -190,12 +184,17 @@ msgid ""
 "file and prevents them from being downloaded by the asset library users. For "
 "a typical plugin **.gitattributes** may look like this:"
 msgstr ""
+"考虑将 **.gitattributes** 文件添加到你的存储库中。该文件允许向 Git 提供额外的"
+"指令，例如指定行结尾和列出资产不需要使用 ``export-ignore`` 指令运行的文件。该"
+"指令从生成的 ZIP 文件中删除此类文件，并防止资产库用户下载它们。对于典型的插"
+"件 **.gitattributes** 可能如下所示："
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
 msgid ""
 "Other types of assets may require a different configuration (e.g. a project "
 "template requires **project.godot**)."
 msgstr ""
+"其他类型的资产可能需要不同的配置（例如，项目模板需要 **project.godot**）。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid ""
@@ -204,24 +203,24 @@ msgid ""
 "keep with their project, so a copy ensures they always have those files "
 "handy (and helps them fulfill your licensing terms)."
 msgstr ""
+"如果你要提交一个插件，请将你的许可证和readme的 **copy** 添加到插件文件夹本"
+"身。这是保证用户与他们的项目一起保留的文件夹，副本确保他们始终可以方便地使用"
+"这些文件，并帮助他们履行你的许可条款。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:109
-#, fuzzy
 msgid ""
 "The **icon** should be a square, its aspect ratio should be 1:1. It should "
 "also ideally have a minimum resolution of 64x64 pixels."
-msgstr ""
-"图标应为正方形, 其长宽比应为1:1. 理想情况下, 它的最小分辨率应为64x64像素."
+msgstr "**icon** 应为正方形，其纵横比应为 1:1。它的最低分辨率最好是64x64像素。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:112
-#, fuzzy
 msgid ""
 "While the asset library allows more than just GitHub, consider hosting your "
 "asset's source code on **GitHub**. Other services may not work reliably, and "
 "a lack of familiarity can be a barrier to contributors."
 msgstr ""
-"虽然资源库允许的不仅是GitHub, 但请考虑将资源的源代码托管在GitHub上, 其他服务"
-"可能不可靠, 而且缺乏熟悉度可能会成为贡献者的障碍."
+"虽然资产库允许的不仅仅是 GitHub，但考虑将资产的源代码托管在 **GitHub**。其他"
+"服务可能无法可靠地工作，而且不熟悉可能会成为贡献者的障碍。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid "Submitting"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,7 @@ msgid ""
 "adjust the ``cast_shadow`` property on the GeometryInstance to the desired "
 "value."
 msgstr ""
-"**Cull Mask**:  Los objetos que se encuentren en las capas seleccionadas a "
+"**Cull Mask**: Los objetos que se encuentren en las capas seleccionadas a "
 "continuación de la máscara se verán afectados por esta luz. Tenga en cuenta "
 "que los objetos deshabilitados a través de esta **Cull Mask** seguirán "
 "proyectando sombras. Si no desea que los objetos deshabilitados proyecten "
@@ -187,8 +187,9 @@ msgstr ""
 "usa el backend GLES3."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:55
+#, fuzzy
 msgid ""
-"**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
+"**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
 "**Reverse Cull Faces**: Algunas escenas funcionan mejor cuando el mapeo de "
@@ -204,26 +205,67 @@ msgstr ""
 "general depende del tamaño y la complejidad de la geometría."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:62
-msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
+#, fuzzy
+msgid ""
+"Finally, if gaps can't be solved, the **Contact** option can help (at a "
+"performance cost):"
 msgstr ""
 "Finalmente, si las grietas no se pueden solucionar, la opción **Contact** "
 "puede ayudar:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:66
+#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
-"resolution, although that may lead to decreased performance on low-end "
-"hardware."
+"resolution, although that may lead to decreased performance."
 msgstr ""
 "Cualquier problema producido por el bias puede ser arreglado incrementando "
 "la resolución del mapa de sombras, aunque esto puede producir una pérdida de "
 "rendimiento en hardware de gama baja."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:70
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:71
+msgid ""
+"If shadow biasing is a problem in your scene, the following settings are a "
+"good starting point:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:73
+msgid ""
+"Enable **Reverse Cull Face**. This reduces shadow peter-panning "
+"significantly and prevents lights from exhibiting shadow acne at grazing "
+"angles. The main downside is that it may cause lighting to leak in some "
+"corners. The other downside is that materials that have their cull mode set "
+"to **Disabled** or MeshInstances with Cast Shadow set to **Double-Sided** "
+"may exhibit shadow acne."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:79
+msgid ""
+"Set **Bias** to ``-0.01``. The bias should be a negative value when "
+"**Reverse Cull Face** is enabled, but it should be a positive value when "
+"it's disabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:81
+msgid ""
+"For DirectionalLight, set the directional shadow **Normal Bias** to ``0.0`` "
+"and **Bias Split Scale** to ``0.0``. Depending on your scene, you may also "
+"want to further decrease **Bias** to a value between ``-0.05`` and ``-0.1``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:85
+msgid ""
+"Following the above tips should make it possible to avoid gaps in shadows "
+"without resorting to contact shadows (which have many issues of their own). "
+"If shadow acne is still visible after performing the above tweaks, try "
+"subdividing your meshes further in your 3D modeling software."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:91
 msgid "Directional light"
 msgstr "Directional light (Luz direccional)"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:72
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:93
 msgid ""
 "This is the most common type of light and represents a light source very far "
 "away (such as the sun). It is also the cheapest light to compute and should "
@@ -235,7 +277,7 @@ msgstr ""
 "utilizarse siempre que sea posible (aunque no es el mapa de sombras menos "
 "costoso de calcular, pero eso se explicará más adelante)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:76
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid ""
 "Directional light models an infinite number of parallel light rays covering "
 "the whole scene. The directional light node is represented by a big arrow "
@@ -248,7 +290,7 @@ msgstr ""
 "posición del nodo no afecta al comportamiento de luz y puede ser colocado en "
 "cualquier lugar de la escena."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:83
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:104
 msgid ""
 "Every face whose front-side is hit by the light rays is lit, while the "
 "others stay dark. Most light types have specific parameters, but directional "
@@ -259,11 +301,11 @@ msgstr ""
 "tienen parámetros específicos, pero las luces direccionales son de "
 "naturaleza bastante simple y no los tienen."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:87
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:108
 msgid "Directional shadow mapping"
 msgstr "Mapeo de sombras direccional"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:89
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:110
 msgid ""
 "To compute shadow maps, the scene is rendered (only depth) from an "
 "orthogonal point of view that covers the whole scene (or up to the max "
@@ -275,7 +317,7 @@ msgstr ""
 "distancia máxima). Hay, sin embargo, un problema con este enfoque porque los "
 "objetos más cercanos a la cámara reciben sombras en bloque."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:95
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:116
 msgid ""
 "To fix this, a technique named \"Parallel Split Shadow Maps\" (or PSSM) is "
 "used. This splits the view frustum in 2 or 4 areas. Each area gets its own "
@@ -287,15 +329,15 @@ msgstr ""
 "tiene su propio mapa de sombras. Esto permite que áreas pequeñas cercanas al "
 "espectador tengan la misma resolución de sombra que un área enorme y lejana."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:100
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:121
 msgid "With this, shadows become more detailed:"
 msgstr "Con esto, las sombras se vuelven más detalladas:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:104
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:125
 msgid "To control PSSM, a number of parameters are exposed:"
 msgstr "Para controlar PSSM, se exponen varios parámetros:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:108
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid ""
 "Each split distance is controlled relative to the camera far (or shadow "
 "**Max Distance** if greater than zero), so *0.0* is the eye position and "
@@ -311,7 +353,7 @@ msgstr ""
 "la primera división un poco es común para dar más detalles a los objetos "
 "cercanos (como un personaje en un juego en tercera persona)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:114
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:135
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
@@ -320,7 +362,7 @@ msgstr ""
 "necesidades de la escena. Una distancia máxima baja obtendrá mejor calidad "
 "de sombras."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:117
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:138
 msgid ""
 "Sometimes, the transition between a split and the next can look bad. To fix "
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
@@ -330,7 +372,7 @@ msgstr ""
 "Para solucionar esto se puede activar la opción **\"Blend Splits\"**, la que "
 "sacrifica detalles a cambio de transiciones más suaves:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:123
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:144
 msgid ""
 "The **\"Normal Bias\"** parameter can be used to fix special cases of self "
 "shadowing when objects are perpendicular to the light. The only downside is "
@@ -340,7 +382,7 @@ msgstr ""
 "especiales de autosombreado cuando los objetos son perpendiculares a la luz. "
 "El único inconveniente es que hace que la sombra sea un poco más delgada."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:129
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
 "The **\"Bias Split Scale\"** parameter can control extra bias for the splits "
 "that are far away. If self shadowing occurs only on the splits far away, "
@@ -350,11 +392,11 @@ msgstr ""
 "adicional para las divisiones que están muy lejos. Si el autosombreado "
 "ocurre solo en las divisiones lejanas, este valor puede corregirlas."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:132
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid "Finally, the **\"Depth Range\"** has two settings:"
 msgstr "Por último, el **\"Depth Range\"** tiene dos ajustes:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:134
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:155
 msgid ""
 "**Stable**: Keeps the shadow stable while the camera moves, and the blocks "
 "that appear in the outline when close to the shadow edges remain in-place. "
@@ -366,7 +408,7 @@ msgstr ""
 "sombreados permanecen en su lugar. Este es el valor predeterminado y "
 "generalmente deseado, pero reduce la resolución de sombra efectiva."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:135
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:156
 msgid ""
 "**Optimized**: Tries to achieve the maximum resolution available at any "
 "given time. This may result in a \"moving saw\" effect on shadow edges, but "
@@ -379,11 +421,11 @@ msgstr ""
 "(por lo que este efecto puede ser lo suficientemente sutil como para ser "
 "perdonado)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:137
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:158
 msgid "Just experiment which setting works better for your scene."
 msgstr "Solo experimenta qué configuración funciona mejor en tu escena."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:139
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:160
 msgid ""
 "Shadowmap size for directional lights can be changed in Project Settings -> "
 "Rendering -> Quality:"
@@ -391,7 +433,7 @@ msgstr ""
 "El tamaño del mapa de sombras para luces direccionales puede ser cambiado en "
 "Project Settings -> Rendering -> Quality:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:143
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:164
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
@@ -399,11 +441,11 @@ msgstr ""
 "Aumentarlo puede solucionar problemas generados por el bias pero reduce el "
 "rendimiento. Ajustar el mapeo de sombras es un arte."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:146
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:167
 msgid "Omni light"
 msgstr "Omni light (luz omnidireccional)"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:148
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:169
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
@@ -411,7 +453,7 @@ msgstr ""
 "Omni light es un punto que emite luz esféricamente en todas las direcciones "
 "hasta un radio dado."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:153
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:174
 msgid ""
 "In real life, light attenuation is an inverse function, which means omni "
 "lights don't have a radius. This is a problem because it means computing "
@@ -422,14 +464,14 @@ msgstr ""
 "problema porque calcular un gran número de este tipo de luces se volvería "
 "costoso."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:156
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:177
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr ""
 "Para resolver esto, se introduce un *Rango (Range)* junto con una función de "
 "atenuación (Attenuation)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:160
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
@@ -437,11 +479,11 @@ msgstr ""
 "Estos dos parámetros permiten ajustar cómo funciona esto visualmente para "
 "encontrar resultados estéticamente agradables."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:166
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:187
 msgid "Omni shadow mapping"
 msgstr "Mapeo de sombras omnidireccional"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:168
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:189
 msgid ""
 "Omni light shadow mapping is relatively straightforward. The main issue that "
 "needs to be considered is the algorithm used to render it."
@@ -449,7 +491,7 @@ msgstr ""
 "El mapeo de sombras para una Omni light es relativamente sencillo. Lo "
 "principal a considerar es el algoritmo que se utilizará para renderizarlo."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:171
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
 "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
 "\"**. The former renders quickly, but can cause deformations, while the "
@@ -460,7 +502,7 @@ msgstr ""
 "puede causar deformaciones, mientras que el segundo es más correcto, pero "
 "más costoso."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:177
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:198
 msgid ""
 "If the objects being rendered are mostly irregular, Dual Paraboloid is "
 "usually enough. In any case, as these shadows are cached in a shadow atlas "
@@ -473,11 +515,11 @@ msgstr ""
 "no signifique una diferencia en el rendimiento para la mayoría de las "
 "escenas."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:182
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:203
 msgid "Spot light"
 msgstr "Spot light (luz focal)"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:184
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:205
 msgid ""
 "Spot lights are similar to omni lights, except they emit light only into a "
 "cone (or \"cutoff\"). They are useful to simulate flashlights, car lights, "
@@ -489,7 +531,7 @@ msgstr ""
 "útiles para simular linternas, luces de coche, reflectores, focos, etc. Este "
 "tipo de luz además se atenúa en la dirección opuesta a la que apunta."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:191
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:212
 msgid ""
 "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, "
 "and add two extra parameters:"
@@ -497,11 +539,11 @@ msgstr ""
 "Las luces focales comparten los mismos parámetros **Range** y "
 "**Attenuation** con **OmniLight**, y añade dos más:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:193
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:214
 msgid "**Angle**: The aperture angle of the light"
 msgstr "**Angle**: El ángulo de apertura de la luz"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:194
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid ""
 "**Angle Attenuation**: The cone attenuation, which helps soften the cone "
 "borders."
@@ -509,11 +551,11 @@ msgstr ""
 "**Angle Attenuation**: La atenuación del cono, que ayuda a suavizar los "
 "bordes del cono."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:197
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:218
 msgid "Spot shadow mapping"
 msgstr "Mapeo de sombras focal"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:199
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid ""
 "Spots don't need any parameters for shadow mapping. Keep in mind that, at "
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
@@ -524,11 +566,11 @@ msgstr ""
 "sombras dejan de funcionar y resulta más conveniente utilizar luces "
 "omnidireccionales."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:203
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid "Shadow atlas"
 msgstr "Shadow atlas (atlas de sombra)"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:205
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "Unlike Directional lights, which have their own shadow texture, Omni and "
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
@@ -539,7 +581,7 @@ msgstr ""
 "atlas de sombra. Este atlas se puede configurar en Project Settings -> "
 "Rendering -> Quality -> Shadow Atlas."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:210
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:231
 msgid ""
 "The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
@@ -547,7 +589,7 @@ msgstr ""
 "La resolución se aplica a todo el Atlas de las Sombras. Este atlas se divide "
 "en cuatro cuadrantes:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:214
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:235
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
@@ -555,7 +597,7 @@ msgstr ""
 "Cada cuadrante se puede subdividir para asignar cualquier número de mapas de "
 "sombras; la siguiente es la subdivisión predeterminada:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:218
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:239
 msgid ""
 "The allocation logic is simple. The biggest shadow map size (when no "
 "subdivision is used) represents a light the size of the screen (or bigger). "
@@ -568,13 +610,13 @@ msgstr ""
 "sombras para las luces que están más lejos de la vista y proporcionalmente "
 "más pequeñas."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:223
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:244
 msgid "Every frame, the following procedure is performed for all lights:"
 msgstr ""
 "En Cada fotograma, se realiza el siguiente procedimiento para todas las "
 "luces:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:225
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:246
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
@@ -582,7 +624,7 @@ msgstr ""
 "Se comprueba si la luz está en un espacio del tamaño correcto. Si no es así, "
 "se vuelve a renderizar y se mueve a un espacio más grande o más pequeño."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:247
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
@@ -590,7 +632,7 @@ msgstr ""
 "Se comprueba si ha cambiado algún objeto que afecte al mapa de sombras. Si "
 "esto sucedió, se renderiza de nuevo la luz."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:227
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:248
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
@@ -598,7 +640,7 @@ msgstr ""
 "Si no ha ocurrido nada de lo anterior, no se hace nada, y la sombra queda "
 "intacta."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:229
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:250
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
@@ -606,7 +648,7 @@ msgstr ""
 "Si los espacios de un cuadrante están llenos, las luces son devueltas a "
 "espacios más pequeños, dependiendo del tamaño y la distancia."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:231
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:252
 msgid ""
 "This allocation strategy works for most games, but you may want to use a "
 "separate one in some cases (for example, a top-down game where all lights "
@@ -617,11 +659,11 @@ msgstr ""
 "un juego top-down donde todas las luces tienen más o menos el mismo tamaño y "
 "todos los cuadrantes pueden tener la misma subdivisión)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:235
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:256
 msgid "Shadow filter quality"
 msgstr "Calidad del filtro de sombras"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:237
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:258
 msgid ""
 "The filter quality of shadows can be tweaked. This can be found in Project "
 "Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 "
@@ -631,6 +673,6 @@ msgstr ""
 "encontrar en Project Settings -> Rendering -> Quality -> Shadows. Godot "
 "soporta los filtros PCF5, PCF13, y también permite no filtrar."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:243
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:264
 msgid "It affects the blockyness of the shadow outline:"
 msgstr "Afecta al bloqueo del contorno de la sombra:"

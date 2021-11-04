@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "VR入门教程第2部分"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:11
 msgid ""
@@ -442,10 +442,10 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
-"首先, 请注意, 我们有``extends RigidBody``, 而不是``extends "
+"首先, 请注意, 我们有 ``extends RigidBody``, 而不是 ``extends "
 "VR_Interactable_Rigidbody``. 这使得手枪脚本在哪里扩展了 "
 "``VR_Interactable_Rigidbody`` 类, 这样VR控制器就知道这个对象可以被交互, 当这"
-"个对象被VR控制器持有时,``VR_Interactable_Rigidbody`` 中定义的函数可以被调用."
+"个对象被VR控制器持有时, ``VR_Interactable_Rigidbody`` 中定义的函数可以被调用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
@@ -625,7 +625,7 @@ msgid ""
 "which we store in a variable called ``raycast_distance``."
 msgstr ""
 "接下来我们通过获取全局位置 ``global_transform.origin`` 到 :ref:`Raycast "
-"<class_Raycast>` 碰撞点的距离,``global_transform`` 原点到 :ref:`Raycast "
+"<class_Raycast>` 碰撞点的距离, ``global_transform`` 原点到 :ref:`Raycast "
 "<class_Raycast>` 的碰撞点的距离, ``raycast.get_collision_point`` , 使用 "
 "``distance_to`` 函数. 这将给我们提供 :ref:`Raycast<class_Raycast>` 在碰撞之前"
 "所走过的距离, 我们将其存储在一个名为 ``raycast_distance`` 的变量中."

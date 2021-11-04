@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,12 +178,13 @@ msgstr ""
 "Voir : le :ref:`doc_gdscript_styleguide` ou le :ref:`doc_c_sharp_styleguide`."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
+#, fuzzy
 msgid ""
 "If you have screenshots in your repo, place them in their own subfolder and "
-"add a **.gdignore** file in the same folder (note: **gd**, not **git**). "
-"This prevents Godot from importing your screenshots. On Windows, open a "
-"command prompt in the project folder and run ``type nul > .gdignore`` to "
-"create a file whose name starts with a period."
+"add an empty **.gdignore** file in the same folder (note: **gd**, not "
+"**git**). This prevents Godot from importing your screenshots. On Windows, "
+"open a command prompt in the project folder and run ``type nul > .gdignore`` "
+"to create a file whose name starts with a period."
 msgstr ""
 "Si vous avez des captures d'écran dans votre repo, placez-les dans leur "
 "propre sous-dossier et ajoutez un fichier **.gdignore** dans le même dossier "
@@ -202,6 +203,7 @@ msgstr ""
 "pensez à inclure des fichiers examples dans votre asset."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:79
+#, fuzzy
 msgid ""
 "Consider adding a **.gitattributes** file to your repo. This file allows "
 "giving extra instructions to Git, such as specifying line endings and "
@@ -210,12 +212,21 @@ msgid ""
 "file and prevents them from being downloaded by the asset library users. For "
 "a typical plugin **.gitattributes** may look like this:"
 msgstr ""
+"Pensez à ajouter un fichier **.gitattributes** à votre repo. Ce fichier "
+"permet de donner des instructions supplémentaires à Git, comme spécifier les "
+"fins de lignes et lister les fichiers non nécessaires au fonctionnement de "
+"votre asset avec la directive ``export-ignore`'. Cette directive supprime "
+"ces fichiers du fichier ZIP résultant et les empêche d'être téléchargés par "
+"les utilisateurs de la bibliothèque d'assets . Pour un plugin typique, **."
+"gitattributes** peut ressembler à ceci :"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
 msgid ""
 "Other types of assets may require a different configuration (e.g. a project "
 "template requires **project.godot**)."
 msgstr ""
+"D'autres types de ressources peuvent nécessiter une configuration différente "
+"(par exemple, un modèle de projet nécessite **project.godot**)."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid ""
@@ -224,6 +235,11 @@ msgid ""
 "keep with their project, so a copy ensures they always have those files "
 "handy (and helps them fulfill your licensing terms)."
 msgstr ""
+"Si vous soumettez un plugin, ajoutez une **copie** de votre licence et de "
+"votre fichier readme dans le dossier du plugin lui-même. Il s'agit du "
+"dossier que les utilisateurs sont assurés de conserver avec leur projet. Une "
+"copie leur permet donc d'avoir toujours ces fichiers à portée de main (et "
+"les aide à respecter vos conditions de licence)."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:109
 #, fuzzy

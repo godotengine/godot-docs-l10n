@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:4
 msgid "Exporting for PC"
-msgstr ""
+msgstr "Export pro PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "(``godot.exe`` on Windows, ``godot`` on the rest), compress the folder and "
 "send it to someone else. However, this is often not desired."
 msgstr ""
+"Nejjednodušší způsob distribuce hry pro PC je zkopírovat spustitelné soubory "
+"(``godot.exe`` pro Windows, ``godot`` pro ostatní), zkomprimovat složku a "
+"poslat ji někomu jinému. To však často není žádoucí."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:10
 msgid ""
@@ -36,12 +39,19 @@ msgid ""
 "bundled with a specially optimized binary that is smaller, faster and does "
 "not contain the editor and debugger."
 msgstr ""
+"Godot nabízí elegantnější přístup k distribuci na PC při použití systému "
+"exportu. Při exportu pro PC (Linux, Windows, macOS) vezme exportér všechny "
+"soubory projektu a vytvoří soubor ``data.pck``. K tomuto souboru je "
+"přibalena speciálně optimalizovaná binárka, která je menší, rychlejší a "
+"neobsahuje editor a ladicí program."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:18
 msgid ""
 "If you export for Windows with embedded PCK files, you will not be able to "
 "sign the program as it will break."
 msgstr ""
+"Pokud exportujete pro systém Windows s vloženými soubory PCK, nebudete moci "
+"program podepsat, protože přestane fungovat."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:21
 msgid ""
@@ -50,3 +60,7 @@ msgid ""
 "you're distributing your project via Steam as it bypasses code signing and "
 "antivirus checks."
 msgstr ""
+"V systému Windows je také známo, že vložení PCK způsobuje falešně pozitivní "
+"výsledky antivirových programů. Proto se doporučuje nepoužívat jej, pokud "
+"svůj projekt nedistribuujete prostřednictvím služby Steam, protože ta "
+"obchází podepisování kódu a antivirové kontroly."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
-msgstr ""
+msgstr "Кинематический персонаж (2D)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:7
 msgid "Introduction"
@@ -37,8 +37,8 @@ msgid ""
 "of skill and understanding of physics engines (or a lot of patience with "
 "trial and error)."
 msgstr ""
-"Да, название звучит странно. \"Kinematic Character\". Что это такое? Причина "
-"названия в том, что когда появились физические движки, они назывались "
+"Да, название звучит странно. «Кинематический персонаж». Что это? Причина "
+"такого названия в том, что когда появились физические движки, они назывались "
 "движками динамики (потому что они работали в основном с реакцией на "
 "столкновения). Было предпринято много попыток создать контроллер персонажа, "
 "используя движки динамики, но это оказалось не так просто, как казалось. "
@@ -53,10 +53,13 @@ msgid ""
 "controllers as the best option, while others (PhysX) would rather promote "
 "the kinematic one."
 msgstr ""
+"Некоторые физические движки, такие, как Havok, преподносят динамические "
+"контроллеры персонажей как лучший вариант, в то же время как другие (PhysX), "
+"напротив, продвигают только кинематику."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
-msgstr ""
+msgstr "Так, а в чём разница?:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
 msgid ""
@@ -69,6 +72,15 @@ msgid ""
 "frame to be solved, so a few collisions may seem to displace a tiny bit. "
 "Those problems can be fixed, but require a certain amount of skill."
 msgstr ""
+"**Динамический контроллер персонажа** использует твёрдое тело с бесконечным "
+"тензором инерции. Это твёрдое тело, которое не может вращаться. Физические "
+"движки всегда позволяют объектам двигаться и сталкиваться, а затем решают их "
+"столкновения разом. Это делает динамические контроллеры персонажей "
+"способными бесшовно взаимодействовать с другими объектами физики, как "
+"показано в демо-версии платформера. Однако, эти взаимодействия не всегда "
+"предсказуемы. Столкновения могут длиться более одного кадра для завершения "
+"расчётов, и несколько столкновений могут оказаться смещёнными на несколько "
+"бит. Эти проблемы могут быть устранены, но требуют определенной квалификации."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:34
 msgid ""
@@ -80,6 +92,14 @@ msgid ""
 "can't directly interact with other physics objects, unless done by hand in "
 "code."
 msgstr ""
+"Предполагается, что **контроллер кинематических персонажей** всегда начинает "
+"в состоянии отсутствия столкновений и всегда переходит в состояние "
+"отсутствия столкновений. Если он начнёт в состоянии столкновения, то он "
+"попытается освободиться, как это делают твёрдые тела, но это исключение, а "
+"не правило. Это делает управление им и движение гораздо более предсказуемыми "
+"и более простыми в программировании. Однако, как недостаток, он не может "
+"напрямую взаимодействовать с другими физическими объектами, если это не "
+"делается вручную в коде."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:42
 msgid ""
@@ -88,10 +108,14 @@ msgid ""
 "necessarily simpler under the hood, but well hidden and presented as a nice "
 "and simple API)."
 msgstr ""
+"В этом кратком учебном пособии основное внимание будет уделено "
+"кинематическому контроллеру персонажа. В основном, тут используется способ "
+"работы со столкновениями старой школы (который не обязательно проще под "
+"капотом, но хорошо скрыт и представлен как хороший и простой API)."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
-msgstr ""
+msgstr "Обработка физики"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:50
 msgid ""
@@ -102,6 +126,14 @@ msgid ""
 "in a more predictable way than using regular process, which might have "
 "spikes or lose precision if the frame rate is too high or too low."
 msgstr ""
+"Чтобы управлять логикой кинематического тела или персонажа, всегда "
+"рекомендуется использовать процесс обработки физики, потому что он "
+"вызывается перед шагом физики и его выполнение находится в синхронизации с "
+"сервером физики, а также вызов производится одинаковое количество раз в "
+"секунду, всегда. Это делает работу по расчёту физики и движения более "
+"предсказуемой, чем при использовании обычного процесса, который может иметь "
+"всплески или потерять точность, если частота кадров слишком высока или "
+"слишком низка."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
 msgid "Scene setup"
@@ -113,6 +145,9 @@ msgid ""
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
 "for the character. Use the robot sprite and create a scene like this:"
 msgstr ""
+"Чтобы проверить что-то, вот сцена (из учебного пособия tilemap): :download:"
+"`kbscene.zip <files/kbscene.zip>`. Мы создадим новую сцену для персонажа. "
+"Используйте спрайт робота и создайте сцену следующим образом:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:87
 msgid ""
@@ -121,6 +156,11 @@ msgid ""
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
+"Вы заметите, что рядом с нашим узлом CollisionShape2D есть значок "
+"предупреждения; это потому, что мы не определили форму для него. Создайте "
+"новый CircleShape2D в свойстве формы CollisionShape2D. Нажмите кнопку < "
+"CircleShape2D >, чтобы перейти к его параметрам, и установите радиус, равный "
+"30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:94
 msgid ""
@@ -130,23 +170,32 @@ msgid ""
 "shape instead of scaling it. The same is also true for the kinematic/rigid/"
 "static bodies themselves, as their scale affects the shape scale.**"
 msgstr ""
+"**Внимание: Как упоминалось выше в учебном пособии по физике, модуль физики "
+"не может обрабатывать масштаб на большинстве типов форм (работают только "
+"многоугольники столкновений, плоскости и сегменты), поэтому всегда изменяйте "
+"параметры (например, радиус) формы вместо её масштабирования. То же самое "
+"справедливо и для самих кинематических/жёстких/статических тел, поскольку их "
+"масштаб влияет на масштаб формы.**"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:101
 msgid ""
 "Now, create a script for the character, the one used as an example above "
 "should work as a base."
 msgstr ""
+"Теперь создайте скрипт для персонажа, который использовался в качестве "
+"примера выше и должен работать, как изначально."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:104
 msgid ""
 "Finally, instance that character scene in the tilemap, and make the map "
 "scene the main one, so it runs when pressing play."
 msgstr ""
+"Наконец, инстанцируйте эту сцену персонажа в tilemap и сделайте сцену карты "
+"главной, чтобы она запускалась при нажатии на воспроизведение."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:110
-#, fuzzy
 msgid "Moving the kinematic character"
-msgstr "Изменение интерфейса"
+msgstr "Перемещение кинематического персонажа"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:112
 msgid ""
@@ -158,22 +207,33 @@ msgid ""
 "the kinematic body. If a collision happens, it stops right at the moment of "
 "the collision."
 msgstr ""
+"Вернитесь к сцене персонажа и откройте скрипт, магия начинается сейчас! "
+"Кинематическое тело по умолчанию ничего не делает, но имеет полезную "
+"функцию :ref:`KinematicBody2D.move_and_collide() "
+"<class_KinematicBody2D_method_move_and_collide>`. Эта функция принимает :ref:"
+"`Vector2 <class_Vector2>` в качестве аргумента и пытается применить это "
+"движение к кинематическому телу. Если происходит столкновение, она "
+"останавливается прямо в момент столкновения."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:120
 msgid "So, let's move our sprite downwards until it hits the floor:"
-msgstr ""
+msgstr "Итак, давайте сдвинем наш спрайт вниз, пока он не ударится об пол:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:144
 msgid ""
 "The result is that the character will move, but stop right when hitting the "
 "floor. Pretty cool, huh?"
 msgstr ""
+"В результате персонаж двигается, но останавливается прямо при ударе о пол. "
+"Довольно круто, да?"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:147
 msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
 "little more like a regular game character:"
 msgstr ""
+"Следующим шагом будет добавление гравитации к миксу, путь он ведет себя "
+"немного ближе к обычному игровому персонажу:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:183
 msgid ""
@@ -181,14 +241,17 @@ msgid ""
 "right when touching the directional keys. Remember that the values being "
 "used (for speed at least) are pixels/second."
 msgstr ""
+"Теперь персонаж плавно падает. Давайте заставим его идти в стороны, влево и "
+"вправо при нажатии на клавиши управления. Следует помнить, что используемые "
+"значения (по крайней мере для скорости) составляют пикселы в секунду."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:187
 msgid "This adds simple walking support by pressing left and right:"
-msgstr ""
+msgstr "Это добавляет простую поддержку ходьбы при нажатии влево и вправо:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:252
 msgid "And give it a try."
-msgstr ""
+msgstr "И попробуем."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid ""
@@ -196,3 +259,6 @@ msgid ""
 "found in the demo zip distributed with the engine, or in the https://github."
 "com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character."
 msgstr ""
+"Это хорошая отправная точка для платформера. Более полную демонстрацию можно "
+"найти в demo zip, распространяемом вместе с движком, или в https://github."
+"com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character."

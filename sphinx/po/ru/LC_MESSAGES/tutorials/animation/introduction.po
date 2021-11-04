@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/animation/introduction.rst:4
-#, fuzzy
 msgid "Introduction to the animation features"
-msgstr "Введение в функции 2D анимации"
+msgstr "Введение в возможности анимации"
 
 #: ../../docs/tutorials/animation/introduction.rst:7
 msgid "Overview"
@@ -36,7 +35,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:12
 msgid "In this guide you learn to:"
-msgstr "В этом руководстве вы узнаете:"
+msgstr "В этом руководстве Вы узнаете:"
 
 #: ../../docs/tutorials/animation/introduction.rst:14
 msgid "Work with the Animation Panel"
@@ -115,15 +114,15 @@ msgstr "Панель анимации"
 #: ../../docs/tutorials/animation/introduction.rst:54
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
 msgstr ""
-"Управление анимацией(т.е. добавить, загрузить, сохранить и удалить анимацию)"
+"Управление анимацией (т.е. добавить, загрузить, сохранить и удалить анимацию)"
 
 #: ../../docs/tutorials/animation/introduction.rst:55
 msgid "The tracks listing"
-msgstr "Список дорожек(треков)"
+msgstr "Список дорожек (треков)"
 
 #: ../../docs/tutorials/animation/introduction.rst:56
 msgid "The timeline with keyframes"
-msgstr "Шкала времени(таймлайн) с ключевыми кадрами"
+msgstr "Шкала времени (таймлайн) с ключевыми кадрами"
 
 #: ../../docs/tutorials/animation/introduction.rst:57
 msgid ""
@@ -160,12 +159,12 @@ msgid ""
 "The engine interpolates values between keyframes, resulting in a gradual "
 "change in values over time."
 msgstr ""
-"Движок интерполирует(изменяет) значения между ключевыми кадрами и в "
-"результате дает постепенное изменение значения во времени."
+"Движок интерполирует (изменяет) значения между ключевыми кадрами, что "
+"приводит к постепенному изменению значений с течением времени."
 
 #: ../../docs/tutorials/animation/introduction.rst:79
 msgid "Two keyframes are all it takes to obtain a smooth motion"
-msgstr "Два ключевых кадра - все, что нужно для получения плавного движения"
+msgstr "Два ключевых кадра — все, что нужно для получения плавного движения"
 
 #: ../../docs/tutorials/animation/introduction.rst:81
 msgid ""
@@ -185,9 +184,9 @@ msgid ""
 "tracks reference node properties. Their name or id is a path to the node and "
 "the affected property."
 msgstr ""
-"Каждая строка на панели анимации - это анимационная дорожка (трек) . Трек "
-"параметра(Property) и трек трансформации(Transform) отслеживают свойства "
-"узла. Их имя или идентификатор - это путь к узлу и соответствующему свойству."
+"Каждая строка на панели анимации — это анимационная дорожка (трек) . Трек "
+"параметра (Property) и трек трансформации (Transform) отслеживают свойства "
+"узла. Их имя или идентификатор — это путь к узлу и соответствующему свойству."
 
 #: ../../docs/tutorials/animation/introduction.rst:96
 msgid "Example of Normal animation tracks"
@@ -215,17 +214,16 @@ msgid "Scene setup"
 msgstr "Настройка сцены"
 
 #: ../../docs/tutorials/animation/introduction.rst:111
-#, fuzzy
 msgid ""
 "For this tutorial, we'll create an AnimationPlayer node and a sprite node as "
 "its child."
 msgstr ""
-"В этом руководстве нам необходимо создать узел AnimationPlayer и вложить в "
-"него узел Sprite."
+"В этом учебном пособии мы создадим узел AnimationPlayer и узел спрайта в "
+"качестве его потомка."
 
 #: ../../docs/tutorials/animation/introduction.rst:117
 msgid "Our scene setup"
-msgstr "Наши установки сцены"
+msgstr "Наши настройки сцены"
 
 #: ../../docs/tutorials/animation/introduction.rst:121
 msgid ""
@@ -233,15 +231,19 @@ msgid ""
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
+"AnimationPlayer наследует от Node вместо Node2D или Node3D, что означает, "
+"что дочерние узлы не наследуют преобразование от родительских узлов, "
+"поскольку в иерархии присутствует пустой узел."
 
 #: ../../docs/tutorials/animation/introduction.rst:125
 msgid ""
 "Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
 "a child of an AnimationPlayer node."
 msgstr ""
+"Поэтому не рекомендуется добавлять узлы с 2D/3D преобразованием в качестве "
+"дочерних узлов узла AnimationPlayer."
 
 #: ../../docs/tutorials/animation/introduction.rst:128
-#, fuzzy
 msgid ""
 "The sprite holds an image texture. We animate that sprite to move between "
 "two points on the screen. For this tutorial, use the default Godot icon as "
@@ -249,7 +251,7 @@ msgid ""
 "position on the screen."
 msgstr ""
 "Спрайт содержит текстуру, и мы анимируем этот спрайт для перемещения между "
-"двумя точками на экране. Для этого урока используйте иконку Godot(есть в "
+"двумя точками на экране. Для этого урока используйте иконку Godot (есть в "
 "проекте по умолчанию) в качестве текстуры спрайта. В качестве отправной "
 "точки переместите спрайт в левую позицию на экране."
 

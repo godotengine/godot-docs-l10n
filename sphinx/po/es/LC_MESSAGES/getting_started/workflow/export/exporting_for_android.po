@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,14 @@ msgid "Exporting for Android"
 msgstr "Exportación para Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
 msgstr ""
-"Exportar para Android tiene menos requisitos que compilar Godot para él. Los "
-"siguientes pasos detallan lo que se necesita para configurar el SDK y el "
-"motor."
+"Exportar para Android tiene menos requisitos que compilar Godot para "
+"Android. Los siguientes pasos detallan lo que se necesita para configurar el "
+"motor y el SDK de Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
@@ -41,13 +40,12 @@ msgid "Download and install the Android SDK."
 msgstr "Descargar e instalar el Android SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
-#, fuzzy
 msgid ""
 "You can install it using `Android Studio version 4.1 or later <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"Puedes instalarlo usando `Android Studio <https://developer.android.com/"
-"studio/>`__."
+"Puedes instalarlo usando `Android Studio versión 4.1 o superior <https://"
+"developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
@@ -75,14 +73,12 @@ msgid "Android SDK Build-Tools version 30.0.3"
 msgstr "Android SDK Build-Tools versión 30.0.3"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
-#, fuzzy
 msgid "Android SDK Platform 29"
-msgstr "Android SDK Platform"
+msgstr "Android SDK Platform 29"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
-#, fuzzy
 msgid "Android SDK Command-line Tools (latest)"
-msgstr "Instala el Android SDK (versión de linea de comandos)"
+msgstr "Herramientas de línea de comandos del SDK de Android (más reciente)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid "CMake version 3.10.2.4988404"
@@ -120,16 +116,17 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 #, fuzzy
-msgid "Install OpenJDK 8"
-msgstr "Instalar OpenJDK"
+msgid "Install OpenJDK 11"
+msgstr "Instalar OpenJDK 8"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
 #, fuzzy
 msgid ""
-"Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__."
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
 msgstr ""
-"Descargue e instale  `OpenJDK <https://adoptopenjdk.net/index.html>`__."
+"Descargue e instale `OpenJDK 8 <https://adopopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>` __."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid "Create a debug.keystore"
@@ -413,12 +410,11 @@ msgstr ""
 "equivalente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:141
-#, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
-"No olvides desmarcar el botón ``Exportar con Depuración`` al seleccionar el "
-"nombre del APK."
+"No olvide desmarcar la casilla de verificación **Exportar con depuración** "
+"durante la exportación."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:146
 msgid "Optimizing the APK size"

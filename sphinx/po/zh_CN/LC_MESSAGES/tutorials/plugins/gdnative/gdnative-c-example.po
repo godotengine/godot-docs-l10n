@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "GDNative C示例"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:9
 msgid ""
@@ -100,14 +100,13 @@ msgstr ""
 "Studio 2015或更高版本, 或者MinGW-w64."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
-#, fuzzy
 msgid ""
 "A Git clone of the `godot-headers repository <https://github.com/godotengine/"
 "godot-headers.git>`_: these are the C headers for Godot's public API exposed "
 "to GDNative."
 msgstr ""
-"`godot_headers repository <https://github.com/godotengine/godot_headers>` _: "
-"这些是暴露在GDNative中的Godot公共API的C头文件."
+"`godot-headers <https://github.com/godotengine/godot-headers.git>`_： Git 克"
+"隆存储库是 Godot 公开给 GDNative 的公共 API 的 C 头文件。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
 msgid ""
@@ -122,16 +121,14 @@ msgid "This will download the required files into that folder."
 msgstr "这会将所需文件下载到该文件夹中."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
-#, fuzzy
 msgid ""
 "If you plan to use Git for your GDNative project, you can also add ``godot-"
 "headers`` as a Git submodule."
 msgstr ""
-"如果你打算在GDNative项目中使用Git, 你也可以添加 ``godot_headers`` 作为Git子模"
-"块."
+"如果你打算在你的GDNative项目中使用Git，可以添加``godot-headers``作为Git子模"
+"块。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
-#, fuzzy
 msgid ""
 "The ``godot-headers`` repository has different branches. As Godot evolves, "
 "so does GDNative. While we try to preserve compatibility between version, "
@@ -141,23 +138,21 @@ msgid ""
 "Godot headers *may* work with newer versions of the engine, but not the "
 "other way around."
 msgstr ""
-"``godot_headers`` 仓库有不同的分支. 随着Godot的发展,GDNative也在发展. 虽然我"
-"们努力保持不同版本之间的兼容性, 但你应该根据Godot稳定分支(如 ``3.1`` )和理想"
-"的实际版本(如 ``3.1.1-stable`` )构建你的GDNative模块. 用旧版本的Godot头文件构"
-"建的GDNative模块 *可能* 会在新版本的引擎上运行, 但反之则不行."
+"``godot-headers`` 仓库有不同的分支。随着Godot的发展，GDNative也在发展。虽然我"
+"们努力保持不同版本之间的兼容性，但你应该根据Godot稳定分支（如 ``3.1`` ）和实"
+"际情况使用版本（如 ``3.1.1-stable`` ）构建你的GDNative模块。用旧版本的Godot头"
+"文件构建的GDNative模块 *可能* 会在新版本的引擎上运行，但反之则不行。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
-#, fuzzy
 msgid ""
 "The ``master`` branch of the ``godot-headers`` repository is kept in line "
 "with the ``master`` branch of Godot and thus contains the GDNative class and "
 "structure definitions that will work with the latest development builds."
 msgstr ""
-"``godot_headers`` 仓库的 ``master`` 分支与Godot的 ``master`` 分支保持一致, 因"
-"此包含了GDNative类和结构定义, 可以在最新的开发版本中运行."
+"``godot-headers`` 仓库的 ``master`` 分支与Godot的 ``master`` 分支保持一致，因"
+"此包含了GDNative类和结构定义，可以在最新的开发版本中运行。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
-#, fuzzy
 msgid ""
 "If you want to write a GDNative module for a stable version of Godot, look "
 "at the available Git tags (with ``git tags``) for the one matching your "
@@ -165,11 +160,10 @@ msgid ""
 "with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for "
 "use with Godot 3.1.1. In your cloned repository, you can do:"
 msgstr ""
-"如果你想为Godot的稳定版本写一个GDNative模块, 请查看与你的引擎版本相匹配的Git"
-"标签(带 ``git标签`` ), 在 ``godot_headers`` 库中, 这种标签的前缀是 ``godot-"
-"`` , 所以你可以查看 ``godot-`` . 在 ``godot_headers`` 版本库中, 这些标签的前"
-"缀是 ``godot-`` , 所以你可以查看 ``godot-3.1.1-stable`` 标签, 用于Godot "
-"3.1.1. 在你的克隆仓库中, 你可以这样做:"
+"如果你想为Godot的稳定版本编写GDNative模块，请查看可用的Git标签，用 ``git "
+"tags`` ，找到与你的引擎版本匹配的标签。在 ``godot-headers`` 仓库中，这些标签"
+"以 ``godot-`` 为前缀，所以你可以检查 ``godot-3.1.1-stable`` 标签，以用于"
+"Godot 3.1.1。在你的克隆版本库中，可以执行以下操作："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:97
 msgid ""
@@ -201,17 +195,16 @@ msgstr ""
 "让我们从编写我们的主代码开始. 最终, 我们希望有一个文件结构, 看起来像这样:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
-#, fuzzy
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
 "``godot-headers`` Git clone. This will create the ``simple`` folder and "
 "``project.godot`` file. Then manually create a ``src`` folder alongside the "
 "``simple`` folder, and a ``bin`` subfolder in the ``simple`` folder."
 msgstr ""
-"打开Godot, 在你的 ``godot_headers`` Git克隆旁创建一个名为 ``simple`` 的新项"
-"目. 这将创建 ``simple`` 文件夹和 ``project.godot`` 文件. 然后在 ``simple`` 文"
-"件夹旁边手动创建一个 ``src`` 文件夹, 并在 ``simple`` 文件夹中创建一个 "
-"``bin`` 子文件夹."
+"打开Godot，在你的 ``godot-headers`` Git克隆旁创建一个名为 ``simple`` 的新项"
+"目。这将创建 ``simple`` 文件夹和 ``project.godot`` 文件。然后在 ``simple`` 文"
+"件夹旁边手动创建 ``src`` 文件夹，并在 ``simple`` 文件夹中创建一个 ``bin`` 子"
+"文件夹。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:131
 msgid ""
@@ -345,7 +338,6 @@ msgstr ""
 "函数和析构函数的描述."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:250
-#, fuzzy
 msgid ""
 "We then tell Godot about our methods (well our one method in this case), by "
 "calling ``nativescript_register_method`` for each method of our class. In "
@@ -357,12 +349,12 @@ msgid ""
 "godot_nativescript.h`` for possible values). The fifth and final parameter "
 "is a description of which function to call when the method gets called."
 msgstr ""
-"然后通过调用 ``nativescript_register_method`` 来告诉Godot我们的方法(本例中是"
-"我们的一个方法). 在我们的例子中, 就是 ``get_data`` . 第一个参数仍然是句柄指"
-"针. 第二个是要注册的对象类的名称. 第三个是函数的名字, 因为它将被GDScript所知"
-"晓. 第四个是属性设置(参见 ``godot_method_rpc_mode`` 枚举中的 ``godot_headers/"
-"nativescript/godot_nativescript.h`` 的可能值). 第五个也是最后一个参数是描述方"
-"法被调用时要调用哪个函数."
+"然后我们通过调用 ``nativescript_register_method`` 来告诉Godot我们的方法，本例"
+"中是我们的一个方法。在我们的例子中，就是 ``get_data`` 。第一个参数仍然是句柄"
+"指针。第二个是我们要注册的对象类的名称。第三个是函数的名字，它将被GDScript所"
+"知。第四个是属性设置，参阅 ``godot-headers/nativescript/godot_nativescript."
+"h`` 中的 ``godot_method_rpc_mode`` 枚举的相关值，第五个也是最后一个参数是调用"
+"方法时要调用的函数的描述。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:260
 msgid ""

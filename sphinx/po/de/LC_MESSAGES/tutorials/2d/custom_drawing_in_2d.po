@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,8 @@ msgid "Custom drawing in 2D"
 msgstr "2D benutzerdefiniertes zeichnen"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
-msgid "Why?"
-msgstr "Warum?"
+msgid "Introduction"
+msgstr "Einführung"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 msgid ""
@@ -43,62 +43,62 @@ msgstr ""
 "<class_Node2D>`basiert) dazu zu bringen benutzerdefinierte Befehle zu "
 "zeichnen. Es ist *wirklich* einfach dies zu tun."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
-msgid "But..."
-msgstr "Aber..."
-
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:16
+#, fuzzy
 msgid ""
-"Custom drawing manually in a node is *really* useful. Here are some examples "
-"why:"
+"Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
 "Das manuelle Zeichnen in einem Node ist *wirklich* nützlich. Hier einige "
 "Beispiele warum:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:18
+#, fuzzy
 msgid ""
-"Drawing shapes or logic that is not handled by nodes (example: making a node "
-"that draws a circle, an image with trails, a special kind of animated "
-"polygon, etc)."
+"Drawing shapes or logic that existing nodes can't do, such as an image with "
+"trails or a special animated polygon."
 msgstr ""
 "Zeichnen von Formen oder Logik, die nicht von Nodes bereitgestellt werden "
 "(zum Beispiel: Erstellen eines Nodes der einen Kreis zeichnet, eines Bildes "
 "das Spuren auf dem Weg hinterlässt, einer speziellen Art von animiertem "
 "Polygon usw.)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:20
+#, fuzzy
 msgid ""
-"Visualizations that are not that compatible with nodes: (example: a tetris "
-"board). The tetris example uses a custom draw function to draw the blocks."
+"Visualizations that are not that compatible with nodes, such as a tetris "
+"board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
 "Visualisierungen, die nicht so kompatibel mit Nodes sind: (Beispiel: eine "
 "Tetris-Karte). Das Tetris-Beispiel verwendet eine benutzerdefinierte "
 "Zeichenfunktion, um die Blöcke zu zeichnen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:23
+#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
-"of using nodes which makes it less memory intensive and potentially faster."
+"of using a large number of nodes, possibly lowering memory usage and "
+"improving performance."
 msgstr ""
 "Zeichnen einer großen Anzahl einfacher Objekte. Durch benutzerdefinierte "
 "Zeichnungen wird der Overhead für die Verwendung von Nodes vermieden, "
 "wodurch sich die Speichernutzung verringert und möglicherweise schneller "
 "wird."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:26
+#, fuzzy
 msgid ""
-"Making a custom UI control. There are plenty of controls available, but it's "
-"easy to run into the need to make a new, custom one."
+"Making a custom UI control. There are plenty of controls available, but when "
+"you have unusual needs, you will likely need a custom control."
 msgstr ""
 "Erstellen eines benutzerdefinierten UI-Steuerelements. Es gibt viele "
 "Steuerelemente, aber es ist leicht ein neues, benutzerdefiniertes "
 "Steuerelement zu erstellen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
-msgid "OK, how?"
-msgstr "OK, wie?"
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+msgid "Drawing"
+msgstr "Zeichnen"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:33
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
@@ -109,7 +109,7 @@ msgstr ""
 "<class_Control>` oder :ref:`Node2D <class_Node2D>`. Überschreiben Sie dann "
 "die Funktion ``_draw()``."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:53
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
@@ -117,11 +117,11 @@ msgstr ""
 "Es gibt viele Zeichenbefehle, die alle in der Klassenreferenz :ref:"
 "`CanvasItem <class_CanvasItem>` beschrieben werden."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid "Updating"
 msgstr "Aktualisieren"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:59
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
@@ -130,18 +130,19 @@ msgstr ""
 "Zeichenbefehle gecached und zwischengespeichert werden, sodass weitere "
 "Aufrufe nicht erforderlich sind."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
+#, fuzzy
 msgid ""
-"If re-drawing is required because a state or something else changed, simply "
-"call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
-"same node and a new ``_draw()`` call will happen."
+"If re-drawing is required because a state or something else changed, call :"
+"ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
+"and a new ``_draw()`` call will happen."
 msgstr ""
 "Wenn ein erneutes Zeichnen erforderlich ist, weil sich ein Status oder etwas "
 "anderes geändert hat, rufen Sie einfach :ref:`CanvasItem.update() "
 "<class_CanvasItem_method_update>` in demselben Node auf und ein neuer "
 "``_draw()`` Aufruf wird ausgeführt."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
@@ -149,7 +150,7 @@ msgstr ""
 "Hier ist ein etwas komplexeres Beispiel, eine Texturvariable, die bei "
 "Änderung neu gezeichnet wird:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:110
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
@@ -157,11 +158,11 @@ msgstr ""
 "In einigen Fällen kann es wünschenswert sein jedes Frame zu zeichnen. Rufen "
 "Sie dazu einfach ``update()`` aus dem ``_process()`` Rückruf auf:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:142
 msgid "An example: drawing circular arcs"
 msgstr "Beispiel: Kreisbögen zeichnen"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:144
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -175,11 +176,11 @@ msgstr ""
 "Kreis zeichnet. Was ist jedoch mit dem Zeichnen eines Teils eines Kreises? "
 "Sie müssen eine Funktion schreiben um dies auszuführen und selbst zeichnen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:150
 msgid "Arc function"
 msgstr "Bogen-Funktion"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:152
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -194,7 +195,7 @@ msgstr ""
 "den Farbwert an, damit wir den Bogen auf Wunsch in verschiedenen Farben "
 "zeichnen können."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
 "certain number of points linked from one to the next. As you can imagine, "
@@ -219,7 +220,7 @@ msgstr ""
 "(LOD)* bezeichnet. In unserem Beispiel verwenden wir einfach eine feste "
 "Anzahl von Punkten, unabhängig vom Radius."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:197
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
@@ -231,7 +232,7 @@ msgstr ""
 "Wert von ``32`` festgelegt. Dann initialisieren wir ein leeres "
 "``PoolVector2Array`` das einfach ein Array von ``Vector2`` ist."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -246,7 +247,7 @@ msgstr ""
 "enthält. Wir bestimmen zuerst den Winkel jedes Punktes zwischen dem Start- "
 "und dem Endwinkel."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -263,7 +264,7 @@ msgstr ""
 "möchten. Also verringern wir jeden Winkel um 90 ° um bei 12 Uhr mit dem "
 "Zählen zu beginnen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
 "radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
@@ -284,7 +285,7 @@ msgstr ""
 "unserem Wert ``Vector2`` hinzufügen. Schließlich fügen wir den Punkt in das "
 "zuvor definierte ``PoolVector2Array`` ein."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:220
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
 "simply draw our 32 points: we need to draw everything that is between each "
@@ -305,11 +306,11 @@ msgstr ""
 "jeder Linie zwischen zwei Punkten niemals lang genug sein, um sie zu sehen. "
 "Falls doch, müssten wir lediglich die Anzahl der Punkte erhöhen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:230
 msgid "Draw the arc on the screen"
 msgstr "Zeichne den Bogen auf dem Bildschirm"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:232
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
@@ -317,15 +318,15 @@ msgstr ""
 "Wir haben jetzt eine Funktion die etwas auf dem Bildschirm zeichnet; es wird "
 "Zeit sie innerhalb der ``_draw()`` Funktion aufzurufen:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:259
 msgid "Result:"
 msgstr "Ergebnis:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Arc polygon function"
 msgstr "Bogenpolygon-Funktion"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:266
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -337,11 +338,11 @@ msgstr ""
 "sondern auch deren gesamte Form. Die Methode ist genau die gleiche wie "
 "zuvor, außer dass wir anstelle von Linien ein Polygon zeichnen:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:306
 msgid "Dynamic custom drawing"
 msgstr "Dynamische benutzerdefinierte Zeichnung"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:308
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
 "is static; let's make this shape turn around the center. The solution to do "
@@ -356,7 +357,7 @@ msgstr ""
 "erhöhen wir sie einfach um 50. Dieser Inkrementwert muss konstant bleiben, "
 "sonst ändert sich die Drehzahl entsprechend."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:314
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
@@ -366,11 +367,11 @@ msgstr ""
 "Skript global anlegen. Beachten Sie auch, dass Sie sie in anderen Nodes "
 "speichern und mit ``get_node()`` darauf zugreifen können."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:336
 msgid "We make these values change in the _process(delta) function."
 msgstr "Wir ändern diese Werte in der Funktion _process(delta)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:338
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -389,7 +390,7 @@ msgstr ""
 "den Godot verwalten kann (``2 ^ 31 - 1``). In diesem Fall kann Godot "
 "abstürzen oder unerwartetes Verhalten hervorrufen."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:345
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
@@ -399,7 +400,7 @@ msgstr ""
 "aufzurufen, die automatisch ``_draw()`` aufruft. Auf diese Weise können Sie "
 "steuern, wann Sie den Frame aktualisieren möchten."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:378
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
@@ -407,14 +408,14 @@ msgstr ""
 "Ebenso bitte nicht vergessen die Funktion ``_draw()``zu ändern, damit diese "
 "Variablen genutzt werden:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:402
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 "Startet das Programm! Es läuft, aber der Bogen dreht sich wahnsinnig "
 "schnell! Was ist Falsch?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:405
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -434,7 +435,7 @@ msgstr ""
 "sicher, dass Ihr Programm auf der Hardware aller Benutzer mit der gleichen "
 "Geschwindigkeit ausgeführt wird."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -446,16 +447,16 @@ msgstr ""
 "werden unsere 2 Winkel um einen viel kleineren Wert vergrößert, der direkt "
 "von der Rendergeschwindigkeit abhängt."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:447
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 "Starte das Programm noch einmal! Diesmal wird die Drehung korrekt angezeigt!"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:450
 msgid "Tools"
 msgstr "Werkzeuge"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:452
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
@@ -464,7 +465,7 @@ msgstr ""
 "Editor ausführen, um sie als Vorschau oder Visualisierung einer Funktion "
 "oder eines Verhaltens zu verwenden."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:456
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid "No Depth Test"
-msgstr "Нет Теста На Глубину"
+msgstr "Без теста глубины"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:93
 msgid ""
@@ -519,6 +519,14 @@ msgid ""
 "being culled by other faces. To resolve this, enable **Backface Culling** in "
 "Blender's Materials tab, then export the scene to glTF again."
 msgstr ""
+"По умолчанию, в Blender отключено отсечение невидимых полигонов у материалов "
+"и Blender будет экспортировать материалы так чтобы соответствовать тому как "
+"они отрисовываются в Blender. Это значит что у материалов в Godot отсечение "
+"материалов установлено на **Отключить**. Это может уменьшить "
+"производительность при отрисовке невидимых граней, даже когда они были "
+"отсечены другими гранями. Что бы решить это, включите **Отсечение невидимых "
+"граней** во вкладке \"Материалы\" в Blender, после этого экспортируйте в 3d-"
+"сцену в формате glTF снова."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:236
 msgid "Depth Draw Mode"
@@ -569,7 +577,7 @@ msgid ""
 "is not available on most modern hardware."
 msgstr ""
 "При рисовании линий укажите ширину рисуемых линий. Эта опция недоступна на "
-"большинстве современных аппаратных средств."
+"большинстве современного оборудования."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:257
 msgid "Point Size"
@@ -1031,6 +1039,10 @@ msgid ""
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
+"Добавить: Добавляет пиксельные значения одной текстуры к другой. В отличие "
+"от режима смешивания обе текстуры полностью смешиваются на белых участках "
+"маски и не смешиваются на серых участках. Оригинальная текстура в основном "
+"остается неизменной на черных участках"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:503
 msgid ""
@@ -1039,18 +1051,26 @@ msgid ""
 "subtraction in black parts, gray parts being different levels of subtraction "
 "based on the exact texture."
 msgstr ""
+"Sub: Вычитание пиксельных значений одной текстуры из другой. Вторая текстура "
+"полностью вычитается в белых частях маски и лишь немного вычитается в черных "
+"частях, серые части имеют разный уровень вычитания в зависимости от "
+"конкретной текстуры."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:508
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
+"Mul: Перемножает номера каналов RGB для каждого пикселя из верхней текстуры "
+"со значениями для соответствующего пикселя из нижней текстуры."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:511
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
+"Albedo: Поместите сюда текстуру альбедо, которую вы хотите смешать. Если "
+"этот слот останется пустым, то цвет будет белым по умолчанию."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:514
 msgid ""
@@ -1058,10 +1078,14 @@ msgid ""
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
+"Normal: Сюда помещается нормальная текстура, которую вы хотите смешать. Если "
+"в этом слоте ничего нет, он будет интерпретироваться как плоская карта "
+"нормалей. Это можно использовать, даже если в материале не включена карта "
+"нормалей."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:519
 msgid "UV1 and UV2"
-msgstr ""
+msgstr "UV1 и UV2"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:521
 msgid ""
@@ -1069,10 +1093,13 @@ msgid ""
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
+"Godot поддерживает два UV канала на материал. Вторичный UV часто полезен для "
+"окружающей окклюзии или излучения (запеченный свет). UV можно масштабировать "
+"и смещать, что полезно при использовании повторяющихся текстур."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:526
 msgid "Triplanar Mapping"
-msgstr ""
+msgstr "Трёхплоскостное наложение"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:528
 msgid ""
@@ -1081,12 +1108,19 @@ msgid ""
 "Textures are sampled in X, Y and Z and blended by the normal. Triplanar "
 "mapping can be performed in either world space or object space."
 msgstr ""
+"Трёхплоскостное наложение выполнимо как для UV1, так и для UV2. Это другой "
+"способ определения текстурных координат, известный также как "
+"\"автотекстурирование\". Текстуры выбираются по X, Y и Z и смешиваются по "
+"нормали. Трёхплоскостное наложение может быть выполнено как в местных, так и "
+"в мировых координатах."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:533
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
+"На изображении ниже видно, что все примитивы имеют один и тот же материал с "
+"мировым трипланаром, поэтому текстура кирпича плавно переходит между ними."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:539
 msgid "Proximity and distance fade"
@@ -1100,16 +1134,23 @@ msgid ""
 "the shores. Distance fade is useful for light shafts or indicators that are "
 "only present after a given distance."
 msgstr ""
+"Godot позволяет материалам выцветать из-за близости друг к другу, а также в "
+"зависимости от расстояния до зрителя. Эффект приближения полезен для таких "
+"эффектов, как мягкие частицы или масса воды с плавным переходом к берегам. "
+"Дистанционное затухание полезно для световых лучей или индикаторов, которые "
+"присутствуют только после заданного расстояния."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:547
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
+"Имейте в виду, что включение этих параметров включает альфа-смешивание, "
+"поэтому злоупотреблять ими для всей сцены обычно не рекомендуется."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:553
 msgid "Render priority"
-msgstr ""
+msgstr "Приоритет рендеринга"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:555
 msgid ""
@@ -1117,3 +1158,6 @@ msgid ""
 "useful for transparent objects (or opaque objects that perform depth draw "
 "but no color draw, such as cracks on the floor)."
 msgstr ""
+"Порядок рендеринга объектов можно изменить, хотя это в основном полезно для "
+"прозрачных объектов (или непрозрачных объектов, которые выполняют прорисовку "
+"глубины, но не прорисовку цвета, например трещины на полу)."

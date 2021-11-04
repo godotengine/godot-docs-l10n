@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,6 @@ msgid "AudioStream"
 msgstr "AudioStream"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
-#, fuzzy
 msgid ""
 "An audio stream is an abstract object that emits sound. The sound can come "
 "from many places, but is most commonly loaded from the filesystem. Audio "
@@ -49,13 +48,12 @@ msgid ""
 "`doc_importing_audio_samples`."
 msgstr ""
 "Un flujo de audio es un objeto abstracto que emite sonido. El sonido puede "
-"provenir de muchos lugares, pero lo más común es que se cargue desde el "
-"sistema de archivos. Los archivos de audio como WAV (``.wav``) o Ogg Vorbis "
-"(``.ogg``) pueden ser cargados como AudioStreams y colocados dentro de un "
-"AudioStreamPlayer."
+"provenir de muchos lugares, pero generalmente se carga desde el sistema de "
+"archivos. Los archivos de audio se pueden cargar como AudioStreams y "
+"colocarse dentro de un AudioStreamPlayer. Puede encontrar información sobre "
+"formatos compatibles y diferencias en :ref:`doc_importing_audio_samples`."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:21
-#, fuzzy
 msgid ""
 "There are other types of AudioStreams, such as AudioStreamRandomPitch. This "
 "one makes a random adjustment to the sound's pitch every time it's played "

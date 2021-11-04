@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,22 +79,11 @@ msgstr ""
 "最后,Godot有一个简单但有效的系统, 用于 :ref:`将DLC 创建为额外的包文件 "
 "<doc_exporting_pcks>` ."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
-msgid ""
-"Godot does not support loading PCK files larger than 2 GB yet. If your "
-"exported project data is larger than 2 GB, you will need to split it into "
-"several PCK files by :ref:`exporting additional PCKs <doc_exporting_pcks>` "
-"and loading them at run-time."
-msgstr ""
-"Godot目前尚不支持加载大于2 GB的PCK文件. 如果导出的项目数据大于2 GB, 则需要通"
-"过 :ref:`导出额外的 PCK <doc_exporting_pcks>` 将其分割成多个PCK文件, 并在运行"
-"时加载它们."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
 msgid "On mobile"
 msgstr "在移动端"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:47
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -103,7 +92,7 @@ msgstr ""
 "移动设备中的相同情况会更糟糕. 要在这些设备上分发项目, 需要为每个平台构建一个"
 "二进制文件, 然后将其与游戏数据一起添加到本地项目中."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:52
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
 "This can be troublesome because it means that the developer must be "
 "familiarized with the SDK of each platform before even being able to export. "
@@ -113,7 +102,7 @@ msgstr ""
 "这可能很麻烦, 因为这意味着开发人员必须熟悉每个平台的SDK, 才能进行导出. 虽然总"
 "是鼓励学习每个SDK, 但在不希望的时间被迫这样做可能会令人沮丧."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:57
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
 "There is also another problem with this approach: different devices prefer "
 "some data in different formats to run. The main example of this is texture "
@@ -125,11 +114,11 @@ msgstr ""
 "例是纹理压缩. 所有PC硬件都使用S3TC(BC)压缩, 并且已经标准化了十多年, 但是移动"
 "设备使用不同的格式进行纹理压缩, 例如PVRTC(iOS)或ETC(Android)."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
 msgstr "导出菜单"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
 "After many attempts at different export workflows, the current one has "
 "proven to work the best. At the time of this writing, not all platforms are "
@@ -138,17 +127,17 @@ msgstr ""
 "经过多次尝试不同的导出工作流程后, 目前的工作流程已被证明是最好的. 在撰写本文"
 "时, 并不是所有平台都支持, 但受支持的平台仍在继续增长."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
 msgstr "要打开导出菜单, 请单击 **导出** 按钮:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:75
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr "导出菜单将打开, 但它完全是空的. 这是因为我们需要添加导出预设."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
 "To create an export preset, click the **Add…** button at the top of the "
 "export menu. This will open a drop-down list of platforms to choose from for "
@@ -157,7 +146,7 @@ msgstr ""
 "要创建导出预设, 请点击导出菜单顶部的 ``添加...`` 按钮. 这将打开一个平台下拉列"
 "表, 以从中选择导出预设."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:86
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
 "The default options are often enough to export, so tweaking them is usually "
 "not necessary. However, many platforms require additional tools (SDKs) to be "
@@ -170,17 +159,17 @@ msgstr ""
 "工具(SDK)才能导出. 此外,Godot需要安装导出模板来创建软件包. 缺少某些内容时, 导"
 "出菜单将发出提示, 并且在解决该问题之前, 用户将无法导出该平台:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
 msgstr "那时, 用户需要回到文档并按照有关如何正确设置该平台的说明进行操作."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 msgid "Export templates"
 msgstr "导出模板"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:101
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
 msgid ""
 "Apart from setting up the platform, the export templates must be installed "
 "to be able to export projects. They can be obtained as a TPZ file (which is "
@@ -191,17 +180,17 @@ msgstr ""
 "<https://www.godotengine.org/download>`_ 中以TPZ文件(是一个重命名的ZIP存档)的"
 "形式获取它们."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr "一旦下载后, 就可以使用编辑器中的 **安装导出模板** 选项进行安装:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid "Export mode"
 msgstr "导出模式"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
@@ -209,19 +198,19 @@ msgstr ""
 "导出时,Godot会创建一个所有要导出的文件的列表, 然后创建包. 有3种不同的导出模"
 "式:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
 msgstr "导出项目中的所有资源"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
 msgstr "导出选中的场景(包括依赖项)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
 msgstr "导出选中的资源(包括依赖资源)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
@@ -232,11 +221,11 @@ msgstr ""
 "selected scenes** 和 **Export selected resources** 给予你一张项目中的场景或资"
 "源的清单, 并且需要选取每个想导出的场景或资源."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:133
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "Exporting from the command line"
 msgstr "从命令行导出"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:128
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -247,7 +236,7 @@ msgstr ""
 "行参数来支持它. 从命令行导出仍需要导出预设来定义导出参数. 该命令的基本调用将"
 "是:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:137
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -258,7 +247,7 @@ msgstr ""
 "``some_name.exe``. 输出路径相对于项目路径或绝对路径；它不遵命令被调用时的目"
 "录."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:149
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:142
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -267,7 +256,7 @@ msgstr ""
 "您还可以将其配置为仅导出PCK或ZIP文件, 从而允许单个导出可以被多个Godot可执行文"
 "件使用. 如果目标名称以 ``.pck`` 或 ``.zip`` 结尾, 才会发生这种情况."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:153
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:146
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
@@ -275,11 +264,11 @@ msgstr ""
 "将 ``--export`` 标志与 ``--path`` 标志组合起来通常很有用, 可为自动导出创建专"
 "用的导出预设:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
 msgid "PCK versus ZIP pack file formats"
 msgstr "PCK 与 ZIP 打包文件格式对比"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
 "Each format has its upsides and downsides. PCK is the default and "
 "recommended format for most use cases, but you may want to use a ZIP archive "
@@ -288,15 +277,15 @@ msgstr ""
 "各个格式有它的优势与劣势.PCK 对大多数用例来说是默认和推荐格式, 但取决于您的需"
 "要, 您可能希望使用 ZIP."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:167
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
 msgid "**PCK format:**"
 msgstr "**PCK格式:**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:169
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr "未压缩的格式. 文件尺寸更大, 但读写更快."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
 "Not readable and writable using tools normally present on the user's "
 "operating system, even though there are `third-party tools <https://github."
@@ -305,15 +294,15 @@ msgstr ""
 "尽管有 `第三方工具 <https://github.com/hhyyrylainen/GodotPckTool>`__ 来提取和"
 "创建PCK文件, 但使用用户操作系统上通常存在的工具是不可读和不可写的."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:175
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
 msgid "**ZIP format:**"
 msgstr "**ZIP格式:**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr "经过压缩, 尺寸更小, 但读写较慢."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:178
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
 msgid ""
 "Readable and writable using tools normally present on the user's operating "
 "system. This can be useful to make modding easier (see also :ref:"
@@ -322,7 +311,7 @@ msgstr ""
 "可以使用用户操作系统中的常见工具读取或写入. 这对简化制作mod很有用.(另请参阅 :"
 "ref:`doc_exporting_pcks`)."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:183
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:176
 msgid ""
 "Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, "
 "when using a ZIP file as a pack file, the exported binary will not try to "
@@ -333,7 +322,7 @@ msgstr ""
 "pull/42123>`__ , 当 ZIP 文件用作打包文件时, 导出的二进制文件不会尝试自动使用"
 "它. 因此, 你需要创建一个 *启动脚本* , 玩家可以双击它或从终端启动项目::"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:195
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:188
 msgid ""
 "Save the launcher script and place it in the same folder as the exported "
 "binary. On Linux, make sure to give executable permissions to the launcher "

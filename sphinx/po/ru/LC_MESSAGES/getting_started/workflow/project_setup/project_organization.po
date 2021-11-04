@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,26 +169,28 @@ msgstr ""
 "строке следующую команду: ``type nul> .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
+#, fuzzy
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
-"using the ``load()`` and ``preload()`` methods."
+"using the ``load()`` and ``preload()`` methods. Ignoring a folder will also "
+"automatically hide it from the FileSystem dock, which can be useful to "
+"reduce clutter."
 msgstr ""
 "Если папка игнорируется, ресурсы из неё не могут быть загружены с "
 "использованием методов ``load()`` и ``preload()``."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
 msgid ""
-"Ignoring a folder will also automatically hide it from the FileSystem dock, "
-"which can be useful to reduce clutter."
+"Note that the ``.gdignore`` file's contents are ignored, which is why the "
+"file should be empty. It does not support patterns like ``.gitignore`` files "
+"do."
 msgstr ""
-"Игнорирование папки также автоматически скрывает её в панели FileSystem, что "
-"может быть полезно для уменьшения беспорядка."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:97
 msgid "Case sensitivity"
 msgstr "Чувствительность к регистру"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:98
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:99
 msgid ""
 "Windows and recent macOS versions use case-insensitive filesystems by "
 "default, whereas Linux distributions use a case-sensitive filesystem by "
@@ -205,7 +207,7 @@ msgstr ""
 "использовать стиль ``snake_case`` (и строчные буквы в целом) для именования "
 "всех файлов проекта."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:107
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
@@ -214,7 +216,7 @@ msgstr ""
 "(например, руководство по стилю C#). И всё же будьте последовательны, чтобы "
 "избежать ошибок."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:111
 msgid ""
 "On Windows 10, to further avoid mistakes related to case sensitivity, you "
 "can also make the project folder case-sensitive. After enabling the Windows "
@@ -226,7 +228,7 @@ msgstr ""
 "чувствительной к регистру. После включения функции Windows Subsystem for "
 "Linux выполните следующую команду в окне PowerShell::"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:120
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:121
 msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "

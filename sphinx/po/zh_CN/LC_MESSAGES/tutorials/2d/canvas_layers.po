@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,12 +70,12 @@ msgstr ""
 "布项(以及整个场景)更有效。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
-#, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. For example:"
 msgstr ""
-"通常情况下, 我们不希望游戏中的 *所有东西* 都受到画布变换的影响. 相应的例子有:"
+"通常情况下，我们并不希望游戏或应用程序中的 *所有东西* 都受到画布变换的约束。"
+"比如:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
@@ -84,16 +84,15 @@ msgid ""
 msgstr "**Parallax Backgrounds(视差背景)** : 比场景其他部分移动得慢的背景."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
-#, fuzzy
 msgid ""
 "**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
 "on our view of the game world. We want a life counter, score display and "
 "other elements to retain their screen positions even when our view of the "
 "game world changes."
 msgstr ""
-"**用户界面** : 想象一个UI(用户界面)或HUD(平视显示器) 叠加在我们的游戏世界视图"
-"上. 我们想要生命计数器, 分数显示等东西保持其屏幕位置, 即使当游戏世界中的视角"
-"正在改变时他们也不动."
+"**UI**: 想想看，用户界面（UI）或平视显示系统（HUD）叠加在我们游戏世界的视野。"
+"我们希望生命计数器、分数显示和其他元素能够保持其屏幕位置，即使我们在游戏世界"
+"的视角发生变化。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""

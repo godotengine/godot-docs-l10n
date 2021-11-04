@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
-"在接下来的两个教程中, 您将使用引擎的UI(用户界面)系统逐步构建两个响应式UI场景:"
+"在接下来的两个教程中, 你将使用引擎的UI(用户界面)系统逐步构建两个响应式UI场景:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu."
@@ -59,8 +59,8 @@ msgid ""
 "folder."
 msgstr ""
 "下载项目文件: :download:`ui_main_menu_design.zip <files/ui_main_menu_design."
-"zip>` 并解压缩存档. 在Godot中导入 ``start/`` 项目以遵循本教程.``end/`` 文件夹"
-"包含最终结果. 您将在 ``start/assets/main_menu`` 文件夹中找到所有精灵."
+"zip>` 并解压缩存档. 在Godot中导入 ``start/`` 项目以遵循本教程. ``end/`` 文件"
+"夹包含最终结果. 您将在 ``start/assets/main_menu`` 文件夹中找到所有精灵."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
-msgstr "如何设计您的游戏UI"
+msgstr "如何设计你的游戏UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:36
 msgid ""
@@ -84,9 +84,9 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
-"要设计一个好的UI, 您首先要提出一个粗略的模型: 一个纯绘制版本, 重点放在UI组件"
-"的位置, 它们的大小, 和用户交互上. 您只需要纸和笔. 在此阶段, 您不应该使用精美"
-"的图形和最终图形. 然后, 您只需要简单的占位符精灵, 就可以进入Godot. 您要确保玩"
+"要设计一个好的UI, 你首先要提出一个粗略的模型: 一个纯绘制版本, 重点放在UI组件"
+"的位置, 它们的大小, 和用户交互上. 你只需要纸和笔. 在此阶段, 你不应该使用精美"
+"的图形和最终图形. 然后, 你只需要简单的占位符精灵, 就可以进入Godot. 你要确保玩"
 "家可以使用这些占位符在界面周围找到自己的路."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
@@ -121,12 +121,12 @@ msgid ""
 "helps you refine the design foundation you'll build upon."
 msgstr ""
 "总是首先尝试让界面使用简单的文本和框. 以后替换纹理很容易. 专业的UX设计师通常"
-"使用灰色的简单轮廓和框. 当您去掉颜色和精美的视觉效果时, 正确地设置和放置UI元"
-"素要容易得多. 它可以帮助您完善将要建立的设计基础."
+"使用灰色的简单轮廓和框. 当你去掉颜色和精美的视觉效果时, 正确地设置和放置UI元"
+"素要容易得多. 它可以帮助你完善将要建立的设计基础."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
 msgid "There are two ways to design your UI in Godot. You can:"
-msgstr "在Godot中有两种方法来设计UI. 您可以:"
+msgstr "在Godot中有两种方法来设计UI. 你可以:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
 msgid ""
@@ -466,8 +466,8 @@ msgstr ""
 "**尺寸标记(Size Flags)** 类别, 然后点击 **垂直(Vertical)** 属性右侧的字段, 并"
 "检查 **扩展(Expand)** 还有 **填充(Fill)** . 对 **水平(Horizontal)** 属性执行"
 "相同的操作. 这使得 ``CenterContainer`` 扩展到所有可用空间, 同时不妨碍其邻居 "
-"``VBoxContainer``. 最后, 将 ``Characters`` 节点拖放到 ``CenterContainer`` 中."
-"``Characters`` 元素将自动居中."
+"``VBoxContainer``. 最后, 将 ``Characters`` 节点拖放到 ``CenterContainer`` "
+"中. ``Characters`` 元素将自动居中."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
@@ -489,7 +489,7 @@ msgstr ""
 "为了隔开左侧的菜单选项和Logo, 我们还需要一个容器并设置其Size Flags. 选择 "
 "``VBoxContainer`` 并按 :kbd:`Ctrl+A` (macOS为 :kbd:`Cmd+A` )在其中添加一个新"
 "节点. 添加第二个 ``VBoxContainer`` , 并将其命名为 *MenuOptions* . 选择所有菜"
-"单选项( ``Continue``,``NewGame`` 和 ``Options`` ), 并将其拖放至新的 "
+"单选项( ``Continue``, ``NewGame`` 和 ``Options`` ), 并将其拖放至新的 "
 "``VBoxContainer`` 中.UI的布局应该看起来和刚才差不多."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
@@ -588,7 +588,7 @@ msgid ""
 "ratios, but we also need the entire game to adapt to different screen "
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
-"您会注意到, 尽管容器在周围移动精灵, 但不会缩放它们. 这是正常的. 我们希望UI系"
+"你会注意到, 尽管容器在周围移动精灵, 但不会缩放它们. 这是正常的. 我们希望UI系"
 "统能够处理不同的屏幕比例, 但是我们还需要整个游戏来适应不同的屏幕分辨率. 为此,"
 "Godot将上下缩放整个窗口."
 

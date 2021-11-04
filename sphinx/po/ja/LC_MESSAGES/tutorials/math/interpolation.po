@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,11 +53,11 @@ msgid ""
 "described as:"
 msgstr "2つの実数(浮動小数点)の間では、単純な補間は通常次のように記述されます:"
 
-#: ../../docs/tutorials/math/interpolation.rst:19
+#: ../../docs/tutorials/math/interpolation.rst:18
 msgid "And often simplified to:"
 msgstr "多くの場合、次のように簡略化されます:"
 
-#: ../../docs/tutorials/math/interpolation.rst:26
+#: ../../docs/tutorials/math/interpolation.rst:24
 msgid ""
 "The name of this type of interpolation, which transforms a value into "
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
@@ -67,7 +67,7 @@ msgstr ""
 "(linear)\"*\\ です。したがって、\\ *線形補間*\\ について聞いたとき、あなたは"
 "彼らがこの単純な式を参照していることを知っています。"
 
-#: ../../docs/tutorials/math/interpolation.rst:28
+#: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
 "There are other types of interpolations, which will not be covered here. A "
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
@@ -76,11 +76,11 @@ msgstr ""
 "他のタイプの補間がありますが、ここでは説明しません。後で :ref:`Bezier "
 "<doc_beziers_and_curves>` のページを読むことをお勧めします。"
 
-#: ../../docs/tutorials/math/interpolation.rst:31
+#: ../../docs/tutorials/math/interpolation.rst:29
 msgid "Vector interpolation"
 msgstr "ベクトル補間"
 
-#: ../../docs/tutorials/math/interpolation.rst:33
+#: ../../docs/tutorials/math/interpolation.rst:31
 msgid ""
 "Vector types (:ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>`) can also be interpolated, they come with handy functions "
@@ -94,7 +94,7 @@ msgstr ""
 "および :ref:`Vector3.linear_interpolate() "
 "<class_Vector3_method_linear_interpolate>` です。"
 
-#: ../../docs/tutorials/math/interpolation.rst:36
+#: ../../docs/tutorials/math/interpolation.rst:34
 #, fuzzy
 msgid ""
 "For cubic interpolation, there are also :ref:`Vector2.cubic_interpolate() "
@@ -107,21 +107,21 @@ msgstr ""
 "cubic_interpolate() <class_Vector3_method_linear_interpolate>` もあり、これら"
 "は :ref:`Bezier <doc_beziers_and_curves>` スタイルの補間を行います。"
 
-#: ../../docs/tutorials/math/interpolation.rst:38
+#: ../../docs/tutorials/math/interpolation.rst:36
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr ""
 "補間を使用してポイントAからBに移動するための簡単な擬似コードを次に示します:"
 
-#: ../../docs/tutorials/math/interpolation.rst:48
+#: ../../docs/tutorials/math/interpolation.rst:63
 msgid "It will produce the following motion:"
 msgstr "次のモーションを生成します:"
 
-#: ../../docs/tutorials/math/interpolation.rst:53
+#: ../../docs/tutorials/math/interpolation.rst:68
 msgid "Transform interpolation"
 msgstr "幾何学変換(変形)の補間"
 
-#: ../../docs/tutorials/math/interpolation.rst:55
+#: ../../docs/tutorials/math/interpolation.rst:70
 msgid ""
 "It is also possible to interpolate whole transforms (make sure they have "
 "either uniform scale or, at least, the same non-uniform scale). For this, "
@@ -133,24 +133,24 @@ msgstr ""
 "に、関数 :ref:`Transform.interpolate_with() "
 "<class_Transform_method_interpolate_with>` を使用できます。"
 
-#: ../../docs/tutorials/math/interpolation.rst:58
+#: ../../docs/tutorials/math/interpolation.rst:73
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
 msgstr "以下は、猿をPosition1からPosition2に変換する例です:"
 
-#: ../../docs/tutorials/math/interpolation.rst:62
+#: ../../docs/tutorials/math/interpolation.rst:77
 msgid "Using the following pseudocode:"
 msgstr "次の擬似コードを使用します:"
 
-#: ../../docs/tutorials/math/interpolation.rst:74
+#: ../../docs/tutorials/math/interpolation.rst:104
 msgid "And again, it will produce the following motion:"
 msgstr "また、次のモーションを生成します:"
 
-#: ../../docs/tutorials/math/interpolation.rst:80
+#: ../../docs/tutorials/math/interpolation.rst:110
 msgid "Smoothing motion"
 msgstr "スムージングモーション"
 
-#: ../../docs/tutorials/math/interpolation.rst:82
+#: ../../docs/tutorials/math/interpolation.rst:112
 msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
@@ -158,11 +158,11 @@ msgstr ""
 "補間は、動きや回転などを滑らかにするために使用できます。これは、滑らかな動き"
 "を使用したマウスに追従する円の例です:"
 
-#: ../../docs/tutorials/math/interpolation.rst:94
+#: ../../docs/tutorials/math/interpolation.rst:137
 msgid "Here is how it looks:"
 msgstr "次の様に見えます:"
 
-#: ../../docs/tutorials/math/interpolation.rst:98
+#: ../../docs/tutorials/math/interpolation.rst:141
 msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."

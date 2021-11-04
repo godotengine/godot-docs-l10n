@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgid ""
 "best setup your system as outlined below to ensure all your commits follow "
 "the guidelines."
 msgstr ""
-"在给Godot的源代码做贡献时, 您需要遵循下面概述的样式指南. 其中一些是通过持续集"
-"成过程进行检查的, 评审人员将要求您修复潜在的问题, 因此最好按照下面概述的方式"
+"在给Godot的源代码做贡献时, 你需要遵循下面概述的样式指南. 其中一些是通过持续集"
+"成过程进行检查的, 评审人员将要求你修复潜在的问题, 因此最好按照下面概述的方式"
 "设置系统, 以确保所有提交都遵循指导原则."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:15
@@ -84,8 +84,8 @@ msgid ""
 "advise that you setup clang-format locally to check and automatically fix "
 "all your commits."
 msgstr ""
-"只要您确保您的样式与周围的代码匹配, 并且您没有引入尾随空格或基于空格的缩进, "
-"就应该没问题. 但如果您计划定期贡献, 我们强烈建议您在本地设置clang-format以检"
+"只要你确保你的样式与周围的代码匹配, 并且你没有引入尾随空格或基于空格的缩进, "
+"就应该没问题. 但如果你计划定期贡献, 我们强烈建议你在本地设置clang-format以检"
 "查并自动修复所有提交."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:37
@@ -118,11 +118,12 @@ msgid "Using clang-format locally"
 msgstr "在本地使用clang-format"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:54
+#, fuzzy
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
-"use **clang-format 8.x** to be compatible with Godot's format. Later "
-"versions might be suitable, but previous versions had bugs that will cause "
-"formatting changes to the current code base."
+"use **clang-format 13** to be compatible with Godot's format. Later versions "
+"might be suitable, but previous versions may not support all used options, "
+"or format some things differently, leading to style issues in pull requests."
 msgstr ""
 "首先, 您需要安装clang-format. 截至目前, 您需要使用 **clang-format 8.x** 与"
 "Godot的格式兼容. 更高版本可能是合适的, 但以前的版本有错误, 将导致当前代码库的"
@@ -164,7 +165,7 @@ msgstr ""
 #: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
-msgstr "然后, 您就有不同的可能性将clang-format应用于您的更改:"
+msgstr "然后, 你就有不同的可能性将clang-format应用于你的更改:"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:77
 #: ../../docs/community/contributing/code_style_guidelines.rst:273
@@ -175,7 +176,7 @@ msgstr "手动使用"
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
-msgstr "您可以使用以下命令手动将clang-format应用于一个或多个文件:"
+msgstr "你可以使用以下命令手动将clang-format应用于一个或多个文件:"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
@@ -207,8 +208,8 @@ msgid ""
 "format automatically on all your commits to check them, and let you apply "
 "its changes in the final commit."
 msgstr ""
-"为了易于使用, 我们为Git提供了一个预提交钩子, 它将在您的所有提交上自动运行"
-"clang-format来检查它们, 并允许您在最终提交中应用其更改."
+"为了易于使用, 我们为Git提供了一个预提交钩子, 它将在你的所有提交上自动运行"
+"clang-format来检查它们, 并允许你在最终提交中应用其更改."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
@@ -225,7 +226,7 @@ msgid ""
 "hook was tested on Linux and macOS, but should also work in the Git Shell on "
 "Windows."
 msgstr ""
-"如果您的clang-format不在 ``PATH`` 中, 您可能需要编辑 ``pre-commit-clang-"
+"如果你的clang-format不在 ``PATH`` 中, 你可能需要编辑 ``pre-commit-clang-"
 "format`` 来指向正确的二进制格式才能工作. 钩子在Linux和macOS上测试过, 但也应该"
 "在Windows上的Git Shell中运行."
 

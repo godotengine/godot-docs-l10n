@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,18 +66,10 @@ msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 msgstr "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:26
-msgid "``_input()`` : NOTIFICATION_INPUT"
-msgstr "``_input()`` : NOTIFICATION_INPUT"
-
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
-msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-msgstr "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
 msgid "``_draw()`` : NOTIFICATION_DRAW"
 msgstr "``_draw()`` : NOTIFICATION_DRAW"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone:"
@@ -85,7 +77,7 @@ msgstr ""
 "Пользователи могут *не* осознавать, что уведомления существуют не только для "
 "Node (узлов), но и для других типов:"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:31
 msgid ""
 ":ref:`Object::NOTIFICATION_POSTINITIALIZE "
 "<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: a callback that "
@@ -95,7 +87,7 @@ msgstr ""
 "<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: обратный вызов, "
 "который срабатывает при инициализации объекта. Не доступно для скриптов."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:38
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:34
 msgid ""
 ":ref:`Object::NOTIFICATION_PREDELETE "
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: a callback that triggers "
@@ -105,7 +97,7 @@ msgstr ""
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: обратный вызов, который "
 "срабатывает до того, как движок удалит Объект, т.е. 'деструктор'."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:38
 msgid ""
 ":ref:`MainLoop::NOTIFICATION_WM_MOUSE_ENTER "
 "<class_MainLoop_constant_NOTIFICATION_WM_MOUSE_ENTER>`: a callback that "
@@ -117,7 +109,7 @@ msgstr ""
 "который срабатывает, когда мышь входит в окно операционной системы, "
 "отображающее игровой контент."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:46
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
 msgid ""
 "And many of the callbacks that *do* exist in Nodes don't have any dedicated "
 "methods, but are still quite useful."
@@ -125,7 +117,7 @@ msgstr ""
 "И многие обратные вызовы, которые *действительно* существуют в Nodes "
 "(узлах), не имеют специальных методов, но по-прежнему весьма полезны."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:49
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:45
 msgid ""
 ":ref:`Node::NOTIFICATION_PARENTED "
 "<class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers "
@@ -135,7 +127,7 @@ msgstr ""
 "<class_Node_constant_NOTIFICATION_PARENTED>`: обратный вызов, который "
 "срабатывает при добавлении дочернего узла к другому узлу."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:48
 msgid ""
 ":ref:`Node::NOTIFICATION_UNPARENTED "
 "<class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers "
@@ -145,7 +137,7 @@ msgstr ""
 "<class_Node_constant_NOTIFICATION_UNPARENTED>`: обратный вызов, который "
 "срабатывает в любой момент, когда удаляется дочерний узел из другого узла."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:56
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
 msgid ""
 ":ref:`Popup::NOTIFICATION_POST_POPUP "
 "<class_Popup_constant_NOTIFICATION_POST_POPUP>`: a callback that triggers "
@@ -158,7 +150,7 @@ msgstr ""
 "Обратите внимание на отличие от его сигнала ``about_to_show``, который "
 "срабатывает *перед* его появлением."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:57
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
@@ -166,7 +158,7 @@ msgstr ""
 "Доступ ко всем этим настраиваемым уведомлениям можно получить с помощью "
 "универсального метода ``_notification``."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
@@ -174,7 +166,7 @@ msgstr ""
 "Методы в документации, помеченные как \"виртуальные\" (virtual), также "
 "должны быть переопределены скриптами."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:64
 msgid ""
 "A classic example is the :ref:`_init <class_Object_method__init>` method in "
 "Object. While it has no ``NOTIFICATION_*`` equivalent, the engine still "
@@ -185,7 +177,7 @@ msgstr ""
 "``NOTIFICATION_*``, движок по-прежнему вызывает метод. Большинство языков "
 "(кроме C#) полагаются на него, как на конструктор."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:73
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:69
 msgid ""
 "So, in which situation should one use each of these notifications or virtual "
 "functions?"
@@ -193,11 +185,11 @@ msgstr ""
 "Так в какой же ситуации следует использовать каждое из этих уведомлений или "
 "виртуальные функции?"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:73
 msgid "_process vs. _physics_process vs. \\*_input"
 msgstr "\"_process\" против \"_physics_process\" против \"\\*_input\""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:75
 msgid ""
 "Use ``_process`` when one needs a framerate-dependent deltatime between "
 "frames. If code that updates object data needs to update as often as "
@@ -213,7 +205,7 @@ msgstr ""
 "которой нужно обновлять оценки. Если им не нужно выполнять каждый кадр, то "
 "другой вариант - реализация цикла Timer-yield-timeout."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:97
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:93
 msgid ""
 "Use ``_physics_process`` when one needs a framerate-independent deltatime "
 "between frames. If code needs consistent updates over time, regardless of "
@@ -226,7 +218,7 @@ msgstr ""
 "медленно идёт время, это правильное место. Здесь должны выполняться "
 "повторяющиеся кинематические операции и операции преобразования объектов."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:98
 msgid ""
 "While it is possible, to achieve the best performance, one should avoid "
 "making input checks during these callbacks. ``_process`` and "
@@ -240,7 +232,7 @@ msgstr ""
 "они \"не отдыхают\"»). Напротив, обратные вызовы ``*_input`` будут "
 "запускаться только в тех кадрах, в которых движок фактически обнаружил ввод."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:104
 msgid ""
 "One can check for input actions within the input callbacks just the same. If "
 "one wants to use delta time, one can fetch it from the related deltatime "
@@ -250,11 +242,11 @@ msgstr ""
 "кто-то хочет использовать дельта-время, его можно при необходимости получить "
 "из связанных методов дельта-времени."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:152
 msgid "_init vs. initialization vs. export"
 msgstr "*_init* против *initialization* против *export*"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:154
 msgid ""
 "If the script initializes its own node subtree, without a scene, that code "
 "should execute here. Other property or SceneTree-independent initializations "
@@ -267,7 +259,7 @@ msgstr ""
 "``_enter_tree``, но после того, как скрипт создаст и инициализирует свои "
 "свойства."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:163
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:159
 msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
@@ -275,7 +267,7 @@ msgstr ""
 "Скрипты имеют три типа присвоения свойств, которые могут происходить во "
 "время создания экземпляра:"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:206
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
@@ -283,7 +275,7 @@ msgstr ""
 "При создании экземпляра сцены, значения свойств будут установлены в "
 "следующей последовательности:"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:209
 msgid ""
 "**Initial value assignment:** instantiation will assign either the "
 "initialization value or the init assignment value. Init assignments take "
@@ -293,7 +285,7 @@ msgstr ""
 "либо значение инициализации, либо значение присваивания инициализации. "
 "Инициализация присваивания имеет приоритет над инициализацией значений."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
 "**Exported value assignment:** If instancing from a scene rather than a "
 "script, Godot will assign the exported value to replace the initial value "
@@ -303,7 +295,7 @@ msgstr ""
 "не из скрипта, Godot назначит экспортируемое значение для замены начального "
 "значения, определённого в сценарии."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
 "As a result, instantiating a script versus a scene will affect both the "
 "initialization *and* the number of times the engine calls the setter."
@@ -311,11 +303,11 @@ msgstr ""
 "В результате создание экземпляра сценария вместо сцены повлияет как на "
 "инициализацию, *так и на* количество вызовов установщика механизмом."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 msgstr "*_ready* против *_enter_tree* против *NOTIFICATION_PARENTED*"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:223
 msgid ""
 "When instantiating a scene connected to the first executed scene, Godot will "
 "instantiate nodes down the tree (making ``_init`` calls) and build the tree "
@@ -332,20 +324,18 @@ msgstr ""
 "свои вызовы. Затем это вызывает обратный каскад, возвращающийся к корню "
 "дерева."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
-#, fuzzy
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:230
 msgid ""
 "When instantiating a script or a standalone scene, nodes are not added to "
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
 "Instead, only the ``_init`` call occurs. When the scene is added to the "
 "SceneTree, the ``_enter_tree`` and ``_ready`` calls occur."
 msgstr ""
-"При создании экземпляра сценария или автономной сцены узлы не добавляются в "
-"SceneTree при создании, поэтому обратные вызовы ``_enter_tree`` не "
-"запускаются. Вместо этого выполняются только вызовы ``_init`` и последующие "
-"вызовы ``_ready``."
+"При создании скрипта или автономной сцены узлы не добавляются в SceneTree "
+"при создании, поэтому обратные вызовы ``_enter_tree`` не запускаются. Вместо "
+"этого выполняются только вызовы ``_init`` и последующие вызовы ``_ready``."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:239
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:235
 msgid ""
 "If one needs to trigger behavior that occurs as nodes parent to another, "
 "regardless of whether it occurs as part of the main/active scene or not, one "

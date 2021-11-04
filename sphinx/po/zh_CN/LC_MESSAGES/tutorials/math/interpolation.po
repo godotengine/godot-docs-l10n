@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgid ""
 "described as:"
 msgstr "在两个实数(浮点数)之间, 一个简单的插值通常描述为:"
 
-#: ../../docs/tutorials/math/interpolation.rst:19
+#: ../../docs/tutorials/math/interpolation.rst:18
 msgid "And often simplified to:"
 msgstr "通常简化为:"
 
-#: ../../docs/tutorials/math/interpolation.rst:26
+#: ../../docs/tutorials/math/interpolation.rst:24
 msgid ""
 "The name of this type of interpolation, which transforms a value into "
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
@@ -63,20 +63,20 @@ msgstr ""
 "这类型的插值名字, 将一个值以 *恒定速度* 转换成另一个值 *\"线性\"*. 当你听说线"
 "性插值时, 就知道他们是指这个简单的公式."
 
-#: ../../docs/tutorials/math/interpolation.rst:28
+#: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
 "There are other types of interpolations, which will not be covered here. A "
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
-"还有其他类型的插值, 这里将不做讨论. 建议之后阅读: 参考:` 贝塞尔 <文档_贝塞尔_"
-"及_曲线>` 页面."
+"还有其他类型的插值, 这里将不做讨论. 建议之后阅读 :ref:`Bezier "
+"<doc_beziers_and_curves>` 页面."
 
-#: ../../docs/tutorials/math/interpolation.rst:31
+#: ../../docs/tutorials/math/interpolation.rst:29
 msgid "Vector interpolation"
 msgstr "向量插值"
 
-#: ../../docs/tutorials/math/interpolation.rst:33
+#: ../../docs/tutorials/math/interpolation.rst:31
 msgid ""
 "Vector types (:ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>`) can also be interpolated, they come with handy functions "
@@ -84,37 +84,37 @@ msgid ""
 "<class_Vector2_method_linear_interpolate>` and :ref:`Vector3."
 "linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 msgstr ""
-"向量类型(: 参考:` 二维向量 <类_二维向量>` 和 : 参考:` 三维向量 <类_三维向量"
-">`)也可以插值, 它们提供了方便的函数来实现这一点: 参考:`二维向量. 线性_插值() "
-"<类_二维向量_方法_线性_插值>` 和: 参考:`三维向量. 线性_插值() <类_三维向量_方"
-"法_线性_插值>`."
+"向量类型 (:ref:`Vector2 <class_Vector2>` 和 :ref:`Vector3 <class_Vector3>`) "
+"也可以插值, 它们提供了方便的函数来实现这一点 :ref:`Vector2."
+"linear_interpolate() <class_Vector2_method_linear_interpolate>` 和 :ref:"
+"`Vector3.linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 
-#: ../../docs/tutorials/math/interpolation.rst:36
-#, fuzzy
+#: ../../docs/tutorials/math/interpolation.rst:34
 msgid ""
 "For cubic interpolation, there are also :ref:`Vector2.cubic_interpolate() "
 "<class_Vector2_method_cubic_interpolate>` and :ref:`Vector3."
 "cubic_interpolate() <class_Vector3_method_cubic_interpolate>`, which do a :"
 "ref:`Bezier <doc_beziers_and_curves>` style interpolation."
 msgstr ""
-"以及立方插值, 请参见: 参考:`二维向量. 立方_插值() <类_二维向量_方法_线性_插值"
-">` 和: 参考:`三维向量. 立方_插值() <类_三维向量_方法_线性_插值>`, 使用: 参考:"
-"` 贝塞尔 <文档_贝塞尔_及_曲线>` 制作风格插值."
+"对于三次插值，还有 :ref:`Vector2.cubic_interpolate() "
+"<class_Vector2_method_cubic_interpolate>` 和 :ref:`Vector3."
+"cubic_interpolate() <class_Vector3_method_cubic_interpolate>` ，它们执行 :"
+"ref:`Bezier <doc_beziers_and_curves>` 式插值。"
 
-#: ../../docs/tutorials/math/interpolation.rst:38
+#: ../../docs/tutorials/math/interpolation.rst:36
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr "下面是使用插值从A点到B点的简单伪代码:"
 
-#: ../../docs/tutorials/math/interpolation.rst:48
+#: ../../docs/tutorials/math/interpolation.rst:63
 msgid "It will produce the following motion:"
 msgstr "它将产生以下运动:"
 
-#: ../../docs/tutorials/math/interpolation.rst:53
+#: ../../docs/tutorials/math/interpolation.rst:68
 msgid "Transform interpolation"
 msgstr "变换插值"
 
-#: ../../docs/tutorials/math/interpolation.rst:55
+#: ../../docs/tutorials/math/interpolation.rst:70
 msgid ""
 "It is also possible to interpolate whole transforms (make sure they have "
 "either uniform scale or, at least, the same non-uniform scale). For this, "
@@ -125,34 +125,34 @@ msgstr ""
 "对此, 可以使用函数 :ref:`Transform.interpolate_with() "
 "<class_Transform_method_interpolate_with>` ."
 
-#: ../../docs/tutorials/math/interpolation.rst:58
+#: ../../docs/tutorials/math/interpolation.rst:73
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
 msgstr "下面是将猴子从位置1转换为位置2的例子:"
 
-#: ../../docs/tutorials/math/interpolation.rst:62
+#: ../../docs/tutorials/math/interpolation.rst:77
 msgid "Using the following pseudocode:"
 msgstr "使用以下伪代码:"
 
-#: ../../docs/tutorials/math/interpolation.rst:74
+#: ../../docs/tutorials/math/interpolation.rst:104
 msgid "And again, it will produce the following motion:"
 msgstr "又会产生下面的动作:"
 
-#: ../../docs/tutorials/math/interpolation.rst:80
+#: ../../docs/tutorials/math/interpolation.rst:110
 msgid "Smoothing motion"
 msgstr "平滑运动"
 
-#: ../../docs/tutorials/math/interpolation.rst:82
+#: ../../docs/tutorials/math/interpolation.rst:112
 msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
 msgstr "插值可用于平滑运动, 旋转等. 下面是使用平滑运动跟随鼠标的圆圈的例子:"
 
-#: ../../docs/tutorials/math/interpolation.rst:94
+#: ../../docs/tutorials/math/interpolation.rst:137
 msgid "Here is how it looks:"
 msgstr "如下:"
 
-#: ../../docs/tutorials/math/interpolation.rst:98
+#: ../../docs/tutorials/math/interpolation.rst:141
 msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "自定义资源格式加载器"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:9
 msgid ""
@@ -129,7 +129,7 @@ msgid ""
 "handle data serialization."
 msgstr ""
 "此外,ResourceFormatLoaders 必须使用 ``load`` 函数将文件路径转换为资源"
-"(Resource). 要加载资源,``load`` 必须能够读取和处理序列化的资源数据."
+"(Resource). 要加载资源, ``load`` 必须能够读取和处理序列化的资源数据."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
 msgid "Creating a ResourceFormatSaver"

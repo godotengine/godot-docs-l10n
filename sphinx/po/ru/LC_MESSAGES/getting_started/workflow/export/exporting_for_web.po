@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,21 +57,24 @@ msgstr ""
 "этого, так как это также приведет к лучшей производительности."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
-#, fuzzy
 msgid "WebGL version"
-msgstr "Информация о версии"
+msgstr "Версия WebGL"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
 "or WebGL 2.0 (*GLES3*)."
 msgstr ""
+"В зависимости от выбранного вами отрисовщика, Godot может быть ориентирован "
+"на WebGL 1.0 (*GLES2*) или WebGL 2.0(*GLES3*)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "WebGL 1.0 is the recommended option if you want your project to be supported "
 "on all browsers with the best performance."
 msgstr ""
+"WebGL 1.0 рекомендовано если вы хотите чтобы ваш проект поддерживался во "
+"всех браузерах с лучшей производительностью."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
@@ -79,6 +82,9 @@ msgid ""
 "WebGL 2.0 can be subpar. Some features are also not supported in WebGL 2.0 "
 "specifically."
 msgstr ""
+"Рендерер GLES3 в Godot предназначен для высокопроизводительных устройств, и "
+"производительность при использовании WebGL 2.0 может быть низкой. Некоторые "
+"функции также не поддерживаются в WebGL 2.0."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
@@ -87,6 +93,10 @@ msgid ""
 "is not available yet for any **iOS** browser (all WebKit-based like Safari). "
 "See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details."
 msgstr ""
+"Пока большинство браузеров поддержтвают WebGL 2.0, кроме **Safari**. "
+"Приближающаяся поддержка WebGL 2.0 для Safari 15 для macOS и **IOS**. "
+"Посмотрите `Могу ли я использовать WebGL 2.0 <https://caniuse.com/webgl2>` "
+"__ для подробностей."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid "Export options"
@@ -119,16 +129,17 @@ msgstr ""
 "GDNative."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
-#, fuzzy
 msgid ""
 "*Threads*: will require the browser to support `SharedArrayBuffer <https://"
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
 "SharedArrayBuffer>`__. See `Can I use SharedArrayBuffer <https://caniuse.com/"
 "sharedarraybuffer>`__ for details."
 msgstr ""
-"*Threads*: потребуется, чтобы браузер поддерживал `SharedArrayBuffer "
-"<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/"
-"Global_Objects/SharedArrayBuffer>`__"
+"*Потоки*: потребуется, чтобы браузер поддерживал `SharedArrayBuffer <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
+"SharedArrayBuffer>`__. Посмотрите `Могу ли я использовать SharedArrayBuffer "
+"<https://caniuse.com/sharedarraybuffer>` __ для того что бы ознакомиться с "
+"подробностями."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
 msgid ""

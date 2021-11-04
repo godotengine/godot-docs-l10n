@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,23 +88,11 @@ msgstr ""
 "Enfin, Godot dispose d'un système simple mais efficace pour :ref:`créer des "
 "DLC en tant que fichiers de paquetage supplémentaires <doc_exporting_pcks>`."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
-msgid ""
-"Godot does not support loading PCK files larger than 2 GB yet. If your "
-"exported project data is larger than 2 GB, you will need to split it into "
-"several PCK files by :ref:`exporting additional PCKs <doc_exporting_pcks>` "
-"and loading them at run-time."
-msgstr ""
-"Godot ne permet pas encore le chargement de fichiers PCK de plus de 2 Go. Si "
-"vos données de projet exportées sont supérieures à 2 Go, vous devrez les "
-"diviser en plusieurs fichiers PCK en :ref:`exportant des PCK supplémentaires "
-"<doc_exporting_pcks>` et en les chargeant au moment de l'exécution."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
 msgid "On mobile"
 msgstr "Sur mobile"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:47
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -115,7 +103,7 @@ msgstr ""
 "plates-formes est construit, puis ajouté à un projet natif avec les données "
 "du jeu."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:52
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
 "This can be troublesome because it means that the developer must be "
 "familiarized with the SDK of each platform before even being able to export. "
@@ -127,7 +115,7 @@ msgstr ""
 "exporter. Bien que l'apprentissage de chaque SDK soit toujours encouragé, il "
 "peut être frustrant d'être forcé de le faire à un moment non désiré."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:57
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
 "There is also another problem with this approach: different devices prefer "
 "some data in different formats to run. The main example of this is texture "
@@ -142,11 +130,11 @@ msgstr ""
 "mobiles utilisent des formats différents pour la compression de texture, "
 "tels que PVRCT (iOS) ou ETC (Android)."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
 msgstr "Menu d'exportation"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
 "After many attempts at different export workflows, the current one has "
 "proven to work the best. At the time of this writing, not all platforms are "
@@ -157,12 +145,12 @@ msgstr ""
 "toutes les plates-formes ne sont pas encore prises en charge, mais les "
 "plates-formes prises en charge continuent de croître."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
 msgstr ""
 "Pour ouvrir le menu d'exportation, cliquez sur le bouton \"Exporter\" :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:75
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
@@ -170,7 +158,7 @@ msgstr ""
 "Le menu d'exportation s'ouvrira, mais il sera complètement vide. C'est parce "
 "que nous avons besoin d'ajouter un préréglage d'exportation."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
 "To create an export preset, click the **Add…** button at the top of the "
 "export menu. This will open a drop-down list of platforms to choose from for "
@@ -180,7 +168,7 @@ msgstr ""
 "en haut du menu d'exportation. Cela ouvrira une liste déroulante de plates-"
 "formes parmi lesquelles choisir pour un préréglage d'exportation."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:86
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
 "The default options are often enough to export, so tweaking them is usually "
 "not necessary. However, many platforms require additional tools (SDKs) to be "
@@ -197,7 +185,7 @@ msgstr ""
 "quelque chose et ne permettra pas à l'utilisateur d'exporter pour cette "
 "plate-forme tant que cela ne sera pas résolu :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
@@ -205,11 +193,11 @@ msgstr ""
 "À ce moment-là, l'utilisateur doit revenir à la documentation et suivre les "
 "instructions sur la façon de configurer correctement cette plate-forme."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 msgid "Export templates"
 msgstr "Exporter des modèles"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:101
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
 msgid ""
 "Apart from setting up the platform, the export templates must be installed "
 "to be able to export projects. They can be obtained as a TPZ file (which is "
@@ -222,7 +210,7 @@ msgstr ""
 "de la `page de téléchargement du site Web <https://www.godotengine.org/"
 "download>`_."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
@@ -230,11 +218,11 @@ msgstr ""
 "Une fois téléchargés, ils peuvent être installés à l'aide de l'option "
 "\"Installer des modèles d'exportation\" dans l'éditeur :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid "Export mode"
 msgstr "Mode d'exportation"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
@@ -242,19 +230,19 @@ msgstr ""
 "Lors de l'exportation, Godot fait une liste de tous les fichiers à exporter "
 "et crée ensuite le paquet. Il existe 3 modes différents pour l'exportation :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
 msgstr "Exporter toutes les ressources du projet"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
 msgstr "Exporter les scènes sélectionnées (y compris les dépendances)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
 msgstr "Exporter les ressources sélectionnées (y compris les dépendances)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
@@ -267,11 +255,11 @@ msgstr ""
 "du projet, et vous devez sélectionner chaque scène ou ressource que vous "
 "souhaitez exporter."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:133
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "Exporting from the command line"
 msgstr "Exporter à partir de la ligne de commande"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:128
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -284,7 +272,7 @@ msgstr ""
 "d'exportation pour définir les paramètres d'exportation. Une invocation "
 "basique de l'exportation serait :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:137
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -296,7 +284,7 @@ msgstr ""
 "sortie est relatif au chemin du projet ou absolu. Il ne respecte pas le "
 "répertoire à partir duquel la commande a été invoquée."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:149
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:142
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -307,7 +295,7 @@ msgstr ""
 "exécutables Godot. Ceci se produit si le nom de la cible se termine par ``."
 "pck`` ou ``.zip``."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:153
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:146
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
@@ -316,11 +304,11 @@ msgstr ""
 "path`` et de créer un modèle d'exportation dédié pour l'exportation "
 "automatisée :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
 msgid "PCK versus ZIP pack file formats"
 msgstr "Formats de fichiers PCK contre ZIP pack"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
 "Each format has its upsides and downsides. PCK is the default and "
 "recommended format for most use cases, but you may want to use a ZIP archive "
@@ -330,17 +318,17 @@ msgstr ""
 "défaut et recommandé pour la plupart des cas d'utilisation, mais vous pouvez "
 "utiliser une archive ZIP à la place selon vos besoins."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:167
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
 msgid "**PCK format:**"
 msgstr "**Format PCK :**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:169
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
 "Format non compressé. Taille de fichier plus importante, mais plus rapide à "
 "lire/écrire."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
 "Not readable and writable using tools normally present on the user's "
 "operating system, even though there are `third-party tools <https://github."
@@ -351,17 +339,17 @@ msgstr ""
 "<https://github.com/hhyyrylainen/GodotPckTool>`__ pour extraire et créer des "
 "fichiers PCK."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:175
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
 msgid "**ZIP format:**"
 msgstr "**Format ZIP :**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
 "Format compressé. Taille de fichier plus petite, mais plus lent à lire/"
 "écrire."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:178
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
 msgid ""
 "Readable and writable using tools normally present on the user's operating "
 "system. This can be useful to make modding easier (see also :ref:"
@@ -371,7 +359,7 @@ msgstr ""
 "d'exploitation de l'utilisateur. Cela peut être utile pour faciliter le "
 "modding (voir aussi :ref:`doc_exporting_pcks`)."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:183
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:176
 msgid ""
 "Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, "
 "when using a ZIP file as a pack file, the exported binary will not try to "
@@ -384,7 +372,7 @@ msgstr ""
 "conséquent, vous devez créer un *script de lancement* que le joueur peut "
 "double-cliquer ou exécuter depuis un terminal pour lancer le projet : :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:195
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:188
 msgid ""
 "Save the launcher script and place it in the same folder as the exported "
 "binary. On Linux, make sure to give executable permissions to the launcher "

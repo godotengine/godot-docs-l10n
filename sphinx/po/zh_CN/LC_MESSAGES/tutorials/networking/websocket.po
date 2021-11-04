@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,6 +88,8 @@ msgid ""
 "using one-click deploy. Otherwise, network communication of any kind will be "
 "blocked by Android."
 msgstr ""
+"当导出到安卓时，在导出项目或使用一键部署之前，确保在安卓导出预设中启用"
+"[code]INTERNET[/code]权限。否则，任何形式的网络通信都会被安卓系统阻止。"
 
 #: ../../docs/tutorials/networking/websocket.rst:31
 msgid "Minimal client example"
@@ -110,13 +112,12 @@ msgid "Minimal server example"
 msgstr "最小服务器示例"
 
 #: ../../docs/tutorials/networking/websocket.rst:96
-#, fuzzy
 msgid ""
 "This example will show you how to create a WebSocket server that listens for "
 "remote connections, and how to send and receive data."
 msgstr ""
-"本示例将向您展示如何创建一个监听远程连接的 WebSocket 服务器, 以及如何发送和接"
-"收数据."
+"这个例子将告诉你如何创建一个监听远程连接的WebSocket服务器，以及如何发送和接收"
+"数据。"
 
 #: ../../docs/tutorials/networking/websocket.rst:152
 msgid "This will print (when a client connects) something similar to this:"

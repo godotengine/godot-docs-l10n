@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,32 +63,33 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
-"syntax varies depending on the language."
+"syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
+"information on C# exports."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:34
 msgid "Examples"
 msgstr "Przykłady"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:137
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:142
 msgid "Exporting bit flags"
 msgstr "Eksport bitowych flag"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:151
 #, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
@@ -100,13 +101,13 @@ msgstr ""
 "ma wartość 4, a ``Wind`` odpowiada wartości 8. Zazwyczaj stałe powinny być "
 "odpowiednio zdefiniowane (np. ``const ``ELEMENT_WIND = 8``)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:156
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:163
 #, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
@@ -115,27 +116,27 @@ msgstr ""
 "Korzystanie z flag bitowych wymaga pewnego zrozumienia operacji bitowych. W "
 "razie wątpliwości należy wyeksportować je jako bool."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:167
 msgid "Exporting arrays"
 msgstr "Eksportowanie tablic"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:169
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:171
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:209
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:211
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -144,19 +145,19 @@ msgid ""
 "exported variable's value."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:218
 #, fuzzy
 msgid "Advanced exports"
 msgstr "Zaawansowana matematyka wektorów"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
 msgid ""
 "Not every type of export can be provided on the level of the language itself "
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
@@ -166,35 +167,35 @@ msgid ""
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:231
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:234
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
 #, fuzzy
 msgid "Adding script categories"
 msgstr "Właściwości węzła"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:240
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:257
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:259
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
 "a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
@@ -202,22 +203,22 @@ msgid ""
 "anyway."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:264
 #, fuzzy
 msgid "Grouping properties"
 msgstr "Właściwości węzła"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:266
 msgid "A list of properties with similar names can be grouped."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:280
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:283
 msgid ""
 "every successive property added after the group property will be collapsed "
 "and shortened as determined by the prefix defined via the ``hint_string`` "
@@ -225,7 +226,7 @@ msgid ""
 "this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
 "script group specifically, so the type ``TYPE_NIL`` can be ignored as it "

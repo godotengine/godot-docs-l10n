@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
-#, fuzzy
 msgid "2D skeletons"
-msgstr "Скелет"
+msgstr "2D Скелет"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:7
 msgid "Introduction"
@@ -33,6 +32,10 @@ msgid ""
 "function is not used as often, it's difficult to find mainstream software "
 "aimed for this."
 msgstr ""
+"При работе с 3D деформации скелета являются обычным делом для персонажей и "
+"существ, и большинство приложений 3D моделирования их поддерживают. Для 2D, "
+"поскольку эта функция используется не так часто, трудно найти программное "
+"обеспечение, нацеленное на это."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
@@ -40,34 +43,45 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"Один из вариантов решения — создание анимации в стороннем программном "
+"обеспечении, таком как «Spine» или «Dragonbones». Однако, начиная с Godot "
+"3.1 и далее, этот функционал поддерживается «из коробки»."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:17
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr ""
+"Зачем делать скелетную анимацию прямо в Godot? Ответ заключается в том, что "
+"в этом есть много преимуществ:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr ""
+"Лучшая интеграция с движком, и поэтому меньше проблем с импортом и "
+"редактированием из внешнего инструмента."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
+"Возможность управления системами частиц, шейдерами, звуками, вызовами "
+"скриптов, цветами, прозрачностью и т.д. в анимациях."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr ""
+"Встроенная скелетная система в Godot очень эффективна и ориентирована на "
+"производительность."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
-msgstr ""
+msgstr "В следующем учебном пособии объясняются деформации 2D скелета."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid "Setup"
@@ -79,6 +93,9 @@ msgid ""
 "`doc_cutout_animation` tutorial to gain a general understanding of animating "
 "within Godot."
 msgstr ""
+"Перед началом рекомендуется ознакомиться с учебным пособием по анимации "
+"вырезок :ref:`doc_cutout_animation`, чтобы получить общее представление о "
+"анимации в Godot."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:38
 msgid ""
@@ -86,6 +103,9 @@ msgid ""
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
+"В данном учебном пособии для построения персонажа будет использоваться одно "
+"изображение. Загрузите его из :download:`gBot_pieces.png <img/gBot_pieces."
+"png>` или сохраните изображение ниже."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:44
 msgid ""
@@ -93,11 +113,13 @@ msgid ""
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
+"Также рекомендуется загрузить окончательное изображение персонажа :download:"
+"`gBot_complete.png <img/gBot_complete.png>`, чтобы иметь хороший пример "
+"объединения различных частей."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:51
-#, fuzzy
 msgid "Creating the polygons"
-msgstr "Создание анимации"
+msgstr "Создание полигонов"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid ""
@@ -105,30 +127,41 @@ msgid ""
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
+"Создайте новую сцену для модели (если она будет анимированным персонажем, "
+"может понадобиться использовать ``KinematicBody2D``). Для удобства "
+"использования в качестве корня для полигонов создается пустой 2D узел."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:57
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
+"Начните с узла ``Polygon2D``. Пока нет необходимости размещать его где-либо "
+"в сцене, так что просто создайте его так:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr ""
+"Выберите его и назначьте текстуру с ранее загруженными частями тела "
+"персонажа:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:67
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr ""
+"Рисование многоугольника напрямую не рекомендуется. Вместо этого откройте "
+"диалоговое окно «UV» для полигона:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:72
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr ""
+"Перейдите в режим *Точки*, выберите карандаш и нарисуйте многоугольник "
+"вокруг нужной части тела:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:77
 msgid ""
@@ -136,22 +169,29 @@ msgid ""
 "dialog again and replace the old polygon with another one in the new desired "
 "piece."
 msgstr ""
+"Скопируйте узел полигона и присвойте ему собственное имя. Затем снова "
+"откройте диалоговое окно «UV» и замените старый многоугольник другим в новой "
+"нужной части тела."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:81
 msgid ""
 "When you duplicate nodes and the next piece has a similar shape, you can "
 "edit the previous polygon instead of drawing a new one."
 msgstr ""
+"При дублировании узлов и такой же форме следующего участка можно "
+"редактировать предыдущий полигон, а не рисовать новый."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:84
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
 "\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
+"После перемещения полигона не забудьте обновить UV, выбрав Редактирование - "
+"> «Полигон - > UV» в редакторе Polygon 2D UV."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:89
 msgid "Keep doing this until you mapped all pieces."
-msgstr ""
+msgstr "Продолжайте делать это со всеми остальными частями."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:93
 msgid ""
@@ -159,6 +199,9 @@ msgid ""
 "in the original texture. This is because by default, when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
+"Можно заметить, что части тела для узлов отображаются в той же компоновке, "
+"что и в исходной текстуре. Это происходит потому, что по умолчанию при "
+"построении многоугольника UV и точки совпадают."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:97
 msgid ""
@@ -166,28 +209,35 @@ msgid ""
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
+"Передвиньте части тела и постройте персонажа. Это довольно быстро. Нет "
+"необходимости менять оси вращения, поэтому не беспокойтесь, чтобы оси "
+"вращения для каждой детали были правильными; можете пока их оставить."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:103
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
+"Ох, визуальный порядок частей не верен, так как некоторые покрывают не те "
+"части. Измените порядок узлов, чтобы исправить это:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:108
 msgid ""
 "And there you go! It was definitely much easier than in the cutout tutorial."
 msgstr ""
+"А вот и ты! Это явно было намного проще, чем в учебном пособии по вырезкам."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:111
-#, fuzzy
 msgid "Creating the skeleton"
-msgstr "Создание сценариев сцены"
+msgstr "Создание скелета"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
+"Создайте узел ``Skeleton2D`` как дочерний от корневого узла. Это будет "
+"основой нашего скелета:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:118
 msgid ""
@@ -195,10 +245,15 @@ msgid ""
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
+"Создайте узел ``Bone2D`` как дочерний элемент скелета. Положите его на бедро "
+"(обычно здесь начинаются скелеты). Кость будет указывать вправо, но Вы "
+"можете пока это игнорировать."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:124
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr ""
+"Продолжайте создавать кости в иерархии и присваивать им соответствующие "
+"имена."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:128
 msgid ""
@@ -206,6 +261,9 @@ msgid ""
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
+"В конце этой цепочки будет узел *челюсти*. Он, опять же, очень короткий и "
+"указывает вправо. Это нормально для костей без детей. Длина *конечных* "
+"костей может быть изменена с помощью свойства в инспекторе:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:134
 msgid ""
@@ -214,10 +272,15 @@ msgid ""
 "Again, this is only really needed for tip bones as nodes with children don't "
 "usually need a length or a specific rotation."
 msgstr ""
+"В этом случае нам не нужно вращать кость (так совпало, что точки челюсти "
+"правильны прямо в спрайте), но в случае, если это понадобится, не "
+"стесняйтесь это делать. Опять же, это действительно необходимо только для "
+"конечных костей, так как узлы с детьми обычно не нуждаются в длине или "
+"специфическом повороте."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:139
 msgid "Keep going and build the whole skeleton:"
-msgstr ""
+msgstr "Продолжайте строить весь остальной скелет:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:143
 msgid ""
@@ -226,17 +289,22 @@ msgid ""
 "and create a rest pose. This pose is the default one, you can come back to "
 "it anytime you want (which is very handy for animating):"
 msgstr ""
+"Вы заметите, что все кости вызывают раздражающее предупреждение о "
+"пропущенной позе покоя. Это значит, что пришло время установить её. "
+"Перейдите к узлу скелета и создайте позу покоя. Эта поза по умолчанию, и Вы "
+"можете вернуться к ней в любое время (что очень удобно для анимации):"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:150
 msgid ""
 "The warnings will go away. If you modify the skeleton (add/remove bones) you "
 "will need to set the rest pose again."
 msgstr ""
+"Предупреждения исчезнут. При изменении скелета (добавления/удаления костей) "
+"будет необходимо снова задать позу покоя."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:154
-#, fuzzy
 msgid "Deforming the polygons"
-msgstr "Настройка проекта"
+msgstr "Деформация полигонов"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:156
 msgid ""
@@ -244,15 +312,18 @@ msgid ""
 "``Skeleton`` property. This will ensure that they can eventually be deformed "
 "by it."
 msgstr ""
+"Выберите ранее созданные полигоны и назначьте скелетный узел их свойству "
+"``Skeleton`` . Это гарантирует, что они, в конечном счёте, смогут быть им "
+"деформированы."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:162
 msgid "Click the property highlighted above and select the skeleton node:"
-msgstr ""
+msgstr "Щелкните на свойстве, выделенном выше, и выберите скелетный узел:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:166
 msgid ""
 "Again, open the UV editor for the polygon and go to the *Bones* section."
-msgstr ""
+msgstr "Снова откройте UV редактор для полигона и перейдите в раздел *Кости*."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:170
 msgid ""
@@ -263,6 +334,13 @@ msgid ""
 "polygon, even if a skeleton node is accidentally lost or the skeleton "
 "modified. Push the \"Sync Bones to Polygon\" button to sync the list."
 msgstr ""
+"Пока Вы еще не сможете рисовать веса. Для этого необходимо синхронизировать "
+"список костей из скелета с многоугольником. Этот шаг выполняется только один "
+"раз и вручную (если скелет не изменен путем добавления/удаления/"
+"переименования костей). Это гарантирует, что информация о настройках "
+"сохраниться в полигоне, даже если скелетный узел случайно потерян или скелет "
+"изменен. Нажмите кнопку «Синхронизировать кости с полигоном», чтобы "
+"синхронизировать список."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:179
 msgid ""
@@ -270,6 +348,9 @@ msgid ""
 "weight assigned to any of them. Select the bones you want to assign weight "
 "to and paint them:"
 msgstr ""
+"Список костей появится автоматически. По умолчанию многоугольник не имеет "
+"какого-либо назначенного ему веса. Выберите кости, которым требуется "
+"назначить вес, и покрасьте их:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:185
 msgid ""
@@ -286,12 +367,17 @@ msgid ""
 "have the desired effect of modifying and bending the polygons accordingly. "
 "As you only need to animate bones in this approach, work becomes much easier!"
 msgstr ""
+"После рисования весов анимация костей (НЕ многоугольников!) будет "
+"соответственно изменять и изгибать многоугольники. Поскольку при таком "
+"подходе нам нужно только анимировать кости, работа становится намного проще!"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:197
 msgid ""
 "But it's not all roses. Trying to animate bones that bend the polygon will "
 "often yield unexpected results:"
 msgstr ""
+"Но не всё на столько шоколадно. Попытка анимировать кости, которые сгибают "
+"многоугольник, часто приводит к неожиданным результатам:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:202
 msgid ""
@@ -300,16 +386,23 @@ msgid ""
 "expect. To solve this, you need to set hints in the geometry to clarify how "
 "you expect it to deform."
 msgstr ""
+"Это происходит потому, что Godot создаёт внутренние треугольники, которые "
+"соединяют точки при рисовании многоугольника. Они не всегда имеют траекторию "
+"изгиба, которую Вы ожидали. Для решения этой проблемы необходимо задать "
+"подсказки в геометрии, чтобы уточнить способ её деформации."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:208
 msgid "Internal vertices"
-msgstr ""
+msgstr "Внутренние вершины"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:210
 msgid ""
 "Open the UV menu for each bone again and go to the *Points* section. Add "
 "some internal vertices in the regions where you expect the geometry to bend:"
 msgstr ""
+"Снова откройте UV меню для каждой кости и перейдите в раздел *Точки*. "
+"Добавьте несколько внутренних вершин в области, где ожидается изгиб "
+"геометрии:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:215
 msgid ""
@@ -317,12 +410,18 @@ msgid ""
 "detail. Imagine that, as your polygons bend, you need to make sure they "
 "deform the least possible, so experiment a bit to find the right setup."
 msgstr ""
+"Теперь перейдите к разделу *Полигон* и перерисуйте Ваши полигоны с более "
+"детально. Представьте, как Ваши многоугольники изгибаются, и убедитесь, что "
+"они деформируются как можно меньше, поэтому немного поэкспериментируйте, "
+"чтобы найти правильные настройки."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:221
 msgid ""
 "Once you start drawing, the original polygon will disappear and you will be "
 "free to create your own:"
 msgstr ""
+"После начала рисования исходный полигон исчезнет, и вы сможете создать свой "
+"собственный:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:226
 msgid ""
@@ -330,6 +429,9 @@ msgid ""
 "grained control over where triangles go. Experiment by yourself until you "
 "get the results you like."
 msgstr ""
+"Такой детализации обычно достаточно, хотя, Вы можете захотеть иметь более "
+"тонкий контроль над тем, как треугольники двигаются. Экспериментируйте, пока "
+"не получите желаемый результат."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:230
 msgid ""
@@ -337,7 +439,11 @@ msgid ""
 "weight painting! Go to the *Bones* section again to assign them to the right "
 "bones."
 msgstr ""
+"**Примечание:** Не забывайте, что Ваши недавно добавленные внутренние "
+"вершины тоже нуждаются в указании весов! Снова перейдите в раздел *Кости*, "
+"чтобы назначить их нужным костям."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:233
 msgid "Once you are all set, you will get much better results:"
 msgstr ""
+"После того, как всё настроено, Вы получите гораздо более лучший результат:"

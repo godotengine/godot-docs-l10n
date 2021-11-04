@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,8 @@ msgid ""
 "On Windows and Linux, you can run a Godot binary in a terminal by specifying "
 "its relative or absolute path."
 msgstr ""
+"En Windows y Linux, puedes ejecutar un binario de Godot en una terminal "
+"especificando su ruta relativa o absoluta."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:19
 msgid ""
@@ -51,6 +53,14 @@ msgid ""
 "bundle from ``Godot`` to another name, make sure to edit this command line "
 "accordingly."
 msgstr ""
+"En macOS, el proceso es diferente debido a que Godot está contenido en un "
+"paquete ``.app`` (que es una *carpeta*, no un archivo). Para ejecutar un "
+"binario de Godot desde un terminal en macOS, debe ``cd`` en la carpeta donde "
+"se encuentra el paquete de aplicaciones de Godot, luego ejecutar ``Godot."
+"app / Contents / MacOS / Godot`` seguido de cualquier línea de comando "
+"argumentos. Si ha cambiado el nombre del paquete de aplicaciones de "
+"``Godot`` a otro nombre, asegúrese de editar esta línea de comando en "
+"consecuencia."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Command line reference"
@@ -166,7 +176,7 @@ msgstr "``--path <directorio>``"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:57
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
-"Ruta a un proyecto (<directory> debe contener un archivo 'project.godot')."
+"La ruta a un proyecto (<directory> debe contener un archivo 'project.godot')."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "``-u``, ``--upwards``"
@@ -286,18 +296,15 @@ msgstr "``--low-dpi``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:89
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr "Forzar el modo de baja DPI (solo macOS y Windows)."
+msgstr "Forzar el modo de bajo DPI (sólo macOS y Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:91
 msgid "``--no-window``"
 msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:91
-#, fuzzy
 msgid "Run with invisible window. Useful together with ``--script``."
-msgstr ""
-"Deshabilitar la creación de ventanas (solo Windows). Útil junto con `` --"
-"script``."
+msgstr "Ejecutar con ventana invisible. Útil junto con ``--script``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "**Debug options**"
@@ -309,7 +316,7 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
-"Las opciones de depuración solo están disponibles en el editor y el "
+"Las opciones de depuración sólo están disponibles en el editor y el "
 "depurador de plantillas de exportación (estas requieren ``debug`` o "
 "``release_debug``, ver :ref:`doc_introduction_to_the_buildsystem_target`para "
 "más detalles)."

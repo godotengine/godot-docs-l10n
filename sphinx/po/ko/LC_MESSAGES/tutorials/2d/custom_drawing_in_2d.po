@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgid "Custom drawing in 2D"
 msgstr "2D에서 사용자 임의 그리기"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
-msgid "Why?"
-msgstr "왜?"
+msgid "Introduction"
+msgstr "소개"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 #, fuzzy
@@ -44,59 +44,56 @@ msgstr ""
 "정 명령을 쉽게 그릴 수 있는 것을 알면 좋을 것입니다. 또한 하는 것도 *진짜* 쉽"
 "습니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
-msgid "But..."
-msgstr ""
-
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:16
+#, fuzzy
 msgid ""
-"Custom drawing manually in a node is *really* useful. Here are some examples "
-"why:"
+"Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
 "노드에서 수동으로 사용자 임의 그림은 *진짜* 유용합니다. 여기 왜 그런지 몇 가"
 "지 예가 있습니다:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:18
 #, fuzzy
 msgid ""
-"Drawing shapes or logic that is not handled by nodes (example: making a node "
-"that draws a circle, an image with trails, a special kind of animated "
-"polygon, etc)."
+"Drawing shapes or logic that existing nodes can't do, such as an image with "
+"trails or a special animated polygon."
 msgstr ""
 "노드에서 처리되지 않는 도형 또는 논리 그리기 (예: 원을 그리는 노드, 이미지 자"
 "국, 특별한 종류의 움직이는 폴리곤 등 만들기)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:20
 #, fuzzy
 msgid ""
-"Visualizations that are not that compatible with nodes: (example: a tetris "
-"board). The tetris example uses a custom draw function to draw the blocks."
+"Visualizations that are not that compatible with nodes, such as a tetris "
+"board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
 "노드와 호환되지 않는 시각화: (예: 테트리스 보드). 테트리스 예제는 블록을 그리"
 "기 위해 사용자 정의 그리기 함수를 사용합니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:23
 #, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
-"of using nodes which makes it less memory intensive and potentially faster."
+"of using a large number of nodes, possibly lowering memory usage and "
+"improving performance."
 msgstr ""
 "많은 양의 단순 물체 그리기. 사용자 정의 그림을 사용하면 메모리 집약도가 낮아"
 "지고 잠재적으로 속도가 빨라져 노드 사용의 오버헤드를 방지할 수 있습니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:26
+#, fuzzy
 msgid ""
-"Making a custom UI control. There are plenty of controls available, but it's "
-"easy to run into the need to make a new, custom one."
+"Making a custom UI control. There are plenty of controls available, but when "
+"you have unusual needs, you will likely need a custom control."
 msgstr ""
 "사용자 정의 UI 컨트롤 만들기. 사용할 수 있는 컨트롤은 많지만, 새롭고 맞춤화"
 "된 컨트롤을 만들어야 할 필요성에 부딪치기 쉽습니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
-msgid "OK, how?"
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+msgid "Drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:33
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
@@ -106,7 +103,7 @@ msgstr ""
 "<class_Control>` 또는 :ref:`Node2D <class_Node2D>` 와 같은 노드에 스크립트를 "
 "추가하세요. 그런 다음 ``_draw()`` 함수를 재정의하세요."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:53
 #, fuzzy
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
@@ -115,11 +112,11 @@ msgstr ""
 "그리기 명령은 :ref:`CanvasItem <class_CanvasItem>` 클래스 참고에 설명되어 있"
 "습니다. 많은 양의 명령이 있습니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid "Updating"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:59
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
@@ -127,25 +124,25 @@ msgstr ""
 "``_draw()`` 함수는 단 한 번만 호출하고, 그 다음에는 그리기 명령을 캐싱하여 기"
 "억하므로 추가 호출은 불필요합니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
 #, fuzzy
 msgid ""
-"If re-drawing is required because a state or something else changed, simply "
-"call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
-"same node and a new ``_draw()`` call will happen."
+"If re-drawing is required because a state or something else changed, call :"
+"ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
+"and a new ``_draw()`` call will happen."
 msgstr ""
 "상태나 다른 것이 변경되어 다시 그리기가 필요한 경우 간단하게 같은 노드에서 :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` 를 호출하면 새로"
 "운 ``_draw()`` 호출이 발생합니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
 msgstr ""
 "여기 좀 더 복잡한 예가 있는데 텍스처 변수는 수정하면 다시 그려지게 됩니다:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:110
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
@@ -153,11 +150,11 @@ msgstr ""
 "어떤 경우 모든 프레임을 그리는 것이 바람직할 수 있습니다. 이를 위해 "
 "``_process()`` 콜백에서 다음과 같이 ``update()`` 를 호출하세요:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:142
 msgid "An example: drawing circular arcs"
 msgstr "예제: 원호 그리기"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:144
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -170,11 +167,11 @@ msgstr ""
 "를 제공합니다. 하지만 원의 일부를 그리는 것은 어떨까요? 이것을 수행하려면 함"
 "수를 코드화해서 직접 그려야 할 것입니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:150
 msgid "Arc function"
 msgstr "호(Arc) 함수"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:152
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -187,7 +184,7 @@ msgstr ""
 "리기 함수에 제공해야 하는 네 가지 인수입니다. 색 값도 제공해서 원하면 다른 색"
 "으로 호를 그릴 수 있을 겁니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 #, fuzzy
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
@@ -210,7 +207,7 @@ msgstr ""
 "*Level of Detail(LoD)* 라고 합니다. 우리의 예에서는 우리는 반지름에 상관 없"
 "이 단지 정해진 수의 점을 사용할 겁니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:197
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
@@ -221,7 +218,7 @@ msgstr ""
 "``nb_points`` 변수에 ``32`` 값으로 정합니다. 그 다음 우리는 빈 "
 "``PoolVector2Array`` 를 초기화합니다. 그냥 ``Vector2`` 의 배열입니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 #, fuzzy
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
@@ -235,7 +232,7 @@ msgstr ""
 "해서 마지막 점까지 포함시킨 점의 수를 반복합니다. 우리는 먼저 출발 각도와 끝 "
 "각도로 각 지점의 각도를 결정합니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -250,7 +247,7 @@ msgstr ""
 "디안)는 3시 방향에서 시작합니다(우리는 12시 방향에서 세기를 원하지만). 그래"
 "서 12시 방향에서부터 세기 위해 각각의 각도를 90° 씩 줄입니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
 "radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
@@ -262,7 +259,7 @@ msgid ""
 "the point in the ``PoolVector2Array`` which was previously defined."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:220
 #, fuzzy
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
@@ -282,25 +279,25 @@ msgstr ""
 "쌍의 점 사이의 각각의 선 길이는 결코 충분히 볼 수 있을 만큼 길지 않을 것입니"
 "다. 만약 그렇게 된다면, 우리는 단순히 점의 수를 늘려야 할 것입니다."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:230
 msgid "Draw the arc on the screen"
 msgstr "화면에 호 그리기"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:232
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:259
 msgid "Result:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Arc polygon function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:266
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -308,11 +305,11 @@ msgid ""
 "lines:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:306
 msgid "Dynamic custom drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:308
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
 "is static; let's make this shape turn around the center. The solution to do "
@@ -321,18 +318,18 @@ msgid ""
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:314
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
 "access them using ``get_node()``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:336
 msgid "We make these values change in the _process(delta) function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:338
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -343,25 +340,25 @@ msgid ""
 "unexpected behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:345
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:378
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:402
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:405
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -372,7 +369,7 @@ msgid ""
 "program runs at the same speed on everybody's hardware."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -380,21 +377,21 @@ msgid ""
 "speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:447
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:450
 msgid "Tools"
 msgstr "도구"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:452
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:456
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

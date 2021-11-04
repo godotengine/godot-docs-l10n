@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,23 +29,20 @@ msgstr ""
 "GDScript."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
-#, fuzzy
 msgid "General differences"
-msgstr "Diferenças Gerais"
+msgstr "Diferenças gerais"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
-#, fuzzy
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
-"Como explicado em: ref: `doc_c_sharp`, o C# geralmente usa o``PascalCase`` "
-"ao invés do``snake_case`` no GDScript e C++."
+"Como explicado em :ref:`doc_c_sharp`, C# geralmente usa o ``PascalCase`` ao "
+"invés do ``snake_case`` usado no GDScript e C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
-#, fuzzy
 msgid "Global scope"
-msgstr "Escopo Global"
+msgstr "Escopo global"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
 msgid ""
@@ -333,8 +330,8 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
-"``IsSubsequenceOf`` / ``IsSubsequenceOfi``: Um método adicional é fornecido, "
-"que é uma sobrecarga de ``IsSubsequenceOf`` permitindo especificar "
+"``IsSubsequenceOf``/ ``IsSubsequenceOfi``: Um método adicional é fornecido, "
+"que é uma sobrecarga de ``IsSubsequenceOf``, permitindo você especificar "
 "explicitamente a distinção entre maiúsculas e minúsculas:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
@@ -483,9 +480,9 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
-"Estruturas não podem ter construtores sem parâmetros em C#, portanto ``new "
-"Quat ()`` inicializa todos os membros primitivos com seu valor padrão. Por "
-"favor use ``Quat.Identity`` para o equivalente a ``Quat ()`` em GDScript e C+"
+"Estruturas não podem ter construtores sem parâmetros em C#. Portanto ``new "
+"Quat()`` inicializa todos os membros primitivos com seu valor padrão. Por "
+"favor use ``Quat.Identity`` para o equivalente a ``Quat()`` em GDScript e C+"
 "+."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
@@ -625,9 +622,9 @@ msgid ""
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
-"``Godot.Dictionary <T> `` é um wrapper de tipo seguro em torno de ``Godot."
-"Dictionary``. Use o construtor ``Godot.Dictionary <T> (Godot.Dictionary) `` "
-"para criar um."
+"``Godot.Collections.Dictionary<T>`` é um wrapper de tipo seguro em torno de "
+"``Godot.Collections.Dictionary``. Use o construtor ``Godot.Collections."
+"Dictionary<T>(Godot.Collections.Dictionary)`` para criar um."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"

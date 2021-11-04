@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,8 @@ msgid ""
 "On Windows and Linux, you can run a Godot binary in a terminal by specifying "
 "its relative or absolute path."
 msgstr ""
+"在 Windows 和 Linux 上，您可以通过指定其相对或绝对路径在终端中运行 Godot 可执"
+"行文件。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:19
 msgid ""
@@ -48,6 +50,11 @@ msgid ""
 "bundle from ``Godot`` to another name, make sure to edit this command line "
 "accordingly."
 msgstr ""
+"在 macOS 上，由于 Godot 包含在 ``.app`` 包中，它是一个 *文件夹*，而不是文件，"
+"因此运行过程有所不同。要从 macOS 的终端运行 Godot 可执行文件，您必须 ``cd`` "
+"到 Godot 应用程序包所在的文件夹，然后运行 ``Godot.app/Contents/MacOS/"
+"Godot`` ，并在后面加上相关命令行参数。如果你把应用包从 ``Godot`` 改名为其他名"
+"称，则需相应地编辑这个命令行。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Command line reference"
@@ -282,9 +289,8 @@ msgid "``--no-window``"
 msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:91
-#, fuzzy
 msgid "Run with invisible window. Useful together with ``--script``."
-msgstr "关闭窗口创建(仅Windows). 和 ``--script`` 一起使用非常有用."
+msgstr "使用不可见窗口运行时，与 ``--script`` 一起使用，将很有用。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "**Debug options**"
@@ -547,7 +553,7 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
-"根据Godot二进制文件的位置以及当前的工作目录, 您可能需要设置项目的路径, 以下任"
+"根据Godot二进制文件的位置以及当前的工作目录, 你可能需要设置项目的路径, 以下任"
 "何命令才能正常工作."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:172

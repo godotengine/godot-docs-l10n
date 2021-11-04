@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,15 +127,15 @@ msgstr ""
 "或者, 你也可以通过在源代码的根部创建 ``custom.py`` 来提供一个禁用模块的列表, "
 "其内容类似于以下:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:117
+#: ../../docs/development/compiling/optimizing_for_size.rst:116
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:120
+#: ../../docs/development/compiling/optimizing_for_size.rst:119
 msgid "Optimizing for size instead of speed"
 msgstr "针对大小而不是速度优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:121
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
@@ -143,15 +143,15 @@ msgstr ""
 "Godot 3.1以上版本允许使用尺寸优化(而不是速度优化)进行编译. 要启用这个功能, 请"
 "将 ``optimize`` 标志设置为 ``size`` :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:129
+#: ../../docs/development/compiling/optimizing_for_size.rst:128
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr "某些平台如WebAssembly默认情况下已使用此模式."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:132
+#: ../../docs/development/compiling/optimizing_for_size.rst:131
 msgid "Compiling with link-time optimization"
 msgstr "编译时使用连接时间优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:134
+#: ../../docs/development/compiling/optimizing_for_size.rst:133
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -161,17 +161,17 @@ msgstr ""
 "启用链接时优化可以在性能和文件大小方面生成更高效的二进制文件. 它通过消除重复"
 "的模板功能和未使用的代码来工作. 目前, 它可以与GCC和MSVC编译器一起使用:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:143
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 msgid ""
 "Linking becomes much slower and more RAM consuming with this option, so it "
 "should be used only for release builds."
 msgstr "使用这个选项, 链接会变得更慢, 更消耗内存, 所以它应该只用于发布构建."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:147
+#: ../../docs/development/compiling/optimizing_for_size.rst:146
 msgid "Stripping binaries"
 msgstr "剥离二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:148
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr "如果从源代码构建, 请记住从二进制文件中剥离调试符号:"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "3D 灯光和阴影"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
 msgid ""
@@ -175,8 +175,9 @@ msgstr ""
 "隙. 接触阴影仅在使用GLES3后端是可用."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:55
+#, fuzzy
 msgid ""
-"**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
+"**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
 "**Reverse Cull Faces(反向剔除平面)** : 某些场景在阴影渲染时, 开启反向平面剔除"
@@ -191,23 +192,64 @@ msgstr ""
 "复杂程度."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:62
-msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
+#, fuzzy
+msgid ""
+"Finally, if gaps can't be solved, the **Contact** option can help (at a "
+"performance cost):"
 msgstr "最后, 如果无法解决间隙, ** Contact(接触)** 选项可以帮助:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:66
+#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
-"resolution, although that may lead to decreased performance on low-end "
-"hardware."
+"resolution, although that may lead to decreased performance."
 msgstr ""
 "任何类型的偏差问题都可以通过增加阴影贴图分辨率来解决, 尽管这可能会导致低端硬"
 "件性能下降."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:70
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:71
+msgid ""
+"If shadow biasing is a problem in your scene, the following settings are a "
+"good starting point:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:73
+msgid ""
+"Enable **Reverse Cull Face**. This reduces shadow peter-panning "
+"significantly and prevents lights from exhibiting shadow acne at grazing "
+"angles. The main downside is that it may cause lighting to leak in some "
+"corners. The other downside is that materials that have their cull mode set "
+"to **Disabled** or MeshInstances with Cast Shadow set to **Double-Sided** "
+"may exhibit shadow acne."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:79
+msgid ""
+"Set **Bias** to ``-0.01``. The bias should be a negative value when "
+"**Reverse Cull Face** is enabled, but it should be a positive value when "
+"it's disabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:81
+msgid ""
+"For DirectionalLight, set the directional shadow **Normal Bias** to ``0.0`` "
+"and **Bias Split Scale** to ``0.0``. Depending on your scene, you may also "
+"want to further decrease **Bias** to a value between ``-0.05`` and ``-0.1``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:85
+msgid ""
+"Following the above tips should make it possible to avoid gaps in shadows "
+"without resorting to contact shadows (which have many issues of their own). "
+"If shadow acne is still visible after performing the above tweaks, try "
+"subdividing your meshes further in your 3D modeling software."
+msgstr ""
+
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:91
 msgid "Directional light"
 msgstr "方向光"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:72
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:93
 msgid ""
 "This is the most common type of light and represents a light source very far "
 "away (such as the sun). It is also the cheapest light to compute and should "
@@ -217,7 +259,7 @@ msgstr ""
 "这是最常见的光线类型, 代表了很远的光源(如太阳). 它也是计算中最便宜的光, 应该"
 "尽可能使用(虽然它不是计算起来最便宜的阴影贴图, 但这点稍后再说)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:76
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid ""
 "Directional light models an infinite number of parallel light rays covering "
 "the whole scene. The directional light node is represented by a big arrow "
@@ -227,7 +269,7 @@ msgstr ""
 "定向光模拟覆盖整个场景的无限数量的平行光线. 定向光节点由指示光线方向的大箭头"
 "表示. 但是, 节点的位置根本不会影响照明, 它可以在任何地方."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:83
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:104
 msgid ""
 "Every face whose front-side is hit by the light rays is lit, while the "
 "others stay dark. Most light types have specific parameters, but directional "
@@ -236,11 +278,11 @@ msgstr ""
 "每个表面的正面被光线照射, 而其他部分则保持黑暗. 大多数灯光类型都有特定的参"
 "数, 但定向灯本质上非常简单, 所以它们没有."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:87
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:108
 msgid "Directional shadow mapping"
 msgstr "方向光阴影贴图"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:89
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:110
 msgid ""
 "To compute shadow maps, the scene is rendered (only depth) from an "
 "orthogonal point of view that covers the whole scene (or up to the max "
@@ -250,7 +292,7 @@ msgstr ""
 "为了计算阴影贴图, 会从正交视图(仅深度)渲染整个场景(或直到最大距离). 但是, 这"
 "种方法存在问题, 因为靠近相机的物体会得到块状阴影."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:95
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:116
 msgid ""
 "To fix this, a technique named \"Parallel Split Shadow Maps\" (or PSSM) is "
 "used. This splits the view frustum in 2 or 4 areas. Each area gets its own "
@@ -261,15 +303,15 @@ msgstr ""
 "PSSM)的技术. 这将视锥体分成2或4个区域. 每个区域都有自己的阴影贴图. 这允许靠近"
 "观察者的小区域具有与巨大的遥远区域相同的阴影分辨率."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:100
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:121
 msgid "With this, shadows become more detailed:"
 msgstr "有了它, 阴影变得更加详细:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:104
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:125
 msgid "To control PSSM, a number of parameters are exposed:"
 msgstr "为了控制PSSM, 暴露了许多参数:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:108
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid ""
 "Each split distance is controlled relative to the camera far (or shadow "
 "**Max Distance** if greater than zero), so *0.0* is the eye position and "
@@ -282,7 +324,7 @@ msgstr ""
 "于两者之间. 默认值通常效果很好, 但调整第一个分割数值是很常见的, 可以为近处对"
 "象提供更多细节(比如第三人称游戏中的角色)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:114
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:135
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
@@ -290,7 +332,7 @@ msgstr ""
 "始终确保根据场景需要设置阴影 *Max Distance(最大距离)* . 最大距离越近, 阴影的"
 "质量越高."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:117
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:138
 msgid ""
 "Sometimes, the transition between a split and the next can look bad. To fix "
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
@@ -299,7 +341,7 @@ msgstr ""
 "有时, 一个分割与下一个之间的过渡看起来很糟糕. 要解决此问题, 可以打开 **"
 "\"Blend Splits\"(混合分割)** 选项, 牺牲细节以换取更平滑的过渡:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:123
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:144
 msgid ""
 "The **\"Normal Bias\"** parameter can be used to fix special cases of self "
 "shadowing when objects are perpendicular to the light. The only downside is "
@@ -308,7 +350,7 @@ msgstr ""
 "当物体垂直于光线时, **\"Normal Bias\"(法线偏差)** 参数可用于修复自阴影的特殊"
 "情况. 唯一的缺点是它使阴影更薄."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:129
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
 "The **\"Bias Split Scale\"** parameter can control extra bias for the splits "
 "that are far away. If self shadowing occurs only on the splits far away, "
@@ -317,11 +359,11 @@ msgstr ""
 "**\"Bias Split Scale\"(偏差分割缩放)** 参数可以控制远处分割的额外偏差. 如果仅"
 "在远处的分割上发生自阴影, 则此值可以修复它们."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:132
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid "Finally, the **\"Depth Range\"** has two settings:"
 msgstr "最后, **\"Depth Range\"(深度范围)** 有两个设置:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:134
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:155
 msgid ""
 "**Stable**: Keeps the shadow stable while the camera moves, and the blocks "
 "that appear in the outline when close to the shadow edges remain in-place. "
@@ -331,7 +373,7 @@ msgstr ""
 "**Stable(稳定)** : 在相机移动时保持阴影稳定, 并且当靠近阴影边缘时出现在轮廓中"
 "的块保持原位. 这是默认, 通常想要的设置, 但会降低有效的阴影分辨率."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:135
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:156
 msgid ""
 "**Optimized**: Tries to achieve the maximum resolution available at any "
 "given time. This may result in a \"moving saw\" effect on shadow edges, but "
@@ -342,11 +384,11 @@ msgstr ""
 "影边缘出现 \"移动锯\" 效果, 但同时阴影看起来更加细致(因此这种效果可能非常轻"
 "微, 可以被原谅)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:137
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:158
 msgid "Just experiment which setting works better for your scene."
 msgstr "尝试哪种设置更适合你的场景."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:139
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:160
 msgid ""
 "Shadowmap size for directional lights can be changed in Project Settings -> "
 "Rendering -> Quality:"
@@ -354,7 +396,7 @@ msgstr ""
 "可以在Project Settings(项目设置) ->Rendering(渲染) ->Quality(质量)中更改方向"
 "光的阴影贴图大小:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:143
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:164
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
@@ -362,17 +404,17 @@ msgstr ""
 "增加它可以解决偏差问题, 但会降低性能. 阴影贴图(Shadow mapping)是一门调整的艺"
 "术."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:146
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:167
 msgid "Omni light"
 msgstr "全向光"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:148
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:169
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
 msgstr "全向光是一种点光源, 可在所有方向上发射光, 直至给定半径."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:153
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:174
 msgid ""
 "In real life, light attenuation is an inverse function, which means omni "
 "lights don't have a radius. This is a problem because it means computing "
@@ -381,28 +423,28 @@ msgstr ""
 "在现实生活中, 光衰减是个和距离成反比的函数, 这意味着全向光没有半径. 这是一个"
 "问题, 因为这意味着计算几个全向光会变得很困难."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:156
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:177
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr "为了解决这个问题, 引入了 *Range(范围)* 和衰减函数."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:160
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
 msgstr "这两个参数允许调整其在视觉上的工作方式, 以便找到美学上令人愉悦的结果."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:166
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:187
 msgid "Omni shadow mapping"
 msgstr "全向光阴影贴图"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:168
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:189
 msgid ""
 "Omni light shadow mapping is relatively straightforward. The main issue that "
 "needs to be considered is the algorithm used to render it."
 msgstr "全方位光影贴图相对简单. 需要考虑的主要问题是用于渲染它的算法."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:171
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
 "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
 "\"**. The former renders quickly, but can cause deformations, while the "
@@ -411,7 +453,7 @@ msgstr ""
 "全向光阴影可以渲染为 **\"Dual Paraboloid\"(双抛物面)或\"Cube Mapped\"(方形映"
 "射)** . 前者渲染速度很快但会导致变形, 而后者更正确但成本更高."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:177
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:198
 msgid ""
 "If the objects being rendered are mostly irregular, Dual Paraboloid is "
 "usually enough. In any case, as these shadows are cached in a shadow atlas "
@@ -422,11 +464,11 @@ msgstr ""
 "说, 由于这些阴影被缓存在阴影图集中(后面会详细讲), 对于大多数场景而言, 它可能"
 "不会对性能产生影响."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:182
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:203
 msgid "Spot light"
 msgstr "Spot Light(聚光灯)"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:184
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:205
 msgid ""
 "Spot lights are similar to omni lights, except they emit light only into a "
 "cone (or \"cutoff\"). They are useful to simulate flashlights, car lights, "
@@ -436,7 +478,7 @@ msgstr ""
 "聚光灯类似于全向光, 除了它们只发光到锥形(或 \"截断\"). 它们可用于模拟手电筒, "
 "汽车灯, 反射器, 光点等. 这种类型的光也会向其指向的相反方向衰减."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:191
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:212
 msgid ""
 "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, "
 "and add two extra parameters:"
@@ -444,21 +486,21 @@ msgstr ""
 "聚光灯和 **Omni Light(全向光)** 共用 **Range(范围)** 和 **Attenuation(衰"
 "减)** , 并添加两个额外参数:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:193
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:214
 msgid "**Angle**: The aperture angle of the light"
 msgstr "**Angle(角度)** : 光线的光圈角度"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:194
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid ""
 "**Angle Attenuation**: The cone attenuation, which helps soften the cone "
 "borders."
 msgstr "**Angle Attenuation(角度衰减)** : 锥形衰减, 有助于软化锥形边界."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:197
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:218
 msgid "Spot shadow mapping"
 msgstr "聚光灯阴影贴图"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:199
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid ""
 "Spots don't need any parameters for shadow mapping. Keep in mind that, at "
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
@@ -467,11 +509,11 @@ msgstr ""
 "聚光灯不需要任何阴影映射参数. 请记住, 在超过89度的光圈下, 阴影会停止对聚光灯"
 "起作用, 你应该考虑使用全向光."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:203
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid "Shadow atlas"
 msgstr "影子图集"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:205
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "Unlike Directional lights, which have their own shadow texture, Omni and "
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
@@ -481,19 +523,19 @@ msgstr ""
 "在Project Settings(项目设置) -> Render(渲染) -> Quality(质量) -> Shadow "
 "Atlas(阴影图集) 中配置此图集."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:210
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:231
 msgid ""
 "The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
 msgstr "这个分辨率适用于整个影子图集. 该地图集分为四个象限:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:214
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:235
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
 msgstr "每个象限可以细分, 分配任意数量的阴影贴图. 以下是默认细分方式:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:218
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:239
 msgid ""
 "The allocation logic is simple. The biggest shadow map size (when no "
 "subdivision is used) represents a light the size of the screen (or bigger). "
@@ -503,11 +545,11 @@ msgstr ""
 "分配逻辑很简单. 最大的阴影贴图大小(当不使用细分时)表示一个屏幕大小(或更大)的"
 "光. 细分区块(较小的贴图)表示远离视图并且成比例地较小的光的阴影."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:223
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:244
 msgid "Every frame, the following procedure is performed for all lights:"
 msgstr "每一帧, 以下过程被应用于所有光:"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:225
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:246
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
@@ -515,26 +557,26 @@ msgstr ""
 "检查灯光是否在正确大小的插槽上. 如果没有, 重新渲染它并将其移动到更大/更小的插"
 "槽."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:247
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
 msgstr "检查影响阴影贴图的任何对象是否已更改. 如果是的话, 重新渲染光线."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:227
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:248
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
 msgstr "如果上述情况均未发生, 则不执行任何操作, 阴影保持不变."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:229
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:250
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
 msgstr ""
 "如果一个象限中的槽位满了, 光线会被推回到更小的槽位中, 取决于大小和距离."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:231
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:252
 msgid ""
 "This allocation strategy works for most games, but you may want to use a "
 "separate one in some cases (for example, a top-down game where all lights "
@@ -544,11 +586,11 @@ msgstr ""
 "如, 一个自上向下看的游戏, 其中所有灯光大小大概相同, 所有象限的细分可能会具有"
 "相同大小)."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:235
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:256
 msgid "Shadow filter quality"
 msgstr "阴影滤波质量"
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:237
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:258
 msgid ""
 "The filter quality of shadows can be tweaked. This can be found in Project "
 "Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 "
@@ -557,6 +599,6 @@ msgstr ""
 "可以调整阴影的滤波质量. 这可以在Project Settings(项目设置) -> Rendering(渲"
 "染) -> Quality(质量) -> Shadows(阴影)中找到. Godot支持无滤波,PCF5和PCF13."
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:243
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:264
 msgid "It affects the blockyness of the shadow outline:"
 msgstr "它会影响阴影轮廓的块状程度:"

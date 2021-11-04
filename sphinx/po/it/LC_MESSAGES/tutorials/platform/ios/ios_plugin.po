@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,35 +289,51 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:136
+#, fuzzy
 msgid ""
 "**plist**: should have keys and values that should be present in ``Info."
 "plist`` file."
 msgstr ""
+"**plist**: dovrebbe avere chiavi e valori che dovrebbero essere presenti nel "
+"file ``Info.plist``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
+#, fuzzy
 msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
-msgstr ""
+msgstr "Ogni linea dovrebbe seguire lo schema: ``KeyName:KeyType=KeyValue``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:139
+#, fuzzy
 msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
 msgstr ""
+"I valori supportati per ``KeyType`` sono ``string``, ``integer```, "
+"``boolean``, ``raw``, ``string_input``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
+#, fuzzy
 msgid ""
 "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be "
 "used."
 msgstr ""
+"Se non viene usato nessun tipo (ad esempio: ``KeyName=\"KeyValue\"``) verrà "
+"usato il tipo ``string``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:141
+#, fuzzy
 msgid ""
 "If ``raw`` type is used value for coresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr ""
+"Se viene usato il tipo ``raw`` il valore per la chiave corrispondente sarà "
+"memorizzato in ``Info.plist`` come è."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
+#, fuzzy
 msgid ""
 "If ``string_input`` type is used you will be able to modify value in Export "
 "window."
 msgstr ""
+"Se si usa il tipo ``string_input`` si potrà modificare il valore nella "
+"finestra Export."

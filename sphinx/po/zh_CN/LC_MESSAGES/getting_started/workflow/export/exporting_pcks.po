@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,16 +212,13 @@ msgid "Opening PCK files at runtime"
 msgstr "在运行时打开 ``PCK`` 文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
-#, fuzzy
 msgid ""
 "To import a PCK file, one uses the ProjectSettings singleton. The following "
 "example expects a “mod.pck” file in the directory of the games executable. "
 "The PCK file contains a “mod_scene.tscn” test scene in its root."
 msgstr ""
-"要导入PCK文件, 可以使用单行程序. 请记住, 如果导入失败, 不会出现错误或异常. 相"
-"反, 可能必须在顶部创建一些验证代码作为一层. 以下示例在游戏可执行文件的目录中"
-"需要一个 ``mod.pck`` 文件.PCK文件在其根目录中包含 ``mod_scene.tscn`` 测试场"
-"景."
+"要导入PCK文件，需要使用ProjectSettings单例。下面的例子期望在游戏可执行目录中"
+"有一个 “mod.pck” 文件。该PCK文件的根目录包含一个 “mod_scene.tscn” 测试场景。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
 msgid ""

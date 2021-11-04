@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,29 +46,29 @@ msgid ""
 "described as:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:19
+#: ../../docs/tutorials/math/interpolation.rst:18
 msgid "And often simplified to:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:26
+#: ../../docs/tutorials/math/interpolation.rst:24
 msgid ""
 "The name of this type of interpolation, which transforms a value into "
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
 "Interpolation*, you know they are referring to this simple formula."
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:28
+#: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
 "There are other types of interpolations, which will not be covered here. A "
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:31
+#: ../../docs/tutorials/math/interpolation.rst:29
 msgid "Vector interpolation"
 msgstr "Vektorová interpolace"
 
-#: ../../docs/tutorials/math/interpolation.rst:33
+#: ../../docs/tutorials/math/interpolation.rst:31
 msgid ""
 "Vector types (:ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>`) can also be interpolated, they come with handy functions "
@@ -77,7 +77,7 @@ msgid ""
 "linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:36
+#: ../../docs/tutorials/math/interpolation.rst:34
 msgid ""
 "For cubic interpolation, there are also :ref:`Vector2.cubic_interpolate() "
 "<class_Vector2_method_cubic_interpolate>` and :ref:`Vector3."
@@ -85,20 +85,20 @@ msgid ""
 "ref:`Bezier <doc_beziers_and_curves>` style interpolation."
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:38
+#: ../../docs/tutorials/math/interpolation.rst:36
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:48
+#: ../../docs/tutorials/math/interpolation.rst:63
 msgid "It will produce the following motion:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:53
+#: ../../docs/tutorials/math/interpolation.rst:68
 msgid "Transform interpolation"
 msgstr "Transformace interpolace"
 
-#: ../../docs/tutorials/math/interpolation.rst:55
+#: ../../docs/tutorials/math/interpolation.rst:70
 msgid ""
 "It is also possible to interpolate whole transforms (make sure they have "
 "either uniform scale or, at least, the same non-uniform scale). For this, "
@@ -106,34 +106,34 @@ msgid ""
 "<class_Transform_method_interpolate_with>` can be used."
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:58
+#: ../../docs/tutorials/math/interpolation.rst:73
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:62
+#: ../../docs/tutorials/math/interpolation.rst:77
 msgid "Using the following pseudocode:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:74
+#: ../../docs/tutorials/math/interpolation.rst:104
 msgid "And again, it will produce the following motion:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:80
+#: ../../docs/tutorials/math/interpolation.rst:110
 msgid "Smoothing motion"
 msgstr "Vyhlazování pohybu"
 
-#: ../../docs/tutorials/math/interpolation.rst:82
+#: ../../docs/tutorials/math/interpolation.rst:112
 msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:94
+#: ../../docs/tutorials/math/interpolation.rst:137
 msgid "Here is how it looks:"
 msgstr ""
 
-#: ../../docs/tutorials/math/interpolation.rst:98
+#: ../../docs/tutorials/math/interpolation.rst:141
 msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."

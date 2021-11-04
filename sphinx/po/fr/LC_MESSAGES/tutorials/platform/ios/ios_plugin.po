@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -387,27 +387,36 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
 msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
 msgstr ""
+"Chaque ligne doit suivre le modèle suivant : ``KeyName:KeyType=KeyValue``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:139
 msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
 msgstr ""
+"Les valeurs prises en charge pour ``KeyType`` sont``string``, ``integer``, "
+"``boolean``, ``raw``, ``string_input``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
 msgid ""
 "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be "
 "used."
 msgstr ""
+"Si aucun type n'est utilisé (par exemple :``KeyName=\"KeyValue\"``), le type "
+"``string`` sera utilisé."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:141
 msgid ""
 "If ``raw`` type is used value for coresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr ""
+"Si le type ``raw`` est utilisé, la valeur de la clé correspondante sera "
+"stockée dans ``Info.plist`` telle quelle."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
 msgid ""
 "If ``string_input`` type is used you will be able to modify value in Export "
 "window."
 msgstr ""
+"Si le type ``string_input`` est utilisé, vous pourrez modifier la valeur "
+"dans la fenêtre d'exportation."

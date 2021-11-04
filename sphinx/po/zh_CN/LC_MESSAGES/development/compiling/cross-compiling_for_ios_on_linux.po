@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "once you have the environment properly configured it will be easy to compile "
 "Godot for iOS anytime you want."
 msgstr ""
-"此过程有些复杂, 需要很多步骤, 但只要您正确配置了环境, 就可以随时随地轻松为iOS"
+"此过程有些复杂, 需要很多步骤, 但只要你正确配置了环境, 就可以随时随地轻松为iOS"
 "编译Godot."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:13
@@ -93,7 +93,7 @@ msgstr ""
 msgid ""
 "For building darling-dmg, you'll need the development packages of the "
 "following libraries: fuse, icu, openssl, zlib, bzip2."
-msgstr "要构建darling-dmg, 您需要以下库的开发包:fuse,icu,openssl,zlib,bzip2."
+msgstr "要构建darling-dmg, 你需要以下库的开发包:fuse,icu,openssl,zlib,bzip2."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:43
 msgid ""
@@ -118,7 +118,7 @@ msgstr "darling-dmg"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:55
 msgid "Clone the repository on your machine:"
-msgstr "在您的计算机上克隆存储库:"
+msgstr "在你的计算机上克隆存储库:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:61
 msgid "Build it:"
@@ -155,8 +155,8 @@ msgid ""
 "toolchain binaries, so you must copy to such subdirectory, akin to the "
 "following commands:"
 msgstr ""
-"将工具复制到更好的位置. 请注意, 用于构建的SCons脚本将在您为工具链二进制文件提"
-"供的目录中的 ``usr/bin`` 下查找, 因此, 您必须复制到这样的子目录, 类似于以下命"
+"将工具复制到更好的位置. 请注意, 用于构建的SCons脚本将在你为工具链二进制文件提"
+"供的目录中的 ``usr/bin`` 下查找, 因此, 你必须复制到这样的子目录, 类似于以下命"
 "令:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:121
@@ -164,7 +164,7 @@ msgid ""
 "Now you should have the iOS toolchain binaries in ``/home/user/iostoolchain/"
 "usr/bin``."
 msgstr ""
-"现在您应该在 ``/home/user/iostoolchain/usr/bin`` 中拥有iOS工具链二进制文件."
+"现在你应该在 ``/home/user/iostoolchain/usr/bin`` 中拥有iOS工具链二进制文件."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:125
 msgid "Compiling Godot for iPhone"
@@ -178,21 +178,21 @@ msgid ""
 "build command."
 msgstr ""
 "完成上述步骤后, 应在环境中保留两件事: 构建的工具链和iPhoneOS SDK目录. 那些可"
-"以留在您想要的任何地方, 因此您必须提供它们的路径给SCons构建命令."
+"以留在你想要的任何地方, 因此你必须提供它们的路径给SCons构建命令."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:132
 msgid ""
 "For the iPhone platform to be detected, you need the ``OSXCROSS_IOS`` "
 "environment variable defined to anything."
 msgstr ""
-"为了检测iPhone平台, 您需要将 ``OSXCROSS_IOS`` 环境变量定义为 ``anything``."
+"为了检测iPhone平台, 你需要将 ``OSXCROSS_IOS`` 环境变量定义为 ``anything``."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:139
 msgid ""
 "Now you can compile for iPhone using SCons like the standard Godot way, with "
 "some additional arguments to provide the correct paths:"
 msgstr ""
-"现在您可以使用SCons像标准Godot方式一样编译iPhone, 带有一些其他参数以提供正确"
+"现在你可以使用SCons像标准Godot方式一样编译iPhone, 带有一些其他参数以提供正确"
 "的路径:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:148
@@ -207,7 +207,7 @@ msgid ""
 "directory:"
 msgstr ""
 "Apple需要一个胖二进制文件, 即两个架构(``armv7`` 和 ``arm64``)在一个文件中. 为"
-"此, 请使用 ``arm-apple-darwin11-lipo`` 可执行文件. 以下示例假定您位于Godot源"
+"此, 请使用 ``arm-apple-darwin11-lipo`` 可执行文件. 以下示例假定你位于Godot源"
 "目录的根路径:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:162

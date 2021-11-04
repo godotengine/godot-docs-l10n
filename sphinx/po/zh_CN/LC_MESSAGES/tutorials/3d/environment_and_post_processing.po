@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -718,39 +718,36 @@ msgid "The **Blend Mode** of the effect can also be changed:"
 msgstr "效果的 **混合模式** 也可以改变:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
-#, fuzzy
 msgid ""
 "**Additive** is the strongest one, as it only adds the glow effect over the "
 "image with no blending involved. In general, it's too strong to be used, but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
-"**添加剂(Additive)** 是最强的, 因为它只是在图像上添加了发光效果而不涉及混合. "
-"一般来说, 它太强大而无法使用, 但在低强度Bloom下可以看起来很好(产生梦幻般的效"
-"果)."
+"**Additive** 添加是最强的一种，因为它只在图像上添加发光效果，不涉及混合。一般"
+"来说，它太强了，不能使用，但在低强度的Bloom下可能看起来很好，会产生一种梦幻般"
+"的效果。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
-#, fuzzy
 msgid ""
 "**Screen** ensures glow never brightens more than itself and it works great "
 "as an all around."
-msgstr ""
-"**屏幕** 是默认值. 它确保发光永远不会比自身更亮, 并且可以很好地作为一个整体."
+msgstr "**Screen** 确保辉光永远不会比自己更亮，它作为一个周围的方式将非常好。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
-#, fuzzy
 msgid ""
 "**Softlight** is the default and weakest one, producing only a subtle color "
 "disturbance around the objects. This mode works best on dark scenes."
 msgstr ""
-"**Softlight** 是最弱的一种, 只会在物体周围产生微妙的色彩干扰. 此模式在黑暗场"
-"景中效果最佳."
+"**Softlight** 是默认的，也是最弱的一种，只在物体周围产生细微的颜色扰动。这种"
+"模式在黑暗场景中效果最好。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
-#, fuzzy
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "only shows the glow effect without the image below."
-msgstr "**替换** 可用于模糊整个屏幕或调试效果. 它只显示没有下图的发光效果."
+msgstr ""
+"**Replace** 替换可以用来模糊整个屏幕或调试效果。它只显示发光的效果，没有下面"
+"的图片。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
 msgid ""

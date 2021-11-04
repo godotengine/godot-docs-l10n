@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr "最终效果"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr "您还将学习:"
+msgstr "你还将学习:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
@@ -172,8 +172,8 @@ msgid ""
 "vertical axis to make space for its child UI components."
 msgstr ""
 "我们希望我们的界面锚定到屏幕的顶部. 选择 ``GUI`` 节点并单击视图顶部的布局按"
-"钮. 选择 ``Top Wide(顶部宽)`` 选项. 默认情况下,``GUI`` 节点将锚定到其父级的视"
-"图顶部. 它将在垂直轴上自动调整大小, 为其子UI组件腾出空间."
+"钮. 选择 ``Top Wide(顶部宽)`` 选项. 默认情况下, ``GUI`` 节点将锚定到其父级的"
+"视图顶部. 它将在垂直轴上自动调整大小, 为其子UI组件腾出空间."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
@@ -207,7 +207,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
-msgstr "您应该有4个看起来像这样的容器"
+msgstr "你应该有4个看起来像这样的容器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -217,7 +217,7 @@ msgid ""
 "games, you'll see it's an efficient workflow."
 msgstr ""
 "之所以可以这样做, 是因为我们首先分解了UI设计, 并花了一些时间来考虑要使用的容"
-"器. 当您学习这样的教程时, 可能会觉得很奇怪. 但是一旦您在真正的游戏中工作, 您"
+"器. 当你学习这样的教程时, 可能会觉得很奇怪. 但是一旦你在真正的游戏中工作, 你"
 "就会发现它是一种高效的工作流程."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
@@ -232,8 +232,8 @@ msgid ""
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
 "每个条形图拆分为两个水平对齐的子元素: 带有健康计数的标签在左侧, 量规在右侧. "
-"再次,``HBoxContainer`` 是完成这项工作的理想工具. 选择 ``Bars`` 节点, 并在其中"
-"添加一个新的 ``HBoxContainer``. 将其命名为 ``Bar``."
+"再次, ``HBoxContainer`` 是完成这项工作的理想工具. 选择 ``Bars`` 节点, 并在其"
+"中添加一个新的 ``HBoxContainer``. 将其命名为 ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
 msgid ""
@@ -250,7 +250,7 @@ msgstr ""
 "标签本身至少需要三个节点: 一个作为背景的 ``NinePatchRect``, 在其顶部, 我们将"
 "在左侧添加一个纹理, 即 ``HP`` 或 ``EP``, 并在右侧用来显示值的一个 ``Label``. "
 "我们可以根据需要嵌套 ``Control`` 节点. 我们可以将 ``NinePatchRect`` 用作其他"
-"两个元素的父元素, 因为它包含了它俩. 通常, 您想使用容器代替, 因为它们的作用是"
+"两个元素的父元素, 因为它包含了它俩. 通常, 你想使用容器代替, 因为它们的作用是"
 "帮助组织UI组件. 无论如何, 我们以后都需要一个 ``MarginContainer`` 来在生命计数"
 "和量规之间增加一些空间. 选择 ``Bar`` 并添加一个 ``MarginContainer``. 将其命名"
 "为 ``Count``. 在其中添加三个节点:"
@@ -274,7 +274,7 @@ msgstr "要将节点添加为兄弟节点, 请始终先选择 ``Count`` 节点."
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
-msgstr "您的场景树应如图所示. 我们准备加入一些纹理"
+msgstr "你的场景树应如图所示. 我们准备加入一些纹理"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
-msgstr "您应该会看到我们将用来为界面蒙皮的纹理列表."
+msgstr "你应该会看到我们将用来为界面蒙皮的纹理列表."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
 msgid ""
@@ -299,11 +299,11 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
-"在场景停靠面板中选择 ``Background``. 在属性检查器中, 您应该看到一个 "
+"在场景停靠面板中选择 ``Background``. 在属性检查器中, 你应该看到一个 "
 "``Texture`` 属性. 在 ``FileSystem`` 选项卡中, 点击并将 ``label_HP_bg.png`` 拖"
 "到 ``Texture`` 插槽中. 它保持压扁. 父 ``MarginContainer`` 将强制其大小降为0, "
 "直到我们强制容器中的元素具有最小大小. 选择 ``Background`` 节点. 在属性检查器"
-"面板中, 向下滚动到 ``Rect`` 部分. 设置 ``Min Size`` 为(100,40). 您应该会看到 "
+"面板中, 向下滚动到 ``Rect`` 部分. 设置 ``Min Size`` 为(100,40). 你应该会看到 "
 "``Background`` 和它的父容器一起重调大小."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
@@ -320,7 +320,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr "如果您选择两个节点, 您应该会看到这样的结果"
+msgstr "如果你选择两个节点, 你应该会看到这样的结果"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
 msgid ""
@@ -384,7 +384,7 @@ msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
-"这是节点的边界框在视图中的外观. 保持粗糙, 您现在不需要将它们放置得过于精确."
+"这是节点的边界框在视图中的外观. 保持粗糙, 你现在不需要将它们放置得过于精确."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
 msgid "Replace the Label's font"
@@ -410,10 +410,10 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
-"您将输入 ``动态字体(Dynamic Font)`` 资源. 展开 ``字体(Font)`` 类别, 然后点击 "
+"你将输入 ``动态字体(Dynamic Font)`` 资源. 展开 ``字体(Font)`` 类别, 然后点击 "
 "``字体数据(Font Data)`` 旁边的字段. 点击 ``加载(Load)`` 按钮. 在文件浏览器"
 "中, 向下浏览到 ``assets/font`` 文件夹, 然后双击 ``Comfortaa-Bold.ttf`` 将其打"
-"开. 您应该在视图中看到字体更新. 展开设置类别以更改字体大小. 将 ``Size`` 属性"
+"开. 你应该在视图中看到字体更新. 展开设置类别以更改字体大小. 将 ``Size`` 属性"
 "设置为较高的值, 例如 ``24`` 或 ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
@@ -518,12 +518,12 @@ msgid ""
 msgstr ""
 "将 ``Count2`` 节点重命名为 ``Counter`` . 与条形图不同, 我们希望数字在左边, 图"
 "标在右边. 设置是相同的: 我们需要一个背景( ``NinePatchRect`` ), 标题, 和数字节"
-"点.``Title`` 节点是一个 ``TextureRect``, 这就是我们需要用来显示图标. 在场景树"
-"中, 选择 ``Title`` 节点, 并将其重命名为 ``Icon``."
+"点. ``Title`` 节点是一个 ``TextureRect``, 这就是我们需要用来显示图标. 在场景"
+"树中, 选择 ``Title`` 节点, 并将其重命名为 ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
-msgstr "到目前为止, 这是您的节点树的外观"
+msgstr "到目前为止, 这是你的节点树的外观"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
 msgid ""
@@ -573,7 +573,7 @@ msgid ""
 msgstr ""
 "要使 ``Icon`` 和背景叠加, 我们需要进行一些调整. 首先, 我们的背景有点高. 这是"
 "因为它位于由最顶层GUI节点控制的边距容器内. 选择场景树顶部的GUI节点, 并垂直缩"
-"小其尺寸, 以使其尽可能薄. 您会看到仪表防止您把它做得太小. 容器不能小于其子容"
+"小其尺寸, 以使其尽可能薄. 你会看到仪表防止你把它做得太小. 容器不能小于其子容"
 "器的最小大小. 容器的边距也很重要."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
@@ -619,7 +619,7 @@ msgid ""
 msgstr ""
 "让我们将 ``Counters`` 锚定到视图的右边缘. 为此, 我们需要将 ``Bars`` 容器设置"
 "为占用所有可用的水平空间. 选择 ``Bars`` 节点, 然后向下滚动到 ``Size Flags`` "
-"类别. 在 ``Horizontal`` 类别中, 检查 ``Expand`` 值.``Bars`` 节点应调整大小并"
+"类别. 在 ``Horizontal`` 类别中, 检查 ``Expand`` 值. ``Bars`` 节点应调整大小并"
 "将计数器推到屏幕右侧."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
@@ -739,7 +739,7 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
-"重新加载图标将出现在您重写的属性旁边. 点击它可将值重置为父场景的默认值."
+"重新加载图标将出现在你重写的属性旁边. 点击它可将值重置为父场景的默认值."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -749,7 +749,7 @@ msgid ""
 "functionality."
 msgstr ""
 "将场景继承想像成节点树, 或者在GDScript中使用 ``extends`` 关键字. 继承的场景会"
-"像其父级一样执行所有操作, 但是您可以覆盖属性, 资源并添加额外的节点和脚本来扩"
+"像其父级一样执行所有操作, 但是你可以覆盖属性, 资源并添加额外的节点和脚本来扩"
 "展其功能."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
@@ -772,7 +772,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
-msgstr "您不能重命名灰色节点. 这表示它们有一个父级场景"
+msgstr "你不能重命名灰色节点. 这表示它们有一个父级场景"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -798,8 +798,8 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
-"如果您曾经做过网页设计, 则它与使用CSS的精神相同: 创建基类, 并使用修饰符类添加"
-"变体. 在基本的按钮类中, 您将具有绿色的按钮和红色的按钮供用户接受和拒绝提示. "
+"如果你曾经做过网页设计, 则它与使用CSS的精神相同: 创建基类, 并使用修饰符类添加"
+"变体. 在基本的按钮类中, 你将具有绿色的按钮和红色的按钮供用户接受和拒绝提示. "
 "新类包含父元素的名称和一个额外的关键字, 以说明其修改方式. 创建继承的场景并更"
 "改顶级节点的名称时, 我们正在做相同的事情."
 
@@ -846,10 +846,10 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
-"您会注意到 ``EP`` 纹理比 ``HP`` 纹理小. 我们应该更新 ``Number`` 的字体大小以"
+"你会注意到 ``EP`` 纹理比 ``HP`` 纹理小. 我们应该更新 ``Number`` 的字体大小以"
 "更好地适应它. 字体是一种资源. 使用此资源的整个项目中的所有节点都将受到我们更"
-"改的任何属性的影响. 您可以尝试将大小更改为较大的值, 例如 ``40``, 然后切换回 "
-"``LifeBar`` 或 ``Bar`` 场景. 您将看到文本的大小增加了."
+"改的任何属性的影响. 你可以尝试将大小更改为较大的值, 例如 ``40``, 然后切换回 "
+"``LifeBar`` 或 ``Bar`` 场景. 你将看到文本的大小增加了."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
@@ -891,7 +891,7 @@ msgid ""
 "label on the left."
 msgstr ""
 "向下滚动到 ``自定义字体(Custom Font)`` 部分, 然后打开 ``字体(Font)``. 将 ``大"
-"小(Size)`` 降低到较小的值, 例如 ``20`` 或 ``22``. 您可能还需要调整 ``底部"
+"小(Size)`` 降低到较小的值, 例如 ``20`` 或 ``22``. 你可能还需要调整 ``底部"
 "(Bottom)`` 间距值, 以将文本的基线与左侧的 ``EP`` 标签对齐."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
@@ -917,10 +917,10 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
-"您可以垂直调整节点的大小, 以使其边界矩形适合量规. 对 ``Count`` 节点执行相同的"
+"你可以垂直调整节点的大小, 以使其边界矩形适合量规. 对 ``Count`` 节点执行相同的"
 "操作, 直到其大小与条的大小对齐为止. 因为 ``TextureProgress`` 的最小大小是根据"
-"其纹理设置的, 所以您将无法缩小 ``Count`` 节点低于该值大小. 这也是 ``Bar`` 容"
-"器将具有的大小. 您也可以缩小此尺寸."
+"其纹理设置的, 所以你将无法缩小 ``Count`` 节点低于该值大小. 这也是 ``Bar`` 容"
+"器将具有的大小. 你也可以缩小此尺寸."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
 msgid ""
@@ -929,7 +929,7 @@ msgid ""
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
-"最后但并非最不重要的一点是,``背景(Background)`` 容器的最小尺寸使其变得有点"
+"最后但并非最不重要的一点是, ``背景(Background)`` 容器的最小尺寸使其变得有点"
 "大. 选择它, 然后在 ``矩形(Rect)`` 部分中, 将 ``最小大小(Min Size)`` 属性更改"
 "为 ``80`` 像素. 它应该自动调整大小, 并且 ``Title`` 和 ``Number`` 节点也应重新"
 "定位."
@@ -1011,7 +1011,7 @@ msgstr ""
 "是时候将所有UI元素添加到主GUI场景中了. 再次打开 ``GUI.tscn`` 场景, 并删除 "
 "``Bar`` 和 ``Counter`` 节点. 在 ``FileSystem`` 停靠面板中, 找到 ``LifeBar."
 "tscn`` 并将其拖放到场景树中的 ``Bars`` 容器上. 对 ``EnergyBar`` 执行相同的操"
-"作. 您应该看到它们垂直对齐."
+"作. 你应该看到它们垂直对齐."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
 msgid "The LifeBar and the EnergyBar align automatically"
@@ -1068,7 +1068,7 @@ msgstr ""
 "我们在 ``EnergyBar`` 上留下一个带有 ``EP`` 标签的小问题:2个条应垂直对齐. 点"
 "击 ``EnergyBar`` 节点旁边的图标以打开其场景. 选择 ``Count`` 节点, 然后向下滚"
 "动到 ``Custom Constants`` 部分. 添加一个 ``20`` 的 ``Margin Left``. 在 "
-"``Rect`` 部分, 将节点的 ``Min Size`` 设置为100, 与 ``LifeBar`` 相同."
+"``Rect`` 部分, 将节点的 ``Min Size`` 设置为100, 与 ``LifeBar`` 相同. "
 "``Count`` 现在应该在左边有一些边距. 如果您保存并返回GUI场景, 它将与 "
 "``LifeBar`` 垂直对齐."
 
@@ -1110,7 +1110,7 @@ msgid ""
 msgstr ""
 "将 ``GUI.tscn`` 场景拖放到 ``bg`` 节点下方和 ``Character`` 上方.GUI将缩放以适"
 "合整个视图. 前往 ``Layout`` 菜单并选择 ``Center Top`` 选项, 使其锚定到游戏窗"
-"口的顶部边缘. 然后调整GUI的大小, 使其在垂直方向上尽可能小. 现在, 您可以看到界"
+"口的顶部边缘. 然后调整GUI的大小, 使其在垂直方向上尽可能小. 现在, 你可以看到界"
 "面在游戏中的外观."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,12 +36,12 @@ msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
-"这就是您要创建的内容: 角色受到攻击时, 条形图和计数器会进行动画处理. 它死后会"
+"这就是你要创建的内容: 角色受到攻击时, 条形图和计数器会进行动画处理. 它死后会"
 "褪色."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr "您将学习:"
+msgstr "你将学习:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
@@ -59,7 +59,7 @@ msgstr "如何用 :ref:`Tween <class_Tween>` 节点 **动画化** 生命条"
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
-msgstr "如果您想学习如何设置界面, 请查看渐进式UI教程:"
+msgstr "如果你想学习如何设置界面, 请查看渐进式UI教程:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid ":doc:`ui_main_menu`"
@@ -79,8 +79,8 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
-"在编写游戏代码时, 您要首先构建核心游戏玩法: 主要机制, 玩家输入, 获胜和失败条"
-"件.UI要晚一些. 如果可能的话, 您希望将组成项目的所有元素分开. 每个角色都应该在"
+"在编写游戏代码时, 你要首先构建核心游戏玩法: 主要机制, 玩家输入, 获胜和失败条"
+"件.UI要晚一些. 如果可能的话, 你希望将组成项目的所有元素分开. 每个角色都应该在"
 "自己的场景中, 有自己的脚本,UI元素也应该如此. 这可以防止bug, 保持项目的可管理"
 "性, 并允许不同的团队成员在游戏的不同部分工作."
 
@@ -91,7 +91,7 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
-"一旦核心游戏玩法和UI准备就绪, 您就需要以某种方式连接它们. 在我们的示例中, 我"
+"一旦核心游戏玩法和UI准备就绪, 你就需要以某种方式连接它们. 在我们的示例中, 我"
 "们的敌人以固定的时间间隔攻击玩家. 我们希望生命条在玩家受到伤害时更新."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
@@ -141,7 +141,7 @@ msgstr ""
 "加载Godot中的 ``start`` 项目. 在 ``FileSystem`` 停靠面板中双击 ``LevelMockup."
 "tscn`` 打开它. 这是一个RPG游戏的模型,2个角色面对面. 粉色的敌人定期攻击并破坏"
 "绿色的正方形, 直到它死亡. 请随意尝试游戏: 基本的战斗机制已经工作. 但由于角色"
-"没有连接到生命条,``GUI`` 什么也做不了."
+"没有连接到生命条, ``GUI`` 什么也做不了."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -154,8 +154,8 @@ msgid ""
 msgstr ""
 "这是编写游戏代码的典型方式: 首先实现核心游戏玩法, 处理玩家的死亡, 然后才添加"
 "界面. 这是因为UI会监听游戏中发生的事情. 因此, 如果其他系统还没有到位, 它将无"
-"法正常工作. 如果您在原型设计和测试游戏玩法之前设计UI, 则可能会无法正常工作, "
-"并且您必须从头开始重新创建它."
+"法正常工作. 如果你在原型设计和测试游戏玩法之前设计UI, 则可能会无法正常工作, "
+"并且你必须从头开始重新创建它."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
@@ -206,10 +206,10 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
-"在项目的根目录中的 ``res://`` 文件夹中, 您将找到 ``LevelMockup``. 那是主要的"
+"在项目的根目录中的 ``res://`` 文件夹中, 你将找到 ``LevelMockup``. 那是主要的"
 "游戏场景, 也是我们将要使用的场景. 构成游戏的所有组件都在 ``scenes/`` 文件夹"
-"中.``assets/`` 文件夹包含游戏精灵和HP计数器的字体. 在 ``scripts/`` 文件夹中, "
-"您会找到敌人, 游戏角色和GUI控制器脚本."
+"中. ``assets/`` 文件夹包含游戏精灵和HP计数器的字体. 在 ``scripts/`` 文件夹"
+"中, 你会找到敌人, 游戏角色和GUI控制器脚本."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -217,7 +217,7 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
-"点击场景树中节点右侧的编辑场景图标以在编辑器中打开场景. 您会看到 ``LifeBar`` "
+"点击场景树中节点右侧的编辑场景图标以在编辑器中打开场景. 你会看到 ``LifeBar`` "
 "和 ``EnergyBar`` 本身就是子场景."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
@@ -258,7 +258,7 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
-"默认情况下, 条形图 ``TextureProgress`` 的 ``max_value`` 值为 ``100``. 如果您"
+"默认情况下, 条形图 ``TextureProgress`` 的 ``max_value`` 值为 ``100``. 如果你"
 "不需要用数字显示角色的健康状况, 则无需更改其 ``max_value`` 属性. 可以从 "
 "``Player`` 向 ``GUI`` 发送一个百分比, 而不是 ``health / max_health * 100``."
 
@@ -280,9 +280,9 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
-"让我们把它分解一下.``$ \"../Characters/Player\"`` 是场景树中一个节点的一个快"
+"让我们把它分解一下. ``$ \"../Characters/Player\"`` 是场景树中一个节点的一个快"
 "捷方式, 从那里取回 ``Characters/Player`` 节点. 它允许我们访问节点. 陈述的第二"
-"部分,``.max_health``, 访问 ``Player`` 节点上的 ``max_health``."
+"部分, ``.max_health``, 访问 ``Player`` 节点上的 ``max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -290,7 +290,7 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
-"第二行将该值赋给 ``bar.max_value``. 您可以将这两行合并为一行, 但是在本教程"
+"第二行将该值赋给 ``bar.max_value``. 你可以将这两行合并为一行, 但是在本教程"
 "中, 稍后我们需要再次使用 ``player_max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
@@ -321,11 +321,11 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
-"当您在游戏中打开场景时,Godot会按照场景停靠面板中的顺序, 从上到下逐一创建节点."
-"``GUI`` 和 ``Player`` 不是同一个节点分支的一部分. 为了确保当彼此访问时它们都"
-"存在, 我们必须使用 ``_ready`` 函数.Godot在加载所有节点之后, 在游戏开始之前, "
-"立即调用 ``_ready``. 这是设置所有内容并准备游戏会话的完美功能. 进一步了解 "
-"``_ready``: :doc:`scripting_continued`"
+"当你在游戏中打开场景时,Godot会按照场景停靠面板中的顺序, 从上到下逐一创建节"
+"点. ``GUI`` 和 ``Player`` 不是同一个节点分支的一部分. 为了确保当彼此访问时它"
+"们都存在, 我们必须使用 ``_ready`` 函数.Godot在加载所有节点之后, 在游戏开始之"
+"前, 立即调用 ``_ready``. 这是设置所有内容并准备游戏会话的完美功能. 进一步了"
+"解 ``_ready``: :doc:`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
@@ -347,8 +347,8 @@ msgid ""
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
 "有许多有用的内置信号, 如 ``enter_tree`` 和 ``exit_tree``, 当所有节点分别在被"
-"创建和销毁时, 会发出这些信号. 您也可以使用 ``signal`` 关键字创建您自己的信"
-"号. 在 ``Player`` 节点上, 您会发现我们为您创建的两个信号: ``died`` 和 "
+"创建和销毁时, 会发出这些信号. 你也可以使用 ``signal`` 关键字创建你自己的信"
+"号. 在 ``Player`` 节点上, 你会发现我们为你创建的两个信号: ``died`` 和 "
 "``health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
@@ -377,9 +377,9 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
-"在给定的帧上, 您可能会在更新 *之前* 查看另一个节点的属性: 您从上一帧获得了一"
+"在给定的帧上, 你可能会在更新 *之前* 查看另一个节点的属性: 你从上一帧获得了一"
 "个值. 这会导致难以修复的模糊bug. 另一方面, 一个信号在发生变化后立即发出. 它 "
-"**保证** 您得到了一个新的信息. 发生变化后, 您将在 *之后立即* 更新连接节点的状"
+"**保证** 你得到了一个新的信息. 发生变化后, 你将在 *之后立即* 更新连接节点的状"
 "态."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
@@ -393,12 +393,13 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <https://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
-"从信号派生而来的观察者模式仍然在节点分支之间添加了一些耦合. 但是, 与直接访问"
-"节点以在两个单独的类之间进行通信相比, 它通常更轻便, 更安全. 父节点可以从其子"
-"节点获取值. 但是, 如果您使用的是两个独立的分支, 那么您会希望使用信号. 阅读游"
-"戏编程模式, 以获取有关 `观察者模式 <http://gameprogrammingpatterns.com/"
-"observer.html>`_ 的更多信息.`全书 <http://gameprogrammingpatterns.com/"
-"contents.html>`_ 可以免费在线获得."
+"从信号派生而来的观察者模式仍然在节点分支之间添加了一些耦合。但是，与直接访问"
+"节点以在两个单独的类之间进行通信相比，它通常更轻便， 更安全。父节点可以从其子"
+"节点获取值。但是，如果您使用的是两个独立的分支，那么您会希望使用信号。阅读游"
+"戏编程模式，以获取有关 `观察者模式 <http://gameprogrammingpatterns.com/"
+"observer.html>`_ （`中文版 <https://gpp.tkchu.me/observer.html>`_ ）的更多信"
+"息。`全书 <http://gameprogrammingpatterns.com/contents.html>`_ 可以免费在线获"
+"得。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -456,7 +457,7 @@ msgstr "您可以选择从代码中连接节点. 从编辑器执行此操作有�
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
-msgstr "在连接的脚本中,Godot可以为您编写新的回调函数"
+msgstr "在连接的脚本中,Godot可以为你编写新的回调函数"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
@@ -488,13 +489,13 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
-"当您从编辑器连接节点时,Godot会使用以下模式生成方法名称: "
-"``_on_EmitterName_signal_name``. 如果您已经编写了该方法,``创建函数`` 选项将保"
-"留它. 您可以将名称替换为任意名称."
+"当你从编辑器连接节点时,Godot会使用以下模式生成方法名称: "
+"``_on_EmitterName_signal_name``. 如果你已经编写了该方法, ``创建函数`` 选项将"
+"保留它. 你可以将名称替换为任意名称."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr "Godot为您编写回调方法并将您带到该方法中"
+msgstr "Godot为你编写回调方法并将你带到该方法中"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 msgid ""
@@ -581,7 +582,7 @@ msgid ""
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
-"``str`` 是一个内置函数, 可将任何值转换为文本.``Number`` 的 ``text`` 属性需要"
+"``str`` 是一个内置函数, 可将任何值转换为文本. ``Number`` 的 ``text`` 属性需要"
 "一个字符串, 因此我们不能将其直接指定为 ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
@@ -600,7 +601,7 @@ msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
-"当 ``Player`` 受到攻击时,``Number`` 节点和 ``TextureProgress`` 都会更新"
+"当 ``Player`` 受到攻击时, ``Number`` 节点和 ``TextureProgress`` 都会更新"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"
@@ -616,9 +617,9 @@ msgid ""
 "``health`` when the character takes damage."
 msgstr ""
 "我们的界面可以使用, 但是可以使用一些动画. 这是介绍 ``Tween`` 节点的绝佳机会, "
-"该节点是动画化属性的基本工具.``Tween`` 可以在从开始到结束一定的持续时间内, 动"
-"画化你想要的任何东西. 例如, 当角色受到伤害时, 它可以将 ``TextureProgress`` 上"
-"的生命值从当前级别的值动画化为 ``Player`` 的新的 ``health`` 值."
+"该节点是动画化属性的基本工具. ``Tween`` 可以在从开始到结束一定的持续时间内, "
+"动画化你想要的任何东西. 例如, 当角色受到伤害时, 它可以将 ``TextureProgress`` "
+"上的生命值从当前级别的值动画化为 ``Player`` 的新的 ``health`` 值."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
@@ -679,9 +680,9 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
-"点击 ``GUI`` 节点旁边的脚本图标以将其再次打开.``Number`` 节点需要文本来更新自"
-"身,``Bar`` 则需要浮点数或整数. 我们可以使用 ``interpolate_property`` 来动画化"
-"一个数字, 但不能直接动画化文本. 我们将使用它动画化一个名为 "
+"点击 ``GUI`` 节点旁边的脚本图标以将其再次打开. ``Number`` 节点需要文本来更新"
+"自身, ``Bar`` 则需要浮点数或整数. 我们可以使用 ``interpolate_property`` 来动"
+"画化一个数字, 但不能直接动画化文本. 我们将使用它动画化一个名为 "
 "``animated_health`` 的新 ``GUI`` 变量."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
@@ -706,7 +707,7 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
-"我们将以 ``self``, 即 ``GUI`` 节点上的 ``animated_health`` 为目标.``Tween`` "
+"我们将以 ``self``, 即 ``GUI`` 节点上的 ``animated_health`` 为目标. ``Tween`` "
 "的 ``interpolate_property`` 将以字符串接受属性名称. 这是我们把它写成 ``"
 "\"animated_health\"`` 的原因."
 
@@ -719,7 +720,7 @@ msgid ""
 msgstr ""
 "起点是该条形图的当前值. 我们仍然需要对这部分进行编码, 但它将是 "
 "``animated_health``. 动画的结束点是在 ``health_changed`` 之后的 ``Player`` "
-"的 ``health``: 即 ``new_value``.``0.6`` 是动画的持续时间, 以秒为单位."
+"的 ``health``: 即 ``new_value``. ``0.6`` 是动画的持续时间, 以秒为单位."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 msgid ""
@@ -741,8 +742,8 @@ msgid ""
 msgstr ""
 "尽管我们可以在 ``Player`` 上动画化 ``health`` 属性, 但我们不应该这样做. 角色"
 "受到打击时应该立即失去生命值. 这使得管理他们的状态变得容易得多, 比如知道他们"
-"何时死亡. 您总是希望将动画存储在单独的数据容器或节点中.``Tween`` 节点非常适合"
-"代码控制的动画. 对于手工制作的动画, 请查看 ``AnimationPlayer``."
+"何时死亡. 您总是希望将动画存储在单独的数据容器或节点中. ``Tween`` 节点非常适"
+"合代码控制的动画. 对于手工制作的动画, 请查看 ``AnimationPlayer``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 msgid "Assign the animated\\_health to the LifeBar"
@@ -753,12 +754,12 @@ msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
-"现在,``animated_health`` 变量动画化, 但是我们不再更新实际的 ``Bar`` 和 "
+"现在, ``animated_health`` 变量动画化, 但是我们不再更新实际的 ``Bar`` 和 "
 "``Number`` 节点. 让我们解决这个问题."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid "So far, the update\\_health method looks like this:"
-msgstr "到目前为止,``update_health`` 方法看起来像这样:"
+msgstr "到目前为止, ``update_health`` 方法看起来像这样:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 msgid ""
@@ -867,11 +868,11 @@ msgid ""
 msgstr ""
 "在连接信号窗口中, 再次连接到 ``GUI`` 节点. 节点的路径应该是 ``../../GUI`` 并"
 "且节点中的方法应该显示 ``_on_Player_died``. 保留创建函数选项启用并点击窗口底"
-"部的连接. 这将把您带到脚本工作区中的 ``GUI.gd`` 文件中."
+"部的连接. 这将把你带到脚本工作区中的 ``GUI.gd`` 文件中."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid "You should get these values in the Connecting Signal window"
-msgstr "您应该在连接信号窗口中获得这些值"
+msgstr "你应该在连接信号窗口中获得这些值"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
@@ -879,7 +880,7 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
-"您现在应该可以看到一种模式: 每当GUI需要新信息时, 我们都会发出新信号. 明智地使"
+"你现在应该可以看到一种模式: 每当GUI需要新信息时, 我们都会发出新信号. 明智地使"
 "用它们: 添加的连接越多, 跟踪起来就越困难."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
@@ -897,7 +898,7 @@ msgid ""
 "it, and modify it using a color with `modulate`."
 msgstr ""
 "``modulate`` 来自 ``CanvasItem`` 类, 所有2D和UI节点都继承自 ``CanvasItem`` . "
-"它允许您切换节点的可见性, 给它分配一个着色器, 然后用一个带有 ``modulate`` 的"
+"它允许你切换节点的可见性, 给它分配一个着色器, 然后用一个带有 ``modulate`` 的"
 "颜色来修改它."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
@@ -950,11 +951,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr "就是这样. 您现在可以玩游戏以查看最终结果！"
+msgstr "就是这样. 你现在可以玩游戏以查看最终结果！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 msgid "The final result. Congratulations for getting there!"
-msgstr "最终结果. 恭喜您做到了！"
+msgstr "最终结果. 恭喜你做到了！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 msgid ""
@@ -964,6 +965,6 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
-"使用完全相同的技术, 当 ``Player`` 中毒时, 您可以改变条状图的颜色, 当生命值降"
+"使用完全相同的技术, 当 ``Player`` 中毒时, 你可以改变条状图的颜色, 当生命值降"
 "低时将条状图变成红色, 当他们受到暴击时晃动UI……原理是一样的: 发出信号将信息从 "
 "``Player`` 转发到 ``GUI``, 然后让 ``GUI`` 对其进行处理."

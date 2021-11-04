@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,21 +53,24 @@ msgstr ""
 "functionality <doc_exporting_for_ios>` ,同时它也有更好的性能."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
-#, fuzzy
 msgid "WebGL version"
-msgstr "Godot 版本"
+msgstr "WebGL版本"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
 "or WebGL 2.0 (*GLES3*)."
 msgstr ""
+"根据你对渲染器的选择，Godot可以面向WebGL 1.0（*GLES2*）或WebGL "
+"2.0（*GLES3*）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "WebGL 1.0 is the recommended option if you want your project to be supported "
 "on all browsers with the best performance."
 msgstr ""
+"如果你想让你的项目在所有的浏览器上都得到支持，并且有最好的性能，建议选择"
+"WebGL 1.0。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
@@ -75,6 +78,8 @@ msgid ""
 "WebGL 2.0 can be subpar. Some features are also not supported in WebGL 2.0 "
 "specifically."
 msgstr ""
+"Godot的GLES3渲染器以高端设备为目标，使用WebGL 2.0的性能可能不理想。有些功能在"
+"WebGL 2.0中也不被特别支持。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
@@ -83,6 +88,10 @@ msgid ""
 "is not available yet for any **iOS** browser (all WebKit-based like Safari). "
 "See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details."
 msgstr ""
+"此外，虽然大多数浏览器都支持WebGL 2.0，但对于的 **Safari** 来说并不同。WebGL "
+"2.0支持将在MacOS的Safari 15中出现，而对于任何**iOS** 的浏览器来说还未支持（像"
+"Safari一样都是基于WebKit内核）。参阅 `Can I use WebGL 2.0 <https://caniuse."
+"com/webgl2>`__ 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid "Export options"
@@ -110,16 +119,16 @@ msgid ""
 msgstr "*Regular*: 跨浏览器的兼容性最好，不支持线程，也不支持GDNative。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
-#, fuzzy
 msgid ""
 "*Threads*: will require the browser to support `SharedArrayBuffer <https://"
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
 "SharedArrayBuffer>`__. See `Can I use SharedArrayBuffer <https://caniuse.com/"
 "sharedarraybuffer>`__ for details."
 msgstr ""
-"*线程*: 将要求浏览器支持 `共享数组缓冲区SharedArrayBuffer <https://developer."
-"mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
-"SharedArrayBuffer>`__"
+"*Threads*: 将要求浏览器支持 `SharedArrayBuffer <https://developer.mozilla."
+"org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
+"SharedArrayBuffer>`__ 。参阅 `Can I use SharedArrayBuffer <https://caniuse."
+"com/sharedarraybuffer>`__ 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
 msgid ""
@@ -489,10 +498,10 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
-"其他导出的文件在 ``.html`` 文件旁边, 按原样提供, 名称不变.``.wasm`` 文件是实"
-"现引擎的二进制WebAssembly模块.``.pck`` 文件是包含您的游戏的Godot主包.``.js`` "
-"文件包含启动代码, ``.html`` 文件使用它来访问引擎.``.png`` 文件包含启动画面图"
-"像. 默认HTML页面中未使用它, 但 :ref:`自定义HTML 页面 "
+"其他导出的文件在 ``.html`` 文件旁边, 按原样提供, 名称不变. ``.wasm`` 文件是实"
+"现引擎的二进制WebAssembly模块. ``.pck`` 文件是包含你的游戏的Godot主包. ``."
+"js`` 文件包含启动代码, ``.html`` 文件使用它来访问引擎. ``.png`` 文件包含启动"
+"画面图像. 默认HTML页面中未使用它, 但 :ref:`自定义HTML 页面 "
 "<doc_customizing_html5_shell>` 中包含了它."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:235
@@ -502,7 +511,7 @@ msgid ""
 "`application/wasm`."
 msgstr ""
 "``.pck`` 文件是二进制文件, 通常与MIME类型 :mimetype:`application/octet-"
-"stream` 一起分发.``.wasm`` 文件以 :mimetype:`application/wasm` 分发."
+"stream` 一起分发. ``.wasm`` 文件以 :mimetype:`application/wasm` 分发."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:239
 msgid ""

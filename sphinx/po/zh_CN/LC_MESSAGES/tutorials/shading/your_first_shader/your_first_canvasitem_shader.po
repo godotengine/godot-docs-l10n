@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "你的第一个画布项着色器"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:9
 msgid ""
@@ -162,10 +162,10 @@ msgid ""
 "functions are significantly more complex than vertex and fragment functions "
 "and so will not be covered here."
 msgstr ""
-"在Godot中, 你可以重写三个函数来控制着色器的运作, 它们是 ``vertex``(顶点函数),"
-"``fragment``(片段函数)和 ``light``(光照函数). 本教程会引导你写出一个包含顶点"
-"和片段函数的着色器. 因为光照函数比另外两个函数要复杂非常多, 所以在这里不会进"
-"行讲解."
+"在Godot中, 你可以重写三个函数来控制着色器的运作, 它们是 ``vertex`` (顶点函"
+"数), ``fragment`` (片段函数)和 ``light`` (光照函数). 本教程会引导你写出一个包"
+"含顶点和片段函数的着色器. 因为光照函数比另外两个函数要复杂非常多, 所以在这里"
+"不会进行讲解."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
 msgid "Your first fragment function"
@@ -199,9 +199,9 @@ msgid ""
 "``COLOR`` is both an input variable to the fragment function and the final "
 "output from it."
 msgstr ""
-"我们向内置变量 ``COLOR`` 中写入一个 ``vec4`` 来做到这点.``vec4`` 是创建一个四"
-"维向量的简写形式. 若想进一步了解向量, 请参阅 :ref:`向量数学教程 "
-"<doc_vector_math>`.``COLOR`` 变量既是片段函数的一个输入, 同时也是它的最终输"
+"我们向内置变量 ``COLOR`` 中写入一个 ``vec4`` 来做到这点. ``vec4`` 是创建一个"
+"四维向量的简写形式. 若想进一步了解向量, 请参阅 :ref:`向量数学教程 "
+"<doc_vector_math>`. ``COLOR`` 变量既是片段函数的一个输入, 同时也是它的最终输"
 "出."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:91
@@ -221,7 +221,7 @@ msgid ""
 "in your Sprite (without you knowing it!) and they tell the shader where to "
 "read from textures for each part of the mesh."
 msgstr ""
-"你可以使用片段函数中的很多输入来计算 ``COLOR``,``UV`` 就是其中的一个. 你的精"
+"你可以使用片段函数中的很多输入来计算 ``COLOR``, ``UV`` 就是其中的一个. 你的精"
 "灵指定了UV坐标(在你不知情的情况下！), 而它们告诉着色器, 对于网格的每个部分从"
 "纹理的何处读取信息."
 

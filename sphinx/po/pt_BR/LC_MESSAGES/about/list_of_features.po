@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,8 +116,8 @@ msgid "Editor"
 msgstr "Editor"
 
 #: ../../docs/about/list_of_features.rst:45
-#: ../../docs/about/list_of_features.rst:87
-#: ../../docs/about/list_of_features.rst:344
+#: ../../docs/about/list_of_features.rst:90
+#: ../../docs/about/list_of_features.rst:355
 msgid "**Features:**"
 msgstr "**Funcionalidades:**"
 
@@ -223,65 +223,65 @@ msgid "2D graphics"
 msgstr "Gráficos 2D"
 
 #: ../../docs/about/list_of_features.rst:80
-#: ../../docs/about/list_of_features.rst:144
+#: ../../docs/about/list_of_features.rst:147
 msgid "**Two renderers available:**"
 msgstr "**Dois tipos de renderizadores disponíveis:**"
 
 #: ../../docs/about/list_of_features.rst:82
-#: ../../docs/about/list_of_features.rst:147
+#: ../../docs/about/list_of_features.rst:149
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
 "Renderizador OpenGL ES 3.0 (utiliza OpenGL ES 3.3 em plataformas desktop)."
 
-#: ../../docs/about/list_of_features.rst:83
-#: ../../docs/about/list_of_features.rst:147
+#: ../../docs/about/list_of_features.rst:84
+#: ../../docs/about/list_of_features.rst:151
 msgid "High-end visuals. Recommended on desktop platforms."
 msgstr "Visuais de alta nível. Recomendado para plataformas desktop."
 
-#: ../../docs/about/list_of_features.rst:85
-#: ../../docs/about/list_of_features.rst:153
+#: ../../docs/about/list_of_features.rst:86
+#: ../../docs/about/list_of_features.rst:154
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
 "Renderizador OpenGL ES 2.0 (utiliza OpenGL ES 2.1 em plataformas desktop)."
 
-#: ../../docs/about/list_of_features.rst:85
-#: ../../docs/about/list_of_features.rst:150
+#: ../../docs/about/list_of_features.rst:88
+#: ../../docs/about/list_of_features.rst:156
 msgid "Recommended on mobile and Web platforms."
 msgstr "Recomendado para plataformas Web e dispositivos móveis."
 
-#: ../../docs/about/list_of_features.rst:89
+#: ../../docs/about/list_of_features.rst:92
 msgid "Sprite, polygon and line rendering."
 msgstr "Sprites, polígonos e renderização de linhas."
 
-#: ../../docs/about/list_of_features.rst:91
+#: ../../docs/about/list_of_features.rst:94
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
 "Ferramentas de alto-nível para desenhar linhas e polígnos tal como Line2D e "
 "Polygon2D."
 
-#: ../../docs/about/list_of_features.rst:93
+#: ../../docs/about/list_of_features.rst:96
 msgid "AnimatedSprite as a helper for creating animated sprites."
 msgstr "AnimatedSprite irá ajudar na criação de sprites animados."
 
-#: ../../docs/about/list_of_features.rst:94
+#: ../../docs/about/list_of_features.rst:97
 msgid "Parallax layers."
 msgstr "Camadas de parallax."
 
-#: ../../docs/about/list_of_features.rst:96
+#: ../../docs/about/list_of_features.rst:99
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
 msgstr ""
 "Suporte a Pseudo-3D duplicando automaticamente uma camada várias vezes."
 
-#: ../../docs/about/list_of_features.rst:98
+#: ../../docs/about/list_of_features.rst:101
 msgid "2D lighting with normal maps."
 msgstr "Iluminação 2D com mapas normais."
 
-#: ../../docs/about/list_of_features.rst:100
+#: ../../docs/about/list_of_features.rst:103
 msgid "Hard or soft shadows."
 msgstr "Sombras fortes e suaves."
 
-#: ../../docs/about/list_of_features.rst:102
+#: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
@@ -289,117 +289,118 @@ msgstr ""
 "Renderização de fonte utilizando bitmaps (BitmapFont) ou rasterização "
 "utilizando FreeType (DynamicFont)."
 
-#: ../../docs/about/list_of_features.rst:104
+#: ../../docs/about/list_of_features.rst:107
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
 "Fontes em bitmap podem ser exportadas utilizando ferramentas como BMFont."
 
-#: ../../docs/about/list_of_features.rst:105
+#: ../../docs/about/list_of_features.rst:108
+#, fuzzy
 msgid ""
-"DynamicFont supports monochrome fonts as well as colored fonts. Supported "
-"formats are TTF and OTF."
+"DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
+"emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
 "DynamicFont suporta fontes monocrómaticas bem como coloridas. Os formatos "
 "suportados são TTF e OTF."
 
-#: ../../docs/about/list_of_features.rst:107
+#: ../../docs/about/list_of_features.rst:110
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
 "DynamicFont suporta contornos opcionais para fontes, com ajustes de lagura e "
 "cor."
 
-#: ../../docs/about/list_of_features.rst:108
+#: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
 "Suporte para sobreamostragem de fontes, permitindo que elas fiquem nítidas "
 "mesmo em resoluções mais altas."
 
-#: ../../docs/about/list_of_features.rst:110
+#: ../../docs/about/list_of_features.rst:113
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
 "Particulas baseadas em GPU com suporte para shaders personalizados de "
 "particulas."
 
-#: ../../docs/about/list_of_features.rst:111
-#: ../../docs/about/list_of_features.rst:217
+#: ../../docs/about/list_of_features.rst:114
+#: ../../docs/about/list_of_features.rst:228
 msgid "CPU-based particles."
 msgstr "Partículas em CPU."
 
-#: ../../docs/about/list_of_features.rst:114
+#: ../../docs/about/list_of_features.rst:117
 msgid "2D tools"
 msgstr "Ferramentas 2D"
 
-#: ../../docs/about/list_of_features.rst:116
+#: ../../docs/about/list_of_features.rst:119
 msgid "2D camera with built-in smoothing and drag margins."
 msgstr "Camera 2D com margens e suavização integrados."
 
-#: ../../docs/about/list_of_features.rst:117
+#: ../../docs/about/list_of_features.rst:120
 msgid "Path2D node to represent a path in 2D space."
 msgstr "O Nó Path2D para representar caminhos dentro de um espaço 2D."
 
-#: ../../docs/about/list_of_features.rst:119
-#: ../../docs/about/list_of_features.rst:258
+#: ../../docs/about/list_of_features.rst:122
+#: ../../docs/about/list_of_features.rst:269
 msgid "Can be drawn in the editor or generated procedurally."
 msgstr "Pode ser desenhado através do editor ou gerado proceduralmente."
 
-#: ../../docs/about/list_of_features.rst:120
+#: ../../docs/about/list_of_features.rst:123
 msgid "PathFollow2D node to make nodes follow a Path2D."
 msgstr "O nó PathFollow2D para fazer os nós seguirem um Path2D."
 
-#: ../../docs/about/list_of_features.rst:122
+#: ../../docs/about/list_of_features.rst:125
 msgid "2D geometry helper class."
 msgstr "Classe auxiliar para geometria 2D."
 
-#: ../../docs/about/list_of_features.rst:123
+#: ../../docs/about/list_of_features.rst:126
 msgid "Line2D node to draw textured 2D lines."
 msgstr "O nó Line2D para desenhar linhas 2D texturizadas."
 
-#: ../../docs/about/list_of_features.rst:126
+#: ../../docs/about/list_of_features.rst:129
 msgid "2D physics"
 msgstr "Física 2D"
 
-#: ../../docs/about/list_of_features.rst:128
-#: ../../docs/about/list_of_features.rst:266
+#: ../../docs/about/list_of_features.rst:131
+#: ../../docs/about/list_of_features.rst:277
 msgid "**Physics bodies:**"
 msgstr "**Corpos com suporte a física:**"
 
-#: ../../docs/about/list_of_features.rst:130
-#: ../../docs/about/list_of_features.rst:268
+#: ../../docs/about/list_of_features.rst:133
+#: ../../docs/about/list_of_features.rst:279
 msgid "Static bodies."
 msgstr "Corpos estáticos."
 
-#: ../../docs/about/list_of_features.rst:131
-#: ../../docs/about/list_of_features.rst:269
+#: ../../docs/about/list_of_features.rst:134
+#: ../../docs/about/list_of_features.rst:280
 msgid "Rigid bodies."
 msgstr "Corpos rígidos."
 
-#: ../../docs/about/list_of_features.rst:132
-#: ../../docs/about/list_of_features.rst:270
+#: ../../docs/about/list_of_features.rst:135
+#: ../../docs/about/list_of_features.rst:281
 msgid "Kinematic bodies."
 msgstr "Corpos cinemáticos."
 
-#: ../../docs/about/list_of_features.rst:133
-#: ../../docs/about/list_of_features.rst:272
+#: ../../docs/about/list_of_features.rst:136
+#: ../../docs/about/list_of_features.rst:283
 msgid "Joints."
 msgstr "Articulações/Junções."
 
-#: ../../docs/about/list_of_features.rst:134
-#: ../../docs/about/list_of_features.rst:275
+#: ../../docs/about/list_of_features.rst:137
+#: ../../docs/about/list_of_features.rst:286
 msgid "Areas to detect bodies entering or leaving it."
 msgstr "Areas para detecção de entrada e saida de corpos."
 
-#: ../../docs/about/list_of_features.rst:136
-#: ../../docs/about/list_of_features.rst:277
+#: ../../docs/about/list_of_features.rst:139
+#: ../../docs/about/list_of_features.rst:288
 msgid "**Collision detection:**"
 msgstr "**Detecção de colisões:**"
 
-#: ../../docs/about/list_of_features.rst:138
+#: ../../docs/about/list_of_features.rst:141
 msgid "Built-in shapes: line, box, circle, capsule."
 msgstr "formas integradas: linha, caixa, circulo e capsula."
 
-#: ../../docs/about/list_of_features.rst:139
+#: ../../docs/about/list_of_features.rst:142
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
@@ -407,19 +408,19 @@ msgstr ""
 "Collision polygons (podem ser desenhados manualmente ou gerados a partir de "
 "um sprite pelo editor)."
 
-#: ../../docs/about/list_of_features.rst:142
+#: ../../docs/about/list_of_features.rst:145
 msgid "3D graphics"
 msgstr "Gráficos 3D"
 
-#: ../../docs/about/list_of_features.rst:148
+#: ../../docs/about/list_of_features.rst:152
 msgid "HDR rendering with sRGB."
 msgstr "Renderização de HDR com sRGB."
 
-#: ../../docs/about/list_of_features.rst:151
+#: ../../docs/about/list_of_features.rst:157
 msgid "LDR rendering for greater compatibility."
 msgstr "Renderização de LDR para melhor compatibilidade."
 
-#: ../../docs/about/list_of_features.rst:152
+#: ../../docs/about/list_of_features.rst:158
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
@@ -427,32 +428,32 @@ msgstr ""
 "Nem todos os recursos estãos disponiveis. Os recursos disponiveis apenas ao "
 "utilizar OpenGL ES 3.0 estaram marcados com *GLES3*."
 
-#: ../../docs/about/list_of_features.rst:155
+#: ../../docs/about/list_of_features.rst:161
 msgid "**Camera:**"
 msgstr "**Câmera:**"
 
-#: ../../docs/about/list_of_features.rst:157
+#: ../../docs/about/list_of_features.rst:163
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Câmeras em perspectiva, ortográfica e deslocamento de tronco."
 
-#: ../../docs/about/list_of_features.rst:159
+#: ../../docs/about/list_of_features.rst:165
 msgid "**Physically-based rendering:**"
 msgstr "**Renderização baseada em física:**"
 
-#: ../../docs/about/list_of_features.rst:161
+#: ../../docs/about/list_of_features.rst:167
 msgid "Follows the Disney PBR model."
 msgstr "Segue o modelo Disney PBR."
 
-#: ../../docs/about/list_of_features.rst:162
+#: ../../docs/about/list_of_features.rst:168
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 "Utiliza o fluxo de trabalho roughness-metallic com suporte para texturas ORM."
 
-#: ../../docs/about/list_of_features.rst:163
+#: ../../docs/about/list_of_features.rst:169
 msgid "Normal mapping."
 msgstr "Mapeamento Normal."
 
-#: ../../docs/about/list_of_features.rst:164
+#: ../../docs/about/list_of_features.rst:170
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
@@ -460,15 +461,15 @@ msgstr ""
 "*GLES3:* Mapeamento de Paralaxe/Relevo com níveis de detalhamento automático "
 "baseado na distancia."
 
-#: ../../docs/about/list_of_features.rst:165
+#: ../../docs/about/list_of_features.rst:171
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "*GLES3:* Dispersão e transmissão da sub-superfície."
 
-#: ../../docs/about/list_of_features.rst:166
+#: ../../docs/about/list_of_features.rst:172
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "*GLES3:* Desvanecimento de proximidade (partículas suaves)."
 
-#: ../../docs/about/list_of_features.rst:167
+#: ../../docs/about/list_of_features.rst:173
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
@@ -476,31 +477,31 @@ msgstr ""
 "O esmaecimento de distância pode usar mistura alfa ou matização para evitar "
 "passar pelo [i]pipeline[/i] transparente."
 
-#: ../../docs/about/list_of_features.rst:169
+#: ../../docs/about/list_of_features.rst:175
 msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr "A matização pode ser determinada com bases em pixel ou objeto."
 
-#: ../../docs/about/list_of_features.rst:171
+#: ../../docs/about/list_of_features.rst:177
 msgid "**Real-time lighting:**"
 msgstr "**Iluminação em tempo real:**"
 
-#: ../../docs/about/list_of_features.rst:173
+#: ../../docs/about/list_of_features.rst:179
 msgid "Directional lights (sun/moon). Up to 4 per scene."
 msgstr "Luzes direcionadas (sol/lua). Até 4 por cena."
 
-#: ../../docs/about/list_of_features.rst:174
+#: ../../docs/about/list_of_features.rst:180
 msgid "Omnidirectional lights."
 msgstr "Luzes unidirecionais."
 
-#: ../../docs/about/list_of_features.rst:175
+#: ../../docs/about/list_of_features.rst:181
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Focos de luz com ajuste de angulo por cone e atenuação."
 
-#: ../../docs/about/list_of_features.rst:177
+#: ../../docs/about/list_of_features.rst:183
 msgid "**Shadow mapping:**"
 msgstr "**Mapeamento de sombras:**"
 
-#: ../../docs/about/list_of_features.rst:179
+#: ../../docs/about/list_of_features.rst:185
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
@@ -508,7 +509,7 @@ msgstr ""
 "*Luz Direcional:* Ortagonal (mais rápida), PSSM 2 divisões e 4 divisões. "
 "Suporta mesclagem entre divisões."
 
-#: ../../docs/about/list_of_features.rst:181
+#: ../../docs/about/list_of_features.rst:187
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
@@ -516,37 +517,50 @@ msgstr ""
 "*OmniLight:* Parabolóide duplo (rápido) ou mapa do cubo (mais lento, porém "
 "mais preciso ). Suporta texturas de projeção de cores na forma de panoramas."
 
-#: ../../docs/about/list_of_features.rst:183
+#: ../../docs/about/list_of_features.rst:189
 msgid "*SpotLight:* Single texture."
 msgstr "*Destaque:* Testura única."
 
-#: ../../docs/about/list_of_features.rst:185
+#: ../../docs/about/list_of_features.rst:191
 msgid "**Global illumination with indirect lighting:**"
 msgstr "**Iluminação global por luzes indiretas:**"
 
-#: ../../docs/about/list_of_features.rst:187
+#: ../../docs/about/list_of_features.rst:193
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
 "Lightmaps previamente calculados (rápido, mas não pode ser atualizado "
 "durante a execução)."
 
-#: ../../docs/about/list_of_features.rst:189
+#: ../../docs/about/list_of_features.rst:195
+msgid ""
+"Supports baking indirect light only or baking both direct and indirect "
+"lighting. The bake mode can be adjusted on a per-light basis to allow for "
+"hybrid light baking setups."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:198
+msgid ""
+"Supports lighting dynamic objects using an automatic octree-based system. No "
+"manual probe placement is required."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."
 msgstr "Lightmaps são previamente calculados na CPU."
 
-#: ../../docs/about/list_of_features.rst:191
+#: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr "*GLES3:* GI probes (mais lento, semi-tempo real). Suporta reflexões."
 
-#: ../../docs/about/list_of_features.rst:193
+#: ../../docs/about/list_of_features.rst:204
 msgid "**Reflections:**"
 msgstr "**Opções de execução:**"
 
-#: ../../docs/about/list_of_features.rst:195
+#: ../../docs/about/list_of_features.rst:206
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
 msgstr "*GLES3:* Reflexões baseadas em Voxel (ao utilizar GI probes)."
 
-#: ../../docs/about/list_of_features.rst:196
+#: ../../docs/about/list_of_features.rst:207
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
@@ -555,39 +569,42 @@ msgstr ""
 "usando ReflectionProbe. A correção de paralaxe pode ser ativada "
 "opcionalmente."
 
-#: ../../docs/about/list_of_features.rst:198
+#: ../../docs/about/list_of_features.rst:209
 msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Reflexões de Screen-space."
 
-#: ../../docs/about/list_of_features.rst:199
-msgid "Reflection techniques can be mixed together for greater accuracy."
+#: ../../docs/about/list_of_features.rst:210
+#, fuzzy
+msgid ""
+"Reflection techniques can be mixed together for greater accuracy or "
+"scalability."
 msgstr "Técnicas de reflexão podem ser combinadas para maior precisão."
 
-#: ../../docs/about/list_of_features.rst:201
+#: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
 msgstr "**Céu:**"
 
-#: ../../docs/about/list_of_features.rst:203
+#: ../../docs/about/list_of_features.rst:214
 msgid "Panorama sky (using an HDRI)."
 msgstr "Céu de Panorama (utilizando HDRI)."
 
-#: ../../docs/about/list_of_features.rst:204
+#: ../../docs/about/list_of_features.rst:215
 msgid "Procedural sky."
 msgstr "Céu procedural."
 
-#: ../../docs/about/list_of_features.rst:206
+#: ../../docs/about/list_of_features.rst:217
 msgid "**Fog:**"
 msgstr "**Neblina:**"
 
-#: ../../docs/about/list_of_features.rst:208
+#: ../../docs/about/list_of_features.rst:219
 msgid "Depth fog with an adjustable attenuation curve."
 msgstr "Profundidade da neblina com ajuste de curva de atenuação."
 
-#: ../../docs/about/list_of_features.rst:209
+#: ../../docs/about/list_of_features.rst:220
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
 msgstr "Altura da neblina (Chão ou teto) com ajuste de atenuação."
 
-#: ../../docs/about/list_of_features.rst:210
+#: ../../docs/about/list_of_features.rst:221
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
@@ -595,47 +612,47 @@ msgstr ""
 "Suporte para auto coloração de neblina a depender da direção da câmera (para "
 "se ajustar de acordo com a cor do sol)."
 
-#: ../../docs/about/list_of_features.rst:212
+#: ../../docs/about/list_of_features.rst:223
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 "Transmissão opcional para fazer com que as luzes sejam mais visíveis quando "
 "com neblina."
 
-#: ../../docs/about/list_of_features.rst:214
+#: ../../docs/about/list_of_features.rst:225
 msgid "**Particles:**"
 msgstr "**Partículas:**"
 
-#: ../../docs/about/list_of_features.rst:216
+#: ../../docs/about/list_of_features.rst:227
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 "*GLES3:* Partículas baseados em GPU com suporte para shaders de partículas "
 "personalizado."
 
-#: ../../docs/about/list_of_features.rst:219
+#: ../../docs/about/list_of_features.rst:230
 msgid "**Post-processing:**"
 msgstr "**Pós-processamento:**"
 
-#: ../../docs/about/list_of_features.rst:221
+#: ../../docs/about/list_of_features.rst:232
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Mapeio de Tons (Linear, Reinhard, Filmic, ACES)."
 
-#: ../../docs/about/list_of_features.rst:222
+#: ../../docs/about/list_of_features.rst:233
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
 "*GLES3:* Ajustes de exposição automáticos baseado no brilho da janela de "
 "visualização."
 
-#: ../../docs/about/list_of_features.rst:223
+#: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* Near and far depth of field."
 msgstr "*GLES3:* Profundidade de campo próxima e distante."
 
-#: ../../docs/about/list_of_features.rst:224
+#: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr ""
 "*GLES3:* Screen-space ambient occlusion (SSAO - Oclusão de ambiente do "
 "espaço da tela)."
 
-#: ../../docs/about/list_of_features.rst:225
+#: ../../docs/about/list_of_features.rst:236
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
@@ -643,7 +660,7 @@ msgstr ""
 "*GLES3:* Debanding opcional para evitar color banding (efetiva quando a "
 "renderização HDR está ativa)."
 
-#: ../../docs/about/list_of_features.rst:226
+#: ../../docs/about/list_of_features.rst:237
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -651,56 +668,56 @@ msgstr ""
 "Brilho/Bloom com escala bicúbica opcional e vários modos de combinação "
 "disponíveis: Tela, Luz Suave, Subexposição Linear, Substituir."
 
-#: ../../docs/about/list_of_features.rst:228
+#: ../../docs/about/list_of_features.rst:239
 msgid "Color correction using an one-dimensional ramp."
 msgstr "Correção de cor de rampa unidimensional."
 
-#: ../../docs/about/list_of_features.rst:229
+#: ../../docs/about/list_of_features.rst:240
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "Ajustes de brilho, contraste e saturação."
 
-#: ../../docs/about/list_of_features.rst:231
+#: ../../docs/about/list_of_features.rst:242
 msgid "**Texture filtering:**"
 msgstr "**Filtragem de textura**"
 
-#: ../../docs/about/list_of_features.rst:233
+#: ../../docs/about/list_of_features.rst:244
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
 msgstr "Filtragem mais próxima, bilinear, trilinear ou anisotrópica."
 
-#: ../../docs/about/list_of_features.rst:235
+#: ../../docs/about/list_of_features.rst:246
 msgid "**Texture compression:**"
 msgstr "**Compressão de Textura:**"
 
-#: ../../docs/about/list_of_features.rst:237
+#: ../../docs/about/list_of_features.rst:248
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
 "*GLES3:* BPTC para compressão de alta qualidade (não é compatível com macOS)."
 
-#: ../../docs/about/list_of_features.rst:238
+#: ../../docs/about/list_of_features.rst:249
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (não é compatível com macOS)."
 
-#: ../../docs/about/list_of_features.rst:239
+#: ../../docs/about/list_of_features.rst:250
 msgid "ETC1 (recommended when using the GLES2 renderer)."
 msgstr "ETC1 (recomendado ao utilizar o renderizador GLES2)."
 
-#: ../../docs/about/list_of_features.rst:240
+#: ../../docs/about/list_of_features.rst:251
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
 msgstr "*GLES3:* S3TC (não é compatível com as plataformas móveis/Web)."
 
-#: ../../docs/about/list_of_features.rst:242
+#: ../../docs/about/list_of_features.rst:253
 msgid "**Anti-aliasing:**"
 msgstr "**antisserrilhamento:**"
 
-#: ../../docs/about/list_of_features.rst:244
+#: ../../docs/about/list_of_features.rst:255
 msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antisserrilhado (MSAA) de várias amostras."
 
-#: ../../docs/about/list_of_features.rst:245
+#: ../../docs/about/list_of_features.rst:256
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Antialiasing aproximado rápido (FXAA)."
 
-#: ../../docs/about/list_of_features.rst:247
+#: ../../docs/about/list_of_features.rst:258
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
@@ -709,23 +726,23 @@ msgstr ""
 "melhorar ainda mais a qualidade. Isso pode ser útil ao usar o Godot para "
 "renderização offline."
 
-#: ../../docs/about/list_of_features.rst:251
+#: ../../docs/about/list_of_features.rst:262
 msgid "3D tools"
 msgstr "Ferramentas 3D"
 
-#: ../../docs/about/list_of_features.rst:253
+#: ../../docs/about/list_of_features.rst:264
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 "Malhas integradas: cubo, cilindro/cone, (hemi) esfera, prisma, plano, quad."
 
-#: ../../docs/about/list_of_features.rst:254
+#: ../../docs/about/list_of_features.rst:265
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
 msgstr ""
 "Ferramentas para :ref:`geração de geometria procedural "
 "<doc_procedural_geometry>`."
 
-#: ../../docs/about/list_of_features.rst:255
+#: ../../docs/about/list_of_features.rst:266
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
@@ -733,114 +750,113 @@ msgstr ""
 ":ref:`Geometria sólida construtiva <doc_csg_tools>` (destinado para criação "
 "de protótipos)."
 
-#: ../../docs/about/list_of_features.rst:256
+#: ../../docs/about/list_of_features.rst:267
 msgid "Path3D node to represent a path in 3D space."
 msgstr "Nó Path3D para representar um caminho no espaço 3D."
 
-#: ../../docs/about/list_of_features.rst:259
+#: ../../docs/about/list_of_features.rst:270
 msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr "Nó PathFollow3D para fazer com que os nós sigam um Path3D."
 
-#: ../../docs/about/list_of_features.rst:261
+#: ../../docs/about/list_of_features.rst:272
 msgid "3D geometry helper class."
 msgstr "Classe auxiliar de geometria 3D."
 
-#: ../../docs/about/list_of_features.rst:264
+#: ../../docs/about/list_of_features.rst:275
 msgid "3D physics"
 msgstr "Física 3D"
 
-#: ../../docs/about/list_of_features.rst:271
+#: ../../docs/about/list_of_features.rst:282
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr ""
 "Corpos de veículos (destinado para físicas arcade, não para simulação)."
 
-#: ../../docs/about/list_of_features.rst:273
+#: ../../docs/about/list_of_features.rst:284
 msgid "Soft bodies."
 msgstr "Corpos macios."
 
-#: ../../docs/about/list_of_features.rst:274
+#: ../../docs/about/list_of_features.rst:285
 msgid "Ragdolls."
 msgstr "Ragdolls."
 
-#: ../../docs/about/list_of_features.rst:279
+#: ../../docs/about/list_of_features.rst:290
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr "Formas pré-construídas: cubo, esfera, cápsula, cilindro."
 
-#: ../../docs/about/list_of_features.rst:280
+#: ../../docs/about/list_of_features.rst:291
 msgid "Generate triangle collision shapes for any mesh from the editor."
 msgstr "Gerar formas de colisão triangulares para qualquer malha pelo editor."
 
-#: ../../docs/about/list_of_features.rst:281
+#: ../../docs/about/list_of_features.rst:292
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
 "Gerar uma ou várias formas de colisão convexas para qualquer malha pelo "
 "editor."
 
-#: ../../docs/about/list_of_features.rst:284
+#: ../../docs/about/list_of_features.rst:295
 msgid "Shaders"
 msgstr "Shaders"
 
-#: ../../docs/about/list_of_features.rst:286
+#: ../../docs/about/list_of_features.rst:297
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* Shaders de vertíce, fragmento e luz personalizados."
 
-#: ../../docs/about/list_of_features.rst:287
+#: ../../docs/about/list_of_features.rst:298
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Shaders personalizados para vértices, fragmentos, luzes e céu."
 
-#: ../../docs/about/list_of_features.rst:288
-#, fuzzy
+#: ../../docs/about/list_of_features.rst:299
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-"Shaders baseados em texto usando uma `linguagem de shader inspirada em GLSL "
-"<doc_shading_language>`."
+"Shaders baseados em texto usando uma :ref:`linguagem de shader inspirada em "
+"GLSL <doc_shading_language>`."
 
-#: ../../docs/about/list_of_features.rst:289
+#: ../../docs/about/list_of_features.rst:300
 msgid "Visual shader editor."
 msgstr "Editor visual de shaders."
 
-#: ../../docs/about/list_of_features.rst:291
+#: ../../docs/about/list_of_features.rst:302
 msgid "Support for visual shader plugins."
 msgstr "Suporte para plugins visuais de shader."
 
-#: ../../docs/about/list_of_features.rst:294
+#: ../../docs/about/list_of_features.rst:305
 msgid "Scripting"
 msgstr "Scripting"
 
-#: ../../docs/about/list_of_features.rst:296
+#: ../../docs/about/list_of_features.rst:307
 msgid "**General:**"
 msgstr "**Geral:**"
 
-#: ../../docs/about/list_of_features.rst:298
+#: ../../docs/about/list_of_features.rst:309
 msgid "Object-oriented design pattern with scripts extending nodes."
 msgstr "Padrão de design orientado a objetos com scripts que estendem nós."
 
-#: ../../docs/about/list_of_features.rst:299
+#: ../../docs/about/list_of_features.rst:310
 msgid "Signals and groups for communicating between scripts."
 msgstr "Sinais e grupos para comunicação entre scripts."
 
-#: ../../docs/about/list_of_features.rst:300
+#: ../../docs/about/list_of_features.rst:311
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
 "Suporte para :ref:`scripting entre linguagens "
 "<doc_cross_language_scripting>`."
 
-#: ../../docs/about/list_of_features.rst:301
+#: ../../docs/about/list_of_features.rst:312
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
 msgstr ""
 "Diversos tipos de dados de algebra linear 2D e 3D como vetores e "
 "transformações."
 
-#: ../../docs/about/list_of_features.rst:303
+#: ../../docs/about/list_of_features.rst:314
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
-#: ../../docs/about/list_of_features.rst:305
+#: ../../docs/about/list_of_features.rst:316
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
@@ -848,15 +864,15 @@ msgstr ""
 ":ref:`Linguagem interpretada de alto nível <doc_gdscript>` com :ref:`tipagem "
 "estática opcional <doc_gdscript_static_typing>`."
 
-#: ../../docs/about/list_of_features.rst:307
+#: ../../docs/about/list_of_features.rst:318
 msgid "Syntax inspired by Python."
 msgstr "Sintaxe inspirada em Python."
 
-#: ../../docs/about/list_of_features.rst:308
+#: ../../docs/about/list_of_features.rst:319
 msgid "Syntax highlighting is provided on GitHub."
 msgstr "Destaque de sintaxe é providenciado no GitHub."
 
-#: ../../docs/about/list_of_features.rst:309
+#: ../../docs/about/list_of_features.rst:320
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
@@ -864,47 +880,47 @@ msgstr ""
 ":ref:`Usa threads <doc_using_multiple_threads>`para executar ações "
 "assíncronas ou fazer uso de múltiplos núcleos de processador."
 
-#: ../../docs/about/list_of_features.rst:312
+#: ../../docs/about/list_of_features.rst:323
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
 msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
-#: ../../docs/about/list_of_features.rst:314
+#: ../../docs/about/list_of_features.rst:325
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
 "Empacotado em um binário separado para manter os tamanhos de arquivo e "
 "dependências pequeno."
 
-#: ../../docs/about/list_of_features.rst:315
+#: ../../docs/about/list_of_features.rst:326
 msgid "Uses Mono 6.x."
 msgstr "Usa Mono 6.x."
 
-#: ../../docs/about/list_of_features.rst:317
+#: ../../docs/about/list_of_features.rst:328
 msgid "Full support for the C# 7.0 syntax and features."
 msgstr "Suporte completo para a sintaxe e funcionalidades do C# 7.0."
 
-#: ../../docs/about/list_of_features.rst:319
+#: ../../docs/about/list_of_features.rst:330
 msgid "Supports all platforms."
 msgstr "Suporta todas as plataformas."
 
-#: ../../docs/about/list_of_features.rst:320
+#: ../../docs/about/list_of_features.rst:331
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
 msgstr ""
 "Utilizar um editor externo é recomendado para ter benefícios de "
 "funcionalidades de IDE."
 
-#: ../../docs/about/list_of_features.rst:322
+#: ../../docs/about/list_of_features.rst:333
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
-#: ../../docs/about/list_of_features.rst:324
+#: ../../docs/about/list_of_features.rst:335
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
 ":ref:`Linguagem de programação visual baseada em diagramas "
 "<doc_what_is_visual_script>`."
 
-#: ../../docs/about/list_of_features.rst:325
+#: ../../docs/about/list_of_features.rst:336
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
@@ -912,11 +928,11 @@ msgstr ""
 "Funciona melhor quando utilizado para propósitos específicos (como lógica "
 "específica por nível) do que como uma linguagem para criar projetos inteiros."
 
-#: ../../docs/about/list_of_features.rst:328
+#: ../../docs/about/list_of_features.rst:339
 msgid "**GDNative (C, C++, Rust, D, ...):**"
 msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
-#: ../../docs/about/list_of_features.rst:330
+#: ../../docs/about/list_of_features.rst:341
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
@@ -924,7 +940,7 @@ msgstr ""
 "Quando necessário, conecte a bibliotecas nativas para melhor desempenho e "
 "integração com terceiros."
 
-#: ../../docs/about/list_of_features.rst:332
+#: ../../docs/about/list_of_features.rst:343
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
@@ -932,16 +948,16 @@ msgstr ""
 "Para programar a lógica do jogo, GDScript ou C# são recomendados, caso sua "
 "performance seja adequada."
 
-#: ../../docs/about/list_of_features.rst:335
+#: ../../docs/about/list_of_features.rst:346
 msgid "Official bindings for C and C++."
 msgstr "Vinculações oficiais para C e C++."
 
-#: ../../docs/about/list_of_features.rst:337
+#: ../../docs/about/list_of_features.rst:348
 msgid "Use any build system and language features you wish."
 msgstr ""
 "Use qualquer build system e funcionalidades da linguagem que você quiser."
 
-#: ../../docs/about/list_of_features.rst:339
+#: ../../docs/about/list_of_features.rst:350
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
@@ -949,23 +965,23 @@ msgstr ""
 "Vínculos mantidos de D, Kotlin, Python, Nim e Rust fornecidos pela "
 "comunidade."
 
-#: ../../docs/about/list_of_features.rst:342
+#: ../../docs/about/list_of_features.rst:353
 msgid "Audio"
 msgstr "Áudio"
 
-#: ../../docs/about/list_of_features.rst:346
+#: ../../docs/about/list_of_features.rst:357
 msgid "Mono, stereo, 5.1 and 7.1 output."
 msgstr "Mono, estéreo, saídas 5.1 e 7.1."
 
-#: ../../docs/about/list_of_features.rst:347
+#: ../../docs/about/list_of_features.rst:358
 msgid "Non-positional and positional playback in 2D and 3D."
 msgstr "Reprodução não-posicional e posicional em 2D e 3D."
 
-#: ../../docs/about/list_of_features.rst:349
+#: ../../docs/about/list_of_features.rst:360
 msgid "Optional Doppler effect in 2D and 3D."
 msgstr "Efeito Doppler opcional em 2D e 3D."
 
-#: ../../docs/about/list_of_features.rst:351
+#: ../../docs/about/list_of_features.rst:362
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
@@ -973,12 +989,12 @@ msgstr ""
 "Suporte para :ref:`barramentos de áudio <doc_audio_buses>` redirecionáveis e "
 "efeitos com dezenas de efeitos inclusos."
 
-#: ../../docs/about/list_of_features.rst:353
+#: ../../docs/about/list_of_features.rst:364
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
 msgstr "Node Listener3D para escutar de uma posição diferente da câmera em 3D."
 
-#: ../../docs/about/list_of_features.rst:354
+#: ../../docs/about/list_of_features.rst:365
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
@@ -986,73 +1002,73 @@ msgstr ""
 "Entrada de áudio para gravar microfones com acesso em tempo real usando a "
 "classe AudioEffectCapture."
 
-#: ../../docs/about/list_of_features.rst:355
+#: ../../docs/about/list_of_features.rst:366
 msgid "MIDI input."
 msgstr "Entrada MIDI."
 
-#: ../../docs/about/list_of_features.rst:357
+#: ../../docs/about/list_of_features.rst:368
 msgid "No support for MIDI output yet."
 msgstr "Sem suporte para saída MIDI por enquanto."
 
-#: ../../docs/about/list_of_features.rst:359
+#: ../../docs/about/list_of_features.rst:370
 msgid "**APIs used:**"
 msgstr "**APIs utilizadas:**"
 
-#: ../../docs/about/list_of_features.rst:361
+#: ../../docs/about/list_of_features.rst:372
 msgid "*Windows:* WASAPI."
 msgstr "*Windows:* WASAPI."
 
-#: ../../docs/about/list_of_features.rst:362
+#: ../../docs/about/list_of_features.rst:373
 msgid "*macOS:* CoreAudio."
 msgstr "*macOS:* CoreAudio."
 
-#: ../../docs/about/list_of_features.rst:363
+#: ../../docs/about/list_of_features.rst:374
 msgid "*Linux:* PulseAudio or ALSA."
 msgstr "*Linux:* PulseAudio ou ALSA."
 
-#: ../../docs/about/list_of_features.rst:366
+#: ../../docs/about/list_of_features.rst:377
 msgid "Import"
 msgstr "Importar"
 
-#: ../../docs/about/list_of_features.rst:368
+#: ../../docs/about/list_of_features.rst:379
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr ""
 "Suporte para :ref:`plugins de importação personalizados "
 "<doc_import_plugins>`."
 
-#: ../../docs/about/list_of_features.rst:370
+#: ../../docs/about/list_of_features.rst:381
 msgid "**Formats:**"
 msgstr "**Formatos:**"
 
-#: ../../docs/about/list_of_features.rst:372
+#: ../../docs/about/list_of_features.rst:383
 msgid "*Images:* See :ref:`doc_import_images`."
 msgstr "*Imagens:* Veja :ref:`doc_import_images`."
 
-#: ../../docs/about/list_of_features.rst:373
+#: ../../docs/about/list_of_features.rst:384
 msgid "*Audio:*"
 msgstr "*Áudio:*"
 
-#: ../../docs/about/list_of_features.rst:375
+#: ../../docs/about/list_of_features.rst:386
 msgid "WAV with optional IMA-ADPCM compression."
 msgstr "WAV com compressão IMA-ADPCM opcional."
 
-#: ../../docs/about/list_of_features.rst:376
+#: ../../docs/about/list_of_features.rst:387
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis."
 
-#: ../../docs/about/list_of_features.rst:377
+#: ../../docs/about/list_of_features.rst:388
 msgid "MP3."
 msgstr "MP3."
 
-#: ../../docs/about/list_of_features.rst:379
+#: ../../docs/about/list_of_features.rst:390
 msgid "*3D scenes:*"
 msgstr "*Cenas 3D:*"
 
-#: ../../docs/about/list_of_features.rst:381
+#: ../../docs/about/list_of_features.rst:392
 msgid "glTF 2.0 *(recommended)*."
 msgstr "glTF 2.0 *(recomendado)*."
 
-#: ../../docs/about/list_of_features.rst:382
+#: ../../docs/about/list_of_features.rst:393
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
@@ -1060,25 +1076,25 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (exportação "
 "direta do Blender)."
 
-#: ../../docs/about/list_of_features.rst:384
+#: ../../docs/about/list_of_features.rst:395
 msgid "FBX (experimental)."
 msgstr "FBX (experimental)."
 
-#: ../../docs/about/list_of_features.rst:385
+#: ../../docs/about/list_of_features.rst:396
 msgid "Collada (.dae)."
 msgstr "Collada (.dae)."
 
-#: ../../docs/about/list_of_features.rst:386
+#: ../../docs/about/list_of_features.rst:397
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
 "Wavefront OBJ (apenas cenas estáticas, pode ser carregado diretamente como "
 "uma malha)."
 
-#: ../../docs/about/list_of_features.rst:389
+#: ../../docs/about/list_of_features.rst:400
 msgid "Input"
 msgstr "Entrada"
 
-#: ../../docs/about/list_of_features.rst:391
+#: ../../docs/about/list_of_features.rst:402
 msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
@@ -1086,7 +1102,7 @@ msgstr ""
 "Sistema de mapeamento de entrada usando eventos de entrada codificados ou "
 "ações de entrada remapeáveis."
 
-#: ../../docs/about/list_of_features.rst:393
+#: ../../docs/about/list_of_features.rst:404
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
@@ -1094,15 +1110,15 @@ msgstr ""
 "Valores de eixo podem ser mapeados em duas ações diferentes com uma zona "
 "morta configurável."
 
-#: ../../docs/about/list_of_features.rst:394
+#: ../../docs/about/list_of_features.rst:405
 msgid "Use the same code to support both keyboards and gamepads."
 msgstr "Usar o mesmo código para dar suporte à teclados e gamepads."
 
-#: ../../docs/about/list_of_features.rst:396
+#: ../../docs/about/list_of_features.rst:407
 msgid "Keyboard input."
 msgstr "Entrada de Teclado."
 
-#: ../../docs/about/list_of_features.rst:398
+#: ../../docs/about/list_of_features.rst:409
 msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
@@ -1110,11 +1126,11 @@ msgstr ""
 "Teclas podem ser mapeadas em modo \"físico\" para serem independentes do "
 "layout do teclado."
 
-#: ../../docs/about/list_of_features.rst:400
+#: ../../docs/about/list_of_features.rst:411
 msgid "Mouse input."
 msgstr "Entrada de Mouse."
 
-#: ../../docs/about/list_of_features.rst:402
+#: ../../docs/about/list_of_features.rst:413
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
@@ -1122,7 +1138,7 @@ msgstr ""
 "O cursor do mouse pode ser visível, escondido, capturado ou confinado dentro "
 "da janela."
 
-#: ../../docs/about/list_of_features.rst:403
+#: ../../docs/about/list_of_features.rst:414
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
@@ -1130,86 +1146,86 @@ msgstr ""
 "Quando capturada, a entrada bruta será usada no Windows e no Linux para "
 "contornar as configurações de aceleração do mouse do sistema operacional."
 
-#: ../../docs/about/list_of_features.rst:406
+#: ../../docs/about/list_of_features.rst:417
 msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr "Entrada por gamepad (até 8 controles simultâneos)."
 
-#: ../../docs/about/list_of_features.rst:407
+#: ../../docs/about/list_of_features.rst:418
 msgid "Pen/tablet input with pressure support."
 msgstr "Entrada de caneta/tablet com suporte a pressão."
 
-#: ../../docs/about/list_of_features.rst:408
+#: ../../docs/about/list_of_features.rst:419
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
 "Suporte para entrada de gamepad, teclado e mouse também estão disponíveis no "
 "Android."
 
-#: ../../docs/about/list_of_features.rst:411
+#: ../../docs/about/list_of_features.rst:422
 msgid "Navigation"
 msgstr "Navegação"
 
-#: ../../docs/about/list_of_features.rst:413
+#: ../../docs/about/list_of_features.rst:424
 msgid "A* algorithm in 2D and 3D."
 msgstr "Algoritmo A* em 2D e 3D."
 
-#: ../../docs/about/list_of_features.rst:414
+#: ../../docs/about/list_of_features.rst:425
 msgid "Navigation meshes."
 msgstr "Malhas de Navegação."
 
-#: ../../docs/about/list_of_features.rst:415
+#: ../../docs/about/list_of_features.rst:427
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
 msgstr "Suporte para evasão de obstáculos dinâmica planejada para o Godot 4.0."
 
-#: ../../docs/about/list_of_features.rst:416
+#: ../../docs/about/list_of_features.rst:429
 msgid "Generate navigation meshes from the editor."
 msgstr "Gerar malhas de navegação pelo editor."
 
-#: ../../docs/about/list_of_features.rst:419
+#: ../../docs/about/list_of_features.rst:432
 msgid "Networking"
 msgstr "Trabalho em rede"
 
-#: ../../docs/about/list_of_features.rst:421
+#: ../../docs/about/list_of_features.rst:434
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
 msgstr "Networking TCP de baixo nível usando StreamPeer e TCP_Server."
 
-#: ../../docs/about/list_of_features.rst:422
+#: ../../docs/about/list_of_features.rst:435
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
 msgstr "Networking UDP de baixo nível usando PacketPeer e UDPServer."
 
-#: ../../docs/about/list_of_features.rst:423
+#: ../../docs/about/list_of_features.rst:436
 msgid "Low-level HTTP requests using HTTPClient."
 msgstr "Requisições HTTP de baixo nível utilizando HTTPClient."
 
-#: ../../docs/about/list_of_features.rst:424
+#: ../../docs/about/list_of_features.rst:437
 msgid "High-level HTTP requests using HTTPRequest."
 msgstr "Requisições HTTP de alto nível utilizando HTTPRequest."
 
-#: ../../docs/about/list_of_features.rst:426
+#: ../../docs/about/list_of_features.rst:439
 msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr "Suporta HTTPS pronto para uso usando certificados inclusos."
 
-#: ../../docs/about/list_of_features.rst:428
+#: ../../docs/about/list_of_features.rst:441
 msgid "High-level multiplayer API using UDP and ENet."
 msgstr "API multijogador de alto nível utilizando UDP e ENet."
 
-#: ../../docs/about/list_of_features.rst:430
+#: ../../docs/about/list_of_features.rst:443
 msgid "Automatic replication using remote procedure calls (RPCs)."
 msgstr "Replicação automática usando chamadas de procedimento remotas (RPCs)."
 
-#: ../../docs/about/list_of_features.rst:431
+#: ../../docs/about/list_of_features.rst:444
 msgid "Supports unreliable, reliable and ordered transfers."
 msgstr "Suporta transferências não confiáveis, confiáveis e ordenadas."
 
-#: ../../docs/about/list_of_features.rst:433
+#: ../../docs/about/list_of_features.rst:446
 msgid "WebSocket client and server, available on all platforms."
 msgstr "Cliente e servidor WebSocket, disponível em todas as plataformas."
 
-#: ../../docs/about/list_of_features.rst:434
+#: ../../docs/about/list_of_features.rst:447
 msgid "WebRTC client and server, available on all platforms."
 msgstr "Cliente e servidor WebRTC, disponível em todas as plataformas."
 
-#: ../../docs/about/list_of_features.rst:435
+#: ../../docs/about/list_of_features.rst:448
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
@@ -1217,15 +1233,15 @@ msgstr ""
 "Suporte para UPnP para contornar a necessidade de encaminhar portas ao "
 "hospedar um servidor atrás de um NAT."
 
-#: ../../docs/about/list_of_features.rst:439
+#: ../../docs/about/list_of_features.rst:452
 msgid "Internationalization"
 msgstr "Internacionalização"
 
-#: ../../docs/about/list_of_features.rst:441
+#: ../../docs/about/list_of_features.rst:454
 msgid "Full support for Unicode including emoji."
 msgstr "Suporte completo para Unicode incluindo emojis."
 
-#: ../../docs/about/list_of_features.rst:442
+#: ../../docs/about/list_of_features.rst:455
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
@@ -1234,7 +1250,7 @@ msgstr ""
 "<doc_internationalizing_games>` ou :ref:`gettext "
 "<doc_localization_using_gettext>`."
 
-#: ../../docs/about/list_of_features.rst:444
+#: ../../docs/about/list_of_features.rst:457
 msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
@@ -1242,37 +1258,37 @@ msgstr ""
 "Utilize strings localizadas em seu projeto automaticamente em elementos GUI "
 "ou usando a função ``tr()``."
 
-#: ../../docs/about/list_of_features.rst:446
+#: ../../docs/about/list_of_features.rst:459
 msgid ""
 "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
 msgstr ""
 "Suporte para composição tipográdica da direita para a esquerda e modelagem "
 "de texto planejada em Godot 4.0."
 
-#: ../../docs/about/list_of_features.rst:449
+#: ../../docs/about/list_of_features.rst:462
 msgid "Windowing and OS integration"
 msgstr "Janelas e integração de sistema"
 
-#: ../../docs/about/list_of_features.rst:451
+#: ../../docs/about/list_of_features.rst:464
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr "Mova, redimensione, minimize e maximize a janela gerada pelo projeto."
 
-#: ../../docs/about/list_of_features.rst:452
+#: ../../docs/about/list_of_features.rst:465
 msgid "Change the window title and icon."
 msgstr "Mude o título e o ícone da janela."
 
-#: ../../docs/about/list_of_features.rst:453
+#: ../../docs/about/list_of_features.rst:466
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
 "Requisite atenção (vai fazer a barra de título piscar na maioria das "
 "plataformas)."
 
-#: ../../docs/about/list_of_features.rst:454
+#: ../../docs/about/list_of_features.rst:467
 msgid "Fullscreen mode."
 msgstr "Modo tela cheia."
 
-#: ../../docs/about/list_of_features.rst:456
+#: ../../docs/about/list_of_features.rst:469
 msgid ""
 "Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
 "this way. Use a Viewport with a different resolution instead."
@@ -1280,27 +1296,27 @@ msgstr ""
 "Não usa tela inteira exclusiva, então a resolução da tela não pode ser "
 "alterada dessa forma. Use uma Viewport com uma resolução diferente."
 
-#: ../../docs/about/list_of_features.rst:459
+#: ../../docs/about/list_of_features.rst:472
 msgid "Borderless window (fullscreen or non-fullscreen)."
 msgstr "Janela sem bordas (tela cheia ou tela não cheia)."
 
-#: ../../docs/about/list_of_features.rst:460
+#: ../../docs/about/list_of_features.rst:473
 msgid "Ability to keep the window always on top."
 msgstr "Possibilidade de manter a janela sempre no topo."
 
-#: ../../docs/about/list_of_features.rst:461
+#: ../../docs/about/list_of_features.rst:474
 msgid "Transparent window with per-pixel transparency."
 msgstr "Janela transparente com transparência por pixel."
 
-#: ../../docs/about/list_of_features.rst:462
+#: ../../docs/about/list_of_features.rst:475
 msgid "Global menu integration on macOS."
 msgstr "Integração com menu global no macOS."
 
-#: ../../docs/about/list_of_features.rst:463
+#: ../../docs/about/list_of_features.rst:476
 msgid "Execute commands in a blocking or non-blocking manner."
 msgstr "Executar comandos de um modo de bloqueio ou de não-bloqueio."
 
-#: ../../docs/about/list_of_features.rst:464
+#: ../../docs/about/list_of_features.rst:477
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
 "registered on the system)."
@@ -1308,50 +1324,50 @@ msgstr ""
 "Abrir caminhos de arquivos e URLs usando manipuladores de protocolo padrão "
 "ou personalizados (se registrados no sistema)."
 
-#: ../../docs/about/list_of_features.rst:465
+#: ../../docs/about/list_of_features.rst:478
 msgid "Parse custom command line arguments."
 msgstr "Analisa argumentos de linha de comando personalizados."
 
-#: ../../docs/about/list_of_features.rst:468
+#: ../../docs/about/list_of_features.rst:481
 msgid "Mobile"
 msgstr "Mobile"
 
-#: ../../docs/about/list_of_features.rst:470
+#: ../../docs/about/list_of_features.rst:483
 msgid "In-app purchases on Android and iOS."
 msgstr "Compras no aplicativo Android e iOS."
 
-#: ../../docs/about/list_of_features.rst:471
+#: ../../docs/about/list_of_features.rst:484
 msgid "Support for advertisements using third-party modules."
 msgstr "Suporte a anúncios usando módulos de terceira pessoa."
 
-#: ../../docs/about/list_of_features.rst:472
+#: ../../docs/about/list_of_features.rst:485
 msgid "Support for subview embedding on Android."
 msgstr "Suporte para incorporação de subvisão no Android."
 
-#: ../../docs/about/list_of_features.rst:475
+#: ../../docs/about/list_of_features.rst:488
 msgid "XR support (AR and VR)"
 msgstr "Suporte à XR (AR e VR)"
 
-#: ../../docs/about/list_of_features.rst:477
+#: ../../docs/about/list_of_features.rst:490
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Suporte ao ARKit no iOS quando pronto para uso."
 
-#: ../../docs/about/list_of_features.rst:478
+#: ../../docs/about/list_of_features.rst:491
 msgid "Support for the OpenXR and OpenVR APIs."
 msgstr "Suporte às API's de OpenXR e OpenVR."
 
-#: ../../docs/about/list_of_features.rst:479
+#: ../../docs/about/list_of_features.rst:492
 msgid ""
 "Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
 "to plugins."
 msgstr ""
 "Headsets populares de VR como o Oculus Quest e HTC Vive graças à plugins."
 
-#: ../../docs/about/list_of_features.rst:482
+#: ../../docs/about/list_of_features.rst:495
 msgid "GUI system"
 msgstr "Sistema de Interface Gráfica do Usuário (GUI)"
 
-#: ../../docs/about/list_of_features.rst:484
+#: ../../docs/about/list_of_features.rst:497
 msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
@@ -1360,38 +1376,38 @@ msgstr ""
 "Nodes usados para fazer jogos na Godot. A interface do editor pode ser "
 "facilmente estendida de diversas formas com o uso de add-ons."
 
-#: ../../docs/about/list_of_features.rst:487
+#: ../../docs/about/list_of_features.rst:500
 msgid "**Nodes:**"
 msgstr "**Nós:**"
 
-#: ../../docs/about/list_of_features.rst:489
+#: ../../docs/about/list_of_features.rst:502
 msgid "Buttons."
 msgstr "Botões."
 
-#: ../../docs/about/list_of_features.rst:490
+#: ../../docs/about/list_of_features.rst:503
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "Caixas de seleção, botões de seleção, botões de opção."
 
-#: ../../docs/about/list_of_features.rst:491
+#: ../../docs/about/list_of_features.rst:504
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
 msgstr ""
 "Entrada de texto usando LineEdit (linha única) e TextEdit (múltiplas linhas)."
 
-#: ../../docs/about/list_of_features.rst:492
+#: ../../docs/about/list_of_features.rst:505
 msgid "Dropdown menus using PopupMenu and OptionButton."
 msgstr ""
 "Menus suspensos usando PopupMenu (menu suspenso) e OptionButton (botão de "
 "opção)."
 
-#: ../../docs/about/list_of_features.rst:493
+#: ../../docs/about/list_of_features.rst:506
 msgid "Scrollbars."
 msgstr "Barras de rolagem."
 
-#: ../../docs/about/list_of_features.rst:494
+#: ../../docs/about/list_of_features.rst:507
 msgid "Labels."
 msgstr "Rótulos."
 
-#: ../../docs/about/list_of_features.rst:495
+#: ../../docs/about/list_of_features.rst:508
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
@@ -1399,11 +1415,11 @@ msgstr ""
 "RichTextLabel para :ref:`textos formatados usando BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 
-#: ../../docs/about/list_of_features.rst:496
+#: ../../docs/about/list_of_features.rst:509
 msgid "Trees (can also be used to represent tables)."
 msgstr "Trees (podem também ser usadas para representar tabelas)."
 
-#: ../../docs/about/list_of_features.rst:497
+#: ../../docs/about/list_of_features.rst:510
 msgid ""
 "Containers (horizontal, vertical, grid, center, margin, draggable "
 "splitter, ...)."
@@ -1411,35 +1427,35 @@ msgstr ""
 "Contêineres (horizontais, verticais, em grid, centralizados, com margem, "
 "divisórias arrastáveis, ...)."
 
-#: ../../docs/about/list_of_features.rst:498
+#: ../../docs/about/list_of_features.rst:511
 msgid "Controls can be rotated and scaled."
 msgstr "Controles podem ser rotacionados e ter sua escala alterada."
 
-#: ../../docs/about/list_of_features.rst:500
+#: ../../docs/about/list_of_features.rst:513
 msgid "**Sizing:**"
 msgstr "**Dimensionamento:**"
 
-#: ../../docs/about/list_of_features.rst:502
+#: ../../docs/about/list_of_features.rst:515
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
 "Âncoras para manter os elementos da GUI em um canto específico, borda ou "
 "centro."
 
-#: ../../docs/about/list_of_features.rst:503
+#: ../../docs/about/list_of_features.rst:516
 msgid "Containers to place GUI elements automatically following certain rules."
 msgstr ""
 "Contêineres para colocar elementos da GUI automaticamente seguindo certas "
 "regras."
 
-#: ../../docs/about/list_of_features.rst:505
+#: ../../docs/about/list_of_features.rst:518
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
 msgstr "Layouts :ref:`Stack <class_BoxContainer>`."
 
-#: ../../docs/about/list_of_features.rst:506
+#: ../../docs/about/list_of_features.rst:519
 msgid ":ref:`Grid <class_GridContainer>` layouts."
 msgstr "Layouts :ref:`Grid <class_GridContainer>`."
 
-#: ../../docs/about/list_of_features.rst:507
+#: ../../docs/about/list_of_features.rst:520
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
@@ -1447,52 +1463,52 @@ msgstr ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 
-#: ../../docs/about/list_of_features.rst:509
+#: ../../docs/about/list_of_features.rst:522
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 
-#: ../../docs/about/list_of_features.rst:511
+#: ../../docs/about/list_of_features.rst:524
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
 msgstr ""
 "Escala para resoluções múltiplas usando os modos de alongamento ``2d`` ou `` "
 "viewport``."
 
-#: ../../docs/about/list_of_features.rst:512
+#: ../../docs/about/list_of_features.rst:525
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
 "Suporta qualquer proporção de aspecto usando âncoras e o aspecto de extensão "
 "``expand``."
 
-#: ../../docs/about/list_of_features.rst:514
+#: ../../docs/about/list_of_features.rst:527
 msgid "**Theming:**"
 msgstr "**Temas:**"
 
-#: ../../docs/about/list_of_features.rst:516
+#: ../../docs/about/list_of_features.rst:529
 msgid "Built-in theme editor."
 msgstr "Editor de temas embutido."
 
-#: ../../docs/about/list_of_features.rst:518
+#: ../../docs/about/list_of_features.rst:531
 msgid "Generate a theme based on the current editor theme settings."
 msgstr "Gera um tema com base nas configurações de tema atuais do editor."
 
-#: ../../docs/about/list_of_features.rst:520
+#: ../../docs/about/list_of_features.rst:533
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ""
 "Temas baseados em vetores procedurais usando :ref:`class_StyleBoxFlat`."
 
-#: ../../docs/about/list_of_features.rst:522
+#: ../../docs/about/list_of_features.rst:535
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
 msgstr ""
 "Suporta cantos arredondados/chanfrados, sombras projetadas e larguras por "
 "borda."
 
-#: ../../docs/about/list_of_features.rst:524
+#: ../../docs/about/list_of_features.rst:537
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
 msgstr "Temas baseados em textura usando :ref:`class_StyleBoxTexture`."
 
-#: ../../docs/about/list_of_features.rst:526
+#: ../../docs/about/list_of_features.rst:539
 msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
@@ -1500,36 +1516,37 @@ msgstr ""
 "O tamanho de distribuição pequeno do Godot pode fazê-lo de uma alternativa "
 "para plataformas como Electron ou Qt."
 
-#: ../../docs/about/list_of_features.rst:530
+#: ../../docs/about/list_of_features.rst:543
 msgid "Animation"
 msgstr "Animação"
 
-#: ../../docs/about/list_of_features.rst:532
+#: ../../docs/about/list_of_features.rst:545
 msgid "Direct kinematics and inverse kinematics."
 msgstr "Cinemática direta e cinemática inversa."
 
-#: ../../docs/about/list_of_features.rst:533
+#: ../../docs/about/list_of_features.rst:546
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
 "Suporte a animação de qualquer propriedade com interpolação personalizável."
 
-#: ../../docs/about/list_of_features.rst:534
+#: ../../docs/about/list_of_features.rst:547
 msgid "Support for calling methods in animation tracks."
 msgstr "Suporte a chamada de métodos em trilhas de animação."
 
-#: ../../docs/about/list_of_features.rst:535
+#: ../../docs/about/list_of_features.rst:548
 msgid "Support for playing sounds in animation tracks."
 msgstr "Suporte a áudio em trilhas de animação."
 
-#: ../../docs/about/list_of_features.rst:536
+#: ../../docs/about/list_of_features.rst:549
 msgid "Support for Bézier curves in animation."
 msgstr "Suporte a curvas Bézier em animações."
 
-#: ../../docs/about/list_of_features.rst:539
-msgid "Formats"
-msgstr "Formatos"
+#: ../../docs/about/list_of_features.rst:552
+#, fuzzy
+msgid "File formats"
+msgstr "Formatos de Vídeo"
 
-#: ../../docs/about/list_of_features.rst:541
+#: ../../docs/about/list_of_features.rst:554
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
@@ -1537,49 +1554,49 @@ msgstr ""
 "Cenas e recursos podem ser salvos como :ref:`text-based "
 "<doc_tscn_file_format>` ou em formatos binários."
 
-#: ../../docs/about/list_of_features.rst:543
+#: ../../docs/about/list_of_features.rst:556
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
 msgstr ""
 "Formatos baseados em texto são legíveis por humanos e mais amigáveis a "
 "sistemas de versionamento."
 
-#: ../../docs/about/list_of_features.rst:544
+#: ../../docs/about/list_of_features.rst:557
 msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""
 "Formatos binários são mais rápidos para salvar e carregar para cenas e "
 "recursos pesados."
 
-#: ../../docs/about/list_of_features.rst:546
+#: ../../docs/about/list_of_features.rst:559
 msgid "Read and write text or binary files using :ref:`class_File`."
 msgstr "Leia e escreva arquivos binários ou de texto usando :ref:`class_File`."
 
-#: ../../docs/about/list_of_features.rst:548
+#: ../../docs/about/list_of_features.rst:561
 msgid "Can optionally be compressed or encrypted."
 msgstr "Podem ser opcionalmente comprimidos ou criptografados."
 
-#: ../../docs/about/list_of_features.rst:550
+#: ../../docs/about/list_of_features.rst:563
 msgid "Read and write :ref:`class_JSON` files."
 msgstr "Leia e escreva arquivos :ref:`class_JSON`."
 
-#: ../../docs/about/list_of_features.rst:551
+#: ../../docs/about/list_of_features.rst:564
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
 "Leia e escreva arquivos de configuração em estilo INI usando :ref:"
 "`class_ConfigFile`."
 
-#: ../../docs/about/list_of_features.rst:553
+#: ../../docs/about/list_of_features.rst:566
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
 msgstr ""
 "Pode (de)serializar qualquer tipo de dados do Godot, incluindo Vector, "
 "Color, ..."
 
-#: ../../docs/about/list_of_features.rst:555
+#: ../../docs/about/list_of_features.rst:568
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr "Leia arquivos XML usando :ref:`class_XMLParser`."
 
-#: ../../docs/about/list_of_features.rst:556
+#: ../../docs/about/list_of_features.rst:569
 msgid ""
 "Pack game data into a PCK file (custom format optimized for fast seeking), "
 "into a ZIP archive, or directly into the executable for single-file "
@@ -1589,7 +1606,7 @@ msgstr ""
 "buscas rápidas), num arquivo ZIP, ou diretamente no executável para "
 "distribuição de um único arquivo."
 
-#: ../../docs/about/list_of_features.rst:558
+#: ../../docs/about/list_of_features.rst:571
 msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
@@ -1597,11 +1614,11 @@ msgstr ""
 ":ref:`Exporte arquivos PCK adicionais<doc_exporting_pcks>` que podem ser "
 "lidos pelo Engine para suportar modificações e DLC."
 
-#: ../../docs/about/list_of_features.rst:562
+#: ../../docs/about/list_of_features.rst:575
 msgid "Miscellaneous"
 msgstr "Diversos"
 
-#: ../../docs/about/list_of_features.rst:564
+#: ../../docs/about/list_of_features.rst:577
 msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
@@ -1609,15 +1626,15 @@ msgstr ""
 ":ref:`Acesso de baixo nível aos servidores <doc_using_servers>` que permite "
 "ultrapassar o gargalo da árvore de cenas quando necessário."
 
-#: ../../docs/about/list_of_features.rst:566
+#: ../../docs/about/list_of_features.rst:579
 msgid "Command line interface for automation."
 msgstr "Interface de linha de comando para automação."
 
-#: ../../docs/about/list_of_features.rst:568
+#: ../../docs/about/list_of_features.rst:581
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "Exporte e implante projetos usando plataformas de integração contínua."
 
-#: ../../docs/about/list_of_features.rst:569
+#: ../../docs/about/list_of_features.rst:582
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
@@ -1625,7 +1642,7 @@ msgstr ""
 "`Acabamento de scripts <https://github.com/godotengine/godot/tree/master/"
 "misc/dist/shell>`__ estão disponíveis para Bash, zsh e fish."
 
-#: ../../docs/about/list_of_features.rst:572
+#: ../../docs/about/list_of_features.rst:585
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
@@ -1633,11 +1650,11 @@ msgstr ""
 "Suporte para :ref:`módulos C++ <doc_custom_modules_in_c++>` com ligação "
 "estática ao binário do Engine."
 
-#: ../../docs/about/list_of_features.rst:574
+#: ../../docs/about/list_of_features.rst:587
 msgid "Engine and editor written in C++03."
 msgstr "Engine e editor escritos em C++03."
 
-#: ../../docs/about/list_of_features.rst:576
+#: ../../docs/about/list_of_features.rst:589
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
@@ -1645,7 +1662,7 @@ msgstr ""
 "Pode ser :ref:`compilado <doc_introduction_to_the_buildsystem>` usando GCC, "
 "Clang e MSVC. MinGW também tem suporte."
 
-#: ../../docs/about/list_of_features.rst:578
+#: ../../docs/about/list_of_features.rst:591
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
@@ -1655,15 +1672,15 @@ msgstr ""
 "sistema podem ser utilizadas no lugar das fornecidas pelo Godot. O sistema "
 "de compilação não baixa nada. As compilações são completamente reproduzíveis."
 
-#: ../../docs/about/list_of_features.rst:581
+#: ../../docs/about/list_of_features.rst:594
 msgid "Godot 4.0 will be written in C++17."
 msgstr "Godot 4.0 será escrito em C++17."
 
-#: ../../docs/about/list_of_features.rst:583
+#: ../../docs/about/list_of_features.rst:596
 msgid "Licensed under the permissive MIT license."
 msgstr "Licenciado sob a licença permissiva MIT."
 
-#: ../../docs/about/list_of_features.rst:585
+#: ../../docs/about/list_of_features.rst:598
 msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
@@ -1671,7 +1688,7 @@ msgstr ""
 "Processo de desenvolvimento aberto com :ref:`contribuições bem-vindas "
 "<doc_ways_to_contribute>`."
 
-#: ../../docs/about/list_of_features.rst:589
+#: ../../docs/about/list_of_features.rst:602
 #, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

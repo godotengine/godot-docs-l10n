@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,15 +143,15 @@ msgstr ""
 "``custom.py`` à la racine de la source, avec un contenu similaire à celui "
 "qui suit :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:117
+#: ../../docs/development/compiling/optimizing_for_size.rst:116
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:120
+#: ../../docs/development/compiling/optimizing_for_size.rst:119
 msgid "Optimizing for size instead of speed"
 msgstr "Optimiser pour la taille plutôt que pour la vitesse"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:121
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
@@ -160,17 +160,17 @@ msgstr ""
 "de taille (au lieu de vitesse). Pour ce faire, il suffit de mettre le "
 "drapeau ``optimize`` sur ``size`` :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:129
+#: ../../docs/development/compiling/optimizing_for_size.rst:128
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 "Certaines plateformes telles que WebAssembly utilisent déjà ce mode par "
 "défaut."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:132
+#: ../../docs/development/compiling/optimizing_for_size.rst:131
 msgid "Compiling with link-time optimization"
 msgstr "Compilation avec optimisation du temps de liaison"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:134
+#: ../../docs/development/compiling/optimizing_for_size.rst:133
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -183,7 +183,7 @@ msgstr ""
 "(templates) en double et le code inutilisé. Il peut actuellement être "
 "utilisé avec les compilateurs GCC et MSVC :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:143
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 msgid ""
 "Linking becomes much slower and more RAM consuming with this option, so it "
 "should be used only for release builds."
@@ -192,11 +192,11 @@ msgstr ""
 "plus de RAM avec cette option, elle ne doit donc être utilisée que pour les "
 "compilation release."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:147
+#: ../../docs/development/compiling/optimizing_for_size.rst:146
 msgid "Stripping binaries"
 msgstr "Nettoyage des binaires"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:148
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""

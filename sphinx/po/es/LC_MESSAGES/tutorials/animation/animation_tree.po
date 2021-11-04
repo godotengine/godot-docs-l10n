@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "Using AnimationTree"
-msgstr "AnimationTree"
+msgstr "Usando AnimationTree"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:7
 msgid "Introduction"
@@ -289,15 +288,15 @@ msgid "Seek"
 msgstr "Seek"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
-#, fuzzy
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the animation graph. Use this node type to play an ``Animation`` from the "
 "start or a certain playback position inside the ``AnimationNodeBlendTree``."
 msgstr ""
-"Este nodo puede ser usado para hacer que un comando de búsqueda le suceda a "
-"cualquier sub-hijo del gráfico. Después de establecer el tiempo, este valor "
-"vuelve a -1."
+"Este nodo puede usarse para hacer que un comando de búsqueda suceda a "
+"cualquier sub-hijo del gráfico de animación. Utilice este tipo de nodo para "
+"reproducir una ``Animación`` desde el inicio o una determinada posición de "
+"reproducción dentro del ``AnimationNodeBlendTree``."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:101
 msgid ""
@@ -305,6 +304,10 @@ msgid ""
 "automatically goes into sleep mode on the next process frame by setting its "
 "``seek_position`` value to ``-1.0``."
 msgstr ""
+"Después de configurar el tiempo y cambiar la reproducción de la animación, "
+"el nodo de búsqueda entra automáticamente en modo de suspensión en el "
+"siguiente cuadro de proceso estableciendo su valor de ``seek_position`` en "
+"``-1.0``."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:125
 msgid "TimeScale"
@@ -660,3 +663,6 @@ msgid ""
 "The state machine must be running before you can travel. Make sure to either "
 "call ``start()`` or choose a node to **Autoplay on Load**."
 msgstr ""
+"La máquina de estado debe estar funcionando antes de que pueda viajar. "
+"Asegúrese de llamar a ``start()`` o elegir un nodo para **Autoreproducir al "
+"cargar**."

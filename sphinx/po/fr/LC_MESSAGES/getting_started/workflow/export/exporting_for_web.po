@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,21 +58,24 @@ msgstr ""
 "meilleures performances."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
-#, fuzzy
 msgid "WebGL version"
-msgstr "Gestion des versions de Godot"
+msgstr "Version WebGL"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
 "or WebGL 2.0 (*GLES3*)."
 msgstr ""
+"En fonction de votre choix de moteur de rendu, Godot peut cibler WebGL 1.0 "
+"(*GLES2*) ou WebGL 2.0 (*GLES3*)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "WebGL 1.0 is the recommended option if you want your project to be supported "
 "on all browsers with the best performance."
 msgstr ""
+"WebGL 1.0 est l'option recommandée si vous souhaitez que votre projet soit "
+"pris en charge par tous les navigateurs avec les meilleures performances."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
@@ -80,6 +83,9 @@ msgid ""
 "WebGL 2.0 can be subpar. Some features are also not supported in WebGL 2.0 "
 "specifically."
 msgstr ""
+"Le moteur de rendu GLES3 de Godot vise les appareils haut de gamme, et les "
+"performances obtenues avec WebGL 2.0 peuvent être médiocres. Certaines "
+"fonctionnalités ne sont pas spécifiquement prises en charge par WebGL 2.0."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
@@ -88,6 +94,11 @@ msgid ""
 "is not available yet for any **iOS** browser (all WebKit-based like Safari). "
 "See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details."
 msgstr ""
+"En outre, si la plupart des navigateurs prennent en charge WebGL 2.0, ce "
+"n'est pas encore le cas pour **Safari**. La prise en charge de WebGL 2.0 est "
+"prévue dans Safari 15 pour macOS, et n'est pas encore disponible pour aucun "
+"navigateur **iOS** (tous basés sur WebKit comme Safari). Voir `Can I use "
+"WebGL 2.0 <https://caniuse.com/webgl2>`__ pour plus de détails."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid "Export options"

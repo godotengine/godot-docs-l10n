@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,18 +127,23 @@ msgid ""
 "marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is "
 "installed."
 msgstr ""
+"由于偶然的性能问题，建议在基于Unix的系统上使用LLDB而不是GDB。确保 `CodeLLDB "
+"extension <https://marketplace.visualstudio.com/items?itemName=vadimcn."
+"vscode-lldb>`_ 已经安装。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:162
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
-msgstr ""
+msgstr "如果遇到lldb的问题，你可以考虑使用gdb，参阅X11_gdb配置。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:164
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
 msgstr ""
+"请注意，lldb可能在基于llvm的构建中工作得更好。参阅 :ref:"
+"`doc_compiling_for_x11` 以了解更多信息。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:166
 msgid ""

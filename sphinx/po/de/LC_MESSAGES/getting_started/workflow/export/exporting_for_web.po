@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,12 +66,16 @@ msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
 "or WebGL 2.0 (*GLES3*)."
 msgstr ""
+"Je nach Wahl des Renderers kann Godot WebGL 1.0 (*GLES2*) oder WebGL 2.0 "
+"(*GLES3*) verwenden."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "WebGL 1.0 is the recommended option if you want your project to be supported "
 "on all browsers with the best performance."
 msgstr ""
+"WebGL 1.0 ist die empfohlene Option, wenn man möchte, dass ein Projekt auf "
+"allen Browsern mit der besten Leistung unterstützt wird."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
@@ -79,6 +83,9 @@ msgid ""
 "WebGL 2.0 can be subpar. Some features are also not supported in WebGL 2.0 "
 "specifically."
 msgstr ""
+"Der GLES3-Renderer von Godot zielt auf High-End-Geräte ab, und die Leistung "
+"mit WebGL 2.0 kann unterdurchschnittlich sein. Einige Funktionen werden auch "
+"nicht speziell in WebGL 2.0 unterstützt."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
@@ -87,6 +94,11 @@ msgid ""
 "is not available yet for any **iOS** browser (all WebKit-based like Safari). "
 "See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details."
 msgstr ""
+"Während die meisten Browser WebGL 2.0 unterstützen, ist dies bei **Safari** "
+"noch nicht der Fall. WebGL 2.0-Unterstützung wird in Safari 15 für macOS "
+"kommen und ist noch für keinen **iOS**-Browser verfügbar (alle WebKit-"
+"basiert wie Safari). Siehe `Can I use WebGL 2.0 <https://caniuse.com/"
+"webgl2>`__ für Details."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid "Export options"

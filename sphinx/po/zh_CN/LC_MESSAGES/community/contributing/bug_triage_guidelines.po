@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,22 +176,23 @@ msgid ""
 "also be used for pull requests that improve performance or add low-end-"
 "friendly options. Should not be coupled with *Usability*."
 msgstr ""
+"*Performance*: 直接影响引擎或编辑器性能的问题。也可用于改善性能或增加低端友好"
+"选项的拉取请求。不应与 *Usability* 可用性结合在一起。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
-#, fuzzy
 msgid ""
 "*PR welcome / Hero wanted!*: Contributions for issues with these labels are "
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
-"*PR welcome / hero wanted!*: 特别欢迎对这些标签的问题的贡献. 请注意, 这 **并"
-"不** 意味着您无法处理没有这些标签的问题."
+"*PR welcome / Hero wanted!*: 我们特别欢迎对带有这些标签的问题做出贡献。请注"
+"意，这 **并不** 意味着不能处理没有这些标签的问题。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:76
 msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
 "was released."
-msgstr ""
+msgstr "*Regression*: 在没有表现出该错误的稳定版本发布之后，该错误出现。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:78
 msgid ""
@@ -201,6 +202,9 @@ msgid ""
 "do so, you need to open a new pull request based on the original pull "
 "request."
 msgstr ""
+"*Salvageable*: 由于设计问题或合并冲突，该拉动请求不能被合并，其作者也不再活"
+"跃。然而，它仍然可以被一个外部贡献者拾取，以使其达到可合并状态。为此，您需要"
+"基于原始拉取请求打开一个新的拉取请求。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid ""
@@ -209,11 +213,10 @@ msgid ""
 msgstr "*Tracker*: 用于跟踪其他问题的问题(例如与插件系统相关的所有问题)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:84
-#, fuzzy
 msgid ""
 "*Usability*: issues that directly impact user usability. Should not be "
 "coupled with *Performance*."
-msgstr "*Usability*: 直接影响用户可用性的问题."
+msgstr "*Usability*: 直接影响用户可用性的问题。不应与 *Performance* 相结合。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid ""
@@ -237,12 +240,14 @@ msgid ""
 "*2D*: relates to 2D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *3D*."
 msgstr ""
+"*2D*: 涉及 2D 特定问题。应该与下面的某个标签组合使用，而不应该与 *3D* 组合。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid ""
 "*3D*: relates to 3D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *2D*."
 msgstr ""
+"*3D*: 涉及 3D 特定问题。应该与下面的某个标签组合使用，而不应该与 *2D* 组合。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Assetlib*: relates to issues with the asset library."

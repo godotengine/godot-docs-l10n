@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,8 @@ msgid "Custom drawing in 2D"
 msgstr "Пользовательская отрисовка в 2D"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
-msgid "Why?"
-msgstr "Почему?"
+msgid "Introduction"
+msgstr "Введение"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 msgid ""
@@ -43,60 +43,60 @@ msgstr ""
 "<class_Node2D> `) рисовать пользовательские команды. Также это "
 "*действительно* легко сделать."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
-msgid "But..."
-msgstr "Но..."
-
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:16
+#, fuzzy
 msgid ""
-"Custom drawing manually in a node is *really* useful. Here are some examples "
-"why:"
+"Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
 "Пользовательское рисование вручную в узле *действительно* полезно. Вот "
 "несколько примеров, почему:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:18
+#, fuzzy
 msgid ""
-"Drawing shapes or logic that is not handled by nodes (example: making a node "
-"that draws a circle, an image with trails, a special kind of animated "
-"polygon, etc)."
+"Drawing shapes or logic that existing nodes can't do, such as an image with "
+"trails or a special animated polygon."
 msgstr ""
 "Рисование фигур или логики, которые не обрабатываются узлами (пример: "
 "создание узла, который рисует круг, изображение со следами, особый вид "
 "анимированного многоугольника и т. д.)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:20
+#, fuzzy
 msgid ""
-"Visualizations that are not that compatible with nodes: (example: a tetris "
-"board). The tetris example uses a custom draw function to draw the blocks."
+"Visualizations that are not that compatible with nodes, such as a tetris "
+"board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
 "Визуализации, несовместимые с узлами: (пример: доска тетриса). В примере с "
 "тетрисом для рисования блоков используется пользовательская функция "
 "рисования."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:23
+#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
-"of using nodes which makes it less memory intensive and potentially faster."
+"of using a large number of nodes, possibly lowering memory usage and "
+"improving performance."
 msgstr ""
 "Рисование большого количества простых предметов. Пользовательское рисование "
 "позволяет избежать накладных расходов на использование узлов, что делает его "
 "менее затратным по памяти и потенциально более быстрым."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:26
+#, fuzzy
 msgid ""
-"Making a custom UI control. There are plenty of controls available, but it's "
-"easy to run into the need to make a new, custom one."
+"Making a custom UI control. There are plenty of controls available, but when "
+"you have unusual needs, you will likely need a custom control."
 msgstr ""
 "Создание настраиваемого элемента управления пользовательского интерфейса. "
 "Доступно множество элементов управления, но легко столкнуться с "
 "необходимостью создать новый, настраиваемый."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
-msgid "OK, how?"
-msgstr "Хорошо, как?"
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
+msgid "Drawing"
+msgstr "Отрисовка"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:33
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
@@ -106,7 +106,7 @@ msgstr ""
 "<class_CanvasItem>`, например :ref:`Control <class_Control>` или :ref:"
 "`Node2D <class_Node2D>`. Затем переопределите функцию ``_draw ()``."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:53
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
@@ -114,11 +114,11 @@ msgstr ""
 "Команды рисования описаны в справочнике по классу :ref:`CanvasItem "
 "<class_CanvasItem>`. Их много."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid "Updating"
 msgstr "Обновление"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:59
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
@@ -126,18 +126,19 @@ msgstr ""
 "Функция ``_draw ()`` вызывается только один раз, а затем команды рисования "
 "кэшируются и запоминаются, поэтому дальнейшие вызовы не нужны."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
+#, fuzzy
 msgid ""
-"If re-drawing is required because a state or something else changed, simply "
-"call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
-"same node and a new ``_draw()`` call will happen."
+"If re-drawing is required because a state or something else changed, call :"
+"ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
+"and a new ``_draw()`` call will happen."
 msgstr ""
 "Если требуется повторная отрисовка из-за того, что состояние или что-то еще "
 "изменилось, просто вызовите :ref:`CanvasItem.update () "
 "<class_CanvasItem_method_update>` в том же узле, и произойдет новый вызов "
 "``_draw ()``."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
@@ -145,7 +146,7 @@ msgstr ""
 "Вот немного более сложный пример, переменная текстуры, которая будет "
 "перерисована при изменении:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:110
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
@@ -153,11 +154,11 @@ msgstr ""
 "В некоторых случаях может потребоваться отрисовка каждого кадра. Для этого "
 "просто вызовите ``update ()`` из обратного вызова ``_process ()``, например:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:142
 msgid "An example: drawing circular arcs"
 msgstr "Пример: рисование дуг окружности"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:144
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -171,11 +172,11 @@ msgstr ""
 "рисует весь круг. Однако как насчет рисования части круга? Вам нужно будет "
 "написать функцию для этого и нарисовать ее самостоятельно."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:150
 msgid "Arc function"
 msgstr "Функция дуги"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:152
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -189,7 +190,7 @@ msgstr ""
 "предоставить нашей функции рисования. Мы также предоставим значение цвета, "
 "чтобы при желании можно было нарисовать дугу разными цветами."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
 "certain number of points linked from one to the next. As you can imagine, "
@@ -213,7 +214,7 @@ msgstr ""
 "известно как *Уровень Детализации (LOD)*. В нашем примере мы просто будем "
 "использовать фиксированное количество точек независимо от радиуса."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:197
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
@@ -225,7 +226,7 @@ msgstr ""
 "пустой ``PoolVector2Array``, который представляет собой просто массив "
 "``Vector2 ``\\s."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -239,7 +240,7 @@ msgstr ""
 "последнюю точку. Сначала мы определяем угол каждой точки между начальным и "
 "конечным углами."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -255,7 +256,7 @@ msgstr ""
 "хотя мы хотим начать отсчет с 12 часов. Таким образом, мы уменьшаем каждый "
 "угол на 90 °, чтобы начать отсчет с 12 часов."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
 "radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
@@ -276,7 +277,7 @@ msgstr ""
 "нашему значению ``Vector2``. Наконец, мы вставляем точку в массив "
 "``PoolVector2Array``, который был определен ранее."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:220
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
 "simply draw our 32 points: we need to draw everything that is between each "
@@ -297,12 +298,11 @@ msgstr ""
 "никогда не будет достаточной, чтобы их увидеть. Если бы это произошло, нам "
 "просто нужно было бы увеличить количество точек."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
-#, fuzzy
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:230
 msgid "Draw the arc on the screen"
-msgstr "Создание главного меню"
+msgstr "Отрисовка дуги на экране"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:232
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
@@ -310,15 +310,15 @@ msgstr ""
 "Теперь у нас есть функция, которая рисует что-то на экране; пришло время "
 "вызвать ее внутри функции ``_draw ()``:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:259
 msgid "Result:"
 msgstr "Результат:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Arc polygon function"
 msgstr "Функция сегмента"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:266
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -330,11 +330,11 @@ msgstr ""
 "же, как и раньше, за исключением того, что мы рисуем многоугольник вместо "
 "линий:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:306
 msgid "Dynamic custom drawing"
 msgstr "Динамическое пользовательское рисование"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:308
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
 "is static; let's make this shape turn around the center. The solution to do "
@@ -349,7 +349,7 @@ msgstr ""
 "значение приращения должно оставаться постоянным, иначе скорость вращения "
 "соответственно изменится."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:314
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
@@ -359,11 +359,11 @@ msgstr ""
 "верхней части нашего скрипта. Также обратите внимание, что вы можете хранить "
 "их в других узлах и получать к ним доступ с помощью ``get_node()``."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:336
 msgid "We make these values change in the _process(delta) function."
 msgstr "Мы изменяем эти значения в функции _process(delta)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:338
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -382,7 +382,7 @@ msgstr ""
 "Godot (``2^31 - 1``). Когда это произойдет, Godot может выйти из строя или "
 "привести к неожиданному поведению."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:345
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
@@ -392,7 +392,7 @@ msgstr ""
 "автоматически вызывает ``_draw()``. Таким образом, вы можете контролировать, "
 "когда вы хотите обновить кадр."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:378
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
@@ -400,13 +400,13 @@ msgstr ""
 "Кроме того, не забудьте изменить функцию ``_draw()``, чтобы использовать эти "
 "переменные:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:402
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 "Давайте запустим! Это работает, но дуга вращается безумно быстро! Что не так?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:405
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -425,7 +425,7 @@ msgstr ""
 "управления вашим рисунком гарантирует, что ваша программа будет работать с "
 "одинаковой скоростью на любом оборудовании."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -437,15 +437,15 @@ msgstr ""
 "увеличены на гораздо меньшее значение, которое напрямую зависит от скорости "
 "рендеринга."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:447
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "Давайте снова запустим! На этот раз вращение отображается правильно!"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:450
 msgid "Tools"
 msgstr "Инструменты"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:452
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
@@ -454,7 +454,7 @@ msgstr ""
 "запуска в редакторе, чтобы использовать их в качестве предварительного "
 "просмотра или визуализации какой-либо функции или поведения."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:456
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

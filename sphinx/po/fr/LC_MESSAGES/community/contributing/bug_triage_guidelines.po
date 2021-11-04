@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,6 +203,11 @@ msgid ""
 "also be used for pull requests that improve performance or add low-end-"
 "friendly options. Should not be coupled with *Usability*."
 msgstr ""
+"*Performance* : problèmes qui ont un impact direct sur les performances du "
+"moteur ou de l'éditeur. Peut également être utilisé pour les demandes de "
+"contributions qui améliorent les performances ou ajoutent des options "
+"conviviales pour les petites configurations. Ne devrait pas être couplé avec "
+"*Usability*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
 #, fuzzy
@@ -221,6 +226,8 @@ msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
 "was released."
 msgstr ""
+"*Régression* : le bug est apparu après la publication d'une version stable "
+"ne présentant pas de bug."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:78
 msgid ""
@@ -230,6 +237,11 @@ msgid ""
 "do so, you need to open a new pull request based on the original pull "
 "request."
 msgstr ""
+"*Salvageable* : la *pull request* ne peut pas être fusionnée en raison de "
+"problèmes de conception ou de conflits de fusion et son auteur n'est plus "
+"actif. Cependant, elle peut toujours être reprise par un contributeur "
+"externe pour la rendre fusionnable. Pour ce faire, vous devez ouvrir une "
+"nouvelle demande de *pull request* basée sur la demande originale."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:82
 msgid ""
@@ -273,12 +285,16 @@ msgid ""
 "*2D*: relates to 2D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *3D*."
 msgstr ""
+"*2D* : concerne les questions spécifiques à la 2D. Doit être couplé avec "
+"l'une des étiquettes ci-dessous, et ne doit pas être couplé avec *3D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid ""
 "*3D*: relates to 3D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *2D*."
 msgstr ""
+"*3D* : concerne les questions spécifiques à la 3D. Doit être associé à l'une "
+"des étiquettes ci-dessous, et ne doit pas être associé à *2D*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Assetlib*: relates to issues with the asset library."

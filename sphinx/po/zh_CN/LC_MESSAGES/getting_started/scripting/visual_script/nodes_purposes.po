@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgid ""
 "to as *member function*) on this node."
 msgstr ""
 "最常见的任务之一是访问场景树节点(同样, 不要与 *可视化脚本节点* 混淆). 从场景"
-"树中拖放到画布上, 将要求您在此节点上 *调用方法* (有时称为 *成员函数*)."
+"树中拖放到画布上, 将要求你在此节点上 *调用方法* (有时称为 *成员函数*)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
 msgid ""
@@ -204,7 +204,7 @@ msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
-"必须注意, 仅当正在编辑的场景在其中一个节点中包含您的 *可视化脚本* 时, 这才起"
+"必须注意, 仅当正在编辑的场景在其中一个节点中包含你的 *可视化脚本* 时, 这才起"
 "作用！否则, 将出现一个警告."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
@@ -361,7 +361,7 @@ msgid ""
 "they are documented there. That mentioned, a brief overview of node types "
 "follows:"
 msgstr ""
-"请记住, 您可以检查类参考以了解每个节点的功能, 因为在那里有文档记录. 提到的, "
+"请记住, 你可以检查类参考以了解每个节点的功能, 因为在那里有文档记录. 提到的, "
 "节点类型的简要概述如下:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
@@ -395,7 +395,7 @@ msgid ""
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
 "第二个是 ``GlobalConstant`` 节点, 其中包含Godot中用于全局类型的一长串常量. 在"
-"这里, 您可以找到一些有用的常量来引用键名, 手柄或鼠标按钮等."
+"这里, 你可以找到一些有用的常量来引用键名, 手柄或鼠标按钮等."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
@@ -433,7 +433,7 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
-"在处理来自设备的输入时, 动作节点至关重要. 您可以在(@TODO ACTION TUTE LINK)中"
+"在处理来自设备的输入时, 动作节点至关重要. 你可以在(@TODO ACTION TUTE LINK)中"
 "阅读有关动作的更多信息. 在下面的示例中, 当按下 ``move_right`` 动作时, 控件将"
 "移动到右侧."
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
-msgstr "请记住, 将连接拖动到空白区域将有助于您调用以下函数或设置/获取属性:"
+msgstr "请记住, 将连接拖动到空白区域将有助于你调用以下函数或设置/获取属性:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
@@ -518,8 +518,8 @@ msgid ""
 "will return an error."
 msgstr ""
 "此节点类似于 ``Singleton`` 节点, 因为它引用包含活动场景的 ``SceneTree``. 但"
-"是,``SceneTree`` 仅在节点位于场景中并且处于活动状态时才起作用, 否则访问它将返"
-"回一个错误."
+"是, ``SceneTree`` 仅在节点位于场景中并且处于活动状态时才起作用, 否则访问它将"
+"返回一个错误."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -552,7 +552,7 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
-"此节点是一个简单的帮助器, 用于获取您选择的资源的路径的字符串. 它在从磁盘加载"
+"此节点是一个简单的帮助器, 用于获取你选择的资源的路径的字符串. 它在从磁盘加载"
 "东西的函数中很有用."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
@@ -627,7 +627,7 @@ msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
-"某些函数可以返回值. 一般来说, 对于虚函数,Godot会为您添加 ``Return`` 节点. 返"
+"某些函数可以返回值. 一般来说, 对于虚函数,Godot会为你添加 ``Return`` 节点. 返"
 "回节点强制函数结束."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
@@ -718,7 +718,7 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
-"这些是基本类型可用的方法. 例如, 如果您想要一个点积, 您可以搜索 ``点(dot)`` 而"
+"这些是基本类型可用的方法. 例如, 如果你想要一个点积, 你可以搜索 ``点(dot)`` 而"
 "不是 ``Vector3`` 类型. 在大多数情况下, 只需搜索节点列表即可, 它应该更快."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
@@ -790,7 +790,7 @@ msgid ""
 "until execution is resumed."
 msgstr ""
 "``Wait`` 节点将暂停执行函数直到发生某些事情(实际上, 直到恢复, 可以经过许多"
-"帧). 默认节点允许您等待经过一帧, 一固定帧或给定的时间量, 直到恢复执行为止."
+"帧). 默认节点允许你等待经过一帧, 一固定帧或给定的时间量, 直到恢复执行为止."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"

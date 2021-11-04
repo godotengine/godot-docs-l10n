@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "使用瓦片地图TileMaps"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
@@ -47,8 +47,9 @@ msgid "Project setup"
 msgstr "项目设置"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:23
+#, fuzzy
 msgid ""
-"This demo we'll use the following tiles taken from Kenney's \"Abstract "
+"This demo will use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
@@ -581,10 +582,9 @@ msgid "3x3"
 msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
-#, fuzzy
 msgid ""
 "In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
-msgstr "在3x3模式下, 每个位掩码包含9位(4个角,4个边缘,1个中心)"
+msgstr "在3x3模式下，每个比特掩码包含 9 比特位（4个角，4个边，1个中心）"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
@@ -650,16 +650,15 @@ msgid "Tips and tricks"
 msgstr "提示和技巧"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:343
-#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable **Use Gpu Pixel Snap** in the **Rendering > 2d > "
 "Snapping** section."
 msgstr ""
-"如果你使用 :ref:`Camera2D <class_Camera2D>` 来滚动显示你的关卡, 则可能会注意"
-"到在图块之间出现了一些线条. 要解决此问题, 请打开 \"项目设置\", 然后在 "
-"\"Rendering/Quality(渲染/质量)\" 部分中启用\"Use Pixel Snap\"."
+"如果你使用 :ref:`Camera2D <class_Camera2D>` 来滚动显示关卡，你可能会注意到图"
+"块之间出现了线条。要解决这个问题，请打开项目设置，并在 **Rendering > 2d > "
+"Snapping** 渲染 > 2d > 捕捉部分启用 **Use Gpu Pixel Snap** Gpu像素捕捉。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""

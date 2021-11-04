@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "矩阵与变换"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:7
 msgid "Introduction"
-msgstr "简介"
+msgstr "前言"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:9
 msgid ""
@@ -59,8 +59,8 @@ msgid ""
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
 "schools teach linear algebra, with the Y axis pointing up."
 msgstr ""
-"正如之前的教程中提到的, 要记在Godot中,Y轴在2D中指 *向下 * . 这与学校里教的线"
-"性代数正好相反, 在那里Y轴是指向上的."
+"正如之前的教程中提到的, 要记在 Godot 中, Y 轴在 2D 中指 *向下*. 这与学校里教"
+"的线性代数正好相反, 在那里 Y 轴是指向上的."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -267,8 +267,8 @@ msgid ""
 "To calculate the object's rotation from an existing transformation matrix, "
 "you can use `atan2(t.x.y, t.x.x)`, where t is the Transform2D."
 msgstr ""
-"要从现有的转换矩阵中计算对象的旋转, 可以使用`atan 2(t.x.y,t.x.x)`, 其中t是"
-"Transform2D."
+"要从现有的转换矩阵中计算对象的旋转, 可以使用 `atan2(t.x.y, t.x.x)`, 其中 t "
+"是 Transform2D."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:181
 msgid ""
@@ -301,7 +301,7 @@ msgid ""
 "to think of it as completely separate."
 msgstr ""
 "你可能已经注意到 :ref:`class_Transform2D` 实际上有三个 :ref:`class_Vector2` "
-"值: `x`, `y`, 和 `origin` . 其中`origin` 值不是基础(basis)的一部分, 而是变换"
+"值: `x`, `y`, 和 `origin` . 其中 `origin` 值不是基础(basis)的一部分, 而是变换"
 "(transform)的一部分, 我们需要它来表示位置. 从现在开始, 我们将在所有例子中跟踪"
 "原点向量. 您可以将原点看作另一列, 但通常认为它是完全独立的更好."
 
@@ -410,9 +410,9 @@ msgid ""
 "value and a Vector2 for scale only has 3 numbers. The high-level concept for "
 "the missing degree of freedom is called *shearing*."
 msgstr ""
-"您可能已经注意到, 变换比上述操作的组合具有更多自由度.2D变换矩阵的基数为2中的"
-"四个总数 :ref:`class_Vector2` 值, 而用于缩放的旋转值和Vector2只有3个数字. 缺"
-"少自由度的高级概念称为 \"剪切\"."
+"您可能已经注意到, 变换的自由度比上述操作的组合要多. 2D 变换矩阵的基在两个 :"
+"ref:`class_Vector2` 值中有四个总数, 而旋转值和缩放的 Vector2 只有三个数字. 缺"
+"失自由度的高级概念称为 *shearing(剪切)*."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:293
 msgid ""
@@ -518,8 +518,8 @@ msgid ""
 "excellent video about linear transformations: https://www.youtube.com/watch?"
 "v=kYB8IZa5AuE"
 msgstr ""
-"如果你想要更多的解释, 你可以查看3Blue1Brown关于线性变换的精彩视频:https://"
-"www.youtube.com/watch?v=kYB8IZa5AuE"
+"如果你想要更多的解释, 你可以查看3Blue1Brown关于线性变换的精彩视频: https://"
+"www.bilibili.com/video/BV1ys411472E?p=4"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:365
 msgid "Practical applications of transforms"
@@ -578,8 +578,8 @@ msgid ""
 "use the \"basis_xform\" or \"basis_xform_inv\" methods instead, which skip "
 "dealing with translation."
 msgstr ""
-"如果您事先知道转换位于(0,0)处, 则可以改用 \"basexform\" 或 \"basexform_inv\" "
-"方法, 这将跳过处理转换的过程."
+"如果您事先知道转换位于 (0, 0) 处, 则可以改用 \"basis_xform\" 或 "
+"\"basis_xform_inv\" 方法, 这将跳过处理转换的过程."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:416
 msgid "Moving an object relative to itself"
@@ -663,10 +663,10 @@ msgid ""
 "but this actually moves it (2, 1) in world space, due to the parent node's "
 "basis vectors."
 msgstr ""
-"所有子变换都受父变换的影响. 子对象的比例为(0.5,0.5), 因此您会认为它是1:1的比"
-"例正方形, 确实如此, 但仅相对于父对象. 子对象的X向量最终在世界空间中为(1,0), "
-"因为它是由父对象的基础向量缩放的. 类似地, 子节点的‘Original’向量被设置为"
-"(1,1), 但由于父节点的基向量, 这实际上会在世界空间中移动它(2,1)."
+"所有子变换都受父变换的影响. 子对象的比例为 (0.5, 0.5), 因此您会认为它是 1:1 "
+"的比例正方形, 确实如此, 但仅相对于父对象. 子对象的 X 向量最终在世界空间中为 "
+"(1, 0), 因为它是由父对象的基础向量缩放的. 类似地，子节点的 `origin` 向量被设"
+"置为(1,1), 但由于父节点的基向量, 这实际上会在世界空间中移动它 (2, 1)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:472
 msgid ""
@@ -696,8 +696,8 @@ msgid ""
 "excellent video about matrix composition: https://www.youtube.com/watch?"
 "v=XkY2DOUCWMU"
 msgstr ""
-"如果您想了解更多信息, 可以查看3Blue1Brown关于矩阵组成的精彩视频:https://www."
-"youtube.com/watch?v=XkY2DOUCWMU"
+"如果您想了解更多信息, 可以查看3Blue1Brown关于矩阵组成的精彩视频: https://www."
+"bilibili.com/video/BV1ys411472E?p=5"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:541
 msgid "Inverting a transformation matrix"
@@ -763,10 +763,10 @@ msgid ""
 "and the origin in both 2D and 3D: https://github.com/godotengine/godot-demo-"
 "projects/tree/master/misc/matrix_transform"
 msgstr ""
-"如果您愿意, 最好尝试一下转换, 以了解它们是如何工作的.Godot允许您直接从检查器"
-"编辑3D变换矩阵. 您可以下载此项目, 其中包含彩色线条和立方体, 以帮助在2D和3D中"
-"可视化 :ref:`CLASS_BASS` 矢量和原点:https://github.com/godotengine/godot-"
-"demo-projects/tree/master/misc/matrix_transform"
+"如果您愿意, 最好尝试一下转换, 以了解它们是如何工作的. Godot 允许您直接从检查"
+"器编辑 3D 变换矩阵. 您可以下载此项目, 其中包含彩色线条和立方体, 以帮助在 2D "
+"和 3D 中可视化 :ref:`class_Basis` 矢量和原点: https://github.com/godotengine/"
+"godot-demo-projects/tree/master/misc/matrix_transform"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:607
 msgid ""
@@ -791,8 +791,8 @@ msgid ""
 "excellent video about 3D linear transformations: https://www.youtube.com/"
 "watch?v=rHLEWRxRGiM"
 msgstr ""
-"如果你想要更多的解释, 你可以查看3Blue1Brown关于3D线性变换的精彩视频:https://"
-"www.youtube.com/watch?v=rHLEWRxRGiM"
+"如果你想要更多的解释, 你可以查看3Blue1Brown关于3D线性变换的精彩视频: https://"
+"www.bilibili.com/video/BV1ys411472E?p=6"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:620
 msgid "Representing rotation in 3D (advanced)"
@@ -839,11 +839,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
+msgstr "https://www.bilibili.com/video/BV1fx41187tZ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
+msgstr "https://www.bilibili.com/video/BV1SW411y7W1"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"

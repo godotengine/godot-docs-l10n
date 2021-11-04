@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot 是\\ `自由且开源的软件 <https://en.wikipedia.org/wiki/Free_and_open-"
+"Godot 是\\ `免费且开源的软件 <https://en.wikipedia.org/wiki/Free_and_open-"
 "source_software>`_\\ 可在 `OSI 认可的 <https://opensource.org/licenses/"
 "MIT>`_ MIT 许可证下使用，既自由又免费"
 
@@ -46,17 +46,19 @@ msgid "In short:"
 msgstr "简而言之："
 
 #: ../../docs/about/faq.rst:16
+#, fuzzy
 msgid ""
-"You are free to download and use Godot for any purpose, personal, non-"
+"You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
-msgstr "你可以免费下载 Godot 并将其用于任何目的，包括个人、非营利、商业等等。"
+msgstr ""
+"您可以免费下载 Godot 并将其用于任何正当目的，包括个人、非营利、商业等等。"
 
 #: ../../docs/about/faq.rst:17
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"无论出于任何原因，商业还是非商业，你都可以根据自己的心之所向，自由地对 Godot "
+"无论出于任何原因，商业还是非商业，您都可以根据自己的心之所向，自由地对 Godot "
 "进行修改、分发、再分发、改版。"
 
 #: ../../docs/about/faq.rst:19
@@ -105,7 +107,7 @@ msgstr "Godot 支持哪些平台？"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**编辑器：**"
+msgstr "\\ **编辑器：**\\"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
@@ -121,7 +123,7 @@ msgstr "X11（Linux、\\*BSD）"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "**导出游戏：**"
+msgstr "\\ **导出游戏：**\\"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
@@ -149,9 +151,7 @@ msgstr "同时支持 32 位和 64 位的二进制文件，默认为 64 位。"
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
-msgstr ""
-"一些用户还报告在使用 Linux 的基于 ARM 的系统上成功构建和使用 Godot，如树莓"
-"派。"
+msgstr "一些用户也在 Linux 的基于 ARM 的系统上成功构建和使用 Godot，如树莓派。"
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -180,8 +180,8 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"Godot 官方支持的语言是 GDScript、Visual Scripting、C＃和 C++。请参阅\\ :ref:`"
-"编写脚本 <toc-learn-scripting>`\\ 章节中的各个语言的段落。"
+"Godot 官方支持的语言是 GDScript、Visual Scripting、C＃和 C++。想要了解本部分"
+"请参阅\\ :ref:`编写脚本 <toc-learn-scripting>`\\ 章节中的各个语言的段落。"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -207,9 +207,9 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
-"注意，对 C# 的支持仍然相对比较新，因此，使用该语言可能会遇到一些问题。我们友"
-"好且勤奋的开发社区随时准备解决出现的新问题，但由于这是一个开源项目，我们建议"
-"你先自己做一些排查。搜索\\ `现存问题 <https://github.com/godotengine/godot/"
+"注意，对 C# 支持的时间相对不长，因此，使用该语言可能会遇到一些问题。我们友好"
+"且勤奋的开发社区随时准备解决出现的新问题，但由于这是一个开源项目，我们建议你"
+"先自己做一些排查。搜索\\ `现存问题 <https://github.com/godotengine/godot/"
 "issues>`_\\ 中的讨论是开始故障排除的好方法。"
 
 #: ../../docs/about/faq.rst:85
@@ -252,8 +252,8 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity**."
 msgstr ""
-"使用 GDScript 有不少原因——特别是在进行原型设计时、在项目的 alpha/beta 阶段、"
-"或者不是在创建下一个 3A 大作的时候——但最突出的原因就是整体\\ **复杂度降低**"
+"在项目中使用 GDScript 会有一些优势——尤其是在进行原型设计时、在项目的 alpha/"
+"beta 阶段、或者项目不是 3A 大作时——但最突出的优势就是整体\\ **复杂度降低**"
 "\\ 。"
 
 #: ../../docs/about/faq.rst:106
@@ -268,8 +268,8 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
-"为 Godot 创建一个紧密集成的自定义脚本语言的初衷是双重的：首先，关于生产力，它"
-"减少了启动和运行 Godot 所需的时间，使开发人员能够快速接触引擎；其次，它减少了"
+"为 Godot 创建一个紧密集成的自定义脚本语言的原因有两点：首先，它减少了启动和运"
+"行Godot 所需的时间，使开发人员能够快速上手引擎，提高了生产力；其次，它减少了"
 "维护的总体负担，减少了问题的维度，并允许引擎的开发人员专注于排除错误并改进与"
 "引擎核心相关的功能——而不是花费大量时间来尝试在一大堆语言中获得一小组增量功"
 "能。"
@@ -287,11 +287,11 @@ msgid ""
 "GDScript will grow on you."
 msgstr ""
 "由于 Godot 是一个开源项目，因此从一开始就必须优先考虑更加集成和无缝的体验，而"
-"不是通过支持更熟悉的编程语言来吸引更多用户——特别是在支持那些更熟悉的语言会导"
-"致更糟糕的体验时。我们理解你更愿意在 Godot 中使用其他语言（请参阅上面支持的选"
-"项列表）。话虽如此，如果你还没试过 GDScript，先试\\ **三天**\\ 。就像 Godot "
-"一样，一旦你看到它有多强大并且开发多迅速，我们认为 GDScript 将在你的身上得到"
-"成长。"
+"不是通过支持大多人熟悉的编程语言来吸引更多用户——特别是在支持那些大多人熟悉的"
+"语言会导致更糟糕的体验时。我们理解你更想在 Godot 中使用其他语言（请参阅上面支"
+"持的选项列表）。话虽如此，如果你还没试过 GDScript，先试\\ **三天**\\ 。就像 "
+"Godot 一样，一旦你看到它有多强大并且开发多迅速，我们认为你将对GDScript 刮目相"
+"看。"
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -347,9 +347,9 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"许多现有语言的 C++ 绑定接口都非常糟糕，会导致产生大量代码、错误、瓶颈和普遍的"
-"效率低下（Lua、Python、Squirrel、JavaScript 等）。我们希望专注于一个更好的引"
-"擎，而不是大量的整合。"
+"许多现有语言的 C++ 绑定接口都非常糟糕，会产生大量代码、错误、瓶颈，而且效率普"
+"遍低下（例如 Lua、Python、Squirrel、JavaScript 等）。我们希望专注于一个更好的"
+"引擎，而不是大量的缝合。"
 
 #: ../../docs/about/faq.rst:144
 msgid ""
@@ -373,12 +373,12 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"难以与 Godot 代码编辑器集成从而支持代码补全、动态编辑等（所有这些语言）。但这"
-"方面 GDScript 支持得很好。"
+"难以与 Godot 代码编辑器集成从而支持代码补全、动态编辑等（其他语言都这样）。但"
+"这方面 GDScript 支持得很好。"
 
 #: ../../docs/about/faq.rst:153
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript 为减少上述问题以及更多问题而设计。"
+msgstr "GDScript 诞生就是为了减少上述问题以及防止更多问题。"
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
@@ -431,8 +431,8 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"也就是说，正因为 Godot 是开源和模块化的，所以没有什么能阻止你或其他任何感兴趣"
-"的人将这些库添加为模块并使用它们——无论是开源还是闭源——发布游戏。"
+"正因为 Godot 是开源和模块化的，所以说没有什么能阻止你或其他任何感兴趣的人将这"
+"些库添加为模块并使用它们——无论是开源还是闭源——发布游戏。"
 
 #: ../../docs/about/faq.rst:178
 msgid ""
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr "为什么Godot使用Vulkan/OpenGL而不是Direct3D?"
+msgstr "为什么Godot使用 Vulkan/OpenGL 而不是 Direct3D ?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -462,9 +462,9 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
-"Godot的首要目标是实现跨平台兼容性和开放标准. OpenGL和Vulkan是在所有平台上都开"
-"放且几乎可用的技术. 由于这一设计决定, 在Windows上使用Godot开发的项目在Linux,"
-"macOS等平台上同样可用."
+"Godot的致力于实现跨平台兼容性和开放式标准. OpenGL和Vulkan是几乎在所有平台上都"
+"开放且可用的技术. 由于这一设计决策, 在 Windows 上使用 Godot 开发的项目将在 "
+"Linux、macOS 等平台上也能“开箱即用”。"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -473,8 +473,8 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
-"由于只有少数人开发Godot的渲染器, 我们更倾向于只有少数几个渲染后端需要维护. 在"
-"此之上, 所有平台使用单一的API, 这样可以有更好的一致性和很少的平台特定的问题."
+"由于 Godot 只有少数人在处理其渲染器, 因此我们希望维护较少的渲染后端. 最重要的"
+"是, 在所有平台上使用单个 API 可以提高一致性, 减少特定于平台的问题。"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -482,12 +482,12 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
-"未来一段时间后, 我们可能会为Godot开发一个Direct3D 12渲染器(主要面向Xbox), 但"
-"是Vulkan和OpenGL将仍然是包括Windows在内的所有平台的默认渲染后端."
+"从长远来看, 我们可能会为 Godot 开发 Direct3D 12 渲染器（主要用于 Xbox 的目"
+"的）, 但 Vulkan 和 OpenGL 仍将是所有平台（包括 Windows）上的默认渲染后端."
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr "为什么Godot致力于保持小型的核心功能集？"
+msgstr "为什么Godot旨在保持其核心功能集较小？"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -495,8 +495,8 @@ msgid ""
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot有意不包含可以通过附加组件实现的功能,除非这些功能使用频率很高.这方面的一"
-"个例子就是高级人工智能功能."
+"Godot有意不包含可以通过附加组件实现的功能, 除非它们经常使用. 这方面的一个例子"
+"是先进的人工智能功能."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
@@ -512,10 +512,10 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
-"**代码维护和表面错误** 每次我们在Godot仓库中接受新的代码时, 现有的贡献者往往"
-"会承担起维护代码的责任. 有些贡献者在合并了他们的代码后并不总是会继续关注, 这"
-"可能会使我们很难维护这些代码, 会导致维护不善的功能与永远无法修复的bug. 此外, "
-"随着时间的推移, 需要测试和检查的 \"API表层\" 不断增加."
+"**代码维护和表面bugs** 每次我们在Godot仓库中接受新的代码时, 现有的贡献者往往"
+"会承担起维护它的责任. 一些贡献者在合并他们的代码后并不总是坚持下去, 这会使我"
+"们难以维护有问题的代码. 这可能会导致维护不善的功能以及从未修复的错误. 最重要"
+"的是, 需要测试和检查回归的“API 表面”随着时间的推移不断增加."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -524,8 +524,8 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
-"**易于贡献.** 通过保持代码库小巧, 整洁, 可以从源代码中快速轻松地进行编译. 这"
-"使得新的贡献者起步更简单, 而无需购买高端硬件."
+"**易于贡献.** 通过保持代码库小而整洁, 可以保持快速、轻松地从源代码编译. 这使"
+"得新贡献者更容易开始使用 Godot, 而无需他们购买高端硬件."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -534,9 +534,9 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
-"**将引擎的二进制文件的大小保持在较小的范围内.** 并非每个人都有高速网络. 这是"
-"为了确保每个人都可以在不到5分钟的时间内下载, 解压并运行Godot, 方便世界各地的"
-"开发者使用."
+"**为编辑器保持较小的二进制大小.** 并非每个人都拥有快速的 Internet 连接. 确保"
+"每个人都可以在 5 分钟内下载、解压缩和运行 Godot 编辑器, 这使得所有国家/地区的"
+"开发人员都可以更轻松地访问 Godot."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -644,7 +644,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:282
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr "就是这样！您的游戏应该能够以多种分辨率运行."
+msgstr "就是这样！你的游戏应该能够以多种分辨率运行."
 
 #: ../../docs/about/faq.rst:284
 msgid ""
@@ -764,13 +764,13 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
-"您使用该软件的经验和您遇到的问题(我们关心的不仅仅是关于如何改进它的想法)."
+"你使用该软件的经验和你遇到的问题(我们关心的不仅仅是关于如何改进它的想法)."
 
 #: ../../docs/about/faq.rst:339
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
-msgstr "您希望实现的功能, 因为您需要它们用于您的项目."
+msgstr "你希望实现的功能, 因为你需要它们用于你的项目."
 
 #: ../../docs/about/faq.rst:341
 msgid ""
@@ -779,7 +779,7 @@ msgstr "学习软件时难以理解的概念."
 
 #: ../../docs/about/faq.rst:342
 msgid "The parts of your workflow you would like to see optimized."
-msgstr "您的工作流程中希望优化的部分."
+msgstr "你的工作流程中希望优化的部分."
 
 #: ../../docs/about/faq.rst:343
 msgid ""

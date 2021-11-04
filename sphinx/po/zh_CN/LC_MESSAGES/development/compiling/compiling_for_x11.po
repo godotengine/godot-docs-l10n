@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,7 +170,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
-msgstr "如果您希望使用 Clang 而不是 GCC 编译器, 可以使用这个命令:"
+msgstr "如果你希望使用 Clang 而不是 GCC 编译器, 可以使用这个命令:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid ""
@@ -219,15 +219,21 @@ msgstr "要编译一个 *精简* 构建, 它提供了编辑器功能, 可以自�
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid ""
+"To compile a debug *server* build which can be used with :ref:`remote "
+"debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:150
+msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr "要编译一个经过优化以运行专用游戏的 *服务器* 版本, 使用以下构建选项::"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:151
+#: ../../docs/development/compiling/compiling_for_x11.rst:156
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -239,21 +245,21 @@ msgstr ""
 "多数发行版的二进制文件, 则应在较旧的发行版(例如Ubuntu 16.04)上构建它们. 您可"
 "以使用虚拟机或容器来设置合适的构建环境."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:161
+#: ../../docs/development/compiling/compiling_for_x11.rst:166
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr "要构建X11(Linux, \\*BSD)导出模板, 请使用以下参数运行构建系统:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:164
+#: ../../docs/development/compiling/compiling_for_x11.rst:169
 msgid "(32 bits)"
 msgstr "( 32 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:171
+#: ../../docs/development/compiling/compiling_for_x11.rst:176
 msgid "(64 bits)"
 msgstr "( 64 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:178
+#: ../../docs/development/compiling/compiling_for_x11.rst:183
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -261,18 +267,18 @@ msgstr ""
 "请注意, 与您的主机平台相反的位(64/32)交叉编译并不总是直接的, 并且可能需要"
 "chroot环境."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:181
+#: ../../docs/development/compiling/compiling_for_x11.rst:186
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要创建标准导出模板, 必须将生成的文件复制到:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:187
+#: ../../docs/development/compiling/compiling_for_x11.rst:192
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr "并以此命名(即使对于\\*BSD, 它也被Godot视为\" Linux X11\"):"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:196
+#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -281,7 +287,7 @@ msgstr ""
 "此外, 如果要编写自定义模块或自定义C ++代码, 则可能需要在此处将二进制文件配置"
 "为自定义导出模板:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:202
+#: ../../docs/development/compiling/compiling_for_x11.rst:207
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -290,41 +296,43 @@ msgstr ""
 "您甚至不需要复制它们, 只需引用在Godot源文件夹的 ``bin/`` 目录中生成的文件, 因"
 "此下次构建时, 将自动引用自定义模板."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:207
+#: ../../docs/development/compiling/compiling_for_x11.rst:212
 msgid "Using Clang and LLD for faster development"
 msgstr "使用 Clang 和 LLD 可以加快开发速度"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:209
+#: ../../docs/development/compiling/compiling_for_x11.rst:214
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
 msgstr ""
 "你也可以使用Clang和LD来构建Godot. 与默认的GCC + GNU ld设置相比, 这有两个好处:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:212
+#: ../../docs/development/compiling/compiling_for_x11.rst:217
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr "与GNU ld或gold相比,LD链接Godot的速度明显更快. 这导致更快的迭代时间."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:214
+#: ../../docs/development/compiling/compiling_for_x11.rst:219
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr "与GCC相比,Clang倾向于给出更多有用的错误信息."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:216
+#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
 msgstr ""
 "为此, 请从分发的包管理器中安装 Clang 和 \"lld\" 包, 然后使用以下 SCons 命令::"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:221
+#: ../../docs/development/compiling/compiling_for_x11.rst:226
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
+"构建完成后，将在 ``bin/`` 文件夹中创建一个以 ``.llvm`` 为后缀的新的二进制文"
+"件。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:224
+#: ../../docs/development/compiling/compiling_for_x11.rst:229
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

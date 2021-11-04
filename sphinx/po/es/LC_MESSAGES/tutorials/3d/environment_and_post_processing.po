@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -840,7 +840,6 @@ msgid "The **Blend Mode** of the effect can also be changed:"
 msgstr "El **Modo de mezcla** del efecto también puede ser cambiado:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
-#, fuzzy
 msgid ""
 "**Additive** is the strongest one, as it only adds the glow effect over the "
 "image with no blending involved. In general, it's too strong to be used, but "
@@ -851,30 +850,28 @@ msgstr ""
 "puede verse bien con Bloom de baja intensidad (produce un efecto de sueño)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
-#, fuzzy
 msgid ""
 "**Screen** ensures glow never brightens more than itself and it works great "
 "as an all around."
 msgstr ""
-"La **pantalla** es la predeterminada. Asegura que el brillo nunca brille más "
-"que sí mismo y funciona muy bien como un todo."
+"**Pantalla** asegura que el brillo nunca ilumine más que él mismo y funciona "
+"muy bien como un todo."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
-#, fuzzy
 msgid ""
 "**Softlight** is the default and weakest one, producing only a subtle color "
 "disturbance around the objects. This mode works best on dark scenes."
 msgstr ""
-"**LuzSuave** es el más débil, produciendo sólo una sutil alteración del "
-"color alrededor de los objetos. Este modo funciona mejor en escenas oscuras."
+"**LuzSuave** es el predeterminado y el más débil, produciendo sólo una sutil "
+"alteración del color alrededor de los objetos. Este modo funciona mejor en "
+"escenas oscuras."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
-#, fuzzy
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "only shows the glow effect without the image below."
 msgstr ""
-"**Reemplazar** puede ser usado para desdibujar toda la pantalla o depurar el "
+"**Reemplazar** puede ser usado para difuminar toda la pantalla o depurar el "
 "efecto. Sólo muestra el efecto de brillo sin la imagen de abajo."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:328

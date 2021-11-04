@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,21 +93,38 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:53
-msgid "GDScript arrays, dictionaries"
-msgstr "Arrays y diccionarios GDScript"
+msgid "Rendering"
+msgstr "Renderización"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid ""
-"In GDScript, reading and writing elements from multiple threads is ok, but "
+"Instancing nodes that render anything in 2D or 3D (such as Sprite) is *not* "
+"thread-safe by default. To make rendering thread-safe, set the **Rendering > "
+"Threads > Thread Model** project setting to **Multi-Threaded**."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:58
+msgid ""
+"Note that the Multi-Threaded thread model has several known bugs, so it may "
+"not be usable in all scenarios."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:62
+msgid "GDScript arrays, dictionaries"
+msgstr "Arrays y diccionarios GDScript"
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:64
+msgid ""
+"In GDScript, reading and writing elements from multiple threads is OK, but "
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:58
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:67
 msgid "Resources"
 msgstr "Recursos"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:69
 msgid ""
 "Modifying a unique resource from multiple threads is not supported. However "
 "handling references on multiple threads is supported, hence loading "

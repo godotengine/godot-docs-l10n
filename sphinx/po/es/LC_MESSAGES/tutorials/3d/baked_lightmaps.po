@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:9
-#, fuzzy
 msgid ""
 "Baked lightmaps are an alternative workflow for adding indirect (or fully "
 "baked) lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked "
@@ -39,21 +38,22 @@ msgstr ""
 "iluminación indirecta (o baked) a una escena. A diferencia del enfoque :ref:"
 "`doc_gi_probes`, los mapas de luz baked funcionan bien en PCs y dispositivos "
 "móviles de gama baja, ya que casi no consumen recursos en tiempo de "
-"ejecución."
+"ejecución. Además, a diferencia de GIProbe, los mapas de luz baked se pueden "
+"utilizar opcionalmente para almacenar iluminación directa, lo que "
+"proporciona aún más mejoras de rendimiento."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:15
-#, fuzzy
 msgid ""
 "Unlike GIProbes, Baked Lightmaps are completely static. Once baked, they "
 "can't be modified at all. They also don't provide the scene with "
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
-"A diferencia de los \"Giprobe\", los Baked Lightmaps son completamente "
-"estáticos. Una vez horneados, no pueden ser modificados en absoluto. Tampoco "
-"proporcionan reflejos a la escena, así que usar :ref:`doc_reflection_probes` "
-"junto con ella en interiores (o usar un cielo en exteriores) es un requisito "
-"para obtener buena calidad."
+"A diferencia de los GIProbes, los Baked Lightmaps (mapas de luces baked) son "
+"completamente estáticos. Una vez creados, no pueden ser modificados en "
+"absoluto. Tampoco proporcionan reflejos a la escena, así que usar :ref:"
+"`doc_reflection_probes` junto con ella en interiores (o usar un Sky en "
+"exteriores) es un requisito para obtener buena calidad."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:20
 msgid ""
@@ -86,7 +86,6 @@ msgstr ""
 "`doc_spatial_material` o en sombreadores personalizados)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
-#, fuzzy
 msgid ""
 "In the end, deciding which indirect lighting approach is better depends on "
 "your use case. In general, GIProbe is easier to set up and works better with "
@@ -103,7 +102,6 @@ msgid "Visual comparison"
 msgstr "Comparaciones visuales"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:39
-#, fuzzy
 msgid ""
 "Here are some comparisons of how BakedLightmap vs. GIProbe look. Notice that "
 "lightmaps are more accurate, but also suffer from the fact that lighting is "
@@ -157,28 +155,23 @@ msgstr ""
 "reimportaciones, por lo que sólo se regenerará cuando sea necesario."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:64
-#, fuzzy
 msgid ""
 "Select the imported scene in the filesystem dock, then go to the **Import** "
 "dock. There, the following option can be modified:"
 msgstr ""
-"Este es probablemente el mejor enfoque en general. La única desventaja es "
-"que, en los modelos grandes, el proceso de unwrapping puede llevar un tiempo "
-"considerable en la importación. Simplemente selecciona la escena importada "
-"en el panel de Sistema de Archivos, luego ve al panel Importar. Allí se "
-"puede modificar la siguiente opción:"
+"Seleccione la escena importada en el panel del sistema de archivos, luego "
+"vaya al panel **Importar**. Allí, se puede modificar la siguiente opción:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:69
-#, fuzzy
 msgid ""
 "The **Light Baking** mode needs to be set to **Gen Lightmaps**. A texel size "
 "in world units must also be provided, as this will determine the final size "
 "of the lightmap texture (and, in consequence, the UV padding in the map)."
 msgstr ""
 "El modo **Light Baking** debe ser ajustado a **\"Gen Lightmaps \"**. También "
-"se debe proporcionar un tamaño de texto en unidades mundiales, ya que esto "
+"se debe proporcionar un tamaño de texel en unidades del mundo, ya que esto "
 "determinará el tamaño final de la textura del mapa de luz (y, en "
-"consecuencia, el relleno de UV en el mapa)."
+"consecuencia, el relleno UV en el mapa)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:73
 msgid ""
@@ -189,7 +182,6 @@ msgstr ""
 "escena tendrán sus mapas de UV2 correctamente generados."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:78
-#, fuzzy
 msgid ""
 "When reusing a mesh within a scene, keep in mind that UVs will be generated "
 "for the first instance found. If the mesh is re-used with different scales "
@@ -197,7 +189,7 @@ msgid ""
 "result in inefficient lightmaps. Don't reuse a source mesh at significantly "
 "different scales if you are planning to use lightmapping."
 msgstr ""
-"Como advertencia: Al reutilizar una malla dentro de una escena, toma en "
+"Como advertencia: Al reutilizar una malla dentro de una escena, tenga en "
 "cuenta que se generarán UVs para la primera instancia encontrada. Si la "
 "malla se reutiliza con diferentes escalas (y las escalas son muy diferentes, "
 "más de la mitad o dos veces), esto resultará en mapas de luz ineficientes. "
@@ -239,7 +231,6 @@ msgid "Unwrap from your 3D DCC"
 msgstr "Desplegar desde de su 3D DCC"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:102
-#, fuzzy
 msgid ""
 "The last option is to do it from your favorite 3D app. This approach is "
 "generally not recommended, but it's explained first so that you know it "
@@ -247,11 +238,11 @@ msgid ""
 "re-import a lot, the texture generation process can be quite costly within "
 "Godot, so having it unwrapped before import can be faster."
 msgstr ""
-"Una opción es hacerlo desde tu aplicación 3D favorita. Este enfoque no es "
-"generalmente recomendado, pero se explica primero para que sepas que existe. "
-"La principal ventaja es que, en los objetos complejos que se quieran "
-"reimportar mucho, el proceso de generación de la textura puede ser bastante "
-"costoso dentro de Godot, por lo que tenerlo desenvuelto antes de la "
+"La última opción es hacerlo desde tu aplicación 3D favorita. Este enfoque "
+"generalmente no se recomienda, pero se explica primero para que sepa que "
+"existe. La principal ventaja es que, en objetos complejos que es posible que "
+"desee volver a importar mucho, el proceso de generación de texturas puede "
+"ser bastante costoso dentro de Godot, por lo que desenvolverlo antes de la "
 "importación puede ser más rápido."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:108
@@ -259,13 +250,12 @@ msgid "Simply do an unwrap on the second UV2 layer."
 msgstr "Simplemente despliegue la segunda capa UV2."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:112
-#, fuzzy
 msgid ""
 "Then import the 3D scene normally. Remember you will need to set the texture "
 "size on the mesh after import."
 msgstr ""
-"Y se importan normalmente. Recuerda que tendrás que establecer el tamaño de "
-"la textura en la malla después de la importación."
+"Luego importe la escena 3D normalmente. Recuerde que necesitará establecer "
+"el tamaño de la textura en la malla después de la importación."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:117
 msgid ""
@@ -568,6 +558,14 @@ msgid ""
 "to 1 to speed up baking. Remember that your scene will be darker when "
 "decreasing the number of bounces."
 msgstr ""
+"**Bounces** La cantidad de bounces que se utilizarán para la iluminación "
+"indirecta. El valor predeterminado (3) es un buen compromiso entre los "
+"tiempos de creación y la calidad. Los valores más altos harán que la luz "
+"rebote más veces antes de detenerse, lo que hace que la iluminación "
+"indirecta parezca más suave (pero también más brillante). Durante el trabajo "
+"de iteración de iluminación inicial, se recomienda disminuir el número de "
+"bounces a 1 para acelerar la creación. Recuerda que tu escena será más "
+"oscura al disminuir el número de bounces."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:259
 msgid ""
@@ -575,6 +573,10 @@ msgid ""
 "significantly less noisy. This increases bake times and can occasionally "
 "introduce artifacts, but the result is often worth it."
 msgstr ""
+"**Use Denoiser:** Si está habilitado, usa OpenImageDenoise para hacer que el "
+"mapa de luz sea significativamente menos ruidoso. Esto aumenta los tiempos "
+"de creación y ocasionalmente puede introducir artefactos, pero el resultado "
+"a menudo vale la pena."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:262
 msgid ""
@@ -583,6 +585,11 @@ msgid ""
 "clipping if you have bright lights in your scene. When HDR is disabled, "
 "banding may also be visible in the lightmap."
 msgstr ""
+"**Use Hdr:** Si está deshabilitado, los lightmaps son más pequeños en el "
+"disco, pero no podrán capturar ninguna luz sobre el blanco (1.0). Esto "
+"resultará en un recorte visible si tiene luces brillantes en su escena. "
+"Cuando HDR está desactivado, las bandas también pueden ser visibles en el "
+"lightmap."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:266
 msgid ""
@@ -594,6 +601,14 @@ msgid ""
 "grayscale lighting. This can be disabled together with HDR to get the "
 "smallest possible lightmap file at a given resolution."
 msgstr ""
+"**Usar Color:** Si se desactiva, los lightmaps ocuparán menos espacio en el "
+"disco, pero el lightmap no podrá almacenar el color de la luz. Cuando se "
+"hace baking exclusivamente de la luz indirecta, la diferencia podría no ser "
+"apenas visible debido a que la luz indirecta es generalmente poco saturada. "
+"Sin embargo, cuando se bakea la luz directa e indirecta usando el modo de "
+"bake **Todo**, los colores de la luz se convertirán a escala de grises. Se "
+"puede desactivar junto al HDR para generar el menor tamaño de archivo "
+"posible para un lightmap de una misma resolución."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:273
 msgid ""
@@ -602,6 +617,11 @@ msgid ""
 "bleeding or dark spots in your lightmap after baking. This setting does not "
 "affect real-time shadows casted on baked surfaces."
 msgstr ""
+"**Bias:** El valor de offset a usar para las sombras en unidades 3D. "
+"Generalmente no necesitas cambiar este valor, excepto que te estés "
+"encontrando con problemas de sangrado de luz o manchas negras en tu lightmap "
+"después de hacer un bake. Esta opción no afecta a las sombras emitidas en "
+"tiempo real en superficies con bake."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:277
 msgid ""
@@ -610,6 +630,11 @@ msgid ""
 "in *lower-resolution* lightmaps, which result in faster bake times and lower "
 "file sizes at the cost of blurrier indirect lighting and shadows."
 msgstr ""
+"**Texels por unidad predeterminado:** Para mallas que no especifican su "
+"propia densidad de texels, usarán este valor como el suyo propio. Mayores "
+"valores darán como resultado lightmaps de *menor resolución*, lo cual puede "
+"resultar en mejores tiempos de bake y menores tamaños de archivos al coste "
+"de que la luz indirecta y las sombras estén más difuminadas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:283
 #, fuzzy
@@ -625,6 +650,13 @@ msgid ""
 "enabled in the Project Settings.) *This setting is ignored when the project "
 "is configured to use GLES2 by default.*"
 msgstr ""
+"**Generar:** Si está habilitado, se generará un atlas de texturas para el "
+"mapa de luz. Esto da como resultado un renderizado más eficiente, pero solo "
+"es compatible con el backend de renderizado GLES3. Desactive esta "
+"configuración si su proyecto puede recurrir a GLES2. (Este no es el caso de "
+"forma predeterminada y debe estar habilitado en la Configuración del "
+"proyecto). *Esta configuración se ignora cuando el proyecto está configurado "
+"para usar GLES2 de forma predeterminada.*"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:291
 msgid ""
@@ -632,6 +664,10 @@ msgid ""
 "in a more efficient atlas, but are less compatible with old/low-end "
 "hardware. If in doubt, leave this setting on its default value (4096)."
 msgstr ""
+"**Tamaño máximo:** El tamaño máximo del atlas en píxeles. Los valores más "
+"altos dan como resultado un atlas más eficiente, pero son menos compatibles "
+"con hardware antiguo/de gama baja. En caso de duda, deje esta configuración "
+"en su valor predeterminado (4096)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:296
 msgid "Capture"
@@ -644,6 +680,11 @@ msgid ""
 "objects will not be able to *contribute* indirect lighting to the scene. "
 "This is a limitation of lightmaps."
 msgstr ""
+"**Habilitado:** Esto habilita la captura de la sonda para que los objetos "
+"dinámicos puedan *recibir* iluminación indirecta. Independientemente del "
+"valor de este ajuste, los objetos dinámicos no podrán *contribuir* "
+"iluminación indirecta a la escena. Esta es una limitación de los mapas de "
+"luz."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:301
 msgid ""
@@ -651,6 +692,10 @@ msgid ""
 "values result in more sparse probe placement, which decreases bake times and "
 "file size at the cost of lower lighting accuracy for dynamic objects."
 msgstr ""
+"**Tamaño de celda:** La distancia entre sondas de mapa de luz en unidades "
+"3D. Los valores más altos dan como resultado una colocación de la sonda más "
+"dispersa, lo que reduce los tiempos de creación y el tamaño del archivo a "
+"costa de una menor precisión de iluminación para objetos dinámicos."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:304
 msgid ""
@@ -658,6 +703,10 @@ msgid ""
 "more accurate lighting, but take longer to bake. This setting does not "
 "affect the *density* of the lightmap probes, only their quality."
 msgstr ""
+"**Calidad:** La calidad de generación de la sonda de mapas de luz. Los "
+"valores más altos dan como resultado una iluminación más precisa, pero "
+"tardan más en crearse. Esta configuración no afecta la *densidad* de las "
+"sondas de mapa de luz, sólo su calidad."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:307
 msgid ""
@@ -666,13 +715,17 @@ msgid ""
 "lighting for dynamic objects. Adjust this value depending on your scene to "
 "make dynamic objects better fit with static baked lighting."
 msgstr ""
+"**Propagación:** Similar a :ref:`Propiedad de propagación de GIProbe "
+"<doc_gi_probes>`. Los valores más altos dan como resultado una iluminación "
+"indirecta más brillante y difusa para objetos dinámicos. Ajuste este valor "
+"en función de su escena para que los objetos dinámicos se ajusten mejor a la "
+"iluminación estática creada."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:313
 msgid "Data"
 msgstr "Datos"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:315
-#, fuzzy
 msgid ""
 "**Light Data**: Contains the light baked data after baking. Textures are "
 "saved to disk, but this also contains the capture data for dynamic objects, "
@@ -680,11 +733,10 @@ msgid ""
 "save this resource to an external binary ``.lmbake`` file to avoid bloating "
 "the ``.tscn`` scene with binary data encoded in Base64."
 msgstr ""
-"**Datos de la luz**: Contiene los datos de la luz horneada después de "
-"hornear. Las texturas se guardan en el disco, pero también contiene los "
-"datos de captura de los objetos dinámicos, que pueden ser un poco pesados. "
-"Si estás usando los formatos .tscn (en lugar de .scn), puedes guardarlos en "
-"el disco."
+"**Datos de la luz**: Contiene los datos de la luz creada después del baking. "
+"Las texturas se guardan en el disco, pero también contiene los datos de "
+"captura de los objetos dinámicos, que pueden ser un poco pesados. Si estás "
+"usando los formatos .tscn (en lugar de .scn), puedes guardarlos en el disco."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:321
 msgid ""
@@ -700,6 +752,11 @@ msgid ""
 "effects such as thunderstorms. However, keep in mind that it will affect "
 "*all* baked lights."
 msgstr ""
+"**Energía:** Ajusta el brillo del mapa de luz. Los valores más altos dan "
+"como resultado mapas de luz más brillantes. Esto se puede ajustar en tiempo "
+"de ejecución para efectos dinámicos de corta duración, como tormentas "
+"eléctricas. Sin embargo, tenga en cuenta que afectará a *todas* las luces "
+"creadas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:326
 msgid ""
@@ -708,6 +765,10 @@ msgid ""
 "disabled, both environment lighting and light probes are used to light up "
 "dynamic objects."
 msgstr ""
+"**Interior:** Si está habilitado, los objetos dinámicos no utilizarán la "
+"iluminación ambiental y utilizarán sondas de luz para la iluminación "
+"ambiental exclusivamente. Si está desactivado, tanto la iluminación "
+"ambiental como las sondas de luz se utilizan para iluminar objetos dinámicos."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:332
 msgid ""
@@ -715,20 +776,23 @@ msgid ""
 "to perform post-processing if needed. However, keep in mind that changes to "
 "the EXR file will be lost when baking lightmaps again."
 msgstr ""
+"El archivo EXR generado se puede ver e incluso editar utilizando un editor "
+"de imágenes para realizar el pos-procesamiento si es necesario. Sin embargo, "
+"tenga en cuenta que los cambios en el archivo EXR se perderán cuando vuelva "
+"a crear mapas de luz."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:337
 msgid "Dynamic objects"
 msgstr "Objetos dinámicos"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:339
-#, fuzzy
 msgid ""
 "In other engines or lightmapper implementations, you are generally required "
 "to manually place small objects called \"lightprobes\" all around the level "
 "to generate *capture* data. This is then used to transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
-"En otros motores o implementaciones de mapas de luz, se requiere colocar "
+"En otros motores o implementaciones de lightmapper, se requiere colocar "
 "manualmente pequeños objetos llamados \"sondas de luz\" alrededor del nivel "
 "para generar datos de *captura*. Esto se utiliza para, entonces, transferir "
 "la luz a los objetos dinámicos que se mueven alrededor de la escena."

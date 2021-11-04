@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
-msgstr "불러오기"
+msgstr "가져오기"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
 msgid ""
@@ -118,7 +118,7 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
-"3.0 버전 이전의 Godot에서는 프로젝트 밖에서 파일을 접근하는 것으로 불러오기"
+"3.0 버전 이전의 Godot에서는 프로젝트 밖에서 파일을 접근하는 것으로 가져오기"
 "를 실행했습니다. 이것이 큰 규모의 프로젝트에는 유용하지만, 대부분의 개발자들"
 "에게는 조직의 번거로움을 초래했습니다."
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "이 때문에, 애셋은 이제 프로젝트 폴더 내에서 투명하게 불러옵니다."
+msgstr "이 때문에, 애셋은 이제 프로젝트 폴더 내에서 투명하게 가져옵니다."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
 #, fuzzy
@@ -150,20 +150,23 @@ msgstr ""
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
-"using the ``load()`` and ``preload()`` methods."
+"using the ``load()`` and ``preload()`` methods. Ignoring a folder will also "
+"automatically hide it from the FileSystem dock, which can be useful to "
+"reduce clutter."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
 msgid ""
-"Ignoring a folder will also automatically hide it from the FileSystem dock, "
-"which can be useful to reduce clutter."
+"Note that the ``.gdignore`` file's contents are ignored, which is why the "
+"file should be empty. It does not support patterns like ``.gitignore`` files "
+"do."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:97
 msgid "Case sensitivity"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:98
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:99
 msgid ""
 "Windows and recent macOS versions use case-insensitive filesystems by "
 "default, whereas Linux distributions use a case-sensitive filesystem by "
@@ -173,13 +176,13 @@ msgid ""
 "characters in general)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:107
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:111
 msgid ""
 "On Windows 10, to further avoid mistakes related to case sensitivity, you "
 "can also make the project folder case-sensitive. After enabling the Windows "
@@ -187,7 +190,7 @@ msgid ""
 "window::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:120
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:121
 msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "

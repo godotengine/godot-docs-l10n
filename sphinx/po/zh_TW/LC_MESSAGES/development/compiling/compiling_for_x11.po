@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,15 +222,21 @@ msgstr "若要編譯用於以編輯器功能來自動化匯出專案的 **無周
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid ""
+"To compile a debug *server* build which can be used with :ref:`remote "
+"debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:150
+msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr "若要編譯可執行專屬遊戲伺服器的 **伺服器** 版本，請使用："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:151
+#: ../../docs/development/compiling/compiling_for_x11.rst:156
 msgid "Building export templates"
 msgstr "建置匯出樣板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -242,21 +248,21 @@ msgstr ""
 "能在多數發行版上執行的二進位執行檔，請使用較舊的發行版來建置，如 Ubuntu "
 "16.04。可以使用虛擬機或容器來設定一個適合的建置環境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:161
+#: ../../docs/development/compiling/compiling_for_x11.rst:166
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr "若要建置 X11 (Linux, \\*BSD) 匯出樣板，請使用下列參數來執行建置系統："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:164
+#: ../../docs/development/compiling/compiling_for_x11.rst:169
 msgid "(32 bits)"
 msgstr "(32 位元)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:171
+#: ../../docs/development/compiling/compiling_for_x11.rst:176
 msgid "(64 bits)"
 msgstr "(64 位元)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:178
+#: ../../docs/development/compiling/compiling_for_x11.rst:183
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -264,18 +270,18 @@ msgstr ""
 "請注意，可能無法為與目前宿主機環境不同的位元 (64/32) 進行交叉編譯時，有可能會"
 "需要 Chroot 環境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:181
+#: ../../docs/development/compiling/compiling_for_x11.rst:186
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要建立標準的匯出樣板，則必須將產生的檔案複製至："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:187
+#: ../../docs/development/compiling/compiling_for_x11.rst:192
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr "並將這些檔案如下命名 (在 Godot 中，\\*BSD 被視為「Linux X11」)："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:196
+#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -284,7 +290,7 @@ msgstr ""
 "但，若你正在撰寫客製化模組或自定 C++ 程式碼，則可能會需要在此將該二進位執行檔"
 "設定為自定匯出樣板："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:202
+#: ../../docs/development/compiling/compiling_for_x11.rst:207
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -293,11 +299,11 @@ msgstr ""
 "這種情況下甚至不需要複製檔案，只需要將這些檔案參照到 Godot 原始碼目錄的 "
 "``bin/`` 資料夾下即可。這樣下次建置時，就會自動參照到自定樣板。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:207
+#: ../../docs/development/compiling/compiling_for_x11.rst:212
 msgid "Using Clang and LLD for faster development"
 msgstr "使用 Clang 與 LLD 來更快速地開發"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:209
+#: ../../docs/development/compiling/compiling_for_x11.rst:214
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
@@ -305,18 +311,18 @@ msgstr ""
 "也可以使用 Clang 與 LLD 來建置 Godot。使用 Clang 與 LLD 比起預設的 GCC + GNU "
 "ld 有兩個好處："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:212
+#: ../../docs/development/compiling/compiling_for_x11.rst:217
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr ""
 "LLD 與 GNU ld 或 gold 比起來，連結速度明顯快很多。這樣就可以迭代地更快。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:214
+#: ../../docs/development/compiling/compiling_for_x11.rst:219
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr "Clang 比起 GCC，提供的錯誤訊息通常更有用。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:216
+#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
@@ -324,13 +330,13 @@ msgstr ""
 "要使用 Clang 與 LLD，請先使用發行版的套件管理員來安裝 Clang 與 ``lld`` 套件，"
 "然後使用下列 SCons 指令："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:221
+#: ../../docs/development/compiling/compiling_for_x11.rst:226
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:224
+#: ../../docs/development/compiling/compiling_for_x11.rst:229
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "
