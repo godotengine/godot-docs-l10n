@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,9 +49,13 @@ msgid "Similarly, if you have an index array, but you want each vertex to be uni
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:90
-msgid "If you don't add custom normals yourself, you can add them using ``generate_normals()``. The same goes for tangents."
+msgid "If you don't add custom normals yourself, you can add them using ``generate_normals()``, which should be called after generating geometry and before committing the mesh using ``commit()`` or ``commit_to_arrays()``. Calling ``generate_normals(true)`` will flip the resulting normals. As a side note, ``generate_normals()`` only works if the primitive type is set to ``Mesh.PRIMITIVE_TRIANGLES``."
 msgstr ""
 
-#: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:98
+#: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:95
+msgid "If you don't add custom tangents, they can be added with ``generate_tangents()``, but it requires that each vertex have UVs and normals set already."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:104
 msgid "By default, when generating normals, they will be calculated on a per-face basis. If you want smooth vertex normals, when adding vertices, call ``add_smooth_group()``. ``add_smooth_group()`` needs to be called while building the geometry, e.g. before the call to ``add_vertex()`` (if non-indexed) or ``add_index()`` (if indexed)."
 msgstr ""

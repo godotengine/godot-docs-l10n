@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.3\n"
+"Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-08 12:36+0200\n"
+"POT-Creation-Date: 2021-11-04 16:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/gui/index.rst:2
-msgid "GUI"
+#: ../../docs/tutorials/gui/index.rst:4
+msgid "User Interface (UI)"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:6
+msgid "In this section of the tutorial we explain the basics of creating a graphical user interface (GUI) in Godot."
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:10
+msgid "UI building blocks"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:12
+msgid "Like everything else in Godot the user interface is built using nodes, specifically :ref:`Control <class_Control>` nodes. There are many different types of controls which are useful for creating specific types of the GUI. For simplicity we can separate them into two groups: content and layout."
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:17
+msgid "Typical content controls include:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:19
+msgid ":ref:`Buttons <class_Button>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:20
+msgid ":ref:`Labels <class_Label>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:21
+msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:23
+msgid "Typical layout controls include:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:25
+msgid ":ref:`BoxContainers <class_BoxContainer>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:26
+msgid ":ref:`MarginContainers <class_MarginContainer>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:27
+msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:28
+msgid ":ref:`TabContainers <class_TabContainer>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:29
+msgid ":ref:`Popups <class_Popup>`"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:31
+msgid "The following pages explain the basics of using such controls."
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:44
+msgid "GUI skinning and themes"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:46
+msgid "Godot features an in-depth skinning/theming system for control nodes. The pages in this section explain the benefits of that system and how to set it up in your projects."
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:57
+msgid "Control node tutorials"
+msgstr ""
+
+#: ../../docs/tutorials/gui/index.rst:59
+msgid "The following articles cover specific details of using particular control nodes."
 msgstr ""
