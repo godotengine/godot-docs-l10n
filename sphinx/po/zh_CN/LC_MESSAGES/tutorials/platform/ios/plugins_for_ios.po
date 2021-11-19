@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,72 +211,70 @@ msgid "On success:"
 msgstr "成功时:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:158
-#, fuzzy
 msgid "``request_product_info``"
-msgstr "request_product_info"
+msgstr "``request_product_info``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:160
 msgid "Requests the product info on a list of product IDs."
 msgstr "在产品ID列表中请求产品信息."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:165
-#, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
 "which a string array of product IDs is assigned. Example:"
 msgstr ""
-"将Dictionary作为参数, 使用一个字段 ``product_ids`` , 一个带有产品ID列表的字符"
-"串数组. 例:"
+"参数为字典，只有一个字段 ``product_ids``\\ ，是产品 ID 字符串的数组。例如："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:191
-#, fuzzy
 msgid "``restore_purchases``"
-msgstr "restore_purchases"
+msgstr "``restore_purchases``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:193
-#, fuzzy
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
-"恢复以前在用户帐户上进行的购买. 这将为每个先前购买的产品ID创建响应事件."
+"恢复用户账户之前完成的购买。会为每一个之前购买过的产品 ID 创建响应事件。"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:199
 msgid "The response events will be dictionaries with the following fields:"
-msgstr "响应事件将是包含以下字段的字典:"
+msgstr "响应事件将是包含以下字段的字典："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
 msgid "``set_auto_finish_transaction``"
-msgstr ""
+msgstr "``set_auto_finish_transaction``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:212
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
 "finalized automatically. Call this method prior to calling ``purchase()``."
 msgstr ""
+"设为 ``true`` 时，一旦购买成功，就会自动结束购买。请在调用 ``purchase()`` 前"
+"调用本方法。"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:218
 msgid ""
 "Takes a boolean as a parameter which specifies if purchases should be "
 "automatically finalized. Example:"
-msgstr ""
+msgstr "参数为布尔值，表示购买是否应该自动结束。例如："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:226
-#, fuzzy
 msgid "``finish_transaction``"
-msgstr "``connection``"
+msgstr "``finish_transaction``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:228
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
 "method after you receive a successful purchase response."
-msgstr ""
+msgstr "如果你不希望自动结束交易事务，请在接收到成功购买响应后调用本方法。"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:235
 msgid ""
 "Takes a string ``product_id`` as an argument. ``product_id`` specifies what "
 "product to finalize the purchase on. Example:"
 msgstr ""
+"参数 ``product_id`` 是一个字符串。\\ ``product_id`` 表示需要结束购买的产品。"
+"例如："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:243
 msgid "Game Center"
@@ -291,47 +289,42 @@ msgstr ""
 "plugins/blob/master/plugins/gamecenter/game_center.mm>`_ ."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
-#, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has the following methods:"
-msgstr "游戏中心的API是通过 ``GameCenter`` 单例来实现的. 它有以下方法:"
+msgstr "游戏中心 API 可以通过 ``GameCenter`` 单例使用。它有以下方法："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:262
-#, fuzzy
 msgid "and the pending events interface:"
-msgstr "和pending_event接口"
+msgstr "以及未决事件接口："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
-#, fuzzy
 msgid "``authenticate``"
-msgstr "认证"
+msgstr "``authenticate``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:272
 msgid "Authenticates a user in Game Center."
 msgstr "在游戏中心对用户进行身份验证."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
-#, fuzzy
 msgid "``post_score``"
-msgstr "post_score"
+msgstr "``post_score``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:303
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "将分数发布到游戏中心排行榜."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:308
-#, fuzzy
 msgid "Takes a dictionary as a parameter, with two fields:"
-msgstr "将Dictionary作为参数, 包含两个字段:"
+msgstr "参数为一个字典，有两个字段："
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:310
 msgid "``score`` a float number"
-msgstr "``得分`` 浮点数"
+msgstr "``score`` 浮点数"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:311
 msgid "``category`` a string with the category name"
-msgstr "``category`` 一个带有类别名称的字符串"
+msgstr "``category`` 表示类别名称的字符串"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:313
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:360
@@ -339,9 +332,8 @@ msgid "Example:"
 msgstr "示例:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:345
-#, fuzzy
 msgid "``award_achievement``"
-msgstr "award_achievement"
+msgstr "``award_achievement``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:347
 msgid "Modifies the progress of a Game Center achievement."
@@ -370,18 +362,16 @@ msgid ""
 msgstr "``show_completion_banner``(bool)游戏中心是否应该在屏幕顶部显示成就横幅"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:391
-#, fuzzy
 msgid "``reset_achievements``"
-msgstr "reset_achievements"
+msgstr "``reset_achievements``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:393
 msgid "Clears all Game Center achievements. The function takes no parameters."
-msgstr "清除所有Game Center成就. 该函数不带参数."
+msgstr "清除所有 Game Center 成就。该函数不带参数。"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:420
-#, fuzzy
 msgid "``request_achievements``"
-msgstr "request_achievements"
+msgstr "``request_achievements``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:422
 msgid ""
@@ -390,9 +380,8 @@ msgid ""
 msgstr "请求游戏角色取得进步的所有游戏中心成就. 该函数不带参数."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:452
-#, fuzzy
 msgid "``request_achievement_descriptions``"
-msgstr "request_achievement_descriptions"
+msgstr "``request_achievement_descriptions``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:454
 msgid ""
@@ -401,9 +390,8 @@ msgid ""
 msgstr "无论进度如何, 都要求描述所有现有的Game Center成就. 该函数不带参数."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:489
-#, fuzzy
 msgid "``show_game_center``"
-msgstr "show_game_center"
+msgstr "``show_game_center``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:491
 msgid ""

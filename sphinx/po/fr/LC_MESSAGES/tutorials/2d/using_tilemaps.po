@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,17 +53,16 @@ msgid "Project setup"
 msgstr "Configuration du projet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:23
-#, fuzzy
 msgid ""
 "This demo will use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
-"Pour cette démo, nous allons utiliser ces tuiles prises du pack d'art "
-"\"Abstract Platformer\" de Kenney. Vous pouvez trouver le pack complet `ici "
+"Cette démo utilisera les tuiles suivantes tirées du pack artistique "
+"\"Abstract Platformer\" de Kenney. Vous pouvez trouver le jeu complet `ici "
 "<https://kenney.nl/assets/abstract-platformer>`_ mais pour cette démo nous "
-"garderons ce petit pack."
+"nous en tiendrons à ce petit jeu."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
@@ -660,11 +659,10 @@ msgid "3x3"
 msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
-#, fuzzy
 msgid ""
 "In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
-"En mode 3x3, chaque bitmak contient 9 bits (4 coins, 4 bords, 1 centre)"
+"En mode 3x3, chaque bitmask contient 9 bits (4 coins, 4 bords, 1 centre)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
@@ -741,7 +739,6 @@ msgid "Tips and tricks"
 msgstr "Trucs et Astuces"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:343
-#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -749,9 +746,9 @@ msgid ""
 "Snapping** section."
 msgstr ""
 "Si vous utilisez une :ref:`Camera2D <class_Camera2D>` pour faire défiler "
-"votre niveau, vous risquez de remarquer que des lignes apparaissent entre "
-"vos tuiles. Pour empêcher ça, ouvrez \"Projet -> Paramètres de Projet\" et "
-"dans la section \"Rendering -> Quality\" activez \"Use Pixel Snap\"."
+"votre niveau, vous pouvez remarquer que des lignes apparaissent entre vos "
+"tuiles. Pour corriger cela, ouvrez les paramètres du projet et activez **Use "
+"Gpu Pixel Snap** dans la section **Rendu > 2d > Snapping**."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""

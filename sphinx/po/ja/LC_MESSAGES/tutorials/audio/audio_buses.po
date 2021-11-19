@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -251,10 +251,21 @@ msgstr ""
 "ターを思い浮かべてください。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:114
+msgid "Capture"
+msgstr "キャプチャ"
+
+#: ../../docs/tutorials/audio/audio_buses.rst:116
+msgid ""
+"The Capture effect copies the audio frames of the audio bus that it is on "
+"into an internal buffer. This can be used to capture data from the "
+"microphone or to transmit audio over the network in real-time."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:121
 msgid "Chorus"
 msgstr "Chorus(コーラス)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:116
+#: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid ""
 "The Chorus effect duplicates the incoming audio, delays the duplicate "
 "slightly and uses an LFO to continuously modulate the pitch of the "
@@ -267,11 +278,11 @@ msgstr ""
 "ングします。これにより、きらめく効果が得られ、サウンドにステレオ幅が追加され"
 "ます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:122
+#: ../../docs/tutorials/audio/audio_buses.rst:129
 msgid "Compressor"
 msgstr "Compressor(コンプレッサー)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:124
+#: ../../docs/tutorials/audio/audio_buses.rst:131
 msgid ""
 "A dynamic range compressor automatically attenuates the level of the "
 "incoming signal when its amplitude exceeds a certain threshold. The level of "
@@ -288,21 +299,21 @@ msgstr ""
 "な部分で信号のダイナミックレンジを減らすことです。信号のダイナミックレンジを"
 "小さくすると、ミックスしやすくなります。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:132
+#: ../../docs/tutorials/audio/audio_buses.rst:139
 msgid "The compressor has many uses. For example:"
 msgstr "コンプレッサーには多くの用途があります。例えば:"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:134
+#: ../../docs/tutorials/audio/audio_buses.rst:141
 msgid "It can be used in the Master bus to compress the whole output."
 msgstr "マスターバスで使用して、出力全体を圧縮できます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:135
+#: ../../docs/tutorials/audio/audio_buses.rst:142
 msgid ""
 "It can be used in voice channels to ensure they sound as even as possible."
 msgstr ""
 "音声チャンネルで使用して、可能な限り均等に聞こえるようにすることができます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:136
+#: ../../docs/tutorials/audio/audio_buses.rst:143
 msgid ""
 "It can be *sidechained*. This means it can reduce the sound level of one "
 "signal using the level of another audio bus for threshold detection. This "
@@ -314,7 +325,7 @@ msgstr ""
 "きることを意味します。このテクニックは、音声を聞く必要があるときに音楽や効果"
 "音のレベルを「ダッキング」するビデオゲームミキシングでは非常に一般的です。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:140
+#: ../../docs/tutorials/audio/audio_buses.rst:147
 msgid ""
 "It can accentuate transients by using a slower attack. This can make sound "
 "effects more punchy."
@@ -322,7 +333,7 @@ msgstr ""
 "ゆっくりとした音の立ち上がりを使用すると、トランジェントを強調できます。これ"
 "により、効果音がよりパンチの効いたものになります。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:145
+#: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid ""
 "If your goal is to prevent a signal from exceeding a given amplitude "
 "altogether, rather than to reduce the dynamic range of the signal, a :ref:"
@@ -333,11 +344,11 @@ msgstr ""
 "いようにすることが目標である場合は、コンプレッサーよりも :ref:`limiter "
 "<doc_audio_buses_limiter>` の方が適しています。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:152
+#: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Delay"
 msgstr "Delay(ディレイ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:154
+#: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid ""
 "Adds an \"echo\" effect with a feedback loop. It can be used together with "
 "*Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far "
@@ -347,11 +358,11 @@ msgstr ""
 "して、広い部屋や渓谷などの遠く離れている場所からの音の跳ね返りをシミュレート"
 "することができます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:159
+#: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "Distortion"
 msgstr "Distortion(ディストーション)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:161
+#: ../../docs/tutorials/audio/audio_buses.rst:168
 #, fuzzy
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
@@ -363,11 +374,11 @@ msgstr ""
 "\\ 、\\ *bit crushing*\\ 。ディストーションは、低品質のスピーカーやデバイスを"
 "介して来る音をシミュレートするために使用することができます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:166
+#: ../../docs/tutorials/audio/audio_buses.rst:173
 msgid "EQ"
 msgstr "\\ EQ"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:168
+#: ../../docs/tutorials/audio/audio_buses.rst:175
 msgid ""
 "EQ is what all other equalizers inherit from. It can be extended with with "
 "Custom scripts to create an equalizer with a custom number of bands."
@@ -375,11 +386,11 @@ msgstr ""
 "EQは、他のすべてのイコライザーが継承するものです。カスタムスクリプトで拡張し"
 "て、好きな数のバンドを持つイコライザーを作成できます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:172
+#: ../../docs/tutorials/audio/audio_buses.rst:179
 msgid "EQ6, EQ10, EQ21"
 msgstr "\\EQ6、EQ10、EQ21"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:174
+#: ../../docs/tutorials/audio/audio_buses.rst:181
 msgid ""
 "Godot provides three equalizers with different numbers of bands. An "
 "equalizer on the Master bus can be useful to cut frequencies that the "
@@ -392,11 +403,11 @@ msgstr ""
 "ちます(たとえば、携帯電話のスピーカーは低音のコンテンツをうまく再生できませ"
 "ん)。ヘッドフォンを接続すると、イコライザー効果を無効にできます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:180
+#: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
 msgstr "フィルタ(Filter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:182
+#: ../../docs/tutorials/audio/audio_buses.rst:189
 msgid ""
 "Filter is what all other filters inherit from and should not be used "
 "directly."
@@ -404,13 +415,13 @@ msgstr ""
 "フィルタは、他のすべてのフィルタが継承する為のものであり、直接使用しないでく"
 "ださい。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:185
+#: ../../docs/tutorials/audio/audio_buses.rst:192
 #, fuzzy
 msgid "HighPassFilter"
 msgstr ""
 "HighPassFilter、HighShelfFilter(ハイパスフィルタ、ハイシェルフフィルタ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:187
+#: ../../docs/tutorials/audio/audio_buses.rst:194
 #, fuzzy
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
@@ -419,21 +430,21 @@ msgstr ""
 "これらは、特定の *Cutoff* 周波数より低い周波数をカットするフィルタです。 "
 "HighPassFilterとHighShelfFilterは、信号の低音成分を減らすために使用されます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:192
+#: ../../docs/tutorials/audio/audio_buses.rst:199
 #, fuzzy
 msgid "HighShelfFilter"
 msgstr ""
 "HighPassFilter、HighShelfFilter(ハイパスフィルタ、ハイシェルフフィルタ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:194
+#: ../../docs/tutorials/audio/audio_buses.rst:201
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:199
+#: ../../docs/tutorials/audio/audio_buses.rst:206
 msgid "Limiter"
 msgstr "Limiter(リミッター)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:201
+#: ../../docs/tutorials/audio/audio_buses.rst:208
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
@@ -443,12 +454,12 @@ msgstr ""
 "える信号の振幅を防ぐように設計されています。マスターバスにリミッターを追加す"
 "ると、クリッピングを防止できます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:206
+#: ../../docs/tutorials/audio/audio_buses.rst:213
 #, fuzzy
 msgid "LowPassFilter"
 msgstr "フィルタ(Filter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:208
+#: ../../docs/tutorials/audio/audio_buses.rst:215
 #, fuzzy
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
@@ -461,20 +472,20 @@ msgstr ""
 "ます。ローパスフィルタを使用して、「こもった」サウンドをシミュレートできま"
 "す。たとえば、水中の音、壁で遮られた音、または遠くの音など。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:214
+#: ../../docs/tutorials/audio/audio_buses.rst:221
 #, fuzzy
 msgid "LowShelfFilter"
 msgstr "LowPassFilter、LowShelfFilter(ローパスフィルタ、ローシェルフフィルタ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:216
+#: ../../docs/tutorials/audio/audio_buses.rst:223
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:219
+#: ../../docs/tutorials/audio/audio_buses.rst:226
 msgid "NotchFilter"
 msgstr "NotchFilter(ノッチフィルタ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:221
+#: ../../docs/tutorials/audio/audio_buses.rst:228
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
@@ -482,11 +493,11 @@ msgstr ""
 "BandPassフィルタの反対で、所定の *Cutoff * 周波数で周波数スペクトルから音のバ"
 "ンドを削除します。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:225
+#: ../../docs/tutorials/audio/audio_buses.rst:232
 msgid "Panner"
 msgstr "Panner(パン)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:227
+#: ../../docs/tutorials/audio/audio_buses.rst:234
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between the "
 "left and right channels (wear headphones to audition this effect)."
@@ -494,11 +505,11 @@ msgstr ""
 "Pannerを使用すると、信号のステレオバランスを左右のチャンネル間で調整できます"
 "(この効果を確認するにはヘッドフォンを着用してください)。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:231
+#: ../../docs/tutorials/audio/audio_buses.rst:238
 msgid "Phaser"
 msgstr "Phaser(フェイザー)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:233
+#: ../../docs/tutorials/audio/audio_buses.rst:240
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
 "by two signals being dephased and cancelling each other out. You can make a "
@@ -508,11 +519,11 @@ msgstr ""
 "形成されることを説明してもおそらく意味がありません。ダース・ベイダーの声、ま"
 "たはジェットのような音を作ることができます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:238
+#: ../../docs/tutorials/audio/audio_buses.rst:245
 msgid "PitchShift"
 msgstr "PitchShift(ピッチシフト)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:240
+#: ../../docs/tutorials/audio/audio_buses.rst:247
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
 "speed. All frequencies can be increased/decreased with minimal effect on "
@@ -522,23 +533,22 @@ msgstr ""
 "トへの影響を最小限に抑えながら、すべての周波数を増減できます。 PitchShiftは、"
 "異常に高いまたは低い音声を作成するのに役立ちます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:245
+#: ../../docs/tutorials/audio/audio_buses.rst:252
 msgid "Record"
 msgstr "Record(録音)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:247
-msgid ""
-"The Record effect allows audio passing through the bus to be written to a "
-"file."
+#: ../../docs/tutorials/audio/audio_buses.rst:254
+#, fuzzy
+msgid "The Record effect allows the user to record sound from a microphone."
 msgstr ""
 "Recordエフェクトを使用すると、バスを通過するオーディオをファイルに書き込むこ"
 "とができます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:250
+#: ../../docs/tutorials/audio/audio_buses.rst:257
 msgid "Reverb"
 msgstr "Reverb(リバーブ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:252
+#: ../../docs/tutorials/audio/audio_buses.rst:259
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
 "can be tweaked to obtain the sound of a specific room. Reverb is commonly "
@@ -552,11 +562,11 @@ msgstr ""
 "<doc_audio_streams_reverb_buses>` を参照)、またはすべての音に「チャンバー」感"
 "を与えます。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:259
+#: ../../docs/tutorials/audio/audio_buses.rst:266
 msgid "SpectrumAnalyzer"
 msgstr "SpectrumAnalyzer(スペクトラムアナライザ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:261
+#: ../../docs/tutorials/audio/audio_buses.rst:268
 msgid ""
 "This effect doesn't alter audio, instead, you add this effect to buses you "
 "want a spectrum analysis of. This would typically be used for audio "
@@ -568,22 +578,22 @@ msgstr ""
 "す。これを使用したデモプロジェクトは、\\ `こちら <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/audio/spectrum>`__ にあります。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:266
+#: ../../docs/tutorials/audio/audio_buses.rst:273
 msgid "StereoEnhance"
 msgstr "StereoEnhance(ステレオエンハンス)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:268
+#: ../../docs/tutorials/audio/audio_buses.rst:275
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."
 msgstr ""
 "このエフェクトは、いくつかのアルゴリズムを使用して、信号のステレオスペクトル"
 "を強化します。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:271
+#: ../../docs/tutorials/audio/audio_buses.rst:278
 msgid "Automatic bus disabling"
 msgstr "自動的なバス無効化"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:273
+#: ../../docs/tutorials/audio/audio_buses.rst:280
 msgid ""
 "There is no need to disable buses manually when not in use. Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
@@ -592,15 +602,15 @@ msgstr ""
 "使用していないときにバスを手動で無効にする必要はありません。 Godotは、バスが"
 "数秒間無音であることを検出し、無効にします(すべての効果を含む)。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:279
+#: ../../docs/tutorials/audio/audio_buses.rst:286
 msgid "Disabled buses have a blue VU meter instead of a red-green one."
 msgstr "無効になっているバスには、赤緑の代わりに青いVUメーターがあります。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:282
+#: ../../docs/tutorials/audio/audio_buses.rst:289
 msgid "Bus rearrangement"
 msgstr "バスの再配置"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:284
+#: ../../docs/tutorials/audio/audio_buses.rst:291
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
 "removing and moving buses around while the reference to them is kept. "
@@ -614,11 +624,11 @@ msgstr ""
 "ムが選択されたのは、バスの並べ替えが名前を変更するよりも一般的なプロセスであ"
 "るためです。"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:291
+#: ../../docs/tutorials/audio/audio_buses.rst:298
 msgid "Default bus layout"
 msgstr "デフォルトのバスレイアウト"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:293
+#: ../../docs/tutorials/audio/audio_buses.rst:300
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "

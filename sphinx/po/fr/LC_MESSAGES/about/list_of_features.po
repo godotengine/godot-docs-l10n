@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -300,13 +300,13 @@ msgstr ""
 "Les polices bitmap peuvent être exportées à l'aide d'outils comme BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
 "DynamicFont prend en charge les polices monochromes ainsi que les polices "
-"colorées. Les formats pris en charge sont TTF et OTF."
+"colorées (par exemple les emoji). Les formats pris en charge sont TTF, OTF "
+"et WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -584,13 +584,12 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3 :* Réflexions écran-espace."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
 "Les techniques de réflexion peuvent être mélangées pour une plus grande "
-"précision."
+"précision ou une plus grande évolutivité."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -821,13 +820,12 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D :* Vertex, fragment, lumière et shaders de ciel personnalisés."
 
 #: ../../docs/about/list_of_features.rst:299
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-"Des shaders basés sur du texte utilisant un `langage de shader inspiré de "
-"GLSL <doc_shading_language>`."
+"Shaders basés sur du texte utilisant un `langage de shader inspiré de GLSL "
+"<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid "Visual shader editor."
@@ -1576,9 +1574,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "Support des courbes de Bézier dans les animations."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Formats vidéo"
+msgstr "Formats de fichier"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""
@@ -1728,12 +1725,12 @@ msgstr ""
 "<doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:602
-#, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ lists features that have been requested by the community and "
 "may be implemented in future Godot releases."
 msgstr ""
-"Le répertoire `roadmap <https://github.com/godotengine/godot-roadmap>`__ "
-"documente les fonctionnalités qui ont été convenues et qui pourraient être "
-"implémentées dans les futures versions de Godot."
+"Le `répertoire de propositions Godot <https://github.com/godotengine/godot-"
+"proposals>`__ liste les fonctionnalités qui ont été demandées par la "
+"communauté et qui pourraient être implémentées dans les futures versions de "
+"Godot."

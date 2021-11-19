@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,138 +18,146 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:4
-#, fuzzy
 msgid "C# Exports"
-msgstr "Экспорт"
+msgstr "Экспорт C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:7
 msgid "Introduction to exports"
 msgstr "Введение в экспорт"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``[Export]`` attribute."
 msgstr ""
-"В Godot, члены класса (переменные и т.д.) могут быть экспортированы. Это "
-"означает, что их значение сохраняется вместе с ресурсом (например, :ref:"
-"`сцена <class_PackedScene>`), к которому они прикреплены. Они также будут "
-"доступны для редактирования редакторе свойств. Экспорт осуществляется с "
-"помощью ключевого слова ``export``::"
+"В Godot члены класса можно экспортировать. Это означает, что их значение "
+"сохраняется вместе с ресурсом (например, :ref:`scene <class_PackedScene>`), "
+"к которому они прикреплены. Они также будут доступны для редактирования в "
+"редакторе свойств. Экспорт осуществляется с помощью атрибута ``[Export]``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:22
-#, fuzzy
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
 "current project it will be visible in the property editor. This way, artists "
 "and game designers can modify values that later influence how the program "
 "runs. For this, a special export syntax is provided."
 msgstr ""
-"Одним из фундаментальных преимуществ экспорта переменных (членов класса) "
-"является то, что они видны и редактируются в редакторе. Таким образом, "
-"художники и гейм-дизайнеры могут изменять значения, которые впоследствии "
-"будут влиять на работу программы. Для этого предусмотрен специальный "
-"синтаксис экспорта."
+"В этом примере значение ``5`` будет сохранено, и после построения текущего "
+"проекта оно будет видно в редакторе свойств. Таким образом, художники и "
+"игровые дизайнеры могут изменять значения, которые впоследствии влияют на "
+"работу программы. Для этого предусмотрен специальный синтаксис экспорта."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:27
 msgid ""
 "Exporting can only be done with built-in types or objects derived from the :"
 "ref:`Resource class <class_Resource>`."
 msgstr ""
+"Экспорт может быть выполнен только со встроенными типами или объектами, "
+"производными от :ref:`Resource class <class_Resource>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:31
 msgid ""
 "Exporting properties can also be done in GDScript, for information on that "
 "see :ref:`doc_gdscript_exports`."
 msgstr ""
+"Экспорт свойств также можно выполнить в GDScript, для получения информации "
+"об этом см . :ref:`doc_gdscript_exports`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:35
-#, fuzzy
 msgid "Basic use"
-msgstr "Базовая настройка"
+msgstr "Основное использование"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:37
 msgid ""
 "Exporting can work with and without setting a default value. For int and "
 "float ``0`` will then be used as the default."
 msgstr ""
+"Экспорт может работать как с установкой значения по умолчанию, так и без "
+"него. Для int и float по умолчанию будет использоваться ``0``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:45
 msgid "Export works with resource types."
-msgstr ""
+msgstr "Экспорт работает с типами ресурсов."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:54
 msgid ""
 "There are many resource types that can be used this way, try e.g. the "
 "following to list them:"
 msgstr ""
+"Есть много типов ресурсов, которые можно использовать таким образом, "
+"попробуйте, например, следующее, чтобы перечислить их:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:99
-#, fuzzy
 msgid "Strings as paths"
-msgstr "Длина строки"
+msgstr "Строки как пути"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:101
 msgid "Property hints can be used to export strings as paths"
-msgstr ""
+msgstr "Подсказки свойств можно использовать для экспорта строк как путей"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:103
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "Абсолютный путь к файлу"
+msgstr "Строка как путь к файлу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:110
 msgid "String as a path to a directory."
-msgstr ""
+msgstr "Строка как путь к каталогу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:117
 msgid "String as a path to a file, custom filter provided as hint."
 msgstr ""
+"Строка как путь к файлу, настраиваемый фильтр предоставляется как подсказка."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:124
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
 msgstr ""
+"Использование путей в глобальной файловой системе также возможно, но только "
+"в скриптах в режиме инструмента."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:127
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr ""
+msgstr "Строка как путь к файлу PNG в глобальной файловой системе."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:134
 msgid "String as a path to a directory in the global filesystem."
-msgstr ""
+msgstr "Строка как путь к каталогу в глобальной файловой системе."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:141
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
 msgstr ""
+"Многострочная аннотация указывает редактору показать большое поле ввода для "
+"редактирования на нескольких строках."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:150
 msgid "Limiting editor input ranges"
-msgstr ""
+msgstr "Ограничение диапазона ввода редактора"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:152
 msgid ""
 "Using the range property hint allows you to limit what can be input as a "
 "value using the editor."
 msgstr ""
+"Использование подсказки свойства диапазона позволяет вам ограничить то, что "
+"может быть введено в качестве значения с помощью редактора."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:155
 msgid "Allow integer values from 0 to 20."
-msgstr ""
+msgstr "Допускаются целочисленные значения от 0 до 20."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:162
 msgid "Allow integer values from -10 to 20."
-msgstr ""
+msgstr "Допускаются целочисленные значения от -10 до 20."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:169
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
 msgstr ""
+"Разрешить плавающее значение от -10 до 20 и привязать значение кратным 0.2."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:176
 msgid ""
@@ -157,6 +165,9 @@ msgid ""
 "below the limits when adjusting the value by typing it instead of using the "
 "slider."
 msgstr ""
+"Если вы добавите подсказки \"or_greater\" и/или \"or_lesser\", вы можете "
+"выйти за пределы или ниже пределов при настройке значения, набрав его вместо "
+"использования ползунка."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:185
 msgid ""
@@ -164,27 +175,32 @@ msgid ""
 "snapping to steps of 20. The editor will present a slider for easily editing "
 "the value. This only works with floats."
 msgstr ""
+"Разрешить значения 'y = exp(x)', где 'y' варьируется от 100 до 1000, с "
+"привязкой к шагам 20. Редактор представит ползунок для удобного "
+"редактирования значения. Это работает только с вещественными числами."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:195
 msgid "Floats with easing hint"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:197
+#, fuzzy
 msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
+"Отображение визуального представления функции 'ease()' при редактировании."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:206
-#, fuzzy
 msgid "Colors"
-msgstr "Цвет"
+msgstr "Цвета"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:208
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr ""
+msgstr "Обычный цвет, заданный как значение красный-зеленый-синий-альфа."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:215
 msgid "Color given as red-green-blue value (alpha will always be 1)."
 msgstr ""
+"Цвет задаётся как значение красный-зеленый-синий (альфа всегда будет 1)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:223
 msgid "Nodes"
@@ -195,6 +211,8 @@ msgid ""
 "Nodes can't be directly exported. Instead you need to export a node path, "
 "then use that node path with ``GetNode()``."
 msgstr ""
+"Ноды нельзя напрямую экспортировать. Вместо этого вам нужно экспортировать "
+"путь к ноде, а затем использовать этот путь к ноде с помощью ``GetNode()``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:240
 msgid "Resources"
@@ -205,6 +223,8 @@ msgid ""
 "In the Inspector, you can then drag and drop a resource file from the "
 "FileSystem dock into the variable slot."
 msgstr ""
+"Затем в Инспекторе вы можете перетащить файл ресурсов из док-станции "
+"FileSystem в слот переменной."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:250
 msgid ""
@@ -212,12 +232,17 @@ msgid ""
 "possible classes to create, however. Therefore, if you specify an extension "
 "of Resource such as:"
 msgstr ""
+"Однако открытие раскрывающегося списка инспектора может привести к появлению "
+"очень длинного списка возможных классов для создания. Следовательно, если вы "
+"укажете расширение ресурса, например:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:259
 msgid ""
 "The drop-down menu will be limited to AnimationNode and all its inherited "
 "classes."
 msgstr ""
+"Выпадающее меню будет ограничено AnimationNode и всеми его унаследованными "
+"классами."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:262
 msgid ""
@@ -235,7 +260,6 @@ msgid "Exporting bit flags"
 msgstr "Экспорт битовых флагов"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:269
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
@@ -243,7 +267,7 @@ msgid ""
 msgstr ""
 "Целые числа, используемые в качестве битовых флагов, могут хранить несколько "
 "``true``/``false`` (булевых) значений в одном свойстве. Используя подсказку "
-"экспорта ``int, FLAGS``, их можно настроить в редакторе:"
+"экспорта ``Flags``, их можно настроить в редакторе."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:279
 #, fuzzy
@@ -259,13 +283,12 @@ msgstr ""
 "``const ELEMENT_WIND = 8`` и так далее)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:284
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
 msgstr ""
-"Подсказки по экспорту также предоставляются для слоев физики и визуализации, "
-"определенных в настройках проекта::"
+"Подсказки по экспорту также предоставляются для слоев физики и рендера, "
+"определенных в настройках проекта."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:297
 msgid ""

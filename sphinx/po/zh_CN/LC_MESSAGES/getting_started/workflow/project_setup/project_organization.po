@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,15 +152,14 @@ msgstr ""
 "gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
-#, fuzzy
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods. Ignoring a folder will also "
 "automatically hide it from the FileSystem dock, which can be useful to "
 "reduce clutter."
 msgstr ""
-"一旦文件夹被忽略, 该文件夹中的资源就不能再使用 ``load()`` 和 ``preload()`` 方"
-"法加载."
+"一旦文件夹被忽略，其中资源就不能再使用 ``load()`` 和 ``preload()`` 方法加载。"
+"被忽略文件夹会从文件系统栏目中隐藏，从而减少混乱。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
 msgid ""
@@ -168,6 +167,8 @@ msgid ""
 "file should be empty. It does not support patterns like ``.gitignore`` files "
 "do."
 msgstr ""
+"请注意 ``.gdignore`` 文件的内容会被忽略，因此该文件应当为空。它不像 ``."
+"gitignore`` 文件一样支持模式匹配。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:97
 msgid "Case sensitivity"

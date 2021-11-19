@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -543,16 +543,16 @@ msgid "Multiplication / Division / Remainder"
 msgstr "Умножение / Деление / Остаток от деления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
-#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats), and is additionally used for "
 "Format Strings"
 msgstr ""
-"Эти операторы ведут себя так же, как и в C++. Целочисленное деление "
-"усекается, а не возвращает дробное число, и оператор % доступен только для "
-"значений типа int(\"fmod\" для типа float)"
+"Эти операторы ведут себя так же, как C++. Целочисленное деление усекается, а "
+"не возвращает дробное число, а оператор % доступен только для целых чисел "
+"(\"fmod\" для чисел с плавающей запятой) и дополнительно используется для "
+"Format Strings"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``+``"
@@ -659,9 +659,8 @@ msgid "Type casting"
 msgstr "Приведение типов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
@@ -1611,6 +1610,9 @@ msgid ""
 "nesting ternary-if expressions, it is recommended to wrap the complete "
 "expression over multiple lines to preserve readability::"
 msgstr ""
+"Тернарные-if могут быть вложенными для обработки более чем двух случаев. При "
+"вложении тернарных выражений if рекомендуется заключить полное выражение в "
+"несколько строк, чтобы сохранить удобочитаемость:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid ""

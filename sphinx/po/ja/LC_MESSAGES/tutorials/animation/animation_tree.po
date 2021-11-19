@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -609,17 +609,20 @@ msgid "State machine travel"
 msgstr "ステートマシン travel"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:261
+#, fuzzy
 msgid ""
 "One of the nice features in Godot's ``StateMachine`` implementation is the "
 "ability to travel. The graph can be instructed to go from the current state "
 "to another one, while visiting all the intermediate ones. This is done via "
-"the A\\* algorithm."
+"the A\\* algorithm. In the absence of any transition between the current "
+"state and the destination state, the graph teleports to the destination "
+"state."
 msgstr ""
 "Godotの\\ ``StateMachine``\\ 実装にあるナイスな機能のひとつは、travel (移動)"
 "です。現在のステートからの移動を指示すると、グラフは中間のものを全て通ってか"
 "ら、別のステートへと移ります。これはA\\* アルゴリズムにて行われます。"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:264
+#: ../../docs/tutorials/animation/animation_tree.rst:265
 msgid ""
 "To use the travel ability, you should first retrieve the :ref:"
 "`AnimationNodeStateMachinePlayback "
@@ -631,13 +634,13 @@ msgstr ""
 "<class_AnimationNodeStateMachinePlayback>` オブジェクトを取得します (プロパ"
 "ティのひとつ)。"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:277
+#: ../../docs/tutorials/animation/animation_tree.rst:278
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
 msgstr "取得したら、その多くの関数の中からひとつ呼び出せば使えます:"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:288
+#: ../../docs/tutorials/animation/animation_tree.rst:289
 msgid ""
 "The state machine must be running before you can travel. Make sure to either "
 "call ``start()`` or choose a node to **Autoplay on Load**."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:4
-#, fuzzy
 msgid "Introduction to Rooms and Portals"
-msgstr "Godot 编辑器介绍"
+msgstr "房间和入口的介绍"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:6
 msgid ""
@@ -30,29 +29,33 @@ msgid ""
 "Portals are openings between the rooms that the :ref:`Camera<class_Camera>` "
 "(and lights) can see through."
 msgstr ""
+"房间（Room）和入口（Portal）系统是 Godot 的可选组件，它允许您将 3D 游戏关卡划"
+"分为一系列\\ :ref:`房间<class_Room>`（\\ *即单间*\\ ）和 :ref:`入口"
+"<class_Portal> `\\ 。入口是房间之间的开口，\\ :ref:`相机<class_Camera>`（和灯"
+"光）可以通过这个开口看到另一个房间。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:8
-#, fuzzy
 msgid "This allows several features:"
-msgstr "这一方法有着如下优点:"
+msgstr "可以用来实现许多功能："
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:10
 msgid ""
 "**Portal occlusion culling**, which can increase performance by reducing the "
 "number of objects that are drawn, both to cameras and to shadow maps."
 msgstr ""
+"**入口遮挡剔除**\\ ，可以减少绘制对象的数量来提高性能，包括相机和阴影贴图。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:12
 msgid ""
 "**Gameplay callbacks**, which allow turning off activity outside the "
 "gameplay area - AI, physics, animation, processing etc."
-msgstr ""
+msgstr "**游戏回调**\\ ，允许关闭游戏区域以外的活动 - AI、物理、动画、过程等。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:14
 msgid ""
 "The trade off for these features is that we have to manually partition our "
 "level into rooms, and add portals between them."
-msgstr ""
+msgstr "这些功能的代价是，必须手动将关卡划分为房间，并在房间之间添加入口。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:16
 msgid ""
@@ -61,16 +64,21 @@ msgid ""
 "warp space, they simply represent a window that the camera (or lights) can "
 "see through."
 msgstr ""
+"Godot 的入口（Portal）不应与\\ `同名游戏 <https://zh.wikipedia.org/wiki/"
+"%E5%82%B3%E9%80%81%E9%96%80>`__\\ 混淆。它们不会扭曲空间，只是表示相机（或灯"
+"光）可以透过的窗口。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:19
 msgid "Minimizing manual labour"
-msgstr ""
+msgstr "尽量减少手动操作"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:21
 msgid ""
 "Although the effort involved in creating rooms for a large level may seem "
 "daunting, there are several factors which can make this much easier:"
 msgstr ""
+"尽管为大关卡创建房间所涉及的工作似乎令人生畏，但有几项因素可以使这变得更容易"
+"些："
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:23
 msgid ""
@@ -78,12 +86,16 @@ msgid ""
 "ideal way to save effort. Your level tiles can be rooms, with portals "
 "already placed."
 msgstr ""
+"如果您使用的是现成素材库，已经在重复使用房间或区域，这是节省精力的理想方式。"
+"您可以把关卡图块用作房间，并且已经放置了入口。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:24
 msgid ""
 "If you are creating procedural levels, you can create rooms and portals as "
 "part of the procedural generation algorithm you're writing."
 msgstr ""
+"如果你正在创建程序性关卡，你可以创建房间和入口，作为你正在编写的程序性生成算"
+"法的一部分。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:25
 msgid ""
@@ -92,6 +104,9 @@ msgid ""
 "separate a large game level into only two rooms, with a single portal "
 "between them, this can still result in relatively large performance gains."
 msgstr ""
+"那么，如果您手动创建自由形式的关卡，请记住，对于入口的使用没有任何规定。即使"
+"你将一个大型游戏关卡分成两个房间，它们之间只有一个入口，这仍然可以带来相对较"
+"大的性能提升。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:27
 msgid ""
@@ -99,17 +114,18 @@ msgid ""
 "shaped curve, with the lion's share occurring when you have created just a "
 "few rooms. So do not be afraid to be lazy - **\\*work smart\\***."
 msgstr ""
+"性能优势遵循 L 型曲线（特别是在遮挡方面），当你仅创建几个房间后，大部分优势就"
+"能体现。因此，不要害怕偷懒——\\ **\\*工作让人聪明\\***\\ 。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:29
 msgid ""
 "In general, when it comes to medium and large-sized levels, it is better to "
 "do a little portalling than none at all."
-msgstr ""
+msgstr "一般来说，当涉及到中型和大型关卡时，做一点入口总比不做要好。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:32
-#, fuzzy
 msgid "Some caveats"
-msgstr "性能方面的注意事项"
+msgstr "一些注意事项"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:34
 msgid ""
@@ -117,6 +133,8 @@ msgid ""
 "should not attempt to use rooms and portals until you are familiar with the "
 "Godot editor, and have successfully made at least a couple of test games."
 msgstr ""
+"入口系统应被视为 Godot 的\\ **高级功能**\\ 。在熟悉 Godot 编辑器并成功制作出"
+"几个测试游戏之前，你不应该尝试使用房间和入口。"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:36
 msgid ""
@@ -127,3 +145,7 @@ msgid ""
 "will significantly benefit from portals, and it may require more time than a "
 "short game jam allows."
 msgstr ""
+"作为游戏设计师，它给了你很大的权力，但代价是，它需要具有非常好的关卡设计技"
+"巧。它的目标是产生专业级的结果，并假定用户准备为此付出努力。它并不打算用于所"
+"有的 3D 游戏。并非所有的游戏都能从中明显受益，而且，它所需要的时间可能比短期"
+"游戏竞赛要多。"

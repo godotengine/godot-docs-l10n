@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -550,7 +550,6 @@ msgid "Multiplication / Division / Remainder"
 msgstr "Multiplication / Division / Reste"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
-#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
@@ -559,7 +558,8 @@ msgid ""
 msgstr ""
 "Ces opérateurs ont le même comportement qu'en C++. La division d'entiers est "
 "tronquée plutôt que de retourner un nombre fractionnaire, et l'opérateur % "
-"n'est disponible que pour les ints (\"fmod\" pour les floats)"
+"n'est disponible que pour les ints (\"fmod\" pour les floats), et est "
+"également utilisé pour les Format Strings"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``+``"
@@ -666,9 +666,8 @@ msgid "Type casting"
 msgstr "La conversion de type"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
@@ -1634,6 +1633,9 @@ msgid ""
 "nesting ternary-if expressions, it is recommended to wrap the complete "
 "expression over multiple lines to preserve readability::"
 msgstr ""
+"Les expressions conditionnelles ternaires peuvent être imbriquée pour gérer "
+"plus de deux cas. Lorsque ces expressions sont imbriquées, il est recommandé "
+"de les indenter sur plusieurs lignes pour préserver leur lisibilité :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid ""

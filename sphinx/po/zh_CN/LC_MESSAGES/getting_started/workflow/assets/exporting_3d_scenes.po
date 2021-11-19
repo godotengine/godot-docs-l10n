@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:4
-#, fuzzy
 msgid "Exporting 3D scenes"
-msgstr "导入 3D 场景"
+msgstr "导出 3D 场景"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:7
 msgid "Overview"
@@ -34,40 +33,42 @@ msgid ""
 "such as a CSG mesh blockout for a level, export it to clean it up in a "
 "program such as Blender, and then bring it back into Godot."
 msgstr ""
+"在 Godot 中可以将 3D 场景导出为 glTF 2.0 文件。你可以将其导出为 glTF 二进制文"
+"件（\\ ``.glb`` 文件）或者内嵌 glTF 及纹理（\\ ``gltf`` + ``.bin`` + 纹理）。"
+"这样你就可以在 Godot 中创建场景，比如使用 CSG 网格进行关卡的搭建，然后导出到"
+"类似 Blender 的程序里进行整理，然后再弄回 Godot。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:17
 msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
-msgstr ""
+msgstr "只有 Blender 2.83 及之后的版本才能导入由 Godot 导出的 glTF 文件。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:19
 msgid ""
 "To export a scene in the editor go to **Project > Tools > Export GLTF...**"
-msgstr ""
+msgstr "要在编辑器中导出场景，请转到\\ **Project > Tools > Export GLTF...**\\"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:24
 msgid "Limitations"
 msgstr "限制"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:26
-#, fuzzy
 msgid "There are several limitations with glTF export."
-msgstr "这有几个原因:"
+msgstr "glTF 导出有一些限制。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:28
 msgid ""
 "No support for exporting particles since their implementation varies across "
 "engines."
-msgstr ""
+msgstr "不支持导出粒子，因为不同的引擎对粒子的实现是不同的。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:29
 msgid "ShaderMaterials cannot be exported."
-msgstr ""
+msgstr "无法导出着色器材质。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:30
-#, fuzzy
 msgid "No support for exporting 2D scenes."
-msgstr "不支持外部脚本编辑器。"
+msgstr "不支持导出 2D 场景。"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:31
 msgid "Only supported in editor builds (``tools=yes``)."
-msgstr ""
+msgstr "只在编辑器构建中支持 (``tools=yes``)。"

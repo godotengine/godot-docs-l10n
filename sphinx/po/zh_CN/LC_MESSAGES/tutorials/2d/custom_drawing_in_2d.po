@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,47 +42,39 @@ msgstr ""
 "的非常* 容易操作."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:16
-#, fuzzy
 msgid ""
 "Custom drawing in a 2D node is *really* useful. Here are some use cases:"
-msgstr "在节点中手动自定义绘图 *真的* 非常有用. 以下是一些示例原因:"
+msgstr "2D 节点中的自定义绘制 *非常* 有用。下面是一些用例："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:18
-#, fuzzy
 msgid ""
 "Drawing shapes or logic that existing nodes can't do, such as an image with "
 "trails or a special animated polygon."
 msgstr ""
-"绘制未由节点处理的形状或逻辑(例如: 制作一个可以绘制圆, 带有轨迹的图像, 特殊类"
-"型的动画多边形等的节点)."
+"绘制现有节点类型无法完成的形状或逻辑，例如带有轨迹或特殊动态多边形的图像。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:20
-#, fuzzy
 msgid ""
 "Visualizations that are not that compatible with nodes, such as a tetris "
 "board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
-"与节点不兼容的可视化:(例如: 俄罗斯方块). Godot俄罗斯方块示例使用自定义绘制功"
-"能来绘制那些小块."
+"与节点不太兼容的呈现，如俄罗斯方块棋盘。俄罗斯方块的例子，使用一个自定义绘制"
+"函数来绘制方块。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:23
-#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using a large number of nodes, possibly lowering memory usage and "
 "improving performance."
 msgstr ""
-"绘制大量的简单对象. 自定义绘制避免了使用节点的开销, 这减少了内存占用, 而且有"
-"可能更快."
+"绘制大量简单的对象。自定义绘制避免了使用大量节点的开销，能降低内存占用，并提"
+"高性能。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:26
-#, fuzzy
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
-msgstr ""
-"制作自定义UI控件. 尽管有很多可用的控件, 但很容易遇到需要制作新自定义控件的情"
-"况."
+msgstr "制作自定义的UI控件，以满足很多可用的控件之外的特别需求。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid "Drawing"
@@ -118,14 +110,14 @@ msgstr ""
 "``_draw()`` 函数只调用一次, 然后绘制命令被缓存并记住, 因此不需要进一步调用."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
-#, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, call :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
 "and a new ``_draw()`` call will happen."
 msgstr ""
-"如果由于状态或其他更改而需要重新绘制, 只需在同一节点中调用 :ref:`CanvasItem."
-"update()<class_CanvasItem_method_update>` 就会发生新的 ``_draw()`` 调用."
+"如果因为状态或其他方面的变化而需要重新绘制，在当前节点中调用 :ref:"
+"`CanvasItem.update() <class_CanvasItem_method_update>` ，触发新的 "
+"``_draw()`` 调用。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""

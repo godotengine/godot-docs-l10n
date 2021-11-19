@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -411,17 +411,16 @@ msgid "Hexadecimal color codes"
 msgstr "十六进制颜色代码"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:120
-#, fuzzy
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``. Short RGB color codes such as ``#6f2`` "
 "(equivalent to ``#66ff22``) are also supported."
 msgstr ""
-"对于不透明的 RGB 颜色, 支持任何有效的6位十六进制数, 例如 "
-"``[color=#ffffff]white[/color]`` ."
+"不透明的 RGB 颜色支持使用任何有效的 6 位十六进制数，例如 ``[color=#ffffff]白"
+"色[/color]``\\ 。也支持短的 RGB 颜色码，比如 ``#6f2``\\ （等价于 `#66ff22`"
+"\\ ）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:123
-#, fuzzy
 msgid ""
 "For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
@@ -429,9 +428,10 @@ msgid ""
 "one. Short RGBA color codes such as ``#86f2`` (equivalent to ``#8866ff22``) "
 "are also supported."
 msgstr ""
-"对于透明的 RGB 颜色, 可以使用任意8位十六进制数, 例如 "
-"``[color=#88ffffff]translucent white[/color]`` . 在这种情况下, 请注意 alpha "
-"通道是颜色代码的 **第一个** 分量, 而不是最后一个."
+"透明的 RGB 颜色可以使用任意 8 位十六进制数，例如 ``[color=#88ffffff]半透明白"
+"色[/color]``\\ 。请注意这里的 alpha 通道是颜色码中的\\ **第一个**\\ 分量，不"
+"是最后一个。也支持短的 RGBA 颜色码，比如 `#86f2`\\ （等价于 `#8866ff22`"
+"\\ ）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:130
 msgid "Handling ``[url]`` tag clicks"
@@ -578,7 +578,6 @@ msgid "Custom BBCode tags and text effects"
 msgstr "自定义BBCode标签和文本效果"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:219
-#, fuzzy
 msgid ""
 "You can extend the :ref:`class_RichTextEffect` resource type to create your "
 "own custom BBCode tags. You begin by extending the :ref:"
@@ -588,10 +587,11 @@ msgid ""
 "it need to be running in ``tool`` mode. The new effect will be activable in "
 "the Inspector through the **Custom Effects** property."
 msgstr ""
-"可以扩展 :ref:`class_RichTextEffect` 资源类型来创建自己的 BBCode 标签, 可以从"
-"扩展 :ref:`class_RichTextEffect` 资源类型开始, 如果想在编辑器中运行这些自定义"
-"效果, 请在GDScript文件中添加 ``tool`` 前缀,RichTextLabel不需要附加脚本, 也不"
-"需要在 ``tool`` 模式下运行."
+"可以通过扩展 :ref:`class_RichTextEffect` 资源类型来创建自己的 BBCode 标签。首"
+"先扩展 :ref:`class_RichTextEffect` 资源类型，如果想在编辑器中运行这些自定义效"
+"果，请在 GDScript 文件中添加 ``tool`` 前缀。RichTextLabel 不需要附加脚本，也"
+"不需要在 ``tool`` 模式下运行。新建的特效可以使用检查器中的 **Custom "
+"Effects** 属性启用。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:226
 msgid ""

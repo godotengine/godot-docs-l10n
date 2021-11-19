@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,10 @@ msgid ""
 "as having dedicated transform, bezier, function calling, audio and sub-"
 "animation tracks, is pretty much unique."
 msgstr ""
-"通过 :ref:`AnimationPlayer <class_AnimationPlayer>`,Godot拥有你在所有游戏引擎"
-"中能找到的最灵活的动画系统之一. 可以在任何节点或资源中对任何属性进行动画处"
-"理, 以及专门的变换, 贝塞尔, 函数调用, 音频和子动画轨道, 这样的能力相当独特."
+"通过 :ref:`AnimationPlayer <class_AnimationPlayer>`\\ ，Godot 拥有你在所有游"
+"戏引擎中能找到的最灵活的动画系统之一。可以在任何节点或资源中对任何属性进行动"
+"画处理，以及专门的变换、贝塞尔、函数调用、音频和子动画轨道，这样的能力相当独"
+"特。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:13
 msgid ""
@@ -543,16 +544,19 @@ msgid "State machine travel"
 msgstr "状态机行程"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:261
+#, fuzzy
 msgid ""
 "One of the nice features in Godot's ``StateMachine`` implementation is the "
 "ability to travel. The graph can be instructed to go from the current state "
 "to another one, while visiting all the intermediate ones. This is done via "
-"the A\\* algorithm."
+"the A\\* algorithm. In the absence of any transition between the current "
+"state and the destination state, the graph teleports to the destination "
+"state."
 msgstr ""
 "执行 \"状态机\" 的行程能力, 是Godot引擎的优秀特性之一. 可以指示图表从当前状态"
 "转到另一个状态, 我们可以访问其所有的中间状态. 这是通过A*算法实现的."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:264
+#: ../../docs/tutorials/animation/animation_tree.rst:265
 msgid ""
 "To use the travel ability, you should first retrieve the :ref:"
 "`AnimationNodeStateMachinePlayback "
@@ -563,13 +567,13 @@ msgstr ""
 "`AnimationNodeStateMachinePlayback "
 "<class_AnimationNodeStateMachinePlayback>` 对象(其被导出为一个属性)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:277
+#: ../../docs/tutorials/animation/animation_tree.rst:278
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
 msgstr "一旦检索到, 可以调用它提供的许多函数之一:"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:288
+#: ../../docs/tutorials/animation/animation_tree.rst:289
 msgid ""
 "The state machine must be running before you can travel. Make sure to either "
 "call ``start()`` or choose a node to **Autoplay on Load**."

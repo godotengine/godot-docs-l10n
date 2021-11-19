@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,14 +229,12 @@ msgid "Uncompressed"
 msgstr "Non compressé"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid "Compress Lossless"
-msgstr "Compression sans perte (PNG)"
+msgstr "Compression sans perte (Lossless)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid "Compress Lossy"
-msgstr "Compression avec pertes (WebP)"
+msgstr "Compression avec pertes (Lossy)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Compress VRAM"
@@ -251,14 +249,12 @@ msgid "Stored as raw pixels"
 msgstr "Stocké sous forme de pixels bruts"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
-#, fuzzy
 msgid "Stored as Lossless WebP / PNG"
-msgstr "Compression sans perte (PNG)"
+msgstr "Stocké sous forme de WebP / PNG sans perte (Lossless)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
-#, fuzzy
 msgid "Stored as Lossy WebP"
-msgstr "Stocké en WebP"
+msgstr "Stocké en tant que WebP avec perte (Lossy)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
@@ -514,12 +510,10 @@ msgstr ""
 "cette option leur donne plus de détails en réduisant le flou."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:170
-#, fuzzy
 msgid "sRGB"
-msgstr "Est sRGB"
+msgstr "sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:172
-#, fuzzy
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -529,7 +523,7 @@ msgstr ""
 "Godot utilise l'espace colorimétrique linéaire lors du rendu 3D. Les "
 "textures mappées à l'albédo ou aux canaux de détail doivent avoir cette "
 "option activée pour que les couleurs soient correctes. Lorsqu'il est réglé "
-"sur le mode \"Détecter\", la texture sera marquée comme SRGB lorsqu'elle est "
+"sur le mode \"Détecter\", la texture sera marquée comme sRGB lorsqu'elle est "
 "utilisée dans les canaux albédo."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:177

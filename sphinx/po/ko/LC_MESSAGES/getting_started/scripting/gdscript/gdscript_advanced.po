@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,12 +40,12 @@ msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
-"이전까지 동적 타입 언어에 대한 경험이 없던 프로그래머에게 이 문서는 특히 더 "
+"이 문서는 특히 이전까지 동적 타입 언어에 대한 경험이 없던 프로그래머에게 더 "
 "유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr "동적 성격"
+msgstr "동적 성질"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
@@ -55,7 +55,7 @@ msgstr "동적 타이핑의 장단점"
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
-msgstr "GDScript는 동적 타입 언어입니다. 따라서, 주요 이점은 다음과 같습니다:"
+msgstr "GDScript는 동적 타입 언어입니다. 따라서, 주요 장점은 다음과 같습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
@@ -95,7 +95,7 @@ msgstr "정적 타입 언어보다 낮은 퍼포먼스."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr "refactor하기 더 어려움(기호를 추적할 수 없음)"
+msgstr "리팩토링하기 더 어려움(기호(symbol)를 추적할 수 없음)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -104,13 +104,13 @@ msgid ""
 "parsing is more strict)."
 msgstr ""
 "정적 타입 언어에서 컴파일 시간에 감지되는 오류가 오직 코드를 실행할 때만 나타"
-"납니다 (표현 문법 분석이 더 엄격하기 때문입니다)."
+"납니다 (정적 타입 언어에서의 표현 구문 분석이 더 엄격하기 때문입니다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
-msgstr "코드 완성에 덜 유연함 (일부 변수 타입은 런타임에만 알려짐)."
+msgstr "코드 완성에 덜 유연함 (일부 변수 타입은 런타임에만 알려집니다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -122,15 +122,15 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
-"현실로 번역된 이 말은 Godot+GDScript가 게임을 빠르고 효율적으로 만들 수 있는 "
-"조합임을 의미합니다. 매우 계산 집약적이고 엔진 내장 도구 (벡터 타입, 물리 엔"
-"진, 수학 라이브러리 등)의 이점을 누릴 수 없는 게임의 경우, C++를 사용하는 경"
-"우의 수도 존재합니다. 이걸로 GDScript에서 전체적인 게임을, 그리고 퍼포먼스 가"
-"속이 필요한 영역에 약간의 C++를 첨가하는 것이 가능합니다."
+"이것은 현실로 번역하면 Godot+GDScript가 게임을 빠르고 효율적으로 생성하도록 "
+"설계된 조합임을 의미합니다. 매우 계산 집약적이고 엔진 내장 툴(예: 벡터 타입, "
+"물리 엔진, 수학 라이브러리 등)의 이점을 얻을 수 없는 게임의 경우 C++를 사용"
+"할 수 있는 가능성도 있습니다. 이를 통해 여전히 GDScript에서 대부분의 게임을 "
+"생성하고 성능 향상이 필요한 영역에만 약간의 C++를 추가할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr "변수 & 지정"
+msgstr "변수 & 할당"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -138,8 +138,8 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
-"동적 타입 언어의 모든 변수는 \"변형\"과 유사합니다. 즉, 그들의 타입은 고정되"
-"어 있지 않고, 오직 지정을 통해 수정됩니다. 예제:"
+"동적 타입 언어의 모든 변수는 \"변이형(variant)\"과 유사합니다. 즉, 변수 타입"
+"은 고정되어 있지 않고 할당을 통해서만 수정됩니다. 예제:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
@@ -160,8 +160,8 @@ msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
-"함수도 동적인 특성을 지닙니다, 그래서 함수를 다른 인수로 호출할 수 있습니다, "
-"예를 들어:"
+"함수도 동적인 특성을 지니므로 함수를 다른 인수로 호출할 수 있습니다. 예를 들"
+"면:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
@@ -185,10 +185,10 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
-"C#이나 Java에서, 모든 것이 내장 타입 (정수, 실수, 때때로 문자열)이 아닌 포인"
-"터나 참조입니다. 참조는 또한 자동으로 가비지를 모으는데, 더 이상 사용되지 않"
-"으면 삭제됩니다. 동적 타입 언어 역시 이런 메모리 모델을 사용하는 경향이 있습"
-"니다. 몇 가지 예제:"
+"C#, Java에서 내장 타입(int, float, 때로는 String)이 아닌 모든 것은 항상 포인"
+"터 또는 참조입니다. 참조도 자동으로 가비지 컬렉터가 수집하므로 더 이상 사용하"
+"지 않으면 지워집니다. 동적으로 타입이 지정된 언어도 이 메모리 모델을 사용하"
+"는 경향이 있습니다. 몇 가지 예:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
@@ -211,11 +211,11 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
-"GDScript에서 기본 타입 (정수, 실수, 문자열 그리고 벡터 타입)만이 함수에 값으"
-"로 보낼 수 있습니다 (값은 복사됩니다). 나머지 (인스턴스, 배열, 딕셔너리 등)"
-"는 참조로 보내집니다. :ref:`class_Reference` 를 상속한 클래스 (지정한 것이 없"
-"으면 기본 값)는 사용되지 않을 때 해제되지만, :ref:`class_Object` 로 부터 수동"
-"으로 상속하는 경우 수동 메모리 관리가 가능합니다."
+"GDScript에서는 기본 타입(int, float, String, Vector 타입)만 값으로 함수에 전"
+"달됩니다(값이 복사됨). 다른 모든 것(인스턴스, 배열, 딕셔너리 등)은 참조로 전"
+"달됩니다. :ref:`class_Reference`\\ (아무것도 지정되지 않은 경우 기본값)를 상"
+"속하는 클래스는 사용되지 않을 때 해제되지만 :ref:`class_Object`\\ 에서 수동으"
+"로 상속하는 경우 수동 메모리 관리가 가능합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
@@ -240,12 +240,12 @@ msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
-"동적 타입 언어에서, 배열은 목록과 같이, 다른 데이터 타입으로 두 배가 될 수도 "
-"있습니다:"
+"동적 타입 언어에서, 배열은 리스트(list)와 같은 다른 데이터 타입으로도 사용할 "
+"수도 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr "또는 순서가 없는 세트가 될 수 있습니다:"
+msgstr "또는 순서가 없는 집합(unordered set)이 될 수도 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
@@ -259,10 +259,10 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
-"딕셔너리는 동적 타입 언어에서 강력한 도구입니다. 정적 타입 언어 (C++나 C#)에"
-"서 온 대부분의 프로그래머들이 이 존재를 무시한 채 그들의 삶을 더 어렵게 만들"
-"고 있습니다. 이 데이터 타입은 일반적으로 그러한 언어 (또는 제한된 형태)로 존"
-"재하지 않습니다."
+"딕셔너리는 동적 타입 언어에서 강력한 툴입니다. 정적 타입 언어(C++나 C#)를 사"
+"용하는 대부분의 프로그래머는 딕셔너리의 존재를 무시해서 불필요하게 삶을 더 어"
+"렵게 만듭니다. 이 데이터 타입은 일반적으로 그러한 언어에서 존재하지 않습니다"
+"(또는 제한된 형태로만 존재합니다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -272,10 +272,10 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
-"딕셔너리는 키 또는 값으로 사용되는 데이터 타입을 무시하고 다른 값으로 매핑 "
-"할 수 있습니다. 대중적 신념과는 반대로, 그들은 해시 테이블로 구현될 수 있기 "
-"때문에 효과적입니다. 사실, 일부 언어는 배열을 딕셔너리로 구현하는 것이 더 효"
-"과적입니다."
+"딕셔너리는 키나 값으로 사용되는 데이터 타입을 완전히 무시하고 모든 값을 다른 "
+"값에 매핑할 수 있습니다. 일반적인 편견과 달리 딕셔너리는 해시 테이블로 구현"
+"될 수 있기 때문에 효율적입니다. 실제로 일부 언어는 배열을 딕셔너리로 구현하기"
+"까지 할 정도로 효율적입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
@@ -286,16 +286,16 @@ msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
 msgstr ""
-"딕셔너리 또한 동적이기에, 적은 손해로 어디에나 키를 추가하고 삭제할 수 있습니"
-"다:"
+"딕셔너리 또한 동적이기에, 적은 비용으로 어디에나 키를 추가하고 삭제할 수 있습"
+"니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
-"대부분의 경우, 2 차원 배열은 종종 딕셔너리로 더 쉽게 구현될 수 있습니다. 여"
-"기 간단한 전함 게임 예제가 있습니다:"
+"대부분의 경우, 2차원 배열은 종종 딕셔너리로 더 쉽게 구현될 수 있습니다. 여기 "
+"간단한 배틀쉽(Battleship) 게임 예제가 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -304,17 +304,17 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
-"딕셔너리는 또한 데이터 마크업이나 빠른 구조에도 사용될 수 있습니다. GDScript "
-"딕셔너리가 python 딕셔너리와 닮은 한편, GDScript는 초기 상태와 빠른 구조체를 "
-"작성하는 데 유용한 Lua 스타일 문법과 인덱싱도 지원합니다:"
+"딕셔너리는 데이터 마크업이나 빠른 구조에도 사용될 수 있습니다. GDScript 딕셔"
+"너가 python 딕셔너리와 닮은 한편, GDScript는 초기 상태와 빠른 구조체를 작성하"
+"는 데 유용한 Lua 스타일 문법과 인덱싱도 지원합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:319
 msgid "For & while"
-msgstr "For & while"
+msgstr "for & while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:321
 msgid "Iterating in some statically typed languages can be quite complex:"
-msgstr "일부 정적 타입 언어에서 반복은 꽤 복잡해질 수 있습니다:"
+msgstr "일부 정적 타입 언어에서 반복문은 꽤 복잡해질 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
@@ -325,8 +325,8 @@ msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
-"컨테이너 데이터 타입 (배열과 딕셔너리)도 반복 가능합니다. 딕셔너리는 키를 반"
-"복할 수 있습니다:"
+"컨테이너 데이터 타입(배열과 딕셔너리)도 반복 가능합니다. 딕셔너리는 키를 반복"
+"할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
@@ -350,7 +350,7 @@ msgstr "그리고 음수 카운터를 통해 역방향 루프가 됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
-msgstr "이렇게 됩니다:"
+msgstr "위는 이렇게 구현됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 msgid "While"
@@ -362,7 +362,7 @@ msgstr "while() 루프는 모든 곳에서 동일합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr "맞춤 반복자(Iterator)"
+msgstr "커스텀 반복자(Iterator)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -371,9 +371,9 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
-"기본 반복자가 필요에 맞지 않는다면 변수 클래스의 스크립트의 ``_iter_init``, "
-"``_iter_next``, 그리고 ``_iter_get`` 함수를 오버라이딩하여 맞춤 반복자를 생성"
-"하실 수 있습니다. forward 반복자의 예제 구현은 다음과 같습니다:"
+"스크립트에서 Variant 클래스의 ``_iter_init``, ``_iter_next``, ``_iter_get`` "
+"함수를 재정의해서 기본 반복자가 필요에 맞지 않는 경우 커스텀 반복자를 만들 "
+"수 있습니다. 순방향 반복기의 구현 예는 다음과 같습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
@@ -384,8 +384,8 @@ msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
-"``_iter_init`` 에서 반복자의 상태를 리셋해야 합니다, 그렇지 않으면 맞춤 반복"
-"자에 사용하는 중첩된 for 루프가 예상대로 작동하지 않을 것입니다."
+"``_iter_init``\\ 에서 반복자의 상태를 리셋해야 합니다. 그렇지 않으면 커스텀 "
+"반복자를 사용하는 중첩된 for 루프가 예상대로 작동하지 않습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
@@ -398,9 +398,9 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
-"정적 타입 언어에서 동적 타입 언어로 바꿀 때 이해하기 어려운 개념들 중 하나가 "
-"덕 타이핑입니다. 덕 타이핑은 전체 코드 설계를 더 간단하고 쓰기 쉽게 만들어주"
-"지만, 어떻게 작동하는지 분명하지 않습니다."
+"정적 타입 언어에서 동적 타입 언어로 이동할 때 가장 이해하기 어려운 개념 중 하"
+"나는 덕 타이핑입니다. 덕 타이핑을 사용하면 전체 코드 디자인을 훨씬 간단하고 "
+"쉽게 작성할 수 있지만 작동 방식이 명확하지 않습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
@@ -408,9 +408,8 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
-"예제와 같이, 큰 바위가 터널로 떨어지고 있는 상황을 생각해보세요, 그 길의 모"
-"든 것들을 박살내 버립니다. 바위의 코드는, 정적 언어에서는 다음과 같이 될 것입"
-"니다:"
+"예를 들어 큰 바위가 터널 아래로 떨어져 진행 경로의 모든 것을 부수는 상황을 상"
+"상해 보세요. 정적 타입 언어의 바위 코드는 다음과 같을 것입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -422,12 +421,12 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
-"이 방법은, 바위에 의해 박살날 수 있는 모든 것들은 Smashable(박살날 수 있음)"
-"을 상속해야 합니다. 캐릭터, 적, 가구의 일부, 작은 돌들은 모두 박살날 수 있"
-"고, 그들은 클래스 Smashable로 부터 상속해야 하고, 거기에 다중 상속이 필요할 "
-"수도 있습니다. 다중 상속이 바람직하지 않은 경우, 그들은 Entity와 같은 일반 클"
-"래스에 상속해야 합니다. 그러나 Entity들 중 일부만이 박살날 수 있다고 해서 가"
-"상 메서드 ``smash()`` 를 추가하는 것은 그리 우아하지 않을 것입니다."
+"이렇게 하면 바위에 의해 박살날 수 있는 모든 것이 Smashable을 상속받아야 합니"
+"다. 캐릭터, 적, 가구, 작은 바위가 모두 부숴질 수 있는 경우 Smashable 클래스에"
+"서 상속받아야 하며 다중 상속이 필요할 수 있습니다. 다중 상속이 바람직하지 않"
+"은 경우 Entity와 같은 공통 클래스를 상속받아야 합니다. 그러나 Entity들 중 일"
+"부만이 박살날 수 있다고 해서 가상 메서드 ``smash()`` 를 추가하는 것은 그리 우"
+"아하지 않을 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -435,8 +434,9 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
-"동적 타입 언어에서는, 문제없습니다. 덕 타이핑이 ``smash()`` 함수가 필요한 곳"
-"에만 정의하도록 만듭니다. 상속, 기본 클래스 등등을 고려할 필요가 없습니다."
+"동적 타입 언어에서는 문제가 되지 않습니다. 덕 타이핑을 사용하면 필요한 경우 "
+"``smash()`` 함수만 정의하면 됩니다. 상속, 기본 클래스 등을 고려할 필요가 없습"
+"니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -446,10 +446,10 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
-"그리고 됐습니다. 큰 오리를 치는 물체가 smash() 메서드를 갖고 있다면, 호출될 "
-"것입니다. 상속이나 폴리모피즘이 필요 없습니다. 동적 타입 언어는 상속된 인스턴"
-"스나 클래스 타입이 아니라, 바람직한 메서드나 멤버를 가진 인스턴스가 맞는지 관"
-"리하시면 됩니다. 덕 타이핑의 정의는 이를 명확하게 만듭니다:"
+"이게 다에요. 큰 바위에 부딪힌 객체에 smash() 메서드가 있으면 호출됩니다. 상속"
+"이나 다형성이 필요하지 않습니다. 동적 타입 언어는 원하는 메소드 또는 멤버가 "
+"있는 인스턴스에만 관심이 있으며 상속 대상이나 클래스 유형이 아닙니다. 덕 타이"
+"핑의 정의는 이를 더 명확하게 만듭니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
@@ -473,21 +473,18 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "예, 우리는 이를 대신 헐크 타이핑이라 불러야겠네요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
 "exist, but GDScript is stricter, so checking if the function exists is "
 "desirable:"
 msgstr ""
-"맞은 물체가 smash() 함수를 갖지 않을 수 있습니다. 일부 동적 타입 언어는 존재"
-"하지 않는 메서드 호출은 간단히 무시합니다 (Objective C 처럼 말이죠), 하지만 "
-"GDScript는 더 엄격합니다, 그래서 함수가 존재하는 지 확인하는 것이 바람직합니"
-"다:"
+"충돌한 물체에 smash() 함수가 없을 수도 있습니다. 일부 동적 타입 언어는 존재하"
+"지 않는 메서드 호출은 간단히 무시하지만 GDScript는 더 엄격하므로 함수가 존재"
+"하는지 확인하는 것이 바람직합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""
-"그런 다음, 간단히 바위에 닿는 모든 것들을 메서드로 정의하여 박살날 수 있도록 "
-"합니다."
+"그런 다음 메서드를 정의하기만 하면 바위가 닿는 모든 것이 박살날 수 있습니다."

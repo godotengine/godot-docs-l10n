@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,9 +100,8 @@ msgstr ""
 "度. 你也可以用它将物理或AI限制在局部区域, 并加快这些以及渲染的速度."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:48
-#, fuzzy
 msgid "Portal Rendering"
-msgstr "渲染"
+msgstr "Portal 渲染"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:50
 msgid ""
@@ -110,12 +109,15 @@ msgid ""
 "features an advanced portal rendering system, which can perform occlusion "
 "culling from cameras and lights. See :ref:`doc_rooms_and_portals`."
 msgstr ""
+"然而，有一种更简单的方法可以实现遮挡。 Godot 具有先进的门渲染系统，可以从相机"
+"和灯光执行遮挡剔除。参阅 :ref:`doc_rooms_and_portals`。"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:54
 msgid ""
 "This is not a fully automatic system and it requires some manual setup. "
 "However, it potentially offers significant performance increases."
 msgstr ""
+"虽然这个系统并不是全自动的，需要一些手动设置，但是却能带来显著的性能提升。"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:59
 #, fuzzy
@@ -133,15 +135,14 @@ msgid "Other occlusion techniques"
 msgstr "其他遮挡技术"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:67
-#, fuzzy
 msgid ""
 "As well as the portal system and manual methods, there are various other "
 "occlusion techniques such as raster-based occlusion culling. Some of these "
 "may be available through add-ons or may be available in core Godot in the "
 "future."
 msgstr ""
-"还有其他的遮挡技术, 如门户, 自动PVS和基于光栅的遮挡剔除. 其中一些技术可以通过"
-"附加组件获得, 将来可能会在核心Godot中获得."
+"还有其他的遮挡技术, 如门, 自动PVS和基于光栅的遮挡剔除. 其中一些技术可以通过附"
+"加组件获得, 将来可能会在Godot核心中获得."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:72
 msgid "Transparent objects"

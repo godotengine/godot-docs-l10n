@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:20
 msgid "The default behavior on the left and the end result on the right."
-msgstr ""
+msgstr "左图为默认行为，右图为最终结果。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:24
 #, fuzzy
@@ -78,11 +78,12 @@ msgid ""
 "Here, you are loading a script and not a packed scene. Therefore you should "
 "use ``new()`` instead of ``instance()``."
 msgstr ""
+"因为你在这里读取的是脚本而不是场景包，所以应该使用 ``new()`` 而不是 "
+"``instance()``\\ 。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:64
-#, fuzzy
 msgid "Interacting with the inspector"
-msgstr "与光交互"
+msgstr "与检查器交互"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:66
 msgid ""
@@ -91,6 +92,9 @@ msgid ""
 "provides several virtual methods that affect how the inspector handles "
 "properties."
 msgstr ""
+"要和检查器面板交互，你的 ``MyInspectorPlugin.gd`` 脚本必须继承自 :ref:"
+"`class_EditorInspectorPlugin` 类。这个类提供了不少虚方法，可以用来控制检查器"
+"对属性的处理。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:70
 msgid ""
@@ -98,10 +102,12 @@ msgid ""
 "method. This function is called for each edited :ref:`class_Object` and must "
 "return ``true`` if this plugin should handle the object or its properties."
 msgstr ""
+"脚本必须实现 ``can_handle()`` 方法才能生效。编辑任何 :ref:`class_Object` 对象"
+"时都会调用这个函数，插件想要处理该对象或其属性的话，就必须返回 ``true``\\ 。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:74
 msgid "This includes any :ref:`class_Resource` attached to the object."
-msgstr ""
+msgstr "要处理附加在该对象上的 :ref:`class_Resource` 也同样如此。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:76
 msgid ""
@@ -111,6 +117,10 @@ msgid ""
 "respectively. They can add controls at the top or bottom of the inspector "
 "layout by calling ``add_custom_control()``."
 msgstr ""
+"另外还有四个方法可以实现，用来往检查器的特定位置添加空间。\\ "
+"``parse_begin()`` 和 ``parse_end()`` 方法顾名思义，只会在每个对象开始解析和结"
+"束解析的时候调用一次。在其中调用 ``add_custom_control()`` 就可以在检查器布局"
+"的顶部或底部添加控件。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:82
 msgid ""
@@ -120,11 +130,15 @@ msgid ""
 "``add_property_editor_for_multiple_properties()``. Use these last two "
 "methods to specifically add :ref:`class_EditorProperty`-based controls."
 msgstr ""
+"编辑器解析对象时，会调用 ``parse_category()`` 和 ``parse_property()`` 方法。"
+"在这两个函数中，除了 ``add_custom_control()`` 以外，你还可以调用 "
+"``add_property_editor()`` 和 "
+"``add_property_editor_for_multiple_properties()``\\ ，这两个函数是专门用来添"
+"加基于 :ref:`class_EditorProperty` 的控件的。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:115
-#, fuzzy
 msgid "Adding an interface to edit properties"
-msgstr "添加属性"
+msgstr "添加编辑属性的界面"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:117
 msgid ""
@@ -133,30 +147,34 @@ msgid ""
 "It doesn't display anything but can house any other control nodes, including "
 "complex scenes."
 msgstr ""
+":ref:`class_EditorProperty` 是一种特殊的 :ref:`class_Control`\\ ，可以与检查"
+"器面板所编辑的对象进行交互。它本身不显示任何内容，但可以放入其他控件节点，甚"
+"至是复杂的场景。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:121
 msgid ""
 "There are three essential parts to the script extending :ref:"
 "`class_EditorProperty`:"
-msgstr ""
+msgstr "扩展 :ref:`class_EditorProperty` 的脚本有三个必不可少的部分："
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:124
 msgid ""
 "You must define the ``_init()`` method to set up the control nodes' "
 "structure."
-msgstr ""
+msgstr "必须定义 ``_init()`` 方法，设置控件节点的结构。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:127
 msgid ""
 "You should implement the ``update_property()`` to handle changes to the data "
 "from the outside."
-msgstr ""
+msgstr "应该实现 ``update_property()`\\ ，处理外部对数据的更改。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:130
 msgid ""
 "A signal must be emitted at some point to inform the inspector that the "
 "control has changed the property using ``emit_changed``."
 msgstr ""
+"必须在某处使用 ``emit_changed`` 触发信号，告知检查器本控件对属性进行了修改。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:133
 msgid ""
@@ -165,6 +183,9 @@ msgid ""
 "use ``add_child()`` followed by ``set_bottom_editor()`` to position it below "
 "the name."
 msgstr ""
+"显示自定义小工具的方法有两种。可以只用默认的 ``add_child()`` 方法可以把它显示"
+"到属性名称的右边，在 ``add_child()`` 之后再调用 ``set_bottom_editor()`` 就可"
+"以把它显示到名称的下边。"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:185
 msgid ""
@@ -172,3 +193,5 @@ msgid ""
 "replaces the default :ref:`class_SpinBox` control for integers with a :ref:"
 "`class_Button` that generates random values."
 msgstr ""
+"使用上面的示例代码，可以实现用自定义的小工具替代整数默认的 :ref:"
+"`class_SpinBox` 控件，点击 :ref:`class_Button` 后生成随机值。"

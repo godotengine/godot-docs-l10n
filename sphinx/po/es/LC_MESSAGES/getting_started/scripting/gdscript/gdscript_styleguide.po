@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,18 +240,25 @@ msgid "The only exception to that rule is the ternary operator:"
 msgstr "La única excepción a esta regla es el operador ternario:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
+#, fuzzy
 msgid "Format multiline statements for readability"
-msgstr ""
+msgstr "Formatear las sentencias de varias líneas para facilitar su lectura"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
+#, fuzzy
 msgid ""
 "When you have particularly long ``if`` statements or nested ternary "
 "expressions, wrapping them over multiple lines improves readability. Since "
 "continuation lines are still part of the same expression, 2 indent levels "
 "should be used instead of one."
 msgstr ""
+"Cuando se tiene declaraciones ``if`` particularmente extensas o expresiones "
+"ternarias anidadas, envolverlas en varias líneas mejora la legibilidad. Dado "
+"que las líneas de continuación siguen formando parte de la misma expresión, "
+"deben utilizarse dos niveles de sangría en lugar de uno."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:303
+#, fuzzy
 msgid ""
 "GDScript allows wrapping statements using multiple lines using parentheses "
 "or backslashes. Parentheses are favored in this style guide since they make "
@@ -259,6 +266,12 @@ msgid ""
 "line never contains a backslash at the end. With parentheses, you don't have "
 "to worry about the last line having a backslash at the end."
 msgstr ""
+"GDScript permite envolver las sentencias con múltiples líneas utilizando "
+"paréntesis o barras invertidas. En esta guía de estilo se prefieren los "
+"paréntesis porque facilitan la refactorización. Con las barras invertidas, "
+"tienes que asegurarte de que la última línea nunca contenga una barra "
+"invertida al final. Con los paréntesis, no tiene que preocuparse de que la "
+"última línea tenga una barra invertida al final."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
 msgid ""

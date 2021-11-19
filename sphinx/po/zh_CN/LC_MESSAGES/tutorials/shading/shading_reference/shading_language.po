@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -797,15 +797,15 @@ msgid "Varyings"
 msgstr "Varyings"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:423
-#, fuzzy
 msgid ""
 "To send data from the vertex to the fragment (or light) processor function, "
 "*varyings* are used. They are set for every primitive vertex in the *vertex "
 "processor*, and the value is interpolated for every pixel in the *fragment "
 "processor*."
 msgstr ""
-"为了从顶点向片段处理器函数发送数据,*varyings* 被使用. 它们设置 *vertex "
-"processor* 中的每个原始顶点, 其数值则为片段处理器中的每个像素插值."
+"要从顶点处理器函数往片段（或者灯光）处理器函数里发送数据，可以使用 *varying*"
+"\\ 。\\ *顶点处理器*\\ 中的每一个图元顶点都是 varying 的，会为\\ *片段处理器*"
+"\\ 中的每一个像素做插值。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:445
 msgid "Varying can also be an array:"

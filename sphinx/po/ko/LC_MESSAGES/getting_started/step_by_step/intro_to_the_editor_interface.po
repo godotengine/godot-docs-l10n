@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot's editor"
-msgstr "Godot 편집기 소개"
+msgstr "Godot 에디터 소개"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -27,9 +27,9 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"이 튜토리얼에서는 Godot의 인터페이스에 대하여 알아봅니다. 먼저 **프로젝트 매"
+"이 튜토리얼에서는 Godot의 인터페이스에 대하여 알아봅시다. 먼저 **프로젝트 매"
 "니저, 독, 작업 공간**\\ 을 살펴보고, 그 후 엔진을 시작하려면 알아야 할 것들"
-"을 살봅니다."
+"을 살펴봅시다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
 msgid ""
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Godot를 실행하면, 처음으로 나오는 창이 프로젝트 매니저입니다. 아직 프로젝트"
 "가 하나도 없기 때문에 애셋 라이브러리(Asset Library)를 열지 물어보는 팝업 창"
-"이 나올 것입니다. 취소를 누르세요. 애셋 라이브러리는 다음에 알아보죠."
+"이 나올 것입니다. 취소를 누르세요, 애셋 라이브러리는 다음에 알아보죠."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
-msgstr "오른쪽 위에는 편집기의 언어를 바꿀 수 있는 드롭 다운 메뉴가 있습니다."
+msgstr "오른쪽 위에는 에디터의 언어를 바꿀 수 있는 드롭 다운 메뉴가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
@@ -109,9 +109,9 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"오른쪽에 초록불이 들어오면, 엔진이 빈 폴더를 감지했다는 것입니다. 아니면 프로"
-"젝트 이름 옆의 ``폴더 만들기(Create Folder)`` 버튼을 클릭해서, 프로젝트 이름"
-"으로 된 빈 폴더를 만들 수 있습니다."
+"오른쪽에 초록불이 들어온다면 엔진이 빈 폴더를 감지했다는 뜻입니다. 프로젝트 "
+"이름 옆의 ``폴더 만들기(Create Folder)`` 버튼을 클릭해서, 프로젝트 이름으로 "
+"된 빈 폴더를 만들 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
 msgid ""
@@ -122,7 +122,7 @@ msgid ""
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
 "마지막으로 사용할 렌더러를 선택해야 합니다 (OpenGL ES 3.0 아니면 OpenGL ES "
-"2.0). 선택하기 쉽게 각자 장단점이 쓰여 있습니다. 그리고 자세한 설명은 :ref:"
+"2.0). 선택하기 쉽게 각자 장단점이 쓰여져 있습니다. 그리고 자세한 설명은 :ref:"
 "`doc_gles2_gles3_differences`\\ 를 참고하면 됩니다. 마음이 바뀐다면 프로젝트 "
 "설정에서 백엔드를 바꿀 수 있습니다. 이 튜토리얼에서는 두 백엔드 모두 괜찮습니"
 "다."
@@ -132,8 +132,8 @@ msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"모든 작업이 끝났으면 ``만들기 & 편집하기(Create & Edit)``\\ 를 클릭하세요. "
-"Godot는 프로젝트를 만들고 편집기에 프로젝트를 열어 줍니다."
+"모든 작업이 끝났으면 ``만들기 & 편집(Create & Edit)``\\ 을 클릭하세요. Godot"
+"는 프로젝트를 만들고 에디터에 프로젝트를 열어 줍니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
 msgid ""
@@ -141,7 +141,7 @@ msgid ""
 "the list. Double click on it to open it in the editor."
 msgstr ""
 "다음에 프로젝트 매니저를 열게 되면, 새 프로젝트가 목록에 있는 것을 볼 수 있습"
-"니다. 편집기에서 프로젝트를 열려면 더블클릭하세요."
+"니다. 에디터에서 프로젝트를 열려면 더블클릭하세요."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
@@ -159,7 +159,7 @@ msgstr "폴더 경로가 올바르다면 초록색 체크 표시가 나타납니
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid "Your first look at Godot's editor"
-msgstr "Godot 편집기와의 첫 만남"
+msgstr "Godot 에디터와의 첫 만남"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
 msgid ""
@@ -167,8 +167,8 @@ msgid ""
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Godot에 온 것을 환영합니다! 프로젝트가 열리면 상단에 메뉴들이 있고, 양쪽 끝"
-"에 있는 뷰포트들 안에 독들(docks)이 있는 편집기의 인터페이스를 볼 수 있습니"
+"Godot에 오신 것을 환영합니다! 프로젝트가 열리면 위에 메뉴들이 있고, 양쪽 끝"
+"에 있는 뷰포트들 안에 독들(docks)이 있는 에디터의 인터페이스를 볼 수 있습니"
 "다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
@@ -183,8 +183,8 @@ msgstr ""
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"왼쪽 아래에는 **파일 시스템 독(FileSystem dock)**\\ 이 있습니다. 여기서 프로"
-"젝트의 파일과 애셋을 관리합니다."
+"왼쪽 아래에는 **파일시스템 독(FileSystem dock)**\\ 이 있습니다. 여기서 프로젝"
+"트의 파일과 애셋을 관리합니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 msgid ""
@@ -200,7 +200,7 @@ msgid ""
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"중앙 상단에는 씬의 오브젝트를 이동, 스케일 조절, 잠금 (lock)할 수 있는 **툴바"
+"중앙 위에는 씬의 오브젝트를 이동, 크기 조정, 잠금(lock)할 수 있는 **툴바"
 "(Toolbar)**\\ 가 있습니다. 툴바는 작업 공간마다 달라집니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
@@ -209,9 +209,9 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That's "
 "why they're folded by default."
 msgstr ""
-"**하단 패널(Bottom Panel)**\\ 에는 디버그 콘솔이나 애니메이션 편집, 오디오 믹"
-"서 등이 있고... 그렇다 보니 많은 공간을 차지합니다. 때문에 기본적으로 닫혀 있"
-"는 상태입니다."
+"**아래쪽 패널(Bottom Panel)**\\ 에는 디버그 콘솔이나 애니메이션 편집, 오디오 "
+"믹서 등이 있고... 그렇다 보니 많은 공간을 차지합니다. 때문에 기본적으로 닫혀 "
+"있는 상태입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "The workspaces"
@@ -248,8 +248,8 @@ msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"툴바 아래에는 원근보기(Perspective) 버튼이 있습니다. 이 버튼에는 3D 뷰포트와 "
-"관련된 설정 목록이 있습니다."
+"툴바 아래에는 원근(Perspective) 버튼이 있습니다. 이 버튼에는 3D 뷰포트와 관련"
+"된 설정 목록이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
 msgid ""
@@ -266,7 +266,7 @@ msgid ""
 "on macOS) to search the reference."
 msgstr ""
 "**Script** 작업 공간은 디버거, 많은 자동 완성 기능, 내장 코드 참조가 있는 완"
-"전한 코드 편집기입니다. :kbd:`Ctrl + F3` (macOS는 :kbd:`Alt + 3`) 키로 들어가"
+"전한 코드 에디터입니다. :kbd:`Ctrl + F3` (macOS는 :kbd:`Alt + 3`) 키로 들어가"
 "고, :kbd:`F1` (macOS는 :kbd:`Alt + Space` ) 키로 참조를 검색합니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
@@ -276,8 +276,8 @@ msgid ""
 "\" button at the top right of the Script workspace."
 msgstr ""
 "스크립트를 작성하는 동안 엔진의 클래스, 메서드, 속성, 상수 또는 시그널에 대"
-"한 정보를 검색하려면 스크립트(Script) 작업 공간의 오른쪽 상단에 있는 \"도움"
-"말 검색(Search Help)\" 버튼을 누르세요."
+"한 정보를 검색하려면 스크립트(Script) 작업 공간의 오른쪽 위에 있는 \"도움말 "
+"검색(Search Help)\" 버튼을 누르세요."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
@@ -312,18 +312,18 @@ msgid ""
 "Atom or Visual Studio Code for instance."
 msgstr ""
 "Godot의 인터페이스는 하나의 창으로 이루어집니다. 여러 화면으로 나눌 수는 없지"
-"만, 대신 Atom이나 Visual Studio와 같은 외부 코드 편집기와 함께 작업할 수 있습"
+"만, 대신 Atom이나 Visual Studio와 같은 외부 코드 에디터와 함께 작업할 수 있습"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid "Move and resize docks"
-msgstr "독의 이동과 크기 조절"
+msgstr "독의 이동과 크기 조정"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:173
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
-msgstr "독이나 패널의 크기를 조절하려면 모서리를 클릭한 뒤 드래그하세요."
+msgstr "독이나 패널의 크기를 조정하려면 모서리를 클릭한 뒤 드래그하세요."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:178
 msgid ""
@@ -336,5 +336,5 @@ msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"보기 좋은 편집기를 만들고 싶다면 ``편집기(Editor)`` 메뉴의 ``편집기 설정"
+"보기 좋은 에디터를 만들고 싶다면 ``에디터(Editor)`` 메뉴의 ``에디터 설정"
 "(Editor Settings)``\\ 으로 가세요."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,53 +44,44 @@ msgstr ""
 "personnalisées. C'est *vraiment* facile à faire aussi."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:16
-#, fuzzy
 msgid ""
 "Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
-"Le dessin personnalisé manuellement dans un nœud est *vraiment* utile. Voici "
-"quelques exemples pourquoi :"
+"Le dessin personnalisé dans un nœud 2D est *vraiment* utile. Voici quelques "
+"cas d'utilisation :"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:18
-#, fuzzy
 msgid ""
 "Drawing shapes or logic that existing nodes can't do, such as an image with "
 "trails or a special animated polygon."
 msgstr ""
-"Dessiner des formes ou des logiques non gérées par des nœuds (exemple : "
-"créer un nœud qui dessine un cercle, une image avec des traînées, un type "
-"spécial de polygone animé, etc.)."
+"Dessiner des formes ou une logique que les nœuds existants ne peuvent pas "
+"faire, comme une image avec des traînées ou un polygone animé spécial."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:20
-#, fuzzy
 msgid ""
 "Visualizations that are not that compatible with nodes, such as a tetris "
 "board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
-"Des visualisations qui ne sont pas compatibles avec les nœuds : (exemple : "
-"une carte tetris). L'exemple de tetris utilise une fonction de dessin "
-"personnalisée pour dessiner les blocs."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:23
-#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using a large number of nodes, possibly lowering memory usage and "
 "improving performance."
 msgstr ""
 "Dessiner un grand nombre d'objets simples. Le dessin personnalisé permet "
-"d'éviter l'utilisation de nœuds, ce qui réduit l'utilisation de la mémoire "
-"et est potentiellement plus rapide."
+"d'éviter la surcharge liée à l'utilisation d'un grand nombre de nœuds, ce "
+"qui peut réduire l'utilisation de la mémoire et améliorer les performances."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:26
-#, fuzzy
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
 msgstr ""
 "Création d'un contrôle d'interface utilisateur personnalisé. Il existe de "
-"nombreux contrôles disponibles, mais on peut rapidement avoir besoin d'en "
-"créer un nouveau, personnalisé."
+"nombreux contrôles disponibles, mais si vous avez des besoins inhabituels, "
+"vous aurez probablement besoin d'un contrôle personnalisé."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid "Drawing"
@@ -128,16 +119,14 @@ msgstr ""
 "ultérieurs sont inutiles."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
-#, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, call :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
 "and a new ``_draw()`` call will happen."
 msgstr ""
-"Si vous devez redessiner parce qu'un état ou quelque chose d'autre a changé, "
-"appelez simplement :ref:`CanvasItem.update() "
-"<class_CanvasItem_method_update>` dans ce même nœud et un nouvel appel "
-"``_draw()`` aura lieu."
+"Si redessiner est nécessaire parce qu'un état ou autre chose a changé, "
+"appelez :ref:`CanvasItem.update() <class_CanvasItem_method_update>` dans ce "
+"même nœud et un nouvel appel ``_draw()`` se produira."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,29 +101,26 @@ msgstr ""
 "化随机种子的时候调用一次** , 多次调用是多余的, 并且有可能影响性能."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:45
-#, fuzzy
 msgid ""
 "Putting it in your main scene script's ``_ready()`` method is a good choice:"
-msgstr "把它放在你的主场景脚本的 ``_ready()`` 方法中是个不错的选择::"
+msgstr "把它放在你的主场景脚本的 ``_ready()`` 方法中是个不错的选择："
 
 #: ../../docs/tutorials/math/random_number_generation.rst:60
-#, fuzzy
 msgid ""
 "You can also set a fixed random seed instead using :ref:`seed() "
 "<class_@GDScript_method_seed>`. Doing so will give you *deterministic* "
 "results across runs:"
 msgstr ""
-"你也可以使用 :ref:`seed() <class_@GDScript_method_seed>` 来设置一个固定的随机"
-"种子. 这样做将使你在不同的运行中得到 *确定* 的结果::"
+"您也可以使用 :ref:`seed() <class_@GDScript_method_seed>` 设置固定的随机种子。"
+"这样能在运行中获得\\ *确定性*\\ 的结果："
 
 #: ../../docs/tutorials/math/random_number_generation.rst:80
-#, fuzzy
 msgid ""
 "When using the RandomNumberGenerator class, you should call ``randomize()`` "
 "on the instance since it has its own seed:"
 msgstr ""
-"当使用RandomNumberGenerator类时, 你应该在实例上调用 ``randomize()``, 因为它有"
-"它自己的种子::"
+"当使用RandomNumberGenerator类时，应该在实例上调用 ``randomize()`` ，因为它有"
+"自己的种子:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:95
 msgid "Getting a random number"
@@ -136,15 +133,15 @@ msgid ""
 msgstr "让我们来看看Godot中最常用的一些生成随机数的函数和方法."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:100
-#, fuzzy
 msgid ""
 "The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
 "number between 0 and 2^32-1. Since the maximum value is huge, you most "
 "likely want to use the modulo operator (``%``) to bound the result between 0 "
 "and the denominator:"
 msgstr ""
-"函数 :ref:`randi() <class_@GDScript_method_randi>` 返回一个在0到2^32-1之间的"
-"随机数. 由于最大值很大, 你会想使用模数运算符(``%``)将结果限制在0到分母之间::"
+"函数 :ref:`randi() <class_@GDScript_method_randi>` 返回 0 到 2^32-1 之间的随"
+"机数。由于最大值很大，您很可能希望使用模运算符 (``%``) 将结果限制在 0 和分母"
+"之间："
 
 #: ../../docs/tutorials/math/random_number_generation.rst:122
 msgid ""
@@ -158,7 +155,6 @@ msgstr ""
 "时非常有用."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:127
-#, fuzzy
 msgid ""
 ":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
 "floating-point number following a `normal distribution <https://en.wikipedia."
@@ -166,22 +162,20 @@ msgid ""
 "likely to be around the mean (0.0 by default), varying by the deviation (1.0 "
 "by default):"
 msgstr ""
-":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` 按照 ` 正态分布"
-"(维基百科) <https://zh.wikipedia.org/wiki/正态分布>`__ 返回随机浮点数. 这意味"
-"着返回值更有可能在平均值附近(默认为0.0), 随偏差产生变化(默认为1.0)::"
+":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` 返回遵循 `正态分"
+"布 <https://en.wikipedia.org/wiki/Normal_distribution>`__ 的随机浮点数。这意"
+"味着返回值更有可能在平均值附近（默认为 0.0），随偏差变化（默认为 1.0）:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:148
-#, fuzzy
 msgid ""
 ":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
 "``from`` and ``to``, and returns a random floating-point number between "
 "``from`` and ``to``:"
 msgstr ""
-":ref:`rand_range() <class_@GDScript_method_rand_range>` 接受 ``from`` 和 "
-"``to`` 两个参数, 并返回一个介于 ``from`` 和 ``to`` 之间的随机浮点数::"
+":ref:`rand_range() <class_@GDScript_method_rand_range>` 接受两个参数 "
+"``from`` 和 ``to`` ，并返回一个介于 ``from`` 和 ``to`` 之间的随机浮点数:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:163
-#, fuzzy
 msgid ""
 ":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
@@ -189,25 +183,23 @@ msgid ""
 "``to``:"
 msgstr ""
 ":ref:`RandomNumberGenerator.randi_range() "
-"<class_RandomNumberGenerator_method_randi_range>` 接受 ``from`` 和 ``to`` 两"
-"个参数, 返回一个介于 ``from`` 和 ``to`` 之间的随机整数::"
+"<class_RandomNumberGenerator_method_randi_range>` 接受两个参数 ``from`` 和 "
+"``to`` ，并返回一个介于 ``from`` 和 ``to`` 之间的随机整数："
 
 #: ../../docs/tutorials/math/random_number_generation.rst:182
 msgid "Get a random array element"
 msgstr "获取一个随机数组元素"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:184
-#, fuzzy
 msgid ""
 "We can use random integer generation to get a random element from an array:"
-msgstr "我们可以生成一个随机整数来从数组中获取一个随机元素::"
+msgstr "我们可以使用随机整数生成来从数组中获得一个随机元素:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:228
-#, fuzzy
 msgid ""
 "To prevent the same fruit from being picked more than once in a row, we can "
 "add more logic to this method:"
-msgstr "为了防止同一个水果被连续采摘多次, 我们可以向这个方法添加更多逻辑::"
+msgstr "为了防止连续多次采摘相同的水果，我们可以给这个方法添加更多的逻辑:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:293
 msgid ""
@@ -225,23 +217,21 @@ msgid "Get a random dictionary value"
 msgstr "获取一个随机字典值"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:301
-#, fuzzy
 msgid "We can apply similar logic from arrays to dictionaries as well:"
-msgstr "我们也可以将类似的逻辑从数组应用到字典上::"
+msgstr "我们也可以将数组的类似逻辑应用于字典:"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:329
 msgid "Weighted random probability"
 msgstr "加权随机概率"
 
 #: ../../docs/tutorials/math/random_number_generation.rst:331
-#, fuzzy
 msgid ""
 "The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
 "point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
 "probability where different outcomes have different likelihoods:"
 msgstr ""
-":ref:`randf() <class_@GDScript_method_randf>` 方法返回一个介于0.0和1.0之间的"
-"浮点数. 我们可以用它来创建一个 \"加权\" 的概率, 不同的结果拥有不同的可能性::"
+":ref:`randf() <class_@GDScript_method_randf>` 方法返回一个介于 0.0 和 1.0 之"
+"间的浮点数。我们可以使用它来创建“加权”概率，其中不同的结果具有不同的可能性："
 
 #: ../../docs/tutorials/math/random_number_generation.rst:394
 msgid "\"Better\" randomness using shuffle bags"
@@ -295,13 +285,12 @@ msgstr ""
 "它们的局限性. 这里的输入可以是位置, 时间或其他任何东西."
 
 #: ../../docs/tutorials/math/random_number_generation.rst:443
-#, fuzzy
 msgid ""
 "To achieve this, you can use random *noise* functions. Noise functions are "
 "especially popular in procedural generation to generate realistic-looking "
 "terrain. Godot provides :ref:`class_opensimplexnoise` for this, which "
 "supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise:"
 msgstr ""
-"为此, 你可以使用随机的 *噪声* 函数. 噪声函数在程序生成中特别流行, 用来生成视"
-"觉上逼真的地形. Godot为此提供了 :ref:`class_opensimplexnoise` , 它支持"
-"1D,2D,3D和4D噪声. 以下是一个1D噪声的示例::"
+"为此，您可以使用 *noise* 随机函数。噪声函数在程序生成中特别受欢迎，以生成逼真"
+"的地形。 Godot 为此提供了 :ref:`class_opensimplexnoise`，它支持 1D、2D、3D "
+"和 4D 噪声。这是一个1D噪声的例子:"

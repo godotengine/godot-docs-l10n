@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,41 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:4
-#, fuzzy
 msgid "C# Exports"
-msgstr "Exports"
+msgstr "C# Exports"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:7
 msgid "Introduction to exports"
 msgstr "Introduction aux exports GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``[Export]`` attribute."
 msgstr ""
-"Dans Godot, les membres de classe peuvent être exportés. Cela signifie que "
-"leur valeur est sauvegardée avec la ressource (par exemple la :ref:`scene "
+"Dans Godot, les membres de la classe peuvent être exportés. Cela signifie "
+"que leur valeur est sauvegardée avec la ressource (comme la :ref:`scene "
 "<class_PackedScene>`) à laquelle ils sont attachés. Ils seront également "
 "disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
-"fait en utilisant le mot clé ``export`` :"
+"fait en utilisant le mot clé ``{export]``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:22
-#, fuzzy
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
 "current project it will be visible in the property editor. This way, artists "
 "and game designers can modify values that later influence how the program "
 "runs. For this, a special export syntax is provided."
 msgstr ""
-"L'un des avantages fondamentaux de l'exportation des variables membres est "
-"de les rendre visibles et modifiables dans l'éditeur. De cette façon, les "
-"artistes et les game designers peuvent modifier les valeurs qui "
-"influenceront plus tard le fonctionnement du programme. Pour cela, une "
-"syntaxe spéciale d'exportation est fournie."
+"Dans cet exemple, la valeur \"5\" sera enregistrée et après la construction "
+"du projet en cours, elle sera visible dans l'éditeur de propriétés. De cette "
+"façon, les artistes et les concepteurs de jeux peuvent modifier les valeurs "
+"qui influencent ensuite le fonctionnement du programme. Pour cela, une "
+"syntaxe d'exportation spéciale est fournie."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:27
 msgid ""
@@ -67,9 +64,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:35
-#, fuzzy
 msgid "Basic use"
-msgstr "Configuration de base"
+msgstr "Utilisation de base"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:37
 msgid ""
@@ -88,18 +84,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:99
-#, fuzzy
 msgid "Strings as paths"
-msgstr "Longueur de chaîne de caractère"
+msgstr "Chaînes de caractères comme chemins"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:101
 msgid "Property hints can be used to export strings as paths"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:103
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "Le chemin absolu vers le fichier"
+msgstr "Chaîne de caractères comme chemin d'accès à un fichier."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:110
 msgid "String as a path to a directory."
@@ -174,9 +168,8 @@ msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:206
-#, fuzzy
 msgid "Colors"
-msgstr "Couleur"
+msgstr "Couleurs"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:208
 msgid "Regular color given as red-green-blue-alpha value."
@@ -235,7 +228,6 @@ msgid "Exporting bit flags"
 msgstr "Exportation bit flags"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:269
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
@@ -243,11 +235,9 @@ msgid ""
 msgstr ""
 "Les nombres entiers utilisés comme bit flags peuvent stocker plusieurs "
 "valeurs ``true``/``false`` (booléen) dans une propriété. En utilisant "
-"l'indication d'exportation ``int, FLAGS, ...``, ils peuvent être réglés "
-"depuis l'éditeur :"
+"l'indice de propriété ``Flags``, ils peuvent être définis dans l'éditeur."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:279
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
@@ -255,19 +245,18 @@ msgid ""
 "accordingly (e.g. ``private const int ElementWind = 8`` and so on)."
 msgstr ""
 "Vous devez fournir une description sous forme de chaîne de caractère pour "
-"chaque flag. Dans cet exemple, ``Feu`` a la valeur 1, ``Eau`` a la valeur 2, "
-"``Terre`` a la valeur 4 et ``Vent`` correspond à la valeur 8. Généralement, "
-"les constantes doivent être définies en conséquence (p. ex. ``const "
-"ELEMENT_VENT = 8`` et ainsi de suite)."
+"chaque drapeau. Dans cet exemple, ``Fire`` a la valeur 1, ``Water`` a la "
+"valeur 2, ``Earth`` a la valeur 4 et ``Wind`` correspond à la valeur 8. "
+"Généralement, les constantes doivent être définies en conséquence (p. ex. "
+"``const ELEMENT_VENT = 8`` et ainsi de suite)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:284
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
 msgstr ""
-"Des indices d'exportation sont également fournis pour les couches physiques "
-"et de rendu définies dans les paramètres du projet :"
+"Des annotations d'exportation sont également fournies pour les couches de "
+"physique et de rendu définies dans les paramètres du projet."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:297
 msgid ""
@@ -292,14 +281,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:320
-#, fuzzy
 msgid ""
 "Arrays with specified types which inherit from resource can be set by drag-"
 "and-dropping multiple files from the FileSystem dock."
 msgstr ""
-"Si le tableau exporté spécifie un type qui hérite de Resource, les valeurs "
-"du tableau peuvent être définies dans l'inspecteur en glissant et déposant "
-"plusieurs fichiers du dock système de fichiers en même temps."
+"Les tableaux avec des types spécifiques qui héritent de la ressource peuvent "
+"être définis en glissant-déposant plusieurs fichiers depuis le dock "
+"FileSystem."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:330
 msgid ""

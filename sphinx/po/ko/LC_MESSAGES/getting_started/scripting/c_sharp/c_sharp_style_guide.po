@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,9 +370,8 @@ msgid "Rather than:"
 msgstr "이것보다는 말이죠,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "멤버 접근"
+msgstr "멤버 변수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
@@ -380,9 +379,11 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"메서드에서 지역적으로만 사용되는 경우 멤버 변수를 선언하지 마세요. 코드를 따"
+"라가기 더 어렵게 만들기 때문입니다. 대신 메서드 본문에서 지역 변수로 선언하세"
+"요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
-#, fuzzy
 msgid "Local variables"
 msgstr "지역 변수(Local Variables)"
 
@@ -392,6 +393,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"지역 변수를 처음 사용할 때와 최대한 가깝게 선언하세요. 이렇게 하면 변수가 선"
+"언된 위치를 찾기 위해 너무 많이 스크롤하지 않고도 코드를 더 쉽게 따라갈 수 있"
+"습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"

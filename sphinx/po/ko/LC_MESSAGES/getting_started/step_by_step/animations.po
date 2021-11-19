@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,10 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
-"시작하기 위해, 우리는 지난 튜토리얼의 씬을 사용할 것입니다 (:ref:"
-"`doc_splash_screen`). 목표는 \"희미해지는\" 애니메이션을 스플래시 이미지에 추"
-"가하는 것입니다. 혹시나 해서 여기 복사본이 있습니다: :download:`robisplash."
-"zip <files/robisplash.zip>`."
+"시작하기 위해서 지난 튜토리얼의 씬(:ref:`doc_splash_screen`)을 사용하겠습니"
+"다. 목표는 \"점진적으로 선명해지는(fade-in)\" 애니메이션을 스플래시 이미지에 "
+"적용하는 것입니다. 다음은 만일의 경우에 대비한 복사본입니다: :download:"
+"`robisplash.zip <files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
@@ -50,17 +50,17 @@ msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
-"먼저, :ref:`AnimationPlayer <class_AnimationPlayer>` 노드를 \"background"
-"\" (루트 노드) 의 자손으로 추가합니다:"
+"먼저, :ref:`AnimationPlayer <class_AnimationPlayer>` 노드를 \"background\"(루"
+"트 노드)의 자식으로 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr "이 타입의 노드가 선택될 때, 애니메이션 편집기 패널이 나타날 것입니다:"
+msgstr "이 타입의 노드가 선택될 때, 애니메이션 에디터 패널이 나타납니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
-msgstr "애니메이션 편집기 패널은 수동으로 숨기지 않는 이상 표시됩니다."
+msgstr "애니메이션 에디터 패널은 수동으로 숨기지 않는 이상 표시됩니다."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
@@ -71,8 +71,9 @@ msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
-"새 애니메이션을 만들 시간입니다! 애니메이션 버튼을 누르고 메뉴에서 새 파일을 "
-"선택합니다. 대화 상자가 나오면 애니메이션 이름을 \"intro\" 라고 적습니다."
+"새 애니메이션을 만들 시간입니다! 애니메이션 버튼을 누른 다음 메뉴에서 새로 만"
+"들기(new)를 선택하세요. 대화 상자가 나타나면 애니메이션 이름을 \"intro\" 라"
+"고 지으세요."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:40
 msgid ""
@@ -80,9 +81,10 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
-"이제 애니메이션이 있으므로 속성 편집기는 \"애니메이션 편집\" 모드로 들어갑니"
-"다. 이 모드에서, 속성 편집기의 모든 속성에 키 아이콘이 나타납니다. Godot에서"
-"는 대상의 어떤 속성도 애니메이트 할 수 있습니다:"
+"이제 애니메이션이 있으므로 속성 에디터가 \"애니메이션 편집(animation "
+"editing)\" 모드로 들어갑니다. 이 모드에서는 속성 편집기의 모든 속성 옆에 키 "
+"아이콘이 나타납니다. Godot에서 객체의 모든 속성에 애니메이션을 적용할 수 있습"
+"니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "Editing the animation"
@@ -90,7 +92,7 @@ msgstr "애니메이션 편집하기"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid "The logo will appear from the top of the screen."
-msgstr "로고는 화면의 위에서 나타날 것입니다."
+msgstr "로고는 화면 위쪽에서 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
 msgid ""
@@ -98,49 +100,48 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property to add a keyframe:"
 msgstr ""
-"애니메이션 패널을 열고, \"logo\" 노드를 선택하고 \"Rect / Position\" 속성을 "
-"``(118, -400)``\\ 으로 설정합니다, 그리고 속성 옆의 키 버튼을 눌러 키프레임"
-"을 추가합니다:"
+"애니메이션 에디터 패널이 열린 상태에서 \"Logo\" 노드를 선택하고 \"Rect / "
+"Position\" 속성을 ``(118, -400)``\\ 으로 설정한 다음 속성 옆에 있는 키 버튼"
+"을 눌러 키프레임을 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
-msgstr "대화 상자가 나타나면, 새 트랙을 만들겠다고 확인합니다."
+msgstr "대화 상자가 나타나면, 새 트랙을 만들겠다고 확인하세요."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
 msgid "The keyframe will be added in the animation player editor:"
-msgstr "키프레임이 애니메이션 플레이어 편집기에 나타날 것입니다:"
+msgstr "키프레임이 애니메이션 플레이어 에디터에 나타납니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "여기를 클릭해서 편집기 커서를 앞으로 이동합니다:"
+msgstr "여기를 클릭해서 에디터 커서를 앞으로 이동하세요:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
-"로고 위치를 ``(118, 0)``\\ 으로 바꾸고 다시 키프레임을 추가합니다. 다른 값을 "
-"갖는 두 키프레임으로 애니메이션이 발생합니다."
+"Logo 위치를 ``(118, 0)``\\ 으로 변경하고 키프레임을 다시 추가하세요. 두 키프"
+"레임에 다른 값을 주면 애니메이션이 적용됩니다."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
-#, fuzzy
 msgid ""
 "Pressing \"Play selected animation from start\" button on the animation "
 "panel (or :kbd:`Shift + D` on keyboard) will make the logo descend."
 msgstr ""
-"애니메이션 패널에서 \"선택된 애니메이션을 처음부터 재생. (Shift+D)\" 를 누르"
-"면 로고가 내려갈 것입니다."
+"애니메이션 패널에서 \"선택한 애니메이션을 처음부터 재생합니다(Play selected "
+"animation from start)\" 버튼 (또는 키보드의 :kbd:`Shift+D`)를 누르면 로고가 "
+"내려갑니다."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
-"\"불러오면 자동 재생\" 버튼을 눌러 씬이 시작할 때 애니메이션이 자동으로 시작"
-"하도록 설정합니다."
+"\"불러올 시 자동으로 재생(Autoplay on Load)\" 버튼을 눌러 씬이 시작될 때 애니"
+"메이션이 자동으로 시작되도록 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:83
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
-"그리고 마침내, 씬을 실행시키면, 애니메이션은 이렇게 보여야 할 것입니다:"
+msgstr "그리고 마침내 씬을 실행시키면 애니메이션이 다음과 같이 보입니다:"

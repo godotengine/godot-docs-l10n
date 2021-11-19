@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,9 +222,9 @@ msgid ""
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
-"스크립트가 편집기에서 실행하지 않는다면, 내보낸 속성은 편집할 수 있다는 것은 "
-"꼭 알아두세요. 왜냐하면 :ref:`\"Tool(도구) 모드에서 스크립트 "
-"<doc_gdscript_tool_mode>`\\ 를 사용할 수 있기 때문입니다."
+"에디터에서 스크립트가 실행되지 않더라도 내보낸 속성은 계속 편집할 수 있습니"
+"다. 속성은 :ref:`\"툴(Tool)\" 모드 <doc_gdscript_tool_mode>`\\ 의 스크립트와 "
+"함께 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:267
 msgid "Exporting bit flags"
@@ -260,13 +260,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:297
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
-"비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 의심스럽다면, 불"
-"리언 변수를 대신 내보내어야 합니다."
+"비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 확실하지 않은 경"
+"우 대신 boolean 변수를 사용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:301
 msgid "Exporting arrays"
@@ -294,7 +293,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:339
 msgid "Setting exported variables from a tool script"
-msgstr ""
+msgstr "툴 스크립트에서 내보낸 변수 설정"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:341
 msgid ""
@@ -304,11 +303,14 @@ msgid ""
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
 msgstr ""
+":ref:`doc_gdscript_tool_mode` 스크립트에서 내보낸 변수의 값을 변경할 때 인스"
+"펙터(Inspector)의 값은 자동으로 업데이트되지 않습니다. 업데이트하려면 내보낸 "
+"변수의 값을 설정한 후 :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>`\\ 를 호출하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:348
-#, fuzzy
 msgid "Advanced exports"
-msgstr "고급 벡터 연산"
+msgstr "고급 내보내기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:350
 msgid ""
@@ -316,6 +318,9 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
+"불필요한 디자인 복잡성을 피하기 위해 모든 타입의 내보내기를 언어 자체 수준에"
+"서 제공할 수 있는 것은 아닙니다. 다음은 로우 레벨 API로 구현할 수 있는 다소 "
+"일반적인 내보내기 기능에 대해 설명합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:354
 msgid ""
@@ -326,15 +331,25 @@ msgid ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
+"더 읽기 전에 속성이 처리되는 방식과 :ref:"
+"`doc_accessing_data_or_logic_from_object`에 설명된 대로 :ref:`_set() "
+"<class_Object_method__get_property_list>`, :ref:`_get() "
+"<class_Object_method__get_property_list>`, :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` 메서드를 동해 속성을 커스텀하는 방"
+"법에 대해 알고 있어야 합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:361
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
+"C++에서 위의 방법을 사용해 속성을 바인딩하려면 :ref:"
+"`doc_binding_properties_using_set_get_property_list`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:364
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
+"위의 방법이 에디터 안에서 작동할 수 있도록 스크립트는 ``툴(tool)`` 모드에서 "
+"작동해야 합니다."

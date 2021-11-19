@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -295,13 +295,12 @@ msgstr ""
 "Fuentes de Bitmap pueden ser exportadas usando herramientas como BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont soporta fuentes monocromáticas así como fuentes coloridas. Los "
-"formatos soportados son TF y OTF."
+"DynamicFont soporta fuentes monocromáticas así como fuentes coloridas (p. "
+"ej. para emoji). Los formatos soportados son TTF, OTF y WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -539,12 +538,18 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Admite el baking de iluminación indirecta unicamente o el baking de "
+"iluminación directa e indirecta. El modo de baking puede ajustarse por nivel "
+"de luz para permitir configuraciones híbridas de baking ligero."
 
 #: ../../docs/about/list_of_features.rst:198
+#, fuzzy
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Soporte de iluminación de objetos dinámicos usando un sistema automático "
+"basado en el octárbol, no se requiere ubicar una sonda manualmente."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."

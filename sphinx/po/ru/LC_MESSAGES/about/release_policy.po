@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,6 @@ msgstr ""
 "которым нужны обновления обслуживания."
 
 #: ../../docs/about/release_policy.rst:77
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -188,11 +187,11 @@ msgid ""
 "case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
 "Каждый раз, когда выпускается новая основная версия, мы делаем предыдущую "
-"стабильную ветвь долгосрочной поддерживаемой версией и делаем все возможное, "
+"стабильную ветку долгосрочной поддерживаемой версией и делаем все возможное, "
 "чтобы предоставить исправления для проблем, с которыми сталкиваются "
 "пользователи этой ветки, которые не могут перенести сложные проекты на новую "
-"основную версию. Это относится к ветке 2.1 и будет иметь место для последней "
-"стабильной ветки 3.x к моменту выпуска Godot 4.0."
+"основную версию. Так было с веткой 2.1 и будет так с последней стабильной "
+"веткой 3.x к моменту выпуска Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:83
 msgid ""
@@ -201,6 +200,10 @@ msgid ""
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"В данной серии второстепенных выпусков поддержку получает только последний "
+"выпуск исправлений. Если у вас возникла проблема с использованием более "
+"раннего выпуска исправлений, обновите его до последнего выпуска исправлений "
+"этой серии и проверьте ещё раз, прежде чем сообщать о проблеме на GitHub."
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
@@ -227,11 +230,13 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Текущий фокус развития (нестабильный).*"
 
 #: ../../docs/about/release_policy.rst:93
-msgid "Godot 3.4"
+#, fuzzy
+msgid "Godot 3.5"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:93
-msgid "Q4 2021"
+#, fuzzy
+msgid "Q1 2022"
 msgstr "Q4 2021"
 
 #: ../../docs/about/release_policy.rst:93
@@ -243,14 +248,16 @@ msgstr ""
 "процессе разработки."
 
 #: ../../docs/about/release_policy.rst:96
-msgid "Godot 3.3"
-msgstr "Godot 3.2"
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
-msgid "April 2021"
-msgstr "Апрель 2021"
+#, fuzzy
+msgid "November 2021"
+msgstr "Декабрь 2014"
 
 #: ../../docs/about/release_policy.rst:96
+#: ../../docs/about/release_policy.rst:99
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
@@ -260,14 +267,22 @@ msgstr ""
 "совместимостью."
 
 #: ../../docs/about/release_policy.rst:99
+msgid "Godot 3.3"
+msgstr "Godot 3.2"
+
+#: ../../docs/about/release_policy.rst:99
+msgid "April 2021"
+msgstr "Апрель 2021"
+
+#: ../../docs/about/release_policy.rst:102
 msgid "Godot 3.2"
 msgstr "В Godot 3.2"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid "January 2020"
 msgstr "Январь 2020"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
@@ -275,78 +290,76 @@ msgstr ""
 "|eol| Больше не поддерживается как полностью замененный совместимым релизом "
 "3.3(последнее обновление:3.2.3)."
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "Godot 3.1"
 msgstr "В Godot 3.1"
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "March 2019"
 msgstr "Март 2019"
 
-#: ../../docs/about/release_policy.rst:102
-#, fuzzy
+#: ../../docs/about/release_policy.rst:105
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| Больше не поддерживается (последнее обновление: 3.0.6)."
+msgstr "|eol| Больше не поддерживается (последнее обновление: 3.1.2)."
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
 msgstr "Godot 3.0"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "January 2018"
 msgstr "Январь 2018"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "|eol| No longer supported (last update: 3.0.6)."
 msgstr "|eol| Больше не поддерживается (последнее обновление: 3.0.6)."
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "Godot 2.1"
 msgstr "Godot 3.1"
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "July 2016"
 msgstr "Июль 2016"
 
-#: ../../docs/about/release_policy.rst:106
-#, fuzzy
+#: ../../docs/about/release_policy.rst:109
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| Больше не поддерживается (последнее обновление: 3.0.6)."
+msgstr "|eol| Больше не поддерживается (последнее обновление: 2.1.6)."
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "Godot 2.0"
 msgstr "Godot 2.0"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "February 2016"
 msgstr "Февраль 2016"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
 msgstr "|eol| Больше не поддерживается (Последнее обновление: 2.0.4.1)."
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "Godot 1.1"
 msgstr "Godot 1.1"
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "May 2015"
 msgstr "Май 2015"
 
-#: ../../docs/about/release_policy.rst:110
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:113
+#: ../../docs/about/release_policy.rst:115
 msgid "|eol| No longer supported."
 msgstr "|eol| Больше не поддерживается."
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "Godot 1.0"
 msgstr "Godot 1.0"
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "December 2014"
 msgstr "Декабрь 2014"
 
-#: ../../docs/about/release_policy.rst:120
+#: ../../docs/about/release_policy.rst:123
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
@@ -354,7 +367,7 @@ msgstr ""
 "**Легенда:** |supported| Полная поддержка - |partial| Частичная поддержка - |"
 "eol| Не поддерживается (завершено) - |unstable| Разрабатываемая версия"
 
-#: ../../docs/about/release_policy.rst:126
+#: ../../docs/about/release_policy.rst:129
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
@@ -362,11 +375,11 @@ msgstr ""
 "Предварительные версии Godot не предназначены для использования в "
 "производстве и предоставляются с только для тестирования."
 
-#: ../../docs/about/release_policy.rst:132
+#: ../../docs/about/release_policy.rst:135
 msgid "When is the next release out?"
 msgstr "Когда следующий релиз?"
 
-#: ../../docs/about/release_policy.rst:134
+#: ../../docs/about/release_policy.rst:137
 msgid ""
 "While Godot contributors aren't working under any deadlines, we have "
 "historically had one major or minor release per year, with several "
@@ -376,7 +389,7 @@ msgstr ""
 "исторически выпускается большой или маленький релиз Godot каждый год, с "
 "несколькими обслуживающими обновлениями между ними."
 
-#: ../../docs/about/release_policy.rst:138
+#: ../../docs/about/release_policy.rst:141
 msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
@@ -385,7 +398,7 @@ msgstr ""
 "второстепенных выпусков, поэтому вы можете ожидать выпуск нового "
 "второстепенного выпуска каждые 3–6 месяцев."
 
-#: ../../docs/about/release_policy.rst:141
+#: ../../docs/about/release_policy.rst:144
 msgid ""
 "Maintenance (patch) releases will be released as needed with potentially "
 "very short development cycles, to provide users of the current stable branch "
@@ -396,7 +409,7 @@ msgstr ""
 "пользователям текущей стабильной ветки последние исправления ошибок для их "
 "производственных нужд."
 
-#: ../../docs/about/release_policy.rst:145
+#: ../../docs/about/release_policy.rst:148
 msgid ""
 "As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
 "release, but any closer estimate is likely to be hard to uphold. Alpha "

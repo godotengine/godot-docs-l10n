@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -297,13 +297,12 @@ msgstr ""
 "BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont поддерживает как монохромные, так и цветные шрифты. "
-"Поддерживаются форматы TTF и OTF."
+"DynamicFont поддерживает монохромные шрифты, а также цветные шрифты "
+"(например, для эмодзи). Поддерживаемые форматы: TTF, OTF и WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -538,12 +537,17 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Поддерживает запекание только непрямого света или запекание как прямого, так "
+"и непрямого освещения. Режим запекания можно регулировать в зависимости от "
+"освещённости, что позволяет использовать гибридное облегчённое запекание."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Поддерживает освещение динамических объектов с помощью автоматической "
+"системы на основе октодерева. Установка датчика вручную не требуется."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."
@@ -576,11 +580,12 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Отражения в экранном пространстве."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "Методы отражения могут быть смешаны для большей точности."
+msgstr ""
+"Методы отражения могут быть смешаны вместе для большей точности или "
+"масштабируемости."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -813,7 +818,6 @@ msgstr ""
 "*3D:* Пользовательские вершинные, фрагментные, световые и шейдеры неба."
 
 #: ../../docs/about/list_of_features.rst:299
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1552,9 +1556,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "Поддержка кривых Безье в анимации."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Форматы видео"
+msgstr "Форматы файлов"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""

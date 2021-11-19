@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,12 +44,12 @@ msgid "Official Git plugin"
 msgstr "Plugin oficial do Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
+#, fuzzy
 msgid ""
 "Using Git from inside the editor is supported with an official plugin. You "
 "can find the latest releases `here <https://github.com/godotengine/godot-git-"
-"plugin/releases>`__ (it is not available in the asset library). "
-"Documentation on how to use the Git plugin can be found `here <https://"
-"github.com/godotengine/godot-git-plugin/wiki>`__."
+"plugin/releases>`__. Documentation on how to use the Git plugin can be found "
+"`here <https://github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
 "Usar o Git de dentro do editor é suportado com um plugin oficial. Você pode "
 "encontrar as versões mais recentes `aqui <https://github.com/godotengine/"
@@ -57,16 +57,16 @@ msgstr ""
 "A documentação sobre como usar o plugin Git pode ser encontrada `aqui "
 "<https://github.com/godotengine/godot-git-plugin/wiki>`__."
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:26
 msgid "Files to exclude from VCS"
 msgstr "Arquivos para excluir do SCV"
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:28
 msgid "There are some folders Godot creates you should have your VCS ignore:"
 msgstr ""
 "Existem algumas pastas que o Godot cria e que você deve ignorar em seu SCV:"
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:30
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
@@ -75,7 +75,7 @@ msgstr ""
 "automaticamente com base em seus assets-fonte e seus sinalizadores de "
 "importação."
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:32
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
@@ -83,7 +83,7 @@ msgstr ""
 "``*.translation``: Estes arquivos são traduções binárias importadas geradas "
 "a partir de arquivos CSV."
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``export_presets.cfg``: This file contains all the export presets for the "
 "project, including sensitive information such as Android keystore "
@@ -93,7 +93,7 @@ msgstr ""
 "exportação para o projeto, incluindo informações sensíveis como credenciais "
 "de keystore do Android."
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:35
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
@@ -101,11 +101,11 @@ msgstr ""
 "``.mono/``: Esta pasta armazena arquivos Mono gerados automaticamente. Ela "
 "só existe em projetos que usam a versão Mono do Godot."
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:39
 msgid "Working with Git on Windows"
 msgstr "Trabalhando com Git no Windows"
 
-#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:41
 msgid ""
 "Most Git for Windows clients are configured with the ``core.autocrlf`` set "
 "to ``true``. This can lead to files unnecessarily being marked as modified "

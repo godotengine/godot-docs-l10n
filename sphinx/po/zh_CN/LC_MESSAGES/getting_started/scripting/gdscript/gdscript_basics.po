@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,9 +118,9 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
-"关键字定义在 `GDScript tokenizer (GDScript 分词器)<https://github.com/"
+"关键字定义在GDScript 分词器部分 `GDScript tokenizer <https://github.com/"
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ 中, "
-"以防您想了解其中的内幕."
+"如果你想深入了解。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Keyword"
@@ -519,15 +519,14 @@ msgid "Multiplication / Division / Remainder"
 msgstr "乘法/除法/余数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
-#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats), and is additionally used for "
 "Format Strings"
 msgstr ""
-"这些操作符与C++中的具有相同的行为. 整数除法被截断, 而不是返回一个小数, %运算"
-"符只对整数可用(浮点数用 ``fmod``)"
+"这些运算符的行为与C++相同。整数除法会被截断，而不是返回小数，%运算符适用于"
+"ints（\"fmod \"适用于floats），并另外用于格式化字符串Format Strings"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``+``"
@@ -634,9 +633,8 @@ msgid "Type casting"
 msgstr "类型转换"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
@@ -1322,8 +1320,9 @@ msgid ""
 "still be modified afterwards. They can't be reassigned with another value "
 "though."
 msgstr ""
-"由于数组和字典是通过引用的方式传递, 常数们是 \"平坦的\". 这代表, 如果你声明了"
-"一个常数数组或字典, 它依然可以被更改. 虽然, 你并不能将常数数组或字典重新赋值."
+"由于数组和字典是通过引用的方式传递，常数是 \"浅的\"。这代表，如果你声明了一个"
+"常数数组或字典类型的变量名，依然可以增删数组或字典内部元素，但你不能将常数变"
+"量名重新赋予一个新的数组或字典。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
 msgid "Enums"
@@ -1363,7 +1362,7 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
-"函数总是属于一个 ` 类 <Classes_>`_ . 变量查找的作用域的优先级是: 局部 → 类成"
+"函数总是属于一个 `类 <Classes_>`_ . 变量查找的作用域的优先级是：局部 → 类成"
 "员 → 全局. ``self`` 变量总是可用的, 并作为访问类成员的选项提供, 但并不总是必"
 "需的(与Python不同, *不* 应该将其作为函数的第一个参数传递)."
 
@@ -1496,6 +1495,8 @@ msgid ""
 "nesting ternary-if expressions, it is recommended to wrap the complete "
 "expression over multiple lines to preserve readability::"
 msgstr ""
+"可以通过嵌套三元 if 表达式来处理的超过两种可能性的情况。嵌套时，推荐把三元 "
+"if 表达式拆分到多行以保持可读性："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid ""

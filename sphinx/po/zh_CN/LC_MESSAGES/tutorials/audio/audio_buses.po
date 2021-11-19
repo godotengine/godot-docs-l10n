@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,10 +229,21 @@ msgstr ""
 "吧."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:114
+msgid "Capture"
+msgstr "Capture（捕获）"
+
+#: ../../docs/tutorials/audio/audio_buses.rst:116
+msgid ""
+"The Capture effect copies the audio frames of the audio bus that it is on "
+"into an internal buffer. This can be used to capture data from the "
+"microphone or to transmit audio over the network in real-time."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:121
 msgid "Chorus"
 msgstr "和声(Chorus)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:116
+#: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid ""
 "The Chorus effect duplicates the incoming audio, delays the duplicate "
 "slightly and uses an LFO to continuously modulate the pitch of the "
@@ -244,11 +255,11 @@ msgstr ""
 "号的音高, 然后再将重复信号(一个或多个)和原始信号混合在一起. 这就产生了一种微"
 "光效果, 并增加了声音的立体声宽度."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:122
+#: ../../docs/tutorials/audio/audio_buses.rst:129
 msgid "Compressor"
 msgstr "压缩(Compressor)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:124
+#: ../../docs/tutorials/audio/audio_buses.rst:131
 msgid ""
 "A dynamic range compressor automatically attenuates the level of the "
 "incoming signal when its amplitude exceeds a certain threshold. The level of "
@@ -263,20 +274,20 @@ msgstr ""
 "压缩器的主要用途之一是, 一个信号具有非常大声和小声的部分时, 压缩器可以用于降"
 "低动态范围. 降低信号的动态范围会更方便混音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:132
+#: ../../docs/tutorials/audio/audio_buses.rst:139
 msgid "The compressor has many uses. For example:"
 msgstr "压缩器有很多用途. 例如:"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:134
+#: ../../docs/tutorials/audio/audio_buses.rst:141
 msgid "It can be used in the Master bus to compress the whole output."
 msgstr "它可以在主总线中用于压缩整体输出."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:135
+#: ../../docs/tutorials/audio/audio_buses.rst:142
 msgid ""
 "It can be used in voice channels to ensure they sound as even as possible."
 msgstr "它可以在人声通道中使用, 使它们听起来尽可能均匀."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:136
+#: ../../docs/tutorials/audio/audio_buses.rst:143
 msgid ""
 "It can be *sidechained*. This means it can reduce the sound level of one "
 "signal using the level of another audio bus for threshold detection. This "
@@ -287,13 +298,13 @@ msgstr ""
 "号的电平, 进行阈值检测. 这种技术在电子游戏混音中非常常见. 在出现语音时, 音乐"
 "或音效的电平会被 \"降低\"."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:140
+#: ../../docs/tutorials/audio/audio_buses.rst:147
 msgid ""
 "It can accentuate transients by using a slower attack. This can make sound "
 "effects more punchy."
 msgstr "它可以通过较慢的启动(attack)来强调瞬态. 让音效听起来更有力."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:145
+#: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid ""
 "If your goal is to prevent a signal from exceeding a given amplitude "
 "altogether, rather than to reduce the dynamic range of the signal, a :ref:"
@@ -303,11 +314,11 @@ msgstr ""
 "如果你的目标是防止信号总体超过某个振幅限制, 而不是减少信号的动态范围……那么, :"
 "ref:`限幅器 (limiter)<doc_audio_buses_limiter>` 可能是比压缩器更好的选择."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:152
+#: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Delay"
 msgstr "延迟(Delay)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:154
+#: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid ""
 "Adds an \"echo\" effect with a feedback loop. It can be used together with "
 "*Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far "
@@ -316,11 +327,11 @@ msgstr ""
 "通过反馈回路添加 \"回音\" 效果. 它可以与 *混响* (Reverb)一起使用, 模拟宽阔的"
 "房间, 峡谷等声音从远处反弹回来的地方."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:159
+#: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "Distortion"
 msgstr "失真(Distortion)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:161
+#: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
 "*overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate "
@@ -329,11 +340,11 @@ msgstr ""
 "使声音失真.Godot提供几种类型的失真: *overdrive* , *tan* 和 *bit crushing* . "
 "失真可以用来模拟通过低质量扬声器或设备发出的声音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:166
+#: ../../docs/tutorials/audio/audio_buses.rst:173
 msgid "EQ"
 msgstr "均衡器(EQ)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:168
+#: ../../docs/tutorials/audio/audio_buses.rst:175
 msgid ""
 "EQ is what all other equalizers inherit from. It can be extended with with "
 "Custom scripts to create an equalizer with a custom number of bands."
@@ -341,11 +352,11 @@ msgstr ""
 "所有其他均衡器都从EQ继承而来. 它可以通过自定义脚本来扩展成一个具有自定义频段"
 "数的均衡器."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:172
+#: ../../docs/tutorials/audio/audio_buses.rst:179
 msgid "EQ6, EQ10, EQ21"
 msgstr "EQ6, EQ10, EQ21"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:174
+#: ../../docs/tutorials/audio/audio_buses.rst:181
 msgid ""
 "Godot provides three equalizers with different numbers of bands. An "
 "equalizer on the Master bus can be useful to cut frequencies that the "
@@ -357,40 +368,40 @@ msgstr ""
 "不能很好地再现的频率(例如, 手机扬声器不能很好地再现低音部分). 插入耳机时可以"
 "禁用均衡器效果."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:180
+#: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
 msgstr "过滤器"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:182
+#: ../../docs/tutorials/audio/audio_buses.rst:189
 msgid ""
 "Filter is what all other filters inherit from and should not be used "
 "directly."
 msgstr "滤波器是所有其他处理器继承自的效果, 不能直接使用."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:185
+#: ../../docs/tutorials/audio/audio_buses.rst:192
 msgid "HighPassFilter"
 msgstr "高通滤波器( HighPassFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:187
+#: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
 "to reduce the bass content of a signal."
 msgstr ""
 "这些滤波器削减低于特定 *截断* 频率的频率. 高通滤波器用于降低信号的低音含量."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:192
+#: ../../docs/tutorials/audio/audio_buses.rst:199
 msgid "HighShelfFilter"
 msgstr "高架滤波器(HighShelfFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:194
+#: ../../docs/tutorials/audio/audio_buses.rst:201
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr "减少所有高于特定 *截断* 值的频率."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:199
+#: ../../docs/tutorials/audio/audio_buses.rst:206
 msgid "Limiter"
 msgstr "限幅器(Limiter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:201
+#: ../../docs/tutorials/audio/audio_buses.rst:208
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
@@ -399,11 +410,11 @@ msgstr ""
 "限幅器类似于压缩器, 但灵活性较差, 功能是限制声音不能超过给定的dB阈值. 在主总"
 "线上添加一个限制器是防止削波的防护措施."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:206
+#: ../../docs/tutorials/audio/audio_buses.rst:213
 msgid "LowPassFilter"
 msgstr "低通滤波器(LowPassFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:208
+#: ../../docs/tutorials/audio/audio_buses.rst:215
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
 "(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
@@ -414,39 +425,39 @@ msgstr ""
 "低通滤波器可以用来模拟 \"沉闷\" 的声音. 例如, 水下的声音, 墙后的声音或遥远的"
 "声音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:214
+#: ../../docs/tutorials/audio/audio_buses.rst:221
 msgid "LowShelfFilter"
 msgstr "低架过滤器(LowShelfFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:216
+#: ../../docs/tutorials/audio/audio_buses.rst:223
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr "削减所有低于特定 *截断* 值的频率."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:219
+#: ../../docs/tutorials/audio/audio_buses.rst:226
 msgid "NotchFilter"
 msgstr "陷波滤波器(NotchFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:221
+#: ../../docs/tutorials/audio/audio_buses.rst:228
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr "与带通滤波器相反, 它从频谱中的给定的 *截断* 处移除一个频段的声音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:225
+#: ../../docs/tutorials/audio/audio_buses.rst:232
 msgid "Panner"
 msgstr "声像(Panner)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:227
+#: ../../docs/tutorials/audio/audio_buses.rst:234
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between the "
 "left and right channels (wear headphones to audition this effect)."
 msgstr "声像效果允许在左右通道之间调整信号的立体声平衡(戴上耳机试听这个效果)."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:231
+#: ../../docs/tutorials/audio/audio_buses.rst:238
 msgid "Phaser"
 msgstr "移相器(Phaser)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:233
+#: ../../docs/tutorials/audio/audio_buses.rst:240
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
 "by two signals being dephased and cancelling each other out. You can make a "
@@ -455,11 +466,11 @@ msgstr ""
 "这种效果是由两个信号移相后互相抵消产生的, 但光这么解释并不直观. 你可以用它制"
 "作达斯 · 维德的声音, 或类似喷射的声音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:238
+#: ../../docs/tutorials/audio/audio_buses.rst:245
 msgid "PitchShift"
 msgstr "移调(PitchShift)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:240
+#: ../../docs/tutorials/audio/audio_buses.rst:247
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
 "speed. All frequencies can be increased/decreased with minimal effect on "
@@ -468,21 +479,20 @@ msgstr ""
 "这种效果允许在不改变速度的前提下改变音调. 可以用对瞬态的影响最小的方式增/减所"
 "有频率. 移调可以用来创作特别尖锐或低沉的声音."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:245
+#: ../../docs/tutorials/audio/audio_buses.rst:252
 msgid "Record"
 msgstr "录制(Record)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:247
-msgid ""
-"The Record effect allows audio passing through the bus to be written to a "
-"file."
+#: ../../docs/tutorials/audio/audio_buses.rst:254
+#, fuzzy
+msgid "The Record effect allows the user to record sound from a microphone."
 msgstr "录制效果允许将通过总线的音频写入文件."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:250
+#: ../../docs/tutorials/audio/audio_buses.rst:257
 msgid "Reverb"
 msgstr "混响(Reverb)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:252
+#: ../../docs/tutorials/audio/audio_buses.rst:259
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
 "can be tweaked to obtain the sound of a specific room. Reverb is commonly "
@@ -494,11 +504,11 @@ msgstr ""
 "从 :ref:`Areas <class_Area>` 输出(见 :ref:`Reverb buses "
 "<doc_audio_streams_reverb_buses>`), 或对所有声音施加一个 \"室内\" 的感觉."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:259
+#: ../../docs/tutorials/audio/audio_buses.rst:266
 msgid "SpectrumAnalyzer"
 msgstr "频谱分析仪(SpectrumAnalyzer)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:261
+#: ../../docs/tutorials/audio/audio_buses.rst:268
 msgid ""
 "This effect doesn't alter audio, instead, you add this effect to buses you "
 "want a spectrum analysis of. This would typically be used for audio "
@@ -509,20 +519,20 @@ msgstr ""
 "用于音频可视化. 使用了这个效果的演示项目可在 `这里 <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/audio/spectrum>`__ 找到."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:266
+#: ../../docs/tutorials/audio/audio_buses.rst:273
 msgid "StereoEnhance"
 msgstr "立体声增强(StereoEnhance)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:268
+#: ../../docs/tutorials/audio/audio_buses.rst:275
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."
 msgstr "这种效果使用一些算法来增强信号的立体声频谱."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:271
+#: ../../docs/tutorials/audio/audio_buses.rst:278
 msgid "Automatic bus disabling"
 msgstr "自动总线禁用"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:273
+#: ../../docs/tutorials/audio/audio_buses.rst:280
 msgid ""
 "There is no need to disable buses manually when not in use. Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
@@ -531,15 +541,15 @@ msgstr ""
 "你不需要手动禁用闲置总线,Godot在检测到总线已经静音数秒之后, 就会禁用它(以及所"
 "有效果)."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:279
+#: ../../docs/tutorials/audio/audio_buses.rst:286
 msgid "Disabled buses have a blue VU meter instead of a red-green one."
 msgstr "已禁用的总线VU表为蓝色, 而不是红绿色."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:282
+#: ../../docs/tutorials/audio/audio_buses.rst:289
 msgid "Bus rearrangement"
 msgstr "总线重排"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:284
+#: ../../docs/tutorials/audio/audio_buses.rst:291
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
 "removing and moving buses around while the reference to them is kept. "
@@ -551,11 +561,11 @@ msgstr ""
 "线. 然而, 重命名总线会导致引用丢失, 流播放器将输出到主总线. 之所以选择这个系"
 "统, 是因为重新排列总线相比重命名总线更为常用."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:291
+#: ../../docs/tutorials/audio/audio_buses.rst:298
 msgid "Default bus layout"
 msgstr "默认总线布局"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:293
+#: ../../docs/tutorials/audio/audio_buses.rst:300
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "

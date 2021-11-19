@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/gui/index.rst:4
-#, fuzzy
 msgid "User Interface (UI)"
-msgstr "编辑器接口(C++)"
+msgstr "用户界面（UI）"
 
 #: ../../docs/tutorials/gui/index.rst:6
 msgid ""
 "In this section of the tutorial we explain the basics of creating a "
 "graphical user interface (GUI) in Godot."
-msgstr ""
+msgstr "本节教程中，我们将说明在 Godot 中创建图形用户界面（GUI）的基础知识。"
 
 #: ../../docs/tutorials/gui/index.rst:10
 msgid "UI building blocks"
-msgstr ""
+msgstr "UI 要素"
 
 #: ../../docs/tutorials/gui/index.rst:12
 msgid ""
@@ -39,63 +38,58 @@ msgid ""
 "types of controls which are useful for creating specific types of the GUI. "
 "For simplicity we can separate them into two groups: content and layout."
 msgstr ""
+"和 Godot 中的其它东西一样，用户界面也是用节点构建的，尤其是 :ref:`Control "
+"<class_Control>`\\ （控件）节点。针对不同类型的 GUI 有很多不同类型的控件。简"
+"单起见，我们把它们分成两组：内容和布局。"
 
 #: ../../docs/tutorials/gui/index.rst:17
 msgid "Typical content controls include:"
-msgstr ""
+msgstr "典型的内容控件有："
 
 #: ../../docs/tutorials/gui/index.rst:19
-#, fuzzy
 msgid ":ref:`Buttons <class_Button>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`按钮 <class_Button>`"
 
 #: ../../docs/tutorials/gui/index.rst:20
-#, fuzzy
 msgid ":ref:`Labels <class_Label>`"
-msgstr ":ref:`bool <class_bool>`"
+msgstr ":ref:`标签 <class_Label>`"
 
 #: ../../docs/tutorials/gui/index.rst:21
-#, fuzzy
 msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
-msgstr ":ref:`class_HTTPClient` 和 :ref:`class_HTTPRequest`"
+msgstr ""
+":ref:`行编辑框 <class_LineEdit>`\\ 和\\ :ref:`文本编辑框 <class_TextEdit>`"
 
 #: ../../docs/tutorials/gui/index.rst:23
 msgid "Typical layout controls include:"
-msgstr ""
+msgstr "典型的布局控件有："
 
 #: ../../docs/tutorials/gui/index.rst:25
-#, fuzzy
 msgid ":ref:`BoxContainers <class_BoxContainer>`"
-msgstr ":ref:`堆叠 <class_BoxContainer>` 布局。"
+msgstr ":ref:`格子容器 <class_BoxContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:26
-#, fuzzy
 msgid ":ref:`MarginContainers <class_MarginContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`边距容器 <class_MarginContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:27
-#, fuzzy
 msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`滚动容器 <class_ScrollContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:28
-#, fuzzy
 msgid ":ref:`TabContainers <class_TabContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`选项卡容器 <class_TabContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:29
-#, fuzzy
 msgid ":ref:`Popups <class_Popup>`"
-msgstr ":ref:`CSGTorus <class_CSGTorus>`"
+msgstr ":ref:`弹出框 <class_Popup>`"
 
 #: ../../docs/tutorials/gui/index.rst:31
 msgid "The following pages explain the basics of using such controls."
-msgstr ""
+msgstr "以下页面将说明这些控件的基本使用方法。"
 
 #: ../../docs/tutorials/gui/index.rst:44
-#, fuzzy
 msgid "GUI skinning and themes"
-msgstr "GUI 外观定制"
+msgstr "GUI 皮肤与主题"
 
 #: ../../docs/tutorials/gui/index.rst:46
 msgid ""
@@ -103,14 +97,15 @@ msgid ""
 "pages in this section explain the benefits of that system and how to set it "
 "up in your projects."
 msgstr ""
+"Godot 的控件节点具有完善的皮肤/主题系统。本节中的页面将说明该系统的好处，以及"
+"如何在你的项目中启用它。"
 
 #: ../../docs/tutorials/gui/index.rst:57
-#, fuzzy
 msgid "Control node tutorials"
-msgstr "控制节点库"
+msgstr "控件节点教程"
 
 #: ../../docs/tutorials/gui/index.rst:59
 msgid ""
 "The following articles cover specific details of using particular control "
 "nodes."
-msgstr ""
+msgstr "以下文章涵盖了特定控件节点的具体细节。"

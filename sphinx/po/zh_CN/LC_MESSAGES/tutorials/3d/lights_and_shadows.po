@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,13 +175,12 @@ msgstr ""
 "隙. 接触阴影仅在使用GLES3后端是可用."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:55
-#, fuzzy
 msgid ""
 "**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
-"**Reverse Cull Faces(反向剔除平面)** : 某些场景在阴影渲染时, 开启反向平面剔除"
-"会工作得更好."
+"\\ **Reverse Cull Face**\\ : 反转表面剔除，当阴影贴图使用反转表面剔除渲染时，"
+"在某些场景表现更好。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:57
 msgid ""
@@ -192,26 +191,24 @@ msgstr ""
 "复杂程度."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:62
-#, fuzzy
 msgid ""
 "Finally, if gaps can't be solved, the **Contact** option can help (at a "
 "performance cost):"
-msgstr "最后, 如果无法解决间隙, ** Contact(接触)** 选项可以帮助:"
+msgstr ""
+"最后，如果无法解决缝隙，\\ **Contact**\\ 选项会有所帮助，但以性能为代价："
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:66
-#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
 "resolution, although that may lead to decreased performance."
 msgstr ""
-"任何类型的偏差问题都可以通过增加阴影贴图分辨率来解决, 尽管这可能会导致低端硬"
-"件性能下降."
+"任何偏差问题都可以通过提高阴影贴图分辨率来解决，尽管可能会导致性能下降。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:71
 msgid ""
 "If shadow biasing is a problem in your scene, the following settings are a "
 "good starting point:"
-msgstr ""
+msgstr "如果您的场景中存在阴影偏差问题，那么以下设置是个好的开始："
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:73
 msgid ""
@@ -222,6 +219,10 @@ msgid ""
 "to **Disabled** or MeshInstances with Cast Shadow set to **Double-Sided** "
 "may exhibit shadow acne."
 msgstr ""
+"启用反转表面剔除\\ **Reverse Cull Face**\\ 。这大大减少阴影悬浮，并防止灯光在"
+"掠过角时呈现出阴影失真。主要的缺点是，它可能会导致灯光在某些角落泄漏。另一个"
+"缺点是，那些将剔除模式设置为 \\ **Disabled**\\ 的材质或将Cast Shadow设置为\\ "
+"**Double-Sided**\\ 的网格实例可能会出现阴影失真。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:79
 msgid ""
@@ -229,6 +230,8 @@ msgid ""
 "**Reverse Cull Face** is enabled, but it should be a positive value when "
 "it's disabled."
 msgstr ""
+"将\\ **Bias**\\ 设置为 ``-0.01`` 。当\\ **Reverse Cull Face**\\ 被启用时，偏"
+"置应该是负值，而当它被禁用时，应该是正值。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:81
 msgid ""
@@ -236,6 +239,9 @@ msgid ""
 "and **Bias Split Scale** to ``0.0``. Depending on your scene, you may also "
 "want to further decrease **Bias** to a value between ``-0.05`` and ``-0.1``."
 msgstr ""
+"对于平行光，将定向阴影的\\ **Normal Bias**\\ 设置为 ``0.0`` ，\\ **Bias "
+"Split Scale**\\ 为 ``0.0`` 。按照你的场景，可能还想进一步减少\\ **Bias**\\ 的"
+"值到 ``-0.05`` 和 ``-0.1`` 之间。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:85
 msgid ""
@@ -244,6 +250,9 @@ msgid ""
 "If shadow acne is still visible after performing the above tweaks, try "
 "subdividing your meshes further in your 3D modeling software."
 msgstr ""
+"遵循上述提示，应该可以避免阴影产生缝隙，而不必依靠接触阴影，它本身就有一些问"
+"题。如果在进行了上述调整后，阴影失真仍然存在，可以尝试在你的三维建模软件中进"
+"一步细分你的网格。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:91
 msgid "Directional light"

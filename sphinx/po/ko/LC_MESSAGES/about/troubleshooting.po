@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
-"HTML5 버전 Godot 편집기 주의 사항은 :ref:`doc_using_the_web_editor`\\ 를 참고"
+"HTML5 버전 Godot 에디터 주의 사항은 :ref:`doc_using_the_web_editor`\\ 를 참고"
 "하세요."
 
 #: ../../docs/about/troubleshooting.rst:14
@@ -42,7 +42,7 @@ msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
-"편집기나 프로젝트 매니저에서 하는 모든 작업이 한 프레임 지연된 것처럼 보입니"
+"에디터나 프로젝트 매니저에서 하는 모든 작업이 한 프레임 지연된 것처럼 보입니"
 "다."
 
 #: ../../docs/about/troubleshooting.rst:16
@@ -69,7 +69,7 @@ msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
-"편집기에서 3D 카메라를 회전하면 그리드가 사라지고 메시가 검게 변합니다."
+"에디터에서 3D 카메라를 회전하면 그리드가 사라지고 메시가 검게 변합니다."
 
 #: ../../docs/about/troubleshooting.rst:27
 msgid ""
@@ -85,8 +85,8 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
-"현재로서는 GLES2 렌더러로 전환하는 것이 유일한 해결 방법입니다. 편집기의 오른"
-"쪽 상단 모서리 또는 프로젝트 설정에서 렌더러를 변경할 수 있습니다."
+"현재로서는 GLES2 렌더러로 전환하는 것이 유일한 해결 방법입니다. 에디터의 오른"
+"쪽 위 구석 또는 프로젝트 설정에서 렌더러를 변경할 수 있습니다."
 
 #: ../../docs/about/troubleshooting.rst:33
 msgid ""
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
-msgstr "편집기 및 프로젝트가 시작하기까지 오랜 시간이 걸립니다."
+msgstr "에디터 및 프로젝트가 시작하기까지 오랜 시간이 걸립니다."
 
 #: ../../docs/about/troubleshooting.rst:39
 msgid ""
@@ -112,14 +112,14 @@ msgstr ""
 "이는 특정 USB 주변 장치가 연결되어 있을 때 Windows에서 발생하는 '알려진 버그 "
 "<https://github.com/godotengine/godot/issues/20566>'__\\ 입니다. 특히, "
 "Corsair의 iCUE 소프트웨어가 버그를 일으키는 것 같습니다. USB 주변 기기의 드라"
-"이버를 최신 버전으로 업데이트해 보세요. 버그가 지속되면 편집기를 열기 전에 결"
+"이버를 최신 버전으로 업데이트해 보세요. 버그가 지속되면 에디터를 열기 전에 결"
 "함이 있는 주변 장치를 분리해야 합니다. 그런 다음 주변 장치를 다시 연결할 수 "
 "있습니다."
 
 #: ../../docs/about/troubleshooting.rst:47
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
-msgstr "인스펙터와 노드 독의 편집기 툴팁이 화면에 나타날 때 깜빡거립니다 ."
+msgstr "인스펙터와 노드 독의 에디터 툴팁이 화면에 나타날 때 깜빡거립니다 ."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -135,7 +135,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr "시스템 콘솔을 클릭하면 Godot 편집기가 고정된 것처럼 보입니다."
+msgstr "시스템 콘솔을 클릭하면 Godot 에디터가 고정된 것처럼 보입니다."
 
 #: ../../docs/about/troubleshooting.rst:56
 msgid ""
@@ -163,8 +163,8 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
-"프로젝트 매니저 및 편집기 창의 왼쪽 상단 모서리에 \"NO DC\"와 같은 텍스트가 "
-"나타납니다."
+"프로젝트 매니저 및 에디터 창의 왼쪽 위 구석에 \"NO DC\"와 같은 텍스트가 나타"
+"납니다."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
@@ -187,13 +187,13 @@ msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
-"리눅스에서 이 오버레이 사용을 중지하려면, ``nvidia-settings``을 열고, **X "
+"리눅스에서 이 오버레이 사용을 중지하려면, ``nvidia-settings``\\ 을 열고, **X "
 "Screen 0 > OpenGL Setting**\\ 에서 **Enable Graphics API Visual Indicator**"
 "\\ 를 선택 취소합니다."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
-msgstr "편집기와 달리 프로젝트 창이 흐릿하게 나타납니다."
+msgstr "에디터와 달리 프로젝트 창이 흐릿하게 나타납니다."
 
 #: ../../docs/about/troubleshooting.rst:78
 msgid ""
@@ -202,8 +202,8 @@ msgid ""
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
 "에디터와 달리 프로젝트는 기본값으로 DPI 인식을 사용하지 않습니다. 이는 hiDPI"
-"에서 3D 장면을 렌더링하는 속도가 느린 곳(특히 내장 그래픽)에서 성능을 향상시"
-"키기 위함입니다."
+"에서 3D 씬을 렌더링하는 속도가 느린 곳(특히 내장 그래픽)에서 성능을 향상시키"
+"기 위함입니다."
 
 #: ../../docs/about/troubleshooting.rst:82
 msgid ""
@@ -212,13 +212,13 @@ msgid ""
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
 "이 문제를 해결하려면 **프로젝트(Project) > 프로젝트 설정(Project Settings)**"
-"\\ 을 열고 **디스플레이(Display) > 창(Window) > Dpi > Hidpi 허용(Allow "
-"Hidpi)**\\ 을 활성화합니다. 가장 먼저, 프로젝트가 :ref:`multiple resolutions "
-"<doc_multiple_resolutions>`\\ 를 지원하도록 설정되어 있는지 확인하세요."
+"\\ 을 열고 **Display > Window > Dpi > Allow Hidpi**\\ 를 활성화합니다. 그 전"
+"에, 프로젝트가 :ref:`multiple resolutions <doc_multiple_resolutions>`\\ 를 지"
+"원하도록 설정되어 있는지 확인하세요."
 
 #: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
-msgstr "프로젝트를 실행할 때 프로젝트 창이 중앙에 나타나지 않습니다."
+msgstr "프로젝트를 실행할 때 프로젝트 창이 가운데에 나타나지 않습니다."
 
 #: ../../docs/about/troubleshooting.rst:89
 msgid ""
@@ -229,9 +229,9 @@ msgid ""
 msgstr ""
 "이는 `알려진 오류 <https://github.com/godotengine/godot/issues/13017>`__\\ 입"
 "니다. 해결하려면 **프로젝트(Project) > 프로젝트 설정(Project Settings)**\\ 에"
-"서 **디스플레이(Display) > 윈도우(Window) > Dpi > Hidpi 허용(Allow Hidpi)**"
-"\\ 를 활성화하세요. 이 때, 프로젝트가 :ref:`multiple resolutions "
-"<doc_multiple_resolutions>`\\ 을 지원하도록 설정되어 있어야 합니다."
+"서 **Display > Window > Dpi > Allow Hidpi**\\ 를 활성화하세요. 그 전에, 프로"
+"젝트가 :ref:`multiple resolutions <doc_multiple_resolutions>`\\ 을 지원하도"
+"록 설정되어 있어야 합니다."
 
 #: ../../docs/about/troubleshooting.rst:95
 msgid ""

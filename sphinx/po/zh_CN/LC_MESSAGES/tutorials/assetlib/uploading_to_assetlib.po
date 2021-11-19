@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:4
 msgid "Submitting to the Asset Library"
-msgstr "提交资源到资源馆"
+msgstr "提交资源到素材库"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:7
 msgid "Introduction"
@@ -154,7 +154,6 @@ msgstr ""
 "`doc_gdscript_styleguide` 或 :ref:`doc_c_sharp_styleguide`。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
-#, fuzzy
 msgid ""
 "If you have screenshots in your repo, place them in their own subfolder and "
 "add an empty **.gdignore** file in the same folder (note: **gd**, not "
@@ -162,10 +161,10 @@ msgid ""
 "open a command prompt in the project folder and run ``type nul > .gdignore`` "
 "to create a file whose name starts with a period."
 msgstr ""
-"如果存储库里有截图, 把它们放在子文件夹里, 并在同一文件夹里添加一个 **."
-"gdignore** 文件(注意: 是 **gd** , 不是 **git** ), 这样可以防止Godot导入截图. "
-"在Windows上, 在项目文件夹中打开命令提示符, 运行 ``type nul > .gdignore`` 来创"
-"建一个名字以句号开头的文件."
+"如果仓库中有截图，把它们放在子文件夹里，并在该文件夹里添加一个 **.gdignore** "
+"文件（注意：是 **gd**\\ ，不是 **git**\\ ）。这样可以防止 Godot 导入截图。在 "
+"Windows 上，在项目文件夹中打开命令提示符，运行 ``type nul > .gdignore`` 来创"
+"建一个名字以点开头的文件。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:76
 msgid ""

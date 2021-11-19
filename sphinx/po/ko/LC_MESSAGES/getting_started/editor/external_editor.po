@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr "외부 텍스트 편집기 사용하기"
+msgstr "외부 텍스트 에디터 사용하기"
 
 #: ../../docs/getting_started/editor/external_editor.rst:8
 msgid ""
 "`External editors are currently incompatible with Godot's \"Sync Script "
 "Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
 msgstr ""
+"`외부 에디터는 현재 Godot의 \"스크립트 변경 동기화(Sync Script Changes)\" 기"
+"능과 호환되지 않습니다. <https://github.com/godotengine/godot/"
+"issues/10946>`__"
 
 #: ../../docs/getting_started/editor/external_editor.rst:10
 msgid ""
@@ -34,10 +37,10 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
-"Godot는 외부 텍스트 편집기와 함께 사용할 수 있습니다. Sublime Text나 Visual "
-"Studio Code처럼 말이죠. 외부 텍스트 편집기를 켜려면, 관련 편집기 설정으로 가"
-"세요: ``편집기(Editor) -> 편집기 설정(Editor Settings) -> Text Editor -> "
-"External``"
+"Godot는 Sublime Text 또는 Visual Studio Code와 같은 외부 텍스트 에디터와 함"
+"께 사용할 수 있습니다. 외부 텍스트 에디터를 활성화하려면 ``에디터(Editor) -> "
+"에디터 설정(Editor Settings) -> Text Editor -> External``\\ 을 통해 관련 에디"
+"터 설정으로 이동하세요"
 
 #: ../../docs/getting_started/editor/external_editor.rst:16
 msgid ""
@@ -46,18 +49,18 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
-"두 개의 영역이 있습니다: 실행 파일 경로(Exec Path)와 명령줄 플래그(Exec "
-"Flags). 플래그를 통해 Godot와 편집기를 통합할 수 있습니다. 열기 위한 파일 및 "
-"기타 관련 인수가 플래그를 통과하죠. Godot는 플래그 문자열에서 다음 자리 표시"
-"자는 이것을 뜻합니다:"
+"실행 파일 경로(Exec Path)와 명령줄 플래그(Exec Flags)의 두 가지 필드가 있습니"
+"다. 플래그를 사용하면 에디터를 Godot와 통합할 수 있으며, 열려는 파일 경로 및 "
+"기타 관련 인수를 전달할 수 있습니다. Godot는 플래그 문자열에서 다음 자리 표시"
+"자를 대체합니다:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Field in Exec Flags"
-msgstr "Exec Flags의 영역"
+msgstr "Exec Flags 필드"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Is replaced with"
-msgstr "의미"
+msgstr "대체되는 문자열"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "``{project}``"

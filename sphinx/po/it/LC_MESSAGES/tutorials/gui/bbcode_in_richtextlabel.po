@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,21 +105,19 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
-#, fuzzy
 msgid "**bold**"
 msgstr "**grassetto**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
-#, fuzzy
 msgid "``[b]{text}[/b]``"
 msgstr "``[b]{testo}[/b]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
+#, fuzzy
 msgid "Makes {text} bold."
-msgstr ""
+msgstr "Rende {testo} in grassetto."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
-#, fuzzy
 msgid "**italics**"
 msgstr "**corsivo**"
 
@@ -128,24 +126,24 @@ msgid "``[i]{text}[/i]``"
 msgstr "``[i]{testo}[/i]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
+#, fuzzy
 msgid "Makes {text} italics."
-msgstr ""
+msgstr "Rende {testo} in corsivo."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
-#, fuzzy
 msgid "**underline**"
-msgstr "**sottolineatura**"
+msgstr "**sottolineato**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "``[u]{text}[/u]``"
 msgstr "``[u]{testo}[/u]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
+#, fuzzy
 msgid "Makes {text} underline."
-msgstr ""
+msgstr "Rende il {testo} sottolineato."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
-#, fuzzy
 msgid "**strikethrough**"
 msgstr "**barrato**"
 
@@ -154,11 +152,11 @@ msgid "``[s]{text}[/s]``"
 msgstr "``[s]{testo}[/s]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
+#, fuzzy
 msgid "Makes {text} strikethrough."
-msgstr ""
+msgstr "Rende il {testo} barrato."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
-#, fuzzy
 msgid "**code**"
 msgstr "**codice**"
 
@@ -167,11 +165,12 @@ msgid "``[code]{text}[/code]``"
 msgstr "``[code]{testo}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
+#, fuzzy
 msgid "Makes {text} use the code font (which is typically monospace)."
 msgstr ""
+"Fa sì che {testo} usi il font del codice (che è tipicamente monospace)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
-#, fuzzy
 msgid "**center**"
 msgstr "**centro**"
 
@@ -180,11 +179,11 @@ msgid "``[center]{text}[/center]``"
 msgstr "``[center]{testo}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
+#, fuzzy
 msgid "Makes {text} horizontally centered."
-msgstr ""
+msgstr "Rende {testo} centrato orizzontalmente."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
-#, fuzzy
 msgid "**right**"
 msgstr "**destra**"
 
@@ -193,11 +192,11 @@ msgid "``[right]{text}[/right]``"
 msgstr "``[right]{testo}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
+#, fuzzy
 msgid "Makes {text} horizontally right-aligned."
-msgstr ""
+msgstr "Rende {testo} orizzontalmente allineato a destra."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
-#, fuzzy
 msgid "**fill**"
 msgstr "**riempimento**"
 
@@ -206,11 +205,11 @@ msgid "``[fill]{text}[/fill]``"
 msgstr "``[fill]{testo}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
+#, fuzzy
 msgid "Makes {text} fill the RichTextLabel's width."
-msgstr ""
+msgstr "Fa sì che {testo} riempia la larghezza della RichTextLabel."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
-#, fuzzy
 msgid "**indent**"
 msgstr "**indentazione**"
 
@@ -219,11 +218,11 @@ msgid "``[indent]{text}[/indent]``"
 msgstr "``[indent]{testo}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
+#, fuzzy
 msgid "Increase the indentation level of {text}."
-msgstr ""
+msgstr "Aumenta il livello di indentazione di {testo}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
-#, fuzzy
 msgid "**url**"
 msgstr "**url**"
 
@@ -239,7 +238,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
-#, fuzzy
 msgid "**url (ref)**"
 msgstr "**url (ref)**"
 
@@ -255,7 +253,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
-#, fuzzy
 msgid "**image**"
 msgstr "**immagine**"
 
@@ -291,7 +288,6 @@ msgid "Insert image at resource {path} using <width>×<height>."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
-#, fuzzy
 msgid "**font**"
 msgstr "**font**"
 
@@ -304,13 +300,12 @@ msgid "Use custom font at <path> for {text}."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
-#, fuzzy
 msgid "**color**"
 msgstr "**colore**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "``[color=<code/name>]{text}[/color]``"
-msgstr "``[color=<codice/nome>]{testo}[/color]``"
+msgstr "``[color=<code/name>]{testo}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
@@ -345,91 +340,78 @@ msgid "Adds cells with the {text} to the table."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:97
+#, fuzzy
 msgid "Built-in color names"
-msgstr ""
+msgstr "Nomi di colori incorporati"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:99
 msgid "List of valid color names for the [color=<name>] tag:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:101
-#, fuzzy
 msgid "aqua"
 msgstr "aqua"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:102
-#, fuzzy
 msgid "black"
 msgstr "black"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:103
-#, fuzzy
 msgid "blue"
 msgstr "blue"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:104
-#, fuzzy
 msgid "fuchsia"
 msgstr "fuchsia"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:105
-#, fuzzy
 msgid "gray"
 msgstr "gray"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:106
-#, fuzzy
 msgid "green"
 msgstr "green"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:107
-#, fuzzy
 msgid "lime"
 msgstr "lime"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:108
-#, fuzzy
 msgid "maroon"
 msgstr "maroon"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:109
-#, fuzzy
 msgid "navy"
 msgstr "navy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:110
-#, fuzzy
 msgid "purple"
 msgstr "purple"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:111
-#, fuzzy
 msgid "red"
 msgstr "red"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:112
-#, fuzzy
 msgid "silver"
 msgstr "silver"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:113
-#, fuzzy
 msgid "teal"
 msgstr "teal"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:114
-#, fuzzy
 msgid "white"
 msgstr "white"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:115
-#, fuzzy
 msgid "yellow"
 msgstr "yellow"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:118
+#, fuzzy
 msgid "Hexadecimal color codes"
-msgstr ""
+msgstr "Codici esadecimali dei colori"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:120
 msgid ""

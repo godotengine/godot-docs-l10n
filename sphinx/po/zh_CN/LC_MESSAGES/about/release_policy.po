@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,7 +158,6 @@ msgstr ""
 "分支。"
 
 #: ../../docs/about/release_policy.rst:77
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -166,9 +165,9 @@ msgid ""
 "new major version. This was the case for the 2.1 branch, and will be the "
 "case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
-"每当一个新的主要版本发布时，我们都会对上一个稳定分支提供长期的支持，并尽最大"
-"努力为那些无法将复杂项目移植到新的主要版本中的旧版用户提供修复帮助。2.1 分支"
-"如此，到 Godot 4.0 发布时，最新的 3.x 稳定分支也会如此。"
+"每当一个新的主版本发布时，我们都会对上一个稳定分支提供长期的支持，并尽最大努"
+"力为那些无法将复杂项目移植到新的主要版本中的旧版用户提供修复帮助。2.1 分支如"
+"此，到 Godot 4.0 发布时，最新的 3.x 稳定分支也会如此。"
 
 #: ../../docs/about/release_policy.rst:83
 msgid ""
@@ -177,6 +176,9 @@ msgid ""
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"次版本号相同的一系列版本中，只有最新的补丁版本会得到支持。如果你在使用较旧的"
+"补丁版本时遇到问题，请在前往 GitHub 提交问题之前先升级到该系列的最新补丁版本"
+"并测试。"
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
@@ -203,11 +205,13 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *当前开发重点（不稳定）。*"
 
 #: ../../docs/about/release_policy.rst:93
-msgid "Godot 3.4"
+#, fuzzy
+msgid "Godot 3.5"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:93
-msgid "Q4 2021"
+#, fuzzy
+msgid "Q1 2022"
 msgstr "2021 年第四季度"
 
 #: ../../docs/about/release_policy.rst:93
@@ -217,14 +221,16 @@ msgid ""
 msgstr "|supported| *Beta。*\\ 在开发过程中接收新功能以及错误修复。"
 
 #: ../../docs/about/release_policy.rst:96
-msgid "Godot 3.3"
-msgstr "Godot 3.3"
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
-msgid "April 2021"
-msgstr "2021 年 4 月"
+#, fuzzy
+msgid "November 2021"
+msgstr "2014 年 12 月"
 
 #: ../../docs/about/release_policy.rst:96
+#: ../../docs/about/release_policy.rst:99
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
@@ -232,91 +238,97 @@ msgstr ""
 "|supported| 接受对错误、安全和平台支持问题的修复，以及向后兼容的可用性增强。"
 
 #: ../../docs/about/release_policy.rst:99
+msgid "Godot 3.3"
+msgstr "Godot 3.3"
+
+#: ../../docs/about/release_policy.rst:99
+msgid "April 2021"
+msgstr "2021 年 4 月"
+
+#: ../../docs/about/release_policy.rst:102
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid "January 2020"
 msgstr "2020 年 1 月"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
 msgstr "|eol| 不再支持，因为被兼容的 3.3 版本完全取代了（最后更新：3.2.3）。"
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "March 2019"
 msgstr "2019 年 3 月"
 
-#: ../../docs/about/release_policy.rst:102
-#, fuzzy
+#: ../../docs/about/release_policy.rst:105
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| 不再支持（最后更新：3.0.6）。"
+msgstr "|eol| 不再支持（最后更新：3.1.2）。"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
 msgstr "Godot 3.0"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "January 2018"
 msgstr "2018 年 1 月"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "|eol| No longer supported (last update: 3.0.6)."
 msgstr "|eol| 不再支持（最后更新：3.0.6）。"
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "Godot 2.1"
 msgstr "Godot 2.1"
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "July 2016"
 msgstr "2016 年 7 月"
 
-#: ../../docs/about/release_policy.rst:106
-#, fuzzy
+#: ../../docs/about/release_policy.rst:109
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| 不再支持（最后更新：3.0.6）。"
+msgstr "|eol| 不再支持（最后更新：2.1.6）。"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "Godot 2.0"
 msgstr "Godot 2.0"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "February 2016"
 msgstr "2016 年 2 月"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
 msgstr "|eol| 不再支持（最后更新：2.0.4.1）。"
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "Godot 1.1"
 msgstr "Godot 1.1"
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "May 2015"
 msgstr "2015 年 5 月"
 
-#: ../../docs/about/release_policy.rst:110
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:113
+#: ../../docs/about/release_policy.rst:115
 msgid "|eol| No longer supported."
 msgstr "|eol| 不再支持。"
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "Godot 1.0"
 msgstr "Godot 1.0"
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "December 2014"
 msgstr "2014 年 12 月"
 
-#: ../../docs/about/release_policy.rst:120
+#: ../../docs/about/release_policy.rst:123
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
@@ -324,17 +336,17 @@ msgstr ""
 "**图例：** |supported| 完全支持 - |partial| 部分支持 - |eol| 不支持（生命结"
 "束） - |unstable| 开发版本"
 
-#: ../../docs/about/release_policy.rst:126
+#: ../../docs/about/release_policy.rst:129
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
 msgstr "Godot 的预览版不是为生产使用准备的，仅用于测试目的。"
 
-#: ../../docs/about/release_policy.rst:132
+#: ../../docs/about/release_policy.rst:135
 msgid "When is the next release out?"
 msgstr "下一个版本什么时候发布？"
 
-#: ../../docs/about/release_policy.rst:134
+#: ../../docs/about/release_policy.rst:137
 msgid ""
 "While Godot contributors aren't working under any deadlines, we have "
 "historically had one major or minor release per year, with several "
@@ -343,7 +355,7 @@ msgstr ""
 "虽然 Godot 贡献者的工作没有设置截止日期，但通常每年都会发布一个主要或次要版"
 "本，每一个版本之间都有数次维护更新。"
 
-#: ../../docs/about/release_policy.rst:138
+#: ../../docs/about/release_policy.rst:141
 msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
@@ -351,7 +363,7 @@ msgstr ""
 "自 Godot 3.3 以来，我们的目标是加快次要版本的开发周期，所以可以预期每 3 到 6 "
 "个月更新一个次要版本。"
 
-#: ../../docs/about/release_policy.rst:141
+#: ../../docs/about/release_policy.rst:144
 msgid ""
 "Maintenance (patch) releases will be released as needed with potentially "
 "very short development cycles, to provide users of the current stable branch "
@@ -360,7 +372,7 @@ msgstr ""
 "维护（补丁）版本将根据需要发布，开发周期可能很短，作用是为当前稳定分支的用户"
 "提供最新的错误修复，以满足他们的生产需求。"
 
-#: ../../docs/about/release_policy.rst:145
+#: ../../docs/about/release_policy.rst:148
 msgid ""
 "As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
 "release, but any closer estimate is likely to be hard to uphold. Alpha "

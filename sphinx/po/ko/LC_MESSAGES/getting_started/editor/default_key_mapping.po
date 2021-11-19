@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:1
 msgid "cheatsheet, cheat sheet, shortcut"
-msgstr ""
+msgstr "치트시트, 치트 시트, 쇼트컷"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:7
-#, fuzzy
 msgid "Default editor shortcuts"
-msgstr "기본 기능"
+msgstr "기본 에디터 단축키"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:8
 msgid ""
@@ -34,6 +33,11 @@ msgid ""
 "keys associated with these and other actions navigate to ``Editor -> Editor "
 "Settings -> Shortcuts``."
 msgstr ""
+"Godot 에디터의 많은 기능은 키보드 단축키로 실행할 수 있습니다. 이 페이지에는 "
+"기본적으로 연결된 바로 가기가 있는 기능이 나열되어 있지만 여러분이 에디터 설"
+"정에서 다른 많은 기능도 단축키로 등록할 수 있습니다. 이러한 작업 및 기타 작업"
+"과 관련된 키를 변경하려면 ``에디터(Editor) -> 편집기 설정(Editor Settings) -"
+"> Shortcuts``\\ 로 이동하세요."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:13
 msgid ""
@@ -42,6 +46,9 @@ msgid ""
 "to be assigned to more than one function. The correct action will be "
 "performed depending on the context."
 msgstr ""
+"일부 작업은 보편적이지만 많은 바로 가기는 개별 툴에만 적용됩니다. 이러한 이유"
+"로 일부 키 조합은 둘 이상의 기능에 할당될 수 있습니다. 컨텍스트에 따라 올바"
+"른 작업이 수행됩니다."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:18
 msgid ""
@@ -51,11 +58,14 @@ msgid ""
 "standard shortcuts on that OS should find Godot Editor's default key mapping "
 "intuitive."
 msgstr ""
+"에디터의 Windows 및 Linux 빌드는 대부분의 기본 설정을 공유하지만 일부 단축키"
+"는 macOS 버전에 따라 다를 수 있습니다. 이는 에디터를 macOS 에코시스템에 더 "
+"잘 통합하기 위해 수행됩니다. macOS의 표준 단축키에 숙련된 사용자는 Godot 에디"
+"터의 기본 키 매핑이 직관적임을 깨달을 수 있습니다."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
-#, fuzzy
 msgid "General Editor Actions"
-msgstr "**일반적인 설정**"
+msgstr "일반 에디터 작업"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:27
 #: ../../docs/getting_started/editor/default_key_mapping.rst:92
@@ -71,9 +81,8 @@ msgstr "**일반적인 설정**"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:464
 #: ../../docs/getting_started/editor/default_key_mapping.rst:481
 #: ../../docs/getting_started/editor/default_key_mapping.rst:516
-#, fuzzy
 msgid "Action name"
-msgstr "액션"
+msgstr "작업 이름"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:27
 #: ../../docs/getting_started/editor/default_key_mapping.rst:92
@@ -89,9 +98,8 @@ msgstr "액션"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:464
 #: ../../docs/getting_started/editor/default_key_mapping.rst:481
 #: ../../docs/getting_started/editor/default_key_mapping.rst:516
-#, fuzzy
 msgid "Windows, Linux"
-msgstr "**데스크톱:** Windows, macOS, Linux"
+msgstr "Windows, Linux"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:27
 #: ../../docs/getting_started/editor/default_key_mapping.rst:92
@@ -124,9 +132,8 @@ msgstr "macOS"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:464
 #: ../../docs/getting_started/editor/default_key_mapping.rst:481
 #: ../../docs/getting_started/editor/default_key_mapping.rst:516
-#, fuzzy
 msgid "Editor setting"
-msgstr "편집기"
+msgstr "에디터 설정"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid "Open 2D Editor"
@@ -134,15 +141,15 @@ msgstr "2D 에디터 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid ":kbd:`Ctrl + F1`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 msgid "Open 3D Editor"
@@ -151,15 +158,15 @@ msgstr "3D 에디터 열기"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 #: ../../docs/getting_started/editor/default_key_mapping.rst:445
 msgid ":kbd:`Ctrl + F2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:33
 msgid "Open Script Editor"
@@ -167,15 +174,15 @@ msgstr "스크립트 에디터 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:33
 msgid ":kbd:`Ctrl + F3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:33
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:33
 msgid "``editor/editor_script``"
-msgstr ""
+msgstr "``editor/editor_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:35
 msgid "Search Help"
@@ -183,15 +190,15 @@ msgstr "도움말 검색"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:35
 msgid ":kbd:`F1`"
-msgstr ""
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:35
 msgid ":kbd:`Alt + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:35
 msgid "``editor/editor_help``"
-msgstr ""
+msgstr "``editor/editor_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:37
 msgid "Distraction Free Mode"
@@ -199,15 +206,15 @@ msgstr "집중 모드"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:37
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:37
 msgid ":kbd:`Cmd + Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:37
 msgid "``editor/distraction_free_mode``"
-msgstr ""
+msgstr "``editor/distraction_free_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:39
 msgid "Next tab"
@@ -215,15 +222,15 @@ msgstr "다음 탭"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:39
 msgid ":kbd:`Ctrl + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:39
 msgid ":kbd:`Cmd + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:39
 msgid "``editor/next_tab``"
-msgstr ""
+msgstr "``editor/next_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid "Previous tab"
@@ -231,32 +238,31 @@ msgstr "이전 탭"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid ":kbd:`Ctrl + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid ":kbd:`Cmd + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid "``editor/prev_tab``"
-msgstr ""
+msgstr "``editor/prev_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:43
-#, fuzzy
 msgid "Filter Files"
-msgstr "External Files(외부 파일)"
+msgstr "파일 필터"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:43
 msgid ":kbd:`Ctrl + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:43
 msgid ":kbd:`Cmd + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:43
 msgid "``editor/filter_files``"
-msgstr ""
+msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid "Open Scene"
@@ -264,15 +270,15 @@ msgstr "씬 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid ":kbd:`Ctrl + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid ":kbd:`Cmd + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid "``editor/open_scene``"
-msgstr ""
+msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid "Close Scene"
@@ -280,15 +286,15 @@ msgstr "씬 닫기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid ":kbd:`Ctrl + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid ":kbd:`Cmd + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid "``editor/close_scene``"
-msgstr ""
+msgstr "``editor/close_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 msgid "Reopen Closed Scene"
@@ -297,16 +303,16 @@ msgstr "닫은 씬 다시 열기"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 #: ../../docs/getting_started/editor/default_key_mapping.rst:319
 msgid ":kbd:`Ctrl + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 #: ../../docs/getting_started/editor/default_key_mapping.rst:319
 msgid ":kbd:`Cmd + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 msgid "``editor/reopen_closed_scene``"
-msgstr ""
+msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:51
 msgid "Save Scene"
@@ -314,15 +320,16 @@ msgstr "씬 저장"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:51
 msgid ":kbd:`Ctrl + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:51
 msgid ":kbd:`Cmd + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:51
+#, fuzzy
 msgid "``editor/save_scene``"
-msgstr ""
+msgstr "``editor/save_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:53
 #, fuzzy
@@ -331,15 +338,15 @@ msgstr "씬(Scene)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:53
 msgid ":kbd:`Ctrl + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:53
 msgid ":kbd:`Cmd + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:53
 msgid "``editor/save_scene_as``"
-msgstr ""
+msgstr "``editor/save_scene_as``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 msgid "Save All Scenes"
@@ -348,16 +355,16 @@ msgstr "모든 씬 저장"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 #: ../../docs/getting_started/editor/default_key_mapping.rst:323
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 #: ../../docs/getting_started/editor/default_key_mapping.rst:323
 msgid ":kbd:`Cmd + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 msgid "``editor/save_all_scenes``"
-msgstr ""
+msgstr "``editor/save_all_scenes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:57
 msgid "Quick Open"
@@ -365,11 +372,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:57
 msgid ":kbd:`Shift + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:57
 msgid "``editor/quick_open``"
-msgstr ""
+msgstr "``editor/quick_open``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:59
 msgid "Quick Open Scene"
@@ -377,15 +384,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:59
 msgid ":kbd:`Ctrl + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:59
 msgid ":kbd:`Cmd + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:59
 msgid "``editor/quick_open_scene``"
-msgstr ""
+msgstr "``editor/quick_open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:61
 #, fuzzy
@@ -394,15 +401,15 @@ msgstr "GDScript의 빠른 예제:"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:61
 msgid ":kbd:`Ctrl + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:61
 msgid ":kbd:`Cmd + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:61
 msgid "``editor/quick_open_script``"
-msgstr ""
+msgstr "``editor/quick_open_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:63
 #: ../../docs/getting_started/editor/default_key_mapping.rst:242
@@ -593,7 +600,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:85
 msgid "Expand Bottom Panel"
-msgstr "하단 패널 확장"
+msgstr "아래쪽 패널 확장"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:85
 msgid ":kbd:`Shift + F12`"
@@ -1081,7 +1088,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:179
 msgid "Top View"
-msgstr "상단 뷰"
+msgstr "위쪽 뷰"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:179
 msgid ":kbd:`Num 7`"
@@ -1093,7 +1100,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:181
 msgid "Bottom View"
-msgstr "하단 뷰"
+msgstr "아래쪽 뷰"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:181
 msgid ":kbd:`Alt + Num 7`"
@@ -2443,7 +2450,7 @@ msgstr "SceneTree(씬 트리)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:443
 msgid "Add Child Node"
-msgstr "자손 노드 추가"
+msgstr "자식 노드 추가"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:443
 msgid "``scene_tree/add_child_node``"

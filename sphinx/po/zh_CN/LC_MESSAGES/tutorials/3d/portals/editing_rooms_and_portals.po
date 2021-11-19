@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:2
-#, fuzzy
 msgid "Editing Rooms and Portals"
-msgstr "编辑变量"
+msgstr "编辑房间和入口"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:5
-#, fuzzy
 msgid "Example SceneTree"
-msgstr "场景树 SceneTree"
+msgstr "示例 SceneTree"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:7
 msgid "Putting all the ideas together, here is an example scene tree:"
-msgstr ""
+msgstr "综合所有内容，这就是一个示例场景树："
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:11
 msgid ""
 "We have used a :ref:`RoomGroup<class_RoomGroup>` to denote an outside area."
-msgstr ""
+msgstr "我们使用一个 :ref:`RoomGroup<class_RoomGroup>` 来表示外部区域。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:12
 msgid ""
 "The :ref:`MeshInstance<class_MeshInstance>`\\ s inside the :ref:"
 "`Room<class_Room>`\\ s are either ``STATIC`` or ``DYNAMIC``."
 msgstr ""
+":ref:`Room<class_Room>` 内部的 :ref:`MeshInstance<class_MeshInstance>` 不是 "
+"``STATIC`` 就是 ``DYNAMIC``\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:13
 msgid ""
@@ -49,24 +49,27 @@ msgid ""
 "``DYNAMIC`` objects that will be autoplaced in rooms (Freeform is inside the "
 "``roomlist``, but *not* inside a room.)"
 msgstr ""
+"我们创建了一个 :ref:`Spatial<class_Spatial>`\\ （我决定称之为“Freeform”自由，"
+"你可以随便起名）用来放置需要自动放置到房间里的 ``STATIC`` 和 ``DYNAMIC`` 对"
+"象。（Freeform 在 ``roomlist`` 里，但\\ *不在*\\ 房间之中。）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:15
 msgid "The player and the monsters are on branches *OUTSIDE* the ``roomlist``."
-msgstr ""
+msgstr "玩家和怪物位于 ``roomlist`` *之外*\\ 的分支上。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:16
 msgid ""
 "The player and monster meshes have portal mode ``ROAMING`` so they can be in "
 "any room."
-msgstr ""
+msgstr "玩家和怪物网格的入口模式是 ``ROAMING``，因此可以进入任意房间。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:17
 msgid "The camera is outside the ``roomlist``."
-msgstr ""
+msgstr "相机位于 ``roomlist`` 之外。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:22
 msgid "Creating room systems in Blender (or other modeling tools)"
-msgstr ""
+msgstr "在 Blender 中创建房间系统（或者其他建模工具）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:24
 msgid ""
@@ -77,27 +80,30 @@ msgid ""
 "conventions. The first time Godot encounters these specially named nodes, it "
 "will convert them into Rooms, RoomGroups and Portals."
 msgstr ""
+"你可以完全在编辑器中创建房间系统，也可以在建模工具中建立。有一个小问题--"
+"Blender等建模工具不了解Room、RoomGroup和Portal节点。为了解决这个问题，我们使"
+"用了一系列的命名规则。当Godot首次遇到这些命名特别的节点时，把它们转换成Room、"
+"RoomGroups和Portals。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:27
-#, fuzzy
 msgid "Postfix convention"
-msgstr "格式约定"
+msgstr "后缀约定"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:29
 msgid "``-room`` becomes a :ref:`Room<class_Room>`."
-msgstr ""
+msgstr "``-room`` 变成 :ref:`Room<class_Room>`\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:30
 msgid "``-roomgroup`` becomes a :ref:`RoomGroup<class_RoomGroup>`."
-msgstr ""
+msgstr "``-roomgroup`` 变成 :ref:`RoomGroup<class_RoomGroup>`\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:31
 msgid "``-portal`` becomes a :ref:`Portal<class_Portal>`."
-msgstr ""
+msgstr "``-portal`` 变成 :ref:`Portal<class_Portal>`\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:32
 msgid "``-bound`` becomes a manual bound."
-msgstr ""
+msgstr "``-bound`` 变成手动边界。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:34
 msgid ""
@@ -105,6 +111,8 @@ msgid ""
 "children of the ``-room`` Empty will thus be placed in the Room during "
 "conversion in Godot."
 msgstr ""
+"Room 和 RoomGroup 在 Blender 中应该被创建为空物体。这样在 Godot 中进行转换"
+"时，\\ ``-room`` 空物体的子网格就会被自动放进该房间。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:36
 msgid "For example:"
@@ -112,21 +120,20 @@ msgstr "例如:"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:38
 msgid "``kitchen-room`` - create a Room called \"kitchen\"."
-msgstr ""
+msgstr "``kitchen-room`` - 创建名为“kitchen”的 Room。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:39
 msgid "``outside-roomgroup`` - create a RoomGroup called \"outside\"."
-msgstr ""
+msgstr "``outside-roomgroup`` - 创建名为“outside”的 RoomGroup。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:40
 msgid "``kitchen-portal`` - create a Portal leading to the \"kitchen\" Room."
-msgstr ""
+msgstr "``kitchen-portal`` - 创建通向“kitchen”房间的 Portal。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:43
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:119
-#, fuzzy
 msgid "Portals"
-msgstr "端口"
+msgstr "入口"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:45
 msgid ""
@@ -134,6 +141,8 @@ msgid ""
 "geometry of the Portal in our modelling tool, in addition to just the name. "
 "To do this your \"portal-to-be\" should be created as a Mesh."
 msgstr ""
+"入口与房间不同。对于入口，除了名称之外，我们还需要在建模工具中指定入口的几何"
+"形状。对于这点，你的“待建入口”应该被创建为网格。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:47
 msgid ""
@@ -145,6 +154,10 @@ msgid ""
 "and the vertices are specified (and editable) as 2D coordinates in the "
 "inspector, rather than 3D points."
 msgstr ""
+"为了正常工作，对入口的网格有一些限制。它们必须是凸的，并且多边形的点应该位于"
+"同一平面。平面不必非常精确，因为 Godot 会自动对入口平面的方向求均值。 :ref:"
+"`Portal<class_Portal>` 节点一旦转换完成，就会强制吸附到入口平面，顶点会以 2D "
+"坐标而不是 3D 点的形式给出（编辑时亦然）。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:49
 msgid ""
@@ -152,11 +165,12 @@ msgid ""
 "portal`` which will attempt to autolink the Portal in Godot, or you can use "
 "the name of the Room you wish to link the Portal to as a prefix."
 msgstr ""
+"入口的命名相当重要。你可以把入口命名为 ``-portal`` 让 Godot 尝试自动链接入"
+"口，也可以把想要链接的房间名作为入口的前缀。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:52
-#, fuzzy
 msgid "Wildcard"
-msgstr "通配符模式"
+msgstr "通配符"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:54
 msgid ""
@@ -165,39 +179,42 @@ msgid ""
 "have multiple objects with the same name. What happens when we want more "
 "than one Portal to lead to the kitchen?"
 msgstr ""
+"大多数情况下，用类似 ``kitchen-portal`` 这样的名字就可以了。然而还有一个问"
+"题。Blender 和 Godot 并不善于处理多个对象名称相同的情况，那么我们想让厨房"
+"（kitchen）的入口不止一个该怎么办呢？"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:56
 msgid ""
 "The workaround is the use of a *wildcard* character, ``*``. When Godot reads "
 "the wildcard, it will ignore anything placed after it in the name."
 msgstr ""
+"变通的方法是使用\\ *通配符* ``*``\\ 。Godot 读到名称中的通配符时，就会忽略后"
+"续的内容。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:58
-#, fuzzy
 msgid "This means we can use the following portal names:"
-msgstr "此弹出窗口具有以下属性:"
+msgstr "也就是说，我们可以使用如下的门的名称："
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:60
 msgid "``kitchen*1-portal`` - creates a Portal leading to the \"kitchen\"."
-msgstr ""
+msgstr "``kitchen*1-portal`` - 创建通往 \"kitchen\" 的门。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:61
 msgid ""
 "``kitchen*2-portal`` - also creates a Portal leading to the \"kitchen\"."
-msgstr ""
+msgstr "``kitchen*2-portal`` - 同样创建通往 \"kitchen\" 的门。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:62
 msgid "``kitchen*anything_you_want_here-portal`` - also works."
-msgstr ""
+msgstr "``kitchen*anything_you_want_here-portal`` - 也行。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:64
 msgid "Wildcards work on all of the nodes which use these naming conventions."
-msgstr ""
+msgstr "使用这些命名约定的节点都支持使用通配符。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:67
-#, fuzzy
 msgid "Manual bounds"
-msgstr "手动使用"
+msgstr "手动定界"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:69
 msgid ""
@@ -207,6 +224,9 @@ msgid ""
 "e. MeshInstance in Godot). Bear in mind they will be converted to convex "
 "hulls during the conversion process, so they don't have to be perfect."
 msgstr ""
+"手动边界是一种为房间显式设置凸体的方式，如果它们作为场景树中房间的子项出现，"
+"则会使用它们。除了后缀，命称并不重要。它们应该是网格，即 Godot 中的 "
+"MeshInstance。注意，它们是在转换的过程中，转换为凸体，所以不一定完美。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:71
 msgid ""
@@ -215,21 +235,23 @@ msgid ""
 "Points** within the editor to convert these to a set of points stored in the "
 "room, and delete the original ``-bound`` MeshInstance."
 msgstr ""
+"一旦在转换过程中使用，它们将被转换为 ``IGNORE`` \\ **入口模式**\\ ，不会被显"
+"示。你也可以在编辑器中使用\\ **Generate Points**\\ ，将这些点转换为存储在房间"
+"中的一组点，并删除原来的``-bound`` 网格实例。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:74
-#, fuzzy
 msgid "Portal point editing"
-msgstr "导出细节"
+msgstr "编辑入口点"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:76
 msgid ""
 "Portals are defined by a combination of the transform of the portal node, "
 "and by a set of points which form the corners."
-msgstr ""
+msgstr "入口由入口节点的变换和形成角的一组点的组合来定义。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:78
 msgid "The default portal has 4 corners as shown in the inspector:"
-msgstr ""
+msgstr "默认入口有 4 个角，检查器中会显示："
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:82
 msgid ""
@@ -239,10 +261,13 @@ msgid ""
 "it's better to risk rendering a little too much than to spend the time "
 "culling objects at 20 different edges."
 msgstr ""
+"您可以在 Gizmo 或检查器中编辑这些点，以在游戏关卡的开场中有更好地匹配。为了提"
+"高系统效率，通常，最好尽可能保持少的点。例如，与其花时间在 20 个不同的边上剔"
+"除对象，不如尝试更多渲染。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:87
 msgid "Room point editing"
-msgstr ""
+msgstr "编辑房间点"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:89
 msgid ""
@@ -255,6 +280,10 @@ msgid ""
 "method. So if you wish to revert your manual editing, delete all the room's "
 "points."
 msgstr ""
+"你也可以选择手动编辑用于定义房间凸体的点。这些点在默认情况下是不存在的。通常"
+"选择一个房间，按下编辑器工具栏上的\\ **生成点**\\ 按钮来创建它们。这将把自动"
+"或手动绑定的几何体转移到检查器中。一旦检查器中出现了点，它们就会被使用，并覆"
+"盖其他的方式。因此，如果你想恢复手动编辑，请删除所有房间的点。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:93
 msgid ""
@@ -264,27 +293,29 @@ msgid ""
 "before generating the points. Be aware though that by default, the "
 "**Simplification** value will be inherited from the RoomManager."
 msgstr ""
+"手动编辑点在某些情况下是有用的，尤其是在自动绑定不能\\ *完全*\\ 获得您想要的"
+"正确结果的情况下。在生成点之前，在房间的检查器中使用大量\\ **Simplification**"
+"\\ 通常是个好主意。注，默认情况下，\\ **Simplification**\\ 值将从RoomManager"
+"继承。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:96
-#, fuzzy
 msgid "RoomManager"
-msgstr "项目管理器"
+msgstr "RoomManager"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:99
-#, fuzzy
 msgid "Show Debug"
-msgstr "调试"
+msgstr "显示调试（Show Debug）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:101
 msgid ""
 "This can be used to control the amount of logging, especially the room "
 "conversion logs. Debug will always be set to ``false`` on exported projects."
 msgstr ""
+"可以用来控制日志的量，尤其是房间转换日志。导出后的项目始终是 ``false``\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:104
-#, fuzzy
 msgid "Debug Sprawl"
-msgstr "调试器面板"
+msgstr "调试蔓延（Debug Sprawl）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:106
 msgid ""
@@ -295,11 +326,13 @@ msgid ""
 "frames to sprawl to the adjacent room - that is what fine tuning the "
 "**Portal Margin** is for."
 msgstr ""
+"此模式将仅显示从当前相机房间穿过入口扩展的网格。通常想要扩展大型静态体跨入"
+"口。典型示例可能是地形网格区域，或大型地板或天花板网格。通常不希望门框之类的"
+"东西扩展到相邻的房间，这就是微调 **Portal Margin** 的目的。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:109
-#, fuzzy
 msgid "Merge Meshes"
-msgstr "网格"
+msgstr "合并网格（Merge Meshes）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:111
 msgid ""
@@ -309,11 +342,13 @@ msgid ""
 "accuracy is reduced, but as a room is a fairly logical unit for culling, "
 "this trade off usually works in your favor."
 msgstr ""
+"为了让绘制调用保持最低，系统提供该选项，自动合并房间中相似的 ``STATIC`` 网格"
+"（也被称作\\ *静态批处理*\\ ）。很多情况下都能提升性能。虽然降低了剔除的精"
+"度，但是因为房间通常是剔除的逻辑单元，这样的折衷方案通常能帮到你。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:114
-#, fuzzy
 msgid "Plane Simplification"
-msgstr "包规范"
+msgstr "平面简化（Plane Simplification）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:116
 msgid ""
@@ -324,21 +359,24 @@ msgid ""
 "by the user, between ``0`` (no simplification) and ``1`` (maximum "
 "simplification). You can also override this value in individual rooms."
 msgstr ""
+"部分情况下，根据房间自动生成的凸包轮廓可能包含大量平面，尤其是在使用了曲面的"
+"时候。这种情况并不理想，因为会拖慢系统。本选项可以把外包轮廓简化。用户可以在 "
+"``0``\\ （不简化）和 ``1``\\ （最简）之间选择简化的程度。也可以在单独的房间上"
+"覆盖这个值。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:122
-#, fuzzy
 msgid "Portal Active"
-msgstr "主动句:"
+msgstr "入口激活（Portal Active）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:124
 msgid ""
 "Portals can be turned on and off at runtime. This is especially useful if "
 "you have doors that can open and close."
-msgstr ""
+msgstr "入口可以在运行时打开和关闭。如果你有可以打开和关闭的房门，就很有用。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:127
 msgid "Two Way"
-msgstr ""
+msgstr "双向（Two Way）"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:129
 msgid ""
@@ -348,11 +386,13 @@ msgid ""
 "that can be seen out of, but not seen into. This can help performance when "
 "viewing buildings from outdoors."
 msgstr ""
+"入口可以是双向的也可以是单向的。在大多数情况下，默认的双向入口设置起来比较"
+"快，但单向入口在某些情况下也很有用。例如，你可以使用单向入口来创建可以看到外"
+"面，但看不到里面的窗口。这可以改善从室外查看建筑物的性能。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:132
-#, fuzzy
 msgid "Particle Systems"
-msgstr "粒子系统(2D)"
+msgstr "粒子系统"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:134
 msgid ""
@@ -362,11 +402,14 @@ msgid ""
 "``portal mode`` to ``DYNAMIC``, or alternatively, add an **Extra Cull "
 "Margin** to the particle system in the Geometry Inspector."
 msgstr ""
+"请注意，在放置 ``STATIC`` 粒子系统时，转换时的AABB尺寸可能是零。因此，粒子系"
+"统可能会被意外地提前剔除。为了防止这种情况，可以将粒子系统的 ``portal mode`` "
+"入口模式设置为 ``DYNAMIC`` ，或者在 几何检查器中为粒子系统添加额外的剔除边界"
+"\\ **Extra Cull Margin**\\ 。"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:137
-#, fuzzy
 msgid "Multimeshes"
-msgstr "MultiMeshes"
+msgstr "MultiMesh"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:139
 msgid ""
@@ -374,3 +417,5 @@ msgid ""
 "You should therefore attempt to keep them localised to the same area "
 "wherever possible."
 msgstr ""
+"请注意，多重网格被当作一组剔除，而不是单独剔除，因此，你应该尽可能地将其保持"
+"在同一区域内。"

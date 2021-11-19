@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -450,15 +450,14 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "是的, 称它为 ``绿巨人(Hulk)`` 类型适乎更合适."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
 "exist, but GDScript is stricter, so checking if the function exists is "
 "desirable:"
 msgstr ""
-"有可能被击中的对象没有 ``smash()`` 函数. 一些动态类型语言在方法不存在时, 简单"
-"地忽略方法调用(如Objective C), 但是GDScript更严格, 因此需要检查函数是否存在:"
+"有可能被击中的对象并没有smash()函数。一些动态类型的语言在调用方法不存在时，会"
+"简单地忽略它，但GDScript更严格，所以有必要检查函数是否存在:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""

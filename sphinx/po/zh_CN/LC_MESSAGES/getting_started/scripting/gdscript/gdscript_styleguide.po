@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,11 +206,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
-msgstr "该规则的唯一例外是三元运算符:"
+msgstr "该规则的唯一例外是三元运算符："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Format multiline statements for readability"
-msgstr ""
+msgstr "为可读性格式化多行语句"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
@@ -219,6 +219,8 @@ msgid ""
 "continuation lines are still part of the same expression, 2 indent levels "
 "should be used instead of one."
 msgstr ""
+"如果你的 ``if`` 语句特别长，或者是嵌套的三元表达式时，把它们拆分成多行可以提"
+"高可读性。因为这些连续的行仍然属于同一个表达式，应该缩进两级而不是一级。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:303
 msgid ""
@@ -228,6 +230,9 @@ msgid ""
 "line never contains a backslash at the end. With parentheses, you don't have "
 "to worry about the last line having a backslash at the end."
 msgstr ""
+"GDScript 允许使用括号或反斜杠将语句拆成多行。本风格指南倾向于使用括号，因为重"
+"构起来更简单。使用反斜杠的话，你必须保证最后一行的末尾没有反斜杠。而如果是括"
+"号，你就不必担心最后一行的反斜杠问题。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
 msgid ""
@@ -235,19 +240,21 @@ msgid ""
 "``or`` keywords should be placed at the beginning of the line continuation, "
 "not at the end of the previous line."
 msgstr ""
+"把条件表达式拆分成多行时，\\ ``and`` 和 ``or`` 关键字应当放在下一行的开头，而"
+"不是上一行的结尾。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
 msgid "Avoid unnecessary parentheses"
 msgstr "避免不必要的圆括号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:346
-#, fuzzy
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations or wrapping over multiple lines, they only "
 "reduce readability."
 msgstr ""
-"避免表达式和条件语句中的括号. 除非对操作顺序有必要, 否则它们只会降低可读性."
+"避免表达式和条件语句中的括号。除非需要修改操作顺序或者是在拆分多行，否则它们"
+"只会降低可读性。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:365
 msgid "Boolean operators"
@@ -257,22 +264,22 @@ msgstr "布尔运算"
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
-msgstr "首选布尔运算符的纯英文版本, 因为它们是最容易访问的:"
+msgstr "首选布尔运算符的英文版本，因为它们是最容易访问的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:369
 msgid "Use ``and`` instead of ``&&``."
-msgstr "使用 ``and`` 代替 ``&&``."
+msgstr "使用 ``and`` 代替 ``&&``\\ 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid "Use ``or`` instead of ``||``."
-msgstr "使用 ``or`` 代替 ``||``."
+msgstr "使用 ``or`` 代替 ``||``\\ 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:372
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
 msgstr ""
-"也可以在布尔运算符周围使用括号来清除任何歧义. 这可以使长表达式更容易阅读."
+"也可以在布尔运算符周围使用括号来清除任何歧义。这可以使长表达式更容易阅读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:390
 msgid "Comment spacing"
@@ -283,8 +290,8 @@ msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
-"普通注释开头应该留一个空格, 但如果是为了停用代码而将其注释掉则不需要留. 这样"
-"可以用来区分文本注释和停用的代码."
+"普通注释开头应该留一个空格，但如果是为了停用代码而将其注释掉则不需要留。这样"
+"可以用来区分文本注释和停用的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:411
 msgid ""
@@ -292,8 +299,8 @@ msgid ""
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"在脚本编辑器中, 要切换已注释的选定代码, 请按 :kbd:`Ctrl + K`. 此功能在选定行"
-"的开头添加一个 # 注释符号."
+"在脚本编辑器中，要切换已注释的选定代码，请按 :kbd:`Ctrl + K`\\ 。此功能在选定"
+"行的开头添加一个 # 注释符号。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:416
 msgid "Whitespace"
@@ -304,12 +311,12 @@ msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
-"请始终在运算符前后和逗号后使用一个空格. 避免在字典引用和函数调用中使用多余的"
-"空格, 也不要创建 ``列(columns)``."
+"请始终在运算符前后和逗号后使用一个空格。同时，请避免在字典引用和函数调用中使"
+"用多余的空格。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 msgid "Don't use spaces to align expressions vertically:"
-msgstr "不要使用空格垂直对齐表达式:"
+msgstr "不要使用空格来垂直对齐表达式："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:450
 msgid "Quotes"
@@ -320,7 +327,7 @@ msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
 msgstr ""
-"尽量使用双引号, 除非单引号可以让字符串中需要转义的字符变少. 见如下示例:"
+"尽量使用双引号，除非单引号可以让字符串中需要转义的字符变少。见如下示例："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:470
 msgid "Numbers"
@@ -332,32 +339,32 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
-"不要忽略浮点数中的前导或尾随零. 否则, 这会使它们的可读性降低, 很难一眼与整数"
-"区分开."
+"不要忽略浮点数中的前导或尾随零。否则，这会使它们的可读性降低，很难一眼与整数"
+"区分开。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:489
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
 msgid "**Good**::"
-msgstr "**良好的** ::"
+msgstr "**良好的**\\ ："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:508
 msgid "**Bad**::"
-msgstr "**糟糕的** ::"
+msgstr "**糟糕的**\\ ："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:486
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
-msgstr "对于十六进制数字, 请使用小写字母, 因为它们较矮, 使数字更易于阅读."
+msgstr "对于十六进制数字，请使用小写字母，因为它们较矮，使数字更易于阅读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
-msgstr "利用GDScript的文字下划线, 使大数字更易读."
+msgstr "利用 GDScript 的文字下划线，使大数字更易读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:519
 msgid "Naming conventions"
@@ -669,9 +676,13 @@ msgid ""
 "Alternatively, you can use the ``as`` keyword to cast the return type, and "
 "that type will be used to infer the type of the var."
 msgstr ""
+"或者，你也可以使用 ``as`` 关键字来转换返回类型，这个类型会被用于推导变量的类"
+"型。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:831
 msgid ""
 "This option is also considered more :ref:`type-"
 "safe<doc_gdscript_static_typing_safe_lines>` than the first."
 msgstr ""
+"这种做法也比第一种更\\ :ref:`类型安全"
+"<doc_gdscript_static_typing_safe_lines>`。"

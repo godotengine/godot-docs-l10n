@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,16 +170,15 @@ msgstr "场景树"
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
-msgstr "当节点直接或间接连接到根视图时, 它成为 *场景树* 的一部分."
+msgstr "当节点直接或间接连接到根视图时，它就成为了\\ *场景树*\\ 的一部分。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "``_enter_tree()`` and ``_ready()`` callbacks (as well as ``_exit_tree()``)."
 msgstr ""
-"这意味着, 如之前教程中所述, 它将获得 ``_enter_tree()`` 和 ``_ready()`` 回调函"
-"数(以及 ``_exit_tree()``)."
+"因此，正如在之前的教程中所解释的，它将获得 ``_enter_tree()`` 和 ``_ready()`` "
+"回调（以及 ``_exit_tree()`` ）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
 msgid ""
@@ -188,9 +187,9 @@ msgid ""
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
-"当节点进入 *场景树* 时, 它们将变为活动状态. 它们可以访问需要处理的所有内容, "
-"获取输入, 显示2D和3D视觉效果, 接收和发送通知, 播放声音等. 当它们从 *场景树* "
-"中删除时, 它们将失去这些功能."
+"当节点进入\\ *场景树*\\ 时，它们将变为活动状态。它们可以访问需要处理的所有内"
+"容、获取输入、显示 2D 和 3D 视觉效果、收发通知、播放声音等。当从\\ *场景树*"
+"\\ 中删除时，它们将失去这些能力。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
@@ -203,16 +202,16 @@ msgid ""
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
-"Godot中的大多数节点操作(例如绘制2D, 处理, 或获取通知)均以树顺序完成. 这意味着"
-"在树顺序中具有较低排名的父级和同胞将在当前节点之前得到通知."
+"Godot 中的大多数节点操作（例如绘制 2D、处理、或获取通知）均以树顺序完成。这意"
+"味着在树顺序中具有较低排名的父级和同胞将在当前节点之前得到通知。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr "\"变为活动状态\" 通过进入 *场景树*"
+msgstr "通过进入\\ *场景树*\\ “变为活动状态”"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:118
 msgid "A scene is loaded from disk or created by scripting."
-msgstr "从磁盘加载场景或通过脚本创建场景."
+msgstr "从磁盘加载场景或通过脚本创建场景。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:119
 msgid ""
@@ -220,16 +219,16 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
-"该场景的根节点(只有一个根, 还记得吗？)作为子级被添加至 \"根\" 视图(来自场景"
-"树), 或添加至其子孙节点."
+"该场景的根节点（只有一个根，还记得吗？）作为子级被添加至“根”视图（来自场景"
+"树），或添加至其子孙节点。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
-"新添加的场景的每个节点都将按照从上到下的顺序接收 ``enter_tree`` 通知(GDScript"
-"中的 ``_enter_tree()`` 回调函数)."
+"新添加的场景的每个节点都将按照从上到下的顺序接收 ``enter_tree`` 通知"
+"（GDScript 中的 ``_enter_tree()`` 回调函数）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:125
 msgid ""
@@ -237,8 +236,8 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
-"当节点及其所有子节点都位于活动场景中时, 为方便起见, 会提供一个额外的通知 "
-"``ready`` (GDScript中的 ``_ready()`` 回调函数)."
+"当节点及其所有子节点都位于活动场景中时，为方便起见，会提供一个额外的通知 "
+"``ready``\\ （GDScript 中的 ``_ready()`` 回调函数）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:128
 msgid ""
@@ -258,8 +257,8 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
-"加载场景后, 通常需要更改该场景为另一个场景. 简单的方法是使用 :ref:`SceneTree."
-"change_scene() <class_SceneTree_method_change_scene>` 函数:"
+"加载场景后，通常需要更改该场景为另一个场景。简单的方法是使用 :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` 函数："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:153
 msgid ""
@@ -267,9 +266,9 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
-"除了使用文件路径之外, 还可以使用等效的函数 :ref:`SceneTree."
+"除了使用文件路径之外，还可以使用等效的函数 :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>` "
-"来使用现成的 :ref:`PackedScene <class_PackedScene>` 资源:"
+"来使用现成的 :ref:`PackedScene <class_PackedScene>` 资源："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
 msgid ""

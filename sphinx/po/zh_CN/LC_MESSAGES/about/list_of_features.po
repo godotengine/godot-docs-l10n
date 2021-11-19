@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"这个页面列出了当前稳定版本的Godot (3.3)所支持的特性. 最新的开发版本(4.0)提供 "
-"`更多特性 <https://docs.godotengine.org/en/latest/about/list_of_features."
-"html>`_ ."
+"这个页面列出了当前稳定版本的 Godot（3.3）所支持的特性。最新的开发版本（4.0）"
+"提供\\ `更多特性 <https://docs.godotengine.org/en/latest/about/"
+"list_of_features.html>`_\\ 。"
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
@@ -273,11 +273,12 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr "位图字体可以通过例如 BMFont 的工具被导出."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
-msgstr "动态字体支持单色字体和彩色字体. 支持的格式是 TTF 和 OTF."
+msgstr ""
+"DynamicFont支持单色字体以及彩色字体（例如用于表情符号）。支持的格式是TTF、OTF"
+"和WOFF1。"
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -496,12 +497,14 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"支持仅烘焙间接光照，或者同时烘焙直接和间接光照。可以给各个光源单独设置烘焙模"
+"式，从而实现混合光照烘焙。"
 
 #: ../../docs/about/list_of_features.rst:198
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
-msgstr ""
+msgstr "使用自动的基于八叉树系统对动态对象的光照进行支持。无需手动布置探针。"
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."
@@ -532,11 +535,10 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* 屏幕空间反射."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "反射技术可以被混合使用从而获得更好的精度."
+msgstr "反射技术可以混合在一起，以获得更高的准确性或可扩展性。"
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -1409,9 +1411,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "支持在动画中使用贝塞尔曲线."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "视频格式"
+msgstr "文件格式"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""

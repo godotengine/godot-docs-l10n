@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,30 +38,35 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:17
 msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
 msgstr ""
+"Только Blender версии 2.83 и выше может импортировать glTF файлы "
+"экспортированные Godot."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:19
 msgid ""
 "To export a scene in the editor go to **Project > Tools > Export GLTF...**"
 msgstr ""
+"Чтобы экспортировать сцену в редактор нажмите на **Проект > Инструменты > "
+"Экспортировать GLTF..**"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:24
 msgid "Limitations"
 msgstr "Ограничения"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:26
-#, fuzzy
 msgid "There are several limitations with glTF export."
-msgstr "На это есть несколько причин:"
+msgstr "Есть несколько ограничений экспорта glTF."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:28
 msgid ""
 "No support for exporting particles since their implementation varies across "
 "engines."
 msgstr ""
+"Не поддерживает экспортирование частиц т.к. их реализация различается среди "
+"движков."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:29
 msgid "ShaderMaterials cannot be exported."
-msgstr ""
+msgstr "ShaderMaterials не может быть экспортирован."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:30
 #, fuzzy

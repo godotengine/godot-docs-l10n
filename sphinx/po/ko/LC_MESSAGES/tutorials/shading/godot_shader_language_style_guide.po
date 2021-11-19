@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 "여기에 있는 스타일 가이드는 GDScript를 아름답게 작성하도록 하는 관례를 나열했"
 "습니다. 이 스타일 가이드의 목적은 프로젝트 사이, 사람들의 토론 사이, 튜토리"
 "얼 사이에서 깨끗하고 읽기 쉬운 코드를 작성함과 동시에 일관성을 유지하도록 하"
-"는 것입니다. 이 기능이 자동 서식 도구의 개발에 도움이 되길 바랍니다."
+"는 것입니다. 이 기능이 자동 서식 툴의 개발에 도움이 되길 바랍니다."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:11
 msgid ""
@@ -49,16 +49,16 @@ msgid ""
 "judgment, and ask fellow developers for insights."
 msgstr ""
 "스타일 가이드는 빡빡한 법전이 아닙니다. 아직은 아래의 가이드라인을 적용하지 "
-"못할 수도 있습니다. 그렇다 하더라도, 최선의 판단으로 동료 개발자에게 통찰력"
-"을 갖도록 요청하세요."
+"못할 수도 있습니다. 그런 일이 발생하면 최선의 판단을 내리고 동료 개발자에게 "
+"통찰력을 요청하세요."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:20
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
 msgstr ""
-"일반적으로 프로젝트와 팀 내에서 코드를 일관적으로 유지하는 것이 아래의 가이드"
-"보다 더 중요합니다."
+"일반적으로 프로젝트와 팀 내에서 코드를 일관되게 유지하는 것이 이 가이드를 따"
+"라가는 것보다 더 중요합니다."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
 #, fuzzy
@@ -222,8 +222,9 @@ msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
-"표준 주석은 한 칸 띄고 시작해야 합니다. 하지만 코드에 놓은 주석은 띄지 않습니"
-"다. 이렇게 하면 코드를 비활성화한 것과 텍스트 주석을 구분하기 좋습니다."
+"일반 주석은 공백으로 시작해야 하지만 주석을 달은 코드는 공백으로 시작하지 않"
+"아야 합니다. 이렇게 하면 텍스트 주석을 비활성화된 코드와 구분하는 데 도움이 "
+"됩니다."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
@@ -255,7 +256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
-msgstr "표현식이 수직으로 나열하는 띄어쓰기를 하지 마세요:"
+msgstr "표현식을 세로로 정렬하기 위해 공백을 사용하지 마세요:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
 #, fuzzy
@@ -292,8 +293,8 @@ msgid ""
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깨면 코드는 내장 "
-"명명 규칙으로 망가지며, 일관되지 않은 코드가 됩니다."
+"이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깨면 코드가 기본 "
+"제공 명명 규칙과 충돌해서 일관되지 않게 됩니다."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
 msgid "Functions and variables"
@@ -301,7 +302,7 @@ msgstr "함수와 변수"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:302
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "함수와 변수 이름에는 스네이크 표기법(snake\\_case)를 사용하세요:"
+msgstr "함수와 변수 이름에는 스네이크\\_표기법(snake\\_case)을 사용하세요:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 msgid "Constants"
@@ -312,8 +313,8 @@ msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
-"CONSTANT\\_CASE로 상수를 작성합니다. 다시 말해, 모든 단어는 대문자로 하고 띄"
-"어쓰기 대신 밑줄 (\\_)을 사용합니다:"
+"상수\\_표기법(CONSTANT\\_CASE)으로 상수를 작성하세요. 다시 말해, 모든 단어는 "
+"대문자로 하고 띄어쓰기 대신 밑줄 (\\_)을 사용하세요:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
 msgid "Code order"
@@ -330,9 +331,9 @@ msgid ""
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
-"이 순서는 위에서 아래까지 코드를 읽기 쉽게 최적화했습니다. 개발자가 한 눈에 "
-"코드가 어떻게 작동하는 지 알도록, 그리고 변수 선언의 순서와 관련된 오류가 발"
-"생하지 않도록 말이죠."
+"코드를 위에서 아래로 쉽게 읽을 수 있도록 순서를 최적화했으며, 코드를 처음 읽"
+"는 개발자가 어떻게 작동하는지 이해하고 변수 선언 순서와 관련된 오류를 방지할 "
+"수 있습니다."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
 #, fuzzy
@@ -351,7 +352,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
 msgstr "지역 변수(Local Variables)"
 
@@ -361,3 +361,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"지역 변수를 처음 사용할 때와 최대한 가깝게 선언하세요. 이렇게 하면 변수가 선"
+"언된 위치를 찾기 위해 너무 많이 스크롤하지 않고도 코드를 더 쉽게 따라갈 수 있"
+"습니다."

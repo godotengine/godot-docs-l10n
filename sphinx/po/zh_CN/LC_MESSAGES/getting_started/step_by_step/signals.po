@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,8 +129,8 @@ msgid ""
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"在左侧, 你将看到场景中的节点, 并可以选择要 \"监听\" 信号的节点. 请注意,Timer "
-"节点为蓝色——意思是它是发出信号的节点. 选择根节点."
+"在左侧，您将看到场景中的节点，并且可以选择要“侦听”信号的节点。需要留意的是，"
+"计时器节点是蓝色的，这是发出信号的节点的视觉指示。选择根节点。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
@@ -252,11 +252,10 @@ msgstr ""
 "但是, 发出信号时仍然可以发出任意数量的参数；所以由你来决定是否发出正确的值."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "要传递数值，请将它们作为后续参数添加到 ``emit_signal`` 函数中："
+msgstr "要传递值，将它们作为第二个参数添加到 ``emit_signal`` 函数中:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"

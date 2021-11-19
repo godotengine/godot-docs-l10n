@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,13 +191,13 @@ msgstr ""
 "disponibles que lors de l'utilisation du backend GLES3."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:55
-#, fuzzy
 msgid ""
 "**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
-"**Reverse Cull Faces** : Certaines scènes fonctionnent mieux lorsque la "
-"cartographie des ombres est rendue avec le face-culling inversé."
+"**Inverser la suppression des visages** : Certaines scènes fonctionnent "
+"mieux lorsque le mappage d'ombres est rendu avec l'élimination des visages "
+"inversée."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:57
 msgid ""
@@ -209,23 +209,21 @@ msgstr ""
 "cela dépend de la taille et de la complexité de la géométrie."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:62
-#, fuzzy
 msgid ""
 "Finally, if gaps can't be solved, the **Contact** option can help (at a "
 "performance cost):"
 msgstr ""
 "Enfin, si les lacunes ne peuvent être résolues, l'option **Contact** peut "
-"vous aider :"
+"vous aider (moyennant un coût de performance) :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:66
-#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
 "resolution, although that may lead to decreased performance."
 msgstr ""
-"Toutes sortes de problèmes de biais peuvent toujours être corrigés en "
-"augmentant la résolution de la carte des ombres, bien que cela puisse "
-"conduire à une diminution des performances sur le hardware bas de gamme."
+"Tout problème de partialité peut toujours être résolu en augmentant la "
+"résolution de la carte des ombres, bien que cela puisse entraîner une baisse "
+"des performances."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:71
 msgid ""

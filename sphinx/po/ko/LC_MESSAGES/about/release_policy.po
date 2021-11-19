@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Godot는 ``메이저(major).마이너(minor).패치(patch)`` 버전 시스템을 사용하여 "
 "`Semantic Versioning <https://semver.org/>`__\\ 를 느슨하게 따르지만, 각 용어"
-"의 해석은 게임 엔진의 복잡성에 맞게 조정됩니다:"
+"의 해석은 게임 엔진의 복잡성에 맞게 조절됩니다:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -61,9 +61,9 @@ msgid ""
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
-"예를 들어, Godot 2.1에서 Godot 3.0으로 Godot 프로젝트를 포팅하려면 변환 도구"
-"를 통해 프로젝트를 실행하고 도구가 자동으로 할 수 없는 것에 대해 수동으로 많"
-"은 추가 조정을 수행해야 했습니다."
+"예를 들어, Godot 2.1에서 Godot 3.0으로 Godot 프로젝트를 포팅하려면 변환 툴을 "
+"통해 프로젝트를 실행하고 툴이 자동으로 할 수 없는 것에 대해 수동으로 많은 추"
+"가 조절을 수행해야 했습니다."
 
 #: ../../docs/about/release_policy.rst:26
 msgid ""
@@ -123,8 +123,8 @@ msgid ""
 "Updating to new patch versions is therefore considered safe and strongly "
 "recommended to all users of a given stable branch."
 msgstr ""
-"따라서 새 패치 버전으로 업데이트하는 것은 안전한 것으로 간주되며 지정된 안정"
-"적인 분기의 모든 사용자에게 강력히 권장됩니다."
+"따라서 새 패치 버전으로 업데이트하는 것은 안전한 것으로 간주되며 안정적인 분"
+"기의 모든 사용자에게 강력히 권장됩니다."
 
 #: ../../docs/about/release_policy.rst:56
 msgid ""
@@ -167,7 +167,6 @@ msgstr ""
 "자가 있는 한 *최선의 노력*\\ 으로 안정적인 분기를 지원합니다."
 
 #: ../../docs/about/release_policy.rst:77
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -178,8 +177,8 @@ msgstr ""
 "새 메이저 버전이 출시될 때마다 이전의 안정적인 브랜치를 장기 지원 릴리스로 만"
 "들고 복잡한 프로젝트를 새 메이저 버전으로 이식할 수 없는 해당 브랜치 사용자"
 "가 겪는 문제에 대한 수정 사항을 제공하기 위해 최선을 다합니다. 이것은 2.1 브"
-"랜치의 경우이며 Godot 4.0이 출시될 때 최신 3.x 안정 브랜치가 그렇게 될 것입니"
-"다."
+"랜치의 경우이며 Godot 4.0이 출시될 때 최신 3.x 안정 브랜치의 경우가 그렇게 "
+"될 것입니다."
 
 #: ../../docs/about/release_policy.rst:83
 msgid ""
@@ -188,6 +187,9 @@ msgid ""
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"주어진 마이너 릴리스 시리즈에서는 최신 패치 릴리스만 지원을 받습니다. 이전 패"
+"치 릴리스를 사용하여 문제가 발생하면 해당 시리즈의 최신 패치 릴리스로 업그레"
+"이드하고 GitHub에서 문제를 보고하기 전에 다시 테스트하십시오."
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
@@ -206,22 +208,22 @@ msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "~2022 (see below)"
-msgstr "~2021년(이하 참조)"
+msgstr "~2022년(이하 참조)"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *현재 개발 중 (unstable).*"
 
 #: ../../docs/about/release_policy.rst:93
-msgid "Godot 3.4"
+#, fuzzy
+msgid "Godot 3.5"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:93
 #, fuzzy
-msgid "Q4 2021"
-msgstr "2021년 2분기 혹은 3분기"
+msgid "Q1 2022"
+msgstr "2021년 4분기"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -230,14 +232,16 @@ msgid ""
 msgstr "|supported| *베타.* 개발 중에 새로운 기능과 버그 수정을 받습니다."
 
 #: ../../docs/about/release_policy.rst:96
-msgid "Godot 3.3"
-msgstr "Godot 3.3"
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
-msgid "April 2021"
-msgstr "2021년 4월"
+#, fuzzy
+msgid "November 2021"
+msgstr "2014년 12월"
 
 #: ../../docs/about/release_policy.rst:96
+#: ../../docs/about/release_policy.rst:99
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
 "as well as backwards-compatible usability enhancements."
@@ -246,92 +250,98 @@ msgstr ""
 "호환성 향상 지원을 받습니다."
 
 #: ../../docs/about/release_policy.rst:99
+msgid "Godot 3.3"
+msgstr "Godot 3.3"
+
+#: ../../docs/about/release_policy.rst:99
+msgid "April 2021"
+msgstr "2021년 4월"
+
+#: ../../docs/about/release_policy.rst:102
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid "January 2020"
 msgstr "2020년 1월"
 
-#: ../../docs/about/release_policy.rst:99
+#: ../../docs/about/release_policy.rst:102
 msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
 msgstr ""
 "|eol| 호환되는 3.3버전으로 완전히 대체되어 지원 종료(마지막 업데이트 3.2.3)."
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
 
-#: ../../docs/about/release_policy.rst:102
+#: ../../docs/about/release_policy.rst:105
 msgid "March 2019"
 msgstr "2019년 3월"
 
-#: ../../docs/about/release_policy.rst:102
-#, fuzzy
+#: ../../docs/about/release_policy.rst:105
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| 지원 종료(마지막 업데이트 : 3.0.6)."
+msgstr "|eol| 지원 종료(마지막 업데이트 : 3.1.2)."
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
 msgstr "Godot 3.0"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "January 2018"
 msgstr "2018년 1월"
 
-#: ../../docs/about/release_policy.rst:104
+#: ../../docs/about/release_policy.rst:107
 msgid "|eol| No longer supported (last update: 3.0.6)."
 msgstr "|eol| 지원 종료(마지막 업데이트 : 3.0.6)."
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "Godot 2.1"
 msgstr "Godot 2.1"
 
-#: ../../docs/about/release_policy.rst:106
+#: ../../docs/about/release_policy.rst:109
 msgid "July 2016"
 msgstr "2016년 7월"
 
-#: ../../docs/about/release_policy.rst:106
-#, fuzzy
+#: ../../docs/about/release_policy.rst:109
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| 지원 종료(마지막 업데이트 : 3.0.6)."
+msgstr "|eol| 지원 종료(마지막 업데이트 : 2.1.6)."
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "Godot 2.0"
 msgstr "Godot 2.0"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "February 2016"
 msgstr "2016년 2월"
 
-#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:111
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
 msgstr "|eol| 지원 종료(마지막 업데이트 : 2.0.4.1)."
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "Godot 1.1"
 msgstr "Godot 1.1"
 
-#: ../../docs/about/release_policy.rst:110
+#: ../../docs/about/release_policy.rst:113
 msgid "May 2015"
 msgstr "2015년 5월"
 
-#: ../../docs/about/release_policy.rst:110
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:113
+#: ../../docs/about/release_policy.rst:115
 msgid "|eol| No longer supported."
 msgstr "|eol| 지원 종료."
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "Godot 1.0"
 msgstr "Godot 1.0"
 
-#: ../../docs/about/release_policy.rst:112
+#: ../../docs/about/release_policy.rst:115
 msgid "December 2014"
 msgstr "2014년 12월"
 
-#: ../../docs/about/release_policy.rst:120
+#: ../../docs/about/release_policy.rst:123
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
@@ -339,7 +349,7 @@ msgstr ""
 "**범례:** |supported| 지원 - |partial| 부분 지원 - |eol| 지원 없음(종료) - |"
 "unstable| 개발 버전"
 
-#: ../../docs/about/release_policy.rst:126
+#: ../../docs/about/release_policy.rst:129
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
@@ -347,11 +357,11 @@ msgstr ""
 "Godot의 사전 배포판은 제작에 사용되는 것을 염두한 것이 아니며 테스팅 목적으로"
 "만 제공됩니다."
 
-#: ../../docs/about/release_policy.rst:132
+#: ../../docs/about/release_policy.rst:135
 msgid "When is the next release out?"
 msgstr "다음 버전은 언제 출시되나요?"
 
-#: ../../docs/about/release_policy.rst:134
+#: ../../docs/about/release_policy.rst:137
 msgid ""
 "While Godot contributors aren't working under any deadlines, we have "
 "historically had one major or minor release per year, with several "
@@ -361,16 +371,16 @@ msgstr ""
 "메이저 또는 마이너 버전을 출시했고 그 사이에도 몇 차례 유지 보수 업데이트를 "
 "실시했습니다."
 
-#: ../../docs/about/release_policy.rst:138
+#: ../../docs/about/release_policy.rst:141
 msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
 msgstr ""
-"Godot 3.3부터는 마이너 릴리즈의 개발 사이클을 앞당기는 것을 목표로 하고 있습"
-"니다. 그래서 3개월에서 6개월마다 새로운 마이너 버전 출시를 기대할 수 있습니"
-"다."
+"Godot 3.3부터는 마이너 릴리스(release)의 개발 사이클을 앞당기는 것을 목표로 "
+"하고 있습니다. 그래서 3개월에서 6개월마다 새로운 마이너 릴리스 출시를 기대할 "
+"수 있습니다."
 
-#: ../../docs/about/release_policy.rst:141
+#: ../../docs/about/release_policy.rst:144
 msgid ""
 "Maintenance (patch) releases will be released as needed with potentially "
 "very short development cycles, to provide users of the current stable branch "
@@ -380,14 +390,13 @@ msgstr ""
 "되어 현재 안정적인 분기의 사용자에게 생산 요구 사항에 대한 최신 버그 수정을 "
 "제공합니다."
 
-#: ../../docs/about/release_policy.rst:145
-#, fuzzy
+#: ../../docs/about/release_policy.rst:148
 msgid ""
 "As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
 "release, but any closer estimate is likely to be hard to uphold. Alpha "
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
-"다가오는 Godot 4.0에 관해서는 **2021** 릴리스를 목표로 한다고 말할 수 있지만 "
-"더 가까운 추정은 유지하기 어려울 것입니다. 알파 빌드는 Godot 4.0의 주요 기능"
-"이 완성되는 대로 게시될 것입니다."
+"다가오는 Godot 4.0에 관해서는 **2022**\\ 년 릴리스를 목표로 한다고 말할 수 있"
+"지만 더 가까운 추정은 유지하기 어려울 것입니다. 알파 빌드는 Godot 4.0의 주요 "
+"기능이 완성되는 대로 게시될 것입니다."

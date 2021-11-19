@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,7 +239,7 @@ msgstr "Единственным исключением из этого прав
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Format multiline statements for readability"
-msgstr ""
+msgstr "Форматирование многострочных операторов для удобства чтения"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
@@ -248,6 +248,10 @@ msgid ""
 "continuation lines are still part of the same expression, 2 indent levels "
 "should be used instead of one."
 msgstr ""
+"Когда у вас особенно длинные операторы ``if`` или вложенные тернарные "
+"выражения, их перенос на несколько строк улучшает читаемость. Поскольку "
+"строки продолжения по-прежнему являются частью одного и того же выражения, "
+"следует использовать 2 уровня отступа вместо одного."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:303
 msgid ""
@@ -257,6 +261,13 @@ msgid ""
 "line never contains a backslash at the end. With parentheses, you don't have "
 "to worry about the last line having a backslash at the end."
 msgstr ""
+"GDScript позволяет заключать инструкции в несколько строк, используя круглые "
+"скобки или обратную косую черту. В этом руководстве по стилю рекомендуется "
+"использовать круглые скобки, поскольку они упрощают рефакторинг. Используя "
+"обратную косую черту, вы должны убедиться, что последняя строка никогда не "
+"содержит обратной косой черты в конце. С круглыми скобками вам не нужно "
+"беспокоиться о том, что последняя строка будет иметь обратную косую черту в "
+"конце."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
 msgid ""
@@ -264,21 +275,23 @@ msgid ""
 "``or`` keywords should be placed at the beginning of the line continuation, "
 "not at the end of the previous line."
 msgstr ""
+"При переносе условного выражения на несколько строк ключевые слова ``and``/"
+"``or`` следует размещать в начале продолжения строки, а не в конце "
+"предыдущей строки."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
 msgid "Avoid unnecessary parentheses"
 msgstr "Избегайте лишних скобок"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:346
-#, fuzzy
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations or wrapping over multiple lines, they only "
 "reduce readability."
 msgstr ""
-"Избегайте скобок в выражениях и условных операторах, так как они ухудшают "
-"читаемость (кроме тех случаев, когда требуется явно выделить порядок "
-"выполнения операций)."
+"Избегайте скобок в выражениях и условных операторах. Если это не требуется "
+"для порядка операций или переноса на несколько строк, они только ухудшают "
+"читаемость."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:365
 msgid "Boolean operators"
@@ -754,9 +767,14 @@ msgid ""
 "Alternatively, you can use the ``as`` keyword to cast the return type, and "
 "that type will be used to infer the type of the var."
 msgstr ""
+"В качестве альтернативы вы можете использовать ключевое слово ``as`` для "
+"приведения типа возвращаемого значения, и этот тип будет использоваться для "
+"определения типа переменной."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:831
 msgid ""
 "This option is also considered more :ref:`type-"
 "safe<doc_gdscript_static_typing_safe_lines>` than the first."
 msgstr ""
+"Этот вариант также считается больше :ref:`type-safe "
+"<doc_gdscript_static_typing_safe_lines>`, чем первый."

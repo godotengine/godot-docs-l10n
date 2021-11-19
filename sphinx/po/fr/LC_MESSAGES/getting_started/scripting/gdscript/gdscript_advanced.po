@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 16:27+0100\n"
+"POT-Creation-Date: 2021-11-19 11:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -511,7 +511,6 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "Oui, on devrait plutôt l'appeler le typage à la Hulk."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
@@ -520,8 +519,8 @@ msgid ""
 msgstr ""
 "Il est possible que l'objet touché n'ait pas de fonction smash(). Certains "
 "langages à typage dynamique ignorent simplement un appel de méthode "
-"lorsqu'il n'existe pas (comme Objective C), mais GDScript est plus strict, "
-"il est donc souhaitable de vérifier si la fonction existe :"
+"lorsqu'il n'existe pas, mais GDScript est plus strict, il est donc "
+"souhaitable de vérifier si la fonction existe :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
