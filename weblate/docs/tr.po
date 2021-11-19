@@ -37,6 +37,7 @@
 # M.Haytham Karamuk <a_developer_2002@outlook.com>, 2021.
 # monolifed <monolifed@gmail.com>, 2018.
 # Muhammet Mustafa Tozlu <m.mustafatozlu@gmail.com>, 2019.
+# Musa Umut Yelkenci <musaumut.yelkenci@gmail.com>, 2021.
 # Mustafa Turhan <odunluzikkim@gmail.com>, 2019.
 # Mutlu ORAN <mutlu.oran66@gmail.com>, 2020.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
@@ -49,7 +50,7 @@
 # rayray61 <laladodo000@gmail.com>, 2019.
 # sanana the skenana <umutinanerdogan62@gmail.com>, 2021.
 # seckiyn <kyofl6@gmail.com>, 2020.
-# Serkan Tarçın <starcin@gmail.com>, 2020.
+# Serkan Tarçın <starcin@gmail.com>, 2020-2021.
 # Shivan Dragon <shivantrue@gmail.com>, 2020.
 # Sinan İnak <tzolpka@gmail.com>, 2020.
 # Suleyman Poyraz <zaryob.dev@gmail.com>, 2020.
@@ -58,6 +59,7 @@
 # Ufuk Ardıç <ufukrdc@gmail.com>, 2021.
 # Vedat Günel <gunel15@itu.edu.tr>, 2020.
 # Yusuf Osman YILMAZ <wolfkan4219@gmail.com>, 2020.
+# Yusuf Yavuzyigit <yusufyavuzyigit25@gmail.com>, 2021.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
 #
 msgid ""
@@ -65,8 +67,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-04 16:27+0100\n"
-"PO-Revision-Date: 2021-09-24 01:24+0000\n"
-"Last-Translator: Adem B. <ad3mdev@gmail.com>\n"
+"PO-Revision-Date: 2021-11-17 12:59+0000\n"
+"Last-Translator: Serkan Tarçın <starcin@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -74,7 +76,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -88,7 +90,7 @@ msgstr "Başlarken"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr "Öğretici Örnekler"
+msgstr "Öğreticiler"
 
 #: ../../docs/index.rst:115
 msgid "Development"
@@ -103,9 +105,8 @@ msgid "Class reference"
 msgstr "Sınıf referansı"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Godot Dokümantasyonu - *3.3* sürümü"
+msgstr "Godot Dokümantasyonu - *3.4* sürümü"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -116,7 +117,6 @@ msgstr ""
 "görmek için sol alt taraftaki \"Dokümantasyon Oku\" panelini genişlet."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the beta 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -124,10 +124,10 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Bu döküman, kararlı 3.3 sürümü içindir . Bunun yerine mevcut ** "
-"geliştirilmekte olan ** sürümü arıyorsanız, burada bulabilirsiniz: <https://"
-"docs.godotengine.org/en/latest>. Önceki kararlı sürüm 3.2'in belgelerini şu "
-"adreste bulabilirsiniz: <https://docs.godotengine.org/en/3.2>."
+"Bu döküman, beta 3.4 sürümü içindir. Bunun yerine mevcut ** geliştirilmekte "
+"olan ** sürümü arıyorsanız, burada bulabilirsiniz: <https://docs.godotengine."
+"org/en/latest>. Önceki kararlı sürüm 3.2'in belgelerini şu adreste "
+"bulabilirsiniz: <https://docs.godotengine.org/en/3.2>."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -606,7 +606,6 @@ msgid "In short:"
 msgstr "Kısaca:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
@@ -1122,15 +1121,14 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "Godot neden temel özelliklerini küçük tutmayı hedefliyor?"
 
 #: ../../docs/about/faq.rst:207
-#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
-"Godot, çok sık kullanılmadıkları sürece eklentiler tarafından "
-"uygulanabilecek özellikleri kasıtlı olarak içermez. Bunun bir örneği, "
-"gelişmiş yapay zeka işlevselliği olabilir."
+"Godot, çok sık kullanılmadıkları sürece eklentiler tarafından sağlanabilecek "
+"özellikleri eklemez. Bunun bir örneği, gelişmiş yapay zeka işlevselliği "
+"olabilir."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
@@ -1503,14 +1501,14 @@ msgid "Is it possible to use Godot to create non-game applications?"
 msgstr "Oyun dışı uygulamalar oluşturmak için Godot kullanmak mümkün müdür?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
-"Godot'un küçük dağıtım boyutu, onu Electron veya Qt gibi çerçevelere uygun "
-"bir alternatif haline getirebilir."
+"Evet! Godot, kapsamlı bir yerleşik UI sistemine sahiptir ve küçük dağıtım "
+"boyutu, onu Electron veya Qt gibi çerçevelere uygun bir alternatif haline "
+"getirebilir."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -1577,7 +1575,6 @@ msgid "What user interface toolkit does Godot use?"
 msgstr "Godot'un kullandığı kullanıcı arayüzü kiti nedir?"
 
 #: ../../docs/about/faq.rst:395
-#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1586,9 +1583,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
-"Godot, GTKİ Qt veya wxWidgets gibi bir standart grafiksel kullanıcı arayüzü "
-"(GUI) kullanmaz. Bunun yerine kullanıcı OpenGL ES veya Vulkan ile "
-"oluşturulan kendi kullanıcı arayüzü kitini kullanır."
+"Godot, GTK, Qt veya wxWidgets gibi standart bir :abbr:`GUI (Grafiksel "
+"Kullanıcı Arayüzü)` araç takımı kullanmaz. Bunun yerine Godot, OpenGL ES "
+"veya Vulkan kullanılarak oluşturulan kendi kullanıcı arabirimi araç setini "
+"kullanır. Bu araç takımı, (C++ ile yazılmış)düzenleyiciyi işlemek için "
+"kullanılan Control düğümleri biçiminde sunulur. Bu Kontrol düğümleri, Godot "
+"tarafından desteklenen herhangi bir kodlama dilinden projelerde de "
+"kullanılabilir."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1607,9 +1608,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Godot neden STL (Standart Şablon Kütüphanesi) kullanmıyor"
+msgstr "Godot neden STL (Standart Şablon Kütüphanesi) kullanmıyor?"
 
 #: ../../docs/about/faq.rst:415
 msgid ""
@@ -6713,7 +6713,7 @@ msgstr "Sinyal"
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:703
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
-msgstr "Sinyaller"
+msgstr "sinyaller"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
@@ -13162,9 +13162,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:110
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "Kesitçi"
+msgstr "Proje dosyalarım nerede?"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:112
 msgid ""
@@ -15930,7 +15929,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:315
 msgid "Next Script"
-msgstr "Sonraki Betik"
+msgstr "Sonraki betik"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:315
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -15946,7 +15945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid "Previous Script"
-msgstr "Önceki Betik"
+msgstr "Önceki betik"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid ":kbd:`Ctrl + Shift + ,`"
@@ -22540,7 +22539,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -29067,7 +29066,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "Android için dışa aktarılıyor"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
@@ -30150,9 +30149,8 @@ msgid "One-click deploy"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
-#, fuzzy
 msgid "What is one-click deploy?"
-msgstr "Emoji dahil Unicode için tam destek."
+msgstr "Tek tıklamayla dağıtım nedir?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""

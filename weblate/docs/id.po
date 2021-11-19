@@ -6,6 +6,7 @@
 # Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020.
 # Alficiro <alfiboy2003@gmail.com>, 2019, 2021.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
+# Brian <brian@brianthe.dev>, 2021.
 # Damar Inderajati <damarind@gmail.com>, 2018.
 # dan990308 <sdanang657@gmail.com>, 2021.
 # Dimzt <dimas12345yuio@gmail.com>, 2019.
@@ -41,8 +42,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-04 16:27+0100\n"
-"PO-Revision-Date: 2021-10-15 13:52+0000\n"
-"Last-Translator: Tsaqib Fadhlurrahman Soka <sokatsaqib@gmail.com>\n"
+"PO-Revision-Date: 2021-11-19 09:53+0000\n"
+"Last-Translator: Brian <brian@brianthe.dev>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -50,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -79,9 +80,8 @@ msgid "Class reference"
 msgstr "Referensi Kelas"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Dokumentasi Godot – versi *3.3*"
+msgstr "Dokumentasi Godot – versi *3.4*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -92,7 +92,6 @@ msgstr ""
 "\"Baca Dokumentasi\" di bagian bawah sidebar untuk melihat daftar."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the beta 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -100,10 +99,10 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Ini adalah dokumentasi untuk versi stabil 3.3. Ingin melihat dokumentasi "
-"dari versi **dalam pengembangan** saat ini? `Silakan menuju ke <https://docs."
+"Ini adalah dokumentasi untuk versi beta 3.4. Ingin melihat dokumentasi dari "
+"versi **dalam pengembangan** saat ini? `Silakan menuju ke <https://docs."
 "godotengine.org/en/latest>`_. Anda juga bisa menelusuri dokumentasi untuk "
-"versi stabil `3.2 <https://docs.godotengine.org/en/3.2>`_ sebelumnya."
+"versi stabil `3.3 <https://docs.godotengine.org/en/3.3>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -593,13 +592,12 @@ msgid "In short:"
 msgstr "Singkatnya:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Anda bebas mengunduh dan menggunakan Godot untuk tujuan apapun, pribadi, non-"
-"komersil, komersil, maupun kegiatan lain."
+"Anda bebas mengunduh dan menggunakan Godot untuk tujuan apapun: pribadi, "
+"nirlaba, komersil, atau lainnya."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -1902,6 +1900,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Ini adalah `masalah yang diketahui <https://github.com/godotengine/godot/"
+"issues/32990>__ yang disebabkan oleh aplikasi pihak ketiga Stardock Fences "
+"pada Windows. Satu-satunya solusi yang diketahui adalah menonaktifkan "
+"Stardock Fences saat menggunakan Godot."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -2324,13 +2326,12 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr "Font bitmap dapat diekspor menggunakan alat seperti BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
 "DynamicFont mendukung font monokrom serta font berwarna. Format yang "
-"didukung adalah TTF dan OTF."
+"didukung adalah TTF, OTF, dan WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -2599,12 +2600,12 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Screen-space reflections."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
-"Teknik refleksi dapat dicampur bersama untuk akurasi yang lebih tinggi."
+"Teknik refleksi dapat dicampur bersama untuk akurasi yang lebih tinggi atau "
+"skalabilitas."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -2676,10 +2677,13 @@ msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr "*GLES3:* Screen-space ambient occlusion."
 
 #: ../../docs/about/list_of_features.rst:236
+#, fuzzy
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Debanding opsional untuk menghindari banding warna (efektif saat "
+"rendering HDR diaktifkan)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid ""
@@ -2737,7 +2741,7 @@ msgstr "Antialiasing Multi-sampel (MSAA)."
 #: ../../docs/about/list_of_features.rst:256
 #, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antialiasing Multi-sampel (MSAA)."
+msgstr "Perkiraan antialiasing cepat (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:258
 msgid ""
@@ -2830,13 +2834,12 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Custom vertex, fragment, light, and sky shaders."
 
 #: ../../docs/about/list_of_features.rst:299
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-"Text-based shaders using a `shader language inspired by GLSL "
-"<doc_shading_language>`."
+"Shader berbasis teks menggunakan sebuah :ref:`bahasa shader terinspirasi "
+"oleh GLSL <doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid "Visual shader editor."
@@ -3576,9 +3579,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "Dukungan kurva Bézier dalam animasi."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Format"
+msgstr "Format berkas"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""
@@ -3725,15 +3727,14 @@ msgstr ""
 "<doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:602
-#, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ lists features that have been requested by the community and "
 "may be implemented in future Godot releases."
 msgstr ""
-"The `peta jalan <https://github.com/godotengine/godot-roadmap>`__ fitur "
-"dokumen repositori yang telah disepakati dan dapat diterapkan di rilis Godot "
-"mendatang."
+"`Repositori proposal Godot <https://github.com/godotengine/godot-"
+"proposals>`__ mencantumkan fitur yang telah diminta oleh komunitas dan "
+"mungkin diimplementasikan dalam rilis Godot mendatang."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
@@ -4266,11 +4267,15 @@ msgstr ""
 "mesin lainnya tetap kompatibel."
 
 #: ../../docs/about/release_policy.rst:39
+#, fuzzy
 msgid ""
 "Upgrading to a new minor version is therefore recommended for all users, but "
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
+"Oleh karena itu, upgrade ke versi minor baru direkomendasikan untuk semua "
+"pengguna, tetapi beberapa pengujian diperlukan untuk memastikan bahwa proyek "
+"Anda masih berperilaku seperti yang diharapkan dalam versi minor baru."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -15458,9 +15463,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:315
-#, fuzzy
 msgid "Next Script"
-msgstr "GDScript"
+msgstr "Skrip Berikutnya"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:315
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -15476,7 +15480,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid "Previous Script"
-msgstr ""
+msgstr "Skrip Sebelumnya"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid ":kbd:`Ctrl + Shift + ,`"
@@ -15662,7 +15666,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:358
 msgid "Delete Selected"
-msgstr ""
+msgstr "Hapus yang Dipilih"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:358
 #: ../../docs/getting_started/editor/default_key_mapping.rst:415
