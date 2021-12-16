@@ -6,6 +6,7 @@
 # Daniel Kříž <Daniel.kriz@protonmail.com>, 2020.
 # David Husička <davidek251@seznam.cz>, 2020.
 # David Kubeš <kubesdavid@email.cz>, 2019.
+# Jakub Janšta <jansta.ja@gmail.com>, 2021.
 # Jakub Smetana <kubiceks76@gmail.com>, 2018.
 # jakub zukal <jakubzukal@email.cz>, 2018.
 # Josef Kuchař <josef.kuchar267@gmail.com>, 2018.
@@ -32,8 +33,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-10-27 21:45+0000\n"
-"Last-Translator: Daniel <dan@ger.cz>\n"
+"PO-Revision-Date: 2021-12-16 14:21+0000\n"
+"Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -41,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -55,7 +56,7 @@ msgstr "Začínáme"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr "Návody"
+msgstr "Tutoriály"
 
 #: ../../docs/index.rst:115
 msgid "Development"
@@ -83,7 +84,6 @@ msgstr ""
 "zobrazení seznamu."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 "Zde je dokumentace pro stabilní 3.3 větev. Hledáte dokumentaci pro aktuální "
 "**development** větev? Podívejte se `zde <https://docs.godotengine.org/en/"
-"latest>`_. Také můžete prohlížet dokumentaci pro předešlou stabilní `3.2 "
+"latest>`_. Také můžete prohlížet dokumentaci pro předešlou stabilní `3.3 "
 "<https://docs.godotengine.org/en/3.2>`_ větev."
 
 #: ../../docs/index.rst:18
@@ -564,7 +564,6 @@ msgid "In short:"
 msgstr "Ve zkratce:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
@@ -2274,13 +2273,12 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr "Bitmapová písma lze exportovat pomocí nástrojů, jako je BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont podporuje monochromatická i barevná písma. Podporované formáty "
-"jsou TTF a OTF."
+"DynamicFont podporuje monochromatická i barevná písma (tzn. pro emoji). "
+"Podporované formáty jsou TTF a OTF WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -2549,11 +2547,10 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Odrazy místa na obrazovce."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "Odrazové techniky lze pro větší přesnost kombinovat."
+msgstr "Odrazové techniky lze pro větší přesnost a škálovatelnost kombinovat."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -3511,9 +3508,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "Podpora Bézierových křivek v animaci."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Formáty"
+msgstr "Formáty souboru"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""
@@ -4270,7 +4266,6 @@ msgstr ""
 "uživatele, kteří potřebují udržovací aktualizace."
 
 #: ../../docs/about/release_policy.rst:77
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -4279,10 +4274,11 @@ msgid ""
 "case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
 "Kdykoli je vydána nová hlavní verze, převedeme předchozí stabilní větev na "
-"dlouhodobě podporovanou verzi a snažíme se poskytnout opravy problémů, se "
-"kterými se setkali uživatelé této větve, kteří nemohou převést složité "
-"projekty do nové hlavní verze. Tak tomu bylo v případě větve 2.1 a bude tomu "
-"tak i v případě nejnovější stabilní větve 3.x v době vydání Godotu 4.0."
+"dlouhodobě podporovanou verzi a snažíme se jak nejlépe umíme poskytnout "
+"opravy problémů, se kterými se setkali uživatelé této větve, kteří nemohou "
+"převést složité projekty do nové hlavní verze. Tak tomu bylo v případě větve "
+"2.1 a bude tomu tak i v případě nejnovější stabilní větve 3.x v době vydání "
+"Godotu 4.0."
 
 #: ../../docs/about/release_policy.rst:83
 msgid ""
@@ -4317,14 +4313,12 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Aktuální zaměření vývoje (nestabilní).*"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Godot 3.5"
-msgstr "Godot 3.4"
+msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Q1 2022"
-msgstr "Q4 2021"
+msgstr "Q1 2022"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -4337,9 +4331,8 @@ msgid "Godot 3.4"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
-#, fuzzy
 msgid "November 2021"
-msgstr "Prosinec 2014"
+msgstr "Prosinec 2021"
 
 #: ../../docs/about/release_policy.rst:96
 #: ../../docs/about/release_policy.rst:99
@@ -4383,9 +4376,8 @@ msgid "March 2019"
 msgstr "Březen 2019"
 
 #: ../../docs/about/release_policy.rst:105
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| Již není podporována (poslední update: 3.0.6)."
+msgstr "|eol| Již není podporována (poslední update: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
@@ -4408,9 +4400,8 @@ msgid "July 2016"
 msgstr "Červenec 2016"
 
 #: ../../docs/about/release_policy.rst:109
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| Již není podporována (poslední update: 3.0.6)."
+msgstr "|eol| Již není podporována (poslední update: 2.1.6)."
 
 #: ../../docs/about/release_policy.rst:111
 msgid "Godot 2.0"
@@ -6875,7 +6866,6 @@ msgstr ""
 "vyslali ty správné hodnoty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
@@ -6927,7 +6917,6 @@ msgstr ""
 "vytvořit 2D hru."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
@@ -6936,7 +6925,8 @@ msgid ""
 msgstr ""
 "Tento projekt je úvodem k enginu Godot. Předpokládá se, že už máte nějaké "
 "zkušenosti s programováním. Pokud je pro vás programování \"španělská vesnice"
-"\", měli byste začít zde: :ref:`doc_scripting`."
+"\", měli byste začít zde: :ref:`doc_scripting`. Pokud chcete v Godotu "
+"používat jazyk C#, přečtěte si před pokračováním také :ref:`doc_c_sharp`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:19
 msgid ""
@@ -10185,7 +10175,6 @@ msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "GridContainer se 2 sloupci. Automaticky mění velikost každého sloupce."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section "
@@ -14189,7 +14178,6 @@ msgstr ""
 "součástí *stromu scény*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "``_enter_tree()`` and ``_ready()`` callbacks (as well as ``_exit_tree()``)."
@@ -17793,7 +17781,7 @@ msgstr "``script_editor/next_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid "Previous Script"
-msgstr "Předcházející skript"
+msgstr "Předchozí skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:317
 msgid ":kbd:`Ctrl + Shift + ,`"
@@ -19970,7 +19958,6 @@ msgid "Multiplication / Division / Remainder"
 msgstr "Násobení / dělení / zbytek"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
-#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
@@ -19979,7 +19966,8 @@ msgid ""
 msgstr ""
 "Tyto operátory se chovají stejně jako v jazyce C++. Celočíselné dělení je "
 "useknuto, místo aby vracelo zlomkové číslo, a operátor % je k dispozici "
-"pouze pro inty (\"fmod\" pro floaty)"
+"pouze pro inty (\"fmod\" pro floaty) a navíc se používá pro formátování "
+"řetězců"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
@@ -20088,9 +20076,8 @@ msgid "Type casting"
 msgstr "Přetypování"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
@@ -22402,7 +22389,6 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "Ano, měli bychom to nazývat Hulk typing."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
@@ -22465,14 +22451,14 @@ msgstr ""
 "slouží speciální syntaxe exportu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
-#, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
 "information on C# exports."
 msgstr ""
 "Exportování vlastností lze provádět i v jiných jazycích, například v jazyce "
-"C#. Syntaxe se liší v závislosti na jazyce."
+"C#. Syntaxe se liší v závislosti na jazyce. Informace o exportech v jazyce "
+"C# naleznete v :ref:`doc_c_sharp_exports`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:34
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
@@ -22979,14 +22965,13 @@ msgid "Avoid unnecessary parentheses"
 msgstr "Vyhněte se zbytečným závorkám"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:346
-#, fuzzy
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations or wrapping over multiple lines, they only "
 "reduce readability."
 msgstr ""
 "Vyhněte se závorkám ve výrazech a podmíněných příkazech. Pokud to není nutné "
-"pro pořadí operací, pouze snižují čitelnost."
+"pro pořadí operací nebo obalení přes více řádků, pouze snižují čitelnost."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:365
 msgid "Boolean operators"
@@ -26873,12 +26858,10 @@ msgid "``inst2dict``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:4
-#, fuzzy
 msgid "C# Exports"
-msgstr "Exporty"
+msgstr "C# Exporty"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
@@ -26888,20 +26871,19 @@ msgstr ""
 "V Godotu lze členy třídy exportovat. To znamená, že jejich hodnota se uloží "
 "spolu se zdrojem (například :ref:`scene <class_PackedScene>`), ke kterému "
 "jsou připojeny. Budou také k dispozici pro editaci v editoru vlastností. "
-"Exportování se provádí pomocí klíčového slova ``export``::"
+"Exportování se provádí pomocí atributu ``[Export]``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:22
-#, fuzzy
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
 "current project it will be visible in the property editor. This way, artists "
 "and game designers can modify values that later influence how the program "
 "runs. For this, a special export syntax is provided."
 msgstr ""
-"Jednou ze základních výhod exportu členských proměnných je jejich "
-"viditelnost a editovatelnost v editoru. Výtvarníci a herní designéři tak "
-"mohou upravovat hodnoty, které později ovlivňují chod programu. K tomu "
-"slouží speciální syntaxe exportu."
+"V tomto příkladu se uloží hodnota ``5`` a po sestavení aktuálního projektu "
+"bude viditelná v editoru vlastností. Výtvarníci a herní designéři tak mohou "
+"upravovat hodnoty, které později ovlivní chod programu. K tomu slouží "
+"speciální syntaxe exportu."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:27
 msgid ""
@@ -26916,9 +26898,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:35
-#, fuzzy
 msgid "Basic use"
-msgstr "Základní syntaxe::"
+msgstr "Základní použití"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:37
 msgid ""
@@ -26937,18 +26918,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:99
-#, fuzzy
 msgid "Strings as paths"
-msgstr "Délka řetězce"
+msgstr "Řetězce jako cesty"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:101
 msgid "Property hints can be used to export strings as paths"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:103
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "Absolutní cesta k souboru"
+msgstr "Absolutní cesta k souboru."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:110
 msgid "String as a path to a directory."
@@ -27023,9 +27002,8 @@ msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:206
-#, fuzzy
 msgid "Colors"
-msgstr "Barva"
+msgstr "Barvy"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:208
 msgid "Regular color given as red-green-blue-alpha value."
@@ -27061,7 +27039,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:269
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
@@ -27069,10 +27046,9 @@ msgid ""
 msgstr ""
 "Celá čísla používaná jako bitové příznaky mohou v jedné vlastnosti uchovávat "
 "více hodnot ``true``/``false`` (boolean). Pomocí exportní nápovědy ``int, "
-"FLAGS, ...`` je lze nastavit z editoru::"
+"FLAGS, ...`` je lze nastavit z editoru."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:279
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
@@ -27082,16 +27058,15 @@ msgstr ""
 "U každého příznaku je nutné zadat řetězcový popis. V tomto příkladu má "
 "``Fire`` hodnotu 1, ``Water`` hodnotu 2, ``Earth`` hodnotu 4 a ``Wind`` "
 "odpovídá hodnotě 8. Obvykle by měly být odpovídajícím způsobem definovány "
-"konstanty (např. ``const ELEMENT_WIND = 8`` a tak dále)."
+"konstanty (např. ``private const int ELEMENT_WIND = 8`` a tak dále)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:284
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
 msgstr ""
 "Nápovědy k exportu jsou k dispozici také pro fyzikální a vykreslovací vrstvy "
-"definované v nastavení projektu::"
+"definované v nastavení projektu."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:303
 msgid "Exported arrays should be initialized empty."
@@ -27103,7 +27078,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_exports.rst:320
-#, fuzzy
 msgid ""
 "Arrays with specified types which inherit from resource can be set by drag-"
 "and-dropping multiple files from the FileSystem dock."
@@ -27955,7 +27929,6 @@ msgstr ""
 "příkazovém řádku: ``type nul > .gdignore```"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
-#, fuzzy
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods. Ignoring a folder will also "
@@ -27963,7 +27936,9 @@ msgid ""
 "reduce clutter."
 msgstr ""
 "Jakmile je složka ignorována, prostředky v této složce již nelze načíst "
-"pomocí metod ``load()`` a ``preload()``."
+"pomocí metod ``load()`` a ``preload()``. Ignorování složky ji také "
+"automaticky skryje z doku FileSystem, což může být užitečné pro snížení "
+"nepořádku."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
 msgid ""
@@ -28047,7 +28022,6 @@ msgid "Official Git plugin"
 msgstr "Oficiální zásuvný modul Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
-#, fuzzy
 msgid ""
 "Using Git from inside the editor is supported with an official plugin. You "
 "can find the latest releases `here <https://github.com/godotengine/godot-git-"
@@ -28056,9 +28030,8 @@ msgid ""
 msgstr ""
 "Používání systému Git v editoru je podporováno oficiálním zásuvným modulem. "
 "Nejnovější verze najdete `zde <https://github.com/godotengine/godot-git-"
-"plugin/releases>`__ (není k dispozici v knihovně zdrojů). Dokumentaci k "
-"používání zásuvného modulu Git naleznete `zde <https://github.com/"
-"godotengine/godot-git-plugin/wiki>`__."
+"plugin/releases>`__ . Dokumentaci k používání zásuvného modulu Git naleznete "
+"`zde <https://github.com/godotengine/godot-git-plugin/wiki>`__."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:26
 msgid "Files to exclude from VCS"
@@ -28544,14 +28517,12 @@ msgid "Uncompressed"
 msgstr "Nekomprimované"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid "Compress Lossless"
-msgstr "Bezztrátová komprese (PNG)"
+msgstr "Bezztrátová komprese"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid "Compress Lossy"
-msgstr "Ztrátová komprese (WebP)"
+msgstr "Ztrátová komprese"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Compress VRAM"
@@ -28562,14 +28533,12 @@ msgid "Stored as raw pixels"
 msgstr "Uloženo jako nezpracované obrazové body"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
-#, fuzzy
 msgid "Stored as Lossless WebP / PNG"
-msgstr "Bezztrátová komprese (PNG)"
+msgstr "Uloženo jako bezztrátový WebP / PNG"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
-#, fuzzy
 msgid "Stored as Lossy WebP"
-msgstr "Uloženo jako WebP"
+msgstr "Uloženo jako ztrátový WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
@@ -28826,7 +28795,6 @@ msgid "sRGB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:172
-#, fuzzy
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -28935,7 +28903,7 @@ msgstr "Svg"
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr "Zvětšit"
+msgstr "Měřítko"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:222
 msgid ""
@@ -30639,9 +30607,8 @@ msgstr ""
 "předponou nebo příponou ``loop`` nebo ``cycle``."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:4
-#, fuzzy
 msgid "Exporting 3D scenes"
-msgstr "Import 3D scén"
+msgstr "Export 3D scén"
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:9
 msgid ""
@@ -30662,9 +30629,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:26
-#, fuzzy
 msgid "There are several limitations with glTF export."
-msgstr "Existuje několik důvodů:"
+msgstr "Export glTF má několik omezení."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:28
 msgid ""
@@ -30677,9 +30643,8 @@ msgid "ShaderMaterials cannot be exported."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:30
-#, fuzzy
 msgid "No support for exporting 2D scenes."
-msgstr "Žádná podpora externích editorů skriptů."
+msgstr "Nepodporuje export 2D scén."
 
 #: ../../docs/getting_started/workflow/assets/exporting_3d_scenes.rst:31
 msgid "Only supported in editor builds (``tools=yes``)."
@@ -32407,7 +32372,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "Změna ikony aplikace pro systém Windows"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -32415,6 +32380,9 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"Ve výchozím nastavení je ikonou exportovaného projektu ikona Godotu. S "
+"největší pravděpodobností ji budete chtít pro svůj projekt změnit. V systému "
+"Windows lze změnit dva typy ikon: ikonu souboru a ikonu hlavního panelu."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Creating an ICO file"
@@ -32427,18 +32395,25 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"Systém Windows nepodporuje pro ikony aplikací formáty png nebo jpg. Místo "
+"toho používá vlastní formát ICO. Ikonu aplikace můžete vytvořit v libovolném "
+"programu, ale musíte ji převést do souboru ICO pomocí programu, jako je GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"`Tento videonávod &lt;https://www.youtube.com/watch?v=uqV3UfM-n5Y&gt;`_ "
+"popisuje, jak exportovat soubor ICO pomocí programu GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"Obrázek PNG je také možné převést na soubor ICO vhodný pro hiDPI pomocí "
+"tohoto příkazu `ImageMagick <https://www.imagemagick.org/>;`_:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
 msgid ""
@@ -32448,20 +32423,26 @@ msgid ""
 "sizes, the default Godot icon will be kept for the sizes that weren't "
 "overridden."
 msgstr ""
+"Aby soubor ICO účinně nahradil výchozí ikonu Godot, musí obsahovat *všechny* "
+"velikosti obsažené ve výchozí ikoně Godot: 16×16, 32×32, 48×48, 64×64, "
+"128×128, 256×256. Pokud soubor ICO neobsahuje všechny velikosti, bude "
+"výchozí ikona Godot zachována pro velikosti, které nebyly přepsány."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:35
 msgid "The above ImageMagick command takes this into account."
-msgstr ""
+msgstr "Výše uvedený příkaz ImageMagick to bere v úvahu."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "Změna ikony hlavního panelu"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
+"Ikona hlavního panelu je ikona, která se zobrazí na hlavním panelu, když je "
+"projekt spuštěný."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
 msgid ""
@@ -32479,10 +32460,13 @@ msgid ""
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"Toto nastavení změní ikonu exportované hry pouze v systému Windows. Chcete-"
+"li nastavit ikonu pro macOS, použijte ``Macos Native Icon``. Pro ostatní "
+"platformy použijte nastavení ``Icon``."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
-msgstr ""
+msgstr "Změna ikony souboru"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
@@ -32492,12 +32476,19 @@ msgid ""
 "choose to enable the **Embed Pck** option for your Windows export preset in "
 "the Export dialog."
 msgstr ""
+"Existují `známé problémy <https://github.com/godotengine/godot/"
+"issues/33466>`__ při změně ikony aplikace ve spustitelných souborech, které "
+"vkládají soubor PCK. Pokud se rozhodnete povolit možnost **Embed Pck** pro "
+"přednastavení exportu Windows v dialogovém okně Export, doporučujeme se "
+"prozatím vyhnout používání rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
+"Ikona souboru je ikona spustitelného souboru, na kterou kliknete pro "
+"spuštění projektu."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
@@ -32505,6 +32496,9 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"Než jej vyberete v možnostech exportu, budete muset nainstalovat další "
+"nástroj s názvem **rcedit**. Můžete si jej stáhnout `zde <https://github.com/"
+"electron/rcedit/releases>`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
@@ -32513,12 +32507,18 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"Po stažení musíte Godotu sdělit cestu ke spustitelnému souboru rcedit ve "
+"vašem počítači. Přejděte na **Editor → Nastavení editoru → Export → "
+"Windows**. Klikněte na ikonu složky pro položku **rcedit**. Přejděte na "
+"spustitelný soubor rcedit a vyberte jej."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"Uživatelé Linuxu a macOS si také budou muset nainstalovat `WINE <https://www."
+"winehq.org/>`_, aby mohli používat rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
@@ -32527,6 +32527,10 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"Nyní byste měli mít vše připraveno ke změně ikony souboru. K tomu je třeba "
+"při exportu zadat ikonu. Přejděte na **Projekt → Export**. Za předpokladu, "
+"že jste již vytvořili předvolbu plochy Windows, vyberte v poli **Aplikace → "
+"Ikona** ikonu ve formátu ICO."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
@@ -32536,21 +32540,30 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
+"Pokud rcedit nezmění ikonu, můžete místo toho :ref:`zkompilovat své vlastní "
+"šablony exportu Windows <doc_compiling_for_windows>` se změněnou ikonou. "
+"Chcete-li tak učinit, nahraďte `platform/windows/godot.ico <https://github."
+"com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ svým "
+"vlastním souborem ICO *před* kompilací exportu šablony."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
+"Po dokončení této operace můžete zadat své šablony exportu jako vlastní "
+"šablony exportu v předvolbě exportu projektu&#x27;Windows."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
-msgstr ""
+msgstr "Testování výsledku"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:109
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
+"Nyní můžete projekt exportovat. Pokud vše proběhlo správně, měli byste vidět "
+"toto:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
@@ -32558,6 +32571,9 @@ msgid ""
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
+"Pokud se ikona nezobrazuje správně, zkuste ve Windows 10 vymazat mezipaměť "
+"ikon. Za tímto účelem otevřete dialogové okno **Spustit** a zadejte "
+"``ie4uinit.exe -ClearIconCache`` nebo ``ie4uinit.exe -show``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
@@ -33018,9 +33034,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 11"
-msgstr "Instalace sady OpenJDK 8"
+msgstr "Instalace sady OpenJDK 11"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
 msgid ""
@@ -51566,9 +51581,8 @@ msgid "Rooms and Portals"
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:4
-#, fuzzy
 msgid "Introduction to Rooms and Portals"
-msgstr "Úvod do Godot editoru"
+msgstr "Úvod do místností a portálů"
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:6
 msgid ""
@@ -51580,7 +51594,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:8
-#, fuzzy
 msgid "This allows several features:"
 msgstr "Tento přístup má několik výhod:"
 
@@ -51680,9 +51693,8 @@ msgid "First steps with Rooms and Portals"
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:5
-#, fuzzy
 msgid "The RoomManager"
-msgstr "Správce projektu"
+msgstr "Správce místností"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:7
 msgid ""
@@ -51694,9 +51706,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:10
-#, fuzzy
 msgid "Room Conversion"
-msgstr "Godot verze"
+msgstr "Konverze místností"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:12
 msgid ""
@@ -51728,9 +51739,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:23
-#, fuzzy
 msgid "The RoomList"
-msgstr "Nepřátelé"
+msgstr "Seznam místností"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:25
 msgid ""
@@ -51769,9 +51779,8 @@ msgid "Rooms"
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:41
-#, fuzzy
 msgid "What is a room?"
-msgstr "Co je to plocha?"
+msgstr "Co je to pokoj?"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:43
 msgid ""
@@ -51791,9 +51800,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:48
-#, fuzzy
 msgid "Why convex?"
-msgstr "Proč exportovat?"
+msgstr "Proč konvexní?"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:50
 msgid ""
@@ -51847,9 +51855,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:70
-#, fuzzy
 msgid "How do I create a room?"
-msgstr "Jak mohu rozšířit Godot?"
+msgstr "Jak vytvořím místnost?"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:72
 msgid ""
@@ -52028,9 +52035,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:7
-#, fuzzy
 msgid "Portal mode"
-msgstr "Režim exportu"
+msgstr "Režim portálu"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:9
 msgid ""
@@ -52114,9 +52120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:44
-#, fuzzy
 msgid "Autoplace"
-msgstr "Nahradit"
+msgstr "Autoplace"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:46
 msgid ""
@@ -52147,9 +52152,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:55
-#, fuzzy
 msgid "Object Lifetimes"
-msgstr "Soubory projektu"
+msgstr "Životnost objektu"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:57
 msgid ""
@@ -52170,9 +52174,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:61
-#, fuzzy
 msgid "The sequence should be therefore:"
-msgstr "Strom scény by měl vypadat takto:"
+msgstr "Pořadí by tedy mělo být následující:"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:63
 msgid "Load your level."
@@ -52218,9 +52221,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:77
-#, fuzzy
 msgid "Portal Margins"
-msgstr "Margin (Okraj)"
+msgstr "Okraje portálu"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:79
 msgid ""
@@ -52262,9 +52264,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:91
-#, fuzzy
 msgid "Lighting"
-msgstr "Light Baking (předpočítané světlo pro statické scény)"
+msgstr "Osvětlení"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:93
 msgid ""
@@ -52373,9 +52374,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:40
-#, fuzzy
 msgid "VisbilityNotifiers / VisibilityEnablers"
-msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+msgstr "VisbilityNotifiers / VisibilityEnablers"
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:42
 msgid ""
@@ -52406,9 +52406,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:53
-#, fuzzy
 msgid "RoomGroups"
-msgstr "Skupiny"
+msgstr "RoomGroups"
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:55
 msgid ""
@@ -52498,9 +52497,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:87
-#, fuzzy
 msgid "The only differences:"
-msgstr "Rozdíly"
+msgstr "Jediné rozdíly:"
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:89
 msgid ""
@@ -52523,9 +52521,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:94
-#, fuzzy
 msgid "Internal room example"
-msgstr "Vytvoření instance - příklad"
+msgstr "Příklad vnitřní místnosti"
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:96
 msgid ""
@@ -52631,14 +52628,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:2
-#, fuzzy
 msgid "Editing Rooms and Portals"
-msgstr "Úpravy proměnných"
+msgstr "Úpravy místností a portálů"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:5
-#, fuzzy
 msgid "Example SceneTree"
-msgstr "Strom scény"
+msgstr "Příklad stromu scény"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:7
 msgid "Putting all the ideas together, here is an example scene tree:"
@@ -52692,9 +52687,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:27
-#, fuzzy
 msgid "Postfix convention"
-msgstr "Konvence pojmenování"
+msgstr "Postfixová konvence"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:29
 msgid "``-room`` becomes a :ref:`Room<class_Room>`."
@@ -52762,9 +52756,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:52
-#, fuzzy
 msgid "Wildcard"
-msgstr "Vzor zástupného znaku"
+msgstr "Zástupný znak"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:54
 msgid ""
@@ -52781,9 +52774,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:58
-#, fuzzy
 msgid "This means we can use the following portal names:"
-msgstr "Existují následující omezení:"
+msgstr "To znamená, že můžeme použít následující názvy portálů:"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:60
 msgid "``kitchen*1-portal`` - creates a Portal leading to the \"kitchen\"."
@@ -52824,9 +52816,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:74
-#, fuzzy
 msgid "Portal point editing"
-msgstr "Podrobnosti o exportu"
+msgstr "Úprava portálového bodu"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:76
 msgid ""
@@ -52873,14 +52864,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:96
-#, fuzzy
 msgid "RoomManager"
-msgstr "Správce projektu"
+msgstr "RoomManager"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:99
-#, fuzzy
 msgid "Show Debug"
-msgstr "Ladění"
+msgstr "Zobrazit ladění"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:101
 msgid ""
@@ -52889,9 +52878,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:104
-#, fuzzy
 msgid "Debug Sprawl"
-msgstr "Ladicí panel"
+msgstr "Ladění rozrůstání"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:106
 msgid ""
@@ -52904,9 +52892,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:109
-#, fuzzy
 msgid "Merge Meshes"
-msgstr "Sítě"
+msgstr "Sloučení sítí"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:111
 msgid ""
@@ -52955,9 +52942,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:132
-#, fuzzy
 msgid "Particle Systems"
-msgstr "Shadery částic"
+msgstr "Systémy částic"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:134
 msgid ""
@@ -52969,9 +52955,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:137
-#, fuzzy
 msgid "Multimeshes"
-msgstr "MultiMeshes"
+msgstr "Multimeshes (multi sítě)"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:139
 msgid ""
@@ -52998,14 +52983,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:14
-#, fuzzy
 msgid "Step 1"
-msgstr "Vstoupit do"
+msgstr "Krok 1"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:18
-#, fuzzy
 msgid "Create a new project."
-msgstr "Vytvoření nového projektu"
+msgstr "Vytvoření nového projektu."
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:19
 msgid ""
@@ -53054,9 +53037,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:29
-#, fuzzy
 msgid "Step 2"
-msgstr "Vstoupit do"
+msgstr "Krok 2"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:33
 msgid "Now we need to create the other room."
@@ -53077,9 +53059,8 @@ msgid "Rename the second room to ``Lounge``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:39
-#, fuzzy
 msgid "Step 3"
-msgstr "Vstoupit do"
+msgstr "Krok 3"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:43
 msgid "Next, we will add a portal between the two rooms."
@@ -53103,9 +53084,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:49
-#, fuzzy
 msgid "Step 4"
-msgstr "Vstoupit do"
+msgstr "Krok 4"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:53
 msgid ""
@@ -53140,9 +53120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:60
-#, fuzzy
 msgid "Step 5"
-msgstr "Vstoupit do"
+msgstr "Krok 5"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:64
 msgid ""
@@ -53163,9 +53142,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:69
-#, fuzzy
 msgid "Step 6"
-msgstr "Vstoupit do"
+msgstr "Krok 6"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:73
 msgid ""
@@ -53205,9 +53183,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:85
-#, fuzzy
 msgid "Some things to try"
-msgstr "Je třeba si uvědomit několik věcí:"
+msgstr "Několik věcí, které je třeba vyzkoušet"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:87
 msgid ""
@@ -64884,9 +64861,8 @@ msgid "Zulu (South Africa)"
 msgstr ""
 
 #: ../../docs/tutorials/gui/index.rst:4
-#, fuzzy
 msgid "User Interface (UI)"
-msgstr "Rozhraní editoru (C ++)"
+msgstr "Uživatelské rozhraní (UI)"
 
 #: ../../docs/tutorials/gui/index.rst:6
 msgid ""
@@ -64911,14 +64887,12 @@ msgid "Typical content controls include:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/index.rst:19
-#, fuzzy
 msgid ":ref:`Buttons <class_Button>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Buttons <class_Button>`"
 
 #: ../../docs/tutorials/gui/index.rst:20
-#, fuzzy
 msgid ":ref:`Labels <class_Label>`"
-msgstr ":ref:`bool <class_bool>`"
+msgstr ":ref:`Labels <class_Label>`"
 
 #: ../../docs/tutorials/gui/index.rst:21
 msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
@@ -64929,29 +64903,24 @@ msgid "Typical layout controls include:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/index.rst:25
-#, fuzzy
 msgid ":ref:`BoxContainers <class_BoxContainer>`"
-msgstr ":ref:`Krabicové <class_BoxContainer>` rozložení."
+msgstr ":ref:`Krabicové <class_BoxContainer>` rozložení"
 
 #: ../../docs/tutorials/gui/index.rst:26
-#, fuzzy
 msgid ":ref:`MarginContainers <class_MarginContainer>`"
-msgstr ":ref:`Mřížkové <class_GridContainer>` rozložení."
+msgstr ":ref:`Mřížkové <class_GridContainer>` rozložení"
 
 #: ../../docs/tutorials/gui/index.rst:27
-#, fuzzy
 msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`ScrollContainers <class_ScrollContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:28
-#, fuzzy
 msgid ":ref:`TabContainers <class_TabContainer>`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`TabContainers <class_TabContainer>`"
 
 #: ../../docs/tutorials/gui/index.rst:29
-#, fuzzy
 msgid ":ref:`Popups <class_Popup>`"
-msgstr ":ref:`bool <class_bool>`"
+msgstr ":ref:`Popups <class_Popup>`"
 
 #: ../../docs/tutorials/gui/index.rst:31
 msgid "The following pages explain the basics of using such controls."
@@ -64969,9 +64938,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/index.rst:57
-#, fuzzy
 msgid "Control node tutorials"
-msgstr "Kurz příkazového řádku"
+msgstr "Tutorialy pro řídicí uzly"
 
 #: ../../docs/tutorials/gui/index.rst:59
 msgid ""
@@ -65600,9 +65568,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_navigation.rst:26
-#, fuzzy
 msgid "Node settings"
-msgstr "Uživatelská nastavení"
+msgstr "Nastavení uzlu"
 
 #: ../../docs/tutorials/gui/gui_navigation.rst:28
 msgid ""
@@ -65684,9 +65651,8 @@ msgstr ""
 "tree/master/gui/control_gallery>`__."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:4
-#, fuzzy
 msgid "Introduction to GUI skinning"
-msgstr "Úvod do uzlů CSG"
+msgstr "Úvod do skinování grafického uživatelského rozhraní"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:6
 msgid ""
@@ -65748,9 +65714,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:48
-#, fuzzy
 msgid "Theme items"
-msgstr "Téma"
+msgstr "Položky motivu"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:50
 msgid ""
@@ -65770,9 +65735,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:59
-#, fuzzy
 msgid "**Constant**"
-msgstr "Konstanty"
+msgstr "**Konstanty**"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:61
 msgid ""
@@ -65783,9 +65747,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:65
-#, fuzzy
 msgid "**Font**"
-msgstr "**Mlha:**"
+msgstr "**Font**"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:67
 msgid ""
@@ -65796,9 +65759,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:72
-#, fuzzy
 msgid "**Icon**"
-msgstr "**Verze**"
+msgstr "**Ikona**"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:74
 msgid ""
@@ -65807,9 +65769,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:77
-#, fuzzy
 msgid "**StyleBox**"
-msgstr "**Styl**"
+msgstr "**StyleBox**"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:79
 msgid ""
@@ -65820,9 +65781,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:85
-#, fuzzy
 msgid "Theme types"
-msgstr "Pojmenované typy"
+msgstr "Typy témat"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:87
 msgid ""
@@ -65902,9 +65862,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:156
-#, fuzzy
 msgid "Customizing a project"
-msgstr "Vytvoření projektu"
+msgstr "Přizpůsobení projektu"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:158
 msgid ""
@@ -65960,11 +65919,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:192
-#, fuzzy
 msgid ""
 "To sum it up, for an arbitrary control its theme item lookup would look "
 "something like this:"
-msgstr "Počítadlo smaragdů by mělo vypadat nějak takto"
+msgstr ""
+"Pokud to shrneme, pro libovolný ovládací prvek by jeho vyhledávání položek "
+"tématu vypadalo takto:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:195
 msgid "Check for local overrides of the same data type and name."
@@ -66035,9 +65995,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:4
-#, fuzzy
 msgid "Using the theme editor"
-msgstr "Použití webového editoru"
+msgstr "Použití editoru motivů"
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:6
 msgid ""
@@ -66092,9 +66051,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:44
-#, fuzzy
 msgid "Theme editor overview"
-msgstr "Editor"
+msgstr "Přehled editoru motivů"
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:49
 msgid ""
@@ -66194,9 +66152,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:131
-#, fuzzy
 msgid "Manage and import items"
-msgstr "Signály a vlastnosti"
+msgstr "Správa a import položek"
 
 #: ../../docs/tutorials/gui/gui_using_theme_editor.rst:133
 msgid ""
@@ -81812,9 +81769,8 @@ msgid "The default behavior on the left and the end result on the right."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:24
-#, fuzzy
 msgid "Setting up your plugin"
-msgstr "Nastavení automatického podepisování"
+msgstr "Nastavení vašeho zásuvného modulu"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:26
 msgid "Create a new empty plugin to get started."
@@ -81848,9 +81804,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:64
-#, fuzzy
 msgid "Interacting with the inspector"
-msgstr "Generování úložiště klíčů"
+msgstr "Interakce s inspektorem"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:66
 msgid ""
@@ -81890,9 +81845,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:115
-#, fuzzy
 msgid "Adding an interface to edit properties"
-msgstr "Přidávání souborů do projektu"
+msgstr "Přidání rozhraní pro úpravu vlastností"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:117
 msgid ""
@@ -84306,9 +84260,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:226
-#, fuzzy
 msgid "``finish_transaction``"
-msgstr "``připojení``"
+msgstr "``finish_transaction``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:228
 msgid ""
@@ -84343,9 +84296,8 @@ msgid "and the pending events interface:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
-#, fuzzy
 msgid "``authenticate``"
-msgstr "``x.attribute``"
+msgstr "``authenticate``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:272
 msgid "Authenticates a user in Game Center."
@@ -84461,9 +84413,8 @@ msgid "On close:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:529
-#, fuzzy
 msgid "Multi-platform games"
-msgstr "Rady pro multiplatforní projekty"
+msgstr "Multiplatformní hry"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""

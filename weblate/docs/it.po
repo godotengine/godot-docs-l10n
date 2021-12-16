@@ -86,8 +86,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-11-11 16:02+0000\n"
-"Last-Translator: Fabio Plos <altre0cose@gmail.com>\n"
+"PO-Revision-Date: 2021-11-29 20:38+0000\n"
+"Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -95,7 +95,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -137,7 +137,6 @@ msgstr ""
 "per vedere la lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -1573,7 +1572,6 @@ msgstr ""
 "di CPU e GPU."
 
 #: ../../docs/about/faq.rst:370
-#, fuzzy
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
@@ -1660,7 +1658,6 @@ msgstr ""
 "complessi del sistema UI di Godot."
 
 #: ../../docs/about/faq.rst:408
-#, fuzzy
 msgid ""
 "This custom UI toolkit :ref:`can't be used as a library "
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
@@ -1668,7 +1665,8 @@ msgid ""
 msgstr ""
 "Questo toolkit UI personalizzato :ref:`non può essere usato come libreria "
 "<doc_faq_use_godot_as_library>`, ma puoi ancora :ref:`usare Godot per creare "
-"applicazioni non di gioco usando l'editor <doc_faq_non_game_applications>`."
+"applicazioni che non siano giochi usando l'editor "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
 msgid "Why does Godot not use STL (Standard Template Library)?"
@@ -1950,12 +1948,11 @@ msgstr ""
 "l'editor. È quindi possibile collegare nuovamente le periferiche."
 
 #: ../../docs/about/troubleshooting.rst:47
-#, fuzzy
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
-"I tooltip dell'editor nell'Inspector e nei dock dei nodi lampeggiano quando "
-"vengono visualizzati."
+"I suggerimenti dell'editor nell'Inspector e nella finestra dei Nodi "
+"lampeggiano quando vengono visualizzati."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -2405,13 +2402,12 @@ msgstr ""
 "BMFont."
 
 #: ../../docs/about/list_of_features.rst:108
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont supporta sia font monocromatici che colorati. I formati "
-"supportati sono TTF e OTF."
+"DynamicFont supporta sia font monocromatici che colorati (ad esempio per le "
+"emoji). I formati supportati sono TTF, OTF e WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
@@ -2650,12 +2646,17 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Supporta il baking della sola luce indiretta o di entrambe le luci diretta e "
+"indiretta. La modalità bake può essere regolata indipendentemente per ogni "
+"luce, per permettere una organizzazione ibrida della stessa."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Supporta oggetti di illuminazione dinamica utilizzando un sistema automatico "
+"basato su ottalbero. Nessun posizionamento manuale di sonde è richiesto."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."
@@ -2688,13 +2689,12 @@ msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Riflessi nello spazio dello schermo."
 
 #: ../../docs/about/list_of_features.rst:210
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
 "Le tecniche di riflessione possono essere mischiate per una migliore "
-"accuratezza."
+"accuratezza o scalabilità."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -2919,7 +2919,6 @@ msgstr ""
 "*3D:* Shader personalizzati per vertici, frammenti, illuminazione e cielo."
 
 #: ../../docs/about/list_of_features.rst:299
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -3475,7 +3474,6 @@ msgstr ""
 "Supporto per annunci pubblicitari che utilizzano moduli di terze parti."
 
 #: ../../docs/about/list_of_features.rst:485
-#, fuzzy
 msgid "Support for subview embedding on Android."
 msgstr "Supporto per l'incorporazione di sottoview su Android."
 
@@ -3683,9 +3681,8 @@ msgid "Support for Bézier curves in animation."
 msgstr "Supporto per le curve di Bézier nell'animazione."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Formati video"
+msgstr "Formati del file"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""
@@ -3836,7 +3833,6 @@ msgstr ""
 "<doc_ways_to_contribute>``."
 
 #: ../../docs/about/list_of_features.rst:602
-#, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ lists features that have been requested by the community and "
@@ -4473,12 +4469,17 @@ msgstr ""
 "stabile 3.x una volta che sarà rilasciato Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:83
+#, fuzzy
 msgid ""
 "In a given minor release series, only the latest patch release receives "
 "support. If you experience an issue using an older patch release, please "
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"In una data serie di rilasci minori, solo l'ultimo rilascio della patch "
+"riceve supporto. Se si verifica un problema utilizzando una vecchia release "
+"della patch, si prega di aggiornare all'ultima release della patch di quella "
+"serie e testare di nuovo prima di segnalare un problema su GitHub."
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
@@ -4505,14 +4506,12 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "| unstable | *Focus attuale dello sviluppo (instabile).*"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Godot 3.5"
-msgstr "Godot 3.4"
+msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Q1 2022"
-msgstr "Q4 2021"
+msgstr "Q1 2022"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -4527,9 +4526,8 @@ msgid "Godot 3.4"
 msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
-#, fuzzy
 msgid "November 2021"
-msgstr "Dicembre 2014"
+msgstr "Novembre 2021"
 
 #: ../../docs/about/release_policy.rst:96
 #: ../../docs/about/release_policy.rst:99
@@ -4573,9 +4571,8 @@ msgid "March 2019"
 msgstr "Marzo 2019"
 
 #: ../../docs/about/release_policy.rst:105
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| Non più supportato (ultimo aggiornamento: 3.0.6)."
+msgstr "|eol| Non più supportato (ultimo aggiornamento: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
@@ -4598,9 +4595,8 @@ msgid "July 2016"
 msgstr "Luglio 2016"
 
 #: ../../docs/about/release_policy.rst:109
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| Non più supportato (ultimo aggiornamento: 3.0.6)."
+msgstr "|eol| Non più supportato (ultimo aggiornamento: 2.1.6)."
 
 #: ../../docs/about/release_policy.rst:111
 msgid "Godot 2.0"
@@ -4921,7 +4917,6 @@ msgstr ""
 "(o :kbd:`Alt + 1` su macOS) per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`Ctrl + F2` (or :kbd:`Alt + 2` on macOS) to access "
@@ -7132,12 +7127,11 @@ msgstr ""
 "quando si emettono segnali, quindi spetta a te fornire i valori corretti."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
 msgstr ""
-"Per passare dei valori, aggiungeteli come argomenti successivi alla funzione "
+"Per passare dei valori, aggiungeteli come secondo argomento alla funzione "
 "``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:278
@@ -7192,9 +7186,10 @@ msgid ""
 "entirely, you should start here: :ref:`doc_scripting`. If you want to use C# "
 "in Godot, please also read :ref:`doc_c_sharp` before continuing."
 msgstr ""
-"Questo progetto è un'introduzione a Godot Engine. Si suppone che tu abbia "
-"già una minima esperienza di programmazione, altrimenti ti consigliamo di "
-"iniziare da qui: :ref:`doc_scripting`."
+"Questo progetto è un'introduzione al motore Godot. Presume che tu abbia già "
+"qualche esperienza di programmazione. Se sei completamente nuovo alla "
+"programmazione, dovresti iniziare qui: :ref:`doc_scripting`. Se vuoi usare "
+"C# in Godot, leggi anche :ref:`doc_c_sharp` prima di continuare."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:19
 msgid ""
@@ -14331,14 +14326,21 @@ msgid "Creating your own resources"
 msgstr "Creare le proprie risorse"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
+#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
 "serialized text or binary data (\\*.tres, \\*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Come ogni Oggetto in Godot, gli utenti possono anche fare script di Risorse. "
+"Gli script Resource ereditano la capacità di tradurre liberamente tra le "
+"proprietà dell'oggetto e il testo serializzato o i dati binari (\\*.tres, "
+"\\*.res). Ereditano anche la gestione della memoria di conteggio dei "
+"riferimenti dal tipo Reference."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
+#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -14347,6 +14349,12 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Questo ha molti vantaggi rispetto a strutture di dati alternative, come "
+"JSON, CSV, o file TXT personalizzati. Gli utenti possono importare queste "
+"risorse solo come :ref:`Dictionary <class_Dictionary>` (JSON) o come :ref:"
+"`File <class_File>` da analizzare. Ciò che distingue le risorse è la loro "
+"eredità di :ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, "
+"e :ref:`Resource <class_Resource>>:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 #, fuzzy
@@ -14422,12 +14430,18 @@ msgstr ""
 "compressione."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
+#, fuzzy
 msgid ""
 "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As "
 "such, users often do not need to implement custom logic to visualize or edit "
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"L'Inspector di Godot Engine rende e modifica i file Resource out-of-the-box. "
+"Come tale, gli utenti spesso non hanno bisogno di implementare una logica "
+"personalizzata per visualizzare o modificare i loro dati. Per farlo, fai "
+"doppio clic sul file risorsa nel dock FileSystem o clicca sull'icona della "
+"cartella nell'Inspector e apri il file nella finestra di dialogo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 #, fuzzy
@@ -14455,14 +14469,21 @@ msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Imposta la proprietà ``script`` nell'Ispettore come tuo script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:188
+#, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"L'Inspector ora mostrerà le proprietà personalizzate del vostro script "
+"Resource. Se si modificano quei valori e si salva la risorsa, l'Inspector "
+"serializza anche le proprietà personalizzate! Per salvare una risorsa "
+"dall'Inspector, clicca sul menu strumenti dell'Inspector (in alto a destra), "
+"e seleziona \"Save\" o \"Save As...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:193
+#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -14470,12 +14491,18 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
+"Se il linguaggio dello script supporta :ref:`classi di script "
+"<doc_scripting_continued_class_name>`, allora semplifica il processo. "
+"Definendo un nome per il tuo script da solo, lo aggiungerai al dialogo di "
+"creazione dell'Inspector. Questo aggiungerà automaticamente il tuo script "
+"all'oggetto Resource creato."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
 msgstr "Vediamo alcuni esempi."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:277
+#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -14483,13 +14510,24 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"Gli script delle risorse sono simili agli ScriptableObjects di Unity. "
+"L'Inspector fornisce un supporto integrato per le risorse personalizzate. "
+"Tuttavia, se lo si desidera, gli utenti possono anche progettare i propri "
+"script di strumenti basati su Control e combinarli con un :ref:`EditorPlugin "
+"<class_EditorPlugin>` per creare visualizzazioni ed editor personalizzati "
+"per i loro dati."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:283
+#, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"Le DataTables e CurveTables di Unreal Engine 4 sono anche facili da ricreare "
+"con gli script Resource. Le DataTables sono una stringa mappata a una "
+"struttura personalizzata, simile a un Dictionary che mappano una stringa a "
+"uno script Resource secondario personalizzato."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:319
 #, fuzzy
@@ -14529,6 +14567,7 @@ msgstr ""
 "`Curve2D <class_Curve2D>>."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:331
+#, fuzzy
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -14537,13 +14576,24 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"Attenzione che i file di risorse (\\*.tres/\\*.res) memorizzano il percorso "
+"dello script che usano nel file. Quando vengono caricati, recuperano e "
+"caricano questo script come estensione del loro tipo. Questo significa che "
+"cercare di assegnare una sottoclasse, cioè una classe interna di uno script "
+"(come usare la parola chiave ``class`` in GDScript) non funzionerà. Godot "
+"non serializzerà correttamente le proprietà personalizzate sulla sottoclasse "
+"dello script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:337
+#, fuzzy
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"Nell'esempio qui sotto, Godot caricherebbe lo script ``Node``, vedrebbe che "
+"non estende ``Resource``, e poi determinerebbe che lo script non è riuscito "
+"a caricare l'oggetto Resource poiché i tipi sono incompatibili."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 #, fuzzy
@@ -14551,12 +14601,17 @@ msgid "File system"
 msgstr "File system"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
+#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
+"Un file system gestisce come le risorse sono memorizzate e come vi si "
+"accede. Un file system ben progettato permette anche a più sviluppatori di "
+"modificare gli stessi file sorgente e le risorse mentre si collabora. Godot "
+"memorizza tutte le risorse come file nel suo file system."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -14574,11 +14629,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
+#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
+"Il file system di Godot evita di usare file di metadati. I gestori di "
+"risorse e VCS esistenti sono migliori di qualsiasi cosa possiamo "
+"implementare, quindi Godot fa del suo meglio per giocare con SVN, Git, "
+"Mercurial, Perforce, ecc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
 #, fuzzy
@@ -14590,18 +14650,27 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
+#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Il file ``project.godot`` è il file di descrizione del progetto, e si trova "
+"sempre alla radice del progetto. Infatti, la sua posizione definisce dove si "
+"trova la radice. Questo è il primo file che Godot cerca quando apre un "
+"progetto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
+#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
+"Questo file contiene la configurazione del progetto in testo semplice, "
+"usando il formato win.ini. Anche un ``progetto.godot`` vuoto può funzionare "
+"come definizione di base di un progetto vuoto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 #, fuzzy
@@ -14609,12 +14678,17 @@ msgid "Path delimiter"
 msgstr "Delimitatore di percorso"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
 "``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
+"Godot supporta solo ``/`` come delimitatore di percorso. Questo è fatto per "
+"ragioni di portabilità. Tutti i sistemi operativi lo supportano, anche "
+"Windows, quindi un percorso come ``C:\\project\\project.godot`` deve essere "
+"digitato come ``C:/project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 #: ../../docs/tutorials/io/data_paths.rst:16
@@ -28387,7 +28461,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:170
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:172
 msgid ""
@@ -30228,8 +30302,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
+#, fuzzy
 msgid "Shape Key"
-msgstr ""
+msgstr "Chiave di forma"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -30254,8 +30329,9 @@ msgid "Skeleton"
 msgstr "Scheletro"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
+#, fuzzy
 msgid "Rest Bone"
-msgstr ""
+msgstr "Osso di riposo"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
@@ -30279,8 +30355,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
+#, fuzzy
 msgid "Bone Weights"
-msgstr ""
+msgstr "Pesi ossei"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:24
 msgid ""
@@ -30291,8 +30368,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:30
+#, fuzzy
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "Osso non deformato"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:32
 msgid ""
@@ -30302,8 +30380,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:38
+#, fuzzy
 msgid "Bone Attachment"
-msgstr ""
+msgstr "Attacco dell'osso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:39
 msgid ""
@@ -30945,8 +31024,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
+#, fuzzy
 msgid "Feature tags"
-msgstr ""
+msgstr "Tag delle caratteristiche"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
 msgid ""
@@ -31001,8 +31081,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
+#, fuzzy
 msgid "**Feature tag**"
-msgstr ""
+msgstr "**Targhetta caratteristica**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "**Android**"
@@ -36306,8 +36387,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:65
+#, fuzzy
 msgid "Time parameters"
-msgstr ""
+msgstr "Parametri temporali"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
@@ -36428,8 +36510,9 @@ msgid "This can be used to turn Fract Delta on or off."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+#, fuzzy
 msgid "Drawing parameters"
-msgstr ""
+msgstr "Parametri di disegno"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 #, fuzzy
@@ -38549,8 +38632,9 @@ msgid "Instead, there is a better way to solve your rotation problems."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
+#, fuzzy
 msgid "Introducing transforms"
-msgstr ""
+msgstr "Introduzione alle trasformazioni"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:89
 msgid ""
@@ -38619,8 +38703,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
+#, fuzzy
 msgid "Manipulating transforms"
-msgstr ""
+msgstr "Manipolazione delle trasformazioni"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:145
 msgid ""
@@ -38725,8 +38810,9 @@ msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:305
+#, fuzzy
 msgid "Setting information"
-msgstr ""
+msgstr "Informazioni sull'impostazione"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
@@ -39980,8 +40066,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:45
+#, fuzzy
 msgid "Shadow mapping"
-msgstr ""
+msgstr "Mappatura delle ombre"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:47
 msgid ""
@@ -40299,8 +40386,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:224
+#, fuzzy
 msgid "Shadow atlas"
-msgstr ""
+msgstr "Atlante delle ombre"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
@@ -40380,8 +40468,9 @@ msgid "It affects the blockyness of the shadow outline:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:4
+#, fuzzy
 msgid "Reflection probes"
-msgstr ""
+msgstr "Reflection probes"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:9
 msgid ""
@@ -40975,8 +41064,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:144
+#, fuzzy
 msgid "Configure bounds"
-msgstr ""
+msgstr "Configurare i limiti"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:146
 msgid ""
@@ -41122,8 +41212,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:237
+#, fuzzy
 msgid "Configuring bake"
-msgstr ""
+msgstr "Configurare il bake"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:239
 msgid "Several more options are present for baking:"
@@ -50929,8 +51020,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:38
+#, fuzzy
 msgid "Rooms"
-msgstr ""
+msgstr "Camere"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:41
 #, fuzzy
@@ -51205,8 +51297,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:14
+#, fuzzy
 msgid "STATIC"
-msgstr ""
+msgstr "STATIC"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:16
 msgid ""
@@ -51217,8 +51310,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:19
+#, fuzzy
 msgid "DYNAMIC"
-msgstr ""
+msgstr "DYNAMIC"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:21
 msgid ""
@@ -51229,8 +51323,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:24
+#, fuzzy
 msgid "ROAMING"
-msgstr ""
+msgstr "ROAMING"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:26
 msgid ""
@@ -51241,8 +51336,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:29
+#, fuzzy
 msgid "GLOBAL"
-msgstr ""
+msgstr "GLOBAL"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:31
 msgid ""
@@ -51252,8 +51348,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:34
+#, fuzzy
 msgid "IGNORE"
-msgstr ""
+msgstr "IGNORE"
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:36
 msgid ""
@@ -51932,8 +52029,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:52
+#, fuzzy
 msgid "Wildcard"
-msgstr ""
+msgstr "Wildcard"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:54
 msgid ""
@@ -66558,8 +66656,9 @@ msgid "Godot provides several useful tools to do this easily."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
+#, fuzzy
 msgid "Base size"
-msgstr ""
+msgstr "Dimensione della base"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:54
 msgid ""
@@ -66642,8 +66741,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:112
+#, fuzzy
 msgid "Stretch Mode"
-msgstr ""
+msgstr "Modalità Stretch"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:114
 msgid ""
@@ -66705,8 +66805,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:166
+#, fuzzy
 msgid "Stretch Aspect"
-msgstr ""
+msgstr "Aspetto stretch"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
 msgid ""
@@ -66802,8 +66903,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:243
+#, fuzzy
 msgid "Stretch Shrink"
-msgstr ""
+msgstr "Restringimento elastico"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:245
 msgid ""
@@ -83863,8 +83965,9 @@ msgid "The response events will be dictionaries with the following fields:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
+#, fuzzy
 msgid "``set_auto_finish_transaction``"
-msgstr ""
+msgstr "``set_auto_finish_transaction``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:212
 msgid ""
@@ -94188,8 +94291,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:34
+#, fuzzy
 msgid "Environment variables"
-msgstr ""
+msgstr "Variabili d'ambiente"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
@@ -94853,8 +94957,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:146
+#, fuzzy
 msgid "Stripping binaries"
-msgstr ""
+msgstr "Rimozione dei file binari"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:148
 msgid ""
@@ -97848,8 +97953,9 @@ msgstr ""
 "blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
+#, fuzzy
 msgid "Bind methods"
-msgstr ""
+msgstr "Metodi di associazione"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:381
 msgid ""
@@ -99468,8 +99574,9 @@ msgid "Vertex positions array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:346
+#, fuzzy
 msgid "Tangents array"
-msgstr ""
+msgstr "Matrice tangenti"
 
 #: ../../docs/development/file_formats/tscn.rst:347
 msgid "Vertex colors array"

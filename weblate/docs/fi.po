@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Aku <akulaku.ap@gmail.com>, 2021.
 # DarkerBit <mail.darkerbit@gmail.com>, 2018.
 # Eero Mutka <eero.mutka@gmail.com>, 2019.
 # ekeimaja <ekeimaja@gmail.com>, 2018.
@@ -27,8 +28,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-10-21 10:31+0000\n"
-"Last-Translator: Nekromanser <ari.taitto@protonmail.com>\n"
+"PO-Revision-Date: 2021-12-15 17:40+0000\n"
+"Last-Translator: Severi Vidnäs <severi.vidnas@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -36,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -65,9 +66,8 @@ msgid "Class reference"
 msgstr "Luokka viitteet"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Godot Dokumentaatio – *3.3* haara"
+msgstr "Godot Dokumentaatio – *3.4* haara"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -79,7 +79,6 @@ msgstr ""
 "listan."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -87,10 +86,10 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Tämä on kehitys vakaan 3.3 haaran dokumentaatio. Etsitkö nykyisen "
+"Tämä on kehitys vakaan 3.4 haaran dokumentaatio. Etsitkö nykyisen "
 "**kehitys** haaran dokumentaatiota? `Katso täältä <http://docs.godotengine."
 "org/en/latest>`_. Voit myös selata edellisen vakaan haaran dokumentaatiota:"
-"`3.2 <https://docs.godotengine.org/en/3.2>`_ haara."
+"`3.3 <https://docs.godotengine.org/en/3.3>`_ haara."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -568,12 +567,11 @@ msgid "In short:"
 msgstr "Lyhyesti:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Olet vapaa lataamaan ja käyttämään Godotia mihin tahansa tarkoitukseen; "
+"Voit ladata ja käyttää Godotia vapaasti mihin tahansa tarkoitukseen; "
 "henkilökohtaiseen, yleishyödylliseen, kaupalliseen tai muuhun."
 
 #: ../../docs/about/faq.rst:17
@@ -812,7 +810,6 @@ msgstr ""
 "<doc_gdscript>`_."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -822,7 +819,7 @@ msgstr ""
 "On useita syitä käyttää GDScriptiä – varsinkin, jos olet kehittämässä "
 "prototyyppiä, projektisi alfa/beta-vaiheessa, tai et ole kehittämässä "
 "seuraavaa AAA-peliä – mutta kaikkein keskeisin syy ylipäätään on "
-"**monimutkaisuuden väheneminen.**"
+"**monimutkaisuuden väheneminen**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1095,11 +1092,13 @@ msgid ""
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godotista on jätetty tarkoituksella pois ominaisuudet, joita voidaan "
+"toteuttaa lisäosilla, ellei niitä tarvita hyvin usein. Esimerkkinä "
+"edistyneemmät tekoälyominaisuudet."
 
 #: ../../docs/about/faq.rst:211
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "On kaksi tapaa tehdä tämä:"
+msgstr "Tähän on useita syitä:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1111,6 +1110,13 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Koodin ylläpitäminen ja virheiden mahdollisuus.** Joka kerta kun "
+"hyväksymme uutta koodia Godotiin, kehittäjät ottavat vastuun myös sen "
+"ylläpitämisestä. Jotkin osallistujat eivät jää projektiin sen jälkeen, kun "
+"heidän koodinsa on lisätty, joka voi tehdä vaikeaksi tuon koodin "
+"ylläpitämisen. Seurauksena voi olla heitteille jätettyjä ominaisuuksia ja "
+"ongelmia, joita ei koskaan korjata. Sen lisäksi rajapinta kasvaa koko ajan, "
+"ja siihen liittyvät tarkistukset lisääntyvät vastaavasti."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -1119,6 +1125,9 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Osallistumisen helppous.** Koska koodi on pieni ja siisti, sen kääntäminen "
+"on helppoa ja nopeaa. Tämän vuoksi uusien osallistujien on helppo alkaa "
+"kehittämään Godotia ilman kallista laitteistoa."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -1127,6 +1136,9 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**Editorin tiedostokoon pitäminen pienenä.** Kaikilla ei ole nopeaa Internet-"
+"yhteyttä. Godotin lataaminen ja käyttäminen alle viidessä minuutissa tekee "
+"siitä helpommin saatavamman kehittäjille ympäri maailmaa."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1137,6 +1149,12 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**Vientimallien pitäminen pienenä.** Tämä vaikuttaa suoraan Godotilla "
+"tehtyjen sovellusten kokoon. Mobiililaitteilla ja selainalustoilla "
+"tiedostojen pitäminen pienenä on ensisijaisen tärkeää, että ne latautuu ja "
+"asentuu myös heikkotehoisemmilla laitteilla. On myös monia maita, joissa "
+"nopeat Internet-yhteydet eivät ole kaikkien saatavilla, tai niissä on "
+"tiukkoja datan käyttörajoituksia."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1149,6 +1167,13 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Ylläolevien syiden vuoksi meidän täytyy olla valikoivia sen suhteen, mitä "
+"sisällytetään Godotin ydintoimintoihin. Sen vuoksi aiomme myös siirtää osan "
+"ydinominaisuuksista virallisesti tuetuiksi lisäosiksi Godotin myöhemmissä "
+"versioissa. Tästä on erityisesti hyötyä käännettyjen sovellusten koossa, "
+"koska vain projektissa käytetyt ominaisuudet sisällytetään. (Tällä hetkellä "
+"sama voidaan saavuttaa :ref:`mukautetuilla vientimalleilla, joissa "
+"käyttämättömät ominaisuudet ovat poistettu.<doc_optimizing_for_size>`)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1302,11 +1327,12 @@ msgid "When is the next release of Godot out?"
 msgstr "Milloin Godotin seuraava versio julkaistaan?"
 
 #: ../../docs/about/faq.rst:309
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr "Katso :ref:`doc_instancing` oppiaksesi enemmän ilmentymistä."
+msgstr ""
+"Kun se on valmis! Katso lisätietoja: :ref:"
+"`doc_release_policy_when_is_next_release_out`."
 
 #: ../../docs/about/faq.rst:313
 msgid "I would like to contribute! How can I get started?"
@@ -1439,9 +1465,8 @@ msgstr ""
 "esimerkkiprojektien toimittamisesta (jos mahdollista)."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Onko mahdollista käyttää Godotia ohjelmistokirjastona?"
+msgstr "Onko Godotia mahdollista käyttää hyötysovellusten tekoon?"
 
 #: ../../docs/about/faq.rst:363
 msgid ""
@@ -1449,6 +1474,9 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"Kyllä! Godotissa on sisäänrakennettuna laaja käyttöliittymäjärjestelmä, ja "
+"sen pieni tiedostokoko tekee siitä varteenotettavan vaihtoehdon muille "
+"ympäristöille, kuten Electron tai Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -1456,12 +1484,17 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Kun teet muuta kuin peliä, käytä projektin asetusta :ref:`low-processor mode "
+"<class_ProjectSettings_property_application/run/low_processor_mode>`, jotta "
+"sovellus käyttäisi säästeliäästi prosessoria ja näytönohjainta."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Emme kuitenkaan suosittele Godotia mobiilisovellusten tekoon, koska kyseistä "
+"virransäästöominaisuutta ei vielä tueta mobiilijärjestelmillä."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1469,10 +1502,14 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Katso esimerkiksi avoimen lähdekoodin Godot-sovellukset `Material Maker "
+"<https://github.com/RodZill4/material-maker>`__ ja `Pixelorama <https://"
+"github.com/Orama-Interactive/Pixelorama>`__."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
-msgstr "Onko mahdollista käyttää Godotia ohjelmistokirjastona?"
+msgstr ""
+"Onko mahdollista käyttää Godotin pelimoottoria itsenäisesti luokkakirjastona?"
 
 #: ../../docs/about/faq.rst:382
 msgid ""
@@ -1497,7 +1534,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Mitä käyttöliittymä työkalupakkia Godot käyttää?"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1526,9 +1563,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:413
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Miksi Godot ei käytä STL:ää (Standard Template Library)"
+msgstr "Miksi Godot ei käytä STL:ää (Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:415
 msgid ""
@@ -1644,6 +1680,8 @@ msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Suurin osa peleistä ei tarvitse tätä ja Godot tarjoaa käteviä apukeinoja "
+"tehtävän suorittamiseksi kun tilanne niin vaatii."
 
 #: ../../docs/about/faq.rst:460
 msgid ""
@@ -1679,13 +1717,15 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:196
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Ongelmien ratkonta"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Tämä sivu listaa yleisiä ongelmia ja mahdollisia ratkaisuja niihin Godotia "
+"käyttäessä."
 
 #: ../../docs/about/troubleshooting.rst:10
 msgid ""
@@ -1712,6 +1752,9 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Sinun tulisi käyttää Intelin tarjoamia näytönohjainajureita työpöytäsi tai "
+"kannettavan tietokoneesi valmistajan tarjoamien ajureiden sijaan, koska ne "
+"ovat usein tuoreammat."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -1731,6 +1774,8 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"Tällä hetkellä ainoa kiertotie on vaihtaa GLES2 renderöijään. Voit vaihtaa "
+"renderöijää editorin yläoikeasta kulmasta tai projektin asetuksista."
 
 #: ../../docs/about/troubleshooting.rst:33
 msgid ""
@@ -1740,7 +1785,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "Editorin tai projektin käynnistyminen kestää pitkään."
 
 #: ../../docs/about/troubleshooting.rst:39
 msgid ""
@@ -1828,7 +1873,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "Projektin ikkuna ei näy keskitettynä kun käynnistän projektin."
 
 #: ../../docs/about/troubleshooting.rst:89
 msgid ""
@@ -1865,13 +1910,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
 msgstr "Ominaisuudet"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Tämän sivun tarkoitus on luetella kaikki ne ominaisuudet joita Godot tällä "
+"hetkellä tukee."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1891,11 +1937,11 @@ msgstr "Alustat"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "** Voi ajaa sekä editoria että vietyjä projekteja:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 ja tuoreemmat (64- ja 32-bittiset)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
@@ -1929,7 +1975,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:35
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 ja uudemmat."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ":ref:`Consoles <doc_consoles>`."
@@ -1985,7 +2031,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "Suorituskyvyn seurantatyökalut."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid "Live script reloading."
@@ -2024,9 +2070,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:70
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Liitännäiset"
+msgstr "**Liitännäiset:**"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -2048,7 +2093,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "2D graphics"
-msgstr ""
+msgstr "2d grafiikka"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:147
@@ -2073,7 +2118,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:88
 #: ../../docs/about/list_of_features.rst:156
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Suositeltu mobiili- ja web alustoille."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "Sprite, polygon and line rendering."
@@ -2102,7 +2147,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Kovat tai pehmeät varjot."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
@@ -2140,9 +2185,8 @@ msgid "CPU-based particles."
 msgstr "CPU-pohjaiset partikkelit."
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid "2D tools"
-msgstr "Työkalut"
+msgstr "2D työkalut"
 
 #: ../../docs/about/list_of_features.rst:119
 msgid "2D camera with built-in smoothing and drag margins."
@@ -2223,7 +2267,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "3D graphics"
-msgstr ""
+msgstr "3D grafiikka"
 
 #: ../../docs/about/list_of_features.rst:152
 msgid "HDR rendering with sRGB."
@@ -2241,7 +2285,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Kamera:**"
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -2289,7 +2333,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Reaaliaikainen valaistus:**"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "Directional lights (sun/moon). Up to 4 per scene."
@@ -2353,9 +2397,8 @@ msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:204
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "**Kuvaus**"
+msgstr "**Heijastukset:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -2379,7 +2422,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Taivas:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "Panorama sky (using an HDRI)."
@@ -2391,7 +2434,7 @@ msgstr "Proseduraalinen taivas."
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Sumu:**"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Depth fog with an adjustable attenuation curve."
@@ -2412,18 +2455,16 @@ msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:225
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Partikkelit"
+msgstr "**Partikkelit:**"
 
 #: ../../docs/about/list_of_features.rst:227
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "Prosessointi"
+msgstr "**Jälkikäsittely:**"
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -6888,7 +6929,7 @@ msgid ""
 "the `language` drop down menu before hitting create."
 msgstr ""
 "Jos olet luomassa C#-skriptiä tai muun kielistä skriptiä, valitse kieli "
-"`kieli` pudotusvalikosta ennen kuin huitaiset luontinappia."
+"`kieli`-pudotusvalikosta ennen kuin huitaiset luontinappia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:170
 msgid "Start by declaring the member variables this object will need:"
@@ -12817,9 +12858,8 @@ msgid "Editor manual"
 msgstr ""
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
-#, fuzzy
 msgid "Using the Web editor"
-msgstr "Sisäänrakennettu teemaeditori."
+msgstr "Sisäänrakennettu teemaeditori"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""

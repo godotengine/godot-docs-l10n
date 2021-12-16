@@ -22,7 +22,7 @@
 # Moustafa Sedick <moustafa.sedick@gmail.com>, 2020.
 # Moustapha Oumar <mito0o.852@gmail.com>, 2020.
 # Musab Alasaifer <mousablasefer@gmail.com>, 2020.
-# Nabeel20 <nabeelandnizam@gmail.com>, 2020.
+# Nabeel20 <nabeelandnizam@gmail.com>, 2020-2021.
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018-2020.
 # Omar Salam <omar-ma-salam@outlook.com>, 2019.
 # osama-su <osamaahmed.sus@gmail.com>, 2020.
@@ -40,8 +40,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-09-13 10:47+0000\n"
-"Last-Translator: Hareth Mohammed <harethpy@gmail.com>\n"
+"PO-Revision-Date: 2021-12-02 20:24+0000\n"
+"Last-Translator: Nabeel20 <nabeelandnizam@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -50,7 +50,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -1111,6 +1111,9 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**إبقاء حجم المحرر صغيراً** لا يملك الجميع اتصالاً سريعاً بالإنترنت، لذا وللحرص "
+"على إمكانية الجميع تحميل محرر غدوت، وكذلك استخراجه وتشغيله بأقل من خمس "
+"دقائق، يجعل من غدوت متاحاً لجميع المطورين وبجميع البلدان."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1121,6 +1124,11 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**إبقاء حجم الملفات صغيراً بالنسبة لقوالب التصدير** الأمر الذي يؤثر مباشرة "
+"بحجم المشاريع المصدّرة باستعمال غدوت. بالنسبة للموبايل ومنصات الويب إن إبقاء "
+"حجم الملفات منخفضاً أمر أساسي لضمان التحميل السريع والتشغيل على الأجهزة "
+"الضعيفة. مرة أخرى هنالك العديد من البلدان لا يتوفر فيها وصول للانترنت "
+"السريع، كما يتم تقييد تراسل البيانات في تلك البلدان أيضاً."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1133,6 +1141,12 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"تبعاً لجميع الأسباب أعلاه، ينبغي أن نكون حريضين عند قبول إضافة وظيفية جديدة "
+"على متن المحرك. لأجل ذلك نهدف إلى تحويل بعض الوظائف الجوهرية للمحرك إلى "
+"إضافات مدعومة رسمية في الإصدارات المستقبلية من غدوت. بالنسبة لحجم الملفات، "
+"فإن ذلك يمنحك القدرة لأن تدفع بمقدار ما تستعمل في مشروعك. (بالوقت الحالي "
+"يمكنك ref:`تركيب قوالب تصدير مخصصة بإزالة المزايا غير المرغوبة "
+"<doc_optimizing_for_size>` لتحسين حجم التصدير الخاص بمشروعك.)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1282,13 +1296,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:307
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "متى تصدر النسخة الجديدة من غدوت؟"
 
 #: ../../docs/about/faq.rst:309
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"عندما تكون جاهزة! اطلع على :ref:"
+"`doc_release_policy_when_is_next_release_out` for more information. للمزيد "
+"من المعلومات."
 
 #: ../../docs/about/faq.rst:313
 msgid "I would like to contribute! How can I get started?"
@@ -1424,6 +1441,8 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"نعم! لدى غدوت طيف واسع من نظم واجهات المستخدم بصورة مبنية ضمن المحرر، وتبعاً "
+"لحجم التصدير الصغير فإنه قد يكون بديلاً معتبراً لأطر العمل ك Electron أو Qt."
 
 #: ../../docs/about/faq.rst:366
 msgid ""
@@ -1431,12 +1450,18 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"عند إنشائك تطبيق بعيد عن الألعاب، تأكد من تفعيلك خيار :ref:`وضع الحوسبة "
+"المنخفض <class_ProjectSettings_property_application/run/low_processor_mode>` "
+"بإعدادات المشروع لإنقاص استعمال موارد وحدة المعالجة المركزية CPU وكذلك بطاقة "
+"الرسوميات GPU."
 
 #: ../../docs/about/faq.rst:370
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"ومع ذلك، لا ننصح بإنشاء تطبيقات *موبايل* باستعمال غدوت بما نمط الحوسبة "
+"المنخفضة غير مدعوم على منصات الموبايل حتى الآن."
 
 #: ../../docs/about/faq.rst:373
 msgid ""
@@ -1444,6 +1469,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"اطلع على `Material Maker <https://github.com/RodZill4/material-maker>`__ "
+"وكذلك `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ "
+"كنماذج لمشاريع مفتوحة المصدر تم إنشاؤها باستعمال غدوت."
 
 #: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
@@ -1456,6 +1484,10 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"غدوت طوّر ليستعمل باستعمال المحرر، حيث ننصحك بتجربته فهو غالباً ما سيوفر عليك "
+"كثيراً من الوقت على المدى الطويل. لا يوجد خطط لتحويل غدوت إلى مكتبة، الأمر "
+"الذي سيجعل من بقية المحرك أكثر تعقيداً وصعباً للاستعمال بالنسبة للمستخدمين "
+"العاديين."
 
 #: ../../docs/about/faq.rst:387
 msgid ""
@@ -1464,10 +1496,14 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"إن رغبت باستعمال مكتبة إخراج بصري rendering library، فإنه من الأفضل التوجه "
+"لاستعمال محركات إخراج بصري موجودة أساساً.ضع بالحسبان أن محركات الإخراج البصري "
+"عادة ما تمتلك مجتمعاً أصغر مقارنة مع غدوت، مما يعني صعوبة أكبر بإيجاد حلول "
+"لأسئلتك."
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "أي من حزم واجهات المستخدم يستعملها غدوت؟"
 
 #: ../../docs/about/faq.rst:395
 msgid ""
@@ -1478,6 +1514,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"لا يستعمل غدوت حزم واجهات المستخدم الاعتيادية GUI :abbr:`GUI (Graphical User "
+"Interface واجهة المستخدم البصرية)` مثل GTK، أو Qt أو wxWidgets. بدلاً من ذلك "
+"فإن غدوت يستعمل حزمته الخاصة لتطوير واجهة المستعمل، فيتم التصدير البصري "
+"بستعمال OpenGl ES أو Vulkan. تجسد حزمة تطوير الواجهة هذه على شكل مجموعة من "
+"عُقد التحكم Control nodes، وهي التي تم استعمالها لإخراج المحرر (الذي كتب بلغة "
+"البرمجة ++C). هذه العقد يمكن توظيفها باستعمال أي من اللغات البرمجية النصية "
+"المدعومة من قبل غدوت."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1487,6 +1530,11 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"تسمح حزمة التطوير المخصصة هذه بالاستفادة من تسارع الأجهزة بالإضافة إلى "
+"المحافظة على مظهر موحد على جميع المنصات، وعلاوة على لك فإنها غير مضطرة "
+"للتعامل معتحفظات تراخيص LGPL المرفقة مع GTK أو Qt. أخيراً، يعني هذا الأمر أنه "
+"غدوت \"تأكل مما تزرع\" بما أن المحرر بحد ذاته موظف هذه الحزمة في تطوير واحد "
+"من أكثر الواجهات تعقيداً."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1494,6 +1542,9 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"حزمة تطوير واجهة المستخدم المخصصة :ref:`لا يمكن استعمالها كمكتبة "
+"<doc_faq_use_godot_as_library>`، ولكن ما زال بإمكانك :ref:`استعمال غدوت لصنع "
+"تطبيقات غير ألعاب مستعملاً المحرر نفسه <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:413
 #, fuzzy
@@ -1528,13 +1579,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:421
-#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
-"الحاويات الخاصة بنا تملك متابعة لاستخدام الذاكرة بصورة أصيلة، الأمر الذي "
-"يساعد في تتبع لاستخدام الذاكرة بصورة أفضل."
+"الحاويات الخاصة بنا تملك متعقب لاستخدام الذاكرة مدمجًا فيها، الأمر الذي يساعد "
+"في تتبع استخدام الذاكرة بصورة أفضل."
 
 #: ../../docs/about/faq.rst:422
 msgid ""
@@ -1650,7 +1700,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:196
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "استكشاف الأخطاء وإصلاحها"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
@@ -1683,6 +1733,7 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"تعاريف الشركة المصنّعة قديمة لذا استخدم التعاريف التي توفرها إنتل فهي أحدث."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -2024,7 +2075,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "2D graphics"
-msgstr ""
+msgstr "الرسوميات ثنائية الأبعاد"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:147
@@ -2074,7 +2125,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "إضاءة ثنائية البعد مع خرائط عادية."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Hard or soft shadows."
@@ -2122,8 +2173,9 @@ msgid "2D tools"
 msgstr "ادوات"
 
 #: ../../docs/about/list_of_features.rst:119
+#, fuzzy
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "كاميرا ثنائية الأبعاد مع دعم للسلاسة وهوامش السحب."
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "Path2D node to represent a path in 2D space."
@@ -2140,7 +2192,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:125
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "صف class مساعد للهندسة ثنائية الأبعاد."
 
 #: ../../docs/about/list_of_features.rst:126
 msgid "Line2D node to draw textured 2D lines."
@@ -2199,7 +2251,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "3D graphics"
-msgstr ""
+msgstr "رسوميات ثلاثية الأبعاد"
 
 #: ../../docs/about/list_of_features.rst:152
 msgid "HDR rendering with sRGB."
@@ -2509,15 +2561,17 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "عقدة المسار ثلاثي الأبعاد Path3D تمثل المسار في الحيز ثلاثي الأبعاد."
 
 #: ../../docs/about/list_of_features.rst:270
 msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr ""
+"استعمل عقدة PathFollow3D (تتبع المسار ثلاثي الأبعاد) لجعل العقد تتبع مساراً "
+"ثلاثي الأبعاد Path3D."
 
 #: ../../docs/about/list_of_features.rst:272
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "صف class مساعد للهندسة ثلاثية الأبعاد."
 
 #: ../../docs/about/list_of_features.rst:275
 #, fuzzy
@@ -2526,11 +2580,11 @@ msgstr "الفيزياء"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "أجسام المركبات (صمم لفيزياء ألعاب الأركيد arcade، وليس للمحاكاة)."
 
 #: ../../docs/about/list_of_features.rst:284
 msgid "Soft bodies."
-msgstr ""
+msgstr "الأجسام الرخوة."
 
 #: ../../docs/about/list_of_features.rst:285
 msgid "Ragdolls."
@@ -2538,11 +2592,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
+msgstr "الأشكال المدمجة: شبيه المكعب cuboid، الكرة، الكبسولة، الأسطوانة."
 
 #: ../../docs/about/list_of_features.rst:291
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "شكّل أشكال الاصطدام المثلثية من أي مجسم mesh باستعمال المحرر."
 
 #: ../../docs/about/list_of_features.rst:292
 msgid ""
@@ -2552,7 +2606,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:295
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "الظلال Shaders"
 
 #: ../../docs/about/list_of_features.rst:297
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -2567,6 +2621,8 @@ msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"المظلل ذو الأساس النصي مستعملاً ref:`لغة المظلل المستوحاة من GLSL "
+"<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:300
 #, fuzzy
@@ -2594,114 +2650,134 @@ msgstr "بشكل عام"
 #: ../../docs/about/list_of_features.rst:309
 msgid "Object-oriented design pattern with scripts extending nodes."
 msgstr ""
+"نمط التصميم ذو التوجه الشيئي object-oriented مع نصوص برمجية تستعير extending "
+"عقداً."
 
 #: ../../docs/about/list_of_features.rst:310
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "الإشارات والمجموعات للتواصل بين النصوص البرمجية."
 
 #: ../../docs/about/list_of_features.rst:311
+#, fuzzy
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
-msgstr ""
+msgstr "دعم لل :ref:`cross-language scripting <doc_cross_language_scripting>`."
 
 #: ../../docs/about/list_of_features.rst:312
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
 msgstr ""
+"العديد من أنماط البيانات الجبرية الخطية ثنائية وثلاثية الأبعاد كالأشعة "
+"vectors والتحولات transforms."
 
 #: ../../docs/about/list_of_features.rst:314
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:316
+#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
+":ref:`لغة مفسرة بمستوى عال <doc_gdscript>` مع :ref:`إدخال نمطي اختياري "
+"<doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:318
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "سياق مستوحى من لغة البرمجة بايثون Python."
 
 #: ../../docs/about/list_of_features.rst:319
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "يوجد دعم التلوين الجُملي على Github."
 
 #: ../../docs/about/list_of_features.rst:320
+#, fuzzy
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+":ref:`استعمل المجالات threads<doc_using_multiple_threads>` لإجراء نشاطات غير "
+"متواقتة أو للاستفادة من تعدد نوى المعالجات."
 
 #: ../../docs/about/list_of_features.rst:323
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:325
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
-msgstr ""
+msgstr "تم توضيبها كمكتبة منفصلة لإبقاء حجم الملفات وملفاتها صغيراً."
 
 #: ../../docs/about/list_of_features.rst:326
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "يستعمل Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:328
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "دعم كامل للغة البرمجة C# 7.0 بتركيب جملها وخصائصها."
 
 #: ../../docs/about/list_of_features.rst:330
 msgid "Supports all platforms."
-msgstr ""
+msgstr "دعم لجميع المنصات."
 
 #: ../../docs/about/list_of_features.rst:331
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
-msgstr ""
+msgstr "ينصح باستعمال محرر خارجي للاستفادة من وظائف IDE وفوائدها."
 
 #: ../../docs/about/list_of_features.rst:333
+#, fuzzy
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 msgstr ""
+":ref:`VisualScript البرمجية_البصرية: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:335
+#, fuzzy
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
-msgstr ""
+msgstr ":ref:`لغة برمجية نصية ذات أساس رسومي <doc_what_is_visual_script>`."
 
 #: ../../docs/about/list_of_features.rst:336
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"يعمل بالصورة المثلى عندما يستعمل لأغراض معينة (كمنطق مرحلة معينة) بدلاً من "
+"لغة برمجية لإنشاء مشاريع كاملة."
 
 #: ../../docs/about/list_of_features.rst:339
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"عندما تحتاجها، الربط بالمكتبات الأصيلة للحصول على أداء أفضل بالإضافة إلى "
+"إضافات الطرف الثالث."
 
 #: ../../docs/about/list_of_features.rst:343
+#, fuzzy
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"لكتابة منطق النص البرمحي، ينصح باستعمال GDScript أو C# إن كان أداؤها مناسباً."
 
 #: ../../docs/about/list_of_features.rst:346
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "ربط رسمي للغتي البرمجة C و ++C."
 
 #: ../../docs/about/list_of_features.rst:348
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "استعمل أي نظام بناء وأي من مزايا اللغة التي تفضلها."
 
 #: ../../docs/about/list_of_features.rst:350
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
-msgstr ""
+msgstr "ربط مدعوم للغات البرمجة D، Kotlin، Python، Nim، و Rust من قبل المجتمع."
 
 #: ../../docs/about/list_of_features.rst:353
 #: ../../docs/about/docs_changelog.rst:28
@@ -2720,7 +2796,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:360
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "تأثير دوبلر اخيتاري في السياق ثنائي وثلاثي الأبعاد."
 
 #: ../../docs/about/list_of_features.rst:362
 msgid ""
@@ -2800,7 +2876,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:390
 msgid "*3D scenes:*"
-msgstr ""
+msgstr "*مشاهد ثلاثية الأبعاد 3D scenes:*"
 
 #: ../../docs/about/list_of_features.rst:392
 msgid "glTF 2.0 *(recommended)*."
@@ -2893,7 +2969,7 @@ msgstr "تنقل"
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "خوارزمية A* في السياق ثنائي وثلاثي الأبعاد."
 
 #: ../../docs/about/list_of_features.rst:425
 #, fuzzy
@@ -3021,7 +3097,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:473
 msgid "Ability to keep the window always on top."
-msgstr ""
+msgstr "القدرة على إبقاء النافذة دائما بالمقدمة."
 
 #: ../../docs/about/list_of_features.rst:474
 msgid "Transparent window with per-pixel transparency."
@@ -3980,7 +4056,7 @@ msgstr "في غودوت ذو الإصدار 3.1:"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "~2022 (see below)"
-msgstr ""
+msgstr "~2022 (انظر أدناه)"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "|unstable| *Current focus of development (unstable).*"
@@ -6048,7 +6124,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
 msgid "Notifications"
-msgstr ""
+msgstr "الإشعارات"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
@@ -7794,7 +7870,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 msgid "ScoreLabel"
-msgstr ""
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"Top Wide\""
@@ -7828,7 +7904,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "StartButton"
-msgstr ""
+msgstr "StartButton زر_البدء"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "*Text* : ``Start``"
@@ -7991,7 +8067,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1256
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
-msgstr ""
+msgstr "الخلفية"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
 msgid ""
@@ -8085,7 +8161,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:273
 msgid "Exporting"
-msgstr ""
+msgstr "التصدير"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -8538,8 +8614,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
+#, fuzzy
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
 msgid ""
@@ -8563,7 +8640,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:73
 msgid ""
@@ -8598,7 +8675,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:81
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:93
 msgid ""
@@ -8619,7 +8696,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:86
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
 msgid ""
@@ -8661,8 +8738,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
+#, fuzzy
 msgid "Community-driven"
-msgstr ""
+msgstr "يحركها-المجتمع"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
 msgid ""
@@ -8702,7 +8780,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:90
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
 msgid ""
@@ -8799,7 +8877,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
-msgstr ""
+msgstr "مرساة"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
@@ -8816,7 +8894,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
-msgstr ""
+msgstr "الهامش"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
@@ -8873,7 +8951,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
@@ -8929,7 +9007,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 msgid ""
@@ -8956,8 +9034,9 @@ msgid "TextureButton and its 5 texture slots"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
+#, fuzzy
 msgid "TextureProgress"
-msgstr ""
+msgstr "رسم_الإنجاز TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""
@@ -9004,7 +9083,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
 msgid ""
@@ -9156,7 +9235,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "يتحاذى عناصر واجهة المستخدم الثلاثة في HBoxContainer بشكل أفقي"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
 msgid ""
@@ -10708,7 +10787,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "مدخل"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
@@ -11467,7 +11546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "الدروس التعليمية"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
@@ -11530,7 +11609,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
-msgstr ""
+msgstr "الرسوم المتحركة"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
@@ -11989,7 +12068,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "التطبيق"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -12015,7 +12094,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -12096,7 +12175,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "العيوب"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -12144,8 +12223,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
+#, fuzzy
 msgid "MainLoop"
-msgstr ""
+msgstr "الحلقة_الأساسية MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -12556,7 +12636,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:261
 #: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
-msgstr ""
+msgstr "و"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:281
 msgid ""
@@ -13443,7 +13523,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:256
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid "Debugging"
-msgstr ""
+msgstr "تنقيح برمجي"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:258
 msgid ""
@@ -14223,7 +14303,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
 msgid "2D / Canvas Item Editor"
-msgstr ""
+msgstr "ثنائي الأبعاد 2D/ محرر عنصر اللوحة Canvas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:94
 #: ../../docs/getting_started/editor/default_key_mapping.rst:337
@@ -14556,7 +14636,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:142
 msgid "3D / Spatial Editor"
-msgstr ""
+msgstr "3D/ المحرر الفراغي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:147
 msgid "Toggle Freelook"
@@ -16459,11 +16539,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
-msgstr ""
+msgstr "الاختلافات"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
@@ -16726,7 +16806,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:101
 msgid "Coins"
-msgstr ""
+msgstr "العملات"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "The player"
@@ -16916,7 +16996,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:194
 msgid "Design"
-msgstr ""
+msgstr "التصميم"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:196
 msgid ""
@@ -17068,7 +17148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "سجل"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -17096,7 +17176,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:115
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:117
 msgid ""
@@ -17107,7 +17187,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:122
 msgid "Identifiers"
-msgstr ""
+msgstr "المعرفات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:124
 msgid ""
@@ -17119,7 +17199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Keywords"
-msgstr ""
+msgstr "الكلمات المفتاحية"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
 msgid ""
@@ -17138,11 +17218,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Keyword"
-msgstr ""
+msgstr "الكلمة المفتاحية"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 msgid "if"
-msgstr ""
+msgstr "إذا"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
@@ -17152,16 +17232,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 msgid "See for_."
@@ -17170,7 +17250,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 msgid "See while_."
@@ -17179,7 +17259,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 msgid "See match_."
@@ -17187,7 +17267,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -17195,7 +17275,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid ""
@@ -17204,7 +17284,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid ""
@@ -17214,7 +17294,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "Returns a value from a function."
@@ -17222,7 +17302,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -17238,7 +17318,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
-msgstr ""
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "Defines what class to extend with the current class."
@@ -17247,7 +17327,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 #: ../../docs/tutorials/i18n/locales.rst:364
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 msgid ""
@@ -17273,7 +17353,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "tool"
-msgstr ""
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "Executes the script in the editor."
@@ -17281,7 +17361,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "Defines a signal."
@@ -17289,7 +17369,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "Defines a function."
@@ -17297,7 +17377,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "Defines a static function. Static member variables are not allowed."
@@ -17305,15 +17385,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
 msgid "Defines a constant."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
+#, fuzzy
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
 msgid "Defines an enum."
@@ -17321,7 +17402,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
 msgid "var"
-msgstr ""
+msgstr "var"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
 msgid "Defines a variable."
@@ -17329,7 +17410,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
 msgid "onready"
-msgstr ""
+msgstr "onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
 msgid ""
@@ -17339,7 +17420,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid "export"
-msgstr ""
+msgstr "export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid ""
@@ -17349,7 +17430,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
 msgid "setget"
-msgstr ""
+msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
 msgid "Defines setter and getter functions for a variable."
@@ -17357,7 +17438,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
 msgid "breakpoint"
-msgstr ""
+msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
 msgid "Editor helper for debugger breakpoints."
@@ -17459,8 +17540,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:225
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:297
+#, fuzzy
 msgid "Operators"
-msgstr ""
+msgstr "العاملون"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -17468,16 +17550,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "**Operator**"
-msgstr ""
+msgstr "**المشغل**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
-msgstr ""
+msgstr "**الوصف**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "Subscription (highest priority)"
@@ -17485,7 +17567,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "Attribute reference"
@@ -17501,7 +17583,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "Instance type checker"
@@ -17509,7 +17591,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "``~``"
-msgstr ""
+msgstr "``~``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "Bitwise NOT"
@@ -17517,15 +17599,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "Negative / Unary negation"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
+#, fuzzy
 msgid "``*`` ``/`` ``%``"
-msgstr ""
+msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "Multiplication / Division / Remainder"
@@ -17542,7 +17625,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "Addition / Concatenation of arrays"
@@ -17551,7 +17634,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 #, fuzzy
@@ -17560,15 +17643,16 @@ msgstr "المقدمة"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "Bit shifting"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
+#, fuzzy
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "Bitwise AND"
@@ -17576,7 +17660,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "Bitwise XOR"
@@ -17584,7 +17668,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "Bitwise OR"
@@ -17592,15 +17676,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr ""
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Comparisons"
-msgstr ""
+msgstr "المقارنات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "Content test"
@@ -17624,7 +17708,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "Boolean OR"
@@ -17632,7 +17716,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Ternary if/else"
@@ -17649,29 +17733,31 @@ msgstr "أختبار"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Assignment (lowest priority)"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:284
+#, fuzzy
 msgid "Literals"
-msgstr ""
+msgstr "الحرفي"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+#, fuzzy
 msgid "**Literal**"
-msgstr ""
+msgstr "**حرفي**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "**Type**"
-msgstr ""
+msgstr "**نوع**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 10 integer"
@@ -17679,7 +17765,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``0x8f51``"
-msgstr ""
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Base 16 (hexadecimal) integer"
@@ -17687,7 +17773,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "Base 2 (binary) integer"
@@ -17695,7 +17781,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Floating-point number (real)"
@@ -17707,7 +17793,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Strings"
-msgstr ""
+msgstr "نصوص"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``\"\"\"Hello\"\"\"``"
@@ -17719,7 +17805,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"عقدة/ملصق\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid ":ref:`class_NodePath` or StringName"
@@ -17727,7 +17813,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "``$NodePath``"
-msgstr ""
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -17741,7 +17827,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
 msgid "Comments"
-msgstr ""
+msgstr "التعليقات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:317
 msgid ""
@@ -17773,7 +17859,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:343
 msgid ""
@@ -17856,7 +17942,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Alert (beep/bell)"
@@ -17888,7 +17974,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "Double quote"
@@ -17896,7 +17982,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Single quote"
@@ -17904,7 +17990,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Backslash"
@@ -17935,6 +18021,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
 msgstr ""
+"يتضمن الشعاع ثنائي البعد مركبة ``x`` ومركبة ``y``. كما يمكن تحصيلها باستعمال "
+"المصفوفة array."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -17955,6 +18043,8 @@ msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"يتضمن الشعاع vector ثلاثي الأبعاد مجالات ل ``x``, ``y`` و ``z``، كما يمكن "
+"تحصيلها عن طريق المصفوفة."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
 msgid ":ref:`Transform2D <class_Transform2D>`"
@@ -18150,7 +18240,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:313
 msgid "Data"
-msgstr ""
+msgstr "البيانات Data"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
@@ -18158,7 +18248,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:212
 msgid "Variables"
-msgstr ""
+msgstr "المتغيرات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 msgid ""
@@ -18419,7 +18509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
 msgid "if/else/elif"
-msgstr ""
+msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:811
 msgid ""
@@ -18666,7 +18756,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1117
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
-msgstr ""
+msgstr "الميراث"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
 msgid "A class (stored as a file) can inherit from:"
@@ -18800,7 +18890,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1272
 msgid "Exports"
-msgstr ""
+msgstr "التصديرات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1276
 msgid ""
@@ -18808,8 +18898,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1279
+#, fuzzy
 msgid "Setters/getters"
-msgstr ""
+msgstr "فرض القيمة/ جلب القيمة"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1281
 msgid ""
@@ -19236,12 +19327,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "ثابت:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "متأقلم:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
@@ -19275,15 +19366,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -19298,7 +19389,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:196
 msgid "Arrays"
-msgstr ""
+msgstr "المصفوفات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -19323,7 +19414,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "القواميس"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -19412,7 +19503,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr ""
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -20829,7 +20920,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "تنسيق نصوص GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
@@ -20854,7 +20945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "استعمال GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
@@ -20866,6 +20957,8 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"دائماً ما يبدأ النوائب placeholders ب ``%`` لكن الحرف أو الحروف التي تليه، "
+"والتي تشكل *محدد التنسيق* هي التي تحدد آلية تحويل القيمة المعطاة لنص string."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -20876,6 +20969,11 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"إن المثال الموضح أعلاه ``%s`` أبسط نائب يعمل لأغلب حالات الاستعمال: حيث يحوّل "
+"القيمة بنفس الطريقة التي تحول فيها الدالة ``str()`` القيم إلى نصوص. لا تتغير "
+"النصوص، ولكن القيم المنطقية Booleans تتحول إلى ``\"True\"`` أو ``\"False"
+"\"``، وتتحول الأعداد الصحيحة integral أو الحقيقة real إلى عشرية decimal، "
+"بينما تعطي الأنواع الأخرى عادة قيمها بشكل نص مقروء بشرياً."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -20884,12 +20982,19 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"هنالك أيضاً طريقة أخرى لتنسيق النص في GDScript، وقد سميت دالة ``String."
+"format()``، حيث تستبدل جميع مرات ظهور مفتاح في نص معين بقيمة تعطيها إياها. "
+"هذه الدالة يمكنها أن تتعامل مع المصفوفات arrays أو حتى القواميس dictionaries "
+"للربط بين القيمة/ المفتاح."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"يمكن استعمال المصفوفات كمفتاح key، مؤشر index، أو بأسلوب مختلط (انظر "
+"بالأمثلة أدناه). يهم الترتيب فقط عند التعامل مع المؤشر index أو الأسلوب "
+"المختلط بالنسبة للمصفوفة المستعملة."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
@@ -20900,10 +21005,12 @@ msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"هنالك أيضاً \"محددات التنسيق\" `format specifiers`_ ، ولكن تقتصر فعاليتها فقط "
+"عند استعمال المشغل ``%``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "تعدد النواب Multiple placeholders"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -20917,10 +21024,12 @@ msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"لاحظ أنه تم إدراج القيم بالترتيب، تذكر أن جميع النواب يجب أن يستبدلوا مرة "
+"واحدة، لأجل ذلك يجب أن يكون هنالك عدد معقول من القيم."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "تنضيد المحددات"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -20929,10 +21038,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"يمكن استعمال محددات تنسيق format specifiers غير ``s`` كنائب معين، حيث "
+"يتألفون من حر أو أكثر . بعض النواب يعملون تلقائياً مثل ``s`` ، ولكن البعض "
+"الآخر يظهر قبل بعض الحروف، أما الفئة المتبقية تعمل فقط في سياق بعض القيم أو "
+"الحروف."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "أنواع النوّاب Placeholder types"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -20940,88 +21053,103 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"يجب استعمال واحدة ونمط واحدة من هذه الأنماط بما أنها ستظهر دائماً كآخر حرف من "
+"محدد التنسيق، بصرف النظر عن ``s`` ، فإن هذه الأنواع تتطلب بعضاً من المعالم "
+"parameters."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
+#, fuzzy
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
-msgstr ""
+msgstr "**تحويل بسيط** إلى نص String بنفس الدالة المستعملة للتحويل النصي."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
+#, fuzzy
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"**حرف ينيكود Unicode** واحد. يتوقع رقم غير موقع 8-bit (0-255) لنقطة من النص "
+"البرمجي أو حرف نصي واحد."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"عدد **عشري صحيح decimal integral**. يتوقع عدد صحيح integral أو حقيقي real "
+"(سيتم تقريبه will be floored)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"عدد **صحيح ثماني octal intergral number**. يتوقع عدداً صحيحاً أو حقيقاً (سيتم "
+"تقريبه)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"عدد **صحيح عشري ثماني hexadecimal integral number** مع **حروف صغيرة lower-"
+"case letters**. يتوقع عدد صحيح أو حقيقي (سيتم تقريبه)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"عدد **صحيح عشري ثماني hexadecimal integral number** مع **حروف كبيرة upper-"
+"case letters**. يتوقع عدد صحيح أو حقيقي (سيتم تقريبه)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "عدد **عشري حقيقي decimal real number**. يتوقع عدداً صحيحاً أو حقيقياً."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "معدّلات النوّاب placeholders modifiers"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
-msgstr ""
+msgstr "تظهر هذه الحروف قبل ما ذكر أعلاه، ويعمل بعضهم بحالات محددة فقط."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr ""
+msgstr "بالنسبة للمحدادت العددية، **أظهر show + علّم sign** إن كان إيجابياً."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:104
@@ -21044,18 +21172,22 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:486
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:501
+#, fuzzy
 msgid "Integer"
-msgstr ""
+msgstr "رقم"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"فرض قيمة **الحشوة padding**. يتم تبطينه بفراغات spaces أو باستعمال الأصفار "
+"إن كان العدد يبدأ ب ``0`` بالنسبة لنائب عددي. عندما يستعمل بعد ``.``، اطلع "
+"على ``.``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
@@ -21069,7 +21201,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
@@ -21151,32 +21283,33 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#, fuzzy
 msgid "**Style**"
-msgstr ""
+msgstr "**أسلوب**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
-msgstr ""
+msgstr "**مثال**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
-msgstr ""
+msgstr "**النتيجة**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:310
 msgid "Dictionary"
-msgstr ""
+msgstr "قاموس"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "مفتاح"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -21197,7 +21330,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "فهرس"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
@@ -21206,7 +21339,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "مزيج"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
@@ -21219,7 +21352,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:289
 msgid "Array"
-msgstr ""
+msgstr "مصفوفة"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
@@ -22341,7 +22474,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:351
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:180
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:4
 msgid "C# basics"
@@ -22635,7 +22768,7 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid "Example"
-msgstr ""
+msgstr "مثال"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:184
 msgid ""
@@ -23228,7 +23361,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
-msgstr ""
+msgstr "نص"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:174
 msgid ""
@@ -23290,7 +23423,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:227
 msgid "Transform2D"
-msgstr ""
+msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:229
 msgid ""
@@ -23315,8 +23448,9 @@ msgid "``Rotation``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:243
+#, fuzzy
 msgid "Plane"
-msgstr ""
+msgstr "المستوي"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 msgid ""
@@ -24481,7 +24615,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
-msgstr ""
+msgstr "الترتيب"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:17
 msgid ""
@@ -24542,7 +24676,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
-msgstr ""
+msgstr "الاستيراد"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
 msgid ""
@@ -24701,11 +24835,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "عملية الاستيراد"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "استيراد الملحقات assets في غدوت 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -24741,7 +24875,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
-msgstr ""
+msgstr "تعديل محددات الاستيراد parameters import"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
 msgid ""
@@ -24786,7 +24920,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
-msgstr ""
+msgstr "إعادة استيراد تلقائي"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
@@ -24797,7 +24931,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
-msgstr ""
+msgstr "الملفات المولّدة"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
@@ -24822,7 +24956,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
-msgstr ""
+msgstr "تغيير نمط استيراد المصدر"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
@@ -24832,7 +24966,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "تعديل محددات الاستيراد الافتراضية"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
@@ -24841,22 +24975,29 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"قد تتطلب الأنواع المختلفة من الألعاب قيماً افتراضيةً مختلفة. يمكن تعديل القيم "
+"الافتراضية لكل مشروع باستعمال قائمة \"المحدد مسبقاً Preset..\". فإلى جانب بعض "
+"أنواع الموارد التي تقدم إعدادات افتراضية، فإنه من الممكن حفظها وإزالتها كذلك:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "البساطة هي الحل!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"إنه نهج عمل بسيط للغاية حيث من المتوقع أن يأخذ وقتاً قليلاً للاعتياد عليه، كما "
+"أنه يعزز الطريقة الأصح في التعامل مع الموارد resources."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"هنالك العديد من أنواع الملحقات assets المتوفرة لاستيرادها، لذلك من فضلك تابع "
+"القراءة لفهم كيفية التعامل معهم جميعاً!"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing images"
@@ -24942,10 +25083,13 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"إن السلوك الافتراضي الذي يقوم به غدوت هو استيراد الصور على أنها رسوم "
+"textures. يتم تخزين الرسوم textures في ذاكرة الفيديو ولا يمكن تحصليها بشكل "
+"مباشر، وهذا ما يجعل رسمهم أكثر كفاءة."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid "Import options are vast:"
-msgstr ""
+msgstr "خيارات الاستيراد متنوعة:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid "Detect 3D"
@@ -24970,10 +25114,12 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"الصور واحدة من أكبر الملحقات في اللعبة، ولكي تتعامل معهم بصورة فعالة، عليك "
+"بداية أن تضغطهم. يقدم غدوت عدداً من طرق الضغط، بناءً على سياق الاستعمال."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:63
 msgid "Compress Mode"
-msgstr ""
+msgstr "نمط الضغط"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:65
 msgid ""
@@ -25014,7 +25160,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Uncompressed"
-msgstr ""
+msgstr "غير مضغوط"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Compress Lossless"
@@ -25026,11 +25172,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Compress VRAM"
-msgstr ""
+msgstr "ضغط VRAM"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "مخزنة ك pixels خام"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Stored as Lossless WebP / PNG"
@@ -25046,70 +25192,70 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "Size on Disk"
-msgstr ""
+msgstr "الحجم على القرص"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "|bad| Large"
-msgstr ""
+msgstr "|bad| كبير"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|regular| Small"
-msgstr ""
+msgstr "|regular| صغير"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|good| صغير للغاية"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "Memory Usage"
-msgstr ""
+msgstr "استعمال الذاكرة"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "|good| Small"
-msgstr ""
+msgstr "|good| صغير"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Performance"
-msgstr ""
+msgstr "الأداء"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|regular| الاعتيادي"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "|good| Fast"
-msgstr ""
+msgstr "|good| سريع"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Quality Loss"
-msgstr ""
+msgstr "فقدان الجودة"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|good| None"
-msgstr ""
+msgstr "|good| لا شيء"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|regular| طفيف"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|bad| معتدل"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "Load Time"
-msgstr ""
+msgstr "زمن التحميل"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|bad| بطيء"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid "HDR Mode"
-msgstr ""
+msgstr "نمط HDR"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid ""
@@ -25128,7 +25274,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid "Normal Map"
-msgstr ""
+msgstr "الخريطة الاعتيادية Normal Map"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid ""
@@ -25168,17 +25314,19 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
-msgstr ""
+msgstr "الأعلام"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"هنالك العديد من الإعدادات التي يمكن تفعيلها عند استيراد الصور كرسوم texture، "
+"بناء على سياق الاستعمال."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Repeat"
-msgstr ""
+msgstr "تكرار"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
@@ -25194,7 +25342,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 #: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
-msgstr ""
+msgstr "مُرشح"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:149
 msgid ""
@@ -25206,7 +25354,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmaps"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:154
 msgid ""
@@ -25215,20 +25363,26 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"تتفعل mipmaps عندما تصبح البكسلات pixels أصغر من الشاشة، حيث يساعد ذلك في "
+"إنقاص التأثير الحبيبي grainy effect عند تصغير الرسوم. ضع في الحسبان أنه "
+"بالنسبة للعتاد القديم (GLES2، الموبايلات بشكل رئيسي)، تواجد بعض المتطلبات "
+"لاستعمال mipmaps:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:157
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "يجب أن يكون طول وعرض الرسم texture من مضاعفات الرقم اثنين"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "يجب أن يتم تفعيل خيار التكرار"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"ضع في الحسبان النقاط المذكورة أعلاه عند صناعة ألعاب الموبايل وكذلك "
+"التطبيقات، فإن رغبت بالتوافق المطلق ينبغي عليك استعمال mipmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:162
 msgid ""
@@ -25238,7 +25392,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:165
 msgid "Anisotropic"
-msgstr ""
+msgstr "متباين الخواص anisotropic"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:167
 msgid ""
@@ -25274,7 +25428,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:186
 msgid "Process"
-msgstr ""
+msgstr "المعالجة"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:188
 msgid ""
@@ -25340,7 +25494,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "المقياس"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:222
 msgid ""
@@ -25351,7 +25505,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "استيراد العينات الصوتية"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Supported files"
@@ -25392,7 +25546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "هنا الرسم البياني المقارن."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "Format"
@@ -25400,7 +25554,7 @@ msgstr "البنية (اللاحقة)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "1 second of audio"
-msgstr ""
+msgstr "1 ثانية من الصوت"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "WAV 24-bit, 96 kHz, stereo"
@@ -25408,7 +25562,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "WAV 16-bit, 44 kHz, mono"
@@ -25416,7 +25570,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "WAV 16-bit, IMA-ADPCM, mono"
@@ -25424,7 +25578,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "22 KB"
-msgstr ""
+msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "MP3 192 Kb/s, stereo"
@@ -25432,7 +25586,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "24 KB"
-msgstr ""
+msgstr "24 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "Ogg Vorbis 128 Kb/s, stereo"
@@ -25440,7 +25594,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "Ogg Vorbis 96 Kb/s, stereo"
@@ -25448,7 +25602,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "12 KB"
-msgstr ""
+msgstr "12 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:46
 msgid ""
@@ -25472,10 +25626,11 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
+"كما ترى أعلاه، تصبح المؤثرات الصوتية كبيرة جداً عند إضافة التردد reverb."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
 msgid "Trimming"
-msgstr ""
+msgstr "التشذيب Trimming"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
 msgid ""
@@ -25491,7 +25646,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:73
 msgid "Looping"
-msgstr ""
+msgstr "التكرار"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:75
 msgid ""
@@ -25592,20 +25747,24 @@ msgid "keys"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#, fuzzy
 msgid "<lang1>"
-msgstr ""
+msgstr "<اللغة1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#, fuzzy
 msgid "<lang2>"
-msgstr ""
+msgstr "<اللغة2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#, fuzzy
 msgid "<langN>"
-msgstr ""
+msgstr "<اللغةN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
+#, fuzzy
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
@@ -25618,15 +25777,17 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:263
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "string"
-msgstr ""
+msgstr "نص"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#, fuzzy
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:66
 msgid ""
@@ -25642,17 +25803,17 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:182
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:222
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:376
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "GREET"
@@ -25668,11 +25829,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "ASK"
-msgstr ""
+msgstr "اسأل"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "How are you?"
@@ -25684,11 +25845,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "BYE"
-msgstr ""
+msgstr "وداعاً"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Goodbye"
@@ -25696,11 +25857,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "QUOTE"
@@ -26086,7 +26247,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
 msgid "Storage"
-msgstr ""
+msgstr "التخزين"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid ""
@@ -26105,12 +26266,12 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
-msgstr ""
+msgstr "المواد"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Location"
-msgstr ""
+msgstr "الموقع"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 msgid ""
@@ -26158,12 +26319,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
+#, fuzzy
 msgid "Meshes"
-msgstr ""
+msgstr "السطوح"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid "Compress"
-msgstr ""
+msgstr "الضغط"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid ""
@@ -26438,7 +26600,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid "Optimizer"
-msgstr ""
+msgstr "المحسن"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
 msgid ""
@@ -26448,8 +26610,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
+#, fuzzy
 msgid "Clips"
-msgstr ""
+msgstr "اللقطات"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
@@ -27203,7 +27366,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. تأكد من حالة الكتم بالنسبة لمساقات NLA tracks**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -27214,7 +27377,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
-msgstr ""
+msgstr "**3. صدر المشهد**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
@@ -27928,7 +28091,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
@@ -27936,7 +28099,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
@@ -32724,7 +32887,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
-msgstr ""
+msgstr "2x2"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
@@ -32788,7 +32951,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
-msgstr ""
+msgstr "3x3 (على الأقل)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:229
 msgid ""
@@ -32896,7 +33059,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid ""
@@ -33126,11 +33289,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr ""
+msgstr "0: يبعث الجزيئات بفواصل منتظمة (وهي القيمة الافتراضية)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:111
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: يبعث جميع الجزيئات بذات الوقت."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
@@ -33482,7 +33645,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
-msgstr ""
+msgstr "مراجعة للحركة ثنائية البعد"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:9
 msgid ""
@@ -33524,7 +33687,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
-msgstr ""
+msgstr "حركة بثماني اتجاهات"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
@@ -33657,7 +33820,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:4
 msgid "2D lights and shadows"
-msgstr ""
+msgstr "أضواء وظلال ثنائية الأبعاد"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:9
 msgid ""
@@ -34058,8 +34221,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:4
+#, fuzzy
 msgid "2D meshes"
-msgstr ""
+msgstr "سطوح ثنائية البعد"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
 msgid ""
@@ -34446,8 +34610,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
+#, fuzzy
 msgid "2D Sprite animation"
-msgstr ""
+msgstr "رسوم الصورة ثنائية الأبعاد"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -34760,7 +34925,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "محتوى ثلاثي الأبعاد"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -34826,7 +34991,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
-msgstr ""
+msgstr "ثنائي الأبعاد في ثلاثية الأبعاد"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
@@ -34861,7 +35026,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
-msgstr ""
+msgstr "ساحة الرؤية ثلاثية الأبعاد 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
@@ -35459,7 +35624,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:4
 msgid "3D rendering limitations"
-msgstr ""
+msgstr "محدودية الإخراج البصري ثلاثي الأبعاد"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:9
 msgid ""
@@ -39272,7 +39437,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:124
 msgid "a bed,"
-msgstr ""
+msgstr "سرير،"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:125
 msgid "a lamp,"
@@ -39284,7 +39449,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:127
 msgid "a bookshelf."
-msgstr ""
+msgstr "رف كتب."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:129
 msgid "Create a scene with a Spatial node as root node."
@@ -49059,6 +49224,10 @@ msgid ""
 "amplitudes that are too high to be represented properly below 0 dB create a "
 "kind of distortion called *clipping*."
 msgstr ""
+"0 dB ديسبل هي السعة العظمى المتاحة في نظام الصوت الرقمي، وهو مختلف عن حد "
+"الاستماع البشري، ولكن حد بسبب عتاد الصوت. الأصوات ذات السعات المرتفعة للغاية "
+"التي يصعب تمثيلها بشكل صحيح والتي تكون أقل من 0 dB تنشئ نوعاً من التشويش يدعى "
+"*التقطيع clipping*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:35
 msgid ""
@@ -49928,6 +50097,8 @@ msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
 msgstr ""
+"جسم يقدم معلومات التحري عن الاصطدامات، غير الفيزيائية. يجب تنفيذ جميع "
+"الحركات واستجابات التصادم عن طريق النص البرمجي."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
 #, fuzzy
@@ -55042,7 +55213,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "تشوه الهيكل ثنائي البعد"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:368
 msgid ""
@@ -55058,7 +55229,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
 msgid "2D skeletons"
-msgstr ""
+msgstr "الهياكل ثنائية الأبعاد"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
@@ -55092,6 +55263,8 @@ msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
+"القدرة على التحكم بأنظمة الجزيئات، الظلال shaders، الأصوات، استدعاءات النصوص "
+"البرمجية، الألوان والشفافية، إلخ. في الرسوم المتحركة."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid ""
@@ -57760,32 +57933,36 @@ msgid "Language and Variant"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:14
+#, fuzzy
 msgid "aa"
-msgstr ""
+msgstr "aa"
 
 #: ../../docs/tutorials/i18n/locales.rst:14
 msgid "Afar"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:16
+#, fuzzy
 msgid "aa_DJ"
-msgstr ""
+msgstr "aa_DJ"
 
 #: ../../docs/tutorials/i18n/locales.rst:16
 msgid "Afar (Djibouti)"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:18
+#, fuzzy
 msgid "aa_ER"
-msgstr ""
+msgstr "aa_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:18
 msgid "Afar (Eritrea)"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:20
+#, fuzzy
 msgid "aa_ET"
-msgstr ""
+msgstr "aa_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:20
 msgid "Afar (Ethiopia)"
@@ -59121,8 +59298,9 @@ msgid "Interlingua (France)"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:356
+#, fuzzy
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/tutorials/i18n/locales.rst:356
 msgid "Indonesian"
@@ -61940,7 +62118,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:50
 #: ../../docs/development/cpp/inheritance_class_tree.rst:10
 msgid "Reference"
-msgstr ""
+msgstr "المرجع"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
@@ -62951,6 +63129,8 @@ msgid ""
 "A base size for the window can be specified in the Project Settings under "
 "**Display → Window**."
 msgstr ""
+"يمكن تحديد أبعاد النافذة الأساسية بإعدادات المشروع تحت قسم **العرض ← "
+"النافذة**."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:59
 msgid ""
@@ -64757,7 +64937,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (أعلى قيمة)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "parenthetical grouping"
@@ -64765,12 +64945,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "**()**"
-msgstr ""
+msgstr "**()**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "unary"
@@ -64778,12 +64958,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "**+, -, !, ~**"
-msgstr ""
+msgstr "**+, -, !, ~**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 msgid "multiplicative"
@@ -64791,7 +64971,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 msgid "**/, \\*, %**"
-msgstr ""
+msgstr "**/, \\*, %**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
@@ -64881,7 +65061,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:507
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:509
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 msgid "additive"
@@ -64889,12 +65069,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 msgid "**+, -**"
-msgstr ""
+msgstr "**+, -**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 msgid "bit-wise shift"
@@ -64902,12 +65082,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 msgid "**<<, >>**"
-msgstr ""
+msgstr "**<<, >>**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 msgid "relational"
@@ -64915,12 +65095,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 msgid "**<, >, <=, >=**"
-msgstr ""
+msgstr "**<, >, <=, >=**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 msgid "equality"
@@ -64928,7 +65108,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 msgid "**==, !=**"
-msgstr ""
+msgstr "**==, !=**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
@@ -64948,7 +65128,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:353
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:366
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 msgid "bit-wise AND"
@@ -64956,12 +65136,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 msgid "**&**"
-msgstr ""
+msgstr "**&**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 msgid "bit-wise exclusive OR"
@@ -64969,12 +65149,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 msgid "**^**"
-msgstr ""
+msgstr "**^**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 msgid "bit-wise inclusive OR"
@@ -64982,24 +65162,25 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 msgid "**|**"
-msgstr ""
+msgstr "**|**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 msgid "logical AND"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
+#, fuzzy
 msgid "**&&**"
-msgstr ""
+msgstr "**&&**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (الأدنى)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "logical inclusive OR"
@@ -65007,7 +65188,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "**||**"
-msgstr ""
+msgstr "**||**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:330
 msgid "Flow control"
@@ -69847,7 +70028,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
@@ -69883,7 +70064,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "FRONT_FACING"
@@ -69995,8 +70176,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
+#, fuzzy
 msgid "1.0 / SCREEN_PIXEL_SIZE"
-msgstr ""
+msgstr "1.0 / SCREEN_PIXEL_SIZE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
@@ -70072,8 +70254,9 @@ msgid "iChannelResolution[4]"
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
+#, fuzzy
 msgid "1.0 / TEXTURE_PIXEL_SIZE"
-msgstr ""
+msgstr "1.0 / TEXTURE_PIXEL_SIZE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "Resolution of particular texture."
@@ -72082,11 +72265,11 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:123
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:125
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:127
 msgid ""
@@ -72097,7 +72280,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:131
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:133
 msgid ""
@@ -72131,7 +72314,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:154
 msgid ""
@@ -72142,7 +72325,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:158
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid ""
@@ -72152,7 +72335,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:163
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:165
 msgid ""
@@ -72165,7 +72348,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:171
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:173
 msgid ""
@@ -72177,7 +72360,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:178
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:180
 msgid ""
@@ -78948,7 +79131,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:15
 msgid "Analytics"
-msgstr ""
+msgstr "الإحصائيات"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:16
 msgid "In-app purchases"
@@ -78964,7 +79147,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:19
 msgid "Ads"
-msgstr ""
+msgstr "الإعلانات"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:20
 msgid "Video ads"
@@ -78972,7 +79155,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:21
 msgid "Cross-promotion"
-msgstr ""
+msgstr "الترقية-المتصالبة"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:22
 msgid "In-game soft & hard currencies"
@@ -78988,7 +79171,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:25
 msgid "Login"
-msgstr ""
+msgstr "الولوج"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:26
 msgid "Cloud saves"
@@ -80641,7 +80824,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:246
 msgid "``\"\"``"
-msgstr ""
+msgstr "``\"\"``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:250
 msgid ""
@@ -80670,22 +80853,27 @@ msgid ""
 "``0`` means Godot won't do any resizing. This is useful if you want to "
 "control the canvas size from javascript code in your template."
 msgstr ""
+"تعني ``0`` أن غدوت لن يقوم بأي تعديلات على الأبعاد، ولهذا الأمر فائدته إن "
+"رغبت في التحكم بأبعاد اللوحة canvas من نص جافاسكربت البرمجي في قالبك."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:274
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
+"``1`` تعني أن غدوت سيغير من أبعاد اللوحة canvas عند البدء، وكذلك عند تغيير "
+"أبعاد النافذة باستعمال دوال المحرك engine functions."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:276
 msgid ""
 "``2`` means Godot will adapt the canvas size to match the whole browser "
 "window."
 msgstr ""
+"``2`` تعني أن غدوت سيعدل أبعاد اللوحة canvas بحيث تماثل أبعاد نافذة المتصفح."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:280
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:284
 msgid "The arguments to be passed as command line arguments on startup."
@@ -80703,7 +80891,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:292
 msgid "``[]``"
-msgstr ""
+msgstr "``[]``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:296
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
@@ -80877,6 +81065,10 @@ msgid ""
 "in the HTML as a ``<script>``. The name is generated from the *Export Path* "
 "during the export process."
 msgstr ""
+"``$GODOT_URL``: اسم ملف جافاسكربت JavaScript الأساسي، التي يتضمن صف :js:"
+"class:`Engine المحرك` الضروري لتشغيل المحرك ويجب إدراجه في ملف HTML ضمن "
+"``<script>``. يتم توليد هذا الاسم من * مسار التصدير Export Path* أثناء عملية "
+"التصدير."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
 msgid ""
@@ -80884,6 +81076,9 @@ msgid ""
 "can be later overridden. See :js:attr:`EngineConfig` for the full list of "
 "overrides."
 msgstr ""
+"``$GODOT_CONFIG``: شيء object للغة البرمجة JavaScript، يحتوي خيارات التصدير، "
+"والتي يمكن تجاوزها لاحقاً. اطلع على : js:attr:`EngineConfig تهيئة المحرك` "
+"للحصول على قائمة التجاوزات الكاملة."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:60
 msgid ""
@@ -80896,6 +81091,8 @@ msgid ""
 "``$GODOT_PROJECT_NAME``: The project name as defined in the Project "
 "Settings. It is a good idea to use it as a ``<title>`` in your template."
 msgstr ""
+"``$GODOT_PROJECT_NAME``: يُعرف اسم المشروع ضمن إعدادت المشروع. من الجيد أن "
+"يكون موافقاً للعنوان ‍``<title>`` بقالبك."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:66
 msgid ""
@@ -80906,6 +81103,11 @@ msgid ""
 "the HTML ``head`` element from the Godot Editor, e.g. for different Web "
 "export presets."
 msgstr ""
+"``$GODOT_HEAD_INCLUDE``: نص string مخصص لتضمينه في ملف HTML قبل نهاية ترويسة "
+"``<head>``. يتم تخصيصها في خيارات التصدير ضمن قسم * محتويا الترويسة Html / "
+"Head Include*. يمكنك التحكم الكامل بصفحة HTML التي تنشئها، فإن هذا المتغير "
+"يمكن أن يكون مفيداً في تهيئة أجزاء من عنصر الترويسة ``head`` عن طريق محرر "
+"غدوت؛ على سبيل المثال في سياق التصدير المعد مسبقاً للويب Web export presets."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:72
 msgid ""
@@ -85247,7 +85449,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/pausing_games.rst:36
 msgid "2D and 3D physics will be stopped."
-msgstr ""
+msgstr "سيتم إيقاف فيزيائية الأجسام ثنائية وثلاثية الأبعاد."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
 msgid ""
@@ -85372,12 +85574,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "integer"
@@ -85408,8 +85610,9 @@ msgid "quat"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
+#, fuzzy
 msgid "aabb"
-msgstr ""
+msgstr "aabb"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
@@ -85422,7 +85625,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:302
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:333
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "basis"
@@ -85430,7 +85633,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "transform"
@@ -85438,7 +85641,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "color"
@@ -85446,7 +85649,7 @@ msgstr "اللون"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "node path"
@@ -85462,7 +85665,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:304
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:335
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "rid"
@@ -85470,7 +85673,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "object"
@@ -85478,7 +85681,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "dictionary"
@@ -85486,7 +85689,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "array"
@@ -85498,7 +85701,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:281
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:306
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "raw array"
@@ -85506,7 +85709,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "int array"
@@ -85514,7 +85717,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "real array"
@@ -85522,7 +85725,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "string array"
@@ -85534,7 +85737,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:283
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:308
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "vector2 array"
@@ -85542,7 +85745,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:81
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:81
 msgid "vector3 array"
@@ -85550,7 +85753,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:83
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:83
 msgid "color array"
@@ -85558,7 +85761,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:85
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:85
 msgid "max"
@@ -85576,11 +85779,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 msgid "0: null"
-msgstr ""
+msgstr "0: لغط null"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:99
+#, fuzzy
 msgid "1: :ref:`bool<class_bool>`"
-msgstr ""
+msgstr "1: :ref:`bool<class_bool>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:102
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:113
@@ -85650,11 +85854,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:104
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 للقيمة للنفي false، و1 للإيجابية true"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:108
+#, fuzzy
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "2: :ref:`int رقم<class_int>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:110
 msgid ""
@@ -85771,7 +85976,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:148
 msgid "4: :ref:`String<class_string>`"
-msgstr ""
+msgstr "4: :ref:`Stringنص <class_string>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:153
 msgid "String length (in bytes)"
@@ -85804,7 +86009,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:161
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "5: :ref:`Vector2شعاع ثنائي البعد<class_vector2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:166
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:177
@@ -85828,7 +86033,7 @@ msgstr "الإحداثيات التالية"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:172
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr ""
+msgstr "6: :ref:`Rect2مستطيل ثنائي البعد<class_rect2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:260
@@ -85842,7 +86047,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr ""
+msgstr "7: :ref:`Vector3شعاع ثلاثي الأبعاد<class_vector3>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:258
@@ -85853,7 +86058,7 @@ msgstr "الإحداثيات التالية"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:200
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr ""
+msgstr "8: :ref:`Transform2D<class_transform2d>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:205
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:273
@@ -85888,8 +86093,9 @@ msgid "The Y component of the origin vector, accessed via [2][1]"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:219
+#, fuzzy
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr ""
+msgstr "9: :ref:`Planeسطح <class_plane>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:224
 msgid "Normal X"
@@ -85909,7 +86115,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:234
 msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+msgstr "10: :ref:`Quat<class_quat>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:239
 msgid "Imaginary X"
@@ -85928,16 +86134,18 @@ msgid "Real W"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
+#, fuzzy
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr ""
+msgstr "11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:264
 msgid "Z size"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:268
+#, fuzzy
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr ""
+msgstr "12: :ref:`Basisالأسس<class_basis>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:277
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:302
@@ -85952,7 +86160,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:285
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:310
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:285
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:310
@@ -85962,7 +86170,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:287
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:312
 msgid "32"
-msgstr ""
+msgstr "32"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:287
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:312
@@ -85972,7 +86180,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:289
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:314
 msgid "36"
-msgstr ""
+msgstr "36"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:289
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:314
@@ -85980,12 +86188,13 @@ msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:293
+#, fuzzy
 msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+msgstr "13: :ref:`Transform الإحداثيات الموضعية <class_transform>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "40"
-msgstr ""
+msgstr "40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "The X component of the origin vector, accessed via [3][0]"
@@ -85993,7 +86202,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:318
 msgid "44"
-msgstr ""
+msgstr "44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:318
 msgid "The Y component of the origin vector, accessed via [3][1]"
@@ -86001,7 +86210,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "48"
-msgstr ""
+msgstr "48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "The Z component of the origin vector, accessed via [3][2]"
@@ -86009,7 +86218,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:324
 msgid "14: :ref:`Color<class_color>`"
-msgstr ""
+msgstr "14: :ref:`Colorاللون <class_color>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:329
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:503
@@ -86033,7 +86242,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:339
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr ""
+msgstr "15: :ref:`NodePath مسار العقدة<class_nodepath>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 msgid ""
@@ -86094,7 +86303,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:388
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr ""
+msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:393
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:405
@@ -86109,7 +86318,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 msgid "19: :ref:`Array<class_array>`"
-msgstr ""
+msgstr "19: :ref:`Array المصفوفة<class_array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:408
 msgid ""
@@ -86119,7 +86328,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:412
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:417
 msgid "Array length (Bytes)"
@@ -86127,7 +86336,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "8..8+length"
-msgstr ""
+msgstr "8..8+الطول"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "Byte"
@@ -86142,8 +86351,9 @@ msgid "The array data is padded to 4 bytes."
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:425
+#, fuzzy
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "Array length (Integers)"
@@ -86152,11 +86362,12 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
 msgid "8..8+length\\*4"
-msgstr ""
+msgstr "8..8+الطول\\*4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:436
+#, fuzzy
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr ""
+msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:441
 msgid "Array length (Floats)"
@@ -86168,7 +86379,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
-msgstr ""
+msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 msgid "Array length (Strings)"
@@ -86184,7 +86395,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:468
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:486
@@ -86195,47 +86406,47 @@ msgstr "مُتجه"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "8..8+length\\*8"
-msgstr ""
+msgstr "8..8+الطول\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "8..12+length\\*8"
-msgstr ""
+msgstr "8..12+الطول\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:488
 msgid "8..8+length\\*12"
-msgstr ""
+msgstr "8..8+الطول\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:490
 msgid "8..12+length\\*12"
-msgstr ""
+msgstr "8..12+الطول\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:492
 msgid "8..16+length\\*12"
-msgstr ""
+msgstr "8..16+الطول\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:496
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:503
 msgid "8..8+length\\*16"
-msgstr ""
+msgstr "8..8+الطول\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:505
 msgid "8..12+length\\*16"
-msgstr ""
+msgstr "8..12+الطول\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:507
 msgid "8..16+length\\*16"
-msgstr ""
+msgstr "8..16+الطول\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:509
 msgid "8..20+length\\*16"
-msgstr ""
+msgstr "8..20+الطول\\*16"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:4
 msgid "Running code in the editor"
@@ -88951,11 +89162,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:169
 msgid "(32 bits)"
-msgstr ""
+msgstr "(32 bits)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:176
 msgid "(64 bits)"
-msgstr ""
+msgstr "(64 bits)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:183
 msgid ""
@@ -91693,7 +91904,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
@@ -91891,7 +92102,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "أو:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:4
 msgid "Common engine methods and macros"
@@ -92114,7 +92325,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "التعاريف"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -92168,7 +92379,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_audiostreams.rst:117
 #: ../../docs/development/cpp/custom_audiostreams.rst:348
 msgid "References:"
-msgstr ""
+msgstr "المراجع:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 #, fuzzy
@@ -92297,7 +92508,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "الحافظات"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
@@ -92309,7 +92520,7 @@ msgstr "مُتجه"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr ""
+msgstr "قائمة"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
@@ -92317,7 +92528,7 @@ msgstr "مجموعة"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr ""
+msgstr "خريطة"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -92385,7 +92596,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -92423,8 +92634,9 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/development/cpp/core_types.rst:214
 #: ../../docs/development/file_formats/tscn.rst:140
+#, fuzzy
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
@@ -92441,7 +92653,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
-msgstr ""
+msgstr "RID"
 
 #: ../../docs/development/cpp/core_types.rst:227
 msgid ""
@@ -92817,7 +93029,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:356
 #: ../../docs/development/editor/creating_icons.rst:102
 msgid "References"
-msgstr ""
+msgstr "المراجع"
 
 #: ../../docs/development/cpp/object_class.rst:243
 msgid ""
@@ -92915,11 +93127,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:5
 msgid "Object"
-msgstr ""
+msgstr "Object"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:15
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"
@@ -92927,7 +93139,7 @@ msgstr "عُقدة-ثنائية-البُعد"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:25
 msgid "Spatial"
-msgstr ""
+msgstr "Spatial"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:29
 msgid "Source files: :download:`class_tree.zip <files/class_tree.zip>`."
@@ -92940,7 +93152,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "الوحدات"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -93751,8 +93963,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
+#, fuzzy
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoaderمحمل_المصدر<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
@@ -93846,7 +94059,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
-msgstr ""
+msgstr "الاعتبارات"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
@@ -95362,11 +95575,11 @@ msgstr "الثوابت"
 
 #: ../../docs/development/file_formats/tscn.rst:414
 msgid "``1`` (linear)"
-msgstr ""
+msgstr "``1`` (خطي)"
 
 #: ../../docs/development/file_formats/tscn.rst:415
 msgid "``2`` (cubic)"
-msgstr ""
+msgstr "``2`` (مكعب)"
 
 #: ../../docs/development/file_formats/tscn.rst:417
 msgid ""
@@ -95767,7 +95980,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: المشكلة تأخذ الأولوية دائما"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -95788,7 +96001,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr ""
+msgstr "#2 لحل المشكلة عليها أن توجد بداية"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
@@ -95831,7 +96044,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
-msgstr ""
+msgstr "#3: على المشكلة أن تكون معقدة ومتكررة"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
@@ -95881,7 +96094,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
-msgstr ""
+msgstr "#4: يجب مناقشة الحل مع الآخرين"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""
@@ -95930,7 +96143,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:137
 msgid "#5: To each problem, its own solution"
-msgstr ""
+msgstr "#5: لكل مشكلة على حدة حلها الخاص"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:139
 msgid ""
@@ -95972,7 +96185,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:164
 msgid "#6: Cater to common use cases, leave the door open for the rare ones"
-msgstr ""
+msgstr "#6: يلبي حاجات الاستعمال الشائعة، ويتيح المجال للحالات النادرة كذلك"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:166
 msgid ""
@@ -96020,7 +96233,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:195
 msgid "#7: Prefer local solutions"
-msgstr ""
+msgstr "#7: فضل الحلول الموضعية"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:197
 msgid ""
@@ -96060,7 +96273,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:223
 msgid "#8: Don't use complex canned solutions for simple problems"
-msgstr ""
+msgstr "#8: لا تستعمل حلولاً مقعدة لمشاكل بسيطة"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:225
 msgid ""
@@ -98206,7 +98419,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:36
 msgid "7 rules for clear English"
-msgstr ""
+msgstr "7 قواعد للغة إنكليزية واضحة"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:41
 msgid ""

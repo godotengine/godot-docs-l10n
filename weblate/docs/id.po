@@ -3,8 +3,9 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Abid Febriansyah <abid.febri027@gmail.com>, 2020.
-# Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020.
+# Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020-2021.
 # Alficiro <alfiboy2003@gmail.com>, 2019, 2021.
+# Azizkhasyi 11 <azizkhasyi11@gmail.com>, 2021.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Brian <brian@brianthe.dev>, 2021.
 # Damar Inderajati <damarind@gmail.com>, 2018.
@@ -42,8 +43,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-11-19 09:53+0000\n"
-"Last-Translator: Brian <brian@brianthe.dev>\n"
+"PO-Revision-Date: 2021-11-30 04:38+0000\n"
+"Last-Translator: Azizkhasyi 11 <azizkhasyi11@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -51,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -92,7 +93,6 @@ msgstr ""
 "\"Baca Dokumentasi\" di bagian bawah sidebar untuk melihat daftar."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -101,7 +101,7 @@ msgid ""
 "en/3.3>`_ branch."
 msgstr ""
 "Ini adalah dokumentasi untuk versi beta 3.4. Ingin melihat dokumentasi dari "
-"versi **dalam pengembangan** saat ini? `Silakan menuju ke <https://docs."
+"versi **dengembangan** saat ini? `Silakan menuju ke <https://docs."
 "godotengine.org/en/latest>`_. Anda juga bisa menelusuri dokumentasi untuk "
 "versi stabil `3.3 <https://docs.godotengine.org/en/3.3>`_."
 
@@ -1893,6 +1893,7 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Editor tooltips di Inspector dan Node docs bersedia ketika ditampilkan."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -2564,12 +2565,18 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Hanya mendukung baking indirect light atau baking secara direct atau "
+"indirect lighting. Mode bake bisa disesuaikan per-light untuk membolehkan "
+"hybrid light set."
 
 #: ../../docs/about/list_of_features.rst:198
+#, fuzzy
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Mendukung pencahayaan objek dinamis menggunakan sistem berbasis octree-"
+"based. Tidak perlu pemetaan probe secara manual."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."

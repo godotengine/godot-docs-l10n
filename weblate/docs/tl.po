@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-11-19 11:09+0100\n"
-"PO-Revision-Date: 2021-11-19 09:53+0000\n"
+"PO-Revision-Date: 2021-12-09 23:13+0000\n"
 "Last-Translator: Napstaguy04 <brokenscreen3@gmail.com>\n"
 "Language-Team: Tagalog <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -37,7 +37,7 @@ msgstr "Mga Tutorial"
 
 #: ../../docs/index.rst:115
 msgid "Development"
-msgstr "Pagdedevelop"
+msgstr "Paggagawa"
 
 #: ../../docs/index.rst:126
 msgid "Community"
@@ -61,7 +61,6 @@ msgstr ""
 "sidebar para makita ang talaan."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -79,9 +78,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Ang dokumentasyong ito ay isinalin galing sa `orihinal sa Ingles <https://"
-"docs.godotengine.org/en/latest>`_ ng mga kasapi ng komunidad sa `Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+"Ang dokumentasyong ito ay isinalin mula sa `orihinal sa Ingles <https://docs."
+"godotengine.org/en/latest>`_ ng mga kasapi ng komunidad sa `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -307,9 +306,10 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
-"Ang :ref:`Tutorials and resources <doc_community_tutorials>` page ay "
-"nakatala ng mga video tutorial na ibinahagi ng komunidad. Kung mas gusto mo "
-"ang video kaysa sa text, maaring sulit tingnan ang mga iyon."
+"Tinatala ng pahinang :ref:`Tutorials and resources "
+"<doc_community_tutorials>` ang mga video tutorial na ibinahagi ng komunidad. "
+"Kung mas gusto mo ang video kaysa sa text, maaring sulit tingnan ang mga "
+"iyon."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -688,7 +688,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr "Ano-anung mga programming na wika ang sinusuportahan ng Godot?"
+msgstr "Ano-anung mga wikang programming ang sinusuportahan ng Godot?"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -1500,10 +1500,13 @@ msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Kung gumagamit ka ng kompyuter na pumapayag na palitan ang graphics card mo, "
+"katulad ng NVIDIA Optimus, maari mong gamitan ang dedicated graphics card "
+"upang patakbuhin ang Godot."
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
-msgstr "Napakatagal magumpisa ng proyekto."
+msgstr "Napakatagal magumpisa ang proyekto."
 
 #: ../../docs/about/troubleshooting.rst:39
 msgid ""
@@ -1592,6 +1595,7 @@ msgstr ""
 #: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
+"Hindi naka-gitna ang tabing ng proyekto kapag pinapatakbo ang proyekto."
 
 #: ../../docs/about/troubleshooting.rst:89
 msgid ""
@@ -1606,6 +1610,8 @@ msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Tumatakbo lang ang proyekto kapag galing sa editor, pero nabibigong mag-"
+"ankat ng mga file kapag tumtatakbo ito mula sa isang exported na kopya."
 
 #: ../../docs/about/troubleshooting.rst:97
 msgid ""
@@ -1634,6 +1640,8 @@ msgstr "Talatampukan (Listahan ng mga feature)"
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Ang layunin ng pahina na ito ay maitala lahat ng tampok na kasalukuyang "
+"sinusuportahan ng Godot."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1687,15 +1695,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 at pataas."
 
 #: ../../docs/about/list_of_features.rst:35
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "IOS 10.0 at pataas."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ""
+msgstr ":ref:`Mga Console <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:37
 msgid ""
@@ -1801,6 +1809,8 @@ msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Lumikha ng sarili niyong plugin gamit ng GDScript upang magdagdag ng mga "
+"bagong tampok o pabilisin ang paggawa mo."
 
 #: ../../docs/about/list_of_features.rst:75
 msgid ""
@@ -2513,7 +2523,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "MIDI input."
-msgstr ""
+msgstr "Input ng MIDI."
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "No support for MIDI output yet."
@@ -2521,7 +2531,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:370
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**Mga Ginagamit na API:**"
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "*Windows:* WASAPI."
@@ -2545,15 +2555,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "**Formats:**"
-msgstr ""
+msgstr "**Mga Format:**"
 
 #: ../../docs/about/list_of_features.rst:383
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr ""
+msgstr "*Mga Imahe:* Tingnan ang :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:384
 msgid "*Audio:*"
-msgstr ""
+msgstr "*Audio:*"
 
 #: ../../docs/about/list_of_features.rst:386
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2561,7 +2571,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:387
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:388
 msgid "MP3."
@@ -2657,15 +2667,15 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:422
 #: ../../docs/tutorials/navigation/index.rst:2
 msgid "Navigation"
-msgstr ""
+msgstr "Nabigasyon"
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "Algoritmong A* para sa 2D at 3D."
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "Navigation meshes."
-msgstr ""
+msgstr "Mga Navigation Meshes."
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2731,7 +2741,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:452
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "Internasyonalisasyon"
 
 #: ../../docs/about/list_of_features.rst:454
 msgid "Full support for Unicode including emoji."
@@ -2813,11 +2823,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:481
 msgid "Mobile"
-msgstr ""
+msgstr "Mobile"
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "Mga in-app purchases sa Android at iOS."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Support for advertisements using third-party modules."
@@ -2847,7 +2857,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:495
 msgid "GUI system"
-msgstr ""
+msgstr "Sistema ng GUI"
 
 #: ../../docs/about/list_of_features.rst:497
 msgid ""
@@ -2861,11 +2871,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:502
 msgid "Buttons."
-msgstr ""
+msgstr "Mga Pindutan."
 
 #: ../../docs/about/list_of_features.rst:503
 msgid "Checkboxes, check buttons, radio buttons."
-msgstr ""
+msgstr "Mga kahong pantsek, pindutang pantsek, at mga pindutang radyo."
 
 #: ../../docs/about/list_of_features.rst:504
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
@@ -2881,7 +2891,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:507
 msgid "Labels."
-msgstr ""
+msgstr "Mga Label."
 
 #: ../../docs/about/list_of_features.rst:508
 msgid ""
@@ -2945,7 +2955,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "**Theming:**"
-msgstr ""
+msgstr "**Pagtetema:**"
 
 #: ../../docs/about/list_of_features.rst:529
 msgid "Built-in theme editor."
@@ -2979,7 +2989,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "Animation"
-msgstr ""
+msgstr "Animasyon"
 
 #: ../../docs/about/list_of_features.rst:545
 msgid "Direct kinematics and inverse kinematics."
@@ -3109,11 +3119,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:594
 msgid "Godot 4.0 will be written in C++17."
-msgstr ""
+msgstr "Ang Godot 4.0 ay isusulat sa C++17."
 
 #: ../../docs/about/list_of_features.rst:596
 msgid "Licensed under the permissive MIT license."
-msgstr ""
+msgstr "Nakalisensya sa ilalim ng permissive MIT license."
 
 #: ../../docs/about/list_of_features.rst:598
 msgid ""
@@ -3130,7 +3140,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Mga pagbabago sa documentasyon"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -3149,23 +3159,23 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:15
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "Mga bagong tutorial mula bersyong 3.1"
 
 #: ../../docs/about/docs_changelog.rst:18
 #: ../../docs/about/docs_changelog.rst:118
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Pagkakadalow ng paggawa ng proyekto"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/optimization/index.rst:70
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
@@ -3181,7 +3191,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Math"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
@@ -3208,7 +3218,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:170
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Pagsheshade"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid "Your First Shader Series:"
@@ -3240,7 +3250,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
@@ -3254,7 +3264,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:185
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Mga Plugin"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
@@ -3272,7 +3282,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:196
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "Pagmumulti-threading"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
@@ -3311,7 +3321,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/optimization/index.rst:2
 msgid "Optimization"
-msgstr ""
+msgstr "Pagbibilis"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
@@ -3324,7 +3334,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:99
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ../../docs/about/docs_changelog.rst:101
 msgid ":ref:`doc_complying_with_licenses`"
@@ -3408,7 +3418,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:140 ../../docs/tutorials/3d/index.rst:2
 #: ../../docs/tutorials/optimization/index.rst:79
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
@@ -3426,7 +3436,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/index.rst:2
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:246
 msgid "Physics"
-msgstr ""
+msgstr "Pisika"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
@@ -3455,7 +3465,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:164
 #: ../../docs/tutorials/viewports/index.rst:2
 msgid "Viewports"
-msgstr ""
+msgstr "Mga Tanawan (Viewport)"
 
 #: ../../docs/about/docs_changelog.rst:166
 msgid ":ref:`doc_viewport_as_texture`"
@@ -3551,7 +3561,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:20
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr ""
+msgstr "Pagkukompayl"
 
 #: ../../docs/about/docs_changelog.rst:216
 msgid ":ref:`doc_optimizing_for_size`"
@@ -3564,7 +3574,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:220
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Paggagawa ng Engine"
 
 #: ../../docs/about/docs_changelog.rst:222
 msgid ":ref:`doc_binding_to_external_libraries`"
@@ -3699,23 +3709,23 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
-msgstr ""
+msgstr "**Bersyon**"
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Release date**"
-msgstr ""
+msgstr "**Petsa ng paglabas**"
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Support level**"
-msgstr ""
+msgstr "**Antas ng Suporta**"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "Godot 4.0"
-msgstr ""
+msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "~2022 (see below)"
-msgstr ""
+msgstr "~2022 (tignan sa ibaba)"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "|unstable| *Current focus of development (unstable).*"
@@ -3723,11 +3733,11 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Godot 3.5"
-msgstr ""
+msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Q1 2022"
-msgstr ""
+msgstr "Ika-1 kuwarter ng 2022"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -3782,7 +3792,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:105
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr ""
+msgstr "|eol| Hindi na sinusuportahan (huling update: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:107
 msgid "Godot 3.0"
@@ -3932,10 +3942,16 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"Mula sa **Templates** tab, maari mong i-download ang mga open source project "
+"templates at mga demo mula sa Asset Library upang tulungan kang magsimula "
+"nang mas mabilis. Piliin lang ang template o demo na gusto mo, pindutin ang "
+"download at kung tapos na ay saka pindutin ang install at piliin kung saan "
+"mo gusto mapunta ang proyekto mo. Maari mong matutunan pa ito sa :ref:"
+"`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
-msgstr ""
+msgstr "Lumikha o umangkat ng proyekto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
 msgid ""
@@ -3943,6 +3959,10 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
+"Para lumikha ng bagong proyekto, pindutin lang ang pindutan ng ``Bagong "
+"Proyekto`` sa kanan. Dito maari mong bigyan ito ng pangalan. Pagkatapos ay "
+"pumli ng bagong polder sa kompyuter mo kung saan i-sesave ito at pumili ng "
+"renderer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid ""
@@ -4040,6 +4060,8 @@ msgstr ""
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Makikita mo ang apat na pindutan ng workspace mo sa itaas: 2D, 3D, Skrip at "
+"AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -5676,7 +5698,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr ""
+msgstr "Ang una mong laro"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
@@ -5684,7 +5706,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/introduction.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Pangkalahatang Ideya"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -5719,7 +5741,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 #: ../../docs/tutorials/misc/state_design_pattern.rst:234
 msgid "Project setup"
-msgstr ""
+msgstr "Pagsasaayos ng Proyekto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:32
 msgid ""
@@ -5728,6 +5750,10 @@ msgid ""
 "sounds you'll be using to make the game. Unzip these files in your project "
 "folder."
 msgstr ""
+"Buksan ang Godot at gumawa ng bagong proyekto. Pagkatapos i-download ang :"
+"download:`dodge_assets.zip <files/dodge_assets.zip>`. Nilalaman nito ang mga "
+"imahe at mga tunog na gagamitin mo para sa paggagawa sa laro. I-unzip ang "
+"mga file na ito sa polder ng proyekto mo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:37
 msgid ""
@@ -5735,6 +5761,9 @@ msgid ""
 "you haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation "
 "of setting up a project and using the editor."
 msgstr ""
+"Palagay namin na may alam ka sa Godot editor. Kung hindi mo pa nabasa ang :"
+"ref:`doc_scenes_and_nodes`, gawin mo na para sa pagpapaliwanag ng pag-setup "
+"ng proyekto at sa paggamit ng editor."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:41
 msgid ""
@@ -12517,7 +12546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid "Open 2D Editor"
-msgstr ""
+msgstr "Buksan ang 2D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:29
 msgid ":kbd:`Ctrl + F1`"
@@ -12533,7 +12562,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 msgid "Open 3D Editor"
-msgstr ""
+msgstr "Buksan ang 3D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:31
 #: ../../docs/getting_started/editor/default_key_mapping.rst:445
@@ -12614,7 +12643,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid "Previous tab"
-msgstr ""
+msgstr "Nakaraang tab"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:41
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -12646,7 +12675,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid "Open Scene"
-msgstr ""
+msgstr "Magbukas ng Eksena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:45
 msgid ":kbd:`Ctrl + O`"
@@ -12662,7 +12691,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid "Close Scene"
-msgstr ""
+msgstr "Isara ang Eksena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:47
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -12678,7 +12707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Buksan Muli ang Nasarang Eksena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:49
 #: ../../docs/getting_started/editor/default_key_mapping.rst:319
@@ -12728,7 +12757,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Iimpok Lahat ng Mga Eksena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:55
 #: ../../docs/getting_started/editor/default_key_mapping.rst:323
@@ -12826,7 +12855,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:67
 msgid "Quit"
-msgstr ""
+msgstr "Umalis"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:67
 msgid ":kbd:`Ctrl + Q`"
@@ -12858,7 +12887,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:71
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Kumuha ng Screenshot"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:71
 msgid ":kbd:`Ctrl + F12`"
@@ -12874,7 +12903,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:73
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Pumalit sa Buong Tabing"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:73
 msgid ":kbd:`Shift + F11`"
@@ -12890,7 +12919,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:75
 msgid "Play"
-msgstr "Ipalabas"
+msgstr "Patakbuhin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:75
 #: ../../docs/getting_started/editor/default_key_mapping.rst:405
@@ -12958,7 +12987,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:83
 msgid "Play Custom Scene"
-msgstr ""
+msgstr "Patakbuhin ang Pinasadyang Eksena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:83
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12976,7 +13005,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:85
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Palakihin ang Babang Tabing"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:85
 msgid ":kbd:`Shift + F12`"
@@ -13856,7 +13885,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:236
 #: ../../docs/getting_started/editor/default_key_mapping.rst:309
 msgid "Find in Files"
-msgstr ""
+msgstr "Hanapin sa mga file"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:236
 #: ../../docs/getting_started/editor/default_key_mapping.rst:309
@@ -14485,7 +14514,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:350
 msgid "Find Node Type"
-msgstr ""
+msgstr "Hanapin ang Uri ng Node"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:350
 msgid "``visual_script_editor/find_node_type``"
@@ -14493,7 +14522,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:352
 msgid "Copy Nodes"
-msgstr ""
+msgstr "Kopyahin ang mga Node"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:352
 msgid "``visual_script_editor/copy_nodes``"
@@ -14517,7 +14546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:358
 msgid "Delete Selected"
-msgstr ""
+msgstr "Ibura ang Nakapili"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:358
 #: ../../docs/getting_started/editor/default_key_mapping.rst:415
@@ -14543,7 +14572,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:360
 msgid "Make Function"
-msgstr ""
+msgstr "Gumawa ng Punsyon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:360
 msgid ":kbd:`Ctrl + G`"
@@ -14555,7 +14584,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:362
 msgid "Edit Member"
-msgstr ""
+msgstr "Ayusin ang Kasapi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:362
 msgid ":kbd:`Ctrl + E`"
@@ -14717,7 +14746,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:413
 msgid "Create Folder"
-msgstr ""
+msgstr "Gumawa ng Folder"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:413
 msgid ":kbd:`Ctrl + N`"
@@ -14794,7 +14823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:425
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Daungan ng FileSystem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:430
 msgid "Copy Path"
@@ -14807,7 +14836,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:432
 #: ../../docs/getting_started/editor/default_key_mapping.rst:453
 msgid "Duplicate"
-msgstr ""
+msgstr "Doblehin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:432
 msgid "``filesystem_dock/duplicate``"
@@ -14883,7 +14912,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:466
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Doblehin ang Napili"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:466
 msgid "``animation_editor/duplicate_selection``"
@@ -14891,7 +14920,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:468
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Doblehin Ang Napalit ng Lugar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:468
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14907,7 +14936,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:470
 msgid "Delete Selection"
-msgstr ""
+msgstr "Alisin ang Nakapili"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:470
 msgid "``animation_editor/delete_selection``"
@@ -14915,7 +14944,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:472
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Pumunta Sa Susunod Na Hakbang"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:472
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14931,7 +14960,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:474
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Bumalik sa Nakaraang Hakbang"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:474
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14983,7 +15012,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:489
 msgid "Bucket Fill"
-msgstr ""
+msgstr "Papuno"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:489
 msgid "``tile_map_editor/bucket_fill``"
@@ -15083,7 +15112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:518
 msgid "Next Coordinate"
-msgstr ""
+msgstr "Susunod na Koordinayt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:518
 msgid "``tileset_editor/next_shape``"
@@ -15091,7 +15120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:520
 msgid "Previous Coordinate"
-msgstr ""
+msgstr "Nakaraang Koordinayt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:520
 msgid ":kbd:`PgUp`"
@@ -25989,7 +26018,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr ""
+msgstr "Magluwas"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -77903,7 +77932,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
-msgstr ""
+msgstr "Mga Pagbabago"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -98557,15 +98586,15 @@ msgstr "Mga text tutorial"
 
 #: ../../docs/community/tutorials.rst:48
 msgid "`GDScript website by Andrew Wilkes <https://gdscript.com>`__"
-msgstr ""
+msgstr "`GDScript website ni Andrew Wilkes <https://gdscript.com>`__"
 
 #: ../../docs/community/tutorials.rst:49
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
-msgstr ""
+msgstr "`Godot Recipes ni KidsCanCode <http://godotrecipes.com/>`__"
 
 #: ../../docs/community/tutorials.rst:50
 msgid "`Steincodes <https://steincodes.tumblr.com>`__"
-msgstr ""
+msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:53
 msgid "Devlogs"
