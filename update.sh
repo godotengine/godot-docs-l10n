@@ -151,7 +151,7 @@ if [ "$update_sphinx_po" = true ]; then
       dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
       mkdir -p "$dirpath"
       output="$dirpath/$page.po"
-      msgmerge --lang="$lang" -C "$po_docs" "$template" "$template" -o "$output" &
+      msgmerge --lang="$lang" --no-location -C "$po_docs" "$template" "$template" -o "$output" &
     done
 
     po_classes=$CLASSES_DIR"/$lang.po"
@@ -165,7 +165,7 @@ if [ "$update_sphinx_po" = true ]; then
       dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
       mkdir -p "$dirpath"
       output="$dirpath/$page.po"
-      msgmerge --lang="$lang" -C "$po_classes" "$template" "$template" -o "$output" &
+      msgmerge --lang="$lang" --no-location -C "$po_classes" "$template" "$template" -o "$output" &
     done
   done
 fi
