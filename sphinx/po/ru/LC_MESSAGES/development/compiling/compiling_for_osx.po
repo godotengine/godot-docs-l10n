@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,60 +17,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:4
 msgid "Compiling for macOS"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:9
 msgid "Requirements"
 msgstr "Требования"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:11
 #, fuzzy
 msgid "For compiling under macOS, the following is required:"
 msgstr "Для компиляции под Windows, необходимо следующее:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:13
 #, fuzzy
 msgid "`Python 3.5+ <https://www.python.org>`_."
 msgstr "`SCons <https://www.scons.org>`__ система сборки."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:14
 #, fuzzy
 msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
 msgstr "`SCons <https://www.scons.org>`__ система сборки."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:17
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:19
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
 "SCons and yasm using the following command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:24
 msgid ""
 "Installing Homebrew will also fetch the Command Line Tools for Xcode "
 "automatically if you don't have them already."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:27
 msgid ""
 "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
 "you can easily install SCons and yasm using the following command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:33
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -78,29 +67,23 @@ msgstr ""
 "Для общего обзора использования SCons в Godot, смотрите :ref:"
 "`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:37
 msgid "Compiling"
 msgstr "Компиляция"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:39
 msgid "Start a terminal, go to the root directory of the engine source code."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:41
 msgid "To compile for Intel (x86-64) powered Macs, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:45
 msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:49
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands and then use ``lipo`` to bundle them together::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:53
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "``bin/`` subdirectory. This executable file contains the whole engine and "
@@ -108,75 +91,62 @@ msgid ""
 "manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:58
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:63
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_tools.app``. Typically, for an "
 "optimized editor binary built with ``target=release_debug``::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:73
 msgid "Compiling a headless/server build"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid ""
 "To compile a debug *server* build which can be used with :ref:`remote "
 "debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:85
 msgid ""
 "To compile a release *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:91
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:93
 msgid ""
 "To build macOS export templates, you have to compile with ``tools=no`` (no "
 "editor) and respectively for ``target=release`` (release template) and "
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:97
 msgid ""
 "Official templates are universal binaries which support both Intel x86_64 "
 "and ARM64 architectures. You can also create export templates that support "
 "only one of those two architectures by leaving out the ``lipo`` step below."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:101
 msgid "For Intel x86_64::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:106
 msgid "For ARM64 (Apple M1)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:111
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands blocks and then use ``lipo`` to bundle them together::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:117
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_template.app``. The release and "
@@ -187,17 +157,14 @@ msgid ""
 "specific binaries)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:130
 msgid ""
 "You can then zip the ``osx_template.app`` folder to reproduce the ``osx."
 "zip`` template from the official Godot distribution::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:136
 msgid "Cross-compiling for macOS from Linux"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:138
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
@@ -205,37 +172,31 @@ msgid ""
 "to use macOS as a target. First, follow the instructions to install it:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:143
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
 "e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:149
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:151
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:154
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:160
 msgid "Now you can compile with SCons like you normally would::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:164
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "

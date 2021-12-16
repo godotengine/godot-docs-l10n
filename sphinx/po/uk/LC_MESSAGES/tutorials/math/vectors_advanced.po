@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced vector math"
-msgstr ""
+msgstr "Поглиблена векторна алгебра"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr "%1 площин"
+msgstr "Площини"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
 "The dot product has another interesting property with unit vectors. Imagine "
 "that perpendicular to that vector (and through the origin) passes a plane. "
@@ -33,8 +30,12 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Скалярний добуток має одну цікаву властивість, пов'язану з одиничними "
+"векторами. Уявіть, нескінченну площину, перпендикулярну до цього вектора, "
+"яка проходить крізь початок координат . Площина ділить простір на "
+"верхній(над площиною) та нижній (під площиною) *півпростори*. І, напротивагу "
+"тому, що думає більшість людей, їх можна використовувати в 2D геометрії:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
 "Unit vectors that are perpendicular to a surface (so, they describe the "
 "orientation of the surface) are called **unit normal vectors**. Though, "
@@ -43,8 +44,14 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"Перпендикулярні до поверхні одиничні вектори (які описують орієнтацію "
+"поверхні) називаються **одиничними нормальними векторами**. Але частіше їх "
+"називають просто *нормалями*. Нормалі мають площини, вони використовуються в "
+"3D геометрії (щоби визначати куди дивиться кожна грань чи вершина), тощо. "
+"**Нормаль** — це **одиничний вектор**, який так називається через своє "
+"використання (так само як точка (0,0) називається початком координат просто "
+"тому, що ми вирішили відраховувати координати з цієї точки!)."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
 "It's as simple as it looks. The plane passes by the origin and the surface "
 "of it is perpendicular to the unit vector (or *normal*). The side towards "
@@ -53,61 +60,75 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"Все настільки ж просто як здається. площина проходить крізь нульову точку а "
+"її поверхня перпендикулярна до одиничного вектора (або *нормалі*). Сторона, "
+"яка дивиться в той же бік, що й нормаль відділяє верхній півпростір, а інша "
+"— нижній півпростір. В 3D все так само, але площина — це тепер нескінченна "
+"поверхня (уявіть безконечний лист паперу, який можна крутити навколо "
+"нульової точки) замість лінії."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
-msgstr ""
+msgstr "Відстань до площини"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:35
 msgid ""
 "Now that it's clear what a plane is, let's go back to the dot product. The "
 "dot product between a **unit vector** and any **point in space** (yes, this "
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"Тепер, коли вам ясно, що таке площина, повернімось до скалярного добутку. "
+"Результат скалярного добутку між *одиничним вектором* та будь-якою *точкою в "
+"просторі* (так, цього разу ми множимо вектор на положення) являється "
+"*відстанню від точки до площини*:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
 msgstr ""
+"При чому не просто відстанню. Якщо точка знаходиться в нижньому півпросторі, "
+"то відстань буде від'ємною:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "Так ми можемо дізнатись, з якого боку площини знаходиться точка."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr ""
+msgstr "Подалі від центру"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
 "I know what you are thinking! So far this is nice, but *real* planes are "
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"Знаю, ви зараз думаєте: „Це все цікаво, але справжні площини розкидані по "
+"всьому просторі, а не лише на початку координат!“. Ви хочете справжніх "
+"*площин* і ви хочете їх *зараз*."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
 "Remember that planes not only split space in two, but they also have "
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"Пам'ятайте, що площини не лише розділяють простір надвоє, а й мають "
+"*полярність*. Може статись так, що дві площини ідеально збігаються одна з "
+"одною, але вони дивляться у протилежні боки, а їх верхні та нижні "
+"напівпростори поміняні місцями."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
 "With this in mind, let's describe a full plane as a **normal** *N* and a "
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"Враховуючи це, опишімо площину, через **нормаль** *N* та **відстань до "
+"початку координат** *D*, яка є числом. Таким чином площину можна описати як "
+"N і D. Наприклад:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"Для 3D, Godot має вбудований тип :ref:`Plane <class_Plane>`який цим "
+"займається."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""
 "Basically, N and D can represent any plane in space, be it for 2D or 3D "
 "(depending on the amount of dimensions of N) and the math is the same for "
@@ -115,66 +136,76 @@ msgid ""
 "plane, travelling in N direction. As an example, imagine you want to reach a "
 "point in the plane, you will just do:"
 msgstr ""
+"N і D можуть описати будь-яку площину в просторі, як в 2D, так і в 3D "
+"(залежно від розмірності вектора N) і всі формули теж працюють у різних "
+"вимірах. Завжди, D — це відстань від початку координат до площини в напрямку "
+"N. Наприклад, якщо ви хочете досягти хоч якоїсь точки на площині, то просто "
+"обрахуйте:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:91
 msgid ""
 "This will stretch (resize) the normal vector and make it touch the plane. "
 "This math might seem confusing, but it's actually much simpler than it "
 "seems. If we want to tell, again, the distance from the point to the plane, "
 "we do the same but adjusting for distance:"
 msgstr ""
+"Так ми розтягнемо (або скоротимо) вектор нормалі, щоби він торкався площини. "
+"Спершу може бути незрозуміло, але все простіше, ніж здається. Якщо ми хочемо "
+"знайти відстань від точки до площини, ми робимо все те ж саме, а потім "
+"вираховуємо відстань:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:105
 msgid "The same thing, using a built-in function:"
-msgstr ""
+msgstr "Те ж саме, але з використанням вбудованої функції:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:116
 msgid "This will, again, return either a positive or negative distance."
-msgstr ""
+msgstr "Ця відстань теж може бути як додатною, так і від'ємною."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:118
 msgid ""
 "Flipping the polarity of the plane can be done by negating both N and D. "
 "This will result in a plane in the same position, but with inverted negative "
 "and positive half spaces:"
 msgstr ""
+"Щоб перевернути площину потрібно замінити N та D на протилежні відповідники. "
+"Результатом цих дій буде площина, яка знаходитиметься на тому ж місці, але "
+"вивернутими напівпросторами:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:133
 msgid ""
 "Of course, Godot also implements this operator in :ref:`Plane "
 "<class_Plane>`, so doing:"
 msgstr ""
+"Звісно, Godot має операцію для цього у класі :ref:`Plane <class_Plane>, тому "
+"код:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:145
 msgid "Will work as expected."
-msgstr ""
+msgstr "Буде працювати так, як ви очікуєте."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:147
 msgid ""
 "So, remember, a plane is just that and its main practical use is calculating "
 "the distance to it. So, why is it useful to calculate the distance from a "
 "point to a plane? It's extremely useful! Let's see some simple examples.."
 msgstr ""
+"Запам'ятайте, головна користь від площини: ви можете визначити відстань до "
+"неї. Що ж в цьому такого корисного? Багато чого! Розгляньмо декілька "
+"прикладів..."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:153
 msgid "Constructing a plane in 2D"
-msgstr ""
+msgstr "Побудова площини в 2D"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:155
 msgid ""
 "Planes clearly don't come out of nowhere, so they must be built. "
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"Площини не беруться нізвідки, їх потрібно створювати. Створювати їх в 2D "
+"дуже просто. Для цього потрібен вектор з точкою або дві точки у просторі."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
 "In the case of a normal and a point, most of the work is done, as the normal "
 "is already computed, so just calculate D from the dot product of the normal "
 "and the point."
 msgstr ""
+"У першому випадку, більша частина роботи вже зроблена, так як нормаль вже "
+"обчислена. Тому просто обчисліть D взявши скалярний добуток нормалі та точки."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:174
 msgid ""
 "For two points in space, there are actually two planes that pass through "
 "them, sharing the same space but with normal pointing to the opposite "
@@ -182,59 +213,72 @@ msgid ""
 "must be obtained first, and then it needs to be rotated 90° degrees to "
 "either side:"
 msgstr ""
+"Натомість, для двох точок, існує дві площини, які проходять крізь них, але "
+"розвернуті в протилежні боки. Щоб обчислити нормаль з двох точок, спершу "
+"потрібно знайти вектор напрямку між ними, а потім повернути його на 90° в "
+"одну зі сторін:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
+"Далі все аналогічно попередньому прикладу, обидві точки point_a, або point_b "
+"підходять, так як вони лежать на одній площині:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
-msgstr ""
+msgstr "Зробити це ж саме в 3D трохи складніше, нижче описано, як саме."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
-msgstr ""
+msgstr "Приклади площин"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"Ось простий приклад ситуації, де в нагоді стануть площини. Уявіть, що у вас "
+"є `опуклий <https://uk.wikipedia.org/wiki/Опукла_множина>`__ багатокутник: "
+"прямокутник, трапеція, трикутник чи будь-який інший багатокутник в якого "
+"немає увігнутих сторін."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"Для кожної сторони багатокутника, побудуймо пряму, яка проходить крізь цю "
+"сторону. Коли ми матимемо список всіх таких площин, ми зможемо робити багато "
+"цікавих речей, наприклад: перевіряти чи знаходиться точка всередині "
+"багатокутника."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
+"Якщо пройшовшись по всім площинам ми знайдемо площину, для якої відстань від "
+"цікавої нам точки до неї додатна, то це означатиме, що ця точка знаходиться "
+"за межами багатокутника. Якщо ж таких площин немає, то точка знаходиться "
+"всередині."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:238
-#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "У коді, це виглядає приблизно ось так:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
 "This is called the Separating Axis Theorem (or SAT) and most physics engines "
 "use this to detect collision."
 msgstr ""
+"Круто, а? Але все може бути навіть краще! Доклавши трохи більше зусиль ми "
+"можемо дізнатись чи перетинаються між собою два опуклих багатокутники. "
+"Спосіб зробити це називається „теорема про розділову гіперплощину“. Її "
+"використовують більшість інженерів та фізиків для визначення зіткнень "
+"об'єктів."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -242,20 +286,28 @@ msgid ""
 "it. This check is performed with the planes of A against the points of B, "
 "and then with the planes of B against the points of A:"
 msgstr ""
+"Якщо для визначення того, чи знаходиться точка ззовні від багатокутника, "
+"достатньо знайти сторону яка має додатну відстань до неї; то для другого "
+"багатокутника, потрібно знайти в першому таку сторону, для якої *всі* "
+"*вершини* *другого* *багатокутника* мають додатну відстань до неї. Спершу ми "
+"перевіряємо всі сторони прямокутника A та точки прямокутника B, потім — всі "
+"сторони B й точки A:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
 "usually just handled by splitting the concave polygon into smaller convex "
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
+"Як можете побачити, площини дуже корисні. І це лише вершина айсберга. "
+"Можливо вас цікавлять увігнуті многокутники. Зазвичай їх розділяють на "
+"декілька опуклих многокутників або використовують техніку що називається "
+"`БРП <https://uk.wikipedia.org/wiki/Бінарне_розбиття_простору>`__ (яку "
+"більше майже не використовують)."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
-msgstr ""
+msgstr "Визначення зіткнень в 3D"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -263,65 +315,79 @@ msgid ""
 "pretty well) but it's used by almost all physics engines and collision "
 "detection libraries :)"
 msgstr ""
+"За те, що ви були терплячими та витримали цей довжелезний урок, ось вам ще "
+"одна мудрість. Можливо вона вам не знадобиться (Godot і сам прекрасно "
+"визначає зіткнення об'єктів) але вона корисна для розуміння більшости "
+"фізичних рушіїв та бібліотек:)"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
+"Пам'ятаєте, як для визначення перетину опуклих многокутників в 2D ми "
+"розглядали їх як набір двовимірних площин(прямих)? Ви могли визначити чи "
+"точка була всередині опуклої фігури або чи дві двовимірні фігури "
+"перетинаються."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
+"Цей підхід працює і в 3D. Якщо два 3D багатогранника перетинаються, вам не "
+"вдасться знайти розділову площину. Якщо ж така площина знайдена, то фігури "
+"напевно не перетинаються."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
 "side. This plane is always one of the face-planes of either polygon A or "
 "polygon B."
 msgstr ""
+"Нагадуємо, що площина розділова, якщо всі точки багатокутника A знаходяться "
+"з одного боку площини, а всі точки B — з іншого. Ця площина завжди лежить на "
+"одній зі сторін одного з багатокутників A чи B."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
+"В 3D ж, існує проблема з цим підходом, бо іноді трапляється, що знайти "
+"розділову площину неможливо. Наприклад в такій ситуації:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
+"Щоб уникнути такого, потрібно перевірити ще декілька площин. Ці площини — "
+"векторний добуток ребер многогранника A і векторний добуток ребер "
+"многогранника B"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
-msgstr ""
+msgstr "Кінцевий алгоритм виглядає десь так:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:589
 #, fuzzy
 msgid "More information"
 msgstr "Докладніше"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:591
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "article:"
 msgstr ""
+"Щоб дізнатись більше про використання векторної математики в Godot, "
+"почитайте цю статтю:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:593
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:595
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video series \"Essence of Linear Algebra\": https://www.youtube."
 "com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
 msgstr ""
+"Якщо вам хотілося б кращого пояснення, погляньте на прекрасну серію відео "
+"\"Essence of Linear Algebra\" від 3Blue1Brown: https://www.youtube.com/watch?"
+"v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"

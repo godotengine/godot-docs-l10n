@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/http_client_class.rst:4
 msgid "HTTP client class"
-msgstr "HTTP客户端类"
+msgstr "HTTP 客户端类"
 
-#: ../../docs/tutorials/networking/http_client_class.rst:6
 msgid ""
 ":ref:`HTTPClient <class_HTTPClient>` provides low-level access to HTTP "
 "communication. For a higher-level interface, you may want to take a look at :"
@@ -32,17 +30,16 @@ msgstr ""
 "高级的接口, 你可能需要看看 :ref:`HTTPRequest <class_HTTPRequest>` , 它有一个"
 "可用的教程 :ref:`here <doc_http_request_class>`."
 
-#: ../../docs/tutorials/networking/http_client_class.rst:12
 msgid ""
 "When exporting to Android, make sure to enable the [code]INTERNET[/code] "
 "permission in the Android export preset before exporting the project or "
 "using one-click deploy. Otherwise, network communication of any kind will be "
 "blocked by Android."
 msgstr ""
-"当导出到安卓时，在导出项目或使用一键部署之前，确保在安卓导出预设中启用"
-"[code]INTERNET[/code]权限。否则，任何形式的网络通信都会被安卓系统阻止。"
+"当导出到 Android 时，在导出项目或使用一键部署之前，确保在 Android 导出预设中"
+"启用 [code]INTERNET[/code] 权限。否则，任何形式的网络通信都会被 Android 系统"
+"阻止。"
 
-#: ../../docs/tutorials/networking/http_client_class.rst:17
 msgid ""
 "Here's an example of using the :ref:`HTTPClient <class_HTTPClient>` class. "
 "It's just a script, so it can be run by executing:"
@@ -50,6 +47,5 @@ msgstr ""
 "这是使用 :ref:`HTTPClient <class_HTTPClient>` 类的示例. 它只是一个脚本, 因此"
 "它可以通过执行以下命令来运行:"
 
-#: ../../docs/tutorials/networking/http_client_class.rst:30
 msgid "It will connect and fetch a website."
 msgstr "它将连接并获取一个网站."

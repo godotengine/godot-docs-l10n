@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:4
 #, fuzzy
 msgid "Using GridMaps"
 msgstr "GridMap(グリッドマップ)の使用"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:9
 msgid ""
 ":ref:`Gridmaps <class_GridMap>` are a tool for creating 3D game levels, "
 "similar to the way :ref:`TileMap <doc_using_tilemaps>` works in 2D. You "
@@ -40,7 +37,6 @@ msgstr ""
 "す。これは、無制限の量のLegoブロックでレベルを構築しているかのように、グリッ"
 "ドに配置できます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
@@ -48,11 +44,9 @@ msgstr ""
 "タイルマップのタイルで行うのと同じように、コリジョンとナビゲーションをメッ"
 "シュに追加できます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
 msgstr "サンプル・プロジェクト"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
@@ -60,7 +54,6 @@ msgstr ""
 "GridMapsの仕組みをくわしく知るには、サンプル・プロジェクト\\ :download:"
 "`gridmap_demo.zip <files/gridmap_demo.zip>`\\ をダウンロードしてください。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
@@ -68,11 +61,9 @@ msgstr ""
 "このプロジェクトを解凍してから、『インポート』ボタンでプロジェクトマネー"
 "ジャーに追加します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
 msgstr "MeshLibraryの作成"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:30
 msgid ""
 "To begin, you need a :ref:`class_MeshLibrary`, which is a collection of "
 "individual meshes that can be used in the gridmap. Open the "
@@ -83,7 +74,6 @@ msgstr ""
 "で使用するメッシュを集めたものです。『MeshLibrary_Source.tscn』シーンを開い"
 "て、MeshLibraryのセットアップ方法を見てみましょう。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
@@ -91,7 +81,6 @@ msgstr ""
 "ご覧のとおり、ルートには\\ :ref:`class_Spatial`\\ ノードがあり、そしていくつ"
 "かの\\ :ref:`class_MeshInstance`\\ ノードが子になっています。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
@@ -99,11 +88,9 @@ msgstr ""
 "もし、あなたのシーンに物理演算が不要であれば、これで完了です。しかし、ほとん"
 "どの場合はメッシュにコリジョンを追加したくなるでしょう。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
 msgstr "コリジョン"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:45
 msgid ""
 "You can manually assign a :ref:`class_StaticBody` and :ref:"
 "`class_CollisionShape` to each mesh. Alternatively, you can use the \"Mesh\" "
@@ -113,7 +100,6 @@ msgstr ""
 "`class_CollisionShape`を追加するという方法もありますが、『メッシュ』メニュー"
 "を選択すれば、メッシュデータからコリジョンを自動生成することもできます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""
 "Note that a \"Convex\" collision body will work better for simple meshes. "
 "For more complex shapes, select \"Create Trimesh Static Body\". Once each "
@@ -125,11 +111,9 @@ msgstr ""
 "ディとコリジョン シェイプが割り当てられたら、メッシュ ライブラリは使えるよう"
 "になります。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
 msgstr "マテリアル"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
@@ -137,11 +121,9 @@ msgstr ""
 "メッシュライブラリの生成時には、メッシュ内にあるマテリアルのみが使用され、"
 "ノードに設定したマテリアルは無視されます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
 msgstr "MeshLibraryのエクスポート"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
@@ -149,7 +131,6 @@ msgstr ""
 "ライブラリをエクスポートするには、シーン → 変換... → メッシュライブラリ...を"
 "クリックして、リソースとして保存します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
@@ -157,11 +138,9 @@ msgstr ""
 "\"MeshLibrary.tres\" という名前のプロジェクトで、既にエクスポートされた"
 "MeshLibraryを見つけることができます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
 msgstr "GridMap(グリッドマップ)の使用"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
 "Create a new scene and add a GridMap node. Add the mesh library by dragging "
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
@@ -171,7 +150,6 @@ msgstr ""
 "リソースファイルをドラッグし、インスペクタの[Theme]プロパティにドロップして、"
 "メッシュライブラリを追加します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
 "The \"Cell/Size\" property should be set to the size of your meshes. You can "
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
@@ -181,7 +159,6 @@ msgstr ""
 "デフォルト値のままにしておくことができます。\"Center Y\"プロパティを\"Off\"に"
 "設定します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:87
 msgid ""
 "Now you can start designing the level by choosing a tile from the palette "
 "and placing it with Left-Click in the editor window. To remove a tile, hold :"
@@ -191,7 +168,6 @@ msgstr ""
 "ることで、レベルの設計を開始できます。 タイルを削除するには、\\ :kbd:`Shift` "
 "を押しながら右クリックを使用します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:91
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
 "pressing :kbd:`S` rotates a tile around the y-axis."
@@ -199,7 +175,6 @@ msgstr ""
 "[グリッドマップ]メニューをクリックして、オプションとショートカットを表示しま"
 "す。たとえば、\\ :kbd:`S` を押すと、タイルがy軸を中心に回転します。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:96
 msgid ""
 "Holding :kbd:`Shift` and dragging with the left mouse button will draw a "
 "selection box. You can duplicate or clear the selected area using the "
@@ -209,7 +184,6 @@ msgstr ""
 "されます。 それぞれのメニューオプションを使用して、選択した領域を複製または消"
 "去できます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
@@ -217,11 +191,9 @@ msgstr ""
 "メニューでは、描画する軸を変更したり、描画面をその軸で上下に移動することもで"
 "きます。"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
 msgstr "コードでのGridMapの使用"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:110
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."

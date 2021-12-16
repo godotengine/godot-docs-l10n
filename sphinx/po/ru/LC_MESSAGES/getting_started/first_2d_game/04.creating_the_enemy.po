@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Creating the enemy"
+msgstr "Создание скелета"
+
+msgid ""
+"Now it's time to make the enemies our player will have to dodge. Their "
+"behavior will not be very complex: mobs will spawn randomly at the edges of "
+"the screen, choose a random direction, and move in a straight line."
+msgstr ""
+"Теперь пришло время сделать врагов, от которых нашему игроку предстоит "
+"уклоняться. Их поведение будет не очень сложным: толпы (мобы) будут "
+"появляться случайно по краям экрана, выбирать случайное направление и "
+"двигаться по прямой линии."
+
+msgid ""
+"We'll create a ``Mob`` scene, which we can then *instance* to create any "
+"number of independent mobs in the game."
+msgstr ""
+"Мы создадим сцену ``Mob``, которую затем сможем *инстанцировать*, чтобы "
+"создать любое количество независимых мобов в игре."
+
+msgid "Node setup"
+msgstr "Настройка узла"
+
+msgid "Click Scene -> New Scene and add the following nodes:"
+msgstr "Нажмите \"Сцена\" -> \"Новая сцена\" и добавьте следующие узлы:"
+
+msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (названный ``Mob``)"
+
+msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+
+msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+
+msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+
+msgid ""
+"Don't forget to set the children so they can't be selected, like you did "
+"with the Player scene."
+msgstr ""
+"Не забудьте настроить дочерние узлы, чтобы они не могли быть выбраны, как вы "
+"это делали со сценой игрока."
+
+msgid ""
+"In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
+"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
+"box. This will ensure the mobs do not collide with each other."
+msgstr ""
+"В свойствах :ref:`RigidBody2D <class_RigidBody2D>` установите в поле "
+"``Gravity Scale`` значение ``0``, чтобы моб не упал вниз. Кроме того, в "
+"разделе ``PhysicsBody2D`` выберите свойство ``Mask`` и снимите первый "
+"флажок. Это гарантирует, что мобы не столкнутся друг с другом."
+
+msgid ""
+"Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
+"player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
+"There are two images for each animation in the art folder."
+msgstr ""
+"Настройте :ref:`AnimatedSprite <class_AnimatedSprite>`, как вы сделали это "
+"для игрока. На этот раз у нас есть 3 анимации: ``fly`` (лететь), ``swim`` "
+"(плыть) и ``walk`` (ходить). В папке art есть две картинки для каждой "
+"анимации."
+
+msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
+msgstr "Установите \"Speed (FPS)\" на ``3`` для всех анимаций."
+
+#, fuzzy
+msgid "Set the ``Playing`` property in the Inspector to \"On\"."
+msgstr "Установите свойство ``Playing`` в инспекторе на \"Вкл\"."
+
+msgid ""
+"We'll select one of these animations randomly so that the mobs will have "
+"some variety."
+msgstr ""
+"Мы выберем одну из этих анимаций случайным образом, так что мобы будут иметь "
+"некоторое разнообразие."
+
+#, fuzzy
+msgid ""
+"Like the player images, these mob images need to be scaled down. Set the "
+"``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
+msgstr ""
+"Также как изображения игрока, изображения мобов нужно уменьшить. Установите "
+"для ``AnimatedSprite`` в свойстве ``Scale`` значение ``(0.75, 0.75)``."
+
+msgid ""
+"As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
+"align the shape with the image, you'll need to set the ``Rotation Degrees`` "
+"property to ``90`` (under \"Transform\" in the Inspector)."
+msgstr ""
+"Как и в сцене ``Player``, добавьте форму ``CapsuleShape2D`` для расчета "
+"столкновений. Чтобы выровнять фигуру с изображением, вам нужно установить "
+"свойство ``Rotation Degrees`` на значение ``90`` (в разделе \"Transform\" в "
+"инспекторе)."
+
+msgid "Save the scene."
+msgstr "Сохраните сцену."
+
+msgid "Enemy script"
+msgstr "Скрипт врага"
+
+#, fuzzy
+msgid "Add a script to the ``Mob`` like this:"
+msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+
+#, fuzzy
+msgid ""
+"Now let's look at the rest of the script. In ``_ready()`` we play the "
+"animation and randomly choose one of the three animation types:"
+msgstr ""
+"Теперь давайте посмотрим на остальную часть скрипта. В функции ``_ready()`` "
+"мы случайным образом выбираем один из трех типов анимации:"
+
+#, fuzzy
+msgid ""
+"First, we get the list of animation names from the AnimatedSprite2D's "
+"``frames`` property. This returns an Array containing all three animation "
+"names: ``[\"walk\", \"swim\", \"fly\"]``."
+msgstr ""
+"Сначала мы получаем список имён анимаций из свойства AnimatedSprite "
+"``frames``. Это возвращает массив, содержащий все три имени анимации: "
+"``[\"walk\", \"swim\", \"fly\"]``."
+
+msgid ""
+"We then need to pick a random number between ``0`` and ``2`` to select one "
+"of these names from the list (array indices start at ``0``). ``randi() % n`` "
+"selects a random integer between ``0`` and ``n-1``."
+msgstr ""
+"Дальше нам нужно выбрать случайное число между ``0`` и ``2``, чтобы выбрать "
+"имя одной из анимаций из списка (индексы массива начинаются с ``0``). "
+"Функция ``randi() % n`` выбирает случайное целое число между ``0`` и ``n-1``."
+
+msgid ""
+"You must use ``randomize()`` if you want your sequence of \"random\" numbers "
+"to be different every time you run the scene. We're going to use "
+"``randomize()`` in our ``Main`` scene, so we won't need it here."
+msgstr ""
+"Вы должны использовать ``randomize()``, если вы хотите, чтобы ваша "
+"последовательность \"случайных\" чисел отличалась при каждом запуске сцены. "
+"Мы будем использовать ``randomize()`` в нашей сцене ``Main``, поэтому здесь "
+"она нам не понадобится."
+
+msgid ""
+"The last piece is to make the mobs delete themselves when they leave the "
+"screen. Connect the ``screen_exited()`` signal of the "
+"``VisibilityNotifier2D`` node and add this code:"
+msgstr ""
+"Последняя часть - заставить мобов удалять себя, когда они покидают экран. "
+"Подключите сигнал ``screen exited()`` узла ``Visibility Notifier 2D`` и "
+"добавьте этот код:"
+
+msgid "This completes the `Mob` scene."
+msgstr "На этом заканчиваем работу над сценой `Mob`."
+
+msgid ""
+"With the player and enemies ready, in the next part, we'll bring them "
+"together in a new scene. We'll make enemies spawn randomly around the game "
+"board and move forward, turning our project into a playable game."
+msgstr ""

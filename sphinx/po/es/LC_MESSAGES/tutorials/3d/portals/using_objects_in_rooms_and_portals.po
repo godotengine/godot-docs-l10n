@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:2
 msgid "Using objects in Rooms and Portals"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:4
 msgid ""
 "Normally, when you use Godot, all objects that you can see (:ref:"
 "`VisualInstance<class_VisualInstance>`\\ s) are treated in the same way by "
@@ -31,23 +29,19 @@ msgid ""
 "render and process everything in the most efficient way."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:7
 #, fuzzy
 msgid "Portal mode"
 msgstr "Modo de exportación"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:9
 msgid ""
 "If you look in the inspector, every VisualInstance in Godot is derived from "
 "a :ref:`CullInstance<class_CullInstance>`, where you can set a "
 "``PortalMode``. This determines how objects will behave in the portal system."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:14
 msgid "STATIC"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:16
 msgid ""
 "The default mode for objects is ``STATIC``. Static objects are objects "
 "within rooms that will not move throughout the lifecycle of the level. "
@@ -55,11 +49,9 @@ msgid ""
 "objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:19
 msgid "DYNAMIC"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:21
 msgid ""
 "Dynamic mode is for objects that are expected to move during the game. But "
 "there is a limitation - **they must not move outside of their original "
@@ -67,11 +59,9 @@ msgid ""
 "might include moving platforms, and elevators."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:24
 msgid "ROAMING"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:26
 msgid ""
 "Roaming mode is for objects that can move between rooms. Things like players "
 "and enemies should be marked as roaming. These are more expensive to "
@@ -79,22 +69,18 @@ msgid ""
 "keep track of which room a roaming object is within."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:29
 msgid "GLOBAL"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:31
 msgid ""
 "Global mode is for objects that you don't want occlusion culled at all. "
 "Things like a main player's weapon, bullets and some particle effects are "
 "good candidates for ``GLOBAL`` mode."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:34
 msgid "IGNORE"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:36
 msgid ""
 "Ignore is a special mode for objects that will be essentially free in the "
 "system. Manual bounds (``-bound``) get converted to ignore portal mode "
@@ -104,11 +90,9 @@ msgid ""
 "want to show up in the editor (when RoomManager is inactive)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:39
 msgid "Should you place objects within rooms (in the scene tree) or not?"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:41
 msgid ""
 "``STATIC`` and ``DYNAMIC`` objects are ideally placed within rooms in the "
 "scene tree. The system needs to know which room they are in during "
@@ -117,12 +101,10 @@ msgid ""
 "want them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:44
 #, fuzzy
 msgid "Autoplace"
 msgstr "Autotiles"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:46
 msgid ""
 "However, for ease of use, it is also possible to place ``STATIC`` and "
 "``DYNAMIC`` objects *outside* the rooms in the scene tree, but within the "
@@ -132,7 +114,6 @@ msgid ""
 "with internal rooms, which have some restrictions for sprawling objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:50
 msgid ""
 "Note that if you place ``STATIC`` and ``DYNAMIC`` objects outside of rooms, "
 "they will not contribute to the room bound. If you are using the room "
@@ -141,7 +122,6 @@ msgid ""
 "branch of the scene tree to ensure the bound is correct."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:52
 msgid ""
 "``ROAMING`` and ``GLOBAL`` objects are recommended to be kept in a branch of "
 "the scene tree outside of any rooms or the RoomList. They *can* be placed "
@@ -150,12 +130,10 @@ msgid ""
 "objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:55
 #, fuzzy
 msgid "Object Lifetimes"
 msgstr "Lifetime (Tiempo de vida)"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:57
 msgid ""
 "It is important to note that the lifetime of ``STATIC`` and ``DYNAMIC`` "
 "objects is tied to the lifetime of the level, between when you call "
@@ -165,7 +143,6 @@ msgid ""
 "efficiently."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:59
 msgid ""
 "You should therefore not try to create or delete ``STATIC`` or ``DYNAMIC`` "
 "objects while the portal system is active. Doing so will cause the system to "
@@ -173,37 +150,30 @@ msgid ""
 "freely ``show()`` and ``hide()`` these objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:61
 #, fuzzy
 msgid "The sequence should be therefore:"
 msgstr "El árbol de la escena debería verse así:"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:63
 msgid "Load your level."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:64
 msgid "Place any ``STATIC`` or ``DYNAMIC`` objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:65
 msgid ""
 "Then run ``rooms_convert()`` *after* all the ``STATIC`` and ``DYNAMIC`` "
 "objects were added to the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:67
 msgid ""
 "Objects that are ``ROAMING``, ``GLOBAL`` or ``IGNORE`` can be freely created "
 "and deleted as required."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:70
 #, fuzzy
 msgid "Sprawling"
 msgstr "Swizzling"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:72
 msgid ""
 "Although users can usually ignore the internals of the portal system, they "
 "should be aware that it is capable of handling objects that are so big they "
@@ -213,7 +183,6 @@ msgid ""
 "**sprawling**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:74
 msgid ""
 "This means that if the corner of an object extends into a neighbouring room, "
 "but the object's main room is not showing (e.g. a train where the end is in "
@@ -222,12 +191,10 @@ msgid ""
 "are visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:77
 #, fuzzy
 msgid "Portal Margins"
 msgstr "Margin"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:79
 msgid ""
 "It is hard to place objects exactly at the edges of rooms, and if we chose "
 "to sprawl objects to the adjacent room the moment a portal was crossed (even "
@@ -238,7 +205,6 @@ msgid ""
 "gizmo as a red translucent area."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:81
 msgid ""
 "You can set the margin globally in the RoomManager. You can also override "
 "this margin value in any portal if you need to finetune things. As you edit "
@@ -246,12 +212,10 @@ msgid ""
 "3D editor viewport."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:84
 #, fuzzy
 msgid "Include in Bound"
 msgstr "Inclusión"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:86
 msgid ""
 "The support for objects that are larger than a single room has one side "
 "effect. You may not want to include some objects in the calculation of the "
@@ -259,7 +223,6 @@ msgid ""
 "object. See **Cull Instance > Include In Bound**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:88
 msgid ""
 "While sprawling works great for large moving objects, it also gives you a "
 "lot more leeway in level design. You can for instance create a large terrain "
@@ -267,12 +230,10 @@ msgid ""
 "the mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:91
 #, fuzzy
 msgid "Lighting"
 msgstr "Bakeo de iluminación"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:93
 msgid ""
 "In general lights are handled like any other visual instance. They can be "
 "placed in rooms, and they will sprawl to affect neighbouring rooms, "
@@ -284,7 +245,6 @@ msgid ""
 "`doc_rooms_and_portals_roomgroups` section for details on how to do this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:95
 msgid ""
 "Congratulations! You have now mastered the intermediate techniques required "
 "to use rooms and portals. You can use these to make games already, but there "

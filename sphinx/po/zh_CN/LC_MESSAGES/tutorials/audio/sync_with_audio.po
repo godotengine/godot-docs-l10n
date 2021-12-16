@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:4
 msgid "Sync the gameplay with audio and music"
 msgstr "同步游戏音频及音乐"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:9
 msgid ""
 "In any application or game, sound and music playback will have a slight "
 "delay. For games, this delay is often so small that it is negligible. Sound "
@@ -37,7 +34,6 @@ msgstr ""
 "往小到可以忽略不计. 在调用任意play()函数后, 声音效果将在几毫秒后出现. 对于音"
 "乐来说这并不重要, 因为在大多数游戏中它不会产生互动."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:11
 msgid ""
 "Still, for some games (mainly, rhythm games), it may be required to "
 "synchronize player actions with something happening in a song (usually in "
@@ -47,14 +43,12 @@ msgstr ""
 "不过, 对于一些游戏(主要是节奏游戏), 可能会需要让玩家的操作与歌曲中发生的事情"
 "同步(通常与BPM同步). 因此, 得到一个具体播放位置的更精确的定时信息就很有用了."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:13
 msgid ""
 "Achieving very low playback timing precision is difficult. This is because "
 "many factors are at play during audio playback:"
 msgstr ""
 "极其精准地定位播放时间是非常困难的. 因为在音频回放过程中有很多因素在起作用:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:15
 msgid ""
 "Audio is mixed in chunks (not continuously), depending on the size of audio "
 "buffers used (check latency in project settings)."
@@ -62,19 +56,15 @@ msgstr ""
 "音频以块(不连续)的形式混合在一起, 具体取决于所使用的音频缓冲区的大小(在项目设"
 "置中检查延迟)."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:16
 msgid "Mixed chunks of audio are not played immediately."
 msgstr "混合的音频块不会立即播放."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:17
 msgid "Graphics APIs display two or three frames late."
 msgstr "图形应用程序接口延迟显示两到三帧."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:18
 msgid "When playing on TVs, some delay may be added due to image processing."
 msgstr "当在电视上播放时, 由于图像处理可能会增加一些延迟."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:20
 msgid ""
 "The most common way to reduce latency is to shrink the audio buffers (again, "
 "by editing the latency setting in the project settings). The problem is that "
@@ -86,7 +76,6 @@ msgstr ""
 "问题是, 当延迟很小时, 声音混合将占用大量的CPU. 这就增加了跳音的风险(由于混合"
 "回调丢失, 导致声音出现裂缝)."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:22
 msgid ""
 "This is a common tradeoff, so Godot ships with sensible defaults that should "
 "not need to be altered."
@@ -94,7 +83,6 @@ msgstr ""
 "这是一种常见的折衷方案, 因此Godot附带了合理的默认值. 一般这些默认值不需要更"
 "改."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:24
 msgid ""
 "The problem, in the end, is not this slight delay but synchronizing graphics "
 "and audio for games that require it. Beginning with Godot 3.2, some helpers "
@@ -103,11 +91,9 @@ msgstr ""
 "归根结底, 问题并不在于这一点点的延迟, 而是同步游戏的画面和声音. 从Godot 3.2开"
 "始, 加入了一些辅助工具, 帮助获取更精确的播放时间."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:27
 msgid "Using the system clock to sync"
 msgstr "使用系统时钟同步"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:29
 msgid ""
 "As mentioned before, If you call :ref:`AudioStreamPlayer."
 "play()<class_AudioStreamPlayer_method_play>`, sound will not begin "
@@ -117,7 +103,6 @@ msgstr ""
 "play()<class_AudioStreamPlayer_method_play>` , 声音不会立即开始播放, 而是在音"
 "频线程处理下一个块时开始."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:31
 msgid ""
 "This delay can't be avoided but it can be estimated by calling :ref:"
 "`AudioServer."
@@ -127,7 +112,6 @@ msgstr ""
 "get_time_to_next_mix()<class_AudioServer_method_get_time_to_next_mix>` 来估"
 "算."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:33
 msgid ""
 "The output latency (what happens after the mix) can also be estimated by "
 "calling :ref:`AudioServer."
@@ -136,7 +120,6 @@ msgstr ""
 "输出延迟(混音后的情况)可以通过调用 :ref:`AudioServer."
 "get_output_latency()<class_AudioServer_method_get_output_latency>` 来估算."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:35
 msgid ""
 "Add these two and it's possible to guess almost exactly when sound or music "
 "will begin playing in the speakers during *_process()*:"
@@ -144,14 +127,12 @@ msgstr ""
 "把这两样加起来, 就可以几乎准确地猜到 *_process()* 中的音效或音乐什么时候开始"
 "在扬声器中播放:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:79
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
 "sync with the system clock, the timing information will slowly drift away."
 msgstr ""
 "然而, 从长远来看, 由于声音硬件时钟从未与系统时钟完全同步, 计时信息会逐渐偏移."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:81
 msgid ""
 "For a rhythm game where a song begins and ends after a few minutes, this "
 "approach is fine (and it's the recommended approach). For a game where "
@@ -161,11 +142,9 @@ msgstr ""
 "在节奏游戏中, 一首歌持续时长仅有几分钟, 这种方法就很适合(也是推荐的方法). 而"
 "对于一款播放时间更长的游戏来说, 游戏最终将失去同步, 因此需要一种不同的方法."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:84
 msgid "Using the sound hardware clock to sync"
 msgstr "使用声音硬件时钟同步"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid ""
 "Using :ref:`AudioStreamPlayer."
 "get_playback_position()<class_AudioStreamPlayer_method_get_playback_position>` "
@@ -181,7 +160,6 @@ msgstr ""
 "时)将以块为单位递增, 导致多次调用可能返回相同的值. 除此之外, 由于前面提到的原"
 "因, 该值也将与扬声器失去同步."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:88
 msgid ""
 "To compensate for the \"chunked\" output, there is a function that can "
 "help: :ref:`AudioServer."
@@ -190,19 +168,16 @@ msgstr ""
 "为了补偿 \"chunked\"(分块)输出, 有个函数能有所帮助: :ref:`AudioServer."
 "get_time_since_last_mix()<class_AudioServer_method_get_time_since_last_mix>`."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:91
 msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
 msgstr "将这个函数的返回值与 *get_playback_position()* 相加可以提高精度:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:103
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
 msgstr "为了提高精度, 减去延迟信息(音频从混合后到被听见花费的时间):"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:114
 msgid ""
 "The result may be a bit jittery due how multiple threads work. Just check "
 "that the value is not less than in the previous frame (discard it if so). "
@@ -214,6 +189,5 @@ msgstr ""
 "值(如果小于, 则将其丢弃). 这个方法也不如之前的精确, 但它适用于任何长度的歌"
 "曲, 或者将任何东西(例如音效)与音乐同步."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:116
 msgid "Here is the same code as before using this approach:"
 msgstr "下面是使用这种方法之前相同的代码:"

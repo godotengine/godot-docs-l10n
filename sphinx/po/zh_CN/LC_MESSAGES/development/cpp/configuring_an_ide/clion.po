@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:4
 msgid "CLion"
 msgstr "CLion"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:6
 msgid ""
 "`CLion <https://www.jetbrains.com/clion/>`_ is a commercial `JetBrains "
 "<https://www.jetbrains.com/>`_ IDE for C++."
@@ -29,11 +27,9 @@ msgstr ""
 "`CLion <https://www.jetbrains.com/clion/>` _是一个商业化的 `JetBrains "
 "<https://www.jetbrains.com/>` _的C++IDE."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:10
 msgid "Importing the project"
 msgstr "导入项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:12
 msgid ""
 "CLion requires a ``CMakeLists.txt`` file as a project file, which is "
 "problematic for Godot because it uses the SCons buildsystem instead of "
@@ -45,7 +41,6 @@ msgstr ""
 "为它使用SCons构建系统而不是CMake. 然而, 有一个 ``CMakeLists.txt`` 配置 :ref:"
 "`Android Studio <doc_configuring_an_ide_android_studio>` 也可以被CLion使用."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:17
 msgid ""
 "From the CLion's welcome window choose the option to import an existing "
 "project. If you've already opened another project, choose **File > Open** "
@@ -54,7 +49,6 @@ msgstr ""
 "在CLion的欢迎窗口中选择导入现有工程的选项. 如果您已经打开了另一个项目, 从顶部"
 "菜单中选择 **文件 > 打开** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java/"
 "nativeSrcsConfigs`` (the ``CMakeLists.txt`` file is located there) and "
@@ -64,29 +58,24 @@ msgstr ""
 "( ``CMakeLists.txt`` 文件位于那里)并选择它(但 *不是* ``CMakeLists.txt`` 文件"
 "本身), 然后点击 **OK** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
 msgid "The folder containing the ``CMakeLists.txt`` file."
 msgstr "文件夹包含 ``CMakeLists.txt`` 文件."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:29
 msgid ""
 "If this popup window appears, select **This Window** to open the project:"
 msgstr "如果出现这个弹出窗口, 选择 **This Window** 打开项目:"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:34
 msgid ""
 "Choose **Tools > CMake > Change Project Root** from the top menu and select "
 "the Godot root folder."
 msgstr "从顶部菜单中选择 **工具 > CMake > 更改项目根** , 并选择Godot根文件夹."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:40
 msgid ""
 "You should be now be able to see all the project files. Autocomplete should "
 "work once the project has finished indexing."
 msgstr ""
 "你现在应该可以看到所有的项目文件. 一旦项目完成了索引, 自动完成应该就可以了."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:43
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
@@ -94,11 +83,9 @@ msgstr ""
 "如果遇到问题, 也可在 `Godot 社区论坛 <https://godotengine.org/community>`__ "
 "中寻求帮助."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:47
 msgid "Debugging the project"
 msgstr "调试项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:49
 msgid ""
 "Since CLion does not support SCons, you won't be able to compile, launch, "
 "and debug Godot from CLion in one step. You will first need to `compile "
@@ -113,11 +100,9 @@ msgstr ""
 "以使用 `Attach to process <https://www.jetbrains.com/help/clion/attaching-to-"
 "local-process.html>`__ 附加功能来调试Godot."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:52
 msgid "Run the compilation in debug mode by entering ``scons``."
 msgstr "输入 ``scons`` 在调试模式下运行编译."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:54
 msgid ""
 "Run the binary you have created (in the bin directory). If you want to debug "
 "a specific project, run the binary with the following arguments : ``--editor "
@@ -128,19 +113,15 @@ msgstr ""
 "件时使用以下参数 : ``--editor --path path/to/your/godot/project`` . 要运行项"
 "目而不是编辑它, 请删除 ``--editor`` 参数."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:56
 msgid "In CLion, go to **Run > Attach to Process...**"
 msgstr "在CLion中, 进入 **Run > Attach to Process...**"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:61
 msgid "Find and Select godot in the list (or type the binary name/Process ID)"
 msgstr "在列表中查找并选择godot(或输入可执行名称和进程ID)"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:66
 msgid "You can now use the debugging tools from CLion."
 msgstr "现在你可以使用CLion的调试工具了."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:70
 msgid ""
 "If you run the binary without any arguments, you will only debug the project "
 "manager window. Don't forget to add the ``--path path/to/your/godot/"

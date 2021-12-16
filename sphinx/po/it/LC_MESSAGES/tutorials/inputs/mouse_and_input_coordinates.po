@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
 msgstr "Informazioni su Godot"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:9
 msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
 "Godot uses viewports to display content, and viewports can be scaled by "
 "several options (see :ref:`doc_multiple_resolutions` tutorial). Use, then, "
@@ -54,12 +47,10 @@ msgid ""
 "for example:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""
 "When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
 "position`` value from ``InputEventMouseMotion`` is the center of the screen. "

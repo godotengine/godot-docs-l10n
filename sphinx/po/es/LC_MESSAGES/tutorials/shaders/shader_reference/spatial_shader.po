@@ -1,0 +1,849 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Spatial shaders"
+msgstr "Spatial shaders"
+
+msgid ""
+"Spatial shaders are used for shading 3D objects. They are the most complex "
+"type of shader Godot offers. Spatial shaders are highly configurable with "
+"different render modes and different rendering options (e.g. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Rim lighting etc). Users can "
+"optionally write vertex, fragment, and light processor functions to affect "
+"how objects are drawn."
+msgstr ""
+"Los shaders espaciales se utilizan para sombrear objetos 3D. Son el tipo más "
+"complejo shader que ofrece Godot. Los shaders espaciales son altamente "
+"configurables con diferentes modos de renderización y diferentes opciones de "
+"renderización (por ejemplo, dispersión en el subsuelo, transmisión, oclusión "
+"ambiental, iluminación del borde, etc.). Los usuarios pueden opcionalmente "
+"escribir vértices, fragmentos y funciones de procesador de luz para afectar "
+"a la forma en que se dibujan los objetos."
+
+msgid "Render modes"
+msgstr "Modos de renderizado"
+
+msgid "Render mode"
+msgstr "Modo de renderizado"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "**blend_mix**"
+msgstr "**blend_mix**"
+
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr ""
+"Modo de blending por mezcla (alfa es transparencia), es el modo por defecto."
+
+msgid "**blend_add**"
+msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "Modo de blending aditivo."
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "Modo de blending substractivo."
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "Modo de blending multiplicativo."
+
+msgid "**depth_draw_opaque**"
+msgstr "**depth_draw_opaque**"
+
+msgid "Only draw depth for opaque geometry (not transparent)."
+msgstr "Sólo dibuja \"depth\" para geometría opaca (no transparente)."
+
+msgid "**depth_draw_always**"
+msgstr "**depth_draw_always**"
+
+msgid "Always draw depth (opaque and transparent)."
+msgstr "Siempre dibuja \"depth\" (opaco y transparente)."
+
+msgid "**depth_draw_never**"
+msgstr "**depth_draw_never**"
+
+msgid "Never draw depth."
+msgstr "Nunca dibuja depth."
+
+msgid "**depth_draw_alpha_prepass**"
+msgstr "**depth_draw_alpha_prepass**"
+
+msgid "Do opaque depth pre-pass for transparent geometry."
+msgstr "Realiza un pre-pass de depth opaco para geometría transparente."
+
+msgid "**depth_test_disable**"
+msgstr "**depth_test_disable**"
+
+msgid "Disable depth testing."
+msgstr "Desactiva testing de depth."
+
+msgid "**cull_front**"
+msgstr "**cull_front**"
+
+msgid "Cull front-faces."
+msgstr "Culling de caras frontales."
+
+msgid "**cull_back**"
+msgstr "**cull_back**"
+
+msgid "Cull back-faces (default)."
+msgstr "Culling de caras internas (por defecto)."
+
+msgid "**cull_disabled**"
+msgstr "**cull_disabled**"
+
+msgid "Culling disabled (double sided)."
+msgstr "Culling deshabilitado (doble cara)."
+
+msgid "**unshaded**"
+msgstr "**unshaded**"
+
+msgid "Result is just albedo. No lighting/shading happens in material."
+msgstr "El resultado es sólo albedo. El material no recibe luces ni shading."
+
+msgid "**diffuse_lambert**"
+msgstr "**diffuse_lambert**"
+
+msgid "Lambert shading for diffuse (default)."
+msgstr "Utiliza Lambert shading para diffuse (por defecto)."
+
+msgid "**diffuse_lambert_wrap**"
+msgstr "**diffuse_lambert_wrap**"
+
+msgid "Lambert wrapping (roughness dependent) for diffuse."
+msgstr "Utiliza Lambert wrapping (dependiente de roughness) para diffuse."
+
+msgid "**diffuse_oren_nayar**"
+msgstr "**diffuse_oren_nayar**"
+
+msgid "Oren Nayar for diffuse."
+msgstr "Usa Oren Nayar para diffuse."
+
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+msgid "Burley (Disney PBS) for diffuse."
+msgstr "Utiliza Burley (Disney PBS) para diffuse."
+
+msgid "**diffuse_toon**"
+msgstr "**diffuse_toon**"
+
+msgid "Toon shading for diffuse."
+msgstr "Shading Toon para diffuse."
+
+msgid "**specular_schlick_ggx**"
+msgstr "**specular_schlick_ggx**"
+
+msgid "Schlick-GGX for specular (default)."
+msgstr "Usa Schlick-GGX para specular (por defecto)."
+
+msgid "**specular_blinn**"
+msgstr "**specular_blinn**"
+
+msgid "Blinn for specular (compatibility)."
+msgstr "Blinn para specular (compatibilidad)."
+
+msgid "**specular_phong**"
+msgstr "**specular_phong**"
+
+msgid "Phong for specular (compatibility)."
+msgstr "Usa Phong para specular (compatibilidad)."
+
+msgid "**specular_toon**"
+msgstr "**specular_toon**"
+
+msgid "Toon for specular."
+msgstr "Usa Toon para specular."
+
+msgid "**specular_disabled**"
+msgstr "**specular_disabled**"
+
+msgid "Disable specular."
+msgstr "Deshabilita specular."
+
+msgid "**skip_vertex_transform**"
+msgstr "**skip_vertex_transform**"
+
+msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
+msgstr ""
+"VERTEX/NORMAL/etc. Necesitan ser transformados manualmente en función de "
+"vértice."
+
+msgid "**world_vertex_coords**"
+msgstr "**world_vertex_coords**"
+
+msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
+msgstr ""
+"VERTEX/NORMAL/etc son modificados en coordenadas del mundo en lugar de "
+"locales."
+
+msgid "**ensure_correct_normals**"
+msgstr "**ensure_correct_normals**"
+
+msgid "Use when non-uniform scale is applied to mesh."
+msgstr "Se usa cuando se aplica una escala no uniforme a la malla."
+
+msgid "**vertex_lighting**"
+msgstr "**vertex_lighting**"
+
+msgid "Use vertex-based lighting."
+msgstr "Usa iluminación basada en vértices."
+
+msgid "**shadows_disabled**"
+msgstr "**shadows_disabled**"
+
+msgid "Disable computing shadows in shader."
+msgstr "Deshabilita las sombras de computación en shader."
+
+msgid "**ambient_light_disabled**"
+msgstr "**ambient_light_disabled**"
+
+msgid "Disable contribution from ambient light and radiance map."
+msgstr ""
+"Deshabilitar la contribución de la luz ambiental y el mapa de radiaciones."
+
+msgid "**shadow_to_opacity**"
+msgstr "**sombra_a_opacidad**"
+
+msgid ""
+"Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
+"areas are transparent. Useful for overlaying shadows onto a camera feed in "
+"AR."
+msgstr ""
+"La iluminación modifica el alfa para que las áreas sombreadas sean opacas y "
+"las no sombreadas sean transparentes. Útil para superponer sombras a una "
+"cámara en AR."
+
+msgid "Built-ins"
+msgstr "Funciones propias"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Values "
+"marked as \"inout\" provide a sensible default value, and can optionally be "
+"written to. Samplers are not subjects of writing and they are not marked."
+msgstr ""
+"Los valores marcados como \"in\" son de sólo lectura. Los valores marcados "
+"como \"out\" son de escritura opcional y no necesariamente contendrán "
+"valores sensibles. Los valores marcados como \"inout\" proporcionan un valor "
+"por defecto sensato y pueden escribirse opcionalmente. Los valores marcados "
+"como \"in\" no son objeto de escritura y no están marcados."
+
+msgid "Global built-ins"
+msgstr "Funciones incorporadas globales"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+"Las internas globales están disponibles en todas partes, incluyendo las "
+"funciones personalizadas."
+
+msgid "Built-in"
+msgstr "Integrado"
+
+msgid "in float **TIME**"
+msgstr "en real **TIME**"
+
+msgid "Global time, in seconds."
+msgstr "Tiempo global, en segundos."
+
+msgid "Vertex built-ins"
+msgstr "Vertex built-ins"
+
+msgid ""
+"Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are "
+"presented in local model space. If not written to, these values will not be "
+"modified and be passed through as they came."
+msgstr ""
+"Los datos de los vértices (``VERTEX``, ``NORMAL``, ``TANGENT``, "
+"``BITANGENT``) se presentan en el espacio modelo local. Si no se escriben, "
+"estos valores no se modificarán y se pasarán tal como llegaron."
+
+msgid ""
+"They can optionally be presented in world space by using the "
+"*world_vertex_coords* render mode."
+msgstr ""
+"Opcionalmente pueden ser presentados en el espacio mundial usando el modo de "
+"representación *world_vertex_coords*."
+
+msgid ""
+"Users can disable the built-in modelview transform (projection will still "
+"happen later) and do it manually with the following code:"
+msgstr ""
+"Los usuarios pueden desactivar la transformada incorporada de modelview (la "
+"proyección seguirá sucediendo más tarde) y hacerlo manualmente con el "
+"siguiente código:"
+
+msgid ""
+"Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
+"fragment function if not modified."
+msgstr ""
+"Otras incorporadas, tales como UV, UV2 y COLOR, son también pasadas a la "
+"función fragmento si no se modifican."
+
+msgid ""
+"Users can override the modelview and projection transforms using the "
+"``POSITION`` built-in. When ``POSITION`` is used, the value from ``VERTEX`` "
+"is ignored and projection does not happen. However, the value passed to the "
+"fragment shader still comes from ``VERTEX``."
+msgstr ""
+"Los usuarios pueden sobreescribir la vista del modelo y las transformaciones "
+"de la proyección usando la ``POSICIÓN`` incorporada. Cuando se usa "
+"``POSICIÓN``, el valor de ``VERTEX`` se ignora y la proyección no ocurre. "
+"Sin embargo, el valor pasado al shader de fragmentos sigue viniendo de "
+"``VERTEX``."
+
+msgid ""
+"For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
+"data. When using particles, this information is usually:"
+msgstr ""
+"Para el instanciamiento, la variable INSTANCE_CUSTOM contiene los datos "
+"personalizados de la instancia. Cuando se usan partículas, esta información "
+"es normalment:"
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**: Ángulo de rotación en radianes."
+
+msgid "**y**: Phase during lifetime (0 to 1)."
+msgstr "**y**: Fase durante la vida (0 a 1)."
+
+msgid "**z**: Animation frame."
+msgstr "**z**: Fotograma de animación."
+
+msgid ""
+"This allows you to easily adjust the shader to a particle system using "
+"default particles material. When writing a custom particle shader, this "
+"value can be used as desired."
+msgstr ""
+"Esto le permite ajustar fácilmente el shader a un sistema de partículas "
+"usando el material de partículas predeterminado. Cuando se escribe un shader "
+"de partículas personalizado, este valor puede ser usado como se desee."
+
+msgid "in vec2 **VIEWPORT_SIZE**"
+msgstr "en vec2 **VIEWPORT_SIZE**"
+
+msgid "Size of viewport (in pixels)."
+msgstr "Tamaño del viewport (en píxeles)."
+
+msgid "inout mat4 **WORLD_MATRIX**"
+msgstr "inout mat4 **WORLD_MATRIX**"
+
+msgid "Model space to world space transform."
+msgstr "Modelo de transformación del espacio en el mundo."
+
+msgid "in mat4 **INV_CAMERA_MATRIX**"
+msgstr "en mat4 **INV_CAMERA_MATRIX**"
+
+msgid "World space to view space transform."
+msgstr "El espacio mundial para ver la transformada del espacio."
+
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "inout mat4 **PROJECTION_MATRIX**"
+
+msgid "View space to clip space transform."
+msgstr "Ver el espacio para recortar la transformación del espacio."
+
+msgid "in mat4 **CAMERA_MATRIX**"
+msgstr "en mat4 **CAMERA_MATRIX**"
+
+msgid "View space to world space transform."
+msgstr "Transform de espacio de vista a espacio de mundo."
+
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "Model space to view space transform (use if possible)."
+msgstr ""
+"Espacio de vista a el espacio de la transformada mundial (usarlo si es "
+"posible)."
+
+msgid "inout mat4 **INV_PROJECTION_MATRIX**"
+msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
+
+msgid "Clip space to view space transform."
+msgstr "Recortar el espacio para ver la transformada del espacio."
+
+msgid "inout vec3 **VERTEX**"
+msgstr "inout vec3 **VERTEX**"
+
+msgid "Vertex in local coordinates."
+msgstr "Vertex en coordenadas locales."
+
+msgid "out vec4  **POSITION**"
+msgstr "out vec4  **POSITION**"
+
+msgid "If written to, overrides final vertex position."
+msgstr "Si está escrito, sobreescribe la posición final del vértice."
+
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **NORMAL**"
+
+msgid "Normal in local coordinates."
+msgstr "Normal en coordenadas locales."
+
+msgid "inout vec3 **TANGENT**"
+msgstr "inout vec3 **TANGENT**"
+
+msgid "Tangent in local coordinates."
+msgstr "Tangente en coordenadas locales."
+
+msgid "inout vec3 **BINORMAL**"
+msgstr "inout vec3 **BINORMAL**"
+
+msgid "Binormal in local coordinates."
+msgstr "Binormal en coordenadas locales."
+
+msgid "out float **ROUGHNESS**"
+msgstr "out real **ROUGHNESS**"
+
+msgid "Roughness for vertex lighting."
+msgstr "Rugosidad para la iluminación del vértice."
+
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
+
+msgid "UV main channel."
+msgstr "Canal principal de UV."
+
+msgid "inout vec2 **UV2**"
+msgstr "inout vec2 **UV2**"
+
+msgid "UV secondary channel."
+msgstr "Canal secundario UV."
+
+msgid "in bool **OUTPUT_IS_SRGB**"
+msgstr "in booleano **OUTPUT_IS_SRGB**"
+
+msgid ""
+"``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
+"``false`` in GLES3)."
+msgstr ""
+"``true`` cuando los cálculos ocurren en el espacio de color sRGB (``true`` "
+"en GLES2, ``false`` en GLES3)."
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid "Color from vertices."
+msgstr "Color de los vértices."
+
+msgid "inout float **POINT_SIZE**"
+msgstr "inout real **POINT_SIZE**"
+
+msgid "Point size for point rendering."
+msgstr "Tamaño de punto para la representación de puntos."
+
+msgid "in int **INSTANCE_ID**"
+msgstr "en entero **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "ID de instancia para el instanciamiento."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data (for particles, mostly)."
+msgstr ""
+"Datos personalizados de la instancia (para las partículas, en su mayoría)."
+
+msgid "Fragment built-ins"
+msgstr "Fragment built-ins"
+
+msgid ""
+"The default use of a Godot fragment processor function is to set up the "
+"material properties of your object and to let the built-in renderer handle "
+"the final shading. However, you are not required to use all these "
+"properties, and if you don't write to them, Godot will optimize away the "
+"corresponding functionality."
+msgstr ""
+"El uso por defecto de una función del procesador de fragmentos Godot es "
+"configurar las propiedades materiales de su objeto y dejar que el "
+"renderizador incorporado se encargue del shader final. Sin embargo, no es "
+"necesario que utilice todas estas propiedades, y si no las escribe, Godot "
+"optimizará la funcionalidad correspondiente."
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies  position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
+"La coordenada del centro del píxel en el espacio de la pantalla. ``xy`` "
+"especifica la posición en la ventana, ``z`` especifica la profundidad del "
+"fragmento si no se usa ``DEPTH``. El origen esta abajo a la izquierda."
+
+msgid "in mat4 **WORLD_MATRIX**"
+msgstr "in mat4 **WORLD_MATRIX**"
+
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr "in mat4 **PROJECTION_MATRIX**"
+
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+
+msgid "in vec3 **VERTEX**"
+msgstr "in vec3 **VERTEX**"
+
+msgid "Vertex that comes from vertex function (default, in view space)."
+msgstr ""
+"Vértice que proviene de la función de vértice (por defecto, en el espacio de "
+"visión)."
+
+msgid "in vec3 **VIEW**"
+msgstr "in vec3 **VIEW**"
+
+msgid "Vector from camera to fragment position (in view space)."
+msgstr ""
+"Vector desde la cámara hasta la posición del fragmento (en el espacio de "
+"visión)."
+
+msgid "in bool **FRONT_FACING**"
+msgstr "in booleano **FRONT_FACING**"
+
+msgid "``true`` if current face is front face."
+msgstr "``true`` si la cara actual es la cara frontal."
+
+msgid "Normal that comes from vertex function (default, in view space)."
+msgstr ""
+"Normal que viene de la función de vértice (por defecto, en el espacio de "
+"visión)."
+
+msgid "Tangent that comes from vertex function."
+msgstr "Tangente que proviene de la función del vértice."
+
+msgid "Binormal that comes from vertex function."
+msgstr "Binormal que proviene de la función del vértice."
+
+msgid "out vec3 **NORMALMAP**"
+msgstr "out vec3 **NORMALMAP**"
+
+msgid "Set normal here if reading normal from a texture instead of NORMAL."
+msgstr "Ponga normal aquí si lee normal de una textura en lugar de NORMAL."
+
+msgid "out float **NORMALMAP_DEPTH**"
+msgstr "out real **NORMALMAP_DEPTH**"
+
+msgid "Depth from variable above. Defaults to 1.0."
+msgstr "Profundidad de la variable de arriba. Por defecto es 1.0."
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"
+
+msgid "UV that comes from vertex function."
+msgstr "UV que proviene de la función del vértice."
+
+msgid "in vec2 **UV2**"
+msgstr "in vec2 **UV2**"
+
+msgid "UV2 that comes from vertex function."
+msgstr "UV2 que proviene de la función del vértice."
+
+msgid "in vec4 **COLOR**"
+msgstr "in vec4 **COLOR**"
+
+msgid "COLOR that comes from vertex function."
+msgstr "COLOR que proviene de la función del vértice."
+
+msgid "out vec3 **ALBEDO**"
+msgstr "out vec3 **ALBEDO**"
+
+msgid "Albedo (default white)."
+msgstr "Albedo (blanco por defecto)."
+
+msgid "out float **ALPHA**"
+msgstr "out real **ALPHA**"
+
+msgid ""
+"Alpha (0..1); if written to, the material will go to the transparent "
+"pipeline."
+msgstr "Alfa (0..1); si se escribe, el material irá a la tubería transparente."
+
+msgid "out float **ALPHA_SCISSOR**"
+msgstr "out real **ALPHA_SCISSOR**"
+
+msgid "If written to, values below a certain amount of alpha are discarded."
+msgstr ""
+"Si se escribe, se descartan los valores inferiores a una cierta cantidad de "
+"alfa."
+
+msgid "out float **METALLIC**"
+msgstr "out real **METALLIC**"
+
+msgid "Metallic (0..1)."
+msgstr "Metálico (0..1)."
+
+msgid "out float **SPECULAR**"
+msgstr "out real **SPECULAR**"
+
+msgid ""
+"Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
+msgstr ""
+"Especular. El valor por defecto es 0.5, mejor no modificarlo a menos que "
+"quiera cambiar el IOR."
+
+msgid "Roughness (0..1)."
+msgstr "Rugosidad (0..1)."
+
+msgid "out float **RIM**"
+msgstr "out real **RIM**"
+
+msgid "Rim (0..1). If used, Godot calculates rim lighting."
+msgstr "Rim (0..1). Si se usa, Godot calcula la iluminación del borde."
+
+msgid "out float **RIM_TINT**"
+msgstr "out real **RIM_TINT**"
+
+msgid ""
+"Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
+"lighting."
+msgstr ""
+"Rim Tint, va de 0 (blanco) a 1 (albedo). Si se usa, Godot calcula la "
+"iluminación del borde."
+
+msgid "out float **CLEARCOAT**"
+msgstr "out real **CLEARCOAT**"
+
+msgid "Small added specular blob. If used, Godot calculates Clearcoat."
+msgstr "Pequeña mancha especular añadida. Si se usa, Godot calcula Clearcoat."
+
+msgid "out float **CLEARCOAT_GLOSS**"
+msgstr "out real **CLEARCOAT_GLOSS**"
+
+msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
+msgstr "El brillo de Clearcoat. Si se usa, Godot calcula Clearcoat."
+
+msgid "out float **ANISOTROPY**"
+msgstr "out real **ANISOTROPY**"
+
+msgid "For distorting the specular blob according to tangent space."
+msgstr "Para distorsionar la mancha especular según el espacio tangencial."
+
+msgid "out vec2 **ANISOTROPY_FLOW**"
+msgstr "out vec2 **ANISOTROPY_FLOW**"
+
+msgid "Distortion direction, use with flowmaps."
+msgstr "Dirección de la distorsión, uso con flowmaps."
+
+msgid "out float **SSS_STRENGTH**"
+msgstr "out real **SSS_STRENGTH**"
+
+msgid ""
+"Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
+"applied to object."
+msgstr ""
+"La fuerza del Subsurface Scattering. Si se usa, la Subsurface Scattering se "
+"aplicará al objeto."
+
+msgid "out vec3 **TRANSMISSION**"
+msgstr "out vec3 **TRANSMISSION**"
+
+msgid ""
+"Transmission mask (default 0,0,0). Allows light to pass through object. Only "
+"applied if used."
+msgstr ""
+"Máscara de transmisión (por defecto 0,0,0). Permite que la luz pase a través "
+"del objeto. Sólo se aplica si se utiliza."
+
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **EMISSION**"
+
+msgid "Emission color (can go over 1,1,1 for HDR)."
+msgstr "Color de la emisión (puede superar el 1,1,1 para HDR)."
+
+msgid "out float **AO**"
+msgstr "out real **AO**"
+
+msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
+msgstr "La fuerza de la oclusión del ambiente. Para usar con AO precocinado."
+
+msgid "out float **AO_LIGHT_AFFECT**"
+msgstr "out real **AO_LIGHT_AFFECT**"
+
+msgid "How much AO affects lights (0..1; default 0)."
+msgstr "Cuánto AO afecta a las luces (0..1; por defecto 0)."
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Built-in Texture for reading from the screen. Mipmaps contain increasingly "
+"blurred copies."
+msgstr ""
+"Textura incorporada para leer desde la pantalla. Los Mipmaps contienen "
+"copias cada vez más borrosas."
+
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr "sampler2D **DEPTH_TEXTURE**"
+
+msgid ""
+"Built-in Texture for reading depth from the screen. Must convert to linear "
+"using INV_PROJECTION."
+msgstr ""
+"Textura incorporada para la profundidad de lectura de la pantalla. Debe "
+"convertirse a lineal usando INV_PROJECTION."
+
+msgid "out float **DEPTH**"
+msgstr "out real **DEPTH**"
+
+msgid "Custom depth value (0..1)."
+msgstr "Valor de profundidad personalizado (0..1)."
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for current pixel."
+msgstr "Muestra la coordenada UV para el píxel actual."
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "in vec2 **POINT_COORD**"
+
+msgid "Point Coordinate for drawing points with POINT_SIZE."
+msgstr "Coordenadas de puntos para dibujar puntos con POINT_SIZE."
+
+msgid "Light built-ins"
+msgstr "Light built-ins"
+
+msgid ""
+"Writing light processor functions is completely optional. You can skip the "
+"light function by setting render_mode to ``unshaded``. If no light function "
+"is written, Godot will use the material properties written to in the "
+"fragment function to calculate the lighting for you (subject to the "
+"render_mode)."
+msgstr ""
+"Las funciones del procesador de luz de escritura son completamente "
+"opcionales. Puedes saltarte la función de luz poniendo el modo de "
+"render_mode a ``unshaded``. Si no se escribe ninguna función de luz, Godot "
+"utilizará las propiedades del material escritas en la función de fragmento "
+"para calcular la iluminación por ti (sujeto al render_mode)."
+
+msgid ""
+"To write a light function, assign something to ``DIFFUSE_LIGHT`` or "
+"``SPECULAR_LIGHT``. Assigning nothing means no light is processed."
+msgstr ""
+"Para escribir una función de luz, asigna algo a ``DIFFUSE_LIGHT`` o "
+"``SPECULAR_LIGHT``. Asignar nada significa que no se procesa ninguna luz."
+
+msgid ""
+"The light function is called for every light in every pixel. It is called "
+"within a loop for each light type."
+msgstr ""
+"La función de luz se llama para cada luz en cada píxel. Se llama dentro de "
+"un bucle para cada tipo de luz."
+
+msgid ""
+"Below is an example of a custom light function using a Lambertian lighting "
+"model:"
+msgstr ""
+"A continuación se muestra un ejemplo de una función de luz personalizada "
+"utilizando un modelo de iluminación lambertiano:"
+
+msgid ""
+"If you want the lights to add together, add the light contribution to "
+"``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
+msgstr ""
+"Si quieres que las luces se sumen, agrega la contribución de la luz a "
+"``DIFUSE_LIGHT`` usando ``+=``, en lugar de sobrescribirla."
+
+msgid ""
+"The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
+"is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
+"is enabled in the Project Settings. (It's enabled by default on mobile "
+"platforms.)"
+msgstr ""
+"La función ``light()`` no se ejecutará si el modo de renderización "
+"``vertex_lighting`` está habilitado, o si **Rendering > Quality > Shading > "
+"Force Vertex Shading** está habilitado en la configuración del proyecto. "
+"(Está habilitada por defecto en las plataformas móviles)."
+
+msgid "Elapsed total time in seconds."
+msgstr "Tiempo total transcurrido en segundos."
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
+"La coordenada del centro del píxel en el espacio de la pantalla. ``xy`` "
+"especifica la posición en la ventana, ``z`` especifica la profundidad del "
+"fragmento si no se usa ``DEPTH``. El origen es abajo a la izquierda."
+
+msgid "in vec3 **NORMAL**"
+msgstr "in vec3 **NORMAL**"
+
+msgid "Normal vector, in view space."
+msgstr "Vector normal, en el espacio de visión."
+
+msgid "View vector, in view space."
+msgstr "Vector de vista, en el espacio de vista."
+
+msgid "in vec3 **LIGHT**"
+msgstr "in vec3 **LIGHT**"
+
+msgid "Light Vector, in view space."
+msgstr "Vector de luz, en el espacio de visión."
+
+msgid "in vec3 **ATTENUATION**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "Attenuation based on distance or shadow."
+msgstr "Atenuación basada en la distancia o en la sombra."
+
+msgid "in vec3 **ALBEDO**"
+msgstr "in vec3 **ALBEDO**"
+
+msgid "Base albedo."
+msgstr "Albedo de la base."
+
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHT_COLOR**"
+
+msgid "Color of light multiplied by energy."
+msgstr "El color de la luz multiplicado por la energía."
+
+msgid "in float **ROUGHNESS**"
+msgstr "in real **ROUGHNESS**"
+
+msgid "Roughness."
+msgstr "Rugosidad."
+
+msgid "in vec3 **TRANSMISSION**"
+msgstr "in vec3 **TRANSMISSION**"
+
+msgid "Transmission mask from fragment function."
+msgstr "Máscara de transmisión de la función fragment."
+
+msgid "out vec3 **DIFFUSE_LIGHT**"
+msgstr "out vec3 **DIFFUSE_LIGHT**"
+
+msgid "Diffuse light result."
+msgstr "Resultado de luz difusa."
+
+msgid "out vec3 **SPECULAR_LIGHT**"
+msgstr "out vec3 **SPECULAR_LIGHT**"
+
+msgid "Specular light result."
+msgstr "Resultado de la luz especular."

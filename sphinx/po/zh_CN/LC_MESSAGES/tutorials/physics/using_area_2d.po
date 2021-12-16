@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:4
 msgid "Using Area2D"
-msgstr "使用Area2D"
+msgstr "使用 Area2D"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:9
 msgid ""
 "Godot offers a number of collision objects to provide both collision "
 "detection and response. Trying to decide which one to use for your project "
@@ -39,7 +36,6 @@ msgstr ""
 "免问题并简化开发. 在本教程中, 我们将查看 :ref:`Area2D <class_Area2D>` 节点, "
 "并展示一些如何使用它的例子."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:15
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
@@ -47,11 +43,9 @@ msgstr ""
 "本文假设您熟悉Godot中的各种物理体. 否则请先阅读 :ref:"
 "`doc_physics_introduction` ."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:19
 msgid "What is an area?"
 msgstr "什么是area？"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:21
 msgid ""
 "An Area2D defines a region of 2D space. In this space you can detect other :"
 "ref:`CollisionObject2D <class_CollisionObject2D>` nodes overlapping, "
@@ -62,32 +56,26 @@ msgstr ""
 "`CollisionObject2D <class_CollisionObject2D>` 节点的重叠, 进入和退出. 区域"
 "(Area)还允许覆盖本地物理属性. 我们将在下面讨论这些功能中的每一个."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:27
 msgid "Area properties"
 msgstr "Area属性"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:29
 msgid "Areas have many properties you can use to customize their behavior."
 msgstr "区域有许多属性可用于自定义它们的行为."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:33
 msgid ""
 "The first eight properties are used to configure the area's physics override "
 "behavior. We'll look at how to use those in the section below."
 msgstr ""
 "前八个属性用于配置区域的物理覆盖行为. 我们将在下面一节中介绍如何使用这些内容."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:36
 msgid "*Monitoring* and *Monitorable* are used to enable and disable the area."
 msgstr "*Monitoring* 和 *Monitorable* 用于启用和禁用该区域检测."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:38
 msgid ""
 "The \"Collision\" section is where you configure the area's collision "
 "layer(s) and mask(s)."
 msgstr "在 \"碰撞(Collision)\" 部分, 可以配置区域的碰撞层和掩码."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:41
 msgid ""
 "The \"Audio Bus\" section allows you to override audio in the area, for "
 "example to apply an audio effect when the player moves through."
@@ -95,7 +83,6 @@ msgstr ""
 "\"音频总线 (Audio Bus)\" 部分, 允许重写该区域内的音频, 例如当玩家移动时的音频"
 "效果."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:44
 msgid ""
 "Note that Area2D extends :ref:`CollisionObject2D <class_CollisionObject2D>`, "
 "so it also provides properties inherited from that class, such as "
@@ -104,11 +91,9 @@ msgstr ""
 "请注意,Area2D扩展了 :ref:`CollisionObject2D <class_CollisionObject2D>`, 所以"
 "它也提供了从该类继承的属性, 例如 ``input_pickable`` ."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:48
 msgid "Overlap detection"
 msgstr "重叠检测"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:50
 msgid ""
 "Perhaps the most common use of Area2D nodes is for contact and overlap "
 "detection. When you need to know that two objects have touched, but don't "
@@ -117,7 +102,6 @@ msgstr ""
 "也许Area2D节点最常见的用途是用于触碰和重叠检测. 当需要知道两个物体已经触碰, "
 "但不需要物理碰撞时, 可以使用一个区域来通知."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:54
 msgid ""
 "For example, let's say we're making a coin for the player to pick up. The "
 "coin is not a solid object - the player can't stand on it or push it - we "
@@ -126,11 +110,9 @@ msgstr ""
 "例如, 要做一个硬币让玩家去捡. 硬币并不是一个实心的物体, 玩家不能站在上面, 也"
 "不能推它, 只是想让它在玩家触碰它的时候消失."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:58
 msgid "Here's the node setup for the coin:"
 msgstr "这是硬币节点的设置:"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:62
 msgid ""
 "To detect the overlap, we'll connect the appropriate signal on the Area2d. "
 "Which signal to use depends on the player's node type. If the player is "
@@ -143,21 +125,17 @@ msgstr ""
 "个 ``KinematicBody2D`` (因此也是一个 ``CollisionObject2D`` 类型), 将连接 "
 "``body_entered`` 信号."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:68
 msgid ""
 "If you're not familiar with using signals, see :ref:`doc_signals` for an "
 "introduction."
 msgstr "如果熟悉使用信号, 请参阅 :ref:`doc_signals` 的介绍."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:90
 msgid "Now our player can collect the coins!"
 msgstr "现在我们的游戏角色可以收集硬币了！"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:92
 msgid "Some other usage examples:"
 msgstr "其他一些使用实例:"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:94
 msgid ""
 "Areas are great for bullets and other projectiles that hit and deal damage, "
 "but don't need any other physics such as bouncing."
@@ -165,7 +143,6 @@ msgstr ""
 "区域对于子弹和其他弹丸物体来说是非常好用, 它可以击中并造成伤害, 但不需要其他"
 "物理效果, 如弹跳."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:95
 msgid ""
 "Use a large circular area around an enemy to define its \"detect\" radius. "
 "When the player is outside the area, the enemy can't \"see\" it."
@@ -173,7 +150,6 @@ msgstr ""
 "用敌人周围的一个大圆圈区域设定为 \"探测\" 半径, 当玩家在该区域外时, 敌人就无"
 "法 \"看到\" 玩家."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:96
 msgid ""
 "\"Security cameras\" - In a large level with multiple cameras, attach areas "
 "to each camera and activate them when the player enters."
@@ -181,16 +157,15 @@ msgstr ""
 "\"安保摄像头\" - 在有多个摄像头的大型关卡中, 在每个摄像头上附加区域(area), 并"
 "在玩家进入时激活它们."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:98
+#, fuzzy
 msgid ""
-"See the :ref:`doc_your_first_game` for an example of using Area2D in a game."
-msgstr "请参阅 :ref:`doc_your_first_game` , 了解在游戏中使用Area2D的例子."
+"See the :ref:`doc_your_first_2d_game` for an example of using Area2D in a "
+"game."
+msgstr "请参阅 :ref:`doc_your_first_game`，了解在游戏中使用 Area2D 的例子。"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:101
 msgid "Area influence"
 msgstr "区域影响"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:103
 msgid ""
 "The second major use for area nodes is to alter physics. By default, the "
 "area won't do this, but you can enable this with the *Space Override* "
@@ -201,18 +176,15 @@ msgstr ""
 "用 *空间重写(Space Override)* 属性启用这个功能. 当区域重叠时, 它们会按照 *优"
 "先级(Priority)* 的顺序进行处理(优先级较高的区域会被优先处理). 重写有四个选项:"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:108
 msgid ""
 "*Combine* - The area adds its values to what has been calculated so far."
 msgstr "*合并(Combine)* - 该区域将其数值加到目前已计算的数值上."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:109
 msgid ""
 "*Replace* - The area replaces physics properties, and lower priority areas "
 "are ignored."
 msgstr "*替换(Replace)* - 该区域替换物理属性, 低优先级区域被忽略."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:110
 msgid ""
 "*Combine-Replace* - The area adds its gravity/damping values to whatever has "
 "been calculated so far (in priority order), ignoring any lower priority "
@@ -221,7 +193,6 @@ msgstr ""
 "*合并-替换 (Combine-Replace)* - 该区域将其重力/阻尼值加到目前为止计算出的所有"
 "数值上(按优先顺序), 忽略任何较低优先级的区域."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:111
 msgid ""
 "*Replace-Combine* - The area replaces any gravity/damping calculated so far, "
 "but keeps calculating the rest of the areas."
@@ -229,43 +200,35 @@ msgstr ""
 "*替换-合并 (Replace-Combine)* - 该区域替换了目前为止计算的所有重力或阻尼, 但"
 "继续计算其余区域."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:113
 msgid ""
 "Using these properties, you can create very complex behavior with multiple "
 "overlapping areas."
 msgstr "使用这些属性, 可以创建具有多个重叠区域的复杂行为."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:116
 msgid "The physics properties that can be overridden are:"
 msgstr "可以重写的物理属性有:"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:118
 msgid "*Gravity* - Gravity's strength inside the area."
 msgstr "*重力(Gravity)* - 区域内的重力强度."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:119
 msgid ""
 "*Gravity Vec* - Gravity's direction. This vector does not need to be "
 "normalized."
 msgstr "*重力向量 (Gravity Vec)* - 重力的方向. 此向量不需要归一化."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:120
 msgid ""
 "*Linear Damp* - How quickly objects stop moving - linear velocity lost per "
 "second."
 msgstr "*线性阻尼 (Linear Damp)* - 物体停止移动的速度-每秒损失的线速度."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:121
 msgid ""
 "*Angular Damp* - How quickly objects stop spinning - angular velocity lost "
 "per second."
 msgstr "*角度阻尼 (Angular Damp)* - 物体停止旋转的速度-每秒损失的角速度."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:124
 msgid "Point gravity"
 msgstr "重力点"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:126
 msgid ""
 "The *Gravity Point* property allows you to create an \"attractor\". Gravity "
 "in the area will be calculated towards a point, given by the *Gravity Vec* "
@@ -276,17 +239,14 @@ msgstr ""
 "力向量 (Gravity Vec)* 属性给出的点进行计算. 值是相对于Area2D而言的, 因此例如"
 "使用 ``(0, 0)`` 将吸引对象到区域中心."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:132
 msgid "Examples"
 msgstr "示例"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:134
 msgid ""
 "The example project attached below has three areas demonstrating physics "
 "override."
 msgstr "以下所附中的示例项目包含三个区域, 它们说明了物理重写."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:139
 msgid ""
 "You can download this project here: :download:`using_area_2d.zip <files/"
 "using_area_2d.zip>`"

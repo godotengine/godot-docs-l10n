@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
 #, fuzzy
 msgid "Installing plugins"
 msgstr ":ref:`doc_inspector_plugins`"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
 "Godot features an editor plugin system with numerous plugins developed by "
 "the community. Plugins can extend the editor's functionality with new nodes, "
 "additional docks, convenience features, and more."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
 #, fuzzy
 msgid "Finding plugins"
 msgstr "플러그인에 대해서"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
 "The preferred way to find Godot plugins is to use the `Asset Library "
 "<https://godotengine.org/asset-library/>`_. While it can be browsed online, "
@@ -42,11 +38,9 @@ msgid ""
 "**AssetLib** tab at the top of the editor:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
 msgid "You can also find assets on code hosting websites such as GitHub."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
 msgid ""
 "Some repositories describe themselves as \"plugins\" but may not actually be "
 "*editor* plugins. This is especially the case for scripts that are intended "
@@ -54,7 +48,6 @@ msgid ""
 "use them. Download them and extract the files in your project folder."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
 msgid ""
 "One way to distinguish editor plugins from non-editor plugins is to look for "
 "a ``plugin.cfg`` file in the repository that hosts the plugin. If the "
@@ -62,32 +55,27 @@ msgid ""
 "`` folder, then it is an editor plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
 #, fuzzy
 msgid "Installing a plugin"
 msgstr "패키지 설치하기"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
 "To install a plugin, download it as a ZIP archive. On the Asset Library, "
 "this can be done using the **Download** button, either from the editor or "
 "using the Web interface."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
 msgid ""
 "On GitHub, if a plugin has *tags* (versions) declared, go to the "
 "**Releases** tab to download a stable release. This ensures you download a "
 "version that was declared to be stable by its author."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
 msgid ""
 "On GitHub, if the plugin doesn't have any *tags* declared, use the "
 "**Download ZIP** button to download a ZIP of the latest revision:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
 msgid ""
 "Extract the ZIP archive and move the ``addons/`` folder it contains into "
 "your project folder. If your project already contains an ``addons/`` folder, "
@@ -97,12 +85,10 @@ msgid ""
 "overwritten in the process."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
 #, fuzzy
 msgid "Enabling a plugin"
 msgstr "간단한 플러그인 만들기"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
 msgid ""
 "To enable the freshly installed plugin, open **Project > Project Settings** "
 "at the top of the editor then go the **Plugins** tab. If the plugin was "
@@ -111,7 +97,6 @@ msgid ""
 "**Active** will display in green to confirm the plugin was enabled."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
 msgid ""
 "You can use the plugin immediately after enabling it; there's no need to "
 "restart the editor. Likewise, disabling a plugin can be done without having "

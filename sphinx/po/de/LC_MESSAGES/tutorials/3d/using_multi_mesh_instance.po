@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
 msgstr "Verwenden von MultiMesh-Instanzen"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:9
 msgid ""
 "In a normal scenario, you would use a :ref:`MeshInstance "
 "<class_MeshInstance>` node to display a 3D mesh like a human model for the "
@@ -46,7 +43,6 @@ msgstr ""
 "ref:`MultiMeshInstance <class_MultiMeshInstance>` ist eine der möglichen "
 "Lösungen für dieses Problem."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
 "MultiMeshInstance, as the name suggests, creates multiple copies of a "
 "MeshInstance over a surface of a specific mesh. An example would be having a "
@@ -58,11 +54,9 @@ msgstr ""
 "ein Landschafts-Mesh mit Bäumen aus einem Baum-Mesh in zufälligen Maßstäben "
 "und Ausrichtungen zu füllen."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
 msgstr "Einrichten der Nodes"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
@@ -70,7 +64,6 @@ msgstr ""
 "Die Grundeinstellung erfordert drei Nodes: den MultiMeshInstance-Node und "
 "zwei MeshInstance-Nodes."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
@@ -78,7 +71,6 @@ msgstr ""
 "Ein Node wird als Ziel verwendet: das Mesh, auf dem Sie mehrere Meshes "
 "platzieren möchten. Im Baumbeispiel wäre dies die Landschaft."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
@@ -86,7 +78,6 @@ msgstr ""
 "Der andere Node wird als Quelle verwendet: das Mesh, das Sie duplizieren "
 "möchten. Im Baumfall wäre dies der Baum selbst."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
@@ -95,13 +86,11 @@ msgstr ""
 "Wurzel-Node der Szene verwenden. Ihr Szenenbaum würde folgendermaßen "
 "aussehen:"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
 "In dieser Anleitung werden der Einfachheit halber integrierte Grundelemente "
 "verwendet."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
 "Now you have everything ready. Select the MultiMeshInstance node and look at "
 "the toolbar, you should see an extra button called ``MultiMesh`` next to "
@@ -114,19 +103,15 @@ msgstr ""
 "Auswahlmenü die Option *Oberfläche füllen*. Ein neues Fenster mit dem Titel "
 "*MultiMesh füllen* wird geöffnet."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 msgid "MultiMesh settings"
 msgstr "MultiMesh-Einstellungen"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
 msgstr "Nachfolgend finden Sie Beschreibungen der Optionen."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
 msgstr "Ziel-Oberfläche"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
@@ -134,65 +119,50 @@ msgstr ""
 "Das Mesh, das als Ziel-Oberfläche für das Platzieren von Kopien Ihres Quell-"
 "Mesh verwendet wird."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
 msgstr "Quell-Mesh"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
 msgstr "Das Mesh, das Sie auf der Ziel-Oberfläche duplizieren möchten."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
 msgstr "Aufwärts-Achse des Meshs"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
 msgstr "Die Achse, die als Aufwärts-Achse des Quellen-Mesh verwendet wird."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
 msgstr "Zufällige Rotation"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
 msgstr "Zufällige Drehung um die obere Achse des Quell-Mesh."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
 msgstr "Zufälliges Kippen"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
 msgstr "Zufällige Gesamtrotation des Quell-Mesh."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
 msgstr "Zufälliges Skalieren"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
 msgstr "Zufällige Skalierung des Quell-Mesh."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
 msgstr "Skalierung"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:89
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr ""
 "Die Skalierung des Quell-Mesh, das über der Ziel-Oberfläche platziert wird."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
 msgstr "Menge"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
 msgstr "Die Anzahl der über der Ziel-Oberfläche platzierten Mesh-Instanzen."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
 "Select the target surface. In the tree case, this should be the landscape "
 "node. The source mesh should be the tree node. Adjust the other parameters "
@@ -207,11 +177,9 @@ msgstr ""
 "Ergebnis zufrieden sind, können Sie die als Quell-Mesh verwendete Mesh-"
 "Instanz löschen."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
 msgstr "Das Endergebnis sollte folgendermaßen aussehen:"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""

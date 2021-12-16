@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:4
 msgid "Binding to external libraries"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
@@ -33,44 +30,36 @@ msgid ""
 "festival/>`_, a speech synthesis (text-to-speech) library written in C++."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
 #, fuzzy
 msgid "These files should contain the following:"
 msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files. See the library's official documentation for specific "
@@ -78,7 +67,6 @@ msgid ""
 "installation commands for Linux below, for reference."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
 "resource) all have varying licenses and terms of use; some (if not most) of "
@@ -87,7 +75,6 @@ msgid ""
 "use."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -96,14 +83,12 @@ msgid ""
 "commands:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
 "are developing a module to be merged into the main Godot repository, you "
@@ -111,32 +96,26 @@ msgid ""
 "always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 #, fuzzy
 msgid "The final module should look like this:"
 msgstr "최종 스크립트는 다음과 같아야 합니다:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr ""

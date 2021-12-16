@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:4
 msgid "Custom HTML page for Web export"
 msgstr "Page HTML custom pour un export Web"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:6
 msgid ""
 "While Web export templates provide a default HTML page fully capable of "
 "launching the project without any further customization, it may be "
@@ -35,27 +33,22 @@ msgstr ""
 "puisse pas encore être contrôlé directement de l'extérieur, une telle page "
 "permet de personnaliser le processus d'initialisation du moteur."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
 msgid "Some use-cases where customizing the default page is useful include:"
 msgstr "Quelques cas pratique où une telle page puisse être utile :"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:13
 msgid "Loading files from a different directory than the page;"
 msgstr "Chargement de fichiers à partir d'un répertoire différent de la page ;"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:14
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as the main pack;"
 msgstr ""
 "Chargement d'un fichier ``.zip`` au lieu d'un fichier ``.pck`` comme paquet "
 "principal ;"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
 msgid "Loading the engine from a different directory than the main pack file;"
 msgstr ""
 "Chargement du moteur à partir d'un répertoire différent de celui du fichier "
 "du pack principal ;"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
 msgid ""
 "Adding a click-to-play button so that games can be started in the fullscreen "
 "mode;"
@@ -63,7 +56,6 @@ msgstr ""
 "Ajout d'un bouton click-to-play pour que les jeux puissent être lancés en "
 "mode plein écran ;"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
@@ -72,7 +64,6 @@ msgstr ""
 "moteur, en les rendant disponibles dans le système de fichiers du projet dès "
 "que possible ;"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
 msgid ""
 "Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` "
 "script."
@@ -80,7 +71,6 @@ msgstr ""
 "Passer des arguments de ligne de commande personnalisés, par exemple ``-s`` "
 "pour démarrer un script ``MainLoop``."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
@@ -92,11 +82,9 @@ msgstr ""
 "master/misc/dist/html/full-size.html>`__ mais le modèle suivant peut être "
 "utilisé comme un exemple beaucoup plus simple :"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:44
 msgid "Setup"
 msgstr "Configuration"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:45
 msgid ""
 "As shown by the example above, it is mostly a regular HTML document, with "
 "few placeholders which needs to be replaced during export, an html "
@@ -108,11 +96,9 @@ msgstr ""
 "lors de l'exportation, un élément html ``<canvas>``, et du code JavaScript "
 "simple qui appelle la classe :js:class:`Engine`."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:49
 msgid "The only required placeholders are:"
 msgstr "Les seuls caractères de remplacement requis sont :"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:51
 msgid ""
 "``$GODOT_URL``: The name of the main JavaScript file, which provides the :js:"
 "class:`Engine` class required to start the engine and that must be included "
@@ -124,7 +110,6 @@ msgstr ""
 "inclus dans le HTML sous la forme d'un ``<script>``. Le nom est généré à "
 "partir de l'*Export Path* pendant le processus d'exportation."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
 msgid ""
 "``$GODOT_CONFIG``: A JavaScript object, containing the export options and "
 "can be later overridden. See :js:attr:`EngineConfig` for the full list of "
@@ -134,7 +119,6 @@ msgstr ""
 "et pouvant être surchargé par la suite. Voir :js:attr:`EngineConfig` pour la "
 "liste complète des surcharges."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:60
 msgid ""
 "The following optional placeholders will enable some extra features in your "
 "cusstom HTML template."
@@ -142,7 +126,6 @@ msgstr ""
 "Les paramètres facultatifs suivants permettent d'activer certaines fonctions "
 "supplémentaires dans votre modèle HTML personnalisé."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
 msgid ""
 "``$GODOT_PROJECT_NAME``: The project name as defined in the Project "
 "Settings. It is a good idea to use it as a ``<title>`` in your template."
@@ -151,7 +134,6 @@ msgstr ""
 "paramètres du projet. C'est une bonne idée de l'utiliser comme ``<title>`` "
 "dans votre modèle."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:66
 msgid ""
 "``$GODOT_HEAD_INCLUDE``: A custom string to include in the HTML document "
 "just before the end of the ``<head>`` tag. It is customized in the export "
@@ -168,7 +150,6 @@ msgstr ""
 "depuis l'éditeur Godot. Par exemple, pour différents préreglages d'export "
 "Web."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:72
 msgid ""
 "When the custom page is ready, it can be selected in the export options "
 "under the *Html / Custom Html Shell* section."
@@ -176,11 +157,9 @@ msgstr ""
 "Quand la page custom est prête, elle peut être sélectionné dans les options "
 "d'exports dans la section *Html / Custom Html Shell*."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:78
 msgid "Starting the project"
 msgstr "Démarrage du projet"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:79
 msgid ""
 "To be able to start the game, you need to write a script that initializes "
 "the engine — the control code. This process consists of three steps, though "
@@ -193,7 +172,6 @@ msgstr ""
 "fonction du degré de personnalisation nécessaire (ou être laissées à un "
 "comportement par défaut)."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:83
 msgid ""
 "See the :ref:`HTML5 shell class reference <doc_html5_shell_classref>`, for "
 "the full list of methods and options available."
@@ -202,7 +180,6 @@ msgstr ""
 "<doc_html5_shell_classref>`, pour la liste complète des méthodes et options "
 "disponibles."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:85
 msgid ""
 "First, the engine must be loaded, then it needs to be initialized, and after "
 "this the project can finally be started. You can perform every of these "
@@ -220,7 +197,6 @@ msgstr ""
 "`engine.startGame <Engine.prototype.startGame>` en surchargeant "
 "éventuellement les paramètres :js:attr:`EngineConfig`."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:101
 msgid ""
 "This snippet of code automatically loads and initializes the engine before "
 "starting the game. It uses the given configuration to to load the engine. "
@@ -236,7 +212,6 @@ msgstr ""
 "de savoir si le jeu a été chargé correctement sans bloquer l'exécution ou "
 "s'appuyer sur des sondages(polling)."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:106
 msgid ""
 "In case your project needs to have special control over the start arguments "
 "and dependency files, the :js:meth:`engine.start <Engine.prototype.start>` "
@@ -253,7 +228,6 @@ msgstr ""
 "supplémentaire) via la méthode :js:meth:`engine.preloadFile <Engine."
 "prototype.preloadFile>`."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
 msgid ""
 "Optionally, you can also manually :js:meth:`engine.init <Engine.prototype."
 "init>` to perform specific actions after the module initialization, but "
@@ -263,7 +237,6 @@ msgstr ""
 "<Engine.prototype.init>` pour effectuer des actions spécifiques après "
 "l'initialisation du module, mais avant le démarrage du moteur."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:114
 msgid ""
 "This process is a bit more complex, but gives you full control over the "
 "engine startup process."
@@ -271,7 +244,6 @@ msgstr ""
 "Ce processus est un peu plus complexe, mais vous permet de contrôler "
 "totalement le processus de démarrage du moteur."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:133
 msgid ""
 "To load the engine manually the :js:meth:`Engine.load` static method must be "
 "called. As this method is static, multiple engine instances can be spawned "
@@ -281,7 +253,6 @@ msgstr ""
 "load` doit être appelée. Comme cette méthode est statique, plusieurs "
 "instances de moteur peuvent être créées si elles partagent le même ``wasm``."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:136
 msgid ""
 "Multiple instances cannot be spawned by default, as the engine is "
 "immediately unloaded after it is initialized. To prevent this from happening "
@@ -298,11 +269,9 @@ msgstr ""
 "en déchargeant les fichiers qui ne sont plus nécessaires une fois l'instance "
 "initialisée."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
 msgid "Customizing the behavior"
 msgstr "Personnaliser le comportement"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:143
 msgid ""
 "In the Web environment several methods can be used to guarantee that the "
 "game will work as intended."
@@ -310,7 +279,6 @@ msgstr ""
 "Dans l'environnement web, plusieurs méthodes peuvent être utilisés pour "
 "garantir que le jeu fonctionne comme prévu."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
 msgid ""
 "If you target a specific version of WebGL, or just want to check if WebGL is "
 "available at all, you can call the :js:meth:`Engine.isWebGLAvailable` "
@@ -322,7 +290,6 @@ msgstr ""
 "`Engine.isWebGLAvailable`. Elle prends optionnellement un argument qui "
 "permet de faire un test pour une version majeur spécifique de WebGL."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
 msgid ""
 "As the real executable file does not exist in the Web environment, the "
 "engine only stores a virtual filename formed from the base name of loaded "
@@ -339,11 +306,9 @@ msgstr ""
 "automatiquement démarré. L'option de substitution :js:attr:`executable` peut "
 "être utilisée pour remplacer cette valeur."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
 msgid "Customizing the presentation"
 msgstr "Personnalisation de la présentation"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
 msgid ""
 "Several configuration options can be used to further customize the look and "
 "behavior of the game on your page."
@@ -351,7 +316,6 @@ msgstr ""
 "Plusieurs options de configuration peuvent être utilisées pour personnaliser "
 "davantage l'aspect et le comportement du jeu sur votre page."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
 msgid ""
 "By default, the first canvas element on the page is used for rendering. To "
 "use a different canvas element the :js:attr:`canvas` override option can be "
@@ -362,7 +326,6 @@ msgstr ""
 "attr:`canvas` peut être utilisée. Elle nécessite une référence à l'élément "
 "DOM lui-même."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:168
 msgid ""
 "The way the engine resize the canvas can be configured via the :js:attr:"
 "`canvasResizePolicy` override option."
@@ -370,7 +333,6 @@ msgstr ""
 "La façon dont le moteur redimensionne le canevas peut être configurée via "
 "l’option de remplacement :js:attr:'canvasResizePolicy'."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
 msgid ""
 "If your game takes some time to load, it may be useful to display a custom "
 "loading UI which tracks the progress. This can be achieved with the :js:attr:"
@@ -383,7 +345,6 @@ msgstr ""
 "qui permet de mettre en place une fonction de rappel qui sera appelée "
 "régulièrement au fur et à mesure que le moteur charge de nouveaux octets."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:182
 msgid ""
 "Be aware that in some cases ``total`` can be ``0``. This means that it "
 "cannot be calculated."
@@ -391,7 +352,6 @@ msgstr ""
 "Sachez que dans certains cas, ``total`` peut être ``0``. Cela signifie qu'il "
 "ne peut pas être calculé."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
 msgid ""
 "If your game supports multiple languages, the :js:attr:`locale` override "
 "option can be used to force a specific locale, provided you have a valid "
@@ -407,11 +367,9 @@ msgstr ""
 "peut être extrait de l'en-tête HTTP ``Accept-Language``, ou déterminé par un "
 "service GeoIP."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid "Debugging"
 msgstr "Débogage"
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:191
 msgid ""
 "To debug exported projects, it may be useful to read the standard output and "
 "error streams generated by the engine. This is similar to the output shown "
@@ -428,7 +386,6 @@ msgstr ""
 "être personnalisé en définissant vos propres fonctions pour traiter les "
 "messages."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
 msgid ""
 "Use the :js:attr:`onPrint` override option to set a callback function for "
 "the output stream, and the :js:attr:`onPrintError` override option to set a "
@@ -439,7 +396,6 @@ msgstr ""
 "attr:`onPrintError` pour définir une fonction de rappel pour le flux "
 "d'erreur."
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:209
 msgid ""
 "When handling the engine output keep in mind, that it may not be desirable "
 "to print it out in the finished product."

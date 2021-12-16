@@ -1,0 +1,449 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Score and replay"
+msgstr "\\ ScoreLabel"
+
+msgid ""
+"In this part, we'll add the score, music playback, and the ability to "
+"restart the game."
+msgstr ""
+
+msgid ""
+"We have to keep track of the current score in a variable and display it on "
+"screen using a minimal interface. We will use a text label to do that."
+msgstr ""
+
+msgid ""
+"In the main scene, add a new *Control* node as a child of *Main* and name it "
+"*UserInterface*. You will automatically be taken to the 2D screen, where you "
+"can edit your User Interface (UI)."
+msgstr ""
+
+msgid "Add a *Label* node and rename it to *ScoreLabel*."
+msgstr ""
+
+msgid "|image0|"
+msgstr "\\ |image0|"
+
+msgid ""
+"In the *Inspector*, set the *Label*'s *Text* to a placeholder like \"Score: "
+"0\"."
+msgstr ""
+
+msgid "|image1|"
+msgstr "\\ |image1|"
+
+msgid ""
+"Also, the text is white by default, like our game's background. We need to "
+"change its color to see it at runtime."
+msgstr ""
+
+msgid ""
+"Scroll down to *Custom Colors* and click the black box next to *Font Color* "
+"to tint the text."
+msgstr ""
+
+msgid "|image2|"
+msgstr "\\ |image2|"
+
+msgid "Pick a dark tone so it contrasts well with the 3D scene."
+msgstr ""
+
+msgid "|image3|"
+msgstr "\\ |image3|"
+
+msgid ""
+"Finally, click and drag on the text in the viewport to move it away from the "
+"top-left corner."
+msgstr ""
+
+msgid "|image4|"
+msgstr "\\ |image4|"
+
+msgid ""
+"The *UserInterface* node allows us to group our UI in a branch of the scene "
+"tree and use a theme resource that will propagate to all its children. We'll "
+"use it to set our game's font."
+msgstr ""
+
+#, fuzzy
+msgid "Creating a UI theme"
+msgstr "創建內容"
+
+msgid ""
+"Once again, select the *UserInterface* node. In the *Inspector*, create a "
+"new theme resource in *Theme -> Theme*."
+msgstr ""
+
+msgid "|image5|"
+msgstr "\\ |image5|"
+
+msgid ""
+"Click on it to open the theme editor In the bottom panel. It gives you a "
+"preview of how all the built-in UI widgets will look with your theme "
+"resource."
+msgstr ""
+
+msgid "|image6|"
+msgstr ""
+
+msgid "By default, a theme only has one property, the *Default Font*."
+msgstr ""
+
+msgid ""
+"You can add more properties to the theme resource to design complex user "
+"interfaces, but that is beyond the scope of this series. To learn more about "
+"creating and editing themes, see :ref:`doc_gui_skinning`."
+msgstr ""
+
+msgid "Click the *Default Font* property and create a new *DynamicFont*."
+msgstr ""
+
+msgid "|image7|"
+msgstr ""
+
+msgid ""
+"Expand the *DynamicFont* by clicking on it and expand its *Font* section. "
+"There, you will see an empty *Font Data* field."
+msgstr ""
+
+msgid "|image8|"
+msgstr ""
+
+msgid ""
+"This one expects a font file like the ones you have on your computer. Two "
+"common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
+msgstr ""
+
+msgid ""
+"In the *FileSystem* dock, Expand the ``fonts`` directory and click and drag "
+"the ``Montserrat-Medium.ttf`` file we included in the project onto the *Font "
+"Data*. The text will reappear in the theme preview."
+msgstr ""
+
+msgid ""
+"The text is a bit small. Set the *Settings -> Size* to ``22`` pixels to "
+"increase the text's size."
+msgstr ""
+
+msgid "|image9|"
+msgstr ""
+
+msgid "Keeping track of the score"
+msgstr ""
+
+msgid ""
+"Let's work on the score next. Attach a new script to the *ScoreLabel* and "
+"define the ``score`` variable."
+msgstr ""
+
+msgid ""
+"The score should increase by ``1`` every time we squash a monster. We can "
+"use their ``squashed`` signal to know when that happens. However, as we "
+"instantiate monsters from the code, we cannot do the connection in the "
+"editor."
+msgstr ""
+
+msgid ""
+"Instead, we have to make the connection from the code every time we spawn a "
+"monster."
+msgstr ""
+
+msgid ""
+"Open the script ``Main.gd``. If it's still open, you can click on its name "
+"in the script editor's left column."
+msgstr ""
+
+msgid "|image10|"
+msgstr ""
+
+msgid ""
+"Alternatively, you can double-click the ``Main.gd`` file in the *FileSystem* "
+"dock."
+msgstr ""
+
+msgid ""
+"At the bottom of the ``_on_MobTimer_timeout()`` function, add the following "
+"line."
+msgstr ""
+
+msgid ""
+"This line means that when the mob emits the ``squashed`` signal, the "
+"*ScoreLabel* node will receive it and call the function "
+"``_on_Mob_squashed()``."
+msgstr ""
+
+msgid ""
+"Head back to the ``ScoreLabel.gd`` script to define the "
+"``_on_Mob_squashed()`` callback function."
+msgstr ""
+
+msgid "There, we increment the score and update the displayed text."
+msgstr ""
+
+msgid ""
+"The second line uses the value of the ``score`` variable to replace the "
+"placeholder ``%s``. When using this feature, Godot automatically converts "
+"values to text, which is convenient to output text in labels or using the "
+"``print()`` function."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can learn more about string formatting here: :ref:`doc_gdscript_printf`."
+msgstr "GDScript 亦支援 :ref:`doc_gdscript_printf` 。"
+
+msgid ""
+"You can now play the game and squash a few enemies to see the score increase."
+msgstr ""
+
+msgid "|image11|"
+msgstr ""
+
+msgid ""
+"In a complex game, you may want to completely separate your user interface "
+"from the game world. In that case, you would not keep track of the score on "
+"the label. Instead, you may want to store it in a separate, dedicated "
+"object. But when prototyping or when your project is simple, it is fine to "
+"keep your code simple. Programming is always a balancing act."
+msgstr ""
+
+#, fuzzy
+msgid "Retrying the game"
+msgstr "執行遊戲"
+
+msgid ""
+"We'll now add the ability to play again after dying. When the player dies, "
+"we'll display a message on the screen and wait for input."
+msgstr ""
+
+msgid ""
+"Head back to the *Main* scene, select the *UserInterface* node, add a "
+"*ColorRect* node as a child of it and name it *Retry*. This node fills a "
+"rectangle with a uniform color and will serve as an overlay to darken the "
+"screen."
+msgstr ""
+
+msgid ""
+"To make it span over the whole viewport, you can use the *Layout* menu in "
+"the toolbar."
+msgstr ""
+
+msgid "|image12|"
+msgstr ""
+
+msgid "Open it and apply the *Full Rect* command."
+msgstr ""
+
+msgid "|image13|"
+msgstr ""
+
+msgid ""
+"Nothing happens. Well, almost nothing: only the four green pins move to the "
+"corners of the selection box."
+msgstr ""
+
+msgid "|image14|"
+msgstr ""
+
+msgid ""
+"This is because UI nodes (all the ones with a green icon) work with anchors "
+"and margins relative to their parent's bounding box. Here, the "
+"*UserInterface* node has a small size and the *Retry* one is limited by it."
+msgstr ""
+
+msgid ""
+"Select the *UserInterface* and apply *Layout -> Full Rect* to it as well. "
+"The *Retry* node should now span the whole viewport."
+msgstr ""
+
+msgid ""
+"Let's change its color so it darkens the game area. Select *Retry* and in "
+"the *Inspector*, set its *Color* to something both dark and transparent. To "
+"do so, in the color picker, drag the *A* slider to the left. It controls the "
+"color's alpha channel, that is to say, its opacity."
+msgstr ""
+
+#, fuzzy
+msgid "|image15|"
+msgstr "\\ |image1|"
+
+msgid ""
+"Next, add a *Label* as a child of *Retry* and give it the *Text* \"Press "
+"Enter to retry.\""
+msgstr ""
+
+#, fuzzy
+msgid "|image16|"
+msgstr "\\ |image1|"
+
+msgid ""
+"To move it and anchor it in the center of the screen, apply *Layout -> "
+"Center* to it."
+msgstr ""
+
+#, fuzzy
+msgid "|image17|"
+msgstr "\\ |image1|"
+
+#, fuzzy
+msgid "Coding the retry option"
+msgstr "複寫建置選項"
+
+msgid ""
+"We can now head to the code to show and hide the *Retry* node when the "
+"player dies and plays again."
+msgstr ""
+
+msgid ""
+"Open the script ``Main.gd``. First, we want to hide the overlay at the start "
+"of the game. Add this line to the ``_ready()`` function."
+msgstr ""
+
+msgid "Then, when the player gets hit, we show the overlay."
+msgstr ""
+
+msgid ""
+"Finally, when the *Retry* node is visible, we need to listen to the player's "
+"input and restart the game if they press enter. To do this, we use the built-"
+"in ``_unhandled_input()`` callback."
+msgstr ""
+
+msgid ""
+"If the player pressed the predefined ``ui_accept`` input action and *Retry* "
+"is visible, we reload the current scene."
+msgstr ""
+
+msgid ""
+"The function ``get_tree()`` gives us access to the global :ref:`SceneTree "
+"<class_SceneTree>` object, which allows us to reload and restart the current "
+"scene."
+msgstr ""
+
+#, fuzzy
+msgid "Adding music"
+msgstr "新增腳本"
+
+msgid ""
+"To add music that plays continuously in the background, we're going to use "
+"another feature in Godot: :ref:`autoloads <doc_singletons_autoload>`."
+msgstr ""
+
+msgid ""
+"To play audio, all you need to do is add an *AudioStreamPlayer* node to your "
+"scene and attach an audio file to it. When you start the scene, it can play "
+"automatically. However, when you reload the scene, like we do to play again, "
+"the audio nodes are also reset, and the music starts back from the beginning."
+msgstr ""
+
+msgid ""
+"You can use the autoload feature to have Godot load a node or a scene "
+"automatically at the start of the game, outside the current scene. You can "
+"also use it to create globally accessible objects."
+msgstr ""
+
+msgid ""
+"Create a new scene by going to the *Scene* menu and clicking *New Scene*."
+msgstr ""
+
+#, fuzzy
+msgid "|image18|"
+msgstr "\\ |image1|"
+
+msgid ""
+"Click the *Other Node* button to create an *AudioStreamPlayer* and rename it "
+"to *MusicPlayer*."
+msgstr ""
+
+#, fuzzy
+msgid "|image19|"
+msgstr "\\ |image1|"
+
+msgid ""
+"We included a music soundtrack in the ``art/`` directory, ``House In a "
+"Forest Loop.ogg``. Click and drag it onto the *Stream* property in the "
+"*Inspector*. Also, turn on *Autoplay* so the music plays automatically at "
+"the start of the game."
+msgstr ""
+
+#, fuzzy
+msgid "|image20|"
+msgstr "\\ |image2|"
+
+#, fuzzy
+msgid "Save the scene as ``MusicPlayer.tscn``."
+msgstr "最後，保存場景為 ``sayhello.tscn`` 之類的名稱。"
+
+#, fuzzy
+msgid ""
+"We have to register it as an autoload. Head to the *Project -> Project "
+"Settings…* menu and click on the *Autoload* tab."
+msgstr ""
+"要自動載入場景或腳本，請從選單中選擇 **[專案] -> [專案設定]** 然後切換到 "
+"**[AutoLoad]** 分頁。"
+
+msgid ""
+"In the *Path* field, you want to enter the path to your scene. Click the "
+"folder icon to open the file browser and double-click on ``MusicPlayer."
+"tscn``. Then, click the *Add* button on the right to register the node."
+msgstr ""
+
+#, fuzzy
+msgid "|image21|"
+msgstr "\\ |image2|"
+
+msgid ""
+"If you run the game now, the music will play automatically. And even when "
+"you lose and retry, it keeps going."
+msgstr ""
+
+msgid ""
+"Before we wrap up this lesson, here's a quick look at how it works under the "
+"hood. When you run the game, your *Scene* dock changes to give you two tabs: "
+"*Remote* and *Local*."
+msgstr ""
+
+#, fuzzy
+msgid "|image22|"
+msgstr "\\ |image2|"
+
+msgid ""
+"The *Remote* tab allows you to visualize the node tree of your running game. "
+"There, you will see the *Main* node and everything the scene contains and "
+"the instantiated mobs at the bottom."
+msgstr ""
+
+#, fuzzy
+msgid "|image23|"
+msgstr "\\ |image2|"
+
+msgid ""
+"At the top are the autoloaded *MusicPlayer* and a *root* node, which is your "
+"game's viewport."
+msgstr ""
+
+msgid ""
+"And that does it for this lesson. In the next part, we'll add an animation "
+"to make the game both look and feel much nicer."
+msgstr ""
+
+msgid "Here is the complete ``Main.gd`` script for reference."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
 #, fuzzy
 msgid "Visual Shader plugins"
 msgstr "Плагин Визуального Шейдера"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:6
 msgid ""
 "Visual Shader plugins are used to create custom :ref:`class_VisualShader` "
 "nodes in GDScript."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:9
 msgid ""
 "The creation process is different from usual editor plugins. You do not need "
 "to create a ``plugin.cfg`` file to register it; instead, create and save a "
@@ -36,7 +33,6 @@ msgid ""
 "registered with ``class_name``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:14
 #, fuzzy
 msgid ""
 "This short tutorial will explain how to make a Perlin-3D noise node "
@@ -48,7 +44,6 @@ msgstr ""
 "из https://github.com/curly-brace/Godot-3.0-Noise-Shaders/blob/master/assets/"
 "gpu_noise_shaders/classic_perlin3d.tres)."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:18
 #, fuzzy
 msgid ""
 "Create a Sprite and assign a :ref:`class_ShaderMaterial` to its material "
@@ -57,21 +52,18 @@ msgstr ""
 "Создайте спрайт и присвойте :ref:`ShaderMaterial <class_ShaderMaterial>` к "
 "слоту материала:"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:22
 #, fuzzy
 msgid "Assign :ref:`class_VisualShader` to the shader slot of the material:"
 msgstr ""
 "Установите :ref:`VisualShader <class_VisualShader>` в шейдерный слот "
 "материала:"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:26
 #, fuzzy
 msgid ""
 "Don't forget to change its mode to \"CanvasItem\" (if you are using a "
 "Sprite):"
 msgstr "Не забудьте изменить режим на CanvasItem (если вы используете спрайт):"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:30
 #, fuzzy
 msgid ""
 "Create a script which derives from :ref:`class_VisualShaderNodeCustom`. This "
@@ -81,7 +73,6 @@ msgstr ""
 "<class_VisualShaderNodeCustom>`. Это все что вам необходимо для "
 "инициализации своего плагина."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:193
 #, fuzzy
 msgid ""
 "Save it and open the Visual Shader. You should see your new node type within "
@@ -92,11 +83,9 @@ msgstr ""
 "внутри диалога узлов (если вы не видите его, попытайтесь перезапустить "
 "редактор):"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:197
 msgid "Place it on a graph and connect the required ports:"
 msgstr "Поместите его в граф и соедините требуемые порты:"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:201
 #, fuzzy
 msgid ""
 "That is everything you need to do, as you can see it is easy to create your "

@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Exporting 3D scenes"
+msgstr "Importando escenas 3D"
+
+msgid "Overview"
+msgstr "Sinopsis"
+
+msgid ""
+"In Godot it is possible to export 3D scenes as a glTF 2.0 file. You can "
+"export as a glTF binary (``.glb`` file) or glTF embedded with textures "
+"(``gltf`` + ``.bin`` + textures). This allows you to create scenes in Godot, "
+"such as a CSG mesh blockout for a level, export it to clean it up in a "
+"program such as Blender, and then bring it back into Godot."
+msgstr ""
+
+msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
+msgstr ""
+
+msgid ""
+"To export a scene in the editor go to **Project > Tools > Export GLTF...**"
+msgstr ""
+
+msgid "Limitations"
+msgstr "Limitaciones"
+
+#, fuzzy
+msgid "There are several limitations with glTF export."
+msgstr "Hay varias razones para esto:"
+
+msgid ""
+"No support for exporting particles since their implementation varies across "
+"engines."
+msgstr ""
+
+msgid "ShaderMaterials cannot be exported."
+msgstr ""
+
+#, fuzzy
+msgid "No support for exporting 2D scenes."
+msgstr "Sin soporte para editores de scripts externos."
+
+msgid "Only supported in editor builds (``tools=yes``)."
+msgstr ""

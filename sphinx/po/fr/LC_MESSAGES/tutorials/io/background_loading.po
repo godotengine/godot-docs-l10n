@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/io/background_loading.rst:4
 msgid "Background loading"
 msgstr "Chargement en arrière-plan"
 
-#: ../../docs/tutorials/io/background_loading.rst:6
 msgid ""
 "When switching the main scene of your game (e.g. going to a new level), you "
 "might want to show a loading screen with some indication that progress is "
@@ -40,11 +38,9 @@ msgstr ""
 "utilisant la classe ``ResourceInteractiveLoader`` pour des écrans de "
 "chargement plus fluides."
 
-#: ../../docs/tutorials/io/background_loading.rst:15
 msgid "ResourceInteractiveLoader"
 msgstr "ResourceInteractiveLoader"
 
-#: ../../docs/tutorials/io/background_loading.rst:17
 msgid ""
 "The ``ResourceInteractiveLoader`` class allows you to load a resource in "
 "stages. Every time the method ``poll`` is called, a new stage is loaded, and "
@@ -59,19 +55,15 @@ msgstr ""
 "Par exemple, si vous chargez une scène qui contient 10 images, chaque image "
 "sera une étape."
 
-#: ../../docs/tutorials/io/background_loading.rst:24
 msgid "Usage"
 msgstr "Utilisation"
 
-#: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
 msgstr "L'utilisation est généralement comme il suit"
 
-#: ../../docs/tutorials/io/background_loading.rst:29
 msgid "Obtaining a ResourceInteractiveLoader"
 msgstr "Obtenir un ResourceInteractiveLoader"
 
-#: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
 "This method will give you a ResourceInteractiveLoader that you will use to "
 "manage the load operation."
@@ -79,11 +71,9 @@ msgstr ""
 "Cette méthode vous donnera un ResourceInteractiveLoader que vous utiliserez "
 "pour gérer l'opération de chargement."
 
-#: ../../docs/tutorials/io/background_loading.rst:39
 msgid "Polling"
 msgstr "Interrogation"
 
-#: ../../docs/tutorials/io/background_loading.rst:45
 msgid ""
 "Use this method to advance the progress of the load. Each call to ``poll`` "
 "will load the next stage of your resource. Keep in mind that each stage is "
@@ -96,7 +86,6 @@ msgstr ""
 "comme une image ou un maillage, et qu'il faudra donc plusieurs "
 "images(frames) pour la charger."
 
-#: ../../docs/tutorials/io/background_loading.rst:50
 msgid ""
 "Returns ``OK`` on no errors, ``ERR_FILE_EOF`` when loading is finished. Any "
 "other return value means there was an error and loading has stopped."
@@ -105,17 +94,14 @@ msgstr ""
 "terminé. Toute autre valeur de retour signifie qu'il y a eu une erreur et "
 "que le chargement s'est arrêté."
 
-#: ../../docs/tutorials/io/background_loading.rst:54
 msgid "Load progress (optional)"
 msgstr "Progression du chargement (en option)"
 
-#: ../../docs/tutorials/io/background_loading.rst:56
 msgid "To query the progress of the load, use the following methods:"
 msgstr ""
 "Pour interroger la progression du chargement, utilisez les méthodes "
 "suivantes :"
 
-#: ../../docs/tutorials/io/background_loading.rst:63
 msgid ""
 "``get_stage_count`` returns the total number of stages to load. "
 "``get_stage`` returns the current stage being loaded."
@@ -123,11 +109,9 @@ msgstr ""
 "``get_stage_count`` renvoie le nombre total d'étapes à charger. "
 "``get_stage`` renvoie l'étage en cours de chargement."
 
-#: ../../docs/tutorials/io/background_loading.rst:67
 msgid "Forcing completion (optional)"
 msgstr "Forcer l'achèvement (facultatif)"
 
-#: ../../docs/tutorials/io/background_loading.rst:73
 msgid ""
 "Use this method if you need to load the entire resource in the current "
 "frame, without any more steps."
@@ -135,22 +119,18 @@ msgstr ""
 "Utilisez cette méthode si vous avez besoin de charger la ressource entière "
 "pendant l'image(frame) actuelle, sans aucune autre étape."
 
-#: ../../docs/tutorials/io/background_loading.rst:77
 msgid "Obtaining the resource"
 msgstr "Obtention de la ressource"
 
-#: ../../docs/tutorials/io/background_loading.rst:83
 msgid ""
 "If everything goes well, use this method to retrieve your loaded resource."
 msgstr ""
 "Si tout va bien, utilisez cette méthode pour récupérer votre ressource "
 "chargée."
 
-#: ../../docs/tutorials/io/background_loading.rst:87
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../docs/tutorials/io/background_loading.rst:89
 msgid ""
 "This example demonstrates how to load a new scene. Consider it in the "
 "context of the :ref:`doc_singletons_autoload` example."
@@ -158,7 +138,6 @@ msgstr ""
 "Cet exemple montre comment charger une nouvelle scène. Considérez le dans le "
 "contexte de l'exemple :ref:`doc_singletons_autoload`."
 
-#: ../../docs/tutorials/io/background_loading.rst:92
 msgid ""
 "First, we set up some variables and initialize the ``current_scene`` with "
 "the main scene of the game:"
@@ -166,7 +145,6 @@ msgstr ""
 "Tout d'abord, nous mettons en place quelques variables et initialisons la "
 "``scène_courante`` avec la scène principale du jeu :"
 
-#: ../../docs/tutorials/io/background_loading.rst:107
 msgid ""
 "The function ``goto_scene`` is called from the game when the scene needs to "
 "be switched. It requests an interactive loader, and calls "
@@ -180,7 +158,6 @@ msgstr ""
 "callback ``_process``. Il démarre également une animation de \"chargement\", "
 "qui peut afficher une barre de progression ou un écran de chargement."
 
-#: ../../docs/tutorials/io/background_loading.rst:129
 msgid ""
 "``_process`` is where the loader is polled. ``poll`` is called, and then we "
 "deal with the return value from that call. ``OK`` means keep polling, "
@@ -195,7 +172,6 @@ msgstr ""
 "que nous sautons une image (via ``wait_frames``, défini sur la fonction "
 "``goto_scene``) pour permettre à l'écran de chargement de s'afficher."
 
-#: ../../docs/tutorials/io/background_loading.rst:135
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
 "thread. Some stages might load fast, which means we might be able to cram "
@@ -210,7 +186,6 @@ msgstr ""
 "votre valeur ``time_max``, donc gardez à l'esprit que nous n'aurons pas de "
 "contrôle précis sur les timings."
 
-#: ../../docs/tutorials/io/background_loading.rst:172
 msgid ""
 "Some extra helper functions. ``update_progress`` updates a progress bar, or "
 "can also update a paused animation (the animation represents the entire load "
@@ -225,11 +200,9 @@ msgstr ""
 "il s'agit d'une scène en cours de chargement, ``instance()`` doit être "
 "appelée sur la ressource obtenue du loader."
 
-#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr "Utilisation de plusieurs threads"
 
-#: ../../docs/tutorials/io/background_loading.rst:201
 msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
@@ -237,11 +210,9 @@ msgstr ""
 "ResourceInteractiveLoader peut être utilisé à partir de plusieurs threads. "
 "Deux ou trois choses à garder à l'esprit si vous essayez :"
 
-#: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
 msgstr "Utiliser un sémaphore"
 
-#: ../../docs/tutorials/io/background_loading.rst:207
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
 "``Semaphore`` to sleep (instead of a busy loop or anything similar)."
@@ -250,11 +221,9 @@ msgstr ""
 "ressource, utilisez un ``Semaphore`` pour dormir (au lieu d'une boucle "
 "occupée ou quelque chose de similaire)."
 
-#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr "Ne pas bloquer le fil principal pendant l'interrogation"
 
-#: ../../docs/tutorials/io/background_loading.rst:213
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
 "class, don't lock the main thread while you call ``poll`` on your loader "
@@ -272,11 +241,9 @@ msgstr ""
 "principal attend votre mutex alors que votre fil attend de charger une "
 "ressource."
 
-#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr "Exemple de classe"
 
-#: ../../docs/tutorials/io/background_loading.rst:224
 msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
@@ -285,11 +252,9 @@ msgstr ""
 "les threads ici : :download:`resource_queue.gd <files/resource_queue.gd>`. "
 "L'utilisation est la suivante :"
 
-#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr "Appelez la classe après l'avoir instanciée pour démarrer le thread."
 
-#: ../../docs/tutorials/io/background_loading.rst:237
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
@@ -297,20 +262,17 @@ msgstr ""
 "Mettez une ressource en file d'attente. Utilisez l'argument optionnel "
 "\"p_in_front\" pour le mettre en tête de la file d'attente."
 
-#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr ""
 "Supprimez une ressource de la file d'attente, en éliminant tout chargement "
 "effectué."
 
-#: ../../docs/tutorials/io/background_loading.rst:250
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 "Retourne ``true`` si une ressource est entièrement chargée et prête à être "
 "récupérée."
 
-#: ../../docs/tutorials/io/background_loading.rst:256
 msgid ""
 "Get the progress of a resource. Returns -1 if there was an error (for "
 "example if the resource is not in the queue), or a number between 0.0 and "
@@ -324,7 +286,6 @@ msgstr ""
 "raisons esthétiques (mise à jour des barres de progression, etc), utilisez "
 "\"is_ready\" pour savoir si une ressource est réellement prête."
 
-#: ../../docs/tutorials/io/background_loading.rst:266
 msgid ""
 "Returns the fully loaded resource, or ``null`` on error. If the resource is "
 "not fully loaded (``is_ready`` returns ``false``), it will block your thread "
@@ -337,11 +298,9 @@ msgstr ""
 "pas dans la file d'attente, il appellera ``ResourceLoader::load`` pour la "
 "charger normalement et la renvoyer."
 
-#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr "Exemple :"
 
-#: ../../docs/tutorials/io/background_loading.rst:305
 msgid ""
 "**Note**: this code, in its current form, is not tested in real world "
 "scenarios. If you run into any issues, ask for help in one of `Godot's "

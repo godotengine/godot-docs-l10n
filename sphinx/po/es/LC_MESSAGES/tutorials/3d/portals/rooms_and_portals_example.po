@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,145 +17,118 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:2
 msgid "Rooms and Portals example"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:4
 msgid ""
 "Download this tutorial project: `Simple Portals Example <https://github.com/"
 "lawnjelly/godot-demo-projects/tree/portals_simple_demo/3d/portals/"
 "room_and_portals_simple_example>`_ ."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:9
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:11
 msgid ""
 "This tutorial will introduce you to building a \"Hello World\" room system "
 "with two rooms, and a portal in between."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:14
 #, fuzzy
 msgid "Step 1"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:18
 #, fuzzy
 msgid "Create a new project."
 msgstr "Creando un nuevo proyecto"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:19
 msgid ""
 "Add a :ref:`Spatial<class_Spatial>` as the scene root (on the screenshot, "
 "it's called \"Root\")."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:20
 msgid ""
 "Next add a :ref:`RoomManager<class_RoomManager>` node. We will need this "
 "later to process the room system."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:21
 msgid ""
 "Next we need to start defining our rooms. We create all our rooms under "
 "another Spatial we have called 'RoomList'."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:22
 msgid "Add a new :ref:`Room<class_Room>` node as a child of the roomlist."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:23
 msgid "We have named the room ``Kitchen``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:24
 msgid ""
 "We will now create the geometry of our room. The names you give to the "
 "geometry is up to you."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:25
 msgid ""
 "Create a :ref:`MeshInstance<class_MeshInstance>` for the floor. Create a box "
 "by adding a CubeMesh resource to the MeshInstance. Scale and position it to "
 "form a floor."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:26
 msgid ""
 "Create MeshInstances for the walls. Create more box meshes for this, then "
 "scale and position them. Be sure to leave an opening on one side. You will "
 "need to create two wall segments to do this on that side."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:29
 #, fuzzy
 msgid "Step 2"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:33
 #, fuzzy
 msgid "Now we need to create the other room."
 msgstr "Ahora tenemos que añadir este código:"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:34
 msgid ""
 "You can do this simply by duplicating the first room (select the ``Kitchen`` "
 "node, right click and choose **Duplicate**)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:35
 msgid "Rotate and position the second room so that the openings line up."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:36
 msgid "Rename the second room to ``Lounge``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:39
 #, fuzzy
 msgid "Step 3"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:43
 msgid "Next, we will add a portal between the two rooms."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:44
 #, fuzzy
 msgid "Create a new :ref:`Portal<class_Portal>` in the kitchen."
 msgstr "Primero, agrega un :ref:`Viewport <class_Viewport>` a la escena."
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:45
 msgid ""
 "Scale and position the portal using the node ``Transform`` in the inspector, "
 "so it fits within the opening between the two rooms."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:46
 msgid ""
 "The portal plane should face *outward* from the source room, i.e. towards "
 "the lounge. This direction is indicated by the arrow in the editor gizmo, "
 "and portal gizmo's color."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:49
 #, fuzzy
 msgid "Step 4"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:53
 msgid ""
 "To make things more exciting, we want to add a few more boxes to the rooms."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:54
 msgid ""
 "Placing these boxes as children or grandchildren of the room nodes "
 "explicitly tells the system which room the objects should be in. However, we "
@@ -164,19 +137,16 @@ msgid ""
 "correct room at runtime."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:55
 msgid ""
 "On the screenshot, the boxes were places as children of a Spatial I have "
 "called ``Freeform`` to keep things tidy."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:56
 msgid ""
 "Boxes also have a green SpatialMaterial assigned to them to make them stand "
 "out more from the rest of the room."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:57
 #, fuzzy
 msgid ""
 "Let's also create an :ref:`OmniLight<class_OmniLight>` so it will be "
@@ -184,87 +154,72 @@ msgid ""
 msgstr ""
 "Primero, agregaremos una :ref:`OmniLight<class_OmniLight>` a la escena."
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:60
 #, fuzzy
 msgid "Step 5"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:64
 msgid ""
 "Next comes a crucial stage. We must let the RoomManager know where the rooms "
 "are!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:65
 msgid ""
 "Select the RoomManager and look in the Inspector window in the **Paths** "
 "section."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:66
 msgid ""
 "You need to assign the **Room List** to point to the RoomList node we "
 "created earlier (which is the parent of all the rooms)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:69
 #, fuzzy
 msgid "Step 6"
 msgstr "Entrar En"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:73
 msgid ""
 "Make sure you have saved your project before this next step. It is always a "
 "good idea to save and make a backup before converting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:74
 msgid ""
 "Select the RoomManager, and you will see a button in the toolbar at the top "
 "of the 3d editor viewport called **Convert Rooms**. Press this button."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:75
 msgid ""
 "If all goes well, the RoomManager will have created the runtime data (the "
 "*room graph*) to perform occlusion culling at runtime."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:76
 msgid ""
 "You can see a log of the conversion process in the output window. This is "
 "helpful for finding problems."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:77
 msgid ""
 "If you now move the editor camera inside the rooms, you should see the "
 "meshes in the opposite room being culled depending on what you can see "
 "through the portal."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:80
 msgid "Conclusion"
 msgstr "Conclusión"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:82
 msgid ""
 "This concludes this simple tutorial. Don't be afraid to experiment with the "
 "new room system you have created."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:85
 #, fuzzy
 msgid "Some things to try"
 msgstr "Hay algunas cosas a tener en cuenta:"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:87
 msgid ""
 "Create different types of geometry. CSG nodes, Particle systems, and "
 "Multimeshes are all supported by the portal system."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:88
 msgid ""
 "Try creating a Camera and adding it to the scene. If you run the scene you "
 "will notice that the portal culling is not active. This is because the "
@@ -275,7 +230,6 @@ msgid ""
 "``_ready()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:89
 msgid ""
 "The geometry you created so far is all ``STATIC`` (non-moving). If you look "
 "in the inspector for geometry nodes, you will see they derive from "
@@ -283,7 +237,6 @@ msgid ""
 "portal system. This determines how the node is processed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:90
 msgid ""
 "If you now write a script to move one of your objects within a room and view "
 "it through a Camera as the scene runs, you may notice that the object gets "
@@ -292,7 +245,6 @@ msgid ""
 "should now update the culling correctly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:91
 #, fuzzy
 msgid ""
 "There are several ``portal_modes``, these are described in the main "
@@ -301,20 +253,17 @@ msgstr ""
 "Existen varios tipos de InputEvent especializados, descriptos en la "
 "siguiente tabla:"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:92
 msgid ""
 "Try turning the portal on and off at runtime from your script. You can call "
 "``set_portal_active()`` to open and close the portal."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:93
 msgid ""
 "If you select the portal, you should see 4 handles appear. Try dragging the "
 "portal points with the mouse, and see how it affects the objects that are "
 "culled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:94
 msgid ""
 "If you select a room and click the **Generate Points** button in the "
 "toolbar, it will store the points of the room hull in the room inspector. "

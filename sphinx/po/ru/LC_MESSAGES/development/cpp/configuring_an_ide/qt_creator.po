@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
 msgid "Qt Creator"
 msgstr "Qt Creator"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
 #, fuzzy
 msgid ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
@@ -30,11 +28,9 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ это бесплатная, открытая IDE для всех "
 "десктопных платформ."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
 msgid "Importing the project"
 msgstr "Импортирование проекта"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
 #, fuzzy
 msgid ""
 "From the Qt Creator's main screen select **New Project > Import Project > "
@@ -42,11 +38,9 @@ msgid ""
 msgstr ""
 "Выберите *New Project* -> *Import Project* -> *Import Existing Project*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
 msgid "Under **Location** select the Godot root folder."
 msgstr "В разделе **Location** выберите корневую папку Godot."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 #, fuzzy
 msgid ""
 "Next, you can choose which folders and files will be visible to the project. "
@@ -60,33 +54,27 @@ msgstr ""
 "конфигурационных файлов, \\*.java для разработки под Android, \\*.mm для "
 "macOS. Щёлкните \"Next\"."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
 msgid ""
 "You can change this configuration later by right-clicking on your project "
 "and selecting the **Edit Files...** option."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
 msgid "Finish the import."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
 msgid ""
 "Open the ``project_name.includes`` file and add a line containing ``.`` to "
 "it to correctly enable the code completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 #, fuzzy
 msgid "From the left-side menu select **Projects** and open the **Build** tab."
 msgstr "Щёлкните *Projects* и откройте вкладку *Build*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 #, fuzzy
 msgid "Delete the predefined ``make`` build step."
 msgstr "Удалите предустановленный этап сборки ``make``."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
 msgid ""
 "Click **Add Build Step > Custom Process Step** to add a new build step with "
 "the following settings:"
@@ -94,19 +82,15 @@ msgstr ""
 "Щёлкните *Add Build Step* -> *Custom Process Step*, чтобы добавить новый шаг "
 "сборки со следующими настройками:"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
 msgstr "Команда"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "**scons**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid "Arguments"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 #, fuzzy
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -114,7 +98,6 @@ msgstr ""
 "Сначала прочитайте :doc:`ui_introduction_to_the_ui_system`, чтобы узнать, "
 "как работает система пользовательского интерфейса Godot."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
 #, fuzzy
 msgid ""
 "If the build fails with ``Could not start process \"scons\"``, it can mean "
@@ -126,17 +109,14 @@ msgstr ""
 "переменной среды ``PATH``, так что вам нужно будет установить полный путь к "
 "бинарнику SCons."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 #, fuzzy
 msgid "Debugging the project"
 msgstr "Подготовка проекта"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
 #, fuzzy
 msgid "From the left-side menu select **Projects** and open the **Run** tab."
 msgstr "Щёлкните *Projects* и откройте вкладку *Build*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
 msgid ""
 "Under **Executable** specify the path to your executable located in the "
 "``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -145,7 +125,6 @@ msgid ""
 "root, e.g: ``%{buildDir}/bin/godot.x11.opt.tools.64``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 #, fuzzy
 msgid ""
 "If you want to run a specific project, specify its root folder under "
@@ -154,7 +133,6 @@ msgstr ""
 "Если вы хотите запустить определённую игру или проект, настройте *Working "
 "directory* на директорию игры."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 #, fuzzy
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
@@ -163,17 +141,14 @@ msgstr ""
 "Если вы хотите запустить редактор, добавьте ``-e`` в поле *Command line "
 "arguments*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
 msgstr "Конфигурация стилей кода"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 #, fuzzy
 msgid ""
 "Developers must follow the project's :ref:`code style "
@@ -188,7 +163,6 @@ msgstr ""
 "Godot. Вы можете изменить это поведение в \"Code Style\" в *Options* -> *C+"
 "+*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 #, fuzzy
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
@@ -199,7 +173,6 @@ msgstr ""
 "*Copy Built-in Code Style* для установки нового стиля кода. Установить имя "
 "(напр. Godot) и измените настройку вкладок в *Tabs Only*."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

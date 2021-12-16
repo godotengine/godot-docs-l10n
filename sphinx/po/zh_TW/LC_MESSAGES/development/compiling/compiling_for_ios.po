@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:4
 msgid "Compiling for iOS"
 msgstr "為 iOS 進行編譯"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:9
 msgid "Requirements"
 msgstr "系統需求"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:11
 #, fuzzy
 msgid ""
 "SCons 3.0+ (you can install it via `Homebrew <https://brew.sh/>`_ or "
@@ -35,12 +32,10 @@ msgstr ""
 "SCons 3.0+ (可以通過 Homebrew 或 Macports 來安裝，安裝完後應該可以在終端機內"
 "執行 ``scons``)。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:14
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
 msgstr "有 iOS (10.0) SDK 的 Xcode 10.0 (或更新版) 以及命令行工具。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:16
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -48,19 +43,15 @@ msgstr ""
 "有關配合 Godot 使用 SCons 的一般說明，請參考 :ref:"
 "`doc_introduction_to_the_buildsystem` 。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:20
 msgid "Compiling"
 msgstr "編譯"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:22
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
 msgstr "開啟終端機，前往 Godot 原始碼的根目錄並輸入："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:28
 msgid "for a debug build, or:"
 msgstr "若要建置除錯版，則："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:34
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
@@ -68,15 +59,12 @@ msgstr ""
 "若要建置釋出版本 (請檢查用於各個設定的 ``platform/iphone/detect.py`` 編譯旗"
 "標)。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:37
 msgid "Alternatively, you can run"
 msgstr "另外，也可以執行"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:43
 msgid "for a Simulator executable."
 msgstr "來執行模擬器。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:45
 msgid ""
 "For recent devices, Apple requires 64-bit versions of application binaries "
 "when you are uploading to the Apple Store. The best way to provide these is "
@@ -87,7 +75,6 @@ msgstr ""
 "式二進位檔。提供 64 位元版本最好的方法就是將 32 位元與 64 位元捆綁在一起，這"
 "樣所有裝置都能執行遊戲。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:48
 msgid ""
 "It can be done in three steps: first compile the 32-bit version, then "
 "compile the 64-bit version and then use ``lipo`` to bundle them into one "
@@ -98,7 +85,6 @@ msgstr ""
 "使用 ``lipo`` 來將這兩個版本捆綁在一起，成為「universal」二進位檔。這幾個步驟"
 "可以通過下列指令來進行："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:59
 msgid ""
 "If you also want to provide a simulator build (reduces the chance of any "
 "linker errors with dependencies), you'll need to build and lipo the "
@@ -107,11 +93,9 @@ msgstr ""
 "若也想同時提供模擬器建置 (來減少相依性套件造成連結錯誤的機會)，則還需要建置 "
 "``x86_64`` 架構，並 lipo。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid "Run"
 msgstr "執行"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:73
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
@@ -119,7 +103,6 @@ msgstr ""
 "若要在一台裝置或模擬器上執行，請依照下列指示： :ref:"
 "`doc_exporting_for_ios` 。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:76
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "

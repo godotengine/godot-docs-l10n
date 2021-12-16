@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Overview of debugging tools"
+msgstr "调试工具概述"
+
+msgid ""
+"This guide will give you an overview of the available debugging tools in the "
+"engine."
+msgstr "本指南将概述引擎中可用的调试工具."
+
+msgid ""
+"Godot comes with a powerful debugger and profilers to track down bugs, "
+"inspect your game at runtime, monitor essential metrics, and measure "
+"performances. It also offers options to visualize collision boxes and "
+"navigation polygons in the running game."
+msgstr ""
+"Godot自带强大的调试器和剖析器, 可以追踪bug, 在运行时检查你的游戏, 监控重要指"
+"标, 并测量性能. 它还提供了在运行游戏中可视化碰撞框和导航多边形的选项."
+
+msgid ""
+"Finally, you have options to debug the game running on a remote device and "
+"to reload changes to your scenes or your code while the game is running."
+msgstr ""
+"最后, 你可以选择调试在远程设备上运行的游戏, 并在游戏运行时重新加载对你的场景"
+"或代码的修改."
+
+msgid "Debugger Panel"
+msgstr "调试器面板"
+
+msgid ""
+"Many of Godot's debugging tools are part of the Debugger panel, which you "
+"can find information about in :ref:`doc_debugger_panel`."
+msgstr ""
+"Godot的许多调试工具都是Debugger面板的一部分, 你可以在 :ref:"
+"`doc_debugger_panel` 中找到相关信息."
+
+msgid "Debug menu options"
+msgstr "调试菜单选项"
+
+msgid ""
+"There are a few common debug options you can toggle on or off when running "
+"your game in the editor, which can help you in debugging your game."
+msgstr ""
+"在编辑器中运行游戏时, 有几个常见的调试选项可以切换为开或关, 以帮助你调试游戏."
+
+msgid "You can find these options in the **Debug** editor menu."
+msgstr "您可以在 **Debug** 编辑器菜单中找到这些选项."
+
+msgid "Here are the descriptions of the options:"
+msgstr "下面是这些选项的说明:"
+
+msgid "Deploy with Remote Debug"
+msgstr "使用远程调试部署"
+
+msgid ""
+"When exporting and deploying, the resulting executable will attempt to "
+"connect to the IP of your computer for debugging."
+msgstr "当导出和部署时, 产生的可执行文件将尝试连接到你的计算机的IP上进行调试."
+
+msgid "Small Deploy with Network FS"
+msgstr "使用网络文件系统进行小型部署"
+
+msgid ""
+"This option speeds up testing for games with a large footprint on remote "
+"devices."
+msgstr "这个选项加快了在远程设备上进行大足迹游戏的测试."
+
+msgid ""
+"When **Small Deploy with Network FS** is on, instead of exporting the full "
+"game, deploying the game builds a minimal executable. The editor then "
+"provides files from the project over the network."
+msgstr ""
+"当 **Small Deploy with Network FS** 开启时, 部署游戏不是导出整个游戏, 而是建"
+"立一个最小的可执行文件. 然后, 编辑器通过网络提供项目中的文件."
+
+msgid ""
+"Also, on Android, the game is deployed using the USB cable to speed up "
+"deployment."
+msgstr "另外，在 Android 系统上，游戏采用 USB 线部署，加快部署速度。"
+
+msgid "Visible Collision Shapes"
+msgstr "显示碰撞区域"
+
+msgid ""
+"This option makes collision shapes and raycast nodes visible in the running "
+"game."
+msgstr "这个选项使碰撞形状和射线传输节点在运行的游戏中可见."
+
+msgid "Visible Navigation"
+msgstr "显示导航"
+
+msgid "Navigation meshes and polygons will be visible on the running game."
+msgstr "可以在运行的游戏的时候看到导航网格和多边形."
+
+msgid "Sync Scene Changes"
+msgstr "同步场景修改"
+
+msgid ""
+"With this option, any change you make to a scene in the editor at runtime "
+"appears instantly. When used remotely on a device, this is more efficient "
+"with the network filesystem."
+msgstr ""
+"使用此选项, 在运行时对编辑器中的场景所做的任何更改都会立即显示. 当在设备上远"
+"程使用时, 这对网络文件系统来说更为有效."
+
+msgid "Sync Script Changes"
+msgstr "同步脚本变更"
+
+msgid ""
+"Any script that is saved will be reloaded on the running game. When used "
+"remotely on a device, this is more efficient with the network filesystem."
+msgstr ""
+"任何被保存的脚本都会被重新加载到正在运行的游戏上. 当在设备上远程使用时, 这对"
+"网络文件系统来说更有效率."
+
+msgid "Script editor debug tools and options"
+msgstr "脚本编辑器调试工具和选项"
+
+msgid ""
+"The script editor has its own set of debug tools for use with breakpoints "
+"and two options. The breakpoint tools can also be found in the **Debugger** "
+"tab of the debugger."
+msgstr ""
+"脚本编辑器有自己的一套调试工具, 用于断点和两个选项. 断点工具也可以在调试器的 "
+"**Debugger** 标签中找到."
+
+msgid ""
+"The **Break** button causes a break in the script like a breakpoint would. "
+"**Continue** makes the game continue after pausing at a breakpoint. **Step "
+"Over** goes to the next line of code, and **Step Into** goes into a function "
+"if possible. Otherwise, it does the same thing as **Step Over**."
+msgstr ""
+"**断点** 按钮会像断点一样导致脚本的中断. **继续** 使游戏在断点处暂停后继续. "
+"**Step Over** 进入下一行代码, 如果可能的话, **Step Into** 进入一个函数. 否"
+"则, 它与 **Step Over** 做同样的事情."
+
+msgid ""
+"The **Keep Debugger Open** option keeps the debugger open after a scene has "
+"been closed. And the **Debug with External Editor** option lets you debug "
+"your game with an external editor."
+msgstr ""
+"在场景关闭后, **Keep Debugger Open** 选项可使调试器保持打开状态. 而 **Debug "
+"with External Editor** 选项可以让你用外部编辑器调试游戏."
+
+msgid ""
+"Breakpoints won't break on code if it's :ref:`running in a thread "
+"<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
+"debugger."
+msgstr ""
+"如果代码是 :ref:`在线程 <doc_using_multiple_threads>` 中运行, 断点不会中断. "
+"这是当前GDScript调试器的一个限制."
+
+msgid "Debug project settings"
+msgstr "调试项目设置"
+
+msgid ""
+"In the project settings, there is a **Debug** category with three "
+"subcategories which control different things."
+msgstr "在项目设置中, 有一个 **调试** 类别, 有三个子类别, 控制不同的东西."
+
+msgid "Settings"
+msgstr "Settings(设置)"
+
+msgid ""
+"These are some general settings such as printing the current FPS to the "
+"**Output** panel, the maximum amount of functions when profiling and others."
+msgstr ""
+"这些都是一些常规的设置, 比如将当前的FPS打印到 **输出** 面板, 剖析时的最大函数"
+"量等."
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid ""
+"These settings allow you to toggle specific GDScript warnings, such as for "
+"unused variables. You can also turn off warnings completely."
+msgstr ""
+"这些设置允许你切换特定的GDScript警告, 比如未使用的变量. 您也可以完全关闭警告."
+
+msgid "Shapes"
+msgstr "Shapes形状"
+
+msgid ""
+"Shapes are where you can adjust the color of shapes that only appear for "
+"debugging purposes, such as collision and navigation shapes."
+msgstr ""
+"Shapes中你可以调整形状的颜色, 这些形状只出现在调试的目的, 如碰撞和导航形状."
+
+msgid "Remote in scene dock"
+msgstr "遥控场景面板"
+
+msgid ""
+"When running a game in the editor two options appear at the top of the "
+"**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
+"inspect or change the nodes' parameters in the running project."
+msgstr ""
+"当在编辑器中运行一个游戏时, 有两个选项出现在 **Scene** 栏目的顶部, 即 "
+"**Remote** 和 **Local** . 当使用 **Remote** 时, 你可以检查或改变运行项目中的"
+"节点参数."
+
+msgid ""
+"Some editor settings related to debugging can be found inside the **Editor "
+"Settings**, under the **Network > Debug** and **Debugger** sections."
+msgstr ""
+"一些与调试有关的编辑器设置可以在 **Editor Settings** 内找到, 在 **Network > "
+"Debug** and **Debugger** 部分."

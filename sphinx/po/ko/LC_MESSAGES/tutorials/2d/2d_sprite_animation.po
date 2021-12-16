@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
 msgid "2D Sprite animation"
 msgstr "2D 스프라이트 애니메이션"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 #, fuzzy
 msgid ""
 "In this tutorial, you'll learn how to create 2D animated characters with the "
@@ -39,7 +36,6 @@ msgstr ""
 "하나일 것입니다: 개별 이미지 또는 애니메이션 프레임을 모두 담긴 단일 스프라이"
 "트 시트. 애셋 유형에 따라 다음 해결책 중 하나를 선택할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:14
 #, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
@@ -53,17 +49,14 @@ msgstr ""
 "ref:`Sprite <class_Sprite>` 의 *Animation* 속성과 함께 :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` 를 사용합니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:19
 msgid ""
 "Art for the following examples by https://opengameart.org/users/ansimuz and "
 "by https://opengameart.org/users/tgfcoder"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
 msgid "Individual images with AnimatedSprite"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
 #, fuzzy
 msgid ""
 "In this scenario, you have a collection of images, each containing one of "
@@ -73,7 +66,6 @@ msgstr ""
 "이 시나리오에서는 당신은 캐릭터의 애니메이션 프레임들을 포함하는 이미지 컬렉"
 "션을 가집니다. 이 예제에서 다음과 같은 애니메이션을 사용합니다:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
 msgid ""
 "You can download the images here: :download:`run_animation.zip <files/"
 "run_animation.zip>`"
@@ -81,7 +73,6 @@ msgstr ""
 "이미지들은 여기서 다운로드 할 수 있습니다: :download:`using_kinematic2d.zip "
 "<files/using_kinematic2d.zip>`"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:34
 msgid ""
 "Unzip the images and place them in your project folder. Set up your scene "
 "tree with the following nodes:"
@@ -89,8 +80,6 @@ msgstr ""
 "이미지 압축을 풀고 당신의 프로젝트 폴더에 넣으세요. 다음과 같은 노드를 씬 트"
 "리에 설정하세요:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:169
 #, fuzzy
 msgid ""
 "The root node could also be :ref:`Area2D <class_Area2D>` or :ref:"
@@ -105,7 +94,6 @@ msgstr ""
 "니다. 자세한 정보는 :ref:`Physics Introduction <doc_physics_introduction>` "
 "를 참고하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
 msgid ""
 "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select "
 "\"New SpriteFrames\"."
@@ -113,7 +101,6 @@ msgstr ""
 "이제 ``AnimatedSprite`` 를 선택하고 노드의 *SpriteFrames* 속성에서 \"새 "
 "SpriteFrames\"를 선택하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
 msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
@@ -121,7 +108,6 @@ msgstr ""
 "새 SpriteFrames 리소스를 클릭하면 편집기 창 하단에 새로운 패널이 나타날 것입"
 "니다:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
 "From the FileSystem dock on the left side, drag the 8 individual images into "
 "the center part of the SpriteFrames panel. On the left side, change the name "
@@ -131,7 +117,6 @@ msgstr ""
 "로 끌어다 놓으세요. 왼쪽에서 애니메이션의 이름을 \"default\"에서 \"run\"으로 "
 "변경하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
 #, fuzzy
 msgid ""
 "Back in the Inspector, check the box for the *Playing* property. You should "
@@ -142,7 +127,6 @@ msgstr ""
 "에서 애니메이션이 재생되는 것을 볼 수 있습니다. 그러나 꽤 느립니다. 고치기 위"
 "해서는 SpriteFrames 패널에서 *속도 (FPS)* 설정을 바꾸세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
 "You can add additional animations by clicking the \"New Animation\" button "
 "and adding additional images."
@@ -150,11 +134,9 @@ msgstr ""
 "\"새로운 애니메이션\" 버튼을 클릭하고 이미지를 추가해서 애니메이션을 추가할 "
 "수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
 msgid "Controlling the animation"
 msgstr "애니메이션 제어하기"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
 "Once the animation is complete, you can control the animation via code using "
 "the ``play()`` and ``stop()`` methods. Here is a brief example to play the "
@@ -165,17 +147,14 @@ msgstr ""
 "메이션을 제어할 수 있습니다. 여기 오른쪽 화살표 키를 누르고 있으면 애니메이션"
 "을 재생하고 떼면 중지하는 간단한 예제가 있습니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
 msgid "Sprite sheet with AnimatedSprite"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:118
 msgid ""
 "You can also easily animate from a sprite sheet with the class "
 "``AnimatedSprite``. We will use this public domain sprite sheet:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:122
 #, fuzzy
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download it, and then "
@@ -184,7 +163,6 @@ msgstr ""
 "오른쪽 마우스 버튼으로 이미지를 클릭하고 \"다른 이름으로 저장\" 선택해서 다운"
 "로드 하세요. 그 다음 당신의 프로젝트 폴더에 이미지를 복사하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
 #, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
@@ -194,7 +172,6 @@ msgstr ""
 "이제 ``AnimatedSprite`` 를 선택하고 노드의 *SpriteFrames* 속성에서 \"새 "
 "SpriteFrames\"를 선택하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
 #, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource. This time, when the bottom panel "
@@ -203,11 +180,9 @@ msgstr ""
 "새 SpriteFrames 리소스를 클릭하면 편집기 창 하단에 새로운 패널이 나타날 것입"
 "니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
 msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:133
 msgid ""
 "A new window will open, showing your sprite sheet. The first thing you will "
 "need to do is to change the number of vertical and horizontal images in your "
@@ -215,30 +190,25 @@ msgid ""
 "images vertically."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:137
 msgid ""
 "Next, select the frames from the sprite sheet that you want to include in "
 "your animation. We will select the top four, then click \"Add 4 frames\" to "
 "create the animation."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:141
 msgid ""
 "You will now see your animation under the list of animations in the bottom "
 "panel. Double click on default to change the name of the animation to jump."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:145
 msgid ""
 "Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
 msgid "Sprite sheet with AnimationPlayer"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:153
 #, fuzzy
 msgid ""
 "Another way that you can animate when using a sprite sheet is to use a "
@@ -252,11 +222,9 @@ msgstr ""
 "<class_AnimationPlayer>` 로 텍스처에서 텍스처로 변경사항을 애니메이션 할 수 "
 "있습니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:157
 msgid "Consider this sprite sheet, which contains 6 frames of animation:"
 msgstr "6개의 애니메이션 프레임이 포함된 스프라이트 시트를 고려하세요:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:161
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
@@ -264,7 +232,6 @@ msgstr ""
 "오른쪽 마우스 버튼으로 이미지를 클릭하고 \"다른 이름으로 저장\" 선택해서 다운"
 "로드 하세요. 그 다음 당신의 프로젝트 폴더에 이미지를 복사하세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:164
 msgid ""
 "Our goal is to display these images one after another in a loop. Start by "
 "setting up your scene tree:"
@@ -272,7 +239,6 @@ msgstr ""
 "우리의 목표는 이 이미지들을 차례로 반복해서 보여주는 것입니다. 다음과 같이 "
 "씬 트리를 설정하여 시작하세요:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:176
 msgid ""
 "Drag the spritesheet into the Sprite's *Texture* property, and you'll see "
 "the whole sheet displayed on the screen. To slice it up into individual "
@@ -285,7 +251,6 @@ msgstr ""
 "부분을 확장하고 *Hframes* 을 ``6`` 으로 설정하세요. *Hframes* 와 *Vframes* "
 "는 스프라이트 시트에서 수평 및 수직 프레임의 수입니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:184
 #, fuzzy
 msgid ""
 "Now try changing the value of the *Frame* property. You'll see that it "
@@ -296,7 +261,6 @@ msgstr ""
 "를 보게 되고 변화에 따라 보여지는 스프라이트 이미지도 바뀝니다. 이 속성이 우"
 "리가 애니메이션으로 만들 속성입니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:188
 msgid ""
 "Select the ``AnimationPlayer`` and click the \"Animation\" button followed "
 "by \"New\". Name the new animation \"walk\". Set the animation length to "
@@ -307,14 +271,12 @@ msgstr ""
 "를 ``0.6`` 로 설정하고 \"Loop\" 버튼을 클릭해서 애니메이션이 반복되도록 하세"
 "요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:194
 msgid ""
 "Now select the ``Sprite`` node and click the key icon to add a new track."
 msgstr ""
 "이제 ``스프라이트`` 를 선택하고 열쇠 아이콘을 클릭해서 새로운 트랙에 추가하세"
 "요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:198
 #, fuzzy
 msgid ""
 "Continue adding frames at each point in the timeline (``0.1`` seconds by "
@@ -325,16 +287,13 @@ msgstr ""
 "하세요. 애니메이션 트랙에 프레임들이 실제로 나타나는 것을 볼 수 있을 것입니"
 "다:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:204
 msgid "Press \"Play\" on the animation to see how it looks."
 msgstr "애니메이션에서 \"Play\" 를 누르고 어떻게 작동하는지 보세요."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:209
 #, fuzzy
 msgid "Controlling an AnimationPlayer animation"
 msgstr "애니메이션 제어하기"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:211
 #, fuzzy
 msgid ""
 "Like with AnimatedSprite, you can control the animation via code using the "
@@ -346,7 +305,6 @@ msgstr ""
 "메이션을 제어할 수 있습니다. 여기 오른쪽 화살표 키를 누르고 있으면 애니메이션"
 "을 재생하고 떼면 중지하는 간단한 예제가 있습니다."
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:253
 msgid ""
 "If updating both an animation and a separate property at once (for example, "
 "a platformer may update the sprite's ``h_flip``/``v_flip`` properties when a "
@@ -359,11 +317,9 @@ msgid ""
 "``advance(0)`` to update the animation immediately."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:264
 msgid "Summary"
 msgstr "요약"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:266
 #, fuzzy
 msgid ""
 "These examples illustrate the two classes you can use in Godot for 2D "

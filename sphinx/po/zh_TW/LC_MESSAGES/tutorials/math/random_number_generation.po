@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,49 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:4
 #, fuzzy
 msgid "Random number generation"
 msgstr "隨機數函式"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:6
 msgid ""
 "Many games rely on randomness to implement core game mechanics. This page "
 "guides you through common types of randomness and how to implement them in "
 "Godot."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:10
 msgid ""
 "After giving you a brief overview of useful functions that generate random "
 "numbers, you will learn how to get random elements from arrays, "
 "dictionaries, and how to use a noise generator in GDScript."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:16
 msgid ""
 "Computers cannot generate \"true\" random numbers. Instead, they rely on "
 "`pseudorandom number generators <https://en.wikipedia.org/wiki/"
 "Pseudorandom_number_generator>`__ (PRNGs)."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:21
 msgid "Global scope versus RandomNumberGenerator class"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:23
 msgid ""
 "Godot exposes two ways to generate random numbers: via *global scope* "
 "methods or using the :ref:`class_RandomNumberGenerator` class."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:26
 msgid ""
 "Global scope methods are easier to set up, but they don't offer as much "
 "control."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:28
 msgid ""
 "RandomNumberGenerator requires more code to use, but exposes many methods "
 "not found in global scope such as :ref:`randi_range() "
@@ -68,17 +60,14 @@ msgid ""
 "creating multiple instances each with their own seed."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:34
 msgid ""
 "This tutorial uses global scope methods, except when the method only exists "
 "in the RandomNumberGenerator class."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:38
 msgid "The randomize() method"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:40
 msgid ""
 "In global scope, you can find a :ref:`randomize() "
 "<class_@GDScript_method_randomize>` method. **This method should be called "
@@ -86,36 +75,30 @@ msgid ""
 "it multiple times is unnecessary and may impact performance negatively."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:45
 msgid ""
 "Putting it in your main scene script's ``_ready()`` method is a good choice:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:60
 msgid ""
 "You can also set a fixed random seed instead using :ref:`seed() "
 "<class_@GDScript_method_seed>`. Doing so will give you *deterministic* "
 "results across runs:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:80
 msgid ""
 "When using the RandomNumberGenerator class, you should call ``randomize()`` "
 "on the instance since it has its own seed:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:95
 #, fuzzy
 msgid "Getting a random number"
 msgstr "設定主要場景"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:97
 msgid ""
 "Let's look at some of the most commonly used functions and methods to "
 "generate random numbers in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:100
 msgid ""
 "The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
 "number between 0 and 2^32-1. Since the maximum value is huge, you most "
@@ -123,7 +106,6 @@ msgid ""
 "and the denominator:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:122
 msgid ""
 ":ref:`randf() <class_@GDScript_method_randf>` returns a random floating-"
 "point number between 0 and 1. This is useful to implement a :ref:"
@@ -131,7 +113,6 @@ msgid ""
 "other things."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:127
 msgid ""
 ":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
 "floating-point number following a `normal distribution <https://en.wikipedia."
@@ -140,14 +121,12 @@ msgid ""
 "by default):"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:148
 msgid ""
 ":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
 "``from`` and ``to``, and returns a random floating-point number between "
 "``from`` and ``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:163
 msgid ""
 ":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
@@ -155,22 +134,18 @@ msgid ""
 "``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:182
 msgid "Get a random array element"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:184
 msgid ""
 "We can use random integer generation to get a random element from an array:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:228
 msgid ""
 "To prevent the same fruit from being picked more than once in a row, we can "
 "add more logic to this method:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:293
 msgid ""
 "This approach can be useful to make random number generation feel less "
 "repetitive. Still, it doesn't prevent results from \"ping-ponging\" between "
@@ -178,30 +153,24 @@ msgid ""
 "<doc_random_number_generation_shuffle_bags>` pattern instead."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:299
 msgid "Get a random dictionary value"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:301
 msgid "We can apply similar logic from arrays to dictionaries as well:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:329
 msgid "Weighted random probability"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:331
 msgid ""
 "The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
 "point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
 "probability where different outcomes have different likelihoods:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:394
 msgid "\"Better\" randomness using shuffle bags"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:396
 msgid ""
 "Taking the same example as above, we would like to pick fruits at random. "
 "However, relying on random number generation every time a fruit is selected "
@@ -209,7 +178,6 @@ msgid ""
 "unlucky), they could get the same fruit three or more times in a row."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:401
 msgid ""
 "You can accomplish this using the *shuffle bag* pattern. It works by "
 "removing an element from the array after choosing it. After multiple "
@@ -217,7 +185,6 @@ msgid ""
 "to its default value::"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:431
 msgid ""
 "When running the above code, there is a chance to get the same fruit twice "
 "in a row. Once we picked a fruit, it will no longer be a possible return "
@@ -226,19 +193,16 @@ msgid ""
 "but only once."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:437
 #, fuzzy
 msgid "Random noise"
 msgstr "隨機數函式"
 
-#: ../../docs/tutorials/math/random_number_generation.rst:439
 msgid ""
 "The random number generation shown above can show its limits when you need a "
 "value that *slowly* changes depending on the input. The input can be a "
 "position, time, or anything else."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:443
 msgid ""
 "To achieve this, you can use random *noise* functions. Noise functions are "
 "especially popular in procedural generation to generate realistic-looking "

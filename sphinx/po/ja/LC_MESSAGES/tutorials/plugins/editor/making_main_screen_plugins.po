@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:4
 msgid "Making main screen plugins"
 msgstr "メイン画面プラグイン(Main screen plugin)の作成"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:7
 msgid "What this tutorial covers"
 msgstr "このチュートリアルの対象"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
 #, fuzzy
 msgid ""
 "As seen in the :ref:`doc_making_plugins` page, making a basic plugin that "
@@ -40,7 +37,6 @@ msgstr ""
 "を作成することもできます。このようなエディタプラグインは、「メイン画面プラグ"
 "イン」と呼ばれます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
 msgid ""
 "This tutorial leads you through the creation of a basic main screen plugin. "
 "For the sake of simplicity, our main screen plugin will contain a single "
@@ -50,25 +46,21 @@ msgstr ""
 "す。簡潔にするため、このメイン画面プラグインはコンソールに文字を出力するボタ"
 "ンをひとつだけ含みます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:20
 msgid "Initializing the plugin"
 msgstr "プラグインの初期化"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
 msgid ""
 "First create a new plugin from the Plugins menu. For this tutorial, we'll "
 "put it in a folder called ``main_screen``, but you can use any name you'd "
 "like."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:25
 msgid ""
 "The plugin script will come with ``_enter_tree()`` and ``_exit_tree()`` "
 "methods, but for a main screen plugin we need to add a few extra methods. "
 "Add five extra methods such that the script looks like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:58
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns ``true``. This function is automatically "
@@ -82,11 +74,9 @@ msgstr ""
 "ンタービューを追加することを通知します。とりあえず、このスクリプトはそのまま"
 "にしておき、後でまた説明します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:65
 msgid "Main screen scene"
 msgstr "メイン画面のシーン"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:67
 #, fuzzy
 msgid ""
 "Create a new scene with a root node derived from ``Control`` (for this "
@@ -102,20 +92,17 @@ msgstr ""
 "ペースを使用します。それでは、ルートノードに新しいスクリプトを追加しましょ"
 "う。 \\ ``main_panel.gd`` という名前を付けます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:74
 msgid ""
 "Next, let's add a button to our example main screen plugin. Add a ``Button`` "
 "node, and set the text to \"Print Hello\" or similar. Add a script to the "
 "button like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
 "Then connect the \"pressed\" signal to itself. If you need help with "
 "signals, see the :ref:`doc_signals` article."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:90
 #, fuzzy
 msgid ""
 "We are done with the main screen panel. Save the scene as ``main_panel."
@@ -123,12 +110,10 @@ msgid ""
 msgstr ""
 "メイン画面パネルの完成です。シーンを ``main_panel.tscn`` として保存します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:93
 #, fuzzy
 msgid "Update the plugin script"
 msgstr "iap.gdスクリプトを探す"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
 #, fuzzy
 msgid ""
 "We need to update the ``main_screen_plugin.gd`` script so the plugin "
@@ -139,14 +124,12 @@ msgstr ""
 "ように、\\ ``main_screen_plugin.gd`` スクリプトを更新する必要があります。完全"
 "な ``main.gd`` は次のとおりです:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:140
 msgid ""
 "A couple of specific lines were added. ``MainPanel`` is a constant that "
 "holds a reference to the scene, and we instance it into "
 "`main_panel_instance`."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
 #, fuzzy
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
@@ -162,14 +145,12 @@ msgstr ""
 "必要があります。メインパネルを隠すために ``make_visible(false)`` 関数を呼び出"
 "して、プラグインを最初にアクティブ化したときに直接表示されないようにします。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
 msgid ""
 "The ``_exit_tree()`` function is called when the plugin is deactivated. If "
 "the main screen still exists, we call ``queue_free()`` to free the instance "
 "and remove it from memory."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
 #, fuzzy
 msgid ""
 "The ``make_visible()`` function is overridden to hide or show the main panel "
@@ -181,13 +162,11 @@ msgstr ""
 "別のメインビューポートボタンをクリックすると、エディタによって自動的に呼び出"
 "されます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
 msgid ""
 "The ``get_plugin_name()`` and ``get_plugin_icon()`` functions control the "
 "displayed name and icon for the plugin's main viewport button."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:161
 msgid ""
 "Another function you can add is the ``handles()`` function, which allows you "
 "to handle a node type, automatically focusing the main screen when the type "
@@ -195,11 +174,9 @@ msgid ""
 "switch to the 3D viewport."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:167
 msgid "Try the plugin"
 msgstr "プラグインを試す"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:169
 #, fuzzy
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
@@ -212,7 +189,6 @@ msgstr ""
 "イベントが発生し、対応するターゲットシーンでキャッチされて、その中のラベル"
 "キャプションが変更されます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:173
 #, fuzzy
 msgid ""
 "If you would like to try a finished version of this plugin, check out the "
@@ -223,7 +199,6 @@ msgstr ""
 "ジェクトをチェックしてください: https://github.com/godotengine/godot-demo-"
 "projects/tree/master/misc/2.5d"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:177
 msgid ""
 "If you would like to see a more complete example of what main screen plugins "
 "are capable of, check out the 2.5D demo projects here: https://github.com/"

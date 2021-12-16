@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:4
 msgid "Common engine methods and macros"
 msgstr "Macros et méthodes courantes du moteur"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:6
 msgid ""
 "Godot's C++ codebase makes use of dozens of custom methods and macros which "
 "are used in almost every file. This page is geared towards beginner "
@@ -32,11 +30,9 @@ msgstr ""
 "est destinée aux contributeurs débutants, mais elle peut également être "
 "utile à ceux qui écrivent des modules C++ personnalisés."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:11
 msgid "Print text"
 msgstr "Imprimer du texte"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:31
 msgid ""
 "If you need to add placeholders in your messages, use format strings as "
 "described below."
@@ -44,11 +40,9 @@ msgstr ""
 "Si vous devez ajouter des espaces réservés dans vos messages, utilisez des "
 "chaînes de caractère de format comme décrit ci-dessous."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:35
 msgid "Format a string"
 msgstr "Formater une chaîne de caractères(string)"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:37
 msgid ""
 "The ``vformat()`` function returns a formatted :ref:`class_String`. It "
 "behaves in a way similar to C's ``sprintf()``:"
@@ -56,7 +50,6 @@ msgstr ""
 "La fonction ``vformat()`` renvoie une chaîne formatée :ref:`class_String`. "
 "Elle se comporte d'une manière similaire à la fonction ``sprintf()`` du C :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:51
 msgid ""
 "In most cases, try to use ``vformat()`` instead of string concatenation as "
 "it makes for more readable code."
@@ -64,24 +57,19 @@ msgstr ""
 "Dans la plupart des cas, essayez d'utiliser ``vformat()`` au lieu de la "
 "concaténation de chaînes de caractères car cela rend le code plus lisible."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:55
 msgid "Convert an integer or float to a string"
 msgstr "Convertir un entier ou un flottant en une chaîne de caractère"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:57
 msgid "This is mainly useful when printing numbers directly."
 msgstr "Cela est surtout utile pour l'impression directe des nombres."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:68
 msgid "Internationalize a string"
 msgstr "Internationaliser une chaîne de caractère(string)"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
 msgid "There are two types of internationalization in Godot's codebase:"
 msgstr ""
 "Il y a deux types d'internationalisation dans la base de code de Godot :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
 "``TTR()``: **Editor (\"tools\") translations** will only be processed in the "
 "editor. If a user uses the same text in one of their projects, it won't be "
@@ -94,7 +82,6 @@ msgstr ""
 "contribuez au moteur, c'est généralement la macro que vous devez utiliser "
 "pour les chaînes localisables."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:76
 msgid ""
 "``RTR()``: **Run-time translations** will be automatically localized in "
 "projects if they provide a translation for the given string. This kind of "
@@ -105,7 +92,6 @@ msgstr ""
 "de caractère donnée. Ce type de traduction ne doit pas être utilisé dans du "
 "code unique à l'éditeur."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:87
 msgid ""
 "To insert placeholders in localizable strings, wrap the localization macro "
 "in a ``vformat()`` call as follows:"
@@ -113,7 +99,6 @@ msgstr ""
 "Pour insérer espaces réservés dans des chaînes localisables, il faut "
 "envelopper la macro de localisation dans un appel ``vformat()`` comme suit :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:97
 msgid ""
 "When using ``vformat()`` and a translation macro together, always wrap the "
 "translation macro in ``vformat()``, not the other way around. Otherwise, the "
@@ -126,11 +111,9 @@ msgstr ""
 "traduction car l'emplacement réservé sera déjà remplacé lorsqu'elle sera "
 "transmise au TranslationServer."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:103
 msgid "Clamp a value"
 msgstr "Borner une valeur"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:105
 msgid ""
 "Godot provides macros for clamping a value with a lower bound (``MAX``), an "
 "upper bound (``MIN``) or both (``CLAMP``):"
@@ -138,7 +121,6 @@ msgstr ""
 "Godot fournit des macros pour fixer une valeur avec une limite inférieure "
 "(``MAX``), une limite supérieure (``MIN``) ou les deux (``CLAMP``) :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:117
 msgid ""
 "This works with any type that can be compared to other values (like ``int`` "
 "and ``float``)."
@@ -146,11 +128,9 @@ msgstr ""
 "Cela fonctionne avec tout type qui peut être comparé à d'autres valeurs "
 "(comme ``int`` et ``float``)."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:121
 msgid "Microbenchmarking"
 msgstr "Microbenchmarking"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:123
 msgid ""
 "If you want to benchmark a piece of code but don't know how to use a "
 "profiler, use this snippet:"
@@ -158,7 +138,6 @@ msgstr ""
 "Si vous voulez benchmark un morceau de code mais ne savez pas comment "
 "utiliser un profileur, utilisez cet extrait :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:135
 msgid ""
 "This will print the time spent between the ``begin`` declaration and the "
 "``end`` declaration."
@@ -166,14 +145,12 @@ msgstr ""
 "Ceci imprimera le temps passé entre la déclaration ``begin`` et la "
 "déclaration ``end``."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:140
 msgid ""
 "You may have to ``#include \"core/os/os.h\"`` if it's not present already."
 msgstr ""
 "Vous devrez peut-être inclure ``#include \"core/os/os.h\"`` s'il n'est pas "
 "déjà présent."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:142
 msgid ""
 "When opening a pull request, make sure to remove this snippet as well as the "
 "include if it wasn't there previously."
@@ -181,15 +158,12 @@ msgstr ""
 "Lorsque vous ouvrez une pull request, veillez à supprimer cet "
 "extrait(snippet) ainsi que l'include si il n'était pas là auparavant."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
 msgid "Get project/editor settings"
 msgstr "Obtenir les paramètres du projet/éditeur"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
 msgid "There are four macros available for this:"
 msgstr "Quatre macros sont disponibles pour cela :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
 "If a default value has been specified elsewhere, don't specify it again to "
 "avoid repetition:"
@@ -197,7 +171,6 @@ msgstr ""
 "Si une valeur par défaut a été spécifiée ailleurs, ne la spécifiez pas à "
 "nouveau pour éviter les répétitions :"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:170
 msgid ""
 "It's recommended to use ``GLOBAL_DEF``/``EDITOR_DEF`` only once per setting "
 "and use ``GLOBAL_GET``/``EDITOR_GET`` in all other places where it's "
@@ -207,18 +180,15 @@ msgstr ""
 "par paramètre et d'utiliser ``GLOBAL_GET``/``EDITOR_GET`` dans tous les "
 "autres endroits où il est référencé."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:174
 msgid "Error macros"
 msgstr "Macros d'erreur"
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:176
 msgid ""
 "Godot features many error macros to make error reporting more convenient."
 msgstr ""
 "Godot propose de nombreuses macros d'erreur pour rendre la notification des "
 "erreurs plus pratique."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:180
 msgid ""
 "Conditions in error macros work in the **opposite** way of GDScript's built-"
 "in ``assert()`` function. An error is reached if the condition inside "
@@ -229,7 +199,6 @@ msgstr ""
 "atteinte si la condition à l'intérieur est évaluée comme étant ``true`` et "
 "non ``false``."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:186
 msgid ""
 "Only variants with custom messages are documented here, as these should "
 "always be used in new contributions. Make sure the custom message provided "
@@ -244,7 +213,6 @@ msgstr ""
 "connaissent pas le C++. Si une méthode a reçu des arguments invalides, vous "
 "pouvez imprimer la valeur invalide en question pour faciliter le débogage."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:192
 msgid ""
 "For internal error checking where displaying a human-readable message isn't "
 "necessary, remove ``_MSG`` at the end of the macro name and don't supply a "
@@ -254,7 +222,6 @@ msgstr ""
 "d'afficher un message lisible par l'humain, supprimez ``_MSG`` à la fin du "
 "nom de la macro et ne fournissez pas d'argument pour le message."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:196
 msgid ""
 "Also, always try to return processable data so the engine can keep running "
 "well."
@@ -262,7 +229,6 @@ msgstr ""
 "De plus, essayez toujours de renvoyer des données traitables afin que le "
 "moteur puisse continuer à bien fonctionner."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:240
 msgid ""
 "See `core/error_macros.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "error_macros.h>`__ in Godot's codebase for more information about each error "
@@ -272,7 +238,6 @@ msgstr ""
 "core/error_macros.h>`__ dans la base de code de Godot pour plus "
 "d'informations sur chaque macro d'erreur."
 
-#: ../../docs/development/cpp/common_engine_methods_and_macros.rst:243
 msgid ""
 "Some functions return an error code (materialized by a return type of "
 "``Error``). This value can be returned directly from an error macro. See the "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,60 +17,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/getting_source.rst:4
 msgid "Getting the source"
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:9
 msgid "Downloading the Godot source code"
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:11
 msgid ""
 "Before :ref:`getting into the SCons build system "
 "<doc_introduction_to_the_buildsystem>` and compiling Godot, you need to "
 "actually download the Godot source code."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:14
 msgid ""
 "The source code is available on `GitHub <https://github.com/godotengine/"
 "godot>`__ and while you can manually download it via the website, in general "
 "you want to do it via the ``git`` version control system."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:18
 msgid ""
 "If you are compiling in order to make contributions or pull requests, you "
 "should follow the instructions from the :ref:`Pull Request workflow "
 "<doc_pr_workflow>`."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
 "If you don't know much about ``git`` yet, there are a great number of "
 "`tutorials <https://git-scm.com/book>`__ available on various websites."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:24
 msgid ""
 "In general, you need to install ``git`` and/or one of the various GUI "
 "clients."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:26
 msgid ""
 "Afterwards, to get the latest development version of the Godot source code "
 "(the unstable ``master`` branch), you can use ``git clone``."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:29
 msgid ""
 "If you are using the ``git`` command line client, this is done by entering "
 "the following in a terminal:"
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:38
 msgid ""
 "For any stable release, visit the `release page <https://github.com/"
 "godotengine/godot/releases>`__ and click on the link for the release you "
@@ -78,18 +68,15 @@ msgid ""
 "the page."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:42
 msgid ""
 "With ``git``, you can also clone a stable release by specifying its branch "
 "or tag after the ``--branch`` (or just ``-b``) argument::"
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:51
 msgid ""
 "There are also generally branches besides ``master`` for each major version."
 msgstr ""
 
-#: ../../docs/development/compiling/getting_source.rst:53
 msgid ""
 "After downloading the Godot source code, you can :ref:`continue to compiling "
 "Godot <doc_introduction_to_the_buildsystem>`."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,252 +17,300 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:1
 msgid "Signal"
 msgstr "시그널"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:7
-msgid "Signals"
-msgstr "시그널"
+#, fuzzy
+msgid "Using Signals"
+msgstr "바인딩 시그널"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:10
-msgid "Introduction"
-msgstr "소개"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
-"Signals are Godot's version of the *observer* pattern. They allow a node to "
-"send out a message that other nodes can listen for and respond to. For "
-"example, rather than continuously checking a button to see if it's being "
-"pressed, the button can emit a signal when it's pressed."
+"In this lesson, we will look at signals. They are messages that nodes emit "
+"when something specific happens to them, like a button being pressed. Other "
+"nodes can connect to that signal and call a function when the event occurs."
 msgstr ""
-"시그널은 *옵저버(Observer)* 패턴의 Godot 버전입니다. 시그널을 통해 노드에서 "
-"다른 노드로 메시지를 보내고 다른 노드가 메시지를 받고 응답할 수 있습니다. 예"
-"를 들어, 버튼의 눌림 여부를 파악하기 위해 주기적으로 버튼을 확인하는 대신, 버"
-"튼이 눌렸을 때 시그널을 방출(Emit)할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:17
 msgid ""
-"You can read more about the observer pattern here: https://"
+"It is a delegation mechanism built into Godot that allows one game object to "
+"react to a change in another without them referencing one another. Using "
+"signals limits `coupling <https://en.wikipedia.org/wiki/"
+"Coupling_(computer_programming)>`_ and keeps your code flexible."
+msgstr ""
+
+msgid ""
+"For example, you might have a life bar on the screen that represents the "
+"player’s health. When the player takes damage or uses a healing potion, you "
+"want the bar to reflect the change. To do so, in Godot, you would use "
+"signals."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"As mentioned in the introduction, signals are Godot's version of the "
+"observer pattern. You can learn more about it here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
 "옵저버 패턴에 대해 더 자세히 알아보려면 여기를 읽어보세요: http://"
 "gameprogrammingpatterns.com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
-"Signals are a way to *decouple* your game objects, which leads to better "
-"organized and more manageable code. Instead of forcing game objects to "
-"expect other objects to always be present, they can instead emit signals "
-"that all interested objects can subscribe to and respond to."
+"We will now use a signal to make our Godot icon from last part move and stop "
+"by pressing a button."
 msgstr ""
-"시그널은 게임 오브젝트끼리 *이별하게* 만듭니다. 그래서 보다 체계적이고 관리하"
-"기 좋은 코드로 만들어줍니다. 게임 오브젝트가 항상 다른 오브젝트가 항상 존재"
-"할 것으로 예상하도록 강요하는 대신, 시그널을 방출해 시그널에 관심있는 오브젝"
-"트 모두가 시그널을 받고 응답할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
+msgid "Scene setup"
+msgstr "씬 설정"
+
+msgid "Create a new scene by going to the menu Scene -> New Scene."
+msgstr ""
+
 msgid ""
-"Below you can see some examples of how you can use signals in your own "
-"projects."
+"In the Scene dock, click the 2D Scene button. This will add a Node2D as our "
+"root."
 msgstr ""
-"아래에서 프로젝트에 시그널을 활용할 수 있는 방법의 예시를 살펴보겠습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:27
-msgid "Timer example"
-msgstr "타이머(Timer) 예제"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:29
 msgid ""
-"To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
-"Create a new scene with a Node2D and two children: a Timer and a :ref:"
-"`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
+"In the FileSystem dock, click and drag the ``Sprite2D.tscn`` file you saved "
+"previously onto the Node2D to instantiate it."
 msgstr ""
-"시그널이 어떻게 작동하는지 알아보기 위해, :ref:`Timer <class_Timer>` 노드를 "
-"사용하겠습니다. Node2D와 두 자식 노드가 있는 씬을 만듭니다: 하나는 Timer이고 "
-"다른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 씬 독에서 Node2D의 이름을 "
-"TimerExample로 바꿉니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
-"For the Sprite's texture, you can use the Godot icon, or any other image you "
-"like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
-"down menu. Attach a script to the root node, but don't add any code to it "
-"yet."
+"We want to add another node as a sibling of the Sprite2D. To do so, right-"
+"click on Node2D and select Add Child Node."
 msgstr ""
-"Sprite의 텍스처로는 Godot 아이콘이나 다른 원하는 이미지를 사용할 수 있습니"
-"다. Sprite의 Texture 속성 드롭 다운 메뉴에서 ``불러오기(Load)``\\ 를 선택하"
-"면 됩니다. 스크립트를 루트 노드에 붙입니다. 하지만 코드는 아직 추가하지 마세"
-"요."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:37
-msgid "Your scene tree should look like this:"
+msgid "Search for the Button node type and add it."
+msgstr ""
+
+msgid ""
+"The node is small by default. Click and drag on the bottom-right handle of "
+"the Button in the viewport to resize it."
+msgstr ""
+
+msgid ""
+"If you don't see the handles, ensure the select tool is active in the "
+"toolbar."
+msgstr ""
+
+msgid "Click and drag on the button itself to move it closer to the sprite."
+msgstr ""
+
+msgid ""
+"You can also write a label on the Button by editing its Text property in the "
+"Inspector."
+msgstr ""
+
+#, fuzzy
+msgid "Your scene tree and viewport should look like this."
 msgstr "씬 트리는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:41
-msgid ""
-"In the Timer node's properties, check the \"On\" box next to *Autostart*. "
-"This will cause the timer to start automatically when you run the scene. You "
-"can leave the *Wait Time* at 1 second."
-msgstr ""
-"Timer 노드의 속성 중, *Autostart* 옆 체크박스를 클릭해서 \"사용\" 으로 설정하"
-"세요. 그러면 씬을 실행할 때 자동으로 타이머가 실행합니다. *Wait Time*\\ 은 1"
-"초로 두세요."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:45
-msgid ""
-"Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
-"and you'll see all of the signals that the selected node can emit. In the "
-"case of the Timer node, the one we're concerned with is \"timeout\". This "
-"signal is emitted whenever the Timer reaches ``0``."
-msgstr ""
-"\"인스펙터(Inspecter)\" 탭 옆에 \"노드(Node)\"라고 적힌 탭이 있습니다. 이 탭"
-"을 클릭하면 선택한 노드에서 방출할 수 있는 모든 시그널이 표시됩니다. Timer 노"
-"드의 경우, 주목해야 할 시그널은 \"timeout\"입니다. 이 시그널은 Timer가 ``0``"
-"\\ 이 될 때마다 방출합니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:52
-msgid ""
-"Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
-"the signals panel. You'll see the following window, where you can define how "
-"you want to connect the signal:"
-msgstr ""
-"\"timeout()\" 시그널을 클릭하고 그리고 \"연결(Connect)\"을 누릅니다. 다음과 "
-"같은 창이 나타나고 여기서 시그널을 어떻게 연결할 지 정의할 수 있습니다:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:58
-msgid ""
-"On the left side, you'll see the nodes in your scene and can select the node "
-"that you want to \"listen\" for the signal. Note that the Timer node is "
-"blue, this is a visual indication that it's the node that is emitting the "
-"signal. Select the root node."
-msgstr ""
-"왼쪽에는 씬의 노드가 표시되고, 시그널을 \"받는\" 노드를 선택할 수 있습니다. "
-"Timer 노드는 푸른색으로 되어 있어 시그널을 방출하는 노드임을 시각적으로 보여"
-"줍니다. 루트 노드를 선택합니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:63
-msgid ""
-"The target node *must* have a script attached or you'll receive an error "
-"message."
-msgstr ""
-"대상 노드는 *반드시* 스크립트가 붙게 되고 그렇지 않으면 오류 메시지를 출력합"
-"니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:66
-msgid ""
-"If you toggle the Advanced menu, you'll see on the right side that you can "
-"bind an arbitrary number of arguments of (possibly) different types. This "
-"can be useful when you have more than one signal connected to the same "
-"method, as each signal propagation will result in different values for those "
-"extra call arguments."
-msgstr ""
-"고급(Advanced) 메뉴를 토글하면 오른쪽에 (아마도) 다른 유형의 임의의 수의 인수"
-"를 바인딩할 수 있는 것을 볼 수 있습니다. 각 시그널의 전파로 인해 이러한 추가 "
-"호출 인수에 대해 다른 값이 생성되므로 동일한 메서드에 하나 이상의 시그널이 연"
-"결되어 있을 때 유용할 수 있습니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:70
-msgid ""
-"On the bottom of the window is a field labeled \"Receiver Method\". This is "
-"the name of the function in the target node's script that you want to use. "
-"By default, Godot will create this function using the naming convention "
-"``_on_<node_name>_<signal_name>`` but you can change it if you wish."
-msgstr ""
-"창의 아래쪽을 보시면 \"받는 메서드(Receiver Method)\"라고 적혀있는 필드가 있"
-"습니다. 대상 노드의 스크립트에서 이를 함수 이름으로 사용합니다. 기본적으로, "
-"Godot는 명명 규칙에 따라 ``_on_<노드_이름>_<시그널_이름>``\\ 으로 함수 이름"
-"을 만듭니다. 하지만 원한다면 바꿀 수 있습니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:75
-msgid ""
-"Click \"Connect\" and you'll see that the function has been created in the "
-"script:"
-msgstr ""
-"\"연결(Connect)\"을 클릭하면 스크립트 안에 함수가 만들어진 것을 볼 수 있습니"
-"다:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:96
-msgid ""
-"Now we can replace the placeholder code with whatever code we want to run "
-"when the signal is received. Let's make the Sprite blink:"
-msgstr ""
-"이제 자동 생성된 코드(placeholder)를 시그널이 수신될 때 실행하려는 코드로 변"
-"경할 수 있습니다. Sprite를 깜박이도록 합시다:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:121
-msgid ""
-"Run the scene and you'll see the Sprite blinking on and off every second. "
-"You can change the Timer's *Wait Time* property to alter this."
-msgstr ""
-"씬을 실행하면 Sprite가 매 초마다 깜박이는 것을 볼 수 있습니다. Timer의 *Wait "
-"Time* 속성을 변경하여 주기를 변경할 수 있습니다."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:125
-msgid "Connecting signals in code"
+#, fuzzy
+msgid "Connecting a signal in the editor"
 msgstr "노드에서 시그널 연결하기"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
-"You can also make the signal connection in code rather than with the editor. "
-"This is usually necessary when you're instancing nodes via code and so you "
-"can't use the editor to make the connection."
+"Here, we want to connect the Button's \"pressed\" signal to our Sprite2D, "
+"and we want to call a new function that will toggle its motion on and off. "
+"We need to have a script attached to the Sprite2D node, which we do from the "
+"previous lesson."
 msgstr ""
-"에디터 뿐만 아니라 코드로도 시그널 연결을 만들 수 있습니다. 보통 코드를 통해 "
-"노드를 인스턴스화할 때 필요하고, 에디터에서는 이런 시그널 연결을 만들 수 없습"
-"니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
-"First, disconnect the signal by selecting the connection in the Timer's "
-"\"Node\" tab and clicking disconnect."
+"You can connect signals in the Node dock. Select the Button node and, on the "
+"right side of the editor, click on the tab named \"Node\" next to the "
+"Inspector."
 msgstr ""
-"먼저 Timer의 \"노드(Node)\" 탭에서 연결 끊기(Disconnect)를 클릭해서 시그널의 "
-"연결을 끊습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:136
+msgid "The dock displays a list of signals available on the selected node."
+msgstr ""
+
+msgid "Double-click the \"pressed\" signal to open the node connection window."
+msgstr ""
+
 msgid ""
-"To make the connection in code, we can use the ``connect`` function. We'll "
-"put it in ``_ready()`` so that the connection will be made on run. The "
-"syntax of the function is ``<source_node>.connect(<signal_name>, "
-"<target_node>, <target_function_name>)``. Here is the code for our Timer "
-"connection:"
+"There, you can connect the signal to the Sprite2D node. The node needs a "
+"receiver method, a function that Godot will call when the Button emits the "
+"signal. The editor generates one for you. By convention, we name these "
+"callback methods \"_on_NodeName_signal_name\". Here, it'll be "
+"\"_on_Button_pressed\"."
 msgstr ""
-"코드로 연결을 만들려면 ``connect`` 함수를 사용하세요. ``_ready()``\\ 안에 이 "
-"함수를 넣으면 연결을 실행할 준비가 된 것입니다. 함수의 구문은 ``<소스_이름>."
-"connect(<시그널_이름>, <대상_이름>, <대상_함수_이름>)``\\ 입니다. 이것이 "
-"Timer 연결을 위한 코드입니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:171
+msgid ""
+"When connecting signals via the editor's Node dock, you can use two modes. "
+"The simple one only allows you to connect to nodes that have a script "
+"attached to them and creates a new callback function on them."
+msgstr ""
+
+msgid ""
+"The advanced view lets you connect to any node and any built-in function, "
+"add arguments to the callback, and set options. You can toggle the mode in "
+"the window's bottom-right by clicking the radio button."
+msgstr ""
+
+msgid ""
+"Click the connect button to complete the signal connection and jump to the "
+"Script workspace. You should see the new method with a connection icon in "
+"the left margin."
+msgstr ""
+
+msgid ""
+"If you click the icon, a window pops up and displays information about the "
+"connection. This feature is only available when connecting nodes in the "
+"editor."
+msgstr ""
+
+msgid ""
+"Let's replace the line with the ``pass`` keyword with code that'll toggle "
+"the node's motion."
+msgstr ""
+
+msgid ""
+"Our Sprite2D moves thanks to code in the ``_process()`` function. Godot "
+"provides a method to toggle processing on and off: :ref:`Node.set_process() "
+"<class_Node_method_set_process>`. Another method of the Node class, "
+"``is_processing()``, returns ``true`` if idle processing is active. We can "
+"use the ``not`` keyword to invert the value."
+msgstr ""
+
+msgid ""
+"This function will toggle processing and, in turn, the icon's motion on and "
+"off upon pressing the button."
+msgstr ""
+
+msgid ""
+"Before trying the game, we need to simplify our ``_process()`` function to "
+"move the node automatically and not wait for user input. Replace it with the "
+"following code, which we saw two lessons ago:"
+msgstr ""
+
+#, fuzzy
+msgid "Your complete ``Sprite2D.gd`` code should look like the following."
+msgstr "씬 트리는 다음과 같아야 합니다:"
+
+#, fuzzy
+msgid ""
+"Run the scene now and click the button to see the sprite start and stop."
+msgstr "씬을 실행하고 버튼을 누르면 다음과 같은 결과를 얻을 수 있습니다:"
+
+#, fuzzy
+msgid "Connecting a signal via code"
+msgstr "노드에서 시그널 연결하기"
+
+msgid ""
+"You can connect signals via code instead of using the editor. This is "
+"necessary when you create nodes or instantiate scenes inside of a script."
+msgstr ""
+
+msgid ""
+"Let's use a different node here. Godot has a :ref:`Timer <class_Timer>` node "
+"that's useful to implement skill cooldown times, weapon reloading, and more."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Head back to the 2D workspace. You can either click the \"2D\" text at the "
+"top of the window or press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
+msgstr ""
+"**3D 작업 공간(3D workspace)**\\ 에서는 3D 게임용 메시와 조명, 레벨 설계를 "
+"할 수 있습니다. :kbd:`Ctrl + F2` (macOS는 :kbd:`Alt + 2`)를 눌러 접근할 수 있"
+"습니다."
+
+msgid ""
+"In the Scene dock, right-click on the Sprite2D node and add a new node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
+msgstr ""
+
+msgid ""
+"With the Timer node selected, go to the Inspector and check the "
+"**Autostart** property."
+msgstr ""
+
+msgid ""
+"Click the script icon next to Sprite2D to jump back to the scripting "
+"workspace."
+msgstr ""
+
+msgid "We need to do two operations to connect the nodes via code:"
+msgstr ""
+
+#, fuzzy
+msgid "Get a reference to the Timer from the Sprite2D."
+msgstr "애니메이션을 적용할 속성을 소유한 노드에 대한 참조"
+
+msgid "Call the Timer's ``connect()`` method."
+msgstr ""
+
+msgid ""
+"To connect to a signal via code, you need to call the ``connect()`` method "
+"of the node you want to listen to. In this case, we want to listen to the "
+"Timer's \"timeout\" signal."
+msgstr ""
+
+msgid ""
+"To get a reference to a node relative to the current one, we use the method :"
+"ref:`Node.get_node() <class_Node_method_get_node>`. We can store the "
+"reference in a variable."
+msgstr ""
+
+msgid ""
+"The function ``get_node()`` looks at the Sprite2D's children and gets nodes "
+"by their name. For example, if you renamed the Timer node to \"BlinkingTimer"
+"\" in the editor, you would have to change the call to "
+"``get_node(\"BlinkingTimer\")``."
+msgstr ""
+
+msgid ""
+"We can now connect the Timer to the Sprite2D in the ``_ready()`` function."
+msgstr ""
+
+msgid ""
+"The line reads like so: we connect the Timer's \"timeout\" signal to the "
+"node to which the script is attached (``self``). When the Timer emits "
+"\"timeout\", we want to call the function \"_on_Timer_timeout\", that we "
+"need to define. Let's add it at the bottom of our script and use it to "
+"toggle our sprite's visibility."
+msgstr ""
+
+msgid ""
+"The ``visible`` property is a boolean that controls the visibility of our "
+"node. The line ``visible = not visible`` toggles the value. If ``visible`` "
+"is ``true``, it becomes ``false``, and vice-versa."
+msgstr ""
+
 msgid "Custom signals"
 msgstr "커스텀 시그널"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:173
-msgid "You can also declare your own custom signals in Godot:"
-msgstr "Godot에서 커스텀 시그널을 선언할 수도 있습니다:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
-"Once declared, your custom signals will appear in the Inspector and can be "
-"connected in the same way as a node's built-in signals."
+"You can define custom signals in a script. Say, for example, that you want "
+"to show a game over screen when the player's health reaches zero. To do so, "
+"you could define a signal named \"died\" or \"health_depleted\" when their "
+"health reaches 0."
 msgstr ""
-"커스텀 시그널을 선언하면 그 시그널은 인스펙터(Inspector)에 나타나며 노드의 내"
-"장 시그널과 같은 방식으로 연결할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:195
-msgid "To emit a signal via code, use the ``emit_signal`` function:"
+msgid ""
+"As signals represent events that just occurred, we generally use an action "
+"verb in the past tense in their names."
+msgstr ""
+
+msgid ""
+"Your signals work the same way as built-in ones: they appear in the Node tab "
+"and you can connect to them like any other."
+msgstr ""
+
+#, fuzzy
+msgid "To emit a signal in your scripts, call ``emit_signal()``."
 msgstr ""
 "코드를 통해 시그널을 방출(Emit)하려면 ``emit_signal`` 함수를 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:222
+#, fuzzy
 msgid ""
-"A signal can also optionally declare one or more arguments. Specify the "
-"argument names between parentheses:"
+"A signal can optionally declare one or more arguments. Specify the argument "
+"names between parentheses:"
 msgstr ""
 "시그널은 선택적으로 하나 이상의 인수를 선언할 수도 있습니다. 괄호 사이에 인"
 "수 이름을 지정하세요:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
@@ -273,32 +321,42 @@ msgstr ""
 "를 생성할 수 있습니다. 하지만 시그널을 방출할 때 여전히 많은 수의 인수를 방출"
 "할 수 있습니다. 다시 말해 올바른 값을 방출하는 일은 여러분에게 달려 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:248
+#, fuzzy
 msgid ""
-"To pass values, add them as the second argument to the ``emit_signal`` "
-"function:"
+"To emit values along with the signal, add them as extra arguments to the "
+"``emit_signal()`` function:"
 msgstr "값을 전달하려면 ``emit_signal`` 함수의 두 번째 인수로 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:276
-msgid "Conclusion"
-msgstr "결론"
+msgid "Summary"
+msgstr "요약"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
-"Many of Godot's built-in node types provide signals you can use to detect "
-"events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
-"emits a ``body_entered`` signal whenever the player's physics body enters "
-"its collision shape, allowing you to know when the player collected it."
+"Any node in Godot emits signals when something specific happens to them, "
+"like a button being pressed. Other nodes can connect to individual signals "
+"and react to selected events."
+msgstr ""
+
+msgid ""
+"Signals have many uses. With them, you can react to a node entering or "
+"exiting the game world, to a collision, to a character entering or leaving "
+"an area, to an element of the interface changing size, and much more."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a "
+"``body_entered`` signal whenever the player's physics body enters its "
+"collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godot의 내장 노드 타입 대부분은 이벤트를 감지하는 데 쓰는 시그널을 제공합니"
 "다. 예를 들어 :ref:`Area2D <class_Area2D>`\\ 는 플레이어의 몸이 동전의 콜리"
 "전 모양에 닿을 때마다 ``body_entered`` 시그널을 방출해서, 이를 통해 플레이어"
 "가 언제 동전을 먹었는지 알 수 있죠."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:283
+#, fuzzy
 msgid ""
-"In the next section, :ref:`doc_your_first_game`, you'll build a complete "
-"game including several uses of signals to connect different game components."
+"In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
+"2D game and put everything you learned so far into practice."
 msgstr ""
 "다음 섹션 :ref:`doc_your_first_game`\\ 에서는 다른 게임 구성 요소들을 여러 시"
 "그널을 사용해 연결함으로써 완전한 게임을 만들 것입니다."

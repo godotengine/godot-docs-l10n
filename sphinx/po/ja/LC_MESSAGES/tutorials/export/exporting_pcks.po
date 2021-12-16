@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting packs, patches, and mods"
+msgstr "Pack、パッチ、そしてModをエクスポートする"
+
+msgid "Use cases"
+msgstr "使用事例"
+
+msgid ""
+"Oftentimes one would like to add functionality to one's game after it has "
+"been deployed."
+msgstr "ゲームをデプロイした後でも機能を追加したくなる事はよくあります。"
+
+msgid "Examples of this include..."
+msgstr "例に含まれるのは……"
+
+msgid ""
+"Downloadable Content: the ability to add features and content to one's game."
+msgstr "ダウンロードコンテンツ: 機能とコンテンツをゲームに追加します。"
+
+msgid "Patches: the ability to fix a bug that is present in a shipped product."
+msgstr "パッチ: 出荷済みの製品に見つかったバグを修正します。"
+
+msgid "Mods: grant other people the ability to create content for one's game."
+msgstr "Mod: 他の人々でもゲームのコンテンツを製作できるようにします。"
+
+msgid ""
+"These tools help developers to extend their development beyond the initial "
+"release."
+msgstr "これらのツールが、最初のリリース後も開発を続ける助けになるのです。"
+
+msgid "Overview of PCK files"
+msgstr "PCKファイルについて"
+
+msgid ""
+"Godot enables this via a feature called **resource packs** (PCK files, with "
+"extension ``.pck``)."
+msgstr ""
+"Godotではこれらを\\ **リソースパック**\\ 機能(PCKファイル、拡張子は\\ ``."
+"pck``\\ )により実現しています。"
+
+msgid "**Advantages:**"
+msgstr "\\ **利点:**"
+
+msgid "incremental updates/patches"
+msgstr "段階的なアップデート / パッチ"
+
+msgid "offer DLCs"
+msgstr "DLCの提供"
+
+msgid "offer mod support"
+msgstr "Modサポートの提供"
+
+msgid "no source code disclosure needed for mods"
+msgstr "Modのためにソースコードの公開は不要"
+
+msgid "more modular project structure"
+msgstr "プロジェクト構造をよりモジュール化"
+
+#, fuzzy
+msgid "users don't have to replace the entire game"
+msgstr "ユーザーはゲームを丸ごと置き換えずにすむ"
+
+msgid ""
+"The first part of using them involves exporting and delivering the project "
+"to players. Then, when one wants to add functionality or content later on, "
+"they just deliver the updates via PCK files to the users."
+msgstr ""
+"最初の段階では、プロジェクトをエクスポートしたものをプレイヤーに配布します。"
+"その後、機能やコンテンツを追加したくなったら、アップデートをPCKファイルでユー"
+"ザーに配るのです。"
+
+msgid "PCK files usually contain, but are not limited to:"
+msgstr "制限はありませんが、PCKファイルに通常含まれるのは:"
+
+msgid "scripts"
+msgstr "スクリプト"
+
+msgid "scenes"
+msgstr "シーン"
+
+msgid "shaders"
+msgstr "シェーダー"
+
+msgid "models"
+msgstr "モデル"
+
+msgid "textures"
+msgstr "テクスチャ"
+
+msgid "sound effects"
+msgstr "サウンドエフェクト"
+
+msgid "music"
+msgstr "音楽"
+
+msgid "any other asset suitable for import into the game"
+msgstr "その他ゲームへのインポートに適したアセット"
+
+msgid ""
+"The PCK files can even be an entirely different Godot project, which the "
+"original game loads in at runtime."
+msgstr ""
+"PCKファイルは全く別のGodotプロジェクトをも含むことができ、元のゲームはそれを"
+"実行中に読み込めます。"
+
+msgid "Generating PCK files"
+msgstr "PCKファイルの生成"
+
+msgid ""
+"In order to pack all resources of a project into a PCK file open the project "
+"and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
+"have an export template selected while doing so."
+msgstr ""
+"プロジェクトのすべてのリソースをPCKファイルに詰めるには、プロジェクトを開いて"
+"『プロジェクト/エクスポート』に行き、『PCK/Zipのエクスポート』をクリックしま"
+"す。同時に、エクスポートテンプレートを選択していることを確認してください。"
+
+msgid ""
+"Another method would be to :ref:`export from the command line "
+"<doc_command_line_tutorial_exporting>`. If the output file ends with a PCK "
+"or ZIP file extension, then the export process will build that type of file "
+"for the chosen platform."
+msgstr ""
+"もうひとつの方法は、\\ :ref:`コマンドラインからエクスポート "
+"<doc_command_line_tutorial_exporting>`\\ することです。もし出力ファイル名の終"
+"わりがPCKあるいはZIPファイル拡張子の場合、エクスポートプロセスは選んだプラッ"
+"トフォーム向けにファイルをビルドします。"
+
+msgid ""
+"If one wishes to support mods for their game, they will need their users to "
+"create similarly exported files. Assuming the original game expects a "
+"certain structure for the PCK's resources and/or a certain interface for its "
+"scripts, then either..."
+msgstr ""
+"もしゲームにModを追加できるようにしたい場合、ユーザーにも同様にエクスポートし"
+"たファイルを作成してもらう必要があります。元のゲームで、PCK内のリソースは決め"
+"られたディレクトリ構造に置くようにするか、もしくはスクリプトにMod用のインター"
+"フェースを用意してから、次の選択肢は…"
+
+msgid ""
+"The developer must publicize documentation of these expected structures/ "
+"interfaces, expect modders to install Godot Engine, and then also expect "
+"those modders to conform to the documentation's defined API when building "
+"mod content for the game (so that it will work). Users would then use "
+"Godot's built in exporting tools to create a PCK file, as detailed above."
+msgstr ""
+"ディレクトリ構造かインターフェースについてのドキュメンテーションを公開し、Mod"
+"作者たちにGodotエンジンをインストールしてもらい、(確実に動作するように)ドキュ"
+"メンテーションに定義されたAPIに沿ってModを製作してもらいます。それから、上記"
+"の解説どおりにGodot内蔵のエクスポート・ツールにてPCKファイルを作成してもらい"
+"ます。"
+
+msgid ""
+"The developer uses Godot to build a GUI tool for adding their exact API "
+"content to a project. This Godot tool must either run on a tools-enabled "
+"build of the engine or have access to one (distributed alongside or perhaps "
+"in the original game's files). The tool can then use the Godot executable to "
+"export a PCK file from the command line with :ref:`OS.execute() "
+"<class_OS_method_execute>`. It makes the most sense for the game to not use "
+"a tool-build though (for security) and for the modding tools to *do* use a "
+"tool-enabled engine build."
+msgstr ""
+"Godotを使って、プロジェクトのAPIに対応したGUIツールを製作します。このGodot"
+"ツールは、toolsを有効にしてビルドしたエンジン上で動かすか、そうしたエンジンに"
+"アクセスできる必要があります(この場合、エンジンはツールと一緒に配布するか、あ"
+"るいはゲームに同梱する)。それからこのツールで\\ :ref:`OS.execute() "
+"<class_OS_method_execute>`\\ を用い、Godotの実行ファイルを呼び出してPCKファイ"
+"ルをエクスポートします。セキュリティ上、ゲーム本体のエンジンはtoolsを無効に"
+"し、Mod用ツールだけtoolsを有効するほうが良いでしょう。"
+
+msgid "Opening PCK files at runtime"
+msgstr "実行時にPCKファイルを開く"
+
+#, fuzzy
+msgid ""
+"To import a PCK file, one uses the ProjectSettings singleton. The following "
+"example expects a “mod.pck” file in the directory of the games executable. "
+"The PCK file contains a “mod_scene.tscn” test scene in its root."
+msgstr ""
+"PCKファイルのインポートは、一行でできます。しかし注意すべき点は、もしインポー"
+"トが失敗してもエラーや例外は発生しません。なのでその代わり、検証コードをその"
+"上に少し加える必要があるかもしれません。下の例では、ゲームの実行ファイルがあ"
+"るディレクトリで『mod.pck』を探します。このPCKファイルにはルートにテストシー"
+"ン『mod_scene.tscn』を格納しています。"
+
+#, fuzzy
+msgid ""
+"By default, if you import a file with the same file path/name as one you "
+"already have in your project, the imported one will replace it. This is "
+"something to watch out for when creating DLC or mods (solved easily with a "
+"tool isolating mods to a specific mods subfolder). However, it is also a way "
+"of creating patches for one's own game. A PCK file of this kind can fix the "
+"content of a previously loaded PCK."
+msgstr ""
+"ファイルをインポートする際、すでに同じパスに同じ名前のファイルがあれば、新し"
+"くインポートされたファイルによって置き換えられます。これはDLCやModを製作する"
+"ときには気を付けるべきでしょう (Modをツールで別のサブフォルダに隔離するように"
+"すれば解決できます)。一方、ゲームのパッチを作るときにはこの方法は使えます。こ"
+"のようなPCKファイルで、以前に読み込まれたPCKの内容を置き換えて修正するので"
+"す。"
+
+msgid ""
+"To opt out of this behavior, pass ``false`` as the second argument to :ref:"
+"`ProjectSettings.load_resource_pack() "
+"<class_ProjectSettings_method_load_resource_pack>`."
+msgstr ""
+
+msgid ""
+"For a C# project, you need to build the DLL and place it in the project "
+"directory first. Then, before loading the resource pack, you need to load "
+"its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
+msgstr ""
+"C#プロジェクトの場合、最初にDLLをビルドし、プロジェクトディレクトリに配置する"
+"必要があります。次に、リソースパックをロードする前に、次のようにDLLをロードす"
+"る必要があります: ``Assembly.LoadFile(\"mod.dll\")``"
+
+msgid "Summary"
+msgstr "概要"
+
+msgid ""
+"This tutorial should illustrate how easy adding mods, patches or DLC to a "
+"game is. The most important thing is to identify how one plans to distribute "
+"future content for their game and develop a workflow that is customized for "
+"that purpose. Godot should make that process smooth regardless of which "
+"route a developer pursues."
+msgstr ""
+"このチュートリアルで、Mod、パッチ、DLCを簡単にゲームに追加できることを示せた"
+"と思います。重要なのは、ゲームの将来のコンテンツを配布する計画を決めること"
+"と、そのためにカスタマイズしたワークフローを作り上げることです。開発者がどの"
+"ような方法を選ぶにしても、Godotならそのプロセスをスムーズにできるはずです。"

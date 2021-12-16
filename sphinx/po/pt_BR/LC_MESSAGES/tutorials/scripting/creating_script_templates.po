@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Creating script templates"
+msgstr "Criando modelos de script"
+
+msgid ""
+"Godot provides a way to use script templates as seen in the ``Script Create "
+"Dialog`` while creating a new script:"
+msgstr ""
+"O Godot fornece uma maneira de usar modelos de scripts, como visto em "
+"``Script Create Dialog`` enquanto se cria um novo script:"
+
+msgid ""
+"A set of default script templates is provided by default, but it's also "
+"possible to modify existing and create new ones, both per project and the "
+"editor."
+msgstr ""
+"Um conjunto de modelos de script já é fornecido por padrão, mas também é "
+"possível modificar os já existentes ou criar novos, tanto para o projeto "
+"quanto para o editor."
+
+msgid "Locating the templates"
+msgstr "Localizando os modelos"
+
+msgid "There are two places where templates can be managed."
+msgstr "Existem dois lugares onde os modelos pode ser manipulados."
+
+msgid "Editor-defined templates"
+msgstr "Modelos definidos pelo editor"
+
+msgid ""
+"These are available globally throughout any project. The location of these "
+"templates are determined per each OS:"
+msgstr ""
+"Estes estão disponíveis para todos os projetos. A localização destes modelos "
+"é determinada por cada SO em particular:"
+
+msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+
+msgid "Linux: ``$HOME/.config/godot/script_templates/``"
+msgstr "Linux: ``$HOME/.config/godot/script_templates/``"
+
+msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+msgstr "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+
+msgid ""
+"If no ``script_templates`` is detected, Godot will create a default set of "
+"built-in templates automatically, so this logic can be used to reset the "
+"default templates in case you've accidentally overwritten them."
+msgstr ""
+"Se nenhum \"script_templates\" for detectado, o Godot irá criar um conjunto "
+"de modelos automaticamente, essa mesma lógica pode ser usada para reverter "
+"os modelos ao estado original, caso você acidentalmente tenha cometido algum "
+"erro."
+
+msgid "Project-defined templates"
+msgstr "Modelos definidos pelo projeto"
+
+msgid ""
+"The default path to search for templates is the ``res://script_templates/`` "
+"directory. The path can be changed by configuring the ``editor/"
+"script_templates_search_path`` setting in the :ref:`ProjectSettings "
+"<class_ProjectSettings>`, both via code and the editor."
+msgstr ""
+"O caminho padrão para buscar modelos é o diretório ``res://script_templates/"
+"``. O caminho pode ser mudado configurando a opção ``editor/"
+"script_templates_search_path`` em :ref:`ProjectSettings "
+"<class_ProjectSettings>`, tanto via código quanto pelo editor."
+
+msgid ""
+"If no ``script_templates`` directory is found within a project, it is simply "
+"ignored."
+msgstr ""
+"Se nenhum diretório``script_templates`` for encontrado no projeto, então é "
+"simplesmente ignorado."
+
+msgid "Language support and overriding behavior"
+msgstr "Suporte para idiomas e comportamento de sobreposição"
+
+msgid ""
+"Depending on whether a particular language implements a way to generate "
+"scripts out of templates, it's possible to create a template which can be "
+"recognized by that language according to template's file extension. For "
+"GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
+msgstr ""
+"Dependendo de como uma linguagem em particular implementa a geração de "
+"scripts a partir de modelos, é possível criar um modelo que possa ser "
+"reconhecido por essa linguagem de acordo com a extensão do arquivo do "
+"modelo. Para o GDScript e o C#, as extensões devem ser ``gd`` e ``cs`` "
+"respectivamente."
+
+#, fuzzy
+msgid ""
+"The script templates have the same extension as the regular script files. "
+"This may lead to an issue of a script parser treating those templates as "
+"actual scripts within a project. To avoid this, make sure to ignore the "
+"directory containing them by creating an empty ``.gdignore`` file. The "
+"directory won't be visible throughout the project's filesystem anymore, yet "
+"the templates can be modified by an external text editor anytime."
+msgstr ""
+"Os modelos de script têm a mesma extensão que arquivos de script normais. "
+"Isso pode levar a um problema de um analisador de scripts que trata esses "
+"modelos como scripts. Para evitar isso, tenha certeza de criar um arquivo "
+"chamado ``.gdignore`` dentro da pasta que contém os modelos. Essa pasta não "
+"será mais visível através do sistema de arquivos do projeto; os modelos "
+"ainda podem ser modificados por qualquer editor de texto externo."
+
+msgid ""
+"The built-in editor templates are automatically shadowed by the project-"
+"specific templates given both scripts have the same filename."
+msgstr ""
+"Os modelos de editor integrados são automaticamente ocultados pelos modelos "
+"específicos do projeto, dado que ambos os scripts têm o mesmo nome de "
+"arquivo."
+
+msgid "Default template"
+msgstr "Modelo padrão"
+
+msgid ""
+"The ``Default`` template is always generated dynamically per language and "
+"cannot be configured nor overridden, but you can use these as the base for "
+"creating other templates."
+msgstr ""
+"O modelo ``Padrão`` sempre é gerado dinamicamente por linguagem e não pode "
+"ser configurado ou sobreposto, mas você pode usá-lo como base para criar "
+"outros modelos."
+
+msgid "List of template placeholders"
+msgstr "Lista de placeholders de modelo"
+
+msgid ""
+"The following describes the complete list of built-in template placeholders "
+"which are currently implemented."
+msgstr ""
+"O seguinte descreve a lista completa de placeholders de modelo integrados "
+"que estão embutidos atualmente."
+
+msgid "Base placeholders"
+msgstr "Placeholders base"
+
+msgid "Placeholder"
+msgstr "Placeholder"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "``%CLASS%``"
+msgstr "``%CLASS%``"
+
+msgid "The name of the new class (used in C# only)."
+msgstr "O nome da nova classe (usado apenas em C#)."
+
+msgid "``%BASE%``"
+msgstr "``%BASE%``"
+
+msgid "The base type a new script inherits from."
+msgstr "O tipo básico de onde um novo script herda."
+
+msgid "``%TS%``"
+msgstr "``%TS%``"
+
+msgid ""
+"Indentation placeholder. The exact type and number of whitespace characters "
+"used for indentation is determined by the ``text_editor/indent/type`` and "
+"``text_editor/indent/size`` settings in the :ref:`EditorSettings "
+"<class_EditorSettings>` respectively."
+msgstr ""
+"Placeholder de indentação. O tipo exato e quantidade de espaços em branco "
+"usados para a indentação é determinado pelas propriedades ``text_editor/"
+"indent/type`` e ``text_editor/indent/size`` respectivamente, veja :ref:"
+"`EditorSettings <class_EditorSettings>`."
+
+msgid "Type placeholders"
+msgstr "Placeholders de tipo"
+
+msgid ""
+"These are only relevant for GDScript with static typing. Whether these "
+"placeholders are actually replaced is determined by the ``text_editor/"
+"completion/add_type_hints`` setting in the :ref:`EditorSettings "
+"<class_EditorSettings>`."
+msgstr ""
+"Estes só são relevantes para o GDScript com tipo estático. Se os "
+"placeholders são realmente substituidos é determinado pela propriedade "
+"``text_editor/completion/add_type_hints`` em :ref:`EditorSettings "
+"<class_EditorSettings>`."
+
+msgid "Value"
+msgstr "Valor"
+
+#, fuzzy
+msgid "``%INT_TYPE%``"
+msgstr "``TYPE_*``"
+
+msgid "``: int``"
+msgstr "``: int``"
+
+msgid "``%STRING_TYPE%``"
+msgstr "``%STRING_TYPE%``"
+
+msgid "``: String``"
+msgstr "``: String``"
+
+#, fuzzy
+msgid "``%FLOAT_TYPE%``"
+msgstr "``TYPE_*``"
+
+#, fuzzy
+msgid "``: float``"
+msgstr "float[]"
+
+msgid "``%VOID_RETURN%``"
+msgstr "``%VOID_RETURN%``"
+
+msgid "``-> void``"
+msgstr "``-> void``"

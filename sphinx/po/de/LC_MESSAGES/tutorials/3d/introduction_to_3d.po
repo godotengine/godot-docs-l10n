@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
 msgstr "3D Einführung"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
 "Creating a 3D game can be challenging. That extra Z coordinate makes many of "
 "the common techniques that helped to make 2D games simple no longer work. To "
@@ -40,7 +38,6 @@ msgstr ""
 "sich, die 3D Plattformer Anleitung oder die 3D Anleitungen für kinematische "
 "Charaktere zu lesen, die fast identisch mit ihren 2D Gegenstücken sind."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
 "In 3D, math is a little more complex than in 2D, so also checking the :ref:"
 "`doc_vector_math` entry in the wiki (which was especially created for game "
@@ -52,11 +49,9 @@ msgstr ""
 "erstellt wurde, nicht für Mathematiker oder Ingenieure), ebnen Sie sich den "
 "Weg zur effizienten 3D-Spiele Entwicklung."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
 msgstr "Spatial-Node (Raum-Node)"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
 ":ref:`Node2D <class_Node2D>` is the base node for 2D. :ref:`Control "
 "<class_Control>` is the base node for everything GUI. Following this "
@@ -68,7 +63,6 @@ msgstr ""
 "Benutzeroberfläche. Nach dieser Überlegung verwendet die 3D-Engine für alles "
 "in 3D den Node :ref:`Spatial <class_Spatial>`."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -83,11 +77,9 @@ msgstr ""
 "<class_Vector3>` Elemente zugegriffen werden, die für Position, Euler-"
 "Rotation (X, Y und Z Winkel) und Skalierung stehen."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
 msgstr "3D Inhalt"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
@@ -101,11 +93,9 @@ msgstr ""
 "exportiert werden, um in Godot importiert zu werden (3D-Formate sind nicht "
 "so standardisiert wie Bilder)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
 msgstr "DCC erzeugte Modelle"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
@@ -117,7 +107,6 @@ msgstr ""
 "Szenen (so wie sie im DCC aussehen) importieren können, einschließlich "
 "Animationen, Skelett-Rigs, Mischformen usw."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
 "The second pipeline is by importing simple .OBJ files as mesh resources, "
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
@@ -127,11 +116,9 @@ msgstr ""
 "als Mesh-Ressourcen, die dann zur Anzeige in einen :ref:`MeshInstance "
 "<class_MeshInstance>` Node eingefügt werden können."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
 msgstr "Generierte Geometrie"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
 "<class_ArrayMesh>` resource directly. Simply create your arrays and use the :"
@@ -150,7 +137,6 @@ msgstr ""
 "einfachere API und Hilfen zum Indizieren, Generieren von Normalen, Tangenten "
 "usw. bietet."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
@@ -161,11 +147,9 @@ msgstr ""
 "von Vertex-Arrays und deren Übermittlung an die 3D-API erhebliche "
 "Leistungskosten verursacht."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
 msgstr "Unmittelbare Geometrie"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
@@ -178,11 +162,9 @@ msgstr ""
 "Unmittelbar-Modus zum Erstellen von Punkten, Linien, Dreiecke usw. "
 "bereitstellt."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
 msgstr "2D in 3D"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
 "While Godot packs a powerful 2D engine, many types of games use 2D in a 3D "
 "environment. By using a fixed camera (either orthogonal or perspective) that "
@@ -199,7 +181,6 @@ msgstr ""
 "das Mischen mit 3D-Hintergründen, realistische Parallax-Effekte, Licht- / "
 "Schatteneffekten usw. nutzen."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
 "The disadvantage is, of course, that added complexity and reduced "
 "performance in comparison to plain 2D, as well as the lack of reference of "
@@ -209,11 +190,9 @@ msgstr ""
 "Vergleich zu einfachem 2D, sowie die fehlenden Anhaltspunkte für die Arbeit "
 "in Pixeln verringert wird."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
 msgstr "Umgebung"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
 "Besides editing a scene, it is often common to edit the environment. Godot "
 "provides a :ref:`WorldEnvironment <class_WorldEnvironment>` node that allows "
@@ -228,11 +207,9 @@ msgstr ""
 "eingebauten Nachbearbeitungseffekten anzuwenden. Umgebungen können auch in "
 "der Kamera überschrieben werden."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
 msgstr "3D Ansichtsfenster"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
@@ -241,7 +218,6 @@ msgstr ""
 "Registerkarte kann manuell ausgewählt werden, wird jedoch automatisch "
 "aktiviert, wenn ein räumlicher Knoten ausgewählt wird."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
 "Default 3D scene navigation controls are similar to Blender (aiming to have "
 "some sort of consistency in the free software pipeline..), but options are "
@@ -254,11 +230,9 @@ msgstr ""
 "Verhalten so anzupassen, dass es anderen Werkzeugen in den Editor-"
 "Einstellungen ähnelt:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
 msgstr "Koordinatensystem"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything. 3D Physics and other areas are tuned for this, so "
@@ -270,7 +244,6 @@ msgstr ""
 "abgestimmt, daher ist der Versuch, einen anderen Maßstab zu verwenden, "
 "normalerweise eine schlechte Idee (es sei denn, Sie wissen, was Sie tun)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -287,7 +260,6 @@ msgstr ""
 "Bereichen wie Rendering oder Physik kommen. Stellen Sie also sicher, dass "
 "Ihre Künstler immer im richtigen Maßstab arbeiten!"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
 "The Y coordinate is used for \"up\", though for most objects that need "
 "alignment (like lights, cameras, capsule collider, vehicle, etc.), the Z "
@@ -299,23 +271,18 @@ msgstr ""
 "Kapselkollider, Fahrzeuge usw.), die Z-Achse als Richtungszeiger verwendet "
 "wird. Diese Konvention bedeutet grob:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
 msgstr "**X** ist seitlich"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
 msgstr "**Y** ist hoch/runter"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
 msgstr "**Z** ist vorne/hinten"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
 msgstr "Raum- und Manipulations-Gizmos"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:152
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X, Y, Z "
@@ -329,11 +296,9 @@ msgstr ""
 "(und auch für die Shadersprache, die Reihenfolge der Komponenten für "
 "Vector3, Color usw.)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
 msgstr "Einige nützliche Tastenkürzel:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
@@ -341,16 +306,13 @@ msgstr ""
 "Um die Platzierung oder Drehung einzurasten, drücken Sie :kbd:`Strg` während "
 "des Verschiebens, Skalierens oder Drehens."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 "Zum Zentrieren der Ansicht auf das ausgewählte Objekt, drücken Sie :kbd:`F`."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
 msgstr "Ansicht-Menü"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
@@ -358,13 +320,11 @@ msgstr ""
 "Die Ansichtsoptionen werden über das Menü \"Ansicht\" in der Symbolleiste "
 "des Ansichtsfensters gesteuert."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr ""
 "Sie können die Gizmos in der 3D-Ansicht des Editors über dieses Menü "
 "ausblenden:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
@@ -372,17 +332,14 @@ msgstr ""
 "Um eine bestimmte Art von Gizmos auszublenden, können Sie sie im Menü \"View"
 "\" deaktivieren."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
 msgstr "Standard Umgebung"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
 "Beim Erstellen im Projektmanager hat die 3D-Umgebung einen Standardhimmel."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
 "Given how physically based rendering works, it is advised to always try to "
 "work with a default environment in order to provide indirect and reflected "
@@ -392,18 +349,15 @@ msgstr ""
 "es ratsam, immer mit einer Standardumgebung zu arbeiten, um indirektes und "
 "reflektiertes Licht auf Ihre Objekte zu werfen."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
 msgstr "Kameras"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
 "No matter how many objects are placed in the 3D space, nothing will be "
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
 "Cameras are associated with (and only display to) a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -417,7 +371,6 @@ msgstr ""
 "Unteransichtsfenster (entweder als Rendering-Ziel oder als Bild-im-Bild) "
 "gewünscht sind, müssen diese ihre eigenen untergeordneten Kameras anzeigen."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
@@ -425,21 +378,21 @@ msgstr ""
 "Wenn man mit mehreren Kameras umgeht, werden folgende Regeln für jede "
 "Ansicht angewendet:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
 "If no cameras are present in the scene tree, the first one that enters it "
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"Wenn keine Kameras im Szenenbaum vorhanden sind, wird die erste Kamera, die "
+"in die Szene eintritt, die aktive Kamera. Weitere Kameras die der Szene "
+"betreten werden ignoriert (es sei denn, sie sind als *aktuell* eingestellt)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
 "If a camera has the \"*current*\" property set, it will be used regardless "
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
@@ -447,11 +400,9 @@ msgstr ""
 "Wenn eine aktive Kamera den Szenenbaum verlässt, wird die erste Kamera in "
 "der Baumreihenfolge an ihre Stelle treten."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
 msgstr "Beleuchtung"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:225
 msgid ""
 "Godot has a limit of up to 8 lights per mesh. Aside from that, there is no "
 "limitation on the number of lights, nor of types of lights, in Godot. As "

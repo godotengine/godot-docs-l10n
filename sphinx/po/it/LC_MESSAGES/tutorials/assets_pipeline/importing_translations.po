@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Importing translations"
+msgstr "Importazione di traduzioni"
+
+msgid "Games and internationalization"
+msgstr ""
+
+msgid ""
+"The world is full of different languages and cultures, so nowadays games are "
+"released in several languages. To handle this, internationalized text must "
+"be supported in any modern game engine."
+msgstr ""
+
+msgid ""
+"In regular desktop or mobile applications, internationalized text is usually "
+"located in resource files (or .po files for GNU stuff). Games, however, can "
+"use several orders of magnitude more text than applications, so they must "
+"support efficient methods for dealing with loads of multilingual text."
+msgstr ""
+
+msgid ""
+"There are two approaches to generate multilingual language games and "
+"applications. Both are based on a key:value system. The first is to use one "
+"of the languages as the key (usually English), the second is to use a "
+"specific identifier. The first approach is probably easier for development "
+"if a game is released first in English, later in other languages, but a "
+"complete nightmare if working with many languages at the same time."
+msgstr ""
+
+msgid ""
+"In general, games use the second approach and a unique ID is used for each "
+"string. This allows you to revise the text while it is being translated to "
+"other languages. The unique ID can be a number, a string, or a string with a "
+"number (it's just a unique string anyway)."
+msgstr ""
+
+msgid ""
+"If you need a more powerful file format, Godot also supports loading "
+"translations written in the gettext ``.po`` format. See :ref:"
+"`doc_localization_using_gettext` for details."
+msgstr ""
+
+#, fuzzy
+msgid "Translation format"
+msgstr "Formato di traduzione"
+
+msgid ""
+"To complete the picture and allow efficient support for translations, Godot "
+"has a special importer that can read CSV files. Most spreadsheet editors can "
+"export to this format, so the only requirement is that the files have a "
+"special arrangement. The CSV files **must** be saved with UTF-8 encoding "
+"without a `byte order mark <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`__."
+msgstr ""
+
+msgid ""
+"By default, Microsoft Excel will always save CSV files with ANSI encoding "
+"rather than UTF-8. There is no built-in way to do this, but there are "
+"workarounds as described `here <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
+msgstr ""
+
+msgid ""
+"We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
+"Sheets instead."
+msgstr ""
+
+msgid "CSV files must be formatted as follows:"
+msgstr ""
+
+#, fuzzy
+msgid "keys"
+msgstr "chiavi"
+
+msgid "<lang1>"
+msgstr "<lang1>"
+
+msgid "<lang2>"
+msgstr "<lang2>"
+
+msgid "<langN>"
+msgstr "<langN>"
+
+msgid "KEY1"
+msgstr "KEY1"
+
+msgid "string"
+msgstr "string"
+
+msgid "KEY2"
+msgstr "KEY2"
+
+msgid "KEYN"
+msgstr "KEYN"
+
+msgid ""
+"The \"lang\" tags must represent a language, which must be one of the :ref:"
+"`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
+"be unique and represent a string universally (they are usually in uppercase, "
+"to differentiate from other strings). These keys will be replaced at runtime "
+"by the matching translated string. Note that the case is important, \"KEY1\" "
+"and \"Key1\" will be different keys. The top-left cell is ignored and can be "
+"left empty or having any content. Here's an example:"
+msgstr ""
+
+msgid "en"
+msgstr "en"
+
+msgid "es"
+msgstr "es"
+
+msgid "ja"
+msgstr "ja"
+
+msgid "GREET"
+msgstr "GREET"
+
+msgid "Hello, friend!"
+msgstr "Hello, friend!"
+
+msgid "Hola, amigo!"
+msgstr "Hola, amigo!"
+
+msgid "こんにちは"
+msgstr "こんにちは"
+
+msgid "ASK"
+msgstr "ASK"
+
+msgid "How are you?"
+msgstr "How are you?"
+
+msgid "Cómo está?"
+msgstr "Cómo está?"
+
+msgid "元気ですか"
+msgstr "元気ですか"
+
+msgid "BYE"
+msgstr "BYE"
+
+msgid "Goodbye"
+msgstr "Goodbye"
+
+msgid "Adiós"
+msgstr "Adiós"
+
+msgid "さようなら"
+msgstr "さようなら"
+
+#, fuzzy
+msgid "QUOTE"
+msgstr "QUOTE"
+
+msgid "\"Hello\" said the man."
+msgstr "\"Hello\" said the man."
+
+msgid "\"Hola\" dijo el hombre."
+msgstr "\"Hola\" dijo el hombre."
+
+msgid "「こんにちは」男は言いました"
+msgstr "「こんにちは」男は言いました"
+
+msgid ""
+"The same example is shown below as a comma-separated plain text file, which "
+"should be the result of editing the above in a spreadsheet. When editing the "
+"plain text version, be sure to enclose with double quotes any message that "
+"contains commas, line breaks or double quotes, so that commas are not parsed "
+"as delimiters, line breaks don't create new entries and double quotes are "
+"not parsed as enclosing characters. Be sure to escape any double quotes a "
+"message may contain by preceding them with another double quote. "
+"Alternatively, you can select another delimiter than comma in the import "
+"options."
+msgstr ""
+
+#, fuzzy
+msgid "CSV importer"
+msgstr "Importatore CSV"
+
+msgid ""
+"Godot will treat CSV files as translations by default. It will import them "
+"and generate one or more compressed translation resource files next to it."
+msgstr ""
+
+msgid ""
+"Importing will also add the translation to the list of translations to load "
+"when the game runs, specified in project.godot (or the project settings). "
+"Godot allows loading and removing translations at runtime as well."
+msgstr ""
+
+msgid ""
+"Select the ``.csv`` file and access the **Import** dock to define import "
+"options. You can toggle the compression of the imported translations, and "
+"select the delimiter to use when parsing the CSV file."
+msgstr ""
+
+msgid "Be sure to click **Reimport** after any change to these options."
+msgstr ""

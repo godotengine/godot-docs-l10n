@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:4
 msgid "Code::Blocks"
 msgstr "Code::Blocks"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:6
 msgid ""
 "`Code::Blocks <https://codeblocks.org/>`_ is a free, open source, cross "
 "platform IDE."
@@ -29,11 +27,9 @@ msgstr ""
 "`Code::Blocks <https://codeblocks.org/>`_ est un IDE libre, open source et "
 "multiplateforme."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:9
 msgid "Creating a new project"
 msgstr "Créer un nouveau projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:11
 msgid ""
 "From Code::Blocks' main screen, click **Create a new project** or select "
 "**File > New > Project...**."
@@ -41,7 +37,6 @@ msgstr ""
 "Dans l'écran principal de Code::Blocks, cliquez sur **Create a new project** "
 "ou sélectionnez **File > New > Project...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:17
 msgid ""
 "In the **New from template** window, from **Projects**, select **Empty "
 "project**, and click **Go**."
@@ -49,13 +44,11 @@ msgstr ""
 "Dans la fenêtre **New from template**, à partir de **Projects**, "
 "sélectionnez **Empty project**, et cliquez sur **Go**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:23
 msgid "Click Next, to pass the welcome to the new empty project wizard."
 msgstr ""
 "Cliquez sur Next, pour passer le mot de bienvenue de l'assistant de nouveau "
 "projet vide."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:29
 msgid ""
 "The project file should be created in the root of the cloned project folder. "
 "To achieve this, first, ensure that the **Project title** is the same as the "
@@ -68,7 +61,6 @@ msgstr ""
 "n'ayez cloné le projet dans un dossier avec un nom différent, celui-ci sera "
 "``godot``."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:31
 msgid ""
 "Second, ensure that the **Folder to create project in** is the folder you "
 "ran the Git clone command from, not the ``godot`` project folder. Confirm "
@@ -81,7 +73,6 @@ msgstr ""
 "**Resulting filename** créera le fichier de projet à la racine du dossier du "
 "projet cloné."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:37
 msgid ""
 "The compiler and configuration settings are managed through **SCons** and "
 "will be configured later. However, it's worth deselecting the **Create "
@@ -93,11 +84,9 @@ msgstr ""
 "désélectionner l'option **Create \"Release\" configuration** ; ainsi, une "
 "seule cible de compilation est créée avant de cliquer sur **Finish**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:44
 msgid "Configuring the build"
 msgstr "Configuration de la compilation"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:46
 msgid ""
 "The first step is to change the project properties. Right-click on the new "
 "project and select **Properties...**."
@@ -105,7 +94,6 @@ msgstr ""
 "La première étape consiste à modifier les propriétés du projet. Faites un "
 "clic droit sur le nouveau projet et sélectionnez **Properties...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:52
 msgid ""
 "Check the **This is a custom Makefile** property. Click OK to save the "
 "changes."
@@ -113,7 +101,6 @@ msgstr ""
 "Cochez la propriété **This is a custom Makefile** . Cliquez sur OK pour "
 "enregistrer les modifications."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:58
 msgid ""
 "The next step is to change the build options. Right-click on the new project "
 "and select **Build Options...**."
@@ -121,7 +108,6 @@ msgstr ""
 "L'étape suivante consiste à modifier les options de compilation. Faites un "
 "clic droit sur le nouveau projet et sélectionnez **Build Options...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:64
 msgid ""
 "Select the **\"Make\" commands** tab and remove all the existing commands "
 "for all the build targets. For each build target enter the **SCons** command "
@@ -140,7 +126,6 @@ msgstr ""
 "commande ``scons --clean`` dans le champ **Clean project/target** aux "
 "commandes par défaut du projet."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:66
 msgid ""
 "If you're using Windows, all the commands need to be preceded with ``cmd /"
 "c`` to iniitalize the command interpreter."
@@ -148,11 +133,9 @@ msgstr ""
 "Si vous utilisez Windows, toutes les commandes doivent être précédées de "
 "``cmd /c`` pour initialiser l'interpréteur de commandes."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
 msgid "Windows example:"
 msgstr "Exemple Windows :"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
 "Code::Blocks should now be configured to build Godot; so either select "
 "**Build > Build**, click the gear button, or press :kbd:`Ctrl + F9`."
@@ -161,11 +144,9 @@ msgstr ""
 "vous sélectionnez **Build > Build**, cliquez sur le bouton d'engrenage, ou "
 "appuyez sur :kbd:`Ctrl + F9`."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:85
 msgid "Configuring the run"
 msgstr "Configuration de l’exécution"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:87
 msgid ""
 "Once **SCons** has successfully built the desired target, reopen the project "
 "**Properties...** and select the **Build targets** tab. In the **Output "
@@ -176,7 +157,6 @@ msgstr ""
 "champ **Output filename**, naviguez jusqu'au dossier ``bin`` et sélectionnez "
 "le fichier compilé."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:89
 msgid ""
 "Deselect the **Auto-generate filename prefix** and **Auto-generate filename "
 "extension** options."
@@ -184,7 +164,6 @@ msgstr ""
 "Désélectionnez les options **Auto-generate filename prefix** et **Auto-"
 "generate filename extension**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:95
 msgid ""
 "Code::Blocks should now be configured to run your compiled Godot executable; "
 "so either select **Build > Run**, click the green arrow button, or press :"
@@ -194,7 +173,6 @@ msgstr ""
 "Godot compilé ; donc soit vous sélectionnez **Build > Run**, cliquez sur le "
 "bouton flèche verte, ou appuyez sur :kbd:`Ctrl + F10`."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:97
 msgid ""
 "There are two additional points worth noting. First, if required, the "
 "**Execution working dir** field can be used to test specific projects, by "
@@ -209,11 +187,9 @@ msgstr ""
 "utilisé pour ajouter et supprimer des cibles de compilation avec lesquelles "
 "travailler et créer différentes compilations."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
 msgid "Adding files to the project"
 msgstr "Ajouter des fichiers au projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
 "To add all the Godot code files to the project, right-click on the new "
 "project and select **Add files recursively...**."
@@ -221,7 +197,6 @@ msgstr ""
 "Pour ajouter tous les fichiers de code Godot au projet, faites un clic droit "
 "sur le nouveau projet et sélectionnez **Add files recursively...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:108
 msgid ""
 "It should automatically select the project folder; so simply click **Open**. "
 "By default, all code files are included, so simply click **OK**."
@@ -230,11 +205,9 @@ msgstr ""
 "donc de cliquer sur **Open**. Par défaut, tous les fichiers de code sont "
 "inclus, il suffit donc de cliquer sur **OK**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:115
 msgid "Code style configuration"
 msgstr "Configuration du style de code"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:117
 msgid ""
 "Before editing any files, remember that all code needs to comply with the :"
 "ref:`doc_code_style_guidelines`. One important difference with Godot is the "
@@ -250,7 +223,6 @@ msgstr ""
 "les indentations. Ce paramètre peut être trouvé en sélectionnant **Settings "
 "> Editor**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:123
 msgid ""
 "Under **General Settings**, on the **Editor Settings** tab, under **Tab "
 "Options** check **Use TAB character**."
@@ -258,7 +230,6 @@ msgstr ""
 "Sous **General Settings**, dans l'onglet **Editor Settings**, sous **Tab "
 "Options**, cochez **Use TAB character**."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:129
 msgid ""
 "That's it. You're ready to start contributing to Godot using the Code::"
 "Blocks IDE. Remember to save the project file and the **Workspace**. If you "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
 msgstr "マルチメッシュインスタンス(MultiMeshInstance)の使用"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:9
 msgid ""
 "In a normal scenario, you would use a :ref:`MeshInstance "
 "<class_MeshInstance>` node to display a 3D mesh like a human model for the "
@@ -44,7 +41,6 @@ msgstr ""
 "法は、迅速な反復作業には役に立ちません。 :ref:`MultiMeshInstance "
 "<class_MultiMeshInstance>` は、この問題の解決策の1つです。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
 "MultiMeshInstance, as the name suggests, creates multiple copies of a "
 "MeshInstance over a surface of a specific mesh. An example would be having a "
@@ -55,11 +51,9 @@ msgstr ""
 "複数のコピーを作成します。例として、ランダムなスケールと方向のツリーをランド"
 "スケープメッシュに設定するツリーメッシュがあります。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
 msgstr "ノードのセットアップ"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
@@ -67,7 +61,6 @@ msgstr ""
 "基本的なセットアップには、MultiMeshInstanceノードと2つのMeshInstanceノードの3"
 "つのノードが必要です。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
@@ -75,7 +68,6 @@ msgstr ""
 "1つのノードがターゲット、つまり複数のメッシュを配置するメッシュとして使用され"
 "ます。ツリーの例では、これが風景になります。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
@@ -83,7 +75,6 @@ msgstr ""
 "もう一方のノードは、複製するメッシュのソースとして使用されます。ツリーの場"
 "合、これはツリー自体になります。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
@@ -91,12 +82,10 @@ msgstr ""
 "この例では、シーンのルートノードとして :ref:`Spatial <class_Spatial>` ノード"
 "を使用します。シーンツリーは次のようになります:"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
 "簡単にするために、このチュートリアルでは組み込みのプリミティブを使用します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
 "Now you have everything ready. Select the MultiMeshInstance node and look at "
 "the toolbar, you should see an extra button called ``MultiMesh`` next to "
@@ -109,19 +98,15 @@ msgstr ""
 "す。\\ *マルチメッシュの設定* というタイトルの新しいウィンドウがポップアップ"
 "します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 msgid "MultiMesh settings"
 msgstr "マルチメッシュの設定"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
 msgstr "以下にオプションの説明を示します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
 msgstr "ターゲットサーフェス"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
@@ -129,64 +114,49 @@ msgstr ""
 "ソース メッシュのコピーを配置するターゲット サーフェスとして使用されるメッ"
 "シュ。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
 msgstr "ソースメッシュ"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
 msgstr "ターゲット サーフェスに複製するメッシュ。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
 msgstr "メッシュの上軸"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
 msgstr "ソースメッシュの上軸として使用される軸。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
 msgstr "ランダムな回転"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
 msgstr "ソースメッシュの上軸周りの回転をランダム化します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
 msgstr "ランダムな傾き"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
 msgstr "ソースメッシュの全体的な回転をランダム化します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
 msgstr "ランダムな縮尺"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
 msgstr "ソースメッシュのスケールをランダム化します。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
 msgstr "スケール"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:89
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr "ターゲットサーフェス上に配置されるソースメッシュのスケール。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
 msgstr "総計"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
 msgstr "ターゲットサーフェス上に配置されるメッシュインスタンスの量。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
 "Select the target surface. In the tree case, this should be the landscape "
 "node. The source mesh should be the tree node. Adjust the other parameters "
@@ -200,11 +170,9 @@ msgstr ""
 "シュの複数のコピーがターゲットメッシュ上に配置されます。結果に満足したら、"
 "ソースメッシュとして使用されているメッシュインスタンスを削除できます。"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
 msgstr "最終結果は次のようになります:"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""

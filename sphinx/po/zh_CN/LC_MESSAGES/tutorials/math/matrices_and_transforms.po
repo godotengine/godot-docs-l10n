@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,90 +17,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:4
 msgid "Matrices and transforms"
 msgstr "矩阵与变换"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:9
 msgid ""
 "Before reading this tutorial, we recommend that you thoroughly read and "
 "understand the :ref:`doc_vector_math` tutorial, as this tutorial requires a "
 "knowledge of vectors."
 msgstr ""
-"在阅读本教程之前, 我们推荐你从头到尾阅读并且理解 :ref:`doc_vector_math` 教"
-"程, 因为本教程需要一点向量的知识."
+"在阅读本教程之前，我们推荐你从头到尾阅读并且理解 :ref:`doc_vector_math` 教"
+"程，因为本教程需要一点向量的知识。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:13
 msgid ""
 "This tutorial is about *transformations* and how we represent them in Godot "
 "using matrices. It is not a full in-depth guide to matrices. Transformations "
 "are most of the time applied as translation, rotation, and scale, so we will "
 "focus on how to represent those with matrices."
 msgstr ""
-"这个教程是关于 *变换* 以及我们如何在Godot中使用矩阵表示它. 这不是关于矩阵的充"
-"分, 深入的指南. 变换大多数时候被应用为平移, 旋转, 和缩放, 所以我们将会关注如"
-"何用矩阵表示这些变换."
+"这个教程介绍的是\\ *变换*\\ 以及我们如何在 Godot 中使用矩阵表示它。这不是完整"
+"深入的矩阵指南。变换大多数时候被应用为平移、旋转、缩放，所以我们将会关注如何"
+"用矩阵表示这些变换。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:18
 msgid ""
 "Most of this guide focuses on 2D, using :ref:`class_Transform2D` and :ref:"
 "`class_Vector2`, but the way things work in 3D is very similar."
 msgstr ""
-"这个指南大部分关注于2D, 使用 :ref:`class_Transform2D` 和 :ref:"
-"`class_Vector2` , 它们在3D中工作方式也十分相似."
+"虽然这个指南主要关注于 2D，使用 :ref:`class_Transform2D` 和 :ref:"
+"`class_Vector2`\\ ，但是 3D 中的工作方式也十分相似。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "As mentioned in the previous tutorial, it is important to remember that in "
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
 "schools teach linear algebra, with the Y axis pointing up."
 msgstr ""
-"正如之前的教程中提到的, 要记在 Godot 中, Y 轴在 2D 中指 *向下*. 这与学校里教"
-"的线性代数正好相反, 在那里 Y 轴是指向上的."
+"正如之前的教程中提到的，要记住在 Godot 中，2D 的 Y 轴是\\ *向下*\\ 的。这与学"
+"校里教的线性代数正好相反，在那里 Y 轴是向上的。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
 "The convention is that the X axis is red, the Y axis is green, and the Z "
 "axis is blue. This tutorial is color-coded to match these conventions, but "
 "we will also represent the origin vector with a blue color."
 msgstr ""
-"这里的惯例是X轴是红色的,Y轴是绿色的, 并且Z轴是蓝色的. 这个教程里的颜色是经过"
-"设置的以匹配这些惯例, 但是我们也给原向量使用蓝色."
+"这里的惯例是 X 轴用红色、Y 轴用绿色、Z 轴用蓝色。本教程中的颜色都遵循这个惯"
+"例，不过我们也在原点向量上使用蓝色。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:32
 msgid "Matrix components and the Identity matrix"
 msgstr "矩阵分量和单位矩阵"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:34
 msgid ""
 "The identity matrix represents a transform with no translation, no rotation, "
 "and no scale. Let's start by looking at the identity matrix and how its "
 "components relate to how it visually appears."
 msgstr ""
-"单位矩阵代表一个没有平移, 没有旋转, 并且没有缩放的变换. 让我们开始看看单位矩"
-"阵以及它的分量如何与它的视觉表现相联系吧."
+"单位矩阵代表一个没有平移、没有旋转、没有缩放的变换。让我们开始看看单位矩阵以"
+"及它的分量如何与它的视觉表现相联系吧。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "Matrices have rows and columns, and a transformation matrix has specific "
 "conventions on what each does."
-msgstr "矩阵有行和列, 并且变换矩阵对每个小内部矩阵都有特定的约定."
+msgstr "矩阵有行和列，变换矩阵对它们有特定的约定。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid ""
 "In the image above, we can see that the red X vector is represented by the "
 "first column of the matrix, and the green Y vector is likewise represented "
 "by the second column. A change to the columns will change these vectors. We "
 "will see how they can be manipulated in the next few examples."
 msgstr ""
-"在上图中, 我们可以看到, 红色的X向量由矩阵的第一列表示, 绿色的Y向量同样由第二"
-"列表示. 改变列会改变这些向量. 我们将在接下来的几个例子中看到如何操作它们."
+"在上图中，我们可以看到红色的 X 向量由矩阵的第一列表示，绿色的 Y 向量则由第二"
+"列表示。改变列就会改变这些向量。我们将在接下来的几个例子中看到如何操作它们。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:49
 msgid ""
 "You should not worry about manipulating rows directly, as we usually work "
 "with columns. However, you can think of the rows of the matrix as showing "
@@ -109,7 +97,6 @@ msgstr ""
 "您不必担心直接操作行, 因为我们通常使用列. 然而, 你可以把矩阵的行看作是表示哪"
 "些向量有助于在给定的方向上移动."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:53
 msgid ""
 "When we refer to a value such as `t.x.y`, that's the Y component of the X "
 "column vector. In other words, the bottom-left of the matrix. Similarly, `t."
@@ -120,11 +107,9 @@ msgstr ""
 "角. 类似地, `t.x.x` 是左上角, `t.y.x` 是右上角, 然后 `t.y.y` 是右下角, 在这"
 "里 `t` 是一个 Transform2D."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:59
 msgid "Scaling the transformation matrix"
 msgstr "缩放变换矩阵"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:61
 msgid ""
 "Applying a scale is one of the easiest operations to understand. Let's start "
 "by placing the Godot logo underneath our vectors so that we can visually see "
@@ -133,7 +118,6 @@ msgstr ""
 "应用一个缩放是最容易理解的操作之一. 让我们开始吧, 把Godot logo放置于我们的向"
 "量之下, 这样我们可以直观得看出应用于这些对象上的效果:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:67
 msgid ""
 "Now, to scale the matrix, all we need to do is multiply each component by "
 "the scale we want. Let's scale it up by 2. 1 times 2 becomes 2, and 0 times "
@@ -142,11 +126,9 @@ msgstr ""
 "现在, 为了缩放矩阵, 我们唯一需要做的就是将每个矩阵分量乘以我们想要的缩放比"
 "例. 来将它缩放两倍吧,1乘以2变成了2,0乘以2变成了0, 所以我们最后得到了这个:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "To do this in code, we can simply multiply each of the vectors:"
 msgstr "要在代码中做到这件事. 我们可以简单地乘上每个向量:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:92
 msgid ""
 "If we wanted to return it to its original scale, we can multiply each "
 "component by 0.5. That's pretty much all there is to scaling a "
@@ -155,7 +137,6 @@ msgstr ""
 "如果我们想要回到它原来的尺度, 我们可以对每个分量乘以0.5. 这几乎就是缩放一个变"
 "换矩阵的全部了."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:96
 msgid ""
 "To calculate the object's scale from an existing transformation matrix, you "
 "can use `length()` on each of the column vectors."
@@ -163,22 +144,18 @@ msgstr ""
 "要从一个已经存在的变换矩阵中计算对象的缩放尺度, 你可以对每个列向量使用 "
 "`length()` 方法."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:99
 msgid ""
 "In actual projects, you can use the `scaled()` method to perform scaling."
 msgstr "在实际的项目中, 你可以使用 `scaled()` 方法去执行缩放."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:103
 msgid "Rotating the transformation matrix"
 msgstr "旋转变换矩阵"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
 "We'll start the same way as earlier, with the Godot logo underneath the "
 "identity matrix:"
 msgstr "我们将以与前面相同的方式开始, 在标识矩阵下使用Godot徽标:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:110
 msgid ""
 "As an example, let's say we want to rotate our Godot logo clockwise by 90 "
 "degrees. Right now the X axis points right and the Y axis points down. If we "
@@ -189,7 +166,6 @@ msgstr ""
 "们在头脑中旋转这些, 我们就会在逻辑上看到, 新的X轴应该向下, 新的Y轴应该指向左"
 "边."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:116
 msgid ""
 "You can imagine that you grab both the Godot logo and its vectors, and then "
 "spin it around the center. Wherever you finish spinning, the orientation of "
@@ -198,7 +174,6 @@ msgstr ""
 "你可以想象, 你抓住了godot的图标和它的向量, 然后旋转它的中心. 无论你在哪里完成"
 "旋转, 向量的方向决定了矩阵是什么."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:120
 msgid ""
 "We need to represent \"down\" and \"left\" in normal coordinates, so means "
 "we'll set X to (0, 1) and Y to (-1, 0). These are also the values of "
@@ -209,7 +184,6 @@ msgstr ""
 "将Y设为(-1,0). 这些也是Vector2.DOWN和Vector2.LEFT的值, 当我们这样做时, 我们就"
 "会得到旋转对象想要的结果:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:127
 msgid ""
 "If you have trouble understanding the above, try this exercise: Cut a square "
 "of paper, draw X and Y vectors on top of it, place it on graph paper, then "
@@ -218,7 +192,6 @@ msgstr ""
 "如果你很难理解上面的内容, 那就试试这个练习: 剪一个正方形的纸, 在上面画X和Y向"
 "量, 把它放在图表纸上, 然后旋转它并记下端点."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:131
 msgid ""
 "To perform rotation in code, we need to be able to calculate the values "
 "programmatically. This image shows the formulas needed to calculate the "
@@ -229,7 +202,6 @@ msgstr ""
 "算变换矩阵所需的公式. 如果这部分看起来很复杂, 别担心, 我保证这是你需要知道的"
 "最难的事情."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
 "Godot represents all rotations with radians, not degrees. A full turn is "
 "`TAU` or `PI*2` radians, and a quarter turn of 90 degrees is `TAU/4` or "
@@ -238,7 +210,6 @@ msgstr ""
 "Godot代表所有的旋转弧度, 而不是角度. 一个完整转弯是 `TAU` 或 `PI*2` 弧度,90度"
 "的四分之一转弯是 `TAU/4` 或 `PI/2` 弧度. 使用 `TAU通` 常会产生更易读的代码."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
 "Fun fact: In addition to Y being *down* in Godot, rotation is represented "
 "clockwise. This means that all the math and trig functions behave the same "
@@ -249,7 +220,6 @@ msgstr ""
 "和三角函数的行为都与Y-is-up CCW系统相同, 因为这些差异\"cancel out抵消 \"了. "
 "你可以认为在这两个系统中的旋转是\" 从X到Y\"."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:150
 msgid ""
 "In order to perform a rotation of 0.5 radians (about 28.65 degrees), we "
 "simply plug in a value of 0.5 to the formula above and evaluate to find what "
@@ -258,11 +228,9 @@ msgstr ""
 "为了执行0.5弧度的旋转(约28.65度), 我们只需将0.5的值插入上面的公式中, 然后计算"
 "出实际值应该是什么:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:156
 msgid "Here's how that would be done in code (place the script on a Node2D):"
 msgstr "这是在代码中完成的方法(将脚本放置在Node2D上):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:178
 msgid ""
 "To calculate the object's rotation from an existing transformation matrix, "
 "you can use `atan2(t.x.y, t.x.x)`, where t is the Transform2D."
@@ -270,16 +238,13 @@ msgstr ""
 "要从现有的转换矩阵中计算对象的旋转, 可以使用 `atan2(t.x.y, t.x.x)`, 其中 t "
 "是 Transform2D."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:181
 msgid ""
 "In actual projects, you can use the `rotated()` method to perform rotations."
 msgstr "在实际项目中, 可以使用 `roated()` 方法进行旋转."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "Basis of the transformation matrix"
 msgstr "变换矩阵的基"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid ""
 "So far we have only been working with the `x` and `y`, vectors, which are in "
 "charge of representing rotation, scale, and/or shearing (advanced, covered "
@@ -291,7 +256,6 @@ msgstr ""
 "级, 包括在末尾).X和Y向量一起被称为变换矩阵的 *basis基础* . 术语 ``basis基础"
 "`` 和 ``basis vectors基向量`` 是很重要的."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
 "You might have noticed that :ref:`class_Transform2D` actually has three :ref:"
 "`class_Vector2` values: `x`, `y`, and `origin`. The `origin` value is not "
@@ -305,7 +269,6 @@ msgstr ""
 "(transform)的一部分, 我们需要它来表示位置. 从现在开始, 我们将在所有例子中跟踪"
 "原点向量. 您可以将原点看作另一列, 但通常认为它是完全独立的更好."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:201
 msgid ""
 "Note that in 3D, Godot has a separate :ref:`class_Basis` structure for "
 "holding the three :ref:`class_Vector3` values of the basis, since the code "
@@ -318,11 +281,9 @@ msgstr ""
 "`class_Transform` (他由一个 :ref:`class_Basis` 再加一个参考 :ref:"
 "`class_Vector3` 的原点)."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:208
 msgid "Translating the transformation matrix"
 msgstr "转换变换矩阵"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:210
 msgid ""
 "Changing the `origin` vector is called a *translating* the transformation "
 "matrix. Translating is basically a technical term for \"moving\" the object, "
@@ -331,7 +292,6 @@ msgstr ""
 "更改 `origin` 原点向量称为变换矩阵, 转换基本上是 \"moving移动\" 对象的一个技"
 "术术语, 但它不包含任何旋转."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
 "Let's work through an example to help understand this. We will start with "
 "the identity transform like last time, except we will keep track of the "
@@ -340,13 +300,11 @@ msgstr ""
 "让我们通过一个例子来帮助理解这一点. 我们将像上次一样从身份变换开始, 但这次我"
 "们将跟踪原点向量."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr "如果希望对象移动到(1,2)的位置, 只需将其原点向量设置为(1,2):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
 "There is also a `translated()` method, which performs a different operation "
 "to adding or changing `origin` directly. The `translated()` method will "
@@ -359,18 +317,15 @@ msgstr ""
 "旋转90度的对象在以下情况下将向右移动. `translated()` 转换方法 使用 `Vector2."
 "UP` ."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:231
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
 msgstr ""
 "戈多的2D使用基于像素的坐标, 所以在实际项目中, 你会想要转换成数百个单位."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:235
 msgid "Putting it all together"
 msgstr "把它们放在一起"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
 "follow along, create a simple project with a Sprite node and use the Godot "
@@ -379,7 +334,6 @@ msgstr ""
 "我们将把到目前为止提到的所有内容都应用到一个转换上. 接下来, 使用Sprite节点创"
 "建一个简单的项目, 并使用Godot徽标作为纹理资源."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid ""
 "Let's set the translation to (350, 150), rotate by -0.5 rad, and scale by 3. "
 "I've posted a screenshot, and the code to reproduce it, but I encourage you "
@@ -388,11 +342,9 @@ msgstr ""
 "让我们将转换设置为(350,150), 旋转为-0.5 rad, 缩放为3. 我已经发布了一个屏幕截"
 "图, 以及能复制它的代码, 但我鼓励您尝试不看代码就复制屏幕截图！"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:280
 msgid "Shearing the transformation matrix (advanced)"
 msgstr "剪切变换矩阵(高级)"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:282
 msgid ""
 "If you are only looking for how to *use* transformation matrices, feel free "
 "to skip this section of the tutorial. This section explores an uncommonly "
@@ -402,7 +354,6 @@ msgstr ""
 "如果您只想了解如何 *使用* 转换矩阵, 请随意跳过本教程的这一节. 本节探讨转换矩"
 "阵的一个不常用的方面, 目的是为了你建立对它们的理解."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You may have noticed that a transform has more degrees of freedom than the "
 "combination of the above actions. The basis of a 2D transformation matrix "
@@ -414,7 +365,6 @@ msgstr ""
 "ref:`class_Vector2` 值中有四个总数, 而旋转值和缩放的 Vector2 只有三个数字. 缺"
 "失自由度的高级概念称为 *shearing(剪切)*."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:293
 msgid ""
 "Normally, you will always have the basis vectors perpendicular to each "
 "other. However, shearing can be useful in some situations, and understanding "
@@ -423,13 +373,11 @@ msgstr ""
 "通常, 您将始终拥有彼此垂直的基础向量. 但是, 剪切在某些情况下可能很有用, 了解"
 "剪切可以帮助您理解变换的工作原理."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:297
 msgid ""
 "To show you visually how it will look, let's overlay a grid onto the Godot "
 "logo:"
 msgstr "为了直观地向您展示它的外观, 让我们在Godot徽标上叠加一个网格:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:302
 msgid ""
 "Each point on this grid is obtained by adding the basis vectors together. "
 "The bottom-right corner is X + Y, while the top-right corner is X - Y. If we "
@@ -442,17 +390,14 @@ msgstr ""
 "果我们更改基向量, 整个栅格也会随之移动, 因为栅格是由基向量组成的. 无论我们对"
 "基准向量做什么更改, 栅格上当前平行的所有直线都将保持平行."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "As an example, let's set Y to (1, 1):"
 msgstr "例如, 让我们将Y设置为(1,1):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:328
 msgid ""
 "You can't set the raw values of a Transform2D in the editor, so you *must* "
 "use code if you want to shear the object."
 msgstr "不能在编辑器中设置Transform2D的原始值, 所以想要剪切对象, 必须使用代码."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:331
 msgid ""
 "Due to the vectors no longer being perpendicular, the object has been "
 "sheared. The bottom-center of the grid, which is (0, 1) relative to itself, "
@@ -461,7 +406,6 @@ msgstr ""
 "由于向量不再垂直, 因此对象已被剪切. 栅格的底部中心(相对于自身为(0,1))现在位于"
 "世界位置(1,1)."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:335
 msgid ""
 "The intra-object coordinates are called UV coordinates in textures, so let's "
 "borrow that terminology for here. To find the world position from a relative "
@@ -471,7 +415,6 @@ msgstr ""
 "对象内部坐标在纹理中称为UV坐标, 因此我们借用此处的术语. 要从相对位置找到世界"
 "位置, 公式为U*X+V*Y, 其中U和V是数字,X和Y是基向量."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:340
 msgid ""
 "The bottom-right corner of the grid, which is always at the UV position of "
 "(1, 1), is at the world position of (2, 1), which is calculated from X*1 + "
@@ -482,7 +425,6 @@ msgstr ""
 "(1,0)+(1,1)或(1+1,0+1)或(2,1)计算得出的. 这与我们观察到的图像右下角的位置相吻"
 "合."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:346
 msgid ""
 "Similarly, the top-right corner of the grid, which is always at the UV "
 "position of (1, -1), is at the world position of (0, -1), which is "
@@ -494,7 +436,6 @@ msgstr ""
 "X*1+Y*-1计算得出的,X*1+Y*-1是(1,0)-(1,1)或(1-1,0-1)或(0, -1). 这与我们观察到"
 "的图像右上角的位置相吻合."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:352
 msgid ""
 "Hopefully you now fully understand the how a transformation matrix affects "
 "the object, and the relationship between the basis vectors and how the "
@@ -503,7 +444,6 @@ msgstr ""
 "希望您现在完全了解变换矩阵如何影响对象, 以及基础向量之间的关系以及对象的 \"UV"
 "\" 或 \"内部坐标\" 如何更改其世界位置."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:356
 msgid ""
 "In Godot, all transform math is done relative to the parent node. When we "
 "refer to \"world position\", that would be relative to the node's parent "
@@ -512,7 +452,6 @@ msgstr ""
 "在Godot中, 所有变换数学运算都是相对于父节点完成的. 当我们提到 \"世界位置\" "
 "时, 如果节点有父节点, 那么它将相对于节点的父位置."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:360
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about linear transformations: https://www.youtube.com/watch?"
@@ -521,11 +460,9 @@ msgstr ""
 "如果你想要更多的解释, 你可以查看3Blue1Brown关于线性变换的精彩视频: https://"
 "www.bilibili.com/video/BV1ys411472E?p=4"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:365
 msgid "Practical applications of transforms"
 msgstr "变换的实际应用"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:367
 msgid ""
 "In actual projects, you will usually be working with transforms inside "
 "transforms by having multiple :ref:`class_Node2D` or :ref:`class_Spatial` "
@@ -534,7 +471,6 @@ msgstr ""
 "在实际项目中, 您通常会通过将多个 :ref:`class_Node2D` 或 :ref:`class_Spatial` "
 "节点设置为彼此的父级来处理变换中的变换."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "However, sometimes it's very useful to manually calculate the values we "
 "need. We will go over how you could use :ref:`class_Transform2D` or :ref:"
@@ -543,11 +479,9 @@ msgstr ""
 "但是, 有时手动计算我们需要的值非常有用. 我们将介绍如何使用 :ref:"
 "`CLASS_Transform2D` 或 :ref:`CLASS_Transform` 手动计算节点转换."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:376
 msgid "Converting positions between transforms"
 msgstr "在变换之间转换位置"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:378
 msgid ""
 "There are many cases where you'd want to convert a position in and out of a "
 "transform. For example, if you have a position relative to the player and "
@@ -558,21 +492,18 @@ msgstr ""
 "如, 如果您有一个相对于球员的位置并想要查找世界(父级相对)位置, 或者如果您有一"
 "个世界位置并想知道它相对于球员的位置."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid ""
 "We can find what a vector relative to the player would be defined in world "
 "space as using the \"xform\" method:"
 msgstr ""
 "我们可以找到在世界空间中使用 \"xform\" 方法定义的相对于玩家的向量是什么:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "And we can use the \"xform_inv\" method to find a what world space position "
 "would be if it was instead defined relative to the player:"
 msgstr ""
 "我们可以使用 \"xform_inv\" 方法来查找世界空间位置(如果它是相对于玩家定义的):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:411
 msgid ""
 "If you know in advance that the transform is positioned at (0, 0), you can "
 "use the \"basis_xform\" or \"basis_xform_inv\" methods instead, which skip "
@@ -581,11 +512,9 @@ msgstr ""
 "如果您事先知道转换位于 (0, 0) 处, 则可以改用 \"basis_xform\" 或 "
 "\"basis_xform_inv\" 方法, 这将跳过处理转换的过程."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:416
 msgid "Moving an object relative to itself"
 msgstr "相对于对象本身移动对象"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:418
 msgid ""
 "A common operation, especially in 3D games, is to move an object relative to "
 "itself. For example, in first-person shooter games, you would want the "
@@ -594,7 +523,6 @@ msgstr ""
 "一种常见的操作(尤其是在3D游戏中)是相对于自身移动对象. 例如, 在第一人称射击游"
 "戏中, 当您按下W键时, 您希望角色向前移动(-Z轴)."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:422
 msgid ""
 "Since the basis vectors are the orientation relative to the parent, and the "
 "origin vector is the position relative to the parent, we can simply add "
@@ -603,15 +531,12 @@ msgstr ""
 "由于基础向量是相对于父对象的方向, 而原点向量是相对于父对象的位置, 因此我们可"
 "以简单地将基础向量的倍数相加, 以相对于对象本身移动对象."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:426
 msgid "This code moves an object 100 units to its own right:"
 msgstr "此代码将对象向右移动100个单位:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:439
 msgid "For moving in 3D, you would need to replace \"x\" with \"basis.x\"."
 msgstr "要在3D中移动, 需要将 \"x\" 替换为 \"basis.x\"."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid ""
 "In actual projects, you can use `translate_object_local` in 3D or "
 "`move_local_x` and `move_local_y` in 2D to do this."
@@ -619,11 +544,9 @@ msgstr ""
 "在实际工程中, 您可以使用3D中的 `late_object_local` 或者2D中的 `move_local_x` "
 "和 `move_local_y` 来实现."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:445
 msgid "Applying transforms onto transforms"
 msgstr "将变换应用于变换"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:447
 msgid ""
 "One of the most important things to know about transforms is how you can use "
 "several of them together. A parent node's transform affects all of its "
@@ -632,7 +555,6 @@ msgstr ""
 "关于转换, 需要了解的最重要的事情之一是如何将几个转换一起使用. 父节点的变换会"
 "影响其所有子节点. 让我们来剖析一个例子."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:451
 msgid ""
 "In this image, the child node has a \"2\" after the component names to "
 "distinguish them from the parent node. It might look a bit overwhelming with "
@@ -644,7 +566,6 @@ msgstr ""
 "数字可能看起来有点令人不知所措, 但请记住, 每个数字都会显示两次(在箭头旁边和矩"
 "阵中), 而且几乎一半的数字都是零."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid ""
 "The only transformations going on here are that the parent node has been "
 "given a scale of (2, 1), the child has been given a scale of (0.5, 0.5), and "
@@ -653,7 +574,6 @@ msgstr ""
 "这里进行的唯一转换是父节点的比例为(2,1), 子节点的比例为(0.5,0.5), 两个节点都"
 "指定了位置."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:463
 msgid ""
 "All child transformations are affected by the parent transformations. The "
 "child has a scale of (0.5, 0.5), so you would expect it to be a 1:1 ratio "
@@ -668,13 +588,11 @@ msgstr ""
 "(1, 0), 因为它是由父对象的基础向量缩放的. 类似地，子节点的 `origin` 向量被设"
 "置为(1,1), 但由于父节点的基向量, 这实际上会在世界空间中移动它 (2, 1)."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:472
 msgid ""
 "To calculate a child transform's world space transform manually, this is the "
 "code we would use:"
 msgstr "要手动计算子变换的世界空间变换, 我们将使用以下代码:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:510
 msgid ""
 "In actual projects, we can find the world transform of the child by applying "
 "one transform onto another using the `*` operator:"
@@ -682,15 +600,12 @@ msgstr ""
 "在实际工程中, 我们可以通过 `*` 运算符将一个变换应用到另一个变换中, 从而找到孩"
 "子的世界变换:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:532
 msgid "When multiplying matrices, order matters! Don't mix them up."
 msgstr "当矩阵相乘时, 顺序很重要！别把它们弄混了."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:534
 msgid "Lastly, applying the identity transform will always do nothing."
 msgstr "最后, 应用身份变换始终不起任何作用."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about matrix composition: https://www.youtube.com/watch?"
@@ -699,11 +614,9 @@ msgstr ""
 "如果您想了解更多信息, 可以查看3Blue1Brown关于矩阵组成的精彩视频: https://www."
 "bilibili.com/video/BV1ys411472E?p=5"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:541
 msgid "Inverting a transformation matrix"
 msgstr "求逆变换矩阵"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:543
 msgid ""
 "The \"affine_inverse\" function returns a transform that \"undoes\" the "
 "previous transform. This can be useful in some situations, but it's easier "
@@ -712,23 +625,19 @@ msgstr ""
 "\"affine_inverse\" 函数返回一个 \"撤销\" 前一个转换的转换. 这在某些情况下可能"
 "很有用, 但只提供几个示例会更容易."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:547
 msgid ""
 "Multiplying an inverse transform by the normal transform undoes all "
 "transformations:"
 msgstr "将反变换乘以法线变换将撤消所有变换:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:563
 msgid ""
 "Transforming a position by a transform and its inverse results in the same "
 "position (same for \"xform_inv\"):"
 msgstr "通过转换转换位置及其反转会导致相同的位置(与 \"xform_inv\" 相同):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:582
 msgid "How does it all work in 3D?"
 msgstr "这一切是如何在3D模式下工作的？"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:584
 msgid ""
 "One of the great things about transformation matrices is that they work very "
 "similarly between 2D and 3D transformations. All the code and formulas used "
@@ -742,7 +651,6 @@ msgstr ""
 "个轴的类型为 :ref:`CLASS_Vector3`, 并且Godot将 :ref:`CLASS_Basis` 与 :ref:"
 "`CLASS_Transform` 分开存储, 因为数学运算可能会很复杂, 因此将其分开是有意义的."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:592
 msgid ""
 "All of the concepts for how translation, rotation, scale, and shearing work "
 "in 3D are all the same compared to 2D. To scale, we take each component and "
@@ -754,7 +662,6 @@ msgstr ""
 "的. 要缩放, 我们取每个分量并将其相乘；要旋转, 我们更改每个基向量指向的位置；"
 "要平移, 我们操纵原点；要剪切, 我们将基向量更改为不垂直."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:600
 msgid ""
 "If you would like, it's a good idea to play around with transforms to get an "
 "understanding of how they work. Godot allows you to edit 3D transform "
@@ -765,10 +672,9 @@ msgid ""
 msgstr ""
 "如果您愿意, 最好尝试一下转换, 以了解它们是如何工作的. Godot 允许您直接从检查"
 "器编辑 3D 变换矩阵. 您可以下载此项目, 其中包含彩色线条和立方体, 以帮助在 2D "
-"和 3D 中可视化 :ref:`class_Basis` 矢量和原点: https://github.com/godotengine/"
+"和 3D 中可视化 :ref:`class_Basis` 向量和原点: https://github.com/godotengine/"
 "godot-demo-projects/tree/master/misc/matrix_transform"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:607
 msgid ""
 "Spatial's \"Matrix\" section in Godot 3.2's inspector displays the matrix as "
 "transposed, with the columns horizontal and the rows vertical. This may be "
@@ -777,7 +683,6 @@ msgstr ""
 "在Godo3.2的检查器中,Spatial的 \"Matrix\" 部分显示矩阵是颠倒的, 列是水平的, 行"
 "是垂直的. 这一点可能会在Godot的未来版本中进行更改, 使其不那么令人困惑."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:612
 msgid ""
 "You cannot edit Node2D's transform matrix directly in Godot 3.2's inspector. "
 "This may be changed in a future release of Godot."
@@ -785,7 +690,6 @@ msgstr ""
 "不能在Godot 3.2的检查器中直接编辑Node2D的变换矩阵. 在Godot的未来版本中, 这一"
 "点可能会有所改变."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:615
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about 3D linear transformations: https://www.youtube.com/"
@@ -794,18 +698,15 @@ msgstr ""
 "如果你想要更多的解释, 你可以查看3Blue1Brown关于3D线性变换的精彩视频: https://"
 "www.bilibili.com/video/BV1ys411472E?p=6"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:620
 msgid "Representing rotation in 3D (advanced)"
 msgstr "表示3D中的旋转(高级)"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:622
 msgid ""
 "The biggest difference between 2D and 3D transformation matrices is how you "
 "represent rotation by itself without the basis vectors."
 msgstr ""
 "2D和3D变换矩阵之间最大的区别在于您如何在没有基础向量的情况下自行表示旋转."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:625
 msgid ""
 "With 2D, we have an easy way (atan2) to switch between a transformation "
 "matrix and an angle. In 3D, we can't simply represent rotation as one "
@@ -817,7 +718,6 @@ msgstr ""
 "简单地将旋转表示为一个数字. 有一种叫做欧拉角的东西, 它可以将旋转表示为一组3个"
 "数字, 但它们是有限的, 除了微不足道的情况外, 它们并不是很有用."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:631
 msgid ""
 "In 3D we do not typically use angles, we either use a transformation basis "
 "(used pretty much everywhere in Godot), or we use quaternions. Godot can "
@@ -829,7 +729,6 @@ msgstr ""
 "使用四元数.Godot可以使用 :ref:`class_Quat` 结构表示四元数. 我给你的建议是完全"
 "忽略它们是如何在幕后工作的, 因为它们非常复杂和不直观."
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:637
 msgid ""
 "However, if you really must know how it works, here are some great "
 "resources, which you can follow in order:"
@@ -837,14 +736,11 @@ msgstr ""
 "然而, 如果你真的想知道它是如何工作的, 这里有一些很棒的参考资料, 你可以按顺序"
 "跟随它们:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 msgstr "https://www.bilibili.com/video/BV1fx41187tZ"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 msgstr "https://www.bilibili.com/video/BV1SW411y7W1"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
 msgstr "https://eater.net/quaternions"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:4
 msgid "Code::Blocks"
 msgstr "Code::Blocks"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:6
 msgid ""
 "`Code::Blocks <https://codeblocks.org/>`_ is a free, open source, cross "
 "platform IDE."
-msgstr "`Code::Blocks <https://codeblocks.org/>`_ 是一款免费开源且跨平台的IDE."
+msgstr ""
+"`Code::Blocks <https://codeblocks.org/>`_ 是一款免费开源且跨平台的 IDE。"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:9
 msgid "Creating a new project"
 msgstr "创建一个新项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:11
 msgid ""
 "From Code::Blocks' main screen, click **Create a new project** or select "
 "**File > New > Project...**."
 msgstr ""
-"在 Code::Blocks 的主界面, 点击 **创建一个新的项目** 或选择 **文件 > 新建 > 项"
-"目...** ."
+"在 Code::Blocks 的主界面，点击\\ **创建新项目**\\ 或选择\\ **文件 > 新建 > 项"
+"目...**\\ 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:17
 msgid ""
 "In the **New from template** window, from **Projects**, select **Empty "
 "project**, and click **Go**."
@@ -47,11 +43,9 @@ msgstr ""
 "打开 **新建模板(New from template)** 窗口中, 从 **项目(Projects)** 中, 选择 "
 "**空项目(Empty project)** , 然后点击 **前往(Go)** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:23
 msgid "Click Next, to pass the welcome to the new empty project wizard."
 msgstr "单击 \"下一步\", 将欢迎传递到新的空项目向导中."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:29
 msgid ""
 "The project file should be created in the root of the cloned project folder. "
 "To achieve this, first, ensure that the **Project title** is the same as the "
@@ -62,7 +56,6 @@ msgstr ""
 "标题** 与Godot被克隆到的文件夹名称相同. 除非你将项目克隆到一个不同名称的文件"
 "夹中, 否则将是 ``godot`` ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:31
 msgid ""
 "Second, ensure that the **Folder to create project in** is the folder you "
 "ran the Git clone command from, not the ``godot`` project folder. Confirm "
@@ -73,7 +66,6 @@ msgstr ""
 "``godot`` 项目文件夹. 确认 **结果文件名** 字段将在克隆的项目文件夹的根目录下"
 "创建项目文件."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:37
 msgid ""
 "The compiler and configuration settings are managed through **SCons** and "
 "will be configured later. However, it's worth deselecting the **Create "
@@ -84,29 +76,24 @@ msgstr ""
 "**Create \"Release\" 配置** 选项；因此在点击 **Finish** 之前, 只创建一个构建"
 "目标."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:44
 msgid "Configuring the build"
 msgstr "配置构建"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:46
 msgid ""
 "The first step is to change the project properties. Right-click on the new "
 "project and select **Properties...**."
 msgstr "第一步是更改项目属性. 右击新项目, 选择 **属性...** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:52
 msgid ""
 "Check the **This is a custom Makefile** property. Click OK to save the "
 "changes."
 msgstr "勾选 **This is a custom Makefile** 属性. 单击 \"确定\" 保存更改."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:58
 msgid ""
 "The next step is to change the build options. Right-click on the new project "
 "and select **Build Options...**."
 msgstr "下一步是更改构建选项. 右键点击新项目, 选择 **构建选项...** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:64
 msgid ""
 "Select the **\"Make\" commands** tab and remove all the existing commands "
 "for all the build targets. For each build target enter the **SCons** command "
@@ -122,7 +109,6 @@ msgstr ""
 "`doc_introduction_to_the_buildsystem` . 将 **Clean project/target** 字段中的 "
 "``scons --clean`` 命令添加到项目的默认命令中也很有用."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:66
 msgid ""
 "If you're using Windows, all the commands need to be preceded with ``cmd /"
 "c`` to iniitalize the command interpreter."
@@ -130,23 +116,19 @@ msgstr ""
 "如果你使用的是Windows, 所有的命令都需要在前面加上 ``cmd /c`` 来启动命令解释"
 "器."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
 msgid "Windows example:"
 msgstr "Windows示例:"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
 "Code::Blocks should now be configured to build Godot; so either select "
 "**Build > Build**, click the gear button, or press :kbd:`Ctrl + F9`."
 msgstr ""
-"Code::Blocks现在应该被配置为构建Godot；所以选择 **Build > Build** , 点击齿轮"
-"按钮, 或者按 :kbd:`Ctrl + F9`."
+"Code::Blocks 现在应该被配置为构建 Godot；所以选择 **Build > Build**\\ ，点击"
+"齿轮按钮，或者按 :kbd:`Ctrl + F9`\\ 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:85
 msgid "Configuring the run"
 msgstr "配置运行"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:87
 msgid ""
 "Once **SCons** has successfully built the desired target, reopen the project "
 "**Properties...** and select the **Build targets** tab. In the **Output "
@@ -156,7 +138,6 @@ msgstr ""
 "**Build targets** 选项卡. 在 **输出文件名** 字段, 浏览到 ``bin`` 文件夹, 选择"
 "编译文件."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:89
 msgid ""
 "Deselect the **Auto-generate filename prefix** and **Auto-generate filename "
 "extension** options."
@@ -164,16 +145,14 @@ msgstr ""
 "取消这 **Auto-generate filename prefix** and *[自动生成文件名前缀]*Auto-"
 "generate filename extension*[自动生成文件名扩展名* 选项."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:95
 msgid ""
 "Code::Blocks should now be configured to run your compiled Godot executable; "
 "so either select **Build > Run**, click the green arrow button, or press :"
 "kbd:`Ctrl + F10`."
 msgstr ""
-"Code::Blocks现在应该被配置为运行你的编译后的Godot可执行文件；所以选择 "
-"**Build > Run** , 点击绿色箭头按钮, 或者按 :kbd:`Ctrl + F10`."
+"Code::Blocks 现在应该被配置为运行你的编译后的 Godot 可执行文件；所以选择 "
+"**Build > Run**\\ ，点击绿色箭头按钮，或者按 :kbd:`Ctrl + F10`\\ 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:97
 msgid ""
 "There are two additional points worth noting. First, if required, the "
 "**Execution working dir** field can be used to test specific projects, by "
@@ -185,18 +164,15 @@ msgstr ""
 "定项目, 将其设置为包含 ``project.godot`` 文件的文件夹. 其次, **Build "
 "targets** 选项卡可用于添加和删除构建目标, 以便使用和创建不同的构建."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
 msgid "Adding files to the project"
 msgstr "将文件添加到项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
 "To add all the Godot code files to the project, right-click on the new "
 "project and select **Add files recursively...**."
 msgstr ""
 "要将所有Godot代码文件添加到项目中, 右击新项目, 选择 **递归添加文件...** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:108
 msgid ""
 "It should automatically select the project folder; so simply click **Open**. "
 "By default, all code files are included, so simply click **OK**."
@@ -204,11 +180,9 @@ msgstr ""
 "它应该会自动选择项目文件夹;所以单击 **打开** . 默认情况下, 所有的代码文件都已"
 "被包含在内, 所以只需单击 **确定** 即可."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:115
 msgid "Code style configuration"
 msgstr "代码风格配置"
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:117
 msgid ""
 "Before editing any files, remember that all code needs to comply with the :"
 "ref:`doc_code_style_guidelines`. One important difference with Godot is the "
@@ -221,7 +195,6 @@ msgstr ""
 "此, 需要启用Code::Blocks编辑器设置中的tab缩进. 该设置可以在 **Settings > "
 "Editor** 中找到."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:123
 msgid ""
 "Under **General Settings**, on the **Editor Settings** tab, under **Tab "
 "Options** check **Use TAB character**."
@@ -229,7 +202,6 @@ msgstr ""
 "在 **General Settings(常规设置)** --> **Editor Settings(编辑器设置)** --> "
 "**tab选项** 下单击 **Use TAB character(使用TAB字符)** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:129
 msgid ""
 "That's it. You're ready to start contributing to Godot using the Code::"
 "Blocks IDE. Remember to save the project file and the **Workspace**. If you "

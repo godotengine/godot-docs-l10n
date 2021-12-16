@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:4
 msgid "Docs writing guidelines"
 msgstr "ドキュメント作成ガイドライン"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:6
 msgid ""
 "The Godot community is rich and international. Users come from all around "
 "the world. Some of them are young, and many aren't native English speakers. "
@@ -34,30 +32,21 @@ msgstr ""
 "言語を使って書かなければならないのです。クラス参照の場合、目標は、すべての人"
 "にとって読みやすく、正確に読みやすくすることです。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:12
 msgid "In summary, always try to:"
 msgstr "要約すると、常に次のように努めます:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:14
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:39
 msgid "Use the direct voice"
 msgstr "直接的な表現を使用する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:15
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:74
 msgid "Use precise action verbs"
 msgstr "正確なアクション動詞を使用する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:16
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:96
 msgid "Avoid verbs that end in -ing"
 msgstr "「-ing」で終わる動詞は避けてください"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:17
 msgid "Remove unnecessary adverbs and adjectives."
 msgstr "不要な副詞や形容詞を削除します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:18
 msgid ""
 "Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
 "however"
@@ -65,40 +54,27 @@ msgstr ""
 "これらの8つの単語を禁止: 明白な、シンプル、基本的な、簡単、実際、ちょうど、明"
 "確、および"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:19
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:214
 msgid "Use explicit references"
 msgstr "明示的な参照を使用する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:20
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:235
 msgid "Use 's to show possession"
 msgstr "「's」を使用して所有物を表示する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:21
 msgid "Use the Oxford comma"
 msgstr "オックスフォードコンマを使用する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:23
 msgid "There are 3 rules to describe classes:"
 msgstr "クラスを記述する3つのルールがあります:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:25
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:372
 msgid "Give an overview of the node in the brief description"
 msgstr "簡単な説明でノードの概要を説明する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:26
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:401
 msgid "Mention what methods return if it's useful"
 msgstr "役に立つ場合に返すメソッドについて言及する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:27
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:426
 msgid "Use \"if true\" to describe booleans"
 msgstr "「if true」を使用してブール値を記述する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:31
 msgid ""
 "A technical writer's job is to pack as much information as possible into the "
 "smallest and clearest sentences possible. These guidelines will help you "
@@ -108,11 +84,14 @@ msgstr ""
 "な文章に詰め込むことです。これらのガイドラインは、その目標に向かって取り組む"
 "のに役立ちます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:36
+msgid ""
+"See the :ref:`content guidelines <doc_content_guidelines>` for information "
+"on the types of documentation you can write in the official documentation."
+msgstr ""
+
 msgid "7 rules for clear English"
 msgstr "明確な英語のためのルール７つ"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:41
 msgid ""
 "Use the direct voice when possible. Take the classes, methods, and constants "
 "you describe as the subject. It's natural to write using the passive voice, "
@@ -122,24 +101,18 @@ msgstr ""
 "主題として取り上げます。 受動態を使用して書くのは自然ですが、読みにくく、長い"
 "文章を作成します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:47
 msgid "Passive:"
 msgstr "受動態:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:53
 msgid "Active:"
 msgstr "能動態:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:59
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:407
 msgid "**Don't** use the passive voice:"
 msgstr "受動態を\\ **使用しないでください** \\:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:66
 msgid "**Do** use the node's name as a noun:"
 msgstr "ノードの名前を名詞として\\ **使用してください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:76
 msgid ""
 "Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
 "any expression you can replace with a single word."
@@ -147,7 +120,6 @@ msgstr ""
 "``make`` や ``set`` などの一般的な動詞や、1 つの単語で置き換えることができる"
 "式よりも、正確で一般的な動詞を優先します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:79
 msgid ""
 "**Don't** repeat the method's name. It already states it sets the pivot "
 "value to a new one:"
@@ -155,7 +127,6 @@ msgstr ""
 "メソッドの名前を\\ **繰り返さないで下さい**\\ 。ピボット値を新しいピボット値"
 "に設定済みと指定しています:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:87
 msgid ""
 "**Do** explain what's the consequence of this \"set\": use precise verbs "
 "like ``place``, ``position``, ``rotate``, ``fade``, etc."
@@ -163,7 +134,6 @@ msgstr ""
 "この「セット」の結果について説明してください。 ``place`` 、 ``position`` 、 "
 "``rotate`` 、 ``fade`` などの正確な動詞を使用します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:98
 msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
@@ -171,22 +141,19 @@ msgstr ""
 "進行形は、連続的なアクションを記述します。例えば「呼び出し中」、「移動中」な"
 "どです。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
 msgstr "すぐにされる変更には進行形を\\ **使用しないでください**\\ 。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:108
-msgid "**Do** use simple present, preterit or future."
+#, fuzzy
+msgid "**Do** use simple present, past, or future."
 msgstr "単純な現在形、過去分詞形、または未来を\\ **使用してください**\\ 。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:115
 msgid ""
 "Exception: If the subject is not clear, replacing \"ing\" verbs is not an "
 "improvement. For example, in the previous sentence, \"it replaces\" would "
 "not make much sense where \"replacing\" currently is."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:119
 msgid ""
 "You may use the progressive tense to describe actions that are continuous in "
 "time. Anything like animation or coroutines."
@@ -194,7 +161,6 @@ msgstr ""
 "進行時制を使用して、時間的に連続するアクションを記述することができます。 アニ"
 "メーションやコルーチンなど。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:124
 msgid ""
 "Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
 "so you may use them: ``the remaining movement``, ``the missing file``, etc."
@@ -202,11 +168,9 @@ msgstr ""
 "動詞は-ingで形容詞的名詞になります。これは活用ではないので、 ``the remaining "
 "movement`` 、 ``the missing file`` などのように使用できます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:129
 msgid "Remove unnecessary adverbs and adjectives"
 msgstr "不要な副詞や形容詞を削除する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:131
 msgid ""
 "Write as few adjectives and adverbs as possible. Only use them if they add "
 "key information to the description."
@@ -214,7 +178,6 @@ msgstr ""
 "形容詞や副詞をできるだけ少なく書いてください。説明に重要な情報を追加する場合"
 "にのみ使用してください。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:134
 msgid ""
 "**Don't** use redundant or meaningless adverbs. Words that lengthen the "
 "documentation but don't add any information:"
@@ -222,51 +185,39 @@ msgstr ""
 "冗長または無意味な副詞を\\ **使用しないでください**\\ 。ドキュメントを長くす"
 "るが、情報を追加しない単語:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:141
 msgid "**Do** write short sentences in a simple, descriptive language:"
 msgstr "簡単で説明的な言語で短い文章を\\ **書いて下さい**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:148
 msgid "Ban these 8 words"
 msgstr "これらの8つの単語を禁止"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:150
 msgid "**Don't** ever use these 8 banned words:"
 msgstr "これらの8つの禁止単語を\\ **使用しないでください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:152
 msgid "obvious"
 msgstr "明らかな"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:153
 msgid "simple"
 msgstr "シンプルな"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:154
 msgid "basic"
 msgstr "基本的な"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:155
 msgid "easy"
 msgstr "簡単な"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:156
 msgid "actual"
 msgstr "実際の"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:157
 msgid "just"
 msgstr "ちょうどの"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:158
 msgid "clear"
 msgstr "はっきりとした"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:159
 msgid "however (some uses)"
 msgstr "しかし(一部の用途)"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:161
 msgid ""
 "Game creation and programming aren't simple, and nothing's easy to someone "
 "learning to use the API for the first time. Other words in the list, like "
@@ -279,7 +230,6 @@ msgstr ""
 "``actual`` など)は、文章に情報を追加しません。対応する副詞も使用しないでくだ"
 "さい:明らかに、基本的に、簡単に、実際には、はっきりと。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:167
 msgid ""
 "**Don't** example. The banned words lengthen the description and take "
 "attention away from the most important info:"
@@ -287,11 +237,9 @@ msgstr ""
 "例を\\ **挙げないでください**\\ 。 禁止された言葉は説明を長くし、最も重要な情"
 "報から注意をそらします:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:175
 msgid "**Do** remove them:"
 msgstr "それら\\ **を削除します**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:182
 msgid ""
 "\"Simple\" never helps. Remember, for other users, anything could be complex "
 "or frustrate them. There's nothing like a good old *it's simple* to make you "
@@ -302,24 +250,19 @@ msgstr ""
 "イラするものがあります。 古き良き時代のようなものはありません。 古い簡単な説"
 "明は、タイマーノードのページの最初の文です:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:192
 msgid "**Do** explain what the node does instead:"
 msgstr "ノードが代わりに何を行うかを\\ **説明してください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:199
 msgid "**Don't** use \"basic\", it is too vague:"
 msgstr ""
 "「基本」を\\ **使用しないでください**\\ 、それはあまりにもあいまいです:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:206
 msgid "**Do** use the brief description to offer an overview of the node:"
 msgstr "簡単な説明を使用して、ノードの概要を\\ **説明してください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:216
 msgid "Favor explicit references over implicit ones."
 msgstr "暗黙的な参照よりも明示的な参照を優先します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:218
 msgid ""
 "**Don't** use words like \"the former\", \"the latter\", etc. They're not "
 "the most common in English, and they require you to check the reference."
@@ -327,12 +270,10 @@ msgstr ""
 "「前者」、「後者」などの言葉を\\ **使用しないでください**\\ 。これらは英語で"
 "は最も一般的ではなく、リファレンスを確認する必要があります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:225
 msgid "**Do** repeat words. They remove all ambiguity:"
 msgstr ""
 "言葉を\\ **繰り返してください**\\ 。 それらはすべての曖昧さを取り除きます:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:231
 msgid ""
 "If you need to repeat the same variable name 3 or 4 times, you probably need "
 "to rephrase your description."
@@ -340,7 +281,6 @@ msgstr ""
 "同じ変数名を3回または4回繰り返す必要がある場合は、説明を書き換える必要があり"
 "ます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:237
 msgid ""
 "Avoid \"The milk **of** the cow\". It feels unnatural in English. Write "
 "\"The cow's milk\" instead."
@@ -348,11 +288,9 @@ msgstr ""
 "「The milk **of** the cow」を避けてください。 英語では不自然に感じます。 代わ"
 "りに「The cow's milk」と書いてください。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:240
 msgid "**Don't** write \"of the X\":"
 msgstr "「of the X」とは\\ **書かないでください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:246
 msgid ""
 "**Do** use ``'s``. It lets you put the main subject at the start of the "
 "sentence, and keep it short:"
@@ -360,15 +298,12 @@ msgstr ""
 "所有格の ``'s`` を\\ **使用してください**\\ 。文の先頭に主語を置き、短くする"
 "ことができます:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:254
 msgid "Use the Oxford comma to enumerate anything"
 msgstr "オックスフォードコンマを使用して何かを列挙する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:256
 msgid "From the Oxford dictionary:"
 msgstr "オックスフォード辞書から:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:258
 msgid ""
 "The 'Oxford comma' is an optional comma before the word 'and' at the end of "
 "a list: *We sell books, videos, and magazines.*"
@@ -376,7 +311,6 @@ msgstr ""
 "「オックスフォードコンマ」は、リストの最後にある「and」という語の前にあるオプ"
 "ションのコンマです。\\ *書籍、ビデオ、雑誌を販売しています。*"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:261
 msgid ""
 "[...] Not all writers and publishers use it, but it can clarify the meaning "
 "of a sentence when the items in a list are not single words: *These items "
@@ -386,11 +320,9 @@ msgstr ""
 "単一の単語ではない場合、文章の意味を明確にすることができます:\\ *これらの項目"
 "は白黒、赤と黄色、青と緑で利用できます。*"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:264
 msgid "**Don't** leave the last element of a list without a comma:"
 msgstr "コンマなしでリストの最後の要素を\\ **残さないでください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:270
 msgid ""
 "**Do** add a comma before `and` or `or`, for the last element of a list with "
 "more than two elements."
@@ -398,15 +330,12 @@ msgstr ""
 "2つ以上の要素を持つリストの最後の要素に `and` または `or` の前にコンマを\\ **"
 "追加してください**\\ 。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:279
 msgid "How to write methods and classes"
 msgstr "メソッドとクラスの記述方法"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:282
 msgid "Dynamic vs static typing"
 msgstr "動的な型指定と静的な型指定"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:284
 msgid ""
 "The code examples in the documentation should follow a consistent style not "
 "to confuse users. As static type hints are an optional feature of GDScript, "
@@ -418,34 +347,27 @@ msgstr ""
 "の記述に固執することにしました。これにより、簡潔でアクセス可能なGDScriptを作"
 "成できます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:289
 msgid "The exception is topics that explain static typing concepts to users."
 msgstr "例外は、静的型付けの概念をユーザーに説明するトピックです。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:291
 msgid "**Don't** add a type hint with a colon or by casting:"
 msgstr ""
 "型ヒントを、コロンで追加したりキャストしたり\\ **しないで**\\ ください:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:301
 #, fuzzy
 msgid "**Do** write constants and variables with dynamic typing:"
 msgstr "動的型付けを\\ **使用して**\\ 定数変数を記述します:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:311
 msgid "**Don't** write functions with inferred arguments or return types:"
 msgstr ""
 "推論された引数または戻り値の型を持つ関数を記述\\ **しない**\\ でください:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:322
 msgid "**Do** write functions using dynamic typing:"
 msgstr "動的型付けを使用して関数を作成\\ **する**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:334
 msgid "Use real-world code examples where appropriate"
 msgstr "必要に応じて、実際のコード例を使用します"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:336
 msgid ""
 "Real-world examples are more accessible to beginners than abstract ``foos`` "
 "and ``bars``. You can also copy them directly from your game projects, "
@@ -455,7 +377,6 @@ msgstr ""
 "しやすいです。また、ゲームプロジェクトから直接コピーして、コードスニペットが"
 "エラーなしでコンパイルされるようにすることもできます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid ""
 "Writing ``var speed = 10`` rather than ``var my_var = 10`` allows beginners "
 "to understand code better. It gives them a frame of reference as to where "
@@ -465,15 +386,12 @@ msgstr ""
 "りよく理解できます。ライブプロジェクトでコードスニペットを使用できる場所に関"
 "する参照フレームを提供します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:344
 msgid "**Don't** write made-up examples:"
 msgstr "作成例を書か\\ **ない**\\ でください:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:355
 msgid "**Do** write concrete examples:"
 msgstr "具体的な例を書き\\ **ます**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:367
 msgid ""
 "Of course, there are times when using real-world examples is impractical. In "
 "those situations, you should still avoid using names such as ``my_var``, "
@@ -484,7 +402,6 @@ msgstr ""
 "は、\\ ``my_var``\\ 、\\ ``foo() ``\\ 、または ``my_func()`` などの名前の使用"
 "を避け、例にとってより意味のある名前を検討する必要があります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:374
 msgid ""
 "The brief description is the reference's most important sentence. It's the "
 "user's first contact with a node:"
@@ -492,37 +409,30 @@ msgstr ""
 "簡単な説明は、参照の最も重要な文です。これは、ユーザーがノードと最初に接触し"
 "た場合です:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:377
 msgid "It's the only description in the \"Create New Node\" dialog."
 msgstr "これは、「新しいノードを作成」ダイアログボックスの唯一の説明です。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:378
 msgid "It's at the top of every page in the reference"
 msgstr "参照内のすべてのページの一番上に表示されます"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:380
 msgid ""
 "The brief description should explain the node's role and its functionality, "
 "in up to 200 characters."
 msgstr ""
 "簡単な説明では、ノードの役割とその機能を最大200文字で説明する必要があります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:383
 msgid "**Don't** write tiny and vague summaries:"
 msgstr "小さくてあいまいな要約を\\ **書かないで下さい**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:390
 msgid "**Do** give an overview of the node's functionality:"
 msgstr "ノードの機能の概要を\\ **説明してください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:397
 msgid ""
 "Use the node's full description to provide more information, and a code "
 "example, if possible."
 msgstr ""
 "ノードの完全な説明を使用して、詳細情報とコード例を提供します(可能であれば)。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:403
 msgid ""
 "Some methods return important values. Describe them at the end of the "
 "description, ideally on a new line. No need to mention the return values for "
@@ -532,11 +442,9 @@ msgstr ""
 "説明します。名前が ``set`` または ``get`` で始まるメソッドの戻り値を言及する"
 "必要はありません。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:414
 msgid "**Do** always use \"Returns\"."
 msgstr "常に「Returns」を\\ **使用してください**\\ 。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:421
 msgid ""
 "Notice the exception to the \"direct voice\" rule: with the move method, an "
 "external collider can influence the method and the body that calls ``move``. "
@@ -546,7 +454,6 @@ msgstr ""
 "イダがメソッドと ``move`` を呼び出す本文に影響を与える可能性があります。この"
 "場合、受動態を使用できます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:428
 msgid ""
 "For boolean member variables, always use ``if true`` and/or ``if false``, to "
 "stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
@@ -556,7 +463,6 @@ msgstr ""
 "用して明示的にしてください。 「コントロールするかどうか」はあいまいである可能"
 "性があり、すべてのメンバー変数に対して機能しません。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:432
 #, fuzzy
 msgid ""
 "Also, surround boolean values, variable names and methods with ``[code][/"
@@ -564,15 +470,12 @@ msgid ""
 msgstr ""
 "また、ブール値、変数名、およびメソッドを ``[code][/code]`` で囲みます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:434
 msgid "**Do** start with \"if true\":"
 msgstr "\"if true\" から\\ **始めてください**\\ :"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:443
 msgid "Use ``[code]`` around arguments"
 msgstr "引数の周りに ``[code]`` を使用する"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:445
 msgid ""
 "In the class reference, always surround arguments with ``[code][/code]``. In "
 "the documentation and in Godot, it will display like ``this``. When you edit "
@@ -584,11 +487,9 @@ msgstr ""
 "ときは、\\ 'this' や \\`this\\` などの既存の引数を ``[code]this[/code]`` に置"
 "き換えます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:452
 msgid "Common vocabulary to use in Godot's documentation"
 msgstr "Godotのドキュメントで使用する一般的な語彙"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:454
 msgid ""
 "The developers chose some specific words to refer to areas of the interface. "
 "They're used in the sources, in the documentation, and you should always use "
@@ -598,11 +499,9 @@ msgstr ""
 "スやドキュメントで使用されており、同義語の代わりに常に使用する必要がありま"
 "す。そうすれば、ユーザーはあなたが何を話しているのかを知ることができます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:462
 msgid "Overview of the interface and common vocabulary"
 msgstr "インターフェイスと一般的な語彙の概要"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:464
 msgid ""
 "In the top left corner of the editor lie the ``main menus``. In the center, "
 "the buttons change the ``workspace``. And together the buttons in the top "
@@ -615,7 +514,6 @@ msgstr ""
 "間を表示する中央の領域は ``viewport`` です。上部には、 ``toolbar`` 内の "
 "``tools`` のリストがあります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:470
 msgid ""
 "The tabs or dockable panels on either side of the viewport are ``docks``. "
 "You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
@@ -629,7 +527,6 @@ msgstr ""
 "す。 デフォルトのレイアウトでは、タブ付きドックを ``tabs`` と呼ぶことができま"
 "す: ``Scene tab`` 、 ``Node tab`` ..."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:476
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
@@ -637,7 +534,6 @@ msgstr ""
 "ビューポートの下部にあるアニメーション、デバッガなどは ``panels``です。彼らは"
 "一緒に ``bottom panels`` を構成します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:479
 msgid ""
 "Foldable areas of the Inspector are ``sections``. The node's parent class "
 "names, which you can't fold, are ``Classes`` e.g. the ``KinematicBody2D "
@@ -649,11 +545,9 @@ msgstr ""
 "また、キーと値のペアを持つ個々の行は ``properties`` です。例えば "
 "``position`` や ``modulate color`` はどちらも ``properties`` です。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:486
 msgid "Keyboard shortcut guidelines"
 msgstr "キーボードショートカットのガイドライン"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:488
 msgid ""
 "Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which "
 "allows shortcuts to stand out from the rest of the text and inline code. Use "
@@ -667,7 +561,6 @@ msgstr ""
 "kbd:`Control`/:kbd:`Command`)ではなく、コンパクトキーを使用します。組み合わせ"
 "の場合は、シンボルの両側にスペースがある ``+`` シンボルを使用します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:494
 msgid ""
 "Make sure to mention shortcuts that differ on macOS compared to other "
 "platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
@@ -676,7 +569,6 @@ msgstr ""
 "さい。macOSでは、キーボードショートカットの ``Ctrl`` が ``Cmd`` に置き換えら"
 "れることがよくあります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:497
 msgid ""
 "Try to integrate the shortcut into sentences the best you can. Here are some "
 "examples with the ``:kbd:`` tag left as-is for better visibility:"
@@ -684,7 +576,6 @@ msgstr ""
 "ショートカットを可能な限り文章に組み込むようにしてください。わかりやすくする"
 "ために ``:kbd:`` タグをそのまま残した例をいくつか示します:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:500
 msgid ""
 "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
 "T``` on macOS)."
@@ -692,7 +583,6 @@ msgstr ""
 "``:kbd:`Ctrl + Alt + T``` を押してパネルを切り替えます(macOSでは ``:kbd:`Cmd "
 "+ Alt + T```)。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:501
 msgid ""
 "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
 "editor."
@@ -700,15 +590,12 @@ msgstr ""
 "``:kbd:`Space``` を押し、マウスの左ボタンを押したままにして2Dエディタでパンし"
 "ます。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:502
 msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
 msgstr "``:kbd:`Shift + 上矢印``` を押して、ノードを8ピクセル上に移動します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:505
 msgid "Image contribution guidelines"
 msgstr "画像投稿ガイドライン"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:507
 msgid ""
 "A significant part of the documentation is images, and there are several "
 "important guidelines to follow."
@@ -716,7 +603,6 @@ msgstr ""
 "ドキュメントの重要な部分はイメージであり、いくつかの重要なガイドラインに従う"
 "必要があります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:510
 msgid ""
 "First, you should always be using the default editor theme and text when "
 "taking screenshots."
@@ -724,7 +610,6 @@ msgstr ""
 "まず、スクリーンショットを撮るときは、常にデフォルトのエディタテーマとテキス"
 "トを使用する必要があります。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:513
 #, fuzzy
 msgid ""
 "To improve the appearance of 3D screenshots, use 4× MSAA, enable anisotropic "
@@ -735,7 +620,6 @@ msgstr ""
 "スチャで異方性フィルタリングを有効にし、プロジェクト設定で異方性フィルタの品"
 "質を16×に設定します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:517
 msgid ""
 "Screenshot sizes should not exceed 1920×1080 to ensure fast loading on "
 "slower connections."
@@ -743,7 +627,6 @@ msgstr ""
 "低速な接続でも高速にロードできるように、スクリーンショットのサイズは1920×1080"
 "を超えないようにしてください。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:520
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel-thick yellow outline without a bevel. If the "
@@ -752,7 +635,6 @@ msgid ""
 "visible for some users."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:526
 #, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
@@ -768,7 +650,6 @@ msgstr ""
 "縮中に画像品質がほとんど失われない `pngquant <https://pngquant.org/>`_ などの"
 "損失の多いコンプレッサーの使用も検討してください。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:535
 msgid ""
 "The program pngquant must be installed locally as it's not available in "
 "Squoosh."

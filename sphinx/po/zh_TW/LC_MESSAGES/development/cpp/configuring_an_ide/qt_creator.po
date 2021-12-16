@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
 msgid "Qt Creator"
 msgstr "\\ Qt Creator"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
 msgid ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
 "source IDE for all desktop platforms."
@@ -29,11 +27,9 @@ msgstr ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ 是免費且可用於所有桌面"
 "平台的開放原始碼 IDE。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
 msgid "Importing the project"
 msgstr "匯入專案"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
 msgid ""
 "From the Qt Creator's main screen select **New Project > Import Project > "
 "Import Existing Project**."
@@ -41,11 +37,9 @@ msgstr ""
 "在 Qt Creator 的主畫面中選擇 **New Project > Import Project > Import "
 "Existing Project** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
 msgid "Under **Location** select the Godot root folder."
 msgstr "在 **Location** 中，選擇 Godot 的根目錄。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 msgid ""
 "Next, you can choose which folders and files will be visible to the project. "
 "While C/C++ files are added automatically, other extensions can be "
@@ -57,17 +51,14 @@ msgstr ""
 "可以新增其他有用的副檔名，如： 著色器檔案 ``*.glsl`` 、建置系統檔案 ``*."
 "py`` 、用於 Android 平台開發的 ``*.java`` 、用於 macOS 平台開發的 ``*.mm`` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
 msgid ""
 "You can change this configuration later by right-clicking on your project "
 "and selecting the **Edit Files...** option."
 msgstr "之後還能通過右鍵點擊專案並選擇 **Edit Files...** 選項來更改此一設定。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
 msgid "Finish the import."
 msgstr "完成匯入。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
 msgid ""
 "Open the ``project_name.includes`` file and add a line containing ``.`` to "
 "it to correctly enable the code completion."
@@ -75,15 +66,12 @@ msgstr ""
 "開啟 ``project_name.includes`` 檔案，並新增一行包含 ``.`` 的內容來正確啟用程"
 "式碼補全。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 msgid "From the left-side menu select **Projects** and open the **Build** tab."
 msgstr "在左側選單中選擇 **Projects** 然後開啟 **Build** 分頁。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 msgid "Delete the predefined ``make`` build step."
 msgstr "刪除預設的 ``make`` 建置設定。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
 msgid ""
 "Click **Add Build Step > Custom Process Step** to add a new build step with "
 "the following settings:"
@@ -91,25 +79,20 @@ msgstr ""
 "點擊 **Add Build Step > Custom Process Step** 來新增一個新的建置步驟，並填入"
 "下列設定："
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
 msgstr "指令"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "**scons**"
 msgstr "\\ **scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid "Arguments"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "有關完整的引數列表，請參考 :ref:`doc_introduction_to_the_buildsystem` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
 msgid ""
 "If the build fails with ``Could not start process \"scons\"``, it can mean "
 "that ``scons`` is not in your ``PATH`` environment variable. In this case, "
@@ -119,15 +102,12 @@ msgstr ""
 "``scons`` 不在 ``PATH``環境變數中。這時，則必須要指定 SCons 二進位檔的完整路"
 "徑。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 msgid "Debugging the project"
 msgstr "對專案進行除錯"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
 msgid "From the left-side menu select **Projects** and open the **Run** tab."
 msgstr "在左側選單中選擇 **Projects** 並開啟 **Run** 分頁。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
 msgid ""
 "Under **Executable** specify the path to your executable located in the "
 "``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -140,19 +120,16 @@ msgstr ""
 "``godot.x11.tools.64`` 。可以使用 ``%{buildDir}`` 來參照專案根目錄，如 ``"
 "%{buildDir}/bin/godot.x11.opt.tools.64`` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 msgid ""
 "If you want to run a specific project, specify its root folder under "
 "**Working directory**."
 msgstr "若想執行特定專案，請在 **Working directory** 中指定專案的根目錄。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
 "field."
 msgstr "若想執行編輯器，請將 ``-e`` 新增至 **Command line arguments** 欄位中。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
@@ -160,11 +137,9 @@ msgstr ""
 "更多有關命令行引數的資訊，請參考 :ref:`命令行教學 "
 "<doc_command_line_tutorial>` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
 msgstr "程式碼樣式設定"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and the IDE should help them follow it. By "
@@ -177,7 +152,6 @@ msgstr ""
 "行縮排，這樣的設定於 Godot 的程式碼樣式準則並不相符。可以在 **Tools > "
 "Options > C++** 中修改 **Code Style** 來更改此一行為。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
 "in Code Style** button to set a new code style. Set a name for it (e.g. "
@@ -187,7 +161,6 @@ msgstr ""
 "設定新程式碼樣式。為該樣式設定名稱 (如 Godot) 然後更改 Tab 政策為 **Tabs "
 "Only** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

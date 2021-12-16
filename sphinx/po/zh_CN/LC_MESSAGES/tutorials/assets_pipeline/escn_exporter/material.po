@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Materials"
+msgstr "材质"
+
+msgid "Using existing Godot materials"
+msgstr "使用现有的Godot材质"
+
+msgid ""
+"One way in which the exporter can handle materials is to attempt to match "
+"the Blender material with an existing Godot material. This has the advantage "
+"of being able to use all of the features of Godot's material system, but it "
+"means that you cannot see your model with the material applied inside "
+"Blender."
+msgstr ""
+"导出器处理材质的一种方法, 是尝试将Blender材质与现有的Godot材质进行匹配. 这具"
+"有能够使用Godot材质系统的所有功能的优点, 但这意味着您可以看到模型, 但不附带在"
+"Blender中应用的材质."
+
+msgid ""
+"To do this, the exporter attempts to find Godot materials with names that "
+"match those of the material name in Blender. So if you export an object in "
+"Blender with the material name ``PurpleDots`` then the exporter will search "
+"for the file ``PurpleDots.tres`` and assign it to the object. If this file "
+"is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
+"then the exporter will fall back to exporting the material from Blender."
+msgstr ""
+"为此, 导出器会尝试查找名称与Blender中的材质名称相匹配的Godot材质. 因此, 如果"
+"您在Blender中导出一个对象, 它使用名为 ``PurpleDots`` 的材质, 则导出器将搜索文"
+"件 ``PurpleDots.tres`` 并将其分配给该对象. 如果此文件不是 "
+"``SpatialMaterial`` 或 ``ShaderMaterial`` , 或者如果找不到, 则导出器将退回到"
+"从Blender导出材质."
+
+msgid ""
+"Where the exporter searches for the ``.tres`` file is determined by the "
+"\"Material Search Paths\" option:"
+msgstr "导出器搜索 ``.tres`` 文件的位置由 ``材质搜索路径`` 选项确定:"
+
+msgid "This can take the value of:"
+msgstr "这可以取以下值:"
+
+msgid ""
+"Project Directory - Attempts to find the ``project.Godot`` and recursively "
+"searches through subdirectories. If ``project.Godot`` cannot be found it "
+"will throw an error. This is useful for most projects where naming conflicts "
+"are unlikely."
+msgstr ""
+"项目目录——尝试查找 ``project.Godot`` 并递归搜索子目录. 如果找不到 ``project."
+"Godot`` , 则会抛出错误. 这对于不太可能存在命名冲突的大多数项目非常有用."
+
+msgid ""
+"Export Directory - Look for materials in subdirectories of the export "
+"location. This is useful for projects where you may have duplicate material "
+"names and need more control over what material gets assigned."
+msgstr ""
+"导出目录——在导出位置的子目录中查找材质. 这对于您可能具有重复材质名称并需要更"
+"多控制所分配材质的项目非常有用."
+
+msgid "None - Do not search for materials. Export them from the Blender file."
+msgstr "无——不搜索材质. 从Blender文件中导出它们."
+
+msgid "Export of Cycles/EEVEE materials"
+msgstr "导出Cycles/EEVEE材质"
+
+msgid ""
+"The exporter has a primitive support for converting Cycles/EEVEE material "
+"node tree to Godot Shader Material. Note that some of the Shader Node are "
+"not supported yet due to difficulties in implementation, which are:"
+msgstr ""
+"导出器具有一个基本支持, 可以将Cycles/EEVEE材质节点树转换为Godot着色器材质. 请"
+"注意, 由于实现上的困难, 尚不支持某些着色器节点, 它们是:"
+
+msgid "all the ``noisy textures``"
+msgstr "所有 ``噪声纹理``"
+
+msgid "``generated texture coordinates``"
+msgstr "``生成纹理坐标``"
+
+msgid "``group node``"
+msgstr "``编组节点``"
+
+msgid ""
+"shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
+"``add shader`` and ``mix shader``"
+msgstr ""
+"着色器节点除了 ``条理化BSDF``, ``漫射``, ``光泽度``, ``玻璃``, ``添加着色器"
+"`` 以及 ``混合着色器``"
+
+msgid ""
+"If possible, try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guaranteed to be exactly correct. "
+"Others are just based on approximation."
+msgstr ""
+"如果可能的话, 尽量使用带有GGX分布的PrincipledBSDF节点作为输出着色器节点, 这是"
+"唯一能保证完全正确的节点, 其他的只是基于近似值."
+
+msgid ""
+"Sometimes materials may not be valid for exporting (e.g. has some "
+"unsupported node) or it is using Blender Internal Engine, only the diffuse "
+"color and a few flags (e.g. unshaded) are exported and form a Spatial "
+"Material."
+msgstr ""
+"有时, 材质可能对于导出无效(例如, 具有某些不受支持的节点), 或者使用的是Blender"
+"内置引擎, 仅导出漫反射颜色和一些标记(例如, 无阴影)并形成一个空间材质."
+
+msgid "Generate external materials"
+msgstr "生成外部材质"
+
+msgid ""
+"The default configuration of material exporting would keep all the materials "
+"internal to the ``escn`` file. There is an option which could enable "
+"generating external ``.material`` file when the ``escn`` file opens in Godot."
+msgstr ""
+"材料导出的默认配置会将所有材质保留在 ``escn`` 文件内部. 有一个选项可以确保, "
+"在Godot中打开 ``escn`` 文件时生成外部 ``.material`` 文件."
+
+msgid ""
+"``.material`` file can be assigned to any material slot to be a external "
+"resource."
+msgstr "``.material`` 文件可以分配到任何材料插槽, 以作为一个外部资源."

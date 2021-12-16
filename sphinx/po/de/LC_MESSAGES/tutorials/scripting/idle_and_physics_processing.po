@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Idle and Physics Processing"
+msgstr "Physikprozess"
+
+msgid ""
+"Games run in a loop. Each frame, you need to update the state of your game "
+"world before drawing it on screen. Godot provides two virtual methods in the "
+"Node class to do so: :ref:`Node._process() <class_Node_method__process>` "
+"and :ref:`Node._physics_process() <class_Node_method__physics_process>`. If "
+"you define either or both in a script, the engine will call them "
+"automatically."
+msgstr ""
+
+#, fuzzy
+msgid "There are two types of processing available to you:"
+msgstr "Godot benötigt zwei Arten von Symbolen:"
+
+msgid ""
+"**Idle processing** allows you to run code that updates a node every frame, "
+"as often as possible."
+msgstr ""
+
+msgid ""
+"**Physics processing** happens at a fixed rate, 60 times per second by "
+"default. This is independent of your game's actual framerate, and keeps "
+"physics running smoothly. You should use it for anything that involves the "
+"physics engine, like moving a body that collides with the environment."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can activate idle processing by defining the ``_process()`` method in a "
+"script. You can turn it off and back on by calling :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
+msgstr ""
+"Die Leerlaufverarbeitung wird aktiviert, wenn die Methode :ref:`Node."
+"_process() <class_Node_method__process>` in einem Skript gefunden wird. Sie "
+"kann mit der Funktion :ref:`Node.set_process() "
+"<class_Node_method_set_process>` ein- und ausgeschaltet werden."
+
+msgid "The engine calls this method every time it draws a frame:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Keep in mind that the frequency at which the engine calls ``_process()`` "
+"depends on your application's framerate, which varies over time and across "
+"devices."
+msgstr ""
+"Es ist wichtig im Hinterkopf zu behalten, dass die Häufigkeit in der die "
+"``_process()`` Methode aufgerufen wird, davon abhängt, mit wie vielen "
+"Bildern pro Sekunde (FPS) die Anwendung läuft. Diese Rate kann auf "
+"verschiedenen Geräten oder auch über Zeit variieren."
+
+msgid ""
+"The function's ``delta`` parameter is the time elapsed in seconds since the "
+"previous call to ``_process()``. Use this parameter to make calculations "
+"independent of the framerate. For example, you should always multiply a "
+"speed value by ``delta`` to animate a moving object."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Physics processing works with a similar virtual function: "
+"``_physics_process()``. Use it for calculations that must happen before each "
+"physics step, like moving a character that collides with the game world. As "
+"mentioned above, ``_physics_process()`` runs at fixed time intervals as much "
+"as possible to keep the physics interactions stable. You can change the "
+"interval between physics steps in the Project Settings, under Physics -> "
+"Common -> Physics Fps. By default, it's set to run 60 times per second."
+msgstr ""
+"Die Physikverarbeitung mit ``_physics_process()`` ist ähnlich, sollte jedoch "
+"für Prozesse verwendet werden, die vor jedem physikalischen Schritt "
+"ausgeführt werden müssen, z.B. zum Steuern eines Charakters. Sie läuft immer "
+"vor einem physikalischen Schritt ab und wird in festen Zeitabständen "
+"aufgerufen: standardmäßig 60-mal pro Sekunde. Sie können das Intervall in "
+"den Projekteinstellungen unter Physik -> Allgemein -> Physik Fps ändern."
+
+#, fuzzy
+msgid ""
+"The function ``_process()`` is not synchronized with physics. Its rate "
+"depends on hardware and game optimization. It also runs after the physics "
+"step in single-threaded games."
+msgstr ""
+"Die Funktion ``_process()`` ist jedoch nicht mit der Physik synchronisiert. "
+"Die Bildrate ist nicht konstant und hängt von der Hardware- und "
+"Spieloptimierung ab. Die Ausführung erfolgt nach dem physikalischen Schritt "
+"bei Single-Threaded-Spielen."
+
+#, fuzzy
+msgid ""
+"You can see the ``_process()`` function at work by creating a scene with a "
+"single Label node, with the following script attached to it:"
+msgstr ""
+"Eine einfache Möglichkeit die ``_process()``-Funktion bei der Arbeit zu "
+"sehen besteht darin, eine Szene mit einem einzelnen Label-Node zu erstellen. "
+"Sie können dies mit dem folgendem Skript erledigen:"
+
+#, fuzzy
+msgid "When you run the scene, you should see a counter increasing each frame."
+msgstr "Es zeigt einen Zähler, der die Frameanzahl erhöht."

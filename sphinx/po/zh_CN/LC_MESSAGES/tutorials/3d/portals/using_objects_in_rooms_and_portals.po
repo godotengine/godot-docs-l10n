@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:2
 msgid "Using objects in Rooms and Portals"
 msgstr "在房间和入口中使用对象"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:4
 msgid ""
 "Normally, when you use Godot, all objects that you can see (:ref:"
 "`VisualInstance<class_VisualInstance>`\\ s) are treated in the same way by "
@@ -35,11 +33,9 @@ msgstr ""
 "您的游戏中具有的不同对象角色。它通过这种区分来定义 :ref:`Room<class_Room>`"
 "\\ ，并以最有效的方式渲染和处理。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:7
 msgid "Portal mode"
 msgstr "入口的模式"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:9
 msgid ""
 "If you look in the inspector, every VisualInstance in Godot is derived from "
 "a :ref:`CullInstance<class_CullInstance>`, where you can set a "
@@ -49,25 +45,21 @@ msgstr ""
 "`CullInstance<class_CullInstance>` 派生而来，你可以设置它的 ``PortalMode``"
 "\\ ，这决定了对象在入口系统中的行为方式。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:14
 msgid "STATIC"
 msgstr "STATIC"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:16
 msgid ""
 "The default mode for objects is ``STATIC``. Static objects are objects "
 "within rooms that will not move throughout the lifecycle of the level. "
 "Things like floors, walls, ceilings are good candidates for ``STATIC`` "
 "objects."
 msgstr ""
-"对象的默认模式是 ``STATIC`` 。静态物体是房间内的物体，在关卡的整个生命周期内"
-"不会移动。像地板、墙壁、天花板都是 ``STATIC`` 对象的良好候选。"
+"对象的默认模式是 ``STATIC``\\ 。静态物体是房间内的物体，在关卡的整个生命周期"
+"内不会移动。像地板、墙壁、天花板都是 ``STATIC`` 对象的良好候选。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:19
 msgid "DYNAMIC"
 msgstr "DYNAMIC"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:21
 msgid ""
 "Dynamic mode is for objects that are expected to move during the game. But "
 "there is a limitation - **they must not move outside of their original "
@@ -77,11 +69,9 @@ msgstr ""
 "动态模式适用于预期在游戏过程中移动的对象。但有一个限制，\\ **他们不能离开原来"
 "的房间**\\ 。这些对象由系统非常有效地处理。可能的示例如移动平台和电梯。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:24
 msgid "ROAMING"
 msgstr "ROAMING"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:26
 msgid ""
 "Roaming mode is for objects that can move between rooms. Things like players "
 "and enemies should be marked as roaming. These are more expensive to "
@@ -92,11 +82,9 @@ msgstr ""
 "漫游。这些计算比 ``STATIC`` 或 ``DYNAMIC`` 模式更消耗，因为系统必须跟踪漫游对"
 "象在哪个房间内。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:29
 msgid "GLOBAL"
 msgstr "GLOBAL"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:31
 msgid ""
 "Global mode is for objects that you don't want occlusion culled at all. "
 "Things like a main player's weapon, bullets and some particle effects are "
@@ -105,11 +93,9 @@ msgstr ""
 "全局模式适用于您根本不希望遮挡剔除的对象。比如主要玩家的武器、子弹和一些粒子"
 "效果之类的东西都是 ``GLOBAL`` 模式的理想选择。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:34
 msgid "IGNORE"
 msgstr "IGNORE"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:36
 msgid ""
 "Ignore is a special mode for objects that will be essentially free in the "
 "system. Manual bounds (``-bound``) get converted to ignore portal mode "
@@ -123,11 +109,9 @@ msgstr ""
 "在场景树中，以防你需要多次转换关卡（例如在编辑器中）。你也可以选择对那些\\ *"
 "只想*\\ 在编辑器中显示的对象使用这个方法（当 RoomManager 不活动时）。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:39
 msgid "Should you place objects within rooms (in the scene tree) or not?"
 msgstr "您是否应该将对象放置在房间内（在场景树中）？"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:41
 msgid ""
 "``STATIC`` and ``DYNAMIC`` objects are ideally placed within rooms in the "
 "scene tree. The system needs to know which room they are in during "
@@ -139,11 +123,9 @@ msgstr ""
 "换期间在哪个房间，因为系统假设它们永远不会改变房间。将它们放置在场景树中的房"
 "间内，以明确告知系统你想得到它们的位置。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:44
 msgid "Autoplace"
 msgstr "自动放置"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:46
 msgid ""
 "However, for ease of use, it is also possible to place ``STATIC`` and "
 "``DYNAMIC`` objects *outside* the rooms in the scene tree, but within the "
@@ -157,7 +139,6 @@ msgstr ""
 "房间。这在大多数情况下都有效，但如果有问题，请使用显式方法。尤其在处理内部房"
 "间时需要显式方法，房间对庞大的对象有一定限制。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:50
 msgid ""
 "Note that if you place ``STATIC`` and ``DYNAMIC`` objects outside of rooms, "
 "they will not contribute to the room bound. If you are using the room "
@@ -169,7 +150,6 @@ msgstr ""
 "房间边界。如果您使用房间几何体来得到边界，桌椅可以放置在房间外。但是，墙壁和"
 "地板应明确位于场景树的房间分支内，以确保边界正确。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:52
 msgid ""
 "``ROAMING`` and ``GLOBAL`` objects are recommended to be kept in a branch of "
 "the scene tree outside of any rooms or the RoomList. They *can* be placed "
@@ -181,11 +161,9 @@ msgstr ""
 "分支中。它们 *可以* 放置在房间内，但为了避免混淆，通常最好把它们放在自己的分"
 "支上。对 ``IGNORE`` 对象的放置没有限制。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:55
 msgid "Object Lifetimes"
 msgstr "对象生命周期"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:57
 msgid ""
 "It is important to note that the lifetime of ``STATIC`` and ``DYNAMIC`` "
 "objects is tied to the lifetime of the level, between when you call "
@@ -198,7 +176,6 @@ msgstr ""
 "关，即从调用 ``rooms_convert()`` 以激活入口系统和调用 ` `rooms_clear()`` 卸载"
 "系统。这是因为在转换阶段有相当多的预处理工作，以便有效地渲染它们。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:59
 msgid ""
 "You should therefore not try to create or delete ``STATIC`` or ``DYNAMIC`` "
 "objects while the portal system is active. Doing so will cause the system to "
@@ -209,19 +186,15 @@ msgstr ""
 "``DYNAMIC`` 对象。这样做会导致系统自动卸载，因为它处于无效的状态。然而，你可"
 "以自由地 ``show()`` 和 ``hide()`` 这些对象。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:61
 msgid "The sequence should be therefore:"
 msgstr "因此，顺序应该是："
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:63
 msgid "Load your level."
 msgstr "加载您的关卡。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:64
 msgid "Place any ``STATIC`` or ``DYNAMIC`` objects."
 msgstr "放置任何 ``STATIC`` 或 ``DYNAMIC`` 对象。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:65
 msgid ""
 "Then run ``rooms_convert()`` *after* all the ``STATIC`` and ``DYNAMIC`` "
 "objects were added to the scene tree."
@@ -229,7 +202,6 @@ msgstr ""
 "然后运行 ``rooms_convert()`` 在所有 ``STATIC`` 和 ``DYNAMIC`` 对象被添加到场"
 "景树 *之后* 。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:67
 msgid ""
 "Objects that are ``ROAMING``, ``GLOBAL`` or ``IGNORE`` can be freely created "
 "and deleted as required."
@@ -237,11 +209,9 @@ msgstr ""
 "属于 ``ROAMING`` 、 ``GLOBAL`` 或 ``IGNORE`` 的对象可以根据需要自由创建和删"
 "除。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:70
 msgid "Sprawling"
 msgstr "蔓延"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:72
 msgid ""
 "Although users can usually ignore the internals of the portal system, they "
 "should be aware that it is capable of handling objects that are so big they "
@@ -255,7 +225,6 @@ msgstr ""
 "AABB 或几何图形，系统可以检测对象何时穿过入口进入相邻房间（或多个房间）。这被"
 "称为\\ **蔓延**\\ 。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:74
 msgid ""
 "This means that if the corner of an object extends into a neighbouring room, "
 "but the object's main room is not showing (e.g. a train where the end is in "
@@ -267,11 +236,9 @@ msgstr ""
 "如，火车的末端在不同的房间），该物体将不会被剔除，仍然会被显示。只有当对象不"
 "存在于任何可见的房间时，才会被剔除。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:77
 msgid "Portal Margins"
 msgstr "入口边距"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:79
 msgid ""
 "It is hard to place objects exactly at the edges of rooms, and if we chose "
 "to sprawl objects to the adjacent room the moment a portal was crossed (even "
@@ -287,7 +254,6 @@ msgstr ""
 "物体越过这个边距就不会被考虑到下一个房间。边缘在编辑器中显示为红色的半透明区"
 "域。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:81
 msgid ""
 "You can set the margin globally in the RoomManager. You can also override "
 "this margin value in any portal if you need to finetune things. As you edit "
@@ -297,11 +263,9 @@ msgstr ""
 "您可以在 RoomManager 中设置全局边距。如果您需要微调，可以在入口中覆盖此边距"
 "值。当您在检查器中编辑边距值时，应该会在 3D 编辑器视窗中看到边距更新。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:84
 msgid "Include in Bound"
 msgstr "包含在边界中"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:86
 msgid ""
 "The support for objects that are larger than a single room has one side "
 "effect. You may not want to include some objects in the calculation of the "
@@ -312,7 +276,6 @@ msgstr ""
 "某些对象。可以在检查器中为单个对象打开和关闭此功能。参阅\\ **Cull Instance > "
 "Include In Bound**\\ 。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:88
 msgid ""
 "While sprawling works great for large moving objects, it also gives you a "
 "lot more leeway in level design. You can for instance create a large terrain "
@@ -322,11 +285,9 @@ msgstr ""
 "虽然蔓延非常适合大型移动物体，同时它也为您提供了更多的关卡设计余地。例如，您"
 "可以创建一个大型地形部分并将其存在于多个房间中，而无需拆分网格。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:91
 msgid "Lighting"
 msgstr "灯光"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:93
 msgid ""
 "In general lights are handled like any other visual instance. They can be "
 "placed in rooms, and they will sprawl to affect neighbouring rooms, "
@@ -343,7 +304,6 @@ msgstr ""
 "* 。因此它们不应该被放置在房间中。由于平行光可能很消耗，所以在室内时最好将其"
 "关闭，参阅 :ref:`doc_rooms_and_portals_roomgroups` 部分。"
 
-#: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:95
 msgid ""
 "Congratulations! You have now mastered the intermediate techniques required "
 "to use rooms and portals. You can use these to make games already, but there "

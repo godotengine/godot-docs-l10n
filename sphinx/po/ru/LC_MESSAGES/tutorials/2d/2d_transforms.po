@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
 msgstr "Преобразование области просмотра и холста"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:7
 msgid "Introduction"
 msgstr "Введение"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:9
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
 "they draw their content locally to the time they are drawn onto the screen. "
@@ -35,11 +32,9 @@ msgstr ""
 "рисования содержимого до момента их рисования на экране. В этом обзоре "
 "обсуждаются детали движка очень низкого уровня."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
 msgstr "Преобразования холста"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:16
 msgid ""
 "As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
 "CanvasItem node (remember that Node2D and Control based nodes use CanvasItem "
@@ -54,7 +49,6 @@ msgstr ""
 "д.), к которому можно получить доступ как :ref:`Transform2D "
 "<class_Transform2D>`."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:22
 msgid ""
 "Also covered in the previous tutorial, nodes are drawn by default in Layer "
 "0, in the built-in canvas. To put nodes in a different layer, a :ref:"
@@ -64,11 +58,9 @@ msgstr ""
 "на встроенном холсте. Для того, чтобы поместить узлы на другой слой, можно "
 "воспользоваться узлом :ref:`CanvasLayer <class_CanvasLayer>`."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
 msgstr "Глобальное преобразование холста"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:29
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
 "<class_Transform2D>`). This is the master transform and affects all "
@@ -81,11 +73,9 @@ msgstr ""
 "преобразования мало пользы, но оно используется в CanvasItem Editor в "
 "редакторе Godot."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
 msgstr "Преобразования растяжения"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:38
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
 "or stretching the screen. This transform is used internally (as described "
@@ -98,7 +88,6 @@ msgstr ""
 "`doc_multiple_resolutions`), но также может быть вручную установлено для "
 "каждого видового экрана."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:43
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
 "<class_MainLoop_method__input_event>` callback are multiplied by this "
@@ -113,11 +102,9 @@ msgstr ""
 "локальные координаты CanvasItem, для удобства была добавлена функция :ref:"
 "`CanvasItem.make_input_local () <class_CanvasItem_method_make_input_local>`."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
 msgstr "Порядок преобразований"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
 "For a coordinate in CanvasItem local properties to become an actual screen "
 "coordinate, the following chain of transforms must be applied:"
@@ -125,27 +112,21 @@ msgstr ""
 "Чтобы координата в локальных свойствах CanvasItem стала фактической "
 "координатой экрана, необходимо применить следующую цепочку преобразований:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:58
 msgid "Transform functions"
 msgstr "Функции преобразования"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
 msgstr "Получить каждое преобразование можно с помощью следующих функций:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Type"
 msgstr "Тип"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
 msgstr "Преобразование"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
 msgstr "``CanvasItem``"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
@@ -153,11 +134,9 @@ msgstr ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
 msgstr "``CanvasLayer``"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
@@ -165,11 +144,9 @@ msgstr ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr "``CanvasLayer+GlobalCanvas+Stretch``"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
@@ -177,7 +154,6 @@ msgstr ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
@@ -185,7 +161,6 @@ msgstr ""
 "Наконец, чтобы преобразовать локальные координаты CanvasItem в экранные "
 "координаты, просто умножьте в следующем порядке:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:84
 msgid ""
 "Keep in mind, however, that it is generally not desired to work with screen "
 "coordinates. The recommended approach is to simply work in Canvas "
@@ -197,11 +172,9 @@ msgstr ""
 "(``CanvasItem.get_global_transform ()``), чтобы автоматическое изменение "
 "размера разрешения экрана работало правильно."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:90
 msgid "Feeding custom input events"
 msgstr "Передача пользовательских событий ввода"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:92
 msgid ""
 "It is often desired to feed custom input events to the scene tree. With the "
 "above knowledge, to correctly do this, it must be done the following way:"

@@ -1,0 +1,2091 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript basics"
+msgstr "Основи GDScript"
+
+msgid "Introduction"
+msgstr "Вступ"
+
+msgid ""
+"*GDScript* is a high-level, dynamically typed programming language used to "
+"create content. It uses a syntax similar to `Python <https://en.wikipedia."
+"org/wiki/Python_%28programming_language%29>`_ (blocks are indent-based and "
+"many keywords are similar). Its goal is to be optimized for and tightly "
+"integrated with Godot Engine, allowing great flexibility for content "
+"creation and integration."
+msgstr ""
+"*GDScript* - мова програмування високого рівня динамічного типу, що "
+"використовується для створення контенту. Вона використовує синтаксис, схожий "
+"на `Python <https://en.wikipedia.org/wiki/Python_%28programming_language"
+"%29>`_ (блоки засновані на відступах, і багато ключових слів, схожі). Її "
+"мета - оптимізація та тісна інтеграція з Godot Engine, що забезпечує велику "
+"гнучкість для створення та інтеграції контенту."
+
+msgid "History"
+msgstr "Історія"
+
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"Документація про історію GDScript була переміщена до :ref:`FAQ "
+"<doc_faq_what_is_gdscript>`."
+
+msgid "Example of GDScript"
+msgstr "Зразок GDScript"
+
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's a "
+"simple example of how GDScript looks."
+msgstr ""
+"Деякі люди можуть краще навчитися, поглянувши на синтаксис, тому ось простий "
+"приклад того, як виглядає GDScript."
+
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"Якщо у вас є досвід роботи зі статично типізованими мовами, такими як C, C+"
+"+, або C#, але раніше ви ніколи не використовували динамічно типізовані, "
+"радимо прочитати цей урок: :ref:`doc_gdscript_more_efficiently`."
+
+msgid "Language"
+msgstr "Мова"
+
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"Далі йде швидкий огляд GDScript. Деталі, наприклад, які методи доступні для "
+"масивів, чи інших об'єктів, слід шукати в описах пов'язаних класів."
+
+msgid "Identifiers"
+msgstr "Ідентифікатори"
+
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"Будь-який рядок, що обмежується алфавітними символами ( від ``a`` до ``z`` і "
+"від ``A`` до ``Z``), цифрами (від ``0`` до ``9``) і ``_`` кваліфікується як "
+"ідентифікатор. Крім того, ідентифікатори не повинні починатися з цифри. "
+"Ідентифікатори залежать від регістру (``foo`` відрізняється від ``FOO``)."
+
+msgid "Keywords"
+msgstr "Ключові слова"
+
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"Далі наведено список ключових слів, які підтримуються мовою. Оскільки "
+"ключові слова є зарезервованими словами (лексемами), їх не можна "
+"використовувати як ідентифікатори. Оператори (такі як ``in``, ``not``, "
+"``and``, або ``or``) і імена вбудованих типів, перерахованих в наступних "
+"розділах, також зарезервовані."
+
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"Ключові слова визначаються в `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_, "
+"якщо ви хочете зазирнути під капот."
+
+msgid "Keyword"
+msgstr "Ключове слово"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "if"
+msgstr "if"
+
+msgid "See `if/else/elif`_."
+msgstr "Дивіться `if/else/elif`_."
+
+msgid "elif"
+msgstr "elif"
+
+msgid "else"
+msgstr "else"
+
+msgid "for"
+msgstr "for"
+
+msgid "See for_."
+msgstr "Дивіться for_."
+
+msgid "while"
+msgstr "while"
+
+msgid "See while_."
+msgstr "Дивіться while_."
+
+msgid "match"
+msgstr "match"
+
+msgid "See match_."
+msgstr "Дивіться match_."
+
+msgid "break"
+msgstr "break"
+
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "Перериває виконання поточного циклу ``for``, або ``while``."
+
+msgid "continue"
+msgstr "continue"
+
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "Негайний перехід до наступної ітерації циклу ``for``, або ``while``."
+
+msgid "pass"
+msgstr "pass"
+
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr ""
+"Використовується там, де, за правилами синтаксису, обов'язкова наявність "
+"інструкції (коду), але виконання коду небажане, наприклад, у порожніх "
+"функціях."
+
+msgid "return"
+msgstr "return"
+
+msgid "Returns a value from a function."
+msgstr "Повертає значення з функції."
+
+msgid "class"
+msgstr "class"
+
+msgid "Defines an inner class."
+msgstr "Визначає внутрішній клас."
+
+msgid "class_name"
+msgstr "class_name"
+
+msgid "Defines a class name and optional icon for your script."
+msgstr "Визначає назву класу та необов’язковий значок для вашого скрипту."
+
+msgid "extends"
+msgstr "extends"
+
+msgid "Defines what class to extend with the current class."
+msgstr "Визначає який клас розширити поточним класом."
+
+msgid "is"
+msgstr "is"
+
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr ""
+"Тестує, чи змінна поширюється на заданий клас, чи на даний вбудований тип."
+
+msgid "as"
+msgstr "as"
+
+msgid "Cast the value to a given type if possible."
+msgstr "Якщо можливо, то переводить значення в заданий тип."
+
+msgid "self"
+msgstr "self"
+
+msgid "Refers to current class instance."
+msgstr "Посилається на поточний екземпляр класу."
+
+msgid "tool"
+msgstr "tool"
+
+msgid "Executes the script in the editor."
+msgstr "Виконує скрипт у редакторі."
+
+msgid "signal"
+msgstr "signal"
+
+msgid "Defines a signal."
+msgstr "Визначає (оголошує) сигнал."
+
+msgid "func"
+msgstr "func"
+
+msgid "Defines a function."
+msgstr "Визначає (оголошує) функцію."
+
+msgid "static"
+msgstr "static"
+
+msgid "Defines a static function. Static member variables are not allowed."
+msgstr "Визначає статичну функцію. Статичні змінні члена не надані."
+
+msgid "const"
+msgstr "const"
+
+msgid "Defines a constant."
+msgstr "Визначає константу."
+
+msgid "enum"
+msgstr "enum"
+
+msgid "Defines an enum."
+msgstr "Визначає перерахунок."
+
+msgid "var"
+msgstr "var"
+
+msgid "Defines a variable."
+msgstr "Визначає змінну."
+
+msgid "onready"
+msgstr "onready"
+
+msgid ""
+"Initializes a variable once the Node the script is attached to and its "
+"children are part of the scene tree."
+msgstr ""
+"Ініціалізує змінну, як тільки Вузол додається до скрипту, і його нащадки є "
+"частиною дерева сцен."
+
+msgid "export"
+msgstr "export"
+
+msgid ""
+"Saves a variable along with the resource it's attached to and makes it "
+"visible and modifiable in the editor."
+msgstr ""
+"Зберігає змінну разом з ресурсом, до якого вона додається, і робить її "
+"видимою та дозволяє її модифікувати, в редакторі."
+
+msgid "setget"
+msgstr "setget"
+
+msgid "Defines setter and getter functions for a variable."
+msgstr "Визначає функції setter та getter для змінної."
+
+msgid "breakpoint"
+msgstr "breakpoint"
+
+msgid "Editor helper for debugger breakpoints."
+msgstr "Помічник редактора для налагодження контрольних точок."
+
+msgid "preload"
+msgstr "preload"
+
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr ""
+"Попередньо завантажує клас, чи змінну. Дивіться `Classes as resources`_."
+
+msgid "yield"
+msgstr "yield"
+
+msgid "Coroutine support. See `Coroutines with yield`_."
+msgstr "Підтримка співпрограм. Дивіться `Співпрограми з виводом`_."
+
+msgid "assert"
+msgstr "assert"
+
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"Затверджує умову, реєструє помилку під час збою. Ігнорується в не-"
+"налагоджених збірках. Дивіться `Assert keyword`_."
+
+msgid "remote"
+msgstr "remote"
+
+msgid ""
+"Networking RPC annotation. See :ref:`high-level multiplayer docs "
+"<doc_high_level_multiplayer>`."
+msgstr ""
+"Мережна анотація RPC. Дивіться :ref:`документацію по багатокористувацькому "
+"режиму високого рівня <doc_high_level_multiplayer>`."
+
+msgid "master"
+msgstr "master"
+
+msgid "puppet"
+msgstr "puppet"
+
+msgid "remotesync"
+msgstr "remotesync"
+
+msgid "mastersync"
+msgstr "mastersync"
+
+msgid "puppetsync"
+msgstr "puppetsync"
+
+msgid "PI"
+msgstr "PI"
+
+msgid "PI constant."
+msgstr "Константа Пі (π)."
+
+msgid "TAU"
+msgstr "TAU"
+
+msgid "TAU constant."
+msgstr "Константа Тау (τ)."
+
+msgid "INF"
+msgstr "INF"
+
+msgid "Infinity constant. Used for comparisons."
+msgstr "Константа нескінченності. Використовується для порівняння."
+
+msgid "NAN"
+msgstr "NAN"
+
+msgid "NAN (not a number) constant. Used for comparisons."
+msgstr ""
+"Константа NAN (not a number - не число). Використовується для порівнянь."
+
+msgid "Operators"
+msgstr "Оператори"
+
+msgid "The following is the list of supported operators and their precedence."
+msgstr "Далі наведено список підтримуваних операторів та їх пріоритет."
+
+msgid "**Operator**"
+msgstr "**Оператор**"
+
+msgid "**Description**"
+msgstr "**Опис**"
+
+msgid "``x[index]``"
+msgstr "``x[індекс]``"
+
+msgid "Subscription (highest priority)"
+msgstr "Підписка (найвищий пріоритет)"
+
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+msgid "Attribute reference"
+msgstr "Посилання на атрибут"
+
+msgid "``foo()``"
+msgstr "``foo()``"
+
+msgid "Function call"
+msgstr "Виклик функції"
+
+msgid "``is``"
+msgstr "``is``"
+
+msgid "Instance type checker"
+msgstr "Перевірка типу екземпляра"
+
+msgid "``~``"
+msgstr "``~``"
+
+msgid "Bitwise NOT"
+msgstr "Побітове NOT (НЕ)"
+
+msgid "``-x``"
+msgstr "``-x``"
+
+msgid "Negative / Unary negation"
+msgstr "Негативне / Унарне заперечення"
+
+msgid "``*`` ``/`` ``%``"
+msgstr "``*`` ``/`` ``%``"
+
+msgid "Multiplication / Division / Remainder"
+msgstr "Множення/Ділення/Залишок ділення"
+
+#, fuzzy
+msgid ""
+"These operators have the same behavior as C++. Integer division is truncated "
+"rather than returning a fractional number, and the % operator is only "
+"available for ints (\"fmod\" for floats), and is additionally used for "
+"Format Strings"
+msgstr ""
+"Ці оператори мають таку саму поведінку, як і в C++. Ділення цілого числа "
+"скорочується, а не повертає десяткове число, і оператор % доступний лише для "
+"ints (цілих) (\"fmod\" для десяткових)"
+
+msgid "``+``"
+msgstr "``+``"
+
+msgid "Addition / Concatenation of arrays"
+msgstr "Додавання / Об'єднання масивів"
+
+msgid "``-``"
+msgstr "``-``"
+
+msgid "Subtraction"
+msgstr "Віднімання"
+
+msgid "``<<`` ``>>``"
+msgstr "``<<`` ``>>``"
+
+msgid "Bit shifting"
+msgstr "Побітовий зсув (зміщення)"
+
+msgid "``&``"
+msgstr "``&``"
+
+msgid "Bitwise AND"
+msgstr "Побітове AND (І)"
+
+msgid "``^``"
+msgstr "``^``"
+
+msgid "Bitwise XOR"
+msgstr "Побітове XOR (Виключене АБО)"
+
+msgid "``|``"
+msgstr "``|``"
+
+msgid "Bitwise OR"
+msgstr "Побітове OR (АБО)"
+
+msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+
+msgid "Comparisons"
+msgstr "Порівняння"
+
+msgid "``in``"
+msgstr "``in``"
+
+msgid "Content test"
+msgstr "Перевірка вмісту"
+
+msgid "``!`` ``not``"
+msgstr "``!`` ``not``"
+
+msgid "Boolean NOT"
+msgstr "Логічне NOT (НІ)"
+
+msgid "``and`` ``&&``"
+msgstr "``and`` ``&&``"
+
+msgid "Boolean AND"
+msgstr "Логічне AND (І)"
+
+msgid "``or`` ``||``"
+msgstr "``or`` ``||``"
+
+msgid "Boolean OR"
+msgstr "Логічне OR (АБО)"
+
+msgid "``if x else``"
+msgstr "``if x else``"
+
+msgid "Ternary if/else"
+msgstr "Потрійне if/else (якщо/інакше)"
+
+msgid "``as``"
+msgstr "``as``"
+
+#, fuzzy
+msgid "Type casting"
+msgstr "Тестування"
+
+#, fuzzy
+msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+
+msgid "Assignment (lowest priority)"
+msgstr "Присвоювання значення, найнижчий пріоритет"
+
+msgid "Literals"
+msgstr "Літерали"
+
+msgid "**Literal**"
+msgstr "**Літерал**"
+
+msgid "**Type**"
+msgstr "**Тип**"
+
+msgid "``45``"
+msgstr "``45``"
+
+msgid "Base 10 integer"
+msgstr "Ціле число за десятковою системою числення"
+
+msgid "``0x8f51``"
+msgstr "``0x8f51``"
+
+msgid "Base 16 (hexadecimal) integer"
+msgstr "Ціле число на основі шістнадцяткової системи числення"
+
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+msgid "Base 2 (binary) integer"
+msgstr "Ціле число в двійковій (бінарній) системі числення"
+
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14``, ``58.1e-10``"
+
+msgid "Floating-point number (real)"
+msgstr "Число з рухомою комою (дійсне)"
+
+msgid "``\"Hello\"``, ``\"Hi\"``"
+msgstr "``\"Hello\"``, ``\"Привіт\"``"
+
+msgid "Strings"
+msgstr "Рядки (Текст)"
+
+msgid "``\"\"\"Hello\"\"\"``"
+msgstr "``\"\"\"Hello, Dude\"\"\"``"
+
+msgid "Multiline string"
+msgstr "Багаторядковий рядок (текст)"
+
+msgid "``@\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+msgid ":ref:`class_NodePath` or StringName"
+msgstr ":ref:`class_NodePath` або StringName"
+
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "Скорочення для ``get_node(\"NodePath\")``"
+
+msgid ""
+"Integers and floats can have their numbers separated with ``_`` to make them "
+"more readable. The following ways to write numbers are all valid::"
+msgstr ""
+"Цілі та десяткові числа можуть розділятись символом ``_`` для кращої "
+"читабельності. Усі наступні способи запису чисел є дійсними:"
+
+msgid "Comments"
+msgstr "Коментарі"
+
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr ""
+"Все що знаходиться після символа ``#``, і до кінця рядка, ігнорується і "
+"вважається коментарем."
+
+msgid "Built-in types"
+msgstr "Вбудовані типи"
+
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The only exceptions are ``Array``\\ s and ``Dictionaries``, which "
+"are passed by reference so they are shared. (Pooled arrays such as "
+"``PoolByteArray`` are still passed as values.)"
+msgstr ""
+"Вбудовані типи виділяються стеком. Вони передаються як значення. Це означає, "
+"що їх копії створюються для кожного завдання, або при передачі їх, як "
+"аргументів, функціям. Єдині винятки - це ``Array`` (Масиви) і "
+"``Dictionaries`` (Словники), які передаються посиланням, щоб бути спільними. "
+"(Об'єднані масиви, такі як ``PoolByteArray``, не входять в число винятків і "
+"передаються як значення.)"
+
+msgid "Basic built-in types"
+msgstr "Базові вбудовані типи"
+
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "Змінна в GDScript може бути призначена декільком вбудованим типам."
+
+msgid "null"
+msgstr "null"
+
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr ""
+"``null`` це порожній тип даних, який не містить інформації та не може "
+"приймати інші значення."
+
+msgid ":ref:`bool <class_bool>`"
+msgstr ":ref:`bool <class_bool>` (логічні)"
+
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr "Скорочене для \"boolean\", може містити лише ``true``, або ``false``."
+
+msgid ":ref:`int <class_int>`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
+msgstr ""
+"Скорочене від \"integer\" (\"ціле число\"), воно зберігає цілі числа "
+"(позитивні та негативні). Воно зберігається як 64-бітове значення, "
+"еквівалент \"int64_t\" в C ++."
+
+msgid ":ref:`float <class_float>`"
+msgstr ":ref:`float <class_float>`"
+
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
+"data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
+"single-precision \"float\" values."
+msgstr ""
+"Зберігає дійсні числа, включаючи десяткові дроби, використовуючи значення з "
+"рухомою комою. Зберігається як 64-бітове значення, еквівалентне \"double\" в "
+"C ++. Примітка: В даний час структури даних, такі як Vector2, Vector3 і "
+"PoolRealArray, зберігають 32-бітні одноточні значення \"float\"."
+
+msgid ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_. Strings can contain the following escape sequences:"
+msgstr ""
+"Послідовність символів у `форматі Unicode <https://en.wikipedia.org/wiki/"
+"Unicode>`_. Рядки (текст) можуть містити наступні escape послідовності:"
+
+msgid "**Escape sequence**"
+msgstr "**Escape послідовності**"
+
+msgid "**Expands to**"
+msgstr "**Розширюються**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "Новий рядок (перенесення рядка)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "Горизонтальний символ табуляції"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "Повернення каретки"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "Попередження (звуковий сигнал/дзвінок)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "Backspace"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr ""
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "Вертикальний символ табуляції"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "Подвійні лапки"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "Одинарні лапки"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "Зворотний слеш"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
+
+msgid "GDScript also supports :ref:`doc_gdscript_printf`."
+msgstr "GDScript також підтримує :ref:`doc_gdscript_printf`."
+
+msgid "Vector built-in types"
+msgstr "Векторні вбудовані типи"
+
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr ""
+"2D векторний тип містить поля ``x`` і ``y``. Також можна отримати доступ до "
+"масиву."
+
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"Тип Прямокутник 2D, містить два векторних поля: ``position`` і ``size``. "
+"Також містить поле ``end``, яке є ``.position + size``."
+
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr ""
+"Тип 3D вектора, містить поля ``x``, ``y`` і ``z``. Його також можна отримати "
+"як масив."
+
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid "3×2 matrix used for 2D transforms."
+msgstr "3 × 2 матриця, що використовується для 2D перетворень."
+
+msgid ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr ""
+"Тип 3D площини в нормалізованому вигляді, містить векторне поле ``normal`` і "
+"скалярну відстань ``d``."
+
+msgid ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr ""
+"Quaternion - це тип даних, який використовується для представлення "
+"тривимірного обертання. Корисний для інтерполяції обертів."
+
+msgid ":ref:`AABB <class_AABB>`"
+msgstr ":ref:`AABB <class_AABB>`"
+
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"Вісь вирівняна обмежувальною коробкою (або 3D коробкою) містить 2 векторних "
+"поля: ``position`` і ``size``. Також містить поле ``end``, яке є ``position "
+"+ size``."
+
+msgid ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"Матриця 3x3, використовується для 3D обертання та масштабування. Вона "
+"містить 3 векторних полів (``x``, ``y`` і ``z``) , а також може бути "
+"доступна в вигляді масиву 3D векторів."
+
+msgid ":ref:`Transform <class_Transform>`"
+msgstr ":ref:`Transform <class_Transform>`"
+
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3D перетворення містить поле Basis (Основа) ``basis``та поле Vector3 "
+"``origin``."
+
+msgid "Engine built-in types"
+msgstr "Вбудовані типи движка"
+
+msgid ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color <class_Color>`"
+
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"Color (Колір) тип даних містить поля ``r``, ``g``, ``b`` і ``a``. Також "
+"можуть бути доступні ``h``, ``s`` і ``v`` для hue(відтінок)/ "
+"saturation(насиченість) / value(значення)."
+
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"Compiled path to a node used mainly in the scene system. It can be easily "
+"assigned to, and from, a String."
+msgstr ""
+"Упорядкований шлях до вузла, що використовується в основному в системі сцен. "
+"Його можна легко присвоювати рядку (тексту) і з нього."
+
+msgid ":ref:`RID <class_RID>`"
+msgstr ":ref:`RID <class_RID>`"
+
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr ""
+"Ідентифікатор ресурсу (RID). Сервери використовують загальні RID для "
+"посилання непрозорих даних."
+
+msgid ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid "Base class for anything that is not a built-in type."
+msgstr "Базовий клас для всього, що не є вбудованим типом."
+
+msgid "Container built-in types"
+msgstr "Вбудовані типи контейнерів"
+
+msgid ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"Масиви - це послідовність об'єктів довільних типів, включаючи інші масиви, "
+"чи словники (дивіться нижче). Масив може динамічно змінювати розмір. Масиви "
+"індексуються, починаючи з індексу ``0``. Негативні показники рахуються з "
+"кінця."
+
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"Масиви GDScript розподіляються в пам'яті лінійно для швидкості. Однак великі "
+"масиви (на більше десятків тисяч елементів) можуть спричинити фрагментацію "
+"пам'яті. Якщо це викликає занепокоєння, доступні спеціальні типи масивів. "
+"Вони приймають лише один тип даних. Вони уникають фрагментації пам'яті і "
+"використовують менше пам'яті, але є атомними і мають тенденцію працювати "
+"повільніше, ніж загальні масиви. Тому їх рекомендується використовувати лише "
+"для великих наборів даних:"
+
+msgid ""
+":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
+"0 to 255)."
+msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: масив з байтів (цілих чисел від "
+"0 до 255)."
+
+msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: масив з цілих чисел."
+
+msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
+msgstr ""
+":ref:`PoolRealArray <class_PoolRealArray>`: масив з чисел із рухомою крапкою."
+
+msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: масив з рядків."
+
+msgid ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
+"<class_Vector2>` objects."
+msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Масив з об'єктів :ref:"
+"`Vector2 <class_Vector2>`."
+
+msgid ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
+"<class_Vector3>` objects."
+msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Масив з об'єктів :ref:"
+"`Vector3 <class_Vector3>`."
+
+msgid ""
+":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
+"<class_Color>` objects."
+msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Масив з об'єктів :ref:`Color "
+"<class_Color>`."
+
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Dictionary <class_Dictionary>`"
+
+msgid "Associative container which contains values referenced by unique keys."
+msgstr ""
+"Асоціативний контейнер, який містить значення, на які посилаються унікальні "
+"ключі."
+
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier)."
+msgstr ""
+"Також підтримується синтаксис таблиць в стилі Lua. Стиль Lua використовує "
+"``=`` замість ``:`` і не використовує лапки для позначення ключів (що "
+"дозволяє писати трохи менше). Однак, ключі, записані у цій формі, не можуть "
+"починатися з цифри (як і будь-який ідентифікатор GDScript)."
+
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr ""
+"Щоб додати ключ до наявного словника, використовуйте ім'я словника, ім'я "
+"нового ключа та призначте ключу значення:"
+
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"Синтаксис дужок може використовуватися для доступу до властивостей будь-"
+"якого :ref:`class_Object`, а не лише до словників. Майте на увазі, що спроба "
+"індексувати неіснуючу властивість спричинить помилку скрипту . Щоб цього "
+"уникнути, використовуйте методи :ref:`Object.get() "
+"<class_Object_method_get>` та :ref:`Object.set() <class_Object_method_set>`."
+
+msgid "Data"
+msgstr "Дані"
+
+msgid "Variables"
+msgstr "Змінні"
+
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"Змінні можуть існувати як члени класу, або як локальні для функцій. Вони "
+"створюються за допомогою ключового слова ``var`` і, за бажання, їм можна "
+"присвоювати значення після ініціалізації."
+
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"Змінні, не обов'язково, але можуть мати специфікацію типу. Коли тип "
+"вказаний, змінна буде змушена завжди мати один і той самий тип, а спроба "
+"призначити несумісне значення призведе до помилки."
+
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr ""
+"Типи задаються при створенні змінної з використанням символа ``:`` "
+"(двокрапка) після імені змінної, за яким вказується тип."
+
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr ""
+"Якщо змінна ініціалізована при створенні, тип можна призначити опустивши "
+"ім'я типу:"
+
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr ""
+"Таке визначення типу можливе лише в тому випадку, якщо призначене значення "
+"має визначений тип, інакше виникне помилка."
+
+msgid "Valid types are:"
+msgstr "Підтримувані типи:"
+
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "Вбудовані типи (Array, Vector2, int, String, тощо)."
+
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "Класи движка (Node, Resource, Reference, тощо)."
+
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"Імена констант, якщо вони містять ресурс скрипту (``MyScript`` якщо ви "
+"визначили ``const MyScript = preload(\"res://my_script.gd\")``)."
+
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"Інші класи в тому ж скрипті, з дотриманням меж застосування (``InnerClass."
+"NestedClass`` якщо ви визначили ``class NestedClass`` всередині ``class "
+"InnerClass`` в тих самих межах)."
+
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "Класи скриптів, оголошені за допомогою ключового слова ``class_name``."
+
+msgid "Casting"
+msgstr ""
+
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"Значення, присвоєні типізованим змінним, повинні мати сумісний тип. Якщо "
+"потрібно примусити значення бути певного типу, зокрема для типів об'єктів, "
+"ви можете використовувати оператор ``as``."
+
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"Оператор спрацює вірно, якщо тип присвоєного об'єкта збігається з типом "
+"змінної, або є підтипом її типу."
+
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr ""
+"Якщо значення не є підтипом, ця операція призведе до значення ``null``."
+
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr ""
+"Вбудовані типи будуть примусово перетворені, якщо це можливо, в противному "
+"випадку движок видасть помилку."
+
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr ""
+
+msgid "Constants"
+msgstr "Константи"
+
+msgid ""
+"Constants are values you cannot change when the game is running. Their value "
+"must be known at compile-time. Using the ``const`` keyword allows you to "
+"give a constant value a name. Trying to assign a value to a constant after "
+"it's declared will give you an error."
+msgstr ""
+"Константи - це значення, які ви не можете змінити під час роботи гри. Їх "
+"значення має бути відоме під час компіляції. Використання ключового слова "
+"``const`` дозволяє надати значенню константи назву. Спроба присвоїти "
+"значення константі після її оголошення буде давати вам помилку."
+
+msgid "We recommend using constants whenever a value is not meant to change."
+msgstr ""
+"Ми рекомендуємо використовувати константи для значень які не призначені для "
+"зміни."
+
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr ""
+"Хоча тип констант виводиться із призначеного значення, також можна додати "
+"явну специфікацію типу:"
+
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "Призначення значення несумісного типу призведе до помилки."
+
+msgid ""
+"Since arrays and dictionaries are passed by reference, constants are \"flat"
+"\". This means that if you declare a constant array or dictionary, it can "
+"still be modified afterwards. They can't be reassigned with another value "
+"though."
+msgstr ""
+"Оскільки масиви та словники передаються за посиланням, константи є \"плоскими"
+"\". Це означає, що якщо ви оголосите в якості константи масив, чи словник, "
+"його все ще можна буде змінити згодом. Однак їх не можна замінити іншим "
+"значенням."
+
+msgid "Enums"
+msgstr "Переліки"
+
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr ""
+"Переліки - це, в основному, скорочення для констант, і вони дуже корисні, "
+"якщо ви хочете призначити послідовні цілі числа якимось константам."
+
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant "
+"dictionary of that name."
+msgstr ""
+"Якщо ви передасте ім'я до переліку, він помістить усі ключі всередину "
+"постійного словника цього імені."
+
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
+"У Godot 3.1, і пізніших версіях, ключі в названому переліку не реєструються "
+"як глобальні константи. До них слід звертатися з префіксом імені переліку "
+"(``Ім'я.КЛЮЧ``); дивіться приклад нижче."
+
+msgid "Functions"
+msgstr "Функції"
+
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"Функції завжди належать до `класу<Classes_>`_. Пріоритет області для пошуку "
+"змінних: локальний → член класу → глобальний. Змінна ``self`` завжди "
+"доступна і надаються в якості опції для доступу до членів класу, хоча й не "
+"завжди потрібна (і, на відміну від Python, *не* повинна передаватися в "
+"якості першого аргументу функції)."
+
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr ""
+"Функція може повертати значення (``return``) в будь-якій точці. За "
+"замовчуванням повертається - ``null``."
+
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr ""
+"Функції можуть також мати специфікацію типу для аргументів та для значення, "
+"яке повертається. Типи аргументів можуть бути додані аналогічно змінним:"
+
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr ""
+"Якщо аргумент функції має значення за замовчуванням, то можна визначити тип:"
+
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr ""
+"Тип повернення функції можна вказати після списку аргументів, використовуючи "
+"символ стрілки ( ``->``):"
+
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"Функції, що мають тип повернення, **повинні** повертати значення "
+"відповідного типу. Тип ``void`` означає, що функція нічого не повертає. "
+"Функції можуть використовувати ключове слово ``return``, але вони не можуть "
+"повертати ніякого значення."
+
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"Функції, які повертають інший тип, **завжди** повинні повертати якесь "
+"значення, тому якщо у вашому коді є операції розгалуження (наприклад "
+"конструкцію ``if``/``else``), усі можливі шляхи повинні мати повернення. "
+"Наприклад, якщо у вас ``return`` всередині блоку ``if``, але не після нього, "
+"редактор викличе помилку, оскільки якщо умова блоку не буде виконана, "
+"функція не матиме значення для повернення."
+
+msgid "Referencing functions"
+msgstr "Посилання на функції"
+
+msgid ""
+"Contrary to Python, functions are *not* first-class objects in GDScript. "
+"This means they cannot be stored in variables, passed as an argument to "
+"another function or be returned from other functions. This is for "
+"performance reasons."
+msgstr ""
+"На відміну від Python, функції в GDScript *не* першокласні об'єкти. Це "
+"означає, що вони не можуть зберігатися у змінних, передаватися як аргумент в "
+"інші функції, або повертатися з інших функцій. Це з міркувань продуктивності."
+
+msgid ""
+"To reference a function by name at run-time, (e.g. to store it in a "
+"variable, or pass it to another function as an argument) one must use the "
+"``call`` or ``funcref`` helpers::"
+msgstr ""
+"Для посилання на функцію по імені під час виконання (наприклад, щоб зберегти "
+"її в змінній, або передати в іншу функцію як аргумент) необхідно "
+"використовувати помічники ``call``, або ``funcref``::"
+
+msgid "Static functions"
+msgstr "Статичні функції"
+
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. This is mainly useful "
+"to make libraries of helper functions::"
+msgstr ""
+"Функція може бути оголошена статичною. Коли функція статична, вона не має "
+"доступу до змінних членів екземпляра (instance), або ``self``. Це в "
+"основному корисно для створення бібліотек допоміжних функцій:"
+
+msgid "Statements and control flow"
+msgstr "Оператори і управління потоком"
+
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"Оператори є стандартними і можуть бути призначеннями, викликами функцій, "
+"структурами контрольного потоку тощо (дивіться нижче). Роздільник ``;`` "
+"абсолютно необов'язковий."
+
+msgid "if/else/elif"
+msgstr "if/else/elif"
+
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"Прості умови створюються за допомогою синтаксису ``if``/``else``/``elif``. "
+"Дужки навколо умов дозволені, але не обов'язкові. Враховуючи характер "
+"відступів на основі табуляції, ``elif`` можна використовувати замість "
+"``else``/``if`` для підтримки рівня відступу."
+
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "Короткі вирази можна записати на тому ж рядку, що і умова:"
+
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"Іноді, можливо, ви захочете призначити інше початкове значення на основі "
+"булевого виразу. У цьому випадку стають у нагоді потрійні вирази:"
+
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue``:"
+msgstr ""
+"Прості цикли створюються за допомогою синтаксису ``while``. Цикли можуть "
+"бути перервані, з допомогою ``break``, або продовжені з ``continue``:"
+
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"Для повторення (ітерації) діапазону, наприклад масиву, або таблиці, "
+"використовується цикл *for*. Під час ітерації над масивом поточний елемент "
+"масиву зберігається у змінній циклу. Під час ітерації над словником у "
+"змінній циклу зберігається індекс."
+
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"Оператор використовується для гілкування. Це еквівалент оператора "
+"``switch``, який можна знайти в багатьох інших мовах, але``match`` пропонує "
+"деякі додаткові функції."
+
+msgid "Basic syntax::"
+msgstr "Основний синтаксис:"
+
+msgid "**Crash-course for people who are familiar with switch statements**:"
+msgstr "**Прискорений курс для людей, які знайомі із switch**:"
+
+msgid "Replace ``switch`` with ``match``."
+msgstr "Замініть ``switch`` на ``match``."
+
+msgid "Remove ``case``."
+msgstr "Видаліть ``case``."
+
+msgid ""
+"Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
+"use ``continue`` for a fallthrough."
+msgstr ""
+"Видаліть будь-які ``break``. Якщо ви не хочете видаляти ``break`` ви можете "
+"використовувати ``continue`` щоб перескакувати їх."
+
+msgid "Change ``default`` to a single underscore."
+msgstr "Змініть ``default`` на одне підкреслення."
+
+msgid "**Control flow**:"
+msgstr "**Потік керування**:"
+
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement. You can use ``continue`` to stop execution in "
+"the current block and check for an additional match in the patterns below it."
+msgstr ""
+"Шаблони перевіряються зверху вниз. Якщо шаблон відповідає, відповідний блок "
+"буде виконаний. Після цього виконання продовжується нижче оператора "
+"``match``. Ви можете скористатися ``continue`` для зупинки виконання в "
+"поточному блоці і перевірки на наявність додаткового збігу в шаблонах під "
+"ним."
+
+msgid "There are 6 pattern types:"
+msgstr "Є 6 типів шаблонів:"
+
+msgid "Constant pattern"
+msgstr "Постійний шаблон"
+
+msgid "Constant primitives, like numbers and strings::"
+msgstr "Постійні примітиви, як числа та рядки:"
+
+msgid "Variable pattern"
+msgstr "Змінний шаблон"
+
+msgid "Matches the contents of a variable/enum::"
+msgstr "Відповідає вмісту змінної / переліку:"
+
+msgid "Wildcard pattern"
+msgstr "Шаблон Wildcard"
+
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr "Цей шаблон відповідає усьому. Він прописаний як окреме підкреслення."
+
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr ""
+"Він може бути використаний в якості еквівалента ``default`` в ``switch`` з "
+"інших мов:"
+
+msgid "Binding pattern"
+msgstr "Зв'язувальний шаблон"
+
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"Зв'язувальний шаблон вводить нову змінну. Як і шаблон wildcard, він "
+"відповідає всім - а також надає цьому значенню ім'я. Це особливо корисно для "
+"моделей масивів та словників:"
+
+msgid "Array pattern"
+msgstr "Шаблон масиву"
+
+#, fuzzy
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr ""
+"Відповідає масиву. Кожен окремий елемент масиву шаблона є самим шаблоном, "
+"тому ви можете вкласти їх."
+
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr ""
+"Спочатку тестується довжина масиву, він повинен бути того ж розміру, що і "
+"шаблон, інакше шаблон не збігатиметься."
+
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr ""
+"**Масив відкритого типу**: Масив може стати більшим за шаблон, під час "
+"виконання останнього під-шаблону ``..``."
+
+msgid "Every subpattern has to be comma-separated."
+msgstr "Кожен під-шаблон повинен бути розділений комою."
+
+msgid "Dictionary pattern"
+msgstr "Словниковий шаблон"
+
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr ""
+"Працює так само, як і шаблон масиву. Кожен ключ повинен бути постійним "
+"шаблоном."
+
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr ""
+"Спочатку тестується розмір словника, він повинен бути того ж розміру, що і "
+"шаблон, інакше шаблон не співладе."
+
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr ""
+"**Відкритий словник**: Словник може стати більшим за шаблон при виконанні "
+"останнього підшаблону ``..``."
+
+msgid "Every subpattern has to be comma separated."
+msgstr "Кожен під-шаблон повинен бути відокремлений комою."
+
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "Якщо значення не вказано, перевіряється лише наявність ключа."
+
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "Шаблон значення відокремлений від основного шаблону ``:``."
+
+msgid "Multiple patterns"
+msgstr "Кілька шаблонів"
+
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr ""
+"Ви також можете вказати кілька шаблонів, розділених комою. Ці шаблони не "
+"можуть мати ніяких прив'язок у них."
+
+msgid "Classes"
+msgstr "Класи"
+
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"За замовчуванням всі файли скриптів є класами без назви. У цьому випадку ви "
+"можете посилатися на них лише за допомогою шляху до файлу, використовуючи "
+"або відносний, або абсолютний шлях. Наприклад, якщо ви назвали файл скрипту "
+"``character.gd``:"
+
+#, fuzzy
+msgid "Registering named classes"
+msgstr "Реєстрація скриптів в якості класів"
+
+#, fuzzy
+msgid ""
+"You can give your class a name to register it as a new type in Godot's "
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"Натомість ви можете дати ім'я своєму класу, щоб зареєструвати його як новий "
+"тип у редакторі Godot. Для цього ви використовуєте ключове слово "
+"``class_name``. Ви можете додати необов'язкову кому, а потім шлях до "
+"зображення, щоб використовувати його як піктограму. Потім ваш клас з’явиться "
+"з новою піктограмою в редакторі:"
+
+msgid ""
+"If the script is located in the ``res://addons/`` directory, ``class_name`` "
+"will only cause the node to show up in the **Create New Node** dialog if the "
+"script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
+"for more information."
+msgstr ""
+"Якщо скрипт знаходиться в каталозі ``res://addons/``, вузол ``class_name`` "
+"з’явиться у діалоговому вікні **Створити новий вузол** лише в тому випадку, "
+"якщо скрипт є частиною *увімкненого* плагіна редактора. Дивіться :ref:"
+"`doc_making_plugins` для додаткової інформації."
+
+msgid "Here's a class file example:"
+msgstr "Ось зразок файла класу:"
+
+msgid ""
+"Godot's class syntax is compact: it can only contain member variables or "
+"functions. You can use static functions, but not static member variables. In "
+"the same way, the engine initializes variables every time you create an "
+"instance, and this includes arrays and dictionaries. This is in the spirit "
+"of thread safety, since scripts can be initialized in separate threads "
+"without the user knowing."
+msgstr ""
+"Синтаксис класів Godot є компактним: він може містити лише змінні, або "
+"функції. Ви можете використовувати статичні функції, але не статичні змінні. "
+"Таким же чином, движок ініціалізує змінні щоразу, коли ви створюєте "
+"екземпляр, і це включає масиви та словники. Це в дусі безпеки потоку, "
+"оскільки скрипти можна ініціалізувати в окремих потоках."
+
+msgid "Inheritance"
+msgstr "Успадкування"
+
+msgid "A class (stored as a file) can inherit from:"
+msgstr "Клас (зберігається як файл) може успадковувати від:"
+
+msgid "A global class."
+msgstr "Глобального класу."
+
+msgid "Another class file."
+msgstr "Іншого класу."
+
+msgid "An inner class inside another class file."
+msgstr "Внутрішнього класу всередині іншого файла класу."
+
+msgid "Multiple inheritance is not allowed."
+msgstr "Багаторазове успадкування неможливе."
+
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "При успадкуванні використовується ключове слово ``extends``:"
+
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr ""
+"Щоб перевірити, чи певний екземпляр успадковує певний клас, можна "
+"використовувати ключове слово ``is``:"
+
+msgid ""
+"To call a function in a *parent class* (i.e. one ``extend``-ed in your "
+"current class), prepend ``.`` to the function name::"
+msgstr ""
+"Щоб викликати функцію з *батьківського класу* (який успадкований за "
+"допомогою ``extend`` у вашому поточному класі), використовуйте ``.`` "
+"(крапку) та ім'я функції:"
+
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their parent classes. If you still want to "
+"call them, you can prefix them with ``.`` (like the ``super`` keyword in "
+"other languages)::"
+msgstr ""
+"Це особливо корисно, оскільки функції в розширених класах замінюють функції "
+"своїх батьківських класів з тим самим іменем. Якщо ви все ще хочете "
+"викликати їх, ви можете встановивши їм префікс ``.`` (крапку) (це як ключове "
+"слово ``super`` в інших мовах):"
+
+msgid ""
+"Default functions like  ``_init``, and most notifications such as "
+"``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
+"are called in all parent classes automatically. There is no need to call "
+"them explicitly when overloading them."
+msgstr ""
+"За замовчуванням такі функції, як ``_init`` і більшість повідомлень, таких "
+"як ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, "
+"викликаються у всіх батьківських класах автоматично. Не потрібно їх "
+"викликати при перевантаженні."
+
+msgid "Class constructor"
+msgstr "Конструктор класу"
+
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. As "
+"mentioned earlier, the constructors of parent classes are called "
+"automatically when inheriting a class. So, there is usually no need to call "
+"``._init()`` explicitly."
+msgstr ""
+"Конструктор класів, викликаний, як екземпляр класу, називається ``_init``. "
+"Як було сказано раніше, конструктори батьківських класів викликаються "
+"автоматично при успадкуванні класу. Тож зазвичай не потрібно явно викликати "
+"``._init()``."
+
+msgid ""
+"Unlike the call of a regular function, like in the above example with ``."
+"some_func``, if the constructor from the inherited class takes arguments, "
+"they are passed like this::"
+msgstr ""
+"На відміну від виклику регулярної функції, як у наведеному вище прикладі з "
+"``.some_func``, якщо конструктор із спадкового класу бере аргументи, вони "
+"передаються так:"
+
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr "Це краще пояснюється на прикладах. Розглянемо цей скрипт:"
+
+msgid "There are a few things to keep in mind here:"
+msgstr "Тут слід зазначити таке:"
+
+msgid ""
+"If the inherited class (``State.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``Idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``State.gd``."
+msgstr ""
+"Якщо успадкований клас (предок) (``State.gd``) визначає конструктор "
+"``_init``, який приймає аргументи (в даному випадку ``e``), то спадковий "
+"клас (нащадок) (``Idle.gd``) повинен також визначити ``_init`` і передати "
+"відповідні параметри в ``_init`` з ``State.gd``."
+
+msgid ""
+"``Idle.gd`` can have a different number of arguments than the parent class "
+"``State.gd``."
+msgstr ""
+"``Idle.gd`` може мати іншу кількість аргументів, ніж батьківський клас "
+"``State.gd``."
+
+msgid ""
+"In the example above, ``e`` passed to the ``State.gd`` constructor is the "
+"same ``e`` passed in to ``Idle.gd``."
+msgstr ""
+"У наведеному вище прикладі ``e`` передане конструктору ``State.gd`` те саме, "
+"що й ``e`` передане в ``Idle.gd``."
+
+#, fuzzy
+msgid ""
+"If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``State.gd`` parent class, even if it does nothing. "
+"This brings us to the fact that you can pass literals in the base "
+"constructor as well, not just variables, e.g.::"
+msgstr ""
+"Якщо ``_init`` конструктор в ``Idle.gd`` приймає 0 аргументів, він все одно "
+"потребує якогось значення для батьківського класу ``State.gd``, навіть якщо "
+"нічого з ним не робить. Це приводить нас до того, що ви можете передавати "
+"літерали в базовий конструктор, а не лише змінні. Наприклад:"
+
+msgid "Inner classes"
+msgstr "Внутрішні класи"
+
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"Файл класу може містити внутрішні класи. Внутрішні класи визначаються за "
+"допомогою ключового слова ``class``. Вони встановлені за допомогою функції "
+"``ClassName.new()``."
+
+msgid "Classes as resources"
+msgstr "Класи як ресурси"
+
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"Класи, що зберігаються як файли, розглядаються як :ref:`ресурси "
+"<class_GDScript>`. Вони повинні завантажуватися з диска, щоб до них був "
+"доступ в інших класах. Це робиться за допомогою функцій ``load``, або "
+"``preload``(дивіться нижче). Створення екземпляра завантаженого ресурсу "
+"класу здійснюється викликом функції ``new`` на об'єкті класу:"
+
+msgid "Exports"
+msgstr "Експорт"
+
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr "Документація про експорт переміщена до :ref:`doc_gdscript_exports`."
+
+msgid "Setters/getters"
+msgstr "Сетери/гетери"
+
+msgid ""
+"It is often useful to know when a class' member variable changes for "
+"whatever reason. It may also be desired to encapsulate its access in some "
+"way."
+msgstr ""
+"Часто корисно знати, коли змінна класу змінюється з будь-якої причини. Також "
+"можливо їх треба буде інкапсулювати."
+
+msgid ""
+"For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
+"keyword. It is used directly after a variable definition:"
+msgstr ""
+"Для цього GDScript надає синтаксис *setter/getter* за допомогою ключового "
+"слова ``setget``. Він використовується безпосередньо після визначення "
+"змінної:"
+
+msgid ""
+"Whenever the value of ``variable`` is modified by an *external* source (i.e. "
+"not from local usage in the class), the *setter* function (``setterfunc`` "
+"above) will be called. This happens *before* the value is changed. The "
+"*setter* must decide what to do with the new value. Vice versa, when "
+"``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
+"``return`` the desired value. Below is an example::"
+msgstr ""
+"Кожного разу, коли значення ``variable`` модифікується *зовнішнім* джерелом "
+"(тобто не локально всередині класі), буде викликана функція (``setterfunc`` "
+"вище). Це відбувається *до* зміни значення. *setter* повинен вирішити , що "
+"робити з новим значенням. І навпаки, коли ``variable`` має доступ, функція "
+"*getter* (``getterfunc`` вище) повинна повернути через ``return`` бажане "
+"значення. Нижче наведено приклад:"
+
+msgid "Either of the *setter* or *getter* functions can be omitted::"
+msgstr "Будь-яку з функцій *сетера*, або *гетера*, можна опустити:"
+
+msgid ""
+"Setters and getters are useful when :ref:`exporting variables "
+"<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
+"validating input."
+msgstr ""
+"Сетери та гетери корисні при :ref:`експорті змінних <doc_gdscript_exports>` "
+"до редактора в скриптах інструментів, або плагінах, для перевірки введення "
+"даних."
+
+msgid ""
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
+"illustration of this:"
+msgstr ""
+"Як було сказано, *локальний* доступ *не* запускає сетер та геттер. Ось "
+"демонстрація цього:"
+
+msgid "Tool mode"
+msgstr "Режим інструмента"
+
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``tool`` keyword exists and must be placed at the "
+"top of the file::"
+msgstr ""
+"За замовчуванням скрипти не запускаються всередині редактора, і можна "
+"змінити лише експортовані властивості. У деяких випадках бажано, щоб вони "
+"запускалися всередині редактора (до тих пір, поки вони не виконують ігровий "
+"код або уникають цього вручну). Для цього існує ключове слово ``tool`` і "
+"воно має бути розміщене у верхній частині файлу:"
+
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr "Додаткову інформацію дивіться в :ref:`doc_running_code_in_the_editor`."
+
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"Будьте обережні, звільняючи вузли за допомогою ``queue_free()``, або "
+"``free()``, в скрипті інструмента (особливо самого власника скрипту). "
+"Оскільки скрипти інструментів виконують свій код у редакторі, неправильне "
+"використання може призвести до збою редактора."
+
+msgid "Memory management"
+msgstr "Управління пам'яттю"
+
+msgid ""
+"If a class inherits from :ref:`class_Reference`, then instances will be "
+"freed when no longer in use. No garbage collector exists, just reference "
+"counting. By default, all classes that don't define inheritance extend "
+"**Reference**. If this is not desired, then a class must inherit :ref:"
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a :ref:`class_WeakRef` function is "
+"provided for creating weak references. Here is an example:"
+msgstr ""
+"Якщо клас успадковує від :ref:`class_Reference`, то екземпляри будуть "
+"звільнені, коли вони більше не використовуються. Не існує сміттєзбірника, "
+"лише підрахунок посилань. За замовчуванням усі класи, які не визначають "
+"успадкування, поширюють **Довідку**. Якщо цього не потрібно, клас повинен "
+"успадкувати :ref:`class_Object` вручну і повинен викликати instance.free (). "
+"Щоб уникнути еталонних циклів, які неможливо звільнити, передбачена функція :"
+"ref:`class_WeakRef` створення слабких посилань."
+
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"Крім того, коли не використовуються посилання, "
+"``is_instance_valid(instance)`` можуть бути використані для перевірки, чи "
+"об'єкт звільнений."
+
+msgid "Signals"
+msgstr "Сигнали"
+
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"Сигнали - це інструмент для передачі повідомлень від об'єкта, на який можуть "
+"реагувати інші об'єкти. Щоб створити спеціальні сигнали для класу, "
+"використовуйте ключове слово ``signal``."
+
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"Сигнали - це механізм `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ . Вони також виконують роль "
+"спостерігачів, загальна схема програмування. Для отримання додаткової "
+"інформації читайте `Observer tutorial <https://gameprogrammingpatterns.com/"
+"observer.html>`_ у книзі \"Шаблони програмування ігор\"."
+
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
+msgstr ""
+"Ви можете підключити ці сигнали до методів так само, як ви підключаєте "
+"вбудовані сигнали вузлів, таких як :ref:`class_Button`, або :ref:"
+"`class_RigidBody`."
+
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_Character_health_depleted`` is called::"
+msgstr ""
+"У наведеному нижче прикладі ми підключаємо сигнал ``health_depleted`` від "
+"вузла ``Character`` до вузла . Коли вузол ``Character`` випромінює сигнал, з "
+"вузла ``Game`` викликається ``_on_Character_health_depleted``:"
+
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "Ви можете передати скільки завгодно аргументів разом із сигналом."
+
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"Ось приклад, коли це корисно. Скажімо, ми хочемо, щоб панель життя на екрані "
+"реагувала на зміни здоров'я за допомогою анімації, але ми хочемо, щоб "
+"інтерфейс користувача був окремим від гравця в нашому дереві сцен."
+
+msgid ""
+"In our ``Character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
+"and from a ``Game`` node higher up our scene tree, we connect it to the "
+"``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
+"method::"
+msgstr ""
+"У нашому скрипті ``Character.gd`` ми визначаємо сигнал ``health_changed`` і "
+"випромінюємо його за допомогою :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>`, а з вузла ``Game`` вище нашого дерева "
+"сцени ми підключаємо його до ``Lifebar`` за допомогою методу :ref:`Object."
+"connect() <class_Object_method_connect>`:"
+
+msgid ""
+"To use signals, your class has to extend the ``Object`` class or any type "
+"extending it like ``Node``, ``KinematicBody``, ``Control``..."
+msgstr ""
+"Щоб використовувати сигнали, ваш клас повинен розширенням класу ``Object``, "
+"або подібного типу, як то ``Node``, ``KinematicBody``, ``Control``..."
+
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"У вузлі ``Game`` ми отримуємо вузли ``Character`` і ``Lifebar``, і "
+"підключаємо вузол, який випромінює сигнал, до приймача, у цьому випадку "
+"вузол ``Lifebar``."
+
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"Це дозволяє ``Lifebar`` реагувати на зміни стану здоров’я, без з'єднання з "
+"вузлом ``Character``."
+
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr ""
+"Ви можете записати необов'язкові імена аргументів у дужки після визначення "
+"сигналу::"
+
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"Ці аргументи відображаються на панелі вузла редактора, і Godot може "
+"використовувати їх для створення функцій зворотного виклику для вас. Однак "
+"ви можете випромінювати будь-яку кількість аргументів, коли ви випромінюєте "
+"сигнали; Ви повинні випромінювати правильні значення."
+
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"GDScript може прив'язувати масив значень до з'єднань між сигналом та "
+"методом. Коли сигнал випромінюється, метод зворотного виклику отримує "
+"зв'язані значення. Ці пов'язані аргументи є унікальними для кожного "
+"з'єднання, і значення залишаться тими самими."
+
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"Ви можете використовувати цей масив значень, щоб додати додаткову постійну "
+"інформацію до з'єднання, якщо сам випромінений сигнал не надає вам доступ до "
+"всіх необхідних вам даних."
+
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"Зіпремось на наведений вище приклад, скажімо, ми хочемо відобразити на "
+"екрані журнал пошкоджень, заподіяних кожним персонажем, як ``Гравець_1 "
+"отримав 22 пошкодження.``. Сигнал не дає нам ім'я персонажа , який отримав "
+"пошкодження. Отже, коли ми підключаємо сигнал ``health_changed`` до ігрової "
+"консолі, ми можемо додати ім'я персонажа в аргументі поєднаного масиву:"
+
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr ""
+"Наш вузол ``BattleLog`` отримує кожен елемент прив'язаного масиву, як "
+"додатковий аргумент:"
+
+msgid "Coroutines with yield"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
+"Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
+"function. Calling ``yield()`` will immediately return from the current "
+"function, with the current frozen state of the same function as the return "
+"value. Calling ``resume()`` on this resulting object will continue execution "
+"and return whatever the function returns. Once resumed, the state object "
+"becomes invalid. Here is an example::"
+msgstr ""
+"GDScript пропонує підтримку `coroutines <https://en.wikipedia.org/wiki/"
+"Coroutine>`_ через :ref:`yield<class_@GDScript_method_yield>` вбудованої "
+"функції. Виклик ``yield()`` негайно повернеться з поточної функції із "
+"поточним замороженим станом тієї ж функції, що і значення повернення. Виклик "
+"``resume()`` цього об'єкта продовжить виконання та поверне те, що поверне "
+"функція. Після відновлення об'єкт стану стає недійсним. Ось приклад:"
+
+msgid "Will print::"
+msgstr "Буде виведено:"
+
+msgid ""
+"It is also possible to pass values between ``yield()`` and ``resume()``, for "
+"example::"
+msgstr ""
+"Крім того , можна передавати значення між ``yield()`` і ``resume()``, "
+"наприклад:"
+
+msgid ""
+"Remember to save the new function state, when using multiple ``yield``\\s::"
+msgstr ""
+"Не забудьте зберегти новий стан функції при використанні декількох ``yield``:"
+
+msgid "Coroutines & signals"
+msgstr "Cпівпроцедури та сигнали"
+
+msgid ""
+"The real strength of using ``yield`` is when combined with signals. "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
+"is received, execution will recommence. Here are some examples::"
+msgstr ""
+"Справжня сила використання ``yield`` полягає в поєднанні з сигналами. "
+"``yield`` може прийняти два аргументи, об'єкт і сигнал. Коли сигнал буде "
+"отримано, виконання почнеться. Ось кілька прикладів:"
+
+#, fuzzy
+msgid ""
+"Coroutines themselves use the ``completed`` signal when they transition into "
+"an invalid state, for example::"
+msgstr ""
+"Самі супровідники використовують сигнал ``completed`` під час переходу в "
+"недійсний стан, наприклад:"
+
+msgid ""
+"``my_func`` will only continue execution once both buttons have been pressed."
+msgstr "``my_func`` продовжить виконання лише після натискання обох кнопок."
+
+msgid "You can also get the signal's argument once it's emitted by an object:"
+msgstr ""
+"Ви також можете отримати аргумент сигналу, коли його випромінює об'єкт:"
+
+msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+"Якщо аргументів є більше, ``yield`` повертає масив, що містить аргументи:"
+
+#, fuzzy
+msgid ""
+"If you're unsure whether a function may yield or not, or whether it may "
+"yield multiple times, you can yield to the ``completed`` signal "
+"conditionally:"
+msgstr ""
+"Якщо ви не впевнені, може функція повертати чи ні, чи може вона повертати "
+"кілька разів, ви можете подати ``completed`` сигналу через умову:"
+
+#, fuzzy
+msgid ""
+"This ensures that the function returns whatever it was supposed to return "
+"regardless of whether coroutines were used internally. Note that using "
+"``while`` would be redundant here as the ``completed`` signal is only "
+"emitted when the function didn't yield anymore."
+msgstr ""
+"Це гарантує, що функція повертає те, що вона повинна була повернути, "
+"незалежно від того, чи використовувались coroutines програми всередині. "
+"Зверніть увагу, що використання тут ``while`` було б зайвим, оскільки сигнал "
+"``completed`` випромінюється лише тоді, коли функція більше не дає "
+"результату."
+
+msgid "`onready` keyword"
+msgstr "Ключове слово `onready`"
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"При використанні вузлів бажання зберігати посилання на частини сцени в "
+"змінній цілком нормальне. Оскільки сцени можуть бути налаштовані лише під "
+"час входу в дерево активних сцен, під-вузли можна отримати лише тоді, коли "
+"здійснюється виклик ``Node._ready()``."
+
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``onready`` keyword, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"Це може стати трохи громіздким, особливо коли вузли та зовнішні посилання "
+"накопичуються. Для цього у GDScript є ключове слово ``onready``, яке "
+"відкладає ініціалізацію змінної члена до виклику ``_ready()``. Воно може "
+"замінити вищевказаний код одним рядком:"
+
+msgid "Assert keyword"
+msgstr "Ключове слово Assert"
+
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"Ключове слово ``assert`` може бути використано для перевірки умов в "
+"налагоджувальних збірках. Ці твердження ігноруються у не налагоджуваних "
+"збірках. Це означає, що вираз, переданий як аргумент, не буде оцінено в "
+"проєкті, експортованому в режимі випуску. Через це твердження повинні **не** "
+"містити виразів, які мають побічні ефекти. В іншому випадку поведінка "
+"скрипту може змінюватись залежно від того в якій збірці запускається проєкт."
+
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr ""
+"Під час запуску проєкту з редактора проєкт буде призупинено, якщо станеться "
+"помилка твердження."

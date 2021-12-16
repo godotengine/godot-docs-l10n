@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Creating the enemy"
+msgstr "Créer le squelette"
+
+msgid ""
+"Now it's time to make the enemies our player will have to dodge. Their "
+"behavior will not be very complex: mobs will spawn randomly at the edges of "
+"the screen, choose a random direction, and move in a straight line."
+msgstr ""
+"Il est temps maintenant de créer des ennemis que notre joueur devra "
+"esquiver. Leur comportement ne sera pas très complexe : des monstres vont "
+"apparaître au hasard aux bords de l'écran et se déplacer dans une direction "
+"aléatoire en ligne droite, puis disparaître lorsqu'ils sortent de l'écran."
+
+msgid ""
+"We'll create a ``Mob`` scene, which we can then *instance* to create any "
+"number of independent mobs in the game."
+msgstr ""
+"Nous allons créer une scène ``Mob``, que nous pouvons ensuite *instancier* "
+"pour créer un nombre quelconque de monstres indépendants dans le jeu."
+
+msgid "Node setup"
+msgstr "Configuration du nœud"
+
+msgid "Click Scene -> New Scene and add the following nodes:"
+msgstr "Cliquez sur Scène -> Nouvelle scène et ajoutez les nœuds suivants :"
+
+msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (nommé ``Mob``)"
+
+msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+
+msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+
+msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+
+msgid ""
+"Don't forget to set the children so they can't be selected, like you did "
+"with the Player scene."
+msgstr ""
+"N'oubliez pas de configurer les enfants pour qu'ils ne puissent pas être "
+"sélectionnés, comme vous l'avez fait avec la scène Player."
+
+msgid ""
+"In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
+"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
+"box. This will ensure the mobs do not collide with each other."
+msgstr ""
+"Dans les propriétés du :ref:`RigidBody2D <class_RigidBody2D>`, réglez "
+"``Gravity Scale`` sur ``0``, afin que le monstre ne tombe pas vers le bas. "
+"De plus, sous la section ``PhysicsBody2D``, cliquez sur la propriété "
+"``Mask`` et décochez la première case. Cela permettra de s'assurer que les "
+"monstres n'entrent pas en collision les uns avec les autres."
+
+msgid ""
+"Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
+"player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
+"There are two images for each animation in the art folder."
+msgstr ""
+"Configurez l':ref:`AnimatedSprite <class_AnimatedSprite>` comme vous l'avez "
+"fait pour le joueur. Cette fois, nous avons 3 animations : ``fly``, "
+"``swim``, et ``walk``. Il y a deux images pour chaque animation dans le "
+"dossier art."
+
+msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
+msgstr "Ajustez la vitesse \"Speed (FPS)\" à ``3`` pour toutes les animations."
+
+#, fuzzy
+msgid "Set the ``Playing`` property in the Inspector to \"On\"."
+msgstr "Mettez la propriété ``Playing`` dans l'inspecteur sur “On”."
+
+msgid ""
+"We'll select one of these animations randomly so that the mobs will have "
+"some variety."
+msgstr ""
+"Nous allons choisir une de ces animations au hasard pour que les monstres "
+"aient une certaine variété."
+
+#, fuzzy
+msgid ""
+"Like the player images, these mob images need to be scaled down. Set the "
+"``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
+msgstr ""
+"Comme les images du joueur, ces images de monstre doivent être réduites. "
+"Réglez la propriété ``Scale`` d' ``AnimatedSprite`` sur ``(0.75, 0.75)``."
+
+msgid ""
+"As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
+"align the shape with the image, you'll need to set the ``Rotation Degrees`` "
+"property to ``90`` (under \"Transform\" in the Inspector)."
+msgstr ""
+"Comme dans la scène ``Player``, ajouter un ``CapsuleShape2D`` pour la "
+"collision. Pour aligner la forme avec l'image, vous aurez besoin de "
+"paramétrer la propriété ``Rotation Degrees`` à ``90`` (sous \"Transform\" "
+"dans l'inspecteur)."
+
+msgid "Save the scene."
+msgstr "Enregistrer la scène."
+
+msgid "Enemy script"
+msgstr "Script de l'ennemi"
+
+#, fuzzy
+msgid "Add a script to the ``Mob`` like this:"
+msgstr ""
+"Ajouter un script au ``Mob`` et ajouter les variables membres suivantes :"
+
+#, fuzzy
+msgid ""
+"Now let's look at the rest of the script. In ``_ready()`` we play the "
+"animation and randomly choose one of the three animation types:"
+msgstr ""
+"Maintenant, regardons le reste du script. Dans ``_ready()``, nous "
+"choisissons aléatoirement l'un des trois types d'animations :"
+
+#, fuzzy
+msgid ""
+"First, we get the list of animation names from the AnimatedSprite2D's "
+"``frames`` property. This returns an Array containing all three animation "
+"names: ``[\"walk\", \"swim\", \"fly\"]``."
+msgstr ""
+"Tout d'abord, nous obtenons la liste des noms d'animation à partir de la "
+"propriété ``frames`` de l'AnimatedSprite. On obtient ainsi un tableau "
+"contenant les trois noms d'animation : ``[\"walk\", \"swim\", \"fly\"]`` "
+"pour \"marche\", \"nage\", et \"vole\"."
+
+msgid ""
+"We then need to pick a random number between ``0`` and ``2`` to select one "
+"of these names from the list (array indices start at ``0``). ``randi() % n`` "
+"selects a random integer between ``0`` and ``n-1``."
+msgstr ""
+"Nous devons ensuite choisir un nombre aléatoire entre ``0`` et ``2`` pour "
+"sélectionner l'un de ces noms dans la liste (les indices des listes "
+"commencent à ``0``). La fonction ``randi() % n`` sélectionne un nombre "
+"entier aléatoire entre ``0`` et ``n-1``."
+
+msgid ""
+"You must use ``randomize()`` if you want your sequence of \"random\" numbers "
+"to be different every time you run the scene. We're going to use "
+"``randomize()`` in our ``Main`` scene, so we won't need it here."
+msgstr ""
+"Vous devez utiliser ``randomize()`` si vous voulez que votre séquence de "
+"nombres \"aléatoires\" soit différente à chaque fois que vous exécutez la "
+"scène. Nous allons utiliser ``randomize()`` dans notre scène ``Main``, alors "
+"nous n'en aurons pas besoin ici."
+
+msgid ""
+"The last piece is to make the mobs delete themselves when they leave the "
+"screen. Connect the ``screen_exited()`` signal of the "
+"``VisibilityNotifier2D`` node and add this code:"
+msgstr ""
+"La dernière étape est de faire en sorte que les monstres se suppriment eux-"
+"mêmes lorsqu'ils quittent l'écran. Connecter le signal ``screen_exited()`` "
+"du nœud ``VisibilityNotifier2D`` et ajouter ce code :"
+
+msgid "This completes the `Mob` scene."
+msgstr "Cela complète la scène `Mob`."
+
+msgid ""
+"With the player and enemies ready, in the next part, we'll bring them "
+"together in a new scene. We'll make enemies spawn randomly around the game "
+"board and move forward, turning our project into a playable game."
+msgstr ""

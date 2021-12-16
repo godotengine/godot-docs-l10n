@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Scripting languages"
+msgstr "着色语言"
+
+msgid ""
+"This lesson will give you an overview of the available scripting languages "
+"in Godot. You will learn the pros and cons of each option. In the next part, "
+"you will write your first script using GDScript."
+msgstr ""
+
+msgid ""
+"**Scripts attach to a node and extend its behavior**. This means that "
+"scripts inherit all functions and properties of the node they attach to."
+msgstr ""
+
+msgid ""
+"For example, take a game where a Camera2D node follows a ship. The Camera2D "
+"node follows its parent by default. Imagine you want it to shake when the "
+"player takes damage. As this feature is not built-into Godot, you would "
+"attach a script to it and code the camera shake."
+msgstr ""
+
+#, fuzzy
+msgid "Available scripting languages"
+msgstr "与其他脚本语言通信"
+
+msgid ""
+"Godot offers **five gameplay programming languages**: GDScript, C#, "
+"VisualScript, and C++ and C via its GDNative technology. There are more :ref:"
+"`community-supported languages <doc_what_is_gdnative_third_party_bindings>`, "
+"but these are the official ones."
+msgstr ""
+
+msgid ""
+"You can use multiple languages in a single project. For instance, in a team, "
+"you could code gameplay logic in GDScript as it's fast to write, let level "
+"designers script quests in the graphical language VisualScript, and use C# "
+"or C++ to implement complex algorithms and maximize their performance. Or "
+"you can write everything in GDScript or C#. It's your call."
+msgstr ""
+
+msgid ""
+"We provide this flexibility to answer the needs of different game projects "
+"and developers."
+msgstr ""
+
+#, fuzzy
+msgid "Which language should I use?"
+msgstr "我应该使用哪一个？"
+
+msgid ""
+"If you're a beginner, we recommend to **start with GDScript**. We made this "
+"language specifically for Godot and the needs of game developers. It has a "
+"lightweight and straightforward syntax and provides the tightest integration "
+"with Godot."
+msgstr ""
+
+msgid ""
+"For C#, you will need an external code editor like `VSCode <https://code."
+"visualstudio.com/>`_ or Visual Studio. While C# support is now mature, you "
+"will also find fewer learning resources for it compared to GDScript. That's "
+"why we recommend C# mainly to users who already have experience with the "
+"language."
+msgstr ""
+
+msgid "Let's look at each language's features, as well as its pros and cons."
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid ""
+":ref:`GDScript<doc_gdscript>` is an `object-oriented <https://en.wikipedia."
+"org/wiki/Object-oriented_programming>`_ and `imperative <https://en."
+"wikipedia.org/wiki/Imperative_programming>`_ programming language built for "
+"Godot. It's made by and for game developers to save you time coding games. "
+"Its features include:"
+msgstr ""
+
+msgid "A simple syntax that leads to short files."
+msgstr ""
+
+msgid "Blazing fast compilation and loading times."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Tight editor integration, with code completion for nodes, signals, and more "
+"information from the scene it's attached to."
+msgstr ""
+"内置的编辑器拥有着对于节点, 信号, 以及其它很多条目的代码补全功能, 让人工作时"
+"事半功倍."
+
+#, fuzzy
+msgid ""
+"Built-in vector and transform types, making it efficient for heavy use of "
+"linear algebra, a must for games."
+msgstr "内建的向量类型(比如Vector, Transform等)让线性代数的大量使用效率极高."
+
+#, fuzzy
+msgid ""
+"Supports multiple threads as efficiently as statically typed languages. This "
+"is one of the features we couldn't provide easily with a third-party "
+"language like Lua or Python."
+msgstr ""
+"像静态类型语言一样高效地支持多线程——这是我们避免使用诸如Lua, Squirrel等虚拟机"
+"的原因之一."
+
+msgid ""
+"No `garbage collection <https://en.wikipedia.org/wiki/"
+"Garbage_collection_(computer_science)>`_, as this feature eventually gets in "
+"the way when creating games. The engine counts references and manages the "
+"memory for you in most cases by default, but you can also control memory if "
+"you need to."
+msgstr ""
+
+msgid ""
+"`Gradual typing <https://en.wikipedia.org/wiki/Gradual_typing>`_. Variables "
+"have dynamic types by default, but you also can use type hints for strong "
+"type checks."
+msgstr ""
+
+msgid ""
+"GDScript looks like Python as you structure your code blocks using "
+"indentations, but it doesn't work the same way in practice. It's inspired by "
+"multiple languages, including Squirrel, Lua, and Python."
+msgstr ""
+
+msgid "Why don't we use Python or Lua directly?"
+msgstr ""
+
+msgid ""
+"Years ago, Godot used Python, then Lua. Both languages' integration took a "
+"lot of work and had severe limitations. For example, threading support was a "
+"big challenge with Python."
+msgstr ""
+
+msgid ""
+"Developing a dedicated language doesn't take us more work and we can tailor "
+"it to game developers' needs. We're now working on performance optimizations "
+"and features that would've been difficult to offer with third-party "
+"languages."
+msgstr ""
+
+msgid ".NET / C#"
+msgstr ".NET / C#"
+
+#, fuzzy
+msgid ""
+"As Microsoft's `C# <https://en.wikipedia.org/wiki/"
+"C_Sharp_(programming_language)>`_ is a favorite amongst game developers, we "
+"officially support it. C# is a mature and flexible language with tons of "
+"libraries written for it. We could add support for it thanks to a generous "
+"donation from Microsoft."
+msgstr ""
+"由于微软的C#是游戏开发者的最爱，我们增加了对C#的官方支持。C#是一个成熟的语"
+"言，而且人们为它编写了大量代码。能够对它的支持得益于微软慷慨的馈赠。"
+
+#, fuzzy
+msgid ""
+"C# offers a good tradeoff between performance and ease of use, although you "
+"should be aware of its garbage collector."
+msgstr "它在性能和易用性之间有很好的折衷, 尽管必须注意它的垃圾回收机制."
+
+msgid ""
+"You must use the Mono edition of the Godot editor to script in C#. You can "
+"download it on the Godot website's `download <https://godotengine.org/"
+"download/>`_ page."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
+"theory, you can use any third-party .NET library or framework in Godot, as "
+"well as any Common Language Infrastructure-compliant programming language, "
+"such as F#, Boo, or ClojureCLR. However, C# is the only officially "
+"supported .NET option."
+msgstr ""
+"由于Godot使用 `Mono <https://mono-project.com>`_ .NET运行时, 因此理论上任何第"
+"三方.NET库或框架都可用于编写Godot脚本, 以及任何符合通用语言标准架构的语言, 如"
+"F#, Boo或ClojureCLR. 但实际上,C#是唯一官方支持的.NET选项."
+
+msgid ""
+"GDScript code itself doesn't execute as fast as compiled C# or C++. However, "
+"most script code calls functions written with fast algorithms in C++ code "
+"inside the engine. In many cases, writing gameplay logic in GDScript, C#, or "
+"C++ won't have a significant impact on performance."
+msgstr ""
+
+msgid "VisualScript"
+msgstr "可视化脚本"
+
+msgid ""
+":ref:`Visual Scripting<doc_what_is_visual_script>` is a graph-based visual "
+"programming language where you connect blocks. It can be a great tool for "
+"non-programmers like game designers and artists."
+msgstr ""
+
+msgid ""
+"You can use other languages to create custom blocks that are specific to "
+"your game. For example, to script AIs, quests, or dialogues. That's where "
+"the strength of VisualScript lies."
+msgstr ""
+
+msgid ""
+"While it provides all the basic building blocks you need to code complete "
+"games, we do not recommend to use VisualScript this way. Programming "
+"everything with it is slow compared to using other programming languages."
+msgstr ""
+
+msgid ""
+"For more information, see :ref:`Getting started with VisualScript "
+"<doc_getting_started_visual_script>`."
+msgstr ""
+
+#, fuzzy
+msgid "C and C++ via GDNative"
+msgstr "线程和 GDNative"
+
+#, fuzzy
+msgid ""
+"GDNative allows you to write game code in C or C++ without needing to "
+"recompile or even restart Godot."
+msgstr ""
+"最后是3.0版本的一个最大的亮点：GDNative允许使用C++编写脚本，无需重新编译(甚至"
+"都不用重启)Godot。"
+
+#, fuzzy
+msgid ""
+"You can use any version of the language or mix compiler brands and versions "
+"for the generated shared libraries, thanks to our use of an internal C API "
+"Bridge."
+msgstr ""
+"任意C++版本都可以使用, 并且由于我们使用内部C API桥接, 因此生成的共享库使用的"
+"混合编译器品牌和版本可以完美地工作."
+
+#, fuzzy
+msgid ""
+"This language is the best choice for performance. You don't need to use it "
+"throughout an entire game, as you can write other parts in GDScript, C#, or "
+"VisualScript."
+msgstr ""
+"这种语言是性能上的最佳选择, 它不需要在整个游戏中都使用, 因为其他部分可以用"
+"GDScript或Visual Script编写. 它的API清晰且易于使用, 类似于Godot的实际C++ API."
+
+msgid ""
+"When working with GDNative, the available types, functions, and properties "
+"closely resemble Godot's actual C++ API."
+msgstr ""
+
+msgid "Summary"
+msgstr "总结"
+
+msgid ""
+"Scripts are files containing code that you attach to a node to extend its "
+"functionality."
+msgstr ""
+
+msgid ""
+"Godot supports five official scripting languages, offering you flexibility "
+"between performance and ease of use."
+msgstr ""
+
+msgid ""
+"You can mix languages, for instance, to implement demanding algorithms with "
+"C or C++ and write most of the game logic with GDScript or C#."
+msgstr ""

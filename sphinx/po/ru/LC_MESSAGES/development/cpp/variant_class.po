@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
 msgstr "Класс Variant"
 
-#: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
 msgstr "О Godot Engine"
 
-#: ../../docs/development/cpp/variant_class.rst:9
 msgid ""
 "Variant is the most important datatype of Godot, it's the most important "
 "class in the engine. A Variant takes up only 20 bytes and can store almost "
@@ -39,15 +36,12 @@ msgstr ""
 "срок, вместо этого они используются для коммуникации, редактирования, "
 "сериализации и передвижения данных."
 
-#: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
 msgstr "Variant может:"
 
-#: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
 msgstr "Хранить почти любой тип данных"
 
-#: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
@@ -55,17 +49,14 @@ msgstr ""
 "Выполнять операции между различными variants (GDScript использует Variant "
 "как атомарный/нативный тип данных)."
 
-#: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
 msgstr ""
 "Быть хешированным, так что можно он может быть легко сравнимым с другими "
 "variants"
 
-#: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
 msgstr "Использоваться для безопасной конвертации между типами данных"
 
-#: ../../docs/development/cpp/variant_class.rst:23
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
@@ -73,35 +64,29 @@ msgstr ""
 "Использоваться для абстракции вызываемых методов и их аргументов (Godot "
 "экспортирует все эти функции через variants)"
 
-#: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
 msgstr ""
 "Использоваться для отложенных вызовов или передвижения данных между потоками."
 
-#: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
 msgstr ""
 "Быть сереализован как бинарный файл и сохранён на диск, или передан через "
 "сеть."
 
-#: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
 msgstr ""
 "Быть сериализован в текст и использоваться для печати значений и "
 "редактируемых настроек."
 
-#: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
 msgstr ""
 "Работать как экспортируемое свойство, чтобы редактор мог редактировать его "
 "везде."
 
-#: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
 msgstr "Использоваться для словарей, массивов, парсеров, итд."
 
-#: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
 "Basically, thanks to the Variant class, writing Godot itself was a much, "
 "much easier task, as it allows for highly dynamic constructs not common of C+"
@@ -112,12 +97,9 @@ msgstr ""
 "динамические конструкции, не типичные для C++. Подружитесь с Variant уже "
 "сегодня."
 
-#: ../../docs/development/cpp/variant_class.rst:38
-#: ../../docs/development/cpp/variant_class.rst:57
 msgid "References:"
 msgstr "Источники:"
 
-#: ../../docs/development/cpp/variant_class.rst:40
 #, fuzzy
 msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
@@ -126,11 +108,9 @@ msgstr ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 
-#: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
 msgstr "Контейнеры: Dictionary и Array"
 
-#: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
 "Both are implemented using variants. A Dictionary can match any datatype "
 "used as key to any other datatype. An Array just holds an array of Variants. "
@@ -142,7 +122,6 @@ msgstr ""
 "массив Variant'ов. Конечно, Variant может содержать в себе словарь или "
 "массив, делая их более гибкими."
 
-#: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
@@ -150,13 +129,11 @@ msgstr ""
 "Изменения контейнера будут модифицировать все ссылки на него. Mutex должен "
 "быть создан для его закрытия если требуется мульти-поточный доступ."
 
-#: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
 "Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
 msgstr ""
 "Поддержка Копии-на-запись (COW) для контейнеров была удалена в Godot 3.0."
 
-#: ../../docs/development/cpp/variant_class.rst:59
 #, fuzzy
 msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
@@ -165,7 +142,6 @@ msgstr ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 
-#: ../../docs/development/cpp/variant_class.rst:60
 #, fuzzy
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"

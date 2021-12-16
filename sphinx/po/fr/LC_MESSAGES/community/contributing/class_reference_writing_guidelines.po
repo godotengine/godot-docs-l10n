@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Class reference writing guidelines"
+msgstr "Directives pour la rédaction de documentation"
+
+msgid ""
+"This page explains how to write the class reference. You will learn where to "
+"write new descriptions for the classes, methods, and properties for Godot's "
+"built-in node types."
+msgstr ""
+
+msgid ""
+"To learn to submit your changes to the Godot project using the Git version "
+"control system, see :ref:`doc_updating_the_class_reference`."
+msgstr ""
+
+msgid ""
+"The reference for each class is contained in an XML file like the one below:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"It starts with brief and long descriptions. In the generated docs, the brief "
+"description is always at the top of the page, while the long description "
+"lies below the list of methods, variables, and constants. You can find "
+"methods, member variables, constants, and signals in separate XML nodes."
+msgstr ""
+"Chaque classe a une description brève et une description longue. La "
+"description brève se trouve toujours en haut de la page, tandis que la "
+"description complète se trouve en dessous de la liste des méthodes, des "
+"variables et des constantes. Les méthodes, les variables membres, les "
+"constantes et les signaux se trouvent dans des catégories séparées ou des "
+"nœuds XML. Pour chacun d'eux, apprenez comment ils fonctionnent dans le code "
+"source de Godot, et remplissez leur <description>."
+
+msgid ""
+"For each, you want to learn how they work in Godot's source code. Then, fill "
+"their documentation by completing or improving the text in these tags:"
+msgstr ""
+
+#, fuzzy
+msgid "`<brief_description>`"
+msgstr "<brief_description></brief_description>"
+
+#, fuzzy
+msgid "`<description>`"
+msgstr "Description"
+
+#, fuzzy
+msgid "`<constant>`"
+msgstr "Constante PI."
+
+msgid ""
+"`<method>` (in its `<description>` tag; return types and arguments don't "
+"take separate documentation strings)"
+msgstr ""
+
+msgid "`<member>`"
+msgstr ""
+
+msgid ""
+"`<signal>` (in its `<description>` tag; arguments don't take separate "
+"documentation strings)"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Write in a clear and simple language. Always follow the :ref:`writing "
+"guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
+"and easy to read. **Do not leave empty lines** in the descriptions: each "
+"line in the XML file will result in a new paragraph, even if it is empty."
+msgstr ""
+"Écrivez dans un langage clair et simple. Suivez toujours les directives :ref:"
+"`writing guidelines <doc_docs_writing_guidelines>` pour garder vos "
+"descriptions courtes et faciles à lire. **Ne laissez pas de lignes vides** "
+"dans les descriptions : chaque ligne du fichier XML donnera lieu à un "
+"nouveau paragraphe."
+
+msgid "How to edit class XML"
+msgstr "Comment modifier la classe XML"
+
+#, fuzzy
+msgid ""
+"Edit the file for your chosen class in ``doc/classes/`` to update the class "
+"reference. The folder contains an XML file for each class. The XML lists the "
+"constants and methods you will find in the class reference. Godot generates "
+"and updates the XML automatically."
+msgstr ""
+"Editez le fichier de la classe choisie dans ``doc/classes/`` pour mettre à "
+"jour la référence de la classe. Le dossier contient un fichier XML pour "
+"chaque classe. Le fichier XML énumère les constantes et les méthodes que "
+"vous trouverez dans la référence de classe. Godot génère et met à jour le "
+"XML automatiquement."
+
+msgid ""
+"For some modules in the engine's source code, you'll find the XML files in "
+"the ``modules/<module_name>/doc_classes/`` directory instead."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Edit it using your favorite text editor. If you use a code editor, make sure "
+"that it doesn't change the indent style: you should use tabs for the XML and "
+"four spaces inside BBCode-style blocks. More on that below."
+msgstr ""
+"Modifiez-le à l'aide de votre éditeur de texte préféré. Si vous utilisez un "
+"éditeur de code, assurez-vous qu'il ne modifie pas le style d'indentation : "
+"des tabulations pour le XML, et 4 espaces à l'intérieur des blocs de style "
+"BBcode. Plus d'informations à ce sujet ci-dessous."
+
+msgid ""
+"To check that the modifications you've made are correct in the generated "
+"documentation, navigate to the ``doc/`` folder and run the command ``make "
+"rst``. This will convert the XML files to the online documentation's format "
+"and output errors if anything's wrong."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build Godot and open the modified page in the built-"
+"in code reference. To learn how to compile the engine, read the :ref:"
+"`compilation guide <toc-devel-compiling>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"We recommend using a code editor that supports XML files like Vim, Atom, "
+"Visual Studio Code, Notepad++, or another to comfortably edit the file. You "
+"can also use their search feature to find classes and properties quickly."
+msgstr ""
+"Utilisez un éditeur de code comme Vim, Atom, Code, Notepad++ ou autre pour "
+"éditer le fichier rapidement. Utilisez la fonction de recherche pour trouver "
+"rapidement des classes."
+
+msgid "Improve formatting with BBCode style tags"
+msgstr "Améliorez le formatage avec les balises de style BBcode"
+
+msgid ""
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
+"to the text. Here's the list of available tags:"
+msgstr ""
+"La référence de classe de Godot supporte les balises de type BBcode. Ils "
+"ajoutent un joli formatage au texte. Voici la liste des balises disponibles :"
+
+msgid "Tag"
+msgstr "Balise"
+
+msgid "Effect"
+msgstr "Effet"
+
+msgid "Usage"
+msgstr "Utilisation"
+
+msgid "Result"
+msgstr "Résultat"
+
+msgid "[Class]"
+msgstr "[Class]"
+
+msgid "Link a class"
+msgstr "Lier une classe"
+
+#, fuzzy
+msgid "Move the [Sprite2D]."
+msgstr "Déplacez le [Sprite]."
+
+#, fuzzy
+msgid "Move the :ref:`class_Sprite`."
+msgstr "Déplacez le :ref:`class_sprite`."
+
+msgid "[method methodname]"
+msgstr "[method methodname]"
+
+msgid "Link to a method in this class"
+msgstr "Lien vers une méthode dans cette classe"
+
+msgid "Call [method hide]."
+msgstr "Appelez [method hide]."
+
+#, fuzzy
+msgid "Call :ref:`hide <class_Spatial_method_hide>`."
+msgstr "Voir :ref:`hide <class_spatial_method_hide>`."
+
+msgid "[method Class.methodname]"
+msgstr "[method Class.methodname]"
+
+msgid "Link to another class's method"
+msgstr "Lien vers la méthode d'une autre classe"
+
+#, fuzzy
+msgid "Call [method Node3D.hide]."
+msgstr "Appelez [method hide]."
+
+msgid "[member membername]"
+msgstr "[member membername]"
+
+msgid "Link to a member in this class"
+msgstr "Lien vers un membre dans cette classe"
+
+msgid "Get [member scale]."
+msgstr "Obtenir [member scale]."
+
+#, fuzzy
+msgid "Get :ref:`scale <class_Node2D_property_scale>`."
+msgstr "Obtenir :ref:`scale <class_node2d_property_scale>`."
+
+msgid "[member Class.membername]"
+msgstr "[member Class.membername]"
+
+msgid "Link to another class's member"
+msgstr "Lien vers un membre d'une autre classe"
+
+msgid "Get [member Node2D.scale]."
+msgstr "Obtenir [member Node2D.scale]."
+
+msgid "[signal signalname]"
+msgstr "[signal signalname]"
+
+msgid "Link to a signal in this class"
+msgstr "Lien vers un signal dans cette classe"
+
+msgid "Emit [signal renamed]."
+msgstr "Émettre [signal renamed]."
+
+#, fuzzy
+msgid "Emit :ref:`renamed <class_Node_signal_renamed>`."
+msgstr "Émettre :ref:`renamed <class_node_signal_renamed>`."
+
+msgid "[signal Class.signalname]"
+msgstr "[signal Class.signalname]"
+
+msgid "Link to another class's signal"
+msgstr "Lien vers le signal d'une autre classe"
+
+msgid "Emit [signal Node.renamed]."
+msgstr "Émettre [signal Node.renamed]."
+
+msgid "[b] [/b]"
+msgstr "[b] [/b]"
+
+msgid "Bold"
+msgstr "Gras"
+
+msgid "Some [b]bold[/b] text."
+msgstr "Du texte en [b]gras[/b]."
+
+msgid "Some **bold** text."
+msgstr "Du texte en **gras**."
+
+msgid "[i] [/i]"
+msgstr "[i] [/i]"
+
+msgid "Italic"
+msgstr "Italique"
+
+msgid "Some [i]italic[/i] text."
+msgstr "Du texte en [i]italique[/i]."
+
+msgid "Some *italic* text."
+msgstr "Du texte *italique*."
+
+msgid "[code] [/code]"
+msgstr "[code] [/code]"
+
+msgid "Monospace"
+msgstr "Monospace"
+
+msgid "Some [code]monospace[/code] text."
+msgstr "Du texte [code]monospace[/code]."
+
+msgid "Some ``monospace`` text."
+msgstr "Du texte ``monospace``."
+
+msgid "[kbd] [/kbd]"
+msgstr "[kbd] [/kbd]"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "Raccourci clavier/souris"
+
+msgid "Some [kbd]Ctrl + C[/kbd] key."
+msgstr "Des touches [kbd]Ctrl + C[/kbd]."
+
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr "Des touches :kbd:`Ctrl + C`."
+
+msgid "[codeblock] [/codeblock]"
+msgstr "[codeblock] [/codeblock]"
+
+msgid "Multiline preformatted block"
+msgstr "Bloc multiligne préformaté"
+
+msgid "*See below.*"
+msgstr "*Voir ci-dessous.*"
+
+#, fuzzy
+msgid "[codeblocks] [/codeblocks]"
+msgstr "[codeblock] [/codeblock]"
+
+msgid "[codeblock] for multiple languages"
+msgstr ""
+
+#, fuzzy
+msgid "[gdscript] [/gdscript]"
+msgstr "<description></description>"
+
+#, fuzzy
+msgid "GDScript codeblock tab in codeblocks"
+msgstr "[codeblock] [/codeblock]"
+
+msgid "[csharp] [/csharp]"
+msgstr ""
+
+#, fuzzy
+msgid "C# codeblock tab in codeblocks"
+msgstr "[codeblock] [/codeblock]"
+
+#, fuzzy
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation. The parser will delete tabs. For "
+"example:"
+msgstr ""
+"Utiliser ``[codeblock]`` pour des blocs de code préformatés. À l'intérieur "
+"de ``[codeblock]``, utiliser toujours **quatre espaces** pour l'indentation "
+"(l'analyseur supprimera les tabulations). Par exemple :"
+
+msgid "Will display as:"
+msgstr "S'affichera comme cela :"
+
+msgid ""
+"If you need to have different code version in GDScript and C#, use "
+"``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have "
+"at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
+msgstr ""
+
+msgid ""
+"Always write GDScript code examples first! You can use this `experimental "
+"code translation tool <https://github.com/HaSa1002/codetranslator>`_ to "
+"speed up your workflow."
+msgstr ""
+
+#, fuzzy
+msgid "The above will display as:"
+msgstr "S'affichera comme cela :"
+
+msgid ""
+"To denote important information, add a paragraph starting with \"[b]Note:[/"
+"b]\" at the end of the description:"
+msgstr ""
+"Pour signaler des informations importantes, ajoutez un paragraphe commençant "
+"par \"[b]Note :[/b]\" à la fin de la description :"
+
+msgid ""
+"To denote crucial information that could cause security issues or loss of "
+"data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
+"b]\" at the end of the description:"
+msgstr ""
+"Pour indiquer les informations cruciales qui pourraient entraîner des "
+"problèmes de sécurité ou la perte de données si elles ne sont pas suivies "
+"attentivement, ajoutez un paragraphe commençant par \"[b]Warning:[/b]\" à la "
+"fin de la description :"
+
+msgid ""
+"For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/"
+"i]\". Notice the use of italics instead of bold:"
+msgstr ""
+"Pour les propriétés obsolètes, ajoutez un paragraphe commençant par "
+"\"[i]Deprecated.[/i]\". Notez l'utilisation de l'italique au lieu du gras :"
+
+msgid ""
+"In all the paragraphs described above, make sure the punctuation is part of "
+"the BBCode tags for consistency."
+msgstr ""
+"Dans tous les paragraphes décrits ci-dessus, assurez-vous que la ponctuation "
+"fait partie des balises BBCode pour des raisons de cohérence."
+
+msgid "I don't know what this method does!"
+msgstr "Je ne sais pas ce que cette méthode fait !"
+
+msgid ""
+"No problem. Leave it behind, and list the methods you skipped when you "
+"request a pull of your changes. Another writer will take care of it."
+msgstr ""
+"Aucun problème. Laissez-le derrière et lister les méthodes que vous avez "
+"passé quand vous faites un *pull request* de vos changements. Un autre "
+"contributeur s'en occupera."
+
+#, fuzzy
+msgid ""
+"You can still look at the methods' implementation in Godot's source code on "
+"GitHub. If you have doubts, feel free to ask on the `Q&A website <https://"
+"godotengine.org/qa/>`__ and `Godot Contributors Chat <https://chat."
+"godotengine.org/>`_."
+msgstr ""
+"Vous pouvez toujours regarder l'implémentation des méthodes dans le code "
+"source de Godot sur GitHub. Ainsi, si vous avez des doutes, n'hésitez pas à "
+"poser des questions sur le site web `Q&A site <https://godotengine.org/qa/"
+">`__ et sur IRC (freenode, #godotengine)."

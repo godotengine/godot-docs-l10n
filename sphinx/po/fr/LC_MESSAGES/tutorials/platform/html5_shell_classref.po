@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:4
 msgid "HTML5 shell class reference"
 msgstr "Référence de classe shell HTML5"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:6
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -31,7 +29,6 @@ msgstr ""
 "l'environnement JavaScript, ce qui permet un contrôle fin du processus de "
 "démarrage du moteur."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:9
 msgid ""
 "This API is built in an asynchronous manner and requires basic understanding "
 "of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
@@ -41,11 +38,9 @@ msgstr ""
 "compréhension de base des `Promises <https://developer.mozilla.org/en-US/"
 "docs/Web/JavaScript/Guide/Using_promises>`__."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 msgid "Engine"
 msgstr "Engine"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:15
 msgid ""
 "The ``Engine`` class provides methods for loading and starting exported "
 "projects on the Web. For default export settings, this is already part of "
@@ -58,45 +53,24 @@ msgstr ""
 "l'utilisation pratique de la classe ``Engine``, voir :ref:`Custom HTML page "
 "for Web export <doc_customizing_html5_shell>`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:20
 msgid "Static Methods"
 msgstr "Méthodes statiques"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:23
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:34
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:36
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:38
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:40
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:66
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:99
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:121
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:139
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:158
 msgid "Promise"
 msgstr "Promesse"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
 msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:25
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:42
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid "void"
 msgstr "vide"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
 msgstr ":js:attr:`unload <Engine.unload>` **(** **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:27
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:84
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:189
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:226
 msgid "boolean"
 msgstr "booléen"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 msgid ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
@@ -104,17 +78,14 @@ msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:31
 msgid "Instance Methods"
 msgstr "Méthodes d'instance"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:34
 msgid ""
 ":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
 msgstr ""
 ":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:36
 msgid ""
 ":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
 "ArrayBuffer file *[, string path ]* **)**"
@@ -122,13 +93,11 @@ msgstr ""
 ":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
 "ArrayBuffer file *[, string path ]* **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:38
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig surcharge **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 msgid ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "override **)**"
@@ -136,7 +105,6 @@ msgstr ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "surcharge **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 msgid ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer buffer **)**"
@@ -144,52 +112,39 @@ msgstr ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer tampon **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 msgid "Create a new Engine instance with the given configuration."
 msgstr "Crée une nouvelle instance de moteur avec la configuration donnée."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Arguments"
 msgstr "Arguments"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid "The initial config for this instance."
 msgstr "La configuration initiale de cette instance."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:54
 msgid "**Static Methods**"
 msgstr "**Static Methods**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:58
 msgid "Load the engine from the specified base path."
 msgstr "Charge le moteur à partir du chemin de base spécifiée."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:60
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:93
 msgid "Base path of the engine to load."
 msgstr "Chemin de base du moteur à charger."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Returns"
 msgstr "Retourne"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:63
 msgid "A Promise that resolves once the engine is loaded."
 msgstr "Promesse qui se résout une fois que le moteur est chargé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Return type"
 msgstr "Type de retour"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:70
 msgid "Unload the engine to free memory."
 msgstr "Déchargez le moteur pour libérer de la mémoire."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:72
 msgid ""
 "This method will be called automatically depending on the configuration. "
 "See :js:attr:`unloadAfterInit`."
@@ -197,7 +152,6 @@ msgstr ""
 "Cette méthode sera appelée automatiquement en fonction de la configuration. "
 "Voir :js:attr:`unloadAfterInit`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:76
 msgid ""
 "Check whether WebGL is available. Optionally, specify a particular version "
 "of WebGL to check for."
@@ -205,19 +159,15 @@ msgstr ""
 "Vérifie si WebGL est disponible. Si nécessaire, indiquez une version "
 "particulière de WebGL à vérifier."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:78
 msgid "The major WebGL version to check for."
 msgstr "La version majeure de WebGL à vérifier."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:81
 msgid "If the given major version of WebGL is available."
 msgstr "Si la version majeure de WebGL indiquée est disponible."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:86
 msgid "**Instance Methods**"
 msgstr "**Instance Methods**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:90
 msgid ""
 "Initialize the engine instance. Optionally, pass the base path to the engine "
 "to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
@@ -226,13 +176,11 @@ msgstr ""
 "base au moteur pour le charger, s'il n'a pas encore été chargé. Voir la "
 "méthode :js:meth:`Engine.load`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:96
 msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
 msgstr ""
 "Une ``Promise`` qui se résout une fois que le moteur est chargé et "
 "initialisé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:103
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
@@ -241,13 +189,11 @@ msgstr ""
 "une fois l'instance lancée. Doit être appelé **avant** de démarrer "
 "l'instance."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:106
 msgid ""
 "If not provided, the ``path`` is derived from the URL of the loaded file."
 msgstr ""
 "S'il n'est pas fourni, le ``path`` est dérivé de l'URL du fichier chargé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:108
 msgid ""
 "The file to preload.  If a ``string`` the file will be loaded from that "
 "path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
@@ -257,15 +203,12 @@ msgstr ""
 "depuis ce chemin. Si c'est un ``ArrayBuffer`` ou une vue sur un, le tampon "
 "sera utilisé comme contenu du fichier."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:109
 msgid "The file to preload."
 msgstr "Le fichier à précharger."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:111
 msgid "If a ``string`` the file will be loaded from that path."
 msgstr "Si c'est une ``string``, le fichier sera chargé depuis ce chemin."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:113
 msgid ""
 "If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
 "of the file."
@@ -273,7 +216,6 @@ msgstr ""
 "Si le type est ``ArrayBuffer`` ou une vue sur un, le tampon sera utilisé "
 "comme contenu du fichier."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:115
 msgid ""
 "Path by which the file will be accessible. Required, if ``file`` is not a "
 "string."
@@ -281,11 +223,9 @@ msgstr ""
 "Chemin par lequel le fichier sera accessible. Obligatoire, si ``file`` n'est "
 "pas une chaîne."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:118
 msgid "A Promise that resolves once the file is loaded."
 msgstr "Une promesse qui se résout une fois que le fichier est chargé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:125
 msgid ""
 "Start the engine instance using the given override configuration (if any). :"
 "js:meth:`startGame <Engine.prototype.startGame>` can be used in typical "
@@ -295,7 +235,6 @@ msgstr ""
 "donnée (s'il y en a une). :js:meth:`startGame <Engine.prototype.startGame>` "
 "peut être utilisé dans les cas typiques à la place."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:128
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
@@ -305,7 +244,6 @@ msgstr ""
 "l'initialisation manuelle, voir :js:meth:`init <Engine.prototype.init>`. Le "
 "moteur doit être chargé au préalable."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:131
 msgid ""
 "Fails if a canvas cannot be found on the page, or not specified in the "
 "configuration."
@@ -313,23 +251,18 @@ msgstr ""
 "Échec si un canevas ne peut être trouvé sur la page, ou s'il n'est pas "
 "spécifié dans la configuration."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:133
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:152
 msgid "An optional configuration override."
 msgstr "Une surcharge facultative de la configuration."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:136
 msgid "Promise that resolves once the engine started."
 msgstr "Promesse qui se résout une fois le moteur démarré."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:143
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr ""
 "Démarre l'instance de jeu en utilisant la configuration donnée (le cas "
 "échéant)."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:145
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`."
@@ -337,14 +270,12 @@ msgstr ""
 "Cela permettra d'initialiser l'instance si elle n'est pas initialisée. Pour "
 "l'initialisation manuelle, voir :js:meth:`init <Engine.prototype.init>`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:147
 msgid ""
 "This will load the engine if it is not loaded, and preload the main pck."
 msgstr ""
 "Cela va charger le moteur s'il n'est pas chargé, et précharger le pck "
 "principal."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:149
 msgid ""
 "This method expects the initial config (or the override) to have both the :"
 "js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
@@ -354,11 +285,9 @@ msgstr ""
 "les propriétés :js:attr:`executable` et :js:attr:`mainPack` soient définies "
 "(ce qui est normalement fait par l'éditeur lors de l'exportation)."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:155
 msgid "Promise that resolves once the game started."
 msgstr "Promesse qui se résout une fois le jeu démarré."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:162
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
 "instance's file system."
@@ -366,19 +295,15 @@ msgstr ""
 "Crée un fichier au ``path`` spécifié avec le ``buffer`` passé dans le "
 "système de fichiers de l'instance."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:164
 msgid "The location where the file will be created."
 msgstr "L'emplacement où le fichier sera créé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:167
 msgid "The content of the file."
 msgstr "Le contenu du fichier."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:172
 msgid "Request that the current instance quit."
 msgstr "Demande que l'instance actuelle quitte."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:174
 msgid ""
 "This is akin the user pressing the close button in the window manager, and "
 "will have no effect if the engine has crashed, or is stuck in a loop."
@@ -387,11 +312,9 @@ msgstr ""
 "gestionnaire de fenêtres, et cela n'aura aucun effet si le moteur a planté "
 "ou est bloqué dans une boucle."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:178
 msgid "Engine configuration"
 msgstr "Configuration du moteur"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:180
 msgid ""
 "An object used to configure the Engine instance based on godot export "
 "options, and to override those in custom HTML templates if needed."
@@ -400,100 +323,66 @@ msgstr ""
 "options d'exportation de godot, et pour les remplacer dans les modèles HTML "
 "personnalisés si nécessaire."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 msgid "Properties"
 msgstr "Propriétés"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:187
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "type"
 msgstr "type"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 msgid "name"
 msgstr "name"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:189
 msgid ":js:attr:`unloadAfterInit`"
 msgstr ":js:attr:`unloadAfterInit`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:191
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:236
 msgid "HTMLCanvasElement"
 msgstr "HTMLCanvasElement"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 msgid ":js:attr:`canvas`"
 msgstr ":js:attr:`canvas`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:193
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:195
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:197
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:244
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:252
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:263
 msgid "string"
 msgstr "chaîne"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:193
 msgid ":js:attr:`executable`"
 msgstr ":js:attr:`executable`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:195
 msgid ":js:attr:`mainPack`"
 msgstr ":js:attr:`mainPack`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:197
 msgid ":js:attr:`locale`"
 msgstr ":js:attr:`locale`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:199
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:278
 msgid "number"
 msgstr "number"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:201
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:290
 msgid "Array.<string>"
 msgstr "Array.<string>"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:203
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:205
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:207
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:209
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:211
 msgid "function"
 msgstr "function"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
 msgstr ":js:attr:`onExecute`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:205
 msgid ":js:attr:`onExit`"
 msgstr ":js:attr:`onExit`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 msgid ":js:attr:`onProgress`"
 msgstr ":js:attr:`onProgress`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 msgid ":js:attr:`onPrint`"
 msgstr ":js:attr:`onPrint`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:211
 msgid ":js:attr:`onPrintError`"
 msgstr ":js:attr:`onPrintError`"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:216
 msgid ""
 "The Engine configuration object. This is just a typedef, create it like a "
 "regular object, e.g.:"
@@ -501,15 +390,12 @@ msgstr ""
 "L'objet de configuration du moteur. Est juste un typedef, créez-le comme un "
 "objet normal, par exemple :"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:218
 msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:220
 msgid "**Property Descriptions**"
 msgstr "**Description des propriétés**"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:224
 msgid ""
 "Whether the unload the engine automatically after the instance is "
 "initialized."
@@ -517,19 +403,15 @@ msgstr ""
 "Si le moteur est déchargé automatiquement après l'initialisation de "
 "l'instance."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "value"
 msgstr "value"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 msgid "``true``"
 msgstr "``true``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:232
 msgid "The HTML DOM Canvas object to use."
 msgstr "L'objet HTML DOM Canvas à utiliser."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:234
 msgid ""
 "By default, the first canvas element in the document will be used is none is "
 "specified."
@@ -537,13 +419,9 @@ msgstr ""
 "Par défaut, le premier élément de canevas du document sera utilisé si aucun "
 "n'est spécifié."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:238
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:254
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:265
 msgid "``null``"
 msgstr "``null``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:242
 msgid ""
 "The name of the WASM file without the extension. (Set by Godot Editor export "
 "process)."
@@ -551,11 +429,9 @@ msgstr ""
 "Le nom du fichier WASM sans l'extension. (Défini par le processus "
 "d'exportation de l'éditeur Godot)."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:246
 msgid "``\"\"``"
 msgstr "``\"\"``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:250
 msgid ""
 "An alternative name for the game pck to load. The executable name is used "
 "otherwise."
@@ -563,13 +439,11 @@ msgstr ""
 "Un autre nom pour le pck de jeu à charger. Le nom de l’exécutable est "
 "utilisé dans le cas contraire."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:258
 msgid "Specify a language code to select the proper localization for the game."
 msgstr ""
 "Indiquez un code de langue pour sélectionner la localisation appropriée pour "
 "le jeu."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:260
 msgid ""
 "The browser locale will be used if none is specified. See complete list of :"
 "ref:`supported locales <doc_locales>`."
@@ -577,7 +451,6 @@ msgstr ""
 "La localisation du navigateur sera utilisée si aucune n'est spécifiée. Voir "
 "la liste complète des :ref:`supported locales <doc_locales>`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:269
 msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
@@ -585,7 +458,6 @@ msgstr ""
 "La politique de redimensionnement du canevas détermine comment le canevas "
 "doit être redimensionné par Godot."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:271
 msgid ""
 "``0`` means Godot won't do any resizing. This is useful if you want to "
 "control the canvas size from javascript code in your template."
@@ -594,7 +466,6 @@ msgstr ""
 "vous souhaitez contrôler la taille du canevas à partir du code javascript de "
 "votre modèle."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:274
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
@@ -602,7 +473,6 @@ msgstr ""
 "``1`` signifie que Godot redimensionnera le caneva au démarrage, et lors du "
 "changement de taille de la fenêtre via les fonctions du moteur."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:276
 msgid ""
 "``2`` means Godot will adapt the canvas size to match the whole browser "
 "window."
@@ -610,20 +480,16 @@ msgstr ""
 "``2`` signifie que Godot adaptera la taille du canvas pour qu'elle "
 "corresponde à la totalité de la fenêtre du navigateur."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:280
 msgid "``2``"
 msgstr "``2``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:284
 msgid "The arguments to be passed as command line arguments on startup."
 msgstr ""
 "Les arguments à passer comme arguments de ligne de commande au démarrage."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:286
 msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
 msgstr "Voir :ref:`command line tutorial <doc_command_line_tutorial>`."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:288
 msgid ""
 "**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
 "the ``--main-pack`` argument."
@@ -631,15 +497,12 @@ msgstr ""
 "**Note** : :js:meth:`startGame <Engine.prototype.startGame>` ajoutera "
 "toujours l'argument ``--main-pack``."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:292
 msgid "``[]``"
 msgstr "``[]``"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:296
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "Une fonction de rappel pour gérer les appels ``OS.execute`` de Godot."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:298
 msgid ""
 "This is for example used in the Web Editor template to switch between "
 "project manager and editor, and for running the game."
@@ -647,20 +510,16 @@ msgstr ""
 "Cette fonction est par exemple utilisée dans le modèle de l'éditeur Web pour "
 "passer du gestionnaire de projet à l'éditeur, et pour lancer le jeu."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:300
 msgid "The path that Godot's wants executed."
 msgstr "Le chemin que Godot veut exécuter."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:303
 msgid "The arguments of the \"command\" to execute."
 msgstr "Les arguments de la \"commande\" à exécuter."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:308
 msgid "A callback function for being notified when the Godot instance quits."
 msgstr ""
 "Une fonction de rappel pour être notifié lorsque l'instance Godot quitte."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:310
 msgid ""
 "**Note**: This function will not be called if the engine crashes or become "
 "unresponsive."
@@ -668,16 +527,13 @@ msgstr ""
 "**Note** : Cette fonction ne sera pas appelée si le moteur plante ou ne "
 "répond plus."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:312
 msgid "The status code returned by Godot on exit."
 msgstr "Le code d'état renvoyé par Godot à la sortie."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:317
 msgid "A callback function for displaying download progress."
 msgstr ""
 "Fonction de rappel permettant d’afficher la progression du téléchargement."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:319
 msgid ""
 "The function is called once per frame while downloading files, so the usage "
 "of ``requestAnimationFrame()`` is not necessary."
@@ -686,7 +542,6 @@ msgstr ""
 "fichiers, donc l'utilisation de ``requestAnimationFrame()`` n'est pas "
 "nécessaire."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:322
 msgid ""
 "If the callback function receives a total amount of bytes as 0, this means "
 "that it is impossible to calculate. Possible reasons include:"
@@ -695,18 +550,15 @@ msgstr ""
 "signifie que le calcul est impossible, les raisons possibles peuvent être "
 "les suivantes :"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:325
 msgid "Files are delivered with server-side chunked compression"
 msgstr ""
 "Les fichiers sont délivrés avec une compression par tronçons réalisée par le "
 "serveur"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:326
 msgid "Files are delivered with server-side compression on Chromium"
 msgstr ""
 "Les fichiers sont délivrés avec une compression côté serveur sur Chromium"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:327
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
@@ -714,15 +566,12 @@ msgstr ""
 "Les téléchargements de fichiers n'ont pas encore tous démarré (en général "
 "sur des serveurs sans multi-threading)"
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:329
 msgid "The current amount of downloaded bytes so far."
 msgstr "La quantité actuelle d'octets téléchargés jusqu'à présent."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:332
 msgid "The total amount of bytes to be downloaded."
 msgstr "La quantité totale d'octets à télécharger."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:337
 msgid ""
 "A callback function for handling the standard output stream. This method "
 "should usually only be used in debug pages."
@@ -730,15 +579,12 @@ msgstr ""
 "Une fonction de rappel pour gérer le flux de sortie standard. Cette méthode "
 "ne doit généralement être utilisée que dans les pages de débogage."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:339
 msgid "By default, ``console.log()`` is used."
 msgstr "Par défaut, ``console.log()``` est utilisé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:341
 msgid "A variadic number of arguments to be printed."
 msgstr "Un nombre variable d'arguments à imprimer."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:346
 msgid ""
 "A callback function for handling the standard error stream. This method "
 "should usually only be used in debug pages."
@@ -746,10 +592,8 @@ msgstr ""
 "Une fonction de rappel pour gérer le flux d'erreur standard. Cette méthode "
 "ne doit généralement être utilisée que dans les pages de débogage."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:348
 msgid "By default, ``console.error()`` is used."
 msgstr "Par défaut, ``console.error()`` est utilisé."
 
-#: ../../docs/tutorials/platform/html5_shell_classref.rst:350
 msgid "A variadic number of arguments to be printed as errors."
 msgstr "Un nombre variable d'arguments à imprimer comme erreurs."

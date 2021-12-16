@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Idle and Physics Processing"
+msgstr ""
+
+msgid ""
+"Games run in a loop. Each frame, you need to update the state of your game "
+"world before drawing it on screen. Godot provides two virtual methods in the "
+"Node class to do so: :ref:`Node._process() <class_Node_method__process>` "
+"and :ref:`Node._physics_process() <class_Node_method__physics_process>`. If "
+"you define either or both in a script, the engine will call them "
+"automatically."
+msgstr ""
+
+#, fuzzy
+msgid "There are two types of processing available to you:"
+msgstr "Godot에서 요구하는 아이콘 종류는 두 가지가 있습니다:"
+
+msgid ""
+"**Idle processing** allows you to run code that updates a node every frame, "
+"as often as possible."
+msgstr ""
+
+msgid ""
+"**Physics processing** happens at a fixed rate, 60 times per second by "
+"default. This is independent of your game's actual framerate, and keeps "
+"physics running smoothly. You should use it for anything that involves the "
+"physics engine, like moving a body that collides with the environment."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can activate idle processing by defining the ``_process()`` method in a "
+"script. You can turn it off and back on by calling :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
+msgstr ""
+"유휴 처리는 스크립트에서 메서드 :ref:`Node._process() "
+"<class_Node_method__process>`\\ 가 발견되면 활성화됩니다. :ref:`Node."
+"set_process() <class_Node_method_set_process>`\\ 를 사용해서 이 기능을 껐다 "
+"켰다 할 수 있습니다."
+
+msgid "The engine calls this method every time it draws a frame:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Keep in mind that the frequency at which the engine calls ``_process()`` "
+"depends on your application's framerate, which varies over time and across "
+"devices."
+msgstr ""
+"``_process()``\\ 가 호출되는 빈도는 응용 프로그램이 초 당 몇 프레임 (FPS)으"
+"로 실행되는지에 따라 다르다는 것을 명심해야 합니다. 이 비율은 시간과 기기에 "
+"따라 다를 수 있습니다."
+
+msgid ""
+"The function's ``delta`` parameter is the time elapsed in seconds since the "
+"previous call to ``_process()``. Use this parameter to make calculations "
+"independent of the framerate. For example, you should always multiply a "
+"speed value by ``delta`` to animate a moving object."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Physics processing works with a similar virtual function: "
+"``_physics_process()``. Use it for calculations that must happen before each "
+"physics step, like moving a character that collides with the game world. As "
+"mentioned above, ``_physics_process()`` runs at fixed time intervals as much "
+"as possible to keep the physics interactions stable. You can change the "
+"interval between physics steps in the Project Settings, under Physics -> "
+"Common -> Physics Fps. By default, it's set to run 60 times per second."
+msgstr ""
+"``_physics_process()``\\ 를 이용한 물리 처리도 이와 유사합니다. 하지만 이 메"
+"서드는 각 물리 처리 단계 이전에 처리되어야 하는 명령에 사용해야 합니다. 예를 "
+"들면 캐릭터 조종은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호출됩"
+"니다: 기본적으로 초 당 60회 실행됩니다. 프로젝트 설정(Project Settings)의 "
+"Physics -> Common -> Physics Fps에서 시간 간격을 변경할 수 있습니다."
+
+#, fuzzy
+msgid ""
+"The function ``_process()`` is not synchronized with physics. Its rate "
+"depends on hardware and game optimization. It also runs after the physics "
+"step in single-threaded games."
+msgstr ""
+"그러나 ``_proceed()`` 함수는 물리 처리 단계와 동기화되지 않습니다. 프레임 비"
+"율은 일정하지 않고 하드웨어와 게임 최적화에 의존하기 때문이죠. 이 함수는 단"
+"일 스레드 게임의 동적 단계를 거친 후에 실행됩니다."
+
+#, fuzzy
+msgid ""
+"You can see the ``_process()`` function at work by creating a scene with a "
+"single Label node, with the following script attached to it:"
+msgstr ""
+"간단하게 ``_process()`` 함수가 작동하는 예시를 들면, Label 노드 하나로 된 씬"
+"을 만들고 다음 스크립트를 넣습니다:"
+
+#, fuzzy
+msgid "When you run the scene, you should see a counter increasing each frame."
+msgstr "위 스크립트는 프레임당 증가하는 카운터를 보여줍니다."

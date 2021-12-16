@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,197 +17,188 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:4
-msgid "Instancing"
-msgstr "Создание экземпляров"
+#, fuzzy
+msgid "Creating instances"
+msgstr "Редактирование экземпляров"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:7
-msgid "Introduction"
-msgstr "Введение"
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
-"Creating a single scene and adding nodes into it might work for small "
-"projects, but as a project grows in size and complexity, the number of nodes "
-"can quickly become unmanageable. To address this, Godot allows a project to "
-"be separated into any number of scenes. This provides you with a powerful "
-"tool that helps you organize the different components of your game."
+"In the previous part, we saw that a scene is a collection of nodes organized "
+"in a tree structure, with a single node as its root. You can split your "
+"project into any number of scenes. This feature helps you break down and "
+"organize your game's different components."
 msgstr ""
-"Создание одной сцены и добавление узлов в нее может работать в небольших "
-"проектах, но по мере роста сложности проекта количество узлов может быстро "
-"стать огромным. Чтобы решить эту проблему, Godot позволяет разделить проект "
-"на любое количество сцен. Это дает вам мощный инструмент, который поможет "
-"вам организовать различные компоненты вашей игры."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
-"In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
-"nodes organized in a tree structure, with a single node as the tree root."
+"You can create as many scenes as you'd like and save them to the disk with "
+"the ``.tscn`` extension, which stands for \"text scene\". The ``Label.tscn`` "
+"file from the previous lesson was an example. We call those files \"Packed "
+"Scenes\" as they pack information about your scene's content."
 msgstr ""
-"В :ref:`doc_scenes_and_nodes` вы узнали, что сцена представляет собой набор "
-"узлов, организованных в древовидной структуре, с единственным узлом в "
-"качестве корня дерева."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
-"You can create as many scenes as you like and save them to disk. Scenes "
-"saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
-"filename extension."
+"Here's the example of a ball. It's composed of a :ref:`RigidBody2D "
+"<class_RigidBody2D>` node as its root named Ball, which allows the ball to "
+"fall and bounce on walls, a :ref:`Sprite2D <class_Sprite>` node, and a :ref:"
+"`CollisionShape2D <class_CollisionShape2D>`."
 msgstr ""
-"Вы можете создать столько сцен, сколько хотите, и сохранить их на диск. "
-"Сцены, сохраненные таким образом, называются \"Упакованные сцены\" (Packed "
-"Scenes) и имеют расширение ``.tscn``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
-"Once a scene has been saved, it can be instanced into another scene as if it "
-"were any other node."
+"Once you saved a scene, it works as a blueprint: you can reproduce it in "
+"other scenes as many times as you'd like. Replicating an object from a "
+"template like so is called **instancing**."
 msgstr ""
-"Как только сцена была сохранена, ее можно интегрировать в другую сцену, как "
-"если бы это был любой другой узел."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:31
-msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
-"На вышеприведенном рисунке сцена В была добавлена в сцену А в качестве узла."
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:34
-msgid "Instancing by example"
-msgstr "Создание экземпляров на примере"
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
-"To learn how instancing works, let's start by downloading a sample project: :"
+"As we mentioned in the previous part, instanced scenes behave like a node: "
+"the editor hides their content by default. When you instance the Ball, you "
+"only see the Ball node. Notice also how each duplicate has a unique name."
+msgstr ""
+
+msgid ""
+"Every instance of the Ball scene starts with the same structure and "
+"properties as ``Ball.tscn``. However, you can modify each independently, "
+"such as changing how they bounce, how heavy they are, or any property "
+"exposed by the source scene."
+msgstr ""
+
+#, fuzzy
+msgid "In practice"
+msgstr "Лучшие практики"
+
+#, fuzzy
+msgid ""
+"Let's use instancing in practice to see how it works exactly in Godot. We "
+"invite you to download the ball's sample project we prepared for you: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
 "Чтобы узнать, как это работает, давайте начнем с загрузки примера проекта: :"
 "download:`instancing.zip <files/instancing.zip>`."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:39
+#, fuzzy
 msgid ""
-"Unzip this project anywhere you like. Then open Godot and add this project "
-"to the project manager using the 'Import' button:"
+"Extract the archive on your computer. Then, open Godot, and in the project "
+"manager, click the Import button to import the project."
 msgstr ""
 "Разархивируйте этот проект в любом месте. Затем откройте Godot и добавьте "
 "этот проект в менеджер проекта с помощью кнопки 'Импорт':"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
-"Browse to the folder you extracted and open the \"project.godot\" file you "
-"can find inside it. After doing this, the new project will appear on the "
-"list of projects. Edit the project by pressing the 'Edit' button."
+"In the pop-up that appears, click the browse button and navigate to the "
+"folder you extracted."
 msgstr ""
-"Перейдите в папку, которую вы извлекли, и откройте файл \"project.godot\", "
-"который вы найдете внутри нее. После этого новый проект появится в списке "
-"проектов. Отредактируйте проект, нажав кнопку 'Редактировать'."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:48
+msgid "Double-click the ``project.godot`` file to open it."
+msgstr ""
+
+msgid "Finally, click the Import & Edit button."
+msgstr ""
+
 msgid ""
-"This project contains two scenes: \"Ball.tscn\" and \"Main.tscn\". The ball "
-"scene uses a :ref:`RigidBody2D <class_RigidBody2D>` to provide physics "
-"behavior while the main scene has a set of obstacles for the ball to collide "
-"with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
+"The project contains two packed scenes: ``Main.tscn``, containing walls "
+"against which the ball collides, and ``Ball.tscn``. The Main scene should "
+"open automatically."
 msgstr ""
-"Этот проект содержит две сцены: \"Ball.tscn\" и \"Main.tscn\". Сцена мяча "
-"использует :ref:`RigidBody2D <class_RigidBody2D>`, чтобы обеспечить "
-"физическое поведение, в то время как основная сцена имеет множество "
-"препятствий для столкновения мяча (используя :ref:`StaticBody2D "
-"<class_StaticBody2D>`)."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:57
-msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr "Откройте сцену ``Main`` и затем выберите корневой узел:"
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
-"We want to add an instance of the ``Ball`` scene as a child of ``Main``. "
-"Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
-"file as a Node.\") and select the ``Ball.tscn`` file."
+"Let's add a ball as a child of the Main node. In the Scene dock, select the "
+"Main node. Then, click the link icon at the top of the scene dock. This "
+"button allows you to add an instance of a scene as a child of the currently "
+"selected node."
 msgstr ""
-"Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего узла "
-"``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке сказано: "
-"\"Добавить файл сцены как узел.\") и выберите файл ``Ball.tscn``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:67
+msgid "Double-click the ball scene to instance it."
+msgstr ""
+
+#, fuzzy
+msgid "The ball appears in the top-left corner of the viewport."
+msgstr "Мы хотим чтобы logo появился вверху экрана."
+
+#, fuzzy
+msgid "Click on it and drag it towards the center of the view."
+msgstr "Нажмите «New Atlas» и выделите весь лист с плитками."
+
+msgid "Play the game by pressing F5. You should see it fall."
+msgstr ""
+
 msgid ""
-"The ball will be placed at the top-left corner of the screen area (this is "
-"``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
-"the top-center of the scene:"
+"Now, we want to create more instances of the Ball node. With the ball still "
+"selected, press :kbd:`Ctrl-D` (:kbd:`Cmd-D` on macOS) to call the duplicate "
+"command. Click and drag to move the new ball to a different location."
 msgstr ""
-"Мяч будет помещен в верхний левый угол области экрана (это ``(0, 0)`` в "
-"координатах экрана). Нажмите и перетащите мяч куда-нибудь рядом с верхним "
-"центром сцены:"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:73
-msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr "Нажмите «Play» и посмотрите, как мяч упадёт вниз:"
+#, fuzzy
+msgid "You can repeat this process until you have several in the scene."
+msgstr ""
+"Нельзя переименовать серые узлы. Это говорит вам, что у них есть "
+"родительская сцена"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:78
-msgid "Multiple instances"
-msgstr "Множественное создание экземпляров"
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
-"You can add as many instances as you like to a scene, either by using the "
-"\"Instance\" button again, or by clicking on the ball instance and pressing :"
-"kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
+"Play the game again. You should now see every ball fall independently from "
+"one another. This is what instances do. Each is an independent reproduction "
+"of a template scene."
 msgstr ""
-"Вы можете добавить на сцену так много экземпляров объекта, как захотите: "
-"либо вновь воспользовавшись кнопкой «Instance», либо выделив экземпляр "
-"шарика и нажав :kbd:`Ctrl + D` (:kbd:`Cmd + D` в macOS) чтобы его "
-"дублировать:"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:86
-msgid "Run the scene again and all of the balls will fall."
-msgstr "Запустите сцену снова, и все шары упадут."
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:91
-msgid "Editing instances"
+#, fuzzy
+msgid "Editing scenes and instances"
 msgstr "Редактирование экземпляров"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:93
-msgid ""
-"Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
-"and set the ``Bounce`` property to ``1``."
+msgid "There is more to instances. With this feature, you can:"
 msgstr ""
-"Откройте сцену ``Ball``, найдите в его настройках параметр "
-"``PhysicsMaterial``, нажмите по нему и установите параметр ``Bounce`` "
-"(отскок) на значение ``1``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:98
+#, fuzzy
 msgid ""
-"Press \"Play\" and notice that all of the instanced balls are now much more "
-"bouncy. Because the instanced balls are based on the saved scene, changes to "
-"that scene will affect all instances."
+"Change the properties of one ball without affecting the others using the "
+"Inspector."
 msgstr ""
-"Нажмите \"Play\" (Играть) и вы убедитесь в том, что добавленные шары теперь "
-"более упругие. Так как эти шары основаны на сохраненной сцене, изменения "
-"этой сцены подействуют на другие экземпляры шаров."
+"Эти свойства можно настроить с помощью кода или путем их редактирования в "
+"инспекторе."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:102
 msgid ""
-"You can also adjust individual instances. Set the bounce value back to ``0`` "
-"and then in the ``Main`` scene, select one of the instanced balls. Resources "
-"like ``PhysicsMaterial`` are shared between instances by default, so we need "
-"to make it unique. Click on the tools button in the top-right of the "
-"Inspector dock and select \"Make Sub-Resources Unique\". Set its ``Bounce`` "
-"to ``1`` and press \"Play\"."
+"Change the default properties of every Ball by opening ``Ball.tscn`` scene "
+"and making a change to the Ball node there. Upon saving, all instances of "
+"the Ball in the project will see their values update."
 msgstr ""
-"Вы также можете настроить отдельные экземпляры. Установите значение отскока "
-"обратно на ``0``, а затем в сцене ``Main`` выберите один из шаров. Такие "
-"ресурсы, как ``PhysicsMaterial`` по умолчанию являются общими для всех "
-"экземпляров, но мы можем сделать их уникальными. Нажмите на стрелку вниз и "
-"выберите пункт \"Сделать Уникальным (Make Unique)\". Установите для "
-"параметра ``Bounce`` значение ``1`` и нажмите «Play»."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""
-"Notice that a grey \"revert\" button appears next to the adjusted property. "
-"When this button is present, it means you modified a property in the "
-"instanced scene to override its value in the saved scene. Even if that "
-"property is modified in the original scene, the custom value will remain. "
-"Pressing the revert button will restore the property to the value in the "
-"saved scene."
+"Changing a property on an instance always overrides values from the "
+"corresponding packed scene."
+msgstr ""
+
+msgid ""
+"Let's try this. Open ``Ball.tscn`` and select the Ball node. In the "
+"Inspector on the right, click on the PhysicsMaterial property to expand it."
+msgstr ""
+
+msgid ""
+"Set its Bounce property to ``2`` by clicking on the number field, typing "
+"``2``, and pressing :kbd:`Enter`."
+msgstr ""
+
+msgid ""
+"Play the game by pressing :kbd:`F5` and notice how all balls now bounce a "
+"lot more. As the Ball scene is a template for all instances, modifying it "
+"and saving causes all instances to update accordingly."
+msgstr ""
+
+msgid ""
+"Let's now adjust an individual instance. Head back to the Main scene by "
+"clicking on the corresponding tab above the viewport."
+msgstr ""
+
+msgid ""
+"Select one of the instanced Ball nodes and, in the Inspector, set its "
+"Gravity Scale value to ``10``."
+msgstr ""
+
+msgid "A grey \"revert\" button appears next to the adjusted property."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This icon indicates you are overriding a value from the source packed scene. "
+"Even if you modify the property in the original scene, the value override "
+"will be preserved in the instance. Clicking the revert icon will restore the "
+"property to the value in the saved scene."
 msgstr ""
 "Обратите внимание, что рядом с измененным свойством появляется серая кнопка "
 "\"вернуться\". Наличие этой кнопки означает, что вы изменили свойство в "
@@ -216,17 +207,139 @@ msgstr ""
 "значение останется. Нажатие кнопки возврата восстановит старое значение "
 "свойства, как в сохраненной сцене."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:119
-msgid "Conclusion"
-msgstr "Вывод"
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:121
 msgid ""
-"Instancing can be useful when you want to create many copies of the same "
-"object. It is also possible to create instances in code by using GDScript, "
-"see :ref:`doc_instancing_continued`."
+"Rerun the game and notice how this ball now falls much faster than the "
+"others."
 msgstr ""
-"Создавать экземпляры может быть полезно, если вы хотите создать множество "
-"копий одного и того же объекта. Также возможно создать экземпляр "
-"непосредственно в коде, используя GDScript, см :ref:"
-"`doc_scripting_continued`."
+
+msgid ""
+"If you change a value on the ``PhysicsMaterial`` of one instance, it will "
+"affect all the others. This is because ``PhysicsMaterial`` is a resource, "
+"and resources are shared between instances. To make a resource unique for "
+"one instance, right-click on it in the Inspector and click Make Unique in "
+"the contextual menu."
+msgstr ""
+
+msgid ""
+"Resources are another essential building block of Godot games we will cover "
+"in a later lesson."
+msgstr ""
+
+msgid "Scene instances as a design language"
+msgstr ""
+
+msgid ""
+"Instances and scenes in Godot offer an excellent design language, setting "
+"the engine apart from others out there. We designed Godot around this "
+"concept from the ground up."
+msgstr ""
+
+msgid ""
+"We recommend dismissing architectural code patterns when making games with "
+"Godot, such as Model-View-Controller (MVC) or Entity-Relationship diagrams. "
+"Instead, you can start by imagining the elements players will see in your "
+"game and structure your code around them."
+msgstr ""
+
+#, fuzzy
+msgid "For example, you could break down a shooter game like so:"
+msgstr "Например, вот как можно представить себе простую игру-шутер:"
+
+#, fuzzy
+msgid ""
+"You can come up with a diagram like this for almost any type of game. Each "
+"rectangle represents an entity that's visible in the game from the player's "
+"perspective. The arrows tell you which scene owns which."
+msgstr ""
+"Вы можете придумать такую схему практически для любой игры. Запишите части "
+"игры, которые вы можете визуализировать, а затем добавьте стрелки, чтобы "
+"показать принадлежность одних компонентов другим."
+
+#, fuzzy
+msgid ""
+"Once you have a diagram, we recommended creating a scene for each element "
+"listed in it to develop your game. You'll use instancing, either by code or "
+"directly in the editor, to build your tree of scenes."
+msgstr ""
+"Как только вы получите такую схему, рекомендуем вам создать сцены для "
+"каждого элемента игры, указанного на схеме, так же используйте создание "
+"экземпляров (либо в коде, либо непосредственно в редакторе) для задания "
+"принадлежности одних компонентов к другим."
+
+#, fuzzy
+msgid ""
+"Programmers tend to spend a lot of time designing abstract architectures and "
+"trying to fit components into it. Designing based on scenes makes "
+"development faster and more straightforward, allowing you to focus on the "
+"game logic itself. Because most game components map directly to a scene, "
+"using a design based on scene instantiation means you need little other "
+"architectural code."
+msgstr ""
+"В программировании игр (и в разработке вообще) много времени тратится на "
+"проектирование архитектуры самой игры и взаимосвязей между ее компонентами в "
+"рамках созданной архитектуры. Проектирование на основе сцен заменяет этот "
+"подход и делает разработку намного быстрее и более простой, позволяя вам "
+"сосредоточиться на самой логике игры. Поскольку большинство игровых "
+"компонентов отображаются непосредственно в сцене, то использование дизайна "
+"основанного на создании экземпляра сцены означает, что требуется немного "
+"другой подход для ее построения."
+
+#, fuzzy
+msgid ""
+"Here's the example of a scene diagram for an open-world game with tons of "
+"assets and nested elements:"
+msgstr ""
+"Рассмотрим еще один, несколько более сложный пример игры открытого типа с "
+"большим количеством ресурсов и вложенных элементов:"
+
+msgid ""
+"Imagine we started by creating the room. We could make a couple of different "
+"room scenes, with unique arrangements of furniture in them. Later, we could "
+"make a house scene that uses multiple room instances for the interior. We "
+"would create a citadel out of many instanced houses and a large terrain on "
+"which we would place the citadel. Each of these would be a scene instancing "
+"one or more sub-scenes."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Later, we could create scenes representing guards and add them to the "
+"citadel. They would be indirectly added to the overall game world."
+msgstr ""
+"Позже мы можем создать сцены, которые представляют собой охранников (и "
+"других NPC) и добавить их в нашу крепость. В результате, они будут косвенно "
+"добавлены в общий игровой мир."
+
+#, fuzzy
+msgid ""
+"With Godot, it's easy to iterate on your game like this, as all you need to "
+"do is create and instantiate more scenes. We designed the editor to be "
+"accessible to programmers, designers, and artists alike. A typical team "
+"development process can involve 2D or 3D artists, level designers, game "
+"designers, and animators, all working with the Godot editor."
+msgstr ""
+"С Godot, это легко повторить и в вашей игре, все что вам нужно сделать, это "
+"создать больше экземпляров сцен. Кроме того, пользовательский интерфейс "
+"редактора разработан, чтобы быть удобным как для программистов так и не "
+"программистов. Типичный состав команды разработчиков может включать в себя "
+"2D или 3D художников, дизайнеров уровней, гейм-дизайнеров и аниматоров, и "
+"все работают с одним интерфейсом редактора."
+
+msgid "Summary"
+msgstr "Подведение итогов"
+
+msgid ""
+"Instancing, the process of producing an object from a blueprint has many "
+"handy uses. With scenes, it gives you:"
+msgstr ""
+
+#, fuzzy
+msgid "The ability to divide your game into reusable components."
+msgstr "Добавление панели и счетчика в UI"
+
+msgid "A tool to structure and encapsulate complex systems."
+msgstr ""
+
+msgid ""
+"A language to think about your game project's structure in a natural way."
+msgstr ""

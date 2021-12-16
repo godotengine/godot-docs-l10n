@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:4
 msgid "Using RigidBody"
-msgstr "使用RigidBody"
+msgstr "使用 RigidBody"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
 msgstr "什么是刚体？"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:9
 msgid ""
 "A rigid body is one that is directly controlled by the physics engine in "
 "order to simulate the behavior of physical objects. In order to define the "
@@ -37,11 +34,9 @@ msgstr ""
 "配一个或多个 :ref:`Shape <class_Shape>` 对象. 注意, 设置这些形状的位置将影响"
 "物体的重心."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:13
 msgid "How to control a rigid body"
 msgstr "如何控制刚体"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:15
 msgid ""
 "A rigid body's behavior can be altered by setting its properties, such as "
 "mass and weight. A physics material needs to be added to the rigid body to "
@@ -55,13 +50,11 @@ msgstr ""
 "查器中或通过代码来设置。参见 :ref:`RigidBody <class_RigidBody>` 和 :ref:"
 "`PhysicsMaterial <class_PhysicsMaterial>` 获取完整的属性列表和它们的效果。"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:21
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
 msgstr "有几种方法可以控制刚体的运动, 这取决于您的应用程序."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:23
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
@@ -80,7 +73,6 @@ msgstr ""
 "这种行为时, 一个常见的错误是每一帧都使用 ``look_at()`` , 这样会破坏物理模拟. "
 "下面, 我们将演示如何正确地实现这一点."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:26
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
@@ -93,11 +85,9 @@ msgstr ""
 "这个方法中, 你可以添加 *力* , 应用 *冲量* , 或者设置 *速度* , 以实现你想要的"
 "任何运动."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:29
 msgid "The \"look at\" method"
-msgstr "\"look at\" 方法"
+msgstr "“look at”方法"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:31
 msgid ""
 "As described above, using the Spatial node's ``look_at()`` method can't be "
 "used each frame to follow a target. Here is a custom ``look_at()`` method "
@@ -106,7 +96,6 @@ msgstr ""
 "如上所述, 使用Spatial节点的 ``look_at()`` 方法不能每一帧都用来跟踪一个目标. "
 "这里有一个自定义的 ``look_at()`` 方法, 它可以可靠地工作在刚体上:"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:73
 msgid ""
 "This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
@@ -116,7 +105,6 @@ msgstr ""
 "使用刚体的 ``set_angular_velocity()`` 方法来旋转刚体. 它首先计算当前角度和期"
 "望角度之间的差值, 然后加上一帧时间内旋转所需的速度."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:75
 msgid ""
 "This script will not work with rigid bodies in *character mode* because "
 "then, the body's rotation is locked. In that case, you would have to rotate "

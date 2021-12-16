@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr "Canvas Layers(画布层)"
+msgstr "画布层"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr "Viewport (视窗) 和 Canvas Item (画布项)"
+msgstr "Viewport（视窗）和 Canvas Item（画布项）"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:9
+#, fuzzy
 msgid ""
-"Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
-"<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
-"which is the base for all 2D nodes. CanvasItems can be arranged in trees. "
-"Each item will inherit its parent's transform. This means that when the "
-"parent is moved, the children will move too."
+":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
+"regular"
+msgstr ":ref:`CanvasModulate<class_CanvasModulate>` 用于使场景变暗."
+
+#, fuzzy
+msgid ""
+"2D nodes, such as :ref:`Node2D <class_Node2D>`, or `Control "
+"<class_Control>`. Both inherit from :ref:`CanvasItem <class_CanvasItem>`. "
+"You can arrange canvas items in trees. Each item will inherit its parent's "
+"transform: when the parent moves, its children move too."
 msgstr ""
 "常规2D节点, 如 :ref:`Node2D <class_Node2D>` 或 :ref:`Control "
 "<class_Control>` 都继承自 :ref:`CanvasItem <class_CanvasItem>` , 它是所有2D节"
 "点的基础.CanvasItem 被组织成树状结构, 同时继承它们父节点的变换. 这意味着在移"
 "动父节点时, 子节点也会被移动."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:16
+#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
-"children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
-"through it."
+"children of a :ref:`Viewport <class_Viewport>`, that display them."
 msgstr ""
 "CanvasItem 节点和继承他们的节点, 都作为 :ref:`Viewport <class_Viewport>` 的直"
 "接或间接子节点放置, 并将通过它显示."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:19
+#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
-"<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
-"ref:`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy "
-"it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
+"<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
+"`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy it "
+"contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
 "Viewport 具有属性 :ref:`Viewport.canvas_transform "
@@ -60,16 +62,15 @@ msgstr ""
 "级施加一个自定义的 :ref:`Transform2D <class_Transform2D>` 变换. 如 :ref:"
 "`Camera2D <class_Camera2D>` 的主要工作方式就是改变那个Transform2D变换."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:25
+#, fuzzy
 msgid ""
-"Effects like scrolling are best achieved by manipulating the canvas "
-"transform property. This approach is more efficient than moving the root "
-"canvas item (and hence the whole scene)."
+"To achieve effects like scrolling, manipulating the canvas transform "
+"property is more efficient than moving the root canvas item and the entire "
+"scene with it."
 msgstr ""
 "像滚动这样的效果最好是通过操纵画布transform变换属性来实现。这种方法比移动根画"
 "布项(以及整个场景)更有效。"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:28
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. For example:"
@@ -77,24 +78,22 @@ msgstr ""
 "通常情况下，我们并不希望游戏或应用程序中的 *所有东西* 都受到画布变换的约束。"
 "比如:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr "**Parallax Backgrounds(视差背景)** : 比场景其他部分移动得慢的背景."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:33
+#, fuzzy
 msgid ""
-"**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
-"on our view of the game world. We want a life counter, score display and "
-"other elements to retain their screen positions even when our view of the "
-"game world changes."
+"**UI**: Think of a user interface (UI) or Heads-up display (HUD) "
+"superimposed on our view of the game world. We want a life counter, score "
+"display and other elements to retain their screen positions even when our "
+"view of the game world changes."
 msgstr ""
 "**UI**: 想想看，用户界面（UI）或平视显示系统（HUD）叠加在我们游戏世界的视野。"
 "我们希望生命计数器、分数显示和其他元素能够保持其屏幕位置，即使我们在游戏世界"
 "的视角发生变化。"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
@@ -102,15 +101,12 @@ msgstr ""
 "**Transitions(转场)** : 我们应该希望用于转场的效果(淡入淡出之类的东西)也保持"
 "在固定的位置."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
 msgstr "如何在单个场景树中解决这些问题？"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
-msgstr "CanvasLayer(画布层)"
+msgstr "CanvasLayer"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
 "adds a separate 2D rendering layer for all its children and grand-children. "
@@ -126,7 +122,6 @@ msgstr ""
 "CanvasLayers也有自己的变换, 不依赖于其他层的变换. 这使得当我们对游戏世界的观"
 "察发生变化时,UI可以固定在屏幕空间中."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
 "An example of this is creating a parallax background. This can be done with "
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
@@ -135,11 +130,9 @@ msgstr ""
 "比如说创建Parallax Background(视差背景). 这可以通过层为 \"-1\" 的CanvasLayer"
 "完成. 带有分数, 生命计数器和暂停按钮的屏幕也可以创建在编号为 \"1\" 的层中."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
 msgstr "下面是它的图示:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
@@ -147,7 +140,6 @@ msgstr ""
 "CanvasLayer 独立于树顺序, 它们仅依赖于它们的层数, 因此可以只在需要时让它们实"
 "例化."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
 "CanvasLayers aren't necessary to control the drawing order of nodes. The "
 "standard way to ensuring that a node is  correctly drawn 'in front' or "

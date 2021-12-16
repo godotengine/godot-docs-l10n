@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:4
 msgid "Binding to external libraries"
 msgstr "外部ライブラリへのバインド"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
 msgstr "モジュール"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 #, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
@@ -38,7 +35,6 @@ msgstr ""
 "成された音声合成(テキスト読み上げ)ライブラリであるFestivalを使用した例を見て"
 "みましょう。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
@@ -46,15 +42,12 @@ msgstr ""
 "外部ライブラリにバインドするには、Summatorの例のようなモジュールディレクトリ"
 "をセットアップします:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr "次に、単純なTTSクラスを使用してヘッダーファイルを作成します:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
 msgstr "そして、cppファイルを追加します。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
@@ -62,18 +55,15 @@ msgstr ""
 "前と同じように、新しいクラスを何らかの方法で登録する必要があるため、さらに2つ"
 "のファイルを作成する必要があります:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
 #, fuzzy
 msgid "These files should contain the following:"
 msgstr "このコードは、次の動作を提供します:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
@@ -81,7 +71,6 @@ msgstr ""
 "次に、ビルドシステムがこのモジュールをコンパイルするように ``SCsub`` ファイル"
 "を作成する必要があります:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 #, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
@@ -94,7 +83,6 @@ msgstr ""
 "いては、ライブラリの公式ドキュメントを参照してください。参考のために、Linuxの"
 "インストールコマンドを以下に示します。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 #, fuzzy
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
@@ -109,7 +97,6 @@ msgstr ""
 "も)がGodotに問題がある可能性があります。ライセンスと使用条件を必ず確認してく"
 "ださい。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 #, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
@@ -123,7 +110,6 @@ msgstr ""
 "る必要があります。 festivalおよびspeech_toolsライブラリは、次のコマンドを使用"
 "して、gitを介してmodules/ tts/ディレクトリからインストールできます:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -133,7 +119,6 @@ msgstr ""
 "示すように(modules/tts/ディレクトリ内から)サブモジュールとして追加することに"
 "より、外部リポジトリソースファイルにリンクできます:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
 #, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
@@ -146,7 +131,6 @@ msgstr ""
 "モジュールを使用しないでください。モジュールがマージされない場合は、外部ライ"
 "ブラリをGDNative C++プラグインとしていつでも実装できます。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
@@ -154,7 +138,6 @@ msgstr ""
 "コンパイラが見るインクルードディレクトリを追加するには、環境のパスに追加しま"
 "す:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -165,18 +148,14 @@ msgstr ""
 "ません(エラーが発生する可能性があります)。カスタムフラグを使用した `SCsub` の"
 "例:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 msgid "The final module should look like this:"
 msgstr "最終的なモジュールは次のようになります:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr "モジュールの使用"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr "これで、任意のスクリプトから新しく作成したモジュールを使用できます:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "テキストが読み上げられた場合、出力は ``is_spoken: True`` になります。"

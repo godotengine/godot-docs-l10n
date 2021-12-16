@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript: An introduction to dynamic languages"
+msgstr "GDScript：動態語言簡介"
+
+msgid "About"
+msgstr "關於"
+
+msgid ""
+"This tutorial aims to be a quick reference for how to use GDScript more "
+"efficiently. It focuses on common cases specific to the language, but also "
+"covers a lot of information on dynamically typed languages."
+msgstr ""
+"本教學旨在提供一個更有效率使用 GDScript 的參考文件，並著重於 GDScript 中常見"
+"情形，同時也包含許多動態型別語言的資訊。"
+
+msgid ""
+"It's meant to be especially useful for programmers with little or no "
+"previous experience with dynamically typed languages."
+msgstr ""
+"也希望本教學能為僅有少數動態型別語言經驗或完全沒經驗的程式設計師提供幫助。"
+
+msgid "Dynamic nature"
+msgstr "動態性"
+
+msgid "Pros & cons of dynamic typing"
+msgstr "動態型別的優缺點"
+
+msgid ""
+"GDScript is a Dynamically Typed language. As such, its main advantages are "
+"that:"
+msgstr "GDScript 是動態型別語言。因此，GDScript 有下列優點："
+
+msgid "The language is simple and easy to learn."
+msgstr "GDScript 簡單易學。"
+
+msgid "Most code can be written and changed quickly and without hassle."
+msgstr "可以方便地撰寫或修改大部分程式碼。"
+
+msgid "Less code written means less errors & mistakes to fix."
+msgstr "寫更少的程式碼，代表需要修正的錯誤與失誤更少。"
+
+msgid "Easier to read the code (less clutter)."
+msgstr "更容易閱讀程式碼（混亂的部分更少）。"
+
+msgid "No compilation is required to test."
+msgstr "要測試時不需要編譯。"
+
+msgid "Runtime is tiny."
+msgstr "執行環境很小。"
+
+msgid "Duck-typing and polymorphism by nature."
+msgstr "具有鴨子型別與多型。"
+
+msgid "While the main disadvantages are:"
+msgstr "而主要缺點如下："
+
+msgid "Less performance than statically typed languages."
+msgstr "與靜態型別相比效能較差。"
+
+msgid "More difficult to refactor (symbols can't be traced)"
+msgstr "比較難進行重構（無法追蹤符號）"
+
+msgid ""
+"Some errors that would typically be detected at compile time in statically "
+"typed languages only appear while running the code (because expression "
+"parsing is more strict)."
+msgstr ""
+"在靜態型別語言中通常在編譯時偵測的錯誤只有在執行程式碼時才會出現（因為運算式"
+"解析比較嚴格）。"
+
+msgid ""
+"Less flexibility for code-completion (some variable types are only known at "
+"run-time)."
+msgstr "程式碼自動補全的靈活讀比較低（某些變數型別只有在執行時才可知）。"
+
+msgid ""
+"This, translated to reality, means that Godot+GDScript are a combination "
+"designed to create games quickly and efficiently. For games that are very "
+"computationally intensive and can't benefit from the engine built-in tools "
+"(such as the Vector types, Physics Engine, Math library, etc), the "
+"possibility of using C++ is present too. This allows you to still create "
+"most of the game in GDScript and add small bits of C++ in the areas that "
+"need a performance boost."
+msgstr ""
+"也就是說，實際上，這代表 Godot + GDScript 這樣的組合時設計來快速並有效率地製"
+"作遊戲。對於需要大量計算且無法通過 Godot 內建工具 (如 Vector 型別、物理引擎、"
+"數學函式…等) 來獲益的遊戲，也可以使用 C++。這樣一來便能以 GDScript 製作大部分"
+"的遊戲，並在需要改善效能的部分使用一點 C++。"
+
+msgid "Variables & assignment"
+msgstr "變數與賦值"
+
+msgid ""
+"All variables in a dynamically typed language are \"variant\"-like. This "
+"means that their type is not fixed, and is only modified through assignment. "
+"Example:"
+msgstr ""
+"在動態型別語言中所有的變數都類似「Variant 型別」。這表示變數的型別並非固定，"
+"且只會在賦值時更改。如："
+
+msgid "Static:"
+msgstr "靜態語言："
+
+msgid "Dynamic:"
+msgstr "動態語言："
+
+msgid "As function arguments:"
+msgstr "作為函式引數："
+
+msgid ""
+"Functions are of dynamic nature too, which means they can be called with "
+"different arguments, for example:"
+msgstr "函式也具有動態性質，這代表函式可以使用不同的引數呼叫，如："
+
+msgid "Pointers & referencing:"
+msgstr "指針與參照："
+
+msgid ""
+"In static languages, such as C or C++ (and to some extent Java and C#), "
+"there is a distinction between a variable and a pointer/reference to a "
+"variable. The latter allows the object to be modified by other functions by "
+"passing a reference to the original one."
+msgstr ""
+"在如 C 或 C++ 的靜態語言中 (與某種程度上來說的 Java 與 C#)，變數與變數的指針"
+"／參照是有區別的。後者可讓物件作為參照傳遞給函式時被函式修改。"
+
+msgid ""
+"In C# or Java, everything not a built-in type (int, float, sometimes String) "
+"is always a pointer or a reference. References are also garbage-collected "
+"automatically, which means they are erased when no longer used. Dynamically "
+"typed languages tend to use this memory model, too. Some Examples:"
+msgstr ""
+"在 C# 與 Java 中，所有非內建型別 (int, float, 某些時候的 String) 永遠都使用指"
+"針或參照來傳遞。參照也會自動執行記憶體回收機制，這表示參照會在不再使用後被清"
+"除。動態型別語言通常也會使用這種記憶體模型。例如："
+
+msgid "C++:"
+msgstr "C++："
+
+msgid "Java:"
+msgstr "Java："
+
+msgid "GDScript:"
+msgstr "GDScript："
+
+msgid ""
+"In GDScript, only base types (int, float, string and the vector types) are "
+"passed by value to functions (value is copied). Everything else (instances, "
+"arrays, dictionaries, etc) is passed as reference. Classes that inherit :ref:"
+"`class_Reference` (the default if nothing is specified) will be freed when "
+"not used, but manual memory management is allowed too if inheriting manually "
+"from :ref:`class_Object`."
+msgstr ""
+"在 GDScript 中，只有基礎型別 (int, float, string 與 vector 型別) 會以值來傳遞"
+"給函式 (會複製其值)。其他的型別 (實體、陣列、字典…等) 則會以參照傳遞。繼承"
+"了 :ref:`class_Reference` 的類別 (若未指定則預設繼承) 則會在不再使用後被釋"
+"放，但也可以手動繼承 :ref:`class_Object` 來手動管理記憶體。"
+
+msgid "Arrays"
+msgstr "陣列"
+
+msgid ""
+"Arrays in dynamically typed languages can contain many different mixed "
+"datatypes inside and are always dynamic (can be resized at any time). "
+"Compare for example arrays in statically typed languages:"
+msgstr ""
+"動態型別中的陣列可以包含各種混合的不同資料型別，且永遠為動態 (可隨時調整大"
+"小)。與靜態型別語言的陣列比較範例："
+
+msgid "And in GDScript:"
+msgstr "GDScript 中則為："
+
+msgid ""
+"In dynamically typed languages, arrays can also double as other datatypes, "
+"such as lists:"
+msgstr "在動態型別語言中，陣列也可以作為其他各種資料型別來使用，如列表："
+
+msgid "Or unordered sets:"
+msgstr "或無序集合："
+
+msgid "Dictionaries"
+msgstr "字典"
+
+msgid ""
+"Dictionaries are a powerful tool in dynamically typed languages. Most "
+"programmers that come from statically typed languages (such as C++ or C#) "
+"ignore their existence and make their life unnecessarily more difficult. "
+"This datatype is generally not present in such languages (or only in limited "
+"form)."
+msgstr ""
+"字典在動態型別語言中是很強大的功能。大多數靜態語言出生的工程師 (如 C++ 或 "
+"C#) 都忘了有這東西，並讓自己的生活變得太複雜。通常靜態型別語言內不會有這種資"
+"料型別（或是只有提供一小部分功能）。"
+
+msgid ""
+"Dictionaries can map any value to any other value with complete disregard "
+"for the datatype used as either key or value. Contrary to popular belief, "
+"they are efficient because they can be implemented with hash tables. They "
+"are, in fact, so efficient that some languages will go as far as "
+"implementing arrays as dictionaries."
+msgstr ""
+"字典可以用來映射任何數值到另一個數值，不論索引鍵或值是什麼資料型別。與一般的"
+"迷思不同，字典其實是很實用的工具，因為可以用來實作雜湊表。事實上，字典實用到"
+"有些語言直接把陣列實作成字典。"
+
+msgid "Example of Dictionary:"
+msgstr "字典使用例："
+
+msgid ""
+"Dictionaries are also dynamic, keys can be added or removed at any point at "
+"little cost:"
+msgstr "字典也是動態的，索引鍵可以在任何時候新增或移除，而不需花費太多力氣："
+
+msgid ""
+"In most cases, two-dimensional arrays can often be implemented more easily "
+"with dictionaries. Here's a simple battleship game example:"
+msgstr ""
+"大多數情況下，我們可以通過字典來更輕鬆地實作二維陣列。下面這個例子演示了一個"
+"簡單的戰艦遊戲："
+
+msgid ""
+"Dictionaries can also be used as data markup or quick structures. While "
+"GDScript's dictionaries resemble python dictionaries, it also supports Lua "
+"style syntax and indexing, which makes it useful for writing initial states "
+"and quick structs:"
+msgstr ""
+"字典也可以用來作為資料標記或是快速架構。由於 GDScript 的字典很像 Python 的字"
+"典，所以也支援 Lua 類型的語法與索引，在寫初始狀態或快速架構時很有用："
+
+msgid "For & while"
+msgstr "For 與 While"
+
+msgid "Iterating in some statically typed languages can be quite complex:"
+msgstr "在某些靜態型別語言中迭代可能很困難："
+
+msgid "This is usually greatly simplified in dynamically typed languages:"
+msgstr "而在動態型別語言中，迭代便非常簡單："
+
+msgid ""
+"Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
+"allow iterating the keys:"
+msgstr "可迭代容器資料型別 (陣列與字典)。字典則允許迭代索引鍵："
+
+msgid "Iterating with indices is also possible:"
+msgstr "也可以迭代索引："
+
+msgid "The range() function can take 3 arguments:"
+msgstr "range() 函式有三個引數："
+
+msgid "Some statically typed programming language examples:"
+msgstr "這些靜態型別語言的例子："
+
+msgid "Translate to:"
+msgstr "可以轉換為："
+
+msgid "And backwards looping is done through a negative counter:"
+msgstr "而反向循環可以使用負數計數器來完成："
+
+msgid "Becomes:"
+msgstr "改成："
+
+msgid "While"
+msgstr "\\ While"
+
+msgid "while() loops are the same everywhere:"
+msgstr "while() 循環則在所有地方都長得一樣："
+
+msgid "Custom iterators"
+msgstr "自定迭代器"
+
+msgid ""
+"You can create custom iterators in case the default ones don't quite meet "
+"your needs by overriding the Variant class's ``_iter_init``, ``_iter_next``, "
+"and ``_iter_get`` functions in your script. An example implementation of a "
+"forward iterator follows:"
+msgstr ""
+"當預設的迭代器不合用時，可以通過複寫 Variant 類別的 ``_iter_init``, "
+"``_iter_next`` 與 ``_iter_get`` 函式來製作自定迭代器。下列為一個正向迭代器的"
+"實作範例："
+
+msgid "And it can be used like any other iterator:"
+msgstr "用法與其他迭代器一樣："
+
+msgid ""
+"Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
+"nested for-loops that use custom iterators will not work as expected."
+msgstr ""
+"請確保在 ``_iter_init`` 中重設迭代器的狀態，否則使用自定迭代器的巢狀 for 循環"
+"可能會不正常。"
+
+msgid "Duck typing"
+msgstr "鴨子型別"
+
+msgid ""
+"One of the most difficult concepts to grasp when moving from a statically "
+"typed language to a dynamic one is duck typing. Duck typing makes overall "
+"code design much simpler and straightforward to write, but it's not obvious "
+"how it works."
+msgstr ""
+"從靜態型別語言換到動態型別語言時，其中一個最難掌握的概念就是鴨子型別。使用鴨"
+"子型別能讓程式碼設計整體上來說更簡單且直觀，但運作原理就不太直觀。"
+
+msgid ""
+"As an example, imagine a situation where a big rock is falling down a "
+"tunnel, smashing everything on its way. The code for the rock, in a "
+"statically typed language would be something like:"
+msgstr ""
+"舉個例子，想像當一個巨石滾到隧道中，沿路砸碎了所有東西。在靜態型別語言中，石"
+"頭的程式碼可能會長這樣："
+
+msgid ""
+"This way, everything that can be smashed by a rock would have to inherit "
+"Smashable. If a character, enemy, piece of furniture, small rock were all "
+"smashable, they would need to inherit from the class Smashable, possibly "
+"requiring multiple inheritance. If multiple inheritance was undesired, then "
+"they would have to inherit a common class like Entity. Yet, it would not be "
+"very elegant to add a virtual method ``smash()`` to Entity only if a few of "
+"them can be smashed."
+msgstr ""
+"這樣一來，所有能被石頭砸碎的物體都必須繼承 Smashable。若角色、敵人、傢俱、小"
+"石頭都要能被砸碎的話，則這些物件都必須繼承 Smashable 類別，而且可能需要用到多"
+"重繼承。所不想使用多重繼承的話，則必須都繼承通用類別，如 Entity。但，若只有其"
+"中幾個物件可以被砸碎的話，在 Entity 中加上 ``smash()`` 虛擬方法便不太優雅。"
+
+msgid ""
+"With dynamically typed languages, this is not a problem. Duck typing makes "
+"sure you only have to define a ``smash()`` function where required and "
+"that's it. No need to consider inheritance, base classes, etc."
+msgstr ""
+"在動態型別語言中，就不會有這種問題。通過鴨子型別，我們就只要在有需要的地方定"
+"義 ``smash()`` 方法，而無需考慮繼承、基礎類別…等。"
+
+msgid ""
+"And that's it. If the object that hit the big rock has a smash() method, it "
+"will be called. No need for inheritance or polymorphism. Dynamically typed "
+"languages only care about the instance having the desired method or member, "
+"not what it inherits or the class type. The definition of Duck Typing should "
+"make this clearer:"
+msgstr ""
+"就這樣。若被大石頭撞到的物件有 smash() 方法，則會呼叫 smash()。不需要使用繼承"
+"或多型。動態型別語言只關心實體是否有需要的方法或成員，而不管實體繼承哪個類"
+"別。瞭解鴨子型別的定義應該可以更清楚："
+
+msgid ""
+"*\"When I see a bird that walks like a duck and swims like a duck and quacks "
+"like a duck, I call that bird a duck\"*"
+msgstr ""
+"**「如果看到一隻鳥，像鴨子一樣走路、像鴨子一樣游泳、有像鴨子一樣的叫聲，那我"
+"們就叫這隻鳥鴨子」**"
+
+msgid "In this case, it translates to:"
+msgstr "這時，我們可以把這句話翻成："
+
+msgid ""
+"*\"If the object can be smashed, don't care what it is, just smash it.\"*"
+msgstr "**「若物件可以被砸碎，不管是什麼物件，把它砸碎就對了。」**"
+
+msgid "Yes, we should call it Hulk typing instead."
+msgstr "當然，我們也可以稱這個方法為「綠巨人浩克型別」。"
+
+#, fuzzy
+msgid ""
+"It's possible that the object being hit doesn't have a smash() function. "
+"Some dynamically typed languages simply ignore a method call when it doesn't "
+"exist, but GDScript is stricter, so checking if the function exists is "
+"desirable:"
+msgstr ""
+"被撞到的物件也可能沒有 smash() 函式。有些動態型別語言會忽略呼叫不存在的方法 "
+"(如 Objective C)，但 GDScript 中比較嚴格，所以需要檢查函式是否存在："
+
+msgid ""
+"Then, simply define that method and anything the rock touches can be smashed."
+msgstr "接著，只需要在被石頭碰到可以砸碎的物件上定義 smash 方法就好了。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:4
 msgid "2D meshes"
-msgstr "2D Meshes (2D网格)"
+msgstr "2D 网格"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:9
 msgid ""
 "In 3D, meshes are used to display the world. In 2D, they are rare as images "
 "are used more often. Godot's 2D engine is a pure two-dimensional engine, so "
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
-"在3D中, 网格用于显示世界. 在2D中它们不常见, 因为图片使用得更频繁.Godot的2D部"
-"分是一个纯2D引擎, 因此它不能直接显示3D网格(尽管它可以通过 ``Viewport(视窗)`` "
-"和 ``ViewportTexture(视窗纹理)`` 来实现)."
+"在 3D 中，网格用于显示世界。在 2D 中它们不常见，因为图片使用得更频繁。Godot "
+"的 2D 部分是一个纯 2D 引擎，因此它不能直接显示 3D 网格（尽管它可以通过 "
+"``Viewport`` 和 ``ViewportTexture`` 来实现）。"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
@@ -44,17 +40,14 @@ msgstr ""
 "如果你对在二维视区上显示三维网格感兴趣, 请参见 :ref:"
 "`doc_viewport_as_texture` 教程."
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
 "2D meshes are meshes that contain two-dimensional geometry (Z can be omitted "
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
-"二维网格是包含二维几何(Z轴可以省略或忽略)而不是三维几何的网格. 你可以尝试使用"
-"代码中的 ``SurfaceTool(表面工具)`` 创建它们, 并在 ``MeshInstance2D(二维网格实"
-"例)`` 节点中显示它们."
+"2D 网格是包含二维几何（Z 轴可以省略或忽略）而不是三维几何的网格。你可以尝试使"
+"用代码中的 ``SurfaceTool`` 创建它们，并在 ``MeshInstance2D`` 节点中显示它们。"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
@@ -62,11 +55,9 @@ msgstr ""
 "目前, 在编辑器中生成二维网格的唯一方法, 是导入一个OBJ文件作为网格, 或者从"
 "Sprite转换而来."
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
 msgstr "优化绘制的像素"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:23
 msgid ""
 "This workflow is useful for optimizing 2D drawing in some situations. When "
 "drawing large images with transparency, Godot will draw the whole quad to "
@@ -75,27 +66,23 @@ msgstr ""
 "在某些情况下, 这个工作流程对于优化二维绘图比较有用. 当绘制具有透明度的大型图"
 "像时,Godot将把整个四方形(quad)绘制到屏幕上. 大片的透明区域还是会被绘制."
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
 "This can affect performance, especially on mobile devices, when drawing very "
 "large images (generally screen sized), or layering multiple images on top of "
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
-"如果绘制非常大的图像时(大概屏幕大小), 或者将多个有大透明区域的图像叠加在一起"
-"(例如使用 \"视差背景\" 时), 这会影响性能, 尤其是在移动设备上."
+"如果绘制非常大的图像时（大概屏幕大小），或者将多个有大透明区域的图像叠加在一"
+"起（例如使用 ``ParallaxBackground`` 时），这会影响性能，尤其是在移动设备上。"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
 msgstr "转换成网格能确保只绘制不透明部分, 其余部分被忽略."
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
-msgstr "将Sprite转换为2D Meshes (2D网格)"
+msgstr "将 Sprite 转换为 2D 网格"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
 "You can take advantage of this optimization by converting a ``Sprite`` to a "
 "``MeshInstance2D``. Start with an image that contains large amounts of "
@@ -104,16 +91,13 @@ msgstr ""
 "你可以通过把 ``Sprite`` 转换为 ``MeshInstance2D`` 的方法来利用这种优化. 从边"
 "缘有大量透明的图片开始, 就像这棵树:"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr "把它放到一个 ``Sprite`` 中, 从菜单选择 \"转换为2D网格\":"
+msgstr "把它放到一个 ``Sprite`` 中，从菜单选择“转换为 2D 网格”："
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr "会出现一个对话框, 显示将要创建的二维网格预览:"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
@@ -121,8 +105,7 @@ msgstr ""
 "很多情况下, 默认值已经足够好, 但是你可以根据需要改变growth(增长)和"
 "simplication(简化):"
 
-#: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr "最后, 按下 ``Convert 2D Mesh`` 按钮, 你的Sprite将被替换:"
+msgstr "最后，按下 ``转换 2D 网格`` 按钮，你的 Sprite 将被替换："

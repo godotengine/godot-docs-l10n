@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:2
 msgid "Using C++ profilers"
 msgstr "使用 C++ 性能分析器"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:4
 msgid ""
 "To optimize Godot's performance, you need to know what to optimize first. To "
 "this end, profilers are useful tools."
 msgstr ""
 "要优化 Godot 的性能，你首先得知道要优化什么，性能分析器在这方面非常有用。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:9
 msgid ""
 "There is a built-in GDScript profiler in the editor, but using C++ profiler "
 "may be useful in cases where the GDScript profiler is not accurate enough or "
@@ -37,25 +34,20 @@ msgstr ""
 "编辑器中内置了一个 GDScript 的性能分析器，但在 GDScript 性能分析器不够精确或"
 "者因为问题而缺失信息时，就可以使用 C++ 性能分析器。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:14
 msgid "Recommended profilers"
 msgstr "性能分析器推荐"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:16
 msgid "`VerySleepy <http://www.codersnotes.com/sleepy/>`__ (Windows only)"
 msgstr ""
 "`VerySleepy <http://www.codersnotes.com/sleepy/>`__ （仅适用于 Windows）"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:17
 msgid "`HotSpot <https://github.com/KDAB/hotspot>`__ (Linux only)"
 msgstr "`HotSpot <https://github.com/KDAB/hotspot>`__ （仅适用于 Linux）"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:18
 msgid "`Xcode Instruments <https://developer.apple.com/xcode/>`__ (macOS only)"
 msgstr ""
 "`Xcode Instruments <https://developer.apple.com/xcode/>`__ （仅适用于 macOS）"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:20
 msgid ""
 "These profilers may not be the most powerful or flexible options, but their "
 "standalone operation and limited feature set tends to make them easier to "
@@ -64,7 +56,6 @@ msgstr ""
 "这些性能分析器可能不是最强大或者最灵活的，但它们独立的操作和有限的功能非常易"
 "用。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:25
 msgid ""
 "In its latest stable release (0.90 as of writing), VerySleepy will freeze "
 "when loading debug symbols. To solve this, exit VerySleepy then save `this "
@@ -74,12 +65,11 @@ msgid ""
 "located at ``C:\\Program Files\\Very Sleepy CS``."
 msgstr ""
 "最新稳定版（目前为 0.90）的 VerySleepy 在加载调试符号时会假死，解决方法时先退"
-"出 VerySleepy，然后把 `这个 dbghelpms.dll 文件 <https://github.com/AlanIWBFT/"
-"verysleepy/raw/0523fde86f24139fd4a041319f8b59ace12f602b/dbghelp_x64/"
-"dbghelpms.dll>`__ 保存到 VerySleepy 的安装目录中。这个文件夹通常位于 ``C:"
-"\\Program Files\\Very Sleepy CS`` 。"
+"出 VerySleepy，然后把\\ `这个 dbghelpms.dll 文件 <https://github.com/"
+"AlanIWBFT/verysleepy/raw/0523fde86f24139fd4a041319f8b59ace12f602b/"
+"dbghelp_x64/dbghelpms.dll>`__\\ 保存到 VerySleepy 的安装目录中。这个文件夹通"
+"常位于 ``C:\\Program Files\\Very Sleepy CS``\\ 。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:31
 msgid ""
 "If you are debugging a 32-bit application instead of 64-bit, save `this "
 "dbghelpms.dll file <https://github.com/AlanIWBFT/verysleepy/"
@@ -91,11 +81,9 @@ msgstr ""
 "raw/0523fde86f24139fd4a041319f8b59ace12f602b/dbghelp_x86/dbghelpms.dll>`__ 保"
 "存到 VerySleepy 安装目录的 ``32`` 文件夹中。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:36
 msgid "Setting up Godot"
 msgstr "设置 Godot"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:38
 msgid ""
 "To get useful profiling information, it is **absolutely required** to use a "
 "Godot build that includes debugging symbols. Official binaries do not "
@@ -105,7 +93,6 @@ msgstr ""
 "如果要获取有用的性能分析信息，就 **必须** 使用包含调试符号的 Godot 构建。官方"
 "二进制文件并不包含调试符号，因为会显著增加文件下载大小。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:42
 msgid ""
 "To get profiling data that best matches the production environment, you "
 "should compile binaries with the following SCons options:"
@@ -113,15 +100,12 @@ msgstr ""
 "如果想要获取与生产环境最接近的性能分析数据，你应该使用如下 SCons 选项来编译程"
 "序："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:45
 msgid "For editor binaries: ``target=release_debug use_lto=yes``"
 msgstr "编辑器程序： ``target=release_debug use_lto=yes``"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:46
 msgid "For debug export templates: ``target=release_debug use_lto=yes``"
 msgstr "调试模式的导出模板： ``target=release_debug use_lto=yes``"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:47
 msgid ""
 "For release export templates: ``tools=no target=release debug_symbols=yes`` "
 "- ``debug_symbols=yes`` is required as export templates are stripped from "
@@ -130,7 +114,6 @@ msgstr ""
 "发布模式的导出模板： ``tools=no target=release debug_symbols=yes`` - 必须使"
 "用 ``debug_symbols=yes`` 因为导出模板默认会和调试符号剥离。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:50
 msgid ""
 "It is possible to run a profiler on less optimized builds (e.g. "
 "``target=debug`` without LTO), but results will naturally be less "
@@ -139,7 +122,6 @@ msgstr ""
 "关闭部分优化的构建版本（比如 ``target=debug`` 但不开 LTO）也能用于性能分析，"
 "但得到的结果显然会和实际运行时的情况会有一定差距。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:55
 msgid ""
 "Do *not* strip debugging symbols on the binaries using the ``strip`` command "
 "after compiling the binaries. Otherwise, you will no longer get useful "
@@ -148,11 +130,9 @@ msgstr ""
 "*请勿* 在编译完成后使用 ``strip`` 命令剥离调试符号，否则运行性能分析器时无法"
 "得到有用的信息。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:60
 msgid "Benchmarking startup/shutdown times"
 msgstr "测量启动/关闭耗时"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:62
 msgid ""
 "If you're looking into optimizing Godot's startup/shutdown performance, you "
 "can tell the profiler to use the ``--quit`` command line option on the Godot "
@@ -165,21 +145,17 @@ msgstr ""
 "可以和 ``--editor`` 、 ``--project-manager`` 、 ``--path <项目目录路径>`` "
 "（该参数可以直接运行项目）搭配使用。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:70
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more command line arguments "
 "supported by Godot."
 msgstr "更多 Godot 支持的命令行参数见 :ref:`doc_command_line_tutorial` 。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:74
 msgid "Profiler-specific instructions"
 msgstr "性能分析器指令"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:77
 msgid "VerySleepy"
 msgstr "VerySleepy"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:79
 msgid ""
 "Start the Godot editor or your project first. If you start the project "
 "manager, make sure to edit or run a project first. Otherwise, the profiler "
@@ -190,17 +166,14 @@ msgstr ""
 "目。项目管理器会在编辑或运行项目时产生新的子进程，而性能分析器是无法追踪子进"
 "程的。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:83
 msgid ""
 "Open VerySleepy and select the Godot executable in the list of processes on "
 "the left:"
 msgstr "打开 VerySleepy 然后在左侧的进程列表中选中 Godot 程序："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:87
 msgid "Click the **Profile All** button on the right to start profiling."
 msgstr "点击右侧的 **Profile All** 按钮开始性能分析。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:88
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click **Stop** (*not* Abort)."
@@ -208,11 +181,9 @@ msgstr ""
 "在编辑器或者项目中执行你想分析性能的操作，完成后点击 **Stop** （注意 *不是* "
 "Abort）。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:89
 msgid "Wait for the results window to appear."
 msgstr "等待出现结果窗口。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:90
 msgid ""
 "Once the results window appears, filter the view to remove external modules "
 "(such as the graphics driver). You can filter by module by finding a line "
@@ -224,31 +195,25 @@ msgstr ""
 "先找到 **Module** 和 Godot 可执行文件名称一致的行，在那一行上单击右键，然后在"
 "下拉菜单中选择 **Filter Module to <Godot 可执行文件名>** 。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:94
 msgid "Your results window should now look something like this:"
 msgstr "结果窗口现在应该类似这样："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:99
 msgid "HotSpot"
 msgstr "HotSpot"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:101
 msgid "Open HotSpot. Click **Record Data**:"
 msgstr "打开 HotSpot。点击 **Record Data** ："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:105
 msgid ""
 "In the next window, specify the path to the Godot binary that includes debug "
 "symbols."
 msgstr "在下一个窗口中，指定包含调试符号的 Godot 可执行文件的路径。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:106
 msgid ""
 "Specify command line arguments to run a specific project, with or without "
 "the editor."
 msgstr "指定运行项目所使用的命令行参数，用不用编辑器运行都行。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:107
 msgid ""
 "The path to the working directory can be anything if an absolute path is "
 "used for the ``--path`` command line argument. Otherwise, it must be set to "
@@ -257,7 +222,6 @@ msgstr ""
 "如果 ``--path`` 参数使用的是绝对路径，那么工作目录的路径可以任选。否则应该可"
 "以在工作目录使用相对路径访问项目。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:110
 msgid ""
 "Make sure **Elevate Privileges** is checked if you have administrative "
 "privileges. While not essential for profiling Godot, this will ensure all "
@@ -268,14 +232,12 @@ msgstr ""
 "Godot 进行性能分析所必需的，这样做可以保证捕捉到所有事件，否则有些事件可能会"
 "被漏掉。你的设置现在应该类似这样："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:117
 msgid ""
 "Click **Start Recording** and perform the actions you wish to profile in the "
 "editor/project."
 msgstr ""
 "点击 **Start Recording** 然后在编辑器或者项目中执行需要分析性能的操作。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:118
 msgid ""
 "Quit the editor/project normally or use the **Stop Profiling** button in "
 "HotSpot to stop profiling early. Stopping profiling early can result in "
@@ -285,13 +247,11 @@ msgstr ""
 "来提前停止性能分析。如果你不在乎引擎本身的关闭过程，提前结束性能分析可以让分"
 "析结果更干净。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:121
 msgid ""
 "Click **View Results** and wait for the profiling visualization to be "
 "generated:"
 msgstr "点击 **View Results** 然后等待生成可视化性能分析结果："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:125
 msgid ""
 "Use the tabs at the top to navigate between the different views. These views "
 "show the same data, but in different ways. The **Flame Graph** tab is a good "
@@ -303,7 +263,6 @@ msgstr ""
 "**Flame Graph（火焰图）** 选项卡里可以很直观地找到哪些函数占用的时间最长。这"
 "些函数就是终点优化对象了，因为优化后可以显著提升性能。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:130
 msgid ""
 "At the bottom of all tabs except **Summary**, you will also see a list of "
 "CPU threads started by the engine among with the CPU utilization for each "
@@ -313,7 +272,6 @@ msgstr ""
 "除了 **Summary** 的其它选项卡底部都有一个引擎所开启的 CPU 线程列表，每个线程"
 "都列出了对应的 CPU 使用情况。你可以据此查看在特定时间点的瓶颈线程。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:138
 msgid ""
 "If you don't want the startup procedure to be included in the profile, you "
 "can also attach HotSpot to a running process by clicking **Record Data** "
@@ -324,17 +282,14 @@ msgstr ""
 "程上，点击 **Record Data** 然后把 **Launch Application** 下拉选项设置成 "
 "**Attach To Process(es)** 即可。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:143
 msgid ""
 "This process attachment-based workflow is similar to the one used by "
 "VerySleepy."
 msgstr "这样基于附加到进程的工作流和 VerySleepy 比较类似。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:146
 msgid "Xcode Instruments"
 msgstr "Xcode Instruments"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:148
 msgid ""
 "Open Xcode. Select **Open Developer Tool** - **Instruments** from the "
 "**Xcode** app menu:"
@@ -342,11 +297,9 @@ msgstr ""
 "打开 Xcode，在 **Xcode** 应用菜单中选择 **Open Developer Tool** - "
 "**Instruments** ："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:149
 msgid "Double-click on **Time Profiler** in the **Instruments** window:"
 msgstr "双击 **Instruments** 窗口中的 **Time Profiler** ："
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:153
 msgid ""
 "In the Time Profiler window, click on the **Target** menu, select **Choose "
 "target...** and specify the path to the Godot binary, command line arguments "
@@ -356,7 +309,6 @@ msgstr ""
 "后将路径设置为 Godot 可执行文件的路径，在下一个窗口中设置命令行参数和环境变"
 "量。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:159
 msgid ""
 "You can also attach the Time Profiler to a running process by selecting it "
 "from the **Target** menu."
@@ -364,22 +316,18 @@ msgstr ""
 "你也可以把 Time Profiler 附加到正在运行的进程上，在 **Target** 菜单中选择即"
 "可。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:162
 msgid ""
 "Click the **Start an immediate mode recording** button to start profiling."
 msgstr "点击 **Start an immediate mode recording** 按钮开始性能分析。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:166
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click the **Stop** button."
 msgstr "在编辑器或者项目中执行要分析性能的操作，完成后点击 **Stop** 按钮。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:169
 msgid "Wait for the results to appear."
 msgstr "等待结果出现。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:170
 msgid ""
 "At the bottom of the window you will see a call tree for all CPU threads "
 "started, and the **Heaviest Stack Trace** overview."
@@ -387,7 +335,6 @@ msgstr ""
 "窗口底部会显示所有被启动的 CPU 线程的调用树，以及一个 **Heaviest Stack "
 "Trace** 总览。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:172
 msgid ""
 "Select **Hide system libraries** in the **Call Tree** menu (at the bottom of "
 "window) to remove external modules."
@@ -395,7 +342,6 @@ msgstr ""
 "在（窗口底部的） **Call Tree** 菜单中选择 **Hide system libraries** 可以移除"
 "外部模块。"
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:174
 msgid ""
 "You can use the timeline at the top of the window to display details for the "
 "specific time period."

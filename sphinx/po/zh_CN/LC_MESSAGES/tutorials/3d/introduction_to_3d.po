@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr "3D简介"
+msgstr "3D 简介"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
 "Creating a 3D game can be challenging. That extra Z coordinate makes many of "
 "the common techniques that helped to make 2D games simple no longer work. To "
@@ -36,7 +34,6 @@ msgstr ""
 "的API. 大多数节点是相同的, 并且以2D和3D版本存在. 事实上, 可以看看3D平台游戏教"
 "程或3D运动学角色教程, 这些教程大部分与2D游戏相同."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
 "In 3D, math is a little more complex than in 2D, so also checking the :ref:"
 "`doc_vector_math` entry in the wiki (which was especially created for game "
@@ -46,22 +43,19 @@ msgstr ""
 "在3D中, 数学比2D更复杂一些, 所以看看Wiki里的 :ref:`doc_vector_math` 将有助于"
 "为有效开发3D游戏铺平道路(它是为游戏开发者, 而不是数学家或工程师, 特别创建的)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr "Spatial(空间)节点"
+msgstr "Spatial 节点"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
 ":ref:`Node2D <class_Node2D>` is the base node for 2D. :ref:`Control "
 "<class_Control>` is the base node for everything GUI. Following this "
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
-":ref:`Node2D <class_Node2D>` 是2D的基本节点. :ref:`Control <class_Control>` "
-"是所有GUI的基本节点. 按照这个逻辑,3D引擎中的所有3D物体使用 :ref:`Spatial "
-"<class_Spatial>` 节点."
+":ref:`Node2D <class_Node2D>` 是 2D 的基础节点。\\ :ref:`Control "
+"<class_Control>` 是所有 GUI 的基础节点。同理，3D 引擎中的所有 3D 物体都使用 :"
+"ref:`Spatial <class_Spatial>`\\ （空间）节点。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -69,16 +63,14 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
-"Spatial空间节点有一个局部变换, 它是相对于父节点而言的(只要父节点也是 **或继承"
-"自** 的Spatial空间类型). 这个变换可以以4×3 :ref:`Transform "
-"<class_Transform>` 的形式访问, 也可以以3个 :ref:`Vector3 <class_Vector3>` 成"
-"员的形式访问, 分别代表位置, 欧拉旋转(X, Y和Z角)和缩放."
+"Spatial 节点有一个局部变换，它是相对于父节点而言的（只要父节点也是\\ **或者继"
+"承自**\\ Spatial 类型）。这个变换可以以 4×3 的 :ref:`Transform "
+"<class_Transform>` 形式访问，也可以以 3 个 :ref:`Vector3 <class_Vector3>` 成"
+"员的形式访问，分别代表位置、欧拉旋转（X、Y、Z 角度）和缩放。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr "3D内容"
+msgstr "3D 内容"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
@@ -90,11 +82,9 @@ msgstr ""
 "用特殊的 3D 工具（通常称为 DCC）来创建，然后导出到某种交换文件格式，才能被 "
 "Godot 导入（3D 格式的标准化不及图像）。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
 msgstr "DCC创建的模型"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
@@ -105,20 +95,17 @@ msgstr ""
 "`doc_importing_3d_scenes` , 它允许导入整个场景(就像它们在DCC中看起来的那样), "
 "包括动画, 骨架绑定, 混合形状等."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
 "The second pipeline is by importing simple .OBJ files as mesh resources, "
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
-"第二条路线是通过 :ref:`doc_importing_3d_meshes` 导入简单的.OBJ文件作为网格资"
-"源, 然后将其放入 :ref:`MeshInstance <class_MeshInstance>` 节点中显示."
+"第二条路线是通过导入简单的 .OBJ 文件作为网格资源，然后将其放入 :ref:"
+"`MeshInstance <class_MeshInstance>` 节点中显示。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
 msgstr "生成的几何体"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
 "<class_ArrayMesh>` resource directly. Simply create your arrays and use the :"
@@ -128,12 +115,12 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
-"通过直接使用 :ref:`Mesh <class_Mesh>` 资源可以创建自定义几何体, 只需创建数组"
-"并使用 :ref:`Mesh.add_surface() <class_Mesh_method_add_surface>` 函数即可. 也"
-"有一个辅助类 :ref:`SurfaceTool <class_SurfaceTool>` , 它提供了一个更直接的API"
-"和帮助器, 用于索引, 生成法线, 切线等."
+"通过直接使用 :ref:`Mesh <class_Mesh>` 资源可以创建自定义几何体。只需创建数组"
+"并使用 :ref:`ArrayMesh.add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>` 函数即可。也可以使用辅助"
+"类 :ref:`SurfaceTool <class_SurfaceTool>`，它提供了一个更直接的 API 和帮助工"
+"具，用于索引、生成法线、切线等。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
@@ -142,11 +129,9 @@ msgstr ""
 "在任何情况下, 这种方法都是为了用于生成静态几何体(不会经常更新的模型), 因为创"
 "建顶点数组并将它们提交给3D API具有显著的性能开销."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
 msgstr "Immediate geometry (即时几何体)"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
@@ -157,11 +142,9 @@ msgstr ""
 "`ImmediateGeometry <class_ImmediateGeometry>` , 它会提供OpenGL 1.x风格的即时"
 "模式API来创建点, 线, 三角形等."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
 msgstr "3D环境下的2D"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
 "While Godot packs a powerful 2D engine, many types of games use 2D in a 3D "
 "environment. By using a fixed camera (either orthogonal or perspective) that "
@@ -175,7 +158,6 @@ msgstr ""
 "<class_Sprite3D>` 和 :ref:`AnimatedSprite3D <class_AnimatedSprite3D>` 等节点"
 "来创建混合了具有3D背景, 更逼真的视差, 灯光/阴影效果等的2D游戏."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
 "The disadvantage is, of course, that added complexity and reduced "
 "performance in comparison to plain 2D, as well as the lack of reference of "
@@ -184,11 +166,9 @@ msgstr ""
 "当然, 缺点在于与普通2D相比增加了复杂性并降低了与普通2D 相比的性能, 以及缺乏进"
 "行像素工作时的参考."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
 msgstr "环境"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
 "Besides editing a scene, it is often common to edit the environment. Godot "
 "provides a :ref:`WorldEnvironment <class_WorldEnvironment>` node that allows "
@@ -201,11 +181,9 @@ msgstr ""
 "式(就像放一个天空盒时那样)以及应用多种内置处理后效果. 环境可以在Camera中被覆"
 "写."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
 msgstr "3D 视窗"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
@@ -213,7 +191,6 @@ msgstr ""
 "编辑3D场景可以在3D选项卡中完成. 该选项卡可以手动选择, 但在选择Spatial节点时将"
 "自动启用."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
 "Default 3D scene navigation controls are similar to Blender (aiming to have "
 "some sort of consistency in the free software pipeline..), but options are "
@@ -223,11 +200,9 @@ msgstr ""
 "默认的3D场景导航控制类似于Blender(旨在在自由软件工作流程中具有某种一致性), 但"
 "在编辑器设置中也包含了自定义鼠标按钮和行为使其看上去像其他工具的选项:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
 msgstr "坐标系统"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything. 3D Physics and other areas are tuned for this, so "
@@ -238,7 +213,6 @@ msgstr ""
 "有事情. 3D物理和其他部分都为此而调整, 所以试图使用不同的缩放比例通常是一个坏"
 "主意(除非你知道你在做什么)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -251,7 +225,6 @@ msgstr ""
 "入, 尽管这在大多数时都适用, 但在极少数情况下, 诸如渲染或物理等敏感区域带来浮"
 "点精度问题(带来毛刺或失真). 所以, 确保你的渲染总是在正确的缩放比例下工作！"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
 "The Y coordinate is used for \"up\", though for most objects that need "
 "alignment (like lights, cameras, capsule collider, vehicle, etc.), the Z "
@@ -261,23 +234,18 @@ msgstr ""
 "Y坐标用于 \"向上 \", 但对于大多数需要对齐的物体(如灯光, 摄像机, 胶囊碰撞体, "
 "载具等),Z轴用作\" 指向\"方向. 这个约定大致意味着:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
 msgstr "**X** 是两边"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
 msgstr "**Y** 是上/下"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
 msgstr "**Z** 是前/后"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
 msgstr "空间和操纵辅助线框"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:152
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X, Y, Z "
@@ -289,50 +257,40 @@ msgstr ""
 "蓝分别代表X, Y, Z. 这种惯例也适用于网格和其他辅助线框(也适用于着色器语言,"
 "Vector3, Color等组件的排序)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
 msgstr "一些有用的键盘绑定:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
 msgstr "在移动, 缩放或旋转时, 按 :kbd:`Ctrl` 键, 可进行吸附放置或旋转."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr "要将视图集中在所选对象上, 按 :kbd:`F`."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
 msgstr "视图菜单"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr "视图选项由视窗工具栏中的 \"视图\" 菜单控制."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr "你可以通过这个菜单在编辑器的3D视图中隐藏辅助线框:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
 msgstr "要隐藏特定类型的辅助线框, 你可以在 \"视图\" 菜单中把它们切换掉."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
 msgstr "默认环境"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr "从项目管理器中创建时,3D环境具有默认的天空."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
 "Given how physically based rendering works, it is advised to always try to "
 "work with a default environment in order to provide indirect and reflected "
@@ -341,11 +299,9 @@ msgstr ""
 "鉴于基于物理的渲染工作方式, 建议总是使用一个默认环境, 以便为对象提供间接和反"
 "射光."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
 msgstr "相机"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
 "No matter how many objects are placed in the 3D space, nothing will be "
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
@@ -354,7 +310,6 @@ msgstr ""
 "无论在3D空间中放置多少物体, 除非在场景中添加了 :ref:`相机 <class_Camera>` , "
 "否则不会显示任何内容. 相机可以在正交或透视投影中工作:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
 "Cameras are associated with (and only display to) a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -366,13 +321,11 @@ msgstr ""
 "窗, 默认情况下会在其上显示摄像机, 但如果需要子视窗(作为渲染目标或画中画), 则"
 "需要自己的子摄像头才能显示."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
 msgstr "处理多台摄像机时, 每个视窗都遵循以下规则:"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
 "If no cameras are present in the scene tree, the first one that enters it "
 "will become the active camera. Further cameras entering the scene will be "
@@ -381,7 +334,6 @@ msgstr ""
 "如果场景树中没有摄像机, 则第一个进入的摄像机将成为活跃摄像机. 进入场景的其他"
 "摄像机将被忽略(除非它们被设置为 *current* )."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
 "If a camera has the \"*current*\" property set, it will be used regardless "
 "of any other camera in the scene. If the property is set, it will become "
@@ -390,17 +342,14 @@ msgstr ""
 "如果相机设置了\" *current* \"属性, 则无论场景中是否有其他相机, 都会使用它. 如"
 "果该属性已设置, 它将变为活动状态, 取代之前的摄像头."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr "如果活动摄像机离开场景树, 则按树形顺序排列的第一台摄像机将取代它."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
 msgstr "灯光"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:225
 msgid ""
 "Godot has a limit of up to 8 lights per mesh. Aside from that, there is no "
 "limitation on the number of lights, nor of types of lights, in Godot. As "

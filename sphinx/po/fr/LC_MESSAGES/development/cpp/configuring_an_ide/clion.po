@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:4
 msgid "CLion"
 msgstr "CLion"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:6
 msgid ""
 "`CLion <https://www.jetbrains.com/clion/>`_ is a commercial `JetBrains "
 "<https://www.jetbrains.com/>`_ IDE for C++."
@@ -29,11 +27,9 @@ msgstr ""
 "`CLion <https://www.jetbrains.com/clion/>`_ est un IDE commercial `JetBrains "
 "<https://www.jetbrains.com/>`_ pour C++."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:10
 msgid "Importing the project"
 msgstr "Importation du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:12
 msgid ""
 "CLion requires a ``CMakeLists.txt`` file as a project file, which is "
 "problematic for Godot because it uses the SCons buildsystem instead of "
@@ -47,7 +43,6 @@ msgstr ""
 "pour :ref:`Android Studio <doc_configuring_an_ide_android_studio>` qui peut "
 "également être utilisée par CLion."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:17
 msgid ""
 "From the CLion's welcome window choose the option to import an existing "
 "project. If you've already opened another project, choose **File > Open** "
@@ -57,7 +52,6 @@ msgstr ""
 "projet existant. Si vous avez déjà ouvert un autre projet, choisissez **File "
 "> Open** dans le menu du haut."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java/"
 "nativeSrcsConfigs`` (the ``CMakeLists.txt`` file is located there) and "
@@ -68,18 +62,15 @@ msgstr ""
 "sélectionnez-le (mais *pas* le fichier ``CMakeLists.txt`` lui-même), puis "
 "cliquez sur **OK**."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
 msgid "The folder containing the ``CMakeLists.txt`` file."
 msgstr "Le dossier contenant le fichier ``CMakeLists.txt``."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:29
 msgid ""
 "If this popup window appears, select **This Window** to open the project:"
 msgstr ""
 "Si cette fenêtre popup apparaît, sélectionnez **This Window** pour ouvrir le "
 "projet :"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:34
 msgid ""
 "Choose **Tools > CMake > Change Project Root** from the top menu and select "
 "the Godot root folder."
@@ -87,7 +78,6 @@ msgstr ""
 "Choisissez **Tools > CMake > Change Project Root** dans le menu du haut et "
 "sélectionnez le dossier racine de Godot."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:40
 msgid ""
 "You should be now be able to see all the project files. Autocomplete should "
 "work once the project has finished indexing."
@@ -96,7 +86,6 @@ msgstr ""
 "La fonction d'auto-complétion devrait fonctionner une fois l'indexation du "
 "projet terminée."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:43
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
@@ -104,11 +93,9 @@ msgstr ""
 "Si vous rencontrez des problèmes, demandez de l'aide sur l'un des `canaux "
 "communautaires de Godot <https://godotengine.org/community>`__."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:47
 msgid "Debugging the project"
 msgstr "Débogage du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:49
 msgid ""
 "Since CLion does not support SCons, you won't be able to compile, launch, "
 "and debug Godot from CLion in one step. You will first need to `compile "
@@ -125,11 +112,9 @@ msgstr ""
 "processus <https://www.jetbrains.com/help/clion/attaching-to-local-process."
 "html>`__."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:52
 msgid "Run the compilation in debug mode by entering ``scons``."
 msgstr "Exécutez la compilation en mode débogage en entrant ``scons``."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:54
 msgid ""
 "Run the binary you have created (in the bin directory). If you want to debug "
 "a specific project, run the binary with the following arguments : ``--editor "
@@ -141,21 +126,17 @@ msgstr ""
 "suivants : ``--editor --path path/to/your/godot/project``. Pour exécuter le "
 "projet au lieu de le modifier, supprimez l'argument ``--editor``."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:56
 msgid "In CLion, go to **Run > Attach to Process...**"
 msgstr "Dans CLion, allez dans **Run > Attach to Process...**"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:61
 msgid "Find and Select godot in the list (or type the binary name/Process ID)"
 msgstr ""
 "Trouvez et sélectionnez godot dans la liste (ou tapez le nom binaire/l'ID du "
 "processus)"
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:66
 msgid "You can now use the debugging tools from CLion."
 msgstr "Vous pouvez maintenant utiliser les outils de débogage de CLion."
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:70
 msgid ""
 "If you run the binary without any arguments, you will only debug the project "
 "manager window. Don't forget to add the ``--path path/to/your/godot/"

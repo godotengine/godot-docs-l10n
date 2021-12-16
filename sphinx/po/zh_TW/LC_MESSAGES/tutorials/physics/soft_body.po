@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/soft_body.rst:4
 #, fuzzy
 msgid "Using SoftBody"
 msgstr "使用模組"
 
-#: ../../docs/tutorials/physics/soft_body.rst:6
 msgid ""
 "Soft bodies (or *soft-body dynamics*) simulate movement, changing shape and "
 "other physical properties of deformable objects. This can for example be "
 "used to simulate cloth or to create more realistic characters."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:10
 msgid "Basic set-up"
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
 "A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:14
 msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:16
 msgid ""
 "Create a new scene with a ``Spatial`` node as root. Then, create a "
 "``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
 "in the inspector and increase the subdivision of the mesh for simulation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:20
 msgid ""
 "Set the parameters to obtain the type of soft body you aim for. Try to keep "
 "the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:24
 msgid ""
 "Handle some parameters with care, as some value can lead to strange results. "
 "For example, if the shape is not completely closed and you set pressure to "
@@ -63,84 +55,69 @@ msgid ""
 "wind."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:26
 msgid "Play the scene to view the simulation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:28
 msgid ""
 "To improve the simulation's result, increase the ``Simulation Precision``, "
 "this will give significant improvement at the cost of performance."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:31
 msgid "Cloak simulation"
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:33
 msgid "Let's make a cloak in the Platformer3D demo."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:35
 msgid ""
 "You can download the Platformer3D demo on `GitHub <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or `the Asset "
 "Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:37
 msgid ""
 "Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
 "``PlaneMesh`` to it."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:39
 msgid ""
 "Open the ``PlaneMesh`` properties and set the size(x: 0.5 y: 1) then set "
 "``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
 "position. You should end up with something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:43
 msgid "Subdivision generates a more tessellated mesh for better simulations."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:45
 msgid ""
 "Add a :ref:`BoneAttachment <class_BoneAttachment>` node under the skeleton "
 "node and select the Neck bone to attach the cloak to the character skeleton."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:47
 msgid ""
 "``BoneAttachment`` node is to attach objects to a bone of a armature. The "
 "attached object will follow the bone's movement, weapon of a character can "
 "be attached this way."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:51
 msgid ""
 "To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:55
 msgid ""
 "The pinned joints can be found in ``SoftBody``'s ``Attachments`` property, "
 "choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
 "joints, the pinned joints are now attached to the neck."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:59
 msgid ""
 "Last step is to avoid clipping by adding the Kinematic Body `Player` to "
 "``Parent Collision Ignore`` of the ``SoftBody``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:63
 msgid "Play the scene and the cloak should simulate correctly."
 msgstr ""
 
-#: ../../docs/tutorials/physics/soft_body.rst:67
 msgid ""
 "This covers the basic settings of softbody, experiment with the parameters "
 "to achieve the effect you are aiming for when making your game."

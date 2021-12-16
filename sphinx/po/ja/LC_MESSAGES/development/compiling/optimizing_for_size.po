@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:4
 msgid "Optimizing a build for size"
 msgstr "ビルドのサイズを最適化する"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:9
 msgid "Rationale"
 msgstr "理由"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:11
 msgid ""
 "Sometimes, it is desired to optimize a build for size rather than speed. "
 "This means not compiling unused functions from the engine, as well as using "
@@ -37,7 +34,6 @@ msgstr ""
 "コンパイラ フラグを用いることです。主に、モバイルやWebプラットフォーム向けの"
 "ビルドをする場合が想定されます。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:16
 msgid ""
 "This tutorial aims to give an overview on different methods to create a "
 "smaller binary. Before continuing, it is recommended to read the previous "
@@ -47,7 +43,6 @@ msgstr ""
 "きます。先にすすむ前にまず、Godotをそれぞれのプラットフォームにコンパイルする"
 "ことについてのチュートリアルを読むことをおすすめします。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:22
 msgid ""
 "You can use the online `Godot build options generator <https://godot-build-"
 "options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
@@ -55,11 +50,9 @@ msgid ""
 "Godot source directory."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
 msgstr "3Dの無効化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:30
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
@@ -67,7 +60,6 @@ msgstr ""
 "2Dゲームに3Dエンジン全体を持たせることは、通常あまり意味はありません。そのた"
 "め、これを無効化するビルド フラグがあります:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
 "Tools must be disabled in order to use this flag, as the editor is not "
 "designed to operate without 3D support. Without it, the binary size can be "
@@ -77,11 +69,9 @@ msgstr ""
 "には、まず tools を無効にする必要があります。3Dの無効化により、バイナリのサイ"
 "ズはおよそ15%減ります。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:41
 msgid "Disabling advanced GUI nodes"
 msgstr "高度なGUIノードの無効化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:43
 #, fuzzy
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
@@ -91,11 +81,9 @@ msgstr ""
 "GUIコントロールは必要としません。これらは、このビルド フラグにより無効化でき"
 "ます:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
 msgstr "不要なモジュールの無効化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
@@ -103,7 +91,6 @@ msgstr ""
 "Godotの機能の多くはモジュールとして提供されています。モジュールのリストを見る"
 "には、次のコマンドを使います:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:60
 msgid ""
 "The list of modules that can be disabled will appear, together with all "
 "build options. If you are working on a simple 2D game, you could disable a "
@@ -112,7 +99,6 @@ msgstr ""
 "無効にできるモジュールのリストが、ビルドオプションと共に表示されます。シンプ"
 "ルな2Dゲームであれば、このうちの多くを無効にできます:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:68
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
@@ -124,22 +110,18 @@ msgstr ""
 "のモジュールや、正規表現サポート、あるいはビデオ再生のためにtheora/webmを残し"
 "ておきたいかもしれません)。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid ""
 "Alternatively, you can supply a list of disabled modules by creating "
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:116
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:'doc_overriding_build_options'。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:119
 msgid "Optimizing for size instead of speed"
 msgstr "スピードの代わりにサイズを最適化する"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:121
 #, fuzzy
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
@@ -148,17 +130,14 @@ msgstr ""
 "Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
 "するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:128
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 "WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
 "なっています。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:131
 msgid "Compiling with link-time optimization"
 msgstr "リンク時最適化を使用したコンパイル"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:133
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -169,7 +148,6 @@ msgstr ""
 "り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
 "排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:142
 #, fuzzy
 msgid ""
 "Linking becomes much slower and more RAM consuming with this option, so it "
@@ -178,11 +156,9 @@ msgstr ""
 "このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
 "要があります。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:146
 msgid "Stripping binaries"
 msgstr "バイナリの除去"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:148
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""

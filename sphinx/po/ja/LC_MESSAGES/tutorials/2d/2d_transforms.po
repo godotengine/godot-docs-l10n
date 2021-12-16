@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
 msgstr "Viewportおよびキャンバスの幾何学変換"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:9
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
 "they draw their content locally to the time they are drawn onto the screen. "
@@ -35,11 +32,9 @@ msgstr ""
 "行われる2D幾何学変換の概要について説明します。この概要では、エンジンの非常に"
 "低いレベルの詳細について説明します。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
 msgstr "キャンバスの幾何学変換"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:16
 msgid ""
 "As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
 "CanvasItem node (remember that Node2D and Control based nodes use CanvasItem "
@@ -53,7 +48,6 @@ msgstr ""
 "すべてのキャンバス・レイヤーには、 \\ :ref:`Transform2D <class_Transform2D>` "
 "としてアクセスできる幾何学変換(平行移動、回転、拡大縮小など)があります。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:22
 msgid ""
 "Also covered in the previous tutorial, nodes are drawn by default in Layer "
 "0, in the built-in canvas. To put nodes in a different layer, a :ref:"
@@ -63,11 +57,9 @@ msgstr ""
 "キャンバスに描画されます。 ノードを別のレイヤーに配置するには、 a \\ :ref:"
 "`CanvasLayer <class_CanvasLayer>` ノードを使うことができます。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
 msgstr "グローバル・キャンバスの幾何学変換"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:29
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
 "<class_Transform2D>`). This is the master transform and affects all "
@@ -79,11 +71,9 @@ msgstr ""
 "すべての個々の *Canvas Layer* の幾何学変換に影響します。通常、この幾何学変換"
 "はあまり使用されませんが、GodotのエディタのCanvasItemエディタで使用されます。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
 msgstr "ストレッチ幾何学変換"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:38
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
 "or stretching the screen. This transform is used internally (as described "
@@ -95,7 +85,6 @@ msgstr ""
 "`doc_multiple_resolutions` で説明されているように)内部的に使われますが、各"
 "Viewportで手動で設定することもできます。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:43
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
 "<class_MainLoop_method__input_event>` callback are multiplied by this "
@@ -110,11 +99,9 @@ msgstr ""
 "上 \\ :ref:`CanvasItem.make_input_local() "
 "<class_CanvasItem_method_make_input_local>` 関数が追加されました。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
 msgstr "変換の順序"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
 "For a coordinate in CanvasItem local properties to become an actual screen "
 "coordinate, the following chain of transforms must be applied:"
@@ -122,27 +109,21 @@ msgstr ""
 "CanvasItemローカルプロパティの座標を実際の画面座標にするには、次の一連の変換"
 "を適用する必要があります:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:58
 msgid "Transform functions"
 msgstr "変換関数"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
 msgstr "各変換を取得するには、次の関数を使用します:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Type"
 msgstr "タイプ(型)"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
 msgstr "トランスフォーム"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
 msgstr "キャンバス・アイテム"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
@@ -150,11 +131,9 @@ msgstr ""
 "\\ :ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
 msgstr "キャンバス・レイヤー"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
@@ -162,11 +141,9 @@ msgstr ""
 "\\ :ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr "キャンバス・レイヤー+グローバル・キャンバス+ストレッチ"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
@@ -174,7 +151,6 @@ msgstr ""
 "\\ :ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
@@ -182,7 +158,6 @@ msgstr ""
 "最後に、CanvasItemのローカル座標をスクリーン座標に変換するには、次の順序で乗"
 "算します:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:84
 msgid ""
 "Keep in mind, however, that it is generally not desired to work with screen "
 "coordinates. The recommended approach is to simply work in Canvas "
@@ -193,11 +168,9 @@ msgstr ""
 "奨される方法は、画面の自動解像度のサイズ変更が正しく機能するように、単純に"
 "Canvas座標( ``CanvasItem.get_global_transform()`` )で作業することです。"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:90
 msgid "Feeding custom input events"
 msgstr "カスタム入力イベントのフィード"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:92
 msgid ""
 "It is often desired to feed custom input events to the scene tree. With the "
 "above knowledge, to correctly do this, it must be done the following way:"

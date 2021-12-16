@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/pr_workflow.rst:4
 msgid "Pull request workflow"
 msgstr "Ablauf eines Pull Request"
 
-#: ../../docs/community/contributing/pr_workflow.rst:8
 msgid ""
 "The so-called \"PR workflow\" used by Godot is common to many projects using "
 "Git, and should be familiar to veteran free software contributors. The idea "
@@ -41,7 +39,6 @@ msgstr ""
 "von einem Zweig ihres Fork zu einem Zweig des Originals an ( oft als "
 "*Upstream* bezeichnet)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:16
 msgid ""
 "The resulting *pull request* (PR) can then be reviewed by other "
 "contributors, which might approve it, reject it, or most often request that "
@@ -55,7 +52,6 @@ msgstr ""
 "Kernentwickler zusammengeführt werden, und seine Commits (der neue Code) "
 "werden Teil des Zielzweigs (normalerweise des *Master*-Zweigs)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:22
 msgid ""
 "We will go together through an example to show the typical workflow and "
 "associated Git commands. But first, let's have a quick look at the "
@@ -65,11 +61,9 @@ msgstr ""
 "und die zugehörigen Git-Befehle zu zeigen. Aber zuerst werfen wir einen "
 "kurzen Blick auf die Organisation von Godots Git-Repository."
 
-#: ../../docs/community/contributing/pr_workflow.rst:27
 msgid "Git source repository"
 msgstr "Git Quell-Repository"
 
-#: ../../docs/community/contributing/pr_workflow.rst:29
 msgid ""
 "The `repository on GitHub <https://github.com/godotengine/godot>`_ is a `Git "
 "<https://git-scm.com>`_ code repository together with an embedded issue "
@@ -79,7 +73,6 @@ msgstr ""
 "`Git <https://git-scm.com>`_ Code-Repository zusammen mit einem "
 "eingebetteten Problem-Tracker und einem PR-System."
 
-#: ../../docs/community/contributing/pr_workflow.rst:33
 msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
@@ -88,7 +81,6 @@ msgstr ""
 "auf die verschiedenen `Godot-Demoprojekte <https://github.com/godotengine/"
 "godot-demo-projects>`_ werfen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:36
 msgid ""
 "The Git version control system is the tool used to keep track of successive "
 "edits to the source code - to contribute efficiently to Godot, learning the "
@@ -113,23 +105,22 @@ msgstr ""
 "Änderung erzwingt, was schnell zu PRs mit einem unlesbaren Git-Verlauf führt "
 "(insbesondere nach einer Peer Rezension)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:46
+#, fuzzy
 msgid ""
 "The first sections of Git's \"Book\" are a good introduction to the tool's "
 "philosophy and the various commands you need to master in your daily "
 "workflow. You can read them online on the `Git SCM <https://git-scm.com/book/"
-"en/v2>`_ website."
+"en/v2>`_ website. You can also try out `GitHub's interactive guide <https://"
+"try.github.io/>`__."
 msgstr ""
 "Die ersten Abschnitte von Gits \"Buch\" sind eine gute Einführung in die "
 "Philosophie des Tools und die verschiedenen Befehle, die Sie in Ihrem "
 "täglichen Arbeitsablauf beherrschen müssen. Sie können sie online auf der "
 "Website `Git SCM <https://git-scm.com/book/en/v2>`_ lesen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:51
 msgid "The branches on the Git repository are organized as follows:"
 msgstr "Die Zweige im Git-Repository sind wie folgt organisiert:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:53
 msgid ""
 "The ``master`` branch is where the development of the next major version "
 "occurs. As a development branch, it can be unstable and is not meant for use "
@@ -139,7 +130,6 @@ msgstr ""
 "Als Entwicklungszweig kann es instabil sein und ist nicht für den Einsatz in "
 "der Produktion vorgesehen. Hier sollten PRs vorrangig durchgeführt werden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:57
 msgid ""
 "The stable branches are named after their version, e.g. ``3.1`` and ``2.1``. "
 "They are used to backport bugfixes and enhancements from the ``master`` "
@@ -162,7 +152,6 @@ msgstr ""
 "diesem Fall die PR für den Zweig ``Master`` vorrangig fest. Release-Manager "
 "können den Fix dann bei Bedarf für einem stabilen Zweig auswählen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:67
 msgid ""
 "There might occasionally be feature branches, usually meant to be merged "
 "into the ``master`` branch at some time."
@@ -170,11 +159,9 @@ msgstr ""
 "Es kann gelegentlich Feature-Zweige geben, die normalerweise zu einem "
 "bestimmten Zeitpunkt in den ``master``-Zweig integriert werden sollen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:71
 msgid "Forking and cloning"
 msgstr "abspalten (Fork) und klonen"
 
-#: ../../docs/community/contributing/pr_workflow.rst:73
 msgid ""
 "The first step is to *fork* the `godotengine/godot <https://github.com/"
 "godotengine/godot>`_ repository on GitHub. To do so, you will need to have a "
@@ -187,7 +174,6 @@ msgstr ""
 "oberen rechten Ecke der GitHub-Seite des Repositorys sollten Sie die "
 "Schaltfläche \"Fork\" wie unten gezeigt sehen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:80
 msgid ""
 "Click it, and after a while you should be redirected to your own fork of the "
 "Godot repo, with your GitHub username as namespace:"
@@ -196,7 +182,6 @@ msgstr ""
 "Benutzernamen als Namensraum zu Ihrer eigenen Abzweigung des Godot-Repos "
 "weitergeleitet werden:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:85
 msgid ""
 "You can then *clone* your fork, i.e. create a local copy of the online "
 "repository (in Git speak, the *origin remote*). If you haven't already, "
@@ -211,7 +196,6 @@ msgstr ""
 "verwenden oder installieren Sie es über Ihren Paketmanager, wenn Sie Linux "
 "verwenden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:90
 msgid ""
 "If you are on Windows, open Git Bash to type commands. macOS and Linux users "
 "can use their respective terminals."
@@ -219,12 +203,10 @@ msgstr ""
 "Wenn Sie unter Windows arbeiten, öffnen Sie Git Bash um Befehle einzugeben. "
 "Benutzer von MacOS und Linux können ihre jeweiligen Terminals verwenden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:93
 msgid "To clone your fork from GitHub, use the following command:"
 msgstr ""
 "Verwenden Sie den folgenden Befehl, um Ihren Fork von GitHub zu klonen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:99
 msgid ""
 "In our examples, the \"$\" character denotes the command line prompt on "
 "typical UNIX shells. It is not part of the command and should not be typed."
@@ -233,7 +215,6 @@ msgstr ""
 "in typischen UNIX-Shells. Es ist nicht Teil des Befehls und sollte nicht "
 "eingegeben werden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:103
 msgid ""
 "After a little while, you should have a ``godot`` directory in your current "
 "working directory. Move into it using the ``cd`` command:"
@@ -242,7 +223,6 @@ msgstr ""
 "Arbeitsverzeichnis haben, in das Sie mit dem Befehl ``cd`` hineinwechseln "
 "können:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:110
 msgid ""
 "We will start by setting up a reference to the original repository that we "
 "forked:"
@@ -250,7 +230,6 @@ msgstr ""
 "Wir beginnen mit der Einrichtung eines Verweises auf das ursprüngliche "
 "Repository, das wir abspaltet haben:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:117
 msgid ""
 "This will create a reference named ``upstream`` pointing to the original "
 "``godotengine/godot`` repository. This will be useful when you want to pull "
@@ -264,7 +243,6 @@ msgstr ""
 "zu aktualisieren. Sie haben eine andere Fernreferenz namens ``origin``, die "
 "auf Ihren Fork zeigt (``USERNAME/godot``)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:122
 msgid ""
 "You only need to do the above steps once, as long as you keep that local "
 "``godot`` folder (which you can move around if you want, the relevant "
@@ -275,7 +253,6 @@ msgstr ""
 "möchten, die relevanten Metadaten sind in seinem ``.git``-Unterordner "
 "versteckt)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:126
 msgid ""
 "*Branch it, pull it, code it, stage it, commit, push it, rebase it... "
 "technologic.*"
@@ -283,7 +260,6 @@ msgstr ""
 "*verzweigen, ziehen, codieren, inszenieren, bestätigen, hochschieben, neu "
 "bauen... technologisch.*"
 
-#: ../../docs/community/contributing/pr_workflow.rst:129
 msgid ""
 "This bad take on Daft Punk's *Technologic* shows the general conception Git "
 "beginners have of its workflow: lots of strange commands to learn by copy "
@@ -300,7 +276,6 @@ msgstr ""
 "wissen. Deshalb geben wir Ihnen die grundlegenden Befehle, die Sie bei der "
 "Arbeit in Git wissen sollten."
 
-#: ../../docs/community/contributing/pr_workflow.rst:137
 msgid ""
 "In the following, we will assume as an example that you want to implement a "
 "feature in Godot's project manager, which is coded in the ``editor/"
@@ -310,11 +285,9 @@ msgstr ""
 "Projektmanager implementieren möchten, die in der Datei ``editor/"
 "project_manager.cpp`` codiert ist."
 
-#: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
 msgstr "Verzweigungen"
 
-#: ../../docs/community/contributing/pr_workflow.rst:144
 msgid ""
 "By default, the ``git clone`` should have put you on the ``master`` branch "
 "of your fork (``origin``). To start your own feature development, we will "
@@ -324,15 +297,12 @@ msgstr ""
 "Forks setzen (``Ursprung``). Um Ihre eigene Feature-Entwicklung zu starten, "
 "erstellen wir einen Feature-Zweig:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:156
 msgid "This command is equivalent:"
 msgstr "Dieser Befehl entspricht:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:163
 msgid "If you want to go back to the ``master`` branch, you'd use:"
 msgstr "Wenn Sie zum ``Master``-Zweig zurückkehren möchten, verwenden Sie:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:169
 msgid ""
 "You can see which branch you are currently on with the ``git branch`` "
 "command:"
@@ -340,7 +310,6 @@ msgstr ""
 "Mit dem Befehl ``git branch`` können Sie sehen, auf welchem Zweig Sie sich "
 "gerade befinden:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:179
 msgid ""
 "Be sure to always go back to the ``master`` branch before creating a new "
 "branch, as your current branch will be used as the base for the new one. "
@@ -352,11 +321,9 @@ msgstr ""
 "neuen Zweig verwendet wird. Alternativ können Sie nach dem Namen des neuen "
 "Zweigs einen benutzerdefinierten Basiszweig angeben:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:188
 msgid "Updating your branch"
 msgstr "Ihren Zweig aktualisieren"
 
-#: ../../docs/community/contributing/pr_workflow.rst:190
 msgid ""
 "This would not be needed the first time (just after you forked the upstream "
 "repository). However, the next time you want to work on something, you will "
@@ -370,7 +337,6 @@ msgstr ""
 "mehrere Commits hinter dem ``master``-Zweig des Upstreams liegt: Pull-"
 "Requests von anderen Mitwirkenden wären in der Zwischenzeit gemergt worden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:196
 msgid ""
 "To ensure there won't be conflicts between the feature you develop and the "
 "current upstream ``master`` branch, you will have to update your branch by "
@@ -380,7 +346,6 @@ msgstr ""
 "entwickelten Funktion und dem aktuellen Upstream ``master``-Zweig gibt, "
 "müssen Sie Ihren Zweig aktualisieren, indem Sie den Upstream-Zweig *pullen*."
 
-#: ../../docs/community/contributing/pr_workflow.rst:204
 msgid ""
 "The ``--rebase`` argument will ensure that any local changes that you "
 "committed will be re-applied *on top* of the pulled branch, which is usually "
@@ -394,7 +359,6 @@ msgstr ""
 "Weise werden, wenn Sie einen Pull Request öffnen, Ihre eigenen Commits der "
 "einzige Unterschied zum Upstream ``master`` Zweig sein."
 
-#: ../../docs/community/contributing/pr_workflow.rst:209
 msgid ""
 "While rebasing, conflicts may arise if your commits modified code that has "
 "been changed in the upstream branch in the meantime. If that happens, Git "
@@ -412,7 +376,6 @@ msgstr ""
 "continue`` fortfahren. Wiederholen Sie den Vorgang, wenn spätere Commits "
 "ebenfalls Konflikte haben, bis die rebase-Operation abgeschlossen ist."
 
-#: ../../docs/community/contributing/pr_workflow.rst:216
 msgid ""
 "If you're unsure about what is going on during a rebase and you panic (no "
 "worry, we all do the first few times), you can abort the rebase with ``git "
@@ -425,7 +388,6 @@ msgstr ""
 "wieder in dem ursprünglichen Zustand Ihres Zweiges, bevor Sie ``git pull --"
 "rebase`` aufgerufen haben."
 
-#: ../../docs/community/contributing/pr_workflow.rst:221
 msgid ""
 "If you omit the ``--rebase`` argument, you will instead create a merge "
 "commit which tells Git what to make of the two distinct branches. If any "
@@ -436,7 +398,6 @@ msgstr ""
 "Zweigen machen soll. Sollten Konflikte auftreten, würden sie durch diesen "
 "Merge-Commit auf einmal aufgelöst werden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:225
 msgid ""
 "While this is a valid workflow and the default behavior of ``git pull``, "
 "merge commits within PRs are frowned upon in our PR workflow. We only use "
@@ -447,7 +408,6 @@ msgstr ""
 "verpönt. Wir verwenden sie nur beim Zusammenführen von PRs in den Upstream-"
 "Zweig."
 
-#: ../../docs/community/contributing/pr_workflow.rst:229
 msgid ""
 "The philosophy is that a PR should represent the final stage of the changes "
 "made to the codebase, and we are not interested in mistakes and fixes that "
@@ -465,7 +425,6 @@ msgstr ""
 "Änderungen noch lange nach dem Zusammenführen einfach zu überprüfen und zu "
 "verstehen sind."
 
-#: ../../docs/community/contributing/pr_workflow.rst:236
 msgid ""
 "If you have already created a merge commit without using ``rebase``, or have "
 "made any other changes that have resulted in undesired history, the best "
@@ -478,7 +437,6 @@ msgstr ""
 "Rebase* auf dem Upstream-Zweig zu verwenden. Siehe den :ref:`Abschnitt "
 "<doc_pr_workflow_rebase>` für Anweisungen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
 "If at any time you want to *reset* a local branch to a given commit or "
 "branch, you can do so with ``git reset --hard <commit ID>`` or ``git reset --"
@@ -489,7 +447,6 @@ msgstr ""
 "hard <commit ID>`` oder ``git reset --hard <remote>/<branch>`` (z.B. ``git "
 "reset --hard upstream/master``) tun."
 
-#: ../../docs/community/contributing/pr_workflow.rst:245
 msgid ""
 "Be warned that this will remove any changes that you might have committed in "
 "this branch. If you ever lose commits by mistake, use the ``git reflog`` "
@@ -504,11 +461,9 @@ msgstr ""
 "möchten, und verwenden Sie diese als Argument von ``git reset --hard``, um "
 "zu diesem Zustand zurückzukehren."
 
-#: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "Making changes"
 msgstr "Änderungen vornehmen"
 
-#: ../../docs/community/contributing/pr_workflow.rst:253
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
 "cpp`` file with your usual development environment (text editor, IDE, etc.)."
@@ -517,7 +472,6 @@ msgstr ""
 "project_manager.cpp`` mit Ihrer üblichen Entwicklungsumgebung (Texteditor, "
 "IDE usw.) vornehmen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:257
 msgid ""
 "By default, those changes are *unstaged*. The staging area is a layer "
 "between your working directory (where you make your modifications) and the "
@@ -533,7 +487,6 @@ msgstr ""
 "bringen, müssen Sie sie mit dem Befehl ``git add`` *stagen* und anschließend "
 "mit dem Befehl ``git commit`` committen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:264
 msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
@@ -542,7 +495,6 @@ msgstr ""
 "zu überprüfen: bevor Sie sie bereitstellen, während sie bereitgestellt wird "
 "und nachdem sie übergeben wurde."
 
-#: ../../docs/community/contributing/pr_workflow.rst:267
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
@@ -551,7 +503,6 @@ msgstr ""
 "h. die Unterschiede zwischen Ihrem Arbeitsverzeichnis und dem "
 "Bereitstellungsbereich."
 
-#: ../../docs/community/contributing/pr_workflow.rst:269
 msgid ""
 "``git checkout -- <files>`` will undo the unstaged changes to the given "
 "files."
@@ -559,13 +510,11 @@ msgstr ""
 "``git checkout -- <files>`` macht die nicht bereitgestellten Änderungen an "
 "den angegebenen Dateien rückgängig."
 
-#: ../../docs/community/contributing/pr_workflow.rst:271
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr ""
 "``git add <files>`` wird die Änderungen an den aufgelisteten Dateien "
 "*bereitstellen*."
 
-#: ../../docs/community/contributing/pr_workflow.rst:272
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
@@ -574,13 +523,11 @@ msgstr ""
 "die Unterschiede zwischen dem bereitgestelltem Bereich und dem letzten "
 "Commit."
 
-#: ../../docs/community/contributing/pr_workflow.rst:274
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
 msgstr ""
 "``git reset HEAD <files>`` wird Änderungen an den aufgelisteten Dateien "
 "*aufheben*."
 
-#: ../../docs/community/contributing/pr_workflow.rst:275
 msgid ""
 "``git status`` will show you what are the currently staged and unstaged "
 "modifications."
@@ -588,7 +535,6 @@ msgstr ""
 "``git status`` zeigt Ihnen die aktuell bereitgestellten und nicht "
 "bereitgestellten Änderungen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:277
 msgid ""
 "``git commit`` will commit the staged files. It will open a text editor (you "
 "can define the one you want to use with the ``GIT_EDITOR`` environment "
@@ -603,7 +549,6 @@ msgstr ""
 "schreiben können. Sie können ``git commit -m \"Cooles "
 "Festschreibungsprotokoll\"`` verwenden, um das Protokoll direkt zu schreiben."
 
-#: ../../docs/community/contributing/pr_workflow.rst:282
 msgid ""
 "``git commit --amend`` lets you amend the last commit with your currently "
 "staged changes (added with ``git add``). This is the best option if you want "
@@ -614,7 +559,6 @@ msgstr ""
 "Option, wenn Sie einen Fehler im letzten Commit beheben wollen (Fehler, "
 "Tippfehler, Stilprobleme, etc.)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:285
 msgid ""
 "``git log`` will show you the last commits of your current branch. If you "
 "did local commits, they should be shown at the top."
@@ -623,7 +567,6 @@ msgstr ""
 "Sie lokale Commits vorgenommen haben, sollten diese ganz oben angezeigt "
 "werden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:287
 msgid ""
 "``git show`` will show you the changes of the last commit. You can also "
 "specify a commit hash to see the changes for that commit."
@@ -632,7 +575,6 @@ msgstr ""
 "Sie können auch einen Commit-Hash angeben, um die Änderungen für diesen "
 "Commit zu sehen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:290
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
@@ -641,11 +583,9 @@ msgstr ""
 "diesem Spickzettel nach, wenn Sie Änderungen vornehmen müssen, und lernen "
 "Sie durch machen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:293
 msgid "Here's how the shell history could look like on our example:"
 msgstr "So könnte die Shell-Historie in unserem Beispiel aussehen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:325
 msgid ""
 "With this, we should have two new commits in our ``better-project-manager`` "
 "branch which were not in the ``master`` branch. They are still only local "
@@ -656,11 +596,9 @@ msgstr ""
 "nur lokal, der entfernte Zweig kennt sie nicht, ebenso wenig wie das "
 "Upstream-Repository."
 
-#: ../../docs/community/contributing/pr_workflow.rst:330
 msgid "Pushing changes to a remote"
 msgstr "Änderungen an einen entfernten Rechner übertragen"
 
-#: ../../docs/community/contributing/pr_workflow.rst:332
 msgid ""
 "That's where ``git push`` will come into play. In Git, a commit is always "
 "done in the local repository (unlike Subversion where a commit will modify "
@@ -673,7 +611,6 @@ msgstr ""
 "Commits in einen entfernten Zweig *pushen*, um sie mit der Welt zu teilen. "
 "Die Syntax dafür ist:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:341
 msgid ""
 "The part about the remote branch can be omitted if you want it to have the "
 "same name as the local branch, which is our case in this example, so we will "
@@ -683,7 +620,6 @@ msgstr ""
 "dass er denselben Namen wie der lokale Zweig hat. Dies ist in diesem "
 "Beispiel der Fall. Wir werden also Folgendes tun:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:349
 msgid ""
 "Git will ask you for your username and password, and the changes will be "
 "sent to your remote. If you check the fork's page on GitHub, you should see "
@@ -694,11 +630,9 @@ msgstr ""
 "Forks auf GitHub überprüfen, sollten Sie einen neuen Zweig mit Ihren "
 "hinzugefügten Commits sehen."
 
-#: ../../docs/community/contributing/pr_workflow.rst:354
 msgid "Issuing a pull request"
 msgstr "Pull-Anfrage ausgeben"
 
-#: ../../docs/community/contributing/pr_workflow.rst:356
 msgid ""
 "When you load your fork's branch on GitHub, you should see a line saying *"
 "\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
@@ -710,14 +644,14 @@ msgstr ""
 "(und möglicherweise einige Commits dahinter, wenn Ihr ``master``-Zweig nicht "
 "mit dem Upstream-Zweig ``master`` synchronisiert war)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:363
+#, fuzzy
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the ``godotengine/godot`` upstream "
 "repository. It should show you your two commits, and state \"Able to merge"
 "\". If not (e.g. it has way more commits, or says there are merge "
-"conflicts), don't create the PR, something went wrong. Go to IRC and ask for "
-"support :)"
+"conflicts), don't create the PR yet, something went wrong. Go to our "
+"`Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
 msgstr ""
 "In dieser Zeile befindet sich ein Link \"Pull request\". Wenn Sie ihn "
 "anklicken, öffnet sich ein Formular, mit dem Sie einen Pull-Request für das "
@@ -727,7 +661,6 @@ msgstr ""
 "erstellen Sie den PR nicht, etwas ist schief gelaufen. Gehen Sie in IRC und "
 "fragen Sie nach Unterstützung :)"
 
-#: ../../docs/community/contributing/pr_workflow.rst:369
 msgid ""
 "Use an explicit title for the PR and put the necessary details in the "
 "comment area. You can drag and drop screenshots, GIFs or zipped projects if "
@@ -740,11 +673,9 @@ msgstr ""
 "zeigen, was Ihre Arbeit implementiert. Klicken Sie auf \"Create a pull "
 "request\", und tadaa!"
 
-#: ../../docs/community/contributing/pr_workflow.rst:375
 msgid "Modifying a pull request"
 msgstr "Pull-Anfrage ändern"
 
-#: ../../docs/community/contributing/pr_workflow.rst:377
 msgid ""
 "While it is reviewed by other contributors, you will often need to make "
 "changes to your yet-unmerged PR, either because contributors requested them, "
@@ -755,7 +686,6 @@ msgstr ""
 "die Mitwirkenden sie angefordert haben oder weil Sie beim Testen selbst "
 "Probleme festgestellt haben."
 
-#: ../../docs/community/contributing/pr_workflow.rst:381
 msgid ""
 "The good news is that you can modify a pull request simply by acting on the "
 "branch you made the pull request from. You can e.g. make a new commit on "
@@ -766,7 +696,6 @@ msgstr ""
 "haben. Sie können z.B. ein neues Commit für diesen Zweig erstellen, schieben "
 "Sie es an Ihren Fork und die PR wird automatisch aktualisiert:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:396
 msgid ""
 "However, be aware that in our PR workflow, we favor commits that bring the "
 "codebase from one functional state to another functional state, without "
@@ -786,11 +715,9 @@ msgstr ""
 "verwenden, um den vorherigen Commit mit Ihren Korrekturen zu ergänzen. Das "
 "obige Beispiel würde dann zu:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:426
 msgid "The interactive rebase"
 msgstr "Der interaktive Rebase"
 
-#: ../../docs/community/contributing/pr_workflow.rst:428
 msgid ""
 "If you didn't follow the above steps closely to *amend* changes into a "
 "commit instead of creating fixup commits, or if you authored your changes "
@@ -805,7 +732,6 @@ msgstr ""
 "Zweig zu *rebasen*, um einige oder alle Commits in einen Commit zu "
 "*vereinen*."
 
-#: ../../docs/community/contributing/pr_workflow.rst:433
 msgid ""
 "Indeed, if some commits have been made following reviews to fix bugs, typos, "
 "etc. in the original commit, they are not relevant to a future changelog "
@@ -818,7 +744,6 @@ msgstr ""
 "der Godot-Codebasis passiert ist, oder wann und wie eine bestimmte Datei "
 "zuletzt geändert wurde."
 
-#: ../../docs/community/contributing/pr_workflow.rst:438
 msgid ""
 "To squash those extraneous commits into the main one, we will have to "
 "*rewrite history*. Right, we have that power. You may read that it's a bad "
@@ -832,7 +757,6 @@ msgstr ""
 "es um Zweige des Upstream Repos geht. Aber in Ihrem Fork, können Sie machen "
 "was Sie wollen, und alles ist erlaubt, um ordentliche PRs zu bekommen :)"
 
-#: ../../docs/community/contributing/pr_workflow.rst:443
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
 "command takes a commit ID or a branch name as argument, and will let you "
@@ -844,7 +768,6 @@ msgstr ""
 "alle Commits zwischen diesem Commit/Zweig und dem letzten in Ihrem "
 "Arbeitszweig, dem sogenannten ``HEAD``, ändern."
 
-#: ../../docs/community/contributing/pr_workflow.rst:448
 msgid ""
 "While you can give any commit ID to ``git rebase -i`` and review everything "
 "in between, the most common and convenient workflow involves rebasing on the "
@@ -855,7 +778,6 @@ msgstr ""
 "bequemste Arbeitsablauf das Rebasen auf dem *upstream ``master``-Zweig*, was "
 "Sie tun können mit:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:456
 msgid ""
 "Referencing branches in Git is a bit tricky due to the distinction between "
 "remote and local branches. Here, ``upstream/master`` (with a `/`) is a local "
@@ -867,7 +789,6 @@ msgstr ""
 "master`` (mit einem `/`) ein lokaler Zweig, der aus dem ``master``-Zweig des "
 "entfernten ``upstream`` gezogen wurde."
 
-#: ../../docs/community/contributing/pr_workflow.rst:461
 msgid ""
 "Interactive rebases can only be done on local branches, so the `/` is "
 "important here. As the upstream remote changes frequently, your local "
@@ -888,17 +809,16 @@ msgstr ""
 "ja, es ist verwirrend, aber Sie werden sich nach und nach damit vertraut "
 "machen)."
 
-#: ../../docs/community/contributing/pr_workflow.rst:471
+#, fuzzy
 msgid ""
 "This will open a text editor (``vi`` by default, see `Git docs <https://git-"
-"scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>__` to "
+"scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>`_ to "
 "configure your favorite one) with something which may look like this:"
 msgstr ""
 "Dies öffnet einen Texteditor (standardmäßig ``vi``, siehe `Git docs <https://"
 "git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>__`, "
 "um Ihren Lieblingseditor zu konfigurieren) mit etwas, das so aussehen könnte:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:480
 msgid ""
 "The editor will also show instructions regarding how you can act on those "
 "commits. In particular, it should tell you that \"pick\" means to use that "
@@ -917,7 +837,6 @@ msgstr ""
 "Beispiel sind wir nicht daran interessiert, das Log des \"Fix a typo\"-"
 "Commits zu behalten, also verwenden wir:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:493
 msgid ""
 "Upon saving and quitting the editor, the rebase will occur. The second "
 "commit will be melded into the first one, and ``git log`` and ``git show`` "
@@ -929,7 +848,6 @@ msgstr ""
 "show`` sollten nun bestätigen, dass Sie nur einen Commit mit den Änderungen "
 "der beiden vorherigen Commits haben."
 
-#: ../../docs/community/contributing/pr_workflow.rst:498
 msgid ""
 "But! You rewrote the history, and now your local and remote branches have "
 "diverged. Indeed, commit 1b4aad7 in the above example will have changed, and "
@@ -942,7 +860,6 @@ msgstr ""
 "Sie versuchen, zu Ihrem entfernten Zweig zu pushen, wird er einen Fehler "
 "auslösen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:512
 msgid ""
 "This is a sane behavior, Git will not let you push changes that would "
 "override remote content. But that's actually what we want to do here, so we "
@@ -952,7 +869,6 @@ msgstr ""
 "lassen, die entfernte Inhalte überschreiben würden. Aber das ist eigentlich "
 "das, was wir hier tun wollen, also müssen wir es *erzwingen*:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:520
 msgid ""
 "And tadaa! Git will happily *replace* your remote branch with what you had "
 "locally (so make sure that's what you wanted, using ``git log``). This will "
@@ -963,11 +879,9 @@ msgstr ""
 "indem Sie ``git log`` benutzen). Dies wird auch die PR entsprechend "
 "aktualisieren."
 
-#: ../../docs/community/contributing/pr_workflow.rst:525
 msgid "Deleting a Git branch"
 msgstr "Löschen eines Git-Zweigs"
 
-#: ../../docs/community/contributing/pr_workflow.rst:527
 msgid ""
 "After your pull request gets merged, there's one last thing you should do: "
 "delete your Git branch for the PR. There won't be issues if you don't delete "
@@ -980,13 +894,11 @@ msgstr ""
 "dies zweimal tun, einmal für den lokalen Zweig und einmal für den Remote-"
 "Zweig auf GitHub."
 
-#: ../../docs/community/contributing/pr_workflow.rst:532
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr ""
 "Verwenden Sie diesen Befehl, um unseren besseren Projektmanager-Zweig lokal "
 "zu löschen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:538
 msgid ""
 "Alternatively, if the branch hadn't been merged yet and we wanted to delete "
 "it anyway, instead of ``-d`` you would use ``-D``."
@@ -994,13 +906,11 @@ msgstr ""
 "Alternativ, wenn der Zweig noch nicht zusammengeführt wurde und wir ihn "
 "trotzdem löschen wollen, würden Sie anstelle von ``-d`` ``-D`` verwenden."
 
-#: ../../docs/community/contributing/pr_workflow.rst:541
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""
 "Verwenden Sie als Nächstes den folgenden Befehl, um den Remote-Zweig auf "
 "GitHub zu löschen:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:547
 msgid ""
 "You can also delete the remote branch from the GitHub PR itself, a button "
 "should appear once it has been merged or closed."

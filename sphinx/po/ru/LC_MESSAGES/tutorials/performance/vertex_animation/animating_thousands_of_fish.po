@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Animating thousands of fish with MultiMeshInstance"
+msgstr "Анимировать смерть с помощью узла Tween"
+
+msgid ""
+"This tutorial explores a technique used in the game `ABZU <https://www."
+"gdcvault.com/play/1024409/Creating-the-Art-of-ABZ>`_ for rendering and "
+"animating thousands of fish using vertex animation and static mesh "
+"instancing."
+msgstr ""
+
+msgid ""
+"In Godot, this can be accomplished with a custom :ref:`Shader "
+"<class_Shader>` and a :ref:`MultiMeshInstance <class_MultiMeshInstance>`. "
+"Using the following technique you can render thousands of animated objects, "
+"even on low end hardware."
+msgstr ""
+
+msgid ""
+"We will start by animating one fish. Then, we will see how to extend that "
+"animation to thousands of fish."
+msgstr ""
+
+#, fuzzy
+msgid "Animating one Fish"
+msgstr "Анимации"
+
+msgid ""
+"We will start with a single fish. Load your fish model into a :ref:"
+"`MeshInstance <class_MeshInstance>` and add a new :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`."
+msgstr ""
+
+msgid ""
+"Here is the fish we will be using for the example images, you can use any "
+"fish model you like."
+msgstr ""
+
+msgid ""
+"The fish model in this tutorial is made by `QuaterniusDev <http://quaternius."
+"com>`_ and is shared with a creative commons license. CC0 1.0 Universal (CC0 "
+"1.0) Public Domain Dedication https://creativecommons.org/publicdomain/"
+"zero/1.0/"
+msgstr ""
+
+msgid ""
+"Typically, you would use bones and a :ref:`Skeleton <class_Skeleton>` to "
+"animate objects. However, bones are animated on the CPU and so you end "
+"having to calculate thousands of operations every frame and it becomes "
+"impossible to have thousands of objects. Using vertex animation in a vertex "
+"shader, you avoid using bones and can instead calculate the full animation "
+"in a few lines of code and completely on the GPU."
+msgstr ""
+
+msgid "The animation will be made of four key motions:"
+msgstr ""
+
+msgid "A side to side motion"
+msgstr ""
+
+msgid "A pivot motion around the center of the fish"
+msgstr ""
+
+msgid "A panning wave motion"
+msgstr ""
+
+msgid "A panning twist motion"
+msgstr ""
+
+msgid ""
+"All the code for the animation will be in the vertex shader with uniforms "
+"controlling the amount of motion. We use uniforms to control the strength of "
+"the motion so that you can tweak the animation in editor and see the results "
+"in real time, without the shader having to recompile."
+msgstr ""
+
+msgid ""
+"All the motions will be made using cosine waves applied to ``VERTEX`` in "
+"model space. We want the vertices to be in model space so that the motion is "
+"always relative to the orientation of the fish. For example, side-to-side "
+"will always move the fish back and forth in its left to right direction, "
+"instead of on the ``x`` axis in the world orientation."
+msgstr ""
+
+msgid ""
+"In order to control the speed of the animation, we will start by defining "
+"our own time variable using ``TIME``."
+msgstr ""
+
+msgid ""
+"The first motion we will implement is the side to side motion. It can be "
+"made by offsetting ``VERTEX.x`` by ``cos`` of ``TIME``. Each time the mesh "
+"is rendered, all the vertices will move to the side by the amount of "
+"``cos(time)``."
+msgstr ""
+
+msgid "The resulting animation should look something like this:"
+msgstr "Полученная анимация должна выглядеть примерно так:"
+
+msgid ""
+"Next, we add the pivot. Because the fish is centered at (0, 0), all we have "
+"to do is multiply ``VERTEX`` by a rotation matrix for it to rotate around "
+"the center of the fish."
+msgstr ""
+
+msgid "We construct a rotation matrix like so:"
+msgstr ""
+
+msgid ""
+"And then we apply it in the ``x`` and ``z`` axes by multiplying it by "
+"``VERTEX.xz``."
+msgstr ""
+
+msgid "With only the pivot applied you should see something like this:"
+msgstr ""
+"С применением только оси вращения вы должны увидеть что-то вроде этого:"
+
+msgid ""
+"The next two motions need to pan down the spine of the fish. For that, we "
+"need a new variable, ``body``. ``body`` is a float that is ``0`` at the tail "
+"of the fish and ``1`` at its head."
+msgstr ""
+
+msgid ""
+"The next motion is a cosine wave that moves down the length of the fish. To "
+"make it move along the spine of the fish, we offset the input to ``cos`` by "
+"the position along the spine, which is the variable we defined above, "
+"``body``."
+msgstr ""
+
+msgid ""
+"This looks very similar to the side to side motion we defined above, but in "
+"this one, by using ``body`` to offset ``cos`` each vertex along the spine "
+"has a different position in the wave making it look like a wave is moving "
+"along the fish."
+msgstr ""
+
+msgid ""
+"The last motion is the twist, which is a panning roll along the spine. "
+"Similarly to the pivot, we first construct a rotation matrix."
+msgstr ""
+
+msgid ""
+"We apply the rotation in the ``xy`` axes so that the fish appears to roll "
+"around its spine. For this to work, the fish's spine needs to be centered on "
+"the ``z`` axis."
+msgstr ""
+
+#, fuzzy
+msgid "Here is the fish with twist applied:"
+msgstr "Вот пример кода GDScript:"
+
+msgid ""
+"If we apply all these motions one after another, we get a fluid jelly-like "
+"motion."
+msgstr ""
+
+msgid ""
+"Normal fish swim mostly with the back half of their body. Accordingly, we "
+"need to limit the panning motions to the back half of the fish. To do this, "
+"we create a new variable, ``mask``."
+msgstr ""
+
+msgid ""
+"``mask`` is a float that goes from ``0`` at the front of the fish to ``1`` "
+"at the end using ``smoothstep`` to control the point at which the transition "
+"from ``0`` to ``1`` happens."
+msgstr ""
+
+msgid "Below is an image of the fish with ``mask`` used as ``COLOR``:"
+msgstr ""
+
+msgid ""
+"For the wave, we multiply the motion by ``mask`` which will limit it to the "
+"back half."
+msgstr ""
+
+msgid ""
+"In order to apply the mask to the twist, we use ``mix``. ``mix`` allows us "
+"to mix the vertex position between a fully rotated vertex and one that is "
+"not rotated. We need to use ``mix`` instead of multiplying ``mask`` by the "
+"rotated ``VERTEX`` because we are not adding the motion to the ``VERTEX`` we "
+"are replacing the ``VERTEX`` with the rotated version. If we multiplied that "
+"by ``mask``, we would shrink the fish."
+msgstr ""
+
+msgid "Putting the four motions together gives us the final animation."
+msgstr ""
+
+msgid ""
+"Go ahead and play with the uniforms in order to alter the swim cycle of the "
+"fish. You will find that you can create a wide variety of swim styles using "
+"these four motions."
+msgstr ""
+
+msgid "Making a school of fish"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot makes it easy to render thousands of the same object using a "
+"MultiMeshInstance node."
+msgstr "Godot облегчает создание пользовательских ресурсов в Инспекторе."
+
+msgid ""
+"A MultiMeshInstance node is created and used the same way you would make a "
+"MeshInstance node. For this tutorial, we will name the MultiMeshInstance "
+"node ``School``, because it will contain a school of fish."
+msgstr ""
+
+msgid ""
+"Once you have a MultiMeshInstance add a :ref:`MultiMesh <class_MultiMesh>`, "
+"and to that MultiMesh add your :ref:`Mesh <class_Mesh>` with the shader from "
+"above."
+msgstr ""
+
+msgid ""
+"MultiMeshes draw your Mesh with three additional per-instance properties: "
+"Transform (rotation, translation, scale), Color, and Custom. Custom is used "
+"to pass in 4 multi-use variables using a :ref:`Color <class_Color>`."
+msgstr ""
+
+msgid ""
+"``instance_count`` specifies how many instances of the mesh you want to "
+"draw. For now, leave ``instance_count`` at ``0`` because you cannot change "
+"any of the other parameters while ``instance_count`` is larger than ``0``. "
+"We will set ``instance count`` in GDScript later."
+msgstr ""
+
+msgid ""
+"``transform_format`` specifies whether the transforms used are 3D or 2D. For "
+"this tutorial, select 3D."
+msgstr ""
+
+msgid ""
+"For both ``color_format`` and ``custom_data_format`` you can choose between "
+"``None``, ``Byte``, and ``Float``. ``None`` means you won't be passing in "
+"that data (either a per-instance ``COLOR`` variable, or ``INSTANCE_CUSTOM``) "
+"to the shader. ``Byte`` means each number making up the color you pass in "
+"will be stored with 8 bits while ``Float`` means each number will be stored "
+"in a floating-point number (32 bits). ``Float`` is slower but more precise, "
+"``Byte`` will take less memory and be faster, but you may see some visual "
+"artifacts."
+msgstr ""
+"Как для ``color_format``, так и для ``custom_data_format`` вы можете выбрать "
+"между ``None``, ``Byte`` и ``Float``. ``None`` означает, что вы не будете "
+"передавать эти данные (либо переменную ``COLOR`` для каждого экземпляра, "
+"либо ``INSTANCE_CUSTOM``) шейдеру. ``Byte`` означает, что каждое число, "
+"составляющее цвет, который вы передаете, будет храниться с 8 битами, в то "
+"время как ``Float`` означает, что каждое число будет храниться в числе с "
+"плавающей запятой (32 бита). ``Float`` медленнее, но точнее, ``Byte`` займет "
+"меньше памяти и будет быстрее, но вы можете увидеть некоторые визуальные "
+"артефакты."
+
+msgid "Now, set ``instance_count`` to the number of fish you want to have."
+msgstr ""
+
+msgid "Next we need to set the per-instance transforms."
+msgstr ""
+
+msgid ""
+"There are two ways to set per-instance transforms for MultiMeshes. The first "
+"is entirely in editor and is described in the :ref:`MultiMeshInstance "
+"tutorial <doc_using_multi_mesh_instance>`."
+msgstr ""
+
+msgid ""
+"The second is to loop over all the instances and set their transforms in "
+"code. Below, we use GDScript to loop over all the instances and set their "
+"transform to a random position."
+msgstr ""
+
+msgid ""
+"Running this script will place the fish in random positions in a box around "
+"the position of the MultiMeshInstance."
+msgstr ""
+
+msgid ""
+"If performance is an issue for you, try running the scene with GLES2 or with "
+"fewer fish."
+msgstr ""
+
+msgid ""
+"Notice how all the fish are all in the same position in their swim cycle? It "
+"makes them look very robotic. The next step is to give each fish a different "
+"position in the swim cycle so the entire school looks more organic."
+msgstr ""
+
+msgid "Animating a school of fish"
+msgstr ""
+
+msgid ""
+"One of the benefits of animating the fish using ``cos`` functions is that "
+"they are animated with one parameter, ``time``. In order to give each fish a "
+"unique position in the swim cycle, we only need to offset ``time``."
+msgstr ""
+
+msgid ""
+"We do that by adding the per-instance custom value ``INSTANCE_CUSTOM`` to "
+"``time``."
+msgstr ""
+
+msgid ""
+"Next, we need to pass a value into ``INSTANCE_CUSTOM``. We do that by adding "
+"one line into the ``for`` loop from above. In the ``for`` loop we assign "
+"each instance a set of four random floats to use."
+msgstr ""
+
+msgid ""
+"Now the fish all have unique positions in the swim cycle. You can give them "
+"a little more individuality by using ``INSTANCE_CUSTOM`` to make them swim "
+"faster or slower by multiplying by ``TIME``."
+msgstr ""
+
+msgid ""
+"You can even experiment with changing the per-instance color the same way "
+"you changed the per-instance custom value."
+msgstr ""
+
+msgid ""
+"One problem that you will run into at this point is that the fish are "
+"animated, but they are not moving. You can move them by updating the per-"
+"instance transform for each fish every frame. Although doing so will be "
+"faster than moving thousands of MeshInstances per frame, it'll still likely "
+"be slow."
+msgstr ""
+
+msgid ""
+"In the next tutorial we will cover how to use :ref:`Particles "
+"<class_Particles>` to take advantage of the GPU and move each fish around "
+"individually while still receiving the benefits of instancing."
+msgstr ""

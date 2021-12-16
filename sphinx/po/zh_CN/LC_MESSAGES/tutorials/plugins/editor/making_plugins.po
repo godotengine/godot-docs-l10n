@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
 msgid "Making plugins"
 msgstr "制作插件"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
 msgid "About plugins"
 msgstr "关于插件"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
@@ -41,7 +38,6 @@ msgstr ""
 "一个插件与你已经可以制作的任何场景相似, 只是它是用脚本创建的, 以增加编辑器功"
 "能."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
 msgid ""
 "This tutorial will guide you through the creation of two simple plugins so "
 "you can understand how they work and be able to develop your own. The first "
@@ -51,18 +47,15 @@ msgstr ""
 "这个教程会教您写两个简单的插件来帮助您理解插件如何运作和如何写插件. 首先是一"
 "个可以往任何场景添加的自定义节点, 其次呢, 是个可以往编辑器里添加的自定义面板."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
 msgstr "创建一个插件"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
 "在开始前, 先找个地方创建个空项目. 这个空项目是制作和测试我们插件的基础."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
 "The first thing you need for the editor to identify a new plugin is to "
 "create two files: a ``plugin.cfg`` for configuration and a tool script with "
@@ -74,7 +67,6 @@ msgstr ""
 "置和具有此功能的工具脚本. 插件在项目文件夹里面有一个标准路径, 比如 ``addons/"
 "plugin_name``.Godot提供了一个属性框, 用于生成这些文件并将它们放在需要的位置."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:33
 msgid ""
 "In the main toolbar, click the ``Project`` dropdown. Then click ``Project "
 "Settings...``. Go to the ``Plugins`` tab and then click on the ``Create`` "
@@ -84,25 +76,20 @@ msgstr ""
 "`` [项目设置]. 然后转到 ``Plugins`` [插件]选项卡, 在点击右上角的 ``Create`` "
 "[创建]按钮."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:37
 msgid "You will see the dialog appear, like so:"
 msgstr "你将看到属性面板出现, 如下所示:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:41
 msgid ""
 "The placeholder text in each field describes how it affects the plugin's "
 "creation of the files and the config file's values."
 msgstr "每个字段中文本属性都描述了它会影响到哪些配置文件的值."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:44
 msgid "To continue with the example, use the following values::"
-msgstr "如果要继续使用该例子, 请使用下列的值:"
+msgstr "如果要继续使用该例子，请使用下列的值： ::"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:55
 msgid "You should end up with a directory structure like this:"
 msgstr "你最终的目录结构应该是这样显示的:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:59
 msgid ""
 "``plugin.cfg`` is a simple INI file with metadata about your plugin. The "
 "name and description help people understand what it does. Your name helps "
@@ -118,11 +105,9 @@ msgstr ""
 "Versioning <https://semver.org/>`_ . 主脚本文件将指示Godot, 一旦你的插件被激"
 "活后, 它将在编辑器中做什么."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:68
 msgid "The script file"
 msgstr "脚本文件"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:70
 msgid ""
 "Upon creation of the plugin, the dialog will automatically open the "
 "EditorPlugin script for you. The script has two requirements that you cannot "
@@ -133,7 +118,6 @@ msgstr ""
 "变: 它必须是一个 ``tool`` 脚本, 否则将无法在编辑器中正常加载；它必须继承 :"
 "ref:`class_EditorPlugin`."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:77
 msgid ""
 "In addition to the EditorPlugin script, any other GDScript that your plugin "
 "uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
@@ -142,7 +126,6 @@ msgstr ""
 "除了这个 EditorPlugin 脚本之外，插件用到的其他 GDScript *也* 必须是工具脚本。"
 "没有 ``tool`` 的 GDScript 在导入编辑器后都会像空文件一样！"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:81
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
@@ -156,15 +139,12 @@ msgstr ""
 "`_exit_tree() <class_Node_method__exit_tree>` 来清理它. 值得庆幸的是, 对话框"
 "为你生成了这些回调. 你的脚本应该看起来像这样:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:126
 msgid "This is a good template to use when creating new plugins."
 msgstr "这是创建新插件时使用的好模板."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:129
 msgid "A custom node"
 msgstr "自定义节点"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:131
 msgid ""
 "Sometimes you want a certain behavior in many nodes, such as a custom scene "
 "or control that can be reused. Instancing is helpful in a lot of cases, but "
@@ -176,18 +156,17 @@ msgstr ""
 "化在很多情况下都很有用, 但有时它会很麻烦, 特别是如果您在许多项目中使用它. 一"
 "个很好的解决方案是创建一个插件, 添加一个具有自定义行为的节点."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:139
+#, fuzzy
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
 "with any scripting language, they have fewer features than :ref:`the Script "
-"Class system <doc_scripting_continued_class_name>`. If you are writing "
-"GDScript or NativeScript, we recommend using Script Classes instead."
+"Class system <doc_gdscript_basics_class_name>`. If you are writing GDScript "
+"or NativeScript, we recommend using Script Classes instead."
 msgstr ""
 "通过EditorPlugin添加的节点是 \"CustomType\" 节点. 虽然它们可以与任何脚本语言"
 "一起工作, 但功能比 :ref:`脚本类系统 <doc_scripting_continued_class_name>` "
 "少. 如果你正在编写GDScript或NativeScript, 建议使用脚本类代替."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:144
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
 "<class_EditorPlugin_method_add_custom_type>` from the :ref:"
@@ -203,7 +182,6 @@ msgstr ""
 "脚本, 作为类型的逻辑. 虽然该脚本不一定要使用 ``tool`` 关键字, 但可以添加它, "
 "以便脚本在编辑器中运行."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:151
 msgid ""
 "For this tutorial, we'll create a simple button that prints a message when "
 "clicked. For that, we'll need a simple script that extends from :ref:"
@@ -213,7 +191,6 @@ msgstr ""
 "一个从 :ref:`class_Button` 扩展的简单脚本. 如果你愿意, 它也可以扩展 :ref:"
 "`class_BaseButton` :"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:189
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You'll also need a 16×16 icon to show in the scene tree. "
@@ -228,7 +205,6 @@ msgstr ""
 "认的Godot标志( `preload(\"res://icon.png\")` ). 如果需要, 你也可以使用SVG图"
 "标."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:197
 msgid ""
 "Now, we need to add it as a custom type so it shows on the **Create New "
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
@@ -237,7 +213,6 @@ msgstr ""
 "现在, 我们需要把它作为一个自定义类型添加, 以便它显示在 **Create New Node** 的"
 "对话框中. 为此, 将 ``custom_node.gd`` 脚本改为以下内容:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
 msgid ""
 "With that done, the plugin should already be available in the plugin list in "
 "the **Project Settings**, so activate it as explained in `Checking the "
@@ -246,11 +221,9 @@ msgstr ""
 "完成后, 插件应该已经在 **项目设置** 的插件列表中可用, 因此请按照 `Checking "
 "the results`_ 中的说明激活它."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:248
 msgid "Then try it out by adding your new node:"
 msgstr "然后通过添加新节点来尝试:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:252
 msgid ""
 "When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
@@ -259,11 +232,9 @@ msgstr ""
 "当你添加节点时, 你可以看到它已经有你创建的脚本附加在上面. 给这个按钮设置一个"
 "文本, 保存并运行场景. 当你点击按钮时, 你可以在控制台中看到一些文字:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:259
 msgid "A custom dock"
 msgstr "自定义窗口"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:261
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
@@ -274,7 +245,6 @@ msgstr ""
 "新扩展面板. Docks只是基于Control的场景, 因此它们的创建方式与通常的GUI场景类"
 "似."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:265
 msgid ""
 "Creating a custom dock is done just like a custom node. Create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
@@ -283,7 +253,6 @@ msgstr ""
 "创建一个自定义栏好的方法和自定义节点一样. 在 ``addons/my_custom_dock`` 文件夹"
 "中创建一个新的 ``plugin.cfg`` 文件, 然后在其中添加以下内容:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:290
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill it with "
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
@@ -292,7 +261,6 @@ msgstr ""
 "然后在同一文件夹中创建脚本 ``custom_dock.gd`` . 使用 :ref:`template we've "
 "seen before <doc_making_plugins_template_code>` 填充它以获得良好的开端."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:294
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
@@ -301,7 +269,6 @@ msgstr ""
 "由于我们正在尝试添加新的自定义窗口, 因此我们需要创建窗口的内容. 这只不过是一"
 "个标准的Godot场景: 只需在编辑器中创建一个新场景然后编辑它."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:298
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -314,7 +281,6 @@ msgstr ""
 "称, 因此请务必为其指定一个简短的描述性名称. 另外, 不要忘记在按钮上添加一些文"
 "字."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:306
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -327,7 +293,6 @@ msgstr ""
 "<class_EditorPlugin_method_add_control_to_dock>` 这个函数, 它来自 :ref:"
 "`EditorPlugin <class_EditorPlugin>` 类."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:311
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
@@ -336,7 +301,6 @@ msgstr ""
 "你需要选择一个停靠位置并定义要添加的控件, 也就是你刚刚创建的场景. 不要忘了在"
 "插件停用时 **remove the dock** . 脚本可以是这样的:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:372
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
@@ -344,11 +308,9 @@ msgstr ""
 "请注意, 虽然Dock最初会出现在其指定的位置, 但用户可以自由改变其位置, 并保存所"
 "产生的布局."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:376
 msgid "Checking the results"
 msgstr "检查结果"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:378
 msgid ""
 "It's now time to check the results of your work. Open the **Project "
 "Settings** and click on the **Plugins** tab. Your plugin should be the only "
@@ -358,7 +320,6 @@ msgstr ""
 "现在是检查工作结果的时候了. 打开 **项目设置** , 然后单击 **插件** 选项卡. 您"
 "的插件应该是列表中唯一的插件. 如果未显示, 请单击右上角的 **更新** 按钮."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:385
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
@@ -367,11 +328,9 @@ msgstr ""
 "您可以在 **Status** 列中看到该插件处于非激活状态; 点击状态选择 **Active** . "
 "在您关闭设置窗口之前, 该扩展窗口应该可见. 您现在应该看到一个自定义窗口:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:392
 msgid "Going beyond"
 msgstr "举一反三"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:394
 msgid ""
 "Now that you've learned how to make basic plugins, you can extend the editor "
 "in several ways. Lots of functionality can be added to the editor with "
@@ -382,7 +341,6 @@ msgstr ""
 "GDScript将许多功能添加到编辑器中; 它是一种创建专业编辑器的强大方法, 无需深入"
 "研究C++模块."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:399
 msgid ""
 "You can make your own plugins to help yourself and share them in the `Asset "
 "Library <https://godotengine.org/asset-library/>`_ so that people can "

@@ -1,0 +1,554 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDScript style guide"
+msgstr "Przewodnik stylu GDScript"
+
+#, fuzzy
+msgid ""
+"This style guide lists conventions to write elegant GDScript. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"Ten przewodnik po stylistyce eleganckiego pisania eleganckiego GDScriptu. "
+"Celem jest zachęcenie do pisania czystego i czytelnego kodu oraz promowanie "
+"spójności pomiędzy projektami, dyskusjami i samouczkami. Miejmy nadzieję, że "
+"zachęci to również do opracowania narzędzi do autoformatowania."
+
+#, fuzzy
+msgid ""
+"Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
+msgstr ""
+"Ponieważ GDScript jest związany z Pythonem, ten przewodnik jest inspirowany "
+"przez stylem pisania w Pythonie `PEP 8 <https://www.python.org/dev/peps/"
+"pep-0008/>`__."
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+
+msgid ""
+"Godot's built-in script editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Wbudowany edytor skryptów Godota domyślnie korzysta z wielu z tych "
+"konwencji. Pozwól mu, pomóc sobie."
+
+#, fuzzy
+msgid "Here is a complete class example based on these guidelines:"
+msgstr "Oto prosty przykład jak to działa:"
+
+#, fuzzy
+msgid "Formatting"
+msgstr "Format"
+
+#, fuzzy
+msgid "Encoding and special characters"
+msgstr "Obsługa powiadomień"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr ""
+"Podczas tworzenia nowego pliku upewnij się, że do łamania linii użyto znaków "
+"Linefeed (*LF*), a nie *CRLF* lub *CR*"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr ""
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr "Użyj **Tabs** zamiast spacji (nazywanymi 'miękkimi tabulatorami')"
+
+msgid "Indentation"
+msgstr "Wcięcia"
+
+msgid "Each indent level should be one greater than the block containing it."
+msgstr ""
+"Każdy poziom wcięcia powinien być o jeden większy niż w bloku, w którym się "
+"znajduje."
+
+msgid "**Good**:"
+msgstr "**Dobrze**:"
+
+msgid "**Bad**:"
+msgstr "**Źle**:"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"Użyj dwóch poziomów wcięcia dla odróżnienia bloku kodu od kontynuacji "
+"poprzedniej linii."
+
+msgid ""
+"Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
+"indentation level to distinguish continuation lines:"
+msgstr ""
+
+msgid "Trailing comma"
+msgstr ""
+
+msgid ""
+"Use a trailing comma on the last line in arrays, dictionaries, and enums. "
+"This results in easier refactoring and better diffs in version control as "
+"the last line doesn't need to be modified when adding new elements."
+msgstr ""
+
+msgid ""
+"Trailing commas are unnecessary in single-line lists, so don't add them in "
+"this case."
+msgstr ""
+
+msgid "Blank lines"
+msgstr "Puste wiersze"
+
+msgid "Surround functions and class definitions with two blank lines:"
+msgstr "Funkcje i definicje klas otocz pustymi liniami:"
+
+msgid "Use one blank line inside functions to separate logical sections."
+msgstr ""
+"Użyj jednego pustego wiersza wewnątrz funkcji, aby oddzielić sekcje logiczne."
+
+msgid ""
+"We use a single line between classes and function definitions in the class "
+"reference and in short code snippets in this documentation."
+msgstr ""
+
+#, fuzzy
+msgid "Line length"
+msgstr "Długość animacji"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr ""
+
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two scripts opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+
+#, fuzzy
+msgid "One statement per line"
+msgstr "Jedna instrukcja na linię"
+
+msgid ""
+"Never combine multiple statements on a single line. No, C programmers, not "
+"even with a single line conditional statement."
+msgstr ""
+"Nigdy nie należy łączyć wielu instrukcji w jednej linii. Programiści C i C+"
+"+, nie piszcie instrukcji warunkowych w jednej linii (z wyjątkiem operatora "
+"trójargumentowego)."
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr ""
+
+msgid "Format multiline statements for readability"
+msgstr ""
+
+msgid ""
+"When you have particularly long ``if`` statements or nested ternary "
+"expressions, wrapping them over multiple lines improves readability. Since "
+"continuation lines are still part of the same expression, 2 indent levels "
+"should be used instead of one."
+msgstr ""
+
+msgid ""
+"GDScript allows wrapping statements using multiple lines using parentheses "
+"or backslashes. Parentheses are favored in this style guide since they make "
+"for easier refactoring. With backslashes, you have to ensure that the last "
+"line never contains a backslash at the end. With parentheses, you don't have "
+"to worry about the last line having a backslash at the end."
+msgstr ""
+
+msgid ""
+"When wrapping a conditional expression over multiple lines, the ``and``/"
+"``or`` keywords should be placed at the beginning of the line continuation, "
+"not at the end of the previous line."
+msgstr ""
+
+#, fuzzy
+msgid "Avoid unnecessary parentheses"
+msgstr "Unikaj niepotrzebnych nawiasów"
+
+#, fuzzy
+msgid ""
+"Avoid parentheses in expressions and conditional statements. Unless "
+"necessary for order of operations or wrapping over multiple lines, they only "
+"reduce readability."
+msgstr ""
+"Unikaj nawiasów w wyrażeniach i instrukcjach warunkowych, o ile nie jest to "
+"konieczne ze względu na kolejność operacji. Ograniczają one jedynie "
+"czytelność."
+
+#, fuzzy
+msgid "Boolean operators"
+msgstr "Operator logiczny lub"
+
+msgid ""
+"Prefer the plain English versions of boolean operators, as they are the most "
+"accessible:"
+msgstr ""
+
+msgid "Use ``and`` instead of ``&&``."
+msgstr "Użyj ``and`` zamiast ``&&``."
+
+msgid "Use ``or`` instead of ``||``."
+msgstr "Użyj``or`` zamiast``||``."
+
+msgid ""
+"You may also use parentheses around boolean operators to clear any "
+"ambiguity. This can make long expressions easier to read."
+msgstr ""
+
+#, fuzzy
+msgid "Comment spacing"
+msgstr "Komentarze"
+
+msgid ""
+"Regular comments should start with a space, but not code that you comment "
+"out. This helps differentiate text comments from disabled code."
+msgstr ""
+
+msgid ""
+"In the script editor, to toggle the selected code commented, press :kbd:"
+"`Ctrl + K`. This feature adds a single # sign at the start of the selected "
+"lines."
+msgstr ""
+
+msgid "Whitespace"
+msgstr "Biały znak"
+
+#, fuzzy
+msgid ""
+"Always use one space around operators and after commas. Also, avoid extra "
+"spaces in dictionary references and function calls."
+msgstr ""
+"Zawsze używaj odstępu jednej spacji przy operatorach i po przecinkach. "
+"Unikaj dodatkowych spacji w odwołaniach do słowników i wywołań funkcji lub "
+"tworzenia \"kolumn\"."
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr ""
+
+#, fuzzy
+msgid "Quotes"
+msgstr "Uwagi"
+
+msgid ""
+"Use double quotes unless single quotes make it possible to escape fewer "
+"characters in a given string. See the examples below:"
+msgstr ""
+
+#, fuzzy
+msgid "Numbers"
+msgstr "Członkowie"
+
+msgid ""
+"Don't omit the leading or trailing zero in floating-point numbers. "
+"Otherwise, this makes them less readable and harder to distinguish from "
+"integers at a glance."
+msgstr ""
+
+#, fuzzy
+msgid "**Good**::"
+msgstr "**Dobrze**:"
+
+#, fuzzy
+msgid "**Bad**::"
+msgstr "**Źle**:"
+
+msgid ""
+"Use lowercase for letters in hexadecimal numbers, as their lower height "
+"makes the number easier to read."
+msgstr ""
+
+msgid ""
+"Take advantage of GDScript's underscores in literals to make large numbers "
+"more readable."
+msgstr ""
+
+#, fuzzy
+msgid "Naming conventions"
+msgstr "Konwencje nazewnictwa"
+
+#, fuzzy
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code."
+msgstr ""
+"Owe konwencje nazywania są zgodne ze stylem używanym Godot Engine. Ich "
+"złamanie spowoduje, że twój kod będzie sprzeczny z daną konwencją nazewniczą "
+"i jest po prostu brzydkie."
+
+#, fuzzy
+msgid "File names"
+msgstr "wietnamski"
+
+msgid ""
+"Use snake_case for file names. For named classes, convert the PascalCase "
+"class name to snake_case::"
+msgstr ""
+
+msgid ""
+"This is consistent with how C++ files are named in Godot's source code. This "
+"also avoids case sensitivity issues that can crop up when exporting a "
+"project from Windows to other platforms."
+msgstr ""
+
+#, fuzzy
+msgid "Classes and nodes"
+msgstr "Klasy i Węzły"
+
+msgid "Use PascalCase for class and node names:"
+msgstr ""
+
+#, fuzzy
+msgid "Also use PascalCase when loading a class into a constant or a variable:"
+msgstr "Również podczas ładowania klasy do stałej lub zmiennej:"
+
+#, fuzzy
+msgid "Functions and variables"
+msgstr "Funkcje i Zmienne"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr "Użyj snake\\_case ,aby nazwać funkcje i zmienne:"
+
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods functions the user must "
+"override, private functions, and private variables:"
+msgstr ""
+"Stosuj pojedyncze podkreślenie (\\_) do metod wirtualnych (funkcje, które "
+"użytkownik musi nadpisać), funkcji prywatnych i zmiennych prywatnych: ``func "
+"_ready()``:"
+
+msgid "Signals"
+msgstr "Sygnały"
+
+#, fuzzy
+msgid "Use the past tense to name signals:"
+msgstr "Używaj czasu przeszłego:"
+
+#, fuzzy
+msgid "Constants and enums"
+msgstr "stały wzorzec"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr ""
+"Używaj CONSTANT\\_CASE, wielkimi literami, z podkreśleniem (\\_), aby "
+"oddzielić słowa: ``const ILOSC_DNI = 200``:"
+
+msgid ""
+"Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
+"they are constants:"
+msgstr ""
+
+#, fuzzy
+msgid "Code order"
+msgstr "Przetwarzaj"
+
+msgid ""
+"This first section focuses on code order. For formatting, see :ref:"
+"`formatting`. For naming conventions, see :ref:`naming_conventions`."
+msgstr ""
+
+msgid "We suggest to organize GDScript code this way:"
+msgstr "Sugerujemy organizować kod GDScript w ten sposób:"
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+
+msgid "This code order follows four rules of thumb:"
+msgstr ""
+
+msgid "Properties and signals come first, followed by methods."
+msgstr ""
+
+msgid "Public comes before private."
+msgstr ""
+
+msgid "Virtual callbacks come before the class's interface."
+msgstr ""
+
+msgid ""
+"The object's construction and initialization functions, ``_init`` and "
+"``_ready``, come before functions that modify the object at runtime."
+msgstr ""
+
+msgid "Class declaration"
+msgstr "Deklaracja klasy"
+
+msgid ""
+"If the code is meant to run in the editor, place the ``tool`` keyword on the "
+"first line of the script."
+msgstr ""
+
+msgid ""
+"Follow with the `class_name` if necessary. You can turn a GDScript file into "
+"a global type in your project using this feature. For more information, see :"
+"ref:`doc_gdscript`."
+msgstr ""
+
+msgid "Then, add the `extends` keyword if the class extends a built-in type."
+msgstr ""
+"Następnie, dodaj słówko `extends` jeżeli klasa rozszerza wbudowany typ."
+
+msgid ""
+"Following that, you should have the class's optional docstring as comments. "
+"You can use that to explain the role of your class to your teammates, how it "
+"works, and how other developers should use it, for example."
+msgstr ""
+
+#, fuzzy
+msgid "Signals and properties"
+msgstr "Właściwości węzła"
+
+msgid ""
+"Write signal declarations, followed by properties, that is to say, member "
+"variables, after the docstring."
+msgstr ""
+
+msgid ""
+"Enums should come after signals, as you can use them as export hints for "
+"other properties."
+msgstr ""
+
+msgid ""
+"Then, write constants, exported variables, public, private, and onready "
+"variables, in that order."
+msgstr ""
+
+msgid ""
+"The GDScript compiler evaluates onready variables right before the "
+"``_ready`` callback. You can use that to cache node dependencies, that is to "
+"say, to get child nodes in the scene that your class relies on. This is what "
+"the example above shows."
+msgstr ""
+
+#, fuzzy
+msgid "Member variables"
+msgstr "Zmienne środowiskowe"
+
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#, fuzzy
+msgid "Local variables"
+msgstr "Lokalne zmienne"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#, fuzzy
+msgid "Methods and static functions"
+msgstr "Funkcje statyczne"
+
+msgid "After the class's properties come the methods."
+msgstr ""
+
+msgid ""
+"Start with the ``_init()`` callback method, that the engine will call upon "
+"creating the object in memory. Follow with the ``_ready()`` callback, that "
+"Godot calls when it adds a node to the scene tree."
+msgstr ""
+
+msgid ""
+"These functions should come first because they show how the object is "
+"initialized."
+msgstr ""
+
+msgid ""
+"Other built-in virtual callbacks, like ``_unhandled_input()`` and "
+"``_physics_process``, should come next. These control the object's main loop "
+"and interactions with the game engine."
+msgstr ""
+
+msgid ""
+"The rest of the class's interface, public and private methods, come after "
+"that, in that order."
+msgstr ""
+
+#, fuzzy
+msgid "Static typing"
+msgstr "Funkcje statyczne"
+
+msgid ""
+"Since Godot 3.1, GDScript supports :ref:`optional static "
+"typing<doc_gdscript_static_typing>`."
+msgstr ""
+
+#, fuzzy
+msgid "Declared types"
+msgstr "Typy Shaderów"
+
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
+msgstr ""
+
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr ""
+
+#, fuzzy
+msgid "Inferred types"
+msgstr "Typy Shaderów"
+
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
+msgstr ""
+
+msgid ""
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""
+
+msgid ""
+"Alternatively, you can use the ``as`` keyword to cast the return type, and "
+"that type will be used to infer the type of the var."
+msgstr ""
+
+msgid ""
+"This option is also considered more :ref:`type-"
+"safe<doc_gdscript_static_typing_safe_lines>` than the first."
+msgstr ""

@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Handling quit requests"
+msgstr "处理退出请求"
+
+msgid "Quitting"
+msgstr "退出"
+
+msgid ""
+"Most platforms have the option to request the application to quit. On "
+"desktops, this is usually done with the \"x\" icon on the window title bar. "
+"On Android, the back button is used to quit when on the main screen (and to "
+"go back otherwise)."
+msgstr ""
+"大多数平台都有要求应用程序退出的选项。在桌面系统中，这通常是通过窗口标题栏上"
+"的“x”图标来实现的。在 Android 系统上，当在主屏幕上时，后退按钮被用来退出（否"
+"则就返回）。"
+
+msgid "Handling the notification"
+msgstr "处理通知"
+
+msgid ""
+"On desktop platforms, the :ref:`MainLoop <class_MainLoop>` has a special "
+"``MainLoop.NOTIFICATION_WM_QUIT_REQUEST`` notification that is sent to all "
+"nodes when quitting is requested."
+msgstr ""
+"在桌面平台上, :ref:`MainLoop <class_MainLoop>` 有一个特殊的 ``MainLoop."
+"NOTIFICATION_WM_QUIT_REQUEST`` 通知, 当请求退出时, 会向所有节点发送."
+
+msgid ""
+"On Android, ``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` is sent instead. "
+"Pressing the Back button will exit the application if **Application > Config "
+"> Quit On Go Back** is checked in the Project Settings (which is the "
+"default)."
+msgstr ""
+"在Android系统中, 会发送 ``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` 代替. 如"
+"果在项目设置中勾选了 **Application > Config > Quit On Go Back** (默认), 按"
+"Back按钮将退出应用程序."
+
+msgid ""
+"``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS "
+"devices don't have a physical Back button."
+msgstr ""
+"``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` 在iOS上不支持, 因为iOS设备没有实"
+"体的Back按钮."
+
+msgid "Handling the notification is done as follows (on any node):"
+msgstr "处理通知的方法如下(在任何节点上):"
+
+msgid ""
+"When developing mobile apps, quitting is not desired unless the user is on "
+"the main screen, so the behavior can be changed."
+msgstr ""
+"在开发移动应用程序时, 除非用户在主屏幕上, 否则不需要退出, 因此处理方式有变化."
+
+msgid ""
+"It is important to note that by default, Godot apps have the built-in "
+"behavior to quit when quit is requested, this can be changed:"
+msgstr ""
+"值得注意的是, 默认情况下, 在请求退出时,Godot应用程序具有退出的内置行为, 可以"
+"更改为:"
+
+msgid "Sending your own quit notification"
+msgstr "发送你自己的退出通知"
+
+msgid ""
+"While forcing the application to close can be done by calling :ref:"
+"`SceneTree.quit <class_SceneTree_method_quit>`, doing so will not send the "
+"quit *notification*. This means the function described above won't be "
+"called. Quitting by calling :ref:`SceneTree.quit "
+"<class_SceneTree_method_quit>` will not allow custom actions to complete "
+"(such as saving, confirming the quit, or debugging), even if you try to "
+"delay the line that forces the quit."
+msgstr ""
+"虽然强迫应用程序关闭可以通过调用 :ref:`SceneTree.quit "
+"<class_SceneTree_method_quit>` 来完成，但这样做不会发送退出的\\ *通知*\\ 。这"
+"意味着上面描述的函数不会被调用。通过调用 :ref:`SceneTree.quit "
+"<class_SceneTree_method_quit>` 来退出，将不允许自定义动作的完成（比如保存、确"
+"认退出或调试），即使你试图延迟强制退出的行。"
+
+msgid "Instead, you should send a quit request:"
+msgstr "相反，您应该发送退出请求："

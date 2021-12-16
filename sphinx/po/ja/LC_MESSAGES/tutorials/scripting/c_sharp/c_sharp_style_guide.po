@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# style guide"
+msgstr "C#スタイルガイド"
+
+msgid ""
+"Having well-defined and consistent coding conventions is important for every "
+"project, and Godot is no exception to this rule."
+msgstr ""
+"明確に定義された一貫したコーディング規約を持つことはすべてのプロジェクトに"
+"とって重要であり、Godotも例外ではありません。"
+
+msgid ""
+"This page contains a coding style guide, which is followed by developers of "
+"and contributors to Godot itself. As such, it is mainly intended for those "
+"who want to contribute to the project, but since the conventions and "
+"guidelines mentioned in this article are those most widely adopted by the "
+"users of the language, we encourage you to do the same, especially if you do "
+"not have such a guide yet."
+msgstr ""
+"このページには、Godot自体の開発者および貢献者が従うコーディングスタイルガイド"
+"が含まれています。そのため、主にプロジェクトに貢献したい人を対象としています"
+"が、この記事で言及されている規約とガイドラインはこの言語のユーザーによって最"
+"も広く採用されているものなので、特に従うべぎ(チーム内の規定などの)ガイドをま"
+"だ持っていない場合は、同じことを行うことをお勧めします。"
+
+msgid ""
+"This article is by no means an exhaustive guide on how to follow the "
+"standard coding conventions or best practices. If you feel unsure of an "
+"aspect which is not covered here, please refer to more comprehensive "
+"documentation, such as `C# Coding Conventions <https://docs.microsoft.com/en-"
+"us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ or "
+"`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
+"standard/design-guidelines/naming-guidelines>`_."
+msgstr ""
+"この記事は、標準コーディング規約やベスト・プラクティスに従う方法を網羅したガ"
+"イドではありません。ここで説明していない側面について不明な点がある場合は、 "
+"`C# Coding Conventions <https://docs.microsoft.com/en-us/dotnet/csharp/"
+"programming-guide/inside-a-program/coding-conventions>` や `Framework Design "
+"Guidelines <https://docs.microsoft.com/en-us/dotnet/standard/design-"
+"guidelines/naming-guidelines>` など、より包括的なドキュメントを参照してくださ"
+"い。"
+
+msgid "Language specification"
+msgstr "言語仕様"
+
+msgid ""
+"Godot currently uses **C# version 7.0** in its engine and example source "
+"code. So, before we move to a newer version, care must be taken to avoid "
+"mixing language features only available in C# 7.1 or later."
+msgstr ""
+"Godotは現在、エンジンとサンプルソースコードで **C# バージョン7.0** を使用して"
+"います。したがって、新しいバージョンに移行する前に、C# 7.1以降でのみ使用可能"
+"な言語機能が混在しないように注意する必要があります。"
+
+msgid ""
+"For detailed information on C# features in different versions, please see "
+"`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
+">`_."
+msgstr ""
+"異なるバージョンのC#機能の詳細については、 `C#の新機能<https://docs."
+"microsoft.com/en-us/dotnet/csharp/whats-new/> ` を参照してください。"
+
+msgid "Formatting"
+msgstr "書式設定"
+
+msgid "General guidelines"
+msgstr "一般的なガイドライン"
+
+msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
+msgstr "CRLFやCRではなく、改行(**LF**)文字を使用して改行します。"
+
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr "`csproj` ファイルを除き、各ファイルの末尾に1つの改行文字を使用します。"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_."
+msgstr ""
+"`バイトオーダーマーク <https://ja.wikipedia.org/wiki/バイトオーダーマーク>`_"
+"\\ なしで\\ **UTF-8**\\ エンコーディングを使用します。"
+
+msgid ""
+"Use **4 spaces** instead of tabs for indentation (which is referred to as "
+"\"soft tabs\")."
+msgstr ""
+"インデントにタブの代わりに **4つのスペース** を使用します(「ソフトタブ」と呼"
+"ばれます)。"
+
+msgid ""
+"Consider breaking a line into several if it's longer than 100 characters."
+msgstr "100文字を超える場合は、行を複数に分割することを検討してください。"
+
+msgid "Line breaks and blank lines"
+msgstr "改行と空白行"
+
+msgid ""
+"For a general indentation rule, follow `the \"Allman Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
+"placing the brace associated with a control statement on the next line, "
+"indented to the same level:"
+msgstr ""
+"一般的なインデントルールについては、\\ `\"Allman Style\"<https://en."
+"wikipedia.org/wiki/Indentation_style#Allman_style>` に従って、制御ステートメ"
+"ントに関連付けられたブレースを次の行に配置し、同じレベルにインデントすること"
+"をお勧めします。"
+
+msgid "However, you may choose to omit line breaks inside brackets:"
+msgstr "ただし、括弧内の改行を省略することもできます。"
+
+msgid "For simple property accessors."
+msgstr "単純なプロパティアクセサーの場合。"
+
+msgid "For simple object, array, or collection initializers."
+msgstr "単純なオブジェクト、配列、またはコレクションの初期化子の場合。"
+
+msgid "For abstract auto property, indexer, or event declarations."
+msgstr "抽象自動プロパティ、インデクサー、またはイベント宣言の場合。"
+
+msgid "Insert a blank line:"
+msgstr "空白行の挿入:"
+
+msgid "After a list of ``using`` statements."
+msgstr "``using`` ステートメントのリストの後。"
+
+msgid "Between method, properties, and inner type declarations."
+msgstr "メソッド、プロパティ、内部型宣言の間。"
+
+msgid "At the end of each file."
+msgstr "各ファイルの末尾。"
+
+msgid ""
+"Field and constant declarations can be grouped together according to "
+"relevance. In that case, consider inserting a blank line between the groups "
+"for easier reading."
+msgstr ""
+"フィールドと定数の宣言は、関連性に従ってグループ化できます。その場合は、読み"
+"やすくするためにグループ間に空白行を挿入することを検討してください。"
+
+msgid "Avoid inserting a blank line:"
+msgstr "空白行の挿入を避けるべき:"
+
+msgid "After ``{``, the opening brace."
+msgstr "``{`` 、開き括弧の後。"
+
+msgid "Before ``}``, the closing brace."
+msgstr "``}`` 、閉じ括弧の前。"
+
+msgid "After a comment block or a single-line comment."
+msgstr "コメントブロックまたは単一行コメントの後。"
+
+msgid "Adjacent to another blank line."
+msgstr "別の空白行に隣接する場合。"
+
+msgid "Using spaces"
+msgstr "スペースの使用"
+
+msgid "Insert a space:"
+msgstr "スペースを挿入する:"
+
+msgid "Around a binary and tertiary operator."
+msgstr "二項演算子と三次演算子の周囲。"
+
+msgid ""
+"Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
+"``while``, ``lock`` or ``using`` keywords."
+msgstr ""
+"左括弧と ``if`` 、\\ ``for``、\\ ``foreach``、\\ ``catch`` 、\\ "
+"``while`` 、\\ ``lock`` 、または ``using`` キーワードの間。"
+
+msgid "Before and within a single line accessor block."
+msgstr "単一行アクセサーブロックの前および中。"
+
+msgid "Between accessors in a single line accessor block."
+msgstr "単一行アクセサーブロック内のアクセサー間。"
+
+msgid "After a comma which is not at the end of a line."
+msgstr "行末にないコンマの後。"
+
+msgid "After a semicolon in a ``for`` statement."
+msgstr "``for`` ステートメントのセミコロンの後。"
+
+msgid "After a colon in a single line ``case`` statement."
+msgstr "単一行 ``case`` ステートメントのコロンの後。"
+
+msgid "Around a colon in a type declaration."
+msgstr "型宣言のコロンの周囲。"
+
+msgid "Around a lambda arrow."
+msgstr "ラムダ式のアロー演算子の周り。"
+
+msgid ""
+"After a single-line comment symbol (``//``), and before it if used at the "
+"end of a line."
+msgstr "単一行コメント記号 (``//``) の後、行の末尾で使用する場合はその前。"
+
+msgid "Do not use a space:"
+msgstr "スペースの挿入を避けるべき:"
+
+msgid "After type cast parentheses."
+msgstr "型キャスト括弧の後。"
+
+msgid "Within single line initializer braces."
+msgstr "単一行イニシライザーの中括弧内。"
+
+msgid ""
+"The following example shows a proper use of spaces, according to some of the "
+"above mentioned conventions:"
+msgstr ""
+"次の例は、上記の規則に従ってスペースを適切に使用する方法を示しています:"
+
+msgid "Naming conventions"
+msgstr "命名規則"
+
+msgid ""
+"Use **PascalCase** for all namespaces, type names and member level "
+"identifiers (i.e. methods, properties, constants, events), except for "
+"private fields:"
+msgstr ""
+"プライベートフィールドを除く、すべての名前空間、型名、およびメンバーレベル識"
+"別子(メソッド、プロパティ、定数、イベント)に **PascalCase** を使用します。"
+
+msgid ""
+"Use **camelCase** for all other identifiers (i.e. local variables, method "
+"arguments), and use an underscore (``_``) as a prefix for private fields "
+"(but not for methods or properties, as explained above):"
+msgstr ""
+"**camelCase** は、他のすべての識別子 (ローカル変数、メソッド引数) に使用し、"
+"プライベート フィールドのプレフィックスとしてアンダースコア (``_``) を使用し"
+"ます (ただし、前述のようにメソッドやプロパティには使用しません)。"
+
+msgid ""
+"There's an exception with acronyms which consist of two letters, like "
+"``UI``, which should be written in uppercase letters where PascalCase would "
+"be expected, and in lowercase letters otherwise."
+msgstr ""
+"``UI`` のような 2つの文字で構成される頭字語には例外があり、PascalCaseで予期さ"
+"れる大文字で記述する必要があります(例:**U**ser**I**nterface → UI)。"
+
+msgid ""
+"Note that ``id`` is **not** an acronym, so it should be treated as a normal "
+"identifier:"
+msgstr ""
+"``id`` は略語\\ **ではない**\\ ため、通常の識別子として扱う必要があります。"
+
+msgid ""
+"It is generally discouraged to use a type name as a prefix of an identifier, "
+"like ``string strText`` or ``float fPower``, for example. An exception is "
+"made, however, for interfaces, which **should**, in fact, have an uppercase "
+"letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
+"``IDamageable``."
+msgstr ""
+"一般に、たとえば ``string strText`` や ``float fPower`` のように、識別子のプ"
+"レフィックスとして型名を使用することは推奨されません。ただし、インターフェイ"
+"スについては例外が設けれれています。実際には、名前に ``InventoryHolder`` や "
+"``IDamageable`` のように大文字の ``I`` が先頭に付いている\\ **必要**\\ があり"
+"ます。"
+
+msgid ""
+"Lastly, consider choosing descriptive names and do not try to shorten them "
+"too much if it affects readability."
+msgstr ""
+"最後に、わかりやすい名前を選択することを検討し、読みやすさに影響を与える場合"
+"は、あまり短くしないでください。"
+
+msgid ""
+"For instance, if you want to write code to find a nearby enemy and hit it "
+"with a weapon, prefer:"
+msgstr ""
+"たとえば、近くの敵を見つけて武器で攻撃するコードを作成する場合は、次のよう書"
+"きます:"
+
+msgid "Rather than:"
+msgstr "悪い例:"
+
+#, fuzzy
+msgid "Member variables"
+msgstr "メンバアクセス"
+
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#, fuzzy
+msgid "Local variables"
+msgstr "ローカル変数(LocalVarSet/LocalVarGet)"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+msgid "Implicitly typed local variables"
+msgstr "暗黙的に型指定されたローカル変数"
+
+msgid ""
+"Consider using implicitly typing (``var``) for declaration of a local "
+"variable, but do so **only when the type is evident** from the right side of "
+"the assignment:"
+msgstr ""
+"ローカル変数の宣言に暗黙的に ( ``var``) を入力することを検討してください。た"
+"だし、代入の右側が\\ **型が明らかな場合にのみ**\\ 行ってください。"
+
+msgid "Other considerations"
+msgstr "その他の考慮事項"
+
+msgid "Use explicit access modifiers."
+msgstr "明示的なアクセス修飾子を使用します。"
+
+msgid "Use properties instead of non-private fields."
+msgstr "非プライベートフィールドの代わりにプロパティを使用します。"
+
+msgid ""
+"Use modifiers in this order: ``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
+"``readonly``."
+msgstr ""
+"修飾子を次の順序で使用します:``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
+"``readonly``\\ 。"
+
+msgid ""
+"Avoid using fully-qualified names or ``this.`` prefix for members when it's "
+"not necessary."
+msgstr ""
+"不要な場合は、メンバーに完全修飾名または ``this.`` プレフィックスを使用しない"
+"でください。"
+
+msgid "Remove unused ``using`` statements and unnecessary parentheses."
+msgstr "未使用の ``using`` ステートメントと不要な括弧を削除します。"
+
+msgid "Consider omitting the default initial value for a type."
+msgstr "型の既定の初期値を省略することを検討してください。"
+
+msgid ""
+"Consider using null-conditional operators or type initializers to make the "
+"code more compact."
+msgstr ""
+"コードをよりコンパクトにするために、null条件演算子または型初期化を使用するこ"
+"とを検討してください。"
+
+msgid ""
+"Use safe cast when there is a possibility of the value being a different "
+"type, and use direct cast otherwise."
+msgstr ""
+"値が異なるタイプである可能性がある場合は、セーフキャストを使用し、それ以外の"
+"場合は直接キャストを使用します。"

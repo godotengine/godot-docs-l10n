@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:2
 msgid "Rooms and Portals example"
 msgstr "房间和入口示例"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:4
 msgid ""
 "Download this tutorial project: `Simple Portals Example <https://github.com/"
 "lawnjelly/godot-demo-projects/tree/portals_simple_demo/3d/portals/"
@@ -31,11 +29,9 @@ msgstr ""
 "lawnjelly/godot-demo-projects/tree/portals_simple_demo/3d/portals/"
 "room_and_portals_simple_example>`_ 。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:9
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:11
 msgid ""
 "This tutorial will introduce you to building a \"Hello World\" room system "
 "with two rooms, and a portal in between."
@@ -43,22 +39,18 @@ msgstr ""
 "本教程将向你介绍如何建立有两个房间的 \"Hello World\" 房间系统，以及中间的入"
 "口。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:14
 msgid "Step 1"
 msgstr "第一步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:18
 msgid "Create a new project."
 msgstr "创建新项目。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:19
 msgid ""
 "Add a :ref:`Spatial<class_Spatial>` as the scene root (on the screenshot, "
 "it's called \"Root\")."
 msgstr ""
 "添加一个 :ref:`Spatial<class_Spatial>` 作为场景根节点（截图里称作“Root”）。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:20
 msgid ""
 "Next add a :ref:`RoomManager<class_RoomManager>` node. We will need this "
 "later to process the room system."
@@ -66,7 +58,6 @@ msgstr ""
 "然后添加一个 :ref:`RoomManager<class_RoomManager>` 节点。我们后面处理房间系统"
 "时会用到。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:21
 msgid ""
 "Next we need to start defining our rooms. We create all our rooms under "
 "another Spatial we have called 'RoomList'."
@@ -74,21 +65,17 @@ msgstr ""
 "然后我们就要开始定义我们的房间了。我们在另一个叫做“RoomList”（房间列表）的 "
 "Spatial 节点下创建房间。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:22
 msgid "Add a new :ref:`Room<class_Room>` node as a child of the roomlist."
 msgstr "新建一个 :ref:`Room<class_Room>` 节点作为房间列表的子节点。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:23
 msgid "We have named the room ``Kitchen``."
 msgstr "我们把这个房间命名为 ``Kitchen``\\ （厨房）。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:24
 msgid ""
 "We will now create the geometry of our room. The names you give to the "
 "geometry is up to you."
 msgstr "我们现在来创建这个房间的几何体。几何体的名字你可以随便起。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:25
 msgid ""
 "Create a :ref:`MeshInstance<class_MeshInstance>` for the floor. Create a box "
 "by adding a CubeMesh resource to the MeshInstance. Scale and position it to "
@@ -97,7 +84,6 @@ msgstr ""
 "创建一个 :ref:`MeshInstance<class_MeshInstance>` 作为地板。先给 MeshInstance "
 "添加一个 CubeMesh 资源形成盒子，然后缩放平移成地板的样子。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:26
 msgid ""
 "Create MeshInstances for the walls. Create more box meshes for this, then "
 "scale and position them. Be sure to leave an opening on one side. You will "
@@ -106,15 +92,12 @@ msgstr ""
 "为墙壁添加几个 MeshInstance。创建的应该也是盒子网格，然后缩放平移即可。记得留"
 "一个开口，开口那一面墙需要分两段。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:29
 msgid "Step 2"
 msgstr "第二步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:33
 msgid "Now we need to create the other room."
 msgstr "现在我们需要创建另一个房间。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:34
 msgid ""
 "You can do this simply by duplicating the first room (select the ``Kitchen`` "
 "node, right click and choose **Duplicate**)."
@@ -122,27 +105,21 @@ msgstr ""
 "可以直接复制第一个房间（选择 ``Kitchen`` 节点，右键，然后选择\\ **制作副本**"
 "\\ ）。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:35
 msgid "Rotate and position the second room so that the openings line up."
 msgstr "通过旋转平移第二个房间，把两个房间的开口对齐。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:36
 msgid "Rename the second room to ``Lounge``."
 msgstr "把第二个房间重命名为 ``Lounge``\\ （起居室）。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:39
 msgid "Step 3"
 msgstr "第三步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:43
 msgid "Next, we will add a portal between the two rooms."
 msgstr "接下来，我们要在两个房间之间添加一个入口。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:44
 msgid "Create a new :ref:`Portal<class_Portal>` in the kitchen."
 msgstr "在厨房中新建一个 :ref:`Portal<class_Portal>`\\ 。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:45
 msgid ""
 "Scale and position the portal using the node ``Transform`` in the inspector, "
 "so it fits within the opening between the two rooms."
@@ -150,7 +127,6 @@ msgstr ""
 "使用检查器中的节点的 ``Transform`` 来调整入口的缩放和坐标，使其适合两个房间之"
 "间的开口。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:46
 msgid ""
 "The portal plane should face *outward* from the source room, i.e. towards "
 "the lounge. This direction is indicated by the arrow in the editor gizmo, "
@@ -159,16 +135,13 @@ msgstr ""
 "入口的平面应该朝向源房间的 *外侧* ，也就是朝向休息室。这个方向由编辑器中的箭"
 "头和入口的颜色表示。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:49
 msgid "Step 4"
 msgstr "第四步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:53
 msgid ""
 "To make things more exciting, we want to add a few more boxes to the rooms."
 msgstr "为了更有趣，我们在房间里多加几个盒子。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:54
 msgid ""
 "Placing these boxes as children or grandchildren of the room nodes "
 "explicitly tells the system which room the objects should be in. However, we "
@@ -180,19 +153,16 @@ msgstr ""
 "然而，我们也可以在房间之外创建这些对象。只要它们在房间列表分支当中，系统就会"
 "尝试在运行时自动将它们放在正确的房间中。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:55
 msgid ""
 "On the screenshot, the boxes were places as children of a Spatial I have "
 "called ``Freeform`` to keep things tidy."
 msgstr "在截图中，这些盒子是作为名为 ``Freeform`` 空间的子项，以保持整洁。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:56
 msgid ""
 "Boxes also have a green SpatialMaterial assigned to them to make them stand "
 "out more from the rest of the room."
 msgstr "给盒子分配绿色的空间材质，以使其在房间中突显。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:57
 msgid ""
 "Let's also create an :ref:`OmniLight<class_OmniLight>` so it will be "
 "autoplaced in one of the rooms."
@@ -200,23 +170,19 @@ msgstr ""
 "我们再创建一个 :ref:`OmniLight<class_OmniLight>`，它将被自动放置在其中一个房"
 "间中。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:60
 msgid "Step 5"
 msgstr "第五步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:64
 msgid ""
 "Next comes a crucial stage. We must let the RoomManager know where the rooms "
 "are!"
 msgstr "接下来是关键阶段。我们必须让RoomManager房间管理器知道房间在哪里!"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:65
 msgid ""
 "Select the RoomManager and look in the Inspector window in the **Paths** "
 "section."
 msgstr "选择RoomManager，查看检查器窗口的\\ **Paths**\\ 部分。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:66
 msgid ""
 "You need to assign the **Room List** to point to the RoomList node we "
 "created earlier (which is the parent of all the rooms)."
@@ -224,18 +190,15 @@ msgstr ""
 "你需要将\\ **Room List**\\ 指向我们之前创建的RoomList节点，RoomList是所有房间"
 "的父节点。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:69
 msgid "Step 6"
 msgstr "第六步"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:73
 msgid ""
 "Make sure you have saved your project before this next step. It is always a "
 "good idea to save and make a backup before converting."
 msgstr ""
 "确保在进行下一步之前，你已经保存了项目。在转换之前，最好总是保存并做备份。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:74
 msgid ""
 "Select the RoomManager, and you will see a button in the toolbar at the top "
 "of the 3d editor viewport called **Convert Rooms**. Press this button."
@@ -243,7 +206,6 @@ msgstr ""
 "选择RoomManager，你会在3D编辑器视窗顶部的工具栏中看到一个按钮，叫做\\ "
 "**Convert Rooms**\\ ，按下这个按钮。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:75
 msgid ""
 "If all goes well, the RoomManager will have created the runtime data (the "
 "*room graph*) to perform occlusion culling at runtime."
@@ -251,13 +213,11 @@ msgstr ""
 "如果一切顺利，RoomManager将创建运行时数据（ \\ *房间图*\\ ），以便在运行时进"
 "行遮挡剔除。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:76
 msgid ""
 "You can see a log of the conversion process in the output window. This is "
 "helpful for finding problems."
 msgstr "您可以在输出窗口中看到转换过程的日志。这有助于发现问题。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:77
 msgid ""
 "If you now move the editor camera inside the rooms, you should see the "
 "meshes in the opposite room being culled depending on what you can see "
@@ -266,27 +226,22 @@ msgstr ""
 "如果你现在在房间内移动编辑器相机，应该可以看到对面房间的网格被剔除，是取决于"
 "你通过入口所能看到的东西。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:80
 msgid "Conclusion"
 msgstr "总结"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:82
 msgid ""
 "This concludes this simple tutorial. Don't be afraid to experiment with the "
 "new room system you have created."
 msgstr "这个简单的教程到此结束。你可以尝试创建的新房间系统。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:85
 msgid "Some things to try"
 msgstr "试一试"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:87
 msgid ""
 "Create different types of geometry. CSG nodes, Particle systems, and "
 "Multimeshes are all supported by the portal system."
 msgstr "创建不同类型的几何体。入口系统支持 CSG 节点、粒子系统和多重网格。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:88
 msgid ""
 "Try creating a Camera and adding it to the scene. If you run the scene you "
 "will notice that the portal culling is not active. This is because the "
@@ -297,23 +252,21 @@ msgid ""
 "``_ready()`` function."
 msgstr ""
 "尝试创建相机并将其添加到场景中。如果运行场景，您会注意到入口剔除未处于活动状"
-"态。这是因为每次加载关卡时都必须通过转换房间来创建房间数据 ``room graph`` 。"
-"在实际游戏中，您无需在编辑器中使用按钮，而是通过 RoomManager 调用函数来转换关"
-"卡， ``rooms_convert()`` 。使用脚本试用此内容，也许是在 ``_ready()`` 函数中运"
-"行。"
+"态。这是因为每次加载关卡时都必须通过转换房间来创建房间数据 ``room graph``"
+"\\ 。在实际游戏中，您无需在编辑器中使用按钮，而是通过 RoomManager 调用函数来"
+"转换关卡， ``rooms_convert()``\\ 。使用脚本试用此内容，也许是在 ``_ready()`` "
+"函数中运行。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:89
 msgid ""
 "The geometry you created so far is all ``STATIC`` (non-moving). If you look "
 "in the inspector for geometry nodes, you will see they derive from "
 "``CullInstance``. Here you can set the **Portal Mode** for objects in the "
 "portal system. This determines how the node is processed."
 msgstr ""
-"到目前为止，你创建的几何体都是 ``STATIC`` （非移动的）。如果在检查器中查看几"
-"何体节点，你会看到它们源自 ``CullInstance`` 。你可以为入口系统中的对象设置\\ "
-"**入口模式**\\ ，其决定了节点的处理方式。"
+"到目前为止，你创建的几何体都是 ``STATIC``\\ （非移动的）。如果在检查器中查看"
+"几何体节点，你会看到它们源自 ``CullInstance``\\ 。你可以为入口系统中的对象设"
+"置\\ **入口模式**\\ ，其决定了节点的处理方式。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:90
 msgid ""
 "If you now write a script to move one of your objects within a room and view "
 "it through a Camera as the scene runs, you may notice that the object gets "
@@ -325,19 +278,16 @@ msgstr ""
 "可能会注意到这个对象被错误地剔除了。这是因为 ``STATIC`` 对象被认为不会在系统"
 "中移动。如果你把这个对象改为 ``DYNAMIC`` 后，应该能正确地更新剔除。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:91
 msgid ""
 "There are several ``portal_modes``, these are described in the main "
 "documentation."
 msgstr "有几种 ``portal_modes`` ，在主文档中有描述。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:92
 msgid ""
 "Try turning the portal on and off at runtime from your script. You can call "
 "``set_portal_active()`` to open and close the portal."
 msgstr "试着在运行时，从脚本中调用 ``set_portal_active()`` 来打开和关闭入口。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:93
 msgid ""
 "If you select the portal, you should see 4 handles appear. Try dragging the "
 "portal points with the mouse, and see how it affects the objects that are "
@@ -346,7 +296,6 @@ msgstr ""
 "如果你选择了入口，应该可能看到出现4个手柄。试着用鼠标拖动入口的点，看看它对被"
 "剔除的对象有什么影响。"
 
-#: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:94
 msgid ""
 "If you select a room and click the **Generate Points** button in the "
 "toolbar, it will store the points of the room hull in the room inspector. "

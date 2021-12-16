@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:1
 msgid ".. _doc_real_time_navigation_3d:"
-msgstr ""
+msgstr ".. _doc_real_time_navigation_3d:"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:4
 msgid "Real Time Navigation (3D)"
 msgstr "实时导航（3D）"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:9
 msgid ""
 "Godot provides two nodes which can be used to achieve real time navigation "
 "in a 3D environment, :ref:`Navigation <class_Navigation>` and :ref:"
 "`NavigationMeshInstance <class_NavigationMeshInstance>`."
 msgstr ""
+"Godot 针对 3D 环境中的实时导航的实现提供了两个节点：\\ :ref:`Navigation "
+"<class_Navigation>` 和 :ref:`NavigationMeshInstance "
+"<class_NavigationMeshInstance>`\\ 。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:12
 msgid ""
 "A navigation mesh instance is used to hold a :ref:`NavigationMesh "
 "<class_NavigationMesh>`, "
@@ -44,64 +42,65 @@ msgid ""
 "`Navigation <class_Navigation>` node is then used for "
 "pathfinding with the navigation mesh."
 msgstr ""
+"导航网格（\\ :ref:`NavigationMesh <class_NavigationMesh>`\\ ）由导航网格实例"
+"（NavigationMeshInstance）持有 ，用于定义场景中的可导航区域。导航（\\ :ref:"
+"`Navigation <class_Navigation>`\\ ）节点根据导航网格进行寻路。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:17
 msgid "Setting up navigation"
 msgstr "设置导航"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:19
 msgid ""
 "To add navigation to a scene you need to add a navigation node, then "
 "a navigation mesh instance as a child of the navigation node. With the "
 "navigation mesh instance selected you need to go to the inspector and "
 "create a new navigation mesh."
 msgstr ""
+"要在场景中加入导航功能，你需要添加一个导航节点，然后为导航节点添加导航网格实"
+"例作为子节点。选中导航网格实例后，再在检查器中新建导航网格。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:24
 msgid ".. image:: img/new_navigation_mesh.png"
-msgstr ""
+msgstr ".. image:: img/new_navigation_mesh.png"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:26
 msgid ""
 "Click on the navigation mesh and you can now alter the properties that "
 "define how the navigation mesh is generated. You can find a full "
 "description for each of the properties in the class reference here: :ref:"
 "`NavigationMesh <class_NavigationMesh>`."
 msgstr ""
+"点击导航网格后，你就可以通过调整其属性来控制导航网格的生成方式。你可以在 :"
+"ref:`NavigationMesh <class_NavigationMesh>` 的类参考手册中找到每个属性的完整"
+"说明。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:31
 msgid ""
 "After making the changes you want the mesh can be generated by clicking "
 "**Bake NavMesh** in the toolbar."
-msgstr ""
+msgstr "调整完后，就可以点击工具栏上的\\ **烘焙导航网格**\\ 来生成网格。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:34
 msgid ".. image:: img/bake_navmesh.png"
-msgstr ""
+msgstr ".. image:: img/bake_navmesh.png"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:36
 msgid ""
 "Once the mesh has finished generating you should see the transparent "
 "navigation mesh above the areas in your scene that can be navigated to."
 msgstr ""
+"网格生成完后，你就能在场景中可以进行导航的位置上方看到半透明的导航网格了。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:39
 msgid ".. image:: img/baked_navmesh.png"
-msgstr ""
+msgstr ".. image:: img/baked_navmesh.png"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:41
 msgid ""
 "Keep in mind that the navmesh shows where the center of an entity can "
 "go. For example, if you set the agent radius to 0.5 then your "
 "navigation mesh will have a distance of 0.5 from any ledges or walls "
 "to prevent clipping into the wall or hanging off of the edge."
 msgstr ""
+"请注意，导航网格显示的是实体中心点所能到达的位置。例如，如果你将 agent "
+"radius 设为 0.5，那么你的导航网格与台阶或者墙壁之间就会有 0.5 的距离，防止穿"
+"进墙壁或从边缘掉下。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:47
 msgid "Generating a path"
-msgstr ""
+msgstr "生成路径"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:49
 msgid ""
 "To get a path between two areas on a map you use the navigation node "
 "method ``get_simple_path()``. The first argument is a Vector3 of the "
@@ -109,8 +108,10 @@ msgid ""
 "last argument is a boolean for whether or not agent properties of a "
 "navmesh are considered when generating a path."
 msgstr ""
+"要在地图上获取两个区域之间的路径，你可以使用导航节点的 ``get_simple_path()`` "
+"方法。第一个参数是表示起始位置的 Vector3，接下来是表示结束位置的 Vector3。最"
+"后一个参数是一个布尔值，表示是否需要在生成路径时考虑 agent 属性。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:55
 msgid ""
 "The method will return a :ref:`PoolVector3Array "
 "<class_PoolVector3Array>` consisting of "
@@ -118,12 +119,13 @@ msgid ""
 "location the method will return a blank :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`."
 msgstr ""
+"该方法返回的是一个 :ref:`PoolVector3Array <class_PoolVector3Array>`\\ ，由路"
+"径上的点组成。如果无法导航至结束位置，该方法会返回一个空 :ref:"
+"`PoolVector3Array <class_PoolVector3Array>`\\ 。"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:60
 msgid "Official example project"
 msgstr "官方示例项目"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:62
 msgid ""
 "There is an official example project on how to use 3D navigation. "
 "You can find the repository `here <https://github.com/godotengine/godot-demo-"

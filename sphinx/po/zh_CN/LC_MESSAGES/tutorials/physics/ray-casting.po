@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
 msgstr "发射射线"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
 "One of the most common tasks in game development is casting a ray (or custom "
 "shaped object) and checking what it hits. This enables complex behaviors, "
@@ -35,7 +32,6 @@ msgstr ""
 "游戏开发中最常见的任务之一是发射射线(或自定义形状的对象)并检查其击中的内容. "
 "这可以产生复杂的行为, 如AI等. 本教程将介绍如何在2D和3D中执行此操作."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
 "Godot stores all the low level game information in servers, while the scene "
 "is just a frontend. As such, ray casting is generally a lower-level task. "
@@ -43,12 +39,11 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
-"Godot将所有低级游戏信息存储在服务器中, 而场景只是一个前端. 因此, 发射射线通常"
-"是较低级别的任务. 对于简单的射线发射, 使用 :ref:`RayCast <class_RayCast>` "
-"和 :ref:`RayCast2D <class_RayCast2D>` 节点就可以了, 因为它们将每一帧都返回射"
-"线投射的结果."
+"Godot 将所有底层游戏信息存储在服务器中，场景只是一个前端。因此，光线投射通常"
+"是较底层的任务。对于简单的光线投射，使用 :ref:`RayCast <class_RayCast>` 和 :"
+"ref:`RayCast2D <class_RayCast2D>` 节点就可以了，因为它们将每一帧都返回光线投"
+"射的结果。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
@@ -56,11 +51,9 @@ msgstr ""
 "但是, 很多时候, 射线投射应该是一个更具交互性的过程, 因此必须存在通过代码执行"
 "此操作的方法."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
 msgstr "空间"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
@@ -73,7 +66,6 @@ msgstr ""
 "<class_CanvasItem_method_get_world_2d>` 获得. 对于3D, 则为 :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>` ."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
 "The resulting space :ref:`RID <class_RID>` can be used in :ref:"
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
@@ -83,11 +75,9 @@ msgstr ""
 "<class_PhysicsServer>` 和2D的 :ref:`Physics2DServer <class_Physics2DServer>` "
 "中."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
 msgstr "获取空间"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
 "set to run on a separate thread to work more efficiently. Due to this, the "
@@ -101,7 +91,6 @@ msgstr ""
 "<class_Node_method__physics_process>` 回调期间访问空间才是安全的. 从这个函数"
 "之外访问它可能会因为空间被 *锁定* 而导致错误."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
 "To perform queries into physics space, the :ref:`Physics2DDirectSpaceState "
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
@@ -111,23 +100,18 @@ msgstr ""
 "<class_Physics2DDirectSpaceState>` 和 :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` ."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
 msgstr "在2D中使用以下代码:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
 msgstr "或者更直接:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
 msgstr "在3D中:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
 msgstr "Raycast查询"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
 "`Physics2DDirectSpaceState.intersect_ray() "
@@ -138,7 +122,6 @@ msgstr ""
 "intersect_ray() <class_Physics2DDirectSpaceState_method_intersect_ray>` . 例"
 "如:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
 "will be empty. If it did hit something, it will contain collision "
@@ -147,31 +130,26 @@ msgstr ""
 "结果是一个字典. 如果射线没有击中任何东西, 字典将是空的. 如果它确实碰撞到了物"
 "体, 将包含碰撞信息碰撞:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr "发生碰撞时, ``result`` 字典包含以下数据:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr "使用Vector3坐标, 数据在3D空间中类似."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
 msgstr "碰撞异常"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
 "A common use case for ray casting is to enable a character to gather data "
 "about the world around it. One problem with this is that the same character "
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
-"射线投射的常见用例是使角色能够收集有关其周围世界的数据. 这种情况的一个问题是"
-"该角色上有碰撞体, 因此射线只会检测到其父节点上的碰撞体, 如下图所示:"
+"光线投射的常见用例是使角色能够收集有关其周围世界的数据。这种情况的一个问题是"
+"该角色上有碰撞体，因此光线只会检测到其父节点上的碰撞体，如下图所示："
 
-#: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
 "To avoid self-intersection, the ``intersect_ray()`` function can take an "
 "optional third parameter which is an array of exceptions. This is an example "
@@ -180,15 +158,12 @@ msgstr ""
 "为了避免自相交, ``intersect_ray()`` 函数可以采用可选的第三个参数, 这是一个排"
 "除数组. 这是如何从KinematicBody2D或任何其他碰撞对象节点使用它的示例:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
 msgstr "例外数组可以包含对象或RID."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
 msgstr "碰撞遮罩"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
 "While the exceptions method works fine for excluding the parent body, it "
 "becomes very inconvenient if you need a large and/or dynamic list of "
@@ -198,7 +173,6 @@ msgstr ""
 "虽然例外方法适用于排除父体, 但如果需要大型和/或动态的例外列表, 则会变得非常不"
 "方便. 在这种情况下, 使用碰撞层/遮罩系统要高效得多."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
 "For example, to use the same mask as the parent body, use the "
@@ -207,7 +181,6 @@ msgstr ""
 "``intersect_ray()`` 的第四个可选参数是一个碰撞掩码. 例如, 要使用与父级相同的"
 "掩码, 请使用 ``collision_mask`` 成员变量:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:224
 msgid ""
 "See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
 "on how to set the collision mask."
@@ -215,11 +188,9 @@ msgstr ""
 "关于如何设置碰撞掩码, 请参阅 :ref:"
 "`doc_physics_introduction_collision_layer_code_example` ."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
-msgstr "来自屏幕的3D射线投射"
+msgstr "来自屏幕的 3D 光线投射"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "
@@ -232,7 +203,6 @@ msgstr ""
 "\"input_event\" 信号, 会让你知道它是什么时候被点击的, 但是如果有想要手动操作"
 "需要, 可这样."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -244,11 +214,9 @@ msgstr ""
 "种投影模式: 透视和正交. 因此, 必须获得射线原点和方向. 这是因为 ``origin`` 在"
 "正交模式下改变, 而 ``normal`` 在透视模式下改变:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr "要使用相机获取它, 可以使用以下代码:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."

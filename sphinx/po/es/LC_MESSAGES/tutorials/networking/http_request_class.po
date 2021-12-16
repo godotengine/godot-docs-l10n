@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:4
 msgid "Making HTTP requests"
 msgstr "Haciendo solicitudes HTTP"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:6
 msgid ""
 "The :ref:`HTTPRequest <class_HTTPRequest>` node is the easiest way to make "
 "HTTP requests in Godot. It is backed by the more low-level :ref:`HTTPClient "
@@ -33,7 +31,6 @@ msgstr ""
 "<class_HTTPClient>` de más bajo nivel, para el cual hay un tutorial "
 "disponible :ref:`aquí <doc_http_client_class>`."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:9
 msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
@@ -42,7 +39,6 @@ msgstr ""
 "botón, que cuando se presione iniciará la solicitud HTTP a la URL "
 "especificada."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:13
 msgid ""
 "When exporting to Android, make sure to enable the [code]INTERNET[/code] "
 "permission in the Android export preset before exporting the project or "
@@ -50,11 +46,9 @@ msgid ""
 "blocked by Android."
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:19
 msgid "Preparing scene"
 msgstr "Preparando la escena"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:21
 msgid ""
 "Create a new empty scene, add a CanvasLayer as the root node and add a "
 "script to it. Then add two child nodes to it: a Button and an HTTPRequest "
@@ -65,12 +59,10 @@ msgstr ""
 "un script. Luego, añádele dos nodos hijos: un botón y un nodo HTTPRequest. "
 "Deberás conectar las siguientes señales al script de CanvasLayer:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:23
 msgid "Button.pressed: When the button is pressed, we will start the request."
 msgstr ""
 "Button.pressed: Cuando se presione el botón, comenzaremos la solicitud."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:24
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
@@ -78,11 +70,9 @@ msgstr ""
 "HTTPRequest.request_completed: Cuando se complete la solicitud, obtendremos "
 "los datos solicitados como un argumento."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:29
 msgid "Scripting"
 msgstr "Scripting"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:31
 msgid ""
 "Below is all the code we need to make it work. The URL points to an online "
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
@@ -92,7 +82,6 @@ msgstr ""
 "apunta a una API mocker en línea; devuelve una cadena JSON predefinida, que "
 "luego analizaremos para obtener acceso a los datos."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:72
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
@@ -100,7 +89,6 @@ msgstr ""
 "Con esto, deberías ver ``(hello:world)`` impreso en la consola; hello es una "
 "clave, y world es un valor, ambas son cadenas."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:74
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
@@ -109,7 +97,6 @@ msgstr ""
 "de clase para :ref:`JSON <class_JSON>` y :ref:`JSONParseResult "
 "<class_JSONParseResult>`."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:76
 msgid ""
 "Note that you may want to check whether the ``result`` equals "
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
@@ -120,7 +107,6 @@ msgstr ""
 "referencia de clase de JSON y :ref:`HTTPRequest <class_HTTPRequest>` para "
 "obtener más información."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
 "array, with each string containing a header in the format ``\"header: value"
@@ -133,7 +119,6 @@ msgstr ""
 "establecer un agente de usuario personalizado (el encabezado de ``agente-"
 "usuario`` de HTTP) puedes usar lo siguiente:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:92
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
 "may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
@@ -142,7 +127,6 @@ msgstr ""
 "funcionen, es posible que necesites realizar algunos pasos, tal como se "
 "describe :ref:`aquí <doc_ssl_certificates>`."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:94
 msgid ""
 "Also, when calling APIs using authorization, be aware that someone might "
 "analyse and decompile your released application and thus may gain access to "
@@ -159,11 +143,9 @@ msgstr ""
 "datos dentro de tu juego. Evita proporcionar información útil para un "
 "atacante siempre que sea posible."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:98
 msgid "Sending data to server"
 msgstr "Enviando datos al servidor"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:100
 msgid ""
 "Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
@@ -172,7 +154,6 @@ msgstr ""
 "Hasta ahora nos hemos limitado a solicitar datos de un servidor. Pero, ¿Qué "
 "si necesitas enviar datos al servidor? Aquí hay una forma común de hacerlo:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:123
 msgid ""
 "Keep in mind that you have to wait for a request to finish before sending "
 "another one. Making multiple request at once requires you to have one node "

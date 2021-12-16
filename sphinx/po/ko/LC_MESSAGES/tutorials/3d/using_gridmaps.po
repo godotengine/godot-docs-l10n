@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:4
 #, fuzzy
 msgid "Using GridMaps"
 msgstr "GridMap 사용하기"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:9
 msgid ""
 ":ref:`Gridmaps <class_GridMap>` are a tool for creating 3D game levels, "
 "similar to the way :ref:`TileMap <doc_using_tilemaps>` works in 2D. You "
@@ -40,18 +37,15 @@ msgstr ""
 "`class_MeshLibrary`)이 필요합니다. 메시 모음은 마치 무한한 레고 블록처럼 사용"
 "됩니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
 msgstr ""
 "콜리전과 내비게이션도 메시에 추가될 수 있습니다. TileMap의 타일과 똑같죠."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
 msgstr "예제 프로젝트"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
@@ -59,7 +53,6 @@ msgstr ""
 "어떻게 GridMap이 작동하는지 배우려면, 샘플 프로젝트를 다운로드하세요: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
@@ -67,11 +60,9 @@ msgstr ""
 "프로젝트 압축을 풀고 \"가져오기(Import)\" 버튼으로 프로젝트 매니저(Project "
 "Manager)에 추가하세요."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
 msgstr "MeshLibrary 만들기"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:30
 msgid ""
 "To begin, you need a :ref:`class_MeshLibrary`, which is a collection of "
 "individual meshes that can be used in the gridmap. Open the "
@@ -82,7 +73,6 @@ msgstr ""
 "들의 모음으로 그리드맵에 쓸 수 있습니다. \"MeshLibrary_Source.tscn\" 씬을 열"
 "어서 어떻게 MeshLibrary가 설정되어 있는지 확인하세요."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
@@ -90,7 +80,6 @@ msgstr ""
 "보다시피, 이 씬은 루트로 :ref:`class_Spatial` 노드를 갖고 있습니다. 그리고 많"
 "은 :ref:`class_MeshInstance` 노드 자손을 갖고 있죠."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
@@ -98,11 +87,9 @@ msgstr ""
 "씬에서 물리 엔진이 필요 없다면, 이게 끝입니다. 하지만 대부분의 경우, 메시에 "
 "콜리전 바디가 필요할 것입니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
 msgstr "콜리전(Collision)"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:45
 msgid ""
 "You can manually assign a :ref:`class_StaticBody` and :ref:"
 "`class_CollisionShape` to each mesh. Alternatively, you can use the \"Mesh\" "
@@ -112,7 +99,6 @@ msgstr ""
 "\\ 를 지정할 수 있습니다. 아니면 \"메시(Mesh)\" 메뉴에서 메시 데이터를 기반으"
 "로 한 콜리전 바디를 자동으로 만들 수 있습니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""
 "Note that a \"Convex\" collision body will work better for simple meshes. "
 "For more complex shapes, select \"Create Trimesh Static Body\". Once each "
@@ -124,11 +110,9 @@ msgstr ""
 "메시마다 PhysicsBody와 ColliisionShape를 가졌다면, MeshLibrary를 사용할 준비"
 "가 되었습니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
 msgstr "머티리얼(Materials)"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
@@ -136,11 +120,9 @@ msgstr ""
 "MeshLibrary를 생성할 때는 메시 안에 있는 머티리얼만 사용됩니다. 노드에 설정"
 "된 머티리얼은 무시됩니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
 msgstr "MeshLibrary 내보내기"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
@@ -148,7 +130,6 @@ msgstr ""
 "MeshLibrary를 내보내려면, 씬(Scene) -> 다음으로 변환하기...(Convert To...) -"
 "> 메시 라이브러리(MeshLibrary)를 클릭하고, 리소스로 저장하세요."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
@@ -156,11 +137,9 @@ msgstr ""
 "프로젝트에서 내보낸 MeshLibrary를 \"MeshLibrary.tres\"라는 이름으로 볼 수 있"
 "습니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
 msgstr "GridMap 사용하기"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
 "Create a new scene and add a GridMap node. Add the mesh library by dragging "
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
@@ -170,7 +149,6 @@ msgstr ""
 "스 파일을 드래그한 다음, 인스펙터(Inspector)의 \"Mesh Library\" 속성에 드롭해"
 "서 MeshLibrary를 추가하세요."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
 "The \"Cell/Size\" property should be set to the size of your meshes. You can "
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
@@ -179,7 +157,6 @@ msgstr ""
 "\"Cell/Size\" 속성은 메시의 크기를 설정합니다. 데모에서는 기본 값으로 두어도 "
 "됩니다. \"Center Y\" 속성을 끄세요."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:87
 #, fuzzy
 msgid ""
 "Now you can start designing the level by choosing a tile from the palette "
@@ -189,7 +166,6 @@ msgstr ""
 "이제 레벨을 설계할 수 있습니다. 팔레트에서 타일을 선택하고, 편집기 창에서 좌"
 "클릭으로 배치합니다. 타일을 지우려면, Shift+우클릭하면 됩니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:91
 #, fuzzy
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
@@ -198,7 +174,6 @@ msgstr ""
 "\"그리드맵(GridMap)\" 메뉴를 클릭하면 설정과 단축키를 볼 수 있습니다. 예를 들"
 "어, \"S\" 키를 누르면 타일을 Y축으로 회전합니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:96
 #, fuzzy
 msgid ""
 "Holding :kbd:`Shift` and dragging with the left mouse button will draw a "
@@ -208,17 +183,14 @@ msgstr ""
 "<Shift>를 누른 채로 좌클릭 드래그를 하면 선택 항목 상자가 만들어 집니다. 메"
 "뉴 설정에서 선택한 영역을 복제하거나 지울 수 있습니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
 msgstr "메뉴에서 타일이 배치되는 격자의 높이와 축도 바꿀 수 있습니다."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
 msgstr "코드로 GridMap 사용하기"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:110
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."

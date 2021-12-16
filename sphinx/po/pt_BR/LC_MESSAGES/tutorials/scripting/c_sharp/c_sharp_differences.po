@@ -1,0 +1,586 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# API differences to GDScript"
+msgstr "Diferenças da API para o GDScript"
+
+msgid "This is a (incomplete) list of API differences between C# and GDScript."
+msgstr ""
+"Esta é uma lista (incompleta) de diferenças entre as APIs do C# e do "
+"GDScript."
+
+msgid "General differences"
+msgstr "Diferenças gerais"
+
+msgid ""
+"As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
+"instead of the ``snake_case`` used in GDScript and C++."
+msgstr ""
+"Como explicado em :ref:`doc_c_sharp`, C# geralmente usa o ``PascalCase`` ao "
+"invés do ``snake_case`` usado no GDScript e C++."
+
+msgid "Global scope"
+msgstr "Escopo global"
+
+msgid ""
+"Global functions and some constants had to be moved to classes, since C# "
+"does not allow declaring them in namespaces. Most global constants were "
+"moved to their own enums."
+msgstr ""
+"Funções globais e algumas constantes tiveram que ser movidas para classes, "
+"já que o C# não permite declará-las em namespaces. A maioria das constantes "
+"globais foram movidas para seus próprios enums."
+
+msgid "Constants"
+msgstr "Constantes"
+
+msgid ""
+"Global constants were moved to their own enums. For example, ``ERR_*`` "
+"constants were moved to the ``Error`` enum."
+msgstr ""
+"As constantes globais foram movidas para seus próprios enums. Por exemplo, "
+"constantes ``ERR_*`` foram movidas para o enum ``Error``."
+
+#, fuzzy
+msgid "Special cases:"
+msgstr "Utilize o tempo pretérito:"
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid "C#"
+msgstr "C#"
+
+msgid "``SPKEY``"
+msgstr "``SPKEY``"
+
+msgid "``GD.SpKey``"
+msgstr "``GD.SpKey``"
+
+msgid "``TYPE_*``"
+msgstr "``TYPE_*``"
+
+msgid "``Variant.Type`` enum"
+msgstr "``Variant.Type`` enum"
+
+msgid "``OP_*``"
+msgstr "``OP_*``"
+
+msgid "``Variant.Operator`` enum"
+msgstr "``Variant.Operator`` enum"
+
+#, fuzzy
+msgid "Math functions"
+msgstr "Funções estáticas"
+
+msgid ""
+"Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
+"``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
+msgstr ""
+"Funções matemáticas globais, como ``abs``, ``acos``, ``asin``, ``atan`` e "
+"``atan2`` estão localizadas sob ``Mathf`` como ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. A constante ``PI`` pode ser encontrada como ``Mathf."
+"Pi``."
+
+#, fuzzy
+msgid "Random functions"
+msgstr "Funções estáticas"
+
+#, fuzzy
+msgid ""
+"Random global functions, like ``rand_range`` and ``rand_seed``, are located "
+"under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
+msgstr ""
+"Funções aleatórias como ``rand_range`` e ``rand_seed`` estão localizadas sob "
+"``Random``, então use ``Random.RandRange`` ao invés de ``rand_range``."
+
+#, fuzzy
+msgid "Other functions"
+msgstr "Funções estáticas"
+
+#, fuzzy
+msgid ""
+"Many other global functions like ``print`` and ``var2str`` are located under "
+"``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
+msgstr ""
+"Funções globais como ``print``, ``var2str`` e ``weakref`` estão localizadas "
+"sob ``GD`` em C#."
+
+msgid "Exceptions:"
+msgstr "Exceções:"
+
+msgid "``weakref(obj)``"
+msgstr "``weakref(obj)``"
+
+msgid "``Object.WeakRef(obj)``"
+msgstr "``Object.WeakRef(obj)``"
+
+msgid "``is_instance_valid(obj)``"
+msgstr "``is_instance_valid(obj)``"
+
+msgid "``Object.IsInstanceValid(obj)``"
+msgstr "``Object.IsInstanceValid(obj)``"
+
+msgid "Tips"
+msgstr "Dicas"
+
+msgid ""
+"Sometimes it can be useful to use the ``using static`` directive. This "
+"directive allows to access the members and nested types of a class without "
+"specifying the class name."
+msgstr ""
+"Às vezes pode ser útil usar a diretiva ``using static``. Esta diretiva "
+"permite acessar os membros e tipos aninhados de uma classe sem especificar o "
+"nome da classe."
+
+msgid "Example:"
+msgstr "Exemplo:"
+
+msgid "Export keyword"
+msgstr "A palavra-chave Export"
+
+msgid ""
+"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword. "
+"This attribute can also be provided with optional :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
+"parameters. Default values can be set by assigning a value."
+msgstr ""
+"Use o atributo ``[Export]`` em vez da palavra-chave de GDScript ``export``. "
+"Este atributo também pode ser fornecido com parâmetros opcionais :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` e ``hintString`` . Os valores "
+"padrão podem ser definidos atribuindo um valor."
+
+msgid "Signal keyword"
+msgstr "A palavra-chave Signal"
+
+#, fuzzy
+msgid ""
+"Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
+"``signal`` keyword. This attribute should be used on a `delegate`, whose "
+"name signature will be used to define the signal."
+msgstr ""
+"Use o atributo ``[Signal]`` em vez da palavra-chave ``signal`` do GDScript. "
+"Este atributo deve ser usado em um 'delegate', cuja assinatura de nome será "
+"usada para definir o sinal."
+
+msgid "See also: :ref:`doc_c_sharp_signals`."
+msgstr "Veja também: :ref:`doc_c_sharp_signals`."
+
+msgid "`onready` keyword"
+msgstr "Palavra-chave `onready`"
+
+msgid ""
+"GDScript has the ability to defer the initialization of a member variable "
+"until the ready function is called with `onready` (cf. :ref:"
+"`doc_gdscript_onready_keyword`). For example:"
+msgstr ""
+"GDScript tem a habilidade de adiar a inicialização de uma variável de membro "
+"(member variable) até que a função _ready seja chamada com `onready` (cf. :"
+"ref:`doc_gdscript_onready_keyword`). Por exemplo:"
+
+msgid ""
+"However C# does not have this ability. To achieve the same effect you need "
+"to do this."
+msgstr ""
+"Contudo, o C# não possui essa funcionalidade. Para atingir o mesmo efeito, "
+"você precisa fazer isso."
+
+msgid "Singletons"
+msgstr "Singletons"
+
+msgid ""
+"Singletons are available as static classes rather than using the singleton "
+"pattern. This is to make code less verbose than it would be with an "
+"``Instance`` property."
+msgstr ""
+"Singletons estão disponíveis como classes estáticas em vez de usar o padrão "
+"singleton. Isto é para fazer o código menos prolixo que seria com uma "
+"propriedade ``Instanciada``."
+
+msgid ""
+"However, in some very rare cases this is not enough. For example, you may "
+"want to access a member from the base class ``Godot.Object``, like "
+"``Connect``. For such use cases we provide a static property named "
+"``Singleton`` that returns the singleton instance. The type of this instance "
+"is ``Godot.Object``."
+msgstr ""
+"No entanto, em alguns casos muito raros, isso não é suficiente. Por exemplo, "
+"você pode querer acessar um membro da classe base ``Godot.Object``, como "
+"``Connect``. Para tais casos de uso, fornecemos uma propriedade estática "
+"chamada ``Singleton`` que retorna a instância singleton. O tipo desta "
+"instância é ``Godot.Object``."
+
+msgid "String"
+msgstr "String"
+
+msgid ""
+"Use ``System.String`` (``string``). Most of Godot's String methods are "
+"provided by the ``StringExtensions`` class as extension methods."
+msgstr ""
+"Use ``System.String`` (``string``). Quase todos os métodos Godot String são "
+"fornecidos pela classe ``StringExtensions`` como métodos de extensão."
+
+#, fuzzy
+msgid "There are a few differences, though:"
+msgstr "Existem algumas diferenças:"
+
+#, fuzzy
+msgid ""
+"``erase``: Strings are immutable in C#, so we cannot modify the string "
+"passed to the extension method. For this reason, ``Erase`` was added as an "
+"extension method of ``StringBuilder`` instead of string. Alternatively, you "
+"can use ``string.Remove``."
+msgstr ""
+"``erase``: As strings são imutáveis em C#, portanto não podemos modificar a "
+"string passada para o método de extensão. Por esse motivo, ``Erase`` foi "
+"adicionado como um método de extensão de ``StringBuilder`` em vez de string. "
+"Alternativamente, você pode usar o ``string.Remove``."
+
+#, fuzzy
+msgid ""
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
+"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
+"specify case sensitivity:"
+msgstr ""
+"``IsSubsequenceOf``/ ``IsSubsequenceOfi``: Um método adicional é fornecido, "
+"que é uma sobrecarga de ``IsSubsequenceOf``, permitindo você especificar "
+"explicitamente a distinção entre maiúsculas e minúsculas:"
+
+#, fuzzy
+msgid ""
+"``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
+"``Match`` and ``Matchn``, which allows you to explicitly specify case "
+"sensitivity:"
+msgstr ""
+"``Match``/ ``Matchn``/ ``ExprMatch``: Um método adicional é fornecido além "
+"de ``Match`` e ``Matchn``, o que permite especificar explicitamente a "
+"distinção entre maiúsculas e minúsculas:"
+
+msgid "Basis"
+msgstr "Basis"
+
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Basis()`` initializes all primitive members to their default value. Use "
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
+msgstr ""
+"Structs não podem ter construtores sem parâmetros em C#, portanto ``new "
+"Basis ()`` inicializa todos os membros primitivos com seu valor padrão. Use "
+"``Basis.Identity`` para o equivalente a ``Basis ()`` em GDScript e C++."
+
+#, fuzzy
+msgid "The following method was converted to a property with a different name:"
+msgstr ""
+"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
+"nomes alterados:"
+
+#, fuzzy
+msgid "``get_scale()``"
+msgstr "get_scale()"
+
+#, fuzzy
+msgid "``Scale``"
+msgstr "Scale"
+
+msgid "Transform2D"
+msgstr "Transform2D"
+
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform2D()`` initializes all primitive members to their default value. "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
+"in GDScript and C++."
+msgstr ""
+"Structs não podem ter construtores sem parâmetros em C#, portanto, ``new "
+"Transform2D ()`` inicializa todos os membros primitivos com seu valor "
+"padrão. Por favor use ``Transform2D.Identity`` para o equivalente a "
+"``Transform2D ()`` em GDScript e C++."
+
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
+"nomes alterados:"
+
+#, fuzzy
+msgid "``get_rotation()``"
+msgstr "get_rotation()"
+
+#, fuzzy
+msgid "``Rotation``"
+msgstr "Rotation"
+
+msgid "Plane"
+msgstr "Plane"
+
+#, fuzzy
+msgid ""
+"The following method was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
+"nomes alterados:"
+
+#, fuzzy
+msgid "``center()``"
+msgstr "center()"
+
+#, fuzzy
+msgid "``Center``"
+msgstr "Center"
+
+msgid "Rect2"
+msgstr "Rect2"
+
+#, fuzzy
+msgid ""
+"The following field was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+"Os seguintes campos foram convertidos em propriedades com seus respectivos "
+"nomes alterados:"
+
+msgid "``end``"
+msgstr "``end``"
+
+msgid "``End``"
+msgstr "``End``"
+
+#, fuzzy
+msgid "``get_area()``"
+msgstr "get_area()"
+
+#, fuzzy
+msgid "``Area``"
+msgstr "Area"
+
+msgid "Quat"
+msgstr "Quat"
+
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Quat()`` initializes all primitive members to their default value. Please "
+"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
+msgstr ""
+"Estruturas não podem ter construtores sem parâmetros em C#. Portanto ``new "
+"Quat()`` inicializa todos os membros primitivos com seu valor padrão. Por "
+"favor use ``Quat.Identity`` para o equivalente a ``Quat()`` em GDScript e C+"
+"+."
+
+#, fuzzy
+msgid ""
+"The following methods were converted to a property with a different name:"
+msgstr ""
+"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
+"nomes alterados:"
+
+msgid "``length()``"
+msgstr "``length()``"
+
+#, fuzzy
+msgid "``Length``"
+msgstr "Caminho do Recurso"
+
+msgid "``length_squared()``"
+msgstr "``length_squared()``"
+
+msgid "``LengthSquared``"
+msgstr "``LengthSquared``"
+
+msgid "Array"
+msgstr "Vetor"
+
+#, fuzzy
+msgid ""
+"*This is temporary. PoolArrays will need their own types to be used the way "
+"they are meant to.*"
+msgstr ""
+"*Isto é temporário. Array é ref-counted, então ele precisará do seu próprio "
+"tipo que envolve o lado nativo. O PoolArrays também precisará do seu próprio "
+"tipo para ser usado da maneira que deve.*"
+
+#, fuzzy
+msgid "``Array``"
+msgstr "Vetor"
+
+#, fuzzy
+msgid "``Godot.Collections.Array``"
+msgstr "``Godot.Array``"
+
+#, fuzzy
+msgid "``PoolIntArray``"
+msgstr "PoolIntArray"
+
+#, fuzzy
+msgid "``int[]``"
+msgstr "``in``"
+
+#, fuzzy
+msgid "``PoolByteArray``"
+msgstr "PoolByteArray"
+
+#, fuzzy
+msgid "``byte[]``"
+msgstr "byte[]"
+
+#, fuzzy
+msgid "``PoolFloatArray``"
+msgstr "PoolFloatArray"
+
+#, fuzzy
+msgid "``float[]``"
+msgstr "float[]"
+
+msgid "``PoolStringArray``"
+msgstr "``PoolStringArray``"
+
+msgid "``String[]``"
+msgstr "``String[]``"
+
+msgid "``PoolColorArray``"
+msgstr "``PoolColorArray``"
+
+msgid "``Color[]``"
+msgstr "``Color[]``"
+
+msgid "``PoolVector2Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Vector2[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PoolVector3Array``"
+msgstr "``PoolVector3Array``"
+
+msgid "``Vector3[]``"
+msgstr "``Vector3[]``"
+
+#, fuzzy
+msgid ""
+"``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
+"Array)`` constructor to create one."
+msgstr ""
+"``Godot.Array <T> `` é um wrapper de tipo seguro em torno de ``Godot."
+"Array``. Use o construtor ``Godot.Array <T> (Godot.Array) `` para criar um."
+
+msgid "Dictionary"
+msgstr "Dicionário"
+
+#, fuzzy
+msgid "Use ``Godot.Collections.Dictionary``."
+msgstr "Use ``Dictionary<object, object>``."
+
+#, fuzzy
+msgid ""
+"``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
+"Collections.Dictionary)`` constructor to create one."
+msgstr ""
+"``Godot.Collections.Dictionary<T>`` é um wrapper de tipo seguro em torno de "
+"``Godot.Collections.Dictionary``. Use o construtor ``Godot.Collections."
+"Dictionary<T>(Godot.Collections.Dictionary)`` para criar um."
+
+msgid "Variant"
+msgstr "Variant"
+
+#, fuzzy
+msgid "``System.Object`` (``object``) is used instead of ``Variant``."
+msgstr "``System.Object`` (``object``) é usado no lugar de ``Variant``."
+
+msgid "Communicating with other scripting languages"
+msgstr "Comunicando com outras linguagens de script"
+
+msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
+msgstr ""
+"Isso é explicado extensivamente em :ref:`doc_cross_language_scripting`."
+
+msgid "Yield"
+msgstr "Yield"
+
+msgid ""
+"Something similar to GDScript's ``yield`` with a single parameter can be "
+"achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield>`_."
+msgstr ""
+"Algo semelhante ao ``yield`` do GDScript com um único parâmetro pode ser "
+"obtido com a palavra-chave `yield <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield> `_ do C#."
+
+msgid ""
+"The equivalent of yield on signal can be achieved with async/await and "
+"``Godot.Object.ToSignal``."
+msgstr ""
+"O equivalente a yield em um sinal pode ser obtido com async/await e ``Godot."
+"Object.ToSignal``."
+
+msgid "Other differences"
+msgstr "Outras diferenças"
+
+msgid ""
+"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
+"Load`` or ``ResourceLoader.Load`` instead."
+msgstr ""
+"``pré-carregamento``, da forma que funciona no GDScript, não está disponível "
+"em C#. Ao invés disso, use ``GD.Load`` ou ``ResourceLoader.Load``."
+
+msgid "Other differences:"
+msgstr "Outras diferenças:"
+
+#, fuzzy
+msgid "``Color8``"
+msgstr "Color8"
+
+#, fuzzy
+msgid "``Color.Color8``"
+msgstr "Color.Color8"
+
+#, fuzzy
+msgid "``is_inf``"
+msgstr "is_inf"
+
+#, fuzzy
+msgid "``float.IsInfinity``"
+msgstr "float.IsInfinity"
+
+#, fuzzy
+msgid "``is_nan``"
+msgstr "is_nan"
+
+#, fuzzy
+msgid "``float.IsNaN``"
+msgstr "float.IsNaN"
+
+#, fuzzy
+msgid "``dict2inst``"
+msgstr "dict2inst"
+
+#, fuzzy
+msgid "TODO"
+msgstr "? TODO"
+
+#, fuzzy
+msgid "``inst2dict``"
+msgstr "inst2dict"

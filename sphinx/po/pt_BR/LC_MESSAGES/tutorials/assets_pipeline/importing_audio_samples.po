@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Importing audio samples"
+msgstr "Importando amostras de áudio"
+
+msgid "Supported files"
+msgstr "Arquivos suportados"
+
+msgid ""
+"Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
+"MP3."
+msgstr ""
+"Godot fornece três opções para importar seus dados de áudio: WAV, Ogg Vorbis "
+"e MP3."
+
+msgid "Each has different advantages."
+msgstr "Cada um tem vantagens diferentes."
+
+msgid ""
+"WAV files use raw data or light compression (IMA-ADPCM). They are "
+"lightweight on the CPU to play back (hundreds of simultaneous voices in this "
+"format are fine). The downside is that they take up a lot of disk space."
+msgstr ""
+"Arquivos WAV usam dados brutos ou compressão leve (IMA-ADPCM). Eles são "
+"leves na CPU para serem reproduzidos (centenas de vozes simultâneas neste "
+"formato são aceitáveis). A desvantagem é que eles ocupam muito espaço em "
+"disco."
+
+msgid ""
+"Ogg Vorbis files use a stronger compression that results in much smaller "
+"file size, but require significantly more processing power to play back."
+msgstr ""
+"Os arquivos Ogg Vorbis usam uma compressão mais forte que resulta em tamanho "
+"de arquivo muito menor, mas requerem significativamente mais poder de "
+"processamento para reprodução."
+
+msgid ""
+"MP3 files use better compression than WAV with IMA-ADPCM, but worse than Ogg "
+"Vorbis. This means that a MP3 file with roughly equal quality to Ogg Vorbis "
+"will be significantly larger. On the bright side, MP3 requires less CPU "
+"usage to play back compared to Ogg Vorbis. This makes MP3 useful for mobile "
+"and HTML5 projects where CPU resources are limited, especially when playing "
+"multiple compressed sounds at the same time (such as long ambient sounds)."
+msgstr ""
+"Arquivos MP3 usam uma compressão melhor que WAV com IMA-ADPCM, porém pior "
+"que Ogg Vorbis. Isto significa que um arquivo MP3 com qualidade "
+"aproximadamente igual ao Ogg Vorbis será significantemente maior. Pelo lado "
+"positivo, o MP3 requer menos uso de CPO para ser reproduzido comparado ao "
+"Ogg Vorbis. Isto torna o MP3 útil para projetos mobile e HTML5 onde os "
+"recursos da CPU são limitados, especialmente ao reproduzir vários sons "
+"comprimidos ao mesmo tempo (como sons ambientes longos)."
+
+msgid "Here is a comparative chart."
+msgstr "Aqui está uma tabela comparativa."
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "1 second of audio"
+msgstr "1 segundo de áudio"
+
+msgid "WAV 24-bit, 96 kHz, stereo"
+msgstr "WAV 24 bits, 96 kHz, estéreo"
+
+msgid "576 KB"
+msgstr "576 KB"
+
+msgid "WAV 16-bit, 44 kHz, mono"
+msgstr "WAV 16 bits, 44 kHz, mono"
+
+msgid "88 KB"
+msgstr "88 KB"
+
+msgid "WAV 16-bit, IMA-ADPCM, mono"
+msgstr "WAV 16 bits, IMA-ADPCM, mono"
+
+msgid "22 KB"
+msgstr "22 KB"
+
+msgid "MP3 192 Kb/s, stereo"
+msgstr "MP3 192 Kb/s, estéreo"
+
+msgid "24 KB"
+msgstr "24 KB"
+
+msgid "Ogg Vorbis 128 Kb/s, stereo"
+msgstr "Ogg Vorbis 128 Kb/s, estéreo"
+
+msgid "16 KB"
+msgstr "16 KB"
+
+msgid "Ogg Vorbis 96 Kb/s, stereo"
+msgstr "Ogg Vorbis 96 Kb/s, estéreo"
+
+msgid "12 KB"
+msgstr "12 KB"
+
+msgid ""
+"Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
+"for music, speech, and long sound effects."
+msgstr ""
+"Considere usar WAV para efeitos sonoros curtos e repetitivos, e Ogg Vorbis "
+"para músicas, vozes e efeitos sonoros longos."
+
+msgid "Best practices"
+msgstr "Boas práticas"
+
+msgid ""
+"Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
+"effects. This saves SFX artists the need to add reverb to the sound effects, "
+"reducing their size greatly and ensuring correct trimming. Say no to SFX "
+"with baked reverb!"
+msgstr ""
+"O Godot tem um sistema de barramentos com efeitos integrados. Isto evita aos "
+"artistas de SFX a necessidade de adicionar reverberação aos efeitos sonoros, "
+"reduzindo consideravelmente o tamanho e garantindo um ajuste correto. Diga "
+"não aos SFX com reverberação pré-preparada!"
+
+msgid "As you can see above, sound effects become huge with reverb added."
+msgstr ""
+"Como pode ser visto acima, efeitos sonoros podem se tornar enormes com a "
+"reverberação adicionada."
+
+msgid "Trimming"
+msgstr "Trimming"
+
+msgid ""
+"One issue that happens often is that the waveform is exported with long "
+"silences at the beginning and at the end. These are inserted by DAWs when "
+"saving to a waveform, increase their size unnecessarily and add latency to "
+"the moment they are played back."
+msgstr ""
+"Um problema que acontece com frequência é que a forma de onda é exportada "
+"com longos silêncios no início e no fim. Elas são inseridas pelas DAWs ao "
+"salvar a forma de onda, aumentando seus tamanhos desnecessariamente e "
+"adicionando latência no momento em que são reproduzidas."
+
+msgid "Importing as WAV with the **Trimming** option enabled solves this."
+msgstr ""
+"A importação de WAV com a opção **Trimming** ativada resolve este problema."
+
+msgid "Looping"
+msgstr "Looping"
+
+msgid ""
+"Godot supports looping in the samples (tools such as Sound Forge or Audition "
+"can add loop points to WAV files). This is useful for sound effects, such as "
+"engines, machine guns etc. Ping-pong looping is also supported."
+msgstr ""
+"O Godot suporta looping nas amostras (ferramentas como Sound Forge ou "
+"Audition podem adicionar pontos de loop a arquivos WAV). Isto é útil para "
+"efeitos sonoros como motores, metralhadoras, etc. Looping de ping-pong "
+"também é suportado."
+
+msgid ""
+"As an alternative, the Import dock has a **Loop** option that enables "
+"looping for the entire sample when importing."
+msgstr ""
+"Como alternativa, a dock de importação tem uma opção de **Loop** que ativa "
+"looping para o toda a amostra ao importar."

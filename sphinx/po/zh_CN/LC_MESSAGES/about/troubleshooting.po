@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
 msgstr "故障排除"
 
-#: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr "这个页面列出了使用Godot时的常见问题以及可能的解决办法."
 
-#: ../../docs/about/troubleshooting.rst:10
 msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
@@ -35,13 +32,11 @@ msgstr ""
 "关于Godot编辑器HTML5版本特定的注意事项, 请参阅 :ref:"
 "`doc_using_the_web_editor` ."
 
-#: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
-msgstr "我在编辑器或项目管理器里做的任何事都会延迟一帧显示."
+msgstr "我在编辑器或项目管理器里做的任何事都会延迟一帧显示。"
 
-#: ../../docs/about/troubleshooting.rst:16
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/23069>`__ "
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
@@ -51,7 +46,6 @@ msgstr ""
 "godot/issues/23069>`_ 更新到 *Intel提供的* 最新版本的显卡驱动应该能够修复这个"
 "问题."
 
-#: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "You should use the graphics driver provided by Intel rather than the one "
 "provided by your desktop or laptop's manufacturer because their version is "
@@ -60,13 +54,11 @@ msgstr ""
 "你应该使用Intel提供的显卡驱动而非你的笔记本生产厂商提供的, 因为他们的驱动版本"
 "经常是过期了的."
 
-#: ../../docs/about/troubleshooting.rst:25
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
-msgstr "当我在编辑器中旋转 3D 相机时, 栅格消失了, 并且网格变黑了."
+msgstr "当我在编辑器中旋转 3D 相机时，栅格消失了，网格也变黑了。"
 
-#: ../../docs/about/troubleshooting.rst:27
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
@@ -74,7 +66,6 @@ msgstr ""
 "这是一个Windows上Intel显卡驱动的 `已知问题 <https://github.com/godotengine/"
 "godot/issues/30330>`_ ."
 
-#: ../../docs/about/troubleshooting.rst:30
 msgid ""
 "The only workaround, for now, is to switch to the GLES2 renderer. You can "
 "switch the renderer in the top-right corner of the editor or the Project "
@@ -83,7 +74,6 @@ msgstr ""
 "目前唯一的解决办法是切换到GLES2渲染器. 你可以在编辑器的右上角或者项目设置中切"
 "换."
 
-#: ../../docs/about/troubleshooting.rst:33
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
@@ -91,11 +81,9 @@ msgstr ""
 "如果你使用的电脑支持切换显卡, 比如 NVIDIA Optimus, 你可以使用独立显卡运行 "
 "Godot."
 
-#: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
 msgstr "此编辑器或项目花了很长时间才启动."
 
-#: ../../docs/about/troubleshooting.rst:39
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -109,12 +97,10 @@ msgstr ""
 "误. 尝试将USB外设的驱动程序更新为最新版本. 如果错误仍然存在, 则需要在打开编辑"
 "器之前断开故障外围设备的连接. 然后, 您可以再次连接外围设备."
 
-#: ../../docs/about/troubleshooting.rst:47
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr "检查器和节点面板的编辑器工具提示出现后闪烁。"
 
-#: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "This is a `known issue <https://github.com/godotengine/godot/"
 "issues/32990>`__ caused by the third-party Stardock Fences application on "
@@ -125,11 +111,9 @@ msgstr ""
 "由Windows上的第三方程序Stardock Fences引起的。已知的绕过方法是在使用Godot时禁"
 "用Stardock Fences。"
 
-#: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr "点击系统控制台后,Godot 编辑器没有响应."
 
-#: ../../docs/about/troubleshooting.rst:56
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -141,32 +125,27 @@ msgstr ""
 "用 *选择模式*. Windows的这种特定行为会暂停应用程序, 以便您在系统控制台内选择"
 "文本. Godot无法覆盖此系统特定的行为."
 
-#: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr "要解决此问题, 请选择系统控制台窗口, 然后按Enter退出选择模式."
 
-#: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr "在项目管理器和编辑器窗口的左上角出现诸如\" NO DC\"之类的文本."
 
-#: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr "这是由于NVIDIA显卡驱动程序注入了覆盖显示信息造成的."
 
-#: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
 "要在Windows上禁用此覆盖, 请在NVIDIA控制面板中将图形驱动程序设置恢复为默认值."
 
-#: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
@@ -174,11 +153,9 @@ msgstr ""
 "要在Linux上禁用此覆盖, 请打开 ``nvidia-settings`` , 转到 **X Screen 0 > "
 "OpenGL Settings** , 然后取消选中 **Enable Graphics API Visual Indicator** ."
 
-#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr "项目窗口看起来很模糊, 但编辑器没有模糊."
 
-#: ../../docs/about/troubleshooting.rst:78
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -187,7 +164,6 @@ msgstr ""
 "与编辑器不同, 默认情况下, 该项目未标记为支持DPI. 这样做是为了提高性能, 特别是"
 "在hiDPI中渲染3D场景较慢的集成图形上."
 
-#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -197,11 +173,9 @@ msgstr ""
 "Hidpi** . 此外, 请确保你的项目已经配置为支持 :ref:`多分辨率 "
 "<doc_multiple_resolutions>` ."
 
-#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr "启动项目后, 项目窗口没有居中显示."
 
-#: ../../docs/about/troubleshooting.rst:89
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
@@ -213,13 +187,11 @@ msgstr ""
 "此外, 请确保你的项目已经配置为支持 :ref:`多分辨率 "
 "<doc_multiple_resolutions>` ."
 
-#: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr "项目在编辑器中正常运行, 但在导出后无法加载部分文件."
 
-#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -233,7 +205,6 @@ msgstr ""
 "如, 当你在导出的项目中加载 ``test.json`` 时, 你需要在非资源导出过滤器中指定 "
 "``*.json`` . 详见: :ref:`doc_exporting_projects_export_mode` ."
 
-#: ../../docs/about/troubleshooting.rst:104
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "

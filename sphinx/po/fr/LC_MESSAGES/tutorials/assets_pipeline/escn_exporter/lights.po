@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Lights"
+msgstr "Lumières"
+
+msgid ""
+"By default, lamps in Blender have shadows enabled. This can cause "
+"performance issues in Godot."
+msgstr ""
+"Par défaut, les lampes de Blender ont des ombres activées. Cela peut "
+"entraîner des problèmes de performance dans Godot."
+
+msgid ""
+"Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
+"is released, this will be removed and this part of the exporter will change."
+msgstr ""
+"Les lampes sont exportées en utilisant leurs paramètres \"Blender Render\". "
+"Lorsque Blender 2.8 sera publié, cela sera supprimé et cette partie de "
+"l'exportateur changera."
+
+msgid ""
+"Sun, point and spot lamps are all exported from Blender along with many of "
+"their properties:"
+msgstr ""
+"Les lampes soleil, point et spot sont toutes exportées par Blender avec bon "
+"nombre de leurs propriétés :"
+
+msgid "There are some things to note:"
+msgstr "Il y a des choses à noter :"
+
+msgid ""
+"In Blender, a light casts light all the way to infinity. In Godot, it is "
+"clamped by the attenuation distance. To most closely match between the "
+"viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
+msgstr ""
+"Dans Blender, une lumière éclaire dans toutes les directions à l'infini. "
+"Dans Godot, l'influence de l'éclairage est définit la distance "
+"d'atténuation. Pour faire correspondre au mieux le rendu dans Blender et "
+"Godot, cochez la case \"Sphère\". (Surligné en vert)"
+
+msgid ""
+"Light attenuation models differ between Godot and Blender. The exporter "
+"attempts to make them match, but it isn't always very good."
+msgstr ""
+"Les modèles d'atténuation de la lumière diffèrent entre Godot et Blender. "
+"L'exportateur tente de les faire correspondre, mais ce n'est pas toujours "
+"très bon."
+
+msgid ""
+"Spotlight angular attenuation models also differ between Godot and Blender. "
+"The exporter attempts to make them similar, but it doesn't always look the "
+"same."
+msgstr ""
+"Les modèles d'atténuations angulaires du projecteur diffèrent également "
+"entre Godot et Blender. L'exportateur tente de les rendre similaires, mais "
+"cela ne se ressemble pas toujours."
+
+msgid ""
+"There is no difference between buffer shadow and ray shadow in the export."
+msgstr ""
+"Il n'y a pas de différence entre l'ombre du tampon et l'ombre du rayon dans "
+"l'exportation."

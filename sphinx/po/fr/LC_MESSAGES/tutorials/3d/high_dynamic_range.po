@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:4
 msgid "High dynamic range lighting"
 msgstr "High dynamic range lighting"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:9
 msgid ""
 "Normally, an artist does all the 3D modelling, then all the texturing, looks "
 "at their awesome looking model in the 3D DCC and says \"looks fantastic, "
@@ -37,7 +34,6 @@ msgstr ""
 "\"c'est fantastique, prêt pour l'intégration\", puis va dans le jeu, "
 "l'éclairage est installé et le jeu fonctionne."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
 "So at what point does all this \"HDR\" business come into play? To "
 "understand the answer, we need to look at how displays behave."
@@ -45,7 +41,6 @@ msgstr ""
 "Alors, à quel moment toute cette activité \"HDR\" entre-t-elle en jeu ? Pour "
 "comprendre la réponse, nous devons examiner le comportement des écrans."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:17
 msgid ""
 "Your display outputs linear light ratios from some maximum to some minimum "
 "intensity. Modern game engines perform complex math on linear light values "
@@ -56,7 +51,6 @@ msgstr ""
 "des calculs complexes sur les valeurs de lumière linéaire dans leurs scènes "
 "respectives. Alors quel est le problème ?"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:21
 msgid ""
 "The display has a limited range of intensity, depending on the display type. "
 "The game engine renders to an unlimited range of intensity values, however. "
@@ -71,7 +65,6 @@ msgstr ""
 "il n'y a qu'une gamme potentiellement infiniment large de valeurs "
 "d'intensité générées par image de rendu(per frame of rendering)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:27
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
 "as *scene-referred* light ratios, need to be transformed and mapped to fit "
@@ -91,7 +84,6 @@ msgstr ""
 "de la scène et la sortie serait prête pour l'affichage sur un type "
 "d'affichage particulier."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:37
 msgid ""
 "Godot does not support high dynamic range *output* yet. It can only perform "
 "lighting in HDR and tonemap the result to a low dynamic range image."
@@ -100,7 +92,6 @@ msgstr ""
 "uniquement effectuer l'éclairage en HDR et tonemap le résultat vers une "
 "image low dynamic range ."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:40
 msgid ""
 "For advanced users, it is still possible to get a non-tonemapped image of "
 "the viewport with full HDR data, which can then be saved to an OpenEXR file."
@@ -109,11 +100,9 @@ msgstr ""
 "non-tonemapped du viewport avec les données HDR complètes, qui peut ensuite "
 "être enregistrée dans un fichier OpenEXR."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid "Computer displays"
 msgstr "Écrans d'ordinateur"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:46
 msgid ""
 "Almost all displays require a nonlinear encoding for the code values sent to "
 "them. The display in turn, using its unique transfer characteristic, "
@@ -127,7 +116,6 @@ msgstr ""
 "rapports de sortie linéaires, et projette les rapports à partir des lumières "
 "de couleur unique sur chaque site d’émission rougeâtre, verdâtre et bleuâtre."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:52
 msgid ""
 "For a majority of computer displays, the specifications of the display are "
 "outlined in accordance with IEC 61966-2-1, also known as the 1996 sRGB "
@@ -142,7 +130,6 @@ msgstr ""
 "les LED des pixel ainsi que les caractéristiques du transfert de l'entrée "
 "(OETF) à la sortie (EOTF)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:58
 msgid ""
 "Not all displays use the same OETF and EOTF as a computer display. For "
 "example, television broadcast displays use the BT.1886 EOTF. However, Godot "
@@ -153,7 +140,6 @@ msgstr ""
 "le BT.1886 EOTF. Cependant, Godot ne prend actuellement en charge que les "
 "écrans sRGB."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:62
 msgid ""
 "The sRGB standard is based around the nonlinear relationship between the "
 "current to light output of common desktop computing CRT displays."
@@ -161,7 +147,6 @@ msgstr ""
 "La norme sRGB est basée sur la relation non linéaire entre le courant et la "
 "luminosité des écrans CRT des ordinateurs de bureau courants."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:67
 msgid ""
 "The mathematics of a scene-referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
@@ -178,11 +163,9 @@ msgstr ""
 "transfert de l'affichage. Une approche plus complexe de l'encodage est "
 "nécessaire."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
 msgid "Scene linear & asset pipelines"
 msgstr "Scène linéaire et pipelines d'assets"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:77
 msgid ""
 "Working in scene-linear sRGB is not as simple as just pressing a switch. "
 "First, imported image assets must be converted to linear light ratios on "
@@ -196,17 +179,14 @@ msgstr ""
 "adaptés à une utilisation en tant que textures, selon la façon dont elles "
 "ont été générées."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:82
 msgid "There are two ways to do this:"
 msgstr "Il y a deux façon de faire cela :"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
 msgstr ""
 "Fonction de transfert sRGB pour afficher les rapports linéaires lors de "
 "l'importation d'images"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:87
 msgid ""
 "This is the easiest method of using sRGB assets, but it's not the most "
 "ideal. One issue with this is loss of quality. Using 8 bits per channel to "
@@ -220,12 +200,10 @@ msgstr ""
 "suffisante pour quantifier correctement les valeurs. Ces textures peuvent "
 "aussi être compressées plus tard, ce qui peut exacerber le problème."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:93
 msgid "Hardware sRGB transfer function to display linear conversion"
 msgstr ""
 "Fonction de transfert matériel sRGB pour afficher la conversion linéaire"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:95
 msgid ""
 "The GPU will do the conversion after reading the texel using floating-point. "
 "This works fine on PC and consoles, but most mobile devices don't support "
@@ -236,11 +214,9 @@ msgstr ""
 "mobiles ne le supportent pas, ou ne le supportent pas au format texture "
 "compressé (iOS par exemple)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
 msgid "Scene linear to display-referred nonlinear"
 msgstr "Scène linéaire pour affichage-référé non linéaire"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:102
 msgid ""
 "After all the rendering is done, the scene linear render requires "
 "transforming to a suitable output such as an sRGB display. To do this, "
@@ -252,7 +228,6 @@ msgstr ""
 "faire, activez la conversion sRVB dans le :ref:`Environnement "
 "<class_Environment>` (plus d'informations à ce sujet ci-dessous)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
 msgid ""
 "Keep in mind that the **sRGB -> Display Linear** and **Display Linear -> "
 "sRGB** conversions must always be **both** enabled. Failing to enable one of "
@@ -265,11 +240,9 @@ msgstr ""
 "d'horribles visuels qui ne conviendront qu'aux jeux indépendants "
 "expérimentaux d'avant-garde."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:112
 msgid "Parameters of HDR"
 msgstr "Paramètres de HDR"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:114
 msgid ""
 "HDR settings can be found in the :ref:`Environment <class_Environment>` "
 "resource. Most of the time, these are found inside a :ref:`WorldEnvironment "

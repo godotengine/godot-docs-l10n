@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:4
 msgid "Import plugins"
 msgstr "Importar plugins"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:6
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page. This also assumes you "
@@ -31,11 +29,9 @@ msgstr ""
 "de duda, consulte la página: ref: `doc_making_plugins`. Esto también asume "
 "que está familiarizado con el sistema de importación de Godot."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:11
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:13
 msgid ""
 "An import plugin is a special type of editor tool that allows custom "
 "resources to be imported by Godot and be treated as first-class resources. "
@@ -49,7 +45,6 @@ msgstr ""
 "cantidad de complementos de importación para manejar los recursos comunes "
 "como imágenes PNG, modelos Collada y glTF, sonidos Ogg Vorbis y muchos más."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:18
 msgid ""
 "This tutorial will show you how to create a simple import plugin to load a "
 "custom text file as a material resource. This text file will contain three "
@@ -65,11 +60,9 @@ msgstr ""
 "como albedo (color principal) del material importado. En este ejemplo, "
 "contendrá el color azul puro (cero rojo, cero verde y azul completo):"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:30
 msgid "Configuration"
 msgstr "Configuración"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:32
 msgid ""
 "First we need a generic plugin that will handle the initialization and "
 "destruction of our import plugin. Let's add the ``plugin.cfg`` file first:"
@@ -78,7 +71,6 @@ msgstr ""
 "inicialización y destrucción de nuestro complemento de importación. Primero "
 "agreguemos el archivo `` plugin.cfg '':"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:45
 msgid ""
 "Then we need the ``material_import.gd`` file to add and remove the import "
 "plugin when needed:"
@@ -86,7 +78,6 @@ msgstr ""
 "Luego, necesitamos el archivo `` material_import.gd '' para agregar y "
 "eliminar el complemento de importación cuando sea necesario:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:67
 msgid ""
 "When this plugin is activated, it will create a new instance of the import "
 "plugin (which we'll soon make) and add it to the editor using the :ref:"
@@ -107,7 +98,6 @@ msgstr ""
 "complemento está desactivado para limpiar la memoria y hacerle saber al "
 "editor que el complemento de importación ya no está disponible."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:76
 msgid ""
 "Note that the import plugin is a reference type, so it doesn't need to be "
 "explicitly released from memory with the ``free()`` function. It will be "
@@ -118,11 +108,9 @@ msgstr ""
 "función ``free ()``. Será liberado automáticamente por el motor cuando salga "
 "del alcance."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:81
 msgid "The EditorImportPlugin class"
 msgstr "La clase EditorImportPlugin"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:83
 msgid ""
 "The main character of the show is the :ref:`EditorImportPlugin class "
 "<class_EditorImportPlugin>`. It is responsible for implementing the methods "
@@ -132,11 +120,9 @@ msgstr ""
 "<class_EditorImportPlugin>`. Es responsable de implementar los métodos que "
 "llama Godot cuando necesita saber cómo manejar archivos."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:88
 msgid "Let's begin to code our plugin, one method at time:"
 msgstr "Comencemos a codificar nuestro complemento, un método a la vez:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:100
 msgid ""
 "The first method is the :ref:"
 "`get_importer_name()<class_EditorImportPlugin_method_get_importer_name>`. "
@@ -150,7 +136,6 @@ msgstr ""
 "un archivo determinado. Cuando sea necesario volver a importar los archivos, "
 "el editor sabrá a qué complemento llamar."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:111
 msgid ""
 "The :ref:"
 "`get_visible_name()<class_EditorImportPlugin_method_get_visible_name>` "
@@ -162,7 +147,6 @@ msgstr ""
 "responsable de devolver el nombre del tipo que importa y se mostrará al "
 "usuario en el panel de Importación."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:115
 msgid ""
 "You should choose this name as a continuation to \"Import as\", e.g. *"
 "\"Import as Silly Material\"*. You can name it whatever you want but we "
@@ -172,7 +156,6 @@ msgstr ""
 "\"Importar como material\" *. Puede nombrarlo como desee, pero le "
 "recomendamos un nombre descriptivo para su complemento."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:124
 msgid ""
 "Godot's import system detects file types by their extension. In the :ref:"
 "`get_recognized_extensions()<class_EditorImportPlugin_method_get_recognized_extensions>` "
@@ -187,7 +170,6 @@ msgstr ""
 "pueda entender. Si una extensión es reconocida por más de un plugin, el "
 "usuario puede seleccionar cuál usar al importar los archivos."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:130
 msgid ""
 "Common extensions like ``.json`` and ``.txt`` might be used by many plugins. "
 "Also, there could be files in the project that are just data for the game "
@@ -199,7 +181,6 @@ msgstr ""
 "juego y no se deben importar. Debe tener cuidado al importar para validar "
 "los datos. Nunca espere que el archivo esté bien formado."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:140
 msgid ""
 "The imported files are saved in the ``.import`` folder at the project's "
 "root. Their extension should match the type of resource you are importing, "
@@ -213,7 +194,6 @@ msgstr ""
 "varias extensiones válidas para el mismo recurso), debe declarar qué se "
 "usará en la importación."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:146
 msgid ""
 "Since we're importing a Material, we'll use the special extension for such "
 "resource types. If you are importing a scene, you can use ``scn``. Generic "
@@ -225,7 +205,6 @@ msgstr ""
 "Los recursos genéricos pueden usar la extensión ``res``. Sin embargo, esto "
 "no se aplica de ninguna manera por el motor."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:156
 msgid ""
 "The imported resource has a specific type, so the editor can know which "
 "property slot it belongs to. This allows drag and drop from the FileSystem "
@@ -235,7 +214,6 @@ msgstr ""
 "saber a qué ranura de propiedades pertenece. Esto permite arrastrar y soltar "
 "desde el panel de Sistema de Archivos a una propiedad en el Inspector."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:160
 msgid ""
 "In our case it's a :ref:`class_SpatialMaterial`, which can be applied to 3D "
 "objects."
@@ -243,7 +221,6 @@ msgstr ""
 "En nuestro caso es un: ref: `class_SpatialMaterial`, que se puede aplicar a "
 "objetos 3D."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:163
 msgid ""
 "If you need to import different types from the same extension, you have to "
 "create multiple import plugins. You can abstract the import code on another "
@@ -253,11 +230,9 @@ msgstr ""
 "varios complementos de importación. Puede abstraer el código de importación "
 "en otro archivo para evitar la duplicación en este sentido."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:168
 msgid "Options and presets"
 msgstr "Opciones y presets"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:170
 msgid ""
 "Your plugin can provide different options to allow the user to control how "
 "the resource will be imported. If a set of selected options is common, you "
@@ -270,7 +245,6 @@ msgstr ""
 "preestablecidos para que sea más fácil para el usuario. La siguiente imagen "
 "muestra cómo aparecerán las opciones en el editor:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:177
 msgid ""
 "Since there might be many presets and they are identified with a number, "
 "it's a good practice to use an enum so you can refer to them using names."
@@ -279,7 +253,6 @@ msgstr ""
 "número, es una buena práctica usar una enumeración para poder referirse a "
 "ellos usando nombres."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:191
 msgid ""
 "Now that the enum is defined, let's keep looking at the methods of an import "
 "plugin:"
@@ -287,7 +260,6 @@ msgstr ""
 "Ahora que la enumeración está definida, sigamos mirando los métodos de un "
 "complemento de importación:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:199
 msgid ""
 "The :ref:`get_preset_count() "
 "<class_EditorImportPlugin_method_get_preset_count>` method returns the "
@@ -301,7 +273,6 @@ msgstr ""
 "podemos hacer que este método esté preparado para el futuro devolviendo el "
 "tamaño de nuestra enumeración ``Presets``."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:214
 msgid ""
 "Here we have the :ref:`get_preset_name() "
 "<class_EditorImportPlugin_method_get_preset_name>` method, which gives names "
@@ -313,7 +284,6 @@ msgstr ""
 "preajustes tal como se le presentarán al usuario, así que asegúrese de usar "
 "nombres cortos y claros."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:219
 msgid ""
 "We can use the ``match`` statement here to make the code more structured. "
 "This way it's easy to add new presets in the future. We use the catch all "
@@ -326,7 +296,6 @@ msgstr ""
 "Godot no pedirá presets más allá del número de presets que definiste, "
 "siempre es mejor ser precavido."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:224
 msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
@@ -334,7 +303,6 @@ msgstr ""
 "Si sólo tiene un preset puede simplemente devolver su nombre directamente, "
 "pero si lo hace debe tener cuidado al añadir más presets."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:239
 msgid ""
 "This is the method which defines the available options. :ref:"
 "`get_import_options() <class_EditorImportPlugin_method_get_import_options>` "
@@ -348,28 +316,21 @@ msgstr ""
 "claves que se comprueban para personalizar la opción tal y como se muestra "
 "al usuario. La siguiente tabla muestra las posibles claves:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Key"
 msgstr "Clave"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Type"
 msgstr "Tipo"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Description"
 msgstr "Descripción"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``name``"
 msgstr "nombre"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 msgid "String"
 msgstr "Cadena"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid ""
 "The name of the option. When showed, underscores become spaces and first "
 "letters are capitalized."
@@ -377,28 +338,21 @@ msgstr ""
 "El nombre de la opción. Cuando se muestran, los guiones bajos se convierten "
 "en espacios y las primeras letras se escriben en mayúscula."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "``default_value``"
 msgstr "``valor por defecto``"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "Any"
 msgstr "Algún"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "The default value of the option for this preset."
 msgstr "El valor por defecto de la opción para este preset."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid "``property_hint``"
 msgstr "``sugerencia_propiedad``"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid "Enum value"
 msgstr "Valor de enumeración"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid ""
 "One of the :ref:`PropertyHint <enum_@GlobalScope_PropertyHint>` values to "
 "use as hint."
@@ -406,11 +360,9 @@ msgstr ""
 "Uno de los valores: ref: `PropertyHint <enum_ @ GlobalScope_PropertyHint>` "
 "para usar como sugerencia."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 msgid "``hint_string``"
 msgstr "``hint_string``"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 msgid ""
 "The hint text of the property. The same as you'd add in the ``export`` "
 "statement in GDScript."
@@ -418,11 +370,9 @@ msgstr ""
 "El texto de sugerencia de la propiedad. Lo mismo que agregaría en la "
 "declaración ``exportar`` en GDScript."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid "``usage``"
 msgstr "``uso``"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid ""
 "One of the :ref:`PropertyUsageFlags <enum_@GlobalScope_PropertyUsageFlags>` "
 "values to define the usage."
@@ -430,7 +380,6 @@ msgstr ""
 "Uno de los valores: ref: `PropertyUsageFlags "
 "<enum_@GlobalScope_PropertyUsageFlags>` para definir el uso."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:259
 msgid ""
 "The ``name`` and ``default_value`` keys are **mandatory**, the rest are "
 "optional."
@@ -438,7 +387,6 @@ msgstr ""
 "Las claves ``nombre`` y ``valor_predeterminado`` son **obligatorias**, el "
 "resto son opcionales."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:261
 msgid ""
 "Note that the ``get_import_options`` method receives the preset number, so "
 "you can configure the options for each different preset (especially the "
@@ -453,7 +401,6 @@ msgstr ""
 "valor, es posible que primero quieras crear un array de opciones y luego "
 "cambiarlo basado en el preset."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:267
 msgid ""
 "The ``get_import_options`` method is called even if you don't define presets "
 "(by making ``get_preset_count`` return zero). You have to return an array "
@@ -463,7 +410,6 @@ msgstr ""
 "presets (haciendo que ``get_preset_count`` devuelva cero). Tienes que "
 "devolver un array aunque esté vacío, de lo contrario puedes obtener errores."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:277
 msgid ""
 "For the :ref:`get_option_visibility() "
 "<class_EditorImportPlugin_method_get_option_visibility>` method, we simply "
@@ -475,7 +421,6 @@ msgstr ""
 "devolvemos ``true`` porque todas nuestras opciones (es decir, la única que "
 "definimos) son visibles todo el tiempo."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:282
 msgid ""
 "If you need to make certain option visible only if another is set with a "
 "certain value, you can add the logic in this method."
@@ -483,11 +428,9 @@ msgstr ""
 "Si necesita hacer visible cierta opción solo si se establece otra con un "
 "valor determinado, puede agregar la lógica en este método."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:286
 msgid "The ``import`` method"
 msgstr "El método de ``importación``"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:288
 msgid ""
 "The heavy part of the process, responsible for converting the files into "
 "resources, is covered by the :ref:`import() "
@@ -499,7 +442,6 @@ msgstr ""
 "<class_EditorImportPlugin_method_import>`. Nuestro código de muestra es un "
 "poco largo, así que vamos a dividirlo en algunas partes:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:304
 msgid ""
 "The first part of our import method opens and reads the source file. We use "
 "the :ref:`File <class_File>` class to do that, passing the ``source_file`` "
@@ -509,7 +451,6 @@ msgstr ""
 "fuente. Usamos la clase: ref: `File <class_File>` para hacer eso, pasando el "
 "parámetro `` source_file '' que es provisto por el editor."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:308
 msgid ""
 "If there's an error when opening the file, we return it to let the editor "
 "know that the import wasn't successful."
@@ -517,7 +458,6 @@ msgstr ""
 "Si hay un error al abrir el archivo, lo devolvemos para que el editor sepa "
 "que la importación no se realizó correctamente."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:323
 msgid ""
 "This code takes the line of the file it read before and splits it in pieces "
 "that are separated by a comma. If there are more or less than the three "
@@ -527,7 +467,6 @@ msgstr ""
 "separadas por una coma. Si hay más o menos de los tres valores, considera "
 "que el archivo no es válido y reporta un error."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:327
 msgid ""
 "Then it creates a new :ref:`Color <class_Color>` variable and sets its "
 "values according to the input file. If the ``use_red_anyway`` option is "
@@ -537,7 +476,6 @@ msgstr ""
 "valores de acuerdo con el archivo de entrada. Si la opción `` use_red_anyway "
 "'' está habilitada, entonces establece el color como rojo puro."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:336
 msgid ""
 "This part makes a new :ref:`SpatialMaterial <class_SpatialMaterial>` that is "
 "the imported resource. We create a new instance of it and then set its "
@@ -547,7 +485,6 @@ msgstr ""
 "es el recurso importado. Creamos una nueva instancia de él y luego "
 "establecemos su color de albedo como el valor que obtuvimos antes."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:344
 msgid ""
 "This is the last part and quite an important one, because here we save the "
 "made resource to the disk. The path of the saved file is generated and "
@@ -564,7 +501,6 @@ msgstr ""
 "método `` get_save_extension '' que definimos anteriormente, así podemos "
 "estar seguros de que no se desincronizarán."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:351
 msgid ""
 "We also return the result from the :ref:`ResourceSaver.save() "
 "<class_ResourceSaver_method_save>` method, so if there's an error in this "
@@ -574,11 +510,9 @@ msgstr ""
 "<class_ResourceSaver_method_save>`, así que si hay un error en este paso, el "
 "editor lo sabrá."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:356
 msgid "Platform variants and generated files"
 msgstr "Variantes de plataforma y archivos generados"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:358
 msgid ""
 "You may have noticed that our plugin ignored two arguments of the ``import`` "
 "method. Those are *return arguments* (hence the ``r`` at the beginning of "
@@ -592,7 +526,6 @@ msgstr ""
 "su método de importación. Ambos son arrays que puedes rellenar con "
 "información."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:363
 msgid ""
 "The ``r_platform_variants`` argument is used if you need to import the "
 "resource differently depending on the target platform. While it's called "
@@ -606,7 +539,6 @@ msgstr ""
 "características <doc_feature_tags>`, por lo que incluso la misma plataforma "
 "puede tener múltiples variantes según la configuración."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:368
 msgid ""
 "To import a platform variant, you need to save it with the feature tag "
 "before the extension, and then push the tag to the ``r_platform_variants`` "
@@ -617,7 +549,6 @@ msgstr ""
 "etiqueta a un array ``r_platform_variants`` para que el editor pueda saber "
 "que lo hiciste."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:372
 msgid ""
 "For example, let's say we save a different material for a mobile platform. "
 "We would need to do something like the following:"
@@ -625,7 +556,6 @@ msgstr ""
 "Por ejemplo, digamos que guardamos un material diferente para una plataforma "
 "móvil. Necesitaríamos hacer algo como lo siguiente:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:380
 msgid ""
 "The ``r_gen_files`` argument is meant for extra files that are generated "
 "during your import process and need to be kept. The editor will look at it "
@@ -637,7 +567,6 @@ msgstr ""
 "examinará para comprender las dependencias y asegurarse de que el archivo "
 "adicional no se elimine inadvertidamente."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:385
 msgid ""
 "This is also an array and should be filled with full paths of the files you "
 "save. As an example, let's create another material for the next pass and "
@@ -647,11 +576,9 @@ msgstr ""
 "archivos que guardas. Por ejemplo, creamos otro material para la siguiente "
 "pasada y lo guardamos en un archivo diferente:"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:401
 msgid "Trying the plugin"
 msgstr "Probar el complemento"
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:403
 msgid ""
 "This has been theoretical, but now that the import plugin is done, let's "
 "test it. Make sure you created the sample file (with the contents described "
@@ -663,7 +590,6 @@ msgstr ""
 "contenido descrito en la sección de introducción) y guárdelo como `` test."
 "mtxt ''. Luego active el complemento en la Configuración del proyecto."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:408
 msgid ""
 "If everything goes well, the import plugin is added to the editor and the "
 "file system is scanned, making the custom resource appear on the FileSystem "
@@ -675,7 +601,6 @@ msgstr ""
 "panel de Sistema de Archivos. Si lo seleccionas y entras en el panel de "
 "Importación, podrás ver la única opción para seleccionar allí."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:413
 msgid ""
 "Create a MeshInstance node in the scene, and for its Mesh property set up a "
 "new SphereMesh. Unfold the Material section in the Inspector and then drag "
@@ -688,7 +613,6 @@ msgstr ""
 "material. El objeto se actualizará en la ventana de visualización con el "
 "color azul del material importado."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:420
 msgid ""
 "Go to Import dock, enable the \"Use Red Anyway\" option, and click on "
 "\"Reimport\". This will update the imported material and should "
@@ -698,7 +622,6 @@ msgstr ""
 "clic en \"Reimportar\". Esto actualizará el material importado y debería "
 "actualizar automáticamente la vista mostrando el color rojo en su lugar."
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:424
 msgid ""
 "And that's it! Your first import plugin is done! Now get creative and make "
 "plugins for your own beloved formats. This can be quite useful to write your "

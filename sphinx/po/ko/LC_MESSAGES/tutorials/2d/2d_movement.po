@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
 msgstr "2D 이동 개요"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:9
 #, fuzzy
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
@@ -36,7 +33,6 @@ msgstr ""
 "요?\" 만들고 있는 게임의 유형에 따라 특별한 요구 사항이 있을 수 있겠지만 일반"
 "적으로 대부분 2D 게임에서 움직임은 적은 수의 디자인을 기반으로 합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
 "We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples, "
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
@@ -46,11 +42,9 @@ msgstr ""
 "겁니다. 하지만 원리는 다른 노드 유형(Area2D, RiqidBody2D)에도 적용할 수 있습"
 "니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -62,7 +56,6 @@ msgstr ""
 "처로 Godot 아이콘(\"icon.png\")을 사용하거나 가지고 있는 다른 2D 이미지를 사"
 "용할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
@@ -72,11 +65,9 @@ msgstr ""
 "입력 액션들을 추가하세요 (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr "8 방향 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -87,11 +78,9 @@ msgstr ""
 "누르고 선택된 방향으로 움직였으면 합니다. \"8 방향 이동\" 명칭은 동시에 두 키"
 "를 눌러서 플레이어가 대각선으로 움직이게 되는 것에서 유래합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr "kinematic body에 스크립트를 추가하고 다음과 같은 코드를 추가합니다:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:103
 #, fuzzy
 msgid ""
 "In the ``get_input()`` function, we check for the four key events and sum "
@@ -103,7 +92,6 @@ msgstr ""
 "니다. 두 반대편 키를 서로 상쇄하는 장점이 있지만 두 개의 방향을 함께 추가하"
 "기 때문에 대각선 이동이 더 빨라지게 된다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
@@ -111,7 +99,6 @@ msgstr ""
 "이런 현상은 속도를 *정규화*해서 방지할 수 있습니다. 즉, *길이*를 ``1``로 만"
 "든 뒤 원하는 속력 값을 곱해주면 되겠죠."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
@@ -119,18 +106,15 @@ msgstr ""
 "벡터 수학을 사용해 본 적이 없거나 재교육이 필요한 경우 :ref:"
 "`doc_vector_math` 에서 Godot 내 벡터 사용에 대한 설명을 볼 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:116
 msgid ""
 "If the code above does nothing when you press the keys, double-check that "
 "you've set up input actions correctly as described in the :ref:"
 "`doc_2d_movement_setup` part of this tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr "회전 + 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -142,7 +126,6 @@ msgstr ""
 "르면 캐릭터가 회전합니다. 반면에 위 또는 아래를 누르면 보고 있는 방향에 대햐"
 "여 전진 하거나 후진합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -153,7 +136,6 @@ msgstr ""
 "시 두 키를 동시에 누르면 취소되고 회전하지 않습니다. 이 회전은 바디의 "
 "``rotation`` 속성에 직접 적용됩니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -164,11 +146,9 @@ msgstr ""
 "은 방향을 가리키도록 합니다. ``rotated``는 삼각함수를 적용해야 하는 여러 가"
 "지 상황에서 사용할 수 있는 유용한 벡터 함수입니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr "회전 + 이동 (마우스)"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -179,7 +159,6 @@ msgstr ""
 "의해 방향이 정해집니다. 캐릭터는 항상 마우스 포인터를 봅니다(\"look at\"). 그"
 "러나 전방/후진 입력은 동일하게 유지됩니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
@@ -189,11 +168,9 @@ msgstr ""
 "<class_Node2D>` 의 ``look_at()`` 메서드를 사용하고 있습니다. 이 함수가 없으"
 "면 각도를 다음과 같이 설정하여 동일한 효과를 얻을 수 있습니다:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr "클릭과 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
@@ -201,7 +178,6 @@ msgstr ""
 "이번 마지막 예제는 마우스만 사용하여 캐릭터를 제어합니다. 화면을 클릭하면 플"
 "레이어는 지정 위치로 움직입니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
 #, fuzzy
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
@@ -213,7 +189,6 @@ msgstr ""
 "위치를 약간 지나쳐서 되돌아가려 할 때 지정 위치에 도달하고 \"덜덜 떨 것입니다"
 "\", only to move too far and repeat."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:348
 #, fuzzy
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
@@ -222,17 +197,14 @@ msgstr ""
 "원한다면 ``rotation`` 줄의 주석 처리를 제거해서 움직이는 방향으로 몸을 돌리"
 "게 할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
 msgstr "요약"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
@@ -241,7 +213,6 @@ msgstr ""
 "당신은 이 코드 샘플들이 자신의 프로젝트 시작점으로서  유용하다는 것을 알게 "
 "될 것입니다. 자유롭게 그것들을 사용해서 무엇을 만들 수 있을 지 실험해보세요."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

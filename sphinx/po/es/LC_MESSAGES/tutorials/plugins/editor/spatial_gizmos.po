@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
 msgid "Spatial gizmo plugins"
 msgstr "Plugins de gizmos Spatial"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:9
 msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
@@ -34,7 +31,6 @@ msgstr ""
 "complementos personalizados para definir los gizmos adjuntos a cualquier "
 "tipo de nodo espacial."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
 "This tutorial will show you the two main approaches to defining your own "
 "custom gizmos. The first option works well for simple gizmos and creates "
@@ -46,7 +42,6 @@ msgstr ""
 "simples y crea menos desorden en la estructura de su complemento, mientras "
 "que la segunda le permitirá almacenar algunos datos por gizmo."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page."
@@ -54,11 +49,9 @@ msgstr ""
 "Este tutorial asume que ya sabe cómo crear complementos genéricos. En caso "
 "de duda, consulte la página: ref: `doc_making_plugins`."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
 msgid "The EditorSpatialGizmoPlugin"
 msgstr "El EditorSpatialGizmoPlugin"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
 msgid ""
 "Regardless of the approach we choose, we will need to create a new :ref:"
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>`. This will allow "
@@ -70,11 +63,9 @@ msgstr ""
 "permitirá establecer un nombre para el nuevo tipo de gizmo y definir otros "
 "comportamientos, como si el gizmo se puede ocultar o no."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
 msgid "This would be a basic setup:"
 msgstr "Esta sería una configuración básica:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:59
 msgid ""
 "For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
 "<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
@@ -86,11 +77,9 @@ msgstr ""
 "datos por gizmo o está transfiriendo un gizmo Godot 3.0 a 3.1+, debe optar "
 "por el segundo enfoque."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid "Simple approach"
 msgstr "Enfoque simple"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:67
 msgid ""
 "The first step is to, in our custom gizmo plugin, override the :ref:"
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
@@ -101,7 +90,6 @@ msgstr ""
 "<class_EditorSpatialGizmoPlugin_method_has_gizmo>` para que devuelva "
 "``verdadero`` cuando el parámetro espacial es de nuestro tipo de destino."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:81
 msgid ""
 "Then we can override methods like :ref:"
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
@@ -111,7 +99,6 @@ msgstr ""
 "<class_EditorSpatialGizmoPlugin_method_redraw>` o todos los relacionados con "
 "el identificador."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:115
 msgid ""
 "Note that we created a material in the `_init` method, and retrieved it in "
 "the `redraw` method using :ref:"
@@ -125,11 +112,9 @@ msgstr ""
 "una de las variantes del material dependiendo del estado del gizmo "
 "(seleccionado y / o editable)."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:120
 msgid "So the final plugin would look somewhat like this:"
 msgstr "La escena final del plugin debería verse similar a esta:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:161
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"
@@ -142,11 +127,9 @@ msgstr ""
 "<class_EditorSpatialGizmoPlugin>` para que los identificadores funcionen "
 "correctamente."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:166
 msgid "Alternative approach"
 msgstr "Enfoque alternativo"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:168
 msgid ""
 "In some cases we want to provide our own implementation of :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
@@ -159,7 +142,6 @@ msgstr ""
 "portando un complemento de gizmo antiguo y no queremos ir a través del "
 "proceso de reescritura."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:172
 msgid ""
 "In these cases all we need to do is, in our new gizmo plugin, override :ref:"
 "`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
@@ -172,7 +154,6 @@ msgstr ""
 "nuestra implementación de gizmo personalizada para los nodos espaciales que "
 "queremos apuntar."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:197
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "class extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
@@ -181,7 +162,6 @@ msgstr ""
 "implementar en una nueva clase que se extiende: ref: `EditorSpatialGizmo "
 "<class_EditorSpatialGizmo>`, así:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:235
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"

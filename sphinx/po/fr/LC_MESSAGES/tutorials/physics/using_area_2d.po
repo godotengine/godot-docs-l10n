@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:4
 msgid "Using Area2D"
 msgstr "Utilisation de Area2D"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:9
 msgid ""
 "Godot offers a number of collision objects to provide both collision "
 "detection and response. Trying to decide which one to use for your project "
@@ -42,7 +39,6 @@ msgstr ""
 "ce tutoriel, nous allons regarder le nœud :ref:`Area2D <class_Area2D>` et "
 "montrer quelques exemples d'utilisation."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:15
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
@@ -50,11 +46,9 @@ msgstr ""
 "Ce document suppose que vous connaissez les différents corps physiques de "
 "Godot. Veuillez d'abord lire :ref:`doc_physics_introduction`."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:19
 msgid "What is an area?"
 msgstr "Qu'est-ce qu'une zone ?"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:21
 msgid ""
 "An Area2D defines a region of 2D space. In this space you can detect other :"
 "ref:`CollisionObject2D <class_CollisionObject2D>` nodes overlapping, "
@@ -67,17 +61,14 @@ msgstr ""
 "d'outrepasser les propriétés physiques locales. Nous allons explorer chacune "
 "de ces fonctions ci-dessous."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:27
 msgid "Area properties"
 msgstr "Propriétés de zone"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:29
 msgid "Areas have many properties you can use to customize their behavior."
 msgstr ""
 "Les zones ont de nombreuses propriétés que vous pouvez utiliser pour "
 "personnaliser leur comportement."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:33
 msgid ""
 "The first eight properties are used to configure the area's physics override "
 "behavior. We'll look at how to use those in the section below."
@@ -86,13 +77,11 @@ msgstr ""
 "de priorité physique de la zone. Nous verrons comment les utiliser dans la "
 "section ci-dessous."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:36
 msgid "*Monitoring* and *Monitorable* are used to enable and disable the area."
 msgstr ""
 "Les options *Monitoring* et *Monitorable* sont utilisées pour activer et "
 "désactiver la zone."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:38
 msgid ""
 "The \"Collision\" section is where you configure the area's collision "
 "layer(s) and mask(s)."
@@ -100,7 +89,6 @@ msgstr ""
 "La section \"Collision\" permet de configurer la ou les couche(s) et "
 "masque(s) de collision de la zone."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:41
 msgid ""
 "The \"Audio Bus\" section allows you to override audio in the area, for "
 "example to apply an audio effect when the player moves through."
@@ -108,7 +96,6 @@ msgstr ""
 "La section \"Audio Bus\" vous permet de surcharger l'audio dans la zone, par "
 "exemple pour appliquer un effet audio lorsque le lecteur se déplace."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:44
 msgid ""
 "Note that Area2D extends :ref:`CollisionObject2D <class_CollisionObject2D>`, "
 "so it also provides properties inherited from that class, such as "
@@ -118,11 +105,9 @@ msgstr ""
 "<class_CollisionObject2D>`, donc il fournit aussi des propriétés héritées de "
 "cette classe, telles que ``input_pickable``."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:48
 msgid "Overlap detection"
 msgstr "Détection de chevauchement"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:50
 msgid ""
 "Perhaps the most common use of Area2D nodes is for contact and overlap "
 "detection. When you need to know that two objects have touched, but don't "
@@ -133,7 +118,6 @@ msgstr ""
 "objets se sont touchés, mais n'ont pas besoin de collision physique, vous "
 "pouvez utiliser une zone pour vous informer du contact."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:54
 msgid ""
 "For example, let's say we're making a coin for the player to pick up. The "
 "coin is not a solid object - the player can't stand on it or push it - we "
@@ -144,11 +128,9 @@ msgstr ""
 "tenir dessus ou la pousser - nous voulons juste qu'elle disparaisse quand le "
 "joueur la touche."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:58
 msgid "Here's the node setup for the coin:"
 msgstr "Voici la configuration du nœud pour la pièce :"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:62
 msgid ""
 "To detect the overlap, we'll connect the appropriate signal on the Area2d. "
 "Which signal to use depends on the player's node type. If the player is "
@@ -162,7 +144,6 @@ msgstr ""
 "que notre lecteur est un \"KinematicBody2D\" (et donc un type "
 "``CollisionObject2D``), nous connecterons le signal ``body_entered``."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:68
 msgid ""
 "If you're not familiar with using signals, see :ref:`doc_signals` for an "
 "introduction."
@@ -170,15 +151,12 @@ msgstr ""
 "Si vous n'êtes pas familier avec l'utilisation des signaux, voir :ref:"
 "`doc_signals` pour une introduction."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:90
 msgid "Now our player can collect the coins!"
 msgstr "Maintenant, notre joueur peut ramasser les pièces !"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:92
 msgid "Some other usage examples:"
 msgstr "Quelques autres exemples d'utilisation :"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:94
 msgid ""
 "Areas are great for bullets and other projectiles that hit and deal damage, "
 "but don't need any other physics such as bouncing."
@@ -187,7 +165,6 @@ msgstr ""
 "infligent des dégâts, mais qui n'ont pas besoin d'autres caractéristiques "
 "physiques comme le rebondissement."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:95
 msgid ""
 "Use a large circular area around an enemy to define its \"detect\" radius. "
 "When the player is outside the area, the enemy can't \"see\" it."
@@ -196,7 +173,6 @@ msgstr ""
 "rayon de \"détection\". Quand le joueur est en dehors de la zone, l'ennemi "
 "ne peut pas le \"voir\"."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:96
 msgid ""
 "\"Security cameras\" - In a large level with multiple cameras, attach areas "
 "to each camera and activate them when the player enters."
@@ -204,18 +180,17 @@ msgstr ""
 "\"Caméras de sécurité\" - Dans un grand niveau avec plusieurs caméras, fixez "
 "des zones à chaque caméra et activez-les lorsque le joueur entre."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:98
+#, fuzzy
 msgid ""
-"See the :ref:`doc_your_first_game` for an example of using Area2D in a game."
+"See the :ref:`doc_your_first_2d_game` for an example of using Area2D in a "
+"game."
 msgstr ""
 "Voir le :ref:`doc_your_first_game` pour un exemple d'utilisation de Area2D "
 "dans un jeu."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:101
 msgid "Area influence"
 msgstr "Influence de la zone"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:103
 msgid ""
 "The second major use for area nodes is to alter physics. By default, the "
 "area won't do this, but you can enable this with the *Space Override* "
@@ -228,14 +203,12 @@ msgstr ""
 "sont traités par ordre de priorité (les domaines prioritaires les plus "
 "élevés sont traités en premier). Il y a quatre options de modification :"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:108
 msgid ""
 "*Combine* - The area adds its values to what has been calculated so far."
 msgstr ""
 "*Combine* - La zone ajoute ses valeurs à ce qui a été calculé jusqu'à "
 "présent."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:109
 msgid ""
 "*Replace* - The area replaces physics properties, and lower priority areas "
 "are ignored."
@@ -243,7 +216,6 @@ msgstr ""
 "*Replace* - La zone remplace les propriétés physiques, et les zones moins "
 "prioritaires sont ignorées."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:110
 msgid ""
 "*Combine-Replace* - The area adds its gravity/damping values to whatever has "
 "been calculated so far (in priority order), ignoring any lower priority "
@@ -253,7 +225,6 @@ msgstr ""
 "qui a été calculé jusqu'à présent (par ordre de priorité), sans tenir compte "
 "des zones moins prioritaires."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:111
 msgid ""
 "*Replace-Combine* - The area replaces any gravity/damping calculated so far, "
 "but keeps calculating the rest of the areas."
@@ -261,7 +232,6 @@ msgstr ""
 "*Replace-Combine* - La zone remplace toute gravité/amortissement calculée "
 "jusqu'à présent, mais continue de calculer le reste des zones."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:113
 msgid ""
 "Using these properties, you can create very complex behavior with multiple "
 "overlapping areas."
@@ -269,15 +239,12 @@ msgstr ""
 "En utilisant ces propriétés, vous pouvez créer un comportement très complexe "
 "avec plusieurs zones qui se chevauchent."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:116
 msgid "The physics properties that can be overridden are:"
 msgstr "Les propriétés physiques qui peuvent être surchargées sont :"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:118
 msgid "*Gravity* - Gravity's strength inside the area."
 msgstr "*Gravity* - La force de la gravité à l'intérieur de la zone."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:119
 msgid ""
 "*Gravity Vec* - Gravity's direction. This vector does not need to be "
 "normalized."
@@ -285,7 +252,6 @@ msgstr ""
 "*Gravity Vec* - Direction de la gravité. Ce vecteur n'a pas besoin d'être "
 "normalisé."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:120
 msgid ""
 "*Linear Damp* - How quickly objects stop moving - linear velocity lost per "
 "second."
@@ -293,7 +259,6 @@ msgstr ""
 "*Linear Damp* - La vitesse à laquelle les objets s'arrêtent de bouger - "
 "vitesse linéaire perdue par seconde."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:121
 msgid ""
 "*Angular Damp* - How quickly objects stop spinning - angular velocity lost "
 "per second."
@@ -301,11 +266,9 @@ msgstr ""
 "*Angular Damp* - La vitesse à laquelle les objets s'arrêtent de tourner - "
 "vitesse angulaire perdue par seconde."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:124
 msgid "Point gravity"
 msgstr "Point gravity"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:126
 msgid ""
 "The *Gravity Point* property allows you to create an \"attractor\". Gravity "
 "in the area will be calculated towards a point, given by the *Gravity Vec* "
@@ -317,11 +280,9 @@ msgstr ""
 "*Gravity Vec*. Les valeurs sont relatives à Area2D, donc par exemple "
 "utiliser ``(0, 0)`` attirera des objets au centre de la zone."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:132
 msgid "Examples"
 msgstr "Exemples"
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:134
 msgid ""
 "The example project attached below has three areas demonstrating physics "
 "override."
@@ -329,7 +290,6 @@ msgstr ""
 "L'exemple de projet ci-dessous présente trois zones faisant la démonstration "
 "de la surcharge de la physique."
 
-#: ../../docs/tutorials/physics/using_area_2d.rst:139
 msgid ""
 "You can download this project here: :download:`using_area_2d.zip <files/"
 "using_area_2d.zip>`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
 msgid "Qt Creator"
 msgstr "QT Creator"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
 msgid ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
 "source IDE for all desktop platforms."
@@ -29,11 +27,9 @@ msgstr ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ ist eine kostenlose "
 "Open-Source-IDE für alle Desktop-Plattformen."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
 msgid "Importing the project"
 msgstr "Projekt importieren"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
 msgid ""
 "From the Qt Creator's main screen select **New Project > Import Project > "
 "Import Existing Project**."
@@ -41,11 +37,9 @@ msgstr ""
 "Wählen Sie im Hauptbildschirm des Qt Creator **Neues Projekt > Projekt "
 "importieren > Vorhandenes Projekt importieren**."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
 msgid "Under **Location** select the Godot root folder."
 msgstr "Wählen Sie unter **Location** den Godot-Wurzelordner."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 msgid ""
 "Next, you can choose which folders and files will be visible to the project. "
 "While C/C++ files are added automatically, other extensions can be "
@@ -59,7 +53,6 @@ msgstr ""
 "Dateien, ``*.py`` Buildsystem-Dateien, ``*.java`` für die Entwicklung der "
 "Android-Plattform, ``*.mm`` für die Entwicklung der MacOS-Plattform."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
 msgid ""
 "You can change this configuration later by right-clicking on your project "
 "and selecting the **Edit Files...** option."
@@ -67,11 +60,9 @@ msgstr ""
 "Sie können diese Konfiguration später ändern, indem Sie auf Ihr Projekt "
 "rechtsklicken und die Option **Dateien bearbeiten ...** auswählen."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
 msgid "Finish the import."
 msgstr "Import beenden."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
 msgid ""
 "Open the ``project_name.includes`` file and add a line containing ``.`` to "
 "it to correctly enable the code completion."
@@ -79,17 +70,14 @@ msgstr ""
 "Öffnen Sie die Datei ``project_name.includes`` und fügen Sie eine Zeile mit "
 "``.`` hinzu, um die Code-Vervollständigung korrekt zu aktivieren."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 msgid "From the left-side menu select **Projects** and open the **Build** tab."
 msgstr ""
 "Wählen Sie im Menü auf der linken Seite **Projekte** und öffnen Sie die "
 "Registerkarte **Erstellen**."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 msgid "Delete the predefined ``make`` build step."
 msgstr "Löschen Sie den vordefinierten ``make``-Build-Schritt."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
 msgid ""
 "Click **Add Build Step > Custom Process Step** to add a new build step with "
 "the following settings:"
@@ -98,26 +86,21 @@ msgstr ""
 "Prozessschritt**, um einen neuen Build-Schritt mit den folgenden "
 "Einstellungen hinzuzufügen:"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
 msgstr "Befehl"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "**scons**"
 msgstr "**scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid "Arguments"
 msgstr "Argumente"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "Siehe :ref:`doc_introduction_to_the_buildsystem` für eine komplette Liste "
 "aller Argumente."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
 msgid ""
 "If the build fails with ``Could not start process \"scons\"``, it can mean "
 "that ``scons`` is not in your ``PATH`` environment variable. In this case, "
@@ -128,17 +111,14 @@ msgstr ""
 "``PATH`` befindet. In diesem Fall müssen Sie den vollständigen Pfad zur "
 "SCons-Binärdatei angeben."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 msgid "Debugging the project"
 msgstr "Debuggen des Projekts"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
 msgid "From the left-side menu select **Projects** and open the **Run** tab."
 msgstr ""
 "Wählen Sie aus dem Menü auf der linken Seite **Projekte** und öffnen Sie die "
 "Registerkarte **Ausführen**."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
 msgid ""
 "Under **Executable** specify the path to your executable located in the "
 "``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -153,7 +133,6 @@ msgstr ""
 "Projektstamm zu verweisen, z. B.: ``% {BuildDir} / bin / godot.x11.opt."
 "tools.64``."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 msgid ""
 "If you want to run a specific project, specify its root folder under "
 "**Working directory**."
@@ -161,7 +140,6 @@ msgstr ""
 "Wenn Sie ein bestimmtes Projekt ausführen möchten, geben Sie dessen "
 "Stammordner unter **Arbeitsverzeichnis** an."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
 "field."
@@ -169,7 +147,6 @@ msgstr ""
 "Wenn Sie den Editor ausführen möchten, fügen Sie dem Feld "
 "**Befehlszeilenargumente** ``-e`` hinzu."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
@@ -177,11 +154,9 @@ msgstr ""
 "Weitere Informationen zu Befehlszeilenargumenten finden Sie in der :ref:"
 "`Befehlszeilen-Anleitung <doc_command_line_tutorial>`."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
 msgstr "Konfiguration des Codestils"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and the IDE should help them follow it. By "
@@ -196,7 +171,6 @@ msgstr ""
 "Verhalten ändern, indem Sie den **Codestil** unter **Tools > Optionen > C +"
 "+** ändern."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
 "in Code Style** button to set a new code style. Set a name for it (e.g. "
@@ -207,7 +181,6 @@ msgstr ""
 "Codestil festzulegen. Legen Sie einen Namen dafür fest (z. B. Godot) und "
 "ändern Sie die Tab-Richtlinie in **Nur Tabs**."
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

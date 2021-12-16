@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
 msgid "KDevelop"
-msgstr "KDevelop"
+msgstr "\\ KDevelop"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
@@ -29,24 +27,19 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ は、すべてのデスクトッププラットフォー"
 "ム向けの無料のオープンソースIDEです。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
 msgid "Importing the project"
 msgstr "プロジェクトのインポート"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
 #, fuzzy
 msgid "From the KDevelop's main screen select **Open Project**."
 msgstr "KDevelopを開き、\"open project\" を選択して開始します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
 msgid "KDevelop's main screen."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
 msgid "Navigate to the Godot root folder and select it."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 #, fuzzy
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
@@ -54,59 +47,47 @@ msgid ""
 msgstr ""
 "次の画面で、\\ *Project manager* の \"Custom Build System\" を選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
 msgid ""
 "After the project has been imported, open the project configuration by right-"
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
 "** option."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
 msgstr "変更(Apply)を適用します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 #, fuzzy
 msgid "Build Directory"
 msgstr "それを構築します:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
 msgstr "有効"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "Executable"
 msgstr "実行可能ファイル"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "**scons**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid "Arguments"
 msgstr "引数"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 #, fuzzy
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -114,24 +95,19 @@ msgstr ""
 "GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
 "`ui_introduction_to_the_ui_system`\\ を見て下さい。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
 msgid "Apply the changes and close the configuration window."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 #, fuzzy
 msgid "Debugging the project"
 msgstr "プロジェクトの準備"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
 msgid "Click **Add** to create a new launch configuration."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
 msgid ""
 "Select **Executable** option and specify the path to your executable located "
 "in the ``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -139,7 +115,6 @@ msgid ""
 "``tools`` enabled."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

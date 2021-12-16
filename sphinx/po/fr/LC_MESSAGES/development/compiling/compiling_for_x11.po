@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:4
 msgid "Compiling for X11 (Linux, \\*BSD)"
 msgstr "Compilation pour X11 (Linux, \\*BSD)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:9
 msgid "Requirements"
 msgstr "Pré-requis"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:11
 msgid ""
 "For compiling under Linux or other Unix variants, the following is required:"
 msgstr ""
 "Pour la compilation sous Linux ou d'autres variantes Unix, les éléments "
 "suivants sont requis :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:14
 msgid "GCC 7+ or Clang 6+."
 msgstr "GCC 7+ ou Clang 6+."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:15
 msgid "Python 3.5+."
 msgstr "Python 3.5+."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:16
 msgid ""
 "SCons 3.0+ build system. If your distribution uses Python 2 by default, or "
 "you are using a version of SCons prior to 3.1.2, you will need to change the "
@@ -55,35 +49,27 @@ msgstr ""
 "python3``. Utilisez la commande ``which scons`` pour trouver l'emplacement "
 "du fichier de script SCons."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:21
 msgid "pkg-config (used to detect the dependencies below)."
 msgstr "pkg-config (utilisé pour détecter les dépendances ci-dessous)."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:22
 msgid "X11, Xcursor, Xinerama, Xi and XRandR development libraries."
 msgstr "Bibliothèques de développement X11, Xcursor, Xinerama, Xi et XRandR."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:23
 msgid "MesaGL development libraries."
 msgstr "Bibliothèques de développement MesaGL."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:24
 msgid "ALSA development libraries."
 msgstr "Bibliothèques de développement ALSA."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:25
 msgid "PulseAudio development libraries."
 msgstr "Bibliothèques de développement PulseAudio."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:26
 msgid "*Optional* - libudev (build with ``udev=yes``)."
 msgstr "*Facultatif* - libudev (construit(build) avec ``udev=yes``)."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:27
 msgid "*Optional* - yasm (for WebM SIMD optimizations)."
 msgstr "*Facultatif* - yasm (pour optimisations WebM SIMD)."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -91,70 +77,54 @@ msgstr ""
 "Pour un aperçu général de l'utilisation de SCons pour Godot, voir :ref:"
 "`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:33
 msgid "Distro-specific one-liners"
 msgstr "Lignes uniques spécifiques à la distribution"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:35
 msgid "**Alpine Linux**"
 msgstr "**Alpine Linux**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:40
 msgid "**Arch Linux**"
 msgstr "**Arch Linux**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:45
 msgid "**Debian** / **Ubuntu**"
 msgstr "**Debian** / **Ubuntu**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:50
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**FreeBSD**"
 msgstr "**FreeBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**Gentoo**"
 msgstr "**Gentoo**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:67
 msgid "**Mageia**"
 msgstr "**Mageia**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:73
 msgid "**OpenBSD**"
 msgstr "**OpenBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:77
 msgid "**openSUSE**"
 msgstr "**openSUSE**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:82
 msgid "**NetBSD**"
 msgstr "**NetBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:86
 msgid "For audio support, you can optionally install ``pulseaudio``."
 msgstr ""
 "Pour le support audio, vous pouvez optionnellement installer ``pulseaudio``."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:88
 msgid "**Solus**"
 msgstr "**Solus**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:95
 msgid "Compiling"
 msgstr "Compilation"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:97
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 "Démarrez un terminal, allez à la racine du code source du moteur et tapez :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:103
 msgid ""
 "A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
 "many threads compiling Godot as you have cores in your CPU, if not one or "
@@ -166,7 +136,6 @@ msgstr ""
 "un ou deux de plus. N'hésitez pas à ajouter l'option ``-j`` à n'importe "
 "quelle commande SCons que vous voyez ci-dessous."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
@@ -177,13 +146,11 @@ msgstr ""
 "et fonctionne sans aucune dépendance. En l'exécutant, le gestionnaire de "
 "projet apparaîtra."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 "Si vous souhaitez compiler en utilisant Clang plutôt que GCC, utilisez cette "
 "commande :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
@@ -191,7 +158,6 @@ msgstr ""
 "L'utilisation de Clang semble être une exigence pour OpenBSD, sinon les "
 "polices de caractères ne seraient pas construites(build)."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:123
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
@@ -201,7 +167,6 @@ msgstr ""
 "rendre l'exécutable final plus petit et plus rapide en ajoutant l'option "
 "SCons ``target=release_debug``."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid ""
 "If you are compiling Godot with GCC, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
@@ -213,7 +178,6 @@ msgstr ""
 "L'optimisation du temps de connexion étant un processus gourmand en mémoire, "
 "cela nécessitera environ 7 Go de RAM disponible lors de la compilation."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:132
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
@@ -224,11 +188,9 @@ msgstr ""
 "`doc_data_paths_self_contained_mode` en créant un fichier appelé ``._sc_`` "
 "ou ``_sc_`` dans le dossier ``bin/``."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:138
 msgid "Compiling a headless/server build"
 msgstr "Compilation d'une version sans headless/serveur"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:140
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
@@ -236,13 +198,11 @@ msgstr ""
 "Pour compiler un build *headless* qui fournit la fonctionnalité d'éditeur "
 "pour exporter des projets de manière automatisée, utilisez :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid ""
 "To compile a debug *server* build which can be used with :ref:`remote "
 "debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:150
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
@@ -250,11 +210,9 @@ msgstr ""
 "Pour compiler un build *serveur* qui est optimisé pour faire fonctionner des "
 "serveurs de jeu dédiés, utilisez :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:156
 msgid "Building export templates"
 msgstr "Création de modèles d'exportation"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -270,7 +228,6 @@ msgstr ""
 "virtuelle ou un conteneur pour mettre en place un environnement de "
 "compilation approprié."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:166
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
@@ -278,15 +235,12 @@ msgstr ""
 "Pour construire(build) des modèles d'exportation X11 (Linux, \\*BSD), "
 "exécutez le système de construction(build) avec les paramètres suivants :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:169
 msgid "(32 bits)"
 msgstr "(32 bits)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:176
 msgid "(64 bits)"
 msgstr "(64 bits)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:183
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -295,14 +249,12 @@ msgstr ""
 "forme hôte n'est pas toujours simple et peut nécessiter un environnement "
 "chroot."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:186
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 "Pour créer des modèles d'exportation standard, les fichiers résultants "
 "doivent être copiés vers :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:192
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -310,7 +262,6 @@ msgstr ""
 "et nommé ainsi (même pour \\*BSD qui est considéré comme \"Linux X11\" par "
 "Godot) :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -320,7 +271,6 @@ msgstr ""
 "personnalisé, vous pouvez plutôt configurer vos binaires comme modèles "
 "d'exportation personnalisés ici :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:207
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -331,11 +281,9 @@ msgstr ""
 "Godot, de sorte que la prochaine fois que vous construirez(build), vous "
 "aurez automatiquement les modèles personnalisés référencés."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:212
 msgid "Using Clang and LLD for faster development"
 msgstr "Utiliser Clang et LLD pour un développement plus rapide"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:214
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
@@ -344,7 +292,6 @@ msgstr ""
 "Cela présente deux avantages par rapport à la configuration par défaut de "
 "GCC + GNU ld :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:217
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
@@ -352,11 +299,9 @@ msgstr ""
 "LLD relie(links) Godot beaucoup plus rapidement que GNU ld ou gold. Cela "
 "conduit à des temps d'itération plus rapides."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:219
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr "Clang a tendance à donner des messages d'erreur plus utiles que GCC."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
@@ -364,7 +309,6 @@ msgstr ""
 "Pour ce faire, installez Clang et le paquet ``lld`` du gestionnaire de "
 "paquets de votre distribution puis utilisez la commande SCons suivante :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:226
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
@@ -372,7 +316,6 @@ msgstr ""
 "Une fois la compilation terminée, un nouveau binaire avec un suffixe ``."
 "llvm`` sera créé dans le dossier ``bin/``."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:229
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

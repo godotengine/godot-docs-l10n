@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/building_the_manual.rst:4
 msgid "Building the manual with Sphinx"
 msgstr "Compiler le manuel avec Sphinx"
 
-#: ../../docs/community/contributing/building_the_manual.rst:6
 msgid ""
 "This page explains how to build a local copy of the Godot manual using the "
 "Sphinx docs engine. This allows you to have local HTML files and build the "
@@ -32,22 +30,18 @@ msgstr ""
 "locaux et de créer la documentation sous la forme d’un fichier PDF, EPUB ou "
 "LaTeX, par exemple."
 
-#: ../../docs/community/contributing/building_the_manual.rst:10
 msgid "To get started, you need to:"
 msgstr "Pour commencer, vous devez :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:12
 msgid ""
 "Clone the `godot-docs repository <https://github.com/godotengine/godot-docs/"
 ">`__."
 msgstr ""
 "Clonez le `dépôt godot-docs <https://github.com/godotengine/godot-docs/>`__."
 
-#: ../../docs/community/contributing/building_the_manual.rst:13
 msgid "Install `Sphinx <https://www.sphinx-doc.org/>`__"
 msgstr "Installer `Sphinx <https://www.sphinx-doc.org/>`__"
 
-#: ../../docs/community/contributing/building_the_manual.rst:14
 msgid ""
 "To build the docs as HTML files, install the `readthedocs.org theme <https://"
 "github.com/snide/sphinx_rtd_theme>`__."
@@ -55,7 +49,6 @@ msgstr ""
 "Pour construire les docs en tant que fichiers HTML, installez le `thème "
 "readthedocs.org <https://github.com/snide/sphinx_rtd_theme>`__."
 
-#: ../../docs/community/contributing/building_the_manual.rst:16
 msgid ""
 "Install the Sphinx extensions defined in the `godot-docs repository <https://"
 "github.com/godotengine/godot-docs/>`__ ``requirements.txt`` file."
@@ -64,7 +57,6 @@ msgstr ""
 "repository <https://github.com/godotengine/godot-docs/>`__ ``requirements."
 "txt``."
 
-#: ../../docs/community/contributing/building_the_manual.rst:19
 msgid ""
 "We recommend using `pip <https://pip.pypa.io>`__, Python’s package manager "
 "to install all these tools. It comes pre-installed with `Python <https://www."
@@ -77,7 +69,6 @@ msgstr ""
 "installez et utilisez Python 3. Voici les commandes pour cloner le dépôt et "
 "ensuite installer toutes les exigences."
 
-#: ../../docs/community/contributing/building_the_manual.rst:24
 msgid ""
 "You may need to write ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) "
 "instead of ``pip3``. If both approaches fail, `check that you have pip3 "
@@ -87,7 +78,6 @@ msgstr ""
 "(Windows) au lieu de ``pip3``. Si les deux approches échouent, `vérifiez que "
 "vous avez pip3 installé <https://pip.pypa.io/en/stable/installation/>`__."
 
-#: ../../docs/community/contributing/building_the_manual.rst:33
 msgid ""
 "With the programs installed, you can build the HTML documentation from the "
 "root folder of this repository with the following command:"
@@ -95,12 +85,10 @@ msgstr ""
 "Avec les programmes installés, vous pouvez compiler la documentation HTML "
 "depuis le répertoire racine avec la commande suivante :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:44
 msgid "If you run into errors, you may try the following command:"
 msgstr ""
 "Si vous rencontrez des erreurs, vous pouvez essayer la commande suivante :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:50
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
 "swapping, which slows it down. If you have at least 16 GB of RAM, you can "
@@ -110,7 +98,6 @@ msgstr ""
 "fonctionner sans swapping, ce qui la ralentit. Si vous avez au moins 16 Go "
 "de RAM, vous pouvez accélérer la compilation en exécutant :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:62
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files."
@@ -118,7 +105,6 @@ msgstr ""
 "La compilation prendra un certain temps car le dossier ``classes/`` contient "
 "des centaines de fichiers."
 
-#: ../../docs/community/contributing/building_the_manual.rst:65
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
@@ -126,7 +112,6 @@ msgstr ""
 "Vous pouvez ensuite parcourir la documentation en ouvrant ``_build/html/"
 "index.html`` dans votre navigateur web."
 
-#: ../../docs/community/contributing/building_the_manual.rst:68
 msgid ""
 "In case you of a ``MemoryError`` or ``EOFError``, you can remove the "
 "``classes/`` folder and run ``make`` again. This will drop the class "
@@ -136,7 +121,6 @@ msgstr ""
 "le dossier ``classes/`` et relancer ``make``. Cela supprimera les références "
 "aux classes dans la documentation HTML finale mais gardera le reste intact."
 
-#: ../../docs/community/contributing/building_the_manual.rst:72
 msgid ""
 "If you delete the ``classes/`` folder, do not use ``git add .`` when working "
 "on a pull request or the whole ``classes/`` folder will be removed when you "
@@ -148,7 +132,6 @@ msgstr ""
 "``classes/`` sera supprimé lors du commit. Voir `#3157 <https://github.com/"
 "godotengine/godot-docs/issues/3157>`__ pour plus de détails."
 
-#: ../../docs/community/contributing/building_the_manual.rst:78
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
@@ -156,11 +139,9 @@ msgstr ""
 "Autrement, vous pouvez compiler la documentation en exécutant manuellement "
 "le programme sphinx-build :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:86
 msgid "Building with Sphinx and virtualenv"
 msgstr "Compilation avec Sphinx et virtualenv"
 
-#: ../../docs/community/contributing/building_the_manual.rst:88
 msgid ""
 "If you want your Sphinx installation scoped to the project, you can install "
 "sphinx-build using virtualenv. To do so, run this command from this "
@@ -170,6 +151,5 @@ msgstr ""
 "vous pouvez installer sphinx-build en utilisant virtualenv. Pour le faire, "
 "exécutez cette commande depuis le répertoire racine :"
 
-#: ../../docs/community/contributing/building_the_manual.rst:98
 msgid "Then, run ``make html`` as shown above."
 msgstr "Ensuite, exécutez ``make html`` comme indiqué ci-dessus."

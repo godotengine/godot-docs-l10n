@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "One-click deploy"
+msgstr "一键部署"
+
+msgid "What is one-click deploy?"
+msgstr "什么是一键部署？"
+
+msgid ""
+"One-click deploy is a feature that is available once a platform is properly "
+"configured and a supported device is connected to the computer. Since things "
+"can go wrong at many levels (platform may not be configured correctly, SDK "
+"may be incorrectly installed, device may be improperly configured, etc.), "
+"it's good to let the user know that it exists."
+msgstr ""
+"平台配置正确并且将支持的设备连接到电脑上之后，就可以使用一键部署功能。因为能"
+"出错的地方太多了（平台可能没有配置正确、SDK 可能没有正确安装、设备可能配置错"
+"了等等），所以最好让用户先知道有这样的功能。"
+
+msgid ""
+"After adding an Android export preset marked as Runnable, Godot can detect "
+"when a USB device is connected to the computer and offer the user to "
+"automatically export, install and run the project (in debug mode) on the "
+"device. This feature is called *one-click deploy*."
+msgstr ""
+"添加 Android 导出预设项并且标记为可执行之后，Godot 就可以检测到有 USB 设备插"
+"到了电脑上，并且允许用户在该设备上自动导出、安装、然后运行（调试模式的）项"
+"目。这个功能就叫 *一键部署* 。"
+
+msgid ""
+"One-click deploy is only available once you've added an export template "
+"marked as **Runnable** in the Export dialog. You can mark several export "
+"presets as runnable, but only one preset per platform may be marked as "
+"runnable. If you mark a second preset in a given platform as runnable, the "
+"other preset will no longer be marked as runnable."
+msgstr ""
+"在导出对话框中添加导出模板并标记为\\ **可执行**\\ 后便可使用一键部署。你可以"
+"同时将多个导出预设项标记为可执行，但同一平台被标记为可执行的只能有一个。如果"
+"你把该平台的第二个预设项标记为可执行，其它预设项的标记会被取消。"
+
+msgid "Supported platforms"
+msgstr "支持的平台"
+
+msgid ""
+"**Android:** Exports the project with debugging enabled and runs it on the "
+"connected device."
+msgstr "**Android:** 将在导出项目时启用调试，并在连接的设备上运行。"
+
+msgid ""
+"Make sure to follow the steps described in :ref:`doc_exporting_for_android`. "
+"Otherwise, the one-click deploy button won't appear."
+msgstr ""
+"请确认已经按照 :ref:`doc_exporting_for_android` 中提到的步骤进行操作，否则不"
+"会出现一键部署按钮。"
+
+msgid ""
+"If you have more than one device connected, Godot will ask you which device "
+"the project should be exported to."
+msgstr "如果你连接的设备超过一台，Godot会询问你想导出项目到哪台设备。"
+
+msgid ""
+"**HTML5:** Starts a local web server and runs the exported project by "
+"opening the default web browser."
+msgstr "**HTML5:** 将启动本地网页服务器，并打开默认网页浏览器运行导出的项目。"
+
+msgid "Support for more platforms such as iOS is planned."
+msgstr "针对包含iOS在内的更多平台的支持在计划之中。"
+
+msgid "Using one-click deploy"
+msgstr "使用一键部署"
+
+msgid ""
+"If deploying to Android, enable developer mode on your mobile device then "
+"enable USB debugging in the device's settings."
+msgstr ""
+"如果是部署到Android，请在你的移动设备上打开开发者模式，然后在设备设置中启用"
+"USB调试。"
+
+msgid ""
+"After enabling USB debugging, connect the device to your PC using an USB "
+"cable."
+msgstr "打开USB调试后，将设备通过USB线连接到PC。"
+
+msgid "For advanced users, it should also be possible to use wireless ADB."
+msgstr "如果你是高级用户，也可以使用无线ADB。"
+
+msgid ""
+"Make sure there is an export preset marked as **Runnable** for the target "
+"platform (Android or HTML5)."
+msgstr ""
+"确认目标平台（Android 或者 HTML5）有一个被标记为 **可执行** 的导出预设项。"
+
+msgid ""
+"If everything is configured correctly and with no errors, platform-specific "
+"icons will appear in the top-right corner of the editor."
+msgstr "如果这些都配置正确并且没有报错，编辑器右上角会出现平台对应的图标。"
+
+msgid "Click the button to export to the desired platform in one click."
+msgstr "点击该按钮一键导出到所需的平台。"

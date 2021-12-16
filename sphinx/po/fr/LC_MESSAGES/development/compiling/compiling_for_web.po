@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,33 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:4
 msgid "Compiling for the Web"
 msgstr "Compilation pour le Web"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:9
 msgid "Requirements"
 msgstr "Pré-requis"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
 msgstr ""
 "Pour compiler des modèles d'exportation pour le Web, ce qui suit est "
 "nécessaire :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
 msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:14
 msgid "`Python 3.5+ <https://www.python.org/>`__."
 msgstr "`Python 3.5+ <https://www.python.org/>`__."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:15
 msgid "`SCons 3.0+ <https://www.scons.org>`__ build system."
 msgstr "`SCons 3.0+ <https://www.scons.org>`__ système de construction(build)."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:17
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -51,11 +44,9 @@ msgstr ""
 "Pour un aperçu général de l'utilisation de SCons pour Godot, voir :ref:"
 "`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:21
 msgid "Building export templates"
 msgstr "Création de modèles d'exportation"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:23
 msgid ""
 "Before starting, confirm that ``emcc`` is available in your PATH. This is "
 "usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
@@ -66,7 +57,6 @@ msgstr ""
 "l'invocation de ``emsdk activate`` et ``source ./emsdk_env.sh``/``emsdk_env."
 "bat``."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:27
 msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
@@ -78,7 +68,6 @@ msgstr ""
 "Spécifiez ``target`` comme étant soit ``release`` pour une version release, "
 "soit ``release_debug`` pour une version de débogage :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:34
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Official export templates also have the JavaScript "
@@ -91,7 +80,6 @@ msgstr ""
 "problème de sécurité, l'option ``javascript_eval`` peut être utilisée pour "
 "compiler sans le singleton :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:42
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -103,7 +91,6 @@ msgstr ""
 "Son nom est ``godot.javascript.opt.zip`` pour une version release ou ``godot."
 "javascript.opt.debug.zip`` pour une version de débogage."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:47
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
@@ -111,15 +98,12 @@ msgstr ""
 "Enfin, renommez l'archive zip en ``webassembly_release.zip`` pour le modèle "
 "release :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:52
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr "Et ``webassembly_debug.zip`` pour le modèle de débogage :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:57
 msgid "Threads and GDNative"
 msgstr "Threads et GDNative"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:59
 msgid ""
 "The default export templates do not include threads and GDNative support for "
 "performance and compatibility reasons. See the :ref:`export page "
@@ -129,7 +113,6 @@ msgstr ""
 "et de GDNative pour des raisons de performance et de compatibilité. Voir la "
 "page :ref:`export <doc_javascript_export_options>` pour plus d'informations."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
 msgid ""
 "You can build the export templates using the option ``threads_enabled=yes`` "
 "or ``gdnative_enabled=yes`` to enable threads or GDNative support::"
@@ -138,7 +121,6 @@ msgstr ""
 "``threads_enabled=yes`` ou ``gdnative_enabled=yes`` pour activer les threads "
 "ou le support GDNative :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:72
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have either the ``.threads`` or ``.gdnative`` "
@@ -147,7 +129,6 @@ msgstr ""
 "Une fois terminé, le fichier résultant sera placé dans le sous-répertoire "
 "``bin``. Son nom aura le suffixe ``.threads`` ou ``.gdnative``."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:75
 msgid ""
 "Finally, rename the zip archives to ``webassembly_release_threads.zip`` and "
 "``webassembly_release_gdnative.zip`` for the release template::"
@@ -155,7 +136,6 @@ msgstr ""
 "Enfin, renommez les archives zip en ``webassembly_release_threads.zip`` et "
 "``webassembly_release_gdnative.zip`` pour le modèle release :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:81
 msgid ""
 "And ``webassembly_debug_threads.zip`` and ``webassembly_debug_gdnative.zip`` "
 "for the debug template::"
@@ -163,11 +143,9 @@ msgstr ""
 "Et ``webassembly_debug_threads.zip`` et ``webassembly_debug_gdnative.zip`` "
 "pour le modèle de débogage :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:88
 msgid "Building the Editor"
 msgstr "Compilation de l'éditeur"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""
 "It is also possible to build a version of the Godot editor that can run in "
 "the browser. The editor version requires threads support and is not "
@@ -178,7 +156,6 @@ msgstr ""
 "support des threads et n'est pas recommandée par rapport à la version "
 "native. Vous pouvez compiler l'éditeur avec :"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:96
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will be ``godot.javascript.opt.tools.threads.zip``. "
@@ -190,7 +167,6 @@ msgstr ""
 "pouvez télécharger le contenu du zip sur votre serveur web et le visiter "
 "avec votre navigateur pour utiliser l'éditeur."
 
-#: ../../docs/development/compiling/compiling_for_web.rst:100
 msgid ""
 "Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
 "server requirements."

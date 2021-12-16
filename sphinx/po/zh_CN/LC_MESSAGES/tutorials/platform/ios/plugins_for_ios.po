@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:4
 msgid "Plugins for iOS"
 msgstr "iOS的插件"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
 msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
 "are using same model of asynchronous calls explained below."
@@ -29,11 +27,9 @@ msgstr ""
 "Godot 提供了 StoreKit、GameCenter、iCloud 服务等插件。它们使用下面解释的相同"
 "异步调用模型。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr "ARKit和Camera访问也作为插件提供."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:11
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
@@ -41,11 +37,9 @@ msgstr ""
 "最新的更新、文档和源代码可以在Godot iOS插件库找到 `Godot iOS plugins "
 "repository <https://github.com/godotengine/godot-ios-plugins>`_"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid "Accessing plugin singletons"
 msgstr "访问插件单例"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:16
 msgid ""
 "To access plugin functionality, you first need to check that the plugin is "
 "exported and available by calling the `Engine.has_singleton()` function, "
@@ -54,20 +48,16 @@ msgstr ""
 "要访问插件功能, 首先需要通过调用 `Engine.has_singleton()` 函数来检查插件是否"
 "导出并可用, 该函数会返回一个注册的单例."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:20
 msgid "Here's an example of how to do this in GDScript:"
 msgstr "下面是一个如何在GDScript中做到这一点的例子:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:40
 msgid "Asynchronous methods"
 msgstr "异步方法"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:42
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
 msgstr "请求异步操作时, 方法如下所示:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:49
 msgid ""
 "The parameter will usually be a Dictionary, with the information necessary "
 "to make the request, and the call will have two phases. First, the method "
@@ -77,12 +67,11 @@ msgid ""
 "response event will be produced and added to the 'pending events' queue. "
 "Example:"
 msgstr ""
-"参数通常是一个字典, 包含发出请求所需的信息, 并且调用将有两个阶段. 首先, 该方"
-"法将立即返回Error值. 如果错误不是 ``OK``, 则调用操作完成, 可能在本地引起错误"
-"(没有Internet连接,API配置不正确等). 如果错误值为 ``OK``, 则会生成响应事件并将"
-"其添加到 ``挂起事件`` 队列中. 例:"
+"参数通常是一个字典，包含发出请求所需的信息，并且调用将有两个阶段。首先，该方"
+"法将立即返回 Error 值。如果这个 Error 不是“OK”，则调用操作完成，可能在本地引"
+"起错误（没有网络连接、API 配置不正确等）。如果错误值是“OK”，则会生成响应事件"
+"并将其添加到“挂起事件”队列中。例如："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:76
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
 "through the pending_event interface, even if it's an error, or a network "
@@ -90,31 +79,26 @@ msgid ""
 "waiting for a reply from the server. If any of the APIs don't behave this "
 "way it should be treated as a bug."
 msgstr ""
-"请记住, 当一个调用返回OK时,API将 *始终* 通过pending_event接口产生一个事件, 即"
-"使它是一个错误, 或网络超时等. 您应该能够, 例如, 安全地阻止等待的接口 来自服务"
-"器的回复. 如果任何API不以这种方式运行, 则应将其视为错误."
+"请记住，当一个调用返回 OK 时，API 将\\ *始终*\\ 通过 pending_event 接口产生一"
+"个事件，即使它是一个错误，或网络超时等。您应该能够，例如，安全地阻止等待的接"
+"口来自服务器的回复。如果任何 API 不以这种方式运行，则应将其视为错误。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:82
 msgid "The pending event interface consists of two methods:"
-msgstr "挂起事件接口包含两个方法:"
+msgstr "挂起事件接口包含两个方法："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:84
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
-msgstr "``get_pending_event_count()`` 返回队列中挂起事件的数量."
+msgstr "``get_pending_event_count()`` 返回队列中挂起事件的数量。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
-msgstr "``Variant pop_pending_event()``弹出队列中的第一个事件并返回它."
+msgstr "``Variant pop_pending_event()`` 弹出队列中的第一个事件并返回它。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:91
 msgid "Store Kit"
-msgstr "商店套件"
+msgstr "Store Kit"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:93
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
@@ -122,129 +106,75 @@ msgstr ""
 "实现在 `Godot iOS InAppStore 插件 <https://github.com/godotengine/godot-ios-"
 "plugins/blob/master/plugins/inappstore/in_app_store.mm>`_ ."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:95
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
-msgstr "Store Kit API可通过 ``InAppStore`` 单例访问. 它是自动初始化的."
+msgstr "Store Kit API 可通过 ``InAppStore`` 单例访问。它是自动初始化的。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:98
-#, fuzzy
 msgid "The following methods are available and documented below:"
-msgstr "以下方法用于实现演示:"
+msgstr "提供了以下方法，文档如下："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:116
-#, fuzzy
 msgid "``purchase``"
-msgstr "采购"
+msgstr "``purchase``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:118
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
 "``finish_transaction(product_id)`` once you receive a successful response or "
 "call ``set_auto_finish_transaction(true)`` prior to calling ``purchase()``. "
 "These two methods ensure the transaction is completed."
 msgstr ""
+"通过 Store Kit API 购买一个产品 ID。你需要在收到成功响应后调用 "
+"``finish_transaction(product_id)``\\ ，或者在调用 ``purchase()`` 之前调用 "
+"``set_auto_finish_transaction(true)``\\ 。这两个方法确保事务完成。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:123
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:163
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:233
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:306
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
 msgid "Parameters"
 msgstr "参数"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:125
-#, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product ID. Example:"
 msgstr ""
-"将Dictionary作为参数, 使用一个字段 ``product_id`` , 一个包含产品ID的字符串. "
-"例:"
+"参数是一个字典，包含一个 ``product_id`` 字段，是你的商品的字符串 ID。例子："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:133
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:173
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:197
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:275
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:320
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:367
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:426
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:458
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:515
 msgid "Response event"
 msgstr "响应事件"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:135
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:175
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:277
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:322
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:369
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:398
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:428
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:460
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:517
 msgid "The response event will be a dictionary with the following fields:"
-msgstr "响应事件将是包含以下字段的字典:"
+msgstr "响应事件将是包含以下字段的字典："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:137
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:279
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:324
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:371
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:400
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:430
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:462
 msgid "On error:"
-msgstr "出错:"
+msgstr "出错时："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:147
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:290
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:335
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:381
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:410
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:440
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:472
 msgid "On success:"
-msgstr "成功时:"
+msgstr "成功时："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:158
 msgid "``request_product_info``"
 msgstr "``request_product_info``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:160
 msgid "Requests the product info on a list of product IDs."
 msgstr "在产品ID列表中请求产品信息."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:165
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
 "which a string array of product IDs is assigned. Example:"
 msgstr ""
 "参数为字典，只有一个字段 ``product_ids``\\ ，是产品 ID 字符串的数组。例如："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:191
 msgid "``restore_purchases``"
 msgstr "``restore_purchases``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:193
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
 "恢复用户账户之前完成的购买。会为每一个之前购买过的产品 ID 创建响应事件。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:199
 msgid "The response events will be dictionaries with the following fields:"
 msgstr "响应事件将是包含以下字段的字典："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
 msgid "``set_auto_finish_transaction``"
 msgstr "``set_auto_finish_transaction``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:212
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
 "finalized automatically. Call this method prior to calling ``purchase()``."
@@ -252,23 +182,19 @@ msgstr ""
 "设为 ``true`` 时，一旦购买成功，就会自动结束购买。请在调用 ``purchase()`` 前"
 "调用本方法。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:218
 msgid ""
 "Takes a boolean as a parameter which specifies if purchases should be "
 "automatically finalized. Example:"
 msgstr "参数为布尔值，表示购买是否应该自动结束。例如："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:226
 msgid "``finish_transaction``"
 msgstr "``finish_transaction``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:228
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
 "method after you receive a successful purchase response."
 msgstr "如果你不希望自动结束交易事务，请在接收到成功购买响应后调用本方法。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:235
 msgid ""
 "Takes a string ``product_id`` as an argument. ``product_id`` specifies what "
 "product to finalize the purchase on. Example:"
@@ -276,166 +202,134 @@ msgstr ""
 "参数 ``product_id`` 是一个字符串。\\ ``product_id`` 表示需要结束购买的产品。"
 "例如："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:243
 msgid "Game Center"
 msgstr "游戏中心"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"实现在 `Godot iOS GameCenter 插件 <https://github.com/godotengine/godot-ios-"
-"plugins/blob/master/plugins/gamecenter/game_center.mm>`_ ."
+"在 `Godot iOS GameCenter 插件 <https://github.com/godotengine/godot-ios-"
+"plugins/blob/master/plugins/gamecenter/game_center.mm>`_\\ 中实现。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has the following methods:"
 msgstr "游戏中心 API 可以通过 ``GameCenter`` 单例使用。它有以下方法："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:262
 msgid "and the pending events interface:"
 msgstr "以及未决事件接口："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
 msgid "``authenticate``"
 msgstr "``authenticate``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:272
 msgid "Authenticates a user in Game Center."
 msgstr "在游戏中心对用户进行身份验证."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
 msgid "``post_score``"
 msgstr "``post_score``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:303
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "将分数发布到游戏中心排行榜."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:308
 msgid "Takes a dictionary as a parameter, with two fields:"
 msgstr "参数为一个字典，有两个字段："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:310
 msgid "``score`` a float number"
 msgstr "``score`` 浮点数"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:311
 msgid "``category`` a string with the category name"
 msgstr "``category`` 表示类别名称的字符串"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:313
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:360
 msgid "Example:"
 msgstr "示例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:345
 msgid "``award_achievement``"
 msgstr "``award_achievement``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:347
 msgid "Modifies the progress of a Game Center achievement."
 msgstr "修改游戏中心成就的进度."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:352
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr "将Dictionary作为参数, 包含3个字段:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:354
 msgid "``name`` (string) the achievement name"
-msgstr "``name``(字符串)成就名称"
+msgstr "``name``\\ （字符串）成就名称"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:355
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
-"``progress``(浮动)成就进度从0.0到100.0(传递给``GKAchievement :: "
-"percentComplete``)"
+"``progress``\\ （float）成就进度从 0.0 到 100.0（传递给 ``GKAchievement :: "
+"percentComplete``\\ ）"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:357
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
-msgstr "``show_completion_banner``(bool)游戏中心是否应该在屏幕顶部显示成就横幅"
+msgstr ""
+"``show_completion_banner``\\ （bool）游戏中心是否应该在屏幕顶部显示成就横幅"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:391
 msgid "``reset_achievements``"
 msgstr "``reset_achievements``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:393
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr "清除所有 Game Center 成就。该函数不带参数。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:420
 msgid "``request_achievements``"
 msgstr "``request_achievements``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:422
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr "请求游戏角色取得进步的所有游戏中心成就. 该函数不带参数."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:452
 msgid "``request_achievement_descriptions``"
 msgstr "``request_achievement_descriptions``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:454
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr "无论进度如何, 都要求描述所有现有的Game Center成就. 该函数不带参数."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:489
 msgid "``show_game_center``"
 msgstr "``show_game_center``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:491
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr "显示内置的游戏中心叠加层, 显示排行榜, 成就和挑战."
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:497
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr "将Dictionary作为参数, 包含两个字段:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:499
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
-"``view``(string)(可选)要呈现的视图的名称. 接受 ``默认``, ``排行榜``, ``成就"
-"`` 或 ``挑战``. 默认为 ``默认``."
+"``view``\\ （字符串）（可选）要呈现的视图的名称。接受“default”（默"
+"认）“leaderboards”（排行榜）“achievements”（成就）“challenges”（挑战）。默认"
+"为“default”。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:502
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
 "configured to show leaderboards). If not specified, Game Center will display "
 "the aggregate leaderboard."
 msgstr ""
-"``leaderboard_name`` (字符串)(可选)要显示的排行榜的名称. 仅在 ``视图`` 为 ``"
-"排行榜`` (或 ``默认`` 配置为显示排行榜)时使用. 如果未指定,Game Center将显示聚"
-"合排行榜."
+"``leaderboard_name``\\ （字符串）（可选）要显示的排行榜的名称。仅"
+"在“view”为“leaderboards”（或“default”被配置为显示排行榜）时使用。如果未指定，"
+"Game Center 将显示聚合排行榜。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:507
 msgid "Examples:"
 msgstr "示例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:519
 msgid "On close:"
-msgstr "关闭时:"
+msgstr "关闭时："
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:529
 msgid "Multi-platform games"
 msgstr "多平台游戏"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

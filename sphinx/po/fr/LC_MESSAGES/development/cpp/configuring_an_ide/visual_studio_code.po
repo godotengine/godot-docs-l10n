@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:4
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
 msgid ""
 "`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
 "platform code editor by `Microsoft <https://microsoft.com>`_ (not to be "
@@ -31,11 +29,9 @@ msgstr ""
 "multiplateforme gratuit de `Microsoft <https://microsoft.com>`_ (à ne pas "
 "confondre avec :ref:`doc_configuring_an_ide_vs`)."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
 msgid "Importing the project"
 msgstr "Importation du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:12
 msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
 "`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
@@ -44,7 +40,6 @@ msgstr ""
 "instructions dans la `documentation officielle <https://code.visualstudio."
 "com/docs/languages/cpp>`_."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 msgid ""
 "From the Visual Studio Code's main screen open the Godot root folder with "
 "**File > Open Folder...**."
@@ -52,7 +47,6 @@ msgstr ""
 "Depuis l'écran principal du Visual Studio Code, ouvrez le dossier racine de "
 "Godot avec **File > Open Folder...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
 msgid ""
 "Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
 "*Configure Task*."
@@ -60,15 +54,12 @@ msgstr ""
 "Appuyez sur :kbd:`Ctrl + Shift + P` pour ouvrir la fenêtre d'invite de "
 "commande et entrez *Configure Task*."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
 msgid "Select the **Create tasks.json file from template** option."
 msgstr "Sélectionnez l'option **Create tasks.json file from template**."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
 msgid "Then select **Others**."
 msgstr "Sélectionnez ensuite **Others**."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
 "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
 "section to it:"
@@ -76,11 +67,9 @@ msgstr ""
 "Dans le fichier ``tasks.json``, trouvez le tableau ``\"tasks\"`` et ajoutez-"
 "y une nouvelle section :"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:67
 msgid "An example of a filled out ``tasks.json``."
 msgstr "Un exemple de ``tasks.json`` rempli."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:69
 msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -89,11 +78,9 @@ msgstr ""
 "vos besoins. Voir :ref:`doc_introduction_to_the_buildsystem` pour une liste "
 "complète des arguments."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:73
 msgid "Debugging the project"
 msgstr "Débogage du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:75
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
@@ -101,18 +88,15 @@ msgstr ""
 "Pour exécuter et déboguer le projet, vous devez créer une nouvelle "
 "configuration dans le fichier ``launch.json``."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:77
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr "Appuyez sur :kbd:`Ctrl + Shift + D` pour ouvrir le panneau Run."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:78
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
 "Si le fichier ``launch.json`` est manquant, vous serez invité à en créer un "
 "nouveau."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:83
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
@@ -121,7 +105,6 @@ msgstr ""
 "à la plate-forme ici. Si elle est sélectionnée, adaptez l'exemple de "
 "configuration fourni en conséquence."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:85
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
@@ -129,11 +112,9 @@ msgstr ""
 "Dans le fichier ``launch.json``, trouvez le tableau ``\"configurations\"`` "
 "et ajoutez-y une nouvelle section :"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:153
 msgid "An example of a filled out ``launch.json``."
 msgstr "Un exemple de ``launch.json`` rempli."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:158
 msgid ""
 "Due to sporadic performance issues, it is recommended to use LLDB over GDB "
 "on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
@@ -145,7 +126,6 @@ msgstr ""
 "que l'extension `CodeLLDB <https://marketplace.visualstudio.com/items?"
 "itemName=vadimcn.vscode-lldb>`_ est installée."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:162
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
@@ -153,7 +133,6 @@ msgstr ""
 "Si vous rencontrez des problèmes avec lldb, vous pouvez envisager d'utiliser "
 "gdb (voir la configuration X11_gdb)."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:164
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
@@ -161,7 +140,6 @@ msgstr ""
 "Notez que lldb peut mieux fonctionner avec les compilations basées sur llvm. "
 "Voir :ref:`doc_compiling_for_x11` pour plus d'informations."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:166
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
@@ -170,7 +148,6 @@ msgstr ""
 "exemple ``godot.x11.tools.64`` pour une plate-forme X11 64 bits avec "
 "``tools`` activé."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:169
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

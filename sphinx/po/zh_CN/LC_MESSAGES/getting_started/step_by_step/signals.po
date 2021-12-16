@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,231 +17,297 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:1
 msgid "Signal"
 msgstr "信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:7
-msgid "Signals"
-msgstr "信号"
+#, fuzzy
+msgid "Using Signals"
+msgstr "绑定信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:10
-msgid "Introduction"
-msgstr "前言"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
-"Signals are Godot's version of the *observer* pattern. They allow a node to "
-"send out a message that other nodes can listen for and respond to. For "
-"example, rather than continuously checking a button to see if it's being "
-"pressed, the button can emit a signal when it's pressed."
+"In this lesson, we will look at signals. They are messages that nodes emit "
+"when something specific happens to them, like a button being pressed. Other "
+"nodes can connect to that signal and call a function when the event occurs."
 msgstr ""
-"信号是Godot的 *观察者* 模式的版本. 它们允许一个节点发出其他节点可以监听和响应"
-"的消息. 例如, 与其持续检查按钮是否被按下, 不如在按下按钮时发出信号."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:17
 msgid ""
-"You can read more about the observer pattern here: https://"
+"It is a delegation mechanism built into Godot that allows one game object to "
+"react to a change in another without them referencing one another. Using "
+"signals limits `coupling <https://en.wikipedia.org/wiki/"
+"Coupling_(computer_programming)>`_ and keeps your code flexible."
+msgstr ""
+
+msgid ""
+"For example, you might have a life bar on the screen that represents the "
+"player’s health. When the player takes damage or uses a healing potion, you "
+"want the bar to reflect the change. To do so, in Godot, you would use "
+"signals."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"As mentioned in the introduction, signals are Godot's version of the "
+"observer pattern. You can learn more about it here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"您可以在这里http://gameprogrammingpatterns.com/observer.html（或https://gpp."
-"tkchu.me/observer.html中文版）阅读有关观察者模式的更多信息"
+"您可以在这里阅读有关观察者模式的更多信息：\\ https://gameprogrammingpatterns."
+"com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
-"Signals are a way to *decouple* your game objects, which leads to better "
-"organized and more manageable code. Instead of forcing game objects to "
-"expect other objects to always be present, they can instead emit signals "
-"that all interested objects can subscribe to and respond to."
+"We will now use a signal to make our Godot icon from last part move and stop "
+"by pressing a button."
 msgstr ""
-"信号是一种使游戏对象 *解耦* 的方法, 从而可以使代码组织得更好, 更易于管理. 游"
-"戏对象可以发出所有感兴趣的对象可以订阅并响应的信号, 而非强制游戏对象期望其他"
-"对象始终存在."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
-msgid ""
-"Below you can see some examples of how you can use signals in your own "
-"projects."
-msgstr "接下来, 您可以看到一些有关如何在自己的项目中使用信号的示例."
+msgid "Scene setup"
+msgstr "场景设置"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:27
-msgid "Timer example"
-msgstr "计时器示例"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:29
-msgid ""
-"To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
-"Create a new scene with a Node2D and two children: a Timer and a :ref:"
-"`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
+msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr ""
-"为了看看信号是如何工作的, 让我们尝试使用一个 :ref:`Timer <class_Timer>` 节"
-"点. 创建一个新的场景, 有一个Node2D和两个子节点: 一个定时器和一个 :ref:"
-"`Sprite <class_Sprite>`. 在Scene dock中, 将Node2D重命名为TimerExample."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
-"For the Sprite's texture, you can use the Godot icon, or any other image you "
-"like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
-"down menu. Attach a script to the root node, but don't add any code to it "
-"yet."
+"In the Scene dock, click the 2D Scene button. This will add a Node2D as our "
+"root."
 msgstr ""
-"对于 ``Sprite`` 的纹理，可以使用Godot图标，或您喜欢的任何其他图像。为此，请"
-"在 ``Sprite`` 的 ``Texture`` 属性下拉菜单中选择 ``Load加载``。在根节点上附加"
-"一个脚本，但先不要在上面添加任何代码。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:37
-msgid "Your scene tree should look like this:"
-msgstr "您的场景树应该是这样的:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:41
 msgid ""
-"In the Timer node's properties, check the \"On\" box next to *Autostart*. "
-"This will cause the timer to start automatically when you run the scene. You "
-"can leave the *Wait Time* at 1 second."
+"In the FileSystem dock, click and drag the ``Sprite2D.tscn`` file you saved "
+"previously onto the Node2D to instantiate it."
 msgstr ""
-"在 ``Timer`` 节点的属性中, 勾选 *自动启动* 旁边的选框. 这会令计时器在您运行场"
-"景时自动启动. 您可以将 *等待时间* 保留为1秒."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
-"Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
-"and you'll see all of the signals that the selected node can emit. In the "
-"case of the Timer node, the one we're concerned with is \"timeout\". This "
-"signal is emitted whenever the Timer reaches ``0``."
+"We want to add another node as a sibling of the Sprite2D. To do so, right-"
+"click on Node2D and select Add Child Node."
 msgstr ""
-"在 \"属性检查器\" 选项卡旁边是一个标记为 \"节点\" 的选项卡. 单击此选项卡, 您"
-"将看到所选节点可以发出的所有信号. 对于 ``Timer`` 节点, 我们关注的是 "
-"\"timeout()\". 每当计时器到达 ``0`` 时, 就会发出这个信号."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:52
-msgid ""
-"Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
-"the signals panel. You'll see the following window, where you can define how "
-"you want to connect the signal:"
+msgid "Search for the Button node type and add it."
 msgstr ""
-"点击 \"timeout()\" 信号, 然后点击界面底部的 \"连接...\" 按钮. 您将看到如下窗"
-"口, 您可以在其中定义如何连接信号:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:58
 msgid ""
-"On the left side, you'll see the nodes in your scene and can select the node "
-"that you want to \"listen\" for the signal. Note that the Timer node is "
-"blue, this is a visual indication that it's the node that is emitting the "
-"signal. Select the root node."
+"The node is small by default. Click and drag on the bottom-right handle of "
+"the Button in the viewport to resize it."
 msgstr ""
-"在左侧，您将看到场景中的节点，并且可以选择要“侦听”信号的节点。需要留意的是，"
-"计时器节点是蓝色的，这是发出信号的节点的视觉指示。选择根节点。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:63
+#, fuzzy
 msgid ""
-"The target node *must* have a script attached or you'll receive an error "
-"message."
-msgstr "目标节点 *必须* 附加一个脚本, 否则您将收到一条错误消息."
+"If you don't see the handles, ensure the select tool is active in the "
+"toolbar."
+msgstr "如果您没有看到变化, 请重新加载场景(关闭它并再次打开)."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:66
-msgid ""
-"If you toggle the Advanced menu, you'll see on the right side that you can "
-"bind an arbitrary number of arguments of (possibly) different types. This "
-"can be useful when you have more than one signal connected to the same "
-"method, as each signal propagation will result in different values for those "
-"extra call arguments."
+msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr ""
-"如果你启用高级开关，您将在右侧看到您可以绑定任意数量、（可能）不同类型的参"
-"数。当你有多个信号连接到同一个方法时，这将很有用，因为每个信号的传播，可能会"
-"附加不同值的调用参数。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
-"On the bottom of the window is a field labeled \"Receiver Method\". This is "
-"the name of the function in the target node's script that you want to use. "
-"By default, Godot will create this function using the naming convention "
-"``_on_<node_name>_<signal_name>`` but you can change it if you wish."
+"You can also write a label on the Button by editing its Text property in the "
+"Inspector."
 msgstr ""
-"窗口底部有一个标有“Receiver Method接收方法”的输入框。这是您要使用的目标节点脚"
-"本中的函数名称。 默认情况下，Godot将使用命名约定 ``_on_<节点名>_<信号名>`` 创"
-"建此函数名，但如果你想要修改它也可以。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:75
-msgid ""
-"Click \"Connect\" and you'll see that the function has been created in the "
-"script:"
-msgstr "单击 ``连接(Connect)``, 您将看到该函数已在脚本中创建:"
+#, fuzzy
+msgid "Your scene tree and viewport should look like this."
+msgstr "您的场景树应该是这样的："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:96
-msgid ""
-"Now we can replace the placeholder code with whatever code we want to run "
-"when the signal is received. Let's make the Sprite blink:"
-msgstr ""
-"现在, 我们可以用接收信号时要运行的任何代码替换占位符代码. 让我们让 "
-"``Sprite`` 闪烁一下:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:121
-msgid ""
-"Run the scene and you'll see the Sprite blinking on and off every second. "
-"You can change the Timer's *Wait Time* property to alter this."
-msgstr ""
-"运行场景, 您将看到 ``Sprite`` 每秒闪烁一次. 您可以更改计时器的 *等待时间* 属"
-"性来更改此设置."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:125
-msgid "Connecting signals in code"
+#, fuzzy
+msgid "Connecting a signal in the editor"
 msgstr "用代码连接信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
-"You can also make the signal connection in code rather than with the editor. "
-"This is usually necessary when you're instancing nodes via code and so you "
-"can't use the editor to make the connection."
+"Here, we want to connect the Button's \"pressed\" signal to our Sprite2D, "
+"and we want to call a new function that will toggle its motion on and off. "
+"We need to have a script attached to the Sprite2D node, which we do from the "
+"previous lesson."
 msgstr ""
-"您还可以用在代码进行信号连接而不是用编辑器. 当您通过代码实例化节点时, 通常这"
-"是必需的, 因为您无法使用编辑器进行连接."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
-"First, disconnect the signal by selecting the connection in the Timer's "
-"\"Node\" tab and clicking disconnect."
+"You can connect signals in the Node dock. Select the Button node and, on the "
+"right side of the editor, click on the tab named \"Node\" next to the "
+"Inspector."
 msgstr ""
-"首先, 通过在 ``计时器`` 的 \"节点\" 选项卡中选择连接并点击断开来断开信号."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:136
+msgid "The dock displays a list of signals available on the selected node."
+msgstr ""
+
+msgid "Double-click the \"pressed\" signal to open the node connection window."
+msgstr ""
+
 msgid ""
-"To make the connection in code, we can use the ``connect`` function. We'll "
-"put it in ``_ready()`` so that the connection will be made on run. The "
-"syntax of the function is ``<source_node>.connect(<signal_name>, "
-"<target_node>, <target_function_name>)``. Here is the code for our Timer "
-"connection:"
+"There, you can connect the signal to the Sprite2D node. The node needs a "
+"receiver method, a function that Godot will call when the Button emits the "
+"signal. The editor generates one for you. By convention, we name these "
+"callback methods \"_on_NodeName_signal_name\". Here, it'll be "
+"\"_on_Button_pressed\"."
 msgstr ""
-"要使用代码进行连接, 我们可以使用 ``connect`` 函数. 将把它放在 ``_ready()`` 函"
-"数中, 这样连接就会在运行时创建. 函数的语法是 ``<源节点>.connect(<信号名>, <目"
-"标节点>, <目标方法名>)``. 下面是我们的计时器连接的代码:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:171
+msgid ""
+"When connecting signals via the editor's Node dock, you can use two modes. "
+"The simple one only allows you to connect to nodes that have a script "
+"attached to them and creates a new callback function on them."
+msgstr ""
+
+msgid ""
+"The advanced view lets you connect to any node and any built-in function, "
+"add arguments to the callback, and set options. You can toggle the mode in "
+"the window's bottom-right by clicking the radio button."
+msgstr ""
+
+msgid ""
+"Click the connect button to complete the signal connection and jump to the "
+"Script workspace. You should see the new method with a connection icon in "
+"the left margin."
+msgstr ""
+
+msgid ""
+"If you click the icon, a window pops up and displays information about the "
+"connection. This feature is only available when connecting nodes in the "
+"editor."
+msgstr ""
+
+msgid ""
+"Let's replace the line with the ``pass`` keyword with code that'll toggle "
+"the node's motion."
+msgstr ""
+
+msgid ""
+"Our Sprite2D moves thanks to code in the ``_process()`` function. Godot "
+"provides a method to toggle processing on and off: :ref:`Node.set_process() "
+"<class_Node_method_set_process>`. Another method of the Node class, "
+"``is_processing()``, returns ``true`` if idle processing is active. We can "
+"use the ``not`` keyword to invert the value."
+msgstr ""
+
+msgid ""
+"This function will toggle processing and, in turn, the icon's motion on and "
+"off upon pressing the button."
+msgstr ""
+
+msgid ""
+"Before trying the game, we need to simplify our ``_process()`` function to "
+"move the node automatically and not wait for user input. Replace it with the "
+"following code, which we saw two lessons ago:"
+msgstr ""
+
+#, fuzzy
+msgid "Your complete ``Sprite2D.gd`` code should look like the following."
+msgstr "您的场景树应该是这样的："
+
+#, fuzzy
+msgid ""
+"Run the scene now and click the button to see the sprite start and stop."
+msgstr "运行场景并按下按钮, 你应该得到以下结果:"
+
+#, fuzzy
+msgid "Connecting a signal via code"
+msgstr "用代码连接信号"
+
+msgid ""
+"You can connect signals via code instead of using the editor. This is "
+"necessary when you create nodes or instantiate scenes inside of a script."
+msgstr ""
+
+msgid ""
+"Let's use a different node here. Godot has a :ref:`Timer <class_Timer>` node "
+"that's useful to implement skill cooldown times, weapon reloading, and more."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Head back to the 2D workspace. You can either click the \"2D\" text at the "
+"top of the window or press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
+msgstr ""
+"在 **3D工作区** 中, 你可以使用网格, 灯光, 并设计3D游戏的关卡. 按 :kbd:`F2` "
+"(或 :kbd:`Alt + 2` 在macOS上)进入."
+
+msgid ""
+"In the Scene dock, right-click on the Sprite2D node and add a new node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
+msgstr ""
+
+msgid ""
+"With the Timer node selected, go to the Inspector and check the "
+"**Autostart** property."
+msgstr ""
+
+msgid ""
+"Click the script icon next to Sprite2D to jump back to the scripting "
+"workspace."
+msgstr ""
+
+msgid "We need to do two operations to connect the nodes via code:"
+msgstr ""
+
+#, fuzzy
+msgid "Get a reference to the Timer from the Sprite2D."
+msgstr "节点的引用, 该节点拥有要动画化的属性"
+
+msgid "Call the Timer's ``connect()`` method."
+msgstr ""
+
+msgid ""
+"To connect to a signal via code, you need to call the ``connect()`` method "
+"of the node you want to listen to. In this case, we want to listen to the "
+"Timer's \"timeout\" signal."
+msgstr ""
+
+msgid ""
+"To get a reference to a node relative to the current one, we use the method :"
+"ref:`Node.get_node() <class_Node_method_get_node>`. We can store the "
+"reference in a variable."
+msgstr ""
+
+msgid ""
+"The function ``get_node()`` looks at the Sprite2D's children and gets nodes "
+"by their name. For example, if you renamed the Timer node to \"BlinkingTimer"
+"\" in the editor, you would have to change the call to "
+"``get_node(\"BlinkingTimer\")``."
+msgstr ""
+
+msgid ""
+"We can now connect the Timer to the Sprite2D in the ``_ready()`` function."
+msgstr ""
+
+msgid ""
+"The line reads like so: we connect the Timer's \"timeout\" signal to the "
+"node to which the script is attached (``self``). When the Timer emits "
+"\"timeout\", we want to call the function \"_on_Timer_timeout\", that we "
+"need to define. Let's add it at the bottom of our script and use it to "
+"toggle our sprite's visibility."
+msgstr ""
+
+msgid ""
+"The ``visible`` property is a boolean that controls the visibility of our "
+"node. The line ``visible = not visible`` toggles the value. If ``visible`` "
+"is ``true``, it becomes ``false``, and vice-versa."
+msgstr ""
+
 msgid "Custom signals"
 msgstr "自定义信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:173
-msgid "You can also declare your own custom signals in Godot:"
-msgstr "您还可以在Godot中声明自己的自定义信号:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
-"Once declared, your custom signals will appear in the Inspector and can be "
-"connected in the same way as a node's built-in signals."
+"You can define custom signals in a script. Say, for example, that you want "
+"to show a game over screen when the player's health reaches zero. To do so, "
+"you could define a signal named \"died\" or \"health_depleted\" when their "
+"health reaches 0."
 msgstr ""
-"声明后, 您的自定义信号将出现在检查器中, 并且可以按照与节点的内置信号相同的方"
-"式进行连接."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:195
-msgid "To emit a signal via code, use the ``emit_signal`` function:"
+msgid ""
+"As signals represent events that just occurred, we generally use an action "
+"verb in the past tense in their names."
+msgstr ""
+
+msgid ""
+"Your signals work the same way as built-in ones: they appear in the Node tab "
+"and you can connect to them like any other."
+msgstr ""
+
+#, fuzzy
+msgid "To emit a signal in your scripts, call ``emit_signal()``."
 msgstr "要通过代码发出信号, 使用 ``emit_signal`` 函数:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:222
+#, fuzzy
 msgid ""
-"A signal can also optionally declare one or more arguments. Specify the "
-"argument names between parentheses:"
+"A signal can optionally declare one or more arguments. Specify the argument "
+"names between parentheses:"
 msgstr "信号还可以选择声明一个或多个参数. 在括号之间指定参数名称:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
@@ -251,31 +317,41 @@ msgstr ""
 "这些信号参数显示在编辑器的节点停靠面板中,Godot可以使用它们为您生成回调函数. "
 "但是, 发出信号时仍然可以发出任意数量的参数；所以由你来决定是否发出正确的值."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:248
+#, fuzzy
 msgid ""
-"To pass values, add them as the second argument to the ``emit_signal`` "
-"function:"
+"To emit values along with the signal, add them as extra arguments to the "
+"``emit_signal()`` function:"
 msgstr "要传递值，将它们作为第二个参数添加到 ``emit_signal`` 函数中:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:276
-msgid "Conclusion"
+msgid "Summary"
 msgstr "总结"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
-"Many of Godot's built-in node types provide signals you can use to detect "
-"events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
-"emits a ``body_entered`` signal whenever the player's physics body enters "
-"its collision shape, allowing you to know when the player collected it."
+"Any node in Godot emits signals when something specific happens to them, "
+"like a button being pressed. Other nodes can connect to individual signals "
+"and react to selected events."
+msgstr ""
+
+msgid ""
+"Signals have many uses. With them, you can react to a node entering or "
+"exiting the game world, to a collision, to a character entering or leaving "
+"an area, to an element of the interface changing size, and much more."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a "
+"``body_entered`` signal whenever the player's physics body enters its "
+"collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godot的许多内置节点类型提供了可用于检测事件的信号. 例如, 代表硬币的 :ref:"
 "`Area2D <class_Area2D>` 在游戏角色的物理体进入碰撞形状时发出 "
 "``body_entered`` 信号, 让您知道游戏角色何时收集了它."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:283
+#, fuzzy
 msgid ""
-"In the next section, :ref:`doc_your_first_game`, you'll build a complete "
-"game including several uses of signals to connect different game components."
+"In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
+"2D game and put everything you learned so far into practice."
 msgstr ""
 "在下一节 :ref:`doc_your_first_game` 中, 您将构建一个完整的游戏, 其中包括使用"
 "多种信号来连接不同的游戏组件."

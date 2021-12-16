@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:4
 msgid "Binding to external libraries"
 msgstr "Связывание внешних библиотек"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
 msgstr "Модули"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 #, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
@@ -38,7 +35,6 @@ msgstr ""
 "Давайте посмотрим на пример использования Festival, библиотеки синтезации "
 "голоса (текс-в-речь) написанную на C++."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
@@ -46,15 +42,12 @@ msgstr ""
 "Для связки внешней библиотеки, установить директорию модуля подобно примеру "
 "с Summator :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr "Далее, вы должны создать заголовочный файл с простым классом TTS:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
 msgstr "И затем вы добавляете файл cpp."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
@@ -62,18 +55,15 @@ msgstr ""
 "Также как и ранее, новый класс нуждается в регистрации, так что нужно "
 "добавить ещё два файла:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
 #, fuzzy
 msgid "These files should contain the following:"
 msgstr "Сцена Моба будет использовать следующие узлы:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
@@ -81,7 +71,6 @@ msgstr ""
 "Далее, вы должны создать файл ``SCsub`` чтобы система сборки скомпилировала "
 "модуль:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 #, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
@@ -94,7 +83,6 @@ msgstr ""
 "инструкций о том как получить их для вашей операционной системы. Мы включили "
 "команды установки для Linux ниже, для справки."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 #, fuzzy
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
@@ -109,7 +97,6 @@ msgstr ""
 "использовать с Godot, даже если сама библиотека Festival лицензирована под "
 "Лицензией MIT. Проверяйте лицензии и правила использования."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 #, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
@@ -123,7 +110,6 @@ msgstr ""
 "самодостаточным. Библиотеки festival и speech_tools могут быть установлены "
 "из папки modules/tts/ через git используя следующие команды:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -133,7 +119,6 @@ msgstr ""
 "вашим репозиторием, вы может связаться с ними вместо добавления их как под-"
 "модулей (внутри папки modules/tts/), как показано ниже:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
 #, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
@@ -147,7 +132,6 @@ msgstr ""
 "может быть слит, вы всегда можете попытаться сделать его через внешнюю "
 "библиотеку такую как плагин GDNative C++."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
@@ -155,7 +139,6 @@ msgstr ""
 "Чтобы добавить директории включения(include) для компилятора, вы может "
 "добавить их в пути переменных сред:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -165,18 +148,14 @@ msgstr ""
 "вы должны сначала клонировать `env`, чтобы он не добавлял флаги целиком в "
 "Godot (что вызовет ошибки). К примеру `SCsub` с собственными флагами:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 msgid "The final module should look like this:"
 msgstr "В итоге скрипт должен выглядеть так:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr "Использование модуля"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr "Теперь вы можете использовать ваш новый модуль из любого скрипта:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "А вывод будет ``is_spoken: True`` если текст будет произнесён."

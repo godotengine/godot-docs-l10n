@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:4
 msgid "Developing for Oculus Quest"
 msgstr "Développer pour Oculus Quest"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:9
 msgid ""
 "This tutorial goes over how to get started developing for the *Oculus Quest* "
 "with an official Godot plugin."
@@ -33,11 +30,9 @@ msgstr ""
 "Ce tutoriel explique comment commencer à développer pour l'*Oculus Quest* "
 "avec un plugin Godot officiel."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:12
 msgid "Before starting, there are two things you need to do:"
 msgstr "Avant de commencer, il y a deux choses à faire :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:14
 msgid ""
 "First you need to go through the steps on the :ref:"
 "`doc_exporting_for_android` page. This leads you through installing the "
@@ -47,7 +42,6 @@ msgstr ""
 "`doc_exporting_for_android`. Cela vous mènera à travers l'installation du "
 "jeu d'outils dont Godot a besoin pour exporter vers les appareils Android."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:18
 msgid ""
 "Next you need the Quest plugin. You can get it from the Asset Library or "
 "manually download it from `here <https://github.com/GodotVR/godot-oculus-"
@@ -57,15 +51,12 @@ msgstr ""
 "l'Asset Library ou le télécharger manuellement à partir d'`ici <https://"
 "github.com/GodotVR/godot-oculus-mobile-asset>`__."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:22
 msgid "Setting Up Godot"
 msgstr "Configuration de Godot"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:24
 msgid "To get started open Godot and create a new project."
 msgstr "Pour commencer, ouvrez Godot et créez un nouveau projet."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:28
 msgid ""
 "Make sure to choose the ``GLES2`` renderer. Due to the Quest's GPU this "
 "backend is far better suited for the Quest."
@@ -73,7 +64,6 @@ msgstr ""
 "Veillez à choisir le moteur de rendu ``GLES2``. En raison du GPU du Quest, "
 "ce backend est bien mieux adapté au Quest."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:31
 msgid ""
 "Copy the addons folder from the Oculus Mobile asset into your Godot project. "
 "Your project tree should look similar to this:"
@@ -81,15 +71,12 @@ msgstr ""
 "Copiez le dossier addons de l'asset Oculus Mobile dans votre projet Godot. "
 "Votre arbre de projet devrait ressembler à celui-ci :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:36
 msgid "Now you can start building the main scene:"
 msgstr "Vous pouvez maintenant commencer à construire la scène principale :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:38
 msgid "Add an :ref:`ARVROrigin <class_ARVROrigin>` node first."
 msgstr "Ajoutez d'abord un nœud :ref:`ARVROrigin <class_ARVROrigin>`."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:39
 msgid ""
 "Then add three child nodes to the origin node, one :ref:`ARVRCamera "
 "<class_ARVRCamera>` and two :ref:`ARVRController <class_ARVRController>` "
@@ -99,7 +86,6 @@ msgstr ""
 "<class_ARVRCamera>` et deux nœuds :ref:`ARVRController "
 "<class_ARVRController>`."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:40
 msgid ""
 "Assign controller ID 1 to the first :ref:`ARVRController "
 "<class_ARVRController>` and rename that to ``LeftHand``."
@@ -107,7 +93,6 @@ msgstr ""
 "Assignez l'ID de contrôleur 1 au premier :ref:`ARVRController "
 "<class_ARVRController>` et renommez-le en ``LeftHand``."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:41
 msgid ""
 "Assign controller ID 2 to the second :ref:`ARVRController "
 "<class_ARVRController>` and rename that to ``RightHand``."
@@ -115,7 +100,6 @@ msgstr ""
 "Assignez l'ID de contrôleur 2 au second :ref:`ARVRController "
 "<class_ARVRController>` et renommez-le en ``RightHand``."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:42
 msgid ""
 "Finally add a :ref:`MeshInstance <class_MeshInstance>` as a child node to "
 "our first :ref:`ARVRController <class_ARVRController>` and create a box "
@@ -131,12 +115,10 @@ msgstr ""
 "déplacez-la vers le second nœud :ref:`ARVRController "
 "<class_ARVRController>`. Ceux-ci remplaceront nos contrôleurs."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:46
 msgid "Now add a script to the main node and add the following code:"
 msgstr ""
 "Ajoutez maintenant un script au nœud principal et ajoutez le code suivant :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
@@ -144,7 +126,6 @@ msgstr ""
 "Avant de pouvoir exporter ce projet vers la Quest(Quête), vous devez faire "
 "trois autres choses."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
 "First go into the project settings and make sure that the main scene is the "
 "scene we run. Godot does not ask you to set this on export."
@@ -153,7 +134,6 @@ msgstr ""
 "principale est la scène que nous exécutons. Godot ne vous demande pas de "
 "régler cela à l'exportation."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:84
 msgid ""
 "Then go into the export menu and configure a new Android export. If you "
 "still haven't gone through the :ref:`doc_exporting_for_android` page do it "
@@ -164,7 +144,6 @@ msgstr ""
 "`doc_exporting_for_android`, faites-le maintenant. Si vous ne l'avez pas "
 "fait, vous aurez des messages rouges sur cet écran."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:89
 msgid ""
 "If you did you can forge ahead and make a few small changes to the export "
 "settings. First change the XR Mode to ``Oculus Mobile VR``. Then change the "
@@ -175,15 +154,12 @@ msgstr ""
 "mode XR en ``Oculus Mobile VR``. Ensuite, changez le mode Degrés de liberté "
 "en ``6DOF``."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
 msgid "Now save and close the export window."
 msgstr "Maintenant, enregistrez et fermez la fenêtre d'exportation."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:98
 msgid "Setting Up Your Quest"
 msgstr "La Configuration De Votre Quest(Quête)"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:100
 msgid ""
 "Finally take out your phone, when you got your Quest you needed to install "
 "an Oculus app on it and link it up to your Quest. Start the Oculus app. "
@@ -194,19 +170,15 @@ msgstr ""
 "Lancez l'application Oculus. Appuyez sur la roue dentée des paramètres en "
 "bas à droite. Sélectionnez votre Quest :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:107
 msgid "Select \"More Settings\", and select \"Developer Mode\":"
 msgstr "Sélectionnez \"More Settings\", puis \"Developer Mode\" :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:111
 msgid "Now turn developer mode on:"
 msgstr "Maintenant, activez le mode développeur :"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:115
 msgid "This allows you to deploy your games to the Quest."
 msgstr "Cela vous permet de déployer vos jeux sur le Quest."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:117
 msgid ""
 "Connect the Quest to your PC with the provided USB cable. Put the Quest on, "
 "it may give a few dialogs to give the PC permission to deploy apps. Now hit "
@@ -219,7 +191,6 @@ msgstr ""
 "qui devrait être visible dans le coin supérieur droit de votre fenêtre "
 "Godot. Cela devrait compiler votre jeu et l'exporter vers le Quest."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:123
 msgid ""
 "The above does the bare minimum to get your project running on the Quest, "
 "it's not very exciting. Holger Dammertz has made a great toolkit for the "
@@ -232,7 +203,6 @@ msgstr ""
 "scènes pour vous aider dans votre cheminement, y compris de très beaux "
 "maillages de contrôleurs."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:128
 msgid ""
 "You can find the toolkit `here <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
@@ -240,7 +210,6 @@ msgstr ""
 "Vous pouvez trouver la boîte à outils `ici <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
 msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."

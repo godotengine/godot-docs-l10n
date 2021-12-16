@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
 msgid "Inspector plugins"
 msgstr "Plugins del inspector"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
 "The inspector dock allows you to create custom widgets to edit properties "
 "through plugins. This can be beneficial when working with custom datatypes "
@@ -31,7 +29,6 @@ msgid ""
 "particular datatypes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:12
 msgid ""
 "This guide explains how to use the :ref:`class_EditorInspectorPlugin` and :"
 "ref:`class_EditorProperty` classes to create a custom interface for "
@@ -39,31 +36,25 @@ msgid ""
 "values between 0 and 99."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:20
 msgid "The default behavior on the left and the end result on the right."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:24
 #, fuzzy
 msgid "Setting up your plugin"
 msgstr "Configurando Python"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:26
 msgid "Create a new empty plugin to get started."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:28
 msgid "See :ref:`doc_making_plugins` guide to set up your new plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:30
 msgid ""
 "Let's assume you've called your plugin folder ``my_inspector_plugin``. If "
 "so, you should end up with a new ``addons/my_inspector_plugin`` folder that "
 "contains two files: ``plugin.cfg`` and ``plugin.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:34
 msgid ""
 "As before, ``plugin.gd`` is a script extending :ref:`class_EditorPlugin` and "
 "you need to introduce new code for its ``_enter_tree`` and ``_exit_tree`` "
@@ -73,18 +64,15 @@ msgid ""
 "``remove_inspector_plugin()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:41
 msgid ""
 "Here, you are loading a script and not a packed scene. Therefore you should "
 "use ``new()`` instead of ``instance()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:64
 #, fuzzy
 msgid "Interacting with the inspector"
 msgstr "Interactuar con la luz"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:66
 msgid ""
 "To interact with the inspector dock, your ``MyInspectorPlugin.gd`` script "
 "must extend the :ref:`class_EditorInspectorPlugin` class. This class "
@@ -92,18 +80,15 @@ msgid ""
 "properties."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:70
 msgid ""
 "To have any effect at all, the script must implement the ``can_handle()`` "
 "method. This function is called for each edited :ref:`class_Object` and must "
 "return ``true`` if this plugin should handle the object or its properties."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:74
 msgid "This includes any :ref:`class_Resource` attached to the object."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:76
 msgid ""
 "You can implement four other methods to add controls to the inspector at "
 "specific positions. The ``parse_begin()`` and ``parse_end()`` methods are "
@@ -112,7 +97,6 @@ msgid ""
 "layout by calling ``add_custom_control()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:82
 msgid ""
 "As the editor parses the object, it calls the ``parse_category()`` and "
 "``parse_property()`` methods. There, in addition to "
@@ -121,12 +105,10 @@ msgid ""
 "methods to specifically add :ref:`class_EditorProperty`-based controls."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:115
 #, fuzzy
 msgid "Adding an interface to edit properties"
 msgstr "Agregando propiedades"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:117
 msgid ""
 "The :ref:`class_EditorProperty` class is a special type of :ref:"
 "`class_Control` that can interact with the inspector dock's edited objects. "
@@ -134,31 +116,26 @@ msgid ""
 "complex scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:121
 msgid ""
 "There are three essential parts to the script extending :ref:"
 "`class_EditorProperty`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:124
 msgid ""
 "You must define the ``_init()`` method to set up the control nodes' "
 "structure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:127
 msgid ""
 "You should implement the ``update_property()`` to handle changes to the data "
 "from the outside."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:130
 msgid ""
 "A signal must be emitted at some point to inform the inspector that the "
 "control has changed the property using ``emit_changed``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:133
 msgid ""
 "You can display your custom widget in two ways. Use just the default "
 "``add_child()`` method to display it to the right of the property name, and "
@@ -166,7 +143,6 @@ msgid ""
 "the name."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:185
 msgid ""
 "Using the example code above you should be able to make a custom widget that "
 "replaces the default :ref:`class_SpinBox` control for integers with a :ref:"

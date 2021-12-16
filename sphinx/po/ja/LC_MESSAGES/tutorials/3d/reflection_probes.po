@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:4
 msgid "Reflection probes"
 msgstr "反射プローブ(Reflection Probe)"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:9
 msgid ""
 "As stated in the :ref:`doc_spatial_material`, objects can show reflected or "
 "diffuse light. Reflection probes are used as a source of reflected and "
@@ -35,7 +32,6 @@ msgstr ""
 "を表示できます。反射プローブは、影響範囲内のオブジェクトの反射光および環境光"
 "の光源として使用されます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:12
 msgid ""
 "A probe of this type captures the surroundings (as a sort of 360 degrees "
 "image), and stores versions of it with increasing levels of *blur*. This is "
@@ -45,14 +41,12 @@ msgstr ""
 "のレベルを上げてそのバージョンを保存します。これは、マテリアルの粗さ"
 "(roughness)や環境光をシミュレートするために使用されます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:15
 msgid ""
 "While these probes are an efficient way of storing reflections, they have a "
 "few shortcomings:"
 msgstr ""
 "これらのプローブは反射を保存する効率的な方法ですが、いくつかの欠点があります:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:17
 msgid ""
 "They are efficient to render, but expensive to compute. This leads to a "
 "default behavior where they only capture on scene load."
@@ -60,7 +54,6 @@ msgstr ""
 "レンダリングは効率的ですが、計算は負荷がかかります。これが、シーンのロード時"
 "にのみキャプチャを行うデフォルトの動作につながっています。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
 "They work best for rectangular shaped rooms or places, otherwise the "
 "reflections shown are not as faithful (especially when roughness is 0)."
@@ -68,17 +61,14 @@ msgstr ""
 "長方形の部屋や場所に最適です。そうでない場合、表示される反射はそれほど忠実で"
 "はありません(特にroughnessが0の場合)。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:21
 msgid "Setting up"
 msgstr "セットアップ"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:23
 msgid ""
 "Create a ReflectionProbe node and wrap it around the area where you want to "
 "have reflections:"
 msgstr "ReflectionProbeノードを作成し、反射させたい領域をラップします:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:27
 msgid ""
 "This should result in immediate local reflections. If you are using a Sky "
 "texture, reflections are by default blended with it."
@@ -86,7 +76,6 @@ msgstr ""
 "これにより、即座にローカルに反映されるはずです。 Skyテクスチャを使用している"
 "場合、反射はデフォルトでブレンドされます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:30
 msgid ""
 "By default, on interiors, reflections may appear not to have much "
 "consistence. In this scenario, make sure to tick the *\"Box Correct\"* "
@@ -96,7 +85,6 @@ msgstr ""
 "ります。このシナリオでは、\\ *\"Box Correct\"* プロパティにチェックを入れてく"
 "ださい。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:36
 msgid ""
 "This setting changes the reflection from an infinite skybox to reflecting a "
 "box the size of the probe:"
@@ -104,7 +92,6 @@ msgstr ""
 "この設定は、無限スカイボックスからの反射をプローブのサイズのボックスを反映す"
 "るように変更します:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:41
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look best in box shaped rooms."
@@ -112,7 +99,6 @@ msgstr ""
 "ボックスの壁を調整すると、反射が少し改善される場合がありますが、これを使えば"
 "ボックス型の部屋なら常に最適に見えます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""
 "The probe captures the surrounding from the center of the gizmo. If, for "
 "some reason, the room shape or contents occlude the center, it can be "
@@ -122,7 +108,6 @@ msgstr ""
 "状または内容が中央を塞いでいる場合、中央のハンドルを移動することにより、空の"
 "場所に移動できます:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:50
 msgid ""
 "By default, shadow mapping is disabled when rendering probes (only in the "
 "rendered image inside the probe, not the actual scene). This is a simple way "
@@ -134,7 +119,6 @@ msgstr ""
 "み)。これは、パフォーマンスとメモリを節約する簡単な方法です。プローブに影が必"
 "要な場合は、\\ *Enable Shadow* 設定で影のオン/オフを切り替えることができます:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:57
 msgid ""
 "Finally, keep in mind that you may not want the Reflection Probe to render "
 "some objects. A typical scenario is an enemy inside the room which will move "
@@ -146,11 +130,9 @@ msgstr ""
 "クトが反射でレンダリングされないようにするには、\\ *Cull Mask* 設定を使用しま"
 "す:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:65
 msgid "Interior vs exterior"
 msgstr "インテリア対エクステリア"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:67
 msgid ""
 "If you are using reflection probes in an interior setting, it is recommended "
 "that the **Interior** property be enabled. This stops the probe from "
@@ -160,7 +142,6 @@ msgstr ""
 "ティを有効にすることをお勧めします。これにより、プローブによる空のレンダリン"
 "グが停止し、カスタムの環境光設定も可能になります。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:73
 msgid ""
 "When probes are set to **Interior**, custom constant ambient lighting can be "
 "specified per probe. Just choose a color and an energy."
@@ -168,7 +149,6 @@ msgstr ""
 "プローブが **Interior** に設定されている場合、プローブごとにカスタムの定常環"
 "境光を指定できます。色(Color)とエネルギー(Energy)を選択するだけです。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:76
 msgid ""
 "Optionally, you can blend this ambient light with the probe diffuse capture "
 "by tweaking the **Ambient Contribution** property (0.0 means pure ambient "
@@ -178,11 +158,9 @@ msgstr ""
 "環境光をプローブの拡散キャプチャとブレンドできます(0.0は純粋な環境色、1.0は純"
 "粋な拡散キャプチャを意味します)。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:81
 msgid "Blending"
 msgstr "ブレンド"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:83
 msgid ""
 "Multiple reflection probes can be used, and Godot will blend them where they "
 "overlap using a smart algorithm:"
@@ -190,7 +168,6 @@ msgstr ""
 "複数の反射プローブを使用できます。Godotは、スマートアルゴリズムを使用して、"
 "オーバーラップする場所でそれらをブレンドします:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:87
 msgid ""
 "As you can see, this blending is never perfect (after all, these are box "
 "reflections, not real reflections), but these artifacts are only visible "
@@ -202,7 +179,6 @@ msgstr ""
 "された反射を使用する場合にのみ表示されます。通常、シーンには通常のマッピング"
 "とさまざまなレベルの粗さ(roughness)があり、これを隠すことができます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:93
 msgid ""
 "Alternatively, Reflection Probes work well blended together with Screen "
 "Space Reflections to solve these problems. Combining them makes local "
@@ -214,7 +190,6 @@ msgstr ""
 "すが、プローブはスクリーンスペース情報が見つからない場合にのみフォールバック"
 "として使用されます:"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:99
 msgid ""
 "Finally, blending interior and exterior probes is the recommended approach "
 "when making levels that combine both interiors and exteriors. Near the door, "
@@ -226,11 +201,9 @@ msgstr ""
 "アの近くでは、プローブは *exterior*(空の反射を得る)としてマークできますが、内"
 "部ではプローブをinteriorにすることができます。"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:104
 msgid "Reflection atlas"
 msgstr "反射アトラス(Reflection atlas)"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:106
 msgid ""
 "In the current renderer implementation, all probes are the same size and are "
 "fit into a Reflection Atlas. The size and amount of probes can be customized "
@@ -240,7 +213,6 @@ msgstr ""
 "Atlasに適合しています。プローブのサイズと量は、[プロジェクト設定] → "
 "[Quality ] → [Reflections]でカスタマイズできます"
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:110
 msgid ""
 "The default setting of Atlas Subdiv: 8 will allow up to 16 reflection probes "
 "in a scene. This value needs to be increased if you need more reflection "

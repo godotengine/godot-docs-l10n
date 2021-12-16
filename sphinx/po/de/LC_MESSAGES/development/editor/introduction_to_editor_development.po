@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:4
 msgid "Introduction to editor development"
 msgstr "Einführung in die Editorentwicklung"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:6
 msgid "On this page, you will learn:"
 msgstr "Auf dieser Seite erfahren Sie:"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:8
 msgid "The **design decisions** behind the Godot editor."
 msgstr "Die **Designentscheidungen** hinter dem Godot-Editor."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:9
 msgid "How to work efficiently on the Godot editor's C++ code."
 msgstr "Wie man effizient am C++-Code des Godot-Editors arbeitet."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:11
 msgid ""
 "This guide is aimed at current or future engine contributors. To create "
 "editor plugins in GDScript, see :ref:`doc_making_plugins` instead."
@@ -42,7 +37,6 @@ msgstr ""
 "Um Editor-Plugins in GDScript zu erstellen, siehe stattdessen :ref:"
 "`doc_making_plugins`."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:16
 msgid ""
 "If you are new to Godot, we recommended you to read :ref:"
 "`doc_godot_design_philosophy` before continuing. Since the Godot editor is a "
@@ -54,18 +48,16 @@ msgstr ""
 "Editor ein in C++ geschriebenes Godot-Projekt ist, gilt ein Großteil der "
 "Philosophie der Engine auch für den Editor."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:22
 msgid "Technical choices"
 msgstr "Technische Entscheidungen"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:24
 #, fuzzy
 msgid ""
-"The Godot editor is drawn using Godot's renderer and :ref:`UI system "
-"<doc_user_interface>`. It does *not* rely on a toolkit such as GTK or Qt. "
-"This is similar in spirit to software like Blender. While using toolkits "
-"makes it easier to achieve a \"native\" appearance, they are also quite "
-"heavy and their licensing is not compatible with Godot's."
+"The Godot editor is drawn using Godot's renderer and :ref:`UI system <toc-"
+"gui-basics>`. It does *not* rely on a toolkit such as GTK or Qt. This is "
+"similar in spirit to software like Blender. While using toolkits makes it "
+"easier to achieve a \"native\" appearance, they are also quite heavy and "
+"their licensing is not compatible with Godot's."
 msgstr ""
 "Der Godot-Editor wird mit Godots Renderer und dem :ref:`UI-System <toc-learn-"
 "features-gui>` gezeichnet. Er ist *nicht* auf ein Toolkit wie GTK oder Qt "
@@ -74,18 +66,15 @@ msgstr ""
 "erreichen, sind sie auch ziemlich schwer und ihre Lizenzierung ist nicht "
 "kompatibel mit der von Godot."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:30
 msgid ""
 "The editor is fully written in C++. It can't contain any GDScript or C# code."
 msgstr ""
 "Der Editor ist vollständig in C++ geschrieben. Er kann keinen GDScript- oder "
 "C#-Code enthalten."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:33
 msgid "Directory structure"
 msgstr "Verzeichnisstruktur"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:35
 msgid ""
 "The editor's code is fully self-contained in the `editor/ <https://github."
 "com/godotengine/godot/tree/master/editor>`__ folder of the Godot source "
@@ -94,7 +83,6 @@ msgstr ""
 "Der Code des Editors ist vollständig im Ordner `editor/ <https://github.com/"
 "godotengine/godot/tree/master/editor>`__ des Godot-Source-Repositorys."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:39
 msgid ""
 "Some editor functionality is also implemented via :ref:`modules "
 "<doc_custom_modules_in_c++>`. Some of these are only enabled in editor "
@@ -108,11 +96,9 @@ msgstr ""
 "<https://github.com/godotengine/godot/tree/master/modules>`__ im Godot-"
 "Source-Repository."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:45
 msgid "Some important files in the editor are:"
 msgstr "Einige wichtige Dateien im Editor sind:"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:47
 msgid ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/editor_node.cpp>`__: Main editor initialization file. Effectively the "
@@ -122,7 +108,6 @@ msgstr ""
 "editor/editor_node.cpp>`__: Hauptinitialisierungsdatei des Editors. Effektiv "
 "die \"Hauptszene\" des Editors."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:49
 msgid ""
 "`editor/project_manager.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/project_manager.cpp>`__: Main project manager initialization file. "
@@ -132,7 +117,6 @@ msgstr ""
 "editor/project_manager.cpp>`__: Hauptinitialisierungsdatei des "
 "Projektmanagers. Effektiv die \"Hauptszene\" des Projektmanagers."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:51
 msgid ""
 "`editor/plugins/canvas_item_editor_plugin.cpp <https://github.com/"
 "godotengine/godot/blob/3.x/editor/plugins/canvas_item_editor_plugin.cpp>`__: "
@@ -145,7 +129,6 @@ msgstr ""
 "(Werkzeugleiste am oberen Rand, Bearbeitungsmodi, überlagerte Helfer/"
 "Panels, ...)."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:53
 msgid ""
 "`editor/plugins/spatial_editor_plugin.cpp <https://github.com/godotengine/"
 "godot/blob/3.x/editor/plugins/spatial_editor_plugin.cpp>`__: The 3D editor "
@@ -157,7 +140,6 @@ msgstr ""
 "Ansichtsfenster und die zugehörige Funktionalität (Symbolleiste am oberen "
 "Rand, Bearbeitungsmodi, überlagerte Panels, ...)."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:55
 msgid ""
 "`editor/spatial_editor_gizmos.cpp <https://github.com/godotengine/godot/"
 "blob/3.x/editor/spatial_editor_gizmos.cpp>`__: Where the 3D editor gizmos "
@@ -169,11 +151,9 @@ msgstr ""
 "definiert und gezeichnet werden. Diese Datei hat kein 2D-Gegenstück, da 2D-"
 "Gizmos von den Nodes selbst gezeichnet werden."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:60
 msgid "Editor dependencies in ``scene/`` files"
 msgstr "Editor-Abhängigkeiten in ``scene/``-Dateien"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:62
 msgid ""
 "When working on an editor feature, you may have to modify files in Godot's "
 "GUI nodes, which you can find in the ``scene/`` folder."
@@ -181,7 +161,6 @@ msgstr ""
 "Wenn Sie an einer Editor-Funktion arbeiten, müssen Sie möglicherweise "
 "Dateien in Godots GUI-Nodes ändern, die Sie im Ordner ``scene/`` finden."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:65
 msgid ""
 "One rule to keep in mind is that you must **not** introduce new dependencies "
 "to ``editor/`` includes in other folders such as ``scene/``. This applies "
@@ -192,7 +171,6 @@ msgstr ""
 "einführen dürfen. Dies gilt auch, wenn Sie ``#ifdef TOOLS_ENABLED`` "
 "verwenden."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:69
 msgid ""
 "To make the codebase easier to follow and more self-contained, the allowed "
 "dependency order is:"
@@ -200,11 +178,9 @@ msgstr ""
 "Um die Codebasis übersichtlicher und in sich geschlossener zu gestalten, ist "
 "die zulässige Reihenfolge der Abhängigkeiten:"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:72
 msgid "``editor/`` -> ``scene/`` -> ``servers/`` -> ``core/``"
 msgstr "``editor/`` -> ``scene/`` -> ``servers/`` -> ``core/``"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:74
 msgid ""
 "This means that files in ``editor/`` can depend on includes from ``scene/``, "
 "``servers/``, and ``core/``. But, for example, while ``scene/`` can depend "
@@ -216,7 +192,6 @@ msgstr ""
 "``scene/`` von Includes aus ``servers/`` und ``core/`` abhängen kann, kann "
 "es nicht von Includes aus ``editor/`` abhängen."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:78
 msgid ""
 "Currently, there are some dependencies to ``editor/`` includes in ``scene/`` "
 "files, but `they are in the process of being removed <https://github.com/"
@@ -226,11 +201,9 @@ msgstr ""
 "``scene/``-Dateien, die aber `derzeit entfernt werden <https://github.com/"
 "godotengine/godot/issues/29730>`__."
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:83
 msgid "Development tips"
 msgstr "Tipps zur Entwicklung"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:85
 msgid ""
 "To iterate quickly on the editor, we recommend to set up a test project and :"
 "ref:`open it from the command line <doc_command_line_tutorial>` after "

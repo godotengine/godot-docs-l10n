@@ -1,0 +1,1996 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "cheatsheet, cheat sheet, shortcut"
+msgstr ""
+
+msgid "Default editor shortcuts"
+msgstr "Výchozí zkratky editoru"
+
+msgid ""
+"Many of Godot Editor functions can be executed with keyboard shortcuts. This "
+"page lists functions which have associated shortcuts by default, but many "
+"others are available for customization in editor settings as well. To change "
+"keys associated with these and other actions navigate to ``Editor -> Editor "
+"Settings -> Shortcuts``."
+msgstr ""
+"Mnoho funkcí editoru Godot lze provádět pomocí klávesových zkratek. Na této "
+"stránce jsou uvedeny funkce, které mají ve výchozím nastavení přiřazené "
+"klávesové zkratky, ale mnoho dalších je k dispozici také pro přizpůsobení v "
+"nastavení editoru. Chcete-li změnit klávesy spojené s těmito a dalšími "
+"akcemi, přejděte na ``Editor -> Nastavení editoru -> Klávesové zkratky``."
+
+msgid ""
+"While some actions are universal, a lot of shortcuts are specific to "
+"individual tools. For this reason it is possible for some key combinations "
+"to be assigned to more than one function. The correct action will be "
+"performed depending on the context."
+msgstr ""
+"Zatímco některé akce jsou univerzální, mnoho zkratek je specifických pro "
+"jednotlivé nástroje. Z tohoto důvodu je možné některé kombinace kláves "
+"přiřadit více než jedné funkci. Správná akce se provede v závislosti na "
+"kontextu."
+
+msgid ""
+"While Windows and Linux builds of the editor share most of the default "
+"settings, some shortcuts may differ for macOS version. This is done for "
+"better integration of the editor into macOS ecosystem. Users fluent with "
+"standard shortcuts on that OS should find Godot Editor's default key mapping "
+"intuitive."
+msgstr ""
+"Zatímco sestavení editoru pro Windows a Linux sdílejí většinu výchozích "
+"nastavení, některé zkratky se mohou ve verzi pro macOS lišit. Je to z důvodu "
+"lepší integrace editoru do ekosystému macOS. Pro uživatelé, kteří jsou "
+"zběhlí ve standardních klávesových zkratkách v tomto operačním systému, bude "
+"výchozí mapování kláves editoru Godot více intuitivní."
+
+msgid "General Editor Actions"
+msgstr "Obecné akce editoru"
+
+msgid "Action name"
+msgstr "Název akce"
+
+msgid "Windows, Linux"
+msgstr "Windows, Linux"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Editor setting"
+msgstr "Nastavení editoru"
+
+msgid "Open 2D Editor"
+msgstr "Otevřít 2D Editor"
+
+msgid ":kbd:`Ctrl + F1`"
+msgstr ":kbd:`Ctrl + F1`"
+
+msgid ":kbd:`Alt + 1`"
+msgstr ":kbd:`Alt + 1`"
+
+msgid "``editor/editor_2d``"
+msgstr "``editor/editor_2d``"
+
+msgid "Open 3D Editor"
+msgstr "Otevřít 3D Editor"
+
+msgid ":kbd:`Ctrl + F2`"
+msgstr ":kbd:`Ctrl + F2`"
+
+msgid ":kbd:`Alt + 2`"
+msgstr ":kbd:`Alt + 2`"
+
+msgid "``editor/editor_3d``"
+msgstr "``editor/editor_3d``"
+
+msgid "Open Script Editor"
+msgstr "Otevřít Editor Skriptů"
+
+msgid ":kbd:`Ctrl + F3`"
+msgstr ":kbd:`Ctrl + F3`"
+
+msgid ":kbd:`Alt + 3`"
+msgstr ":kbd:`Alt + 3`"
+
+msgid "``editor/editor_script``"
+msgstr "``editor/editor_script``"
+
+msgid "Search Help"
+msgstr "Hledat v dokumentaci"
+
+msgid ":kbd:`F1`"
+msgstr ":kbd:`F1`"
+
+msgid ":kbd:`Alt + Space`"
+msgstr ":kbd:`Alt + Space`"
+
+msgid "``editor/editor_help``"
+msgstr "``editor/editor_help``"
+
+msgid "Distraction Free Mode"
+msgstr "Nerozptylující režitm"
+
+msgid ":kbd:`Ctrl + Shift + F11`"
+msgstr ":kbd:`Ctrl + Shift + F11`"
+
+msgid ":kbd:`Cmd + Ctrl + D`"
+msgstr ":kbd:`Cmd + Ctrl + D`"
+
+msgid "``editor/distraction_free_mode``"
+msgstr "``editor/distraction_free_mode``"
+
+msgid "Next tab"
+msgstr "Další panel"
+
+msgid ":kbd:`Ctrl + Tab`"
+msgstr ":kbd:`Ctrl + Tab`"
+
+msgid ":kbd:`Cmd + Tab`"
+msgstr ":kbd:`Cmd + Tab`"
+
+msgid "``editor/next_tab``"
+msgstr "``editor/next_tab``"
+
+msgid "Previous tab"
+msgstr "Předchozí tab"
+
+msgid ":kbd:`Ctrl + Shift + Tab`"
+msgstr ":kbd:`Ctrl + Shift + Tab`"
+
+msgid ":kbd:`Cmd + Shift + Tab`"
+msgstr ":kbd:`Cmd + Shift + Tab`"
+
+msgid "``editor/prev_tab``"
+msgstr "``editor/prev_tab``"
+
+msgid "Filter Files"
+msgstr "Filtrovat soubory"
+
+msgid ":kbd:`Ctrl + Alt + P`"
+msgstr ":kbd:`Ctrl + Alt + P`"
+
+msgid ":kbd:`Cmd + Alt + P`"
+msgstr ":kbd:`Cmd + Alt + P`"
+
+msgid "``editor/filter_files``"
+msgstr "``editor/filter_files``"
+
+msgid "Open Scene"
+msgstr "Otevřít scénu"
+
+msgid ":kbd:`Ctrl + O`"
+msgstr ":kbd:`Ctrl + O`"
+
+msgid ":kbd:`Cmd + O`"
+msgstr ":kbd:`Cmd + O`"
+
+msgid "``editor/open_scene``"
+msgstr "``editor/open_scene``"
+
+msgid "Close Scene"
+msgstr "Zavřít scénu"
+
+msgid ":kbd:`Ctrl + Shift + W`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+msgid ":kbd:`Cmd + Shift + W`"
+msgstr ":kbd:`Cmd + Shift + W`"
+
+msgid "``editor/close_scene``"
+msgstr "``editor/close_scene``"
+
+msgid "Reopen Closed Scene"
+msgstr "Znovu otevřít zavřenou scénu"
+
+msgid ":kbd:`Ctrl + Shift + T`"
+msgstr ":kbd:`Ctrl + Shift + T`"
+
+msgid ":kbd:`Cmd + Shift + T`"
+msgstr ":kbd:`Cmd + Shift + T`"
+
+msgid "``editor/reopen_closed_scene``"
+msgstr "``editor/reopen_closed_scene``"
+
+msgid "Save Scene"
+msgstr "Uložit scénu"
+
+msgid ":kbd:`Ctrl + S`"
+msgstr ":kbd:`Ctrl + S`"
+
+msgid ":kbd:`Cmd + S`"
+msgstr ":kbd:`Cmd + S`"
+
+msgid "``editor/save_scene``"
+msgstr "``editor/save_scene``"
+
+msgid "Save Scene As"
+msgstr "Uložit scénu jako"
+
+msgid ":kbd:`Ctrl + Shift + S`"
+msgstr ":kbd:`Ctrl + Shift + S`"
+
+msgid ":kbd:`Cmd + Shift + S`"
+msgstr ":kbd:`Cmd + Shift + S`"
+
+msgid "``editor/save_scene_as``"
+msgstr "``editor/save_scene_as``"
+
+msgid "Save All Scenes"
+msgstr "Uložit všechny scény"
+
+msgid ":kbd:`Ctrl + Shift + Alt + S`"
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
+
+msgid ":kbd:`Cmd + Shift + Alt + S`"
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
+
+msgid "``editor/save_all_scenes``"
+msgstr "``editor/save_all_scenes``"
+
+msgid "Quick Open"
+msgstr "Rychlé otevření"
+
+msgid ":kbd:`Shift + Alt + O`"
+msgstr ":kbd:`Shift + Alt + O`"
+
+msgid "``editor/quick_open``"
+msgstr "``editor/quick_open``"
+
+msgid "Quick Open Scene"
+msgstr "Rychle otevřít scénu"
+
+msgid ":kbd:`Ctrl + Shift + O`"
+msgstr ":kbd:`Ctrl + Shift + O`"
+
+msgid ":kbd:`Cmd + Shift + O`"
+msgstr ":kbd:`Cmd + Shift + O`"
+
+msgid "``editor/quick_open_scene``"
+msgstr "``editor/quick_open_scene``"
+
+msgid "Quick Open Script"
+msgstr "Rychle otevřít skript"
+
+msgid ":kbd:`Ctrl + Alt + O`"
+msgstr ":kbd:`Ctrl + Alt + O`"
+
+msgid ":kbd:`Cmd + Alt + O`"
+msgstr ":kbd:`Cmd + Alt + O`"
+
+msgid "``editor/quick_open_script``"
+msgstr "``editor/quick_open_script``"
+
+msgid "Undo"
+msgstr "Zpět"
+
+msgid ":kbd:`Ctrl + Z`"
+msgstr ":kbd:`Ctrl + Z`"
+
+msgid ":kbd:`Cmd + Z`"
+msgstr ":kbd:`Cmd + Z`"
+
+msgid "``editor/undo``"
+msgstr "``editor/undo``"
+
+msgid "Redo"
+msgstr "Znovu"
+
+msgid ":kbd:`Ctrl + Shift + Z`"
+msgstr ":kbd:`Ctrl + Shift + Z`"
+
+msgid ":kbd:`Cmd + Shift + Z`"
+msgstr ":kbd:`Cmd + Shift + Z`"
+
+msgid "``editor/redo``"
+msgstr "``editor/redo``"
+
+msgid "Quit"
+msgstr "Ukončit"
+
+msgid ":kbd:`Ctrl + Q`"
+msgstr ":kbd:`Ctrl + Q`"
+
+msgid ":kbd:`Cmd + Q`"
+msgstr ":kbd:`Cmd + Q`"
+
+msgid "``editor/file_quit``"
+msgstr "``editor/file_quit``"
+
+msgid "Quit to Project List"
+msgstr "Ukončit do seznamu projektů"
+
+msgid ":kbd:`Ctrl + Shift + Q`"
+msgstr ":kbd:`Ctrl + Shift + Q`"
+
+msgid ":kbd:`Shift + Alt + Q`"
+msgstr ":kbd:`Shift + Alt + Q`"
+
+msgid "``editor/quit_to_project_list``"
+msgstr "``editor/quit_to_project_list``"
+
+msgid "Take Screenshot"
+msgstr "Vytvořit snímek obrazovky"
+
+msgid ":kbd:`Ctrl + F12`"
+msgstr ":kbd:`Ctrl + F12`"
+
+msgid ":kbd:`Cmd + F12`"
+msgstr ":kbd:`Cmd + F12`"
+
+msgid "``editor/take_screenshot``"
+msgstr "``editor/take_screenshot``"
+
+msgid "Toggle Fullscreen"
+msgstr "Přepnout celou obrazovku"
+
+msgid ":kbd:`Shift + F11`"
+msgstr ":kbd:`Shift + F11`"
+
+msgid ":kbd:`Cmd + Ctrl + F`"
+msgstr ":kbd:`Cmd + Ctrl + F`"
+
+msgid "``editor/fullscreen_mode``"
+msgstr "``editor/fullscreen_mode``"
+
+msgid "Play"
+msgstr "Hrát"
+
+msgid ":kbd:`F5`"
+msgstr ":kbd:`F5`"
+
+msgid ":kbd:`Cmd + B`"
+msgstr ":kbd:`Cmd + B`"
+
+msgid "``editor/play``"
+msgstr "``editor/play``"
+
+msgid "Pause Scene"
+msgstr "Pozastavit scénu"
+
+msgid ":kbd:`F7`"
+msgstr ":kbd:`F7`"
+
+msgid ":kbd:`Cmd + Ctrl + Y`"
+msgstr ":kbd:`Cmd + Ctrl + Y`"
+
+msgid "``editor/pause_scene``"
+msgstr "``editor/pause_scene``"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid ":kbd:`F8`"
+msgstr ":kbd:`F8`"
+
+msgid ":kbd:`Cmd + .`"
+msgstr ":kbd:`Cmd + .`"
+
+msgid "``editor/stop``"
+msgstr "``editor/stop``"
+
+msgid "Play Scene"
+msgstr "Přehrát scénu"
+
+msgid ":kbd:`F6`"
+msgstr ":kbd:`F6`"
+
+msgid ":kbd:`Cmd + R`"
+msgstr ":kbd:`Cmd + R`"
+
+msgid "``editor/play_scene``"
+msgstr "``editor/play_scene``"
+
+msgid "Play Custom Scene"
+msgstr "Přehrát upravenou scénu"
+
+msgid ":kbd:`Ctrl + Shift + F5`"
+msgstr ":kbd:`Ctrl + Shift + F5`"
+
+msgid ":kbd:`Cmd + Shift + R`"
+msgstr ":kbd:`Cmd + Shift + R`"
+
+msgid "``editor/play_custom_scene``"
+msgstr "``editor/play_custom_scene``"
+
+msgid "Expand Bottom Panel"
+msgstr "Rozšířit spodní panel"
+
+msgid ":kbd:`Shift + F12`"
+msgstr ":kbd:`Shift + F12`"
+
+msgid "``editor/bottom_panel_expand``"
+msgstr "``editor/bottom_panel_expand``"
+
+msgid "2D / Canvas Item Editor"
+msgstr "2D / Editor položek na plátně"
+
+msgid "Zoom In"
+msgstr "Zvětšit"
+
+msgid ":kbd:`Ctrl + =`"
+msgstr ":kbd:`Ctrl + =`"
+
+msgid ":kbd:`Cmd + =`"
+msgstr ":kbd:`Cmd + =`"
+
+msgid "``canvas_item_editor/zoom_plus``"
+msgstr "``canvas_item_editor/zoom_plus``"
+
+msgid "Zoom Out"
+msgstr "Zmenšit"
+
+msgid ":kbd:`Ctrl + -`"
+msgstr ":kbd:`Ctrl + -`"
+
+msgid ":kbd:`Cmd + -`"
+msgstr ":kbd:`Cmd + -`"
+
+msgid "``canvas_item_editor/zoom_minus``"
+msgstr "``canvas_item_editor/zoom_minus``"
+
+msgid "Zoom Reset"
+msgstr "Obnovení lupy"
+
+msgid ":kbd:`Ctrl + 0`"
+msgstr ":kbd:`Ctrl + 0`"
+
+msgid ":kbd:`Cmd + 0`"
+msgstr ":kbd:`Cmd + 0`"
+
+msgid "``canvas_item_editor/zoom_reset``"
+msgstr "``canvas_item_editor/zoom_reset``"
+
+msgid "Pan View"
+msgstr "Přesunout pohled"
+
+msgid ":kbd:`Space`"
+msgstr ":kbd:`Space`"
+
+msgid "``canvas_item_editor/pan_view``"
+msgstr "``canvas_item_editor/pan_view``"
+
+msgid "Select Mode"
+msgstr "Režim výběru"
+
+msgid ":kbd:`Q`"
+msgstr ":kbd:`Q`"
+
+msgid "``canvas_item_editor/select_mode``"
+msgstr "``canvas_item_editor/select_mode``"
+
+msgid "Move Mode"
+msgstr "Režim přesouvání"
+
+msgid ":kbd:`W`"
+msgstr ":kbd:`W`"
+
+msgid "``canvas_item_editor/move_mode``"
+msgstr "``canvas_item_editor/move_mode``"
+
+msgid "Rotate Mode"
+msgstr "Režim otáčení"
+
+msgid ":kbd:`E`"
+msgstr ":kbd:`E`"
+
+msgid "``canvas_item_editor/rotate_mode``"
+msgstr "``canvas_item_editor/rotate_mode``"
+
+msgid "Scale Mode"
+msgstr "Režim škálování"
+
+msgid ":kbd:`S`"
+msgstr ":kbd:`S`"
+
+msgid "``canvas_item_editor/scale_mode``"
+msgstr "``canvas_item_editor/scale_mode``"
+
+msgid "Ruler Mode"
+msgstr "Režim pravítka"
+
+msgid ":kbd:`R`"
+msgstr ":kbd:`R`"
+
+msgid "``canvas_item_editor/ruler_mode``"
+msgstr "``canvas_item_editor/ruler_mode``"
+
+msgid "Use Smart Snap"
+msgstr "Použít chytré přichytávání"
+
+msgid ":kbd:`Shift + S`"
+msgstr ":kbd:`Shift + S`"
+
+msgid "``canvas_item_editor/use_smart_snap``"
+msgstr "``canvas_item_editor/use_smart_snap``"
+
+msgid "Use Grid Snap"
+msgstr "Použít mřížkové přichytávání"
+
+msgid ":kbd:`Shift + G`"
+msgstr ":kbd:`Shift + G`"
+
+msgid "``canvas_item_editor/use_grid_snap``"
+msgstr "``canvas_item_editor/use_grid_snap``"
+
+msgid "Multiply grid step by 2"
+msgstr "Vynásobit krok mřížky dvěma"
+
+msgid ":kbd:`Num *`"
+msgstr ":kbd:`Num *`"
+
+msgid "``canvas_item_editor/multiply_grid_step``"
+msgstr "``canvas_item_editor/multiply_grid_step``"
+
+msgid "Divide grid step by 2"
+msgstr "Vydělit krok mřížky dvěma"
+
+msgid ":kbd:`Num /`"
+msgstr ":kbd:`Num /`"
+
+msgid "``canvas_item_editor/divide_grid_step``"
+msgstr "``canvas_item_editor/divide_grid_step``"
+
+msgid "Always Show Grid"
+msgstr "Vždy zobrazit mřížku"
+
+msgid ":kbd:`G`"
+msgstr ":kbd:`G`"
+
+msgid "``canvas_item_editor/show_grid``"
+msgstr "``canvas_item_editor/show_grid``"
+
+msgid "Show Helpers"
+msgstr "Zobrazit pomocníky"
+
+msgid ":kbd:`H`"
+msgstr ":kbd:`H`"
+
+msgid "``canvas_item_editor/show_helpers``"
+msgstr "``canvas_item_editor/show_helpers``"
+
+msgid "Show Guides"
+msgstr "Zobrazit vodítka"
+
+msgid ":kbd:`Y`"
+msgstr ":kbd:`Y`"
+
+msgid "``canvas_item_editor/show_guides``"
+msgstr "``canvas_item_editor/show_guides``"
+
+msgid "Center Selection"
+msgstr "Vycentrovat výběr"
+
+msgid ":kbd:`F`"
+msgstr ":kbd:`F`"
+
+msgid "``canvas_item_editor/center_selection``"
+msgstr "``canvas_item_editor/center_selection``"
+
+msgid "Frame Selection"
+msgstr "Výběr snímku"
+
+msgid ":kbd:`Shift + F`"
+msgstr ":kbd:`Shift + F`"
+
+msgid "``canvas_item_editor/frame_selection``"
+msgstr "``canvas_item_editor/frame_selection``"
+
+msgid "Preview Canvas Scale"
+msgstr "Náhled měřítka plátna"
+
+msgid ":kbd:`Ctrl + Shift + P`"
+msgstr ":kbd:`Ctrl + Shift + P`"
+
+msgid ":kbd:`Cmd + Shift + P`"
+msgstr ":kbd:`Cmd + Shift + P`"
+
+msgid "``canvas_item_editor/preview_canvas_scale``"
+msgstr "``canvas_item_editor/preview_canvas_scale``"
+
+msgid "Insert Key"
+msgstr "Vložit klíč"
+
+msgid ":kbd:`Ins`"
+msgstr ":kbd:`Ins`"
+
+msgid "``canvas_item_editor/anim_insert_key``"
+msgstr "``canvas_item_editor/anim_insert_key``"
+
+msgid "Insert Key (Existing Tracks)"
+msgstr "Vložit klíč (existující stopy)"
+
+msgid ":kbd:`Ctrl + Ins`"
+msgstr ":kbd:`Ctrl + Ins`"
+
+msgid ":kbd:`Cmd + Ins`"
+msgstr ":kbd:`Cmd + Ins`"
+
+msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
+msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
+
+msgid "Make Custom Bones from Nodes"
+msgstr "Vytvořit vlastní kosti z uzlů"
+
+msgid ":kbd:`Ctrl + Shift + B`"
+msgstr ":kbd:`Ctrl + Shift + B`"
+
+msgid ":kbd:`Cmd + Shift + B`"
+msgstr ":kbd:`Cmd + Shift + B`"
+
+msgid "``canvas_item_editor/skeleton_make_bones``"
+msgstr "``canvas_item_editor/skeleton_make_bones``"
+
+msgid "Clear Pose"
+msgstr "Vymazat pózu"
+
+msgid ":kbd:`Shift + K`"
+msgstr ":kbd:`Shift + K`"
+
+msgid "``canvas_item_editor/anim_clear_pose``"
+msgstr "``canvas_item_editor/anim_clear_pose``"
+
+msgid "3D / Spatial Editor"
+msgstr "3D / Prostorový editor"
+
+msgid "Toggle Freelook"
+msgstr "Přepnout volný pohled"
+
+msgid "``spatial_editor/freelook_toggle``"
+msgstr "``spatial_editor/freelook_toggle``"
+
+msgid "Freelook Left"
+msgstr "Volný pohled doleva"
+
+msgid ":kbd:`A`"
+msgstr ":kbd:`A`"
+
+msgid "``spatial_editor/freelook_left``"
+msgstr "``spatial_editor/freelook_left``"
+
+msgid "Freelook Right"
+msgstr "Volný pohled doprava"
+
+msgid ":kbd:`D`"
+msgstr ":kbd:`D`"
+
+msgid "``spatial_editor/freelook_right``"
+msgstr "``spatial_editor/freelook_right``"
+
+msgid "Freelook Forward"
+msgstr "Volný pohled vpřed"
+
+msgid "``spatial_editor/freelook_forward``"
+msgstr "``spatial_editor/freelook_forward``"
+
+msgid "Freelook Backwards"
+msgstr "Volný pohled dozadu"
+
+msgid "``spatial_editor/freelook_backwards``"
+msgstr "``spatial_editor/freelook_backwards``"
+
+msgid "Freelook Up"
+msgstr "Volný pohled nahoru"
+
+msgid "``spatial_editor/freelook_up``"
+msgstr "``spatial_editor/freelook_up``"
+
+msgid "Freelook Down"
+msgstr "Volný pohled dolů"
+
+msgid "``spatial_editor/freelook_down``"
+msgstr "``spatial_editor/freelook_down``"
+
+msgid "Freelook Speed Modifier"
+msgstr "Rychlost volného pohledu"
+
+msgid ":kbd:`Shift`"
+msgstr ":kbd:`Shift`"
+
+msgid "``spatial_editor/freelook_speed_modifier``"
+msgstr "``spatial_editor/freelook_speed_modifier``"
+
+msgid "Freelook Slow Modifier"
+msgstr "Zpomalení volného pohledu"
+
+msgid ":kbd:`Alt`"
+msgstr ":kbd:`Alt`"
+
+msgid "``spatial_editor/freelook_slow_modifier``"
+msgstr "``spatial_editor/freelook_slow_modifier``"
+
+msgid "``spatial_editor/tool_select``"
+msgstr "``spatial_editor/tool_select``"
+
+msgid "``spatial_editor/tool_move``"
+msgstr "``spatial_editor/tool_move``"
+
+msgid "``spatial_editor/tool_rotate``"
+msgstr "``spatial_editor/tool_rotate``"
+
+msgid "``spatial_editor/tool_scale``"
+msgstr "``spatial_editor/tool_scale``"
+
+msgid "Use Local Space"
+msgstr "Použít místní prostor"
+
+msgid ":kbd:`T`"
+msgstr ":kbd:`T`"
+
+msgid "``spatial_editor/local_coords``"
+msgstr "``spatial_editor/local_coords``"
+
+msgid "Use Snap"
+msgstr "Použít přichycení"
+
+msgid "``spatial_editor/snap``"
+msgstr "``spatial_editor/snap``"
+
+msgid "Snap Object to Floor"
+msgstr "Přichytit objekt k podlaze"
+
+msgid ":kbd:`PgDown`"
+msgstr ":kbd:`PgDown`"
+
+msgid "``spatial_editor/snap_to_floor``"
+msgstr "``spatial_editor/snap_to_floor``"
+
+msgid "Top View"
+msgstr "Pohled shora"
+
+msgid ":kbd:`Num 7`"
+msgstr ":kbd:`Num 7`"
+
+msgid "``spatial_editor/top_view``"
+msgstr "``spatial_editor/top_view``"
+
+msgid "Bottom View"
+msgstr "Pohled zdola"
+
+msgid ":kbd:`Alt + Num 7`"
+msgstr ":kbd:`Alt + Num 7`"
+
+msgid "``spatial_editor/bottom_view``"
+msgstr "``spatial_editor/bottom_view``"
+
+msgid "Front View"
+msgstr "Pohled zepředu"
+
+msgid ":kbd:`Num 1`"
+msgstr ":kbd:`Num 1`"
+
+msgid "``spatial_editor/front_view``"
+msgstr "``spatial_editor/front_view``"
+
+msgid "Rear View"
+msgstr "Pohled zezadu"
+
+msgid ":kbd:`Alt + Num 1`"
+msgstr ":kbd:`Alt + Num 1`"
+
+msgid "``spatial_editor/rear_view``"
+msgstr "``spatial_editor/rear_view``"
+
+msgid "Right View"
+msgstr "Pohled zprava"
+
+msgid ":kbd:`Num 3`"
+msgstr ":kbd:`Num 3`"
+
+msgid "``spatial_editor/right_view``"
+msgstr "``spatial_editor/right_view``"
+
+msgid "Left View"
+msgstr "Pohled zleva"
+
+msgid ":kbd:`Alt + Num 3`"
+msgstr ":kbd:`Alt + Num 3`"
+
+msgid "``spatial_editor/left_view``"
+msgstr "``spatial_editor/left_view``"
+
+msgid "Switch Perspective/Orthogonal View"
+msgstr "Přepnout perspektivní/ortogonální pohled"
+
+msgid ":kbd:`Num 5`"
+msgstr ":kbd:`Num 5`"
+
+msgid "``spatial_editor/switch_perspective_orthogonal``"
+msgstr "``spatial_editor/switch_perspective_orthogonal``"
+
+msgid "Insert Animation Key"
+msgstr "Vložit animační klíč"
+
+msgid ":kbd:`K`"
+msgstr ":kbd:`K`"
+
+msgid "``spatial_editor/insert_anim_key``"
+msgstr "``spatial_editor/insert_anim_key``"
+
+msgid "Focus Origin"
+msgstr "Zaměřit počátek"
+
+msgid ":kbd:`O`"
+msgstr ":kbd:`O`"
+
+msgid "``spatial_editor/focus_origin``"
+msgstr "``spatial_editor/focus_origin``"
+
+msgid "Focus Selection"
+msgstr "Zaměřit výběr"
+
+msgid "``spatial_editor/focus_selection``"
+msgstr "``spatial_editor/focus_selection``"
+
+msgid "Align Transform with View"
+msgstr "Zarovnat se zobrazením"
+
+msgid ":kbd:`Ctrl + Alt + M`"
+msgstr ":kbd:`Ctrl + Alt + M`"
+
+msgid ":kbd:`Cmd + Alt + M`"
+msgstr ":kbd:`Cmd + Alt + M`"
+
+msgid "``spatial_editor/align_transform_with_view``"
+msgstr "``spatial_editor/align_transform_with_view``"
+
+msgid "Align Rotation with View"
+msgstr "Zarovnat rotaci se zobrazením"
+
+msgid ":kbd:`Ctrl + Alt + F`"
+msgstr ":kbd:`Ctrl + Alt + F`"
+
+msgid ":kbd:`Cmd + Alt + F`"
+msgstr ":kbd:`Cmd + Alt + F`"
+
+msgid "``spatial_editor/align_rotation_with_view``"
+msgstr "``spatial_editor/align_rotation_with_view``"
+
+msgid "1 Viewport"
+msgstr "1 výřez"
+
+msgid ":kbd:`Ctrl + 1`"
+msgstr ":kbd:`Ctrl + 1`"
+
+msgid ":kbd:`Cmd + 1`"
+msgstr ":kbd:`Cmd + 1`"
+
+msgid "``spatial_editor/1_viewport``"
+msgstr "``spatial_editor/1_viewport``"
+
+msgid "2 Viewports"
+msgstr "2 výřezy"
+
+msgid ":kbd:`Ctrl + 2`"
+msgstr ":kbd:`Ctrl + 2`"
+
+msgid ":kbd:`Cmd + 2`"
+msgstr ":kbd:`Cmd + 2`"
+
+msgid "``spatial_editor/2_viewports``"
+msgstr "``spatial_editor/2_viewports``"
+
+msgid "2 Viewports (Alt)"
+msgstr "2 výřezy (Alt)"
+
+msgid ":kbd:`Ctrl + Alt + 2`"
+msgstr ":kbd:`Ctrl + Alt + 2`"
+
+msgid ":kbd:`Cmd + Alt + 2`"
+msgstr ":kbd:`Cmd + Alt + 2`"
+
+msgid "``spatial_editor/2_viewports_alt``"
+msgstr "``spatial_editor/2_viewports_alt``"
+
+msgid "3 Viewports"
+msgstr "3 výřezy"
+
+msgid ":kbd:`Ctrl + 3`"
+msgstr ":kbd:`Ctrl + 3`"
+
+msgid ":kbd:`Cmd + 3`"
+msgstr ":kbd:`Cmd + 3`"
+
+msgid "``spatial_editor/3_viewports``"
+msgstr "``spatial_editor/3_viewports``"
+
+msgid "3 Viewports (Alt)"
+msgstr "3 výřezy (Alt)"
+
+msgid ":kbd:`Ctrl + Alt + 3`"
+msgstr ":kbd:`Ctrl + Alt + 3`"
+
+msgid ":kbd:`Cmd + Alt + 3`"
+msgstr ":kbd:`Cmd + Alt + 3`"
+
+msgid "``spatial_editor/3_viewports_alt``"
+msgstr "``spatial_editor/3_viewports_alt``"
+
+msgid "4 Viewports"
+msgstr "4 výřezy"
+
+msgid ":kbd:`Ctrl + 4`"
+msgstr ":kbd:`Ctrl + 4`"
+
+msgid ":kbd:`Cmd + 4`"
+msgstr ":kbd:`Cmd + 4`"
+
+msgid "``spatial_editor/4_viewports``"
+msgstr "``spatial_editor/4_viewports``"
+
+msgid "Text Editor"
+msgstr "Textový editor"
+
+msgid "Cut"
+msgstr "Vyjmout"
+
+msgid ":kbd:`Ctrl + X`"
+msgstr ":kbd:`Ctrl + X`"
+
+msgid ":kbd:`Cmd + X`"
+msgstr ":kbd:`Cmd + X`"
+
+msgid "``script_text_editor/cut``"
+msgstr "``script_text_editor/cut``"
+
+msgid "Copy"
+msgstr "Kopírovat"
+
+msgid ":kbd:`Ctrl + C`"
+msgstr ":kbd:`Ctrl + C`"
+
+msgid ":kbd:`Cmd + C`"
+msgstr ":kbd:`Cmd + C`"
+
+msgid "``script_text_editor/copy``"
+msgstr "``script_text_editor/copy``"
+
+msgid "Paste"
+msgstr "Vložit"
+
+msgid ":kbd:`Ctrl + V`"
+msgstr ":kbd:`Ctrl + V`"
+
+msgid ":kbd:`Cmd + V`"
+msgstr ":kbd:`Cmd + V`"
+
+msgid "``script_text_editor/paste``"
+msgstr "``script_text_editor/paste``"
+
+msgid "Select All"
+msgstr "Vybrat vše"
+
+msgid ":kbd:`Ctrl + A`"
+msgstr ":kbd:`Ctrl + A`"
+
+msgid ":kbd:`Cmd + A`"
+msgstr ":kbd:`Cmd + A`"
+
+msgid "``script_text_editor/select_all``"
+msgstr "``script_text_editor/select_all``"
+
+msgid "Find"
+msgstr "Najít"
+
+msgid ":kbd:`Ctrl + F`"
+msgstr ":kbd:`Ctrl + F`"
+
+msgid ":kbd:`Cmd + F`"
+msgstr ":kbd:`Cmd + F`"
+
+msgid "``script_text_editor/find``"
+msgstr "``script_text_editor/find``"
+
+msgid "Find Next"
+msgstr "Najít další"
+
+msgid ":kbd:`F3`"
+msgstr ":kbd:`F3`"
+
+msgid ":kbd:`Cmd + G`"
+msgstr ":kbd:`Cmd + G`"
+
+msgid "``script_text_editor/find_next``"
+msgstr "``script_text_editor/find_next``"
+
+msgid "Find Previous"
+msgstr "Najít předchozí"
+
+msgid ":kbd:`Shift + F3`"
+msgstr ":kbd:`Shift + F3`"
+
+msgid ":kbd:`Cmd + Shift + G`"
+msgstr ":kbd:`Cmd + Shift + G`"
+
+msgid "``script_text_editor/find_previous``"
+msgstr "``script_text_editor/find_previous``"
+
+msgid "Find in Files"
+msgstr "Najít v souborech"
+
+msgid ":kbd:`Ctrl + Shift + F`"
+msgstr ":kbd:`Ctrl + Shift + F`"
+
+msgid ":kbd:`Cmd + Shift + F`"
+msgstr ":kbd:`Cmd + Shift + F`"
+
+msgid "``script_text_editor/find_in_files``"
+msgstr "``script_text_editor/find_in_files``"
+
+msgid "Replace"
+msgstr "Nahradit"
+
+msgid ":kbd:`Ctrl + R`"
+msgstr ":kbd:`Ctrl + R`"
+
+msgid ":kbd:`Alt + Cmd + F`"
+msgstr ":kbd:`Alt + Cmd + F`"
+
+msgid "``script_text_editor/replace``"
+msgstr "``script_text_editor/replace``"
+
+msgid "Replace in Files"
+msgstr "Nahradit v souborech"
+
+msgid ":kbd:`Ctrl + Shift + R`"
+msgstr ":kbd:`Ctrl + Shift + R`"
+
+msgid "``script_text_editor/replace_in_files``"
+msgstr "``script_text_editor/replace_in_files``"
+
+msgid "``script_text_editor/undo``"
+msgstr "``script_text_editor/undo``"
+
+msgid ":kbd:`Ctrl + Y`"
+msgstr ":kbd:`Ctrl + Y`"
+
+msgid ":kbd:`Cmd + Y`"
+msgstr ":kbd:`Cmd + Y`"
+
+msgid "``script_text_editor/redo``"
+msgstr "``script_text_editor/redo``"
+
+msgid "Move Up"
+msgstr "Přesunout nahoru"
+
+msgid ":kbd:`Alt + Up Arrow`"
+msgstr ":kbd:`Alt + Up Arrow`"
+
+msgid "``script_text_editor/move_up``"
+msgstr "``script_text_editor/move_up``"
+
+msgid "Move Down"
+msgstr "Přesunout dolů"
+
+msgid ":kbd:`Alt + Down Arrow`"
+msgstr ":kbd:`Alt + Down Arrow`"
+
+msgid "``script_text_editor/move_down``"
+msgstr "``script_text_editor/move_down``"
+
+msgid "Delete Line"
+msgstr "Odstranit řádek"
+
+msgid ":kbd:`Ctrl + Shift + K`"
+msgstr ":kbd:`Ctrl + Shift + K`"
+
+msgid ":kbd:`Cmd + Shift + K`"
+msgstr ":kbd:`Cmd + Shift + K`"
+
+msgid "``script_text_editor/delete_line``"
+msgstr "``script_text_editor/delete_line``"
+
+msgid "Toggle Comment"
+msgstr "Přepnout komentář"
+
+msgid ":kbd:`Ctrl + K`"
+msgstr ":kbd:`Ctrl + K`"
+
+msgid ":kbd:`Cmd + K`"
+msgstr ":kbd:`Cmd + K`"
+
+msgid "``script_text_editor/toggle_comment``"
+msgstr "``script_text_editor/toggle_comment``"
+
+msgid "Fold/Unfold Line"
+msgstr "Složit/Rozložit řádek"
+
+msgid ":kbd:`Alt + F`"
+msgstr ":kbd:`Alt + F`"
+
+msgid "``script_text_editor/toggle_fold_line``"
+msgstr "``script_text_editor/toggle_fold_line``"
+
+msgid "Clone Down"
+msgstr "Duplikovat dolů"
+
+msgid ":kbd:`Ctrl + D`"
+msgstr ":kbd:`Ctrl + D`"
+
+msgid ":kbd:`Cmd + Shift + C`"
+msgstr ":kbd:`Cmd + Shift + C`"
+
+msgid "``script_text_editor/clone_down``"
+msgstr "``script_text_editor/clone_down``"
+
+msgid "Complete Symbol"
+msgstr "Doplnit symbol"
+
+msgid ":kbd:`Ctrl + Space`"
+msgstr ":kbd:`Ctrl + Space`"
+
+msgid "``script_text_editor/complete_symbol``"
+msgstr "``script_text_editor/complete_symbol``"
+
+msgid "Evaluate Selection"
+msgstr "Vyhodnoť vybraný výraz"
+
+msgid ":kbd:`Ctrl + Shift + E`"
+msgstr ":kbd:`Ctrl + Shift + E`"
+
+msgid ":kbd:`Cmd + Shift + E`"
+msgstr ":kbd:`Cmd + Shift + E`"
+
+msgid "``script_text_editor/evaluate_selection``"
+msgstr "``script_text_editor/evaluate_selection``"
+
+msgid "Trim Trailing Whitespace"
+msgstr "Osekat koncové mezery"
+
+msgid ":kbd:`Ctrl + Alt + T`"
+msgstr ":kbd:`Ctrl + Alt + T`"
+
+msgid ":kbd:`Cmd + Alt + T`"
+msgstr ":kbd:`Cmd + Alt + T`"
+
+msgid "``script_text_editor/trim_trailing_whitespace``"
+msgstr "``script_text_editor/trim_trailing_whitespace``"
+
+msgid "Uppercase"
+msgstr "Velká písmena"
+
+msgid ":kbd:`Shift + F4`"
+msgstr ":kbd:`Shift + F4`"
+
+msgid "``script_text_editor/convert_to_uppercase``"
+msgstr "``script_text_editor/convert_to_uppercase``"
+
+msgid "Lowercase"
+msgstr "Malá písmena"
+
+msgid ":kbd:`Shift + F5`"
+msgstr ":kbd:`Shift + F5`"
+
+msgid "``script_text_editor/convert_to_lowercase``"
+msgstr "``script_text_editor/convert_to_lowercase``"
+
+msgid "Capitalize"
+msgstr "Velká Písmena"
+
+msgid ":kbd:`Shift + F6`"
+msgstr ":kbd:`Shift + F6`"
+
+msgid "``script_text_editor/capitalize``"
+msgstr "``script_text_editor/capitalize``"
+
+msgid "Convert Indent to Spaces"
+msgstr "Převést odsazení na mezery"
+
+msgid ":kbd:`Ctrl + Shift + Y`"
+msgstr ":kbd:`Ctrl + Shift + Y`"
+
+msgid ":kbd:`Cmd + Shift + Y`"
+msgstr ":kbd:`Cmd + Shift + Y`"
+
+msgid "``script_text_editor/convert_indent_to_spaces``"
+msgstr "``script_text_editor/convert_indent_to_spaces``"
+
+msgid "Convert Indent to Tabs"
+msgstr "Převést odsazení na taby"
+
+msgid ":kbd:`Ctrl + Shift + I`"
+msgstr ":kbd:`Ctrl + Shift + I`"
+
+msgid ":kbd:`Cmd + Shift + I`"
+msgstr ":kbd:`Cmd + Shift + I`"
+
+msgid "``script_text_editor/convert_indent_to_tabs``"
+msgstr "``script_text_editor/convert_indent_to_tabs``"
+
+msgid "Auto Indent"
+msgstr "Automatické odsazení"
+
+msgid ":kbd:`Ctrl + I`"
+msgstr ":kbd:`Ctrl + I`"
+
+msgid ":kbd:`Cmd + I`"
+msgstr ":kbd:`Cmd + I`"
+
+msgid "``script_text_editor/auto_indent``"
+msgstr "``script_text_editor/auto_indent``"
+
+msgid "Toggle Bookmark"
+msgstr "Vypnout/Zapnout záložku"
+
+msgid ":kbd:`Ctrl + Alt + B`"
+msgstr ":kbd:`Ctrl + Alt + B`"
+
+msgid ":kbd:`Cmd + Alt + B`"
+msgstr ":kbd:`Cmd + Alt + B`"
+
+msgid "``script_text_editor/toggle_bookmark``"
+msgstr "``script_text_editor/toggle_bookmark``"
+
+msgid "Go to Next Bookmark"
+msgstr "Přejít na další záložku"
+
+msgid ":kbd:`Ctrl + B`"
+msgstr ":kbd:`Ctrl + B`"
+
+msgid "``script_text_editor/goto_next_bookmark``"
+msgstr "``script_text_editor/goto_next_bookmark``"
+
+msgid "Go to Previous Bookmark"
+msgstr "Přejít na předchozí záložku"
+
+msgid "``script_text_editor/goto_previous_bookmark``"
+msgstr "``script_text_editor/goto_previous_bookmark``"
+
+msgid "Go to Function"
+msgstr "Přejít na funkci"
+
+msgid ":kbd:`Ctrl + Cmd + J`"
+msgstr ":kbd:`Ctrl + Cmd + J`"
+
+msgid "``script_text_editor/goto_function``"
+msgstr "``script_text_editor/goto_function``"
+
+msgid "Go to Line"
+msgstr "Jít na řádek"
+
+msgid ":kbd:`Ctrl + L`"
+msgstr ":kbd:`Ctrl + L`"
+
+msgid ":kbd:`Cmd + L`"
+msgstr ":kbd:`Cmd + L`"
+
+msgid "``script_text_editor/goto_line``"
+msgstr "``script_text_editor/goto_line``"
+
+msgid "Toggle Breakpoint"
+msgstr "Přepnout breakpoint"
+
+msgid ":kbd:`F9`"
+msgstr ":kbd:`F9`"
+
+msgid "``script_text_editor/toggle_breakpoint``"
+msgstr "``script_text_editor/toggle_breakpoint``"
+
+msgid "Remove All Breakpoints"
+msgstr "Odstranit všechny breakpointy"
+
+msgid ":kbd:`Ctrl + Shift + F9`"
+msgstr ":kbd:`Ctrl + Shift + F9`"
+
+msgid ":kbd:`Cmd + Shift + F9`"
+msgstr ":kbd:`Cmd + Shift + F9`"
+
+msgid "``script_text_editor/remove_all_breakpoints``"
+msgstr "``script_text_editor/remove_all_breakpoints``"
+
+msgid "Go to Next Breakpoint"
+msgstr "Přejít na další breakpoint"
+
+msgid ":kbd:`Ctrl + .`"
+msgstr ":kbd:`Ctrl + .`"
+
+msgid "``script_text_editor/goto_next_breakpoint``"
+msgstr "``script_text_editor/goto_next_breakpoint``"
+
+msgid "Go to Previous Breakpoint"
+msgstr "Přejít na předchozí breakpoint"
+
+msgid ":kbd:`Ctrl + ,`"
+msgstr ":kbd:`Ctrl + ,`"
+
+msgid ":kbd:`Cmd + ,`"
+msgstr ":kbd:`Cmd + ,`"
+
+msgid "``script_text_editor/goto_previous_breakpoint``"
+msgstr "``script_text_editor/goto_previous_breakpoint``"
+
+msgid "Contextual Help"
+msgstr "Kontextová nápověda"
+
+msgid ":kbd:`Alt + F1`"
+msgstr ":kbd:`Alt + F1`"
+
+msgid ":kbd:`Alt + Shift + Space`"
+msgstr ":kbd:`Alt + Shift + Space`"
+
+msgid "``script_text_editor/contextual_help``"
+msgstr "``script_text_editor/contextual_help``"
+
+msgid "Script Editor"
+msgstr "Editor skriptů"
+
+msgid "``script_editor/find``"
+msgstr "``script_editor/find``"
+
+msgid "``script_editor/find_next``"
+msgstr "``script_editor/find_next``"
+
+msgid "``script_editor/find_previous``"
+msgstr "``script_editor/find_previous``"
+
+msgid "``script_editor/find_in_files``"
+msgstr "``script_editor/find_in_files``"
+
+msgid ":kbd:`Shift + Alt + Up Arrow`"
+msgstr ":kbd:`Shift + Alt + Up Arrow`"
+
+msgid "``script_editor/window_move_up``"
+msgstr "``script_editor/window_move_up``"
+
+msgid ":kbd:`Shift + Alt + Down Arrow`"
+msgstr ":kbd:`Shift + Alt + Down Arrow`"
+
+msgid "``script_editor/window_move_down``"
+msgstr "``script_editor/window_move_down``"
+
+msgid "Next Script"
+msgstr "Další skript"
+
+msgid ":kbd:`Ctrl + Shift + .`"
+msgstr ":kbd:`Ctrl + Shift + .`"
+
+msgid ":kbd:`Cmd + Shift + .`"
+msgstr ":kbd:`Cmd + Shift + .`"
+
+msgid "``script_editor/next_script``"
+msgstr "``script_editor/next_script``"
+
+msgid "Previous Script"
+msgstr "Předchozí skript"
+
+msgid ":kbd:`Ctrl + Shift + ,`"
+msgstr ":kbd:`Ctrl + Shift + ,`"
+
+msgid ":kbd:`Cmd + Shift + ,`"
+msgstr ":kbd:`Cmd + Shift + ,`"
+
+msgid "``script_editor/prev_script``"
+msgstr "``script_editor/prev_script``"
+
+msgid "Reopen Closed Script"
+msgstr "Znovu otevřít zavřený skript"
+
+msgid "``script_editor/reopen_closed_script``"
+msgstr "``script_editor/reopen_closed_script``"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid ":kbd:`Ctrl + Alt + S`"
+msgstr ":kbd:`Ctrl + Alt + S`"
+
+msgid ":kbd:`Cmd + Alt + S`"
+msgstr ":kbd:`Cmd + Alt + S`"
+
+msgid "``script_editor/save``"
+msgstr "``script_editor/save``"
+
+msgid "Save All"
+msgstr "Uložit vše"
+
+msgid "``script_editor/save_all``"
+msgstr "``script_editor/save_all``"
+
+msgid "Soft Reload Script"
+msgstr "Lehký restart skriptu"
+
+msgid "``script_editor/reload_script_soft``"
+msgstr "``script_editor/reload_script_soft``"
+
+msgid "History Previous"
+msgstr "Historie předchozí"
+
+msgid ":kbd:`Alt + Left Arrow`"
+msgstr ":kbd:`Alt + Left Arrow`"
+
+msgid "``script_editor/history_previous``"
+msgstr "``script_editor/history_previous``"
+
+msgid "History Next"
+msgstr "Historie další"
+
+msgid ":kbd:`Alt + Right Arrow`"
+msgstr ":kbd:`Alt + Right Arrow`"
+
+msgid "``script_editor/history_next``"
+msgstr "``script_editor/history_next``"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid ":kbd:`Ctrl + W`"
+msgstr ":kbd:`Ctrl + W`"
+
+msgid ":kbd:`Cmd + W`"
+msgstr ":kbd:`Cmd + W`"
+
+msgid "``script_editor/close_file``"
+msgstr "``script_editor/close_file``"
+
+msgid "Run"
+msgstr "Spustit"
+
+msgid ":kbd:`Ctrl + Shift + X`"
+msgstr ":kbd:`Ctrl + Shift + X`"
+
+msgid ":kbd:`Cmd + Shift + X`"
+msgstr ":kbd:`Cmd + Shift + X`"
+
+msgid "``script_editor/run_file``"
+msgstr "``script_editor/run_file``"
+
+msgid "Toggle Scripts Panel"
+msgstr "Přepnout panel skriptů"
+
+msgid ":kbd:`Ctrl + \\\\`"
+msgstr ":kbd:`Ctrl + \\\\`"
+
+msgid ":kbd:`Cmd + \\\\`"
+msgstr ":kbd:`Cmd + \\\\`"
+
+msgid "``script_editor/toggle_scripts_panel``"
+msgstr "``script_editor/toggle_scripts_panel``"
+
+msgid "``script_editor/zoom_in``"
+msgstr "``script_editor/zoom_in``"
+
+msgid "``script_editor/zoom_out``"
+msgstr "``script_editor/zoom_out``"
+
+msgid "Reset Zoom"
+msgstr "Obnovit původní přiblížení"
+
+msgid "``script_editor/reset_zoom``"
+msgstr "``script_editor/reset_zoom``"
+
+msgid "Visual Script Editor"
+msgstr "Editor vizuálního skriptu"
+
+msgid "Find Node Type"
+msgstr "Vyhledat typ uzlu"
+
+msgid "``visual_script_editor/find_node_type``"
+msgstr "``visual_script_editor/find_node_type``"
+
+msgid "Copy Nodes"
+msgstr "Zkopírovat uzly"
+
+msgid "``visual_script_editor/copy_nodes``"
+msgstr "``visual_script_editor/copy_nodes``"
+
+msgid "Cut Nodes"
+msgstr "Vyjmout uzly"
+
+msgid "``visual_script_editor/cut_nodes``"
+msgstr "``visual_script_editor/cut_nodes``"
+
+msgid "Paste Nodes"
+msgstr "Vložit uzly"
+
+msgid "``visual_script_editor/paste_nodes``"
+msgstr "``visual_script_editor/paste_nodes``"
+
+msgid "Delete Selected"
+msgstr "Smazat vybraný"
+
+msgid ":kbd:`Del`"
+msgstr ":kbd:`Del`"
+
+msgid ":kbd:`Cmd + BkSp`"
+msgstr ":kbd:`Cmd + BkSp`"
+
+msgid "``visual_script_editor/delete_selected``"
+msgstr "``visual_script_editor/delete_selected``"
+
+msgid "Make Function"
+msgstr "Vytvořit funkci"
+
+msgid ":kbd:`Ctrl + G`"
+msgstr ":kbd:`Ctrl + G`"
+
+msgid "``visual_script_editor/create_function``"
+msgstr "``visual_script_editor/create_function``"
+
+msgid "Edit Member"
+msgstr "Upravit členy"
+
+msgid ":kbd:`Ctrl + E`"
+msgstr ":kbd:`Ctrl + E`"
+
+msgid ":kbd:`Cmd + E`"
+msgstr ":kbd:`Cmd + E`"
+
+msgid "``visual_script_editor/edit_member``"
+msgstr "``visual_script_editor/edit_member``"
+
+msgid "Refresh Graph"
+msgstr "Obnovit graf"
+
+msgid "``visual_script_editor/refresh_nodes``"
+msgstr "``visual_script_editor/refresh_nodes``"
+
+msgid "``visual_script_editor/toggle_breakpoint``"
+msgstr "``visual_script_editor/toggle_breakpoint``"
+
+msgid "Editor Output"
+msgstr "Výstup editoru"
+
+msgid "Copy Selection"
+msgstr "Kopírovat výběr"
+
+msgid "``editor/copy_output``"
+msgstr "``editor/copy_output``"
+
+msgid "Clear Output"
+msgstr "Vymazat výstup"
+
+msgid "``editor/clear_output``"
+msgstr "``editor/clear_output``"
+
+msgid "Debugger"
+msgstr "Ladicí program"
+
+msgid "Step Into"
+msgstr "Vstoupit do"
+
+msgid ":kbd:`F11`"
+msgstr ":kbd:`F11`"
+
+msgid "``debugger/step_into``"
+msgstr "``debugger/step_into``"
+
+msgid "Step Over"
+msgstr "Přeskočit"
+
+msgid ":kbd:`F10`"
+msgstr ":kbd:`F10`"
+
+msgid "``debugger/step_over``"
+msgstr "``debugger/step_over``"
+
+msgid "Continue"
+msgstr "Pokračovat"
+
+msgid ":kbd:`F12`"
+msgstr ":kbd:`F12`"
+
+msgid "``debugger/continue``"
+msgstr "``debugger/continue``"
+
+msgid "File Dialog"
+msgstr "Souborový dialog"
+
+msgid "Go Back"
+msgstr "Jít zpět"
+
+msgid "``file_dialog/go_back``"
+msgstr "``file_dialog/go_back``"
+
+msgid "Go Forward"
+msgstr "Jit dopředu"
+
+msgid "``file_dialog/go_forward``"
+msgstr "``file_dialog/go_forward``"
+
+msgid "Go Up"
+msgstr "Jít o úroveň výš"
+
+msgid "``file_dialog/go_up``"
+msgstr "``file_dialog/go_up``"
+
+msgid "Refresh"
+msgstr "Obnovit"
+
+msgid "``file_dialog/refresh``"
+msgstr "``file_dialog/refresh``"
+
+msgid "Toggle Hidden Files"
+msgstr "Zobrazit skryté soubory"
+
+msgid ":kbd:`Ctrl + H`"
+msgstr ":kbd:`Ctrl + H`"
+
+msgid ":kbd:`Cmd + H`"
+msgstr ":kbd:`Cmd + H`"
+
+msgid "``file_dialog/toggle_hidden_files``"
+msgstr "``file_dialog/toggle_hidden_files``"
+
+msgid "Toggle Favorite"
+msgstr "Zobrazit oblíbené"
+
+msgid "``file_dialog/toggle_favorite``"
+msgstr "``file_dialog/toggle_favorite``"
+
+msgid "Toggle Mode"
+msgstr "Přepnout režim"
+
+msgid ":kbd:`Alt + V`"
+msgstr ":kbd:`Alt + V`"
+
+msgid "``file_dialog/toggle_mode``"
+msgstr "``file_dialog/toggle_mode``"
+
+msgid "Create Folder"
+msgstr "Vytvořit složku"
+
+msgid ":kbd:`Ctrl + N`"
+msgstr ":kbd:`Ctrl + N`"
+
+msgid ":kbd:`Cmd + N`"
+msgstr ":kbd:`Cmd + N`"
+
+msgid "``file_dialog/create_folder``"
+msgstr "``file_dialog/create_folder``"
+
+msgid "Delete"
+msgstr "Odstranit"
+
+msgid "``file_dialog/delete``"
+msgstr "``file_dialog/delete``"
+
+msgid "Focus Path"
+msgstr "Zvýraznit cestu"
+
+msgid ":kbd:`Cmd + D`"
+msgstr ":kbd:`Cmd + D`"
+
+msgid "``file_dialog/focus_path``"
+msgstr "``file_dialog/focus_path``"
+
+msgid "Move Favorite Up"
+msgstr "Přesunout oblíbenou položku nahoru"
+
+msgid ":kbd:`Ctrl + Up Arrow`"
+msgstr ":kbd:`Ctrl + Up Arrow`"
+
+msgid ":kbd:`Cmd + Up Arrow`"
+msgstr ":kbd:`Cmd + Up Arrow`"
+
+msgid "``file_dialog/move_favorite_up``"
+msgstr "``file_dialog/move_favorite_up``"
+
+msgid "Move Favorite Down"
+msgstr "Přesunout oblíbenou položku dolů"
+
+msgid ":kbd:`Ctrl + Down Arrow`"
+msgstr ":kbd:`Ctrl + Down Arrow`"
+
+msgid ":kbd:`Cmd + Down Arrow`"
+msgstr ":kbd:`Cmd + Down Arrow`"
+
+msgid "``file_dialog/move_favorite_down``"
+msgstr "``file_dialog/move_favorite_down``"
+
+msgid "FileSystem Dock"
+msgstr "Souborový systém"
+
+msgid "Copy Path"
+msgstr "Kopírovat cestu"
+
+msgid "``filesystem_dock/copy_path``"
+msgstr "``filesystem_dock/copy_path``"
+
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+msgid "``filesystem_dock/duplicate``"
+msgstr "``filesystem_dock/duplicate``"
+
+msgid "``filesystem_dock/delete``"
+msgstr "``filesystem_dock/delete``"
+
+msgid "Scene Tree Dock"
+msgstr "Dok stromu scény"
+
+msgid "Add Child Node"
+msgstr "Přidat uzel"
+
+msgid "``scene_tree/add_child_node``"
+msgstr "``scene_tree/add_child_node``"
+
+msgid "Batch Rename"
+msgstr "Dávkové přejmenování"
+
+msgid ":kbd:`Cmd + F2`"
+msgstr ":kbd:`Cmd + F2`"
+
+msgid "``scene_tree/batch_rename``"
+msgstr "``scene_tree/batch_rename``"
+
+msgid "Copy Node Path"
+msgstr "Kopírovat cestu k uzlu"
+
+msgid "``scene_tree/copy_node_path``"
+msgstr "``scene_tree/copy_node_path``"
+
+msgid "``scene_tree/delete``"
+msgstr "``scene_tree/delete``"
+
+msgid "Force Delete"
+msgstr "Vynutit smazání"
+
+msgid ":kbd:`Shift + Del`"
+msgstr ":kbd:`Shift + Del`"
+
+msgid "``scene_tree/delete_no_confirm``"
+msgstr "``scene_tree/delete_no_confirm``"
+
+msgid "``scene_tree/duplicate``"
+msgstr "``scene_tree/duplicate``"
+
+msgid "``scene_tree/move_up``"
+msgstr "``scene_tree/move_up``"
+
+msgid "``scene_tree/move_down``"
+msgstr "``scene_tree/move_down``"
+
+msgid "Animation Track Editor"
+msgstr "Editor animace stop"
+
+msgid "Duplicate Selection"
+msgstr "Duplikovat výběr"
+
+msgid "``animation_editor/duplicate_selection``"
+msgstr "``animation_editor/duplicate_selection``"
+
+msgid "Duplicate Transposed"
+msgstr "Duplikovat transponované"
+
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr ":kbd:`Ctrl + Shift + D`"
+
+msgid ":kbd:`Cmd + Shift + D`"
+msgstr ":kbd:`Cmd + Shift + D`"
+
+msgid "``animation_editor/duplicate_selection_transposed``"
+msgstr "``animation_editor/duplicate_selection_transposed``"
+
+msgid "Delete Selection"
+msgstr "Smazat vyběr"
+
+msgid "``animation_editor/delete_selection``"
+msgstr "``animation_editor/delete_selection``"
+
+msgid "Go to Next Step"
+msgstr "Přejít k dalšímu kroku"
+
+msgid ":kbd:`Ctrl + Right Arrow`"
+msgstr ":kbd:`Ctrl + Right Arrow`"
+
+msgid ":kbd:`Cmd + Right Arrow`"
+msgstr ":kbd:`Cmd + Right Arrow`"
+
+msgid "``animation_editor/goto_next_step``"
+msgstr "``animation_editor/goto_next_step``"
+
+msgid "Go to Previous Step"
+msgstr "Přejít k předchozímu kroku"
+
+msgid ":kbd:`Ctrl + Left Arrow`"
+msgstr ":kbd:`Ctrl + Left Arrow`"
+
+msgid ":kbd:`Cmd + Left Arrow`"
+msgstr ":kbd:`Cmd + Left Arrow`"
+
+msgid "``animation_editor/goto_prev_step``"
+msgstr "``animation_editor/goto_prev_step``"
+
+msgid "Tile Map Editor"
+msgstr "Editor mapy dlaždic"
+
+msgid "Find Tile"
+msgstr "Najít dlaždici"
+
+msgid "``tile_map_editor/find_tile``"
+msgstr "``tile_map_editor/find_tile``"
+
+msgid "Pick Tile"
+msgstr "Vybrat dlaždici"
+
+msgid ":kbd:`I`"
+msgstr ":kbd:`I`"
+
+msgid "``tile_map_editor/pick_tile``"
+msgstr "``tile_map_editor/pick_tile``"
+
+msgid "Paint Tile"
+msgstr "Nakreslit dlaždici"
+
+msgid ":kbd:`P`"
+msgstr ":kbd:`P`"
+
+msgid "``tile_map_editor/paint_tile``"
+msgstr "``tile_map_editor/paint_tile``"
+
+msgid "Bucket Fill"
+msgstr "Vyplnit barvou"
+
+msgid "``tile_map_editor/bucket_fill``"
+msgstr "``tile_map_editor/bucket_fill``"
+
+msgid "Transpose"
+msgstr "Transponovat"
+
+msgid "``tile_map_editor/transpose``"
+msgstr "``tile_map_editor/transpose``"
+
+msgid "Flip Horizontally"
+msgstr "Převrátit horizontálně"
+
+msgid ":kbd:`X`"
+msgstr ":kbd:`X`"
+
+msgid "``tile_map_editor/flip_horizontal``"
+msgstr "``tile_map_editor/flip_horizontal``"
+
+msgid "Flip Vertically"
+msgstr "Převrátit vertikálně"
+
+msgid ":kbd:`Z`"
+msgstr ":kbd:`Z`"
+
+msgid "``tile_map_editor/flip_vertical``"
+msgstr "``tile_map_editor/flip_vertical``"
+
+msgid "Rotate Left"
+msgstr "Otočit doleva"
+
+msgid "``tile_map_editor/rotate_left``"
+msgstr "``tile_map_editor/rotate_left``"
+
+msgid "Rotate Right"
+msgstr "Otočit doprava"
+
+msgid "``tile_map_editor/rotate_right``"
+msgstr "``tile_map_editor/rotate_right``"
+
+msgid "Clear Transform"
+msgstr "Promazat transformaci"
+
+msgid "``tile_map_editor/clear_transform``"
+msgstr "``tile_map_editor/clear_transform``"
+
+msgid "Select"
+msgstr "Vybrat"
+
+msgid ":kbd:`M`"
+msgstr ":kbd:`M`"
+
+msgid "``tile_map_editor/select``"
+msgstr "``tile_map_editor/select``"
+
+msgid "Cut Selection"
+msgstr "Výběr řezu"
+
+msgid "``tile_map_editor/cut_selection``"
+msgstr "``tile_map_editor/cut_selection``"
+
+msgid "``tile_map_editor/copy_selection``"
+msgstr "``tile_map_editor/copy_selection``"
+
+msgid "Erase Selection"
+msgstr "Vymazat označené"
+
+msgid "``tile_map_editor/erase_selection``"
+msgstr "``tile_map_editor/erase_selection``"
+
+msgid "Tileset Editor"
+msgstr "Editor dlaždic"
+
+msgid "Next Coordinate"
+msgstr "Další koordináta"
+
+msgid "``tileset_editor/next_shape``"
+msgstr "``tileset_editor/next_shape``"
+
+msgid "Previous Coordinate"
+msgstr "Předchozí koordináta"
+
+msgid ":kbd:`PgUp`"
+msgstr ":kbd:`PgUp`"
+
+msgid "``tileset_editor/previous_shape``"
+msgstr "``tileset_editor/previous_shape``"
+
+msgid "Region Mode"
+msgstr "Režim oblasti"
+
+msgid ":kbd:`1`"
+msgstr ":kbd:`1`"
+
+msgid "``tileset_editor/editmode_region``"
+msgstr "``tileset_editor/editmode_region``"
+
+msgid "Collision Mode"
+msgstr "Kolizní režim"
+
+msgid ":kbd:`2`"
+msgstr ":kbd:`2`"
+
+msgid "``tileset_editor/editmode_collision``"
+msgstr "``tileset_editor/editmode_collision``"
+
+msgid "Occlusion Mode"
+msgstr "Režim okluze"
+
+msgid ":kbd:`3`"
+msgstr ":kbd:`3`"
+
+msgid "``tileset_editor/editmode_occlusion``"
+msgstr "``tileset_editor/editmode_occlusion``"
+
+msgid "Navigation Mode"
+msgstr "Navigační režim"
+
+msgid ":kbd:`4`"
+msgstr ":kbd:`4`"
+
+msgid "``tileset_editor/editmode_navigation``"
+msgstr "``tileset_editor/editmode_navigation``"
+
+msgid "Bitmask Mode"
+msgstr "Režim bitové masky"
+
+msgid ":kbd:`5`"
+msgstr ":kbd:`5`"
+
+msgid "``tileset_editor/editmode_bitmask``"
+msgstr "``tileset_editor/editmode_bitmask``"
+
+msgid "Priority Mode"
+msgstr "Prioritní mód"
+
+msgid ":kbd:`6`"
+msgstr ":kbd:`6`"
+
+msgid "``tileset_editor/editmode_priority``"
+msgstr "``tileset_editor/editmode_priority``"
+
+msgid "Icon Mode"
+msgstr "Režim ikony"
+
+msgid ":kbd:`7`"
+msgstr ":kbd:`7`"
+
+msgid "``tileset_editor/editmode_icon``"
+msgstr "``tileset_editor/editmode_icon``"
+
+msgid "Z Index Mode"
+msgstr "Režim Z-indexu"
+
+msgid ":kbd:`8`"
+msgstr ":kbd:`8`"
+
+msgid "``tileset_editor/editmode_z_index``"
+msgstr "``tileset_editor/editmode_z_index``"

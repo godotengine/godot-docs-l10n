@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Your first 2D shader"
+msgstr "Ваша перша гра"
+
+msgid "Introduction"
+msgstr "Вступ"
+
+msgid ""
+"Shaders are special programs that execute on the GPU and are used for "
+"rendering graphics. All modern rendering is done with shaders. For a more "
+"detailed description of what shaders are please see :ref:`What are shaders "
+"<doc_introduction_to_shaders>`."
+msgstr ""
+
+msgid ""
+"This tutorial will focus on the practical aspects of writing shader programs "
+"by walking you through the process of writing a shader with both vertex and "
+"fragment functions. This tutorial targets absolute beginners to shaders."
+msgstr ""
+
+msgid ""
+"If you have experience writing shaders and are just looking for an overview "
+"of how shaders work in Godot, see the :ref:`Shading Reference <toc-shading-"
+"reference>`."
+msgstr ""
+
+msgid "Setup"
+msgstr "Налаштування"
+
+#, fuzzy
+msgid ""
+":ref:`CanvasItem <doc_canvas_item_shader>` shaders are used to draw all 2D"
+msgstr ":ref:`doc_canvas_item_shader`"
+
+msgid ""
+"objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
+"to draw all 3D objects."
+msgstr ""
+
+msgid ""
+"In order to use a shader it must be attached inside a :ref:`Material "
+"<class_material>` which must be attached to an object. Materials are a type "
+"of :ref:`Resource <doc_resources>`. To draw multiple objects with the same "
+"material, the material must be attached to each object."
+msgstr ""
+
+msgid ""
+"All objects derived from a :ref:`CanvasItem <class_canvasitem>` have a "
+"material property. This includes all :ref:`GUI elements <class_Control>`, :"
+"ref:`Sprites <class_sprite>`, :ref:`TileMaps <class_tilemap>`, :ref:"
+"`MeshInstance2Ds <class_meshinstance2d>` etc. They also have an option to "
+"inherit their parent's material. This can be useful if you have a large "
+"number of nodes that you want to use the same material."
+msgstr ""
+
+msgid ""
+"To begin, create a Sprite node. You can use any CanvasItem, but for this "
+"tutorial we will use a Sprite."
+msgstr ""
+
+msgid ""
+"In the Inspector, click beside \"Texture\" where it says \"[empty]\" and "
+"select \"Load\", then select \"Icon.png\". For new projects, this is the "
+"Godot icon. You should now see the icon in the viewport."
+msgstr ""
+
+msgid ""
+"Next, look down in the Inspector, under the CanvasItem section, click beside "
+"\"Material\" and select \"New ShaderMaterial\". This creates a new Material "
+"resource. Click on the sphere that appears. Godot currently doesn't know "
+"whether you are writing a CanvasItem Shader or a Spatial Shader and it "
+"previews the output of spatial shaders. So what you are seeing is the output "
+"of the default Spatial Shader."
+msgstr ""
+
+msgid ""
+"Click beside \"Shader\" and select \"New Shader\". Finally, click on the new "
+"shader resource and the shader editor will open. You are now ready to begin "
+"writing your first shader."
+msgstr ""
+
+msgid "Your first CanvasItem shader"
+msgstr ""
+
+msgid ""
+"In Godot, all shaders start with a line specifying what type of shader they "
+"are. It uses the following format:"
+msgstr ""
+
+msgid ""
+"Because we are writing a CanvasItem shader, we specify ``canvas_item`` in "
+"the first line. All our code will go beneath this declaration."
+msgstr ""
+
+msgid ""
+"This line tells the engine which built-in variables and functionality to "
+"supply you with."
+msgstr ""
+
+msgid ""
+"In Godot you can override three functions to control how the shader "
+"operates; ``vertex``, ``fragment``, and ``light``. This tutorial will walk "
+"you through writing a shader with both vertex and fragment functions. Light "
+"functions are significantly more complex than vertex and fragment functions "
+"and so will not be covered here."
+msgstr ""
+
+msgid "Your first fragment function"
+msgstr ""
+
+msgid ""
+"The fragment function runs for every pixel in a Sprite and determines what "
+"color that pixel should be."
+msgstr ""
+
+msgid ""
+"They are restricted to the pixels covered by the Sprite, that means you "
+"cannot use one to, for example, create an outline around a Sprite."
+msgstr ""
+
+msgid ""
+"The most basic fragment function does nothing except assign a single color "
+"to every pixel."
+msgstr ""
+
+msgid ""
+"We do so by writing a ``vec4`` to the built-in variable ``COLOR``. ``vec4`` "
+"is shorthand for constructing a vector with 4 numbers. For more information "
+"about vectors see the :ref:`Vector math tutorial <doc_vector_math>` "
+"``COLOR`` is both an input variable to the fragment function and the final "
+"output from it."
+msgstr ""
+
+msgid ""
+"Congratulations! You're done. You have successfully written your first "
+"shader in Godot."
+msgstr ""
+
+msgid "Now let's make things more complex."
+msgstr ""
+
+msgid ""
+"There are many inputs to the fragment function that you can use for "
+"calculating ``COLOR``. ``UV`` is one of them. UV coordinates are specified "
+"in your Sprite (without you knowing it!) and they tell the shader where to "
+"read from textures for each part of the mesh."
+msgstr ""
+
+msgid ""
+"In the fragment function you can only read from ``UV``, but you can use it "
+"in other functions or to assign values to ``COLOR`` directly."
+msgstr ""
+
+msgid "``UV`` varies between 0-1 from left-right and from top-bottom."
+msgstr ""
+
+msgid "Using ``TEXTURE`` built-in"
+msgstr ""
+
+msgid ""
+"When you want to adjust a color in a Sprite you cannot just adjust the color "
+"from the texture manually like in the code below."
+msgstr ""
+
+msgid ""
+"The default fragment function reads from a texture and displays it. When you "
+"overwrite the default fragment function, you lose that functionality, so you "
+"have to implement it yourself. You read from textures using the ``texture`` "
+"function. Certain nodes, like Sprites, have a dedicated texture variable "
+"that can be accessed in the shader using ``TEXTURE``. Use it together with "
+"``UV`` and ``texture`` to draw the Sprite."
+msgstr ""
+
+msgid "Uniform input"
+msgstr ""
+
+msgid ""
+"Uniform input is used to pass data into a shader that will be the same "
+"across the entire shader."
+msgstr ""
+
+msgid ""
+"You can use uniforms by defining them at the top of your shader like so:"
+msgstr ""
+
+msgid ""
+"For more information about usage see the :ref:`Shading Language doc "
+"<doc_shading_language>`."
+msgstr ""
+
+msgid "Add a uniform to change the amount of blue in our Sprite."
+msgstr ""
+
+msgid ""
+"Now you can change the amount of blue in the Sprite from the editor. Look "
+"back at the Inspector under where you created your shader. You should see a "
+"section called \"Shader Param\". Unfold that section and you will see the "
+"uniform you just declared. If you change the value in the editor, it will "
+"overwrite the default value you provided in the shader."
+msgstr ""
+
+#, fuzzy
+msgid "Interacting with shaders from code"
+msgstr "Інтерполяція"
+
+msgid ""
+"You can change uniforms from code using the function ``set_shader_param()`` "
+"which is called on the node's material resource. With a Sprite node, the "
+"following code can be used to set the ``blue`` uniform."
+msgstr ""
+
+msgid ""
+"Note that the name of the uniform is a string. The string must match exactly "
+"with how it is written in the shader, including spelling and case."
+msgstr ""
+
+msgid "Your first vertex function"
+msgstr ""
+
+msgid "Now that we have a fragment function, let's write a vertex function."
+msgstr ""
+
+msgid ""
+"Use the vertex function to calculate where on the screen each vertex should "
+"end up."
+msgstr ""
+
+msgid ""
+"The most important variable in the vertex function is ``VERTEX``. Initially, "
+"it specifies the vertex coordinates in your model, but you also write to it "
+"to determine where to actually draw those vertices. ``VERTEX`` is a ``vec2`` "
+"that is initially presented in local-space (i.e. not relative to the camera, "
+"viewport, or parent nodes)."
+msgstr ""
+
+msgid "You can offset the vertices by directly adding to ``VERTEX``."
+msgstr ""
+
+msgid ""
+"Combined with the ``TIME`` built-in variable, this can be used for simple "
+"animation."
+msgstr ""
+
+msgid "Conclusion"
+msgstr "Висновки"
+
+msgid ""
+"At their core, shaders do what you have seen so far, they compute ``VERTEX`` "
+"and ``COLOR``. It is up to you to dream up more complex mathematical "
+"strategies for assigning values to those variables."
+msgstr ""
+
+msgid ""
+"For inspiration, take a look at some of the more advanced shader tutorials, "
+"and look at other sites like `Shadertoy <https://www.shadertoy.com/results?"
+"query=&sort=popular&from=10&num=4>`_ and `The Book of Shaders <https://"
+"thebookofshaders.com>`_."
+msgstr ""

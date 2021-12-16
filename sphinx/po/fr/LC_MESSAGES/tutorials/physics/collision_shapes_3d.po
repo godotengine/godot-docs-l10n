@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:4
 msgid "Collision shapes (3D)"
 msgstr "Formes de collision (3D)"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:6
 msgid "This guide explains:"
 msgstr "Ce guide explique :"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:8
 msgid "The types of collision shapes available in 3D in Godot."
 msgstr "Les types de formes de collision disponibles en 3D dans Godot."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:9
 msgid "Using a convex or a concave mesh as a collision shape."
 msgstr "Utilisation d'un maillage convexe ou concave comme forme de collision."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:10
 msgid "Performance considerations regarding 3D collisions."
 msgstr "Considérations de performance concernant les collisions 3D."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:12
 msgid ""
 "Godot provides many kinds of collision shapes, with different performance "
 "and accuracy tradeoffs."
@@ -45,7 +39,6 @@ msgstr ""
 "Godot fournit de nombreux types de formes de collision, avec différents "
 "compromis de performance et de précision."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:15
 msgid ""
 "You can define the shape of a :ref:`class_PhysicsBody` by adding one or "
 "more :ref:`CollisionShapes <class_CollisionShape>` as child nodes. Note that "
@@ -57,7 +50,6 @@ msgstr ""
 "Notez que vous devez ajouter une *resource* :ref:`class_Shape` aux nœuds "
 "forme de collision dans le dock Inspecteur."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:22
 msgid ""
 "When you add multiple collision shapes to a single PhysicsBody, you don't "
 "have to worry about them overlapping. They won't \"collide\" with each other."
@@ -66,27 +58,21 @@ msgstr ""
 "vous n'avez pas à vous soucier de leur chevauchement. Elles ne se "
 "\"heurteront\" pas les unes les autres."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:26
 msgid "Primitive collision shapes"
 msgstr "Formes primitives de collision"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:28
 msgid "Godot provides the following primitive collision shape types:"
 msgstr "Godot fournit les types de formes de collision primitives suivants :"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:30
 msgid ":ref:`class_BoxShape`"
 msgstr ":ref:`class_BoxShape`"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:31
 msgid ":ref:`class_SphereShape`"
 msgstr ":ref:`class_SphereShape`"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:32
 msgid ":ref:`class_CapsuleShape`"
 msgstr ":ref:`class_CapsuleShape`"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
 msgid ""
 ":ref:`class_CylinderShape`. It is only available when using the Bullet "
 "physics engine."
@@ -94,7 +80,6 @@ msgstr ""
 ":ref:`class_CylinderShape`. Elle n'est disponible que si vous utilisez le "
 "moteur physique Bullet."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:36
 msgid ""
 "You can represent the collision of most smaller objects using one or more "
 "primitive shapes. However, for more complex objects, such as a large ship or "
@@ -107,7 +92,6 @@ msgstr ""
 "besoin de formes convexes ou concaves à la place. Plus d'informations à ce "
 "sujet ci-dessous."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:40
 msgid ""
 "We recommend favoring primitive shapes for dynamic objects such as "
 "RigidBodies and KinematicBodies as their behavior is the most reliable. They "
@@ -117,11 +101,9 @@ msgstr ""
 "dynamiques tels que les RigidBodies et KinematicBodies car leur comportement "
 "est le plus fiable. Elles offrent souvent aussi de meilleures performances."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:45
 msgid "Convex collision shapes"
 msgstr "Formes de collision convexes"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:47
 msgid ""
 ":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
 "between primitive collision shapes and concave collision shapes. They can "
@@ -140,7 +122,6 @@ msgstr ""
 "est *concave*. Pour définir un objet concave avec une forme de collision "
 "unique, vous devez utiliser une forme de collision concave."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:54
 msgid ""
 "Depending on the object's complexity, you may get better performance by "
 "using multiple convex shapes instead of a concave collision shape. Godot "
@@ -158,7 +139,6 @@ msgstr ""
 "complexes tels qu'un niveau entier, nous recommandons d'utiliser des formes "
 "concaves à la place."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:61
 msgid ""
 "You can generate one or several convex collision shapes from the editor by "
 "selecting a MeshInstance and using the **Mesh** menu at the top of the 3D "
@@ -168,7 +148,6 @@ msgstr ""
 "de l'éditeur en sélectionnant un MeshInstance et en utilisant le menu "
 "**Mesh** en haut de la vue 3D. L'éditeur expose deux modes de génération :"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:65
 msgid ""
 "**Create Single Convex Collision Sibling** uses the Quickhull algorithm. It "
 "creates one CollisionShape node with an automatically generated convex "
@@ -180,7 +159,6 @@ msgstr ""
 "automatiquement. Comme il ne génère qu'une seule forme, il offre de bonnes "
 "performances et est idéal pour les petits objets."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:70
 msgid ""
 "**Create Multiple Convex Collision Siblings** uses the V-HACD algorithm. It "
 "creates several CollisionShape nodes, each with a convex shape. Since it "
@@ -195,11 +173,9 @@ msgstr ""
 "il sera probablement plus rapide que l'utilisation d'une seule forme de "
 "collision concave."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:77
 msgid "Concave or trimesh collision shapes"
 msgstr "Formes de collision concaves ou trimesh"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:79
 msgid ""
 ":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "
 "trimesh collision shapes, can take any form, from a few triangles to "
@@ -216,7 +192,6 @@ msgstr ""
 "StaticBodies.** Elles ne fonctionneront pas avec les KinematicBodies ou les "
 "RigidBodies, sauf si le mode de ces derniers est Static."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:87
 msgid ""
 "Even though concave shapes offer the most accurate *collision*, contact "
 "reporting can be less precise than primitive shapes."
@@ -224,7 +199,6 @@ msgstr ""
 "Même si les formes concaves offrent la *collision* la plus précise, les "
 "rapports de contact peuvent être moins précis que ceux des formes primitives."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:90
 msgid ""
 "When not using GridMaps for level design, concave shapes are the best "
 "approach for a level's collision. That said, if your level has small "
@@ -242,7 +216,6 @@ msgstr ""
 "automatiquement une forme de collision pour celui-ci. Plus d'informations à "
 "ce sujet ci-dessous"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:96
 msgid ""
 "Note that unlike primitive and convex shapes, a concave collision shape "
 "doesn't have an actual \"volume\". You can place objects both *outside* of "
@@ -252,7 +225,6 @@ msgstr ""
 "collision concave n'a pas de \"volume\" réel. Vous pouvez placer des objets "
 "aussi bien *à l'extérieur* de la forme que *à l'intérieur*."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:100
 msgid ""
 "You can generate a concave collision shape from the editor by selecting a "
 "MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The "
@@ -262,7 +234,6 @@ msgstr ""
 "sélectionnant un MeshInstance et en utilisant le menu **Mesh** en haut de la "
 "vue 3D. L'éditeur présente deux options :"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:104
 msgid ""
 "**Create Trimesh Static Body** is a convenient option. It creates a "
 "StaticBody containing a concave shape matching the mesh's geometry."
@@ -271,7 +242,6 @@ msgstr ""
 "StaticBody contenant une forme concave correspondant à la géométrie du "
 "maillage."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:107
 msgid ""
 "**Create Trimesh Collision Sibling** creates a CollisionShape node with a "
 "concave shape matching the mesh's geometry."
@@ -279,7 +249,6 @@ msgstr ""
 "**Create Trimesh Collision Sibling** crée un nœud CollisionShape avec une "
 "forme concave correspondant à la géométrie du maillage."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:112
 msgid ""
 "Suppose you need to make a RigidBody *slide* on a concave collision shape. "
 "In that case, you may notice that sometimes, the RigidBody will bump "
@@ -292,7 +261,6 @@ msgstr ""
 "Paramètres du projet** et activez **Physics > 3d > Smooth Trimesh "
 "Collision**."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:117
 msgid ""
 "Once you've enabled smooth trimesh collision, make sure the concave shape is "
 "the only shape of your StaticBody and that it's located at its origin "
@@ -304,7 +272,6 @@ msgstr ""
 "son origine sans aucune rotation. De cette façon, le RigidBody devrait "
 "parfaitement glisser sur le StaticBody."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:124
 msgid ""
 "Godot can generate collision shapes for your imported 3D scenes "
 "automatically. See :ref:`doc_importing_scenes_import_hints` in the "
@@ -314,11 +281,9 @@ msgstr ""
 "3D importées. Voir :ref:`doc_importing_scenes_import_hints` dans la "
 "documentation pour plus d'informations."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
 msgid "Performance caveats"
 msgstr "Mises en garde relatives aux performances"
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:131
 msgid ""
 "You aren't limited to a single collision shape per PhysicsBody. Still, we "
 "recommend keeping the number of shapes as low as possible to improve "
@@ -333,7 +298,6 @@ msgstr ""
 "déplacer, de faire tourner ou de mettre à l'échelle les formes de collision "
 "pour bénéficier des optimisations internes du moteur physique."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:137
 msgid ""
 "When using a single non-transformed collision shape in a StaticBody, the "
 "engine's *broad phase* algorithm can discard inactive PhysicsBodies. The "
@@ -349,7 +313,6 @@ msgstr ""
 "collision, la broad phase échouera. La narrow phase, qui est plus lente, "
 "doit alors effectuer un contrôle de collision avec chaque forme."
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:143
 msgid ""
 "If you run into performance issues, you may have to make tradeoffs in terms "
 "of accuracy. Most games out there don't have a 100% accurate collision. They "

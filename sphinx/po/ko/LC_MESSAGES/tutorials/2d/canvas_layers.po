@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:9
 #, fuzzy
 msgid ""
-"Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
-"<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
-"which is the base for all 2D nodes. CanvasItems can be arranged in trees. "
-"Each item will inherit its parent's transform. This means that when the "
-"parent is moved, the children will move too."
+":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
+"regular"
+msgstr ""
+":ref:`CanvasModulate<class_CanvasModulate>` 는 씬을 어둡게 하는데 사용됩니다."
+
+#, fuzzy
+msgid ""
+"2D nodes, such as :ref:`Node2D <class_Node2D>`, or `Control "
+"<class_Control>`. Both inherit from :ref:`CanvasItem <class_CanvasItem>`. "
+"You can arrange canvas items in trees. Each item will inherit its parent's "
+"transform: when the parent moves, its children move too."
 msgstr ""
 ":ref:`Node2D <class_Node2D>` 또는 :ref:`Control <class_Control>` 와 같은 2D "
 "노드는 모든 2D 노드의 기초가 되는 :ref:`CanvasItem <class_CanvasItem>` 로부"
 "터 상속됩니다. CanvasItems은 트리 형태로 배열될 수 있고 변형을 상속받게 됩니"
 "다. 이는 부모를 옮길 때 자손들도 함께 움직이는 것을 의미합니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:16
 #, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
-"children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
-"through it."
+"children of a :ref:`Viewport <class_Viewport>`, that display them."
 msgstr ""
 "이러한 노드는 뷰포트의 간접 또는 직접적인 자손으로 배치되고 이를 통해 보여집"
 "니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:19
 #, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
-"<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
-"ref:`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy "
-"it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
+"<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
+"`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy it "
+"contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
 "뷰포트는 :ref:`Viewport.canvas_transform "
@@ -64,14 +64,12 @@ msgstr ""
 "수 있습니다. :ref:`Camera2D <class_Camera2D>`와 같은 노드는 이 변형을 바꾸는 "
 "것에 의해 작동됩니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
-"Effects like scrolling are best achieved by manipulating the canvas "
-"transform property. This approach is more efficient than moving the root "
-"canvas item (and hence the whole scene)."
+"To achieve effects like scrolling, manipulating the canvas transform "
+"property is more efficient than moving the root canvas item and the entire "
+"scene with it."
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:28
 #, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
@@ -80,21 +78,18 @@ msgstr ""
 "그러나 일반적으로 게임이나 애플리케이션의 *모든 것*\\ 이 캔버스 변환의 대상"
 "이 되는 것을 원하지 않습니다. 예를 들면 다음과 같습니다:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr "**패럴랙스 배경**: 무대 나머지 부분보다 느리게 움직이는 배경."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
-"**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
-"on our view of the game world. We want a life counter, score display and "
-"other elements to retain their screen positions even when our view of the "
-"game world changes."
+"**UI**: Think of a user interface (UI) or Heads-up display (HUD) "
+"superimposed on our view of the game world. We want a life counter, score "
+"display and other elements to retain their screen positions even when our "
+"view of the game world changes."
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:34
 #, fuzzy
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
@@ -103,15 +98,12 @@ msgstr ""
 "**전환**: 전환에 사용되는 효과(페이드, 혼합)가 고정된 위치에 남아 있기를 원"
 "할 수 있습니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
 msgstr "단일 씬 트리에서 어떻게 이 문제들을 해결할 수 있을까요?"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:41
 #, fuzzy
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
@@ -129,19 +121,16 @@ msgstr ""
 "변형을 가지고 다른 레이어의  변형에 의존하지 않습니다. 이것은 세계가 움직이"
 "는 동안에 UI를 고정될 수 있게 해줍니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
 "An example of this is creating a parallax background. This can be done with "
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:54
 #, fuzzy
 msgid "Here's a diagram of how it looks:"
 msgstr "도표는 다음과 같습니다:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:58
 #, fuzzy
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
@@ -150,7 +139,6 @@ msgstr ""
 "CanvasLayer들은 트리 순서에 독립적이고 레이어 수에만 의존합니다. 그래서 필요"
 "할 때 인스턴스화 될 수 있습니다."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
 "CanvasLayers aren't necessary to control the drawing order of nodes. The "
 "standard way to ensuring that a node is  correctly drawn 'in front' or "

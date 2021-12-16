@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for iOS"
+msgstr ""
+
+msgid ""
+"These are the steps to load a Godot project in Xcode. This allows you to "
+"build and deploy to an iOS device, build a release for the App Store, and do "
+"everything else you can normally do with Xcode."
+msgstr ""
+
+msgid "Requirements"
+msgstr "Requisiti"
+
+msgid ""
+"You must export for iOS from a computer running macOS with Xcode installed."
+msgstr ""
+
+msgid ""
+"Download the Godot export templates. Use the Godot menu: Editor > Manage "
+"Export Templates"
+msgstr ""
+
+msgid "Export a Godot project to Xcode"
+msgstr ""
+
+msgid ""
+"In the Godot editor, open the **Export** window from the **Project** menu. "
+"When the Export window opens, click **Add..** and select **iOS**."
+msgstr ""
+
+msgid ""
+"The following export options are required. Leaving any blank will cause the "
+"exporter to throw an error:"
+msgstr ""
+
+msgid ""
+"In the **Application** category * **App Store Team ID** and (Bundle) "
+"**Identifier**"
+msgstr ""
+
+msgid "Everything in the **Required Icons** category"
+msgstr ""
+
+msgid "Everything in the **Landscape Launch Screens** category"
+msgstr ""
+
+msgid "Everything in the **Portrait Launch Screens** category"
+msgstr ""
+
+msgid ""
+"After you click **Export Project**, there are still two important options "
+"left:"
+msgstr ""
+
+msgid ""
+"**Path** is an empty folder that will contain the exported Xcode project "
+"files."
+msgstr ""
+
+msgid ""
+"**File** will be the name of the Xcode project and several project specific "
+"files and directories."
+msgstr ""
+
+msgid ""
+"This tutorial uses **exported_xcode_project_name**, but you will use your "
+"project's name. When you see **exported_xcode_project_name** in the "
+"following steps, replace it with the name you used instead."
+msgstr ""
+
+msgid ""
+"Avoid using spaces when you choose your **exported_xcode_project_name** as "
+"this can lead to corruption in your XCode project file."
+msgstr ""
+
+msgid "When the export completes, the output folder should look like this:"
+msgstr ""
+
+msgid ""
+"Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
+"like any other iOS app."
+msgstr ""
+
+msgid "Active development considerations"
+msgstr ""
+
+msgid ""
+"The above method creates an exported project that you can build for release, "
+"but you have to re-export every time you make a change in Godot."
+msgstr ""
+
+msgid ""
+"While developing, you can speed this process up by linking your Godot "
+"project files directly into your app."
+msgstr ""
+
+msgid "In the following example:"
+msgstr ""
+
+msgid ""
+"**exported_xcode_project_name** is the name of the exported iOS application "
+"(as above)."
+msgstr ""
+
+msgid "**godot_project_to_export** is the name of the Godot project."
+msgstr ""
+
+msgid ""
+"**godot_project_to_export** must not be the same as "
+"**exported_xcode_project_name** to prevent signing issues in Xcode."
+msgstr ""
+
+msgid "Steps to link a Godot project folder to Xcode"
+msgstr ""
+
+msgid "Start from an exported iOS project (follow the steps above)."
+msgstr ""
+
+msgid "In Finder, drag the Godot project folder into the Xcode file browser."
+msgstr ""
+
+msgid ""
+"3. In the dialog, make sure **Create folder references** is selected. This "
+"means you will be able to continue to edit your Godot project in its current "
+"location."
+msgstr ""
+
+msgid "See the **godot_project_to_export** folder in the Xcode file browser."
+msgstr ""
+
+msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
+msgstr ""
+
+msgid ""
+"6. Open **exported_xcode_project_name-Info.plist** and add a string property "
+"named **godot_path** (this is the real key name) with a value "
+"**godot_project_to_export** (this is the name of your project)"
+msgstr ""
+
+msgid ""
+"That's it! You can now edit your project in the Godot editor and build it in "
+"Xcode when you want to run it on a device."
+msgstr ""
+
+#, fuzzy
+msgid "Plugins for iOS"
+msgstr "Plugins"
+
+msgid ""
+"Special iOS plugins can be used in Godot. Check out the :ref:"
+"`doc_plugins_for_ios` page."
+msgstr ""

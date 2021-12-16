@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/io/saving_games.rst:4
 msgid "Saving games"
 msgstr "Сохранение игр"
 
-#: ../../docs/tutorials/io/saving_games.rst:7
 msgid "Introduction"
 msgstr "Введение"
 
-#: ../../docs/tutorials/io/saving_games.rst:9
 msgid ""
 "Save games can be complicated. For example, it may be desirable to store "
 "information from multiple objects across multiple levels. Advanced save game "
@@ -39,7 +36,6 @@ msgstr ""
 "информацию о произвольном количестве объектов. Это позволит масштабировать "
 "функцию сохранения по мере усложнения игры."
 
-#: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
@@ -47,11 +43,9 @@ msgstr ""
 "Если вы хотите сохранить конфигурацию пользователя, вы можете использовать "
 "для этого класс :ref:`class_ConfigFile`."
 
-#: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
 msgstr "Идентификация постоянных объектов"
 
-#: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
 "Firstly, we should identify what objects we want to keep between game "
 "sessions and what information we want to keep from those objects. For this "
@@ -63,18 +57,17 @@ msgstr ""
 "этом учебнике мы будем использовать группы для маркировки и обработки "
 "объектов для сохранения, но, конечно, возможны и другие методы."
 
-#: ../../docs/tutorials/io/saving_games.rst:28
+#, fuzzy
 msgid ""
-"We will start by adding objects we wish to save to the \"Persist\" group. As "
-"in the :ref:`doc_scripting_continued` tutorial, we can do this through "
-"either the GUI or script. Let's add the relevant nodes using the GUI:"
+"We will start by adding objects we wish to save to the \"Persist\" group. We "
+"can do this through either the GUI or script. Let's add the relevant nodes "
+"using the GUI:"
 msgstr ""
 "Мы начнем с добавления объектов, которые мы хотим сохранить, в группу "
 "\"Persist\". Как и в учебнике :ref:`doc_scripting_continued`, мы можем "
 "сделать это с помощью графического интерфейса или сценария. Давайте добавим "
 "соответствующие узлы с помощью графического интерфейса:"
 
-#: ../../docs/tutorials/io/saving_games.rst:34
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
@@ -83,11 +76,9 @@ msgstr ""
 "получить все объекты для сохранения, а затем сказать им всем сохраниться с "
 "помощью этого скрипта:"
 
-#: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"
 msgstr "Сериализация"
 
-#: ../../docs/tutorials/io/saving_games.rst:56
 msgid ""
 "The next step is to serialize the data. This makes it much easier to read "
 "from and store to disk. In this case, we're assuming each member of group "
@@ -107,7 +98,6 @@ msgstr ""
 "Наш узел должен содержать функцию сохранения, которая возвращает эти данные. "
 "Функция сохранения будет выглядеть следующим образом:"
 
-#: ../../docs/tutorials/io/saving_games.rst:119
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "value_of_variable }``, which will be useful when loading."
@@ -115,11 +105,9 @@ msgstr ""
 "Это дает нам словарь со стилем ``{\"имя_переменной\":value_of_variable }``, "
 "который будет полезен при загрузке."
 
-#: ../../docs/tutorials/io/saving_games.rst:124
 msgid "Saving and reading data"
 msgstr "Сохранение и чтение данных"
 
-#: ../../docs/tutorials/io/saving_games.rst:126
 msgid ""
 "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file "
 "so we can write to it or read from it. Now that we have a way to call our "
@@ -137,7 +125,6 @@ msgstr ""
 "собственным объектом, поэтому у нас есть простой способ извлечь данные из "
 "файла."
 
-#: ../../docs/tutorials/io/saving_games.rst:202
 msgid ""
 "Game saved! Loading is fairly simple as well. For that, we'll read each "
 "line, use parse_json() to read it back to a dict, and then iterate over the "
@@ -151,7 +138,6 @@ msgstr ""
 "сначала нам нужно будет создать объект, и для этого мы можем использовать "
 "значения имени файла и родителя. Вот наша функция load:"
 
-#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -161,11 +147,9 @@ msgstr ""
 "расположенных практически в любом месте дерева сцены! Каждый объект может "
 "хранить различные данные в зависимости от того, что ему нужно сохранить."
 
-#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
 msgstr "Некоторые примечания"
 
-#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
@@ -177,7 +161,6 @@ msgstr ""
 "часть этой логики. Это часто бывает сложно и требует значительной настройки "
 "в зависимости от потребностей конкретного проекта."
 
-#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "

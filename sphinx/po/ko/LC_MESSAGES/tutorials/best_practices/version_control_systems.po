@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Version Control Systems"
+msgstr "버전 관리 시스템"
+
+msgid "Introduction"
+msgstr "소개"
+
+msgid ""
+"Godot aims to be VCS friendly and generate mostly readable and mergeable "
+"files. Godot also supports the use of version control systems in the editor "
+"itself. However, VCS in the editor requires a plugin for the specific VCS "
+"you are using. VCS can be setup or shut down in the editor under **Project > "
+"Version Control**."
+msgstr ""
+"Godot은 버전 관리 시스템(VCS)에 친화적이도록 대부분의 경우 가독성 및 병합 가"
+"능한 파일을 생성하도록 합니다. 또한 Godot은 에디터 자체에서도 VCS를 지원합니"
+"다. 다만 에디터에서 VCS를 사용하려면 그 VCS에 맞는 플러그인이 필요합니다. "
+"**Project > Version Control** 에서 VCS를 설정하거나 끌 수 있습니다."
+
+msgid "Official Git plugin"
+msgstr "공식 Git 플러그인"
+
+msgid ""
+"Using Git from inside the editor is supported with an official plugin. You "
+"can find the latest releases `here <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__. Documentation on how to use the Git plugin can be found "
+"`here <https://github.com/godotengine/godot-git-plugin/wiki>`__."
+msgstr ""
+"에디터에서 Git을 사용할 수 있는 공식 플러그인을 지원합니다.`이 곳 <https://"
+"github.com/godotengine/godot-git-plugin/releases>`__ 에서 최신 배포판을 확인"
+"할 수 있습니다. Git 플러그인 사용법에 대한 문서는 `이 곳 <https://github.com/"
+"godotengine/godot-git-plugin/wiki>`__ 에서 확인할 수 있습니다."
+
+msgid "Files to exclude from VCS"
+msgstr "버전 관리 시스템에서 제외 해야 하는 파일들"
+
+msgid "There are some folders Godot creates you should have your VCS ignore:"
+msgstr ""
+"Godot이 생성하는 폴더 중 버전 관리 시스템이 무시하도록 설정해야 할 폴더가 몇 "
+"가지 있습니다:"
+
+msgid ""
+"``.import/``: This folder stores all the files it imports automatically "
+"based on your source assets and their import flags."
+msgstr ""
+"``.import/``: 이 폴더는 소스 에셋과 에셋의 가져오기 플래그에 따라 가져온 모"
+"든 파일이 저장되는 곳입니다."
+
+msgid ""
+"``*.translation``: These files are binary imported translations generated "
+"from CSV files."
+msgstr ""
+"``*.translation``: 이 파일은 CSV 파일에서 생성된 번역을 이진 파일로 가져온 파"
+"일입니다."
+
+msgid ""
+"``export_presets.cfg``: This file contains all the export presets for the "
+"project, including sensitive information such as Android keystore "
+"credentials."
+msgstr ""
+"``export_presets.cfg``: 이 파일에는 Android keystore 보증서 같이 민감한 정보"
+"를 포함한 프로젝트의 모든 내보내기 프리셋이 적혀있습니다."
+
+msgid ""
+"``.mono/``: This folder stores automatically-generated Mono files. It only "
+"exists in projects that use the Mono version of Godot."
+msgstr ""
+"``.mono/``: 이 폴더는 자동 생성된 Mono 파일입니다. Mono 버전의 Godot을 사용"
+"한 프로젝트에만 존재합니다."
+
+msgid "Working with Git on Windows"
+msgstr "Windows에서 Git 사용하기"
+
+msgid ""
+"Most Git for Windows clients are configured with the ``core.autocrlf`` set "
+"to ``true``. This can lead to files unnecessarily being marked as modified "
+"by Git due to their line endings being converted automatically. It is better "
+"to set this option as::"
+msgstr ""
+"대부분의 Windows 클라이언트용 Git은 ``core.autocrlf`` 설정이 ``true`` 로 되어"
+"있습니다. 이 옵션이 켜져있으면 Git이 줄 바꿈 문자가 자동으로 변환된 것을 파일"
+"이 수정되었다고 불필요하게 판단할 수 있습니다. 따라서 이 옵션을 다음과 같이 "
+"설정하는게 좋습니다::"

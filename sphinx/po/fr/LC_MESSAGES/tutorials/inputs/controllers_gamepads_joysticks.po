@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:4
 msgid "Controllers, gamepads, and joysticks"
 msgstr "Contrôleurs, manettes de jeu et joysticks"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:6
 msgid ""
 "Godot supports hundreds of controller models thanks to the community-sourced "
 "`SDL game controller database <https://github.com/gabomdq/"
@@ -31,14 +29,12 @@ msgstr ""
 "`SDL game controller database <https://github.com/gabomdq/"
 "SDL_GameControllerDB>`__, alimentée par la communauté."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:9
 msgid ""
 "Controllers are supported on Windows, macOS, Linux, Android, iOS, and HTML5."
 msgstr ""
 "Les contrôleurs(manettes, etc) sont pris en charge sur Windows, macOS, "
 "Linux, Android, iOS et HTML5."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:11
 msgid ""
 "Note that more specialized devices such as steering wheels, rudder pedals "
 "and `HOTAS <https://en.wikipedia.org/wiki/HOTAS>`__ are less tested and may "
@@ -53,11 +49,9 @@ msgstr ""
 "GitHub <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
 "md#reporting-bugs>`__."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:16
 msgid "In this guide, you will learn:"
 msgstr "Dans ce guide, vous apprendrez :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:18
 msgid ""
 "**How to write your input logic to support both keyboard and controller "
 "inputs.**"
@@ -65,21 +59,17 @@ msgstr ""
 "**Comment écrire votre logique d'entrée pour supporter à la fois les entrées "
 "du clavier et de contrôleur.**"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:19
 msgid "**How controllers can behave differently from keyboard/mouse input.**"
 msgstr ""
 "**Comment les contrôleurs peuvent se comporter différemment des entrées "
 "clavier/souris.**"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:20
 msgid "**Troubleshooting issues with controllers in Godot.**"
 msgstr "**Dépannage des problèmes avec les contrôleurs dans Godot.**"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:23
 msgid "Supporting universal input"
 msgstr "Prise en charge de l'entrée universelle"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:25
 msgid ""
 "Thanks to Godot's input action system, Godot makes it possible to support "
 "both keyboard and controller input without having to write separate code "
@@ -94,14 +84,12 @@ msgstr ""
 "d'entrée* dans les paramètres du projet qui feront ensuite référence aux "
 "entrées spécifiées des touches et de la manette."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:31
 msgid ""
 "Input actions are explained in detail on the :ref:`doc_inputevent` page."
 msgstr ""
 "Les actions de saisie sont expliquées en détail sur la page :ref:"
 "`doc_inputevent`."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:35
 msgid ""
 "Unlike keyboard input, supporting both mouse and controller input for an "
 "action (such as looking around in a first-person game) will require "
@@ -112,18 +100,15 @@ msgstr ""
 "jeu à la première personne) nécessitera des chemins de code différents "
 "puisqu'ils doivent être traités séparément."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:40
 msgid "Which Input singleton method should I use?"
 msgstr "Quelle méthode singleton d’entrée dois-je utiliser ?"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
 #, fuzzy
 msgid "There are 3 ways to get input in an analog-aware way:"
 msgstr ""
 "Dans Godot 4.0, il y a 3 façons d'obtenir des entrées d'une manière "
 "analogique :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
 msgid ""
 "When you have two axes (such as joystick or WASD movement) and want both "
 "axes to behave as a single input, use ``Input.get_vector()``:"
@@ -132,7 +117,6 @@ msgstr ""
 "vous voulez que les deux axes se comportent comme une seule entrée, utilisez "
 "``Input.get_vector()`` :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:74
 msgid ""
 "When you have one axis that can go both ways (such as a throttle on a flight "
 "stick), or when you want to handle separate axes individually, use ``Input."
@@ -142,7 +126,6 @@ msgstr ""
 "des gaz sur un manche de vol), ou lorsque vous voulez gérer des axes séparés "
 "individuellement, utilisez ``Input.get_axis()`` :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:95
 msgid ""
 "For other types of analog input, such as handling a trigger or handling one "
 "direction at a time, use ``Input.get_action_strength()``:"
@@ -151,7 +134,6 @@ msgstr ""
 "déclencheur ou le traitement d'une direction à la fois, utilisez ``Input."
 "get_action_strength()`` :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:109
 msgid ""
 "For non-analog digital/boolean input (only \"pressed\" or \"not pressed\" "
 "values), such as controller buttons, mouse buttons or keyboard keys, use "
@@ -162,7 +144,6 @@ msgstr ""
 "les boutons de la souris ou les touches du clavier, utilisez ``Input."
 "is_action_pressed()`` :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:125
 #, fuzzy
 msgid ""
 "In Godot versions before 3.4, such as 3.3, ``Input.get_vector()`` and "
@@ -174,11 +155,9 @@ msgstr ""
 "``Input.get_action_strength()`` et ``Input.is_action_pressed()`` sont "
 "disponibles dans Godot 3.2."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:130
 msgid "Differences between keyboard/mouse and controller input"
 msgstr "Différences entre les entrées clavier/souris et contrôleur"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:132
 msgid ""
 "If you're used to handling keyboard and mouse input, you may be surprised by "
 "how controllers handle specific situations."
@@ -187,11 +166,9 @@ msgstr ""
 "pouvez être surpris par la façon dont les contrôleurs gèrent des situations "
 "spécifiques."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:136
 msgid "Dead zone"
 msgstr "Zone morte"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
 msgid ""
 "Unlike keyboards and mice, controllers offer axes with *analog* inputs. The "
 "upside of analog inputs is that they offer additional flexibility for "
@@ -215,7 +192,6 @@ msgstr ""
 "phénomène est connu sous le nom de *drifting* et peut être plus visible sur "
 "les contrôleurs anciens ou défectueux."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:147
 msgid ""
 "Let's take a racing game as a real-world example. Thanks to analog inputs, "
 "we can steer the car slowly in one direction or another. However, without a "
@@ -239,7 +215,6 @@ msgstr ""
 "élevée pour ignorer l'entrée causée par la dérive du joystick, mais "
 "suffisamment basse pour ne pas ignorer l'entrée réelle du joueur."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:157
 msgid ""
 "Godot features a built-in dead zone system to tackle this problem. The "
 "default value is ``0.2``, but you can increase it or decrease it on a per-"
@@ -254,11 +229,9 @@ msgstr ""
 "calculera la valeur moyenne de la zone morte de toutes les actions dans le "
 "vecteur."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:164
 msgid "\"Echo\" events"
 msgstr "Événements \"Echo\""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:166
 msgid ""
 "Unlike keyboard input, holding down a controller button such as a D-pad "
 "direction will **not** generate repeated input events at fixed intervals "
@@ -271,7 +244,6 @@ msgstr ""
 "\"). En effet, le système d'exploitation n'envoie jamais d'événements \"écho"
 "\" pour les entrées de la manette."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:171
 msgid ""
 "If you want controller buttons to send echo events, you will have to "
 "generate :ref:`class_InputEvent` objects by code and parse them using :ref:"
@@ -285,11 +257,9 @@ msgstr ""
 "<class_Input_method_parse_input_event>` à intervalles réguliers. Ceci peut "
 "être accompli à l'aide d'un nœud :ref:`class_Timer`."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:178
 msgid "Troubleshooting"
 msgstr "Dépannage"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
 "com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
@@ -299,11 +269,9 @@ msgstr ""
 "contrôleurs <https://github.com/godotengine/godot/issues?q=is%3Aopen+is"
 "%3Aissue+label%3Atopic%3Ainput+gamepad>`__ sur GitHub."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
 msgid "My controller isn't recognized by Godot."
 msgstr "Mon contrôleur n'est pas reconnu par Godot."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
 msgid ""
 "First, check that your controller is recognized by other applications. You "
 "can use the `Gamepad Tester <https://gamepad-tester.com/>`__ website to "
@@ -313,11 +281,9 @@ msgstr ""
 "applications. Vous pouvez utiliser le site `Gamepad Tester <https://gamepad-"
 "tester.com/>`__ pour confirmer que votre contrôleur est reconnu."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:194
 msgid "My controller has incorrectly mapped buttons or axes."
 msgstr "Les boutons ou les axes de ma manette sont mal affectés."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:196
 msgid ""
 "If buttons are incorrectly mapped, this may be due to an erroneous mapping "
 "from the `SDL game controller database <https://github.com/gabomdq/"
@@ -331,7 +297,6 @@ msgstr ""
 "jour qui sera inclus dans la prochaine version de Godot en ouvrant une "
 "demande de pull sur le dépôt lié."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:201
 msgid ""
 "There are many ways to create mappings. One option is to use the mapping "
 "wizard in the `official Joypads demo <https://godotengine.org/asset-library/"
@@ -346,7 +311,6 @@ msgstr ""
 "définissant la variable d'environnement ``SDL_GAMECONTROLLERCONFIG`` avant "
 "de lancer Godot :"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:222
 msgid ""
 "To test mappings on non-desktop platforms or to distribute your project with "
 "additional controller mappings, you can add them by calling :ref:`Input."
@@ -359,17 +323,14 @@ msgstr ""
 "add_joy_mapping() <class_Input_method_add_joy_mapping>` le plus tôt possible "
 "dans la fonction ``_ready()`` d'un script."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:228
 msgid "My controller works on a given platform, but not on another platform."
 msgstr ""
 "Mon contrôleur fonctionne sur une plate-forme donnée, mais pas sur une autre "
 "plate-forme."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:231
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid ""
 "Controllers are currently only supported on x86-based Macs. This means "
 "controllers won't work on Macs featuring ARM processors such as the Apple M1."
@@ -378,11 +339,9 @@ msgstr ""
 "sur des processeurs x86. Cela signifie que les contrôleurs ne fonctionneront "
 "pas sur les Macs équipés de processeurs ARM tels que l'Apple M1."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:237
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:239
 msgid ""
 "Prior to Godot 3.3, official Godot binaries were compiled with udev support "
 "but self-compiled binaries were compiled *without* udev support unless "
@@ -395,11 +354,9 @@ msgstr ""
 "SCons. Cela rendait le support du hotplugging du contrôleur indisponible "
 "dans les binaires auto-compilés."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:245
 msgid "HTML5"
 msgstr "HTML5"
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:247
 msgid ""
 "HTML5 controller support is often less reliable compared to \"native\" "
 "platforms. The quality of controller support tends to vary wildly across "
@@ -412,7 +369,6 @@ msgstr ""
 "conséquent, vous devrez peut-être demander à vos joueurs d'utiliser un autre "
 "navigateur s'ils ne parviennent pas à faire fonctionner leur contrôleur."
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:252
 msgid ""
 "Also, note that `controller support was significantly improved <https://"
 "github.com/godotengine/godot/pull/45078>`__ in Godot 3.3 and later."

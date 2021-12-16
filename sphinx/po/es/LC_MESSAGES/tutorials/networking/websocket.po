@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/websocket.rst:4
 msgid "WebSocket"
 msgstr "Web Socket"
 
-#: ../../docs/tutorials/networking/websocket.rst:7
 msgid "HTML5 and WebSocket"
 msgstr "HTML5 y WebSocket"
 
-#: ../../docs/tutorials/networking/websocket.rst:9
 msgid ""
 "The WebSocket protocol was standardized in 2011 with the original goal of "
 "allowing browsers to create stable and bidirectional connections with a "
@@ -37,7 +34,6 @@ msgstr ""
 "un servidor. Antes de eso, los navegadores sólo soportaban HTTPRequests, lo "
 "que no es adecuado para la comunicación bidireccional."
 
-#: ../../docs/tutorials/networking/websocket.rst:12
 msgid ""
 "The protocol is quite simple, message based, and a very powerful tool to "
 "send push notifications to browsers, and has been used to implement chats, "
@@ -53,7 +49,6 @@ msgstr ""
 "por lo que no es buena para aplicaciones en tiempo real como VoIP y juegos "
 "de ritmo rápido (ver :ref:`WebRTC <doc_webrtc>` para esos casos de uso)."
 
-#: ../../docs/tutorials/networking/websocket.rst:14
 msgid ""
 "Due to its simplicity, its wide compatibility, and being easier to use than "
 "a raw TCP connection, WebSocket soon started to spread outside the browsers, "
@@ -64,15 +59,12 @@ msgstr ""
 "fuera de los navegadores, en aplicaciones nativas como un medio para "
 "comunicarse con los servidores de la red."
 
-#: ../../docs/tutorials/networking/websocket.rst:16
 msgid "Godot supports WebSocket in both native and HTML5 exports."
 msgstr "Godot soporta WebSocket tanto en exportaciones nativas como en HTML5."
 
-#: ../../docs/tutorials/networking/websocket.rst:19
 msgid "Using WebSocket in Godot"
 msgstr "Usando WebSockets en Godot"
 
-#: ../../docs/tutorials/networking/websocket.rst:21
 msgid ""
 "WebSocket is implemented in Godot via three main classes :ref:"
 "`WebSocketClient <class_WebSocketClient>`, :ref:`WebSocketServer "
@@ -88,7 +80,6 @@ msgstr ""
 "Ver la sección :ref:`high-level multiplayer <doc_high_level_multiplayer>` "
 "para más detalles."
 
-#: ../../docs/tutorials/networking/websocket.rst:25
 msgid ""
 "When exporting to Android, make sure to enable the [code]INTERNET[/code] "
 "permission in the Android export preset before exporting the project or "
@@ -96,11 +87,9 @@ msgid ""
 "blocked by Android."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:31
 msgid "Minimal client example"
 msgstr "Ejemplo mínimo de cliente"
 
-#: ../../docs/tutorials/networking/websocket.rst:33
 msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
@@ -108,15 +97,12 @@ msgstr ""
 "Este ejemplo le mostrará cómo crear una conexión WebSocket con un servidor "
 "remoto, y cómo enviar y recibir datos."
 
-#: ../../docs/tutorials/networking/websocket.rst:86
 msgid "This will print:"
 msgstr "Esto imprimirá:"
 
-#: ../../docs/tutorials/networking/websocket.rst:94
 msgid "Minimal server example"
 msgstr "Ejemplo mínimo de servidor"
 
-#: ../../docs/tutorials/networking/websocket.rst:96
 #, fuzzy
 msgid ""
 "This example will show you how to create a WebSocket server that listens for "
@@ -125,15 +111,12 @@ msgstr ""
 "Este ejemplo le mostrará cómo crear un servidor WebSocket que escuche las "
 "conexiones remotas, y cómo enviar y recibir datos."
 
-#: ../../docs/tutorials/networking/websocket.rst:152
 msgid "This will print (when a client connects) something similar to this:"
 msgstr "Esto imprimirá (cuando un cliente se conecta) algo similar a esto:"
 
-#: ../../docs/tutorials/networking/websocket.rst:160
 msgid "Advanced chat demo"
 msgstr "Demostración avanzada de sala de chat"
 
-#: ../../docs/tutorials/networking/websocket.rst:162
 msgid ""
 "A more advanced chat demo which optionally uses the multiplayer mid-level "
 "abstraction and a high level multiplayer demo are available in the `godot "

@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Creating script templates"
+msgstr "创建脚本模板"
+
+msgid ""
+"Godot provides a way to use script templates as seen in the ``Script Create "
+"Dialog`` while creating a new script:"
+msgstr ""
+"Godot提供了一种在创建新脚本时使用脚本模板的方法, 在 \"脚本创建对话框\" 中可以"
+"看到:"
+
+msgid ""
+"A set of default script templates is provided by default, but it's also "
+"possible to modify existing and create new ones, both per project and the "
+"editor."
+msgstr ""
+"默认提供一组默认脚本模板, 但也可以针对每个项目和编辑器修改现有脚本模板并创建"
+"新模板."
+
+msgid "Locating the templates"
+msgstr "模板所在位置"
+
+msgid "There are two places where templates can be managed."
+msgstr "有两个地方可以管理模板."
+
+msgid "Editor-defined templates"
+msgstr "编辑器定义的模板"
+
+msgid ""
+"These are available globally throughout any project. The location of these "
+"templates are determined per each OS:"
+msgstr "这些在任何项目中都可以全局使用. 这些模板的位置是根据操作系统而确定的:"
+
+msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+
+msgid "Linux: ``$HOME/.config/godot/script_templates/``"
+msgstr "Linux: ``$HOME/.config/godot/script_templates/``"
+
+msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+msgstr "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+
+msgid ""
+"If no ``script_templates`` is detected, Godot will create a default set of "
+"built-in templates automatically, so this logic can be used to reset the "
+"default templates in case you've accidentally overwritten them."
+msgstr ""
+"如果未检测到 ``script_templates`` ,Godot将自动创建一组默认的内置模板. 在默认"
+"模板被意外覆盖的时候可以用这个方法重置."
+
+msgid "Project-defined templates"
+msgstr "项目定义的模板"
+
+msgid ""
+"The default path to search for templates is the ``res://script_templates/`` "
+"directory. The path can be changed by configuring the ``editor/"
+"script_templates_search_path`` setting in the :ref:`ProjectSettings "
+"<class_ProjectSettings>`, both via code and the editor."
+msgstr ""
+"搜索模板的默认路径是 ``res://script_templates/`` 文件夹. 可以通过代码和编辑器"
+"在 :ref:`项目设置 <class_ProjectSettings>` 中配置 ``editor/"
+"script_templates_search_path`` 设置来更改路径."
+
+msgid ""
+"If no ``script_templates`` directory is found within a project, it is simply "
+"ignored."
+msgstr "如果在项目中未找到 ``script_templates`` 文件夹, 则将其忽略."
+
+msgid "Language support and overriding behavior"
+msgstr "语言支持和重写行为"
+
+msgid ""
+"Depending on whether a particular language implements a way to generate "
+"scripts out of templates, it's possible to create a template which can be "
+"recognized by that language according to template's file extension. For "
+"GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
+msgstr ""
+"如果一个语言实现了根据模板生成脚本的方法, 你就可以创建一个对应拓展名的文件作"
+"为模板. 对于 GDScript 和 C#, 拓展名分别是 ``gd`` 和 ``cs``."
+
+msgid ""
+"The script templates have the same extension as the regular script files. "
+"This may lead to an issue of a script parser treating those templates as "
+"actual scripts within a project. To avoid this, make sure to ignore the "
+"directory containing them by creating an empty ``.gdignore`` file. The "
+"directory won't be visible throughout the project's filesystem anymore, yet "
+"the templates can be modified by an external text editor anytime."
+msgstr ""
+"脚本模板与常规脚本文件具有相同的扩展名。脚本解析器将这些模板视为项目中的实际"
+"脚本，这可能会导致问题。为了避免这种情况，创建空的 .gdignore 文件以忽略包含它"
+"的目录。该目录在整个项目的文件系统中不可见，但模板仍可以通过外部文本编辑器进"
+"行修改。"
+
+msgid ""
+"The built-in editor templates are automatically shadowed by the project-"
+"specific templates given both scripts have the same filename."
+msgstr ""
+"如果编辑器内置的模板与项目中创建的模板文件具有相同的文件名, 则内置的模板会被"
+"自动隐藏."
+
+msgid "Default template"
+msgstr "默认模板"
+
+msgid ""
+"The ``Default`` template is always generated dynamically per language and "
+"cannot be configured nor overridden, but you can use these as the base for "
+"creating other templates."
+msgstr ""
+"\"默认\" 模板总是根据每种语言动态生成, 并且不能配置也不能覆盖, 但是你可以使用"
+"它们作为创建其他模板的基础."
+
+msgid "List of template placeholders"
+msgstr "模板占位符"
+
+msgid ""
+"The following describes the complete list of built-in template placeholders "
+"which are currently implemented."
+msgstr "下面列出当前已实现的所有模板占位符."
+
+msgid "Base placeholders"
+msgstr "基本占位符"
+
+msgid "Placeholder"
+msgstr "占位符"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "``%CLASS%``"
+msgstr "``%CLASS%``"
+
+msgid "The name of the new class (used in C# only)."
+msgstr "新建类的名称(只在 C# 中使用)."
+
+msgid "``%BASE%``"
+msgstr "``%BASE%``"
+
+msgid "The base type a new script inherits from."
+msgstr "新建脚本的基类型."
+
+msgid "``%TS%``"
+msgstr "``%TS%``"
+
+msgid ""
+"Indentation placeholder. The exact type and number of whitespace characters "
+"used for indentation is determined by the ``text_editor/indent/type`` and "
+"``text_editor/indent/size`` settings in the :ref:`EditorSettings "
+"<class_EditorSettings>` respectively."
+msgstr ""
+"缩进占位符. 缩进字符的类型和数量分别由 :ref:`EditorSettings "
+"<class_EditorSettings>` 中的 ``text_editor/indent/type`` 和 ``text_editor/"
+"indent/size`` 两个设置决定."
+
+msgid "Type placeholders"
+msgstr "类型占位符"
+
+msgid ""
+"These are only relevant for GDScript with static typing. Whether these "
+"placeholders are actually replaced is determined by the ``text_editor/"
+"completion/add_type_hints`` setting in the :ref:`EditorSettings "
+"<class_EditorSettings>`."
+msgstr ""
+"这些只在使用 GDScript 的静态类型时有用. 这些占位符是否被替换取决于 :ref:"
+"`EditorSettings <class_EditorSettings>` 中的 ``text_editor/completion/"
+"add_type_hints`` 设置."
+
+msgid "Value"
+msgstr "值"
+
+msgid "``%INT_TYPE%``"
+msgstr "``%INT_TYPE%``"
+
+msgid "``: int``"
+msgstr "``: int``"
+
+msgid "``%STRING_TYPE%``"
+msgstr "``%STRING_TYPE%``"
+
+msgid "``: String``"
+msgstr "``:String``"
+
+msgid "``%FLOAT_TYPE%``"
+msgstr "``%FLOAT_TYPE%``"
+
+msgid "``: float``"
+msgstr "``: float``"
+
+msgid "``%VOID_RETURN%``"
+msgstr "``%VOID_RETURN%``"
+
+msgid "``-> void``"
+msgstr "``-> void``"

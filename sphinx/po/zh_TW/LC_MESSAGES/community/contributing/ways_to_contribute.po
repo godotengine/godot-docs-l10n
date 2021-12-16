@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:4
 msgid "Ways to contribute"
 msgstr "參與貢獻的方法"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:6
 msgid ""
 "Godot Engine is a non-profit, community-driven free and open source project. "
 "Almost all (but our lead dev Juan, more on that below) developers are "
@@ -32,7 +30,6 @@ msgstr ""
 "負責人 Juan，詳見下方) 開發人員都是利用空閒時間，抱持想製作高品質自由引擎的熱"
 "情所 **無償** 開發的。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:11
 msgid ""
 "This means that to thrive, Godot needs as many users as possible to get "
 "involved by contributing to the engine. There are many ways to contribute to "
@@ -43,15 +40,15 @@ msgstr ""
 "許多方法可以參與這種大小專案的貢獻，因此，無論是有什麼技能的人，幾乎都能為 "
 "Godot 帶來正面改進："
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:16
+#, fuzzy
 msgid ""
 "**Be part of the community.** The best way to contribute to Godot and help "
 "it become ever better is simply to use the engine and promote it by word-of-"
 "mouth, in the credits or splash screen of your games, blog posts, tutorials, "
-"videos, demos, gamedev or free software events, support on the Q&A, IRC, "
-"forums, Discord, etc. Participate! Being a user and advocate helps spread "
-"the word about our great engine, which has no marketing budget and can "
-"therefore only rely on its community to become more mainstream."
+"videos, demos, gamedev or free software events, support on the Q&A, forums, "
+"Contributors Chat, Discord, etc. Participate! Being a user and advocate "
+"helps spread the word about our great engine, which has no marketing budget "
+"and can therefore only rely on its community to become more mainstream."
 msgstr ""
 "**成為社群的一部分。** 要參與貢獻 Godot，並讓 Godot 變得更好的最簡單的方法就"
 "是親自使用 Godot 並到處宣傳，不論是在遊戲的製作人員名單內、部落格、教學、影"
@@ -60,7 +57,6 @@ msgstr ""
 "主流市場，因此如果你能成為 Godot 的使用者與支持者將有助於讓 Godot 這個優秀的"
 "遊戲引擎更佳流行。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:25
 msgid ""
 "**Make games.** It's no secret that, to convince new users and especially "
 "the industry at large that Godot is a relevant market player, we need great "
@@ -75,7 +71,6 @@ msgstr ""
 "注意。因此，請繼續製作優質的遊戲，每製作一個遊戲就能更提升 Godot 在遊戲開發市"
 "場上的名聲！"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:32
 msgid ""
 "**Get involved in the engine's development.** This can be by contributing "
 "code via pull requests, testing the development snapshots or directly the "
@@ -89,7 +84,6 @@ msgstr ""
 "明文件 (類別參考文件與教學) 與其翻譯來參與引擎開發。接下來的段落會討論各種"
 "「直接」參與貢獻引擎的方法。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:40
 msgid ""
 "**Donate.** Godot is a non-profit project, but it can still benefit from "
 "user donations for many things. Apart from usual expenses such as hosting "
@@ -111,11 +105,9 @@ msgstr ""
 "捐款收入才能繼續這麼做，而到目前為止專案也此獲得了許多好處。因此，如果你也想"
 "捐款給 Godot，請參考 `我們的網站 <https://godotengine.org/donate>`_ 。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
 msgstr "參與貢獻程式碼"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:56
 msgid ""
 "The possibility to study, use, modify and redistribute modifications of the "
 "engine's source code are the fundamental rights that Godot's `MIT <https://"
@@ -129,7 +121,6 @@ msgstr ""
 "%E7%94%B1%E5%8F%8A%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81%E8%BD%AF"
 "%E4%BB%B6>` 。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:61
 msgid ""
 "As such, everyone is entitled to modify `Godot's source code <https://github."
 "com/godotengine/godot>`_, and send those modifications back to the upstream "
@@ -143,11 +134,9 @@ msgstr ""
 "Request (PR)」這種我們所用的現代工作流程來將這些修改送回上流專案，如，可以提"
 "議將一個或多個 Git Commit (修正檔) 合併回主要開發分支上。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
 msgstr "向上游專案貢獻程式碼修改有兩大好處："
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:70
 msgid ""
 "Your own code will be reviewed and improved by other developers, and will be "
 "further maintained directly in the upstream project, so you won't have to "
@@ -163,7 +152,6 @@ msgstr ""
 "這也是一種責任。所以，如果這些改動只適用於你的專案的話，則這些情況就應該只將"
 "改動保持在自己的專案裡就好了。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:78
 msgid ""
 "The whole community will benefit from your work, and other contributors will "
 "behave the same way, contributing code that will be beneficial to you. At "
@@ -173,7 +161,6 @@ msgstr ""
 "整個社群都能得益於你的行動，而其他參與貢獻者也一樣，他們所貢獻的程式碼也能讓"
 "你獲益。在這篇文章撰寫時，已有超過 1000 位開發人員為 Godot 貢獻了程式碼修改！"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:83
 msgid ""
 "To ensure good collaboration and overall quality, the Godot developers "
 "enforce some rules for code contributions, for example regarding the style "
@@ -184,7 +171,6 @@ msgstr ""
 "碼貢獻的規則，如一些關於 C++ 的程式碼樣式 (縮排、分號…等) 與 Git 及 PR 工作流"
 "程。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
 "A good place to start is by searching for issues tagged as `junior jobs "
 "<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A"
@@ -198,13 +184,11 @@ msgstr ""
 "%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_) 標籤的 Issue 是個不錯的"
 "開始。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:90
 msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
 msgstr "有關 PR 工作流程的技術性細節，將在 :ref:`doc_pr_workflow` 中詳細說明。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:93
 msgid ""
 "Details about the code style guidelines and the ``clang-format`` tool used "
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
@@ -212,7 +196,6 @@ msgstr ""
 "有關程式碼樣式的方針與用來強制套用這些樣式的 ``clang-format`` 工具，將於 :"
 "ref:`doc_code_style_guidelines` 內說明。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid ""
 "All pull requests must go through a review process before being accepted. "
 "Depending on the scope of the changes, it may take some time for a "
@@ -222,7 +205,6 @@ msgid ""
 "is going to be way more contributions than people validating them."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:104
 msgid ""
 "To make sure that your time and efforts aren't wasted, it is recommended to "
 "vet the idea first before implementing it and putting it for a review as a "
@@ -233,17 +215,14 @@ msgid ""
 "chat.godotengine.org/>`_."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:110
 msgid ""
 "Proposals are only required when working on an enhancement or a new feature. "
 "Bug reports are sufficient for fixing issues."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:114
 msgid "Testing and reporting issues"
 msgstr "測試與回報問題"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:116
 msgid ""
 "Another great way of contributing to the engine is to test development "
 "releases or the development branch and to report issues. It is also helpful "
@@ -254,15 +233,12 @@ msgstr ""
 "穩定版上發現的問題也不錯，這樣這些問題就能在開發分支與未來的維護版本中被修"
 "復。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:122
 msgid "Testing development versions"
 msgstr "測試開發版本"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:124
 msgid "To help with the testing, you have several possibilities:"
 msgstr "若要協助測試，則有幾種方法："
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
@@ -270,7 +246,6 @@ msgstr ""
 "自行從原始碼編譯，請參考各個平台的 :ref:`編譯 <toc-devel-compiling>` 頁中的說"
 "明。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:129
 msgid ""
 "Test official pre-release binaries when they are announced (usually on the "
 "blog and other community platforms), such as alpha, beta and release "
@@ -279,7 +254,6 @@ msgstr ""
 "測試官方公告的預覽版本 (通常會在部落格或其他社群平台公告)，如 Alpha 版、Beta "
 "版與 RC (Release Candidate, 候選) 版。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:132
 msgid ""
 "Test \"trusted\" unofficial builds of the development branch; just ask "
 "community members for reliable providers. Whenever possible, it's best to "
@@ -289,7 +263,6 @@ msgstr ""
 "測試開發分支的「可信」非官方版本；請向社群成員詢問可靠的提供者。雖然，我們建"
 "議儘量使用官方發佈的版本或自行編譯，以確認二進位文件是否可靠。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:137
 msgid ""
 "As mentioned previously, it is also helpful to keep your eyes peeled for "
 "potential bugs that might still be present in the stable releases, "
@@ -299,22 +272,20 @@ msgstr ""
 "就像剛才說的，如果能幫忙留意未來可能持續存在的 Bug 也很有幫助，特別某些只有少"
 "數開發者協助測試的功能。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:143
 msgid "Filing an issue on GitHub"
 msgstr "在 GitHub 上提出 Issue"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:145
+#, fuzzy
 msgid ""
 "Godot uses `GitHub's issue tracker <https://github.com/godotengine/godot/"
 "issues>`_ for bug reports and enhancement suggestions. You will need a "
-"GitHub account to be able to open a new issue there, and click on the \"New "
-"issue\" button."
+"GitHub account to be able to open a new issue there, and click on the **New "
+"issue** button."
 msgstr ""
 "Godot 使用 `GitHub 的 Issue Tracker <https://github.com/godotengine/godot/"
 "issues>`_ 來處理 Bug 回報與改進建議。要開啟新 Issue 會需要持有 GitHub 帳號，"
 "並點擊「New Issue」按鈕。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:149
 msgid ""
 "When you report a bug, you should keep in mind that the process is similar "
 "to an appointment with your doctor. You noticed *symptoms* that make you "
@@ -328,7 +299,6 @@ msgstr ""
 "開發人員的工作，就是負責診斷所遇到的問題，這樣一來便能找出造成 Bug 的真正原"
 "因。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:156
 msgid ""
 "You should therefore always ask yourself: what is relevant information to "
 "give so that other Godot contributors can understand the bug, identify it "
@@ -338,7 +308,6 @@ msgstr ""
 "接著請問問自己該提供什麼樣的資訊來讓其他 Godot 貢獻者能瞭解這個 Bug、定位出 "
 "Bug 並對其進行修復。下列為一些每次都必須提供的重要資訊："
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:161
 msgid ""
 "**Operating system.** Sometimes bugs are system-specific, i.e. they happen "
 "only on Windows, or only on Linux, etc. That's particularly relevant for all "
@@ -349,7 +318,6 @@ msgstr ""
 "Windows 上，或是只發生在 Linux 上…等。特別與作業系統介面相關的 Bug，如檔案管"
 "理、輸入、視窗管理、音訊…等。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:166
 msgid ""
 "**Hardware.** Sometimes bugs are hardware-specific, i.e. they happen only on "
 "certain processors, graphic cards, etc. If you are able to, it can be "
@@ -358,9 +326,9 @@ msgstr ""
 "**硬體。** 某些 Bug 只發生在特定硬體上。如，某些 Bug 只發生在特定的處理器、顯"
 "示卡…等。如果可以的話，能提供硬體資訊將很有幫助。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:170
+#, fuzzy
 msgid ""
-"**Godot version.** This is a must have. Some issues might be relevant in the "
+"**Godot version.** This is a must-have. Some issues might be relevant in the "
 "current stable release, but fixed in the development branch, or the other "
 "way around. You might also be using an obsolete version of Godot and "
 "experiencing a known issue fixed in a later version, so knowing this from "
@@ -370,7 +338,6 @@ msgstr ""
 "支上已經修正或在開發分支上有其他問題。也有可能你正在用的是舊版本，而遇到的問"
 "題是已知 Bug，因此如果能一開始就提供版本號的話將有助於加快診斷速度。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:176
 #, fuzzy
 msgid ""
 "**How to reproduce the bug.** In the majority of cases, bugs are "
@@ -391,32 +358,31 @@ msgstr ""
 "重現，如果能加上能重現該 Bug 的最小專案也很有幫助。但請記得，在 Issue "
 "Tracker 上有數千個 Bug，而對每個 Issue 來說，開發人員都只有一定的時間來處理。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:187
+#, fuzzy
 msgid ""
-"When you click the \"New issue\" button, you should be presented with a text "
+"When you click the **New issue** button, you should be presented with a text "
 "area prefilled with our issue template. Please try to follow it so that all "
 "issues are consistent and provide the required information."
 msgstr ""
 "點擊「New Issue」後，應該可以看到一個已經填好 Issue 樣板的文字輸入框。請依照"
 "該 Issue 樣板，來讓所有的 Issue 都保持一貫性，並提供必要的資訊。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:192
 msgid "Contributing to the documentation"
 msgstr "參與貢獻說明文件"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:194
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
 msgstr "在 Godot 中，所謂的「說明文件」有兩種不同的東西："
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:196
+#, fuzzy
 msgid ""
 "**The class reference.** This is the documentation for the complete Godot "
 "API as exposed to GDScript and the other scripting languages. It can be "
 "consulted offline, directly in Godot's code editor, or online at :ref:`Godot "
 "API <toc-class-ref>`. To contribute to the class reference, you have to edit "
-"the `doc/base/classes.xml` in Godot's Git repository, and make a pull "
-"request. See :ref:`doc_updating_the_class_reference` for more details."
+"the XML file corresponding to the class and make a pull request. See :ref:"
+"`doc_updating_the_class_reference` and :ref:"
+"`doc_class_reference_writing_guidelines` for more details."
 msgstr ""
 "**類別參考文件。** 類別參考文件是 Godot 暴露給 GDScript 與其他腳本語言的完整 "
 "Godot API。該參考文件可以離線瀏覽，也可以直接在 Godot 的程式編輯器內瀏覽，或"
@@ -424,14 +390,14 @@ msgstr ""
 "件，則必須編輯 Godot Git 儲存庫中的 **doc/base/classes.xml** ，並建立 Pull "
 "Request。詳情請參考 :ref:`doc_updating_the_class_reference` 。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:204
+#, fuzzy
 msgid ""
 "**The tutorials and engine documentation and its translations.** This is the "
-"part you are reading now, which is distributed in the HTML, PDF and EPUB "
-"formats. Its contents are generated from plain text files in the "
-"reStructured Text (rst) format, to which you can contribute via pull "
-"requests on the `godot-docs <https://github.com/godotengine/godot-docs>`_ "
-"GitHub repository. See :ref:`doc_documentation_guidelines` for more details."
+"part you are reading now, which is distributed in the HTML format. Its "
+"contents are generated from plain text files in the reStructured Text (rst) "
+"format, to which you can contribute via pull requests on the `godot-docs "
+"<https://github.com/godotengine/godot-docs>`_ GitHub repository. See :ref:"
+"`doc_contributing_to_the_documentation` for more details."
 msgstr ""
 "**教學與引擎說明文件及其翻譯。** 也就是你目前正在閱讀的部分。這些教學與說明文"
 "件有 HTML 版、PDF 版與 EPUB 版。教學與說明文件的內容是從以 reStructured Text "
@@ -439,11 +405,9 @@ msgstr ""
 "github.com/godotengine/godot-docs>`_ GitHub 版本庫中開啟 Pull Request 來參與"
 "貢獻。詳情請參考 :ref:`doc_documentation_guidelines` 。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:212
 msgid "Contributing translations"
 msgstr "參與貢獻翻譯"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:214
 msgid ""
 "To make Godot accessible to everyone, including users who may prefer "
 "resources in their native language instead of English, our community helps "
@@ -452,6 +416,5 @@ msgstr ""
 "為了要讓包含母語不是英語在內的所有人都能使用 Godot，我們的社群也協助將 Godot "
 "編輯器與其說明文件翻譯為其他許多語言。"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:218
 msgid "See :ref:`doc_editor_and_docs_localization` for more details."
 msgstr "詳情請參考 :ref:`doc_editor_and_docs_localization` 。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
 msgid "KDevelop"
 msgstr "K-Develop"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
@@ -29,23 +27,18 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ ist eine freie, quelloffene IDE für "
 "alle Desktop-Plattformen."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
 msgid "Importing the project"
 msgstr "Projekt importieren"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
 msgid "From the KDevelop's main screen select **Open Project**."
 msgstr "Wählen Sie auf dem Hauptbildschirm von KDevelop **Projekt öffnen**."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
 msgid "KDevelop's main screen."
 msgstr "KDevelop's Hauptbildschirm."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
 msgid "Navigate to the Godot root folder and select it."
 msgstr "Navigieren Sie zum Godot-Wurzelordner und wählen Sie ihn aus."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
 "Manager**."
@@ -53,7 +46,6 @@ msgstr ""
 "Wählen Sie im nächsten Bildschirm **Benutzerdefiniertes Build-System** für "
 "den **Projektmanager**."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
 msgid ""
 "After the project has been imported, open the project configuration by right-"
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
@@ -63,7 +55,6 @@ msgstr ""
 "Sie im Bereich ** Projekte ** rechtsklicken und die Option ** Konfiguration "
 "öffnen .. ** auswählen."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
@@ -71,11 +62,9 @@ msgstr ""
 "Öffnen Sie unter **Sprachunterstützung** die Registerkarte **Includes/"
 "Imports** und fügen Sie die folgenden Pfade hinzu:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
 msgstr "Übernehmen Sie die Änderungen."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
@@ -83,61 +72,48 @@ msgstr ""
 "Fügen Sie unter **Benutzerdefiniertes Build-System** eine neue Build-"
 "Konfiguration mit den folgenden Einstellungen hinzu:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "Build Directory"
 msgstr "Build-Verzeichnis"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
 msgstr "*leer*"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
 msgstr "**Wahr**"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "Executable"
 msgstr "ausführbar"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "**scons**"
 msgstr "**scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid "Arguments"
 msgstr "Argumente"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "Siehe :ref:`doc_introduction_to_the_buildsystem` für eine komplette Liste "
 "aller Argumente."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
 msgid "Apply the changes and close the configuration window."
 msgstr ""
 "Übernehmen Sie die Änderungen und schließen Sie das Konfigurationsfenster."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 msgid "Debugging the project"
 msgstr "Debuggen des Projekts"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
 msgstr ""
 "Wählen Sie **Ausführen > Starts konfigurieren...** aus dem oberen Menü."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
 msgid "Click **Add** to create a new launch configuration."
 msgstr ""
 "Klicken Sie auf **Hinzufügen**, um eine neue Startkonfiguration zu erstellen."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
 msgid ""
 "Select **Executable** option and specify the path to your executable located "
 "in the ``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -149,7 +125,6 @@ msgstr ""
 "Der Name hängt von Ihrer Build-Konfiguration ab, z. `` godot.x11.tools.64`` "
 "für 64-Bit-X11-Plattform mit aktivierten `` tools``."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

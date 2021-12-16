@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:4
 msgid "Recording with microphone"
 msgstr "Grabación con micrófono"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:6
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
@@ -29,7 +27,6 @@ msgstr ""
 "Godot soporta la grabación de audio en el juego para Windows, MacOS, Linux, "
 "Android e iOS."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
 "A simple demo is included in the official demo projects and will be used as "
 "support for this tutorial: `<https://github.com/godotengine/godot-demo-"
@@ -39,11 +36,9 @@ msgstr ""
 "puede usarse como ayuda para este tutorial: `<https://github.com/godotengine/"
 "godot-demo-projects/tree/master/audio/mic_record>`_."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:14
 msgid "The structure of the demo"
 msgstr "La estructura de la demo"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:16
 msgid ""
 "The demo consists of a single scene. This scene includes two major parts: "
 "the GUI and the audio."
@@ -51,7 +46,6 @@ msgstr ""
 "La demostración consiste en una sola escena. Esta escena incluye dos partes "
 "principales: la interfaz gráfica y el audio."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:19
 msgid ""
 "We will focus on the audio part. In this demo, a bus named ``Record`` with "
 "the effect ``Record`` is created to handle the audio recording. An "
@@ -62,7 +56,6 @@ msgstr ""
 "audio. Un ``AudioStreamPlayer`` llamado ``AudioStreamRecord`` se utiliza "
 "para la grabación."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:55
 msgid ""
 "The audio recording is handled by the :ref:`class_AudioEffectRecord` "
 "resource which has three methods: :ref:`get_recording() "
@@ -79,7 +72,6 @@ msgstr ""
 "`set_recording_active() "
 "<class_AudioEffectRecord_method_set_recording_active>`."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:102
 msgid ""
 "At the start of the demo, the recording effect is not active. When the user "
 "presses the ``RecordButton``, the effect is enabled with "
@@ -89,7 +81,6 @@ msgstr ""
 "Cuando el usuario pulsa el ``RecordButton``, el efecto se activa con "
 "``set_recording_active(true)``."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:106
 msgid ""
 "On the next button press, as ``effect.is_recording_active()`` is ``true``, "
 "the recorded stream can be stored into the ``recording`` variable by calling "
@@ -99,7 +90,6 @@ msgstr ""
 "``true``, el flujo grabado puede ser almacenado en la variable ``recording`` "
 "llamando a ``effect.get_recording()``."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:140
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
@@ -107,7 +97,6 @@ msgstr ""
 "Para reproducir la grabación, asigna la grabación como el stream del "
 "``AudioStreamPlayer`` y llama a ``play()``."
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:160
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,156 +17,134 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:4
 msgid "Compiling for the Web"
-msgstr "为Web平台编译"
+msgstr "为 Web 平台编译"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:9
 msgid "Requirements"
 msgstr "需求"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
-msgstr "要编译Web的导出模板, 需要以下内容:"
+msgstr "编译 Web 的导出模板需要以下内容："
 
-#: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
-msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__."
+msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__\\ 。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:14
 msgid "`Python 3.5+ <https://www.python.org/>`__."
-msgstr "`Python 3.5+ <https://www.python.org/>`__."
+msgstr "`Python 3.5+ <https://www.python.org/>`__\\ 。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:15
 msgid "`SCons 3.0+ <https://www.scons.org>`__ build system."
-msgstr "`SCons 3.0+<https://www.scons.org>`__ 构建系统."
+msgstr "`SCons 3.0+ <https://www.scons.org>`__ 构建系统。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:17
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
-"有关Godot的SCons用法的一般概述, 请参阅 :ref:"
-"`doc_introduction_to_the_buildsystem`."
+"有关 Godot 的 SCons 用法的一般概述，请参阅 :ref:"
+"`doc_introduction_to_the_buildsystem`。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:21
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:23
 msgid ""
 "Before starting, confirm that ``emcc`` is available in your PATH. This is "
 "usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
 "activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
 msgstr ""
-"在开始之前，确认 ``emcc`` 在你的PATH中是可用的。这通常是由Emscripten SDK配置"
-"的，例如在调用 ``emsdk activate`` 和 ``source ./emsdk_env.sh``/``emsdk_env."
-"bat`` 时."
+"在开始之前，确认 ``emcc`` 在你的 PATH 中是可用的。这通常是由 Emscripten SDK "
+"配置的，例如在调用 ``emsdk activate`` 和 ``source ./emsdk_env.sh``/"
+"``emsdk_env.bat`` 时。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:27
 msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
 "``target`` as either ``release`` for a release build or ``release_debug`` "
 "for a debug build::"
 msgstr ""
-"打开终端并导航到引擎源代码的根目录. 然后指示SCons构建JavaScript平台. 为发布版"
-"本将 ``target`` 指定 ``release``, 或为调试版本将 ``target`` 指定 "
-"``release_debug``:"
+"打开终端并导航到引擎源代码的根目录。然后指示 SCons 构建 JavaScript 平台。为发"
+"布版本将 ``target`` 指定 ``release``\\ ，或为调试版本将 ``target`` 指定 "
+"``release_debug``\\ ： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:34
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Official export templates also have the JavaScript "
 "singleton enabled. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
-"默认情况下, :ref:`JavaScript singleton <doc_javascript_eval>` 将被内置到引擎"
-"中. 官方导出模板也启用了JavaScript单例. 由于 ``eval()`` 调用可能是一个安全问"
-"题, ``javascript_eval`` 选项可以用来构建, 而无需单例::"
+"默认情况下，\\ :ref:`JavaScript singleton <doc_javascript_eval>` 将被内置到引"
+"擎中，官方导出模板也启用了 JavaScript 单例。由于 ``eval()`` 调用可能是一个安"
+"全问题，\\ ``javascript_eval`` 选项可以用来构建，而无需单例： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:42
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
 "``godot.javascript.opt.zip`` for release or ``godot.javascript.opt.debug."
 "zip`` for debug."
 msgstr ""
-"现在, 引擎将由Emscripten编译为WebAssembly. 完成后, 生成的文件将放在 ``bin`` "
-"子目录中. 针对发布版本的名字是 ``godot.javascript.opt.zip``, 或针对调试版本的"
-"是 ``godot.javascript.opt.debug.zip``."
+"现在，引擎将由 Emscripten 编译为 WebAssembly。完成后，生成的文件将放在 "
+"``bin`` 子目录中。针对发布版本的名字是 ``godot.javascript.opt.zip``\\ ，或针"
+"对调试版本的是 ``godot.javascript.opt.debug.zip``\\ 。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:47
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
-"最后, 将zip存档重命名为 ``webassembly_release.zip`` 以获取发布版本的模板:"
+"最后，将 zip 存档重命名为 ``webassembly_release.zip`` 以获取发布版本的模"
+"板： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:52
 msgid "And ``webassembly_debug.zip`` for the debug template::"
-msgstr "调试模板的 ``webassembly_debug.zip``:"
+msgstr "调试模板的 ``webassembly_debug.zip``\\ ： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:57
 msgid "Threads and GDNative"
-msgstr "线程和GDNative"
+msgstr "线程和 GDNative"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:59
 msgid ""
 "The default export templates do not include threads and GDNative support for "
 "performance and compatibility reasons. See the :ref:`export page "
 "<doc_javascript_export_options>` for more info."
 msgstr ""
-"由于性能和兼容性的原因，默认的导出模板不包括线程和GDNative支持。参见 :ref:"
-"`export page <doc_javascript_export_options>` 以获得更多信息。"
+"由于性能和兼容性的原因，默认的导出模板不包括线程和 GDNative 支持。更多信息见"
+"\\ :ref:`导出页面 <doc_javascript_export_options>`。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
 msgid ""
 "You can build the export templates using the option ``threads_enabled=yes`` "
 "or ``gdnative_enabled=yes`` to enable threads or GDNative support::"
 msgstr ""
 "你可以使用选项 ``threads_enabled=yes`` 或 ``gdnative_enabled=yes`` 构建导出模"
-"板，以启用线程或GDNative支持::"
+"板，以启用线程或 GDNative 支持： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:72
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have either the ``.threads`` or ``.gdnative`` "
 "suffix."
 msgstr ""
-"一旦完成, 生成的文件将被放置在 `bin` 子目录下. 其名称将有 `.threads` 或 `."
-"gdnative` 后缀."
+"一旦完成，生成的文件将被放置在 ``bin`` 子目录下，名称带有 ``.threads`` 或 ``."
+"gdnative`` 后缀。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:75
 msgid ""
 "Finally, rename the zip archives to ``webassembly_release_threads.zip`` and "
 "``webassembly_release_gdnative.zip`` for the release template::"
 msgstr ""
 "最后，将压缩文件重命名为 ``webassembly_release_threads.zip`` 和 "
-"``webassembly_release_gdnative.zip`` ，用于发布模板::"
+"``webassembly_release_gdnative.zip`` ，用于发布模板： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:81
 msgid ""
 "And ``webassembly_debug_threads.zip`` and ``webassembly_debug_gdnative.zip`` "
 "for the debug template::"
 msgstr ""
 "与 ``webassembly_debug_threads.zip`` 和 ``webassembly_debug_gdnative.zip`` 为"
-"调试模板::"
+"调试模板： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:88
 msgid "Building the Editor"
 msgstr "构建编辑器"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:90
 msgid ""
 "It is also possible to build a version of the Godot editor that can run in "
 "the browser. The editor version requires threads support and is not "
 "recommended over the native build. You can build the editor with::"
 msgstr ""
-"也可以建立一个可以在浏览器中运行的Godot编辑器版本。编辑器版本需要线程支持，不"
-"推荐使用本地构建。你可以用以下方法构建编辑器::"
+"也可以建立一个可以在浏览器中运行的 Godot 编辑器版本。编辑器版本需要线程支持，"
+"不推荐使用本地构建。你可以用以下方法构建编辑器： ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:96
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will be ``godot.javascript.opt.tools.threads.zip``. "
@@ -174,13 +152,12 @@ msgid ""
 "browser to use the editor."
 msgstr ""
 "一旦完成，生成的文件将被放置在 ``bin`` 子目录下。它的名字将是 ``godot."
-"javascript.opt.tools.threads.zip`` 。你可以将zip内容上传到你的网络服务器上，"
-"然后用浏览器访问它来使用编辑器。"
+"javascript.opt.tools.threads.zip``\\ 。你可以将 zip 内容上传到你的网络服务器"
+"上，然后用浏览器访问它来使用编辑器。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:100
 msgid ""
 "Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
 "server requirements."
 msgstr ""
-"关于网络服务器的要求，请参考 :ref:`导出页面 "
-"<doc_javascript_export_options>` 。"
+"关于网络服务器的要求，请参考\\ :ref:`导出页面 "
+"<doc_javascript_export_options>`。"

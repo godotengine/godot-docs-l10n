@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Heads up display"
+msgstr ""
+
+msgid ""
+"The final piece our game needs is a User Interface (UI) to display things "
+"like score, a \"game over\" message, and a restart button."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
+"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
+"display that appears as an overlay on top of the game view."
+msgstr ""
+"Последняя часть, в которой нуждается наша игра, - это UI: интерфейс для "
+"отображения таких вещей, как игровой счет, сообщение \"игра окончена\" и "
+"кнопка перезапуска. Создайте новую сцену и добавьте узел :ref:`CanvasLayer "
+"<class_CanvasLayer>` с именем ``HUD``. \"HUD\" означает \"heads-up display"
+"\", информационный дисплей, отображающийся поверх игры."
+
+msgid ""
+"The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
+"on a layer above the rest of the game, so that the information it displays "
+"isn't covered up by any game elements like the player or mobs."
+msgstr ""
+"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам прорисовывать "
+"элементы нашего UI на слое поверх всей остальной игры, поэтому отображаемая "
+"информация не перекрывается никакими игровыми элементами, такими как игрок "
+"или мобы."
+
+msgid "The HUD needs to display the following information:"
+msgstr "HUD должен отображать следующую информацию:"
+
+msgid "Score, changed by ``ScoreTimer``."
+msgstr "Счет, измененный ``ScoreTimer``."
+
+msgid "A message, such as \"Game Over\" or \"Get Ready!\""
+msgstr "Сообщение, например \"Game Over\" или \"Get Ready!\""
+
+msgid "A \"Start\" button to begin the game."
+msgstr "Кнопка \"Start\", чтобы начать игру."
+
+msgid ""
+"The basic node for UI elements is :ref:`Control <class_Control>`. To create "
+"our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
+"`Label <class_Label>` and :ref:`Button <class_Button>`."
+msgstr ""
+"Основной узел для элементов UI — это :ref:`Control <class_Control>`. Чтобы "
+"создать наш UI, мы будем использовать два типа узлов :ref:`Control "
+"<class_Control>`: :ref:`Label <class_Label>` и :ref:`Button <class_Button>`."
+
+msgid "Create the following as children of the ``HUD`` node:"
+msgstr "Создайте следующие узлы в качестве потомков узла '' HUD'':"
+
+msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
+msgstr ":ref:`Label <class_Label>` с именем ``ScoreLabel``."
+
+msgid ":ref:`Label <class_Label>` named ``Message``."
+msgstr ":ref:`Label <class_Label>` с именем ``Message``."
+
+msgid ":ref:`Button <class_Button>` named ``StartButton``."
+msgstr ":ref:`Button <class_Button>` с именем ``StartButton``."
+
+msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
+msgstr ":ref:`Timer <class_Timer>` с именем ``MessageTimer``."
+
+msgid ""
+"Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
+"Inspector. The default font for ``Control`` nodes is small and doesn't scale "
+"well. There is a font file included in the game assets called \"Xolonium-"
+"Regular.ttf\". To use this font, do the following:"
+msgstr ""
+"Нажмите на ``ScoreLabel`` и введите число в поле ``Text`` в Инспекторе. "
+"Стандартный шрифт для узлов ``Control`` мал и плохо масштабируется. В "
+"ресурсы игры включен файл шрифта под названием \"Xolonium-Regular.ttf\". "
+"Чтобы использовать этот шрифт, сделайте следующее:"
+
+#, fuzzy
+msgid "Under \"Custom Fonts\", choose \"New Font\""
+msgstr "Под \"Custom Fonts\" выберите \"Новый DynamicFont\""
+
+#, fuzzy
+msgid ""
+"Click on the \"Font\" you added, and under \"Font/Data/0\", choose \"Load\" "
+"and select the \"Xolonium-Regular.ttf\" file."
+msgstr ""
+"Нажмите на только что добавленный \"DynamicFont\" и в разделе \"Font/Font "
+"Data\" выберите \"Загрузить\" и выберите файл \"Xolonium-Regular.ttf\" . "
+"Также вы должны установить размер шрифта ``Size``. Значение ``64`` хорошо "
+"подходит."
+
+#, fuzzy
+msgid ""
+"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
+"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
+"place on the other two Control nodes. Set \"Custom Font Size\" property of "
+"the ``ScoreLabel``. A setting of ``64`` works well."
+msgstr ""
+"Как только вы проделали это с ``ScoreLabel``, можете нажать стрелку вниз "
+"рядом со свойством DynamicFont и выбрать \"Копировать\", а затем \"Вставить"
+"\" его в том же месте на двух других узлах Control."
+
+#, fuzzy
+msgid ""
+"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
+"they also have anchors and margins. Anchors define the origin - the "
+"reference point for the edges of the node. Margins update automatically when "
+"you move or resize a control node. They represent the distance from the "
+"control node's edges to its anchor."
+msgstr ""
+"**Якоря и Отступы:** Узлы ``Control`` имеют не только положение и размер, но "
+"также якоря и отступы. Якоря определяют начало координат - опорную точку для "
+"краев узла. Отступы обновляются автоматически при перемещении или изменении "
+"размера узла управления. Они представляют расстояние от краев ``Control``-"
+"узла до его якоря. См. :ref:`doc_design_interfaces_with_the_control_nodes` "
+"для получения более подробной информации."
+
+msgid ""
+"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
+"Control node's layout:"
+msgstr ""
+"Организуйте узлы, как показано ниже. Нажмите кнопку \"Макет\", чтобы задать "
+"макет для узла Control:"
+
+msgid ""
+"You can drag the nodes to place them manually, or for more precise "
+"placement, use the following settings:"
+msgstr ""
+"Вы можете перетаскивать узлы, размещая их вручную, либо используйте "
+"следующие параметры для более точного размещения:"
+
+msgid "ScoreLabel"
+msgstr "ScoreLabel"
+
+msgid "*Layout* : \"Top Wide\""
+msgstr "*Макет* : \"Сверху по всей ширине\""
+
+msgid "*Text* : ``0``"
+msgstr "*Text* : ``0``"
+
+msgid "*Align* : \"Center\""
+msgstr "*Align* : \"Center\""
+
+msgid "Message"
+msgstr "Message"
+
+msgid "*Layout* : \"HCenter Wide\""
+msgstr "*Макет*: \"По центру по всей ширине\""
+
+msgid "*Text* : ``Dodge the Creeps!``"
+msgstr "*Text*: ``Уворачивайся от крипов!``"
+
+msgid "*Autowrap* : \"On\""
+msgstr "*Autowrap* : \"Вкл\""
+
+msgid "StartButton"
+msgstr "StartButton"
+
+msgid "*Text* : ``Start``"
+msgstr "*Text* : ``Старт``"
+
+msgid "*Layout* : \"Center Bottom\""
+msgstr "*Макет*: \"Внизу посередине\""
+
+msgid "*Margin* :"
+msgstr "*Margin* :"
+
+msgid "Top: ``-200``"
+msgstr "Top: ``-200``"
+
+msgid "Bottom: ``-100``"
+msgstr "Bottom: ``-100``"
+
+msgid ""
+"On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
+"Shot`` property to \"On\"."
+msgstr ""
+"В ``MessageTimer`` установите параметр ``Wait Time`` на ``2``, а параметр "
+"``One Shot`` на значение \"Вкл\"."
+
+msgid "Now add this script to ``HUD``:"
+msgstr "Теперь добавьте этот скрипт в ``HUD``:"
+
+msgid ""
+"The ``start_game`` signal tells the ``Main`` node that the button has been "
+"pressed."
+msgstr "Сигнал ``start_game`` сообщает узлу ``Main``, что кнопка была нажата."
+
+msgid ""
+"This function is called when we want to display a message temporarily, such "
+"as \"Get Ready\"."
+msgstr ""
+"Эта функция вызывается, когда мы хотим временно отобразить сообщение, такое "
+"как \"Приготовьтесь\"."
+
+msgid ""
+"This function is called when the player loses. It will show \"Game Over\" "
+"for 2 seconds, then return to the title screen and, after a brief pause, "
+"show the \"Start\" button."
+msgstr ""
+"Эта функция вызывается, когда игрок проигрывает. Она покажет надпись \"Game "
+"Over\" на 2 секунды, затем произойдет возврат к основному экрану, и после "
+"короткой паузы появится кнопка \"Start\"."
+
+msgid ""
+"When you need to pause for a brief time, an alternative to using a Timer "
+"node is to use the SceneTree's ``create_timer()`` function. This can be very "
+"useful to add delays such as in the above code, where we want to wait some "
+"time before showing the \"Start\" button."
+msgstr ""
+"Если вам нужно сделать паузу на короткое время, то альтернативой "
+"использованию узла Timer является использование функции SceneTree "
+"``create_timer()``. Может быть очень полезно добавлять задержки наподобие "
+"таких, как в вышеприведенном коде, где нам хотелось бы подождать немного "
+"времени, прежде чем показывать кнопку \"Start\"."
+
+msgid "This function is called by ``Main`` whenever the score changes."
+msgstr ""
+"Эта функция вызывается из ``Main`` каждый раз, когда изменяется количество "
+"очков."
+
+msgid ""
+"Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
+"signal of ``StartButton`` and add the following code to the new functions:"
+msgstr ""
+"Присоедините сигнал ``timeout()`` из ``MessageTimer`` и сигнал ``pressed()`` "
+"из ``StartButton`` и добавьте следующий код к новым функциям:"
+
+msgid "Connecting HUD to Main"
+msgstr "Подключение HUD к Main"
+
+msgid ""
+"Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
+"Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
+"The scene tree should look like this, so make sure you didn't miss anything:"
+msgstr ""
+"Теперь, когда мы закончили создание сцены ``HUD``, вернитесь к ``Main``. "
+"Инстанцируйте сцену ``HUD`` в ``Main`` подобно тому, как вы это делали со "
+"сценой ``Player``. Дерево сцены должно выглядеть так, поэтому убедитесь, что "
+"вы ничего не упустили:"
+
+msgid ""
+"Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
+"This requires a few additions to the ``Main`` scene:"
+msgstr ""
+"Теперь нам нужно подключить функционал ``HUD`` в наш ``Main``-скрипт. Для "
+"этого потребуются некоторые дополнения к сцене ``Main``:"
+
+msgid ""
+"In the Node tab, connect the HUD's ``start_game`` signal to the "
+"``new_game()`` function of the Main node by typing \"new_game\" in the "
+"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"green connection icon now appears next to ``func new_game()`` in the script."
+msgstr ""
+"Во вкладке \"Узел\" присоедините сигнал HUD ``start_game`` к функции узла "
+"Main ``new_game()``, введя \"new_game\" в поле \"Метод-приёмник\" в окне "
+"\"Подключить сигнал к методу\" . Убедитесь, что в скрипте рядом с функцией "
+"``func new_game()`` теперь появилась зелёная иконка подключения."
+
+msgid ""
+"In ``new_game()``, update the score display and show the \"Get Ready\" "
+"message:"
+msgstr ""
+"В ``new_game()`` обновим отображение счёта и выведем сообщение \"Get Ready\":"
+
+msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
+msgstr "В ``game_over()`` нам нужно вызвать соответствующую функцию ``HUD``:"
+
+msgid ""
+"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"sync with the changing score:"
+msgstr ""
+"Наконец добавьте это в ``_on_ScoreTimer_timeout()``, чтобы синхронизировать "
+"отображение с изменением количества очков:"
+
+msgid ""
+"Now you're ready to play! Click the \"Play the Project\" button. You will be "
+"asked to select a main scene, so choose ``Main.tscn``."
+msgstr ""
+"Теперь вы готовы к игре! Нажмите на кнопку \"Запустить проект\". Вам будет "
+"предложено выбрать основную сцену - выбирайте ``Main.tscn``."
+
+msgid "Removing old creeps"
+msgstr "Удаляем старых крипов"
+
+msgid ""
+"If you play until \"Game Over\" and then start a new game right away, the "
+"creeps from the previous game may still be on the screen. It would be better "
+"if they all disappeared at the start of a new game. We just need a way to "
+"tell *all* the mobs to remove themselves. We can do this with the \"group\" "
+"feature."
+msgstr ""
+"Если вы играете до \"Game Over\", а затем сразу начинаете новую игру, то "
+"крипы из предыдущей игры могут все еще оставаться на экране. Было бы лучше, "
+"если бы все они исчезали в начале новой игры. Нам просто нужен способ "
+"сказать *всем* мобам, чтобы они удалились. Мы можем сделать это с помощью "
+"функции \"group\" (\"группа\")."
+
+msgid ""
+"In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
+"to the Inspector (the same place where you find the node's signals). Next to "
+"\"Signals\", click \"Groups\" and you can type a new group name and click "
+"\"Add\"."
+msgstr ""
+"В сцене ``Mob`` выберите корневой узел и нажмите вкладку \"Узел\" рядом с "
+"Инспектором (там же, где вы находите сигналы узла). Рядом с \"Сигналы\" "
+"нажмите \"Группы\", введите новое имя группы и нажмите \"Добавить\"."
+
+#, fuzzy
+msgid ""
+"Now all mobs will be in the \"mobs\" group. We can then add the following "
+"line to the ``new_game()`` function in ``Main``:"
+msgstr ""
+"Теперь все мобы будут в группе \"mobs\". Затем мы можем добавить следующие "
+"строки к функции ``game_over()`` в ``Main``:"
+
+msgid ""
+"The ``call_group()`` function calls the named function on every node in a "
+"group - in this case we are telling every mob to delete itself."
+msgstr ""
+"Функция ``call_group()`` вызывает каждую именованную функцию на каждом узле "
+"в группе - в этом случае мы говорим каждому мобу удалять себя."
+
+msgid ""
+"The game's mostly done at this point. In the next and last part, we'll "
+"polish it a bit by adding a background, looping music, and some keyboard "
+"shortcuts."
+msgstr ""

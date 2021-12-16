@@ -1,0 +1,528 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# API differences to GDScript"
+msgstr "API различия C# и GDScript"
+
+msgid "This is a (incomplete) list of API differences between C# and GDScript."
+msgstr "Это (неполный) список различий API между C# и GDScript."
+
+msgid "General differences"
+msgstr "Общие отличия"
+
+msgid ""
+"As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
+"instead of the ``snake_case`` used in GDScript and C++."
+msgstr ""
+"Как объясняется в :ref:`doc_c_sharp`, C# обычно использует ``PascalCase`` "
+"вместо``snake_case``, используемого в GDScript и C++."
+
+msgid "Global scope"
+msgstr "Глобальный контекст"
+
+msgid ""
+"Global functions and some constants had to be moved to classes, since C# "
+"does not allow declaring them in namespaces. Most global constants were "
+"moved to their own enums."
+msgstr ""
+"Глобальные функции и некоторые константы пришлось перенести в классы, "
+"поскольку C# не позволяет объявлять их в пространствах имен. Большинство "
+"глобальных констант были перенесены в их собственные перечисления."
+
+msgid "Constants"
+msgstr "Константы"
+
+msgid ""
+"Global constants were moved to their own enums. For example, ``ERR_*`` "
+"constants were moved to the ``Error`` enum."
+msgstr ""
+"Глобальные константы были перенесены в собственные перечисления. Например, "
+"константы ``ERR_ *`` были перемещены в перечисление ``Error``."
+
+msgid "Special cases:"
+msgstr "Особые случаи:"
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid "C#"
+msgstr "C#"
+
+msgid "``SPKEY``"
+msgstr "``SPKEY``"
+
+msgid "``GD.SpKey``"
+msgstr "``GD.SpKey``"
+
+msgid "``TYPE_*``"
+msgstr "``TYPE_*``"
+
+msgid "``Variant.Type`` enum"
+msgstr "``Variant.Type`` перечисление"
+
+msgid "``OP_*``"
+msgstr "``OP_*``"
+
+msgid "``Variant.Operator`` enum"
+msgstr "``Variant.Operator`` перечисление"
+
+msgid "Math functions"
+msgstr "Математические функции"
+
+msgid ""
+"Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
+"``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
+msgstr ""
+"Глобальные математические функции, такие как ``abs``, ``acos``, ``asin``, "
+"``atan`` и ``atan2``, расположены под ``Mathf`` как ``Abs``, ``Acos``, "
+"``Asin``, ``Atan`` и ``Atan2``. Константу ``PI`` можно найти как ``Mathf."
+"Pi``."
+
+msgid "Random functions"
+msgstr "Случайные функции"
+
+msgid ""
+"Random global functions, like ``rand_range`` and ``rand_seed``, are located "
+"under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
+msgstr ""
+"Случайные глобальные функции, такие как ``rand_range`` и ``rand_seed``, "
+"расположены под ``GD``. Пример: ``GD.RandRange`` и ``GD.RandSeed``."
+
+msgid "Other functions"
+msgstr "Другие функции"
+
+msgid ""
+"Many other global functions like ``print`` and ``var2str`` are located under "
+"``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
+msgstr ""
+"Многие другие глобальные функции, такие как ``print`` и ``var2str``, "
+"расположены в ``GD``. Пример: ``GD.Print`` и ``GD.Var2Str``."
+
+msgid "Exceptions:"
+msgstr "Исключения:"
+
+msgid "``weakref(obj)``"
+msgstr "``weakref(obj)``"
+
+msgid "``Object.WeakRef(obj)``"
+msgstr "``Object.WeakRef(obj)``"
+
+msgid "``is_instance_valid(obj)``"
+msgstr "``is_instance_valid(obj)``"
+
+msgid "``Object.IsInstanceValid(obj)``"
+msgstr "``Object.IsInstanceValid(obj)``"
+
+msgid "Tips"
+msgstr "Советы"
+
+msgid ""
+"Sometimes it can be useful to use the ``using static`` directive. This "
+"directive allows to access the members and nested types of a class without "
+"specifying the class name."
+msgstr ""
+"Иногда может быть полезно использовать директиву ``using static``. Эта "
+"директива позволяет получить доступ к членам и вложенным типам класса без "
+"указания имени класса."
+
+msgid "Example:"
+msgstr "Пример:"
+
+msgid "Export keyword"
+msgstr "Ключевое слово Export"
+
+msgid ""
+"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword. "
+"This attribute can also be provided with optional :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
+"parameters. Default values can be set by assigning a value."
+msgstr ""
+"Используйте атрибут `` [Export] `` вместо ключевого слова GDScript "
+"``export``. Этот атрибут также может быть предоставлен с необязательными "
+"параметрами :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` и `` "
+"hintString``. Значения по умолчанию могут быть установлены путем присвоения "
+"значения."
+
+msgid "Signal keyword"
+msgstr "Ключевое слово Signal"
+
+msgid ""
+"Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
+"``signal`` keyword. This attribute should be used on a `delegate`, whose "
+"name signature will be used to define the signal."
+msgstr ""
+"Используйте атрибут ``[Signal]`` для объявления сигнала вместо ключевого "
+"слова GDScript ``signal``. Этот атрибут должен использоваться для "
+"`делегата`, чья подпись имени будет использоваться для определения сигнала."
+
+msgid "See also: :ref:`doc_c_sharp_signals`."
+msgstr "См. также: :ref:`doc_c_sharp_signals`."
+
+msgid "`onready` keyword"
+msgstr "ключевое слово `onready`"
+
+msgid ""
+"GDScript has the ability to defer the initialization of a member variable "
+"until the ready function is called with `onready` (cf. :ref:"
+"`doc_gdscript_onready_keyword`). For example:"
+msgstr ""
+"GDScript обладает возможностью отложить инициализацию переменной-члена до "
+"тех пор, пока функция `ready` не будет вызвана с помощью`onready` (см. :ref:"
+"`doc_gdscript_onready_keyword`). Например:"
+
+msgid ""
+"However C# does not have this ability. To achieve the same effect you need "
+"to do this."
+msgstr ""
+"Однако C# не имеет такой возможности. Чтобы достигнуть такого эффекта вы "
+"должны сделать это."
+
+msgid "Singletons"
+msgstr "Синглтоны"
+
+msgid ""
+"Singletons are available as static classes rather than using the singleton "
+"pattern. This is to make code less verbose than it would be with an "
+"``Instance`` property."
+msgstr ""
+"Синглтоны доступны как статические классы, а не как шаблон синглтона. Это "
+"сделано для того, чтобы сделать код менее подробным, чем это было бы со "
+"свойством `` Instance``."
+
+msgid ""
+"However, in some very rare cases this is not enough. For example, you may "
+"want to access a member from the base class ``Godot.Object``, like "
+"``Connect``. For such use cases we provide a static property named "
+"``Singleton`` that returns the singleton instance. The type of this instance "
+"is ``Godot.Object``."
+msgstr ""
+"Однако в некоторых очень редких случаях этого недостаточно. Например, вы "
+"можете захотеть получить доступ к члену из базового класса ``Godot.Object``, "
+"например ``Connect``. Для таких случаев использования мы предоставляем "
+"статическое свойство с именем ``Singleton``, которое возвращает экземпляр "
+"singleton. Тип этого экземпляра - ``Godot.Object``."
+
+msgid "String"
+msgstr "Строки"
+
+msgid ""
+"Use ``System.String`` (``string``). Most of Godot's String methods are "
+"provided by the ``StringExtensions`` class as extension methods."
+msgstr ""
+"Используйте ``System.String`` (``string``). Большинство методов Godot для "
+"работы со строками предоставляются классом ``StringExtensions`` в качестве "
+"методов расширения."
+
+msgid "There are a few differences, though:"
+msgstr "Здесь есть несколько различий:"
+
+msgid ""
+"``erase``: Strings are immutable in C#, so we cannot modify the string "
+"passed to the extension method. For this reason, ``Erase`` was added as an "
+"extension method of ``StringBuilder`` instead of string. Alternatively, you "
+"can use ``string.Remove``."
+msgstr ""
+"``erase``: строки неизменны в C#, поэтому мы не можем изменить строку, "
+"переданную методу расширения. По этой причине ``Erase`` был добавлен как "
+"метод расширения ``StringBuilder`` вместо строки. Также вы можете "
+"использовать ``string.Remove``."
+
+msgid ""
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
+"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
+"specify case sensitivity:"
+msgstr ""
+"``IsSubsequenceOf`` / ``IsSubsequenceOfi``: предоставляется дополнительный "
+"метод, который представляет собой перегрузку ``IsSubsequenceOf``, "
+"позволяющую вам явно указать чувствительность к регистру:"
+
+msgid ""
+"``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
+"``Match`` and ``Matchn``, which allows you to explicitly specify case "
+"sensitivity:"
+msgstr ""
+"``Match`` / ``Matchn`` / ``ExprMatch``: помимо ``Match`` и ``Matchn`` "
+"предоставляется дополнительный метод, который позволяет явно указать "
+"чувствительность к регистру:"
+
+msgid "Basis"
+msgstr "Базис"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Basis()`` initializes all primitive members to their default value. Use "
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
+msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Basis ()`` инициализирует все примитивные члены их значением по "
+"умолчанию. Используйте ``Basis.Identity`` для эквивалента ``Basis ()`` в "
+"GDScript и C++."
+
+msgid "The following method was converted to a property with a different name:"
+msgstr "Следующий метод был преобразован в свойство с другим именем:"
+
+msgid "``get_scale()``"
+msgstr "``get_scale()``"
+
+msgid "``Scale``"
+msgstr "``Scale``"
+
+msgid "Transform2D"
+msgstr "Transform2D"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform2D()`` initializes all primitive members to their default value. "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
+"in GDScript and C++."
+msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Transform2D()`` инициализирует все примитивные члены их значением по "
+"умолчанию. Пожалуйста, используйте ``Transform2D.Identity`` для эквивалента "
+"``Transform2D()`` в GDScript и C++."
+
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+"Следующие методы были преобразованы в свойства с соответствующими именами:"
+
+msgid "``get_rotation()``"
+msgstr "``get_rotation()``"
+
+msgid "``Rotation``"
+msgstr "``Вращение``"
+
+msgid "Plane"
+msgstr "Плоскость"
+
+msgid ""
+"The following method was converted to a property with a *slightly* different "
+"name:"
+msgstr "Следующий метод был преобразован в свойство с *немного* другим именем:"
+
+msgid "``center()``"
+msgstr "``center()``"
+
+msgid "``Center``"
+msgstr "``Center``"
+
+msgid "Rect2"
+msgstr "Rect2"
+
+msgid ""
+"The following field was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+"Следующее поле было преобразовано в свойство с *немного* другим именем:"
+
+msgid "``end``"
+msgstr "``end``"
+
+msgid "``End``"
+msgstr "``End``"
+
+msgid "``get_area()``"
+msgstr "``get_area()``"
+
+msgid "``Area``"
+msgstr "``Area``"
+
+msgid "Quat"
+msgstr "Кват"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Quat()`` initializes all primitive members to their default value. Please "
+"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
+msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Quat()`` инициализирует все примитивные члены их значением по "
+"умолчанию. Пожалуйста, используйте ``Quat.Identity`` для эквивалента "
+"``Quat()`` в GDScript и C++."
+
+msgid ""
+"The following methods were converted to a property with a different name:"
+msgstr "Следующие методы были преобразованы в свойство с другим именем:"
+
+msgid "``length()``"
+msgstr "``length()``"
+
+msgid "``Length``"
+msgstr "``Длина``"
+
+msgid "``length_squared()``"
+msgstr "``length_squared()``"
+
+msgid "``LengthSquared``"
+msgstr "``LengthSquared``"
+
+msgid "Array"
+msgstr "Массив"
+
+msgid ""
+"*This is temporary. PoolArrays will need their own types to be used the way "
+"they are meant to.*"
+msgstr ""
+"*Это временно. PoolArrays нуждаются в их собственных типах чтобы ими можно "
+"было пользоваться так как было задумано. *"
+
+msgid "``Array``"
+msgstr "``Массив``"
+
+msgid "``Godot.Collections.Array``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``PoolIntArray``"
+msgstr "``PoolIntArray``"
+
+msgid "``int[]``"
+msgstr "``int[]``"
+
+msgid "``PoolByteArray``"
+msgstr "``PoolByteArray``"
+
+msgid "``byte[]``"
+msgstr "``byte[]``"
+
+msgid "``PoolFloatArray``"
+msgstr "``PoolFloatArray``"
+
+msgid "``float[]``"
+msgstr "``float[]``"
+
+msgid "``PoolStringArray``"
+msgstr "``PoolStringArray``"
+
+msgid "``String[]``"
+msgstr "``String[]``"
+
+msgid "``PoolColorArray``"
+msgstr "``PoolColorArray``"
+
+msgid "``Color[]``"
+msgstr "``Color[]``"
+
+msgid "``PoolVector2Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Vector2[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PoolVector3Array``"
+msgstr "``PoolVector3Array``"
+
+msgid "``Vector3[]``"
+msgstr "``Vector3[]``"
+
+msgid ""
+"``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
+"Array)`` constructor to create one."
+msgstr ""
+"``Godot.Collections.Array <T> `` является типобезопасной оболочкой для "
+"``Godot.Collections.Array``. Используйте конструктор ``Godot.Collections."
+"Array <T> (Godot.Collections.Array)`` для его создания."
+
+msgid "Dictionary"
+msgstr "Словарь"
+
+msgid "Use ``Godot.Collections.Dictionary``."
+msgstr "Используйте ``Godot.Collections.Dictionary``."
+
+msgid ""
+"``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
+"Collections.Dictionary)`` constructor to create one."
+msgstr ""
+"``Godot.Collections.Dictionary <T> `` является типобезопасной оболочкой "
+"вокруг ``Godot.Collections.Dictionary``. Используйте конструктор ``Godot."
+"Collections.Dictionary <T> (Godot.Collections.Dictionary)`` для его создания."
+
+msgid "Variant"
+msgstr "Variant"
+
+msgid "``System.Object`` (``object``) is used instead of ``Variant``."
+msgstr "``System.Object`` (`` object``) используется вместо ``Variant``."
+
+msgid "Communicating with other scripting languages"
+msgstr "Общение с другими языками сценариев"
+
+msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
+msgstr "Это подробно объясняется в :ref:`doc_cross_language_scripting`."
+
+msgid "Yield"
+msgstr "Yield"
+
+msgid ""
+"Something similar to GDScript's ``yield`` with a single parameter can be "
+"achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield>`_."
+msgstr ""
+"Нечто похожее на ``yield`` в GDScript с одним параметром может быть "
+"достигнуто с помощью ключевого слова `yield C# <https://docs.microsoft.com/"
+"ru-ru/dotnet/csharp/language-reference/keywords/yield>`_."
+
+msgid ""
+"The equivalent of yield on signal can be achieved with async/await and "
+"``Godot.Object.ToSignal``."
+msgstr ""
+"Эквивалент выхода по сигналу может быть достигнут с помощью async / await и "
+"``Godot.Object.ToSignal``."
+
+msgid "Other differences"
+msgstr "Другие различия"
+
+msgid ""
+"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
+"Load`` or ``ResourceLoader.Load`` instead."
+msgstr ""
+"``preload``, так как он работает в GDScript, недоступен в C#. Вместо этого "
+"используйте ``GD.Load`` или ``ResourceLoader.Load``."
+
+msgid "Other differences:"
+msgstr "Другие отличия:"
+
+msgid "``Color8``"
+msgstr "``Color8``"
+
+msgid "``Color.Color8``"
+msgstr "``Color.Color8``"
+
+msgid "``is_inf``"
+msgstr "``is_inf``"
+
+msgid "``float.IsInfinity``"
+msgstr "``float.IsInfinity``"
+
+msgid "``is_nan``"
+msgstr "``is_nan``"
+
+msgid "``float.IsNaN``"
+msgstr "``float.IsNaN``"
+
+msgid "``dict2inst``"
+msgstr "``dict2inst``"
+
+msgid "TODO"
+msgstr "TODO"
+
+msgid "``inst2dict``"
+msgstr "``inst2dict``"

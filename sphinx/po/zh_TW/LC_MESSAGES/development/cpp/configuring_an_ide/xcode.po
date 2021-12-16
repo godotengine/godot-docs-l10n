@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
 msgstr "\\ Xcode"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
 "`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
 "can download it from the Mac App Store."
@@ -29,54 +27,43 @@ msgstr ""
 "`Xcode <https://developer.apple.com/xcode>`_ 是僅可用於 macOS 的免費 IDE。可"
 "以從 Mac App Store 中下載。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
 msgid "Importing the project"
 msgstr "匯入專案"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:12
 msgid ""
 "From Xcode's main screen create a new project using the **Other > External "
 "Build System** template."
 msgstr ""
 "從 Xcode 的主畫面中通過 **Other > External Build System** 樣板來建立新專案。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
 msgid ""
 "Open your build targets from the **Targets** section and select the **Info** "
 "tab."
 msgstr "從 **Targets** 段落中開啟建構目標，並選擇 **Info** 分頁。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
 msgid "Fill out the form with the following settings:"
 msgstr "填寫下列設定："
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "Build Tool"
 msgstr "\\ Build Tool"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
 msgstr "**scons** 執行檔的完整路徑，如 **/usr/local/bin/scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid "Arguments"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "有關完整的引數列表，請參考 :ref:`doc_introduction_to_the_buildsystem` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
 msgid "Directory"
 msgstr "\\ Directory"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
 msgid "A full path to the Godot root folder"
 msgstr "Godot 根目錄的完整路徑"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:33
 msgid ""
 "Add a Command Line Tool target which will be used for indexing the project "
 "by choosing **File > New > Target...**."
@@ -84,11 +71,9 @@ msgstr ""
 "選擇 **File > New > Target...** 來新增一個用於對專案進行索引的 Command Line "
 "Tool 目標。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
 msgid "Select **OS X > Application > Command Line Tool**."
 msgstr "選擇 **OS X > Application > Command Line Tool** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
@@ -96,14 +81,12 @@ msgstr ""
 "請為該建置目標命名，這樣才能分辨出該建置目標不是要用來編譯的 (如 "
 "``GodotXcodeIndex``)。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
 msgid ""
 "For this target open the **Build Settings** tab and look for **Header Search "
 "Paths**."
 msgstr ""
 "開啟該建置目標的 **Build Settings** 分頁，並找到 **Header Search Paths** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
 msgid ""
 "Set **Header Search Paths** to the absolute path to the Godot root folder. "
 "You need to include subdirectories as well. To achieve that, add two two "
@@ -114,17 +97,14 @@ msgstr ""
 "要包含子資料夾，請在路徑的結尾新增兩個星號 (``**``) ，如 ``/Users/me/repos/"
 "godot-source/**`` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 msgid ""
 "Add the Godot source to the project by dragging and dropping it into the "
 "project file browser."
 msgstr "將 Godot 原始碼拖放到專案檔案瀏覽器中來將這些檔案新增至專案中。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
 msgid "Uncheck **Create external build system project**."
 msgstr "取消選取 **Create external build system project** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
 msgid ""
 "Next select **Create groups** for the **Added folders** option and check "
 "*only* your command line indexing target in the **Add to targets** section."
@@ -132,11 +112,9 @@ msgstr ""
 "接下來，選擇 **Added folders** 選項中的 **Create groups** ，然後請檢查 **Add "
 "to targets** 中應該 **只** 包含命令行索引建置目標。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
 msgid "Xcode will now index the files. This may take a few minutes."
 msgstr "Xcode 接著會開始索引檔案。會需要花一點時間。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
 msgid ""
 "Once Xcode is done indexing, you should have jump-to-definition, "
 "autocompletion, and full syntax highlighting."
@@ -144,29 +122,23 @@ msgstr ""
 "Xcode 索引完成後，就可以使用跳至定義 (Jump-to-Definition) 功能、自動補全、以"
 "及完整的語法醒目提示功能。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
 msgid "Debugging the project"
 msgstr "對專案進行除錯"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
 msgid ""
 "To enable debugging support you need to edit the external build target's "
 "build and run schemes."
 msgstr "若要啟用除錯功能，則需要編輯外部建置目標的建置並執行 Scheme。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
 msgstr "開啟外部建置目標的 Scheme 編輯器。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
 msgid "Locate the **Build > Post Actions** section."
 msgstr "移至 **Build > Post Actions** 部分。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
 msgid "Add a new script run action"
 msgstr "新增一個新的腳本執行動作"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
 msgid ""
 "Under **Provide build settings from** select your project. This allows to "
 "reference the project directory within the script."
@@ -174,31 +146,25 @@ msgstr ""
 "在 **Provide build settings from** 中選擇專案。這樣一來便可以在腳本中參照到專"
 "案資料夾。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
 msgstr "建立用來提供 Xcode 可識別之二進位檔名稱的腳本，如："
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
 msgid "Build the external build target."
 msgstr "建置外部建置目標。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
 msgid "Open the scheme editor again and select **Run**."
 msgstr "再次開啟 Scheme 編輯器，然後選擇 **Run** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr "將 **Executable** 設為連結到 post-build 操作腳本的檔案。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
 msgid "Check **Debug executable**."
 msgstr "勾選 **Debug executable** 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
 "You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
 "the editor instead of the project manager, and the ``--path`` argument tells "
@@ -209,7 +175,6 @@ msgstr ""
 "e`` 旗標，以及用於告訴編輯器要開啟哪個特定專案的 ``--path`` 引數 (必須提供專"
 "案根目錄的 **絕對** 路徑，而非 ``project.godot`` 檔案)。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/osx/"
 "godot_main_osx.mm`` and run the project."
@@ -217,7 +182,6 @@ msgstr ""
 "要檢查是否一切正常，請在 ``platform/osx/godot_main_osx.mm`` 中新增一個斷點，"
 "並執行專案。"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

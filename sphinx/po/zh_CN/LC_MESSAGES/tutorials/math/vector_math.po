@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
 msgstr "向量数学"
 
-#: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
 "This tutorial is a short and practical introduction to linear algebra as it "
 "applies to game development. Linear algebra is the study of vectors and "
@@ -37,7 +34,6 @@ msgstr ""
 "量及其用途的学科. 向量在二维和三维开发中都有许多应用,Godot对它们的应用非常广"
 "泛. 要成为一名优秀的游戏开发者, 对向量数学的理解是必不可少的."
 
-#: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
 "This tutorial is **not** a formal textbook on linear algebra. We will only "
 "be looking at how it is applied to game development. For a broader look at "
@@ -46,11 +42,9 @@ msgstr ""
 "本教程 **不是** 线性代数的正式教科书. 我们将只关注它如何应用于游戏开发. 要更"
 "全面地了解数学, 请参见 https://www.khanacademy.org/math/linear-algebra"
 
-#: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
 msgstr "坐标系统(2D)"
 
-#: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
 "In 2D space, coordinates are defined using a horizontal axis (``x``) and a "
 "vertical axis (``y``). A particular position in 2D space is written as a "
@@ -59,7 +53,6 @@ msgstr ""
 "在2D空间中, 使用水平轴 (``x``) 和垂直轴 (``y``) 定义坐标. 2D空间中的特定位置"
 "被写成一对值, 如 ``(4, 3)``."
 
-#: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
 "If you're new to computer graphics, it might seem odd that the positive "
 "``y`` axis points **downwards** instead of upwards, as you probably learned "
@@ -70,7 +63,6 @@ msgstr ""
 "** , 而不是向上(您在数学课上学到的就像那样). 然而, 这在大多数计算机图形应用程"
 "序中是常见的."
 
-#: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
 "Any position in the 2D plane can be identified by a pair of numbers in this "
 "way. However, we can also think of the position ``(4, 3)`` as an **offset** "
@@ -81,7 +73,6 @@ msgstr ""
 "3)`` 看作是从 ``(0, 0)`` 点或 **原点** 出发的 **偏移** . 画一个箭头从原点指向"
 "点:"
 
-#: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
 "This is a **vector**. A vector represents a lot of useful information. As "
 "well as telling us that the point is at ``(4, 3)``, we can also think of it "
@@ -93,7 +84,6 @@ msgstr ""
 "外, 我们还可以把它看成角度 ``θ`` 和长度(或幅度) ``m``. 在这种情况下, 箭头是一"
 "个 **位置向量** -它表示空间中相对于原点的位置."
 
-#: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
 "A very important point to consider about vectors is that they only represent "
 "**relative** direction and magnitude. There is no concept of a vector's "
@@ -102,7 +92,6 @@ msgstr ""
 "关于向量, 需要考虑的一个重要点是它们仅表示 **相对** 方向和大小. 没有一个向量"
 "的位置的概念. 以下两个向量相同:"
 
-#: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
 "Both vectors represent a point 4 units to the right and 3 units below some "
 "starting point. It does not matter where on the plane you draw the vector, "
@@ -111,11 +100,9 @@ msgstr ""
 "这两个向量都表示向右4个单位, 在某个起始点以下3个单位. 不管您在平面上画哪个向"
 "量, 它总是代表一个相对的方向和大小."
 
-#: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector operations"
 msgstr "向量运算"
 
-#: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
 "refer to a vector, but for convenience, programmers typically use the "
@@ -127,7 +114,6 @@ msgstr ""
 "序员通常使用坐标表示法. 例如, 在Godot中, 原点是屏幕左上角, 因此要将一个名为 "
 "``Node2D`` 的2D节点向右400像素, 向下300像素, 请使用以下代码:"
 
-#: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
 "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
@@ -136,68 +122,54 @@ msgstr ""
 "Godot支持 :ref:`Vector2 <class_Vector2>` 和 :ref:`Vector3 <class_Vector3>` 分"
 "别用于2D和3D. 本文讨论的数学规则同样适用于这两种类型."
 
-#: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
 msgstr "成员访问"
 
-#: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr "向量的各个组成部分可以直接通过名称访问."
 
-#: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
 msgstr "添加向量"
 
-#: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr "当两个向量相加或相减时, 相应的分量相加:"
 
-#: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr "我们也可以通过在第一个向量的末尾加上第二个向量来直观地看到这一点:"
 
-#: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
-msgstr "注意, 加法 ``a + b`` 和 ``b + a``得到的结果是一样的."
+msgstr "注意，做 ``a + b`` 的加法和 ``b + a`` 得到的结果是一样的。"
 
-#: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
 msgstr "标量乘法"
 
-#: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr "向量表示方向和幅度. 仅表示幅值的值称为 **标量** ."
 
-#: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
 msgstr "一个向量可以乘以一个标量:"
 
-#: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr "向量乘以标量不会改变它的方向, 只会改变它的幅值. 这就是缩放向量的方法."
 
-#: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
 msgstr "实际应用"
 
-#: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr "让我们看看向量加法和减法的两种常见用法."
 
-#: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
 msgstr "移动"
 
-#: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
 "A vector can represent **any** quantity with a magnitude and direction. "
 "Typical examples are: position, velocity, acceleration, and force. In this "
@@ -211,18 +183,15 @@ msgstr ""
 "``(2,1)``. 速度向量表示船舶每一步移动的距离. 通过将速度加到当前位置, 我们可以"
 "求出步骤2的位置."
 
-#: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
 msgstr ""
 "速度测量单位时间内位置的变化. 新的位置是通过在前一个位置上增加速度来找到的."
 
-#: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
 msgstr "指向一个目标"
 
-#: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
 "In this scenario, you have a tank that wishes to point its turret at a "
 "robot. Subtracting the tank's position from the robot's position gives the "
@@ -231,15 +200,12 @@ msgstr ""
 "在这个场景中, 您有一个坦克, 希望它的炮塔指向机器人. 从机器人的位置减去坦克的"
 "位置就得到了从坦克指向机器人的向量."
 
-#: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr "要找到从 ``A`` 指向 ``B`` 的向量, 请使用 ``B - A``."
 
-#: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
 msgstr "单位向量"
 
-#: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
 "A vector with **magnitude** of ``1`` is called a **unit vector**. They are "
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
@@ -248,11 +214,9 @@ msgstr ""
 "一个 **大小** 为 ``1`` 的向量称为 **单位向量** . 它们有时也被称为 **方向向量"
 "** 或 **法线** . 当您需要跟踪一个方向时, 单位向量是有用的."
 
-#: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
 msgstr "归一化"
 
-#: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -263,7 +227,6 @@ msgstr ""
 "分量除以其幅度. 由于这是一个很常见的操作, ``Vector2`` 和 ``Vector3`` 提供了归"
 "一化的方法:"
 
-#: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -272,11 +235,9 @@ msgstr ""
 "因为归一化需要除以向量的长度, 所以不能对长度为 ``0`` 的向量进行归一化. 试图这"
 "样做会导致错误."
 
-#: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
 msgstr "反射"
 
-#: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -286,13 +247,11 @@ msgstr ""
 "单位向量的一种常见用法是表示 **法线** . 法向量是垂直于曲面的单位向量, 定义了"
 "曲面的方向. 它们通常用于照明, 碰撞和涉及表面的其他操作."
 
-#: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr "例如, 假设我们有一个移动的球, 我们想从墙上或其他物体上弹回来:"
 
-#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -301,16 +260,14 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
-"因为这是一个水平曲面, 所以曲面法线的值为 ``(0, -1)`` . 当球碰撞时, 我们取它的"
-"剩余运动(当它撞到表面时剩余的量), 用法线反射它. 在Godot中, :ref:`Vector2 "
-"<class_Vector2>` 类有一个 ``bounce()`` 方法来处理这个问题. 上图有一个使用 :"
-"ref:`KinematicBody2D <class_KinematicBody2D>` 的GDScript示例:"
+"因为这是一个水平曲面，所以曲面法线的值为 ``(0, -1)`` . 当球碰撞时，我们取它的"
+"原运动方向(当它撞到表面时剩余的量), 以法线为角平分线反射它。在Godot中， :ref:"
+"`Vector2 <class_Vector2>` 类有一个 ``bounce()`` 方法来处理这个问题。这是上图"
+"的 GDScript 示例，使用 :ref:`KinematicBody2D <class_KinematicBody2D>`："
 
-#: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
 msgstr "点乘"
 
-#: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -320,22 +277,18 @@ msgstr ""
 "**点乘** 是向量数学中最重要的概念之一, 但经常被误解. 点乘是对两个向量的操作, "
 "它返回一个 **标量** . 与同时包含大小和方向的向量不同, 标量值只有大小."
 
-#: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
 msgstr "点乘公式有两种常见形式:"
 
-#: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
 msgstr "以及"
 
-#: ../../docs/tutorials/math/vector_math.rst:266
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
 "然而, 在大多数情况下, 使用内置方法是最容易的. 注意, 两个向量的顺序并不重要:"
 
-#: ../../docs/tutorials/math/vector_math.rst:280
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -344,17 +297,14 @@ msgstr ""
 "当与单位向量一起使用时, 点积是最有用的, 使得第一个公式减少到仅有 ``cosθ``. 这"
 "意味着我们可以使用点积来告诉我们关于两个向量之间的角度的一些信息:"
 
-#: ../../docs/tutorials/math/vector_math.rst:286
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr "当使用单位向量, 结果总是会在 ``-1`` (180°) 和 ``1`` (0°) 之间."
 
-#: ../../docs/tutorials/math/vector_math.rst:290
 msgid "Facing"
 msgstr "面向问题"
 
-#: ../../docs/tutorials/math/vector_math.rst:292
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -365,7 +315,6 @@ msgstr ""
 "``P`` 试图避开丧尸 ``A`` 和 ``B`` . 假设一个丧尸的视野是 **180°** , 他们能看"
 "到游戏角色吗?"
 
-#: ../../docs/tutorials/math/vector_math.rst:298
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -379,15 +328,12 @@ msgstr ""
 "归一化处理, 不过,Godot有一个辅助方法可以做到这一点, 叫做 ``direction_to`` . "
 "如果这个向量和面对的向量之间的角度小于90°, 那么僵尸就可以看到玩家."
 
-#: ../../docs/tutorials/math/vector_math.rst:306
 msgid "In code it would look like this:"
 msgstr "在代码中是这样的:"
 
-#: ../../docs/tutorials/math/vector_math.rst:324
 msgid "Cross product"
 msgstr "叉乘"
 
-#: ../../docs/tutorials/math/vector_math.rst:326
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
@@ -399,15 +345,12 @@ msgstr ""
 "与两个向量垂直的向量. 它的大小取决于相对角度. 如果两个向量是平行的, 那么交叉"
 "乘积的结果将是一个空向量."
 
-#: ../../docs/tutorials/math/vector_math.rst:335
 msgid "The cross product is calculated like this:"
 msgstr "叉乘是这样计算的:"
 
-#: ../../docs/tutorials/math/vector_math.rst:354
 msgid "With Godot, you can use the built-in method:"
 msgstr "使用Godot, 您可以使用内置的方法:"
 
-#: ../../docs/tutorials/math/vector_math.rst:365
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -416,11 +359,9 @@ msgstr ""
 "在叉乘中, 顺序很重要. ``a.cross(b)`` 和 ``b.cross(a)`` 的结果不一样. 得到的向"
 "量指向相反的方向."
 
-#: ../../docs/tutorials/math/vector_math.rst:370
 msgid "Calculating normals"
 msgstr "法线计算"
 
-#: ../../docs/tutorials/math/vector_math.rst:372
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -431,15 +372,12 @@ msgstr ""
 "``ABC`` 我们可以用向量减法找到两条边 ``AB`` 和 ``AC``. 通过叉乘, ``AB x AC`` "
 "得到一个垂直于这两个向量的向量: 表面法向量."
 
-#: ../../docs/tutorials/math/vector_math.rst:377
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "下面是一个计算三角形法线的函数:"
 
-#: ../../docs/tutorials/math/vector_math.rst:401
 msgid "Pointing to a target"
 msgstr "指向目标"
 
-#: ../../docs/tutorials/math/vector_math.rst:403
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
 "angle between two vectors. However, in 3D, this is not enough information. "
@@ -451,20 +389,16 @@ msgstr ""
 "些信息还不够. 我们还需要知道在围绕什么轴旋转. 我们可以通过计算当前面对的方向"
 "和目标方向的交叉乘积来查找. 由此得到的垂直向量就是旋转轴."
 
-#: ../../docs/tutorials/math/vector_math.rst:411
 msgid "More information"
 msgstr "更多信息"
 
-#: ../../docs/tutorials/math/vector_math.rst:413
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr "有关在Godot中使用向量数学的更多信息, 请参阅以下文章:"
 
-#: ../../docs/tutorials/math/vector_math.rst:415
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ":ref:`doc_vectors_advanced`"
 
-#: ../../docs/tutorials/math/vector_math.rst:416
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ":ref:`doc_matrices_and_transforms`"

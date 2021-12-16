@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Animation"
+msgstr "Animación"
+
+msgid "Animation supported:"
+msgstr "Animaciones soportadas:"
+
+msgid "transform animation of all types of objects"
+msgstr "Transformación de la animación de todo tipo de objetos"
+
+msgid "transform animation of pose bones"
+msgstr "Transformación de la animación de la pose de los huesos"
+
+msgid "shape key animation"
+msgstr "Animación de shape key"
+
+msgid "light animation"
+msgstr "Animación de iluminación"
+
+msgid "camera animation"
+msgstr "Animación de cámara"
+
+msgid "Multiple Actions For Single Object"
+msgstr "Acciones múltiples para un objeto único"
+
+msgid ""
+"In most games, one object would have several animations to switch between. "
+"This add-on has support for exporting multiple actions all at once into a "
+"single AnimationPlayer and makes it easy to switch actions."
+msgstr ""
+"En la mayoría de los juegos, un objeto tendría varias animaciones entre las "
+"que cambiar. Este complemento es compatible con la exportación de múltiples "
+"acciones a la vez a un solo AnimationPlayer y facilita el cambio de acciones."
+
+msgid ""
+"This workflow makes use of blender nla_tracks. Here is a brief guide on how "
+"to use this feature:"
+msgstr ""
+"Este flujo de trabajo hace uso de blender nla_tracks. Aquí hay una breve "
+"guía sobre cómo usar esta función:"
+
+msgid "**1. Stash active action**"
+msgstr "**2. Almacenar la acción activa.**"
+
+msgid ""
+"New created action is always an active action bound to object. There are "
+"several ways to place an active action into NLA track, one is of course "
+"doing it in ``NLA Editor``"
+msgstr ""
+"Una nueva acción creada es siempre una acción activa unida a un objeto. Hay "
+"varias maneras de colocar una acción activa en una pista NLA , una es por "
+"supuesto haciéndolo en ``NLA Editor``"
+
+msgid "Or it can be done stashing the action in ``Dope Sheet``"
+msgstr "o puede ser hecho almacenando la acción en ``Dope Sheet``"
+
+msgid "**2. Check mute status of NLA tracks**"
+msgstr "**2. Comprueba el estado silencio de las pistas NLA"
+
+msgid ""
+"An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
+"``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
+"tracks into every action (including the action action) being exported."
+msgstr ""
+"Una pista NLA puede estar en “silencio” o “sin silencio”, el exportador "
+"exportará todas las pistas NLA en \"silencio\" como una acción separada, "
+"mientras combina todas las pistas NLA \"sin silencio\" en cada acción "
+"(incluyendo la acción action) que será exportada."
+
+msgid "**3. Export the scene**"
+msgstr "**3. Exportar la escena**"
+
+msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
+msgstr "Asegurate que la opción “Exportar acciones ocultas” ha sido activada."
+
+msgid ""
+"Then all the stashed actions, as well as the active action, are exported to "
+"an AnimationPlayer."
+msgstr ""
+"A continuación, todas las acciones ocultas, así como la acción activa, se "
+"exportan a un AnimationPlayer."
+
+msgid "Constraints"
+msgstr "Constraints"
+
+msgid ""
+"Sometimes complicated animation is built with object constraint; a usual "
+"example is inverse kinematics. The add-on would automatically check if an "
+"object has some constraint; if it does, all the constraints are baked into "
+"actions and then exported along with the object."
+msgstr ""
+"A veces se construye una animación complicada con restricciones de objetos; "
+"un ejemplo habitual es inverse kinematics. El complemento comprobaría "
+"automáticamente si un objeto tiene alguna restricción; si la tiene, todas "
+"las restricciones se convierten en acciones y luego se exportan junto con el "
+"objeto."
+
+msgid "Animation Mode"
+msgstr "Modo Animación"
+
+msgid ""
+"Godot and Blender have different structure to store animation data. In Godot "
+"animation data is stored in an AnimationPlayer node, instead of in each "
+"animated node. In order to fix this inconsistence and still make the "
+"animation play versatile, this add-on has three animation exporting modes."
+msgstr ""
+"Godot y Blender tienen una estructura diferente para almacenar datos de "
+"animación. En Godot los datos de animación se almacenan en un nodo "
+"AnimationPlayer, en lugar de en cada nodo animado. Para corregir esta "
+"inconsistencia y hacer que las animaciones sigan versátiles, este add-on "
+"tiene tres modos de exportar animaciones."
+
+msgid "**Mode 'Animation as Actions'**"
+msgstr "**Modo de Animación como Actions'**"
+
+msgid ""
+"Treat all the animations as object actions, so in the exported scene, every "
+"object would have its own AnimationPlayer and hold its actions."
+msgstr ""
+"Trate todas las animaciones como acciones del objeto, por lo que en la "
+"escena exportada, cada objeto tendrá su propio AnimationPlayer y mantendrá "
+"sus acciones."
+
+msgid "**Mode 'Scene Animation'**"
+msgstr "**Modo 'Scene Animation'**"
+
+msgid ""
+"If you want your animation to generate the same result as playing at "
+"Blender's timeline, this is what you want. In this mode, all the animations "
+"in the scene are placed in just one AnimationPlayer in the scene root."
+msgstr ""
+"Si quieres que tu animación genere el mismo resultado que se reproduce en la "
+"línea de tiempo de Blender, esto es lo que quieres. En este modo, todas las "
+"animaciones en la escena se colocan en un solo AnimationPlayer en la raíz de "
+"la escena."
+
+msgid "**Mode 'Animation as Action with Squash'**"
+msgstr "**Modo 'Animation as Action with Squash'**"
+
+msgid ""
+"This mode has very similar behavior of mode 'Animation as Action', but it "
+"can generate fewer AnimationPlayers; objects in parent-children relationship "
+"would share their AnimationPlayer. It is useful when you have several rigs, "
+"and each Skeleton and Mesh has actions; then one rig would have just one "
+"AnimationPlayer."
+msgstr ""
+"Este modo tiene un comportamiento muy similar al modo 'Animation as Action', "
+"pero puede generar menos AnimationPlayers; Los objetos en la relación padre-"
+"hijo compartirían su AnimationPlayer. Es útil cuando tienes varias "
+"plataformas, y cada Esqueleto y Malla tiene acciones; entonces una "
+"plataforma tendría solo un AnimationPlayer."

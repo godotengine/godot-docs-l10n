@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
 msgstr "Godot开发简介"
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
 "This page is meant to introduce the global organization of Godot Engine's "
 "source code, and give useful tips for extending/fixing the engine on the C++ "
@@ -30,22 +28,18 @@ msgstr ""
 "本文旨在介绍Godot引擎源代码的全局架构, 并提供有关在C++端扩展/修复引擎的有用技"
 "巧."
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
 msgstr "架构图"
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
 "The following diagram describes the architecture used by Godot, from the "
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr "下图描述了Godot使用的架构, 从核心组件到抽象驱动, 经过场景架构和服务."
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
 msgstr "使用gdb调试编辑器"
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
 "If you are writing or correcting bugs affecting Godot Engine's editor, "
 "remember that the binary will by default run the project manager first, and "
@@ -59,6 +53,5 @@ msgstr ""
 "目, 你需要通过将 ``-e`` 参数传递给项目文件夹中Godot引擎的二进制文件来运行编辑"
 "器. 通常:"
 
-#: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
 msgstr "或者:"

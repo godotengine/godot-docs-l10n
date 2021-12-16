@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/websocket.rst:4
 msgid "WebSocket"
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:7
 msgid "HTML5 and WebSocket"
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:9
 msgid ""
 "The WebSocket protocol was standardized in 2011 with the original goal of "
 "allowing browsers to create stable and bidirectional connections with a "
@@ -33,7 +30,6 @@ msgid ""
 "not well-suited for bidirectional communication."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:12
 msgid ""
 "The protocol is quite simple, message based, and a very powerful tool to "
 "send push notifications to browsers, and has been used to implement chats, "
@@ -43,23 +39,19 @@ msgid ""
 "cases)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:14
 msgid ""
 "Due to its simplicity, its wide compatibility, and being easier to use than "
 "a raw TCP connection, WebSocket soon started to spread outside the browsers, "
 "in native applications as a mean to communicate with network servers."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:16
 msgid "Godot supports WebSocket in both native and HTML5 exports."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:19
 #, fuzzy
 msgid "Using WebSocket in Godot"
 msgstr "Godot에서 NuGet 패키지 사용하기"
 
-#: ../../docs/tutorials/networking/websocket.rst:21
 msgid ""
 "WebSocket is implemented in Godot via three main classes :ref:"
 "`WebSocketClient <class_WebSocketClient>`, :ref:`WebSocketServer "
@@ -69,7 +61,6 @@ msgid ""
 "for more details."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:25
 msgid ""
 "When exporting to Android, make sure to enable the [code]INTERNET[/code] "
 "permission in the Android export preset before exporting the project or "
@@ -77,43 +68,35 @@ msgid ""
 "blocked by Android."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:31
 #, fuzzy
 msgid "Minimal client example"
 msgstr "타이머(Timer) 예제"
 
-#: ../../docs/tutorials/networking/websocket.rst:33
 msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:86
 #, fuzzy
 msgid "This will print:"
 msgstr "이렇게 프린트 될 것입니다:"
 
-#: ../../docs/tutorials/networking/websocket.rst:94
 #, fuzzy
 msgid "Minimal server example"
 msgstr "타이머(Timer) 예제"
 
-#: ../../docs/tutorials/networking/websocket.rst:96
 msgid ""
 "This example will show you how to create a WebSocket server that listens for "
 "remote connections, and how to send and receive data."
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:152
 msgid "This will print (when a client connects) something similar to this:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/websocket.rst:160
 #, fuzzy
 msgid "Advanced chat demo"
 msgstr "고급 벡터 연산"
 
-#: ../../docs/tutorials/networking/websocket.rst:162
 msgid ""
 "A more advanced chat demo which optionally uses the multiplayer mid-level "
 "abstraction and a high level multiplayer demo are available in the `godot "

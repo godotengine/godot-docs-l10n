@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
 msgid "Visual Studio"
 msgstr "Visual Studio"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
 "`Visual Studio Community <https://visualstudio.microsoft.com>`__ is a "
 "Windows-only IDE by `Microsoft <https://microsoft.com>`_ that's free for non-"
@@ -32,11 +30,9 @@ msgstr ""
 "`Microsoft <https://microsoft.com>`_ 的一个只面向Windows的IDE, 免费供非商业使"
 "用. 它有很多有用的功能, 如内存视图, 性能视图, 源码控制等."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
 msgid "Importing the project"
 msgstr "导入项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:14
 msgid ""
 "Visual Studio requires a solution file to work on a project. While Godot "
 "does not come with the solution file, it can be generated using SCons."
@@ -44,17 +40,14 @@ msgstr ""
 "Visual Studio需要一个解决方案文件来处理一个项目. 虽然Godot没有附带解决方案文"
 "件, 但可以使用SCons生成."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:17
 msgid ""
 "Navigate to the Godot root folder and open a Command Prompt or PowerShell "
 "window."
 msgstr "导航到Godot根文件夹, 打开命令提示符或PowerShell窗口."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:18
 msgid "Run ``scons platform=windows vsproj=yes`` to generate the solution."
 msgstr "运行 ``scons platform=windows vsproj=yes`` 来生成解决方案."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:19
 msgid ""
 "You can now open the project by double-clicking on the ``godot.sln`` in the "
 "project root or by using the **Open a project or solution** option inside of "
@@ -63,21 +56,17 @@ msgstr ""
 "现在您可以通过双击项目根目录下的 ``godot.sln`` 或使用Visual Studio中的 **打开"
 "项目或解决方案** 选项来打开项目."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:21
 msgid "Use the **Build** top menu to build the project."
 msgstr "从顶部菜单 **Build** [编译]来编译构建这个项目."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:23
 msgid ""
 "Visual Studio must be configured with the C++ package. It can be selected in "
 "the intaller:"
 msgstr "Visual Studio必须配置C++包, 可以在intaller中选择:"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 msgid "Debugging the project"
 msgstr "调试项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:32
 msgid ""
 "Visual Studio features a powerful debugger. This allows the user to examine "
 "Godot's source code, stop at specific points in the code, inspect the "
@@ -86,7 +75,6 @@ msgstr ""
 "Visual Studio具有强大的调试器, 允许用户检查Godot的源代码, 在代码中的特定点中"
 "断, 检查当前的执行上下文, 并对代码库进行实时修改."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:36
 msgid ""
 "You can launch the project with the debugger attached using the **Debug > "
 "Start Debugging** option from the top menu. However, unless you want to "
@@ -99,7 +87,6 @@ msgstr ""
 "但是, 除非你想专门调试项目管理器, 否则你需要先配置调试选项. 这是由于当Godot项"
 "目管理器打开一个项目时, 初始进程会被终止, 调试器会被分离."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:41
 msgid ""
 "To configure the launch options to use with the debugger use **Project > "
 "Properties** from the top menu:"
@@ -107,7 +94,6 @@ msgstr ""
 "要配置与调试器一起使用的启动选项, 请使用顶部菜单中的 **Project > "
 "Properties** [项目 > 属性]:"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:47
 msgid ""
 "Open the **Debugging** section and under **Command Arguments** add two new "
 "arguments: the ``-e`` flag opens the editor instead of the project manager, "
@@ -120,7 +106,6 @@ msgstr ""
 "开指定的项目(必须提供一个 *绝对* 的项目根目录, 而不是 ``project.godot`` 文"
 "件)."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
@@ -128,7 +113,6 @@ msgstr ""
 "要了解更多的命令行参数, 请参考 :ref:`命令行教程 "
 "<doc_command_line_tutorial>` ."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:58
 msgid ""
 "Even if you start the project without a debugger attached it can still be "
 "connected to the running process using **Debug > Attach to Process...** menu."
@@ -136,13 +120,11 @@ msgstr ""
 "即使你在没有连接调试器的情况下启动项目, 也可以使用 **Debug > Attach to "
 "Process...** [调试 >附加到进程]菜单连接到正在运行的进程."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:61
 msgid ""
 "To check that everything is working, put a breakpoint in ``main.cpp`` and "
 "press :kbd:`F5` to start debugging."
 msgstr "要检查一切是否正常, 请将断点放在main.cpp中, 然后按F5开始调试."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

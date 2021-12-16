@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:4
 msgid "Using RigidBody"
 msgstr "RigidBody verwenden"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
 msgstr "Was ist ein starrer Körper?"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:9
 msgid ""
 "A rigid body is one that is directly controlled by the physics engine in "
 "order to simulate the behavior of physical objects. In order to define the "
@@ -39,11 +36,9 @@ msgstr ""
 "zugewiesen sein. Beachten Sie, dass das Festlegen der Position dieser Formen "
 "den Schwerpunkt des Körpers beeinflusst."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:13
 msgid "How to control a rigid body"
 msgstr "Wie man einen starren Körper kontrolliert"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:15
 msgid ""
 "A rigid body's behavior can be altered by setting its properties, such as "
 "mass and weight. A physics material needs to be added to the rigid body to "
@@ -61,7 +56,6 @@ msgstr ""
 "<class_PhysicsMaterial>` für die vollständige Liste der Eigenschaften und "
 "ihre Auswirkungen."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:21
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
@@ -69,7 +63,6 @@ msgstr ""
 "Abhängig von Ihrer gewünschten Anwendung gibt es verschiedene Möglichkeiten, "
 "die Bewegung eines starren Körpers zu steuern."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:23
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
@@ -93,7 +86,6 @@ msgstr ""
 "Physiksimulation unterbrochen wird. Im Folgenden wird gezeigt, wie dies "
 "korrekt implementiert wird."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:26
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
@@ -108,11 +100,9 @@ msgstr ""
 "Sie *Kräfte* hinzufügen, *Impulse* anwenden oder die *Geschwindigkeit* "
 "einstellen, um jede gewünschte Bewegung zu erzielen."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:29
 msgid "The \"look at\" method"
 msgstr "Die \"look at\" -Methode"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:31
 msgid ""
 "As described above, using the Spatial node's ``look_at()`` method can't be "
 "used each frame to follow a target. Here is a custom ``look_at()`` method "
@@ -123,7 +113,6 @@ msgstr ""
 "folgen. Hier ist eine benutzerdefinierte ``look_at() ``-Methode, die "
 "zuverlässig mit starren Körpern funktioniert:"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:73
 msgid ""
 "This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
@@ -136,7 +125,6 @@ msgstr ""
 "die erforderlich ist, um sich in der Zeit eines Frames um diesen Betrag zu "
 "drehen."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:75
 msgid ""
 "This script will not work with rigid bodies in *character mode* because "
 "then, the body's rotation is locked. In that case, you would have to rotate "

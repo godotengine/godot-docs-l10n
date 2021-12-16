@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "Using AnimationTree"
 msgstr "Utilisation d’AnimationTree"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
 "With :ref:`AnimationPlayer <class_AnimationPlayer>`, Godot has one of the "
 "most flexible animation systems that you can find in any game engine. The "
@@ -40,7 +37,6 @@ msgstr ""
 "de transformation, bézier, appel de fonction, audio et sous-animation, est à "
 "peu près unique."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:13
 msgid ""
 "However, the support for blending those animations via ``AnimationPlayer`` "
 "is relatively limited, as only a fixed cross-fade transition time can be set."
@@ -49,7 +45,6 @@ msgstr ""
 "``AnimationPlayer`` est relativement limitée, car seul un temps de "
 "transition de fondu fixe peut être défini."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:15
 msgid ""
 ":ref:`AnimationTree <class_AnimationTree>` is a new node introduced in Godot "
 "3.1 to deal with advanced transitions. It supersedes the ancient "
@@ -61,11 +56,9 @@ msgstr ""
 "``AnimationTreePlayer``, tout en ajoutant un grand nombre de fonctionnalités "
 "et de flexibilité."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:19
 msgid "Creating an AnimationTree"
 msgstr "Créer un AnimationTree"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
 "Before starting, it must be made clear that an ``AnimationTree`` node does "
 "not contain its own animations. Instead, it uses animations contained in an "
@@ -79,7 +72,6 @@ msgstr ""
 "éditer vos animations (ou les importer depuis une scène 3D) comme d'habitude "
 "et ensuite utiliser ce nœud supplémentaire pour contrôler la lecture."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:25
 msgid ""
 "The most common way to use ``AnimationTree`` is in a 3D scene. When "
 "importing your scenes from a 3D exchange format, they will usually come with "
@@ -94,7 +86,6 @@ msgstr ""
 "scène Godot importée contiendra les animations dans un nœud "
 "``AnimationPlayer``."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:29
 msgid ""
 "As you rarely use imported scenes directly in Godot (they are either "
 "instantiated or inherited from), you can place the ``AnimationTree`` node in "
@@ -108,7 +99,6 @@ msgstr ""
 "Ensuite, pointez le nœud ``AnimationTree`` vers l' ``AnimationPlayer`` qui a "
 "été créé dans la scène importée."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:32
 msgid ""
 "This is how it's done in the `Third Person Shooter demo <https://github.com/"
 "godotengine/tps-demo>`_, for reference:"
@@ -116,7 +106,6 @@ msgstr ""
 "C'est comme ça que ça se passe dans la démo `Third Person Shooter <https://"
 "github.com/godotengine/tps-demo>`_, pour référence :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:36
 msgid ""
 "A new scene was created for the player with a ``KinematicBody`` as root. "
 "Inside this scene, the original ``.dae`` (Collada) file was instantiated and "
@@ -126,18 +115,15 @@ msgstr ""
 "comme racine. Dans cette scène, le fichier original ``.dae`` (Collada) a été "
 "instancié et un nœud ``AnimationTree`` a été créé."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:40
 msgid "Creating a tree"
 msgstr "Création d'une arborescence"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
 "There are three main types of nodes that can be used in ``AnimationTree``:"
 msgstr ""
 "Il y a trois principaux types de nœuds qui peuvent être utilisés dans "
 "``AnimationTree`` :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:44
 msgid ""
 "Animation nodes, which reference an animation from the linked "
 "``AnimationTree``."
@@ -145,12 +131,10 @@ msgstr ""
 "Les nœuds d'animation, qui référencent une animation de l' ``AnimationTree`` "
 "lié."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:45
 msgid "Animation Root nodes, which are used to blend sub-nodes."
 msgstr ""
 "Les nœuds racine d'animation, qui sont utilisés pour mélanger les sous-nœuds."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:46
 msgid ""
 "Animation Blend nodes, which are used within ``AnimationNodeBlendTree`` as "
 "single-graph blending via multiple input ports."
@@ -158,13 +142,11 @@ msgstr ""
 "Les nœuds Animation Blend, qui sont utilisés dans ``AnimationNodeBlendTree`` "
 "comme un seul graphique de mélange via plusieurs ports d'entrée."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
 msgstr ""
 "Pour définir un nœud racine dans ``AnimationTree``, quelques types sont "
 "disponibles :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:52
 msgid ""
 "``AnimationNodeAnimation``: Selects an animation from the list and plays it. "
 "This is the simplest root node, and generally not used directly as root."
@@ -173,7 +155,6 @@ msgstr ""
 "joue. C'est le nœud racine le plus simple, et généralement pas utilisé "
 "directement comme racine."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:53
 msgid ""
 "``AnimationNodeBlendTree``: Contains many *blend* type nodes, such as mix, "
 "blend2, blend3, one shot, etc. This is one of the most commonly used roots."
@@ -182,7 +163,6 @@ msgstr ""
 "tels que mix, blend2, blend3, one shot, etc. C'est l'une des racines les "
 "plus utilisées."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:54
 msgid ""
 "``AnimationNodeStateMachine``: Contains multiple root nodes as children in a "
 "graph. Each node is used as a *state*, and provides multiple functions to "
@@ -192,7 +172,6 @@ msgstr ""
 "qu'enfants dans un graphe. Chaque nœud est utilisé comme un *état*, et "
 "fournit de multiples fonctions pour alterner entre les états."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:55
 msgid ""
 "``AnimationNodeBlendSpace2D``: Allows placing root nodes in a 2D blend "
 "space. Control the blend position in 2D to mix between multiple animations."
@@ -201,16 +180,13 @@ msgstr ""
 "espace de mélange 2D. Contrôlez la position du mélange en 2D pour mélanger "
 "entre plusieurs animations."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:56
 msgid "``AnimationNodeBlendSpace1D``: Simplified version of the above (1D)."
 msgstr ""
 "``AnimationNodeBlendSpace1D`` : Version simplifiée de ce qui précède (1D)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:59
 msgid "Blend tree"
 msgstr "Arbre de mélange"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:61
 msgid ""
 "An ``AnimationNodeBlendTree`` can contain both root and regular nodes used "
 "for blending. Nodes are added to the graph from a menu:"
@@ -219,7 +195,6 @@ msgstr ""
 "des nœuds réguliers utilisés pour le mélange. Les nœuds sont ajoutés au "
 "graphique à partir d'un menu :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:65
 msgid ""
 "All blend trees contain an ``Output`` node by default, and something has to "
 "be connected to it in order for animations to play."
@@ -228,7 +203,6 @@ msgstr ""
 "quelque chose doit y être connecté pour que les animations puissent être "
 "jouées."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:67
 msgid ""
 "The easiest way to test this functionality is to connect an ``Animation`` "
 "node to it directly:"
@@ -236,7 +210,6 @@ msgstr ""
 "La manière la plus simple de tester cette fonctionnalité est de lui "
 "connecter un nœud ``Animation`` directement :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:71
 msgid ""
 "This will simply play back the animation. Make sure that the "
 "``AnimationTree`` is active for something to actually happen."
@@ -244,15 +217,12 @@ msgstr ""
 "Cela permettra simplement de lire l'animation. Assurez-vous que l' "
 "``AnimationTree`` est actif pour que quelque chose se produise réellement."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:73
 msgid "Following is a short description of available nodes:"
 msgstr "Voici une brève description des nœuds disponibles :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:76
 msgid "Blend2 / Blend3"
 msgstr "Blend2 / Blend3"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:78
 msgid ""
 "These nodes will blend between two or three inputs by a user-specified blend "
 "value:"
@@ -260,13 +230,11 @@ msgstr ""
 "Ces nœuds se mélangent entre deux ou trois entrées par une valeur de mélange "
 "spécifiée par l'utilisateur :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:82
 msgid "For more complex blending, it is advised to use blend spaces instead."
 msgstr ""
 "Pour des mélanges plus complexes, il est conseillé d'utiliser des espaces de "
 "mélange à la place."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:84
 msgid ""
 "Blending can also use filters, i.e. you can control individually which "
 "tracks go through the blend function. This is very useful for layering "
@@ -277,11 +245,9 @@ msgstr ""
 "mélange. Ceci est très utile pour superposer des animations les unes sur les "
 "autres."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:90
 msgid "OneShot"
 msgstr "OneShot"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:92
 msgid ""
 "This node will execute a sub-animation and return once it finishes. Blend "
 "times for fading in and out can be customized, as well as filters."
@@ -290,11 +256,9 @@ msgstr ""
 "terminée. Les temps de mélange pour l'entrée et la sortie peuvent être "
 "personnalisés, ainsi que les filtres."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
 msgstr "Seek"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the animation graph. Use this node type to play an ``Animation`` from the "
@@ -305,7 +269,6 @@ msgstr ""
 "pour lire une ``Animation`` depuis le début ou depuis une certaine position "
 "de lecture à l'intérieur de l'``AnimationNodeBlendTree``."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:101
 msgid ""
 "After setting the time and changing the animation playback, the seek node "
 "automatically goes into sleep mode on the next process frame by setting its "
@@ -315,11 +278,9 @@ msgstr ""
 "recherche se met automatiquement en mode veille à la prochaine image du "
 "processus en réglant sa valeur ``seek_position`` sur ``-1.0``."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:125
 msgid "TimeScale"
 msgstr "TimeScale"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:127
 msgid ""
 "Allows scaling the speed of the animation (or reverse it) in any children "
 "nodes. Setting it to 0 will pause the animation."
@@ -328,11 +289,9 @@ msgstr ""
 "dans n'importe quel nœud enfant. En le mettant à 0, l'animation sera mise en "
 "pause."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:130
 msgid "Transition"
 msgstr "Transition"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:132
 msgid ""
 "Very simple state machine (when you don't want to cope with a "
 "``StateMachine`` node). Animations can be connected to the outputs and "
@@ -342,11 +301,9 @@ msgstr ""
 "``StateMachine``). Des animations peuvent être connectées aux sorties et des "
 "temps de transition peuvent être spécifiés."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:135
 msgid "BlendSpace2D"
 msgstr "BlendSpace2D"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:137
 msgid ""
 "``BlendSpace2D`` is a node to do advanced blending in two dimensions. Points "
 "are added to a two-dimensional space and then a position can be controlled "
@@ -356,7 +313,6 @@ msgstr ""
 "dimensions. Les points sont ajoutés à un espace bidimensionnel, puis une "
 "position peut être contrôlée pour déterminer le mélange :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:142
 msgid ""
 "The ranges in X and Y can be controlled (and labeled for convenience). By "
 "default, points can be placed anywhere (just right-click on the coordinate "
@@ -369,7 +325,6 @@ msgstr ""
 "bouton *ajouter un point*) et les triangles seront générés automatiquement à "
 "l'aide de Delaunay."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:147
 msgid ""
 "It is also possible to draw the triangles manually by disabling the *auto "
 "triangle* option, though this is rarely necessary:"
@@ -378,7 +333,6 @@ msgstr ""
 "désactivant l'option *triangle automatique*, bien que cela soit rarement "
 "nécessaire :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:151
 msgid ""
 "Finally, it is possible to change the blend mode. By default, blending "
 "happens by interpolating points inside the closest triangle. When dealing "
@@ -395,11 +349,9 @@ msgstr ""
 "une autre, il existe un mode *Carry*. Ce mode peut être modifié dans le menu "
 "*Blend* :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:159
 msgid "BlendSpace1D"
 msgstr "BlendSpace1D"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
 "This is similar to 2D blend spaces, but in one dimension (so triangles are "
 "not needed)."
@@ -407,11 +359,9 @@ msgstr ""
 "Ceci est similaire aux espaces de fusion 2D, mais en une seule dimension "
 "(donc les triangles ne sont pas nécessaires)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "StateMachine"
 msgstr "Machine à état"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
 "This node is a relatively simple state machine. Root nodes can be created "
 "and connected via lines. States are connected via *Transitions*, which are "
@@ -424,11 +374,9 @@ msgstr ""
 "Les transitions sont unidirectionnelles, mais deux peuvent être utilisées "
 "pour se connecter dans les deux sens."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:171
 msgid "There are many types of transitions:"
 msgstr "Il existe de nombreux types de transitions :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:175
 msgid ""
 "*Immediate*: Will switch to the next state immediately. The current state "
 "will end and blend into the beginning of the new one."
@@ -436,7 +384,6 @@ msgstr ""
 "*Immediate* : Passera immédiatement à l'état suivant. L'état actuel se "
 "terminera et se fondra dans le début du nouveau."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:176
 msgid ""
 "*Sync*: Will switch to the next state immediately, but will seek the new "
 "state to the playback position of the old state."
@@ -444,7 +391,6 @@ msgstr ""
 "*Sync* : Passera immédiatement à l'état suivant, mais cherchera le nouvel "
 "état à la position de lecture de l'ancien état."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:177
 msgid ""
 "*At End*: Will wait for the current state playback to end, then switch to "
 "the beginning of the next state animation."
@@ -452,7 +398,6 @@ msgstr ""
 "*At End* : Attendra la fin de la lecture de l'état actuel, puis passera au "
 "début de l'animation de l'état suivant."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:179
 msgid ""
 "Transitions also have a few properties. Click any transition and it will be "
 "displayed in the inspector dock:"
@@ -460,7 +405,6 @@ msgstr ""
 "Les transitions ont également quelques propriétés. Cliquez sur n'importe "
 "quelle transition et elle sera affichée dans le dock de l'inspecteur :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:183
 msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
@@ -468,7 +412,6 @@ msgstr ""
 "*Switch Mode* est le type de transition (voir ci-dessus), il peut être "
 "modifié après la création ici."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:184
 msgid ""
 "*Auto Advance* will turn on the transition automatically when this state is "
 "reached. This works best with the *At End* switch mode."
@@ -476,7 +419,6 @@ msgstr ""
 "*Auto Advance* activera automatiquement la transition lorsque cet état sera "
 "atteint. Cela fonctionne mieux avec le mode de commutation *At End*."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:185
 msgid ""
 "*Advance Condition* will turn on auto advance when this condition is set. "
 "This is a custom text field that can be filled with a variable name. The "
@@ -487,12 +429,10 @@ msgstr ""
 "remplie avec un nom de variable. La variable peut être modifiée à partir du "
 "code (nous y reviendrons plus tard)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:187
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
 "*Xfade Time* est le temps de fondu enchaîné entre cet état et le suivant."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:188
 msgid ""
 "*Priority* is used together with the ``travel()`` function from code (more "
 "on this later). When travelling from a state to another, give more priority "
@@ -502,7 +442,6 @@ msgstr ""
 "d'informations plus tard). Lors du voyage d'un état à un autre, donne plus "
 "de priorité à ce nœud."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:189
 msgid ""
 "*Disabled* allows to disable this transition (it will not be used during "
 "travel or auto advance)."
@@ -510,11 +449,9 @@ msgstr ""
 "*Désactivé* permet de désactiver cette transition (elle ne sera pas utilisée "
 "pendant le voyage ou l'avance automatique)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid "Root motion"
 msgstr "Racine de mouvement"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:195
 msgid ""
 "When working with 3D animations, a popular technique is for animators to use "
 "the root skeleton bone to give motion to the rest of the skeleton. This "
@@ -528,7 +465,6 @@ msgstr ""
 "permet également une interaction précise avec les objets lors des "
 "cinématiques."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:198
 msgid ""
 "When playing back the animation in Godot, it is possible to select this bone "
 "as the *root motion track*. Doing so will cancel the bone transformation "
@@ -539,7 +475,6 @@ msgstr ""
 "transformation de l'os sera annulée visuellement (l'animation restera en "
 "place)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:203
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
@@ -547,7 +482,6 @@ msgstr ""
 "Ensuite, le mouvement réel peut être récupéré via l'API :ref:`AnimationTree "
 "<class_AnimationTree>` comme une transformation :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
 "This can be fed to functions such as :ref:`KinematicBody.move_and_slide "
 "<class_KinematicBody_method_move_and_slide>` to control the character "
@@ -557,7 +491,6 @@ msgstr ""
 "move_and_slide <class_KinematicBody_method_move_and_slide>` pour contrôler "
 "le mouvement des personnages."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:216
 msgid ""
 "There is also a tool node, ``RootMotionView``, that can be placed in a scene "
 "and will act as a custom floor for your character and animations (this node "
@@ -567,11 +500,9 @@ msgstr ""
 "scène et qui agira comme un sol personnalisé pour votre personnage et vos "
 "animations (ce nœud est normalement désactivé pendant le jeu)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:223
 msgid "Controlling from code"
 msgstr "Contrôle depuis le code"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:225
 msgid ""
 "After building the tree and previewing it, the only question remaining is "
 "\"How is all this controlled from code?\"."
@@ -579,7 +510,6 @@ msgstr ""
 "Après avoir construit l'arbre et l'avoir prévisualisé, la seule question qui "
 "reste est \"Comment tout cela est-il contrôlé depuis le code ?\"."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:227
 msgid ""
 "Keep in mind that the animation nodes are just resources and, as such, they "
 "are shared between all the instances. Setting values in the nodes directly "
@@ -597,7 +527,6 @@ msgstr ""
 "disposition complexe (comme une machine à états ou un espace de fusion) dans "
 "différents arbres d'animation."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:232
 msgid ""
 "The actual animation data is contained in the ``AnimationTree`` node and is "
 "accessed via properties. Check the \"Parameters\" section of the "
@@ -609,7 +538,6 @@ msgstr ""
 "section \"Paramètres\" du nœud ``AnimationTree`` pour voir tous les "
 "paramètres qui peuvent être modifiés en temps réel :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:237
 msgid ""
 "This is handy because it makes it possible to animate them from an "
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
@@ -619,7 +547,6 @@ msgstr ""
 "``AnimationPlayer``, ou même de l' ``AnimationTree`` lui-même, permettant la "
 "réalisation d'une logique d'animation très complexe."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:240
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
@@ -628,15 +555,12 @@ msgstr ""
 "propriété. Cela se fait facilement en passant la souris sur l'un des "
 "paramètres :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:244
 msgid "Which allows setting them or reading them:"
 msgstr "Ce qui permet de les régler ou de les lire :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:259
 msgid "State machine travel"
 msgstr "Voyage de la machine à état"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:261
 #, fuzzy
 msgid ""
 "One of the nice features in Godot's ``StateMachine`` implementation is the "
@@ -651,7 +575,6 @@ msgstr ""
 "graphique de passer de l'état actuel à un autre, en visitant tous les états "
 "intermédiaires. C'est fait via l'algorithme A\\*."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:265
 msgid ""
 "To use the travel ability, you should first retrieve the :ref:"
 "`AnimationNodeStateMachinePlayback "
@@ -663,7 +586,6 @@ msgstr ""
 "<class_AnimationNodeStateMachinePlayback>` du nœud ``AnimationTree`` (il est "
 "exporté comme une propriété)."
 
-#: ../../docs/tutorials/animation/animation_tree.rst:278
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
@@ -671,7 +593,6 @@ msgstr ""
 "Une fois récupéré, il peut être utilisé en appelant l'une des nombreuses "
 "fonctions qu'il offre :"
 
-#: ../../docs/tutorials/animation/animation_tree.rst:289
 msgid ""
 "The state machine must be running before you can travel. Make sure to either "
 "call ``start()`` or choose a node to **Autoplay on Load**."

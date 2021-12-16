@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:4
 msgid "Custom resource format loaders"
 msgstr "Chargeurs de format de ressources personnalisés"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:9
 msgid ""
 "ResourceFormatLoader is a factory interface for loading file assets. "
 "Resources are primary containers. When load is called on the same file path "
@@ -38,7 +35,6 @@ msgstr ""
 "chargée est référencée. Naturellement, les ressources chargées doivent être "
 "sans état(stateless)."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
@@ -47,19 +43,12 @@ msgstr ""
 "et des types de données Godot. Si ce n'est pas le cas, voir :ref:"
 "`doc_custom_modules_in_c++`."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:303
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:356
 msgid "References"
 msgstr "References"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
 msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
@@ -67,39 +56,30 @@ msgstr ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
 msgstr "Pourquoi ?"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
 msgstr "Ajout d'un nouveau support pour de nombreux formats de fichiers"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
 msgstr "Formats audio"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
 msgstr "Formats vidéo"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
 msgstr "Modèles de machine learning"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:32
 msgid "What not?"
 msgstr "Qu'est-ce qui ne l'est pas ?"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:34
 msgid "Raster images"
 msgstr "Images raster"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:36
 msgid "ImageFormatLoader should be used to load images."
 msgstr "ImageFormatLoader doit être utilisé pour charger les images."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
@@ -107,18 +87,15 @@ msgstr ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
 msgstr "Création d'un ResourceFormatLoader"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:47
 msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr ""
 "Chaque format de fichier se compose d'un conteneur de données et d'un "
 "``ResourceFormatLoader``."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
 msgid ""
 "ResourceFormatLoaders are usually simple classes which return all the "
 "necessary metadata for supporting new extensions in Godot. The class must "
@@ -129,7 +106,6 @@ msgstr ""
 "nouvelles extensions dans Godot. La classe doit retourner le nom du format "
 "et la chaîne de caractère de l'extension."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:53
 msgid ""
 "In addition, ResourceFormatLoaders must convert file paths into resources "
 "with the ``load`` function. To load a resource, ``load`` must read and "
@@ -140,11 +116,9 @@ msgstr ""
 "ressource, la fonction ``load`` doit lire et gérer la sérialisation des "
 "données."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
 msgid "Creating a ResourceFormatSaver"
 msgstr "Création d'un ResourceFormatSaver"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid ""
 "If you'd like to be able to edit and save a resource, you can implement a "
 "``ResourceFormatSaver``:"
@@ -152,11 +126,9 @@ msgstr ""
 "Si vous souhaitez pouvoir modifier et sauvegarder une ressource, vous pouvez "
 "mettre en place un ``ResourceFormatSaver`` :"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:158
 msgid "Creating custom data types"
 msgstr "Création de types de données personnalisés"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:160
 msgid ""
 "Godot may not have a proper substitute within its :ref:`doc_core_types` or "
 "managed resources. Godot needs a new registered data type to understand "
@@ -167,15 +139,12 @@ msgstr ""
 "de données déclaré pour comprendre les formats binaires supplémentaires tels "
 "que les modèles de machine learning."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
 msgid "Here is an example of creating a custom datatype:"
 msgstr "Voici un exemple de création d'un type de données personnalisé :"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
 msgstr "Considérations"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
@@ -184,7 +153,6 @@ msgstr ""
 "telles que la gestion des entrées-sorties. Par conséquent, les traductions "
 "d'appels Godot sont requises."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:267
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
@@ -192,11 +160,9 @@ msgstr ""
 "Par exemple, voici le code permettant de traduire les appels ``FileAccess`` "
 "en ``std::istream``."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:306
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
@@ -204,7 +170,6 @@ msgstr ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
@@ -212,11 +177,9 @@ msgstr ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 msgid "Registering the new file format"
 msgstr "Enregistrement du nouveau format de fichier"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:312
 msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
@@ -225,11 +188,9 @@ msgstr ""
 "``ResourceLoader``. Le gestionnaire sélectionne automatiquement le chargeur "
 "approprié lorsque ``load`` est appelé."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:361
 msgid "Loading it on GDScript"
 msgstr "Chargement sur GDScript"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:363
 msgid ""
 "Save a file called ``demo.json`` with the following contents and place it in "
 "the project's root folder:"
@@ -237,6 +198,5 @@ msgstr ""
 "Enregistrez un fichier appelé ``demo.json`` avec le contenu suivant et "
 "placez-le dans le dossier racine du projet :"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
 msgid "Then attach the following script to any node::"
 msgstr "Attachez ensuite le script suivant à n'importe quel nœud :"

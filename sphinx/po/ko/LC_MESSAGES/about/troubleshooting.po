@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
 msgstr "문제 해결"
 
-#: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
@@ -29,7 +27,6 @@ msgstr ""
 "이 페이지에는 Godot 사용 중 발생하는 일반적인 문제와 가능한 해결 방법이 나열"
 "되어 있습니다."
 
-#: ../../docs/about/troubleshooting.rst:10
 msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
@@ -37,7 +34,6 @@ msgstr ""
 "HTML5 버전 Godot 에디터 주의 사항은 :ref:`doc_using_the_web_editor`\\ 를 참고"
 "하세요."
 
-#: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
@@ -45,7 +41,6 @@ msgstr ""
 "에디터나 프로젝트 매니저에서 하는 모든 작업이 한 프레임 지연된 것처럼 보입니"
 "다."
 
-#: ../../docs/about/troubleshooting.rst:16
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/23069>`__ "
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
@@ -55,7 +50,6 @@ msgstr ""
 "github.com/godotengine/godot/issues/23069>`__\\ 입니다. *인텔에서 제공하는* "
 "최신 그래픽 드라이버 버전으로 업데이트하면 문제가 해결됩니다."
 
-#: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "You should use the graphics driver provided by Intel rather than the one "
 "provided by your desktop or laptop's manufacturer because their version is "
@@ -64,14 +58,12 @@ msgstr ""
 "데스크톱 또는 랩톱 제조업체에서 제공하는 그래픽 드라이버가 종종 오래되었기 때"
 "문에 인텔에서 제공하는 그래픽 드라이버를 사용해야합니다."
 
-#: ../../docs/about/troubleshooting.rst:25
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
 "에디터에서 3D 카메라를 회전하면 그리드가 사라지고 메시가 검게 변합니다."
 
-#: ../../docs/about/troubleshooting.rst:27
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
@@ -79,7 +71,6 @@ msgstr ""
 "이는 Windows에서 발생하는 Intel 그래픽 드라이버의 `알려진 버그 <https://"
 "github.com/godotengine/godot/issues/30330>`__\\ 입니다."
 
-#: ../../docs/about/troubleshooting.rst:30
 msgid ""
 "The only workaround, for now, is to switch to the GLES2 renderer. You can "
 "switch the renderer in the top-right corner of the editor or the Project "
@@ -88,7 +79,6 @@ msgstr ""
 "현재로서는 GLES2 렌더러로 전환하는 것이 유일한 해결 방법입니다. 에디터의 오른"
 "쪽 위 구석 또는 프로젝트 설정에서 렌더러를 변경할 수 있습니다."
 
-#: ../../docs/about/troubleshooting.rst:33
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
@@ -96,11 +86,9 @@ msgstr ""
 "NVIDIA Optimus와 같이 그래픽 카드를 변경할 수 있는 컴퓨터를 사용하는 경우 전"
 "용 그래픽 카드로 Godot를 실행할 수 있습니다."
 
-#: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
 msgstr "에디터 및 프로젝트가 시작하기까지 오랜 시간이 걸립니다."
 
-#: ../../docs/about/troubleshooting.rst:39
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -116,12 +104,10 @@ msgstr ""
 "함이 있는 주변 장치를 분리해야 합니다. 그런 다음 주변 장치를 다시 연결할 수 "
 "있습니다."
 
-#: ../../docs/about/troubleshooting.rst:47
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr "인스펙터와 노드 독의 에디터 툴팁이 화면에 나타날 때 깜빡거립니다 ."
 
-#: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "This is a `known issue <https://github.com/godotengine/godot/"
 "issues/32990>`__ caused by the third-party Stardock Fences application on "
@@ -133,11 +119,9 @@ msgstr ""
 "하게 알려진 해결책은 Godot을 사용하는 동안 Stardock Fence를 비활성화하는 것입"
 "니다."
 
-#: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr "시스템 콘솔을 클릭하면 Godot 에디터가 고정된 것처럼 보입니다."
 
-#: ../../docs/about/troubleshooting.rst:56
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -150,7 +134,6 @@ msgstr ""
 "로그램을 일시 중지하여 시스템 콘솔 내에서 텍스트를 선택할 수 있도록 합니다. "
 "Godot는 이 시스템 전용 동작을 바꿀 수 없습니다."
 
-#: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -158,7 +141,6 @@ msgstr ""
 "이것을 해결하려면 시스템 콘솔 창을 선택하고 Enter를 눌러 선택 모드를 종료하십"
 "시오."
 
-#: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
@@ -166,7 +148,6 @@ msgstr ""
 "프로젝트 매니저 및 에디터 창의 왼쪽 위 구석에 \"NO DC\"와 같은 텍스트가 나타"
 "납니다."
 
-#: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
@@ -174,7 +155,6 @@ msgstr ""
 "이것은 NVIDIA 그래픽 드라이버가 정보를 표시하기 위해 오버레이를 삽입하기 때문"
 "에 발생합니다."
 
-#: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
@@ -182,7 +162,6 @@ msgstr ""
 "Windows에서 이 오버레이를 비활성화하려면, 그래픽 드라이버 설정을 NVIDIA 제어"
 "판의 기본값으로 복원하십시오."
 
-#: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
@@ -191,11 +170,9 @@ msgstr ""
 "Screen 0 > OpenGL Setting**\\ 에서 **Enable Graphics API Visual Indicator**"
 "\\ 를 선택 취소합니다."
 
-#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr "에디터와 달리 프로젝트 창이 흐릿하게 나타납니다."
 
-#: ../../docs/about/troubleshooting.rst:78
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -205,7 +182,6 @@ msgstr ""
 "에서 3D 씬을 렌더링하는 속도가 느린 곳(특히 내장 그래픽)에서 성능을 향상시키"
 "기 위함입니다."
 
-#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -216,11 +192,9 @@ msgstr ""
 "에, 프로젝트가 :ref:`multiple resolutions <doc_multiple_resolutions>`\\ 를 지"
 "원하도록 설정되어 있는지 확인하세요."
 
-#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr "프로젝트를 실행할 때 프로젝트 창이 가운데에 나타나지 않습니다."
 
-#: ../../docs/about/troubleshooting.rst:89
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
@@ -233,7 +207,6 @@ msgstr ""
 "젝트가 :ref:`multiple resolutions <doc_multiple_resolutions>`\\ 을 지원하도"
 "록 설정되어 있어야 합니다."
 
-#: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
@@ -241,7 +214,6 @@ msgstr ""
 "에디터에서는 프로젝트가 잘 실행되지만 내보낸 사본에서 프로젝트를 실행할 시 일"
 "부 파일을 불러올 수 없습니다."
 
-#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -258,7 +230,6 @@ msgstr ""
 "export filter)에서 ``*.json`` 파일 형식을 특정해야 합니다. 자세한 내용은 :"
 "ref:`doc_exporting_projects_export_mode`\\ 를 참고하세요."
 
-#: ../../docs/about/troubleshooting.rst:104
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "

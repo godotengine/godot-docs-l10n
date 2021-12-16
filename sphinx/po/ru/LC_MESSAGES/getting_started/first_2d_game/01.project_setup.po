@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Setting up the project"
+msgstr "Настройка вашего проекта"
+
+msgid "In this short first part, we'll set up and organize the project."
+msgstr ""
+
+#, fuzzy
+msgid "Launch Godot and create a new project."
+msgstr "Создание нового проекта."
+
+msgid "GDScript"
+msgstr "GDScript"
+
+#, fuzzy
+msgid ""
+"Download :download:`dodge_assets.zip <files/dodge_assets.zip>`. The archive "
+"contains the images and sounds you'll be using to make the game. Extract the "
+"archive and move the ``art/`` and ``fonts/`` directories to your project's "
+"directory."
+msgstr ""
+"Запустите Godot и создайте новый проект. Затем загрузите :download:"
+"`dodge_assets.zip <files/dodge_assets.zip>`. Здесь содержатся изображения и "
+"звуки, которые вы будете использовать для создания игры. Разархивируйте эти "
+"файлы в папку вашего проекта."
+
+msgid "C#"
+msgstr "C#"
+
+msgid ""
+"Ensure that you have the required dependencies to use C# in Godot. You need "
+"the .NET Core 3.1 SDK, and an editor such as VS Code. See :ref:"
+"`doc_c_sharp_setup`."
+msgstr ""
+
+#, fuzzy
+msgid "GDNative C++"
+msgstr "GDNative / C++"
+
+msgid ""
+"Download :download:`dodge_assets_with_gdnative.zip <files/"
+"dodge_assets_with_gdnative.zip>`. The archive contains the images and sounds "
+"you'll be using to make the game. It also contains a starter GDNative "
+"project including a ``SConstruct`` file, a ``dodge_the_creeps.gdnlib`` file, "
+"a ``player.gdns`` file, and an ``entry.cpp`` file."
+msgstr ""
+
+msgid ""
+"Ensure that you have the required dependencies to use GDNative C++. You need "
+"a C++ compiler such as GCC or Clang or MSVC that supports C++14. On Windows "
+"you can download Visual Studio 2019 and select the C++ workload. You also "
+"need SCons to use the build system (the SConstruct file). Then you need to "
+"`download the Godot C++ bindings <https://github.com/godotengine/godot-"
+"cpp>`_ and place them in your project."
+msgstr ""
+
+#, fuzzy
+msgid "Your project folder should look like this."
+msgstr "Ваша сцена должна выглядеть так:"
+
+#, fuzzy
+msgid ""
+"This game is designed for portrait mode, so we need to adjust the size of "
+"the game window. Click on *Project -> Project Settings* to open the project "
+"settings window and in the left column, open the *Display -> Window* tab. "
+"There, set \"Width\" to ``480`` and \"Height\" to ``720``."
+msgstr ""
+"Эта игра разработана под портретный формат, поэтому нам нужно настроить "
+"размер игрового окна. Выберите меню \"Project -> Project Settings -> Display "
+"-> Window\" и задайте полю \"Width\" (Ширина) значение ``480``, а полю "
+"\"Height\" (Высота) значение ``720``."
+
+#, fuzzy
+msgid ""
+"Also, scroll down to the bottom of the section and, under the \"Stretch\" "
+"options, set ``Mode`` to \"2d\" and ``Aspect`` to \"keep\". This ensures "
+"that the game scales consistently on different sized screens."
+msgstr ""
+"Также в этой секции, под опциями \"Stretch\", установите ``Mode`` на \"2d\" "
+"и ``Aspect`` на \"keep\". Это гарантирует, что игра последовательно "
+"масштабируется на экранах разного размера."
+
+msgid "Organizing the project"
+msgstr "Организация Проекта"
+
+msgid ""
+"In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
+"``HUD``, which we will combine into the game's ``Main`` scene."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In a larger project, it might be useful to create folders to hold the "
+"various scenes and their scripts, but for this relatively small game, you "
+"can save your scenes and scripts in the project's root folder, identified by "
+"``res://``. You can see your project folders in the FileSystem dock in the "
+"lower left corner:"
+msgstr ""
+"В этом проекте мы создадим 3 независимые сцены: ``Player``, ``Mob`` и "
+"``HUD``, которые мы будем комбинировать со сценой ``Main``. В более крупном "
+"проекте было бы полезно сделать папки для хранения различных сцен и их "
+"скриптов, но для этой, относительно небольшой игры, вы можете сохранять свои "
+"сцены и скрипты в корневой папке, называемой ``res://``. Вы можете видеть "
+"папки проекта в окне FileSystem (Файловая Система) в нижнем левом углу:"
+
+msgid ""
+"With the project in place, we're ready to design the player scene in the "
+"next lesson."
+msgstr ""

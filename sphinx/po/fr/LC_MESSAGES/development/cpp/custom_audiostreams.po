@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:4
 msgid "Custom AudioStreams"
 msgstr "AudioStreams personnalisés"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:9
 msgid ""
 "AudioStream is the base class of all audio emitting objects. "
 "AudioStreamPlayer binds onto an AudioStream to emit PCM data into an "
@@ -35,7 +32,6 @@ msgstr ""
 "AudioStreamPlayer se lie à un AudioStream pour émettre des données PCM dans "
 "un AudioServer qui gère les pilotes audio."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:13
 msgid ""
 "All audio resources require two audio based classes: AudioStream and "
 "AudioStreamPlayback. As a data container, AudioStream contains the resource "
@@ -48,7 +44,6 @@ msgstr ""
 "référence à son propre AudioStreamPlayback interne personnalisé qui traduit "
 "AudioStream en données PCM."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:19
 msgid ""
 "This guide assumes the reader knows how to create C++ modules. If not, refer "
 "to this guide :ref:`doc_custom_modules_in_c++`."
@@ -56,15 +51,9 @@ msgstr ""
 "Ce guide suppose que le lecteur sait comment créer des modules C++. Sinon, "
 "référez-vous à ce guide :ref:`doc_custom_modules_in_c++`."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:23
-#: ../../docs/development/cpp/custom_audiostreams.rst:117
-#: ../../docs/development/cpp/custom_audiostreams.rst:348
 msgid "References:"
 msgstr "Références :"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:25
-#: ../../docs/development/cpp/custom_audiostreams.rst:119
-#: ../../docs/development/cpp/custom_audiostreams.rst:350
 msgid ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
@@ -72,8 +61,6 @@ msgstr ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:26
-#: ../../docs/development/cpp/custom_audiostreams.rst:351
 msgid ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
@@ -81,27 +68,21 @@ msgstr ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:29
 msgid "What for?"
 msgstr "Pourquoi ?"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:31
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
 msgstr "Liaison de bibliothèques externes (comme Wwise, FMOD, etc)."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:32
 msgid "Adding custom audio queues"
 msgstr "Ajout de files d'attente audios personnalisées"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:33
 msgid "Adding support for more audio formats"
 msgstr "Ajout de la prise en charge de plus de formats audios"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:36
 msgid "Create an AudioStream"
 msgstr "Créer un AudioStream"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:38
 msgid ""
 "An AudioStream consists of three components: data container, stream name, "
 "and an AudioStreamPlayback friend class generator. Audio data can be loaded "
@@ -114,7 +95,6 @@ msgstr ""
 "compteur interne pour un générateur de tonalité, un tampon interne/externe "
 "ou une référence de fichier."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:43
 msgid ""
 "Some AudioStreams need to be stateless such as objects loaded from "
 "ResourceLoader. ResourceLoader loads once and references the same object "
@@ -127,11 +107,9 @@ msgstr ""
 "spécifique. Par conséquent, l'état de lecture doit être contenu dans "
 "AudioStreamPlayback."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:123
 msgid "Create an AudioStreamPlayback"
 msgstr "Créer un AudioStreamPlayback"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:125
 msgid ""
 "AudioStreamPlayer uses ``mix`` callback to obtain PCM data. The callback "
 "must match sample rate and fill the buffer."
@@ -139,7 +117,6 @@ msgstr ""
 "AudioStreamPlayer utilise le rappel ``mix`` pour obtenir les données PCM. Le "
 "rappel doit correspondre au taux d'échantillonnage et remplir le tampon."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:127
 msgid ""
 "Since AudioStreamPlayback is controlled by the audio thread, i/o and dynamic "
 "memory allocation are forbidden."
@@ -147,11 +124,9 @@ msgstr ""
 "Comme AudioStreamPlayback est contrôlé par le thread audio, i/o et "
 "l'allocation dynamique de la mémoire sont interdites."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:232
 msgid "Resampling"
 msgstr "Ré-échantillonnage"
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:234
 msgid ""
 "Godot's AudioServer currently uses 44100 Hz sample rate. When other sample "
 "rates are needed such as 48000, either provide one or use "
@@ -164,7 +139,6 @@ msgstr ""
 "AudioStreamPlaybackResampled. Godot fournit une interpolation cubique pour "
 "le rééchantillonnage audio."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:238
 msgid ""
 "Instead of overloading ``mix``, AudioStreamPlaybackResampled uses "
 "``_mix_internal`` to query AudioFrames and ``get_stream_sampling_rate`` to "
@@ -174,7 +148,6 @@ msgstr ""
 "``mix_internal`` pour interroger les AudioFrames et "
 "``get_stream_sampling_rate`` pour interroger le taux de mixage actuel."
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:349
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
 "core/math/audio_frame.h>`__"

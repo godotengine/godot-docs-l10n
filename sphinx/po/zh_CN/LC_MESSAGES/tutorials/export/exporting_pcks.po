@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting packs, patches, and mods"
+msgstr "导出包、补丁、和 Mod"
+
+msgid "Use cases"
+msgstr "使用案例"
+
+msgid ""
+"Oftentimes one would like to add functionality to one's game after it has "
+"been deployed."
+msgstr "通常, 人们希望在其游戏部署后为它添加功能."
+
+msgid "Examples of this include..."
+msgstr "这样的例子包括..."
+
+msgid ""
+"Downloadable Content: the ability to add features and content to one's game."
+msgstr "可下载内容: 向游戏添加功能和内容的能力."
+
+msgid "Patches: the ability to fix a bug that is present in a shipped product."
+msgstr "修补程序: 修复已发布产品中存在的错误的能力."
+
+msgid "Mods: grant other people the ability to create content for one's game."
+msgstr "Mods: 授予其他人为自己的游戏创建内容的能力."
+
+msgid ""
+"These tools help developers to extend their development beyond the initial "
+"release."
+msgstr "这些工具可帮助开发人员, 以扩展开发到初始版本之外."
+
+msgid "Overview of PCK files"
+msgstr "PCK文件概述"
+
+msgid ""
+"Godot enables this via a feature called **resource packs** (PCK files, with "
+"extension ``.pck``)."
+msgstr "Godot通过 **资源包** (PCK文件, 扩展名为 ``.pck`` )实现此功能."
+
+msgid "**Advantages:**"
+msgstr "**优势:**"
+
+msgid "incremental updates/patches"
+msgstr "增量更新/补丁"
+
+msgid "offer DLCs"
+msgstr "提供DLC"
+
+msgid "offer mod support"
+msgstr "提供mod支持"
+
+msgid "no source code disclosure needed for mods"
+msgstr "Mod不需要公开源代码"
+
+msgid "more modular project structure"
+msgstr "更加模块化的项目结构"
+
+msgid "users don't have to replace the entire game"
+msgstr "用户无需替换整个游戏"
+
+msgid ""
+"The first part of using them involves exporting and delivering the project "
+"to players. Then, when one wants to add functionality or content later on, "
+"they just deliver the updates via PCK files to the users."
+msgstr ""
+"除第一次需要提供完整导出给用户外, 之后添加的功能或内容, 只需要使用此功能提供"
+"PCK文件给用户更新即可."
+
+msgid "PCK files usually contain, but are not limited to:"
+msgstr "PCK文件通常包含但不限于:"
+
+msgid "scripts"
+msgstr "脚本"
+
+msgid "scenes"
+msgstr "场景"
+
+msgid "shaders"
+msgstr "着色器"
+
+msgid "models"
+msgstr "模型"
+
+msgid "textures"
+msgstr "纹理"
+
+msgid "sound effects"
+msgstr "音效"
+
+msgid "music"
+msgstr "音乐"
+
+msgid "any other asset suitable for import into the game"
+msgstr "任何其他适合导入游戏的素材"
+
+msgid ""
+"The PCK files can even be an entirely different Godot project, which the "
+"original game loads in at runtime."
+msgstr "PCK文件甚至可以是一个完全不同的Godot项目, 原始游戏在运行时加载它."
+
+msgid "Generating PCK files"
+msgstr "生成 PCK 文件"
+
+msgid ""
+"In order to pack all resources of a project into a PCK file open the project "
+"and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
+"have an export template selected while doing so."
+msgstr ""
+"为了将项目的所有资源打包到 PCK 文件中，请打开项目并转到项目/导出，然后点击“导"
+"出 PCK/Zip”。还要确保在执行此操作时选择了导出模板。"
+
+msgid ""
+"Another method would be to :ref:`export from the command line "
+"<doc_command_line_tutorial_exporting>`. If the output file ends with a PCK "
+"or ZIP file extension, then the export process will build that type of file "
+"for the chosen platform."
+msgstr ""
+"另一种方法是 :ref:`从命令行导出 <doc_command_line_tutorial_exporting>`. 如果"
+"输出文件以PCK或ZIP文件扩展名结尾, 则导出过程将为所选平台构建该类型的文件."
+
+msgid ""
+"If one wishes to support mods for their game, they will need their users to "
+"create similarly exported files. Assuming the original game expects a "
+"certain structure for the PCK's resources and/or a certain interface for its "
+"scripts, then either..."
+msgstr ""
+"如果有人希望为他们的游戏支持mod, 他们将需要其用户创建类似的导出文件. 假设原始"
+"游戏需要PCK资源的某种结构和/或其脚本具有特定的接口, 那么..."
+
+msgid ""
+"The developer must publicize documentation of these expected structures/ "
+"interfaces, expect modders to install Godot Engine, and then also expect "
+"those modders to conform to the documentation's defined API when building "
+"mod content for the game (so that it will work). Users would then use "
+"Godot's built in exporting tools to create a PCK file, as detailed above."
+msgstr ""
+"开发人员必须公开这些预期结构/接口的文档，期望模组制作者安装 Godot 引擎，然"
+"后，在为游戏构建 Mod 内容时，这些修改者也将遵守文档中定义的 API（这样它将起作"
+"用）。用户然后将如上所述，使用 Godot 的内置导出工具来创建 PCK 文件。"
+
+msgid ""
+"The developer uses Godot to build a GUI tool for adding their exact API "
+"content to a project. This Godot tool must either run on a tools-enabled "
+"build of the engine or have access to one (distributed alongside or perhaps "
+"in the original game's files). The tool can then use the Godot executable to "
+"export a PCK file from the command line with :ref:`OS.execute() "
+"<class_OS_method_execute>`. It makes the most sense for the game to not use "
+"a tool-build though (for security) and for the modding tools to *do* use a "
+"tool-enabled engine build."
+msgstr ""
+"开发人员使用Godot来构建GUI工具, 以将其确切的API内容添加到项目中. 这个Godot工"
+"具必须运行在, 或者可以访问一个(分布在原始游戏的文件旁边或者可能在原始游戏的文"
+"件中), 启用工具的引擎构建上. 然后, 该工具可以从命令行, 使用Godot可执行文件以"
+"及 :ref:`OS.execute() <class_OS_method_execute>`, 导出PCK文件. 对于游戏而言最"
+"有意义的是, 不使用工具构建(出于安全性考虑)；而对于改装工具而言最有意义的是, "
+"使用工具启用的引擎构建."
+
+msgid "Opening PCK files at runtime"
+msgstr "在运行时打开 PCK 文件"
+
+msgid ""
+"To import a PCK file, one uses the ProjectSettings singleton. The following "
+"example expects a “mod.pck” file in the directory of the games executable. "
+"The PCK file contains a “mod_scene.tscn” test scene in its root."
+msgstr ""
+"要导入PCK文件，需要使用ProjectSettings单例。下面的例子期望在游戏可执行目录中"
+"有一个 “mod.pck” 文件。该PCK文件的根目录包含一个 “mod_scene.tscn” 测试场景。"
+
+msgid ""
+"By default, if you import a file with the same file path/name as one you "
+"already have in your project, the imported one will replace it. This is "
+"something to watch out for when creating DLC or mods (solved easily with a "
+"tool isolating mods to a specific mods subfolder). However, it is also a way "
+"of creating patches for one's own game. A PCK file of this kind can fix the "
+"content of a previously loaded PCK."
+msgstr ""
+"如果导入的文件与项目中已有的文件具有相同的文件路径和名称, 则导入的文件将替换"
+"它. 创建DLC或mod时需要注意这一点(使用工具将mods隔离到特定mods子文件夹时, 很容"
+"易解决). 但是, 这也是为自己的游戏创建补丁的一种方式, 这种PCK文件可以修复先前"
+"加载的PCK的内容."
+
+msgid ""
+"To opt out of this behavior, pass ``false`` as the second argument to :ref:"
+"`ProjectSettings.load_resource_pack() "
+"<class_ProjectSettings_method_load_resource_pack>`."
+msgstr ""
+"为了退出这个行为, 把 ``false`` 作为第二个参数传递给 :ref:`ProjectSettings."
+"load_resource_pack() <class_ProjectSettings_method_load_resource_pack>`."
+
+msgid ""
+"For a C# project, you need to build the DLL and place it in the project "
+"directory first. Then, before loading the resource pack, you need to load "
+"its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
+msgstr ""
+"对于C#项目, 您必需先构建DLL并把它放在项目目录中. 然后, 在加载资源包之前, 您需"
+"要按如下方法加载它的DLL:``Assembly.LoadFile(\"mod.dll\")``"
+
+msgid "Summary"
+msgstr "总结"
+
+msgid ""
+"This tutorial should illustrate how easy adding mods, patches or DLC to a "
+"game is. The most important thing is to identify how one plans to distribute "
+"future content for their game and develop a workflow that is customized for "
+"that purpose. Godot should make that process smooth regardless of which "
+"route a developer pursues."
+msgstr ""
+"本教程应显示了, 如何轻松地向游戏添加mod, 补丁, 或DLC. 最重要的是确定, 如何一"
+"个人计划为他们的游戏, 分发将来的内容, 并为此目的开发一个定制的工作流程. 无论"
+"开发者采用哪种方法,Godot都应使该过程顺利进行."

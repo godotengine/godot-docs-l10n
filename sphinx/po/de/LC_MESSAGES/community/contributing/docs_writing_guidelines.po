@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:4
 msgid "Docs writing guidelines"
 msgstr "Richtlinien Dokumentation schreiben"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:6
 msgid ""
 "The Godot community is rich and international. Users come from all around "
 "the world. Some of them are young, and many aren't native English speakers. "
@@ -35,30 +33,21 @@ msgstr ""
 "Sprache schreiben. Für die Klassenreferenz ist es das Ziel, sie für alle "
 "leicht lesbar und präzise zu machen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:12
 msgid "In summary, always try to:"
 msgstr "Zusammenfassend, versuche immer:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:14
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:39
 msgid "Use the direct voice"
 msgstr "die direkte Sprache zu verwenden"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:15
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:74
 msgid "Use precise action verbs"
 msgstr "präzise Handlungsverben zu nutzen"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:16
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:96
 msgid "Avoid verbs that end in -ing"
 msgstr "Verben zu vermeiden, die auf \"-ing\" enden (im englischen)"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:17
 msgid "Remove unnecessary adverbs and adjectives."
 msgstr "unnötige Adverben und Adjektive zu vermeiden."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:18
 msgid ""
 "Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
 "however"
@@ -67,41 +56,28 @@ msgstr ""
 "tatsächlich, bloß, klar und jedoch (obvious, simple, basic, easy, actual, "
 "just, clear, and however)"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:19
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:214
 msgid "Use explicit references"
 msgstr "explizite Referenzen zu nutzen"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:20
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:235
 msgid "Use 's to show possession"
 msgstr "Verwenden Sie es, um Besitz anzuzeigen"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:21
 msgid "Use the Oxford comma"
 msgstr "eine Kommasetzung wie aus dem Duden"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:23
 msgid "There are 3 rules to describe classes:"
 msgstr "Es gibt 3 Arten Klassen zu beschreiben:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:25
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:372
 msgid "Give an overview of the node in the brief description"
 msgstr "Geben Sie in der Kurzbeschreibung einen Überblick über den Node"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:26
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:401
 msgid "Mention what methods return if it's useful"
 msgstr ""
 "Erwähnen Sie, welche Methoden zurückgegeben werden, wenn dies nützlich ist"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:27
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:426
 msgid "Use \"if true\" to describe booleans"
 msgstr "Verwenden Sie \"falls wahr\", um Boolesche Werte zu beschreiben"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:31
 msgid ""
 "A technical writer's job is to pack as much information as possible into the "
 "smallest and clearest sentences possible. These guidelines will help you "
@@ -111,11 +87,14 @@ msgstr ""
 "möglich in möglichst kleine und klare Sätze zu packen. Diese Richtlinien "
 "helfen Ihnen dabei, auf dieses Ziel hinzuarbeiten."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:36
+msgid ""
+"See the :ref:`content guidelines <doc_content_guidelines>` for information "
+"on the types of documentation you can write in the official documentation."
+msgstr ""
+
 msgid "7 rules for clear English"
 msgstr "7 Regeln für eine klare Sprache (gültig für Englisch)"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:41
 msgid ""
 "Use the direct voice when possible. Take the classes, methods, and constants "
 "you describe as the subject. It's natural to write using the passive voice, "
@@ -126,24 +105,18 @@ msgstr ""
 "natürlicher in der passiven Form zu schreiben, aber es ist schwieriger zu "
 "lesen und erzeugt längere Sätze."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:47
 msgid "Passive:"
 msgstr "Passiv:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:53
 msgid "Active:"
 msgstr "Activ:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:59
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:407
 msgid "**Don't** use the passive voice:"
 msgstr "Verwenden Sie nicht die passive Form:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:66
 msgid "**Do** use the node's name as a noun:"
 msgstr "Verwenden Sie den Namen des Nodes als Substantiv:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:76
 msgid ""
 "Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
 "any expression you can replace with a single word."
@@ -152,7 +125,6 @@ msgstr ""
 "Verben wie ``make``, ``set`` und allen Ausdrücken, die Sie durch ein "
 "einziges Wort ersetzen können."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:79
 msgid ""
 "**Don't** repeat the method's name. It already states it sets the pivot "
 "value to a new one:"
@@ -160,7 +132,6 @@ msgstr ""
 "Wiederholen Sie nicht den Namen der Methode. Es wird bereits angegeben, dass "
 "der Pivot-Wert auf einen neuen Wert gesetzt wird:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:87
 msgid ""
 "**Do** explain what's the consequence of this \"set\": use precise verbs "
 "like ``place``, ``position``, ``rotate``, ``fade``, etc."
@@ -168,7 +139,6 @@ msgstr ""
 "Erklären Sie was die Konsequenz dieses \"Set\" ist: Verwenden Sie präzise "
 "Verben wie \"Ort\", \"Position\", \"Drehen\", \"Verblassen\" usw."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:98
 msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
@@ -176,15 +146,13 @@ msgstr ""
 "Die progressiven Formen beschreiben kontinuierliche Aktionen. z.B. \"ruft\", "
 "\"bewegt sich\"."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
 msgstr "Verwenden Sie nicht die progressive Form für sofortige Änderungen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:108
-msgid "**Do** use simple present, preterit or future."
+#, fuzzy
+msgid "**Do** use simple present, past, or future."
 msgstr "Verwenden Sie einfache Gegenwart, Vergangenheit oder Zukunft."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:115
 msgid ""
 "Exception: If the subject is not clear, replacing \"ing\" verbs is not an "
 "improvement. For example, in the previous sentence, \"it replaces\" would "
@@ -194,7 +162,6 @@ msgstr ""
 "Verben keine Verbesserung. Zum Beispiel würde im vorherigen Satz \"es ersetzt"
 "\" nicht viel Sinn machen, wo jetzt \"ersetzen\" steht."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:119
 msgid ""
 "You may use the progressive tense to describe actions that are continuous in "
 "time. Anything like animation or coroutines."
@@ -203,7 +170,6 @@ msgstr ""
 "Gegenwart) verwenden, um zeitlich kontinuierliche Aktionen zu beschreiben. "
 "Alles wie Animationen oder Koroutinen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:124
 msgid ""
 "Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
 "so you may use them: ``the remaining movement``, ``the missing file``, etc."
@@ -212,11 +178,9 @@ msgstr ""
 "ist keine Konjugation, Sie können sie also verwenden: ,,die verbleibende "
 "Bewegung\", ,,die fehlende Datei\", usw."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:129
 msgid "Remove unnecessary adverbs and adjectives"
 msgstr "Entfernen Sie unnötige Adverbien und Adjektive"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:131
 msgid ""
 "Write as few adjectives and adverbs as possible. Only use them if they add "
 "key information to the description."
@@ -224,7 +188,6 @@ msgstr ""
 "Schreiben Sie so wenig Adjektive und Adverbien wie möglich. Verwenden Sie "
 "sie nur, wenn sie der Beschreibung wichtige Informationen hinzufügen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:134
 msgid ""
 "**Don't** use redundant or meaningless adverbs. Words that lengthen the "
 "documentation but don't add any information:"
@@ -232,51 +195,39 @@ msgstr ""
 "Verwenden Sie keine redundanten oder bedeutungslosen Adverbien. Wörter, die "
 "die Dokumentation verlängern, aber keine Informationen hinzufügen:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:141
 msgid "**Do** write short sentences in a simple, descriptive language:"
 msgstr "Schreiben Sie kurze Sätze in einer einfachen, beschreibenden Sprache:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:148
 msgid "Ban these 8 words"
 msgstr "Verbannen Sie diese 8 Wörter"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:150
 msgid "**Don't** ever use these 8 banned words:"
 msgstr "Benutzen Sie niemals diese 8 verbotenen Wörter (im englischen):"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:152
 msgid "obvious"
 msgstr "obvious"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:153
 msgid "simple"
 msgstr "simple"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:154
 msgid "basic"
 msgstr "basic"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:155
 msgid "easy"
 msgstr "easy"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:156
 msgid "actual"
 msgstr "actual"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:157
 msgid "just"
 msgstr "just"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:158
 msgid "clear"
 msgstr "clear"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:159
 msgid "however (some uses)"
 msgstr "however (some uses)"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:161
 msgid ""
 "Game creation and programming aren't simple, and nothing's easy to someone "
 "learning to use the API for the first time. Other words in the list, like "
@@ -290,7 +241,6 @@ msgstr ""
 "dem Satz keine Informationen hinzu. Verwenden Sie auch keine entsprechenden "
 "Adverbien: offensichtlich, einfach, im Grunde, leicht, tatsächlich, klar."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:167
 msgid ""
 "**Don't** example. The banned words lengthen the description and take "
 "attention away from the most important info:"
@@ -298,11 +248,9 @@ msgstr ""
 "Beispiel: Die gesperrten Wörter verlängern die Beschreibung und lenken die "
 "Aufmerksamkeit von den wichtigsten Informationen ab:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:175
 msgid "**Do** remove them:"
 msgstr "entferne sie:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:182
 msgid ""
 "\"Simple\" never helps. Remember, for other users, anything could be complex "
 "or frustrate them. There's nothing like a good old *it's simple* to make you "
@@ -314,25 +262,20 @@ msgstr ""
 "gutes altes *es ist einfach* um Sie zusammenzucken zu lassen. Hier ist die "
 "alte kurze Beschreibung, der erste Satz auf der Seite des Timer-Nodes:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:192
 msgid "**Do** explain what the node does instead:"
 msgstr "Erklären Sie stattdessen, was der Node tut:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:199
 msgid "**Don't** use \"basic\", it is too vague:"
 msgstr "Verwenden Sie nicht \"basic\", es ist zu vage:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:206
 msgid "**Do** use the brief description to offer an overview of the node:"
 msgstr ""
 "Verwenden Sie die kurze Beschreibung, um einen Überblick über den Node zu "
 "erhalten:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:216
 msgid "Favor explicit references over implicit ones."
 msgstr "Bevorzugen Sie explizite Referenzen gegenüber impliziten."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:218
 msgid ""
 "**Don't** use words like \"the former\", \"the latter\", etc. They're not "
 "the most common in English, and they require you to check the reference."
@@ -341,11 +284,9 @@ msgstr ""
 "Englischen nicht die gebräuchlichsten und erfordern, dass Sie die Referenz "
 "überprüfen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:225
 msgid "**Do** repeat words. They remove all ambiguity:"
 msgstr "Wiederholen Sie Wörter. Sie beseitigen alle Unklarheiten:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:231
 msgid ""
 "If you need to repeat the same variable name 3 or 4 times, you probably need "
 "to rephrase your description."
@@ -353,7 +294,6 @@ msgstr ""
 "Wenn Sie denselben Variablennamen drei- oder viermal wiederholen müssen, "
 "müssen Sie Ihre Beschreibung wahrscheinlich neu formulieren."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:237
 msgid ""
 "Avoid \"The milk **of** the cow\". It feels unnatural in English. Write "
 "\"The cow's milk\" instead."
@@ -361,11 +301,9 @@ msgstr ""
 "Vermeiden Sie \"Die Milch **der** Kuh\". Es fühlt sich auf Englisch "
 "unnatürlich an. Schreiben Sie stattdessen \"Die Kuhmilch\"."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:240
 msgid "**Don't** write \"of the X\":"
 msgstr "schreibe nicht \"von X\":"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:246
 msgid ""
 "**Do** use ``'s``. It lets you put the main subject at the start of the "
 "sentence, and keep it short:"
@@ -373,15 +311,12 @@ msgstr ""
 "Benutzen Sie ``'s``. Damit können Sie das Hauptthema an den Anfang des "
 "Satzes setzen und es kurz halten:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:254
 msgid "Use the Oxford comma to enumerate anything"
 msgstr "Verwenden Sie das Oxford-Komma, für alles Aufzählungen"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:256
 msgid "From the Oxford dictionary:"
 msgstr "Aus dem Oxford-Wörterbuch:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:258
 msgid ""
 "The 'Oxford comma' is an optional comma before the word 'and' at the end of "
 "a list: *We sell books, videos, and magazines.*"
@@ -389,7 +324,6 @@ msgstr ""
 "Das 'Oxford-Komma' ist ein optionales Komma vor dem Wort 'und' am Ende einer "
 "Liste: *Wir verkaufen Bücher, Videos, und Zeitschriften.*"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:261
 msgid ""
 "[...] Not all writers and publishers use it, but it can clarify the meaning "
 "of a sentence when the items in a list are not single words: *These items "
@@ -400,11 +334,9 @@ msgstr ""
 "einzelnen Wörter sind: *Diese Elemente sind in Schwarz und Weiß, Rot und "
 "Gelb, sowie Blau und Grün verfügbar.*"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:264
 msgid "**Don't** leave the last element of a list without a comma:"
 msgstr "Lassen Sie das letzte Element einer Liste nicht ohne Komma:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:270
 msgid ""
 "**Do** add a comma before `and` or `or`, for the last element of a list with "
 "more than two elements."
@@ -412,15 +344,12 @@ msgstr ""
 "Fügen Sie ein Komma vor `und` oder `oder` für das letzte Element einer Liste "
 "mit mehr als zwei Elementen ein."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:279
 msgid "How to write methods and classes"
 msgstr "Wie man Methoden und Klassen schreibt"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:282
 msgid "Dynamic vs static typing"
 msgstr "Gegenüberstellung dynamischer und statischer Typisierung"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:284
 msgid ""
 "The code examples in the documentation should follow a consistent style not "
 "to confuse users. As static type hints are an optional feature of GDScript, "
@@ -433,36 +362,29 @@ msgstr ""
 "Schreiben von dynamischem Code zu bleiben. Dies führt dazu, dass GDScript "
 "präzise und zugänglich geschrieben wird."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:289
 msgid "The exception is topics that explain static typing concepts to users."
 msgstr ""
 "Die Ausnahme bilden Themen, die Benutzern statische Typisierungskonzepte "
 "erläutern."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:291
 msgid "**Don't** add a type hint with a colon or by casting:"
 msgstr ""
 "Fügen Sie keinen Typhinweis mit einem Doppelpunkt oder durch Casting hinzu:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:301
 msgid "**Do** write constants and variables with dynamic typing:"
 msgstr "Schreiben Sie Konstanten und Variablen mit dynamischer Typisierung:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:311
 msgid "**Don't** write functions with inferred arguments or return types:"
 msgstr ""
 "Schreiben Sie keine Funktionen mit abgeleiteten Argumenten oder "
 "Rückgabetypen:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:322
 msgid "**Do** write functions using dynamic typing:"
 msgstr "Vor- und Nachteile von dynamischer Typisierung:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:334
 msgid "Use real-world code examples where appropriate"
 msgstr "Verwenden Sie gegebenenfalls reale Codebeispiele"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:336
 msgid ""
 "Real-world examples are more accessible to beginners than abstract ``foos`` "
 "and ``bars``. You can also copy them directly from your game projects, "
@@ -473,7 +395,6 @@ msgstr ""
 "Spielprojekten kopieren und so sicherstellen, dass jeder Codeschnipsel ohne "
 "Fehler kompiliert wird."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid ""
 "Writing ``var speed = 10`` rather than ``var my_var = 10`` allows beginners "
 "to understand code better. It gives them a frame of reference as to where "
@@ -483,15 +404,12 @@ msgstr ""
 "Anfänger den Code besser verstehen. Es gibt ihnen einen Bezugsrahmen, in dem "
 "sie die Codeschnipsel in einem Live-Projekt verwenden können."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:344
 msgid "**Don't** write made-up examples:"
 msgstr "Schreiben Sie keine erfundenen Beispiele:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:355
 msgid "**Do** write concrete examples:"
 msgstr "Schreiben Sie konkrete Beispiele:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:367
 msgid ""
 "Of course, there are times when using real-world examples is impractical. In "
 "those situations, you should still avoid using names such as ``my_var``, "
@@ -503,7 +421,6 @@ msgstr ""
 "Namen wie ``my_var``, ``foo()`` oder ``my_func()`` vermeiden und sich "
 "sinnvollere Namen für Ihre Beispiele überlegen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:374
 msgid ""
 "The brief description is the reference's most important sentence. It's the "
 "user's first contact with a node:"
@@ -511,16 +428,13 @@ msgstr ""
 "Die Kurzbeschreibung ist der wichtigste Satz der Referenz. Er ist der erste "
 "Kontakt des Benutzers mit einem Node:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:377
 msgid "It's the only description in the \"Create New Node\" dialog."
 msgstr ""
 "Es ist die einzige Beschreibung im Dialogfeld \"Neuen Node erstellen\"."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:378
 msgid "It's at the top of every page in the reference"
 msgstr "Es befindet sich oben auf jeder Seite in der Referenz"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:380
 msgid ""
 "The brief description should explain the node's role and its functionality, "
 "in up to 200 characters."
@@ -528,15 +442,12 @@ msgstr ""
 "Die Kurzbeschreibung sollte die Rolle des Nodes und seine Funktionalität in "
 "bis zu 200 Zeichen erklären."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:383
 msgid "**Don't** write tiny and vague summaries:"
 msgstr "Schreiben Sie keine winzigen und vage Zusammenfassungen:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:390
 msgid "**Do** give an overview of the node's functionality:"
 msgstr "Geben Sie einen Überblick über die Funktionalität des Nodes:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:397
 msgid ""
 "Use the node's full description to provide more information, and a code "
 "example, if possible."
@@ -544,7 +455,6 @@ msgstr ""
 "Verwenden Sie die vollständige Beschreibung des Nodes, um weitere "
 "Informationen und, falls möglich, ein Codebeispiel bereitzustellen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:403
 msgid ""
 "Some methods return important values. Describe them at the end of the "
 "description, ideally on a new line. No need to mention the return values for "
@@ -555,11 +465,9 @@ msgstr ""
 "Name mit ``set`` oder ``get`` beginnt, müssen Sie die Rückgabewerte nicht "
 "erwähnen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:414
 msgid "**Do** always use \"Returns\"."
 msgstr "Verwenden Sie immer \"Returns\"."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:421
 msgid ""
 "Notice the exception to the \"direct voice\" rule: with the move method, an "
 "external collider can influence the method and the body that calls ``move``. "
@@ -570,7 +478,6 @@ msgstr ""
 "aufruft, beeinflussen. In diesem Fall können Sie die passive Stimme "
 "verwenden."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:428
 msgid ""
 "For boolean member variables, always use ``if true`` and/or ``if false``, to "
 "stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
@@ -581,7 +488,6 @@ msgstr ""
 "nicht`` kann mehrdeutig sein und wird nicht für jede Member-Variable "
 "funktionieren."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:432
 msgid ""
 "Also, surround boolean values, variable names and methods with ``[code][/"
 "code]``."
@@ -589,15 +495,12 @@ msgstr ""
 "Umgeben Sie außerdem boolesche Werte, Variablennamen und Methoden mit "
 "``[code][/code]``."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:434
 msgid "**Do** start with \"if true\":"
 msgstr "Fangen Sie mit \"Falls Wahr\" an:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:443
 msgid "Use ``[code]`` around arguments"
 msgstr "Verwende ``[code]`` um Argumente"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:445
 msgid ""
 "In the class reference, always surround arguments with ``[code][/code]``. In "
 "the documentation and in Godot, it will display like ``this``. When you edit "
@@ -609,11 +512,9 @@ msgstr ""
 "Dateien im Godot-Repository bearbeiten, ersetzen Sie vorhandene Argumente, "
 "die wie 'this' oder \\'this\\' geschrieben sind, durch ``[code]this[/code]``."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:452
 msgid "Common vocabulary to use in Godot's documentation"
 msgstr "Allgemeines Vokabular für Godots Dokumentation"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:454
 msgid ""
 "The developers chose some specific words to refer to areas of the interface. "
 "They're used in the sources, in the documentation, and you should always use "
@@ -624,11 +525,9 @@ msgstr ""
 "Dokumentation verwendet, und Sie sollten sie immer anstelle von Synonymen "
 "verwenden, damit die Benutzer wissen, wovon Sie sprechen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:462
 msgid "Overview of the interface and common vocabulary"
 msgstr "Übersicht über die Benutzeroberfläche und das allgemeine Vokabular"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:464
 msgid ""
 "In the top left corner of the editor lie the ``main menus``. In the center, "
 "the buttons change the ``workspace``. And together the buttons in the top "
@@ -642,7 +541,6 @@ msgstr ""
 "in der Mitte, der den 2D- oder 3D-Raum anzeigt, ist das ``Ansichtsfenster``. "
 "Oben finden Sie eine Liste der ``Werkzeuge`` innerhalb der ``Symbolleiste``."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:470
 msgid ""
 "The tabs or dockable panels on either side of the viewport are ``docks``. "
 "You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
@@ -657,7 +555,6 @@ msgstr ""
 "können Sie die Docks mit Registerkarten ``Registerkarten`` nennen: die "
 "``Szenen-Registerkarte``, ``Knoten-Registerkarte``..."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:476
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
@@ -665,7 +562,6 @@ msgstr ""
 "Die Animation, der Debugger usw. am unteren Rand des Ansichtsfensters sind "
 "``Panele``. Zusammen bilden sie die ``untersten Panele``."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:479
 msgid ""
 "Foldable areas of the Inspector are ``sections``. The node's parent class "
 "names, which you can't fold, are ``Classes`` e.g. the ``KinematicBody2D "
@@ -678,11 +574,9 @@ msgstr ""
 "sind ``Eigenschaften``, z.B. ``Position`` oder ``Farbe modulieren`` sind "
 "beides ``Eigenschaften``."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:486
 msgid "Keyboard shortcut guidelines"
 msgstr "Tastenkürzel Richtlinien"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:488
 msgid ""
 "Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which "
 "allows shortcuts to stand out from the rest of the text and inline code. Use "
@@ -697,7 +591,6 @@ msgstr ""
 "Verwenden Sie für Kombinationen das Symbol ``+`` mit einem Leerzeichen auf "
 "beiden Seiten des Symbols."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:494
 msgid ""
 "Make sure to mention shortcuts that differ on macOS compared to other "
 "platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
@@ -706,7 +599,6 @@ msgstr ""
 "von anderen Plattformen unterscheiden. Unter MacOS ersetzt ``Cmd`` häufig "
 "``Strg`` in Tastaturkürzeln."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:497
 msgid ""
 "Try to integrate the shortcut into sentences the best you can. Here are some "
 "examples with the ``:kbd:`` tag left as-is for better visibility:"
@@ -715,7 +607,6 @@ msgstr ""
 "Hier einige Beispiele, bei denen das Tag ``:kbd:`` zur besseren Sichtbarkeit "
 "unverändert bleibt:"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:500
 msgid ""
 "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
 "T``` on macOS)."
@@ -723,7 +614,6 @@ msgstr ""
 "Drücken Sie ``:kbd:`Ctrl + Alt + T``` um das Bedienfeld umzuschalten (``:kbd:"
 "`Cmd + Alt + T``` auf MacOS)."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:501
 msgid ""
 "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
 "editor."
@@ -731,17 +621,14 @@ msgstr ""
 "Halten Sie ``:kbd:`Space``` und die linke Maustaste gedrückt, um im 2D-"
 "Editor zu schwenken."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:502
 msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
 msgstr ""
 "Drücken Sie ``:kbd:`Shift + Pfeil nach oben``` um den Node um 8 Pixel nach "
 "oben zu bewegen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:505
 msgid "Image contribution guidelines"
 msgstr "Richtlinien für Bildbeiträge"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:507
 msgid ""
 "A significant part of the documentation is images, and there are several "
 "important guidelines to follow."
@@ -749,7 +636,6 @@ msgstr ""
 "Ein wesentlicher Teil der Dokumentation sind Bilder, und es gibt mehrere "
 "wichtige Richtlinien, die befolgt werden müssen."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:510
 msgid ""
 "First, you should always be using the default editor theme and text when "
 "taking screenshots."
@@ -757,7 +643,6 @@ msgstr ""
 "Erstens sollten Sie beim Erstellen von Screenshots immer das Standardthema "
 "und den Standardtext des Editors verwenden."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:513
 msgid ""
 "To improve the appearance of 3D screenshots, use 4× MSAA, enable anisotropic "
 "filtering on the project's textures, and set the anisotropic filter quality "
@@ -768,7 +653,6 @@ msgstr ""
 "stellen Sie die Qualität des anisotropen Filters in den Projekteinstellungen "
 "auf 16 × ein."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:517
 msgid ""
 "Screenshot sizes should not exceed 1920×1080 to ensure fast loading on "
 "slower connections."
@@ -776,7 +660,6 @@ msgstr ""
 "Die Größe der Screenshots sollte 1920 × 1080 nicht überschreiten, um ein "
 "schnelles Laden bei langsameren Verbindungen zu gewährleisten."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:520
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel-thick yellow outline without a bevel. If the "
@@ -791,7 +674,6 @@ msgstr ""
 "Farbenblinden leicht gesehen werden kann. Bitte verwenden Sie kein Rot, da "
 "es für manche Benutzer nicht sichtbar ist."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:526
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
 "run through a PNG compressor to save size. You can use the lossless OxiPNG "
@@ -808,7 +690,6 @@ msgstr ""
 "verwenden. Mit ihm geht bei der Komprimierung fast keine Bildqualität "
 "verloren."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:535
 msgid ""
 "The program pngquant must be installed locally as it's not available in "
 "Squoosh."

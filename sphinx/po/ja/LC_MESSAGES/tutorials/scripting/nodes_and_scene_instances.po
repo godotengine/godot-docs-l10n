@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Nodes and scene instances"
+msgstr "ノードとリソース"
+
+msgid ""
+"This guide explains how to get nodes, create nodes, add them as a child, and "
+"instantiate scenes from code."
+msgstr ""
+
+#, fuzzy
+msgid "Getting nodes"
+msgstr "ノード作成"
+
+msgid ""
+"You can get a reference to a node by calling the :ref:`Node.get_node() "
+"<class_Node_method_get_node>` method. For this to work, the child node must "
+"be present in the scene tree. Getting it in the parent node's ``_ready()`` "
+"function guarantees that."
+msgstr ""
+
+msgid ""
+"If, for example,  you have a scene tree like this, and you want to get a "
+"reference to the Sprite and Camera2D nodes to access them in your script."
+msgstr ""
+
+#, fuzzy
+msgid "To do so, you can use the following code."
+msgstr "インターフェイスを有効にするには、次のコードを実行します:"
+
+msgid ""
+"Note that you get nodes using their name, not their type. Above, \"Sprite\" "
+"and \"Camera2D\" are the nodes' names in the scene."
+msgstr ""
+
+msgid ""
+"If you rename the Sprite node as Skin in the Scene dock, you have to change "
+"the line that gets the node to ``get_node(\"Skin\")`` in the script."
+msgstr ""
+
+#, fuzzy
+msgid "Node paths"
+msgstr "\\ node path"
+
+msgid ""
+"When getting a reference to a node, you're not limited to getting a direct "
+"child. The ``get_node()`` function supports paths, a bit like when working "
+"with a file browser. Add a slash to separate nodes."
+msgstr ""
+
+msgid ""
+"Take the following example scene, with the script attached to the "
+"UserInterface node."
+msgstr ""
+
+#, fuzzy
+msgid "To get the Tween node, you would use the following code."
+msgstr "インターフェイスを有効にするには、次のコードを実行します:"
+
+msgid ""
+"As with file paths, you can use \"..\" to get a parent node. The best "
+"practice is to avoid doing that though not to break encapsulation. You can "
+"also start the path with a forward slash to make it absolute, in which case "
+"your topmost node would be \"/root\", the application's predefined root "
+"viewport."
+msgstr ""
+
+msgid "Syntactic sugar"
+msgstr ""
+
+msgid ""
+"You can use two shorthands to shorten your code in GDScript. Firstly, "
+"putting the ``onready`` keyword before a member variable makes it initialize "
+"right before the ``_ready()`` callback."
+msgstr ""
+
+msgid ""
+"There is also a short notation for ``get_node()``: the dollar sign, \"$\". "
+"You place it before the name or path of the node you want to get."
+msgstr ""
+
+msgid "Creating nodes"
+msgstr "ノード作成"
+
+#, fuzzy
+msgid ""
+"To create a node from code, call its ``new()`` method like for any other "
+"class-based datatype."
+msgstr ""
+"コードからノードを作成するには、他のクラスベースのデータ型と同様に、\\ ``."
+"new()``\\ メソッドを呼び出します。例えば:"
+
+msgid ""
+"You can store the newly created node's reference in a variable and call "
+"``add_child()`` to add it as a child of the node to which you attached the "
+"script."
+msgstr ""
+
+msgid ""
+"To delete a node and free it from memory, you can call its ``queue_free()`` "
+"method. Doing so queues the node for deletion at the end of the current "
+"frame after it has finished processing. At that point, the engine removes "
+"the node from the scene and frees the object in memory."
+msgstr ""
+
+msgid ""
+"Before calling ``sprite.queue_free()``, the remote scene tree looks like "
+"this."
+msgstr ""
+
+msgid ""
+"After the engine freed the node, the remote scene tree doesn't display the "
+"sprite anymore."
+msgstr ""
+
+msgid ""
+"You can alternatively call ``free()`` to immediately destroy the node. You "
+"should do this with care as any reference to it will instantly become "
+"``null``. We recommend using ``queue_free()`` unless you know what you're "
+"doing."
+msgstr ""
+
+msgid ""
+"When you free a node, it also frees all its children. Thanks to this, to "
+"delete an entire branch of the scene tree, you only have to free the topmost "
+"parent node."
+msgstr ""
+
+msgid "Instancing scenes"
+msgstr "シーンのインスタンス化"
+
+msgid ""
+"Scenes are templates from which you can create as many reproductions as "
+"you'd like. This operation is called instancing, and doing it from code "
+"happens in two steps:"
+msgstr ""
+
+#, fuzzy
+msgid "Loading the scene from the hard drive."
+msgstr "渡されたベースパスからエンジンをロードします。"
+
+#, fuzzy
+msgid ""
+"Creating an instance of the loaded :ref:`PackedScene <class_PackedScene>` "
+"resource."
+msgstr ""
+"シーンのインスタンスを得るには、\\ :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`\\ メソッドを使う必要があります。"
+
+msgid ""
+"Preloading the scene can improve the user's experience as the load operation "
+"happens when the compiler reads the script and not at runtime. This feature "
+"is only available with GDScript."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"At that point, ``scene`` is a packed scene resource, not a node. To create "
+"the actual node, you need to call :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. It returns a tree of nodes that you "
+"can as a child of your current node."
+msgstr ""
+"しかし、 ``scene`` はまだノードではありません。\\ :ref:`PackedScene "
+"<class_PackedScene>`\\ と呼ばれる特別なリソースにパックされています。実際の"
+"ノードを作成するには、\\ :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`\\ 関数を呼び出す必要があります。これによ"
+"り、アクティブシーンに追加できるノードのツリーが返されます:"
+
+#, fuzzy
+msgid ""
+"The advantage of this two-step process is you can keep a packed scene loaded "
+"and create new instances on the fly. For example, to quickly instance "
+"several enemies or bullets."
+msgstr ""
+"この2段階のプロセスの利点は、パックされたシーンをロードして使用できる状態に保"
+"ち、必要なだけインスタンスを作成できることです。 これは、アクティブシーン内の"
+"複数の敵、弾丸、その他の存在をすばやくインスタンス化するのに特に便利です。"

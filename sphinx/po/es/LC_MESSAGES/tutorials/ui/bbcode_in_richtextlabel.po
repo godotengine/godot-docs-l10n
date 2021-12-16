@@ -1,0 +1,634 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "BBCode in RichTextLabel"
+msgstr "BBCode en RichTextLabel"
+
+msgid "Introduction"
+msgstr "Introducción"
+
+msgid ""
+"Label nodes are great for displaying basic text, but they have limits. If "
+"you want to change the color of the text, or its alignment, that change "
+"affects all of the text in the Label node. You can't have only one part of "
+"the text be one color, or only one part of the text be centered. To get "
+"around this limitation you would use a :ref:`class_RichTextLabel`."
+msgstr ""
+"Los nodos de la etiqueta son geniales para mostrar el texto básico, pero "
+"tienen límites. Si quieres cambiar el color del texto, o su alineación, ese "
+"cambio afecta a todo el texto del nodo Label. No puedes hacer que sólo una "
+"parte del texto sea de un color, o que sólo una parte del texto esté "
+"centrada. Para sortear esta limitación usarías un :ref:`class_RichTextLabel`."
+
+msgid ""
+":ref:`class_RichTextLabel` allows the display of complex text markup in a "
+"Control. It has a built-in API for generating the markup, but can also parse "
+"a BBCode."
+msgstr ""
+":ref:`class_RichTextLabel` permite la visualización de marcas de texto "
+"complejas en un Control. Tiene una API incorporada para generar el marcado, "
+"pero también puede analizar un BBCode."
+
+msgid ""
+"Note that the BBCode tags can also be used, to some extent, in the :ref:`XML "
+"source of the class reference <doc_updating_the_class_reference>`."
+msgstr ""
+"Nótese que las etiquetas de BBCode también pueden ser usadas, hasta cierto "
+"punto, en el :ref:`XML source of the class reference "
+"<doc_updating_the_class_reference>`."
+
+msgid "Using BBCode"
+msgstr "Usando BBCode"
+
+msgid ""
+"For uniformly formatted text you can write in the \"Text\" property, but if "
+"you want to use BBCode markup you should use the \"Text\" property in the "
+"\"Bb Code\" section instead (``bbcode_text``). Writing to this property will "
+"trigger the parsing of your markup to format the text as requested. Before "
+"this happens, you need to toggle the \"Enabled\" checkbox in the \"Bb Code\" "
+"section (``bbcode_enabled``)."
+msgstr ""
+"Para un texto con formato uniforme se puede escribir en la propiedad \"Text"
+"\", pero si se desea utilizar el marcado BBCode se debe utilizar la "
+"propiedad \"Text\" en la sección \"Bb Code\" (``bbcode_text``). Al escribir "
+"en esta propiedad se activará el análisis sintáctico de su marcado para dar "
+"formato al texto según lo solicitado. Antes de que esto ocurra, necesita "
+"activar la casilla de verificación \"Enabled\" en la sección \"Bb Code"
+"\" (``bbcode_enabled``)."
+
+msgid ""
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
+"\" with a blue color."
+msgstr ""
+"Por ejemplo, \"BBCode [color=blue]blue[/color]`` haría que la palabra \"blue"
+"\" tuviera un color azul."
+
+msgid ""
+"You'll notice that after writing in the BBCode \"Text\" property the regular "
+"\"Text\" property now has the text without the BBCode. While the text "
+"property will be updated by the BBCode property, you can't edit the text "
+"property or you'll lose the BBCode markup. All changes to the text must be "
+"done in the BBCode parameter."
+msgstr ""
+"Notarán que después de escribir en la propiedad \"Texto\" del BBCode, la "
+"propiedad \"Texto\" normal ahora tiene el texto sin el BBCode. Mientras que "
+"la propiedad \"Text\" será actualizada por la propiedad BBCode, no puedes "
+"editar la propiedad texto o perderás el marcado BBCode. Todos los cambios en "
+"el texto deben hacerse en el parámetro BBCode."
+
+msgid ""
+"For BBCode tags such as ``[b]`` (bold), ``[i]`` (italics) or ``[code]`` to "
+"work, you must set up custom fonts for the RichTextLabel node first."
+msgstr ""
+"Para que las etiquetas BBCode como ``[b]`` (negrita), ``[i]`` (cursiva) o "
+"``[código]`` funcionen, debes configurar primero las fuentes personalizadas "
+"para el nodo RichTextLabel."
+
+msgid "There are no BBCode tags to control vertical centering of text yet."
+msgstr ""
+"Todavía no hay etiquetas BBCode para controlar el centrado vertical del "
+"texto."
+
+msgid "Reference"
+msgstr "Referencia"
+
+msgid "Command"
+msgstr "Comando"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "**bold**"
+msgstr "**negrita**"
+
+msgid "``[b]{text}[/b]``"
+msgstr "``[b]{text}[/b]``"
+
+msgid "Makes {text} bold."
+msgstr "Hace {text} más oscuro."
+
+msgid "**italics**"
+msgstr "**cursiva**"
+
+msgid "``[i]{text}[/i]``"
+msgstr "``[i]{text}[/i]``"
+
+msgid "Makes {text} italics."
+msgstr "Hace {text) cursiva."
+
+msgid "**underline**"
+msgstr "**Subrayado**"
+
+msgid "``[u]{text}[/u]``"
+msgstr "``[u]{text}[/u]``"
+
+msgid "Makes {text} underline."
+msgstr "Subraya el {text}."
+
+msgid "**strikethrough**"
+msgstr "**tachado**"
+
+msgid "``[s]{text}[/s]``"
+msgstr "``[s]{text}[/s]``"
+
+msgid "Makes {text} strikethrough."
+msgstr "Tachar el {text)."
+
+msgid "**code**"
+msgstr "**codigo**"
+
+msgid "``[code]{text}[/code]``"
+msgstr "``[code]{text}[/code]``"
+
+msgid "Makes {text} use the code font (which is typically monospace)."
+msgstr ""
+"Hace que {text} utilice la fuente del código (que es típicamente "
+"monoespacio)."
+
+msgid "**center**"
+msgstr "**centrado**"
+
+msgid "``[center]{text}[/center]``"
+msgstr "``[center]{text}[/center]``"
+
+msgid "Makes {text} horizontally centered."
+msgstr "Centra horizontalmente el {text}."
+
+msgid "**right**"
+msgstr "**derecho**"
+
+msgid "``[right]{text}[/right]``"
+msgstr "``[right]{text}[/right]``"
+
+msgid "Makes {text} horizontally right-aligned."
+msgstr "Centra horizontalmente al {text} a la derecha."
+
+msgid "**fill**"
+msgstr "**llenar**"
+
+msgid "``[fill]{text}[/fill]``"
+msgstr "``[fill]{text}[/fill]``"
+
+msgid "Makes {text} fill the RichTextLabel's width."
+msgstr "Hace que el {text} se expanda a lo ancho del RchTextLabel."
+
+msgid "**indent**"
+msgstr "**indentar**"
+
+msgid "``[indent]{text}[/indent]``"
+msgstr "``[indent]{text}[/indent]``"
+
+msgid "Increase the indentation level of {text}."
+msgstr "Aumentar el nivel de indentación del {text}."
+
+msgid "**url**"
+msgstr "**url**"
+
+msgid "``[url]{url}[/url]``"
+msgstr "``[url]{url}[/url]``"
+
+msgid ""
+"Show {url} as such, underline it and make it clickable. **Must be handled "
+"with the \"meta_clicked\" signal to have an effect.** See :ref:"
+"`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
+msgstr ""
+
+msgid "**url (ref)**"
+msgstr "**url (ref)**"
+
+msgid "``[url=<url>]{text}[/url]``"
+msgstr "``[url=<url>]{text}[/url]``"
+
+msgid ""
+"Makes {text} reference <url> (underlined and clickable). **Must be handled "
+"with the \"meta_clicked\" signal to have an effect.** See :ref:"
+"`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
+msgstr ""
+
+msgid "**image**"
+msgstr "**imagen**"
+
+msgid "``[img]{path}[/img]``"
+msgstr "``[img]{path}[/img]``"
+
+msgid "Insert image at resource {path}."
+msgstr "Inserte la imagen en el recurso {path}."
+
+msgid "**resized image**"
+msgstr "**imagen redimensionada**"
+
+msgid "``[img=<width>]{path}[/img]``"
+msgstr "``[img=<width>]{path}[/img]``"
+
+msgid "Insert image at resource {path} using <width> (keeps ratio)."
+msgstr ""
+"Insertar la imagen en el recurso {path} usando <width> (mantiene la "
+"proporción)."
+
+msgid "``[img=<width>x<height>]{path}[/img]``"
+msgstr "``[img=<ancho>x<altura>]{path}[/img]``"
+
+msgid "Insert image at resource {path} using <width>×<height>."
+msgstr "Insertar la imagen en el recurso {path} usando <ancho>×<alto>."
+
+msgid "**font**"
+msgstr "**fuente**"
+
+msgid "``[font=<path>]{text}[/font]``"
+msgstr "``[font=<path>]{texto}[/font]``"
+
+msgid "Use custom font at <path> for {text}."
+msgstr "Usa la fuente personalizada en <path> para {text}."
+
+msgid "**color**"
+msgstr "**color**"
+
+msgid "``[color=<code/name>]{text}[/color]``"
+msgstr "``[color=<code/name>]{text}[/color]``"
+
+msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
+msgstr ""
+"Cambia el color del {text}; usa el nombre o el formato #, como ``#ff00ff``."
+
+msgid "**table**"
+msgstr "**tabla**"
+
+msgid "``[table=<number>]{cells}[/table]``"
+msgstr "``[table=<number>]]{cells}[/table]``"
+
+msgid "Creates a table with <number> of columns."
+msgstr "Crea una tabla con un <number> de columnas."
+
+msgid "**cell**"
+msgstr "**celda**"
+
+msgid "``[cell]{text}[/cell]``"
+msgstr "``[cell]{text}[/cell]``"
+
+msgid "Adds cells with the {text} to the table."
+msgstr "Añade celdas con el {texto} a la tabla."
+
+msgid "Built-in color names"
+msgstr "Nombres de colores incorporados"
+
+msgid "List of valid color names for the [color=<name>] tag:"
+msgstr "Lista de nombres de colores válidos para la etiqueta [color=<nombre>]:"
+
+msgid "aqua"
+msgstr "agua"
+
+msgid "black"
+msgstr "negro"
+
+msgid "blue"
+msgstr "azul"
+
+msgid "fuchsia"
+msgstr "fucsia"
+
+msgid "gray"
+msgstr "gris"
+
+msgid "green"
+msgstr "verde"
+
+msgid "lime"
+msgstr "lima"
+
+msgid "maroon"
+msgstr "granate"
+
+msgid "navy"
+msgstr "azul marino"
+
+msgid "purple"
+msgstr "violeta"
+
+msgid "red"
+msgstr "red"
+
+msgid "silver"
+msgstr "plata"
+
+msgid "teal"
+msgstr "verde azulado"
+
+msgid "white"
+msgstr "Blanco"
+
+msgid "yellow"
+msgstr "Amarillo"
+
+msgid "Hexadecimal color codes"
+msgstr "Códigos Hexadecimales de color"
+
+#, fuzzy
+msgid ""
+"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
+"``[color=#ffffff]white[/color]``. Short RGB color codes such as ``#6f2`` "
+"(equivalent to ``#66ff22``) are also supported."
+msgstr ""
+"Para colores RGB opacos, cualquier código hexadecimal valido de 6-dígitos "
+"esta soportado, p.ej. ``[color=#ffffff]white[/color]``."
+
+#, fuzzy
+msgid ""
+"For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
+"``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
+"alpha channel is the **first** component of the color code, not the last "
+"one. Short RGBA color codes such as ``#86f2`` (equivalent to ``#8866ff22``) "
+"are also supported."
+msgstr ""
+"Para colores RGB transparentes, puede ser usado cualquier código hexadecimal "
+"valido de 8-dígitos, p.ej. ``[color=#88ffffff]translucent white[/color]``. "
+"En este caso, observa que el canal alpha es el **primer** componente del "
+"código de color, no el ultimo."
+
+msgid "Handling ``[url]`` tag clicks"
+msgstr ""
+
+msgid ""
+"By default, ``[url]`` tags do nothing when clicked. This is to allow "
+"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
+"a web browser."
+msgstr ""
+
+msgid ""
+"To handle clicked ``[url]`` tags, connect the RichTextLabel node's :ref:"
+"`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal to a script "
+"function."
+msgstr ""
+
+msgid ""
+"For example, the following method can be connected to ``meta_clicked`` to "
+"open clicked URLs using the user's default web browser::"
+msgstr ""
+
+msgid ""
+"For more advanced use cases, it's also possible to store JSON in an "
+"``[url]`` tag's option and parse it in the function that handles the "
+"``meta_clicked`` signal. For example: ``[url={\"example\": \"value\"}]JSON[/"
+"url]``"
+msgstr ""
+
+msgid "Image vertical offset"
+msgstr "Desplazamiento vertical de la imagen"
+
+msgid "You use a custom font for your image in order to align it vertically."
+msgstr ""
+"Utilizas una fuente personalizada para tu imagen para alinearla "
+"verticalmente."
+
+msgid "Create a ``BitmapFont`` resource"
+msgstr "Crear un recurso ``BitmapFont``"
+
+msgid ""
+"Set this bitmap font with a positive value for the ``ascent`` property, "
+"that's your height offset"
+msgstr ""
+"Ponga esta fuente de mapa de bits con un valor positivo para la propiedad "
+"``ascent``, que es su desplazamiento de altura"
+
+msgid ""
+"Set the BBCode tag this way: ``[font=<font-path>][img]{image-path}[/img][/"
+"font]``"
+msgstr ""
+"Ponga la etiqueta BBCode de esta manera: ``[font=<font-path>][img]{image-"
+"path}[/img][/font]``"
+
+msgid "Animation effects"
+msgstr "Efectos de animación"
+
+msgid ""
+"BBCode can also be used to create different text animation effects. Five "
+"customizable effects are provided out of the box, and you can easily create "
+"your own."
+msgstr ""
+"BBCode también puede ser usado para crear diferentes efectos de animación de "
+"texto. Se proporcionan cinco efectos personalizables fuera de la caja, y "
+"puedes crear fácilmente los tuyos propios."
+
+msgid "Wave"
+msgstr "Ola"
+
+msgid ""
+"Wave makes the text go up and down. Its tag format is ``[wave amp=50 freq=2]"
+"[/wave]``. ``amp`` controls how high and low the effect goes, and ``freq`` "
+"controls how fast the text goes up and down."
+msgstr ""
+"La onda hace que el texto suba y baje. Su formato de etiqueta es ``[wave "
+"amp=50 freq=2][/wave]``. ``amp`` controla cuán alto y bajo va el efecto, y "
+"``freq`` controla cuán rápido el texto sube y baja."
+
+msgid "Tornado"
+msgstr "Tornado"
+
+msgid ""
+"Tornao makes the text move around in a circle. Its tag format is ``[tornado "
+"radius=5 freq=2][/tornado]``. ``radius`` is the radius of the circle that "
+"controls the offset, ``freq`` is how fast the text moves in a circle."
+msgstr ""
+"El tornado hace que el texto se mueva en un círculo. Su formato de etiqueta "
+"es ``[tornado radius=5 freq=2][/tornado]``. ``radius`` es el radio del "
+"círculo que controla el desplazamiento, ``freq`` es la velocidad con la que "
+"el texto se mueve en un círculo."
+
+msgid "Shake"
+msgstr "Agitado"
+
+msgid ""
+"Shake makes the text shake. Its tag format is ``[shake rate=5 level=10][/"
+"shake]``. ``rate`` controls how fast the text shakes, ``level`` controls how "
+"far the text is offset from the origin."
+msgstr ""
+"Agitar hace que el texto tiemble. Su formato de etiqueta es ``[Shake rate=5 "
+"level=10][/shake]``. ``rate`` controla la rapidez con que el texto se agita, "
+"``level`` controla la distancia del texto desde el origen."
+
+msgid "Fade"
+msgstr "Desaparecer"
+
+msgid ""
+"Fade creates a fade effect over the text that is not animated. Its tag "
+"format is ``[fade start=4 length=14][/fade]``. ``start`` controls the "
+"starting position of the falloff relative to where the fade command is "
+"inserted, ``length`` controls over how many characters should the fade out "
+"take place."
+msgstr ""
+"El fundido crea un efecto de desvanecimiento sobre el texto que no está "
+"animado. Su formato de etiqueta es ``[fade start=4 length=14][/fade]``. "
+"``start`` controla la posición inicial de la caída relativa a donde se "
+"inserta el comando fade, ``length`` controla sobre cuántos caracteres debe "
+"tener lugar el desvanecimiento."
+
+msgid "Rainbow"
+msgstr "Arcoiris"
+
+msgid ""
+"Rainbow gives the text a rainbow color that changes over time. Its tag "
+"format is ``[rainbow freq=0.2 sat=10 val=20][/rainbow]``. ``freq`` is the "
+"number of full rainbow cycles per second, ``sat`` is the saturation of the "
+"rainbow, ``val`` is the value of the rainbow."
+msgstr ""
+"El arcoiris le da al texto un color de arco iris que cambia con el tiempo. "
+"Su formato de etiqueta es ``[rainbow freq=0.2 sat=10 val=20][/rainbow]``. "
+"\"freq\" es el número de ciclos completos del arcoiris por segundo, \"sat\" "
+"es la saturación del arcoiris, \"val\" es el valor del arcoiris."
+
+msgid "Custom BBCode tags and text effects"
+msgstr "Etiquetas BBCode personalizadas y efectos de texto"
+
+#, fuzzy
+msgid ""
+"You can extend the :ref:`class_RichTextEffect` resource type to create your "
+"own custom BBCode tags. You begin by extending the :ref:"
+"`class_RichTextEffect` resource type. Add the ``tool`` prefix to your "
+"GDScript file if you wish to have these custom effects run within the editor "
+"itself. The RichTextLabel does not need to have a script attached, nor does "
+"it need to be running in ``tool`` mode. The new effect will be activable in "
+"the Inspector through the **Custom Effects** property."
+msgstr ""
+"Puedes extender el tipo de recurso :ref:`class_RichTextEffect` para crear "
+"tus propias etiquetas BBCode personalizadas. Comienza extendiendo el tipo de "
+"recurso :ref:`class_RichTextEffect`. Añade el prefijo ``tool`` a tu archivo "
+"GDScript si deseas que estos efectos personalizados se ejecuten dentro del "
+"propio editor. El RichTextLabel no necesita tener un script adjunto, ni "
+"necesita estar ejecutándose en modo ``tool``."
+
+msgid ""
+"There is only one function that you need to extend: "
+"``_process_custom_fx(char_fx)``. Optionally, you can also provide a custom "
+"BBCode identifier simply by adding a member name ``bbcode``. The code will "
+"check the ``bbcode`` property automatically or will use the name of the file "
+"to determine what the BBCode tag should be."
+msgstr ""
+"Sólo hay una función que necesita extenderse: "
+"``_process_custom_fx(char_fx)``. Opcionalmente, también puede proporcionar "
+"un identificador personalizado de BBCode simplemente añadiendo un nombre de "
+"miembro ``bbcode``. El código comprobará la propiedad ``bbcode`` "
+"automáticamente o utilizará el nombre del archivo para determinar cuál debe "
+"ser la etiqueta BBCode."
+
+msgid "``_process_custom_fx``"
+msgstr "``_process_custom_fx``"
+
+msgid ""
+"This is where the logic of each effect takes place and is called once per "
+"character during the draw phase of text rendering. This passes in a :ref:"
+"`class_CharFXTransform` object, which holds a few variables to control how "
+"the associated character is rendered:"
+msgstr ""
+"Aquí es donde la lógica de cada efecto tiene lugar y se llama una vez por "
+"carácter durante la fase de dibujo de la representación del texto. Esto pasa "
+"en un objeto :ref:`class_CharFXTransform`, que contiene unas pocas variables "
+"para controlar cómo se renderiza el carácter asociado:"
+
+msgid ""
+"``identity`` specifies which custom effect is being processed. You should "
+"use that for code flow control."
+msgstr ""
+"``identity`` especifica qué efecto personalizado se está procesando. "
+"Deberías usar eso para el control del flujo de códigos."
+
+msgid ""
+"``relative_index`` tells you how far into a given custom effect block you "
+"are in as an index."
+msgstr ""
+"``relative_index`` te dice cuán lejos estás en un bloque de efectos "
+"personalizados como índice."
+
+msgid ""
+"``absolute_index`` tells you how far into the entire text you are as an "
+"index."
+msgstr ""
+"``absolute_index`` te dice dónde estás en el texto completo como un índice "
+"absoluto."
+
+msgid ""
+"``elapsed_time`` is the total amount of time the text effect has been "
+"running."
+msgstr ""
+"``elapsed_time`` es la cantidad total de tiempo que el efecto de texto ha "
+"estado funcionando."
+
+msgid ""
+"``visible`` will tell you whether the character is visible or not and will "
+"also allow you to hide a given portion of text."
+msgstr ""
+"``visible`` te dirá si el personaje es visible o no y también te permitirá "
+"ocultar una parte determinada del texto."
+
+msgid ""
+"``offset`` is an offset position relative to where the given character "
+"should render under normal circumstances."
+msgstr ""
+"``offset`` es una posición de desplazamiento relativa a donde el carácter "
+"dado debe presentarse en circunstancias normales."
+
+msgid "``color`` is the color of a given character."
+msgstr "El ``color`` es el color de un personaje determinado."
+
+msgid ""
+"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
+"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
+"with an optional default value to retrieve each parameter, if specified by "
+"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
+"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
+"its ` `env`` Dictionary. See below for more usage examples."
+msgstr ""
+"Por último, ``env`` es un :ref:`class_Dictionary` de parámetros asignados a "
+"un efecto personalizado dado. Puede utilizar :ref:`get() "
+"<class_Dictionary_method_get>` con un valor predeterminado opcional para "
+"recuperar cada parámetro, si así lo especifica el usuario. Por ejemplo "
+"``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` tendría un "
+"parámetro real ``spread`` y de color ``color`` en su diccionario ``env``. "
+"Vea abajo para más ejemplos de uso."
+
+msgid ""
+"The last thing to note about this function is that it is necessary to return "
+"a boolean ``true`` value to verify that the effect processed correctly. This "
+"way, if there's a problem with rendering a given character, it will back out "
+"of rendering custom effects entirely until the user fixes whatever error "
+"cropped up in their custom effect logic."
+msgstr ""
+"Lo último que hay que señalar de esta función es que es necesario devolver "
+"un valor booleano ``true`` para verificar que el efecto se procesó "
+"correctamente. De esta manera, si hay un problema con la renderización de un "
+"carácter dado, se retirará por completo de la renderización de los efectos "
+"personalizados hasta que el usuario arregle cualquier error surgido en su "
+"lógica de efectos personalizados."
+
+msgid "Here are some examples of custom effects:"
+msgstr "Aquí hay unos ejemplos de efectos personalizados:"
+
+msgid "Ghost"
+msgstr "Fantasma"
+
+msgid "Pulse"
+msgstr "Pulso"
+
+msgid "Matrix"
+msgstr "Matriz"
+
+msgid "This will add a few new BBCode commands, which can be used like so:"
+msgstr ""
+"Esto agregará unos nuevos comandos BBCode que pueden ser usados de este modo:"

@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Size and anchors"
+msgstr ""
+
+msgid ""
+"If a game was always going to be run on the same device and at the same "
+"resolution, positioning controls would be a simple matter of setting the "
+"position and size of each one of them. Unfortunately, that is rarely the "
+"case."
+msgstr ""
+
+msgid ""
+"Only TVs nowadays have a standard resolution and aspect ratio. Everything "
+"else, from computer monitors to tablets, portable consoles and mobile phones "
+"have different resolutions and aspect ratios."
+msgstr ""
+
+msgid ""
+"There are several ways to handle this, but for now, let's just imagine that "
+"the screen resolution has changed and the controls need to be re-positioned. "
+"Some will need to follow the bottom of the screen, others the top of the "
+"screen, or maybe the right or left margins."
+msgstr ""
+
+msgid ""
+"This is done by editing the *margin* properties of controls. Each control "
+"has four margins: left, right, bottom and top. By default, all of them "
+"represent a distance in pixels relative to the top-left corner of the parent "
+"control or (in case there is no parent control) the viewport."
+msgstr ""
+
+msgid ""
+"When horizontal (left, right) and/or vertical (top, bottom) anchors are "
+"changed to 1, the margin values become relative to the bottom-right corner "
+"of the parent control or viewport."
+msgstr ""
+
+msgid ""
+"Here, the control is set to expand its bottom-right corner with that of the "
+"parent, so when re-sizing the parent, the control will always cover it, "
+"leaving a 20 pixel margin:"
+msgstr ""
+
+#, fuzzy
+msgid "Centering a control"
+msgstr "Verificando o tamanho do controle"
+
+msgid ""
+"To center a control in its parent, set its anchors to 0.5 and each margin to "
+"half of its relevant dimension. For example, the code below shows how a "
+"TextureRect can be centered in its parent:"
+msgstr ""
+
+msgid ""
+"Setting each anchor to 0.5 moves the reference point for the margins to the "
+"center of its parent. From there, we set negative margins so that the "
+"control gets its natural size."
+msgstr ""
+
+#, fuzzy
+msgid "Layout Presets"
+msgstr "Predefinições de Exportação"
+
+msgid ""
+"Instead of manually adjusting the margin and anchor values, you can use the "
+"toolbar's Layout menu, above the viewport. Besides centering, it gives you "
+"many options to align and resize control nodes."
+msgstr ""

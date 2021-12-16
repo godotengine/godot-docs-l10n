@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# features"
+msgstr "Funkcjonalności"
+
+#, fuzzy
+msgid ""
+"This page provides an overview of the commonly used features of both C# and "
+"Godot and how they are used together."
+msgstr ""
+"Ta strona zawiera przegląd powszechnie używanych funkcji C# i Godot oraz "
+"sposób ich wspólnego używania."
+
+#, fuzzy
+msgid "Type conversion and casting"
+msgstr "Konwersja i Rzutowanie"
+
+#, fuzzy
+msgid ""
+"C# is a statically typed language. Therefore, you can't do the following:"
+msgstr ""
+"C# jest językiem statycznie typowanym. W związku z tym nie można wykonać "
+"następujących czynności:"
+
+msgid ""
+"The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
+"convert it to the desired derived type, ``Sprite`` in this case."
+msgstr ""
+"Metoda ``GetNode()`` zwraca instancję ``Węzeła``. Musisz wyraźnie "
+"przekształcić go na żądany typ pochodny, w tym przypadku ``Sprite``."
+
+msgid "For this, you have various options in C#."
+msgstr "W tym celu w C# masz różne opcje."
+
+msgid "**Casting and Type Checking**"
+msgstr "**Rzutowanie i sprawdzanie typu**"
+
+#, fuzzy
+msgid ""
+"Throws ``InvalidCastException`` if the returned node cannot be cast to "
+"Sprite. You would use it instead of the ``as`` operator if you are pretty "
+"sure it won't fail."
+msgstr ""
+"Wyrzuca ``InvalidCastException`` jeśli zwrócony węzeł nie może zostać "
+"rzutowany na Sprite. Można go użyć zamiast ``as`` jeśli jest się pewnym że "
+"dane rzutowanie zadziała."
+
+msgid "**Using the AS operator**"
+msgstr "**Używanie AS jako operator**"
+
+msgid ""
+"The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
+"and for that reason, it cannot be used with value types."
+msgstr ""
+
+#, fuzzy
+msgid "**Using the generic methods**"
+msgstr "**Używanie AS jako operator**"
+
+msgid ""
+"Generic methods are also provided to make this type conversion transparent."
+msgstr ""
+
+msgid ""
+"``GetNode<T>()`` casts the node before returning it. It will throw an "
+"``InvalidCastException`` if the node cannot be cast to the desired type."
+msgstr ""
+
+msgid ""
+"``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
+"the node cannot be cast to the desired type."
+msgstr ""
+
+msgid "**Type checking using the IS operator**"
+msgstr "**Sprawdzanie **"
+
+#, fuzzy
+msgid ""
+"To check if the node can be cast to Sprite, you can use the ``is`` operator. "
+"The ``is`` operator returns false if the node cannot be cast to Sprite, "
+"otherwise it returns true."
+msgstr ""
+"Aby sprawdzić, czy węzeł może być rzutowany na Sprite, można użyć operatora "
+"``is``. Operator ``is`` zwraca false jeśli węzeł nie może być rzutowany na "
+"Sprite, w przeciwnym razie zwraca true."
+
+msgid ""
+"For more advanced type checking, you can look into `Pattern Matching "
+"<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
+msgstr ""
+"W celu bardziej zaawansowanego sprawdzania typu, można zajrzeć do "
+"`Dopasowywanie wzorów <https://docs.microsoft.com/en-us/dotnet/csharp/"
+"pattern-matching>`_."
+
+#, fuzzy
+msgid "C# signals"
+msgstr "C# Sygnały"
+
+msgid ""
+"For a complete C# example, see the **Handling a signal** section in the step "
+"by step :ref:`doc_scripting` tutorial."
+msgstr ""
+"Kompletny przykład C#, patrz **Zarządzanie sygnałem** w sekcji krok po "
+"kroku :ref:`doc_scripting`."
+
+msgid ""
+"Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
+"delegate."
+msgstr "Deklaracja sygnału w C# odbywa się z atrybutem ``[Signal]``."
+
+msgid ""
+"These signals can then be connected either in the editor or from code with "
+"``Connect``. If you want to connect a signal in the editor, you need to "
+"(re)build the project assemblies to see the new signal. This build can be "
+"manually triggered by clicking the “Build” button at the top right corner of "
+"the editor window."
+msgstr ""
+
+msgid "Emitting signals is done with the ``EmitSignal`` method."
+msgstr "Sygnały emitowane są metodą ``EmitSignal``."
+
+msgid ""
+"Notice that you can always reference a signal name with the ``nameof`` "
+"keyword (applied on the delegate itself)."
+msgstr ""
+"Zauważ, że zawsze można odwołać się do nazwy sygnału za pomocą słowa "
+"kluczowego ``nameof``."
+
+msgid ""
+"It is possible to bind values when establishing a connection by passing a "
+"Godot array."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Signals support parameters and bound values of all the `built-in types "
+"<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
+"built-in-types-table>`_ and Classes derived from :ref:`Godot.Object "
+"<class_Object>`. Consequently, any ``Node`` or ``Reference`` will be "
+"compatible automatically, but custom data objects will need to extend from "
+"`Godot.Object` or one of its subclasses."
+msgstr ""
+"Sygnały obsługują parametry i wartości graniczne wszystkich wbudowanych "
+"typów <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/"
+"keywords/built-in-types-table>`_ oraz klas wywodzących się z :ref:`Godot."
+"Object <class_Object>`. W konsekwencji każdy ``Węzeł`` lub ``Referencja`` "
+"będzie kompatybilna automatycznie, ale niestandardowe obiekty danych będą "
+"musiały rozszerzać po klasie `Godot.Object` lub jednej z jego podklas."
+
+msgid ""
+"Finally, signals can be created by calling ``AddUserSignal``, but be aware "
+"that it should be executed before any use of said signals (with ``Connect`` "
+"or ``EmitSignal``)."
+msgstr ""
+"Sygnały mogą być tworzone przez wywołanie ``AddUserSignal``, należy jednak "
+"pamiętać, że powinny być one wykonywane przed użyciem tych sygnałów (za "
+"pomocą ``Connect`` lub ``EmitSignal``)."
+
+#, fuzzy
+msgid "Preprocessor defines"
+msgstr "Funkcja arc"
+
+msgid ""
+"Godot has a set of defines that allow you to change your C# code depending "
+"on the environment you are compiling to."
+msgstr ""
+
+msgid ""
+"If you created your project before Godot 3.2, you have to modify or "
+"regenerate your `csproj` file to use this feature (compare "
+"``<DefineConstants>`` with a new 3.2+ project)."
+msgstr ""
+
+msgid "Examples"
+msgstr "Przykłady"
+
+msgid "For example, you can change code based on the platform:"
+msgstr ""
+
+msgid ""
+"Or you can detect which engine your code is in, useful for making cross-"
+"engine libraries:"
+msgstr ""
+
+msgid "Full list of defines"
+msgstr ""
+
+msgid "``GODOT`` is always defined for Godot projects."
+msgstr ""
+
+msgid ""
+"One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
+"architecture is 64-bit or 32-bit."
+msgstr ""
+
+msgid ""
+"One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
+"``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
+"These names may change in the future. These are created from the "
+"``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
+"possible OS the method returns is an OS that Godot with Mono runs on."
+msgstr ""
+
+msgid ""
+"When **exporting**, the following may also be defined depending on the "
+"export features:"
+msgstr ""
+
+msgid ""
+"One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
+"platform type."
+msgstr ""
+
+msgid ""
+"One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
+"depending on the architecture."
+msgstr ""
+
+msgid ""
+"One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
+"architecture."
+msgstr ""
+
+msgid ""
+"Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
+"texture compression type."
+msgstr ""
+
+msgid ""
+"Any custom features added in the export menu will be capitalized and "
+"prefixed: ``foo`` -> ``GODOT_FOO``."
+msgstr ""
+
+msgid ""
+"To see an example project, see the OS testing demo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
+msgstr ""
+"Jest to dobry początek dla platformówki. Bardziej dokończone demo można "
+"znaleźć w https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"kinematic_character"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
 msgstr "Johdanto"
 
-#: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
 "This tutorial is a short and practical introduction to linear algebra as it "
 "applies to game development. Linear algebra is the study of vectors and "
@@ -34,25 +31,21 @@ msgid ""
 "is essential to becoming a strong game developer."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
 "This tutorial is **not** a formal textbook on linear algebra. We will only "
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
 "In 2D space, coordinates are defined using a horizontal axis (``x``) and a "
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
 "If you're new to computer graphics, it might seem odd that the positive "
 "``y`` axis points **downwards** instead of upwards, as you probably learned "
@@ -60,7 +53,6 @@ msgid ""
 "applications."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
 "Any position in the 2D plane can be identified by a pair of numbers in this "
 "way. However, we can also think of the position ``(4, 3)`` as an **offset** "
@@ -68,7 +60,6 @@ msgid ""
 "origin to the point:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
 "This is a **vector**. A vector represents a lot of useful information. As "
 "well as telling us that the point is at ``(4, 3)``, we can also think of it "
@@ -77,25 +68,21 @@ msgid ""
 "origin."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
 "A very important point to consider about vectors is that they only represent "
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
 "Both vectors represent a point 4 units to the right and 3 units below some "
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector operations"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
 "refer to a vector, but for convenience, programmers typically use the "
@@ -104,75 +91,60 @@ msgid ""
 "the right and 300 pixels down, use the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
 "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
 "rules discussed in this article apply to both types."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
 "A vector can represent **any** quantity with a magnitude and direction. "
 "Typical examples are: position, velocity, acceleration, and force. In this "
@@ -182,43 +154,35 @@ msgid ""
 "velocity to the current position."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
 "In this scenario, you have a tank that wishes to point its turret at a "
 "robot. Subtracting the tank's position from the robot's position gives the "
 "vector pointing from the tank to the robot."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
 "A vector with **magnitude** of ``1`` is called a **unit vector**. They are "
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -226,18 +190,15 @@ msgid ""
 "``Vector3`` provide a method for normalizing:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
 "error."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -245,13 +206,11 @@ msgid ""
 "involving surfaces."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -261,11 +220,9 @@ msgid ""
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -273,38 +230,31 @@ msgid ""
 "direction, a scalar value has only magnitude."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:266
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:280
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:286
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:290
 msgid "Facing"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:292
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -312,7 +262,6 @@ msgid ""
 "they see the player?"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:298
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -322,15 +271,12 @@ msgid ""
 "facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:306
 msgid "In code it would look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:324
 msgid "Cross product"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:326
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
@@ -339,26 +285,21 @@ msgid ""
 "vector."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:335
 msgid "The cross product is calculated like this:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:354
 msgid "With Godot, you can use the built-in method:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:365
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:370
 msgid "Calculating normals"
 msgstr "Normaalien laskenta"
 
-#: ../../docs/tutorials/math/vector_math.rst:372
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -366,15 +307,12 @@ msgid ""
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:377
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:401
 msgid "Pointing to a target"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:403
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
 "angle between two vectors. However, in 3D, this is not enough information. "
@@ -383,20 +321,16 @@ msgid ""
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:411
 msgid "More information"
 msgstr "Lisää tietoa"
 
-#: ../../docs/tutorials/math/vector_math.rst:413
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:415
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:416
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ""

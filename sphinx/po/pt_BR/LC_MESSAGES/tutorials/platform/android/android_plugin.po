@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Creating Android plugins"
+msgstr "Plugins"
+
+msgid "Introduction"
+msgstr "Introdução"
+
+msgid ""
+"Android plugins are powerful tools to extend the capabilities of the Godot "
+"engine by tapping into the functionality provided by the Android platform "
+"and ecosystem."
+msgstr ""
+
+msgid ""
+"Mobile gaming monetization is one such example since it requires features "
+"and capabilities that don't belong to the core feature set of a game engine:"
+msgstr ""
+
+msgid "Analytics"
+msgstr "Análises"
+
+msgid "In-app purchases"
+msgstr "Compras no aplicativo"
+
+msgid "Receipt validation"
+msgstr ""
+
+msgid "Install tracking"
+msgstr ""
+
+msgid "Ads"
+msgstr "Anúncios"
+
+msgid "Video ads"
+msgstr ""
+
+msgid "Cross-promotion"
+msgstr "Promoção cruzada"
+
+msgid "In-game soft & hard currencies"
+msgstr ""
+
+msgid "Promo codes"
+msgstr ""
+
+msgid "A/B testing"
+msgstr ""
+
+msgid "Login"
+msgstr "Entrar"
+
+msgid "Cloud saves"
+msgstr ""
+
+msgid "Leaderboards and scores"
+msgstr ""
+
+msgid "User support & feedback"
+msgstr ""
+
+msgid "Posting to Facebook, Twitter, etc."
+msgstr ""
+
+msgid "Push notifications"
+msgstr ""
+
+#, fuzzy
+msgid "Android plugin"
+msgstr "Android"
+
+msgid ""
+"While introduced in Godot 3.2, the Android plugin system got a significant "
+"architecture update starting with Godot 3.2.2. The new plugin system is "
+"backward-incompatible with the previous one, but both systems are kept "
+"functional in future releases of the 3.2.x branch. Since we previously did "
+"not version the Android plugin systems, the new one is now labelled ``v1`` "
+"and is the starting point for the modern Godot Android ecosystem."
+msgstr ""
+
+msgid ""
+"**Note:** In Godot 4.0, the previous system will be fully deprecated and "
+"removed."
+msgstr ""
+
+msgid ""
+"As a prerequisite, make sure you understand how to set up a :ref:`custom "
+"build environment<doc_android_custom_build>` for Android."
+msgstr ""
+
+msgid ""
+"At its core, a Godot Android plugin is a `Android archive library <https://"
+"developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* "
+"archive file) with the following caveats:"
+msgstr ""
+
+msgid ""
+"The library must have a dependency on the Godot engine library (``godot-lib."
+"<version>.<status>.aar``). A stable version is made available for each Godot "
+"release on the `Godot download page <https://godotengine.org/download>`_."
+msgstr ""
+
+msgid ""
+"The library must include a specifically configured ``<meta-data>`` tag in "
+"its manifest file."
+msgstr ""
+
+#, fuzzy
+msgid "Building an Android plugin"
+msgstr "Criando um script C#"
+
+msgid ""
+"**Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ "
+"is strongly recommended as the IDE to use to create Android plugins. The "
+"instructions below assumes that you're using Android Studio."
+msgstr ""
+
+msgid ""
+"Follow `these instructions <https://developer.android.com/studio/projects/"
+"android-library>`__ to create an Android library module for your plugin."
+msgstr ""
+
+msgid "Add the Godot engine library as a dependency to your plugin module:"
+msgstr ""
+
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
+"``godot-lib.4.0.stable.aar``)."
+msgstr ""
+
+msgid ""
+"Follow `these instructions <https://developer.android.com/studio/projects/"
+"android-library#AddDependency>`__ to add the Godot engine library as a "
+"dependency for your plugin."
+msgstr ""
+
+msgid ""
+"In the plugin module's ``build.gradle`` file, replace ``implementation`` "
+"with ``compileOnly`` for the dependency line for the Godot engine library."
+msgstr ""
+
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
+"``godot-lib.3.2.2.stable.aar``)."
+msgstr ""
+
+msgid "Update the plugin ``AndroidManifest.xml`` file:"
+msgstr ""
+
+msgid "Open the plugin ``AndroidManifest.xml`` file."
+msgstr ""
+
+msgid "Add the ``<application></application>`` tag if it's missing."
+msgstr ""
+
+msgid ""
+"In the ``<application>`` tag, add a ``<meta-data>`` tag setup as follow::"
+msgstr ""
+
+msgid ""
+"Where ``PluginName`` is the name of the plugin, and ``plugin.init."
+"ClassFullName`` is the full name (package + class name) of the plugin "
+"loading class."
+msgstr ""
+
+msgid ""
+"Add the remaining logic for your plugin and run the ``gradlew build`` "
+"command to generate the plugin's ``aar`` file. The build will likely "
+"generate both a ``debug`` and ``release`` ``aar`` files. Depending on your "
+"need, pick only one version (usually the ``release`` one) which to provide "
+"your users with."
+msgstr ""
+
+msgid ""
+"It's recommended that the ``aar`` filename matches the following pattern: "
+"``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in "
+"PascalCase (e.g.: ``GodotPayment.release.aar``)."
+msgstr ""
+
+msgid ""
+"Create a Godot Android Plugin configuration file to help the system detect "
+"and load your plugin:"
+msgstr ""
+
+msgid ""
+"The configuration file extension must be ``gdap`` (e.g.: ``MyPlugin.gdap``)."
+msgstr ""
+
+#, fuzzy
+msgid "The configuration file format is as follow::"
+msgstr "Os arquivos CSV devem ser formatados da seguinte forma:"
+
+msgid "[dependencies]"
+msgstr ""
+
+msgid ""
+"local=[\"local_dep1.aar\", \"local_dep2.aar\"] remote=[\"example.plugin."
+"android:remote-dep1:0.0.1\", \"example.plugin.android:remote-dep2:0.0.1\"] "
+"custom_maven_repos=[\"http://repo.mycompany.com/maven2\"]"
+msgstr ""
+
+msgid "The ``config`` section and fields are required and defined as follow:"
+msgstr ""
+
+msgid "**name**: name of the plugin"
+msgstr ""
+
+msgid "**name**: name of the plugin."
+msgstr ""
+
+msgid ""
+"**binary_type**: can be either ``local`` or ``remote``. The type affects the "
+"**binary** field."
+msgstr ""
+
+msgid "**binary**:"
+msgstr ""
+
+msgid ""
+"if **binary_type** is ``local``, then this should be the filepath of the "
+"plugin ``aar`` file."
+msgstr ""
+
+msgid ""
+"The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's "
+"relative to the ``res://android/plugins`` directory."
+msgstr ""
+
+msgid "The filepath can be absolute: ``res://some_path/MyPlugin.aar``."
+msgstr ""
+
+msgid ""
+"if **binary_type** is ``remote``, then this should be a declaration for a "
+"`remote gradle binary <https://developer.android.com/studio/build/"
+"dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
+"plugin:0.0.0``)."
+msgstr ""
+
+msgid ""
+"The ``dependencies`` section and fields are optional and defined as follow:"
+msgstr ""
+
+msgid ""
+"**local**: contains a list of filepaths to the local ``.aar`` binary files "
+"the plugin depends on. Similarly to the ``binary`` field (when the "
+"``binary_type`` is ``local``), the local binaries' filepaths can be relative "
+"or absolute."
+msgstr ""
+
+msgid ""
+"If **binary_type** is ``remote``, then this should be a declaration for a "
+"`remote gradle binary <https://developer.android.com/studio/build/"
+"dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
+"plugin:0.0.0``)."
+msgstr ""
+
+msgid ""
+"**custom_maven_repos**: contains a list of URLs specifying the custom maven "
+"repositories required for the plugin's dependencies"
+msgstr ""
+
+#, fuzzy
+msgid "Loading and using an Android plugin"
+msgstr "Criando um script C#"
+
+msgid ""
+"Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, "
+"its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot "
+"project's ``res://android/plugins`` directory."
+msgstr ""
+
+msgid ""
+"The Godot editor will automatically parse all ``.gdap`` files in the ``res://"
+"android/plugins`` directory and show a list of detected and toggleable "
+"plugins in the Android export presets window under the **Plugins** section."
+msgstr ""
+
+#, fuzzy
+msgid "From your script:"
+msgstr "Em seu script::"
+
+#, fuzzy
+msgid "Bundling GDNative resources"
+msgstr "Liberando recursos"
+
+msgid ""
+"An Android plugin can define and provide C/C++ GDNative resources, either to "
+"provide and/or access functionality from the game logic. The GDNative "
+"resources can be bundled within the plugin ``aar`` file which simplifies the "
+"distribution and deployment process:"
+msgstr ""
+
+msgid ""
+"The shared libraries (``.so``) for the defined GDNative libraries will be "
+"automatically bundled by the ``aar`` build system."
+msgstr ""
+
+msgid ""
+"Godot ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined in "
+"the plugin ``assets`` directory. The recommended path for these resources "
+"relative to the ``assets`` directory should be: ``godot/plugin/v1/"
+"[PluginName]/``."
+msgstr ""
+
+msgid ""
+"For GDNative libraries, the plugin singleton object must override the ``org."
+"godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` "
+"method, and return the paths to the bundled GDNative libraries config files "
+"(``*.gdnlib``). The paths must be relative to the ``assets`` directory. At "
+"runtime, the plugin will provide these paths to Godot core which will use "
+"them to load and initialize the bundled GDNative libraries."
+msgstr ""
+
+#, fuzzy
+msgid "Reference implementations"
+msgstr "Implementação"
+
+msgid ""
+"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
+"godot_oculus_mobile>`_ - `Bundled gdnative resources <https://github.com/"
+"GodotVR/godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/"
+"godot_ovrmobile>`_"
+msgstr ""
+
+msgid ""
+"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
+"google-play-billing>`_"
+msgstr ""
+"Dê um Fork no `repositório do Godot<https://github.com/godotengine/godot>`_"
+
+msgid "Troubleshooting"
+msgstr "Solução de problemas"
+
+msgid "Godot crashes upon load"
+msgstr ""
+
+msgid "Check ``adb logcat`` for possible problems, then:"
+msgstr ""
+
+msgid ""
+"Check that the methods exposed by the plugin used the following Java types: "
+"``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``org."
+"godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java."
+"lang.String[]``."
+msgstr ""
+
+msgid "More complex datatypes are not supported for now."
+msgstr ""

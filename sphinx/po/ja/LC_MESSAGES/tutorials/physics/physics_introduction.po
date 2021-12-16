@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:4
 msgid "Physics introduction"
 msgstr "物理の紹介"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:6
 msgid ""
 "In game development, you often need to know when two objects in the game "
 "intersect or come into contact. This is known as **collision detection**. "
@@ -33,7 +31,6 @@ msgstr ""
 "衝突が検出された場合、通常は何かが発生します。これは\\ **衝突応答**\\ として"
 "知られています。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:11
 msgid ""
 "Godot offers a number of collision objects in 2D and 3D to provide both "
 "collision detection and response. Trying to decide which one to use for your "
@@ -45,23 +42,18 @@ msgstr ""
 "と、混乱する可能性があります。それぞれがどのように機能し、その長所と短所が何"
 "であるかを理解すれば、問題を回避して開発を簡素化できます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
 msgstr "このガイドでは、次の内容について学習します:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
 msgstr "Godotの4つのコリジョンオブジェクトタイプ"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:19
 msgid "How each collision object works"
 msgstr "各コリジョンオブジェクトの仕組み"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:20
 msgid "When and why to choose one type over another"
 msgstr "別のタイプよりもあるタイプを選択するべきタイミングと理由"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:22
 msgid ""
 "This document's examples will use 2D objects. Every 2D physics object and "
 "collision shape has a direct equivalent in 3D and in most cases they work in "
@@ -71,11 +63,9 @@ msgstr ""
 "クトとコリジョン形状は3Dでもまったく同等であり、ほとんどの場合、ほぼ同じよう"
 "に機能します。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:27
 msgid "Collision objects"
 msgstr "オブジェクトのコリジョン"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
@@ -83,11 +73,9 @@ msgstr ""
 "Godotは4種類の物理ボディを提供し、\\ :ref:`CollisionObject2D "
 "<class_CollisionObject2D>` を拡張します:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
 msgstr "\\ :ref:`Area2D <class_Area2D>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:32
 msgid ""
 "``Area2D`` nodes provide **detection** and **influence**. They can detect "
 "when objects overlap and can emit signals when bodies enter or exit. An "
@@ -99,17 +87,14 @@ msgstr ""
 "Area2D`` を使用して、定義された領域で重力や減衰などの物理特性をオーバーライド"
 "することもできます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:37
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
 "他の3つのボディは :ref:`PhysicsBody2D <class_PhysicsBody2D>` を拡張します:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
 msgstr "\\ :ref:`StaticBody2D <class_StaticBody2D>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:40
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -120,11 +105,9 @@ msgstr ""
 "加しますが、衝突に応じて移動しません。これらは、環境の一部であるオブジェクト"
 "や動的な動作を必要としないオブジェクトに最もよく使用されます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
 msgstr "\\ :ref:`RigidBody2D <class_RigidBody2D>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a "
 "``RigidBody2D`` directly, but instead you apply forces to it (gravity, "
@@ -136,11 +119,9 @@ msgstr ""
 "動きを計算します。\\ :ref:`リジッドボディの使用に関する詳細をお読みくださ"
 "い。 <doc_rigid_body> `"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
 msgstr "\\ :ref:`KinematicBody2D <class_KinematicBody2D>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:51
 msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
@@ -148,23 +129,19 @@ msgstr ""
 "コリジョン検出を提供しますが、物理は提供しません。すべての移動および衝突応答"
 "はコードで実装する必要があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:55
 #, fuzzy
 msgid "Physics material"
 msgstr "\\ ParticlesMaterial"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:57
 msgid ""
 "Static bodies and rigid bodies can be configured to use a :ref:`physics "
 "material <class_PhysicsMaterial>`. This allows adjusting the friction and "
 "bounce of an object, and set if it's absorbent and/or rough."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:62
 msgid "Collision shapes"
 msgstr "コリジョン形状"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:64
 msgid ""
 "A physics body can hold any number of :ref:`Shape2D <class_Shape2D>` objects "
 "as children. These shapes are used to define the object's collision bounds "
@@ -174,7 +151,6 @@ msgstr ""
 "て保持できます。これらの形状は、オブジェクトのコリジョン境界を定義し、他のオ"
 "ブジェクトとの接触を検出するために使用されます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:68
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
@@ -182,7 +158,6 @@ msgstr ""
 "コリジョンを検出するには、少なくとも1つの ``Shape2D`` をオブジェクトに割り当"
 "てる必要があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:71
 msgid ""
 "The most common way to assign a shape is by adding a :ref:`CollisionShape2D "
 "<class_CollisionShape2D>` or :ref:`CollisionPolygon2D "
@@ -194,7 +169,6 @@ msgstr ""
 "<class_CollisionPolygon2D>` をオブジェクトの子として追加することです。これら"
 "のノードを使用すると、エディタのワークスペースでシェイプを直接描画できます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:75
 msgid ""
 "Be careful to never scale your collision shapes in the editor. The \"Scale\" "
 "property in the Inspector should remain ``(1, 1)``. When changing the size "
@@ -208,11 +182,9 @@ msgstr ""
 "ンドルを使用する必要があります。シェイプをスケーリングすると、予期しない衝突"
 "が発生する場合があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:84
 msgid "Physics process callback"
 msgstr "物理プロセスのコールバック"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:86
 msgid ""
 "The physics engine may spawn multiple threads to improve performance, so it "
 "can use up to a full frame to process physics. Because of this, the value of "
@@ -224,7 +196,6 @@ msgstr ""
 "め、\\ ``position`` や ``linear velocity`` などのボディの状態変数の値は、現在"
 "のフレームに対して正確でない場合があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:91
 #, fuzzy
 msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
@@ -241,18 +212,15 @@ msgstr ""
 "び出される :ref:`Node._physics_process() "
 "<class_Node_method__physics_process>` コールバックで実行する必要があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid ""
 "It's recommended to always use the ``delta`` parameter when relevant in your "
 "physics calculations, so that the game behaves correctly if you change the "
 "physics update rate or if the player's device can't keep up."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:108
 msgid "Collision layers and masks"
 msgstr "コリジョンレイヤーとマスク"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:110
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -265,15 +233,12 @@ msgstr ""
 "きます。重要な概念は **レイヤー** と **マスク** です。各 "
 "``CollisionObject2D`` には、相互作用できる20の異なる物理層があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid "Let's look at each of the properties in turn:"
 msgstr "各プロパティを順番に見てみましょう:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid "collision_layer"
 msgstr "\\ collision_layer"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:119
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
@@ -281,11 +246,9 @@ msgstr ""
 "これは、オブジェクトが **in ** で表示されるレイヤーを記述します。デフォルトで"
 "は、すべてのボディはレイヤー ``1`` 上にあります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:125
 msgid "collision_mask"
 msgstr "\\ collision_mask"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:123
 msgid ""
 "This describes what layers the body will **scan** for collisions. If an "
 "object isn't in one of the mask layers, the body will ignore it. By default, "
@@ -295,7 +258,6 @@ msgstr ""
 "マスクレイヤーのいずれかにない場合、ボディはそれを無視します。デフォルトで"
 "は、すべてのボディがレイヤー ``1`` をスキャンします。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:127
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
@@ -303,7 +265,6 @@ msgstr ""
 "これらのプロパティは、コードを介して、またはインスペクタで編集して構成できま"
 "す。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:129
 msgid ""
 "Keeping track of what you're using each layer for can be difficult, so you "
 "may find it useful to assign names to the layers you're using. Names can be "
@@ -313,12 +274,10 @@ msgstr ""
 "に名前を付けると便利な場合があります。プロジェクト設定 → Layer Names で名前を"
 "割り当てることができます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:136
 #, fuzzy
 msgid "GUI example"
 msgstr "入力の例"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:138
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
 "Player and Enemy should collide with Walls. The Player node should detect "
@@ -330,7 +289,6 @@ msgstr ""
 "方との衝突を検出する必要がありますが、EnemyとCoinは互いに無視する必要がありま"
 "す。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:143
 msgid ""
 "Start by naming layers 1-4 \"walls\", \"player\", \"enemies\", and \"coins\" "
 "and place each node type in its respective layer using the \"Layer\" "
@@ -343,12 +301,10 @@ msgstr ""
 "置します。次に、相互作用するレイヤーを選択して、各ノードの\"Mask\"プロパティ"
 "を設定します。たとえば、プレイヤーの設定は次のようになります:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:154
 #, fuzzy
 msgid "Code example"
 msgstr "例:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:156
 msgid ""
 "In function calls, layers are specified as a bitmask. Where a function "
 "enables all layers by default, the layer mask will be given as "
@@ -356,17 +312,14 @@ msgid ""
 "for layer masks, depending on your preference."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:161
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:181
 msgid "Area2D"
 msgstr "\\ Area2D"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:183
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
@@ -378,15 +331,12 @@ msgstr ""
 "れたエリアで重力や減衰などの物理特性をオーバーライドするためにも使用できま"
 "す。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:188
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ":ref:`Area2D <class_Area2D>` には主に3つの用途があります:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:190
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr "特定の領域での物理パラメータ(重力など)のオーバーライド。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
@@ -394,19 +344,15 @@ msgstr ""
 "他のボディが領域に出入りするとき、または現在どのボディが領域にあるかを検出し"
 "ます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid "Checking other areas for overlap."
 msgstr "他の領域のオーバーラップを確認します。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:196
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr "デフォルトでは、エリアはマウスとタッチスクリーンの入力も受け取ります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid "StaticBody2D"
 msgstr "\\ StaticBody2D"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:201
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -420,7 +366,6 @@ msgstr ""
 "を使用して、衝突している物体に動きや回転を\\ **あたかも**\\ 移動しているかの"
 "ように伝えることができます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:206
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
@@ -428,27 +373,21 @@ msgstr ""
 "``StaticBody2D`` ノードは、環境の一部であるか、動的な動作を必要としないオブ"
 "ジェクトに最もよく使用されます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:209
 msgid "Example uses for ``StaticBody2D``:"
 msgstr "``StaticBody2D`` の使用例:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:211
 msgid "Platforms (including moving platforms)"
 msgstr "プラットフォーム(移動プラットフォームを含む)"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:212
 msgid "Conveyor belts"
 msgstr "コンベヤベルト"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:213
 msgid "Walls and other obstacles"
 msgstr "壁やその他の障害物"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "RigidBody2D"
 msgstr "\\ RigidBody2D"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:218
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -461,7 +400,6 @@ msgstr ""
 "し、物理エンジンは、他のボディとの衝突、跳ね返り、回転などの衝突応答を含む結"
 "果の動きを計算します。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:224
 #, fuzzy
 msgid ""
 "You can modify a rigid body's behavior via properties such as \"Mass\", "
@@ -470,7 +408,6 @@ msgstr ""
 "インスペクタで設定できる\"Mass(質量)\"、\"Friction(摩擦)\"、\"Bounce(反"
 "発)\"などのプロパティを使用して、リジッド ボディの動作を変更できます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:227
 msgid ""
 "The body's behavior is also affected by the world's properties, as set in "
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
@@ -480,7 +417,6 @@ msgstr ""
 "ティ、またはグローバルな物理学プロパティをオーバーライドする :ref:`Area2D "
 "<class_Area2D>` を入力することによっても影響を受けます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:231
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -491,15 +427,12 @@ msgstr ""
 "眠っている体は静的な体のように動作し、その力は物理エンジンによって計算されま"
 "せん。衝突またはコードを介して力が加えられると、ボディが起動します。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:237
 msgid "Rigid body modes"
 msgstr "リジッドボディのモード"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:239
 msgid "A rigid body can be set to one of four modes:"
 msgstr "リジッドボディは、次の4つのモードのいずれかに設定できます:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:241
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
@@ -507,7 +440,6 @@ msgstr ""
 "**Rigid** - ボディは物理的なオブジェクトとして動作します。それは他のボディと"
 "衝突し、それに加えられた力に反応します。これがデフォルトのモードです。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:242
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
@@ -515,12 +447,10 @@ msgstr ""
 "**Static** - ボディは :ref:`StaticBody2D <class_StaticBody2D>` のように動作"
 "し、移動しません。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:243
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 "**Character** - \"Rigid\"モードに似ていますが、ボディは回転できません。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:244
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
@@ -528,11 +458,9 @@ msgstr ""
 "**Kinematic** - ボディは :ref:`KinematicBody2D <class_KinematicBody2D>` のよ"
 "うに動作し、コードによって移動する必要があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:247
 msgid "Using RigidBody2D"
 msgstr "RigidBody2Dを使用する"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:249
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "
 "had \"for free\" without writing any code. For example, if you were making "
@@ -546,7 +474,6 @@ msgstr ""
 "す。スタッキング、落下、および跳ね返りは、物理エンジンによって自動的に計算さ"
 "れます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:255
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
@@ -568,13 +495,11 @@ msgstr ""
 "す。これにより、プロパティを安全に変更し、物理エンジンと同期させることができ"
 "ます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:264
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
 "たとえば、\"Asteroids(Atariのゲーム)\"スタイルの宇宙船のコードは次のとおりで"
 "す:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:309
 msgid ""
 "Note that we are not setting the ``linear_velocity`` or ``angular_velocity`` "
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
@@ -584,7 +509,6 @@ msgstr ""
 "はなく、力(`` thrust`` および ``torque``)をボディに適用し、物理エンジンに結果"
 "の動きを計算させることに注意してください。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:313
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -598,11 +522,9 @@ msgstr ""
 "プロパティを無効にすることで、ボディを起こしたままにする必要があります。これ"
 "はパフォーマンスに悪影響を及ぼす可能性があることに注意してください。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:320
 msgid "Contact reporting"
 msgstr "接触のレポート"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:322
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
@@ -621,7 +543,6 @@ msgstr ""
 "<class_Physics2DDirectBodyState_method_get_contact_count>` および関連する関数"
 "を介して取得できます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
@@ -632,11 +553,9 @@ msgstr ""
 "ます。使用可能なシグナルのリストについては、\\ :ref:`RigidBody2D "
 "<class_RigidBody2D>` を参照してください。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:334
 msgid "KinematicBody2D"
 msgstr "\\ KinematicBody2D"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:336
 msgid ""
 ":ref:`KinematicBody2D <class_KinematicBody2D>` bodies detect collisions with "
 "other bodies, but are not affected by physics properties like gravity or "
@@ -648,7 +567,6 @@ msgstr ""
 "がコードを介して制御する必要があります。物理エンジンはキネマティックボディを"
 "移動しません。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:341
 msgid ""
 "When moving a kinematic body, you should not set its ``position`` directly. "
 "Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` methods. "
@@ -662,11 +580,9 @@ msgstr ""
 "し、別のボディとの衝突が検出されるとすぐに停止します。ボディが衝突した後の衝"
 "突に対する応答は手動でコーディングする必要があります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid "Kinematic collision response"
 msgstr "運動学的衝突応答"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
 "After a collision, you may want the body to bounce, to slide along a wall, "
 "or to alter the properties of the object it hit. The way you handle "
@@ -677,12 +593,10 @@ msgstr ""
 "ジェクトのプロパティを変更したりすることができます。コリジョンレスポンスの処"
 "理方法は、KinematicBody2Dの移動に使用した方法によって異なります。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:355
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 "\\ :ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:357
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` object, which contains "
@@ -694,21 +608,17 @@ msgstr ""
 "コリジョンと衝突するボディに関する情報が含まれます。この情報を使用して、応答"
 "を判別できます。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:362
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr "たとえば、衝突が発生した空間内のポイントを検索する場合:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:393
 msgid "Or to bounce off of the colliding object:"
 msgstr "または、衝突するオブジェクトから跳ね返るには:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:422
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr "\\ :ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:424
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
 "in a top-down game or running up and down slopes in a platformer. While it's "
@@ -722,7 +632,6 @@ msgstr ""
 "ることは可能ですが、\\ ``move_and_slide()`` は、多くのコードを書かずにスライ"
 "ド移動を実装する便利な方法を提供します。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:430
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
@@ -730,7 +639,6 @@ msgstr ""
 "``move_and_slide()`` は計算にタイムステップを自動的に含めるため、速度ベクトル"
 "に ``delta`` を\\ **掛けないで**\\ ください。"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:434
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
@@ -738,7 +646,6 @@ msgstr ""
 "たとえば、次のコードを使用して、地面(坂を含む)に沿って歩き、地面に立っている"
 "ときにジャンプできるキャラクターを作成します:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:501
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."

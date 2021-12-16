@@ -1,0 +1,438 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Creating Android plugins"
+msgstr "プラグインの作成"
+
+msgid "Introduction"
+msgstr "はじめに"
+
+msgid ""
+"Android plugins are powerful tools to extend the capabilities of the Godot "
+"engine by tapping into the functionality provided by the Android platform "
+"and ecosystem."
+msgstr ""
+"Androidプラグインは、Androidプラットフォームとエコシステムによって提供される"
+"機能を活用して、Godotエンジンの機能を拡張する強力なツールです。"
+
+msgid ""
+"Mobile gaming monetization is one such example since it requires features "
+"and capabilities that don't belong to the core feature set of a game engine:"
+msgstr ""
+"モバイルゲームの収益化は、ゲームエンジンのコア機能セットに属さない機能を必要"
+"とするため、そのような例の1つです:"
+
+msgid "Analytics"
+msgstr "分析"
+
+msgid "In-app purchases"
+msgstr "アプリ内購入"
+
+msgid "Receipt validation"
+msgstr "証明書の検証"
+
+msgid "Install tracking"
+msgstr "トラッキングのインストール"
+
+msgid "Ads"
+msgstr "広告"
+
+msgid "Video ads"
+msgstr "動画広告"
+
+msgid "Cross-promotion"
+msgstr "クロスプロモーション"
+
+msgid "In-game soft & hard currencies"
+msgstr "ゲーム内のソフト通貨とハード通貨"
+
+msgid "Promo codes"
+msgstr "プロモーションコード"
+
+msgid "A/B testing"
+msgstr "A/B テスト"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Cloud saves"
+msgstr "クラウド保存"
+
+msgid "Leaderboards and scores"
+msgstr "ランキングとスコア"
+
+msgid "User support & feedback"
+msgstr "ユーザーサポートとフィードバック"
+
+msgid "Posting to Facebook, Twitter, etc."
+msgstr "Facebook、Twitterなどへの投稿。"
+
+msgid "Push notifications"
+msgstr "プッシュ通知"
+
+msgid "Android plugin"
+msgstr "Androidプラグイン"
+
+msgid ""
+"While introduced in Godot 3.2, the Android plugin system got a significant "
+"architecture update starting with Godot 3.2.2. The new plugin system is "
+"backward-incompatible with the previous one, but both systems are kept "
+"functional in future releases of the 3.2.x branch. Since we previously did "
+"not version the Android plugin systems, the new one is now labelled ``v1`` "
+"and is the starting point for the modern Godot Android ecosystem."
+msgstr ""
+
+msgid ""
+"**Note:** In Godot 4.0, the previous system will be fully deprecated and "
+"removed."
+msgstr ""
+
+msgid ""
+"As a prerequisite, make sure you understand how to set up a :ref:`custom "
+"build environment<doc_android_custom_build>` for Android."
+msgstr ""
+"前提条件として、Android用に :ref:`カスタムビルド環境 "
+"<doc_android_custom_build>` をセットアップする方法を理解してください。"
+
+msgid ""
+"At its core, a Godot Android plugin is a `Android archive library <https://"
+"developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* "
+"archive file) with the following caveats:"
+msgstr ""
+"基本的に、Godot Androidプラグインは `Androidアーカイブライブラリ <https://"
+"developer.android.com/studio/projects/android-library#aar-contents>`_(*aar* "
+"アーカイブファイル)であり、次の注意事項があります:"
+
+#, fuzzy
+msgid ""
+"The library must have a dependency on the Godot engine library (``godot-lib."
+"<version>.<status>.aar``). A stable version is made available for each Godot "
+"release on the `Godot download page <https://godotengine.org/download>`_."
+msgstr ""
+"ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
+"要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
+
+msgid ""
+"The library must include a specifically configured ``<meta-data>`` tag in "
+"its manifest file."
+msgstr ""
+"ライブラリには、マニフェストファイルに特別に構成された ``<meta-data>`` タグを"
+"含める必要があります。"
+
+#, fuzzy
+msgid "Building an Android plugin"
+msgstr "Androidプラグインの作成"
+
+msgid ""
+"**Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ "
+"is strongly recommended as the IDE to use to create Android plugins. The "
+"instructions below assumes that you're using Android Studio."
+msgstr ""
+"**前提条件:** Androidプラグインの作成に使用するIDEとして、\\ `Android Studio "
+"<https://developer.android.com/studio>`_ を強く推奨します。以下の手順は、"
+"Android Studioを使用していることを前提としています。"
+
+msgid ""
+"Follow `these instructions <https://developer.android.com/studio/projects/"
+"android-library>`__ to create an Android library module for your plugin."
+msgstr ""
+"`これらの手順 <https://developer.android.com/studio/projects/android-"
+"library>`__ に従ってプラグイン用のAndroidライブラリモジュールを作成します。"
+
+msgid "Add the Godot engine library as a dependency to your plugin module:"
+msgstr ""
+"プラグインモジュールへの依存関係としてGodotエンジンライブラリを追加します:"
+
+#, fuzzy
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
+"``godot-lib.4.0.stable.aar``)."
+msgstr ""
+"ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
+"要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
+
+msgid ""
+"Follow `these instructions <https://developer.android.com/studio/projects/"
+"android-library#AddDependency>`__ to add the Godot engine library as a "
+"dependency for your plugin."
+msgstr ""
+"`これらの手順 <https://developer.android.com/studio/projects/android-"
+"library#AddDependency>`__ に従って、プラグインの依存関係としてGodotエンジンラ"
+"イブラリを追加します。"
+
+msgid ""
+"In the plugin module's ``build.gradle`` file, replace ``implementation`` "
+"with ``compileOnly`` for the dependency line for the Godot engine library."
+msgstr ""
+"プラグインモジュールの ``build.gradle`` ファイルで、Godotエンジンライブラリの"
+"依存関係行の ``implementation`` を ``compileOnly`` に置き換えます。"
+
+#, fuzzy
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
+"``godot-lib.3.2.2.stable.aar``)."
+msgstr ""
+"ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
+"要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
+
+msgid "Update the plugin ``AndroidManifest.xml`` file:"
+msgstr "プラグイン ``AndroidManifest.xml`` ファイルを更新します:"
+
+msgid "Open the plugin ``AndroidManifest.xml`` file."
+msgstr "プラグイン ``AndroidManifest.xml`` ファイルを開きます。"
+
+msgid "Add the ``<application></application>`` tag if it's missing."
+msgstr ""
+"存在しない場合は、\\ ``<application></application>`` タグを追加します。"
+
+msgid ""
+"In the ``<application>`` tag, add a ``<meta-data>`` tag setup as follow::"
+msgstr ""
+"``<application>`` タグで、次のように ``<meta-data>`` タグの設定を追加します::"
+
+msgid ""
+"Where ``PluginName`` is the name of the plugin, and ``plugin.init."
+"ClassFullName`` is the full name (package + class name) of the plugin "
+"loading class."
+msgstr ""
+"ここで、\\ ``PluginName`` はプラグインの名前であり、\\ ``plugin.init."
+"ClassFullName`` はプラグイン読み込みクラスのフルネーム(パッケージ+クラス名)で"
+"す。"
+
+msgid ""
+"Add the remaining logic for your plugin and run the ``gradlew build`` "
+"command to generate the plugin's ``aar`` file. The build will likely "
+"generate both a ``debug`` and ``release`` ``aar`` files. Depending on your "
+"need, pick only one version (usually the ``release`` one) which to provide "
+"your users with."
+msgstr ""
+"プラグインの残りのロジックを追加し、\\ ``gradlew build`` コマンドを実行してプ"
+"ラグインの ``aar`` ファイルを生成します。ビルドはおそらく ``debug`` と "
+"``release`` ``aar``ファイルの両方を生成します。必要に応じて、ユーザーに提供す"
+"るバージョンを1つだけ選択します(通常は ``release`` バージョン)。"
+
+#, fuzzy
+msgid ""
+"It's recommended that the ``aar`` filename matches the following pattern: "
+"``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in "
+"PascalCase (e.g.: ``GodotPayment.release.aar``)."
+msgstr ""
+"**注意:** プラグインの ``aar`` ファイル名は次のパターンと一致しなければなりま"
+"せん: ``[PluginName]*.aar`` ここで、\\ ``PluginName`` はキャメルケースのプラ"
+"グインの名前です(例: ``GodotPayment.release.aar``)。"
+
+msgid ""
+"Create a Godot Android Plugin configuration file to help the system detect "
+"and load your plugin:"
+msgstr ""
+
+msgid ""
+"The configuration file extension must be ``gdap`` (e.g.: ``MyPlugin.gdap``)."
+msgstr ""
+
+#, fuzzy
+msgid "The configuration file format is as follow::"
+msgstr "CSVファイルは次の形式にする必要があります:"
+
+msgid "[dependencies]"
+msgstr ""
+
+msgid ""
+"local=[\"local_dep1.aar\", \"local_dep2.aar\"] remote=[\"example.plugin."
+"android:remote-dep1:0.0.1\", \"example.plugin.android:remote-dep2:0.0.1\"] "
+"custom_maven_repos=[\"http://repo.mycompany.com/maven2\"]"
+msgstr ""
+
+msgid "The ``config`` section and fields are required and defined as follow:"
+msgstr ""
+
+#, fuzzy
+msgid "**name**: name of the plugin"
+msgstr "名前(オプションの名前)"
+
+msgid "**name**: name of the plugin."
+msgstr "**name**: (プラグインの名前)。"
+
+msgid ""
+"**binary_type**: can be either ``local`` or ``remote``. The type affects the "
+"**binary** field."
+msgstr ""
+
+#, fuzzy
+msgid "**binary**:"
+msgstr "**Category**:"
+
+msgid ""
+"if **binary_type** is ``local``, then this should be the filepath of the "
+"plugin ``aar`` file."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's "
+"relative to the ``res://android/plugins`` directory."
+msgstr ""
+"プラグインの ``aar`` ファイルにアクセスしたら、Godotプロジェクトの ``res://"
+"android/plugins`` ディレクトリに移動します。"
+
+msgid "The filepath can be absolute: ``res://some_path/MyPlugin.aar``."
+msgstr ""
+
+msgid ""
+"if **binary_type** is ``remote``, then this should be a declaration for a "
+"`remote gradle binary <https://developer.android.com/studio/build/"
+"dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
+"plugin:0.0.0``)."
+msgstr ""
+
+msgid ""
+"The ``dependencies`` section and fields are optional and defined as follow:"
+msgstr ""
+
+msgid ""
+"**local**: contains a list of filepaths to the local ``.aar`` binary files "
+"the plugin depends on. Similarly to the ``binary`` field (when the "
+"``binary_type`` is ``local``), the local binaries' filepaths can be relative "
+"or absolute."
+msgstr ""
+
+msgid ""
+"If **binary_type** is ``remote``, then this should be a declaration for a "
+"`remote gradle binary <https://developer.android.com/studio/build/"
+"dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
+"plugin:0.0.0``)."
+msgstr ""
+
+msgid ""
+"**custom_maven_repos**: contains a list of URLs specifying the custom maven "
+"repositories required for the plugin's dependencies"
+msgstr ""
+
+#, fuzzy
+msgid "Loading and using an Android plugin"
+msgstr "Androidプラグインの読み込みと使用"
+
+msgid ""
+"Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, "
+"its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot "
+"project's ``res://android/plugins`` directory."
+msgstr ""
+
+msgid ""
+"The Godot editor will automatically parse all ``.gdap`` files in the ``res://"
+"android/plugins`` directory and show a list of detected and toggleable "
+"plugins in the Android export presets window under the **Plugins** section."
+msgstr ""
+
+#, fuzzy
+msgid "From your script:"
+msgstr "スクリプトから:"
+
+msgid "Bundling GDNative resources"
+msgstr "GDNativeリソースのバンドル"
+
+#, fuzzy
+msgid ""
+"An Android plugin can define and provide C/C++ GDNative resources, either to "
+"provide and/or access functionality from the game logic. The GDNative "
+"resources can be bundled within the plugin ``aar`` file which simplifies the "
+"distribution and deployment process:"
+msgstr ""
+"Androidプラグインは、ゲームロジックの機能を提供またはアクセスするために、C/C "
+"++ GDNativeリソースを定義および提供できます。 GDNativeリソースはプラグイン "
+"``aar`` ファイル内にバンドルすることができ、配布とデプロイのプロセスを簡素化"
+"します:"
+
+msgid ""
+"The shared libraries (``.so``) for the defined GDNative libraries will be "
+"automatically bundled by the ``aar`` build system."
+msgstr ""
+"定義されたGDNativeライブラリの共有ライブラリ(``.so``)は、\\ ``aar`` ビルドシ"
+"ステムによって自動的にバンドルされます。"
+
+msgid ""
+"Godot ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined in "
+"the plugin ``assets`` directory. The recommended path for these resources "
+"relative to the ``assets`` directory should be: ``godot/plugin/v1/"
+"[PluginName]/``."
+msgstr ""
+"Godotの ``*.gdnlib`` および ``*.gdns`` リソースファイルは、プラグインの "
+"``assets`` ディレクトリで手動で定義する必要があります。\\ ``assets`` ディレク"
+"トリに対するこれらのリソースの推奨パスは、\\ ``godot/plugin/v1/[PluginName]/"
+"`` でなければなりません。"
+
+msgid ""
+"For GDNative libraries, the plugin singleton object must override the ``org."
+"godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` "
+"method, and return the paths to the bundled GDNative libraries config files "
+"(``*.gdnlib``). The paths must be relative to the ``assets`` directory. At "
+"runtime, the plugin will provide these paths to Godot core which will use "
+"them to load and initialize the bundled GDNative libraries."
+msgstr ""
+"GDNativeライブラリの場合、プラグインシングルトンオブジェクトは ``org."
+"godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` メ"
+"ソッドをオーバーライドし、バンドルされたGDNativeライブラリ設定ファイル(``*."
+"gdnlib`` へのパスを返す必要があります)。パスは ``assets`` ディレクトリからの"
+"相対パスでなければなりません。実行時に、プラグインはこれらのパスをGodotコアに"
+"提供します。Godotコアはそれらを使用して、バンドルされたGDNativeライブラリを"
+"ロードおよび初期化します。"
+
+msgid "Reference implementations"
+msgstr "リファレンス実装"
+
+#, fuzzy
+msgid ""
+"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
+"godot_oculus_mobile>`_ - `Bundled gdnative resources <https://github.com/"
+"GodotVR/godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/"
+"godot_ovrmobile>`_"
+msgstr ""
+"`バンドルされたGDNativeリソース <https://github.com/m4gr3d/"
+"godot_oculus_mobile/tree/2.0/plugin/src/main/assets/addons/godot_ovrmobile>`_"
+
+#, fuzzy
+msgid ""
+"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
+"google-play-billing>`_"
+msgstr ""
+"`Godot Oculus Mobileプラグイン <https://github.com/m4gr3d/"
+"godot_oculus_mobile/tree/2.0>`_"
+
+msgid "Troubleshooting"
+msgstr "トラブルシューティング"
+
+msgid "Godot crashes upon load"
+msgstr "ロード時にGodotがクラッシュする"
+
+msgid "Check ``adb logcat`` for possible problems, then:"
+msgstr "``adb logcat`` で問題がないかチェックしてください:"
+
+msgid ""
+"Check that the methods exposed by the plugin used the following Java types: "
+"``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``org."
+"godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java."
+"lang.String[]``."
+msgstr ""
+
+#, fuzzy
+msgid "More complex datatypes are not supported for now."
+msgstr "ブレンドシェイプはGLES2ではサポートされていません。"

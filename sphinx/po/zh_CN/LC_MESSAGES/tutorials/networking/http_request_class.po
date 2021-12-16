@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:4
 msgid "Making HTTP requests"
-msgstr "制作HTTP请求"
+msgstr "进行 HTTP 请求"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:6
 msgid ""
 "The :ref:`HTTPRequest <class_HTTPRequest>` node is the easiest way to make "
 "HTTP requests in Godot. It is backed by the more low-level :ref:`HTTPClient "
@@ -32,7 +30,6 @@ msgstr ""
 "的方法. 它继承自更低级别的 :ref:`HTTPClient <class_HTTPClient>` , 相关的教程"
 "见 :ref:`here <doc_http_client_class>`."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:9
 msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
@@ -40,21 +37,19 @@ msgstr ""
 "这个示例中, 我们将创建一个带有按钮的简单UI, 按下该按钮时将发送对指定网址的"
 "HTTP请求."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:13
 msgid ""
 "When exporting to Android, make sure to enable the [code]INTERNET[/code] "
 "permission in the Android export preset before exporting the project or "
 "using one-click deploy. Otherwise, network communication of any kind will be "
 "blocked by Android."
 msgstr ""
-"当导出到安卓时，在导出项目或使用一键部署之前，确保在安卓导出预设中启用"
-"[code]INTERNET[/code]权限。否则，任何形式的网络通信都会被安卓系统阻止。"
+"当导出到 Android 时，在导出项目或使用一键部署之前，确保在 Android 导出预设中"
+"启用 [code]INTERNET[/code] 权限。否则，任何形式的网络通信都会被 Android 系统"
+"阻止。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:19
 msgid "Preparing scene"
 msgstr "准备场景"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:21
 msgid ""
 "Create a new empty scene, add a CanvasLayer as the root node and add a "
 "script to it. Then add two child nodes to it: a Button and an HTTPRequest "
@@ -65,22 +60,18 @@ msgstr ""
 "它添加两个子节点: 一个Button和一个HTTPRequest节点. 然后需要把以下信号连接到"
 "CanvasLayer脚本上:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:23
 msgid "Button.pressed: When the button is pressed, we will start the request."
 msgstr "Button.pressed: 按下按钮后, 我们将发送请求."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:24
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
 msgstr ""
 "HTTPRequest.request_completed: 当请求完成后, 我们将获取请求的数据作为参数."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:29
 msgid "Scripting"
 msgstr "编写脚本"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:31
 msgid ""
 "Below is all the code we need to make it work. The URL points to an online "
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
@@ -89,7 +80,6 @@ msgstr ""
 "下面是我们使其工作所需的所有代码. 该网址指向一个在线API模拟器; 它将返回一个预"
 "先定义好的JSON字符串, 然后我们将解析它以获取对数据的访问权限."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:72
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
@@ -97,7 +87,6 @@ msgstr ""
 "有了这个, 您应该在控制台上看到 ``(hello:world)`` ; hello是关键字,world是值, "
 "两者都是字符串."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:74
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
@@ -105,7 +94,6 @@ msgstr ""
 "有关解析JSON的更多信息, 请参阅类型参考 :ref:`JSON <class_JSON>` 和 :ref:"
 "`JSONParseResult <class_JSONParseResult>` ."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:76
 msgid ""
 "Note that you may want to check whether the ``result`` equals "
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
@@ -115,7 +103,6 @@ msgstr ""
 "误是否发生, 要了解更多信息, 请参阅JSON类型参考和 :ref:`HTTPRequest "
 "<class_HTTPRequest>` ."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
 "array, with each string containing a header in the format ``\"header: value"
@@ -126,7 +113,6 @@ msgstr ""
 "包含一个格式为 ``\"header: value\"`` 的头部. 例如, 要设置自定义用户代理(HTTP"
 "的 ``user-agent`` 头部部分), 您可以像这样使用:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:92
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
 "may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
@@ -134,7 +120,6 @@ msgstr ""
 "请注意, 为了使SSL/TLS加密, 从而使HTTPS URL发挥作用, 你可能需要采取一些额外的"
 "操作步骤, 如 :ref:`here <doc_ssl_certificates>` ."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:94
 msgid ""
 "Also, when calling APIs using authorization, be aware that someone might "
 "analyse and decompile your released application and thus may gain access to "
@@ -148,11 +133,9 @@ msgstr ""
 "嵌入诸如数据库访问凭证之类的东西通常不是一个好主意. 尽可能避免提供对攻击者有"
 "用的信息."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:98
 msgid "Sending data to server"
 msgstr "将数据发送到服务器"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:100
 msgid ""
 "Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
@@ -161,7 +144,6 @@ msgstr ""
 "到目前为止, 我们仅限于从服务器上请求数据. 但如果你需要向服务器发送数据呢？这"
 "里有一个常见的方法:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:123
 msgid ""
 "Keep in mind that you have to wait for a request to finish before sending "
 "another one. Making multiple request at once requires you to have one node "

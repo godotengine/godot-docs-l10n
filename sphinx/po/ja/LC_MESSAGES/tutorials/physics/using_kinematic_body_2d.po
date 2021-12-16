@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:4
 msgid "Using KinematicBody2D"
 msgstr "KinematicBody2Dの使用"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:9
 msgid ""
 "Godot offers several collision objects to provide both collision detection "
 "and response. Trying to decide which one to use for your project can be "
@@ -41,7 +38,6 @@ msgstr ""
 "`KinematicBody2D <class_KinematicBody2D>` ノードを見て、その使用方法の例を示"
 "します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:16
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
@@ -49,11 +45,9 @@ msgstr ""
 "このドキュメントは、あなたがGodotのさまざまな物理ボディに精通していることを前"
 "提としています。最初に :ref:`doc_physics_introduction` をお読みください。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:20
 msgid "What is a kinematic body?"
 msgstr "キネマティック(kinematic)ボディとは何ですか?"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
 msgid ""
 "``KinematicBody2D`` is for implementing bodies that are controlled via code. "
 "Kinematic bodies detect collisions with other bodies when moving, but are "
@@ -67,7 +61,6 @@ msgstr ""
 "を記述する必要があることを意味しますが、それらがどのように動き、反応するかを"
 "より正確に制御できることも意味します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:28
 msgid ""
 "A `KinematicBody2D` can be affected by gravity and other forces, but you "
 "must calculate the movement in code. The physics engine will not move a "
@@ -77,11 +70,9 @@ msgstr ""
 "ドで動きを計算する必要があります。 物理エンジンは ``KinematicBody2D`` を移動"
 "しません。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:33
 msgid "Movement and collision"
 msgstr "動きと衝突"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:35
 msgid ""
 "When moving a ``KinematicBody2D``, you should not set its ``position`` "
 "property directly. Instead, you use the ``move_and_collide()`` or "
@@ -97,7 +88,6 @@ msgstr ""
 "す。KinematicBody2D が衝突した後、\\ *衝突応答* を手動でコーディングする必要"
 "があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:41
 msgid ""
 "You should only do Kinematic body movement in the ``_physics_process()`` "
 "callback."
@@ -105,7 +95,6 @@ msgstr ""
 "``_physics_process()`` コールバックでのみキネマティックボディの動きを行う必要"
 "があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
 msgid ""
 "The two movement methods serve different purposes, and later in this "
 "tutorial, you'll see examples of how they work."
@@ -113,11 +102,9 @@ msgstr ""
 "2つの移動方法の目的は異なります。このチュートリアルの後半では、それらの動作方"
 "法の例を参照します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:47
 msgid "``move_and_collide``"
 msgstr "\\ ``move_and_collide``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:49
 msgid ""
 "This method takes one parameter: a :ref:`Vector2 <class_Vector2>` indicating "
 "the body's relative movement. Typically, this is your velocity vector "
@@ -132,7 +119,6 @@ msgstr ""
 "検出すると、ボディはすぐに動きを停止します。 この場合、メソッドは :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` オブジェクトを返します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:55
 msgid ""
 "``KinematicCollision2D`` is an object containing data about the collision "
 "and the colliding object. Using this data, you can calculate your collision "
@@ -141,11 +127,9 @@ msgstr ""
 "``KinematicCollision2D`` は、衝突とコリジョンオブジェクトに関するデータを含む"
 "オブジェクトです。 このデータを使用して、衝突応答を計算できます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:60
 msgid "``move_and_slide``"
 msgstr "\\ ``move_and_slide``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:62
 msgid ""
 "The ``move_and_slide()`` method is intended to simplify the collision "
 "response in the common case where you want one body to slide along the "
@@ -155,7 +139,6 @@ msgstr ""
 "ドさせたいという一般的なケースで衝突応答を単純化することを目的としています。 "
 "たとえば、プラットフォーマーやトップダウンゲームで特に役立ちます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:66
 msgid ""
 "``move_and_slide()`` automatically calculates frame-based movement using "
 "``delta``. Do *not* multiply your velocity vector by ``delta`` before "
@@ -165,7 +148,6 @@ msgstr ""
 "算します。 速度ベクトルを ``delta`` で乗算\\ *ぜず*\\ に ` move_and_slid()`` "
 "に渡します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:70
 msgid ""
 "In addition to the velocity vector, ``move_and_slide()`` takes a number of "
 "other parameters allowing you to customize the slide behavior:"
@@ -173,12 +155,10 @@ msgstr ""
 "速度ベクトルに加えて、\\ ``move_and_slide()`` は他の多くのパラメーターを取"
 "り、スライドの動作をカスタマイズできます:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:73
 #, fuzzy
 msgid "``up_direction`` - *default value:* ``Vector2( 0, 0 )``"
 msgstr "``floor_normal`` - *デフォルト値:* ``Vector2( 0, 0 )``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:75
 msgid ""
 "This parameter allows you to define what surfaces the engine should consider "
 "being the floor. Setting this lets you use the ``is_on_floor()``, "
@@ -192,12 +172,10 @@ msgstr ""
 "出できます。 デフォルト値は、すべてのサーフェスが壁と見なされることを意味しま"
 "す。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:80
 #, fuzzy
 msgid "``stop_on_slope`` - *default value:* ``false``"
 msgstr "``slope_stop_min_velocity`` - *デフォルト値:* ``5``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:82
 #, fuzzy
 msgid ""
 "This parameter prevents a body from sliding down slopes when standing still."
@@ -205,12 +183,10 @@ msgstr ""
 "このパラメーターは、斜面に立っているときに移動するために必要な最小速度です。 "
 "静止しているときに身体が滑り落ちるのを防ぎます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:84
 #, fuzzy
 msgid "``max_slides`` - *default value:* ``4``"
 msgstr "``max_bounces`` - *デフォルト値:* ``4``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:86
 msgid ""
 "This parameter is the maximum number of collisions before the body stops "
 "moving. Setting it too low may prevent movement entirely."
@@ -218,7 +194,6 @@ msgstr ""
 "このパラメーターは、ボディが移動を停止するまでの衝突の最大数です。 設定が低す"
 "ぎると、動きが完全に妨げられる場合があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:89
 msgid ""
 "``floor_max_angle`` - *default value:* ``0.785398`` (in radians, equivalent "
 "to ``45`` degrees)"
@@ -226,19 +201,16 @@ msgstr ""
 "``floor_max_angle`` - *デフォルト値:* ``0.785398`` (ラジアンで、\\ ``45`` 度"
 "に相当)"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:91
 msgid ""
 "This parameter is the maximum angle before a surface is no longer considered "
 "a \"floor.\""
 msgstr ""
 "このパラメータは、サーフェスが「床」と見なされなくなる前の最大角度です。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:93
 #, fuzzy
 msgid "``infinite_inertia`` - *default value:* ``true``"
 msgstr "``max_bounces`` - *デフォルト値:* ``4``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:95
 msgid ""
 "When this parameter is ``true``, the body can push :ref:`RigidBody2D "
 "<class_RigidBody2D>` nodes, ignoring their mass, but won't detect collisions "
@@ -246,11 +218,9 @@ msgid ""
 "stop."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:100
 msgid "``move_and_slide_with_snap``"
 msgstr "\\ ``move_and_slide_with_snap``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:102
 #, fuzzy
 msgid ""
 "This method adds some additional functionality to ``move_and_slide()`` by "
@@ -266,12 +236,10 @@ msgstr ""
 "にする必要があることを意味します。 これを行うには、\\ ``snap`` を "
 "``Vector2(0, 0)`` に設定するか、代わりに ``move_and_slide()`` を使用します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:110
 #, fuzzy
 msgid "Detecting collisions"
 msgstr "コリジョン(衝突/当り判定)の準備"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:112
 #, fuzzy
 msgid ""
 "When using ``move_and_collide()`` the function returns a "
@@ -282,30 +250,25 @@ msgstr ""
 "コリジョンと衝突するボディに関する情報が含まれます。この情報を使用して、応答"
 "を判別できます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:115
 msgid ""
 "When using ``move_and_slide()`` it's possible to have multiple collisions "
 "occur, as the slide response is calculated. To process these collisions, use "
 "``get_slide_count()`` and ``get_slide_collision()``:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
 msgid ""
 "`get_slide_count()` only counts times the body has collided and changed "
 "direction."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:135
 msgid ""
 "See :ref:`KinematicCollision2D <class_KinematicCollision2D>` for details on "
 "what collision data is returned."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
 msgid "Which movement method to use?"
 msgstr "使用する移動方法は？"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:141
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
 "movement function to use?\" Often, the response is to use "
@@ -321,7 +284,6 @@ msgstr ""
 "り、\\ move_and_collide()`` はより一般的であるということです。 たとえば、次の"
 "2つのコードスニペットは同じ衝突応答になります:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:172
 msgid ""
 "Anything you do with ``move_and_slide()`` can also be done with "
 "``move_and_collide()``, but it might take a little more code. However, as "
@@ -332,7 +294,6 @@ msgstr ""
 "が、もう少しコードが必要になる場合があります。 ただし、以下の例で見るよう"
 "に、 ``move_and_slide()`` が希望する応答を提供しない場合があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:176
 msgid ""
 "In the example above, we assign the velocity that ``move_and_slide()`` "
 "returns back into the ``velocity`` variable. This is because when the "
@@ -343,7 +304,6 @@ msgstr ""
 "てます。 これは、キャラクターが環境と衝突すると、関数が速度を内部的に再計算し"
 "てスローダウンを反映するためです。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:181
 msgid ""
 "For example, if your character fell on the floor, you don't want it to "
 "accumulate vertical speed due to the effect of gravity. Instead, you want "
@@ -353,7 +313,6 @@ msgstr ""
 "とは望ましくありません。 代わりに、垂直速度をゼロにリセットする必要がありま"
 "す。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:185
 msgid ""
 "``move_and_slide()`` may also recalculate the kinematic body's velocity "
 "several times in a loop as, to produce a smooth motion, it moves the "
@@ -366,11 +325,9 @@ msgstr ""
 "回衝突する場合があります。 プロセスの最後で、関数は ``velocity`` 変数に保存"
 "し、次のフレームで使用できるキャラクターの新しい速度を返します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
 msgid "Examples"
 msgstr "例"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:194
 msgid ""
 "To see these examples in action, download the sample project: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
@@ -378,11 +335,9 @@ msgstr ""
 "これらの例を実際に見るには、サンプルプロジェクトをダウンロードします: :"
 "download:`using_kinematic2d.zip <files/using_kinematic2d.zip>`\\ 。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
 msgid "Movement and walls"
 msgstr "動きと壁"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
 msgid ""
 "If you've downloaded the sample project, this example is in \"BasicMovement."
 "tscn\"."
@@ -390,7 +345,6 @@ msgstr ""
 "サンプルプロジェクトをダウンロードした場合、この例は\"BasicMovement.tscn\"に"
 "あります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:202
 msgid ""
 "For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
@@ -405,18 +359,15 @@ msgstr ""
 "RectangleShape2D」を選択し、スプライト画像に収まるように長方形のサイズを変更"
 "します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr ""
 "2D移動スキームの実装例については、\\ :ref:`doc_2d_movement` を参照してくださ"
 "い。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:210
 msgid "Attach a script to the KinematicBody2D and add the following code:"
 msgstr "KinematicBody2Dにスクリプトをアタッチし、次のコードを追加します:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:273
 msgid ""
 "Run this scene and you'll see that ``move_and_collide()`` works as expected, "
 "moving the body along the velocity vector. Now let's see what happens when "
@@ -431,7 +382,6 @@ msgstr ""
 "Polygon2Dを使用するか、「デバッグ」メニューから「コリジョン形状の表示」をオン"
 "にします。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:279
 msgid ""
 "Run the scene again and try moving into the obstacle. You'll see that the "
 "``KinematicBody2D`` can't penetrate the obstacle. However, try moving into "
@@ -443,7 +393,6 @@ msgstr ""
 "い。障害物が接着剤のように機能することがわかります。ボディが立ち往生している"
 "ように感じます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:283
 msgid ""
 "This happens because there is no *collision response*. "
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
@@ -453,7 +402,6 @@ msgstr ""
 "``move_and_collide()`` は衝突が発生したときに体の動きを止めます。 衝突からの"
 "応答をコーディングする必要があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:287
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
 "Note that we removed ``delta`` from the velocity calculation."
@@ -461,7 +409,6 @@ msgstr ""
 "関数を ``move_and_slide(velocity)`` に変更して、もう一度実行してみてくださ"
 "い。 速度計算から ``delta`` を削除していることに注意してください。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:290
 msgid ""
 "``move_and_slide()`` provides a default collision response of sliding the "
 "body along the collision object. This is useful for a great many game types, "
@@ -471,11 +418,9 @@ msgstr ""
 "デフォルトの衝突応答を提供します。 これは非常に多くの種類のゲームに有用であ"
 "り、必要な動作を得るために必要なものすべてである場合があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
 msgid "Bouncing/reflecting"
 msgstr "反発/反射"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:297
 msgid ""
 "What if you don't want a sliding collision response? For this example "
 "(\"BounceandCollide.tscn\" in the sample project), we have a character "
@@ -485,7 +430,6 @@ msgstr ""
 "トの\"BounceandCollide.tscn\")には、弾丸を発射するキャラクターがあり、弾丸が"
 "壁から跳ね返るようにする必要があります。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:301
 msgid ""
 "This example uses three scenes. The main scene contains the Player and "
 "Walls. The Bullet and Wall are separate scenes so that they can be instanced."
@@ -494,7 +438,6 @@ msgstr ""
 "含まれています。 BulletとWallは別々のシーンであるため、インスタンス化できま"
 "す。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:304
 msgid ""
 "The Player is controlled by the `w` and `s` keys for forward and back. "
 "Aiming uses the mouse pointer. Here is the code for the Player, using "
@@ -504,11 +447,9 @@ msgstr ""
 "ンターを使用します。 プレイヤーのコードは、\\ ``move_and_slide()`` を使用して"
 "います:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:391
 msgid "And the code for the Bullet:"
 msgstr "そして、弾丸のコード:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:453
 msgid ""
 "The action happens in ``_physics_process()``. After using "
 "``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
@@ -518,7 +459,6 @@ msgstr ""
 "を使用した後、衝突が発生した場合、\\ ``KinematicCollision2D`` オブジェクトが"
 "返されます(そうでない場合、戻り値は ``Nil`` です)。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:457
 msgid ""
 "If there is a returned collision, we use the ``normal`` of the collision to "
 "reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
@@ -526,7 +466,6 @@ msgstr ""
 "返されたコリジョンがある場合、コリジョンの ``normal`` を使用して\\ ``Vector2."
 "bounce()`` メソッドで弾丸の ``velocity`` を反映します。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:460
 msgid ""
 "If the colliding object (``collider``) has a ``hit`` method, we also call "
 "it. In the example project, we've added a flashing color effect to the Wall "
@@ -536,11 +475,9 @@ msgstr ""
 "出します。 サンプルプロジェクトでは、これを示すために壁に点滅する色の効果を追"
 "加しました。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
 msgid "Platformer movement"
 msgstr "プラットフォームの動き"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:469
 msgid ""
 "Let's try one more popular example: the 2D platformer. ``move_and_slide()`` "
 "is ideal for quickly getting a functional character controller up and "
@@ -552,7 +489,6 @@ msgstr ""
 "行するのに理想的です。 サンプルプロジェクトをダウンロードした場合"
 "は、\"Platformer.tscn\"で見つけることができます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:473
 msgid ""
 "For this example, we'll assume you have a level made of ``StaticBody2D`` "
 "objects. They can be any shape and size. In the sample project, we're using :"
@@ -563,11 +499,9 @@ msgstr ""
 "`Polygon2D <class_Polygon2D>` を使用してプラットフォームの形状を作成していま"
 "す。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:477
 msgid "Here's the code for the player body:"
 msgstr "プレイヤーの本体のコードは次のとおりです:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:558
 msgid ""
 "When using ``move_and_slide()``, the function returns a vector representing "
 "the movement that remained after the slide collision occurred. Setting that "
@@ -580,7 +514,6 @@ msgstr ""
 "とで、斜面をスムーズに上下できます。\\ ``velocity = `` を削除して、これを行わ"
 "ないとどうなるかを確認してください。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:563
 msgid ""
 "Also note that we've added ``Vector2(0, -1)`` as the floor normal. This "
 "vector points straight upward. As a result, if the character collides with "
@@ -590,7 +523,6 @@ msgstr ""
 "い。 このベクトルはまっすぐ上を指します。 その結果、キャラクターがこの法線を"
 "持つオブジェクトと衝突した場合、そのオブジェクトは床と見なされます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:567
 msgid ""
 "Using the floor normal allows us to make jumping work, using "
 "``is_on_floor()``. This function will only return ``true`` after a "
@@ -603,7 +535,6 @@ msgstr ""
 "ある ``move_and_slide()`` 衝突後にのみ ``true`` を返します。\\ "
 "``floor_max_angle`` を設定することで最大角度を制御できます。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:572
 msgid ""
 "This angle also allows you to implement other features like wall jumps using "
 "``is_on_wall()``, for example."

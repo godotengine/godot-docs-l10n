@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Character animation"
+msgstr "Animace spritu"
+
+msgid ""
+"In this final lesson, we'll use Godot's built-in animation tools to make our "
+"characters float and flap. You'll learn to design animations in the editor "
+"and use code to make your game feel alive."
+msgstr ""
+
+msgid "|image0|"
+msgstr "| image0 |"
+
+#, fuzzy
+msgid "We'll start with an introduction to using the animation editor."
+msgstr "Seznámení s funkcemi animace"
+
+#, fuzzy
+msgid "Using the animation editor"
+msgstr "Použití editoru motivů"
+
+msgid ""
+"The engine comes with tools to author animations in the editor. You can then "
+"use the code to play and control them at runtime."
+msgstr ""
+
+msgid ""
+"Open the player scene, select the player node, and add an animation player "
+"node."
+msgstr ""
+
+msgid "The *Animation* dock appears in the bottom panel."
+msgstr ""
+
+msgid "|image1|"
+msgstr "| image1 |"
+
+msgid ""
+"It features a toolbar and the animation drop-down menu at the top, a track "
+"editor in the middle that's currently empty, and filter, snap, and zoom "
+"options at the bottom."
+msgstr ""
+
+msgid "Let's create an animation. Click on *Animation -> New*."
+msgstr ""
+
+msgid "|image2|"
+msgstr "| image2 |"
+
+#, fuzzy
+msgid "Name the animation \"float\"."
+msgstr "Vytvoření animace"
+
+msgid "|image3|"
+msgstr "| image3 |"
+
+msgid ""
+"Once you created the animation, the timeline appears with numbers "
+"representing time in seconds."
+msgstr ""
+
+msgid "|image4|"
+msgstr "| image4 |"
+
+msgid ""
+"We want the animation to start playback automatically at the start of the "
+"game. Also, it should loop."
+msgstr ""
+
+msgid ""
+"To do so, you can click the button with an \"A+\" icon in the animation "
+"toolbar and the looping arrows, respectively."
+msgstr ""
+
+msgid "|image5|"
+msgstr "| image5 |"
+
+msgid ""
+"You can also pin the animation editor by clicking the pin icon in the top-"
+"right. This prevents it from folding when you click on the viewport and "
+"deselect the nodes."
+msgstr ""
+
+msgid "|image6|"
+msgstr ""
+
+msgid ""
+"Set the animation duration to ``1.2`` seconds in the top-right of the dock."
+msgstr ""
+
+msgid "|image7|"
+msgstr ""
+
+msgid ""
+"You should see the gray ribbon widen a bit. It shows you the start and end "
+"of your animation and the vertical blue line is your time cursor."
+msgstr ""
+
+msgid "|image8|"
+msgstr ""
+
+msgid ""
+"You can click and drag the slider in the bottom-right to zoom in and out of "
+"the timeline."
+msgstr ""
+
+msgid "|image9|"
+msgstr ""
+
+#, fuzzy
+msgid "The float animation"
+msgstr "animace světla"
+
+msgid ""
+"With the animation player node, you can animate most properties on as many "
+"nodes as you need. Notice the key icon next to properties in the "
+"*Inspector*. You can click any of them to create a keyframe, a time and "
+"value pair for the corresponding property. The keyframe gets inserted where "
+"your time cursor is in the timeline."
+msgstr ""
+
+msgid ""
+"Let's insert our first keys. Here, we will animate both the translation and "
+"the rotation of the *Character* node."
+msgstr ""
+
+msgid ""
+"Select the *Character* and click the key icon next to *Translation* in the "
+"*Inspector*. Do the same for *Rotation Degrees*."
+msgstr ""
+
+msgid "|image10|"
+msgstr ""
+
+msgid ""
+"Two tracks appear in the editor with a diamond icon representing each "
+"keyframe."
+msgstr ""
+
+msgid "|image11|"
+msgstr ""
+
+msgid ""
+"You can click and drag on the diamonds to move them in time. Move the "
+"translation key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
+msgstr ""
+
+msgid "|image12|"
+msgstr ""
+
+msgid ""
+"Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
+"timeline. In the *Inspector*, set the *Translation*'s *Y* axis to about "
+"``0.65`` meters and the *Rotation Degrees*' *X* axis to ``8``."
+msgstr ""
+
+msgid "|image13|"
+msgstr ""
+
+msgid ""
+"Create a keyframe for both properties and shift the translation key to "
+"``0.7`` seconds by dragging it on the timeline."
+msgstr ""
+
+msgid "|image14|"
+msgstr ""
+
+msgid ""
+"A lecture on the principles of animation is beyond the scope of this "
+"tutorial. Just note that you don't want to time and space everything evenly. "
+"Instead, animators play with timing and spacing, two core animation "
+"principles. You want to offset and contrast in your character's motion to "
+"make them feel alive."
+msgstr ""
+
+msgid ""
+"Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
+"the Y translation to about ``0.35`` and the X rotation to ``-9`` degrees. "
+"Once again, create a key for both properties."
+msgstr ""
+
+msgid ""
+"You can preview the result by clicking the play button or pressing :kbd:"
+"`Shift + D`. Click the stop button or press :kbd:`S` to stop playback."
+msgstr ""
+
+#, fuzzy
+msgid "|image15|"
+msgstr "| image1 |"
+
+msgid ""
+"You can see that the engine interpolates between your keyframes to produce a "
+"continuous animation. At the moment, though, the motion feels very robotic. "
+"This is because the default interpolation is linear, causing constant "
+"transitions, unlike how living things move in the real world."
+msgstr ""
+
+msgid "We can control the transition between keyframes using easing curves."
+msgstr ""
+
+msgid ""
+"Click and drag around the first two keys in the timeline to box select them."
+msgstr ""
+
+#, fuzzy
+msgid "|image16|"
+msgstr "| image1 |"
+
+msgid ""
+"You can edit the properties of both keys simultaneously in the *Inspector*, "
+"where you can see an *Easing* property."
+msgstr ""
+
+#, fuzzy
+msgid "|image17|"
+msgstr "| image1 |"
+
+msgid ""
+"Click and drag on the curve, pulling it towards the left. This will make it "
+"ease-out, that is to say, transition fast initially and slow down as the "
+"time cursor reaches the next keyframe."
+msgstr ""
+
+#, fuzzy
+msgid "|image18|"
+msgstr "| image1 |"
+
+msgid ""
+"Play the animation again to see the difference. The first half should "
+"already feel a bit bouncier."
+msgstr ""
+
+msgid "Apply an ease-out to the second keyframe in the rotation track."
+msgstr ""
+
+#, fuzzy
+msgid "|image19|"
+msgstr "| image1 |"
+
+msgid ""
+"Do the opposite for the second translation keyframe, dragging it to the "
+"right."
+msgstr ""
+
+#, fuzzy
+msgid "|image20|"
+msgstr "| image2 |"
+
+#, fuzzy
+msgid "Your animation should look something like this."
+msgstr "Vaše finální scéna by měla vypadat přibližně takto."
+
+#, fuzzy
+msgid "|image21|"
+msgstr "| image2 |"
+
+msgid ""
+"Animations update the properties of the animated nodes every frame, "
+"overriding initial values. If we directly animated the *Player* node, it "
+"would prevent us from moving it in code. This is where the *Pivot* node "
+"comes in handy: even though we animated the *Character*, we can still move "
+"and rotate the *Pivot* and layer changes on top of the animation in a script."
+msgstr ""
+
+msgid "If you play the game, the player's creature will now float!"
+msgstr ""
+
+msgid ""
+"If the creature is a little too close to the floor, you can move the *Pivot* "
+"up to offset it."
+msgstr ""
+
+#, fuzzy
+msgid "Controlling the animation in code"
+msgstr "Ovládání animace"
+
+msgid ""
+"We can use code to control the animation playback based on the player's "
+"input. Let's change the animation speed when the character is moving."
+msgstr ""
+
+msgid "Open the *Player*'s script by clicking the script icon next to it."
+msgstr ""
+
+#, fuzzy
+msgid "|image22|"
+msgstr "| image2 |"
+
+msgid ""
+"In ``_physics_process()``, after the line where we check the ``direction`` "
+"vector, add the following code."
+msgstr ""
+
+msgid ""
+"This code makes it so when the player moves, we multiply the playback speed "
+"by ``4``. When they stop, we reset it to normal."
+msgstr ""
+
+msgid ""
+"We mentioned that the pivot could layer transforms on top of the animation. "
+"We can make the character arc when jumping using the following line of code. "
+"Add it at the end of ``_physics_process()``."
+msgstr ""
+
+#, fuzzy
+msgid "Animating the mobs"
+msgstr "Animace jedné Ryby"
+
+msgid ""
+"Here's another nice trick with animations in Godot: as long as you use a "
+"similar node structure, you can copy them to different scenes."
+msgstr ""
+
+msgid ""
+"For example, both the *Mob* and the *Player* scenes have a *Pivot* and a "
+"*Character* node, so we can reuse animations between them."
+msgstr ""
+
+msgid ""
+"We're going to duplicate the animation using a feature called \"merge from "
+"scene\"."
+msgstr ""
+
+msgid ""
+"Open the *Mob* scene, right-click on the *Mob* node and select *Merge From "
+"Scene*."
+msgstr ""
+
+#, fuzzy
+msgid "|image23|"
+msgstr "| image2 |"
+
+msgid ""
+"Double-click ``Player.tscn`` to open it and import the *AnimationPlayer*. "
+"That's it; all monsters will now play the float animation."
+msgstr ""
+
+msgid ""
+"We can change the playback speed based on the creature's ``random_speed``. "
+"Open the *Mob*'s script and at the end of the ``initialize()`` function, add "
+"the following line."
+msgstr ""
+
+msgid "And with that, you finished coding your first complete 3D game."
+msgstr ""
+
+#, fuzzy
+msgid "**Congratulations**!"
+msgstr "**Obecné možnosti**"
+
+msgid ""
+"In the next part, we'll quickly recap what you learned and give you some "
+"links to keep learning more. But for now, here are the complete ``Player."
+"gd`` and ``Mob.gd`` so you can check your code against them."
+msgstr ""
+
+msgid "Here's the *Player* script."
+msgstr ""
+
+msgid "And the *Mob*'s script."
+msgstr ""

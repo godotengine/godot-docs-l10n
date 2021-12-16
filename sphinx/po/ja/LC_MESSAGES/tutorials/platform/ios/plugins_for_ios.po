@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:4
 msgid "Plugins for iOS"
 msgstr "iOS用プラグイン"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
 #, fuzzy
 msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
@@ -30,46 +28,38 @@ msgstr ""
 "現時点では、GameCenterとStorekitの2つのiOS APIが部分的に実装されています。両"
 "方とも、以下で説明する非同期呼び出しの同じモデルを使用します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:11
-#, fuzzy
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
 msgstr ""
-"ドキュメントに貢献する場合は、そのリポジトリは `こちら <https://github.com/"
-"godotengine/godot-docs>`_ にあります。"
+"最新のアップデートについては、ドキュメントとソースコードが `Godot iOS "
+"plugins repository <https://github.com/godotengine/godot-ios-plugins>`_ にあ"
+"ります。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 #, fuzzy
 msgid "Accessing plugin singletons"
 msgstr "シーンノードへのアクセス"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:16
 msgid ""
 "To access plugin functionality, you first need to check that the plugin is "
 "exported and available by calling the `Engine.has_singleton()` function, "
 "which returns a registered singleton."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:20
 #, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
 msgstr "2つのボーンを持つスケルトンノードの例を次に示します:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:40
 msgid "Asynchronous methods"
 msgstr "非同期メソッド"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:42
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
 msgstr "非同期操作を要求する場合、メソッドは次のようになります:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:49
 msgid ""
 "The parameter will usually be a Dictionary, with the information necessary "
 "to make the request, and the call will have two phases. First, the method "
@@ -86,7 +76,6 @@ msgstr ""
 "エラー値が ``OK`` の場合、応答イベントが生成され、'pending events' キューに追"
 "加されます。 例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:76
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
 "through the pending_event interface, even if it's an error, or a network "
@@ -100,20 +89,17 @@ msgstr ""
 "ロックできる必要があります。 APIのいずれかがこのように動作しない場合は、バグ"
 "として扱う必要があります。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:82
 msgid "The pending event interface consists of two methods:"
 msgstr ""
 "保留中のイベント(pending event)インターフェイスは、2つのメソッドで構成されて"
 "います:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:84
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
 msgstr ""
 "``get_pending_event_count()`` キュー上の保留中のイベントの数を返します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
@@ -121,38 +107,32 @@ msgstr ""
 "``Variant pop_pending_event()`` キューから最初のイベントをポップし、それを返"
 "します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:91
 msgid "Store Kit"
-msgstr "Store Kit"
+msgstr "\\ Store Kit"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:93
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list.h>`_"
+"`Godot iOS InAppStore plugin <https://github.com/godotengine/godot-ios-"
+"plugins/blob/master/plugins/inappstore/in_app_store.mm>`_\\ で実装されていま"
+"す。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:95
-#, fuzzy
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
 msgstr ""
 "Store Kit APIは \"InAppStore\" シングルトンからアクセスできます(常にgdscript"
-"から利用可能です)。自動的に初期化されます。 購入には3つの方法があります:"
+"から利用可能です)。自動的に初期化されます。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:98
 #, fuzzy
 msgid "The following methods are available and documented below:"
 msgstr "プレゼンテーションを実装するには、次のメソッドを使用します:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:116
 #, fuzzy
 msgid "``purchase``"
 msgstr "購入"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:118
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
 "``finish_transaction(product_id)`` once you receive a successful response or "
@@ -160,17 +140,9 @@ msgid ""
 "These two methods ensure the transaction is completed."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:123
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:163
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:233
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:306
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
 msgid "Parameters"
 msgstr "\\ Parameters"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:125
 #, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with one field, ``product_id``, a string "
@@ -179,61 +151,25 @@ msgstr ""
 "製品IDを含む文字列である ``product_id`` という1つのフィールドを持つ "
 "Dictionary をパラメーターとして受け取ります。例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:133
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:173
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:197
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:275
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:320
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:367
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:426
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:458
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:515
 msgid "Response event"
 msgstr "応答イベント"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:135
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:175
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:277
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:322
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:369
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:398
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:428
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:460
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:517
 msgid "The response event will be a dictionary with the following fields:"
 msgstr "応答イベントは、次のフィールドを持つ Dictionary になります:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:137
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:279
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:324
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:371
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:400
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:430
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:462
 msgid "On error:"
 msgstr "エラー時:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:147
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:290
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:335
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:381
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:410
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:440
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:472
 msgid "On success:"
 msgstr "成功時:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:158
 #, fuzzy
 msgid "``request_product_info``"
 msgstr "request_product_info"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:160
 msgid "Requests the product info on a list of product IDs."
 msgstr "製品IDのリストで製品情報を要求します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:165
 #, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
@@ -242,12 +178,10 @@ msgstr ""
 "製品IDを含む文字列配列である ``product_ids`` という1つのフィールドを持つ "
 "Dictionary をパラメーターとして受け取ります。例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:191
 #, fuzzy
 msgid "``restore_purchases``"
 msgstr "restore_purchases"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:193
 #, fuzzy
 msgid ""
 "Restores previously made purchases on user's account. This will create "
@@ -256,57 +190,47 @@ msgstr ""
 "ユーザーのアカウントで以前に購入したものを復元します。 これにより、以前に購入"
 "した製品IDごとに応答イベントが作成されます。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:199
 msgid "The response events will be dictionaries with the following fields:"
 msgstr "応答イベントは、次のフィールドを持つ Dictionary になります:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
 msgid "``set_auto_finish_transaction``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:212
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
 "finalized automatically. Call this method prior to calling ``purchase()``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:218
 msgid ""
 "Takes a boolean as a parameter which specifies if purchases should be "
 "automatically finalized. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:226
 #, fuzzy
 msgid "``finish_transaction``"
 msgstr "\\ ``connection``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:228
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
 "method after you receive a successful purchase response."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:235
 msgid ""
 "Takes a string ``product_id`` as an argument. ``product_id`` specifies what "
 "product to finalize the purchase on. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:243
 msgid "Game Center"
-msgstr "Game Center"
+msgstr "\\ Game Center"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"`Godot Paymentプラグイン <https://github.com/m4gr3d/godot/tree/"
-"rearch_godot_android_plugin/platform/android/java/plugins/godotpayment>`_"
+"`Godot iOS GameCenter plugin <https://github.com/godotengine/godot-ios-"
+"plugins/blob/master/plugins/gamecenter/game_center.mm>`_\\ で実装されていま"
+"す。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 #, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
@@ -315,66 +239,50 @@ msgstr ""
 "Game Center APIは、\"GameCenter\" シングルトンから入手できます。 8つのメソッ"
 "ドがあります:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:262
-#, fuzzy
 msgid "and the pending events interface:"
-msgstr "およびpending_eventインターフェース"
+msgstr "およびpending_eventインターフェース:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
 #, fuzzy
 msgid "``authenticate``"
 msgstr "``bool is_authenticated();``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:272
 msgid "Authenticates a user in Game Center."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
 #, fuzzy
 msgid "``post_score``"
 msgstr "post_score"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:303
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "Game Centerリーダーボードにスコアを投稿します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:308
 #, fuzzy
 msgid "Takes a dictionary as a parameter, with two fields:"
 msgstr ""
 "次の2つのフィールドを使用した、Dictionaryをパラメーターとして受け取ります。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:310
 msgid "``score`` a float number"
 msgstr "``score`` 浮動小数点数"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:311
 msgid "``category`` a string with the category name"
 msgstr "``category`` カテゴリー名の文字列"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:313
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:360
 msgid "Example:"
 msgstr "例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:345
 #, fuzzy
 msgid "``award_achievement``"
 msgstr "award_achievement"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:347
 msgid "Modifies the progress of a Game Center achievement."
 msgstr "Game Centerアチーブメント(実績)の進捗を変更します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:352
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr "3つのフィールドを持つ Dictionary をパラメーターとして受け取ります:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:354
 msgid "``name`` (string) the achievement name"
 msgstr "``name`` (string) 実績名"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:355
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
@@ -382,7 +290,6 @@ msgstr ""
 "``progress`` (float) 0.0から100.0への達成の進捗(``GKAchievement::"
 "percentComplete``に渡されます)"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:357
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
@@ -390,23 +297,19 @@ msgstr ""
 "``show_completion_banner`` (bool) Game Centerが画面の上部に実績バナーを表示す"
 "るかどうか"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:391
 #, fuzzy
 msgid "``reset_achievements``"
 msgstr "reset_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:393
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 "Game Centerのすべての実績をクリアします。 この関数はパラメーターを受け取りま"
 "せん。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:420
 #, fuzzy
 msgid "``request_achievements``"
 msgstr "request_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:422
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
@@ -414,12 +317,10 @@ msgstr ""
 "プレイヤーが進捗したGame Centerのすべての実績を要求します。この関数はパラメー"
 "ターを受け取りません。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:452
 #, fuzzy
 msgid "``request_achievement_descriptions``"
 msgstr "request_achievement_descriptions"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:454
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
@@ -427,12 +328,10 @@ msgstr ""
 "進行状況に関係なく、既存のすべてのGame Centerの実績の説明を要求します。この関"
 "数はパラメーターを受け取りません。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:489
 #, fuzzy
 msgid "``show_game_center``"
 msgstr "show_game_center"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:491
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
@@ -440,12 +339,10 @@ msgstr ""
 "組み込みのGame Centerオーバーレイを表示し、リーダーボード、実績、課題を示しま"
 "す。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:497
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr ""
 "次の2つのフィールドを使用した、Dictionaryをパラメーターとして受け取ります。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:499
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
@@ -455,7 +352,6 @@ msgstr ""
 "\"、\"leaderboards\"、 \"achievements\"、または \"challenges\" を受け入れま"
 "す。 デフォルトは \"default\" です。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:502
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -467,19 +363,15 @@ msgstr ""
 "るように設定されている)の場合にのみ使用されます。指定しない場合、Game Center"
 "は集計リーダーボードを表示します。"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:507
 msgid "Examples:"
 msgstr "例:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:519
 msgid "On close:"
 msgstr "クローズ時:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:529
 msgid "Multi-platform games"
 msgstr "マルチプラットフォームゲーム"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

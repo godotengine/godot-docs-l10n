@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:4
 #, fuzzy
 msgid "Documentation guidelines"
 msgstr "Linee guida per la documentazione"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:6
 msgid ""
 "This page describes the rules to follow if you want to contribute to Godot "
 "Engine by writing or reviewing documentation, or by translating existing "
@@ -32,11 +30,9 @@ msgid ""
 "contact the docs team."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:16
 msgid ""
 "Creating or modifying documentation pages is mainly done via the `godot-docs "
 "GitHub repository <https://github.com/godotengine/godot-docs>`_. The HTML "
@@ -46,21 +42,20 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
 "For details on Git usage and the pull request workflow, please refer to the :"
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
-"The README.md file contains all the information you need to get you started, "
-"please read it. In particular, it contains some tips and tricks and links to "
-"reference documentation about the reStructuredText markup language."
+"The class reference's source files are in the `Godot engine repository "
+"<https://github.com/godotengine/godot>`_. We generate the :ref:`Godot API "
+"<toc-class-ref>` section of this documentation from them. If you want to "
+"update the description of a class, its methods, or properties, read :ref:"
+"`doc_updating_the_class_reference`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
 "If you want to edit the **API reference**, please note that it should *not* "
 "be done in the godot-docs repository. Instead, you should edit the ``doc/"
@@ -69,11 +64,9 @@ msgid ""
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "The 'Edit on GitHub' link"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
 "If you're reading documentation on `docs.godotengine.org <https://docs."
 "godotengine.org>`_, you'll see an **Edit on GitHub** hyperlink at the top "
@@ -81,60 +74,50 @@ msgid ""
 "changes to a page you're reading as follows:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:47
 msgid "Click the **Edit on GitHub** button."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
 "On the GitHub page you're taken to, click the pencil icon in the top-right "
 "corner near the **Raw**, **Blame** and **History** buttons. It has the "
 "tooltip \"Edit the file in a fork of this project\"."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid "Complete all the edits you want to make for that page."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:55
 msgid ""
 "Summarize the changes you made in the form at the bottom of the page and "
 "click the button labelled **Propose file change** when done."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:58
 msgid ""
 "On the following screens, click the **Create pull request** button until you "
 "see a message like *Username wants to merge 1 commit into godotengine:master "
 "from Username:patch-6*."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:62
 msgid ""
 "A reviewer will evaluate your changes and incorporate them into the docs if "
 "they're acceptable. You might also be asked to make modifications to your "
 "changes before they're included."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:67
 #, fuzzy
 msgid "What makes good documentation?"
 msgstr "Cosa rende buona la documentazione?"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:69
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also, have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:73
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
 "Tutorial: a page aiming at explaining how to use one or more concepts in the "
 "editor or scripts in order to achieve a specific goal with a learning "
@@ -142,82 +125,67 @@ msgid ""
 "object\")."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid ""
 "Documentation: a page describing precisely one and only one concept at a "
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:88
 msgid "Titles"
 msgstr "Titoli"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Always begin pages with their title and a Sphinx reference name:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
 "The reference allows linking to this page using the ``:ref:`` format, e.g. "
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:103
 msgid ""
 "Also, avoid American CamelCase titles: title's first word should begin with "
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid "Insert your title here"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:109
 #, fuzzy
 msgid "And this is a bad example:"
 msgstr "E questo è un cattivo esempio:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:111
 msgid "Insert Your Title Here"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:113
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:117
 msgid "Translating existing pages"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:119
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:128
 msgid ""
 "There also is the official `Godot i18n repository <https://github.com/"
 "godotengine/godot-docs-l10n>`_ where you can see when the data was last "
 "synchronized."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
 msgstr "Licenza"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:135
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
@@ -229,7 +197,6 @@ msgstr ""
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, con attribuzione "
 "a \"Juan Linietsky, Ariel Manzur e la comunità Godot\"."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:138
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."

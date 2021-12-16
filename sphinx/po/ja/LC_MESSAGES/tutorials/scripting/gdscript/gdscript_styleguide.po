@@ -1,0 +1,597 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript style guide"
+msgstr "GDScriptスタイルガイド"
+
+msgid ""
+"This style guide lists conventions to write elegant GDScript. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"このスタイルガイドには、エレガントなGDScriptを作成するための規則が記載されて"
+"います。目標は、クリーンで読みやすいコードの作成を奨励し、プロジェクト、ディ"
+"スカッション、およびチュートリアル間の一貫性を促進することです。うまくいけ"
+"ば、これも自動フォーマットツールの開発を促進するでしょう。"
+
+msgid ""
+"Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
+msgstr ""
+"GDScriptはPythonに近いので、このガイドはPythonの `PEP 8 <https://www.python."
+"org/dev/peps/pep-0008/>`__ プログラミングスタイルガイドに触発されています。"
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+"スタイルガイドは、厳密なルールブックを意味するものではありません。時には以下"
+"のガイドラインの一部を適用できない場合があります。その場合は、最善であるよう"
+"に判断を下すと共に、仲間の開発者に洞察を求めてください。"
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+"一般に、プロジェクト内およびチーム内でコードの一貫性を保つことは、このガイド"
+"に完璧に従うよりも重要です。"
+
+msgid ""
+"Godot's built-in script editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Godotのビルトインスクリプトエディタは、デフォルトでこれらの規則を多く使用しま"
+"す。それをあなたの役に立つようにしてください。"
+
+msgid "Here is a complete class example based on these guidelines:"
+msgstr "これらのガイドラインに基づいた完全なクラスの例を次に示します:"
+
+msgid "Formatting"
+msgstr "書式設定"
+
+msgid "Encoding and special characters"
+msgstr "エンコードと特殊文字"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr ""
+"CRLFやCRではなく、改行(**LF**)文字を使用して改行します。\\ *(エディタのデフォ"
+"ルト)*"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr ""
+"各ファイルの最後に1つの改行文字を使用します。\\ *(エディタのデフォルト)*"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+"`バイトオーダーマーク <https://ja.wikipedia.org/wiki/バイトオーダーマーク>`_"
+"\\ なしで\\ **UTF-8**\\ エンコーディングを使用します。\\ *(エディタのデフォル"
+"ト)*"
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr ""
+"インデントにはスペースの代わりに\\ **タブ**\\ を使用します。\\ *(エディタのデ"
+"フォルト)*"
+
+msgid "Indentation"
+msgstr "インデント"
+
+msgid "Each indent level should be one greater than the block containing it."
+msgstr ""
+"各インデントレベルは、それを含むブロックより1つ大きくなければなりません。"
+
+msgid "**Good**:"
+msgstr "**良い例**:"
+
+msgid "**Bad**:"
+msgstr "**悪い例**:"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"継続行と通常のコードブロックを区別するには、2つのインデントレベルを使用しま"
+"す。"
+
+msgid ""
+"Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
+"indentation level to distinguish continuation lines:"
+msgstr ""
+"この規則の例外は、配列、辞書、および列挙型です。単一のインデントレベルを使用"
+"して、継続行を区別します。"
+
+msgid "Trailing comma"
+msgstr "末尾のコンマ"
+
+msgid ""
+"Use a trailing comma on the last line in arrays, dictionaries, and enums. "
+"This results in easier refactoring and better diffs in version control as "
+"the last line doesn't need to be modified when adding new elements."
+msgstr ""
+"配列、辞書、および列挙型の最後の行に末尾のコンマを使用します。これにより、新"
+"しい要素を追加するときに最後の行を変更する必要がないため、リファクタリングが"
+"容易になり、バージョン管理の差分が改善されます。"
+
+msgid ""
+"Trailing commas are unnecessary in single-line lists, so don't add them in "
+"this case."
+msgstr ""
+"単一行リストでは末尾のコンマは不要なので、この場合は追加しないでください。"
+
+msgid "Blank lines"
+msgstr "空白行"
+
+msgid "Surround functions and class definitions with two blank lines:"
+msgstr "関数とクラスの定義は2つの空白行で囲んで下さい:"
+
+msgid "Use one blank line inside functions to separate logical sections."
+msgstr "論理セクションを区切るには、関数内で1行の空白行を使用します。"
+
+msgid ""
+"We use a single line between classes and function definitions in the class "
+"reference and in short code snippets in this documentation."
+msgstr ""
+
+msgid "Line length"
+msgstr "行の長さ"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr "コードの個々の行を100文字以内に保ちます。"
+
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two scripts opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+"可能であれば、行を80文字未満に保つようにしてください。これにより、小さなディ"
+"スプレイでコードを読む場合や、2つのスクリプトを外部テキスト エディタで並べて"
+"開くときに役立ちます。たとえば、差分リビジョンを見る場合などです。"
+
+msgid "One statement per line"
+msgstr "1行につき1つのステートメント"
+
+msgid ""
+"Never combine multiple statements on a single line. No, C programmers, not "
+"even with a single line conditional statement."
+msgstr ""
+"複数のステートメントを1行にまとめないでください。Cプログラミングで可能な、1行"
+"での条件付きステートメントもありません。"
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr "その規則の唯一の例外は三項演算子です:"
+
+msgid "Format multiline statements for readability"
+msgstr ""
+
+msgid ""
+"When you have particularly long ``if`` statements or nested ternary "
+"expressions, wrapping them over multiple lines improves readability. Since "
+"continuation lines are still part of the same expression, 2 indent levels "
+"should be used instead of one."
+msgstr ""
+
+msgid ""
+"GDScript allows wrapping statements using multiple lines using parentheses "
+"or backslashes. Parentheses are favored in this style guide since they make "
+"for easier refactoring. With backslashes, you have to ensure that the last "
+"line never contains a backslash at the end. With parentheses, you don't have "
+"to worry about the last line having a backslash at the end."
+msgstr ""
+
+msgid ""
+"When wrapping a conditional expression over multiple lines, the ``and``/"
+"``or`` keywords should be placed at the beginning of the line continuation, "
+"not at the end of the previous line."
+msgstr ""
+
+msgid "Avoid unnecessary parentheses"
+msgstr "不要なかっこ()を入れない"
+
+#, fuzzy
+msgid ""
+"Avoid parentheses in expressions and conditional statements. Unless "
+"necessary for order of operations or wrapping over multiple lines, they only "
+"reduce readability."
+msgstr ""
+"式や条件文に括弧を付けないでください。 操作の順序に必要な場合を除き、可読性が"
+"低下するだけです。"
+
+msgid "Boolean operators"
+msgstr "ブール演算子"
+
+msgid ""
+"Prefer the plain English versions of boolean operators, as they are the most "
+"accessible:"
+msgstr ""
+"最もアクセスしやすいように、ブール演算子のプレーンな英語バージョンを優先しま"
+"す:"
+
+msgid "Use ``and`` instead of ``&&``."
+msgstr "``&&`` の代わりに ``and`` を使用します。"
+
+msgid "Use ``or`` instead of ``||``."
+msgstr "``||`` の代わりに ``or`` を使用します。"
+
+msgid ""
+"You may also use parentheses around boolean operators to clear any "
+"ambiguity. This can make long expressions easier to read."
+msgstr ""
+"また、ブール演算子をかっこで囲んであいまいさを解消することもできます。これに"
+"より、長い式が読みやすくなります。"
+
+msgid "Comment spacing"
+msgstr "コメントスペース"
+
+msgid ""
+"Regular comments should start with a space, but not code that you comment "
+"out. This helps differentiate text comments from disabled code."
+msgstr ""
+"通常のコメントはスペースで始まる必要がありますが、コメントアウトしたコードに"
+"はスペースは付けません。これにより、テキストコメントと無効化したコードを区別"
+"できます。"
+
+msgid ""
+"In the script editor, to toggle the selected code commented, press :kbd:"
+"`Ctrl + K`. This feature adds a single # sign at the start of the selected "
+"lines."
+msgstr ""
+"スクリプトエディタで、選択したコードのコメントを切り替えるには、\\ :kbd:"
+"`Ctrl + K` を押します。この機能は、選択した行の先頭に単一の#記号を追加します"
+"(#記号があれば逆に削除します)。"
+
+msgid "Whitespace"
+msgstr "スペース"
+
+msgid ""
+"Always use one space around operators and after commas. Also, avoid extra "
+"spaces in dictionary references and function calls."
+msgstr ""
+"演算子の前後およびコンマの後には常に1つのスペースを使用します。また、辞書参照"
+"や関数呼び出しに余分なスペースを入れないでください。"
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr "式を垂直方向に揃えるためにスペースを使用しないでください:"
+
+msgid "Quotes"
+msgstr "引用符"
+
+msgid ""
+"Use double quotes unless single quotes make it possible to escape fewer "
+"characters in a given string. See the examples below:"
+msgstr ""
+"シングルクォートを使えばエスケープする文字数を減らせる場合以外は、なるべくダ"
+"ブルクォートを使用するようにします。下記の例を見てください。"
+
+#, fuzzy
+msgid "Numbers"
+msgstr "メンバー"
+
+msgid ""
+"Don't omit the leading or trailing zero in floating-point numbers. "
+"Otherwise, this makes them less readable and harder to distinguish from "
+"integers at a glance."
+msgstr ""
+
+#, fuzzy
+msgid "**Good**::"
+msgstr "**良い例**:"
+
+#, fuzzy
+msgid "**Bad**::"
+msgstr "**悪い例**:"
+
+msgid ""
+"Use lowercase for letters in hexadecimal numbers, as their lower height "
+"makes the number easier to read."
+msgstr ""
+
+msgid ""
+"Take advantage of GDScript's underscores in literals to make large numbers "
+"more readable."
+msgstr ""
+
+msgid "Naming conventions"
+msgstr "命名規則"
+
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code."
+msgstr ""
+"これらの命名規則は、Godot Engineスタイルに従います。これらを壊すと、コードが"
+"組み込みの命名規則と衝突し、コードの一貫性が失われます。"
+
+#, fuzzy
+msgid "File names"
+msgstr "ファイル名"
+
+msgid ""
+"Use snake_case for file names. For named classes, convert the PascalCase "
+"class name to snake_case::"
+msgstr ""
+
+msgid ""
+"This is consistent with how C++ files are named in Godot's source code. This "
+"also avoids case sensitivity issues that can crop up when exporting a "
+"project from Windows to other platforms."
+msgstr ""
+
+msgid "Classes and nodes"
+msgstr "クラスとノード"
+
+msgid "Use PascalCase for class and node names:"
+msgstr "クラス名とノード名には PascalCase を使用します:"
+
+msgid "Also use PascalCase when loading a class into a constant or a variable:"
+msgstr "クラスを定数または変数にロードするときにもPascalCaseを使用します:"
+
+msgid "Functions and variables"
+msgstr "関数と変数"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr "関数と変数に名前を付けるには、snake\\ _caseを使用します:"
+
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods functions the user must "
+"override, private functions, and private variables:"
+msgstr ""
+"ユーザーがオーバーライドする必要がある仮想メソッド関数、プライベート関数、お"
+"よびプライベート変数の前に単一のアンダースコア(\\_)を追加します:"
+
+msgid "Signals"
+msgstr "シグナル"
+
+msgid "Use the past tense to name signals:"
+msgstr "過去形を使用してシグナルに名前を付けます:"
+
+msgid "Constants and enums"
+msgstr "定数と列挙型"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr ""
+"CONSTANT\\ _CASEで定数を記述します。つまり、すべて大文字でアンダースコア(\\_)"
+"を使用して単語を区切ります:"
+
+msgid ""
+"Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
+"they are constants:"
+msgstr ""
+"列挙型の\\ *名前*\\ にはPascalCaseを、そのメンバーには定数なのでCONSTANT"
+"\\_CASEを使用します:"
+
+msgid "Code order"
+msgstr "コードの順序"
+
+msgid ""
+"This first section focuses on code order. For formatting, see :ref:"
+"`formatting`. For naming conventions, see :ref:`naming_conventions`."
+msgstr ""
+"この最初のセクションでは、コードの順序に焦点を当てます。書式設定について"
+"は、\\ :ref:`formatting` を参照してください。命名規則については、\\ :ref:"
+"`naming_conventions` を参照してください。"
+
+msgid "We suggest to organize GDScript code this way:"
+msgstr "次のようにGDScriptコードを整理することをお勧めします:"
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+"順序を最適化して、コードを上から下に読みやすくし、コードを初めて読む開発者が"
+"どのように機能するかを理解しやすくし、変数宣言の順序に関連するエラーを回避し"
+"ます。"
+
+msgid "This code order follows four rules of thumb:"
+msgstr "このコードの順序は、次の4つの経験則に従います:"
+
+msgid "Properties and signals come first, followed by methods."
+msgstr "プロパティとシグナルが最初に来て、メソッドがそれに続きます。"
+
+msgid "Public comes before private."
+msgstr "パブリックはプライベートの前に来ます。"
+
+msgid "Virtual callbacks come before the class's interface."
+msgstr "仮想コールバックは、クラスのインターフェースの前に来ます。"
+
+msgid ""
+"The object's construction and initialization functions, ``_init`` and "
+"``_ready``, come before functions that modify the object at runtime."
+msgstr ""
+"オブジェクトの構築関数と初期化関数、\\ ``_init`` と ``_ready`` は実行時にオブ"
+"ジェクトを変更する関数の前に来ます。"
+
+msgid "Class declaration"
+msgstr "クラス宣言"
+
+msgid ""
+"If the code is meant to run in the editor, place the ``tool`` keyword on the "
+"first line of the script."
+msgstr ""
+"コードがエディタで実行されることを意図している場合、スクリプトの最初の行に "
+"``tool`` キーワードを置きます。"
+
+msgid ""
+"Follow with the `class_name` if necessary. You can turn a GDScript file into "
+"a global type in your project using this feature. For more information, see :"
+"ref:`doc_gdscript`."
+msgstr ""
+"必要に応じて、\\ `class_name` を続けます。この機能を使用して、プロジェクト内"
+"でGDScriptファイルをグローバルタイプに変換できます。詳細については、\\ :ref:"
+"`doc_gdscript` を参照してください。"
+
+msgid "Then, add the `extends` keyword if the class extends a built-in type."
+msgstr ""
+"次に、クラスが組み込み型を拡張する場合は、\\ `extends` キーワードを追加しま"
+"す。"
+
+msgid ""
+"Following that, you should have the class's optional docstring as comments. "
+"You can use that to explain the role of your class to your teammates, how it "
+"works, and how other developers should use it, for example."
+msgstr ""
+"それに続いて、クラスに関する追加ドキュメントをコメントとして指定する必要があ"
+"ります。これを使用して、クラスの役割をチームメイトに説明したり、それがどのよ"
+"うに機能するか、他の開発者がどのように使用するかなどを説明したりできます。"
+
+msgid "Signals and properties"
+msgstr "シグナルとプロパティ"
+
+msgid ""
+"Write signal declarations, followed by properties, that is to say, member "
+"variables, after the docstring."
+msgstr ""
+"追加ドキュメントの後に、シグナル宣言、続いてプロパティ、つまりメンバー変数を"
+"記述します。"
+
+msgid ""
+"Enums should come after signals, as you can use them as export hints for "
+"other properties."
+msgstr ""
+"列挙型は、他のプロパティのエクスポートヒントとして使用できるため、シグナルの"
+"後に来る必要があります。"
+
+msgid ""
+"Then, write constants, exported variables, public, private, and onready "
+"variables, in that order."
+msgstr ""
+"次に、定数、エクスポートされた変数、public、private、およびonready変数をこの"
+"順序で記述します。"
+
+msgid ""
+"The GDScript compiler evaluates onready variables right before the "
+"``_ready`` callback. You can use that to cache node dependencies, that is to "
+"say, to get child nodes in the scene that your class relies on. This is what "
+"the example above shows."
+msgstr ""
+"GDScriptコンパイラは、\\ ``_ready`` コールバックの直前にonready変数を評価しま"
+"す。これを使用して、ノードの依存関係をキャッシュしたり、クラスが依存している"
+"シーン内の子ノードを取得したりできます。これは上記の例が示すものです。"
+
+#, fuzzy
+msgid "Member variables"
+msgstr "メンバアクセス"
+
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#, fuzzy
+msgid "Local variables"
+msgstr "ローカル変数(LocalVarSet/LocalVarGet)"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+msgid "Methods and static functions"
+msgstr "メソッドと静的関数"
+
+msgid "After the class's properties come the methods."
+msgstr "クラスのプロパティの後にメソッドが続きます。"
+
+msgid ""
+"Start with the ``_init()`` callback method, that the engine will call upon "
+"creating the object in memory. Follow with the ``_ready()`` callback, that "
+"Godot calls when it adds a node to the scene tree."
+msgstr ""
+"エンジンがメモリ内にオブジェクトを作成するときに呼び出す ``_init()`` コール"
+"バックメソッドで開始します。 そしてGodotがノードをシーンツリーに追加するとき"
+"に呼び出す ``_ready()`` コールバックを続けます。"
+
+#, fuzzy
+msgid ""
+"These functions should come first because they show how the object is "
+"initialized."
+msgstr ""
+"これらの関数は、オブジェクトの初期化方法を示すため、最初に来る必要がありま"
+"す。"
+
+msgid ""
+"Other built-in virtual callbacks, like ``_unhandled_input()`` and "
+"``_physics_process``, should come next. These control the object's main loop "
+"and interactions with the game engine."
+msgstr ""
+"``_unhandled_input()`` や ``_physics_process`` のような、その他の組み込みの仮"
+"想コールバックが次に来る必要があります。これらは、オブジェクトのメインループ"
+"とゲームエンジンとの相互作用を制御します。"
+
+msgid ""
+"The rest of the class's interface, public and private methods, come after "
+"that, in that order."
+msgstr ""
+"クラスの残りのインターフェイスであるパブリックメソッドとプライベートメソッド"
+"は、この順序でその後に続きます。"
+
+msgid "Static typing"
+msgstr "静的型付け"
+
+msgid ""
+"Since Godot 3.1, GDScript supports :ref:`optional static "
+"typing<doc_gdscript_static_typing>`."
+msgstr ""
+"Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
+
+#, fuzzy
+msgid "Declared types"
+msgstr "名前付き型"
+
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
+msgstr ""
+
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "関数の戻り値の定義をするには、``-> <type>``を使ってください:"
+
+#, fuzzy
+msgid "Inferred types"
+msgstr "コアタイプ"
+
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
+msgstr ""
+"コンパイラにタイプヒントを推測させる場合、コロンとイコールは一緒に書いて下さ"
+"い: ``:=``。"
+
+msgid ""
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""
+
+msgid ""
+"Alternatively, you can use the ``as`` keyword to cast the return type, and "
+"that type will be used to infer the type of the var."
+msgstr ""
+
+msgid ""
+"This option is also considered more :ref:`type-"
+"safe<doc_gdscript_static_typing_safe_lines>` than the first."
+msgstr ""

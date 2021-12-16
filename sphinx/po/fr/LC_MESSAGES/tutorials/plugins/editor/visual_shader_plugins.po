@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
 msgid "Visual Shader plugins"
 msgstr "Visual Shader plugins"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:6
 msgid ""
 "Visual Shader plugins are used to create custom :ref:`class_VisualShader` "
 "nodes in GDScript."
@@ -29,7 +27,6 @@ msgstr ""
 "Les plugins Visual Shader sont utilisés pour créer des nœuds personnalisés :"
 "ref:`class_VisualShader` dans le GDScript."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:9
 msgid ""
 "The creation process is different from usual editor plugins. You do not need "
 "to create a ``plugin.cfg`` file to register it; instead, create and save a "
@@ -42,7 +39,6 @@ msgstr ""
 "sera prêt à être utilisé, à condition que le nœud personnalisé soit "
 "enregistré avec ``class_name``."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:14
 msgid ""
 "This short tutorial will explain how to make a Perlin-3D noise node "
 "(original code from this `GPU noise shaders plugin <https://github.com/curly-"
@@ -54,7 +50,6 @@ msgstr ""
 "brace/Godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/"
 "classic_perlin3d.tres>`_."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:18
 msgid ""
 "Create a Sprite and assign a :ref:`class_ShaderMaterial` to its material "
 "slot:"
@@ -62,11 +57,9 @@ msgstr ""
 "Créez un Sprite et assignez un :ref:`class_ShaderMaterial` à son emplacement "
 "de matériau :"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:22
 msgid "Assign :ref:`class_VisualShader` to the shader slot of the material:"
 msgstr "Affectez :ref:`class_VisualShader` au slot de shader du matériau :"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:26
 msgid ""
 "Don't forget to change its mode to \"CanvasItem\" (if you are using a "
 "Sprite):"
@@ -74,7 +67,6 @@ msgstr ""
 "N'oubliez pas de changer son mode pour \"CanvasItem\" (si vous utilisez un "
 "Sprite) :"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:30
 msgid ""
 "Create a script which derives from :ref:`class_VisualShaderNodeCustom`. This "
 "is all you need to initialize your plugin."
@@ -82,7 +74,6 @@ msgstr ""
 "Créer un script qui dérive de :ref:`class_VisualShaderNodeCustom`. C'est "
 "tout ce dont vous avez besoin pour initialiser votre plugin."
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:193
 msgid ""
 "Save it and open the Visual Shader. You should see your new node type within "
 "the member's dialog (if you can't see your new node, try restarting the "
@@ -92,11 +83,9 @@ msgstr ""
 "type de nœud dans le dialogue des membres (si vous ne pouvez pas voir votre "
 "nouveau nœud, essayez de redémarrer l'éditeur) :"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:197
 msgid "Place it on a graph and connect the required ports:"
 msgstr "Placez-le sur un graphique et connectez les ports requis :"
 
-#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:201
 msgid ""
 "That is everything you need to do, as you can see it is easy to create your "
 "own custom VisualShader nodes!"

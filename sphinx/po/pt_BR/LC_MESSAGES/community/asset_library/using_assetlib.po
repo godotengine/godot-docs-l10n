@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using the Asset Library"
+msgstr "Sobre a Biblioteca de Assets"
+
+msgid "On the website"
+msgstr ""
+
+msgid "Overview"
+msgstr "Visão geral"
+
+msgid ""
+"As mentioned before, you can access the web frontend of the Asset Library on "
+"`Godot's official website <https://godotengine.org/asset-library/asset>`_. "
+"This is what it looks like when you first visit it:"
+msgstr ""
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid ""
+"At the top, you see the **header**, which takes you to various other parts "
+"of the AssetLib - at the moment, it's empty, as we are not logged in."
+msgstr ""
+
+msgid "Searching"
+msgstr ""
+
+msgid ""
+"In the center is the **search bar + settings** section, and the **assets** "
+"section below it - this lets you filter out certain kinds of assets based on "
+"a host of criteria. These include the asset **category** (such as 2D tools, "
+"scripts and demos), **engine version** they are intended for, **sorting "
+"order** (by update date, by name, etc.) and **support level**."
+msgstr ""
+
+msgid ""
+"While most other filter settings should be fairly self-explanatory, it's "
+"worth going over what \"support level\" means in the Asset Library. "
+"Currently there are three support levels, and each asset can belong to only "
+"one."
+msgstr ""
+
+msgid ""
+"**Official** assets are created and maintained by the official Godot Engine "
+"developers. Currently, these include the official engine demos, which "
+"showcase how various areas of the engine work."
+msgstr ""
+
+msgid ""
+"**Community** assets are submitted and maintained by the members of the "
+"Godot community."
+msgstr ""
+
+msgid ""
+"**Testing** assets are works-in-progress, and may contain bugs and usability "
+"issues. They are not recommended for use in serious projects, but you are "
+"encouraged to download, test them, and submit issues to the original authors."
+msgstr ""
+
+msgid ""
+"You can mix and match any of the search filters and criteria, and upon "
+"clicking the Search button, receive the list of all assets in the Library "
+"that match them."
+msgstr ""
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid ""
+"Note that the search results are not updated in real-time, so you will have "
+"to re-submit the search query each time you change the query settings."
+msgstr ""
+
+msgid "Breakdown of an asset"
+msgstr ""
+
+msgid ""
+"Now let's take a look at what an asset's page looks like and what it "
+"contains."
+msgstr ""
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "Asset's thumbnail/icon."
+msgstr ""
+
+msgid "Asset's name."
+msgstr ""
+
+msgid "Current version number of the asset."
+msgstr ""
+
+msgid "Asset's category, Godot version, and support status."
+msgstr ""
+
+msgid "Asset's original author/submitter."
+msgstr ""
+
+msgid "The license the asset is distributed under."
+msgstr ""
+
+msgid "The date of the asset's latest edit/update."
+msgstr ""
+
+msgid "A textual description of the asset."
+msgstr ""
+
+msgid "Links related to the asset (download link, file list, issue tracker)."
+msgstr ""
+
+msgid "Images and videos showcasing the asset."
+msgstr ""
+
+msgid "Registering and logging in"
+msgstr ""
+
+msgid ""
+"In order to upload assets to the AssetLib, you need to be logged in, and to "
+"do that, you need a registered user account. In the future, this may also "
+"give you access to other features, such as commenting on or rating the "
+"existing assets. You do *not* need to be logged in to browse and download "
+"the assets."
+msgstr ""
+
+msgid "The login/registration page can be accessed from the AssetLib header."
+msgstr ""
+
+msgid "|image3|"
+msgstr "|image3|"
+
+msgid ""
+"From here, you can register your account, which requires a valid email "
+"address, a username, and a (preferably strong) password."
+msgstr ""
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "Then, you can use your username and password to log in."
+msgstr ""
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid ""
+"This will change the look of the AssetLib header. Now you get access to a "
+"handful of new functions:"
+msgstr ""
+
+msgid ""
+"The feed, which shows a list of status updates on your submitted assets (and "
+"possibly more in the future)."
+msgstr ""
+
+msgid "A list of your uploaded assets."
+msgstr ""
+
+msgid "The ability to submit new assets."
+msgstr ""
+
+msgid "|image6|"
+msgstr ""
+
+msgid ""
+"You can learn how to submit assets to the Library, and what the asset "
+"submission guidelines are, in the next part of this tutorial, :ref:"
+"`doc_submitting_to_assetlib`."
+msgstr ""
+
+msgid "In the editor"
+msgstr ""
+
+msgid ""
+"The editor will display different categories of assets depending on whether "
+"you're browsing the project manager's **Templates** tab or the editor's "
+"**AssetLib** tab."
+msgstr ""
+
+msgid ""
+"The project manager's **Templates** tab will only display assets that are "
+"standalone projects by themselves. This is denoted on the asset library with "
+"the *Templates*, *Demos* and *Projects* categories."
+msgstr ""
+
+msgid ""
+"The editor's **AssetLib** tab will only display assets that are *not* "
+"standalone projects by themselves. In other words, it will display assets "
+"from all categories except *Templates*, *Demos* and *Projects*."
+msgstr ""
+
+msgid "You can also access the AssetLib directly from Godot:"
+msgstr ""
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "|image14|"
+msgstr "|image14|"
+
+msgid ""
+"Click on it, and Godot will fetch info about the assets from the AssetLib. "
+"Once it's finished, you will see a window similar to what the AssetLib "
+"website looks like, with some differences:"
+msgstr ""
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid ""
+"Similarly to the web version of the AssetLib, here you can search for assets "
+"by category, name, and sort them by factors such as name or edit date."
+msgstr ""
+
+msgid ""
+"Notably, you can only fetch assets for the current version of Godot you are "
+"running. Projects, Demos and Templates can be downloaded from the Project "
+"Manager view of the AssetLib. Addons (tools, scripts, materials etc.) can be "
+"downloaded from the in-project AssetLib and added to the current project. In "
+"addition, unlike when using the web frontend, the search results are updated "
+"in real-time (you do not have to press Search after every change to your "
+"search query for the changes to take place)."
+msgstr ""
+
+msgid ""
+"In the future, you will be able to choose a different AssetLib provider to "
+"fetch assets from (using the Site dropdown menu), however currently only the "
+"official `Godot website <https://godotengine.org>`_ version of the AssetLib "
+"is supported, as well as the version that may be running on your local "
+"machine's web server (the localhost option)."
+msgstr ""
+
+msgid "When you click on an asset, you will see more information about it."
+msgstr ""
+
+msgid "|image9|"
+msgstr "|image9|"
+
+msgid ""
+"If you click on the Install button, Godot will fetch an archive of the "
+"asset, and will track download progress of it at the bottom of the editor "
+"window. If the download fails, you can retry it using the Retry button."
+msgstr ""
+
+msgid "|image10|"
+msgstr "|image10|"
+
+msgid ""
+"When it finishes, you can proceed to install it using the Install button. "
+"This will bring up the Package Installer window."
+msgstr ""
+
+msgid "|image11|"
+msgstr "|image11|"
+
+msgid ""
+"Here you can see a list of all the files that will be installed. You can "
+"tick off any of the files that you do not wish to install, and Godot will "
+"also inform you about any problems with files that it cannot install. These "
+"files will be shown in red, and hovering over them will show you a message "
+"stating why it cannot be installed."
+msgstr ""
+
+msgid "|image12|"
+msgstr "|image12|"
+
+msgid ""
+"Once you are done, you can press the Install button, which will unzip all "
+"the files in the archive, and import any assets contained therein, such as "
+"images or 3D models. Once this is done, you should see a message stating "
+"that the Package installation is complete."
+msgstr ""
+
+msgid "|image13|"
+msgstr "|image13|"
+
+msgid ""
+"You may also use the Import button to import asset archives obtained "
+"elsewhere (such as downloading them directly from the AssetLib web "
+"frontend), which will take you through the same package installation "
+"procedure as with the assets downloaded directly via Godot that we just "
+"covered."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/io/background_loading.rst:4
 msgid "Background loading"
 msgstr "백그라운드 로딩"
 
-#: ../../docs/tutorials/io/background_loading.rst:6
 msgid ""
 "When switching the main scene of your game (e.g. going to a new level), you "
 "might want to show a loading screen with some indication that progress is "
@@ -38,11 +36,9 @@ msgstr ""
 "럼 보일 것입니다. 이 문서에서는 대신 ``ResourceInteractiveLoader`` 클래스를 "
 "사용하여 보다 부드러운 로딩 화면을 만드는 법에 대해 이야기할 것입니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:15
 msgid "ResourceInteractiveLoader"
 msgstr "ResourceInteractiveLoader"
 
-#: ../../docs/tutorials/io/background_loading.rst:17
 msgid ""
 "The ``ResourceInteractiveLoader`` class allows you to load a resource in "
 "stages. Every time the method ``poll`` is called, a new stage is loaded, and "
@@ -56,19 +52,15 @@ msgstr ""
 "드되는 서브 리소스입니다. 예를 들어 여러분이 10개의 이미지를 로드하는 씬 하나"
 "를 불러온다면, 각 이미지가 하나의 스테이지가 될 것입니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:24
 msgid "Usage"
 msgstr "사용례"
 
-#: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
 msgstr "대개 아래와 같이 사용합니다"
 
-#: ../../docs/tutorials/io/background_loading.rst:29
 msgid "Obtaining a ResourceInteractiveLoader"
 msgstr "ResourceInteractiveLoader 가져오기"
 
-#: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
 "This method will give you a ResourceInteractiveLoader that you will use to "
 "manage the load operation."
@@ -76,11 +68,9 @@ msgstr ""
 "이 함수에서 반환된 ResourceInteractiveLoader를 사용하여 로딩 작업을 관리할 "
 "수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:39
 msgid "Polling"
 msgstr "폴링(Polling)"
 
-#: ../../docs/tutorials/io/background_loading.rst:45
 msgid ""
 "Use this method to advance the progress of the load. Each call to ``poll`` "
 "will load the next stage of your resource. Keep in mind that each stage is "
@@ -92,7 +82,6 @@ msgstr ""
 "와 같은 하나의 \"원자적\"인 리소스임을 명심하시기 바랍니다. 그렇기 때문에 로"
 "딩에 몇 프레임을 사용할 수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:50
 msgid ""
 "Returns ``OK`` on no errors, ``ERR_FILE_EOF`` when loading is finished. Any "
 "other return value means there was an error and loading has stopped."
@@ -100,15 +89,12 @@ msgstr ""
 "에러가 없으면 ``OK`` 가 반환되며, 로딩이 끝나면 ``ERR_FILE_EOF`` 가 반환됩니"
 "다. 그 외의 다른 리턴값은 에러가 발생했으며 로딩이 멈췄음을 의미합니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:54
 msgid "Load progress (optional)"
 msgstr "로딩 진행도(선택사항)"
 
-#: ../../docs/tutorials/io/background_loading.rst:56
 msgid "To query the progress of the load, use the following methods:"
 msgstr "현재 로딩 상황을 알아보려면 다음 함수들을 사용해 보세요:"
 
-#: ../../docs/tutorials/io/background_loading.rst:63
 msgid ""
 "``get_stage_count`` returns the total number of stages to load. "
 "``get_stage`` returns the current stage being loaded."
@@ -116,11 +102,9 @@ msgstr ""
 "``get_stage_count`` 는 로딩에 필요한 전체 스테이지 수를 반환합니다. "
 "``get_stage`` 는 현재 불러오는 중이 스테이지를 반환합니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:67
 msgid "Forcing completion (optional)"
 msgstr "강제로 완료시키기 (선택사항)"
 
-#: ../../docs/tutorials/io/background_loading.rst:73
 msgid ""
 "Use this method if you need to load the entire resource in the current "
 "frame, without any more steps."
@@ -128,21 +112,17 @@ msgstr ""
 "전체 리소스를 추가 스텝 없이 현재 프레임에 전부 불러오려면 이 함수를 사용합니"
 "다."
 
-#: ../../docs/tutorials/io/background_loading.rst:77
 msgid "Obtaining the resource"
 msgstr "리소스 가져오기"
 
-#: ../../docs/tutorials/io/background_loading.rst:83
 msgid ""
 "If everything goes well, use this method to retrieve your loaded resource."
 msgstr ""
 "모든 일들이 잘 진행됐다면 아래 함수로 불러온 리소스를 가져올 수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:87
 msgid "Example"
 msgstr "예제"
 
-#: ../../docs/tutorials/io/background_loading.rst:89
 msgid ""
 "This example demonstrates how to load a new scene. Consider it in the "
 "context of the :ref:`doc_singletons_autoload` example."
@@ -150,7 +130,6 @@ msgstr ""
 "이 예제서는 새로운 씬을 로드하는 방법을 보여줍니다. :ref:"
 "`doc_singletons_autoload` 예제의 문맥에서 봐 주시기 바랍니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:92
 msgid ""
 "First, we set up some variables and initialize the ``current_scene`` with "
 "the main scene of the game:"
@@ -158,7 +137,6 @@ msgstr ""
 "우선 몇몇 변수들을 설정하고 ``current_scene`` 을 게임의 메인 씬으로 초기화합"
 "니다:"
 
-#: ../../docs/tutorials/io/background_loading.rst:107
 msgid ""
 "The function ``goto_scene`` is called from the game when the scene needs to "
 "be switched. It requests an interactive loader, and calls "
@@ -171,7 +149,6 @@ msgstr ""
 "에서 로더를 폴링하기 시작합니다. 또한 \"loading\" 애니메이션을 시작하여 프로"
 "그래스 바나 로딩 화면을 보여줄 수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:129
 msgid ""
 "``_process`` is where the loader is polled. ``poll`` is called, and then we "
 "deal with the return value from that call. ``OK`` means keep polling, "
@@ -185,7 +162,6 @@ msgstr ""
 "주기 위해 (``goto_scene`` 함수에서 설정한 ``wait_frames`` 변수를 통해) 한 프"
 "레임을 건너뛰는 점을 참고하시기 바랍니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:135
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
 "thread. Some stages might load fast, which means we might be able to cram "
@@ -199,7 +175,6 @@ msgstr ""
 "``time_max``보다 오랜 시간이 걸릴 수도 있습니다. 따라서 타이밍에 대해서는 정"
 "밀한 제어를 할 수 없다는 점을 염두하시기 바랍니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:172
 msgid ""
 "Some extra helper functions. ``update_progress`` updates a progress bar, or "
 "can also update a paused animation (the animation represents the entire load "
@@ -213,11 +188,9 @@ msgstr ""
 "에 배치합니다. 씬을 로드한 것이기 때문에 로더에서 가져온 리소스에 "
 "``instance()`` 를 호출할 필요가 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr "멀티스레드 사용하기"
 
-#: ../../docs/tutorials/io/background_loading.rst:201
 msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
@@ -225,11 +198,9 @@ msgstr ""
 "ResourceInteractiveLoader은 여러 스레드에서 사용할 수 있습니다. 사용해보기에 "
 "앞서 생각해봐야 할 것들이 있습니다:"
 
-#: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
 msgstr "세마포어 사용"
 
-#: ../../docs/tutorials/io/background_loading.rst:207
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
 "``Semaphore`` to sleep (instead of a busy loop or anything similar)."
@@ -237,11 +208,9 @@ msgstr ""
 "지금 스레드가 메인 스레드에서 새 리소스를 요청하는 동안 (busy loop나 비슷한 "
 "걸 하는 대신) sleep하기 위하여 ``Semaphore`` 를 사용하세요."
 
-#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr "폴링하는 동안에는 메인 스레드 블로킹하지 않기"
 
-#: ../../docs/tutorials/io/background_loading.rst:213
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
 "class, don't lock the main thread while you call ``poll`` on your loader "
@@ -257,11 +226,9 @@ msgstr ""
 "을 수도 있습니다. 이는 여러분의 스레드가 리소스 로드를 기다리는 동안 메인 스"
 "레드가 여러분의 뮤텍스를 기다리고 있으므로 데드락을 일으킬 수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr "예제 클래스"
 
-#: ../../docs/tutorials/io/background_loading.rst:224
 msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
@@ -269,11 +236,9 @@ msgstr ""
 "스레드 내에서 리소스 로딩을 하는 예제 클래스 예제가 있습니다: :download:"
 "`resource_queue.gd <files/resource_queue.gd>`. 아래와 같이 사용하면 됩니다:"
 
-#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr "스레드를 시작하기 위해 클래스를 인스턴싱한 다음 함수를 호출하세요."
 
-#: ../../docs/tutorials/io/background_loading.rst:237
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
@@ -281,17 +246,14 @@ msgstr ""
 "리소스를 큐에 넣습니다. 선택 인자인 \"p_in_front\"를 사용하여 큐의 앞부분에 "
 "넣을 수 있습니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr "큐에서 리소스를 제거합니다. 로딩이 끝난 리소스를 폐기합니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:250
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 "리소스 전체가 로드되었으며 가져올 준비가 된 경우 ``true`` 를 반환합니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:256
 msgid ""
 "Get the progress of a resource. Returns -1 if there was an error (for "
 "example if the resource is not in the queue), or a number between 0.0 and "
@@ -304,7 +266,6 @@ msgstr ""
 "개 (프로그레스 바를 갱신하는 것과 같은) 보여주기 위한 용도로 사용됩니다. 리소"
 "스를 실제로 사용할 수 있는지 확인하려면 ``is_ready`` 를 사용하세요."
 
-#: ../../docs/tutorials/io/background_loading.rst:266
 msgid ""
 "Returns the fully loaded resource, or ``null`` on error. If the resource is "
 "not fully loaded (``is_ready`` returns ``false``), it will block your thread "
@@ -316,11 +277,9 @@ msgstr ""
 "블로킹하며 로드가 끝날 때까지 기다립니다. 만약 리소스가 큐에 없다면 평소처럼 "
 "``ResourceLoader::load`` 를 호출하고 그 결과를 반환합니다."
 
-#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr "예시:"
 
-#: ../../docs/tutorials/io/background_loading.rst:305
 msgid ""
 "**Note**: this code, in its current form, is not tested in real world "
 "scenarios. If you run into any issues, ask for help in one of `Godot's "

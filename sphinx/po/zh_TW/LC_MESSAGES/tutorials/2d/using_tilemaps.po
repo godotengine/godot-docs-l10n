@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:4
 #, fuzzy
 msgid "Using TileMaps"
 msgstr "使用圖塊地圖"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
 msgstr "簡介"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
@@ -44,11 +41,9 @@ msgstr ""
 "卡，因為圖塊地圖有為繪製大量網格進行最佳化。最後，也可以給圖塊地圖加上碰撞區"
 "域、遮擋、圖塊的導航區域，且可以為 TileMap 新增額外的功能。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
 msgstr "設定專案"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:23
 #, fuzzy
 msgid ""
 "This demo will use the following tiles taken from Kenney's \"Abstract "
@@ -60,11 +55,9 @@ msgstr ""
 "格。可以在 `此處 <https://kenney.nl/assets/abstract-platformer>`_ 找到該藝術"
 "包中所有的網格，但本處的示範專案只會使用一小部分。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr "建立新專案，並將上述圖片放在專案資料夾中。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
 "When using a tileset, it's important that adjacent tiles match up. Godot's "
 "default is to import 2D images using an interpolated \"filter\" mode, which "
@@ -77,11 +70,9 @@ msgstr ""
 "然後點擊匯入分頁。關閉 ``Filter`` 然後點擊「重新匯入」。詳情請參考 :ref:"
 "`doc_import_images` 。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:37
 msgid "TileMap node"
 msgstr "TileMap 節點"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
 "Add a new :ref:`TileMap <class_TileMap>` node to the scene. By default, a "
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
@@ -91,27 +82,22 @@ msgstr ""
 "正方形的圖塊網格。也可以使用基於透視的「Isometric」模式，或自定客製化的圖塊形"
 "狀。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr "在屬性面板的「Cell」段落中，有許多可以調整並客製化圖塊地圖行為的屬性："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
 msgstr "\\ ``Cell Size``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr "定義網格的大小。該選項應符合網格的像素大小。預設值為 ``(64, 64)``。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
 msgstr "\\ ``YSort``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
@@ -119,21 +105,17 @@ msgstr ""
 "開啟該屬性會讓圖塊以其 ``Y`` 位置順序繪製，而「較低」的圖塊會繪製在「較高」的"
 "圖塊上方。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
 msgstr "``Half Offset`` 與 ``Tile Origin``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
 msgstr "這些屬性會影響圖塊相對於網格的位置。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
 msgstr "\\ ``Quadrant``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
@@ -141,23 +123,18 @@ msgstr ""
 "定義用於批次繪製的區塊大小。該屬性可能會對效能有負面映像。除非你知道正在做什"
 "麼，否則請不要更改該屬性。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "``Custom Transform``"
 msgstr "\\ ``Custom Transform``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr "用於更改圖塊的形狀。若想使用非正方形的圖塊請更改此屬性。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr "在本示範專案中，可將所有選項保留為預設值。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:71
 msgid "Creating a TileSet"
 msgstr "建立 TileSet"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
 "Once you've configured your tilemap, it's time to add a :ref:`TileSet "
 "<class_TileSet>`. A TileSet is a :ref:`Resource <class_Resource>` that "
@@ -170,19 +147,16 @@ msgstr ""
 "理貼圖、碰撞區域、形狀與其他屬性。在執行遊戲的時候，TileMap 會將各個圖塊整合"
 "成單一物件。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr "若要建立新 TileSet，請點擊「Tile Set」屬性然後選擇「New TileSet」。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "Click on the TileSet property, and the \"TileSet\" panel will open at the "
 "bottom of the editor window:"
 msgstr "點擊 TileSet 屬性，會在編輯器視窗的下方開啟「TileSet」面板："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
 "First, you need to add the texture(s) that you'll use for the tiles. Click "
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
@@ -191,7 +165,6 @@ msgstr ""
 "首先，我們需要加上用於圖塊的紋理貼圖。點擊「Add Texture(s) to TileSet」按鈕，"
 "然後選擇 ``tilesheet.png`` 圖片。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
 "Next, click \"New Single Tile\" and drag in the image to select the tile you "
 "want. Click the \"Enable Snap\" button to make it easier to select the "
@@ -200,7 +173,6 @@ msgstr ""
 "接下來，點擊「New Single Tile」，然後將拖移圖片來選擇想要的圖塊。點擊「啟用吸"
 "附」按鈕來更輕鬆地選擇整個圖塊。所選圖塊的周圍會顯示黃色的矩形。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
 "Click on the TileMap in the scene tree, and you'll see that the newly "
 "created tile now appears on the right side. Click in the viewport and you "
@@ -209,7 +181,6 @@ msgstr ""
 "點擊場景樹中的 TileMap，然後我們會看到新建立的圖塊顯示於右側。點擊檢視區然後"
 "放上圖塊。右鍵點擊來移除圖塊。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
@@ -217,11 +188,9 @@ msgstr ""
 "很容易不小心選擇並移動到 TileMap 節點。要避免不小心點到 TileMap，可以使用節點"
 "的鎖定按鈕："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Collision shapes"
 msgstr "碰撞形體"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
 "If you're making a map that needs collisions - walls, floor, or other "
 "obstacles, for example - then you'll need to add collision shapes to any "
@@ -230,7 +199,6 @@ msgstr ""
 "若要建立需要碰撞的圖塊地圖 —— 如牆壁、地板或其他障礙物 —— 則需要將碰撞區域加"
 "到任何「實心」圖塊上。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
 "Click \"TileSet\" at the bottom of the editor window to return to the "
 "tileset tool. Click the tile you previously defined (outlined in yellow). "
@@ -242,16 +210,13 @@ msgstr ""
 "(以黃色外框顯示的)。選擇「碰撞」分頁，然後點擊「建立新矩形」按鈕。請確保有開"
 "啟網格吸附，然後點擊並拖曳圖塊。正方形的碰撞區域會以淡藍色顯示："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr "也可以通過同樣的方法來為圖塊加上遮擋區域與導航區域。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
 msgstr "圖塊合集 (Atlas Tile)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
 "Rather than adding individual tiles one at a time, you can define a group of "
 "tiles all at once using an atlas. This also allows you to randomly generate "
@@ -260,11 +225,9 @@ msgstr ""
 "比起一個一個新增圖塊，也可以通過合集來一次定義一組圖塊。這樣一來便能通過群組"
 "來隨機產生圖塊。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
 msgstr "點擊「新增合集」然後拖移並選擇整個圖塊表。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
 "If you haven't already, make sure to change the \"Step\" in the snap "
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
@@ -273,7 +236,6 @@ msgstr ""
 "如果還沒將吸附設定中的「Step」改為 `(64, 64)` 的話，請先修改該屬性，否則圖塊"
 "切成小塊的。可以在屬性面板中找到該屬性："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:143
 msgid ""
 "Once you've defined the atlas you can add collision shapes to the individual "
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
@@ -282,13 +244,11 @@ msgstr ""
 "定義好合集後，便可以像之前一樣為個別圖塊加上碰撞區域。也可以點擊「圖示」並選"
 "擇一個圖塊來代表該合集。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr "回到 TileMap，可以選擇合集圖塊，然後可以看到該合集內包含的所有圖塊："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
 "In addition to saving time when defining the tiles, this can help by "
 "grouping similar tiles together when you're working with a large number of "
@@ -297,11 +257,9 @@ msgstr ""
 "除了能在定義圖塊時節省時間，通過合集圖塊也能在需要處理大量圖塊時將類似的圖塊"
 "放在同一個群組內。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid "Random tile priorities"
 msgstr "隨機圖塊優先級"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:158
 msgid ""
 "When drawing with atlas tiles, enabling the \"Use priority\" option causes "
 "tiles to be selected at random. By default, each tile in the tileset has an "
@@ -315,18 +273,15 @@ msgstr ""
 "(Priority) 來更改此一機率。舉例來說，優先級 2 的圖塊被選中的機率比優先級 1 的"
 "圖塊還要高兩倍，而優先級 3 的圖塊則比優先級 2 的圖塊多出 50% 的機率。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
 msgstr "自動圖塊 (Autotile)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
 "使用自動圖塊，可定義一組圖塊，並設定規則來依據周圍的元素控制要繪製哪個圖塊。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
 "Click \"New Autotile\" and drag to select the tiles you wish to use. You can "
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
@@ -335,7 +290,6 @@ msgstr ""
 "點擊「New Autotile」並拖移來選擇要使用的圖塊。可以新增碰撞區域、遮擋、導航形"
 "狀、圖塊優先級，並與合集圖塊一樣，可選擇用於圖示的圖塊。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
@@ -347,7 +301,6 @@ msgstr ""
 "元，右鍵點擊則可移除「關閉 (Off)」，Shift + 左鍵點擊則可設定「忽略 (Ignore)」"
 "位元。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
 "Whenever Godot updates a cell using an autotile, it first creates a pattern "
 "based on which adjacent cells are already set. Then, it searches the "
@@ -361,7 +314,6 @@ msgstr ""
 "圖塊來建立自動圖塊。若沒有找到相符的位元遮罩，則會改用「icon」圖塊。若有找到"
 "多個相符的位元遮罩，則會依照圖塊優先度隨機選擇一個。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
 "The rules for matching a bitmask to a pattern depend on the tileset's "
 "autotile bitmask mode. This can be set in the \"Inspector\" tab, under the "
@@ -372,22 +324,18 @@ msgstr ""
 "在「屬性面板」分頁中的「Selected Tile」底下設定該規則。可設定的值有「2x2」、"
 "「3x3 (minimal)」與「3x3」。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
 msgstr ""
 "位元遮罩中所有的「on」與「off」位元都必須要設定，但「ignore」位元則可忽略。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
 msgstr "2x2"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
 msgstr "在 2x2 模式下，每個位元遮罩都包含了 4 個位元，對應 4 個角落。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid ""
 "Where a bit is \"on\", all cells connected to that corner must be filled "
 "using the same autotile, in order for the bitmask to match. For example, if "
@@ -398,7 +346,6 @@ msgstr ""
 "符合位元遮罩。舉例來說，若有設定左上角的位元，則正上方、正作坊、與斜左上方的"
 "圖塊格都必須要被填滿。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:204
 msgid ""
 "Where a bit is \"off\", at least one cell connected to that corner must not "
 "be set using the same autotile."
@@ -406,7 +353,6 @@ msgstr ""
 "對於設為「off」的位元，則至少有一個連接到該角落的圖塊格不能使用相同的自動圖塊"
 "來設定。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:207
 msgid ""
 "At least one bit must be set for the tile to be used, so a total of 15 tiles "
 "would be needed to provide exactly one tile for each arrangement that this "
@@ -415,7 +361,6 @@ msgstr ""
 "要使用的圖塊都必須要設定至少一個位元。因此，對每個要測試該模式的圖塊排列，都"
 "必須要設定總共 15 格圖塊來提供剛好一個的圖塊。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid ""
 "2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
 "no neighbors and lines only one cell wide are not supported."
@@ -423,12 +368,9 @@ msgstr ""
 "2x2 模式只能對應到 2 乘 2 區塊中的圖塊格 —— 也就是周圍沒有其他圖塊格的圖塊"
 "格，且不支援邊長只有 1 的圖塊格。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:214
-#: ../../docs/tutorials/2d/using_tilemaps.rst:246
 msgid "**Template - Generic:**"
 msgstr "**樣板 - 通用：**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:216
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. It's "
 "designed for a TileMap cell size of 64x64."
@@ -436,29 +378,18 @@ msgstr ""
 "本樣板可用於側面或完整由上而下的視角。本樣板是為大小為 64x64 的 TileMap 圖塊"
 "格所設計的。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:219
-#: ../../docs/tutorials/2d/using_tilemaps.rst:252
-#: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Key:"
 msgstr "索引鍵："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:221
-#: ../../docs/tutorials/2d/using_tilemaps.rst:254
-#: ../../docs/tutorials/2d/using_tilemaps.rst:267
 msgid "Red: \"on\""
 msgstr "紅色：「on」"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:222
-#: ../../docs/tutorials/2d/using_tilemaps.rst:255
-#: ../../docs/tutorials/2d/using_tilemaps.rst:268
 msgid "White: \"off\""
 msgstr "白色：「off」"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
 msgstr "\\ 3x3 (minimal)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:229
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center). The 4 corner bits work the same as in 2x2 mode."
@@ -466,30 +397,25 @@ msgstr ""
 "3x3 (minimal) 模式中，每個位元遮罩都包含了 9 個位元 (4 個角落、4 個邊緣、1 個"
 "中央)。4 個角落的位元的運作方式與 2x2 模式相同。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid ""
 "The center bit should be \"on\" for any tile you wish to use. Note that in "
 "this mode, it makes no sense for a corner bit to be \"on\" when either edge "
 "bit adjacent to it is not \"on\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:244
 msgid "Right-click an image and choose **Save image as…** to save it."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. All "
 "templates below are designed for a TileMap cell size of 64x64, but you may "
@@ -497,114 +423,91 @@ msgid ""
 "below."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:260
 #, fuzzy
 msgid "**Template - Generic 16 tiles:**"
 msgstr "**樣板 - 通用：**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
 "art styles the missing tiles will not be noticeable."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:269
 msgid "Blue-checkered: \"ignore\""
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "**Template - Top-down floor in 3/4 perspective:**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:276
 msgid "Key (applies to the four templates below):"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:278
 msgid "Green: floor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:279
 msgid "Cyan: wall"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:280
 msgid "Yellow: top of wall"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "Grey: hidden due to overlap"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:282
 #, fuzzy
 msgid "Transparent: air"
 msgstr "可以轉換為："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:296
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:298
 msgid ""
 "When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
 "size. This means the texture offset should be ``Vector2(0, -120)``:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:307
 #, fuzzy
 msgid ""
 "In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr "在 2x2 模式下，每個位元遮罩都包含了 4 個位元，對應 4 個角落。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:312
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:317
 #, fuzzy
 msgid "Disabling autotile"
 msgstr "創建內容"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:319
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
 "and select tiles manually, by clicking \"Disable Autotile\" at the top of "
 "the tile selection window."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:324
 msgid "Autotile binding"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -617,18 +520,15 @@ msgid ""
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "Tips and tricks"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:343
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -636,17 +536,14 @@ msgid ""
 "Snapping** section."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:349
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:351
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

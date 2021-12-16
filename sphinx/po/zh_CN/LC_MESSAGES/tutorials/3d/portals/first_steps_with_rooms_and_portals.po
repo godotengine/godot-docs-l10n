@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:2
 msgid "First steps with Rooms and Portals"
 msgstr "房间和入口的第一步"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:5
 msgid "The RoomManager"
 msgstr "房间管理器"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:7
 msgid ""
 "Anytime you want to use the portal system, you need to include a special "
 "node in your scene tree, called the :ref:`RoomManager<class_RoomManager>`. "
@@ -34,14 +31,12 @@ msgid ""
 "used at runtime to perform occlusion culling and other tasks."
 msgstr ""
 "你想使用入口系统时，都需要在场景树中包含特殊的节点，叫做 :ref:"
-"`RoomManager<class_RoomManager>` 。RoomManager 负责系统的运行维护，特别是将你"
-"的房间中的对象转换为\\ *房间图*\\ ，在运行时用于进行遮挡剔除和其他任务。"
+"`RoomManager<class_RoomManager>`\\ 。RoomManager 负责系统的运行维护，特别是将"
+"你的房间中的对象转换为\\ *房间图*\\ ，在运行时用于进行遮挡剔除和其他任务。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:10
 msgid "Room Conversion"
 msgstr "房间转换"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:12
 msgid ""
 "This conversion must take place every time you want to activate the system. "
 "It does not store the *room graph* in your project (for flexibility and to "
@@ -57,7 +52,6 @@ msgstr ""
 "方法。后一种方法在你的游戏中使用。请注意，为了安全起见，最佳做法是在卸载或更"
 "改关卡之前调用 ``rooms_clear()`` 。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:16
 msgid ""
 "If you convert the level while the editor is running, the portal culling "
 "system will take over from the normal Godot frustum culling. This may affect "
@@ -71,7 +65,6 @@ msgstr ""
 "的\\ **查看入口剔除**\\ 切换，或者通过 RoomManager 节点中的 **Active** 设置来"
 "打开和关闭入口剔除。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:18
 msgid ""
 "To use the RoomManager, you have to tell it where the rooms are in your "
 "scene tree, or rather where the RoomList node is. This RoomList is the "
@@ -82,11 +75,9 @@ msgstr ""
 "的位置。这个 RoomList 是房间的父节点——见下文。如果没有设置 RoomList，转换将失"
 "败，你将收到一个警告对话框。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:23
 msgid "The RoomList"
 msgstr "房间列表"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:25
 msgid ""
 "Before we create any rooms, we must first create a node to be the parent of "
 "all the static objects, rooms, roomgroups and so on in our level. This node "
@@ -95,13 +86,11 @@ msgstr ""
 "在我们创建任意房间之前，必须首先创建一个节点，作为我们关卡中所有静态对象、房"
 "间、房间组等的父节点。这个节点称为 ``RoomList``\\ 。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:29
 msgid ""
 "The roomlist is **not** a special node type, it can just be a regular "
 "Spatial."
 msgstr "房间列表\\ **不是**\\ 的特殊节点类型，它可以是普通的空间节点。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:31
 msgid ""
 "You will need to assign the roomlist node in the RoomManager, so the "
 "RoomManager knows where to find the rooms."
@@ -109,7 +98,6 @@ msgstr ""
 "你需要在 RoomManager 中指定房间列表节点，这样 RoomManager 就知道可以在哪里找"
 "到房间。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:33
 msgid ""
 "Why do we use a specific branch of the scene tree, and not use the scene "
 "root? The answer is that there are many internal details of the system which "
@@ -118,21 +106,17 @@ msgstr ""
 "为什么我们要使用场景树的一个特定分支，而不是使用场景的根节点？答案是，如果房"
 "间被放在自己的分支上，系统的许多内部细节就更容易管理。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:35
 msgid ""
 "Often, you will end up completely replacing the roomlist branch at runtime "
 "in your game as you load and unload levels."
 msgstr "通常，当你加载和卸载关卡时，你最终会在游戏运行时完全替换房间列表分支。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:38
 msgid "Rooms"
 msgstr "房间"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:41
 msgid "What is a room?"
 msgstr "什么是房间？"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:43
 msgid ""
 ":ref:`Room<class_Room>`\\ s are a way of spatially partitioning your level "
 "into areas that make sense in terms of the level design. Rooms often quite "
@@ -145,7 +129,6 @@ msgstr ""
 "有意义的。房间往往从字面上看 *是* 房间，例如建筑物。然而，就引擎而言，房间表"
 "示\\ **不重叠的**\\ 凸面体，你通常会在其中放置大部分属于该区域的物体。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:45
 msgid ""
 "A room doesn't need to correspond to a literal room. It could for example "
 "also be a canyon in an outdoor area, or a smaller part of a concave room. "
@@ -154,11 +137,9 @@ msgstr ""
 "房间不需要对应字面上的房间。比如，它也可以是户外的一个峡谷，或一个凹形房间的"
 "较小部分。只要有想象力，你几乎可在任何场景下使用这个系统。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:48
 msgid "Why convex?"
 msgstr "为什么要凸起？"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:50
 msgid ""
 "The reason why rooms are defined as convex volumes (or *convex hulls* as "
 "they are known), is that mathematically, it is very easy to determine "
@@ -173,18 +154,15 @@ msgstr ""
 "么根据定义，它就在房间内。这使得系统内部各种事项变得更加容易，比如检查相机在"
 "哪个房间内。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:52
 msgid ""
 "*A convex hull. The hull is defined as a series of planes facing outward. If "
 "a point is behind all the planes, it is within the hull.*"
 msgstr ""
 "*凸体。定义为一系列朝外的平面。如果一个点在所有平面之后，点就在凸体之内。*"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:57
 msgid "Why non-overlapping?"
 msgstr "为什么是不重叠的？"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:59
 msgid ""
 "If two rooms overlap, and a camera or player is in this overlapping zone, "
 "then there is no way to tell which room the object should be in (and hence "
@@ -195,7 +173,6 @@ msgstr ""
 "在哪个房间，或者在哪个房间渲染。对于房间是非重叠的这一要求，的确对于关卡设计"
 "有影响。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:61
 msgid ""
 "If you accidentally create overlapping rooms, the editor will flag a warning "
 "when you convert the rooms, and indicate any overlapping zones in red."
@@ -203,7 +180,6 @@ msgstr ""
 "如果你不小心创建了重叠的房间，编辑器会在你转换房间时标出警告，并以红色显示所"
 "有重叠的区域。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:65
 msgid ""
 "The system does attempt to cope with overlapping rooms as best as possible "
 "by making the current room *\"sticky\"*. Each object remembers which room it "
@@ -215,7 +191,6 @@ msgstr ""
 "它上一帧所在的房间，只要它不移动到凸体房间的范围之外，就会留在这个房间里。这"
 "可能会导致这些重叠区域出现一些延迟现象。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:67
 msgid ""
 "There is one exception however for :ref:`internal "
 "rooms<doc_rooms_and_portals_internal_rooms>`. You do not have to worry about "
@@ -224,11 +199,9 @@ msgstr ""
 "但是有一个例外内部房间 :ref:`internal "
 "rooms<doc_rooms_and_portals_internal_rooms>` ，就不必担心这些。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:70
 msgid "How do I create a room?"
 msgstr "如何创建房间？"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:72
 msgid ""
 "A :ref:`Room<class_Room>` is a node type that can be added to the scene tree "
 "like any other. You can place objects within the room by making them "
@@ -237,11 +210,9 @@ msgstr ""
 ":ref:`Room<class_Room>` 是一种节点类型，可以像其他类型一样添加到场景树。将对"
 "象添加为 Room 节点的子级，以放置在房间内。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:75
 msgid "How do I define the shape and position of my room convex hull?"
 msgstr "如何定义房间凸体的形状和位置？"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:77
 msgid ""
 "Because defining the room bound is the most important aspect of the system, "
 "there are THREE methods available to define the shape of a room in Godot:"
@@ -249,13 +220,11 @@ msgstr ""
 "因为定义房间边界是系统最重要的方面，因此在 Godot 提供三种方法来定义房间的形"
 "状："
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:79
 msgid ""
 "Use the geometry of the objects contained within the room to automatically "
 "create an approximate bound."
 msgstr "使用房间内包含的物体的几何形状来自动创建一个近似的边界。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:80
 msgid ""
 "By manually editing the points that define the convex hull, in the room "
 "inspector, or dragging the points using the editor gizmo (see :ref:"
@@ -264,7 +233,6 @@ msgstr ""
 "通过在房间检查器中手动编辑定义凸体的点，或使用编辑器辅助工具拖动这些点，参"
 "阅 :ref:`doc_room_point_editing`。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:81
 msgid ""
 "Provide a manual bound. This is a MeshInstance in the room that has geometry "
 "in the shape of the desired bound, with a name with a postfix ``-bound``. "
@@ -275,7 +243,6 @@ msgstr ""
 "``-bound`` 。如果您在 Blender 或类似软件中创建关卡，可能会选择这样做，参阅 :"
 "ref:`doc_rooms_and_portals_blender` 。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:83
 msgid ""
 "While the first option can be all that is required, particularly with simple "
 "rooms, or for pre-production, the power of the manual bounds gives you "
@@ -287,21 +254,17 @@ msgstr ""
 "能提供了完全控制。也可以将这两种方法结合起来，或许可以大多数房间使用自动边"
 "界，对问题区域手动编辑。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:85
 msgid "The automatic method is used whenever a manual bound is not supplied."
 msgstr "只要未提供手动绑定，就会使用自动方法。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:87
 msgid ""
 "*A simple pair of rooms. The portal margin is shown with translucent red, "
 "and the room hulls are shown with green wireframe.*"
 msgstr "*一对简单的房间。入口边缘以半透明红色显示，房间外体以绿色线框显示。*"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:92
 msgid "Portals"
 msgstr "入口"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:94
 msgid ""
 "If you create some rooms, place objects within them, then convert the level "
 "in the editor, you will see the objects in the rooms appearing and showing "
@@ -313,7 +276,6 @@ msgstr ""
 "动时，能看到房间中的对象出现和显示。然而有一个问题！虽然您可以看到摄像机所在"
 "房间内的物体，但看不到任何相邻的房间！为此，需要有入口。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:96
 msgid ""
 ":ref:`Portal<class_Portal>`\\ s are special convex polygons. You position "
 "over the openings between rooms, in order to allow the system to see between "
@@ -329,7 +291,6 @@ msgstr ""
 "`MeshInstance<class_MeshInstance>`\\ 。可以使用检查器添加或删除点。一个入口至"
 "少需要 3 个点，这是因为它需要形成多边形而不仅是点或线。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:98
 msgid ""
 "To save editing effort, **only one Portal is required between each pair of "
 "Rooms**. You *do not need* to (and indeed should not) create two Portals "
@@ -340,7 +301,6 @@ msgstr ""
 "应该创建两个重叠且相对的入口。入口默认是双向的，但您可以在入口设置中把它们变"
 "成单向。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:100
 msgid ""
 "You should therefore place a portal in only one of each pair of neighbouring "
 "rooms - this is the portal's *\"source room\"*. Generally it doesn't matter "
@@ -351,7 +311,6 @@ msgstr ""
 "般来说，你选择哪个房间作为源房间并不重要。入口的法线（表示为控制器的箭头）应"
 "该从源房间朝\\ *外*\\ 。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:104
 msgid ""
 "Do not be confused by the arrow. Although the arrow shows which direction "
 "the portal faces, most portals will be *two-way*, and can be seen through "
@@ -361,17 +320,14 @@ msgstr ""
 "不要被这个箭头所迷惑。虽然箭头显示了入口的方向，但大多数入口都是\\ *双向的*"
 "\\ ，从两个方向都可以看到。箭头更为重要是确保入口连接到正确的邻近房间。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:107
 msgid "Portal linking"
 msgstr "入口链接"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:109
 msgid ""
 "There are two options for dealing with specifying which room the portal "
 "should link to."
 msgstr "有两个选项用于指定入口应链接到哪个房间。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:111
 msgid ""
 "Leave the **Linked Room** in the inspector blank. The system will attempt to "
 "*autolink* the portal to the nearest neighbour room during conversion. This "
@@ -380,13 +336,11 @@ msgstr ""
 "将检查器中的 **Linked Room** 留空。在转换过程中，系统将尝试把入口\\ *自动链接"
 "*\\ 到相邻最近的房间。这在大多数情况下能正常工作。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:112
 msgid ""
 "You can explicitly specify the room by setting the **Linked Room** in the "
 "inspector."
 msgstr "您可以通过在检查器中设置 **Linked Room** 来明确指定房间。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:114
 msgid ""
 "Portals are defined as a set of 2D points. This ensures that the polygon "
 "formed is in a single plane. The transform determines the portal "
@@ -399,11 +353,9 @@ msgstr ""
 "换确定。这些点必须形成\\ *凸*\\ 多边形。通过验证，忽略任何不能形成凸面形状的"
 "点。这使得编辑更容易，同时更难破坏系统。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:117
 msgid "Trying it out"
 msgstr "试一试"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:119
 msgid ""
 "By now you should be able to create a couple of rooms, add some nodes such "
 "as MeshInstances within the rooms, and add a portal between the rooms. Try "
@@ -414,11 +366,9 @@ msgstr ""
 "间之间添加一个入口。尝试在编辑器中转换房间，看看您现在是否可以通过入口看到相"
 "邻房间中的对象。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:123
 msgid "You have now mastered the basic principles of the system."
 msgstr "您现在已经掌握了系统的基本原理。"
 
-#: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:125
 msgid ""
 "The next step is to look at the different types of objects that can be "
 "managed by the system."

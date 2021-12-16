@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
 msgstr "광선 투사(Ray Cast)하기"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
 "One of the most common tasks in game development is casting a ray (or custom "
 "shaped object) and checking what it hits. This enables complex behaviors, "
@@ -37,7 +34,6 @@ msgstr ""
 "는데, 예를 들면 AI가 있습니다. 이 튜토리얼에서는 어떻게 광선 추적을 하는지 2D"
 "와 3D에서 설명하겠습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
 "Godot stores all the low level game information in servers, while the scene "
 "is just a frontend. As such, ray casting is generally a lower-level task. "
@@ -50,7 +46,6 @@ msgstr ""
 "으로 :ref:`RayCast <class_RayCast>`\\ 와 :ref:`RayCast2D <class_RayCast2D>` "
 "노드로 가능합니다. 매 프레임마다 광선 추적의 결과를 반환하죠."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
@@ -58,11 +53,9 @@ msgstr ""
 "하지만 많은 경우에서 광선 추적은 더 상호작용적인 처리가 필요하기에, 코드로 해"
 "결해야 합니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
 msgstr "공간(Space)"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
@@ -76,7 +69,6 @@ msgstr ""
 "니다. 3D의 경우는 :ref:`Spatial.get_world().space "
 "<class_Spatial_method_get_world>`\\ 으로 가져올 수 있습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
 "The resulting space :ref:`RID <class_RID>` can be used in :ref:"
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
@@ -86,11 +78,9 @@ msgstr ""
 "<class_PhysicsServer>`\\ 에, 2D에는 :ref:`Physics2DServer "
 "<class_Physics2DServer>`\\ 에 각각 사용할 수 있습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
 msgstr "공간에 접근하기"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:40
 #, fuzzy
 msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
@@ -106,7 +96,6 @@ msgstr ""
 "<class_Node_method__physics_process>` 콜백 함수 동안은 안전합니다. 이 함수 외"
 "부에서 접근할 경우 공간이 *잠겨* 있기 때문에 오류가 발생할 수 있습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
 "To perform queries into physics space, the :ref:`Physics2DDirectSpaceState "
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
@@ -116,23 +105,18 @@ msgstr ""
 "<class_Physics2DDirectSpaceState>` 및 :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` 를 사용해야 합니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
 msgstr "2D에서는 다음 코드를 사용합니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
 msgstr "더욱더 직접적인 코드:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
 msgstr "3D에서는 다음 코드를 사용합니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
 msgstr "광선 투사 쿼리"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:102
 #, fuzzy
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
@@ -144,7 +128,6 @@ msgstr ""
 "intersect_ray() <class_Physics2DDirectSpaceState_method_intersect_ray>` 방법"
 "을 사용할 수 있습니다. 예를 들면 다음과 같습니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:123
 #, fuzzy
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
@@ -154,21 +137,17 @@ msgstr ""
 "결과는 딕셔너리입니다. 만약 광선이 아무 것도 건드리지 않으면, 딕셔너리는 텅 "
 "비게 될 것입니다. 만약 무언가에 맞는다면 콜리전 정보가 포함됩니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr "콜리전이 발생할 경우 ``결과`` 딕셔너리에는 다음 데이터가 포함됩니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr "데이터는 Vector3 좌표를 사용하는 3D 공간에서와 유사합니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
 msgstr "콜리전 예외"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
 "A common use case for ray casting is to enable a character to gather data "
 "about the world around it. One problem with this is that the same character "
@@ -179,7 +158,6 @@ msgstr ""
 "록 하는 것입니다. 이것의 한 가지 문제점은 다음 이미지와 같이 같은 캐릭터가 충"
 "돌체를 가지고 있어서, 광선은 부모의 충돌체만 감지한다는 것입니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
 "To avoid self-intersection, the ``intersect_ray()`` function can take an "
 "optional third parameter which is an array of exceptions. This is an example "
@@ -189,15 +167,12 @@ msgstr ""
 "번째 파라미터를 취할 수 있습니다. 이것은 KinematicBody2D 또는 다른 콜리전 오"
 "브젝트 노드에서 사용하는 방법의 예입니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
 msgstr "예외 배열에는 오브젝트 또는 RID가 포함될 수 있습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
 msgstr "콜리전 마스크"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:194
 #, fuzzy
 msgid ""
 "While the exceptions method works fine for excluding the parent body, it "
@@ -209,7 +184,6 @@ msgstr ""
 "이 필요한 경우 매우 불편하게 됩니다. 이 경우 콜리전 레이어/마스크 시스템을 사"
 "용하는 것이 훨씬 효율적입니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:198
 #, fuzzy
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
@@ -220,17 +194,14 @@ msgstr ""
 "어 부모 body와 동일한 마스크를 사용하려면 ``collision_mask`` 멤버 변수를 사용"
 "해야 합니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:224
 msgid ""
 "See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
 "on how to set the collision mask."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
 msgstr "화면에서의 3D ray casting(광선 투사)"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:229
 #, fuzzy
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
@@ -243,7 +214,6 @@ msgstr ""
 "다. :ref:`CollisionObject <class_CollisionObject>` 에는 \"input_event\" 신호"
 "가 있어 클릭 시 이를 알 수 있지만, 수동으로 수행할 수 있는 방법이 있습니다."
 
-#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -256,11 +226,9 @@ msgstr ""
 "원점과 방향을 모두 얻어야 합니다. 이는 직교 모드의 ``원래`` 변화, 원근법 모드"
 "에서의 ``정상`` 변화 때문입니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr "카메라를 사용하여 얻기 위해선, 다음 코드를 사용할 수 있습니다:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."

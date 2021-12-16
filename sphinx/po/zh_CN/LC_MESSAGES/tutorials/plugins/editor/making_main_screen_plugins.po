@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:4
 msgid "Making main screen plugins"
 msgstr "制作主屏幕插件"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:7
 msgid "What this tutorial covers"
 msgstr "本教程涵盖的内容"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
 msgid ""
 "As seen in the :ref:`doc_making_plugins` page, making a basic plugin that "
 "extends the editor is fairly easy. Main screen plugins allow you to create "
@@ -38,7 +35,6 @@ msgstr ""
 "\"2D\" , \"3D\" , \"脚本\" 和 \"AssetLib\" 按钮旁边. 这种编辑器插件被称为 "
 "\"主场景插件\"."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
 msgid ""
 "This tutorial leads you through the creation of a basic main screen plugin. "
 "For the sake of simplicity, our main screen plugin will contain a single "
@@ -47,11 +43,9 @@ msgstr ""
 "本教程将带领你创建一个基本的主场景插件. 为了简单起见, 主场景插件将包含一个打"
 "印文本到控制台的单个按钮."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:20
 msgid "Initializing the plugin"
 msgstr "初始化插件"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
 msgid ""
 "First create a new plugin from the Plugins menu. For this tutorial, we'll "
 "put it in a folder called ``main_screen``, but you can use any name you'd "
@@ -60,7 +54,6 @@ msgstr ""
 "首先从Plugins菜单中创建一个新插件. 在本教程中, 我们将把它放在一个名为 "
 "``main_screen`` 的文件夹中, 但你可以使用任何你喜欢的名字."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:25
 msgid ""
 "The plugin script will come with ``_enter_tree()`` and ``_exit_tree()`` "
 "methods, but for a main screen plugin we need to add a few extra methods. "
@@ -69,7 +62,6 @@ msgstr ""
 "插件脚本会自带 ``_enter_tree()`` 和 ``_exit_tree()`` 方法, 但对于主场景插件来"
 "说, 我们需要添加一些额外的方法. 增加五个额外的方法, 脚本就像这样:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:58
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns ``true``. This function is automatically "
@@ -81,11 +73,9 @@ msgstr ""
 "回 ``true`` . 这个函数会在插件激活时被编辑器自动调用, 告诉它这个插件给编辑器"
 "增加了一个新的中心视图. 现在, 我们暂且把这个脚本保持原样, 以后再来讨论它."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:65
 msgid "Main screen scene"
 msgstr "主画面场景"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:67
 msgid ""
 "Create a new scene with a root node derived from ``Control`` (for this "
 "example plugin, we'll make the root node a ``CenterContainer``). Select this "
@@ -98,7 +88,6 @@ msgstr ""
 "择``Full Rect``. 你还需要在检查器中启用 ``Expand`` 垂直尺寸标志. 面板现在使用"
 "主视窗中的所有可用空间."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:74
 msgid ""
 "Next, let's add a button to our example main screen plugin. Add a ``Button`` "
 "node, and set the text to \"Print Hello\" or similar. Add a script to the "
@@ -107,7 +96,6 @@ msgstr ""
 "接下来, 让我们为我们的主屏幕插件示例添加一个按钮. 添加一个 ``Button`` 节点, "
 "并将文本设置为 \"Print Hello \"或类似的内容. 给按钮添加一个脚本, 像这样:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
 "Then connect the \"pressed\" signal to itself. If you need help with "
 "signals, see the :ref:`doc_signals` article."
@@ -115,26 +103,22 @@ msgstr ""
 "然后将 \"按下\" 信号连接到自身. 如果你需要信号方面的帮助, 请参考 :ref:"
 "`doc_signals` 一文."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:90
 msgid ""
 "We are done with the main screen panel. Save the scene as ``main_panel."
 "tscn``."
 msgstr "我们完成了主屏幕面板. 将场景保存为 ``main_panel.tscn``."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:93
 msgid "Update the plugin script"
 msgstr "更新插件脚本"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
 msgid ""
 "We need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our main panel scene and places it where it needs to be. Here is "
 "the full plugin script:"
 msgstr ""
-"我们需要更新 ``main_screen_plugin.gd `` 脚本, 因此插件实例是我们的主面板场"
-"景, 并将其放置在需要的位置. 这是完整的插件脚本:"
+"我们需要更新 ``main_screen_plugin.gd`` 脚本，让插件实例化我们的主面板场景，并"
+"将其放置在需要的位置。这是完整的插件脚本："
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:140
 msgid ""
 "A couple of specific lines were added. ``MainPanel`` is a constant that "
 "holds a reference to the scene, and we instance it into "
@@ -143,7 +127,6 @@ msgstr ""
 "增加了几行具体的内容. ``MainPanel`` 是一个常量, 持有对场景的引用, 我们将其实"
 "例化为 `main_panel_instance`."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we instance the main panel scene, and add them as children of specific parts "
@@ -158,7 +141,6 @@ msgstr ""
 "``make_visible(false)`` 函数来隐藏主面板, 这样在第一次激活插件时就不会占用空"
 "间."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
 msgid ""
 "The ``_exit_tree()`` function is called when the plugin is deactivated. If "
 "the main screen still exists, we call ``queue_free()`` to free the instance "
@@ -167,7 +149,6 @@ msgstr ""
 "当插件停用时, 调用 ``_exit_tree()`` 函数. 如果主屏幕仍然存在, 我们调用 "
 "``queue_free()`` 来释放实例, 并将其从内存中移除."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
 msgid ""
 "The ``make_visible()`` function is overridden to hide or show the main panel "
 "as needed. This function is automatically called by the editor when the user "
@@ -176,7 +157,6 @@ msgstr ""
 "``make_visible()`` 函数被重写, 以根据需要隐藏或显示主面板. 当用户点击编辑器顶"
 "部的主视窗按钮时, 编辑器会自动调用该函数."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
 msgid ""
 "The ``get_plugin_name()`` and ``get_plugin_icon()`` functions control the "
 "displayed name and icon for the plugin's main viewport button."
@@ -184,7 +164,6 @@ msgstr ""
 "``get_plugin_name()`` 和 ``get_plugin_icon()`` 函数控制插件主视窗按钮的显示名"
 "称和图标."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:161
 msgid ""
 "Another function you can add is the ``handles()`` function, which allows you "
 "to handle a node type, automatically focusing the main screen when the type "
@@ -194,11 +173,9 @@ msgstr ""
 "另一个你可以添加的函数是 ``handles()`` 函数, 它允许你处理一个节点类型, 当选择"
 "该类型时自动聚焦主屏幕. 这类似于点击一个3D节点会自动切换到3D视窗."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:167
 msgid "Try the plugin"
 msgstr "试试这个插件"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:169
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. Clicking it will take you to "
@@ -207,7 +184,6 @@ msgstr ""
 "在项目设置中激活插件. 你会观察到主视窗上方的2D, 3D, 脚本旁边有一个新的按钮. "
 "点击它将带你进入新的主屏幕插件, 中间的按钮将打印文本."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:173
 msgid ""
 "If you would like to try a finished version of this plugin, check out the "
 "plugin demos here: https://github.com/godotengine/godot-demo-projects/tree/"
@@ -216,7 +192,6 @@ msgstr ""
 "如果你想试试这个插件的完成版, 请在这里查看插件演示:https://github.com/"
 "godotengine/godot-demo-projects/tree/master/plugins"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:177
 msgid ""
 "If you would like to see a more complete example of what main screen plugins "
 "are capable of, check out the 2.5D demo projects here: https://github.com/"

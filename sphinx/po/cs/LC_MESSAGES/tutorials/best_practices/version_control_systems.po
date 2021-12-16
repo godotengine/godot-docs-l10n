@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Version Control Systems"
+msgstr "Systémy pro správu verzí"
+
+msgid "Introduction"
+msgstr "Úvod"
+
+msgid ""
+"Godot aims to be VCS friendly and generate mostly readable and mergeable "
+"files. Godot also supports the use of version control systems in the editor "
+"itself. However, VCS in the editor requires a plugin for the specific VCS "
+"you are using. VCS can be setup or shut down in the editor under **Project > "
+"Version Control**."
+msgstr ""
+"Godot se snaží být přívětivý k VCS a generovat většinou čitelné a slučitelné "
+"soubory. Godot také podporuje používání systémů pro správu verzí v samotném "
+"editoru. VCS v editoru však vyžaduje zásuvný modul pro konkrétní VCS, který "
+"používáte. VCS lze nastavit nebo vypnout v editoru : **Projekt > Řízení "
+"verzí**."
+
+msgid "Official Git plugin"
+msgstr "Oficiální zásuvný modul Git"
+
+msgid ""
+"Using Git from inside the editor is supported with an official plugin. You "
+"can find the latest releases `here <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__. Documentation on how to use the Git plugin can be found "
+"`here <https://github.com/godotengine/godot-git-plugin/wiki>`__."
+msgstr ""
+"Používání systému Git v editoru je podporováno oficiálním zásuvným modulem. "
+"Nejnovější verze najdete `zde <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__ . Dokumentaci k používání zásuvného modulu Git naleznete "
+"`zde <https://github.com/godotengine/godot-git-plugin/wiki>`__."
+
+msgid "Files to exclude from VCS"
+msgstr "Soubory k vyloučení z VCS"
+
+msgid "There are some folders Godot creates you should have your VCS ignore:"
+msgstr ""
+"Některé složky vytvořené systémem Godot byste měli ve správě verzí ignorovat:"
+
+msgid ""
+"``.import/``: This folder stores all the files it imports automatically "
+"based on your source assets and their import flags."
+msgstr ""
+"``.import/``: V této složce jsou uloženy všechny soubory, které se "
+"automaticky importují na základě vašich zdrojových prostředků a jejich "
+"importních příznaků."
+
+msgid ""
+"``*.translation``: These files are binary imported translations generated "
+"from CSV files."
+msgstr ""
+"``*.translation``: Tyto soubory jsou binární importované překlady "
+"vygenerované ze souborů CSV."
+
+msgid ""
+"``export_presets.cfg``: This file contains all the export presets for the "
+"project, including sensitive information such as Android keystore "
+"credentials."
+msgstr ""
+"``export_presets.cfg``: Tento soubor obsahuje všechny předvolby exportu pro "
+"projekt, včetně citlivých informací, jako jsou pověření k úložišti klíčů "
+"Android."
+
+msgid ""
+"``.mono/``: This folder stores automatically-generated Mono files. It only "
+"exists in projects that use the Mono version of Godot."
+msgstr ""
+"``.mono/``: V této složce jsou uloženy automaticky generované soubory Mono. "
+"Existuje pouze v projektech, které používají verzi Godot Mono."
+
+msgid "Working with Git on Windows"
+msgstr "Práce se systémem Git v systému Windows"
+
+msgid ""
+"Most Git for Windows clients are configured with the ``core.autocrlf`` set "
+"to ``true``. This can lead to files unnecessarily being marked as modified "
+"by Git due to their line endings being converted automatically. It is better "
+"to set this option as::"
+msgstr ""
+"Většina klientů systému Git pro Windows je nakonfigurována s parametrem "
+"``core.autocrlf`` nastaveným na ``true``. To může vést k tomu, že soubory "
+"budou v systému Git zbytečně označeny jako změněné, protože jejich konce "
+"řádků budou automaticky převedeny. Je lepší nastavit tuto volbu jako::"

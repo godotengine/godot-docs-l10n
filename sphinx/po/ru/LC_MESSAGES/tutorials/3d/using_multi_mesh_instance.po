@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
 msgstr "Введение"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:9
 msgid ""
 "In a normal scenario, you would use a :ref:`MeshInstance "
 "<class_MeshInstance>` node to display a 3D mesh like a human model for the "
@@ -37,7 +34,6 @@ msgid ""
 "<class_MultiMeshInstance>` is one of the possible solutions to this problem."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
 "MultiMeshInstance, as the name suggests, creates multiple copies of a "
 "MeshInstance over a surface of a specific mesh. An example would be having a "
@@ -45,39 +41,32 @@ msgid ""
 "orientations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
 "Now you have everything ready. Select the MultiMeshInstance node and look at "
 "the toolbar, you should see an extra button called ``MultiMesh`` next to "
@@ -85,83 +74,64 @@ msgid ""
 "window titled *Populate MultiMesh* will pop up."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 #, fuzzy
 msgid "MultiMesh settings"
 msgstr "Многострочная строка"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
 msgstr "Масштабировать"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:89
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
 "Select the target surface. In the tree case, this should be the landscape "
 "node. The source mesh should be the tree node. Adjust the other parameters "
@@ -170,11 +140,9 @@ msgid ""
 "the result, you can delete the mesh instance used as the source mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""

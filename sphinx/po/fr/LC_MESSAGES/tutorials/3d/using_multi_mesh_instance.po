@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
 msgstr "Utilisation de MultiMeshInstance"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:9
 msgid ""
 "In a normal scenario, you would use a :ref:`MeshInstance "
 "<class_MeshInstance>` node to display a 3D mesh like a human model for the "
@@ -46,7 +43,6 @@ msgstr ""
 "`MultiMeshInstance <class_MultiMeshInstance>` est une des solutions "
 "possibles à ce problème."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
 "MultiMeshInstance, as the name suggests, creates multiple copies of a "
 "MeshInstance over a surface of a specific mesh. An example would be having a "
@@ -58,11 +54,9 @@ msgstr ""
 "maillage d'arbre peut peupler un maillage paysage avec des arbres d'échelles "
 "et d'orientations aléatoires."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
 msgstr "Configuration des nœuds"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
@@ -70,7 +64,6 @@ msgstr ""
 "La configuration de base nécessite trois nœuds : le nœud MultiMeshInstance "
 "et deux nœuds MeshInstance."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
@@ -78,7 +71,6 @@ msgstr ""
 "Un nœud est utilisé comme cible, le maillage sur lequel vous voulez placer "
 "plusieurs maillages. Dans l'exemple de l'arbre, ce serait le paysage."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
@@ -86,7 +78,6 @@ msgstr ""
 "L'autre nœud est utilisé comme source, le maillage que vous voulez "
 "dupliquer. Dans le cas de l'arbre, ce serait l'arbre lui-même."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
@@ -94,12 +85,10 @@ msgstr ""
 "Dans notre exemple, nous utiliserions un nœud :ref:`Spatial <class_Spatial>` "
 "comme nœud racine de la scène. Votre arbre de scène ressemblerait à ceci :"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
 "Pour des raisons de simplicité, ce tutoriel utilise des primitives intégrées."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
 "Now you have everything ready. Select the MultiMeshInstance node and look at "
 "the toolbar, you should see an extra button called ``MultiMesh`` next to "
@@ -112,19 +101,15 @@ msgstr ""
 "*Peupler la surface* dans le menu déroulant. Une nouvelle fenêtre intitulée "
 "*Peupler la MultiMesh* s'ouvrira."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 msgid "MultiMesh settings"
 msgstr "Paramètres MultiMesh"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
 msgstr "Vous trouverez ci-dessous la description des options."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
 msgstr "Surface cible"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
@@ -132,65 +117,50 @@ msgstr ""
 "Le maillage utilisé comme surface cible sur laquelle placer des copies de "
 "votre maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
 msgstr "Maillage source"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
 msgstr "Le maillage que vous voulez dupliquer sur la surface cible."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
 msgstr "Mesh Up Axis"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
 msgstr "L'axe utilisé comme axe ascendant du maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
 msgstr "Rotation aléatoire"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
 msgstr "Randomiser la rotation autour de l'axe ascendant du maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
 msgstr "Inclinaison aléatoire"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
 msgstr "Randomiser la rotation globale du maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
 msgstr "Échelle aléatoire"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
 msgstr "Randomiser l'échelle du maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
 msgstr "Mode mise à l'échelle"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:89
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr ""
 "L'échelle du maillage source qui sera placé sur la surface de la cible."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
 msgstr "Amount"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
 msgstr "Le nombre d'instances de maillage placées sur la surface de la cible."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
 "Select the target surface. In the tree case, this should be the landscape "
 "node. The source mesh should be the tree node. Adjust the other parameters "
@@ -205,11 +175,9 @@ msgstr ""
 "satisfait du résultat, vous pouvez supprimer l'instance de maillage utilisée "
 "comme maillage source."
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
 msgstr "Le résultat final devrait ressembler à ceci :"
 
-#: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""

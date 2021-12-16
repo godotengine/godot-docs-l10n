@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:4
 msgid "Plugins for iOS"
 msgstr "Плагины для iOS"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
 msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
 "are using same model of asynchronous calls explained below."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:11
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
@@ -39,33 +35,27 @@ msgstr ""
 "Если вы собираетесь участвовать в работе над документацией, её репозиторий "
 "можно найти `здесь <https://github.com/godotengine/godot-docs>`_"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 #, fuzzy
 msgid "Accessing plugin singletons"
 msgstr "Доступ к узлам сцены"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:16
 msgid ""
 "To access plugin functionality, you first need to check that the plugin is "
 "exported and available by calling the `Engine.has_singleton()` function, "
 "which returns a registered singleton."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:20
 #, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
 msgstr "Вот простой пример того, как это работает:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:40
 msgid "Asynchronous methods"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:42
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:49
 msgid ""
 "The parameter will usually be a Dictionary, with the information necessary "
 "to make the request, and the call will have two phases. First, the method "
@@ -76,7 +66,6 @@ msgid ""
 "Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:76
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
 "through the pending_event interface, even if it's an error, or a network "
@@ -85,48 +74,39 @@ msgid ""
 "way it should be treated as a bug."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:82
 msgid "The pending event interface consists of two methods:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:84
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:91
 msgid "Store Kit"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:93
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:95
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:98
 msgid "The following methods are available and documented below:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:116
 #, fuzzy
 msgid "``purchase``"
 msgstr "purchase"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:118
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
 "``finish_transaction(product_id)`` once you receive a successful response or "
@@ -134,268 +114,185 @@ msgid ""
 "These two methods ensure the transaction is completed."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:123
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:163
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:233
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:306
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
 msgid "Parameters"
 msgstr "Параметры"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:125
 msgid ""
 "Takes a dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product ID. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:133
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:173
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:197
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:275
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:320
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:367
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:426
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:458
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:515
 msgid "Response event"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:135
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:175
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:277
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:322
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:369
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:398
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:428
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:460
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:517
 msgid "The response event will be a dictionary with the following fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:137
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:279
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:324
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:371
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:400
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:430
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:462
 msgid "On error:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:147
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:290
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:335
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:381
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:410
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:440
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:472
 msgid "On success:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:158
 #, fuzzy
 msgid "``request_product_info``"
 msgstr "request_product_info"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:160
 msgid "Requests the product info on a list of product IDs."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:165
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
 "which a string array of product IDs is assigned. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:191
 msgid "``restore_purchases``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:193
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:199
 #, fuzzy
 msgid "The response events will be dictionaries with the following fields:"
 msgstr "Сцена Моба будет использовать следующие узлы:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:210
 msgid "``set_auto_finish_transaction``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:212
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
 "finalized automatically. Call this method prior to calling ``purchase()``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:218
 msgid ""
 "Takes a boolean as a parameter which specifies if purchases should be "
 "automatically finalized. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:226
 #, fuzzy
 msgid "``finish_transaction``"
 msgstr "``connection``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:228
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
 "method after you receive a successful purchase response."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:235
 msgid ""
 "Takes a string ``product_id`` as an argument. ``product_id`` specifies what "
 "product to finalize the purchase on. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:243
 msgid "Game Center"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has the following methods:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:262
 msgid "and the pending events interface:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:270
 #, fuzzy
 msgid "``authenticate``"
 msgstr "``x.attribute``"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:272
 msgid "Authenticates a user in Game Center."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:301
 #, fuzzy
 msgid "``post_score``"
 msgstr "post_score"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:303
 msgid "Posts a score to a Game Center leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:308
 msgid "Takes a dictionary as a parameter, with two fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:310
 msgid "``score`` a float number"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:311
 msgid "``category`` a string with the category name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:313
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:360
 msgid "Example:"
 msgstr "Пример:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:345
 #, fuzzy
 msgid "``award_achievement``"
 msgstr "award_achievement"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:347
 msgid "Modifies the progress of a Game Center achievement."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:352
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:354
 msgid "``name`` (string) the achievement name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:355
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:357
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:391
 #, fuzzy
 msgid "``reset_achievements``"
 msgstr "reset_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:393
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:420
 #, fuzzy
 msgid "``request_achievements``"
 msgstr "request_achievements"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:422
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:452
 #, fuzzy
 msgid "``request_achievement_descriptions``"
 msgstr "request_achievement_descriptions"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:454
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:489
 #, fuzzy
 msgid "``show_game_center``"
 msgstr "show_game_center"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:491
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:497
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:499
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:502
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -403,20 +300,16 @@ msgid ""
 "the aggregate leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:507
 msgid "Examples:"
 msgstr "Примеры:"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:519
 msgid "On close:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:529
 #, fuzzy
 msgid "Multi-platform games"
 msgstr "Многопоточность"
 
-#: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

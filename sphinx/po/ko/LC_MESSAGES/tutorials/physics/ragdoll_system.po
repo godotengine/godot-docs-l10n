@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
 msgstr "래그돌(Ragdoll) 시스템"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:9
 #, fuzzy
 msgid ""
 "Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physics "
@@ -36,13 +33,11 @@ msgstr ""
 "션을 만들기 위해 물리 시뮬레이션에 의존합니다. 이것은 많은 게임에서 죽음 애니"
 "메이션으로 쓰입니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
 "이번 튜토리얼에서는 래그돌을 설치하기 위해 Platformer3D 데모를 사용합니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:13
 #, fuzzy
 msgid ""
 "You can download the Platformer3D demo on `GitHub <https://github.com/"
@@ -53,15 +48,12 @@ msgstr ""
 "platformer>`_ 또는 `Asset Library <https://godotengine.org/asset-library/"
 "asset/125>`_ 를 사용해서 Platformer3D 데모를 다운로드할 수 있습니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:16
 msgid "Setting up the ragdoll"
 msgstr "래그돌 설정하기"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:19
 msgid "Creating physical bones"
 msgstr "물리적 본 만들기"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:21
 #, fuzzy
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
@@ -74,7 +66,6 @@ msgstr ""
 "의 \"Create physical skeleton\" 기능으로``PhysicalBone`` 노드를 생성할 수 있"
 "습니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:23
 #, fuzzy
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
@@ -83,7 +74,6 @@ msgstr ""
 "Godot에서 플랫포머 데모를 열고 Robi 씬을 엽니다. ``Skeleton`` 노드를 선택하세"
 "요. 상단 바 메뉴에 스켈레톤 버튼이 나타납니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:27
 msgid ""
 "Click it and select the ``Create physical skeleton`` option. Godot will "
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
@@ -93,7 +83,6 @@ msgstr ""
 "``PhysicalBone`` 노드와 스켈레톤의 각 뼈에 대한 콜리전 모양과 핀 접합부를 생"
 "성하여 서로 연결합니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:31
 #, fuzzy
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
@@ -102,18 +91,15 @@ msgstr ""
 "생성된 뼈들 중 일부는 필요하지 않습니다. 예: ``MASTER`` 뼈. 그래서 우리는 그 "
 "뼈들을 제거함으로서 스켈레톤을 정리합니다."
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:34
 msgid "Cleaning up the skeleton"
 msgstr "스켈레톤(Skeleton) 정리하기"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:36
 msgid ""
 "Each ``PhysicalBone`` the engine needs to simulate has a performance cost, "
 "so you want to remove every bone that is too small to make a difference in "
 "the simulation, as well as all utility bones."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:38
 msgid ""
 "For example, if we take a humanoid, you do not want to have physical bones "
 "for each finger. You can use a single bone for the entire hand instead, or "
@@ -121,28 +107,23 @@ msgid ""
 "fingers."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:40
 msgid ""
 "Remove these physical bones: ``MASTER``, ``waist``, ``neck``, "
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:43
 msgid "Collision shape adjustment"
 msgstr "콜리전 모양 조정"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
 "The next task is adjusting the collision shape and the size of physical "
 "bones to match the part of the body that each bone should simulate."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:50
 msgid "Joints adjustment"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
 "Once you adjusted the collision shapes, your ragdoll is almost ready. You "
 "just want to adjust the pin joints to get a better simulation. "
@@ -152,15 +133,12 @@ msgid ""
 "constraint's orientation and its limits."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:56
 msgid "This is the final result:"
 msgstr "최종 결과물입니다:"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:61
 msgid "Simulating the ragdoll"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:63
 msgid ""
 "The ragdoll is now ready to use. To start the simulation and play the "
 "ragdoll animation, you need to call the ``physical_bones_start_simulation`` "
@@ -168,28 +146,23 @@ msgid ""
 "``_ready`` method:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
 "You can also limit the simulation to only a few bones. To do so, pass the "
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
 msgstr "콜리전 레이어와 마스크"
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ragdoll_system.rst:86
 #, fuzzy
 msgid ""
 "For more information, read :ref:"

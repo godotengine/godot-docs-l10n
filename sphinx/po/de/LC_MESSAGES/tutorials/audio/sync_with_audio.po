@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:4
 msgid "Sync the gameplay with audio and music"
 msgstr "Gameplay mit Audio und Musik synchronisieren"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:7
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:9
 msgid ""
 "In any application or game, sound and music playback will have a slight "
 "delay. For games, this delay is often so small that it is negligible. Sound "
@@ -40,7 +37,6 @@ msgstr ""
 "spielt dies keine Rolle, da sie in den meisten Spielen nicht mit dem "
 "Gameplay interagiert."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:11
 msgid ""
 "Still, for some games (mainly, rhythm games), it may be required to "
 "synchronize player actions with something happening in a song (usually in "
@@ -53,7 +49,6 @@ msgstr ""
 "ist es nützlich, genauere Timing-Informationen für eine genaue "
 "Wiedergabeposition zu haben."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:13
 msgid ""
 "Achieving very low playback timing precision is difficult. This is because "
 "many factors are at play during audio playback:"
@@ -62,7 +57,6 @@ msgstr ""
 "erreichen. Dies liegt daran, dass während der Audiowiedergabe viele Faktoren "
 "eine Rolle spielen:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:15
 msgid ""
 "Audio is mixed in chunks (not continuously), depending on the size of audio "
 "buffers used (check latency in project settings)."
@@ -71,21 +65,17 @@ msgstr ""
 "Größe der verwendeten Audiopuffer (überprüfen Sie die Latenz in den "
 "Projekteinstellungen)."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:16
 msgid "Mixed chunks of audio are not played immediately."
 msgstr "Gemischte Audiostücke werden nicht sofort abgespielt."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:17
 msgid "Graphics APIs display two or three frames late."
 msgstr "Grafik-APIs zeigen zwei oder drei Frames zu spät an."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:18
 msgid "When playing on TVs, some delay may be added due to image processing."
 msgstr ""
 "Bei der Wiedergabe auf Fernsehgeräten kann es aufgrund der Bildverarbeitung "
 "zu Verzögerungen kommen."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:20
 msgid ""
 "The most common way to reduce latency is to shrink the audio buffers (again, "
 "by editing the latency setting in the project settings). The problem is that "
@@ -100,7 +90,6 @@ msgstr ""
 "erforderlich ist. Dies erhöht das Risiko des Überspringens (ein Riss im "
 "Sound, weil ein Mix-Rückruf verloren gegangen ist)."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:22
 msgid ""
 "This is a common tradeoff, so Godot ships with sensible defaults that should "
 "not need to be altered."
@@ -108,7 +97,6 @@ msgstr ""
 "Dies ist ein häufiger Kompromiss, daher wird Godot mit vernünftigen "
 "Standardeinstellungen geliefert, die nicht geändert werden müssen."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:24
 msgid ""
 "The problem, in the end, is not this slight delay but synchronizing graphics "
 "and audio for games that require it. Beginning with Godot 3.2, some helpers "
@@ -119,18 +107,15 @@ msgstr ""
 "Beginnend mit Godot 3.2 wurden einige Hilfen hinzugefügt, um ein genaueres "
 "Wiedergabe-Timing zu erhalten."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:27
 msgid "Using the system clock to sync"
 msgstr "Nutze die Systemzeit zum synchronisieren"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:29
 msgid ""
 "As mentioned before, If you call :ref:`AudioStreamPlayer."
 "play()<class_AudioStreamPlayer_method_play>`, sound will not begin "
 "immediately, but when the audio thread processes the next chunk."
 msgstr ""
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:31
 msgid ""
 "This delay can't be avoided but it can be estimated by calling :ref:"
 "`AudioServer."
@@ -141,14 +126,12 @@ msgstr ""
 "get_time_to_next_mix()<class_AudioServer_method_get_time_to_next_mix>` "
 "geschätzt werden."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:33
 msgid ""
 "The output latency (what happens after the mix) can also be estimated by "
 "calling :ref:`AudioServer."
 "get_output_latency()<class_AudioServer_method_get_output_latency>`."
 msgstr ""
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:35
 msgid ""
 "Add these two and it's possible to guess almost exactly when sound or music "
 "will begin playing in the speakers during *_process()*:"
@@ -156,7 +139,6 @@ msgstr ""
 "Wenn Sie diese beiden hinzufügen, können Sie fast genau erraten, wann "
 "während *_process()* Ton oder Musik in den Lautsprechern abgespielt werden:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:79
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
 "sync with the system clock, the timing information will slowly drift away."
@@ -164,7 +146,6 @@ msgstr ""
 "Auf lange Sicht werden die Timing-Informationen jedoch langsam verschwinden, "
 "da die Sound-Hardware-Uhr nie genau mit der Systemuhr synchronisiert ist."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:81
 msgid ""
 "For a rhythm game where a song begins and ends after a few minutes, this "
 "approach is fine (and it's the recommended approach). For a game where "
@@ -176,11 +157,9 @@ msgstr ""
 "dem die Wiedergabe viel länger dauern kann, ist das Spiel möglicherweise "
 "nicht mehr synchron und es ist ein anderer Ansatz erforderlich."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:84
 msgid "Using the sound hardware clock to sync"
 msgstr "Verwenden der Sound-Hardware-Uhr zum Synchronisieren"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid ""
 "Using :ref:`AudioStreamPlayer."
 "get_playback_position()<class_AudioStreamPlayer_method_get_playback_position>` "
@@ -198,14 +177,12 @@ msgstr ""
 "Aufrufe denselben Wert zurückgeben können. Hinzu kommt, dass der Wert aus "
 "den zuvor genannten Gründen auch nicht mit den Lautsprechern synchron ist."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:88
 msgid ""
 "To compensate for the \"chunked\" output, there is a function that can "
 "help: :ref:`AudioServer."
 "get_time_since_last_mix()<class_AudioServer_method_get_time_since_last_mix>`."
 msgstr ""
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:91
 msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
@@ -213,7 +190,6 @@ msgstr ""
 "Das Hinzufügen des Rückgabewerts dieser Funktion zu "
 "*get_playback_position()* erhöht die Genauigkeit:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:103
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
@@ -221,7 +197,6 @@ msgstr ""
 "Um die Genauigkeit zu erhöhen, subtrahieren Sie die Latenzinformationen (wie "
 "viel Zeit benötigt wird, um das Audio nach dem Mischen zu hören):"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:114
 msgid ""
 "The result may be a bit jittery due how multiple threads work. Just check "
 "that the value is not less than in the previous frame (discard it if so). "
@@ -236,6 +211,5 @@ msgstr ""
 "beliebiger Länge oder zum Synchronisieren von Elementen (z.B. Soundeffekte) "
 "mit Musik."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:116
 msgid "Here is the same code as before using this approach:"
 msgstr "Hier ist derselbe Code wie vor diesem Ansatz:"

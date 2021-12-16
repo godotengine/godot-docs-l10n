@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
 msgstr "2D-liikkumisen yleiskatsaus"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:7
 msgid "Introduction"
 msgstr "Johdanto"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:9
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
 "the style of game you're making, you may have special requirements, but in "
@@ -36,7 +33,6 @@ msgstr ""
 "erityisvaatimuksia, mutta yleisesti ottaen liikkuminen useimmissa 2D-"
 "peleissä pohjautuu muutamaan perusmalliin."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
 "We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples, "
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
@@ -45,11 +41,9 @@ msgstr ""
 "Käytämme esimerkeissä :ref:`KinematicBody2D <class_KinematicBody2D>` solmua, "
 "mutta periaatteet pätevät muihinkin solmutyyppeihin (Area2D, RigidBody2D)."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
 msgstr "Järjestely"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -61,7 +55,6 @@ msgstr ""
 "``CollisionShape2D``. Spriten tekstuurina voit käyttää Godot-ikonia (\"icon."
 "png\") tai mitä tahansa 2D-kuvaa."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
@@ -71,11 +64,9 @@ msgstr ""
 "\"Syötekartta\"-välilehti. Lisää siihen seuraavat syötetoiminnot (ks. :ref:"
 "`InputEvent <doc_inputevent>` tarkempia tietoja varten):"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr "8-suuntainen liikkuminen"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -87,12 +78,10 @@ msgstr ""
 "Nimi \"8-suuntainen liikkuminen\" tulee siitä, että pelaaja voi liikkua "
 "viistosti painamalla kahta näppäintä yhtä aikaa."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr ""
 "Lisää kinemaattiselle kappaleelle skripti ja lisää siihen seuraava koodi:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
 "In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
@@ -104,7 +93,6 @@ msgstr ""
 "vastakkaista näppäintä kumoavat toisensa, mutta se johtaa myös siihen, että "
 "viistottainen liike on nopeampaa, koska kaksi suuntaa on laskettu yhteen."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
@@ -112,7 +100,6 @@ msgstr ""
 "Voimme estää sen *normalisoimalla* nopeuden, mikä tarkoittaa, että asetamme "
 "sen *pituudeksi* ``1`` ja kerromme sen halutulla nopeudella."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
@@ -121,7 +108,6 @@ msgstr ""
 "kertausta, voit lukea selostuksen vektoreiden käytöstä Godotissa sivulta :"
 "ref:`doc_vector_math`."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:116
 msgid ""
 "If the code above does nothing when you press the keys, double-check that "
 "you've set up input actions correctly as described in the :ref:"
@@ -131,11 +117,9 @@ msgstr ""
 "asettanut syötetoiminnot oikein tämän oppaan :ref:`doc_2d_movement_setup` "
 "osiossa kuvatulla tavalla."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr "Kiertyminen + liikkuminen"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -147,7 +131,6 @@ msgstr ""
 "vasemalle/oikealle kiertää pelihahmoa, kun taas ylös/alas liikuttaa sitä "
 "eteenpäin tai taaksepäin siinä suunnassa johon se osoittaa."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -159,7 +142,6 @@ msgstr ""
 "kumoaa toisensa, eikä kiertymistä tapahdu. Kiertyminen lisätään suoraan "
 "kappaleen ``rotation`` ominaisuuteen."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -171,11 +153,9 @@ msgstr ""
 "vektorifunktio, jota voit käyttää useissa tilanteissa, joissa muutoin "
 "tarvitsisit trigonometrisia funktioita."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr "Kiertyminen + liikkuminen (hiirellä)"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -186,7 +166,6 @@ msgstr ""
 "hiiren sijainnilla näppäimistön sijaan. Pelihahmo \"katsoo\" aina hiiren "
 "osoittimen suuntaan. Eteenpäin/taaksepäin syötteet pysyvät kuitenkin samana."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
@@ -196,11 +175,9 @@ msgstr ""
 "osoittamaan pelaaja annettun sijainnin suuntaan. Ilman tätä funktiota, "
 "saisit saman aikaan asettamalla kulman tällä tavalla:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr "Napsauta-ja-liiku"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
@@ -208,7 +185,6 @@ msgstr ""
 "Tämä viimeinen esimerkki käyttää ainoastaan hiirtä hahmon ohjaamiseen. "
 "Ruudun napsauttaminen saa pelaajan siirtymään kohdepaikkaan."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
@@ -220,7 +196,6 @@ msgstr ""
 "liikkuessa hivenen sijainnin ohi ja yrittäessä liikkua takaisin, vain "
 "liikkuakseen liian pitkälle ja toistaakseen saman."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
@@ -228,7 +203,6 @@ msgstr ""
 "Kommentoinnin poistaminen ``look_at()`` riviltä saa kappaleen kääntymään "
 "myös osoittamaan liikkumissuuntaansa, jos niin haluat."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
@@ -236,11 +210,9 @@ msgstr ""
 "Tätä tekniikaa voi myös käyttää pohjana \"seuraavalle\" hahmolle. ``target`` "
 "sijainti voi olla minkä tahansa objektin, jota haluat liikuttaa."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
 msgstr "Yhteenveto"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
@@ -250,7 +222,6 @@ msgstr ""
 "projekteihisi. Voit vapaasti käyttää niitä ja kokeilla mitä voisit saada "
 "aikaiseksi."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

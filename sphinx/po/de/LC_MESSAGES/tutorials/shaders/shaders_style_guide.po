@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Shaders style guide"
+msgstr "Editor Stil-Richtlinien"
+
+msgid ""
+"This style guide lists conventions to write elegant shaders. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"Diese Stil-Richtlinien listen Konventionen zum Schreiben von elegantem "
+"GDScript auf. Das Ziel ist Sie dazu zu ermutigen, sauberen und lesbaren Code "
+"zu schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen "
+"zu fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
+"Formatierungswerkzeugen ankurbeln."
+
+msgid ""
+"Since the Godot shader language is close to C-style languages and GLSL, this "
+"guide is inspired by Godot's own GLSL formatting. You can view an example of "
+"a GLSL file in Godot's source code `here <https://github.com/godotengine/"
+"godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
+msgstr ""
+"Da die Godot-Shader-Sprache den Sprachen im C-Stil und GLSL nahe kommt, ist "
+"dieses Handbuch von Godots eigener GLSL-Formatierung inspiriert. Sie können "
+"sich ein Beispiel einer GLSL-Datei im Quellcode von Godot `hier <https://"
+"github.com/godotengine/godot/blob/master/drivers/gles2/shaders/copy.glsl>`__ "
+"ansehen."
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+"Stil-Richtlinien sind nicht als harte Regelbücher gedacht. Manchmal können "
+"Sie einige der folgenden Richtlinien möglicherweise nicht anwenden. In "
+"diesem Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie "
+"andere Entwickler nach Erkenntnissen."
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+"Im Allgemeinen ist es wichtiger, Ihren Code in Ihren Projekten und in Ihrem "
+"Team konsistent zu halten, als diesem Leitfaden blind zu folgen."
+
+msgid ""
+"Godot's built-in shader editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Der in Godot integrierte Shader-Editor verwendet standardmäßig viele dieser "
+"Konventionen. Nutzen Sie ihn."
+
+msgid "Here is a complete shader example based on these guidelines:"
+msgstr ""
+"Hier ist ein vollständiges Shader-Beispiel, das auf diesen Richtlinien "
+"basiert:"
+
+msgid "Formatting"
+msgstr "Formatierung"
+
+msgid "Encoding and special characters"
+msgstr "Kodierung und Sonderzeichen"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr ""
+"Benutzen Sie Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
+"*(Standardeinstellung im Editor)*"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr ""
+"Benutzen Sie ein Line Feed am Ende jeder Datei. *(Standardeinstellung im "
+"Editor)*"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+"Verwenden Sie die **UTF-8**-Codierung ohne ein `byte order mark <https://en."
+"wikipedia.org/wiki/Byte_order_mark>`_. *(Editor Standard)*"
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr ""
+"Benutzen Sie **Tabs** anstelle von Leerzeichen für Einrückungen. "
+"*(Standardeinstellung im Editor)*"
+
+msgid "Indentation"
+msgstr "Einrückungen"
+
+msgid ""
+"Each indent level should be one tab greater than the block containing it."
+msgstr ""
+"Jede Einrückungsstufe sollte um eins größer sein als die des umgebenden "
+"Blocks."
+
+msgid "**Good**:"
+msgstr "**Gut**:"
+
+msgid "**Bad**:"
+msgstr "**Schlecht**:"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"Rücke 2 Ebenen ein, um fortgesetzte Zeilen von regulären Codeblöcken zu "
+"unterscheiden."
+
+msgid "Line breaks and blank lines"
+msgstr "Zeilenumbrüche und Leerzeilen"
+
+msgid ""
+"For a general indentation rule, follow `the \"1TBS Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
+"recommends placing the brace associated with a control statement on the same "
+"line. Always use braces for statements, even if they only span one line. "
+"This makes them easier to refactor and avoids mistakes when adding more "
+"lines to an ``if`` statement or similar."
+msgstr ""
+
+msgid "Blank lines"
+msgstr "Leere Zeilen"
+
+msgid "Surround function definitions with one (and only one) blank line:"
+msgstr ""
+"Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
+"sein (und nur eine):"
+
+msgid ""
+"Use one (and only one) blank line inside functions to separate logical "
+"sections."
+msgstr ""
+"Verwenden Sie eine (und nur eine) Leerzeile innerhalb von Funktionen, um "
+"logische Abschnitte zu trennen."
+
+msgid "Line length"
+msgstr "Zeilenlänge"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr "Halten Sie einzelne Codezeilen unter 100 Zeichen."
+
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two shaders opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+"Falls möglich versuchen Sie Zeilen unter 80 Zeichen zu halten. Dies hilft "
+"beim Lesen des Codes auf kleinen Displays und mit zwei nebeneinander "
+"geöffneten Shadern in einem externen Texteditor. Zum Beispiel bei der "
+"Betrachtung einer Unterschieds-Revision."
+
+msgid "One statement per line"
+msgstr "Eine Anweisung pro Zeile"
+
+msgid "Never combine multiple statements on a single line."
+msgstr "Kombinieren Sie niemals mehrere Anweisungen in einer einzigen Zeile."
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr "Die einzige Ausnahme dieser Regel ist der Tenär Operator:"
+
+msgid "Comment spacing"
+msgstr "Leerzeichen bei Kommentaren"
+
+msgid ""
+"Regular comments should start with a space, but not code that you comment "
+"out. This helps differentiate text comments from disabled code."
+msgstr ""
+"Kommentare sollten mit einem Leerzeichen beginnen, aber kein Code der "
+"auskommentiert wird (inaktiv). Dies hilft Kommentare von inaktivem Code zu "
+"unterscheiden."
+
+msgid ""
+"Don't use multiline comment syntax if your comment can fit on a single line:"
+msgstr ""
+"Verwenden Sie keine mehrzeilige Kommentarsyntax, wenn Ihr Kommentar in eine "
+"einzelne Zeile passt:"
+
+msgid ""
+"In the shader editor, to make the selected code a comment (or uncomment it), "
+"press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
+"the selected lines."
+msgstr ""
+"Drücken Sie im Shader-Editor :kbd:`Strg + K` um den ausgewählten Code zu "
+"einem Kommentar zu machen (oder den Kommentar zu entfernen). Diese Funktion "
+"fügt am Anfang der ausgewählten Zeilen ``//`` hinzu oder entfernt sie."
+
+msgid "Whitespace"
+msgstr "Leerzeichen"
+
+msgid ""
+"Always use one space around operators and after commas. Also, avoid "
+"extraneous spaces in function calls."
+msgstr ""
+"Setze immer ein Leerzeichen um Operatoren und nach Kommas. Vermeide auch "
+"zusätzliche Leerzeichen in Funktionsaufrufen."
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr ""
+"Benutzen Sie keine Leerzeichen um Ausdrücke vertikal auszurichten (um "
+"\"Spalten\" zu erzeugen.):"
+
+msgid "Floating-point numbers"
+msgstr "Fließkommazahlen (reell)"
+
+msgid ""
+"Always specify at least one digit for both the integer and fractional part. "
+"This makes it easier to distinguish floating-point numbers from integers, as "
+"well as distinguishing numbers greater than 1 from those lower than 1."
+msgstr ""
+"Geben Sie immer mindestens eine Ziffer für den Vorkommateil und den "
+"Nachkommateil an. Dies erleichtert die Unterscheidung von Gleitkommazahlen "
+"von ganzen Zahlen sowie die Unterscheidung von Zahlen größer als 1 von "
+"Zahlen kleiner als 1."
+
+msgid "Accessing vector members"
+msgstr "Zugriff auf Vektorelemente"
+
+msgid ""
+"Use ``r``, ``g``, ``b``, and ``a`` when accessing a vector's members if it "
+"contains a color. If the vector contains anything else than a color, use "
+"``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
+"better understand what the underlying data represents."
+msgstr ""
+
+msgid "Naming conventions"
+msgstr "Benennungsrichtlinien"
+
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code."
+msgstr ""
+"Diese Benennungsrichtlinien folgen dem Godot Engine Style. Bei "
+"Nichtbeachtung wird Ihr Code mit den eingebauten Bennennungsrichtlinien "
+"kollidieren, was zu inkonsistentem Code führt."
+
+msgid "Functions and variables"
+msgstr "Funktionen und Variablen"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr "Nutze snake\\_case um Funktionen und Variablen zu benennen:"
+
+msgid "Constants"
+msgstr "Konstanten"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr ""
+"Verwende CONSTANT\\_CASE, alles in Großbuchstaben, mit einem Unterstrich zur "
+"Worttrennung: ``const MAX_SPEED = 200``:"
+
+msgid "Code order"
+msgstr "Code Reihenfolge"
+
+msgid "We suggest to organize shader code this way:"
+msgstr "Wir empfehlen Shader-Code auf diese Weise aufzubauen:"
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+"Wir haben die Reihenfolge optimiert, um das Lesen des Codes von oben nach "
+"unten zu vereinfachen, Entwicklern das erste Lesen des Codes zu erleichtern "
+"und Fehler im Zusammenhang mit der Reihenfolge der Variablendeklarationen zu "
+"vermeiden."
+
+msgid "This code order follows two rules of thumb:"
+msgstr "Diese Code-Reihenfolge folgt zwei Faustregeln:"
+
+msgid "Metadata and properties first, followed by methods."
+msgstr "Zuerst Metadaten und Eigenschaften, gefolgt von Methoden."
+
+msgid ""
+"\"Public\" comes before \"private\". In a shader language's context, \"public"
+"\" refers to what's easily adjustable by the user (uniforms)."
+msgstr ""
+"\"Public\" steht vor \"private\". Im Kontext einer Shader-Sprache bezieht "
+"sich \"public\" auf das, was vom Benutzer leicht angepasst werden kann "
+"(Uniforms)."
+
+msgid "Local variables"
+msgstr "Lokale Variablen"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+"Deklarieren Sie lokale Variablen so nah wie möglich am Platz ihrer ersten "
+"Verwendung. Dies erleichtert das Lesen des Codes, ohne zu viel scrollen zu "
+"müssen, um herauszufinden, wo die Variable deklariert wurde."

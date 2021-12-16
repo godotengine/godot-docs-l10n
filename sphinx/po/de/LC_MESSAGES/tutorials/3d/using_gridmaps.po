@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:4
 msgid "Using GridMaps"
 msgstr "Verwenden von GridMap"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:7
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:9
 msgid ""
 ":ref:`Gridmaps <class_GridMap>` are a tool for creating 3D game levels, "
 "similar to the way :ref:`TileMap <doc_using_tilemaps>` works in 2D. You "
@@ -40,7 +37,6 @@ msgstr ""
 "würden Sie eine Ebene mit einer unbegrenzten Anzahl von Legoblöcken "
 "erstellen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
@@ -48,11 +44,9 @@ msgstr ""
 "Kollisionen und Navigation können ebenfalls zu den Meshes hinzugefügt "
 "werden, genau wie Sie es mit den Kacheln einer TileMap tun würden."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
 msgstr "Beispielprojekt"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
@@ -61,7 +55,6 @@ msgstr ""
 "Beispielprojekt herunter: :download:`gridmap_demo.zip <files/gridmap_demo."
 "zip>`."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
@@ -69,11 +62,9 @@ msgstr ""
 "Entpacken Sie dieses Projekt und fügen Sie es über die Schaltfläche "
 "\"Importieren\" dem Projektmanager hinzu."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
 msgstr "Erstellen einer MeshLibrary"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:30
 msgid ""
 "To begin, you need a :ref:`class_MeshLibrary`, which is a collection of "
 "individual meshes that can be used in the gridmap. Open the "
@@ -85,7 +76,6 @@ msgstr ""
 "\"MeshLibrary_Source.tscn\", um ein Beispiel für das Einrichten der "
 "MeshLibrary zu sehen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
@@ -93,7 +83,6 @@ msgstr ""
 "Wie Sie sehen können hat diese Szene einen Node :ref:`class_Spatial` als "
 "Wurzel und eine Reihe von :ref: class_MeshInstance` Unter-Nodes."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
@@ -101,11 +90,9 @@ msgstr ""
 "Wenn Sie in Ihrer Szene keine Physik benötigen sind Sie fertig. In den "
 "meisten Fällen möchten Sie den Meshes jedoch Kollisionskörper zuweisen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
 msgstr "Kollisionen"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:45
 msgid ""
 "You can manually assign a :ref:`class_StaticBody` and :ref:"
 "`class_CollisionShape` to each mesh. Alternatively, you can use the \"Mesh\" "
@@ -116,7 +103,6 @@ msgstr ""
 "verwenden, um den Kollisionskörper basierend auf den Mesh-Daten automatisch "
 "zu erstellen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""
 "Note that a \"Convex\" collision body will work better for simple meshes. "
 "For more complex shapes, select \"Create Trimesh Static Body\". Once each "
@@ -128,11 +114,9 @@ msgstr ""
 "Körper erstellen\". Sobald jedem Mesh ein Physikkörper und eine "
 "Kollisionsform zugewiesen wurden, kann Ihre Mesh-Bibliothek verwendet werden."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
 msgstr "Materialien"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
@@ -140,11 +124,9 @@ msgstr ""
 "Beim Generieren der MeshLibrary werden nur die Materialien aus den Meshes "
 "verwendet, auf den Nodes festgelegte Materialien werden ignoriert."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
 msgstr "Exportieren der MeshLibrary"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
@@ -152,7 +134,6 @@ msgstr ""
 "Um die Bibliothek zu exportieren, klicken Sie auf Szene -> Konvertieren "
 "in .. -> MeshLibrary .. und speichern Sie sie als Ressource."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
@@ -160,11 +141,9 @@ msgstr ""
 "Eine bereits exportierte MeshLibrary finden Sie im Projekt \"MeshLibrary.tres"
 "\"."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
 msgstr "Verwenden von GridMap"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
 "Create a new scene and add a GridMap node. Add the mesh library by dragging "
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
@@ -175,7 +154,6 @@ msgstr ""
 "Dateisystem-Dock ziehen und in der Eigenschaft \"Thema\" im Inspektor "
 "ablegen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
 "The \"Cell/Size\" property should be set to the size of your meshes. You can "
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
@@ -185,7 +163,6 @@ msgstr ""
 "werden. Sie können den Standardwert für das Beispiel beibehalten. Setzen Sie "
 "die Eigenschaft \"Center Y\" auf \"Off\"."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:87
 msgid ""
 "Now you can start designing the level by choosing a tile from the palette "
 "and placing it with Left-Click in the editor window. To remove a tile, hold :"
@@ -196,7 +173,6 @@ msgstr ""
 "platzieren. Um eine Kachel zu entfernen halten Sie :kbd:`Shift` gedrückt und "
 "klicken Sie mit der rechten Maustaste."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:91
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
 "pressing :kbd:`S` rotates a tile around the y-axis."
@@ -205,7 +181,6 @@ msgstr ""
 "anzuzeigen. Durch Drücken von :kbd:`S` wird beispielsweise eine Kachel um "
 "die Y-Achse gedreht."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:96
 msgid ""
 "Holding :kbd:`Shift` and dragging with the left mouse button will draw a "
 "selection box. You can duplicate or clear the selected area using the "
@@ -215,7 +190,6 @@ msgstr ""
 "ein Auswahlfeld zu zeichnen. Sie können den ausgewählten Bereich über die "
 "entsprechenden Menüoptionen duplizieren oder löschen."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
@@ -223,11 +197,9 @@ msgstr ""
 "Im Menü können Sie auch die Achse ändern auf der Sie zeichnen und die "
 "Zeichnungsebene auf ihrer Achse nach oben oder unten verschieben."
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
 msgstr "Verwenden von GridMap im Code"
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:110
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."

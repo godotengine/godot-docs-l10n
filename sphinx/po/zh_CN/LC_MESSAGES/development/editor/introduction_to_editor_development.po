@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:4
 msgid "Introduction to editor development"
 msgstr "编辑器开发简介"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:6
 msgid "On this page, you will learn:"
 msgstr "在这一页，你将了解到:"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:8
 msgid "The **design decisions** behind the Godot editor."
-msgstr "Godot编辑器背后的 **设计决策** 。"
+msgstr "Godot 编辑器背后的\\ **设计决策**\\ 。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:9
 msgid "How to work efficiently on the Godot editor's C++ code."
 msgstr "如何高效地处理Godot编辑器的C++代码。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:11
 msgid ""
 "This guide is aimed at current or future engine contributors. To create "
 "editor plugins in GDScript, see :ref:`doc_making_plugins` instead."
@@ -41,45 +36,39 @@ msgstr ""
 "本指南针对的是目前或未来的引擎贡献者。要在GDScript中创建编辑器插件，请参见 :"
 "ref:`doc_making_plugins` 。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:16
 msgid ""
 "If you are new to Godot, we recommended you to read :ref:"
 "`doc_godot_design_philosophy` before continuing. Since the Godot editor is a "
 "Godot project written in C++, much of the engine's philosophy applies to the "
 "editor."
 msgstr ""
-"如果你是Godot的新手，建议你在继续之前先阅读 :ref:"
-"`doc_godot_design_philosophy` 。由于Godot编辑器是一个用C++编写的Godot项目，引"
-"擎的许多理念同样适用于编辑器。"
+"如果你是 Godot 的新手，建议你在继续之前先阅读 :ref:"
+"`doc_godot_design_philosophy` 。由于 Godot 编辑器是用 C++ 编写的 Godot 项目，"
+"引擎的许多理念同样适用于编辑器。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:22
 msgid "Technical choices"
 msgstr "技术选择"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:24
 #, fuzzy
 msgid ""
-"The Godot editor is drawn using Godot's renderer and :ref:`UI system "
-"<doc_user_interface>`. It does *not* rely on a toolkit such as GTK or Qt. "
-"This is similar in spirit to software like Blender. While using toolkits "
-"makes it easier to achieve a \"native\" appearance, they are also quite "
-"heavy and their licensing is not compatible with Godot's."
+"The Godot editor is drawn using Godot's renderer and :ref:`UI system <toc-"
+"gui-basics>`. It does *not* rely on a toolkit such as GTK or Qt. This is "
+"similar in spirit to software like Blender. While using toolkits makes it "
+"easier to achieve a \"native\" appearance, they are also quite heavy and "
+"their licensing is not compatible with Godot's."
 msgstr ""
-"Godot编辑器使用Godot的渲染器和 :ref:`UI系统 <toc-learn-features-gui>` 绘制。"
-"它 *不* 依赖GTK或Qt这样的工具包。这与Blender等软件的精神相似。虽然使用工具包"
-"可以更容易地实现 \"原生 \" 外观，但它们也相当沉重，而且它们的许可与Godot的许"
-"可不兼容。"
+"Godot 编辑器使用 Godot 的渲染器和 :ref:`UI 系统 <toc-learn-features-gui>`\\ "
+"绘制。它\\ *不*\\ 依赖 GTK 或 Qt 这样的工具包。这与 Blender 等软件的精神相"
+"似。虽然使用工具包可以更容易地实现“原生”外观，但它们也相当沉重，而且它们的许"
+"可与 Godot 的许可不兼容。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:30
 msgid ""
 "The editor is fully written in C++. It can't contain any GDScript or C# code."
 msgstr "该编辑器完全是用C++编写的。它不能包含任何GDScript或C#代码。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:33
 msgid "Directory structure"
 msgstr "目录结构"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:35
 msgid ""
 "The editor's code is fully self-contained in the `editor/ <https://github."
 "com/godotengine/godot/tree/master/editor>`__ folder of the Godot source "
@@ -88,7 +77,6 @@ msgstr ""
 "编辑器的代码完全独立于Godot源代码库的 `editor/ <https://github.com/"
 "godotengine/godot/tree/master/editor>`__ 文件夹中。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:39
 msgid ""
 "Some editor functionality is also implemented via :ref:`modules "
 "<doc_custom_modules_in_c++>`. Some of these are only enabled in editor "
@@ -101,11 +89,9 @@ msgstr ""
 "中的 `modules/ <https://github.com/godotengine/godot/tree/master/modules>`__ "
 "文件夹。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:45
 msgid "Some important files in the editor are:"
 msgstr "编辑器中的一些重要文件包括："
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:47
 msgid ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/editor_node.cpp>`__: Main editor initialization file. Effectively the "
@@ -114,7 +100,6 @@ msgstr ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/editor_node.cpp>`__ ：主编辑器初始化文件。相当于编辑器的“主场景”。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:49
 msgid ""
 "`editor/project_manager.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/project_manager.cpp>`__: Main project manager initialization file. "
@@ -123,7 +108,6 @@ msgstr ""
 "`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
 "editor/editor_node.cpp>`__ ：主编辑器初始化文件。相当于编辑器的“主场景”。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:51
 msgid ""
 "`editor/plugins/canvas_item_editor_plugin.cpp <https://github.com/"
 "godotengine/godot/blob/3.x/editor/plugins/canvas_item_editor_plugin.cpp>`__: "
@@ -134,7 +118,6 @@ msgstr ""
 "godotengine/godot/blob/3.x/editor/plugins/canvas_item_editor_plugin.cpp>`__: "
 "2D编辑器的视窗和相关功能，顶部的工具栏、编辑模式、重叠的助手/面板等...。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:53
 msgid ""
 "`editor/plugins/spatial_editor_plugin.cpp <https://github.com/godotengine/"
 "godot/blob/3.x/editor/plugins/spatial_editor_plugin.cpp>`__: The 3D editor "
@@ -145,7 +128,6 @@ msgstr ""
 "godot/blob/3.x/editor/plugins/spatial_editor_plugin.cpp>`__: 三维编辑器视窗及"
 "相关功能，顶部的工具栏、编辑模式、叠加面板等...。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:55
 msgid ""
 "`editor/spatial_editor_gizmos.cpp <https://github.com/godotengine/godot/"
 "blob/3.x/editor/spatial_editor_gizmos.cpp>`__: Where the 3D editor gizmos "
@@ -156,11 +138,9 @@ msgstr ""
 "blob/3.x/editor/spatial_editor_gizmos.cpp>`__: 定义和绘制3D编辑器小工具的地"
 "方. 这个文件没有2D的对应文件，因为2D的小工具是由节点自己绘制的。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:60
 msgid "Editor dependencies in ``scene/`` files"
-msgstr "``scene/`` 文件中的编辑器依赖性"
+msgstr "``scene/`` 中文件对编辑器的依赖性"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:62
 msgid ""
 "When working on an editor feature, you may have to modify files in Godot's "
 "GUI nodes, which you can find in the ``scene/`` folder."
@@ -168,26 +148,22 @@ msgstr ""
 "在处理编辑器功能时，你可能需要修改Godot的GUI节点中的文件，你可以在 ``scene/"
 "`` 文件夹中找到。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:65
 msgid ""
 "One rule to keep in mind is that you must **not** introduce new dependencies "
 "to ``editor/`` includes in other folders such as ``scene/``. This applies "
 "even if you use ``#ifdef TOOLS_ENABLED``."
 msgstr ""
-"需要记住的一条规则是，你 **不能** 给 ``editor/`` 在其他文件夹中引入新的依赖关"
-"系，如 ``scene/`` 。即使你使用 ``#ifdef TOOLS_ENABLED`` 也是如此。"
+"需要记住的一条规则是，你\\ **不能**\\ 给 ``editor/`` 在其他文件夹中引入新的依"
+"赖关系，如 ``scene/``\\ 。即使你使用 ``#ifdef TOOLS_ENABLED`` 也是如此。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:69
 msgid ""
 "To make the codebase easier to follow and more self-contained, the allowed "
 "dependency order is:"
 msgstr "为了使代码库更容易操作，更自成一体，允许的依赖性顺序是:"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:72
 msgid "``editor/`` -> ``scene/`` -> ``servers/`` -> ``core/``"
 msgstr "``editor/`` -> ``scene/`` -> ``servers/`` -> ``core/``"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:74
 msgid ""
 "This means that files in ``editor/`` can depend on includes from ``scene/``, "
 "``servers/``, and ``core/``. But, for example, while ``scene/`` can depend "
@@ -198,7 +174,6 @@ msgstr ""
 "中的包含。但是，虽然 ``scene/`` 可以依赖 ``servers/`` 和 ``core/`` 的内容，但"
 "它不能依赖 ``editor/`` 的内容。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:78
 msgid ""
 "Currently, there are some dependencies to ``editor/`` includes in ``scene/`` "
 "files, but `they are in the process of being removed <https://github.com/"
@@ -207,17 +182,15 @@ msgstr ""
 "目前，在 ``scene/`` 文件中存在一些对 ``editor/`` 的依赖，但 `它们正在被删除 "
 "<https://github.com/godotengine/godot/issues/29730>`__ 。"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:83
 msgid "Development tips"
 msgstr "开发技巧"
 
-#: ../../docs/development/editor/introduction_to_editor_development.rst:85
 msgid ""
 "To iterate quickly on the editor, we recommend to set up a test project and :"
 "ref:`open it from the command line <doc_command_line_tutorial>` after "
 "compiling the editor. This way, you don't have to go through the project "
 "manager every time you start Godot."
 msgstr ""
-"为了快速迭代编辑器，我们建议建立一个测试项目，并在编译编辑器后从命令行 "
-"<doc_command_line_tutorial> 打开它。这样，你就不必在每次启动Godot时都要经过项"
-"目管理器了。"
+"为了快速迭代编辑器，我们建议建立一个测试项目，并在编译编辑器后\\ :ref:`从命令"
+"行打开 <doc_command_line_tutorial>`。这样，你就不必在每次启动 Godot 时都要经"
+"过项目管理器了。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
 msgstr "鼠标和输入坐标"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
-msgstr "关于Godot"
+msgstr "关于"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:9
 msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
@@ -33,11 +30,9 @@ msgstr ""
 "这个小教程的目的是为了清除许多关于输入坐标, 获取鼠标位置和屏幕分辨率等常见错"
 "误."
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
 msgstr "硬件显示坐标"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
@@ -46,11 +41,9 @@ msgstr ""
 "使用硬件坐标在编写要在PC上运行的复杂UI时是有意义的, 比如编辑器, 网络游戏, 工"
 "具等. 然而, 在这个范围之外, 它就没有那么大的意义了."
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
 msgstr "视区显示坐标"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
 "Godot uses viewports to display content, and viewports can be scaled by "
 "several options (see :ref:`doc_multiple_resolutions` tutorial). Use, then, "
@@ -61,12 +54,10 @@ msgstr ""
 "`doc_multiple_resolutions` 教程). 然后, 使用节点中的函数来获得鼠标坐标和视区"
 "大小, 例如:"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr "另外, 也可以从视窗查询鼠标的坐标:"
 
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""
 "When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
 "position`` value from ``InputEventMouseMotion`` is the center of the screen. "

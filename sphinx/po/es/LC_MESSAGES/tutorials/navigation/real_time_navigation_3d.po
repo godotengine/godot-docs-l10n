@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:1
 msgid ".. _doc_real_time_navigation_3d:"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:4
 msgid "Real Time Navigation (3D)"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:7
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:9
 msgid ""
 "Godot provides two nodes which can be used to achieve real time navigation "
 "in a 3D environment, :ref:`Navigation <class_Navigation>` and :ref:"
 "`NavigationMeshInstance <class_NavigationMeshInstance>`."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:12
 msgid ""
 "A navigation mesh instance is used to hold a :ref:`NavigationMesh "
 "<class_NavigationMesh>`, "
@@ -45,12 +40,10 @@ msgid ""
 "pathfinding with the navigation mesh."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:17
 #, fuzzy
 msgid "Setting up navigation"
 msgstr "Asignando valores"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:19
 msgid ""
 "To add navigation to a scene you need to add a navigation node, then "
 "a navigation mesh instance as a child of the navigation node. With the "
@@ -58,11 +51,9 @@ msgid ""
 "create a new navigation mesh."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:24
 msgid ".. image:: img/new_navigation_mesh.png"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:26
 msgid ""
 "Click on the navigation mesh and you can now alter the properties that "
 "define how the navigation mesh is generated. You can find a full "
@@ -70,27 +61,22 @@ msgid ""
 "`NavigationMesh <class_NavigationMesh>`."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:31
 msgid ""
 "After making the changes you want the mesh can be generated by clicking "
 "**Bake NavMesh** in the toolbar."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:34
 msgid ".. image:: img/bake_navmesh.png"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:36
 msgid ""
 "Once the mesh has finished generating you should see the transparent "
 "navigation mesh above the areas in your scene that can be navigated to."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:39
 msgid ".. image:: img/baked_navmesh.png"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:41
 msgid ""
 "Keep in mind that the navmesh shows where the center of an entity can "
 "go. For example, if you set the agent radius to 0.5 then your "
@@ -98,11 +84,9 @@ msgid ""
 "to prevent clipping into the wall or hanging off of the edge."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:47
 msgid "Generating a path"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:49
 msgid ""
 "To get a path between two areas on a map you use the navigation node "
 "method ``get_simple_path()``. The first argument is a Vector3 of the "
@@ -111,7 +95,6 @@ msgid ""
 "navmesh are considered when generating a path."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:55
 msgid ""
 "The method will return a :ref:`PoolVector3Array "
 "<class_PoolVector3Array>` consisting of "
@@ -120,12 +103,10 @@ msgid ""
 "<class_PoolVector3Array>`."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:60
 #, fuzzy
 msgid "Official example project"
 msgstr "Proyecto ejemplo"
 
-#: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:62
 msgid ""
 "There is an official example project on how to use 3D navigation. "
 "You can find the repository `here <https://github.com/godotengine/godot-demo-"

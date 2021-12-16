@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:4
 msgid "Using GIProbe"
 msgstr "Usando GIProbe"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:7
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:9
 msgid ""
 "This feature is only available when using the GLES3 backend. :ref:"
 "`doc_baked_lightmaps` can be used as an alternative when using the GLES2 "
@@ -35,7 +32,6 @@ msgstr ""
 "GLES3. :ref:`doc_baked_lightmaps` puede utilizarse como alternativa cuando "
 "se utiliza el renderizador GLES2."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:13
 msgid ""
 "Just like with :ref:`doc_reflection_probes`, and as stated in the :ref:"
 "`doc_spatial_material`, objects can show reflected or diffuse light. GI "
@@ -47,7 +43,6 @@ msgstr ""
 "Las GI Probes son similares a las Reflection Probes, pero utilizan una "
 "técnica diferente y más compleja para producir luz indirecta y reflejos."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:18
 msgid ""
 "The strength of GI Probes is real-time, high quality, indirect light. While "
 "the scene needs a quick pre-bake for the static objects that will be used, "
@@ -62,7 +57,6 @@ msgstr ""
 "dinámicos que se mueven dentro de una de estas sondas también recibirán luz "
 "indirecta de la escena automáticamente."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:24
 msgid ""
 "Just like with ``ReflectionProbe``, ``GIProbe`` can be blended (in a bit "
 "more limited way), so it is possible to provide full real-time lighting for "
@@ -73,11 +67,9 @@ msgstr ""
 "iluminación completa en tiempo real para un escenario sin tener que recurrir "
 "a los mapas de luz."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:28
 msgid "The main downsides of ``GIProbe`` are:"
 msgstr "Las principales desventajas del ``GIProbe`` son:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:30
 msgid ""
 "A small amount of light leaking can occur if the level is not carefully "
 "designed. This must be artist-tweaked."
@@ -85,7 +77,6 @@ msgstr ""
 "Puede producirse una pequeña fuga de luz si el nivel no se diseña "
 "cuidadosamente. Esto debe ser ajustado por el artista."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:31
 msgid ""
 "Performance requirements are higher than for lightmaps, so it may not run "
 "properly in low-end integrated GPUs (may need to reduce resolution)."
@@ -94,7 +85,6 @@ msgstr ""
 "lo que es posible que no funcione correctamente en las GPU integradas de "
 "gama baja (puede ser necesario reducir la resolución)."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:32
 msgid ""
 "Reflections are voxelized, so they don't look as sharp as with "
 "``ReflectionProbe``. However, in exchange they are volumetric, so any room "
@@ -106,7 +96,6 @@ msgstr ""
 "cualquier tamaño o forma de habitación funciona para ellos. Mezclarlo con el "
 "Screen Space Reflection también funciona bien."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:33
 msgid ""
 "They consume considerably more video memory than Reflection Probes, so they "
 "must be used with care in the right subdivision sizes."
@@ -115,11 +104,9 @@ msgstr ""
 "por lo que deben ser usadas con cuidado en los tamaños de subdivisión "
 "correctos."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:36
 msgid "Setting up"
 msgstr "Configurando"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:38
 msgid ""
 "Just like a ``ReflectionProbe``, simply set up the ``GIProbe`` by wrapping "
 "it around the geometry that will be affected."
@@ -127,7 +114,6 @@ msgstr ""
 "Al igual que una \"ReflectionProbe\", simplemente coloca la \"Giprobe\" "
 "envolviéndola alrededor de la geometría que será afectada."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:43
 msgid ""
 "Afterwards, make sure to enable the geometry will be baked. This is "
 "important in order for ``GIProbe`` to recognize objects, otherwise they will "
@@ -137,7 +123,6 @@ msgstr ""
 "importante para que \"GIProbe\" reconozca los objetos, de lo contrario serán "
 "ignorados:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:48
 msgid ""
 "Once the geometry is set up, push the Bake button that appears on the 3D "
 "editor toolbar to begin the pre-baking process:"
@@ -145,7 +130,6 @@ msgstr ""
 "Una vez configurada la geometría, pulse el botón Bake que aparece en la "
 "barra de herramientas del editor 3D para comenzar el proceso de pre-baking:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:55
 msgid ""
 "Meshes should have sufficiently thick walls to avoid light leaks (avoid one-"
 "sided walls). For interior levels, enclose your level geometry in a "
@@ -156,11 +140,9 @@ msgstr ""
 "geometría de su nivel en una caja lo suficientemente grande y haga un puente "
 "entre los lazos para cerrar la malla."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:60
 msgid "Adding lights"
 msgstr "Agregando luces"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:62
 msgid ""
 "Unless there are materials with emission, ``GIProbe`` does nothing by "
 "default. Lights need to be added to the scene to have an effect."
@@ -168,7 +150,6 @@ msgstr ""
 "A menos que haya materiales con emisión, \"GIProbe\" no hace nada por "
 "defecto. Las luces deben ser añadidas a la escena para tener un efecto."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:65
 msgid ""
 "The effect of indirect light can be viewed quickly (it is recommended you "
 "turn off all ambient/sky lighting to tweak this, though, as shown below):"
@@ -177,7 +158,6 @@ msgstr ""
 "toda la iluminación ambiental/cielo para ajustarla, sin embargo, como se "
 "muestra a continuación):"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:70
 msgid ""
 "In some situations, though, indirect light may be too weak. Lights have an "
 "indirect multiplier to tweak this:"
@@ -185,18 +165,15 @@ msgstr ""
 "Sin embargo, en algunas situaciones, la luz indirecta puede ser demasiado "
 "débil. Las luces tienen un multiplicador indirecto para ajustar esto:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:75
 msgid ""
 "And, as ``GIProbe`` lighting updates in real-time, this effect is immediate:"
 msgstr ""
 "Y, como la iluminación de \"GIProbe\" se actualiza en tiempo real, este "
 "efecto es inmediato:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:80
 msgid "Reflections"
 msgstr "Reflexiones"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:82
 msgid ""
 "For very metallic materials with low roughness, it's possible to appreciate "
 "voxel reflections. Keep in mind that these have far less detail than "
@@ -208,7 +185,6 @@ msgstr ""
 "las Reflection Probes o los Screen Space Reflections, pero reflejan "
 "completamente de forma volumétrica."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:88
 msgid ""
 "``GIProbe``\\ s can be easily mixed with Reflection Probes and Screen Space "
 "Reflections, as a full 3-stage fallback-chain. This allows to have precise "
@@ -218,11 +194,9 @@ msgstr ""
 "los Screen Space Reflections, como una cadena de retroceso de 3 etapas. Esto "
 "permite tener reflejos precisos donde sea necesario:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:94
 msgid "Interior vs exterior"
 msgstr "Interior vs exterior"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:96
 msgid ""
 "GI Probes normally allow mixing with lighting from the sky. This can be "
 "disabled when turning on the *Interior* setting."
@@ -230,7 +204,6 @@ msgstr ""
 "Las Gi Probes normalmente permiten mezclarse con la iluminación del cielo. "
 "Esto puede ser desactivado cuando se activa el ajuste *Interior*."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:101
 msgid ""
 "The difference becomes clear in the image below, where light from the sky "
 "goes from spreading inside to being ignored."
@@ -238,7 +211,6 @@ msgstr ""
 "La diferencia se hace evidente en la imagen de abajo, donde la luz del cielo "
 "pasa de difundirse en el interior a ser ignorada."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid ""
 "As complex buildings may mix interiors with exteriors, combining GIProbes "
 "for both parts works well."
@@ -246,15 +218,12 @@ msgstr ""
 "Como los edificios complejos pueden mezclar los interiores con los "
 "exteriores, combinar los GIProbes para ambas partes funciona bien."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:110
 msgid "Tweaking"
 msgstr "Tweaking (ajustes)"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:112
 msgid "GI Probes support a few parameters for tweaking:"
 msgstr "Las GI Probes admiten algunos parámetros de tweaking:"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:116
 msgid ""
 "**Subdiv** Subdivision used for the probe. The default (128) is generally "
 "good for small- to medium-sized areas. Bigger subdivisions use more memory."
@@ -263,11 +232,9 @@ msgstr ""
 "es generalmente bueno para áreas pequeñas y medianas. Las subdivisiones más "
 "grandes usan más memoria."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:117
 msgid "**Extents** Size of the probe. Can be tweaked from the gizmo."
 msgstr "**Extents** Tamaño de la sonda. Puede ser ajustada desde el gizmo."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:118
 msgid ""
 "**Dynamic Range** Maximum light energy the probe can absorb. Higher values "
 "allow brighter light, but with less color detail."
@@ -276,7 +243,6 @@ msgstr ""
 "valores más altos permiten una luz más brillante, pero con menos detalle de "
 "color."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:119
 msgid ""
 "**Energy** Multiplier for all the probe. Can be used to make the indirect "
 "light brighter (although it's better to tweak this from the light itself)."
@@ -285,12 +251,10 @@ msgstr ""
 "brillante la luz indirecta (aunque es mejor ajustarlo a partir de la propia "
 "luz)."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:120
 msgid "**Propagation** How much light propagates through the probe internally."
 msgstr ""
 "**Propagation** Cuánta luz se propaga a través de la sonda internamente."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:121
 msgid ""
 "**Bias** Value used to avoid self-occlusion when doing voxel cone tracing, "
 "should generally be above 1.0 (1==voxel size)."
@@ -299,7 +263,6 @@ msgstr ""
 "rastreo de conos de vóxeles, debe ser generalmente superior a 1.0 (1==tamaño "
 "de vóxel)."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid ""
 "**Normal Bias** Alternative type of bias useful for some scenes. Experiment "
 "with this one if regular bias does not work."
@@ -307,15 +270,12 @@ msgstr ""
 "**Normal Bias** Tipo de sesgo alternativo útil para algunas escenas. "
 "Experimenta con este si el bias normal no funciona."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:123
 msgid "**Interior** Allows mixing with lighting from the sky."
 msgstr "**Interior** Permite mezclarse con la iluminación del cielo."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid "**Compress** Currently broken. Do not use."
 msgstr "**Compress** Actualmente roto. No lo uses."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:125
 msgid ""
 "**Data** Contains the light baked data after baking. If you are saving the "
 "data it should be saved as a .res file."
@@ -323,11 +283,9 @@ msgstr ""
 "**Data** Contiene los datos de la luz baked después de baking. Si está "
 "guardando los datos, debería ser guardado como un archivo .res."
 
-#: ../../docs/tutorials/3d/gi_probes.rst:128
 msgid "Quality"
 msgstr "Calidad"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:130
 msgid ""
 "``GIProbe``\\ s are quite demanding. It is possible to use lower quality "
 "voxel cone tracing in exchange for more performance."

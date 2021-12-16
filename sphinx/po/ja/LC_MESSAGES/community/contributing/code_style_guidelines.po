@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:4
 msgid "Code style guidelines"
 msgstr "コードスタイルガイドライン"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:8
 msgid ""
 "When contributing to Godot's source code, you will be expected to follow the "
 "style guidelines outlined below. Some of them are checked via the Continuous "
@@ -34,11 +32,9 @@ msgstr ""
 "から潜在的な問題の修正を求める質問が表示されますので、以下に示すようにシステ"
 "ムをセットアップして、すべてのコミットがガイドラインに従うようにします。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:15
 msgid "C++ and Objective-C"
 msgstr "C++およびObjective-C"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:17
 msgid ""
 "There are no written guidelines, but the code style agreed upon by the "
 "developers is enforced via the `clang-format <http://clang.llvm.org/docs/"
@@ -49,26 +45,21 @@ msgstr ""
 "ルは、\\ `clang形式 <http://clang.llvm.org/docs/ClangFormat.html>`_\\ のコー"
 "ドビューティファイヤを介して適用されます。 いくつか例を挙げると:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:22
 msgid ""
 "Indentation and alignment are both tab based (respectively one and two tabs)"
 msgstr "インデントと配置は両方ともタブベースです(それぞれ1つと2つのタブ)"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:23
 msgid "One space around math and assignments operators as well as after commas"
 msgstr "コンマの後だけでなく、数学演算子と代入演算子の周りに1つのスペース"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:24
 msgid ""
 "Pointer and reference operators are affixed to the variable identifier, not "
 "to the type name"
 msgstr "ポインタ演算子と参照演算子は、型名ではなく変数識別子に貼り付けられます"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:26
 msgid "See further down regarding header includes"
 msgstr "ヘッダーのインクルードに関する詳細を参照してください"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
 "The rules used by clang-format are outlined in the `.clang-format <https://"
 "github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
@@ -78,7 +69,6 @@ msgstr ""
 "github.com/godotengine/godot/blob/master/.clang-format>`_\\ ファイルで概説さ"
 "れています。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:32
 msgid ""
 "As long as you ensure that your style matches the surrounding code and that "
 "you not introducing trailing whitespace or space-based indentation, you "
@@ -91,7 +81,6 @@ msgstr ""
 "をチェックして自動的に修正するために、clang形式をローカルに設定することを強く"
 "お勧めします。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:37
 #, fuzzy
 msgid ""
 "Godot's code style should *not* be applied to third-party code, i.e. that is "
@@ -106,7 +95,6 @@ msgstr ""
 "の欠如)を持つ異なる上流プロジェクトから来ており、上流リポジトリとの同期を難し"
 "くするような違いを導入したくありません。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:44
 #, fuzzy
 msgid ""
 "Third-party code is usually included in the ``thirdparty/`` folder and can "
@@ -121,11 +109,15 @@ msgstr ""
 "off*/`` および ``/*clang-format on*/`` を使用してclang-formatにコードのチャン"
 "クを無視させることができます。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:52
+msgid ""
+"These guidelines only cover code formatting. See :ref:"
+"`doc_cpp_usage_guidelines` for a list of language features that are "
+"permitted in pull requests."
+msgstr ""
+
 msgid "Using clang-format locally"
 msgstr "\\ clang形式をローカルで使用する"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:54
 #, fuzzy
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
@@ -138,16 +130,12 @@ msgstr ""
 "のバージョンが適している場合がありますが、以前のバージョンにはバグがあり、現"
 "在のコードベースのフォーマットが変更される可能性があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:60
-#: ../../docs/community/contributing/code_style_guidelines.rst:261
 msgid "Installation"
 msgstr "インストール手順"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
 msgstr "\\ clang形式をインストールする方法は次のとおりです:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:64
 msgid ""
 "Linux: It will usually be available out-of-the-box with the clang toolchain "
 "packaged by your distribution. If your distro version is not the required "
@@ -162,7 +150,6 @@ msgstr ""
 "生物を使用している場合は、\\ `upstream repos <http://apt.llvm.org/>`__を使用"
 "します。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
 "macOS and Windows: You can download precompiled binaries from the `LLVM "
 "website <http://releases.llvm.org/download.html>`__. You may need to add the "
@@ -174,24 +161,19 @@ msgstr ""
 "ダへのパスをシステムの ``PATH`` 環境変数に追加して、\\ ``clang-format`` をす"
 "ぐに呼び出せるようにする必要があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
 msgstr "変更にclang-formatを適用する方法はいくつかあります:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:77
-#: ../../docs/community/contributing/code_style_guidelines.rst:273
 msgid "Manual usage"
 msgstr "手動使用"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:79
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
 msgstr ""
 "次のコマンドを使用して、clang形式の1つ以上のファイルを手動で適用できます:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
 "``-i`` means that the changes should be written directly to the file (by "
 "default clang-format would only output the fixed version to the terminal)."
@@ -199,7 +181,6 @@ msgstr ""
 "``-i`` は、変更をファイルに直接書き込む必要があることを意味します(デフォルト"
 "ではclang形式では、固定バージョンは端末にのみ出力されます)。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:88
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell. Be careful when globbing so that you "
@@ -212,12 +193,9 @@ msgstr ""
 "意してください。 そのため、 ``core/*`` よりも ``core/*.{cpp,h}`` を使用する方"
 "が適切です。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:94
-#: ../../docs/community/contributing/code_style_guidelines.rst:288
 msgid "Pre-commit hook"
 msgstr "プレコミット フック"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:96
 msgid ""
 "For ease of use, we provide a pre-commit hook for Git that will run clang-"
 "format automatically on all your commits to check them, and let you apply "
@@ -227,7 +205,6 @@ msgstr ""
 "にclang形式を実行してチェックし、最終的なコミットでその変更を適用できるように"
 "します。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
 "that folder's README.md for installation instructions."
@@ -235,7 +212,6 @@ msgstr ""
 "この「フック」は ``misc/hooks`` で見つけることができるスクリプトであり、イン"
 "ストール手順については、そのフォルダのREADME.mdを参照してください。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:103
 msgid ""
 "If your clang-format is not in the ``PATH``, you may have to edit the ``pre-"
 "commit-clang-format`` to point to the correct binary for it to work. The "
@@ -247,11 +223,9 @@ msgstr ""
 "のフックはLinuxおよびmacOSでテストされましたが、WindowsのGitシェルでも動作す"
 "るはずです。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:109
 msgid "IDE plugin"
 msgstr "IDEプラグイン"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:111
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example each time you save a file."
@@ -259,11 +233,9 @@ msgstr ""
 "ほとんどのIDEまたはコードエディタには、ファイルを保存するたびに、clang形式を"
 "自動的に実行するように構成できる美しいプラグインがあります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:114
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
 msgstr "一部のIDE用の美しいプラグインの非網羅的なリストを以下に示します:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
@@ -271,7 +243,6 @@ msgstr ""
 "Qtクリエイター:\\ `ビューティフィア・プラグイン <http://doc.qt.io/qtcreator/"
 "creator-beautifier.html>`_"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
@@ -279,7 +250,6 @@ msgstr ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`_"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:118
 msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
@@ -287,21 +257,23 @@ msgstr ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`_"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`_"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:121
+msgid ""
+"CLion: Starting from version ``2019.1``, no plugin is required. Instead, "
+"enable `ClangFormat <https://www.jetbrains.com/help/clion/clangformat-as-"
+"alternative-formatter.html#clion-support>`__"
+msgstr ""
+
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
 msgstr ""
 "(プルリクエストは、テストされたプラグインでこのリストを拡張することを歓迎しま"
 "す。)"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:124
 msgid "Header includes"
 msgstr "ヘッダーのインクルード"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
 "When adding new C++ or Objective-C files or including new headers in "
 "existing ones, the following rules should be followed:"
@@ -309,7 +281,6 @@ msgstr ""
 "新しいC++またはObjective-Cファイルを追加するとき、または既存のファイルに新し"
 "いヘッダーを含めるときは、次の規則に従う必要があります:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:129
 msgid ""
 "The first lines in the file should be Godot's copyright header and MIT "
 "license, copy-pasted from another file. Make sure to adjust the filename."
@@ -318,7 +289,6 @@ msgstr ""
 "ヘッダーとMITライセンスでなければなりません。必ずファイル名を調整してくださ"
 "い。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:131
 msgid ""
 "In a ``.h`` header, include guards should be used with the form "
 "``FILENAME_H``."
@@ -326,7 +296,6 @@ msgstr ""
 "``.h`` ヘッダーでは、インクルードガードを ``FILENAME_H`` の形式で使用する必要"
 "があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:134
 msgid ""
 "In a ``.cpp`` file (e.g. ``filename.cpp``), the first include should be the "
 "one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
@@ -336,7 +305,6 @@ msgstr ""
 "が宣言されているもの(たとえば ``#include \"filename.h\"``)で、その後に分離の"
 "ための空白行が続く必要があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:137
 msgid ""
 "Then come headers from Godot's own code base, included in alphabetical order "
 "(enforced by ``clang-format``) with paths relative to the root folder. Those "
@@ -350,7 +318,6 @@ msgstr ""
 "\"core/object.h\"``\\ 。 Godotヘッダーのインクルードブロックの後には、分離の"
 "ために空白行が続く必要があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:142
 #, fuzzy
 msgid ""
 "Finally, third-party headers (either from ``thirdparty`` or from the "
@@ -363,7 +330,6 @@ msgstr ""
 "す。例: ``#include <png.h>``\\ 。サードパーティヘッダーのブロックの後には、分"
 "離のために空白行が続く必要があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:146
 #, fuzzy
 msgid ""
 "Godot and third-party headers should be included in the file that requires "
@@ -374,15 +340,12 @@ msgstr ""
 "があります。つまり、宣言型コードで使用する場合は `.h` ヘッダーに、命令型コー"
 "ドでのみ使用する場合は ` .cpp` に含める必要があります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
 msgstr "例:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:238
 msgid "Java"
 msgstr "Java"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:240
 #, fuzzy
 msgid ""
 "Godot's Java code (mostly in ``platform/android``) is also enforced via "
@@ -396,11 +359,9 @@ msgstr ""
 "``java/src/com/google`` サブフォルダなどのサードパーティコードには適用されな"
 "いことに注意してください。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
 msgstr "Python"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
 "Godot's SCons buildsystem is written in Python, and various scripts included "
 "in the source tree are also using Python."
@@ -408,35 +369,29 @@ msgstr ""
 "GodotのSConsビルドシステムはPythonで書かれており、ソースツリーに含まれる様々"
 "なスクリプトもPythonを使用しています。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:251
 msgid ""
 "For those, we follow the `Black style guide <https://github.com/psf/"
 "black#the-black-code-style>`__. Blacken your Python changes using `Black "
 "<https://pypi.org/project/black/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:255
 #, fuzzy
 msgid "Using black locally"
 msgstr "\\ clang形式をローカルで使用する"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:257
 msgid ""
 "First of all, you will need to install black. Black requires Python 3.6.0+ "
 "to run."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:263
 #, fuzzy
 msgid "Here's how to install black:"
 msgstr "\\ clang形式をインストールする方法は次のとおりです:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:270
 #, fuzzy
 msgid "You then have different possibilities to apply black to your changes:"
 msgstr "変更にclang-formatを適用する方法はいくつかあります:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:275
 #, fuzzy
 msgid ""
 "You can apply ``black`` manually to one or more files with the following "
@@ -444,19 +399,16 @@ msgid ""
 msgstr ""
 "次のコマンドを使用して、clang形式の1つ以上のファイルを手動で適用できます:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:282
 msgid ""
 "``-l 120`` means that the allowed number of characters per line is 120. This "
 "number was agreed upon by the developers."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:284
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:290
 #, fuzzy
 msgid ""
 "For ease of use, we provide a pre-commit hook for Git that will run black "
@@ -467,7 +419,6 @@ msgstr ""
 "にclang形式を実行してチェックし、最終的なコミットでその変更を適用できるように"
 "します。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:294
 #, fuzzy
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``. Refer to "
@@ -476,12 +427,10 @@ msgstr ""
 "この「フック」は ``misc/hooks`` で見つけることができるスクリプトであり、イン"
 "ストール手順については、そのフォルダのREADME.mdを参照してください。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:299
 #, fuzzy
 msgid "Editor integration"
 msgstr "ベクトル補間"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:301
 #, fuzzy
 msgid ""
 "Many IDEs or code editors have beautifier plugins that can be configured to "
@@ -492,59 +441,47 @@ msgstr ""
 "ほとんどのIDEまたはコードエディタには、ファイルを保存するたびに、clang形式を"
 "自動的に実行するように構成できる美しいプラグインがあります。"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:306
 #, fuzzy
 msgid "Comment style guide"
 msgstr "C#スタイルガイド"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:308
 msgid ""
 "This comment style guide applies to all programming languages used within "
 "Godot's codebase."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:311
 msgid ""
 "Begin comments with a space character to distinguish them from disabled code."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:312
 msgid ""
 "Use sentence case for comments. Begin comments with an uppercase character "
 "and always end them with a period."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:314
 msgid "Reference variable/function names and values using backticks."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:315
 msgid "Wrap comments to ~100 characters."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:316
 msgid ""
 "You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as adominitions "
 "when needed."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:319
-#: ../../docs/community/contributing/code_style_guidelines.rst:342
 msgid "**Example:**"
 msgstr "**例:**"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:327
 msgid ""
 "Don't repeat what the code says in a comment. Explain the *why* rather than "
 "*how*."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:329
 #, fuzzy
 msgid "**Bad:**"
 msgstr "**悪い例**:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:336
 msgid ""
 "You can use Javadoc-style comments above function or macro definitions. It's "
 "recommended to use Javadoc-style comments *only* for methods which are not "
@@ -552,7 +489,6 @@ msgid ""
 "in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:354
 msgid ""
 "For member variables, don't use Javadoc-style comments but use single-line "
 "comments instead:"

@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom builds for Android"
+msgstr "Android向けのカスタムビルド"
+
+msgid ""
+"Godot provides the option to use custom build Android templates. Instead of "
+"using the already pre-built template that ships with Godot, an actual "
+"Android Java project gets installed into your project folder. Godot will "
+"then build it and use it as an export template every time you export the "
+"project."
+msgstr ""
+"Godotには、カスタムビルド Androidテンプレートを使用するオプションが用意されて"
+"います。Godotに同梱されている既製のテンプレートを使用する代わりに、実際の"
+"Android Javaプロジェクトがプロジェクトフォルダにインストールされます。Godotは"
+"それをビルドし、プロジェクトをエクスポートするたびにエクスポートテンプレート"
+"として使用します。"
+
+msgid "There are some reasons why you may want to do this:"
+msgstr "これを行う理由はいくつかあります:"
+
+msgid "Modify the project before it's built."
+msgstr "ビルドする前にプロジェクトを変更します。"
+
+msgid "Add external SDKs that build with your project."
+msgstr "プロジェクトでビルドする外部SDKを追加します。"
+
+msgid ""
+"Configuring the custom build is a fairly straightforward process. But first "
+"you need to follow the steps in :ref:`exporting for "
+"android<doc_exporting_for_android>` up to **Setting it up in Godot**. After "
+"doing that, follow the steps below."
+msgstr ""
+
+msgid "Set up the custom build environment"
+msgstr "カスタムビルド環境をセットアップする"
+
+msgid "Go to the Project menu, and install the *Custom Build* template:"
+msgstr ""
+"[プロジェクト] メニューに移動し、\\ *カスタム ビルド* テンプレートをインス"
+"トールします。"
+
+msgid ""
+"Make sure export templates are downloaded. If not, this menu will help you "
+"download them."
+msgstr ""
+"エクスポート テンプレートがダウンロードされていることを確認します。そうでない"
+"場合は、このメニューを使用してダウンロードできます。"
+
+#, fuzzy
+msgid ""
+"A Gradle-based Android project will be created under ``res://android/"
+"build``. Editing these files is not needed unless you want to :ref:`create "
+"your own add-ons<doc_android_plugin>`, or you really need to modify the "
+"project."
+msgstr ""
+"これにより、GradleベースのAndroidプロジェクトが ``res://android/build`` に作"
+"成され、\\ ``res://android`` に ``.gdignore`` ファイルが配置されるため、Godot"
+"ファイルシステムはこのフォルダを無視します。これらのファイルを編集する必要"
+"は、\\ :ref:`独自のアドオン<doc_android_plugin>` を作成するか、本当にプロジェ"
+"クトを変更する必要がない限り必要ありません。"
+
+msgid "Enabling the custom build and exporting"
+msgstr "カスタムビルドとエクスポートの有効化"
+
+msgid ""
+"When setting up the Android project in the **Project > Export** dialog, "
+"**Custom Build** needs to be enabled:"
+msgstr ""
+"**プロジェクト>エクスポート** ダイアログでAndroidプロジェクトを設定する場"
+"合、\\ **Custom Build** を有効にする必要があります。"
+
+msgid ""
+"From now on, attempting to export the project or one-click deploy will call "
+"the `Gradle <https://gradle.org/>`__ build system to generate fresh "
+"templates (this window will appear every time):"
+msgstr ""
+"今後、プロジェクトのエクスポートまたはワンクリックデプロイを試みると、\\ "
+"`Gradle <https://gradle.org/>` ビルドシステムが呼び出され、新しいテンプレート"
+"が生成されます(このウィンドウは毎回表示されます):"
+
+msgid ""
+"The templates built will be used automatically afterwards, so no further "
+"configuration is needed."
+msgstr ""
+"作成されたテンプレートは後で自動的に使用されるため、それ以上の構成は必要あり"
+"ません。"

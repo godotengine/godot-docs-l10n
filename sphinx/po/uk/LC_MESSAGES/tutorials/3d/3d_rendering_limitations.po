@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:4
 msgid "3D rendering limitations"
-msgstr ""
+msgstr "Обмеження 3D відображення"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:7
 msgid "Introduction"
 msgstr "Вступ"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:9
 msgid ""
 "Due to their focus on performance, real-time rendering engines have many "
 "limitations. Godot's renderer is no exception. To work effectively with "
 "those limitations, you need to understand them."
 msgstr ""
+"Візуалізатор Godot, як і інші графічні рушії, що працюють в реальному часі, "
+"має багато обмежень у зв'язку з тим, що він орієнтований на швидкість. Для "
+"того, щоб ефективно працювати з цими обмеженнями, необхідно знати про них."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:14
-#, fuzzy
 msgid "Texture size limits"
-msgstr "TextureRect"
+msgstr "Межі розміру текстури"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:16
 msgid ""
 "On desktops and laptops, textures larger than 8192×8192 may not be supported "
 "on older devices. You can check your target GPU's limitations on `GPUinfo."
 "org <https://www.gpuinfo.org/>`__."
 msgstr ""
+"Більш старі ПК та ноутбуки можуть не підтримувати текстури більші ніж "
+"8192×8192. Ви можете перевірити свій графічний процесор на `GPUinfo.org "
+"<https://www.gpuinfo.org/>`__."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:20
 msgid ""
 "Mobile GPUs are typically limited to 4096×4096 textures. Also, some mobile "
 "GPUs don't support repeating non-power-of-two-sized textures. Therefore, if "
@@ -52,12 +51,16 @@ msgid ""
 "avoid using textures larger than 4096×4096 and use a power of two size if "
 "the texture needs to repeat."
 msgstr ""
+"Мобільні ГП зазвичай обмежують розмір текстур до 4096×4096. Окрім цього, "
+"деякі мобільні ГП не підтримують повторення текстур, розмір яких не є "
+"степенем двійки. Тому, якщо ви хочете, щоб ваша текстура правильно "
+"відображалась на всіх платформах то вам варто уникати текстур більших ніж "
+"4096×4096 чи таких що мають розмір не степені двійки, якщо текстуру потрібно "
+"повторювати."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:27
 msgid "Color banding"
-msgstr ""
+msgstr "Розшарування кольорів"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:29
 msgid ""
 "When using the GLES3 or Vulkan renderers, Godot's 3D engine renders "
 "internally in HDR. However, the rendering output will be tonemapped to a low "
@@ -65,13 +68,16 @@ msgid ""
 "visible banding, especially when using untextured materials. This can also "
 "be seen in 2D projects when using smooth gradient textures."
 msgstr ""
+"Коли Godot використовує GLES3 чи Vulkan для відображення, то всередині він "
+"використовує HDR. Але, при відображенні на фізичному екрані, отримане "
+"зображення буде переведене в нижчий динамічний діяпазон. Через це, кольори "
+"можуть розділитись на шари, особливо це помітно при використанні не "
+"текстурованих матеріялів. Таке також може трапитись у 2D проєкті, коли в "
+"ньому використовуються текстури із гладкими градієнтами."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
-#, fuzzy
 msgid "There are two main ways to alleviate banding:"
-msgstr "Тут слід зазначити таке:"
+msgstr "Побороти розшарування можна двома способами:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
 "Enable **Use Debanding** in the Project Settings. This applies a fullscreen "
 "debanding shader as a post-processing effect and is very cheap. Fullscreen "
@@ -79,8 +85,12 @@ msgid ""
 "also requires HDR to be enabled in the Project Settings (which is the "
 "default)."
 msgstr ""
+"Увімкнути **Use Debanding** в налаштуваннях проєкту. Цим ви застосуєте "
+"шейдер розвишаровування до усього екрану. Між іншим, цей спосіб майже не "
+"навантажує систему. Повноекранне розвишаровування працює лише тоді, коли "
+"використовується GLES3 чи Vulkan. А ще воно потребує увімкненого HDR в "
+"налаштуваннях проєкту (воно і так увімкнене за замовчуванням)."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:41
 msgid ""
 "Alternatively, bake some noise into your textures. This is mainly effective "
 "in 2D, e.g. for vignetting effects. In 3D, you can also use a `custom "
@@ -89,18 +99,24 @@ msgid ""
 "your project is rendered in LDR, which means it will work when using the "
 "GLES2 renderer."
 msgstr ""
+"Інакше, додайте шуму до ваших текстур. Найбільше користі це приносить в 2D, "
+"як-от для віньєтування. Натомість в 3D ви можете додати до ваших "
+"*матеріялів* `саморобний шейдер розвишаровування <https://github.com/"
+"fractilegames/godot-gles2-debanding-material>`__. Цей підхід працює навіть "
+"якщо ваш проєкт відображається в LDR, а значить він працюватиме і при "
+"візуалізаторі GLES2."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid ""
 "See `Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
 "pdf>`__ for more details about banding and ways to combat it."
 msgstr ""
+"Почитайте `Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
+"pdf>`__ щоб дізнатись більше про деталі розшарування а також про те, як з "
+"ним боротися."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:53
 msgid "Depth buffer precision"
-msgstr ""
+msgstr "Точність буфера глибини"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:55
 msgid ""
 "To sort objects in 3D space, rendering engines rely on a *depth buffer* "
 "(also called *Z-buffer*). This buffer has a finite precision: 24-bit on "
@@ -109,8 +125,13 @@ msgid ""
 "fighting will occur. This will materialize as textures flickering back and "
 "forth as the camera moves or rotates."
 msgstr ""
+"Візуалізатори використовують буфер глибини (який іноді називають *Z-буфер*) "
+"щоб відсортувати об'єкти в тривимірному просторі. Цей буфер має обмежену "
+"точність: 24 біти на комп'ютерах та 16 біт на мобільних пристроях (це "
+"питання продуктивности). Якщо два об'єкти мають однакове значення в буфері, "
+"то відбудеться конфлікт між ними. Виглядає це як постійне мерехтіння текстур "
+"взад-перед коли камера рухається чи обертається."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:62
 msgid ""
 "To make the depth buffer more precise over the rendered area, you should "
 "*increase* the Camera node's **Near** property. However, be careful: if you "
@@ -119,8 +140,13 @@ msgid ""
 "permissible value for your use case, though keep in mind it won't impact "
 "precision as much as the **Near** property."
 msgstr ""
+"Щоби буфер точніше працював з областю, що відображається, варто збільшити "
+"параметр вузла камери **Near** (ближня межа). Але будьте обережні: якщо "
+"задати надто високе значення, гравець може почати дивитись крізь ближні "
+"об'єкти. Також варто зменшити параметр камери **Far** (дальня межа) "
+"наскільки це можливо. Проте пам'ятайте, що він не так сильно впливає на "
+"точність як „**Near**“."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:69
 msgid ""
 "If you only need high precision when the player can see far away, you could "
 "change it dynamically based on the game conditions. For instance, if the "
@@ -128,20 +154,23 @@ msgid ""
 "increased to avoid Z-fighting in the distance. It can then be decreased once "
 "the player leaves the airplane."
 msgstr ""
+"Якщо вам потрібна висока точність лише коли гравець дивиться в далечінь, то "
+"ви можете змінювати її на ходу, залежно від ситуації. Для прикладу, якщо "
+"гравець сідає в літак, то параметр **Near** можна збільшити щоб уникнути "
+"конфліктів за Z-буфер на відстані. Значення можна зменшити щойно гравець "
+"покине літак."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:75
 msgid ""
 "Depending on the scene and viewing conditions, you may also be able to move "
 "the Z-fighting objects further apart without the difference being visible to "
 "the player."
 msgstr ""
+"Залежно від сцени та умов, у вас може бути можливість просто розсунути "
+"конфліктні об'єкти один від одного без суттєвого впливу на вигляд сцени."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:80
-#, fuzzy
 msgid "Transparency sorting"
-msgstr "Прозорий"
+msgstr "Перебір по прозорості"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:82
 msgid ""
 "In Godot, transparent materials are drawn after opaque materials. "
 "Transparent objects are sorted back to front before being drawn based on the "
@@ -152,85 +181,113 @@ msgid ""
 "specific materials to appear in front or behind of other transparent "
 "materials. Even then, this may not always be sufficient."
 msgstr ""
+"В Godot, прозорі матеріяли відображаються після непрозорих. Прозорі об'єкти "
+"перебираються з кінця до початку перед відмальовкою за своїм розміщенням, а "
+"саме за розміщенням вузла Node3D, а не за розміщенням кожної окремої "
+"вершини. Через це, об'єкти, що перетинаються, іноді перебираються не по-"
+"порядку. Щоб виправити неправильно впорядковані об'єкти, поміняйте значення :"
+"ref:`порядку відображення <class_Material_property_render_priority>` "
+"матеріялу. Цим ви заставите конкретні матеріяли з'являтись за чи перед інших "
+"прозорих матеріялів. Але навіть цього може виявитись недостатньо."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:90
 msgid ""
 "Some rendering engines feature *order-independent transparency* techniques "
 "to alleviate this, but this is costly on the GPU. Godot currently doesn't "
 "provide this feature. There are still several ways to avoid this problem:"
 msgstr ""
+"Деякі візуалізатори мають змогу побороти це використовуючи *порядко-"
+"незалежну прозорість*, але вона сильно навантажує відеоприскорювач. На даний "
+"момент, Godot не має таких можливостей. Але у вас є декілька шляхів "
+"уникнення проблеми:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:94
 msgid ""
 "Only make materials transparent if you actually need it. If a material only "
 "has a small transparent part, consider splitting it into a separate "
 "material. This will allow the opaque part to cast shadows and may also "
 "improve performance."
 msgstr ""
+"Робити матеріяли прозорими лише за необхідності. Якщо лише маленька чатинка "
+"об'єкта має бути прозорою, розбийте його матеріял надвоє. Тоді у вас "
+"повиситься продуктивність програми а непрозора частина зможе відкидати тінь."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:99
 msgid ""
 "If you want a material to fade with distance, use the SpatialMaterial "
 "distance fade mode **Pixel Dither** or **Object Dither** instead of "
 "**PixelAlpha**. This will make the material opaque. This way, it can also "
 "cast shadows."
 msgstr ""
+"Якщо ви хочете, щоб об'єкт розчинявся при віддалені, використайте один з "
+"режимів розчинення на відстані матеріялу SpatialMaterial: **Pixel Dither** "
+"чи **Object Dither** замість **PixelAlpha**. Тоді об'єкт буде непрозорим і "
+"зможе відкидати тінь."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:105
-#, fuzzy
 msgid "Multi-sample antialiasing"
-msgstr "Додавання декількох екземплярів"
+msgstr "Багатовибіркове згладжування"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:107
 msgid ""
 "Multi-sample antialiasing (MSAA) takes multiple *coverage* samples at the "
 "edges of polygons when rendering objects. It does not increase the number of "
 "*color* samples used to render a scene. Here's what this means in practice:"
 msgstr ""
+"Багатовибіркове зглажування (MSAA) бере декілька наборів *покривають* "
+"пікселів на ребрах полігонів коли об'єкти відображаються. Воно не збільшує "
+"кількости *кольорових* пікселів що використані у сцені. Що це значить на "
+"практиці:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:111
 msgid ""
 "Edges of meshes will be smoothed out nicely (as well as supersampling would)."
 msgstr ""
+"Ребра геометричних фігур будуть гладенькими (такими ж, якими вони були б при "
+"перевибірковому згладжуванні)."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:112
 msgid ""
 "Transparent materials that use *alpha testing* (1-bit transparency) won't be "
 "smoothed out."
 msgstr ""
+"Прозорі матеріяли, що використовують *alpha testing* (однобітну прозорість) "
+"не будуть згладжуватись."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:113
 msgid ""
 "Specular aliasing (\"sparkles\" that appear on reflective surfaces) won't be "
 "reduced."
-msgstr ""
+msgstr "Відблиски на блискучих поверхнях не будуть згладжуватись."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:115
 msgid ""
 "There are several ways to work around this limitation depending on your "
 "performance budget:"
 msgstr ""
+"Залежно від величини продуктивності, якою ви можете пожертвувати, ви можете "
+"обійти вищезгадані обмеження таким чином:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:117
 msgid ""
 "To make specular aliasing less noticeable, open the Project Settings and "
 "enable **Rendering > Quality > Screen Space Filters > Screen Space Roughness "
 "Limiter**. This filter has a moderate cost on performance. It should be "
 "enabled only if you actually need it."
 msgstr ""
+"Щоб зробити зубчатість відблиску менш помітною, відкрийте налаштування "
+"проєкту та увімкніть **Rendering > Quality > Screen Space Filters > Screen "
+"Space Roughness Limiter**. Цей фільтр має середнє навантаження на систему. "
+"Вмикайте його лише коли це справді необхідно."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:122
 msgid ""
 "Enable FXAA in addition to (or instead of) MSAA. Since FXAA is a screen-"
 "space antialiasing method, it will smooth out anything. As a downside, it "
 "will also make the scene appear blurrier, especially at resolutions below "
 "1440p."
 msgstr ""
+"Увімкніть FXAA на додачу до (чи замість) MSAA. Так як FXAA — згладжує "
+"зображення на екрані, то він може згладити будь-що. Його недолік — вся сцена "
+"стане розмитою, особливо при роздільній здатності менше 1440p."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:126
 msgid ""
 "Render the scene at a higher resolution, then display it in a "
 "ViewportTexture that matches the window size. Make sure to enable **Filter** "
 "on the ViewportTexture flags. This technique is called *supersampling* and "
 "is very slow. Its use is generally only recommended for offline rendering."
 msgstr ""
+"Відобразіть сцену при вищій роз. здатності, а потім відобразіть її на "
+"оглядовій текстурі (ViewportTexture) розміром з екран вікна. Переконайтесь, "
+"що у неї увімкнена опція **Filter** . Такий підхід називають *перевибіркою* "
+"(supersampling) й він дуже повільний. Зазвичай, він використовується для "
+"статичного відображення зображень."

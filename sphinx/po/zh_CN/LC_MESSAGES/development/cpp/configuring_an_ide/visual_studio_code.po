@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:4
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
 msgid ""
 "`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
 "platform code editor by `Microsoft <https://microsoft.com>`_ (not to be "
@@ -31,11 +29,9 @@ msgstr ""
 "microsoft.com>` _推出的免费跨平台代码编辑器(不要与 :ref:"
 "`doc_configuring_an_ide_vs` 混淆)."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
 msgid "Importing the project"
 msgstr "导入项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:12
 msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
 "`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
@@ -43,38 +39,31 @@ msgstr ""
 "确保C/C++扩展已经安装. 你可以在 `官方文件 <https://code.visualstudio.com/"
 "docs/languages/cpp>`_ 中找到说明."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 msgid ""
 "From the Visual Studio Code's main screen open the Godot root folder with "
 "**File > Open Folder...**."
 msgstr "现在在VS Code中打开克隆的godot文件夹 **文件 > 打开文件夹...** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
 msgid ""
 "Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
 "*Configure Task*."
 msgstr "按Ctrl + Shift + P打开命令提示符窗口, 然后输入 *Configure Task*."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
 msgid "Select the **Create tasks.json file from template** option."
 msgstr "选择从模板中创建tasks.json文件选项."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
 msgid "Then select **Others**."
 msgstr "然后选择 \"其他\"."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
 "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
 "section to it:"
 msgstr ""
 "在 ``tasks.json`` 文件中找到 ``\"tasks\"`` 数组, 并在其中添加一个新部分:"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:67
 msgid "An example of a filled out ``tasks.json``."
 msgstr "填好了 ``tasks.json`` 的一个例子."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:69
 msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -82,26 +71,21 @@ msgstr ""
 "参数可以根据你自己的设置和需要而不同. 参见 :ref:"
 "`doc_introduction_to_the_buildsystem` 以获取完整的参数列表."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:73
 msgid "Debugging the project"
 msgstr "调试项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:75
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
 msgstr "为了构建项目, 我们需要配置文件 ``launch.json``."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:77
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr "按Ctrl + Shift + D打开 ``运行`` 面板."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:78
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr "如果缺少 ``launch.json`` 文件, 系统会提示你创建一个新的文件."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:83
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
@@ -109,18 +93,15 @@ msgstr ""
 "选择 **C++ (GDB/LLDB)** . 这里可能还有其他特定平台的选项. 如果选择了, 请相应"
 "调整所提供的配置示例."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:85
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
 "在 ``launch.json`` 文件中找到 ``\"configurations\"`` 数组, 并添加一个新部分:"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:153
 msgid "An example of a filled out ``launch.json``."
 msgstr "填写好的 ``launch.json`` 的例子."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:158
 msgid ""
 "Due to sporadic performance issues, it is recommended to use LLDB over GDB "
 "on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
@@ -131,13 +112,11 @@ msgstr ""
 "extension <https://marketplace.visualstudio.com/items?itemName=vadimcn."
 "vscode-lldb>`_ 已经安装。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:162
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
 msgstr "如果遇到lldb的问题，你可以考虑使用gdb，参阅X11_gdb配置。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:164
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
@@ -145,7 +124,6 @@ msgstr ""
 "请注意，lldb可能在基于llvm的构建中工作得更好。参阅 :ref:"
 "`doc_compiling_for_x11` 以了解更多信息。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:166
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
@@ -153,7 +131,6 @@ msgstr ""
 "``program`` [程序]下的名称取决于你的构建配置, 例如启用 ``tools`` 的64位X11平"
 "台 ``godot.x11.tools.64`` ."
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:169
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

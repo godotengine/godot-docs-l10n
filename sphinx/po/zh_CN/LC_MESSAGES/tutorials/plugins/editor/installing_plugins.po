@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
 msgid "Installing plugins"
 msgstr "安装插件"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
 "Godot features an editor plugin system with numerous plugins developed by "
 "the community. Plugins can extend the editor's functionality with new nodes, "
@@ -30,11 +28,9 @@ msgstr ""
 "Godot提供了一个编辑器插件系统, 其中包含了社区开发的众多插件. 插件可以插件可以"
 "通过新的节点, 额外附加脚本, 更多便捷的特性等来扩展编辑器的功能."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
 msgid "Finding plugins"
 msgstr "查找插件"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
 "The preferred way to find Godot plugins is to use the `Asset Library "
 "<https://godotengine.org/asset-library/>`_. While it can be browsed online, "
@@ -45,11 +41,9 @@ msgstr ""
 "asset-library/>`. 虽然它可以在线浏览, 但直接在编辑器中使用它更方便, 点击编辑"
 "器顶部的 **AssetLib** 选项卡:"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
 msgid "You can also find assets on code hosting websites such as GitHub."
 msgstr "您还可以在代码托管网站(如GitHub)上找到素材."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
 msgid ""
 "Some repositories describe themselves as \"plugins\" but may not actually be "
 "*editor* plugins. This is especially the case for scripts that are intended "
@@ -60,7 +54,6 @@ msgstr ""
 "算在运行中的项目中使用的脚本来说. 你不需要启用这些插件来使用它们. 下载它们并"
 "将文件解压到你的项目文件夹中."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
 msgid ""
 "One way to distinguish editor plugins from non-editor plugins is to look for "
 "a ``plugin.cfg`` file in the repository that hosts the plugin. If the "
@@ -71,11 +64,9 @@ msgstr ""
 "中的文件. 如果存储库包含 ``plugin.cfg`` 文件放在放置在 ``addons/`` 文件夹, 那"
 "么它就是一个编辑器插件."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
 msgid "Installing a plugin"
 msgstr "安装一个插件"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
 "To install a plugin, download it as a ZIP archive. On the Asset Library, "
 "this can be done using the **Download** button, either from the editor or "
@@ -84,7 +75,6 @@ msgstr ""
 "要安装插件, 请将其下载为ZIP存档. 在素材资源库中, 可以使用 **Download** 下载按"
 "钮(通过编辑器或使用Web界面)来完成此操作."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
 msgid ""
 "On GitHub, if a plugin has *tags* (versions) declared, go to the "
 "**Releases** tab to download a stable release. This ensures you download a "
@@ -93,7 +83,6 @@ msgstr ""
 "在 GitHub 上, 如果插件已打 *tags* (或版本), 请转到 **Releases** 选项卡下载稳"
 "定的版本. 确保你下载的是作者宣布的稳定版本."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
 msgid ""
 "On GitHub, if the plugin doesn't have any *tags* declared, use the "
 "**Download ZIP** button to download a ZIP of the latest revision:"
@@ -101,7 +90,6 @@ msgstr ""
 "在GitHub上, 如果插件没有声明任何 *tags*, 请使用 **Download ZIP** 按钮下载最新"
 "版本的ZIP:"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
 msgid ""
 "Extract the ZIP archive and move the ``addons/`` folder it contains into "
 "your project folder. If your project already contains an ``addons/`` folder, "
@@ -115,11 +103,9 @@ msgstr ""
 "的项目文件夹中, 将新的文件夹内容与现有的文件夹合并. 你的文件管理器可能会问你"
 "是否要写入该文件夹, 回答 **yes[是]** . 在这个过程中, 不会有任何文件被覆盖."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
 msgid "Enabling a plugin"
 msgstr "启用一个插件"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
 msgid ""
 "To enable the freshly installed plugin, open **Project > Project Settings** "
 "at the top of the editor then go the **Plugins** tab. If the plugin was "
@@ -133,7 +119,6 @@ msgstr ""
 "**Active** 字样将显示为绿色, 以确认该插件已启用. 注: 按现在应该是点击enable打"
 "勾启用插件."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
 msgid ""
 "You can use the plugin immediately after enabling it; there's no need to "
 "restart the editor. Likewise, disabling a plugin can be done without having "

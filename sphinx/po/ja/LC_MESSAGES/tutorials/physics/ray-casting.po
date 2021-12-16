@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
 msgstr "レイキャスティング"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
 "One of the most common tasks in game development is casting a ray (or custom "
 "shaped object) and checking what it hits. This enables complex behaviors, "
@@ -37,7 +34,6 @@ msgstr ""
 "どを実行できます。 このチュートリアルでは、2Dおよび3Dでこれを行う方法について"
 "説明します。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
 "Godot stores all the low level game information in servers, while the scene "
 "is just a frontend. As such, ray casting is generally a lower-level task. "
@@ -51,7 +47,6 @@ msgstr ""
 "`RayCast2D <class_RayCast2D>` などのノードが機能します。これは、レイキャスト"
 "の結果がフレームごとに返されるためです。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
@@ -59,11 +54,9 @@ msgstr ""
 "多くの場合、レイキャストはよりインタラクティブなプロセスである必要があるた"
 "め、コードでこれを行う方法が必要です。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
 msgstr "\\ Space"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
@@ -77,7 +70,6 @@ msgstr ""
 "理用)を取得できます。 3Dの場合、\\ :ref:`Spatial.get_world().space "
 "<class_Spatial_method_get_world>` です。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
 "The resulting space :ref:`RID <class_RID>` can be used in :ref:"
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
@@ -87,11 +79,9 @@ msgstr ""
 "れ :ref:`PhysicsServer <class_PhysicsServer>` および :ref:`Physics2DServer "
 "<class_Physics2DServer>` で使用できます。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
 msgstr "spaceへのアクセス"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
 "set to run on a separate thread to work more efficiently. Due to this, the "
@@ -107,7 +97,6 @@ msgstr ""
 "す。 この関数の外部からアクセスすると、spaceが\\ *ロック*\\ されているためエ"
 "ラーが発生する場合があります。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
 "To perform queries into physics space, the :ref:`Physics2DDirectSpaceState "
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
@@ -117,23 +106,18 @@ msgstr ""
 "<class_Physics2DDirectSpaceState>` および :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` を使用する必要があります。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
 msgstr "2Dでは、次のコードを使用します:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
 msgstr "またはより直接的に:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
 msgstr "そして、3Dで:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
 msgstr "レイキャストクエリ"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
 "`Physics2DDirectSpaceState.intersect_ray() "
@@ -144,7 +128,6 @@ msgstr ""
 "intersect_ray() <class_Physics2DDirectSpaceState_method_intersect_ray>` を使"
 "用できます。 例えば:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
 "will be empty. If it did hit something, it will contain collision "
@@ -153,22 +136,18 @@ msgstr ""
 "結果はdictionaryです。 光線が何もヒットしなかった場合、dictionaryは空になりま"
 "す。 何かにヒットした場合、衝突情報が含まれます:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr ""
 "衝突が発生した場合の ``result`` というdictionaryには、次のデータが含まれます:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr "データは、Vector3座標を使用した3D空間の物に類似しています。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
 msgstr "コリジョンの例外"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
 "A common use case for ray casting is to enable a character to gather data "
 "about the world around it. One problem with this is that the same character "
@@ -180,7 +159,6 @@ msgstr ""
 "コライダーがあるため、次の画像に示すように、レイは親のコライダーのみを検出す"
 "ることです:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
 "To avoid self-intersection, the ``intersect_ray()`` function can take an "
 "optional third parameter which is an array of exceptions. This is an example "
@@ -190,15 +168,12 @@ msgstr ""
 "ンの3番目のパラメーターを取ることができます。 これは、KinematicBody2Dまたはそ"
 "の他のコリジョンオブジェクトノードから使用する方法の例です:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
 msgstr "例外配列には、オブジェクトまたは RID を含めることができます。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
 msgstr "コリジョンマスク"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
 "While the exceptions method works fine for excluding the parent body, it "
 "becomes very inconvenient if you need a large and/or dynamic list of "
@@ -209,7 +184,6 @@ msgstr ""
 "や動的リストが必要な場合は非常に不便になります。 この場合、コリジョンレイ"
 "ヤー/マスクシステムを使用する方がはるかに効率的です。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
 "For example, to use the same mask as the parent body, use the "
@@ -219,17 +193,14 @@ msgstr ""
 "ば、親ボディと同じマスクを使用するには、\\ ``collision_mask`` メンバー変数を"
 "使用します:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:224
 msgid ""
 "See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
 "on how to set the collision mask."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
 msgstr "画面からの3Dレイキャスティング"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "
@@ -242,7 +213,6 @@ msgstr ""
 "クリックされたときに通知されるため、これを行う必要はあまりありませんが、手動"
 "で行う場合は次のようにします。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -256,11 +226,9 @@ msgstr ""
 "す。 これは、\\ ``orgin`` が直交法モードで変化し、\\ ``bormal`` が遠近法モー"
 "ドで変化するためです:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr "カメラを使用して取得するには、次のコードを使用できます:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."

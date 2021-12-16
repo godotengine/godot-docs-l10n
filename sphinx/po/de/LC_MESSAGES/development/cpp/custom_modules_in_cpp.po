@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
 msgstr "Benutzerdefinierte Module in C++"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 msgid "Modules"
 msgstr "Module"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
 "Godot allows extending the engine in a modular way. New modules can be "
 "created and then enabled/disabled. This allows for adding new engine "
@@ -38,7 +35,6 @@ msgstr ""
 "der zur Verwendung und Wiederverwendung in verschiedenen Modulen aufgeteilt "
 "werden kann."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
 msgid ""
 "Modules are located in the ``modules/`` subdirectory of the build system. By "
 "default, dozens of modules are enabled, such as GDScript (which, yes, is not "
@@ -52,11 +48,9 @@ msgstr ""
 "Ausdrücke und andere. Es können beliebig viele neue Module erstellt und "
 "kombiniert werden. Das SCons-Build-System kümmert sich transparent darum."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 msgid "What for?"
 msgstr "Wofür?"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
@@ -67,33 +61,26 @@ msgstr ""
 "durchaus möglich stattdessen C++ zu verwenden. Das Hinzufügen von C++ - "
 "Modulen kann in den folgenden Szenarien hilfreich sein:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
 msgstr "Binden einer externen Bibliothek an Godot (wie PhysX, FMOD usw.)."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
 msgstr "Optimieren kritischer Teile eines Spiels."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
 msgstr "Hinzufügen neuer Funktionen zur Engine oder zum Editor."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
 msgstr "Portieren eines vorhandenen Spiels."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
 msgstr ""
 "Schreiben eines ganz neuen Spiels in C++, weil Sie ohne C++ nicht leben "
 "können."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
 msgstr "Neues Modul erstellen"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 #, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
@@ -103,7 +90,6 @@ msgstr ""
 "von Godot herunterladen und kompilieren. In der Dokumentation dazu finden "
 "Sie Anleitungen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
 "To create a new module, the first step is creating a directory inside "
 "``modules/``. If you want to maintain the module separately, you can "
@@ -113,17 +99,14 @@ msgstr ""
 "``modules/`` erstellen. Wenn Sie das Modul separat warten möchten, können "
 "Sie ein anderes VCS in Module auschecken und verwenden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
 msgid ""
 "The example module will be called \"summator\" (``godot/modules/summator``). "
 "Inside we will create a simple summator class:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:74
 msgid "And then the cpp file."
 msgstr "Und dann die cpp Datei."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:104
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
@@ -131,7 +114,6 @@ msgstr ""
 "Dann muss die neue Klasse irgendwie registriert werden, sodass zwei weitere "
 "Dateien erstellt werden müssen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:113
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
@@ -140,11 +122,9 @@ msgstr ""
 "Ihren Dateien ``SCsub`` und ``config.py``), damit das Modul ordnungsgemäß "
 "registriert werden kann."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:116
 msgid "These files should contain the following:"
 msgstr "Diese Dateien sollten Folgendes enthalten:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:143
 msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
@@ -152,7 +132,6 @@ msgstr ""
 "Als nächstes müssen wir eine ``SCsub`` Datei erstellen, damit das Build-"
 "System dieses Modul kompiliert:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:154
 msgid ""
 "With multiple sources, you can also add each file individually to a Python "
 "string list:"
@@ -160,7 +139,6 @@ msgstr ""
 "Bei mehreren Quellen können Sie jede Datei auch einzeln zu einer Python-"
 "Zeichenfolgenliste hinzufügen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:162
 msgid ""
 "This allows for powerful possibilities using Python to construct the file "
 "list using loops and logic statements. Look at some modules that ship with "
@@ -170,7 +148,6 @@ msgstr ""
 "mithilfe von Schleifen und logischen Anweisungen zu erstellen. Schauen Sie "
 "sich einige Module an, die standardmäßig mit Godot geliefert werden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:166
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
@@ -178,7 +155,6 @@ msgstr ""
 "Um Include-Verzeichnisse hinzuzufügen, die der Compiler anzeigen kann, "
 "können Sie sie an die Pfade der Umgebung anhängen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:174
 #, fuzzy
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
@@ -190,7 +166,6 @@ msgstr ""
 "zum gesamten Godot-Build hinzugefügt werden (was zu Fehlern führen kann). "
 "Beispiel `SCsub` mit benutzerdefinierten Flags:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:192
 msgid ""
 "And finally, the configuration file for the module, this is a simple python "
 "script that must be named ``config.py``:"
@@ -198,7 +173,6 @@ msgstr ""
 "Und schließlich, die Konfigurationsdatei für das Modul, ist dies ein "
 "einfaches Python-Skript, das den Namen ``config.py`` haben muss:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:205
 msgid ""
 "The module is asked if it's OK to build for the specific platform (in this "
 "case, ``True`` means it will build for every platform)."
@@ -207,7 +181,6 @@ msgstr ""
 "builden (in diesem Fall bedeutet ``True``, dass es für jede Plattform "
 "erstellt wird)."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:208
 msgid ""
 "And that's it. Hope it was not too complex! Your module should look like "
 "this:"
@@ -215,7 +188,6 @@ msgstr ""
 "Und das ist es, hoffentlich war es nicht zu komplex. Ihr Modul sollte "
 "folgendermaßen aussehen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:220
 msgid ""
 "You can then zip it and share the module with everyone else. When building "
 "for every platform (instructions in the previous sections), your module will "
@@ -225,7 +197,6 @@ msgstr ""
 "Erstellen für jede Plattform (Anweisungen in den vorherigen Abschnitten) "
 "wird Ihr Modul einbezogen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:224
 msgid ""
 "There is a parameter limit of 5 in C++ modules for things such as "
 "subclasses. This can be raised to 13 by including the header file ``core/"
@@ -235,19 +206,15 @@ msgstr ""
 "Unterklassen. Dies kann durch Einfügen der Header-Datei ``core/"
 "method_bind_ext.gen.inc`` auf 13 erhöht werden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:229
 msgid "Using the module"
 msgstr "Modul verwenden"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:231
 msgid "You can now use your newly created module from any script:"
 msgstr "Sie können Ihr neu erstelltes Modul jetzt in jedem Skript verwenden:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:243
 msgid "The output will be ``60``."
 msgstr "Die Ausgabe wird ``60`` sein."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:245
 msgid ""
 "The previous Summator example is great for small, custom modules, but what "
 "if you want to use a larger, external library? Refer to :ref:"
@@ -259,7 +226,6 @@ msgstr ""
 "Bibliothek verwenden möchten? Weitere Informationen zum Binden an externe "
 "Bibliotheken finden Sie unter :ref:`doc_binding_to_external_libraries`."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:250
 msgid ""
 "If your module is meant to be accessed from the running project (not just "
 "from the editor), you must also recompile every export template you plan to "
@@ -276,11 +242,9 @@ msgstr ""
 "kompiliert ist. Weitere Informationen finden Sie auf den Seiten :ref:"
 "`Compiling <toc-devel-compiling>`."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:259
 msgid "Compiling a module externally"
 msgstr "Ein Modul extern kompilieren"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:261
 msgid ""
 "Compiling a module involves moving the module's sources directly under the "
 "engine's ``modules/`` directory. While this is the most straightforward way "
@@ -292,7 +256,6 @@ msgstr ""
 "Methode zum Kompilieren eines Moduls, es gibt jedoch mehrere Gründe, warum "
 "dies möglicherweise nicht praktikabel ist:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:266
 msgid ""
 "Having to manually copy modules sources every time you want to compile the "
 "engine with or without the module, or taking additional steps needed to "
@@ -309,7 +272,6 @@ msgstr ""
 "Sie jedoch zusätzlich Betriebssystembeschränkungen überwinden, z. B. die "
 "Berechtigung für symbolische Links, wenn Sie dies über ein Skript tun."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:273
 msgid ""
 "Depending on whether you have to work with the engine's source code, the "
 "module files added directly to ``modules/`` changes the working tree to the "
@@ -323,7 +285,6 @@ msgstr ""
 "erweist Sie müssen sicherstellen, dass nur der enginebezogene Code durch "
 "Filtern von Änderungen committed wird."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:279
 msgid ""
 "So if you feel like the independent structure of custom modules is needed, "
 "lets take our \"summator\" module and move it to the engine's parent "
@@ -333,7 +294,6 @@ msgstr ""
 "benutzerdefinierter Module benötigt wird, nehmen Sie unser \"Summator\" -"
 "Modul und verschieben Sie es in das übergeordnete Verzeichnis der Engine:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:287
 msgid ""
 "Compile the engine with our module by providing ``custom_modules`` build "
 "option which accepts a comma-separated list of directory paths containing "
@@ -344,7 +304,6 @@ msgstr ""
 "Verzeichnispfaden akzeptiert, die benutzerdefinierte C++ - Module enthalten, "
 "ähnlich wie folgt:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:295
 msgid ""
 "The build system shall detect all modules under the ``../modules`` directory "
 "and compile them accordingly, including our \"summator\" module."
@@ -352,7 +311,6 @@ msgstr ""
 "Das Build-System erkennt alle Module im Verzeichnis ``../modules`` und "
 "kompiliert sie entsprechend, einschließlich unseres \"Summator\" -Moduls."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:300
 msgid ""
 "Any path passed to ``custom_modules`` will be converted to an absolute path "
 "internally as a way to distinguish between custom and built-in modules. It "
@@ -365,7 +323,6 @@ msgstr ""
 "Moduldokumentation möglicherweise von einer bestimmten Pfadstruktur auf "
 "Ihrem Computer abhängen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:307
 msgid ""
 ":ref:`Introduction to the buildsystem - Custom modules build option "
 "<doc_buildsystem_custom_modules>`."
@@ -373,11 +330,9 @@ msgstr ""
 ":ref:``Einführung in das Buildsystem - Build-Option für benutzerdefinierte "
 "Module <doc_buildsystem_custom_modules>`."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:310
 msgid "Improving the build system for development"
 msgstr "Verbesserung des Build-Systems für die Entwicklung"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:312
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
@@ -386,7 +341,6 @@ msgstr ""
 "die Quellen unseres neuen Moduls als Teil der Godot-Binärdatei hinzufügen "
 "können."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:315
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
@@ -395,7 +349,6 @@ msgstr ""
 "unseres Spiels erstellen möchten, in der alle Module in einer einzigen "
 "Binärdatei sind."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:318
 msgid ""
 "However, the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
@@ -408,7 +361,6 @@ msgstr ""
 "kostspieliger Teil, solche Dateien zu finden und schließlich die endgültige "
 "Binärdatei zu verknüpfen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:323
 msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
@@ -417,7 +369,6 @@ msgstr ""
 "als gemeinsam genutzte Bibliothek zu erstellen, das beim Starten der "
 "Binärdatei unseres Spiels dynamisch geladen wird."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:364
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
@@ -430,7 +381,6 @@ msgstr ""
 "lib``), müssen wir unserer Binärdatei helfen, sie zur Laufzeit mit der "
 "Umgebungsvariablen ``LD_LIBRARY_PATH`` zu finden:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:375
 msgid ""
 "You have to ``export`` the environment variable otherwise you won't be able "
 "to play your project from within the editor."
@@ -438,7 +388,6 @@ msgstr ""
 "Sie müssen die Umgebungsvariable ``exportieren``, sonst können Sie Ihr "
 "Projekt nicht im Editor abspielen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:378
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -451,7 +400,6 @@ msgstr ""
 "Befehl `ARGUMENT` ein benutzerdefiniertes Flag definieren, das an SCons "
 "übergeben werden soll:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:409
 msgid ""
 "Now by default ``scons`` command will build our module as part of Godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
@@ -460,7 +408,6 @@ msgstr ""
 "Binärdatei und als gemeinsam genutzte Bibliothek, wenn ``summator_shared = "
 "yes`` übergeben wird."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:412
 msgid ""
 "Finally, you can even speed up the build further by explicitly specifying "
 "your shared module as target in the SCons command:"
@@ -468,11 +415,9 @@ msgstr ""
 "Schließlich können Sie den Build sogar noch weiter beschleunigen, indem Sie "
 "Ihr freigegebenes Modul im Befehl SCons explizit als Ziel angeben:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
 msgid "Writing custom documentation"
 msgstr "Benutzerdefinierte Dokumentation schreiben"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -488,13 +433,11 @@ msgstr ""
 "anderem geschrieben wurde. Seien Sie also freundlich zu Ihrem zukünftigen "
 "Selbst!"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:428
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 "Es gibt mehrere Schritte, um benutzerdefinierte Dokumente für das Modul "
 "einzurichten:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:430
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
@@ -504,13 +447,11 @@ msgstr ""
 "Verzeichnisname kann beliebig sein, aber wir werden in diesem Abschnitt den "
 "Namen ``doc_classes`` verwenden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:433
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 "Jetzt müssen wir ``config.py`` bearbeiten und das folgende Schnipsel "
 "hinzufügen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:445
 msgid ""
 "The ``get_doc_path()`` function is used by the build system to determine the "
 "location of the docs. In this case, they will be located in the ``modules/"
@@ -523,7 +464,6 @@ msgstr ""
 "definieren, wird der Dokumentpfad für Ihr Modul auf das Hauptverzeichnis "
 "``doc/classes`` zurückgesetzt."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:451
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
 "which registered classes belong to the module. You need to list all of your "
@@ -535,7 +475,6 @@ msgstr ""
 "Klassen hier auflisten. Die Klassen, die Sie nicht auflisten, landen im "
 "Hauptverzeichnis ``doc/classes``."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:458
 msgid ""
 "You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
@@ -544,15 +483,12 @@ msgstr ""
 "verpasst haben, indem Sie die nicht verfolgten Dateien mit ``git status`` "
 "überprüfen. Zum Beispiel::"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:463
 msgid "Example output::"
 msgstr "Beispielausgabe:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:475
 msgid "Now we can generate the documentation:"
 msgstr "Jetzt können wir die Dokumentation erstellen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:477
 msgid ""
 "We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
 "which will dump the engine API reference to the given ``<path>`` in XML "
@@ -562,7 +498,6 @@ msgstr ""
 "doctool <Pfad>``, wodurch die Engine-API-Referenz auf den angegebenen "
 "``<Pfad>`` im XML-Format ausgegeben wird."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:480
 msgid ""
 "In our case we'll point it to the root of the cloned repository. You can "
 "point it to an another folder, and just copy over the files that you need."
@@ -571,11 +506,9 @@ msgstr ""
 "Repositorys. Sie können es auf einen anderen Ordner verweisen und einfach "
 "die benötigten Dateien kopieren."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:483
 msgid "Run command:"
 msgstr "Führen Sie den Befehl aus:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:489
 msgid ""
 "Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
 "see that it contains a ``Summator.xml`` file, or any other classes, that you "
@@ -585,7 +518,6 @@ msgstr ""
 "Sie sehen, dass er eine ``Summator.xml``-Datei oder andere Klassen enthält, "
 "auf die Sie in Ihren ``get_doc_classes`` Funktion verwiesen haben."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:493
 msgid ""
 "Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
 "recompile the engine."
@@ -593,7 +525,6 @@ msgstr ""
 "Bearbeiten Sie die Datei(en) gemäß der Anleitung :ref:"
 "`doc_updating_the_class_reference` und kompilieren Sie die Engine neu."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:495
 msgid ""
 "Once the compilation process is finished, the docs will become accessible "
 "within the engine's built-in documentation system."
@@ -601,7 +532,6 @@ msgstr ""
 "Sobald der Kompilierungsprozess abgeschlossen ist, können Sie auf die "
 "Dokumente im integrierten Dokumentationssystem der Engine zugreifen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:498
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
 "modify one of the XML files and recompile the engine from now on."
@@ -609,7 +539,6 @@ msgstr ""
 "Um die Dokumentation auf dem neuesten Stand zu halten, müssen Sie lediglich "
 "eine der XML-Dateien ändern und die Engine von nun an neu kompilieren."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:501
 msgid ""
 "If you change your module's API, you can also re-extract the docs, they will "
 "contain the things that you previously added. Of course if you point it to "
@@ -622,7 +551,6 @@ msgstr ""
 "verlieren, indem Sie ältere Dokumente aus einer älteren Engine extrahieren, "
 "die auf den neueren basiert."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:506
 msgid ""
 "Note that if you don't have write access rights to your supplied ``<path>``, "
 "you might encounter an error similar to the following:"
@@ -631,11 +559,9 @@ msgstr ""
 "ähnelt, wenn Sie keine Schreibzugriffsrechte für Ihren angegebenen "
 "``<Pfad>`` haben:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:518
 msgid "Adding custom editor icons"
 msgstr "Hinzufügen von benutzerdefinierten Editor-Symbolen"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:520
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
@@ -645,7 +571,6 @@ msgstr ""
 "Moduls schreiben, können Sie auch eigene benutzerdefinierte Symbole "
 "erstellen, damit Klassen im Editor angezeigt werden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:523
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
@@ -653,13 +578,11 @@ msgstr ""
 "Informationen zum eigentlichen Erstellen von Editor-Symbolen für die "
 "Integration in die Engine finden Sie zuerst unter :ref:`doc_editor_icons`."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:526
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 "Führen Sie die folgenden Schritte aus, nachdem Sie Ihre Symbole erstellt "
 "haben:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:528
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
@@ -668,14 +591,12 @@ msgstr ""
 "Namen ``icons``. Dies ist der Standardpfad für das Modul, um nach den "
 "Editorsymbolen des Moduls zu suchen."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:531
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 "Verschieben Sie Ihre neu erstellten ``svg`` Symbole (optimiert oder nicht) "
 "in diesen Ordner."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:533
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
@@ -683,7 +604,6 @@ msgstr ""
 "Kompilieren Sie die Engine neu und führen Sie den Editor aus. Jetzt werden "
 "die Symbole gegebenenfalls in der Benutzeroberfläche des Editors angezeigt."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:536
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
@@ -692,21 +612,17 @@ msgstr ""
 "möchten, fügen Sie den folgenden Codeausschnitt zu ``config.py`` hinzu, um "
 "den Standardpfad zu überschreiben:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:545
 msgid "Summing up"
 msgstr "Zusammenfassend"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:547
 msgid "Remember to:"
 msgstr "Nicht vergessen:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:549
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 "Verwenden Sie das Makro ``GDCLASS`` für die Vererbung, damit Godot es "
 "einschließen kann"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:550
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
@@ -714,7 +630,6 @@ msgstr ""
 "Verwenden Sie ``_bind_methods``, um Ihre Funktionen an Skripte zu binden und "
 "sie als Rückrufe für Signale zu verwenden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:553
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
@@ -722,7 +637,6 @@ msgstr ""
 "Aber das ist noch nicht alles, je nachdem, was Sie tun, werden Sie mit "
 "einigen (hoffentlich positiven) Überraschungen begrüßt."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:556
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
@@ -732,7 +646,6 @@ msgstr ""
 "erben, wird Ihre neue Klasse im Editor im Vererbungsbaum im Dialogfeld "
 "\"Knoten hinzufügen\" angezeigt."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:559
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
@@ -741,7 +654,6 @@ msgstr ""
 "angezeigt, und alle offengelegten Eigenschaften können beim Speichern/Laden "
 "serialisiert werden."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:562
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

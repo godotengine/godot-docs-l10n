@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,59 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:4
 msgid "Compiling for iOS"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:9
 msgid "Requirements"
 msgstr "Вимоги"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:11
 msgid ""
 "SCons 3.0+ (you can install it via `Homebrew <https://brew.sh/>`_ or "
 "`MacPorts <https://www.macports.org/>`_, you should be able to run ``scons`` "
 "in a terminal when installed)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:14
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:16
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:20
 msgid "Compiling"
 msgstr "Компілювання"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:22
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:28
 msgid "for a debug build, or:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:34
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:37
 msgid "Alternatively, you can run"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:43
 msgid "for a Simulator executable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:45
 msgid ""
 "For recent devices, Apple requires 64-bit versions of application binaries "
 "when you are uploading to the Apple Store. The best way to provide these is "
@@ -77,7 +65,6 @@ msgid ""
 "every device will be able to run the game."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:48
 msgid ""
 "It can be done in three steps: first compile the 32-bit version, then "
 "compile the 64-bit version and then use ``lipo`` to bundle them into one "
@@ -85,24 +72,20 @@ msgid ""
 "commands:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:59
 msgid ""
 "If you also want to provide a simulator build (reduces the chance of any "
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid "Run"
 msgstr "Запустити"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:73
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:76
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "

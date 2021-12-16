@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Groups"
+msgstr "分组"
+
+msgid ""
+"Groups in Godot work like tags in other software. You can add a node to as "
+"many groups as you want. Then, in code, you can use the SceneTree to:"
+msgstr ""
+
+msgid "Get a list of nodes in a group."
+msgstr ""
+
+msgid "Call a method on all nodes in a group."
+msgstr ""
+
+msgid "Send a notification to all nodes in a group."
+msgstr ""
+
+msgid "This is a useful feature to organize large scenes and decouple code."
+msgstr ""
+
+#, fuzzy
+msgid "Adding nodes to a group"
+msgstr "添加节点"
+
+#, fuzzy
+msgid "There are two ways to add nodes to groups:"
+msgstr "有两种方法可以做到这一点:"
+
+#, fuzzy
+msgid "Using the Node dock in the editor."
+msgstr "使用主题编辑器"
+
+msgid ""
+"Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
+msgstr ""
+
+#, fuzzy
+msgid "Using the Node dock"
+msgstr "使用模块"
+
+msgid ""
+"You can add nodes in the current scene to groups using the Groups tab in the "
+"Node dock."
+msgstr ""
+
+msgid ""
+"Select one or more nodes in the Scene dock and write the group name in the "
+"field, then click Add."
+msgstr ""
+
+msgid "You should now see the group appear."
+msgstr ""
+
+msgid ""
+"In a complex project, you may end up with many groups or large scenes with "
+"many nodes. You can add or remove any node to groups using the Group Editor "
+"window. To access it, click the Manage Groups button."
+msgstr ""
+
+msgid ""
+"The Group Editor window appears. Here's a screenshot from a complex project "
+"to illustrate the tool's purpose."
+msgstr ""
+
+msgid "It has three columns:"
+msgstr ""
+
+msgid "A list of groups used by nodes in the current scene."
+msgstr ""
+
+msgid "A list of nodes that are not part of the selected group."
+msgstr ""
+
+msgid "A list of nodes in the group."
+msgstr ""
+
+msgid ""
+"The fields at the bottom allow you to add new groups or filter nodes in the "
+"second and third columns."
+msgstr ""
+
+msgid ""
+"Any node name that's greyed out means the node was added to the group in a "
+"different scene and you cannot edit it here. This happens on scene instances "
+"in particular."
+msgstr ""
+
+#, fuzzy
+msgid "Using code"
+msgstr "使用 BBCode"
+
+#, fuzzy
+msgid ""
+"You can also manage groups from scripts. The following code adds the node to "
+"which you attach the script to the ``guards`` group as soon as it enters the "
+"scene tree."
+msgstr ""
+"第二种方法是从代码. 下面的脚本会在当前节点出现在场景树中后立即将其添加到 "
+"``enemies`` 编组中."
+
+msgid ""
+"Imagine you're creating an infiltration game. When an enemy spots the "
+"player, you want all guards and robots to be on alert."
+msgstr ""
+
+msgid ""
+"In the fictional example below, we use ``SceneTree.call_group()`` to alert "
+"all enemies that the player was spotted."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The above code calls the function ``enter_alert_mode`` on every member of "
+"the group ``guards``."
+msgstr ""
+"上面的代码在 ``enemies`` 编组的每个成员上调用函数 ``player_was_discovered``."
+
+#, fuzzy
+msgid ""
+"To get the full list of nodes in the ``guards`` group as an array, you can "
+"call :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
+msgstr ""
+"也可以通过调用 :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>` 获得 ``enemies`` 节点的完整列表:"
+
+#, fuzzy
+msgid ""
+"The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
+"methods to interact with scenes, their node hierarchy, and groups. It allows "
+"you to switch scenes easily or reload them, quit the game or pause and "
+"unpause it. It also provides useful signals."
+msgstr ""
+":ref:`SceneTree <class_SceneTree>` 类提供了许多有用的方法, 例如与场景, 其节点"
+"层次结构, 及节点编组交互. 它使您可以轻松切换场景或重新加载场景, 退出游戏或暂"
+"停和取消暂停游戏. 它还有一些有趣的信号, 如果您有空可以详细去查看！"

@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using VisualShaders"
+msgstr "Tworzenie wtyczek"
+
+msgid ""
+"Just as VisualScript is an alternative for users that prefer a graphical "
+"approach to coding, VisualShaders are the visual alternative for creating "
+"shaders."
+msgstr ""
+
+msgid ""
+"As shaders are inherently linked to visuals, the graph-based approach with "
+"previews of textures, materials, etc. offers a lot of additional convenience "
+"compared to purely script-based shaders. On the other hand, VisualShaders do "
+"not expose all features of the shader script and using both in parallel "
+"might be necessary for specific effects."
+msgstr ""
+
+msgid ""
+"If you are not familiar with shaders, start by reading :ref:"
+"`doc_introduction_to_shaders`."
+msgstr ""
+
+#, fuzzy
+msgid "Creating a VisualShader"
+msgstr "Tworzenie motywu"
+
+msgid ""
+"VisualShaders can be created in any :ref:`class_ShaderMaterial`. To begin "
+"using VisualShaders, create a new ``ShaderMaterial`` in an object of your "
+"choice."
+msgstr ""
+
+msgid ""
+"Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property."
+msgstr ""
+
+msgid ""
+"Click on the new ``VisualShader`` resource and the Visual Shader Editor will "
+"open automatically. The layout of the Visual Shader Editor comprises two "
+"parts: the upper toolbar and the graph itself."
+msgstr ""
+
+msgid "From left to right in the toolbar:"
+msgstr ""
+
+msgid ""
+"The ``Add Node`` button displays a popup menu to let you add nodes to the "
+"shader graph."
+msgstr ""
+
+msgid ""
+"The drop-down menu is the shader type: Vertex, Fragment and Light. Like for "
+"script shaders, it defines what built-in nodes will be available."
+msgstr ""
+
+msgid ""
+"The following buttons and number input control the zooming level, grid "
+"snapping and distance between grid lines (in pixels)."
+msgstr ""
+
+msgid ""
+"The last icon shows the generated shader code corresponding to your graph."
+msgstr ""
+
+msgid ""
+"Although VisualShaders do not require coding, they share the same logic with "
+"script shaders. It is advised to learn the basics of both to have a good "
+"understanding of the shading pipeline."
+msgstr ""
+
+msgid ""
+"The visual shader graph is converted to a script shader behind the scene, "
+"and you can see this code by pressing the last button in the toolbar. This "
+"can be convenient to understand what a given node does and how to reproduce "
+"it in scripts."
+msgstr ""
+
+#, fuzzy
+msgid "Using the Visual Shader Editor"
+msgstr "Korzystanie z zewnętrznego edytora tekstu"
+
+msgid ""
+"By default, every new ``VisualShader`` will have an output node. Every node "
+"connection ends at one of the output node's sockets. A node is the basic "
+"unit to create your shader. To add a new node, click on the ``Add Node`` "
+"button on the upper left corner or right click on any empty location in the "
+"graph, and a menu will pop up."
+msgstr ""
+
+#, fuzzy
+msgid "This popup has the following properties:"
+msgstr "HUD wyświetla następujące informacje:"
+
+msgid ""
+"If you right-click on the graph, this menu will be called at the cursor "
+"position and the created node, in that case, will also be placed under that "
+"position; otherwise, it will be created at the graph's center."
+msgstr ""
+
+msgid ""
+"It can be resized horizontally and vertically allowing more content to be "
+"shown. Size transform and tree content position are saved between the calls, "
+"so if you suddenly closed the popup you can easily restore its previous "
+"state."
+msgstr ""
+
+msgid ""
+"The ``Expand All`` and ``Collapse All`` options in the drop-down option menu "
+"can be used to easily list the available nodes."
+msgstr ""
+
+msgid "You can also drag and drop nodes from the popup onto the graph."
+msgstr ""
+
+msgid ""
+"While the popup has nodes sorted in categories, it can seem overwhelming at "
+"first. Try to add some of the nodes, plug them in the output socket and "
+"observe what happens."
+msgstr ""
+
+msgid ""
+"When connecting any ``scalar`` output to a ``vector`` input, all components "
+"of the vector will take the value of the scalar."
+msgstr ""
+
+msgid ""
+"When connecting any ``vector`` output to a ``scalar`` input, the value of "
+"the scalar will be the average of the vector's components."
+msgstr ""
+
+#, fuzzy
+msgid "Visual Shader nodes"
+msgstr "Tworzenie wtyczek"
+
+msgid ""
+"Below are some special nodes that are worth knowing about. The list is not "
+"exhaustive and might be expanded with more nodes and examples."
+msgstr ""
+
+msgid "Expression node"
+msgstr "Węzły ekspresji mogą"
+
+msgid ""
+"The ``Expression`` node allows you to write Godot Shading Language (GLSL-"
+"like) expressions inside your visual shaders. The node has buttons to add "
+"any amount of required input and output ports and can be resized. You can "
+"also set up the name and type of each port. The expression you have entered "
+"will apply immediately to the material (once the focus leaves the expression "
+"text box). Any parsing or compilation errors will be printed to the Output "
+"tab. The outputs are initialized to their zero value by default. The node is "
+"located under the Special tab and can be used in all shader modes."
+msgstr ""
+
+msgid ""
+"The possibilities of this node are almost limitless – you can write complex "
+"procedures, and use all the power of text-based shaders, such as loops, the "
+"``discard`` keyword, extended types, etc. For example:"
+msgstr ""
+
+#, fuzzy
+msgid "Fresnel node"
+msgstr "Tworzenie węzłów"
+
+msgid ""
+"The ``Fresnel`` node is designed to accept normal and view vectors and "
+"produces a scalar which is the saturated dot product between them. "
+"Additionally, you can setup the inversion and the power of equation. The "
+"``Fresnel`` node is great for adding a rim-like lighting effect to objects."
+msgstr ""
+
+#, fuzzy
+msgid "Boolean node"
+msgstr "Operator logiczny lub"
+
+msgid ""
+"The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to "
+"represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. "
+"This property can be used to enable or disable some effect parts with one "
+"click."
+msgstr ""
+
+msgid "If node"
+msgstr ""
+
+msgid ""
+"The ``If`` node allows you to setup a vector which will be returned the "
+"result of the comparison between ``a`` and ``b``. There are three vectors "
+"which can be returned: ``a == b`` (in that case the tolerance parameter is "
+"provided as a comparison threshold – by default it is equal to the minimal "
+"value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
+msgstr ""
+
+#, fuzzy
+msgid "Switch node"
+msgstr "Przełącznik"
+
+msgid ""
+"The ``Switch`` node returns a vector if the boolean condition is ``true`` or "
+"``false``. ``Boolean`` was introduced above. If you convert a vector to a "
+"true boolean, all components of the vector should be above zero."
+msgstr ""
+
+msgid ""
+"The ``Switch`` node is only available on the GLES3 backed. If you are "
+"targeting GLES2 devices, you cannot use ``switch`` statements."
+msgstr ""

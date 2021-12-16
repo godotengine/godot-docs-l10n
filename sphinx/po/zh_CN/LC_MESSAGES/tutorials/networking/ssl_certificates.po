@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:4
 msgid "SSL certificates"
-msgstr "SSL证书"
+msgstr "SSL 证书"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:9
 msgid ""
 "It is often desired to use SSL connections for communications to avoid \"man "
 "in the middle\" attacks. Godot has a connection wrapper, :ref:`StreamPeerSSL "
@@ -37,14 +34,12 @@ msgstr ""
 "器 :ref:`StreamPeerSSL <class_StreamPeerSSL>` , 它可以进行更安全的连接. :ref:"
 "`HTTPClient <class_HTTPClient>` 类也通过使用相同的包装器来支持HTTPS."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:16
 msgid ""
 "Godot includes SSL certificates from Mozilla, but you can provide your own "
 "with a .crt file in the project settings:"
 msgstr ""
 "Godot包括了来自Mozilla的SSL证书, 但你可以在项目设置中用.crt文件提供你自己的:"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:21
 msgid ""
 "This file should contain any number of public certificates in `PEM format "
 "<https://en.wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail>`__."
@@ -52,21 +47,17 @@ msgstr ""
 "该文件应包含任意数量的 `PEM 格式的公共证书 <https://en.wikipedia.org/wiki/"
 "Privacy-enhanced_Electronic_Mail>`__ ."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
 "Of course, remember to add .crt as filter so the exporter recognizes this "
 "when exporting your project."
 msgstr "当然, 请记住将.crt添加为过滤器, 以便导出器在导出项目时识别这一点."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:29
 msgid "There are two ways to obtain certificates:"
 msgstr "获取证书有两种方法:"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:32
 msgid "Approach 1: self signed cert"
-msgstr "方法1: 自签名证书"
+msgstr "方法 1：自签名证书"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:34
 msgid ""
 "The first approach is the simplest: generate a private and public key pair "
 "and add the public key (in PEM format) to the .crt file. The private key "
@@ -75,7 +66,6 @@ msgstr ""
 "第一种方法最简单: 生成一个私钥和公钥对, 并将公钥(PEM格式)添加到.crt文件中. 私"
 "钥应该放到你的服务器上."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""
 "OpenSSL has `some documentation <https://raw.githubusercontent.com/openssl/"
 "openssl/master/doc/HOWTO/keys.txt>`__ about this. This approach also **does "
@@ -86,20 +76,17 @@ msgstr ""
 "master/doc/HOWTO/keys.txt>`__ 谈到这些. 这种方法也 **不需要域名验证** 也不要"
 "求您花费现金从CA购买证书."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:45
 msgid "Approach 2: CA cert"
-msgstr "方法2:CA证书"
+msgstr "方法 2：CA 证书"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:47
 msgid ""
 "The second approach consists of using a certificate authority (CA) such as "
 "Verisign, Geotrust, etc. This is a more cumbersome process, but it's more "
 "\"official\" and ensures your identity is clearly represented."
 msgstr ""
-"第二种方法借助于证书颁发机构(CA), 如Verisign,Geotrust等. 这是一个更加繁琐的过"
-"程, 但它更加 ``正式`` 并且确保您的身份被清晰地表示."
+"第二种方法是借助 Verisign、Geotrust 等证书颁发机构（CA）。这是一个更加繁琐的"
+"过程，但它更加“正式”并且可以确保您的身份被清晰地表示。"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:52
 msgid ""
 "Unless you are working with large companies or corporations, or need to "
 "connect to someone else's servers (i.e., connecting to Google or some other "
@@ -108,7 +95,6 @@ msgstr ""
 "除非你与大公司或企业合作, 或需要连接到别人的服务器(即通过HTTPS连接到谷歌或其"
 "他REST API供应商), 否则这种方法就不那么有用."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:56
 msgid ""
 "Also, when using a CA issued cert, **you must enable domain validation**, to "
 "ensure the domain you are connecting to is the one intended, otherwise any "
@@ -117,19 +103,16 @@ msgstr ""
 "此外, 当使用CA颁发的证书时, **您必须启用域名验证** , 以确保您要连接的域名是您"
 "想连接的域名, 否则一个CA颁发的证书将会成功用到任意数量的网站中."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:61
 msgid ""
 "If you are using Linux, you can use the supplied certs file, generally "
 "located in:"
 msgstr "如果您使用的是Linux, 则可以使用系统提供的证书文件, 通常位于:"
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:68
 msgid ""
 "This file allows HTTPS connections to virtually any website (i.e., Google, "
 "Microsoft, etc.)."
 msgstr "此文件允许HTTPS连接到几乎任何网站(即Google,Microsoft等)."
 
-#: ../../docs/tutorials/networking/ssl_certificates.rst:71
 msgid ""
 "Or pick any of the more specific certificates there if you are connecting to "
 "a specific one."

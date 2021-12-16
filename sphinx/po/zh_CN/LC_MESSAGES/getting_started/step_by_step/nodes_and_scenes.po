@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Nodes and Scenes"
+msgstr "节点和资源"
+
+msgid ""
+"In :ref:`doc_key_concepts_overview`, we saw that a Godot game is a tree of "
+"scenes and that each scene is a tree of nodes. In this lesson, we explain a "
+"bit more about them. You will also create your first scene."
+msgstr ""
+
+msgid "Nodes"
+msgstr "节点"
+
+msgid ""
+"**Nodes are the fundamental building blocks of your game**. They are like "
+"the ingredients in a recipe. There are dozens of kinds that can display an "
+"image, play a sound, represent a camera, and much more."
+msgstr ""
+
+#, fuzzy
+msgid "All nodes have the following attributes:"
+msgstr "有以下注意事项:"
+
+#, fuzzy
+msgid "A name."
+msgstr "名称"
+
+#, fuzzy
+msgid "Editable properties."
+msgstr "具有可编辑的属性."
+
+#, fuzzy
+msgid "They receive callbacks to update every frame."
+msgstr "可以接收回调以处理每个帧."
+
+#, fuzzy
+msgid "You can extend them with new properties and functions."
+msgstr "可以被扩展(以具有更多功能)."
+
+#, fuzzy
+msgid "You can add them to another node as a child."
+msgstr "可以作为子节点被添加到其他节点上."
+
+msgid ""
+"The last attribute is key. **Together, nodes form a tree**, which is a "
+"powerful feature to organize projects. Since different nodes have different "
+"functions, combining them produces more complex behavior. As we saw before, "
+"you can build a playable character the camera follows using a kinematic body "
+"node named \"Character\", a sprite node, a camera node, and a collision "
+"shape node."
+msgstr ""
+
+msgid "Scenes"
+msgstr "场景"
+
+msgid ""
+"When you organize nodes in a tree, like our character, we call this "
+"construct a scene. Once saved, scenes work like new node types in the "
+"editor, where you can add them as a child of an existing node. In that case, "
+"the instance of the scene appears as a single node with its internals hidden."
+msgstr ""
+
+msgid ""
+"Scenes allow you to structure your game's code however you want. You can "
+"**compose nodes** to create custom and complex node types, like a game "
+"character that runs and jumps, a life bar, a chest with which you can "
+"interact, and more."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The Godot editor essentially is a **scene editor**. It has plenty of tools "
+"for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
+"can contain as many of these scenes as you need. The engine only requires "
+"one as your application's **main scene**. This is the scene Godot will first "
+"load when you or a player runs the game."
+msgstr ""
+"本质上,Godot编辑器就是一个 **场景编辑器** . 它有很多用于编辑2D和3D场景以及用"
+"户界面的工具, 但是编辑器是基于编辑场景及构成场景的节点的概念的."
+
+msgid "On top of acting like nodes, scenes have the following attributes:"
+msgstr ""
+
+msgid "They always have one root node, like the \"Character\" in our example."
+msgstr ""
+
+msgid "You can save them to your hard drive and load them later."
+msgstr ""
+
+msgid ""
+"You can create as many instances of a scene as you'd like. You could have "
+"five or ten characters in your game, created from your Character scene."
+msgstr ""
+
+#, fuzzy
+msgid "Creating your first scene"
+msgstr "创造第一个武器"
+
+msgid ""
+"Let's create our first scene with a single node. To do so, you will need to "
+"create a new project first. After opening the project, you should see an "
+"empty editor."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In an empty scene, the Scene dock on the left shows several options to add a "
+"root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
+"Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
+"lets you select any node. It is equivalent to pressing the \"Add Child Node"
+"\" button. These presets are here for convenience; they are not mandatory."
+msgstr ""
+"在(没有根节点的)空场景中, 场景面板会显示一些快速添加根节点的选项.\"2D 场景"
+"\"会添加 Node2D 节点,\"3D 场景\"会添加 Spatial 节点,\"用户界面\" 会添加 "
+"Control 节点,\"自定义节点\" 则会让你自己选择节点类型(和点击 \"添加子节点\" 按"
+"钮的效果是一致的). 点击星形按钮可以切换是否显示收藏的节点."
+
+msgid ""
+"We're going to add a single Label node to our scene. Its function is to draw "
+"text on the screen."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Press the \"Add Child Node\" button at the top left of the Scene dock to "
+"create a node. This button adds the chosen node as a child of the currently "
+"selected one or, in an empty scene, as the root."
+msgstr ""
+"为此, 我们需要添加 Label(标签)节点. 点击场景面板左上角的 \"添加子节点\" 按钮"
+"(加号图标). 这是往场景中添加新节点的主要方式, 会把新建的节点加到当前所选节点"
+"下, 成为其子节点(如果是空场景, 新建节点则会成为根节点)."
+
+#, fuzzy
+msgid "The Create Node dialog opens, showing the long list of available nodes."
+msgstr "这将会打开创建节点对话框, 展示了一长串能够被创建的节点列表:"
+
+msgid "Select the Label node. You can type its name to filter down the list."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Click on the Label node to select it and click the Create button at the "
+"bottom of the window."
+msgstr "单击TileSet属性,\"TileSet\" 面板将在编辑器窗口底部打开:"
+
+msgid ""
+"A lot happens when you add a scene's first node. The scene changes to the 2D "
+"workspace because Label is a 2D node type. The Label appears, selected, in "
+"the top-left corner of the viewport. The node appears in the Scene dock on "
+"the left, and the node's properties appear in the Inspector dock on the "
+"right."
+msgstr ""
+
+#, fuzzy
+msgid "Changing a node's properties"
+msgstr "信号和属性"
+
+#, fuzzy
+msgid ""
+"The next step is to change the Label's \"Text\" property. Let's change it to "
+"\"Hello World\"."
+msgstr ""
+"下一步就是去改变标签的 \"Text\" 属性了, 我们来把它改成 \"Hello,World!\":"
+
+msgid ""
+"Head to the Inspector dock on the right of the viewport. Click inside the "
+"field below the Text property and type \"Hello World\"."
+msgstr ""
+
+msgid "You will see the text draw in the viewport as you type."
+msgstr ""
+
+msgid ""
+"You can move your Label node in the viewport by selecting the move tool in "
+"the toolbar."
+msgstr ""
+
+msgid ""
+"With the Label selected, click and drag anywhere in the viewport to move it "
+"to the center of the view delimited by the rectangle."
+msgstr ""
+
+#, fuzzy
+msgid "Running the scene"
+msgstr "运行游戏"
+
+#, fuzzy
+msgid ""
+"Everything's ready to run the scene! Press the Play Scene button in the top-"
+"right of the screen or press :kbd:`F6`."
+msgstr ""
+"好了, 一切都已准备就绪, 可以来运行场景了！在顶栏按下 PLAY SCENE按钮(或按 :"
+"kbd:`F6` ):"
+
+msgid "A popup invites you to save the scene, which is required to run it."
+msgstr ""
+
+msgid ""
+"Click the Yes button, and in the file browser that appears, press the Save "
+"button to save it as \"Label.tscn\"."
+msgstr ""
+
+msgid ""
+"The Save Scene As dialog, like other file dialogs in the editor, only allows "
+"you to save files inside the project. The ``res://`` path at the top of the "
+"window represents the project's root directory and stands for \"resource path"
+"\". For more information about file paths in Godot, see :ref:"
+"`doc_filesystem`."
+msgstr ""
+
+msgid ""
+"The application should open in a new window and display the text \"Hello "
+"World\"."
+msgstr ""
+
+msgid "Close the window or press :kbd:`F8` to quit the running scene."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to Project -> Project Settings -> Display -> Window "
+"then enable Allow Hidpi under Dpi."
+msgstr ""
+"如果这不能立即生效, 而且你至少有一台显示器上有高DPI显示, 请进入 **Project → "
+"Project Settings → Display → Window** , 然后在 **Dpi** 下启用 **Allow "
+"Hidpi** ."
+
+#, fuzzy
+msgid "Setting the main scene"
+msgstr "设置主场景"
+
+msgid ""
+"To run our test scene, we used the Play Scene button. Another button next to "
+"it allows you to set and run the project's main scene. You can press :kbd:"
+"`F5` to do so."
+msgstr ""
+
+msgid "A popup window appears and invites you to select the main scene."
+msgstr ""
+
+msgid ""
+"Click the Select button, and in the file dialog that appears, double click "
+"on Label.tscn."
+msgstr ""
+
+msgid ""
+"The demo should run again. Moving forward, every time you run the project, "
+"Godot will use this scene as a starting point."
+msgstr ""
+
+msgid ""
+"The editor saves the main scene's path in a project.godot file in your "
+"project's directory. While you can edit this text file directly to change "
+"project settings, you can also use the \"Project -> Project Settings\" "
+"window to do so."
+msgstr ""
+
+msgid ""
+"In the next part, we will discuss another key concept in games and in Godot: "
+"creating instances of a scene."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
 msgstr "キネマティックキャラクター(2D)"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
 msgid ""
 "Yes, the name sounds strange. \"Kinematic Character\". What is that? The "
 "reason for the name is that, when physics engines came out, they were called "
@@ -46,7 +43,6 @@ msgstr ""
 "1つがありますが、それを使用するには、かなりのレベルのスキルと物理エンジンの理"
 "解(または試行錯誤の忍耐)が必要です。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
 msgid ""
 "Some physics engines, such as Havok seem to swear by dynamic character "
 "controllers as the best option, while others (PhysX) would rather promote "
@@ -56,11 +52,9 @@ msgstr ""
 "ターコントローラーに誓いをたてているように見えますが、他の物理エンジン(PhysX)"
 "は、むしろキネマティックコントローラーを促進します。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
 msgstr "だから、違いは何ですか？:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
 msgid ""
 "A **dynamic character controller** uses a rigid body with an infinite "
 "inertia tensor. It's a rigid body that can't rotate. Physics engines always "
@@ -80,7 +74,6 @@ msgstr ""
 "必要とする可能性があるため、いくつかの衝突はわずかにずれているように見える場"
 "合があります。 これらの問題は修正できますが、ある程度のスキルが必要です。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:34
 msgid ""
 "A **kinematic character controller** is assumed to always begin in a non-"
 "colliding state, and will always move to a non-colliding state. If it starts "
@@ -97,7 +90,6 @@ msgstr ""
 "す。 ただし、欠点としては、コードで手動で行わない限り、他の物理オブジェクトと"
 "直接やり取りすることはできません。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:42
 msgid ""
 "This short tutorial will focus on the kinematic character controller. "
 "Basically, the old-school way of handling collisions (which is not "
@@ -108,11 +100,9 @@ msgstr ""
 "当てます。 基本的に、衝突を処理する昔ながらの方法です(内部では必ずしも単純で"
 "はないが、よく隠されており、素晴らしくシンプルなAPIとして提示されています)。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
 msgstr "\\ Physics process"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:50
 msgid ""
 "To manage the logic of a kinematic body or character, it is always advised "
 "to use physics process, because it's called before physics step and its "
@@ -128,11 +118,9 @@ msgstr ""
 "で機能します。フレームレートが高すぎたり低すぎたりするとスパイクが発生した"
 "り、精度が低下したりします。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
 msgid "Scene setup"
 msgstr "シーンの設定"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:81
 msgid ""
 "To have something to test, here's the scene (from the tilemap tutorial): :"
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
@@ -142,7 +130,6 @@ msgstr ""
 "download:`kbscene.zip <files / kbscene.zip>`\\ 。 キャラクターの新しいシーン"
 "を作成します。 ロボットスプライトを使用して、次のようなシーンを作成します:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:87
 msgid ""
 "You'll notice that there's a warning icon next to our CollisionShape2D node; "
 "that's because we haven't defined a shape for it. Create a new CircleShape2D "
@@ -153,7 +140,6 @@ msgstr ""
 "ないためです。 CollisionShape2Dのshapeプロパティで新しいCircleShape2Dを作成し"
 "ます。 <CircleShape2D>をクリックしてオプションに移動し、半径を30に設定します:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:94
 msgid ""
 "**Note: As mentioned before in the physics tutorial, the physics engine "
 "can't handle scale on most types of shapes (only collision polygons, planes "
@@ -167,7 +153,6 @@ msgstr ""
 "変更してください。スケールが形状のスケールに影響するため、同じことがキネマ"
 "ティック/リジッド/スタティックボディ自体にも当てはまります。**"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:101
 msgid ""
 "Now, create a script for the character, the one used as an example above "
 "should work as a base."
@@ -175,7 +160,6 @@ msgstr ""
 "ここで、キャラクターのスクリプトを作成します。上記の例として使用したスクリプ"
 "トがベースとして機能するはずです。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:104
 msgid ""
 "Finally, instance that character scene in the tilemap, and make the map "
 "scene the main one, so it runs when pressing play."
@@ -183,11 +167,9 @@ msgstr ""
 "最後に、タイルマップでそのキャラクターシーンをインスタンス化し、マップシーン"
 "をメインのシーンにします。再生を押すと実行されます。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:110
 msgid "Moving the kinematic character"
 msgstr "キネマティック キャラクタの移動"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:112
 msgid ""
 "Go back to the character scene, and open the script, the magic begins now! "
 "Kinematic body will do nothing by default, but it has a useful function "
@@ -204,11 +186,9 @@ msgstr ""
 "て取り、その運動を キネマティックボディに適用しようとします。 衝突が発生した"
 "場合、衝突の瞬間に停止します。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:120
 msgid "So, let's move our sprite downwards until it hits the floor:"
 msgstr "それでは、スプライトが床に当たるまで下に移動しましょう:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:144
 msgid ""
 "The result is that the character will move, but stop right when hitting the "
 "floor. Pretty cool, huh?"
@@ -216,7 +196,6 @@ msgstr ""
 "その結果、キャラクターは移動しますが、床に当たるとすぐに停止します。 かなり"
 "クールですね？"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:147
 msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
 "little more like a regular game character:"
@@ -224,7 +203,6 @@ msgstr ""
 "次のステップでは、ミックスに重力を追加します。これにより、通常のゲームキャラ"
 "クターのように動作します:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:183
 msgid ""
 "Now the character falls smoothly. Let's make it walk to the sides, left and "
 "right when touching the directional keys. Remember that the values being "
@@ -234,15 +212,12 @@ msgstr ""
 "ましょう。(少なくとも速度の場合)使用されている値はピクセル/秒であることに注意"
 "してください。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:187
 msgid "This adds simple walking support by pressing left and right:"
 msgstr "これにより、左右キーを押すことで簡単な歩行サポートが追加されます:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:252
 msgid "And give it a try."
 msgstr "そして、それを試してみてください。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid ""
 "This is a good starting point for a platformer. A more complete demo can be "
 "found in the demo zip distributed with the engine, or in the https://github."

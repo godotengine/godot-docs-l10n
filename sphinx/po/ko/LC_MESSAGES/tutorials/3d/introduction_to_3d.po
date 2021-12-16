@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
 msgstr "3D 소개"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 #, fuzzy
 msgid ""
 "Creating a 3D game can be challenging. That extra Z coordinate makes many of "
@@ -39,7 +37,6 @@ msgstr ""
 "니다. 실제로 3D 플랫포머 튜토리얼 또는 2D 튜토리얼과 거의 동일한 3D "
 "kinematic 튜토리얼을 검토할 만합니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
 "In 3D, math is a little more complex than in 2D, so also checking the :ref:"
 "`doc_vector_math` entry in the wiki (which was especially created for game "
@@ -50,11 +47,9 @@ msgstr ""
 "나 엔지니어가 아닌 게임 개발자를 위해 만들어진 것)을 확인하는 것도 3D 게임을 "
 "효율적으로 개발할 수 있는 길을 닦는 데 도움이 될 것입니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 #, fuzzy
 msgid ""
 ":ref:`Node2D <class_Node2D>` is the base node for 2D. :ref:`Control "
@@ -66,7 +61,6 @@ msgstr ""
 "<class_Control>` 는 모든 GUI의 기본 노드입니다. 이러한 추론에 따라 3D 엔진은 "
 "모든 3D에 :ref:`Spatial <class_Spatial>` 를 사용합니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 #, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
@@ -80,11 +74,9 @@ msgstr ""
 "<class_Transform>` 또는 위치, 오일러 회전 (x,y 와 z 각도) 그리고 스케일을 나"
 "타내는 세 :ref:`Vector3 <class_Vector3>` 로 접근할 수 있습니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 #, fuzzy
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
@@ -98,11 +90,9 @@ msgstr ""
 "로 만들고 교환 파일 형식으로 내보내야 합니다(3D 형식이 이미지만큼 표준화되지 "
 "않음)."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
@@ -114,7 +104,6 @@ msgstr ""
 "(skeletal rigs), 모양 혼합(blend shapes) 등을 포함한 전체 씬을 (DCC에서 보이"
 "는 것과 같이) 가져옵니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
 "The second pipeline is by importing simple .OBJ files as mesh resources, "
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
@@ -124,11 +113,9 @@ msgstr ""
 "는 디스플레이를 위해 :ref:`MeshInstance <class_MeshInstance>` 노드에 넣을 수"
 "도 있습니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 #, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
@@ -146,7 +133,6 @@ msgstr ""
 "를 이용할 수 있습니다. 더 간단한 API와 indexing, generating normals, "
 "tangents 등을 위한 도우미를 제공합니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
@@ -156,11 +142,9 @@ msgstr ""
 "입니다. 정점 배열을 만들고 3D API에 배열을 제출하는 것은 상당한 성능 비용이 "
 "있습니다"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
 msgstr "즉각적인 지오메트리(Immediate geometry)"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 #, fuzzy
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
@@ -173,11 +157,9 @@ msgstr ""
 "공하는 특수 노드 :ref:`ImmediateGeometry <class_ImmediateGeometry>` 를 제공합"
 "니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 #, fuzzy
 msgid ""
 "While Godot packs a powerful 2D engine, many types of games use 2D in a 3D "
@@ -194,18 +176,15 @@ msgstr ""
 "명/그림자(lighting/shadow) 효과 등을 혼합하는 이점을 가진 2D 게임들을 만드는"
 "데 사용할 수 있습니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
 "The disadvantage is, of course, that added complexity and reduced "
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
 "Besides editing a scene, it is often common to edit the environment. Godot "
 "provides a :ref:`WorldEnvironment <class_WorldEnvironment>` node that allows "
@@ -214,17 +193,14 @@ msgid ""
 "overridden in the Camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
 "Default 3D scene navigation controls are similar to Blender (aiming to have "
 "some sort of consistency in the free software pipeline..), but options are "
@@ -232,11 +208,9 @@ msgid ""
 "tools in the Editor Settings:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything. 3D Physics and other areas are tuned for this, so "
@@ -244,7 +218,6 @@ msgid ""
 "what you are doing)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -254,7 +227,6 @@ msgid ""
 "scale!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
 "The Y coordinate is used for \"up\", though for most objects that need "
 "alignment (like lights, cameras, capsule collider, vehicle, etc.), the Z "
@@ -262,23 +234,18 @@ msgid ""
 "means that:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:152
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X, Y, Z "
@@ -287,68 +254,55 @@ msgid ""
 "etc.)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr "뷰 옵션은 뷰포트의 툴바에서 \"보기\" 메뉴에 의해 제어됩니다."
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
 "Given how physically based rendering works, it is advised to always try to "
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
 "No matter how many objects are placed in the 3D space, nothing will be "
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
 "Cameras are associated with (and only display to) a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -357,37 +311,31 @@ msgid ""
 "display."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
 "If no cameras are present in the scene tree, the first one that enters it "
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
 "If a camera has the \"*current*\" property set, it will be used regardless "
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
 msgstr "빛(Lights)"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:225
 msgid ""
 "Godot has a limit of up to 8 lights per mesh. Aside from that, there is no "
 "limitation on the number of lights, nor of types of lights, in Godot. As "

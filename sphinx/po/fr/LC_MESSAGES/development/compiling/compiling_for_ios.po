@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:4
 msgid "Compiling for iOS"
 msgstr "Compiler pour iOS"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:9
 msgid "Requirements"
 msgstr "Pré-requis"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:11
 msgid ""
 "SCons 3.0+ (you can install it via `Homebrew <https://brew.sh/>`_ or "
 "`MacPorts <https://www.macports.org/>`_, you should be able to run ``scons`` "
@@ -35,14 +32,12 @@ msgstr ""
 "`MacPorts <https://www.macports.org/>`_, vous devriez pouvoir exécuter "
 "``scons`` dans un terminal une fois installé)."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:14
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
 msgstr ""
 "Xcode 10.0 (ou plus récent) avec le SDK iOS (10.0) et les outils en ligne de "
 "commande."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:16
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -50,20 +45,16 @@ msgstr ""
 "Pour un aperçu général de l'utilisation de SCons pour Godot, voir :ref:"
 "`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:20
 msgid "Compiling"
 msgstr "Compilation"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:22
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 "Ouvrez un terminal, allez à la racine du code source du moteur et tapez :"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:28
 msgid "for a debug build, or:"
 msgstr "pour une construction de débogage, ou :"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:34
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
@@ -71,15 +62,12 @@ msgstr ""
 "pour une construction(build) release (vérifiez ``platform/iphone/detect.py`` "
 "pour les drapeaux du compilateur utilisés pour chaque configuration)."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:37
 msgid "Alternatively, you can run"
 msgstr "Alternativement, vous pouvez exécuter"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:43
 msgid "for a Simulator executable."
 msgstr "pour un Simulateur exécutable."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:45
 msgid ""
 "For recent devices, Apple requires 64-bit versions of application binaries "
 "when you are uploading to the Apple Store. The best way to provide these is "
@@ -92,7 +80,6 @@ msgstr ""
 "existe des binaires 32 bits et 64 bits, afin que chaque appareil puisse "
 "exécuter le jeu."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:48
 msgid ""
 "It can be done in three steps: first compile the 32-bit version, then "
 "compile the 64-bit version and then use ``lipo`` to bundle them into one "
@@ -104,7 +91,6 @@ msgstr ""
 "regrouper en un binaire \"universel\". Toutes ces étapes peuvent être "
 "effectuées à l'aide des commandes suivantes :"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:59
 msgid ""
 "If you also want to provide a simulator build (reduces the chance of any "
 "linker errors with dependencies), you'll need to build and lipo the "
@@ -114,11 +100,9 @@ msgstr ""
 "chances d'erreurs de liaisons avec les dépendances), vous devrez construire "
 "et lipo l'architecture ``x86_64`` également."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid "Run"
 msgstr "Lancer"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:73
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
@@ -126,7 +110,6 @@ msgstr ""
 "Pour exécuter sur un appareil ou un simulateur, suivez ces instructions : :"
 "ref:`doc_exporting_for_ios`."
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:76
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "

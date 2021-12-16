@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
 msgid "Spatial gizmo plugins"
 msgstr "空间变换轴插件"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 msgid "Introduction"
 msgstr "前言"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:9
 msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
@@ -33,7 +30,6 @@ msgstr ""
 "Spatial gizmo[空间辅助线框]插件是由编辑器和自定义插件来定义附加到任何类型的"
 "Spatial节点的辅助线框."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
 "This tutorial will show you the two main approaches to defining your own "
 "custom gizmos. The first option works well for simple gizmos and creates "
@@ -44,19 +40,16 @@ msgstr ""
 "的辅助线框来说效果很好, 并且在你的插件结构中较少的混乱, 而第二种方法将让你存"
 "储每个辅助线框的一些数据."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page."
 msgstr ""
-"本教程假设您已经知道如何制作通用插件. 如有疑问, 请参阅 : 参考:`文档_制作插件"
-"` 页面."
+"本教程假设您已经知道如何制作通用插件。如有疑问，请参阅 :ref:"
+"`doc_making_plugins` 页面。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
 msgid "The EditorSpatialGizmoPlugin"
 msgstr "编辑器空间变换轴插件"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
 msgid ""
 "Regardless of the approach we choose, we will need to create a new :ref:"
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>`. This will allow "
@@ -67,11 +60,9 @@ msgstr ""
 "<class_EditorSpatialGizmoPlugin>` . 我们可以为新建的变换轴类型设置名称并定义"
 "其他行为, 比如是否可以隐藏."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
 msgid "This would be a basic setup:"
 msgstr "这是一个基本设置:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:59
 msgid ""
 "For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
 "<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
@@ -82,11 +73,9 @@ msgstr ""
 "<class_EditorSpatialGizmoPlugin>` 就足够了. 如果你想存储每个线框的一些数据, "
 "或者你要把一个Godot 3.0的线框移植到3.1+, 你应该选择第二种方法."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid "Simple approach"
 msgstr "简单方法"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:67
 msgid ""
 "The first step is to, in our custom gizmo plugin, override the :ref:"
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
@@ -96,7 +85,6 @@ msgstr ""
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` 方法, 当空间参"
 "数为目标类型时, 它将返回 ``true`` ."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:81
 msgid ""
 "Then we can override methods like :ref:"
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
@@ -106,7 +94,6 @@ msgstr ""
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` 的方法, 或所有与句柄"
 "相关的方法."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:115
 msgid ""
 "Note that we created a material in the `_init` method, and retrieved it in "
 "the `redraw` method using :ref:"
@@ -118,48 +105,42 @@ msgstr ""
 "`get_material()<class_EditorSpatialGizmoPlugin_method_get_material>` 取得它. "
 "该方法根据变换轴的状态(选择中和/或可编辑)来获取材质的变体."
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:120
 msgid "So the final plugin would look somewhat like this:"
 msgstr "您最后的场景应该是这样的:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:161
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
 "working handles."
 msgstr ""
-"注意, 我们只是在重绘方法中添加了一些句柄, 但是我们仍然需要在: 参考:` 编辑器空"
-"间变换轴插件 <类_编辑器空间变换轴插件>` 中实现其他与句柄相关的回调, 以获得正"
-"确的工作句柄."
+"注意，我们只是在重绘方法中添加了一些句柄，但是我们仍然需要在 :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` 中实现其他与句柄"
+"相关的回调，以获得正确的工作句柄。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:166
 msgid "Alternative approach"
 msgstr "替代方法"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:168
 msgid ""
 "In some cases we want to provide our own implementation of :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
 "have some state stored in each gizmo or because we are porting an old gizmo "
 "plugin and we don't want to go through the rewriting process."
 msgstr ""
-"在某些情况下, 我们希望提供自己的: 参考:` 编辑器空间变换轴 <类_编辑器空间变换"
-"轴>` 实现, 也许是因为我们想要在每个变换轴中存储一些状态, 或者正在移植一个旧的"
-"变换轴插件, 而不想经历重写过程."
+"在某些情况下，我们希望提供自己的 :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>` 实现，也许是因为我们想要在每个"
+"变换轴中存储一些状态，或者正在移植一个旧的变换轴插件，而不想经历重写过程。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:172
 msgid ""
 "In these cases all we need to do is, in our new gizmo plugin, override :ref:"
 "`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
 "returns our custom gizmo implementation for the Spatial nodes we want to "
 "target."
 msgstr ""
-"在这些情况下, 我们需要做的就是在我们的新变换轴插件中覆盖: 参考:`创建变换轴()<"
-"类_编辑器空间变换轴插件_方法_创建变换轴>`, 因此它返回我们想要实现的目标空间节"
-"点的自定义变换轴."
+"在这些情况下，我们需要做的就是在我们的新变换轴插件中覆盖 :ref:"
+"`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`，因此它"
+"返回我们想要实现的目标空间节点的自定义变换轴。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:197
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "class extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
@@ -167,13 +148,12 @@ msgstr ""
 "这样, 所有的gizmo逻辑和绘图方法都可以在一个新的类中实现, 扩展为 :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>` , 像这样:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:235
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
 "handles."
 msgstr ""
-"请注意, 我们刚刚在重绘方法中添加了一些句柄, 但我们仍然需要在: 参考:` 编辑器空"
-"间变换轴 <类_编辑器空间变换轴>` 中实现其余的与句柄相关的回调, 以获得正确工作"
-"的句柄."
+"请注意，我们刚刚在重绘方法中添加了一些句柄，但我们仍然需要在 :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>` 中实现其余的与句柄相关的回调，"
+"以获得正确工作的句柄。"

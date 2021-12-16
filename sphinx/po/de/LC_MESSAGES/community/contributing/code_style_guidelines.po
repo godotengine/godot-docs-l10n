@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:4
 msgid "Code style guidelines"
 msgstr "Richtlinien für den Codestil"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:8
 msgid ""
 "When contributing to Godot's source code, you will be expected to follow the "
 "style guidelines outlined below. Some of them are checked via the Continuous "
@@ -36,11 +34,9 @@ msgstr ""
 "daher am besten wie unten beschrieben ein, um sicherzustellen, dass alle "
 "Ihre Commits den Richtlinien entsprechen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:15
 msgid "C++ and Objective-C"
 msgstr "C++ und Objective-C"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:17
 msgid ""
 "There are no written guidelines, but the code style agreed upon by the "
 "developers is enforced via the `clang-format <http://clang.llvm.org/docs/"
@@ -53,18 +49,15 @@ msgstr ""
 "Compiler-Frontend), das für Sie alle unsere Konventionen berücksichtigt. Um "
 "nur einige zu nennen:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:22
 msgid ""
 "Indentation and alignment are both tab based (respectively one and two tabs)"
 msgstr ""
 "Einrückung und Ausrichtung sind beide Tabulatorbasiert (jeweils ein und zwei "
 "Tabulatoren)"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:23
 msgid "One space around math and assignments operators as well as after commas"
 msgstr "Ein Leerzeichen um Mathe- und Zuweisungsoperatoren sowie nach Kommas"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:24
 msgid ""
 "Pointer and reference operators are affixed to the variable identifier, not "
 "to the type name"
@@ -72,11 +65,9 @@ msgstr ""
 "Zeiger- und Referenzoperatoren werden an die Variablenkennung und nicht an "
 "den Typnamen angehängt"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:26
 msgid "See further down regarding header includes"
 msgstr "Weitere Informationen zu Header-Includes finden Sie weiter unten"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
 "The rules used by clang-format are outlined in the `.clang-format <https://"
 "github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
@@ -86,7 +77,6 @@ msgstr ""
 "<https://github.com/godotengine/godot/blob/master/.clang-format>`__ des "
 "Godot-Repositorys beschrieben."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:32
 msgid ""
 "As long as you ensure that your style matches the surrounding code and that "
 "you not introducing trailing whitespace or space-based indentation, you "
@@ -101,7 +91,6 @@ msgstr ""
 "clang-format lokal einzurichten, um alle Ihre Commits zu prüfen und "
 "automatisch zu korrigieren."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:37
 msgid ""
 "Godot's code style should *not* be applied to third-party code, i.e. that is "
 "included in Godot's source tree but was not written specifically for our "
@@ -116,7 +105,6 @@ msgstr ""
 "(oder deren Fehlen), und wir wollen keine Unterschiede einführen, die eine "
 "Synchronisation mit Upstream-Repositories erschweren würden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:44
 msgid ""
 "Third-party code is usually included in the ``thirdparty/`` folder and can "
 "thus easily be excluded from formatting scripts. For the rare cases where a "
@@ -131,11 +119,15 @@ msgstr ""
 "Sie ``/* clang-format off */`` und ``/* clang-format on */`` verwenden, um "
 "clang-format anzuweisen, ein Stück Code zu ignorieren."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:52
+msgid ""
+"These guidelines only cover code formatting. See :ref:"
+"`doc_cpp_usage_guidelines` for a list of language features that are "
+"permitted in pull requests."
+msgstr ""
+
 msgid "Using clang-format locally"
 msgstr "Lokale Verwendung des Clang-Formats"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:54
 #, fuzzy
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
@@ -149,16 +141,12 @@ msgstr ""
 "Bugs, die Formatierungsänderungen an der aktuellen Codebasis verursachen "
 "werden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:60
-#: ../../docs/community/contributing/code_style_guidelines.rst:261
 msgid "Installation"
 msgstr "Installation"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
 msgstr "So wird das Clang-Format installiert:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:64
 msgid ""
 "Linux: It will usually be available out-of-the-box with the clang toolchain "
 "packaged by your distribution. If your distro version is not the required "
@@ -173,7 +161,6 @@ msgstr ""
 "Sie ein Debian-Derivat verwenden, benutzen Sie die `upstream repos <http://"
 "apt.llvm.org/>`__."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
 "macOS and Windows: You can download precompiled binaries from the `LLVM "
 "website <http://releases.llvm.org/download.html>`__. You may need to add the "
@@ -186,19 +173,15 @@ msgstr ""
 "Umgebungsvariablen ``PATH`` Ihres Systems hinzufügen, um ``clang-format`` "
 "direkt aufrufen zu können."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
 msgstr ""
 "Sie haben dann verschiedene Möglichkeiten, das Clang-Format auf Ihre "
 "Änderungen anzuwenden:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:77
-#: ../../docs/community/contributing/code_style_guidelines.rst:273
 msgid "Manual usage"
 msgstr "Manuelle Verwendung"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:79
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
@@ -206,7 +189,6 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie eine oder mehrere Dateien manuell im "
 "Clang-Format anwenden:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
 "``-i`` means that the changes should be written directly to the file (by "
 "default clang-format would only output the fixed version to the terminal)."
@@ -215,7 +197,6 @@ msgstr ""
 "sollen (standardmäßig würde clang-format nur die fixierte Version in das "
 "Terminal ausgeben)."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:88
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell. Be careful when globbing so that you "
@@ -228,12 +209,9 @@ msgstr ""
 "Dateien) anwenden, die sich in Godots Baum befinden. Verwenden Sie also "
 "lieber ``core/*.{cpp,h}`` als ``core/*``."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:94
-#: ../../docs/community/contributing/code_style_guidelines.rst:288
 msgid "Pre-commit hook"
 msgstr "Pre-Commit-Hook"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:96
 msgid ""
 "For ease of use, we provide a pre-commit hook for Git that will run clang-"
 "format automatically on all your commits to check them, and let you apply "
@@ -243,7 +221,6 @@ msgstr ""
 "format automatisch auf alle Ihre Commits anwendet, um sie zu prüfen, und Sie "
 "die Änderungen in den endgültigen Commit übernehmen lässt."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
 "that folder's README.md for installation instructions."
@@ -251,7 +228,6 @@ msgstr ""
 "Dieser \"Hook\" ist ein Skript, das in ``misc/hooks`` zu finden ist, lesen "
 "Sie die README.md dieses Ordners für die Installationsanweisungen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:103
 msgid ""
 "If your clang-format is not in the ``PATH``, you may have to edit the ``pre-"
 "commit-clang-format`` to point to the correct binary for it to work. The "
@@ -264,11 +240,9 @@ msgstr ""
 "Linux und macOS getestet, sollte aber auch in der Git-Shell unter Windows "
 "funktionieren."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:109
 msgid "IDE plugin"
 msgstr "IDE Plugin"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:111
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example each time you save a file."
@@ -277,13 +251,11 @@ msgstr ""
 "die so konfiguriert werden können, dass das Clang-Format automatisch "
 "ausgeführt wird, beispielsweise jedes Mal, wenn Sie eine Datei speichern."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:114
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
 msgstr ""
 "Hier ist eine unvollständige Liste von Verschönerungs-Plugins für einige "
 "IDEs:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
@@ -291,7 +263,6 @@ msgstr ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
@@ -299,7 +270,6 @@ msgstr ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:118
 msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
@@ -307,21 +277,23 @@ msgstr ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:121
+msgid ""
+"CLion: Starting from version ``2019.1``, no plugin is required. Instead, "
+"enable `ClangFormat <https://www.jetbrains.com/help/clion/clangformat-as-"
+"alternative-formatter.html#clion-support>`__"
+msgstr ""
+
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
 msgstr ""
 "(Pull-Anfragen sind willkommen, um diese Liste mit getesteten Plugins zu "
 "erweitern.)"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:124
 msgid "Header includes"
 msgstr "Header enthält"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
 "When adding new C++ or Objective-C files or including new headers in "
 "existing ones, the following rules should be followed:"
@@ -329,7 +301,6 @@ msgstr ""
 "Beim Hinzufügen neuer C++ oder Objective-C Dateien oder beim Einfügen neuer "
 "Header in vorhandene, sollten die folgenden Regeln beachtet werden:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:129
 msgid ""
 "The first lines in the file should be Godot's copyright header and MIT "
 "license, copy-pasted from another file. Make sure to adjust the filename."
@@ -338,7 +309,6 @@ msgstr ""
 "Lizenz sein, die aus einer anderen Datei kopiert wurden. Stellen Sie sicher, "
 "dass Sie den Dateinamen anpassen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:131
 msgid ""
 "In a ``.h`` header, include guards should be used with the form "
 "``FILENAME_H``."
@@ -346,7 +316,6 @@ msgstr ""
 "In einem ``.h``-Header sollten Include-Guards in der Form ``DATEINAME_H`` "
 "verwendet werden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:134
 msgid ""
 "In a ``.cpp`` file (e.g. ``filename.cpp``), the first include should be the "
 "one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
@@ -356,7 +325,6 @@ msgstr ""
 "dasjenige sein, in dem die Klasse deklariert wird (z.B. ``#include "
 "\"dateiname.h\"``), gefolgt von einer Leerzeile zur Trennung."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:137
 msgid ""
 "Then come headers from Godot's own code base, included in alphabetical order "
 "(enforced by ``clang-format``) with paths relative to the root folder. Those "
@@ -371,7 +339,6 @@ msgstr ""
 "Block der Godot-Header-Includes sollte dann eine Leerzeile zur Trennung "
 "folgen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:142
 msgid ""
 "Finally, third-party headers (either from ``thirdparty`` or from the "
 "system's include paths) come next and should be included with the < and > "
@@ -383,7 +350,6 @@ msgstr ""
 "eingebunden werden, z. B. ``#include <png.h>``. Auf den Block der "
 "Drittanbieter-Header sollte ebenfalls eine Leerzeile zur Trennung folgen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:146
 msgid ""
 "Godot and third-party headers should be included in the file that requires "
 "them, i.e. in the `.h` header if used in the declarative code or in the `."
@@ -394,15 +360,12 @@ msgstr ""
 "verwendet werden, oder in die `.cpp`, wenn sie nur im imperativen Code "
 "verwendet werden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
 msgstr "Beispiel:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:238
 msgid "Java"
 msgstr "Java"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:240
 msgid ""
 "Godot's Java code (mostly in ``platform/android``) is also enforced via "
 "``clang-format``, so see the instructions above to set it up. Keep in mind "
@@ -415,11 +378,9 @@ msgstr ""
 "gewartet wird, nicht für Code von Drittanbietern wie dem Unterordner ``java/"
 "src/com/google``."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
 msgstr "Python"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
 "Godot's SCons buildsystem is written in Python, and various scripts included "
 "in the source tree are also using Python."
@@ -427,7 +388,6 @@ msgstr ""
 "Das SCons-Buildsystem von Godot ist in Python geschrieben, und verschiedene "
 "im Quellbaum enthaltene Skripte verwenden ebenfalls Python."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:251
 msgid ""
 "For those, we follow the `Black style guide <https://github.com/psf/"
 "black#the-black-code-style>`__. Blacken your Python changes using `Black "
@@ -437,11 +397,9 @@ msgstr ""
 "black#the-black-code-style>`__. Schwärzen Sie Ihre Python-Änderungen mit "
 "`Black <https://pypi.org/project/black/>`__."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:255
 msgid "Using black locally"
 msgstr "Black lokal verwenden"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:257
 msgid ""
 "First of all, you will need to install black. Black requires Python 3.6.0+ "
 "to run."
@@ -449,17 +407,14 @@ msgstr ""
 "Zuerst müssen Sie Black installieren. Black benötigt zur Ausführung Python "
 "3.6.0+."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:263
 msgid "Here's how to install black:"
 msgstr "So wird Black installiert:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:270
 msgid "You then have different possibilities to apply black to your changes:"
 msgstr ""
 "Sie haben dann verschiedene Möglichkeiten, Black auf Ihre Änderungen "
 "anzuwenden:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:275
 msgid ""
 "You can apply ``black`` manually to one or more files with the following "
 "command:"
@@ -467,7 +422,6 @@ msgstr ""
 "Sie können ``Black`` manuell auf eine oder mehrere Dateien mit dem folgenden "
 "Befehl anwenden:"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:282
 msgid ""
 "``-l 120`` means that the allowed number of characters per line is 120. This "
 "number was agreed upon by the developers."
@@ -475,7 +429,6 @@ msgstr ""
 "``-l 120``\" bedeutet, dass die zulässige Anzahl von Zeichen pro Zeile 120 "
 "beträgt. Diese Anzahl wurde von den Entwicklern vereinbart."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:284
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell."
@@ -483,7 +436,6 @@ msgstr ""
 "Der Pfad kann auf mehrere Dateien verweisen, entweder nacheinander oder mit "
 "Platzhaltern wie in einer typischen Unix-Shell."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:290
 msgid ""
 "For ease of use, we provide a pre-commit hook for Git that will run black "
 "automatically on all your commits to check them, and let you apply its "
@@ -493,7 +445,6 @@ msgstr ""
 "an, der automatisch bei allen Ihren Commits Black zur Überprüfung ausführt "
 "und Sie können die Änderungen beim endgültigen Commit bestätigen."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:294
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``. Refer to "
 "that folder's ``README.md`` for installation instructions."
@@ -501,11 +452,9 @@ msgstr ""
 "Dieser \"Hook\" ist ein Skript, das unter ``diverses/Hooks`` zu finden ist. "
 "Die Installationsanweisungen finden Sie unter ``README.md`` in diesem Ordner."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:299
 msgid "Editor integration"
 msgstr "Editor Integration"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:301
 msgid ""
 "Many IDEs or code editors have beautifier plugins that can be configured to "
 "run black automatically, for example each time you save a file. For details "
@@ -518,11 +467,9 @@ msgstr ""
 "Weitere Informationen finden Sie unter `Black im Editor integrieren <https://"
 "github.com/psf/black#editor-integration>`__."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:306
 msgid "Comment style guide"
 msgstr "Stil-Richtlinien"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:308
 msgid ""
 "This comment style guide applies to all programming languages used within "
 "Godot's codebase."
@@ -530,14 +477,12 @@ msgstr ""
 "Dieser Kommentarstil-Leitfaden gilt für alle Programmiersprachen, die "
 "innerhalb der Codebasis von Godot verwendet werden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:311
 msgid ""
 "Begin comments with a space character to distinguish them from disabled code."
 msgstr ""
 "Beginnen Sie Kommentare mit einem Leerzeichen, um sie von deaktiviertem Code "
 "zu unterscheiden."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:312
 msgid ""
 "Use sentence case for comments. Begin comments with an uppercase character "
 "and always end them with a period."
@@ -546,15 +491,12 @@ msgstr ""
 "Kommentare mit einem Großbuchstaben und beenden Sie sie immer mit einem "
 "Punkt."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:314
 msgid "Reference variable/function names and values using backticks."
 msgstr "Referenzieren Sie Variablen-/Funktionsnamen und -werte mit Backticks."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:315
 msgid "Wrap comments to ~100 characters."
 msgstr "Brechen Sie Kommentare auf ~100 Zeichen um."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:316
 msgid ""
 "You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as adominitions "
 "when needed."
@@ -562,12 +504,9 @@ msgstr ""
 "Sie können ``TODO:``, ``FIXME:``, ``NOTE:``, oder ``HACK:`` als Benennungen "
 "verwenden, wenn dies erforderlich ist."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:319
-#: ../../docs/community/contributing/code_style_guidelines.rst:342
 msgid "**Example:**"
 msgstr "**Beispiel:**"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:327
 msgid ""
 "Don't repeat what the code says in a comment. Explain the *why* rather than "
 "*how*."
@@ -575,11 +514,9 @@ msgstr ""
 "Wiederholen Sie nicht, was der Code in einem Kommentar sagt. Erklären Sie "
 "eher das *Warum* als das *Wie*."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:329
 msgid "**Bad:**"
 msgstr "**Schlecht:**"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:336
 msgid ""
 "You can use Javadoc-style comments above function or macro definitions. It's "
 "recommended to use Javadoc-style comments *only* for methods which are not "
@@ -592,7 +529,6 @@ msgstr ""
 "dass diese Methoden stattdessen in der :ref:`Klassenreferenz XML "
 "<doc_updating_the_class_reference>` dokumentiert werden sollten."
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:354
 msgid ""
 "For member variables, don't use Javadoc-style comments but use single-line "
 "comments instead:"

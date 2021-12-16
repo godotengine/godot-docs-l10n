@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Feature tags"
+msgstr "Etiquetas de características"
+
+msgid "Introduction"
+msgstr "Introducción"
+
+msgid ""
+"Godot has a special system to tag availability of features. Each *feature* "
+"is represented as a string, which can refer to many of the following:"
+msgstr ""
+"Godot tiene un sistema especial para etiquetar la disponibilidad de las "
+"características. Cada *característica* se representa como una cadena, y "
+"puede referirse a muchas de las siguientes:"
+
+msgid "Platform name."
+msgstr "Nombre de la plataforma."
+
+msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
+msgstr "Arquitectura de la plataforma (64 o 32 bits, x86 o ARM)."
+
+msgid "Platform type (desktop, mobile, Web)."
+msgstr "Tipo de plataforma (escritorio, móvil, web)."
+
+msgid "Supported texture compression algorithms on the platform."
+msgstr "Algoritmos de compresión de texturas soportados en la plataforma."
+
+msgid ""
+"Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
+msgstr ""
+"Si la compilación es de depuración (``debug``, con editor) o final "
+"(``release``)."
+
+msgid ""
+"Whether the project is running from the editor or a \"standalone\" binary."
+msgstr ""
+"Si el proyecto está corriendo desde el editor o como un binario "
+"'independiente'."
+
+msgid "Many more things."
+msgstr "Muchas más cosas."
+
+msgid "Features can be queried at run-time from the singleton API by calling:"
+msgstr ""
+"Las funciones pueden consultarse en tiempo de ejecución desde llamadas a la "
+"API del singleton haciendo:"
+
+msgid "Default features"
+msgstr "Características por defecto"
+
+msgid ""
+"Here is a list of most feature tags in Godot. Keep in mind they are **case-"
+"sensitive**:"
+msgstr ""
+"Aquí hay una lista de la mayoría de las etiquetas de características en "
+"Godot. Tenga en cuenta que son *sensibles a mayúsculas y minúsculas*:"
+
+msgid "**Feature tag**"
+msgstr "**Etiquetas de características**"
+
+msgid "**Description**"
+msgstr "**Descripción**"
+
+msgid "**Android**"
+msgstr "**Android**"
+
+msgid "Running on Android"
+msgstr "Ejecución en Android"
+
+msgid "**HTML5**"
+msgstr "**HTML5**"
+
+msgid "Running on HTML5"
+msgstr "Ejecución en HTML5"
+
+msgid "**JavaScript**"
+msgstr "**JavaScript**"
+
+msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
+msgstr "El :ref:`singleton JavaScript <doc_javascript_eval>` está disponible"
+
+msgid "**OSX**"
+msgstr "**OSX**"
+
+msgid "Running on macOS"
+msgstr "Ejecución en macOS"
+
+msgid "**iOS**"
+msgstr "**iOS**"
+
+msgid "Running on iOS"
+msgstr "Ejecución en iOS"
+
+msgid "**UWP**"
+msgstr "**UWP**"
+
+msgid "Running on UWP"
+msgstr "Ejecución en UWP"
+
+msgid "**Windows**"
+msgstr "**Windows**"
+
+msgid "Running on Windows"
+msgstr "Ejecución en Windows"
+
+msgid "**X11**"
+msgstr "**X11**"
+
+msgid "Running on X11 (Linux/BSD desktop)"
+msgstr "Corriendo sobre X11 (Linux/BSD en escritorio)"
+
+msgid "**Server**"
+msgstr "**Server**"
+
+msgid "Running on the headless server platform"
+msgstr "Ejecución en la plataforma de servidor sin interfaz gráfica"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "Running on a debug build (including the editor)"
+msgstr "Ejecutando en una versión de depuración (incluyendo el editor)"
+
+msgid "**release**"
+msgstr "**versión**"
+
+msgid "Running on a release build"
+msgstr "Ejecución en una versión de lanzamiento"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Running on an editor build"
+msgstr "Ejecutando en una compilación con editor"
+
+msgid "**standalone**"
+msgstr "**independiente**"
+
+msgid "Running on a non-editor build"
+msgstr "Ejecutando en una compilación sin editor"
+
+msgid "**64**"
+msgstr "**64**"
+
+msgid "Running on a 64-bit build (any architecture)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+
+msgid "**32**"
+msgstr "**32**"
+
+msgid "Running on a 32-bit build (any architecture)"
+msgstr "Ejecutando en una versión de 32 bits (cualquier arquitectura)"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "Running on a 64-bit x86 build"
+msgstr "Ejecutando en una compilación de 64 bits"
+
+msgid "**x86**"
+msgstr "**x86**"
+
+msgid "Running on a 32-bit x86 build"
+msgstr "Ejecutando en una compilación de 32 bits x86"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "Running on a 64-bit ARM build"
+msgstr "Ejecutando en una versión de 64 bits ARM"
+
+msgid "**arm**"
+msgstr "**arm**"
+
+msgid "Running on a 32-bit ARM build"
+msgstr "Ejecutando en una versión de 32 bits ARM"
+
+msgid "**mobile**"
+msgstr "**móvil**"
+
+msgid "Host OS is a mobile platform"
+msgstr "El sistema operativo anfitrión es una plataforma móvil"
+
+msgid "**pc**"
+msgstr "**pc**"
+
+msgid "Host OS is a PC platform (desktop/laptop)"
+msgstr "El sistema operativo anfitrión es una PC (escritorio/laptop)"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+msgid "**etc**"
+msgstr "**etc**"
+
+msgid "Textures using ETC1 compression are supported"
+msgstr "Las texturas que utilizan una compresión ETC1 son soportadas"
+
+msgid "**etc2**"
+msgstr "**etc2**"
+
+msgid "Textures using ETC2 compression are supported"
+msgstr "Las texturas que utilizan una compresión ETC2 son soportadas"
+
+msgid "**s3tc**"
+msgstr "**s3tc**"
+
+msgid "Textures using S3TC (DXT/BC) compression are supported"
+msgstr "Las texturas que utilizan una compresión S3TC (DXT/BC) son soportadas"
+
+msgid "**pvrtc**"
+msgstr "**pvrtc**"
+
+msgid "Textures using PVRTC compression are supported"
+msgstr "Las texturas que utilizan una compresión PVRTC son soportadas"
+
+msgid "Custom features"
+msgstr "Funcionalidades personalizadas"
+
+msgid ""
+"It is possible to add custom features to a build; use the relevant field in "
+"the *export preset* used to generate it:"
+msgstr ""
+"Es posible añadir funciones personalizadas a una compilación, usa el campo "
+"correspondiente en el *preset de exportación* utilizado para generarla:"
+
+msgid "Overriding project settings"
+msgstr "Sobrescribir los ajustes del proyecto"
+
+msgid ""
+"Features can be used to override specific configuration values in the "
+"*Project Settings*. This allows you to better customize any configuration "
+"when doing a build."
+msgstr ""
+"Las características se pueden utilizar para sobrescribir valores de "
+"configuración específicos en los\" Ajustes del proyecto\". Esto permite "
+"personalizar mejor cualquier configuración al hacer una compilación."
+
+msgid ""
+"In the following example, a different icon is added for the demo build of "
+"the game (which was customized in a special export preset, which, in turn, "
+"includes only demo levels)."
+msgstr ""
+"En el siguiente ejemplo, se añade un icono diferente para la compilación de "
+"la demo del juego (que se personalizó en un preset de exportación especial "
+"que, a su vez, sólo incluye niveles de demo)."
+
+msgid "After overriding, a new field is added for this specific configuration:"
+msgstr ""
+"Después de sobrescribir, se añade un nuevo campo para esta configuración "
+"específica:"
+
+msgid ""
+"When using the :ref:`project settings \"override.cfg\" functionality "
+"<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
+"feature tags still apply. Therefore, make sure to *also* override the "
+"setting with the desired feature tag(s) if you want them to override base "
+"project settings on all platforms and configurations."
+msgstr ""
+"Cuando se utiliza la funcionalidad :ref:`configuración del proyecto "
+"\"override.cfg\" <class_ProjectSettings>` (que no está relacionada con las "
+"etiquetas de características), recuerde que las etiquetas de características "
+"todavía se aplican. Por lo tanto, asegúrese de *también* anular la "
+"configuración con la(s) etiqueta(s) de características deseada(s) si desea "
+"que anulen la configuración del proyecto base en todas las plataformas y "
+"configuraciones."
+
+msgid "Default overrides"
+msgstr "Sobreescritura de valores por defecto"
+
+msgid ""
+"There are already a lot of settings that come with overrides by default; "
+"they can be found in many sections of the project settings."
+msgstr ""
+"Ya hay muchos ajustes que vienen con sobreescrituras por defecto, se pueden "
+"encontrar en las secciones de los ajustes del proyecto."
+
+msgid "Customizing the build"
+msgstr "Personalización de la Compilación"
+
+msgid ""
+"Feature tags can be used to customize a build process too, by writing a "
+"custom **ExportPlugin**. They are also used to specify which shared library "
+"is loaded and exported in **GDNative**."
+msgstr ""
+"Las etiquetas de características pueden ser usadas para personalizar el "
+"proceso de compilación, escribiendo un **ExportPlugin** personalizado. "
+"También son usadas para especificar qué librerías serán cargadas y "
+"exportadas en **GDNative**."

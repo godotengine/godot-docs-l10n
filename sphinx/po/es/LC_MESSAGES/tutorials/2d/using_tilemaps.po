@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using TileMaps"
 msgstr "Usando TileMaps"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
@@ -46,11 +43,9 @@ msgstr ""
 "colisión, oclusión y navegación a los tiles, añadiendo funcionalidad "
 "adicional al TileMap."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
 msgstr "Configuración del proyecto"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:23
 #, fuzzy
 msgid ""
 "This demo will use the following tiles taken from Kenney's \"Abstract "
@@ -63,13 +58,11 @@ msgstr ""
 "completo `aquí <https://kenney.nl/assets/abstract-platformer>`_ pero para "
 "esta demo nos ceñiremos a este pequeño conjunto."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
 "Crea un proyecto nuevo y coloque la imagen anterior en la carpeta del "
 "proyecto."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
 "When using a tileset, it's important that adjacent tiles match up. Godot's "
 "default is to import 2D images using an interpolated \"filter\" mode, which "
@@ -83,11 +76,9 @@ msgstr ""
 "haz clic en la pestaña Importar. Desactiva el ``Filter`` y haz clic en "
 "\"Reimport\". Ver :ref:`doc_import_images` para más detalles."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:37
 msgid "TileMap node"
 msgstr "Nodo TileMap"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
 "Add a new :ref:`TileMap <class_TileMap>` node to the scene. By default, a "
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
@@ -98,7 +89,6 @@ msgstr ""
 "utilizar un modo \"Isométrico\" basado en la perspectiva o definir su propia "
 "forma de tiles personalizada."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
@@ -106,11 +96,9 @@ msgstr ""
 "En la sección \"Cell\" del Inspector hay muchas propiedades que puedes "
 "ajustar para personalizar el comportamiento de tu mapa de tiles:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
 msgstr "``Cell Size``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
@@ -118,11 +106,9 @@ msgstr ""
 "Esto define el tamaño de la grilla. Esto debería coincidir con el tamaño de "
 "los píxeles de tus tiles. El valor por defecto es ``(64, 64)``."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
 msgstr "``YSort``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
@@ -130,11 +116,9 @@ msgstr ""
 "Esto hace que los tiles se dibujen en orden de su posición ``Y``, de modo "
 "que los tiles \"inferiores\" se dibujan encima de otros \"\"superiores\"\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
 msgstr "``Half Offset`` y ``Tile Origin``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
@@ -142,11 +126,9 @@ msgstr ""
 "Estas propiedades afectan a la posición de los tiles en relación con la "
 "posición de la grilla."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
 msgstr "``Quadrant``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
@@ -155,25 +137,20 @@ msgstr ""
 "afectar negativamente el rendimiento. No lo cambies a menos que sepas lo que "
 "estás haciendo."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "``Custom Transform``"
 msgstr "``Custom Transform``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
 "Se usa para alterar la forma del tile. Usa esto si tienes tiles no cuadrados."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 "Todas estas opciones pueden dejarse por defecto para esta demostración."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:71
 msgid "Creating a TileSet"
 msgstr "Creando un Tileset"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
 "Once you've configured your tilemap, it's time to add a :ref:`TileSet "
 "<class_TileSet>`. A TileSet is a :ref:`Resource <class_Resource>` that "
@@ -187,7 +164,6 @@ msgstr ""
 "propiedades. Cuando el juego se ejecuta, el TileMap combina los tiles "
 "individuales en un solo objeto."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
@@ -195,7 +171,6 @@ msgstr ""
 "Para añadir un nuevo TileSet, haga clic en la propiedad \"Tile Set\" y "
 "seleccione \"New TileSet\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "Click on the TileSet property, and the \"TileSet\" panel will open at the "
 "bottom of the editor window:"
@@ -203,7 +178,6 @@ msgstr ""
 "Hacer clic en la propiedad TileSet, el panel \"TileSet\" se abrirá en la "
 "parte inferior de la ventana del editor:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
 "First, you need to add the texture(s) that you'll use for the tiles. Click "
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
@@ -213,7 +187,6 @@ msgstr ""
 "click en el botón \"Agregar Textura(s) al TileSet\" y selecciona la imagen "
 "``tilesheet.png``."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
 "Next, click \"New Single Tile\" and drag in the image to select the tile you "
 "want. Click the \"Enable Snap\" button to make it easier to select the "
@@ -224,7 +197,6 @@ msgstr ""
 "más fácil seleccionar el tile completo. Un rectángulo amarillo aparecerá en "
 "el tile seleccionado."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
 "Click on the TileMap in the scene tree, and you'll see that the newly "
 "created tile now appears on the right side. Click in the viewport and you "
@@ -234,7 +206,6 @@ msgstr ""
 "recientemente creado aparece al lado derecho. Haz clic en el viewport y "
 "podrás ubicar tiles. Clic derecho para removerlos."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
@@ -242,11 +213,9 @@ msgstr ""
 "Es fácil seleccionar y mover accidentalmente el nodo Tilemap. Para evitar "
 "esto, usa el botón de bloqueo de nodos:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Collision shapes"
 msgstr "Figuras de Colisión"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
 "If you're making a map that needs collisions - walls, floor, or other "
 "obstacles, for example - then you'll need to add collision shapes to any "
@@ -256,7 +225,6 @@ msgstr ""
 "pisos u otros obstaculos - entonces necesitarás agregar formas de colisión a "
 "los tiles que se deban considerar \"sólidos\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
 "Click \"TileSet\" at the bottom of the editor window to return to the "
 "tileset tool. Click the tile you previously defined (outlined in yellow). "
@@ -271,16 +239,13 @@ msgstr ""
 "grilla activado, luego haz clic y arrastra en el tile. Aparecerá una forma "
 "de colisión en celeste:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr "Puedes agregar formas de oclusión y navegación al tile del mismo modo."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
 msgstr "Tiles de atlas"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
 "Rather than adding individual tiles one at a time, you can define a group of "
 "tiles all at once using an atlas. This also allows you to randomly generate "
@@ -290,12 +255,10 @@ msgstr ""
 "tiles usando un atlas. Esto permite también generar tiles al azar desde el "
 "grupo."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
 msgstr ""
 "Haz clic en \"Nuevo Atlas\" y arrástralo para seleccionar todo el tile sheet."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
 "If you haven't already, make sure to change the \"Step\" in the snap "
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
@@ -305,7 +268,6 @@ msgstr ""
 "configuración de snap a `(64, 64)` o tus tiles serán cortados en piezas "
 "pequeñas. Puedes encontrar esto en el Inspector:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:143
 msgid ""
 "Once you've defined the atlas you can add collision shapes to the individual "
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
@@ -315,7 +277,6 @@ msgstr ""
 "individualmente a los tiles como antes. También puedes hacer clic en \"Icono"
 "\" para seleccionar uno de los tiles que represente el atlas."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
@@ -323,7 +284,6 @@ msgstr ""
 "De vuelta en el TileMap, puedes seleccionar el tile del atlas y verás todo "
 "los tiles que contiene:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
 "In addition to saving time when defining the tiles, this can help by "
 "grouping similar tiles together when you're working with a large number of "
@@ -332,11 +292,9 @@ msgstr ""
 "Además de ahorrar tiempo cuando se definen tiles, esto puede ayudar a "
 "agrupar tiles similares cuando trabajas con gran número de tiles."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid "Random tile priorities"
 msgstr "Prioridades de tiles aleatorias"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:158
 msgid ""
 "When drawing with atlas tiles, enabling the \"Use priority\" option causes "
 "tiles to be selected at random. By default, each tile in the tileset has an "
@@ -354,11 +312,9 @@ msgstr ""
 "ficha con prioridad 3 tiene un 50% más de probabilidades de ser seleccionada "
 "que una ficha con prioridad 2."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
 msgstr "Autotiles"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
@@ -367,7 +323,6 @@ msgstr ""
 "para controlar qué tile se utiliza para dibujar en base al contenido de las "
 "celdas adyacentes."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
 "Click \"New Autotile\" and drag to select the tiles you wish to use. You can "
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
@@ -378,7 +333,6 @@ msgstr ""
 "prioridades de tiles y seleccionar un tile de icono de la misma manera que "
 "para los tiles del atlas."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
@@ -392,7 +346,6 @@ msgstr ""
 "botón derecho se quita \"off\", y con el botón izquierdo se pone un bit de "
 "\"ignorar\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
 "Whenever Godot updates a cell using an autotile, it first creates a pattern "
 "based on which adjacent cells are already set. Then, it searches the "
@@ -408,7 +361,6 @@ msgstr ""
 "su lugar. Si se encuentra más de una Bitmask coincidente, se seleccionará "
 "una de ellas al azar, utilizando las prioridades del tile."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
 "The rules for matching a bitmask to a pattern depend on the tileset's "
 "autotile bitmask mode. This can be set in the \"Inspector\" tab, under the "
@@ -420,7 +372,6 @@ msgstr ""
 "\"Inspector\", bajo el título \"Selected Tile\". Los valores permitidos son "
 "\"2x2\", \"3x3 (mínimo)\" y \"3x3\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
@@ -428,17 +379,14 @@ msgstr ""
 "Todos los bits de \"on\" y \"off\" deben ser cubiertos para que una bitmask "
 "coincida, pero los bits de \"ignorar\" son ignorados."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
 msgstr "2x2"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
 msgstr ""
 "En el modo 2x2, cada mascara de bits contiene cuatro bits, uno por cada "
 "esquina."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid ""
 "Where a bit is \"on\", all cells connected to that corner must be filled "
 "using the same autotile, in order for the bitmask to match. For example, if "
@@ -451,7 +399,6 @@ msgstr ""
 "celda encima de esta, a la izquierda y en diagonal izquierda superior deben "
 "ser llenadas."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:204
 msgid ""
 "Where a bit is \"off\", at least one cell connected to that corner must not "
 "be set using the same autotile."
@@ -459,7 +406,6 @@ msgstr ""
 "Cuando un bit este \"apagado\", al menos una celda conectada a esta esquina "
 "no deberá ser establecerse usando el mismo autotile."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:207
 msgid ""
 "At least one bit must be set for the tile to be used, so a total of 15 tiles "
 "would be needed to provide exactly one tile for each arrangement that this "
@@ -469,7 +415,6 @@ msgstr ""
 "que se necesitaría un total de 15 tiles para proporcionar exactamente un "
 "tile para cada array que este modo puede probar."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid ""
 "2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
 "no neighbors and lines only one cell wide are not supported."
@@ -478,12 +423,9 @@ msgstr ""
 "2x2: las celdas sin vecinos y las líneas de una sola celda no son "
 "compatibles."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:214
-#: ../../docs/tutorials/2d/using_tilemaps.rst:246
 msgid "**Template - Generic:**"
 msgstr "**Plantilla - Genérica:**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:216
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. It's "
 "designed for a TileMap cell size of 64x64."
@@ -492,29 +434,18 @@ msgstr ""
 "de arriba hacia abajo. Está diseñado para un tamaño de celda de TileMap de "
 "64x64."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:219
-#: ../../docs/tutorials/2d/using_tilemaps.rst:252
-#: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Key:"
 msgstr "Clave:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:221
-#: ../../docs/tutorials/2d/using_tilemaps.rst:254
-#: ../../docs/tutorials/2d/using_tilemaps.rst:267
 msgid "Red: \"on\""
 msgstr "Rojo: \"encendido\""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:222
-#: ../../docs/tutorials/2d/using_tilemaps.rst:255
-#: ../../docs/tutorials/2d/using_tilemaps.rst:268
 msgid "White: \"off\""
 msgstr "Blanco: \"apagado\""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
 msgstr "3x3 (minimo)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:229
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center). The 4 corner bits work the same as in 2x2 mode."
@@ -522,7 +453,6 @@ msgstr ""
 "En el modo 3x3 (mínimo), cada máscara de bits contiene 9 bits (4 esquinas, 4 "
 "bordes, 1 centro). Los 4 bits de esquina funcionan igual que en el modo 2x2."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
@@ -531,7 +461,6 @@ msgstr ""
 "deberá rellenarse. Cuando un bit de borde esté \"apagado\", la celda con la "
 "que comparte este borde deberá estar vacía."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid ""
 "The center bit should be \"on\" for any tile you wish to use. Note that in "
 "this mode, it makes no sense for a corner bit to be \"on\" when either edge "
@@ -542,7 +471,6 @@ msgstr ""
 "esquina esté \"activado\" cuando cualquier bit de borde adyacente a él no "
 "esté \"activado\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
@@ -550,13 +478,11 @@ msgstr ""
 "Se necesitaría un total de 47 tiles para proporcionar exactamente una "
 "máscara de bits para cada disposición que este modo pueda probar."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:244
 msgid "Right-click an image and choose **Save image as…** to save it."
 msgstr ""
 "Haga clic con el botón derecho del ratón en una imagen y elije **Guardar "
 "imagen como...** para guardarla."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. All "
 "templates below are designed for a TileMap cell size of 64x64, but you may "
@@ -569,11 +495,9 @@ msgstr ""
 "diferentes tamaños de subtiles para las plantillas de arriba a abajo como se "
 "describe a continuación."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:260
 msgid "**Template - Generic 16 tiles:**"
 msgstr "**Plantilla - 16 tiles genéricos:**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
 "art styles the missing tiles will not be noticeable."
@@ -582,48 +506,37 @@ msgstr ""
 "mosaicos; para estilos de arte más simples, los mosaicos faltantes no se "
 "notarán."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:269
 msgid "Blue-checkered: \"ignore\""
 msgstr "Blue-checkered: \"ignore\""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "**Template - Top-down floor in 3/4 perspective:**"
 msgstr "**Plantilla - Piso arriba-abajo en perspectiva 3/4:**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:276
 msgid "Key (applies to the four templates below):"
 msgstr "Clave (se aplica a las cuatro plantillas siguientes):"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:278
 msgid "Green: floor"
 msgstr "Verde: piso"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:279
 msgid "Cyan: wall"
 msgstr "Cian: muro"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:280
 msgid "Yellow: top of wall"
 msgstr "Amarillo: Alto del muro"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "Grey: hidden due to overlap"
 msgstr "Gris: oculta debido a la superposición"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:282
 msgid "Transparent: air"
 msgstr "Transparente: aire"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr "**Plantilla - Pared Arriba-bajo en perspectiva de 3/4:**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
 msgstr ""
 "**Plantilla - Arriba-abajo muro en perspectiva de 3/4 (paredes gruesas):**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
@@ -631,12 +544,10 @@ msgstr ""
 "Al usar esta plantilla, establece el tamaño del subtile de TileSet en "
 "``Vector2(64, 88)``."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:296
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
 msgstr ""
 "**Plantilla - Pared Arriba-abajo en perspectiva de 3/4 (paredes altas):**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:298
 msgid ""
 "When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
@@ -647,11 +558,9 @@ msgstr ""
 "altura menos el tamaño de la celda. Esto significa que el desplazamiento de "
 "la textura debe ser ``Vector2(0, -120)``:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
 msgstr "3x3"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:307
 #, fuzzy
 msgid ""
 "In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
@@ -659,7 +568,6 @@ msgstr ""
 "En el modo 3x3, cada máscara de bits contiene 9 bits (34 esquinas, 4 bordes "
 "y un centro)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
@@ -668,7 +576,6 @@ msgstr ""
 "verifican las celdas adyacentes diagonales. El bit central debe estar "
 "\"encendido\" para cualquier tile que desees utilizar."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:312
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
@@ -676,11 +583,9 @@ msgstr ""
 "un total de 256 tiles son necesarios para proporcionar exactamente una "
 "máscara de bits para cada disposición que este modo pueda probar."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:317
 msgid "Disabling autotile"
 msgstr "Deshabilitar el autotile"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:319
 #, fuzzy
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
@@ -691,11 +596,9 @@ msgstr ""
 "autotile y seleccionar los tiles manualmente, haciendo clic en \"Desactivar "
 "Autotile\" en la parte superior de la ventana de selección del tile."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:324
 msgid "Autotile binding"
 msgstr "Adhesión de autotiles"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -718,7 +621,6 @@ msgstr ""
 "identificación de un autotile usando \"find_tile_by_name (name)\", las "
 "celdas vacías reciben una identificación de -1."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
@@ -728,11 +630,9 @@ msgstr ""
 "una declaración de \"tool\", y puede que tengas que cerrar y recargar la "
 "escena para que estos cambios surtan efecto."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "Tips and tricks"
 msgstr "Consejos y trucos"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:343
 #, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
@@ -745,21 +645,18 @@ msgstr ""
 "esto, abre Ajustes de Proyecto y activa \"Use Pixel Snap\" en la sección "
 "\"Rendering/Quality\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
 "Puedes invertir y rotar tiles usando los iconos en la parte superior derecha "
 "del editor."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:349
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
 "Para dibujar líneas rectas manten presionado :kbd:`Shift` mientras haces "
 "clic y arrastras un tile."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:351
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

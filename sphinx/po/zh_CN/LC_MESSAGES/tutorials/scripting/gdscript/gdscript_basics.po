@@ -1,0 +1,1896 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript basics"
+msgstr "GDScript 基础"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid ""
+"*GDScript* is a high-level, dynamically typed programming language used to "
+"create content. It uses a syntax similar to `Python <https://en.wikipedia."
+"org/wiki/Python_%28programming_language%29>`_ (blocks are indent-based and "
+"many keywords are similar). Its goal is to be optimized for and tightly "
+"integrated with Godot Engine, allowing great flexibility for content "
+"creation and integration."
+msgstr ""
+"*GDScript* 是一种用于创建内容的高级, 动态类型的编程语言. 它使用类似于 "
+"`Python <https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_ "
+"的语法(块基于缩进, 许多关键字相似). 其目标是针对Godot引擎进行优化并与之紧密集"
+"成, 从而为内容创建和集成提供极大的灵活性."
+
+msgid "History"
+msgstr "历史"
+
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"关于GDScript历史的文档已被移至 :ref:`常见问题 <doc_faq_what_is_gdscript>` 中."
+
+msgid "Example of GDScript"
+msgstr "GDScript的示例"
+
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's a "
+"simple example of how GDScript looks."
+msgstr "有些人可以通过查看语法来更好地学习, 因此, 这有GDScript外观的简单示例."
+
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"如果你以前有使用C, C++或C#之类的静态类型语言的经验, 但以前从未使用过动态类型"
+"的语言, 建议你阅读此教程: :ref:`doc_gdscript_more_efficiently`."
+
+msgid "Language"
+msgstr "语言"
+
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"在下面, 概述了GDScript. 详细信息, 例如哪些方法可用于数组或其他对象, 可以在链"
+"接的类描述中查找到这些方法."
+
+msgid "Identifiers"
+msgstr "标识符(Identifiers)"
+
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"任何仅限于字母字符( ``a`` 到 ``z`` 和 ``A`` 到 ``Z`` ), 数字( ``0`` 到 "
+"``9`` )和 ``_`` 的字符串都可以作为标识符. 此外, 标识符不能以数字开头. 标识符"
+"区分大小写( ``foo`` 和 ``FOO`` 是不同的)."
+
+msgid "Keywords"
+msgstr "关键字(Keywords)"
+
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"以下是该语言支持的关键字列表. 由于关键字是保留字(令牌 [tokens]), 它们不能用作"
+"标识符. 操作符(如 ``in``, ``not``, ``and``, 或 ``or`` )以及下面列出的内置类型"
+"的名称也是保留的."
+
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"关键字定义在GDScript 分词器部分 `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ 中, "
+"如果你想深入了解。"
+
+msgid "Keyword"
+msgstr "关键字"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "if"
+msgstr "if"
+
+msgid "See `if/else/elif`_."
+msgstr "见 `if/else/elif`_."
+
+msgid "elif"
+msgstr "elif"
+
+msgid "else"
+msgstr "else"
+
+msgid "for"
+msgstr "for"
+
+msgid "See for_."
+msgstr "见 for_."
+
+msgid "while"
+msgstr "while"
+
+msgid "See while_."
+msgstr "见 while_."
+
+msgid "match"
+msgstr "match"
+
+msgid "See match_."
+msgstr "见 match_."
+
+msgid "break"
+msgstr "break"
+
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "退出当前 ``for`` 或 ``while`` 循环的执行."
+
+msgid "continue"
+msgstr "继续"
+
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "立即跳到 ``for`` 或 ``while`` 循环的下一个迭代."
+
+msgid "pass"
+msgstr "pass"
+
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr "在语法上要求语句但不希望执行代码的地方使用, 例如在空函数中."
+
+msgid "return"
+msgstr "返回(``Return``)"
+
+msgid "Returns a value from a function."
+msgstr "从函数返回一个值."
+
+msgid "class"
+msgstr "类"
+
+msgid "Defines an inner class."
+msgstr "定义一个内部类."
+
+msgid "class_name"
+msgstr "class_name"
+
+msgid "Defines a class name and optional icon for your script."
+msgstr "为脚本定义类名称和可选图标."
+
+msgid "extends"
+msgstr "extends"
+
+msgid "Defines what class to extend with the current class."
+msgstr "定义用当前类扩展什么类."
+
+msgid "is"
+msgstr "is"
+
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr "测试变量是否扩展给定的类, 或者是否是给定的内置类型."
+
+msgid "as"
+msgstr "as"
+
+msgid "Cast the value to a given type if possible."
+msgstr "如果可能, 将值转换为给定类型."
+
+msgid "self"
+msgstr "仅自己"
+
+msgid "Refers to current class instance."
+msgstr "引用当前类实例."
+
+msgid "tool"
+msgstr "tool"
+
+msgid "Executes the script in the editor."
+msgstr "在编辑器中执行脚本."
+
+msgid "signal"
+msgstr "信号"
+
+msgid "Defines a signal."
+msgstr "定义一个信号."
+
+msgid "func"
+msgstr "func"
+
+msgid "Defines a function."
+msgstr "定义一个函数."
+
+msgid "static"
+msgstr "static"
+
+msgid "Defines a static function. Static member variables are not allowed."
+msgstr "定义一个静态函数. 静态成员变量是不允许的."
+
+msgid "const"
+msgstr "const"
+
+msgid "Defines a constant."
+msgstr "定义一个常量."
+
+msgid "enum"
+msgstr "enum"
+
+msgid "Defines an enum."
+msgstr "定义一个枚举."
+
+msgid "var"
+msgstr "var"
+
+msgid "Defines a variable."
+msgstr "定义一个变量."
+
+msgid "onready"
+msgstr "onready"
+
+msgid ""
+"Initializes a variable once the Node the script is attached to and its "
+"children are part of the scene tree."
+msgstr "一旦脚本附加到的节点及其子级成为场景树的一部分, 就初始化变量."
+
+msgid "export"
+msgstr "导出"
+
+msgid ""
+"Saves a variable along with the resource it's attached to and makes it "
+"visible and modifiable in the editor."
+msgstr "保存一个变量及其附加的资源, 并使其在编辑器中可见和可修改."
+
+msgid "setget"
+msgstr "setget"
+
+msgid "Defines setter and getter functions for a variable."
+msgstr "为变量定义setter和getter函数."
+
+msgid "breakpoint"
+msgstr "breakpoint"
+
+msgid "Editor helper for debugger breakpoints."
+msgstr "调试器断点的编辑器助手."
+
+msgid "preload"
+msgstr "预加载(``Preload``)"
+
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr "预加载一个类或变量. 请参见 `类作为资源`_."
+
+msgid "yield"
+msgstr "yield"
+
+msgid "Coroutine support. See `Coroutines with yield`_."
+msgstr "协程支持. 参见 `协程使用yield`_."
+
+msgid "assert"
+msgstr "assert"
+
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"断言一个条件, 如果失败则记录错误. 在非调试版本中被忽略. 参见 `Assert关键字`_."
+
+msgid "remote"
+msgstr "remote"
+
+msgid ""
+"Networking RPC annotation. See :ref:`high-level multiplayer docs "
+"<doc_high_level_multiplayer>`."
+msgstr "网络RPC注解. 参见 :ref:`高级多玩家文档 <doc_high_level_multiplayer>`."
+
+msgid "master"
+msgstr "master"
+
+msgid "puppet"
+msgstr "puppet"
+
+msgid "remotesync"
+msgstr "remotesync"
+
+msgid "mastersync"
+msgstr "mastersync"
+
+msgid "puppetsync"
+msgstr "puppetsync"
+
+msgid "PI"
+msgstr "PI"
+
+msgid "PI constant."
+msgstr "圆周率常量."
+
+msgid "TAU"
+msgstr "TAU"
+
+msgid "TAU constant."
+msgstr "TAU 常量."
+
+msgid "INF"
+msgstr "INF"
+
+msgid "Infinity constant. Used for comparisons."
+msgstr "无穷大常数. 用于比较."
+
+msgid "NAN"
+msgstr "NAN"
+
+msgid "NAN (not a number) constant. Used for comparisons."
+msgstr "NAN(不是一个数字)常数. 用于比较."
+
+msgid "Operators"
+msgstr "运算符"
+
+msgid "The following is the list of supported operators and their precedence."
+msgstr "下面是支持的运算符列表及其优先级(越上面越高)."
+
+msgid "**Operator**"
+msgstr "**运算符**"
+
+msgid "**Description**"
+msgstr "**描述**"
+
+msgid "``x[index]``"
+msgstr "``x[index]``"
+
+msgid "Subscription (highest priority)"
+msgstr "数组索引(最高优先级)"
+
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+msgid "Attribute reference"
+msgstr "属性引用"
+
+msgid "``foo()``"
+msgstr "``foo()``"
+
+msgid "Function call"
+msgstr "函数调用"
+
+msgid "``is``"
+msgstr "``is``"
+
+msgid "Instance type checker"
+msgstr "实例类型检查操作符"
+
+msgid "``~``"
+msgstr "``~``"
+
+msgid "Bitwise NOT"
+msgstr "按位取反"
+
+msgid "``-x``"
+msgstr "``-x``"
+
+msgid "Negative / Unary negation"
+msgstr "负/一元否定"
+
+msgid "``*`` ``/`` ``%``"
+msgstr "``*`` ``/`` ``%``"
+
+msgid "Multiplication / Division / Remainder"
+msgstr "乘法/除法/余数"
+
+msgid ""
+"These operators have the same behavior as C++. Integer division is truncated "
+"rather than returning a fractional number, and the % operator is only "
+"available for ints (\"fmod\" for floats), and is additionally used for "
+"Format Strings"
+msgstr ""
+"这些运算符的行为与C++相同。整数除法会被截断，而不是返回小数，%运算符适用于"
+"ints（\"fmod \"适用于floats），并另外用于格式化字符串Format Strings"
+
+msgid "``+``"
+msgstr "``+``"
+
+msgid "Addition / Concatenation of arrays"
+msgstr "加法/数组的串联"
+
+msgid "``-``"
+msgstr "``-``"
+
+msgid "Subtraction"
+msgstr "减法"
+
+msgid "``<<`` ``>>``"
+msgstr "``<<`` ``>>``"
+
+msgid "Bit shifting"
+msgstr "位移位"
+
+msgid "``&``"
+msgstr "``&``"
+
+msgid "Bitwise AND"
+msgstr "按位与"
+
+msgid "``^``"
+msgstr "``^``"
+
+msgid "Bitwise XOR"
+msgstr "按位异或"
+
+msgid "``|``"
+msgstr "``|``"
+
+msgid "Bitwise OR"
+msgstr "按位或"
+
+msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+
+msgid "Comparisons"
+msgstr "比较"
+
+msgid "``in``"
+msgstr "``in``"
+
+msgid "Content test"
+msgstr "内容测试"
+
+msgid "``!`` ``not``"
+msgstr "``!`` ``not``"
+
+msgid "Boolean NOT"
+msgstr "布尔非"
+
+msgid "``and`` ``&&``"
+msgstr "``and`` ``&&``"
+
+msgid "Boolean AND"
+msgstr "布尔与"
+
+msgid "``or`` ``||``"
+msgstr "``or`` ``||``"
+
+msgid "Boolean OR"
+msgstr "布尔或"
+
+msgid "``if x else``"
+msgstr "``if x else``"
+
+msgid "Ternary if/else"
+msgstr "三元 if/else"
+
+msgid "``as``"
+msgstr "``as``"
+
+msgid "Type casting"
+msgstr "类型转换"
+
+msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
+
+msgid "Assignment (lowest priority)"
+msgstr "赋值(最低优先级)"
+
+msgid "Literals"
+msgstr "字面量(Literals)"
+
+msgid "**Literal**"
+msgstr "**字面量(Literal)**"
+
+msgid "**Type**"
+msgstr "**类型**"
+
+msgid "``45``"
+msgstr "``45``"
+
+msgid "Base 10 integer"
+msgstr "基数为10的整数"
+
+msgid "``0x8f51``"
+msgstr "``0x8f51``"
+
+msgid "Base 16 (hexadecimal) integer"
+msgstr "基数16(十六进制)整数"
+
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+msgid "Base 2 (binary) integer"
+msgstr "基数2(二进制)整数"
+
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14``, ``58.1e-10``"
+
+msgid "Floating-point number (real)"
+msgstr "浮点数(实数)"
+
+msgid "``\"Hello\"``, ``\"Hi\"``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+msgid "Strings"
+msgstr "字符串"
+
+msgid "``\"\"\"Hello\"\"\"``"
+msgstr "``\"\"\"Hello\"\"\"``"
+
+msgid "Multiline string"
+msgstr "多行字符串"
+
+msgid "``@\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+msgid ":ref:`class_NodePath` or StringName"
+msgstr ":ref:`class_NodePath` 或StringName"
+
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "``get_node(\"NodePath\")`` 的快捷方式"
+
+msgid ""
+"Integers and floats can have their numbers separated with ``_`` to make them "
+"more readable. The following ways to write numbers are all valid::"
+msgstr ""
+"整数和浮点数可以用 ``_`` 来分隔，使其更易读。以下表示数字的方式都是有效"
+"的： ::"
+
+msgid "Comments"
+msgstr "注释"
+
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr "任何从 ``#`` 开始到行尾的内容都会被忽略, 并被视为注释."
+
+msgid "Built-in types"
+msgstr "内置类型"
+
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The only exceptions are ``Array``\\ s and ``Dictionaries``, which "
+"are passed by reference so they are shared. (Pooled arrays such as "
+"``PoolByteArray`` are still passed as values.)"
+msgstr ""
+"内置类型是分配在栈上的，按值传递。这意味着在每次赋值或将它们作为参数传递给函"
+"数时都会创建一个副本。唯一的例外是数组 ``Array`` 和字典 ``Dictionary`` ，它们"
+"是共享的，按引用传递。（类似 ``PoolByteArray`` 的池数组还是按值传递的。）"
+
+msgid "Basic built-in types"
+msgstr "基本内置类型"
+
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "GDScript 中的变量可以赋值为不同的内置类型。"
+
+msgid "null"
+msgstr "null"
+
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr "``null`` 是一个空数据类型，不包含任何信息，不能赋值为任何其他值。"
+
+msgid ":ref:`bool <class_bool>`"
+msgstr ":ref:`bool <class_bool>`"
+
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr "“boolean”（布尔）的缩写，只能包含 ``true`` 或 ``false``\\ 。"
+
+msgid ":ref:`int <class_int>`"
+msgstr ":ref:`int<class_int>`"
+
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
+msgstr ""
+"“integer”（整数）的缩写，存储整数（正数和负数）。存储的是 64 位值，等效于 C+"
+"+ 中的 ``int64_t``\\ 。"
+
+msgid ":ref:`float <class_float>`"
+msgstr ":ref:`float<class_float>`"
+
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
+"data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
+"single-precision \"float\" values."
+msgstr ""
+"使用浮点值存储实数，包括小数。存储的是 64 位值，等效于 C++ 中的 ``double``"
+"\\ 。注意：目前类似 Vector2、Vector3、PoolRealArray 的数据结构存储的是 32 位"
+"单精度“float”值。"
+
+msgid ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_. Strings can contain the following escape sequences:"
+msgstr ""
+"`Unicode 格式 <https://en.wikipedia.org/wiki/Unicode>`_ 的字符序列。字符串可"
+"以包含以下转义序列："
+
+msgid "**Escape sequence**"
+msgstr "**转义序列**"
+
+msgid "**Expands to**"
+msgstr "**转义为**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "换行(line feed,LF)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "水平制表符(tab)"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "回车(carriage return,CR)"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "警报(蜂鸣/响铃)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "退格键(Backspace)"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "换页符(form feed,FF)"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "垂直制表符(tab)"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "双引号"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "单引号"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "反斜杠"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "Unicode 代码点 ``XXXX`` (十六进制, 不区分大小写)"
+
+msgid "GDScript also supports :ref:`doc_gdscript_printf`."
+msgstr "GDScript 也支持 :ref:`doc_gdscript_printf`."
+
+msgid "Vector built-in types"
+msgstr "内置向量类型"
+
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr "2D 向量类型，包含 ``x`` 和 ``y`` 字段，也可以像数组一样访问。"
+
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"2D 矩形类型，包含两个向量字段： ``position`` 和 ``size``\\ 。还包含一个 "
+"``end`` 字段，即 ``position + size``\\ 。"
+
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr "3D 向量类型，包含 ``x`` 、 ``y`` 与 ``z`` 字段，也可以像数组一样访问。"
+
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid "3×2 matrix used for 2D transforms."
+msgstr "用于2D变换的3x2矩阵."
+
+msgid ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr ""
+"3D平面类型的标准形式包含一个 ``normal`` 向量字段以及一个 ``d`` 标量距离."
+
+msgid ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr "四元数是一种用于表示3D旋转的数据类型. 它对于内插旋转很有用."
+
+msgid ":ref:`AABB <class_AABB>`"
+msgstr ":ref:`AABB <class_AABB>`"
+
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"轴对齐边界框(或3D框)包含两个向量字段: ``position`` 和 ``size``. 还包含一个 "
+"``end`` 字段, 即 ``position + size``."
+
+msgid ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"3×3矩阵被用于3D旋转与缩放. 其包含3个向量字段(``x``, ``y`` 和 ``z``) 并且可以"
+"像3D向量数组那样访问."
+
+msgid ":ref:`Transform <class_Transform>`"
+msgstr ":ref:`Transform <class_Transform>`"
+
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3D变换包含一个 ``Basis`` 字段 ``basis`` 和一个 ``Vector3`` 字段 ``origin``."
+
+msgid "Engine built-in types"
+msgstr "引擎内置类型"
+
+msgid ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color <class_Color>`"
+
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"颜色数据类型包含 ``r``, ``g``, ``b``, 和 ``a`` 字段. 它也可以作为 ``h``, "
+"``s``, 和 ``v`` 来访问色相/饱和度/值."
+
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"Compiled path to a node used mainly in the scene system. It can be easily "
+"assigned to, and from, a String."
+msgstr ""
+"编译路径, 到一个主要用在场景系统中的节点. 它可以很容易地从一个字符串获得, 或"
+"获得一个字符串."
+
+msgid ":ref:`RID <class_RID>`"
+msgstr ":ref:`RID <class_RID>`"
+
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr "资源ID(RID). 服务使用通用的RID来引用不透明数据."
+
+msgid ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid "Base class for anything that is not a built-in type."
+msgstr "任何非内置类型的基类."
+
+msgid "Container built-in types"
+msgstr "容器内置类型"
+
+msgid ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"任意对象类型的泛型序列，包括其他数组或字典（见下文）。数组可以动态调整大小。"
+"数组索引从 ``0`` 开始。负索引表示从尾部开始计数."
+
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"GDScript 数组在内存中线性分配以提高速度。但是，大型数组（包含数万个元素）可能"
+"会导致内存碎片。如果在意这个问题，可以使用特定类型的数组。它们只接受单个数据"
+"类型。它们避免了内存碎片并使用更少的内存，但是它们是原子的，运行起来容易比通"
+"用数组要慢。因此，建议仅将它们用于大型数据集："
+
+msgid ""
+":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
+"0 to 255)."
+msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: 一个字节(从0到255的整数)数组."
+
+msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: 一个整数数组."
+
+msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: 一个浮点数数组."
+
+msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: 一个字符串数组."
+
+msgid ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
+"<class_Vector2>` objects."
+msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: 一个 :ref:`Vector2 "
+"<class_Vector2>` 对象的数组."
+
+msgid ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
+"<class_Vector3>` objects."
+msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: 一个 :ref:`Vector3 "
+"<class_Vector3>` 对象数组."
+
+msgid ""
+":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
+"<class_Color>` objects."
+msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: 一个 :ref:`Color "
+"<class_Color>` 对象的数组."
+
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Dictionary <class_Dictionary>`"
+
+msgid "Associative container which contains values referenced by unique keys."
+msgstr "关联容器, 其中包含唯一键引用的值."
+
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier)."
+msgstr ""
+"还支持Lua风格的table语法.Lua风格使用 ``=`` 而不是 ``:`` , 并且不使用引号来标"
+"记字符串键(这样写起来会稍微少一些). 但是请注意, 与任何GDScript标识符一样, 以"
+"这种形式编写的键不能以数字开头."
+
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr "若要向现有字典添加键，请像访问现有键一样访问它，并给它赋值： ::"
+
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"方括号语法不仅可以用在Dictionary上, 而且还可以用来存取任何 :ref:"
+"`class_Object` 的属性. 记住, 当尝试读取一个不存在的属性时, 会引发脚本错误. 为"
+"了避免这一点, 用 :ref:`Object.get() <class_Object_method_get>` 和 :ref:"
+"`Object.set() <class_Object_method_set>` 方法作为替代."
+
+msgid "Data"
+msgstr "数据"
+
+msgid "Variables"
+msgstr "变量"
+
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"变量可以作为类成员存在, 也可以作为函数的局部变量存在. 它们是用 ``var`` 关键字"
+"创建的, 并且可以在初始化时指定一个值."
+
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"变量可以选择具有类型声明. 指定类型时, 变量将强制始终具有相同的类型, 并且试图"
+"分配不兼容的值将引发错误."
+
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr "类型在变量声明中使用 ``:`` (冒号)符号在变量名后面指定, 后面是类型."
+
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr "如果在声明中初始化变量，则可以推断类型，因此可以省略类型名称： ::"
+
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr "类型推断只有在指定的值具有定义的类型时才可能, 否则将引发错误."
+
+msgid "Valid types are:"
+msgstr "有效的类型有:"
+
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "内置类型(Array, Vector2, int, String, 等)."
+
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "引擎类(Node, Resource, Reference, 等)."
+
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"常量名, 如果它们包含脚本资源(``MyScript`` 如果声明 ``const MyScript = "
+"preload(\"res://my_script.gd\")``)."
+
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"在同一个脚本中的其他类, 遵循作用域(如果在相同作用域内, 在 ``class "
+"InnerClass`` 中声明 ``class NestedClass`` 得到 ``InnerClass.NestedClass`` )."
+
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "脚本类使用 ``class_name`` 关键字声明."
+
+msgid "Casting"
+msgstr "转换"
+
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"分配给类型变量的值必须具有兼容的类型. 如果需要将值强制转换为特定类型, 特别是"
+"对于对象类型, 则可以使用强制转换运算符 ``as``."
+
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"如果值是相同类型或转换类型的子类型, 则在对象类型之间进行转换会导致相同的对象."
+
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr "如果该值不是子类型, 则强制转换操作将产生 ``null`` 值."
+
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr "对于内置类型, 如果可能, 将对其进行强制转换, 否则引擎将引发错误."
+
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr "与场景树进行交互时，强制转换对于获得更好的类型安全变量也很有用： ::"
+
+msgid "Constants"
+msgstr "常量"
+
+msgid ""
+"Constants are values you cannot change when the game is running. Their value "
+"must be known at compile-time. Using the ``const`` keyword allows you to "
+"give a constant value a name. Trying to assign a value to a constant after "
+"it's declared will give you an error."
+msgstr ""
+"常量代表游戏运行时不可更改的值. 其值在编译时必须已知. 使用 ``const`` 关键字即"
+"可为常量值赋予名称. 尝试为常量重写赋值会引发错误."
+
+msgid "We recommend using constants whenever a value is not meant to change."
+msgstr "我们建议使用常量来储存不应当更改的值."
+
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr ""
+"尽管可以从分配的值中推断出常量的类型，但是也可以添加显式的类型说明： ::"
+
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "分配不兼容类型的值将引发错误."
+
+msgid ""
+"Since arrays and dictionaries are passed by reference, constants are \"flat"
+"\". This means that if you declare a constant array or dictionary, it can "
+"still be modified afterwards. They can't be reassigned with another value "
+"though."
+msgstr ""
+"由于数组和字典是通过引用的方式传递，常数是 \"浅的\"。这代表，如果你声明了一个"
+"常数数组或字典类型的变量名，依然可以增删数组或字典内部元素，但你不能将常数变"
+"量名重新赋予一个新的数组或字典。"
+
+msgid "Enums"
+msgstr "枚举"
+
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr ""
+"枚举基本上是常量的简写, 如果你想为某些常量分配连续整数, 那么枚举非常有用."
+
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant "
+"dictionary of that name."
+msgstr "如果将名称传递给枚举, 它将把所有键放入该名称的常量字典中."
+
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
+"从 Godot 3.1 开始, 不会再将具名枚举的键注册为全局常量, 应该通过前缀枚举的名字"
+"的形式来访问(``Name.KEY``)；见后面的例子."
+
+msgid "Functions"
+msgstr "函数"
+
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"函数总是属于一个 `类 <Classes_>`_ . 变量查找的作用域的优先级是：局部 → 类成"
+"员 → 全局. ``self`` 变量总是可用的, 并作为访问类成员的选项提供, 但并不总是必"
+"需的(与Python不同, *不* 应该将其作为函数的第一个参数传递)."
+
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr "函数可以在任何时候 ``return`` . 默认返回值是 ``null``."
+
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr ""
+"函数也可以具有参数和返回值的类型声明。可以使用与变量类似的方式添加参数的类"
+"型： ::"
+
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr "如果函数参数具有默认值，则可以推断类型： ::"
+
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr "可以在参数列表之后使用箭头标记（\\ ``->``\\ ）指定函数的返回类型： ::"
+
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"有返回类型的函数 **必须** 返回正确的值. 将类型设置为 ``void`` 意味着函数不返"
+"回任何内容.Void函数可以使用 ``return`` 关键字提前返回, 但不能返回任何值."
+
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"非void函数必须 **总是** 返回一个值, 所以如果您的代码有分支语句(例如 ``if``/"
+"``else`` 构造), 那么所有可能的路径都必须返回一个值. 例如, 如果在 ``if`` 块中"
+"有一个 ``return`` , 但在 ``if`` 块之后没有, 编辑器就会抛出一个错误, 因为如果"
+"没有执行这个块, 该函数将没有有效值返回."
+
+msgid "Referencing functions"
+msgstr "引用函数"
+
+msgid ""
+"Contrary to Python, functions are *not* first-class objects in GDScript. "
+"This means they cannot be stored in variables, passed as an argument to "
+"another function or be returned from other functions. This is for "
+"performance reasons."
+msgstr ""
+"与Python相反, 函数 *不是* GDScript中的第一类对象. 这意味着它们不能存储在变量"
+"中, 不能作为参数传递给另一个函数, 也不能从其他函数返回. 这是出于性能原因."
+
+msgid ""
+"To reference a function by name at run-time, (e.g. to store it in a "
+"variable, or pass it to another function as an argument) one must use the "
+"``call`` or ``funcref`` helpers::"
+msgstr ""
+"若要在运行时按名称引用一个函数（例如将其存储在一个变量中，或将其作为参数传递"
+"给另一个函数），必须使用 ``call`` 或 ``funcref`` 帮助函数： ::"
+
+msgid "Static functions"
+msgstr "静态函数"
+
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. This is mainly useful "
+"to make libraries of helper functions::"
+msgstr ""
+"函数可以声明为静态的。当一个函数是静态的，它不能访问实例成员变量或 ``self``"
+"\\ 。这对于创建辅助函数库非常有用： ::"
+
+msgid "Statements and control flow"
+msgstr "语句和控制流程"
+
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"语句是标准的, 可以是赋值, 函数调用, 控制流结构等(见下面). ``;`` 作为语句分隔"
+"符是完全可选的."
+
+msgid "if/else/elif"
+msgstr "if/else/elif"
+
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"简单的条件是通过使用 ``if``/``else``/``elif`` 语法创建的. 条件的括号是允许"
+"的, 但不是必需的. 考虑到基于制表符的缩进的性质, 可以使用 ``elif`` 而不是 "
+"``else``/``if`` 来维持缩进的级别."
+
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "短语句可以写在与条件相同的行上： ::"
+
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"有时您可能希望基于布尔表达式分配不同的初始值。在这种情况下，三元表达式将派上"
+"用场： ::"
+
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+"可以通过嵌套三元 if 表达式来处理的超过两种可能性的情况。嵌套时，推荐把三元 "
+"if 表达式拆分到多行以保持可读性： ::"
+
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue``:"
+msgstr ""
+"简单的循环是使用 ``while`` 语法创建的. 可以使用 ``break`` 来中断循环, 或者使"
+"用 ``continue`` 来继续:"
+
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"要遍历一个范围(如数组或表), 使用 *for* 循环. 在数组上迭代时, 当前数组元素存储"
+"在循环变量中. 在遍历字典时, *键(key)* 存储在循环变量中."
+
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"``match`` 语句用于分支程序的执行. 它相当于在许多其他语言中出现的 ``switch`` "
+"语句, 但提供了一些附加功能."
+
+msgid "Basic syntax::"
+msgstr "基本语法： ::"
+
+msgid "**Crash-course for people who are familiar with switch statements**:"
+msgstr "**熟悉switch语句的人的速成课程** :"
+
+msgid "Replace ``switch`` with ``match``."
+msgstr "将 ``switch`` 替换为 ``match``."
+
+msgid "Remove ``case``."
+msgstr "删除 ``case``."
+
+msgid ""
+"Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
+"use ``continue`` for a fallthrough."
+msgstr ""
+"删除任何 ``break``\\ s . 如果不想使用默认的 ``break(停止向下匹配)`` , 可以使"
+"用 ``continue`` 作向下穿透匹配(fallthrough)."
+
+msgid "Change ``default`` to a single underscore."
+msgstr "将 ``default`` 替换为单个下划线."
+
+msgid "**Control flow**:"
+msgstr "**控制流** :"
+
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement. You can use ``continue`` to stop execution in "
+"the current block and check for an additional match in the patterns below it."
+msgstr ""
+"模式从上到下进行匹配. 如果匹配到一个模式, 则会执行第一个相应的块. 之后, 继续"
+"执行 ``match`` 语句下面的内容. 你可以使用 ``continue`` 来停止执行当前的块, 并"
+"检查它下面的模式是否有额外的匹配."
+
+msgid "There are 6 pattern types:"
+msgstr "有6种模式类型:"
+
+msgid "Constant pattern"
+msgstr "常量模式"
+
+msgid "Constant primitives, like numbers and strings::"
+msgstr "常量原语，例如数字和字符串： ::"
+
+msgid "Variable pattern"
+msgstr "变量模式"
+
+msgid "Matches the contents of a variable/enum::"
+msgstr "匹配变量/枚举的内容： ::"
+
+msgid "Wildcard pattern"
+msgstr "通配符模式"
+
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr "这个模式匹配所有内容. 它被写成一个下划线."
+
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr "它可以与其他语言的 ``switch`` 语句中的 ``default`` 等效： ::"
+
+msgid "Binding pattern"
+msgstr "绑定模式"
+
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"绑定模式引入了一个新变量。与通配符模式类似，它匹配所有内容——并为该值提供一个"
+"名称。它在数组和字典模式中特别有用： ::"
+
+msgid "Array pattern"
+msgstr "数组模式"
+
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr "匹配一个数组. 数组模式的每个元素本身都是模式, 因此您可以嵌套它们."
+
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr "首先测试数组的长度, 它的大小必须与模式相同, 否则模式不匹配."
+
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr "**开放式数组** : 通过使最后一个子模式为 ``..`` , 可以使数组大于模式."
+
+msgid "Every subpattern has to be comma-separated."
+msgstr "每个子模式都必须用逗号分隔."
+
+msgid "Dictionary pattern"
+msgstr "字典模式"
+
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr "工作方式与数组模式相同. 每个键必须是一个常量模式."
+
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr "首先要测试字典的大小, 它的大小必须与模式相同, 否则模式不匹配."
+
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr "**开放式字典** : 通过将最后一个子字样改为 ``..`` , 使字典可以比模式大."
+
+msgid "Every subpattern has to be comma separated."
+msgstr "每个子模式都必须用逗号分隔."
+
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "如果不指定值, 则仅检查键的存在."
+
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "值模式与键模式之间以 ``:`` 分隔."
+
+msgid "Multiple patterns"
+msgstr "多重模式"
+
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr "您还可以指定由逗号分隔的多重模式. 这些模式不允许包含任何绑定."
+
+msgid "Classes"
+msgstr "类"
+
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"默认情况下，所有脚本文件都是未命名的类。在这种情况下，只能使用文件的路径引用"
+"它们，使用相对路径或绝对路径。例如，如果您将脚本文件命名为 ``character.gd``"
+"\\ ： ::"
+
+#, fuzzy
+msgid "Registering named classes"
+msgstr "将脚本注册为类"
+
+#, fuzzy
+msgid ""
+"You can give your class a name to register it as a new type in Godot's "
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"或者您也可以为您的类命名，将其在 Godot 的编辑器中注册为新类型。为此，请使用 "
+"``class_name`` 关键字。如果您选择再在后面添加逗号和图像的路径，就会使用该图像"
+"作为类型的图标。然后您的类将在编辑器中显示其新图标： ::"
+
+msgid ""
+"If the script is located in the ``res://addons/`` directory, ``class_name`` "
+"will only cause the node to show up in the **Create New Node** dialog if the "
+"script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
+"for more information."
+msgstr ""
+"如果脚本位于 ``res://addons/`` 目录下, ``class_name`` 只有当脚本是一个 "
+"*enabled* 编辑器插件的一部分时, 才会使节点出现在 **Create New Node** 对话框"
+"中. 更多信息请参见 :ref:`doc_making_plugins` ."
+
+msgid "Here's a class file example:"
+msgstr "这是一个类文件示例:"
+
+msgid ""
+"Godot's class syntax is compact: it can only contain member variables or "
+"functions. You can use static functions, but not static member variables. In "
+"the same way, the engine initializes variables every time you create an "
+"instance, and this includes arrays and dictionaries. This is in the spirit "
+"of thread safety, since scripts can be initialized in separate threads "
+"without the user knowing."
+msgstr ""
+"Godot的类语法很紧凑: 它只能包含成员变量或函数. 可以使用静态函数, 但不能使用静"
+"态成员变量. 同样, 每次创建实例时, 引擎都会初始化变量, 这包括数组和字典. 这是"
+"线程安全的精神, 因为脚本可以在用户不知情的情况下在单独的线程中初始化."
+
+msgid "Inheritance"
+msgstr "继承"
+
+msgid "A class (stored as a file) can inherit from:"
+msgstr "一个类(存储为文件)可以继承自:"
+
+msgid "A global class."
+msgstr "一个全局的类."
+
+msgid "Another class file."
+msgstr "另一个类文件."
+
+msgid "An inner class inside another class file."
+msgstr "另一个类文件中的内部类."
+
+msgid "Multiple inheritance is not allowed."
+msgstr "不允许多重继承."
+
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "继承使用 ``extends`` 关键字： ::"
+
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr "要检查给定的实例是否从给定的类继承，可以使用 ``is`` 关键字： ::"
+
+msgid ""
+"To call a function in a *parent class* (i.e. one ``extend``-ed in your "
+"current class), prepend ``.`` to the function name::"
+msgstr ""
+"要调用 *基类*\\ （即当前类 ``extends`` 的类）中的函数，请在函数名前面加上 ``."
+"``\\ ： ::"
+
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their parent classes. If you still want to "
+"call them, you can prefix them with ``.`` (like the ``super`` keyword in "
+"other languages)::"
+msgstr ""
+"这特别有用，因为扩展类中的函数会替换基类中同名的函数。所以如果您仍然想调用它"
+"们，您可以使用 ``.``\\ （这就像其他语言中的 ``super`` 关键字一样）： ::"
+
+msgid ""
+"Default functions like  ``_init``, and most notifications such as "
+"``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
+"are called in all parent classes automatically. There is no need to call "
+"them explicitly when overloading them."
+msgstr ""
+"默认函数像 ``_init`` 和大多数通知像 ``_enter_tree``, ``_exit_tree``, "
+"``_process``, ``_physics_process`` 等, 将自动调用在所有父类中的函数. 重载它们"
+"时无需显式调用它们."
+
+msgid "Class constructor"
+msgstr "类的构造函数"
+
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. As "
+"mentioned earlier, the constructors of parent classes are called "
+"automatically when inheriting a class. So, there is usually no need to call "
+"``._init()`` explicitly."
+msgstr ""
+"在类实例化时调用的类构造函数名为 ``_init``. 如前所述, 父类的构造函数在继承类"
+"时被自动调用. 所以通常不需要显式调用 ``._init()``."
+
+msgid ""
+"Unlike the call of a regular function, like in the above example with ``."
+"some_func``, if the constructor from the inherited class takes arguments, "
+"they are passed like this::"
+msgstr ""
+"与常规函数的调用不同，就像在上面的示例中使用 ``.some_func`` 那样，如果被继承"
+"的类的构造函数接受参数，则将它们传递为： ::"
+
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr "通过示例可以更好地说明这一点。考虑这种情况： ::"
+
+msgid "There are a few things to keep in mind here:"
+msgstr "这里有几件事要记住:"
+
+msgid ""
+"If the inherited class (``State.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``Idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``State.gd``."
+msgstr ""
+"如果被继承的类(``State.gd``)定义了一个带有参数(在这种情况下为 ``e``)的 "
+"``_init`` 构造函数, 然后, 继承的类(``Idle.gd``)也 **必须** 定义 ``_init`` 并"
+"将适当的参数从 ``State.gd`` 传递给 ``_init``."
+
+msgid ""
+"``Idle.gd`` can have a different number of arguments than the parent class "
+"``State.gd``."
+msgstr "``Idle.gd`` 可以有与基类 ``State.gd`` 不同数量的参数."
+
+msgid ""
+"In the example above, ``e`` passed to the ``State.gd`` constructor is the "
+"same ``e`` passed in to ``Idle.gd``."
+msgstr ""
+"在上面的示例中, 传递到 ``State.gd`` 的构造函数的 ``e`` 与传递给 ``Idle.gd`` "
+"的 ``e`` 是相同的."
+
+msgid ""
+"If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``State.gd`` parent class, even if it does nothing. "
+"This brings us to the fact that you can pass literals in the base "
+"constructor as well, not just variables, e.g.::"
+msgstr ""
+"如果 ``Idle.gd`` 的 ``_init`` 构造函数接受0个参数，即使它什么也不做也仍然需要"
+"将一些值传递给 ``State.gd`` 父类。当然，我们除了可以给基类构造函数传变量之"
+"外，也可以传字面量，例如： ::"
+
+msgid "Inner classes"
+msgstr "内部类"
+
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"类文件可以包含内部类. 内部类使用 ``class`` 关键字定义. 它们使用 ``ClassName."
+"new()`` 函数实例化."
+
+msgid "Classes as resources"
+msgstr "类作为资源"
+
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"存储为文件的类被视为 :ref:`Resource <class_Resource>`\\ 。必须从磁盘加载它"
+"们，才能在其他类中访问它们。这可以使用 ``load`` 或 ``preload`` 函数来完成（后"
+"述）。一个加载的类资源的实例化是通过调用类对象上的 ``new`` 函数来完成的： ::"
+
+msgid "Exports"
+msgstr "导出"
+
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr "有关导出的文档已移至 :ref:`doc_gdscript_exports`."
+
+msgid "Setters/getters"
+msgstr "Setters/getters"
+
+msgid ""
+"It is often useful to know when a class' member variable changes for "
+"whatever reason. It may also be desired to encapsulate its access in some "
+"way."
+msgstr ""
+"知道类的成员变量何时出于任何原因更改通常是很有用的. 也可能需要以某种方式封装"
+"其访问."
+
+msgid ""
+"For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
+"keyword. It is used directly after a variable definition:"
+msgstr ""
+"为此,GDScript使用 ``setget`` 关键字提供了一个 *setter/getter* 语法. 在变量定"
+"义后可直接使用:"
+
+msgid ""
+"Whenever the value of ``variable`` is modified by an *external* source (i.e. "
+"not from local usage in the class), the *setter* function (``setterfunc`` "
+"above) will be called. This happens *before* the value is changed. The "
+"*setter* must decide what to do with the new value. Vice versa, when "
+"``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
+"``return`` the desired value. Below is an example::"
+msgstr ""
+"每当 ``variable`` 的值被\\ *外部*\\代码（即不是来自该类中的本地使用）修改时，"
+"*setter* 函数（上面的 ``setterfunc``）就会被调用。这发生在值改变\\ *之前*"
+"\\ 。*setter* 必须决定如何处理新值。反之亦然，当 ``variable`` 被访问时，"
+"*getter* 函数（上面的 ``getterfunc``）必须 ``return`` 所需的值。示例如下： ::"
+
+msgid "Either of the *setter* or *getter* functions can be omitted::"
+msgstr "*setter* 或者 *getter* 函数都可省略： ::"
+
+msgid ""
+"Setters and getters are useful when :ref:`exporting variables "
+"<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
+"validating input."
+msgstr ""
+"用于验证输入, 在工具脚本或插件里 :ref:`导出变量 <doc_gdscript_exports>` 到编"
+"辑器时,Getters/Setters格外好用."
+
+msgid ""
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
+"illustration of this:"
+msgstr "如上所述, *本地* 访问 *不* 触发setter和getter. 这里有个说明:"
+
+msgid "Tool mode"
+msgstr "工具模式"
+
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``tool`` keyword exists and must be placed at the "
+"top of the file::"
+msgstr ""
+"默认情况下，脚本不在编辑器内运行，并且只能更改导出的属性。在某些情况下，确实"
+"希望它们在编辑器中运行（只要它们不执行游戏代码或手动避免这样做）。为此，可以"
+"用 ``tool`` 关键字并将它放在文件的顶部： ::"
+
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr "详情见 :ref:`doc_running_code_in_the_editor`."
+
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"在工具脚本(尤其是脚本的所有者本身)中使用 ``queue_free()`` 或 ``free()`` 释放"
+"节点时要谨慎. 工具脚本在编辑器中运行代码时, 滥用它们可能导致编辑器崩溃."
+
+msgid "Memory management"
+msgstr "内存管理"
+
+msgid ""
+"If a class inherits from :ref:`class_Reference`, then instances will be "
+"freed when no longer in use. No garbage collector exists, just reference "
+"counting. By default, all classes that don't define inheritance extend "
+"**Reference**. If this is not desired, then a class must inherit :ref:"
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a :ref:`class_WeakRef` function is "
+"provided for creating weak references. Here is an example:"
+msgstr ""
+"如果一个类继承了 :ref:`class_Reference`，那么当不再使用时，该实例将被释放。不"
+"存在垃圾回收器，只有引用计数。所有没有定义继承的类默认扩展的都是 "
+"**Reference** 类。如果不希望这样，那么这个类必须手动继承 :ref:"
+"`class_Object`，并且必须调用 ``instance.free()``\\ 。为了避免因造成循环引用而"
+"导致无法释放，我们提供了 :ref:`class_WeakRef` 函数用于创建弱引用。示例如下："
+
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"或者, 当不使用引用时, 可以使用 ``is_instance_valid(instance)`` 来检查对象是否"
+"已被释放."
+
+msgid "Signals"
+msgstr "信号"
+
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"信号是从对象发出消息的工具, 其他对象也可以对此做出反应. 要为一个类创建自定义"
+"信号, 请使用 ``signal`` 关键字."
+
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"信号是一种 `回调 <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ 机制。它们还充当观察者(一种常见的编程模式)"
+"的角色。有关更多信息， 请阅读《游戏编程模式》电子书中的 `观察者教程 <https://"
+"gameprogrammingpatterns.com/observer.html>`_ （`中文版 <https://gpp.tkchu.me/"
+"observer.html>`_ ） 。"
+
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
+msgstr ""
+"您可以将这些信号连接到方法, 方式与连接节点的内置信号(例如 :ref:"
+"`class_Button` 或 :ref:`class_RigidBody`)的方式相同."
+
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_Character_health_depleted`` is called::"
+msgstr ""
+"在下面的示例中，我们将 ``Character`` 节点的 ``health_depleted`` 信号连接到 "
+"``Game`` 节点。当 ``Character`` 节点发出信号时，游戏节点的 "
+"``_on_Character_health_depleted`` 会被调用： ::"
+
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "您可以发出任意数量的参数附带一个信号."
+
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"这是一个有用的示例. 假设我们希望屏幕上的生命条能够通过动画对健康值做出反应, "
+"但我们希望在场景树中将用户界面与游戏角色保持独立."
+
+msgid ""
+"In our ``Character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
+"and from a ``Game`` node higher up our scene tree, we connect it to the "
+"``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
+"method::"
+msgstr ""
+"在我们的 ``Character.gd`` 脚本中，我们定义一个 ``health_changed`` 信号并使"
+"用 :ref:`Object.emit_signal() <class_Object_method_emit_signal>` 发出该信号，"
+"然后从场景树上方的 ``Game`` 节点，使用 :ref:`Object.connect() "
+"<class_Object_method_connect>` 方法将其连接到 ``Lifebar``\\ ： ::"
+
+msgid ""
+"To use signals, your class has to extend the ``Object`` class or any type "
+"extending it like ``Node``, ``KinematicBody``, ``Control``..."
+msgstr ""
+"要使用信号, 您的类必须扩展 ``Object`` 类或任何扩展它的类型, 例如 ``Node``, "
+"``KinematicBody``, ``Control``…"
+
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"在 ``Game`` 节点中, 我们同时获得 ``Character`` 和 ``Lifebar`` 节点, 然后将发"
+"出信号的 ``Character`` 连接到接收器, 在本例中为 ``Lifebar`` 节点."
+
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"这允许 ``Lifebar`` 能够对健康值做出反应, 而无需将其耦合到 ``Character`` 节点."
+
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr "您可以在信号的定义后的括号中写上可选的参数名称： ::"
+
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"这些参数显示在编辑器的节点停靠面板中,Godot可以使用它们为您生成回调函数. 但"
+"是, 发出信号时仍然可以发出任意数量的参数；由您来发出正确的值."
+
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"GDScript可以将值数组绑定到信号和方法之间的连接. 发出信号时, 回调方法将接收绑"
+"定值. 这些绑定参数对于每个连接都是唯一的, 并且值将保持不变."
+
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"如果发出的信号本身不能使您访问所需的所有数据, 则可以使用此值数组将额外的常量"
+"信息添加到连接."
+
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"以上面的示例为基础，假设我们要在屏幕上显示每个角色遭受伤害的日志，例如 "
+"``Player1 遭受了 22 伤害。``\\ 。\\ ``health_changed`` 信号没有给我们提供受到"
+"伤害的角色的名称。因此，当我们将信号连接到游戏终端中时，可以在绑定数组参数中"
+"添加角色的名称： ::"
+
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr ""
+"我们的 ``BattleLog`` 节点接收绑定数组中的每个元素作为一个额外的参数： ::"
+
+msgid "Coroutines with yield"
+msgstr "协程使用yield"
+
+msgid ""
+"GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
+"Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
+"function. Calling ``yield()`` will immediately return from the current "
+"function, with the current frozen state of the same function as the return "
+"value. Calling ``resume()`` on this resulting object will continue execution "
+"and return whatever the function returns. Once resumed, the state object "
+"becomes invalid. Here is an example::"
+msgstr ""
+"GDScript 通过内置的 :ref:`yield<class_@GDScript_method_yield>` 提供对 `协程 "
+"<https://en.wikipedia.org/wiki/Coroutine>`_ 的支持。调用 ``yield()`` 将立即从"
+"当前函数返回，并且使用该函数的当前冻结状态作为返回值。在此结果对象上调用 "
+"``resume()`` 将继续执行并返回函数返回的任何内容。恢复后，该状态对象将失效。这"
+"是一个例子： ::"
+
+msgid "Will print::"
+msgstr "将打印： ::"
+
+msgid ""
+"It is also possible to pass values between ``yield()`` and ``resume()``, for "
+"example::"
+msgstr "还可以在 ``yield()`` 和 ``resume()`` 之间传递值，例如： ::"
+
+msgid ""
+"Remember to save the new function state, when using multiple ``yield``\\s::"
+msgstr "当多次使用 ``yield`` 时，记住保存新的函数状态： ::"
+
+msgid "Coroutines & signals"
+msgstr "协程&信号"
+
+msgid ""
+"The real strength of using ``yield`` is when combined with signals. "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
+"is received, execution will recommence. Here are some examples::"
+msgstr ""
+"使用 ``yield`` 的真正优势在于与信号结合使用。\\ ``yield`` 可以接受两个参数，"
+"一个对象和一个信号。收到信号后，将重新开始执行。这里有些例子： ::"
+
+msgid ""
+"Coroutines themselves use the ``completed`` signal when they transition into "
+"an invalid state, for example::"
+msgstr "协程自身转换为无效状态时会使用 ``completed`` 信号，例如： ::"
+
+msgid ""
+"``my_func`` will only continue execution once both buttons have been pressed."
+msgstr "``my_func`` 仅在按下两个按钮后继续执行."
+
+msgid "You can also get the signal's argument once it's emitted by an object:"
+msgstr "一旦一个信号被某个对象发出, 你还可以获取该信号的参数:"
+
+msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr "如果存在多于一个参数，\\ ``yield`` 返回含有这些参数的数组： ::"
+
+msgid ""
+"If you're unsure whether a function may yield or not, or whether it may "
+"yield multiple times, you can yield to the ``completed`` signal "
+"conditionally:"
+msgstr ""
+"如果你不确定一个函数是否还会继续yield, 可以使用信号量completed, 来作为判断依"
+"据:"
+
+msgid ""
+"This ensures that the function returns whatever it was supposed to return "
+"regardless of whether coroutines were used internally. Note that using "
+"``while`` would be redundant here as the ``completed`` signal is only "
+"emitted when the function didn't yield anymore."
+msgstr ""
+"这确保了无论函数内部是否使用协程(coroutines), 函数都会返回它应该返回的内容. "
+"请注意, 使用 ``while`` 在这里是多余的, 因为仅当函数不再yield时才会发出 "
+"``completed`` 信号."
+
+msgid "`onready` keyword"
+msgstr "`Onready` 关键字"
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"使用节点时, 通常希望将对场景部分的引用保留在变量中. 由于仅在进入活动场景树时"
+"才保证要配置场景, 因此只有在调用 ``Node._ready()`` 时才能获得子节点."
+
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``onready`` keyword, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"这可能会有些麻烦，尤其是当节点和外部引用堆积时。为此，GDScript 具有关键字 "
+"``onready``\\ ，将成员变量的初始化推迟到调用 ``_ready()``\\ 。它可以用一行替"
+"换上面的代码： ::"
+
+msgid "Assert keyword"
+msgstr "Assert关键字"
+
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"``assert`` 关键字可用于检查调试版本中的条件. 在非调试版本中, 这些断言将被忽"
+"略. 这意味着在发布模式下导出的项目中不会评估作为参数传递的表达式. 因此, 断言"
+"必须 **不能** 包含具有副作用的表达式. 否则, 脚本的行为将取决于项目是否在调试"
+"版本中运行."
+
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr "从编辑器运行项目时, 如果发生断言错误, 该项目将被暂停."

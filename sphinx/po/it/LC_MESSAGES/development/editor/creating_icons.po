@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/editor/creating_icons.rst:4
 msgid "Editor icons"
 msgstr "Icone dell'editor"
 
-#: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
 "When a new class is created and exposed to scripting, the editor's interface "
 "will display it with a default icon representing the base class it inherits "
@@ -29,40 +27,33 @@ msgid ""
 "to improve the user experience."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
 msgstr "Creazione di icone"
 
-#: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
 "To create new icons, you first need a vector graphics editor installed. For "
 "instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
 "editor."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:17
 msgid "Clone the ``godot`` repository containing all the editor icons:"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:23
 msgid ""
 "The icons must be created in a vector graphics editor in SVG format. There "
 "are two main requirements to follow:"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:26
 msgid ""
 "Icons must be 16×16. In Inkscape, you can configure the document size in "
 "**File > Document Properties**."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
 "Lines should be snapped to pixels whenever possible to remain crisp at lower "
 "DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:31
 msgid ""
 "Once you're satisfied with the icon's design, save the icon in the cloned "
 "repository's ``editor/icons`` folder. The icon name should match the "
@@ -70,11 +61,9 @@ msgid ""
 "CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:37
 msgid "Color conversion for light editor themes"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:39
 msgid ""
 "If the user has configured their editor to use a light theme, Godot will "
 "convert the icon's colors based on a `set of predefined color mappings "
@@ -86,18 +75,15 @@ msgid ""
 "background."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
 msgstr "Ottimizzazione delle icone"
 
-#: ../../docs/development/editor/creating_icons.rst:49
 msgid ""
 "Because the editor renders SVGs once at load time, they need to be small in "
 "size so they can be efficiently parsed. Editor icons must be first optimized "
 "before being added to the engine, to do so:"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
 "Install `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ by "
 "downloading a binary from its `Releases tab <https://github.com/RazrFalcon/"
@@ -105,20 +91,17 @@ msgid ""
 "``PATH`` environment variable."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
 "Run the command below, replacing ``svg_source.svg`` with the path to your "
 "SVG file (which can be a relative or absolute path):"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:65
 msgid ""
 "The ``--multipass`` switch improves compression, so make sure to include it. "
 "The optimized icon will be saved to ``svg_optimized.svg``. You can also "
 "change the destination parameter to any relative or absolute path you'd like."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
 "While this optimization step won't impact the icon's quality noticeably, it "
 "will still remove editor-only information such as guides. Therefore, it's "
@@ -126,18 +109,15 @@ msgid ""
 "changes."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:79
 msgid ""
 "If you're contributing to the engine itself, you should make a pull request "
 "to add optimized icons to ``editor/icons`` in the main repository. Recompile "
 "the engine to make it pick up new icons for classes."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
 "It's also possible to create custom icons within a module. If you're "
 "creating your own module and don't plan to integrate it with Godot, you "
@@ -145,37 +125,30 @@ msgid ""
 "within the editor as they can be self-contained."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
 msgstr "Risoluzione dei problemi"
 
-#: ../../docs/development/editor/creating_icons.rst:94
 msgid "If icons don't appear in the editor, make sure that:"
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:96
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:98
 msgid ""
 "``modules/svg`` is enabled (it should be enabled by default). Without it, "
 "icons won't appear in the editor at all."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:102
 #, fuzzy
 msgid "References"
 msgstr "Riferimenti"
 
-#: ../../docs/development/editor/creating_icons.rst:104
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"

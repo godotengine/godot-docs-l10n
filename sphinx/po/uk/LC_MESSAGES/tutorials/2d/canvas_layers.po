@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
 msgstr "Полотняні шари"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
 msgstr "Елементи Вікно перегляду та Полотна"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:9
+#, fuzzy
 msgid ""
-"Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
-"<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
-"which is the base for all 2D nodes. CanvasItems can be arranged in trees. "
-"Each item will inherit its parent's transform. This means that when the "
-"parent is moved, the children will move too."
+":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
+"regular"
+msgstr ""
+":ref:`CanvasModulate<class_CanvasModulate>` використовується для затемнення "
+"сцени."
+
+#, fuzzy
+msgid ""
+"2D nodes, such as :ref:`Node2D <class_Node2D>`, or `Control "
+"<class_Control>`. Both inherit from :ref:`CanvasItem <class_CanvasItem>`. "
+"You can arrange canvas items in trees. Each item will inherit its parent's "
+"transform: when the parent moves, its children move too."
 msgstr ""
 "Звичайні 2D-вузли, такі як :ref:`Node2D<class_Node2D>` або :ref:"
 "`Control<class_Control>`, успадковуються від :ref:`CanvasItem (Елемент "
@@ -39,22 +44,21 @@ msgstr ""
 "можна розміщувати в дереві. Кожен елемент успадкує батьківські перетворення. "
 "Це означає, що коли предка перенесуть, перемістяться і нащадки."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:16
+#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
-"children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
-"through it."
+"children of a :ref:`Viewport <class_Viewport>`, that display them."
 msgstr ""
 "Вузли CanvasItem та вузли, що успадковуються від них, є прямими або "
 "непрямими дочірніми елементами :ref:`Viewport (Вікна "
 "перегляду)<class_Viewport>` і відображатимуться через нього."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:19
+#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
-"<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
-"ref:`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy "
-"it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
+"<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
+"`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy it "
+"contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
 "Viewport має властивість :ref:`Viewport."
@@ -63,17 +67,16 @@ msgstr ""
 "ієрархії CanvasItem, яку воно містить. Такі вузли, як :ref:`Camera2D "
 "<class_Camera2D>`, працюють змінюючи це перетворення."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:25
+#, fuzzy
 msgid ""
-"Effects like scrolling are best achieved by manipulating the canvas "
-"transform property. This approach is more efficient than moving the root "
-"canvas item (and hence the whole scene)."
+"To achieve effects like scrolling, manipulating the canvas transform "
+"property is more efficient than moving the root canvas item and the entire "
+"scene with it."
 msgstr ""
 "Такі ефекти, як прокрутка, найкраще досягаються шляхом маніпулювання "
 "властивістю перетворення полотна. Цей підхід є більш ефективним, ніж "
 "переміщення елемента кореневого полотна (а отже, і цілої сцени)."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:28
 #, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
@@ -82,26 +85,23 @@ msgstr ""
 "Зазвичай, ми не хочемо, щоб *усе* в грі, чи додатку, підлягало перетворенню "
 "полотна. Прикладами цього є:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr "**Паралакс фони**: Фони, які рухаються повільніше, ніж решта сцени."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:33
 #, fuzzy
 msgid ""
-"**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
-"on our view of the game world. We want a life counter, score display and "
-"other elements to retain their screen positions even when our view of the "
-"game world changes."
+"**UI**: Think of a user interface (UI) or Heads-up display (HUD) "
+"superimposed on our view of the game world. We want a life counter, score "
+"display and other elements to retain their screen positions even when our "
+"view of the game world changes."
 msgstr ""
 "**UI**: Інтерфейс користувача (UI), або Heads-up display (HUD), накладений "
 "поверх ігрового світу. Ми хочемо, щоб лічильник життя, балів та інші "
 "елементи зберігали свої позиції на екрані, навіть коли наш погляд на ігровий "
 "світ змінюється."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
@@ -109,15 +109,12 @@ msgstr ""
 "**Переходи**: Ми можемо хотіти, щоб візуальні ефекти, що використовуються "
 "для переходів (затухання, поєднання), залишалися у фіксованому місці екрана."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
 msgstr "Як ці проблеми можна вирішити в одному дереві сцен?"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
 msgstr "CanvasLayers (Полотняні шари)"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
 "adds a separate 2D rendering layer for all its children and grand-children. "
@@ -136,7 +133,6 @@ msgstr ""
 "дозволяє інтерфейсу користувача фіксуватися в просторі екрана, поки наш "
 "погляд на ігровий світ змінюється."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
 "An example of this is creating a parallax background. This can be done with "
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
@@ -146,11 +142,9 @@ msgstr ""
 "допомогою CanvasLayer на шарі \"-1\". Екран з точками, лічильником життя та "
 "кнопкою паузи також можна створити на шарі \"1\"."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
 msgstr "Ось схема того, як це виглядає:"
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
@@ -158,7 +152,6 @@ msgstr ""
 "CanvasLayers не залежать від порядку в дереві, вони залежать лише від номера "
 "шару, тому їх можна створити за потреби, коли це потрібно."
 
-#: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
 "CanvasLayers aren't necessary to control the drawing order of nodes. The "
 "standard way to ensuring that a node is  correctly drawn 'in front' or "

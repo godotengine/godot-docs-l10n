@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Skeleton"
+msgstr "スケルトン"
+
+msgid "Rest Bone"
+msgstr "レストボーン"
+
+msgid ""
+"Armature object in Blender is exported as a Skeleton node along with rest "
+"position (transform in Godot) of bones."
+msgstr ""
+"Blenderのアーマチュアオブジェクトは、ボーンの静止位置(Godotでの幾何学変換)と"
+"ともにスケルトンノードとしてエクスポートされます。"
+
+msgid ""
+"The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
+"`Local Location` (colored in red) must be ticked when building armature in "
+"Blender, so that the exported bone transform be consistent between Blender "
+"and Godot"
+msgstr ""
+"3 つのチェック ボックス :code:`Inherit Rotation`\\ 、\\ :code:`Inherit Scale`"
+"\\ 、\\ :code:`Local Location` (赤色で着色)は、エクスポートされたボーンの幾何"
+"学変換がBlenderとGodotの間でに一貫性を持つように、Blenderでアーマチュアを構築"
+"するときにチェックする必要があります"
+
+msgid ""
+"It is important that the mesh is not deformed by bones when exporting in "
+"Blender. Make sure that the skeleton is reset to its T-pose or default rest "
+"pose."
+msgstr ""
+"Blenderでエクスポートするとき、メッシュがボーンによって変形していないことが重"
+"要です。スケルトンがTポーズまたはデフォルトのレストポーズにリセットされている"
+"ことを確認してください。"
+
+msgid "Bone Weights"
+msgstr "ボーンウェイト"
+
+msgid ""
+"Blender put rigged mesh vertices which has no bone weights at its original "
+"position, but these vertices would be placed at (0, 0, 0) in Godot, making "
+"the mesh deformed. Therefore, the exporter would raise an error for any "
+"vertex with no bone weights detected in a rigged mesh."
+msgstr ""
+"Blenderは、原点にボーンウェイトのないリギングメッシュ頂点を配置しましたが、こ"
+"れらの頂点はGodotで(0、0、0)に配置され、メッシュが変形します。したがって、エ"
+"クスポーターは、リギングメッシュでボーンの重みが検出されない頂点についてエ"
+"ラーを発生させます。"
+
+msgid "Non-Deform Bone"
+msgstr "非変形ボーン"
+
+msgid ""
+"Note that the non-deform bone can be configured as not exported by enabling "
+"the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
+"picture."
+msgstr ""
+"非変形ボーンは、\\ :code:`Exclude Control Bones` を有効にすることで、エクス"
+"ポートされないものとして設定できることに注意してください。Deformボーンチェッ"
+"クボックスが写真に表示されています。"
+
+msgid "Bone Attachment"
+msgstr "ボーンアタッチメント"
+
+msgid ""
+"A bone can be the parent of an object in Blender; this relation is exported "
+"as a BoneAttachment node in the Godot scene."
+msgstr ""
+"ボーンはBlenderではオブジェクトの親になることができます。この関係は、Godot"
+"シーンのBoneAttachmentノードとしてエクスポートされます。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
 msgid "Making plugins"
 msgstr "Erweiterungen (Plugins) erstellen"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
 msgid "About plugins"
 msgstr "Was sind Erweiterungen"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
@@ -44,7 +41,6 @@ msgstr ""
 "man erzeugen kann, mit der Ausnahme, daß es mittels eines Scripts den "
 "Editfunktionalität erweitert."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
 msgid ""
 "This tutorial will guide you through the creation of two simple plugins so "
 "you can understand how they work and be able to develop your own. The first "
@@ -57,11 +53,9 @@ msgstr ""
 "und das andere wird ein benutzerdefiniertes Dock, das dem Editor hinzugefügt "
 "wird."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
 msgstr "Eine Erweiterung erstellen"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
@@ -69,7 +63,6 @@ msgstr ""
 "Bevor es losgeht, erstellen Sie ein neues leeres Projekt wo Sie möchten. "
 "Dies wird der Grundstein zum entwickeln und testen des Plugins."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
 "The first thing you need for the editor to identify a new plugin is to "
 "create two files: a ``plugin.cfg`` for configuration and a tool script with "
@@ -84,7 +77,6 @@ msgstr ""
 "Verfügung um diese Dateien zu erzeugen und sie an der richtigen Stelle zu "
 "speichern."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:33
 msgid ""
 "In the main toolbar, click the ``Project`` dropdown. Then click ``Project "
 "Settings...``. Go to the ``Plugins`` tab and then click on the ``Create`` "
@@ -93,11 +85,9 @@ msgstr ""
 "Im Hauptmenü gehen Sie zu Projekt -> Projekt Einstellungen und dort auf die "
 "Registerkarte ``Erweiterungen``, dann drücken Sie ``Erstellen`` oben rechts."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:37
 msgid "You will see the dialog appear, like so:"
 msgstr "Der Dialog wird erscheinen:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:41
 msgid ""
 "The placeholder text in each field describes how it affects the plugin's "
 "creation of the files and the config file's values."
@@ -105,15 +95,12 @@ msgstr ""
 "Die Platzhalter in jedem Textfeld beschreiben wie die Erstellung der Dateien "
 "und der Konfiguration-Werte des Plugins beeinflusst werden."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:44
 msgid "To continue with the example, use the following values::"
 msgstr "Um mit dem Beispiel fortzufahren nutze die folgenden Werte:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:55
 msgid "You should end up with a directory structure like this:"
 msgstr "Die Verzeichnisstruktur sollte am Ende so aussehen:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:59
 msgid ""
 "``plugin.cfg`` is a simple INI file with metadata about your plugin. The "
 "name and description help people understand what it does. Your name helps "
@@ -132,11 +119,9 @@ msgstr ""
 "Hauptskriptdatei weist Godot an, was Ihr Plugin im Editor tut, sobald es "
 "aktiv ist."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:68
 msgid "The script file"
 msgstr "Die Skript Datei"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:70
 msgid ""
 "Upon creation of the plugin, the dialog will automatically open the "
 "EditorPlugin script for you. The script has two requirements that you cannot "
@@ -144,14 +129,12 @@ msgid ""
 "the editor, and it must inherit from :ref:`class_EditorPlugin`."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:77
 msgid ""
 "In addition to the EditorPlugin script, any other GDScript that your plugin "
 "uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
 "editor will act like an empty file!"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:81
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
@@ -161,15 +144,12 @@ msgid ""
 "something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:126
 msgid "This is a good template to use when creating new plugins."
 msgstr "Dies ist eine gute Vorlage um neue Plugins zu erstellen."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:129
 msgid "A custom node"
 msgstr "Ein benutzerdefinierter Node"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:131
 msgid ""
 "Sometimes you want a certain behavior in many nodes, such as a custom scene "
 "or control that can be reused. Instancing is helpful in a lot of cases, but "
@@ -184,15 +164,13 @@ msgstr ""
 "verwenden. Eine gute Lösung hierfür besteht darin, ein Plugin zu erstellen, "
 "das einen Node mit einem benutzerdefinierten Verhalten hinzufügt."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:139
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
 "with any scripting language, they have fewer features than :ref:`the Script "
-"Class system <doc_scripting_continued_class_name>`. If you are writing "
-"GDScript or NativeScript, we recommend using Script Classes instead."
+"Class system <doc_gdscript_basics_class_name>`. If you are writing GDScript "
+"or NativeScript, we recommend using Script Classes instead."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:144
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
 "<class_EditorPlugin_method_add_custom_type>` from the :ref:"
@@ -203,7 +181,6 @@ msgid ""
 "editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:151
 msgid ""
 "For this tutorial, we'll create a simple button that prints a message when "
 "clicked. For that, we'll need a simple script that extends from :ref:"
@@ -214,7 +191,6 @@ msgstr ""
 "das :ref:`class_Button` oder :ref:`class_BaseButton` erweitert, je nachdem "
 "was Sie bevorzugen:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:189
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You'll also need a 16×16 icon to show in the scene tree. "
@@ -224,25 +200,21 @@ msgid ""
 "desired."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:197
 msgid ""
 "Now, we need to add it as a custom type so it shows on the **Create New "
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
 "following:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
 msgid ""
 "With that done, the plugin should already be available in the plugin list in "
 "the **Project Settings**, so activate it as explained in `Checking the "
 "results`_."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:248
 msgid "Then try it out by adding your new node:"
 msgstr "Probieren Sie es dann aus, indem Sie Ihren neuen Node hinzufügen:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:252
 msgid ""
 "When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
@@ -253,11 +225,9 @@ msgstr ""
 "Schaltfläche, speichern Sie die Szene und führen Sie sie aus. Wenn Sie auf "
 "die Schaltfläche klicken, wird in der Konsole ein Text angezeigt:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:259
 msgid "A custom dock"
 msgstr "Ein benutzerdefiniertes Dock"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:261
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
@@ -269,21 +239,18 @@ msgstr ""
 "einem Plugin hinzuzufügen. Docks sind nur Szenen, die auf Control basieren. "
 "Sie werden also ähnlich wie normale GUI-Szenen erstellt."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:265
 msgid ""
 "Creating a custom dock is done just like a custom node. Create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
 "following content to it:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:290
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill it with "
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
 "get a good start."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:294
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
@@ -294,7 +261,6 @@ msgstr ""
 "Godot-Szene: Erstellen Sie einfach eine neue Szene im Editor und bearbeiten "
 "diese."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:298
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -303,7 +269,6 @@ msgid ""
 "Also, don't forget to add some text to your button."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:306
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -312,24 +277,23 @@ msgid ""
 "<class_EditorPlugin>` class."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:311
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:372
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
+"Beachten Sie, dass das Dock zwar zunächst an der angegebenen Position "
+"erscheint, der Benutzer aber seine Position frei ändern und das "
+"resultierende Layout speichern kann."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:376
 msgid "Checking the results"
 msgstr "Ergebnisse überprüfen"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:378
 msgid ""
 "It's now time to check the results of your work. Open the **Project "
 "Settings** and click on the **Plugins** tab. Your plugin should be the only "
@@ -341,18 +305,15 @@ msgstr ""
 "sollte nun das einzige in der Liste sein. Falls es nicht angezeigt wird, "
 "klicken Sie auf den **Update** Button in der oberen rechten Ecke."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:385
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
 "close the settings window. You should now have a custom dock:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:392
 msgid "Going beyond"
 msgstr "Darüber hinausgehen"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:394
 msgid ""
 "Now that you've learned how to make basic plugins, you can extend the editor "
 "in several ways. Lots of functionality can be added to the editor with "
@@ -365,7 +326,6 @@ msgstr ""
 "Möglichkeit, spezialisierte Editoren zu erstellen, ohne sich mit C++ Modulen "
 "befassen zu müssen."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:399
 msgid ""
 "You can make your own plugins to help yourself and share them in the `Asset "
 "Library <https://godotengine.org/asset-library/>`_ so that people can "

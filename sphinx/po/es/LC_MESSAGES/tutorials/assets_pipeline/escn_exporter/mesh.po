@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Mesh"
+msgstr "Malla"
+
+msgid "Modifiers"
+msgstr "Modifiers"
+
+msgid ""
+"There is an exporting option :code:`Apply Modifiers` to control whether mesh "
+"modifiers are applied to the exported mesh."
+msgstr ""
+"Existe una opción de exportación :code:`Apply Modifiers` para controlar si "
+"se aplican modificadores de malla a la malla exportada."
+
+msgid "Shape Key"
+msgstr "Shape Key"
+
+msgid ""
+"Exporting mesh shape key is supported, however exporting each shape key is "
+"almost like exporting the mesh again, so don't be surprised it takes a "
+"relatively long time."
+msgstr ""
+"Se puede exportar la shape key de una malla, sin embargo, exportar cada "
+"shape key es casi como exportar la malla nuevamente, así que no te "
+"sorprendas si toma un tiempo relativamente largo."
+
+msgid ""
+"A lot of modifiers are not compatible with shape keys (e.g. subsurface "
+"modifier), so if you found you have incorrect shape keys exported, try to "
+"disable :code:`Apply Modifiers` and do the exporting again. Besides, it is "
+"worthwhile to report the incompatible modifier to the `issue list <https://"
+"github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
+"develop the exporter to have a more precise check of modifiers."
+msgstr ""
+"Muchos modificadores no son compatibles con las formas clave (por ejemplo, "
+"el modificador subsurface), así que si encuentras que has exportado una "
+"forma clave incorrecta, intenta deshabilitar :code:`Apply Modifiers` y "
+"vuelve a exportar. Además, vale la pena reportar el modificador incompatible "
+"en `issue list <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__, lo que ayuda a desarrollar el exportador para tener un control "
+"más preciso de los modificadores."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/animation/introduction.rst:4
 msgid "Introduction to the animation features"
 msgstr "Введение в возможности анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:7
-msgid "Overview"
-msgstr "Обзор"
-
-#: ../../docs/tutorials/animation/introduction.rst:9
 msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
@@ -33,27 +27,21 @@ msgstr ""
 "Узел :ref:`AnimationPlayer` позволяет создавать вам что угодно, от простой "
 "до сложной анимации."
 
-#: ../../docs/tutorials/animation/introduction.rst:12
 msgid "In this guide you learn to:"
 msgstr "В этом руководстве Вы узнаете:"
 
-#: ../../docs/tutorials/animation/introduction.rst:14
 msgid "Work with the Animation Panel"
 msgstr "Работа с панелью анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:15
 msgid "Animate any property of any node"
 msgstr "Анимация любого параметра узла"
 
-#: ../../docs/tutorials/animation/introduction.rst:16
 msgid "Create a simple animation"
 msgstr "Создание простой анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:17
 msgid "Call functions with the powerful Call Function Tracks"
 msgstr "Вызов функций с помощью Call Function Tracks"
 
-#: ../../docs/tutorials/animation/introduction.rst:19
 msgid ""
 "In Godot, you can animate anything available in the Inspector, such as Node "
 "transforms, sprites, UI elements, particles, visibility and color of "
@@ -65,11 +53,9 @@ msgstr ""
 "видимость и цвет материалов, и т.д. Вы также можете менять значения "
 "переменных и вызывать любые функции."
 
-#: ../../docs/tutorials/animation/introduction.rst:25
 msgid "Create an AnimationPlayer node"
 msgstr "Создание узла AnimationPlayer"
 
-#: ../../docs/tutorials/animation/introduction.rst:27
 msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
@@ -77,7 +63,6 @@ msgstr ""
 "Чтобы использовать инструменты анимации, мы сначала должны создать узел :ref:"
 "`class_AnimationPlayer`."
 
-#: ../../docs/tutorials/animation/introduction.rst:30
 msgid ""
 "The AnimationPlayer node type is the data container for your animations. One "
 "AnimationPlayer node can hold multiple animations, that can automatically "
@@ -87,11 +72,9 @@ msgstr ""
 "AnimationPlayer может хранить множество анимаций, которые могут "
 "автоматически переходить от одной к другой."
 
-#: ../../docs/tutorials/animation/introduction.rst:37
 msgid "The AnimationPlayer node"
 msgstr "Узел AnimationPlayer"
 
-#: ../../docs/tutorials/animation/introduction.rst:39
 msgid ""
 "After creating one click on the AnimationPlayer node in the Node tab to open "
 "the Animation Panel at the bottom of the viewport."
@@ -99,32 +82,25 @@ msgstr ""
 "После создания узла AnimationPlayer, кликните по нему во вкладке Node, чтобы "
 "открыть панель анимации в нижней части экрана."
 
-#: ../../docs/tutorials/animation/introduction.rst:45
 msgid "The animation panel position"
 msgstr "Расположение панели анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:47
 msgid "It consists of four parts:"
 msgstr "Панель состоит из 4х частей:"
 
-#: ../../docs/tutorials/animation/introduction.rst:52
 msgid "The animation panel"
 msgstr "Панель анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:54
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
 msgstr ""
 "Управление анимацией (т.е. добавить, загрузить, сохранить и удалить анимацию)"
 
-#: ../../docs/tutorials/animation/introduction.rst:55
 msgid "The tracks listing"
 msgstr "Список дорожек (треков)"
 
-#: ../../docs/tutorials/animation/introduction.rst:56
 msgid "The timeline with keyframes"
 msgstr "Шкала времени (таймлайн) с ключевыми кадрами"
 
-#: ../../docs/tutorials/animation/introduction.rst:57
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
@@ -132,16 +108,13 @@ msgstr ""
 "Управление шкалой времени и треками, где вы можете масштабировать шкалу "
 "времени и редактировать треки."
 
-#: ../../docs/tutorials/animation/introduction.rst:61
 msgid "Computer animation relies on keyframes"
 msgstr "Компьютерная анимация опирается на ключевые кадры"
 
-#: ../../docs/tutorials/animation/introduction.rst:63
 msgid "A keyframe defines the value of a property at a certain point in time."
 msgstr ""
 "Ключевой кадр определяет значение параметра в определённой точке времени."
 
-#: ../../docs/tutorials/animation/introduction.rst:65
 msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
 "keyframes indicates that the value hasn't changed."
@@ -150,11 +123,9 @@ msgstr ""
 "ключевыми кадрами говорит о том, что значение в этом промежутке времени не "
 "меняется."
 
-#: ../../docs/tutorials/animation/introduction.rst:71
 msgid "Keyframes in Godot"
 msgstr "Ключевые кадры в Godot"
 
-#: ../../docs/tutorials/animation/introduction.rst:73
 msgid ""
 "The engine interpolates values between keyframes, resulting in a gradual "
 "change in values over time."
@@ -162,11 +133,9 @@ msgstr ""
 "Движок интерполирует (изменяет) значения между ключевыми кадрами, что "
 "приводит к постепенному изменению значений с течением времени."
 
-#: ../../docs/tutorials/animation/introduction.rst:79
 msgid "Two keyframes are all it takes to obtain a smooth motion"
 msgstr "Два ключевых кадра — все, что нужно для получения плавного движения"
 
-#: ../../docs/tutorials/animation/introduction.rst:81
 msgid ""
 "The timeline lets you insert keyframes and change their timing. It also "
 "defines how long the animation is."
@@ -174,11 +143,9 @@ msgstr ""
 "Шкала времени позволяет вставлять ключевые кадры и изменять их время. Также "
 "шкала определяет продолжительность анимации."
 
-#: ../../docs/tutorials/animation/introduction.rst:87
 msgid "The timeline in the animation panel"
 msgstr "Шкала времени на панели анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:89
 msgid ""
 "Each line of the Animation Panel is an animation track. Normal and Transform "
 "tracks reference node properties. Their name or id is a path to the node and "
@@ -188,11 +155,9 @@ msgstr ""
 "параметра (Property) и трек трансформации (Transform) отслеживают свойства "
 "узла. Их имя или идентификатор — это путь к узлу и соответствующему свойству."
 
-#: ../../docs/tutorials/animation/introduction.rst:96
 msgid "Example of Normal animation tracks"
 msgstr "Пример стандартной анимационной дорожки"
 
-#: ../../docs/tutorials/animation/introduction.rst:100
 msgid ""
 "If you animate the wrong property, you can edit a track's path anytime. "
 "Double click on it and type the new path. Play the animation using the "
@@ -205,15 +170,12 @@ msgstr ""
 "начала» |Play from beginning| (Горячая клавиша по умолчанию :kbd:`Shift + "
 "D`), чтобы сразу увидеть изменения."
 
-#: ../../docs/tutorials/animation/introduction.rst:106
 msgid "Tutorial: Creating a simple animation"
 msgstr "Руководство: Создание простой анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:109
 msgid "Scene setup"
 msgstr "Настройка сцены"
 
-#: ../../docs/tutorials/animation/introduction.rst:111
 msgid ""
 "For this tutorial, we'll create an AnimationPlayer node and a sprite node as "
 "its child."
@@ -221,11 +183,9 @@ msgstr ""
 "В этом учебном пособии мы создадим узел AnimationPlayer и узел спрайта в "
 "качестве его потомка."
 
-#: ../../docs/tutorials/animation/introduction.rst:117
 msgid "Our scene setup"
 msgstr "Наши настройки сцены"
 
-#: ../../docs/tutorials/animation/introduction.rst:121
 msgid ""
 "AnimationPlayer inherits from Node instead of Node2D or Node3D, which means "
 "that the child nodes will not inherit the transform from the parent nodes "
@@ -235,7 +195,6 @@ msgstr ""
 "что дочерние узлы не наследуют преобразование от родительских узлов, "
 "поскольку в иерархии присутствует пустой узел."
 
-#: ../../docs/tutorials/animation/introduction.rst:125
 msgid ""
 "Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
 "a child of an AnimationPlayer node."
@@ -243,7 +202,6 @@ msgstr ""
 "Поэтому не рекомендуется добавлять узлы с 2D/3D преобразованием в качестве "
 "дочерних узлов узла AnimationPlayer."
 
-#: ../../docs/tutorials/animation/introduction.rst:128
 msgid ""
 "The sprite holds an image texture. We animate that sprite to move between "
 "two points on the screen. For this tutorial, use the default Godot icon as "
@@ -255,7 +213,6 @@ msgstr ""
 "проекте по умолчанию) в качестве текстуры спрайта. В качестве отправной "
 "точки переместите спрайт в левую позицию на экране."
 
-#: ../../docs/tutorials/animation/introduction.rst:133
 msgid ""
 "Select the AnimationPlayer node, then click the \"Animation\" button in the "
 "animation editor. From the list select \"New\" (|Add Animation|) to add a "
@@ -265,26 +222,21 @@ msgstr ""
 "анимации. В списке выберите «Новый» (|Add Animation|), чтобы добавить новую "
 "анимацию. И введите имя для анимации в диалоговом окне."
 
-#: ../../docs/tutorials/animation/introduction.rst:141
 msgid "Add a new animation"
 msgstr "Добавление новой анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:144
 msgid "Adding a track"
 msgstr "Добавление трека"
 
-#: ../../docs/tutorials/animation/introduction.rst:146
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
 "Чтобы добавить новый трек для нашего спрайта, выберите спрайт и посмотрите "
 "на панель инструментов:"
 
-#: ../../docs/tutorials/animation/introduction.rst:152
 msgid "Convenience buttons"
 msgstr "Удобные кнопки"
 
-#: ../../docs/tutorials/animation/introduction.rst:154
 msgid ""
 "These switches and buttons allow you to add keyframes for the selected "
 "node's location, rotation, and scale respectively."
@@ -292,7 +244,6 @@ msgstr ""
 "Эти переключатели позволяют добавлять ключевые кадры для местоположения, "
 "поворота и масштаба выбранного узла."
 
-#: ../../docs/tutorials/animation/introduction.rst:157
 msgid ""
 "Deselect rotation, because we are only interested in the location of our "
 "sprite for this tutorial and click on the key button."
@@ -300,7 +251,6 @@ msgstr ""
 "Отмените выбор вращения(rot), сейчас нас интересует только анимация "
 "местоположения нашего спрайта и нажмите кнопку ключа."
 
-#: ../../docs/tutorials/animation/introduction.rst:160
 #, fuzzy
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
@@ -309,7 +259,6 @@ msgstr ""
 "Поскольку у нас еще нет трека, настроенного для свойства transform/location, "
 "Godot спрашивает, должен ли он создать его для нас. Нажмите «Создать»."
 
-#: ../../docs/tutorials/animation/introduction.rst:163
 msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
@@ -317,15 +266,12 @@ msgstr ""
 "Наш новый трек создан и наш первый ключевой кадр находится в начале "
 "временной шкалы:"
 
-#: ../../docs/tutorials/animation/introduction.rst:169
 msgid "The sprite track"
 msgstr "Дорожка спрайта"
 
-#: ../../docs/tutorials/animation/introduction.rst:172
 msgid "The second keyframe"
 msgstr "Второй ключевой кадр"
 
-#: ../../docs/tutorials/animation/introduction.rst:174
 msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
@@ -333,7 +279,6 @@ msgstr ""
 "Теперь нам нужно указать позицию, куда должен направляться наш спрайт, и "
 "сколько времени потребуется, чтобы туда добраться."
 
-#: ../../docs/tutorials/animation/introduction.rst:177
 msgid ""
 "Let's say, we want it to take 2 seconds to go to the other point. By default "
 "the animation is set to last only 1 second, so change this in the timeline "
@@ -343,11 +288,9 @@ msgstr ""
 "умолчанию анимация длится всего 1 секунду, поэтому измените ее на 2 в "
 "элементах управления временной шкалой(в нижней части панели анимации)."
 
-#: ../../docs/tutorials/animation/introduction.rst:184
 msgid "Animation length"
 msgstr "Длительность анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:186
 #, fuzzy
 msgid ""
 "Click on the timeline header near the 2-second mark and move the sprite to "
@@ -356,34 +299,27 @@ msgstr ""
 "Нажмите на заголовок временной шкалы рядом с 2-секундной отметкой и "
 "переместите спрайт в другое место(например правее)."
 
-#: ../../docs/tutorials/animation/introduction.rst:189
 msgid ""
 "Again, click the key button in the toolbar. This creates our second keyframe."
 msgstr ""
 "Опять же, нажмите кнопку ключа на панели инструментов. Это создает наш "
 "второй ключевой кадр."
 
-#: ../../docs/tutorials/animation/introduction.rst:193
 msgid "Run the animation"
 msgstr "Запуск анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:195
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr "Нажмите на кнопку «Воспроизвести с начала» (|Play from beginning|)."
 
-#: ../../docs/tutorials/animation/introduction.rst:197
 msgid "Yay! Our animation runs:"
 msgstr "Ура! Наша анимация работает:"
 
-#: ../../docs/tutorials/animation/introduction.rst:202
 msgid "The animation"
 msgstr "Анимация"
 
-#: ../../docs/tutorials/animation/introduction.rst:205
 msgid "Back and forth"
 msgstr "Назад и вперед"
 
-#: ../../docs/tutorials/animation/introduction.rst:207
 msgid ""
 "Godot has an additional feature here. Like said before, Godot always "
 "calculates the frames between two keyframes. In a loop, the first keyframe "
@@ -394,11 +330,9 @@ msgstr ""
 "также является последним ключевым кадром, если ключевой кадр не указан в "
 "конце."
 
-#: ../../docs/tutorials/animation/introduction.rst:215
 msgid "Animation loop"
 msgstr "Цикл анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:217
 #, fuzzy
 msgid ""
 "If you set the animation length to 4 seconds now, the animation moves back "
@@ -409,12 +343,9 @@ msgstr ""
 "вперед и назад. Вы можете изменить это поведение, если измените режим цикла "
 "дорожки. Это описано в следующей главе."
 
-#: ../../docs/tutorials/animation/introduction.rst:222
-#: ../../docs/tutorials/animation/introduction.rst:230
 msgid "Track settings"
 msgstr "Настройки трека"
 
-#: ../../docs/tutorials/animation/introduction.rst:224
 msgid ""
 "Each track has a settings panel at the end, where you can set the update "
 "mode, the track interpolation, and the loop mode."
@@ -422,7 +353,6 @@ msgstr ""
 "Каждый трек имеет панель настроек в конце, где вы можете установить режим "
 "обновления, интерполяцию трека и режим зацикливания."
 
-#: ../../docs/tutorials/animation/introduction.rst:232
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
@@ -430,21 +360,17 @@ msgstr ""
 "Режим обновления дорожки сообщает Godot, когда обновлять значения свойств. "
 "Это может быть:"
 
-#: ../../docs/tutorials/animation/introduction.rst:235
 msgid "Continuous: Update the property on each frame"
 msgstr "Непрерывная(сontinuous): свойство обновляется в каждом кадре"
 
-#: ../../docs/tutorials/animation/introduction.rst:236
 msgid "Discrete: Only update the property on keyframes"
 msgstr "Дискретная(discrete): свойство обновляется только на ключевых кадрах"
 
-#: ../../docs/tutorials/animation/introduction.rst:237
 msgid "Trigger: Only update the property on keyframes or triggers"
 msgstr ""
 "Триггер(trigger): свойство обновляется только на ключевых кадрах или "
 "триггерах"
 
-#: ../../docs/tutorials/animation/introduction.rst:238
 msgid ""
 "Capture: The current value of a property is remembered, and it will blend "
 "with the first animation key found"
@@ -452,11 +378,9 @@ msgstr ""
 "Захват(capture): текущее значение свойства запоминается, и оно будет "
 "смешиваться с первым найденным ключом анимации"
 
-#: ../../docs/tutorials/animation/introduction.rst:243
 msgid "Track mode"
 msgstr "Режим трека"
 
-#: ../../docs/tutorials/animation/introduction.rst:245
 msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
@@ -464,7 +388,6 @@ msgstr ""
 "Для нормальной анимации используется режим «Непрерывная». Другие режимы "
 "используются для сложных анимаций."
 
-#: ../../docs/tutorials/animation/introduction.rst:248
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
@@ -472,11 +395,9 @@ msgstr ""
 "Интерполяция говорит Godot, как рассчитать значения кадра между ключевыми "
 "кадрами. Поддерживаются следующие режимы интерполяции:"
 
-#: ../../docs/tutorials/animation/introduction.rst:251
 msgid "Nearest: Set the nearest keyframe value"
 msgstr "Ближайший(Nearest): установить значение ближайшего ключевого кадра"
 
-#: ../../docs/tutorials/animation/introduction.rst:252
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
@@ -484,7 +405,6 @@ msgstr ""
 "Линейный(Linear): установить значение на основе вычисления линейной функции "
 "между двумя ключевыми кадрами"
 
-#: ../../docs/tutorials/animation/introduction.rst:254
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
@@ -492,11 +412,9 @@ msgstr ""
 "Кубическая(Cubic): установить значение на основе вычисления кубической "
 "функции между двумя ключевыми кадрами"
 
-#: ../../docs/tutorials/animation/introduction.rst:260
 msgid "Track interpolation"
 msgstr "Переходы трека"
 
-#: ../../docs/tutorials/animation/introduction.rst:262
 msgid ""
 "Cubic interpolation leads to a more natural movement, where the animation is "
 "slower at a keyframe and faster between keyframes. This is usually used for "
@@ -506,7 +424,6 @@ msgstr ""
 "переход между ключевыми кадрами. Это обычно используется для анимации "
 "персонажа. Линейная интерполяция создает ощущение роботизированного движения."
 
-#: ../../docs/tutorials/animation/introduction.rst:267
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
@@ -514,11 +431,9 @@ msgstr ""
 "Godot поддерживает два режима обработки зацикливания, которые влияют на "
 "анимацию:"
 
-#: ../../docs/tutorials/animation/introduction.rst:273
 msgid "Loop modes"
 msgstr "Режимы циклов"
 
-#: ../../docs/tutorials/animation/introduction.rst:275
 msgid ""
 "Clamp loop interpolation: When this is selected, the animation stops after "
 "the last keyframe for this track. When the first keyframe is reached again, "
@@ -529,7 +444,6 @@ msgstr ""
 "первый ключевой кадр будет достигнут снова, анимация вернется к своим "
 "значениям."
 
-#: ../../docs/tutorials/animation/introduction.rst:278
 msgid ""
 "Wrap loop interpolation: When this is selected, Godot calculates the "
 "animation after the last keyframe to reach the values of the first keyframe "
@@ -539,12 +453,9 @@ msgstr ""
 "последнего ключевого кадра, чтобы снова достичь значений первого ключевого "
 "кадра."
 
-#: ../../docs/tutorials/animation/introduction.rst:283
-#: ../../docs/tutorials/animation/introduction.rst:296
 msgid "Keyframes for other properties"
 msgstr "Ключевые кадры для других свойств"
 
-#: ../../docs/tutorials/animation/introduction.rst:285
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
@@ -552,7 +463,6 @@ msgstr ""
 "В Godot можно анимировать не только свойства трансформации. Любое свойство "
 "может иметь трек с ключевыми кадрами."
 
-#: ../../docs/tutorials/animation/introduction.rst:288
 #, fuzzy
 msgid ""
 "If you select your sprite while the animation panel is visible, you get a "
@@ -564,11 +474,9 @@ msgstr ""
 "кнопку, и Godot автоматически добавит трек и ключевой кадр к текущей "
 "анимации."
 
-#: ../../docs/tutorials/animation/introduction.rst:299
 msgid "Edit keyframes"
 msgstr "Редактирование ключевых кадров"
 
-#: ../../docs/tutorials/animation/introduction.rst:301
 msgid ""
 "For advanced use and to edit keyframes in detail, You can click on them to "
 "bring up the keyframe editor in the inspector. You can use this to directly "
@@ -578,11 +486,9 @@ msgstr ""
 "редактор ключевых кадров в инспекторе. Вы можете использовать это для "
 "редактирования значений выбранного ключевого кадра."
 
-#: ../../docs/tutorials/animation/introduction.rst:308
 msgid "Keyframe editor editing a key"
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:310
 msgid ""
 "Additionally, you can also edit the easing value for this keyframe by "
 "clicking and dragging the easing setting. This tells Godot, how to change "
@@ -593,7 +499,6 @@ msgstr ""
 "как изменять значения свойства, когда анимация достигает этого ключевого "
 "кадра."
 
-#: ../../docs/tutorials/animation/introduction.rst:314
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
@@ -601,11 +506,9 @@ msgstr ""
 "Используйте такой способ для настройки своей анимации, когда движение "
 "выглядит \"не очень\"."
 
-#: ../../docs/tutorials/animation/introduction.rst:318
 msgid "Advanced: Call Method tracks"
 msgstr "Дополнительно: Трек Вызова Метода"
 
-#: ../../docs/tutorials/animation/introduction.rst:320
 msgid ""
 "Godot's animation engine doesn't stop here. If you're already comfortable "
 "with Godot's scripting language :ref:`doc_gdscript` and :doc:`/classes/"
@@ -617,7 +520,6 @@ msgstr ""
 "знаете, что каждый узел в сцене является экземпляром класса и имеет "
 "множество методов которые можно вызывать."
 
-#: ../../docs/tutorials/animation/introduction.rst:326
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
@@ -625,7 +527,6 @@ msgstr ""
 "Например, тип узла :ref:`class_AudioStreamPlayer` имеет метод для "
 "воспроизведения аудиопотока."
 
-#: ../../docs/tutorials/animation/introduction.rst:329
 msgid ""
 "Wouldn't it be great to use a method at a specific keyframe in an animation? "
 "This is where \"Call Method Tracks\" come in handy. These tracks reference a "
@@ -639,7 +540,6 @@ msgstr ""
 "содержит имя и аргументы метода, который Godot должен вызывать при "
 "достижении этого ключевого кадра."
 
-#: ../../docs/tutorials/animation/introduction.rst:335
 msgid ""
 "To demonstrate, we're going to use a call method track to play audio at a "
 "specific keyframe. Normally to play audio you should use an audio track, but "
@@ -650,49 +550,40 @@ msgstr ""
 "воспроизведения аудио вы должны использовать “Трек Аудио Дорожки”, но для "
 "демонстрации мы собираемся сделать это следующим образом."
 
-#: ../../docs/tutorials/animation/introduction.rst:339
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:342
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:345
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:350
 msgid "Add Call Method Track"
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:352
 msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:358
 msgid "Select AudioStreamPlayer"
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:360
 msgid ""
 "Right click the timeline where Godot should play the sample and click the "
 "\"Insert Key\" option. This will bring up a list of methods that can be "
 "called for the AudioStreamPlayer node. Select the first one."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:367
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
 "`class_AudioStreamPlayer` node's \"play\" function and the stream plays."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction.rst:371
 msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."

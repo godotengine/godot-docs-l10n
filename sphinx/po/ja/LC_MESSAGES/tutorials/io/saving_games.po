@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/io/saving_games.rst:4
 msgid "Saving games"
 msgstr "ゲームの保存"
 
-#: ../../docs/tutorials/io/saving_games.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/io/saving_games.rst:9
 msgid ""
 "Save games can be complicated. For example, it may be desirable to store "
 "information from multiple objects across multiple levels. Advanced save game "
@@ -39,7 +36,6 @@ msgstr ""
 "ります。 これにより、ゲームがより複雑に成長するにつれて、保存機能を拡張できま"
 "す。"
 
-#: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
@@ -47,11 +43,9 @@ msgstr ""
 "ユーザー設定を保存する場合は、この目的で :ref:`ConfigFile "
 "<class_ConfigFile>` クラスを使用できます。"
 
-#: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
 msgstr "永続オブジェクトの識別"
 
-#: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
 "Firstly, we should identify what objects we want to keep between game "
 "sessions and what information we want to keep from those objects. For this "
@@ -63,17 +57,16 @@ msgstr ""
 "て保存するオブジェクトをマークおよび処理しますが、他の方法ももちろん可能で"
 "す。"
 
-#: ../../docs/tutorials/io/saving_games.rst:28
+#, fuzzy
 msgid ""
-"We will start by adding objects we wish to save to the \"Persist\" group. As "
-"in the :ref:`doc_scripting_continued` tutorial, we can do this through "
-"either the GUI or script. Let's add the relevant nodes using the GUI:"
+"We will start by adding objects we wish to save to the \"Persist\" group. We "
+"can do this through either the GUI or script. Let's add the relevant nodes "
+"using the GUI:"
 msgstr ""
 "保存するオブジェクトを \"Persist\" グループに追加することから始めます。\\ :"
 "ref:`doc_scripting_continued` チュートリアルのように、GUIまたはスクリプトを使"
 "用してこれを行うことができます。 GUIを使用して関連ノードを追加しましょう:"
 
-#: ../../docs/tutorials/io/saving_games.rst:34
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
@@ -82,11 +75,9 @@ msgstr ""
 "て、保存するすべてのオブジェクトを取得し、それをすべて保存するように指示でき"
 "ます:"
 
-#: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"
 msgstr "シリアル化"
 
-#: ../../docs/tutorials/io/saving_games.rst:56
 msgid ""
 "The next step is to serialize the data. This makes it much easier to read "
 "from and store to disk. In this case, we're assuming each member of group "
@@ -106,7 +97,6 @@ msgstr ""
 "す。ノードには、このデータを返す保存関数を含める必要があります。保存機能は次"
 "のようになります:"
 
-#: ../../docs/tutorials/io/saving_games.rst:119
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "value_of_variable }``, which will be useful when loading."
@@ -114,11 +104,9 @@ msgstr ""
 "これにより、スタイルが ``{ \"variable_name\":value_of_variable }`` の辞書が得"
 "られます。これはロード時に役立ちます。"
 
-#: ../../docs/tutorials/io/saving_games.rst:124
 msgid "Saving and reading data"
 msgstr "データの保存と読み取り"
 
-#: ../../docs/tutorials/io/saving_games.rst:126
 msgid ""
 "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file "
 "so we can write to it or read from it. Now that we have a way to call our "
@@ -134,7 +122,6 @@ msgstr ""
 "し、ファイルに保存しましょう。このようにすると、各行が独自のオブジェクトにな"
 "ります。そのため、ファイルからデータを簡単に引き出すことができます。"
 
-#: ../../docs/tutorials/io/saving_games.rst:202
 msgid ""
 "Game saved! Loading is fairly simple as well. For that, we'll read each "
 "line, use parse_json() to read it back to a dict, and then iterate over the "
@@ -147,7 +134,6 @@ msgstr ""
 "ります。ただし、最初にオブジェクトを作成する必要があり、ファイル名と親の値を"
 "使用してそれを実現できます。読み込み関数は次のとおりです:"
 
-#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -157,11 +143,9 @@ msgstr ""
 "して読み込むことができます！各オブジェクトは、保存する必要があるデータに応じ"
 "て異なるデータを格納できます。"
 
-#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
 msgstr "いくつかの注意事項"
 
-#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
@@ -173,7 +157,6 @@ msgstr ""
 "雑であり、個々のプロジェクトのニーズに基づいて大幅にカスタマイズする必要があ"
 "ります。"
 
-#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "

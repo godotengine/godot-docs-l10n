@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
 msgid "KDevelop"
 msgstr "KDevelop"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ 是一个适用于所有桌面平台的免费开源IDE."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
 msgid "Importing the project"
 msgstr "导入项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
 msgid "From the KDevelop's main screen select **Open Project**."
 msgstr "在KDevelop的主屏幕上选择 **Open Project** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
 msgid "KDevelop's main screen."
 msgstr "KDevelop的主屏幕."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
 msgid "Navigate to the Godot root folder and select it."
 msgstr "导航到这Godot根文件夹并选择它."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
 "Manager**."
 msgstr "在下一个屏幕上, 为 **项目管理器** 选择 **自定义构建系统** ."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
 msgid ""
 "After the project has been imported, open the project configuration by right-"
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
 "** option."
 msgstr ""
-"在导入项目后, 在 **项目** 面板中单击右键并选择 **打开配置..* *来打开项目配置."
+"在导入项目后，在\\ **项目**\\ 面板中单击右键并选择\\ **打开配置...** 来打开项"
+"目配置。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
@@ -66,67 +58,52 @@ msgstr ""
 "在 **Language Support(语言支持)** 下打开 **Includes/Imports(包含/导入)** 标签"
 "并添加以下路径:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
 msgstr "应用更改."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
 msgstr ""
 "在 **Custom Build System(自定义构建系统)** 下添加一个新的构建配置, 设置如下:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "Build Directory"
 msgstr "构建目录"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
 msgstr "*blank*"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
 msgstr "启用"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
 msgstr "**True**"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "Executable"
 msgstr "可执行文件名称"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "**scons**"
 msgstr "**scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid "Arguments"
 msgstr "参数"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr "参见 :ref:`doc_introduction_to_the_buildsystem`, 获取完整的参数列表."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
 msgid "Apply the changes and close the configuration window."
 msgstr "应用更改并关闭配置窗口."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 msgid "Debugging the project"
 msgstr "调试项目"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
 msgstr "从这顶部菜单选择 **Run > Configure Launches...** [运行>配置选项]."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
 msgid "Click **Add** to create a new launch configuration."
 msgstr "单击 **Add** 以创建新的启动配置."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
 msgid ""
 "Select **Executable** option and specify the path to your executable located "
 "in the ``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -137,7 +114,6 @@ msgstr ""
 "件的路径. 名称取决于你的构建配置, 例如: ``godot.x11.tools.64`` 用于64位X11平"
 "台, 并启用 ``tools`` ."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

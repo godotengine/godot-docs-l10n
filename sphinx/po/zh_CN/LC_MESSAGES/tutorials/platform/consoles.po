@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"
-msgstr "Godot支持的游戏机"
+msgstr "Godot 的游戏主机支持"
 
-#: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
 msgstr "主机平台发布流程"
 
-#: ../../docs/tutorials/platform/consoles.rst:9
 msgid ""
 "Regardless of the engine used to create the game, the process to publish a "
 "game to a console platform is as follows:"
 msgstr "无论使用哪种引擎制作游戏, 将游戏发布到游戏主机平台的流程如下:"
 
-#: ../../docs/tutorials/platform/consoles.rst:12
 msgid ""
 "Register a developer account on the console manufacturer's website, then "
 "sign NDAs and publishing contracts. This requires you to have a registered "
@@ -40,7 +36,6 @@ msgstr ""
 "在游戏机制造商的网站上注册一个开发者账号, 然后签署NDA和出版合同. 这需要你有一"
 "个注册的法人实体."
 
-#: ../../docs/tutorials/platform/consoles.rst:15
 msgid ""
 "Gain access to the publishing platform by passing the acceptance process. "
 "This can take up to several months. Note that this step is significantly "
@@ -52,7 +47,6 @@ msgstr ""
 "有成熟的发行商支持你的游戏, 这一步就会明显容易很多. 众所周知, 任天堂通常更接"
 "受小型开发商, 但这并不保证."
 
-#: ../../docs/tutorials/platform/consoles.rst:19
 msgid ""
 "Get access to developer tools and order a console specially made for "
 "developers (*devkit*). The cost of those devkits is confidential."
@@ -60,11 +54,9 @@ msgstr ""
 "获得使用开发者工具的权限, 并订购专门为开发者制作的控制台(*devkit*). 这些"
 "devkits的费用是保密的."
 
-#: ../../docs/tutorials/platform/consoles.rst:21
 msgid "Port the engine to the console platform or pay a company to do it."
 msgstr "把引擎移植到游戏机平台上, 或者花钱请一家公司来做."
 
-#: ../../docs/tutorials/platform/consoles.rst:22
 msgid ""
 "To be published, your game needs to be rated in the regions you'd like to "
 "sell it in. For example, in North America, the `ESRB <https://www.esrb.org/"
@@ -76,7 +68,6 @@ msgstr ""
 "www.esrb.org/>` __处理游戏评级. 在欧洲, 这是由 `PEGI <https://pegi.info/>` __"
 "完成的. 与更成熟的开发商相比, 独立开发商通常可以以更低的价格获得评级."
 
-#: ../../docs/tutorials/platform/consoles.rst:28
 msgid ""
 "Due to the complexity of the process, the budget to publish a game by "
 "yourself on a single console often exceeds $1,000 (this is a rough figure)."
@@ -84,17 +75,14 @@ msgstr ""
 "由于流程复杂, 自己在主机上发布一款游戏的预算往往超过1000美元(这是一个粗略的数"
 "字)."
 
-#: ../../docs/tutorials/platform/consoles.rst:32
 msgid "Official support"
 msgstr "官方支持"
 
-#: ../../docs/tutorials/platform/consoles.rst:34
 msgid ""
 "Godot supports the Linux-based Steam Deck. The reason other consoles are not "
 "officially supported are:"
-msgstr ""
+msgstr "Godot 支持基于 Linux 的 Steam Deck。其他主机尚未获得官方支持的原因有："
 
-#: ../../docs/tutorials/platform/consoles.rst:37
 msgid ""
 "To develop for consoles, one must be licensed as a company. As an open "
 "source project, Godot does not have such a legal figure."
@@ -102,7 +90,6 @@ msgstr ""
 "要为游戏机开发游戏, 必须获得公司许可. 作为一个开源项目,Godot没有这样的法律部"
 "分."
 
-#: ../../docs/tutorials/platform/consoles.rst:39
 msgid ""
 "Console SDKs are secret and covered by non-disclosure agreements. Even if we "
 "could get access to them, we could not publish the platform-specific code "
@@ -111,20 +98,17 @@ msgstr ""
 "游戏机的SDK是保密的, 并由保密协议保护. 即使我们可以访问它们, 我们也无法在开源"
 "许可下发布特定平台的代码."
 
-#: ../../docs/tutorials/platform/consoles.rst:42
 msgid ""
 "Consoles require specialized hardware to develop for, so regular individuals "
 "can't create games for them anyway."
 msgstr ""
 "游戏机的游戏开发需要专门的硬件, 因此普通人无论如何也无法为游戏机创建游戏."
 
-#: ../../docs/tutorials/platform/consoles.rst:45
 msgid ""
 "However, it is still possible to port your games to consoles thanks to "
 "services provided by third-party companies."
 msgstr "但是, 基于第三方公司提供的服务, 仍然可以将游戏移植到游戏机中."
 
-#: ../../docs/tutorials/platform/consoles.rst:50
 msgid ""
 "In practice, the process is quite similar to Unity and Unreal Engine, except "
 "that you need to contact a third-party developer to handle the porting "
@@ -137,11 +121,9 @@ msgstr ""
 "植过程. 换句话说, 在法律上, 没有任何一个引擎可以在不要求用户证明自己是授权的"
 "游戏机开发者的情况下发布游戏机导出模板. 这样做会违反控制台制造商的NDA."
 
-#: ../../docs/tutorials/platform/consoles.rst:58
 msgid "Third-party support"
 msgstr "第三方支持"
 
-#: ../../docs/tutorials/platform/consoles.rst:60
 msgid ""
 "Console ports of Godot are offered by third-party companies (which have "
 "ported Godot on their own). These companies also offer publishing of your "
@@ -150,11 +132,9 @@ msgstr ""
 "Godot的游戏机端口由第三方公司提供(它们自己移植了Godot). 这些公司还提供各种游"
 "戏机的游戏发布."
 
-#: ../../docs/tutorials/platform/consoles.rst:64
 msgid "Following is the list of providers:"
 msgstr "以下是提供者列表:"
 
-#: ../../docs/tutorials/platform/consoles.rst:66
 msgid ""
 "`Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ offers Switch "
 "and PS4 porting and publishing of Godot games."
@@ -162,7 +142,6 @@ msgstr ""
 "`Lone Wolf Technology <http://www.lonewolftechnology.com/>` _提供Switch和PS4"
 "的Godot游戏的移植和发布."
 
-#: ../../docs/tutorials/platform/consoles.rst:68
 msgid ""
 "`Pineapple Works <https://pineapple.works/>`_ offers Switch and Xbox One "
 "porting and publishing of Godot games."
@@ -170,7 +149,6 @@ msgstr ""
 "`Pineapple Works <https://pineapple.works/>` _提供Switch和Xbox One的Godot游戏"
 "的移植和发布."
 
-#: ../../docs/tutorials/platform/consoles.rst:71
 msgid ""
 "If your company offers porting and/or publishing services for Godot games, "
 "feel free to `open an issue or pull request <https://github.com/godotengine/"

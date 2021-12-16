@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:4
 msgid "Making main screen plugins"
 msgstr "Creando plugins para pantalla principal"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:7
 msgid "What this tutorial covers"
 msgstr "Qué cubre este tutorial"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
 msgid ""
 "As seen in the :ref:`doc_making_plugins` page, making a basic plugin that "
 "extends the editor is fairly easy. Main screen plugins allow you to create "
@@ -39,7 +36,6 @@ msgstr ""
 "junto a los botones \"2D\", \"3D\", \"Script\" y \"AssetLib\". Tales plugins "
 "de edición se conocen como \"plugins de pantalla principal\"."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
 msgid ""
 "This tutorial leads you through the creation of a basic main screen plugin. "
 "For the sake of simplicity, our main screen plugin will contain a single "
@@ -49,11 +45,9 @@ msgstr ""
 "principal básico. En aras de la simplicidad, nuestro plugin de pantalla "
 "principal contendrá un solo botón que imprime texto en la consola."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:20
 msgid "Initializing the plugin"
 msgstr "Inicializando el plugin"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
 msgid ""
 "First create a new plugin from the Plugins menu. For this tutorial, we'll "
 "put it in a folder called ``main_screen``, but you can use any name you'd "
@@ -63,7 +57,6 @@ msgstr ""
 "pondremos en una carpeta llamada ''main_screen'', pero puedes usar cualquier "
 "nombre que quieras."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:25
 msgid ""
 "The plugin script will come with ``_enter_tree()`` and ``_exit_tree()`` "
 "methods, but for a main screen plugin we need to add a few extra methods. "
@@ -74,7 +67,6 @@ msgstr ""
 "agregar algunos métodos adicionales. Agregue cinco métodos adicionales de "
 "tal manera que el script tenga este aspecto:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:58
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns ``true``. This function is automatically "
@@ -88,11 +80,9 @@ msgstr ""
 "este plugin agrega una nueva vista central al editor. Por ahora, dejaremos "
 "este script tal cual y volveremos a él más tarde."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:65
 msgid "Main screen scene"
 msgstr "Escena de pantalla inicial"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:67
 msgid ""
 "Create a new scene with a root node derived from ``Control`` (for this "
 "example plugin, we'll make the root node a ``CenterContainer``). Select this "
@@ -107,7 +97,6 @@ msgstr ""
 "vertical ''Expandir'' en el inspector. El panel ahora utiliza todo el "
 "espacio disponible en la ventana gráfica principal."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:74
 msgid ""
 "Next, let's add a button to our example main screen plugin. Add a ``Button`` "
 "node, and set the text to \"Print Hello\" or similar. Add a script to the "
@@ -117,7 +106,6 @@ msgstr ""
 "principal de ejemplo. Agregue un nodo ``Botón`` y establezca el texto en "
 "\"Imprimir Hola\" o similar. Agregue un script al botón como este:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
 "Then connect the \"pressed\" signal to itself. If you need help with "
 "signals, see the :ref:`doc_signals` article."
@@ -125,7 +113,6 @@ msgstr ""
 "Luego conecte la señal \"presionada\" a sí misma. Si necesita ayuda con las "
 "señales, consulte el artículo :ref:`doc_signals`."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:90
 msgid ""
 "We are done with the main screen panel. Save the scene as ``main_panel."
 "tscn``."
@@ -133,11 +120,9 @@ msgstr ""
 "Hemos terminado con el panel de la pantalla principal. Guarde la escena como "
 "``main_panel.tscn``."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:93
 msgid "Update the plugin script"
 msgstr "Actualizar el complemento de script (secuencia de comandos)"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
 msgid ""
 "We need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our main panel scene and places it where it needs to be. Here is "
@@ -147,7 +132,6 @@ msgstr ""
 "complemento instale nuestra escena del panel principal y la coloque donde "
 "debe estar. Aquí está el script del complemento completo:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:140
 msgid ""
 "A couple of specific lines were added. ``MainPanel`` is a constant that "
 "holds a reference to the scene, and we instance it into "
@@ -157,7 +141,6 @@ msgstr ""
 "que contiene una referencia a la escena, y la instanciamos en "
 "`main_panel_instance`."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we instance the main panel scene, and add them as children of specific parts "
@@ -175,7 +158,6 @@ msgstr ""
 "principal para que no compita por el espacio cuando se activa por primera "
 "vez el complemento."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
 msgid ""
 "The ``_exit_tree()`` function is called when the plugin is deactivated. If "
 "the main screen still exists, we call ``queue_free()`` to free the instance "
@@ -185,7 +167,6 @@ msgstr ""
 "desactivado. Si la pantalla principal aún existe, llamamos a `` queue_free "
 "() '' para liberar la instancia y eliminarla de la memoria."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
 msgid ""
 "The ``make_visible()`` function is overridden to hide or show the main panel "
 "as needed. This function is automatically called by the editor when the user "
@@ -196,7 +177,6 @@ msgstr ""
 "función cuando el usuario hace clic en los botones de la ventana principal "
 "en la parte superior del editor."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
 msgid ""
 "The ``get_plugin_name()`` and ``get_plugin_icon()`` functions control the "
 "displayed name and icon for the plugin's main viewport button."
@@ -205,7 +185,6 @@ msgstr ""
 "el nombre y el icono mostrados para el botón de la ventana principal del "
 "complemento."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:161
 msgid ""
 "Another function you can add is the ``handles()`` function, which allows you "
 "to handle a node type, automatically focusing the main screen when the type "
@@ -217,11 +196,9 @@ msgstr ""
 "cuando se selecciona el tipo. Esto es similar a cómo al hacer clic en un "
 "nodo 3D se cambiará automáticamente a la ventana gráfica 3D."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:167
 msgid "Try the plugin"
 msgstr "Prueba el plugin"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:169
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. Clicking it will take you to "
@@ -232,7 +209,6 @@ msgstr ""
 "en él, accederá a su nuevo complemento de la pantalla principal y el botón "
 "del medio imprimirá el texto."
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:173
 msgid ""
 "If you would like to try a finished version of this plugin, check out the "
 "plugin demos here: https://github.com/godotengine/godot-demo-projects/tree/"
@@ -242,7 +218,6 @@ msgstr ""
 "plugins aquí: https://github.com/godotengine/godot-demo-projects/tree/master/"
 "plugins"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:177
 msgid ""
 "If you would like to see a more complete example of what main screen plugins "
 "are capable of, check out the 2.5D demo projects here: https://github.com/"

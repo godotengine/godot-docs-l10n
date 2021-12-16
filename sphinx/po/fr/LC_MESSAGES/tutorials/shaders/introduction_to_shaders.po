@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Introduction to shaders"
+msgstr "Introduction aux exports GDScript"
+
+#, fuzzy
+msgid ""
+"This page explains what shaders are and will give you an overview of how "
+"they work in Godot. For a detailed reference of the engine's shading "
+"language, see :ref:`doc_shading_language`."
+msgstr ""
+"Ce document vous fournit quelques informations sur les shaders, spécifiques "
+"à Godot. Pour une référence détaillée du langage de shading dans Godot, voir "
+" :ref:`Godot shading language doc<doc_shading_language>`."
+
+msgid ""
+"Shaders are a special kind of program that runs on Graphics Processing Units "
+"(GPUs). They were initially used to shade 3D scenes but can nowadays do much "
+"more. You can use them to control how the engine draws geometry and pixels "
+"on the screen, allowing you to achieve all sorts of effects."
+msgstr ""
+
+msgid ""
+"Modern rendering engines like Godot draw everything with shaders: graphics "
+"cards can run thousands of instructions in parallel, leading to incredible "
+"rendering speed."
+msgstr ""
+
+msgid ""
+"Because of their parallel nature, though, shaders don't process information "
+"the way a typical program does. Shader code runs on each vertex or pixel in "
+"isolation. You cannot store data between frames either. As a result, when "
+"working with shaders, you need to code and think differently from other "
+"programming languages."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Suppose you want to update all the pixels in a texture to a given color. In "
+"GDScript, your code would use ``for`` loops::"
+msgstr ""
+"Supposons que vous vouliez changer tous les pixels d’une texture en une "
+"couleur donnée, dans le CPU vous écririez :"
+
+msgid ""
+"Your code is already part of a loop in a shader, so the corresponding code "
+"would look like this."
+msgstr ""
+
+msgid ""
+"The graphics card calls the ``fragment()`` function once or more for each "
+"pixel it has to draw. More on that below."
+msgstr ""
+
+#, fuzzy
+msgid "Shaders in Godot"
+msgstr "clés d'animation dans Godot"
+
+msgid ""
+"Godot provides a shading language based on the popular OpenGL Shading "
+"Language (GLSL) but simplified. The engine handles some of the lower-level "
+"initialization work for you, making it easier to write complex shaders."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In Godot, shaders are made up of three main functions: ``vertex()``, "
+"``fragment()``, and ``light()``."
+msgstr ""
+"Dans Godot, les shaders sont fait de trois fonctions principales : La "
+"fonction ``vertex()``, la fonction ``fragment()`` et la fonction ``light()``."
+
+#, fuzzy
+msgid ""
+"The ``vertex()`` function runs over all the vertices in the mesh and sets "
+"their positions and some other per-vertex variables."
+msgstr ""
+"La fonction ``vertex()`` s'exécute pour tous les sommets du mesh et définit "
+"leur position ainsi que quelques autres variables des sommets."
+
+#, fuzzy
+msgid ""
+"The ``fragment()`` function runs for every pixel covered by the mesh. It "
+"uses values output by the ``vertex()`` function, interpolated between the "
+"vertices."
+msgstr ""
+"La fonction ``fragment()`` s'exécute pour tous les pixels couverts par le "
+"mesh. Elle utilise les variables provenant de la fonction ``vertex()``. Les "
+"variables de la fonction ``vertex()`` sont interpolées entre les sommets "
+"pour fournir les valeurs pour la fonction ``fragment()``."
+
+#, fuzzy
+msgid ""
+"The ``light()`` function runs for every pixel and for every light. It takes "
+"variables from the ``fragment()`` function and from its previous runs."
+msgstr ""
+"La fonction ``light()`` s'exécute pour chaque pixel et chaque lumière. Elle "
+"prends des variables de la fonction ``fragment()`` et de ses exécutions "
+"précédentes."
+
+#, fuzzy
+msgid ""
+"The ``light()`` function won't run if the ``vertex_lighting`` render mode is "
+"enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** is "
+"enabled in the Project Settings. It's enabled by default on mobile platforms."
+msgstr ""
+"La fonction ``light()`` ne sera pas exécutée si le mode de rendu "
+"``vertex_lighting`` est activé, ou si **Rendering > Quality > Shading > "
+"Force Vertex Shading** est activé dans les paramètres du projet. (C'est "
+"activée par défaut sur les plateformes mobiles.)"
+
+msgid "Shader types"
+msgstr "Types de shader"
+
+#, fuzzy
+msgid ""
+"Instead of supplying a general-purpose configuration for all uses (2D, 3D, "
+"particles), you must specify the type of shader you're writing. Different "
+"types support different render modes, built-in variables, and processing "
+"functions."
+msgstr ""
+"Au lieu de fournir une configuration générale pour tous les usages (2D, 3D, "
+"particules), les shaders Godot doivent préciser à quoi ils sont destinés. "
+"Différents types supportent différents modes de rendu, variables intégrées "
+"et fonctions de traitement."
+
+#, fuzzy
+msgid ""
+"In Godot, all shaders need to specify their type in the first line, like so:"
+msgstr ""
+"Tous les shaders doivent spécifier leur type dans leur première ligne, dans "
+"le format suivant :"
+
+#, fuzzy
+msgid "Here are the available types:"
+msgstr "Il y a 6 types d'expressions :"
+
+#, fuzzy
+msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
+msgstr ":ref:`spatial <doc_spatial_shader>` : Pour le rendu 3D."
+
+#, fuzzy
+msgid ":ref:`canvas_item <doc_canvas_item_shader>` for 2D rendering."
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>` : Pour le rendu 2D."
+
+#, fuzzy
+msgid ":ref:`particles <doc_particle_shader>` for particle systems."
+msgstr ""
+":ref:`particles <doc_particle_shader>` : Pour les systèmes de particules."
+
+msgid "Render modes"
+msgstr "Mode de rendu"
+
+msgid ""
+"Shaders have optional render modes you can specify on the second line, after "
+"the shader type, like so:"
+msgstr ""
+
+msgid ""
+"Render modes alter the way Godot applies the shader. For example, the "
+"``unshaded`` mode makes the engine skip the built-in light processor "
+"function."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Each shader type has different render modes. See the reference for each "
+"shader type for a complete list of render modes."
+msgstr ""
+"Chaque type de shader a une liste différente de mode de rendus disponibles. "
+"Regardez la documentation de chaque type de shader pour une liste complète "
+"des modes de rendu."
+
+msgid "Processor functions"
+msgstr "Fonctions processeur"
+
+#, fuzzy
+msgid ""
+"Depending on the shader type, you can override different processor "
+"functions. For ``spatial`` and ``canvas_item``, you have access to "
+"``vertex()``, ``fragment()``, and ``light()``. For ``particles``, you only "
+"have access to ``vertex()``."
+msgstr ""
+"Selon le type de shader, différentes fonction processeur peuvent "
+"optionnellement être réécrites. Pour \"spatial\" et \"canvas_item\", il est "
+"possible de réécrire ``vertex``, ``fragment``, et ``light``. Pour \"particles"
+"\", seul ``vertex`` peut être réécrit."
+
+msgid "Vertex processor"
+msgstr "Processeur de sommet"
+
+#, fuzzy
+msgid ""
+"The ``vertex()`` processing function is called once for every vertex in "
+"``spatial`` and ``canvas_item`` shaders. For ``particles`` shaders, it is "
+"called once for every particle."
+msgstr ""
+"La fonction processeur ``vertex`` est appelée une fois pour chaque sommet "
+"dans les shaders \"spatial\" et \"canvas_item\". Pour les shaders \"particles"
+"\", elle est appelée une fois pour chaque particule."
+
+msgid ""
+"Each vertex in your world's geometry has properties like a position and "
+"color. The function modifies those values and passes them to the fragment "
+"function. You can also use it to send extra data to the fragment function "
+"using varyings."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"By default, Godot transforms your vertex information for you, which is "
+"necessary to project geometry onto the screen. You can use render modes to "
+"transform the data yourself; see the :ref:`Spatial shader doc "
+"<doc_spatial_shader>` for an example."
+msgstr ""
+"Par défaut, Godot prendra les informations de votre vertex et les "
+"transformera en conséquence pour les dessiner. Si cela n'est pas "
+"souhaitable, vous pouvez utiliser les modes de rendu pour transformer les "
+"données vous-même ; voir le :ref:`Spatial shader doc <doc_spatial_shader>` "
+"pour un exemple de ceci."
+
+msgid "Fragment processor"
+msgstr "Processeur de fragments"
+
+msgid ""
+"The ``fragment()`` processing function is used to set up the Godot material"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"parameters per pixel. This code runs on every visible pixel the object or "
+"primitive draws. It is only available in ``spatial`` and ``canvas_item`` "
+"shaders."
+msgstr ""
+"La fonction de traitement des ``fragment`` permet de régler les paramètres "
+"du matériau Godot par pixel. Ce code s'exécute sur chaque pixel visible de "
+"l'objet ou du dessein primitif. Il n'est disponible que dans les shaders "
+"\"spatial\" et \"canvas_item\"."
+
+#, fuzzy
+msgid ""
+"The standard use of the fragment function is to set up material properties "
+"used to calculate lighting. For example, you would set values for "
+"``ROUGHNESS``, ``RIM``, or ``TRANSMISSION``, which would tell the light "
+"function how the lights respond to that fragment. This makes it possible to "
+"control a complex shading pipeline without the user having to write much "
+"code. If you don't need this built-in functionality, you can ignore it and "
+"write your own light processing function, and Godot will optimize it away. "
+"For example, if you do not write a value to ``RIM``, Godot will not "
+"calculate rim lighting. During compilation, Godot checks to see if ``RIM`` "
+"is used; if not, it cuts all the corresponding code out. Therefore, you will "
+"not waste calculations on the effects that you do not use."
+msgstr ""
+"L'utilisation standard de la fonction de fragment consiste à définir les "
+"propriétés des matériaux qui seront utilisées pour calculer l'éclairage. Par "
+"exemple, vous pouvez définir des valeurs pour ``ROUGHNESS``, ``RIM``, ou "
+"``TRANSMISSION`` qui indiquent à la fonction lumière comment les lumières "
+"réagissent à ce fragment. Cela permet de contrôler un pipeline de shading "
+"complexe sans que l'utilisateur n'ait à écrire beaucoup de code. Si vous "
+"n'avez pas besoin de cette fonctionnalité intégrée, vous pouvez l'ignorer et "
+"écrire votre propre fonction de traitement de la lumière et Godot "
+"l'optimisera. Par exemple, si vous n'écrivez pas de valeur à ``RIM``, Godot "
+"ne calculera pas l'éclairage rim. Lors de la compilation, Godot vérifie si "
+"``RIM`` est utilisé ; si ce n'est pas le cas, il coupe tout le code "
+"correspondant. Par conséquent, vous ne gaspillerez pas les calculs sur des "
+"effets que vous n'utilisez pas."
+
+msgid "Light processor"
+msgstr "Processeur de lumière"
+
+#, fuzzy
+msgid ""
+"The ``light()`` processor runs per pixel too, and it runs once for every "
+"light that affects the object. It does not run if no lights affect the "
+"object. It exists as a function called inside the ``fragment()`` processor "
+"and typically operates on the material properties setup inside the "
+"``fragment()`` function."
+msgstr ""
+"Le processeur de ``light`` fonctionne aussi par pixel, mais aussi pour "
+"chaque lumière qui affecte l'objet (et ne fonctionne pas si aucune lumière "
+"n'affecte l'objet). Il existe sous la forme d'une fonction appelée à "
+"l'intérieur du processeur de ``fragment`` et opère typiquement sur les "
+"propriétés du matériau configurées à l'intérieur de la fonction ``fragment``."
+
+#, fuzzy
+msgid ""
+"The ``light()`` processor works differently in 2D than it does in 3D; for a "
+"description of how it works in each, see their documentation, :ref:"
+"`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders "
+"<doc_spatial_shader>`, respectively."
+msgstr ""
+"Le processeur ``light`` fonctionne différemment en 2D qu'en 3D ; pour une "
+"description de son fonctionnement dans chaque cas, voir leur documentation, :"
+"ref:`CanvasItem shaders <doc_canvas_item_shader>` et :ref:`Spatial shaders "
+"<doc_spatial_shader>`, respectivement."

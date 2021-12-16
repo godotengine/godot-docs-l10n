@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
 msgstr "Xcode"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
 "`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
 "can download it from the Mac App Store."
@@ -29,11 +27,9 @@ msgstr ""
 "`Xcode <https://developer.apple.com/xcode>`_ est un IDE gratuit pour "
 "uniquement macOS. Vous pouvez le télécharger sur le Mac App Store."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
 msgid "Importing the project"
 msgstr "Importation du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:12
 msgid ""
 "From Xcode's main screen create a new project using the **Other > External "
 "Build System** template."
@@ -41,7 +37,6 @@ msgstr ""
 "Depuis l'écran principal de Xcode, créez un nouveau projet en utilisant le "
 "modèle **Other > External Build System**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
 msgid ""
 "Open your build targets from the **Targets** section and select the **Info** "
 "tab."
@@ -49,40 +44,32 @@ msgstr ""
 "Ouvrez vos cibles de compilation à partir de la section **Targets** et "
 "sélectionnez l'onglet **Info**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
 msgid "Fill out the form with the following settings:"
 msgstr "Remplissez le formulaire avec les paramètres suivants :"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "Build Tool"
 msgstr "Build Tool"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
 msgstr ""
 "Un chemin complet vers l'exécutable **scons**, par exemple **/usr/local/bin/"
 "scons**"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid "Arguments"
 msgstr "Arguments"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "Voir :ref:`doc_introduction_to_the_buildsystem` pour une liste complète des "
 "arguments."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
 msgid "Directory"
 msgstr "Directory"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
 msgid "A full path to the Godot root folder"
 msgstr "Un chemin complet vers le dossier racine de Godot"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:33
 msgid ""
 "Add a Command Line Tool target which will be used for indexing the project "
 "by choosing **File > New > Target...**."
@@ -90,11 +77,9 @@ msgstr ""
 "Ajoutez une cible pour l'outil en ligne de commande qui sera utilisée pour "
 "l'indexation du projet en choisissant **File > New > Target...**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
 msgid "Select **OS X > Application > Command Line Tool**."
 msgstr "Sélectionnez **OS X > Application > Command Line Tool**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
@@ -102,7 +87,6 @@ msgstr ""
 "Donnez-lui un nom pour que vous sachiez qu'il ne faut pas compiler avec "
 "cette cible (e.g. ``GodotXcodeIndex``)."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
 msgid ""
 "For this target open the **Build Settings** tab and look for **Header Search "
 "Paths**."
@@ -110,7 +94,6 @@ msgstr ""
 "Pour cette cible, ouvrez l'onglet **Build Settings** et cherchez **Header "
 "Search Paths**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
 msgid ""
 "Set **Header Search Paths** to the absolute path to the Godot root folder. "
 "You need to include subdirectories as well. To achieve that, add two two "
@@ -122,7 +105,6 @@ msgstr ""
 "cela, ajoutez deux astérisques (``**``) à la fin du chemin, par exemple ``/"
 "Users/me/repos/godot-source/**``."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 msgid ""
 "Add the Godot source to the project by dragging and dropping it into the "
 "project file browser."
@@ -130,11 +112,9 @@ msgstr ""
 "Ajoutez la source Godot au projet en la faisant glisser dans le navigateur "
 "de fichiers du projet."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
 msgid "Uncheck **Create external build system project**."
 msgstr "Décochez **Create external build system project**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
 msgid ""
 "Next select **Create groups** for the **Added folders** option and check "
 "*only* your command line indexing target in the **Add to targets** section."
@@ -143,12 +123,10 @@ msgstr ""
 "cochez *seulement* votre cible d'indexation de ligne de commande dans la "
 "section **Add to targets**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
 msgid "Xcode will now index the files. This may take a few minutes."
 msgstr ""
 "Xcode va maintenant indexer les fichiers. Cela peut prendre quelques minutes."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
 msgid ""
 "Once Xcode is done indexing, you should have jump-to-definition, "
 "autocompletion, and full syntax highlighting."
@@ -156,11 +134,9 @@ msgstr ""
 "Une fois l'indexation de Xcode terminée, vous devriez avoir le saut à la "
 "définition, l'autocomplétion et la mise en évidence syntaxique complète."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
 msgid "Debugging the project"
 msgstr "Débogage du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
 msgid ""
 "To enable debugging support you need to edit the external build target's "
 "build and run schemes."
@@ -168,19 +144,15 @@ msgstr ""
 "Pour activer le support de débogage, vous devez modifier les schémas de "
 "compilation et d’exécution de la cible de compilation externe."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
 msgstr "Ouvrez l'éditeur de schéma de la cible de compilation externe."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
 msgid "Locate the **Build > Post Actions** section."
 msgstr "Localisez la section **Build > Post Actions**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
 msgid "Add a new script run action"
 msgstr "Ajouter un nouveau script d'action exécution"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
 msgid ""
 "Under **Provide build settings from** select your project. This allows to "
 "reference the project directory within the script."
@@ -188,7 +160,6 @@ msgstr ""
 "Sous **Provide build settings from**, sélectionnez votre projet. Cela permet "
 "de référencer le répertoire du projet dans le script."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
@@ -196,15 +167,12 @@ msgstr ""
 "Créer un script qui donnera au binaire un nom que Xcode pourra reconnaître, "
 "par exemple :"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
 msgid "Build the external build target."
 msgstr "Compiler la cible de compilation externe."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
 msgid "Open the scheme editor again and select **Run**."
 msgstr "Ouvrez à nouveau l'éditeur de schéma et sélectionnez **Run**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
@@ -212,11 +180,9 @@ msgstr ""
 "Définissez l'**Executable** au fichier que vous avez lié dans votre script "
 "d'action post-compilation."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
 msgid "Check **Debug executable**."
 msgstr "Cochez **Debug executable**."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
 "You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
 "the editor instead of the project manager, and the ``--path`` argument tells "
@@ -229,7 +195,6 @@ msgstr ""
 "comme un chemin *absolu* vers la racine du projet, et non le fichier "
 "``project.godot``)."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/osx/"
 "godot_main_osx.mm`` and run the project."
@@ -237,7 +202,6 @@ msgstr ""
 "Pour vérifier que tout fonctionne, mettez un breakpoint dans ``platform/osx/"
 "godot_main_osx.mm`` et lancez le projet."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

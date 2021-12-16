@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Shaders style guide"
+msgstr "C# 스타일 가이드"
+
+#, fuzzy
+msgid ""
+"This style guide lists conventions to write elegant shaders. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"여기에 있는 스타일 가이드는 GDScript를 아름답게 작성하도록 하는 관례를 나열했"
+"습니다. 이 스타일 가이드의 목적은 프로젝트 사이, 사람들의 토론 사이, 튜토리"
+"얼 사이에서 깨끗하고 읽기 쉬운 코드를 작성함과 동시에 일관성을 유지하도록 하"
+"는 것입니다. 이 기능이 자동 서식 툴의 개발에 도움이 되길 바랍니다."
+
+msgid ""
+"Since the Godot shader language is close to C-style languages and GLSL, this "
+"guide is inspired by Godot's own GLSL formatting. You can view an example of "
+"a GLSL file in Godot's source code `here <https://github.com/godotengine/"
+"godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
+msgstr ""
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+"스타일 가이드는 빡빡한 법전이 아닙니다. 아직은 아래의 가이드라인을 적용하지 "
+"못할 수도 있습니다. 그런 일이 발생하면 최선의 판단을 내리고 동료 개발자에게 "
+"통찰력을 요청하세요."
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+"일반적으로 프로젝트와 팀 내에서 코드를 일관되게 유지하는 것이 이 가이드를 따"
+"라가는 것보다 더 중요합니다."
+
+#, fuzzy
+msgid ""
+"Godot's built-in shader editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Godot의 내장 스크립트 편집기는 기본적으로 많은 규정을 사용합니다. 그것이 당신"
+"을 돕도록 하십시오."
+
+#, fuzzy
+msgid "Here is a complete shader example based on these guidelines:"
+msgstr "이 가이드라인을 기반으로 한 전체 클래스 예제입니다:"
+
+msgid "Formatting"
+msgstr "서식(Formatting)"
+
+msgid "Encoding and special characters"
+msgstr "인코딩과 특수 문자"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr ""
+"줄 바꿈을 위해 라인 피드 (**LF**) 문자를 사용합니다. CRLF나 CR은 사용하지 않"
+"습니다 *(편집기 기본 설정)*"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr ""
+"각 파일의 끝에 하나의 라인 피드 문자를 사용합니다. *(편집기 기본 설정)*"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+"`바이트 순서 표식 <https://ko.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%ED%8A%B8_"
+"%EC%88%9C%EC%84%9C_%ED%91%9C%EC%8B%9D>`_ 없이 **UTF-8** 인코딩을 사용합니다. "
+"*(편집기 기본 설정)*"
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr ""
+"들여쓰기로 스페이스바 대신 **Tab(탭)** 키를 사용합니다. *(편집기 기본 설정)*"
+
+msgid "Indentation"
+msgstr "들여쓰기(Indentation)"
+
+#, fuzzy
+msgid ""
+"Each indent level should be one tab greater than the block containing it."
+msgstr "들여쓰기 너비는 블록 바깥보다 한 칸 더 커야 됩니다."
+
+msgid "**Good**:"
+msgstr "**좋음**:"
+
+msgid "**Bad**:"
+msgstr "**나쁨**:"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"정규 코드 블록과 이어지는 줄을 구분하기 위해 2 칸 들여쓰기를 사용하세요."
+
+msgid "Line breaks and blank lines"
+msgstr "줄 바꿈 및 공백 줄"
+
+#, fuzzy
+msgid ""
+"For a general indentation rule, follow `the \"1TBS Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
+"recommends placing the brace associated with a control statement on the same "
+"line. Always use braces for statements, even if they only span one line. "
+"This makes them easier to refactor and avoids mistakes when adding more "
+"lines to an ``if`` statement or similar."
+msgstr ""
+"일반적인 들여쓰기 규칙으로, `The 'Allman Style' <https://en.wikipedia.org/"
+"wiki/Indentation_style#Allman_style>`_\\ 에 따라 제어문과 관련된 중괄호를 다"
+"음 줄에 놓으면서, 같은 높이의 들여쓰기를 하기를 권장합니다:"
+
+msgid "Blank lines"
+msgstr "공백 줄(Blank lines)"
+
+#, fuzzy
+msgid "Surround function definitions with one (and only one) blank line:"
+msgstr "함수와 클래스 정의를 두 개의 공백 줄로 묶습니다:"
+
+#, fuzzy
+msgid ""
+"Use one (and only one) blank line inside functions to separate logical "
+"sections."
+msgstr "논리 섹션을 분리하기 위해 함수 안에 하나의 공백 줄을 사용합니다."
+
+msgid "Line length"
+msgstr "줄 길이"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr "코드 한 줄은 100 문자 이내로 유지합니다."
+
+#, fuzzy
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two shaders opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+"가능하다면 80 문자 이내로 유지해보세요. 이렇게 하면 작은 화면에서도 코드를 읽"
+"기 쉽고, 외부 텍스트 편집기에서 양쪽에 두 스크립트가 열려있는 화면에서도 읽"
+"기 쉽습니다. 예를 들어 서로 다른 코드 개정판을 볼 때가 있죠."
+
+msgid "One statement per line"
+msgstr "한 줄에 하나의 명령문"
+
+msgid "Never combine multiple statements on a single line."
+msgstr ""
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr "유일한 예외라면 삼항(Ternary) 연산자일 것입니다:"
+
+msgid "Comment spacing"
+msgstr "주석(Comment) 간격"
+
+msgid ""
+"Regular comments should start with a space, but not code that you comment "
+"out. This helps differentiate text comments from disabled code."
+msgstr ""
+"일반 주석은 공백으로 시작해야 하지만 주석을 달은 코드는 공백으로 시작하지 않"
+"아야 합니다. 이렇게 하면 텍스트 주석을 비활성화된 코드와 구분하는 데 도움이 "
+"됩니다."
+
+msgid ""
+"Don't use multiline comment syntax if your comment can fit on a single line:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In the shader editor, to make the selected code a comment (or uncomment it), "
+"press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
+"the selected lines."
+msgstr ""
+"스크립트 편집기에서 선택한 코드를 주석으로 바꾸려면 <kbd>Ctrl</kbd> <kbd>K</"
+"kbd>\\ 를 누르세요. 누르면 선택한 줄의 처음 부분에 # 기호가 생깁니다."
+
+msgid "Whitespace"
+msgstr "공백"
+
+#, fuzzy
+msgid ""
+"Always use one space around operators and after commas. Also, avoid "
+"extraneous spaces in function calls."
+msgstr ""
+"연산자와 쉼표 뒤에는 한 칸을 띄어주세요. 그리고 딕셔너리 참조와 함수 호출에"
+"는 띄어쓰기를 피하세요."
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr "표현식을 세로로 정렬하기 위해 공백을 사용하지 마세요:"
+
+#, fuzzy
+msgid "Floating-point numbers"
+msgstr "부동 소수점 숫자 (실수)"
+
+msgid ""
+"Always specify at least one digit for both the integer and fractional part. "
+"This makes it easier to distinguish floating-point numbers from integers, as "
+"well as distinguishing numbers greater than 1 from those lower than 1."
+msgstr ""
+
+#, fuzzy
+msgid "Accessing vector members"
+msgstr "벡터의 합"
+
+msgid ""
+"Use ``r``, ``g``, ``b``, and ``a`` when accessing a vector's members if it "
+"contains a color. If the vector contains anything else than a color, use "
+"``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
+"better understand what the underlying data represents."
+msgstr ""
+
+msgid "Naming conventions"
+msgstr "명명 규칙"
+
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code."
+msgstr ""
+"이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깨면 코드가 기본 "
+"제공 명명 규칙과 충돌해서 일관되지 않게 됩니다."
+
+msgid "Functions and variables"
+msgstr "함수와 변수"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr "함수와 변수 이름에는 스네이크\\_표기법(snake\\_case)을 사용하세요:"
+
+msgid "Constants"
+msgstr "상수"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr ""
+"상수\\_표기법(CONSTANT\\_CASE)으로 상수를 작성하세요. 다시 말해, 모든 단어는 "
+"대문자로 하고 띄어쓰기 대신 밑줄 (\\_)을 사용하세요:"
+
+msgid "Code order"
+msgstr "코드 순서"
+
+#, fuzzy
+msgid "We suggest to organize shader code this way:"
+msgstr "제안하는 GDScript 코드 구조는 다음과 같습니다:"
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+"코드를 위에서 아래로 쉽게 읽을 수 있도록 순서를 최적화했으며, 코드를 처음 읽"
+"는 개발자가 어떻게 작동하는지 이해하고 변수 선언 순서와 관련된 오류를 방지할 "
+"수 있습니다."
+
+#, fuzzy
+msgid "This code order follows two rules of thumb:"
+msgstr "이 코드 순서는 네 가지 규칙을 따릅니다:"
+
+#, fuzzy
+msgid "Metadata and properties first, followed by methods."
+msgstr "속성과 시그널이 첫 번째로 옵니다. 그 뒤는 메서드가 나옵니다."
+
+msgid ""
+"\"Public\" comes before \"private\". In a shader language's context, \"public"
+"\" refers to what's easily adjustable by the user (uniforms)."
+msgstr ""
+
+msgid "Local variables"
+msgstr "지역 변수(Local Variables)"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+"지역 변수를 처음 사용할 때와 최대한 가깝게 선언하세요. 이렇게 하면 변수가 선"
+"언된 위치를 찾기 위해 너무 많이 스크롤하지 않고도 코드를 더 쉽게 따라갈 수 있"
+"습니다."

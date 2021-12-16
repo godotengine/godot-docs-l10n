@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/io/background_loading.rst:4
 msgid "Background loading"
 msgstr "バックグラウンド読み込み"
 
-#: ../../docs/tutorials/io/background_loading.rst:6
 msgid ""
 "When switching the main scene of your game (e.g. going to a new level), you "
 "might want to show a loading screen with some indication that progress is "
@@ -38,11 +36,9 @@ msgstr ""
 "のドキュメントでは、ロード画面をよりスムーズにするために "
 "``ResourceInteractiveLoader`` クラスを使用する代替方法について説明します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:15
 msgid "ResourceInteractiveLoader"
 msgstr "リソースインタラクティブローダー"
 
-#: ../../docs/tutorials/io/background_loading.rst:17
 msgid ""
 "The ``ResourceInteractiveLoader`` class allows you to load a resource in "
 "stages. Every time the method ``poll`` is called, a new stage is loaded, and "
@@ -56,19 +52,15 @@ msgstr ""
 "ドされるサブリソースです。 たとえば、10個の画像を読み込むシーンを読み込む場"
 "合、各画像は1つのステージになります。"
 
-#: ../../docs/tutorials/io/background_loading.rst:24
 msgid "Usage"
 msgstr "使用法"
 
-#: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
 msgstr "使用法は一般的に以下の通りです"
 
-#: ../../docs/tutorials/io/background_loading.rst:29
 msgid "Obtaining a ResourceInteractiveLoader"
 msgstr "リソースインタラクティブローダーの取得"
 
-#: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
 "This method will give you a ResourceInteractiveLoader that you will use to "
 "manage the load operation."
@@ -76,11 +68,9 @@ msgstr ""
 "このメソッドを使用すると、ロード操作の管理に使用するリソースインタラクティブ"
 "ローダーが提供されます。"
 
-#: ../../docs/tutorials/io/background_loading.rst:39
 msgid "Polling"
 msgstr "ポーリング"
 
-#: ../../docs/tutorials/io/background_loading.rst:45
 msgid ""
 "Use this method to advance the progress of the load. Each call to ``poll`` "
 "will load the next stage of your resource. Keep in mind that each stage is "
@@ -92,7 +82,6 @@ msgstr ""
 "などの「アトミック」リソース全体であるため、ロードするのに数フレームかかるこ"
 "とに注意してください。"
 
-#: ../../docs/tutorials/io/background_loading.rst:50
 msgid ""
 "Returns ``OK`` on no errors, ``ERR_FILE_EOF`` when loading is finished. Any "
 "other return value means there was an error and loading has stopped."
@@ -100,15 +89,12 @@ msgstr ""
 "エラーがなければ ``OK`` を返し、読み込みが完了すると ``ERR_FILE_EOF`` を返し"
 "ます。 その他の戻り値は、エラーが発生してロードが停止したことを意味します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:54
 msgid "Load progress (optional)"
 msgstr "読み込みの進行状況(オプション)"
 
-#: ../../docs/tutorials/io/background_loading.rst:56
 msgid "To query the progress of the load, use the following methods:"
 msgstr "読み込みの進行状況を確認するには、次のメソッドを使用します:"
 
-#: ../../docs/tutorials/io/background_loading.rst:63
 msgid ""
 "``get_stage_count`` returns the total number of stages to load. "
 "``get_stage`` returns the current stage being loaded."
@@ -116,11 +102,9 @@ msgstr ""
 "``get_stage_count`` は、読み込むステージの合計数を返します。 ``get_stage`` "
 "は、現在読み込まれているステージを返します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:67
 msgid "Forcing completion (optional)"
 msgstr "強制的に完了(オプション)"
 
-#: ../../docs/tutorials/io/background_loading.rst:73
 msgid ""
 "Use this method if you need to load the entire resource in the current "
 "frame, without any more steps."
@@ -128,22 +112,18 @@ msgstr ""
 "これ以上手順を実行せずに、現在のフレームのリソース全体をロードする必要がある"
 "場合は、このメソッドを使用します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:77
 msgid "Obtaining the resource"
 msgstr "リソースの取得"
 
-#: ../../docs/tutorials/io/background_loading.rst:83
 msgid ""
 "If everything goes well, use this method to retrieve your loaded resource."
 msgstr ""
 "すべてがうまくいけば、このメソッドを使用して読み込まれたリソースを取得しま"
 "す。"
 
-#: ../../docs/tutorials/io/background_loading.rst:87
 msgid "Example"
 msgstr "例"
 
-#: ../../docs/tutorials/io/background_loading.rst:89
 msgid ""
 "This example demonstrates how to load a new scene. Consider it in the "
 "context of the :ref:`doc_singletons_autoload` example."
@@ -151,7 +131,6 @@ msgstr ""
 "この例は、新しいシーンをロードする方法を示しています。 例題、\\ :ref:"
 "`doc_singletons_autoload` のコンテキストで考察してみましょう。"
 
-#: ../../docs/tutorials/io/background_loading.rst:92
 msgid ""
 "First, we set up some variables and initialize the ``current_scene`` with "
 "the main scene of the game:"
@@ -159,7 +138,6 @@ msgstr ""
 "まず、いくつかの変数を設定し、ゲームのメインシーンで ``current_scene`` を初期"
 "化します:"
 
-#: ../../docs/tutorials/io/background_loading.rst:107
 msgid ""
 "The function ``goto_scene`` is called from the game when the scene needs to "
 "be switched. It requests an interactive loader, and calls "
@@ -173,7 +151,6 @@ msgstr ""
 "た、プログレスバーまたはロード画面を表示できる「ロード」アニメーションも開始"
 "します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:129
 msgid ""
 "``_process`` is where the loader is polled. ``poll`` is called, and then we "
 "deal with the return value from that call. ``OK`` means keep polling, "
@@ -187,7 +164,6 @@ msgstr ""
 "発生したことを意味します。また、ロード画面が表示されるように、1フレームをス"
 "キップします( ``wait_frames`` を介して、\\ ``goto_scene`` 関数で設定)。"
 
-#: ../../docs/tutorials/io/background_loading.rst:135
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
 "thread. Some stages might load fast, which means we might be able to cram "
@@ -201,7 +177,6 @@ msgstr ""
 "``time_max`` の値よりもはるかに大きくなる可能性があるため、タイミングを正確に"
 "制御できないことに注意してください。"
 
-#: ../../docs/tutorials/io/background_loading.rst:172
 msgid ""
 "Some extra helper functions. ``update_progress`` updates a progress bar, or "
 "can also update a paused animation (the animation represents the entire load "
@@ -215,11 +190,9 @@ msgstr ""
 "ンをツリーに置きます。 ロードされるシーンなので、ローダーから取得したリソース"
 "で ``instance()`` を呼び出す必要があります。"
 
-#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr "複数のスレッドの使用"
 
-#: ../../docs/tutorials/io/background_loading.rst:201
 msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
@@ -227,11 +200,9 @@ msgstr ""
 "リソースインタラクティブローダーは、複数のスレッドから使用できます。以下の点"
 "に注意してください:"
 
-#: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
 msgstr "セマフォを使用する"
 
-#: ../../docs/tutorials/io/background_loading.rst:207
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
 "``Semaphore`` to sleep (instead of a busy loop or anything similar)."
@@ -240,11 +211,9 @@ msgstr ""
 "ループまたは同様のものの代わりに) ``セマフォ(Semaphore)`` を使用してスリープ"
 "します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr "ポーリング中にメイン スレッドをブロックしない"
 
-#: ../../docs/tutorials/io/background_loading.rst:213
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
 "class, don't lock the main thread while you call ``poll`` on your loader "
@@ -261,11 +230,9 @@ msgstr ""
 "機している間にメインスレッドがミューテックスを待機している場合、デッドロック"
 "を引き起こす可能性があります。"
 
-#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr "サンプルクラス"
 
-#: ../../docs/tutorials/io/background_loading.rst:224
 msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
@@ -273,11 +240,9 @@ msgstr ""
 "スレッドでリソースをロードするためのサンプルクラスはここです: :download:"
 "`resource_queue.gd <files/resource_queue.gd>`\\ 。使用法は次のとおりです:"
 
-#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr "スレッドを開始するクラスをインスタンスした後に呼び出します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:237
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
@@ -285,18 +250,15 @@ msgstr ""
 "リソースをキューに入れます。キューの先頭に置く場合は、オプションの引数 "
 "\"p_in_front\" を使用します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr "キューからリソースを削除し、行われた読み込みを破棄します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:250
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 "リソースが完全に読み込まれて取得できる状態にある場合は、\\ ``true`` を返しま"
 "す。"
 
-#: ../../docs/tutorials/io/background_loading.rst:256
 msgid ""
 "Get the progress of a resource. Returns -1 if there was an error (for "
 "example if the resource is not in the queue), or a number between 0.0 and "
@@ -309,7 +271,6 @@ msgstr ""
 "を返します。主に装飾を目的(進行状況バーの更新など)に使用し、\\ ``is_ready`` "
 "を使用してリソースが実際に準備できているかどうかを確認します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:266
 msgid ""
 "Returns the fully loaded resource, or ``null`` on error. If the resource is "
 "not fully loaded (``is_ready`` returns ``false``), it will block your thread "
@@ -321,11 +282,9 @@ msgstr ""
 "レッドがブロックされ、読み込みが終了します。リソースがキューにない場合は "
 "``ResourceLoader::load`` を呼び出して、通常どおりに読み込んで返します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr "例:"
 
-#: ../../docs/tutorials/io/background_loading.rst:305
 #, fuzzy
 msgid ""
 "**Note**: this code, in its current form, is not tested in real world "

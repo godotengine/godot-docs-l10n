@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:4
 msgid "AR/VR primer"
 msgstr "Primer AR/VR"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:6
 msgid ""
 "This tutorial gives you a springboard into the world of AR and VR in the "
 "Godot game engine."
@@ -29,7 +27,6 @@ msgstr ""
 "Este tutorial te da un trampolín al mundo de la RA y la RV en el motor del "
 "juego de Godot."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:8
 msgid ""
 "A new architecture was introduced in Godot 3 called the AR/VR Server. On top "
 "of this architecture, specific implementations are available as interfaces, "
@@ -52,11 +49,9 @@ msgstr ""
 "se documentarán en las interfaces pertinentes y quedan fuera del ámbito de "
 "este manual."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:17
 msgid "AR/VR server"
 msgstr "Servidor AR/VR"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:19
 msgid ""
 "When Godot starts, each available interface will make itself known to the AR/"
 "VR server. GDNative interfaces are setup as singletons; as long as they are "
@@ -68,7 +63,6 @@ msgstr ""
 "mientras se añadan a la lista de singletons GDNative en su proyecto, se "
 "darán a conocer al servidor."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:23
 msgid ""
 "You can use the function :ref:`get_interfaces() "
 "<class_ARVRServer_method_get_interfaces>` to return a list of available "
@@ -89,11 +83,9 @@ msgstr ""
 "y da salida a la pantalla en el escritorio, lo que la hace ideal para la "
 "creación de prototipos o un tutorial como este."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:31
 msgid "To enable an interface, you execute the following code:"
 msgstr "Para activar una interfaz, ejecutarás el siguiente código:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:48
 msgid ""
 "This code finds the interface we wish to use, initializes it and, if that is "
 "successful, binds the main viewport to the interface. This last step gives "
@@ -105,7 +97,6 @@ msgstr ""
 "da un cierto control sobre el viewport a la interfaz que permite hacer "
 "automáticamente cosas como la representación estereoscópica en el viewport."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:52
 msgid ""
 "For our mobile VR interface, and any interface where the main input is "
 "directly displayed on screen, the main viewport needs to be the viewport "
@@ -125,7 +116,6 @@ msgstr ""
 "que mostrará la salida estereoscópica completamente procesada en el "
 "dispositivo."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:59
 msgid ""
 "Finally, you should only initialize an interface once; switching scenes and "
 "reinitializing interfaces will just introduce a lot of overhead. If you want "
@@ -142,11 +132,9 @@ msgstr ""
 "desactivarías el auricular una vez que estás en VR, esto puede ser "
 "desconcertante para el jugador."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:66
 msgid "New AR/VR nodes"
 msgstr "Nuevo Nodos AR/VR"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:68
 msgid ""
 "Three new node types have been added for supporting AR and VR in Godot and "
 "one additional node type especially for AR. These are:"
@@ -154,12 +142,10 @@ msgstr ""
 "Se han añadido tres nuevos tipos de nodos para soportar AR y VR en Godot y "
 "un tipo de nodo adicional especialmente para AR. Estos son:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:71
 msgid ":ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world"
 msgstr ""
 ":ref:`ARVROrigin <class_ARVROrigin>` - nuestro punto origen en el mundo"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:72
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
@@ -167,7 +153,6 @@ msgstr ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - una subclase especial de la cámara, "
 "que es rastreada posicionalmente"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:73
 msgid ""
 ":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
@@ -175,7 +160,6 @@ msgstr ""
 ":ref:`ARVRController <class_ARVRController>` - una nueva clase espacial, que "
 "rastrea la ubicación de un controlador"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:74
 msgid ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - an anchor point for an AR "
 "implementation mapping a real world location into your virtual world"
@@ -184,7 +168,6 @@ msgstr ""
 "implementación de RA mapeando una ubicación del mundo real en su mundo "
 "virtual"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:76
 msgid ""
 "The first two must exist in your scene for AR/VR to work and this tutorial "
 "focuses purely on them."
@@ -192,7 +175,6 @@ msgstr ""
 "Los dos primeros deben existir en tu escena para que el AR/VR funcione y "
 "este tutorial se centra puramente en ellos."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:79
 msgid ""
 ":ref:`ARVROrigin <class_ARVROrigin>` is an important node, you must have one "
 "and only one of these somewhere in your scene. This node maps the center of "
@@ -219,7 +201,6 @@ msgstr ""
 "la habitación, la ubicación del HMD es rastreada en relación a esta posición "
 "central y el rastreo es espejo en el mundo virtual."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
 "To keep things simple, when you physically move around your room, the ARVR "
 "Origin point stays where it is, the position of the camera and controllers "
@@ -235,7 +216,6 @@ msgstr ""
 "implementas un sistema de teleportación, es la posición del punto de origen "
 "la que tendrás que ajustar."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:95
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be "
 "a part of your scene and it must always be a child node of your origin node. "
@@ -258,7 +238,6 @@ msgstr ""
 "ajustes del plano cercano y lejano. El FOV, la relación de aspecto y el modo "
 "de proyección son todos ignorados."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:103
 msgid ""
 "Note that, for our native mobile VR implementation, there is no positional "
 "tracking, only the orientation of the phone and by extension, the HMD is "
@@ -270,7 +249,6 @@ msgstr ""
 "el HMD es rastreado. Esta implementación coloca artificialmente la cámara a "
 "una altura (Y) de 1,85."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:107
 msgid ""
 "Conclusion: your minimum setup in your scene to make AR or VR work should "
 "look like this:"
@@ -278,7 +256,6 @@ msgstr ""
 "Conclusión: la configuración mínima para hacer que una escena AR o VR "
 "funcione, debería verse así:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:111
 msgid ""
 "And that's all you need to get started with the native mobile interface. "
 "Obviously, you need to add something more into your scene, so there is "
@@ -290,25 +267,24 @@ msgstr ""
 "que ver, pero después de eso, puedes exportar el juego al teléfono que "
 "quieras, ponerlo en un visor y listo."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:116
 msgid "Official plugins and resources"
 msgstr "Plugins oficiales y recursos"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:118
+#, fuzzy
 msgid ""
 "As mentioned earlier, Godot does not support the various VR and AR SDKs out "
 "of the box, you need a plugin for the specific SDK you want to use. There "
 "are several official plugins available in the `GodotVR Repository <https://"
-"github.com/GodotVR>`_."
+"github.com/GodotVR>`__."
 msgstr ""
 "Como se mencionó anteriormente, Godot no soporta los diferentes SDKs de RV y "
 "AR fuera de la caja, necesitas un plugin para el SDK específico que quieras "
 "usar. Hay varios plugins oficiales disponibles en el `GodotVR Repository "
 "<https://github.com/GodotVR>`__."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:122
+#, fuzzy
 msgid ""
-"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
+"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`__ "
 "provides support for the Oculus Go and Oculus Quest. The Quest will require "
 "additional setup documented in :ref:`doc_developing_for_oculus_quest`."
 msgstr ""
@@ -317,34 +293,33 @@ msgstr ""
 "configuración adicional documentada en :ref:"
 "`doc_developing_for_oculus_quest`."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:125
+#, fuzzy
 msgid ""
-"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
+"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`__ (not to be "
 "confused with OpenXR) supports the OpenVR SDK used by Steam."
 msgstr ""
 "`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (no confundir con "
 "OpenXR) soporta el SDK de OpenVR usado por Steam."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:127
+#, fuzzy
 msgid ""
-"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ supports the "
+"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`__ supports the "
 "Oculus SDK (desktop headsets only)."
 msgstr ""
 "`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ soporta el SDK de "
 "Oculus (sólo auriculares de escritorio)."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:129
+#, fuzzy
 msgid ""
-"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`__ supports "
 "OpenHMD, an open source API and drivers for headsets."
 msgstr ""
 "`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ soporta OpenHMD, "
 "una API de código abierto y drivers para auriculares."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:131
 #, fuzzy
 msgid ""
-"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`__ supports OpenXR, "
 "an open standard for VR and AR software. Tested with SteamVR, Monada and "
 "Oculus OpenXR runtimes."
 msgstr ""
@@ -353,42 +328,38 @@ msgstr ""
 "temprana de desarrollo, sólo soporta Linux y requiere una configuración "
 "extra descrita en el repositorio."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:134
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
 "Estos plugins pueden ser descargados de GitHub o de la Biblioteca de "
 "Recursos de Godot."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:136
 msgid "In addition to the plugins, there are several official demos."
 msgstr "Además de los plugins, hay varias demostraciones oficiales."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:138
-msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
+#, fuzzy
+msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__."
 msgstr "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:139
+#, fuzzy
 msgid ""
-"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`__ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (el "
 "tutorial de este proyecto es :ref:`doc_vr_starter_tutorial_part_one`)."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:141
+#, fuzzy
 msgid ""
-"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, que muestra "
 "implementaciones de características de RV como el movimiento y la recogida "
 "de objetos."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr "Otras cosas a considerar"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
@@ -396,7 +367,6 @@ msgstr ""
 "Hay algunos otros temas que necesitamos tocar brevemente en este manual que "
 "son importantes de conocer."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:150
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -428,7 +398,6 @@ msgstr ""
 "ejemplo, si lo establecemos en un valor de 10, cambia nuestro sistema de "
 "coordenadas de modo que 10 unidades = 1 metro."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:161
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
 "Especially VR taxes your game a lot more than most people realize. For "
@@ -441,7 +410,6 @@ msgstr ""
 "pero incluso para los juegos de escritorio, hay tres factores que hacen la "
 "vida extra difícil:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -453,7 +421,6 @@ msgstr ""
 "apoyo a la nueva extensión MultiView OpenGL en mente, todavía hay una carga "
 "de trabajo extra en la prestación de imágenes para ambos ojos"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -468,7 +435,6 @@ msgstr ""
 "funcionen a un nivel estable de 90fps para asegurarte de que tus usuarios no "
 "se mareen de inmediato."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -481,7 +447,6 @@ msgstr ""
 "renderizando cada ojo a 2160x2400. Esto es menos problemático para la "
 "mayoría de las aplicaciones de RA."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

@@ -1,0 +1,464 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript format strings"
+msgstr "Форматований текст GDScript"
+
+msgid ""
+"GDScript offers a feature called *format strings*, which allows reusing text "
+"templates to succinctly create different but similar strings."
+msgstr ""
+"GDScript пропонує функцію під назвою *форматований текст*, яка дозволяє "
+"повторно використовувати текстові шаблони для створення короткого, але "
+"схожого тексту."
+
+msgid ""
+"Format strings are just like normal strings, except they contain certain "
+"placeholder character-sequences. These placeholders can then easily be "
+"replaced by parameters handed to the format string."
+msgstr ""
+"Форматований текст (рядок, строка) подібний до звичайного тексту (рядка, "
+"строки), за винятком того, що вони містять певні послідовності символів-"
+"заповнювачів. Ці заповнювачі потім можуть бути легко замінені параметрами, "
+"переданими до форматованого тексту."
+
+msgid ""
+"As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
+"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"Notice the placeholder is in the middle of the string; modifying it without "
+"format strings could be cumbersome."
+msgstr ""
+"Наприклад, за допомогою заповнювача ``%s``, форматований текст ``\"Hello %s, "
+"how are you?`` може бути легко змінений на ``\"Hello World, how are you?"
+"\"``. Зауважте, що заповнювач знаходиться посередині текста; модифікація "
+"його без форматованого тексту може бути громіздкою."
+
+msgid "Usage in GDScript"
+msgstr "Використання в GDScript"
+
+msgid "Examine this concrete GDScript example:"
+msgstr "Ознайомтеся з цим конкретним прикладом GDScript:"
+
+msgid ""
+"Placeholders always start with a ``%``, but the next character or "
+"characters, the *format specifier*, determines how the given value is "
+"converted to a string."
+msgstr ""
+"Заповнювачі завжди починаються з символу ``%``, але наступний символ, або "
+"символи, *специфікатор формату*, вони визначають, як задане значення "
+"перетворюється на текст."
+
+msgid ""
+"The ``%s`` seen in the example above is the simplest placeholder and works "
+"for most use cases: it converts the value by the same method by which an "
+"implicit String conversion or ``str()`` would convert it. Strings remain "
+"unchanged, Booleans turn into either ``\"True\"`` or ``\"False\"``, an "
+"integral or real number becomes a decimal, other types usually return their "
+"data in a human-readable string."
+msgstr ""
+"Видимий в наведеному вище прикладі ``%s`` є найпростішим заповнювачем і "
+"працює для більшості випадків: він перетворює значення тим же методом, що і "
+"перетворення String, або str(). Текст залишається незмінним, булеві "
+"(логічні) перетворюються на \"True\", або \"False\", цілі, чи дійсні, числа "
+"перетворюється на десяткові, інші типи зазвичай повертають свої дані у "
+"читабельний для людини текст."
+
+msgid ""
+"There is also another way to format text in GDScript, namely the ``String."
+"format()`` method. It replaces all occurrences of a key in the string with "
+"the corresponding value. The method can handle arrays or dictionaries for "
+"the key/value pairs."
+msgstr ""
+"Існує також інший спосіб форматування тексту в GDScript, а саме метод "
+"``String.format()``. Він замінює всі входження ключа в тексті відповідним "
+"значенням. Метод може обробляти масиви, або словники, для пар ключ/значення."
+
+msgid ""
+"Arrays can be used as key, index, or mixed style (see below examples). Order "
+"only matters when the index or mixed style of Array is used."
+msgstr ""
+"Масиви можна використовувати як ключ, індекс, або змішаний стиль (див. "
+"Приклади нижче). Порядок має значення лише тоді, коли використовується "
+"індекс, або змішаний стиль масиву."
+
+msgid "A quick example in GDScript:"
+msgstr "Короткий приклад у GDScript:"
+
+msgid ""
+"There are other `format specifiers`_, but they are only applicable when "
+"using the ``%`` operator."
+msgstr ""
+"Є й інші `format specifiers`_, але вони застосовуються лише при використанні "
+"оператора ``%``."
+
+msgid "Multiple placeholders"
+msgstr "Кілька заповнювачів"
+
+msgid ""
+"Format strings may contain multiple placeholders. In such a case, the values "
+"are handed in the form of an array, one value per placeholder (unless using "
+"a format specifier with ``*``, see `dynamic padding`_):"
+msgstr ""
+"Форматований текст може містити кілька заповнювачів. У такому випадку "
+"значення передаються у вигляді масиву, одне значення на заповнювач (якщо не "
+"використовується специфікатор формату з ``*``, див. `dynamic padding`_):"
+
+msgid ""
+"Note the values are inserted in order. Remember all placeholders must be "
+"replaced at once, so there must be an appropriate number of values."
+msgstr ""
+"Зверніть увагу, що значення вставляються по порядку. Пам'ятайте, що всі "
+"заповнювачі повинні бути замінені відразу, тому повинно бути відповідне "
+"число значень."
+
+msgid "Format specifiers"
+msgstr "Специфікатори формату"
+
+msgid ""
+"There are format specifiers other than ``s`` that can be used in "
+"placeholders. They consist of one or more characters. Some of them work by "
+"themselves like ``s``, some appear before other characters, some only work "
+"with certain values or characters."
+msgstr ""
+"Окрім ``s`` існують інші специфікатори формату, які можна використовувати в "
+"заповнювачах. Вони складаються з одного, або кількох символів. Деякі з них "
+"працюють так само, як ``s``, деякі з’являються перед іншими символами, деякі "
+"працюють лише з певними значеннями, або символами."
+
+msgid "Placeholder types"
+msgstr "Типи заповнювачів"
+
+msgid ""
+"One and only one of these must always appear as the last character in a "
+"format specifier. Apart from ``s``, these require certain types of "
+"parameters."
+msgstr ""
+"Один, і тільки один, з них завжди повинен відображатися як останній символ у "
+"специфікаторі формату. Крім ``s``, для них потрібні певні типи параметрів."
+
+msgid "``s``"
+msgstr "``s``"
+
+msgid ""
+"**Simple** conversion to String by the same method as implicit String "
+"conversion."
+msgstr ""
+"**Просте** перетворення в String (текст, строку) тим самим методом, що і "
+"неявне перетворення."
+
+msgid "``c``"
+msgstr "``c``"
+
+msgid ""
+"A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
+"for a code point or a single-character string."
+msgstr ""
+"Єдиний **символ Unicode**. Очікує одне 8-бітове ціле число (0-255) для "
+"кодової точки, або односимвольного тексту (строки)."
+
+msgid "``d``"
+msgstr "``d``"
+
+msgid ""
+"A **decimal integral** number. Expects an integral or real number (will be "
+"floored)."
+msgstr ""
+"**Десятковий інтеграл**. Очікує інтегральне, або дійсне, число (буде в "
+"десятковому вигляді)."
+
+msgid "``o``"
+msgstr "``o``"
+
+msgid ""
+"An **octal integral** number. Expects an integral or real number (will be "
+"floored)."
+msgstr ""
+"**Вісімкове інтегральне число**. Очікує інтегральне, або дійсне, число (буде "
+"виведене)."
+
+msgid "``x``"
+msgstr "``x``"
+
+msgid ""
+"A **hexadecimal integral** number with **lower-case** letters. Expects an "
+"integral or real number (will be floored)."
+msgstr ""
+
+msgid "``X``"
+msgstr "``X``"
+
+msgid ""
+"A **hexadecimal integral** number with **upper-case** letters. Expects an "
+"integral or real number (will be floored)."
+msgstr ""
+
+msgid "``f``"
+msgstr "``f``"
+
+msgid "A **decimal real** number. Expects an integral or real number."
+msgstr "**Десяткове дійсне** число. Очікує ціле, чи дійсне, число."
+
+msgid "Placeholder modifiers"
+msgstr "Модифікатори заповнювачів"
+
+msgid ""
+"These characters appear before the above. Some of them work only under "
+"certain conditions."
+msgstr ""
+"Ці символи з'являються раніше. Деякі з них працюють лише за певних умов."
+
+msgid "``+``"
+msgstr "``+``"
+
+msgid "In number specifiers, **show + sign** if positive."
+msgstr ""
+"У специфікаторах чисел, **покажіть + знак**(show + sign), якщо число "
+"позитивне."
+
+msgid "Integer"
+msgstr "Integer (ціле)"
+
+msgid ""
+"Set **padding**. Padded with spaces or with zeroes if integer starts with "
+"``0`` in an integer placeholder. When used after ``.``, see ``.``."
+msgstr ""
+"Встановити **заповнювачі**. Заповнені пробілами, або нулями, якщо ціле число "
+"починається з ``0`` в цілочисельному заповнювачі. При використанні після ``."
+"``, дивіться ``.``."
+
+msgid "``.``"
+msgstr "``.``"
+
+msgid ""
+"Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
+"numbers to change. Padded with zeroes."
+msgstr ""
+"Перед ``f`` встановіть **точність** (precision) на 0 знаків після коми. "
+"Можна змінити числа в подальшому. Заповнені нулями."
+
+msgid "``-``"
+msgstr "``-``"
+
+msgid "**Pad to the right** rather than the left."
+msgstr "**Заповнення справа** (Pad to the right), а не зліва."
+
+msgid "``*``"
+msgstr "``*``"
+
+msgid ""
+"**Dynamic padding**, expect additional integral parameter to set padding or "
+"precision after ``.``, see `dynamic padding`_."
+msgstr ""
+"**Динамічний відступ**, очікує додатковий інтегральний параметр, що "
+"встановлює відступ або точність після ``.``, дивись `динамічний відступ`_."
+
+msgid "Padding"
+msgstr "Фаска"
+
+msgid ""
+"The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
+"``9``) characters are used for padding. This allows printing several values "
+"aligned vertically as if in a column, provided a fixed-width font is used."
+msgstr ""
+"Символи ``.`` (*крапка*), ``*`` (*зірочка*), ``-`` (*мінус*) і цифри (``0``-"
+"``9``) використовуються для відступів. Це дозволяє надрукувати декілька "
+"значень, вирівняних вертикально, як у стовпчику, за умови використання "
+"шрифту фіксованої ширини."
+
+msgid "To pad a string to a minimum length, add an integer to the specifier:"
+msgstr ""
+"Щоб заповнити рядок до мінімальної довжини додайте ціле число до "
+"специфікатора:"
+
+msgid ""
+"If the integer starts with ``0``, integral values are padded with zeroes "
+"instead of white space:"
+msgstr ""
+"Якщо ціле число починається з ``0``, інтегральні значення заміщуються нулями "
+"замість пробілу:"
+
+msgid ""
+"Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
+"an integer following it. With no integer after ``.``, a precision of 0 is "
+"used, rounding to integral value. The integer to use for padding must appear "
+"before the dot."
+msgstr ""
+"Точність для дійсних чисел можна задати, додавши ``.``(*крапку*) з цілим "
+"числом, що слідує за нею. Якщо після ``.`` немає цілого числа, "
+"використовується точність 0, округлюючи до цілого значення. Ціле число, яке "
+"буде використано для пробілів, повинно з’явитися перед крапкою."
+
+msgid ""
+"The ``-`` character will cause padding to the right rather than the left, "
+"useful for right text alignment:"
+msgstr ""
+"Символ ``-`` буде викликати відступи справа , а не зліва, корисний для "
+"правильного вирівнювання тексту:"
+
+msgid "Dynamic padding"
+msgstr "Динамічний відступ"
+
+msgid ""
+"By using the ``*`` (*asterisk*) character, the padding or precision can be "
+"set without modifying the format string. It is used in place of an integer "
+"in the format specifier. The values for padding and precision are then "
+"passed when formatting:"
+msgstr ""
+"За допомогою символу ``*`` (*зірочки*), можна встановити відступ або "
+"точність, не змінюючи рядок форматування. Він використовується замість "
+"цілого числа у специфікаторі формату. Потім при форматуванні передаються "
+"значення для заповнення та точності:"
+
+msgid ""
+"It is still possible to pad with zeroes in integer placeholders by adding "
+"``0`` before ``*``:"
+msgstr ""
+"Все ще можна заповнити нулями в цілочисельних заповнювачах, додавши ``0`` "
+"перед ``*``:"
+
+msgid "Escape sequence"
+msgstr "Керуюча (Escape) послідовність"
+
+msgid ""
+"To insert a literal ``%`` character into a format string, it must be escaped "
+"to avoid reading it as a placeholder. This is done by doubling the character:"
+msgstr ""
+"Щоб вставити символ ``%`` у форматований рядок, його потрібно приховати, щоб "
+"він перестав читатися як заповнювач. Це робиться шляхом подвоєння символа:"
+
+msgid "Format method examples"
+msgstr "Приклади методів форматування"
+
+msgid ""
+"The following are some examples of how to use the various invocations of the "
+"``String.format``  method."
+msgstr ""
+"Далі слідують кілька прикладів використання різних застосувань методу "
+"``String.format``  ."
+
+msgid "**Type**"
+msgstr "**Тип**"
+
+msgid "**Style**"
+msgstr "**Стиль**"
+
+msgid "**Example**"
+msgstr "**Приклад**"
+
+msgid "**Result**"
+msgstr "**Результат**"
+
+msgid "Dictionary"
+msgstr "Словник"
+
+msgid "key"
+msgstr "ключ"
+
+msgid ""
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+msgstr ""
+"``\"Привіт, {name} {version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+msgid "Hi, Godette v3.0!"
+msgstr "Привіт, Godette 3.0!"
+
+msgid "index"
+msgstr "індекс"
+
+msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+msgstr "``\"Привіт, {0} {1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+
+msgid "mix"
+msgstr "суміш"
+
+msgid ""
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
+msgstr ""
+"``\"Привіт, {0} {version}!\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+msgid "Array"
+msgstr "Масив"
+
+msgid ""
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+msgstr ""
+"``\"Привіт, {name} {version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+
+msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
+msgstr "``\"Привіт, {0} {1}!\".format([\"Godette\",\"3.0\"])``"
+
+msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
+msgstr "``\"Привіт, {name} {0}!\".format([3.0, [\"name\",\"Godette\"]])``"
+
+msgid "no index"
+msgstr "без індекса"
+
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
+msgstr "``\"Привіт, {} {}!\".format([\"Godette\", 3.0], \"{}\")``"
+
+msgid ""
+"Placeholders can also be customized when using ``String.format``, here's "
+"some examples of that functionality."
+msgstr ""
+"Заповнювачі також можуть бути налаштовані при використанні ``String."
+"format``. Далі кілька прикладів цього функціоналу."
+
+msgid "Infix (default)"
+msgstr "Інфікс (за замовчанням)"
+
+msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+msgstr "``\"Привіт, {0} {1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+
+msgid "Hi, Godette v3.0"
+msgstr "Привіт, Godette v3.0"
+
+msgid "Postfix"
+msgstr "Суфікс"
+
+msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+msgstr "``\"Привіт, 0% 1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+
+msgid "Prefix"
+msgstr "Префікс"
+
+msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+msgstr "``\"Привіт, %0 %1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+
+msgid ""
+"Combining both the ``String.format`` method and the ``%`` operator could be "
+"useful, as ``String.format`` does not have a way to manipulate the "
+"representation of numbers."
+msgstr ""
+"Поєднання метода ``String.format`` з оператором може бути корисним, оскільки "
+"``String.format`` не має способу маніпулювати поданням чисел."
+
+msgid ""
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+msgstr ""
+"``\"Привіт, {0} {version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+
+msgid "Hi, Godette v3.11"
+msgstr "Привіт, Godette v3.11"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:4
 msgid "Particle systems (2D)"
 msgstr "Системи частинок (2D)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:7
 msgid "Intro"
 msgstr "Вступ"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid ""
 "A simple (but flexible enough for most uses) particle system is provided. "
 "Particle systems are used to simulate complex physical effects, such as "
@@ -35,7 +32,6 @@ msgstr ""
 "частинок. Системи частинок використовуються для імітації складних фізичних "
 "ефектів, таких як іскри, вогонь, магічні частинки, дим, туман тощо."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
 "The idea is that a \"particle\" is emitted at a fixed interval and with a "
 "fixed lifetime. During its lifetime, every particle will have the same base "
@@ -51,11 +47,9 @@ msgstr ""
 "параметром. По суті, створення системи частинок означає встановлення базових "
 "фізичних параметрів, а потім додавання до них випадковості."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 msgid "Particle nodes"
 msgstr "Вузли частинок"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
 "Godot provides two different nodes for 2D particles, :ref:"
 "`class_Particles2D` and :ref:`class_CPUParticles2D`. Particles2D is more "
@@ -83,7 +77,6 @@ msgstr ""
 "вузол CPUParticles2D, натиснувши на вузол в інспекторі та вибравши пункт "
 "**Перетворити на CPUParticles2D** у меню **Частинки** на панелі інструментів."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:36
 msgid ""
 "The rest of this tutorial is going to use the Particles2D node. First, add a "
 "Particles2D node to your scene. After creating that node you will notice "
@@ -97,11 +90,9 @@ msgstr ""
 "є піктограма попередження. Це пов’язано з тим, що для роботи вузла потрібен "
 "ParticlesMaterial."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:42
 msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial (Матеріал Частинок)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid ""
 "To add a process material to your particles node, go to ``Process Material`` "
 "in your inspector panel. Click on the box next to ``Material``, and from the "
@@ -111,16 +102,13 @@ msgstr ""
 "інспектора в **Process Material**. Клацніть на поле поруч **Material** і зі "
 "спливаючого меню виберіть ``Новий ParticlesMaterial``."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:50
 msgid "Your Particles2D node should now be emitting white points downward."
 msgstr ""
 "Тепер ваш вузол Particles2D повинен випускати білі точки, що падають вниз."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Texture"
 msgstr "Текстура"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
 "A particle system uses a single texture (in the future this might be "
 "extended to animated textures via spritesheet). The texture is set via the "
@@ -130,15 +118,12 @@ msgstr ""
 "розширено до анімованих текстур за допомогою спрайт-аркуша). Текстура "
 "встановлюється за допомогою відповідної властивості текстури:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:65
 msgid "Time parameters"
 msgstr "Параметри часу"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
 msgstr "Lifetime (Час життя)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
@@ -146,19 +131,15 @@ msgstr ""
 "Час існування кожної частики у секундах. Коли закінчується термін життя, "
 "створюється нова частинка, яка замінює її."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
 msgstr "Час життя: 0.5"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
 msgstr "Час життя: 4.0"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
 msgstr "One Shot (Один постріл)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
 "then never again."
@@ -166,11 +147,9 @@ msgstr ""
 "Якщо увімкнений, вузол Particles2D буде випускати всі свої частинки за один "
 "раз, і більше ніколи."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:88
 msgid "Preprocess"
 msgstr "Preprocess (Попередня підготовка)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
 "This can be an inconvenience when loading a scene and systems like a torch, "
@@ -185,11 +164,9 @@ msgstr ""
 "обробити задану кількість секунд до того, як вона фактично буде намальована "
 "вперше."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:97
 msgid "Speed Scale"
 msgstr "Speed Scale (Шкала швидкості)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
 "of a particle system. Lowering the value will make the particles slower "
@@ -200,11 +177,9 @@ msgstr ""
 "того, що частинки будуть повільнішими, а збільшення значення - до їх "
 "прискорення."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
 msgstr "Explosiveness (Вибуховість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
 "If lifetime is ``1`` and there are 10 particles, it means a particle will be "
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
@@ -214,16 +189,13 @@ msgstr ""
 "буде випромінюватися кожні 0,1 секунди. Параметр вибуховості змінює це і "
 "змушує частинки випромінюватися одночасно. Діапазони:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
 msgstr ""
 "0: Випускати частинки через рівні проміжки часу (значення за замовчуванням)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:111
 msgid "1: Emit all particles simultaneously."
 msgstr "1: Випускати всі частинки одночасно."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
@@ -231,11 +203,9 @@ msgstr ""
 "Також допускаються значення в середині. Ця функція корисна для створення "
 "вибухів або раптових викидів частинок:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
 msgstr "Randomness (Випадковість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
@@ -243,11 +213,9 @@ msgstr ""
 "Всі фізичні параметри можуть бути випадковими. Випадкові значення варіюються "
 "від ``0`` до ``1``. Формула для параметра випадковості:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Fixed FPS"
 msgstr "Fixed FPS (Фіксований FPS)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
 "This setting can be used to set the particle system to render at a fixed "
 "FPS. For instance, changing the value to ``2`` will make the particles "
@@ -259,23 +227,18 @@ msgstr ""
 "частинки відтворюватися зі швидкістю 2 кадри в секунду. Зауважте, це не "
 "уповільнює саму систему частинок."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:136
 msgid "Fract Delta"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
 msgstr "Цим можна увімкнути або вимкнути Fract Delta."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid "Drawing parameters"
 msgstr "Параметри малювання"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 msgid "Visibility Rect"
 msgstr "Visibility Rect (Прямокутник видимості)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
 "The visibility rectangle controls the visibility of the particles on screen. "
 "If this rectangle is outside of the viewport, the engine will not render the "
@@ -285,7 +248,6 @@ msgstr ""
 "прямокутник знаходиться за межами області перегляду, движок не відображатиме "
 "частинки на екрані."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:149
 msgid ""
 "The rectangle's ``W`` and ``H`` properties respectively control its Width "
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
@@ -295,7 +257,6 @@ msgstr ""
 "та висоту. Властивості ``X`` і ``Y`` контролюють положення лівого верхнього "
 "кута прямокутника відносно випромінювача частинок."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:153
 msgid ""
 "You can have Godot generate a Visibility Rect automatically using the "
 "toolbar above the 2d view. To do so, select the Particles2D node and Click "
@@ -310,7 +271,6 @@ msgstr ""
 "декількох секунд і встановлюватиме прямокутник відповідно до поверхні, яку "
 "беруть частинки."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:155
 msgid ""
 "You can control the emit duration with the ``Generation Time (sec)`` option. "
 "The maximum value is 25 seconds. If you need more time for your particles to "
@@ -322,11 +282,9 @@ msgstr ""
 "більше часу для переміщення частинок, ви можете тимчасово змінити тривалість "
 "на вузлі Particles2D."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:158
 msgid "Local Coords"
 msgstr "Локальні координати"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid ""
 "By default this option is on, and it means that the space that particles are "
 "emitted to is relative to the node. If the node is moved, all particles are "
@@ -336,7 +294,6 @@ msgstr ""
 "випромінюються частинки, визначається відносно вузла. Якщо вузол "
 "переміщений, усі частинки переміщуються разом з ним:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:166
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
@@ -344,11 +301,9 @@ msgstr ""
 "Якщо його вимкнути, частинки будуть випромінюватися у глобальний простір, це "
 "означає, що переміщення вузла, не вплине на вже випущені частинки:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
 msgstr "Draw Order (Порядок малювання)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
 "means particles are drawn according to their emission order (default). "
@@ -359,15 +314,12 @@ msgstr ""
 "``Lifetime`` означає, що вони малюються в порядку часу, що залишився до "
 "кінця життя."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:179
 msgid "ParticlesMaterial settings"
 msgstr "Параметри ParticlesMaterial (Матеріал Частинок)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:182
 msgid "Direction"
 msgstr "Direction (Напрямок)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
 "This is the base direction at which particles emit. The default is "
 "``Vector3(1, 0, 0)`` which makes particles emit to the right. However, with "
@@ -377,7 +329,6 @@ msgstr ""
 "``Vector3(1, 0, 0)``, це означає, що частинки випромінюються вправо. Однак, "
 "з налаштуванням сили тяжіння за замовчуванням, частинки будуть падати вниз."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
 "For this property to be noticeable, you need an *initial velocity* greater "
 "than 0. Here, we set the initial velocity to 40. You'll notice that "
@@ -387,11 +338,9 @@ msgstr ""
 "за 0. Тут ми встановлюємо початкову швидкість до 40. Ви помітите, що "
 "частинки випромінюються вправо, а потім опускаються через гравітацію."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
 msgstr "Розсіювання"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
@@ -403,27 +352,21 @@ msgstr ""
 "випромінюватися в усіх напрямках (+/- 180). Щоб розсіювання працювало, "
 "параметр **Initial Velocity** *(Початкова швидкість)* повинен бути більше 0."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
 msgstr "Flatness (Рівність)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
 msgstr "Ця властивість корисна лише для 3D-частинок."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Gravity"
 msgstr "Gravity (Тяжіння)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:214
 msgid "The gravity applied to every particle."
 msgstr "Гравітація, що застосовується до кожної частинки."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:219
 msgid "Initial Velocity"
 msgstr "Initial Velocity (Початкова швидкість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:221
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
@@ -433,46 +376,36 @@ msgstr ""
 "Пізніше швидкість може бути змінена під дією сили тяжіння або інших "
 "прискорень (як описано далі)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid "Angular Velocity"
 msgstr "Angular Velocity (Кутова швидкість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:230
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr "Це початкова кутова швидкість, що застосовується до частинок."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "Spin Velocity"
 msgstr "Spin Velocity (Швидкість Обертання)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:235
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
 msgstr ""
 "Швидкість, з якою частинки обертаються навколо свого центру (у градусах/с)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:241
 msgid "Orbit Velocity"
 msgstr "Orbit Velocity (Орбітальна швидкість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:243
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "Використовується, щоб змусити частинки повертати відносно їх центру."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:248
 msgid "Linear Acceleration"
 msgstr "Linear Acceleration (Лінійне прискорення)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:250
 msgid "The linear acceleration applied to each particle."
 msgstr "Лінійне прискорення, прикладене до кожної частинки."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:253
 msgid "Radial Acceleration"
 msgstr "Radial Acceleration (Радіальне прискорення)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:255
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
@@ -480,11 +413,9 @@ msgstr ""
 "Якщо це прискорення позитивне, частинки прискорюються далеко від центру. "
 "Якщо негативне, вони поглинаються ним."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Tangential Acceleration"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
@@ -492,11 +423,9 @@ msgstr ""
 "Це прискорення використовуватиме дотичний вектор до центру. Поєднання з "
 "радіальним прискоренням може принести хороші ефекти."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Damping"
 msgstr "Damping (В’язкість)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
 "especially useful for sparks or explosions, which usually begin with a high "
@@ -506,11 +435,9 @@ msgstr ""
 "для іскор або вибухів, які зазвичай починаються з високою лінійною "
 "швидкістю, а потім припиняються в міру згасання."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Angle"
 msgstr "Angle (Кут)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:280
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
 "mostly useful randomized."
@@ -518,27 +445,21 @@ msgstr ""
 "Визначає початковий кут частинки (у градусах). Цей параметр переважно "
 "корисний випадковим."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 msgid "Scale"
 msgstr "Масштаб"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
 msgstr "Визначає початковий масштаб частинок."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:293
 msgid "Color"
 msgstr "Колір"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:295
 msgid "Used to change the color of the particles being emitted."
 msgstr "Використовується для зміни кольору частинок, що виділяються."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:298
 msgid "Hue variation"
 msgstr "Hue variation (Зміна відтінку)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:300
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "
@@ -548,11 +469,9 @@ msgstr ""
 "кожної частинки. Значення ``Variation Random`` визначає коефіцієнт варіації "
 "колірного тону випадковістю."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:305
 msgid "Emission Shapes"
 msgstr "Emission Shapes (Форми Випромінювання)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid ""
 "ParticlesMaterials allow you to set an Emission Mask, which dictates the "
 "area and direction in which particles are emitted. These can be generated "
@@ -562,7 +481,6 @@ msgstr ""
 "площу та напрямок, в якому випромінюються частинки. Вони можуть бути "
 "сформовані з текстур у вашому проєкті."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:311
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
@@ -570,27 +488,21 @@ msgstr ""
 "Переконайтеся, що ParticlesMaterial встановлено та вибрано вузол "
 "Particles2D. На панелі інструментів повинно з'явитися меню **Частинки**:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Open it and select \"Load Emission Mask\":"
 msgstr "Відкрийте його та виберіть \"Завантажити маску випромінювання\":"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "Then select which texture you want to use as your mask:"
 msgstr "Потім виберіть, яку текстуру ви хочете використовувати як маску:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:324
 msgid "A dialog box with several settings will appear."
 msgstr "З'явиться діалогове вікно з декількома налаштуваннями."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid "Emission Mask"
 msgstr "Маска випромінювання"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:329
 msgid "Three types of emission masks can be generated from a texture:"
 msgstr "З текстури можна створити три типи масок випромінювання:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
@@ -598,12 +510,10 @@ msgstr ""
 "Залиті пікселі: Частинки виникають з будь-якої області текстури, за винятком "
 "прозорих областей."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
 msgstr "Крайні Пікселі: Частинки виникають із зовнішніх країв текстури."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:340
 msgid ""
 "Directed Border Pixels: Similar to Border Pixels, but adds extra information "
 "to the mask to give particles the ability to emit away from the borders. "
@@ -615,11 +525,9 @@ msgstr ""
 "меж. Зверніть увагу, що для того, щоб використовувати їх, потрібно "
 "встановити **Початкову швидкість**."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid "Emission Colors"
 msgstr "Кольори випромінювання"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:350
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
@@ -627,7 +535,6 @@ msgstr ""
 "``Capture from Pixel`` призведе до того, що частинки успадкують колір маски "
 "в місцях їх появи."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:352
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
@@ -635,7 +542,6 @@ msgstr ""
 "Після натискання кнопки **OK** маска буде сформована та встановлена в "
 "ParticlesMaterial у розділі **Emission Shape** *(Форма випромінювання)*:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:356
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
@@ -644,7 +550,6 @@ msgstr ""
 "**Завантажити маску випромінювання**, тому їх, як правило, слід залишити в "
 "спокої."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:359
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."

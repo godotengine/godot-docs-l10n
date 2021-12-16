@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:4
 msgid "Binding to external libraries"
 msgstr "繫結外部函式庫"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
 msgstr "模組"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
@@ -37,28 +34,23 @@ msgstr ""
 "ac.uk/projects/festival/>`_ 的例子。Festival 是一個以 C++ 撰寫的語音合成 "
 "(TTS - 文字轉語音, Text-to-Speech) 函式庫。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
 msgstr "要繫結到外部函式庫，我們先建立一個類似 Summator 範例的模組資料夾："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr "接著，需要建立含有一個簡易 TTS 類別的標頭檔："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
 msgstr "然後新增 cpp 檔案。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
 msgstr ""
 "跟之前一樣，我們需要用某種方式來註冊新建立的類別。因此還需要新增這兩個檔案："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
@@ -66,17 +58,14 @@ msgstr ""
 "這幾個檔案必須要放在模組的最上層目錄 (也就是 ``SCsub`` 與 ``config.py`` 檔的"
 "旁邊)，這樣一來模組才能被正確註冊。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
 msgid "These files should contain the following:"
 msgstr "這幾個檔案的內容如下："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr "接著，我們需要建立 ``SCsub`` 檔案，這樣一來建置系統才能編譯此模組："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 #, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
@@ -88,7 +77,6 @@ msgstr ""
 "文件以瞭解如何在作業系統上安裝的說明。作為參考，我們在此包含了於 Linux 上安裝"
 "的指令。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
 "resource) all have varying licenses and terms of use; some (if not most) of "
@@ -100,7 +88,6 @@ msgstr ""
 "款與服務條款 (Terms of Use)。就算 Festival 函式庫本身是與 MIT 授權條款相容"
 "的，有些檔案對於 Godot 來說可能會有點問題。請務必檢查授權條款與服務條款。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 #, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
@@ -113,7 +100,6 @@ msgstr ""
 "自封閉 (Self-Contained) 的。Festival 與 speech_tools 函式庫通過下列指令來用 "
 "Git 安裝進 modules/tts/ 資料夾："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -122,7 +108,6 @@ msgstr ""
 "若不想將外部儲存庫的原始碼 Commit 進儲存庫中，可以通過將其 (在 modules/tts/資"
 "料夾內) 加為子模組 (Submodule) 來將這些函式庫連結過來，如下所示："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
 #, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
@@ -134,14 +119,12 @@ msgstr ""
 "存庫的模組，則不應使用子模組。若模組沒有被合併，則可以試著將其作為 GDNative C"
 "++ 外掛來實作。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
 "要新增讓編譯器搜尋的 include 資料夾，可以將資料夾附加到編譯環境的路徑內："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -150,18 +133,14 @@ msgstr ""
 "若要為模組新增自定編譯器旗標，則需要先複製 ``env`` 變數，以免修改到整個 "
 "Godot 建置用的旗標 (進而導致發生錯誤)。下列為使用自定旗標的 ``SCsub`` 範例："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
 msgid "The final module should look like this:"
 msgstr "最終的模組應該長這樣："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:217
 msgid "Using the module"
 msgstr "使用模組"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:219
 msgid "You can now use your newly created module from any script:"
 msgstr "現在，可以在任何腳本內使用剛才建立的模組了："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:228
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "說出文字時，輸出應未 ``is_spoken: True`` 。"

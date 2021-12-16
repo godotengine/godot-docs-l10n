@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
 msgid "Visual Studio"
 msgstr "\\ Visual Studio"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
 "`Visual Studio Community <https://visualstudio.microsoft.com>`__ is a "
 "Windows-only IDE by `Microsoft <https://microsoft.com>`_ that's free for non-"
@@ -33,11 +31,9 @@ msgstr ""
 "Studio 可以免費用於非商業目的，並含有許多實用功能，如記憶體檢視、效能檢視、版"
 "本控制…等。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
 msgid "Importing the project"
 msgstr "匯入專案"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:14
 msgid ""
 "Visual Studio requires a solution file to work on a project. While Godot "
 "does not come with the solution file, it can be generated using SCons."
@@ -45,17 +41,14 @@ msgstr ""
 "使用 Visual Studio 會需要一個解決方案檔案。雖然 Godot 沒有附帶解決方案檔，但"
 "可以通過 SCons 來產生。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:17
 msgid ""
 "Navigate to the Godot root folder and open a Command Prompt or PowerShell "
 "window."
 msgstr "前往 Godot 根目錄，並開啟命令提示字元或 PowerShell 視窗。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:18
 msgid "Run ``scons platform=windows vsproj=yes`` to generate the solution."
 msgstr "執行 ``scons platform=windows vsproj=yes`` 來產生解決方案。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:19
 msgid ""
 "You can now open the project by double-clicking on the ``godot.sln`` in the "
 "project root or by using the **Open a project or solution** option inside of "
@@ -64,21 +57,17 @@ msgstr ""
 "接著可以按兩下專案根目錄中的 ``godot.sln`` 來開啟專案，或是可以通過 Visual "
 "Studio 中的 **開啟專案或解決方案** 來開啟。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:21
 msgid "Use the **Build** top menu to build the project."
 msgstr "使用上方選單的 **建置** 來建置專案。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:23
 msgid ""
 "Visual Studio must be configured with the C++ package. It can be selected in "
 "the intaller:"
 msgstr "必須要為 Visual Studio 設定 C++ 套件。在安裝程式中可以選擇："
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 msgid "Debugging the project"
 msgstr "對專案進行除錯"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:32
 msgid ""
 "Visual Studio features a powerful debugger. This allows the user to examine "
 "Godot's source code, stop at specific points in the code, inspect the "
@@ -88,7 +77,6 @@ msgstr ""
 "原始碼、在程式碼中的特定位置停下來、調查目前執行的上下文、以及即時更改程式"
 "碼。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:36
 msgid ""
 "You can launch the project with the debugger attached using the **Debug > "
 "Start Debugging** option from the top menu. However, unless you want to "
@@ -101,13 +89,11 @@ msgstr ""
 "除非想要特別對專案管理員進行除錯，否則必須要先設定除錯選項。這是因為當 Godot "
 "的專案管理員開啟專案時，原先的處理程序會被終止，會讓除錯工具退出。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:41
 msgid ""
 "To configure the launch options to use with the debugger use **Project > "
 "Properties** from the top menu:"
 msgstr "要設定執行選項來使用除錯工具，請從上方選單中選擇 **專案 > 內容** ："
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:47
 msgid ""
 "Open the **Debugging** section and under **Command Arguments** add two new "
 "arguments: the ``-e`` flag opens the editor instead of the project manager, "
@@ -119,7 +105,6 @@ msgstr ""
 "專案管理員的 ``-e`` 旗標，以及用來告訴執行檔要開啟哪個特定專案的 ``--path`` "
 "引數 (必須提供專案根目錄的 **絕對** 路徑，而非 ``project.godot`` 檔案)。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
@@ -127,7 +112,6 @@ msgstr ""
 "更多有關命令行引數的資訊，請參考 :ref:`命令行教學 "
 "<doc_command_line_tutorial>` 。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:58
 msgid ""
 "Even if you start the project without a debugger attached it can still be "
 "connected to the running process using **Debug > Attach to Process...** menu."
@@ -135,7 +119,6 @@ msgstr ""
 "就算以未附加除錯工具的狀態開啟專案，之後仍可通過 **偵錯 > 附加至處理序...** "
 "選單來連接到正在執行的處理程式。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:61
 msgid ""
 "To check that everything is working, put a breakpoint in ``main.cpp`` and "
 "press :kbd:`F5` to start debugging."
@@ -143,7 +126,6 @@ msgstr ""
 "若要確認一切正常，請在 ``main.cpp`` 中新增一個斷點，然後按一下 :kbd:`F5` 來開"
 "始除錯。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."

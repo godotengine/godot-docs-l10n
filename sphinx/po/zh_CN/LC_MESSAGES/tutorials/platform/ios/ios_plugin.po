@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:4
 msgid "Creating iOS plugins"
-msgstr "创建iOS插件"
+msgstr "创建 iOS 插件"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:6
 msgid ""
 "This page explains what iOS plugins can do for you, how to use an existing "
 "plugin, and the steps to code a new one."
 msgstr ""
-"本页说明iOS插件可以为你做什么, 如何使用现有的插件, 以及编写一个新插件的步骤."
+"本页说明 iOS 插件可以为你做什么、如何使用现有的插件、以及编写新插件的步骤。"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:8
 msgid ""
 "iOS plugins allow you to use third-party libraries and support iOS-specific "
 "features like In-App Purchases, GameCenter integration, ARKit support, and "
 "more."
 msgstr ""
-"iOS插件允许你使用第三方库, 并支持iOS特定功能, 如应用内购买, GameCenter集成, "
-"ARKit支持等."
+"iOS 插件允许你使用第三方库，并支持 iOS 特定功能，如应用内购买、GameCenter 集"
+"成、ARKit 支持等。"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:11
 msgid "Loading and using an existing plugin"
 msgstr "加载和使用现有的插件"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:13
 msgid ""
 "An iOS plugin requires a ``.gdip`` configuration file, a binary file which "
 "can be either ``.a`` static library or ``.xcframework`` containing ``.a`` "
@@ -51,7 +46,6 @@ msgstr ""
 "库, 也可以是 ``.xcframework`` 包含 ``.a`` 静态库, 可能还有其他依赖关系. 要使"
 "用它, 你需要:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:15
 msgid ""
 "Copy the plugin's files to your Godot project's ``res://ios/plugins`` "
 "directory. You can also group files in a sub-directory, like ``res://ios/"
@@ -60,7 +54,6 @@ msgstr ""
 "将插件的文件复制到Godot项目的 ``res://ios/plugins`` 目录中. 你也可以将文件分"
 "组在一个子目录中, 比如 ``res://ios/plugins/my_plugin`` ."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:17
 msgid ""
 "The Godot editor automatically detects and imports ``.gdip`` files inside "
 "``res://ios/plugins`` and its subdirectories."
@@ -68,7 +61,6 @@ msgstr ""
 "Godot编辑器自动检测并导入 ``res://ios/plugins`` 及其子目录中的 ``.gdip`` 文"
 "件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:19
 msgid ""
 "You can find and activate detected plugins by going to Project -> Export... -"
 "> iOS and in the Options tab, scrolling to the Plugins section."
@@ -76,17 +68,15 @@ msgstr ""
 "你可以通过进入项目->导出... ->iOS, 在选项卡中, 滚动到插件部分, 找到并激活检测"
 "到的插件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:23
 msgid ""
 "When a plugin is active, you can access it in your using ``Engine."
 "get_singleton()``::"
-msgstr "当插件处于活动状态时, 您可以使用 ``Engine.get_singleton()`` 访问插件:"
+msgstr ""
+"当插件处于活动状态时，您可以使用 ``Engine.get_singleton()`` 访问插件： ::"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:30
 msgid "Creating an iOS plugin"
 msgstr "创建iOS插件"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:32
 msgid ""
 "At its core, a Godot iOS plugin is an iOS library (*.a* archive file or *."
 "xcframework* containing static libraries) with the following requirements:"
@@ -94,15 +84,12 @@ msgstr ""
 "Godot iOS插件的核心是一个iOS库( *.a* 档文件或 *.xcframework* 包含静态库), 其"
 "要求如下:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:34
 msgid "The library must have a dependency on the Godot engine headers."
 msgstr "该库必须依赖Godot引擎头文件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:36
 msgid "The library must come with a ``.gdip`` configuration file."
 msgstr "该库必须附带一个 ``.gdip`` 配置文件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:38
 msgid ""
 "An iOS plugin can have the same functionality as a Godot module but provides "
 "more flexibility and doesn't require to rebuild the engine."
@@ -110,7 +97,6 @@ msgstr ""
 "一个iOS插件可以拥有与Godot模块相同的功能, 但提供了更多的灵活性, 并且不需要重"
 "新构建引擎."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:40
 msgid ""
 "Here are the steps to get a plugin's development started. We recommend using "
 "`Xcode <https://developer.apple.com/develop/>`_ as your development "
@@ -119,13 +105,11 @@ msgstr ""
 "下面是开始开发插件的步骤. 我们建议使用 `Xcode <https://developer.apple.com/"
 "develop/>`_ 作为你的开发环境."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:42
 msgid ""
 "The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
 "Godot iOS plugins."
 msgstr "`Godot iOS 插件 <https://github.com/godotengine/godot-ios-plugins>`_ ."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:44
 msgid ""
 "The `Godot iOS plugin template <https://github.com/naithar/"
 "godot_ios_plugin>`_ gives you all the boilerplate you need to get your iOS "
@@ -134,15 +118,12 @@ msgstr ""
 "`Godot iOS 插件模板 <https://github.com/naithar/godot_ios_plugin>`_ 为您提供"
 "了启动iOS插件所需的所有样板."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:47
 msgid "To build an iOS plugin:"
 msgstr "要构建一个iOS插件:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:49
 msgid "Create an Objective-C static library for your plugin inside Xcode."
 msgstr "在Xcode中为您的插件创建一个Objective-C静态库."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:51
 msgid ""
 "Add the Godot engine header files as a dependency for your plugin library in "
 "``HEADER_SEARCH_PATHS``. You can find the setting inside the ``Build "
@@ -151,7 +132,6 @@ msgstr ""
 "在 ``HEADER_SEARCH_PATHS`` 中添加Godot引擎头文件作为插件库的依赖. 你可以在 "
 "``Build Settings`` 选项卡中找到这个设置:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:53
 msgid ""
 "Download the Godot engine source from the `Godot GitHub page <https://github."
 "com/godotengine/godot>`_."
@@ -159,7 +139,6 @@ msgstr ""
 "从 `Godot GitHub page <https://github.com/godotengine/godot>` _下载Godot引擎"
 "源代码."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:55
 msgid ""
 "Run SCons to generate headers. You can learn the process by reading :ref:"
 "`doc_compiling_for_ios`. You don't have to wait for compilation to complete "
@@ -168,13 +147,11 @@ msgstr ""
 "运行SCons来生成头文件. 通过阅读 :ref:`doc_compiling_for_ios` 来了解这个过程. "
 "不需要等待编译完成就可以继续, 因为在引擎开始编译之前就会生成头文件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:57
 msgid ""
 "You should use the same header files for iOS plugins and for the iOS export "
 "template."
 msgstr "你应该为iOS插件和iOS导出模板使用相同的头文件."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:59
 msgid ""
 "In the ``Build Settings`` tab, specify the compilation flags for your static "
 "library in ``OTHER_CFLAGS``. The most important ones are ``-fcxx-modules``, "
@@ -182,10 +159,9 @@ msgid ""
 "be the same you use to compile Godot. For instance:"
 msgstr ""
 "在 ``Build Settings`` 选项卡的 ``OTHER_CFLAGS`` 中指定静态库的编译选项。最重"
-"要的是 ``-fcxx-modules`` 和 ``-fmodules`` ，如果你需要支持调试就还有 ``-"
-"DDEBUG`` 。其他选项应该和你编译Godot时使用的一样。例如："
+"要的是 ``-fcxx-modules`` 和 ``-fmodules``\\ ，如果你需要支持调试就还有 ``-"
+"DDEBUG``\\ 。其他选项应该和你编译 Godot 时使用的一样。例如："
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:65
 msgid ""
 "Add the required logic for your plugin and build your library to generate a "
 "``.a`` file. You will probably need to build both ``debug`` and ``release`` "
@@ -199,43 +175,35 @@ msgstr ""
 "两个. 如果你同时需要调试和发布 ``.a`` 文件, 它们的名字应该符合以下模式: "
 "``[PluginName].[TargetType].a`` . 你也可以用SCons配置来构建静态库."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:67
 msgid ""
 "The iOS plugin system also supports ``.xcframework`` files. To generate one, "
 "you can use a command such as:"
 msgstr ""
 "iOS 插件系统也支持 ``.xcframework`` 文件。你可以用类似这样的命令来生成它："
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:73
 msgid ""
 "Create a Godot iOS Plugin configuration file to help the system detect and "
 "load your plugin:"
 msgstr "创建一个Godot iOS插件配置文件, 以帮助系统检测和加载你的插件:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:75
 msgid ""
 "The configuration file extension must be ``gdip`` (e.g.: ``MyPlugin.gdip``)."
 msgstr "配置文件的扩展名必须是 ``gdip`` (e.g.: ``MyPlugin.gdip`` )."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:77
 msgid "The configuration file format is as follow::"
-msgstr "配置文件格式如下:"
+msgstr "配置文件格式如下： ::"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:109
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr "``config`` 部分和字段是必须的, 定义如下:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:111
 msgid "**name**: name of the plugin"
 msgstr "**name**：插件的名称"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:113
 msgid ""
 "**binary**: this should be the filepath of the plugin library (``a`` or "
 "``xcframework``) file."
 msgstr "**binary** : 这应该是插件库( ``a`` 或 ``xcframework`` )文件的路径."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:115
 msgid ""
 "The filepath can be relative (e.g.: ``MyPlugin.a``, ``MyPlugin."
 "xcframework``) in which case it's relative to the directory where the "
@@ -244,7 +212,6 @@ msgstr ""
 "文件路径可以是相对的(例如: ``MyPlugin.a`` , ``MyPlugin.xcframework`` ), 在这"
 "种情况下, 它是相对于 ``gdip`` 文件所在的目录."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:116
 msgid ""
 "The filepath can be absolute: ``res://some_path/MyPlugin.a`` or ``res://"
 "some_path/MyPlugin.xcframework``."
@@ -252,7 +219,6 @@ msgstr ""
 "文件路径可以是绝对的: ``res://some_path/MyPlugin.a`` 或 ``res://some_path/"
 "MyPlugin.xcframework`` ."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:117
 msgid ""
 "In case you need multitarget library usage, the filename should be "
 "``MyPlugin.a`` and ``.a`` files should be named as ``MyPlugin.release.a`` "
@@ -261,7 +227,6 @@ msgstr ""
 "如果你需要多目标库使用, 文件名应该是 ``MyPlugin.a`` , ``.a`` 文件应该命名为 "
 "``MyPlugin.release.a`` 和 ``MyPlugin.debug.a`` ."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:118
 msgid ""
 "In case you use multitarget ``xcframework`` libraries, their filename in the "
 "configuration should be ``MyPlugin.xcframework``. The ``.xcframework`` files "
@@ -272,23 +237,19 @@ msgstr ""
 "xcframework``. ``.xcframework`` 文件应该被命名为 ``MyPlugin.release."
 "xcframework`` 和 ``MyPlugin.debug.xcframework`` ."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:120
 msgid ""
 "The ``dependencies`` and ``plist`` sections are optional and defined as "
 "follow:"
 msgstr "``dependencies`` 和 ``plist`` 部分是可选的, 定义如下:"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:122
 msgid "**dependencies**:"
 msgstr "**依赖** :"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:124
 msgid ""
 "**linked**: contains a list of iOS frameworks that the iOS application "
 "should be linked with."
 msgstr "**linked(链接)** : 包含iOS应用应该包含的iOS框架列表."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:126
 msgid ""
 "**embedded**: contains a list of iOS frameworks or libraries that should be "
 "both linked and embedded into the resulting iOS application."
@@ -296,13 +257,11 @@ msgstr ""
 "**embedded** : 嵌入包含一个iOS框架或库的列表, 这些框架或库将被链接并嵌入到最"
 "终的iOS应用程序中."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:128
 msgid ""
 "**system**: contains a list of iOS system frameworks that are required for "
 "plugin."
 msgstr "**system** : 包含插件所需的iOS系统框架的列表."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:130
 msgid ""
 "**capabilities**: contains a list of iOS capabilities that is required for "
 "plugin. A list of available capabilities can be found at `Apple "
@@ -315,31 +274,26 @@ msgstr ""
 "apple.com/documentation/bundleresources/information_property_list/"
 "uirequireddevicecapabilities>`_ 找到."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:132
 msgid ""
 "**files**: contains a list of files that should be copied on export. This is "
 "useful for data files or images."
 msgstr ""
 "**files(文件)** : 包含导出时应复制的文件列表. 这对数据文件或图像很有用."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:134
 msgid ""
 "**linker_flags**: contains a list of linker flags to add to the Xcode "
 "project when exporting the plugin."
 msgstr ""
 "**linker_flags** : 包含一个链接器标志的列表, 在导出插件时添加到Xcode项目中."
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:136
 msgid ""
 "**plist**: should have keys and values that should be present in ``Info."
 "plist`` file."
 msgstr "**plist**: 应该有键和值，应该存在于 ``Info.plist`` 文件中。"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
 msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
 msgstr "每行应遵循模式: ``KeyName:KeyType=KeyValue``"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:139
 msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
@@ -347,20 +301,17 @@ msgstr ""
 "``KeyType`` 支持的值是 ``string``, ``integer``, ``boolean``, ``raw``, "
 "``string_input``"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
 msgid ""
 "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be "
 "used."
 msgstr ""
 "如果没有使用类型，例如: ``KeyName=\"KeyValue\"`` ，将使用 ``string`` 类型。"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:141
 msgid ""
 "If ``raw`` type is used value for coresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr "如果使用 ``raw`` 类型，对应键的值将按原样存储在 ``Info.plist`` 中。"
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
 msgid ""
 "If ``string_input`` type is used you will be able to modify value in Export "
 "window."

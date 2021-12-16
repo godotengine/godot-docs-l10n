@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:4
-#: ../../docs/tutorials/audio/audio_buses.rst:48
 msgid "Audio buses"
 msgstr "Bus audio"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:9
 msgid ""
 "Godot's audio processing code has been written with games in mind, with the "
 "aim of achieving an optimal balance between performance and sound quality."
@@ -34,7 +30,6 @@ msgstr ""
 "Le code de traitement audio dans Godot a été écrit en pensant aux jeux, dans "
 "le but d'obtenir un équilibre optimal entre performance et qualité sonore."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:12
 msgid ""
 "Godot's audio engine allows any number of audio buses to be created and any "
 "number of effect processors can be added to each bus. Only the hardware of "
@@ -47,11 +42,9 @@ msgstr ""
 "bus et d'effets qui peuvent être utilisés avant que les performances ne "
 "commencent à en pâtir."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:18
 msgid "Decibel scale"
 msgstr "Échelle de décibels"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:20
 msgid ""
 "Godot's sound interface is designed to meet the expectations of sound design "
 "professionals. To this end, it primarily uses the decibel scale."
@@ -60,12 +53,10 @@ msgstr ""
 "professionnels du design sonore. Pour ce faire, elle utilise principalement "
 "l'échelle des décibels."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:23
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
 msgstr ""
 "Pour ceux qui ne la connaissent pas, on peut l'expliquer par quelques faits :"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:25
 msgid ""
 "The decibel (dB) scale is a relative scale. It represents the ratio of sound "
 "power by using 20 times the base 10 logarithm of the ratio (20 × log\\ :sub:"
@@ -75,7 +66,6 @@ msgstr ""
 "rapport de la puissance acoustique en utilisant 20 fois le logarithme de "
 "base 10 du rapport (20 × log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:28
 msgid ""
 "For every 6 dB, sound amplitude doubles or halves. 12 dB represents a factor "
 "of 4, 18 dB a factor of 8, 20 dB a factor of 10, 40 dB a factor of 100, etc."
@@ -84,14 +74,12 @@ msgstr ""
 "représente un facteur de 4, 18 dB un facteur de 8, 20 dB un facteur de 10, "
 "40 dB un facteur de 100, etc."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:30
 msgid ""
 "Since the scale is logarithmic, true zero (no audio) can't be represented."
 msgstr ""
 "Puisque l'échelle est logarithmique, le vrai zéro (aucun son) ne peut pas "
 "être représenté."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:31
 msgid ""
 "0 dB is the maximum amplitude possible in a digital audio system. This limit "
 "is not the human limit, but a limit from the sound hardware. Audio with "
@@ -104,7 +92,6 @@ msgstr ""
 "correctement en dessous de 0 dB crée une sorte de distorsion appelée "
 "*clipping*."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:35
 msgid ""
 "To avoid clipping, your sound mix should be arranged so that the output of "
 "the *master bus* (more on that later) never exceeds 0 dB."
@@ -113,7 +100,6 @@ msgstr ""
 "sorte que la sortie du *master bus* (plus d'informations à ce sujet plus "
 "tard) ne dépasse jamais 0dB."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:37
 msgid ""
 "Every 6 dB below the 0 dB limit, sound energy is *halved*. It means the "
 "sound volume at -6 dB is half as loud as 0dB. -12 dB is half as loud as -6 "
@@ -124,7 +110,6 @@ msgstr ""
 "fois moins fort que 0 dB. -12 dB est deux fois moins fort que -6 dB et ainsi "
 "de suite."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:40
 msgid ""
 "When working with decibels, sound is considered no longer audible between "
 "-60 dB and -80 dB. This makes your working range generally between -60 dB "
@@ -134,7 +119,6 @@ msgstr ""
 "audible entre -60 dB et -80 dB. Votre plage de travail se situe donc "
 "généralement entre -60 dB et 0 dB."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:44
 msgid ""
 "This can take a bit getting used to, but it's friendlier in the end and will "
 "allow you to communicate better with audio professionals."
@@ -143,12 +127,10 @@ msgstr ""
 "plus agréable et vous permettra de mieux communiquer avec les professionnels "
 "de l'audio."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:50
 msgid "Audio buses can be found in the bottom panel of the Godot editor:"
 msgstr ""
 "Les bus audio se trouvent dans le panneau inférieur de l'éditeur Godot :"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:54
 msgid ""
 "An *audio bus* (also called an *audio channel*) can be considered a place "
 "that audio is channeled through on the way to playback through a device's "
@@ -163,7 +145,6 @@ msgstr ""
 "barres qui s'allument quand le son est joué) qui indique l'amplitude du "
 "signal qui passe à travers."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:60
 msgid ""
 "The leftmost bus is the *master bus*. This bus outputs the mix to your "
 "speakers so, as mentioned in the *Decibel scale* section above, make sure "
@@ -182,7 +163,6 @@ msgstr ""
 "routage passe toujours l'audio des bus sur la droite vers les bus plus à "
 "gauche. Cela permet d'éviter les boucles de routage infinies."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:70
 msgid ""
 "In the above image, the output of *Bus 2* has been routed to the *Master* "
 "bus."
@@ -190,11 +170,9 @@ msgstr ""
 "Dans l'image ci-dessus, la sortie du *Bus 2* a été acheminée vers le bus "
 "*Master*."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:73
 msgid "Playback of audio through a bus"
 msgstr "Lecture de l'audio à travers un bus"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:75
 msgid ""
 "To test passing audio to a bus, create an AudioStreamPlayer node, load an "
 "AudioStream and select a target bus for playback:"
@@ -203,23 +181,19 @@ msgstr ""
 "AudioStreamPlayer, chargez un AudioStream et sélectionnez un bus cible pour "
 "la lecture :"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:80
 msgid "Finally, toggle the **Playing** property to **On** and sound will flow."
 msgstr ""
 "Enfin, basculez la propriété **Playing** sur **On** et le son sera diffusé."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:84
 msgid ""
 "You may also be interested in reading about :ref:`doc_audio_streams` now."
 msgstr ""
 "Vous pouvez également être intéressé par la lecture de :ref:"
 "`doc_audio_streams` maintenant."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:87
 msgid "Adding effects"
 msgstr "Ajouter des effets"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:89
 msgid ""
 "Audio buses can contain all sorts of effects. These effects modify the sound "
 "in one way or another and are applied in order."
@@ -227,7 +201,6 @@ msgstr ""
 "Les bus audio peuvent contenir toutes sortes d'effets. Ces effets modifient "
 "le son d'une manière ou d'une autre et sont appliqués dans l'ordre."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:94
 msgid ""
 "Try them all out to get a sense of how they alter sound. Here follows a "
 "short description of the available effects:"
@@ -235,11 +208,9 @@ msgstr ""
 "Essayez-les tous pour avoir une idée de la façon dont ils modifient le son. "
 "Voici une brève description des effets disponibles :"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:98
 msgid "Amplify"
 msgstr "Amplifier (Amplify)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:100
 msgid ""
 "Amplify changes the amplitude of the signal. Some care needs to be taken. "
 "Setting the level too high can make the sound clip, which is usually "
@@ -249,11 +220,9 @@ msgstr ""
 "le niveau trop haut peut créer un écrêtage, ce qui n'est généralement pas "
 "souhaitable."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:105
 msgid "BandLimit and BandPass"
 msgstr "Limite de Bande et Passe-Bande (BandLimit and BandPass)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:107
 msgid ""
 "These are resonant filters which block frequencies around the *Cutoff* "
 "point. BandPass can be used to simulate sound passing through an old "
@@ -267,22 +236,18 @@ msgstr ""
 "BandPass peut simuler le son d'une pédale de guitare wah-wah, comme la "
 "guitare dans *Voodoo Child (Slight Return)* de Jimi Hendrix."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:114
 msgid "Capture"
 msgstr "Capturer"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:116
 msgid ""
 "The Capture effect copies the audio frames of the audio bus that it is on "
 "into an internal buffer. This can be used to capture data from the "
 "microphone or to transmit audio over the network in real-time."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:121
 msgid "Chorus"
 msgstr "Chœur (Chorus)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid ""
 "The Chorus effect duplicates the incoming audio, delays the duplicate "
 "slightly and uses an LFO to continuously modulate the pitch of the "
@@ -295,11 +260,9 @@ msgstr ""
 "de mélanger à nouveau le ou les signaux dupliqués et l'original. Cela crée "
 "un effet chatoyant et ajoute une largeur stéréo au son."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:129
 msgid "Compressor"
 msgstr "Compresseur (Compressor)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:131
 msgid ""
 "A dynamic range compressor automatically attenuates the level of the "
 "incoming signal when its amplitude exceeds a certain threshold. The level of "
@@ -318,24 +281,20 @@ msgstr ""
 "silencieuses. Réduire la plage dynamique d'un signal peut faciliter le "
 "mixage."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:139
 msgid "The compressor has many uses. For example:"
 msgstr "Le compresseur a de nombreuses utilisations. Par exemple :"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:141
 msgid "It can be used in the Master bus to compress the whole output."
 msgstr ""
 "Il peut être utilisé sur le bus maître pour compresser l'ensemble de la "
 "sortie."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:142
 msgid ""
 "It can be used in voice channels to ensure they sound as even as possible."
 msgstr ""
 "Il peut être utilisé sur les canaux vocaux pour s'assurer qu'ils sont aussi "
 "uniformes que possible."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:143
 msgid ""
 "It can be *sidechained*. This means it can reduce the sound level of one "
 "signal using the level of another audio bus for threshold detection. This "
@@ -348,7 +307,6 @@ msgstr ""
 "audio des jeux vidéo pour \"baisser\" le son de la musique ou des effets "
 "sonores lorsque des voix doivent être entendues."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:147
 msgid ""
 "It can accentuate transients by using a slower attack. This can make sound "
 "effects more punchy."
@@ -356,7 +314,6 @@ msgstr ""
 "Il peut accentuer les transitoires en utilisant une attaque plus lente. Cela "
 "peut rendre les effets sonores plus percutants."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid ""
 "If your goal is to prevent a signal from exceeding a given amplitude "
 "altogether, rather than to reduce the dynamic range of the signal, a :ref:"
@@ -368,11 +325,9 @@ msgstr ""
 "<doc_audio_buses_limiter>` est probablement un meilleur choix qu'un "
 "compresseur."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Delay"
 msgstr "Délai (Delay)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid ""
 "Adds an \"echo\" effect with a feedback loop. It can be used together with "
 "*Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far "
@@ -382,11 +337,9 @@ msgstr ""
 "avec *Reverb* pour simuler des pièces larges, des canyons, etc. où les "
 "rebonds sonores sont éloignés."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "Distortion"
 msgstr "Distorsion (Distortion)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
 "*overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate "
@@ -397,11 +350,9 @@ msgstr ""
 "simuler le son provenant d'un haut-parleur ou d'un appareil de faible "
 "qualité."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:173
 msgid "EQ"
 msgstr "EQ"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:175
 msgid ""
 "EQ is what all other equalizers inherit from. It can be extended with with "
 "Custom scripts to create an equalizer with a custom number of bands."
@@ -410,11 +361,9 @@ msgstr ""
 "des scripts personnalisés pour créer un égaliseur avec un nombre "
 "personnalisé de bandes."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:179
 msgid "EQ6, EQ10, EQ21"
 msgstr "EQ6, EQ10, EQ21"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:181
 msgid ""
 "Godot provides three equalizers with different numbers of bands. An "
 "equalizer on the Master bus can be useful to cut frequencies that the "
@@ -429,11 +378,9 @@ msgstr ""
 "des basses). L'effet d'égalisation peut être désactivé lorsque le casque est "
 "branché."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
 msgstr "Filtre"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:189
 msgid ""
 "Filter is what all other filters inherit from and should not be used "
 "directly."
@@ -441,11 +388,9 @@ msgstr ""
 "Filter (filtre) est ce dont héritent tous les autres filtres et ne doit pas "
 "être utilisé directement."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:192
 msgid "HighPassFilter"
 msgstr "HighPassFilter"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
 "to reduce the bass content of a signal."
@@ -454,20 +399,16 @@ msgstr ""
 "HighPassFilter est utilisé pour réduire le contenu en basses fréquences d'un "
 "signal."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:199
 msgid "HighShelfFilter"
 msgstr "HighShelfFilter"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:201
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr ""
 "Réduit toutes les fréquences au-dessus d'une fréquence spécifique *Cutoff*."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:206
 msgid "Limiter"
 msgstr "Limiteur (Limiter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:208
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
@@ -477,11 +418,9 @@ msgstr ""
 "conçu pour empêcher l'amplitude d'un signal de dépasser un seuil donné en "
 "dB. L'ajout d'un limiteur au bus maître est une protection contre l'écrêtage."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:213
 msgid "LowPassFilter"
 msgstr "LowPassFilter"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:215
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
 "(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
@@ -494,20 +433,16 @@ msgstr ""
 "\"étouffé\". Par exemple, les sons sous-marins, les sons bloqués par les "
 "murs ou les sons éloignés."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:221
 msgid "LowShelfFilter"
 msgstr "LowShelfFilter"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:223
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
 "Réduit toutes les fréquences en dessous d'une fréquence spécifique *Cutoff*."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:226
 msgid "NotchFilter"
 msgstr "Filtre coupe-bande (NotchFilter)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:228
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
@@ -515,11 +450,9 @@ msgstr ""
 "À l'opposé du BandPassFilter, il supprime une bande de son du spectre de "
 "fréquences à une fréquence de *coupure* donnée."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:232
 msgid "Panner"
 msgstr "Panner"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:234
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between the "
 "left and right channels (wear headphones to audition this effect)."
@@ -527,11 +460,9 @@ msgstr ""
 "Le Panner permet de régler l'équilibre stéréo d'un signal entre les canaux "
 "gauche et droit (portez un casque pour entendre cet effet)."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:238
 msgid "Phaser"
 msgstr "Phaser"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:240
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
 "by two signals being dephased and cancelling each other out. You can make a "
@@ -541,11 +472,9 @@ msgstr ""
 "par deux signaux qui se déphasent et s'annulent l'un l'autre. Vous pouvez "
 "faire une voix de Dark Vador avec, ou des sons de type avion à réaction."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:245
 msgid "PitchShift"
 msgstr "Changement de hauteur (PitchShift)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:247
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
 "speed. All frequencies can be increased/decreased with minimal effect on "
@@ -556,22 +485,17 @@ msgstr ""
 "effet minimal sur les transitoires. *PitchShift* peut être utile pour créer "
 "des voix exceptionnellement hautes ou graves."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:252
 msgid "Record"
 msgstr "Enregistrer (Record)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:254
-#, fuzzy
 msgid "The Record effect allows the user to record sound from a microphone."
 msgstr ""
-"L'effet Enregistrer permet d'écrire l'audio passant par le bus dans un "
-"fichier."
+"L'effet Enregistrer permet à l'utilisateur d'enregistrer l'audio provenant "
+"d'un microphone."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:257
 msgid "Reverb"
 msgstr "Réverbération (Reverb)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:259
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
 "can be tweaked to obtain the sound of a specific room. Reverb is commonly "
@@ -585,11 +509,9 @@ msgstr ""
 "<class_Area>` (voir :ref:`Reverb bus <doc_audio_streams_reverb_buses>`), ou "
 "pour appliquer un effet \"chambre\" à tous les sons."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:266
 msgid "SpectrumAnalyzer"
 msgstr "SpectrumAnalyzer"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:268
 msgid ""
 "This effect doesn't alter audio, instead, you add this effect to buses you "
 "want a spectrum analysis of. This would typically be used for audio "
@@ -602,22 +524,18 @@ msgstr ""
 "être trouvé `ici <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/audio/spectrum>`__."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:273
 msgid "StereoEnhance"
 msgstr "Amélioration Stéréo (StereoEnhance)"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:275
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."
 msgstr ""
 "Cet effet utilise quelques algorithmes pour améliorer le spectre stéréo d'un "
 "signal."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:278
 msgid "Automatic bus disabling"
 msgstr "Désactivation automatique du bus"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:280
 msgid ""
 "There is no need to disable buses manually when not in use. Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
@@ -627,17 +545,14 @@ msgstr ""
 "sont pas utilisés. Godot détecte que le bus a été silencieux pendant "
 "quelques secondes et le désactive (ainsi que tous ses effets)."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:286
 msgid "Disabled buses have a blue VU meter instead of a red-green one."
 msgstr ""
 "Les bus désactivés sont équipés d'un compteur VU bleu au lieu d'un compteur "
 "rouge-vert."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:289
 msgid "Bus rearrangement"
 msgstr "Réarrangement de bus"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:291
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
 "removing and moving buses around while the reference to them is kept. "
@@ -652,11 +567,9 @@ msgstr ""
 "système a été choisi parce que le réorganisation des bus est un processus "
 "plus courant que leur renommage."
 
-#: ../../docs/tutorials/audio/audio_buses.rst:298
 msgid "Default bus layout"
 msgstr "Disposition des bus par défaut"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:300
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "

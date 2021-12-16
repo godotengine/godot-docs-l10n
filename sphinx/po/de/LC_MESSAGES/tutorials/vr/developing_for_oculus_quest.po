@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:4
 msgid "Developing for Oculus Quest"
 msgstr "Entwickeln für Oculus Quest"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:7
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:9
 msgid ""
 "This tutorial goes over how to get started developing for the *Oculus Quest* "
 "with an official Godot plugin."
@@ -33,61 +30,50 @@ msgstr ""
 "In dieser Anleitung erfahren Sie, wie Sie mit einem offiziellen Godot-Plugin "
 "mit der Entwicklung für *Oculus Quest* beginnen."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:12
 msgid "Before starting, there are two things you need to do:"
 msgstr "Bevor Sie beginnen, gibt es zwei Dinge, die Sie tun müssen:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:14
 msgid ""
 "First you need to go through the steps on the :ref:"
 "`doc_exporting_for_android` page. This leads you through installing the "
 "toolset that Godot needs to export to Android devices."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:18
 msgid ""
 "Next you need the Quest plugin. You can get it from the Asset Library or "
 "manually download it from `here <https://github.com/GodotVR/godot-oculus-"
 "mobile-asset>`__."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:22
 msgid "Setting Up Godot"
 msgstr "Godot einrichten"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:24
 msgid "To get started open Godot and create a new project."
 msgstr "Zum Start öffnen Sie Godot und erstellen Sie ein neues Projekt."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:28
 msgid ""
 "Make sure to choose the ``GLES2`` renderer. Due to the Quest's GPU this "
 "backend is far better suited for the Quest."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:31
 msgid ""
 "Copy the addons folder from the Oculus Mobile asset into your Godot project. "
 "Your project tree should look similar to this:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:36
 msgid "Now you can start building the main scene:"
 msgstr "Jetzt können Sie mit dem Aufbau der Hauptszene beginnen:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:38
 msgid "Add an :ref:`ARVROrigin <class_ARVROrigin>` node first."
 msgstr ""
 "Fügen Sie zuerst einen :ref:`ARVROrigin <class_ARVROrigin>`-Node hinzu."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:39
 msgid ""
 "Then add three child nodes to the origin node, one :ref:`ARVRCamera "
 "<class_ARVRCamera>` and two :ref:`ARVRController <class_ARVRController>` "
 "nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:40
 msgid ""
 "Assign controller ID 1 to the first :ref:`ARVRController "
 "<class_ARVRController>` and rename that to ``LeftHand``."
@@ -95,7 +81,6 @@ msgstr ""
 "Weisen Sie dem ersten :ref:`ARVRController <class_ARVRController>` die "
 "Controller-ID 1 zu und benennen Sie diese in ``LeftHand`` um."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:41
 msgid ""
 "Assign controller ID 2 to the second :ref:`ARVRController "
 "<class_ARVRController>` and rename that to ``RightHand``."
@@ -103,7 +88,6 @@ msgstr ""
 "Weisen Sie dem zweiten :ref:`ARVRController <class_ARVRController>` die "
 "Controller-ID 2 zu und benennen Sie diese in ``RightHand`` um."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:42
 msgid ""
 "Finally add a :ref:`MeshInstance <class_MeshInstance>` as a child node to "
 "our first :ref:`ARVRController <class_ARVRController>` and create a box "
@@ -113,11 +97,9 @@ msgid ""
 "controllers."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:46
 msgid "Now add a script to the main node and add the following code:"
 msgstr "Fügen Sie nun dem Haupt-Node ein Skript mit folgendem Code hinzu:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
@@ -125,7 +107,6 @@ msgstr ""
 "Bevor Sie dieses Projekt in die Quest exportieren können, müssen Sie drei "
 "weitere Schritte ausführen."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
 "First go into the project settings and make sure that the main scene is the "
 "scene we run. Godot does not ask you to set this on export."
@@ -134,29 +115,24 @@ msgstr ""
 "die Hauptszene die Szene ist, die wir ausführen. Godot fordert Sie beim "
 "Export nicht auf dies festzulegen."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:84
 msgid ""
 "Then go into the export menu and configure a new Android export. If you "
 "still haven't gone through the :ref:`doc_exporting_for_android` page do it "
 "now. If you didn't you'll have some red messages on this screen."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:89
 msgid ""
 "If you did you can forge ahead and make a few small changes to the export "
 "settings. First change the XR Mode to ``Oculus Mobile VR``. Then change the "
 "Degrees of Freedom mode to ``6DOF``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
 msgid "Now save and close the export window."
 msgstr "Speichern und schließen Sie nun das Exportfenster."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:98
 msgid "Setting Up Your Quest"
 msgstr "Den Quest einrichten"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:100
 msgid ""
 "Finally take out your phone, when you got your Quest you needed to install "
 "an Oculus app on it and link it up to your Quest. Start the Oculus app. "
@@ -167,19 +143,15 @@ msgstr ""
 "verknüpfen. Starten Sie die Oculus App und drücken Sie auf das Einstellrad "
 "unten rechts. Wählen Sie Ihren Quest aus:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:107
 msgid "Select \"More Settings\", and select \"Developer Mode\":"
 msgstr "Wählen Sie \"Weitere Einstellungen\" und dann \"Entwicklermodus\":"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:111
 msgid "Now turn developer mode on:"
 msgstr "Schalten Sie nun den Entwicklermodus ein:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:115
 msgid "This allows you to deploy your games to the Quest."
 msgstr "Auf diese Weise können Sie Ihre Spiele für den Quest bereitstellen."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:117
 msgid ""
 "Connect the Quest to your PC with the provided USB cable. Put the Quest on, "
 "it may give a few dialogs to give the PC permission to deploy apps. Now hit "
@@ -193,7 +165,6 @@ msgstr ""
 "Ihrem Godot-Fenster sichtbar sein sollte. Es sollte Ihr Spiel erstellen und "
 "in den Quest exportieren."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:123
 msgid ""
 "The above does the bare minimum to get your project running on the Quest, "
 "it's not very exciting. Holger Dammertz has made a great toolkit for the "
@@ -205,7 +176,6 @@ msgstr ""
 "Toolkit für den Quest erstellt, das viele Szenen enthält, um Ihnen auf Ihrem "
 "Weg zu helfen, einschließlich wirklich netter Controller-Meshes."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:128
 msgid ""
 "You can find the toolkit `here <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
@@ -213,7 +183,6 @@ msgstr ""
 "Sie finden das Toolkit `hier <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
 msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."

@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Shaders style guide"
+msgstr "Настанови по стилю C#"
+
+#, fuzzy
+msgid ""
+"This style guide lists conventions to write elegant shaders. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"У цьому посібнику зі стилю перелічені умовні домовленості для написання "
+"елегантного коду GDScript. Мета посібника - заохотити писати чистий, "
+"читабельний код та сприяти узгодженню між проєктами, дискусіями та "
+"навчальними матеріалами. Сподіваємось, це також підтримає розробку "
+"інструментів автоматичного форматування."
+
+msgid ""
+"Since the Godot shader language is close to C-style languages and GLSL, this "
+"guide is inspired by Godot's own GLSL formatting. You can view an example of "
+"a GLSL file in Godot's source code `here <https://github.com/godotengine/"
+"godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
+msgstr ""
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+"Посібники зі стилів не розглядаються як жорсткі правила. Часом ви не зможете "
+"застосувати деякі наведені нижче вказівки. Коли це станеться, використовуйте "
+"найкраще рішення та запитайте в колег-розробників їх думку."
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+"Загалом, стабільне дотримання визначеного стилю у ваших проєктах, та серед "
+"вашої команди, важливіше, ніж дотримання цього посібника."
+
+#, fuzzy
+msgid ""
+"Godot's built-in shader editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Вбудований в Godot редактор скриптів використовує багато цих умов за "
+"замовчуванням. Нехай це вам допоможе."
+
+#, fuzzy
+msgid "Here is a complete shader example based on these guidelines:"
+msgstr "Ось повний приклад класу на основі цих вказівок:"
+
+msgid "Formatting"
+msgstr "Форматування"
+
+msgid "Encoding and special characters"
+msgstr "Кодування та спеціальні символи"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr ""
+"Використовуйте символи зміни рядка (**LF**) для переривання рядків, не CRLF, "
+"чи CR. *(за замовчуванням редактора)*"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr ""
+"Використовуйте символи зміни рядка в кінці кожного файлу. *(за замовчуванням "
+"редактора*)"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+"Використовуйте кодування **UTF-8** без `маркера порядку байтів <https://en."
+"wikipedia.org/wiki/Byte_order_mark>`_. *(за замовчування редактора)*"
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr ""
+"Використовуйте для відступів **Tab** замість пробілів. *(за замовчуванням "
+"редактора)*"
+
+msgid "Indentation"
+msgstr "Відступи"
+
+#, fuzzy
+msgid ""
+"Each indent level should be one tab greater than the block containing it."
+msgstr ""
+"Кожен рівень відступу повинен бути на один відступ більшим, ніж блок, що "
+"містить його."
+
+msgid "**Good**:"
+msgstr "**Правильно**:"
+
+msgid "**Bad**:"
+msgstr "**Неправильно**:"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"Використовуйте 2 відступи, щоб відрізнити рядки продовження від звичайних "
+"блоків коду."
+
+msgid "Line breaks and blank lines"
+msgstr "Розриви рядків та порожні рядки"
+
+msgid ""
+"For a general indentation rule, follow `the \"1TBS Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
+"recommends placing the brace associated with a control statement on the same "
+"line. Always use braces for statements, even if they only span one line. "
+"This makes them easier to refactor and avoids mistakes when adding more "
+"lines to an ``if`` statement or similar."
+msgstr ""
+"Для загального правила відступу дотримуйтесь `\" Стиль 1TBS \"<https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_ (OTBS)>` _, який "
+"рекомендує розміщувати дужку, пов'язану з контрольним оператором, на одному "
+"рядок. Завжди використовуйте дужки для операторів, навіть якщо вони "
+"охоплюють лише один рядок. Це полегшує їх рефакторинг та дозволяє уникнути "
+"помилок при додаванні більше рядків до заяви `` if '' або подібного."
+
+msgid "Blank lines"
+msgstr "Порожні рядки"
+
+#, fuzzy
+msgid "Surround function definitions with one (and only one) blank line:"
+msgstr "Використовуйте по два порожніх рядка між функціями та класами:"
+
+#, fuzzy
+msgid ""
+"Use one (and only one) blank line inside functions to separate logical "
+"sections."
+msgstr ""
+"Використовуйте один порожній рядок всередині функцій для розділення логічних "
+"блоків."
+
+msgid "Line length"
+msgstr "Довжина рядка"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr "Зберігайте в окремих рядках коду не більше 100 символів."
+
+#, fuzzy
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two shaders opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+"Якщо можете, спробуйте тримати в рядках не більше 80 символів. Це допомагає "
+"читати код на невеликих дисплеях та з двома скриптами, відкритими поруч у "
+"зовнішньому текстовому редакторі. Наприклад, щоб переглянути на наявність "
+"різниці."
+
+msgid "One statement per line"
+msgstr "Одне твердження на рядок"
+
+msgid "Never combine multiple statements on a single line."
+msgstr ""
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr "Єдиним винятком із цього правила є потрійний оператор:"
+
+msgid "Comment spacing"
+msgstr "Пробіл коментаря"
+
+msgid ""
+"Regular comments should start with a space, but not code that you comment "
+"out. This helps differentiate text comments from disabled code."
+msgstr ""
+"Регулярні коментарі повинні починатися з пробілу, але не код, який ви "
+"закоментовуєте. Це допомагає відрізняти текстові коментарі від відключеного "
+"коду."
+
+msgid ""
+"Don't use multiline comment syntax if your comment can fit on a single line:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In the shader editor, to make the selected code a comment (or uncomment it), "
+"press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
+"the selected lines."
+msgstr ""
+"У редакторі скриптів можна закоментувати цілу ділянку вибраного коду за "
+"допомогою натискання :kbd:`Ctrl + K`. Ця дія додає знак # на початку всіх "
+"вибраних рядків."
+
+msgid "Whitespace"
+msgstr "Пробіли"
+
+#, fuzzy
+msgid ""
+"Always use one space around operators and after commas. Also, avoid "
+"extraneous spaces in function calls."
+msgstr ""
+"Завжди використовуйте один пробіл навколо операторів і після коми. Також "
+"уникайте зайвих пробілів у посиланнях на словники та викликах функцій."
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr "Не використовуйте пробіли для вирівнювання виразів по вертикалі:"
+
+#, fuzzy
+msgid "Floating-point numbers"
+msgstr "Число з рухомою комою (дійсне)"
+
+msgid ""
+"Always specify at least one digit for both the integer and fractional part. "
+"This makes it easier to distinguish floating-point numbers from integers, as "
+"well as distinguishing numbers greater than 1 from those lower than 1."
+msgstr ""
+
+#, fuzzy
+msgid "Accessing vector members"
+msgstr "Доступ до вузлів сцени"
+
+msgid ""
+"Use ``r``, ``g``, ``b``, and ``a`` when accessing a vector's members if it "
+"contains a color. If the vector contains anything else than a color, use "
+"``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
+"better understand what the underlying data represents."
+msgstr ""
+
+msgid "Naming conventions"
+msgstr "Конвенції іменування"
+
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code."
+msgstr ""
+"Ці конвенції іменування відповідають стилю Godot Engine. Якщо їх порушити, "
+"ваш код зіткнеться із вбудованими конвенціями іменування, що призведе до "
+"непослідовного коду."
+
+msgid "Functions and variables"
+msgstr "Функції та змінні"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr ""
+"Використовуйте snake\\_case (всі слова з маленької букви відокремлені "
+"підкресленням) для назв функцій та змінних:"
+
+msgid "Constants"
+msgstr "Константи"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr ""
+"Записуйте константи в стилі CONSTANT\\_CASE (всі букви написані з великим "
+"регістром, слова відокремлені підкресленням (\\_)):"
+
+msgid "Code order"
+msgstr "Порядок коду"
+
+#, fuzzy
+msgid "We suggest to organize shader code this way:"
+msgstr "Ми пропонуємо організувати код GDScript таким чином:"
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+"Ми оптимізували порядок, щоб полегшити читання коду зверху вниз, щоб "
+"допомогти розробникам, які вперше читають код, зрозуміти, як він працює, та "
+"уникнути помилок, пов'язаних із порядком оголошення змінних."
+
+#, fuzzy
+msgid "This code order follows two rules of thumb:"
+msgstr "Цей порядок коду відповідає чотирьом правилам:"
+
+#, fuzzy
+msgid "Metadata and properties first, followed by methods."
+msgstr "Першими стають властивості та сигнали, а потім - методи."
+
+msgid ""
+"\"Public\" comes before \"private\". In a shader language's context, \"public"
+"\" refers to what's easily adjustable by the user (uniforms)."
+msgstr ""
+
+msgid "Local variables"
+msgstr "Локальні змінні"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+"Оголошуйте локальні змінні якомога ближче до їх першого використання. Це "
+"полегшує відстеження коду, без необхідності прокручувати занадто багато, щоб "
+"знайти де оголошено змінну."

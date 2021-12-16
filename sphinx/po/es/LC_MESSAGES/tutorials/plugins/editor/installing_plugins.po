@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
 msgid "Installing plugins"
 msgstr "Instalando plugins"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
 "Godot features an editor plugin system with numerous plugins developed by "
 "the community. Plugins can extend the editor's functionality with new nodes, "
@@ -32,11 +30,9 @@ msgstr ""
 "del editor con nuevos nodos, docks adicionales, características convenientes "
 "y más."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
 msgid "Finding plugins"
 msgstr "Encontrando plugins"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
 "The preferred way to find Godot plugins is to use the `Asset Library "
 "<https://godotengine.org/asset-library/>`_. While it can be browsed online, "
@@ -49,13 +45,11 @@ msgstr ""
 "editor. Para ello, haga clic en la pestaña **AssetLib** en la parte superior "
 "del editor:"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
 msgid "You can also find assets on code hosting websites such as GitHub."
 msgstr ""
 "También puedes encontrar activos en sitios web de alojamiento de código como "
 "GitHub."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
 msgid ""
 "Some repositories describe themselves as \"plugins\" but may not actually be "
 "*editor* plugins. This is especially the case for scripts that are intended "
@@ -68,7 +62,6 @@ msgstr ""
 "No es necesario habilitar tales plugins para usarlos. Descárgalos y extrae "
 "los archivos de tu carpeta de proyecto."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
 msgid ""
 "One way to distinguish editor plugins from non-editor plugins is to look for "
 "a ``plugin.cfg`` file in the repository that hosts the plugin. If the "
@@ -80,11 +73,9 @@ msgstr ""
 "el repositorio contiene un archivo ``plugin.cfg`` en una carpeta colocada en "
 "la carpeta ``addons/``, entonces es un plugin editor."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
 msgid "Installing a plugin"
 msgstr "Instalando un plugin"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
 "To install a plugin, download it as a ZIP archive. On the Asset Library, "
 "this can be done using the **Download** button, either from the editor or "
@@ -94,7 +85,6 @@ msgstr ""
 "de Activos, esto se puede hacer usando el botón **Descargar**, ya sea desde "
 "el editor o usando la interfaz web."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
 msgid ""
 "On GitHub, if a plugin has *tags* (versions) declared, go to the "
 "**Releases** tab to download a stable release. This ensures you download a "
@@ -104,7 +94,6 @@ msgstr ""
 "**Releases** para descargar una versión estable. Esto te asegura que "
 "descargas una versión que fue declarada estable por su autor."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
 msgid ""
 "On GitHub, if the plugin doesn't have any *tags* declared, use the "
 "**Download ZIP** button to download a ZIP of the latest revision:"
@@ -112,7 +101,6 @@ msgstr ""
 "En GitHub, si el plugin no tiene ninguna *tags* declarada, usa el botón "
 "**Download ZIP** para descargar un ZIP de la última revisión:"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
 msgid ""
 "Extract the ZIP archive and move the ``addons/`` folder it contains into "
 "your project folder. If your project already contains an ``addons/`` folder, "
@@ -128,11 +116,9 @@ msgstr ""
 "de archivos puede preguntarle si debe escribir en la carpeta; responda "
 "**Sí**. Ningún archivo será sobrescrito en el proceso."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
 msgid "Enabling a plugin"
 msgstr "Habilitando un plugin"
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
 msgid ""
 "To enable the freshly installed plugin, open **Project > Project Settings** "
 "at the top of the editor then go the **Plugins** tab. If the plugin was "
@@ -147,7 +133,6 @@ msgstr ""
 "**Activo** para activar el plugin. La palabra **Activo** se mostrará en "
 "verde para confirmar que el plugin fue habilitado."
 
-#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
 msgid ""
 "You can use the plugin immediately after enabling it; there's no need to "
 "restart the editor. Likewise, disabling a plugin can be done without having "

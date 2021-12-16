@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:4
 msgid "Matrices and transforms"
 msgstr "行列と変換"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:9
 msgid ""
 "Before reading this tutorial, we recommend that you thoroughly read and "
 "understand the :ref:`doc_vector_math` tutorial, as this tutorial requires a "
@@ -34,7 +31,6 @@ msgstr ""
 "このチュートリアルを読むには、まずベクトルの知識が必要なので、\\ :ref:"
 "`doc_vector_math` チュートリアルをよく読んで理解することをお勧めします。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:13
 msgid ""
 "This tutorial is about *transformations* and how we represent them in Godot "
 "using matrices. It is not a full in-depth guide to matrices. Transformations "
@@ -46,7 +42,6 @@ msgstr ""
 "行移動、回転、スケールとして適用されるため、これらを行列で表現する方法に焦点"
 "を当てます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:18
 msgid ""
 "Most of this guide focuses on 2D, using :ref:`class_Transform2D` and :ref:"
 "`class_Vector2`, but the way things work in 3D is very similar."
@@ -54,7 +49,6 @@ msgstr ""
 "このガイドのほとんどは、\\ :ref:`class_Transform2D` と :ref:`class_Vector2` "
 "を使用して2Dに焦点を当てていますが、3Dでの動作は非常に似ています。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "As mentioned in the previous tutorial, it is important to remember that in "
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
@@ -64,7 +58,6 @@ msgstr ""
 "に注意することが重要です。これは、ほとんどの学校が線形代数を教える方法の反対"
 "で、学校の授業ではY軸は上向きです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
 "The convention is that the X axis is red, the Y axis is green, and the Z "
 "axis is blue. This tutorial is color-coded to match these conventions, but "
@@ -73,11 +66,9 @@ msgstr ""
 "慣例では、X軸は赤、Y軸は緑、Z軸は青です。このチュートリアルは、これらの規則に"
 "合わせて色分けされていますが、原点ベクトルも青色で表します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:32
 msgid "Matrix components and the Identity matrix"
 msgstr "行列成分と単位行列"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:34
 msgid ""
 "The identity matrix represents a transform with no translation, no rotation, "
 "and no scale. Let's start by looking at the identity matrix and how its "
@@ -86,7 +77,6 @@ msgstr ""
 "単位行列は、平行移動、回転、スケールのないtransformを表します。単位行列と、そ"
 "の成分が視覚的にどのように表示されるかを確認することから始めましょう。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "Matrices have rows and columns, and a transformation matrix has specific "
 "conventions on what each does."
@@ -94,7 +84,6 @@ msgstr ""
 "行列には行と列があり、変換行列にはそれぞれの動作に関する特定の規則がありま"
 "す。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid ""
 "In the image above, we can see that the red X vector is represented by the "
 "first column of the matrix, and the green Y vector is likewise represented "
@@ -105,7 +94,6 @@ msgstr ""
 "目の列で表されています。列を変更すると、これらのベクトルが変更されます。次の"
 "いくつかの例で、それらの操作方法を説明します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:49
 msgid ""
 "You should not worry about manipulating rows directly, as we usually work "
 "with columns. However, you can think of the rows of the matrix as showing "
@@ -115,7 +103,6 @@ msgstr ""
 "し、マトリックスの行は、特定の方向への移動に寄与するベクトルを示すものと考え"
 "ることができます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:53
 #, fuzzy
 msgid ""
 "When we refer to a value such as `t.x.y`, that's the Y component of the X "
@@ -127,11 +114,9 @@ msgstr ""
 "左下。同様に、\\ `t.x.x` は左上、\\ `t.y.x` は右上、\\ `t.y.y` は右下、\\ "
 "`t` はTransform2Dです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:59
 msgid "Scaling the transformation matrix"
 msgstr "変換行列のスケーリング"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:61
 msgid ""
 "Applying a scale is one of the easiest operations to understand. Let's start "
 "by placing the Godot logo underneath our vectors so that we can visually see "
@@ -141,7 +126,6 @@ msgstr ""
 "Godotロゴを配置して、オブジェクトに対する効果を視覚的に確認できるようにしま"
 "す:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:67
 msgid ""
 "Now, to scale the matrix, all we need to do is multiply each component by "
 "the scale we want. Let's scale it up by 2. 1 times 2 becomes 2, and 0 times "
@@ -151,11 +135,9 @@ msgstr ""
 "とだけです。 2倍に拡大しましょう。1 x 2が2になり、0 x 2が0になるため、次のよ"
 "うになります:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "To do this in code, we can simply multiply each of the vectors:"
 msgstr "コードでこれを行うには、各ベクトルを単純に乗算します:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:92
 msgid ""
 "If we wanted to return it to its original scale, we can multiply each "
 "component by 0.5. That's pretty much all there is to scaling a "
@@ -164,7 +146,6 @@ msgstr ""
 "元のスケールに戻したい場合は、各成分に0.5を掛けます。変換行列のスケーリングは"
 "これでほぼすべてです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:96
 msgid ""
 "To calculate the object's scale from an existing transformation matrix, you "
 "can use `length()` on each of the column vectors."
@@ -172,24 +153,20 @@ msgstr ""
 "既存の変換行列からオブジェクトのスケールを計算するには、各列ベクトルで "
 "`length()` を使用できます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:99
 msgid ""
 "In actual projects, you can use the `scaled()` method to perform scaling."
 msgstr ""
 "実際のプロジェクトでは、\\ `scaled()` メソッドを使用してスケーリングを実行で"
 "きます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:103
 msgid "Rotating the transformation matrix"
 msgstr "変換行列の回転"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
 "We'll start the same way as earlier, with the Godot logo underneath the "
 "identity matrix:"
 msgstr "単位行列の下にGodotロゴを配置して、以前と同じ方法で開始します:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:110
 msgid ""
 "As an example, let's say we want to rotate our Godot logo clockwise by 90 "
 "degrees. Right now the X axis points right and the Y axis points down. If we "
@@ -200,7 +177,6 @@ msgstr ""
 "き、Y軸は下向きです。これらを頭の中で回転させると、論理的には新しいX軸が下を"
 "向き、新しいY軸が左を指すはずです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:116
 msgid ""
 "You can imagine that you grab both the Godot logo and its vectors, and then "
 "spin it around the center. Wherever you finish spinning, the orientation of "
@@ -209,7 +185,6 @@ msgstr ""
 "Godotのロゴとそのベクトルの両方をつかみ、それを中央で回転させると想像できま"
 "す。回転を終了するたびに、ベクトルの向きによって行列が決まります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:120
 msgid ""
 "We need to represent \"down\" and \"left\" in normal coordinates, so means "
 "we'll set X to (0, 1) and Y to (-1, 0). These are also the values of "
@@ -220,7 +195,6 @@ msgstr ""
 "定します。これらは、\\ `Vector2.DOWN` および `Vector2.LEFT` の値でもありま"
 "す。これを行うと、オブジェクトを回転させるという望ましい結果が得られます:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:127
 #, fuzzy
 msgid ""
 "If you have trouble understanding the above, try this exercise: Cut a square "
@@ -231,7 +205,6 @@ msgstr ""
 "し、その上にXとYベクトルを描き、グラフ紙の上に置き、それを回転させて、端点を"
 "メモします。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:131
 #, fuzzy
 msgid ""
 "To perform rotation in code, we need to be able to calculate the values "
@@ -244,7 +217,6 @@ msgstr ""
 "雑に見えても心配しないでください。あなたが知る必要がある最も難しいことだと約"
 "束します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
 "Godot represents all rotations with radians, not degrees. A full turn is "
 "`TAU` or `PI*2` radians, and a quarter turn of 90 degrees is `TAU/4` or "
@@ -254,7 +226,6 @@ msgstr ""
 "`PI*2` ラジアンで、90度の4分の1回転は `TAU/4` または `PI/2` ラジアンです。\\ "
 "`TAU` を使用すると、通常、コードが読みやすくなります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
 "Fun fact: In addition to Y being *down* in Godot, rotation is represented "
 "clockwise. This means that all the math and trig functions behave the same "
@@ -267,7 +238,6 @@ msgstr ""
 "とを意味します。両方のシステムの回転は「XからY」であると考えることができま"
 "す。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:150
 msgid ""
 "In order to perform a rotation of 0.5 radians (about 28.65 degrees), we "
 "simply plug in a value of 0.5 to the formula above and evaluate to find what "
@@ -276,11 +246,9 @@ msgstr ""
 "0.5ラジアン(約28.65度)の回転を実行するには、0.5の値を上記の式に差し込み、実際"
 "の値がどうあるべきかを評価します:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:156
 msgid "Here's how that would be done in code (place the script on a Node2D):"
 msgstr "コードでそれを行う方法を次に示します(スクリプトをNode2Dに配置します):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:178
 msgid ""
 "To calculate the object's rotation from an existing transformation matrix, "
 "you can use `atan2(t.x.y, t.x.x)`, where t is the Transform2D."
@@ -288,17 +256,14 @@ msgstr ""
 "既存の変換行列からオブジェクトの回転を計算するには、\\ `atan2(t.x.y, t.x.x)` "
 "を使用できます。tはTransform2Dです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:181
 msgid ""
 "In actual projects, you can use the `rotated()` method to perform rotations."
 msgstr ""
 "実際のプロジェクトでは、\\ `rotated()` メソッドを使用して回転を実行できます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "Basis of the transformation matrix"
 msgstr "変換行列の基底"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid ""
 "So far we have only been working with the `x` and `y`, vectors, which are in "
 "charge of representing rotation, scale, and/or shearing (advanced, covered "
@@ -311,7 +276,6 @@ msgstr ""
 "トルを合わせて変換行列の *基底* と呼ばれます。「基底」および「基底ベクトル」"
 "という用語は重要です。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
 "You might have noticed that :ref:`class_Transform2D` actually has three :ref:"
 "`class_Vector2` values: `x`, `y`, and `origin`. The `origin` value is not "
@@ -326,7 +290,6 @@ msgstr ""
 "ての例で原点ベクトルを追跡します。originは別の列と考えることができますが、多"
 "くの場合、完全に独立していると考える方が良いでしょう。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:201
 msgid ""
 "Note that in 3D, Godot has a separate :ref:`class_Basis` structure for "
 "holding the three :ref:`class_Vector3` values of the basis, since the code "
@@ -340,11 +303,9 @@ msgstr ""
 "`class_Vector3` 値を保持するための別個の :ref:` class_Basis` 構造を持っていま"
 "す。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:208
 msgid "Translating the transformation matrix"
 msgstr "変換行列の平行移動"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:210
 msgid ""
 "Changing the `origin` vector is called a *translating* the transformation "
 "matrix. Translating is basically a technical term for \"moving\" the object, "
@@ -354,14 +315,12 @@ msgstr ""
 "動とは、基本的にオブジェクトを「動かす」ための専門用語ですが、明示的には回転"
 "を伴いません。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
 "Let's work through an example to help understand this. We will start with "
 "the identity transform like last time, except we will keep track of the "
 "origin vector this time."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
@@ -369,7 +328,6 @@ msgstr ""
 "オブジェクトを(1, 2)の位置に移動させたい場合は、単にその `origin` ベクトルを"
 "(1, 2)に設定する必要があります:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
 "There is also a `translated()` method, which performs a different operation "
 "to adding or changing `origin` directly. The `translated()` method will "
@@ -382,7 +340,6 @@ msgstr ""
 "を *それ自身の回転に関連して* 変換します。たとえば、時計回りに90度回転したオ"
 "ブジェクトは、\\ `Vector2.UP` で `translated() ` を使用すると右に移動します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:231
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
@@ -390,11 +347,9 @@ msgstr ""
 "Godotの2Dはピクセルに基づく座標を使用するため、実際のプロジェクトでは数百とい"
 "う単位で並行移動を行う必要があります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:235
 msgid "Putting it all together"
 msgstr "すべてをまとめる"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 #, fuzzy
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
@@ -404,7 +359,6 @@ msgstr ""
 "これまでに説明した内容をすべて1つのtransformに適用します。それ為に、Godotロゴ"
 "を設定したスプライトを持つ簡単なプロジェクトを用意します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid ""
 "Let's set the translation to (350, 150), rotate by -0.5 rad, and scale by 3. "
 "I've posted a screenshot, and the code to reproduce it, but I encourage you "
@@ -414,11 +368,9 @@ msgstr ""
 "クリーンショットと再現コードを投稿しましたが、コードを見ずにスクリーンショッ"
 "トを再現することをおすすめします！"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:280
 msgid "Shearing the transformation matrix (advanced)"
 msgstr "変換行列のせん断(高度な内容)"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:282
 msgid ""
 "If you are only looking for how to *use* transformation matrices, feel free "
 "to skip this section of the tutorial. This section explores an uncommonly "
@@ -429,7 +381,6 @@ msgstr ""
 "ションをスキップしてください。このセクションでは、変換行列の理解を深める目的"
 "で、一般的に使用されない側面について説明します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You may have noticed that a transform has more degrees of freedom than the "
 "combination of the above actions. The basis of a 2D transformation matrix "
@@ -442,7 +393,6 @@ msgstr ""
 "値がありますが、回転値とスケールのVector2には3つの数値しかありません。欠落し"
 "ている自由度の高い概念は、\\ *せん断*\\ と呼ばれます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:293
 #, fuzzy
 msgid ""
 "Normally, you will always have the basis vectors perpendicular to each "
@@ -453,7 +403,6 @@ msgstr ""
 "役立つ場合があります。せん断を理解すると、transformの仕組みを理解するのに役立"
 "ちます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:297
 msgid ""
 "To show you visually how it will look, let's overlay a grid onto the Godot "
 "logo:"
@@ -461,7 +410,6 @@ msgstr ""
 "視覚的にどのように見えるかを示すために、グリッドをGodotロゴにオーバーレイしま"
 "しょう:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:302
 msgid ""
 "Each point on this grid is obtained by adding the basis vectors together. "
 "The bottom-right corner is X + Y, while the top-right corner is X - Y. If we "
@@ -475,11 +423,9 @@ msgstr ""
 "クトルで構成されるため、グリッド全体が一緒に移動します。基底ベクトルにどのよ"
 "うな変更を加えても、現在平行なグリッド上のすべての線は平行のままです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "As an example, let's set Y to (1, 1):"
 msgstr "例として、Yを(1, 1)に設定しましょう:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:328
 msgid ""
 "You can't set the raw values of a Transform2D in the editor, so you *must* "
 "use code if you want to shear the object."
@@ -487,7 +433,6 @@ msgstr ""
 "エディタでTransform2Dの生の値を設定することはできません。そのため、オブジェク"
 "トをせん断したい場合はコードを使用する *必要* があります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:331
 msgid ""
 "Due to the vectors no longer being perpendicular, the object has been "
 "sheared. The bottom-center of the grid, which is (0, 1) relative to itself, "
@@ -497,7 +442,6 @@ msgstr ""
 "の下部中央は、本体に対して(0, 1)であり、それが(1, 1)のワールド位置に配置され"
 "ています。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:335
 msgid ""
 "The intra-object coordinates are called UV coordinates in textures, so let's "
 "borrow that terminology for here. To find the world position from a relative "
@@ -508,7 +452,6 @@ msgstr ""
 "その用語を借用しましょう。相対位置からワールド位置を見つける式はU * X + V * Y"
 "です。ここで、UとVは数値で、XとYは基底ベクトルです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:340
 msgid ""
 "The bottom-right corner of the grid, which is always at the UV position of "
 "(1, 1), is at the world position of (2, 1), which is calculated from X*1 + "
@@ -519,7 +462,6 @@ msgstr ""
 "これは、X*1 + Y*1すなわち (1, 0) + (1, 1)、 (1 + 1, 0 + 1)、または (2, 1)で"
 "す。これは、画像の右下隅の位置に関する観察結果と一致します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:346
 msgid ""
 "Similarly, the top-right corner of the grid, which is always at the UV "
 "position of (1, -1), is at the world position of (0, -1), which is "
@@ -531,7 +473,6 @@ msgstr ""
 "0) - (1, 1)、(1 - 1, 0 - 1)、または(0, -1)から計算されるワールド位置(0, -1)に"
 "あります。これは、画像の右上隅の位置に関する観察結果と一致します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:352
 msgid ""
 "Hopefully you now fully understand the how a transformation matrix affects "
 "the object, and the relationship between the basis vectors and how the "
@@ -541,7 +482,6 @@ msgstr ""
 "ブジェクトの\"UV\"または「内部座標」のワールド位置がどのように変化するかを完"
 "全に理解できたと思います。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:356
 msgid ""
 "In Godot, all transform math is done relative to the parent node. When we "
 "refer to \"world position\", that would be relative to the node's parent "
@@ -551,7 +491,6 @@ msgstr ""
 "置」を参照する場合、ノードに親がある場合は、そのノードの親に対する相対的な位"
 "置になります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:360
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about linear transformations: https://www.youtube.com/watch?"
@@ -560,11 +499,9 @@ msgstr ""
 "追加の説明が必要な場合は、線形変換に関する3Blue1Brownの優れたビデオをご覧くだ"
 "さい: https://www.youtube.com/watch?v=kYB8IZa5AuE"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:365
 msgid "Practical applications of transforms"
 msgstr "変換の実用的な応用"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:367
 msgid ""
 "In actual projects, you will usually be working with transforms inside "
 "transforms by having multiple :ref:`class_Node2D` or :ref:`class_Spatial` "
@@ -574,7 +511,6 @@ msgstr ""
 "class_Spatial` ノードを相互にペアレント化することにより、transform内で変換を"
 "操作します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "However, sometimes it's very useful to manually calculate the values we "
 "need. We will go over how you could use :ref:`class_Transform2D` or :ref:"
@@ -584,11 +520,9 @@ msgstr ""
 "`class_Transform2D` または :ref:` class_Transform` を使用して手動でノードの変"
 "換を計算する方法について説明します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:376
 msgid "Converting positions between transforms"
 msgstr "transform間の位置の変換"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:378
 msgid ""
 "There are many cases where you'd want to convert a position in and out of a "
 "transform. For example, if you have a position relative to the player and "
@@ -599,7 +533,6 @@ msgstr ""
 "する相対的な位置があり、そのワールド(親相対)位置を検索する場合、またはワール"
 "ド位置があり、そのプレイヤーとの相対的な位置を知りたい場合です。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid ""
 "We can find what a vector relative to the player would be defined in world "
 "space as using the \"xform\" method:"
@@ -607,7 +540,6 @@ msgstr ""
 "\"xform\"メソッドを使用して、プレイヤーに対する相対的なベクトルのワールド空間"
 "内での値を得る事ができます:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "And we can use the \"xform_inv\" method to find a what world space position "
 "would be if it was instead defined relative to the player:"
@@ -615,7 +547,6 @@ msgstr ""
 "そして、\"xform_inv\"メソッドを使用して、ワールド空間内の位置をプレイヤーに対"
 "する相対的な位置に変換した結果を得ることができます:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:411
 msgid ""
 "If you know in advance that the transform is positioned at (0, 0), you can "
 "use the \"basis_xform\" or \"basis_xform_inv\" methods instead, which skip "
@@ -625,11 +556,9 @@ msgstr ""
 "\"basis_xform\"または\"basis_xform_inv\"メソッドを使用できます。これらのメ"
 "ソッドは、平行移動の処理をスキップします。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:416
 msgid "Moving an object relative to itself"
 msgstr "オブジェクトをそれ自身に対して相対的に移動する"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:418
 msgid ""
 "A common operation, especially in 3D games, is to move an object relative to "
 "itself. For example, in first-person shooter games, you would want the "
@@ -639,7 +568,6 @@ msgstr ""
 "す。たとえば、一人称シューティングゲームでは、\\ :kbd:`W` を押すと、キャラク"
 "ターが前方(-Z軸)に移動します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:422
 msgid ""
 "Since the basis vectors are the orientation relative to the parent, and the "
 "origin vector is the position relative to the parent, we can simply add "
@@ -649,15 +577,12 @@ msgstr ""
 "位置であるため、単純に複数の基底ベクトルを加算して、オブジェクト自体を相対的"
 "に移動できます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:426
 msgid "This code moves an object 100 units to its own right:"
 msgstr "次のコードは、オブジェクトを 100単位右に移動します:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:439
 msgid "For moving in 3D, you would need to replace \"x\" with \"basis.x\"."
 msgstr "3Dで移動する場合は、\"x\"を\"basis.x\"に置き換える必要があります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid ""
 "In actual projects, you can use `translate_object_local` in 3D or "
 "`move_local_x` and `move_local_y` in 2D to do this."
@@ -665,11 +590,9 @@ msgstr ""
 "実際のプロジェクトでは、3Dで `translate_object_local` を使用するか、2Dで "
 "`move_local_x` と `move_local_y` を使用してこれを行うことができます。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:445
 msgid "Applying transforms onto transforms"
 msgstr "transformへの変換の適用"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:447
 msgid ""
 "One of the most important things to know about transforms is how you can use "
 "several of them together. A parent node's transform affects all of its "
@@ -679,7 +602,6 @@ msgstr ""
 "緒に使用する方法です。親ノードのtransformは、そのすべての子に影響します。例を"
 "見てみましょう。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:451
 msgid ""
 "In this image, the child node has a \"2\" after the component names to "
 "distinguish them from the parent node. It might look a bit overwhelming with "
@@ -692,7 +614,6 @@ msgstr ""
 "の横とマトリックスにも)表示され、数字のほぼ半分がゼロであることに注意してくだ"
 "さい。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid ""
 "The only transformations going on here are that the parent node has been "
 "given a scale of (2, 1), the child has been given a scale of (0.5, 0.5), and "
@@ -701,7 +622,6 @@ msgstr ""
 "ここで行われている唯一の変換は、親ノードに(2, 1)のスケールが与えられ、子に"
 "(0.5, 0.5)のスケールが与えられ、両方のノードに位置が与えられていることです。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:463
 msgid ""
 "All child transformations are affected by the parent transformations. The "
 "child has a scale of (0.5, 0.5), so you would expect it to be a 1:1 ratio "
@@ -718,14 +638,12 @@ msgstr ""
 "すが、親ノードの基底ベクトルにより、実際にはワールド空間の(2, 1)に移動しま"
 "す。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:472
 msgid ""
 "To calculate a child transform's world space transform manually, this is the "
 "code we would use:"
 msgstr ""
 "子transformからワールド空間transformへの手動計算には、次のコードを使用します:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:510
 msgid ""
 "In actual projects, we can find the world transform of the child by applying "
 "one transform onto another using the `*` operator:"
@@ -733,15 +651,12 @@ msgstr ""
 "実際のプロジェクトでは、\\ `*` 演算子を使用して、あるtransformを別のtransform"
 "に適用することで、子のワールドtransformを得ることができます:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:532
 msgid "When multiplying matrices, order matters! Don't mix them up."
 msgstr "行列を乗算する場合、順序が重要です！それらを混同しないでください。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:534
 msgid "Lastly, applying the identity transform will always do nothing."
 msgstr "最後に、恒等変換の適用は常に何も行いません。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about matrix composition: https://www.youtube.com/watch?"
@@ -750,11 +665,9 @@ msgstr ""
 "追加の説明が必要な場合は、行列の構成に関する3Blue1Brownの優れたビデオをご覧く"
 "ださい: https://www.youtube.com/watch?v=XkY2DOUCWMU"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:541
 msgid "Inverting a transformation matrix"
 msgstr "変換行列の反転"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:543
 msgid ""
 "The \"affine_inverse\" function returns a transform that \"undoes\" the "
 "previous transform. This can be useful in some situations, but it's easier "
@@ -763,14 +676,12 @@ msgstr ""
 "\"affine_inverse\"関数は、前の変換を「元に戻す」transformを返します。これは状"
 "況によっては役立つ場合がありますが、いくつかの例を提供する方が簡単です。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:547
 msgid ""
 "Multiplying an inverse transform by the normal transform undoes all "
 "transformations:"
 msgstr ""
 "逆transformに通常のtransformを乗算すると、すべての変換が取り消されます:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:563
 msgid ""
 "Transforming a position by a transform and its inverse results in the same "
 "position (same for \"xform_inv\"):"
@@ -778,11 +689,9 @@ msgstr ""
 "transformとその逆のtransformによって位置を変換すると、同じ位置になります"
 "( \"xform_inv\"と同じ):"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:582
 msgid "How does it all work in 3D?"
 msgstr "3Dではどのように機能しますか？"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:584
 #, fuzzy
 msgid ""
 "One of the great things about transformation matrices is that they work very "
@@ -799,7 +708,6 @@ msgstr ""
 "数学が複雑になる可能性があるので、この2つを分離することは理にかなっているから"
 "です。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:592
 msgid ""
 "All of the concepts for how translation, rotation, scale, and shearing work "
 "in 3D are all the same compared to 2D. To scale, we take each component and "
@@ -812,7 +720,6 @@ msgstr ""
 "す。回転するには、各基底ベクトルが指す場所を変更します。並行移動するには、原"
 "点を操作します。そしてせん断するために、基底ベクトルを非直交に変更します。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:600
 msgid ""
 "If you would like, it's a good idea to play around with transforms to get an "
 "understanding of how they work. Godot allows you to edit 3D transform "
@@ -827,7 +734,6 @@ msgstr ""
 "色付きの線とキューブを含むこのプロジェクトをダウンロードできます: https://"
 "github.com/godotengine/godot-demo-projects/tree/master/misc/matrix_transform"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:607
 msgid ""
 "Spatial's \"Matrix\" section in Godot 3.2's inspector displays the matrix as "
 "transposed, with the columns horizontal and the rows vertical. This may be "
@@ -837,7 +743,6 @@ msgstr ""
 "列と縦の列で転置された行列として表示されます。これは、Godotの将来のリリースで"
 "混乱が少なくなるように変更される可能性があります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:612
 msgid ""
 "You cannot edit Node2D's transform matrix directly in Godot 3.2's inspector. "
 "This may be changed in a future release of Godot."
@@ -845,7 +750,6 @@ msgstr ""
 "Node2Dの変換行列をGodot 3.2.xのインスペクタで直接編集することはできません。こ"
 "れは、Godotの将来のリリースで変更される可能性があります。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:615
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
 "excellent video about 3D linear transformations: https://www.youtube.com/"
@@ -854,11 +758,9 @@ msgstr ""
 "追加の説明が必要な場合は、3Blue1Brownの3D線形変換に関する優れたビデオをご覧く"
 "ださい: https://www.youtube.com/watch?v=rHLEWRxRGiM"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:620
 msgid "Representing rotation in 3D (advanced)"
 msgstr "3Dでの回転の表現(高度な内容)"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:622
 msgid ""
 "The biggest difference between 2D and 3D transformation matrices is how you "
 "represent rotation by itself without the basis vectors."
@@ -866,7 +768,6 @@ msgstr ""
 "2Dと3D変換行列の最大の違いは、基底ベクトルなしで回転をそれ自体で表現する方法"
 "です。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:625
 #, fuzzy
 msgid ""
 "With 2D, we have an easy way (atan2) to switch between a transformation "
@@ -880,7 +781,6 @@ msgstr ""
 "回転を3つの数値のセットとして表すことができますが、それらは限定的であり、些細"
 "な場合を除いてあまり有用ではありません。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:631
 msgid ""
 "In 3D we do not typically use angles, we either use a transformation basis "
 "(used pretty much everywhere in Godot), or we use quaternions. Godot can "
@@ -894,7 +794,6 @@ msgstr ""
 "で直感的でないため、それらが内部でどのように機能するかは完全に無視することで"
 "す。"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:637
 msgid ""
 "However, if you really must know how it works, here are some great "
 "resources, which you can follow in order:"
@@ -902,14 +801,11 @@ msgstr ""
 "ただし、実際にその仕組みを知っておく必要がある場合は、次の優れたリソースを参"
 "照してください:"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
 msgstr "https://eater.net/quaternions"

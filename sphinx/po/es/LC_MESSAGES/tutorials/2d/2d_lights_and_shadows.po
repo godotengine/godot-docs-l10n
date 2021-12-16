@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:4
 msgid "2D lights and shadows"
 msgstr "Luces 2D y sombras"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:7
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:9
 msgid ""
 "This tutorial explains how the 2D lighting works in the `lights and shadows "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
@@ -39,7 +36,6 @@ msgstr ""
 "recursos usados en la demo y describe cómo hacer una escena similar paso a "
 "paso."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
 msgid ""
 "All the resources for this tutorial can be found in the `official demo "
 "repository <https://github.com/godotengine/godot-demo-projects>`_ on GitHub. "
@@ -54,11 +50,9 @@ msgstr ""
 "Godot y en la barra superior selecciona \"Templates\" y busca \"2D Lights "
 "and Shadows Demo\"."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 msgid "Setup"
 msgstr "Organización"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:24
 msgid ""
 "For this demo we use four textures: two for the lights, one for the shadow "
 "casters, and one for the background. I've included links to them all here if "
@@ -68,7 +62,6 @@ msgstr ""
 "generadores de sombra y una para el fondo. Se incluyeron links a todos los "
 "recursos por si se desea descargarlos por separado de la demo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
 msgid ""
 "The first is the background image (`background.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
@@ -80,7 +73,6 @@ msgstr ""
 "lights_and_shadows/background.png>`_) usada en la demo. No es necesario "
 "tener un fondo pero lo usaremos para la demostración."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
 msgid ""
 "The second is a plain black image (`caster.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
@@ -93,7 +85,6 @@ msgstr ""
 "sombra. PAra un juego top down, esto podría ser una pared o cualquier otro "
 "objeto que haga sombra."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:35
 msgid ""
 "Next is the light itself (`light.png <https://raw.githubusercontent.com/"
 "godotengine/godot-demo-projects/master/2d/lights_and_shadows/light.png>`_). "
@@ -109,7 +100,6 @@ msgstr ""
 "quiere afectar por la luz. Esta imagen es 1024x1024, así que se usará para "
 "cubrir 1024x1024 pixeles en el juego."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:40
 msgid ""
 "Lastly, we have the spotlight image (`spot.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
@@ -123,38 +113,30 @@ msgstr ""
 "están las luces y la imagen más grande aplica el efecto de la luz en el "
 "resto de la escena."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 msgid "Nodes"
 msgstr "Nodos"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid "The demo uses four different nodes:"
 msgstr "La demo utiliza cuatro nodos diferentes:"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
 msgstr ":ref:`CanvasModulate <class_CanvasModulate>`"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:50
 msgid ":ref:`Sprite <class_Sprite>`"
 msgstr ":ref:`Sprite <class_Sprite>`"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:51
 msgid ":ref:`Light2D <class_Light2D>`"
 msgstr ":ref:`Light2D <class_Light2D>`"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 msgstr ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:54
 msgid ""
 ":ref:`CanvasModulate<class_CanvasModulate>` is used to darken the scene."
 msgstr ""
 "El :ref:`CanvasModulate<class_CanvasModulate>` es usado para oscurecer la "
 "escena."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:56
 msgid ""
 ":ref:`Sprites <class_Sprite>` are used to display the textures for the light "
 "blobs, the background, and for the shadow casters."
@@ -162,7 +144,6 @@ msgstr ""
 "Los :ref:`Sprite <class_Sprite>` son usados para mostrar las texturas de los "
 "puntos de luz, el fondo y los generadores de sombra."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:59
 msgid ""
 ":ref:`Light2Ds <class_Light2D>` are used to light the scene. The way a light "
 "typically works is by adding a selected texture over the rest of the scene "
@@ -174,7 +155,6 @@ msgstr ""
 "la escena para simular la iluminación. Pero puede ser usada de otros modos, "
 "por ejemplo como máscaras para ocultar parte de la escena."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:63
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` are used to tell the shader "
 "which parts of the scene cast shadows. The shadows appear only on areas "
@@ -186,11 +166,9 @@ msgstr ""
 "sólo en areas cubiertas por el :ref:`Light2D <class_Light2D>` y su dirección "
 "está basada en el centro del :ref:`Light2D <class_Light2D>`."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:68
 msgid "Lights"
 msgstr "Luces"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:70
 msgid ""
 ":ref:`Lights <class_Light2D>` cover the entire extent of their respective "
 "Texture. They use additive blending to add the color of their texture to the "
@@ -200,7 +178,6 @@ msgstr ""
 "correspondiente. Usan mezcla aditiva para agregar color de su textura a la "
 "escena."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
 msgid ""
 ":ref:`Lights <class_Light2D>` have four ``Modes``: ``Add``, ``Sub``, "
 "``Mix``, and ``Mask``."
@@ -208,7 +185,6 @@ msgstr ""
 ":ref:`Lights <class_Light2D>` Tiene 4 modos en la propiedad ``Mode``: "
 "``Add``, ``Sub``, ``Mix``, and ``Mask``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:77
 msgid ""
 "``Add`` adds the color of the light texture to the scene. It brightens the "
 "area under the light."
@@ -216,7 +192,6 @@ msgstr ""
 "``Add`` suma el color de la textura de la luz a la escena. Esto ilumina el "
 "área bajo la luz."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:79
 msgid ""
 "``Sub`` subtracts the color of the light from the scene. It darkens the area "
 "under the light."
@@ -224,7 +199,6 @@ msgstr ""
 "``Sub`` resta el color de la luz en la escena. Esto oscurece el área bajo la "
 "luz."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:81
 msgid ""
 "``Mix`` mixes the color of the light with the underlying scene. The "
 "resulting brightness is halfway between the color of the light and the color "
@@ -234,7 +208,6 @@ msgstr ""
 "una iluminación que está entre el color de la luz y el de la escena que se "
 "encuentra debajo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:84
 msgid ""
 "``Mask`` is used to mask out areas that are covered by the light. Masked out "
 "areas are hidden or revealed based on the color of the light."
@@ -242,7 +215,6 @@ msgstr ""
 "``Mask`` es usada para enmascarar áreas que están cubiertas por la luz. Las "
 "áreas enmascaradas serán ocultadas o reveladas basado en el color de la luz."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:87
 msgid ""
 "For the demo the lights have two components, the :ref:`Light "
 "<class_Light2D>` itself (which is the effect of the light), and a :ref:"
@@ -256,11 +228,9 @@ msgstr ""
 "Un hijo :ref:`Sprite <class_Sprite>` no es necesario para que un nodo :ref:"
 "`Light2D <class_Light2D>` funcione."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:95
 msgid "Shadows"
 msgstr "Sombras"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:97
 msgid ""
 "Shadows are made by intersecting a :ref:`Light <class_Light2D>` with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>`."
@@ -268,7 +238,6 @@ msgstr ""
 "Las sombras se hacen mediante una intersección de un :ref:`Light "
 "<class_Light2D>` con un :ref:`LightOccluder2D <class_LightOccluder2D>`."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:99
 msgid ""
 "By default shadows are turned off. To turn them on click on the :ref:`Light "
 "<class_Light2D>` and under the Shadows section check ``Enabled``."
@@ -277,7 +246,6 @@ msgstr ""
 "en el nodo :ref:`Light <class_Light2D>` y en la sección Shadows marcar "
 "``Enabled``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:102
 msgid ""
 "In the demo we are using a :ref:`Sprite <class_Sprite>` with a Texture on it "
 "to make the \"Shadow Casters\", but in reality all you need is a couple of :"
@@ -292,11 +260,9 @@ msgstr ""
 "oscuro y en la demo, el :ref:`Sprite <class_Sprite>` es sólo un cuadrado "
 "negro."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 msgid "Step by step"
 msgstr "Paso a paso"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:110
 msgid ""
 "Now that we have covered the basics of the nodes being used, we can now walk "
 "step by step through the process of making a scene like the one found in the "
@@ -305,7 +271,6 @@ msgstr ""
 "Ahora que hemos cubierto lo básico de los nodos que usaremos, podemos ir "
 "paso a paso en el proceso de hacer una escena como la de la demo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:113
 msgid ""
 "First add a :ref:`Sprite <class_Sprite>` and set its texture to the "
 "`background image <https://raw.githubusercontent.com/godotengine/godot-demo-"
@@ -319,7 +284,6 @@ msgstr ""
 "puede ser cualquier otra imagen de fondo. Para este estilo de sombra sería "
 "algo como una textura de piso."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""
 "Next create three :ref:`Light2D's <class_Light2D>` and set their textures to "
 "the `light image <https://raw.githubusercontent.com/godotengine/godot-demo-"
@@ -335,7 +299,6 @@ msgstr ""
 "en tipo ``add``. Lo que significa que cada luz agrega su propio color a lo "
 "que esté al fondo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
 msgid ""
 "Next add a child :ref:`Sprite <class_Sprite>` to each of the :ref:`Light "
 "<class_Light2D>` nodes, and set the :ref:`Sprite's <class_Sprite>` texture "
@@ -359,7 +322,6 @@ msgstr ""
 "la posición del nodo :ref:`Light <class_Light2D>`, es por eso que queremos "
 "que el Sprite esté centrado en el padre."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
 msgid ""
 "The animations in the demo will not be covered here. See :ref:"
 "`doc_introduction_animation` for information on creating animations."
@@ -368,7 +330,6 @@ msgstr ""
 "`doc_introduction_animation` para obtener información sobre la creación de "
 "animaciones."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:136
 msgid ""
 "Right now the scene should look too bright. This is because all three lights "
 "are adding color to the scene. This is why the demo uses a :ref:"
@@ -382,7 +343,6 @@ msgstr ""
 "`CanvasModulate <class_CanvasModulate>` multiplica todo el Viewport por un "
 "color determinado."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:140
 msgid ""
 "Add a :ref:`CanvasModulate <class_CanvasModulate>` to the scene and set its "
 "color to ``rgb(70, 70, 70)``. This will make the scene sufficiently dark to "
@@ -392,11 +352,9 @@ msgstr ""
 "su color a ``rgb(70, 70, 70)``. Esto hará que la escena se vea lo "
 "suficientemente oscura para ver los efectos de las distintas luces."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:145
 msgid "Now we add the shadow casters."
 msgstr "Ahora crearemos los generadores de sombra."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:147
 msgid ""
 "The demo uses a :ref:`Node <class_Node2D>` named \"casters\" to organize the "
 "shadow casters. Add a :ref:`Node2D <class_Node2D>` to the scene. It will be "
@@ -409,7 +367,6 @@ msgstr ""
 "generadores de sombra. De este modo podremos mostrarlos y ocultarlos a todos "
 "al mismo tiempo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:151
 msgid ""
 "Each shadow caster is made of a :ref:`Sprite <class_Sprite>`, with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` child. For the demo the :ref:"
@@ -431,7 +388,6 @@ msgstr ""
 "negra; podría ser una imagen de cualquier objeto que produzca sombra: una "
 "pared, un cofre mágico, etc."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:159
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the "
 "occluder has. They hold an :ref:`OccluderPolygon2D "
@@ -445,7 +401,6 @@ msgstr ""
 "otros datos. Para esta demo, como nuestra pared es cuadrada, dibujamos un "
 "cuadrado. Las otras opciones por defecto están bien."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:164
 msgid ""
 "The first setting, ``Closed`` can be either ``on`` or ``off``. A closed "
 "polygon occludes light coming from all directions. An open polygon only "
@@ -455,7 +410,6 @@ msgstr ""
 "Un polígono cerrado obstruye la luz que viene desde todas las direcciones, "
 "un polígono abierto lo hace desde una sola dirección."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:167
 msgid ""
 "``Cull Mode`` lets you select which direction gets culled. The default is "
 "``Disabled``, meaning the occluder will cast a shadow no matter which side "
@@ -473,7 +427,6 @@ msgstr ""
 "polígono. Sólo las líneas que miran hacia afuera son las que proyectan "
 "sombras."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:172
 msgid ""
 "To illustrate the difference, here is an image of a :ref:`LightOccluder2D "
 "<class_LightOccluder2D>` with ``Closed`` set to ``off`` in the "
@@ -485,12 +438,10 @@ msgstr ""
 "correspondiente :ref:`OccluderPolygon2D <class_OccluderPolygon2D>`, así las "
 "líneas del polígono pueden verse:"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:178
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
 msgstr ""
 "``Cull Mode`` está marcado como ``Disabled``. Las tres líneas hacen sombra."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:182
 msgid ""
 "``Cull Mode`` is set to ``Clockwise``. Only the top and right lines cast "
 "shadows."
@@ -498,7 +449,6 @@ msgstr ""
 "``Cull Mode`` está en ``Clockwise``. Sólo la línea de arriba y de la derecha "
 "hacen sombra."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:186
 msgid ""
 "``Cull Mode`` is set to ``Counter-Clockwise``. Only the bottom line casts a "
 "shadow. If ``Closed`` was set to ``on`` there would be an additional "
@@ -508,7 +458,6 @@ msgstr ""
 "genera sombra. Si ``Closed`` se coloca en ``on`` veremos una línea vertical "
 "adicional a la izquierda que podría generar sombra también."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:190
 msgid ""
 "When you have added the :ref:`LightOccluder2Ds <class_LightOccluder2D>` the "
 "shadows still won't appear. You need to go back into the :ref:`Light2Ds "
@@ -520,7 +469,6 @@ msgstr ""
 "y en la sección Shadow marca ``Enable`` como ``on``. Esto \"enciende\" las "
 "sombras con bordes duros como en la imagen de abajo."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:196
 msgid ""
 "To give the shadows that nice, soft edge look we set the variables "
 "``filter``, ``filter smooth``, and ``gradient length``. Godot supports "
@@ -541,7 +489,6 @@ msgstr ""
 "más lento. Esto es porque Godot provee de 3 a 13 muestras por defecto y te "
 "permite elegir. La demo utiliza PCF7."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:205
 msgid ""
 "This is a shadow rendered with the demo's settings. ``gradient length`` is "
 "set to ``1.3``, ``filter smooth`` is set to ``11.1``, and ``filter`` is set "
@@ -551,7 +498,6 @@ msgstr ""
 "length`` en ``1.3``, ``filter smooth`` puesto en ``11.1`` y ``filter`` en "
 "``PCF7``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:210
 msgid ""
 "``filter`` is set to ``PCF13``. Notice how the shadow becomes wider, this is "
 "because the distance between samples is based on the variable ``filter "
@@ -561,7 +507,6 @@ msgstr ""
 "ancha, esto es porque la distancia entre muestras está basada en el "
 "``filter_smooth``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:213
 msgid ""
 "In order to make use of filtering you need to set the ``filter smooth`` "
 "variable. This dictates how far apart the samples are. If you want the soft "
@@ -575,11 +520,9 @@ msgstr ""
 "smooth``. Sin embargo, con pocas muestras y un gran filter smooth, podrás "
 "ver que se forman líneas entre las muestras."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:220
 msgid "``filter smooth`` is set to ``30``."
 msgstr "``filter smooth`` está puesto en ``30``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:222
 msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
@@ -588,11 +531,9 @@ msgstr ""
 "diferentes valores para filter smooth. Juega con los valores para ver cuál "
 "te gusta."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:227
 msgid "``filter smooth`` is set to ``0``."
 msgstr "``filter smooth`` está en ``0``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:229
 msgid ""
 "Lastly, there is the variable ``gradient length``. For some smooth shadows "
 "it is preferable not to have the shadow start immediately on the object, as "
@@ -604,15 +545,12 @@ msgstr ""
 "esto produce un borde duro. la longitud del gradiente crea un gradiente "
 "suave al principio de la sombra para reducir el efecto del borde duro."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:235
 msgid "``gradient length`` is set to ``0``."
 msgstr "``gradient length`` está en ``0``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:239
 msgid "``gradient length`` is set to ``10``."
 msgstr "``gradient length`` está puesto en ``10``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:241
 msgid ""
 "You will need to play around with the options a bit to find settings that "
 "suit your project. There is no right solution for everyone, which is why "

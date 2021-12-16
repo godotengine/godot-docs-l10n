@@ -1,0 +1,655 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Command line tutorial"
+msgstr "コマンドラインチュートリアル"
+
+msgid ""
+"Some developers like using the command line extensively. Godot is designed "
+"to be friendly to them, so here are the steps for working entirely from the "
+"command line. Given the engine relies on almost no external libraries, "
+"initialization times are pretty fast, making it suitable for this workflow."
+msgstr ""
+"一部の開発者は、コマンドラインを広範囲に使用することを好みます。Godotは使いや"
+"すく設計されているので、ここでは完全にコマンドラインから作業するための手順を"
+"説明します。エンジンが外部ライブラリーにほとんど依存しないことを考えると、初"
+"期化時間は非常に速く、このワークフローに適しています。"
+
+msgid ""
+"On Windows and Linux, you can run a Godot binary in a terminal by specifying "
+"its relative or absolute path."
+msgstr ""
+"WindowsやLinuxでは、ターミナルでGodot binaryの相対パスまたは絶対パスを指定し"
+"て実行することができます。"
+
+msgid ""
+"On macOS, the process is different due to Godot being contained within an ``."
+"app`` bundle (which is a *folder*, not a file). To run a Godot binary from a "
+"terminal on macOS, you have to ``cd`` to the folder where the Godot "
+"application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` "
+"followed by any command line arguments. If you've renamed the application "
+"bundle from ``Godot`` to another name, make sure to edit this command line "
+"accordingly."
+msgstr ""
+"macOSでは、Godotが ``.app`` バンドル (ファイルではなく、 *フォルダ* です) に"
+"含まれているため、プロセスが異なります。macOSのターミナルからGodotのバイナリ"
+"を実行するには、Godotのアプリケーションバンドルがあるフォルダに ``cd`` し"
+"て、 ``Godot.app/Contents/MacOS/Godot`` を実行し、その後にコマンドライン引数"
+"を入力します。アプリケーションバンドルの名前を ``Godot`` から別の名前に変更し"
+"ている場合は、このコマンドラインを適宜編集してください。"
+
+msgid "Command line reference"
+msgstr "コマンドライン リファレンス"
+
+msgid "**General options**"
+msgstr "**一般的なオプション**"
+
+msgid "Command"
+msgstr "コマンド"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "``-h``, ``--help``, ``/?``"
+msgstr "\\ ``-h``, ``--help``, ``/?``"
+
+msgid "Display the list of command line options."
+msgstr "コマンド ライン オプションの一覧を表示します。"
+
+msgid "``--version``"
+msgstr "\\ ``--version``"
+
+msgid "Display the version string."
+msgstr "バージョン文字列を表示します。"
+
+msgid "``-v``, ``--verbose``"
+msgstr "\\ ``-v``, ``--verbose``"
+
+msgid "Use verbose stdout mode."
+msgstr "詳細な標準出力モードを使用します。"
+
+msgid "``--quiet``"
+msgstr "\\ ``--quiet``"
+
+msgid "Quiet mode, silences stdout messages. Errors are still displayed."
+msgstr ""
+"静かなモード、標準出力メッセージを出力しません。エラーは引き続き表示されま"
+"す。"
+
+msgid "**Run options**"
+msgstr "**実行オプション**"
+
+msgid "``-e``, ``--editor``"
+msgstr "\\ ``-e``, ``--editor``"
+
+msgid ""
+"Start the editor instead of running the scene (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"シーンを実行する代わりにエディタを起動します(:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` を有効にする必要があります)。"
+
+msgid "``-p``, ``--project-manager``"
+msgstr "\\ ``-p``, ``--project-manager``"
+
+msgid ""
+"Start the project manager, even if a project is auto-detected (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"プロジェクトが自動検出された場合でも、プロジェクトマネージャを起動します(:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` を有効にする必要があ"
+"ります)。"
+
+msgid "``-q``, ``--quit``"
+msgstr "\\ ``-q``, ``--quit``"
+
+msgid "Quit after the first iteration."
+msgstr "最初のイテレーションの後に終了します。"
+
+msgid "``-l <locale>``, ``--language <locale>``"
+msgstr "\\ ``-l <locale>``, ``--language <locale>``"
+
+msgid ""
+"Use a specific locale (<locale> being a two-letter code). See :ref:"
+"`doc_locales` for more details."
+msgstr ""
+"特定のロケールを使用します(<locale>は2文字のコードです)。詳細については、 :"
+"ref:`doc_locales` を参照してください。"
+
+msgid "``--path <directory>``"
+msgstr "\\ ``--path <directory>``"
+
+msgid "Path to a project (<directory> must contain a 'project.godot' file)."
+msgstr ""
+"プロジェクトへのパス (<directory>には 'project.godot' ファイルが含まれている"
+"必要があります)。"
+
+msgid "``-u``, ``--upwards``"
+msgstr "\\ ``-u``, ``--upwards``"
+
+msgid "Scan folders upwards for 'project.godot' file."
+msgstr "'project.godot' ファイルのフォルダを上方向にスキャンします。"
+
+msgid "``--main-pack <file>``"
+msgstr "\\ ``--main-pack <file>``"
+
+msgid "Path to a pack (.pck) file to load."
+msgstr "読み込むパック (.pck) ファイルへのパス。"
+
+msgid "``--render-thread <mode>``"
+msgstr "\\ ``--render-thread <mode>``"
+
+msgid ""
+"Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
+"<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
+"details."
+msgstr ""
+"レンダー スレッド モード ('unsafe', 'safe', 'separate')。詳細については、 :"
+"ref:`Thread Model <class_ProjectSettings_property_rendering/threads/"
+"thread_model>` を参照してください。"
+
+msgid "``--remote-fs <address>``"
+msgstr "\\ ``--remote-fs <address>``"
+
+msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
+msgstr "リモート ファイルシステム (``<host/IP>[:<port>]`` アドレス)。"
+
+msgid "``--audio-driver <driver>``"
+msgstr "\\ ``--audio-driver <driver>``"
+
+msgid ""
+"Audio driver. Use ``--help`` first to display the list of available drivers."
+msgstr ""
+"オーディオ ドライバー。最初に ``--help`` を使用して、使用可能なドライバーの一"
+"覧を表示します。"
+
+msgid "``--video-driver <driver>``"
+msgstr "\\ ``--video-driver <driver>``"
+
+msgid ""
+"Video driver. Use ``--help`` first to display the list of available drivers."
+msgstr ""
+"ビデオドライバー。最初に ``--help`` を使用して、使用可能なドライバーの一覧を"
+"表示します。"
+
+msgid "**Display options**"
+msgstr "**表示オプション**"
+
+msgid "``-f``, ``--fullscreen``"
+msgstr "\\ ``-f``, ``--fullscreen``"
+
+msgid "Request fullscreen mode."
+msgstr "全画面表示モードを指定します。"
+
+msgid "``-m``, ``--maximized``"
+msgstr "\\ ``-m``, ``--maximized``"
+
+msgid "Request a maximized window."
+msgstr "ウィンドウの最大化を指定します。"
+
+msgid "``-w``, ``--windowed``"
+msgstr "\\ ``-w``, ``--windowed``"
+
+msgid "Request windowed mode."
+msgstr "ウィンドウ モードを指定します。"
+
+msgid "``-t``, ``--always-on-top``"
+msgstr "\\ ``-t``, ``--always-on-top``"
+
+msgid "Request an always-on-top window."
+msgstr "常時最前面 ウィンドウを指定します。"
+
+msgid "``--resolution <W>x<H>``"
+msgstr "\\ ``--resolution <W>x<H>``"
+
+msgid "Request window resolution."
+msgstr "ウィンドウの解像度を指定します。"
+
+msgid "``--position <X>,<Y>``"
+msgstr "\\ ``--position <X>,<Y>``"
+
+msgid "Request window position."
+msgstr "ウィンドウの位置を指定します。"
+
+msgid "``--low-dpi``"
+msgstr "\\ ``--low-dpi``"
+
+msgid "Force low-DPI mode (macOS and Windows only)."
+msgstr "低DPIモードを強制します (macOS および Windows のみ)。"
+
+msgid "``--no-window``"
+msgstr "\\ ``--no-window``"
+
+msgid "Run with invisible window. Useful together with ``--script``."
+msgstr "非表示ウィンドウで実行してください。``--script``を使うと便利です。"
+
+msgid "**Debug options**"
+msgstr "**デバッグオプション**"
+
+msgid ""
+"Debug options are only available in the editor and debug export templates "
+"(they require ``debug`` or ``release_debug`` build targets, see :ref:"
+"`doc_introduction_to_the_buildsystem_target` for more details)."
+msgstr ""
+"デバッグ オプションは、エディタおよびデバッグ エクスポート テンプレートでのみ"
+"使用できます (これらには ``debug`` または ``release_debug`` ビルド ターゲット"
+"が必要です、詳細については、 :ref:"
+"`doc_introduction_to_the_buildsystem_target` を参照してください)。"
+
+msgid "``-d``, ``--debug``"
+msgstr "\\ ``-d``, ``--debug``"
+
+msgid "Debug (local stdout debugger)."
+msgstr "デバッグ (ローカル stdout デバッガー)。"
+
+msgid "``-b``, ``--breakpoints``"
+msgstr "\\ ``-b``, ``--breakpoints``"
+
+msgid ""
+"Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
+"instead)."
+msgstr ""
+"ブレークポイントとしてソースの行番号をカンマで区切って列挙します。スペースは"
+"使えません(代わりに%%20を使用できます)。"
+
+msgid "``--profiling``"
+msgstr "\\ ``--profiling``"
+
+msgid "Enable profiling in the script debugger."
+msgstr "スクリプト デバッガーでプロファイリングを有効にします。"
+
+msgid "``--remote-debug <address>``"
+msgstr "\\ ``--remote-debug <address>``"
+
+msgid "Remote debug (``<host/IP>:<port>`` address)."
+msgstr "リモート・デバッグ (addressは\\ ``<ホスト/IP>:<ポート>``\\ )."
+
+msgid "``--debug-collisions``"
+msgstr "\\ ``--debug-collisions``"
+
+msgid "Show collision shapes when running the scene."
+msgstr "シーンを実行する際にコリジョン形状を表示する。"
+
+msgid "``--debug-navigation``"
+msgstr "\\ ``--debug-navigation``"
+
+msgid "Show navigation polygons when running the scene."
+msgstr "シーンを実行する際にナビゲーション・ポリゴンを表示する。"
+
+msgid "``--frame-delay <ms>``"
+msgstr "\\ ``--frame-delay <ms>``"
+
+msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
+msgstr "高CPU負荷の再現 (毎フレームごとに <ms> ミリ秒遅らせる)。"
+
+msgid "``--time-scale <scale>``"
+msgstr "\\ ``--time-scale <scale>``"
+
+msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
+msgstr "タイムスケールの強制 (値が大きいほど早く、1.0が標準)。"
+
+msgid "``--disable-render-loop``"
+msgstr "\\ ``--disable-render-loop``"
+
+msgid ""
+"Disable render loop so rendering only occurs when called explicitly from "
+"script."
+msgstr ""
+"レンダリングのループの無効化。スクリプトにて明示的に呼び出した時にのみレン"
+"ダーする。"
+
+msgid "``--disable-crash-handler``"
+msgstr "\\ ``--disable-crash-handler``"
+
+msgid "Disable crash handler when supported by the platform code."
+msgstr ""
+"プラットフォーム・コードが対応している場合もクラッシュ・ハンドラを無効にす"
+"る。"
+
+msgid "``--fixed-fps <fps>``"
+msgstr "\\ ``--fixed-fps <fps>``"
+
+msgid ""
+"Force a fixed number of frames per second. This setting disables real-time "
+"synchronization."
+msgstr "フレーム毎秒の固定。この設定によりリアルタイム同期は無効化。"
+
+msgid "``--print-fps``"
+msgstr "\\ ``--print-fps``"
+
+msgid "Print the frames per second to the stdout."
+msgstr "stdoutにフレーム毎秒を出力。"
+
+msgid "**Standalone tools**"
+msgstr "**スタンドアロンツール**"
+
+msgid "``-s <script>``, ``--script <script>``"
+msgstr "\\ ``-s <script>``\\ 、\\ ``--script <script>``"
+
+msgid "Run a script."
+msgstr "スクリプトの実行。"
+
+msgid "``--check-only``"
+msgstr "\\ ``--check-only``"
+
+msgid "Only parse for errors and quit (use with ``--script``)."
+msgstr "エラー分析のみ行って終了(``--script``\\ と同時に使用)。"
+
+msgid "``--export <target>``"
+msgstr "\\ ``--export <target>``"
+
+msgid ""
+"Export the project using the given export target. Export only main pack if "
+"path ends with .pck or .zip (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"指定されたエクスポート・ターゲットに向けてプロジェクトをエクスポートする。パ"
+"スが .pck あるいは .zip で終わっている場合、メインのパックのみエクスポートす"
+"る (\\ :ref:`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にす"
+"る必要あり)。"
+
+msgid "``--export-debug <target>``"
+msgstr "\\ ``--export-debug <target>``"
+
+msgid ""
+"Like ``--export``, but use debug template (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"\\ ``--export``\\ と同じだが、デバッグ・テンプレートを使用する。(\\ :ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
+
+msgid "``--doctool <path>``"
+msgstr "\\ ``--doctool <path>``"
+
+msgid ""
+"Dump the engine API reference to the given <path> in XML format, merging if "
+"existing files are found (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"指定した <path> にエンジンのAPIリファレンスをXML形式で出力する。すでにファイ"
+"ルが存在する場合は、それに結合する。(\\ :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
+
+msgid "``--no-docbase``"
+msgstr "\\ ``--no-docbase``"
+
+msgid ""
+"Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"基本タイプのダンプをしない (``--doctool``\\ と共に使用。\\ :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
+
+msgid "``--build-solutions``"
+msgstr "\\ ``--build-solutions``"
+
+msgid ""
+"Build the scripting solutions (e.g. for C# projects, :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"スクリプトのソリューションをビルドする (例えばC#プロジェクトのために。\\ :"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あ"
+"り)。"
+
+msgid "``--gdnative-generate-json-api``"
+msgstr "\\ ``--gdnative-generate-json-api``"
+
+msgid ""
+"Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"GDNativeバインディング用のGodot APIのJSONダンプを生成します (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` を有効にする必要があります)。"
+
+msgid "``--test <test>``"
+msgstr "\\ ``--test <test>``"
+
+msgid ""
+"Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"単体テストを実行します。最初に ``--help`` を使用して、テストの一覧を表示しま"
+"す。(:ref:`tools <doc_introduction_to_the_buildsystem_tools>` を有効にする必"
+"要があります)。"
+
+msgid "``--export-pack <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+msgid ""
+"Like ``--export``, but only export the game pack for the given preset. The "
+"<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgstr ""
+"\\ ``--export``\\ と似ていますが、指定したプリセットにのみゲームをエクスポー"
+"トします。<path>の拡張子によって、PCK形式かZIP形式のどちらでエクスポートする"
+"かを決定します。(\\ :ref:`ツール <doc_introduction_to_the_buildsystem_tools>`"
+"\\ を有効にする必要があります)。"
+
+msgid "Path"
+msgstr "パス"
+
+msgid ""
+"It is recommended that your Godot binary be in your PATH environment "
+"variable, so it can be executed easily from any place by typing ``godot``. "
+"You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
+"making sure it is called ``godot``."
+msgstr ""
+"``godot`` と入力すればどこからでも簡単に実行できるように、godotバイナリをPATH"
+"環境変数に含めることをお勧めします。Linuxでは、 ``/usr/local/bin`` にgodotバ"
+"イナリを配置し、それが ``godot`` と呼ばれていることを確認することで、これを行"
+"うことができます。"
+
+msgid "Setting the project path"
+msgstr "プロジェクトパスの設定"
+
+msgid ""
+"Depending on where your Godot binary is located and what your current "
+"working directory is, you may need to set the path to your project for any "
+"of the following commands to work correctly."
+msgstr ""
+"Godotバイナリの場所と現在の作業ディレクトリによっては、次のコマンドを正しく機"
+"能させるためにプロジェクトへのパスを設定する必要があります。"
+
+msgid ""
+"This can be done by giving the path to the ``project.godot`` file of your "
+"project as either the first argument, like this:"
+msgstr ""
+"これは、プロジェクトの ``project.godot`` ファイルへのパスを最初の引数として指"
+"定することで実現できます:"
+
+msgid "Or by using the ``--path`` argument:"
+msgstr "または ``--path`` 引数を使用して:"
+
+msgid ""
+"For example, the full command for exporting your game (as explained below) "
+"might look like this:"
+msgstr ""
+"たとえば、ゲームをエクスポートするための完全なコマンド(以下に説明する)は次の"
+"ようになります:"
+
+msgid "Creating a project"
+msgstr "プロジェクトの作成"
+
+msgid ""
+"Creating a project from the command line can be done by navigating the shell "
+"to the desired place and making a project.godot file."
+msgstr ""
+"コマンドラインからプロジェクトを作成するには、シェルを目的の場所に移動して"
+"project.godotファイルを作成します。"
+
+msgid "The project can now be opened with Godot."
+msgstr "これで、Godotでプロジェクトを開くことができます。"
+
+msgid "Running the editor"
+msgstr "エディタの実行"
+
+msgid ""
+"Running the editor is done by executing Godot with the ``-e`` flag. This "
+"must be done from within the project directory or a subdirectory, otherwise "
+"the command is ignored and the project manager appears."
+msgstr ""
+"エディタを実行するには、Godotに ``-e`` フラグを付けて実行します。これは、プロ"
+"ジェクトディレクトリまたはサブディレクトリ内から実行する必要があります。それ"
+"以外の場合、コマンドは無視され、プロジェクトマネージャが表示されます。"
+
+msgid ""
+"If a scene has been created and saved, it can be edited later by running the "
+"same code with that scene as argument."
+msgstr ""
+"シーンが作成および保存されている場合は、そのシーンを引数として同じコードを実"
+"行することで、後で編集できます。"
+
+msgid "Erasing a scene"
+msgstr "シーンの削除"
+
+msgid ""
+"Godot is friends with your filesystem and will not create extra metadata "
+"files. Use ``rm`` to erase a scene file. Make sure nothing references that "
+"scene or else an error will be thrown upon opening."
+msgstr ""
+"Godotはあなたのファイルシステムと友達であり、追加のメタデータファイルを作成す"
+"ることはありません。シーンファイルを削除するには、 ``rm`` を使用します。 その"
+"シーンを参照するものが何もないことを確認してください。"
+
+msgid "Running the game"
+msgstr "ゲームの実行"
+
+msgid ""
+"To run the game, simply execute Godot within the project directory or "
+"subdirectory."
+msgstr ""
+"ゲームを実行するには、プロジェクトディレクトリまたはサブディレクトリ内でGodot"
+"を実行します。"
+
+msgid ""
+"When a specific scene needs to be tested, pass that scene to the command "
+"line."
+msgstr ""
+"特定のシーンをテストする必要がある場合は、そのシーンをコマンドラインに渡しま"
+"す。"
+
+msgid "Debugging"
+msgstr "デバッグ"
+
+msgid ""
+"Catching errors in the command line can be a difficult task because they "
+"just fly by. For this, a command line debugger is provided by adding ``-d``. "
+"It works for running either the game or a simple scene."
+msgstr ""
+"コマンドラインでエラーを検出するのは非常に困難な作業です。 ``-d`` を追加する"
+"ことでコマンドラインデバッガが利用できます。これは、ゲームまたは単一のシーン"
+"を実行するために機能します。"
+
+msgid "Exporting"
+msgstr "エクスポート"
+
+msgid ""
+"Exporting the project from the command line is also supported. This is "
+"especially useful for continuous integration setups. The version of Godot "
+"that is headless (server build, no video) is ideal for this."
+msgstr ""
+"コマンドラインからプロジェクトをエクスポートすることもサポートされています。"
+"これは継続的インテグレーション設定に特に役立ちます。これには、ヘッドレスの"
+"Godotバージョン(サーバービルド、ビデオなし)が理想的です。"
+
+msgid ""
+"The preset name must match the name of an export preset defined in the "
+"project's ``export_presets.cfg`` file. If the preset name contains spaces or "
+"special characters (such as \"Windows Desktop\"), it must be surrounded with "
+"quotes."
+msgstr ""
+"プリセット名はプロジェクトの ``export_presets.cfg`` ファイルで定義されたエク"
+"スポートプリセットの名前と一致しなければなりません。もし、プリセット名がス"
+"ペースや特殊文字を含んでいる場合 (\"Windows Desktop\"のような)、クォート "
+"(\"や') で囲まれている必要があります。"
+
+msgid ""
+"To export a debug version of the game, use the ``--export-debug`` switch "
+"instead of ``--export``. Their parameters and usage are the same."
+msgstr ""
+"ゲームのデバッグバージョンをエクスポートするには、 ``--export`` の代わりに "
+"``--export-debug`` スイッチを使用します。パラメータと使用方法は同じです。"
+
+msgid ""
+"To export only a PCK file, use the ``--export-pack`` option followed by the "
+"preset name and output path, with the file extension, instead of ``--"
+"export``. The output path extension determines the package's format, either "
+"PCK or ZIP."
+msgstr ""
+"PCKファイルのみをエクスポートしたい場合、 ``--export`` の代わりに ``--export-"
+"pack`` を用い、後ろにプリセット名と拡張子付きの出力パスを付けてください。出力"
+"パスの拡張子がパッケージの形式をPCKかZIPに決定します。"
+
+msgid ""
+"When specifying a relative path as the path for `--export`, `--export-debug` "
+"or `--export-pack`, the path will be relative to the directory containing "
+"the ``project.godot`` file, **not** relative to the current working "
+"directory."
+msgstr ""
+"`--export` 、 `--export-debug` 、 `--export-pack` を使用する際にパスを相対パ"
+"スで指定する場合、カレントディレクトリでは **なく**、 ``project.godot`` ファ"
+"イルを含むディレクトリからの相対パスを使ってください。"
+
+msgid "Running a script"
+msgstr "スクリプトの実行"
+
+msgid ""
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
+"assets or custom import/export."
+msgstr ""
+"コマンドラインから単純な ``.gd`` スクリプトを実行することは可能です。この機能"
+"は特に、大規模プロジェクトでアセットの一括変換やカスタムのインポート / エクス"
+"ポート時に便利です。"
+
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
+msgstr ""
+"スクリプトは ``SceneTree`` または ``MainLoop`` から継承する必要があります。"
+
+msgid "Here is a simple ``sayhello.gd`` example of how it works:"
+msgstr "``sayhello.gd`` で簡単な動作例を次に示します:"
+
+msgid "And how to run it:"
+msgstr "実行方法:"
+
+msgid ""
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
+msgstr ""
+"パスに ``project.godot`` が存在しない場合は、現在のパスが現在の作業ディレクト"
+"リであると見なされます (``-path`` が指定されている場合を除く)。"
+
+msgid ""
+"The first line of ``sayhello.gd`` above is commonly referred to as a "
+"*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
+"you to run the script as follows in modern Linux distributions, as well as "
+"macOS:"
+msgstr ""
+"上記の``sayhello.gd`` の最初の行は、一般に *シェバング* と呼ばれます。シェバ"
+"ングを書くことにより、最近のLinuxとmacOSでは、あなたの ``PATH`` にあるGodotの"
+"バイナリが ``godot`` であるとき、スクリプトを次のように実行できます:"
+
+msgid ""
+"If the above doesn't work in your current version of Linux or macOS, you can "
+"always have the shebang run Godot straight from where it is located as "
+"follows:"
+msgstr ""
+"もし上記の例があなたのLinuxかmacOSのバージョンで動かない場合、次のようにGodot"
+"の場所を直接指定することで、どんなときでもシェバングにGodotを実行させることが"
+"できます:"

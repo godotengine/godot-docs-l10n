@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:4
 msgid "High dynamic range lighting"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:9
 msgid ""
 "Normally, an artist does all the 3D modelling, then all the texturing, looks "
 "at their awesome looking model in the 3D DCC and says \"looks fantastic, "
@@ -37,7 +34,6 @@ msgstr ""
 "た！」と言います。その後、ゲームに組み込まれ、照明が設定され、ゲームが実行さ"
 "れます。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
 "So at what point does all this \"HDR\" business come into play? To "
 "understand the answer, we need to look at how displays behave."
@@ -45,7 +41,6 @@ msgstr ""
 "それでは、この”HDR”の事業はどの時点で実現するのでしょうか？答えを理解するため"
 "に、ディスプレイがどのように動作するかを見る必要があります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:17
 msgid ""
 "Your display outputs linear light ratios from some maximum to some minimum "
 "intensity. Modern game engines perform complex math on linear light values "
@@ -55,7 +50,6 @@ msgstr ""
 "のゲームエンジンは、それぞれのシーンで直線的な光量に対して複雑な計算を実行し"
 "ます。では、何が問題なのでしょうか？"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:21
 msgid ""
 "The display has a limited range of intensity, depending on the display type. "
 "The game engine renders to an unlimited range of intensity values, however. "
@@ -69,7 +63,6 @@ msgstr ""
 "レンダリングのフレームごとに生成される潜在的に無限に広い範囲の強度値のみがあ"
 "ります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:27
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
 "as *scene-referred* light ratios, need to be transformed and mapped to fit "
@@ -86,23 +79,19 @@ msgstr ""
 "特定のカメラレンダリングトランスフォームをシーンデータに適用し、出力は特定の"
 "ディスプレイタイプで表示できる状態になります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:37
 msgid ""
 "Godot does not support high dynamic range *output* yet. It can only perform "
 "lighting in HDR and tonemap the result to a low dynamic range image."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:40
 msgid ""
 "For advanced users, it is still possible to get a non-tonemapped image of "
 "the viewport with full HDR data, which can then be saved to an OpenEXR file."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid "Computer displays"
 msgstr "コンピューターのディスプレイ"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:46
 msgid ""
 "Almost all displays require a nonlinear encoding for the code values sent to "
 "them. The display in turn, using its unique transfer characteristic, "
@@ -114,7 +103,6 @@ msgstr ""
 "です。次に、そのユニークな転送特性を使用して、コード値を出力の直線的な光量比"
 "に「デコード」し、赤、緑、青の各発光部からその値を投影します。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:52
 msgid ""
 "For a majority of computer displays, the specifications of the display are "
 "outlined in accordance with IEC 61966-2-1, also known as the 1996 sRGB "
@@ -127,7 +115,6 @@ msgstr ""
 "は、LEDピクセルのライトの色、入力(OETF)および出力(EOTF)の伝達特性など、sRGB"
 "ディスプレイの動作の概要を説明します。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:58
 msgid ""
 "Not all displays use the same OETF and EOTF as a computer display. For "
 "example, television broadcast displays use the BT.1886 EOTF. However, Godot "
@@ -137,7 +124,6 @@ msgstr ""
 "るわけではありません。たとえば、テレビ放送のディスプレイではBT.1886 EOTFが使"
 "用されます。ただし、現在GodotはsRGBディスプレイのみをサポートしています。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:62
 msgid ""
 "The sRGB standard is based around the nonlinear relationship between the "
 "current to light output of common desktop computing CRT displays."
@@ -145,7 +131,6 @@ msgstr ""
 "sRGB規格は、一般的なデスクトップコンピューター用CRTディスプレイの電流出力と光"
 "出力の間の非線形関係に基づいています。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:67
 msgid ""
 "The mathematics of a scene-referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
@@ -160,11 +145,9 @@ msgstr ""
 "レンジを適切にレンダリングできません。より複雑なエンコードのアプローチが必要"
 "です。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
 msgid "Scene linear & asset pipelines"
 msgstr "シーンリニアおよびアセットパイプライン"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:77
 #, fuzzy
 msgid ""
 "Working in scene-linear sRGB is not as simple as just pressing a switch. "
@@ -177,15 +160,12 @@ msgstr ""
 "あります。 直線化された場合でも、生成方法によっては、これらのアセットはテクス"
 "チャとしての使用に完全に適さない場合があります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:82
 msgid "There are two ways to do this:"
 msgstr "これを行うには、次の 2 つの方法があります:"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
 msgstr "画像インポート時に線形比を表示するsRGB伝達関数"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:87
 msgid ""
 "This is the easiest method of using sRGB assets, but it's not the most "
 "ideal. One issue with this is loss of quality. Using 8 bits per channel to "
@@ -198,11 +178,9 @@ msgstr ""
 "て直線的な光量比を表すだけでは、値を正しく量子化するには不十分です。これらの"
 "テクスチャは後で圧縮されることもあり、問題を悪化させる可能性があります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:93
 msgid "Hardware sRGB transfer function to display linear conversion"
 msgstr "直線化変換を表示するハードウェアsRGB伝達関数"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:95
 #, fuzzy
 msgid ""
 "The GPU will do the conversion after reading the texel using floating-point. "
@@ -213,12 +191,10 @@ msgstr ""
 "コンソールでは正常に機能しますが、ほとんどのモバイルデバイスはサポートしてい"
 "ないか、圧縮テクスチャ形式(iOSなど)ではサポートしていません。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
 #, fuzzy
 msgid "Scene linear to display-referred nonlinear"
 msgstr "シーンリニアからディスプレイ標準ノンリニアへ"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:102
 msgid ""
 "After all the rendering is done, the scene linear render requires "
 "transforming to a suitable output such as an sRGB display. To do this, "
@@ -230,7 +206,6 @@ msgstr ""
 "`Environment <class_Environment>` でsRGB変換を有効にします(詳細は以下を参"
 "照)。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
 msgid ""
 "Keep in mind that the **sRGB -> Display Linear** and **Display Linear -> "
 "sRGB** conversions must always be **both** enabled. Failing to enable one of "
@@ -242,11 +217,9 @@ msgstr ""
 "ないと、前衛的な実験的インディーズゲームにのみ適した恐ろしいビジュアルになり"
 "ます。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:112
 msgid "Parameters of HDR"
 msgstr "HDRのパラメーター"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:114
 msgid ""
 "HDR settings can be found in the :ref:`Environment <class_Environment>` "
 "resource. Most of the time, these are found inside a :ref:`WorldEnvironment "

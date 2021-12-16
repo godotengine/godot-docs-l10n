@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
 msgstr "뷰포트와 캔버스 변형"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:7
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:9
 #, fuzzy
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
@@ -36,11 +33,9 @@ msgstr ""
 "2D 변환에 대한 개요입니다. 이 개요는 엔진에서 매우 저수준의 세부 정보를 설명"
 "합니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
 msgstr "캔버스 변형"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:16
 #, fuzzy
 msgid ""
 "As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
@@ -55,7 +50,6 @@ msgstr ""
 "`Transform2D <class_Transform2D>`로 접근할 수 있는 변형(옮김(translation), 회"
 "전, 스케일 등)이 있습니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:22
 #, fuzzy
 msgid ""
 "Also covered in the previous tutorial, nodes are drawn by default in Layer "
@@ -66,11 +60,9 @@ msgstr ""
 "에서 그려집니다. 노드를 다른 레이어에 배치하려면 :ref:\"CanvasLayer "
 "<class_CanvasLayer> 노드를 사용할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
 msgstr "전역 캔버스 변형(Global canvas transform)"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:29
 #, fuzzy
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
@@ -83,11 +75,9 @@ msgstr ""
 "니다. 일반적으로 이 변형은 별로 쓸모가 없지만 Godot 편집기의 CanvasItem 편집"
 "기에서 사용된다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
 msgstr "늘이기 변형(Stretch transform)"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:38
 #, fuzzy
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
@@ -100,7 +90,6 @@ msgstr ""
 "`doc_multiple_resolutions`에 설명됨) 각 뷰포트에서 수동으로 설정할 수도 있습"
 "니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:43
 #, fuzzy
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
@@ -116,11 +105,9 @@ msgstr ""
 "변환하기 위해서는 :ref:`CanvasItem.make_input_local() "
 "<class_CanvasItem_method_make_input_local>` 기능을 편의를 위해 추가했습니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
 msgstr "변형 순서"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
 "For a coordinate in CanvasItem local properties to become an actual screen "
 "coordinate, the following chain of transforms must be applied:"
@@ -128,27 +115,21 @@ msgstr ""
 "CanvasItem 지역 속성의 좌표가 실제 화면 좌표가 되려면 다음과 같은 변형 체인"
 "이 적용되어야 합니다:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:58
 msgid "Transform functions"
 msgstr "변형 기능들"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
 msgstr "각 변형을 얻으려면 다음과 같은 기능을 사용합니다:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Type"
 msgstr "타입"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
 msgstr "변형"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
@@ -156,27 +137,22 @@ msgstr ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
@@ -184,7 +160,6 @@ msgstr ""
 "마지막으로 CanvasItem 지역 좌표를 화면 좌표로 변환하려면 다음 순서로 곱하세"
 "요:"
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:84
 msgid ""
 "Keep in mind, however, that it is generally not desired to work with screen "
 "coordinates. The recommended approach is to simply work in Canvas "
@@ -195,11 +170,9 @@ msgstr ""
 "세요. 권장되는 접근방식은 Canvas 좌표(``CanvasItem.get_global_transform()``)"
 "로 자동으로 화면 해상도를 제대로 크기 조정할 수 있게 간단히 작동해야 합니다."
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:90
 msgid "Feeding custom input events"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_transforms.rst:92
 #, fuzzy
 msgid ""
 "It is often desired to feed custom input events to the scene tree. With the "

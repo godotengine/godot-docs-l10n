@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Particle shaders"
+msgstr "Partikel-Shader"
+
+msgid ""
+"Particle shaders are a special type of vertex shader that runs before the "
+"object is drawn. They are used for calculating material properties such as "
+"color, position, and rotation. They are drawn with any regular material for "
+"CanvasItem or Spatial, depending on whether they are 2D or 3D."
+msgstr ""
+"Partikel-Shader sind spezielle Vertex-Shader, die ausgeführt werden, bevor "
+"das Objekt gezeichnet wird. Sie werden zur Berechnung von "
+"Materialeigenschaften wie Farbe, Position und Drehung verwendet. Sie werden "
+"mit jedem regulären Material für CanvasItem oder Spatial gezeichnet, je "
+"nachdem, ob es sich um 2D oder 3D handelt."
+
+msgid ""
+"Particle shaders are unique because they are not used to draw the object "
+"itself; they are used to calculate particle properties, which are then used "
+"by the CanvasItem of Spatial shader. They contain only a vertex processor "
+"function that outputs multiple properties (see built-ins below)."
+msgstr ""
+"Partikel-Shader sind einzigartig, da sie nicht zum Zeichnen des Objekts "
+"selbst verwendet werden. Sie werden zur Berechnung der Partikeleigenschaften "
+"verwendet, die dann von CanvasItem oder Spatial-Shader verwendet werden. Sie "
+"enthalten nur eine Vertex-Prozessorfunktion, die mehrere Eigenschaften "
+"ausgibt (siehe integrierte Funktionen unten)."
+
+msgid ""
+"Particle shaders use a transform feedback shader, which is a special type of "
+"vertex shader that runs on its own. It takes in data in a buffer like a "
+"regular vertex shader does, but it also outputs to data buffers instead of "
+"outputting to the fragment shader for pixel-processing. Because of this, "
+"transform feedback shaders can build on themselves each run, unlike other "
+"shaders that discard the data they have calculated once they draw to the "
+"frame buffer."
+msgstr ""
+
+msgid ""
+"Particle shaders are only available in the GLES3 backend. If you need "
+"particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
+msgstr ""
+
+msgid "Render modes"
+msgstr "Render-Modi"
+
+msgid "Render mode"
+msgstr "Render Modus"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "**keep_data**"
+msgstr "**keep_data**"
+
+msgid "Do not clear previous data on restart."
+msgstr "Löschen Sie beim Neustart keine vorherigen Daten."
+
+msgid "**disable_force**"
+msgstr "**disable_force**"
+
+msgid "Disable attractor force. (Not currently implemented in 3.1)"
+msgstr "Anziehungskraft abschalten. (Derzeit nicht implementiert in 3.1)"
+
+msgid "**disable_velocity**"
+msgstr "**disable_velocity**"
+
+msgid "Ignore **VELOCITY** value."
+msgstr "Ignoriert den Wert **VELOCITY**."
+
+msgid "Built-ins"
+msgstr "integrierte Elemente"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Values "
+"marked as \"inout\" provide a sensible default value, and can optionally be "
+"written to. Samplers are not subjects of writing and they are not marked."
+msgstr ""
+"Mit \"in\" gekennzeichnete Werte sind schreibgeschützt. Mit \"out\" "
+"gekennzeichnete Werte dienen zum optionalen Schreiben und enthalten nicht "
+"unbedingt sinnvolle Werte. Als \"inout\" gekennzeichnete Werte stellen einen "
+"sinnvollen Standardwert dar und können optional beschrieben werden. Sampler "
+"können nicht geschrieben werden und sind nicht markiert."
+
+msgid "Global built-ins"
+msgstr "Global integrierte Elemente"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+"Globale integrierte Elemente sind überall verfügbar, einschließlich "
+"benutzerdefinierter Funktionen."
+
+msgid "Built-in"
+msgstr "integriert"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid "Global time, in seconds."
+msgstr "Globale Zeit in Sekunden."
+
+msgid "Vertex built-ins"
+msgstr "integrierte Vertex-Elemente"
+
+msgid ""
+"In order to use the ``COLOR`` variable in a SpatialMaterial, set "
+"``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
+"the ``COLOR`` variable."
+msgstr ""
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid ""
+"Particle color, can be written to and accessed in mesh's vertex function."
+msgstr ""
+"Partikelfarbe, kann in die Vertexfunktion des Mesh geschrieben und darauf "
+"zugegriffen werden."
+
+msgid "inout vec3 **VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
+
+msgid "Particle velocity, can be modified."
+msgstr "Partikelgeschwindigkeit, kann geändert werden."
+
+msgid "out float **MASS**"
+msgstr "out float **MASS**"
+
+msgid "Particle mass, use for attractors (not implemented in 3.1)."
+msgstr ""
+"Partikelmasse, Verwendung für Attraktoren (in 3.1 nicht implementiert)."
+
+msgid "inout bool **ACTIVE**"
+msgstr "inout bool **ACTIVE**"
+
+msgid "``true`` when Particle is active, can be set to ``false``."
+msgstr "``wahr``, wenn Partikel aktiv ist, kann auf ``falsch`` gesetzt werden."
+
+msgid "in bool **RESTART**"
+msgstr "in bool **RESTART**"
+
+msgid "``true`` when particle must restart (lifetime cycled)."
+msgstr ""
+"``true`` wenn das Partikel neu gestartet werden muss (Lebensdauerzyklus)."
+
+msgid "inout vec4 **CUSTOM**"
+msgstr "inout vec4 **CUSTOM**"
+
+msgid ""
+"Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
+msgstr ""
+"Benutzerdefinierte Partikeldaten. Zugänglich vom Shader des Mesh als "
+"**INSTANCE_CUSTOM**."
+
+msgid "inout mat4 **TRANSFORM**"
+msgstr "inout mat4 **TRANSFORM**"
+
+msgid "Particle transform."
+msgstr "Partikeltransformation."
+
+msgid "in float **LIFETIME**"
+msgstr "in float **LIFETIME**"
+
+msgid "Particle lifetime."
+msgstr "Partikel Lebensdauer."
+
+msgid "in float **DELTA**"
+msgstr "in float **DELTA**"
+
+msgid "Delta process time."
+msgstr "Delta Ausführungszeit."
+
+msgid "in uint **NUMBER**"
+msgstr "in uint **NUMBER**"
+
+msgid "Unique number since emission start."
+msgstr "Eindeutige Nummer seit Emissionsbeginn."
+
+msgid "in int **INDEX**"
+msgstr "in int **INDEX**"
+
+msgid "Particle index (from total particles)."
+msgstr "Partikelindex (aus Gesamtpartikeln)."
+
+msgid "in mat4 **EMISSION_TRANSFORM**"
+msgstr "in mat4 **EMISSION_TRANSFORM**"
+
+msgid "Emitter transform (used for non-local systems)."
+msgstr "Emitter-Transformation (wird für nicht-lokale Systeme verwendet)."
+
+msgid "in uint **RANDOM_SEED**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid "Random seed used as base for random."
+msgstr "Zufälliger Startwert, der als Basis für random verwendet wird."

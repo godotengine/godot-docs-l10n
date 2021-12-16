@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
 msgstr "Fehlerbeseitigung"
 
-#: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
@@ -29,7 +27,6 @@ msgstr ""
 "Diese Seite listet häufig auftretende Probleme bei der Verwendung von Godot "
 "und mögliche Lösungen auf."
 
-#: ../../docs/about/troubleshooting.rst:10
 msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
@@ -37,7 +34,6 @@ msgstr ""
 "Schauen sie sich :ref:`doc_using_the_web_editor`an, für Vorbehalte, die für "
 "die HTML5-Version des Godot-Editors spezifisch sind."
 
-#: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
@@ -45,7 +41,6 @@ msgstr ""
 "Alles, was man im Editor oder Projektmanager macht, erscheint um einen Frame "
 "verzögert."
 
-#: ../../docs/about/troubleshooting.rst:16
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/23069>`__ "
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
@@ -56,7 +51,6 @@ msgstr ""
 "die neuesten Grafiktreiber, die *von Intel zu Verfügung gestellt werden*, "
 "sollte das Problem beheben."
 
-#: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "You should use the graphics driver provided by Intel rather than the one "
 "provided by your desktop or laptop's manufacturer because their version is "
@@ -66,7 +60,6 @@ msgstr ""
 "werden, da die Treiber, die von Ihren Desktop oder Laptop Herstellern "
 "mitgeliefert werden, meistens veraltet sind."
 
-#: ../../docs/about/troubleshooting.rst:25
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
@@ -74,7 +67,6 @@ msgstr ""
 "Das Gitter verschwindet und die Meshes werden schwarz, sobald Ich die 3D "
 "Kamera im Editor rotiere."
 
-#: ../../docs/about/troubleshooting.rst:27
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
@@ -82,7 +74,6 @@ msgstr ""
 "Dies ist ein `bekannter Fehler <https://github.com/godotengine/godot/"
 "issues/30330>`__ von Intel Grafiktreibern unter Windows."
 
-#: ../../docs/about/troubleshooting.rst:30
 msgid ""
 "The only workaround, for now, is to switch to the GLES2 renderer. You can "
 "switch the renderer in the top-right corner of the editor or the Project "
@@ -92,7 +83,6 @@ msgstr ""
 "den Renderer in der oberen rechten Ecke des Editors oder in den "
 "Projekteinstellungen wechseln."
 
-#: ../../docs/about/troubleshooting.rst:33
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
@@ -101,11 +91,9 @@ msgstr ""
 "ermöglicht, wie zum Beispiel NVIDIA Optimus, können Sie die dedizierte "
 "Grafikkarte verwenden, um Godot auszuführen."
 
-#: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
 msgstr "Der Editor oder das Projekt benötigt sehr lange um zu starten."
 
-#: ../../docs/about/troubleshooting.rst:39
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -122,14 +110,12 @@ msgstr ""
 "müssen Sie die fehlerhaften Peripheriegeräte trennen, bevor Sie den Editor "
 "öffnen. Sie können das Peripheriegerät danach wieder anschließen."
 
-#: ../../docs/about/troubleshooting.rst:47
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
 "Editor-Tooltips in den Inspektor- und Node-Docks blinken, wenn sie angezeigt "
 "werden."
 
-#: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "This is a `known issue <https://github.com/godotengine/godot/"
 "issues/32990>`__ caused by the third-party Stardock Fences application on "
@@ -141,13 +127,11 @@ msgstr ""
 "unter Windows verursacht wird. Die einzige bekannte Abhilfe ist die "
 "Deaktivierung von Stardock Fences während der Verwendung von Godot."
 
-#: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
 "Der Godot Editor scheint einzufrieren, nachdem die Systemkonsole angeklickt "
 "wurde."
 
-#: ../../docs/about/troubleshooting.rst:56
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -161,7 +145,6 @@ msgstr ""
 "die Anwendung und lässt Sie Text innerhalb der Konsole auswählen. Godot kann "
 "dieses System-spezifische Verhalten nicht überschreiben."
 
-#: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -169,7 +152,6 @@ msgstr ""
 "Wählen Sie um dies zu beheben das Fenster der Systemkonsole aus und drücken "
 "Sie Enter, um den Auswahlmodus zu verlassen."
 
-#: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
@@ -177,7 +159,6 @@ msgstr ""
 "Einige Texte wie \"NO DC\" werden in der oberen linken Ecke des "
 "Projektmanagers und des Editorfensters angezeigt."
 
-#: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
@@ -185,7 +166,6 @@ msgstr ""
 "Dies wird durch den NVIDIA-Grafiktreiber verursacht, der ein Overlay zur "
 "Anzeige von Informationen einfügt."
 
-#: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
@@ -194,7 +174,6 @@ msgstr ""
 "Grafiktreibereinstellungen in der NVIDIA-Systemsteuerung auf die "
 "Standardwerte zurück."
 
-#: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
@@ -203,11 +182,9 @@ msgstr ""
 "settings``, gehen Sie zu **X Screen 0 > OpenGL Settings** und entfernen Sie "
 "das Häkchen bei **Enable Graphics API Visual Indicator**."
 
-#: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
 msgstr "Das Projektfenster erscheint im Gegensatz zum Editor unscharf."
 
-#: ../../docs/about/troubleshooting.rst:78
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -218,7 +195,6 @@ msgstr ""
 "Performance erhöht werden, wohingegen das Rendern von 3D Sczenen in hiDPI "
 "langsam ist."
 
-#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -229,12 +205,10 @@ msgstr ""
 "sich ausserdem, dass die Konfiguration Ihres Projektes :ref:`mehrere "
 "Auflösungen <doc_multiple_resolutions>` unterstützt."
 
-#: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
 "Das Projektfenster erscheint nicht zentriert, wenn Ich das Projekt ausführe."
 
-#: ../../docs/about/troubleshooting.rst:89
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
@@ -247,7 +221,6 @@ msgstr ""
 "zulassen**. Stellen Sie außerdem sicher Ihr Projekt so zu konfigurieren, "
 "dass es :ref:`mehrere Auflösungen <doc_multiple_resolutions>` unterstützt."
 
-#: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
@@ -255,7 +228,6 @@ msgstr ""
 "Das Projekt funktioniert, wenn es vom Editor ausgeführt wird, aber scheitert "
 "beim Laden einiger Dateien, falls es von einer exportierten Kopie läuft."
 
-#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -273,7 +245,6 @@ msgstr ""
 "Exportfilter angeben. Weitere Informationen finden Sie unter :ref:"
 "`doc_exporting_projects_export_mode`."
 
-#: ../../docs/about/troubleshooting.rst:104
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "

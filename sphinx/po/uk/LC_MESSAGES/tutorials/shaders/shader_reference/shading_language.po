@@ -1,0 +1,1408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Shading language"
+msgstr ""
+
+msgid "Introduction"
+msgstr "Вступ"
+
+msgid ""
+"Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and "
+"functions are supported, and the few remaining ones will likely be added "
+"over time."
+msgstr ""
+
+msgid ""
+"If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
+"Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
+"you transition from regular GLSL to Godot's shading language."
+msgstr ""
+
+msgid "Data types"
+msgstr "Типи даних"
+
+msgid "Most GLSL ES 3.0 datatypes are supported:"
+msgstr ""
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "**void**"
+msgstr "**void**"
+
+msgid "Void datatype, useful only for functions that return nothing."
+msgstr ""
+
+msgid "**bool**"
+msgstr "**bool**"
+
+msgid "Boolean datatype, can only contain ``true`` or ``false``."
+msgstr ""
+
+msgid "**bvec2**"
+msgstr "**bvec2**"
+
+#, fuzzy
+msgid "Two-component vector of booleans."
+msgstr "Двокомпонентний вектор із булевих значень."
+
+msgid "**bvec3**"
+msgstr "**bvec3**"
+
+#, fuzzy
+msgid "Three-component vector of booleans."
+msgstr "Трикомпонентний вектор із булевих значень."
+
+msgid "**bvec4**"
+msgstr "**bvec4**"
+
+#, fuzzy
+msgid "Four-component vector of booleans."
+msgstr "Чотирикомпонентний вектор із булевих значень."
+
+msgid "**int**"
+msgstr "**int**"
+
+msgid "Signed scalar integer."
+msgstr "Ціле число зі знаком."
+
+msgid "**ivec2**"
+msgstr "**ivec2**"
+
+#, fuzzy
+msgid "Two-component vector of signed integers."
+msgstr "Двокомпонентний вектор із булевих значень."
+
+msgid "**ivec3**"
+msgstr "**ivec3**"
+
+#, fuzzy
+msgid "Three-component vector of signed integers."
+msgstr "Трикомпонентний вектор із булевих значень."
+
+msgid "**ivec4**"
+msgstr "**ivec4**"
+
+#, fuzzy
+msgid "Four-component vector of signed integers."
+msgstr "Чотирикомпонентний вектор із булевих значень."
+
+msgid "**uint**"
+msgstr "**uint**"
+
+msgid "Unsigned scalar integer; can't contain negative numbers."
+msgstr ""
+
+msgid "**uvec2**"
+msgstr "**uvec2**"
+
+#, fuzzy
+msgid "Two-component vector of unsigned integers."
+msgstr "Двокомпонентний вектор із булевих значень."
+
+msgid "**uvec3**"
+msgstr "**uvec3**"
+
+#, fuzzy
+msgid "Three-component vector of unsigned integers."
+msgstr "Трикомпонентний вектор із булевих значень."
+
+msgid "**uvec4**"
+msgstr "**uvec4**"
+
+#, fuzzy
+msgid "Four-component vector of unsigned integers."
+msgstr "Чотирикомпонентний вектор із булевих значень."
+
+msgid "**float**"
+msgstr "**float**"
+
+msgid "Floating-point scalar."
+msgstr "Число з рухомою крапкою."
+
+msgid "**vec2**"
+msgstr "**vec2**"
+
+#, fuzzy
+msgid "Two-component vector of floating-point values."
+msgstr "Двокомпонентний вектор із булевих значень."
+
+msgid "**vec3**"
+msgstr "**vec3**"
+
+#, fuzzy
+msgid "Three-component vector of floating-point values."
+msgstr "Трикомпонентний вектор із булевих значень."
+
+msgid "**vec4**"
+msgstr "**vec4**"
+
+#, fuzzy
+msgid "Four-component vector of floating-point values."
+msgstr "Чотирикомпонентний вектор із булевих значень."
+
+msgid "**mat2**"
+msgstr "**mat2**"
+
+msgid "2x2 matrix, in column major order."
+msgstr ""
+
+msgid "**mat3**"
+msgstr "**mat3**"
+
+msgid "3x3 matrix, in column major order."
+msgstr ""
+
+msgid "**mat4**"
+msgstr "**mat4**"
+
+msgid "4x4 matrix, in column major order."
+msgstr ""
+
+msgid "**sampler2D**"
+msgstr "**sampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as float."
+msgstr ""
+
+msgid "**isampler2D**"
+msgstr "**isampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as signed integer."
+msgstr ""
+
+msgid "**usampler2D**"
+msgstr "**usampler2D**"
+
+msgid ""
+"Sampler type for binding 2D textures, which are read as unsigned integer."
+msgstr ""
+
+#, fuzzy
+msgid "**sampler2DArray**"
+msgstr "**sampler2D**"
+
+msgid "Sampler type for binding 2D texture arrays, which are read as float."
+msgstr ""
+
+#, fuzzy
+msgid "**isampler2DArray**"
+msgstr "**isampler2D**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as signed integer."
+msgstr ""
+
+#, fuzzy
+msgid "**usampler2DArray**"
+msgstr "**usampler2D**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as unsigned "
+"integer."
+msgstr ""
+
+#, fuzzy
+msgid "**sampler3D**"
+msgstr "**sampler2D**"
+
+msgid "Sampler type for binding 3D textures, which are read as float."
+msgstr ""
+
+#, fuzzy
+msgid "**isampler3D**"
+msgstr "**isampler2D**"
+
+msgid "Sampler type for binding 3D textures, which are read as signed integer."
+msgstr ""
+
+#, fuzzy
+msgid "**usampler3D**"
+msgstr "**usampler2D**"
+
+msgid ""
+"Sampler type for binding 3D textures, which are read as unsigned integer."
+msgstr ""
+
+msgid "**samplerCube**"
+msgstr "**samplerCube**"
+
+msgid "Sampler type for binding Cubemaps, which are read as floats."
+msgstr ""
+
+msgid "Casting"
+msgstr ""
+
+msgid ""
+"Just like GLSL ES 3.0, implicit casting between scalars and vectors of the "
+"same size but different type is not allowed. Casting of types of different "
+"size is also not allowed. Conversion must be done explicitly via "
+"constructors."
+msgstr ""
+
+msgid "Example:"
+msgstr "Приклад:"
+
+msgid ""
+"Default integer constants are signed, so casting is always needed to convert "
+"to unsigned:"
+msgstr ""
+
+msgid "Members"
+msgstr "Члени"
+
+msgid ""
+"Individual scalar members of vector types are accessed via the \"x\", \"y\", "
+"\"z\" and \"w\" members. Alternatively, using \"r\", \"g\", \"b\" and \"a\" "
+"also works and is equivalent. Use whatever fits best for your needs."
+msgstr ""
+
+msgid ""
+"For matrices, use the ``m[row][column]`` indexing syntax to access each "
+"scalar, or ``m[idx]`` to access a vector by row index. For example, for "
+"accessing the y position of an object in a mat4 you  use ``m[3][1]``."
+msgstr ""
+
+msgid "Constructing"
+msgstr ""
+
+msgid "Construction of vector types must always pass:"
+msgstr ""
+
+msgid ""
+"Construction of matrix types requires vectors of the same dimension as the "
+"matrix. You can also build a diagonal matrix using ``matx(float)`` syntax. "
+"Accordingly, ``mat4(1.0)`` is an identity matrix."
+msgstr ""
+
+msgid ""
+"Matrices can also be built from a matrix of another dimension. There are two "
+"rules : If a larger matrix is constructed from a smaller matrix, the "
+"additional rows and columns are set to the values they would have in an "
+"identity matrix. If a smaller matrix is constructed from a larger matrix, "
+"the top, left submatrix of the larger matrix is used."
+msgstr ""
+
+msgid "Swizzling"
+msgstr ""
+
+msgid ""
+"It is possible to obtain any combination of components in any order, as long "
+"as the result is another vector type (or scalar). This is easier shown than "
+"explained:"
+msgstr ""
+
+msgid "Precision"
+msgstr "Точність"
+
+msgid ""
+"It is possible to add precision modifiers to datatypes; use them for "
+"uniforms, variables, arguments and varyings:"
+msgstr ""
+
+msgid ""
+"Using lower precision for some operations can speed up the math involved (at "
+"the cost of less precision). This is rarely needed in the vertex processor "
+"function (where full precision is needed most of the time), but is often "
+"useful in the fragment processor."
+msgstr ""
+
+msgid ""
+"Some architectures (mainly mobile) can benefit significantly from this, but "
+"there are downsides such as the additional overhead of conversion between "
+"precisions. Refer to the documentation of the target architecture for "
+"further information. In many cases, mobile drivers cause inconsistent or "
+"unexpected behavior and it is best to avoid specifying precision unless "
+"necessary."
+msgstr ""
+
+msgid "Arrays"
+msgstr "Масиви"
+
+msgid ""
+"Arrays are containers for multiple variables of a similar type. Note: As of "
+"Godot 3.2, only local and varying arrays have been implemented."
+msgstr ""
+
+#, fuzzy
+msgid "Local arrays"
+msgstr "Локальні змінні"
+
+msgid ""
+"Local arrays are declared in functions. They can use all of the allowed "
+"datatypes, except samplers. The array declaration follows a C-style syntax: "
+"``[const] + [precision] + typename + identifier + [array size]``."
+msgstr ""
+
+msgid "They can be initialized at the beginning like:"
+msgstr ""
+
+msgid ""
+"You can declare multiple arrays (even with different sizes) in one "
+"expression:"
+msgstr ""
+
+msgid "To access an array element, use the indexing syntax:"
+msgstr ""
+
+msgid ""
+"Arrays also have a built-in function ``.length()`` (not to be confused with "
+"the built-in ``length()`` function). It doesn't accept any parameters and "
+"will return the array's size."
+msgstr ""
+
+msgid ""
+"If you use an index below 0 or greater than array size - the shader will "
+"crash and break rendering. To prevent this, use ``length()``, ``if``, or "
+"``clamp()`` functions to ensure the index is between 0 and the array's "
+"length. Always carefully test and check your code. If you pass a constant "
+"expression or a simple number, the editor will check its bounds to prevent "
+"this crash."
+msgstr ""
+
+msgid "Constants"
+msgstr "Константи"
+
+msgid ""
+"Use the ``const`` keyword before the variable declaration to make that "
+"variable immutable, which means that it cannot be modified. All basic types, "
+"except samplers can be declared as constants. Accessing and using a constant "
+"value is slightly faster than using a uniform. Constants must be initialized "
+"at their declaration."
+msgstr ""
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression e.g"
+msgstr ""
+
+msgid "Similar to variables, arrays can also be declared with ``const``."
+msgstr ""
+
+msgid ""
+"Constants can be declared both globally (outside of any function) or locally "
+"(inside a function). Global constants are useful when you want to have "
+"access to a value throughout your shader that does not need to be modified. "
+"Like uniforms, global constants are shared between all shader stages, but "
+"they are not accessible outside of the shader."
+msgstr ""
+
+msgid "Operators"
+msgstr "Оператори"
+
+msgid ""
+"Godot shading language supports the same set of operators as GLSL ES 3.0. "
+"Below is the list of them in precedence order:"
+msgstr ""
+
+msgid "Precedence"
+msgstr ""
+
+msgid "Class"
+msgstr "Клас"
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "1 (highest)"
+msgstr "1 (найвищий)"
+
+msgid "parenthetical grouping"
+msgstr "групування за допомогою дужок"
+
+msgid "**()**"
+msgstr "**()**"
+
+msgid "2"
+msgstr "2"
+
+msgid "unary"
+msgstr "унарні"
+
+msgid "**+, -, !, ~**"
+msgstr "**+, -, !, ~**"
+
+msgid "3"
+msgstr "3"
+
+msgid "multiplicative"
+msgstr "мультиплікативні"
+
+msgid "**/, \\*, %**"
+msgstr "**/, \\*, %**"
+
+msgid "4"
+msgstr "4"
+
+msgid "additive"
+msgstr "адитивні"
+
+msgid "**+, -**"
+msgstr "**+, -**"
+
+msgid "5"
+msgstr "5"
+
+msgid "bit-wise shift"
+msgstr "зсув за бітами"
+
+msgid "**<<, >>**"
+msgstr "**<<, >>**"
+
+msgid "6"
+msgstr "6"
+
+msgid "relational"
+msgstr "реляційні"
+
+msgid "**<, >, <=, >=**"
+msgstr "**<, >, <=, >=**"
+
+msgid "7"
+msgstr "7"
+
+msgid "equality"
+msgstr "рівність"
+
+msgid "**==, !=**"
+msgstr "**==, !=**"
+
+msgid "8"
+msgstr "8"
+
+#, fuzzy
+msgid "bit-wise AND"
+msgstr "Побітове AND (І)"
+
+msgid "**&**"
+msgstr "**&**"
+
+msgid "9"
+msgstr "9"
+
+#, fuzzy
+msgid "bit-wise exclusive OR"
+msgstr "зсув за бітами"
+
+msgid "**^**"
+msgstr "**^**"
+
+msgid "10"
+msgstr "10"
+
+#, fuzzy
+msgid "bit-wise inclusive OR"
+msgstr "зсув за бітами"
+
+msgid "**|**"
+msgstr "**|**"
+
+msgid "11"
+msgstr "11"
+
+#, fuzzy
+msgid "logical AND"
+msgstr "логічне «І»"
+
+msgid "**&&**"
+msgstr "**&&**"
+
+msgid "12 (lowest)"
+msgstr "12 (найнижчий)"
+
+msgid "logical inclusive OR"
+msgstr ""
+
+msgid "**||**"
+msgstr "**||**"
+
+#, fuzzy
+msgid "Flow control"
+msgstr "Керування потоком"
+
+msgid "Godot Shading language supports the most common types of flow control:"
+msgstr ""
+
+msgid ""
+"Keep in mind that, in modern GPUs, an infinite loop can exist and can freeze "
+"your application (including editor). Godot can't protect you from this, so "
+"be careful not to make this mistake!"
+msgstr ""
+
+msgid ""
+"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
+"doesn't support dynamic loops, so shaders using those won't work there."
+msgstr ""
+"При експорті проєкту GLES2 у HTML5 буде використовуватися WebGL 1.0. WebGL "
+"1.0 не підтримує динамічні цикли, тому шейдери, що використовують їх, там не "
+"працюватимуть."
+
+msgid "Discarding"
+msgstr "Відкидання"
+
+msgid ""
+"Fragment and light functions can use the **discard** keyword. If used, the "
+"fragment is discarded and nothing is written."
+msgstr ""
+
+msgid "Functions"
+msgstr "Функції"
+
+msgid ""
+"It is possible to define functions in a Godot shader. They use the following "
+"syntax:"
+msgstr ""
+
+msgid ""
+"You can only use functions that have been defined above (higher in the "
+"editor) the function from which you are calling them."
+msgstr ""
+
+msgid "Function arguments can have special qualifiers:"
+msgstr ""
+
+msgid "**in**: Means the argument is only for reading (default)."
+msgstr ""
+
+msgid "**out**: Means the argument is only for writing."
+msgstr ""
+
+msgid "**inout**: Means the argument is fully passed via reference."
+msgstr ""
+
+msgid "Example below:"
+msgstr ""
+
+msgid "Varyings"
+msgstr ""
+
+msgid ""
+"To send data from the vertex to the fragment (or light) processor function, "
+"*varyings* are used. They are set for every primitive vertex in the *vertex "
+"processor*, and the value is interpolated for every pixel in the *fragment "
+"processor*."
+msgstr ""
+
+msgid "Varying can also be an array:"
+msgstr ""
+
+msgid ""
+"It's also possible to send data from *fragment* to *light* processors using "
+"*varying* keyword. To do so you can assign it in the *fragment* and later "
+"use it in the *light* function."
+msgstr ""
+
+msgid ""
+"Note that varying may not be assigned in custom functions or a *light "
+"processor* function like:"
+msgstr ""
+
+msgid ""
+"This limitation was introduced to prevent incorrect usage before "
+"initialization."
+msgstr ""
+
+msgid "Interpolation qualifiers"
+msgstr ""
+
+msgid ""
+"Certain values are interpolated during the shading pipeline. You can modify "
+"how these interpolations are done by using *interpolation qualifiers*."
+msgstr ""
+
+msgid "There are two possible interpolation qualifiers:"
+msgstr ""
+
+msgid "Qualifier"
+msgstr ""
+
+msgid "**flat**"
+msgstr "Нейтральний"
+
+msgid "The value is not interpolated."
+msgstr ""
+
+msgid "**smooth**"
+msgstr "Згладжування"
+
+msgid ""
+"The value is interpolated in a perspective-correct fashion. This is the "
+"default."
+msgstr ""
+
+msgid "Uniforms"
+msgstr ""
+
+msgid ""
+"Passing values to shaders is possible. These are global to the whole shader "
+"and are called *uniforms*. When a shader is later assigned to a material, "
+"the uniforms will appear as editable parameters in it. Uniforms can't be "
+"written from within the shader."
+msgstr ""
+
+msgid ""
+"You can set uniforms in the editor in the material. Or you can set them "
+"through GDScript:"
+msgstr ""
+
+msgid ""
+"The first argument to ``set_shader_param`` is the name of the uniform in the "
+"shader. It must match *exactly* to the name of the uniform in the shader or "
+"else it will not be recognized."
+msgstr ""
+
+msgid ""
+"Any GLSL type except for *void* can be a uniform. Additionally, Godot "
+"provides optional shader hints to make the compiler understand for what the "
+"uniform is used."
+msgstr ""
+
+msgid ""
+"It's important to understand that textures that are supplied as color "
+"require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
+"Godot's 3D engine renders in linear color space."
+msgstr ""
+
+msgid "Full list of hints below:"
+msgstr ""
+
+msgid "Hint"
+msgstr "Підказка"
+
+msgid "hint_color"
+msgstr ""
+
+msgid "Used as color"
+msgstr ""
+
+msgid "**int, float**"
+msgstr ""
+
+msgid "hint_range(min, max[, step])"
+msgstr ""
+
+msgid "Used as range (with min/max/step)"
+msgstr ""
+
+msgid "hint_albedo"
+msgstr ""
+
+msgid "Used as albedo color, default white"
+msgstr ""
+
+msgid "hint_black_albedo"
+msgstr ""
+
+msgid "Used as albedo color, default black"
+msgstr ""
+
+msgid "hint_normal"
+msgstr ""
+
+msgid "Used as normalmap"
+msgstr ""
+
+msgid "hint_white"
+msgstr ""
+
+msgid "As value, default to white."
+msgstr ""
+
+msgid "hint_black"
+msgstr ""
+
+msgid "As value, default to black"
+msgstr ""
+
+msgid "hint_aniso"
+msgstr ""
+
+msgid "As flowmap, default to right."
+msgstr ""
+
+msgid ""
+"GDScript uses different variable types than GLSL does, so when passing "
+"variables from GDScript to shaders, Godot converts the type automatically. "
+"Below is a table of the corresponding types:"
+msgstr ""
+
+#, fuzzy
+msgid "GDScript type"
+msgstr "Типи даних"
+
+#, fuzzy
+msgid "GLSL type"
+msgstr "типу"
+
+#, fuzzy
+msgid "**Vector2**"
+msgstr "Вектор"
+
+#, fuzzy
+msgid "**Vector3**"
+msgstr "Вектор"
+
+#, fuzzy
+msgid "**Color**"
+msgstr "**колір**"
+
+#, fuzzy
+msgid "**Transform**"
+msgstr "Перетворення"
+
+#, fuzzy
+msgid "**Transform2D**"
+msgstr "Перетворення"
+
+msgid ""
+"Be careful when setting shader uniforms from GDScript, no error will be "
+"thrown if the type does not match. Your shader will just exhibit undefined "
+"behavior."
+msgstr ""
+
+msgid "Uniforms can also be assigned default values:"
+msgstr ""
+
+#, fuzzy
+msgid "Built-in variables"
+msgstr "Редагування екземплярів"
+
+msgid ""
+"A large number of built-in variables are available, like ``UV``, ``COLOR`` "
+"and ``VERTEX``. What variables are available depends on the type of shader "
+"(``spatial``, ``canvas_item`` or ``particle``) and the function used "
+"(``vertex``, ``fragment`` or ``light``). For a list of the build-in "
+"variables that are available, please see the corresponding pages:"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`doc_spatial_shader`"
+
+#, fuzzy
+msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`doc_canvas_item_shader`"
+
+#, fuzzy
+msgid ":ref:`Particle shaders <doc_particle_shader>`"
+msgstr ":ref:`doc_particle_shader`"
+
+#, fuzzy
+msgid "Built-in functions"
+msgstr "Вбудовані функції"
+
+msgid ""
+"A large number of built-in functions are supported, conforming to GLSL ES "
+"3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
+"nomenclature is used, it can be scalar or vector."
+msgstr ""
+
+msgid ""
+"For a list of the functions that are not available in the GLES2 backend, "
+"please see the :ref:`Differences between GLES2 and GLES3 doc "
+"<doc_gles2_gles3_differences>`."
+msgstr ""
+
+msgid "Function"
+msgstr "Функція"
+
+msgid "vec_type **radians** (vec_type degrees)"
+msgstr ""
+
+msgid "Convert degrees to radians"
+msgstr ""
+
+msgid "vec_type **degrees** (vec_type radians)"
+msgstr ""
+
+msgid "Convert radians to degrees"
+msgstr ""
+
+msgid "vec_type **sin** (vec_type x)"
+msgstr ""
+
+msgid "Sine"
+msgstr "Синус"
+
+msgid "vec_type **cos** (vec_type x)"
+msgstr ""
+
+msgid "Cosine"
+msgstr "Синусоїда"
+
+msgid "vec_type **tan** (vec_type x)"
+msgstr ""
+
+msgid "Tangent"
+msgstr "Дотична"
+
+msgid "vec_type **asin** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Arcsine"
+msgstr "Арккосинус"
+
+msgid "vec_type **acos** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Arccosine"
+msgstr "Арккосинус"
+
+msgid "vec_type **atan** (vec_type y_over_x)"
+msgstr ""
+
+#, fuzzy
+msgid "Arctangent"
+msgstr "Обернений тангенс"
+
+msgid "vec_type **atan** (vec_type y, vec_type x)"
+msgstr ""
+
+msgid "Arctangent to convert vector to angle"
+msgstr ""
+
+msgid "vec_type **sinh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Hyperbolic sine"
+msgstr "Гіперболічний косинус"
+
+msgid "vec_type **cosh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Hyperbolic cosine"
+msgstr "Гіперболічний косинус"
+
+msgid "vec_type **tanh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Hyperbolic tangent"
+msgstr "Гіперболічний тангенс"
+
+msgid "vec_type **asinh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Inverse hyperbolic sine"
+msgstr "Обернений гіперболічний косинус"
+
+msgid "vec_type **acosh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Inverse hyperbolic cosine"
+msgstr "Обернений гіперболічний косинус"
+
+msgid "vec_type **atanh** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Inverse hyperbolic tangent"
+msgstr "Гіперболічний арктангенс"
+
+msgid "vec_type **pow** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
+msgstr ""
+
+msgid "vec_type **exp** (vec_type x)"
+msgstr ""
+
+msgid "Base-e exponential"
+msgstr ""
+
+msgid "vec_type **exp2** (vec_type x)"
+msgstr ""
+
+msgid "Base-2 exponential"
+msgstr ""
+
+msgid "vec_type **log** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Natural logarithm"
+msgstr "Десятковий логарифм"
+
+msgid "vec_type **log2** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Base-2 logarithm"
+msgstr "Десятковий логарифм"
+
+msgid "vec_type **sqrt** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Square root"
+msgstr "Квадратний корінь"
+
+msgid "vec_type **inversesqrt** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Inverse square root"
+msgstr "Квадратний корінь"
+
+msgid "vec_type **abs** (vec_type x)"
+msgstr ""
+
+msgid "Absolute"
+msgstr "Абсолютний"
+
+msgid "ivec_type **abs** (ivec_type x)"
+msgstr ""
+
+msgid "vec_type **sign** (vec_type x)"
+msgstr ""
+
+msgid "Sign"
+msgstr "Підписати"
+
+msgid "ivec_type **sign** (ivec_type x)"
+msgstr ""
+
+msgid "vec_type **floor** (vec_type x)"
+msgstr ""
+
+msgid "Floor"
+msgstr "Підлога"
+
+msgid "vec_type **round** (vec_type x)"
+msgstr ""
+
+msgid "Round"
+msgstr "Округлені"
+
+msgid "vec_type **roundEven** (vec_type x)"
+msgstr ""
+
+msgid "Round to the nearest even number"
+msgstr ""
+
+msgid "vec_type **trunc** (vec_type x)"
+msgstr ""
+
+msgid "Truncation"
+msgstr ""
+
+msgid "vec_type **ceil** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Ceil"
+msgstr "ceiling"
+
+msgid "vec_type **fract** (vec_type x)"
+msgstr ""
+
+msgid "Fractional"
+msgstr "дробовий"
+
+msgid "vec_type **mod** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Remainder"
+msgstr "Залишок"
+
+msgid "vec_type **mod** (vec_type x , float y)"
+msgstr ""
+
+msgid "vec_type **modf** (vec_type x, out vec_type i)"
+msgstr ""
+
+msgid "Fractional of ``x``, with ``i`` as integer part"
+msgstr ""
+
+msgid "vec_type  **min** (vec_type a, vec_type b)"
+msgstr ""
+
+msgid "Minimum"
+msgstr "Мінімум"
+
+msgid "vec_type  **max** (vec_type a, vec_type b)"
+msgstr ""
+
+msgid "Maximum"
+msgstr "Максимальний"
+
+msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
+msgstr ""
+
+msgid "Clamp to ``min..max``"
+msgstr ""
+
+msgid "float **mix** (float a, float b, float c)"
+msgstr ""
+
+#, fuzzy
+msgid "Linear interpolate"
+msgstr "Інтерполяція"
+
+msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
+msgstr ""
+
+msgid "Linear interpolate (scalar coefficient)"
+msgstr ""
+
+msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+
+msgid "Linear interpolate (vector coefficient)"
+msgstr ""
+
+msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
+msgstr ""
+
+msgid "Linear interpolate (boolean-vector selection)"
+msgstr ""
+
+msgid "vec_type **step** (vec_type a, vec_type b)"
+msgstr ""
+
+msgid "``b[i] < a[i] ? 0.0 : 1.0``"
+msgstr ""
+
+msgid "vec_type **step** (float a, vec_type b)"
+msgstr ""
+
+msgid "``b[i] < a ? 0.0 : 1.0``"
+msgstr ""
+
+msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+
+#, fuzzy
+msgid "Hermite interpolate"
+msgstr "Інтерполяція"
+
+msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
+msgstr ""
+
+msgid "bvec_type **isnan** (vec_type x)"
+msgstr ""
+
+msgid "Returns ``true`` if scalar or vector component is ``NaN``"
+msgstr ""
+
+msgid "bvec_type **isinf** (vec_type x)"
+msgstr ""
+
+msgid "Returns ``true`` if scalar or vector component is ``INF``"
+msgstr ""
+
+msgid "ivec_type **floatBitsToInt** (vec_type x)"
+msgstr ""
+
+msgid "Float->Int bit copying, no conversion"
+msgstr ""
+
+msgid "uvec_type **floatBitsToUint** (vec_type x)"
+msgstr ""
+
+msgid "Float->UInt bit copying, no conversion"
+msgstr ""
+
+msgid "vec_type **intBitsToFloat** (ivec_type x)"
+msgstr ""
+
+msgid "Int->Float bit copying, no conversion"
+msgstr ""
+
+msgid "vec_type **uintBitsToFloat** (uvec_type x)"
+msgstr ""
+
+msgid "UInt->Float bit copying, no conversion"
+msgstr ""
+
+msgid "float **length** (vec_type x)"
+msgstr ""
+
+#, fuzzy
+msgid "Vector length"
+msgstr "Довжина рядка"
+
+msgid "float **distance** (vec_type a, vec_type b)"
+msgstr ""
+
+msgid "Distance between vectors i.e ``length(a - b)``"
+msgstr ""
+
+msgid "float **dot** (vec_type a, vec_type b)"
+msgstr ""
+
+msgid "Dot product"
+msgstr "Скалярний добуток"
+
+msgid "vec3 **cross** (vec3 a, vec3 b)"
+msgstr ""
+
+msgid "Cross product"
+msgstr "Векторний добуток"
+
+msgid "vec_type **normalize** (vec_type x)"
+msgstr ""
+
+msgid "Normalize to unit length"
+msgstr ""
+
+msgid "vec3 **reflect** (vec3 I, vec3 N)"
+msgstr ""
+
+msgid "Reflect"
+msgstr "Віддзеркалення"
+
+msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
+msgstr ""
+
+msgid "Refract"
+msgstr ""
+
+msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
+msgstr ""
+
+msgid "If ``dot(Nref, I)`` < 0, return N, otherwise –N"
+msgstr ""
+
+msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
+msgstr ""
+
+msgid "Matrix component multiplication"
+msgstr ""
+
+msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
+msgstr ""
+
+msgid "Matrix outer product"
+msgstr ""
+
+msgid "mat_type **transpose** (mat_type m)"
+msgstr ""
+
+#, fuzzy
+msgid "Transpose matrix"
+msgstr "&Транспонувати матрицю"
+
+msgid "float **determinant** (mat_type m)"
+msgstr ""
+
+msgid "Matrix determinant"
+msgstr ""
+
+msgid "mat_type **inverse** (mat_type m)"
+msgstr ""
+
+#, fuzzy
+msgid "Inverse matrix"
+msgstr "&Транспонувати матрицю"
+
+msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on < int/uint/float vectors"
+msgstr ""
+
+msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on > int/uint/float vectors"
+msgstr ""
+
+msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on <= int/uint/float vectors"
+msgstr ""
+
+msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on >= int/uint/float vectors"
+msgstr ""
+
+msgid "bvec_type **equal** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on == int/uint/float vectors"
+msgstr ""
+
+msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
+msgstr ""
+
+msgid "Bool vector comparison on != int/uint/float vectors"
+msgstr ""
+
+msgid "bool **any** (bvec_type x)"
+msgstr ""
+
+msgid "Any component is ``true``"
+msgstr ""
+
+msgid "bool **all** (bvec_type x)"
+msgstr ""
+
+msgid "All components are ``true``"
+msgstr ""
+
+msgid "bvec_type **not** (bvec_type x)"
+msgstr ""
+
+msgid "Invert boolean vector"
+msgstr ""
+
+msgid "ivec2 **textureSize** (sampler2D_type s, int lod)"
+msgstr ""
+
+msgid "Get the size of a 2D texture"
+msgstr ""
+
+msgid "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr ""
+
+msgid "Get the size of a 2D texture array"
+msgstr ""
+
+msgid "ivec3 **textureSize** (sampler3D s, int lod)"
+msgstr ""
+
+msgid "Get the size of a 3D texture"
+msgstr ""
+
+msgid "ivec2 **textureSize** (samplerCube s, int lod)"
+msgstr ""
+
+msgid "Get the size of a cubemap texture"
+msgstr ""
+
+msgid "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a 2D texture read"
+msgstr ""
+
+msgid "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a 2D texture array read"
+msgstr ""
+
+msgid "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a 3D texture read"
+msgstr ""
+
+msgid "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a cubemap texture read"
+msgstr ""
+
+msgid "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a 2D texture read with projection"
+msgstr ""
+
+msgid "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
+msgstr ""
+
+msgid "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
+msgstr ""
+
+msgid "Perform a 3D texture read with projection"
+msgstr ""
+
+msgid "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
+msgstr ""
+
+msgid "Perform a 2D texture read at custom mipmap"
+msgstr ""
+
+msgid "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
+msgstr ""
+
+msgid "Perform a 2D texture array read at custom mipmap"
+msgstr ""
+
+msgid "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
+msgstr ""
+
+msgid "Perform a 3D texture read at custom mipmap"
+msgstr ""
+
+msgid "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgstr ""
+
+msgid "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
+msgstr ""
+
+msgid "Perform a 2D texture read with projection/LOD"
+msgstr ""
+
+msgid "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
+msgstr ""
+
+msgid "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
+msgstr ""
+
+msgid "Perform a 3D texture read with projection/LOD"
+msgstr ""
+
+msgid "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
+msgstr ""
+
+msgid "Fetch a single texel using integer coordinates"
+msgstr ""
+
+msgid "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
+msgstr ""
+
+msgid "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
+msgstr ""
+
+msgid "vec_type **dFdx** (vec_type p)"
+msgstr ""
+
+msgid "Derivative in ``x`` using local differencing"
+msgstr ""
+
+msgid "vec_type **dFdy** (vec_type p)"
+msgstr ""
+
+msgid "Derivative in ``y`` using local differencing"
+msgstr ""
+
+msgid "vec_type **fwidth** (vec_type p)"
+msgstr ""
+
+msgid "Sum of absolute derivative in ``x`` and ``y``"
+msgstr ""

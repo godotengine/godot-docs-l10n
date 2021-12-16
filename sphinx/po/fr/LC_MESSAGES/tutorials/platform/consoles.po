@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"
 msgstr "Support des consoles dans Godot"
 
-#: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
 msgstr "Processus de publication sur console"
 
-#: ../../docs/tutorials/platform/consoles.rst:9
 msgid ""
 "Regardless of the engine used to create the game, the process to publish a "
 "game to a console platform is as follows:"
@@ -33,7 +30,6 @@ msgstr ""
 "Quel que soit le moteur utilisé pour créer le jeu, le processus de "
 "publication d'un jeu sur une plateforme de console est le suivant :"
 
-#: ../../docs/tutorials/platform/consoles.rst:12
 msgid ""
 "Register a developer account on the console manufacturer's website, then "
 "sign NDAs and publishing contracts. This requires you to have a registered "
@@ -43,7 +39,6 @@ msgstr ""
 "console, puis signez des accords de confidentialité et des contrats "
 "d'édition. Pour cela, vous devez disposer d'une entité juridique enregistrée."
 
-#: ../../docs/tutorials/platform/consoles.rst:15
 msgid ""
 "Gain access to the publishing platform by passing the acceptance process. "
 "This can take up to several months. Note that this step is significantly "
@@ -57,7 +52,6 @@ msgstr ""
 "Nintendo est généralement connu pour accepter davantage les petits "
 "développeurs, mais ce n'est pas garanti."
 
-#: ../../docs/tutorials/platform/consoles.rst:19
 msgid ""
 "Get access to developer tools and order a console specially made for "
 "developers (*devkit*). The cost of those devkits is confidential."
@@ -66,13 +60,11 @@ msgstr ""
 "conçue pour les développeurs (*devkit*). Le coût de ces devkits est "
 "confidentiel."
 
-#: ../../docs/tutorials/platform/consoles.rst:21
 msgid "Port the engine to the console platform or pay a company to do it."
 msgstr ""
 "Portez le moteur sur la plateforme de la console ou payez une entreprise "
 "pour le faire."
 
-#: ../../docs/tutorials/platform/consoles.rst:22
 msgid ""
 "To be published, your game needs to be rated in the regions you'd like to "
 "sell it in. For example, in North America, the `ESRB <https://www.esrb.org/"
@@ -87,7 +79,6 @@ msgstr ""
 "indépendants peuvent généralement obtenir une classification moins chère par "
 "rapport aux développeurs plus établis."
 
-#: ../../docs/tutorials/platform/consoles.rst:28
 msgid ""
 "Due to the complexity of the process, the budget to publish a game by "
 "yourself on a single console often exceeds $1,000 (this is a rough figure)."
@@ -96,17 +87,14 @@ msgstr ""
 "un jeu par vous-même sur une seule console dépasse souvent 1 000 dollars (ce "
 "chiffre est approximatif)."
 
-#: ../../docs/tutorials/platform/consoles.rst:32
 msgid "Official support"
 msgstr "Support officiel"
 
-#: ../../docs/tutorials/platform/consoles.rst:34
 msgid ""
 "Godot supports the Linux-based Steam Deck. The reason other consoles are not "
 "officially supported are:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/consoles.rst:37
 msgid ""
 "To develop for consoles, one must be licensed as a company. As an open "
 "source project, Godot does not have such a legal figure."
@@ -115,7 +103,6 @@ msgstr ""
 "qu'entreprise. En tant que projet open source, Godot n'a pas une telle "
 "figure juridique."
 
-#: ../../docs/tutorials/platform/consoles.rst:39
 msgid ""
 "Console SDKs are secret and covered by non-disclosure agreements. Even if we "
 "could get access to them, we could not publish the platform-specific code "
@@ -125,7 +112,6 @@ msgstr ""
 "divulgation. Même si nous pouvions y accéder, nous ne pourrions pas publier "
 "le code spécifique à la plateforme sous une licence open source."
 
-#: ../../docs/tutorials/platform/consoles.rst:42
 msgid ""
 "Consoles require specialized hardware to develop for, so regular individuals "
 "can't create games for them anyway."
@@ -134,7 +120,6 @@ msgstr ""
 "Ainsi, les individus ordinaires ne peuvent de toute façon pas créer des jeux "
 "pour celles-ci."
 
-#: ../../docs/tutorials/platform/consoles.rst:45
 msgid ""
 "However, it is still possible to port your games to consoles thanks to "
 "services provided by third-party companies."
@@ -142,7 +127,6 @@ msgstr ""
 "Cependant, il est toujours possible de porter vos jeux sur les consoles "
 "grâce aux services fournis par des sociétés tierces."
 
-#: ../../docs/tutorials/platform/consoles.rst:50
 msgid ""
 "In practice, the process is quite similar to Unity and Unreal Engine, except "
 "that you need to contact a third-party developer to handle the porting "
@@ -158,11 +142,9 @@ msgstr ""
 "qu'il prouve qu'il est un développeur de console sous licence. Cela "
 "violerait le NDA du fabricant de la console."
 
-#: ../../docs/tutorials/platform/consoles.rst:58
 msgid "Third-party support"
 msgstr "Support de tierce partie"
 
-#: ../../docs/tutorials/platform/consoles.rst:60
 msgid ""
 "Console ports of Godot are offered by third-party companies (which have "
 "ported Godot on their own). These companies also offer publishing of your "
@@ -172,11 +154,9 @@ msgstr ""
 "(qui ont porté Godot de leur propre chef). Ces sociétés proposent également "
 "la publication de vos jeux sur différentes consoles."
 
-#: ../../docs/tutorials/platform/consoles.rst:64
 msgid "Following is the list of providers:"
 msgstr "Voici la liste des fournisseurs :"
 
-#: ../../docs/tutorials/platform/consoles.rst:66
 msgid ""
 "`Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ offers Switch "
 "and PS4 porting and publishing of Godot games."
@@ -184,7 +164,6 @@ msgstr ""
 "`Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ propose le "
 "portage et l'édition de jeux Godot sur Switch et PS4."
 
-#: ../../docs/tutorials/platform/consoles.rst:68
 msgid ""
 "`Pineapple Works <https://pineapple.works/>`_ offers Switch and Xbox One "
 "porting and publishing of Godot games."
@@ -192,7 +171,6 @@ msgstr ""
 "`Pineapple Works <https://pineapple.works/>`_ propose le portage et "
 "l'édition de jeux Godot sur Switch et Xbox One."
 
-#: ../../docs/tutorials/platform/consoles.rst:71
 msgid ""
 "If your company offers porting and/or publishing services for Godot games, "
 "feel free to `open an issue or pull request <https://github.com/godotengine/"

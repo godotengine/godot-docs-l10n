@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
 msgstr "Vue d'ensemble du mouvement 2D"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:7
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:9
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
 "the style of game you're making, you may have special requirements, but in "
@@ -36,7 +33,6 @@ msgstr ""
 "particulières, mais en général, les mouvements de la plupart des jeux en 2D "
 "sont basés sur un petit nombre de dessins."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
 "We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples, "
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
@@ -46,11 +42,9 @@ msgstr ""
 "exemple, mais les principes s'appliqueront tout autant aux autres types de "
 "nœuds (Area2D, RigidBody2D)."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
 msgstr "Configuration"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -63,7 +57,6 @@ msgstr ""
 "la texture du Sprite ou utiliser n'importe quelle autre image 2D que vous "
 "avez."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
@@ -73,11 +66,9 @@ msgstr ""
 "des entrées\". Ajoutez les actions d'entrées suivantes (voir :ref:"
 "`InputEvent <doc_inputevent>` pour les détails) :"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr "Mouvement 8 directions"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -90,11 +81,9 @@ msgstr ""
 "fait que le joueur peut se déplacer en diagonale en appuyant sur deux "
 "touches simultanément."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr "Ajoutez un script au kinematic body et ajoutez le code suivant :"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
 "In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
@@ -107,7 +96,6 @@ msgstr ""
 "également un mouvement diagonal plus rapide en raison de l'ajout des deux "
 "directions."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
@@ -116,7 +104,6 @@ msgstr ""
 "que nous définissons sa *longueur* à ``1``, et que nous multiplions par la "
 "vitesse désirée."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
@@ -125,7 +112,6 @@ msgstr ""
 "d'une remise à niveau, vous pouvez voir une explication de l'utilisation des "
 "vecteurs dans Godot sur :ref:`doc_vector_math`."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:116
 msgid ""
 "If the code above does nothing when you press the keys, double-check that "
 "you've set up input actions correctly as described in the :ref:"
@@ -135,11 +121,9 @@ msgstr ""
 "vérifiez que vous avez correctement configuré les actions d'entrée comme "
 "décrit dans la partie :ref:`doc_2d_movement_setup` de ce tutoriel."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr "Rotation + Mouvement"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -152,7 +136,6 @@ msgstr ""
 "le déplace vers l'avant ou l'arrière dans toute direction vers laquelle il "
 "fait face."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -164,7 +147,6 @@ msgstr ""
 "même temps les annulera et ne provoquera aucune rotation. La rotation est "
 "appliquée directement à la propriété ``rotation`` du corps."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -177,11 +159,9 @@ msgstr ""
 "circonstances où vous auriez autrement besoin d'appliquer des fonctions "
 "trigonométriques."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr "Rotation + Mouvement (souris)"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -193,7 +173,6 @@ msgstr ""
 "personnage \"regardera\" toujours vers le pointeur de la souris. Les entrées "
 "avant/arrière restent toutefois les mêmes."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
@@ -203,11 +182,9 @@ msgstr ""
 "pour diriger le joueur vers une position donnée. Sans cette fonction, vous "
 "pourriez obtenir le même effet en définissant l'angle comme suit :"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr "Cliquer-et-déplacer"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
@@ -216,7 +193,6 @@ msgstr ""
 "personnage. En cliquant sur l'écran, le joueur se déplacera à l'emplacement "
 "cible."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
@@ -228,7 +204,6 @@ msgstr ""
 "cible, car il se déplace légèrement au-delà de la position et essaie de "
 "reculer, se déplace trop loin et répète ce schéma encore et encore."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
@@ -236,7 +211,6 @@ msgstr ""
 "Décommenter la ligne ``look_at()`` amènera le corps à pointer dans la "
 "direction de son mouvement si vous préférez."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
@@ -245,11 +219,9 @@ msgstr ""
 "\"suivant\". La position ``cible`` peut être celle de n'importe quel objet "
 "vers lequel vous voulez déplacer."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
 msgstr "Résumé"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
@@ -259,7 +231,6 @@ msgstr ""
 "vos propres projets. N'hésitez pas à les utiliser et à les expérimenter pour "
 "voir ce que vous pouvez faire."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

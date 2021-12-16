@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 11:09+0100\n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
 msgid "Qt Creator"
-msgstr "Qt Creator"
+msgstr "\\ Qt Creator"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
 #, fuzzy
 msgid ""
 "`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
@@ -30,11 +28,9 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ は、すべてのデスクトッププラットフォー"
 "ム向けの無料のオープンソースIDEです。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
 msgid "Importing the project"
 msgstr "プロジェクトのインポート"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
 #, fuzzy
 msgid ""
 "From the Qt Creator's main screen select **New Project > Import Project > "
@@ -43,11 +39,9 @@ msgstr ""
 "*新しいプロジェクト* → *プロジェクトのインポート* → *既存プロジェクトのイン"
 "ポートを* を選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
 msgid "Under **Location** select the Godot root folder."
 msgstr "**ロケーション** でGodotのルートフォルダを選択してください。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 #, fuzzy
 msgid ""
 "Next, you can choose which folders and files will be visible to the project. "
@@ -60,33 +54,27 @@ msgstr ""
 "ルは自動的に追加されます。利用可能な拡張子: ビルドシステムファイルの \\*.py、"
 "Android 開発用 \\*.java、macOS用 \\*.mm。[次へ] をクリックします。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
 msgid ""
 "You can change this configuration later by right-clicking on your project "
 "and selecting the **Edit Files...** option."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
 msgid "Finish the import."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
 msgid ""
 "Open the ``project_name.includes`` file and add a line containing ``.`` to "
 "it to correctly enable the code completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 #, fuzzy
 msgid "From the left-side menu select **Projects** and open the **Build** tab."
 msgstr "*プロジェクト*\\ をクリックし、\\ *ビルド*\\ タブを開きます。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 #, fuzzy
 msgid "Delete the predefined ``make`` build step."
 msgstr "定義済みの ``make`` ビルド ステップを削除します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
 msgid ""
 "Click **Add Build Step > Custom Process Step** to add a new build step with "
 "the following settings:"
@@ -94,19 +82,15 @@ msgstr ""
 "新しいビルドステップを次のような設定で追加するには **ビルドステップを追加 -> "
 "カスタムプロセスステップ** をクリックします:"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
 msgstr "コマンド"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "**scons**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 msgid "Arguments"
 msgstr "引数"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 #, fuzzy
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -114,7 +98,6 @@ msgstr ""
 "GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
 "`ui_introduction_to_the_ui_system`\\ を見て下さい。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
 #, fuzzy
 msgid ""
 "If the build fails with ``Could not start process \"scons\"``, it can mean "
@@ -125,17 +108,14 @@ msgstr ""
 "\"scons\"`` で失敗した場合、\\ ``scons`` が ``PATH`` 環境変数にないため、"
 "SConsバイナリへのフルパスを使用しなければならない可能性があります。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 #, fuzzy
 msgid "Debugging the project"
 msgstr "プロジェクトの準備"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
 #, fuzzy
 msgid "From the left-side menu select **Projects** and open the **Run** tab."
 msgstr "*プロジェクト*\\ をクリックし、\\ *ビルド*\\ タブを開きます。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
 msgid ""
 "Under **Executable** specify the path to your executable located in the "
 "``<Godot root directory>/bin`` folder. The name depends on your build "
@@ -144,7 +124,6 @@ msgid ""
 "root, e.g: ``%{buildDir}/bin/godot.x11.opt.tools.64``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 #, fuzzy
 msgid ""
 "If you want to run a specific project, specify its root folder under "
@@ -153,7 +132,6 @@ msgstr ""
 "特定のゲームまたはプロジェクトを実行する場合は、\\ *作業ディレクトリ*\\ を"
 "ゲームディレクトリに指定します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 #, fuzzy
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
@@ -162,17 +140,14 @@ msgstr ""
 "エディタを実行する場合は、\\ *コマンドライン引数*\\ フィールドに ``-e`` を追"
 "加します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
 msgstr "コードスタイル設定"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 #, fuzzy
 msgid ""
 "Developers must follow the project's :ref:`code style "
@@ -187,7 +162,6 @@ msgstr ""
 "ん。この動作を変更するには、\\ *オプション* → *C++* の「コードスタイル」を変"
 "更します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 #, fuzzy
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
@@ -198,7 +172,6 @@ msgstr ""
 "タンをクリックして新しいコードスタイルを設定します。名前を設定し(例: Godot)、"
 "タブポリシーを *タブのみ* に変更します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

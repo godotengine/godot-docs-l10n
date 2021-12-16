@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Feature tags"
+msgstr "Теги особенностей"
+
+msgid "Introduction"
+msgstr "Введение"
+
+msgid ""
+"Godot has a special system to tag availability of features. Each *feature* "
+"is represented as a string, which can refer to many of the following:"
+msgstr ""
+"У Godot есть специальная система для тегов особенностей. Каждая "
+"*особенность* представлена в виде строки, которая может ссылаться на многие "
+"из следующих элементов:"
+
+msgid "Platform name."
+msgstr "Название платформы."
+
+msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
+msgstr "Архитектура платформы (64-bit или 32-bit, x86 или ARM)."
+
+msgid "Platform type (desktop, mobile, Web)."
+msgstr "Тип платформы (desktop, mobile, Web)."
+
+msgid "Supported texture compression algorithms on the platform."
+msgstr "Поддерживаемые алгоритмы сжатия текстур на платформе."
+
+msgid ""
+"Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
+msgstr ""
+"Является ли сборка ``debug`` или ``release`` (``debug`` включает редактор)."
+
+msgid ""
+"Whether the project is running from the editor or a \"standalone\" binary."
+msgstr ""
+"Выполняется ли проект из редактора или \"автономного\" двоичного файла."
+
+msgid "Many more things."
+msgstr "И еще много чего."
+
+msgid "Features can be queried at run-time from the singleton API by calling:"
+msgstr ""
+"Особенности можно запрашивать во время выполнения singleton API, вызывая:"
+
+msgid "Default features"
+msgstr "Основные особенности"
+
+msgid ""
+"Here is a list of most feature tags in Godot. Keep in mind they are **case-"
+"sensitive**:"
+msgstr ""
+"Вот список большинства тегов особенностей в Godot. Имейте в виду, что они "
+"**case-sensitive** (чувствительны к регистру):"
+
+msgid "**Feature tag**"
+msgstr "**Тег особенности**"
+
+msgid "**Description**"
+msgstr "**Описание**"
+
+msgid "**Android**"
+msgstr "**Android**"
+
+msgid "Running on Android"
+msgstr "Работает на Android"
+
+msgid "**HTML5**"
+msgstr "**HTML5**"
+
+msgid "Running on HTML5"
+msgstr "Работает на HTML5"
+
+msgid "**JavaScript**"
+msgstr "**JavaScript**"
+
+msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
+msgstr ":ref:`JavaScript singleton <doc_javascript_eval> ` доступен"
+
+msgid "**OSX**"
+msgstr "**OSX**"
+
+msgid "Running on macOS"
+msgstr "Работает на macOS"
+
+msgid "**iOS**"
+msgstr "**iOS**"
+
+msgid "Running on iOS"
+msgstr "Работает на iOS"
+
+msgid "**UWP**"
+msgstr "**UWP**"
+
+msgid "Running on UWP"
+msgstr "Работает на UWP"
+
+msgid "**Windows**"
+msgstr "**Windows**"
+
+msgid "Running on Windows"
+msgstr "Работает на Windows"
+
+msgid "**X11**"
+msgstr "**X11**"
+
+msgid "Running on X11 (Linux/BSD desktop)"
+msgstr "Работает на X11 (Linux/BSD desktop)"
+
+msgid "**Server**"
+msgstr "**Server**"
+
+msgid "Running on the headless server platform"
+msgstr "Работает на the headless server platform"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "Running on a debug build (including the editor)"
+msgstr "Запуск в отладочной сборке (including the editor)"
+
+msgid "**release**"
+msgstr "**release**"
+
+msgid "Running on a release build"
+msgstr "Запуск на релизной сборке"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Running on an editor build"
+msgstr "Запуск в сборке редактора"
+
+msgid "**standalone**"
+msgstr "**standalone**"
+
+msgid "Running on a non-editor build"
+msgstr "Запуск на сборке без редактора"
+
+msgid "**64**"
+msgstr "**64**"
+
+msgid "Running on a 64-bit build (any architecture)"
+msgstr "Запуск на 64-bit сборке (любая архитектура)"
+
+msgid "**32**"
+msgstr "**32**"
+
+msgid "Running on a 32-bit build (any architecture)"
+msgstr "Запуск на 32-bit сборке (любая архитектура)"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "Running on a 64-bit x86 build"
+msgstr "Запуск на 64-bit x86 сборке"
+
+msgid "**x86**"
+msgstr "**x86**"
+
+msgid "Running on a 32-bit x86 build"
+msgstr "Запуск на 32-bit x86 сборке"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "Running on a 64-bit ARM build"
+msgstr "Запуск на 64-bit ARM сборке"
+
+msgid "**arm**"
+msgstr "**arm**"
+
+msgid "Running on a 32-bit ARM build"
+msgstr "Запуск на 32-bit ARM сборке"
+
+msgid "**mobile**"
+msgstr "**mobile**"
+
+msgid "Host OS is a mobile platform"
+msgstr "Host OS - это мобильная платформа"
+
+msgid "**pc**"
+msgstr "**pc**"
+
+msgid "Host OS is a PC platform (desktop/laptop)"
+msgstr "Host OS - это PC платформа (desktop/laptop)"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser"
+msgstr "Host OS - это веб-браузер"
+
+msgid "**etc**"
+msgstr "**etc**"
+
+msgid "Textures using ETC1 compression are supported"
+msgstr "Поддерживаются текстуры с применением сжатия ETC1"
+
+msgid "**etc2**"
+msgstr "**etc2**"
+
+msgid "Textures using ETC2 compression are supported"
+msgstr "Поддерживаются текстуры с применением сжатия ETC2"
+
+msgid "**s3tc**"
+msgstr "**s3tc**"
+
+msgid "Textures using S3TC (DXT/BC) compression are supported"
+msgstr "Поддерживаются текстуры с применением сжатия S3TC (DXT/BC)"
+
+msgid "**pvrtc**"
+msgstr "**pvrtc**"
+
+msgid "Textures using PVRTC compression are supported"
+msgstr "Поддерживаются текстуры с применением сжатия PVRTC"
+
+msgid "Custom features"
+msgstr "Пользовательские особенности"
+
+msgid ""
+"It is possible to add custom features to a build; use the relevant field in "
+"the *export preset* used to generate it:"
+msgstr ""
+"Можно добавить пользовательские особенности в сборку; используйте "
+"соответствующее поле в *export preset*, используемое для их создания:"
+
+msgid "Overriding project settings"
+msgstr "Переопределение параметров проекта"
+
+msgid ""
+"Features can be used to override specific configuration values in the "
+"*Project Settings*. This allows you to better customize any configuration "
+"when doing a build."
+msgstr ""
+"Особенности могут быть использованы для переопределения определенных "
+"значений конфигурации в *Project Settings*. Это позволяет лучше настроить "
+"любую конфигурацию при выполнении сборки."
+
+msgid ""
+"In the following example, a different icon is added for the demo build of "
+"the game (which was customized in a special export preset, which, in turn, "
+"includes only demo levels)."
+msgstr ""
+"В следующем примере для демо-сборки игры добавляется другой значок (который "
+"был настроен в специальном пресете экспорта, который, в свою очередь, "
+"включает только демо-уровни)."
+
+msgid "After overriding, a new field is added for this specific configuration:"
+msgstr ""
+"После переопределения добавляется новое поле для этой специфической "
+"конфигурации:"
+
+msgid ""
+"When using the :ref:`project settings \"override.cfg\" functionality "
+"<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
+"feature tags still apply. Therefore, make sure to *also* override the "
+"setting with the desired feature tag(s) if you want them to override base "
+"project settings on all platforms and configurations."
+msgstr ""
+"При использовании :ref: `настройки проекта \"override.cfg\" функциональности "
+"<class_ProjectSettings>` (которая не связана с тегами функций) помните, что "
+"теги функций все еще применяются. Поэтому не забудьте *также* переопределить "
+"настройку с помощью желаемого тега(-ов) функции, если вы хотите, чтобы они "
+"переопределяли настройки базового проекта на всех платформах и конфигурациях."
+
+msgid "Default overrides"
+msgstr "Основные переопределения"
+
+msgid ""
+"There are already a lot of settings that come with overrides by default; "
+"they can be found in many sections of the project settings."
+msgstr ""
+"Уже существует множество настроек, которые по умолчанию поставляются с "
+"переопределением; их можно найти во многих разделах настроек проекта."
+
+msgid "Customizing the build"
+msgstr "Настройка сборки"
+
+msgid ""
+"Feature tags can be used to customize a build process too, by writing a "
+"custom **ExportPlugin**. They are also used to specify which shared library "
+"is loaded and exported in **GDNative**."
+msgstr ""
+"Теги особенностей также можно использовать для настройки процесса сборки, "
+"написав пользовательский **ExportPlugin**. Они также используются для "
+"указания того, какая общая библиотека загружается и экспортируется в "
+"**GDNative**."

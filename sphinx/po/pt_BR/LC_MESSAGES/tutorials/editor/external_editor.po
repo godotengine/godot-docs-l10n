@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using an external text editor"
+msgstr "Usando um editor de texto externo"
+
+#, fuzzy
+msgid "This page explains how to code using an external text editor."
+msgstr "Usando um editor de texto externo"
+
+msgid ""
+"`External editors are currently incompatible with Godot's \"Sync Script "
+"Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
+msgstr ""
+"`Editores externos atualmente são incompatíveis com o recurso \"Sync Script "
+"Changes\" do Godot. <https://github.com/godotengine/godot/issues/10946>`__"
+
+#, fuzzy
+msgid ""
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
+"Editor Settings -> Text Editor -> External``"
+msgstr ""
+"Godot pode ser usado com um editor de texto externo, como Sublime Text ou "
+"Visual Studio Code. Para ativar um editor de texto externo, vá para: "
+"``Editor -> Configurações do Editor -> Text Editor -> External``"
+
+#, fuzzy
+msgid ""
+"There are two fields: the executable path and command-line flags. The flags "
+"allow you to integrate the editor with Godot, passing it the file path to "
+"open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
+msgstr ""
+"Existem dois campos: o caminho do executável e os sinalizadores da linha de "
+"comando. As sinalizações permitem integrar melhor o editor com o Godot, "
+"passando o caminho do arquivo para abrir e outros argumentos relevantes. O "
+"Godot irá substituir os seguintes espaços reservados dentro do texto da "
+"sinalização:"
+
+msgid "Field in Exec Flags"
+msgstr "Campo em Exec Flags"
+
+msgid "Is replaced with"
+msgstr "É substituído por"
+
+msgid "``{project}``"
+msgstr "``{projeto}``"
+
+msgid "The absolute path to the project directory"
+msgstr "O caminho absoluto para o diretório do projeto"
+
+msgid "``{file}``"
+msgstr "``{arquivo}``"
+
+msgid "The absolute path to the file"
+msgstr "O caminho absoluto para o arquivo"
+
+msgid "``{col}``"
+msgstr "``{coluna}``"
+
+msgid "The column number of the error"
+msgstr "O número da coluna do erro"
+
+msgid "``{line}``"
+msgstr "``{linha}``"
+
+msgid "The line number of the error"
+msgstr "O número da linha do erro"
+
+msgid "Some example Exec Flags for various editors include:"
+msgstr "Alguns exemplos de Exec Flags para vários editores incluem:"
+
+msgid "Editor"
+msgstr "Editor"
+
+msgid "Exec Flags"
+msgstr "Exec Flags"
+
+msgid "Geany/Kate"
+msgstr "Geany/Kate"
+
+msgid "``{file} --line {line} --column {col}``"
+msgstr "``{arquivo} --linha {linha} --coluna {coluna}``"
+
+msgid "Atom/Sublime Text"
+msgstr "Atom/Sublime Text"
+
+msgid "``{file}:{line}``"
+msgstr "``{arquivo}:{linha}``"
+
+msgid "JetBrains Rider"
+msgstr "JetBrains Rider"
+
+msgid "``--line {line} {file}``"
+msgstr "``--line {linha} {arquivo}``"
+
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+msgid "``{project} --goto {file}:{line}:{col}``"
+msgstr "``{projeto} --goto {arquivo}:{linha}:{coluna}``"
+
+msgid "Vim (gVim)"
+msgstr "Vim (gVim)"
+
+msgid "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``\"+call cursor({linha}, {coluna})\" {arquivo}``"
+
+msgid "Emacs"
+msgstr ""
+
+#, fuzzy
+msgid "``emacs +{line}:{col} {file}``"
+msgstr "``\"+call cursor({linha}, {coluna})\" {arquivo}``"
+
+#, fuzzy
+msgid ""
+"For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
+"Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
+"server mode."
+msgstr ""
+"Para Visual Studio Code você precisa apontar para o arquivo ``code.cmd``."
+
+#, fuzzy
+msgid "Official editor plugins"
+msgstr "Plugin oficial do Git"
+
+msgid "We have official plugins for the following code editors:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+#, fuzzy
+msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"

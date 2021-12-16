@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Creating script templates"
+msgstr "Création de modèles de script"
+
+msgid ""
+"Godot provides a way to use script templates as seen in the ``Script Create "
+"Dialog`` while creating a new script:"
+msgstr ""
+"Godot fournit un moyen d'utiliser des modèles de script comme on le voit "
+"dans le ``Script Create Dialog`` lors de la création d'un nouveau script :"
+
+msgid ""
+"A set of default script templates is provided by default, but it's also "
+"possible to modify existing and create new ones, both per project and the "
+"editor."
+msgstr ""
+"Un ensemble de modèles de script est fourni par défaut, mais il est "
+"également possible de modifier les modèles existants et d'en créer de "
+"nouveaux, tant par projet que par éditeur."
+
+msgid "Locating the templates"
+msgstr "Localisation des modèles"
+
+msgid "There are two places where templates can be managed."
+msgstr "Il existe deux endroits où les modèles peuvent être gérés."
+
+msgid "Editor-defined templates"
+msgstr "Modèles définis par l'éditeur"
+
+msgid ""
+"These are available globally throughout any project. The location of these "
+"templates are determined per each OS:"
+msgstr ""
+"Ils sont disponibles à travers tout les projets. L'emplacement de ces "
+"modèles est déterminé pour chaque OS :"
+
+msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows : ``%APPDATA%\\Godot\\script_templates\\``"
+
+msgid "Linux: ``$HOME/.config/godot/script_templates/``"
+msgstr "Linux : ``$HOME/.config/godot/script_templates/``"
+
+msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+msgstr "macOS : ``$HOME/Library/Application Support/Godot/script_templates/``"
+
+msgid ""
+"If no ``script_templates`` is detected, Godot will create a default set of "
+"built-in templates automatically, so this logic can be used to reset the "
+"default templates in case you've accidentally overwritten them."
+msgstr ""
+"Si aucun de ces modèles n'est trouvé, Godot recréera l'ensemble de modèles "
+"par défaut automatiquement, on peut utiliser ça pour réinitialiser l'état "
+"des modèles si vous les avez perdu par accident."
+
+msgid "Project-defined templates"
+msgstr "Modèles définis par le projet (templates)"
+
+msgid ""
+"The default path to search for templates is the ``res://script_templates/`` "
+"directory. The path can be changed by configuring the ``editor/"
+"script_templates_search_path`` setting in the :ref:`ProjectSettings "
+"<class_ProjectSettings>`, both via code and the editor."
+msgstr ""
+"Le chemin par défaut pour rechercher des modèles est le répertoire ``res://"
+"script_templates/``. Le chemin peut être modifié en configurant le paramètre "
+"``editor/script_templates_search_path`` dans le  :ref:`ProjectSettings "
+"<class_ProjectSettings>`, à la fois par code et par l'éditeur."
+
+msgid ""
+"If no ``script_templates`` directory is found within a project, it is simply "
+"ignored."
+msgstr ""
+"Si aucun répertoire ``script_templates`` n'est trouvé dans un projet, il est "
+"simplement ignoré."
+
+msgid "Language support and overriding behavior"
+msgstr "Prise en charge de langage et comportement de réécriture"
+
+msgid ""
+"Depending on whether a particular language implements a way to generate "
+"scripts out of templates, it's possible to create a template which can be "
+"recognized by that language according to template's file extension. For "
+"GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
+msgstr ""
+"Selon qu'un langage particulier met en œuvre une manière de générer des "
+"scripts à partir de modèles ou non, il est possible de créer un modèle qui "
+"puisse être reconnu par ce langage en fonction de l'extension de fichier du "
+"modèle. Pour le GDScript et le C#, les extensions doivent être "
+"respectivement ``gd`` et ``cs``."
+
+msgid ""
+"The script templates have the same extension as the regular script files. "
+"This may lead to an issue of a script parser treating those templates as "
+"actual scripts within a project. To avoid this, make sure to ignore the "
+"directory containing them by creating an empty ``.gdignore`` file. The "
+"directory won't be visible throughout the project's filesystem anymore, yet "
+"the templates can be modified by an external text editor anytime."
+msgstr ""
+"Les modèles de script ont la même extension que les fichiers de script "
+"ordinaires. Cela peut conduire à un problème d'analyseur de script traitant "
+"ces modèles comme des scripts réels dans un projet. Pour éviter cela, "
+"assurez-vous d'ignorer le répertoire qui les contient en créant un fichier "
+"vide ``.gdignore``. Le répertoire ne sera plus visible dans le système de "
+"fichiers du projet, mais les modèles pourront être modifiés par un éditeur "
+"de texte externe à tout moment."
+
+msgid ""
+"The built-in editor templates are automatically shadowed by the project-"
+"specific templates given both scripts have the same filename."
+msgstr ""
+"Les modèles d'éditeur intégrés sont automatiquement remplacés par les "
+"modèles spécifiques au projet, étant donné que les deux scripts ont le même "
+"nom de fichier."
+
+msgid "Default template"
+msgstr "Modèle par défaut"
+
+msgid ""
+"The ``Default`` template is always generated dynamically per language and "
+"cannot be configured nor overridden, but you can use these as the base for "
+"creating other templates."
+msgstr ""
+"Le modèle ``Default`` est toujours généré dynamiquement par langage et ne "
+"peut être ni configuré ni remplacé, mais vous pouvez les utiliser comme base "
+"pour créer d'autres modèles."
+
+msgid "List of template placeholders"
+msgstr "Liste des modèles d'espaces réservés"
+
+msgid ""
+"The following describes the complete list of built-in template placeholders "
+"which are currently implemented."
+msgstr ""
+"Voici la liste complète des modèles d'espaces réservés intégrés qui sont "
+"actuellement implémenté."
+
+msgid "Base placeholders"
+msgstr "Espaces réservés de base"
+
+msgid "Placeholder"
+msgstr "Chaîne substituable"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "``%CLASS%``"
+msgstr "``%CLASS%``"
+
+msgid "The name of the new class (used in C# only)."
+msgstr "Le nom de la nouvelle classe (uniquement utilisé en C#)."
+
+msgid "``%BASE%``"
+msgstr "``%BASE%``"
+
+msgid "The base type a new script inherits from."
+msgstr "Le type de base dont hérite un nouveau script."
+
+msgid "``%TS%``"
+msgstr "``%TS%``"
+
+msgid ""
+"Indentation placeholder. The exact type and number of whitespace characters "
+"used for indentation is determined by the ``text_editor/indent/type`` and "
+"``text_editor/indent/size`` settings in the :ref:`EditorSettings "
+"<class_EditorSettings>` respectively."
+msgstr ""
+"Emplacement réservé d'indentation. Le type et le nombre exact de caractères "
+"d'espacement utilisés pour l'indentation sont déterminés respectivement par "
+"les paramètres ``text_editor/indent/type`` et ``text_editor/indent/size`` "
+"dans les paramètres :ref:`EditorSettings <class_EditorSettings>`."
+
+msgid "Type placeholders"
+msgstr "Type d'espaces réservés"
+
+msgid ""
+"These are only relevant for GDScript with static typing. Whether these "
+"placeholders are actually replaced is determined by the ``text_editor/"
+"completion/add_type_hints`` setting in the :ref:`EditorSettings "
+"<class_EditorSettings>`."
+msgstr ""
+"Elles ne sont pertinentes que pour le GDScript avec typage statique. Le fait "
+"que ces espaces réservés soient effectivement remplacés est déterminé par le "
+"paramètre ``text_editor/completion/add_type_hints`` dans :ref:"
+"`EditorSettings <class_EditorSettings>`."
+
+msgid "Value"
+msgstr "Valeur"
+
+msgid "``%INT_TYPE%``"
+msgstr "``%INT_TYPE%``"
+
+msgid "``: int``"
+msgstr "``: int``"
+
+msgid "``%STRING_TYPE%``"
+msgstr "``%STRING_TYPE%``"
+
+msgid "``: String``"
+msgstr "``: String``"
+
+msgid "``%FLOAT_TYPE%``"
+msgstr "``%FLOAT_TYPE%``"
+
+msgid "``: float``"
+msgstr "``: float``"
+
+msgid "``%VOID_RETURN%``"
+msgstr "``%VOID_RETURN%``"
+
+msgid "``-> void``"
+msgstr "``-> void``"
