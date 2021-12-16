@@ -120,6 +120,7 @@ if [ "$update_weblate_po" = true ]; then
     echo "Merging $po..."
     msgmerge -w 79 "$po" $WEBLATE_TEMPLATE > "$po".new
     mv -f "$po".new "$po"
+    msgattrib --output-file=$po --no-obsolete $po
   done
 fi
 
