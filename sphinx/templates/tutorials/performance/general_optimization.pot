@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/performance/general_optimization.rst:4
+msgid "General optimization tips"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:9
+msgid "In an ideal world, computers would run at infinite speed. The only limit to what we could achieve would be our imagination. However, in the real world, it's all too easy to produce software that will bring even the fastest computer to its knees."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:14
+msgid "Thus, designing games and other software is a compromise between what we would like to be possible, and what we can realistically achieve while maintaining good performance."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:18
+msgid "To achieve the best results, we have two approaches:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:20
+msgid "Work faster."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:21
+msgid "Work smarter."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:23
+msgid "And preferably, we will use a blend of the two."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:26
+msgid "Smoke and mirrors"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:28
+msgid "Part of working smarter is recognizing that, in games, we can often get the player to believe they're in a world that is far more complex, interactive, and graphically exciting than it really is. A good programmer is a magician, and should strive to learn the tricks of the trade while trying to invent new ones."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:34
+msgid "The nature of slowness"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:36
+msgid "To the outside observer, performance problems are often lumped together. But in reality, there are several different kinds of performance problems:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:39
+msgid "A slow process that occurs every frame, leading to a continuously low frame rate."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:41
+msgid "An intermittent process that causes \"spikes\" of slowness, leading to stalls."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:43
+msgid "A slow process that occurs outside of normal gameplay, for instance, when loading a level."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:46
+msgid "Each of these are annoying to the user, but in different ways."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:49
+msgid "Measuring performance"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:51
+msgid "Probably the most important tool for optimization is the ability to measure performance - to identify where bottlenecks are, and to measure the success of our attempts to speed them up."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:55
+msgid "There are several methods of measuring performance, including:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:57
+msgid "Putting a start/stop timer around code of interest."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:58
+msgid "Using the Godot profiler."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:59
+msgid "Using external third-party CPU profilers."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:60
+msgid "Using GPU profilers/debuggers such as `NVIDIA Nsight Graphics <https://developer.nvidia.com/nsight-graphics>`__ or `apitrace <https://apitrace.github.io/>`__."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:63
+msgid "Checking the frame rate (with V-Sync disabled)."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:65
+msgid "Be very aware that the relative performance of different areas can vary on different hardware. It's often a good idea to measure timings on more than one device. This is especially the case if you're targeting mobile devices."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:70
+msgid "Limitations"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:72
+msgid "CPU profilers are often the go-to method for measuring performance. However, they don't always tell the whole story."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:75
+msgid "Bottlenecks are often on the GPU, \"as a result\" of instructions given by the CPU."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:77
+msgid "Spikes can occur in the operating system processes (outside of Godot) \"as a result\" of instructions used in Godot (for example, dynamic memory allocation)."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:79
+msgid "You may not always be able to profile specific devices like a mobile phone due to the initial setup required."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:81
+msgid "You may have to solve performance problems that occur on hardware you don't have access to."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:84
+msgid "As a result of these limitations, you often need to use detective work to find out where bottlenecks are."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:88
+msgid "Detective work"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:90
+msgid "Detective work is a crucial skill for developers (both in terms of performance, and also in terms of bug fixing). This can include hypothesis testing, and binary search."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:95
+msgid "Hypothesis testing"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:97
+msgid "Say, for example, that you believe sprites are slowing down your game. You can test this hypothesis by:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:100
+msgid "Measuring the performance when you add more sprites, or take some away."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:102
+msgid "This may lead to a further hypothesis: does the size of the sprite determine the performance drop?"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:105
+msgid "You can test this by keeping everything the same, but changing the sprite size, and measuring performance."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:109
+msgid "Binary search"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:111
+msgid "If you know that frames are taking much longer than they should, but you're not sure where the bottleneck lies. You could begin by commenting out approximately half the routines that occur on a normal frame. Has the performance improved more or less than expected?"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:116
+msgid "Once you know which of the two halves contains the bottleneck, you can repeat this process until you've pinned down the problematic area."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:120
+msgid "Profilers"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:122
+msgid "Profilers allow you to time your program while running it. Profilers then provide results telling you what percentage of time was spent in different functions and areas, and how often functions were called."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:126
+msgid "This can be very useful both to identify bottlenecks and to measure the results of your improvements. Sometimes, attempts to improve performance can backfire and lead to slower performance. **Always use profiling and timing to guide your efforts.**"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:131
+msgid "For more info about using Godot's built-in profiler, see :ref:`doc_debugger_panel`."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:134
+msgid "Principles"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:136
+msgid "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ said:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:138
+msgid "*Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.*"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:145
+msgid "The messages are very important:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:147
+msgid "Developer time is limited. Instead of blindly trying to speed up all aspects of a program, we should concentrate our efforts on the aspects that really matter."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:150
+msgid "Efforts at optimization often end up with code that is harder to read and debug than non-optimized code. It is in our interests to limit this to areas that will really benefit."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:154
+msgid "Just because we *can* optimize a particular bit of code, it doesn't necessarily mean that we *should*. Knowing when and when not to optimize is a great skill to develop."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:158
+msgid "One misleading aspect of the quote is that people tend to focus on the subquote *\"premature optimization is the root of all evil\"*. While *premature* optimization is (by definition) undesirable, performant software is the result of performant design."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:164
+msgid "Performant design"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:166
+msgid "The danger with encouraging people to ignore optimization until necessary, is that it conveniently ignores that the most important time to consider performance is at the design stage, before a key has even hit a keyboard. If the design or algorithms of a program are inefficient, then no amount of polishing the details later will make it run fast. It may run *faster*, but it will never run as fast as a program designed for performance."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:173
+msgid "This tends to be far more important in game or graphics programming than in general programming. A performant design, even without low-level optimization, will often run many times faster than a mediocre design with low-level optimization."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:179
+msgid "Incremental design"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:181
+msgid "Of course, in practice, unless you have prior knowledge, you are unlikely to come up with the best design the first time. Instead, you'll often make a series of versions of a particular area of code, each taking a different approach to the problem, until you come to a satisfactory solution. It's important not to spend too much time on the details at this stage until you have finalized the overall design. Otherwise, much of your work will be thrown out."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:188
+msgid "It's difficult to give general guidelines for performant design because this is so dependent on the problem. One point worth mentioning though, on the CPU side, is that modern CPUs are nearly always limited by memory bandwidth. This has led to a resurgence in data-oriented design, which involves designing data structures and algorithms for *cache locality* of data and linear access, rather than jumping around in memory."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:196
+msgid "The optimization process"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:198
+msgid "Assuming we have a reasonable design, and taking our lessons from Knuth, our first step in optimization should be to identify the biggest bottlenecks - the slowest functions, the low-hanging fruit."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:202
+msgid "Once we've successfully improved the speed of the slowest area, it may no longer be the bottleneck. So we should test/profile again and find the next bottleneck on which to focus."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:206
+msgid "The process is thus:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:208
+msgid "Profile / Identify bottleneck."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:209
+msgid "Optimize bottleneck."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:210
+msgid "Return to step 1."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:213
+msgid "Optimizing bottlenecks"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:215
+msgid "Some profilers will even tell you which part of a function (which data accesses, calculations) are slowing things down."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:218
+msgid "As with design, you should concentrate your efforts first on making sure the algorithms and data structures are the best they can be. Data access should be local (to make best use of CPU cache), and it can often be better to use compact storage of data (again, always profile to test results). Often, you precalculate heavy computations ahead of time. This can be done by performing the computation when loading a level, by loading a file containing precalculated data or simply by storing the results of complex calculations into a script constant and reading its value."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:227
+msgid "Once algorithms and data are good, you can often make small changes in routines which improve performance. For instance, you can move some calculations outside of loops or transform nested ``for`` loops into non-nested loops. (This should be feasible if you know a 2D array's width or height in advance.)"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:232
+msgid "Always retest your timing/bottlenecks after making each change. Some changes will increase speed, others may have a negative effect. Sometimes, a small positive effect will be outweighed by the negatives of more complex code, and you may choose to leave out that optimization."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:238
+msgid "Appendix"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:241
+msgid "Bottleneck math"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:243
+msgid "The proverb *\"a chain is only as strong as its weakest link\"* applies directly to performance optimization. If your project is spending 90% of the time in function ``A``, then optimizing ``A`` can have a massive effect on performance."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:259
+msgid "In this example, improving this bottleneck ``A`` by a factor of 9× decreases overall frame time by 5× while increasing frames per second by 5×."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:262
+msgid "However, if something else is running slowly and also bottlenecking your project, then the same improvement can lead to less dramatic gains:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:277
+msgid "In this example, even though we have hugely optimized function ``A``, the actual gain in terms of frame rate is quite small."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:280
+msgid "In games, things become even more complicated because the CPU and GPU run independently of one another. Your total frame time is determined by the slower of the two."
+msgstr ""
+
+#: ../../docs/tutorials/performance/general_optimization.rst:296
+msgid "In this example, we optimized the CPU hugely again, but the frame time didn't improve because we are GPU-bottlenecked."
+msgstr ""

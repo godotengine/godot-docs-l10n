@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:4
+msgid "The main game scene"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:6
+msgid "Now it's time to bring everything we did together into a playable game scene."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:8
+msgid "Create a new scene and add a :ref:`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:14
+msgid "Now, add the following nodes as children of ``Main``, and name them as shown (values are in seconds):"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:17
+msgid ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs spawn"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:19
+msgid ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score every second"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:21
+msgid ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before starting"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:23
+msgid ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate the player's start position"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:26
+msgid "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:28
+msgid "``MobTimer``: ``0.5``"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:29
+msgid "``ScoreTimer``: ``1``"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:30
+msgid "``StartTimer``: ``2``"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:32
+msgid "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:36
+msgid "Spawning mobs"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:38
+msgid "The Main node will be spawning new mobs, and we want them to appear at a random location on the edge of the screen. Add a :ref:`Path2D <class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you select ``Path2D``, you will see some new buttons at the top of the editor:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:45
+msgid "Select the middle one (\"Add Point\") and draw the path by clicking to add the points at the corners shown. To have the points snap to the grid, make sure \"Use Grid Snap\" and \"Use Snap\" are both selected. These options can be found to the left of the \"Lock\" button, appearing as a magnet next to some dots and intersecting lines, respectively."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:53
+msgid "Draw the path in *clockwise* order, or your mobs will spawn pointing *outwards* instead of *inwards*!"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:58
+msgid "After placing point ``4`` in the image, click the \"Close Curve\" button and your curve will be complete."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:61
+msgid "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node will automatically rotate and follow the path as it moves, so we can use it to select a random position and direction along the path."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:66
+msgid "Your scene should look like this:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:71
+msgid "Main script"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:73
+msgid "Add a script to ``Main``. At the top of the script, we use ``export (PackedScene)`` to allow us to choose the Mob scene we want to instance."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:152
+msgid "We also add a call to ``randomize()`` here so that the random number generator generates different random numbers each time the game is run:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:192
+msgid "Click the ``Main`` node and you will see the ``Mob Scene`` property in the Inspector under \"Script Variables\"."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:195
+msgid "You can assign this property's value in two ways:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:197
+msgid "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` property ."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:199
+msgid "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob.tscn``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:201
+msgid "Next, select the ``Player`` node in the Scene dock, and access the Node dock on the sidebar. Make sure to have the Signals tab selected in the Node dock."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:204
+msgid "You should see a list of the signals for the ``Player`` node. Find and double-click the ``hit`` signal in the list (or right-click it and select \"Connect...\"). This will open the signal connection dialog. We want to make a new function named ``game_over``, which will handle what needs to happen when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the bottom of the signal connection dialog and click \"Connect\". Add the following code to the new function, as well as a ``new_game`` function that will set everything up for a new game:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:258
+msgid "Now connect the ``timeout()`` signal of each of the Timer nodes (``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. ``StartTimer`` will start the other two timers. ``ScoreTimer`` will increment the score by 1."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:308
+msgid "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random starting location along the ``Path2D``, and set the mob in motion. The ``PathFollow2D`` node will automatically rotate as it follows the path, so we will use that to select the mob's direction as well as its position. When we spawn a mob, we'll pick a random value between ``150.0`` and ``250.0`` for how fast each mob will move (it would be boring if they were all moving at the same speed)."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:316
+msgid "Note that a new instance must be added to the scene using ``add_child()``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:401
+msgid "Why ``PI``? In functions requiring angles, Godot uses *radians*, not degrees. Pi represents a half turn in radians, about ``3.1415`` (there is also ``TAU`` which is equal to ``2 * PI``). If you're more comfortable working with degrees, you'll need to use the ``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:409
+msgid "Testing the scene"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:411
+msgid "Let's test the scene to make sure everything is working. Add this ``new_game`` call to ``_ready()``:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:435
+msgid "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs automatically when the game launches. Press the \"Play\" button and select ``Main.tscn`` when prompted."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:439
+msgid "You should be able to move the player around, see mobs spawning, and see the player disappear when hit by a mob."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:442
+msgid "When you're sure everything is working, remove the call to ``new_game()`` from ``_ready()``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:445
+msgid "What's our game lacking? Some user interface. In the next lesson, we'll add a title screen and display the player's score."
+msgstr ""

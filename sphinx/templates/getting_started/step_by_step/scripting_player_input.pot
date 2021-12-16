@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:8
+msgid "Listening to player input"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:10
+msgid "Building upon the previous lesson, let's look at another important feature of any game: giving control to the player. To add this, we need to modify our code."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:15
+msgid "You have two main tools to process the player's input in Godot:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:17
+msgid "The built-in input callbacks, mainly ``_unhandled_input()``. Like ``_process()``, it's a built-in virtual function that Godot calls every time the player presses a key. It's the tool you want to use to react to events that don't happen every frame, like pressing :kbd:`Space` to jump. To learn more about input callbacks, see :ref:`doc_inputevent`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:22
+msgid "The ``Input`` singleton. A singleton is a globally accessible object. Godot provides access to several in scripts. It's the right tool to check for input every frame."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:26
+msgid "We're going to use the ``Input`` singleton here as we need to know if the player wants to turn or move every frame."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:29
+msgid "For turning, we should use a new variable: ``direction``. Update the top of the ``_process()`` function like so, up to the line where we increment the sprite's ``rotation``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:45
+msgid "Our ``direction`` local variable is a multiplier representing the direction in which the player wants to turn. A value of ``0`` means the player isn't pressing the left or the right arrow key. A value of ``1`` means the player wants to turn right, and ``-1`` means they want to turn left."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:50
+msgid "To produce these values, we introduce conditions and the use of ``Input``. A condition starts with the ``if`` keyword in GDScript and ends with a colon. The condition is the expression between the keyword and the end of the line."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:54
+msgid "To check if a key was pressed this frame, we call ``Input.is_action_pressed()``. The method takes a text string representing an input action and returns ``true`` if the action is pressed, ``false`` otherwise."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:58
+msgid "The two actions we use above, \"ui_left\" and \"ui_right\", are predefined in every Godot project. They respectively trigger when the player presses the left and right arrows on the keyboard or left and right on a gamepad's D-pad."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:62
+msgid "You can see and edit input actions in your project by going to Project -> Project Settings and clicking on the Input Map tab."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:65
+msgid "Finally, we use the ``direction`` as a multiplier when we update the node's ``rotation``: ``rotation += angular_speed * direction * delta``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:68
+msgid "If you run the scene with this code, the icon should rotate when you press :kbd:`Left` and :kbd:`Right`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:72
+msgid "Moving when pressing \"up\""
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:74
+msgid "To only move when pressing a key, we need to modify the code that calculates the velocity. Replace the line starting with ``var velocity`` with the code below."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:86
+msgid "We initialize the ``velocity`` with a value of ``Vector2.ZERO``, another constant of the built-in ``Vector`` type representing a 2D vector of length 0."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:89
+msgid "If the player presses the \"ui_up\" action, we then update the velocity's value, causing the sprite to move forward."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:92
+msgid "Here is the complete ``Sprite2D.gd`` file for reference."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:118
+msgid "If you run the scene, you should now be able to rotate with the left and right arrow keys and move forward by pressing :kbd:`Up`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:124
+msgid "Summary"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:126
+msgid "In summary, every script in Godot represents a class and extends one of the engine's built-in classes. The node types your classes inherit from give you access to properties like ``rotation`` and ``position`` in our sprite's case. You also inherit many functions, which we didn't get to use in this example."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:131
+msgid "In GDScript, the variables you put at the top of the file are your class's properties, also called member variables. Besides variables, you can define functions, which, for the most part, will be your classes' methods."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:135
+msgid "Godot provides several virtual functions you can define to connect your class with the engine. These include ``_process()``, to apply changes to the node every frame, and ``_unhandled_input()``, to receive input events like key and button presses from the users. There are quite a few more."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:140
+msgid "The ``Input`` singleton allows you to react to the players' input anywhere in your code. In particular, you'll get to use it in the ``_process()`` loop."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:143
+msgid "In the next lesson, we'll build upon"
+msgstr ""
