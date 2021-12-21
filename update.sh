@@ -6,21 +6,16 @@ IFS=$'\n\t'
 # Defines
 SOURCE_DIR="docs"
 SPHINX_TEMPLATES_DIR="sphinx/templates"
-mkdir -p "$SPHINX_TEMPLATES_DIR/classes"
 # This variant comes ordered alphabetically instead of following the TOC, not nice for translators
 #SPHINX_TEMPLATES=$(find $SPHINX_TEMPLATES_DIR -type f -name "*.pot")
 # This one is manually maintained, see --templates-list switch
-SPHINX_TEMPLATES_DOCS=$(sed -e 's@^@'$SPHINX_TEMPLATES_DIR'/@' templates_list.txt)
-SPHINX_TEMPLATES_CLASSES=$(find "$SPHINX_TEMPLATES_DIR/classes" -type f -name "*.pot")
+SPHINX_TEMPLATES=$(sed -e 's@^@'$SPHINX_TEMPLATES_DIR'/@' templates_list.txt)
 SPHINX_PO_DIR="sphinx/po"
 SPHINX_BUILD_LANGS=$(cat build_langs.txt)
 
-WEBLATE_DIR="weblate/docs"
+WEBLATE_DIR="weblate"
 WEBLATE_TEMPLATE="$WEBLATE_DIR/docs.pot"
 WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po" | sort)
-
-CLASSES_DIR="weblate/classes"
-CLASSES_POFILES=$(find $CLASSES_DIR -type f -name "*.po" | sort)
 
 # Used only for --add-langs - languages will mostly be added via Weblate directly
 LANGS="es fr zh_CN"
@@ -95,8 +90,7 @@ if [ "$update_sphinx_pot" = true ]; then
   echo "=== Updating Sphinx templates from source rst files ==="
   rm -rf $SPHINX_TEMPLATES_DIR
   make -C $SOURCE_DIR gettext
-  SPHINX_TEMPLATES_DOCS=$(sed -e 's@^@'$SPHINX_TEMPLATES_DIR'/@' templates_list.txt)
-  SPHINX_TEMPLATES_CLASSES=$(find "$SPHINX_TEMPLATES_DIR/classes" -type f -name "*.pot")
+  SPHINX_TEMPLATES=$(find $SPHINX_TEMPLATES_DIR -type f -name "*.pot")
 fi
 
 # Generate/Update Weblate monolithic template from Sphinx template
@@ -109,7 +103,7 @@ if [ "$update_weblate_pot" = true ]; then
   if [ ! -d "$WEBLATE_DIR" ]; then
     mkdir $WEBLATE_DIR
   fi
-  msgcat -o $WEBLATE_TEMPLATE $SPHINX_TEMPLATES_DOCS
+  msgcat -o $WEBLATE_TEMPLATE $SPHINX_TEMPLATES
   sed -i 's@Report-Msgid-Bugs-To: [^"]*@Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\\n@' $WEBLATE_TEMPLATE
 fi
 
@@ -134,38 +128,23 @@ if [ "$add_langs" = true ]; then
   WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po")
 fi
 
-# Generate/Merge Sphinx PO files from Weblate PO files
+# Generate/Merge Sphinx PO files from Weblate PO file
 if [ "$update_sphinx_po" = true ]; then
-  echo "=== Merging Sphinx PO files with their template and Weblate PO files ==="
+  echo "=== Merging Sphinx PO files with their template and Weblate PO file ==="
   # First clean previous folder to take into account potentially removed files
   rm -rf $SPHINX_PO_DIR
   mkdir $SPHINX_PO_DIR
   for lang in $SPHINX_BUILD_LANGS; do
+    po=$WEBLATE_DIR"/$lang.po"
+    echo "Merging $po..."
     langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
     mkdir -p "$langdir"
-
-    po_docs=$WEBLATE_DIR"/$lang.po"
-    echo "Merging $po_docs..."
-    for template in $SPHINX_TEMPLATES_DOCS; do
+    for template in $SPHINX_TEMPLATES; do
       page=$(basename "$template" .pot)
       dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
       mkdir -p "$dirpath"
       output="$dirpath/$page.po"
-      msgmerge --lang="$lang" --no-location -C "$po_docs" "$template" "$template" -o "$output" &
-    done
-
-    po_classes=$CLASSES_DIR"/$lang.po"
-    if [ ! -f "$po_classes" ]; then
-      echo "No file at $po_classes, skipping."
-      continue
-    fi
-    echo "Merging $po_classes..."
-    for template in $SPHINX_TEMPLATES_CLASSES; do
-      page=$(basename "$template" .pot)
-      dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
-      mkdir -p "$dirpath"
-      output="$dirpath/$page.po"
-      msgmerge --lang="$lang" --no-location -C "$po_classes" "$template" "$template" -o "$output" &
+      msgmerge --lang="$lang" --no-location -C "$po" "$template" "$template" -o "$output"
     done
   done
 fi
