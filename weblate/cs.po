@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-12-16 15:51+0100\n"
-"PO-Revision-Date: 2021-12-16 14:21+0000\n"
+"PO-Revision-Date: 2021-12-18 14:25+0000\n"
 "Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -3747,9 +3747,8 @@ msgstr "Vaše první Shader série :"
 
 #: ../../docs/about/docs_changelog.rst:53
 #: ../../docs/about/docs_changelog.rst:177
-#, fuzzy
 msgid ":ref:`doc_introduction_to_shaders`"
-msgstr ":ref:`doc_introduction_best_practices`"
+msgstr ":ref:`doc_introduction_to_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
@@ -3876,9 +3875,8 @@ msgid ":ref:`doc_signals`"
 msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:110
-#, fuzzy
 msgid ":ref:`doc_exporting_basics`"
-msgstr ":ref:`doc_exporting`"
+msgstr ":ref:`doc_exporting_basics`"
 
 #: ../../docs/about/docs_changelog.rst:115
 msgid ":ref:`doc_gdscript_static_typing`"
@@ -3996,9 +3994,8 @@ msgid ":ref:`doc_custom_postprocessing`"
 msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:172
-#, fuzzy
 msgid ":ref:`doc_converting_glsl_to_godot_shaders`"
-msgstr ":ref:`doc_migrating_to_godot_shader_language`"
+msgstr ":ref:`doc_converting_glsl_to_godot_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:173
 msgid ":ref:`doc_advanced_postprocessing`"
@@ -4761,9 +4758,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:4
-#, fuzzy
 msgid "Introduction to Godot"
-msgstr "Úvod do uzlů CSG"
+msgstr "Úvod do Godota"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:6
 msgid ""
@@ -4780,9 +4776,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
-#, fuzzy
 msgid "What is Godot?"
-msgstr "Co je to pokoj?"
+msgstr "Co je Godot?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:17
 msgid ""
@@ -4841,21 +4836,19 @@ msgid "`April 2020 mobile showcase`_"
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:53
-#, fuzzy
 msgid "How does it work and look?"
-msgstr "Jak vytvořím místnost?"
+msgstr "Jak funguje a vypadá?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:55
-#, fuzzy
 msgid ""
 "Godot comes with a fully-fledged game editor with integrated tools to answer "
 "the most common needs. It includes a code editor, an animation editor, a "
 "tilemap editor, a shader editor, a debugger, a profiler, and more."
 msgstr ""
-"Godot se snaží poskytnout své vlastní nástroje k řešení nejběžnějších "
-"potřeb. Má vyhrazený skriptovací pracovní prostor, animační editor, tilemap "
-"editor, shader editor, debugger, profiler, schopnost znovu se načíst lokálně "
-"a na vzdálených zařízeních atd."
+"Godot obsahuje plnohodnotný herní editor s integrovanými nástroji k řešení "
+"nejběžnějších úkolů. Má vyhrazený skriptovací pracovní prostor, animační "
+"editor, tilemap editor, shader editor, debugger, profiler, schopnost znovu "
+"se načíst lokálně a na vzdálených zařízeních atd."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:61
 msgid ""
@@ -4874,9 +4867,8 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:73
 #: ../../docs/tutorials/scripting/index.rst:12
-#, fuzzy
 msgid "Programming languages"
-msgstr "Jiné jazyky"
+msgstr "Programovací jazyky"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:75
 msgid "Let's talk about the available programming languages."
@@ -4891,11 +4883,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:82
-#, fuzzy
 msgid ""
 "Godot also supports a node-based visual programming language named :ref:"
 "`VisualScript <toc-learn-scripting-visual_script>`."
-msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
+msgstr ""
+"Godot také podporuje vizuální programovací jazyk založený na uzlech s "
+"názvem :ref:`VisualScript <toc-learn-scripting-visual_script>`."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:85
 msgid ""
@@ -5074,13 +5067,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:78
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the *observer* pattern. You can read more "
 "about it here: https://gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Více informací o vzoru Observer najdete zde: https://gameprogrammingpatterns."
-"com/observer.html"
+"Signály jsou Godotovou verzí vzoru *Observer(pozorovatel)* .Více informací o "
+"vzoru Observer najdete zde: https://gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:82
 msgid ""
@@ -5130,9 +5122,8 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:40
-#, fuzzy
 msgid "First look at Godot's editor"
-msgstr "Váš první pohled na Godotův editor"
+msgstr "Váš první pohled na Godot editor"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:12
 msgid ""
@@ -5147,21 +5138,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:19
-#, fuzzy
 msgid "The Project manager"
 msgstr "Správce projektu"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:21
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab, \"Projects,\" you can manage existing projects, import or "
 "create new ones, and more."
 msgstr ""
-"Když spustíte Godot, první okno, které uvidíte, je Správce projektu. Protože "
-"nemáte žádné projekty, objeví se vyskakovací okno s dotazem, zda chcete "
-"otevřít knihovnu zdrojů, stačí kliknout na tlačítko Zrušit, podíváme se na "
-"to později."
+"Po spuštění Godotu se jako první zobrazí okno Správce projektu. Na výchozí "
+"kartě \"Projekty,\" můžete spravovat stávající projekty, importovat nebo "
+"vytvářet nové a další."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:27
 msgid ""
@@ -5190,14 +5178,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:52
-#, fuzzy
 msgid ""
 "In the center is the **viewport** with its **toolbar** at the top, where "
 "you'll find tools to move, scale, or lock the scene's nodes."
 msgstr ""
-"Uprostřed máte nahoře **Nástrojový pruh**, kde najdete nástroje pro přesun, "
-"škálování nebo zamknutí objektů scény. Mění se při přechodu na různé "
-"pracovní plochy."
+"Uprostřed se nachází **výřez** s **panelem nástrojů** v horní části, kde "
+"najdete nástroje pro přesouvání, škálování nebo uzamykání uzlů scény."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:57
 msgid ""
@@ -5230,15 +5216,14 @@ msgid "The **Inspector** allows you to edit the properties of a selected node."
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:81
-#, fuzzy
 msgid ""
 "The **bottom panel**, situated below the viewport, is the host for the debug "
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"**Dolní Panel** je hostitelem pro ladicí konzole, editor animace, audio "
-"mixer ... Tyto panely sou široké a mohou zabírat drahocenný prostor. To je "
-"důvod, proč jsou ve výchozím nastavení složeny."
+"**Dolní Panel**, situovaný pod výřezem, hostí ladicí konzoly, editor "
+"animace, audio mixer ... Tyto panely sou široké a mohou zabírat drahocenný "
+"prostor. To je důvod, proč jsou ve výchozím nastavení složeny."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:87
 msgid ""
@@ -5251,7 +5236,6 @@ msgid "The four main screens"
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:94
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
@@ -5260,28 +5244,23 @@ msgstr ""
 "AssetLib."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:97
-#, fuzzy
 msgid ""
 "You'll use the **2D screen** for all types of games. In addition to 2D "
 "games, the 2D screen is where you'll build your interfaces."
 msgstr ""
 "Pracovní plochu **2D** budete používat pro všechny typy her. Kromě 2D her je "
 "2D pracoviště také místem, kde budete vytvářet uživatelské rozhraní pro vaše "
-"hry. Pro rychlý přístup stiskněte klávesy :kbd:`Ctrl+F1` (nebo :kbd:`Alt + "
-"1` v systému MacOS)."
+"hry."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:102
-#, fuzzy
 msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
 msgstr ""
 "Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
-"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`Ctrl + F2` (nebo :"
-"kbd:`Alt + 2` v systému MacOS) ."
+"úrovní pro 3D hry."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:107
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar. Clicking on it opens a list "
 "of options related to the 3D view."
@@ -5290,7 +5269,6 @@ msgstr ""
 "možností souvisejících s 3D pohledem."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:112
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
 "screen**."
@@ -5305,7 +5283,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:120
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open-source add-ons, "
 "scripts, and assets to use in your projects."
@@ -5319,24 +5296,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:129
-#, fuzzy
 msgid "Integrated class reference"
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Integrovaná reference třídy"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:131
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Godot je vybaven integrovanou dokumentací pro třídy."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:133
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Chcete-li hledat informace o třídě, metodě, vlastnosti, konstantě nebo "
-"signálu v enginu během psaní skriptu, stiskněte tlačítko \"Hledat Nápověda\" "
-"v pravém horním rohu pracovní plochy skriptu."
+"Informace o třídě, metodě, vlastnosti, konstantě nebo signálu můžete "
+"vyhledat některou z následujících metod:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:136
 msgid ""
@@ -5372,9 +5345,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:8
-#, fuzzy
 msgid "Learning new features"
-msgstr "Seznam vlastností"
+msgstr "Učení se novým funkcím"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:10
 msgid ""
@@ -5584,9 +5556,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:145
-#, fuzzy
 msgid "Community tutorials"
-msgstr "Kurz příkazového řádku"
+msgstr "Tutoriály pro komunitu"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:147
 msgid ""
@@ -5603,7 +5574,6 @@ msgid "Godot's design philosophy"
 msgstr "Filozofie návrhu Godota"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:6
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
 msgstr ""
 "Teď, když jste si ušpinili ruce, pojďme si promluvit o tom, jak byl Godot "
@@ -5635,13 +5605,12 @@ msgstr ""
 "vyzkoušet a pochopit jeho konstrukci a omezení."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:19
-#, fuzzy
 msgid ""
 "Please watch `Godot explained in 5 minutes <https://www.youtube.com/watch?"
 "v=KjX5llYZ5eQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"Podívejte se prosím na `Discover Godot 3, herní engine zdarma <https://youtu."
-"be/4v3qge-3CqQ>`_, pokud hledáte přehled funkcí enginu."
+"Pokud hledáte přehled funkcí enginu, podívejte se prosím na `Godot "
+"vysvětlený v 5 minutách <https://www.youtube.com/watch?v=KjX5llYZ5eQ>`_."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:24
 msgid "Object-oriented design and composition"
@@ -5719,7 +5688,6 @@ msgid "|image0|"
 msgstr "| image0 |"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:52
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -5729,8 +5697,9 @@ msgid ""
 msgstr ""
 "Také si všimněte, že Godot nabízí mnoho různých typů objektů zvaných uzly, "
 "každý se specifickým účelem. Uzly jsou součástí stromu a vždy dědí od svých "
-"rodičů až do základní třídy Node. Ačkoliv engine obsahuje komponenty, jako "
-"jsou kolizní tvary, tyto jsou výjimkou, nikoli normou."
+"rodičů až po základní třídu Node. Ačkoli engine obsahuje některé uzly, jako "
+"jsou kolizní tvary, které jsou využívány rodičovským uzlem, zde fyzikálním "
+"tělesem (physic body), většina uzlů pracuje nezávisle na sobě."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:58
 msgid ""
@@ -5753,7 +5722,6 @@ msgid "|image1|"
 msgstr "| image1 |"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:63
-#, fuzzy
 msgid ""
 "Sprite2D is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
@@ -5806,7 +5774,6 @@ msgstr ""
 "`Tiled Map Importer <https://github.com/vnen/godot-tiled-importer>`__."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:82
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDScript "
 "and VisualScript, along with C#. They're designed for the needs of game "
@@ -5818,7 +5785,6 @@ msgstr ""
 "a návrhářů her a jsou pevně integrovány do enginu a editoru."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:87
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
@@ -6077,9 +6043,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Uzly a zdroje"
+msgstr "Uzly a scény"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -6096,32 +6061,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:21
-#, fuzzy
 msgid "All nodes have the following attributes:"
-msgstr "Existují následující omezení:"
+msgstr "Všechny uzly mají následující atributy:"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:23
-#, fuzzy
 msgid "A name."
-msgstr "Název akce"
+msgstr "Jméno."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:24
-#, fuzzy
 msgid "Editable properties."
-msgstr "Má editovatelné vlastnosti."
+msgstr "Editovatelné vlastnosti."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:25
-#, fuzzy
 msgid "They receive callbacks to update every frame."
 msgstr "Může obdržet pokyn (callback), aby zpracoval každý snímek (frame)."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:26
-#, fuzzy
 msgid "You can extend them with new properties and functions."
-msgstr "Může být rozšířen o další funkce."
+msgstr "Můžete je rozšířit o nové vlastnosti a funkce."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:27
-#, fuzzy
 msgid "You can add them to another node as a child."
 msgstr "Může být přidán do dalšího uzlu jako jeho potomek."
 
@@ -6152,7 +6111,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:51
-#, fuzzy
 msgid ""
 "The Godot editor essentially is a **scene editor**. It has plenty of tools "
 "for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
@@ -6162,7 +6120,10 @@ msgid ""
 msgstr ""
 "V podstatě je editor Godotu **editorem scén**. Má spoustu nástrojů pro "
 "editaci 2D a 3D scén a uživatelských rozhraní, ale editor sám je založen na "
-"konceptu úpravy scény a uzlů, které tu scénu tvoří."
+"konceptu úpravy scény a uzlů, které tu scénu tvoří. Projekt v Godot může "
+"obsahovat tolik těchto scén, kolik potřebujete. Engine vyžaduje pouze jednu "
+"jako **hlavní scénu** vaší aplikace. Tuto scénu Godot načte jako první, když "
+"vy nebo hráč spustíte hru."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:57
 msgid "On top of acting like nodes, scenes have the following attributes:"
@@ -6183,9 +6144,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:65
-#, fuzzy
 msgid "Creating your first scene"
-msgstr "Vytváření klidové polohy"
+msgstr "Vytvoření vaší první scény"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:67
 msgid ""
@@ -6195,7 +6155,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:73
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
@@ -6217,7 +6176,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:82
-#, fuzzy
 msgid ""
 "Press the \"Add Child Node\" button at the top left of the Scene dock to "
 "create a node. This button adds the chosen node as a child of the currently "
@@ -6230,11 +6188,10 @@ msgstr ""
 "uzel)."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:88
-#, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
 "Otevře se dialog Vytvořit uzel, kde se zobrazí dlouhý seznam uzlů, které lze "
-"vytvořit:"
+"vytvořit."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:92
 msgid "Select the Label node. You can type its name to filter down the list."
@@ -6256,18 +6213,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:107
-#, fuzzy
 msgid "Changing a node's properties"
-msgstr "Signály a vlastnosti"
+msgstr "Změna vlastností uzlu"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:109
-#, fuzzy
 msgid ""
 "The next step is to change the Label's \"Text\" property. Let's change it to "
 "\"Hello World\"."
 msgstr ""
 "Dalším krokem bude změna vlastnosti „Text“ popisku. Pojďme to změnit na "
-"„Hello World“:"
+"„Hello World“."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:112
 msgid ""
@@ -6292,18 +6247,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:130
-#, fuzzy
 msgid "Running the scene"
-msgstr "Spuštění hry"
+msgstr "Spuštění scény"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:132
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6`."
 msgstr ""
 "Dobře, všechno je připraveno na spuštění scény! Stiskněte tlačítko Přehrát "
-"scénu na horním panelu (nebo stiskněte :kbd:`F6`):"
+"scénu na horním panelu (nebo stiskněte :kbd:`F6`)."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:137
 msgid "A popup invites you to save the scene, which is required to run it."
@@ -6335,7 +6288,6 @@ msgid "Close the window or press :kbd:`F8` to quit the running scene."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:160
-#, fuzzy
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to Project -> Project Settings -> Display -> Window "
@@ -6346,7 +6298,6 @@ msgstr ""
 "poté povolte **Povolit Hidpi** pod **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:165
-#, fuzzy
 msgid "Setting the main scene"
 msgstr "Nastavení hlavní scény"
 
@@ -6388,9 +6339,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
-#, fuzzy
 msgid "Creating instances"
-msgstr "Úpravy instancí"
+msgstr "Vytváření instancí"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:6
 msgid ""
@@ -6439,28 +6389,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
-#, fuzzy
 msgid "In practice"
 msgstr "Osvědčené postupy"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:41
-#, fuzzy
 msgid ""
 "Let's use instancing in practice to see how it works exactly in Godot. We "
 "invite you to download the ball's sample project we prepared for you: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Chcete-li se dozvědět, jak funguje vytváření instancí, začněte stažením "
-"ukázkového projektu: :download:`instancing.zip <files / instancing.zip>`."
+"Chcete-li se dozvědět, jak v Godotu funguje vytváření instancí, začněte "
+"stažením ukázkového projektu ball, který jsme pro vás připravili: :download:"
+"`instancing.zip <files / instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:45
-#, fuzzy
 msgid ""
 "Extract the archive on your computer. Then, open Godot, and in the project "
 "manager, click the Import button to import the project."
 msgstr ""
 "Rozbalte tento projekt kdekoli chcete. Pak otevřete Godot a přidejte tento "
-"projekt do projektového manažera pomocí tlačítka \"Importovat\":"
+"projekt do projektového manažera pomocí tlačítka \"Importovat\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:50
 msgid ""
@@ -6496,9 +6444,8 @@ msgid "Double-click the ball scene to instance it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:79
-#, fuzzy
 msgid "The ball appears in the top-left corner of the viewport."
-msgstr "Logo se objeví v horní části obrazovky."
+msgstr "Koule se zobrazí v levém horním rohu okna zobrazení."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:83
 msgid "Click on it and drag it towards the center of the view."
@@ -6516,10 +6463,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:95
-#, fuzzy
 msgid "You can repeat this process until you have several in the scene."
-msgstr ""
-"Šedé uzly nelze přejmenovat. To vám říká, že pocházejí z rodičovské scény"
+msgstr "Tento postup můžete opakovat, dokud jich na scéně nebude několik."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
@@ -6529,9 +6474,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
-#, fuzzy
 msgid "Editing scenes and instances"
-msgstr "Úpravy instancí"
+msgstr "Úpravy scén a instancí"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:106
 msgid "There is more to instances. With this feature, you can:"
@@ -6592,7 +6536,6 @@ msgid "A grey \"revert\" button appears next to the adjusted property."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:145
-#, fuzzy
 msgid ""
 "This icon indicates you are overriding a value from the source packed scene. "
 "Even if you modify the property in the original scene, the value override "
@@ -6601,10 +6544,11 @@ msgid ""
 msgstr ""
 "Všimněte si, že vedle upravené vlastnosti se zobrazí šedé tlačítko "
 "„obnovit“. Je-li toto tlačítko k dispozici, znamená to, že jste v instanci "
-"scény upravili vlastnost tak, aby přepsala svoji hodnotu v uložených "
-"vlastnostech scény. I když je tato vlastnost modifikována ve scéně původni, "
-"zde zůstane upravená hodnota. Stisknutím tlačítka pro obnovení vrátíte "
-"vlastnost na hodnotu v uložené scéně."
+"scény upravili vlastnost originální scény tj tak, aby přepsala svoji hodnotu "
+"v uložených vlastnostech upravené scény. I když je tato vlastnost "
+"modifikována ve scéně původni, zde v instanci zůstane hodnota upravená . "
+"Stisknutím tlačítka pro obnovení vrátíte vlastnost na hodnotu v uložené "
+"scéně."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:150
 msgid ""
@@ -6647,23 +6591,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:173
-#, fuzzy
 msgid "For example, you could break down a shooter game like so:"
 msgstr "Například takhle by se dala představit jednoduchá střílečka:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:177
-#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any type of game. Each "
 "rectangle represents an entity that's visible in the game from the player's "
 "perspective. The arrows tell you which scene owns which."
 msgstr ""
 "S takovým diagramem můžete přijít pro téměř jakoukoli hru. Zakreslete si ty "
-"části hry, které si můžete vizualizovat, a poté přidejte šipky znázorňující "
-"vlastnictví jedné komponenty druhou."
+"části hry, které jsou viditelné z perspektivy hráče, a poté přidejte šipky "
+"znázorňující vlastnictví jednoho objektu druhým."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:181
-#, fuzzy
 msgid ""
 "Once you have a diagram, we recommended creating a scene for each element "
 "listed in it to develop your game. You'll use instancing, either by code or "
@@ -6671,10 +6612,10 @@ msgid ""
 msgstr ""
 "Jakmile budete mít schéma, doporučeným postupem pro tvorbu hry je vytvoření "
 "scény pro každý prvek uvedený v diagramu. Pro vlastnické vztahy použijete "
-"vytváření instancí (buď kódem ve skriptu nebo přímo v editoru)."
+"vytváření instancí buď kódem ve skriptu nebo přímo v editoru. Takto vznikne "
+"strom scén."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:185
-#, fuzzy
 msgid ""
 "Programmers tend to spend a lot of time designing abstract architectures and "
 "trying to fit components into it. Designing based on scenes makes "
@@ -6692,13 +6633,12 @@ msgstr ""
 "rozšiřování architektury kódem není většinou potřeba."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:191
-#, fuzzy
 msgid ""
 "Here's the example of a scene diagram for an open-world game with tons of "
 "assets and nested elements:"
 msgstr ""
-"Podívejme se na další, poněkud složitější příklad hry typu open-world se "
-"spoustou zdrojů a vnořených prvků:"
+"Podívejme se na další příklad hry typu otevřený-svět se spoustou zdrojů a "
+"vnořených prvků:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:196
 msgid ""
@@ -6711,7 +6651,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:202
-#, fuzzy
 msgid ""
 "Later, we could create scenes representing guards and add them to the "
 "citadel. They would be indirectly added to the overall game world."
@@ -6721,7 +6660,6 @@ msgstr ""
 "celého herního světa."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:205
-#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instantiate more scenes. We designed the editor to be "
@@ -6743,11 +6681,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:217
-#, fuzzy
 msgid "The ability to divide your game into reusable components."
-msgstr ""
-"Přeměňte lištu a počítadlo na opakovaně použitelné komponenty uživatelského "
-"rozhraní"
+msgstr "Možnost rozdělit hru na opakovaně použitelné komponenty."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:218
 msgid "A tool to structure and encapsulate complex systems."
@@ -6759,9 +6694,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:7
-#, fuzzy
 msgid "Scripting languages"
-msgstr "Skriptování scény"
+msgstr "Skriptovací jazyky"
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:9
 msgid ""
@@ -6812,9 +6746,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:41
-#, fuzzy
 msgid "Which language should I use?"
-msgstr "Co je GDScript a proč bych jej měl používat?"
+msgstr "Jaký jazyk mám použít?"
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:43
 msgid ""
@@ -6873,7 +6806,6 @@ msgid "Blazing fast compilation and loading times."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:69
-#, fuzzy
 msgid ""
 "Tight editor integration, with code completion for nodes, signals, and more "
 "information from the scene it's attached to."
@@ -6882,16 +6814,15 @@ msgstr ""
 "kódu pro uzly, signály a ostaní prvky právě editované scény."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:71
-#, fuzzy
 msgid ""
 "Built-in vector and transform types, making it efficient for heavy use of "
 "linear algebra, a must for games."
 msgstr ""
 "Má vestavěné vektorové typy (například vektory, transformace atd.), Díky "
-"čemuž je efektivní pro náročné použití lineární algebry."
+"tomuto je efektivní pro náročné použití lineární algebry, což je pro hry "
+"nezbytné."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:73
-#, fuzzy
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages. This "
 "is one of the features we couldn't provide easily with a third-party "
@@ -6947,7 +6878,6 @@ msgid ".NET / C#"
 msgstr ".NET / C #"
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:105
-#, fuzzy
 msgid ""
 "As Microsoft's `C# <https://en.wikipedia.org/wiki/"
 "C_Sharp_(programming_language)>`_ is a favorite amongst game developers, we "
@@ -6955,12 +6885,13 @@ msgid ""
 "libraries written for it. We could add support for it thanks to a generous "
 "donation from Microsoft."
 msgstr ""
-"Protože Microsoft C # je mezi vývojáři her oblíbený, přidali jsme pro něj "
-"oficiální podporu. C # je vyspělý jazyk ve kterém jsou napsány tuny aplikaci "
-"a podpora byla přidána díky štědrému daru od společnosti Microsoft."
+"Protože Microsoft `C# <https://en.wikipedia.org/wiki/"
+"C_Sharp_(programming_language)>`_ je mezi vývojáři her oblíbený, přidali "
+"jsme pro něj oficiální podporu. C # je vyspělý jazyk ve kterém jsou napsány "
+"tuny aplikaci a podpora byla přidána díky štědrému daru od společnosti "
+"Microsoft."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:113
-#, fuzzy
 msgid ""
 "C# offers a good tradeoff between performance and ease of use, although you "
 "should be aware of its garbage collector."
@@ -6976,7 +6907,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:120
-#, fuzzy
 msgid ""
 "Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
 "theory, you can use any third-party .NET library or framework in Godot, as "
@@ -7035,35 +6965,31 @@ msgid "C and C++ via GDNative"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:156
-#, fuzzy
 msgid ""
 "GDNative allows you to write game code in C or C++ without needing to "
 "recompile or even restart Godot."
 msgstr ""
-"A konečně, jeden z našich nejzářivějších přídavků pro verzi 3.0: GDNative "
-"umožňuje skriptování v C ++, aniž by bylo nutné překompilovat (nebo dokonce "
-"restartovat) Godota."
+"GDNative umožňuje skriptování v C ++, aniž by bylo nutné překompilovat (nebo "
+"dokonce restartovat) Godota."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:161
-#, fuzzy
 msgid ""
 "You can use any version of the language or mix compiler brands and versions "
 "for the generated shared libraries, thanks to our use of an internal C API "
 "Bridge."
 msgstr ""
 "Lze použít libovolnou verzi C ++ a mix kompilátorů či verzí pro vygenerované "
-"sdílené knihovny funguje perfektně díky našemu použití interního C API."
+"sdílené knihovny funguje perfektně díky našemu použití interního C API "
+"můstku."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:164
-#, fuzzy
 msgid ""
 "This language is the best choice for performance. You don't need to use it "
 "throughout an entire game, as you can write other parts in GDScript, C#, or "
 "VisualScript."
 msgstr ""
 "Tento jazyk je nejlepší volbou pro výkon a nemusí být používán v celé hře, "
-"další části lze psát v GDScriptu nebo Visual Scriptu. Nicméně, API je čisté "
-"a snadno se používá, většinou se totiž podobá Godotovu skutečnému C ++ API."
+"další části lze psát v GDScriptu, C# nebo Visual Scriptu."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:168
 msgid ""
@@ -7090,9 +7016,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:19
-#, fuzzy
 msgid "Creating your first script"
-msgstr "Vytvoření skriptu"
+msgstr "Vytvoření prvního skriptu"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:21
 msgid ""
@@ -7155,9 +7080,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:71
-#, fuzzy
 msgid "Creating a new script"
-msgstr "Vytvoření skriptu"
+msgstr "Vytvoření nového skriptu"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:73
 msgid ""
@@ -7166,7 +7090,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:78
-#, fuzzy
 msgid ""
 "The Attach node Script window appears. It allows you to select the script's "
 "language and file path, among other options."
@@ -7224,9 +7147,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:117
-#, fuzzy
 msgid "Hello, world!"
-msgstr "Hello, friend!"
+msgstr "Ahoj, světe!"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:119
 msgid ""
@@ -7357,9 +7279,8 @@ msgid "Run the scene to see the Godot icon turn in-place."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:222
-#, fuzzy
 msgid "Moving forward"
-msgstr "Jit dopředu"
+msgstr "Pohyb vpřed"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:224
 msgid ""
@@ -7577,9 +7498,8 @@ msgid "Signal"
 msgstr "Signál"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
-#, fuzzy
 msgid "Using Signals"
-msgstr "Vázané signály"
+msgstr "Používání signálů"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -7605,14 +7525,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:28
-#, fuzzy
 msgid ""
 "As mentioned in the introduction, signals are Godot's version of the "
 "observer pattern. You can learn more about it here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Více informací o vzoru Observer najdete zde: https://gameprogrammingpatterns."
-"com/observer.html"
+"Jak bylo zmíněno v úvodu, signály jsou Godotovou verzí vzoru pozorovatel "
+"(observer). Více se o něm můžete dozvědět zde: https://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:32
 msgid ""
@@ -7675,14 +7595,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:80
-#, fuzzy
 msgid "Your scene tree and viewport should look like this."
-msgstr "Strom scény by měl vypadat takto:"
+msgstr "Strom scény a okno zobrazení by měly vypadat takto."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:85
-#, fuzzy
 msgid "Connecting a signal in the editor"
-msgstr "Připojení signálů v kódu"
+msgstr "Připojení signálu v editoru"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:87
 msgid ""
@@ -7773,16 +7691,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:163
-#, fuzzy
 msgid "Your complete ``Sprite2D.gd`` code should look like the following."
-msgstr "Strom scény by měl vypadat takto:"
+msgstr "Váš kompletní kód ``Sprite2D.gd`` by měl vypadat následovně."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:181
-#, fuzzy
 msgid ""
 "Run the scene now and click the button to see the sprite start and stop."
 msgstr ""
-"Spusťte scénu a stiskněte tlačítko. Měli byste získat následující výsledek:"
+"Spusťte nyní scénu a klikněte na tlačítko, abyste viděli, jak se sprite "
+"spouští a zastavuje."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:184
 #, fuzzy
@@ -7835,9 +7752,8 @@ msgid "We need to do two operations to connect the nodes via code:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
-#, fuzzy
 msgid "Get a reference to the Timer from the Sprite2D."
-msgstr "Odkaz na uzel, který obsahuje vlastnost, kterou chcete animovat"
+msgstr "Získání reference na časovač ze Sprite2D."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:211
 msgid "Call the Timer's ``connect()`` method."
@@ -7911,9 +7827,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:286
-#, fuzzy
 msgid "To emit a signal in your scripts, call ``emit_signal()``."
-msgstr "Chcete-li vyslat signál pomocí kódu, použijte funkci ``emit_signal``:"
+msgstr ""
+"Chcete-li ve svých skriptech vyslat signál, zavolejte ``emit_signal()``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:296
 #, fuzzy
@@ -8034,9 +7950,8 @@ msgid "Create a complete 2D game with the Godot editor."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:25
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "Vytvoření nebo import projektu"
+msgstr "Struktura jednoduchého herního projektu."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:26
 msgid "Move the player character and change its sprite."
@@ -8206,9 +8121,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:47
-#, fuzzy
 msgid "Your project folder should look like this."
-msgstr "Vaše scéna by měla vypadat takto:"
+msgstr "Vaše složka projektu by měla vypadat takto."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:51
 #, fuzzy
@@ -9458,14 +9372,12 @@ msgid "Under \"Custom Fonts\", choose \"New Font\""
 msgstr "V části „Vlastní písma“ vyberte „Nový DynamicFont“"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:43
-#, fuzzy
 msgid ""
 "Click on the \"Font\" you added, and under \"Font/Data/0\", choose \"Load\" "
 "and select the \"Xolonium-Regular.ttf\" file."
 msgstr ""
-"Klikněte na \"DynamicFont\", který jste přidali, a pod \"Font / Font Data\", "
-"zvolte \"Načíst\" a vyberte soubor \"Xolonium-Regular.ttf\". Musíte také "
-"nastavit písmo ``Velikost``. Nastavení ``64`` funguje dobře."
+"Klikněte na \"Font\", který jste přidali, a v části \"Font/Data/0\" vyberte "
+"\"Load\" a vyberte soubor \"Xolonium-Regular.ttf\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:48
 #, fuzzy
@@ -10274,9 +10186,8 @@ msgid "|image16|"
 msgstr "| image1 |"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:141
-#, fuzzy
 msgid "At this point, your project should look like this."
-msgstr "Výsledný skript by měl vypadat takto:"
+msgstr "V tomto okamžiku by váš projekt měl vypadat takto."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:143
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:148
@@ -10492,9 +10403,8 @@ msgid "Leave the default values and click the *Add* button."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:150
-#, fuzzy
 msgid "Your jump input action should look like this."
-msgstr "Vaše scéna by měla vypadat takto:"
+msgstr "Vstupní akce skoku by měla vypadat takto."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:152
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:139
@@ -10827,9 +10737,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:25
-#, fuzzy
 msgid "Add a *CollisionShape*."
-msgstr "Kolizní tvary"
+msgstr "Přidání tvaru *CollisionShape*."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:29
 msgid "In the *Inspector*, assign a *BoxShape* to the *Shape* property."
@@ -11204,9 +11113,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:137
-#, fuzzy
 msgid "Your path should look like this."
-msgstr "Vaše scéna by měla vypadat takto:"
+msgstr "Vaše cesta by měla vypadat takto."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:141
 msgid ""
@@ -11233,11 +11141,9 @@ msgid "Spawning monsters randomly"
 msgstr "Zrození nepřátel"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:152
-#, fuzzy
 msgid "Right-click on the *Main* node and attach a new script to it."
 msgstr ""
-"Klikněte pravým tlačítkem myši na uzel Panel, pak vyberte \"Připojit Skript"
-"\" z kontextového menu:"
+"Klikněte pravým tlačítkem na uzel *Main* a připojte k němu nový skript."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:154
 msgid ""
@@ -11318,9 +11224,8 @@ msgid "|image23|"
 msgstr "| image2 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:218
-#, fuzzy
 msgid "Connect it to the *Main* node."
-msgstr "Připojení HUD k Main"
+msgstr "Připojte jej k uzlu *Main*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:220
 #, fuzzy
@@ -12333,9 +12238,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:12
-#, fuzzy
 msgid "We'll start with an introduction to using the animation editor."
-msgstr "Seznámení s funkcemi animace"
+msgstr "Začneme úvodem do používání editoru animací."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:15
 #, fuzzy
@@ -12370,9 +12274,8 @@ msgid "Let's create an animation. Click on *Animation -> New*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:34
-#, fuzzy
 msgid "Name the animation \"float\"."
-msgstr "Vytvoření animace"
+msgstr "Pojmenujte animaci \"float\"."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:38
 msgid ""
@@ -12640,9 +12543,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:280
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "**Obecné možnosti**"
+msgstr "**Gratulujeme**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:282
 msgid ""
@@ -32030,9 +31932,9 @@ msgid "Using an external text editor"
 msgstr "Použití externího textového editoru"
 
 #: ../../docs/tutorials/editor/external_editor.rst:6
-#, fuzzy
 msgid "This page explains how to code using an external text editor."
-msgstr "Použití externího textového editoru"
+msgstr ""
+"Tato stránka vysvětluje, jak kódovat pomocí externího textového editoru."
 
 #: ../../docs/tutorials/editor/external_editor.rst:10
 msgid ""
@@ -58858,11 +58760,12 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/index.rst:4
-#, fuzzy
 msgid ""
 "This section covers programming languages and core features to code your "
 "games in Godot."
-msgstr "Které programovací jazyky jsou podporovány v Godotu?"
+msgstr ""
+"Tato část se zabývá programovacími jazyky a základními funkcemi pro kódování "
+"vašich her v Godotu."
 
 #: ../../docs/tutorials/scripting/index.rst:7
 msgid ""
@@ -66605,13 +66508,12 @@ msgid "Advantages of C++ modules"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:50
-#, fuzzy
 msgid ""
 "We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where "
 "GDNative isn't enough:"
 msgstr ""
-"Podpora pro :ref:`C ++ moduly <doc_custom_modules_in_c ++>` staticky "
-"linkovanédo binárního modulu enginu."
+"Doporučujeme :ref:`C++ moduly <doc_custom_modules_in_c++>` v případech, kdy "
+"GDNative nestačí:"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:53
 msgid ""
@@ -68481,9 +68383,8 @@ msgstr ""
 "Můžete:"
 
 #: ../../docs/tutorials/scripting/groups.rst:20
-#, fuzzy
 msgid "Using the Node dock in the editor."
-msgstr "Použití editoru motivů"
+msgstr "Použití doku uzlu v editoru."
 
 #: ../../docs/tutorials/scripting/groups.rst:21
 msgid ""
@@ -68600,18 +68501,16 @@ msgstr ""
 "get_nodes_in_group () <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/tutorials/scripting/groups.rst:121
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
 "methods to interact with scenes, their node hierarchy, and groups. It allows "
 "you to switch scenes easily or reload them, quit the game or pause and "
 "unpause it. It also provides useful signals."
 msgstr ""
-"Třída :ref:`SceneTree <class_SceneTree>` poskytuje mnoho užitečných metod "
-"pro například interakci se scénami, jejich hierarchii uzlů a skupinami uzlů. "
-"To vám umožní snadno přepínat nebo znovu načíst scény, ukončit nebo "
-"pozastavit či zrušit pozastavení hry. Dodává se dokonce se zajímavými "
-"signály. Takže se podívejte do dokumentace, jestli máte truchu času!"
+"Třída :ref:`SceneTree <class_SceneTree>` poskytuje mnoho dalších užitečných "
+"metod pro práci se scénami, jejich hierarchií uzlů a skupinami. Umožňuje "
+"snadno přepínat scény nebo je znovu načítat, ukončovat hru nebo ji "
+"pozastavovat a rušit. Poskytuje také užitečné signály."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:4
 #, fuzzy
@@ -68644,9 +68543,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:22
-#, fuzzy
 msgid "To do so, you can use the following code."
-msgstr "To znamená, že můžeme použít následující názvy portálů:"
+msgstr "K tomu můžete použít následující kód."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:47
 msgid ""
@@ -68713,13 +68611,12 @@ msgid "Creating nodes"
 msgstr "Vytváření uzlů"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:118
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
 "Chcete-li vytvořit uzel v kódu, volejte metodu ``.new ()``, tak jako pro "
-"jakýkoli jiný datový typ třídy. Například:"
+"jakýkoli jiný datový typ třídy."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:121
 msgid ""
@@ -68771,9 +68668,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:184
-#, fuzzy
 msgid "Loading the scene from the hard drive."
-msgstr "Načítání zdrojů z kódu"
+msgstr "Načítání scény z pevného disku."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:185
 #, fuzzy
@@ -68792,18 +68688,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:206
-#, fuzzy
 msgid ""
 "At that point, ``scene`` is a packed scene resource, not a node. To create "
 "the actual node, you need to call :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>`. It returns a tree of nodes that you "
 "can as a child of your current node."
 msgstr ""
-"Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem :"
-"ref:`PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
-"třeba zavolat funkci :ref:`PackedScene.instance () "
-"<class_PackedScene_method_instance>`. Ta vrátí strom uzlů, který lze přidat "
-"k aktivní scéně:"
+"V tomto okamžiku je ``scene`` zabaleným prostředkem scény, nikoli uzlem. "
+"Chcete-li vytvořit skutečný uzel, musíte zavolat :ref:`PackedScene."
+"instance() <class_PackedScene_method_instance>`. Vrátí strom uzlů, které "
+"můžete jako potomka aktuálního uzlu."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:222
 #, fuzzy
@@ -69456,9 +69350,8 @@ msgid "The script below demonstrates what the Expression class is capable of::"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:181
-#, fuzzy
 msgid "The output from the script will be::"
-msgstr "Role skriptu"
+msgstr "Výstupem skriptu bude::"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:199
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:634
@@ -71268,19 +71161,16 @@ msgid "Here are the available types:"
 msgstr "Typově existuje 6 vzorů:"
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:87
-#, fuzzy
 msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
-msgstr ":ref:`Prostorové shadery <doc_spatial_shader>`"
+msgstr ":ref:`spatial <doc_spatial_shader>` pro 3D vykreslování."
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:88
-#, fuzzy
 msgid ":ref:`canvas_item <doc_canvas_item_shader>` for 2D rendering."
-msgstr ":ref:`Shadery položek plátna <doc_canvas_item_shader>`"
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>` pro 2D vykreslování."
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:89
-#, fuzzy
 msgid ":ref:`particles <doc_particle_shader>` for particle systems."
-msgstr ":ref:`shadery částic <doc_particle_shader>`"
+msgstr ":ref:`particles <doc_particle_shader>` pro částicové systémy."
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:92
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:12
@@ -91035,9 +90925,8 @@ msgid "Class reference guides"
 msgstr "Dokumentace tříd"
 
 #: ../../docs/community/contributing/index.rst:82
-#, fuzzy
 msgid "The pages below focus on the class reference."
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Níže uvedené stránky se zaměřují na referenci třídy."
 
 #: ../../docs/community/contributing/index.rst:84
 msgid ""
@@ -93095,13 +92984,12 @@ msgid "Documentation labels"
 msgstr "Seznam změn dokumentace"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:152
-#, fuzzy
 msgid ""
 "In the `documentation repository <https://github.com/godotengine/godot-"
 "docs>`__, we use the following labels:"
 msgstr ""
-"Klonování úložiště `godot-docs <https://github.com/godotengine/godot-docs/"
-">`__."
+"V úložišti `dokumentace <https://github.com/godotengine/godot-docs>`__ "
+"používáme následující značky:"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:155
 msgid ""
@@ -93662,9 +93550,8 @@ msgid "See :ref:`doc_code_style_guidelines` for formatting guidelines."
 msgstr "Více informací naleznete v :ref:`doc_running_code_in_the_editor`."
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:41
-#, fuzzy
 msgid "Disallowed features"
-msgstr "Tento přístup má několik výhod:"
+msgstr "Zakázané funkce"
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:43
 msgid ""
@@ -93675,9 +93562,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:49
-#, fuzzy
 msgid "Standard Template Library"
-msgstr "Proč Godot nepoužívá STL (Standard Template Library)?"
+msgstr "Standardní knihovna šablon (STL)"
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:51
 msgid ""
@@ -95306,9 +95192,8 @@ msgstr "Popis"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:75
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:80
-#, fuzzy
 msgid "`<constant>`"
-msgstr "Konstanta PI."
+msgstr "`<constant>`"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:76
 msgid ""
@@ -95406,9 +95291,8 @@ msgid "Move the [Sprite2D]."
 msgstr ""
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
-#, fuzzy
 msgid "Move the :ref:`class_Sprite`."
-msgstr ": ref:`class_SphereShape`"
+msgstr "Přesun :ref:`class_Sprite`."
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:130
 msgid "[method methodname]"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-12-16 15:51+0100\n"
-"PO-Revision-Date: 2021-12-09 23:13+0000\n"
+"PO-Revision-Date: 2021-12-21 15:49+0000\n"
 "Last-Translator: Napstaguy04 <brokenscreen3@gmail.com>\n"
 "Language-Team: Tagalog <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -86026,10 +86026,12 @@ msgid ""
 "If you're adding a new enum, its values should be ordered from the fastest "
 "option to the slowest option."
 msgstr ""
+"Kung magdadagdag ka ng panibagong enum, ang mga halaga nito ay dapat maayos "
+"mula sa pinakamabilis na opsyon hanggang sa pinakamabagal."
 
 #: ../../docs/development/editor/editor_style_guide.rst:84
 msgid "Tooltips"
-msgstr ""
+msgstr "Mga Tooltip"
 
 #: ../../docs/development/editor/editor_style_guide.rst:86
 msgid ""
@@ -86037,6 +86039,9 @@ msgid ""
 "action isn't obvious. You can also provide additional context or highlight "
 "caveats in the tooltip."
 msgstr ""
+"Isaalang alang ang pagdagdag ng tooltip kung hindi nahahalata ang aksyong "
+"ginawa ng buton o aksyon mula sa menu. Maari kang magdagdag ng karagdagang "
+"saysay o bigyang diin ang mga babala sa tooltip."
 
 #: ../../docs/development/editor/editor_style_guide.rst:90
 msgid ""
@@ -86051,22 +86056,29 @@ msgid ""
 "Tooltips should follow the writing style described above. In addition to "
 "this, use indicative mood instead of imperative mood:"
 msgstr ""
+"Dapat sundin sa pagpapangalan ng mga tooltips ang wastong pagsusulat na "
+"nakasaad sa itaas. Bukod pa dito, gamitin ang panaganong paturol o "
+"indicative mood sa halip na pautos:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:97
 msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
 msgstr ""
+"**Tama:** *Tinutuos ang pankalahatang ilaw ng kapaligiran para sa piniling "
+"GlProbe.*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:98
 msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
 msgstr ""
+"**Mali:** *Ituos ang pankalahatang ilaw ng kapaligiran para sa piniling "
+"GlProbe..*"
 
 #: ../../docs/development/file_formats/index.rst:2
 msgid "Godot file formats"
-msgstr ""
+msgstr "Mga format ng file sa Godot"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:4
 msgid "GDScript grammar"
-msgstr ""
+msgstr "Baralila ng GDScript"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:6
 msgid ""
@@ -86123,7 +86135,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:27
 msgid "File Descriptor"
-msgstr ""
+msgstr "Tagalarawan ng File"
 
 #: ../../docs/development/file_formats/tscn.rst:28
 #: ../../docs/development/file_formats/tscn.rst:279
@@ -86215,7 +86227,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:81
 msgid "``owner``"
-msgstr ""
+msgstr "``may-ari``"
 
 #: ../../docs/development/file_formats/tscn.rst:82
 msgid "``index`` (if two nodes have the same name)"
@@ -86223,7 +86235,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:83
 msgid "``groups``"
-msgstr ""
+msgstr "``mga grupo``"
 
 #: ../../docs/development/file_formats/tscn.rst:85
 msgid ""
