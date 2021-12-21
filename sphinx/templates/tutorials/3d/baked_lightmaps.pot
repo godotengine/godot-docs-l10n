@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,141 +213,157 @@ msgid "Both indirect and direct lighting will be baked. Since static surfaces ca
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
-msgid "The light will not be adjustable at all during gameplay; moving it and changing its color will not have any effect on static surfaces."
+msgid "The light will not be adjustable at all during gameplay. Moving the light and changing its color or energy will not have any effect on static surfaces."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:211
 msgid "Since bake modes can be adjusted on a per-light basis, it is possible to create hybrid baked light setups. One popular option is to use a real-time DirectionalLight with its bake mode set to **Indirect**, and use the **All** bake mode for OmniLights and SpotLights. This provides good performance while still allowing dynamic objects to cast real-time shadows in outdoor areas."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:218
-msgid "Baking"
-msgstr ""
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:220
-msgid "To begin the bake process, just push the **Bake Lightmaps** button on top when selecting the BakedLightmap node:"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:217
+msgid "After selecting the **All** bake mode on a light, you can optionally specify a **Size** greater than 0 for the light in the inspector. This size is used to provide softer shadows depending on the distance between the shadow caster and the object receiving the shadow. This mimics real life shadow appearance:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:225
-msgid "This can take from seconds to minutes (or hours) depending on scene size, bake method and quality selected."
+msgid "The light's **Size** property is ignored for real-time shadows; it will only affect baked shadows. When the **Size** property is changed, lightmaps must be baked again to make changes visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:229
-msgid "Balancing bake times with quality"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:230
+msgid "Baking"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:231
-msgid "Since high-quality bakes can take very long (up to several hours for large complex scenes), it is recommended to use lower quality settings at first. Then, once you are confident with your scene's lighting setup, raise the quality settings and perform a \"final\" bake before exporting your project."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:232
+msgid "To begin the bake process, just push the **Bake Lightmaps** button on top when selecting the BakedLightmap node:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:237
-msgid "Configuring bake"
-msgstr ""
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:239
-msgid "Several more options are present for baking:"
+msgid "This can take from seconds to minutes (or hours) depending on scene size, bake method and quality selected."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:241
-msgid "**Bake Extents**: The size of the area affected. This can be edited in the 3D editor viewport using the handles. Any object that can have lightmaps baked and is *touching* the bake extents will have lightmaps baked for it, but dynamic object capture will only work within the extents."
+msgid "Balancing bake times with quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:247
-msgid "Tweaks"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:243
+msgid "Since high-quality bakes can take very long (up to several hours for large complex scenes), it is recommended to use lower quality settings at first. Then, once you are confident with your scene's lighting setup, raise the quality settings and perform a \"final\" bake before exporting your project."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:249
-msgid "**Quality:** Three bake quality modes are provided: Low, Medium, High, and Ultra. Higher quality takes more time, but result in a better-looking lightmap with less noise. The difference is especially noticeable with emissive materials or areas that get little to no direct lighting."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:250
+msgid "By default, the lightmap baker will use all the system's logical CPU cores to speed up baking. This can reduce system responsiveness. To preserve system responsiveness while lightmaps are baking, you can reduce the number of CPU threads used to bake lightmaps. Keeping 1 or 2 CPU threads free will help improve system responsiveness, which is useful when multi-tasking while lightmaps are baking at the cost of slowing down lightmap baking slightly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:253
-msgid "**Bounces:** The number of bounces to use for indirect lighting. The default value (3) is a good compromise between bake times and quality. Higher values will make light bounce around more times before it stops, which makes indirect lighting look smoother (but also brighter). During the initial lighting iteration work, it is recommended to decrease the number of bounces to 1 to speed up baking. Remember that your scene will be darker when decreasing the number of bounces."
-msgstr ""
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:259
-msgid "**Use Denoiser:** If enabled, uses OpenImageDenoise to make the lightmap significantly less noisy. This increases bake times and can occasionally introduce artifacts, but the result is often worth it."
-msgstr ""
-
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:262
-msgid "**Use Hdr:** If disabled, lightmaps are smaller on disk, but they won't be able to capture any light over white (1.0). This will result in visible clipping if you have bright lights in your scene. When HDR is disabled, banding may also be visible in the lightmap."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:257
+msgid "To do so, open **Editor > Editor Settings** and adjust **Editors > 3d > Lightmap Baking Number Of Cpu Threads**. The default value (``0``) uses all of the system's logical CPU cores. Positive values will specify a number of threads to use, while negative values will subtract from the total number of logical CPU cores in the system. For example, on a system with 8 logical CPU cores, adjusting the setting to ``-1`` will use 7 CPU threads for lightmap baking."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:266
-msgid "**Use Color:** If disabled, lightmaps are smaller on disk, but the lightmap won't be able to store colored lighting. When baking indirect light only, the difference may be barely visible since indirect light is generally not highly saturated. However, when baking both direct and indirect lighting using the **All** bake mode on a light, this will turn colored lighting into grayscale lighting. This can be disabled together with HDR to get the smallest possible lightmap file at a given resolution."
+msgid "Configuring bake"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:273
-msgid "**Bias:** The offset value to use for shadows in 3D units. You generally don't need to change this value, except if you run into issues with light bleeding or dark spots in your lightmap after baking. This setting does not affect real-time shadows casted on baked surfaces."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:268
+msgid "Several more options are present for baking:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:277
-msgid "**Default Texels Per Unit:** For meshes that do not specify their own lightmap texel density, this will be used as the value. Higher values result in *lower-resolution* lightmaps, which result in faster bake times and lower file sizes at the cost of blurrier indirect lighting and shadows."
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:270
+msgid "**Bake Extents**: The size of the area affected. This can be edited in the 3D editor viewport using the handles. Any object that can have lightmaps baked and is *touching* the bake extents will have lightmaps baked for it, but dynamic object capture will only work within the extents."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:283
-msgid "Atlas"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:276
+msgid "Tweaks"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:285
-msgid "**Generate:** If enabled, a texture atlas will be generated for the lightmap. This results in more efficient rendering, but is only compatible with the GLES3 rendering backend. Disable this setting if your project is allowed to fall back to GLES2. (This is not the case by default and must be enabled in the Project Settings.) *This setting is ignored when the project is configured to use GLES2 by default.*"
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:278
+msgid "**Quality:** Three bake quality modes are provided: Low, Medium, High, and Ultra. Higher quality takes more time, but result in a better-looking lightmap with less noise. The difference is especially noticeable with emissive materials or areas that get little to no direct lighting."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:282
+msgid "**Bounces:** The number of bounces to use for indirect lighting. The default value (3) is a good compromise between bake times and quality. Higher values will make light bounce around more times before it stops, which makes indirect lighting look smoother (but also brighter). During the initial lighting iteration work, it is recommended to decrease the number of bounces to 1 to speed up baking. Remember that your scene will be darker when decreasing the number of bounces."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:288
+msgid "**Use Denoiser:** If enabled, uses OpenImageDenoise to make the lightmap significantly less noisy. This increases bake times and can occasionally introduce artifacts, but the result is often worth it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:291
+msgid "**Use Hdr:** If disabled, lightmaps are smaller on disk, but they won't be able to capture any light over white (1.0). This will result in visible clipping if you have bright lights in your scene. When HDR is disabled, banding may also be visible in the lightmap."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:295
+msgid "**Use Color:** If disabled, lightmaps are smaller on disk, but the lightmap won't be able to store colored lighting. When baking indirect light only, the difference may be barely visible since indirect light is generally not highly saturated. However, when baking both direct and indirect lighting using the **All** bake mode on a light, this will turn colored lighting into grayscale lighting. This can be disabled together with HDR to get the smallest possible lightmap file at a given resolution."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:302
+msgid "**Bias:** The offset value to use for shadows in 3D units. You generally don't need to change this value, except if you run into issues with light bleeding or dark spots in your lightmap after baking. This setting does not affect real-time shadows casted on baked surfaces."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:306
+msgid "**Default Texels Per Unit:** For meshes that do not specify their own lightmap texel density, this will be used as the value. Higher values result in *lower-resolution* lightmaps, which result in faster bake times and lower file sizes at the cost of blurrier indirect lighting and shadows."
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:312
+msgid "Atlas"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:314
+msgid "**Generate:** If enabled, a texture atlas will be generated for the lightmap. This results in more efficient rendering, but is only compatible with the GLES3 rendering backend. Disable this setting if your project is allowed to fall back to GLES2. (This is not the case by default and must be enabled in the Project Settings.) *This setting is ignored when the project is configured to use GLES2 by default.*"
+msgstr ""
+
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:320
 msgid "**Max Size:** The maximum size of the atlas in pixels. Higher values result in a more efficient atlas, but are less compatible with old/low-end hardware. If in doubt, leave this setting on its default value (4096)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:296
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:325
 msgid "Capture"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:298
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:327
 msgid "**Enabled:** This enables probe capture so that dynamic objects can *receive* indirect lighting. Regardless of this setting's value, dynamic objects will not be able to *contribute* indirect lighting to the scene. This is a limitation of lightmaps."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:301
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:330
 msgid "**Cell Size:** The distance between lightmap probes in 3D units. Higher values result in more sparse probe placement, which decreases bake times and file size at the cost of lower lighting accuracy for dynamic objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:304
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:333
 msgid "**Quality:** The lightmap probe generation quality. Higher values result in more accurate lighting, but take longer to bake. This setting does not affect the *density* of the lightmap probes, only their quality."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:307
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:336
 msgid "**Propagation:** Similar to :ref:`GIProbe <doc_gi_probes>`'s Propagation property. Higher values result in brighter and more diffuse indirect lighting for dynamic objects. Adjust this value depending on your scene to make dynamic objects better fit with static baked lighting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:313
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:342
 msgid "Data"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:315
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:344
 msgid "**Light Data**: Contains the light baked data after baking. Textures are saved to disk, but this also contains the capture data for dynamic objects, which can be heavy. If you are using a scene in ``.tscn`` format, you should save this resource to an external binary ``.lmbake`` file to avoid bloating the ``.tscn`` scene with binary data encoded in Base64."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:321
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:350
 msgid "The Light Data resource can be edited to adjust two additional properties:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:323
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:352
 msgid "**Energy:** Adjusts the lightmap's brightness. Higher values result in brighter lightmaps. This can be adjusted at run-time for short-lived dynamic effects such as thunderstorms. However, keep in mind that it will affect *all* baked lights."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:326
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:355
 msgid "**Interior:** If enabled, dynamic objects will not make use of environment lighting and will use light probes for ambient lighting exclusively. If disabled, both environment lighting and light probes are used to light up dynamic objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:332
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:361
 msgid "The generated EXR file can be viewed and even edited using an image editor to perform post-processing if needed. However, keep in mind that changes to the EXR file will be lost when baking lightmaps again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:337
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:366
 msgid "Dynamic objects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:339
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:368
 msgid "In other engines or lightmapper implementations, you are generally required to manually place small objects called \"lightprobes\" all around the level to generate *capture* data. This is then used to transfer the light to dynamic objects that move around the scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/baked_lightmaps.rst:344
+#: ../../docs/tutorials/3d/baked_lightmaps.rst:373
 msgid "However, this implementation of lightmapping uses a different method. The process is automatic, so you don't have to do anything. Just move your objects around, and they will be lit accordingly. Of course, you have to make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""

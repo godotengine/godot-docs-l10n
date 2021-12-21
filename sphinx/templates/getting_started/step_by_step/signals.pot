@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,11 +57,11 @@ msgid "In the Scene dock, click the 2D Scene button. This will add a Node2D as o
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:50
-msgid "In the FileSystem dock, click and drag the ``Sprite2D.tscn`` file you saved previously onto the Node2D to instantiate it."
+msgid "In the FileSystem dock, click and drag the ``Sprite.tscn`` file you saved previously onto the Node2D to instantiate it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-msgid "We want to add another node as a sibling of the Sprite2D. To do so, right-click on Node2D and select Add Child Node."
+msgid "We want to add another node as a sibling of the Sprite. To do so, right-click on Node2D and select Add Child Node."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
@@ -93,7 +93,7 @@ msgid "Connecting a signal in the editor"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:87
-msgid "Here, we want to connect the Button's \"pressed\" signal to our Sprite2D, and we want to call a new function that will toggle its motion on and off. We need to have a script attached to the Sprite2D node, which we do from the previous lesson."
+msgid "Here, we want to connect the Button's \"pressed\" signal to our Sprite, and we want to call a new function that will toggle its motion on and off. We need to have a script attached to the Sprite node, which we do from the previous lesson."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:91
@@ -109,7 +109,7 @@ msgid "Double-click the \"pressed\" signal to open the node connection window."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:104
-msgid "There, you can connect the signal to the Sprite2D node. The node needs a receiver method, a function that Godot will call when the Button emits the signal. The editor generates one for you. By convention, we name these callback methods \"_on_NodeName_signal_name\". Here, it'll be \"_on_Button_pressed\"."
+msgid "There, you can connect the signal to the Sprite node. The node needs a receiver method, a function that Godot will call when the Button emits the signal. The editor generates one for you. By convention, we name these callback methods \"_on_NodeName_signal_name\". Here, it'll be \"_on_Button_pressed\"."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
@@ -133,7 +133,7 @@ msgid "Let's replace the line with the ``pass`` keyword with code that'll toggle
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:136
-msgid "Our Sprite2D moves thanks to code in the ``_process()`` function. Godot provides a method to toggle processing on and off: :ref:`Node.set_process() <class_Node_method_set_process>`. Another method of the Node class, ``is_processing()``, returns ``true`` if idle processing is active. We can use the ``not`` keyword to invert the value."
+msgid "Our Sprite moves thanks to code in the ``_process()`` function. Godot provides a method to toggle processing on and off: :ref:`Node.set_process() <class_Node_method_set_process>`. Another method of the Node class, ``is_processing()``, returns ``true`` if idle processing is active. We can use the ``not`` keyword to invert the value."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:148
@@ -145,7 +145,7 @@ msgid "Before trying the game, we need to simplify our ``_process()`` function t
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:163
-msgid "Your complete ``Sprite2D.gd`` code should look like the following."
+msgid "Your complete ``Sprite.gd`` code should look like the following."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:181
@@ -169,7 +169,7 @@ msgid "Head back to the 2D workspace. You can either click the \"2D\" text at th
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:195
-msgid "In the Scene dock, right-click on the Sprite2D node and add a new node. Search for Timer and add the corresponding node. Your scene should now look like this."
+msgid "In the Scene dock, right-click on the Sprite node and add a new node. Search for Timer and add the corresponding node. Your scene should now look like this."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:200
@@ -177,7 +177,7 @@ msgid "With the Timer node selected, go to the Inspector and check the **Autosta
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:204
-msgid "Click the script icon next to Sprite2D to jump back to the scripting workspace."
+msgid "Click the script icon next to Sprite to jump back to the scripting workspace."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
@@ -185,7 +185,7 @@ msgid "We need to do two operations to connect the nodes via code:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
-msgid "Get a reference to the Timer from the Sprite2D."
+msgid "Get a reference to the Timer from the Sprite."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:211
@@ -201,11 +201,11 @@ msgid "To get a reference to a node relative to the current one, we use the meth
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:231
-msgid "The function ``get_node()`` looks at the Sprite2D's children and gets nodes by their name. For example, if you renamed the Timer node to \"BlinkingTimer\" in the editor, you would have to change the call to ``get_node(\"BlinkingTimer\")``."
+msgid "The function ``get_node()`` looks at the Sprite's children and gets nodes by their name. For example, if you renamed the Timer node to \"BlinkingTimer\" in the editor, you would have to change the call to ``get_node(\"BlinkingTimer\")``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
-msgid "We can now connect the Timer to the Sprite2D in the ``_ready()`` function."
+msgid "We can now connect the Timer to the Sprite in the ``_ready()`` function."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:246

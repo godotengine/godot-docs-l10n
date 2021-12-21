@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,214 +125,226 @@ msgid "The method ``OS.is_userfs_persistent()`` can be used to check if the ``us
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:114
-msgid "Threads"
+msgid "Background processing"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:116
-msgid "As mentioned :ref:`above <doc_javascript_export_options>` multi-threading is only available if the appropriate **Export Type** is set and support for it across browsers is still limited."
+msgid "The project will be paused by the browser when the tab is no longer the active tab in the user's browser. This means functions such as ``_process()`` and ``_physics_process()`` will no longer run until the tab is made active again by the user (by switching back to the tab). This can cause networked games to disconnect if the user switches tabs for a long duration."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:120
-msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`. Browsers are also starting to require that the web page is served with specific `cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_web.rst:125
-msgid "GDNative"
+#: ../../docs/tutorials/export/exporting_for_web.rst:122
+msgid "This limitation does not apply to unfocused browser *windows*. Therefore, on the user's side, this can be worked around by running the project in a separate *window* instead of a separate tab."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:127
+msgid "Threads"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_web.rst:129
+msgid "As mentioned :ref:`above <doc_javascript_export_options>` multi-threading is only available if the appropriate **Export Type** is set and support for it across browsers is still limited."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_web.rst:133
+msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`. Browsers also require that the web page is served with specific `cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_web.rst:138
+msgid "GDNative"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_web.rst:140
 msgid "As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only available if the appropriate **Export Type** is set."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:130
+#: ../../docs/tutorials/export/exporting_for_web.rst:143
 msgid "The export will also copy the required GDNative ``.wasm`` files to the output folder (and must be uploaded to your server along with your game)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:134
+#: ../../docs/tutorials/export/exporting_for_web.rst:147
 msgid "Full screen and mouse capture"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:136
+#: ../../docs/tutorials/export/exporting_for_web.rst:149
 msgid "Browsers do not allow arbitrarily **entering full screen**. The same goes for **capturing the cursor**. Instead, these actions have to occur as a response to a JavaScript input event. In Godot, this means entering full screen from within a pressed input event callback such as ``_input`` or ``_unhandled_input``. Querying the :ref:`class_Input` singleton is not sufficient, the relevant input event must currently be active."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:143
+#: ../../docs/tutorials/export/exporting_for_web.rst:156
 msgid "For the same reason, the full screen project setting doesn't work unless the engine is started from within a valid input event handler. This requires :ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:148
+#: ../../docs/tutorials/export/exporting_for_web.rst:161
 msgid "Audio"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:150
+#: ../../docs/tutorials/export/exporting_for_web.rst:163
 msgid "Chrome restricts how websites may play audio. It may be necessary for the player to click or tap or press a key to enable audio."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:153
+#: ../../docs/tutorials/export/exporting_for_web.rst:166
 msgid "Google offers additional information about their `Web Audio autoplay policies <https://sites.google.com/a/chromium.org/dev/audio-video/autoplay>`__."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:156
+#: ../../docs/tutorials/export/exporting_for_web.rst:169
 msgid "Access to microphone requires a :ref:`secure context <doc_javascript_secure_contexts>`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:160
+#: ../../docs/tutorials/export/exporting_for_web.rst:173
 msgid "Networking"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:162
+#: ../../docs/tutorials/export/exporting_for_web.rst:175
 msgid "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:164
+#: ../../docs/tutorials/export/exporting_for_web.rst:177
 msgid "Currently, only :ref:`HTTP client <doc_http_client_class>`, :ref:`HTTP requests <doc_http_request_class>`, :ref:`WebSocket (client) <doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are supported."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:169
+#: ../../docs/tutorials/export/exporting_for_web.rst:182
 msgid "The HTTP classes also have several restrictions on the HTML5 platform:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:171
+#: ../../docs/tutorials/export/exporting_for_web.rst:184
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:172
+#: ../../docs/tutorials/export/exporting_for_web.rst:185
 msgid "Threaded/Blocking mode is not available"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:173
+#: ../../docs/tutorials/export/exporting_for_web.rst:186
 msgid "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:174
+#: ../../docs/tutorials/export/exporting_for_web.rst:187
 msgid "No chunked responses"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:175
+#: ../../docs/tutorials/export/exporting_for_web.rst:188
 msgid "Host verification cannot be disabled"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:176
+#: ../../docs/tutorials/export/exporting_for_web.rst:189
 msgid "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy>`__"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:179
+#: ../../docs/tutorials/export/exporting_for_web.rst:192
 msgid "Clipboard"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:181
+#: ../../docs/tutorials/export/exporting_for_web.rst:194
 msgid "Clipboard synchronization between engine and the operating system requires a browser supporting the `Clipboard API <https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API>`__, additionally, due to the API asynchronous nature might not be reliable when accessed from GDScript."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:186
-#: ../../docs/tutorials/export/exporting_for_web.rst:197
+#: ../../docs/tutorials/export/exporting_for_web.rst:199
+#: ../../docs/tutorials/export/exporting_for_web.rst:210
 msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:189
+#: ../../docs/tutorials/export/exporting_for_web.rst:202
 msgid "Gamepads"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:191
+#: ../../docs/tutorials/export/exporting_for_web.rst:204
 msgid "Gamepads will not be detected until one of their button is pressed. Gamepads might have the wrong mapping depending on the browser/OS/gamepad combination, sadly the `Gamepad API <https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API>`__ does not provide a reliable way to detect the gamepad information necessary to remap them based on model/vendor/OS due to privacy considerations."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:200
+#: ../../docs/tutorials/export/exporting_for_web.rst:213
 msgid "Boot splash is not displayed"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:202
+#: ../../docs/tutorials/export/exporting_for_web.rst:215
 msgid "The default HTML page does not display the boot splash while loading. However, the image is exported as a PNG file, so :ref:`custom HTML pages <doc_customizing_html5_shell>` can display it."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:207
+#: ../../docs/tutorials/export/exporting_for_web.rst:220
 msgid "Shader language limitations"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:209
+#: ../../docs/tutorials/export/exporting_for_web.rst:222
 msgid "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:213
+#: ../../docs/tutorials/export/exporting_for_web.rst:226
 msgid "Serving the files"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:215
+#: ../../docs/tutorials/export/exporting_for_web.rst:228
 msgid "Exporting for the web generates several files to be served from a web server, including a default HTML page for presentation. A custom HTML file can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:219
+#: ../../docs/tutorials/export/exporting_for_web.rst:232
 msgid "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache servers and can be renamed to e.g. ``index.html`` at any time, its name is never depended on by default."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:223
+#: ../../docs/tutorials/export/exporting_for_web.rst:236
 msgid "The HTML page draws the game at maximum size within the browser window. This way it can be inserted into an ``<iframe>`` with the game's size, as is common on most web game hosting sites."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:227
+#: ../../docs/tutorials/export/exporting_for_web.rst:240
 msgid "The other exported files are served as they are, next to the ``.html`` file, names unchanged. The ``.wasm`` file is a binary WebAssembly module implementing the engine. The ``.pck`` file is the Godot main pack containing your game. The ``.js`` file contains start-up code and is used by the ``.html`` file to access the engine. The ``.png`` file contains the boot splash image. It is not used in the default HTML page, but is included for :ref:`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:235
+#: ../../docs/tutorials/export/exporting_for_web.rst:248
 msgid "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:`application/wasm`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:239
+#: ../../docs/tutorials/export/exporting_for_web.rst:252
 msgid "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:243
+#: ../../docs/tutorials/export/exporting_for_web.rst:256
 msgid "Delivering the files with server-side compression is recommended especially for the ``.pck`` and ``.wasm`` files, which are usually large in size. The WebAssembly module compresses particularly well, down to around a quarter of its original size with gzip compression."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:248
+#: ../../docs/tutorials/export/exporting_for_web.rst:261
 msgid "**Hosts that provide on-the-fly compression:** GitHub Pages (gzip)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:250
+#: ../../docs/tutorials/export/exporting_for_web.rst:263
 msgid "**Hosts that don't provide on-the-fly compression:** itch.io, GitLab Pages (`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-compression/>`__)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:256
+#: ../../docs/tutorials/export/exporting_for_web.rst:269
 msgid "Calling JavaScript from script"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:258
+#: ../../docs/tutorials/export/exporting_for_web.rst:271
 msgid "In web builds, the ``JavaScript`` singleton is implemented. It offers a single method called ``eval`` that works similarly to the JavaScript function of the same name. It takes a string as an argument and executes it as JavaScript code. This allows interacting with the browser in ways not possible with script languages integrated into Godot."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:269
+#: ../../docs/tutorials/export/exporting_for_web.rst:282
 msgid "The value of the last JavaScript statement is converted to a GDScript value and returned by ``eval()`` under certain circumstances:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:272
+#: ../../docs/tutorials/export/exporting_for_web.rst:285
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:273
+#: ../../docs/tutorials/export/exporting_for_web.rst:286
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:274
+#: ../../docs/tutorials/export/exporting_for_web.rst:287
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:275
+#: ../../docs/tutorials/export/exporting_for_web.rst:288
 msgid "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as GDScript :ref:`class_PoolByteArray`"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:284
+#: ../../docs/tutorials/export/exporting_for_web.rst:297
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:286
+#: ../../docs/tutorials/export/exporting_for_web.rst:299
 msgid "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without support for the singleton to improve security. With such templates, and on platforms other than HTML5, calling ``JavaScript.eval`` will also return ``null``. The availability of the singleton can be checked with the ``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:300
+#: ../../docs/tutorials/export/exporting_for_web.rst:313
 msgid "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in ``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_web.rst:303
+#: ../../docs/tutorials/export/exporting_for_web.rst:316
 msgid "The ``eval`` method also accepts a second, optional Boolean argument, which specifies whether to execute the code in the global execution context, defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""

@@ -90,6 +90,8 @@ if [ "$update_sphinx_pot" = true ]; then
   echo "=== Updating Sphinx templates from source rst files ==="
   rm -rf $SPHINX_TEMPLATES_DIR
   make -C $SOURCE_DIR gettext
+  # We don't translate the class reference this way.
+  rm -rf $SPHINX_TEMPLATES_DIR/classes
   SPHINX_TEMPLATES=$(find $SPHINX_TEMPLATES_DIR -type f -name "*.pot")
 fi
 

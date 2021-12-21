@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,25 +69,33 @@ msgid "Since the game is played with keyboard controls, it would be convenient i
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:48
-msgid "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* property in the Inspector. Select \"New Shortcut\" and click on the \"Shortcut\" item. A second *Shortcut* property will appear. Select \"New InputEventAction\" and click the new \"InputEventAction\". Finally, in the *Action* property, type the name ``ui_select``. This is the default input event associated with the spacebar."
+msgid "In a previous lesson, we created four input actions to move the character. We will create a similar input action to map to the start button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:57
-msgid "Now when the start button appears, you can either click it or press :kbd:`Space` to start the game."
+#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:51
+msgid "Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map\" tab. In the same way you created the movement input actions, create a new input action called ``start_game`` and add a key mapping for the :kbd:`Enter` key."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:60
-msgid "And with that, you completed your first 2D game in Godot."
+#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:56
+msgid "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* property in the Inspector. Select \"New Shortcut\" and click on the \"Shortcut\" item. A second *Shortcut* property will appear. Select \"New InputEventAction\" and click the new \"InputEventAction\". Finally, in the *Action* property, type the name ``start_game``."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:64
-msgid "You got to make a player-controlled character, enemies that spawn randomly around the game board, count the score, implement a game over and replay, user interface, sounds, and more. Congratulations!"
+msgid "Now when the start button appears, you can either click it or press :kbd:`Enter` to start the game."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:68
-msgid "There's still much to learn, but you can take a moment to appreciate what you achieved."
+#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:67
+msgid "And with that, you completed your first 2D game in Godot."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:71
+msgid "You got to make a player-controlled character, enemies that spawn randomly around the game board, count the score, implement a game over and replay, user interface, sounds, and more. Congratulations!"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:75
+msgid "There's still much to learn, but you can take a moment to appreciate what you achieved."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:78
 msgid "And when you're ready, you can move on to :ref:`doc_your_first_3d_game` to learn to create a complete 3D game from scratch, in Godot."
 msgstr ""

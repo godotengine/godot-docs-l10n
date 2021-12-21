@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,82 +32,147 @@ msgstr ""
 msgid "This tutorial aims to give an overview on different methods to create a smaller binary. Before continuing, it is recommended to read the previous tutorials on compiling Godot for each platform."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:22
-msgid "You can use the online `Godot build options generator <https://godot-build-options-generator.github.io/>`__ to generate a ``custom.py`` file containing SCons options. You can then save this file and place it at the root of your Godot source directory."
+#: ../../docs/development/compiling/optimizing_for_size.rst:20
+msgid "The options below are listed from the most important (greatest size savings) to the least important (lowest size savings)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:28
-msgid "Disabling 3D"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:30
-msgid "For 2D games, having the whole 3D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:36
-msgid "Tools must be disabled in order to use this flag, as the editor is not designed to operate without 3D support. Without it, the binary size can be reduced by about 15%."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:41
-msgid "Disabling advanced GUI nodes"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:43
-msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:51
-msgid "Disabling unwanted modules"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:53
-msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:60
-msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:68
-msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, regex support, or theora/webm to play videos)."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:73
-msgid "Alternatively, you can supply a list of disabled modules by creating ``custom.py`` at the root of the source, with the contents similar to the following:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:116
-msgid ":ref:`doc_overriding_build_options`."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:119
-msgid "Optimizing for size instead of speed"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:121
-msgid "Godot 3.1 onwards allows compiling using size optimizations (instead of speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:128
-msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:131
-msgid "Compiling with link-time optimization"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:133
-msgid "Enabling link-time optimization produces more efficient binaries, both in terms of performance and file size. It works by eliminating duplicate template functions and unused code. It can currently be used with the GCC and MSVC compilers:"
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:142
-msgid "Linking becomes much slower and more RAM consuming with this option, so it should be used only for release builds."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:146
+#: ../../docs/development/compiling/optimizing_for_size.rst:24
 msgid "Stripping binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:148
-msgid "If you build from source, remember to strip debug symbols from binaries:"
+#: ../../docs/development/compiling/optimizing_for_size.rst:26
+msgid "**Space savings:** Very high"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:27
+#: ../../docs/development/compiling/optimizing_for_size.rst:56
+#: ../../docs/development/compiling/optimizing_for_size.rst:72
+#: ../../docs/development/compiling/optimizing_for_size.rst:96
+#: ../../docs/development/compiling/optimizing_for_size.rst:113
+msgid "**Difficulty:** Easy"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:28
+#: ../../docs/development/compiling/optimizing_for_size.rst:73
+msgid "**Performed in official builds:** Yes"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:30
+msgid "If you build Windows (MinGW), Linux or macOS binaries from source, remember to strip debug symbols from binaries by installing the ``strip`` package from your distribution then running:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:38
+msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:40
+msgid "This will reduce the size of compiled binaries by a factor between 5× and 10×. The downside is that crash backtraces will no longer provide accurate information (which is useful for troubleshooting the cause of a crash). :ref:`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to display function names (this does not affect the built-in GDScript profiler)."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:48
+msgid "The above command will not work on Windows binaries compiled with MSVC and platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on the SCons command line when compiling."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:53
+msgid "Optimizing for size instead of speed"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:55
+#: ../../docs/development/compiling/optimizing_for_size.rst:71
+msgid "**Space savings:** High"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:57
+msgid "**Performed in official builds:** Yes, but only for HTML5"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:59
+msgid "Godot 3.1 onwards allows compiling using size optimizations (instead of speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:66
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:69
+msgid "Compiling with link-time optimization"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:75
+msgid "Enabling link-time optimization produces more efficient binaries, both in terms of performance and file size. It works by eliminating duplicate template functions and unused code. It can currently be used with the GCC and MSVC compilers:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:84
+msgid "Linking becomes much slower and more RAM-consuming with this option, so it should be used only for release builds:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:87
+msgid "When compiling the ``master`` branch, you need to have at least 8 GB of RAM available for successful linking with LTO enabled."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:89
+msgid "When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM available for successful linking with LTO enabled."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:93
+msgid "Disabling 3D"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:95
+#: ../../docs/development/compiling/optimizing_for_size.rst:112
+msgid "**Space savings:** Moderate"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:97
+#: ../../docs/development/compiling/optimizing_for_size.rst:114
+#: ../../docs/development/compiling/optimizing_for_size.rst:128
+msgid "**Performed in official builds:** No"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:99
+msgid "For 2D games, having the whole 3D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:105
+msgid "Tools must be disabled in order to use this flag, as the editor is not designed to operate without 3D support. Without it, the binary size can be reduced by about 15%."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:110
+msgid "Disabling advanced GUI nodes"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:116
+msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:124
+msgid "Disabling unwanted modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:126
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:127
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:130
+msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:137
+msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:145
+msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, regex support, or theora/webm to play videos)."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:150
+msgid "Alternatively, you can supply a list of disabled modules by creating ``custom.py`` at the root of the source, with the contents similar to the following:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:193
+msgid ":ref:`doc_overriding_build_options`."
 msgstr ""

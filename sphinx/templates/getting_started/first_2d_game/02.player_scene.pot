@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "Sprite animation"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:56
-msgid "Click on the ``Player`` node and add an :ref:`AnimatedSprite2D <class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite2D`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Frames`` property in the Inspector and click \"[empty]\" -> \"New SpriteFrames\". Click again to open the \"SpriteFrames\" panel:"
+msgid "Click on the ``Player`` node and add an :ref:`AnimatedSprite <class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Frames`` property in the Inspector and click \"[empty]\" -> \"New SpriteFrames\". Click again to open the \"SpriteFrames\" panel:"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:67
@@ -77,7 +77,7 @@ msgid "On the left is a list of animations. Click the \"default\" one and rename
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:76
-msgid "The player images are a bit too large for the game window, so we need to scale them down. Click on the ``AnimatedSprite2D`` node and set the ``Scale`` property to ``(0.5, 0.5)``. You can find it in the Inspector under the ``Node2D`` heading."
+msgid "The player images are a bit too large for the game window, so we need to scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` property to ``(0.5, 0.5)``. You can find it in the Inspector under the ``Node2D`` heading."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:83

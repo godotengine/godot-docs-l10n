@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:4
+msgid "Exporting for Windows"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:6
+msgid "The simplest way to distribute a game for PC is to copy the executable (``godot.exe``), compress the folder and send it to someone else. However, this is often not desired."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:10
+msgid "Godot offers a more elegant approach for PC distribution when using the export system. When exporting for Windows, the exporter takes all the project files and creates a ``data.pck`` file. This file is bundled with a specially optimized binary that is smaller, faster and does not contain the editor and debugger."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:16
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:18
+msgid "To enable code signing, you must have the ``Windows 10 SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:19
+msgid "Download the Godot export templates. Use the Godot menu: ``Editor > Manage Export Templates``."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:23
+msgid "If you export for Windows with embedded PCK files, you will not be able to sign the program as it will break."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:26
+msgid "On Windows, PCK embedding is also known to cause false positives in antivirus programs. Therefore, it's recommended to avoid using it unless you're distributing your project via Steam as it bypasses code signing and antivirus checks."
+msgstr ""
