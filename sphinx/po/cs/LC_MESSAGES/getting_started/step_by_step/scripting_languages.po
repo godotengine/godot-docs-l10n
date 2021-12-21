@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Scripting languages"
-msgstr "Skriptování scény"
+msgstr "Skriptovací jazyky"
 
 msgid ""
 "This lesson will give you an overview of the available scripting languages "
@@ -62,9 +61,8 @@ msgid ""
 "and developers."
 msgstr ""
 
-#, fuzzy
 msgid "Which language should I use?"
-msgstr "Co je GDScript a proč bych jej měl používat?"
+msgstr "Jaký jazyk mám použít?"
 
 msgid ""
 "If you're a beginner, we recommend to **start with GDScript**. We made this "
@@ -101,7 +99,6 @@ msgstr ""
 msgid "Blazing fast compilation and loading times."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Tight editor integration, with code completion for nodes, signals, and more "
 "information from the scene it's attached to."
@@ -109,15 +106,14 @@ msgstr ""
 "Díky integrovanému editoru je potěšením pracovat s automatickým dokončováním "
 "kódu pro uzly, signály a ostaní prvky právě editované scény."
 
-#, fuzzy
 msgid ""
 "Built-in vector and transform types, making it efficient for heavy use of "
 "linear algebra, a must for games."
 msgstr ""
 "Má vestavěné vektorové typy (například vektory, transformace atd.), Díky "
-"čemuž je efektivní pro náročné použití lineární algebry."
+"tomuto je efektivní pro náročné použití lineární algebry, což je pro hry "
+"nezbytné."
 
-#, fuzzy
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages. This "
 "is one of the features we couldn't provide easily with a third-party "
@@ -165,7 +161,6 @@ msgstr ""
 msgid ".NET / C#"
 msgstr ".NET / C #"
 
-#, fuzzy
 msgid ""
 "As Microsoft's `C# <https://en.wikipedia.org/wiki/"
 "C_Sharp_(programming_language)>`_ is a favorite amongst game developers, we "
@@ -173,11 +168,12 @@ msgid ""
 "libraries written for it. We could add support for it thanks to a generous "
 "donation from Microsoft."
 msgstr ""
-"Protože Microsoft C # je mezi vývojáři her oblíbený, přidali jsme pro něj "
-"oficiální podporu. C # je vyspělý jazyk ve kterém jsou napsány tuny aplikaci "
-"a podpora byla přidána díky štědrému daru od společnosti Microsoft."
+"Protože Microsoft `C# <https://en.wikipedia.org/wiki/"
+"C_Sharp_(programming_language)>`_ je mezi vývojáři her oblíbený, přidali "
+"jsme pro něj oficiální podporu. C # je vyspělý jazyk ve kterém jsou napsány "
+"tuny aplikaci a podpora byla přidána díky štědrému daru od společnosti "
+"Microsoft."
 
-#, fuzzy
 msgid ""
 "C# offers a good tradeoff between performance and ease of use, although you "
 "should be aware of its garbage collector."
@@ -191,7 +187,6 @@ msgid ""
 "download/>`_ page."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
 "theory, you can use any third-party .NET library or framework in Godot, as "
@@ -241,33 +236,29 @@ msgstr ""
 msgid "C and C++ via GDNative"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "GDNative allows you to write game code in C or C++ without needing to "
 "recompile or even restart Godot."
 msgstr ""
-"A konečně, jeden z našich nejzářivějších přídavků pro verzi 3.0: GDNative "
-"umožňuje skriptování v C ++, aniž by bylo nutné překompilovat (nebo dokonce "
-"restartovat) Godota."
+"GDNative umožňuje skriptování v C ++, aniž by bylo nutné překompilovat (nebo "
+"dokonce restartovat) Godota."
 
-#, fuzzy
 msgid ""
 "You can use any version of the language or mix compiler brands and versions "
 "for the generated shared libraries, thanks to our use of an internal C API "
 "Bridge."
 msgstr ""
 "Lze použít libovolnou verzi C ++ a mix kompilátorů či verzí pro vygenerované "
-"sdílené knihovny funguje perfektně díky našemu použití interního C API."
+"sdílené knihovny funguje perfektně díky našemu použití interního C API "
+"můstku."
 
-#, fuzzy
 msgid ""
 "This language is the best choice for performance. You don't need to use it "
 "throughout an entire game, as you can write other parts in GDScript, C#, or "
 "VisualScript."
 msgstr ""
 "Tento jazyk je nejlepší volbou pro výkon a nemusí být používán v celé hře, "
-"další části lze psát v GDScriptu nebo Visual Scriptu. Nicméně, API je čisté "
-"a snadno se používá, většinou se totiž podobá Godotovu skutečnému C ++ API."
+"další části lze psát v GDScriptu, C# nebo Visual Scriptu."
 
 msgid ""
 "When working with GDNative, the available types, functions, and properties "

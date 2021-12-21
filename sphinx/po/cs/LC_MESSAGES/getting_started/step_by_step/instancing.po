@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating instances"
-msgstr "Úpravy instancí"
+msgstr "Vytváření instancí"
 
 msgid ""
 "In the previous part, we saw that a scene is a collection of nodes organized "
@@ -38,7 +37,7 @@ msgstr ""
 msgid ""
 "Here's the example of a ball. It's composed of a :ref:`RigidBody2D "
 "<class_RigidBody2D>` node as its root named Ball, which allows the ball to "
-"fall and bounce on walls, a :ref:`Sprite2D <class_Sprite>` node, and a :ref:"
+"fall and bounce on walls, a :ref:`Sprite <class_Sprite>` node, and a :ref:"
 "`CollisionShape2D <class_CollisionShape2D>`."
 msgstr ""
 
@@ -61,26 +60,24 @@ msgid ""
 "exposed by the source scene."
 msgstr ""
 
-#, fuzzy
 msgid "In practice"
 msgstr "Osvědčené postupy"
 
-#, fuzzy
 msgid ""
 "Let's use instancing in practice to see how it works exactly in Godot. We "
 "invite you to download the ball's sample project we prepared for you: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Chcete-li se dozvědět, jak funguje vytváření instancí, začněte stažením "
-"ukázkového projektu: :download:`instancing.zip <files / instancing.zip>`."
+"Chcete-li se dozvědět, jak v Godotu funguje vytváření instancí, začněte "
+"stažením ukázkového projektu ball, který jsme pro vás připravili: :download:"
+"`instancing.zip <files / instancing.zip>`."
 
-#, fuzzy
 msgid ""
 "Extract the archive on your computer. Then, open Godot, and in the project "
 "manager, click the Import button to import the project."
 msgstr ""
 "Rozbalte tento projekt kdekoli chcete. Pak otevřete Godot a přidejte tento "
-"projekt do projektového manažera pomocí tlačítka \"Importovat\":"
+"projekt do projektového manažera pomocí tlačítka \"Importovat\"."
 
 msgid ""
 "In the pop-up that appears, click the browse button and navigate to the "
@@ -109,9 +106,8 @@ msgstr ""
 msgid "Double-click the ball scene to instance it."
 msgstr ""
 
-#, fuzzy
 msgid "The ball appears in the top-left corner of the viewport."
-msgstr "Logo se objeví v horní části obrazovky."
+msgstr "Koule se zobrazí v levém horním rohu okna zobrazení."
 
 msgid "Click on it and drag it towards the center of the view."
 msgstr ""
@@ -125,10 +121,8 @@ msgid ""
 "command. Click and drag to move the new ball to a different location."
 msgstr ""
 
-#, fuzzy
 msgid "You can repeat this process until you have several in the scene."
-msgstr ""
-"Šedé uzly nelze přejmenovat. To vám říká, že pocházejí z rodičovské scény"
+msgstr "Tento postup můžete opakovat, dokud jich na scéně nebude několik."
 
 msgid ""
 "Play the game again. You should now see every ball fall independently from "
@@ -136,9 +130,8 @@ msgid ""
 "of a template scene."
 msgstr ""
 
-#, fuzzy
 msgid "Editing scenes and instances"
-msgstr "Úpravy instancí"
+msgstr "Úpravy scén a instancí"
 
 msgid "There is more to instances. With this feature, you can:"
 msgstr ""
@@ -188,7 +181,6 @@ msgstr ""
 msgid "A grey \"revert\" button appears next to the adjusted property."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "This icon indicates you are overriding a value from the source packed scene. "
 "Even if you modify the property in the original scene, the value override "
@@ -197,10 +189,11 @@ msgid ""
 msgstr ""
 "Všimněte si, že vedle upravené vlastnosti se zobrazí šedé tlačítko "
 "„obnovit“. Je-li toto tlačítko k dispozici, znamená to, že jste v instanci "
-"scény upravili vlastnost tak, aby přepsala svoji hodnotu v uložených "
-"vlastnostech scény. I když je tato vlastnost modifikována ve scéně původni, "
-"zde zůstane upravená hodnota. Stisknutím tlačítka pro obnovení vrátíte "
-"vlastnost na hodnotu v uložené scéně."
+"scény upravili vlastnost originální scény tj tak, aby přepsala svoji hodnotu "
+"v uložených vlastnostech upravené scény. I když je tato vlastnost "
+"modifikována ve scéně původni, zde v instanci zůstane hodnota upravená . "
+"Stisknutím tlačítka pro obnovení vrátíte vlastnost na hodnotu v uložené "
+"scéně."
 
 msgid ""
 "Rerun the game and notice how this ball now falls much faster than the "
@@ -236,21 +229,18 @@ msgid ""
 "game and structure your code around them."
 msgstr ""
 
-#, fuzzy
 msgid "For example, you could break down a shooter game like so:"
 msgstr "Například takhle by se dala představit jednoduchá střílečka:"
 
-#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any type of game. Each "
 "rectangle represents an entity that's visible in the game from the player's "
 "perspective. The arrows tell you which scene owns which."
 msgstr ""
 "S takovým diagramem můžete přijít pro téměř jakoukoli hru. Zakreslete si ty "
-"části hry, které si můžete vizualizovat, a poté přidejte šipky znázorňující "
-"vlastnictví jedné komponenty druhou."
+"části hry, které jsou viditelné z perspektivy hráče, a poté přidejte šipky "
+"znázorňující vlastnictví jednoho objektu druhým."
 
-#, fuzzy
 msgid ""
 "Once you have a diagram, we recommended creating a scene for each element "
 "listed in it to develop your game. You'll use instancing, either by code or "
@@ -258,9 +248,9 @@ msgid ""
 msgstr ""
 "Jakmile budete mít schéma, doporučeným postupem pro tvorbu hry je vytvoření "
 "scény pro každý prvek uvedený v diagramu. Pro vlastnické vztahy použijete "
-"vytváření instancí (buď kódem ve skriptu nebo přímo v editoru)."
+"vytváření instancí buď kódem ve skriptu nebo přímo v editoru. Takto vznikne "
+"strom scén."
 
-#, fuzzy
 msgid ""
 "Programmers tend to spend a lot of time designing abstract architectures and "
 "trying to fit components into it. Designing based on scenes makes "
@@ -277,13 +267,12 @@ msgstr ""
 "použití designu založeného na instancích scén znamená, že žádné další "
 "rozšiřování architektury kódem není většinou potřeba."
 
-#, fuzzy
 msgid ""
 "Here's the example of a scene diagram for an open-world game with tons of "
 "assets and nested elements:"
 msgstr ""
-"Podívejme se na další, poněkud složitější příklad hry typu open-world se "
-"spoustou zdrojů a vnořených prvků:"
+"Podívejme se na další příklad hry typu otevřený-svět se spoustou zdrojů a "
+"vnořených prvků:"
 
 msgid ""
 "Imagine we started by creating the room. We could make a couple of different "
@@ -294,7 +283,6 @@ msgid ""
 "one or more sub-scenes."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Later, we could create scenes representing guards and add them to the "
 "citadel. They would be indirectly added to the overall game world."
@@ -303,7 +291,6 @@ msgstr ""
 "a také je přidat do Citadely. V důsledku toho by byli nepřímo přidáni do "
 "celého herního světa."
 
-#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instantiate more scenes. We designed the editor to be "
@@ -326,11 +313,8 @@ msgid ""
 "handy uses. With scenes, it gives you:"
 msgstr ""
 
-#, fuzzy
 msgid "The ability to divide your game into reusable components."
-msgstr ""
-"Přeměňte lištu a počítadlo na opakovaně použitelné komponenty uživatelského "
-"rozhraní"
+msgstr "Možnost rozdělit hru na opakovaně použitelné komponenty."
 
 msgid "A tool to structure and encapsulate complex systems."
 msgstr ""

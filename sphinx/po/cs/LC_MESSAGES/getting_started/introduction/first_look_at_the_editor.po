@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "First look at Godot's editor"
-msgstr "Váš první pohled na Godotův editor"
+msgstr "Váš první pohled na Godot editor"
 
 msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
@@ -31,20 +30,17 @@ msgid ""
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
 
-#, fuzzy
 msgid "The Project manager"
 msgstr "Správce projektu"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab, \"Projects,\" you can manage existing projects, import or "
 "create new ones, and more."
 msgstr ""
-"Když spustíte Godot, první okno, které uvidíte, je Správce projektu. Protože "
-"nemáte žádné projekty, objeví se vyskakovací okno s dotazem, zda chcete "
-"otevřít knihovnu zdrojů, stačí kliknout na tlačítko Zrušit, podíváme se na "
-"to později."
+"Po spuštění Godotu se jako první zobrazí okno Správce projektu. Na výchozí "
+"kartě \"Projekty,\" můžete spravovat stávající projekty, importovat nebo "
+"vytvářet nové a další."
 
 msgid ""
 "At the top of the window, there is another tab named \"Templates\". You can "
@@ -68,14 +64,12 @@ msgid ""
 "along the window's top edge."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "In the center is the **viewport** with its **toolbar** at the top, where "
 "you'll find tools to move, scale, or lock the scene's nodes."
 msgstr ""
-"Uprostřed máte nahoře **Nástrojový pruh**, kde najdete nástroje pro přesun, "
-"škálování nebo zamknutí objektů scény. Mění se při přechodu na různé "
-"pracovní plochy."
+"Uprostřed se nachází **výřez** s **panelem nástrojů** v horní části, kde "
+"najdete nástroje pro přesouvání, škálování nebo uzamykání uzlů scény."
 
 msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
@@ -101,15 +95,14 @@ msgstr ""
 msgid "The **Inspector** allows you to edit the properties of a selected node."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The **bottom panel**, situated below the viewport, is the host for the debug "
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"**Dolní Panel** je hostitelem pro ladicí konzole, editor animace, audio "
-"mixer ... Tyto panely sou široké a mohou zabírat drahocenný prostor. To je "
-"důvod, proč jsou ve výchozím nastavení složeny."
+"**Dolní Panel**, situovaný pod výřezem, hostí ladicí konzoly, editor "
+"animace, audio mixer ... Tyto panely sou široké a mohou zabírat drahocenný "
+"prostor. To je důvod, proč jsou ve výchozím nastavení složeny."
 
 msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
@@ -119,7 +112,6 @@ msgstr ""
 msgid "The four main screens"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
@@ -127,26 +119,21 @@ msgstr ""
 "Nahoře jsou vidět čtyři tlačítka pro změnu pracovní plochy: 2D, 3D, Skript a "
 "AssetLib."
 
-#, fuzzy
 msgid ""
 "You'll use the **2D screen** for all types of games. In addition to 2D "
 "games, the 2D screen is where you'll build your interfaces."
 msgstr ""
 "Pracovní plochu **2D** budete používat pro všechny typy her. Kromě 2D her je "
 "2D pracoviště také místem, kde budete vytvářet uživatelské rozhraní pro vaše "
-"hry. Pro rychlý přístup stiskněte klávesy :kbd:`Ctrl+F1` (nebo :kbd:`Alt + "
-"1` v systému MacOS)."
+"hry."
 
-#, fuzzy
 msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
 msgstr ""
 "Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
-"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`Ctrl + F2` (nebo :"
-"kbd:`Alt + 2` v systému MacOS) ."
+"úrovní pro 3D hry."
 
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar. Clicking on it opens a list "
 "of options related to the 3D view."
@@ -154,7 +141,6 @@ msgstr ""
 "Všimněte si tlačítka Perspektivní pod panelem nástrojů, otevírá seznam "
 "možností souvisejících s 3D pohledem."
 
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
 "screen**."
@@ -167,7 +153,6 @@ msgid ""
 "completion, and built-in code reference."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open-source add-ons, "
 "scripts, and assets to use in your projects."
@@ -179,22 +164,18 @@ msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
 msgstr ""
 
-#, fuzzy
 msgid "Integrated class reference"
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Integrovaná reference třídy"
 
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Godot je vybaven integrovanou dokumentací pro třídy."
 
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Chcete-li hledat informace o třídě, metodě, vlastnosti, konstantě nebo "
-"signálu v enginu během psaní skriptu, stiskněte tlačítko \"Hledat Nápověda\" "
-"v pravém horním rohu pracovní plochy skriptu."
+"Informace o třídě, metodě, vlastnosti, konstantě nebo signálu můžete "
+"vyhledat některou z následujících metod:"
 
 msgid ""
 "Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."

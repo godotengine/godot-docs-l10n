@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Score and replay"
-msgstr "ScoreLabel"
+msgstr "分数与重玩"
 
 msgid ""
 "In this part, we'll add the score, music playback, and the ability to "
@@ -84,9 +83,8 @@ msgid ""
 "use it to set our game's font."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a UI theme"
-msgstr "创建主题"
+msgstr "创建 UI 主题"
 
 msgid ""
 "Once again, select the *UserInterface* node. In the *Inspector*, create a "
@@ -147,9 +145,8 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "Keeping track of the score"
-msgstr "从服务器获取数据"
+msgstr "跟踪得分"
 
 msgid ""
 "Let's work on the score next. Attach a new script to the *ScoreLabel* and "
@@ -227,9 +224,8 @@ msgid ""
 "keep your code simple. Programming is always a balancing act."
 msgstr ""
 
-#, fuzzy
 msgid "Retrying the game"
-msgstr "开始游戏"
+msgstr "重玩游戏"
 
 msgid ""
 "We'll now add the ability to play again after dying. When the player dies, "
@@ -283,27 +279,24 @@ msgid ""
 "color's alpha channel, that is to say, its opacity."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 msgid ""
 "Next, add a *Label* as a child of *Retry* and give it the *Text* \"Press "
 "Enter to retry.\""
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
 msgid ""
 "To move it and anchor it in the center of the screen, apply *Layout -> "
 "Center* to it."
 msgstr ""
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
 #, fuzzy
 msgid "Coding the retry option"
@@ -339,9 +332,8 @@ msgid ""
 "scene."
 msgstr ""
 
-#, fuzzy
 msgid "Adding music"
-msgstr "添加声音"
+msgstr "添加音乐"
 
 msgid ""
 "To add music that plays continuously in the background, we're going to use "
@@ -365,18 +357,16 @@ msgid ""
 "Create a new scene by going to the *Scene* menu and clicking *New Scene*."
 msgstr ""
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
 msgid ""
 "Click the *Other Node* button to create an *AudioStreamPlayer* and rename it "
 "to *MusicPlayer*."
 msgstr ""
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|image19|"
 
 msgid ""
 "We included a music soundtrack in the ``art/`` directory, ``House In a "
@@ -385,9 +375,8 @@ msgid ""
 "the start of the game."
 msgstr ""
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
 
 #, fuzzy
 msgid "Save the scene as ``MusicPlayer.tscn``."
@@ -407,9 +396,8 @@ msgid ""
 "tscn``. Then, click the *Add* button on the right to register the node."
 msgstr ""
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|image21|"
 
 msgid ""
 "If you run the game now, the music will play automatically. And even when "
@@ -422,9 +410,8 @@ msgid ""
 "*Remote* and *Local*."
 msgstr ""
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|image22|"
 
 msgid ""
 "The *Remote* tab allows you to visualize the node tree of your running game. "
@@ -432,9 +419,8 @@ msgid ""
 "the instantiated mobs at the bottom."
 msgstr ""
 
-#, fuzzy
 msgid "|image23|"
-msgstr "|image2|"
+msgstr "|image23|"
 
 msgid ""
 "At the top are the autoloaded *MusicPlayer* and a *root* node, which is your "
@@ -447,4 +433,4 @@ msgid ""
 msgstr ""
 
 msgid "Here is the complete ``Main.gd`` script for reference."
-msgstr ""
+msgstr "这是一个仅供参考的 ``Main.gd`` 脚本。"

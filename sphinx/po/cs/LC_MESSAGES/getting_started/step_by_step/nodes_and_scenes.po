@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Uzly a zdroje"
+msgstr "Uzly a scény"
 
 msgid ""
 "In :ref:`doc_key_concepts_overview`, we saw that a Godot game is a tree of "
@@ -36,27 +35,21 @@ msgid ""
 "image, play a sound, represent a camera, and much more."
 msgstr ""
 
-#, fuzzy
 msgid "All nodes have the following attributes:"
-msgstr "Existují následující omezení:"
+msgstr "Všechny uzly mají následující atributy:"
 
-#, fuzzy
 msgid "A name."
-msgstr "Název akce"
+msgstr "Jméno."
 
-#, fuzzy
 msgid "Editable properties."
-msgstr "Má editovatelné vlastnosti."
+msgstr "Editovatelné vlastnosti."
 
-#, fuzzy
 msgid "They receive callbacks to update every frame."
 msgstr "Může obdržet pokyn (callback), aby zpracoval každý snímek (frame)."
 
-#, fuzzy
 msgid "You can extend them with new properties and functions."
-msgstr "Může být rozšířen o další funkce."
+msgstr "Můžete je rozšířit o nové vlastnosti a funkce."
 
-#, fuzzy
 msgid "You can add them to another node as a child."
 msgstr "Může být přidán do dalšího uzlu jako jeho potomek."
 
@@ -86,7 +79,6 @@ msgid ""
 "interact, and more."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The Godot editor essentially is a **scene editor**. It has plenty of tools "
 "for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
@@ -96,7 +88,10 @@ msgid ""
 msgstr ""
 "V podstatě je editor Godotu **editorem scén**. Má spoustu nástrojů pro "
 "editaci 2D a 3D scén a uživatelských rozhraní, ale editor sám je založen na "
-"konceptu úpravy scény a uzlů, které tu scénu tvoří."
+"konceptu úpravy scény a uzlů, které tu scénu tvoří. Projekt v Godot může "
+"obsahovat tolik těchto scén, kolik potřebujete. Engine vyžaduje pouze jednu "
+"jako **hlavní scénu** vaší aplikace. Tuto scénu Godot načte jako první, když "
+"vy nebo hráč spustíte hru."
 
 msgid "On top of acting like nodes, scenes have the following attributes:"
 msgstr ""
@@ -112,9 +107,8 @@ msgid ""
 "five or ten characters in your game, created from your Character scene."
 msgstr ""
 
-#, fuzzy
 msgid "Creating your first scene"
-msgstr "Vytváření klidové polohy"
+msgstr "Vytvoření vaší první scény"
 
 msgid ""
 "Let's create our first scene with a single node. To do so, you will need to "
@@ -122,7 +116,6 @@ msgid ""
 "empty editor."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
@@ -142,7 +135,6 @@ msgid ""
 "text on the screen."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Press the \"Add Child Node\" button at the top left of the Scene dock to "
 "create a node. This button adds the chosen node as a child of the currently "
@@ -154,11 +146,10 @@ msgstr ""
 "podřízený aktuálně vybraného uzlu (nebo v prázdné scéně jako „kořenový“ "
 "uzel)."
 
-#, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
 "Otevře se dialog Vytvořit uzel, kde se zobrazí dlouhý seznam uzlů, které lze "
-"vytvořit:"
+"vytvořit."
 
 msgid "Select the Label node. You can type its name to filter down the list."
 msgstr ""
@@ -176,17 +167,15 @@ msgid ""
 "right."
 msgstr ""
 
-#, fuzzy
 msgid "Changing a node's properties"
-msgstr "Signály a vlastnosti"
+msgstr "Změna vlastností uzlu"
 
-#, fuzzy
 msgid ""
 "The next step is to change the Label's \"Text\" property. Let's change it to "
 "\"Hello World\"."
 msgstr ""
 "Dalším krokem bude změna vlastnosti „Text“ popisku. Pojďme to změnit na "
-"„Hello World“:"
+"„Hello World“."
 
 msgid ""
 "Head to the Inspector dock on the right of the viewport. Click inside the "
@@ -206,17 +195,15 @@ msgid ""
 "to the center of the view delimited by the rectangle."
 msgstr ""
 
-#, fuzzy
 msgid "Running the scene"
-msgstr "Spuštění hry"
+msgstr "Spuštění scény"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6`."
 msgstr ""
 "Dobře, všechno je připraveno na spuštění scény! Stiskněte tlačítko Přehrát "
-"scénu na horním panelu (nebo stiskněte :kbd:`F6`):"
+"scénu na horním panelu (nebo stiskněte :kbd:`F6`)."
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr ""
@@ -242,7 +229,6 @@ msgstr ""
 msgid "Close the window or press :kbd:`F8` to quit the running scene."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to Project -> Project Settings -> Display -> Window "
@@ -252,7 +238,6 @@ msgstr ""
 "monitorů, přejděte na **Projekt → Nastavení projektu → Displej → Okno** a "
 "poté povolte **Povolit Hidpi** pod **Dpi**."
 
-#, fuzzy
 msgid "Setting the main scene"
 msgstr "Nastavení hlavní scény"
 

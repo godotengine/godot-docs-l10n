@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,14 +44,106 @@ msgstr ""
 "ことについてのチュートリアルを読むことをおすすめします。"
 
 msgid ""
-"You can use the online `Godot build options generator <https://godot-build-"
-"options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
-"SCons options. You can then save this file and place it at the root of your "
-"Godot source directory."
+"The options below are listed from the most important (greatest size savings) "
+"to the least important (lowest size savings)."
+msgstr ""
+
+msgid "Stripping binaries"
+msgstr "バイナリの除去"
+
+msgid "**Space savings:** Very high"
+msgstr ""
+
+msgid "**Difficulty:** Easy"
+msgstr ""
+
+msgid "**Performed in official builds:** Yes"
+msgstr ""
+
+msgid ""
+"If you build Windows (MinGW), Linux or macOS binaries from source, remember "
+"to strip debug symbols from binaries by installing the ``strip`` package "
+"from your distribution then running:"
+msgstr ""
+
+msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
+msgstr ""
+
+msgid ""
+"This will reduce the size of compiled binaries by a factor between 5× and "
+"10×. The downside is that crash backtraces will no longer provide accurate "
+"information (which is useful for troubleshooting the cause of a crash). :ref:"
+"`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to "
+"display function names (this does not affect the built-in GDScript profiler)."
+msgstr ""
+
+msgid ""
+"The above command will not work on Windows binaries compiled with MSVC and "
+"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
+"the SCons command line when compiling."
+msgstr ""
+
+msgid "Optimizing for size instead of speed"
+msgstr "スピードの代わりにサイズを最適化する"
+
+msgid "**Space savings:** High"
+msgstr ""
+
+msgid "**Performed in official builds:** Yes, but only for HTML5"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
+"するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr ""
+"WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
+"なっています。"
+
+msgid "Compiling with link-time optimization"
+msgstr "リンク時最適化を使用したコンパイル"
+
+msgid ""
+"Enabling link-time optimization produces more efficient binaries, both in "
+"terms of performance and file size. It works by eliminating duplicate "
+"template functions and unused code. It can currently be used with the GCC "
+"and MSVC compilers:"
+msgstr ""
+"リンク時最適化を有効にすると、パフォーマンスとファイルサイズの両方の点で、よ"
+"り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
+"排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
+
+#, fuzzy
+msgid ""
+"Linking becomes much slower and more RAM-consuming with this option, so it "
+"should be used only for release builds:"
+msgstr ""
+"このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
+"要があります。"
+
+msgid ""
+"When compiling the ``master`` branch, you need to have at least 8 GB of RAM "
+"available for successful linking with LTO enabled."
+msgstr ""
+
+msgid ""
+"When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM "
+"available for successful linking with LTO enabled."
 msgstr ""
 
 msgid "Disabling 3D"
 msgstr "3Dの無効化"
+
+msgid "**Space savings:** Moderate"
+msgstr ""
+
+msgid "**Performed in official builds:** No"
+msgstr ""
 
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
@@ -83,6 +175,12 @@ msgstr ""
 
 msgid "Disabling unwanted modules"
 msgstr "不要なモジュールの無効化"
+
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr ""
+
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr ""
 
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
@@ -118,49 +216,3 @@ msgstr ""
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:'doc_overriding_build_options'。"
-
-msgid "Optimizing for size instead of speed"
-msgstr "スピードの代わりにサイズを最適化する"
-
-#, fuzzy
-msgid ""
-"Godot 3.1 onwards allows compiling using size optimizations (instead of "
-"speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-"Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
-"するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
-
-msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr ""
-"WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
-"なっています。"
-
-msgid "Compiling with link-time optimization"
-msgstr "リンク時最適化を使用したコンパイル"
-
-msgid ""
-"Enabling link-time optimization produces more efficient binaries, both in "
-"terms of performance and file size. It works by eliminating duplicate "
-"template functions and unused code. It can currently be used with the GCC "
-"and MSVC compilers:"
-msgstr ""
-"リンク時最適化を有効にすると、パフォーマンスとファイルサイズの両方の点で、よ"
-"り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
-"排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
-
-#, fuzzy
-msgid ""
-"Linking becomes much slower and more RAM consuming with this option, so it "
-"should be used only for release builds."
-msgstr ""
-"このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
-"要があります。"
-
-msgid "Stripping binaries"
-msgstr "バイナリの除去"
-
-msgid ""
-"If you build from source, remember to strip debug symbols from binaries:"
-msgstr ""
-"ソースからビルドする場合は、バイナリからデバッグシンボルを削除することを忘れ"
-"ないでください:"

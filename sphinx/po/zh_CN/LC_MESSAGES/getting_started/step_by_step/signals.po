@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "信号"
 
-#, fuzzy
 msgid "Using Signals"
-msgstr "绑定信号"
+msgstr "使用信号"
 
 msgid ""
 "In this lesson, we will look at signals. They are messages that nodes emit "
@@ -70,22 +69,22 @@ msgid ""
 msgstr ""
 
 msgid ""
-"In the FileSystem dock, click and drag the ``Sprite2D.tscn`` file you saved "
+"In the FileSystem dock, click and drag the ``Sprite.tscn`` file you saved "
 "previously onto the Node2D to instantiate it."
 msgstr ""
 
 msgid ""
-"We want to add another node as a sibling of the Sprite2D. To do so, right-"
+"We want to add another node as a sibling of the Sprite. To do so, right-"
 "click on Node2D and select Add Child Node."
 msgstr ""
 
 msgid "Search for the Button node type and add it."
-msgstr ""
+msgstr "寻找并添加按钮（Button）节点类型。"
 
 msgid ""
 "The node is small by default. Click and drag on the bottom-right handle of "
 "the Button in the viewport to resize it."
-msgstr ""
+msgstr "按钮默认大小为“小”。点击并拖拽按钮右下角的手柄在视窗中重新设置大小。"
 
 #, fuzzy
 msgid ""
@@ -94,25 +93,23 @@ msgid ""
 msgstr "如果您没有看到变化, 请重新加载场景(关闭它并再次打开)."
 
 msgid "Click and drag on the button itself to move it closer to the sprite."
-msgstr ""
+msgstr "点击并拖拽按钮使其更接近精灵。"
 
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
 "Inspector."
-msgstr ""
+msgstr "你也可以通过更改在属性检查器中的文字（Text）属性给按钮写一个标签。"
 
-#, fuzzy
 msgid "Your scene tree and viewport should look like this."
-msgstr "您的场景树应该是这样的："
+msgstr "您的场景树和视窗应该是类似这样的。"
 
-#, fuzzy
 msgid "Connecting a signal in the editor"
-msgstr "用代码连接信号"
+msgstr "在编辑器中连接信号"
 
 msgid ""
-"Here, we want to connect the Button's \"pressed\" signal to our Sprite2D, "
-"and we want to call a new function that will toggle its motion on and off. "
-"We need to have a script attached to the Sprite2D node, which we do from the "
+"Here, we want to connect the Button's \"pressed\" signal to our Sprite, and "
+"we want to call a new function that will toggle its motion on and off. We "
+"need to have a script attached to the Sprite node, which we do from the "
 "previous lesson."
 msgstr ""
 
@@ -129,7 +126,7 @@ msgid "Double-click the \"pressed\" signal to open the node connection window."
 msgstr ""
 
 msgid ""
-"There, you can connect the signal to the Sprite2D node. The node needs a "
+"There, you can connect the signal to the Sprite node. The node needs a "
 "receiver method, a function that Godot will call when the Button emits the "
 "signal. The editor generates one for you. By convention, we name these "
 "callback methods \"_on_NodeName_signal_name\". Here, it'll be "
@@ -166,7 +163,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Our Sprite2D moves thanks to code in the ``_process()`` function. Godot "
+"Our Sprite moves thanks to code in the ``_process()`` function. Godot "
 "provides a method to toggle processing on and off: :ref:`Node.set_process() "
 "<class_Node_method_set_process>`. Another method of the Node class, "
 "``is_processing()``, returns ``true`` if idle processing is active. We can "
@@ -185,15 +182,14 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Your complete ``Sprite2D.gd`` code should look like the following."
-msgstr "您的场景树应该是这样的："
+msgid "Your complete ``Sprite.gd`` code should look like the following."
+msgstr "您完成的 ``Sprite2D.gd`` 代码应该是这样的。"
 
 #, fuzzy
 msgid ""
 "Run the scene now and click the button to see the sprite start and stop."
 msgstr "运行场景并按下按钮, 你应该得到以下结果:"
 
-#, fuzzy
 msgid "Connecting a signal via code"
 msgstr "用代码连接信号"
 
@@ -215,37 +211,42 @@ msgstr ""
 "在 **3D工作区** 中, 你可以使用网格, 灯光, 并设计3D游戏的关卡. 按 :kbd:`F2` "
 "(或 :kbd:`Alt + 2` 在macOS上)进入."
 
+#, fuzzy
 msgid ""
-"In the Scene dock, right-click on the Sprite2D node and add a new node. "
-"Search for Timer and add the corresponding node. Your scene should now look "
-"like this."
+"In the Scene dock, right-click on the Sprite node and add a new node. Search "
+"for Timer and add the corresponding node. Your scene should now look like "
+"this."
 msgstr ""
+"在“场景”面板中，右键点击 Sprite2D 节点并添加新节点。找到 Timer 并添加对应节"
+"点。你的场景现在应该类似这样。"
 
 msgid ""
 "With the Timer node selected, go to the Inspector and check the "
 "**Autostart** property."
-msgstr ""
+msgstr "选中 Timer 节点，在“检查器”中勾选\\ **Autostart**\\ （自动开启）属性。"
 
+#, fuzzy
 msgid ""
-"Click the script icon next to Sprite2D to jump back to the scripting "
-"workspace."
-msgstr ""
+"Click the script icon next to Sprite to jump back to the scripting workspace."
+msgstr "点击 Sprite2D 旁的脚本图标，返回脚本工作区。"
 
 msgid "We need to do two operations to connect the nodes via code:"
 msgstr ""
 
 #, fuzzy
-msgid "Get a reference to the Timer from the Sprite2D."
-msgstr "节点的引用, 该节点拥有要动画化的属性"
+msgid "Get a reference to the Timer from the Sprite."
+msgstr "从 Sprite2D 获取 Timer 的引用。"
 
 msgid "Call the Timer's ``connect()`` method."
-msgstr ""
+msgstr "调用 Timer 的 ``connect()`` 方法。"
 
 msgid ""
 "To connect to a signal via code, you need to call the ``connect()`` method "
 "of the node you want to listen to. In this case, we want to listen to the "
 "Timer's \"timeout\" signal."
 msgstr ""
+"要使用代码来连接信号，你需要调用所需监听节点的 ``connect()`` 方法。这里我们要"
+"监听的是 Timer 的“timeout”信号。"
 
 msgid ""
 "To get a reference to a node relative to the current one, we use the method :"
@@ -254,14 +255,14 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The function ``get_node()`` looks at the Sprite2D's children and gets nodes "
-"by their name. For example, if you renamed the Timer node to \"BlinkingTimer"
-"\" in the editor, you would have to change the call to "
+"The function ``get_node()`` looks at the Sprite's children and gets nodes by "
+"their name. For example, if you renamed the Timer node to \"BlinkingTimer\" "
+"in the editor, you would have to change the call to "
 "``get_node(\"BlinkingTimer\")``."
 msgstr ""
 
 msgid ""
-"We can now connect the Timer to the Sprite2D in the ``_ready()`` function."
+"We can now connect the Timer to the Sprite in the ``_ready()`` function."
 msgstr ""
 
 msgid ""
@@ -298,9 +299,8 @@ msgid ""
 "and you can connect to them like any other."
 msgstr ""
 
-#, fuzzy
 msgid "To emit a signal in your scripts, call ``emit_signal()``."
-msgstr "要通过代码发出信号, 使用 ``emit_signal`` 函数:"
+msgstr "要通过代码发出信号, 声明 ``emit_signal`` 函数:"
 
 #, fuzzy
 msgid ""

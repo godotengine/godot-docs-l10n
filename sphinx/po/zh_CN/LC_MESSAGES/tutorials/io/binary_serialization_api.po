@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,25 +30,26 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
-"Godot有一个基于Variant的简单序列化API. 它用于有效地将数据类型转换为字节数组. "
-"这个API用于 :ref:`class_File` 的 ``get_var`` 和 ``store_var`` 函数, 以及 :"
-"ref:`class_PacketPeer` 的包API. 这种格式 *不* 用于二进制场景和资源."
+"Godot 有一个基于 Variant 的简单序列化 API。它用于有效地将数据类型转换为字节数"
+"组。这个 API 用于 :ref:`class_File` 的 ``get_var`` 和 ``store_var`` 函数，以"
+"及 :ref:`class_PacketPeer` 的数据包 API。二进制场景和资源\\ *不使用*\\ 该格"
+"式。"
 
 msgid "Packet specification"
-msgstr "包规范"
+msgstr "数据包规格"
 
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
-"该数据包被设计为总是被填充到4个字节. 所有的值都是小端编码的. 所有数据包都有一"
-"个4字节的头, 代表一个整数, 指定数据的类型."
+"根据设计，数据包总是会被填充到 4 个字节。所有的值都是小端编码的。所有数据包都"
+"有一个 4 字节的头，代表一个整数，指定数据的类型。"
 
 msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
-msgstr "最低值的两个字节用于确定类型，而最高值的两个字节包含标志： ::"
+msgstr "两个低字节用于确定类型，而两个高字节则包含标志： ::"
 
 msgid "Type"
 msgstr "类型"
@@ -72,13 +73,13 @@ msgid "2"
 msgstr "2"
 
 msgid "integer"
-msgstr "integer"
+msgstr "整数"
 
 msgid "3"
 msgstr "3"
 
 msgid "float"
-msgstr "(单精度)浮点数"
+msgstr "浮点数"
 
 msgid "4"
 msgstr "4"
@@ -150,7 +151,7 @@ msgid "15"
 msgstr "15"
 
 msgid "node path"
-msgstr "node path"
+msgstr "节点路径"
 
 msgid "16"
 msgstr "16"
@@ -162,7 +163,7 @@ msgid "17"
 msgstr "17"
 
 msgid "object"
-msgstr "object"
+msgstr "对象"
 
 msgid "18"
 msgstr "18"
@@ -180,49 +181,49 @@ msgid "20"
 msgstr "20"
 
 msgid "raw array"
-msgstr "raw array"
+msgstr "原始数组"
 
 msgid "21"
 msgstr "21"
 
 msgid "int array"
-msgstr "int array"
+msgstr "int 数组"
 
 msgid "22"
 msgstr "22"
 
 msgid "real array"
-msgstr "real array"
+msgstr "实数数组"
 
 msgid "23"
 msgstr "23"
 
 msgid "string array"
-msgstr "string array"
+msgstr "字符串数组"
 
 msgid "24"
 msgstr "24"
 
 msgid "vector2 array"
-msgstr "vector2 array"
+msgstr "vector2 数组"
 
 msgid "25"
 msgstr "25"
 
 msgid "vector3 array"
-msgstr "vector3 array"
+msgstr "vector3 数组"
 
 msgid "26"
 msgstr "26"
 
 msgid "color array"
-msgstr "color array"
+msgstr "颜色数组"
 
 msgid "27"
 msgstr "27"
 
 msgid "max"
-msgstr "max"
+msgstr "最大值"
 
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
@@ -232,10 +233,10 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
-"之后是实际的数据包内容, 每种类型的数据包内容都不同. 请注意, 这是假设Godot是用"
-"单精度浮点数编译的, 这是默认的. 如果Godot是用双精度浮点数编译的, 那么数据结构"
-"中 \"float\" 字段的长度应该是8, 偏移量应该是 ``(offset - 4) * 2 + 4`` . "
-"\"float\" 类型本身总是使用双精度."
+"在此之后是实际的数据包内容，每种类型的数据包内容都不同。请注意，这里假设 "
+"Godot 是用单精度浮点数编译的，这也是默认的。如果 Godot 是用双精度浮点数编译"
+"的，那么数据结构中“浮点数”字段的长度应该是 8，偏移量应该是 ``(offset - 4) * "
+"2 + 4``\\ 。浮点数“float”类型本身总是使用双精度。"
 
 msgid "0: null"
 msgstr "0: null"
@@ -253,7 +254,7 @@ msgid "Description"
 msgstr "描述"
 
 msgid "Integer"
-msgstr "Integer"
+msgstr "整数"
 
 msgid "0 for False, 1 for True"
 msgstr "0 代表 False, 1 代表 True"
@@ -284,65 +285,65 @@ msgstr "3: :ref:`float<class_float>`"
 msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
-msgstr "如果没有设置flags(flags == 0)，浮点数将作为32位单精度发送:"
+msgstr "如果没有设置标志（flags == 0），浮点数将作为 32 位单精度发送："
 
 msgid "Float"
-msgstr "(单精度)浮点数"
+msgstr "浮点数"
 
 msgid "IEEE 754 single-precision float"
-msgstr "IEEE 754单精度浮点数"
+msgstr "IEEE 754 单精度浮点数"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
-"如果标志 ``ENCODE_FLAG_64`` 被设置(``flags & 1 == 1``)，浮点数将作为64位双精"
-"度数字发送:"
+"如果设置了 ``ENCODE_FLAG_64`` 标志（\\ ``flags & 1 == 1``\\ ），浮点数将作为 "
+"64 位双精度数字发送："
 
 msgid "IEEE 754 double-precision float"
-msgstr "IEEE 754双精度浮点数"
+msgstr "IEEE 754 双精度浮点数"
 
 msgid "4: :ref:`String<class_string>`"
 msgstr "4: :ref:`String<class_string>`"
 
 msgid "String length (in bytes)"
-msgstr "字符串长度 (字节)"
+msgstr "字符串长度（字节数）"
 
 msgid "X"
 msgstr "X"
 
 msgid "Bytes"
-msgstr "Bytes"
+msgstr "多字节"
 
 msgid "UTF-8 encoded string"
-msgstr "UTF-8编码字符串"
+msgstr "UTF-8 编码字符串"
 
 msgid "This field is padded to 4 bytes."
-msgstr "该字段会被填充成4个字节."
+msgstr "该字段会被填充到 4 个字节。"
 
 msgid "5: :ref:`Vector2<class_vector2>`"
 msgstr "5: :ref:`Vector2<class_vector2>`"
 
 msgid "X coordinate"
-msgstr "X坐标"
+msgstr "X 坐标"
 
 msgid "Y coordinate"
-msgstr "Y坐标"
+msgstr "Y 坐标"
 
 msgid "6: :ref:`Rect2<class_rect2>`"
 msgstr "6: :ref:`Rect2<class_rect2>`"
 
 msgid "X size"
-msgstr "X尺寸"
+msgstr "X 尺寸"
 
 msgid "Y size"
-msgstr "Y尺寸"
+msgstr "Y 尺寸"
 
 msgid "7: :ref:`Vector3<class_vector3>`"
 msgstr "7: :ref:`Vector3<class_vector3>`"
 
 msgid "Z coordinate"
-msgstr "Z坐标"
+msgstr "Z 坐标"
 
 msgid "8: :ref:`Transform2D<class_transform2d>`"
 msgstr "8: :ref:`Transform2D<class_transform2d>`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "File paths in Godot projects"
-msgstr "准备项目"
+msgstr "Godot 项目中的文件路径"
 
 msgid ""
 "This page explains how file paths work inside Godot projects. You will learn "
 "how to access paths in your projects using the ``res://`` and ``user://`` "
 "notations and where Godot stores user files on your hard-drive."
 msgstr ""
+"本页面会讲解 Godot 项目中文件路径的工作原理。你会学到如何在项目中使用 "
+"``res://`` 和 ``user://`` 访问路径，以及 Godot 会在硬盘的哪些位置存储用户文"
+"件。"
 
 msgid "Path separators"
 msgstr "路径分隔符"
@@ -44,9 +46,8 @@ msgid ""
 "``C:/Projects``."
 msgstr "像 ``C:\\Projects`` 这样的路径将变成 ``C:/Projects``\\ 。"
 
-#, fuzzy
 msgid "Accessing files in the project folder"
-msgstr "将文件添加到项目"
+msgstr "访问项目文件夹中的文件"
 
 #, fuzzy
 msgid ""
@@ -67,9 +68,8 @@ msgstr ""
 "访问项目文件可以通过打开以 ``res://`` 为基的任何路径来实现。例如，位于项目文"
 "件夹根部的纹理可以从以下路径打开：\\ ``res://some_texture.png``\\ 。"
 
-#, fuzzy
 msgid "Accessing persistent user data"
-msgstr "访问场景节点"
+msgstr "访问持久化用户数据"
 
 msgid ""
 "To store persistent data files, like the player's save or settings, you want "
@@ -92,6 +92,12 @@ msgstr ""
 "Name`` 路径，在Windows上使用 ``%APPDATA%/Name`` 路径来表示用户路径。 "
 "``Name`` 取自项目设置中定义的应用程序名称，但它可被 :ref:`feature tags "
 "<doc_feature_tags>` 命令覆写 。"
+
+msgid ""
+"On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
+"the device via IndexedDB. (Interaction with the main filesystem can still be "
+"performed through the :ref:`JavaScript <class_JavaScript>` singleton.)"
+msgstr ""
 
 msgid "Editor data paths"
 msgstr "编辑器数据路径"

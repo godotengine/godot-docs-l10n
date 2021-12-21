@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "What is GDNative?"
-msgstr "它是什么？"
+msgstr "GDNative 是什么？"
 
 msgid "Introduction"
 msgstr "前言"
@@ -74,6 +73,9 @@ msgid ""
 "<doc_what_is_gdnative_third_party_bindings>`, you can use it with many other "
 "languages."
 msgstr ""
+"GDNative 并不仅限于 C 和 C++。得益于\\ :ref:`第三方绑定 "
+"<doc_what_is_gdnative_third_party_bindings>`\\ ，你也可以在很多其他语言中使"
+"用。"
 
 msgid ""
 "You can use the same compiled GDNative library in the editor and exported "
@@ -91,13 +93,12 @@ msgstr ""
 msgid "Advantages of C++ modules"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where "
 "GDNative isn't enough:"
 msgstr ""
-"支持将 :ref:`C++ 模块 <doc_custom_modules_in_c++>` 静态链接到引擎二进制文件"
-"中."
+"如果 GDNative 无法满足要求，我们推荐使用 :ref:`C++ 模块 "
+"<doc_custom_modules_in_c++>`\\ ："
 
 msgid ""
 "C++ modules provide deeper integration into the engine. GDNative's access is "
@@ -119,50 +120,45 @@ msgid ""
 "lot of communication through the scripting API."
 msgstr ""
 
-#, fuzzy
 msgid "Supported languages"
-msgstr "支持的文件"
+msgstr "支持的语言"
 
 msgid ""
 "The Godot developers officially support the following language bindings for "
 "GDNative:"
-msgstr ""
+msgstr "Godot 开发者官方支持以下 GDNative 语言绑定："
 
 msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
-msgstr ""
+msgstr "C++ :ref:`（教程） <doc_gdnative_cpp_example>`"
 
-#, fuzzy
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
-msgstr ":ref:`doc_input_examples`"
+msgstr "C :ref:`（教程） <doc_gdnative_c_example>`"
 
 msgid ""
 "There are no plans to support additional languages with GDNative officially. "
 "That said, the community offers several bindings for other languages (see "
 "below)."
 msgstr ""
+"没有官方支持更多 GDNative 语言的计划。不过社区提供了不少其他语言的绑定（见下"
+"文）。"
 
 msgid "The bindings below are developed and maintained by the community:"
-msgstr ""
+msgstr "以下绑定是由社区开发并维护的："
 
-#, fuzzy
 msgid "`D <https://github.com/godot-d/godot-d>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`D <https://github.com/godot-d/godot-d>`__"
 
-#, fuzzy
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
 
-#, fuzzy
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Nim <https://github.com/pragmagic/godot-nim>`__"
 
-#, fuzzy
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Python <https://github.com/touilleMan/godot-python>`__"
 
-#, fuzzy
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Rust <https://github.com/godot-rust/godot-rust>`__"
 
 msgid ""
 "Not all bindings mentioned here may be production-ready. Make sure to "
@@ -170,3 +166,5 @@ msgid ""
 "Also, double-check whether the binding is compatible with the Godot version "
 "you're using."
 msgstr ""
+"这里列出的绑定并不都能用于生产。请在新项目中使用前先做足调查。同时，请确定该"
+"绑定与你所使用的 Godot 版本兼容。"

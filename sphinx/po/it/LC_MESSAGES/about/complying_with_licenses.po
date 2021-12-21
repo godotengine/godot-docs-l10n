@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,38 +25,57 @@ msgstr "Accettazione delle licenze"
 msgid "What are licenses?"
 msgstr "Cosa sono le licenze?"
 
+#, fuzzy
 msgid ""
 "Godot is created and distributed under the `MIT License <https://opensource."
 "org/licenses/MIT>`_. It doesn't have a sole owner either, as every "
 "contributor that submits code to the project does it under this same license "
 "and keeps ownership of the contribution."
 msgstr ""
+"Godot è creato e distribuito sotto la `Licenza MIT <https://opensource.org/"
+"licenses/MIT>`_. Non ha nemmeno un unico proprietario, poiché ogni "
+"collaboratore che invia codice al progetto lo fa sotto questa stessa licenza "
+"e mantiene la proprietà del contributo."
 
+#, fuzzy
 msgid ""
 "The license is the legal requirement for you (or your company) to use and "
 "distribute the software (and derivative projects, including games made with "
 "it). Your game or project can have a different license, but it still needs "
 "to comply with the original one."
 msgstr ""
+"La licenza è il requisito legale per voi (o per la vostra azienda) per usare "
+"e distribuire il software (e i progetti derivati, compresi i giochi fatti "
+"con esso). Il tuo gioco o progetto può avere una licenza diversa, ma deve "
+"comunque essere conforme a quella originale."
 
 msgid "Requirements"
 msgstr "Requisiti"
 
+#, fuzzy
 msgid ""
 "In the case of the MIT license, the only requirement is to include the "
 "license text somewhere in your game or derivative project."
 msgstr ""
+"Nel caso della licenza MIT, l'unico requisito è di includere il testo della "
+"licenza da qualche parte nel vostro gioco o progetto derivato."
 
+#, fuzzy
 msgid "This text reads as follows:"
-msgstr ""
+msgstr "Questo testo recita come segue:"
 
+#, fuzzy
 msgid "This game uses Godot Engine, available under the following license:"
 msgstr ""
+"Questo gioco utilizza Godot Engine, disponibile con la seguente licenza:"
 
+#, fuzzy
 msgid ""
 "Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur. Copyright (c) "
 "2014-2021 Godot Engine contributors."
 msgstr ""
+"Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur. Copyright (c) "
+"2014-2021 collaboratori di Godot Engine."
 
 msgid ""
 "Permission is hereby granted, free of charge, to any person obtaining a copy "
@@ -67,10 +86,13 @@ msgid ""
 "furnished to do so, subject to the following conditions:"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "The above copyright notice and this permission notice shall be included in "
 "all copies or substantial portions of the Software."
 msgstr ""
+"L'avviso di copyright di cui sopra e il presente avviso di autorizzazione "
+"devono essere inclusi in tutte le copie o parti sostanziali del Software."
 
 msgid ""
 "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
@@ -82,11 +104,15 @@ msgid ""
 "IN THE SOFTWARE."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Your games do not need to be under the same license. You are free to release "
 "your Godot projects under any license and to create commercial games with "
 "the engine."
 msgstr ""
+"Non è necessario che i vostri giochi siano sotto la stessa licenza. Sei "
+"libero di rilasciare i tuoi progetti Godot sotto qualsiasi licenza e di "
+"creare giochi commerciali con il motore."
 
 msgid "Inclusion"
 msgstr "Inclusione"
@@ -97,21 +123,30 @@ msgid ""
 "common approaches (only need to implement one of them, not all)."
 msgstr ""
 
+#, fuzzy
 msgid "Credits screen"
-msgstr ""
+msgstr "Schermata dei crediti"
 
+#, fuzzy
 msgid ""
 "Include the above license text somewhere in the credits screen. It can be at "
 "the bottom after showing the rest of the credits. Most large studios use "
 "this approach with open source licenses."
 msgstr ""
+"Includi il testo della licenza di cui sopra da qualche parte nella schermata "
+"dei crediti. Può essere in basso dopo aver mostrato il resto dei crediti. La "
+"maggior parte dei grandi studio usa questo approccio con le licenze open "
+"source."
 
 msgid "Licenses screen"
 msgstr "Schermata Licenze"
 
+#, fuzzy
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
+"Alcuni giochi hanno un menu speciale (spesso nelle impostazioni) per "
+"visualizzare le licenze."
 
 msgid "Output log"
 msgstr ""
@@ -123,16 +158,18 @@ msgid ""
 "Android and HTML5 (but not iOS and UWP)."
 msgstr ""
 
+#, fuzzy
 msgid "Accompanying file"
-msgstr ""
+msgstr "File di accompagnamento"
 
 msgid ""
 "If the game is distributed on desktop platforms, a file containing the "
 "license can be added to the software that is installed to the user PC."
 msgstr ""
 
+#, fuzzy
 msgid "Printed manual"
-msgstr ""
+msgstr "Manuale stampato"
 
 msgid ""
 "If the game includes printed manuals, license text can be included there."
@@ -161,8 +198,9 @@ msgid ""
 "all the libraries listed below."
 msgstr ""
 
+#, fuzzy
 msgid "Here's a list of libraries requiring attribution:"
-msgstr ""
+msgstr "Ecco un elenco di librerie che richiedono l'attribuzione:"
 
 #, fuzzy
 msgid "FreeType"
@@ -193,8 +231,9 @@ msgid ""
 "level multiplayer. ENet has similar licensing terms as Godot:"
 msgstr ""
 
+#, fuzzy
 msgid "Copyright (c) 2002-2020 Lee Salzman"
-msgstr ""
+msgstr "Copyright (c) 2002-2020 Lee Salzman"
 
 msgid "MBedTLS"
 msgstr "MBedTLS"
@@ -225,7 +264,10 @@ msgid ""
 "under the License."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Keep in mind that Godot 2.x and 3.0 use `OpenSSL <https://www.openssl.org>`_ "
 "instead."
 msgstr ""
+"Tenete presente che Godot 2.x e 3.0 usano invece ` OpenSSL <https://www."
+"openssl.org>`_."

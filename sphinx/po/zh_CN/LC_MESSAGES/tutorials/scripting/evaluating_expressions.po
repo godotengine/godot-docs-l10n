@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Evaluating expressions"
-msgstr "Regression 的二分查找"
+msgstr "表达式估值"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
 "expressions."
-msgstr ""
+msgstr "Godot 提供了 :ref:`class_Expression` 类，可以用来对表达式进行估值。"
 
-#, fuzzy
 msgid "An expression can be:"
-msgstr "表达式节点可以："
+msgstr "表达式可以是："
 
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
-msgstr ""
+msgstr "类似 ``(2 + 4) * 16/4.0`` 的数学表达式。"
 
 msgid "A built-in method call like ``deg2rad(90)``."
-msgstr ""
+msgstr "类似 ``deg2rad(90)`` 的内置方法调用。"
 
 msgid ""
 "A method call on an user-provided script like ``update_health()``, if "
 "``base_instance`` is set to a value other than ``null`` when calling :ref:"
 "`Expression.execute() <class_Expression_method_execute>`."
 msgstr ""
+"调用 :ref:`Expression.execute() <class_Expression_method_execute>` 时如果 "
+"``base_instance`` 非 ``null``\\ ，那么调用用户提供脚本的方法，比如 "
+"``update_health()``\\ 。"
 
 msgid ""
 "The Expression class is independent from GDScript. It's available even if "
 "you compile Godot with the GDScript module disabled."
 msgstr ""
+"Expression 类是独立于 GDScript 的。即便禁用 GDScript 模块编译 Godot 也能使"
+"用。"
 
-#, fuzzy
 msgid "Basic usage"
-msgstr "基本使用"
+msgstr "基本用法"
 
 msgid "To evaluate a mathematical expression, use::"
-msgstr ""
+msgstr "要对数学表达式求值，请使用： ::"
 
-#, fuzzy
 msgid "The following operators are available:"
-msgstr "提供了以下方法，文档如下："
+msgstr "可以使用以下操作符："
 
 msgid "Operator"
 msgstr "操作符"
@@ -111,7 +112,7 @@ msgid "Arrays and dictionaries can be indexed like in GDScript::"
 msgstr ""
 
 msgid "Passing variables to an expression"
-msgstr ""
+msgstr "向表达式传递变量"
 
 msgid ""
 "You can pass variables to an expression. These variables will then become "
@@ -125,9 +126,8 @@ msgid ""
 "sensitive**."
 msgstr ""
 
-#, fuzzy
 msgid "Setting a base instance for the expression"
-msgstr "从服务器获取数据"
+msgstr "为表达式设置基础实例"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
@@ -163,16 +163,14 @@ msgid ""
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
 
-#, fuzzy
 msgid "Example script"
-msgstr "GDScript的示例"
+msgstr "示例脚本"
 
 msgid "The script below demonstrates what the Expression class is capable of::"
-msgstr ""
+msgstr "下面的脚本演示的是 Expression 类的功能： ::"
 
-#, fuzzy
 msgid "The output from the script will be::"
-msgstr "脚本的作用"
+msgstr "脚本的输出将会是： ::"
 
 msgid "Built-in functions"
 msgstr "内置函数"
@@ -182,6 +180,8 @@ msgid ""
 "the Expression class, even if no base instance is bound to the expression. "
 "The same parameters and return types are available."
 msgstr ""
+":ref:`class_@GDScript` 作用域中的大多数方法都可以在 Expression 类中使用，无需"
+"为表达式绑定基础实例。参数和返回类型也是一样的。"
 
 msgid ""
 "However, unlike GDScript, parameters are **always required** even if they're "
@@ -189,3 +189,5 @@ msgid ""
 "restriction on arguments doesn't apply to user-made functions when you bind "
 "a base instance to the expression."
 msgstr ""
+"然而，与 GDScript 不同，参数\\ **始终是必须的**\\ ，即使类参考中说明此参数为"
+"可选。不过，为表达式绑定了基础实例时，用户定义函数的参数没有此限制。"

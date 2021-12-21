@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Introduction to shaders"
-msgstr "导出简介"
+msgstr "着色器简介"
 
 #, fuzzy
 msgid ""
@@ -67,9 +66,8 @@ msgid ""
 "pixel it has to draw. More on that below."
 msgstr ""
 
-#, fuzzy
 msgid "Shaders in Godot"
-msgstr "Godot中的关键帧"
+msgstr "Godot 中的着色器"
 
 msgid ""
 "Godot provides a shading language based on the popular OpenGL Shading "
@@ -111,15 +109,14 @@ msgstr ""
 "\"light()\" 函数用于每个像素和每束光照. 它从 \"fragment()\" 函数和以前的运行"
 "中获取变量."
 
-#, fuzzy
 msgid ""
 "The ``light()`` function won't run if the ``vertex_lighting`` render mode is "
 "enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** is "
 "enabled in the Project Settings. It's enabled by default on mobile platforms."
 msgstr ""
-"如果启用了 ``vertex_lighting`` 渲染模式, 或者在项目设置中启用了 **Rendering渲"
-"染>Quality质量>Shading着色>强制顶点着色** , 则不会运行 ``light()`` 函数.(在移"
-"动平台上默认启用.)"
+"如果启用了 ``vertex_lighting`` 渲染模式，或者在项目设置中启用了 **Rendering "
+"> Quality > Shading > Force Vertex Shading**\\ （渲染 > 质量 > 着色 > 强制顶"
+"点着色），则不会运行 ``light()`` 函数。在移动平台上默认启用。"
 
 msgid "Shader types"
 msgstr "着色器类型"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgid ""
 msgstr "如果你对着色器不熟悉, 可以从阅读 :ref:`doc_what_are_shaders` 开始."
 
 msgid "Creating a VisualShader"
-msgstr "创建VisualShader"
+msgstr "创建 VisualShader"
 
 msgid ""
 "VisualShaders can be created in any :ref:`class_ShaderMaterial`. To begin "
@@ -111,7 +111,7 @@ msgstr ""
 "以看到代码. 这可以方便理解特定节点的作用, 以及如何在脚本中呈现."
 
 msgid "Using the Visual Shader Editor"
-msgstr "使用Visual Shader编辑器"
+msgstr "使用 Visual Shader 编辑器"
 
 msgid ""
 "By default, every new ``VisualShader`` will have an output node. Every node "
@@ -185,7 +185,7 @@ msgstr ""
 "以下是一些值得了解的特殊节点. 该清单并非详尽无遗, 可能会增加更多的节点和示例."
 
 msgid "Expression node"
-msgstr "表达式(``Expression``)节点"
+msgstr "Expression 节点"
 
 msgid ""
 "The ``Expression`` node allows you to write Godot Shading Language (GLSL-"
@@ -212,7 +212,7 @@ msgstr ""
 "的全部力量, 例如循环, 关键字 ``discard`` , 扩展类型, 等等. 例如:"
 
 msgid "Fresnel node"
-msgstr "Fresnel结点"
+msgstr "Fresnel 结点"
 
 msgid ""
 "The ``Fresnel`` node is designed to accept normal and view vectors and "
@@ -225,7 +225,7 @@ msgstr ""
 "边缘的照明效果."
 
 msgid "Boolean node"
-msgstr "布尔节点"
+msgstr "Boolean 节点"
 
 msgid ""
 "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to "
@@ -238,7 +238,7 @@ msgstr ""
 "部件."
 
 msgid "If node"
-msgstr "If node"
+msgstr "If 节点"
 
 msgid ""
 "The ``If`` node allows you to setup a vector which will be returned the "
@@ -252,7 +252,7 @@ msgstr ""
 "况下它等于最小值, 即 ``0.00001`` ), ``a > b`` 和 ``a < b`` ."
 
 msgid "Switch node"
-msgstr "切换节点"
+msgstr "Switch 节点"
 
 msgid ""
 "The ``Switch`` node returns a vector if the boolean condition is ``true`` or "

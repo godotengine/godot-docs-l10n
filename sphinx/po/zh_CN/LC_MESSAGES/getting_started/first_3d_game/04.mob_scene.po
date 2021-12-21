@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Designing the mob scene"
-msgstr "测试场景"
+msgstr "设计小怪场景"
 
 msgid ""
 "In this part, you're going to code the monsters, which we'll call mobs. In "
@@ -50,9 +49,8 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "Add a *CollisionShape*."
-msgstr "碰撞形状"
+msgstr "添加 *CollisionShape*\\ 。"
 
 msgid "|image2|"
 msgstr "|image2|"
@@ -86,9 +84,8 @@ msgid ""
 "game feels when you test it that should dictate their form and size."
 msgstr ""
 
-#, fuzzy
 msgid "Removing monsters off-screen"
-msgstr "删除旧的小怪"
+msgstr "移除离屏的怪物"
 
 msgid ""
 "We're going to spawn monsters at regular time intervals in the game level. "
@@ -133,9 +130,8 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "Coding the mob's movement"
-msgstr "制作FPS运动逻辑"
+msgstr "为小怪的移动编写代码"
 
 msgid ""
 "Let's implement the monster's motion. We're going to do this in two steps. "
@@ -144,9 +140,8 @@ msgid ""
 "the *Main* scene and call the function from there."
 msgstr ""
 
-#, fuzzy
 msgid "Attach a script to the *Mob*."
-msgstr "将脚本添加到节点."
+msgstr "为 *Mob* 附加脚本。"
 
 msgid "|image7|"
 msgstr "|image7|"
@@ -193,9 +188,8 @@ msgid ""
 "``rotated()`` method."
 msgstr ""
 
-#, fuzzy
 msgid "Leaving the screen"
-msgstr "测试场景"
+msgstr "离开屏幕"
 
 msgid ""
 "We still have to destroy the mobs when they leave the screen. To do so, "
@@ -219,9 +213,8 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "Connect the signal to the *Mob*."
-msgstr "将信号连接到函数"
+msgstr "将信号连接到 *Mob*\\ 。"
 
 msgid "|image10|"
 msgstr "|image10|"
@@ -236,7 +229,7 @@ msgstr ""
 msgid ""
 "Our monster is ready to enter the game! In the next part, you will spawn "
 "monsters in the game level."
-msgstr ""
+msgstr "我们的怪物已经准备好进入游戏了！在下一部分，你将在游戏关卡中生成怪物。"
 
 msgid "Here is the complete ``Mob.gd`` script for reference."
-msgstr ""
+msgstr "这是仅供参考的完整 ``Mob.gd`` 脚本。"

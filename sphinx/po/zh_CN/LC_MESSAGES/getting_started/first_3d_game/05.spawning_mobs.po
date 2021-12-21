@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Spawning monsters"
 msgstr "生成怪物"
 
@@ -32,7 +31,7 @@ msgstr "|image0|"
 msgid ""
 "Double-click on ``Main.tscn`` in the *FileSystem* dock to open the *Main* "
 "scene."
-msgstr ""
+msgstr "双击\\ *文件系统*\\ 停靠面板中的 ``Main.tscn`` 打开 *Main* 场景。"
 
 msgid ""
 "Before drawing the path, we're going to change the game resolution. Our game "
@@ -40,11 +39,8 @@ msgid ""
 "``720x540``, a nice little box."
 msgstr ""
 
-#, fuzzy
 msgid "Go to *Project -> Project Settings*."
-msgstr ""
-"要访问这个对话框, 选择 项目(Project) -> 项目设置(Project Settings). 现在就试"
-"试吧."
+msgstr "前往\\ *项目 -> 项目设置*\\ 。"
 
 msgid "|image1|"
 msgstr "|image1|"
@@ -53,18 +49,21 @@ msgid ""
 "In the left menu, navigate down to *Display -> Window*. On the right, set "
 "the *Width* to ``720`` and the *Height* to ``540``."
 msgstr ""
+"在左侧菜单中，找到 *Display -> Window*\\ （显示 -> 窗口）。在右侧将 *Width*"
+"\\ （宽度）设为 ``720``\\ 、\\ *Height*\\ （高度）设为 ``540``\\ 。"
 
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "Creating the spawn path"
-msgstr "创建动画"
+msgstr "创建生成路径"
 
 msgid ""
 "Like you did in the 2D game tutorial, you're going to design a path and use "
 "a *PathFollow* node to sample random locations on it."
 msgstr ""
+"与 2D 游戏教程中所做的一样，你要设计一条路径，使用 *PathFollow* 节点在路径上"
+"随机取位置。"
 
 msgid ""
 "In 3D though, it's a bit more complicated to draw the path. We want it to be "
@@ -83,9 +82,8 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "Adding placeholder cylinders"
-msgstr "占位符类型"
+msgstr "添加占位圆柱体"
 
 msgid ""
 "Let's add the placeholder meshes. Add a new *Spatial* node as a child of the "
@@ -98,6 +96,8 @@ msgstr "|image4|"
 
 msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
 msgstr ""
+"在\\ *检查器*\\ 中，为 *Mesh*\\ （网格）属性赋值 *CylinderMesh*\\ （圆柱体网"
+"格）。"
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -114,6 +114,8 @@ msgid ""
 "The grid is a bit distracting for me. You can toggle it by going to the "
 "*View* menu in the toolbar and clicking *View Grid*."
 msgstr ""
+"我觉得地面网格有一点分散注意力。你可以在工具栏的\\ *视图*\\ 菜单中点击\\ *查"
+"看网格*\\ 进行开关。"
 
 msgid "|image7|"
 msgstr "|image7|"
@@ -172,6 +174,8 @@ msgid ""
 "the *Scene* dock. To do so, you can click on the first one and Shift click "
 "on the last one."
 msgstr ""
+"我们可以同时更新所有四个圆柱体。在\\ *场景*\\ 面板中选中所有网格实例。要实现"
+"全选，可以先点击第一个，然后按住 Shift 点击最后一个。"
 
 msgid "|image12|"
 msgstr "|image12|"
@@ -180,6 +184,8 @@ msgid ""
 "In the *Inspector*, expand the *Material* section and assign a "
 "*SpatialMaterial* to slot *0*."
 msgstr ""
+"在\\ *检查器*\\ 中，展开 *Material*\\ （材质）部分，为 *0* 号槽分配一个 "
+"*SpatialMaterial*\\ 。"
 
 msgid "|image13|"
 msgstr "|image13|"
@@ -194,6 +200,8 @@ msgid ""
 "Expand the *Albedo* section and set the color to something that contrasts "
 "with the background, like a bright orange."
 msgstr ""
+"展开 *Albedo*\\ （反照率）部分，将颜色设为与背景色存在对比的颜色，比如亮橙"
+"色。"
 
 msgid "|image14|"
 msgstr "|image14|"
@@ -204,18 +212,16 @@ msgid ""
 "their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 msgid ""
 "Add a *Path* node as a child of *Main*. In the toolbar, four icons appear. "
 "Click the *Add Point* tool, the icon with the green \"+\" sign."
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
 msgid "You can hover any icon to see a tooltip describing the tool."
 msgstr ""
@@ -226,17 +232,14 @@ msgid ""
 "off, you can click and drag on it to reposition it."
 msgstr ""
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "Your path should look like this."
-msgstr "您的场景应如下所示:"
+msgstr "你的路径看起来应该类似这样。"
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
 msgid ""
 "To sample random positions on it, we need a *PathFollow* node. Add a "
@@ -245,20 +248,17 @@ msgid ""
 "them for."
 msgstr ""
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|image19|"
 
 msgid "With that, we're ready to code the spawn mechanism."
 msgstr ""
 
-#, fuzzy
 msgid "Spawning monsters randomly"
-msgstr "生成怪物"
+msgstr "随机生成怪物"
 
-#, fuzzy
 msgid "Right-click on the *Main* node and attach a new script to it."
-msgstr "选择控制节点, 给它附加一个脚本:"
+msgstr "右键点击 *Main* 节点，为它附加一个新脚本。"
 
 msgid ""
 "We first export a variable to the *Inspector* so that we can assign ``Mob."
@@ -282,25 +282,22 @@ msgid ""
 "from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
 msgstr ""
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
 
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
 msgstr ""
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|image21|"
 
 msgid ""
 "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
 "*Autostart* so it automatically starts when we run the game."
 msgstr ""
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|image22|"
 
 msgid ""
 "Timers emit a ``timeout`` signal every time they reach the end of their "
@@ -314,17 +311,14 @@ msgid ""
 "double-click the ``timeout`` signal."
 msgstr ""
 
-#, fuzzy
 msgid "|image23|"
-msgstr "|image2|"
+msgstr "|image23|"
 
-#, fuzzy
 msgid "Connect it to the *Main* node."
-msgstr "将 HUD 场景连接到 Main 场景"
+msgstr "将它连接到 *Main* 节点。"
 
-#, fuzzy
 msgid "|image24|"
-msgstr "|image2|"
+msgstr "|image24|"
 
 msgid ""
 "This will take you back to the script, with a new empty "
@@ -366,9 +360,8 @@ msgid ""
 "spawn and move in a straight line."
 msgstr ""
 
-#, fuzzy
 msgid "|image25|"
-msgstr "|image2|"
+msgstr "|image25|"
 
 msgid ""
 "For now, they bump and slide against one another when their paths cross. "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Character animation"
-msgstr "动画"
+msgstr "角色动画"
 
 msgid ""
 "In this final lesson, we'll use Godot's built-in animation tools to make our "
@@ -30,13 +29,11 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
-#, fuzzy
 msgid "We'll start with an introduction to using the animation editor."
-msgstr "动画功能介绍"
+msgstr "我们将会开始介绍动画编辑器的使用。"
 
-#, fuzzy
 msgid "Using the animation editor"
-msgstr "使用主题编辑器"
+msgstr "使用动画编辑器"
 
 msgid ""
 "The engine comes with tools to author animations in the editor. You can then "
@@ -61,14 +58,13 @@ msgid ""
 msgstr ""
 
 msgid "Let's create an animation. Click on *Animation -> New*."
-msgstr ""
+msgstr "让我们来创建一个动画。请点击\\ *动画 -> 新建*\\ 。"
 
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "Name the animation \"float\"."
-msgstr "运行动画"
+msgstr "将动画命名为“float”（漂浮）。"
 
 msgid "|image3|"
 msgstr "|image3|"
@@ -127,9 +123,8 @@ msgstr "您可以使用编辑器右上方的图标来翻转和旋转图块。"
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "The float animation"
-msgstr "动画"
+msgstr "漂浮动画"
 
 msgid ""
 "With the animation player node, you can animate most properties on as many "
@@ -204,9 +199,8 @@ msgid ""
 "`Shift + D`. Click the stop button or press :kbd:`S` to stop playback."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 msgid ""
 "You can see that the engine interpolates between your keyframes to produce a "
@@ -222,18 +216,16 @@ msgid ""
 "Click and drag around the first two keys in the timeline to box select them."
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
 msgid ""
 "You can edit the properties of both keys simultaneously in the *Inspector*, "
 "where you can see an *Easing* property."
 msgstr ""
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
 msgid ""
 "Click and drag on the curve, pulling it towards the left. This will make it "
@@ -241,9 +233,8 @@ msgid ""
 "time cursor reaches the next keyframe."
 msgstr ""
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
 msgid ""
 "Play the animation again to see the difference. The first half should "
@@ -253,26 +244,23 @@ msgstr ""
 msgid "Apply an ease-out to the second keyframe in the rotation track."
 msgstr ""
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|image19|"
 
 msgid ""
 "Do the opposite for the second translation keyframe, dragging it to the "
 "right."
 msgstr ""
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
 
 #, fuzzy
 msgid "Your animation should look something like this."
 msgstr "你最终的场景应该是这样的。"
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|image21|"
 
 msgid ""
 "Animations update the properties of the animated nodes every frame, "
@@ -290,9 +278,8 @@ msgid ""
 "up to offset it."
 msgstr ""
 
-#, fuzzy
 msgid "Controlling the animation in code"
-msgstr "控制动画"
+msgstr "使用代码控制动画"
 
 msgid ""
 "We can use code to control the animation playback based on the player's "
@@ -300,11 +287,10 @@ msgid ""
 msgstr ""
 
 msgid "Open the *Player*'s script by clicking the script icon next to it."
-msgstr ""
+msgstr "点击 *Player* 旁的脚本图标打开其脚本。"
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|image22|"
 
 msgid ""
 "In ``_physics_process()``, after the line where we check the ``direction`` "
@@ -322,9 +308,8 @@ msgid ""
 "Add it at the end of ``_physics_process()``."
 msgstr ""
 
-#, fuzzy
 msgid "Animating the mobs"
-msgstr "动画化一条鱼"
+msgstr "为小怪制作动画"
 
 msgid ""
 "Here's another nice trick with animations in Godot: as long as you use a "
@@ -337,22 +322,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We're going to duplicate the animation using a feature called \"merge from "
-"scene\"."
-msgstr ""
-
-msgid ""
-"Open the *Mob* scene, right-click on the *Mob* node and select *Merge From "
-"Scene*."
-msgstr ""
-
-#, fuzzy
-msgid "|image23|"
-msgstr "|image2|"
-
-msgid ""
-"Double-click ``Player.tscn`` to open it and import the *AnimationPlayer*. "
-"That's it; all monsters will now play the float animation."
+"Open the *Mob* scene, select the animation player node and open the float "
+"animation. Next, click on *Animation -> Copy*. Then Open ``Player.tscn`` and "
+"open its animation player. Click *Animation -> Paste*. That's it; all "
+"monsters will now play the float animation."
 msgstr ""
 
 msgid ""
@@ -364,9 +337,8 @@ msgstr ""
 msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "**常规选项**"
+msgstr "**恭喜**！"
 
 msgid ""
 "In the next part, we'll quickly recap what you learned and give you some "
@@ -375,7 +347,7 @@ msgid ""
 msgstr ""
 
 msgid "Here's the *Player* script."
-msgstr ""
+msgstr "这是 *Player* 脚本。"
 
 msgid "And the *Mob*'s script."
-msgstr ""
+msgstr "这是 *Mob* 的脚本。"

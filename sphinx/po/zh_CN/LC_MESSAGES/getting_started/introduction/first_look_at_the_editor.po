@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "First look at Godot's editor"
 msgstr "初识 Godot 编辑器"
 
@@ -25,188 +24,186 @@ msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
 "to look at the different main screens and docks to help you situate yourself."
 msgstr ""
+"本页将向你简要介绍Godot的界面。我们将看看不同的主屏幕和面板，以帮助你确定自己"
+"的位置。"
 
 msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
+"关于编辑器的界面和使用方法的全面介绍，请参见\\ :ref:`编辑器手册 <toc-learn-"
+"editor>`。"
 
-#, fuzzy
 msgid "The Project manager"
 msgstr "项目管理器"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab, \"Projects,\" you can manage existing projects, import or "
 "create new ones, and more."
 msgstr ""
-"启动Godot后, 你会首先看到项目管理器窗口. 因为你目前还没有项目, 所以会有一个弹"
-"窗, 询问你是否想要打开素材库, 点击取消即可, 我们稍后再回来看这个东西."
+"启动 Godot 后，你会首先看到项目管理器窗口。在默认的选项卡“项目”中，你可以进行"
+"对已有项目的管理、导入或者创建新项目等操作。"
 
 msgid ""
 "At the top of the window, there is another tab named \"Templates\". You can "
 "search for demo projects in the open-source asset library, which includes "
 "many projects developed by the community."
 msgstr ""
+"窗口顶部还有另一个名为“模板”的选项卡。您可以在开源素材库中搜索演示项目，其中"
+"包括社区开发的许多项目。"
 
 msgid ""
 "You can also change the editor's language using the drop-down menu to the "
 "right of the engine's version in the window's top-right corner. By default, "
 "it is in English (EN)."
 msgstr ""
+"你还可以使用窗口右上角的下拉菜单更改编辑器的语言，就在引擎的版本号右边。默认"
+"语言是英语（EN）。"
 
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas."
-msgstr ""
+msgstr "打开新建项目或者已有项目，就会出现编辑器界面。我们来看看它的主要区域。"
 
 msgid ""
 "By default, it features **menus**, **main screens**, and playtest buttons "
 "along the window's top edge."
 msgstr ""
+"默认情况下，窗口顶部分布着\\ **菜单**\\ 、\\ **主屏幕**\\ 、游玩测试按钮。"
 
-#, fuzzy
 msgid ""
 "In the center is the **viewport** with its **toolbar** at the top, where "
 "you'll find tools to move, scale, or lock the scene's nodes."
 msgstr ""
-"中间上方有 **工具栏** , 你可以用它移动, 缩放或锁定你的场景物件. 它会随着工作"
-"区的不同而切换."
+"中央是\\ **视窗**\\ 及其顶部\\ **工具栏**\\ ，可以在工具栏上找到用来移动、缩"
+"放、锁定场景中节点的工具。"
 
 msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
 "window lies the **bottom panel**."
-msgstr ""
+msgstr "视窗的两边是\\ **停靠面板**\\ 。窗口底部则是\\ **底部面板**\\ 。"
 
 msgid ""
 "The toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar."
-msgstr ""
+msgstr "工具栏会随着上下文和所选节点改变。这里展示的是 2D 工具栏。"
 
 msgid "Below is the 3D one."
-msgstr ""
+msgstr "下面这个是 3D 的。"
 
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "be it scripts, images, audio samples, and more."
 msgstr ""
+"我们来看看停靠面板。\\ **文件系统**\\ 面板会列出项目中的文件，可以是脚本、图"
+"片、音频采样等。"
 
 msgid "The **Scene** dock lists the active scene's nodes."
-msgstr ""
+msgstr "**场景**\\ 面板会列出活动场景中的节点。"
 
 msgid "The **Inspector** allows you to edit the properties of a selected node."
-msgstr ""
+msgstr "你可以在\\ **检查器**\\ 中编辑所选节点的属性。"
 
-#, fuzzy
 msgid ""
 "The **bottom panel**, situated below the viewport, is the host for the debug "
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"**底部面板** 有输出, 调试器, 音频, 动画, 它们比较宽, 会占用宝贵的空间. 所以它"
-"们默认是折叠状态."
+"视窗底部的\\ **底部面板**\\ 中包含了调试控制台、动画编辑器、混音器等。它们所"
+"占的空间非常宝贵，所以默认都是折叠状态。"
 
-#, fuzzy
 msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
 "animation editor opened."
-msgstr "单击资源时, 您将看到有关它的更多信息."
+msgstr "点击某一个就会在垂直方向展开。下面展示的是打开的动画编辑器。"
 
-#, fuzzy
 msgid "The four main screens"
-msgstr "KDevelop的主屏幕."
+msgstr "四个主屏幕"
 
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
-msgstr "可以在顶部看到有四个工作区按钮:2D, 3D, 脚本和素材库."
+msgstr "编辑器顶部的中央有四个主屏幕按钮：2D、3D、Script、AssetLib。"
 
-#, fuzzy
 msgid ""
 "You'll use the **2D screen** for all types of games. In addition to 2D "
 "games, the 2D screen is where you'll build your interfaces."
 msgstr ""
-"对所有类型的游戏都需要使用 **2D 工作区** . 除了用于2D游戏外, 也是构建UI界面的"
-"地方. 按 :kbd:`F1` (或 :kbd:`Alt + 1` 在macOS上) 访问它."
+"**2D 屏幕**\\ 可以用于任何类型的游戏。除了 2D 游戏，2D 屏幕也会用于界面的构"
+"建。"
 
-#, fuzzy
 msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
-msgstr ""
-"在 **3D工作区** 中, 你可以使用网格, 灯光, 并设计3D游戏的关卡. 按 :kbd:`F2` "
-"(或 :kbd:`Alt + 2` 在macOS上)进入."
+msgstr "在\\ **3D 屏幕**\\ 中，你可以操作网格、灯光、设计 3D 游戏的关卡。"
 
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar. Clicking on it opens a list "
 "of options related to the 3D view."
-msgstr "注意工具栏下的透视图按钮, 它会打开一个与3D视图相关的选项列表."
+msgstr "请注意工具栏下方的“透视”按钮。点击后会打开 3D 视图相关的选项列表。"
 
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
 "screen**."
-msgstr "更多关于 **3D 工作区** 的细节, 请查看 :ref:`doc_introduction_to_3d`."
+msgstr ""
+"更多关于\\ **3D 主屏幕**\\ 的细节请查看 :ref:`doc_introduction_to_3d`\\ 。"
 
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
+"**Script 屏幕**\\ 是一个完整的代码编辑器，包含调试器、丰富的自动补全、内置代"
+"码参考手册。"
 
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open-source add-ons, "
 "scripts, and assets to use in your projects."
-msgstr "最后, **素材库** 是一个免费的插件, 脚本, 资源仓库, 可用于项目."
+msgstr ""
+"最后，\\ **AssetLib** 是插件、脚本、素材的仓库，这些内容是自由开源的，可以在"
+"你的项目中使用。"
 
-#, fuzzy
 msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
-msgstr "要了解更多关于可视化着色器的信息, 请阅读 :ref:`doc_visual_shaders` ."
+msgstr "你可以在 :ref:`doc_what_is_assetlib` 中了解更多关于素材库的内容。"
 
-#, fuzzy
 msgid "Integrated class reference"
-msgstr "如何编写类参考手册"
+msgstr "内置类参考手册"
 
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "如何编写类参考手册"
+msgstr "Godot 自带内置的类参考手册。"
 
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
-msgstr ""
-"要在编写脚本时, 搜索引擎中的类, 方法, 属性, 常量或信号的信息, 请使用脚本工作"
-"区右上方的 \"搜索帮助\" 按钮."
+msgstr "要搜索类、方法、属性、常量、信号相关的信息，可以使用以下任意方法："
 
-#, fuzzy
 msgid ""
 "Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."
-msgstr "按下 :kbd:`Ctrl + F` (或macOS :kbd:`Cmd + F` ) 打开搜索列表."
+msgstr ""
+"在编辑器中的任何位置按下 :kbd:`F1`\\ （macOS 上则是 :kbd:`Alt + Space`\\ ）。"
 
 msgid ""
 "Clicking the \"Search Help\" button in the top-right of the Script main "
 "screen."
-msgstr ""
+msgstr "点击 Script 主屏幕右上角的“搜索帮助”按钮。"
 
 msgid "Clicking on the Help menu and Search Help."
-msgstr ""
+msgstr "点击“帮助”菜单的“搜索帮助”。"
 
 msgid ""
 "Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
 "or built-in variable in the script editor."
-msgstr ""
+msgstr "在脚本编辑器中，按住 :kbd:`Ctrl` 键点击类名、函数名、内置变量。"
 
 msgid ""
 "When you do any of these, a window pops up. Type to search for any item. You "
 "can also use it to browse available objects and methods."
 msgstr ""
+"执行其中的任意操作都会弹出一个窗口。通过输入进行搜索。你也可以用它来查看所有"
+"对象和方法。"
 
 msgid ""
 "Double-click on an item to open the corresponding page in the script main "
 "screen."
-msgstr ""
+msgstr "在条目上双击就会在脚本主屏幕中打开对应的页面。"

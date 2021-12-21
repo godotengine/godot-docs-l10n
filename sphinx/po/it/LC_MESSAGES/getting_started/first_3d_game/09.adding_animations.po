@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "|image0|"
 
 #, fuzzy
 msgid "We'll start with an introduction to using the animation editor."
-msgstr "Introduzione ai nodi CSG"
+msgstr "Inizieremo con un'introduzione all'uso dell'editor di animazione."
 
 #, fuzzy
 msgid "Using the animation editor"
@@ -68,7 +68,7 @@ msgstr "|image2|"
 
 #, fuzzy
 msgid "Name the animation \"float\"."
-msgstr "Creare l'animazione"
+msgstr "Chiama l'animazione \"float\"."
 
 msgid "|image3|"
 msgstr "|image3|"
@@ -336,22 +336,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We're going to duplicate the animation using a feature called \"merge from "
-"scene\"."
-msgstr ""
-
-msgid ""
-"Open the *Mob* scene, right-click on the *Mob* node and select *Merge From "
-"Scene*."
-msgstr ""
-
-#, fuzzy
-msgid "|image23|"
-msgstr "|image2|"
-
-msgid ""
-"Double-click ``Player.tscn`` to open it and import the *AnimationPlayer*. "
-"That's it; all monsters will now play the float animation."
+"Open the *Mob* scene, select the animation player node and open the float "
+"animation. Next, click on *Animation -> Copy*. Then Open ``Player.tscn`` and "
+"open its animation player. Click *Animation -> Paste*. That's it; all "
+"monsters will now play the float animation."
 msgstr ""
 
 msgid ""
@@ -365,7 +353,7 @@ msgstr ""
 
 #, fuzzy
 msgid "**Congratulations**!"
-msgstr "**Opzioni generali**"
+msgstr "**Congratulazioni**!"
 
 msgid ""
 "In the next part, we'll quickly recap what you learned and give you some "

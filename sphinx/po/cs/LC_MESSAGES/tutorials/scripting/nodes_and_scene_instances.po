@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,8 @@ msgid ""
 "reference to the Sprite and Camera2D nodes to access them in your script."
 msgstr ""
 
-#, fuzzy
 msgid "To do so, you can use the following code."
-msgstr "To znamená, že můžeme použít následující názvy portálů:"
+msgstr "K tomu můžete použít následující kód."
 
 msgid ""
 "Note that you get nodes using their name, not their type. Above, \"Sprite\" "
@@ -99,13 +98,12 @@ msgstr ""
 msgid "Creating nodes"
 msgstr "Vytváření uzlů"
 
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
 "Chcete-li vytvořit uzel v kódu, volejte metodu ``.new ()``, tak jako pro "
-"jakýkoli jiný datový typ třídy. Například:"
+"jakýkoli jiný datový typ třídy."
 
 msgid ""
 "You can store the newly created node's reference in a variable and call "
@@ -152,9 +150,8 @@ msgid ""
 "happens in two steps:"
 msgstr ""
 
-#, fuzzy
 msgid "Loading the scene from the hard drive."
-msgstr "Načítání zdrojů z kódu"
+msgstr "Načítání scény z pevného disku."
 
 #, fuzzy
 msgid ""
@@ -170,18 +167,16 @@ msgid ""
 "is only available with GDScript."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "At that point, ``scene`` is a packed scene resource, not a node. To create "
 "the actual node, you need to call :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>`. It returns a tree of nodes that you "
 "can as a child of your current node."
 msgstr ""
-"Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem :"
-"ref:`PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
-"třeba zavolat funkci :ref:`PackedScene.instance () "
-"<class_PackedScene_method_instance>`. Ta vrátí strom uzlů, který lze přidat "
-"k aktivní scéně:"
+"V tomto okamžiku je ``scene`` zabaleným prostředkem scény, nikoli uzlem. "
+"Chcete-li vytvořit skutečný uzel, musíte zavolat :ref:`PackedScene."
+"instance() <class_PackedScene_method_instance>`. Vrátí strom uzlů, které "
+"můžete jako potomka aktuálního uzlu."
 
 #, fuzzy
 msgid ""

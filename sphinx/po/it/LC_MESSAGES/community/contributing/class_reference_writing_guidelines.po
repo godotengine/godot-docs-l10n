@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,15 +58,16 @@ msgstr "Descrizione"
 
 #, fuzzy
 msgid "`<constant>`"
-msgstr "Costante PI."
+msgstr "`<costante>`"
 
 msgid ""
 "`<method>` (in its `<description>` tag; return types and arguments don't "
 "take separate documentation strings)"
 msgstr ""
 
+#, fuzzy
 msgid "`<member>`"
-msgstr ""
+msgstr "`<membro>`"
 
 msgid ""
 "`<signal>` (in its `<description>` tag; arguments don't take separate "
@@ -148,7 +149,7 @@ msgid "Link a class"
 msgstr ""
 
 #, fuzzy
-msgid "Move the [Sprite2D]."
+msgid "Move the [Sprite]."
 msgstr "Sposta lo :ref:`class_sprite`."
 
 #, fuzzy
@@ -166,7 +167,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Call :ref:`hide <class_Spatial_method_hide>`."
-msgstr ":ref:`Sprite <class_Sprite>`"
+msgstr "Chiama :ref:`hide <class_Spatial_method_hide>`."
 
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
@@ -174,8 +175,9 @@ msgstr "[method Class.methodname]"
 msgid "Link to another class's method"
 msgstr ""
 
+#, fuzzy
 msgid "Call [method Node3D.hide]."
-msgstr ""
+msgstr "Chiama [metodo Node3D.hide]."
 
 msgid "[member membername]"
 msgstr "[member membername]"
@@ -186,8 +188,9 @@ msgstr ""
 msgid "Get [member scale]."
 msgstr ""
 
+#, fuzzy
 msgid "Get :ref:`scale <class_Node2D_property_scale>`."
-msgstr ""
+msgstr "Otteni :ref:`scala <class_Node2D_property_scale>`."
 
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
@@ -207,8 +210,9 @@ msgstr ""
 msgid "Emit [signal renamed]."
 msgstr ""
 
+#, fuzzy
 msgid "Emit :ref:`renamed <class_Node_signal_renamed>`."
-msgstr ""
+msgstr "Emettere :ref:`renamed <class_Node_signal_renamed>`."
 
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
@@ -283,46 +287,60 @@ msgstr "*Vedi sotto.*"
 
 #, fuzzy
 msgid "[codeblocks] [/codeblocks]"
-msgstr "[codeblock] [/codeblock]"
+msgstr "[codeblocks] [/codeblocks]"
 
+#, fuzzy
 msgid "[codeblock] for multiple languages"
-msgstr ""
+msgstr "[codeblock] per più lingue"
 
 #, fuzzy
 msgid "[gdscript] [/gdscript]"
-msgstr "<description></description>"
+msgstr "[gdscript] [/gdscript]"
 
 #, fuzzy
 msgid "GDScript codeblock tab in codeblocks"
-msgstr "[codeblock] [/codeblock]"
+msgstr "Scheda GDScript codeblock in codeblock"
 
+#, fuzzy
 msgid "[csharp] [/csharp]"
-msgstr ""
+msgstr "[csharp] [/csharp]"
 
 #, fuzzy
 msgid "C# codeblock tab in codeblocks"
-msgstr "[codeblock] [/codeblock]"
+msgstr "Scheda codeblock C# in codeblock"
 
+#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation. The parser will delete tabs. For "
 "example:"
 msgstr ""
+"Usa ``[codeblock]`` per i blocchi di codice preformattati. Dentro "
+"``[codeblock]``, usa sempre **quattro spazi** per l'indentazione. Il parser "
+"cancellerà le tabulazioni. Per esempio:"
 
 msgid "Will display as:"
 msgstr "Verrà mostrato come:"
 
+#, fuzzy
 msgid ""
 "If you need to have different code version in GDScript and C#, use "
 "``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have "
 "at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
 msgstr ""
+"Se avete bisogno di avere diverse versioni di codice in GDScript e C#, usate "
+"``[codeblocks]`` invece. Se usi ``[codeblocks]``, devi anche avere almeno "
+"uno dei tag specifici della lingua, ``[gdscript]`` e ``[csharp]``."
 
+#, fuzzy
 msgid ""
 "Always write GDScript code examples first! You can use this `experimental "
 "code translation tool <https://github.com/HaSa1002/codetranslator>`_ to "
 "speed up your workflow."
 msgstr ""
+"Scrivere sempre prima gli esempi di codice GDScript! Potete usare questo ` "
+"strumento sperimentale di traduzione del codice <https://github.com/HaSa1002/"
+"codetranslator>`_ per accelerare il vostro flusso di lavoro."
 
 #, fuzzy
 msgid "The above will display as:"

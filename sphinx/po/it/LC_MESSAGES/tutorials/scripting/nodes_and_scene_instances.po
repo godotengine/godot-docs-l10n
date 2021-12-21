@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #, fuzzy
 msgid "To do so, you can use the following code."
-msgstr "L'HUD visualizza le seguenti informazioni:"
+msgstr "Per fare ciò, puoi utilizzare il seguente codice."
 
 msgid ""
 "Note that you get nodes using their name, not their type. Above, \"Sprite\" "
@@ -73,7 +73,7 @@ msgstr ""
 
 #, fuzzy
 msgid "To get the Tween node, you would use the following code."
-msgstr "Aggiungi uno script a ``Mob`` e le seguenti variabili membro:"
+msgstr "Per ottenere il nodo Tween, dovresti usare il seguente codice."
 
 msgid ""
 "As with file paths, you can use \"..\" to get a parent node. The best "
@@ -105,8 +105,8 @@ msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
-"Per creare un nodo da codice, usare il metodo ``.new()``, come per ogni "
-"altro dato di tipo classe. Per esempio:"
+"Per creare un nodo dal codice, chiama il suo metodo ``new()`` come per "
+"qualsiasi altro tipo di dati basato sulla classe."
 
 msgid ""
 "You can store the newly created node's reference in a variable and call "
@@ -155,7 +155,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Loading the scene from the hard drive."
-msgstr "Caricare risorse dal codice"
+msgstr "Caricare la scena dal disco rigido."
 
 #, fuzzy
 msgid ""
@@ -178,11 +178,10 @@ msgid ""
 "<class_PackedScene_method_instance>`. It returns a tree of nodes that you "
 "can as a child of your current node."
 msgstr ""
-"Ma ``scene`` non è ancora un nodo. È impacchettato in una risorsa speciale "
-"chiamata :ref:`PackedScene <class_PackedScene>`. Per creare il nodo, bisogna "
-"chiamare la funzione :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>`. Questo ritorna l'albero di nodi che "
-"possono essere aggiunti alla scena attiva:"
+"A quel punto, ``scene`` è una risorsa scena imballata, non un nodo. Per "
+"creare il nodo effettivo, devi chiamare :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. Restituisce un albero di nodi che puoi "
+"come figlio del tuo nodo corrente."
 
 #, fuzzy
 msgid ""

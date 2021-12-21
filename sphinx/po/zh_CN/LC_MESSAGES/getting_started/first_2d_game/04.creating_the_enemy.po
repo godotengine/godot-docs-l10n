@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating the enemy"
-msgstr "创建骨骼"
+msgstr "创建敌人"
 
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
@@ -33,8 +32,8 @@ msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"我们将创建一个 ``Mob`` 的怪物场景, 以便在游戏中独立 *实例化* 出任意数量的怪"
-"物."
+"我们将创建一个 ``Mob`` 的怪物场景, 以便在游戏中独立\\ *实例化*\\ 出任意数量的"
+"怪物。"
 
 msgid "Node setup"
 msgstr "节点设置"
@@ -43,7 +42,7 @@ msgid "Click Scene -> New Scene and add the following nodes:"
 msgstr "点击场景 -> 新建场景然后添加以下节点:"
 
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (名为 ``Mob``)"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`\\ （名为 ``Mob``\\ ）"
 
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
@@ -79,21 +78,20 @@ msgstr ""
 "文件夹中都有 2 张图片。"
 
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr "对于所有动画, 将 \"速度(FPS)\" 调整为 ``3`` ."
+msgstr "对于所有动画，将“速度（FPS）”调整为 ``3``\\ 。"
 
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to \"On\"."
-msgstr "将属性检查器中的 ``Playing`` 属性设置为 \"On\"."
+msgstr "将“检查器”中的 ``Playing`` 属性设置为“启用”。"
 
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
-msgstr "我们将随机选择其中一个动画, 以便mobs有一些变化."
+msgstr "我们将随机选择其中一个动画，以便小怪有一些变化。"
 
 #, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
-"``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
+"``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "像 ``Player`` 图像一样, 这些怪物的图像也要缩小. 设置 ``AnimatedSprite`` 的 "
 "``Scale`` 属性为 ``(0.75, 0.75)``."
@@ -108,7 +106,7 @@ msgstr ""
 "设置为 ``90``."
 
 msgid "Save the scene."
-msgstr "保存该场景."
+msgstr "保存该场景。"
 
 msgid "Enemy script"
 msgstr "敌人的脚本"
@@ -127,7 +125,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"First, we get the list of animation names from the AnimatedSprite2D's "
+"First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
@@ -160,7 +158,7 @@ msgstr ""
 "``screen_exited()`` 信号并添加以下代码:"
 
 msgid "This completes the `Mob` scene."
-msgstr "这样就完成了 ``Mob`` 场景."
+msgstr "这样就完成了 ``Mob`` 场景。"
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

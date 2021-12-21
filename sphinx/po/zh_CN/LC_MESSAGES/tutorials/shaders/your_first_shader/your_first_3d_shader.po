@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 3D shader"
-msgstr "您的第一个着色器"
+msgstr "您的第一个 3D 着色器"
 
 #, fuzzy
 msgid ""
@@ -290,15 +289,13 @@ msgstr ""
 "点击旁边写着 \"[空]\" 的地方, 选择 \"新建噪声纹理 \". 在你的噪声纹理中, 点击"
 "旁边的\" 噪声 \", 然后选择\" 新建开放式简单噪声\"."
 
-#, fuzzy
 msgid ""
 ":ref:`OpenSimplexNoise <class_opensimplexnoise>` is used by the NoiseTexture "
 "to"
-msgstr ":ref:`开放式简单噪声 <class_opensimplexnoise>` 可从噪声纹理生成高度图."
+msgstr "NoiseTexture 使用 :ref:`OpenSimplexNoise <class_opensimplexnoise>` 来"
 
-#, fuzzy
 msgid "generate a heightmap."
-msgstr "噪声高度图"
+msgstr "生成高度图。"
 
 msgid "Once you set it up and should look like this."
 msgstr "设置好后, 看起来应该像这样."
@@ -346,7 +343,7 @@ msgstr ""
 "了uniform 值来传递噪声纹理, 现在让我们来学习一下其中的工作原理."
 
 msgid "Uniforms"
-msgstr "Uniforms"
+msgstr "Uniform"
 
 msgid ""
 "Uniform variables allow you to pass data from the game into the shader. They "
@@ -404,8 +401,8 @@ msgid ""
 "height of the terrain. Combined with :ref:`Tweens <class_Tween>`, this can "
 "be especially useful for simple animations."
 msgstr ""
-"使用uniforms, 我们甚至可以在每一帧改变数值, 以动画化地形的高度. 结合 :ref:"
-"`Tweens <class_Tween>` , 这对简单的动画特别有用."
+"使用 uniform，我们甚至可以在每一帧改变数值，以动画化地形的高度。结合 :ref:"
+"`Tween <class_Tween>`\\ ，这对简单的动画特别有用。"
 
 msgid "Interacting with light"
 msgstr "与光交互"

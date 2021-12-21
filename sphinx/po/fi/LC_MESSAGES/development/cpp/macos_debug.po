@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Debugging on macOS"
+msgstr "Projektin valmistelu"
+
+#, fuzzy
+msgid "Debugging Godot editor"
+msgstr "Projektin valmistelu"
+
+msgid ""
+"Attaching a debugger to the signed macOS process requires the \"com.apple."
+"security.get-task-allow\" entitlement, which is not enabled by default, "
+"since apps can't be notarized as long as it is enabled. If you want to debug "
+"an official build of the editor it should be re-signed with the proper "
+"entitlements."
+msgstr ""
+
+msgid ""
+"Create an ``editor.entitlements`` text file with the following contents:"
+msgstr ""
+
+#, fuzzy
+msgid "Then use the following command to re-sign the editor::"
+msgstr "Lisää sitten seuraavat kaksi funktiota:"
+
+#, fuzzy
+msgid "Debugging exported project"
+msgstr "Projektin valmistelu"
+
+msgid ""
+"To allow debugging, select the ``codesign\\debugging`` (``com.apple.security."
+"get-task-allow``) entitlement during the export. When it is selected, "
+"notarization is not supported and should be disabled."
+msgstr ""

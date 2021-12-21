@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 15:51+0100\n"
+"POT-Creation-Date: 2021-12-21 17:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,25 +37,22 @@ msgstr ""
 msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
-#, fuzzy
 msgid "Adding nodes to a group"
-msgstr "添加节点"
+msgstr "将节点加入分组"
 
 #, fuzzy
 msgid "There are two ways to add nodes to groups:"
 msgstr "有两种方法可以做到这一点:"
 
-#, fuzzy
 msgid "Using the Node dock in the editor."
-msgstr "使用主题编辑器"
+msgstr "使用编辑器的“节点”停靠面板。"
 
 msgid ""
 "Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Node dock"
-msgstr "使用模块"
+msgstr "使用节点面板"
 
 msgid ""
 "You can add nodes in the current scene to groups using the Groups tab in the "
@@ -143,13 +140,12 @@ msgstr ""
 "也可以通过调用 :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>` 获得 ``enemies`` 节点的完整列表:"
 
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
 "methods to interact with scenes, their node hierarchy, and groups. It allows "
 "you to switch scenes easily or reload them, quit the game or pause and "
 "unpause it. It also provides useful signals."
 msgstr ""
-":ref:`SceneTree <class_SceneTree>` 类提供了许多有用的方法, 例如与场景, 其节点"
-"层次结构, 及节点编组交互. 它使您可以轻松切换场景或重新加载场景, 退出游戏或暂"
-"停和取消暂停游戏. 它还有一些有趣的信号, 如果您有空可以详细去查看！"
+":ref:`SceneTree <class_SceneTree>` 类提供了许多有用的方法，例如与场景、其节点"
+"层次结构、及节点编组交互。它使您可以轻松切换场景或重新加载场景、退出游戏或暂"
+"停和取消暂停游戏。它还提供了一些有用的信号。"
