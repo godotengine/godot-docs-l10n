@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,33 +41,37 @@ msgid "Alternatively, you can generate it yourself by using OpenSSL:"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
-msgid "This should output the following to ``godot.gdkey`` file:"
+msgid "The output in ``godot.gdkey`` should be similar to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:37
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:35
 msgid "You can generate the key without redirecting the output to a file, but that way you can minimize the risk of exposing the key."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:40
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:38
 msgid "Set this key as environment variable in the console that you will use to compile Godot, like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:56
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:54
 msgid "Compile Godot export templates and set them as custom export templates in the export preset options."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:59
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:57
 msgid "Set the encryption key in the ``Script`` tab of the export preset:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:63
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:61
 msgid "Export the project. The game should run with encrypted scripts now."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:66
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:64
 msgid "Possible Errors"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:68
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:66
 msgid "If you get an error like below, it means the key wasn't properly included in your Godot build. Godot is encrypting the scripts during export, but can't read them at runtime."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
 msgstr ""

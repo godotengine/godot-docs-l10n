@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,7 @@ msgid "The AnimationPlayer node type is the data container for your animations. 
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:34
+#: ../../docs/tutorials/animation/introduction.rst:34
 msgid "The AnimationPlayer node"
 msgstr ""
 
@@ -69,6 +70,7 @@ msgid "After creating one click on the AnimationPlayer node in the Node tab to o
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:42
+#: ../../docs/tutorials/animation/introduction.rst:42
 msgid "The animation panel position"
 msgstr ""
 
@@ -76,6 +78,7 @@ msgstr ""
 msgid "It consists of four parts:"
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:49
 #: ../../docs/tutorials/animation/introduction.rst:49
 msgid "The animation panel"
 msgstr ""
@@ -109,6 +112,7 @@ msgid "Diamond shapes represent keyframes in the timeline. A line between two ke
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:68
+#: ../../docs/tutorials/animation/introduction.rst:68
 msgid "Keyframes in Godot"
 msgstr ""
 
@@ -116,6 +120,7 @@ msgstr ""
 msgid "The engine interpolates values between keyframes, resulting in a gradual change in values over time."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:76
 #: ../../docs/tutorials/animation/introduction.rst:76
 msgid "Two keyframes are all it takes to obtain a smooth motion"
 msgstr ""
@@ -125,6 +130,7 @@ msgid "The timeline lets you insert keyframes and change their timing. It also d
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:84
+#: ../../docs/tutorials/animation/introduction.rst:84
 msgid "The timeline in the animation panel"
 msgstr ""
 
@@ -133,11 +139,18 @@ msgid "Each line of the Animation Panel is an animation track. Normal and Transf
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:93
+#: ../../docs/tutorials/animation/introduction.rst:93
 msgid "Example of Normal animation tracks"
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:97
 msgid "If you animate the wrong property, you can edit a track's path anytime. Double click on it and type the new path. Play the animation using the \"Play from beginning\" button |Play from beginning| (or pressing :kbd:`Shift + D` on keyboard) to see the changes instantly."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:373
+#: ../../docs/tutorials/animation/introduction.rst:373
+#: ../../docs/tutorials/animation/introduction.rst:373
+msgid "Play from beginning"
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:103
@@ -152,6 +165,7 @@ msgstr ""
 msgid "For this tutorial, we'll create an AnimationPlayer node and a sprite node as its child."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:114
 #: ../../docs/tutorials/animation/introduction.rst:114
 msgid "Our scene setup"
 msgstr ""
@@ -172,6 +186,12 @@ msgstr ""
 msgid "Select the AnimationPlayer node, then click the \"Animation\" button in the animation editor. From the list select \"New\" (|Add Animation|) to add a new animation. And Enter a name for the animation in the dialog box."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:374
+#: ../../docs/tutorials/animation/introduction.rst:374
+msgid "Add Animation"
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:138
 #: ../../docs/tutorials/animation/introduction.rst:138
 msgid "Add a new animation"
 msgstr ""
@@ -184,6 +204,7 @@ msgstr ""
 msgid "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:149
 #: ../../docs/tutorials/animation/introduction.rst:149
 msgid "Convenience buttons"
 msgstr ""
@@ -205,6 +226,7 @@ msgid "This creates a new track and our first keyframe at the beginning of the t
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:166
+#: ../../docs/tutorials/animation/introduction.rst:166
 msgid "The sprite track"
 msgstr ""
 
@@ -220,6 +242,7 @@ msgstr ""
 msgid "Let's say, we want it to take 2 seconds to go to the other point. By default the animation is set to last only 1 second, so change this in the timeline controls in animation panel's lower panel to 2."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:181
 #: ../../docs/tutorials/animation/introduction.rst:181
 msgid "Animation length"
 msgstr ""
@@ -245,6 +268,7 @@ msgid "Yay! Our animation runs:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:199
+#: ../../docs/tutorials/animation/introduction.rst:199
 msgid "The animation"
 msgstr ""
 
@@ -257,6 +281,7 @@ msgid "Godot has an additional feature here. Like said before, Godot always calc
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:212
+#: ../../docs/tutorials/animation/introduction.rst:212
 msgid "Animation loop"
 msgstr ""
 
@@ -265,6 +290,7 @@ msgid "If you set the animation length to 4 seconds now, the animation moves bac
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:219
+#: ../../docs/tutorials/animation/introduction.rst:227
 #: ../../docs/tutorials/animation/introduction.rst:227
 msgid "Track settings"
 msgstr ""
@@ -294,6 +320,7 @@ msgid "Capture: The current value of a property is remembered, and it will blend
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:240
+#: ../../docs/tutorials/animation/introduction.rst:240
 msgid "Track mode"
 msgstr ""
 
@@ -318,6 +345,7 @@ msgid "Cubic: Set the value based on a cubic function calculation between the tw
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:257
+#: ../../docs/tutorials/animation/introduction.rst:257
 msgid "Track interpolation"
 msgstr ""
 
@@ -329,6 +357,7 @@ msgstr ""
 msgid "Godot supports two loop modes, which affect the animation if it's set to loop:"
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:270
 #: ../../docs/tutorials/animation/introduction.rst:270
 msgid "Loop modes"
 msgstr ""
@@ -342,6 +371,7 @@ msgid "Wrap loop interpolation: When this is selected, Godot calculates the anim
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:280
+#: ../../docs/tutorials/animation/introduction.rst:293
 #: ../../docs/tutorials/animation/introduction.rst:293
 msgid "Keyframes for other properties"
 msgstr ""
@@ -362,6 +392,7 @@ msgstr ""
 msgid "For advanced use and to edit keyframes in detail, You can click on them to bring up the keyframe editor in the inspector. You can use this to directly edit its values."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:305
 #: ../../docs/tutorials/animation/introduction.rst:305
 msgid "Keyframe editor editing a key"
 msgstr ""
@@ -402,10 +433,16 @@ msgstr ""
 msgid "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:375
+#: ../../docs/tutorials/animation/introduction.rst:375
+msgid "Add track"
+msgstr ""
+
 #: ../../docs/tutorials/animation/introduction.rst:342
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:347
 #: ../../docs/tutorials/animation/introduction.rst:347
 msgid "Add Call Method Track"
 msgstr ""
@@ -414,6 +451,7 @@ msgstr ""
 msgid "Select the :ref:`class_AudioStreamPlayer` node in the selection window. Godot adds the track with the reference to the node."
 msgstr ""
 
+#: ../../docs/tutorials/animation/introduction.rst:355
 #: ../../docs/tutorials/animation/introduction.rst:355
 msgid "Select AudioStreamPlayer"
 msgstr ""
@@ -428,4 +466,32 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:368
 msgid "You can change its position by dragging it on the timeline, you can also click on the keyframe and use the keyframe settings in the inspector."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:378
+msgid "Using RESET tracks"
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:380
+msgid "You can set up a special *RESET* animation to contain the \"default pose\". This is used to ensure that the default pose is restored when you save the scene and open it again in the editor."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:384
+msgid "For existing tracks, you can add an animation called \"RESET\" (case-sensitive), then add tracks for each property that you want to reset. The only keyframe should be at time 0, and give it the desired default value for each track."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:389
+msgid "If AnimationPlayer's **Reset On Save** property is set to ``true``, the scene will be saved with the effects of the reset animation applied (as if it had been seeked to time ``0.0``). This only affects the saved file – the property tracks in the editor stay where they were."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:395
+msgid "If you want to reset the tracks in the editor, select the AnimationPlayer node, open the **Animation** bottom panel then choose **Apply Reset** in the animation editor's **Animation** dropdown menu."
+msgstr ""
+
+#: ../../docs/tutorials/animation/introduction.rst:399
+msgid "When adding tracks on new animations, the editor will ask you to automatically create a RESET track when using the keyframe icon next to a property in the inspector. This does not apply on tracks created with Godot versions prior to 3.4, as the animation reset track feature was added in 3.4."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
 msgstr ""

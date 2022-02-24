@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:97
 #: ../../docs/development/compiling/optimizing_for_size.rst:114
-#: ../../docs/development/compiling/optimizing_for_size.rst:128
+#: ../../docs/development/compiling/optimizing_for_size.rst:153
 msgid "**Performed in official builds:** No"
 msgstr ""
 
@@ -138,41 +138,137 @@ msgid "Tools must be disabled in order to use this flag, as the editor is not de
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:110
-msgid "Disabling advanced GUI nodes"
+msgid "Disabling advanced GUI objects"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:116
 msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:124
-msgid "Disabling unwanted modules"
+#: ../../docs/development/compiling/optimizing_for_size.rst:123
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:125
+msgid "FileDialog"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:126
-msgid "**Space savings:** Very low to moderate depending on modules"
+msgid "PopupMenu"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:127
-msgid "**Difficulty:** Medium to hard depending on modules"
+msgid "Tree"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:128
+msgid "TextEdit"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:129
+msgid "TreeItem"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:130
-msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
+msgid "OptionButton"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:131
+msgid "SpinBox"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:132
+msgid "ColorPicker"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:133
+msgid "ColorPickerButton"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:134
+msgid "RichTextLabel"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:135
+msgid "RichTextEffect"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:136
+msgid "CharFXTransform"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:137
-msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
+msgid "PopupDialog"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:138
+msgid "WindowDialog"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:139
+msgid "AcceptDialog"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:140
+msgid "ConfirmationDialog"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:141
+msgid "MarginContainer"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
+msgid "ViewportContainer"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:143
+msgid "SplitContainer"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:144
+msgid "HSplitContainer"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:145
+msgid "GraphNode"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:146
+msgid "GraphEdit"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
+msgid "Disabling unwanted modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:151
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:152
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:155
+msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:162
+msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:170
 msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, regex support, or theora/webm to play videos)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:150
+#: ../../docs/development/compiling/optimizing_for_size.rst:175
 msgid "Alternatively, you can supply a list of disabled modules by creating ``custom.py`` at the root of the source, with the contents similar to the following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:193
+#: ../../docs/development/compiling/optimizing_for_size.rst:218
 msgid ":ref:`doc_overriding_build_options`."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
 msgstr ""

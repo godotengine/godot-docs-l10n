@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,25 +149,25 @@ msgid "Fragment processor"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:135
-msgid "The ``fragment()`` processing function is used to set up the Godot material"
+msgid "The ``fragment()`` processing function is used to set up the Godot material parameters per pixel. This code runs on every visible pixel the object or primitive draws. It is only available in ``spatial`` and ``canvas_item`` shaders."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:137
-msgid "parameters per pixel. This code runs on every visible pixel the object or primitive draws. It is only available in ``spatial`` and ``canvas_item`` shaders."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:140
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:139
 msgid "The standard use of the fragment function is to set up material properties used to calculate lighting. For example, you would set values for ``ROUGHNESS``, ``RIM``, or ``TRANSMISSION``, which would tell the light function how the lights respond to that fragment. This makes it possible to control a complex shading pipeline without the user having to write much code. If you don't need this built-in functionality, you can ignore it and write your own light processing function, and Godot will optimize it away. For example, if you do not write a value to ``RIM``, Godot will not calculate rim lighting. During compilation, Godot checks to see if ``RIM`` is used; if not, it cuts all the corresponding code out. Therefore, you will not waste calculations on the effects that you do not use."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:153
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:152
 msgid "Light processor"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:155
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:154
 msgid "The ``light()`` processor runs per pixel too, and it runs once for every light that affects the object. It does not run if no lights affect the object. It exists as a function called inside the ``fragment()`` processor and typically operates on the material properties setup inside the ``fragment()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:160
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:159
 msgid "The ``light()`` processor works differently in 2D than it does in 3D; for a description of how it works in each, see their documentation, :ref:`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders <doc_spatial_shader>`, respectively."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
 msgstr ""
