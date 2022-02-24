@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Czech
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Daniel <dan@ger.cz>, 2021.
@@ -25,15 +25,15 @@
 # VladimirBlazek <vblazek042@gmail.com>, 2020.
 # Vladimír Machat <machat.v@gmail.com>, 2019.
 # VojtechBrezina <vojta.brezina@gmail.com>, 2020.
-# Vojtěch Šamla <auzkok@seznam.cz>, 2018-2020.
-# Zbyněk <zbynek.fiala@gmail.com>, 2020-2021.
+# Vojtěch Šamla <auzkok@seznam.cz>, 2018-2020, 2022.
+# Zbyněk <zbynek.fiala@gmail.com>, 2020-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-12-21 17:14+0100\n"
-"PO-Revision-Date: 2021-12-18 14:25+0000\n"
+"PO-Revision-Date: 2022-02-10 07:51+0000\n"
 "Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -425,8 +425,8 @@ msgstr ""
 msgid ""
 "All the contents are under the permissive Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with "
-"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine "
+"community\"."
 msgstr ""
 "Veškerý obsah je pod tolerantní licencí Creative Commons Attribution 3.0 "
 "( `CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_ ) s přiřazením "
@@ -1163,7 +1163,7 @@ msgstr ""
 "pouze za to, co ve svém projektu skutečně používáte. (Mezitím můžete :ref:"
 "`kompilovat vlastní exportní šablony s vypnutými nepoužívanými funkcemi "
 "<doc_optimizing_for_size>` a optimalizovat tak distribuční velikost svého "
-"projektu)."
+"projektu.)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -4331,11 +4331,9 @@ msgid "April 2021"
 msgstr "Duben 2021"
 
 #: ../../docs/about/release_policy.rst:99
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|podporováno| Obdrží opravy chyb, zabezpečení a problémů s podporou "
-"platforem, jakož i zpětně kompatibilní vylepšení použitelnosti."
+"|částečné| Obdrží pouze opravy týkající se zabezpečení a podpory platformy."
 
 #: ../../docs/about/release_policy.rst:101
 msgid "Godot 3.2"
@@ -5730,7 +5728,6 @@ msgid "|image1|"
 msgstr "| image1 |"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:63
-#, fuzzy
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
@@ -6168,8 +6165,9 @@ msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
 "Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
-"lets you select any node. It is equivalent to pressing the \"Add Child Node"
-"\" button. These presets are here for convenience; they are not mandatory."
+"lets you select any node. It is equivalent to pressing the \"Add Child "
+"Node\" button. These presets are here for convenience; they are not "
+"mandatory."
 msgstr ""
 "V prázdné scéně (bez kořenového uzlu) dok scény zobrazuje několik možností, "
 "jak rychle přidat do scény kořenový uzel . „2D scéna“ přidá uzel Node2D, „3D "
@@ -6281,8 +6279,8 @@ msgstr ""
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
 "you to save files inside the project. The ``res://`` path at the top of the "
-"window represents the project's root directory and stands for \"resource path"
-"\". For more information about file paths in Godot, see :ref:"
+"window represents the project's root directory and stands for \"resource "
+"path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
 
@@ -7700,9 +7698,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:163
-#, fuzzy
 msgid "Your complete ``Sprite.gd`` code should look like the following."
-msgstr "Váš kompletní kód ``Sprite2D.gd`` by měl vypadat následovně."
+msgstr "Váš kompletní kód ``Sprite.gd`` by měl vypadat následovně."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:181
 msgid ""
@@ -7712,7 +7709,6 @@ msgstr ""
 "spouští a zastavuje."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:184
-#, fuzzy
 msgid "Connecting a signal via code"
 msgstr "Připojení signálů v kódu"
 
@@ -7729,14 +7725,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:192
-#, fuzzy
 msgid ""
 "Head back to the 2D workspace. You can either click the \"2D\" text at the "
 "top of the window or press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
 msgstr ""
-"Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
-"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`Ctrl + F2` (nebo :"
-"kbd:`Alt + 2` v systému MacOS) ."
+"Vraťte se do pracovního prostoru 2D. Můžete buď kliknout na text \"2D\" v "
+"horní části okna, nebo stisknout :kbd:`Ctrl + F2` (:kbd:`Alt + 2` v systému "
+"MacOS)."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid ""
@@ -7761,9 +7756,8 @@ msgid "We need to do two operations to connect the nodes via code:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
-#, fuzzy
 msgid "Get a reference to the Timer from the Sprite."
-msgstr "Získání reference na časovač ze Sprite2D."
+msgstr "Získání reference na časovač ze Sprite."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:211
 msgid "Call the Timer's ``connect()`` method."
@@ -7842,7 +7836,6 @@ msgstr ""
 "Chcete-li ve svých skriptech vyslat signál, zavolejte ``emit_signal()``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:296
-#, fuzzy
 msgid ""
 "A signal can optionally declare one or more arguments. Specify the argument "
 "names between parentheses:"
@@ -7863,13 +7856,12 @@ msgstr ""
 "vyslali ty správné hodnoty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:313
-#, fuzzy
 msgid ""
 "To emit values along with the signal, add them as extra arguments to the "
 "``emit_signal()`` function:"
 msgstr ""
-"Chcete-li předat hodnoty, přidejte je jako druhý argument do funkce "
-"``emit_signal``:"
+"Chcete-li spolu se signálem i předat hodnoty, přidejte je jako druhý "
+"argument do funkce ``emit_signal()``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""
@@ -7886,7 +7878,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:335
-#, fuzzy
 msgid ""
 "For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a "
 "``body_entered`` signal whenever the player's physics body enters its "
@@ -7899,18 +7890,16 @@ msgstr ""
 "hráč minci sebere."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:339
-#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
 "2D game and put everything you learned so far into practice."
 msgstr ""
-"V následující sekci :ref:`doc_your_first_game` vytvoříte kompletní hru,která "
-"ukáže využití signálů pro vzájené spojení různých herních komponent."
+"V následující sekci :ref:`doc_your_first_2D_game` vytvoříte kompletní hru,"
+"která ukáže využití signálů pro vzájené spojení různých herních komponent."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:4
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Vaše první hra"
+msgstr "Vaše první 2D hra"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:6
 msgid ""
@@ -7920,7 +7909,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:12
-#, fuzzy
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
@@ -7930,15 +7918,14 @@ msgstr ""
 "vytvořit 2D hru."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:15
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
 "Tento projekt je úvodem k enginu Godot. Předpokládá se, že už máte nějaké "
-"zkušenosti s programováním. Pokud je pro vás programování \"španělská vesnice"
-"\", měli byste začít zde: :ref:`doc_scripting`. Pokud chcete v Godotu "
+"zkušenosti s programováním. Pokud je pro vás programování \"španělská "
+"vesnice\", měli byste začít zde: :ref:`doc_scripting`. Pokud chcete v Godotu "
 "používat jazyk C#, přečtěte si před pokračováním také :ref:`doc_c_sharp`."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:19
@@ -7951,7 +7938,6 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:22
 #: ../../docs/getting_started/first_3d_game/index.rst:17
-#, fuzzy
 msgid "You will learn to:"
 msgstr "Naučíte se:"
 
@@ -7991,7 +7977,6 @@ msgid "**Why start with 2D?**"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:37
-#, fuzzy
 msgid ""
 "3D games are much more complex than 2D ones. It would be best if you stuck "
 "to 2D until you understood the game development process and how to use Godot "
@@ -8026,14 +8011,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:51
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`__."
 msgstr ""
-"Kromě této dokumentace se můžete také podívat na různé `Godot demo projekty "
-"<https://github.com/godotengine/godot-demo-projects>`_ ."
+"Pokud jste zkušení programátoři, kompletní zdrojový kód dema najdete zde: "
+"`Demo projekty Godot <https://github.com/godotengine/godot-demo-projects>`__."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:55
 msgid ""
@@ -8046,15 +8030,13 @@ msgid "You can download them by clicking the link below."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:60
-#, fuzzy
 msgid ":download:`dodge_assets.zip <files/dodge_assets.zip>`."
-msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
+msgstr ":download:`dodge_assets.zip <files/dodge_assets.zip>`."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:63
 #: ../../docs/getting_started/first_3d_game/index.rst:53
-#, fuzzy
 msgid "Contents"
-msgstr "Test obsahu"
+msgstr "Obsah"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:4
 #: ../../docs/tutorials/scripting/gdnative/gdnative_cpp_example.rst:28
@@ -8066,22 +8048,20 @@ msgid "In this short first part, we'll set up and organize the project."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:8
-#, fuzzy
 msgid "Launch Godot and create a new project."
-msgstr "Vytvoření nového projektu."
+msgstr "Spusťte Godot a vytvořte nový projekt."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:15
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:22
-#, fuzzy
 msgid ""
 "Download :download:`dodge_assets.zip <files/dodge_assets.zip>`. The archive "
 "contains the images and sounds you'll be using to make the game. Extract the "
 "archive and move the ``art/`` and ``fonts/`` directories to your project's "
 "directory."
 msgstr ""
-"Spusťte Godota a vytvořte nový projekt. Pak stáhněte :download:`dodge_assets."
-"zip <files / dodge_assets.zip>`. Obsahuje obrázky a zvuky, které budete "
-"používat při tvorbě hry. Rozbalte tyto soubory ve složce projektu."
+"Pak stáhněte :download:`dodge_assets.zip <files / dodge_assets.zip>`. "
+"Obsahuje obrázky a zvuky, které budete používat při tvorbě hry. Rozbalte "
+"tyto soubory ve složce projektu."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:20
 #: ../../docs/tutorials/performance/cpu_optimization.rst:180
@@ -8107,7 +8087,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:31
-#, fuzzy
 msgid "GDNative C++"
 msgstr "GDNative / C ++"
 
@@ -8135,7 +8114,6 @@ msgid "Your project folder should look like this."
 msgstr "Vaše složka projektu by měla vypadat takto."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:51
-#, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on *Project -> Project Settings* to open the project "
@@ -8147,7 +8125,6 @@ msgstr ""
 "\"Šířka\" na ``480`` a \"Výška\" na ``720``."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:58
-#, fuzzy
 msgid ""
 "Also, scroll down to the bottom of the section and, under the \"Stretch\" "
 "options, set ``Mode`` to \"2d\" and ``Aspect`` to \"keep\". This ensures "
@@ -8166,9 +8143,10 @@ msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene."
 msgstr ""
+"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a ``HUD``, "
+"které zkombinujeme do hlavní scény hry:``Main`` ."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:70
-#, fuzzy
 msgid ""
 "In a larger project, it might be useful to create folders to hold the "
 "various scenes and their scripts, but for this relatively small game, you "
@@ -8176,12 +8154,11 @@ msgid ""
 "``res://``. You can see your project folders in the FileSystem dock in the "
 "lower left corner:"
 msgstr ""
-"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a ``HUD``, "
-"které zkombinujeme do hlavní scény hry:``Main`` . Ve větším projektu může "
-"být užitečné vytvořit složky, pro každkou scénu a její skript zvlášť, ale "
-"pro tuto relativně malou hru můžete ukládat své scény a skripty do "
-"kořenového adresáře projektu identifikovaného pomocí ``res: //``. Složky "
-"projektu můžete vidět v doku Souborový systém v levém dolním rohu:"
+"Ve větším projektu může být užitečné vytvořit složky, pro každkou scénu a "
+"její skript zvlášť, ale pro tuto relativně malou hru můžete ukládat své "
+"scény a skripty do kořenového adresáře projektu identifikovaného pomocí "
+"``res: //``. Složky projektu můžete vidět v doku Souborový systém v levém "
+"dolním rohu:"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:77
 msgid ""
@@ -8190,9 +8167,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:4
-#, fuzzy
 msgid "Creating the player scene"
-msgstr "Vytváření polygonů"
+msgstr "Vytvoření scény hráče"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:6
 msgid ""
@@ -8280,7 +8256,6 @@ msgstr ""
 "`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:47
-#, fuzzy
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
@@ -8297,7 +8272,6 @@ msgid "Sprite animation"
 msgstr "Animace spritu"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:56
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -8327,15 +8301,14 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"Vlevo je seznam animací. Klikněte na „výchozí“ a přejmenujte jej na \"walk"
-"\". Poté klikněte na tlačítko „Nová animace“ a vytvořte druhou animaci s "
-"názvem \"up\". Vyhledejte obrázky přehrávače na kartě \"Souborový systém\" - "
-"jsou ve složce ``art`` kterou jste dříve rozbalili. Přetáhněte dva obrázky "
+"Vlevo je seznam animací. Klikněte na „výchozí“ a přejmenujte jej na "
+"\"walk\". Poté klikněte na tlačítko „Nová animace“ a vytvořte druhou animaci "
+"s názvem \"up\". Vyhledejte obrázky přehrávače na kartě \"Souborový systém\" "
+"- jsou ve složce ``art`` kterou jste dříve rozbalili. Přetáhněte dva obrázky "
 "pro každou animaci, pojmenované ``playerGrey_up [1/2]`` a ``playerGrey_walk "
 "[1/2]``, na stranu \"Animation Frames\" na panelu pro příslušnou animaci:"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:76
-#, fuzzy
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -8347,7 +8320,6 @@ msgstr ""
 "``(0.5, 0.5)``. Najdete ji v Inspektoru pod hlavičkou ``Node2D``."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:83
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -8379,9 +8351,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:4
-#, fuzzy
 msgid "Coding the player"
-msgstr "Pohybování hráčem"
+msgstr "Programování pohybu hráčem"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:6
 msgid ""
@@ -8390,7 +8361,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:9
-#, fuzzy
 msgid ""
 "To do so, we need to add some functionality that we can't get from a built-"
 "in node, so we'll add a script. Click the ``Player`` node and click the "
@@ -8489,7 +8459,6 @@ msgid "Play the appropriate animation."
 msgstr "Přehrát příslušnou animaci."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:138
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -8536,9 +8505,8 @@ msgid "And ``move_down`` mapped to the down arrow key."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:162
-#, fuzzy
 msgid "Your input map tab should look like this:"
-msgstr "Vaše cesta by měla vypadat takto."
+msgstr "Karta vstupní mapy by měla vypadat takto:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:166
 msgid "Click the \"Close\" button to close the project settings."
@@ -8597,7 +8565,6 @@ msgstr ""
 "Je dobré vektory znát, ale po zbytek tohoto tutoriálu to nebude nutné."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:267
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
@@ -8606,17 +8573,16 @@ msgstr ""
 "nebo ``stop ()`` uzlu AnimatedSprite."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:270
-#, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$`` je zkratka pro ``get_node()``. Takže ve výše uvedeném kódu je ``"
-"$AnimatedSprite.play()`` stejný jako ``get_node(\"AnimatedSprite\").Play()``."
+"``$`` je zkratka pro ``get_node()``. Takže ve výše uvedeném kódu je "
+"``$AnimatedSprite.play()`` stejný jako ``get_node(\"AnimatedSprite\")."
+"Play()``."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:274
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
@@ -8651,13 +8617,12 @@ msgstr ""
 "zajistíte, že pohyb zůstane konzistentní, i když se změní snímková frekvence."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:312
-#, fuzzy
 msgid ""
 "Click \"Play Scene\" (:kbd:`F6`, :kbd:`Cmd + R` on macOS) and confirm you "
 "can move the player around the screen in all directions."
 msgstr ""
-"Klikněte na \"Přehrát scénu\" (``F6``) a ujistěte se, že můžete hráčem "
-"posunovat po obrazovce ve všech směrech."
+"Klikněte na \"Přehrát scénu\" (:kbd:`F6`, :kbd:`Cmd + R` v systému MacOS) a "
+"ujistěte se, že můžete hráčem posunovat po obrazovce ve všech směrech."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:315
 msgid "If you get an error in the \"Debugger\" panel that says"
@@ -8671,7 +8636,6 @@ msgstr ""
 "``Pokus o volání funkce 'play' v základní 'null instance' na null instance``"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:320
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
@@ -8686,7 +8650,6 @@ msgid "Choosing animations"
 msgstr "Výběr animací"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:327
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -8828,9 +8791,8 @@ msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:4
-#, fuzzy
 msgid "Creating the enemy"
-msgstr "Vytvoření kostry"
+msgstr "Vytvoření nepřítele"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:6
 msgid ""
@@ -8909,7 +8871,6 @@ msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "Nastavte \"Speed(FPS)\" na ``3`` pro všechny animace."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:42
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to \"On\"."
 msgstr "V inspektoru nastavte vlastnost ``Playing`` na „On“."
 
@@ -8922,7 +8883,6 @@ msgstr ""
 "rozmanitost."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:47
-#, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -8949,29 +8909,26 @@ msgid "Enemy script"
 msgstr "Skript nepřítele"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:59
-#, fuzzy
 msgid "Add a script to the ``Mob`` like this:"
 msgstr "Ke scéně ``Mob`` přidej skript a vytvoř následující členské proměnné:"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:102
-#, fuzzy
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
 msgstr ""
-"Nyní se podívejme na zbytek skriptu. V ``_ready()`` náhodně vybereme jeden "
-"ze tří typů animací:"
+"Nyní se podívejme na zbytek skriptu. V ``_ready()`` přehráváme animaci "
+"náhodně pro ní vybereme jeden ze tří typů animací:"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:140
-#, fuzzy
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 "Zaprvé dostaneme seznam jmen animací z ``frames`` vlastnosti uzlu "
-"AnimatedSprite. Ta vrací pole obsahující všechny tři názvy animací: ``[\"walk"
-"\", \"swim\", \"fly\"]``."
+"AnimatedSprite. Ta vrací pole obsahující všechny tři názvy animací: "
+"``[\"walk\", \"swim\", \"fly\"]``."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:144
 msgid ""
@@ -8989,8 +8946,8 @@ msgid ""
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here."
 msgstr ""
-"Musíte použít ``randomize()``, pokud chcete, aby se vaše sekvence \"náhodných"
-"\" čísel lišila pokaždé, když spustíte scénu. Budeme používat "
+"Musíte použít ``randomize()``, pokud chcete, aby se vaše sekvence "
+"\"náhodných\" čísel lišila pokaždé, když spustíte scénu. Budeme používat "
 "``randomize()`` v naší ``Main`` scéně, takže to zde nebudeme potřebovat."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:152
@@ -9015,25 +8972,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:4
-#, fuzzy
 msgid "The main game scene"
-msgstr "Testování scény"
+msgstr "Hlavní scéna hry"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:6
 msgid ""
 "Now it's time to bring everything we did together into a playable game scene."
 msgstr ""
+"Nyní je čas všechno co jsme dosud udělali spojit do jedné hratelné scény."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:8
-#, fuzzy
 msgid ""
 "Create a new scene and add a :ref:`Node <class_Node>` named ``Main``. Ensure "
 "you create a Node, **not** a Node2D. Click the \"Instance\" button and "
 "select your saved ``Player.tscn``."
 msgstr ""
-"Nyní je čas to všechno spojit. Vytvořte novou scénu a přidejte :ref:"
-"`Node<class_Node>` s názvem ``Main``. Klikněte na tlačítko \"Instance\" a "
-"vyberte uložený soubor ``Player.tscn``."
+"Vytvořte novou scénu a přidejte :ref:`Node<class_Node>` s názvem ``Main``. "
+"Ujistěte se, že vytváříte uzel, Node **nikoliv** uzel Node2D. Klikněte na "
+"tlačítko \"Instance\" a vyberte uložený soubor ``Player.tscn``."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:14
 msgid ""
@@ -9183,12 +9139,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:192
-#, fuzzy
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Klikněte na uzel ``Main`` a uvidíte vlastnost ``Mob`` v Inspektoru pod "
+"Klikněte na uzel ``Main`` a uvidíte vlastnost ``MobScene`` v Inspektoru pod "
 "\"Proměnné skriptu\"."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:195
@@ -9249,7 +9204,6 @@ msgstr ""
 "další dva časovače. ``ScoreTimer`` zvýší skóre o 1."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:308
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -9262,7 +9216,10 @@ msgstr ""
 "V ``_on_MobTimer_timeout ()`` vytvoříme instanci nepřítele, vybereme náhodné "
 "počáteční místo podél ``Path2D`` a dáme nepřítele do pohybu. Uzel "
 "``PathFollow2D`` se bude automaticky otáčet, jak následuje cestu, takže ji "
-"použijeme k výběru směru a polohy nepřátel."
+"použijeme k výběru směru a polohy nepřátel. Při vynoření nepřítele "
+"vybereme'náhodnou hodnotu mezi ``150.0`` a ``250.0`` pro to, jak rychle se "
+"budou jednotliví nepřátelé pohybovat (byla by nuda, kdyby se všichni "
+"pohybovali stejnou rychlostí)."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:316
 msgid ""
@@ -9272,7 +9229,6 @@ msgstr ""
 "``add_child()``."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:401
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, Godot uses *radians*, not "
 "degrees. Pi represents a half turn in radians, about ``3.1415`` (there is "
@@ -9281,21 +9237,22 @@ msgid ""
 "functions to convert between the two."
 msgstr ""
 "Proč ``PI``? Ve funkcích vyžadujících úhly používá GDScript *radiany*, "
-"nikoli stupně. Pokud se vám pracuje pohodlněji se stupni, budete muset "
-"použít převodní funkce ``deg2rad()`` a ``rad2deg()``."
+"nikoli stupně. Pí představuje půl otáčky v radiánech, přibližně ``3.1415`` "
+"(existuje také ``TAU``, který je roven ``2 * PI``).Pokud se vám pracuje "
+"pohodlněji se stupni, budete muset použít převodní funkce ``deg2rad()`` a "
+"``rad2deg()``."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:409
 msgid "Testing the scene"
 msgstr "Testování scény"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:411
-#, fuzzy
 msgid ""
 "Let's test the scene to make sure everything is working. Add this "
 "``new_game`` call to ``_ready()``:"
 msgstr ""
-"Vyzkoušejte scénu, abychom se ujistili, že vše funguje. Přidejte toto do "
-"``_ready()``:"
+"Vyzkoušejte scénu, abychom se ujistili, že vše funguje. Přidejte volání "
+"``new_game`` do ``_ready()``:"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:435
 msgid ""
@@ -9338,17 +9295,16 @@ msgid ""
 "The final piece our game needs is a User Interface (UI) to display things "
 "like score, a \"game over\" message, and a restart button."
 msgstr ""
+"Posledním kouskem, který naše hra potřebuje, je UI: rozhraní pro zobrazování "
+"věcí, jako je skóre, zpráva „konec hry“ a tlačítko restartu."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:9
-#, fuzzy
 msgid ""
 "Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
 "named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
 "display that appears as an overlay on top of the game view."
 msgstr ""
-"Posledním kouskem, který naše hra potřebuje, je UI: rozhraní pro zobrazování "
-"věcí, jako je skóre, zpráva „konec hry“ a tlačítko restartu. Vytvořte novou "
-"scénu a přidejte uzel s názvem ``HUD`` :ref:`CanvasLayer "
+"Vytvořte novou scénu a přidejte uzel s názvem ``HUD`` :ref:`CanvasLayer "
 "<class_CanvasLayer>`. „HUD“ znamená „heads-up display“, informační displej, "
 "který se zobrazuje jako překryv v horní části herní obrazovky."
 
@@ -9422,9 +9378,8 @@ msgstr ""
 "použít toto písmo, proveďte následující:"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:39
-#, fuzzy
 msgid "Under \"Custom Fonts\", choose \"New Font\""
-msgstr "V části „Vlastní písma“ vyberte „Nový DynamicFont“"
+msgstr "V části \"Vlastní písma\" vyberte možnost \"Nový font\""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:43
 msgid ""
@@ -9435,7 +9390,6 @@ msgstr ""
 "\"Load\" a vyberte soubor \"Xolonium-Regular.ttf\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:48
-#, fuzzy
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
@@ -9444,10 +9398,10 @@ msgid ""
 msgstr ""
 "Jakmile to uděláte v ``ScoreLabel``, můžete kliknout na šipku dolů vedle "
 "vlastnosti DynamicFont a zvolit \"Kopírovat\", pak \"Vložit\" na stejné "
-"místo na ostatních dvou řídících uzlech."
+"místo na ostatních dvou řídících uzlech.Nastavte \"Vlastní velikost písma\" "
+"vlastnost ``ScoreLabel``. Dobře funguje nastavení ``64``."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:55
-#, fuzzy
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -9690,12 +9644,11 @@ msgstr ""
 "kliknout na tlačítko \"Přidat\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:415
-#, fuzzy
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``new_game()`` function in ``Main``:"
 msgstr ""
-"Nyní budou všechny davy ve skupině „mobs“. K funkci ``game_over()`` v "
+"Nyní budou všechny nepřátelé ve skupině „mobs“. K funkci ``game_over()`` v "
 "``Main`` pak můžeme přidat následující řádek:"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:433
@@ -9718,7 +9671,6 @@ msgid "Finishing up"
 msgstr "Dokončení"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:6
-#, fuzzy
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience."
@@ -9821,14 +9773,13 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:51
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:56
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -9840,16 +9791,15 @@ msgstr ""
 "v Inspektoru. Vyberte „New shortcut“ a klikněte na položku „Shortcut“. "
 "Zobrazí se druhá vlastnost *Shortcut*. Vyberte „Nový InputEventAction“ a "
 "klikněte na nový „InputEventAction“. Nakonec do vlastnosti *Action* zadejte "
-"název ``ui_select``. Toto je výchozí vstupní událost spojená s mezerníkem."
+"název Nakonec do vlastnosti *Action* zadejte název ``start_game``."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:64
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Enter` to start the game."
 msgstr ""
 "Nyní, když se objeví tlačítko Start, můžete na něj buď kliknout, nebo "
-"stisknout :kbd:`Space` pro spuštění hry."
+"stisknout :kbd:`Enter` pro spuštění hry."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:67
 msgid "And with that, you completed your first 2D game in Godot."
@@ -9875,9 +9825,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/index.rst:4
-#, fuzzy
 msgid "Your first 3D game"
-msgstr "Vaše první hra"
+msgstr "Vaše první 3D hra"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:6
 msgid ""
@@ -9957,9 +9906,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:4
-#, fuzzy
 msgid "Setting up the game area"
-msgstr "Nastavení cesty k projektu"
+msgstr "Nastavení herního prostoru"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:6
 msgid ""
@@ -9990,10 +9938,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:26
-#, fuzzy
 msgid "Click *Import & Edit* to open the project in the editor."
-msgstr ""
-"Klikněte na tlačítko **Instalace a úpravy** a projekt se otevře v editoru."
+msgstr "Kliknutím na tlačítko *Import &; Edit* otevřete projekt v editoru."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:30
 msgid ""
@@ -10008,9 +9954,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:39
-#, fuzzy
 msgid "Setting up the playable area"
-msgstr "Pohybování hráčem"
+msgstr "Nastavení hratelné oblasti"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:41
 msgid ""
@@ -10022,13 +9967,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:48
-#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on MacOS)."
 msgstr ""
-"Uložte scénu. Klikněte na Scéna -> Uložit nebo stiskněte :kbd:`Ctrl + S` v "
-"systému Windows / Linux nebo :kbd:`Cmd + S` v systému MacOS."
+"Uložte scénu jako ``Main.tscn`` stisknutím :kbd:`Ctrl + s` (:kbd:`Cmd + s` v "
+"systému MacOS)."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:50
 msgid ""
@@ -10222,9 +10166,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:122
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:224
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:123
-#, fuzzy
 msgid "|image15|"
-msgstr "| image1 |"
+msgstr "| image15 |"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:127
 msgid ""
@@ -10251,9 +10194,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:127
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:229
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:134
-#, fuzzy
 msgid "|image16|"
-msgstr "| image1 |"
+msgstr "| image16 |"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:141
 msgid "At this point, your project should look like this."
@@ -10264,9 +10206,8 @@ msgstr "V tomto okamžiku by váš projekt měl vypadat takto."
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:135
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:234
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:139
-#, fuzzy
 msgid "|image17|"
-msgstr "| image1 |"
+msgstr "| image17 |"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:145
 msgid ""
@@ -10363,9 +10304,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:70
-#, fuzzy
 msgid "Save the scene as ``Player.tscn``."
-msgstr "Nakonec scénu uložte pod názvem ``sayhello.tscn``."
+msgstr "Uložte scénu jako ``Player.tscn``."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:72
 msgid ""
@@ -10374,9 +10314,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:76
-#, fuzzy
 msgid "Creating input actions"
-msgstr "Vytváření ikon"
+msgstr "Vytváření vstupních akcí"
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:78
 msgid ""
@@ -10435,9 +10374,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:118
-#, fuzzy
 msgid "Do the same for the A key."
-msgstr "Měřítko kořenového uzlu."
+msgstr "Udělejte totéž pro klávesu A."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:122
 msgid ""
@@ -10480,9 +10418,8 @@ msgstr "Vstupní akce skoku by měla vypadat takto."
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:139
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:324
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:145
-#, fuzzy
 msgid "|image18|"
-msgstr "| image1 |"
+msgstr "| image18 |"
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:154
 msgid ""
@@ -10495,9 +10432,8 @@ msgid "In the next part, we'll code and test the player's movement."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:4
-#, fuzzy
 msgid "Moving the player with code"
-msgstr "Pohybování hráčem"
+msgstr "Přesunutí přehrávače pomocí kódu"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:6
 msgid ""
@@ -10696,9 +10632,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:345
-#, fuzzy
 msgid "Adding a camera"
-msgstr "Přidání skriptu"
+msgstr "Přidání kamery"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:347
 msgid ""
@@ -10775,9 +10710,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:4
-#, fuzzy
 msgid "Designing the mob scene"
-msgstr "Testování scény"
+msgstr "Navrhování scény nepřítele"
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:6
 msgid ""
@@ -10838,9 +10772,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:50
-#, fuzzy
 msgid "Removing monsters off-screen"
-msgstr "Odstranění starých nepřátel"
+msgstr "Odstranění příšer mimo obrazovku"
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:52
 msgid ""
@@ -10951,9 +10884,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:212
-#, fuzzy
 msgid "Leaving the screen"
-msgstr "Testování scény"
+msgstr "Opuštění obrazovky"
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:214
 msgid ""
@@ -10997,7 +10929,6 @@ msgid "Here is the complete ``Mob.gd`` script for reference."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:4
-#, fuzzy
 msgid "Spawning monsters"
 msgstr "Zrození nepřátel"
 
@@ -11021,11 +10952,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:17
-#, fuzzy
 msgid "Go to *Project -> Project Settings*."
-msgstr ""
-"Pro přístup do tohoto dialogu vyberte Projekt -> Nastavení projektu. Zkus to "
-"nyní."
+msgstr "Přejděte na *Project -> Project Settings*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:21
 msgid ""
@@ -11034,9 +10962,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:27
-#, fuzzy
 msgid "Creating the spawn path"
-msgstr "Vytvoření animace"
+msgstr "Vytvoření cesty pro zrození"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:29
 msgid ""
@@ -11061,9 +10988,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:45
-#, fuzzy
 msgid "Adding placeholder cylinders"
-msgstr "Typy zástupných symbolů"
+msgstr "Přidávání zástupných válců"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:47
 msgid ""
@@ -11197,18 +11123,16 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:145
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:329
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:152
-#, fuzzy
 msgid "|image19|"
-msgstr "| image1 |"
+msgstr "| image19|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:147
 msgid "With that, we're ready to code the spawn mechanism."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:150
-#, fuzzy
 msgid "Spawning monsters randomly"
-msgstr "Zrození nepřátel"
+msgstr "Náhodné rození nepřátel"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:152
 msgid "Right-click on the *Main* node and attach a new script to it."
@@ -11244,9 +11168,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:197
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:336
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:156
-#, fuzzy
 msgid "|image20|"
-msgstr "| image2 |"
+msgstr "| image20 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:199
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
@@ -11255,9 +11178,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:201
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:347
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:160
-#, fuzzy
 msgid "|image21|"
-msgstr "| image2 |"
+msgstr "| image21 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:203
 msgid ""
@@ -11268,9 +11190,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:206
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:356
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:184
-#, fuzzy
 msgid "|image22|"
-msgstr "| image2 |"
+msgstr "| image22 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:208
 msgid ""
@@ -11288,18 +11209,16 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:216
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:362
-#, fuzzy
 msgid "|image23|"
-msgstr "| image2 |"
+msgstr "| image23 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:218
 msgid "Connect it to the *Main* node."
 msgstr "Připojte jej k uzlu *Main*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:220
-#, fuzzy
 msgid "|image24|"
-msgstr "| image2 |"
+msgstr "| image24 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:222
 msgid ""
@@ -11312,9 +11231,8 @@ msgid "Let's code the mob spawning logic. We're going to:"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:227
-#, fuzzy
 msgid "Instantiate the mob scene."
-msgstr "Ulož scénu."
+msgstr "Vytvořte instance scény nepřítele."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:228
 msgid "Sample a random position on the spawn path."
@@ -11351,9 +11269,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:330
-#, fuzzy
 msgid "|image25|"
-msgstr "| image2 |"
+msgstr "| image25 |"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:332
 msgid ""
@@ -11373,19 +11290,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:9
-#, fuzzy
 msgid ""
 "First, we have to change a few settings related to physics interactions. "
 "Enter the world of :ref:`physics layers "
 "<doc_physics_introduction_collision_layers_and_masks>`."
 msgstr ""
-"Další informace naleznete v dokumentu :ref:"
-"`doc_physics_introduction_collision_layers_and_masks`."
+"Nejprve musíme změnit několik nastavení pro fyzikální interakce. Vstupte do "
+"světa :ref:`fyzikálních zákonů "
+"<doc_physics_introduction_collision_layers_and_masks>`."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:14
-#, fuzzy
 msgid "Controlling physics interactions"
-msgstr "Ovládání animace"
+msgstr "Řízení fyzikálních interakcí"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:16
 msgid ""
@@ -11424,9 +11340,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:36
-#, fuzzy
 msgid "Setting layer names"
-msgstr "Názvy souborů"
+msgstr "Nastavení názvů vrstev"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:38
 msgid ""
@@ -11446,9 +11361,8 @@ msgid "Now, we can assign them to our physics nodes."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:52
-#, fuzzy
 msgid "Assigning layers and masks"
-msgstr "Kolizní vrstvy a masky"
+msgstr "Přiřazení vrstev a masek"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:54
 msgid ""
@@ -11566,9 +11480,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:174
-#, fuzzy
 msgid "Squashing monsters"
-msgstr "Používání kontejnerů"
+msgstr "Mačkání příšer"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:176
 msgid ""
@@ -11714,9 +11627,8 @@ msgid "However, the player won't die yet. We'll work on that in the next part."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:4
-#, fuzzy
 msgid "Killing the player"
-msgstr "Pohybování hráčem"
+msgstr "Zabití hráče"
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:6
 msgid ""
@@ -11810,9 +11722,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:110
-#, fuzzy
 msgid "Ending the game"
-msgstr "Spuštění hry"
+msgstr "Ukončení hry"
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:112
 msgid ""
@@ -11849,9 +11760,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:148
-#, fuzzy
 msgid "Code checkpoint"
-msgstr "Přepnout breakpoint"
+msgstr "Kontrolní bod kódu"
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:150
 msgid ""
@@ -11876,9 +11786,8 @@ msgid "See you in the next lesson to add the score and the retry option."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:4
-#, fuzzy
 msgid "Score and replay"
-msgstr "ScoreLabel"
+msgstr "Skóre a opakování"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:6
 msgid ""
@@ -11939,9 +11848,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:46
-#, fuzzy
 msgid "Creating a UI theme"
-msgstr "Vytvoření stromu"
+msgstr "Vytvoření motivu uživatelského rozhraní"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:48
 msgid ""
@@ -12064,10 +11972,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:172
-#, fuzzy
 msgid ""
 "You can learn more about string formatting here: :ref:`doc_gdscript_printf`."
-msgstr "GDScript také podporuje :ref:`doc_gdscript_printf`."
+msgstr ""
+"Více informací o formátování řetězců najdete zde: :ref:`doc_gdscript_printf`."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:174
 msgid ""
@@ -12084,9 +11992,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:188
-#, fuzzy
 msgid "Retrying the game"
-msgstr "Spuštění hry"
+msgstr "Opakování hry"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:190
 msgid ""
@@ -12152,9 +12059,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:237
-#, fuzzy
 msgid "Coding the retry option"
-msgstr "Změna ikony hlavního panelu"
+msgstr "Kódování možnosti pro opakování"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:239
 msgid ""
@@ -12193,9 +12099,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:308
-#, fuzzy
 msgid "Adding music"
-msgstr "Přidání skriptu"
+msgstr "Přidání hudby"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:310
 msgid ""
@@ -12238,18 +12143,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:338
-#, fuzzy
 msgid "Save the scene as ``MusicPlayer.tscn``."
-msgstr "Nakonec scénu uložte pod názvem ``sayhello.tscn``."
+msgstr "Uložte scénu jako ``MusicPlayer.tscn``."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:340
-#, fuzzy
 msgid ""
 "We have to register it as an autoload. Head to the *Project -> Project "
 "Settings…* menu and click on the *Autoload* tab."
 msgstr ""
-"Chcete-li scénu nebo skript automaticky načíst, vyberte v nabídce **Projekt "
-"> Nastavení projektu** a přepněte na kartu **AutoLoad**."
+"Musíme jej zaregistrovat jako automatické načítání. Přejděte do nabídky "
+"*Project -> Project Settings...* a klikněte na kartu *Autoload*."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:343
 msgid ""
@@ -12295,9 +12198,8 @@ msgid "Here is the complete ``Main.gd`` script for reference."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:4
-#, fuzzy
 msgid "Character animation"
-msgstr "Animace spritu"
+msgstr "Animace postav"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:6
 msgid ""
@@ -12311,9 +12213,8 @@ msgid "We'll start with an introduction to using the animation editor."
 msgstr "Začneme úvodem do používání editoru animací."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:15
-#, fuzzy
 msgid "Using the animation editor"
-msgstr "Použití editoru motivů"
+msgstr "Použití editoru animací"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:17
 msgid ""
@@ -12389,9 +12290,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:72
-#, fuzzy
 msgid "The float animation"
-msgstr "animace světla"
+msgstr "Plovoucí animace"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:74
 msgid ""
@@ -12508,9 +12408,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:158
-#, fuzzy
 msgid "Your animation should look something like this."
-msgstr "Vaše finální scéna by měla vypadat přibližně takto."
+msgstr "Vaše animace by měla vypadat přibližně takto."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:164
 msgid ""
@@ -12532,9 +12431,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:177
-#, fuzzy
 msgid "Controlling the animation in code"
-msgstr "Ovládání animace"
+msgstr "Ovládání animace kódem"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:179
 msgid ""
@@ -12566,9 +12464,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:240
-#, fuzzy
 msgid "Animating the mobs"
-msgstr "Animace jedné Ryby"
+msgstr "Animování nepřátel"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:242
 msgid ""
@@ -12621,9 +12518,8 @@ msgid "And the *Mob*'s script."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:4
-#, fuzzy
 msgid "Going further"
-msgstr "Pohybování hráčem"
+msgstr "Jdeme dál"
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:6
 msgid ""
@@ -12658,9 +12554,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:23
-#, fuzzy
 msgid "Exploring the manual"
-msgstr "Exportování z příkazového řádku"
+msgstr "Prozkoumání manuálu"
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:25
 msgid ""
@@ -13262,8 +13157,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
@@ -17497,9 +17392,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
-"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
-"\"**. The former renders quickly, but can cause deformations, while the "
-"later is more correct, but costlier."
+"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube "
+"Mapped\"**. The former renders quickly, but can cause deformations, while "
+"the later is more correct, but costlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:198
@@ -20834,9 +20729,8 @@ msgid "The example code below draws a single triangle."
 msgstr ""
 
 #: ../../docs/tutorials/3d/occluders.rst:4
-#, fuzzy
 msgid "Occluder Nodes"
-msgstr "Režim okluze"
+msgstr "Uzly okluzoru"
 
 #: ../../docs/tutorials/3d/occluders.rst:6
 msgid ""
@@ -21865,8 +21759,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:79
 msgid ""
 "It turns out there is a simpler way of handling this scenario. Godot "
-"supports *rooms **within** rooms* (we will call them **\"internal rooms"
-"\"**). That is, you can place a house within a terrain room, or even a "
+"supports *rooms **within** rooms* (we will call them **\"internal "
+"rooms\"**). That is, you can place a house within a terrain room, or even a "
 "building, or set of buildings, and even have exit portals in different "
 "terrain rooms!"
 msgstr ""
@@ -23664,8 +23558,8 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
-"So when inserting keys, you might find it convenient to have only the \"rot"
-"\" toggle active most of the time:"
+"So when inserting keys, you might find it convenient to have only the "
+"\"rot\" toggle active most of the time:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
@@ -26648,8 +26542,8 @@ msgstr ""
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
-"filters to all imported animations which have a name ending in ``\"_Loop"
-"\"``::"
+"filters to all imported animations which have a name ending in "
+"``\"_Loop\"``::"
 msgstr ""
 "Skript musí začínat příkazem animačního filtru ( řádkem začínajícím znakem "
 "``@``). Například pokud chceme použít filtry na všechny importované animace, "
@@ -26695,13 +26589,13 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:351
 msgid ""
-"For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
-"\"Control\"``, unless they have ``\"Arm\"`` in their name::"
+"For example: include all tracks in animations with names ending in "
+"``\"_Loop\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end "
+"in ``\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
-"Například: zahrne všechny stopy v animacích s názvem končícím na ``\"_Loop"
-"\"``, ale vyřadí všechny stopy ovlivňující ``\"Skeleton\"``, které končí na "
-"``\"Control\"``, pokud nemají v názvu ``\"Arm\"``::"
+"Například: zahrne všechny stopy v animacích s názvem končícím na "
+"``\"_Loop\"``, ale vyřadí všechny stopy ovlivňující ``\"Skeleton\"``, které "
+"končí na ``\"Control\"``, pokud nemají v názvu ``\"Arm\"``::"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:360
 msgid ""
@@ -26902,7 +26796,6 @@ msgstr ""
 "vyžadují většinou přesnou detekci kolizí."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:449
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
@@ -27121,9 +27014,9 @@ msgstr "Exportér Blender ESCN"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:4
 msgid ""
-"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
-"\", which can be downloaded here: https://github.com/godotengine/godot-"
-"blender-exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender "
+"Exporter\", which can be downloaded here: https://github.com/godotengine/"
+"godot-blender-exporter"
 msgstr ""
 "Tato kapitola se týká zásuvného modulu pro Blender s názvem \"Godot Blender "
 "Exporter\", který si můžete stáhnout zde: https://github.com/godotengine/"
@@ -27402,7 +27295,7 @@ msgid ""
 msgstr ""
 "V Godotu můžete mít různé kolizní skupiny a kolizní masky. V Blenderu máte "
 "pouze kolizní skupiny. Výsledkem je, že kolizní maska exportovaného objektu "
-"se rovná jeho kolizní skupině. Většinou je to to, co chcete."
+"se rovná jeho kolizní skupině. Většinou je to právě to, co chcete."
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/physics.rst:42
 msgid ""
@@ -27474,7 +27367,7 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
-"V programu Blender vrhá světlo světlo až do nekonečna. V Godotu je omezeno "
+"V programu Blender vrhá světlo až do nekonečna. V Godotu je omezeno "
 "vzdáleností útlumu. Chcete-li dosáhnout co největší shody mezi viewportem a "
 "Godotem, zaškrtněte políčko \"Sphere\". (Zvýrazněno zeleně)"
 
@@ -29418,9 +29311,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:115
-#, fuzzy
 msgid ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
-msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
+msgstr ":ref:`Třídy skriptů <doc_gdscript_basics_class_name>`"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
@@ -29507,8 +29399,8 @@ msgstr ""
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:195
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:199
@@ -32042,7 +31934,6 @@ msgstr ""
 "godotengine/godot/issues/10946>`__"
 
 #: ../../docs/tutorials/editor/external_editor.rst:13
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
@@ -32054,7 +31945,6 @@ msgstr ""
 "-> Textový editor -> Externí``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:19
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command-line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
@@ -32164,38 +32054,36 @@ msgid "Emacs"
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:51
-#, fuzzy
 msgid "``emacs +{line}:{col} {file}``"
-msgstr "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:54
-#, fuzzy
 msgid ""
 "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
 "Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "V případě Visual Studio Code je třeba odkázat na soubor ``code.cmd``."
+msgstr ""
+"V případě Visual Studio Code je třeba odkázat na soubor ``code.cmd``.Pro "
+"Emacs můžete volat ``emacsclient`` místo ``emacs``, pokud používáte režim "
+"serveru."
 
 #: ../../docs/tutorials/editor/external_editor.rst:59
-#, fuzzy
 msgid "Official editor plugins"
-msgstr "Oficiální zásuvný modul Git"
+msgstr "Oficiální zásuvné moduly editoru"
 
 #: ../../docs/tutorials/editor/external_editor.rst:61
 msgid "We have official plugins for the following code editors:"
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:63
-#, fuzzy
 msgid ""
 "`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 
 #: ../../docs/tutorials/editor/external_editor.rst:64
-#, fuzzy
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:1
 msgid "cheatsheet, cheat sheet, shortcut"
@@ -35130,8 +35018,9 @@ msgstr "Žádná podpora nasazení jedním kliknutím systému Android."
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:69
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
-"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
-"%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
+"github.com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__ "
+"for a list of known bugs."
 msgstr ""
 "Seznam známých chyb najdete v `seznamu otevřených problémů na GitHubu "
 "týkajících se webového editoru <https://github.com/godotengine/godot/issues?"
@@ -35290,13 +35179,12 @@ msgstr ""
 "Nejprve však musíme provést některé změny ve způsobu fungování hry."
 
 #: ../../docs/tutorials/export/exporting_basics.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_2d_game` before continuing with this tutorial."
 msgstr ""
 "Pokud jste se dosud „Dodge the Creeps“ sami nevytvořili, přečtěte si prosím :"
-"ref:`doc_your_first_game`, než budete pokračovat v tomto tutoriálu."
+"ref:`doc_your_first_2d_game` než budete pokračovat v tomto tutoriálu."
 
 #: ../../docs/tutorials/export/exporting_basics.rst:23
 msgid "Preparing the project"
@@ -35999,7 +35887,6 @@ msgstr ""
 "exportu. Základní volání příkazu by bylo následující:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:137
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -36008,31 +35895,32 @@ msgid ""
 "respect the directory the command was invoked from."
 msgstr ""
 "Tím se provede export do souboru ``nějaké_jméno.exe`` za předpokladu, že "
-"existuje předvolba s názvem \"Windows Desktop\" a šablonu lze nalézt. "
-"Výstupní cesta je relativní k cestě projektu nebo absolutní; nerespektuje "
-"adresář, ze kterého byl příkaz vyvolán."
+"existuje předvolba s názvem \"Windows Desktop\" a šablonu lze nalézt. (Název "
+"předvolby exportu musí být zapsán v uvozovkách, pokud obsahuje mezery nebo "
+"speciální znaky). Výstupní cesta je relativní k cestě projektu nebo "
+"absolutní; nerespektuje adresář, ze kterého byl příkaz vyvolán."
 
 #: ../../docs/tutorials/export/exporting_projects.rst:143
-#, fuzzy
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
 "single exported main pack file to be used with multiple Godot executables. "
 "When doing so, the export preset name must still be specified on the command "
 "line:"
 msgstr ""
-"Můžete jej také nakonfigurovat tak, aby exportoval pouze soubor PCK nebo "
-"ZIP, což umožňuje použít jeden export s více spustitelnými soubory Godot. K "
-"tomu dojde, pokud název cíle končí na ``.pck`` nebo ``.zip``."
+"Můžete jej také nakonfigurovat tak, aby exportoval *pouze* soubor PCK nebo "
+"ZIP, což umožní použít jeden exportovaný soubor hlavního balíčku více "
+"spustitelnými soubory Godot. Přitom je třeba na příkazovém řádku ještě zadat "
+"název předvolby exportu:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:151
-#, fuzzy
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, so that you do not need to ``cd`` to the project folder before running "
 "the command:"
 msgstr ""
 "Často je užitečné kombinovat příznak ``--export`` s příznakem ``--path`` a "
-"vytvořit speciální předvolbu exportu pro automatický export:"
+"vytvořit speciální předvolbu exportu pro automatický export , abyste před "
+"spuštěním příkazu nemuseli ``cd`` do složky projektu:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:161
 msgid ""
@@ -36746,12 +36634,10 @@ msgstr ""
 "sdílená knihovna se načte a vyexportuje v **GDNative**."
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:4
-#, fuzzy
 msgid "Exporting for Linux"
-msgstr "Export pro PC"
+msgstr "Export pro Linux"
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:6
-#, fuzzy
 msgid ""
 "The simplest way to distribute a game for PC is to copy the executable "
 "(``godot``), compress the folder and send it to someone else. However, this "
@@ -36762,7 +36648,6 @@ msgstr ""
 "poslat ji někomu jinému. To však často není žádoucí."
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:10
-#, fuzzy
 msgid ""
 "Godot offers a more elegant approach for PC distribution when using the "
 "export system. When exporting for Linux, the exporter takes all the project "
@@ -36777,9 +36662,8 @@ msgstr ""
 "neobsahuje editor a ladicí program."
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:4
-#, fuzzy
 msgid "Exporting for macOS"
-msgstr "Export pro PC"
+msgstr "Export pro macOS"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:6
 msgid ""
@@ -36790,13 +36674,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:12
-#, fuzzy
 msgid ""
 "To enable code signing and notarization, you must export from a computer "
 "running macOS with Xcode command line tools installed."
 msgstr ""
-"Aby bylo možné sestavit vaši hru pro iOS, musíte mít počítač se systémem "
-"macOS s nainstalovaným Xcode."
+"Chcete-li povolit podepisování kódu a ověření, musíte exportovat z počítače "
+"se systémem macOS a nainstalovanými nástroji příkazového řádku Xcode."
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:13
 #: ../../docs/tutorials/export/exporting_for_windows.rst:19
@@ -36813,9 +36696,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:20
-#, fuzzy
 msgid "Code signing and notarization"
-msgstr "Integrace oken a operačního systému"
+msgstr "Podepisování kódů a ověření"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:22
 msgid ""
@@ -36884,15 +36766,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:46
-#, fuzzy
 msgid "Signing Options"
-msgstr "Hledání doplňků"
+msgstr "Možnosti podepisování"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:49
 #: ../../docs/tutorials/export/exporting_for_mac.rst:72
-#, fuzzy
 msgid "Option"
-msgstr "Optimalizace"
+msgstr "Možnost"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:51
 #: ../../docs/tutorials/export/exporting_for_mac.rst:74
@@ -36905,9 +36785,8 @@ msgid "Enables code signing."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:53
-#, fuzzy
 msgid "Identity"
-msgstr "Identifikátory"
+msgstr "Identita"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:53
 msgid ""
@@ -36934,9 +36813,8 @@ msgid "Enables \"Hardened Runtime\". Required for notarization."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:59
-#, fuzzy
 msgid "Replace Existing Signature"
-msgstr "Nahradit v souborech"
+msgstr "Nahrazení stávajícího podpisu"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:59
 msgid ""
@@ -36955,9 +36833,8 @@ msgid "Leave ``Identity`` option empty to use ad-hoc signature."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:69
-#, fuzzy
 msgid "Notarization Options"
-msgstr "Možnosti animace"
+msgstr "Možnosti ověření"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:74
 msgid "Enables automatic upload for notarization."
@@ -36998,9 +36875,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:86
-#, fuzzy
 msgid "Entitlements"
-msgstr "Test obsahu"
+msgstr "Nároky"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:89
 msgid "Hardened Runtime Entitlements"
@@ -37063,9 +36939,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:105
-#, fuzzy
 msgid "Audio Input"
-msgstr "Audio sběrnice"
+msgstr "Zvukový vstup"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:105
 msgid ""
@@ -37075,7 +36950,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:107
-#, fuzzy
 msgid "Camera"
 msgstr "**Kamera:**"
 
@@ -37115,9 +36989,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:115
-#, fuzzy
 msgid "Photo Library"
-msgstr "Knihovna zdrojů (AssetLib)"
+msgstr "Knihovna fotografií"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:115
 msgid ""
@@ -37178,27 +37051,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:140
-#, fuzzy
 msgid "Enabled"
-msgstr "Povolit"
+msgstr "Povoleno"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:140
 msgid "Enables App Sandbox."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:142
-#, fuzzy
 msgid "Network Server"
-msgstr "Síťový profiler"
+msgstr "Síťový server"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:142
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:144
-#, fuzzy
 msgid "Network Client"
-msgstr "Sítě"
+msgstr "Síťový klient"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:144
 msgid "Enable to allow app to establish outgoing network connections."
@@ -37233,9 +37103,8 @@ msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:152
-#, fuzzy
 msgid "Files Pictures [5]_"
-msgstr "Struktura souborů"
+msgstr "Obrázky souborů [5]_"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:152
 msgid "Allows read or write access to the user's \"Pictures\" folder."
@@ -37258,9 +37127,8 @@ msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:158
-#, fuzzy
 msgid "Files User Selected [5]_"
-msgstr "Smazat vybraný"
+msgstr "Soubory vybrané uživatelem [5]_"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:158
 msgid ""
@@ -37291,9 +37159,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/running_on_mac.rst:4
-#, fuzzy
 msgid "Running Godot apps on macOS"
-msgstr "Běží na macOS"
+msgstr "Spouštění aplikací Godot v systému macOS"
 
 #: ../../docs/tutorials/export/running_on_mac.rst:6
 msgid ""
@@ -37451,9 +37318,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/running_on_mac.rst:109
-#, fuzzy
 msgid "Run the following commands:"
-msgstr "Existují následující omezení:"
+msgstr "Spusťte následující příkazy:"
 
 #: ../../docs/tutorials/export/running_on_mac.rst:111
 msgid ""
@@ -37468,12 +37334,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:4
-#, fuzzy
 msgid "Exporting for Windows"
-msgstr "Export pro systém Android"
+msgstr "Export pro systém Windows"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:6
-#, fuzzy
 msgid ""
 "The simplest way to distribute a game for PC is to copy the executable "
 "(``godot.exe``), compress the folder and send it to someone else. However, "
@@ -37484,7 +37348,6 @@ msgstr ""
 "poslat ji někomu jinému. To však často není žádoucí."
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:10
-#, fuzzy
 msgid ""
 "Godot offers a more elegant approach for PC distribution when using the "
 "export system. When exporting for Windows, the exporter takes all the "
@@ -38205,8 +38068,8 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_android.rst:57
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
-"should move it to a memorable location such as ``%USERPROFILE%\\.android"
-"\\``, because you will need its location in a later step. For more "
+"should move it to a memorable location such as ``%USERPROFILE%\\."
+"android\\``, because you will need its location in a later step. For more "
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
@@ -38672,9 +38535,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:114
-#, fuzzy
 msgid "Background processing"
-msgstr "Pozadí"
+msgstr "Zpracování na pozadí"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:116
 msgid ""
@@ -43564,8 +43426,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
-"com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
-"+gamepad>`__ on GitHub."
+"com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 "Seznam známých chyb najdete v `seznamu otevřených problémů na GitHubu "
 "týkajících se webového editoru <https://github.com/godotengine/godot/issues?"
@@ -43914,9 +43776,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:4
-#, fuzzy
 msgid "File paths in Godot projects"
-msgstr "Příprava projektu"
+msgstr "Cesty k souborům v projektech Godot"
 
 #: ../../docs/tutorials/io/data_paths.rst:6
 msgid ""
@@ -43942,9 +43803,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:20
-#, fuzzy
 msgid "Accessing files in the project folder"
-msgstr "Přidávání souborů do projektu"
+msgstr "Přístup k souborům ve složce projektu"
 
 #: ../../docs/tutorials/io/data_paths.rst:22
 msgid ""
@@ -48133,8 +47993,8 @@ msgstr ""
 #: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
-"array, with each string containing a header in the format ``\"header: value"
-"\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
+"array, with each string containing a header in the format ``\"header: "
+"value\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
 
@@ -48600,9 +48460,8 @@ msgid "GPU"
 msgstr "GPU"
 
 #: ../../docs/tutorials/performance/index.rst:90
-#, fuzzy
 msgid "Multi-threading --"
-msgstr "Použití multi-threadingu"
+msgstr "Vícevláknové --"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:4
 msgid "General optimization tips"
@@ -53551,8 +53410,8 @@ msgstr ""
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
 "the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
-"you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
-"\" feature in the skeleton node."
+"you can generate ``PhysicalBone`` nodes with the \"Create physical "
+"skeleton\" feature in the skeleton node."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
@@ -54639,8 +54498,8 @@ msgid ""
 "android_iap>`__."
 msgstr ""
 "Pokud vám při učení vyhovují více příklady, můžete se také podívat na různé "
-"\"Godot demo projekty <https://github.com/godotengine/godot-demo-projects"
-"\"'_."
+"\"Godot demo projekty <https://github.com/godotengine/godot-demo-"
+"projects\"'_."
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
@@ -55428,12 +55287,13 @@ msgstr "Multiplatformní hry"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
@@ -57131,8 +56991,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:115
 msgid ""
-"You should choose this name as a continuation to \"Import as\", e.g. *"
-"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"You should choose this name as a continuation to \"Import as\", e.g. "
+"*\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 
@@ -58143,8 +58003,8 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:75
 msgid ""
 "There can only be one active camera per :ref:`Viewport <class_Viewport>`, so "
-"if there is more than one, make sure that the desired one has the \"current"
-"\" property set, or make it the current camera by calling:"
+"if there is more than one, make sure that the desired one has the "
+"\"current\" property set, or make it the current camera by calling:"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:83
@@ -59650,9 +59510,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/index.rst:27
-#, fuzzy
 msgid "Core features"
-msgstr "C# vlastnosti"
+msgstr "Základní vlastnosti"
 
 #: ../../docs/tutorials/scripting/index.rst:29
 msgid ""
@@ -61038,10 +60897,10 @@ msgstr "Při priřazení hodnoty nekompatibilního typu bude výsledkem error."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:687
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 "Protože pole a slovníky jsou předávány odkazem (referencí), kostanty jsou "
 "tzv \"mělké\". To znamená, že i když deklarujete pole nebo slovník jako "
@@ -61462,12 +61321,10 @@ msgstr ""
 "soubor skriptu ``character.gd``::"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:1069
-#, fuzzy
 msgid "Registering named classes"
-msgstr "Registrace skriptu jako třídy"
+msgstr "Registrace pojmenovaných tříd"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:1071
-#, fuzzy
 msgid ""
 "You can give your class a name to register it as a new type in Godot's "
 "editor. For that, you use the ``class_name`` keyword. You can optionally use "
@@ -62666,14 +62523,12 @@ msgstr ""
 "slouží speciální syntaxe exportu."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:29
-#, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
 "Exportování vlastností lze provádět i v jiných jazycích, například v jazyce "
-"C#. Syntaxe se liší v závislosti na jazyce. Informace o exportech v jazyce "
-"C# naleznete v :ref:`doc_c_sharp_exports`."
+"C#. Syntaxe se liší v závislosti na jazyce."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:139
 msgid ""
@@ -63819,14 +63674,12 @@ msgstr ""
 "Základní třídy a uzly (``Object``, ``Node``, ``Area2D``, ``Camera2D`` atd.)"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:110
-#, fuzzy
 msgid ""
 "Your own custom classes. Look at the new :ref:`class_name "
 "<doc_gdscript_basics_class_name>` feature to register types in the editor."
 msgstr ""
 "Vlastní, přizpůsobené třídy. Podívejte se na novou vlastnost :ref:"
-"`název_třídy <název_třídy_doc_scripting_continued_class_name>` pro "
-"registraci typů v editoru."
+"`class_name <doc_gdscript_basics_class_name>` pro registraci typů v editoru."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:115
 msgid ""
@@ -64282,8 +64135,8 @@ msgstr ""
 "``%s``, který vidíte ve výše uvedeném příkladu, je nejjednodušší zástupný "
 "znak a funguje pro většinu případů: převádí hodnotu stejným způsobem, jakou "
 "by ji převedl implicitní převod řetězce nebo ``str()``. Řetězce zůstanou "
-"beze změny, logické hodnoty se transformují buď na ``\"True\"`` nebo ``"
-"\"False\"``, celé nebo reálné číslo se změní na desetinné, ostatní typy "
+"beze změny, logické hodnoty se transformují buď na ``\"True\"`` nebo "
+"``\"False\"``, celé nebo reálné číslo se změní na desetinné, ostatní typy "
 "obvykle vracejí svá data v lidsky čitelné podobě."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:46
@@ -67295,9 +67148,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:4
-#, fuzzy
 msgid "What is GDNative?"
-msgstr "Co je to Mesh?"
+msgstr "Co je to GDNative?"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:9
 msgid ""
@@ -67318,7 +67170,6 @@ msgid "Differences between GDNative and C++ modules"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:19
-#, fuzzy
 msgid ""
 "You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` "
 "to run C or C++ code in a Godot project."
@@ -67409,9 +67260,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:63
-#, fuzzy
 msgid "Supported languages"
-msgstr "Podporované soubory"
+msgstr "Podporované jazyky"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:65
 msgid ""
@@ -67424,9 +67274,8 @@ msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:69
-#, fuzzy
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
-msgstr ":ref:`doc_input_examples`"
+msgstr "C :ref:`(tutorial) <doc_gdnative_c_example>`"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:73
 msgid ""
@@ -67440,34 +67289,24 @@ msgid "The bindings below are developed and maintained by the community:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:84
-#, fuzzy
 msgid "`D <https://github.com/godot-d/godot-d>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr "`D <https://github.com/godot-d/godot-d>`__"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:85
-#, fuzzy
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
-msgstr ""
-"`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
-"h>`__"
+msgstr "\"Kotlin <https://github.com/utopia-rise/godot-kotlin>\"__"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:86
-#, fuzzy
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
-msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
+msgstr "`Nim <https://github.com/pragmagic/godot-nim>`__"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:87
-#, fuzzy
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
-msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
+msgstr "`Python <https://github.com/touilleMan/godot-python>`__"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:88
-#, fuzzy
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
-msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
+msgstr "\"Rezavá <https://github.com/godot-rust/godot-rust>\"__"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:92
 msgid ""
@@ -69133,16 +68972,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:21
-#, fuzzy
 msgid ""
 "You can activate idle processing by defining the ``_process()`` method in a "
 "script. You can turn it off and back on by calling :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
 msgstr ""
-"Volnoběžné zpracování je aktivováno, když je ve skriptu nalezena metoda: "
-"ref: `Node._process () <class_Node_method__process>`. Lze jej vypnout a "
-"zapnout pomocí funkce :ref:`Node.set_process () "
-"<class_Node_method_set_process>`."
+"Zpracování v nečinnosti můžete aktivovat definováním metody ``_process()`` "
+"ve skriptu. Můžete ji vypnout a znovu zapnout voláním :ref:`Node."
+"set_process() <class_Node_method_set_process>`."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:25
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:57
@@ -69150,7 +68987,6 @@ msgid "The engine calls this method every time it draws a frame:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:41
-#, fuzzy
 msgid ""
 "Keep in mind that the frequency at which the engine calls ``_process()`` "
 "depends on your application's framerate, which varies over time and across "
@@ -69170,7 +69006,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:49
-#, fuzzy
 msgid ""
 "Physics processing works with a similar virtual function: "
 "``_physics_process()``. Use it for calculations that must happen before each "
@@ -69188,7 +69023,6 @@ msgstr ""
 "Fyzika Fps."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:73
-#, fuzzy
 msgid ""
 "The function ``_process()`` is not synchronized with physics. Its rate "
 "depends on hardware and game optimization. It also runs after the physics "
@@ -69199,7 +69033,6 @@ msgstr ""
 "jednovláknových her je spouštěna až po dokončení fyzikálního kroku."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:77
-#, fuzzy
 msgid ""
 "You can see the ``_process()`` function at work by creating a scene with a "
 "single Label node, with the following script attached to it:"
@@ -69208,7 +69041,6 @@ msgstr ""
 "scénu s jediným Label uzlem s následujícím skriptem:"
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:104
-#, fuzzy
 msgid "When you run the scene, you should see a counter increasing each frame."
 msgstr ""
 "Ukáže nám to počítadlo, které se s každým dalším framem (snímkem) zvyšuje."
@@ -69240,16 +69072,12 @@ msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:16
-#, fuzzy
 msgid "Adding nodes to a group"
-msgstr "Přidávání souborů do projektu"
+msgstr "Přidání uzlů do skupiny"
 
 #: ../../docs/tutorials/scripting/groups.rst:18
-#, fuzzy
 msgid "There are two ways to add nodes to groups:"
-msgstr ""
-"Existují dva způsoby, jak navrhnout vaše uživatelské rozhraní v Godotu. "
-"Můžete:"
+msgstr "Uzly lze do skupin přidávat dvěma způsoby:"
 
 #: ../../docs/tutorials/scripting/groups.rst:20
 msgid "Using the Node dock in the editor."
@@ -69261,9 +69089,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:24
-#, fuzzy
 msgid "Using the Node dock"
-msgstr "Použití webového editoru"
+msgstr "Použití doku uzlu"
 
 #: ../../docs/tutorials/scripting/groups.rst:26
 msgid ""
@@ -69324,19 +69151,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:65
-#, fuzzy
 msgid "Using code"
-msgstr "Použití SceneTree"
+msgstr "Pomocí kódu"
 
 #: ../../docs/tutorials/scripting/groups.rst:67
-#, fuzzy
 msgid ""
 "You can also manage groups from scripts. The following code adds the node to "
 "which you attach the script to the ``guards`` group as soon as it enters the "
 "scene tree."
 msgstr ""
-"A druhý způsob je pomocí kódu. Následující skript by přidal aktuální uzel do "
-"skupiny ``nepřátelé`` , jakmile se objeví ve stromu scény."
+"Skupiny můžete spravovat také ze skriptů. Následující kód přidá uzel, ke "
+"kterému připojíte skript, do skupiny ``guards``, jakmile vstoupí do stromu "
+"scény."
 
 #: ../../docs/tutorials/scripting/groups.rst:86
 msgid ""
@@ -69351,16 +69177,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:105
-#, fuzzy
 msgid ""
 "The above code calls the function ``enter_alert_mode`` on every member of "
 "the group ``guards``."
 msgstr ""
-"Výše uvedený kód volá funkci ``player_was_discovered`` pro každého člena "
-"skupiny ``nepřátelé``."
+"Výše uvedený kód volá funkci ``enter_alert_mode`` u každého člena skupiny "
+"``strážců``."
 
 #: ../../docs/tutorials/scripting/groups.rst:108
-#, fuzzy
 msgid ""
 "To get the full list of nodes in the ``guards`` group as an array, you can "
 "call :ref:`SceneTree.get_nodes_in_group() "
@@ -69382,9 +69206,8 @@ msgstr ""
 "pozastavovat a rušit. Poskytuje také užitečné signály."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:4
-#, fuzzy
 msgid "Nodes and scene instances"
-msgstr "Uzly a zdroje"
+msgstr "Instance uzlů a scén"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:6
 msgid ""
@@ -69393,9 +69216,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:10
-#, fuzzy
 msgid "Getting nodes"
-msgstr "Vytváření uzlů"
+msgstr "Získávání uzlů"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:12
 msgid ""
@@ -69428,9 +69250,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:58
-#, fuzzy
 msgid "Node paths"
-msgstr "Kopírovat cestu k uzlu"
+msgstr "Cesty k uzlům"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:60
 msgid ""
@@ -69541,13 +69362,12 @@ msgid "Loading the scene from the hard drive."
 msgstr "Načítání scény z pevného disku."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:185
-#, fuzzy
 msgid ""
 "Creating an instance of the loaded :ref:`PackedScene <class_PackedScene>` "
 "resource."
 msgstr ""
-"Chcete-li získat instanci scény, musíte použít metodu :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>`."
+"Vytvoření instance načteného prostředku :ref:`PackedScene "
+"<class_PackedScene>`."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:197
 msgid ""
@@ -69569,7 +69389,6 @@ msgstr ""
 "můžete jako potomka aktuálního uzlu."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:222
-#, fuzzy
 msgid ""
 "The advantage of this two-step process is you can keep a packed scene loaded "
 "and create new instances on the fly. For example, to quickly instance "
@@ -70031,9 +69850,8 @@ msgid "``-> void``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:4
-#, fuzzy
 msgid "Evaluating expressions"
-msgstr "Vyhodnoť vybraný výraz"
+msgstr "Vyhodnocování výrazů"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:6
 msgid ""
@@ -70067,7 +69885,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:22
-#, fuzzy
 msgid "Basic usage"
 msgstr "Základní použití"
 
@@ -70091,29 +69908,26 @@ msgid "Notes"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
-#, fuzzy
 msgid "Addition ``+``"
-msgstr "Další poznámky"
+msgstr "Sčítání ``+``"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:40
-#, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "Odčítání"
+msgstr "Odčítání (``-``)"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:42
 msgid "Multiplication (``*``)"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:44
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "Truevision Targa (\".tga\")"
+msgstr "Dělení (``/``)"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:44
 msgid ""
@@ -70210,9 +70024,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:134
-#, fuzzy
 msgid "Example script"
-msgstr "Příklad GDScriptu"
+msgstr "Příklad skriptu"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:136
 msgid "The script below demonstrates what the Expression class is capable of::"
@@ -71219,7 +71032,6 @@ msgstr ""
 "\"Uložit jako...\"."
 
 #: ../../docs/tutorials/scripting/resources.rst:193
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_gdscript_basics_class_name>`, then it streamlines the process. Defining "
@@ -71866,8 +71678,8 @@ msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
-"Když je scéna (nebo její část) odstraněna, obdrží oznámení \"exit scene"
-"\" (funkce ``_exit_tree()`` v jazyce GDScript) v pořadí zdola nahoru"
+"Když je scéna (nebo její část) odstraněna, obdrží oznámení \"exit "
+"scene\" (funkce ``_exit_tree()`` v jazyce GDScript) v pořadí zdola nahoru"
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:133
 msgid "Changing current scene"
@@ -71910,9 +71722,8 @@ msgstr ""
 "(viz další kapitola) a :ref:`doc_background_loading`."
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:4
-#, fuzzy
 msgid "Introduction to shaders"
-msgstr "Úvod do exportu"
+msgstr "Úvod do shaderů"
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:6
 msgid ""
@@ -71964,9 +71775,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:46
-#, fuzzy
 msgid "Shaders in Godot"
-msgstr "Nastavení Godot"
+msgstr "Shadery v Godotu"
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:48
 msgid ""
@@ -72025,9 +71835,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:85
-#, fuzzy
 msgid "Here are the available types:"
-msgstr "Typově existuje 6 vzorů:"
+msgstr "Zde jsou dostupné typy:"
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:87
 msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
@@ -75428,9 +75237,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:4
-#, fuzzy
 msgid "Your first 2D shader"
-msgstr "Vaše první hra"
+msgstr "Váš první 2D shader"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:9
 msgid ""
@@ -75455,10 +75263,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:27
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem <doc_canvas_item_shader>` shaders are used to draw all 2D"
-msgstr ":ref:`Shadery položek plátna <doc_canvas_item_shader>`"
+msgstr ""
+":ref:`CanvasItem <doc_canvas_item_shader>` shadery se používají ke kreslení "
+"všech 2D obrázků"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:26
 msgid ""
@@ -75724,9 +75533,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:4
-#, fuzzy
 msgid "Your first 3D shader"
-msgstr "Vaše první hra"
+msgstr "Váš první 3D shader"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:6
 msgid ""
@@ -75865,8 +75673,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:94
 msgid ""
-"Now click beside \"Shader\" where it says \"[empty]\" and select \"New Shader"
-"\"."
+"Now click beside \"Shader\" where it says \"[empty]\" and select \"New "
+"Shader\"."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:96
@@ -76992,8 +76800,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:90
 msgid ""
 "In the above image, the second sphere (top right) is using the same source "
-"for ``SCREEN_TEXTURE`` as the first one below, so the first one \"disappears"
-"\", or is not visible."
+"for ``SCREEN_TEXTURE`` as the first one below, so the first one "
+"\"disappears\", or is not visible."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:94
@@ -77590,9 +77398,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:4
-#, fuzzy
 msgid "Shaders style guide"
-msgstr "Průvodce stylem editoru"
+msgstr "Průvodce styly shaderů"
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:6
 msgid ""
@@ -77711,8 +77518,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:347
 msgid ""
-"\"Public\" comes before \"private\". In a shader language's context, \"public"
-"\" refers to what's easily adjustable by the user (uniforms)."
+"\"Public\" comes before \"private\". In a shader language's context, "
+"\"public\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/advanced_postprocessing.rst:4
@@ -78720,9 +78527,8 @@ msgstr ""
 "prvek získal svoji přirozenou velikost."
 
 #: ../../docs/tutorials/ui/size_and_anchors.rst:68
-#, fuzzy
 msgid "Layout Presets"
-msgstr "Exportovat přednastavení"
+msgstr "Předvolby rozvržení"
 
 #: ../../docs/tutorials/ui/size_and_anchors.rst:70
 msgid ""
@@ -79920,8 +79726,8 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:32
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:37
@@ -80731,11 +80537,8 @@ msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:138
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__."
-msgstr ""
-"Klonování úložiště `godot-docs <https://github.com/godotengine/godot-docs/"
-">`__."
+msgstr "`Demo Godot Oculus <https://github.com/GodotVR/godot-oculus-demo>`__."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid ""
@@ -80982,13 +80785,12 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`__."
 msgstr ""
-"Klonování úložiště `godot-docs <https://github.com/godotengine/godot-docs/"
-">`__."
+"Hotový projekt najdete na `Úložiště OpenVR GitHub <https://github.com/"
+"GodotVR/godot_openvr_fps>`__."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
@@ -80997,9 +80799,9 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
 "If you have not already, go to the `OpenVR GitHub repository <https://github."
-"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter Assets"
-"\" file from the releases. Once you have the starter assets downloaded, open "
-"up the project in Godot."
+"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter "
+"Assets\" file from the releases. Once you have the starter assets "
+"downloaded, open up the project in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
@@ -85260,9 +85062,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
-"If all goes well, the resulting binary executable will be placed in the \"bin"
-"\" subdirectory. This executable file contains the whole engine and runs "
-"without any dependencies. Executing it will bring up the project manager."
+"If all goes well, the resulting binary executable will be placed in the "
+"\"bin\" subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the project "
+"manager."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
@@ -86327,8 +86130,8 @@ msgid ""
 "To ease the workflow, you can open the \"Solution Properties\" and in the "
 "\"Configuration\" section untick the \"Build\" option for the app. You still "
 "have to build it at least once to generate some needed files, you can do so "
-"by right-clicking the project (*not* the solution) in the \"Solution Explorer"
-"\" and selecting \"Build\"."
+"by right-clicking the project (*not* the solution) in the \"Solution "
+"Explorer\" and selecting \"Build\"."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
@@ -89396,8 +89199,8 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
-"an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
-"++ modules can be useful in the following scenarios:"
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
@@ -90150,8 +89953,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:508
 msgid ""
-"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
@@ -90439,14 +90242,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/macos_debug.rst:2
-#, fuzzy
 msgid "Debugging on macOS"
-msgstr "Běží na macOS"
+msgstr "Ladění na macOS"
 
 #: ../../docs/development/cpp/macos_debug.rst:5
-#, fuzzy
 msgid "Debugging Godot editor"
-msgstr "Ladění projektu"
+msgstr "Ladění editoru Godot"
 
 #: ../../docs/development/cpp/macos_debug.rst:7
 msgid ""
@@ -90467,9 +90268,8 @@ msgid "Then use the following command to re-sign the editor::"
 msgstr ""
 
 #: ../../docs/development/cpp/macos_debug.rst:40
-#, fuzzy
 msgid "Debugging exported project"
-msgstr "Ladění projektu"
+msgstr "Ladění exportovaného projektu"
 
 #: ../../docs/development/cpp/macos_debug.rst:42
 msgid ""
@@ -91441,8 +91241,8 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:77
@@ -91599,8 +91399,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:281
@@ -91653,8 +91453,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:332
@@ -91856,13 +91656,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:11
-#, fuzzy
 msgid ""
 "Reporting issues or `writing detailed proposals <https://github.com/"
 "godotengine/godot-proposals/>`__."
 msgstr ""
-"Klonování úložiště `godot-docs <https://github.com/godotengine/godot-docs/"
-">`__."
+"Nahlášení problémů nebo `psaní podrobných návrhů <https://github.com/"
+"godotengine/godot-proposals/>`__."
 
 #: ../../docs/community/contributing/index.rst:17
 msgid ""
@@ -91871,9 +91670,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:29
-#, fuzzy
 msgid "Contributing to the engine"
-msgstr "Přispějte k dokumentaci tříd"
+msgstr "Přispívání do enginu"
 
 #: ../../docs/community/contributing/index.rst:31
 msgid ""
@@ -91882,9 +91680,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:49
-#, fuzzy
 msgid "Writing documentation"
-msgstr "Organizace této dokumentace"
+msgstr "Psaní dokumentace"
 
 #: ../../docs/community/contributing/index.rst:51
 msgid ""
@@ -91894,9 +91691,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:56
-#, fuzzy
 msgid "Guidelines"
-msgstr "Bezpečné řádky"
+msgstr "Pokyny"
 
 #: ../../docs/community/contributing/index.rst:58
 msgid ""
@@ -91905,14 +91701,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:70
-#, fuzzy
 msgid "Writing the manual"
-msgstr "Úpravy animace"
+msgstr "Psaní návodu"
 
 #: ../../docs/community/contributing/index.rst:80
-#, fuzzy
 msgid "Class reference guides"
-msgstr "Dokumentace tříd"
+msgstr "Referenční příručky tříd"
 
 #: ../../docs/community/contributing/index.rst:82
 msgid "The pages below focus on the class reference."
@@ -92061,10 +91855,11 @@ msgstr ""
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
 "A good place to start is by searching for issues tagged as `junior jobs "
-"<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A"
-"%22junior+job%22>`_ (or `Hacktoberfest <https://github.com/godotengine/godot/"
-"issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ "
-"during October) on GitHub."
+"<https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3A%22junior+job%22>`_ (or `Hacktoberfest "
+"<https://github.com/godotengine/godot/issues?"
+"utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ during "
+"October) on GitHub."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:90
@@ -93103,8 +92898,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:357
 msgid ""
-"When you load your fork's branch on GitHub, you should see a line saying *"
-"\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
+"When you load your fork's branch on GitHub, you should see a line saying "
+"*\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
 "upstream ``master`` branch)."
 msgstr ""
@@ -93113,8 +92908,8 @@ msgstr ""
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the ``godotengine/godot`` upstream "
-"repository. It should show you your two commits, and state \"Able to merge"
-"\". If not (e.g. it has way more commits, or says there are merge "
+"repository. It should show you your two commits, and state \"Able to "
+"merge\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR yet, something went wrong. Go to our "
 "`Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
 msgstr ""
@@ -94515,8 +94310,8 @@ msgstr ""
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:21
 msgid ""
 "To get your pull request merged, it needs to follow the C++ usage guidelines "
-"outlined here. Of course, you can use features not allowed here in your own C"
-"++ modules or GDNative scripts."
+"outlined here. Of course, you can use features not allowed here in your own "
+"C++ modules or GDNative scripts."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:27
@@ -96710,8 +96505,8 @@ msgstr ""
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
 "A toolbar which lets you cycle through strings of the current list, change "
-"to another predefined list or do a custom search, etc. There is also a \"Zen"
-"\" editing mode with a simplified interface."
+"to another predefined list or do a custom search, etc. There is also a "
+"\"Zen\" editing mode with a simplified interface."
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
@@ -96779,8 +96574,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
-"The editor interface's translation template is generated by parsing all the C"
-"++ source code in **alphabetical order**, so all the strings defined in a "
+"The editor interface's translation template is generated by parsing all the "
+"C++ source code in **alphabetical order**, so all the strings defined in a "
 "given file will be grouped together. For example, if the \"source string "
 "location\" indicates ``editor/code_editor.cpp``, the current string (and the "
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
@@ -97625,8 +97420,8 @@ msgstr ""
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:119
 #: ../../docs/community/asset_library/uploading_to_assetlib.rst:119
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:124

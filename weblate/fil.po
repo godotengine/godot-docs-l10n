@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Filipino
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Bakainkorp <Ryan.Bautista86@myhunter.cuny.edu>, 2019.
@@ -387,8 +387,8 @@ msgstr ""
 msgid ""
 "All the contents are under the permissive Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with "
-"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine "
+"community\"."
 msgstr ""
 
 #: ../../docs/about/introduction.rst:77
@@ -5311,8 +5311,9 @@ msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
 "Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
-"lets you select any node. It is equivalent to pressing the \"Add Child Node"
-"\" button. These presets are here for convenience; they are not mandatory."
+"lets you select any node. It is equivalent to pressing the \"Add Child "
+"Node\" button. These presets are here for convenience; they are not "
+"mandatory."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:79
@@ -5407,8 +5408,8 @@ msgstr ""
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
 "you to save files inside the project. The ``res://`` path at the top of the "
-"window represents the project's root directory and stands for \"resource path"
-"\". For more information about file paths in Godot, see :ref:"
+"window represents the project's root directory and stands for \"resource "
+"path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
 
@@ -7484,8 +7485,8 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:270
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
 
@@ -8415,9 +8416,9 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:51
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
 
@@ -11786,8 +11787,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
@@ -16014,9 +16015,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
-"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
-"\"**. The former renders quickly, but can cause deformations, while the "
-"later is more correct, but costlier."
+"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube "
+"Mapped\"**. The former renders quickly, but can cause deformations, while "
+"the later is more correct, but costlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:198
@@ -20384,8 +20385,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:79
 msgid ""
 "It turns out there is a simpler way of handling this scenario. Godot "
-"supports *rooms **within** rooms* (we will call them **\"internal rooms"
-"\"**). That is, you can place a house within a terrain room, or even a "
+"supports *rooms **within** rooms* (we will call them **\"internal "
+"rooms\"**). That is, you can place a house within a terrain room, or even a "
 "building, or set of buildings, and even have exit portals in different "
 "terrain rooms!"
 msgstr ""
@@ -22184,8 +22185,8 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
-"So when inserting keys, you might find it convenient to have only the \"rot"
-"\" toggle active most of the time:"
+"So when inserting keys, you might find it convenient to have only the "
+"\"rot\" toggle active most of the time:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
@@ -24751,8 +24752,8 @@ msgstr ""
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
-"filters to all imported animations which have a name ending in ``\"_Loop"
-"\"``::"
+"filters to all imported animations which have a name ending in "
+"``\"_Loop\"``::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:336
@@ -24782,9 +24783,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:351
 msgid ""
-"For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
-"\"Control\"``, unless they have ``\"Arm\"`` in their name::"
+"For example: include all tracks in animations with names ending in "
+"``\"_Loop\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end "
+"in ``\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:360
@@ -25125,9 +25126,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:4
 msgid ""
-"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
-"\", which can be downloaded here: https://github.com/godotengine/godot-"
-"blender-exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender "
+"Exporter\", which can be downloaded here: https://github.com/godotengine/"
+"godot-blender-exporter"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:7
@@ -27356,8 +27357,8 @@ msgstr ""
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:195
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:199
@@ -32728,8 +32729,9 @@ msgstr ""
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:69
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
-"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
-"%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
+"github.com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__ "
+"for a list of known bugs."
 msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:73
@@ -35357,8 +35359,8 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_android.rst:57
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
-"should move it to a memorable location such as ``%USERPROFILE%\\.android"
-"\\``, because you will need its location in a later step. For more "
+"should move it to a memorable location such as ``%USERPROFILE%\\."
+"android\\``, because you will need its location in a later step. For more "
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
@@ -40715,8 +40717,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
-"com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
-"+gamepad>`__ on GitHub."
+"com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
@@ -45279,8 +45281,8 @@ msgstr ""
 #: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
-"array, with each string containing a header in the format ``\"header: value"
-"\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
+"array, with each string containing a header in the format ``\"header: "
+"value\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
 
@@ -50696,8 +50698,8 @@ msgstr ""
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
 "the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
-"you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
-"\" feature in the skeleton node."
+"you can generate ``PhysicalBone`` nodes with the \"Create physical "
+"skeleton\" feature in the skeleton node."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
@@ -52562,12 +52564,13 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
@@ -54265,8 +54268,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:115
 msgid ""
-"You should choose this name as a continuation to \"Import as\", e.g. *"
-"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"You should choose this name as a continuation to \"Import as\", e.g. "
+"*\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 
@@ -55277,8 +55280,8 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:75
 msgid ""
 "There can only be one active camera per :ref:`Viewport <class_Viewport>`, so "
-"if there is more than one, make sure that the desired one has the \"current"
-"\" property set, or make it the current camera by calling:"
+"if there is more than one, make sure that the desired one has the "
+"\"current\" property set, or make it the current camera by calling:"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:83
@@ -58009,10 +58012,10 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:687
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:692
@@ -66191,8 +66194,8 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:40
@@ -71605,8 +71608,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:94
 msgid ""
-"Now click beside \"Shader\" where it says \"[empty]\" and select \"New Shader"
-"\"."
+"Now click beside \"Shader\" where it says \"[empty]\" and select \"New "
+"Shader\"."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:96
@@ -72732,8 +72735,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:90
 msgid ""
 "In the above image, the second sphere (top right) is using the same source "
-"for ``SCREEN_TEXTURE`` as the first one below, so the first one \"disappears"
-"\", or is not visible."
+"for ``SCREEN_TEXTURE`` as the first one below, so the first one "
+"\"disappears\", or is not visible."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:94
@@ -73450,8 +73453,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:347
 msgid ""
-"\"Public\" comes before \"private\". In a shader language's context, \"public"
-"\" refers to what's easily adjustable by the user (uniforms)."
+"\"Public\" comes before \"private\". In a shader language's context, "
+"\"public\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/advanced_postprocessing.rst:4
@@ -75533,8 +75536,8 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:32
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:37
@@ -76606,9 +76609,9 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
 "If you have not already, go to the `OpenVR GitHub repository <https://github."
-"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter Assets"
-"\" file from the releases. Once you have the starter assets downloaded, open "
-"up the project in Godot."
+"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter "
+"Assets\" file from the releases. Once you have the starter assets "
+"downloaded, open up the project in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
@@ -80869,9 +80872,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
-"If all goes well, the resulting binary executable will be placed in the \"bin"
-"\" subdirectory. This executable file contains the whole engine and runs "
-"without any dependencies. Executing it will bring up the project manager."
+"If all goes well, the resulting binary executable will be placed in the "
+"\"bin\" subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the project "
+"manager."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
@@ -81936,8 +81940,8 @@ msgid ""
 "To ease the workflow, you can open the \"Solution Properties\" and in the "
 "\"Configuration\" section untick the \"Build\" option for the app. You still "
 "have to build it at least once to generate some needed files, you can do so "
-"by right-clicking the project (*not* the solution) in the \"Solution Explorer"
-"\" and selecting \"Build\"."
+"by right-clicking the project (*not* the solution) in the \"Solution "
+"Explorer\" and selecting \"Build\"."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
@@ -84997,8 +85001,8 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
-"an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
-"++ modules can be useful in the following scenarios:"
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
@@ -85751,8 +85755,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:508
 msgid ""
-"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
@@ -87040,8 +87044,8 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:77
@@ -87198,8 +87202,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:281
@@ -87252,8 +87256,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:332
@@ -87653,10 +87657,11 @@ msgstr ""
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
 "A good place to start is by searching for issues tagged as `junior jobs "
-"<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A"
-"%22junior+job%22>`_ (or `Hacktoberfest <https://github.com/godotengine/godot/"
-"issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ "
-"during October) on GitHub."
+"<https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3A%22junior+job%22>`_ (or `Hacktoberfest "
+"<https://github.com/godotengine/godot/issues?"
+"utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ during "
+"October) on GitHub."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:90
@@ -88695,8 +88700,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:357
 msgid ""
-"When you load your fork's branch on GitHub, you should see a line saying *"
-"\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
+"When you load your fork's branch on GitHub, you should see a line saying "
+"*\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
 "upstream ``master`` branch)."
 msgstr ""
@@ -88705,8 +88710,8 @@ msgstr ""
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the ``godotengine/godot`` upstream "
-"repository. It should show you your two commits, and state \"Able to merge"
-"\". If not (e.g. it has way more commits, or says there are merge "
+"repository. It should show you your two commits, and state \"Able to "
+"merge\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR yet, something went wrong. Go to our "
 "`Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
 msgstr ""
@@ -90105,8 +90110,8 @@ msgstr ""
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:21
 msgid ""
 "To get your pull request merged, it needs to follow the C++ usage guidelines "
-"outlined here. Of course, you can use features not allowed here in your own C"
-"++ modules or GDNative scripts."
+"outlined here. Of course, you can use features not allowed here in your own "
+"C++ modules or GDNative scripts."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:27
@@ -92280,8 +92285,8 @@ msgstr ""
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
 "A toolbar which lets you cycle through strings of the current list, change "
-"to another predefined list or do a custom search, etc. There is also a \"Zen"
-"\" editing mode with a simplified interface."
+"to another predefined list or do a custom search, etc. There is also a "
+"\"Zen\" editing mode with a simplified interface."
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
@@ -92349,8 +92354,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
-"The editor interface's translation template is generated by parsing all the C"
-"++ source code in **alphabetical order**, so all the strings defined in a "
+"The editor interface's translation template is generated by parsing all the "
+"C++ source code in **alphabetical order**, so all the strings defined in a "
 "given file will be grouped together. For example, if the \"source string "
 "location\" indicates ``editor/code_editor.cpp``, the current string (and the "
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
@@ -93195,8 +93200,8 @@ msgstr ""
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:119
 #: ../../docs/community/asset_library/uploading_to_assetlib.rst:119
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:124

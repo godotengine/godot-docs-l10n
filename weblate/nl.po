@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Dutch
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alex H <sandertjeh13@hotmail.com>, 2019.
@@ -23,10 +23,12 @@
 # marnicq van loon <marnicqvanloon@gmail.com>, 2020.
 # Melvin Louwerse <aterlamia@gmail.com>, 2018.
 # Mike van Leeuwen <mkvanleeuwen@gmail.com>, 2020.
+# naan <xlightfox@hotmail.com>, 2021.
 # Peter <pshijma@gmail.com>, 2018.
 # phasesync <phasesync+godot@gmail.com>, 2020.
 # Stijn Hinlopen <f.a.hinlopen@gmail.com>, 2019-2021.
 # Tahar Meijs <tntmeijs@gmail.com>, 2018.
+# Tim Visee <tim+weblate@visee.me>, 2022.
 # Tirrin <lensenjoe@gmail.com>, 2019.
 # T-rex08 <ipadtriceratops@gmail.com>, 2021.
 # Willem <studiebolmail@gmail.com>, 2018.
@@ -39,8 +41,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-12-21 17:14+0100\n"
-"PO-Revision-Date: 2021-12-14 15:28+0000\n"
-"Last-Translator: Hendrik de Jonge <hendrikdejonge@hotmail.com>\n"
+"PO-Revision-Date: 2022-01-17 04:08+0000\n"
+"Last-Translator: Tim Visee <tim+weblate@visee.me>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -48,7 +50,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -91,7 +93,6 @@ msgstr ""
 "het \"Read the Docs\" paneel onderaan de zijbalk uit om de lijst te bekijken."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -99,11 +100,11 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Dit is de documentatie van de stabiele 3.3 versie. Op zoek naar de "
+"Dit is de documentatie van de stabiele 3.4 versie. Op zoek naar de "
 "documentatie voor de huidige **ontwikkeling** versie? `Kijk dan hier: "
 "<https://docs.godotengine.org/en/latest>`_. U kunt ook verder bladeren naar "
-"de de documentatie van de vorige stabiele `3.2 <https://docs.godotengine.org/"
-"en/3.2>`_versie."
+"de documentatie van de vorige stabiele `3.3 <https://docs.godotengine.org/"
+"en/3.3>`_versie."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -444,13 +445,13 @@ msgstr ""
 msgid ""
 "All the contents are under the permissive Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with "
-"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine "
+"community\"."
 msgstr ""
 "Alle inhoud valt onder de permissive Creative Commons Attribution 3.0 (`CC-"
 "BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licentie, met "
-"attributie naar \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"attributie naar \"Juan Linietsky, Ariel Manzur and the Godot Engine "
+"community\"."
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
@@ -582,7 +583,6 @@ msgid "In short:"
 msgstr "In het kort:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
@@ -608,7 +608,7 @@ msgstr ""
 "De volledige inhoud van deze begeleidende documentatie valt onder de "
 "liberale Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) licentie, met attributie naar "
-"\"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
+"\"Juan Linietsky, Ariel Manzur and the Godot Engine community.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -852,7 +852,7 @@ msgstr ""
 "aangepaste scripttaal voor Godot was tweeledig: enerzijds vermindert het de "
 "hoeveelheid tijd die nodig is om aan de slag te gaan met Godot, zodat "
 "spelontwikkelaars zich snel kunnen vertrouwd maken met de engine en focussen "
-"op productiviteit; anderszijds vergemakkelijkt het het onderhoud, vermindert "
+"op productiviteit; anderzijds vergemakkelijkt het het onderhoud, vermindert "
 "het de complexiteit van problemen en laat het de engine-ontwikkelaars toe om "
 "zich te concentreren op oplossen van bugs en verbeteren van functionaliteit "
 "- in plaats van veel tijd te besteden om te proberen een beperkte functieset "
@@ -905,10 +905,10 @@ msgid ""
 msgstr ""
 "In het begin gebruikte de engine de `Lua <https://www.lua.org>`__ script "
 "taal. Lua is snel, maar het maken van verbindingen met een object "
-"georienteerd systeem(door het gebruiken van terugkoppelingen) was te complex "
+"georiënteerd systeem(door het gebruiken van terugkoppelingen) was te complex "
 "en langzaam en vergde een enorme hoeveelheid code. Na een beetje "
 "experimentatie met `Python <https://www.python.org>`__, bleek het ook "
-"moeilijk intergreerbaar te zijn"
+"moeilijk intergreerbaar te zijn."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -1065,7 +1065,6 @@ msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
 msgstr "Waarom gebruikt Godot Vulkan of OpenGL in plaats van Direct3D?"
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "Godot aims for cross-platform compatibility and open standards first and "
 "foremost. OpenGL and Vulkan are the technologies that are both open and "
@@ -1073,11 +1072,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
-"Godot streefd naar compatibiliteit over meerdere platformen en allereerst "
-"open standaarden. OpenGL en Vulkan zijn technologiën die open en beschikbaar "
-"zijn op (bijna) alle platformen. Mede door deze design keus, zal een project "
-"gemaakt met Godot op Window uit zichzelf ook op Linux, macOS en anderen "
-"afspelen."
+"Godot streeft naar compatibiliteit over meerdere platformen en allereerst "
+"open standaarden. OpenGL en Vulkan zijn technologieën die open en "
+"beschikbaar zijn op (bijna) alle platformen. Mede door deze design keus, zal "
+"een project gemaakt met Godot op Window uit zichzelf ook op Linux, macOS en "
+"anderen afspelen."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -1107,15 +1106,20 @@ msgid "Why does Godot aim to keep its core feature set small?"
 msgstr "Waarom probeert Godot zijn kern functie-set zo klein te houden?"
 
 #: ../../docs/about/faq.rst:207
+#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot bevat opzettelijk geen functionaliteiten die geïmplementeerd kunnen "
+"worden door middel van add-ons, tenzij ze vaak gebruikt worden. Een "
+"voorbeeld hiervan zou een functionaliteit voor geavanceerde kunstmatige "
+"intelligentie zijn."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
-msgstr "Er zijn meerdere redenen voor dit:"
+msgstr "Er zijn meerdere redenen hiervoor:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1323,7 +1327,8 @@ msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
-":ref:`Scriptcode uitvoeren in de editor <doc_running_code_in_the_editor>`"
+"Wanneer het af is! Zie ook :ref:"
+"`doc_release_policy_when_is_next_release_out`voor meer toelichting."
 
 #: ../../docs/about/faq.rst:313
 msgid "I would like to contribute! How can I get started?"
@@ -1455,9 +1460,10 @@ msgstr ""
 "voorbeeldprojecten (indien van toepassing) aanlevert."
 
 #: ../../docs/about/faq.rst:361
-#, fuzzy
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr "Is het mogelijk om Godot als library te gebruiken?"
+msgstr ""
+"Is het mogelijk om Godot te gebruiken voor andere applicaties dan "
+"videospellen?"
 
 #: ../../docs/about/faq.rst:363
 msgid ""
@@ -1546,9 +1552,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:415
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Waarom gebruikt Godot STL (Standard Template Library) niet"
+msgstr "Waarom gebruikt Godot STL (Standard Template Library) niet?"
 
 #: ../../docs/about/faq.rst:417
 msgid ""
@@ -1786,7 +1791,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "De editor of het project duurt erg lang om op te starten."
 
 #: ../../docs/about/troubleshooting.rst:39
 msgid ""
@@ -1946,11 +1951,11 @@ msgstr "Windows 7 en later (64-bit en 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 en later (64-bit, x86 en ARM)."
 
 #: ../../docs/about/list_of_features.rst:24
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit en 32-bit, x86 en ARM)."
 
 #: ../../docs/about/list_of_features.rst:26
 msgid ""
@@ -1964,7 +1969,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "**Runs exported projects:**"
@@ -1972,11 +1977,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 en later."
 
 #: ../../docs/about/list_of_features.rst:35
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 en later."
 
 #: ../../docs/about/list_of_features.rst:36
 #, fuzzy
@@ -2005,7 +2010,7 @@ msgstr "Editor"
 #: ../../docs/about/list_of_features.rst:90
 #: ../../docs/about/list_of_features.rst:355
 msgid "**Features:**"
-msgstr ""
+msgstr "**Functionaliteiten:**"
 
 #: ../../docs/about/list_of_features.rst:47
 msgid "Scene tree editor."
@@ -2013,7 +2018,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "Script editor."
-msgstr "Script Editor"
+msgstr "Script editor."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2070,9 +2075,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:70
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Plugins"
+msgstr "**Plugins:**"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -2216,9 +2220,8 @@ msgid "Line2D node to draw textured 2D lines."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:129
-#, fuzzy
 msgid "2D physics"
-msgstr "Fysica"
+msgstr "2D fysica"
 
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:277
@@ -2285,7 +2288,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Camera:**"
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -2399,7 +2402,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Reflections:**"
-msgstr "Weerkaatsing"
+msgstr "**Weerkaatsing:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -2457,7 +2460,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "**Particles:**"
-msgstr "Partikels"
+msgstr "**Partikels:**"
 
 #: ../../docs/about/list_of_features.rst:227
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2465,7 +2468,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "**Post-processing:**"
-msgstr "Voorverwerking"
+msgstr "**Nabewerking:**"
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -2584,9 +2587,8 @@ msgid "3D geometry helper class."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:275
-#, fuzzy
 msgid "3D physics"
-msgstr "Fysica"
+msgstr "3D fysica"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -2651,7 +2653,7 @@ msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:307
 msgid "**General:**"
-msgstr "Algemeen"
+msgstr "**Algemeen:**"
 
 #: ../../docs/about/list_of_features.rst:309
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2705,15 +2707,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:326
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Gebruikt Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:328
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Volledige ondersteuning voor de C# 7.0 syntax en functionaliteiten."
 
 #: ../../docs/about/list_of_features.rst:330
 msgid "Supports all platforms."
-msgstr ""
+msgstr "Ondersteunt alle platformen."
 
 #: ../../docs/about/list_of_features.rst:331
 msgid ""
@@ -2737,7 +2739,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:339
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid ""
@@ -2803,7 +2805,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "MIDI input."
-msgstr "MIDI invoer"
+msgstr "MIDI invoer."
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "No support for MIDI output yet."
@@ -2835,7 +2837,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "**Formats:**"
-msgstr "Formaat"
+msgstr "**Formaten:**"
 
 #: ../../docs/about/list_of_features.rst:383
 msgid "*Images:* See :ref:`doc_import_images`."
@@ -2843,7 +2845,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:384
 msgid "*Audio:*"
-msgstr "Audio"
+msgstr "*Audio:*"
 
 #: ../../docs/about/list_of_features.rst:386
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2855,16 +2857,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:388
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:390
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "Hoofdscène"
+msgstr "*3D scènes:*"
 
 #: ../../docs/about/list_of_features.rst:392
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(aanbevolen)*."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
@@ -2918,7 +2919,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Mouse input."
-msgstr ""
+msgstr "Muisinvoer."
 
 #: ../../docs/about/list_of_features.rst:413
 msgid ""
@@ -3150,7 +3151,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:500
 msgid "**Nodes:**"
-msgstr "Knooppunten"
+msgstr "**Knooppunten:**"
 
 #: ../../docs/about/list_of_features.rst:502
 msgid "Buttons."
@@ -3297,9 +3298,8 @@ msgid "Support for Bézier curves in animation."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid "File formats"
-msgstr "Formaat"
+msgstr "Bestandsformaten"
 
 #: ../../docs/about/list_of_features.rst:554
 msgid ""
@@ -4009,7 +4009,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
-msgstr ""
+msgstr "**Versie**"
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Release date**"
@@ -4020,9 +4020,8 @@ msgid "**Support level**"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "Godot 4.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:91
 msgid "~2022 (see below)"
@@ -4033,9 +4032,8 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Godot 3.5"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Q1 2022"
@@ -4048,13 +4046,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:96
-#, fuzzy
 msgid "Godot 3.4"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.4"
 
 #: ../../docs/about/release_policy.rst:96
 msgid "November 2021"
-msgstr ""
+msgstr "November 2021"
 
 #: ../../docs/about/release_policy.rst:96
 msgid ""
@@ -4063,26 +4060,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:99
-#, fuzzy
 msgid "Godot 3.3"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:99
 msgid "April 2021"
-msgstr ""
+msgstr "April 2021"
 
 #: ../../docs/about/release_policy.rst:99
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:101
-#, fuzzy
 msgid "Godot 3.2"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.2"
 
 #: ../../docs/about/release_policy.rst:101
 msgid "January 2020"
-msgstr ""
+msgstr "Januari 2020"
 
 #: ../../docs/about/release_policy.rst:101
 msgid ""
@@ -4091,79 +4086,73 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:104
-#, fuzzy
 msgid "Godot 3.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.1"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "March 2019"
-msgstr ""
+msgstr "Maart 2019"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr ""
+msgstr "|eol| Niet langer ondersteund (laatste update: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:106
-#, fuzzy
 msgid "Godot 3.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:106
 msgid "January 2018"
-msgstr ""
+msgstr "Januari 2018"
 
 #: ../../docs/about/release_policy.rst:106
 msgid "|eol| No longer supported (last update: 3.0.6)."
-msgstr ""
+msgstr "|eol| Niet lander ondersteund (laatste update: 3.0.6)."
 
 #: ../../docs/about/release_policy.rst:108
-#, fuzzy
 msgid "Godot 2.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:108
 msgid "July 2016"
-msgstr ""
+msgstr "Juli 2016"
 
 #: ../../docs/about/release_policy.rst:108
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr ""
+msgstr "|eol| Niet langer ondersteund (laatste update: 2.1.6)."
 
 #: ../../docs/about/release_policy.rst:110
-#, fuzzy
 msgid "Godot 2.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 2.0"
 
 #: ../../docs/about/release_policy.rst:110
 msgid "February 2016"
-msgstr ""
+msgstr "Februari 2016"
 
 #: ../../docs/about/release_policy.rst:110
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
-msgstr ""
+msgstr "|eol| Niet lander ondersteund (laatste update: 2.0.4.1)."
 
 #: ../../docs/about/release_policy.rst:112
-#, fuzzy
 msgid "Godot 1.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:112
 msgid "May 2015"
-msgstr ""
+msgstr "Mei 2015"
 
 #: ../../docs/about/release_policy.rst:112
 #: ../../docs/about/release_policy.rst:114
 msgid "|eol| No longer supported."
-msgstr ""
+msgstr "|eol| Niet langer ondersteund."
 
 #: ../../docs/about/release_policy.rst:114
-#, fuzzy
 msgid "Godot 1.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 1.0"
 
 #: ../../docs/about/release_policy.rst:114
 msgid "December 2014"
-msgstr ""
+msgstr "December 2014"
 
 #: ../../docs/about/release_policy.rst:122
 msgid ""
@@ -4210,13 +4199,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:4
-#, fuzzy
 msgid "Complying with licenses"
-msgstr ":ref:`Voldoen aan licentievoorwaarden <doc_complying_with_licenses>`"
+msgstr "Voldoen aan licentievoorwaarden"
 
 #: ../../docs/about/complying_with_licenses.rst:7
 msgid "What are licenses?"
-msgstr ""
+msgstr "Wat zijn licentievoorwaarden?"
 
 #: ../../docs/about/complying_with_licenses.rst:9
 msgid ""
@@ -4250,7 +4238,7 @@ msgstr ""
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:23
 #: ../../docs/community/asset_library/uploading_to_assetlib.rst:23
 msgid "Requirements"
-msgstr ""
+msgstr "Vereisten"
 
 #: ../../docs/about/complying_with_licenses.rst:22
 msgid ""
@@ -4260,7 +4248,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:25
 msgid "This text reads as follows:"
-msgstr ""
+msgstr "Deze tekst luidt als volgt:"
 
 #: ../../docs/about/complying_with_licenses.rst:27
 msgid "This game uses Godot Engine, available under the following license:"
@@ -4332,9 +4320,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:59
-#, fuzzy
 msgid "Licenses screen"
-msgstr "Licentie"
+msgstr "Licentie scherm"
 
 #: ../../docs/about/complying_with_licenses.rst:61
 msgid ""
@@ -4403,9 +4390,8 @@ msgid "Here's a list of libraries requiring attribution:"
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:101
-#, fuzzy
 msgid "FreeType"
-msgstr "Type"
+msgstr "FreeType"
 
 #: ../../docs/about/complying_with_licenses.rst:103
 msgid ""
@@ -4429,7 +4415,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:114
 msgid "ENet"
-msgstr ""
+msgstr "ENet"
 
 #: ../../docs/about/complying_with_licenses.rst:116
 msgid ""
@@ -4497,9 +4483,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:4
-#, fuzzy
 msgid "Introduction to Godot"
-msgstr "Introductie"
+msgstr "Introductie tot Godot"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:6
 msgid ""
@@ -4517,7 +4502,7 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
 msgid "What is Godot?"
-msgstr ""
+msgstr "Wat is Godot?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:17
 msgid ""
@@ -4556,6 +4541,8 @@ msgid ""
 "Some examples of games created with Godot include Ex-Zodiac and Helms of "
 "Fury."
 msgstr ""
+"Enkele voorbeelden van spellen gecreëerd met behulp van Godot zijn onder "
+"andere Ex-Zodiac en Helms of Fury."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:42
 msgid ""
@@ -4576,9 +4563,8 @@ msgid "`April 2020 mobile showcase`_"
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:53
-#, fuzzy
 msgid "How does it work and look?"
-msgstr "Hoe kan ik Godot uitbreiden?"
+msgstr "Hoe werkt het en oogt het?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:55
 msgid ""
@@ -4604,9 +4590,8 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:73
 #: ../../docs/tutorials/scripting/index.rst:12
-#, fuzzy
 msgid "Programming languages"
-msgstr "Ontwerptaal"
+msgstr "Programmeertalen"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:75
 msgid "Let's talk about the available programming languages."
@@ -4680,6 +4665,10 @@ msgid ""
 "that: programming languages have many similarities. The skills you learn "
 "with one language transfer well to others."
 msgstr ""
+"In CS50 zul je meerdere programmeertalen leren. Laat dit je niet "
+"afschrikken: programmeertalen hebben veel overeenkomsten. De vaardigheden "
+"die je met de ene programmeertaal leert, zijn goed over te brengen tot de "
+"ander."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:118
 msgid ""
@@ -4835,7 +4824,7 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_pcks.rst:138
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:381
 msgid "Summary"
-msgstr ""
+msgstr "Samenvatting"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:92
 msgid ""
@@ -4876,9 +4865,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:19
-#, fuzzy
 msgid "The Project manager"
-msgstr "Project manager"
+msgstr "De Project Manager"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:21
 #, fuzzy
@@ -4977,16 +4965,15 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:92
 msgid "The four main screens"
-msgstr ""
+msgstr "De vier hoofdschermen"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:94
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
 msgstr ""
-"Bovenaan zie je vier knoppen voor werkruimtes: 2D, 3D, Script, en Asset-"
-"bibliotheek."
+"Bovenaan de editor zie je vier knoppen voor werkruimtes: 2D, 3D, Script, en "
+"Asset-bibliotheek."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:97
 #, fuzzy
@@ -5817,17 +5804,18 @@ msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
 "Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
-"lets you select any node. It is equivalent to pressing the \"Add Child Node"
-"\" button. These presets are here for convenience; they are not mandatory."
+"lets you select any node. It is equivalent to pressing the \"Add Child "
+"Node\" button. These presets are here for convenience; they are not "
+"mandatory."
 msgstr ""
 "In een lege scène (zonder hoofdknooppunt), toont het scène-dock "
 "verschillende opties om snel een hoofdknooppunt aan de scène toe te voegen. "
 "\"2D Scene\" voegt een Node2D knooppunt toe, \"3D Scene\" voegt een Spatial "
 "knooppunt toe, \"Gebruikersomgeving\" voegt een Control knooppunt toe, en "
 "\"Custom Node\" laat je toe eender welk soort knooppunt te selecteren (dus "
-"dit is equivalent aan het indrukken van de knop \"Kindknooppunt toevoegen"
-"\"). Je kan ook op het stervormige pictogram drukken om de weergave van je "
-"favoriete nodes in te schakelen."
+"dit is equivalent aan het indrukken van de knop \"Kindknooppunt "
+"toevoegen\"). Je kan ook op het stervormige pictogram drukken om de weergave "
+"van je favoriete nodes in te schakelen."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:79
 msgid ""
@@ -5939,8 +5927,8 @@ msgstr ""
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
 "you to save files inside the project. The ``res://`` path at the top of the "
-"window represents the project's root directory and stands for \"resource path"
-"\". For more information about file paths in Godot, see :ref:"
+"window represents the project's root directory and stands for \"resource "
+"path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
 
@@ -6209,7 +6197,6 @@ msgid "A grey \"revert\" button appears next to the adjusted property."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:145
-#, fuzzy
 msgid ""
 "This icon indicates you are overriding a value from the source packed scene. "
 "Even if you modify the property in the original scene, the value override "
@@ -6220,7 +6207,7 @@ msgstr ""
 "eigenschap. Als deze knop aanwezig is, betekent dat dat je een eigenschap "
 "van een geïnstantieerde scène hebt aangepast en daarmee de waarde uit de "
 "opgeslagen scène overschreven hebt. Ook als de eigenschap in het vervolg is "
-"aangepast in de originele scène, zal deze aangeapste waarde blijven. Het "
+"aangepast in de originele scène, zal deze aangepaste waarde blijven. Het "
 "drukken op de herstel knop zal eigenschap terugzetten naar de waarde uit de "
 "opgeslagen scène."
 
@@ -6265,9 +6252,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:173
-#, fuzzy
 msgid "For example, you could break down a shooter game like so:"
-msgstr "Zo kan een simpel schietspel ingebeeld worden:"
+msgstr "Zo kan bijvoorbeeld een simpel schietspel ingebeeld worden:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:177
 #, fuzzy
@@ -6304,10 +6290,10 @@ msgstr ""
 "Veel tijd in het maken van spellen (of software in het algemeen) gaat op aan "
 "het ontwerpen van een architectuur en daarbij passende spelelementen. "
 "Ontwerpen op basis van scènes vervangt die aanpak en maakt ontwikkeling veel "
-"sneller en eenvoudiger, waardoor je kan concenteren op de spellogica zelf. "
+"sneller en eenvoudiger, waardoor je kan concentreren op de spellogica zelf. "
 "Omdat de meeste spelelementen rechtstreeks kunnen worden ingedeeld in een "
 "scène, gebruikmakend van een ontwerp gebaseerd op het instantiëren van "
-"scènes, is weinig archtitecturele code verder nodig."
+"scènes, is weinig architecturale code verder nodig."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:191
 #, fuzzy
@@ -7677,7 +7663,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:35
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**Waarom met 2D beginnen?**"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:37
 #, fuzzy
@@ -7741,7 +7727,7 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/index.rst:63
 #: ../../docs/getting_started/first_3d_game/index.rst:53
 msgid "Contents"
-msgstr ""
+msgstr "Inhoud"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:4
 #: ../../docs/tutorials/scripting/gdnative/gdnative_cpp_example.rst:28
@@ -7785,7 +7771,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:294
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:351
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:27
 msgid ""
@@ -8032,7 +8018,6 @@ msgstr ""
 "onder het ``Node2D`` kopje."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:83
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -8043,8 +8028,8 @@ msgid ""
 msgstr ""
 "Ten slotte, voeg een :ref:`CollisionShape2D <class_CollisionShape2D>` als "
 "een kind van ``Player`` toe. Dit zal het \"raakvlak\" (hitbox) van de speler "
-"bepalen, ofwel de de grenzen van het botsingsgebied. Voor dit karakter zal "
-"een ``CapsuleShape2D``-knoop het meest passen, dus druk op de ``Shape`` "
+"bepalen, ofwel de grenzen van het botsingsgebied. Voor dit karakter zal een "
+"``CapsuleShape2D``-knoop het meest passen, dus druk op de ``Shape`` "
 "eigenschap en kies ``Nieuwe CapsuleShape2D``. Pas de vorm met de twee "
 "handgrepen zo aan dat die de afbeelding van de speler overdekt:"
 
@@ -8301,12 +8286,12 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:270
 #, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$`` is een afkorting voor ``get_node()``. In de code hierboven is ``"
-"$AnimatedSprite.play()`` hetzelfde als ``get_node(\"AnimatedSprite\")."
+"``$`` is een afkorting voor ``get_node()``. In de code hierboven is "
+"``$AnimatedSprite.play()`` hetzelfde als ``get_node(\"AnimatedSprite\")."
 "play()``."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:274
@@ -8318,8 +8303,8 @@ msgid ""
 msgstr ""
 "In GDScript geeft ``$`` de knoop op het relatieve pad vanuit de huidige "
 "knoop, of ``null`` als de knoop niet is gevonden. Aangezien onze "
-"``AnimatedSprite`` een kind is van de huidige knoop, kunnen we ``"
-"$AnimatedSprite`` gebruiken."
+"``AnimatedSprite`` een kind is van de huidige knoop, kunnen we "
+"``$AnimatedSprite`` gebruiken."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:279
 #, fuzzy
@@ -8546,14 +8531,13 @@ msgstr ""
 "verdwijnen als ze buiten het scherm gaan."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:10
-#, fuzzy
 msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"We zullen dit in een scène genaamd *Mob* bouwen, die we we dan kunnen "
-"\"instantiëren\" om een gewenst aantal onafhankelijke vijanden in het spel "
-"te brengen."
+"We zullen dit in een scène genaamd ``Mob`` bouwen, die we dan kunnen "
+"*instantiëren* om een gewenst aantal onafhankelijke vijanden in het spel te "
+"brengen."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:14
 msgid "Node setup"
@@ -8604,7 +8588,6 @@ msgstr ""
 "vakje. Nu zullen de vijanden niet met elkaar botsen."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:34
-#, fuzzy
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
@@ -8612,10 +8595,10 @@ msgid ""
 msgstr ""
 "Zet de :ref:`AnimatedSprite <class_AnimatedSprite>` net zoals je voor de "
 "speler hebt gedaan. Deze keer hebben we drie animaties: ``fly``, ``swim``, "
-"and ``walk``. Zet de ``Playing`` eigenschap in het Inspecteurtabblad op \"Aan"
-"\" en stel de afspeelsnelheid  \"Speed (FPS)\" zoals hieronder weergegeven. "
-"We zullen één van deze animaties willekeurig selecteren zodat de vijanden "
-"wat variatie hebben."
+"and ``walk``. Zet de ``Playing`` eigenschap in het Inspecteurtabblad op "
+"\"Aan\" en stel de afspeelsnelheid \"Speed (FPS)\" zoals hieronder "
+"weergegeven. We zullen één van deze animaties willekeurig selecteren zodat "
+"de vijanden wat variatie hebben."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:38
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
@@ -9365,9 +9348,9 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:51
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
 
@@ -9410,9 +9393,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/index.rst:4
-#, fuzzy
 msgid "Your first 3D game"
-msgstr "Je eerste game"
+msgstr "Je eerste 3D game"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:6
 msgid ""
@@ -12129,9 +12111,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:274
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "Constanten"
+msgstr "**Gefeliciteerd**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:276
 msgid ""
@@ -12791,8 +12772,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
@@ -12821,7 +12802,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
-msgstr ""
+msgstr "2x2"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
@@ -17023,9 +17004,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
-"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
-"\"**. The former renders quickly, but can cause deformations, while the "
-"later is more correct, but costlier."
+"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube "
+"Mapped\"**. The former renders quickly, but can cause deformations, while "
+"the later is more correct, but costlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:198
@@ -21402,8 +21383,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:79
 msgid ""
 "It turns out there is a simpler way of handling this scenario. Godot "
-"supports *rooms **within** rooms* (we will call them **\"internal rooms"
-"\"**). That is, you can place a house within a terrain room, or even a "
+"supports *rooms **within** rooms* (we will call them **\"internal "
+"rooms\"**). That is, you can place a house within a terrain room, or even a "
 "building, or set of buildings, and even have exit portals in different "
 "terrain rooms!"
 msgstr ""
@@ -23217,8 +23198,8 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
-"So when inserting keys, you might find it convenient to have only the \"rot"
-"\" toggle active most of the time:"
+"So when inserting keys, you might find it convenient to have only the "
+"\"rot\" toggle active most of the time:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
@@ -25021,15 +25002,15 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:57
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:57
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:57
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:59
 msgid "KEY1"
@@ -25070,17 +25051,17 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:182
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:222
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:76
 #: ../../docs/tutorials/i18n/locales.rst:376
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:78
 msgid "GREET"
@@ -25088,15 +25069,15 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:78
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:78
 msgid "Hola, amigo!"
-msgstr ""
+msgstr "Hola, amigo!"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:78
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:80
 msgid "ASK"
@@ -25120,7 +25101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:82
 msgid "Goodbye"
-msgstr ""
+msgstr "Goodbye"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:82
 msgid "Adiós"
@@ -25128,19 +25109,19 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:82
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:84
 msgid "QUOTE"
-msgstr ""
+msgstr "QUOTE"
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:84
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Hello\" said the man."
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:84
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:84
 msgid "「こんにちは」男は言いました"
@@ -25189,7 +25170,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:4
 msgid "Importing 3D scenes"
-msgstr ""
+msgstr "3D Scènes importeren"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:7
 msgid "Godot scene importer"
@@ -25797,8 +25778,8 @@ msgstr ""
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
-"filters to all imported animations which have a name ending in ``\"_Loop"
-"\"``::"
+"filters to all imported animations which have a name ending in "
+"``\"_Loop\"``::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:336
@@ -25828,9 +25809,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:351
 msgid ""
-"For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
-"\"Control\"``, unless they have ``\"Arm\"`` in their name::"
+"For example: include all tracks in animations with names ending in "
+"``\"_Loop\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end "
+"in ``\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:360
@@ -26175,9 +26156,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:4
 msgid ""
-"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
-"\", which can be downloaded here: https://github.com/godotengine/godot-"
-"blender-exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender "
+"Exporter\", which can be downloaded here: https://github.com/godotengine/"
+"godot-blender-exporter"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:7
@@ -28409,8 +28390,8 @@ msgstr ""
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:195
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:199
@@ -30282,7 +30263,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:77
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "``-f``, ``--fullscreen``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:77
 msgid "Request fullscreen mode."
@@ -30290,7 +30271,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:79
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "``-m``, ``--maximized``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:79
 msgid "Request a maximized window."
@@ -30298,7 +30279,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:81
 msgid "``-w``, ``--windowed``"
-msgstr ""
+msgstr "``-w``, ``--windowed``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:81
 msgid "Request windowed mode."
@@ -30306,7 +30287,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:83
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "``-t``, ``--always-on-top``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:83
 msgid "Request an always-on-top window."
@@ -30314,7 +30295,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:85
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <W>x<H>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:85
 msgid "Request window resolution."
@@ -30322,7 +30303,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:87
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:87
 msgid "Request window position."
@@ -30330,7 +30311,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:89
 msgid "``--low-dpi``"
-msgstr ""
+msgstr "``--low-dpi``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:89
 msgid "Force low-DPI mode (macOS and Windows only)."
@@ -30338,7 +30319,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:91
 msgid "``--no-window``"
-msgstr ""
+msgstr "``--no-window``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:91
 msgid "Run with invisible window. Useful together with ``--script``."
@@ -30357,7 +30338,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:105
 msgid "``-d``, ``--debug``"
-msgstr ""
+msgstr "``-d``, ``--debug``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:105
 msgid "Debug (local stdout debugger)."
@@ -30365,7 +30346,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:107
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "``-b``, ``--breakpoints``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:107
 msgid ""
@@ -30375,7 +30356,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:109
 msgid "``--profiling``"
-msgstr ""
+msgstr "``--profiling``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:109
 msgid "Enable profiling in the script debugger."
@@ -30383,7 +30364,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:111
 msgid "``--remote-debug <address>``"
-msgstr ""
+msgstr "``--remote-debug <address>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:111
 msgid "Remote debug (``<host/IP>:<port>`` address)."
@@ -30391,7 +30372,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:113
 msgid "``--debug-collisions``"
-msgstr ""
+msgstr "``--debug-collisions``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:113
 msgid "Show collision shapes when running the scene."
@@ -30399,7 +30380,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:115
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "``--debug-navigation``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:115
 msgid "Show navigation polygons when running the scene."
@@ -30407,7 +30388,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:117
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "``--frame-delay <ms>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:117
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
@@ -30415,7 +30396,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:119
 msgid "``--time-scale <scale>``"
-msgstr ""
+msgstr "``--time-scale <scale>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:119
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
@@ -30423,7 +30404,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:121
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "``--disable-render-loop``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:121
 msgid ""
@@ -30433,7 +30414,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:123
 msgid "``--disable-crash-handler``"
-msgstr ""
+msgstr "``--disable-crash-handler``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:123
 msgid "Disable crash handler when supported by the platform code."
@@ -30441,7 +30422,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:125
 msgid "``--fixed-fps <fps>``"
-msgstr ""
+msgstr "``--fixed-fps <fps>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:125
 msgid ""
@@ -31474,7 +31455,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Vergroot Onderste Paneel"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid ":kbd:`Shift + F12`"
@@ -31496,16 +31477,16 @@ msgstr "Inzoomen"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:94
 #: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid ":kbd:`Ctrl + =`"
-msgstr ""
+msgstr ":kbd:`Ctrl + =`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:94
 #: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid ":kbd:`Cmd + =`"
-msgstr ""
+msgstr ":kbd:`Cmd + =`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:94
 msgid "``canvas_item_editor/zoom_plus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_plus``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 #: ../../docs/tutorials/editor/default_key_mapping.rst:339
@@ -31515,16 +31496,16 @@ msgstr "Uitzoomen"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 #: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid ":kbd:`Ctrl + -`"
-msgstr ""
+msgstr ":kbd:`Ctrl + -`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 #: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid ":kbd:`Cmd + -`"
-msgstr ""
+msgstr ":kbd:`Cmd + -`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 msgid "``canvas_item_editor/zoom_minus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_minus``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 msgid "Zoom Reset"
@@ -31533,16 +31514,16 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 #: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid ":kbd:`Ctrl + 0`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 0`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 #: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid ":kbd:`Cmd + 0`"
-msgstr ""
+msgstr ":kbd:`Cmd + 0`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 msgid "``canvas_item_editor/zoom_reset``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_reset``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:100
 msgid "Pan View"
@@ -31550,11 +31531,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:100
 msgid ":kbd:`Space`"
-msgstr ""
+msgstr ":kbd:`Space`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:100
 msgid "``canvas_item_editor/pan_view``"
-msgstr ""
+msgstr "``canvas_item_editor/pan_view``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:102
 #: ../../docs/tutorials/editor/default_key_mapping.rst:165
@@ -31565,11 +31546,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:159
 #: ../../docs/tutorials/editor/default_key_mapping.rst:165
 msgid ":kbd:`Q`"
-msgstr ""
+msgstr ":kbd:`Q`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:102
 msgid "``canvas_item_editor/select_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/select_mode``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 #: ../../docs/tutorials/editor/default_key_mapping.rst:167
@@ -31581,11 +31562,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:167
 #: ../../docs/tutorials/editor/default_key_mapping.rst:501
 msgid ":kbd:`W`"
-msgstr ""
+msgstr ":kbd:`W`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 msgid "``canvas_item_editor/move_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/move_mode``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:106
 #: ../../docs/tutorials/editor/default_key_mapping.rst:169
@@ -31596,11 +31577,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:157
 #: ../../docs/tutorials/editor/default_key_mapping.rst:169
 msgid ":kbd:`E`"
-msgstr ""
+msgstr ":kbd:`E`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:106
 msgid "``canvas_item_editor/rotate_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/rotate_mode``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 #: ../../docs/tutorials/editor/default_key_mapping.rst:171
@@ -31611,11 +31592,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:155
 #: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid ":kbd:`S`"
-msgstr ""
+msgstr ":kbd:`S`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 msgid "``canvas_item_editor/scale_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/scale_mode``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:110
 msgid "Ruler Mode"
@@ -31624,11 +31605,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:110
 #: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid ":kbd:`R`"
-msgstr ""
+msgstr ":kbd:`R`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:110
 msgid "``canvas_item_editor/ruler_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/ruler_mode``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid "Use Smart Snap"
@@ -31636,11 +31617,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid ":kbd:`Shift + S`"
-msgstr ""
+msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid "``canvas_item_editor/use_smart_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_smart_snap``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid "Use Grid Snap"
@@ -31648,11 +31629,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid ":kbd:`Shift + G`"
-msgstr ""
+msgstr ":kbd:`Shift + G`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid "``canvas_item_editor/use_grid_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_grid_snap``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid "Multiply grid step by 2"
@@ -31660,11 +31641,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid ":kbd:`Num *`"
-msgstr ""
+msgstr ":kbd:`Num *`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid "``canvas_item_editor/multiply_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/multiply_grid_step``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid "Divide grid step by 2"
@@ -31672,11 +31653,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid ":kbd:`Num /`"
-msgstr ""
+msgstr ":kbd:`Num /`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid "``canvas_item_editor/divide_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/divide_grid_step``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:120
 msgid "Always Show Grid"
@@ -31685,11 +31666,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:120
 #: ../../docs/tutorials/editor/default_key_mapping.rst:489
 msgid ":kbd:`G`"
-msgstr ""
+msgstr ":kbd:`G`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:120
 msgid "``canvas_item_editor/show_grid``"
-msgstr ""
+msgstr "``canvas_item_editor/show_grid``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:122
 msgid "Show Helpers"
@@ -31697,11 +31678,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:122
 msgid ":kbd:`H`"
-msgstr ""
+msgstr ":kbd:`H`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:122
 msgid "``canvas_item_editor/show_helpers``"
-msgstr ""
+msgstr "``canvas_item_editor/show_helpers``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:124
 msgid "Show Guides"
@@ -31710,25 +31691,25 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:124
 #: ../../docs/tutorials/editor/default_key_mapping.rst:175
 msgid ":kbd:`Y`"
-msgstr ""
+msgstr ":kbd:`Y`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:124
 msgid "``canvas_item_editor/show_guides``"
-msgstr ""
+msgstr "``canvas_item_editor/show_guides``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:126
 #, fuzzy
 msgid "Center Selection"
-msgstr "Weerkaatsing"
+msgstr "Centreer Selectie"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:126
 #: ../../docs/tutorials/editor/default_key_mapping.rst:197
 msgid ":kbd:`F`"
-msgstr ""
+msgstr ":kbd:`F`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:126
 msgid "``canvas_item_editor/center_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/center_selection``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:128
 #, fuzzy
@@ -31738,11 +31719,11 @@ msgstr "Weerkaatsing"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:128
 #: ../../docs/tutorials/editor/default_key_mapping.rst:147
 msgid ":kbd:`Shift + F`"
-msgstr ""
+msgstr ":kbd:`Shift + F`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:128
 msgid "``canvas_item_editor/frame_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/frame_selection``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid "Preview Canvas Scale"
@@ -31750,15 +31731,15 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid ":kbd:`Ctrl + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + P`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid ":kbd:`Cmd + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + P`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid "``canvas_item_editor/preview_canvas_scale``"
-msgstr ""
+msgstr "``canvas_item_editor/preview_canvas_scale``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "Insert Key"
@@ -31766,11 +31747,11 @@ msgstr "Sleutel invoeren"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid ":kbd:`Ins`"
-msgstr ""
+msgstr ":kbd:`Ins`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "``canvas_item_editor/anim_insert_key``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid "Insert Key (Existing Tracks)"
@@ -31778,15 +31759,15 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid ":kbd:`Ctrl + Ins`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Ins`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid ":kbd:`Cmd + Ins`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ins`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:136
 msgid "Make Custom Bones from Nodes"
@@ -33568,9 +33549,8 @@ msgid "``tile_map_editor/clear_transform``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
-#, fuzzy
 msgid "Select"
-msgstr "Weerkaatsing"
+msgstr "Selecteer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`M`"
@@ -33846,8 +33826,9 @@ msgstr ""
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:69
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
-"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
-"%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
+"github.com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__ "
+"for a list of known bugs."
 msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:73
@@ -36499,8 +36480,8 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_android.rst:57
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
-"should move it to a memorable location such as ``%USERPROFILE%\\.android"
-"\\``, because you will need its location in a later step. For more "
+"should move it to a memorable location such as ``%USERPROFILE%\\."
+"android\\``, because you will need its location in a later step. For more "
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
@@ -41867,8 +41848,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
-"com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
-"+gamepad>`__ on GitHub."
+"com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
@@ -46232,19 +46213,19 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
 msgid "``remote``"
-msgstr ""
+msgstr "``remote``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
 msgid "``remotesync``"
-msgstr ""
+msgstr "``remotesync``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:246
 msgid "``master``"
-msgstr ""
+msgstr "``master``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
 msgid "``puppet``"
-msgstr ""
+msgstr "``puppet``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
@@ -46277,7 +46258,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:261
 msgid "Starting the game"
-msgstr ""
+msgstr "Het spel starten"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:263
 msgid ""
@@ -46340,7 +46321,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
 msgid "Synchronizing the game"
-msgstr ""
+msgstr "Het spel synchroniseren"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
 msgid ""
@@ -46590,8 +46571,8 @@ msgstr ""
 #: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
-"array, with each string containing a header in the format ``\"header: value"
-"\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
+"array, with each string containing a header in the format ``\"header: "
+"value\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
 
@@ -52044,8 +52025,8 @@ msgstr ""
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
 "the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
-"you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
-"\" feature in the skeleton node."
+"you can generate ``PhysicalBone`` nodes with the \"Create physical "
+"skeleton\" feature in the skeleton node."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
@@ -53941,12 +53922,13 @@ msgstr "Multi-threading"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
@@ -55657,8 +55639,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:115
 msgid ""
-"You should choose this name as a continuation to \"Import as\", e.g. *"
-"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"You should choose this name as a continuation to \"Import as\", e.g. "
+"*\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 
@@ -56676,8 +56658,8 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:75
 msgid ""
 "There can only be one active camera per :ref:`Viewport <class_Viewport>`, so "
-"if there is more than one, make sure that the desired one has the \"current"
-"\" property set, or make it the current camera by calling:"
+"if there is more than one, make sure that the desired one has the "
+"\"current\" property set, or make it the current camera by calling:"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:83
@@ -57291,13 +57273,12 @@ msgid "Common use case scenarios"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:269
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
-"Hoe moeten assets worden gemaakt om meerdere resoluties en hoogte-breedte "
-"verhoudingen aan te kunnen?"
+"De volgende instellingen worden aanbevolen om meerdere resoluties en lengte-"
+"breedte verhoudingen te kunnen ondersteunen."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:273
 msgid "Desktop game"
@@ -57349,9 +57330,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:292
-#, fuzzy
 msgid "**Pixel art:**"
-msgstr "Formaat"
+msgstr "**Pixel art:**"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:294
 msgid ""
@@ -58144,27 +58124,27 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:201
 msgid "``ensure_correct_normals``"
-msgstr ""
+msgstr "``ensure_correct_normals``"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:203
 msgid "``INSTANCE_ID``"
-msgstr ""
+msgstr "``INSTANCE_ID``"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:205
 msgid "``DEPTH``"
-msgstr ""
+msgstr "``DEPTH``"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:207
 msgid "``ANISOTROPY``"
-msgstr ""
+msgstr "``ANISOTROPY``"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:209
 msgid "``ANISOTROPY_FLOW``"
-msgstr ""
+msgstr "``ANISOTROPY_FLOW``"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:211
 msgid "``SSS_STRENGTH``"
-msgstr ""
+msgstr "``SSS_STRENGTH``"
 
 #: ../../docs/tutorials/scripting/index.rst:4
 #, fuzzy
@@ -58220,7 +58200,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "Geschiedenis"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -58294,7 +58274,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:143
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:143
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:145
@@ -58304,16 +58284,16 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:145
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:147
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:149
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:873
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:149
 msgid "See for_."
@@ -58322,7 +58302,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:151
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:862
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:151
 msgid "See while_."
@@ -58339,7 +58319,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:155
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:155
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -58347,7 +58327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:157
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:157
 msgid ""
@@ -58412,7 +58392,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:173
 msgid "self"
-msgstr "zelf"
+msgstr "self"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:173
 msgid "Refers to current class instance."
@@ -58644,7 +58624,7 @@ msgstr "Functies"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:238
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:238
 msgid "Instance type checker"
@@ -58652,7 +58632,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:240
 msgid "``~``"
-msgstr ""
+msgstr "``~``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:240
 msgid "Bitwise NOT"
@@ -58685,7 +58665,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:254
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:254
 msgid "Addition / Concatenation of arrays"
@@ -58711,7 +58691,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:260
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:260
 msgid "Bitwise AND"
@@ -58743,7 +58723,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:268
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:268
 msgid "Content test"
@@ -58751,15 +58731,15 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:270
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:270
 msgid "Boolean NOT"
-msgstr ""
+msgstr "Boolean NOT"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:272
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and`` ``&&``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:272
 msgid "Boolean AND"
@@ -58783,7 +58763,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:278
 msgid "``as``"
-msgstr ""
+msgstr "``as``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:278
 #, fuzzy
@@ -58814,31 +58794,31 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:289
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 10 integer"
-msgstr ""
+msgstr "Geheel getal in grondtal 10"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:291
 msgid "``0x8f51``"
-msgstr ""
+msgstr "``0x8f51``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:291
 msgid "Base 16 (hexadecimal) integer"
-msgstr ""
+msgstr "Geheel getal in grondtal 16 (hexidecimaal)"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:293
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:293
 msgid "Base 2 (binary) integer"
-msgstr ""
+msgstr "Geheel getal in grondtal 2 (binair)"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:295
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:295
 msgid "Floating-point number (real)"
@@ -58846,15 +58826,15 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:297
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"Hello\"``, ``\"Hi\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:297
 msgid "Strings"
-msgstr ""
+msgstr "Tekenreeksen"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:299
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr ""
+msgstr "``\"\"\"Hello\"\"\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:299
 msgid "Multiline string"
@@ -58862,7 +58842,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:301
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:301
 msgid ":ref:`class_NodePath` or StringName"
@@ -58870,7 +58850,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:303
 msgid "``$NodePath``"
-msgstr ""
+msgstr "``$NodePath``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:303
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -58918,6 +58898,8 @@ msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
 msgstr ""
+"``null`` is een lege gegevenswaarde dat geen informatie bevat en niet aan "
+"een andere waarde gekoppeld kan worden."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:347
 #, fuzzy
@@ -58971,7 +58953,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:374
 msgid "Newline (line feed)"
@@ -58979,7 +58961,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:376
 msgid "Horizontal tab character"
@@ -58987,7 +58969,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:378
 msgid "Carriage return"
@@ -58995,7 +58977,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:380
 msgid "Alert (beep/bell)"
@@ -59003,15 +58985,15 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:382
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:384
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:384
 msgid "Formfeed page break"
@@ -59019,7 +59001,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:386
 msgid "Vertical tab character"
@@ -59027,7 +59009,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:388
 msgid "Double quote"
@@ -59035,7 +59017,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:390
 msgid "Single quote"
@@ -59043,7 +59025,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:392
 msgid "Backslash"
@@ -59051,7 +59033,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:394
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:394
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
@@ -59424,10 +59406,10 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:687
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:692
@@ -64932,9 +64914,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:4
-#, fuzzy
 msgid "What is GDNative?"
-msgstr "GDNative"
+msgstr "Wat is GDNative?"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:9
 msgid ""
@@ -67735,8 +67716,8 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:40
@@ -73166,8 +73147,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:94
 msgid ""
-"Now click beside \"Shader\" where it says \"[empty]\" and select \"New Shader"
-"\"."
+"Now click beside \"Shader\" where it says \"[empty]\" and select \"New "
+"Shader\"."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:96
@@ -74296,8 +74277,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:90
 msgid ""
 "In the above image, the second sphere (top right) is using the same source "
-"for ``SCREEN_TEXTURE`` as the first one below, so the first one \"disappears"
-"\", or is not visible."
+"for ``SCREEN_TEXTURE`` as the first one below, so the first one "
+"\"disappears\", or is not visible."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:94
@@ -75017,8 +74998,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:347
 msgid ""
-"\"Public\" comes before \"private\". In a shader language's context, \"public"
-"\" refers to what's easily adjustable by the user (uniforms)."
+"\"Public\" comes before \"private\". In a shader language's context, "
+"\"public\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/advanced_postprocessing.rst:4
@@ -77117,8 +77098,8 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:32
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:37
@@ -78197,9 +78178,9 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
 "If you have not already, go to the `OpenVR GitHub repository <https://github."
-"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter Assets"
-"\" file from the releases. Once you have the starter assets downloaded, open "
-"up the project in Godot."
+"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter "
+"Assets\" file from the releases. Once you have the starter assets "
+"downloaded, open up the project in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
@@ -82473,9 +82454,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
-"If all goes well, the resulting binary executable will be placed in the \"bin"
-"\" subdirectory. This executable file contains the whole engine and runs "
-"without any dependencies. Executing it will bring up the project manager."
+"If all goes well, the resulting binary executable will be placed in the "
+"\"bin\" subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the project "
+"manager."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
@@ -83541,8 +83523,8 @@ msgid ""
 "To ease the workflow, you can open the \"Solution Properties\" and in the "
 "\"Configuration\" section untick the \"Build\" option for the app. You still "
 "have to build it at least once to generate some needed files, you can do so "
-"by right-clicking the project (*not* the solution) in the \"Solution Explorer"
-"\" and selecting \"Build\"."
+"by right-clicking the project (*not* the solution) in the \"Solution "
+"Explorer\" and selecting \"Build\"."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
@@ -86633,8 +86615,8 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
-"an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
-"++ modules can be useful in the following scenarios:"
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
@@ -87388,8 +87370,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:508
 msgid ""
-"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
@@ -88695,8 +88677,8 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:77
@@ -88854,8 +88836,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:281
@@ -88908,8 +88890,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:332
@@ -89317,10 +89299,11 @@ msgstr ""
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
 "A good place to start is by searching for issues tagged as `junior jobs "
-"<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A"
-"%22junior+job%22>`_ (or `Hacktoberfest <https://github.com/godotengine/godot/"
-"issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ "
-"during October) on GitHub."
+"<https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3A%22junior+job%22>`_ (or `Hacktoberfest "
+"<https://github.com/godotengine/godot/issues?"
+"utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ during "
+"October) on GitHub."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:90
@@ -90364,8 +90347,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:357
 msgid ""
-"When you load your fork's branch on GitHub, you should see a line saying *"
-"\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
+"When you load your fork's branch on GitHub, you should see a line saying "
+"*\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
 "upstream ``master`` branch)."
 msgstr ""
@@ -90374,8 +90357,8 @@ msgstr ""
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the ``godotengine/godot`` upstream "
-"repository. It should show you your two commits, and state \"Able to merge"
-"\". If not (e.g. it has way more commits, or says there are merge "
+"repository. It should show you your two commits, and state \"Able to "
+"merge\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR yet, something went wrong. Go to our "
 "`Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
 msgstr ""
@@ -91779,8 +91762,8 @@ msgstr ""
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:21
 msgid ""
 "To get your pull request merged, it needs to follow the C++ usage guidelines "
-"outlined here. Of course, you can use features not allowed here in your own C"
-"++ modules or GDNative scripts."
+"outlined here. Of course, you can use features not allowed here in your own "
+"C++ modules or GDNative scripts."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:27
@@ -93976,8 +93959,8 @@ msgstr ""
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
 "A toolbar which lets you cycle through strings of the current list, change "
-"to another predefined list or do a custom search, etc. There is also a \"Zen"
-"\" editing mode with a simplified interface."
+"to another predefined list or do a custom search, etc. There is also a "
+"\"Zen\" editing mode with a simplified interface."
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
@@ -94046,8 +94029,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
-"The editor interface's translation template is generated by parsing all the C"
-"++ source code in **alphabetical order**, so all the strings defined in a "
+"The editor interface's translation template is generated by parsing all the "
+"C++ source code in **alphabetical order**, so all the strings defined in a "
 "given file will be grouped together. For example, if the \"source string "
 "location\" indicates ``editor/code_editor.cpp``, the current string (and the "
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
@@ -94898,8 +94881,8 @@ msgstr ""
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:119
 #: ../../docs/community/asset_library/uploading_to_assetlib.rst:119
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:124

@@ -1,14 +1,16 @@
 # Godot Engine Documentation in Norwegian Bokmål
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Allan Nordhøy <epost@anotheragency.no>, 2019-2020.
 # August Klevberg <augustkl@hotmail.com>, 2018.
 # Daniel Skogly <daniel@klungo.no>, 2021.
+# Edvard Ekrem Sæther <edvardekrem@gmail.com>, 2022.
 # Elias <eliasnykrem@gmail.com>, 2018.
 # flesk <eivindkn@gmail.com>, 2019.
 # Frank T. Rambol <frank@d-fect.com>, 2018.
 # Hans-Marius Øverås <hansmariusoveras@gmail.com>, 2019.
+# Imre Kristoffer Eilertsen <imreeil42@gmail.com>, 2022.
 # Kristoffer <kskau93@gmail.com>, 2021.
 # Patrick Sletvold <patricksletvold@hotmail.com>, 2021.
 # Petter Reinholdtsen <pere-weblate@hungry.com>, 2019-2021.
@@ -20,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-12-21 17:14+0100\n"
-"PO-Revision-Date: 2021-11-03 13:15+0000\n"
-"Last-Translator: Daniel Skogly <daniel@klungo.no>\n"
+"PO-Revision-Date: 2022-01-24 02:06+0000\n"
+"Last-Translator: Edvard Ekrem Sæther <edvardekrem@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/nb_NO/>\n"
 "Language: nb\n"
@@ -29,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -45,7 +47,7 @@ msgstr "Kom i gang"
 
 #: ../../docs/index.rst:85
 msgid "Tutorials"
-msgstr "Brukerveiledninger (Tutorials)"
+msgstr "Veiledninger"
 
 #: ../../docs/index.rst:115
 msgid "Development"
@@ -53,16 +55,15 @@ msgstr "Utvikling"
 
 #: ../../docs/index.rst:126
 msgid "Community"
-msgstr "Fellesskap"
+msgstr "Samfunn"
 
 #: ../../docs/index.rst:137
 msgid "Class reference"
-msgstr ""
+msgstr "Klassereferanse"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Godot-dokumentasjon – *master*-gren"
+msgstr "Godot Docs – *3.4* gren"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -147,6 +148,10 @@ msgid ""
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
+"Du kan også `laste ned en HTML-kopi <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
+"frakoblet lesing (oppdateres hver mandag). Pakk ut ZIP-arkivet og detetter "
+"åpne ``index.html`` fra toppnivået i en nettleser."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -297,7 +302,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Før du begynner"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -305,6 +310,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref:'Veiledninger og ressurser <doc_community_tutorials>'-siden lister opp "
+"videoveiledninger som fellesskapet har bidratt med. Hvis du foretrekker "
+"video fremfor tekst, kan det være verdt en titt."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -395,8 +403,8 @@ msgstr ""
 msgid ""
 "All the contents are under the permissive Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with "
-"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine "
+"community\"."
 msgstr ""
 
 #: ../../docs/about/introduction.rst:77
@@ -1554,7 +1562,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
-msgstr "Egenskaper"
+msgstr "Funksjoner"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
@@ -1622,7 +1630,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/external_editor.rst:39
 #: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
-msgstr "Redigeringsverktøy"
+msgstr "Redaktør"
 
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:90
@@ -2447,7 +2455,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:377
 msgid "Import"
-msgstr "importer"
+msgstr "Importer"
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -3165,7 +3173,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:184
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Innstikkmoduler"
+msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
@@ -5341,8 +5349,9 @@ msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
 "Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
-"lets you select any node. It is equivalent to pressing the \"Add Child Node"
-"\" button. These presets are here for convenience; they are not mandatory."
+"lets you select any node. It is equivalent to pressing the \"Add Child "
+"Node\" button. These presets are here for convenience; they are not "
+"mandatory."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:79
@@ -5439,8 +5448,8 @@ msgstr ""
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
 "you to save files inside the project. The ``res://`` path at the top of the "
-"window represents the project's root directory and stands for \"resource path"
-"\". For more information about file paths in Godot, see :ref:"
+"window represents the project's root directory and stands for \"resource "
+"path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
 
@@ -6599,9 +6608,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:6
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signaler"
+msgstr "Signal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 #, fuzzy
@@ -7528,8 +7536,8 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:270
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
 
@@ -8462,9 +8470,9 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:51
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
 
@@ -11527,11 +11535,11 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 msgid "Type"
-msgstr ""
+msgstr "Skriv"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr ""
+msgstr "Transformer"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -11851,8 +11859,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
@@ -12535,7 +12543,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr ""
+msgstr "Skala"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -16080,9 +16088,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:192
 msgid ""
-"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
-"\"**. The former renders quickly, but can cause deformations, while the "
-"later is more correct, but costlier."
+"Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube "
+"Mapped\"**. The former renders quickly, but can cause deformations, while "
+"the later is more correct, but costlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:198
@@ -20453,8 +20461,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:79
 msgid ""
 "It turns out there is a simpler way of handling this scenario. Godot "
-"supports *rooms **within** rooms* (we will call them **\"internal rooms"
-"\"**). That is, you can place a house within a terrain room, or even a "
+"supports *rooms **within** rooms* (we will call them **\"internal "
+"rooms\"**). That is, you can place a house within a terrain room, or even a "
 "building, or set of buildings, and even have exit portals in different "
 "terrain rooms!"
 msgstr ""
@@ -22263,8 +22271,8 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
-"So when inserting keys, you might find it convenient to have only the \"rot"
-"\" toggle active most of the time:"
+"So when inserting keys, you might find it convenient to have only the "
+"\"rot\" toggle active most of the time:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
@@ -23869,7 +23877,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
 msgid "1 second of audio"
@@ -24831,8 +24839,8 @@ msgstr ""
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
-"filters to all imported animations which have a name ending in ``\"_Loop"
-"\"``::"
+"filters to all imported animations which have a name ending in "
+"``\"_Loop\"``::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:336
@@ -24862,9 +24870,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:351
 msgid ""
-"For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
-"\"Control\"``, unless they have ``\"Arm\"`` in their name::"
+"For example: include all tracks in animations with names ending in "
+"``\"_Loop\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end "
+"in ``\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:360
@@ -25207,9 +25215,9 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:4
 msgid ""
-"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
-"\", which can be downloaded here: https://github.com/godotengine/godot-"
-"blender-exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender "
+"Exporter\", which can be downloaded here: https://github.com/godotengine/"
+"godot-blender-exporter"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/index.rst:7
@@ -27440,8 +27448,8 @@ msgstr ""
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:195
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:199
@@ -30306,7 +30314,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 #: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid "Redo"
-msgstr "Gjenta"
+msgstr "Gjør om"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -30354,7 +30362,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid "Take Screenshot"
-msgstr "Ta Skjermbilde"
+msgstr "Ta skjermbilde"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid ":kbd:`Ctrl + F12`"
@@ -30420,7 +30428,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid "Stop"
-msgstr "Stopp"
+msgstr "Stopp avspilling"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid ":kbd:`F8`"
@@ -30489,7 +30497,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:94
 #: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid "Zoom In"
-msgstr "Zoom Inn"
+msgstr "Forstørr"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:94
 #: ../../docs/tutorials/editor/default_key_mapping.rst:337
@@ -30508,7 +30516,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 #: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid "Zoom Out"
-msgstr "Zoom Ut"
+msgstr "Zoom ut"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:96
 #: ../../docs/tutorials/editor/default_key_mapping.rst:339
@@ -30526,7 +30534,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 msgid "Zoom Reset"
-msgstr "Zoom Resett"
+msgstr "Tilbakestill forstørring"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:98
 #: ../../docs/tutorials/editor/default_key_mapping.rst:341
@@ -31212,7 +31220,7 @@ msgstr "Redigeringsverktøy"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
-msgstr "Klipp ut"
+msgstr "Kutt"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 #: ../../docs/tutorials/editor/default_key_mapping.rst:354
@@ -31276,7 +31284,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Select All"
-msgstr "Velg Alle"
+msgstr "Velg alle"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 #: ../../docs/tutorials/editor/default_key_mapping.rst:443
@@ -31318,7 +31326,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:232
 #: ../../docs/tutorials/editor/default_key_mapping.rst:305
 msgid "Find Next"
-msgstr "Finn Neste"
+msgstr "Finn neste"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:232
 #: ../../docs/tutorials/editor/default_key_mapping.rst:305
@@ -31337,7 +31345,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:234
 #: ../../docs/tutorials/editor/default_key_mapping.rst:307
 msgid "Find Previous"
-msgstr "Finn Forrige"
+msgstr "Finn forrige"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:234
 #: ../../docs/tutorials/editor/default_key_mapping.rst:307
@@ -31355,7 +31363,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:236
 #: ../../docs/tutorials/editor/default_key_mapping.rst:309
 msgid "Find in Files"
-msgstr "Finn i Filer"
+msgstr "Finn i filer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:236
 #: ../../docs/tutorials/editor/default_key_mapping.rst:309
@@ -31421,7 +31429,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:311
 #: ../../docs/tutorials/editor/default_key_mapping.rst:455
 msgid "Move Up"
-msgstr "Flytt Opp"
+msgstr "Flytt opp"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:246
 #: ../../docs/tutorials/editor/default_key_mapping.rst:403
@@ -31436,7 +31444,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:313
 #: ../../docs/tutorials/editor/default_key_mapping.rst:457
 msgid "Move Down"
-msgstr "Flytt Ned"
+msgstr "Flytt ned"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:248
 msgid ":kbd:`Alt + Down Arrow`"
@@ -31583,7 +31591,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:268
 msgid "Capitalize"
-msgstr "Store bokstaver"
+msgstr "Stor forbokstav"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:268
 msgid ":kbd:`Shift + F6`"
@@ -31708,7 +31716,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:286
 #: ../../docs/tutorials/editor/default_key_mapping.rst:366
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Slå av/på stoppunkt"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:286
 #: ../../docs/tutorials/editor/default_key_mapping.rst:366
@@ -31874,7 +31882,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid "Save All"
-msgstr "Lagre Alt"
+msgstr "Lagre alle"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid "``script_editor/save_all``"
@@ -32017,7 +32025,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:358
 msgid "Delete Selected"
-msgstr "Slett Valgte"
+msgstr "Slett valgt"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:358
 #: ../../docs/tutorials/editor/default_key_mapping.rst:415
@@ -32107,11 +32115,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:381
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr "Feilsøking"
+msgstr "Feilsøkingsprogram"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "Step Into"
-msgstr "Tre Inn I"
+msgstr "Stepp Inn i"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid ":kbd:`F11`"
@@ -32123,7 +32131,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid "Step Over"
-msgstr "Hopp Over"
+msgstr "Stepp over"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid ":kbd:`F10`"
@@ -32151,7 +32159,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
-msgstr "Gå Tilbake"
+msgstr "Gå tilbake"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "``file_dialog/go_back``"
@@ -32159,7 +32167,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:401
 msgid "Go Forward"
-msgstr "Gå Fremover"
+msgstr "Gå fremover"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:401
 msgid "``file_dialog/go_forward``"
@@ -32219,7 +32227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:413
 msgid "Create Folder"
-msgstr "Lag Mappe"
+msgstr "Opprett mappe"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:413
 msgid ":kbd:`Ctrl + N`"
@@ -32309,7 +32317,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:432
 #: ../../docs/tutorials/editor/default_key_mapping.rst:453
 msgid "Duplicate"
-msgstr "Duplisér"
+msgstr "Dupliser"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:432
 msgid "``filesystem_dock/duplicate``"
@@ -32486,7 +32494,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:489
 msgid "Bucket Fill"
-msgstr ""
+msgstr "Bøttefylling"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:489
 msgid "``tile_map_editor/bucket_fill``"
@@ -32494,7 +32502,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:491
 msgid "Transpose"
-msgstr ""
+msgstr "Transposer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:491
 msgid "``tile_map_editor/transpose``"
@@ -32502,7 +32510,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Vend horisontalt"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid ":kbd:`X`"
@@ -32514,7 +32522,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:495
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Vend loddrett"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:495
 msgid ":kbd:`Z`"
@@ -32526,7 +32534,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:497
 msgid "Rotate Left"
-msgstr "Roter til Venstre"
+msgstr "Roter til venstre"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:497
 msgid "``tile_map_editor/rotate_left``"
@@ -32534,7 +32542,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid "Rotate Right"
-msgstr "Roter til Høyre"
+msgstr "Roter til høyre"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid "``tile_map_editor/rotate_right``"
@@ -32822,8 +32830,9 @@ msgstr ""
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:69
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
-"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
-"%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
+"github.com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__ "
+"for a list of known bugs."
 msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:73
@@ -35464,8 +35473,8 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_android.rst:57
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
-"should move it to a memorable location such as ``%USERPROFILE%\\.android"
-"\\``, because you will need its location in a later step. For more "
+"should move it to a memorable location such as ``%USERPROFILE%\\."
+"android\\``, because you will need its location in a later step. For more "
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
@@ -36961,7 +36970,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Språk"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -40824,8 +40833,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
-"com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput"
-"+gamepad>`__ on GitHub."
+"com/godotengine/godot/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
@@ -40946,7 +40955,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:32
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Usage"
-msgstr ""
+msgstr "Bruk"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -45390,8 +45399,8 @@ msgstr ""
 #: ../../docs/tutorials/networking/http_request_class.rst:78
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
-"array, with each string containing a header in the format ``\"header: value"
-"\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
+"array, with each string containing a header in the format ``\"header: "
+"value\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
 
@@ -50822,8 +50831,8 @@ msgstr ""
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
 "the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
-"you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
-"\" feature in the skeleton node."
+"you can generate ``PhysicalBone`` nodes with the \"Create physical "
+"skeleton\" feature in the skeleton node."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
@@ -52696,12 +52705,13 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:531
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
@@ -53133,7 +53143,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "value"
-msgstr ""
+msgstr "verdi"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 msgid "``true``"
@@ -54400,8 +54410,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:115
 msgid ""
-"You should choose this name as a continuation to \"Import as\", e.g. *"
-"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"You should choose this name as a continuation to \"Import as\", e.g. "
+"*\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 
@@ -55413,8 +55423,8 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:75
 msgid ""
 "There can only be one active camera per :ref:`Viewport <class_Viewport>`, so "
-"if there is more than one, make sure that the desired one has the \"current"
-"\" property set, or make it the current camera by calling:"
+"if there is more than one, make sure that the desired one has the "
+"\"current\" property set, or make it the current camera by calling:"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:83
@@ -58147,10 +58157,10 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:687
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:692
@@ -60873,7 +60883,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Fyll"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -65006,7 +65016,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/index.rst:2
 msgid "Debug"
-msgstr "Feilsøk"
+msgstr "Avlus"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -65287,7 +65297,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:42
 msgid "Errors"
-msgstr ""
+msgstr "Feil"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:44
 msgid ""
@@ -65362,7 +65372,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr ""
+msgstr "Skjermer"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:89
 msgid ""
@@ -65388,7 +65398,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:105
 msgid "Misc"
-msgstr ""
+msgstr "Diverse"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:107
 msgid ""
@@ -66345,8 +66355,8 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:40
@@ -71760,8 +71770,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:94
 msgid ""
-"Now click beside \"Shader\" where it says \"[empty]\" and select \"New Shader"
-"\"."
+"Now click beside \"Shader\" where it says \"[empty]\" and select \"New "
+"Shader\"."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:96
@@ -72889,8 +72899,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:90
 msgid ""
 "In the above image, the second sphere (top right) is using the same source "
-"for ``SCREEN_TEXTURE`` as the first one below, so the first one \"disappears"
-"\", or is not visible."
+"for ``SCREEN_TEXTURE`` as the first one below, so the first one "
+"\"disappears\", or is not visible."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/screen-reading_shaders.rst:94
@@ -73608,8 +73618,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:347
 msgid ""
-"\"Public\" comes before \"private\". In a shader language's context, \"public"
-"\" refers to what's easily adjustable by the user (uniforms)."
+"\"Public\" comes before \"private\". In a shader language's context, "
+"\"public\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/advanced_postprocessing.rst:4
@@ -75698,8 +75708,8 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:32
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:37
@@ -76771,9 +76781,9 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
 "If you have not already, go to the `OpenVR GitHub repository <https://github."
-"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter Assets"
-"\" file from the releases. Once you have the starter assets downloaded, open "
-"up the project in Godot."
+"com/GodotVR/godot_openvr_fps/releases/>`__ and download the \"Starter "
+"Assets\" file from the releases. Once you have the starter assets "
+"downloaded, open up the project in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
@@ -80298,7 +80308,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
-msgstr ""
+msgstr "Mål"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -81037,9 +81047,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
-"If all goes well, the resulting binary executable will be placed in the \"bin"
-"\" subdirectory. This executable file contains the whole engine and runs "
-"without any dependencies. Executing it will bring up the project manager."
+"If all goes well, the resulting binary executable will be placed in the "
+"\"bin\" subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the project "
+"manager."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
@@ -82105,8 +82116,8 @@ msgid ""
 "To ease the workflow, you can open the \"Solution Properties\" and in the "
 "\"Configuration\" section untick the \"Build\" option for the app. You still "
 "have to build it at least once to generate some needed files, you can do so "
-"by right-clicking the project (*not* the solution) in the \"Solution Explorer"
-"\" and selecting \"Build\"."
+"by right-clicking the project (*not* the solution) in the \"Solution "
+"Explorer\" and selecting \"Build\"."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
@@ -85173,8 +85184,8 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
-"an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
-"++ modules can be useful in the following scenarios:"
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
@@ -85928,8 +85939,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:508
 msgid ""
-"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
@@ -87226,8 +87237,8 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:77
@@ -87384,8 +87395,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:281
@@ -87438,8 +87449,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:329
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:332
@@ -87841,10 +87852,11 @@ msgstr ""
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
 "A good place to start is by searching for issues tagged as `junior jobs "
-"<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A"
-"%22junior+job%22>`_ (or `Hacktoberfest <https://github.com/godotengine/godot/"
-"issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ "
-"during October) on GitHub."
+"<https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3A%22junior+job%22>`_ (or `Hacktoberfest "
+"<https://github.com/godotengine/godot/issues?"
+"utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_ during "
+"October) on GitHub."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:90
@@ -88883,8 +88895,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:357
 msgid ""
-"When you load your fork's branch on GitHub, you should see a line saying *"
-"\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
+"When you load your fork's branch on GitHub, you should see a line saying "
+"*\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
 "upstream ``master`` branch)."
 msgstr ""
@@ -88893,8 +88905,8 @@ msgstr ""
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the ``godotengine/godot`` upstream "
-"repository. It should show you your two commits, and state \"Able to merge"
-"\". If not (e.g. it has way more commits, or says there are merge "
+"repository. It should show you your two commits, and state \"Able to "
+"merge\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR yet, something went wrong. Go to our "
 "`Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
 msgstr ""
@@ -90295,8 +90307,8 @@ msgstr ""
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:21
 msgid ""
 "To get your pull request merged, it needs to follow the C++ usage guidelines "
-"outlined here. Of course, you can use features not allowed here in your own C"
-"++ modules or GDNative scripts."
+"outlined here. Of course, you can use features not allowed here in your own "
+"C++ modules or GDNative scripts."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:27
@@ -92475,8 +92487,8 @@ msgstr ""
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
 "A toolbar which lets you cycle through strings of the current list, change "
-"to another predefined list or do a custom search, etc. There is also a \"Zen"
-"\" editing mode with a simplified interface."
+"to another predefined list or do a custom search, etc. There is also a "
+"\"Zen\" editing mode with a simplified interface."
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
@@ -92544,8 +92556,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
-"The editor interface's translation template is generated by parsing all the C"
-"++ source code in **alphabetical order**, so all the strings defined in a "
+"The editor interface's translation template is generated by parsing all the "
+"C++ source code in **alphabetical order**, so all the strings defined in a "
 "given file will be grouped together. For example, if the \"source string "
 "location\" indicates ``editor/code_editor.cpp``, the current string (and the "
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
@@ -93392,8 +93404,8 @@ msgstr ""
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:119
 #: ../../docs/community/asset_library/uploading_to_assetlib.rst:119
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:124
