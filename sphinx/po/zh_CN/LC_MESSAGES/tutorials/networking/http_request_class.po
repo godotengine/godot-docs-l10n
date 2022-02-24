@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "这个示例中, 我们将创建一个带有按钮的简单UI, 按下该按钮时将发送对指定网址的"
 "HTTP请求."
 
-#, fuzzy
 msgid ""
 "When exporting to Android, make sure to enable the ``INTERNET`` permission "
 "in the Android export preset before exporting the project or using one-click "
@@ -45,8 +44,7 @@ msgid ""
 "Android."
 msgstr ""
 "当导出到 Android 时，在导出项目或使用一键部署之前，确保在 Android 导出预设中"
-"启用 [code]INTERNET[/code] 权限。否则，任何形式的网络通信都会被 Android 系统"
-"阻止。"
+"启用 ``INTERNET`` 权限。否则，任何形式的网络通信都会被 Android 系统阻止。"
 
 msgid "Preparing scene"
 msgstr "准备场景"
@@ -106,8 +104,8 @@ msgstr ""
 
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
-"array, with each string containing a header in the format ``\"header: value"
-"\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
+"array, with each string containing a header in the format ``\"header: "
+"value\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
 "当然, 您也可以设置自定义的HTTP头部. 它们以字符串数组的形式给出, 每个字符串都"
@@ -153,3 +151,7 @@ msgid ""
 msgstr ""
 "请记住, 在发送另一个请求之前, 您必须等待请求完成. 一次发出多个请求需要每个请"
 "求有一个节点. 常见的策略是在运行时根据需要创建和删除HTTPRequest节点."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

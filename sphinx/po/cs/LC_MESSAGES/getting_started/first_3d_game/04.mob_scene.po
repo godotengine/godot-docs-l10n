@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Designing the mob scene"
-msgstr "Testování scény"
+msgstr "Navrhování scény nepřítele"
 
 msgid ""
 "In this part, you're going to code the monsters, which we'll call mobs. In "
@@ -42,6 +41,10 @@ msgstr ""
 msgid "|image0|"
 msgstr "| image0 |"
 
+#, fuzzy
+msgid "image0"
+msgstr "| image0 |"
+
 msgid ""
 "We need a collision shape for our body to work. Right-click on the *Mob* "
 "node, the scene's root, and click *Add Child Node*."
@@ -50,16 +53,28 @@ msgstr ""
 msgid "|image1|"
 msgstr "| image1 |"
 
+#, fuzzy
+msgid "image1"
+msgstr "| image1 |"
+
 msgid "Add a *CollisionShape*."
 msgstr "Přidání tvaru *CollisionShape*."
 
 msgid "|image2|"
 msgstr "| image2 |"
 
+#, fuzzy
+msgid "image2"
+msgstr "| image2 |"
+
 msgid "In the *Inspector*, assign a *BoxShape* to the *Shape* property."
 msgstr ""
 
 msgid "|image3|"
+msgstr "| image3 |"
+
+#, fuzzy
+msgid "image3"
 msgstr "| image3 |"
 
 msgid ""
@@ -78,6 +93,10 @@ msgstr ""
 msgid "|image4|"
 msgstr "| image4 |"
 
+#, fuzzy
+msgid "image4"
+msgstr "| image4 |"
+
 msgid ""
 "Notice that my box is taller than the monster. It is okay in this game "
 "because we're looking at the scene from above and using a fixed perspective. "
@@ -85,9 +104,8 @@ msgid ""
 "game feels when you test it that should dictate their form and size."
 msgstr ""
 
-#, fuzzy
 msgid "Removing monsters off-screen"
-msgstr "Odstranění starých nepřátel"
+msgstr "Odstranění příšer mimo obrazovku"
 
 msgid ""
 "We're going to spawn monsters at regular time intervals in the game level. "
@@ -126,11 +144,19 @@ msgstr ""
 msgid "|image5|"
 msgstr "| image5 |"
 
+#, fuzzy
+msgid "image5"
+msgstr "| image5 |"
+
 msgid "Resize it using the orange dots until it covers the entire 3D model."
 msgstr ""
 
 msgid "|image6|"
 msgstr ""
+
+#, fuzzy
+msgid "image6"
+msgstr "| image16 |"
 
 msgid "Coding the mob's movement"
 msgstr ""
@@ -147,6 +173,10 @@ msgstr ""
 
 msgid "|image7|"
 msgstr ""
+
+#, fuzzy
+msgid "image7"
+msgstr "| image17 |"
 
 msgid ""
 "Here's the movement code to start with. We define two properties, "
@@ -190,9 +220,8 @@ msgid ""
 "``rotated()`` method."
 msgstr ""
 
-#, fuzzy
 msgid "Leaving the screen"
-msgstr "Testování scény"
+msgstr "Opuštění obrazovky"
 
 msgid ""
 "We still have to destroy the mobs when they leave the screen. To do so, "
@@ -208,6 +237,10 @@ msgstr ""
 msgid "|image8|"
 msgstr ""
 
+#, fuzzy
+msgid "image8"
+msgstr "| image18 |"
+
 msgid ""
 "Select the *VisibilityNotifier* node and on the right side of the interface, "
 "navigate to the *Node* dock. Double-click the *screen_exited()* signal."
@@ -216,11 +249,19 @@ msgstr ""
 msgid "|image9|"
 msgstr ""
 
+#, fuzzy
+msgid "image9"
+msgstr "| image19|"
+
 msgid "Connect the signal to the *Mob*."
 msgstr ""
 
 msgid "|image10|"
 msgstr ""
+
+#, fuzzy
+msgid "image10"
+msgstr "| image1 |"
 
 msgid ""
 "This will take you back to the script editor and add a new function for you, "
@@ -236,3 +277,7 @@ msgstr ""
 
 msgid "Here is the complete ``Mob.gd`` script for reference."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

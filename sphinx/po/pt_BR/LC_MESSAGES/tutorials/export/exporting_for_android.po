@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,8 +126,8 @@ msgstr ""
 "O Android precisa de um arquivo de debug keystore para instalar em "
 "dispositivos e distribuir APKs sem lançamento. Se você já usou o SDK antes e "
 "construiu projetos, ant ou eclipse provavelmente gerou um para você (no "
-"diretório ``~/.android`` em Linux e macOS, e no diretório ``C:\\Users\\<user>"
-"\\.android\\`` no Windows)."
+"diretório ``~/.android`` em Linux e macOS, e no diretório ``C:"
+"\\Users\\<user>\\.android\\`` no Windows)."
 
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
@@ -138,8 +138,8 @@ msgstr ""
 
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
-"should move it to a memorable location such as ``%USERPROFILE%\\.android"
-"\\``, because you will need its location in a later step. For more "
+"should move it to a memorable location such as ``%USERPROFILE%\\."
+"android\\``, because you will need its location in a later step. For more "
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
@@ -405,3 +405,7 @@ msgstr ""
 "Você pode otimizar o tamanho ainda mais compilando um modelo de exportação "
 "Android com apenas as funcionalidades que você precisa. Veja :ref:"
 "`doc_optimizing_for_size` para mais informações."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

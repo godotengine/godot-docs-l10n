@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Coding the player"
-msgstr "Pohybování hráčem"
+msgstr "Programování pohybu hráčem"
 
 msgid ""
 "In this lesson, we'll add player movement, animation, and set it up to "
 "detect collisions."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "To do so, we need to add some functionality that we can't get from a built-"
 "in node, so we'll add a script. Click the ``Player`` node and click the "
@@ -113,7 +111,6 @@ msgstr "Pohnout se v požadovaném směru."
 msgid "Play the appropriate animation."
 msgstr "Přehrát příslušnou animaci."
 
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -153,9 +150,8 @@ msgstr ""
 msgid "And ``move_down`` mapped to the down arrow key."
 msgstr ""
 
-#, fuzzy
 msgid "Your input map tab should look like this:"
-msgstr "Vaše cesta by měla vypadat takto."
+msgstr "Karta vstupní mapy by měla vypadat takto:"
 
 msgid "Click the \"Close\" button to close the project settings."
 msgstr ""
@@ -207,7 +203,6 @@ msgstr ""
 "málé opáčko, používání vektorů v Godotu najdete na :ref:`doc_vector_math`. "
 "Je dobré vektory znát, ale po zbytek tohoto tutoriálu to nebude nutné."
 
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
@@ -215,16 +210,15 @@ msgstr ""
 "Také ověříme zda se hráč pohybuje, takže na můžeme volat metody ``play ()`` "
 "nebo ``stop ()`` uzlu AnimatedSprite."
 
-#, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$`` je zkratka pro ``get_node()``. Takže ve výše uvedeném kódu je ``"
-"$AnimatedSprite.play()`` stejný jako ``get_node(\"AnimatedSprite\").Play()``."
+"``$`` je zkratka pro ``get_node()``. Takže ve výše uvedeném kódu je "
+"``$AnimatedSprite.play()`` stejný jako ``get_node(\"AnimatedSprite\")."
+"Play()``."
 
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
@@ -256,13 +250,12 @@ msgstr ""
 "kterou předchozí snímek potřeboval k dokončení. Použitím této hodnoty "
 "zajistíte, že pohyb zůstane konzistentní, i když se změní snímková frekvence."
 
-#, fuzzy
 msgid ""
 "Click \"Play Scene\" (:kbd:`F6`, :kbd:`Cmd + R` on macOS) and confirm you "
 "can move the player around the screen in all directions."
 msgstr ""
-"Klikněte na \"Přehrát scénu\" (``F6``) a ujistěte se, že můžete hráčem "
-"posunovat po obrazovce ve všech směrech."
+"Klikněte na \"Přehrát scénu\" (:kbd:`F6`, :kbd:`Cmd + R` v systému MacOS) a "
+"ujistěte se, že můžete hráčem posunovat po obrazovce ve všech směrech."
 
 msgid "If you get an error in the \"Debugger\" panel that says"
 msgstr "Pokud se zobrazí následující chyba v panelu \"Debugger\""
@@ -273,7 +266,6 @@ msgid ""
 msgstr ""
 "``Pokus o volání funkce 'play' v základní 'null instance' na null instance``"
 
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
@@ -286,7 +278,6 @@ msgstr ""
 msgid "Choosing animations"
 msgstr "Výběr animací"
 
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -412,3 +403,7 @@ msgstr ""
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

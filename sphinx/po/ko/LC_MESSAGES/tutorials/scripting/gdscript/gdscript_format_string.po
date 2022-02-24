@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,9 +36,10 @@ msgstr ""
 "하고는 일반 문자열과 같습니다. 그러면 플레이스홀더는 형식 문자열에 전달된 매"
 "개 변수로 쉽게 대치될 수 있습니다."
 
+#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
-"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
@@ -70,10 +71,11 @@ msgid ""
 "data in a human-readable string."
 msgstr ""
 "위의 예제에서 볼 수 있는 ``%s``\\ 는 가장 단순한 플레이스홀더로 대부분의 사"
-"용 사례에서 작동합니다. 이 플레이스홀더는 암시적 문자열 변환 또는 ``str()``"
-"\\ 이 값을 변환하는 것과 동일한 방법으로 값을 변환합니다. 문자열은 변경되지 "
-"않고 부울은 ``\"True\"`` 또는 ``\"False\"``\\ 를, 정수 또는 실수는 십진수를, "
-"다른 타입은 데이터를 일반적으로 사람이 읽을 수 있는 문자열로 반환합니다."
+"용 사례에서 작동합니다. 이 플레이스홀더는 암시적 문자열 변환 또는 "
+"``str()``\\ 이 값을 변환하는 것과 동일한 방법으로 값을 변환합니다. 문자열은 "
+"변경되지 않고 부울은 ``\"True\"`` 또는 ``\"False\"``\\ 를, 정수 또는 실수는 "
+"십진수를, 다른 타입은 데이터를 일반적으로 사람이 읽을 수 있는 문자열로 반환합"
+"니다."
 
 msgid ""
 "There is also another way to format text in GDScript, namely the ``String."
@@ -143,8 +145,8 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
-"이들 중 하나가 반드시 형식 지정자의 마지막 문자로 항상 나타나야 합니다. ``s``"
-"\\ 와는 별개로, 이들은 특정 타입의 매개변수가 필요합니다."
+"이들 중 하나가 반드시 형식 지정자의 마지막 문자로 항상 나타나야 합니다. "
+"``s``\\ 와는 별개로, 이들은 특정 타입의 매개변수가 필요합니다."
 
 msgid "``s``"
 msgstr "``s``"
@@ -381,8 +383,8 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"``\"안녕, {이름} v{버전}!\".format([[\"버전\":\"3.0\"], [\"이름\":\"Godette"
-"\"]])``"
+"``\"안녕, {이름} v{버전}!\".format([[\"버전\":\"3.0\"], [\"이름\":"
+"\"Godette\"]])``"
 
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"안녕, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
@@ -440,3 +442,7 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "안녕, Godette v3.11"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

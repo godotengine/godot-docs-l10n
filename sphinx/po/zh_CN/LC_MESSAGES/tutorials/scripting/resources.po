@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "**外部** , 对于场景, 作为单独文件保存在磁盘上."
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
-msgstr "**内置** , 保存在\".tscn \"或它们所附的\".scn \"文件内."
+msgstr "**内置**\\ ，保存在它们所附加的 ``.tscn`` 或 ``.scn`` 文件内。"
 
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
@@ -302,16 +302,15 @@ msgstr ""
 "保存资源, 则属性检查器也会序列化自定义属性！要从属性检查器中保存资源, 请点击"
 "属性检查器的工具菜单(右上角), 然后选择 ``保存`` 或 ``另存为...``."
 
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_gdscript_basics_class_name>`, then it streamlines the process. Defining "
 "a name for your script alone will add it to the Inspector's creation dialog. "
 "This will auto-add your script to the Resource object you create."
 msgstr ""
-"如果脚本的语言支持 :ref:`脚本类型 <doc_scripting_continued_class_name>`, 则可"
-"以简化该过程. 仅为脚本定义名称会将其添加到属性检查器的创建对话框. 这会将脚本"
-"自动添加到您创建的 ``资源(Resource)`` 对象中."
+"如果脚本的语言支持\\ :ref:`脚本类 <doc_gdscript_basics_class_name>`\\ ，则可"
+"以简化该过程。仅为脚本定义名称会将其添加到“检查器”的创建对话框。这会将脚本自"
+"动添加到您创建的 Resource 对象中。"
 
 msgid "Let's see some examples."
 msgstr "让我们看一些示例."
@@ -323,10 +322,10 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
-"``资源(Resource)`` 脚本类似于Unity的 ``ScriptableObjects``. 属性检查器为自定"
-"义资源提供内置支持. 如果需要的话, 用户甚至可以设计自己的基于 ``控制"
-"(Control)`` 的工具脚本, 并将它们与一个 :ref:`EditorPlugin "
-"<class_EditorPlugin>` 结合起来, 以为他们的数据创建自定义的可视化和编辑器."
+"资源脚本类似于 Unity 的 ScriptableObject。检查器为自定义资源提供内置支持。如"
+"果需要的话，用户甚至可以设计自己的基于 Control 控件的工具脚本，并将它们与一"
+"个 :ref:`EditorPlugin <class_EditorPlugin>` 结合起来，以为他们的数据创建自定"
+"义的可视化和编辑器。"
 
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
@@ -340,7 +339,7 @@ msgstr ""
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
-msgstr "不仅可以内联 ``字典(Dictionary)`` 值, 还可以选择..."
+msgstr "除了内联 Dictionary 值之外，还可以选择……"
 
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
@@ -381,3 +380,7 @@ msgid ""
 msgstr ""
 "在下面的示例中,Godot将加载 ``Node`` 脚本, 并看到它没有扩展 ``Resource``, 然后"
 "判断脚本由于类型不兼容而无法为 ``资源(Resource)`` 对象加载."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

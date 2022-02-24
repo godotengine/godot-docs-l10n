@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,8 +46,8 @@ msgid ""
 msgstr ""
 "Les ordinateurs ne peuvent pas générer de \"vrais\" nombres aléatoires. Ils "
 "s'appuient plutôt sur des `générateurs de nombres pseudo-aléatoires <https://"
-"fr.wikipedia.org/wiki/G%C3%A9n%C3%A9rateur_de_nombres_pseudo-al"
-"%C3%A9atoires>`__ (PRNG)."
+"fr.wikipedia.org/wiki/G%C3%A9n%C3%A9rateur_de_nombres_pseudo-"
+"al%C3%A9atoires>`__ (PRNG)."
 
 msgid "Global scope versus RandomNumberGenerator class"
 msgstr "Portée globale par rapport à la classe RandomNumberGenerator"
@@ -103,12 +103,11 @@ msgstr ""
 "aléatoire.** L'appeler plusieurs fois est inutile et peut avoir un impact "
 "négatif sur les performances."
 
-#, fuzzy
 msgid ""
 "Putting it in your main scene script's ``_ready()`` method is a good choice:"
 msgstr ""
-"Le placer dans la méthode \"ready()`` de votre script de scène principal est "
-"un bon choix : :"
+"Le placer dans la méthode ``ready()`` de votre script de scène principal est "
+"un bon choix :"
 
 msgid ""
 "You can also set a fixed random seed instead using :ref:`seed() "
@@ -119,13 +118,12 @@ msgstr ""
 "`seed() <class_@GDScript_method_seed>`. Vous obtiendrez ainsi des résultats "
 "*déterministes* d'une exécution à l'autre : :"
 
-#, fuzzy
 msgid ""
 "When using the RandomNumberGenerator class, you should call ``randomize()`` "
 "on the instance since it has its own seed:"
 msgstr ""
 "Lorsque vous utilisez la classe RandomNumberGenerator, vous devez appeler "
-"``randomize()`` sur l'instance car elle a sa propre graine :"
+"``randomize()`` sur l'instance car elle a sa propre graine(seed) :"
 
 msgid "Getting a random number"
 msgstr "Obtenir un nombre aléatoire"
@@ -137,17 +135,16 @@ msgstr ""
 "Examinons certaines des fonctions et méthodes les plus couramment utilisées "
 "pour générer des nombres aléatoires dans Godot."
 
-#, fuzzy
 msgid ""
 "The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
 "number between 0 and 2^32-1. Since the maximum value is huge, you most "
 "likely want to use the modulo operator (``%``) to bound the result between 0 "
 "and the denominator:"
 msgstr ""
-"La fonction :ref:`randi() <class_@GDScript_method_randi>` renvoie un nombre "
+"La fonction :ref:`randi() <class_@GDScript_method_randi>` renvoie un nombre "
 "aléatoire entre 0 et 2^32-1. Étant donné que la valeur maximale est énorme, "
 "vous souhaitez très probablement utiliser l’opérateur modulo (``%``) pour "
-"lier le résultat entre 0 et le dénominateur :"
+"lier le résultat entre 0 et le dénominateur :"
 
 msgid ""
 ":ref:`randf() <class_@GDScript_method_randf>` returns a random floating-"
@@ -160,7 +157,6 @@ msgstr ""
 "`doc_random_number_generation_weighted_random_probability`, entre autres "
 "choses."
 
-#, fuzzy
 msgid ""
 ":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
 "floating-point number following a `normal distribution <https://en.wikipedia."
@@ -172,47 +168,43 @@ msgstr ""
 "nombre flottant aléatoire selon une `distribution normale <https ://fr."
 "wikipedia.org/wiki/Loi_normale>`__. Cela signifie que la valeur retournée "
 "est plus susceptible d’être autour de la moyenne (0,0 par défaut), variant "
-"selon l’écart (1,0 par défaut) :"
+"selon l’écart (1,0 par défaut) :"
 
-#, fuzzy
 msgid ""
 ":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
 "``from`` and ``to``, and returns a random floating-point number between "
 "``from`` and ``to``:"
 msgstr ""
-":ref :`rand_range() <class_@GDScript_method_rand_range>` prend deux "
-"arguments ``from`` et ``to``, et retourne un nombre aléatoire flottant entre "
-"``from`` et ``to`` :"
+":ref:`rand_range() <class_@GDScript_method_rand_range>` prend deux arguments "
+"``from`` et ``to``, et retourne un nombre aléatoire flottant entre ``from`` "
+"et ``to`` :"
 
-#, fuzzy
 msgid ""
 ":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
 "``from`` and ``to``, and returns a random integer between ``from`` and "
 "``to``:"
 msgstr ""
-":ref :`RandomNumberGenerator.randi_range() "
+":ref:`RandomNumberGenerator.randi_range() "
 "<class_RandomNumberGenerator_method_randi_range>` prend deux arguments "
 "``from`` et ``to``, et retourne un entier aléatoire entre ``from`` et "
-"``to`` :"
+"``to`` :"
 
 msgid "Get a random array element"
 msgstr "Obtenir un élément aléatoire du tableau"
 
-#, fuzzy
 msgid ""
 "We can use random integer generation to get a random element from an array:"
 msgstr ""
 "Nous pouvons utiliser la génération d'entiers aléatoires pour obtenir un "
-"élément aléatoire d'un tableau :"
+"élément aléatoire à partir d’un tableau :"
 
-#, fuzzy
 msgid ""
 "To prevent the same fruit from being picked more than once in a row, we can "
 "add more logic to this method:"
 msgstr ""
 "Pour éviter que le même fruit ne soit cueilli plusieurs fois de suite, nous "
-"pouvons ajouter plus de logique à cette méthode :"
+"pouvons ajouter plus de logique à cette méthode :"
 
 msgid ""
 "This approach can be useful to make random number generation feel less "
@@ -229,25 +221,23 @@ msgstr ""
 msgid "Get a random dictionary value"
 msgstr "Obtenir une valeur aléatoire d'un dictionnaire"
 
-#, fuzzy
 msgid "We can apply similar logic from arrays to dictionaries as well:"
 msgstr ""
-"Nous pouvons également appliquer une logique similaire d'un tableau à un "
-"dictionnaire :"
+"Nous pouvons également appliquer aux dictionnaires une logique similaire à "
+"celle des tableaux :"
 
 msgid "Weighted random probability"
 msgstr "Probabilité aléatoire pondérée"
 
-#, fuzzy
 msgid ""
 "The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
 "point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
 "probability where different outcomes have different likelihoods:"
 msgstr ""
-"La méthode :ref :`randf() <class_@GDScript_method_randf>` renvoie un nombre "
+"La méthode :ref:`randf() <class_@GDScript_method_randf>` renvoie un nombre "
 "flottant compris entre 0.0 et 1.0. Nous pouvons l'utiliser pour créer une "
 "probabilité \"pondérée\" où différents résultats ont des probabilités "
-"différentes :"
+"différentes :"
 
 msgid "\"Better\" randomness using shuffle bags"
 msgstr "Un \"meilleur\" aléatoire en utilisant le sac mélangé (shuffle bags)"
@@ -301,15 +291,18 @@ msgstr ""
 "fonction de l'entrée. L'entrée peut être une position, un temps, ou "
 "n'importe quoi d'autre."
 
-#, fuzzy
 msgid ""
 "To achieve this, you can use random *noise* functions. Noise functions are "
 "especially popular in procedural generation to generate realistic-looking "
 "terrain. Godot provides :ref:`class_opensimplexnoise` for this, which "
 "supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise:"
 msgstr ""
-"Pour y parvenir, vous pouvez utiliser des fonctions *bruit* aléatoires. Les "
+"Pour y parvenir, vous pouvez utiliser des fonctions *noise* aléatoires. Les "
 "fonctions de bruit sont particulièrement populaires dans la génération "
 "procédurale pour générer un terrain d'apparence réaliste. Godot fournit :ref:"
 "`class_opensimplexnoise` pour cela, qui supporte le bruit 1D, 2D, 3D, et 4D. "
-"Voici un exemple avec un bruit 1D : :"
+"Voici un exemple avec un bruit 1D :"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

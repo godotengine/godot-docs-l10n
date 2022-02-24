@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,13 +234,12 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
 "Fontes em bitmap podem ser exportadas utilizando ferramentas como BMFont."
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont suporta fontes monocrómaticas bem como coloridas. Os formatos "
-"suportados são TTF e OTF."
+"DynamicFont suporta fontes monocromáticas bem como coloridas. Os formatos "
+"suportados são TTF, OTF e WOFF1."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -454,11 +453,12 @@ msgstr ""
 msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Reflexões de Screen-space."
 
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "Técnicas de reflexão podem ser combinadas para maior precisão."
+msgstr ""
+"Técnicas de reflexão podem ser combinadas para maior precisão ou "
+"escalabilidade."
 
 msgid "**Sky:**"
 msgstr "**Céu:**"
@@ -616,7 +616,7 @@ msgid "Soft bodies."
 msgstr "Corpos macios."
 
 msgid "Ragdolls."
-msgstr "Ragdolls."
+msgstr "Ragdolls (Bonecos de pano)."
 
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr "Formas pré-construídas: cubo, esfera, cápsula, cilindro."
@@ -966,7 +966,7 @@ msgid "Automatic replication using remote procedure calls (RPCs)."
 msgstr "Replicação automática usando chamadas de procedimento remotas (RPCs)."
 
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr "Suporta transferências não confiáveis, confiáveis e ordenadas."
+msgstr "Suporta transferências ordenadas, confiáveis e não confiáveis."
 
 msgid "WebSocket client and server, available on all platforms."
 msgstr "Cliente e servidor WebSocket, disponível em todas as plataformas."
@@ -1076,14 +1076,18 @@ msgstr "Suporte à XR (AR e VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Suporte ao ARKit no iOS quando pronto para uso."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "Suporte às API's de OpenXR e OpenVR."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"Headsets populares de VR como o Oculus Quest e HTC Vive graças à plugins."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Suporte às API's de OpenXR e OpenVR."
 
 msgid "GUI system"
 msgstr "Sistema de Interface Gráfica do Usuário (GUI)"
@@ -1228,9 +1232,8 @@ msgstr "Suporte a áudio em trilhas de animação."
 msgid "Support for Bézier curves in animation."
 msgstr "Suporte a curvas Bézier em animações."
 
-#, fuzzy
 msgid "File formats"
-msgstr "Formatos de Vídeo"
+msgstr "Formatos de arquivos"
 
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
@@ -1351,12 +1354,15 @@ msgstr ""
 "Processo de desenvolvimento aberto com :ref:`contribuições bem-vindas "
 "<doc_ways_to_contribute>`."
 
-#, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ lists features that have been requested by the community and "
 "may be implemented in future Godot releases."
 msgstr ""
-"O repositório `roadmap <https://github.com/godotengine/godot-roadmap>`__ "
-"documenta os recursos que foram acordados e podem ser implementados em "
-"versões futuras do Godot."
+"O `repositório de propostas do Godot <https://github.com/godotengine/godot-"
+"proposals`__ documenta recursos que foram pedidos pela comunidade e podem "
+"ser implementados em versões futuras do Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

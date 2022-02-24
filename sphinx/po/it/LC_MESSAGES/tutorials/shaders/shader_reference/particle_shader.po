@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,11 +49,13 @@ msgid ""
 "particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
 msgstr ""
 
+#, fuzzy
 msgid "Render modes"
-msgstr ""
+msgstr "Modalità di rendering"
 
+#, fuzzy
 msgid "Render mode"
-msgstr ""
+msgstr "Modalità di rendering"
 
 msgid "Description"
 msgstr "Descrizione"
@@ -95,7 +97,7 @@ msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr "Incorporato"
+msgstr "Integrato"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -120,76 +122,80 @@ msgid ""
 msgstr ""
 
 msgid "inout vec3 **VELOCITY**"
-msgstr ""
+msgstr "inout vec3 **VELOCITY**"
 
 msgid "Particle velocity, can be modified."
 msgstr ""
 
 msgid "out float **MASS**"
-msgstr ""
+msgstr "out float **MASS**"
 
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
 msgstr ""
 
 msgid "inout bool **ACTIVE**"
-msgstr ""
+msgstr "inout bool **ACTIVE**"
 
 msgid "``true`` when Particle is active, can be set to ``false``."
 msgstr ""
 
 msgid "in bool **RESTART**"
-msgstr ""
+msgstr "in bool **RESTART**"
 
 msgid "``true`` when particle must restart (lifetime cycled)."
 msgstr ""
 
 msgid "inout vec4 **CUSTOM**"
-msgstr ""
+msgstr "inout vec4 **CUSTOM**"
 
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
 
 msgid "inout mat4 **TRANSFORM**"
-msgstr ""
+msgstr "inout mat4 **TRANSFORM**"
 
 #, fuzzy
 msgid "Particle transform."
 msgstr "Trasformazione delle particelle."
 
 msgid "in float **LIFETIME**"
-msgstr ""
+msgstr "in float **LIFETIME**"
 
 #, fuzzy
 msgid "Particle lifetime."
 msgstr "Durata delle particelle."
 
 msgid "in float **DELTA**"
-msgstr ""
+msgstr "in float **DELTA**"
 
 msgid "Delta process time."
 msgstr ""
 
 msgid "in uint **NUMBER**"
-msgstr ""
+msgstr "in uint **NUMBER**"
 
 msgid "Unique number since emission start."
 msgstr ""
 
 msgid "in int **INDEX**"
-msgstr ""
+msgstr "in int **INDEX**"
 
 msgid "Particle index (from total particles)."
 msgstr ""
 
 msgid "in mat4 **EMISSION_TRANSFORM**"
-msgstr ""
+msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 msgid "Emitter transform (used for non-local systems)."
 msgstr ""
 
 msgid "in uint **RANDOM_SEED**"
-msgstr ""
+msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

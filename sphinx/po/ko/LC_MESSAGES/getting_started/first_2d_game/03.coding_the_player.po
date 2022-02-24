@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,13 +213,13 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$``\\ 는 ``get_node()``\\ 의 줄임말입니다. 그래서 위의 코드인 ``"
-"$AnimatedSprite.play()``\\ 는 ``get_node(\"AnimatedSprite\").play()``\\ 와 같"
-"습니다."
+"``$``\\ 는 ``get_node()``\\ 의 줄임말입니다. 그래서 위의 코드인 "
+"``$AnimatedSprite.play()``\\ 는 ``get_node(\"AnimatedSprite\").play()``\\ 와 "
+"같습니다."
 
 #, fuzzy
 msgid ""
@@ -296,11 +296,11 @@ msgid ""
 "the end of the ``_process()`` function:"
 msgstr ""
 "이제 플레이어가 이동할 수 있으므로 방향에 따라 AnimatedSprite가 재생 중인 애"
-"니메이션을 변경해야 합니다. 플레이어가 오른쪽으로 걷는 것을 보여주는 \"walk"
-"\" 애니메이션이 있습니다. 이 애니메이션은 왼쪽 이동을 위해 ``flip_h`` 속성을 "
-"사용해 수평으로 뒤집혀져야 합니다. 아래로 이동하려면 ``flip_v``\\ 로 수직으"
-"로 뒤집혀져야 하는 \"up\" 애니메이션도 있습니다. 이 코드를 ``_process()`` 함"
-"수의 끝에 배치해 보겠습니다:"
+"니메이션을 변경해야 합니다. 플레이어가 오른쪽으로 걷는 것을 보여주는 "
+"\"walk\" 애니메이션이 있습니다. 이 애니메이션은 왼쪽 이동을 위해 ``flip_h`` "
+"속성을 사용해 수평으로 뒤집혀져야 합니다. 아래로 이동하려면 ``flip_v``\\ 로 "
+"수직으로 뒤집혀져야 하는 \"up\" 애니메이션도 있습니다. 이 코드를 "
+"``_process()`` 함수의 끝에 배치해 보겠습니다:"
 
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
@@ -325,8 +325,8 @@ msgid ""
 "\"W\" in the code."
 msgstr ""
 "흔한 실수로 애니메이션 이름을 잘못 입력합니다. SpriteFrames 패널의 애니메이"
-"션 이름은 코드에 입력한 것과 일치해야 합니다. 애니메이션 이름을 ``\"Walk\"``"
-"\\ 으로 지은 경우 코드에 대문자 \"W\"를 사용해야 합니다."
+"션 이름은 코드에 입력한 것과 일치해야 합니다. 애니메이션 이름을 "
+"``\"Walk\"``\\ 으로 지은 경우 코드에 대문자 \"W\"를 사용해야 합니다."
 
 msgid ""
 "When you're sure the movement is working correctly, add this line to "
@@ -410,3 +410,7 @@ msgstr ""
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

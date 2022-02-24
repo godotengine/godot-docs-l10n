@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,6 @@ msgstr ""
 "scene”（文本场景）。上节课的 ``Label.tscn`` 文件就是一个例子。我们把这些文件"
 "叫作“打包场景”（Packed Scene），因为它们将场景的内容信息进行了打包。"
 
-#, fuzzy
 msgid ""
 "Here's the example of a ball. It's composed of a :ref:`RigidBody2D "
 "<class_RigidBody2D>` node as its root named Ball, which allows the ball to "
@@ -49,7 +48,7 @@ msgid ""
 msgstr ""
 "这是一个小球的例子。它由以下内容组成：一个叫“Ball”的 :ref:`RigidBody2D "
 "<class_RigidBody2D>` 节点是根节点，可以让小球下落、在撞墙后反弹，一个 :ref:"
-"`Sprite2D <class_Sprite>` 节点，以及一个 :ref:`CollisionShape2D "
+"`Sprite <class_Sprite>` 节点，以及一个 :ref:`CollisionShape2D "
 "<class_CollisionShape2D>`\\ 。"
 
 msgid ""
@@ -212,8 +211,8 @@ msgid ""
 "Select one of the instanced Ball nodes and, in the Inspector, set its "
 "Gravity Scale value to ``10``."
 msgstr ""
-"选择一个 Ball 实例节点，然后“检查器”中将 Gravity Scale（重力缩放）设为 ``10``"
-"\\ 。"
+"选择一个 Ball 实例节点，然后“检查器”中将 Gravity Scale（重力缩放）设为 "
+"``10``\\ 。"
 
 msgid "A grey \"revert\" button appears next to the adjusted property."
 msgstr "在被调整过的属性旁边就会多一个灰色的“复原”按钮。"
@@ -273,25 +272,22 @@ msgstr ""
 msgid "For example, you could break down a shooter game like so:"
 msgstr "例如，你可以这样拆解一个射击游戏："
 
-#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any type of game. Each "
 "rectangle represents an entity that's visible in the game from the player's "
 "perspective. The arrows tell you which scene owns which."
 msgstr ""
-"对于几乎任何类型的游戏, 都可以想出这样的图表. 写下游戏可以看见的部分, 然后添"
-"加箭头以表示组件之间的从属关系."
+"对于几乎任何类型的游戏，都可以想出这样的图表。矩形表示的是从玩家角度可以在游"
+"戏中看到的实体，箭头表示的是场景之间的从属关系。"
 
-#, fuzzy
 msgid ""
 "Once you have a diagram, we recommended creating a scene for each element "
 "listed in it to develop your game. You'll use instancing, either by code or "
 "directly in the editor, to build your tree of scenes."
 msgstr ""
-"一旦得到这样的图, 制作游戏的推荐过程就是为图中列出的每个元素创建一个场景. 使"
-"用实例化(通过代码或直接在编辑器中)实现从属关系."
+"在得到这样的图之后，建议你为其中的每一个元素都创建一个场景。而无论是通过代码"
+"还是直接通过编辑器来创建场景树，你都将会用到实例化的方法。"
 
-#, fuzzy
 msgid ""
 "Programmers tend to spend a lot of time designing abstract architectures and "
 "trying to fit components into it. Designing based on scenes makes "
@@ -300,18 +296,16 @@ msgid ""
 "using a design based on scene instantiation means you need little other "
 "architectural code."
 msgstr ""
-"编写游戏(或一般软件)的大量时间都被用于设计架构并使游戏组件适合该架构. 基于场"
-"景的设计取代了这种方法, 并使开发更快, 更直接, 能够让你去专注于游戏逻辑本身. "
-"因为大多数游戏组件都是直接映射到一个场景, 所以使用基于场景实例化的设计意味着"
-"需要很少的其他架构代码."
+"程序员们乐于花费大量时间来设计抽象的架构，尽力使得组件能够适用于这个架构。基"
+"于场景的设计取代了这种方法，使得开发更快、更直接，能够让你去专注于游戏逻辑本"
+"身。因为大多数游戏的组件都是直接映射成一个场景，所以使用基于场景实例化的设计"
+"意味着需要很少的其他架构代码。"
 
-#, fuzzy
 msgid ""
 "Here's the example of a scene diagram for an open-world game with tons of "
 "assets and nested elements:"
 msgstr ""
-"我们来看看另一个更复杂的开放世界类游戏的示例, 这个示例包括有很多素材和嵌套元"
-"素:"
+"这里是另一个更复杂的开放世界类游戏的示例，这个示例包括有很多素材和嵌套元素："
 
 msgid ""
 "Imagine we started by creating the room. We could make a couple of different "
@@ -326,15 +320,13 @@ msgstr ""
 "多实例化的房子和一个大的地形来创建一个城堡，我们将把城堡放在这个地形上。每一"
 "个场景都将是一个或多个子场景的实例。"
 
-#, fuzzy
 msgid ""
 "Later, we could create scenes representing guards and add them to the "
 "citadel. They would be indirectly added to the overall game world."
 msgstr ""
-"之后, 可以创建代表守卫(和其他NPC)的场景, 并将它们添加到城堡中. 因此, 它们将间"
-"接地添加到整个游戏世界中."
+"之后，我们可以创建代表守卫的场景，将它们加到城堡之中。也就会间接地加到了游戏"
+"世界里。"
 
-#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instantiate more scenes. We designed the editor to be "
@@ -342,10 +334,10 @@ msgid ""
 "development process can involve 2D or 3D artists, level designers, game "
 "designers, and animators, all working with the Godot editor."
 msgstr ""
-"使用Godot, 就可以很容易地像这样迭代你的游戏, 因为你需要做的就是创建和实例化更"
-"多的场景. 编辑器UI也被设计成对程序员和非程序员一样友好. 一个典型的团队开发过"
-"程会涉及2D或3D美术工作者, 关卡设计师, 游戏设计师, 和动画师, 他们都可以这个编"
-"辑器界面工作."
+"使用 Godot，就可以很容易地像这样迭代你的游戏，因为你需要做的就是创建并实例化"
+"更多的场景。我们将编辑器设计成了易于程序员、设计师、艺术家使用的形式。一个典"
+"型的团队开发过程会涉及 2D 或 3D 美术、关卡设计师、游戏设计师、动画师等，他们"
+"都可以用 Godot 编辑器工作。"
 
 msgid "Summary"
 msgstr "总结"
@@ -364,3 +356,7 @@ msgstr "一个构建和封装复杂系统的工具。"
 msgid ""
 "A language to think about your game project's structure in a natural way."
 msgstr "一种以自然方式思考游戏项目结构的语言。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

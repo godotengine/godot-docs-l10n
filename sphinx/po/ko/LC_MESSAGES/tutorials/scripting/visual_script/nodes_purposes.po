@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,9 +54,9 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
-"노드는 여전히 필요한 정보를 텍스트로 표시하지만, 편집은 *인스펙터(Inspecter)*"
-"\\ 를 통해 이루어집니다. 노드를 편집하려면, 아무 노드나 선택하고 *인스펙터"
-"(Inspecter)*\\ 에서 해당 속성을 편집합니다."
+"노드는 여전히 필요한 정보를 텍스트로 표시하지만, 편집은 *인스펙터"
+"(Inspecter)*\\ 를 통해 이루어집니다. 노드를 편집하려면, 아무 노드나 선택하고 "
+"*인스펙터(Inspecter)*\\ 에서 해당 속성을 편집합니다."
 
 msgid "Ports and connections"
 msgstr "포트 그리고 연결"
@@ -133,8 +133,8 @@ msgid ""
 "happens by dragging the *Input* away, while for *Sequence Ports*, this "
 "happens by dragging the *Output* away."
 msgstr ""
-"연결 해제는 좀 더 연습이 필요합니다. *데이터 포트*\\ 에서 연결 해제는 *입력*"
-"\\ 을 드래그 하는 것으로 이루어지는 반면, *시퀀스 포트*\\ 의 경우 *출력*\\ "
+"연결 해제는 좀 더 연습이 필요합니다. *데이터 포트*\\ 에서 연결 해제는 *입력"
+"*\\ 을 드래그 하는 것으로 이루어지는 반면, *시퀀스 포트*\\ 의 경우 *출력*\\ "
 "을 드래그 하는 것으로 이루어집니다."
 
 msgid ""
@@ -420,8 +420,8 @@ msgid ""
 "pressed."
 msgstr ""
 "액션 노드는 기기의 입력을 처리할 때 중요합니다. 액션에 대한 더 자세한 것은 "
-"(@TODO ACTION TUTE LINK)에서 볼 수 있습니다. 아래의 다음 예시는, \"move_right"
-"\" 액션이 눌렸을 때 컨트롤이 오른쪽으로 움직이는 것입니다."
+"(@TODO ACTION TUTE LINK)에서 볼 수 있습니다. 아래의 다음 예시는, "
+"\"move_right\" 액션이 눌렸을 때 컨트롤이 오른쪽으로 움직이는 것입니다."
 
 msgid "Engine Singleton"
 msgstr "엔진 싱글톤(Engine Singleton)"
@@ -827,3 +827,7 @@ msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr "처리 순서를 따르는 경우에 더 적합한 시퀀스 모드를 사용:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

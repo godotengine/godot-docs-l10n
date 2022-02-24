@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgstr ""
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
-msgstr "一旦下载后, 就可以使用编辑器中的 **安装导出模板** 选项进行安装:"
+msgstr "一旦下载后，就可以使用编辑器中的\\ **安装导出模板**\\ 选项进行安装："
 
 msgid "Export mode"
 msgstr "导出模式"
@@ -178,10 +178,10 @@ msgid "Export all resources in the project"
 msgstr "导出项目中的所有资源"
 
 msgid "Export selected scenes (and dependencies)"
-msgstr "导出选中的场景(包括依赖项)"
+msgstr "导出选中的场景（包括依赖项）"
 
 msgid "Export selected resources (and dependencies)"
-msgstr "导出选中的资源(包括依赖资源)"
+msgstr "导出选中的资源（包括依赖项）"
 
 msgid ""
 "**Export all resources in the project** will export every resource in the "
@@ -189,9 +189,9 @@ msgid ""
 "you a list of the scenes or resources in the project, and you have to select "
 "every scene or resource you want to export."
 msgstr ""
-"**Export all resources in the project** 将会导出项目中的每一个资源. **Export "
-"selected scenes** 和 **Export selected resources** 给予你一张项目中的场景或资"
-"源的清单, 并且需要选取每个想导出的场景或资源."
+"**导出项目中的所有资源**\\ 将会导出项目中的每一个资源。\\ **导出选中的场景"
+"**\\ 和\\ **导出选中的资源**\\ 会给你一张项目中的场景或资源的清单，你需要选取"
+"每个想导出的场景或资源。"
 
 msgid "Exporting from the command line"
 msgstr "从命令行导出"
@@ -206,7 +206,6 @@ msgstr ""
 "行参数来支持它. 从命令行导出仍需要导出预设来定义导出参数. 该命令的基本调用将"
 "是:"
 
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -214,34 +213,33 @@ msgid ""
 "The output path is relative to the project path or absolute; it does not "
 "respect the directory the command was invoked from."
 msgstr ""
-"假设有一个名为“Windows Desktop”的预设，并且可以找到该模板，它将导出为 "
-"``some_name.exe``\\ 。输出路径相对于项目路径或绝对路径；它不遵命令被调用时的"
-"目录。"
+"假设有一个名为“Windows Desktop”的预设，并且可以找到模板，它将导出为 "
+"``some_name.exe``\\ （如果导出预设的名字中存在空格或特殊字符，就必须放在引号"
+"里）。输出路径相对于项目路径或绝对路径；它不遵命令被调用时的目录。"
 
-#, fuzzy
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
 "single exported main pack file to be used with multiple Godot executables. "
 "When doing so, the export preset name must still be specified on the command "
 "line:"
 msgstr ""
-"您还可以将其配置为仅导出PCK或ZIP文件, 从而允许单个导出可以被多个Godot可执行文"
-"件使用. 如果目标名称以 ``.pck`` 或 ``.zip`` 结尾, 才会发生这种情况."
+"你还可以将其配置为\\ *仅*\\ 导出 PCK 或 ZIP 文件，能够让多个 Godot 可执行文件"
+"执行同一个导出的主包文件。这样做时，仍然必须在命令行中指明导出预设的名称："
 
-#, fuzzy
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, so that you do not need to ``cd`` to the project folder before running "
 "the command:"
 msgstr ""
-"将 ``--export`` 标志与 ``--path`` 标志组合起来通常很有用, 可为自动导出创建专"
-"用的导出预设:"
+"将 ``--export`` 标志与 ``--path`` 标志组合起来通常很有用，这样你就不必在运行"
+"命令之前 ``cd`` 到项目文件夹中了："
 
-#, fuzzy
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more information about using Godot "
 "from the command line."
-msgstr "更多 Godot 支持的命令行参数见 :ref:`doc_command_line_tutorial` 。"
+msgstr ""
+"关于从命令行使用 Godot 的更多信息，请参阅 :ref:"
+"`doc_command_line_tutorial`\\ 。"
 
 msgid "PCK versus ZIP pack file formats"
 msgstr "PCK 与 ZIP 打包文件格式对比"
@@ -255,10 +253,10 @@ msgstr ""
 "要, 您可能希望使用 ZIP."
 
 msgid "**PCK format:**"
-msgstr "**PCK格式:**"
+msgstr "**PCK 格式：**"
 
 msgid "Uncompressed format. Larger file size, but faster to read/write."
-msgstr "未压缩的格式. 文件尺寸更大, 但读写更快."
+msgstr "未压缩的格式。文件尺寸较大，但读写较快。"
 
 msgid ""
 "Not readable and writable using tools normally present on the user's "
@@ -269,10 +267,10 @@ msgstr ""
 "创建PCK文件, 但使用用户操作系统上通常存在的工具是不可读和不可写的."
 
 msgid "**ZIP format:**"
-msgstr "**ZIP格式:**"
+msgstr "**ZIP 格式：**"
 
 msgid "Compressed format. Smaller file size, but slower to read/write."
-msgstr "经过压缩, 尺寸更小, 但读写较慢."
+msgstr "压缩格式。文件尺寸较小，但读写较慢。"
 
 msgid ""
 "Readable and writable using tools normally present on the user's operating "
@@ -288,9 +286,10 @@ msgid ""
 "use it automatically. Therefore, you have to create a *launcher script* that "
 "the player can double-click or run from a terminal to launch the project::"
 msgstr ""
-"由于存在一个\\ `已知错误 <https://github.com/godotengine/godot/pull/42123>`__"
-"\\ ，当使用 ZIP 文件作为打包文件时，导出的二进制文件不会尝试自动使用它。因"
-"此，你需要创建一个\\ *启动脚本*\\ ，玩家可以双击它或从终端启动项目： ::"
+"由于存在一个\\ `已知错误 <https://github.com/godotengine/godot/"
+"pull/42123>`__\\ ，当使用 ZIP 文件作为打包文件时，导出的二进制文件不会尝试自"
+"动使用它。因此，你需要创建一个\\ *启动脚本*\\ ，玩家可以双击它或从终端启动项"
+"目： ::"
 
 msgid ""
 "Save the launcher script and place it in the same folder as the exported "
@@ -299,3 +298,7 @@ msgid ""
 msgstr ""
 "保存启动脚本, 并将它与导出的二进制文件放在同一文件夹中. 在Linux上, 请确保使"
 "用 ``chmod +x launch.sh`` 命令给予启动脚本可执行权限."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

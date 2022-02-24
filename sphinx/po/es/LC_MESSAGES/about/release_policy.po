@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,6 +209,10 @@ msgstr "~2021 (ver abajo)"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "\"inestable\" *Enfoque actual del desarrollo (inestable).*"
 
+#, fuzzy
+msgid "unstable"
+msgstr "Activar"
+
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
@@ -221,6 +225,10 @@ msgid ""
 msgstr ""
 "|soportado| *Beta.* Recibe nuevas características así como correcciones de "
 "errores mientras está en desarrollo."
+
+#, fuzzy
+msgid "supported"
+msgstr "Archivos soportados"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -242,12 +250,14 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "Abril de 2021"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|soportado| Recibe correcciones para errores, problemas de seguridad y "
-"soporte de plataforma, así como mejoras de usabilidad compatibles con "
-"versiones anteriores."
+"|parcial| Sólo recibe correcciones problemas de seguridad y soporte de "
+"plataforma."
+
+#, fuzzy
+msgid "partial"
+msgstr "Spatial"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -261,6 +271,10 @@ msgid ""
 msgstr ""
 "|eol| Ya no recibe soporte, ya que ha sido sustituido con la versión 3.3 "
 "compatible (Ultima actualización: 3.2.3)."
+
+#, fuzzy
+msgid "eol"
+msgstr "el"
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -368,3 +382,7 @@ msgstr ""
 "un lanzamiento en **2022**, pero es probable que cualquier estimación más "
 "cercana sea difícil de mantener. Las compilaciones alfa se publicarán tan "
 "pronto como se finalicen las características principales de Godot 4.0."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

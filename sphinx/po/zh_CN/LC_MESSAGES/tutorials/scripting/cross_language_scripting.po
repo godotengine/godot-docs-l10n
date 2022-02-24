@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,9 @@ msgid ""
 "you'll need to cast it as ``object``. Otherwise, each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
-"如您所见，如果被调用方法的第一个参数为数组类型，你需要强制转换成 ``object``"
-"\\ 。否则数组的每个元素将被当做单个参数传入，这将导致与被调用的函数签名参数不"
-"匹配。"
+"如您所见，如果被调用方法的第一个参数为数组类型，你需要强制转换成 "
+"``object``\\ 。否则数组的每个元素将被当做单个参数传入，这将导致与被调用的函数"
+"签名参数不匹配。"
 
 msgid "Inheritance"
 msgstr "继承"
@@ -181,3 +181,7 @@ msgstr ""
 "GDScript文件可能无法从C＃脚本继承. 同样地,C＃脚本可能无法从GDScript文件继承. "
 "由于实现起来非常复杂, 因此将来不太可能取消此限制. 详见 `这个 GitHub issue "
 "<https://github.com/godotengine/godot/issues/38352>`_ ."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

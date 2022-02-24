@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,65 +17,100 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Score and replay"
-msgstr "ScoreLabel"
+msgstr "Score et rejouer"
 
 msgid ""
 "In this part, we'll add the score, music playback, and the ability to "
 "restart the game."
 msgstr ""
+"Dans cette partie, nous ajouterons le score, la lecture de la musique et la "
+"possibilité de redémarrer le jeu."
 
 msgid ""
 "We have to keep track of the current score in a variable and display it on "
 "screen using a minimal interface. We will use a text label to do that."
 msgstr ""
+"Nous devons garder la trace du score actuel dans une variable et l'afficher "
+"à l'écran en utilisant une interface minimale. Nous allons utiliser une "
+"étiquette de texte pour ce faire."
 
 msgid ""
 "In the main scene, add a new *Control* node as a child of *Main* and name it "
 "*UserInterface*. You will automatically be taken to the 2D screen, where you "
 "can edit your User Interface (UI)."
 msgstr ""
+"Dans la scène principale, ajoutez un nouveau nœud *Control* comme enfant de "
+"*Main* et nommez-le *UserInterface*. Vous serez automatiquement amené à "
+"l'écran 2D, où vous pourrez modifier votre interface utilisateur (IU)."
 
 msgid "Add a *Label* node and rename it to *ScoreLabel*."
-msgstr ""
+msgstr "Ajoutez un nœud *Label* et renommez-le en *ScoreLabel*."
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
 "In the *Inspector*, set the *Label*'s *Text* to a placeholder like \"Score: "
 "0\"."
 msgstr ""
+"Dans l'*Inspecteur*, définissez le *Text* du *Label* avec un texte générique "
+"tel que \"Score : 0\"."
 
 msgid "|image1|"
+msgstr "|image1|"
+
+#, fuzzy
+msgid "image1"
 msgstr "|image1|"
 
 msgid ""
 "Also, the text is white by default, like our game's background. We need to "
 "change its color to see it at runtime."
 msgstr ""
+"En outre, le texte est blanc par défaut, comme l'arrière-plan de notre jeu. "
+"Nous devons changer sa couleur pour le voir au moment de l'exécution."
 
 msgid ""
 "Scroll down to *Custom Colors* and click the black box next to *Font Color* "
 "to tint the text."
 msgstr ""
+"Faites défiler l'écran jusqu'à *Custom Colors* et cliquez sur la case noire "
+"à côté de *Font Color* pour teinter le texte."
 
 msgid "|image2|"
 msgstr "|image2|"
 
+#, fuzzy
+msgid "image2"
+msgstr "|image2|"
+
 msgid "Pick a dark tone so it contrasts well with the 3D scene."
-msgstr ""
+msgstr "Choisissez un ton sombre pour qu'il contraste bien avec la scène 3D."
 
 msgid "|image3|"
+msgstr "|image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "|image3|"
 
 msgid ""
 "Finally, click and drag on the text in the viewport to move it away from the "
 "top-left corner."
 msgstr ""
+"Enfin, cliquez et faites glisser le texte dans la fenêtre d'affichage pour "
+"l'éloigner du coin supérieur gauche."
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
@@ -83,17 +118,26 @@ msgid ""
 "tree and use a theme resource that will propagate to all its children. We'll "
 "use it to set our game's font."
 msgstr ""
+"Le nœud *UserInterface* nous permet de regrouper notre interface utilisateur "
+"dans une branche de l'arbre de scène et d'utiliser une ressource de thème "
+"qui se propagera à tous ses enfants. Nous allons l’utiliser pour définir la "
+"police de caractères de notre jeu."
 
-#, fuzzy
 msgid "Creating a UI theme"
-msgstr "Création d'un thème"
+msgstr "Création d'un thème d'interface utilisateur"
 
 msgid ""
 "Once again, select the *UserInterface* node. In the *Inspector*, create a "
 "new theme resource in *Theme -> Theme*."
 msgstr ""
+"Une fois encore, sélectionnez le nœud *UserInterface*. Dans l'*Inspecteur*, "
+"créez une nouvelle ressource de thème dans *Theme -> Theme*."
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid ""
@@ -101,60 +145,97 @@ msgid ""
 "preview of how all the built-in UI widgets will look with your theme "
 "resource."
 msgstr ""
+"Cliquez dessus pour ouvrir l'éditeur de thème dans le panneau inférieur. Il "
+"vous donne un aperçu de l'apparence de tous les widgets intégrés à "
+"l'interface utilisateur avec votre ressources de thème."
 
 msgid "|image6|"
 msgstr "|image6|"
 
+#, fuzzy
+msgid "image6"
+msgstr "|image6|"
+
 msgid "By default, a theme only has one property, the *Default Font*."
 msgstr ""
+"Par défaut, un thème ne possède qu'une seule propriété, la *Default Font*."
 
 msgid ""
 "You can add more properties to the theme resource to design complex user "
 "interfaces, but that is beyond the scope of this series. To learn more about "
 "creating and editing themes, see :ref:`doc_gui_skinning`."
 msgstr ""
+"Vous pouvez ajouter d'autres propriétés à la ressource de thème pour "
+"concevoir des interfaces utilisateur complexes, mais cela dépasse le cadre "
+"de cette série. Pour en savoir plus sur la création et l'édition de thèmes, "
+"consultez :ref:`doc_gui_skinning`."
 
 msgid "Click the *Default Font* property and create a new *DynamicFont*."
 msgstr ""
+"Cliquez sur la propriété *Default Font* et créez une nouvelle *DynamicFont*."
 
 msgid "|image7|"
+msgstr "|image7|"
+
+#, fuzzy
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
 "Expand the *DynamicFont* by clicking on it and expand its *Font* section. "
 "There, you will see an empty *Font Data* field."
 msgstr ""
+"Développez la *DynamicFont* en cliquant dessus et développez sa section "
+"*Font*. Vous y verrez un champ vide *Font Data*."
 
 msgid "|image8|"
+msgstr "|image8|"
+
+#, fuzzy
+msgid "image8"
 msgstr "|image8|"
 
 msgid ""
 "This one expects a font file like the ones you have on your computer. Two "
 "common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
 msgstr ""
+"Celui-ci attend un fichier de police comme ceux que vous avez sur votre "
+"ordinateur. Les deux formats de fichiers de police les plus courants sont "
+"TrueType Font (TTF) et OpenType Font (OTF)."
 
 msgid ""
 "In the *FileSystem* dock, Expand the ``fonts`` directory and click and drag "
 "the ``Montserrat-Medium.ttf`` file we included in the project onto the *Font "
 "Data*. The text will reappear in the theme preview."
 msgstr ""
+"Dans le dock *FileSystem*, développez le répertoire ``fonts`` et cliquez et "
+"faites glisser le fichier ``Montserrat-Medium.ttf`` que nous avons inclus "
+"dans le projet sur le *Font Data*. Le texte réapparaîtra dans l'aperçu du "
+"thème."
 
 msgid ""
 "The text is a bit small. Set the *Settings -> Size* to ``22`` pixels to "
 "increase the text's size."
 msgstr ""
+"Le texte est un peu petit. Réglez le paramètre *Settings -> Size* sur ``22`` "
+"pixels pour augmenter la taille du texte."
 
 msgid "|image9|"
 msgstr "|image9|"
 
 #, fuzzy
+msgid "image9"
+msgstr "|image9|"
+
 msgid "Keeping track of the score"
-msgstr "Obtention des données depuis les serveurs"
+msgstr "Garder une trace du score"
 
 msgid ""
 "Let's work on the score next. Attach a new script to the *ScoreLabel* and "
 "define the ``score`` variable."
 msgstr ""
+"Travaillons ensuite sur le score. Attachez un nouveau script au *ScoreLabel* "
+"et définissez la variable ``score``."
 
 msgid ""
 "The score should increase by ``1`` every time we squash a monster. We can "
@@ -162,43 +243,63 @@ msgid ""
 "instantiate monsters from the code, we cannot do the connection in the "
 "editor."
 msgstr ""
+"Le score devrait augmenter de ``1`` chaque fois que nous écrasons un "
+"monstre. Nous pouvons utiliser leur ``squashed`` signal pour savoir quand "
+"cela se produit. Cependant, comme nous instancions les monstres à partir du "
+"code, nous ne pouvons pas faire la connexion dans l'éditeur."
 
 msgid ""
 "Instead, we have to make the connection from the code every time we spawn a "
 "monster."
 msgstr ""
+"Au lieu de cela, nous devons établir la connexion depuis le code à chaque "
+"fois que nous créons un monstre."
 
 msgid ""
 "Open the script ``Main.gd``. If it's still open, you can click on its name "
 "in the script editor's left column."
 msgstr ""
+"Ouvrez le script ``Main.gd``. S'il est toujours ouvert, vous pouvez cliquer "
+"sur son nom dans la colonne de gauche de l'éditeur de script."
 
 msgid "|image10|"
+msgstr "|image10|"
+
+#, fuzzy
+msgid "image10"
 msgstr "|image10|"
 
 msgid ""
 "Alternatively, you can double-click the ``Main.gd`` file in the *FileSystem* "
 "dock."
 msgstr ""
+"Vous pouvez également double-cliquer sur le fichier ``Main.gd`` dans le dock "
+"*FileSystem*."
 
 msgid ""
 "At the bottom of the ``_on_MobTimer_timeout()`` function, add the following "
 "line."
 msgstr ""
+"Au bas de la fonction ``_on_MobTimer_timeout()``, ajoutez la ligne suivante."
 
 msgid ""
 "This line means that when the mob emits the ``squashed`` signal, the "
 "*ScoreLabel* node will receive it and call the function "
 "``_on_Mob_squashed()``."
 msgstr ""
+"Cette ligne signifie que lorsque le mob émet le signal ``squashed``, le "
+"noeud *ScoreLabel* le recevra et appellera la fonction "
+"``_on_Mob_squashed()``."
 
 msgid ""
 "Head back to the ``ScoreLabel.gd`` script to define the "
 "``_on_Mob_squashed()`` callback function."
 msgstr ""
+"Retournez au script ``ScoreLabel.gd`` pour définir la fonction de rappel "
+"``_on_Mob_squashed()``."
 
 msgid "There, we increment the score and update the displayed text."
-msgstr ""
+msgstr "Là, nous incrémentons le score et mettons à jour le texte affiché."
 
 msgid ""
 "The second line uses the value of the ``score`` variable to replace the "
@@ -206,17 +307,28 @@ msgid ""
 "values to text, which is convenient to output text in labels or using the "
 "``print()`` function."
 msgstr ""
+"La deuxième ligne utilise la valeur de la variable ``score`` pour remplacer "
+"le caractère générique ``%s``. En utilisant cette fonction, Godot convertit "
+"automatiquement les valeurs en texte, ce qui est pratique pour sortir du "
+"texte dans les étiquettes ou en utilisant la fonction ``print()``."
 
-#, fuzzy
 msgid ""
 "You can learn more about string formatting here: :ref:`doc_gdscript_printf`."
-msgstr "GDScript prend également en charge :ref:`doc_gdscript_printf`."
+msgstr ""
+"Vous pouvez en savoir plus sur le formatage des chaînes de caractères ici : :"
+"ref:`doc_gdscript_printf`."
 
 msgid ""
 "You can now play the game and squash a few enemies to see the score increase."
 msgstr ""
+"Vous pouvez maintenant jouer le jeu et écraser quelques ennemis pour voir le "
+"score augmenter."
 
 msgid "|image11|"
+msgstr "|image11|"
+
+#, fuzzy
+msgid "image11"
 msgstr "|image11|"
 
 msgid ""
@@ -226,15 +338,23 @@ msgid ""
 "object. But when prototyping or when your project is simple, it is fine to "
 "keep your code simple. Programming is always a balancing act."
 msgstr ""
+"Dans un jeu complexe, vous voudrez peut-être séparer complètement votre "
+"interface utilisateur de l'univers du jeu. Dans ce cas, vous ne garderez pas "
+"trace du score sur l'étiquette. Au lieu de cela, vous voudrez peut-être le "
+"stocker dans un objet distinct et dédié. Mais pour le prototypage ou lorsque "
+"votre projet est simple, il est bon de garder votre code simple. La "
+"programmation est toujours un exercice d'équilibre."
 
-#, fuzzy
 msgid "Retrying the game"
-msgstr "Démarrage du jeu"
+msgstr "Réessayer le jeu"
 
 msgid ""
 "We'll now add the ability to play again after dying. When the player dies, "
 "we'll display a message on the screen and wait for input."
 msgstr ""
+"Nous allons maintenant ajouter la possibilité de rejouer après être mort. "
+"Lorsque le joueur meurt, nous affichons un message à l'écran et nous "
+"attendons une entrée."
 
 msgid ""
 "Head back to the *Main* scene, select the *UserInterface* node, add a "
@@ -242,27 +362,47 @@ msgid ""
 "rectangle with a uniform color and will serve as an overlay to darken the "
 "screen."
 msgstr ""
+"Revenez à la scène *Main*, sélectionnez le noeud *UserInterface*, ajoutez un "
+"noeud *ColorRect* comme enfant de celui-ci et nommez-le *Retry*. Ce nœud "
+"remplit un rectangle avec une couleur uniforme et servira de superposition "
+"pour assombrir l'écran."
 
 msgid ""
 "To make it span over the whole viewport, you can use the *Layout* menu in "
 "the toolbar."
 msgstr ""
+"Pour qu'il s'étende sur toute la fenêtre, vous pouvez utiliser le menu "
+"*Layout* de la barre d'outils."
 
 msgid "|image12|"
 msgstr "|image12|"
 
+#, fuzzy
+msgid "image12"
+msgstr "|image12|"
+
 msgid "Open it and apply the *Full Rect* command."
-msgstr ""
+msgstr "Ouvrez-le et appliquez la commande *Full Rect*."
 
 msgid "|image13|"
+msgstr "|image13|"
+
+#, fuzzy
+msgid "image13"
 msgstr "|image13|"
 
 msgid ""
 "Nothing happens. Well, almost nothing: only the four green pins move to the "
 "corners of the selection box."
 msgstr ""
+"Rien ne se passe. Enfin, presque rien : seules les quatre broches vertes se "
+"déplacent vers les coins de la boîte de sélection."
 
 msgid "|image14|"
+msgstr "|image14|"
+
+#, fuzzy
+msgid "image14"
 msgstr "|image14|"
 
 msgid ""
@@ -270,11 +410,18 @@ msgid ""
 "and margins relative to their parent's bounding box. Here, the "
 "*UserInterface* node has a small size and the *Retry* one is limited by it."
 msgstr ""
+"En effet, les nœuds d'interface utilisateur (tous ceux qui ont une icône "
+"verte) fonctionnent avec des ancres et des marges relatives à la boîte "
+"englobante de leur parent. Ici, le nœud *UserInterface* a une petite taille "
+"et le nœud *Retry* est limité par celle-ci."
 
 msgid ""
 "Select the *UserInterface* and apply *Layout -> Full Rect* to it as well. "
 "The *Retry* node should now span the whole viewport."
 msgstr ""
+"Sélectionnez *UserInterface* et appliquez *Layout -> Full Rect* à celle-ci "
+"également. Le nœud *Retry* devrait maintenant couvrir la totalité de la "
+"fenêtre."
 
 msgid ""
 "Let's change its color so it darkens the game area. Select *Retry* and in "
@@ -282,71 +429,102 @@ msgid ""
 "do so, in the color picker, drag the *A* slider to the left. It controls the "
 "color's alpha channel, that is to say, its opacity."
 msgstr ""
+"Changeons sa couleur pour qu'il assombrisse la zone de jeu. Sélectionnez "
+"*Retry* et dans l'*Inspecteur*, définissez sa *Couleur* sur quelque chose de "
+"sombre et de transparent. Pour ce faire, dans le sélecteur de couleurs, "
+"faites glisser le curseur *A* vers la gauche. Il contrôle le canal alpha de "
+"la couleur, c'est-à-dire son opacité."
+
+msgid "|image15|"
+msgstr "|image15|"
 
 #, fuzzy
-msgid "|image15|"
-msgstr "|image1|"
+msgid "image15"
+msgstr "|image15|"
 
 msgid ""
 "Next, add a *Label* as a child of *Retry* and give it the *Text* \"Press "
 "Enter to retry.\""
 msgstr ""
+"Ensuite, ajoutez un *Label* en tant qu'enfant de *Retry* et donnez-lui le "
+"*Text* \"Press Enter to retry.\""
+
+msgid "|image16|"
+msgstr "|image16|"
 
 #, fuzzy
-msgid "|image16|"
-msgstr "|image1|"
+msgid "image16"
+msgstr "|image16|"
 
 msgid ""
 "To move it and anchor it in the center of the screen, apply *Layout -> "
 "Center* to it."
 msgstr ""
+"Pour le déplacer et l'ancrer au centre de l'écran, appliquez-lui *Layout -> "
+"Center*."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
 #, fuzzy
+msgid "image17"
+msgstr "|image17|"
+
 msgid "Coding the retry option"
-msgstr "Personnalisation de la présentation"
+msgstr "Coder l'option réessayer"
 
 msgid ""
 "We can now head to the code to show and hide the *Retry* node when the "
 "player dies and plays again."
 msgstr ""
+"Nous pouvons maintenant nous diriger vers le code pour afficher et cacher le "
+"nœud *Retry* lorsque le joueur meurt et rejoue."
 
 msgid ""
 "Open the script ``Main.gd``. First, we want to hide the overlay at the start "
 "of the game. Add this line to the ``_ready()`` function."
 msgstr ""
+"Ouvrez le script ``Main.gd``. Tout d'abord, nous voulons cacher l'overlay au "
+"début du jeu. Ajoutez cette ligne à la fonction ``_ready()``."
 
 msgid "Then, when the player gets hit, we show the overlay."
-msgstr ""
+msgstr "Ensuite, quand le joueur est touché, nous montrons la surimpression."
 
 msgid ""
 "Finally, when the *Retry* node is visible, we need to listen to the player's "
 "input and restart the game if they press enter. To do this, we use the built-"
 "in ``_unhandled_input()`` callback."
 msgstr ""
+"Enfin, lorsque le noeud *Retry* est visible, nous devons écouter l'entrée du "
+"joueur et redémarrer le jeu s'il appuie sur Entrée. Pour ce faire, nous "
+"utilisons le callback intégré ``_unhandled_input()``."
 
 msgid ""
 "If the player pressed the predefined ``ui_accept`` input action and *Retry* "
 "is visible, we reload the current scene."
 msgstr ""
+"Si le joueur a appuyé sur l'action d'entrée prédéfinie ``ui_accept`` et que "
+"*Retry* est visible, nous rechargeons la scène actuelle."
 
 msgid ""
 "The function ``get_tree()`` gives us access to the global :ref:`SceneTree "
 "<class_SceneTree>` object, which allows us to reload and restart the current "
 "scene."
 msgstr ""
+"La fonction ``get_tree()`` nous donne accès à l'objet global :ref:`SceneTree "
+"<class_SceneTree>`, qui nous permet de recharger et de redémarrer la scène "
+"actuelle."
 
-#, fuzzy
 msgid "Adding music"
-msgstr "Ajouter des sons"
+msgstr "Ajouter de la musique"
 
 msgid ""
 "To add music that plays continuously in the background, we're going to use "
 "another feature in Godot: :ref:`autoloads <doc_singletons_autoload>`."
 msgstr ""
+"Pour ajouter une musique qui joue continuellement en arrière-plan, nous "
+"allons utiliser une autre fonctionnalité de Godot : :ref:`autoloads "
+"<doc_singletons_autoload>`."
 
 msgid ""
 "To play audio, all you need to do is add an *AudioStreamPlayer* node to your "
@@ -354,29 +532,48 @@ msgid ""
 "automatically. However, when you reload the scene, like we do to play again, "
 "the audio nodes are also reset, and the music starts back from the beginning."
 msgstr ""
+"Pour lire de l'audio, il suffit d'ajouter un nœud *AudioStreamPlayer* à "
+"votre scène et d'y attacher un fichier audio. Lorsque vous démarrez la "
+"scène, elle peut jouer automatiquement. Cependant, lorsque vous rechargez la "
+"scène, comme nous le faisons pour jouer à nouveau, les nœuds audio sont "
+"également réinitialisés, et la musique reprend depuis le début."
 
 msgid ""
 "You can use the autoload feature to have Godot load a node or a scene "
 "automatically at the start of the game, outside the current scene. You can "
 "also use it to create globally accessible objects."
 msgstr ""
+"Vous pouvez utiliser la fonction autoload pour que Godot charge "
+"automatiquement un nœud ou une scène au début du jeu, en dehors de la scène "
+"actuelle. Vous pouvez également l'utiliser pour créer des objets accessibles "
+"à tous."
 
 msgid ""
 "Create a new scene by going to the *Scene* menu and clicking *New Scene*."
 msgstr ""
+"Créez une nouvelle scène en allant dans le menu *Scène* et en cliquant sur "
+"*Nouvelle scène*."
+
+msgid "|image18|"
+msgstr "|image18|"
 
 #, fuzzy
-msgid "|image18|"
-msgstr "|image1|"
+msgid "image18"
+msgstr "|image18|"
 
 msgid ""
 "Click the *Other Node* button to create an *AudioStreamPlayer* and rename it "
 "to *MusicPlayer*."
 msgstr ""
+"Cliquez sur le bouton *Autre nœud* pour créer un *AudioStreamPlayer* et le "
+"renommer en *MusicPlayer*."
+
+msgid "|image19|"
+msgstr "|image19|"
 
 #, fuzzy
-msgid "|image19|"
-msgstr "|image1|"
+msgid "image19"
+msgstr "|image19|"
 
 msgid ""
 "We included a music soundtrack in the ``art/`` directory, ``House In a "
@@ -384,67 +581,101 @@ msgid ""
 "*Inspector*. Also, turn on *Autoplay* so the music plays automatically at "
 "the start of the game."
 msgstr ""
+"Nous avons inclus une bande sonore dans le répertoire ``art/``, ``House In a "
+"Forest Loop.ogg``. Cliquez et faites-la glisser sur la propriété *Stream* "
+"dans l'*Inspector*. Activez également l'option *Autoplay* pour que la "
+"musique soit jouée automatiquement au début du jeu."
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
 
 #, fuzzy
+msgid "image20"
+msgstr "|image20|"
+
 msgid "Save the scene as ``MusicPlayer.tscn``."
-msgstr "Enfin, sauvegardez la scène avec un nom tel que ``sayhello.tscn``."
+msgstr "Enregistrez la scène sous le nom de ``MusicPlayer.tscn``."
 
-#, fuzzy
 msgid ""
 "We have to register it as an autoload. Head to the *Project -> Project "
 "Settings…* menu and click on the *Autoload* tab."
 msgstr ""
-"Pour charger automatiquement une scène ou un script, sélectionnez **Projet -"
-"> Paramètres du projet** depuis le menu puis allez à l'onglet **AutoLoad**."
+"Nous devons l'enregistrer en tant qu'autoload. Allez dans le menu *Projet -> "
+"Paramètres du projet...* et cliquez sur l'onglet *Autoload*."
 
 msgid ""
 "In the *Path* field, you want to enter the path to your scene. Click the "
 "folder icon to open the file browser and double-click on ``MusicPlayer."
 "tscn``. Then, click the *Add* button on the right to register the node."
 msgstr ""
+"Dans le champ *Chemin*, vous voulez entrer le chemin d'accès à votre scène. "
+"Cliquez sur l'icône du dossier pour ouvrir le navigateur de fichiers et "
+"double-cliquez sur ``MusicPlayer.tscn``. Ensuite, cliquez sur le bouton "
+"*Add* à droite pour enregistrer le nœud."
+
+msgid "|image21|"
+msgstr "|image21|"
 
 #, fuzzy
-msgid "|image21|"
-msgstr "|image2|"
+msgid "image21"
+msgstr "|image21|"
 
 msgid ""
 "If you run the game now, the music will play automatically. And even when "
 "you lose and retry, it keeps going."
 msgstr ""
+"Si vous lancez le jeu maintenant, la musique jouera automatiquement. Et même "
+"si vous perdez et réessayez, elle continue."
 
 msgid ""
 "Before we wrap up this lesson, here's a quick look at how it works under the "
 "hood. When you run the game, your *Scene* dock changes to give you two tabs: "
 "*Remote* and *Local*."
 msgstr ""
+"Avant de conclure cette leçon, voici un bref aperçu de son fonctionnement. "
+"Lorsque vous lancez le jeu, votre dock *Scene* change pour vous donner deux "
+"onglets : *Remote* et *Local*."
+
+msgid "|image22|"
+msgstr "|image22|"
 
 #, fuzzy
-msgid "|image22|"
-msgstr "|image2|"
+msgid "image22"
+msgstr "|image22|"
 
 msgid ""
 "The *Remote* tab allows you to visualize the node tree of your running game. "
 "There, you will see the *Main* node and everything the scene contains and "
 "the instantiated mobs at the bottom."
 msgstr ""
+"L'onglet *Remote* vous permet de visualiser l'arbre de nœuds de votre jeu en "
+"cours. Vous y verrez le nœud *Main* et tout ce que la scène contient ainsi "
+"que les mobs instanciés en bas."
+
+msgid "|image23|"
+msgstr "|image23|"
 
 #, fuzzy
-msgid "|image23|"
-msgstr "|image2|"
+msgid "image23"
+msgstr "|image23|"
 
 msgid ""
 "At the top are the autoloaded *MusicPlayer* and a *root* node, which is your "
 "game's viewport."
 msgstr ""
+"Au sommet se trouvent le *MusicPlayer* autochargé et un noeud *root*, qui "
+"est le viewport de votre jeu."
 
 msgid ""
 "And that does it for this lesson. In the next part, we'll add an animation "
 "to make the game both look and feel much nicer."
 msgstr ""
+"Et c'est tout pour cette leçon. Dans la prochaine partie, nous ajouterons "
+"une animation pour rendre le jeu plus agréable à regarder et à toucher."
 
 msgid "Here is the complete ``Main.gd`` script for reference."
-msgstr ""
+msgstr "Voici le script complet ``Main.gd`` pour référence."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "Check for input."
 msgstr "Controlla per input."
 
 msgid "Move in the given direction."
-msgstr "Muovi nella direzione assegnata."
+msgstr "Muoversi nella direzione data."
 
 msgid "Play the appropriate animation."
 msgstr "Esegui l'animazione appropriata."
@@ -157,7 +157,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Your input map tab should look like this:"
-msgstr "Il tuo percorso dovrebbe assomigliare a questo."
+msgstr "La scheda della mappa di input dovrebbe essere simile a questa:"
 
 msgid "Click the \"Close\" button to close the project settings."
 msgstr ""
@@ -222,12 +222,13 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$`` è la versione breve per ``get_node()``. Quindi nel codice sopra, ``"
-"$AnimatedSprite.play()`` è uguale a ``get_node(\"AnimatedSprite\").play()``."
+"``$`` è la versione breve per ``get_node()``. Quindi nel codice sopra, "
+"``$AnimatedSprite.play()`` è uguale a ``get_node(\"AnimatedSprite\")."
+"play()``."
 
 #, fuzzy
 msgid ""
@@ -237,8 +238,8 @@ msgid ""
 msgstr ""
 "In GDScript, ``$`` ritorna il percorso relativo del nodo che ci serve dal "
 "nodo corrente, altrimenti ritorna ``null`` se il nodo non è stato trovato. "
-"Siccome AnimatedSprite è figlio del nodo corrente, possiamo usare ``"
-"$AnimatedSprite``."
+"Siccome AnimatedSprite è figlio del nodo corrente, possiamo usare "
+"``$AnimatedSprite``."
 
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
@@ -273,7 +274,7 @@ msgstr ""
 "sullo schermo in tutte le direzioni."
 
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr "Se si ottiene un errore nel pannello \"Debugger\" che dice"
+msgstr "Se ottieni un errore nel pannello \"Debugger\" che dice"
 
 msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
@@ -289,8 +290,8 @@ msgid ""
 "in the scene tree."
 msgstr ""
 "questo probabilmente significa che hai scritto il nome del nodo "
-"AnimatedSprite in modo sbagliato. I nomi dei nodi sono case-sensitive e ``"
-"$NomeNodo`` deve corrispondere al nome che vedi nello scene tree."
+"AnimatedSprite in modo sbagliato. I nomi dei nodi sono case-sensitive e "
+"``$NomeNodo`` deve corrispondere al nome che vedi nello scene tree."
 
 msgid "Choosing animations"
 msgstr "Scegliere le animazioni"
@@ -329,8 +330,8 @@ msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
 msgstr ""
-"Riprodurre la scena e verificare che le animazioni siano corrette in "
-"ciascuna delle direzioni."
+"Riproduci la scena e verifica che le animazioni siano corrette in ciascuna "
+"delle direzioni."
 
 msgid ""
 "A common mistake here is to type the names of the animations wrong. The "
@@ -349,10 +350,10 @@ msgid ""
 msgstr ""
 "Quando sei sicuro che il movimento stia funzionando correttamente, aggiungi "
 "questa linea a ``_ready()``, così che il player sarà nascosto quando il "
-"gioco inizia:"
+"gioco ha inizio:"
 
 msgid "Preparing for collisions"
-msgstr "Preparazione per le collisioni"
+msgstr "Preparare per le collisioni"
 
 msgid ""
 "We want ``Player`` to detect when it's hit by an enemy, but we haven't made "
@@ -400,7 +401,7 @@ msgid ""
 "Add this code to the function:"
 msgstr ""
 "Notare l'icona verde che indica che a questa funzione è collegato un "
-"segnale. Aggiungere questo codice alla funzione:"
+"segnale. Aggiungi questo codice alla funzione:"
 
 msgid ""
 "Each time an enemy hits the player, the signal is going to be emitted. We "
@@ -430,3 +431,7 @@ msgstr ""
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,6 +105,10 @@ msgstr ""
 "Vous avez probablement déjà stockée un nœud dans une variable et tapé un "
 "point pour se retrouver avec aucune suggestion de saisie automatique :"
 
+#, fuzzy
+msgid "code completion options for dynamic"
+msgstr "Forcer l'achèvement (facultatif)"
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -114,6 +118,10 @@ msgstr ""
 "de valeur vous transmettez à la fonction. Cependant, si vous écrivez le type "
 "explicitement, vous obtiendrez toutes les méthodes et variables publiques du "
 "nœud :"
+
+#, fuzzy
+msgid "code completion options for typed"
+msgstr "Forcer l'achèvement (facultatif)"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -150,8 +158,8 @@ msgid ""
 "the variable's type to always stay the same:"
 msgstr ""
 "Pour définir le type d'une variable ou d'une constante, écrivez deux points "
-"après le nom de la variable, suivi de son type. Par exemple : ``var health: "
-"int``. Ceci force le type de la variable à rester toujours le même :"
+"après le nom de la variable, suivi de son type. Par exemple : ``var health: "
+"int``. Ceci force le type de la variable à rester toujours le même :"
 
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
@@ -171,12 +179,11 @@ msgstr ""
 "Classes et nœuds de base (``Object``, ``Node``, ``Area2D``, ``Camera2D``, "
 "etc.)"
 
-#, fuzzy
 msgid ""
 "Your own custom classes. Look at the new :ref:`class_name "
 "<doc_gdscript_basics_class_name>` feature to register types in the editor."
 msgstr ""
-"Vos propres classes personnalisées. Regarder la nouvelle fonctionnalité :ref:"
+"Vos propres classes personnalisées. Regarder la nouvelle fonctionnalité :ref:"
 "`class_name <doc_scripting_continued_class_name>` pour enregistrer des types "
 "dans l'éditeur."
 
@@ -299,8 +306,8 @@ msgid ""
 "node's type as long as it has the methods you need to call."
 msgstr ""
 "Cela se produit lorsque vous avez un nœud enfant. Prenons un timer par "
-"exemple : avec du code dynamique, vous pouvez obtenir le nœud avec ``"
-"$Timer``. GDScript supporte le `duck-typing <https://stackoverflow.com/"
+"exemple : avec du code dynamique, vous pouvez obtenir le nœud avec "
+"``$Timer``. GDScript supporte le `duck-typing <https://stackoverflow.com/"
 "a/4205163/8125343>`__, donc même si votre timer est de type ``Timer``, c'est "
 "aussi un ``Node`` et un ``Object``, deux classes auxquelles il appartient. "
 "Avec le GDScript dynamique, vous ne vous souciez pas non plus du type du "
@@ -317,6 +324,9 @@ msgstr ""
 "``($Player as KinematicBody2D)``, etc. Godot s'assurera que le type "
 "fonctionne et si c'est le cas, le numéro de ligne deviendra vert à gauche de "
 "l'éditeur de script."
+
+msgid "Unsafe vs Safe Line"
+msgstr ""
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Ligne non sécurisée (ligne 7) contre ligne sécurisée (lignes 6 et 8)"
@@ -465,3 +475,7 @@ msgstr ""
 "courantes et à créer des systèmes évolutifs. À l'avenir, les types statiques "
 "apporteront également de belles performances grâce aux optimisations à venir "
 "du compilateur."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

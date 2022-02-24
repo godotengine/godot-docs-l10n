@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Finishing up"
 msgstr "Dokončení"
 
-#, fuzzy
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience."
@@ -109,13 +108,12 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -127,15 +125,14 @@ msgstr ""
 "v Inspektoru. Vyberte „New shortcut“ a klikněte na položku „Shortcut“. "
 "Zobrazí se druhá vlastnost *Shortcut*. Vyberte „Nový InputEventAction“ a "
 "klikněte na nový „InputEventAction“. Nakonec do vlastnosti *Action* zadejte "
-"název ``ui_select``. Toto je výchozí vstupní událost spojená s mezerníkem."
+"název Nakonec do vlastnosti *Action* zadejte název ``start_game``."
 
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Enter` to start the game."
 msgstr ""
 "Nyní, když se objeví tlačítko Start, můžete na něj buď kliknout, nebo "
-"stisknout :kbd:`Space` pro spuštění hry."
+"stisknout :kbd:`Enter` pro spuštění hry."
 
 msgid "And with that, you completed your first 2D game in Godot."
 msgstr ""
@@ -155,3 +152,7 @@ msgid ""
 "And when you're ready, you can move on to :ref:`doc_your_first_3d_game` to "
 "learn to create a complete 3D game from scratch, in Godot."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

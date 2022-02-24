@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,8 +176,8 @@ msgstr ""
 "В зависимости от типа шейдера различные функции процессора могут быть "
 "опционально переопределены. Для \"spatial\" (\"пространственный\") и "
 "\"canvas_item\" (\"элемент холста\") можно переопределить ``vertex`` "
-"(вершину), ``fragment`` (фрагмент) и ``light`` (свет). Для \"particles"
-"\" (\"частиц\") можно переопределить только ``vertex``."
+"(вершину), ``fragment`` (фрагмент) и ``light`` (свет). Для "
+"\"particles\" (\"частиц\") можно переопределить только ``vertex``."
 
 msgid "Vertex processor"
 msgstr "Вершинный процессор"
@@ -214,12 +214,9 @@ msgstr ""
 msgid "Fragment processor"
 msgstr "Фрагментный процессор"
 
-msgid ""
-"The ``fragment()`` processing function is used to set up the Godot material"
-msgstr ""
-
 #, fuzzy
 msgid ""
+"The ``fragment()`` processing function is used to set up the Godot material "
 "parameters per pixel. This code runs on every visible pixel the object or "
 "primitive draws. It is only available in ``spatial`` and ``canvas_item`` "
 "shaders."
@@ -285,3 +282,7 @@ msgstr ""
 "работает в каждом из них, можно найти в их документации :ref:`CanvasItem "
 "shaders <doc_canvas_item_shader>` и :ref:`Spatial shaders "
 "<doc_spatial_shader>` соответственно."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

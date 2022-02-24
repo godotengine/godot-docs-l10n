@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,7 +164,7 @@ msgstr ""
 msgid ""
 "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
 "from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
-"``godot-lib.4.0.stable.aar``)."
+"``godot-lib.3.4.2.stable.release.aar``)."
 msgstr ""
 "ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
 "要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
@@ -185,14 +185,12 @@ msgstr ""
 "プラグインモジュールの ``build.gradle`` ファイルで、Godotエンジンライブラリの"
 "依存関係行の ``implementation`` を ``compileOnly`` に置き換えます。"
 
-#, fuzzy
 msgid ""
-"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
-"from the `Godot download page <https://godotengine.org/download>`_ (e.g.: "
-"``godot-lib.3.2.2.stable.aar``)."
+"Create a new class in the plugin module and make sure it extends ``org."
+"godotengine.godot.plugin.GodotPlugin``. At runtime, it will be used to "
+"instantiate a singleton object that will be used by the Godot engine to "
+"load, initialize and run the plugin."
 msgstr ""
-"ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
-"要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
 
 msgid "Update the plugin ``AndroidManifest.xml`` file:"
 msgstr "プラグイン ``AndroidManifest.xml`` ファイルを更新します:"
@@ -253,21 +251,8 @@ msgstr ""
 msgid "The configuration file format is as follow::"
 msgstr "CSVファイルは次の形式にする必要があります:"
 
-msgid "[dependencies]"
-msgstr ""
-
-msgid ""
-"local=[\"local_dep1.aar\", \"local_dep2.aar\"] remote=[\"example.plugin."
-"android:remote-dep1:0.0.1\", \"example.plugin.android:remote-dep2:0.0.1\"] "
-"custom_maven_repos=[\"http://repo.mycompany.com/maven2\"]"
-msgstr ""
-
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
-
-#, fuzzy
-msgid "**name**: name of the plugin"
-msgstr "名前(オプションの名前)"
 
 msgid "**name**: name of the plugin."
 msgstr "**name**: (プラグインの名前)。"
@@ -282,7 +267,7 @@ msgid "**binary**:"
 msgstr "**Category**:"
 
 msgid ""
-"if **binary_type** is ``local``, then this should be the filepath of the "
+"If **binary_type** is ``local``, then this should be the filepath of the "
 "plugin ``aar`` file."
 msgstr ""
 
@@ -298,7 +283,7 @@ msgid "The filepath can be absolute: ``res://some_path/MyPlugin.aar``."
 msgstr ""
 
 msgid ""
-"if **binary_type** is ``remote``, then this should be a declaration for a "
+"If **binary_type** is ``remote``, then this should be a declaration for a "
 "`remote gradle binary <https://developer.android.com/studio/build/"
 "dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
 "plugin:0.0.0``)."
@@ -316,15 +301,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"If **binary_type** is ``remote``, then this should be a declaration for a "
-"`remote gradle binary <https://developer.android.com/studio/build/"
-"dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
-"plugin:0.0.0``)."
+"**remote**: contains a list of remote binary gradle dependencies for the "
+"plugin."
 msgstr ""
 
 msgid ""
 "**custom_maven_repos**: contains a list of URLs specifying the custom maven "
-"repositories required for the plugin's dependencies"
+"repositories required for the plugin's dependencies."
 msgstr ""
 
 #, fuzzy
@@ -436,3 +419,7 @@ msgstr ""
 #, fuzzy
 msgid "More complex datatypes are not supported for now."
 msgstr "ブレンドシェイプはGLES2ではサポートされていません。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

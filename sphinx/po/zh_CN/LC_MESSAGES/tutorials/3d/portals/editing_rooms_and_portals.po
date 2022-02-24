@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,14 +163,14 @@ msgstr ""
 "续的内容。"
 
 msgid "This means we can use the following portal names:"
-msgstr "也就是说，我们可以使用如下的门的名称："
+msgstr "也就是说，我们可以使用如下的入口名称："
 
 msgid "``kitchen*1-portal`` - creates a Portal leading to the \"kitchen\"."
-msgstr "``kitchen*1-portal`` - 创建通往 \"kitchen\" 的门。"
+msgstr "``kitchen*1-portal`` - 创建通往“kitchen”的 Portal。"
 
 msgid ""
 "``kitchen*2-portal`` - also creates a Portal leading to the \"kitchen\"."
-msgstr "``kitchen*2-portal`` - 同样创建通往 \"kitchen\" 的门。"
+msgstr "``kitchen*2-portal`` - 同样创建通往“kitchen”的 Portal。"
 
 msgid "``kitchen*anything_you_want_here-portal`` - also works."
 msgstr "``kitchen*anything_you_want_here-portal`` - 也行。"
@@ -239,8 +239,9 @@ msgid ""
 msgstr ""
 "你也可以选择手动编辑用于定义房间凸体的点。这些点在默认情况下是不存在的。通常"
 "选择一个房间，按下编辑器工具栏上的\\ **生成点**\\ 按钮来创建它们。这将把自动"
-"或手动绑定的几何体转移到检查器中。一旦检查器中出现了点，它们就会被使用，并覆"
-"盖其他的方式。因此，如果你想恢复手动编辑，请删除所有房间的点。"
+"绑定的几何体（或手动 ``-bound`` 的网格）转移到检查器中。一旦检查器中出现了"
+"点，它们就会被使用，并覆盖其他的方式。因此，如果你想恢复手动编辑，请删除所有"
+"房间的点。"
 
 msgid ""
 "Manually editing points can be useful in some situations, especially where "
@@ -250,9 +251,9 @@ msgid ""
 "**Simplification** value will be inherited from the RoomManager."
 msgstr ""
 "手动编辑点在某些情况下是有用的，尤其是在自动绑定不能\\ *完全*\\ 获得您想要的"
-"正确结果的情况下。在生成点之前，在房间的检查器中使用大量\\ **Simplification**"
-"\\ 通常是个好主意。注，默认情况下，\\ **Simplification**\\ 值将从RoomManager"
-"继承。"
+"正确结果的情况下。在生成点之前，在房间的检查器中使用大量\\ "
+"**Simplification**\\ 通常是个好主意。注，默认情况下，\\ **Simplification**\\ "
+"值将从RoomManager继承。"
 
 msgid "RoomManager"
 msgstr "RoomManager"
@@ -358,3 +359,7 @@ msgid ""
 msgstr ""
 "请注意，多重网格被当作一组剔除，而不是单独剔除，因此，你应该尽可能地将其保持"
 "在同一区域内。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

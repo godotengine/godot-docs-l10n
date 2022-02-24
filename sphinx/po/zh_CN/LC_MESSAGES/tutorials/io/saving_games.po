@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,15 +53,13 @@ msgstr ""
 "信息. 本教程中, 我们将使用组来标记和处理要保存的对象, 但当然也有其他可行的方"
 "法."
 
-#, fuzzy
 msgid ""
 "We will start by adding objects we wish to save to the \"Persist\" group. We "
 "can do this through either the GUI or script. Let's add the relevant nodes "
 "using the GUI:"
 msgstr ""
-"首先我们将想要保存的对象添加到 \"Persist\" 组. 在 :ref:"
-"`doc_scripting_continued` 教程中, 我们学会了通过GUI或脚本完成此操作. 那就让我"
-"们使用GUI来添加相关节点吧:"
+"首先我们将想要保存的对象添加到“Persist”组。我们既可以通过 GUI 也可以通过脚本"
+"完成此操作。让我们使用 GUI 来添加相关节点吧："
 
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
@@ -160,3 +158,7 @@ msgstr ""
 "对象时可用它们将确保它们可用于 :ref:`add_child() "
 "<class_node_method_add_child>` 调用. 由于 :ref:`NodePath <class_nodepath>` 可"
 "能无效, 因此可能还需要某种方式将子项链接到父项."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

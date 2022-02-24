@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,9 +71,9 @@ msgstr ""
 "(швидкість) дозволяє нам встановлювати її значення в Інспекторі. Це може "
 "бути зручно для значень, які ви хочете мати можливість регулювати так само, "
 "як і вбудовані властивості вузла. Натисніть на вузол ``Player``, і ви "
-"побачите властивість, яка появилася в розділі інспектора \"Script Variables"
-"\" (\"Змінні скриптів\"). Пам'ятайте, що якщо ви зміните тут значення, воно "
-"перепише значення, записане в скрипті."
+"побачите властивість, яка появилася в розділі інспектора \"Script "
+"Variables\" (\"Змінні скриптів\"). Пам'ятайте, що якщо ви зміните тут "
+"значення, воно перепише значення, записане в скрипті."
 
 msgid ""
 "If you're using C#, you need to (re)build the project assemblies whenever "
@@ -219,12 +219,12 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$``це скорочення для ``get_node()``. Так що в наведеному вище коді ``"
-"$AnimatedSprite.play()`` це те саме, що і ``get_node(\"AnimatedSprite\")."
+"``$``це скорочення для ``get_node()``. Так що в наведеному вище коді "
+"``$AnimatedSprite.play()`` це те саме, що і ``get_node(\"AnimatedSprite\")."
 "play()``."
 
 #, fuzzy
@@ -420,3 +420,7 @@ msgstr ""
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "call any function."
 msgstr ""
 "Godot에서 당신은 인스펙터(Inspecter)의 노드 변형, 스프라이트, UI 요소, 입자, "
-"가시성 및 재료 색상 기타 등을  애니메이션 할 수 있습니다. 스크립트 변수 값을 "
+"가시성 및 재료 색상 기타 등을 애니메이션 할 수 있습니다. 스크립트 변수 값을 "
 "수정하고 임의의 함수를 호출할 수도 있습니다."
 
 msgid "Create an AnimationPlayer node"
@@ -166,6 +166,10 @@ msgid ""
 "`Shift + D` on keyboard) to see the changes instantly."
 msgstr ""
 
+#, fuzzy
+msgid "Play from beginning"
+msgstr "원점으로부터 멀리"
+
 msgid "Tutorial: Creating a simple animation"
 msgstr ""
 
@@ -208,6 +212,10 @@ msgstr ""
 "\"을 클릭하세요. 새 애니메이션을 \"walk\"로 이름을 지으세요. 애니메이션 길이"
 "를 ``0.6`` 로 설정하고 \"Loop\" 버튼을 클릭해서 애니메이션이 반복되도록 하세"
 "요."
+
+#, fuzzy
+msgid "Add Animation"
+msgstr "애니메이션"
 
 msgid "Add a new animation"
 msgstr ""
@@ -459,6 +467,9 @@ msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
 
+msgid "Add track"
+msgstr ""
+
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
 
@@ -488,3 +499,44 @@ msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."
 msgstr ""
+
+#, fuzzy
+msgid "Using RESET tracks"
+msgstr "공백 사용하기"
+
+msgid ""
+"You can set up a special *RESET* animation to contain the \"default pose\". "
+"This is used to ensure that the default pose is restored when you save the "
+"scene and open it again in the editor."
+msgstr ""
+
+msgid ""
+"For existing tracks, you can add an animation called \"RESET\" (case-"
+"sensitive), then add tracks for each property that you want to reset. The "
+"only keyframe should be at time 0, and give it the desired default value for "
+"each track."
+msgstr ""
+
+msgid ""
+"If AnimationPlayer's **Reset On Save** property is set to ``true``, the "
+"scene will be saved with the effects of the reset animation applied (as if "
+"it had been seeked to time ``0.0``). This only affects the saved file – the "
+"property tracks in the editor stay where they were."
+msgstr ""
+
+msgid ""
+"If you want to reset the tracks in the editor, select the AnimationPlayer "
+"node, open the **Animation** bottom panel then choose **Apply Reset** in the "
+"animation editor's **Animation** dropdown menu."
+msgstr ""
+
+msgid ""
+"When adding tracks on new animations, the editor will ask you to "
+"automatically create a RESET track when using the keyframe icon next to a "
+"property in the inspector. This does not apply on tracks created with Godot "
+"versions prior to 3.4, as the animation reset track feature was added in 3.4."
+msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

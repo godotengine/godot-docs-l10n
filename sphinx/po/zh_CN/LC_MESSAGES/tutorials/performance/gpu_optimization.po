@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,9 +165,9 @@ msgid ""
 "the hundreds or thousands), try reusing the materials. In the worst case, "
 "use atlases to decrease the amount of texture changes."
 msgstr ""
-"**Reusing Materials:** 场景中不同的材质越少, 渲染的速度就越快. 如果一个场景有"
-"大量的物体(数以百计或数以千计), 可以尝试重复使用这些材质. 在最坏的情况下, 使"
-"用图集来减少纹理变化的数量."
+"**复用材质：**\\ 场景中不同的材质越少, 渲染的速度就越快. 如果一个场景有大量的"
+"物体(数以百计或数以千计), 可以尝试重复使用这些材质. 在最坏的情况下, 使用图集"
+"来减少纹理变化的数量."
 
 msgid ""
 "**Reusing Shaders:** If materials can't be reused, at least try to re-use "
@@ -175,9 +175,9 @@ msgid ""
 "that share the same configuration (features that are enabled or disabled "
 "with a check box) even if they have different parameters."
 msgstr ""
-"**重用着色器Reusing Shaders:** 如果材质不能被重复使用，至少要尝试重用着色器。"
-"注意：在共享相同配置（可用复选框启用或禁用该功能）的SpatialMaterials之间会自"
-"动重用着色器，即使它们有不同的参数。"
+"**复用着色器：**\\ 如果材质不能被重复使用，至少要尝试重用着色器。注意：在共享"
+"相同配置（可用复选框启用或禁用该功能）的SpatialMaterials之间会自动重用着色"
+"器，即使它们有不同的参数。"
 
 msgid ""
 "If a scene has, for example, ``20,000`` objects with ``20,000`` different "
@@ -205,10 +205,10 @@ msgid ""
 msgstr "在现代PC和控制台, 顶点成本很低.GPU最初只渲染三角形. 这意味着每一帧:"
 
 msgid "All vertices had to be transformed by the CPU (including clipping)."
-msgstr "所有顶点都必须由CPU进行转换(包括剪裁)."
+msgstr "所有顶点都必须由 CPU 进行转换（包括剪裁）。"
 
 msgid "All vertices had to be sent to the GPU memory from the main RAM."
-msgstr "所有顶点都必须从主RAM发送到GPU内存."
+msgstr "所有顶点都必须从主 RAM 发送到 GPU 内存。"
 
 msgid ""
 "Nowadays, all this is handled inside the GPU, greatly increasing "
@@ -255,10 +255,10 @@ msgid ""
 "reduces power consumption, but takes a toll on vertex performance. As a "
 "result, fewer vertices and triangles can be processed for drawing."
 msgstr ""
-"在移动设备上使用更多的电力是不可能的, 所以移动设备使用一种叫做 *基于瓷砖的渲"
-"染* 的技术, 将屏幕划分为一个网格. 每个单元格都保存着绘制的三角形列表, 并按深"
-"度进行排序, 以尽量减少 *过度绘制* . 这种技术提高了性能, 降低了功耗, 但对顶点"
-"性能造成了影响. 因此, 可以处理更少的顶点和三角形进行绘制."
+"在移动设备上使用更多的电力是不可能的，所以移动设备使用一种叫做\\ *基于图块的"
+"渲染*\\ 的技术，将屏幕划分为一个网格。每个单元格都保存着绘制的三角形列表，并"
+"按深度进行排序，以尽量减少\\ *过度绘制*\\ 。这种技术提高了性能，降低了功耗，"
+"但对顶点性能造成了影响。因此，可以处理更少的顶点和三角形进行绘制。"
 
 msgid ""
 "Additionally, tile-based rendering struggles when there are small objects "
@@ -283,16 +283,16 @@ msgstr ""
 "别模型(LOD). 即使在桌面GPU上, 最好也不要让三角形小于屏幕上一个像素的大小."
 
 msgid "Pay attention to the additional vertex processing required when using:"
-msgstr "使用时要注意额外的顶点处理:"
+msgstr "使用时要注意额外的顶点处理："
 
 msgid "Skinning (skeletal animation)"
-msgstr "蒙皮(骨骼动画)"
+msgstr "蒙皮（骨骼动画）"
 
 msgid "Morphs (shape keys)"
-msgstr "变形(形态键)"
+msgstr "变形（形态键）"
 
 msgid "Vertex-lit objects (common on mobile)"
-msgstr "顶点照明对象(在移动设备上很常见)"
+msgstr "顶点照明对象（在移动设备上很常见）"
 
 msgid "Pixel/fragment shaders and fill rate"
 msgstr "像素/片段着色器和填充速率"
@@ -516,3 +516,7 @@ msgstr ""
 "不过也有一些缺点. 图块渲染会让某些技术变得更加复杂, 执行起来也更加昂贵. 依赖"
 "于不同图块渲染的结果, 或者依赖于早期操作的结果被保存的图块可能会非常慢. 要非"
 "常小心地测试着色器, 视图纹理和后期处理的性能."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

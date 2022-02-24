@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Bug triage guidelines"
 msgstr "Lignes directrices pour le triage des bogues"
 
-#, fuzzy
 msgid ""
 "This page describes the typical workflow of the bug triage team aka bugsquad "
 "when handling issues and pull requests on Godot's `GitHub repository "
@@ -29,10 +28,10 @@ msgid ""
 "following guidelines."
 msgstr ""
 "Cette page décrit le flux de travail typique de l'équipe de triage des "
-"bogues alias bugsquad lors de la gestion des problèmes et des requêtes pull "
-"sur le dépôt `GitHub <https://github.com/godotengine/godot>`_ de Godot. Elle "
-"est appelée à évoluer avec le bugsquad, n'hésitez donc pas à proposer des "
-"modifications aux directives suivantes."
+"bogues alias bugsquad lors de la gestion des problèmes et des pull requests "
+"sur le dépôt `GitHub <https://github.com/godotengine/godot>`__ de Godot. "
+"Elle est appelée à évoluer avec le bugsquad, n'hésitez donc pas à proposer "
+"des modifications aux directives suivantes."
 
 msgid "Issues management"
 msgstr "Gestion des Issues"
@@ -70,7 +69,6 @@ msgstr ""
 "de problème et/ou avoir discuté de la meilleure façon de le résoudre avec "
 "d'autres développeurs."
 
-#, fuzzy
 msgid "For the time being, we do not use the project dashboard feature either."
 msgstr ""
 "Pour l'instant, nous n'utilisons pas non plus la fonction de tableau de bord "
@@ -96,13 +94,15 @@ msgid ""
 "*Archived*: either a duplicate of another issue, or invalid. Such an issue "
 "would also be closed."
 msgstr ""
-"*Archivé* : soit un double d'un autre numéro, soit non valable. Une telle "
-"issue serait également fermé."
+"*Archived* : soit un doublon d'un autre problème, soit n'est pas valable. "
+"Une telle issue serait également fermé."
 
 msgid ""
 "*Breaks compat*: describes something that can only be fixed by breaking "
 "compatibility with existing projects."
 msgstr ""
+"*Breaks compat* : décris quelque chose qui ne peut être corrigé qu'en "
+"n'étant plus compatible avec les projets existants."
 
 msgid "*Bug*: describes something that is not working properly."
 msgstr "*Bug* : décrit quelque chose qui ne fonctionne pas correctement."
@@ -111,11 +111,16 @@ msgid ""
 "*Cherrypick*: describes something that can be backported to a stable branch "
 "after being merged in the ``master`` branch."
 msgstr ""
+"*Cherrypick* : décris quelque chose qui peut être repris de la branche "
+"``master`` (principale) pour être intégrée dans la branche stable actuelle."
 
 msgid ""
 "*Crash:* describes a bug that causes the engine to crash. This label is only "
 "used for \"hard\" crashes, not freezes."
 msgstr ""
+"*Crash* : decris un bogue faisant planter le moteur de jeu. N'est utilisé "
+"que quand l'application quitte inopinément, et pas quand elle ne fait que se "
+"figer."
 
 msgid ""
 "*Confirmed*: has been confirmed by at least one other contributor than the "
@@ -173,10 +178,11 @@ msgid ""
 "<https://chat.godotengine.org/>`_."
 msgstr ""
 
+#, fuzzy
 msgid ""
-"*Junior job*: the issue is *assumed* to be an easy one to fix, which makes "
-"it a great fit for junior contributors who need to become familiar with the "
-"code base."
+"*Good first issue*: the issue is *assumed* to be an easy one to fix, which "
+"makes it a great fit for new contributors who need to become familiar with "
+"the code base."
 msgstr ""
 "*Junior job* : le problème est *présumé* être facile à résoudre, ce qui en "
 "fait un outil idéal pour les jeunes contributeurs qui doivent se "
@@ -186,11 +192,14 @@ msgid ""
 "*High priority:* the issue is particularly important as it can prevent "
 "people from releasing their projects or cause data loss."
 msgstr ""
+"*High priority* : ce problème a une _haut priorité_ car elle peut empêcher "
+"de publier des projets ou la perte de données."
 
-#, fuzzy
 msgid ""
 "*Needs work*: the pull request needs additional work before it can be merged."
-msgstr "*Needs rebase* : l'issue nécessite un Git rebase pour être fusionnée."
+msgstr ""
+"*Needs work* : la pull request nécessite un travail supplémentaire avant de "
+"pouvoir être fusionnée."
 
 msgid ""
 "*Needs testing*: the issue/pull request could not be completely tested and "
@@ -214,16 +223,14 @@ msgstr ""
 "pull qui améliorent les performances ou ajoutent des options conviviales "
 "pour le bas de gamme. Ne devrait pas être couplé avec *Usability*."
 
-#, fuzzy
 msgid ""
 "*PR welcome / Hero wanted!*: Contributions for issues with these labels are "
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
-"*PR welcome / hero wanted !* : Les contributions pour les questions "
-"relatives à ces labels sont particulièrement bienvenues. Notez que cela ne "
-"signifie pas que vous ne pouvez pas travailler sur des sujets sans ces "
-"labels."
+"*PR welcome / Hero wanted!* : Les contributions pour les problèmes avec ces "
+"labels sont particulièrement bienvenues. Notez que cela **ne signifie pas** "
+"que vous ne pouvez pas travailler sur des sujets sans ces labels."
 
 msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
@@ -305,18 +312,18 @@ msgstr ""
 "*Buildsystem* : concerne les problèmes de compilation, soit liés au système "
 "de compilation SCons, soit aux particularités du compilateur."
 
-#, fuzzy
 msgid "*Codestyle*: relates to the programming style used within the codebase."
 msgstr ""
-"Ce guide de style de commentaires s'applique à tous les langages de "
-"programmation utilisés dans la base de code de Godot."
+"*Codestyle* : concerne le style de programmation utilisé dans la base de "
+"code."
 
 msgid ""
 "*Core*: anything related to the core engine. It might be further split later "
 "on as it's a pretty big topic."
 msgstr ""
-"*Core* : tout ce qui est lié au cœur du moteur. Il pourrait être divisé en "
-"plusieurs labels plus tard, car c'est un sujet assez vaste."
+"*Core* : tout ce qui est lié au fonctions principales (_cœur_) du moteur de "
+"jeu. Il pourrait être divisé en plusieurs labels plus tard, car c'est un "
+"sujet assez vaste."
 
 msgid "*Editor*: relates to issues in the editor (mainly UI)."
 msgstr ""
@@ -329,16 +336,16 @@ msgstr "*GDNative* : concerne le module GDNative."
 msgid "*GDScript*: relates to GDScript."
 msgstr "*GDScript* : se rapporte au GDScript."
 
-#, fuzzy
 msgid "*GUI*: relates to GUI (Control) nodes."
-msgstr "*Mono* : concerne les liaisons C# / Mono."
+msgstr "*GUI* : concerne les nœuds GUI (Control)."
 
 msgid "*Import*: relates to the resource import system."
-msgstr ""
+msgstr "*Import* : concerne le système d'importation des ressources."
 
-#, fuzzy
 msgid "*Input*: relates to input system."
-msgstr "*GDScript* : se rapporte au GDScript."
+msgstr ""
+"*Input* : concerne la gestion des périphériques d'entrée (clavier, manettes, "
+"etc.)."
 
 msgid "*Mono*: relates to the C# / Mono bindings."
 msgstr "*Mono* : concerne les liaisons C# / Mono."
@@ -346,6 +353,7 @@ msgstr "*Mono* : concerne les liaisons C# / Mono."
 msgid ""
 "*Navigation*: relates to the navigation system (including A* and navmeshes)."
 msgstr ""
+"*Navigation* : concerne le système de navigation (comme A* et les navmesh)."
 
 msgid "*Network*: relates to networking."
 msgstr "*Network* : se rapporte aux problème de mise en réseau."
@@ -357,32 +365,34 @@ msgid "*Plugin*: relates to problems encountered while writing plugins."
 msgstr ""
 "*Plugin* : concerne les problèmes rencontrés lors de l'écriture de plugins."
 
-#, fuzzy
 msgid "*Porting*: relates to some specific platforms or exporting projects."
-msgstr "*Porting* : concerne certaines plateformes spécifiques."
+msgstr ""
+"*Porting* : concerne certaines plateformes spécifiques ou projets "
+"d'exportation."
 
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
 msgstr "*Rendering* : concerne les moteurs de rendu 2D et 3D."
 
 msgid "*Shaders*: relates to the Godot shader language or visual shaders."
 msgstr ""
+"*Shaders* : concerne le langage de shader de Godot, ou les shaders visuels."
 
-#, fuzzy
 msgid "*Tests*: relates to unit tests."
-msgstr "*Network* : se rapporte aux problème de mise en réseau."
+msgstr "*Tests* : concerne les tests unitaires."
 
 msgid "*Thirdparty*: relates to third-party libraries used in Godot."
-msgstr ""
+msgstr "*Thirdparty* : concerne les bibliothèques tiers dans Godot."
 
-#, fuzzy
 msgid ""
 "*VisualScript*: relates to issues with the visual scripting language (*not* "
 "visual shaders)."
 msgstr ""
-"*VisualScript* : concerne les problèmes liés au langage de script visuel."
+"*VisualScript* : concerne les problèmes liés au langage de script visuel "
+"(*pas* les shaders visuels)."
 
 msgid "*XR*: relates to Augmented Reality or Virtual Reality."
 msgstr ""
+"*XR* : concerne la Réalité Augmentée (AR) ou la Réalité Virtuelle (VR)."
 
 msgid ""
 "Issues would typically correspond to only one topic, though it's not "
@@ -397,7 +407,7 @@ msgstr ""
 "le sujet de leur équipe."
 
 msgid "**Platforms:**"
-msgstr "**Platforms :**"
+msgstr "**Plateformes :**"
 
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
 msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
@@ -414,9 +424,8 @@ msgstr ""
 "bug sur par exemple Android et Linux exclusivement, sélectionnez ces deux "
 "plates-formes)."
 
-#, fuzzy
 msgid "Documentation labels"
-msgstr "Changelog de la documentation"
+msgstr "Labels de documentation"
 
 msgid ""
 "In the `documentation repository <https://github.com/godotengine/godot-"
@@ -439,18 +448,16 @@ msgid "*Enhancememnt*: new information to be added in an existing page."
 msgstr ""
 
 msgid "*New page*: a new page to be created."
-msgstr ""
+msgstr "*New page* : une nouvelle page à créer."
 
-#, fuzzy
 msgid ""
 "*Hero wanted!*: contributions for issues with these labels are especially "
 "welcome. Note that this **doesn't** mean you can't work on issues without "
 "these labels."
 msgstr ""
-"*PR welcome / hero wanted !* : Les contributions pour les questions "
-"relatives à ces labels sont particulièrement bienvenues. Notez que cela ne "
-"signifie pas que vous ne pouvez pas travailler sur des sujets sans ces "
-"labels."
+"*Hero wanted!* : Les contributions pour les problèmes portant ces étiquettes "
+"sont particulièrement bienvenues. Notez que cela **ne signifie pas** que "
+"vous ne pouvez pas travailler sur des problèmes sans ces étiquettes."
 
 msgid ""
 "*Organization*: The issue involves moving pages around or reorganizing "
@@ -502,3 +509,7 @@ msgstr ""
 "jalon qui leur est attribué ; si une correction est proposée pour un bogue "
 "qui n'a pas été jugé urgent et donc sans milestone, elle sera probablement "
 "toujours la bienvenue."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

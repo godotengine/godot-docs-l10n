@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid ""
 msgstr "PNG(``.png``) - 导入时精度限制为每个通道8位(无HDR图像)."
 
 msgid "Truevision Targa (``.tga``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "Truevision Targa（\\ ``.tga``\\ ）"
 
 msgid ""
 "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
@@ -173,6 +173,13 @@ msgstr ""
 "在这张表中, 四个选项中的每一个都描述了它们的优缺点( |good| = 最好的, |bad| = "
 "最差的):"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "以及"
+
 msgid "Uncompressed"
 msgstr "未压缩"
 
@@ -207,6 +214,10 @@ msgid "|bad| Large"
 msgstr "|bad| 巨大"
 
 msgid "|regular| Small"
+msgstr "|regular| 小"
+
+#, fuzzy
+msgid "regular"
 msgstr "|regular| 小"
 
 msgid "|good| Very Small"
@@ -255,9 +266,9 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
-"Godot支持高动态范围纹理(如 ``.HDR`` 或 ``.EXR``). 这些在高动态范围等矩形全景"
-"天空中很有用(如果您要搜索, 则互联网上有很多), 它代替了Godot 2.x中的立方体贴"
-"图. 现代个人电脑支持 BC6H VRAM 格式, 但仍有很多电脑不支持."
+"Godot 支持高动态范围纹理（如 .HDR 或 .EXR）。这些在高动态范围等矩形全景天空中"
+"很有用(如果您要搜索, 则互联网上有很多), 它代替了Godot 2.x中的立方体贴图. 现代"
+"个人电脑支持 BC6H VRAM 格式, 但仍有很多电脑不支持."
 
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
@@ -350,8 +361,9 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
-"当像素变得比屏幕小时，会启用 mipmap。这有助于减少纹理收缩时的颗粒感效应。请记"
-"住，在较旧的硬件（GLES2，主要是移动设备）中，使用 mipmap 需要满足一些要求："
+"当像素变得比屏幕小时，会启用多级渐远纹理（mipmap）。这有助于减少纹理收缩时的"
+"颗粒感效应。请记住，在较旧的硬件（GLES2，主要是移动设备）中，使用多级渐远纹理"
+"需要满足一些要求："
 
 msgid "Texture width and height must be powers of 2"
 msgstr "纹理宽度和高度必须是 2 的幂"
@@ -481,3 +493,7 @@ msgid ""
 msgstr ""
 "该选项仅适用于 SVG 文件. 它控制 SVG 图像的缩放. 默认比例 (1.0) 表示使导入的 "
 "SVG 保持原始设计大小."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

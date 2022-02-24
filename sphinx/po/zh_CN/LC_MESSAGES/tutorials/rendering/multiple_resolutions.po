@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,9 +183,9 @@ msgid ""
 "guessing, so Godot provides a simple set of parameters in the project "
 "settings to handle multiple resolutions."
 msgstr ""
-"在任何情况下, 虽然更改 ``根视区`` 的参数可能是解决问题的最灵活方法, 但这样做"
-"的可能包含大量工作, 大量代码和大量推测过程, 因此Godot在 ``项目设置`` 中提供了"
-"一组简单的参数来处理多分辨率问题."
+"在任何情况下，虽然更改根 Viewport 的参数可能是解决问题的最灵活方法，但这样做"
+"的可能包含大量工作、大量代码、大量推测过程，因此 Godot 在项目设置中提供了一组"
+"简单的参数来处理多分辨率问题。"
 
 msgid "Stretch settings"
 msgstr "拉伸设置"
@@ -710,9 +710,9 @@ msgid ""
 "for desktop games and mobile games in landscape mode, as widescreen displays "
 "will automatically use a wider field of view."
 msgstr ""
-"3D相机节点的 **Keep Aspect** 属性默认为 **Keep Height** 缩放模式(也称为 *Hor"
-"+* ). 在横屏模式下, 这通常是桌面游戏和手机游戏的最佳选择, 因为宽屏显示器会自"
-"动使用更宽的视野."
+"3D相机节点的 **Keep Aspect** 属性默认为 **Keep Height** 缩放模式(也称为 "
+"*Hor+* ). 在横屏模式下, 这通常是桌面游戏和手机游戏的最佳选择, 因为宽屏显示器"
+"会自动使用更宽的视野."
 
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
@@ -757,3 +757,7 @@ msgid ""
 msgstr ""
 "有关示例, 请参见 `3D 视窗缩放演示 <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ ."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

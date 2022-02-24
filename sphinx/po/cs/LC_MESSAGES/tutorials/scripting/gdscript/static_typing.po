@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,6 +100,9 @@ msgstr ""
 "Pravděpodobně se vám už někdy stalo, že jste uložili uzel do proměnné a "
 "napsali tečku, abyste zůstali bez návrhů automatického dokončování:"
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -108,6 +111,9 @@ msgstr ""
 "To je způsobeno dynamickým kódem. Godot nemůže vědět, jaký typ uzlu nebo "
 "hodnoty předáváte funkci. Pokud však typ zapíšete explicitně, získáte z uzlu "
 "všechny veřejné metody a proměnné:"
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -161,14 +167,12 @@ msgid ""
 msgstr ""
 "Základní třídy a uzly (``Object``, ``Node``, ``Area2D``, ``Camera2D`` atd.)"
 
-#, fuzzy
 msgid ""
 "Your own custom classes. Look at the new :ref:`class_name "
 "<doc_gdscript_basics_class_name>` feature to register types in the editor."
 msgstr ""
 "Vlastní, přizpůsobené třídy. Podívejte se na novou vlastnost :ref:"
-"`název_třídy <název_třídy_doc_scripting_continued_class_name>` pro "
-"registraci typů v editoru."
+"`class_name <doc_gdscript_basics_class_name>` pro registraci typů v editoru."
 
 msgid ""
 "You don't need to write type hints for constants, as Godot sets it "
@@ -301,6 +305,9 @@ msgstr ""
 "uzlu: ``($Timer as Timer)``, ``($Player as KinematicBody2D)``, atd. Godot se "
 "ujistí, že typ funguje, a pokud ano, číslo řádku se v levé části editoru "
 "skriptu změní na zelené."
+
+msgid "Unsafe vs Safe Line"
+msgstr ""
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Nebezpečný kód (řádek 7) vs Bezpečný kód (řádek 6 a 8)"
@@ -439,3 +446,7 @@ msgstr ""
 "pomáhá psát strukturovanější kód, vyhnout se běžným chybám a vytvářet "
 "škálovatelné systémy. V budoucnu vám statické typy přinesou také příjemné "
 "zvýšení výkonu díky chystaným optimalizacím překladače."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,8 +66,8 @@ msgstr ""
 "的“Enabled”复选框（ ``bbcode_enabled`` ）。"
 
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr "例如， ``BBCode [color=blue]blue[/color]`` 将会出现蓝色的单词“blue”。"
 
 msgid ""
@@ -279,7 +279,7 @@ msgid "Built-in color names"
 msgstr "内置的颜色名称"
 
 msgid "List of valid color names for the [color=<name>] tag:"
-msgstr "以下列出[color=<name>]标签所支持的有效颜色名称:"
+msgstr "以下列出 [color=<name>] 标签所支持的有效颜色名称："
 
 msgid "aqua"
 msgstr "aqua"
@@ -335,8 +335,8 @@ msgid ""
 "(equivalent to ``#66ff22``) are also supported."
 msgstr ""
 "不透明的 RGB 颜色支持使用任何有效的 6 位十六进制数，例如 ``[color=#ffffff]白"
-"色[/color]``\\ 。也支持短的 RGB 颜色码，比如 ``#6f2``\\ （等价于 `#66ff22`"
-"\\ ）。"
+"色[/color]``\\ 。也支持短的 RGB 颜色码，比如 ``#6f2``\\ （等价于 "
+"`#66ff22`\\ ）。"
 
 msgid ""
 "For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
@@ -347,8 +347,8 @@ msgid ""
 msgstr ""
 "透明的 RGB 颜色可以使用任意 8 位十六进制数，例如 ``[color=#88ffffff]半透明白"
 "色[/color]``\\ 。请注意这里的 alpha 通道是颜色码中的\\ **第一个**\\ 分量，不"
-"是最后一个。也支持短的 RGBA 颜色码，比如 `#86f2`\\ （等价于 `#8866ff22`"
-"\\ ）。"
+"是最后一个。也支持短的 RGBA 颜色码，比如 `#86f2`\\ （等价于 "
+"`#8866ff22`\\ ）。"
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr "处理 ``[url]`` 标签点击"
@@ -384,8 +384,8 @@ msgid ""
 "url]``"
 msgstr ""
 "要支持更高级的用法，也可以在 ``[url]`` 标签的选项中保存 JSON，然后在处理 "
-"``meta_clicked`` 信号的函数中解析。例如：\\ ``[url={\"example\": \"value"
-"\"}]JSON[/url]``"
+"``meta_clicked`` 信号的函数中解析。例如：\\ ``[url={\"example\": "
+"\"value\"}]JSON[/url]``"
 
 msgid "Image vertical offset"
 msgstr "图像垂直偏移"
@@ -592,3 +592,7 @@ msgstr "矩阵"
 
 msgid "This will add a few new BBCode commands, which can be used like so:"
 msgstr "这将增加一些新的BBCode命令, 可以像这样使用:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgid "Platforms"
 msgstr "Piattaforme"
 
 msgid "**Can run both the editor and exported projects:**"
-msgstr "**Può eseguire sia i progetti in editor che quelli esportati**"
+msgstr "**Può eseguire sia l'editor che i progetti esportati:**"
 
 msgid "Windows 7 and later (64-bit and 32-bit)."
 msgstr "Windows 7 e successivi (64-bit e 32-bit)."
@@ -104,7 +104,7 @@ msgid "Scene tree editor."
 msgstr "Editor dell'albero delle scene."
 
 msgid "Script editor."
-msgstr "Editor script."
+msgstr "Editor di script."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -159,12 +159,13 @@ msgstr "Usa l'editor in svariate lingue fornite dalla community."
 msgid "**Plugins:**"
 msgstr "**Plugins:**"
 
+#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
-"I plug-in dell'editor possono essere scaricati da: ref: `asset library "
-"<doc_what_is_assetlib>` per estenderne le funzionalità."
+"I plug-in dell'editor possono essere scaricati da: ref: `Libreria dei "
+"Contenuti <doc_what_is_assetlib>` per estenderne le funzionalità."
 
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
@@ -173,12 +174,13 @@ msgstr ""
 "Crea i tuoi plugin usando GDScript per aggiungere nuove funzionalità o "
 "velocizzare il tuo flusso di lavoro."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
-"Scarica i progetti dalla libreria di risorse nel project manager e importali "
-"direttamente."
+"Scarica i progetti dalla libreria dei Contenuti nel project manager e "
+"importali direttamente."
 
 msgid "2D graphics"
 msgstr "Grafica 2D"
@@ -187,17 +189,13 @@ msgid "**Two renderers available:**"
 msgstr "**Due modalità di rendering disponibili:**"
 
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
-"Modalità di Rendering OpenGL ES 3.0 (utilizza OpenGL 3.3 su piattaforme "
-"desktop)."
+msgstr "Renderer OpenGL ES 3.0 (utilizza OpenGL 3.3 su piattaforme desktop)."
 
 msgid "High-end visuals. Recommended on desktop platforms."
 msgstr "Grafica di alta qualità. Consigliato su piattaforme desktop."
 
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
-"Modalità di Rendering OpenGL ES 2.0 (utilizza OpenGL 2.1 su piattaforme "
-"desktop)."
+msgstr "Renderer OpenGL ES 2.0 (utilizza OpenGL 2.1 su piattaforme desktop)."
 
 msgid "Recommended on mobile and Web platforms."
 msgstr "Consigliato su mobile e piattaforme Web."
@@ -212,7 +210,7 @@ msgstr ""
 "Line2D."
 
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr "AnimatedSprite come supporto per la creazione di sprite animate."
+msgstr "AnimatedSprite come supporto per la creare sprite animati."
 
 msgid "Parallax layers."
 msgstr "Livelli di parallasse."
@@ -261,17 +259,17 @@ msgstr ""
 
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
-"Particelle calcolate tramite GPU con supporto per shader di particelle "
-"personalizzati."
+"Particelle basate sulla GPU con supporto per shader personalizzati di "
+"particelle."
 
 msgid "CPU-based particles."
-msgstr "Particelle generate dalla CPU."
+msgstr "Particelle basate sulla CPU."
 
 msgid "2D tools"
 msgstr "Strumenti 2D"
 
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr "Camera 2D con movimento fluido integrato e margini di scorrimento."
+msgstr "Telecamera 2D con movimento fluido integrato e margini di scorrimento."
 
 msgid "Path2D node to represent a path in 2D space."
 msgstr "Nodo Path2D per rappresentare un percorso nello spazio 2D."
@@ -356,6 +354,7 @@ msgstr ""
 "Utilizza il flusso di lavoro roughness-metallic con supporto per le texture "
 "ORM."
 
+#, fuzzy
 msgid "Normal mapping."
 msgstr "Normal mapping."
 
@@ -436,8 +435,9 @@ msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
-"Supporta oggetti di illuminazione dinamica utilizzando un sistema automatico "
-"basato su ottalbero. Nessun posizionamento manuale di sonde è richiesto."
+"Supporta l'illuminazione dinamica di oggetti utilizzando un sistema "
+"automatico basato su octree. Non è richiesto il posizionamento manuale della "
+"sonda."
 
 msgid "Lightmaps are baked on the CPU."
 msgstr "Lightmaps sono pre-calcolate dalla CPU."
@@ -503,11 +503,11 @@ msgstr "**Particelle:**"
 
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
-"*GLES3:* Particelle calcolate dalla GPU con supporto per shader di "
-"particelle personalizzati."
+"*GLES3:* Particelle basate sulla GPU con supporto per shader personalizzati "
+"di particelle."
 
 msgid "**Post-processing:**"
-msgstr "**Post-processing:**"
+msgstr "**Post-elaborazione:**"
 
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Tonemapping (Lineare, Reinhard, Filmico, ACES)."
@@ -534,7 +534,7 @@ msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
-"Glow/Bloom con ridimensionamento bicubico opzionale e più modalità di "
+"Glow/Bloom con ridimensionamento bicubico opzionale e diverse modalità di "
 "fusione disponibili: Screen, Soft Light, Add, Replace."
 
 msgid "Color correction using an one-dimensional ramp."
@@ -544,7 +544,7 @@ msgid "Brightness, contrast and saturation adjustments."
 msgstr "Regolazione della luminosità, contrasto e saturazione."
 
 msgid "**Texture filtering:**"
-msgstr "**Filtro texture:**"
+msgstr "**Filtraggio delle texture:**"
 
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
 msgstr "Filtraggio per vicinanza, bilineare, trilineare o anisotropico."
@@ -560,7 +560,7 @@ msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (non supportato su macOS)."
 
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (consigliato quando si utilizza il renderizzatore GLES2)."
+msgstr "ETC1 (consigliato quando si utilizza il renderer GLES2)."
 
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
 msgstr "*GLES3:* S3TC (non supportato su piattaforme mobile/Web)."
@@ -626,8 +626,7 @@ msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr "Forme integrate: cuboide, sfera, capsula, cilindro."
 
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
-"Generare forme di collisione triangolare per qualsiasi mesh dall'editor."
+msgstr "Genera forme di collisione a triangolo per qualsiasi mesh dall'editor."
 
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
@@ -652,7 +651,7 @@ msgstr ""
 "<doc_shading_language>`."
 
 msgid "Visual shader editor."
-msgstr "Editor di shader visuali."
+msgstr "Editor visuale di shader."
 
 msgid "Support for visual shader plugins."
 msgstr "Supporto per plug-in visual shader."
@@ -791,7 +790,7 @@ msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
-"Supporto per il reindirizzamento :ref:`audio bus <doc_audio_buses>`` ed "
+"Supporto per il reindirizzamento :ref:`audio buses <doc_audio_buses>`` ed "
 "effetti con decine di effetti inclusi."
 
 msgid ""
@@ -880,7 +879,7 @@ msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
 msgstr ""
-"Sistema di mappatura degli input che utilizza eventi di input manuali o "
+"Sistema di mappatura degli input che utilizza eventi di input codificati o "
 "azioni di input rimappabili."
 
 msgid ""
@@ -1021,8 +1020,8 @@ msgstr "Finestre e integrazione del sistema operativo"
 
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr ""
-"Spostare, ridimensionare, ridurre a icona e ingrandire la finestra generata "
-"dal progetto."
+"Sposta, ridimensiona, minimizza e massimizza la finestra generata dal "
+"progetto."
 
 msgid "Change the window title and icon."
 msgstr "Cambia il titolo e l'icona della finestra."
@@ -1067,7 +1066,7 @@ msgstr ""
 "personalizzati (se registrati nel sistema)."
 
 msgid "Parse custom command line arguments."
-msgstr "Analizza gli argomenti della riga di comando personalizzati."
+msgstr "Analizza gli argomenti personalizzati della riga di comando."
 
 msgid "Mobile"
 msgstr "Mobile"
@@ -1088,15 +1087,18 @@ msgstr "Supporto XR (AR e VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Supporto per ARKit su iOS pronto all'uso."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "Supporto per le API OpenXR e OpenVR."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"I visori VR più popolari come Oculus Quest e HTC Vive sono supportati grazie "
-"ai plugin."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Supporto per le API OpenXR e OpenVR."
 
 msgid "GUI system"
 msgstr "Sistema GUI"
@@ -1131,7 +1133,7 @@ msgid "Scrollbars."
 msgstr "Barre di scorrimento."
 
 msgid "Labels."
-msgstr "Etichette (Labels)."
+msgstr "Etichette."
 
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
@@ -1159,8 +1161,8 @@ msgstr "**Dimensionamento:**"
 
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
-"Ancoraggi per mantenere gli elementi della GUI in un specifico angolo, bordo "
-"o centrato."
+"Ancore per mantenere gli elementi della GUI in un specifico angolo, bordo o "
+"centrato."
 
 msgid "Containers to place GUI elements automatically following certain rules."
 msgstr ""
@@ -1186,14 +1188,14 @@ msgstr "Disposizione con :ref:`Divisore trascinabile <class_SplitContainer>`."
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
 msgstr ""
-"Ridimensiona a più risoluzioni utilizzando le modalità di estensione ''2d'' "
-"o ''viewport''' ."
+"Scala a risoluzioni multiple usando le modalità di stiramento ``2d`` o "
+"``viewport``."
 
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
-"Supporto di ogni rapporto d'aspetto usando gli ancoraggi e la proprietà "
-"``expand``."
+"Supporta qualsiasi rapporto d'aspetto usando ancore e l'aspetto ``expand`` "
+"stretch."
 
 msgid "**Theming:**"
 msgstr "** Temi: **"
@@ -1271,7 +1273,7 @@ msgid "Can optionally be compressed or encrypted."
 msgstr "A scelta può essere compresso o criptato."
 
 msgid "Read and write :ref:`class_JSON` files."
-msgstr "Leggere e scrivere i file :ref:`class_JSON`."
+msgstr "Leggere e scrivere file :ref:`class_JSON`."
 
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
@@ -1318,7 +1320,7 @@ msgstr "Interfaccia da linea di comando per l'automazione."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
-"Esportare e distribuire progetti utilizzando piattaforme di integrazione "
+"Esporta e distribuisci progetti utilizzando piattaforme di integrazione "
 "continua."
 
 msgid ""
@@ -1376,3 +1378,7 @@ msgstr ""
 "Il `repository delle proposte di Godot <https://github.com/godotengine/godot-"
 "proposals>`__ elenca le caratteristiche che sono state richieste dalla "
 "comunità e che potrebbero essere implementate nelle future versioni di Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

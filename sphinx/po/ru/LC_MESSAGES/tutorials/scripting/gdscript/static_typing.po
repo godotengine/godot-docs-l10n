@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,9 @@ msgstr ""
 "Возможно, вы ранее хранили узел в переменной и набирали точку, но оставались "
 "без предложений автозавершения:"
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -111,6 +114,9 @@ msgstr ""
 "Это связано с динамическим кодом. Godot не может знать, какой тип узла или "
 "значения вы передаете в функцию. Однако, если вы опишите тип явно, вы "
 "получите все публичные методы и переменные из узла:"
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -313,6 +319,9 @@ msgstr ""
 "KinematicBody2D)`` и т.д. Godot обеспечит работу типа и, если это так, то "
 "номер строки слева в редакторе скриптов станет зеленым."
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Небезопасная строка (строка 7) против Безопасных Строк (строки 6 и 8)"
 
@@ -458,3 +467,7 @@ msgstr ""
 "распространенных ошибок и создавать масштабируемые системы. В будущем "
 "статические типы также принесут вам хороший прирост производительности "
 "благодаря предстоящей оптимизации компилятора."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

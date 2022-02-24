@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,9 +84,9 @@ msgid ""
 "`Shading language reference <doc_shading_language>`."
 msgstr ""
 "GLSLでは、属性を使用して頂点ごとの情報を渡すことができ、必要に応じて柔軟に渡"
-"すことができます。 Godotには、\\ ``VERTEX``(位置)、\\ ``COLOR``\\ 、\\ ``UV``"
-"\\ 、\\ ``UV2``\\ 、\\ ``NORMAL`` など、設定された数の入力属性があります。完"
-"全なリストについては :ref:`Shading language reference "
+"すことができます。 Godotには、\\ ``VERTEX``(位置)、\\ ``COLOR``\\ 、\\ "
+"``UV``\\ 、\\ ``UV2``\\ 、\\ ``NORMAL`` など、設定された数の入力属性がありま"
+"す。完全なリストについては :ref:`Shading language reference "
 "<doc_shading_language>` を参照してください。"
 
 msgid "gl_Position"
@@ -180,9 +180,9 @@ msgstr ""
 "Cとの類似性を維持するために、GLSLではマクロを使用できます。一般的に "
 "``#define`` は定数または小さな関数を定義するために使用されます。定義をGodotの"
 "シェーディング言語に変換する簡単な方法はありません。定義されている関数の場合"
-"は関数で置き換え、定数の場合は均一で置き換えます。他のマクロ(``\"#if``"
-"\\ 、\\ ``#ifdef`` など)については、コンパイルの前処理段階で実行されるため、"
-"同等のマクロはありません。"
+"は関数で置き換え、定数の場合は均一で置き換えます。他のマクロ"
+"(``\"#if``\\ 、\\ ``#ifdef`` など)については、コンパイルの前処理段階で実行さ"
+"れるため、同等のマクロはありません。"
 
 msgid "Variables"
 msgstr "変数"
@@ -528,3 +528,7 @@ msgid ""
 "<glsl_coordinates>`."
 msgstr ""
 "Book of Shadersは :ref:`GLSL <glsl_coordinates>` と同じ座標系を使用します。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

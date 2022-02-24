@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,18 +28,17 @@ msgid ""
 "functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
-"Godot使用类似于GLSL ES 3.0的着色语言. 支持大多数数据类型和函数, 并且可能会随"
-"着时间的推移添加少数几种类型和函数."
+"Godot 使用类似于 GLSL ES 3.0 的着色语言。支持大多数数据类型和函数，并且可能会"
+"随着时间的推移添加剩余的几种类型和函数。"
 
-#, fuzzy
 msgid ""
 "If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
 "Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
 "you transition from regular GLSL to Godot's shading language."
 msgstr ""
-"如果您已经熟悉GLSL, :ref:`Godot 着色器迁移指南 "
-"<doc_migrating_to_godot_shader_language>` 是一个帮助您从常规GLSL转换到Godot着"
-"色语言的资源."
+"如果您已经熟悉 GLSL，\\ :ref:`Godot 着色器迁移指南 "
+"<doc_converting_glsl_to_godot_shaders>`\\ 是一个帮助您从常规 GLSL 转换到 "
+"Godot 着色语言的资源。"
 
 msgid "Data types"
 msgstr "数据类型"
@@ -63,7 +62,7 @@ msgid "**bool**"
 msgstr "**bool**"
 
 msgid "Boolean datatype, can only contain ``true`` or ``false``."
-msgstr "布尔数据类型, 只能包含 \"true\" 或 \"false\"."
+msgstr "布尔数据类型，只能包含 ``true`` 或 ``false``\\ 。"
 
 msgid "**bvec2**"
 msgstr "**bvec2**"
@@ -453,7 +452,7 @@ msgid "Operator"
 msgstr "操作符"
 
 msgid "1 (highest)"
-msgstr "1 (最高)"
+msgstr "1（最高）"
 
 msgid "parenthetical grouping"
 msgstr "括号分组"
@@ -465,7 +464,7 @@ msgid "2"
 msgstr "2"
 
 msgid "unary"
-msgstr "unary"
+msgstr "单目"
 
 msgid "**+, -, !, ~**"
 msgstr "**+, -, !, ~**"
@@ -474,7 +473,7 @@ msgid "3"
 msgstr "3"
 
 msgid "multiplicative"
-msgstr "multiplicative"
+msgstr "乘除法"
 
 msgid "**/, \\*, %**"
 msgstr "**/, \\*, %**"
@@ -483,7 +482,7 @@ msgid "4"
 msgstr "4"
 
 msgid "additive"
-msgstr "additive"
+msgstr "加减法"
 
 msgid "**+, -**"
 msgstr "**+, -**"
@@ -492,7 +491,7 @@ msgid "5"
 msgstr "5"
 
 msgid "bit-wise shift"
-msgstr "逐位移位"
+msgstr "移位"
 
 msgid "**<<, >>**"
 msgstr "**<<, >>**"
@@ -501,7 +500,7 @@ msgid "6"
 msgstr "6"
 
 msgid "relational"
-msgstr "相关的"
+msgstr "关系比较"
 
 msgid "**<, >, <=, >=**"
 msgstr "**<, >, <=, >=**"
@@ -510,7 +509,7 @@ msgid "7"
 msgstr "7"
 
 msgid "equality"
-msgstr "平等"
+msgstr "相等比较"
 
 msgid "**==, !=**"
 msgstr "**==, !=**"
@@ -552,7 +551,7 @@ msgid "**&&**"
 msgstr "**&&**"
 
 msgid "12 (lowest)"
-msgstr "12(最低)"
+msgstr "12（最低）"
 
 msgid "logical inclusive OR"
 msgstr "逻辑或"
@@ -564,7 +563,7 @@ msgid "Flow control"
 msgstr "流控制"
 
 msgid "Godot Shading language supports the most common types of flow control:"
-msgstr "Godot 着色器语言支持最常见的控制流类型:"
+msgstr "Godot 着色器语言支持最常见的控制流类型："
 
 msgid ""
 "Keep in mind that, in modern GPUs, an infinite loop can exist and can freeze "
@@ -628,9 +627,9 @@ msgid ""
 "processor*, and the value is interpolated for every pixel in the *fragment "
 "processor*."
 msgstr ""
-"要从顶点处理器函数往片段（或者灯光）处理器函数里发送数据，可以使用 *varying*"
-"\\ 。\\ *顶点处理器*\\ 中的每一个图元顶点都是 varying 的，会为\\ *片段处理器*"
-"\\ 中的每一个像素做插值。"
+"要从顶点处理器函数往片段（或者灯光）处理器函数里发送数据，可以使用 "
+"*varying*\\ 。\\ *顶点处理器*\\ 中的每一个图元顶点都是 varying 的，会为\\ *片"
+"段处理器*\\ 中的每一个像素做插值。"
 
 msgid "Varying can also be an array:"
 msgstr "Varying 也可以是数组："
@@ -698,37 +697,38 @@ msgstr ""
 msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
-msgstr "你可以在编辑器中设置材质中的uniform. 或者你可以通过GDScript来设置它们:"
+msgstr ""
+"你可以在编辑器中设置材质中的 uniform。或者你可以通过 GDScript 来设置它们："
 
 msgid ""
 "The first argument to ``set_shader_param`` is the name of the uniform in the "
 "shader. It must match *exactly* to the name of the uniform in the shader or "
 "else it will not be recognized."
 msgstr ""
-"``set_shader_param`` 的第一个参数是着色器中的uniform名称. 它必须与着色器中的"
-"uniform名称 *完全* 一致, 否则将无法被识别."
+"``set_shader_param`` 的第一个参数是着色器中的 uniform 名称。它必须与着色器中"
+"的 uniform 名称\\ *完全*\\ 一致，否则将无法被识别。"
 
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used."
 msgstr ""
-"除了 *void* 之外, 任何GLSL类型都可以成为uniform. 此外,Godot还提供了可选的着色"
-"器提示, 以使编译器了解uniform是用来干什么的."
+"除了 *void* 之外，任何 GLSL 类型都可以成为 uniform。此外，Godot 还提供了可选"
+"的着色器提示，以使编译器了解 uniform 是用来干什么的。"
 
 msgid ""
 "It's important to understand that textures that are supplied as color "
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
 "Godot's 3D engine renders in linear color space."
 msgstr ""
-"重要的是要明白, 以颜色形式提供的纹理需要适当的sRGB->线性转换的提示(即 "
-"``hint_albedo``), 因为Godot的3D引擎在线性颜色空间中渲染."
+"重要的是要明白，以颜色形式提供的纹理需要适当的 sRGB->线性转换的提示（即 "
+"``hint_albedo``\\ ），因为 Godot 的 3D 引擎在线性颜色空间中渲染。"
 
 msgid "Full list of hints below:"
-msgstr "以下提示的完整列表:"
+msgstr "以下是完整的提示列表："
 
 msgid "Hint"
-msgstr "暗示"
+msgstr "提示"
 
 msgid "hint_color"
 msgstr "hint_color"
@@ -737,25 +737,25 @@ msgid "Used as color"
 msgstr "用作颜色"
 
 msgid "**int, float**"
-msgstr "**int, float**"
+msgstr "**int、float**"
 
 msgid "hint_range(min, max[, step])"
 msgstr "hint_range(min,max [,step] )"
 
 msgid "Used as range (with min/max/step)"
-msgstr "用作范围(最小/最大/步)"
+msgstr "用作范围（最小值/最大值/步长）"
 
 msgid "hint_albedo"
 msgstr "hint_albedo"
 
 msgid "Used as albedo color, default white"
-msgstr "用作反射颜色, 默认为白色"
+msgstr "用作反照率颜色，默认为白色"
 
 msgid "hint_black_albedo"
 msgstr "hint_black_albedo"
 
 msgid "Used as albedo color, default black"
-msgstr "用作反射颜色, 默认为黑色"
+msgstr "用作反照率颜色，默认为黑色"
 
 msgid "hint_normal"
 msgstr "hint_normal"
@@ -767,27 +767,27 @@ msgid "hint_white"
 msgstr "hint_white"
 
 msgid "As value, default to white."
-msgstr "作为值, 默认为白色."
+msgstr "作为值，默认为白色。"
 
 msgid "hint_black"
 msgstr "hint_black"
 
 msgid "As value, default to black"
-msgstr "作为值, 默认为黑色"
+msgstr "作为值，默认为黑色"
 
 msgid "hint_aniso"
 msgstr "hint_aniso"
 
 msgid "As flowmap, default to right."
-msgstr "作为流程图, 默认为右."
+msgstr "作为 FlowMap，默认为右。"
 
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
 "variables from GDScript to shaders, Godot converts the type automatically. "
 "Below is a table of the corresponding types:"
 msgstr ""
-"GDScript使用的变量类型与GLSL不同, 所以当把变量从GDScript传递到着色器时,Godot"
-"会自动转换类型. 以下是相应类型的表格:"
+"GDScript 使用的变量类型与 GLSL 不同，所以当把变量从 GDScript 传递到着色器时，"
+"Godot 会自动转换类型。以下是相应类型的表格："
 
 msgid "GDScript type"
 msgstr "GDScript 类型"
@@ -961,7 +961,7 @@ msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
-msgstr "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
+msgstr "幂（\\ ``x`` < 0 或 ``x`` = 0 且 ``y`` <= 0 时未定义）"
 
 msgid "vec_type **exp** (vec_type x)"
 msgstr "vec_type **exp** (vec_type x)"
@@ -1096,19 +1096,19 @@ msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
 
 msgid "Linear interpolate (scalar coefficient)"
-msgstr "线性插值(标量系数)"
+msgstr "线性插值（标量系数）"
 
 msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 
 msgid "Linear interpolate (vector coefficient)"
-msgstr "线性插值(向量系数)"
+msgstr "线性插值（向量系数）"
 
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 
 msgid "Linear interpolate (boolean-vector selection)"
-msgstr "线性插值(布尔向量选择)"
+msgstr "线性插值（布尔向量选择）"
 
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "vec_type **step** (vec_type a, vec_type b)"
@@ -1126,7 +1126,7 @@ msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 
 msgid "Hermite interpolate"
-msgstr "Hermite插值"
+msgstr "Hermite 插值"
 
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
 msgstr "vec_type **smoothstep** (float a, float b, vec_type c)"
@@ -1135,7 +1135,7 @@ msgid "bvec_type **isnan** (vec_type x)"
 msgstr "bvec_type **isnan** (vec_type x)"
 
 msgid "Returns ``true`` if scalar or vector component is ``NaN``"
-msgstr "如果标量或向量分量是 \"NaN\", 则返回 \"true\""
+msgstr "如果标量或向量分量是 ``NaN`` 则返回 ``true``"
 
 msgid "bvec_type **isinf** (vec_type x)"
 msgstr "bvec_type **isinf** (vec_type x)"
@@ -1147,25 +1147,25 @@ msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr "ivec_type **floatBitsToInt** (vec_type x)"
 
 msgid "Float->Int bit copying, no conversion"
-msgstr "Float-> Int位复制, 无转换"
+msgstr "Float->Int 位复制，无转换"
 
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr "uvec_type **floatBitsToUint** (vec_type x)"
 
 msgid "Float->UInt bit copying, no conversion"
-msgstr "Float-> UInt位复制, 无转换"
+msgstr "Float->UInt 位复制，无转换"
 
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr "vec_type **intBitsToFloat** (ivec_type x)"
 
 msgid "Int->Float bit copying, no conversion"
-msgstr "Int-> Float位复制, 无转换"
+msgstr "Int-> Float 位复制，无转换"
 
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr "vec_type **uintBitsToFloat** (uvec_type x)"
 
 msgid "UInt->Float bit copying, no conversion"
-msgstr "UInt->浮点复制, 无转换"
+msgstr "UInt->Float 位复制，无转换"
 
 msgid "float **length** (vec_type x)"
 msgstr "float **length** (vec_type x)"
@@ -1177,19 +1177,19 @@ msgid "float **distance** (vec_type a, vec_type b)"
 msgstr "float **distance** (vec_type a, vec_type b)"
 
 msgid "Distance between vectors i.e ``length(a - b)``"
-msgstr "向量之间的距离, 即 ``length(a - b)``"
+msgstr "向量间距，即 ``length(a - b)``"
 
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr "float **dot** (vec_type a, vec_type b)"
 
 msgid "Dot product"
-msgstr "点乘"
+msgstr "点积"
 
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 msgid "Cross product"
-msgstr "叉乘"
+msgstr "叉积"
 
 msgid "vec_type **normalize** (vec_type x)"
 msgstr "vec_type **normalize** (vec_type x)"
@@ -1201,7 +1201,7 @@ msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr "vec3 **reflect** (vec3 I, vec3 N)"
 
 msgid "Reflect"
-msgstr "反映"
+msgstr "反射"
 
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr "vec3 **refract** (vec3 I, vec3 N, float eta)"
@@ -1414,7 +1414,7 @@ msgid "vec_type **dFdx** (vec_type p)"
 msgstr "vec_type **dFdx** (vec_type p)"
 
 msgid "Derivative in ``x`` using local differencing"
-msgstr "使用局部微分法进行 ``x`` 的微分."
+msgstr "使用局部微分法进行 ``x`` 的微分"
 
 msgid "vec_type **dFdy** (vec_type p)"
 msgstr "vec_type **dFdy** (vec_type p)"
@@ -1427,3 +1427,7 @@ msgstr "vec_type **fwidth** (vec_type p)"
 
 msgid "Sum of absolute derivative in ``x`` and ``y``"
 msgstr "``x`` 和 ``y`` 的绝对导数之和"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

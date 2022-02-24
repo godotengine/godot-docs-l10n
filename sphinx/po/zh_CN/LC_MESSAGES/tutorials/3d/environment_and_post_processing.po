@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,8 +68,8 @@ msgid ""
 "(explained below). This means it can be overridden on a per-scene basis, "
 "which makes it quite useful."
 msgstr ""
-"添加的任何环境都具有比默认环境更高的优先级(如下所述). 这意味着它可以在每个场"
-"景的基础上被覆盖, 这使它非常有用."
+"添加的任何 Environment 都具有比默认 Environment 更高的优先级（后述）。这意味"
+"着它可以针对各个场景分别进行覆盖，这使它非常有用。"
 
 msgid "Default environment"
 msgstr "默认环境"
@@ -351,9 +351,9 @@ msgid ""
 "objects are in contact with each other (object over floor, over a table, "
 "floating on water, etc)."
 msgstr ""
-"虽然Godot支持三种反射数据源(Sky,ReflectionProbe和GIProbe), 但它们可能无法为所"
-"有情况提供足够的细节. 屏幕空间反射最有意义的场景是物体彼此接触(地板上的物体, "
-"桌子上的物体, 漂浮在水面上等)."
+"虽然 Godot 支持三种反射数据源（Sky、ReflectionProbe、GIProbe），但它们可能无"
+"法为所有情况提供足够的细节。屏幕空间反射最有意义的场景是物体彼此接触（地板上"
+"的物体、桌子上的物体、漂浮在水面上等）。"
 
 msgid ""
 "The other advantage (even if only enabled to a minimum), is that it works in "
@@ -688,3 +688,7 @@ msgstr "第二种是通过提供颜色校正梯度. 如下所示的常规黑色�
 msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr "但是创建自定义的会允许将每个通道映射到不同的颜色:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

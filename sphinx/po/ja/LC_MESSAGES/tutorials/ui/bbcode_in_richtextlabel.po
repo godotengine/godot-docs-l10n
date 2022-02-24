@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,15 +65,15 @@ msgid ""
 "section (``bbcode_enabled``)."
 msgstr ""
 "均一に書式設定されたテキストの場合は、\"Text\" プロパティで記述できますが、"
-"BBCodeマークアップを使用する場合は、代わりに \"Bb Code\" セクションの \"Text"
-"\" プロパティを使用する必要があります(``bbcode_text``)。このプロパティに書き"
-"込むと、マークアップの解析がトリガーされ、要求に応じてテキストの書式が設定さ"
-"れます。この処理を行う前に、”Bb Code\" セクションの \"Enabled\"チェックボック"
-"ス(``bbcode_enabled``)を切り替える必要があります。"
+"BBCodeマークアップを使用する場合は、代わりに \"Bb Code\" セクションの "
+"\"Text\" プロパティを使用する必要があります(``bbcode_text``)。このプロパティ"
+"に書き込むと、マークアップの解析がトリガーされ、要求に応じてテキストの書式が"
+"設定されます。この処理を行う前に、”Bb Code\" セクションの \"Enabled\"チェック"
+"ボックス(``bbcode_enabled``)を切り替える必要があります。"
 
 msgid ""
-"For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
-"\" with a blue color."
+"For example, ``BBCode [color=blue]blue[/color]`` would render the word "
+"\"blue\" with a blue color."
 msgstr ""
 "たとえば、\\ ``BBCode [color=blue]blue[/color]`` は、単語 \"blue\" を青色でレ"
 "ンダリングします。"
@@ -350,7 +350,6 @@ msgstr ""
 "不透明なRGBカラーの場合、桁の省略をしない6桁の16進コードがサポートされます。"
 "例 ``[color=#ffffff]white[/color]``。"
 
-#, fuzzy
 msgid ""
 "For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
@@ -358,10 +357,9 @@ msgid ""
 "one. Short RGBA color codes such as ``#86f2`` (equivalent to ``#8866ff22``) "
 "are also supported."
 msgstr ""
-"透明なRGBカラーの場合、8桁の16進コードを使用できます。例 "
+"透過RGBカラーの場合、8桁の16進コードを使用できます。例 "
 "``[color=#88ffffff]translucent white[/color]``。この場合、アルファチャネルは"
-"カラーコードの **最初の** コンポーネントであり、最後のコンポーネントではない"
-"ことに注意してください。"
+"カラーコードの **最初の** 値であり、最後の値ではないことに注意してください。"
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr ""
@@ -620,3 +618,7 @@ msgstr "\\ Matrix"
 
 msgid "This will add a few new BBCode commands, which can be used like so:"
 msgstr "これにより、次のように使用できる新しいBBCodeコマンドが追加されます:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

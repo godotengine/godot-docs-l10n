@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,9 +103,9 @@ msgid ""
 "process semi-automated as you only have to build the engine, run it and try "
 "to reproduce the bug."
 msgstr ""
-"如果您发现在上述测试过程中未显示该错误的构建, 则可以立即将回归二等分. Git版本"
-"控制系统为此提供了一个内置命令:git bisect. 这使过程成为半自动化的过程, 因为您"
-"只需要构建引擎, 运行它并尝试重现该错误即可."
+"如果您发现在上述测试过程中未显示该错误的构建，则可以立即将回归二等分。Git 版"
+"本控制系统为此提供了一个内置命令：\\ ``git bisect``\\ 。这使过程成为半自动化"
+"的过程，因为您只需要构建引擎，运行它并尝试重现该错误即可。"
 
 msgid ""
 "Before bisecting a regression, you need to set up a build environment to "
@@ -159,29 +159,29 @@ msgid ""
 "done, in the terminal window, use ``cd`` to reach the Godot repository "
 "folder and enter the following command:"
 msgstr ""
-":ref:`使用Git <doc_getting_source>` 获取Godot的源代码. 完成此操作后, 在终端窗"
-"口中, 使用cd进入Godot存储库文件夹并输入以下命令:"
+":ref:`使用 Git 获取 Godot 的源代码 <doc_getting_source>`\\ 。完成后，在终端窗"
+"口中，使用 ``cd`` 进入 Godot 仓库文件夹并输入以下命令："
 
 msgid "Compile Godot. This assumes you've set up a build environment:"
-msgstr "编译Godot. 这假定您已设置一个生成环境:"
+msgstr "编译 Godot。这假定您已经设置好了构建环境："
 
 msgid ""
 "Since building Godot takes a while, you want to dedicate as many CPU threads "
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
 "command assigns 4 CPU threads to compiling Godot."
 msgstr ""
-"由于构建Godot需要一些时间, 因此您希望为任务分配尽可能多的CPU线程. 这就是-j参"
-"数的作用. 在此, 该命令分配4个CPU线程来编译Godot."
+"由于构建 Godot 需要花上一定时间，因此您会希望为任务分配尽可能多的 CPU 线程。"
+"这就是 ``-j`` 参数的作用。在此，该命令会分配 4 个 CPU 线程来编译 Godot。"
 
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
 msgstr "运行位于 ``bin/`` 文件夹中的二进制文件并尝试重现该错误。"
 
 msgid "If the build **still** exhibits the bug, run the following command:"
-msgstr "如果构建 \"仍然\" 显示错误, 请运行以下命令:"
+msgstr "如果构建\\ **仍然**\\ 显示错误，请运行以下命令："
 
 msgid "If the build **does not** exhibit the bug, run the following command:"
-msgstr "如果构建 **没有** 显示错误, 请运行以下命令:"
+msgstr "如果构建\\ **没有**\\ 显示错误，请运行以下命令："
 
 msgid ""
 "After entering one of the commands above, Git will switch to a different "
@@ -212,3 +212,7 @@ msgid ""
 msgstr ""
 "您可以在 ``git bisect`` 上阅读完整文档, `这里 <https://git-scm.com/docs/git-"
 "bisect>`__ ."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

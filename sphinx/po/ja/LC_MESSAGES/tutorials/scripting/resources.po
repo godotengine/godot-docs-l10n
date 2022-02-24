@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid ""
 msgstr ""
 "ここまでのチュートリアルではGodotの、エンジンのほとんどの機能が頼りにしてい"
 "る、\\ :ref:`Node <class_Node>`\\ (ノード)クラスについて主に紹介してきまし"
-"た。もうひとつ、同じくらい重要なデータ型は\\ :ref:`Resource <class_Resource>`"
-"\\ (リソース)です。"
+"た。もうひとつ、同じくらい重要なデータ型は\\ :ref:`Resource "
+"<class_Resource>`\\ (リソース)です。"
 
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
@@ -236,9 +236,9 @@ msgstr ""
 "これには、JSON、CSV、カスタムTXTファイルなどの代替となるデータ構造を超える多"
 "くの明確な利点があります。これらのアセットは ユーザーがインポートするときに :"
 "ref:`Dictionary <class_Dictionary>` (JSON) または :ref:`File <class_File>` と"
-"してのみ解析できます。それに対してリソースは\\ :ref:`Object <class_Object>`"
-"\\ 、\\ :ref:`Reference <class_Reference>`\\ 、および\\ :ref:`Resource "
-"<class_Resource>`\\ 機能の継承によって、際立った利便性があります。"
+"してのみ解析できます。それに対してリソースは\\ :ref:`Object "
+"<class_Object>`\\ 、\\ :ref:`Reference <class_Reference>`\\ 、および\\ :ref:"
+"`Resource <class_Resource>`\\ 機能の継承によって、際立った利便性があります。"
 
 msgid ""
 "They can define constants, so constants from other data fields or objects "
@@ -347,10 +347,11 @@ msgid ""
 "a name for your script alone will add it to the Inspector's creation dialog. "
 "This will auto-add your script to the Resource object you create."
 msgstr ""
-"スクリプトの言語が :ref:`script classes <doc_scripting_continued_class_name>`"
-"\\ をサポートしている場合は、この手順が合理化されます。スクリプトの名前を定義"
-"するだけで、その名前がインスペクタの作成ダイアログに追加されます。これによ"
-"り、作成したリソースオブジェクトにスクリプトが自動的に追加されます。"
+"スクリプトの言語が :ref:`script classes "
+"<doc_scripting_continued_class_name>`\\ をサポートしている場合は、この手順が"
+"合理化されます。スクリプトの名前を定義するだけで、その名前がインスペクタの作"
+"成ダイアログに追加されます。これにより、作成したリソースオブジェクトにスクリ"
+"プトが自動的に追加されます。"
 
 msgid "Let's see some examples."
 msgstr "いくつかの例を見てみましょう。"
@@ -427,3 +428,7 @@ msgstr ""
 "以下の例では、Godotは ``Node`` スクリプトを読み込み、それが ``Resource`` を拡"
 "張していないことを確認して、互換性がないタイプなので、スクリプトがリソースオ"
 "ブジェクトのロードに失敗したと判断します。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,6 @@ msgstr ""
 "提供的（轨迹设置除外）。您可以通过单击场景中的节点，然后在工具栏的“粒子”菜单"
 "中选择“转换为 CPU 粒子”，将 Particles2D 节点转换为 CPUParticles2D 节点。"
 
-#, fuzzy
 msgid ""
 "The rest of this tutorial is going to use the Particles2D node. First, add a "
 "Particles2D node to your scene. After creating that node you will notice "
@@ -91,8 +90,8 @@ msgid ""
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
 "要将运行材质添加到粒子节点，请转到检查器面板中的 ``Process Material``\\ 。单"
-"击 ``Material`` 旁边的框，然后从下拉菜单中选择 ``新建 ParticlesMaterial``"
-"\\ 。"
+"击 ``Material`` 旁边的框，然后从下拉菜单中选择 ``新建 "
+"ParticlesMaterial``\\ 。"
 
 msgid "Your Particles2D node should now be emitting white points downward."
 msgstr "您的 Particles2D 节点现在应该可以向下发射白点了。"
@@ -502,3 +501,7 @@ msgid ""
 msgstr ""
 "不应该直接添加图像到 ``Point Texture`` 或 ``Color Texture`` 中. 应该始终使用"
 "\"加载Emisson Mask(发射遮挡)\"菜单."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

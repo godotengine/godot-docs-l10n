@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -401,15 +401,13 @@ msgstr "**間接照明によるグローバルイルミネーション:**"
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr "ベイク済みライトマップ (高速ですが、実行時は更新不可)。"
 
-#, fuzzy
 msgid ""
 "Supports baking indirect light only or baking both direct and indirect "
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
-"バイクは間接照明のみ、または直接照明と間接照明同時に使うのができます。バイク"
-"モードの調整は照明ごとに設定し、ハイブリッドライトベーキングを可能にできま"
-"す。"
+"ベイクは間接照明のみ、または直接照明と間接照明の両方をサポート。ベイクモード"
+"は、ライトごとに調整して、ハイブリッドライトベーキングが可能。"
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
@@ -696,8 +694,8 @@ msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
-":ref:`グラフベースのビジュアルスクリプト言語 <doc_what_is_visual_script>`"
-"\\ 。"
+":ref:`グラフベースのビジュアルスクリプト言語 "
+"<doc_what_is_visual_script>`\\ 。"
 
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
@@ -1034,14 +1032,18 @@ msgstr "XR (ARおよびVR) に対応"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "iOSのARKitをすぐに使える状態で対応。"
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "OpenXRおよびOpenVR APIに対応。"
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"Oculus QuestやHTC Viveのような人気のVRヘッドセットに、プラグインにて対応。"
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "OpenXRおよびOpenVR APIに対応。"
 
 msgid "GUI system"
 msgstr "GUIシステム"
@@ -1306,3 +1308,7 @@ msgstr ""
 "`Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ には、コミュニティから求められている今後の Godot リリースで実装"
 "される可能性のある機能が掲載されています。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -559,7 +559,7 @@ msgstr ""
 "岐を取ることができます。"
 
 msgid "Condition"
-msgstr "条件(Condition)"
+msgstr ""
 
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
@@ -574,7 +574,7 @@ msgstr ""
 "ありません。"
 
 msgid "Iterator"
-msgstr "イテレータ(Iterator)"
+msgstr "イテレータ"
 
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
@@ -595,7 +595,7 @@ msgid "When done, it goes via the \"exit\" sequence port."
 msgstr "完了すると、 \"exit\" シーケンスポートを経由します。"
 
 msgid "Return"
-msgstr "リターン(Return)"
+msgstr "Return(戻り値)"
 
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
@@ -605,7 +605,7 @@ msgstr ""
 "ノードを追加します。Returnノードは、関数を強制的に終了します。"
 
 msgid "Sequence"
-msgstr "シーケンス(Sequence)"
+msgstr ""
 
 msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
@@ -634,7 +634,7 @@ msgstr ""
 "用できます:"
 
 msgid "Switch"
-msgstr "スイッチ(Switch)"
+msgstr ""
 
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
@@ -642,7 +642,7 @@ msgid ""
 msgstr "スイッチノードは条件ノードに似ていますが、同時に多くの値に一致します。"
 
 msgid "While"
-msgstr "\\ While"
+msgstr ""
 
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
@@ -740,7 +740,7 @@ msgstr ""
 "すると、ドロップ時に設定されて表示されるので、より適切に動作します。"
 
 msgid "Wait"
-msgstr "待機(Wait)"
+msgstr "Wait(待機)"
 
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
@@ -836,3 +836,7 @@ msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr "処理順序を考慮する場合は、シーケンスモードを使用してください:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

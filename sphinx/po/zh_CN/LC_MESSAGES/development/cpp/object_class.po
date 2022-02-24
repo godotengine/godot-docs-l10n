@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,10 +69,10 @@ msgstr "通过以下调用来注册类："
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
-msgstr "注册它将允许通过脚本, 代码实例化类, 或在反序列化时再次创建它们."
+msgstr "注册它将允许通过脚本、代码实例化类，或在反序列化时再次创建它们。"
 
 msgid "Registering as virtual is the same but it can't be instanced."
-msgstr "注册为虚拟是相同的, 但它不能实例化."
+msgstr "注册为虚是相同的，但它不能实例化。"
 
 msgid ""
 "Object-derived classes can override the static function ``static void "
@@ -81,9 +81,9 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
-"Object派生类可以重写静态函数 ``static void _bind_methods()``. 当一个类被注册"
-"时, 将调用此静态函数来注册所有对象方法, 属性, 常量等. 它只被调用一次. 如果"
-"Object派生类已实例化但尚未注册, 则它将自动注册为虚拟."
+"Object 派生类可以重写静态函数 ``static void _bind_methods()``\\ 。当类被注册"
+"时，将调用此静态函数来注册所有对象方法、属性、常量等。它只被调用一次。如果 "
+"Object 派生类已实例化但尚未注册，则它将自动注册为虚。"
 
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
@@ -162,8 +162,8 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
-"这是一个整数属性, 名为 ``amount``, ``hint`` 是一个范围, 范围从0到49, 步长为"
-"1(整数). 它仅适用于编辑器(可视化编辑值), 但不会被序列化."
+"这是一个整数属性，名为“amount”，提示的是一个范围，从 0 到 49，步长为 1（整"
+"数）。它仅适用于编辑器（可视化地编辑值），但不会被序列化。"
 
 msgid "Another example:"
 msgstr "另一个示例:"
@@ -216,8 +216,8 @@ msgid ""
 "are NOT virtual, DO NOT make them virtual, they are called for every "
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
-"可以在Object派生类中重写以下函数, 它们不是虚拟的, 不要将它们设置为虚拟, 它们"
-"会在每次重写时调用, 而之前的函数不会失效(多级调用)."
+"可以在 Object 派生类中重写以下函数，它们不是虚函数，不要将它们设置为虚，它们"
+"会在每次重写时调用，而之前的函数不会失效（多级调用）。"
 
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
@@ -355,3 +355,7 @@ msgid ""
 msgstr ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_saver.h>`__"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

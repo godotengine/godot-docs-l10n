@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,6 @@ msgstr ""
 "d'exportation pour définir les paramètres d'exportation. Une invocation "
 "basique de l'exportation serait :"
 
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -251,39 +250,38 @@ msgid ""
 "respect the directory the command was invoked from."
 msgstr ""
 "Ceci exportera vers ``some_name.exe``, en supposant qu'il y a un preset "
-"appelé \"Windows Desktop\" et que le modèle puisse être trouvé. Le chemin de "
-"sortie est relatif au chemin du projet ou absolu. Il ne respecte pas le "
-"répertoire à partir duquel la commande a été invoquée."
+"appelé \"Windows Desktop\" et que le modèle puisse être trouvé. (Le nom du "
+"modèle d'exportation doit être écrit entre guillemets s'il contient des "
+"espaces ou des caractères spéciaux) Le chemin de sortie est relatif au "
+"chemin du projet ou absolu, il ne respecte pas le répertoire à partir duquel "
+"la commande a été invoquée."
 
-#, fuzzy
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
 "single exported main pack file to be used with multiple Godot executables. "
 "When doing so, the export preset name must still be specified on the command "
 "line:"
 msgstr ""
-"Vous pouvez également le configurer pour exporter uniquement le fichier PCK "
-"ou ZIP, ce qui permet d'utiliser une seule exportation avec plusieurs "
-"exécutables Godot. Ceci se produit si le nom de la cible se termine par ``."
-"pck`` ou ``.zip``."
+"Vous pouvez également le configurer pour exporter *seulement* le fichier PCK "
+"ou ZIP, ce qui permet d'utiliser un seul fichier pack principal exporté avec "
+"plusieurs exécutables Godot. Dans ce cas, l' export preset doit toujours "
+"être spécifié sur la ligne de commande :"
 
-#, fuzzy
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, so that you do not need to ``cd`` to the project folder before running "
 "the command:"
 msgstr ""
 "Il est souvent utile de combiner le drapeau ``--export`` avec le drapeau ``--"
-"path`` et de créer un modèle d'exportation dédié pour l'exportation "
-"automatisée :"
+"path``, afin que vous n'ayez pas besoin de ``cd`` au dossier du projet avant "
+"d'exécuter la commande :"
 
-#, fuzzy
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more information about using Godot "
 "from the command line."
 msgstr ""
-"Voir :ref:`doc_command_line_tutorial` pour plus d'arguments de ligne de "
-"commande supportés par Godot."
+"Voir :ref:`doc_command_line_tutorial` pour plus d'informations sur "
+"l'utilisation de Godot depuis la ligne de commande."
 
 msgid "PCK versus ZIP pack file formats"
 msgstr "Formats de fichiers PCK contre ZIP pack"
@@ -352,3 +350,7 @@ msgstr ""
 "Sauvegardez le script de lancement et placez-le dans le même dossier que le "
 "binaire exporté. Sous Linux, assurez-vous de donner les droits d'exécution "
 "au script de lancement en utilisant la commande ``chmod +x launch.sh``."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,32 +29,33 @@ msgid ""
 "Library_(computing)#Shared_libraries>`__ at run-time. You can use it to run "
 "native code without compiling it with the engine."
 msgstr ""
+"**GDNative** 是 Godot 专有的技术，可以让引擎在运行时与原生\\ `共享库 "
+"<https://zh.wikipedia.org/zh-cn/"
+"%E5%87%BD%E5%BC%8F%E5%BA%AB#%E5%85%B1%E4%BA%AB%E5%BA%93>`\\ 交互。你可以用它"
+"来运行原生代码，无需和引擎一同编译。"
 
 msgid ""
 "GDNative is *not* a scripting language and has no relation to :ref:`GDScript "
 "<doc_gdscript>`."
-msgstr ""
+msgstr "GDNative *不是*\\ 脚本语言，与 :ref:`GDScript <doc_gdscript>` 无关。"
 
-#, fuzzy
 msgid "Differences between GDNative and C++ modules"
-msgstr "GLES2 和 GLES3 之间的差异"
+msgstr "GDNative 与 C++ 模块的区别"
 
-#, fuzzy
 msgid ""
 "You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` "
 "to run C or C++ code in a Godot project."
 msgstr ""
-"支持将 :ref:`C++ 模块 <doc_custom_modules_in_c++>` 静态链接到引擎二进制文件"
-"中."
+"GDNative 和 :ref:`C++ 模块 <doc_custom_modules_in_c++>`\\ 都可以用于在 Godot "
+"项目中执行 C 或 C++ 代码。"
 
 msgid ""
 "They also both allow you to integrate third-party libraries into Godot. The "
 "one you should choose depends on your needs."
-msgstr ""
+msgstr "它们都可以用来将第三方库集成进 Godot。选用哪一个取决于你的需求。"
 
-#, fuzzy
 msgid "Advantages of GDNative"
-msgstr "优势"
+msgstr "GDNative 的优势"
 
 msgid ""
 "Unlike modules, GDNative doesn't require compiling the engine's source code, "
@@ -64,9 +65,13 @@ msgid ""
 "you'd like to distribute as an add-on in the :ref:`asset library "
 "<doc_what_is_assetlib>`."
 msgstr ""
+"与模块不同，GDNative 不需要编译引擎的源码，可以使你的作品更易于分发。它可以让"
+"你访问 GDScript、C# 使用的大多数 API，让你在编写游戏逻辑时能够完全控制性能。"
+"这是你在\\ :ref:`素材库 <doc_what_is_assetlib>`\\ 中以插件形式分发高性能代码"
+"的理想选择。"
 
 msgid "Also:"
-msgstr ""
+msgstr "并且："
 
 msgid ""
 "GDNative is not limited to C and C++. Thanks to :ref:`third-party bindings "
@@ -82,6 +87,8 @@ msgid ""
 "project. With C++ modules, you have to recompile all the export templates "
 "you plan to use if you require its functionality at run-time."
 msgstr ""
+"你可以在编辑器和导出项目中使用相同的编译后的 GDNative 库。而对于 C++ 模块，如"
+"果你想在运行时使用相关功能，就必须重新编译所有想要使用的导出模板。"
 
 msgid ""
 "GDNative only requires you to compile your library, not the whole engine. "
@@ -89,9 +96,12 @@ msgid ""
 "Every time you change a module, you need to recompile the engine. Even with "
 "incremental builds, this process is slower than using GDNative."
 msgstr ""
+"GDNative 只需编译你自己的库，而不是整个引擎。C++ 模块则与此不同，是会静态编译"
+"进引擎的。每修改一次模块，你就需要重新编译一次引擎。即使使用增量构建，这一过"
+"程也比 GDNative 要慢。"
 
 msgid "Advantages of C++ modules"
-msgstr ""
+msgstr "C++ 模块的优势"
 
 msgid ""
 "We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where "
@@ -103,22 +113,27 @@ msgstr ""
 msgid ""
 "C++ modules provide deeper integration into the engine. GDNative's access is "
 "limited to what the scripting API exposes."
-msgstr ""
+msgstr "C++ 模块与引擎的集成更加紧密。GDNative 仅限于访问脚本所暴露的 API。"
 
 msgid ""
 "You can use C++ modules to provide additional features in a project without "
 "carrying native library files around. This extends to exported projects."
 msgstr ""
+"使用 C++ 模块为项目提供额外功能，就可以免去携带原生库文件的麻烦。同样也适用于"
+"导出的项目。"
 
 msgid ""
 "C++ modules are supported on all platforms. In contrast, GDNative isn't "
 "supported on HTML5 and the Universal Windows Platform (UWP) yet."
 msgstr ""
+"所有平台都支持 C++ 模块。而 HTML5 和通用 Windows 平台（UWP）则尚不支持 "
+"GDNative。"
 
 msgid ""
 "C++ modules can be faster than GDNative, especially when the code requires a "
 "lot of communication through the scripting API."
 msgstr ""
+"C++ 模块比 GDNative 要快，尤其是在代码需要通过脚本 API 做大量通信的情况下。"
 
 msgid "Supported languages"
 msgstr "支持的语言"
@@ -168,3 +183,7 @@ msgid ""
 msgstr ""
 "这里列出的绑定并不都能用于生产。请在新项目中使用前先做足调查。同时，请确定该"
 "绑定与你所使用的 Godot 版本兼容。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

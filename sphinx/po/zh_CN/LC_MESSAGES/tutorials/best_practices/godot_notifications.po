@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgstr ""
 "Godot 中的每个对象都实现了 :ref:`_notification "
 "<class_Object_method__notification>` 方法。其目的是允许对象响应可能与之相关的"
 "各种引擎级回调。例如，如果引擎想让某个 :ref:`CanvasItem <class_CanvasItem>` "
-"去执行“绘制”（draw）操作，它就会去调用 ``_notification(NOTIFICATION_DRAW)``"
-"\\ 。"
+"去执行“绘制”（draw）操作，它就会去调用 "
+"``_notification(NOTIFICATION_DRAW)``\\ 。"
 
 msgid ""
 "Some of these notifications, like draw, are useful to override in scripts. "
@@ -78,8 +78,8 @@ msgid ""
 "before the engine deletes an Object, i.e. a 'destructor'."
 msgstr ""
 ":ref:`Object::NOTIFICATION_PREDELETE "
-"<class_Object_constant_NOTIFICATION_PREDELETE>`\\ ：在引擎删除一个 "
-"Object（即“destructor”析构函数）之前触发的回调。"
+"<class_Object_constant_NOTIFICATION_PREDELETE>`\\ ：在引擎删除一个 Object"
+"（即“destructor”析构函数）之前触发的回调。"
 
 msgid ""
 ":ref:`MainLoop::NOTIFICATION_WM_MOUSE_ENTER "
@@ -134,7 +134,7 @@ msgstr "您可以从通用的 ``_notification`` 方法, 访问所有这些自定
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
-msgstr "文档中标记为 ``虚拟(virtual)`` 的方法, 也打算被脚本重写."
+msgstr "文档中被标记为“virtual”的方法（虚方法）是为使用脚本覆盖准备的。"
 
 msgid ""
 "A classic example is the :ref:`_init <class_Object_method__init>` method in "
@@ -197,7 +197,7 @@ msgstr ""
 "增量时间方法中获取它."
 
 msgid "_init vs. initialization vs. export"
-msgstr "_init vs. initialization vs. export"
+msgstr "_init vs. 初始化 vs. export"
 
 msgid ""
 "If the script initializes its own node subtree, without a scene, that code "
@@ -279,3 +279,7 @@ msgstr ""
 "<class_Node_constant_NOTIFICATION_PARENTED>` 通知. 例如, 这有一个将节点方法连"
 "接到其父节点上自定义信号, 而不会失败的代码段。对可能在运行时创建并以数据为中"
 "心的节点很有用。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

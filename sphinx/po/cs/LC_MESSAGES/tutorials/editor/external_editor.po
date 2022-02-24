@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,6 @@ msgstr ""
 "Tato stránka vysvětluje, jak kódovat pomocí externího textového editoru."
 
 msgid ""
-"`External editors are currently incompatible with Godot's \"Sync Script "
-"Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
-msgstr ""
-"`Externí editory jsou v současné době nekompatibilní s funkcí "
-"\"Synchronizovat změny skriptů\" systému Godot. <https://github.com/"
-"godotengine/godot/issues/10946>`__"
-
-#, fuzzy
-msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
 "Editor Settings -> Text Editor -> External``"
@@ -43,7 +34,6 @@ msgstr ""
 "nastavení příslušného editoru prostřednictvím: ``Editor -> Nastavení editoru "
 "-> Textový editor -> Externí``"
 
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command-line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
@@ -127,30 +117,32 @@ msgstr "``\"+call cursor({line}, {col})\" {file}``"
 msgid "Emacs"
 msgstr ""
 
-#, fuzzy
 msgid "``emacs +{line}:{col} {file}``"
-msgstr "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
 
-#, fuzzy
 msgid ""
 "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
 "Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "V případě Visual Studio Code je třeba odkázat na soubor ``code.cmd``."
+msgstr ""
+"V případě Visual Studio Code je třeba odkázat na soubor ``code.cmd``.Pro "
+"Emacs můžete volat ``emacsclient`` místo ``emacs``, pokud používáte režim "
+"serveru."
 
-#, fuzzy
 msgid "Official editor plugins"
-msgstr "Oficiální zásuvný modul Git"
+msgstr "Oficiální zásuvné moduly editoru"
 
 msgid "We have official plugins for the following code editors:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+
+msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 
 #, fuzzy
-msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgid "Translation status"
+msgstr "Formát překladu"

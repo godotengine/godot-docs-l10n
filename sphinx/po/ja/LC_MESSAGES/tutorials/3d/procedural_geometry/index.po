@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,11 +53,12 @@ msgid ""
 "`MultiMeshInstance <class_MultiMeshInstance>`. While they are all related, "
 "they have slightly different uses."
 msgstr ""
-"Godotの多くの物には名前にメッシュがあります: :ref:`Mesh <class_Mesh>`"
-"\\ 、\\ :ref:`ArrayMesh <class_ArrayMesh>`\\ 、\\ :ref:`MeshInstance "
-"<class_MeshInstance>`\\ 、\\ :ref:`MultiMesh < class_MultiMesh>`\\ 、および"
-"\\ :ref:` MultiMeshInstance <class_MultiMeshInstance> `\\ 。それらはすべて関"
-"連がありますが、用途が少し異なります。"
+"Godotの多くの物には名前にメッシュがあります: :ref:`Mesh "
+"<class_Mesh>`\\ 、\\ :ref:`ArrayMesh <class_ArrayMesh>`\\ 、\\ :ref:"
+"`MeshInstance <class_MeshInstance>`\\ 、\\ :ref:`MultiMesh < "
+"class_MultiMesh>`\\ 、および\\ :ref:` MultiMeshInstance "
+"<class_MultiMeshInstance> `\\ 。それらはすべて関連がありますが、用途が少し異"
+"なります。"
 
 msgid ""
 "Meshes and ArrayMeshes are resources that are drawn using a MeshInstance "
@@ -132,12 +133,13 @@ msgstr ""
 "ARRAY_NORMAL`` にある配列は、頂点法線の :ref:`PoolVector3Array "
 "<class_PoolVector3Array>` です。"
 
+#, fuzzy
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
 "array is as easy as not assigning an array at the index ``ArrayMesh."
 "ARRAY_INDEX``. A non-indexed array stores unique vertex information for "
-"every triangle, meaning that when two triangle share a vertex, the vertex is "
-"duplicated in the array. An indexed surface array only stores vertex "
+"every triangle, meaning that when two triangles share a vertex, the vertex "
+"is duplicated in the array. An indexed surface array only stores vertex "
 "information for each unique vertex and then also stores an array of indices "
 "which maps out how to construct the triangles from the vertex array. In "
 "general, using an indexed array is faster, but it means you have to share "
@@ -304,3 +306,7 @@ msgstr ""
 "そのようなデータが必要な場合は非常に便利ですが、その情報が必要でない場合は使"
 "用するのは得策ではありません。 MeshDataToolは、面またはエッジ配列へのアクセス"
 "を必要とするアルゴリズムを使用する場合に最適に使用されます。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

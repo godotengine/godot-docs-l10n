@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,6 @@ msgstr ""
 "solution consiste à créer un plugin qui ajoute un nœud avec un comportement "
 "personnalisé."
 
-#, fuzzy
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
 "with any scripting language, they have fewer features than :ref:`the Script "
@@ -191,8 +190,8 @@ msgstr ""
 "Les nœuds ajoutés via un EditorPlugin sont des nœuds \"CustomType\". Bien "
 "qu'ils fonctionnent avec n'importe quel langage de script, ils ont moins de "
 "fonctionnalités que :ref:`le système Script Class "
-"<doc_scripting_continued_class_name>`. Si vous écrivez en GDScript ou "
-"NativeScript, nous vous recommandons d'utiliser Script Class à la place."
+"<doc_gdscript_basics_class_name>`. Si vous écrivez en GDScript ou "
+"NativeScript, nous vous recommandons d'utiliser Script Classes à la place."
 
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
@@ -402,3 +401,7 @@ msgstr ""
 "Vous pouvez créer vos propres plugins pour vous aider et les partager dans "
 "l'`Asset Library <https://godotengine.org/asset-library/>`_ afin que tous "
 "puissent bénéficier de votre travail."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

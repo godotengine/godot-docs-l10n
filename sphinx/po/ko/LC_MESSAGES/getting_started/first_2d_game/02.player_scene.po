@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,13 +138,13 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"왼쪽에는 애니메이션 목록이 있습니다. \"default\"를 클릭하고 이름을 \"right"
-"\"로 바꾸세요. 그런 다음 \"새 애니메이션(New Animation)\" 버튼을 클릭해 \"up"
-"\"이라는 두 번째 애니메이션을 만드세요. \"파일시스템(FileSystem)\" 독에서 플"
-"레이어 이미지를 찾으세요. 이 이미지는 이전에 압축을 푼 ``art`` 폴더 안에 있습"
-"니다. ``playerGrey_up[1/2]``\\ 와 ``playerGrey_walk[1/2]`` 두 개의 이미지를 "
-"해당 애니메이션에 대한 패널의 \"애니메이션 프레임(Animation Frame)\" 쪽으로 "
-"끌어다 놓으세요:"
+"왼쪽에는 애니메이션 목록이 있습니다. \"default\"를 클릭하고 이름을 "
+"\"right\"로 바꾸세요. 그런 다음 \"새 애니메이션(New Animation)\" 버튼을 클릭"
+"해 \"up\"이라는 두 번째 애니메이션을 만드세요. \"파일시스템(FileSystem)\" 독"
+"에서 플레이어 이미지를 찾으세요. 이 이미지는 이전에 압축을 푼 ``art`` 폴더 안"
+"에 있습니다. ``playerGrey_up[1/2]``\\ 와 ``playerGrey_walk[1/2]`` 두 개의 이"
+"미지를 해당 애니메이션에 대한 패널의 \"애니메이션 프레임(Animation Frame)\" "
+"쪽으로 끌어다 놓으세요:"
 
 #, fuzzy
 msgid ""
@@ -166,12 +166,12 @@ msgid ""
 "\"New CapsuleShape2D\". Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"마지막으로, :ref:`CollisionShape2D <class_CollisionShape2D>`\\ 를 ``Player``"
-"\\ 의 자식으로 추가하세요. 이것이 플레이어의 \"히트박스(hitbox)\", 즉 콜리전 "
-"영역을 결정합니다. 이 캐릭터에게는 ``CapsuleShape2D`` 노드가 가장 적합합니"
-"다, 그러므로 인스펙터(Inspecter)의 \"Shape\" 옆에 \"[비었음]([empty])\" -> "
-"\"새 CapsuleShape2D(New CapsuleShape2D)\"를 클릭하세요. 스프라이트 전체를 덮"
-"도록 두 개의 크기 핸들로 콜리전 영역 크기를 조절하세요:"
+"마지막으로, :ref:`CollisionShape2D <class_CollisionShape2D>`\\ 를 "
+"``Player``\\ 의 자식으로 추가하세요. 이것이 플레이어의 \"히트박스(hitbox)\", "
+"즉 콜리전 영역을 결정합니다. 이 캐릭터에게는 ``CapsuleShape2D`` 노드가 가장 "
+"적합합니다, 그러므로 인스펙터(Inspecter)의 \"Shape\" 옆에 \"[비었음]"
+"([empty])\" -> \"새 CapsuleShape2D(New CapsuleShape2D)\"를 클릭하세요. 스프라"
+"이트 전체를 덮도록 두 개의 크기 핸들로 콜리전 영역 크기를 조절하세요:"
 
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "다 되셨다면, 당신의 ``Player`` 씬은 이렇게 되어야 합니다:"
@@ -184,3 +184,7 @@ msgid ""
 "it. Then, we'll set up collision detection to know when the player got hit "
 "by something."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

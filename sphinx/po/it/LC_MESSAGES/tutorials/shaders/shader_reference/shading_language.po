@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -252,6 +252,7 @@ msgid ""
 "to unsigned:"
 msgstr ""
 
+#, fuzzy
 msgid "Members"
 msgstr "Membri"
 
@@ -321,6 +322,7 @@ msgid ""
 "necessary."
 msgstr ""
 
+#, fuzzy
 msgid "Arrays"
 msgstr "Arrays"
 
@@ -434,7 +436,6 @@ msgstr "3"
 msgid "multiplicative"
 msgstr "moltiplicativo"
 
-#, fuzzy
 msgid "**/, \\*, %**"
 msgstr "**/, \\*, %**"
 
@@ -575,8 +576,9 @@ msgstr ""
 msgid "Example below:"
 msgstr "Esempio qui sotto:"
 
+#, fuzzy
 msgid "Varyings"
-msgstr "Variabili"
+msgstr "Varyings"
 
 msgid ""
 "To send data from the vertex to the fragment (or light) processor function, "
@@ -633,8 +635,9 @@ msgid ""
 "default."
 msgstr ""
 
+#, fuzzy
 msgid "Uniforms"
-msgstr "Uniformi"
+msgstr "Uniforms"
 
 msgid ""
 "Passing values to shaders is possible. These are global to the whole shader "
@@ -733,8 +736,9 @@ msgstr ""
 msgid "GDScript type"
 msgstr "Tipo GDScript"
 
+#, fuzzy
 msgid "GLSL type"
-msgstr ""
+msgstr "Tipo GLSL"
 
 msgid "**Vector2**"
 msgstr "**Vector2**"
@@ -745,7 +749,6 @@ msgstr "**Vector3**"
 msgid "**Color**"
 msgstr "**Color**"
 
-#, fuzzy
 msgid "**Transform**"
 msgstr "**Transform**"
 
@@ -763,7 +766,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Built-in variables"
-msgstr "Modificare le istanze"
+msgstr "Variabili integrate"
 
 msgid ""
 "A large number of built-in variables are available, like ``UV``, ``COLOR`` "
@@ -775,7 +778,7 @@ msgstr ""
 
 #, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
 
 #, fuzzy
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
@@ -783,7 +786,7 @@ msgstr ":ref:`doc_canvas_item_shader`"
 
 #, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`Particle shaders <doc_particle_shader>`"
 
 #, fuzzy
 msgid "Built-in functions"
@@ -897,472 +900,490 @@ msgstr "Tangente iperbolica inversa"
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
+#, fuzzy
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
-msgstr ""
+msgstr "Potenza (indefinita se ``x`` <0 o se ``x`` = 0 e ``y`` <= 0)"
 
 msgid "vec_type **exp** (vec_type x)"
-msgstr ""
+msgstr "vec_type **exp** (vec_type x)"
 
+#, fuzzy
 msgid "Base-e exponential"
-msgstr ""
+msgstr "Esponenziale in base e"
 
 msgid "vec_type **exp2** (vec_type x)"
-msgstr ""
+msgstr "vec_type **exp2** (vec_type x)"
 
+#, fuzzy
 msgid "Base-2 exponential"
-msgstr ""
+msgstr "Esponenziale in base 2"
 
 msgid "vec_type **log** (vec_type x)"
-msgstr ""
+msgstr "vec_type **log** (vec_type x)"
 
+#, fuzzy
 msgid "Natural logarithm"
-msgstr ""
+msgstr "Logaritmo naturale"
 
 msgid "vec_type **log2** (vec_type x)"
-msgstr ""
+msgstr "vec_type **log2** (vec_type x)"
 
+#, fuzzy
 msgid "Base-2 logarithm"
-msgstr ""
+msgstr "Logaritmo in base 2"
 
 msgid "vec_type **sqrt** (vec_type x)"
-msgstr ""
+msgstr "vec_type **sqrt** (vec_type x)"
 
+#, fuzzy
 msgid "Square root"
-msgstr ""
+msgstr "Radice quadrata"
 
 msgid "vec_type **inversesqrt** (vec_type x)"
-msgstr ""
+msgstr "vec_type **inversesqrt** (vec_type x)"
 
+#, fuzzy
 msgid "Inverse square root"
-msgstr ""
+msgstr "Radice quadrata inversa"
 
 msgid "vec_type **abs** (vec_type x)"
-msgstr ""
+msgstr "vec_type **abs** (vec_type x)"
 
 msgid "Absolute"
 msgstr "Assoluto"
 
 msgid "ivec_type **abs** (ivec_type x)"
-msgstr ""
+msgstr "ivec_type **abs** (ivec_type x)"
 
 msgid "vec_type **sign** (vec_type x)"
-msgstr ""
+msgstr "vec_type **sign** (vec_type x)"
 
 msgid "Sign"
 msgstr "Segno"
 
 msgid "ivec_type **sign** (ivec_type x)"
-msgstr ""
+msgstr "ivec_type **sign** (ivec_type x)"
 
 msgid "vec_type **floor** (vec_type x)"
-msgstr ""
+msgstr "vec_type **floor** (vec_type x)"
 
 msgid "Floor"
 msgstr "Pavimento"
 
 msgid "vec_type **round** (vec_type x)"
-msgstr ""
+msgstr "vec_type **round** (vec_type x)"
 
 msgid "Round"
-msgstr "Rotondo"
+msgstr "Arrotonda"
 
 msgid "vec_type **roundEven** (vec_type x)"
-msgstr ""
+msgstr "vec_type **roundEven** (vec_type x)"
 
+#, fuzzy
 msgid "Round to the nearest even number"
-msgstr ""
+msgstr "Arrotonda al numero pari più vicino"
 
 msgid "vec_type **trunc** (vec_type x)"
-msgstr ""
+msgstr "vec_type **trunc** (vec_type x)"
 
 msgid "Truncation"
 msgstr "Troncamento"
 
 msgid "vec_type **ceil** (vec_type x)"
-msgstr ""
+msgstr "vec_type **ceil** (vec_type x)"
 
+#, fuzzy
 msgid "Ceil"
-msgstr "Parte intera"
+msgstr "Ceil"
 
 msgid "vec_type **fract** (vec_type x)"
-msgstr ""
+msgstr "vec_type **fract** (vec_type x)"
 
 msgid "Fractional"
 msgstr "Frazionario"
 
 msgid "vec_type **mod** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "vec_type **mod** (vec_type x, vec_type y)"
 
 msgid "Remainder"
 msgstr "Resto"
 
 msgid "vec_type **mod** (vec_type x , float y)"
-msgstr ""
+msgstr "vec_type **mod** (vec_type x , float y)"
 
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
-msgstr ""
+msgstr "vec_type **modf** (vec_type x, out vec_type i)"
 
 msgid "Fractional of ``x``, with ``i`` as integer part"
 msgstr ""
 
 msgid "vec_type  **min** (vec_type a, vec_type b)"
-msgstr ""
+msgstr "vec_type **min** (vec_type a, vec_type b)"
 
 msgid "Minimum"
 msgstr "Minimo"
 
 msgid "vec_type  **max** (vec_type a, vec_type b)"
-msgstr ""
+msgstr "vec_type **max** (vec_type a, vec_type b)"
 
 msgid "Maximum"
 msgstr "Massimo"
 
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
-msgstr ""
+msgstr "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 
 msgid "Clamp to ``min..max``"
 msgstr ""
 
 msgid "float **mix** (float a, float b, float c)"
-msgstr ""
+msgstr "float **mix** (float a, float b, float c)"
 
+#, fuzzy
 msgid "Linear interpolate"
-msgstr ""
+msgstr "Interpolazione lineare"
 
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
-msgstr ""
+msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
 
 msgid "Linear interpolate (scalar coefficient)"
 msgstr ""
 
 msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
-msgstr ""
+msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 
 msgid "Linear interpolate (vector coefficient)"
 msgstr ""
 
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
-msgstr ""
+msgstr "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 
 msgid "Linear interpolate (boolean-vector selection)"
 msgstr ""
 
 msgid "vec_type **step** (vec_type a, vec_type b)"
-msgstr ""
+msgstr "vec_type **step** (vec_type a, vec_type b)"
 
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
-msgstr ""
+msgstr "``b[i] < a[i] ? 0.0 : 1.0``"
 
 msgid "vec_type **step** (float a, vec_type b)"
-msgstr ""
+msgstr "vec_type **step** (float a, vec_type b)"
 
 msgid "``b[i] < a ? 0.0 : 1.0``"
-msgstr ""
+msgstr "``b[i] < a ? 0.0 : 1.0``"
 
 msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
-msgstr ""
+msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 
+#, fuzzy
 msgid "Hermite interpolate"
-msgstr ""
+msgstr "Interpolazione Hermite"
 
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
-msgstr ""
+msgstr "vec_type **smoothstep** (float a, float b, vec_type c)"
 
 msgid "bvec_type **isnan** (vec_type x)"
-msgstr ""
+msgstr "bvec_type **isnan** (vec_type x)"
 
 msgid "Returns ``true`` if scalar or vector component is ``NaN``"
 msgstr ""
 
 msgid "bvec_type **isinf** (vec_type x)"
-msgstr ""
+msgstr "bvec_type **isinf** (vec_type x)"
 
 msgid "Returns ``true`` if scalar or vector component is ``INF``"
 msgstr ""
 
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
-msgstr ""
+msgstr "ivec_type **floatBitsToInt** (vec_type x)"
 
 msgid "Float->Int bit copying, no conversion"
 msgstr ""
 
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
-msgstr ""
+msgstr "uvec_type **floatBitsToUint** (vec_type x)"
 
 msgid "Float->UInt bit copying, no conversion"
 msgstr ""
 
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
-msgstr ""
+msgstr "vec_type **intBitsToFloat** (ivec_type x)"
 
 msgid "Int->Float bit copying, no conversion"
 msgstr ""
 
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
-msgstr ""
+msgstr "vec_type **uintBitsToFloat** (uvec_type x)"
 
 msgid "UInt->Float bit copying, no conversion"
 msgstr ""
 
 msgid "float **length** (vec_type x)"
-msgstr ""
+msgstr "float **length** (vec_type x)"
 
 msgid "Vector length"
 msgstr "Lunghezza del vettore"
 
 msgid "float **distance** (vec_type a, vec_type b)"
-msgstr ""
+msgstr "float **distance** (vec_type a, vec_type b)"
 
 msgid "Distance between vectors i.e ``length(a - b)``"
 msgstr ""
 
 msgid "float **dot** (vec_type a, vec_type b)"
-msgstr ""
+msgstr "float **dot** (vec_type a, vec_type b)"
 
 #, fuzzy
 msgid "Dot product"
 msgstr "Prodotto scalare"
 
 msgid "vec3 **cross** (vec3 a, vec3 b)"
-msgstr ""
+msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 #, fuzzy
 msgid "Cross product"
 msgstr "Prodotto vettoriale"
 
 msgid "vec_type **normalize** (vec_type x)"
-msgstr ""
+msgstr "vec_type **normalize** (vec_type x)"
 
+#, fuzzy
 msgid "Normalize to unit length"
-msgstr ""
+msgstr "Normalizzare all'unità di lunghezza"
 
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
-msgstr ""
+msgstr "vec3 **reflect** (vec3 I, vec3 N)"
 
 msgid "Reflect"
 msgstr "Riflettere"
 
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
-msgstr ""
+msgstr "vec3 **refract** (vec3 I, vec3 N, float eta)"
 
 msgid "Refract"
 msgstr "Rifrazione"
 
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
-msgstr ""
+msgstr "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 
 msgid "If ``dot(Nref, I)`` < 0, return N, otherwise –N"
 msgstr ""
 
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
-msgstr ""
+msgstr "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 
 msgid "Matrix component multiplication"
 msgstr ""
 
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
-msgstr ""
+msgstr "mat_type **outerProduct** (vec_type column, vec_type row)"
 
 msgid "Matrix outer product"
 msgstr ""
 
 msgid "mat_type **transpose** (mat_type m)"
-msgstr ""
+msgstr "mat_type **transpose** (mat_type m)"
 
 msgid "Transpose matrix"
 msgstr ""
 
 msgid "float **determinant** (mat_type m)"
-msgstr ""
+msgstr "float **determinant** (mat_type m)"
 
 msgid "Matrix determinant"
 msgstr ""
 
 msgid "mat_type **inverse** (mat_type m)"
-msgstr ""
+msgstr "mat_type **inverse** (mat_type m)"
 
 msgid "Inverse matrix"
 msgstr ""
 
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **lessThan** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on < int/uint/float vectors"
 msgstr ""
 
 msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **greaterThan** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on > int/uint/float vectors"
 msgstr ""
 
 msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on <= int/uint/float vectors"
 msgstr ""
 
 msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on >= int/uint/float vectors"
 msgstr ""
 
 msgid "bvec_type **equal** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **equal** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on == int/uint/float vectors"
 msgstr ""
 
 msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "bvec_type **notEqual** (vec_type x, vec_type y)"
 
 msgid "Bool vector comparison on != int/uint/float vectors"
 msgstr ""
 
 msgid "bool **any** (bvec_type x)"
-msgstr ""
+msgstr "bool **any** (bvec_type x)"
 
+#, fuzzy
 msgid "Any component is ``true``"
-msgstr ""
+msgstr "Qualsiasi componente è ``true``"
 
 msgid "bool **all** (bvec_type x)"
-msgstr ""
+msgstr "bool **all** (bvec_type x)"
 
+#, fuzzy
 msgid "All components are ``true``"
-msgstr ""
+msgstr "Tutti i componenti sono ``true``"
 
 msgid "bvec_type **not** (bvec_type x)"
-msgstr ""
+msgstr "bvec_type **not** (bvec_type x)"
 
 msgid "Invert boolean vector"
 msgstr ""
 
 msgid "ivec2 **textureSize** (sampler2D_type s, int lod)"
-msgstr ""
+msgstr "ivec2 **textureSize** (sampler2D_type s, int lod)"
 
 msgid "Get the size of a 2D texture"
 msgstr ""
 
 msgid "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
-msgstr ""
+msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
 
 msgid "Get the size of a 2D texture array"
 msgstr ""
 
 msgid "ivec3 **textureSize** (sampler3D s, int lod)"
-msgstr ""
+msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
 
 msgid "Get the size of a 3D texture"
 msgstr ""
 
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
-msgstr ""
+msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
 
 msgid "Get the size of a cubemap texture"
 msgstr ""
 
 msgid "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 
 msgid "Perform a 2D texture read"
 msgstr ""
 
 msgid "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 
 msgid "Perform a 2D texture array read"
 msgstr ""
 
 msgid "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
 
 msgid "Perform a 3D texture read"
 msgstr ""
 
 msgid "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
-msgstr ""
+msgstr "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
 
 msgid "Perform a cubemap texture read"
 msgstr ""
 
 msgid "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
 
 msgid "Perform a 2D texture read with projection"
 msgstr ""
 
 msgid "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
 
 msgid "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
-msgstr ""
+msgstr "vec4_type **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
 
 msgid "Perform a 3D texture read with projection"
 msgstr ""
 
 msgid "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
 
 msgid "Perform a 2D texture read at custom mipmap"
 msgstr ""
 
 msgid "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
 
 msgid "Perform a 2D texture array read at custom mipmap"
 msgstr ""
 
 msgid "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
 
 msgid "Perform a 3D texture read at custom mipmap"
 msgstr ""
 
 msgid "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
-msgstr ""
+msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
 
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
 
 msgid "Perform a 2D texture read with projection/LOD"
 msgstr ""
 
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
 
 msgid "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
-msgstr ""
+msgstr "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
 
 msgid "Perform a 3D texture read with projection/LOD"
 msgstr ""
 
 msgid "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
-msgstr ""
+msgstr "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
 
 msgid "Fetch a single texel using integer coordinates"
 msgstr ""
 
 msgid "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
-msgstr ""
+msgstr "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
 
 msgid "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
-msgstr ""
+msgstr "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
 
 msgid "vec_type **dFdx** (vec_type p)"
-msgstr ""
+msgstr "vec_type **dFdx** (vec_type p)"
 
 msgid "Derivative in ``x`` using local differencing"
 msgstr ""
 
 msgid "vec_type **dFdy** (vec_type p)"
-msgstr ""
+msgstr "vec_type **dFdy** (vec_type p)"
 
 msgid "Derivative in ``y`` using local differencing"
 msgstr ""
 
 msgid "vec_type **fwidth** (vec_type p)"
-msgstr ""
+msgstr "vec_type **fwidth** (vec_type p)"
 
 msgid "Sum of absolute derivative in ``x`` and ``y``"
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

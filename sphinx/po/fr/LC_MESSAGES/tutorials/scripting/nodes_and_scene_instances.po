@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Nodes and scene instances"
-msgstr "Nœuds et ressources"
+msgstr "Nœuds et instances de scène"
 
 msgid ""
 "This guide explains how to get nodes, create nodes, add them as a child, and "
 "instantiate scenes from code."
 msgstr ""
 
-#, fuzzy
 msgid "Getting nodes"
-msgstr "Création de nœuds"
+msgstr "Obtenir des nœuds"
 
 msgid ""
 "You can get a reference to a node by calling the :ref:`Node.get_node() "
@@ -55,9 +53,8 @@ msgid ""
 "the line that gets the node to ``get_node(\"Skin\")`` in the script."
 msgstr ""
 
-#, fuzzy
 msgid "Node paths"
-msgstr "node path"
+msgstr "Chemins des nœuds"
 
 msgid ""
 "When getting a reference to a node, you're not limited to getting a direct "
@@ -122,6 +119,8 @@ msgid ""
 "Before calling ``sprite.queue_free()``, the remote scene tree looks like "
 "this."
 msgstr ""
+"Afficher d'appeler ``sprite.queue_free()``, l'arborescence de scène distante "
+"ressemble à ça."
 
 msgid ""
 "After the engine freed the node, the remote scene tree doesn't display the "
@@ -150,17 +149,15 @@ msgid ""
 "happens in two steps:"
 msgstr ""
 
-#, fuzzy
 msgid "Loading the scene from the hard drive."
-msgstr "Charge le moteur à partir du chemin de base spécifiée."
+msgstr "Chargement de la scène depuis le disque dur."
 
-#, fuzzy
 msgid ""
 "Creating an instance of the loaded :ref:`PackedScene <class_PackedScene>` "
 "resource."
 msgstr ""
-"Pour obtenir une instance de la scène, la méthode :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` doit être utilisée."
+"Création d'une instance de la ressource chargée :ref:`PackedScene "
+"<class_PackedScene>`."
 
 msgid ""
 "Preloading the scene can improve the user's experience as the load operation "
@@ -179,13 +176,15 @@ msgstr ""
 "<class_PackedScene_method_instance>`. Il retourne un arbre de nœuds que vous "
 "pouvez considérer comme enfant de votre nœud actuel."
 
-#, fuzzy
 msgid ""
 "The advantage of this two-step process is you can keep a packed scene loaded "
 "and create new instances on the fly. For example, to quickly instance "
 "several enemies or bullets."
 msgstr ""
-"L'avantage de ce processus en deux temps est qu'une scène emballée peut être "
-"chargée et prête à l'emploi afin que vous puissiez créer autant d'instances "
-"que vous le souhaitez. C'est particulièrement utile pour instancier "
-"rapidement plusieurs ennemis, balles et autres entités dans la scène active."
+"L'avantage de ce processus en deux étapes est que vous pouvez garder une "
+"scène chargée et créer de nouvelles instances à la volée. Par exemple, pour "
+"créer rapidement une instance pour plusieurs ennemis ou balles."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

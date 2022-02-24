@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,12 +231,11 @@ msgid ""
 "other areas are tuned for this scale. Therefore, attempting to use a "
 "different scale is usually a bad idea (unless you know what you are doing)."
 msgstr ""
-"Godot использует `метрическую <https://ru.wikipedia.org/wiki/%D0%9C"
-"%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_"
-"%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BC%D0%B5%D1%80>`__ систему "
-"для всего. 3D-физика и прочие области настроены на неё, так что попытка "
-"использовать другую размерность обычно плохая идея (если вы точно не уверены "
-"что делаете)."
+"Godot использует `метрическую <https://ru.wikipedia.org/wiki/"
+"%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BC%D0%B5%D1%80>`__ "
+"систему для всего. 3D-физика и прочие области настроены на неё, так что "
+"попытка использовать другую размерность обычно плохая идея (если вы точно не "
+"уверены что делаете)."
 
 #, fuzzy
 msgid ""
@@ -261,8 +260,8 @@ msgid ""
 msgstr ""
 "Координата Y указывает направление \"вверх\", тогда как для многих объектов "
 "которые нуждаются в выравнивании (таких как свет, камеры, капсульный "
-"коллайдер, машина, и т.д.), ось Z используется как \"указатель на направление"
-"\". Это соглашение примерно означает что:"
+"коллайдер, машина, и т.д.), ось Z используется как \"указатель на "
+"направление\". Это соглашение примерно означает что:"
 
 msgid "**X** is sides"
 msgstr "**X** это влево/вправо"
@@ -407,3 +406,7 @@ msgid ""
 msgstr ""
 "В Godot нет ограничений ни на количество источников света, ни на их типы. "
 "Можно добавить столько, сколько нужно (если достаточно производительности)."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

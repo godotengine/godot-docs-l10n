@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,8 +131,8 @@ msgstr ""
 "方法负责返回它导入的类型的名称, 它将在导入停靠区显示给用户."
 
 msgid ""
-"You should choose this name as a continuation to \"Import as\", e.g. *"
-"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"You should choose this name as a continuation to \"Import as\", e.g. "
+"*\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 "你选择的名字应该可以接到“导入为”后面，例如\\ *“导入为 Silly Material”*\\ 。你"
@@ -533,9 +533,9 @@ msgid ""
 "the file from the FileSystem dock to the material property. The object will "
 "update in the viewport with the blue color of the imported material."
 msgstr ""
-"在场景中创建一个MeshInstance节点, 并为其Mesh属性设置一个新的SphereMesh. 在属"
-"性面板中展开 \"材质\" 部分, 然后将文件从 \"文件系统\" 面板拖动到材质属性. 对"
-"象将在视区中使用导入材质的蓝色进行更新."
+"在场景中创建一个 MeshInstance 节点，为其 Mesh 属性设置一个新的 SphereMesh。"
+"在“检查器”中展开 Material 部分，然后将文件从“文件系统”面板拖动到材质属性。对"
+"象将在视区中使用导入材质的蓝色进行更新。"
 
 msgid ""
 "Go to Import dock, enable the \"Use Red Anyway\" option, and click on "
@@ -554,3 +554,7 @@ msgstr ""
 "就是这样！ 您的第一个导入插件已经完成！ 现在获得创意并为您自己心爱的格式制作"
 "插件. 这对于以自定义格式编写数据然后在Godot中使用它就像它们是本机资源一样非常"
 "有用. 这显示了导入系统如何强大和可扩展."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

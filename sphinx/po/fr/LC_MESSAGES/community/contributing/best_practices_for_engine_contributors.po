@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,9 +41,10 @@ msgstr ""
 msgid "Language"
 msgstr "Langage"
 
+#, fuzzy
 msgid ""
 "The scope of this document is to be a list of best practices for "
-"contributors to follow, as well as to creating a language they can use to "
+"contributors to follow, as well as to create a language they can use to "
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
@@ -77,7 +78,6 @@ msgstr "Bonnes pratiques"
 msgid "#1: The problem always comes first"
 msgstr "#N°1 : Le problème vient toujours en premier"
 
-#, fuzzy
 msgid ""
 "Many contributors are extremely creative and just enjoy the process of "
 "designing abstract data structures, creating nice user interfaces, or simply "
@@ -188,7 +188,6 @@ msgstr "La complexité du problème"
 msgid "The frequency the problem"
 msgstr "La fréquence du problème"
 
-#, fuzzy
 msgid ""
 "If the problem is *too complex* for most users to solve, the software must "
 "offer a ready-made solution for it. Likewise, if the problem is easy for the "
@@ -225,13 +224,12 @@ msgstr ""
 msgid "#4: The solution must be discussed with others"
 msgstr "#N°4 : La solution doit être discutée avec d'autres"
 
-#, fuzzy
 msgid ""
 "It is often the case that when users stumble upon problems, they are only "
 "immersed in their project, so they will naturally try to solve the problem "
 "from their perspective, thinking only about their use case."
 msgstr ""
-"Il arrive souvent que, lorsque les utilisateurs tombent sur des problèmes, "
+"Il arrive souvent que lorsque les utilisateurs tombent sur des problèmes, "
 "ils ne sont qu'immergés dans leur propre projet, de sorte qu'ils tentent "
 "naturellement de résoudre le problème de leur propre point de vue, en ne "
 "pensant qu'à leur cas d'utilisation."
@@ -314,16 +312,14 @@ msgstr ""
 "encore plus fantastique et flexible, les problèmes purement spéculatifs "
 "(comme décrit au point 2) font également leur apparition sur scène."
 
-#, fuzzy
 msgid ""
 "The main problem is that, in reality, it rarely works this way. Most of the "
 "time, writing an individual solution to each problem results in code that is "
 "simpler and more maintainable."
 msgstr ""
-"Le principal problème est qu'en réalité, cela fonctionne rarement de cette "
-"manière. La plupart du temps, le simple fait d'écrire une solution "
-"individuelle à chaque problème permet d'obtenir un code plus simple et plus "
-"facile à maintenir."
+"Le principal problème est, qu'en réalité, cela fonctionne rarement de cette "
+"manière. La plupart du temps, écrire une solution individuelle à chaque "
+"problème permet d'obtenir un code plus simple et plus facile à maintenir."
 
 msgid ""
 "Additionally, solutions that target individual problems are better for the "
@@ -337,7 +333,6 @@ msgstr ""
 "d'un système plus complexe dont ils n'auront besoin que pour des tâches "
 "simples."
 
-#, fuzzy
 msgid ""
 "Big and flexible solutions also have an additional drawback which is that, "
 "over time, they are rarely flexible enough for all users, who keep "
@@ -345,7 +340,7 @@ msgid ""
 "more complex)."
 msgstr ""
 "Les solutions de grande taille et flexibles présentent également un "
-"inconvénient supplémentaire : au fil du temps, elles sont rarement assez "
+"inconvénient supplémentaire, au fil du temps, elles sont rarement assez "
 "souples pour tous les utilisateurs, qui demandent sans cesse l'ajout de "
 "nouvelles fonctions (et rendent l'API et la base de code de plus en plus "
 "complexes)."
@@ -419,7 +414,7 @@ msgstr ""
 "continuer à fournir aux utilisateurs les éléments de base pour le faire."
 
 msgid "#7: Prefer local solutions"
-msgstr ""
+msgstr "#7 : Préférer les solutions locales"
 
 msgid ""
 "When looking for a solution to a problem, be it implementing a new feature "
@@ -481,15 +476,13 @@ msgstr ""
 "Tous les problèmes n'ont pas une solution simple et, bien souvent, le bon "
 "choix est de faire appel à une bibliothèque tierce pour résoudre le problème."
 
-#, fuzzy
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we can't "
 "link libraries dynamically. Instead, we bundle them in our source tree."
 msgstr ""
 "Comme Godot doit être livré sur un grand nombre de plates-formes, nous ne "
 "pouvons tout simplement pas relier les bibliothèques de manière dynamique. "
-"Au lieu de cela, nous les regroupons dans notre arbre des sources (dans la "
-"base du code)."
+"Au lieu de cela, nous les regroupons dans notre arbre des sources."
 
 msgid ""
 "As a result, we are very picky with what goes in, and we tend to prefer "
@@ -521,3 +514,7 @@ msgstr ""
 "puisque nous pourrions vouloir l'exécuter sur iOS à long terme. Comme iOS ne "
 "supporte pas les liens dynamiques, les liens statiques sont la seule option "
 "sur cette plate-forme."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

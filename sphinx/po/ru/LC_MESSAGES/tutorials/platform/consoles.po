@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,21 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Console support in Godot"
-msgstr "Какие языки поддерживаются в Godot"
+msgstr "Поддержка консолей в Godot"
 
 msgid "Console publishing process"
-msgstr ""
+msgstr "Публикация на консолях"
 
 msgid ""
 "Regardless of the engine used to create the game, the process to publish a "
 "game to a console platform is as follows:"
 msgstr ""
+"Вне зависимости от того, какой движок использован для создания игры, процесс "
+"публикации игры на консоли выглядит следующим образом:"
 
 msgid ""
 "Register a developer account on the console manufacturer's website, then "
 "sign NDAs and publishing contracts. This requires you to have a registered "
 "legal entity."
 msgstr ""
+"Зарегистрируйте аккаунт разработчика на сайте производителя консоли, затем "
+"подпишите соглашения о неразглашении и издательские договора. Для этого вам "
+"потребуется зарегистрированное юридическое лицо."
 
 msgid ""
 "Gain access to the publishing platform by passing the acceptance process. "
@@ -41,14 +46,24 @@ msgid ""
 "generally known to be more accepting of smaller developers, but this is not "
 "guaranteed."
 msgstr ""
+"Получите доступ к издательской платформе, пройдя через процесс одобрения. "
+"Это может занять до нескольких месяцев. Обратите внимание: это гораздо проще "
+"сделать, если вашу игру поддерживает признанный издатель. Известно, что "
+"Nintendo относится к небольшим разработчикам более лояльно, но это не "
+"гарантируется."
 
 msgid ""
 "Get access to developer tools and order a console specially made for "
 "developers (*devkit*). The cost of those devkits is confidential."
 msgstr ""
+"Получите доступ к инструментам разработки и закажите консоль, созданную "
+"специально для разработчиков (*девкит*). Стоимость таких девкитов "
+"конфиденциальна."
 
 msgid "Port the engine to the console platform or pay a company to do it."
 msgstr ""
+"Портируйте движок на платформу консоли, или заплатите другой компании, чтобы "
+"они занялись портированием."
 
 msgid ""
 "To be published, your game needs to be rated in the regions you'd like to "
@@ -57,11 +72,18 @@ msgid ""
 "info/>`__. Indie developers can generally get a rating for cheaper compared "
 "to more established developers."
 msgstr ""
+"Чтобы быть опубликованной, вашей игре понадобится рейтинг в регионах, где вы "
+"собираетесь её продавать. К примеру, в Северной Америке рейтингом "
+"заведует`ESRB <https://www.esrb.org/>`__. В Европе этим занимается `PEGI "
+"<https://pegi.info/>`__. Как правило, инди-разработчики могут получить "
+"рейтинг дешевле, если сравнивать с более устоявшимися разработчиками."
 
 msgid ""
 "Due to the complexity of the process, the budget to publish a game by "
 "yourself on a single console often exceeds $1,000 (this is a rough figure)."
 msgstr ""
+"Из-за сложности публикации, сумма, затраченная на самостоятельную публикацию "
+"игры на одной консоли часто может превышать $1,000 (это грубое значение)."
 
 msgid "Official support"
 msgstr ""
@@ -128,3 +150,7 @@ msgid ""
 "feel free to `open an issue or pull request <https://github.com/godotengine/"
 "godot-docs>`_ to add your company to the list above."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

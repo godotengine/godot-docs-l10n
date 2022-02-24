@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,6 +60,10 @@ msgstr ""
 
 msgid "After profiling, you can look back at the results for a frame."
 msgstr "剖析后, 你可以回看一帧的结果."
+
+#, fuzzy
+msgid "Screenshot of the Godot profiler"
+msgstr "使用Godot分析器."
 
 msgid "Results of a profile of one of the demo projects."
 msgstr "其中一个演示项目的简介结果."
@@ -124,6 +128,9 @@ msgstr ""
 "用调试构建, 但是, 请注意, 剖析调试构建的结果将与发布构建不同, 因为调试构建的"
 "优化程度较低. 在调试构建中, 瓶颈往往在不同的地方, 所以你应该尽可能地对发布构"
 "建进行剖析."
+
+msgid "Screenshot of Callgrind"
+msgstr ""
 
 msgid "Example results from Callgrind, which is part of Valgrind."
 msgstr "例子结果来自Callgrind, 这是Valgrind的一部分."
@@ -314,9 +321,9 @@ msgid ""
 "<https://github.com/godot-rust/godot-rust>`_ and `Javascript <https://github."
 "com/GodotExplorer/ECMAScript>`_."
 msgstr ""
-"第三方提供对其他几种语言的支持, 包括 `Rust <https://github.com/godot-rust/"
-"godot-rust>` _和 `Javascript <https://github.com/GodotExplorer/ECMAScript>` "
-"_."
+"第三方提供对其他几种语言的支持，包括 `Rust <https://github.com/godot-rust/"
+"godot-rust>`_ 和 `Javascript <https://github.com/GodotExplorer/"
+"ECMAScript>`_\\ 。"
 
 msgid "C++"
 msgstr "C++"
@@ -354,10 +361,10 @@ msgid ""
 "threads, make sure you understand the dangers and how to try and prevent "
 "these race conditions."
 msgstr ""
-"线程的缺点是, 你必须非常小心. 由于每个CPU核心都是独立运行的, 它们最终可能会在"
-"同一时间试图访问相同的内存. 一个线程可以在另一个线程在写的时候读取一个变量: "
-"这被称为*race condition*. 在你使用线程之前, 请确保你了解这些危险以及如何尝试"
-"和防止这些竞赛条件."
+"线程的缺点是，你必须非常小心。由于每个 CPU 核心都是独立运行的，它们最终可能会"
+"在同一时间试图访问相同的内存。一个线程可以在另一个线程在写的时候读取一个变"
+"量：这被称为\\ *竞态条件*\\ 。在你使用线程之前，请确保你了解这些危险以及如何"
+"尝试和防止这些竞态条件。"
 
 msgid ""
 "Threads can also make debugging considerably more difficult. The GDScript "
@@ -477,3 +484,7 @@ msgstr ""
 "lawnjelly/smoothing-addon>`__ . 从性能上来说, 与运行物理时钟滴答相比, 插值是"
 "一个非常廉价的操作. 它的速度快了好几个数量级, 所以这在减少抖动的同时也带来了"
 "部分显著的性能提升."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

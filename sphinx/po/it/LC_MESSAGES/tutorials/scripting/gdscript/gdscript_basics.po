@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,8 @@ msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
-"Alcune persone imparano meglio guardando la sintassi, quindi ecco un "
-"semplice esempio di GDScript."
+"Alcune persone possono imparare meglio dando un'occhiata alla sintassi, "
+"quindi ecco un semplice esempio di come appare GDScript."
 
 msgid ""
 "If you have previous experience with statically typed languages such as C, C+"
@@ -114,9 +114,9 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
-"Le parole chiave sono definite nel `GDScript tokenizer <https://github.com/"
-"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
-"caso vuoi dare un occhiata \"sotto il cofano\"."
+"Le parole chiave sono definite in `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ nel "
+"caso tu voglia dare un'occhiata sotto il cofano."
 
 msgid "Keyword"
 msgstr "Parola chiave"
@@ -166,7 +166,7 @@ msgstr "continue"
 msgid ""
 "Immediately skips to the next iteration of the ``for`` or ``while`` loop."
 msgstr ""
-"Salta immediatamente alla prossima iterazione di un ciclo ``for`` o ``while`."
+"Salta immediatamente alla prossima iterazione del ciclo ``for`` o ``while``."
 
 msgid "pass"
 msgstr "pass"
@@ -182,21 +182,21 @@ msgid "return"
 msgstr "return"
 
 msgid "Returns a value from a function."
-msgstr "Ritorna un valore dalla funzione."
+msgstr "Restituisce un valore da una funzione."
 
 msgid "class"
 msgstr "class"
 
 #, fuzzy
 msgid "Defines an inner class."
-msgstr "Definisce una classe."
+msgstr "Definisce una classe interna."
+
+msgid "class_name"
+msgstr "class_name"
 
 #, fuzzy
-msgid "class_name"
-msgstr "class"
-
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "Definisce il nome di una classe e un'icona facoltativa per lo script."
 
 msgid "extends"
 msgstr "extends"
@@ -211,14 +211,14 @@ msgid ""
 "Tests whether a variable extends a given class, or is of a given built-in "
 "type."
 msgstr ""
-"Controlla se una variabile estende una certa classe, o se è un certo tipo "
-"built-in."
+"Verifica se una variabile estende una determinata classe o è di un "
+"determinato tipo integrato."
 
 msgid "as"
 msgstr "as"
 
 msgid "Cast the value to a given type if possible."
-msgstr "Casta il valore in un certo tipo se possibile."
+msgstr "Converte il valore in un certo tipo, se possibile."
 
 msgid "self"
 msgstr "self"
@@ -249,7 +249,8 @@ msgstr "static"
 
 msgid "Defines a static function. Static member variables are not allowed."
 msgstr ""
-"Definisce una funzione statica. Gli attributi statici non sono ammessi."
+"Definisce una funzione statica. Le variabili membro statiche non sono "
+"consentite."
 
 msgid "const"
 msgstr "const"
@@ -368,9 +369,7 @@ msgid "INF"
 msgstr "INF"
 
 msgid "Infinity constant. Used for comparisons."
-msgstr ""
-"Costante per identificare l'infinito, matematicamente parlando. Viene usato "
-"per i confronti."
+msgstr "Costante di infinito. Usata per i confronti."
 
 msgid "NAN"
 msgstr "NAN"
@@ -384,7 +383,9 @@ msgid "Operators"
 msgstr "Operatori"
 
 msgid "The following is the list of supported operators and their precedence."
-msgstr "Vengono elencati tutti gli operatori supportati e le loro precedenze."
+msgstr ""
+"Di seguito è riportato l'elenco degli operatori supportati e la loro "
+"precedenza."
 
 msgid "**Operator**"
 msgstr "**Operatore**"
@@ -395,14 +396,16 @@ msgstr "**Descrizione**"
 msgid "``x[index]``"
 msgstr "``x[index]``"
 
+#, fuzzy
 msgid "Subscription (highest priority)"
-msgstr "Accesso ad un valore (priorità massima)"
+msgstr "Abbonamento (massima priorità)"
 
 msgid "``x.attribute``"
 msgstr "``x.attribute``"
 
+#, fuzzy
 msgid "Attribute reference"
-msgstr "Referenza ad un attributo"
+msgstr "Riferimento dell'attributo"
 
 msgid "``foo()``"
 msgstr "``foo()``"
@@ -433,7 +436,7 @@ msgid "``*`` ``/`` ``%``"
 msgstr "``*`` ``/`` ``%``"
 
 msgid "Multiplication / Division / Remainder"
-msgstr "Moltiplicazione / divisione / resto"
+msgstr "Moltiplicazione / Divisione / Resto"
 
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
@@ -529,9 +532,8 @@ msgstr "``as``"
 msgid "Type casting"
 msgstr "Conversione del tipo"
 
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 #, fuzzy
 msgid "Assignment (lowest priority)"
@@ -589,7 +591,6 @@ msgstr "Stringa multilinea"
 msgid "``@\"Node/Label\"``"
 msgstr "``@\"Node/Label\"``"
 
-#, fuzzy
 msgid ":ref:`class_NodePath` or StringName"
 msgstr ":ref:`class_NodePath` o StringName"
 
@@ -649,8 +650,10 @@ msgstr ""
 msgid ":ref:`bool <class_bool>`"
 msgstr ":ref:`bool <class_bool>`"
 
+#, fuzzy
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
+"Abbreviazione di \"booleano\", può contenere solo ``true`` o ``false``."
 
 msgid ":ref:`int <class_int>`"
 msgstr ":ref:`int <class_int>`"
@@ -681,38 +684,38 @@ msgstr ""
 msgid "**Escape sequence**"
 msgstr ""
 
-msgid "**Expands to**"
-msgstr ""
-
 #, fuzzy
+msgid "**Expands to**"
+msgstr "**Si espande a**"
+
 msgid "``\\n``"
 msgstr "``\\n``"
 
-msgid "Newline (line feed)"
-msgstr ""
-
 #, fuzzy
+msgid "Newline (line feed)"
+msgstr "Nuova riga (avanzamento riga)"
+
 msgid "``\\t``"
 msgstr "``\\t``"
 
-msgid "Horizontal tab character"
-msgstr ""
-
 #, fuzzy
+msgid "Horizontal tab character"
+msgstr "Carattere di tabulazione orizzontale"
+
 msgid "``\\r``"
 msgstr "``\\r``"
 
-msgid "Carriage return"
-msgstr ""
-
 #, fuzzy
+msgid "Carriage return"
+msgstr "Andare a capo"
+
 msgid "``\\a``"
 msgstr "``\\a``"
 
-msgid "Alert (beep/bell)"
-msgstr ""
-
 #, fuzzy
+msgid "Alert (beep/bell)"
+msgstr "Avviso (segnale acustico/campanello)"
+
 msgid "``\\b``"
 msgstr "``\\b``"
 
@@ -720,31 +723,33 @@ msgstr "``\\b``"
 msgid "Backspace"
 msgstr "Indietro"
 
-#, fuzzy
 msgid "``\\f``"
 msgstr "``\\f``"
 
-msgid "Formfeed page break"
-msgstr ""
-
 #, fuzzy
+msgid "Formfeed page break"
+msgstr "Interruzione di pagina Formfeed"
+
 msgid "``\\v``"
 msgstr "``\\v``"
 
+#, fuzzy
 msgid "Vertical tab character"
-msgstr ""
+msgstr "Carattere di tabulazione verticale"
 
 msgid "``\\\"``"
 msgstr "``\\\"``"
 
+#, fuzzy
 msgid "Double quote"
-msgstr ""
+msgstr "Doppia citazione"
 
 msgid "``\\'``"
 msgstr "``\\'``"
 
+#, fuzzy
 msgid "Single quote"
-msgstr ""
+msgstr "Citazione singola"
 
 msgid "``\\\\``"
 msgstr "``\\\\``"
@@ -753,15 +758,17 @@ msgstr "``\\\\``"
 msgid "Backslash"
 msgstr "Barra rovesciata"
 
-#, fuzzy
 msgid "``\\uXXXX``"
 msgstr "``\\uXXXX``"
 
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
 msgstr ""
+"Codice Unicode ``XXXX`` (esadecimale, senza distinzione tra maiuscole e "
+"minuscole)"
 
+#, fuzzy
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
-msgstr ""
+msgstr "GDScript supporta anche :ref:`doc_gdscript_printf`."
 
 #, fuzzy
 msgid "Vector built-in types"
@@ -770,18 +777,24 @@ msgstr "Tipi vettoriali incorporati"
 msgid ":ref:`Vector2 <class_Vector2>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
+#, fuzzy
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
 msgstr ""
+"Tipo di vettore 2D contenente i campi ``x`` e ``y``. Si può accedere anche "
+"come array."
 
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
 
+#, fuzzy
 msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Also contains an ``end`` field which is ``position + size``."
 msgstr ""
+"Tipo di rettangolo 2D contenente due campi vettore: ``position`` e ``size``. "
+"Contiene anche un campo ``end`` che è ``position + size``."
 
 msgid ":ref:`Vector3 <class_Vector3>`"
 msgstr ":ref:`Vector3 <class_Vector3>`"
@@ -790,14 +803,15 @@ msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
-"Il tipo vettore 3D contenente i campi ``x``, ``y`` e ``z``. Si può anche "
+"Tipo vettore 3D contenente i campi ``x``, ``y`` e ``z``. Si può anche "
 "accedervi come un array."
 
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
+#, fuzzy
 msgid "3×2 matrix used for 2D transforms."
-msgstr ""
+msgstr "Matrice 3×2 utilizzata per le trasformazioni 2D."
 
 msgid ":ref:`Plane <class_Plane>`"
 msgstr ":ref:`Plane <class_Plane>`"
@@ -860,7 +874,7 @@ msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
-"Il tipo di dati colore contiene i campi ``r``, ``g``, ``b`` e ``a``. Si può "
+"Il tipo di dati Color contiene i campi ``r``, ``g``, ``b`` e ``a``. Si può "
 "anche accedere come ``h``, ``s`` e ``v`` per tonalità/saturazione/valore."
 
 msgid ":ref:`NodePath <class_NodePath>`"
@@ -1023,14 +1037,16 @@ msgid ""
 "otherwise it will raise an error."
 msgstr ""
 
+#, fuzzy
 msgid "Valid types are:"
-msgstr ""
+msgstr "I tipi validi sono:"
 
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
 msgstr ""
 
+#, fuzzy
 msgid "Engine classes (Node, Resource, Reference, etc.)."
-msgstr ""
+msgstr "Classi del motore (Node, Resource, Reference, ecc.)."
 
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
@@ -1097,10 +1113,10 @@ msgid "Assigning a value of an incompatible type will raise an error."
 msgstr ""
 
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 
 msgid "Enums"
@@ -1111,7 +1127,7 @@ msgid ""
 "want to assign consecutive integers to some constant."
 msgstr ""
 "Gli enum sono fondamentalmente un'abbreviazione per le costanti, e sono "
-"abbastanza utili se volete assegnare interi consecutivi a qualche costante."
+"abbastanza utili se voui assegnare interi consecutivi a qualche costante."
 
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
@@ -1213,8 +1229,8 @@ msgid ""
 "optional."
 msgstr ""
 "Gli statement sono standard e possono essere assegnamenti, chiamate di "
-"funzioni, strutture di flusso di controllo, ecc. Il ``;`` come separatore di "
-"dichiarazioni è completamente opzionale."
+"funzioni, strutture di flusso di controllo, ecc (vedi sotto). Il ``;`` come "
+"separatore di dichiarazioni è completamente opzionale."
 
 msgid "if/else/elif"
 msgstr "if/else/elif"
@@ -1276,16 +1292,21 @@ msgstr "Sintassi di base::"
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr ""
 
+#, fuzzy
 msgid "Replace ``switch`` with ``match``."
-msgstr ""
+msgstr "Sostituisci ``switch`` con ``match``."
 
+#, fuzzy
 msgid "Remove ``case``."
-msgstr ""
+msgstr "Rimuovi ``case``."
 
+#, fuzzy
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
+"Rimuovi qualsiasi ``break``\\ s. Se non vuoi ``break`` per impostazione "
+"predefinita, puoi usare ``continue`` come fallthrough."
 
 #, fuzzy
 msgid "Change ``default`` to a single underscore."
@@ -1315,8 +1336,9 @@ msgstr ""
 msgid "Variable pattern"
 msgstr ""
 
+#, fuzzy
 msgid "Matches the contents of a variable/enum::"
-msgstr ""
+msgstr "Corrisponde al contenuto di una variabile/enum::"
 
 msgid "Wildcard pattern"
 msgstr ""
@@ -1331,8 +1353,9 @@ msgid ""
 "statement in other languages::"
 msgstr ""
 
+#, fuzzy
 msgid "Binding pattern"
-msgstr "'Binding pattern'"
+msgstr "Modello di collegamneto"
 
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
@@ -1425,9 +1448,9 @@ msgstr "Registra script come classi"
 #, fuzzy
 msgid ""
 "You can give your class a name to register it as a new type in Godot's "
-"editor. For that, you use the ``class_name`` keyword. You can optionally use "
-"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
-"class will then appear with its new icon in the editor::"
+"editor. For that, you use the ``class_name`` keyword. You can optionally add "
+"a comma followed by a path to an image, to use it as an icon. Your class "
+"will then appear with its new icon in the editor::"
 msgstr ""
 "Invece, potete dare alla vostra classe un nome per registrarla come nuovo "
 "tipo nell'editor di Godot. Per questo, si usa la parola chiave "
@@ -1442,8 +1465,9 @@ msgid ""
 "for more information."
 msgstr ""
 
+#, fuzzy
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "Ecco un esempio di file di classe:"
 
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
@@ -1463,8 +1487,9 @@ msgstr ""
 msgid "A global class."
 msgstr "Una classe globale."
 
+#, fuzzy
 msgid "Another class file."
-msgstr ""
+msgstr "Un altro file di classe."
 
 #, fuzzy
 msgid "An inner class inside another class file."
@@ -1522,7 +1547,7 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 msgid "There are a few things to keep in mind here:"
-msgstr "Ci sono alcune cose da tenere a mente:"
+msgstr "Ci sono alcune cose da tenere a mente qui:"
 
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
@@ -1576,9 +1601,12 @@ msgstr ""
 msgid "Exports"
 msgstr "Esportazioni"
 
+#, fuzzy
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
+"La documentazione sulle esportazioni è stata spostata in :ref:"
+"`doc_gdscript_exports`."
 
 msgid "Setters/getters"
 msgstr "Setters/getters"
@@ -1773,8 +1801,9 @@ msgid ""
 "becomes invalid. Here is an example::"
 msgstr ""
 
+#, fuzzy
 msgid "Will print::"
-msgstr ""
+msgstr "Stamperà::"
 
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
@@ -1860,3 +1889,7 @@ msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

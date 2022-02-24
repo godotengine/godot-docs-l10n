@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,143 +17,156 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "First look at Godot's editor"
 msgstr "Перший погляд на редактор Godot"
 
+#, fuzzy
 msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
 "to look at the different main screens and docks to help you situate yourself."
 msgstr ""
+"Ця сторінка дасть вам короткий огляд інтерфейсу Godot. Ми розглянемо різні "
+"головні екрани та панелі, щоб допомогти вам зорієнтуватись."
 
 msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
+"Для поглибленого вивчення інтерфейсу редактора та способів його використання "
+"див. :ref:`Посібник редактора <toc-learn-editor>`."
 
-#, fuzzy
 msgid "The Project manager"
-msgstr "Керівник проєкту"
+msgstr "Менеджер проєктів"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab, \"Projects,\" you can manage existing projects, import or "
 "create new ones, and more."
 msgstr ""
 "Коли ви запускаєте Godot, перше вікно, яке ви побачите, - це менеджер "
-"проєкту. Оскільки у вас немає проєктів, з'явиться спливаюче вікно із "
-"запитом, чи хочете ви відкрити бібліотеку Асет - просто натисніть кнопку "
-"\"Скасувати\", ми повернемося до цього пізніше."
+"проєктів. На вкладці за замовчуванням \"Проекти\" ви можете керувати "
+"існуючими проєктами, імпортувати чи створювати нові тощо."
 
 msgid ""
 "At the top of the window, there is another tab named \"Templates\". You can "
 "search for demo projects in the open-source asset library, which includes "
 "many projects developed by the community."
 msgstr ""
+"У верхній частині вікна є ще одна вкладка під назвою «Шаблони». Ви можете "
+"шукати демонстраційні проекти в бібліотеці активів з відкритим кодом, яка "
+"включає багато проектів, розроблених спільнотою."
 
 msgid ""
 "You can also change the editor's language using the drop-down menu to the "
 "right of the engine's version in the window's top-right corner. By default, "
 "it is in English (EN)."
 msgstr ""
+"Ви також можете змінити мову редактора за допомогою випадаючого меню "
+"праворуч від версії рушія у верхньому правому куті вікна. За замовчуванням "
+"це англійська (EN)."
 
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas."
 msgstr ""
+"Коли ви відкриваєте новий або існуючий проєкт, з’являється інтерфейс "
+"редактора. Давайте розглянемо його основні елементи."
 
 msgid ""
 "By default, it features **menus**, **main screens**, and playtest buttons "
 "along the window's top edge."
 msgstr ""
+"За замовчуванням він містить **меню**, **головні екрани** і кнопки тесту "
+"відтворення вздовж верхнього краю вікна."
 
-#, fuzzy
 msgid ""
 "In the center is the **viewport** with its **toolbar** at the top, where "
 "you'll find tools to move, scale, or lock the scene's nodes."
 msgstr ""
-"У центрі зверху у вас є **панель інструментів**, де ви знайдете інструменти "
-"для переміщення, масштабування або блокування ваших об'єктів сцени. Вона "
-"змінюється, коли ви переключаєтеся між різними робочими областями."
+"У центрі знаходиться **вікно перегляду** з **панеллю інструментів** у "
+"верхній частині, де ви знайдете інструменти для переміщення, масштабування "
+"або блокування вузлів сцени."
 
+#, fuzzy
 msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
 "window lies the **bottom panel**."
 msgstr ""
+"По обидва боки вікна перегляду розташовані **переміщувані панелі**. А внизу "
+"вікна лежить **нижня панель**."
 
 msgid ""
 "The toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar."
 msgstr ""
+"Панель інструментів змінюється залежно від контексту та вибраного вузла. Ось "
+"панель інструментів 2D."
 
 msgid "Below is the 3D one."
-msgstr ""
+msgstr "Нижче панель для 3D."
 
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "be it scripts, images, audio samples, and more."
 msgstr ""
+"Давайте подивимося на переміщувані панелі. Панель**FileSystem**(**Файлова "
+"система**) містить список файлів ваших проектів, будь то сценарії, "
+"зображення, зразки аудіо тощо."
 
 msgid "The **Scene** dock lists the active scene's nodes."
-msgstr ""
+msgstr "Панель **Scene**(**Сцена**) містить список вузлів активної сцени."
 
 msgid "The **Inspector** allows you to edit the properties of a selected node."
 msgstr ""
+"**Inspector**(**Інспектор**) дозволяє редагувати властивості вибраного вузла."
 
-#, fuzzy
 msgid ""
 "The **bottom panel**, situated below the viewport, is the host for the debug "
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"**Нижня панель** включає в себе консоль налагодження, редактор анімації, "
-"аудіомікшер... Вони широкі і можуть займати багато дорогоцінного простору, "
-"тому за замовчуванням вони згорнуті."
+"**Нижня панель**, розташована під вікном перегляду, є вміщує консоль "
+"зневаджувача, редактор анімації, аудіомікшер тощо. Вони можуть займати "
+"дорогоцінний простір, тому за замовчуванням вони згорнуті."
 
 msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
 "animation editor opened."
 msgstr ""
+"Коли ви натискаєте обраний пункт, його вміст розгортається по вертикалі. "
+"Нижче ви можете побачити відкритий редактор анімації."
 
 msgid "The four main screens"
-msgstr ""
+msgstr "Чотири головні екрани"
 
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
 msgstr ""
-"Зверху ви можете побачити чотири кнопки робочого простору: 2D, 3D, Script і "
-"AssetLib."
+"У верхній частині редактора розташовані чотири кнопки головного екрана: 2D, "
+"3D, Script і AssetLib."
 
-#, fuzzy
 msgid ""
 "You'll use the **2D screen** for all types of games. In addition to 2D "
 "games, the 2D screen is where you'll build your interfaces."
 msgstr ""
-"Ви будете використовувати **2D робочий простір** для всіх типів ігор. Окрім "
-"ігор 2D, в цьому просторі ви будете створювати ваші інтерфейси. Натисніть :"
-"kbd:`Ctrl +F1` (або :kbd:`Alt + 1` на macOS), щоб отримати доступ до нього."
+"Ви будете використовувати **2D-екран** для всіх типів ігор. Окрім 2D-ігор, "
+"2D-екран – це те місце, де ви створите свої інтерфейси."
 
-#, fuzzy
 msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
 msgstr ""
-"В **3D робочому просторі** ви можете працювати з сітками (мешами), світлом "
-"та дизайном рівнів для 3D ігор. Натисніть :kbd:`Ctrl +F2` (або :kbd:`Alt + "
-"2` на macOS), щоб перейти до нього."
+"На **3D-екрані** ви можете працювати з сітками, світлом і рівнями дизайну "
+"для 3D-ігор."
 
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar. Clicking on it opens a list "
 "of options related to the 3D view."
 msgstr ""
-"Зверніть увагу на кнопку Перспектива на панелі інструментів, вона відкриває "
-"список параметрів, пов'язаних із тривимірним вікном перегляду."
+"Зверніть увагу на кнопку Perspective(Перспектива) на панелі інструментів. "
+"Вона відкриває список параметрів, пов'язаних із 3D-вікном."
 
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
 "screen**."
@@ -165,8 +178,9 @@ msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
+"**Script screen**(**Екран сценарію**) - це повнофункціональний редактор коду "
+"зі зневаджувачем, розвиненим автозавершенням і вбудованим посиланням на код."
 
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open-source add-ons, "
 "scripts, and assets to use in your projects."
@@ -177,50 +191,60 @@ msgstr ""
 msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"Ви можете дізнатися більше про бібліотеку ресурсів у статті :ref:"
+"`doc_what_is_assetlib`."
 
-#, fuzzy
 msgid "Integrated class reference"
-msgstr "Як створити довідку з класу"
+msgstr "Інтегрована довідка про класи"
 
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Як створити довідку з класу"
+msgstr "Godot має вбудовані посилання на класи."
 
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Для пошуку інформації про клас, метод, властивість, константу або сигнал у "
-"движку під час написання скрипту, використовуйте кнопку \"Пошук довідки\" у "
-"верхньому правому куті робочої області Script."
+"Ви можете шукати інформацію про клас, метод, властивість, константу або "
+"сигнал одним із наступних методів:"
 
-#, fuzzy
 msgid ""
 "Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."
 msgstr ""
-"Натискання :kbd:`Ctrl + F` (або :kbd:`Cmd + F` на macOS) дозволяє відкрити "
-"список для пошуку."
+"Натисканням :kbd:`F1` (або :kbd:`Alt + Space` у macOS) у будь-якому місці "
+"редактора."
 
 msgid ""
 "Clicking the \"Search Help\" button in the top-right of the Script main "
 "screen."
 msgstr ""
+"Натисканням кнопки \"Search Help\"(\"Пошук довідки\") у верхньому правому "
+"куті головного екрана Script."
 
 msgid "Clicking on the Help menu and Search Help."
-msgstr ""
+msgstr "Вибравши в меню \"Довідка\" пункт \"Пошук довідки\"."
 
 msgid ""
 "Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
 "or built-in variable in the script editor."
 msgstr ""
+"Клацнувши з натисненою клавішею :kbd:`Ctrl` на імені класу, назві функції "
+"або вбудованій змінній в редакторі сценаріїв."
 
 msgid ""
 "When you do any of these, a window pops up. Type to search for any item. You "
 "can also use it to browse available objects and methods."
 msgstr ""
+"Після того, як ви зробите щось із цього, з’явиться вікно. Введіть дані для "
+"пошуку, щоб знайти будь-який елемент. Ви також можете використовувати його "
+"для перегляду доступних об’єктів і методів."
 
 msgid ""
 "Double-click on an item to open the corresponding page in the script main "
 "screen."
 msgstr ""
+"Двічі клацніть на елементі, щоб відкрити відповідну сторінку на головному "
+"екрані сценарію."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

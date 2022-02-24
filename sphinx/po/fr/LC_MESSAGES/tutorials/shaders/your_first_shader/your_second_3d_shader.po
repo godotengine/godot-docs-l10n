@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your second 3D shader"
-msgstr "Votre premier shader"
+msgstr "Votre deuxième shader 3D"
 
 msgid ""
 "From a high-level, what Godot does is give the user a bunch of parameters "
@@ -258,15 +257,15 @@ msgstr ""
 #, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
-"ShaderMaterials over StandardMaterial3Ds. With StandardMaterial3D, we could "
-"set these properties with a texture, or to a flat number. But with shaders "
-"we can set them based on any mathematical function that we can dream up."
+"ShaderMaterials over SpatialMaterials. With SpatialMaterial, we could set "
+"these properties with a texture, or to a flat number. But with shaders we "
+"can set them based on any mathematical function that we can dream up."
 msgstr ""
 "Et le mélanger à la fois dans ``ROUGHNESS`` et ``ALBEDO``. C'est l'avantage "
-"de ShaderMaterials par rapport à SpatialMaterials. Avec SpatialMaterials, "
-"nous pourrions définir ces propriétés avec une texture, ou à un nombre plat. "
-"Mais avec les shaders, nous pouvons les régler en fonction de n'importe "
-"quelle fonction mathématique que nous pouvons imaginer."
+"de ShaderMaterials par rapport à StandardMaterial3Ds. Avec "
+"StandardMaterial3D, nous pourrions définir ces propriétés avec une texture, "
+"ou à un nombre plat. Mais avec les shaders, nous pouvons les régler en "
+"fonction de n'importe quelle fonction mathématique que nous pouvons imaginer."
 
 msgid ""
 "And now, with only 5 lines of code, you can have complex looking water. Now "
@@ -483,3 +482,7 @@ msgstr ""
 "`Spatial Shaders <doc_spatial_shader>` doc. Regardez aussi les tutoriels "
 "plus avancés dans les sections :ref:`Shading section <toc-learn-features-"
 "shading>` et :ref:`3D <toc-learn-features-3d>`."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

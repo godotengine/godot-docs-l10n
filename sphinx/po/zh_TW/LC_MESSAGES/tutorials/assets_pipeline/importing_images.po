@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,6 +173,13 @@ msgid ""
 msgstr ""
 "在下表中，分別寫出了四個選項各自的優點與缺點 (|good| = 最優、 |bad| = 最差)："
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "與"
+
 msgid "Uncompressed"
 msgstr "無壓縮"
 
@@ -211,6 +218,10 @@ msgid "|bad| Large"
 msgstr "|bad| 大"
 
 msgid "|regular| Small"
+msgstr "|regular| 小"
+
+#, fuzzy
+msgid "regular"
 msgstr "|regular| 小"
 
 msgid "|good| Very Small"
@@ -485,3 +496,7 @@ msgid ""
 msgstr ""
 "該選項只會套用於 SVG 檔。用於控制 SVG 圖像的縮放。預設的縮放為 (1.0)，會使匯"
 "入的 SVG 保持原始大小。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

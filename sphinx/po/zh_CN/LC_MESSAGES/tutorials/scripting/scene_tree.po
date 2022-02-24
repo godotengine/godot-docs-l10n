@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,8 +164,8 @@ msgid ""
 "the *scene tree*, they lose these abilities."
 msgstr ""
 "当节点进入\\ *场景树*\\ 时，它们将变为活动状态。它们可以访问需要处理的所有内"
-"容、获取输入、显示 2D 和 3D 视觉效果、收发通知、播放声音等。当从\\ *场景树*"
-"\\ 中删除时，它们将失去这些能力。"
+"容、获取输入、显示 2D 和 3D 视觉效果、收发通知、播放声音等。当从\\ *场景树"
+"*\\ 中删除时，它们将失去这些能力。"
 
 msgid "Tree order"
 msgstr "树顺序"
@@ -243,7 +243,11 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"这些是切换场景的快速而有用的方法, 但缺点是游戏将停止直到新场景被加载并运行. "
-"在游戏开发的某个时刻, 最好使用进度条, 动画化的指示器或线程(背景)加载来创建适"
-"当的加载画面. 必须使用自动加载功能(请参阅下一章)和 :ref:"
-"`doc_background_loading` 手动完成此操作."
+"这些方法可以用来快速切换场景，但缺点是游戏会卡住，直到新场景被加载并运行。在"
+"游戏开发的某个时刻，最好使用进度条、动画化的指示器或线程（后台）加载来创建适"
+"当的加载画面。必须使用自动加载功能（请参阅下一章）和 :ref:"
+"`doc_background_loading` 手动完成此操作。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,26 +49,26 @@ msgstr "可以做什么？"
 
 msgid ""
 "While it's recommended that most of a game be written in scripting (as it is "
-"an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
-"++ modules can be useful in the following scenarios:"
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
 msgstr ""
 "尽管我们建议使用脚本编写游戏的大部分代码(因为这能够节省大量的时间), 但使用 C+"
 "+ 进行开发也是完全可行的. 在以下情况下, 添加C ++模块可能会很有用:"
 
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr "将外部库绑定到Godot(例如PhysX, FMOD等)."
+msgstr "将外部库绑定到 Godot（例如 PhysX、FMOD 等）。"
 
 msgid "Optimize critical parts of a game."
-msgstr "优化游戏的核心部分."
+msgstr "优化游戏的核心部分。"
 
 msgid "Adding new functionality to the engine and/or editor."
-msgstr "为引擎和/或编辑器添加新功能."
+msgstr "为引擎和/或编辑器添加新功能。"
 
 msgid "Porting an existing game."
-msgstr "移植现有的游戏项目."
+msgstr "移植现有的游戏项目。"
 
 msgid "Write a whole, new game in C++ because you can't live without C++."
-msgstr "使用 C++ 编写整个新游戏, 因为你离不开 C++."
+msgstr "使用 C++ 编写整个新游戏，因为你离不开 C++。"
 
 msgid "Creating a new module"
 msgstr "创建新模块"
@@ -77,8 +77,8 @@ msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Godot and compile it <toc-devel-compiling>`."
 msgstr ""
-"创建模块之前，请先\\ :ref:`下载 Godot 源代码并编译 <toc-devel-compiling>`"
-"\\ 。"
+"创建模块之前，请先\\ :ref:`下载 Godot 源代码并编译 <toc-devel-"
+"compiling>`\\ 。"
 
 msgid ""
 "To create a new module, the first step is creating a directory inside "
@@ -96,7 +96,7 @@ msgstr ""
 "在里面创建一个简单的加法器类："
 
 msgid "And then the cpp file."
-msgstr "然后是cpp文件."
+msgstr "然后是 cpp 文件。"
 
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
@@ -561,3 +561,7 @@ msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."
 msgstr "通过同样的逻辑, 你可以扩展编辑器, 以及引擎中几乎所有领域."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

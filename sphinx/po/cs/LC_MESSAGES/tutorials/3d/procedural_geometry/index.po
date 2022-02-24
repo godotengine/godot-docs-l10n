@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,8 +101,8 @@ msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
 "array is as easy as not assigning an array at the index ``ArrayMesh."
 "ARRAY_INDEX``. A non-indexed array stores unique vertex information for "
-"every triangle, meaning that when two triangle share a vertex, the vertex is "
-"duplicated in the array. An indexed surface array only stores vertex "
+"every triangle, meaning that when two triangles share a vertex, the vertex "
+"is duplicated in the array. An indexed surface array only stores vertex "
 "information for each unique vertex and then also stores an array of indices "
 "which maps out how to construct the triangles from the vertex array. In "
 "general, using an indexed array is faster, but it means you have to share "
@@ -215,3 +215,7 @@ msgid ""
 "needed. The MeshDataTool is best used if you are going to be using an "
 "algorithm that requires access to the face or edge array."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

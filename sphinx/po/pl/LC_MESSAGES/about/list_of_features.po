@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,7 +392,6 @@ msgstr ""
 "*DirectionalLight:* Ortogonalny (najszybszy), PSSM 2-częściowy i 4-"
 "częściowy. Obsługuje mieszanie między podziałami."
 
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
@@ -416,11 +415,16 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Obsługuje baking tylko światła pośredniego lub baking zarówno światła "
+"bezpośredniego, jak i pośredniego. Tryb bakingu można regulować w zależności "
+"od światła, aby umożliwić hybrydowe ustawienia bakingu przy świetle."
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Obsługuje oświetlenie dynamicznych obiektów za pomocą automatycznego systemu "
+"opartego na octree. Nie jest wymagane ręczne umieszczanie próbnika."
 
 msgid "Lightmaps are baked on the CPU."
 msgstr "Mapy świetlne są wypalone na procesorze."
@@ -444,7 +448,7 @@ msgstr ""
 "użyciu ReflectionProbe. Opcjonalnie można włączyć korekcję paralaksy."
 
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* refleksje w obrębie ekranu."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
@@ -493,7 +497,7 @@ msgid "**Post-processing:**"
 msgstr "**Post-processing:***"
 
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Mapowanie tonów (liniowe, Reinharda, filmowe, ACES)."
 
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
@@ -503,17 +507,21 @@ msgid "*GLES3:* Near and far depth of field."
 msgstr "*GLES3:* Bliska i odległa głębia ostrości."
 
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "*GLES3:* Okluzja otoczenia w przestrzeni ekranu."
 
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Opcjonalny debanding, by uniknąć pasmowania kolorów (efektywne, gdy "
+"jest włączone renderowanie HDR)."
 
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"Blask z opcjonalnym dwu-sześciennym skalowaniem i kilkoma typami mieszania: "
+"Ekran(Screen), Miękkie światło(Soft Light), Dodaj(Add), Zamień(Replace)."
 
 msgid "Color correction using an one-dimensional ramp."
 msgstr "Korekcja kolory wykorzystując jednowymiarową krzywą."
@@ -601,26 +609,29 @@ msgid "Soft bodies."
 msgstr "Miękkie ciała."
 
 msgid "Ragdolls."
-msgstr "Szmaciane lalki."
+msgstr "Ragdolle."
 
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
 msgstr "Wbudowane kształty: prostopadłościan, kula, kapsułka, walec."
 
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "Generuj trójkątne kształty kolizji dla dowolnej siatki z edytora."
 
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
+"Wygeneruj jeden lub parę wypukłych kształtów kolizji dla dowolnej siatki "
+"obiektu 3D z edytora."
 
 msgid "Shaders"
 msgstr "Shadery"
 
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "*2D:* niestandardowe wierzchołki, fragmenty oraz shadery światła."
 
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr ""
+"*3D:* Niestandardowe wierzchołki, fragmenty, światło oraz shadery nieba."
 
 #, fuzzy
 msgid ""
@@ -637,55 +648,65 @@ msgid "Support for visual shader plugins."
 msgstr "Wsparcie dla wizualnego tworzenia wtyczek."
 
 msgid "Scripting"
-msgstr "Skryptowanie"
+msgstr "Programowanie"
 
 msgid "**General:**"
 msgstr "**Ogólne:**"
 
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr ""
+msgstr "Wzorzec zorientowany obiektowo z skryptami rozszerzającymi węzły."
 
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "Sygnały i grupy do komunikacji pomiędzy skryptami."
 
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
+"Wsparcie dla :ref:`międzyjęzykowego pisania skryptów "
+"<doc_cross_language_scripting>`."
 
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
 msgstr ""
+"Wiele typów danych algebry liniowej 2D i 3D, takich jak wektory i "
+"transformaty."
 
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
+":ref:`Wysokopoziomowy język interpretowany <doc_gdscript>` z :ref:"
+"`opcjonalną statyczną typizacją <doc_gdscript_static_typing>`."
 
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Składnia zainspirowana Python'em."
 
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "Podświetlenie składni jest dostępne na GitHubie."
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+":ref:`Użyj wątków <doc_using_multiple_threads>` by wykonywać działania "
+"asynchroniczne bądź spożytkować wiele rdzeni procesora."
 
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
+"Pakowane w osobnym pliku binarnym, by utrzymać mały rozmiar plików i niską "
+"ilość zależności."
 
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Korzysta z Mono 6.x."
 
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Pełne wsparcie dla składni i funkcji C# 7.0."
 
 msgid "Supports all platforms."
 msgstr "Wspiera wszystkie platformy."
@@ -697,35 +718,43 @@ msgstr ""
 "funkcjonalności IDE."
 
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
+":ref:`Wizualny język skryptowy oparty na grafach "
+"<doc_what_is_visual_script>`."
 
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"Działa najlepiej gdy jest użyty do konkretnych celów (takich jak logika "
+"konkretnego poziomu) niż gdy jako język do stworzenia całych projektów."
 
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"Kiedy tego potrzebujesz, połącz do natywnych bibliotek dla wyższej "
+"wydajności i integracji osób trzecich."
 
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"Dla programowania logiki gry, rekomendujemy GDScript lub C# pod warunkiem, "
+"że ich wydajność jest odpowiednia."
 
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "Oficjalne wiązania dla C i C++."
 
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "Użyj dowolnego systemu budowy i funkcji języków."
 
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
@@ -736,13 +765,13 @@ msgid "Audio"
 msgstr "Dźwięk"
 
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "Wyjście mono, stereo, 5.1 i 7.1."
 
 msgid "Non-positional and positional playback in 2D and 3D."
 msgstr ""
 
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "Opcjonalny efekt Dopplera w 2D i 3D."
 
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
@@ -792,19 +821,19 @@ msgid "*Audio:*"
 msgstr "*Dźwięk:*"
 
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "WAV z opcjonalną kompresją IMA-ADPCM."
 
 msgid "Ogg Vorbis."
 msgstr ""
 
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 msgid "*3D scenes:*"
 msgstr "*Sceny 3D:*"
 
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(zalecane)*."
 
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
@@ -814,10 +843,10 @@ msgstr ""
 "(bezpośredni eksport z Blendera)."
 
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (eksperymentalne)."
 
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)."
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
@@ -1004,13 +1033,18 @@ msgstr ""
 msgid "Support for ARKit on iOS out of the box."
 msgstr ""
 
-msgid "Support for the OpenXR and OpenVR APIs."
-msgstr ""
+#, fuzzy
+msgid "Support for the OpenXR APIs."
+msgstr "Wsparcie dla wizualnego tworzenia wtyczek."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Wsparcie dla wizualnego tworzenia wtyczek."
 
 msgid "GUI system"
 msgstr "System interfejsu"
@@ -1131,9 +1165,8 @@ msgstr ""
 msgid "Support for Bézier curves in animation."
 msgstr ""
 
-#, fuzzy
 msgid "File formats"
-msgstr "Formaty Video"
+msgstr "Formaty plików"
 
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
@@ -1238,3 +1271,7 @@ msgstr ""
 "`roadmap <https://github.com/godotengine/godot-roadmap>`__ repozytorium "
 "dokumentujące funkcje, na które wyrażono zgodę i które zostaną dodane w "
 "przyszłych wersjach Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format tłumaczenia"

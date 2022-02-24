@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,8 +129,9 @@ msgid ""
 "and select the InputMap tab:"
 msgstr ""
 
+#, fuzzy
 msgid "Capturing actions"
-msgstr "Azioni di cattura"
+msgstr "Catturare le azioni"
 
 msgid ""
 "Once you've defined your actions, you can process them in your scripts using "
@@ -138,8 +139,9 @@ msgid ""
 "the action you're looking for:"
 msgstr ""
 
+#, fuzzy
 msgid "Keyboard events"
-msgstr ""
+msgstr "Eventi Keyboard"
 
 msgid ""
 "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
@@ -153,8 +155,9 @@ msgid ""
 "scancode constants."
 msgstr ""
 
+#, fuzzy
 msgid "Keyboard modifiers"
-msgstr ""
+msgstr "Modificatori Keyboard"
 
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
@@ -164,8 +167,9 @@ msgid ""
 "`Shift + T`:"
 msgstr ""
 
+#, fuzzy
 msgid "Mouse events"
-msgstr ""
+msgstr "Eventi Mouse"
 
 msgid ""
 "Mouse events stem from the :ref:`InputEventMouse <class_InputEventMouse>` "
@@ -175,8 +179,9 @@ msgid ""
 "will contain a ``position`` property."
 msgstr ""
 
+#, fuzzy
 msgid "Mouse buttons"
-msgstr ""
+msgstr "Bottoni Mouse"
 
 msgid ""
 "Capturing mouse buttons is very similar to handling key events. :ref:"
@@ -187,8 +192,9 @@ msgid ""
 "``BUTTON_WHEEL_DOWN`` being separate events."
 msgstr ""
 
+#, fuzzy
 msgid "Mouse motion"
-msgstr ""
+msgstr "Movimento Mouse"
 
 msgid ""
 ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` events occur "
@@ -201,8 +207,9 @@ msgid ""
 "<class_Sprite>` node:"
 msgstr ""
 
+#, fuzzy
 msgid "Touch events"
-msgstr ""
+msgstr "Eventi Touch"
 
 msgid ""
 "If you are using a touchscreen device, you can generate touch events. :ref:"
@@ -217,3 +224,7 @@ msgid ""
 "From Mouse\" and your project will interpret mouse clicks and motion as "
 "touch events."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

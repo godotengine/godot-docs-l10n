@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Introduction to Godot"
-msgstr "Introduzione ai nodi CSG"
+msgstr "Introduzione a Godot"
 
 msgid ""
 "This article is here to help you figure out whether Godot might be a good "
@@ -27,65 +27,99 @@ msgid ""
 "a feel for what you can achieve with it and answer questions such as \"what "
 "do I need to know to get started?\"."
 msgstr ""
+"Questo articolo è qui per aiutarti a capire se Godot potrebbe essere una "
+"buona soluzione per te. Introdurremo alcune caratteristiche generali del "
+"motore per darti un'idea di ciò che puoi ottenere con esso e rispondere a "
+"domande come \"cosa devo sapere per iniziare?."
 
+#, fuzzy
 msgid ""
 "This is by no means an exhaustive overview. We will introduce many more "
 "features in this getting started series."
 msgstr ""
+"Questa non è affatto una panoramica esaustiva. Introdurremo molte altre "
+"funzionalità in questa serie introduttiva."
 
 #, fuzzy
 msgid "What is Godot?"
-msgstr "Che cos'è?"
+msgstr "Cos'è Godot?"
 
+#, fuzzy
 msgid ""
 "Godot is a general-purpose 2D and 3D game engine designed to support all "
 "sorts of projects. You can use it to create games or applications you can "
 "then release on desktop or mobile, as well as on the web."
 msgstr ""
+"Godot è un motore di gioco 2D e 3D generico progettato per supportare tutti "
+"i tipi di progetti. Puoi usarlo per creare giochi o applicazioni che puoi "
+"quindi rilasciare su desktop o dispositivi mobili, oltre che sul web."
 
+#, fuzzy
 msgid ""
 "You can also create console games with it, although you either need strong "
 "programming skills or a developer to port the game for you."
 msgstr ""
+"Puoi anche creare giochi per console con esso, anche se hai bisogno di forti "
+"capacità di programmazione o di uno sviluppatore che porti il gioco per te."
 
+#, fuzzy
 msgid ""
 "The Godot team can't provide an open-source console export due to the "
 "licensing terms imposed by console manufacturers. Regardless of the engine "
 "you use, though, releasing games on consoles is always a lot of work. You "
 "can read more on that here: :ref:`doc_consoles`."
 msgstr ""
+"Il team Godot non può fornire un'esportazione open-source per console a "
+"causa dei termini di licenza imposti dai produttori di console. "
+"Indipendentemente dal motore che usi, comunque, rilasciare giochi su console "
+"è sempre un sacco di lavoro. Puoi leggere di più su questo argomento qui: :"
+"ref:`doc_consoles`."
 
+#, fuzzy
 msgid "What can the engine do?"
-msgstr ""
+msgstr "Cosa può fare il motore?"
 
+#, fuzzy
 msgid ""
 "Godot was initially developed in-house by an Argentinan game studio. Its "
 "development started in 2001, and the engine was rewritten and improved "
 "tremendously since its open-source release in 2014."
 msgstr ""
+"Godot è stato inizialmente sviluppato in-house da uno studio di gioco "
+"argentino. Il suo sviluppo è iniziato nel 2001, e il motore è stato "
+"riscritto e migliorato enormemente dal suo rilascio open-source nel 2014."
 
+#, fuzzy
 msgid ""
 "Some examples of games created with Godot include Ex-Zodiac and Helms of "
 "Fury."
 msgstr ""
+"Alcuni esempi di giochi creati con Godot includono Ex-Zodiac e Helms of Fury."
 
+#, fuzzy
 msgid ""
 "As for applications, the open-source pixel art drawing program Pixelorama is "
 "powered by Godot, and so is the voxel RPG creator RPG in a box."
 msgstr ""
+"Per quanto riguarda le applicazioni, il programma open-source di disegno di "
+"pixel art Pixelorama è alimentato da Godot, e così anche il creatore di RPG "
+"voxel RPG in a box."
 
+#, fuzzy
 msgid "You can find many more examples in the official showcase videos:"
-msgstr ""
+msgstr "Puoi trovare molti altri esempi nei video del showcase ufficiale:"
 
+#, fuzzy
 msgid "`April 2020 desktop and console showcase`_"
-msgstr ""
+msgstr "`Aprile 2020 desktop e console showcase`_"
 
+#, fuzzy
 msgid "`April 2020 mobile showcase`_"
-msgstr ""
+msgstr "`Aprile 2020 mobile showcase`_"
 
 #, fuzzy
 msgid "How does it work and look?"
-msgstr "Come funziona?"
+msgstr "Come funziona e come appare?"
 
 #, fuzzy
 msgid ""
@@ -93,38 +127,53 @@ msgid ""
 "the most common needs. It includes a code editor, an animation editor, a "
 "tilemap editor, a shader editor, a debugger, a profiler, and more."
 msgstr ""
-"Godot cerca di fornire i propri strumenti per rispondere ai bisogni più "
-"comuni. Ha uno spazio di lavoro dedicato allo scripting, un editor di "
-"animazione, un editor di tilemap, un editor di shader, un debugger, un "
-"profiler, la possibilità di caricare a caldo localmente e su dispositivi "
-"remoti, ecc."
+"Godot viene fornito con un editor di gioco completo con strumenti integrati "
+"per rispondere alle esigenze più comuni. Include un editor di codice, un "
+"editor di animazioni, un editor di tilemap, un editor di shader, un "
+"debugger, un profiler e altro ancora."
 
+#, fuzzy
 msgid ""
 "The team strives to offer a feature-rich game editor with a consistent user "
 "experience. While there is always room for improvement, the user interface "
 "keeps getting refined."
 msgstr ""
+"Il team si sforza di offrire un editor di giochi ricco di funzionalità con "
+"un'esperienza utente coerente. Mentre c'è sempre spazio per il "
+"miglioramento, l'interfaccia utente continua ad essere raffinata."
 
+#, fuzzy
 msgid ""
 "Of course, if you prefer, you can work with external programs. We officially "
 "support importing 3D scenes designed in Blender_ and maintain plugins to "
 "code in VSCode_ and Emacs_ for GDScript and C#. We also support Visual "
 "Studio for C# on Windows."
 msgstr ""
+"Naturalmente, se preferisci, puoi lavorare con programmi esterni. "
+"Supportiamo ufficialmente l'importazione di scene 3D progettate in Blender_ "
+"e manteniamo i plugin per codificare in VSCode_ ed Emacs_ per GDScript e C#. "
+"Supportiamo anche Visual Studio per C# su Windows."
 
 #, fuzzy
 msgid "Programming languages"
-msgstr "Linguaggio di shading"
+msgstr "Linguaggi di programmazione"
 
+#, fuzzy
 msgid "Let's talk about the available programming languages."
-msgstr ""
+msgstr "Parliamo dei linguaggi di programmazione disponibili."
 
+#, fuzzy
 msgid ""
 "You can code your games using :ref:`GDScript <toc-learn-scripting-"
 "gdscript>`, a Godot-specific and tightly integrated language with a "
 "lightweight syntax, or :ref:`C# <toc-learn-scripting-C#>`, which is popular "
 "in the games industry. These are the two main scripting languages we support."
 msgstr ""
+"Puoi codificare i tuoi giochi usando :ref:`GDScript <toc-learn-scripting-"
+"gdscript>`, un linguaggio specifico per Godot e strettamente integrato con "
+"una sintassi leggera, o :ref:`C# <toc-learn-scripting-C#>`, che è popolare "
+"nell'industria dei giochi. Questi sono i due principali linguaggi di "
+"scripting che supportiamo."
 
 #, fuzzy
 msgid ""
@@ -134,59 +183,104 @@ msgstr ""
 "Godot supporta anche un linguaggio di programmazione visuale basato su nodi "
 "chiamato :ref:`VisualScript <toc-learn-scripting-visual_script>`."
 
+#, fuzzy
 msgid ""
 "With the :ref:`GDNative <toc-tutorials-gdnative>` technology, you can also "
 "write gameplay or high-performance algorithms in C or C++ without "
 "recompiling the engine. You can use this technology to integrate third-party "
 "libraries and other Software Development Kits (SDK) in the engine."
 msgstr ""
+"Con la tecnologia :ref:`GDNative <toc-tutorials-gdnative>`, puoi anche "
+"scrivere gameplay o algoritmi ad alte prestazioni in C o C++ senza "
+"ricompilare il motore. È possibile utilizzare questa tecnologia per "
+"integrare librerie di terze parti e altri kit di sviluppo software (SDK) nel "
+"motore."
 
+#, fuzzy
 msgid ""
 "Of course, you can also directly add modules and features to the engine, as "
 "it's completely free and open-source."
 msgstr ""
+"Naturalmente, è anche possibile aggiungere direttamente moduli e "
+"caratteristiche al motore, dato che è completamente gratuito e open-source."
 
+#, fuzzy
 msgid ""
 "These are the five officially supported programming languages. The community "
 "maintains support for many more. For more information, see :ref:`GDNative "
 "third-party bindings <doc_what_is_gdnative_third_party_bindings>`."
 msgstr ""
+"Questi sono i cinque linguaggi di programmazione ufficialmente supportati. "
+"La comunità mantiene il supporto per molti altri. Per maggiori informazioni, "
+"vedi :ref:`GDNative third-party bindings "
+"<doc_what_is_gdnative_third_party_bindings>`."
 
+#, fuzzy
 msgid "What do I need to know to use Godot?"
-msgstr ""
+msgstr "Cosa devo sapere per usare Godot?"
 
+#, fuzzy
 msgid ""
 "Godot is a feature-packed game engine. With its thousands of features, there "
 "is a lot to learn. To make the most of it, you need good programming "
 "foundations. While we try to make the engine accessible, you will benefit a "
 "lot from knowing how to think like a programmer first."
 msgstr ""
+"Godot è un motore di gioco ricco di funzionalità. Con le sue migliaia di "
+"funzioni, c'è molto da imparare. Per sfruttarlo al meglio, sono necessarie "
+"buone basi di programmazione. Mentre cerchiamo di rendere accessibile il "
+"motore, trarrai molto vantaggio dal sapere come pensare prima come un "
+"programmatore."
 
+#, fuzzy
 msgid ""
 "Godot relies on the object-oriented programming paradigm. Being comfortable "
 "with concepts such as classes and objects will help you code efficiently in "
 "it."
 msgstr ""
+"Godot si basa sul paradigma di programmazione orientato agli oggetti. Essere "
+"a proprio agio con concetti come classi e oggetti vi aiuterà a codificare in "
+"modo efficiente."
 
+#, fuzzy
 msgid ""
 "If you are entirely new to programming, we recommend following the `CS50 "
 "open courseware`_ from Harvard University. It's a great free course that "
 "will teach you everything you need to know to be off to a good start. It "
 "will save you countless hours and hurdles learning any game engine afterward."
 msgstr ""
+"Se sei completamente nuovo nella programmazione, ti consigliamo di seguire "
+"il `CS50 open courseware`_ dell'Università di Harvard. È un ottimo corso "
+"gratuito che ti insegnerà tutto ciò che devi sapere per iniziare bene. Ti "
+"farà risparmiare innumerevoli ore e ostacoli nell'apprendimento di qualsiasi "
+"motore di gioco in seguito."
 
+#, fuzzy
 msgid ""
 "In CS50, you will learn multiple programming languages. Don't be afraid of "
 "that: programming languages have many similarities. The skills you learn "
 "with one language transfer well to others."
 msgstr ""
+"In CS50 imparerai più linguaggi di programmazione. Non abbiate paura di "
+"questo: i linguaggi di programmazione hanno molte somiglianze. Le abilità "
+"che apprendi con un linguaggio si trasferiscono bene ad altri."
 
+#, fuzzy
 msgid ""
 "We will provide you with more Godot-specific learning resources in :ref:"
 "`doc_learning_new_features`."
 msgstr ""
+"Ti forniremo più risorse di apprendimento specifiche per Godot in :ref:"
+"`doc_learning_new_features`."
 
+#, fuzzy
 msgid ""
 "In the next part, you will get an overview of the engine's essential "
 "concepts."
 msgstr ""
+"Nella prossima parte, avrete una panoramica dei concetti essenziali del "
+"motore."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

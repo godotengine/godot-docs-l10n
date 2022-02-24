@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,9 +37,10 @@ msgstr ""
 "certas sequências de caracteres de substituição. Essas sequências podem ser "
 "facilmente substituídas por parâmetros passados para a string de formatação."
 
+#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
-"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
@@ -409,8 +410,8 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"``\"Oi, {nome} v{versao}!\".format([[\"versao\":\"3.0\"], [\"nome\":\"Godette"
-"\"]])``"
+"``\"Oi, {nome} v{versao}!\".format([[\"versao\":\"3.0\"], [\"nome\":"
+"\"Godette\"]])``"
 
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"Oi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
@@ -470,3 +471,7 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Oi, Godette v3.11"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

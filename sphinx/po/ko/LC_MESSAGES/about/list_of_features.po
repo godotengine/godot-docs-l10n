@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1016,15 +1016,18 @@ msgstr "XR 지원 (AR 및 VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "iOS의 ARKit을 기본 지원."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "OpenXR 및 OpenVR API 지원."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"플러그인 지원 덕분에 오큘러스 퀘스트나 HTC Vive와 같은 유명한 VR 헤드셋들이 "
-"지원됩니다."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "OpenXR 및 OpenVR API 지원."
 
 msgid "GUI system"
 msgstr "GUI 시스템"
@@ -1277,3 +1280,7 @@ msgstr ""
 "`고도 제안 저장소 <https://github.com/godotengine/godot-proposals>`__ 에는 커"
 "뮤니티가 요청한 기능과 향후 Godot 릴리스에서 구현될 수 있는 기능 목록이 있습"
 "니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,15 +21,22 @@ msgstr ""
 msgid "Learning new features"
 msgstr "Elenco delle funzionalità"
 
+#, fuzzy
 msgid ""
 "Godot is a feature-rich game engine. There is a lot to learn about it. This "
 "page explains how you can use the online manual, built-in code reference, "
 "and join online communities to learn new features and techniques."
 msgstr ""
+"Godot è un motore di gioco ricco di funzionalità. C'è molto da imparare su "
+"di esso. Questa pagina spiega come puoi usare il manuale online, il "
+"riferimento al codice integrato, e unirti alle comunità online per imparare "
+"nuove caratteristiche e tecniche."
 
+#, fuzzy
 msgid "Making the most of this manual"
-msgstr ""
+msgstr "Sfruttare al meglio questo manuale"
 
+#, fuzzy
 msgid ""
 "What you are reading now is the user manual. It documents each of the "
 "engine's concepts and available features. When learning a new topic, you can "
@@ -38,7 +45,15 @@ msgid ""
 "more specific pages. If a page exists for a given theme, it will often link "
 "to more related content."
 msgstr ""
+"Quello che stai leggendo ora è il manuale utente. Documenta ciascuno dei "
+"concetti del motore e delle funzionalità disponibili. Quando impari un nuovo "
+"argomento, puoi iniziare navigando nella sezione corrispondente di questo "
+"sito web. Il menu a sinistra ti consente di esplorare ampi argomenti mentre "
+"la barra di ricerca ti aiuterà a trovare pagine più specifiche. Se esiste "
+"una pagina per un determinato tema, spesso si collegherà a contenuti più "
+"correlati."
 
+#, fuzzy
 msgid ""
 "The manual has a companion class reference that explains each Godot class's "
 "available functions and properties when programming. While the manual covers "
@@ -48,52 +63,87 @@ msgid ""
 "offline, from within the Godot editor. To do so, go to Help -> Search or "
 "press :kbd:`F1`."
 msgstr ""
+"Il manuale ha un riferimento alla classe complementare che spiega le "
+"funzioni e le proprietà disponibili di ciascuna classe Godot durante la "
+"programmazione. Mentre il manuale copre caratteristiche generali, concetti e "
+"come utilizzare l'editor, il riferimento riguarda l'utilizzo dell'API di "
+"scripting di Godot (Application Programming Interface). Puoi accedervi sia "
+"online che offline. Ti consigliamo di sfogliare il riferimento offline, "
+"dall'editor Godot. Per farlo, vai su Aiuto -> Cerca o premi :kbd:`F1`."
 
+#, fuzzy
 msgid ""
 "To browse it online, head to the manual's :ref:`Class Reference <toc-class-"
 "ref>` section."
 msgstr ""
+"Per sfogliarlo online, vai alla sezione :ref:`Class Reference <toc-class-"
+"ref>` del manuale."
 
+#, fuzzy
 msgid "A class reference's page tells you:"
-msgstr ""
+msgstr "La pagina di riferimento di una classe ti dice:"
 
+#, fuzzy
 msgid ""
 "Where the class exists in the inheritance hierarchy. You can click the top "
 "links to jump to parent classes and see the properties and methods a type "
 "inherits."
 msgstr ""
+"Dove la classe esiste nella gerarchia dell'ereditarietà. Puoi cliccare sui "
+"link in alto per saltare alle classi madri e vedere le proprietà e i metodi "
+"che un tipo eredita."
 
+#, fuzzy
 msgid "A summary of the class's role and use cases."
-msgstr ""
+msgstr "Un riassunto del ruolo e dei casi d'uso della classe."
 
+#, fuzzy
 msgid ""
 "An explanation of the class's properties, methods, signals, enums, and "
 "constants."
 msgstr ""
+"Una spiegazione delle proprietà, metodi, segnali, enum e costanti della "
+"classe."
 
+#, fuzzy
 msgid "Links to manual pages further detailing the class."
 msgstr ""
+"Collegamenti a pagine del manuale che descrivono ulteriormente la classe."
 
+#, fuzzy
 msgid ""
 "If the manual or class reference is missing or has insufficient information, "
 "please open an Issue in the official `godot-docs <https://github.com/"
 "godotengine/godot-docs/issues>`_ GitHub repository to report it."
 msgstr ""
+"Se il manuale o il riferimento alla classe manca o ha informazioni "
+"insufficienti, apri un problema nel repository ufficiale `godot-docs "
+"<https://github.com/godotengine/godot-docs/issues>`_ GitHub per segnalarlo."
 
+#, fuzzy
 msgid ""
 "You can Ctrl-click any underlined text like the name of a class, property, "
 "method, signal, or constant to jump to it."
 msgstr ""
+"Puoi fare clic tenendo premuto il tasto Ctrl su qualsiasi testo sottolineato "
+"come il nome di una classe, una proprietà, un metodo, un segnale o una "
+"costante per passare ad esso."
 
+#, fuzzy
 msgid "Learning to think like a programmer"
-msgstr ""
+msgstr "Imparare a pensare come un programmatore"
 
+#, fuzzy
 msgid ""
 "Teaching programming foundations and how to think like a game developer is "
 "beyond the scope of Godot's documentation. If you're new to programming, we "
 "recommend two excellent free resources to get you started:"
 msgstr ""
+"Insegnare le basi della programmazione e come pensare come uno sviluppatore "
+"di giochi va oltre lo scopo della documentazione di Godot. Se non conosci la "
+"programmazione, ti consigliamo due eccellenti risorse gratuite per iniziare:"
 
+#, fuzzy
 msgid ""
 "Harvard university offers a free courseware to learn to program, `CS50 "
 "<https://cs50.harvard.edu/x/2020/>`_. It will teach you programming "
@@ -102,21 +152,38 @@ msgid ""
 "efficiently. You can see this course as an investment that will save you "
 "time and trouble when you learn to create games."
 msgstr ""
+"L'università di Harvard offre un materiale didattico gratuito per imparare a "
+"programmare, `CS50 <https://cs50.harvard.edu/x/2020/>`_. Ti insegnerà i "
+"fondamenti della programmazione, come funziona il codice e come pensare come "
+"un programmatore. Queste abilità sono essenziali per diventare uno "
+"sviluppatore di giochi e apprendere in modo efficiente qualsiasi motore di "
+"gioco. Puoi vedere questo corso come un investimento che ti farà risparmiare "
+"tempo e fatica quando imparerai a creare giochi."
 
+#, fuzzy
 msgid ""
 "If you prefer books, check out the free ebook `Automate The Boring Stuff "
 "With Python <https://automatetheboringstuff.com/>`_ by Al Sweigart's."
 msgstr ""
+"Se preferisci i libri, dai un'occhiata all'ebook gratuito `Automate The "
+"Boring Stuff With Python <https://automatetheboringstuff.com/>`_ di Al "
+"Sweigart's."
 
+#, fuzzy
 msgid "Learning with the community"
-msgstr ""
+msgstr "Imparare con la comunità"
 
+#, fuzzy
 msgid ""
 "Godot has a growing community of users. If you're stuck on a problem or need "
 "help to better understand how to achieve something, you can ask other users "
 "for help on one of the many `active communities <https://godotengine.org/"
 "community>`_."
 msgstr ""
+"Godot ha una crescente comunità di utenti. Se sei bloccato su un problema o "
+"hai bisogno di aiuto per capire meglio come realizzare qualcosa, puoi "
+"chiedere aiuto ad altri utenti su una delle tante ` comunità attive <https://"
+"godotengine.org/community>`_."
 
 msgid ""
 "The best place to ask for questions and find already answered ones is the "
@@ -200,7 +267,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Community tutorials"
-msgstr "Canali della comunità"
+msgstr "Tutorial della comunità"
 
 msgid ""
 "This manual aims to provide a comprehensive reference of Godot's features. "
@@ -210,3 +277,7 @@ msgid ""
 "see :ref:`doc_community_tutorials`, which lists content made by the Godot "
 "community."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

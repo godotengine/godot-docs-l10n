@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr "风格指南"
 
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
-msgstr "为了项目之间的一致性, 我们建议遵循以下指导原则:"
+msgstr "为了项目之间的一致性，我们建议遵循以下规范："
 
 msgid ""
 "Use **snake_case** for folder and file names (with the exception of C# "
@@ -160,10 +160,10 @@ msgid ""
 "stick to ``snake_case`` naming for all files in the project (and lowercase "
 "characters in general)."
 msgstr ""
-"Windows和最新的macOS版本默认使用不区分大小写的文件系统, 而Linux发行版默认使用"
-"区分大小写的文件系统. 由于Godot的PCK虚拟文件系统区分大小写, 因此在导出项目后"
-"可能会导致问题. 为了避免这种情况, 建议对项目中的所有文件都使用 "
-"``snake_case`` 蛇形命名法(一般使用小写)."
+"Windows 和最近版本的 macOS 默认使用不区分大小写的文件系统，而 Linux 发行版默"
+"认使用区分大小写的文件系统。由于 Godot 的 PCK 虚拟文件系统区分大小写，因此在"
+"导出项目后可能会导致问题。为了避免这种情况，建议对项目中的所有文件都使用 "
+"``snake_case`` 蛇形命名法（一般使用小写）。"
 
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
@@ -189,3 +189,7 @@ msgid ""
 msgstr ""
 "如果你还没有启用 Windows 的 Linux 子系统，可以在 PowerShell 窗口中输入以下代"
 "码\\ *以管理员权限运行*\\ 然后重启： ::"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

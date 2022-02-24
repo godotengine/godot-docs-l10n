@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,11 +64,13 @@ msgstr ""
 "플레이어 씬에서 한 것과 마찬가지로, 자식이 선택되지 않도록 설정하는 것을 잊지"
 "마세요."
 
+#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
-"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
-"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
-"box. This will ensure the mobs do not collide with each other."
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
+"ref:`CollisionObject2D <class_CollisionObject2D>` section, click the "
+"``Mask`` property and uncheck the first box. This will ensure the mobs do "
+"not collide with each other."
 msgstr ""
 ":ref:`RigidBody2D <class_RigidBody2D>` 속성에서 ``Gravity Scale`` 을 ``0`` 으"
 "로 설정해 몹이 아래로 떨어지지 않도록 합니다. 그리고, ``PhysicsBody2D`` 섹션"
@@ -149,8 +151,8 @@ msgid ""
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 "그런 다음 목록에서 이 이름 중 하나를 선택하려면 ``0``\\ 과 ``2`` 사이의 임의"
-"의 숫자를 선택해야 합니다(배열 인덱스는 ``0``\\ 에서 시작). ``randi() % n``"
-"\\ 은 ``0``\\ 과 ``n-1`` 사이의 임의의 정수를 선택합니다."
+"의 숫자를 선택해야 합니다(배열 인덱스는 ``0``\\ 에서 시작). ``randi() % "
+"n``\\ 은 ``0``\\ 과 ``n-1`` 사이의 임의의 정수를 선택합니다."
 
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
@@ -178,3 +180,7 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

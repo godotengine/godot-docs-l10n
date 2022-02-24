@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,9 +125,8 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
-"CanvasLayer 的其中一個例子就是建立視差背景。可以通過將背景放在 "
-"CanvasLayer「-1」上來實現。分數、生命計數器與暫停按鈕的畫面可以建立在第「1」"
-"層上。"
+"CanvasLayer 的其中一個例子就是建立視差背景。可以通過將背景放在 CanvasLayer"
+"「-1」上來實現。分數、生命計數器與暫停按鈕的畫面可以建立在第「1」層上。"
 
 msgid "Here's a diagram of how it looks:"
 msgstr "下圖顯示了圖層的樣子："
@@ -153,3 +152,7 @@ msgstr ""
 "覺，但在場景面板最上面的節點會在 Viewport 中會被繪製在下方節點的 **後面** 。"
 "2D 節點也有能控制繪製順序的屬性 (請參考 :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

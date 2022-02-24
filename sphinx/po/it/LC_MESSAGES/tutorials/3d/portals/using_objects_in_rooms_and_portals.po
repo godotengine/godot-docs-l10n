@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Portal mode"
-msgstr "Modalità di esportazione"
+msgstr "Modalità portale"
 
 msgid ""
 "If you look in the inspector, every VisualInstance in Godot is derived from "
@@ -39,7 +39,6 @@ msgid ""
 "``PortalMode``. This determines how objects will behave in the portal system."
 msgstr ""
 
-#, fuzzy
 msgid "STATIC"
 msgstr "STATIC"
 
@@ -50,7 +49,6 @@ msgid ""
 "objects."
 msgstr ""
 
-#, fuzzy
 msgid "DYNAMIC"
 msgstr "DYNAMIC"
 
@@ -61,7 +59,6 @@ msgid ""
 "might include moving platforms, and elevators."
 msgstr ""
 
-#, fuzzy
 msgid "ROAMING"
 msgstr "ROAMING"
 
@@ -72,7 +69,6 @@ msgid ""
 "keep track of which room a roaming object is within."
 msgstr ""
 
-#, fuzzy
 msgid "GLOBAL"
 msgstr "GLOBAL"
 
@@ -82,7 +78,6 @@ msgid ""
 "good candidates for ``GLOBAL`` mode."
 msgstr ""
 
-#, fuzzy
 msgid "IGNORE"
 msgstr "IGNORE"
 
@@ -108,7 +103,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Autoplace"
-msgstr "Autotiles"
+msgstr "Autoplace"
 
 msgid ""
 "However, for ease of use, it is also possible to place ``STATIC`` and "
@@ -137,7 +132,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Object Lifetimes"
-msgstr "Durata di vita"
+msgstr "Durata degli oggetti"
 
 msgid ""
 "It is important to note that the lifetime of ``STATIC`` and ``DYNAMIC`` "
@@ -157,10 +152,11 @@ msgstr ""
 
 #, fuzzy
 msgid "The sequence should be therefore:"
-msgstr "L'albero della scena dovrebbe essere simile a questo:"
+msgstr "La sequenza dovrebbe quindi essere:"
 
+#, fuzzy
 msgid "Load your level."
-msgstr ""
+msgstr "Carica il tuo livello."
 
 msgid "Place any ``STATIC`` or ``DYNAMIC`` objects."
 msgstr ""
@@ -177,7 +173,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Sprawling"
-msgstr "Swizzling"
+msgstr "Sprawling"
 
 msgid ""
 "Although users can usually ignore the internals of the portal system, they "
@@ -198,7 +194,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Portal Margins"
-msgstr "Margine"
+msgstr "Margini del portale"
 
 msgid ""
 "It is hard to place objects exactly at the edges of rooms, and if we chose "
@@ -219,7 +215,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Include in Bound"
-msgstr "Inclusione"
+msgstr "Includi in Bound"
 
 msgid ""
 "The support for objects that are larger than a single room has one side "
@@ -237,7 +233,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Lighting"
-msgstr "Luci"
+msgstr "Illuminazione"
 
 msgid ""
 "In general lights are handled like any other visual instance. They can be "
@@ -255,3 +251,7 @@ msgid ""
 "to use rooms and portals. You can use these to make games already, but there "
 "are many more features."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

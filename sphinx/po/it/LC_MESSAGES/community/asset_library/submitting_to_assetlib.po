@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#, fuzzy
 msgid "Submitting to the Asset Library"
-msgstr ""
+msgstr "Presentazione per la libreria delle risorse"
 
 msgid "Introduction"
 msgstr "Introduzione"
@@ -89,7 +90,6 @@ msgid ""
 "link must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
 
-#, fuzzy
 msgid "Recommendations"
 msgstr "Raccomandazioni"
 
@@ -161,11 +161,15 @@ msgid "Submitting"
 msgstr "Sottoporre"
 
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -176,12 +180,15 @@ msgstr ""
 
 #, fuzzy
 msgid "**Asset Name**:"
-msgstr "**Asset Name**:"
+msgstr "**Nome della risorsa**:"
 
+#, fuzzy
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
 msgstr ""
+"Il nome della vostra risorsa. Dovrebbe essere un titolo unico e descrittivo "
+"di ciò che è la tua risorsa."
 
 msgid "**Category**:"
 msgstr "**Categoria**:"
@@ -194,9 +201,8 @@ msgid ""
 "type will only be visible from inside a project."
 msgstr ""
 
-#, fuzzy
 msgid "**Godot version**:"
-msgstr "**Godot version**:"
+msgstr "**Versione di Godot**:"
 
 msgid ""
 "The version of the engine that the asset works with. Currently, it's not "
@@ -220,7 +226,7 @@ msgstr ""
 
 #, fuzzy
 msgid "**Repository host**:"
-msgstr "**Repository host**:"
+msgstr "**Host del repository**:"
 
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
@@ -231,70 +237,104 @@ msgstr ""
 
 #, fuzzy
 msgid "**Repository URL**:"
-msgstr "**Repository URL**:"
+msgstr "**URL del repository **:"
 
+#, fuzzy
 msgid ""
 "The URL to your asset's files/webpage. This will vary based on your choice "
 "of provider, but it should look similar to `https://github.com/<user>/"
 "<project>`."
 msgstr ""
+"L'URL dei file/pagina web della tua risorsa. Questo varierà in base alla "
+"scelta del provider, ma dovrebbe essere simile a `https://github.com/<user>/"
+"<project>`."
 
 #, fuzzy
 msgid "**Issues URL**:"
-msgstr "**Issues URL**:"
+msgstr "**Problemi dell' URL**:"
 
+#, fuzzy
 msgid ""
 "The URL to your asset's issue tracker. Again, this will differ from "
 "repository host to repository host, but will likely look similar to `https://"
 "github.com/<user>/<project>/issues`. You may leave this field empty if you "
 "use your provider's issue tracker, and it's part of the same repository."
 msgstr ""
+"L'URL del tracker dei problemi della tua risorsa. Di nuovo, questo sarà "
+"diverso per ogni host del repository, ma probabilmente sarà simile a "
+"\"https://github.com/<user>/<project>/issues\". Puoi lasciare vuoto questo "
+"campo se utilizzi il tracker dei problemi del tuo provider e fa parte dello "
+"stesso repository."
 
 #, fuzzy
 msgid "**Download Commit**:"
-msgstr "**Download Commit**:"
+msgstr "**Scarica Commit**:"
 
+#, fuzzy
 msgid ""
 "The commit of the asset. For example, "
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. The site computes the actual "
 "download URL from this."
 msgstr ""
+"Il commit della risorsa. Per esempio, "
+"`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. Il sito calcola l'attuale URL di "
+"download da questo."
 
 #, fuzzy
 msgid "**Icon URL**:"
-msgstr "**Icon URL**:"
+msgstr "**Icona dell' URL**:"
 
+#, fuzzy
 msgid ""
 "The URL to your asset's icon (which will be used as a thumbnail in the "
 "AssetLib search results and on the asset's page). Should be an image in "
 "either the PNG or JPG format."
 msgstr ""
+"L'URL dell'icona della tua risorsa (che sarà usata come miniatura nei "
+"risultati di ricerca di AssetLib e nella pagina della risorsa). Dovrebbe "
+"essere un'immagine in formato PNG o JPG."
 
 msgid "**License**:"
 msgstr "**Licenza**:"
 
+#, fuzzy
 msgid ""
 "The license under which you are distributing the asset. The list includes a "
 "variety of free and open-source software licenses, such as GPL (v2 and v3), "
 "MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://"
 "opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""
+"La licenza sotto la quale si sta distribuendo la risorsa. L'elenco include "
+"una varietà di licenze di software libero e open-source, come GPL (v2 e v3), "
+"MIT, BSD e Boost Software License. Potete visitare ` OpenSource.org <https://"
+"opensource.org>`_ per una descrizione dettagliata di ciascuna delle licenze "
+"elencate."
 
 msgid "**Description**:"
 msgstr "**Descrizione**:"
 
+#, fuzzy
 msgid ""
 "Finally, you can use the Description field for a textual overview of your "
 "asset, its features and behavior, a changelog, et cetera. In the future, "
 "formatting with Markdown will be supported, but currently, your only option "
 "is plain text."
 msgstr ""
+"Infine, puoi usare il campo Description per una panoramica testuale della "
+"tua risorsa, le sue caratteristiche e il suo comportamento, un changelog, "
+"ecc. In futuro, la formattazione con Markdown sarà supportata, ma "
+"attualmente, la tua unica opzione è il testo semplice."
 
+#, fuzzy
 msgid ""
 "You may also include up to three video and/or image previews, which will be "
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
 "of the preview submission boxes to enable them."
 msgstr ""
+"Puoi anche includere fino a tre anteprime di video e/o immagini, che saranno "
+"mostrate in fondo alla pagina della risorsa. Usa la casella di controllo "
+"\"Enable\" su ciascuna delle caselle di presentazione delle anteprime per "
+"abilitarle."
 
 msgid "**Type**:"
 msgstr "**Tipo**:"
@@ -305,7 +345,7 @@ msgstr "O un'immagine o un video."
 
 #, fuzzy
 msgid "**Image/YouTube URL**:"
-msgstr "**Image/YouTube URL**:"
+msgstr "**Immagine/URL di YouTube**:"
 
 #, fuzzy
 msgid "Either a link to the image, or to a video, hosted on YouTube."
@@ -313,13 +353,17 @@ msgstr "O un link all'immagine, o un video, ospitato su YouTube."
 
 #, fuzzy
 msgid "**Thumbnail URL**:"
-msgstr "**Thumbnail URL**:"
+msgstr "**Miniatura dell' URL **:"
 
+#, fuzzy
 msgid ""
 "A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
+"URL di un'immagine che verrà utilizzata come miniatura per l'anteprima. "
+"Questa opzione verrà rimossa alla fine e le miniature verranno invece "
+"calcolate automaticamente."
 
 #, fuzzy
 msgid ""
@@ -339,15 +383,14 @@ msgstr ""
 #, fuzzy
 msgid ""
 "You may have some luck accelerating the approval process by messaging the "
-"moderators and AssetLib reviewers on the `Contributors Chat <https://chat."
-"godotengine.org/>`_, or the official Discord server."
+"moderators and AssetLib reviewers on the `Godot Contributors Chat <https://"
+"chat.godotengine.org/>`_, or the official Discord server."
 msgstr ""
 "Potresti avere un po' di fortuna nell'accelerare il processo di approvazione "
 "mandando messaggi ai moderatori e ai revisori di AssetLib sulla "
 "`Contributors Chat <https://chat.godotengine.org/>`_, o sul server ufficiale "
 "Discord."
 
-#, fuzzy
 msgid ""
 "You will be informed when your asset is reviewed. If it was rejected, you "
 "will be told why that may have been, and you will be able to submit it again "
@@ -356,3 +399,7 @@ msgstr ""
 "Sarai informato quando la tua risorsa sarà esaminata. Se è stata rifiutata, "
 "ti verrà comunicato il motivo e potrai ripresentarla con le modifiche "
 "appropriate."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

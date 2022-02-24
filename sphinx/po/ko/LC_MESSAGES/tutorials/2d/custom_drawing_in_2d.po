@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Godot은 스프라이트, 폴리곤, 입자 등을 그리기 위한 노드를 가지고 있습니다. 대"
 "부분 경우에 충분하지만 항상 그렇지는 않습니다. 두려움, 불안, 분노 속에 울기 "
-"전에 특별한 *무언가* 를 그리는 노드가 존재하지 않기 때문에...  2D 노드( :ref:"
+"전에 특별한 *무언가* 를 그리는 노드가 존재하지 않기 때문에... 2D 노드( :ref:"
 "`Control <class_Control>` 또는 :ref:`Node2D <class_Node2D>` 기반)가 사용자 지"
 "정 명령을 쉽게 그릴 수 있는 것을 알면 좋을 것입니다. 또한 하는 것도 *진짜* 쉽"
 "습니다."
@@ -219,9 +219,9 @@ msgid ""
 msgstr ""
 "각각의 각도가 90° 씩 줄어드는 이유는 각 각도를 삼각법을 사용하여 2D 위치를 계"
 "산하기 때문입니다(코사인과 사인을 알아야 합니다). 그러나 간단히 말하면 "
-"``cos()`` 와 ``sin()`` 는 각도가 아니라 라디안을 사용합니다.  0°의 각도(0 라"
-"디안)는 3시 방향에서 시작합니다(우리는 12시 방향에서 세기를 원하지만). 그래"
-"서 12시 방향에서부터 세기 위해 각각의 각도를 90° 씩 줄입니다."
+"``cos()`` 와 ``sin()`` 는 각도가 아니라 라디안을 사용합니다. 0°의 각도(0 라디"
+"안)는 3시 방향에서 시작합니다(우리는 12시 방향에서 세기를 원하지만). 그래서 "
+"12시 방향에서부터 세기 위해 각각의 각도를 90° 씩 줄입니다."
 
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
@@ -351,3 +351,7 @@ msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

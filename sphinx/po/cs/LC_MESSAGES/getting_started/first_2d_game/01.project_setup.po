@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,23 +23,21 @@ msgstr ""
 msgid "In this short first part, we'll set up and organize the project."
 msgstr ""
 
-#, fuzzy
 msgid "Launch Godot and create a new project."
-msgstr "Vytvoření nového projektu."
+msgstr "Spusťte Godot a vytvořte nový projekt."
 
 msgid "GDScript"
 msgstr "GDSkript"
 
-#, fuzzy
 msgid ""
 "Download :download:`dodge_assets.zip <files/dodge_assets.zip>`. The archive "
 "contains the images and sounds you'll be using to make the game. Extract the "
 "archive and move the ``art/`` and ``fonts/`` directories to your project's "
 "directory."
 msgstr ""
-"Spusťte Godota a vytvořte nový projekt. Pak stáhněte :download:`dodge_assets."
-"zip <files / dodge_assets.zip>`. Obsahuje obrázky a zvuky, které budete "
-"používat při tvorbě hry. Rozbalte tyto soubory ve složce projektu."
+"Pak stáhněte :download:`dodge_assets.zip <files / dodge_assets.zip>`. "
+"Obsahuje obrázky a zvuky, které budete používat při tvorbě hry. Rozbalte "
+"tyto soubory ve složce projektu."
 
 msgid "C#"
 msgstr ""
@@ -50,7 +48,6 @@ msgid ""
 "`doc_c_sharp_setup`."
 msgstr ""
 
-#, fuzzy
 msgid "GDNative C++"
 msgstr "GDNative / C ++"
 
@@ -74,7 +71,6 @@ msgstr ""
 msgid "Your project folder should look like this."
 msgstr "Vaše složka projektu by měla vypadat takto."
 
-#, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on *Project -> Project Settings* to open the project "
@@ -85,7 +81,6 @@ msgstr ""
 "hry. Klikněte na Projekt -> Nastavení projektu -> Displej -> Okno a nastavte "
 "\"Šířka\" na ``480`` a \"Výška\" na ``720``."
 
-#, fuzzy
 msgid ""
 "Also, scroll down to the bottom of the section and, under the \"Stretch\" "
 "options, set ``Mode`` to \"2d\" and ``Aspect`` to \"keep\". This ensures "
@@ -102,8 +97,9 @@ msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene."
 msgstr ""
+"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a ``HUD``, "
+"které zkombinujeme do hlavní scény hry:``Main`` ."
 
-#, fuzzy
 msgid ""
 "In a larger project, it might be useful to create folders to hold the "
 "various scenes and their scripts, but for this relatively small game, you "
@@ -111,14 +107,17 @@ msgid ""
 "``res://``. You can see your project folders in the FileSystem dock in the "
 "lower left corner:"
 msgstr ""
-"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a ``HUD``, "
-"které zkombinujeme do hlavní scény hry:``Main`` . Ve větším projektu může "
-"být užitečné vytvořit složky, pro každkou scénu a její skript zvlášť, ale "
-"pro tuto relativně malou hru můžete ukládat své scény a skripty do "
-"kořenového adresáře projektu identifikovaného pomocí ``res: //``. Složky "
-"projektu můžete vidět v doku Souborový systém v levém dolním rohu:"
+"Ve větším projektu může být užitečné vytvořit složky, pro každkou scénu a "
+"její skript zvlášť, ale pro tuto relativně malou hru můžete ukládat své "
+"scény a skripty do kořenového adresáře projektu identifikovaného pomocí "
+"``res: //``. Složky projektu můžete vidět v doku Souborový systém v levém "
+"dolním rohu:"
 
 msgid ""
 "With the project in place, we're ready to design the player scene in the "
 "next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

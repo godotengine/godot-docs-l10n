@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Moving the player with code"
-msgstr "Pohybování hráčem"
+msgstr "Přesunutí přehrávače pomocí kódu"
 
 msgid ""
 "It's time to code! We're going to use the input actions we created in the "
@@ -33,6 +32,10 @@ msgid ""
 msgstr ""
 
 msgid "|image0|"
+msgstr "| image0 |"
+
+#, fuzzy
+msgid "image0"
 msgstr "| image0 |"
 
 msgid ""
@@ -179,6 +182,10 @@ msgstr ""
 msgid "|image1|"
 msgstr "| image1 |"
 
+#, fuzzy
+msgid "image1"
+msgstr "| image1 |"
+
 msgid ""
 "If you closed the scene before, head to the *FileSystem* dock and double-"
 "click ``Main.tscn`` to re-open it."
@@ -192,14 +199,17 @@ msgstr ""
 msgid "|image2|"
 msgstr "| image2 |"
 
+#, fuzzy
+msgid "image2"
+msgstr "| image2 |"
+
 msgid ""
 "In the popup, double-click *Player.tscn*. The character should appear in the "
 "center of the viewport."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a camera"
-msgstr "Přidání skriptu"
+msgstr "Přidání kamery"
 
 msgid ""
 "Let's add the camera next. Like we did with our *Player*\\ 's *Pivot*, we're "
@@ -212,12 +222,20 @@ msgstr ""
 msgid "|image3|"
 msgstr "| image3 |"
 
+#, fuzzy
+msgid "image3"
+msgstr "| image3 |"
+
 msgid ""
 "Notice the *Preview* checkbox that appears in the top-left when you have the "
 "*Camera* selected. You can click it to preview the in-game camera projection."
 msgstr ""
 
 msgid "|image4|"
+msgstr "| image4 |"
+
+#, fuzzy
+msgid "image4"
 msgstr "| image4 |"
 
 msgid ""
@@ -234,6 +252,10 @@ msgstr ""
 msgid "|image5|"
 msgstr "| image5 |"
 
+#, fuzzy
+msgid "image5"
+msgstr "| image5 |"
+
 msgid ""
 "On the bottom view, select the *Camera* and turn on camera preview by "
 "clicking the checkbox."
@@ -242,6 +264,10 @@ msgstr ""
 msgid "|image6|"
 msgstr ""
 
+#, fuzzy
+msgid "image6"
+msgstr "| image16 |"
+
 msgid ""
 "In the top view, move the camera about ``19`` units on the Z axis (the blue "
 "one)."
@@ -249,6 +275,10 @@ msgstr ""
 
 msgid "|image7|"
 msgstr ""
+
+#, fuzzy
+msgid "image7"
+msgstr "| image17 |"
 
 msgid ""
 "Here's where the magic happens. Select the *CameraPivot* and rotate it "
@@ -259,6 +289,10 @@ msgstr ""
 msgid "|image8|"
 msgstr ""
 
+#, fuzzy
+msgid "image8"
+msgstr "| image18 |"
+
 msgid ""
 "You can run the scene by pressing :kbd:`F6` and press the arrow keys to move "
 "the character."
@@ -266,6 +300,10 @@ msgstr ""
 
 msgid "|image9|"
 msgstr ""
+
+#, fuzzy
+msgid "image9"
+msgstr "| image19|"
 
 msgid ""
 "We can see some empty space around the character due to the perspective "
@@ -283,7 +321,15 @@ msgstr ""
 msgid "|image10|"
 msgstr ""
 
+#, fuzzy
+msgid "image10"
+msgstr "| image1 |"
+
 msgid ""
 "With that, we have both player movement and the view in place. Next, we will "
 "work on the monsters."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

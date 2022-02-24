@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,8 +61,8 @@ msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
-"Однако, если пули добавятся как дети игрока, то они останутся \"привязанными"
-"\" к тому как игрок вращается (нагляднее ниже):"
+"Однако, если пули добавятся как дети игрока, то они останутся "
+"\"привязанными\" к тому как игрок вращается (нагляднее ниже):"
 
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
@@ -117,8 +117,8 @@ msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
-"В главной сцене, мы подключим сигнал игрока (он появится на вкладке \"Узел"
-"\")."
+"В главной сцене, мы подключим сигнал игрока (он появится на вкладке "
+"\"Узел\")."
 
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
@@ -126,3 +126,7 @@ msgid ""
 msgstr ""
 "Теперь пули будут продолжать свое собственное движение независимо от "
 "вращения игрока:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

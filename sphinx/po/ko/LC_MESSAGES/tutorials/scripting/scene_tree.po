@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,8 +106,9 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
-"루트 노드로 :ref:`Viewport <class_Viewport>`\\ 가 포함되어 있으며, *씬 트리*"
-"\\ 에 자식으로 추가되어서 씬 트리의 일부가 됩니다(자세한 내용은 다음에 설명)."
+"루트 노드로 :ref:`Viewport <class_Viewport>`\\ 가 포함되어 있으며, *씬 트리"
+"*\\ 에 자식으로 추가되어서 씬 트리의 일부가 됩니다(자세한 내용은 다음에 설"
+"명)."
 
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
@@ -255,9 +256,9 @@ msgid ""
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
 "파일 경로를 사용하는 대신 동일한 함수 :ref:`SceneTree."
-"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`"
-"\\ 를 사용해 이미 만들어진 :ref:`PackedScene <class_PackedScene>` 리소스를 사"
-"용할 수 있습니다:"
+"change_scene_to(PackedScene scene) "
+"<class_SceneTree_method_change_scene_to>`\\ 를 사용해 이미 만들어진 :ref:"
+"`PackedScene <class_PackedScene>` 리소스를 사용할 수 있습니다:"
 
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
@@ -272,3 +273,7 @@ msgstr ""
 "이션 표시기나 스레드(배경) 로딩을 사용한 적절한 로딩 화면을 만드는 것이 바람"
 "직합니다. 오토로드(다음 장 참조) 및 :ref:`doc_background_loading`\\ 을 사용해"
 "서 수동으로 작업해야 합니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

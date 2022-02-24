@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,9 @@ msgstr ""
 "Ви, ймовірно, раніше зберігали вузол у змінній і набирали крапку, але "
 "залишалися без пропозицій щодо автозаповнення:"
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -109,6 +112,9 @@ msgstr ""
 "Це пов'язано з динамічним кодом. Godot не може знати, який вузол, або тип "
 "значення, ви передаєте до функції. Якщо ви явно напишете тип, ви отримаєте "
 "всі загальні методи та змінні з вузла:"
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -290,12 +296,12 @@ msgid ""
 "node's type as long as it has the methods you need to call."
 msgstr ""
 "Це відбувається, коли ви отримуєте дочірній вузол. Візьмемо для прикладу "
-"таймер: за допомогою динамічного коду ви можете отримати вузол з допомогою``"
-"$Timer``. GDScript підтримує `качину типізацію<https://stackoverflow.com/"
-"a/4205163/8125343>`__, тому навіть якщо ваш таймер типу ``Timer``, він також "
-"є ``Node`` і ``Object``, два класи він розширює. За допомогою динамічного "
-"GDScript ви також не піклуєтесь про тип вузла, якщо він має методи, "
-"необхідні для виклику."
+"таймер: за допомогою динамічного коду ви можете отримати вузол з "
+"допомогою``$Timer``. GDScript підтримує `качину типізацію<https://"
+"stackoverflow.com/a/4205163/8125343>`__, тому навіть якщо ваш таймер типу "
+"``Timer``, він також є ``Node`` і ``Object``, два класи він розширює. За "
+"допомогою динамічного GDScript ви також не піклуєтесь про тип вузла, якщо "
+"він має методи, необхідні для виклику."
 
 #, fuzzy
 msgid ""
@@ -308,6 +314,9 @@ msgstr ""
 "очікуєте, коли ви отримаєте вузол: ``($Timer as Timer)``, ``($Player as "
 "KinematicBody2D)`` і так далі. Godot забезпечить роботу типа і, якщо все "
 "гаразд, число рядка стане зеленим в редакторі скриптів."
+
+msgid "Unsafe vs Safe Line"
+msgstr ""
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Небезпечний рядок (рядок 7) проти безпечних рядків (рядки 6 та 8)"
@@ -450,3 +459,7 @@ msgstr ""
 "створювати масштабовані системи. В майбутньому статичні типи також принесуть "
 "вам приємне підвищення продуктивності завдяки майбутнім оптимізаціям "
 "компілятора."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

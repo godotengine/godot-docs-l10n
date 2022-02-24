@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,9 +82,9 @@ msgstr ""
 "사용자는 SoundManager 오토로드 노드를 만들어 더 똑똑한 전체 시스템을 만드는 "
 "것이 최선의 해결책이라고 생각하는 경향이 있습니다. 이것은 새로운 음향 효과 요"
 "청이 들어올 때마다 순환하는 AudioStreamPlayer들의 풀(Pool)을 만들어냅니다. 그"
-"런 다음 SoundManager를 오토로드로 만들어 어디서든 `SFX.play(\"coin_pickup.ogg"
-"\")`\\ 를 가지고 접근하도록 합니다. 사용자는 거의 알지 못했습니다, 자신이 많"
-"은 복잡한 문제를 코드로 가지고 왔습니다."
+"런 다음 SoundManager를 오토로드로 만들어 어디서든 `SFX.play(\"coin_pickup."
+"ogg\")`\\ 를 가지고 접근하도록 합니다. 사용자는 거의 알지 못했습니다, 자신이 "
+"많은 복잡한 문제를 코드로 가지고 왔습니다."
 
 #, fuzzy
 msgid ""
@@ -249,5 +249,9 @@ msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
-"결과적으로 만약 오토로드의 이름이 ``Sound`` 라면 ``get_node(\"/root/Sound"
-"\")`` 를 호출해서 오토로드된 노드를 얻을 수 있습니다."
+"결과적으로 만약 오토로드의 이름이 ``Sound`` 라면 ``get_node(\"/root/"
+"Sound\")`` 를 호출해서 오토로드된 노드를 얻을 수 있습니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

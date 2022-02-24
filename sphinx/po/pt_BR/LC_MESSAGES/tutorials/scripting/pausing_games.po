@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,11 @@ msgid ""
 msgstr ""
 "Por padrão, todos os nós têm essa propriedade no estado \"Inherit\". Isso "
 "significa que eles só irão processar (ou não) dependendo do que esta mesma "
-"propriedade está definida no nó pai. Se o pai estiver definido como \"Inherit"
-"\", o avô será verificado e assim por diante. Por fim, se um estado não "
-"puder ser encontrado em nenhum dos avós, o estado de pausa em SceneTree será "
-"usado. Isso significa que, por padrão, quando o jogo é pausado, todos os nós "
-"serão pausados."
+"propriedade está definida no nó pai. Se o pai estiver definido como "
+"\"Inherit\", o avô será verificado e assim por diante. Por fim, se um estado "
+"não puder ser encontrado em nenhum dos avós, o estado de pausa em SceneTree "
+"será usado. Isso significa que, por padrão, quando o jogo é pausado, todos "
+"os nós serão pausados."
 
 msgid "So the three possible states for a node are:"
 msgstr "Assim, os três estados possíveis para um nó são:"
@@ -166,3 +166,7 @@ msgstr ""
 
 msgid "And that should be all!"
 msgstr "E é isso!"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,11 +62,13 @@ msgstr ""
 "Playerシーンと同様に、選択できないように子を設定することを忘れないでくださ"
 "い。"
 
+#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
-"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
-"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
-"box. This will ensure the mobs do not collide with each other."
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
+"ref:`CollisionObject2D <class_CollisionObject2D>` section, click the "
+"``Mask`` property and uncheck the first box. This will ensure the mobs do "
+"not collide with each other."
 msgstr ""
 ":ref:`RigidBody2D <class_RigidBody2D>`\\ プロパティで、 ``Gravity Scale`` を "
 "``0`` に設定して、モブが下方に落ちないようにします。さらに、 "
@@ -80,9 +82,9 @@ msgid ""
 "There are two images for each animation in the art folder."
 msgstr ""
 "プレイヤーに対して行ったように :ref:`AnimatedSprite <class_AnimatedSprite>` "
-"を設定します。 今回は、3つのアニメーションがあります: ``fly``\\ 、\\ ``swim``"
-"\\ 、\\ ``walk``\\ です。 artフォルダ内には、各アニメーション用の画像が2枚あ"
-"ります。"
+"を設定します。 今回は、3つのアニメーションがあります: ``fly``\\ 、\\ "
+"``swim``\\ 、\\ ``walk``\\ です。 artフォルダ内には、各アニメーション用の画像"
+"が2枚あります。"
 
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "全てのアニメーションの \"Speed (FPS)\" を ``3`` に調整してください。"
@@ -139,8 +141,8 @@ msgid ""
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 "まず、アニメーション名のリストを AnimatedSprite の ``frames`` プロパティから"
-"取得します。これは3つのアニメーション名をすべて含む配列を返します: ``[\"walk"
-"\", \"swim\", \"fly\"]`` 。"
+"取得します。これは3つのアニメーション名をすべて含む配列を返します: "
+"``[\"walk\", \"swim\", \"fly\"]`` 。"
 
 msgid ""
 "We then need to pick a random number between ``0`` and ``2`` to select one "
@@ -177,3 +179,7 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

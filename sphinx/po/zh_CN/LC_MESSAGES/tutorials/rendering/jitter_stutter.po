@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgid ""
 "These effects are mostly visible in games where the world moves at a "
 "constant speed in a fixed direction, like runners or platformers."
 msgstr ""
-"抖动(Jitter)和不连贯(stutter)是屏幕上物体可见运动的两种不同变化, 可能会影响游"
-"戏体验, 即使游戏是全速运行. 这些问题在世界以恒定速度朝着固定方向运动的游戏中"
-"影响最明显, 比如跑酷或平台类游戏."
+"*抖动*\\ （Jitter）和\\ *不连贯*\\ （stutter）是即使游戏在全速运行时，也可能"
+"出现在屏幕上物体可见运动中的两种不同变化，可能会影响游戏体验。这些问题在世界"
+"以恒定速度朝着固定方向运动的游戏中影响最明显, 比如跑酷或平台类游戏."
 
 msgid "Distinguishing between them"
 msgstr "它们之间的区别"
@@ -42,7 +42,7 @@ msgid ""
 msgstr "一款在正常帧下运行, 而不显示任何效果的游戏将显得平滑:"
 
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
-msgstr "游戏展示了 *抖动* 将以非常微妙的方式持续抖动:"
+msgstr "游戏展示了\\ *抖动*\\ 将以非常细微的方式持续抖动："
 
 msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
@@ -78,10 +78,10 @@ msgid ""
 "does some improvements to this, from allowing kinematic bodies to be "
 "animated in the regular _process loop, to further fixes in the frame timer."
 msgstr ""
-"有时只有一些对象会出现抖动(角色或背景). 当它们在不同的时间源中处理时, 就会发"
-"生这种情况(一个在物理步骤中处理, 另一个在空闲步骤中处理).Godot 3.1版本对此做"
-"了一些改进, 从允许运动体在规则的 \"_处理\" 循环中被动画化, 进一步修正帧定时"
-"器."
+"有时只有一些对象会出现抖动（角色或背景）。当它们在不同的时间源中处理时，就会"
+"发生这种情况（一个在物理步骤中处理，另一个在空闲步骤中处理）。Godot 3.1 版本"
+"对此做了一些改进，从允许运动体在规则的 _process 循环中被动画化，进一步修正帧"
+"定时器。"
 
 msgid ""
 "You can use physics interpolation to mitigate physics-related jittering. See "
@@ -89,9 +89,9 @@ msgid ""
 "addon>`__ for an add-on that can be dropped into any project to enable "
 "physics interpolation."
 msgstr ""
-"你可以使用物理插值来减少物理相关的抖动. 请参阅 `lawnjelly's smoothing-addon "
-"<https://github.com/lawnjelly/smoothing-addon>`__ , 获得一个可以放入任何项目"
-"中以启用物理插值的附加组件."
+"你可以使用物理插值来减少物理相关的抖动。请参阅 `lawnjelly 的平滑插件 "
+"<https://github.com/lawnjelly/smoothing-addon>`__\\ ，获得一个可以放入任何项"
+"目中以启用物理插值的附加组件。"
 
 msgid "Stutter"
 msgstr "不连贯"
@@ -224,3 +224,7 @@ msgstr ""
 "还要确保根据所展示的行为使用正确的术语(抖动或不连贯). 这有助于更快地理解您的"
 "问题. 请提供可用来复现问题的项目, 如果可能的话, 还需要您提供一张屏幕截图来阐"
 "述这个bug."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

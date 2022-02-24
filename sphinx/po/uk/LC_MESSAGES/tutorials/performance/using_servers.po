@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,13 +64,13 @@ msgid "Servers"
 msgstr "**центр**"
 
 msgid ""
-"One of the most interesting design decisions for Godot, is the fact that the "
+"One of the most interesting design decisions for Godot is the fact that the "
 "whole scene system is *optional*. While it is not currently possible to "
 "compile it out, it can be completely bypassed."
 msgstr ""
 
 msgid ""
-"At the core, Godot uses the concept of Servers. They are very low level APIs "
+"At the core, Godot uses the concept of Servers. They are very low-level APIs "
 "to control rendering, physics, sound, etc. The scene system is built on top "
 "of them and uses them directly. The most common servers are:"
 msgstr ""
@@ -95,8 +95,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Just explore their APIs and you will realize that the all functions provided "
-"are low-level implementations of everything Godot allows you to do."
+"Explore their APIs and you will realize that all the functions provided are "
+"low-level implementations of everything Godot allows you to do."
 msgstr ""
 
 msgid "RIDs"
@@ -113,10 +113,16 @@ msgid ""
 "Most Godot nodes and resources contain these RIDs from the servers "
 "internally, and they can be obtained with different functions. In fact, "
 "anything that inherits :ref:`Resource <class_Resource>` can be directly "
-"casted to an RID (not all resources contain an RID, though, in such cases "
-"the RID will be empty). In fact, resources can be passed to server APIs as "
-"RIDs. Just make sure to keep references to the resources outside the server, "
-"because if the resource is erased, the internal RID is erased too."
+"casted to an RID. Not all resources contain an RID, though: in such cases, "
+"the RID will be empty. The resource can then be passed to server APIs as an "
+"RID."
+msgstr ""
+
+msgid ""
+"Resources are reference-counted (see :ref:`Reference <class_Reference>`), "
+"and references to a resource's RID are *not* counted when determining "
+"whether the resource is still in use. Make sure to keep a reference to the "
+"resource outside the server, or else both it and its RID will be erased."
 msgstr ""
 
 msgid "For nodes, there are many functions available:"
@@ -165,7 +171,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Just explore the nodes and resources you are familiar with and find the "
+"Try exploring the nodes and resources you are familiar with and find the "
 "functions to obtain the server *RIDs*."
 msgstr ""
 
@@ -236,3 +242,7 @@ msgid ""
 "possible to request information back, until it's actual data that can be "
 "saved."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

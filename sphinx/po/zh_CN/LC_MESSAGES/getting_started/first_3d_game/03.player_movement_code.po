@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,21 @@ msgstr "使用代码移动玩家"
 msgid ""
 "It's time to code! We're going to use the input actions we created in the "
 "last part to move the character."
-msgstr ""
+msgstr "该轮到编写代码了！我们将使用先前创建的输入动作来移动角色。"
 
 msgid ""
 "Right-click the *Player* node and select *Attach Script* to add a new script "
 "to it. In the popup, set the *Template* to *Empty* before pressing the "
 "*Create* button."
 msgstr ""
+"右键单击 *Player* 节点，选择\\ *添加脚本*\\ 为其添加一个新脚本。在弹出窗口"
+"中，先将\\ *模板*\\ 设置为 *Empty*\\ ，后按下\\ *创建*\\ 按钮 。"
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -39,23 +45,31 @@ msgid ""
 "speed, a fall acceleration representing gravity, and a velocity we'll use to "
 "move the character."
 msgstr ""
+"先定义类的属性。我们将定义移动速率（标量）、重力加速度，以及一个我们将用来移"
+"动角色的速度（向量）。"
 
 msgid ""
 "These are common properties for a moving body. The ``velocity`` is a 3D "
 "vector combining a speed with a direction. Here, we define it as a property "
 "because we want to update and reuse its value across frames."
 msgstr ""
+"这些都是运动体的常见属性。\\ ``velocity`` 是一个结合了速度和方向的三维向量。"
+"为了实现跨帧更新和重用其值，我们将其定义为一个属性。"
 
 msgid ""
 "The values are quite different from 2D code because distances are in meters. "
 "While in 2D, a thousand units (pixels) may only correspond to half of your "
 "screen's width, in 3D, it's a kilometer."
 msgstr ""
+"这些值与二维代码完全不同，因为距离以米为单位。在 2D 中，一千个单位（像素）可"
+"能只对应于屏幕宽度的一半，而在 3D 中，它是一千米。"
 
 msgid ""
 "Let's code the movement now. We start by calculating the input direction "
 "vector using the global ``Input`` object, in ``_physics_process()``."
 msgstr ""
+"现在让我们对运动进行编程。我们首先在 ``_physics_process()`` 中使用全局 "
+"``Input`` 对象计算输入方向向量。"
 
 msgid ""
 "Here, we're going to make all calculations using the ``_physics_process()`` "
@@ -63,11 +77,16 @@ msgid ""
 "every frame, but it's designed specifically for physics-related code like "
 "moving a kinematic or rigid body."
 msgstr ""
+"在这里，我们将使用 ``_physics_process()`` 虚函数进行所有计算。与 "
+"``_process()`` 一样，它允许您每帧更新节点，但它是专门为物理相关代码设计的，例"
+"如运动学物体或刚体。"
 
 msgid ""
 "To learn more about the difference between ``_process()`` and "
 "``_physics_process()``, see :ref:`doc_idle_and_physics_processing`."
 msgstr ""
+"要了解更多关于 ``_process()`` 和 ``_physics_process()`` 之间的区别，见 :ref:"
+"`doc_idle_and_physics_processing`\\ 。"
 
 msgid ""
 "We start by initializing a ``direction`` variable to ``Vector3.ZERO``. Then, "
@@ -75,11 +94,14 @@ msgid ""
 "update the vector's ``x`` and ``z`` components accordingly. These correspond "
 "to the ground plane's axes."
 msgstr ""
+"我们首先将一个 ``direction`` 变量初始化为 ``Vector3.ZERO``\\ 。然后，我们检查"
+"玩家是否正在按下一个或多个 ``move_*`` 输入，并相应地更新矢量的 ``x`` 和 "
+"``z`` 分量。它们对应于地平面的轴。"
 
 msgid ""
 "These four conditions give us eight possibilities and eight possible "
 "directions."
-msgstr ""
+msgstr "这四个条件给了我们八个可能性和八个可能的方向。"
 
 msgid ""
 "In case the player presses, say, both W and D simultaneously, the vector "
@@ -87,11 +109,16 @@ msgid ""
 "have a length of ``1``. We want the vector's length to be consistent. To do "
 "so, we can call its ``normalize()`` method."
 msgstr ""
+"如果玩家同时按下，比如说，W 和 D，这个向量长度大约为 ``1.4``\\ 。但如果他们只"
+"按一个键，它的长度将是 ``1``\\ 。我们希望该向量的长度是一致的。为此，我们需调"
+"用其 ``normalize()`` 方法。"
 
 msgid ""
 "Here, we only normalize the vector if the direction has a length greater "
 "than zero, which means the player is pressing a direction key."
 msgstr ""
+"在这里，我们只在方向的长度大于零的情况下对向量进行归一化，因为玩家正在按某个"
+"方向键。"
 
 msgid ""
 "In this case, we also get the *Pivot* node and call its ``look_at()`` "
@@ -99,18 +126,25 @@ msgid ""
 "coordinates and the up direction. In this case, we can use the ``Vector3."
 "UP`` constant."
 msgstr ""
+"在这种情况下，我们也会得到 *Pivot* 节点并调用其 ``look_at()`` 方法。此方法在"
+"空间中取一个位置以查看全局坐标和向上方向。在这种情况下，我们可以使用 "
+"``Vector3.UP`` 常量。"
 
 msgid ""
 "A node's local coordinates, like ``translation``, are relative to their "
 "parent. Global coordinates are relative to the world's main axes you can see "
 "in the viewport instead."
 msgstr ""
+"节点的局部坐标，如 ``translation``\\ ，是相对于它们的父节点而言的。全局坐标是"
+"相对于你在视口中可以看到的世界主轴而言的。"
 
 msgid ""
 "In 3D, the property that contains a node's position is ``translation``. By "
 "adding the ``direction`` to it, we get a position to look at that's one "
 "meter away from the *Player*."
 msgstr ""
+"在 3D 中，包含节点位置的属性是 ``translation``\\ 。加上 ``direction`` 之后，"
+"我们就得到了离 *Player* 一米远的观察位置。"
 
 msgid ""
 "Then, we update the velocity. We have to calculate the ground velocity and "
@@ -118,24 +152,32 @@ msgid ""
 "inside the ``_physics_process()`` function but outside the condition we just "
 "wrote."
 msgstr ""
+"然后，我们更新速度。我们必须分别计算地面速度和下落速度。请确保退回一个制表"
+"符，让这几行位于 ``_physics_process()`` 函数内，但在我们刚才写的条件外。"
 
 msgid ""
 "For the vertical velocity, we subtract the fall acceleration multiplied by "
 "the delta time every frame. Notice the use of the ``-=`` operator, which is "
 "a shorthand for ``variable = variable - ...``."
 msgstr ""
+"对于垂直速度，我们减去每一帧的下落加速度乘以时间变化量。注意使用 ``-=`` 操作"
+"符，它是 ``variable = variable - ...`` 的缩写。"
 
 msgid ""
 "This line of code will cause our character to fall in every frame. This may "
 "seem strange if it's already on the floor. But we have to do this for the "
 "character to collide with the ground every frame."
 msgstr ""
+"这行代码将导致我们的角色在每一帧中都会下落。如果它已经在地上，这可能看起来很"
+"奇怪。但我们必须这样做，才能让角色每一帧都与地面发生碰撞。"
 
 msgid ""
 "The physics engine can only detect interactions with walls, the floor, or "
 "other bodies during a given frame if movement and collisions happen. We will "
 "use this property later to code the jump."
 msgstr ""
+"物理引擎只有在运动和碰撞发生的情况下才能检测到在某一帧中与墙壁、地板或其他物"
+"体的相互作用。我们将在后面使用这个属性来编写跳跃的代码。"
 
 msgid ""
 "On the last line, we call ``KinematicBody.move_and_slide()``. It's a "
@@ -143,6 +185,9 @@ msgid ""
 "character smoothly. If it hits a wall midway through a motion, the engine "
 "will try to smooth it out for you."
 msgstr ""
+"在最后一行，我们调用 ``KinematicBody.move_and_slide()``\\ 。这是 "
+"``KinematicBody`` 类的一个强大方法，可以让你顺利地移动一个角色。如果它在运动"
+"过程中撞到了墙，引擎会试着为你把它平滑处理。"
 
 msgid ""
 "The function takes two parameters: our velocity and the up direction. It "
@@ -153,12 +198,16 @@ msgid ""
 "momentum, which could otherwise get so big the character would move through "
 "the ground slab after a while."
 msgstr ""
+"该函数需要两个参数：我们的速度和向上方向。它移动角色并在应用碰撞后返回剩余的"
+"速度。当撞到地板或墙壁时，该函数将减少或重置你在该方向的速度。在我们的例子"
+"中，存储函数的返回值可以防止角色积累垂直动量，否则可能会变得很大，角色会在一"
+"段时间后穿过地面。"
 
 msgid "And that's all the code you need to move the character on the floor."
-msgstr ""
+msgstr "这就是你在地面上移动角色所需的所有代码。"
 
 msgid "Here is the complete ``Player.gd`` code for reference."
-msgstr ""
+msgstr "下面是供参考的完整 ``Player.gd`` 代码。"
 
 msgid "Testing our player's movement"
 msgstr "测试玩家的移动"
@@ -169,32 +218,49 @@ msgid ""
 "you won't see anything if your viewport doesn't have a camera pointing at "
 "something."
 msgstr ""
+"我们要将玩家放入 *Main* 场景进行测试。那我们就需要将玩家实例化，然后添加一个"
+"摄像机。与 2D 不同，如果在 3D 中如果你的视口没有摄像机进行拍摄，那你就什么都"
+"看不到。"
 
 msgid ""
 "Save your *Player* scene and open the *Main* scene. You can click on the "
 "*Main* tab at the top of the editor to do so."
 msgstr ""
+"请将 *Player* 场景保存，然后打开 *Main* 场景。你可以单击编辑器顶部的 *Main* "
+"选项卡完成此操作。"
 
 msgid "|image1|"
+msgstr "|image1|"
+
+#, fuzzy
+msgid "image1"
 msgstr "|image1|"
 
 msgid ""
 "If you closed the scene before, head to the *FileSystem* dock and double-"
 "click ``Main.tscn`` to re-open it."
 msgstr ""
+"如果你之前把这个场景关掉了，可以在\\ *文件系统*\\ 面板中双击 ``Main.tscn`` 重"
+"新打开。"
 
 msgid ""
 "To instantiate the *Player*, right-click on the *Main* node and select "
 "*Instance Child Scene*."
 msgstr ""
+"要实例化 *Player*\\ ，请右键单击 *Main* 节点，然后选择\\ *实例化子场景*\\ 。"
 
 msgid "|image2|"
+msgstr "|image2|"
+
+#, fuzzy
+msgid "image2"
 msgstr "|image2|"
 
 msgid ""
 "In the popup, double-click *Player.tscn*. The character should appear in the "
 "center of the viewport."
 msgstr ""
+"在弹出窗口中，双击 *Player.tscn*\\ 。这个角色就应该出现在视口的中央了。"
 
 msgid "Adding a camera"
 msgstr "添加摄像机"
@@ -206,16 +272,30 @@ msgid ""
 "*CameraPivot*, and add a *Camera* node as a child of it. Your scene tree "
 "should look like this."
 msgstr ""
+"接下来我们来添加摄像机。和 *Player* 的 *Pivot* 类似，我们要创建一个基本的架"
+"构。再次右键单击 *Main* 节点，这次选择\\ *添加子节点*\\ 。新建一个 "
+"*Position3D*\\ ，命名为 *CameraPivot*\\ ，然后添加一个 *Camera* 节点作为其子"
+"项。你的场景树应该看起来像这样。"
 
 msgid "|image3|"
+msgstr "|image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "|image3|"
 
 msgid ""
 "Notice the *Preview* checkbox that appears in the top-left when you have the "
 "*Camera* selected. You can click it to preview the in-game camera projection."
 msgstr ""
+"请注意在选中 *Camera* 时，左上角会出现一个\\ *预览*\\ 复选框。你可以单击预览"
+"游戏中的摄像机投影视角。"
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
@@ -223,29 +303,45 @@ msgid ""
 "Let's first split the 3D view to be able to freely navigate the scene and "
 "see what the camera sees."
 msgstr ""
+"我们要使用 *Pivot* 来旋转摄像机，让他像被吊车吊起来一样。让我们先拆分 3D 视"
+"图，以便在进行自由移动的同时观察摄像机拍摄到的内容。"
 
 msgid ""
 "In the toolbar right above the viewport, click on *View*, then *2 "
 "Viewports*. You can also press :kbd:`Ctrl + 2` (:kbd:`Cmd + 2` on MacOS)."
 msgstr ""
+"在视窗上方的工具栏中，单击\\ *视图*\\ ，然后单击\\ *2 个视窗*\\ 。你也可以"
+"按 :kbd:`Ctrl + 2`\\ （macOS 上则为 :kbd:`Cmd + 2`\\ ）。"
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid ""
 "On the bottom view, select the *Camera* and turn on camera preview by "
 "clicking the checkbox."
-msgstr ""
+msgstr "在下面那个视图中，选中 *Camera*\\ ，然后勾选预览复选框打开摄像机预览。"
 
 msgid "|image6|"
+msgstr "|image6|"
+
+#, fuzzy
+msgid "image6"
 msgstr "|image6|"
 
 msgid ""
 "In the top view, move the camera about ``19`` units on the Z axis (the blue "
 "one)."
-msgstr ""
+msgstr "在上面那个视图中，将摄像机沿 Z 轴（蓝色）移动 ``19`` 个单位。"
 
 msgid "|image7|"
+msgstr "|image7|"
+
+#, fuzzy
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
@@ -253,16 +349,26 @@ msgid ""
 "``45`` degrees around the X axis (using the red circle). You'll see the "
 "camera move as if it was attached to a crane."
 msgstr ""
+"接下来就是关键。选中 *CameraPivot* 并将其围绕 X 周旋转 ``45`` 度（使用红色的"
+"圆圈）。你会看到摄像机就像是被连上了吊车一样移动。"
 
 msgid "|image8|"
+msgstr "|image8|"
+
+#, fuzzy
+msgid "image8"
 msgstr "|image8|"
 
 msgid ""
 "You can run the scene by pressing :kbd:`F6` and press the arrow keys to move "
 "the character."
-msgstr ""
+msgstr "你可以按 :kbd:`F6` 运行场景，然后按方向键来移动角色。"
 
 msgid "|image9|"
+msgstr "|image9|"
+
+#, fuzzy
+msgid "image9"
 msgstr "|image9|"
 
 msgid ""
@@ -271,17 +377,30 @@ msgid ""
 "instead to better frame the gameplay area and make it easier for the player "
 "to read distances."
 msgstr ""
+"因为透视投影的缘故，我们会在角色的周围看到一些空白区域。在这个游戏中，我们要"
+"使用的是正交投影，从而更好地展示游戏区域，让玩家更易于识别距离。"
 
 msgid ""
 "Select the *Camera* again and in the *Inspector*, set the *Projection* to "
 "*Orthogonal* and the *Size* to ``19``. The character should now look flatter "
 "and the ground should fill the background."
 msgstr ""
+"再次选中 *Camera*\\ ，然后在\\ *检查器* 中将 *Projection*\\ （投影）设为 "
+"*Orthogonal*\\ （正交）、将 *Size*\\ （大小）设为 ``19``\\ 。角色现在看起来应"
+"该更加扁平，背景应该被地面充满。"
 
 msgid "|image10|"
+msgstr "|image10|"
+
+#, fuzzy
+msgid "image10"
 msgstr "|image10|"
 
 msgid ""
 "With that, we have both player movement and the view in place. Next, we will "
 "work on the monsters."
-msgstr ""
+msgstr "这样，我们就完成了玩家的移动以及视图。接下来，我们要来处理怪物。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

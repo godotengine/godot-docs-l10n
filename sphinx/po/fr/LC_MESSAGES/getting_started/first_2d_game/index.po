@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,39 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Votre premier jeu"
+msgstr "Votre premier jeu en 2D"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 2D "
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"Dans cette série de tutoriels pas à pas, vous créerez votre premier jeu "
+"complet en 2D avec Godot. À la fin de la série, vous aurez un jeu simple "
+"mais complet, comme l'image ci-dessous."
 
 msgid "|image0|"
 msgstr "|image0|"
 
 #, fuzzy
+msgid "image0"
+msgstr "|image0|"
+
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
 msgstr ""
-"Ce tutoriel vous guidera dans la réalisation de votre premier projet Godot. "
-"Vous apprendrez comment fonctionne l'éditeur de Godot, comment structurer un "
-"projet et comment réaliser un jeu 2D."
+"Vous apprendrez comment fonctionne l'éditeur Godot, comment structurer un "
+"projet et construire un jeu en 2D."
 
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
 "Ce projet est une introduction au moteur Godot. Il suppose que vous avez "
-"déjà une certaine expérience en programmation. Si vous n'avez jamais "
-"programmé, vous devriez commencer ici : :ref:`doc_scripting`. If vous voulez "
-"utiliser C# avec Godot, merci de lire également :ref:`doc_c_sharp` avant de "
-"continuer."
+"déjà une certaine expérience de la programmation. Si vous êtes totalement "
+"novice en programmation, vous devriez commencer ici : :ref:`doc_scripting`."
 
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
@@ -59,48 +60,45 @@ msgstr ""
 "et éviter les ennemis le plus longtemps possible. Voici un aperçu du "
 "résultat final :"
 
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Vous apprendrez :"
+msgstr "Vous allez apprendre à :"
 
 msgid "Create a complete 2D game with the Godot editor."
-msgstr ""
+msgstr "Créer un jeu complet en 2D avec l'éditeur Godot."
 
 msgid "Structure a simple game project."
 msgstr "Structurer un projet de jeu simple."
 
-#, fuzzy
 msgid "Move the player character and change its sprite."
-msgstr "Déplacer le joueur ailleurs dans l'arbre de scène."
+msgstr "Déplacez le personnage du joueur et changez son sprite."
 
 msgid "Spawn random enemies."
-msgstr ""
+msgstr "Faire apparaître des ennemis aléatoirement."
 
 msgid "Count the score."
-msgstr ""
+msgstr "Compter le score."
 
-#, fuzzy
 msgid "And more."
-msgstr "Et plus..."
+msgstr "Et plus encore."
 
 msgid ""
 "You'll find another series where you'll create a similar game but in 3D. We "
 "recommend you to start with this one, though."
 msgstr ""
+"Vous trouverez une autre série où vous créerez un jeu similaire mais en 3D. "
+"Nous vous recommendons cependant de commencer avec celui-là."
 
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**Pourquoi commencer par la 2D ?**"
 
-#, fuzzy
 msgid ""
 "3D games are much more complex than 2D ones. It would be best if you stuck "
 "to 2D until you understood the game development process and how to use Godot "
 "well."
 msgstr ""
-"**Pourquoi 2D ?** Les jeux 3D sont beaucoup plus complexes que les jeux 2D. "
-"Vous devriez vous en tenir à la 2D jusqu'à ce que vous ayez une bonne "
-"compréhension du processus de développement d'un jeu et de la façon "
-"d'utiliser Godot."
+"Les jeux en 3D sont beaucoup plus complexes que ceux en 2D. Il serait "
+"préférable que vous vous en teniez à la 2D jusqu'à ce que vous compreniez le "
+"processus de développement des jeux et la manière de bien utiliser Godot."
 
 msgid "You can find a completed version of this project at these locations:"
 msgstr "Vous pouvez trouver une version complète de ce projet ici :"
@@ -118,29 +116,34 @@ msgid ""
 "This step-by-step tutorial is intended for beginners who followed the "
 "complete :ref:`Getting Started <toc-learn-step_by_step>`."
 msgstr ""
+"Ce tutoriel pas à pas est destiné aux débutants qui ont suivi le programme "
+"complet :ref:`Pas à pas <toc-learn-step_by_step>`."
 
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`__."
 msgstr ""
-"En plus de cette documentation, vous pouvez également jeter un coup d’œil "
-"aux différents `projets de démonstration de Godot <https://github.com/"
-"godotengine/godot-demo-projects>`_."
+"Si vous êtes un programmeur expérimenté, vous pouvez trouver le code source "
+"complet de la démo ici : `Godot demo projects <https://github.com/"
+"godotengine/godot-demo-projects>`__."
 
 msgid ""
 "We prepared some game assets you'll need to download so we can jump straight "
 "to the code."
 msgstr ""
+"Nous avons préparé quelques assets que vous devrez télécharger pour que nous "
+"puissions passer directement au code."
 
 msgid "You can download them by clicking the link below."
-msgstr ""
+msgstr "Vous pouvez les télécharger en cliquant sur le lien ci-dessous."
 
-#, fuzzy
 msgid ":download:`dodge_assets.zip <files/dodge_assets.zip>`."
-msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
+msgstr ":download:`dodge_assets.zip <files/dodge_assets.zip>`."
+
+msgid "Contents"
+msgstr "Contenu"
 
 #, fuzzy
-msgid "Contents"
-msgstr "Test de contenu"
+msgid "Translation status"
+msgstr "Format de traduction"

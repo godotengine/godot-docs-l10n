@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,8 +112,8 @@ msgstr ""
 "`CanvasLayer <class_CanvasLayer>` 노드에 있습니다. 뷰포트 자손들은 기본적으"
 "로 \"0\" 레이어에 그려집니다. 반면에 CanvasLayer는 아무 숫자 레이어에 그려집"
 "니다. 더 큰 숫자를 가진 레이어가 위에 그려집니다. 또한 각 CanvasLayers 만의 "
-"변형을 가지고 다른 레이어의  변형에 의존하지 않습니다. 이것은 세계가 움직이"
-"는 동안에 UI를 고정될 수 있게 해줍니다."
+"변형을 가지고 다른 레이어의 변형에 의존하지 않습니다. 이것은 세계가 움직이는 "
+"동안에 UI를 고정될 수 있게 해줍니다."
 
 msgid ""
 "An example of this is creating a parallax background. This can be done with "
@@ -142,3 +142,7 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

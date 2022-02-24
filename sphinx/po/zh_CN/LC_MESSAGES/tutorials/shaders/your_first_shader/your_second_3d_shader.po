@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,14 +215,14 @@ msgstr ""
 #, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
-"ShaderMaterials over StandardMaterial3Ds. With StandardMaterial3D, we could "
-"set these properties with a texture, or to a flat number. But with shaders "
-"we can set them based on any mathematical function that we can dream up."
+"ShaderMaterials over SpatialMaterials. With SpatialMaterial, we could set "
+"these properties with a texture, or to a flat number. But with shaders we "
+"can set them based on any mathematical function that we can dream up."
 msgstr ""
 "并将其混合到 ``ROUGHNESS`` 和 ``ALBEDO``\\ 。这是 ShaderMaterial 比 "
-"SpatialMaterial 的好处。使用 SpatialMaterial，我们可以用纹理来设置这些属性，"
-"或者设置成一个统一的数字。但是用着色器，我们可以根据我们能想到的任何数学函数"
-"来设置它们。"
+"StandardMaterial3D 的好处。使用 StandardMaterial3D，我们可以用纹理来设置这些"
+"属性，或者设置成一个统一的数字。但是用着色器，我们可以根据我们能想到的任何数"
+"学函数来设置它们。"
 
 msgid ""
 "And now, with only 5 lines of code, you can have complex looking water. Now "
@@ -404,3 +404,7 @@ msgstr ""
 "<doc_shading_language>` 文档和 :ref:`Spatial Shaders <doc_spatial_shader>` 文"
 "档. 也可以看看 :ref:`Shading 部分 <toc-learn-features-shading>` 和 :ref:`3D "
 "<toc-learn-features-3d>` 部分的高级教程."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

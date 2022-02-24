@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,10 @@ msgstr ""
 "Wenn der Profiler seine Arbeit getan hat können Sie sich die Ergebnisse "
 "eines Frames ansehen."
 
+#, fuzzy
+msgid "Screenshot of the Godot profiler"
+msgstr "Godot Profiler verwenden."
+
 msgid "Results of a profile of one of the demo projects."
 msgstr "Dies sind die Ergebnisse eines Profils eines der Demo-Projekte."
 
@@ -102,7 +106,7 @@ msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
 "`doc_debugger_panel`."
 msgstr ""
-"Weitere Informationen zur Verwendung des Profilers in Godot finden Sie "
+"Weitere Informationen zur Verwendung des eingebauten Profilers finden sich "
 "unter :ref:`doc_debugger_panel`."
 
 msgid "External profilers"
@@ -148,6 +152,9 @@ msgstr ""
 "unterscheiden, da Debug-Builds weniger optimiert sind. Engpässe treten bei "
 "Debug-Builds häufig an einer anderen Stelle auf. Daher sollten Sie nach "
 "Möglichkeit Release-Builds untersuchen."
+
+msgid "Screenshot of Callgrind"
+msgstr ""
 
 msgid "Example results from Callgrind, which is part of Valgrind."
 msgstr ""
@@ -566,3 +573,7 @@ msgstr ""
 "verglichen mit dem Ausführen eines Physik-Ticks, der um Größenordnungen "
 "schneller ist. Dies kann also ein bedeutender Gewinn sein und Zittern "
 "reduzieren."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Übersetzungsformat"

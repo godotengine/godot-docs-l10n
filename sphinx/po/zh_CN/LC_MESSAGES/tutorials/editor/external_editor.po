@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,32 +24,23 @@ msgid "This page explains how to code using an external text editor."
 msgstr "本页面讲述的是如何使用外部文本编辑器编写代码。"
 
 msgid ""
-"`External editors are currently incompatible with Godot's \"Sync Script "
-"Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
-msgstr ""
-"`外部编辑器目前与Godot的 \"同步脚本修改\" 功能不兼容 <https://github.com/"
-"godotengine/godot/issues/10946>`__"
-
-#, fuzzy
-msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
 "Editor Settings -> Text Editor -> External``"
 msgstr ""
-"Godot可以与外部文本编辑器(例如Sublime Text或Visual Studio Code)一起使用. 要启"
-"用外部文本编辑器, 请通过 ``编辑器 -> 编辑器设置 -> 文本编辑器 -> 外部`` 浏览"
-"至相关的编辑器设置"
+"Godot 可以与 Sublime Text、Visual Studio Code 等外部文本编辑器一起使用。请修"
+"改\\ ``编辑器 -> 编辑器设置 -> Text Editor -> External``\\ （文本编辑器 -> 外"
+"部）中的相关设置"
 
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command-line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
-"有两个字段: 可执行文件路径和命令行标志. 这些标志允许您将编辑器与Godot集成在一"
-"起, 并向其传递文件路径以打开文件以及其他相关参数.Godot将替换标志字符串中的以"
-"下占位符:"
+"有两个字段：可执行文件路径和命令行标志。这些标志允许您将编辑器与 Godot 集成在"
+"一起，并向其传递文件路径以打开文件以及其他相关参数。Godot 将替换标志字符串中"
+"的以下占位符："
 
 msgid "Field in Exec Flags"
 msgstr "Exec 标志中的字段"
@@ -121,18 +112,18 @@ msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
-#, fuzzy
 msgid "``emacs +{line}:{col} {file}``"
-msgstr "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
 
-#, fuzzy
 msgid ""
 "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
 "Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "对于Visual Studio Code, 您将必须指向 ``code.cmd`` 文件."
+msgstr ""
+"对于 Visual Studio Code，你需要指向 ``code.cmd`` 文件。对于 Emacs，如果你使用"
+"的是服务器模式，那么调用的时候就可以用 ``emacsclient`` 代替 ``emacs``\\ 。"
 
 msgid "Official editor plugins"
 msgstr "官方编辑器插件"
@@ -147,3 +138,7 @@ msgstr ""
 
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,19 +33,17 @@ msgstr ""
 msgid "Getting started"
 msgstr "Prise en main"
 
-#, fuzzy
 msgid ""
 "To modify or create pages in the reference manual, you need to edit ``.rst`` "
 "files in the `godot-docs GitHub repository <https://github.com/godotengine/"
 "godot-docs>`_. Modifying those pages in a pull request triggers a rebuild of "
 "the online documentation upon merging."
 msgstr ""
-"La création ou la modification de pages de documentation se fait "
-"principalement via le dépôt GitHub de `godot-docs <https://github.com/"
-"godotengine/godot-docs>`_. La documentation HTML (ou PDF et EPUB) est "
-"générée à partir des fichiers .rst (reStructuredText markup language) de ce "
-"dépôt. La modification de ces pages dans une pull request et leur fusion "
-"déclenchera une reconstruction de la documentation en ligne."
+"Pour modifier ou créer des pages dans le manuel de référence, vous devez "
+"modifier les fichiers ``.rst`` dans le dépôt GitHub `godot-docs <https://"
+"github.com/godotengine/godot-docs>`_. La modification de ces pages dans une "
+"pull request déclenche une reconstruction de la documentation en ligne lors "
+"de la fusion."
 
 msgid ""
 "For details on Git usage and the pull request workflow, please refer to the :"
@@ -89,9 +87,8 @@ msgid ""
 "documentation and the kind of content we accept."
 msgstr ""
 
-#, fuzzy
 msgid "Contributing changes"
-msgstr "Contribuer au code"
+msgstr "Contribuer aux changements"
 
 msgid ""
 "**Pull Requests should use the** ``master`` **branch by default.** Only make "
@@ -105,9 +102,8 @@ msgid ""
 "revision control system is a plus to ensure our documentation quality."
 msgstr ""
 
-#, fuzzy
 msgid "Editing existing pages"
-msgstr "Traduction de pages existantes"
+msgstr "Modifier des pages existantes"
 
 msgid ""
 "To edit an existing page, locate its ``.rst`` source file and open it in "
@@ -123,9 +119,8 @@ msgid ""
 "`doc_building_the_manual`."
 msgstr ""
 
-#, fuzzy
 msgid "Editing pages online"
-msgstr "Éditer l'animation"
+msgstr "Modifier des pages en ligne"
 
 msgid ""
 "You can edit the documentation online by clicking the **Edit on GitHub** "
@@ -141,21 +136,17 @@ msgstr ""
 msgid "Click the **Edit on GitHub** button."
 msgstr "Cliquez sur le bouton **Edit on GitHub**."
 
-#, fuzzy
 msgid ""
 "On the GitHub page you're taken to, click the pencil icon in the top-right "
 "corner near the **Raw**, **Blame**, and **Delete** buttons. It has the "
 "tooltip \"Fork this project and edit the file\"."
 msgstr ""
-"Sur la page GitHub où vous êtes dirigé, cliquez sur l'icône du crayon dans "
-"le coin supérieur droit près des boutons **Raw**, **Blame** et **History**. "
-"Il y a l'info-bulle \"Edit the file in a fork of this project\" (qui "
-"signifie : modifier le fichier dans un fork, c'est à dire une copie, du "
-"projet ."
+"Sur la page GitHub où vous êtes dirigé, cliquez sur l'icône crayon dans le "
+"coin supérieur droit près des boutons **Raw**, **Blame** et **Delete**. Il y "
+"a l'info-bulle \"Fork this project and edit the file\"."
 
-#, fuzzy
 msgid "Edit the text in the text editor."
-msgstr "Exécute le script dans l'éditeur."
+msgstr "Modifiez le texte dans l'éditeur de texte."
 
 msgid ""
 "At the bottom of the web page, summarize the changes you made and click the "
@@ -164,7 +155,6 @@ msgid ""
 "the commit title."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "On the following screens, click the **Create pull request** button until you "
 "see a message like *Username wants to merge 1 commit into godotengine:master "
@@ -172,20 +162,18 @@ msgid ""
 msgstr ""
 "Sur les écrans suivants, cliquez sur le bouton **Create pull request** "
 "jusqu'à ce que vous voyiez un message comme *Username wants to merge 1 "
-"commit into godotengine:master from Username:patch-6*."
+"commit into godotengine:master from Username:patch-1*."
 
-#, fuzzy
 msgid ""
 "Another contributor will review your changes and merge them into the docs if "
 "they're good. They may also make changes or ask you to do so before merging."
 msgstr ""
-"Un réviseur évaluera vos changements et les incorporera dans les documents "
-"s'ils sont acceptables. Il peut également vous être demandé d'apporter des "
-"modifications à vos changements avant qu'ils ne soient inclus."
+"Un autre contributeur examinera vos modifications et les intégrera dans la "
+"documentation si elles sont bonnes. Il peut également apporter des "
+"modifications ou vous demander de le faire avant la fusion."
 
-#, fuzzy
 msgid "Adding new pages"
-msgstr "Ajouter une nouvelle langue"
+msgstr "Ajouter de nouvelles pages"
 
 msgid ""
 "Before adding a new page, please ensure that it fits in the documentation:"
@@ -200,7 +188,7 @@ msgid "Ensure there isn't a page that already covers the topic."
 msgstr ""
 
 msgid "Read our :ref:`doc_content_guidelines`."
-msgstr ""
+msgstr "Lisez notre :ref:`doc_content_guidelines`."
 
 msgid ""
 "To add a new page, create a ``.rst`` file with a meaningful name in the "
@@ -238,23 +226,21 @@ msgstr ""
 msgid "Write your titles like plain sentences, without capitalizing each word:"
 msgstr ""
 
-#, fuzzy
 msgid "**Good:** Understanding signals in Godot"
-msgstr "Connecter des signaux dans le code"
+msgstr "**Bien :** Comprendre les signaux dans Godot"
 
 msgid "**Bad:** Understanding Signals In Godot"
-msgstr ""
+msgstr "**Bien :** Comprendre Les Signaux Dans Godot"
 
-#, fuzzy
 msgid ""
 "Only propers nouns, projects, people, and node class names should have their "
 "first letter capitalized."
 msgstr ""
-"Seuls les noms de projets, de personnes et de classes de nœuds doivent avoir "
-"une première lettre en majuscule."
+"Seuls les noms propres, les projets, les personnes et les noms de classes de "
+"nœuds doivent avoir leur première lettre en majuscule."
 
 msgid "Sphinx and reStructuredText syntax"
-msgstr ""
+msgstr "Syntaxe Sphinx et reStructuredText"
 
 msgid ""
 "Check Sphinx’s `reST Primer <https://www.sphinx-doc.org/en/stable/rest."
@@ -272,9 +258,8 @@ msgid ""
 "directives.html>`__."
 msgstr ""
 
-#, fuzzy
 msgid "Adding images and attachments"
-msgstr "Ajouter le menu principal"
+msgstr "Ajout d'images et de pièces jointes"
 
 msgid ""
 "To add images, please put them in an ``img/`` folder next to the ``.rst`` "
@@ -307,3 +292,7 @@ msgid ""
 msgstr ""
 "En contribuant à la documentation sur le dépôt GitHub, vous acceptez que vos "
 "modifications soient distribuées sous cette licence."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

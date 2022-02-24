@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,9 +38,10 @@ msgstr ""
 "pueden reemplazar fácilmente por parámetros entregados a la cadena de "
 "formato."
 
+#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
-"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
@@ -75,10 +76,10 @@ msgstr ""
 "El ``%s`` visto en el ejemplo anterior es el más simple y se puede utilizar "
 "para la mayoría de los casos: convierte el valor con el mismo método por el "
 "cual una conversión implícita de String o ``str()`` lo haría. Las cadenas "
-"(string) se mantienen sin cambio, booleanos (bool) se convierten a ``\"True"
-"\"`` o ``\"False\"``, un entero o real (int, float) se convierte en decimal, "
-"otros tipos normalmente devuelven sus datos en una cadena formateada de una "
-"manera legible."
+"(string) se mantienen sin cambio, booleanos (bool) se convierten a "
+"``\"True\"`` o ``\"False\"``, un entero o real (int, float) se convierte en "
+"decimal, otros tipos normalmente devuelven sus datos en una cadena "
+"formateada de una manera legible."
 
 msgid ""
 "There is also another way to format text in GDScript, namely the ``String."
@@ -306,7 +307,7 @@ msgstr ""
 "La precisión puede ser especificada por números reales agregando un ``.`` "
 "(*punto*) con un entero posteriormente. Sin entero después de ``.``, se "
 "utilizará una precisión de 0, redondeando al valor entero. El entero a usar "
-"para relleno debe aparecer antes que el el punto."
+"para relleno debe aparecer antes que el punto."
 
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
@@ -344,7 +345,7 @@ msgid ""
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
 "Para insertar un carácter literal ``%`` dentro de una format string, debe "
-"\"escaparse\" para para impedir que se lea como variable. Esto se consigue "
+"\"escaparse\" para impedir que se lea como variable. Esto se consigue "
 "duplicando el carácter:"
 
 msgid "Format method examples"
@@ -468,3 +469,7 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Hola, Godette v3.11"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

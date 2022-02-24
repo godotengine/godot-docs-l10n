@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,8 +239,8 @@ msgstr ""
 
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 "像這樣的程式碼會比引擎端 C++ 程式碼還要慢很多。每個改動都會需要額外的腳本 "
 "API 呼叫來向後端「查詢」要執行什麼邏輯。"
@@ -288,3 +288,7 @@ msgid ""
 msgstr ""
 "如果想為場景起名，則還是可以在 3.1 版中通過宣告腳本類別並以常數來指定場景來實"
 "現類似的目的。該腳本就有了命名空間的效果："
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -968,13 +968,18 @@ msgstr "支援 XR (AR 與 VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "開箱即用支援 iOS 上的 ARKit。"
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "支援 OpenXR 與 OpenVR API。"
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
-msgstr "通過外掛，可支援主流 VR 頭戴式裝置，如 Oculus Quest 與 HTC Vive。"
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
+msgstr ""
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "支援 OpenXR 與 OpenVR API。"
 
 msgid "GUI system"
 msgstr "GUI 圖形界面系統"
@@ -1214,3 +1219,7 @@ msgid ""
 msgstr ""
 "`Roadmap <https://github.com/godotengine/godot-roadmap>`__ Repository 中的文"
 "件說明了經討論同意且可能在未來版本中實作的功能。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

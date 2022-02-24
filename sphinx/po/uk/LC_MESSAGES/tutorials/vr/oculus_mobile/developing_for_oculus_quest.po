@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Developing for Oculus Quest"
+msgstr ""
+
+msgid "Introduction"
+msgstr "Вступ"
+
+msgid ""
+"This tutorial goes over how to get started developing for the *Meta Quest* "
+"with the Godot Oculus Mobile plugin."
+msgstr ""
+
+msgid "Before starting, there are two things you need to do:"
+msgstr ""
+
+msgid ""
+"First you need to go through the steps on the :ref:"
+"`doc_exporting_for_android` page. This leads you through installing the "
+"toolset that Godot needs to export to Android devices."
+msgstr ""
+
+msgid ""
+"Next you need the Quest plugin. You can get it from the Asset Library or "
+"manually download it from `here <https://github.com/GodotVR/godot-oculus-"
+"mobile-asset>`__."
+msgstr ""
+
+#, fuzzy
+msgid "Setting Up Godot"
+msgstr "Налаштовування вашого проєкту"
+
+msgid "To get started open Godot and create a new project."
+msgstr ""
+
+msgid ""
+"Make sure to choose the ``GLES2`` renderer. Due to the Quest's GPU this "
+"backend is far better suited for the Quest."
+msgstr ""
+
+msgid ""
+"Copy the addons folder from the Oculus Mobile asset into your Godot project. "
+"Your project tree should look similar to this:"
+msgstr ""
+
+msgid "Now you can start building the main scene:"
+msgstr ""
+
+msgid "Add an :ref:`ARVROrigin <class_ARVROrigin>` node first."
+msgstr ""
+
+msgid ""
+"Then add three child nodes to the origin node, one :ref:`ARVRCamera "
+"<class_ARVRCamera>` and two :ref:`ARVRController <class_ARVRController>` "
+"nodes."
+msgstr ""
+
+msgid ""
+"Assign controller ID 1 to the first :ref:`ARVRController "
+"<class_ARVRController>` and rename that to ``LeftHand``."
+msgstr ""
+
+msgid ""
+"Assign controller ID 2 to the second :ref:`ARVRController "
+"<class_ARVRController>` and rename that to ``RightHand``."
+msgstr ""
+
+msgid ""
+"Finally add a :ref:`MeshInstance <class_MeshInstance>` as a child node to "
+"our first :ref:`ARVRController <class_ARVRController>` and create a box "
+"shape, resize the box so each side is set to 0.1. Now duplicate the :ref:"
+"`MeshInstance <class_MeshInstance>` and move it to the second :ref:"
+"`ARVRController <class_ARVRController>` node. These will stand in for our "
+"controllers."
+msgstr ""
+
+#, fuzzy
+msgid "Now add a script to the main node and add the following code:"
+msgstr "Додайте скрипт до ``Mob`` та додайте такі змінні:"
+
+msgid ""
+"Before you can export this project to the Quest you need to do three more "
+"things."
+msgstr ""
+"Перш ніж експортувати цей проєкт у Quest, потрібно зробити ще три речі."
+
+msgid ""
+"First go into the project settings and make sure that the main scene is the "
+"scene we run. Godot does not ask you to set this on export."
+msgstr ""
+
+msgid ""
+"Then go into the export menu and configure a new Android export. If you "
+"still haven't gone through the :ref:`doc_exporting_for_android` page do it "
+"now. If you didn't you'll have some red messages on this screen."
+msgstr ""
+
+msgid ""
+"If you did you can forge ahead and make a few small changes to the export "
+"settings. First change the XR Mode to ``Oculus Mobile VR``. Then change the "
+"Degrees of Freedom mode to ``6DOF``."
+msgstr ""
+
+msgid "Now save and close the export window."
+msgstr ""
+
+#, fuzzy
+msgid "Setting Up Your Quest"
+msgstr "Налаштовування вашого проєкту"
+
+msgid ""
+"Follow `these instructions <https://developer.oculus.com/documentation/"
+"native/android/mobile-device-setup/>`__ to setup your device for development."
+msgstr ""
+
+msgid ""
+"Once your device is set up and connected, click the **Android logo** that "
+"should be visible in the top-right corner of the Godot editor. When clicked, "
+"it exports your project and runs it on the connected device. If you do not "
+"see this Android logo, make sure you have create an Android export preset "
+"and that the preset is marked as **Runnable** in the Export dialog."
+msgstr ""
+
+msgid ""
+"The above does the bare minimum to get your project running on the Quest, "
+"it's not very exciting. Holger Dammertz has made a great toolkit for the "
+"quest that contains a lot of scenes to get help you on your way including "
+"really nice controller meshes."
+msgstr ""
+
+msgid ""
+"You can find the toolkit `here <https://github.com/NeoSpark314/"
+"godot_oculus_quest_toolkit>`__."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you want to help out with improving the plugin please join us `here "
+"<https://github.com/GodotVR/godot_oculus_mobile>`__."
+msgstr ""
+"Якщо хочете взяти участь у написанні документації, сховище її коду "
+"розташовано `тут <https://github.com/godotengine/godot-docs>`_."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,6 +98,10 @@ msgstr ""
 "이전에 여러분은 아마도 변수에 노드를 저장하고, 변수이름 뒤에 점을 입력했으나 "
 "자동 완성 제안이 표시되지 않았던 경험이 있었을 것입니다:"
 
+#, fuzzy
+msgid "code completion options for dynamic"
+msgstr "강제로 완료시키기 (선택사항)"
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -106,6 +110,10 @@ msgstr ""
 "이것은 동적 코드 때문입니다. Godot는 함수에 전달하는 노드 또는 값 타입을 알 "
 "수 없습니다. 그러나 타입을 명시적으로 작성하면 노드에서 모든 공용 메서드와 변"
 "수를 가져옵니다:"
+
+#, fuzzy
+msgid "code completion options for typed"
+msgstr "강제로 완료시키기 (선택사항)"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -296,6 +304,9 @@ msgstr ""
 "작동하는지 확인하고 만약 그렇다면 , 스크립트 에디터 왼쪽 줄 번호가 초록색으"
 "로 바뀝니다."
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "안전하지 않은 라인(line 7) vs 안전한 라인(line 6 and 8)"
 
@@ -311,8 +322,8 @@ msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
 msgstr ""
-"함수의 반환 타입을 정의하려면 함수 선언 뒤에 대시와 오른쪽 꺾쇠 괄호 ``->``"
-"\\ 를 쓰고 그 뒤에 반환 타입을 적으세요:"
+"함수의 반환 타입을 정의하려면 함수 선언 뒤에 대시와 오른쪽 꺾쇠 괄호 ``-"
+">``\\ 를 쓰고 그 뒤에 반환 타입을 적으세요:"
 
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
@@ -434,3 +445,7 @@ msgstr ""
 "적인 오류들을 방지하면서 더 구조화된 코드와 확장성 있는 체계를 만드는 것을 도"
 "와줍니다. 미래에는 정적 타입도 향후 컴파일러 최적화로 좋은 퍼포먼스 향상을 제"
 "공할 것입니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

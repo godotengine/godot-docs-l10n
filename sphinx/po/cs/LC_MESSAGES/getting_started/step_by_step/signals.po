@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,9 +180,8 @@ msgid ""
 "following code, which we saw two lessons ago:"
 msgstr ""
 
-#, fuzzy
 msgid "Your complete ``Sprite.gd`` code should look like the following."
-msgstr "Váš kompletní kód ``Sprite2D.gd`` by měl vypadat následovně."
+msgstr "Váš kompletní kód ``Sprite.gd`` by měl vypadat následovně."
 
 msgid ""
 "Run the scene now and click the button to see the sprite start and stop."
@@ -190,7 +189,6 @@ msgstr ""
 "Spusťte nyní scénu a klikněte na tlačítko, abyste viděli, jak se sprite "
 "spouští a zastavuje."
 
-#, fuzzy
 msgid "Connecting a signal via code"
 msgstr "Připojení signálů v kódu"
 
@@ -207,11 +205,11 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Head back to the 2D workspace. You can either click the \"2D\" text at the "
-"top of the window or press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
+"top of the window or press :kbd:`Ctrl + F1` (:kbd:`Alt + 1` on macOS)."
 msgstr ""
-"Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
-"úrovní pro 3D hry. Otevřete ji stisknutím klávesy :kbd:`Ctrl + F2` (nebo :"
-"kbd:`Alt + 2` v systému MacOS) ."
+"Vraťte se do pracovního prostoru 2D. Můžete buď kliknout na text \"2D\" v "
+"horní části okna, nebo stisknout :kbd:`Ctrl + F2` (:kbd:`Alt + 2` v systému "
+"MacOS)."
 
 msgid ""
 "In the Scene dock, right-click on the Sprite node and add a new node. Search "
@@ -231,9 +229,8 @@ msgstr ""
 msgid "We need to do two operations to connect the nodes via code:"
 msgstr ""
 
-#, fuzzy
 msgid "Get a reference to the Timer from the Sprite."
-msgstr "Získání reference na časovač ze Sprite2D."
+msgstr "Získání reference na časovač ze Sprite."
 
 msgid "Call the Timer's ``connect()`` method."
 msgstr ""
@@ -299,7 +296,6 @@ msgid "To emit a signal in your scripts, call ``emit_signal()``."
 msgstr ""
 "Chcete-li ve svých skriptech vyslat signál, zavolejte ``emit_signal()``."
 
-#, fuzzy
 msgid ""
 "A signal can optionally declare one or more arguments. Specify the argument "
 "names between parentheses:"
@@ -318,13 +314,12 @@ msgstr ""
 "můžete vysílat signály s libovolným počtem argumentů. Je tedy na vás, abyste "
 "vyslali ty správné hodnoty."
 
-#, fuzzy
 msgid ""
 "To emit values along with the signal, add them as extra arguments to the "
 "``emit_signal()`` function:"
 msgstr ""
-"Chcete-li předat hodnoty, přidejte je jako druhý argument do funkce "
-"``emit_signal``:"
+"Chcete-li spolu se signálem i předat hodnoty, přidejte je jako druhý "
+"argument do funkce ``emit_signal()``:"
 
 msgid "Summary"
 msgstr "Shrnutí"
@@ -341,7 +336,6 @@ msgid ""
 "an area, to an element of the interface changing size, and much more."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a "
 "``body_entered`` signal whenever the player's physics body enters its "
@@ -353,10 +347,13 @@ msgstr ""
 "vstoupí do jejího kolizního tvaru, což vám umožní zaznamenat okamžik, kdy "
 "hráč minci sebere."
 
-#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
 "2D game and put everything you learned so far into practice."
 msgstr ""
-"V následující sekci :ref:`doc_your_first_game` vytvoříte kompletní hru,která "
-"ukáže využití signálů pro vzájené spojení různých herních komponent."
+"V následující sekci :ref:`doc_your_first_2D_game` vytvoříte kompletní hru,"
+"která ukáže využití signálů pro vzájené spojení různých herních komponent."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,9 +38,10 @@ msgstr ""
 msgid "Language"
 msgstr "语言"
 
+#, fuzzy
 msgid ""
 "The scope of this document is to be a list of best practices for "
-"contributors to follow, as well as to creating a language they can use to "
+"contributors to follow, as well as to create a language they can use to "
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
@@ -69,16 +70,15 @@ msgstr "最佳实践"
 msgid "#1: The problem always comes first"
 msgstr "#1: 这问题总是第一个"
 
-#, fuzzy
 msgid ""
 "Many contributors are extremely creative and just enjoy the process of "
 "designing abstract data structures, creating nice user interfaces, or simply "
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may or may not be solving any real problems."
 msgstr ""
-"许多贡献者非常有创造力, 他们只是享受设计抽象数据结构, 创建漂亮的用户界面, 或"
-"者纯粹喜欢编程. 不管是什么情况, 他们都会想出很酷的想法, 但这些想法可能并不能"
-"真正解决任何实际问题."
+"许多贡献者非常有创造力，他们只是享受设计抽象数据结构、创建漂亮的用户界面，或"
+"者纯粹喜欢编程。不管是什么情况，他们都会想出很酷的想法，但这些想法可能并不能"
+"真正解决任何实际问题。"
 
 msgid ""
 "These are usually called *Solutions in search of a problem*. In an ideal "
@@ -161,15 +161,15 @@ msgstr "问题的复杂性"
 msgid "The frequency the problem"
 msgstr "问题发生的频率"
 
-#, fuzzy
 msgid ""
 "If the problem is *too complex* for most users to solve, the software must "
 "offer a ready-made solution for it. Likewise, if the problem is easy for the "
 "user to work around, offering such a solution is unnecessary and it's up to "
 "the user to do it."
 msgstr ""
-"如果问题对于大多数用户来说太复杂了, 那么软件必须提供一个现成的解决方案. 同样"
-"地, 如果问题很容易被用户解决, 那么提供这样的解决方案是不必要的, 这取决于用户."
+"如果问题对于大多数用户来说\\ *太复杂*\\ 了，那么软件必须提供一个现成的解决方"
+"案。同样，如果问题很容易被用户变通，那么提供这样的解决方案是不必要的，应该让"
+"用户来做。"
 
 msgid ""
 "The exception, however, is when the user stumbles into this problem "
@@ -193,14 +193,13 @@ msgstr ""
 msgid "#4: The solution must be discussed with others"
 msgstr "#4: 这个解决方案必须与其他人讨论"
 
-#, fuzzy
 msgid ""
 "It is often the case that when users stumble upon problems, they are only "
 "immersed in their project, so they will naturally try to solve the problem "
 "from their perspective, thinking only about their use case."
 msgstr ""
-"通常情况下, 当用户偶然发现问题时, 他们只是沉浸在自己的项目中, 所以他们自然会"
-"从自己的角度来解决问题, 只考虑自己的用例."
+"经常发生的情况是，用户偶然发现问题时，他们只是沉浸在自己的项目中，所以他们自"
+"然会从自己的角度来解决问题，只考虑自己的用例。"
 
 msgid ""
 "Because of this, user proposed solutions don't always contemplate other use "
@@ -267,14 +266,13 @@ msgstr ""
 "当为了使这个解决方案显得更加奇妙和灵活, 纯粹的基于推测的问题(如#2所述)也出现"
 "在舞台上时, 情况往往会变得更糟."
 
-#, fuzzy
 msgid ""
 "The main problem is that, in reality, it rarely works this way. Most of the "
 "time, writing an individual solution to each problem results in code that is "
 "simpler and more maintainable."
 msgstr ""
-"主要问题是, 在现实中, 它很少以这种方式工作. 大多数情况下, 只要为每个问题编写"
-"一个单独的解决方案, 代码就会变得更简单, 更易于维护."
+"主要问题是，在现实中，它很少以这种方式工作。大多数情况下，只要为每个问题编写"
+"一个单独的解决方案，代码就会变得更简单，更易于维护。"
 
 msgid ""
 "Additionally, solutions that target individual problems are better for the "
@@ -285,16 +283,15 @@ msgstr ""
 "此外, 针对个别问题的解决方案对用户来说更好, 因为他们找到的东西正是他们所需要"
 "的, 而不必学习和记忆一个更复杂的系统, 他们只需要简单的任务."
 
-#, fuzzy
 msgid ""
 "Big and flexible solutions also have an additional drawback which is that, "
 "over time, they are rarely flexible enough for all users, who keep "
 "requesting more functions added (and making the API and codebase more and "
 "more complex)."
 msgstr ""
-"大而灵活的解决方案还有一个额外的缺点, 那就是, 随着时间的推移, 它们很少对所有"
-"用户都有足够的灵活性, 这会不断请求添加更多的函数(并使API和代码库变得越来越复"
-"杂)."
+"大而灵活的解决方案还有一个额外的缺点，那就是，随着时间的推移，它们很少对所有"
+"用户都有足够的灵活性，他们就会不断请求添加更多的函数（并使 API 和代码库变得越"
+"来越复杂）。"
 
 msgid "#6: Cater to common use cases, leave the door open for the rare ones"
 msgstr "#6: 迎合常见的用例, 为罕见的用例敞开大门"
@@ -403,13 +400,12 @@ msgstr ""
 "并非每个问题都有一个简单的解决方案, 很多时候, 正确的选择是使用第三方库来解决"
 "问题."
 
-#, fuzzy
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we can't "
 "link libraries dynamically. Instead, we bundle them in our source tree."
 msgstr ""
-"由于Godot需要在大量的平台上发布, 我们就是不能动态链接库. 相反, 我们将它们捆绑"
-"在我们的源代码树中."
+"由于 Godot 需要在大量的平台上发布，我们无法对库进行动态链接。相反，我们将它们"
+"捆绑在我们的源代码树中。"
 
 msgid ""
 "As a result, we are very picky with what goes in, and we tend to prefer "
@@ -434,3 +430,7 @@ msgstr ""
 "为这些许可有效地禁止专有软件中的静态链接(Godot在大多数导出项目中都是这样分发"
 "的). 这个要求也适用于编辑器, 因为我们可能希望长期在iOS上运行它. 由于iOS不支持"
 "动态链接, 因此静态链接是该平台上的唯一选项."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

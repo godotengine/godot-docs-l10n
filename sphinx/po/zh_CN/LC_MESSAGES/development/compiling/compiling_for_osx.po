@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid "Requirements"
 msgstr "需求"
 
 msgid "For compiling under macOS, the following is required:"
-msgstr "在macOS下编译时, 需要以下条件:"
+msgstr "在 macOS 下编译时，需要以下条件："
 
 msgid "`Python 3.5+ <https://www.python.org>`_."
 msgstr "`Python 3.5+ <https://www.python.org/>`__."
@@ -36,13 +36,14 @@ msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
 msgstr ""
-"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (或更轻巧的Xcode命"
-"令行工具)."
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_\\ （或更轻量的 "
+"Xcode 命令行工具）。"
 
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
-msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ (用于WebM SIMD优化)."
+msgstr ""
+"*可选*\\ ——`yasm <https://yasm.tortall.net/>`_\\ （用于 WebM SIMD 优化）。"
 
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
@@ -54,7 +55,7 @@ msgstr ""
 msgid ""
 "Installing Homebrew will also fetch the Command Line Tools for Xcode "
 "automatically if you don't have them already."
-msgstr "如果你还没有Xcode的命令行工具, 安装Homebrew也会自动获取它们."
+msgstr "如果你还没有 Xcode 命令行工具，安装 Homebrew 也会自动进行获取。"
 
 msgid ""
 "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
@@ -244,3 +245,7 @@ msgid ""
 msgstr ""
 "如果你的 OSXCross SDK 版本与 SCons 构建系统所期望的不同，你可以用 "
 "``osxcross_sdk`` 参数指定一个自定义的版本： ::"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

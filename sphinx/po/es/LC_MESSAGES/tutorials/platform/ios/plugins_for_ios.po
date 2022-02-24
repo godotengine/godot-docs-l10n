@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,8 +102,9 @@ msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
 msgstr ""
-"La API del Store Kit es accesible a través del singleton \"InAppStore"
-"\" (siempre estará disponible desde gdscript). Se inicializa automáticamente."
+"La API del Store Kit es accesible a través del singleton "
+"\"InAppStore\" (siempre estará disponible desde gdscript). Se inicializa "
+"automáticamente."
 
 #, fuzzy
 msgid "The following methods are available and documented below:"
@@ -327,12 +328,13 @@ msgid "Multi-platform games"
 msgstr "Asesoramiento multiplataforma"
 
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 "Cuando se trabaja en un juego multiplataforma, no siempre se dispone del "
 "singleton \"GameCenter\" (por ejemplo, cuando se ejecuta en un PC o "
@@ -341,3 +343,7 @@ msgstr ""
 "usar lo que necesitas dentro de un bloque condicional, también necesitas "
 "definirlos como identificadores válidos (variable local o miembro de la "
 "clase). Este es un ejemplo de cómo trabajar alrededor de esto en una clase:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

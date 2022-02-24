@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr ""
 "Visual Studio Code або Vim."
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
+msgstr "GDScript :ref:`зневаджувач <doc_debugger_panel>`."
 
 msgid "No support for debugging in threads yet."
 msgstr "Поки без підтримки дебагінгу в потоках."
@@ -233,13 +233,12 @@ msgstr ""
 "Растрові шрифти можна експортувати за допомогою таких інструментів, як "
 "BMFont."
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
 "DynamicFont підтримує однотонні шрифти, а також кольорові шрифти. "
-"Підтримувані формати - TTF і OTF."
+"Підтримувані формати - TTF, OTF і WOFF1."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -451,11 +450,12 @@ msgstr ""
 msgid "*GLES3:* Screen-space reflections."
 msgstr "*GLES3:* Відображення в просторі екрана."
 
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "Техніки відображення можна змішувати для більшої точності."
+msgstr ""
+"Техніки відображення можна змішувати для більшої точності або "
+"масштабованості."
 
 msgid "**Sky:**"
 msgstr "**Небо:**"
@@ -561,9 +561,8 @@ msgstr "**Згладжування:**"
 msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Багатовибіркове згладжування (MSAA)."
 
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Багатовибіркове згладжування (MSAA)."
+msgstr "Швидке приблизне згладжування (FXAA)."
 
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
@@ -1075,15 +1074,18 @@ msgstr "Підтримка XR (AR та VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Підтримка ARKit на iOS із коробки."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "Підтримка API OpenXR та OpenVR."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"Популярні гарнітури VR, такі як Oculus Quest та HTC Vive, підтримуються "
-"завдяки плагінам."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Підтримка API OpenXR та OpenVR."
 
 msgid "GUI system"
 msgstr "Система GUI (графічного інтерфейсу)"
@@ -1224,9 +1226,8 @@ msgstr "Підтримка відтворення звуків в анімаці
 msgid "Support for Bézier curves in animation."
 msgstr "Підтримка кривих Безьє в анімації."
 
-#, fuzzy
 msgid "File formats"
-msgstr "Формати відео"
+msgstr "Формати файлів"
 
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
@@ -1358,3 +1359,7 @@ msgstr ""
 "`Дорожня карта (план розробки)<https://github.com/godotengine/godot-roadmap> "
 "`__ репозиторій документації функцій, які були узгоджені і можуть бути "
 "реалізовані в майбутніх випусках Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,8 +102,8 @@ msgid ""
 "You can do this simply by duplicating the first room (select the ``Kitchen`` "
 "node, right click and choose **Duplicate**)."
 msgstr ""
-"可以直接复制第一个房间（选择 ``Kitchen`` 节点，右键，然后选择\\ **制作副本**"
-"\\ ）。"
+"可以直接复制第一个房间（选择 ``Kitchen`` 节点，右键，然后选择\\ **制作副本"
+"**\\ ）。"
 
 msgid "Rotate and position the second room so that the openings line up."
 msgstr "通过旋转平移第二个房间，把两个房间的开口对齐。"
@@ -161,7 +161,7 @@ msgstr "在截图中，这些盒子是作为名为 ``Freeform`` 空间的子项�
 msgid ""
 "Boxes also have a green SpatialMaterial assigned to them to make them stand "
 "out more from the rest of the room."
-msgstr "给盒子分配绿色的空间材质，以使其在房间中突显。"
+msgstr "给盒子分配绿色的 SpatialMaterial，以使其在房间中突显。"
 
 msgid ""
 "Let's also create an :ref:`OmniLight<class_OmniLight>` so it will be "
@@ -252,10 +252,10 @@ msgid ""
 "``_ready()`` function."
 msgstr ""
 "尝试创建相机并将其添加到场景中。如果运行场景，您会注意到入口剔除未处于活动状"
-"态。这是因为每次加载关卡时都必须通过转换房间来创建房间数据 ``room graph``"
-"\\ 。在实际游戏中，您无需在编辑器中使用按钮，而是通过 RoomManager 调用函数来"
-"转换关卡， ``rooms_convert()``\\ 。使用脚本试用此内容，也许是在 ``_ready()`` "
-"函数中运行。"
+"态。这是因为每次加载关卡时都必须通过转换房间来创建房间数据 ``room "
+"graph``\\ 。在实际游戏中，您无需在编辑器中使用按钮，而是通过 RoomManager 调用"
+"函数来转换关卡， ``rooms_convert()``\\ 。使用脚本试用此内容，也许是在 "
+"``_ready()`` 函数中运行。"
 
 msgid ""
 "The geometry you created so far is all ``STATIC`` (non-moving). If you look "
@@ -303,3 +303,7 @@ msgid ""
 msgstr ""
 "如果你选择一个房间并点击工具栏上的\\ **Generate Points**\\ 按钮，它将把房间外"
 "体的点储存在房间的检查器中。你现在可以用辅助工具手柄来编辑这些点。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

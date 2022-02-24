@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,31 +48,33 @@ msgid ""
 "their documentation by completing or improving the text in these tags:"
 msgstr ""
 
-#, fuzzy
 msgid "`<brief_description>`"
-msgstr "<brief_description></brief_description>"
+msgstr "`<brief_description>`"
 
-#, fuzzy
 msgid "`<description>`"
-msgstr "Descrizione"
+msgstr "`<description>`"
+
+msgid "`<constant>`"
+msgstr "`<constant>`"
 
 #, fuzzy
-msgid "`<constant>`"
-msgstr "`<costante>`"
-
 msgid ""
 "`<method>` (in its `<description>` tag; return types and arguments don't "
 "take separate documentation strings)"
 msgstr ""
+"`<method>` (nel suo tag `<description>`; i tipi di ritorno e gli argomenti "
+"non prendono stringhe di documentazione separate)"
+
+msgid "`<member>`"
+msgstr "`<member>`"
 
 #, fuzzy
-msgid "`<member>`"
-msgstr "`<membro>`"
-
 msgid ""
 "`<signal>` (in its `<description>` tag; arguments don't take separate "
 "documentation strings)"
 msgstr ""
+"`<signal>` (nel suo tag `<description>`; gli argomenti non prendono stringhe "
+"di documentazione separate)"
 
 msgid ""
 "Write in a clear and simple language. Always follow the :ref:`writing "
@@ -145,12 +147,13 @@ msgstr "Risultato"
 msgid "[Class]"
 msgstr "[Class]"
 
+#, fuzzy
 msgid "Link a class"
-msgstr ""
+msgstr "Collega una classe"
 
 #, fuzzy
 msgid "Move the [Sprite]."
-msgstr "Sposta lo :ref:`class_sprite`."
+msgstr "Sposta lo [Sprite]."
 
 #, fuzzy
 msgid "Move the :ref:`class_Sprite`."
@@ -159,11 +162,13 @@ msgstr "Sposta lo :ref:`class_sprite`."
 msgid "[method methodname]"
 msgstr "[method methodname]"
 
+#, fuzzy
 msgid "Link to a method in this class"
-msgstr ""
+msgstr "Collegamento a un metodo in questa classe"
 
+#, fuzzy
 msgid "Call [method hide]."
-msgstr ""
+msgstr "Chiama [method hide]."
 
 #, fuzzy
 msgid "Call :ref:`hide <class_Spatial_method_hide>`."
@@ -172,8 +177,9 @@ msgstr "Chiama :ref:`hide <class_Spatial_method_hide>`."
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
 
+#, fuzzy
 msgid "Link to another class's method"
-msgstr ""
+msgstr "Collegamento a un metodo di un'altra classe"
 
 #, fuzzy
 msgid "Call [method Node3D.hide]."
@@ -182,11 +188,13 @@ msgstr "Chiama [metodo Node3D.hide]."
 msgid "[member membername]"
 msgstr "[member membername]"
 
+#, fuzzy
 msgid "Link to a member in this class"
-msgstr ""
+msgstr "Collegamento a un membro di questa classe"
 
+#, fuzzy
 msgid "Get [member scale]."
-msgstr ""
+msgstr "Ottieni [member scale]."
 
 #, fuzzy
 msgid "Get :ref:`scale <class_Node2D_property_scale>`."
@@ -195,24 +203,28 @@ msgstr "Otteni :ref:`scala <class_Node2D_property_scale>`."
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
 
+#, fuzzy
 msgid "Link to another class's member"
-msgstr ""
+msgstr "Collegamento a un membro di un'altra classe"
 
+#, fuzzy
 msgid "Get [member Node2D.scale]."
-msgstr ""
+msgstr "Ottieni [member Node2D.scale]."
 
 msgid "[signal signalname]"
 msgstr "[signal signalname]"
 
+#, fuzzy
 msgid "Link to a signal in this class"
-msgstr ""
+msgstr "Collegamento a un segnale in questa classe"
 
+#, fuzzy
 msgid "Emit [signal renamed]."
-msgstr ""
+msgstr "Emetti [signal renamed]."
 
 #, fuzzy
 msgid "Emit :ref:`renamed <class_Node_signal_renamed>`."
-msgstr "Emettere :ref:`renamed <class_Node_signal_renamed>`."
+msgstr "Emetti :ref:`renamed <class_Node_signal_renamed>`."
 
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
@@ -221,8 +233,9 @@ msgstr "[signal Class.signalname]"
 msgid "Link to another class's signal"
 msgstr "Collegamento al segnale di un'altra classe"
 
+#, fuzzy
 msgid "Emit [signal Node.renamed]."
-msgstr ""
+msgstr "Emetti [signal Node.renamed]."
 
 #, fuzzy
 msgid "[b] [/b]"
@@ -231,11 +244,13 @@ msgstr "[b] [/b]"
 msgid "Bold"
 msgstr "Grassetto"
 
+#, fuzzy
 msgid "Some [b]bold[/b] text."
-msgstr ""
+msgstr "Del testo in [b]grassetto[/b]."
 
+#, fuzzy
 msgid "Some **bold** text."
-msgstr ""
+msgstr "Del testo in **grassetto**."
 
 #, fuzzy
 msgid "[i] [/i]"
@@ -244,11 +259,13 @@ msgstr "[i] [/i]"
 msgid "Italic"
 msgstr "Corsivo"
 
+#, fuzzy
 msgid "Some [i]italic[/i] text."
-msgstr ""
+msgstr "Del testo in [i]corsivo[/i]."
 
+#, fuzzy
 msgid "Some *italic* text."
-msgstr ""
+msgstr "Del testo in **corsivo**."
 
 #, fuzzy
 msgid "[code] [/code]"
@@ -257,18 +274,20 @@ msgstr "[code] [/code]"
 msgid "Monospace"
 msgstr "Monospace"
 
+#, fuzzy
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "Del testo in [code]monospace[/code]."
 
+#, fuzzy
 msgid "Some ``monospace`` text."
-msgstr ""
+msgstr "Del testo in ``monospace``."
 
 msgid "[kbd] [/kbd]"
-msgstr ""
+msgstr "[kbd] [/kbd]"
 
 #, fuzzy
 msgid "Keyboard/mouse shortcut"
-msgstr "Scorciatoie da tastiera"
+msgstr "Scorciatoia da tastiera/mouse"
 
 msgid "Some [kbd]Ctrl + C[/kbd] key."
 msgstr ""
@@ -291,7 +310,7 @@ msgstr "[codeblocks] [/codeblocks]"
 
 #, fuzzy
 msgid "[codeblock] for multiple languages"
-msgstr "[codeblock] per più lingue"
+msgstr "[codeblock] per più linguaggi"
 
 #, fuzzy
 msgid "[gdscript] [/gdscript]"
@@ -320,7 +339,7 @@ msgstr ""
 "cancellerà le tabulazioni. Per esempio:"
 
 msgid "Will display as:"
-msgstr "Verrà mostrato come:"
+msgstr "Verrà visualizzato come:"
 
 #, fuzzy
 msgid ""
@@ -393,3 +412,7 @@ msgstr ""
 "sorgente di Godot su GitHub. Inoltre, in caso di dubbi, non esitare a "
 "chiedere sul sito Web di domande e risposte <https://godotengine.org/qa/> "
 "`__ e su IRC (freenode, #godotengine)."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Evaluating expressions"
-msgstr "Régressions en bisectation"
+msgstr "Évaluation des expressions"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
 "expressions."
 msgstr ""
 
-#, fuzzy
 msgid "An expression can be:"
-msgstr "Les nœuds d'expression peuvent :"
+msgstr "Une expression peut être :"
 
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
-msgstr ""
+msgstr "Une expression mathématique comme ``(2 + 4) * 16/4.0``."
 
 msgid "A built-in method call like ``deg2rad(90)``."
-msgstr ""
+msgstr "Un appel d'une méthode intégrée comme ``deg2rad(90)``."
 
 msgid ""
 "A method call on an user-provided script like ``update_health()``, if "
@@ -47,17 +45,14 @@ msgid ""
 "you compile Godot with the GDScript module disabled."
 msgstr ""
 
-#, fuzzy
 msgid "Basic usage"
 msgstr "Utilisation de base"
 
 msgid "To evaluate a mathematical expression, use::"
-msgstr ""
+msgstr "Pour évaluer une expression mathématique, utilisez ::"
 
-#, fuzzy
 msgid "The following operators are available:"
-msgstr ""
-"Les méthodes suivantes sont utilisées pour implémenter la présentation :"
+msgstr "Les opérateurs suivants sont disponibles :"
 
 msgid "Operator"
 msgstr "Opérateur"
@@ -65,26 +60,22 @@ msgstr "Opérateur"
 msgid "Notes"
 msgstr "Notes"
 
-#, fuzzy
 msgid "Addition ``+``"
-msgstr "Informations supplémentaires"
+msgstr "Addition ``+``"
 
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
-#, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "Soustraction"
+msgstr "Soustraction (``-``)"
 
-#, fuzzy
 msgid "Multiplication (``*``)"
-msgstr "multiplicatif"
+msgstr "Multiplication (``*``)"
 
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "Division (``/``)"
 
 msgid ""
 "Performs and integer division if both operands are integers. If at least one "
@@ -92,10 +83,10 @@ msgid ""
 msgstr ""
 
 msgid "Modulo (``%``)"
-msgstr ""
+msgstr "Module (``%``)"
 
 msgid "Returns the remainder of an integer division."
-msgstr ""
+msgstr "Retourne le reste d'une division entière."
 
 msgid ""
 "Spaces around operators are optional. Also, keep in mind the usual `order of "
@@ -126,14 +117,15 @@ msgid ""
 "sensitive**."
 msgstr ""
 
-#, fuzzy
 msgid "Setting a base instance for the expression"
-msgstr "Obtention des données depuis les serveurs"
+msgstr "Définition d'une instance de base pour l'expression"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
 "expression has no base instance associated to it."
 msgstr ""
+"Par défaut, une expression à une instance de base à ``null``. Ceci veut dire "
+"que l'expression n'a aucune instance qui lui est associée."
 
 msgid ""
 "When calling :ref:`Expression.execute() <class_Expression_method_execute>`, "
@@ -143,13 +135,13 @@ msgid ""
 msgstr ""
 
 msgid "Associating a base instance allows doing the following:"
-msgstr ""
+msgstr "Associer une instance de base permet de faire ceci :"
 
 msgid "Reference the instance's constants (``const``) in the expression."
-msgstr ""
+msgstr "Référence la constante (``const``) de l'instance dans l'expression."
 
 msgid "Reference the instance's member variables (``var``) in the expression."
-msgstr ""
+msgstr "Référence la variable (``var``) de l'instance dans l'expression."
 
 msgid ""
 "Call methods defined in the instance and use their return values in the "
@@ -164,9 +156,8 @@ msgid ""
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
 
-#, fuzzy
 msgid "Example script"
-msgstr "Exemple de GDScript"
+msgstr "Exemple de script"
 
 msgid "The script below demonstrates what the Expression class is capable of::"
 msgstr ""
@@ -189,3 +180,7 @@ msgid ""
 "restriction on arguments doesn't apply to user-made functions when you bind "
 "a base instance to the expression."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

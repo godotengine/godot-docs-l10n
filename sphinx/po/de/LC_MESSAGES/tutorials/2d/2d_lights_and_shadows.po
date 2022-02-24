@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -429,10 +429,10 @@ msgid ""
 "winding order is used to determine which side of the line is inside the "
 "polygon. Only outward facing lines cast shadows."
 msgstr ""
-"Mit ``Cull Mode`` können Sie auswählen, in welche Richtung \"weggeschnitten"
-"\" werden soll. Die Standardeinstellung ist ``Disabled``, was bedeutet, dass "
-"der Okkluder einen Schatten wirft, egal auf welcher Seite sich das Licht "
-"befindet. Die beiden anderen Einstellungen ``ClockWise`` und "
+"Mit ``Cull Mode`` können Sie auswählen, in welche Richtung "
+"\"weggeschnitten\" werden soll. Die Standardeinstellung ist ``Disabled``, "
+"was bedeutet, dass der Okkluder einen Schatten wirft, egal auf welcher Seite "
+"sich das Licht befindet. Die beiden anderen Einstellungen ``ClockWise`` und "
 "``CounterClockWise`` beziehen sich auf die Wicklungsreihenfolge der "
 "Eckpunkte des Polygons. Die Wicklungsreihenfolge wird verwendet, um zu "
 "bestimmen, welche Seite der Linie innerhalb des Polygons liegt. Nur nach "
@@ -575,3 +575,7 @@ msgstr ""
 "finden, die zu Ihrem Projekt passen. Es gibt keine richtige Lösung für "
 "alles, weshalb Godot so viel Flexibilität bietet. Denken Sie daran, dass die "
 "Schatten umso rechenintensiver sind, je höher der ``filter`` eingestellt ist."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Übersetzungsformat"

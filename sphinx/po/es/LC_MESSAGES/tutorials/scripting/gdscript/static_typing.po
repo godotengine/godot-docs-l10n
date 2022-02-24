@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,10 @@ msgstr ""
 "Probablemente hayas almacenado un nodo en una variable y escrito un punto "
 "esperando sugerencias de autocompletado sin obtener nada:"
 
+#, fuzzy
+msgid "code completion options for dynamic"
+msgstr "Forzar su finalización (opcional)"
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -111,6 +115,10 @@ msgstr ""
 "Esto se debe al código dinámico. Godot no puede saber qué tipo de nodo o "
 "valor está pasando a la función. Sin embargo, si escribe el tipo "
 "explícitamente, obtendrás todos los métodos y variables públicos del nodo:"
+
+#, fuzzy
+msgid "code completion options for typed"
+msgstr "Forzar su finalización (opcional)"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -309,6 +317,9 @@ msgstr ""
 "se asegurará de que el tipo es correcto y en ese caso, la línea se marcará "
 "de verde a la izquierda del editor de script."
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Línea no segura (línea 7) vs Línea segura (líneas 6 y 8)"
 
@@ -451,3 +462,7 @@ msgstr ""
 "de Godot, ayuda a escribir código más estructurado, evitar errores comunes y "
 "crear sistemas más escalables. En el futuro, tipos estáticos permitirán "
 "mejorar el rendimiento gracias a optimizaciones del compilador."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,8 +156,8 @@ msgid ""
 "many controls for their backgrounds and overlays."
 msgstr ""
 "一个样式盒资源（\\ :ref:`StyleBox <class_StyleBox>`\\ ），是一个用来定义一个"
-"UI面板怎样展示的配置项集合。不只是用于面板控件（\\ :ref:`Panel <class_Panel>`"
-"\\ ），它还常常用于许多控件的背景设置和遮罩设置。"
+"UI面板怎样展示的配置项集合。不只是用于面板控件（\\ :ref:`Panel "
+"<class_Panel>`\\ ），它还常常用于许多控件的背景设置和遮罩设置。"
 
 msgid "Theme types"
 msgstr "主题类型"
@@ -347,7 +347,7 @@ msgstr "使用控件的类名和父类名："
 msgid ""
 "Check every control starting from itself and see if it has a theme property "
 "set;"
-msgstr "从自身开始检查每个控件，看看它是否设置了 theme 属性；"
+msgstr "从自身开始检查每个控件，看看它是否设置了主题属性；"
 
 msgid ""
 "If it does, check that theme for the matching item of the same name, data "
@@ -399,3 +399,7 @@ msgstr ""
 "颜色的精灵。可以在主题资源中定义颜色的合集，精灵（在脚本的帮助下）就可以使用"
 "这些颜色来绘制纹理。这样做的最大好处是可以为红绿蓝队制作不同的主题但使用相同"
 "的主题项目，切换队伍只需要替换资源就可以了。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

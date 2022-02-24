@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,9 @@ msgstr ""
 msgid "Requirements"
 msgstr "Requisiti"
 
+#, fuzzy
 msgid "Mono 6.12.0 or greater"
-msgstr ""
+msgstr "Mono 6.12.0 o superiore"
 
 msgid "MSBuild"
 msgstr "MSBuild"
@@ -243,12 +244,11 @@ msgstr ""
 msgid "``Api``"
 msgstr "``Api``"
 
-#, fuzzy
 msgid "``Mono`` (optional)"
 msgstr "``Mono`` (opzionale)"
 
 msgid "``Tools``"
-msgstr "``Strumenti``"
+msgstr "``Tools``"
 
 msgid ""
 "The ``Api`` subdirectory contains the Godot API assemblies. On macOS, if the "
@@ -304,8 +304,9 @@ msgid ""
 "above for instructions on how to use the scripts."
 msgstr ""
 
+#, fuzzy
 msgid "Targeting Android"
-msgstr "'Targeting Android'"
+msgstr "Puntare su Android"
 
 msgid ""
 "Compiling the Android export templates with Mono is a bit simpler than it is "
@@ -326,7 +327,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Targeting iOS"
-msgstr "Obiettivo iOS"
+msgstr "Punatare su iOS"
 
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
@@ -363,8 +364,9 @@ msgid ""
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
 
+#, fuzzy
 msgid "Targeting WebAssembly"
-msgstr ""
+msgstr "Puntare a WebAssembly"
 
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
@@ -397,35 +399,31 @@ msgstr ""
 msgid "Android"
 msgstr "Android"
 
-#, fuzzy
 msgid "``<templates>/bcl/monodroid``"
 msgstr "``<templates>/bcl/monodroid``"
 
 msgid "iOS"
 msgstr "iOS"
 
-#, fuzzy
 msgid "``<templates>/bcl/monotouch``"
 msgstr "``<templates>/bcl/monotouch``"
 
 msgid "WebAssembly"
 msgstr "WebAssembly"
 
-#, fuzzy
 msgid "``<templates>/bcl/wasm``"
 msgstr "``<templates>/bcl/wasm``"
 
-msgid "Linux and macOS"
-msgstr ""
-
 #, fuzzy
+msgid "Linux and macOS"
+msgstr "Linux e macOS"
+
 msgid "``<templates>/bcl/net_4_x``"
 msgstr "``<templates>/bcl/net_4_x``"
 
 msgid "Windows"
 msgstr "Windows"
 
-#, fuzzy
 msgid "``<templates>/bcl/net_4_x_win``"
 msgstr "``<templates>/bcl/net_4_x_win``"
 
@@ -518,3 +516,7 @@ msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

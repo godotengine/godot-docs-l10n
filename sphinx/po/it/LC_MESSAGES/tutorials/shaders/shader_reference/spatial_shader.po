@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,13 @@ msgid ""
 "how objects are drawn."
 msgstr ""
 
+#, fuzzy
 msgid "Render modes"
-msgstr ""
+msgstr "Modalità di rendering"
 
+#, fuzzy
 msgid "Render mode"
-msgstr ""
+msgstr "Modalità di rendering"
 
 msgid "Description"
 msgstr "Descrizione"
@@ -242,7 +244,7 @@ msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr "Incorporato"
+msgstr "Integrato"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -703,7 +705,7 @@ msgid ""
 msgstr ""
 
 msgid "in vec3 **NORMAL**"
-msgstr ""
+msgstr "in vec3 **NORMAL**"
 
 msgid "Normal vector, in view space."
 msgstr ""
@@ -712,50 +714,56 @@ msgid "View vector, in view space."
 msgstr ""
 
 msgid "in vec3 **LIGHT**"
-msgstr ""
+msgstr "in vec3 **LIGHT**"
 
 msgid "Light Vector, in view space."
 msgstr ""
 
 msgid "in vec3 **ATTENUATION**"
-msgstr ""
+msgstr "in vec3 **ATTENUATION**"
 
 msgid "Attenuation based on distance or shadow."
 msgstr ""
 
 msgid "in vec3 **ALBEDO**"
-msgstr ""
+msgstr "in vec3 **ALBEDO**"
 
 #, fuzzy
 msgid "Base albedo."
 msgstr "Albedo di base."
 
 msgid "in vec3 **LIGHT_COLOR**"
-msgstr ""
+msgstr "in vec3 **LIGHT_COLOR**"
 
 msgid "Color of light multiplied by energy."
 msgstr ""
 
 msgid "in float **ROUGHNESS**"
-msgstr ""
+msgstr "in float **ROUGHNESS**"
 
 msgid "Roughness."
 msgstr "Rugosità."
 
 msgid "in vec3 **TRANSMISSION**"
-msgstr ""
+msgstr "in vec3 **TRANSMISSION**"
 
 msgid "Transmission mask from fragment function."
-msgstr "Maschera di trasmissione dalla funzione frammento."
+msgstr "Maschera di trasmissione dalla funzione fragment."
 
 msgid "out vec3 **DIFFUSE_LIGHT**"
-msgstr ""
+msgstr "out vec3 **DIFFUSE_LIGHT**"
 
+#, fuzzy
 msgid "Diffuse light result."
-msgstr ""
+msgstr "Risultato di luce diffusa."
 
 msgid "out vec3 **SPECULAR_LIGHT**"
-msgstr ""
+msgstr "out vec3 **SPECULAR_LIGHT**"
 
+#, fuzzy
 msgid "Specular light result."
-msgstr ""
+msgstr "Risultato di luce speculare."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

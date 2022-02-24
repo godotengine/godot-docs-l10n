@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Editing Rooms and Portals"
-msgstr "Modificare le istanze"
+msgstr "Modifica di stanze e portali"
 
 #, fuzzy
 msgid "Example SceneTree"
-msgstr "SceneTree"
+msgstr "Esempio di SceneTree"
 
 msgid "Putting all the ideas together, here is an example scene tree:"
 msgstr ""
@@ -69,7 +69,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Postfix convention"
-msgstr "Convenzioni di formattazione"
+msgstr "Convenzione suffisso"
 
 msgid "``-room`` becomes a :ref:`Room<class_Room>`."
 msgstr ""
@@ -104,7 +104,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Portals"
-msgstr "Porte"
+msgstr "Portali"
 
 msgid ""
 "Portals are different from Rooms. In Portals, we need to specify the "
@@ -146,7 +146,7 @@ msgstr ""
 
 #, fuzzy
 msgid "This means we can use the following portal names:"
-msgstr "L'HUD visualizza le seguenti informazioni:"
+msgstr "Questo significa che possiamo usare i seguenti nomi di portali:"
 
 msgid "``kitchen*1-portal`` - creates a Portal leading to the \"kitchen\"."
 msgstr ""
@@ -163,7 +163,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Manual bounds"
-msgstr "Utilizzo manuale"
+msgstr "Limiti manuali"
 
 msgid ""
 "Manual bounds are a way of explicitly setting the convex hull for a room, "
@@ -223,11 +223,11 @@ msgstr ""
 
 #, fuzzy
 msgid "RoomManager"
-msgstr "Gestore dei Progetti"
+msgstr "RoomManager"
 
 #, fuzzy
 msgid "Show Debug"
-msgstr "Debug"
+msgstr "Mostra Debug"
 
 msgid ""
 "This can be used to control the amount of logging, especially the room "
@@ -236,7 +236,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Debug Sprawl"
-msgstr "Pannello di debug"
+msgstr "Debug Sprawl"
 
 msgid ""
 "This mode will only display meshes that are sprawling through portals from "
@@ -249,7 +249,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Merge Meshes"
-msgstr "Meshes"
+msgstr "Unisci mesh"
 
 msgid ""
 "To keep drawcalls to a minimum, the system offers the option to "
@@ -261,7 +261,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Plane Simplification"
-msgstr "Specifica dei pacchetti"
+msgstr "Semplificazione del piano"
 
 msgid ""
 "In some cases, the convex hulls automatically generated for rooms may "
@@ -281,8 +281,9 @@ msgid ""
 "you have doors that can open and close."
 msgstr ""
 
+#, fuzzy
 msgid "Two Way"
-msgstr ""
+msgstr "Bidirezionale"
 
 msgid ""
 "Portals can either be two-way or one-way. The default two-way portals are "
@@ -294,7 +295,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Particle Systems"
-msgstr "Particelle"
+msgstr "Sistemi di particelle"
 
 msgid ""
 "Be aware that when placing ``STATIC`` particle systems, the AABB on "
@@ -306,10 +307,14 @@ msgstr ""
 
 #, fuzzy
 msgid "Multimeshes"
-msgstr "'MultiMeshes'"
+msgstr "Multimeshes"
 
 msgid ""
 "Note that multimeshes will be culled as a group, rather than individually. "
 "You should therefore attempt to keep them localised to the same area "
 "wherever possible."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

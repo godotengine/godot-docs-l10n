@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,13 +204,17 @@ msgid "Submitting"
 msgstr "提出する"
 
 msgid ""
-"Once you are logged in, you will be able to head over to the \"Submit Assets"
-"\" page of the AssetLib, which will look like this:"
+"Once you are logged in, you will be able to head over to the \"Submit "
+"Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
 "ログインすると、AssetLibの ”Submit Assets\" ページに移動できます。このページ"
 "は次のようになります:"
 
 msgid "|image0|"
+msgstr "\\ |image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "\\ |image0|"
 
 msgid ""
@@ -413,8 +417,8 @@ msgid ""
 "was rejected, you will be told why that may have been, and you will be able "
 "to submit it again with the appropriate changes. You may have some luck "
 "accelerating the approval process by messaging the moderators/assetlib "
-"reviewers on IRC (the ``#godotengine-atelier`` channel on Freenode), or the "
-"official Discord server."
+"reviewers on the `Godot Contributors Chat <https://chat.godotengine.org/"
+">`_'s ``#general`` channel or the official Discord server."
 msgstr ""
 "完了したら、Submitをクリックします。 アセットは保留中のキューに入れられ、"
 "AssetLibの `here <https://godotengine.org/asset-library/asset/edit?"
@@ -425,3 +429,7 @@ msgstr ""
 "#godotengine-atelier channel on Freenode)または公式のDiscordサーバーでモデ"
 "レーター/ assetlibレビュー担当者にメッセージを送ることで、承認プロセスを早め"
 "ることができます。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

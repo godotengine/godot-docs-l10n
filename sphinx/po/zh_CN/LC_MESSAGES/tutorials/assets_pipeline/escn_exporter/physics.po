@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,14 +23,14 @@ msgstr "物理属性"
 msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blender's "
 "physics tab:"
-msgstr "通过在Blenders物理选项卡中, 启用 ``刚体(Rigid Body)`` 来导出物理属性:"
+msgstr "通过在 Blenders 物理选项卡中，启用“Rigid Body”（刚体）来导出物理属性："
 
 msgid ""
 "By default, a single Blender object with rigid body enabled will export as "
 "three nodes: a PhysicsBody, a CollisionShape, and a MeshInstance."
 msgstr ""
-"默认情况下, 启用了刚体的单个Blender对象将导出为三个节点:``PhysicsBody``, "
-"``CollisionShape``, 和 ``MeshInstance``."
+"默认情况下，启用了刚体的单个 Blender 对象将导出为三个节点：PhysicsBody、"
+"CollisionShape、MeshInstance。"
 
 msgid "Body type"
 msgstr "物体类型"
@@ -102,3 +102,7 @@ msgid ""
 msgstr ""
 "这也将影响对象在Blender视图中的显示方式. 大多数时候, 您希望在处理模型时透明显"
 "示碰撞几何体, 因此效果很好."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

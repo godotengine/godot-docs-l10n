@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,8 @@ msgid ""
 msgstr ""
 "이제 모든 것을 하나로 모을 때입니다. 새 장면을 만들고 ``Main``\\ 이라는 이름"
 "의 :ref:`Node <class_Node>`\\ 를 추가하세요. Node2D가 아닌 **Node**\\ 를 만들"
-"어야 합니다. \"인스턴스화(Instance)\" 버튼을 클릭하고 저장된 ``Player.tscn``"
-"\\ 을 선택하세요."
+"어야 합니다. \"인스턴스화(Instance)\" 버튼을 클릭하고 저장된 ``Player."
+"tscn``\\ 을 선택하세요."
 
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
@@ -101,9 +101,9 @@ msgid ""
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
 "메인 노드는 새로운 몹을 스폰할 것이고 우리는 몹이 화면 모서리 아무 위치에서"
-"나 나타나도록 만들고 싶습니다. :ref:`Path2D <class_Path2D>` 노드를 ``Main``"
-"\\ 의 자식으로 추가하고 ``MobPath``\\ 라고 이름지으세요. ``Path2D``\\ 를 선택"
-"하면 편집기 위쪽에 새로운 버튼들이 나타납니다:"
+"나 나타나도록 만들고 싶습니다. :ref:`Path2D <class_Path2D>` 노드를 "
+"``Main``\\ 의 자식으로 추가하고 ``MobPath``\\ 라고 이름지으세요. "
+"``Path2D``\\ 를 선택하면 편집기 위쪽에 새로운 버튼들이 나타납니다:"
 
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
@@ -153,8 +153,9 @@ msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"``Main``\\ 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)``"
-"\\ 를 사용해서 우리가 인스턴스화하길 원하는 몹 씬을 고를 수 있도록 만듭니다."
+"``Main``\\ 에 스크립트를 추가합니다. 스크립트의 위에 ``export "
+"(PackedScene)``\\ 를 사용해서 우리가 인스턴스화하길 원하는 몹 씬을 고를 수 있"
+"도록 만듭니다."
 
 msgid ""
 "We also add a call to ``randomize()`` here so that the random number "
@@ -290,3 +291,7 @@ msgid ""
 "What's our game lacking? Some user interface. In the next lesson, we'll add "
 "a title screen and display the player's score."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

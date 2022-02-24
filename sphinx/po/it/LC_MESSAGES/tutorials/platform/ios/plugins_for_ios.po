@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,9 @@ msgid ""
 "which returns a registered singleton."
 msgstr ""
 
+#, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
-msgstr ""
+msgstr "Ecco un esempio di come farlo in GDScript:"
 
 #, fuzzy
 msgid "Asynchronous methods"
@@ -115,7 +116,7 @@ msgstr ""
 
 #, fuzzy
 msgid "``purchase``"
-msgstr "acquista"
+msgstr "``purchase``"
 
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
@@ -150,7 +151,7 @@ msgstr "In caso di successo:"
 
 #, fuzzy
 msgid "``request_product_info``"
-msgstr "request_product_info"
+msgstr "``request_product_info``"
 
 msgid "Requests the product info on a list of product IDs."
 msgstr ""
@@ -162,7 +163,7 @@ msgstr ""
 
 #, fuzzy
 msgid "``restore_purchases``"
-msgstr "restore_purchases"
+msgstr "``restore_purchases``"
 
 msgid ""
 "Restores previously made purchases on user's account. This will create "
@@ -172,7 +173,6 @@ msgstr ""
 msgid "The response events will be dictionaries with the following fields:"
 msgstr ""
 
-#, fuzzy
 msgid "``set_auto_finish_transaction``"
 msgstr "``set_auto_finish_transaction``"
 
@@ -186,9 +186,8 @@ msgid ""
 "automatically finalized. Example:"
 msgstr ""
 
-#, fuzzy
 msgid "``finish_transaction``"
-msgstr "``connection``"
+msgstr "``finish_transaction``"
 
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
@@ -220,16 +219,14 @@ msgstr ""
 msgid "and the pending events interface:"
 msgstr ""
 
-#, fuzzy
 msgid "``authenticate``"
-msgstr "authenticate"
+msgstr "``authenticate``"
 
 msgid "Authenticates a user in Game Center."
 msgstr ""
 
-#, fuzzy
 msgid "``post_score``"
-msgstr "post_score"
+msgstr "``post_score``"
 
 msgid "Posts a score to a Game Center leaderboard."
 msgstr ""
@@ -246,9 +243,8 @@ msgstr ""
 msgid "Example:"
 msgstr "Esempio:"
 
-#, fuzzy
 msgid "``award_achievement``"
-msgstr "award_achievement"
+msgstr "``award_achievement``"
 
 msgid "Modifies the progress of a Game Center achievement."
 msgstr ""
@@ -269,34 +265,30 @@ msgid ""
 "achievement banner at the top of the screen"
 msgstr ""
 
-#, fuzzy
 msgid "``reset_achievements``"
-msgstr "reset_achievements"
+msgstr "``reset_achievements``"
 
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 
-#, fuzzy
 msgid "``request_achievements``"
-msgstr "request_achievements"
+msgstr "``request_achievements``"
 
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr ""
 
-#, fuzzy
 msgid "``request_achievement_descriptions``"
-msgstr "request_achievement_descriptions"
+msgstr "``request_achievement_descriptions``"
 
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr ""
 
-#, fuzzy
 msgid "``show_game_center``"
-msgstr "show_game_center"
+msgstr "``show_game_center``"
 
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
@@ -331,10 +323,15 @@ msgid "Multi-platform games"
 msgstr "Il Multi-threading"
 
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

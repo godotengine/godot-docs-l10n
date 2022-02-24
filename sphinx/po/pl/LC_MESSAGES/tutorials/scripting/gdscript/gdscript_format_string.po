@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,9 +38,10 @@ msgstr ""
 "pewne sekwencje znaków zastępczych. Te pola wyboru można łatwo zastąpić "
 "parametrami przekazanymi do formatowanego łańcucha."
 
+#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
-"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
@@ -75,8 +76,8 @@ msgstr ""
 "``%s`` widoczne w przykładzie powyżej jest najprostszym symbolem zastępczym "
 "i działa dla większości przypadków: konwertuje wartość tą samą metodą, którą "
 "niejawna konwersja lub ``str()`` by ją skonwertowała. Łańcuchy znaków "
-"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w ,albo ``"
-"\"True\"`` ,albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
+"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w ,albo "
+"``\"True\"`` ,albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
 "dziesiętnymi, inne typy zwykle zwracają swoje dane w ciąg znaków łatwy do "
 "odczytania przez człowieka."
 
@@ -443,3 +444,7 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Hej, Godette v3.11"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format tłumaczenia"

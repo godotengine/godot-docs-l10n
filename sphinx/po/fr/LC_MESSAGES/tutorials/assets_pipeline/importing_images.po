@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,6 +201,13 @@ msgstr ""
 "Dans ce tableau, chacune des quatre options est décrite avec ses avantages "
 "et inconvénients (|bon| = Meilleur, |mauvais| = Pire) :"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "et"
+
 msgid "Uncompressed"
 msgstr "Non compressé"
 
@@ -235,6 +242,10 @@ msgid "|bad| Large"
 msgstr "|mauvais| Grand"
 
 msgid "|regular| Small"
+msgstr "|normal| Petit"
+
+#, fuzzy
+msgid "regular"
 msgstr "|normal| Petit"
 
 msgid "|good| Very Small"
@@ -313,9 +324,9 @@ msgstr ""
 "seuls les canaux rouge et vert sont requis. Étant donné que les algorithmes "
 "classiques de compressions de textures produisent des artefacts qui ne "
 "semblent pas beaux dans les normal map, le format de compression RGTC "
-"convient parfaitement à ces données. Si vous forcez cette option sur \"Activé"
-"\", Godot importera l'image au format RGTC compressé. Par défaut, il est "
-"défini sur \"Détecter\", ce qui signifie que si la texture est utilisée "
+"convient parfaitement à ces données. Si vous forcez cette option sur "
+"\"Activé\", Godot importera l'image au format RGTC compressé. Par défaut, il "
+"est défini sur \"Détecter\", ce qui signifie que si la texture est utilisée "
 "comme une normal map, elle sera remplacée par \"Activé\" et réimportée "
 "automatiquement."
 
@@ -456,12 +467,18 @@ msgid ""
 "means using the same texture in both 2D and 3D will make the texture display "
 "with incorrect colors in either 2D or 3D."
 msgstr ""
+"Étant donné que les données de la texture seront modifiées lorsque le sRGB "
+"sera activé, ça signifie qu'utiliser la même texture en 2D et en 3D "
+"entraînera un affichage incorrect des couleurs de la texture en 2D ou en 3D."
 
 msgid ""
 "To work around this, make a copy of the texture on the filesystem and enable "
 "sRGB on one of the copies only. Use the copy with sRGB enabled in 3D, and "
 "the copy with sRGB disabled in 2D."
 msgstr ""
+"Pour contourner ce problème, faîtes une copie de la texture sur le système "
+"de fichiers et activez le sRGB sur une seule des copies. Utilisez la copie "
+"avec le sRGB activé en 3D, et la copie avec le sRGB désactivé en 2D."
 
 msgid "Process"
 msgstr "Traitement"
@@ -544,3 +561,7 @@ msgstr ""
 "Cette option ne s'applique qu'aux fichiers SVG. Elle permet de contrôler "
 "l'échelle de l'image SVG. L'échelle par défaut (1.0) fera en sorte que le "
 "SVG importé corresponde à l'échelle de conception originale."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

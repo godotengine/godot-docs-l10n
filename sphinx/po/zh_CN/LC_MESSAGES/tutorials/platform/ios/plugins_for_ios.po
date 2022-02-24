@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,7 +215,7 @@ msgstr ""
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has the following methods:"
-msgstr "游戏中心 API 可以通过 ``GameCenter`` 单例使用。它有以下方法："
+msgstr "Game Center API 可以通过“GameCenter”单例使用。它有以下方法："
 
 msgid "and the pending events interface:"
 msgstr "以及未决事件接口："
@@ -322,7 +322,7 @@ msgstr ""
 "Game Center 将显示聚合排行榜。"
 
 msgid "Examples:"
-msgstr "示例:"
+msgstr "示例："
 
 msgid "On close:"
 msgstr "关闭时："
@@ -331,14 +331,19 @@ msgid "Multi-platform games"
 msgstr "多平台游戏"
 
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
-"在开发多平台游戏时，您不会总是使用``GameCenter``单例(例如在PC或Android上运行"
-"时)。 因为gdscript编译器在编译时查找单例，所以不能只查询单例以查看和使用条件"
-"块中需要的内容，还需要将它们定义为有效标识符(局部变量或类成员)。 这是一个如何"
-"在类中解决此问题的示例:"
+"在开发多平台游戏时，您不会总是使用“GameCenter”单例（例如在 PC 或 Android 上运"
+"行时）。 因为 GDScript 编译器在编译时查找单例，所以不能只查询单例以查看和使用"
+"条件块中需要的内容，还需要将它们定义为有效标识符（局部变量或类成员）。 这是一"
+"个如何在类中解决此问题的示例："
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

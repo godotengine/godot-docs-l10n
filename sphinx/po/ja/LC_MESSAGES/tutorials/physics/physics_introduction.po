@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,7 +196,6 @@ msgstr ""
 "め、\\ ``position`` や ``linear velocity`` などのボディの状態変数の値は、現在"
 "のフレームに対して正確でない場合があります。"
 
-#, fuzzy
 msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
 "properties should be run in the :ref:`Node._physics_process() "
@@ -217,6 +216,8 @@ msgid ""
 "physics calculations, so that the game behaves correctly if you change the "
 "physics update rate or if the player's device can't keep up."
 msgstr ""
+"プレーヤーのデバイスが更新レートを維持できない場合でも状態の変更が適切に物理"
+"計算に反映されるように、常に ``delta`` パラメータを使うことを推奨します。"
 
 msgid "Collision layers and masks"
 msgstr "コリジョンレイヤーとマスク"
@@ -311,11 +312,16 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"関数が呼び出されるとレイヤーはビットマスクとして表すことができます。全レイ"
+"ヤーがデフォルト状態でオンの場合、レイヤーマスクは ``0x7fffffff`` で表されま"
+"す。コード中ではあなたの好みに応じて、レイヤーマスクをバイナリ・16進数・数値"
+"で記述できます。"
 
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
+"上記の1,3,4番目のレイヤーが有効な場合の、同等なコード例は次のようになります："
 
 msgid "Area2D"
 msgstr "\\ Area2D"
@@ -652,3 +658,7 @@ msgid ""
 msgstr ""
 "``move_and_slide()`` の使い方に関する詳細については、詳細なコードを含むデモプ"
 "ロジェクトを含んだ :ref:`doc_kinematic_character_2d` を参照してください。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

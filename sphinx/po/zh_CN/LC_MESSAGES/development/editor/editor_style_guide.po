@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 msgid ""
 "Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
 "guidelines outlined above."
-msgstr "除了上述准则外，尽量遵循 :ref:`doc_docs_writing_guidelines`。"
+msgstr "除了上述规范外，尽量遵循 :ref:`doc_docs_writing_guidelines`。"
 
 msgid "Button and menu texts"
 msgstr "按钮和菜单文本"
@@ -78,23 +78,23 @@ msgid "Capitalize text in buttons and menu actions:"
 msgstr "将按钮和菜单操作中的文本首字母大写："
 
 msgid "**Good:** *Open Editor Data Folder*"
-msgstr "**好：**\\ *Open Editor Data Folder*"
+msgstr "**良好：**\\ *Open Editor Data Folder*"
 
 msgid "**Bad:** *Open editor data folder*"
-msgstr "**坏：**\\ *Open editor data folder*"
+msgstr "**欠佳：**\\ *Open editor data folder*"
 
 msgid ""
 "If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
 msgstr "如果菜单操作打开了模式对话框，用省略号（\\ ``...``\\ ）作为后缀。"
 
 msgid "**Good:** *Editor Settings...*"
-msgstr "**好：**\\ *Editor Settings...*"
+msgstr "**良好：**\\ *Editor Settings...*"
 
 msgid "**Bad:** *Editor Settings*"
-msgstr "**坏：**\\ *Editor Settings*"
+msgstr "**欠佳：**\\ *Editor Settings*"
 
 msgid "Inspector sections"
-msgstr "检查器插件"
+msgstr "检查器部分"
 
 msgid ""
 "In general, don't create sections that contain less than 3 items. Sections "
@@ -131,8 +131,8 @@ msgid ""
 "**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
 "16x (Slower)*"
 msgstr ""
-"**MSAA 质量：**\\ *Disabled（Fastest）、2x（Fast）、4x （Average）、"
-"8x（Slow）、16x（Slower）*"
+"**MSAA 质量：**\\ *Disabled（Fastest）、2x（Fast）、4x （Average）、8x"
+"（Slow）、16x（Slower）*"
 
 msgid ""
 "**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
@@ -186,7 +186,11 @@ msgid ""
 msgstr "工具提示应遵循上述的书写风格。除此之外，要使用指示性而不是命令性："
 
 msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
-msgstr "**好：**\\ *Computes global illumination for the selected GIProbe.*"
+msgstr "**良好：**\\ *Computes global illumination for the selected GIProbe.*"
 
 msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
-msgstr "**差：**\\ *Compute global illumination for the selected GIProbe.*"
+msgstr "**欠佳：**\\ *Compute global illumination for the selected GIProbe.*"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

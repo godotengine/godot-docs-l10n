@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,6 @@ msgstr ""
 msgid "Technical choices"
 msgstr "技术选择"
 
-#, fuzzy
 msgid ""
 "The Godot editor is drawn using Godot's renderer and :ref:`UI system <toc-"
 "gui-basics>`. It does *not* rely on a toolkit such as GTK or Qt. This is "
@@ -57,10 +56,10 @@ msgid ""
 "easier to achieve a \"native\" appearance, they are also quite heavy and "
 "their licensing is not compatible with Godot's."
 msgstr ""
-"Godot 编辑器使用 Godot 的渲染器和 :ref:`UI 系统 <toc-learn-features-gui>`\\ "
-"绘制。它\\ *不*\\ 依赖 GTK 或 Qt 这样的工具包。这与 Blender 等软件的精神相"
-"似。虽然使用工具包可以更容易地实现“原生”外观，但它们也相当沉重，而且它们的许"
-"可与 Godot 的许可不兼容。"
+"Godot 编辑器使用 Godot 的渲染器和 :ref:`UI 系统 <toc-gui-basics>`\\ 绘制。它"
+"\\ *不*\\ 依赖 GTK 或 Qt 这样的工具包。这与 Blender 等软件的精神相似。虽然使"
+"用工具包可以更容易地实现“原生”外观，但它们相当笨重，许可也与 Godot 的许可不兼"
+"容。"
 
 msgid ""
 "The editor is fully written in C++. It can't contain any GDScript or C# code."
@@ -194,3 +193,7 @@ msgstr ""
 "为了快速迭代编辑器，我们建议建立一个测试项目，并在编译编辑器后\\ :ref:`从命令"
 "行打开 <doc_command_line_tutorial>`。这样，你就不必在每次启动 Godot 时都要经"
 "过项目管理器了。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

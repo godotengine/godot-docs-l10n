@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,6 +209,10 @@ msgstr "~2022 (voir ci-dessous)"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Axe de développement actuel (instable).*"
 
+#, fuzzy
+msgid "unstable"
+msgstr "Activer"
+
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
@@ -221,6 +225,10 @@ msgid ""
 msgstr ""
 "|supported| *Beta.* Reçoit de nouvelles fonctionnalités ainsi que des "
 "corrections de bogues pendant son développement."
+
+#, fuzzy
+msgid "supported"
+msgstr "Fichiers pris en charge"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -241,11 +249,14 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "Avril 2021"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|supported| Reçoit des correctifs de bogues, de sécurité et de prise en "
-"charge de plate-forme, et ainsi que d'utilisabilité rétro compatible."
+"|partial| Reçoit des corrections pour les problèmes de sécurité et de "
+"support de plate-forme uniquement."
+
+#, fuzzy
+msgid "partial"
+msgstr "Spatial"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -259,6 +270,10 @@ msgid ""
 msgstr ""
 "|eol| N'est plus pris en charge car remplacé par la version 3.3 compatible "
 "(dernière mise à jour : 3.2.3)."
+
+#, fuzzy
+msgid "eol"
+msgstr "el"
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -365,3 +380,7 @@ msgstr ""
 "nous visons une version ** 2022 **, mais une estimation plus précise sera "
 "probablement difficile à maintenir. Les versions alpha seront publiées dès "
 "que les principales fonctionnalités de Godot 4.0 seront finalisées."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

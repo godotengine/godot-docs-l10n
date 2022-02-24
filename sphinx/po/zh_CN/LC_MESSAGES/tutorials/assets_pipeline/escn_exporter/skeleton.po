@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
-"当在 Blender 导出时，网格不会被骨骼变形很重要。确保骨骼复位为其 T 型姿势或默"
+"当在 Blender 导出时，网格不会被骨骼变形很重要。确保骨架复位为其 T 型姿势或默"
 "认的放松姿势。"
 
 msgid "Bone Weights"
@@ -68,8 +68,8 @@ msgid ""
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
 "picture."
 msgstr ""
-"请注意, 通过启用 ``排除控制骨骼``, 可以将未形变骨骼配置为不导出；图片中显示了"
-"形变骨骼复选框."
+"请注意，通过启用 :code:`Exclude Control Bones` 可以将未形变骨骼配置为不导出；"
+"图片中显示了形变骨骼复选框。"
 
 msgid "Bone Attachment"
 msgstr "骨骼附件"
@@ -80,3 +80,7 @@ msgid ""
 msgstr ""
 "在 Blender 中，骨骼可以是对象的父对象；此关系将作为 Godot 场景中的 "
 "BoneAttachment 节点导出。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

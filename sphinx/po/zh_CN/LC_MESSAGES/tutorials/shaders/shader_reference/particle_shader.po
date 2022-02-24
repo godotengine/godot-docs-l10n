@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,8 +58,8 @@ msgid ""
 "Particle shaders are only available in the GLES3 backend. If you need "
 "particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
 msgstr ""
-"粒子着色器仅在GLES3后端中可用. 如果您需要在GLES2中使用粒子系统, 请使用 :ref:"
-"`CPUParticles <class_CPUParticles>`."
+"粒子着色器仅在 GLES3 后端中可用。如果您需要在 GLES2 中使用粒子系统，请使用 :"
+"ref:`CPUParticles <class_CPUParticles>`\\ 。"
 
 msgid "Render modes"
 msgstr "渲染模式"
@@ -80,7 +80,7 @@ msgid "**disable_force**"
 msgstr "**disable_force**"
 
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr "禁用吸引力.(目前在3.1版本中未实现)"
+msgstr "禁用吸引力。（目前在 3.1 版本中未实现）"
 
 msgid "**disable_velocity**"
 msgstr "**disable_velocity**"
@@ -163,46 +163,50 @@ msgstr "inout vec4 **CUSTOM**"
 
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr "自定义粒子数据. 可从网格着色器作为 **实例化_自定义** 访问."
+msgstr "自定义粒子数据。网格的着色器可以使用 **INSTANCE_CUSTOM** 访问。"
 
 msgid "inout mat4 **TRANSFORM**"
 msgstr "inout mat4 **TRANSFORM**"
 
 msgid "Particle transform."
-msgstr "粒子变换."
+msgstr "粒子变换。"
 
 msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
 
 msgid "Particle lifetime."
-msgstr "粒子寿命."
+msgstr "粒子寿命。"
 
 msgid "in float **DELTA**"
 msgstr "in float **DELTA**"
 
 msgid "Delta process time."
-msgstr "达美处理时间."
+msgstr "处理时间差。"
 
 msgid "in uint **NUMBER**"
 msgstr "in uint **NUMBER**"
 
 msgid "Unique number since emission start."
-msgstr "排放开始后的唯一编号."
+msgstr "发射开始后的唯一编号。"
 
 msgid "in int **INDEX**"
 msgstr "in int **INDEX**"
 
 msgid "Particle index (from total particles)."
-msgstr "颗粒指数(来自总颗粒)."
+msgstr "粒子索引（在所有粒子范围内）。"
 
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 msgid "Emitter transform (used for non-local systems)."
-msgstr "发射器变换(用于非本地系统)."
+msgstr "发射器变换（用于非本地坐标系）。"
 
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
-msgstr "随机种子被用作随机的基础."
+msgstr "随机种子，是随机的基础。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

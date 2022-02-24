@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,10 +340,10 @@ msgid ""
 "a name for your script alone will add it to the Inspector's creation dialog. "
 "This will auto-add your script to the Resource object you create."
 msgstr ""
-"스크립트 언어가 :ref:`스크립트 클래스 <doc_scripting_continued_class_name>`"
-"\\ 를 지원하는 경우 프로세스가 간소화됩니다. 스크립트 이름만 정의하면 인스펙"
-"터(Inspector)의 생성 대화 상자에 추가됩니다. 이렇게 하면 생성한 리소스 오브젝"
-"트에 스크립트가 자동으로 추가됩니다."
+"스크립트 언어가 :ref:`스크립트 클래스 "
+"<doc_scripting_continued_class_name>`\\ 를 지원하는 경우 프로세스가 간소화됩"
+"니다. 스크립트 이름만 정의하면 인스펙터(Inspector)의 생성 대화 상자에 추가됩"
+"니다. 이렇게 하면 생성한 리소스 오브젝트에 스크립트가 자동으로 추가됩니다."
 
 msgid "Let's see some examples."
 msgstr "몇 가지 예를 살펴보겠습니다."
@@ -357,8 +357,9 @@ msgid ""
 msgstr ""
 "리소스 스크립트는 Unity의 ScriptableObjects와 유사합니다. 인스펙터(Inspector)"
 "는 커스텀 리소스를 위한 내장 지원을 제공합니다. 원한다면 유저만의 Control 기"
-"반 도구 스크립트를 디자인하고 이를 :ref:`EditorPlugin <class_EditorPlugin>`"
-"\\ 과 결합해서 데이터에 대한 커스텀 시각화 및 에디터를 만들 수도 있습니다."
+"반 도구 스크립트를 디자인하고 이를 :ref:`EditorPlugin "
+"<class_EditorPlugin>`\\ 과 결합해서 데이터에 대한 커스텀 시각화 및 에디터를 "
+"만들 수도 있습니다."
 
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
@@ -416,3 +417,7 @@ msgstr ""
 "아래 예시에서, Godot는 ``Node`` 스크립트를 불러오고, ``Resource``\\ 를 확장"
 "(extend)하지 않는지 확인한 다음, 이 경우 타입이 호환되지 않으므로 스크립트가 "
 "Resource 오브젝트를 불러오는 데 실패했다고 판단합니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

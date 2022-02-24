@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,18 +65,18 @@ msgstr ""
 "Não se esqueça de configurar os filhos para que não possam ser selecionados, "
 "assim como você fez na cena Jogador."
 
+#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
-"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
-"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
-"box. This will ensure the mobs do not collide with each other."
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
+"ref:`CollisionObject2D <class_CollisionObject2D>` section, click the "
+"``Mask`` property and uncheck the first box. This will ensure the mobs do "
+"not collide with each other."
 msgstr ""
-"Nas propriedades de :ref:`RigidBody2D <class_RigidBody2D>`, configure "
-"``Gravity Scale`` (escala da gravidade) para ``0``, para que os inimigos não "
-"caiam para a parte de baixo da tela. Além disso, dentro da seção "
-"``PhysicsBody2D``, clique na propriedade ``Mask`` (máscara) e desmarque a "
-"primeira caixa. Isso vai garantir que o inimigos não colidam uns com os "
-"outros."
+"Nas propriedades :ref:`RigidBody2D <class_RigidBody2D>`, defina ``Gravity "
+"Scale`` para ``0``, para que o mob não caia. Além disso, na seção "
+"``PhysicsBody2D``, clique na propriedade ``Mask`` e desmarque a primeira "
+"caixa. Isso garantirá que os mobs não colidam uns com os outros."
 
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
@@ -189,3 +189,7 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

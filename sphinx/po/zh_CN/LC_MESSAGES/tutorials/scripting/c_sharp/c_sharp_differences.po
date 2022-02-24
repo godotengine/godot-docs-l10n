@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,11 +254,12 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
-"结构在C#中不能有无参数构造函数. 因此 ``new Basis()`` 将所有原始成员初始化为其"
-"默认值. 使用 ``Basis.Identity``, 相当于GDScript和C++中的 ``Basis()`` ."
+"结构体在 C# 中不能有无参数构造函数。因此 ``new Basis()`` 会将所有原始成员初始"
+"化为其默认值。使用 ``Basis.Identity`` 作为 GDScript 和 C++ 中的 ``Basis()`` "
+"的等价物。"
 
 msgid "The following method was converted to a property with a different name:"
-msgstr "以下方法已转换为具有不同名称的属性:"
+msgstr "以下方法已转换为具有不同名称的属性："
 
 msgid "``get_scale()``"
 msgstr "``get_scale()``"
@@ -501,3 +502,7 @@ msgstr "待完成"
 
 msgid "``inst2dict``"
 msgstr "``inst2dict``"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

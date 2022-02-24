@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,8 +123,8 @@ msgid ""
 "may be available through add-ons or may be available in core Godot in the "
 "future."
 msgstr ""
-"还有其他的遮挡技术, 如门, 自动PVS和基于光栅的遮挡剔除. 其中一些技术可以通过附"
-"加组件获得, 将来可能会在Godot核心中获得."
+"除了入口系统和手动操作之外，还有诸如基于光栅的遮挡剔除等剔除技术。其中有一些"
+"可以通过插件实现，有一些会在将来的 Godot 核心中实现。"
 
 msgid "Transparent objects"
 msgstr "透明物体"
@@ -282,3 +282,7 @@ msgstr ""
 "在大型世界中, 由于浮点错误, 也可能会出现渲染和物理故障, 你可能会使用一些技"
 "术, 比如将世界围绕着玩家的方向(而不是相反), 或者定期移动原点以保持以 "
 "``Vector3(0, 0, 0)`` 为中心."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

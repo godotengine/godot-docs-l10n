@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -721,8 +721,8 @@ msgstr ""
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
-"filters to all imported animations which have a name ending in ``\"_Loop"
-"\"``::"
+"filters to all imported animations which have a name ending in "
+"``\"_Loop\"``::"
 msgstr ""
 "O script deve começar com uma declaração de filtro de animação (como "
 "denotado pela linha começando com um ``@``). Por exemplo, se quisermos "
@@ -766,9 +766,9 @@ msgstr ""
 "uma regra de filtro mais para baixo no script do filtro."
 
 msgid ""
-"For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
-"\"Control\"``, unless they have ``\"Arm\"`` in their name::"
+"For example: include all tracks in animations with names ending in "
+"``\"_Loop\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end "
+"in ``\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 "Por exemplo: inclua todas as faixas nas animações com nomes que terminam em "
 "``''_Loop''``, mas descarte qualquer faixa que afete um ``''Skeleton''`` que "
@@ -1087,3 +1087,7 @@ msgid ""
 msgstr ""
 "No Blender, isso requer o uso do Editor NLA e nomear a Ação com o prefixo ou "
 "sufixo ``loop`` ou ``cycle``."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

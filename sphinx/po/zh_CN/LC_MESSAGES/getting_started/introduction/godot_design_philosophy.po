@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,10 +69,10 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
-"首先,Godot可以让你 **组合或聚合** 场景. 就像嵌套的预制件一样: 你可以创建"
-"BlinkingLight场景, 并创建使用BlinkingLight的BrokenLantern场景. 然后, 创建一个"
-"充满BrokenLanterns的城市. 更改BlinkingLight的颜色, 保存, 城市中的所有"
-"BrokenLantern都会立即更新."
+"首先，Godot 可以让你把场景\\ **组合或聚合**\\ 起来。这和嵌套的预制件是类似"
+"的：你可以创建 BlinkingLight 场景，并创建使用 BlinkingLight 的 BrokenLantern "
+"场景。然后，创建一个充满 BrokenLantern 的城市。更改 BlinkingLight 的颜色、保"
+"存，城市中的所有 BrokenLantern 都会立即更新。"
 
 msgid "On top of that, you can **inherit** from any scene."
 msgstr "更重要的是，你可以从任何场景\\ **继承**\\ 。"
@@ -101,6 +101,10 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
+#, fuzzy
+msgid "image0"
+msgstr "|image0|"
+
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -121,13 +125,16 @@ msgid "|image1|"
 msgstr "|image1|"
 
 #, fuzzy
+msgid "image1"
+msgstr "|image1|"
+
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"Sprite2D 属于 Node2D、CanvasItem、Node 类型。它具有三个父类的所有属性和功能，"
-"比如变换或者绘制自定义形状和使用自定义着色器渲染的能力。"
+"Sprite 属于 Node2D、CanvasItem、Node 类型。它具有三个父类的所有属性和功能，比"
+"如变换或者绘制自定义形状和使用自定义着色器渲染的能力。"
 
 msgid "All-inclusive package"
 msgstr "完善的工具集"
@@ -143,6 +150,10 @@ msgstr ""
 "载的功能."
 
 msgid "|image2|"
+msgstr "|image2|"
+
+#, fuzzy
+msgid "image2"
 msgstr "|image2|"
 
 msgid ""
@@ -161,30 +172,33 @@ msgid ""
 "developers and game designers, and they're tightly integrated in the engine "
 "and the editor."
 msgstr ""
-"这也是为什么 Godot 会提供自己的编程语言 GDscript 和 VisualScript 以及 C# 的部"
+"这也是为什么 Godot 会提供自己的编程语言 GDScript 和 VisualScript 以及 C# 的部"
 "分原因。它们是为满足游戏开发人员和游戏设计师的需求而设计的，并且被紧密集成在"
 "引擎和编辑器中。"
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
 "is also optimized for gameplay code with built-in types like Vectors and "
 "Colors."
 msgstr ""
-"GDscript使您可以使用类似Python的语法编写简单的代码, 但是它可以检测类型并提供"
-"静态语言的自动补全特质. 它还针对具有内置类型(如 ``Vectors`` 和 ``Colors`` )的"
-"游戏代码进行了优化."
+"GDScript 使您可以使用基于缩进的语法编写代码，但是它可以检测类型，提供质量接近"
+"静态语言的自动补全。它还针对使用 Vector、Color 等内置类型的游戏代码进行了优"
+"化。"
 
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
-"请注意, 使用GDNative, 你可以编写出使用类似C, C++, Rust或Python(使用Cython编译"
-"器)这类的编译语言编写的高性能代码, 而无需重新编译引擎."
+"请注意，使用GDNative，你可以编写出使用类似 C、C++、Rust、Python（使用 Cython "
+"编译器）这类的编译语言编写的高性能代码，无需重新编译引擎。"
 
 msgid "|image3|"
+msgstr "|image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "|image3|"
 
 msgid ""
@@ -192,8 +206,8 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
-"*VisualScript是一种基于节点的编程语言, 可以很好地集成到编辑器中. 你可以将节点"
-"或资源拖放到图中以创建新的代码块.*"
+"*VisualScript 是一种基于节点的编程语言，可以很好地集成到编辑器中。你可以将节"
+"点或资源拖放到图中以创建新的代码块。*"
 
 msgid ""
 "Note that the 3D workspace doesn't feature as many tools as the 2D "
@@ -202,12 +216,16 @@ msgid ""
 "extend the editor's functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
-"还请注意,3D工作区不像2D工作区那样有那么多工具. 你将需要使用外部的程序或插件来"
-"编辑地形, 给复杂的角色模型制作动画等.Godot提供了完整的API, 可以直接使用编写游"
-"戏的代码来扩展编辑器的功能. 参见下面的 `The Godot editor is a Godot game`_ "
-"Godot编辑器是一个Godot游戏."
+"请注意，3D 工作区不像 2D 工作区那样有那么多工具。你将需要使用外部的程序或插件"
+"来编辑地形，给复杂的角色模型制作动画等。Godot 提供了完整的 API，可以直接使用"
+"编写游戏的代码来扩展编辑器的功能。参见下面的 `Godot 编辑器是一个 Godot 游戏"
+"`_\\ 。"
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
@@ -293,10 +311,14 @@ msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"由于引擎为编辑器本身提供了动力, 因此这成就了可靠且灵活的UI系统. 使用 `` "
-"tool`` 关键字, 您就可以在编辑器中运行任何游戏代码."
+"由于引擎为编辑器本身提供了动力，因此这成就了可靠且灵活的 UI 系统。使用 "
+"``tool`` 关键字，您就可以在编辑器中运行任何游戏代码。"
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid ""
@@ -337,3 +359,7 @@ msgstr ""
 "Godot分别提供了独立的2D和3D渲染引擎. **2D场景的基本单位使用的是像素.** 即使引"
 "擎是分开的, 您依然可以在3D中渲染2D, 在2D中渲染3D, 也能在您的3D世界上叠加2D图"
 "片与界面."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

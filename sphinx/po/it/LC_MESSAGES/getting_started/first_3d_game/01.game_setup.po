@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,10 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
+#, fuzzy
+msgid "image1"
+msgstr "|image1|"
+
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
 "``squash_the_creeps_start/``. You can click the *Browse* button on the right "
@@ -51,10 +55,18 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
+#, fuzzy
+msgid "image2"
+msgstr "|image2|"
+
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr ""
 
 msgid "|image3|"
+msgstr "|image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "|image3|"
 
 msgid ""
@@ -63,6 +75,10 @@ msgid ""
 msgstr ""
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
@@ -86,6 +102,10 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #, fuzzy
+msgid "image5"
+msgstr "|image5|"
+
+#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on MacOS)."
@@ -104,6 +124,10 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
+#, fuzzy
+msgid "image6"
+msgstr "|image6|"
+
 msgid ""
 "A warning sign next to the *CollisionShape* appears because we haven't "
 "defined its shape. If you click the icon, a popup appears to give you more "
@@ -113,6 +137,10 @@ msgstr ""
 msgid "|image7|"
 msgstr "|image7|"
 
+#, fuzzy
+msgid "image7"
+msgstr "|image7|"
+
 msgid ""
 "To create a shape, with the *CollisionShape* selected, head to the "
 "*Inspector* and click the *[empty]* field next to the *Shape* property. "
@@ -120,6 +148,10 @@ msgid ""
 msgstr ""
 
 msgid "|image8|"
+msgstr "|image8|"
+
+#, fuzzy
+msgid "image8"
 msgstr "|image8|"
 
 msgid ""
@@ -138,6 +170,10 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
+#, fuzzy
+msgid "image9"
+msgstr "|image9|"
+
 msgid ""
 "In 3D, translation and size units are in meters. The box's total size is "
 "twice its extents: ``60`` by ``60`` meters on the ground plane and ``2`` "
@@ -154,12 +190,20 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
+#, fuzzy
+msgid "image10"
+msgstr "|image10|"
+
 msgid ""
 "In the *Inspector*, click on the field next to *Mesh* and create a "
 "*CubeMesh* resource to create a visible cube."
 msgstr ""
 
 msgid "|image11|"
+msgstr "|image11|"
+
+#, fuzzy
+msgid "image11"
 msgstr "|image11|"
 
 msgid ""
@@ -170,6 +214,10 @@ msgid ""
 msgstr ""
 
 msgid "|image12|"
+msgstr "|image12|"
+
+#, fuzzy
+msgid "image12"
 msgstr "|image12|"
 
 msgid ""
@@ -187,6 +235,10 @@ msgstr ""
 msgid "|image13|"
 msgstr "|image13|"
 
+#, fuzzy
+msgid "image13"
+msgstr "|image13|"
+
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
 "the *Select Mode* is active in the toolbar above the view."
@@ -195,14 +247,21 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
+#, fuzzy
+msgid "image14"
+msgstr "|image14|"
+
 msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
 "viewport tells you how much you're translating the node."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
+
+#, fuzzy
+msgid "image15"
+msgstr "|image15|"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
@@ -221,19 +280,29 @@ msgid ""
 "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
+
+#, fuzzy
+msgid "image16"
+msgstr "|image16|"
 
 #, fuzzy
 msgid "At this point, your project should look like this."
 msgstr "A questo punto, il tuo progetto dovrebbe assomigliare a questo."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
+
+#, fuzzy
+msgid "image17"
+msgstr "|image17|"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "
 "scene and base movement."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

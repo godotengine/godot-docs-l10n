@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Character animation"
-msgstr "L'animation"
+msgstr "Animation de personnage"
 
 msgid ""
 "In this final lesson, we'll use Godot's built-in animation tools to make our "
 "characters float and flap. You'll learn to design animations in the editor "
 "and use code to make your game feel alive."
 msgstr ""
+"Dans cette dernière leçon, nous utiliserons les outils d'animation intégrés "
+"de Godot pour faire flotter et battre nos personnages. Vous apprendrez à "
+"concevoir des animations dans l'éditeur et à utiliser le code pour donner "
+"vie à votre jeu."
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid "We'll start with an introduction to using the animation editor."
@@ -35,24 +42,32 @@ msgstr ""
 "Nous commencerons par une introduction à l'utilisation de l'éditeur "
 "d'animation."
 
-#, fuzzy
 msgid "Using the animation editor"
-msgstr "Utilisation de l’éditeur Web"
+msgstr "Utilisation de l'éditeur d'animation"
 
 msgid ""
 "The engine comes with tools to author animations in the editor. You can then "
 "use the code to play and control them at runtime."
 msgstr ""
+"Le moteur est livré avec des outils permettant de créer des animations dans "
+"l'éditeur. Vous pouvez ensuite utiliser le code pour les jouer et les "
+"contrôler au moment de l'exécution."
 
 msgid ""
 "Open the player scene, select the player node, and add an animation player "
 "node."
 msgstr ""
+"Ouvrez la scène du lecteur, sélectionnez le nœud du lecteur et ajoutez un "
+"nœud de lecteur d'animation."
 
 msgid "The *Animation* dock appears in the bottom panel."
-msgstr ""
+msgstr "Le dock *Animation* apparaît dans le panneau inférieur."
 
 msgid "|image1|"
+msgstr "|image1|"
+
+#, fuzzy
+msgid "image1"
 msgstr "|image1|"
 
 msgid ""
@@ -60,11 +75,18 @@ msgid ""
 "editor in the middle that's currently empty, and filter, snap, and zoom "
 "options at the bottom."
 msgstr ""
+"Il comporte une barre d'outils et le menu déroulant de l'animation en haut, "
+"un éditeur de piste au milieu qui est actuellement vide, et des options de "
+"filtre, d'accrochage et de zoom en bas."
 
 msgid "Let's create an animation. Click on *Animation -> New*."
-msgstr ""
+msgstr "Créons une animation. Cliquez sur *Animation -> Nouveau*."
 
 msgid "|image2|"
+msgstr "|image2|"
+
+#, fuzzy
+msgid "image2"
 msgstr "|image2|"
 
 msgid "Name the animation \"float\"."
@@ -73,25 +95,43 @@ msgstr "Nommez l'animation \"float\"."
 msgid "|image3|"
 msgstr "|image3|"
 
+#, fuzzy
+msgid "image3"
+msgstr "|image3|"
+
 msgid ""
 "Once you created the animation, the timeline appears with numbers "
 "representing time in seconds."
 msgstr ""
+"Une fois que vous avez créé l'animation, la ligne de temps apparaît avec des "
+"chiffres représentant le temps en secondes."
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
 "We want the animation to start playback automatically at the start of the "
 "game. Also, it should loop."
 msgstr ""
+"Nous voulons que l'animation commence à être lue automatiquement au début du "
+"jeu. Elle doit également tourner en boucle."
 
 msgid ""
 "To do so, you can click the button with an \"A+\" icon in the animation "
 "toolbar and the looping arrows, respectively."
 msgstr ""
+"Pour ce faire, vous pouvez cliquer sur le bouton avec une icône \"A+\" dans "
+"la barre d'outils d'animation et sur les flèches de bouclage, respectivement."
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid ""
@@ -99,39 +139,61 @@ msgid ""
 "right. This prevents it from folding when you click on the viewport and "
 "deselect the nodes."
 msgstr ""
+"Vous pouvez également épingler l'éditeur d'animation en cliquant sur l'icône "
+"d'épinglage en haut à droite. Cela permet d'éviter qu'il ne se replie "
+"lorsque vous cliquez sur la fenêtre d'affichage et désélectionnez les nœuds."
 
 msgid "|image6|"
+msgstr "|image6|"
+
+#, fuzzy
+msgid "image6"
 msgstr "|image6|"
 
 msgid ""
 "Set the animation duration to ``1.2`` seconds in the top-right of the dock."
 msgstr ""
+"Définissez la durée de l'animation à \"1,2\" seconde dans le coin supérieur "
+"droit du dock."
 
 msgid "|image7|"
+msgstr "|image7|"
+
+#, fuzzy
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
 "You should see the gray ribbon widen a bit. It shows you the start and end "
 "of your animation and the vertical blue line is your time cursor."
 msgstr ""
+"Vous devriez voir le ruban gris s'élargir un peu. Il vous montre le début et "
+"la fin de votre animation et la ligne bleue verticale est votre curseur "
+"temporel."
 
 msgid "|image8|"
 msgstr "|image8|"
 
 #, fuzzy
+msgid "image8"
+msgstr "|image8|"
+
 msgid ""
 "You can click and drag the slider in the bottom-right to zoom in and out of "
 "the timeline."
 msgstr ""
-"Vous pouvez basculer et tourner vos tuiles en utilisant les icônes en haut à "
-"droite de l'éditeur."
+"Vous pouvez cliquer et faire glisser le curseur en bas à droite pour "
+"effectuer un zoom avant ou arrière sur la ligne de temps."
 
 msgid "|image9|"
 msgstr "|image9|"
 
 #, fuzzy
+msgid "image9"
+msgstr "|image9|"
+
 msgid "The float animation"
-msgstr "L'animation"
+msgstr "L'animation du flottant"
 
 msgid ""
 "With the animation player node, you can animate most properties on as many "
@@ -140,34 +202,61 @@ msgid ""
 "value pair for the corresponding property. The keyframe gets inserted where "
 "your time cursor is in the timeline."
 msgstr ""
+"Avec le nœud animation player, vous pouvez animer la plupart des propriétés "
+"sur autant de nœuds que vous le souhaitez. Remarquez l'icône clé à côté des "
+"propriétés dans l'*Inspecteur*. Vous pouvez cliquer sur l'une d'entre elles "
+"pour créer une clé d'animation, une paire temps-valeur pour la propriété "
+"correspondante. La clé d'animation est insérée à l'endroit où se trouve "
+"votre curseur temporel dans la ligne de temps."
 
 msgid ""
 "Let's insert our first keys. Here, we will animate both the translation and "
 "the rotation of the *Character* node."
 msgstr ""
+"Insérons nos premières clés. Ici, nous allons animer à la fois la "
+"translation et la rotation du nœud *Character*."
 
 msgid ""
 "Select the *Character* and click the key icon next to *Translation* in the "
 "*Inspector*. Do the same for *Rotation Degrees*."
 msgstr ""
+"Sélectionnez le *Character* et cliquez sur l'icône clé à côté de "
+"*Translation* dans l'*Inspecteur*. Faites de même pour *Rotation Degrees*."
 
 msgid "|image10|"
+msgstr "|image10|"
+
+#, fuzzy
+msgid "image10"
 msgstr "|image10|"
 
 msgid ""
 "Two tracks appear in the editor with a diamond icon representing each "
 "keyframe."
 msgstr ""
+"Deux pistes apparaissent dans l'éditeur avec une icône en forme de diamant "
+"représentant chaque clés d'animation."
 
 msgid "|image11|"
+msgstr "|image11|"
+
+#, fuzzy
+msgid "image11"
 msgstr "|image11|"
 
 msgid ""
 "You can click and drag on the diamonds to move them in time. Move the "
 "translation key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
 msgstr ""
+"Vous pouvez cliquer et glisser sur les diamants pour les déplacer dans le "
+"temps. Déplacez la clé de translation sur ``0.2`` secondes et la clé de "
+"rotation sur ``0.1`` secondes."
 
 msgid "|image12|"
+msgstr "|image12|"
+
+#, fuzzy
+msgid "image12"
 msgstr "|image12|"
 
 msgid ""
@@ -175,16 +264,30 @@ msgid ""
 "timeline. In the *Inspector*, set the *Translation*'s *Y* axis to about "
 "``0.65`` meters and the *Rotation Degrees*' *X* axis to ``8``."
 msgstr ""
+"Déplacez le curseur temporel sur ``0.5`` secondes en cliquant et en faisant "
+"glisser sur la ligne de temps grise. Dans l'*Inspecteur*, réglez l'axe *Y* "
+"de *Translation* sur environ ``0.65`` mètres et l'axe *X* de *Rotation "
+"Degrees* sur ``8``."
 
 msgid "|image13|"
+msgstr "|image13|"
+
+#, fuzzy
+msgid "image13"
 msgstr "|image13|"
 
 msgid ""
 "Create a keyframe for both properties and shift the translation key to "
 "``0.7`` seconds by dragging it on the timeline."
 msgstr ""
+"Créez une clé d'animation pour les deux propriétés et déplacez la clé de "
+"translation à ``0.7`` secondes en la faisant glisser sur la ligne de temps."
 
 msgid "|image14|"
+msgstr "|image14|"
+
+#, fuzzy
+msgid "image14"
 msgstr "|image14|"
 
 msgid ""
@@ -194,21 +297,35 @@ msgid ""
 "principles. You want to offset and contrast in your character's motion to "
 "make them feel alive."
 msgstr ""
+"Un exposé sur les principes de l'animation dépasse le cadre de ce tutoriel. "
+"Notez simplement que vous ne voulez pas tout chronométrer et espacer "
+"uniformément. Les animateurs jouent plutôt avec le timing et l'espacement, "
+"deux principes fondamentaux de l'animation. Vous voulez décaler et "
+"contraster les mouvements de votre personnage pour qu'il semblent vivant."
 
 msgid ""
 "Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
 "the Y translation to about ``0.35`` and the X rotation to ``-9`` degrees. "
 "Once again, create a key for both properties."
 msgstr ""
+"Déplacez le curseur temporel à la fin de l'animation, à ``1.2`` secondes. "
+"Réglez la translation Y à environ ``0.35`` et la rotation X à ``-9`` degrés. "
+"Une fois encore, créez une clé pour les deux propriétés."
 
 msgid ""
 "You can preview the result by clicking the play button or pressing :kbd:"
 "`Shift + D`. Click the stop button or press :kbd:`S` to stop playback."
 msgstr ""
+"Vous pouvez prévisualiser le résultat en cliquant sur le bouton lecture ou "
+"en appuyant sur :kbd:`Shift + D`. Cliquez sur le bouton arrêt ou appuyez "
+"sur :kbd:`S` pour arrêter la lecture."
+
+msgid "|image15|"
+msgstr "|image15|"
 
 #, fuzzy
-msgid "|image15|"
-msgstr "|image1|"
+msgid "image15"
+msgstr "|image15|"
 
 msgid ""
 "You can see that the engine interpolates between your keyframes to produce a "
@@ -216,65 +333,102 @@ msgid ""
 "This is because the default interpolation is linear, causing constant "
 "transitions, unlike how living things move in the real world."
 msgstr ""
+"Vous pouvez voir que le moteur interpole entre vos clés d'animation pour "
+"produire une animation continue. Pour le moment, cependant, le mouvement "
+"semble très robotique. Cela est dû au fait que l'interpolation par défaut "
+"est linéaire, ce qui entraîne des transitions constantes, contrairement à la "
+"façon dont les êtres vivants se déplacent dans le monde réel."
 
 msgid "We can control the transition between keyframes using easing curves."
 msgstr ""
+"Nous pouvons contrôler la transition entre les clés d'animation à l'aide de "
+"courbes d'assouplissement."
 
 msgid ""
 "Click and drag around the first two keys in the timeline to box select them."
 msgstr ""
+"Cliquez et faites glisser autour des deux premières clés dans la ligne de "
+"temps pour les sélectionner."
+
+msgid "|image16|"
+msgstr "|image16|"
 
 #, fuzzy
-msgid "|image16|"
-msgstr "|image1|"
+msgid "image16"
+msgstr "|image16|"
 
 msgid ""
 "You can edit the properties of both keys simultaneously in the *Inspector*, "
 "where you can see an *Easing* property."
 msgstr ""
+"Vous pouvez modifier les propriétés des deux clés simultanément dans "
+"l'*Inspecteur*, où vous pouvez voir une propriété *Easing*."
+
+msgid "|image17|"
+msgstr "|image17|"
 
 #, fuzzy
-msgid "|image17|"
-msgstr "|image1|"
+msgid "image17"
+msgstr "|image17|"
 
 msgid ""
 "Click and drag on the curve, pulling it towards the left. This will make it "
 "ease-out, that is to say, transition fast initially and slow down as the "
 "time cursor reaches the next keyframe."
 msgstr ""
+"Cliquez et faites glisser sur la courbe, en la tirant vers la gauche. Cela "
+"cela fera un ease-out, c'est-à-dire un assouplissement rapide au départ qui "
+"ralentira lorsque le curseur temporel atteindra la clé d'animation suivante."
+
+msgid "|image18|"
+msgstr "|image18|"
 
 #, fuzzy
-msgid "|image18|"
-msgstr "|image1|"
+msgid "image18"
+msgstr "|image18|"
 
 msgid ""
 "Play the animation again to see the difference. The first half should "
 "already feel a bit bouncier."
 msgstr ""
+"Jouer l'animation pour voir la différence. La première moitié devrait déjà "
+"donner l'impression d'être un peu plus dynamique."
 
 msgid "Apply an ease-out to the second keyframe in the rotation track."
 msgstr ""
+"Appliquez un ease-out à la deuxième clé d'animation de la piste de la "
+"rotation."
+
+msgid "|image19|"
+msgstr "|image19|"
 
 #, fuzzy
-msgid "|image19|"
-msgstr "|image1|"
+msgid "image19"
+msgstr "|image19|"
 
 msgid ""
 "Do the opposite for the second translation keyframe, dragging it to the "
 "right."
 msgstr ""
+"Faites l'inverse pour la deuxième clé d'animation de translation, en la "
+"faisant glisser vers la droite."
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
 
 #, fuzzy
+msgid "image20"
+msgstr "|image20|"
+
 msgid "Your animation should look something like this."
-msgstr "Votre scène finale devrait ressembler à peu près à cela."
+msgstr "Votre animation devrait ressembler à quelque chose comme ceci."
+
+msgid "|image21|"
+msgstr "|image21|"
 
 #, fuzzy
-msgid "|image21|"
-msgstr "|image2|"
+msgid "image21"
+msgstr "|image21|"
 
 msgid ""
 "Animations update the properties of the animated nodes every frame, "
@@ -283,60 +437,88 @@ msgid ""
 "comes in handy: even though we animated the *Character*, we can still move "
 "and rotate the *Pivot* and layer changes on top of the animation in a script."
 msgstr ""
+"Les animations mettent à jour les propriétés des nœuds animés à chaque "
+"image, en remplaçant les valeurs initiales. Si nous animions directement le "
+"nœud *Player*, cela nous empêcherait de le déplacer dans le code. C'est là "
+"que le nœud *Pivot* s'avère utile : même si nous avons animé le *Character*, "
+"nous pouvons toujours déplacer et faire pivoter le *Pivot* et superposer les "
+"modifications à l'animation dans un script."
 
 msgid "If you play the game, the player's creature will now float!"
-msgstr ""
+msgstr "Maintenant si vous lancez au jeu, la créature du joueur flottera !"
 
 msgid ""
 "If the creature is a little too close to the floor, you can move the *Pivot* "
 "up to offset it."
 msgstr ""
+"Si la créature est un peu trop proche du sol, vous pouvez déplacer le "
+"*Pivot* vers le haut pour la décaler."
 
-#, fuzzy
 msgid "Controlling the animation in code"
-msgstr "Contrôle de l'animation"
+msgstr "Contrôler l'animation par le code"
 
 msgid ""
 "We can use code to control the animation playback based on the player's "
 "input. Let's change the animation speed when the character is moving."
 msgstr ""
+"Nous pouvons utiliser du code pour contrôler la lecture de l'animation en "
+"fonction des entrées du joueur. Modifions la vitesse de l'animation lorsque "
+"le personnage se déplace."
 
 msgid "Open the *Player*'s script by clicking the script icon next to it."
 msgstr ""
+"Ouvrez le script du *Player* en cliquant sur l'icône de script à côté de lui."
+
+msgid "|image22|"
+msgstr "|image22|"
 
 #, fuzzy
-msgid "|image22|"
-msgstr "|image2|"
+msgid "image22"
+msgstr "|image22|"
 
 msgid ""
 "In ``_physics_process()``, after the line where we check the ``direction`` "
 "vector, add the following code."
 msgstr ""
+"Dans ``_physics_process()``, après la ligne où nous vérifions le vecteur "
+"``direction``, ajoutez le code suivant."
 
 msgid ""
 "This code makes it so when the player moves, we multiply the playback speed "
 "by ``4``. When they stop, we reset it to normal."
 msgstr ""
+"Ce code fait en sorte que lorsque le joueur se déplace, nous multiplions la "
+"vitesse de lecture par ``4``. Lorsqu'il s'arrête, nous la remettons à la "
+"normale."
 
 msgid ""
 "We mentioned that the pivot could layer transforms on top of the animation. "
 "We can make the character arc when jumping using the following line of code. "
 "Add it at the end of ``_physics_process()``."
 msgstr ""
+"Nous avons mentionné que le pivot pouvait superposer des transformations à "
+"l'animation. Nous pouvons faire en sorte que le personnage fasse un arc "
+"lorsqu'il saute en utilisant la ligne de code suivante. Ajoutez-la à la fin "
+"de ``_physics_process()``."
 
-#, fuzzy
 msgid "Animating the mobs"
-msgstr "Animation d'un poisson"
+msgstr "Animer les mobs"
 
 msgid ""
 "Here's another nice trick with animations in Godot: as long as you use a "
 "similar node structure, you can copy them to different scenes."
 msgstr ""
+"Voici une autre astuce intéressante avec les animations dans Godot : tant "
+"que vous utilisez une structure de nœuds similaire, vous pouvez les copier "
+"dans différentes scènes."
 
 msgid ""
 "For example, both the *Mob* and the *Player* scenes have a *Pivot* and a "
 "*Character* node, so we can reuse animations between them."
 msgstr ""
+"Par exemple, les scènes *Mob* et *Player* ont toutes deux un nœud *Pivot* et "
+"un nœud *Character*, de sorte que nous pouvons réutiliser les animations "
+"entre elles."
 
 msgid ""
 "Open the *Mob* scene, select the animation player node and open the float "
@@ -344,15 +526,23 @@ msgid ""
 "open its animation player. Click *Animation -> Paste*. That's it; all "
 "monsters will now play the float animation."
 msgstr ""
+"Ouvrez la scène *Mob*, sélectionnez le nœud du lecteur d'animation et ouvrez "
+"l'animation flottante. Ensuite, cliquez sur *Animation -> Copie*. Ensuite, "
+"ouvrez ``Player.tscn`` et ouvrez son lecteur d'animation. Cliquez sur "
+"*Animation -> Coller*. C'est tout ; tous les monstres joueront maintenant "
+"l'animation flottante."
 
 msgid ""
 "We can change the playback speed based on the creature's ``random_speed``. "
 "Open the *Mob*'s script and at the end of the ``initialize()`` function, add "
 "the following line."
 msgstr ""
+"Nous pouvons modifier la vitesse de lecture en fonction de la "
+"``random_speed`` de la créature. Ouvrez le script du *Mob* et à la fin de la "
+"fonction ``initialize()``, ajoutez la ligne suivante."
 
 msgid "And with that, you finished coding your first complete 3D game."
-msgstr ""
+msgstr "Et avec cela, vous avez fini de coder votre premier jeu 3D complet."
 
 msgid "**Congratulations**!"
 msgstr "**Félicitations** !"
@@ -362,9 +552,17 @@ msgid ""
 "links to keep learning more. But for now, here are the complete ``Player."
 "gd`` and ``Mob.gd`` so you can check your code against them."
 msgstr ""
+"Dans la prochaine partie, nous récapitulerons rapidement ce que vous avez "
+"appris et vous donnerons quelques liens pour continuer à en apprendre "
+"davantage. Mais pour l'instant, voici l'intégralité des ``Player.gd`` et "
+"``Mob.gd`` afin que vous puissiez vérifier votre code par rapport à eux."
 
 msgid "Here's the *Player* script."
-msgstr ""
+msgstr "Voici le script *Player*."
 
 msgid "And the *Mob*'s script."
-msgstr ""
+msgstr "Et le script *Mob*."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating the player scene"
-msgstr "Créer la scène balle"
+msgstr "Création de la scène joueur"
 
 msgid ""
 "With the project settings in place, we can start working on the player-"
 "controlled character."
 msgstr ""
+"Avec les paramètres du projet en place, nous pouvons commencer à travailler "
+"sur le personnage contrôlé par le joueur."
 
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
@@ -63,10 +64,10 @@ msgid ""
 "functionality."
 msgstr ""
 "Avec ``Area2D``, nous pouvons détecter les objets qui chevauchent ou "
-"heurtent le joueur. Changez le nom du nœud en ``Player`` en double-cliquant "
-"sur son nom. Maintenant que nous avons défini le nœud racine de la scène, "
-"nous pouvons ajouter des nœuds supplémentaires pour lui donner plus de "
-"fonctionnalités."
+"rentrent en collision le joueur. Changez le nom du nœud en ``Player`` en "
+"double-cliquant sur son nom. Maintenant que nous avons défini le nœud racine "
+"de la scène, nous pouvons ajouter des nœuds supplémentaires pour lui donner "
+"plus de fonctionnalités."
 
 msgid ""
 "Before we add any children to the ``Player`` node, we want to make sure we "
@@ -98,23 +99,21 @@ msgstr ""
 "les fonctions utilisent snake_case, et les constantes utilisent ALL_CAPS "
 "(Voir :ref:`doc_gdscript_styleguide`)."
 
-#, fuzzy
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
 "`doc_c_sharp_styleguide`). Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
-"**C#** : Les classes, les variables d'exportation et les méthodes utilisent "
+"**C#** : Les classes, les variables d'exportation et les méthodes utilisent "
 "PascalCase, les attributs privés utilisent _camelCase, les variables locales "
-"et les paramètres utilisent camelCase (Voir :ref:`doc_c_sharp_styleguide`). "
+"et les paramètres utilisent camelCase (Voir :ref:`doc_c_sharp_styleguide`). "
 "Attention à taper les noms des méthodes précisément lorsque vous connectez "
 "des signaux."
 
 msgid "Sprite animation"
 msgstr "Animation du sprite"
 
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -152,7 +151,6 @@ msgstr ""
 "``playerGrey_walk[1/2]``, dans le côté \"Animation Frames\" du panneau pour "
 "l'animation correspondante :"
 
-#, fuzzy
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -164,7 +162,6 @@ msgstr ""
 "propriété ``Scale`` sur ``(0.5, 0.5)``. Vous pouvez la trouver dans "
 "l'Inspecteur sous la catégorie ``Node2D``."
 
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -192,3 +189,10 @@ msgid ""
 "it. Then, we'll set up collision detection to know when the player got hit "
 "by something."
 msgstr ""
+"Dans la prochaine partie, nous ajouterons un script sur le nœud du joueur "
+"pour le déplacer et l'animer. Ensuite, nous mettrons en place une détection "
+"de collisions pour savoir quand le joueur a été touché par quelque chose."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

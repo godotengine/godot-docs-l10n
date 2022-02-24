@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,20 +20,17 @@ msgstr ""
 msgid "Plugins for iOS"
 msgstr "Plugins pour iOS"
 
-#, fuzzy
 msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
 "are using same model of asynchronous calls explained below."
 msgstr ""
-"Pour le moment, Godot fournit les plugins de services StoreKit, GameCenter, "
-"iCloud. Ils utilisent le même modèle d'appels asynchrones expliqué ci-"
-"dessous."
+"Godot fournit StoreKit, GameCenter, les services iCloud et d'autres plugins. "
+"Ils utilisent le même modèle d'appels asynchrones expliqué ci-dessous."
 
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 "Les accès ARKit et Camera sont également fournis sous forme de plugins."
 
-#, fuzzy
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
@@ -132,10 +129,8 @@ msgstr ""
 "L'API du Store Kit est accessible par le singleton ``InAppStore``. Il est "
 "initialisé automatiquement."
 
-#, fuzzy
 msgid "The following methods are available and documented below:"
-msgstr ""
-"Les méthodes suivantes sont utilisées pour implémenter la présentation :"
+msgstr "Les méthodes suivantes sont disponibles et documentées ci-dessous :"
 
 msgid "``purchase``"
 msgstr "``purchase``"
@@ -150,13 +145,12 @@ msgstr ""
 msgid "Parameters"
 msgstr "Paramètres"
 
-#, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product ID. Example:"
 msgstr ""
-"Prend un dictionnaire comme paramètre, avec un champ, ``product_id``, une "
-"chaîne de caractère(string) avec votre identifiant de produit. Exemple :"
+"Prend un dictionnaire comme paramètre, avec un champ, ``product_id``, un "
+"string avec votre ID de produit. Exemple :"
 
 msgid "Response event"
 msgstr "Événement de réponse"
@@ -178,33 +172,30 @@ msgstr ""
 "Demande l'information sur le produit dans une liste d'identifiants de "
 "produits."
 
-#, fuzzy
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
 "which a string array of product IDs is assigned. Example:"
 msgstr ""
-"Prend un dictionnaire comme paramètre, avec un champ, ``product_ids``, un "
-"tableau de chaînes de caractères avec une liste d'identifiants de produits. "
-"Exemple :"
+"Prend un dictionnaire comme paramètre, avec une seule clé ``product_ids`` à "
+"laquelle un string array d'IDs de produits est attribué. Exemple :"
 
 msgid "``restore_purchases``"
 msgstr "``restore_purchases``"
 
-#, fuzzy
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
 "Restaure les achats effectués précédemment sur le compte de l'utilisateur. "
-"Cela créera des événements de réponse pour chaque identifiant de produit "
-"acheté précédemment."
+"Cela créera des événements de réponse pour chaque ID de produit acheté "
+"précédemment."
 
 msgid "The response events will be dictionaries with the following fields:"
 msgstr ""
 "Les événements de réponse seront des dictionnaires avec les champs suivants :"
 
 msgid "``set_auto_finish_transaction``"
-msgstr ""
+msgstr "``set_auto_finish_transaction``"
 
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
@@ -240,7 +231,6 @@ msgstr ""
 "godotengine/godot-ios-plugins/blob/master/plugins/gamecenter/game_center."
 "mm>`_."
 
-#, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has the following methods:"
@@ -263,7 +253,6 @@ msgstr "``post_score``"
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "Affiche un score dans le classement du Game Center."
 
-#, fuzzy
 msgid "Takes a dictionary as a parameter, with two fields:"
 msgstr "Prend un dictionnaire comme paramètre, avec deux champs :"
 
@@ -373,12 +362,13 @@ msgid "Multi-platform games"
 msgstr "Jeux multi-plateformes"
 
 msgid ""
-"When working on a multi-platform game, you won't always have the \"GameCenter"
-"\" singleton available (for example when running on PC or Android). Because "
-"the gdscript compiler looks up the singletons at compile time, you can't "
-"just query the singletons to see and use what you need inside a conditional "
-"block, you need to also define them as valid identifiers (local variable or "
-"class member). This is an example of how to work around this in a class:"
+"When working on a multi-platform game, you won't always have the "
+"\"GameCenter\" singleton available (for example when running on PC or "
+"Android). Because the gdscript compiler looks up the singletons at compile "
+"time, you can't just query the singletons to see and use what you need "
+"inside a conditional block, you need to also define them as valid "
+"identifiers (local variable or class member). This is an example of how to "
+"work around this in a class:"
 msgstr ""
 "Lorsque vous travaillez sur un jeu multi-plateforme, vous n'aurez pas "
 "toujours le singleton \"GameCenter\" à disposition (par exemple lorsque vous "
@@ -388,3 +378,7 @@ msgstr ""
 "l'intérieur d'un bloc conditionnel, vous devez également les définir comme "
 "des identifiants valides (variable locale ou membre de classe). Voici un "
 "exemple de la manière de contourner ce problème dans une classe :"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

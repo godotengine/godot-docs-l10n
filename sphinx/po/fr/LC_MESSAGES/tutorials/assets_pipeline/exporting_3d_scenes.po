@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,13 +30,23 @@ msgid ""
 "such as a CSG mesh blockout for a level, export it to clean it up in a "
 "program such as Blender, and then bring it back into Godot."
 msgstr ""
+"Dans Godot il est possible d'exporter des scènes 3D en tant que fichier glTF "
+"2.0. Vous pouvez exporter un binaire glTF (fichier ``.glb``) ou un glTF avec "
+"textures intégrées (``gltf`` + ``.bin`` + textures). Cela vous permet de "
+"créer des scènes dans Godot, comme un blockout de modèles CSG pour un "
+"niveau, de l'exporter pour le nettoyer dans un programme tel que Blender, "
+"puis le ramener dans Godot."
 
 msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
 msgstr ""
+"Seul Blender 2.83 et plus récent peuvent importer des fichiers glTF exportés "
+"par Godot."
 
 msgid ""
 "To export a scene in the editor go to **Project > Tools > Export GLTF...**"
 msgstr ""
+"Pour exporter une scène dans l'éditeur, allez dans **Projet > Outils > "
+"Exporter en GLTF...**"
 
 msgid "Limitations"
 msgstr "Limites"
@@ -48,12 +58,19 @@ msgid ""
 "No support for exporting particles since their implementation varies across "
 "engines."
 msgstr ""
+"Pas de support pour l'exportation de particules puisque leur implémentation "
+"varie selon les moteurs."
 
 msgid "ShaderMaterials cannot be exported."
-msgstr ""
+msgstr "Les ShaderMaterials ne peuvent pas être exportés."
 
 msgid "No support for exporting 2D scenes."
 msgstr "Pas de support pour l'exportation de scènes 2D."
 
 msgid "Only supported in editor builds (``tools=yes``)."
 msgstr ""
+"Uniquement pris en charge dans les versions avec éditeur (``tools=yes``)."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

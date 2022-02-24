@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,10 +51,10 @@ msgid "Score, changed by ``ScoreTimer``."
 msgstr "得分，由 ``ScoreTimer`` 更改。"
 
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
-msgstr "消息，例如 ``Game Over`` 或 ``Get Ready！``"
+msgstr "消息，例如“Game Over”或“Get Ready!”"
 
 msgid "A \"Start\" button to begin the game."
-msgstr "``Start开始`` 按钮来开始游戏。"
+msgstr "“Start”按钮来开始游戏。"
 
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
@@ -86,34 +86,33 @@ msgid ""
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
-"点击 ``ScoreLabel`` 并在属性检查器的 ``Text`` 字段中键入一个数字。 "
-"``Control`` 节点的默认字体很小，不能很好地缩放。游戏素材包中有一个字体文件"
-"( ``Xolonium-Regular.ttf`` )。 要使用此字体，需要执行以下操作："
+"点击 ``ScoreLabel`` 并在“检查器”的 ``Text`` 字段中键入一个数字。 ``Control`` "
+"节点的默认字体很小，不能很好地缩放。游戏素材包中有一个叫作“Xolonium-Regular."
+"ttf”的字体文件。 使用此字体需要执行以下操作："
 
 #, fuzzy
-msgid "Under \"Custom Fonts\", choose \"New Font\""
-msgstr "在 \"Custom Fonts\" 的下拉选项中，选择 ``新建DynamicFont``"
+msgid "Under \"Theme Overrides/Fonts/Font\", choose \"New DynamicFont\""
+msgstr "在“Custom Fonts”中，选择“新建 Font”"
 
 #, fuzzy
 msgid ""
-"Click on the \"Font\" you added, and under \"Font/Data/0\", choose \"Load\" "
-"and select the \"Xolonium-Regular.ttf\" file."
+"Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
+"\"Load\" and select the \"Xolonium-Regular.ttf\" file."
 msgstr ""
-"点击您添加的“DynamicFont”，然后在“Font/Font Data”的下拉选项中选择“加载”并选"
-"择“Xolonium-Regular.ttf”文件。您还必须设置字体的 ``Size``\\ 。设置为 ``64`` "
-"就可以。"
+"点击您添加的“Font”，然后在“Font/Data/0”的下拉选项中选择“加载”并选择“Xolonium-"
+"Regular.ttf”文件。"
 
 #, fuzzy
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes. Set \"Custom Font Size\" property of "
-"the ``ScoreLabel``. A setting of ``64`` works well."
+"place on the other two Control nodes. Set \"Size\" property of the "
+"\"DynamicFont\" under \"Settings/Size\". A setting of ``64`` works well."
 msgstr ""
-"在 ``ScoreLabel`` 上完成此操作后，可以单击 DynamicFont 属性旁边的向下箭头，然"
-"后选择“复制”，然后将其“粘贴”到其他两个 Control 节点的相同位置。"
+"在 ``ScoreLabel`` 上完成此操作后，可以单击 Font 属性旁边向下的箭头，然后选"
+"择“复制”，然后将其“粘贴”到其他两个 Control 节点的相同位置。设置 "
+"``ScoreLabel`` 的“Custom Font Size”属性，把它设成 ``64`` 即可。"
 
-#, fuzzy
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -121,10 +120,9 @@ msgid ""
 "you move or resize a control node. They represent the distance from the "
 "control node's edges to its anchor."
 msgstr ""
-"**锚点和边距：**\\ ``Control`` 节点有一个位置和大小，但它也有锚和边距。锚点定"
-"义了原点与节点边缘的参考点。当你移动或调整控制节点的大小时，边距会自动更新。"
-"它们表示从控制节点的边缘到其锚点的距离。更多细节请参见 :ref:"
-"`doc_design_interfaces_with_the_control_nodes`。"
+"**锚点和边距：**\\ ``Control`` 节点具有位置和大小，但它也有锚点（Anchor）和边"
+"距（Margin）。锚点定义的是原点——节点边缘的参考点。移动或调整控件节点大小时，"
+"边距会自动更新。边距表示的是控件节点的边缘与锚点的距离。"
 
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
@@ -301,13 +299,12 @@ msgstr ""
 "找到节点的信号）。 点击“信号”旁边的“分组”，然后可以输入新的组名称，点击“添"
 "加”。"
 
-#, fuzzy
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``new_game()`` function in ``Main``:"
 msgstr ""
-"现在，所有怪物都将属于“mobs”（怪物）组。我们可以将以下行添加到 ``Main`` 中的 "
-"``game_over()`` 函数中："
+"现在，所有小怪都将属于“mobs”（小怪）分组。我们可以将以下行添加到 ``Main`` 中"
+"的 ``new_game()`` 函数中："
 
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
@@ -320,3 +317,9 @@ msgid ""
 "polish it a bit by adding a background, looping music, and some keyboard "
 "shortcuts."
 msgstr ""
+"游戏在这一点上大部分已经完成。在下一部分和最后一部分中，我们将通过添加背景，"
+"循环音乐和一些键盘快捷键来对其进行一些润色。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

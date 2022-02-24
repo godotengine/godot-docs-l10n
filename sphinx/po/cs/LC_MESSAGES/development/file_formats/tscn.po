@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,8 +118,8 @@ msgstr ""
 
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 msgid "Other valid keywords include:"
@@ -258,8 +258,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 msgid ""
@@ -307,8 +307,8 @@ msgid "ArrayMesh"
 msgstr ""
 
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 msgid "TSCN files support two surface formats:"
@@ -447,3 +447,7 @@ msgid ""
 "rotation quaternion (X, Y, Z, W) and finally a 3-number scale vector. The "
 "default transition in a Transform track is 1.0."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

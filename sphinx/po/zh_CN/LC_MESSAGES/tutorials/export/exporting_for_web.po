@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,8 +55,8 @@ msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
 "or WebGL 2.0 (*GLES3*)."
 msgstr ""
-"根据你对渲染器的选择，Godot可以面向WebGL 1.0（*GLES2*）或WebGL "
-"2.0（*GLES3*）。"
+"根据你对渲染器的选择，Godot可以面向WebGL 1.0（*GLES2*）或WebGL 2.0"
+"（*GLES3*）。"
 
 msgid ""
 "WebGL 1.0 is the recommended option if you want your project to be supported "
@@ -216,9 +216,8 @@ msgstr ""
 "方法 ``OS.is_userfs_persistent()`` 可用于检查 ``user://`` 文件系统是否持久, "
 "但在某些情况下会误报."
 
-#, fuzzy
 msgid "Background processing"
-msgstr "后台加载"
+msgstr "后台处理"
 
 msgid ""
 "The project will be paused by the browser when the tab is no longer the "
@@ -228,12 +227,18 @@ msgid ""
 "cause networked games to disconnect if the user switches tabs for a long "
 "duration."
 msgstr ""
+"这个标签页不再是用户浏览器的活动标签页时，项目就会被浏览器暂停。也就是说不会"
+"运行 ``_process()``\\ 、\\ ``_physics_process()`` 等函数，除非用户重新激活了"
+"这个标签页（切换到这个标签页）。如果用户在标签页外停留了过长的时间，就可能造"
+"成网络游戏的掉线。"
 
 msgid ""
 "This limitation does not apply to unfocused browser *windows*. Therefore, on "
 "the user's side, this can be worked around by running the project in a "
 "separate *window* instead of a separate tab."
 msgstr ""
+"这一限制不适用于丢失焦点的浏览器\\ *窗口*\\ 。因此，对于用户而言，变通方法是"
+"让项目运行在一个单独的\\ *窗口*\\ 中，而不是标签页。"
 
 msgid "Threads"
 msgstr "线程"
@@ -246,16 +251,15 @@ msgstr ""
 "如前所述 :ref:`以上 <doc_javascript_export_options>` 多线程只有在设置了适当"
 "的 **导出类型** 的情况下才可用，而且对跨浏览器的支持仍然有限。"
 
-#, fuzzy
 msgid ""
 "Requires a :ref:`secure context <doc_javascript_secure_contexts>`. Browsers "
 "also require that the web page is served with specific `cross-origin "
 "isolation headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/"
 "Cross-Origin-Embedder-Policy>`__."
 msgstr ""
-"需要一个 :ref:`安全上下文 <doc_javascript_secure_contexts>`\\ 。浏览器也开始"
-"要求在提供网页时要有特定的\\ `跨源隔离头 <https://developer.mozilla.org/en-"
-"US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__\\ 。"
+"需要\\ :ref:`安全上下文 <doc_javascript_secure_contexts>`\\ 。浏览器也要求在"
+"提供网页时要有特定的\\ `跨源隔离标头 <https://developer.mozilla.org/zh-CN/"
+"docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__\\ 。"
 
 msgid "GDNative"
 msgstr "GDNative"
@@ -559,3 +563,7 @@ msgid ""
 msgstr ""
 "``eval`` 方法也接受第二个可选的布尔参数，它指定是否在全局执行上下文中执行代"
 "码，默认为 ``false`` 以防止污染全局命名空间： ::"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

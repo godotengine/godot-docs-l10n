@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,6 +195,10 @@ msgstr "~ 2022 (viz níže)"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Aktuální zaměření vývoje (nestabilní).*"
 
+#, fuzzy
+msgid "unstable"
+msgstr "Povolit"
+
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
@@ -205,6 +209,10 @@ msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
 msgstr "|Podporováno| *Beta.* Během vývoje získává nové funkce i opravy chyb."
+
+#, fuzzy
+msgid "supported"
+msgstr "Podporované soubory"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -225,11 +233,13 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "Duben 2021"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|podporováno| Obdrží opravy chyb, zabezpečení a problémů s podporou "
-"platforem, jakož i zpětně kompatibilní vylepšení použitelnosti."
+"|částečné| Obdrží pouze opravy týkající se zabezpečení a podpory platformy."
+
+#, fuzzy
+msgid "partial"
+msgstr "Částice"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -243,6 +253,9 @@ msgid ""
 msgstr ""
 "|eol| Již není podporována, protože byla plně nahrazena kompatibilní verzí "
 "3.3 (poslední aktualizace: 3.2.3)."
+
+msgid "eol"
+msgstr ""
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -347,3 +360,7 @@ msgstr ""
 "v roce **2022**, ale jakýkoli bližší odhad bude pravděpodobně těžké dodržet. "
 "Alfa sestavení budou zveřejněna, jakmile budou dokončeny hlavní funkce "
 "Godotu 4.0."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,9 @@ msgstr ""
 msgid "Platform name."
 msgstr "Nome della piattaforma."
 
+#, fuzzy
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "Architettura della piattaforma (64 bit o 32 bit, x86 o ARM)."
 
 msgid "Platform type (desktop, mobile, Web)."
 msgstr ""
@@ -75,14 +76,16 @@ msgstr "**Descrizione**"
 msgid "**Android**"
 msgstr "**Android**"
 
+#, fuzzy
 msgid "Running on Android"
-msgstr ""
+msgstr "In esecuzione su Android"
 
 msgid "**HTML5**"
 msgstr "**HTML5**"
 
+#, fuzzy
 msgid "Running on HTML5"
-msgstr ""
+msgstr "In esecuzione su HTML5"
 
 msgid "**JavaScript**"
 msgstr "**JavaScript**"
@@ -93,32 +96,37 @@ msgstr ""
 msgid "**OSX**"
 msgstr "**OSX**"
 
+#, fuzzy
 msgid "Running on macOS"
-msgstr ""
+msgstr "In esecuzione su macOS"
 
 msgid "**iOS**"
 msgstr "**iOS**"
 
+#, fuzzy
 msgid "Running on iOS"
-msgstr ""
+msgstr "In esecuzione su iOS"
 
 msgid "**UWP**"
 msgstr "**UWP**"
 
+#, fuzzy
 msgid "Running on UWP"
-msgstr ""
+msgstr "In esecuzione su UWP"
 
 msgid "**Windows**"
 msgstr "**Windows**"
 
+#, fuzzy
 msgid "Running on Windows"
-msgstr ""
+msgstr "In esecuzione su Windows"
 
 msgid "**X11**"
 msgstr "**X11**"
 
+#, fuzzy
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "In esecuzione su X11 (desktop Linux/BSD)"
 
 msgid "**Server**"
 msgstr "**Server**"
@@ -129,27 +137,31 @@ msgstr ""
 msgid "**debug**"
 msgstr "**debug**"
 
+#, fuzzy
 msgid "Running on a debug build (including the editor)"
-msgstr ""
+msgstr "Esecuzione su una build di debug (incluso l'editor)"
 
 msgid "**release**"
 msgstr "**release**"
 
+#, fuzzy
 msgid "Running on a release build"
-msgstr ""
+msgstr "In esecuzione su una build di rilascio"
 
 msgid "**editor**"
 msgstr "**editor**"
 
+#, fuzzy
 msgid "Running on an editor build"
-msgstr ""
+msgstr "In esecuzione su una build dell'editor"
 
 #, fuzzy
 msgid "**standalone**"
 msgstr "**standalone**"
 
+#, fuzzy
 msgid "Running on a non-editor build"
-msgstr ""
+msgstr "In esecuzione su una build non editor"
 
 msgid "**64**"
 msgstr "**64**"
@@ -181,7 +193,6 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr ""
 
-#, fuzzy
 msgid "**arm**"
 msgstr "**arm**"
 
@@ -282,3 +293,7 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

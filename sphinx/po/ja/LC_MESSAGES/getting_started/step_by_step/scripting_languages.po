@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,16 @@ msgid ""
 "in Godot. You will learn the pros and cons of each option. In the next part, "
 "you will write your first script using GDScript."
 msgstr ""
+"このレッスンではGodotで使用できるスクリプト言語の概要をお伝えします。それぞれ"
+"の長所と短所も学習できます。次のパートではGDScriptを使って最初のスクリプトを"
+"書いていきます。"
 
 msgid ""
 "**Scripts attach to a node and extend its behavior**. This means that "
 "scripts inherit all functions and properties of the node they attach to."
 msgstr ""
+"**スクリプトはノードに接続され、ノードの振る舞いを拡張するもの** です。これは"
+"接続されるノードの関数とプロパティすべてを継承することを意味します。"
 
 msgid ""
 "For example, take a game where a Camera2D node follows a ship. The Camera2D "
@@ -283,13 +288,22 @@ msgid ""
 "Scripts are files containing code that you attach to a node to extend its "
 "functionality."
 msgstr ""
+"スクリプトとは、機能を拡張したいノードに接続されるコードを含むファイルです。"
 
 msgid ""
 "Godot supports five official scripting languages, offering you flexibility "
 "between performance and ease of use."
 msgstr ""
+"Godotは5つの言語を公式サポートし、パフォーマンスと使用の容易さの柔軟性を提供"
+"しています。"
 
 msgid ""
 "You can mix languages, for instance, to implement demanding algorithms with "
 "C or C++ and write most of the game logic with GDScript or C#."
 msgstr ""
+"必要なアルゴリズムをCやC++で実装してほとんどのゲームロジックをGDScriptやC#で"
+"書く、というような言語を混ぜて開発することも可能です。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

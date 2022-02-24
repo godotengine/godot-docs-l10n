@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,16 +249,16 @@ msgstr ""
 "relativa a la ruta del proyecto o absoluta. No se respeta el directorio "
 "desde el cual el comando fue invocado."
 
-#, fuzzy
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
 "single exported main pack file to be used with multiple Godot executables. "
 "When doing so, the export preset name must still be specified on the command "
 "line:"
 msgstr ""
-"También puedes configurarlo para exportar sólo el archivo PCK o ZIP, "
+"También puedes configurarlo para exportar *sólo* el archivo PCK o ZIP, "
 "permitiendo que una sola exportación sea usada con múltiples ejecutables de "
-"Godot. Esto sucede si el nombre del destino termina con ``.pck`` o ``.zip``."
+"Godot. Cuando se haga esto, la plantilla de exportación debe ser "
+"especificada en la línea de comandos:"
 
 #, fuzzy
 msgid ""
@@ -342,3 +342,7 @@ msgstr ""
 "Guarde el script de inicio y colóquelo en la misma carpeta que el binario "
 "exportado. En Linux, asegúrese de otorgar permisos ejecutables al script de "
 "inicio usando el comando `` chmod + x launch.sh ``."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

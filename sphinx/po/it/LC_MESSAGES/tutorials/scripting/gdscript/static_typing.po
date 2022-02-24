@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid "In this guide, you will learn:"
 msgstr "In questa guida imparerai:"
 
 msgid "**How to use types in GDScript**"
-msgstr "**Come usare i tipi in GDScript**"
+msgstr "**Come utilizzare i tipi in GDScript**"
 
 msgid "That **static types can help you avoid bugs**"
 msgstr "Che **la tipizzazione statica può aiutarti a evitare bug**"
@@ -105,6 +105,9 @@ msgstr ""
 "digitato un punto per poi scoprire di non avere suggerimenti di "
 "autocompletamento:"
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -113,6 +116,9 @@ msgstr ""
 "Questo è per via della tipizzazione dinamica. Godot non può sapere quale "
 "nodo o tipo stai passando alla funzione. Al contrario se dichiari il tipo "
 "esplicitamente, otterrai tutti i metodi pubblici e le variabili del nodo:"
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -143,8 +149,7 @@ msgstr ""
 
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
-msgstr ""
-"Godot proverà ad inferire il tipo se scrivi due punti e ometti il tipo:"
+msgstr "Godot proverà ad dedurre il tipo se scrivi due punti e ometti il tipo:"
 
 msgid "Currently you can use three types of… types:"
 msgstr "Al momento puoi usare tre tipologie di... tipi:"
@@ -251,6 +256,9 @@ msgid ""
 "of the script editor."
 msgstr ""
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr ""
 
@@ -259,7 +267,7 @@ msgid ""
 msgstr ""
 
 msgid "Define the return type of a function with the arrow ->"
-msgstr "Definisci il tipo ritornato da una funzione con la freccia ->"
+msgstr "Definire il tipo restituito di una funzione con la freccia ->"
 
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
@@ -363,3 +371,7 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

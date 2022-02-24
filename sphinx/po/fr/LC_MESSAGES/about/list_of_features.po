@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -427,11 +427,17 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Supporte le pré-calcul de l'éclairage indirect seul ou le pré-calcul de "
+"l'éclairage direct et indirect. Le mode de pré-calcul peut être ajusté pour "
+"chaque lumière afin de permettre le pré-calcul de configurations "
+"d'éclairages hybrides."
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Supporte l'éclairage dynamique d'objets en utilisant un système automatique "
+"basé sur un octree. Aucun placement manuel de sonde n'est requis."
 
 msgid "Lightmaps are baked on the CPU."
 msgstr "Lightmaps sont pré-calculées par le CPU."
@@ -1099,15 +1105,18 @@ msgstr "Support XR (AR et VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Support de ARKit sur iOS prêt à l'emploi."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "Support des API OpenXR et OpenVR."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"Les casques VR populaires comme l'Oculus Quest et le HTC Vive sont supportés "
-"grâce à des plugins."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Support des API OpenXR et OpenVR."
 
 msgid "GUI system"
 msgstr "GUI système"
@@ -1391,3 +1400,7 @@ msgstr ""
 "proposals>`__ liste les fonctionnalités qui ont été demandées par la "
 "communauté et qui pourraient être implémentées dans les futures versions de "
 "Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

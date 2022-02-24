@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#, fuzzy
 msgid "High-level multiplayer"
-msgstr ""
+msgstr "Multiplayer di alto livello"
 
 msgid "High-level vs low-level API"
 msgstr ""
@@ -224,11 +225,13 @@ msgstr ""
 msgid "Server and Clients:"
 msgstr ""
 
+#, fuzzy
 msgid "``network_peer_connected(int id)``"
-msgstr ""
+msgstr "``network_peer_connected(int id)``"
 
+#, fuzzy
 msgid "``network_peer_disconnected(int id)``"
-msgstr ""
+msgstr "``network_peer_disconnected(int id)``"
 
 msgid ""
 "The above signals are called on every peer connected to the server "
@@ -246,15 +249,12 @@ msgstr ""
 msgid "Clients:"
 msgstr "Clienti:"
 
-#, fuzzy
 msgid "``connected_to_server``"
 msgstr "``connected_to_server``"
 
-#, fuzzy
 msgid "``connection_failed``"
 msgstr "``connection_failed``"
 
-#, fuzzy
 msgid "``server_disconnected``"
 msgstr "``server_disconnected``"
 
@@ -282,14 +282,17 @@ msgid ""
 "<class_Node>`:"
 msgstr ""
 
+#, fuzzy
 msgid "``rpc(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc(\"function_name\", <optional_args>)``"
 
+#, fuzzy
 msgid "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
 
+#, fuzzy
 msgid "``rpc_unreliable(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_unreliable(\"function_name\", <optional_args>)``"
 
 msgid "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
 msgstr ""
@@ -297,14 +300,16 @@ msgstr ""
 msgid "Synchronizing member variables is also possible:"
 msgstr ""
 
+#, fuzzy
 msgid "``rset(\"variable\", value)``"
-msgstr ""
+msgstr "``rset(\"variable\", value)``"
 
 msgid "``rset_id(<peer_id>, \"variable\", value)``"
 msgstr ""
 
+#, fuzzy
 msgid "``rset_unreliable(\"variable\", value)``"
-msgstr ""
+msgstr "``rset_unreliable(\"variable\", value)``"
 
 msgid "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
 msgstr ""
@@ -628,3 +633,7 @@ msgid ""
 "player is the one which decides whether to call the I-was-stunned method "
 "(``stun``) on all of the other peers and itself."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

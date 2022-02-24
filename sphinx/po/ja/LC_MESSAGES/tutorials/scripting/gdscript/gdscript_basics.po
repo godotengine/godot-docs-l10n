@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1100,10 +1100,10 @@ msgid "Assigning a value of an incompatible type will raise an error."
 msgstr "互換性のないタイプの値を割り当てると、エラーが発生します。"
 
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are \"flat"
-"\". This means that if you declare a constant array or dictionary, it can "
-"still be modified afterwards. They can't be reassigned with another value "
-"though."
+"Since arrays and dictionaries are passed by reference, constants are "
+"\"flat\". This means that if you declare a constant array or dictionary, it "
+"can still be modified afterwards. They can't be reassigned with another "
+"value though."
 msgstr ""
 "配列や辞書は参照で渡されるので、定数は「フラット」です。これは、もし定数の配"
 "列や辞書を宣言したとしても、後から修正することができることを意味します。ただ"
@@ -1470,9 +1470,9 @@ msgstr "スクリプトをクラスとして登録する"
 #, fuzzy
 msgid ""
 "You can give your class a name to register it as a new type in Godot's "
-"editor. For that, you use the ``class_name`` keyword. You can optionally use "
-"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
-"class will then appear with its new icon in the editor::"
+"editor. For that, you use the ``class_name`` keyword. You can optionally add "
+"a comma followed by a path to an image, to use it as an icon. Your class "
+"will then appear with its new icon in the editor::"
 msgstr ""
 "代わりに、Godotのエディタで新しいタイプとして登録するためにクラスに名前を付け"
 "ることができます。それには、 'class_name' キーワードを使用します。 アイコンと"
@@ -2050,3 +2050,7 @@ msgid ""
 msgstr ""
 "エディタ上でプロジェクトが実行されている時に、assertion エラーが発生した場合"
 "プロジェクトは停止します。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

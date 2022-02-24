@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,6 +199,13 @@ msgstr ""
 "В этой таблице каждый из четырех вариантов описан вместе с их преимуществами "
 "и недостатками (|хорошее| = лучшее, |плохое| = худшее):"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "и"
+
 msgid "Uncompressed"
 msgstr "Несжатый"
 
@@ -237,6 +244,10 @@ msgid "|bad| Large"
 msgstr "|плохо| Большой"
 
 msgid "|regular| Small"
+msgstr "|обычный| Маленький"
+
+#, fuzzy
+msgid "regular"
 msgstr "|обычный| Маленький"
 
 msgid "|good| Very Small"
@@ -315,10 +326,10 @@ msgstr ""
 "артефакты, которые не очень хорошо выглядят на картах нормалей, формат "
 "сжатия RGTC лучше всего подходит для этих данных. Если для этого параметра "
 "установлено значение \"Enabled\" (включено), Godot будет импортировать "
-"изображение как сжатое RGTC. По умолчанию он установлен на \"Detect"
-"\" (обнаружение), что означает, что если текстура когда-либо будет "
-"использоваться в качестве карты нормалей, она будет изменена на \"Enabled"
-"\" (включено) и повторно импортирована автоматически."
+"изображение как сжатое RGTC. По умолчанию он установлен на "
+"\"Detect\" (обнаружение), что означает, что если текстура когда-либо будет "
+"использоваться в качестве карты нормалей, она будет изменена на "
+"\"Enabled\" (включено) и повторно импортирована автоматически."
 
 msgid ""
 "Note that RGTC compression affects the resulting normal map image. You will "
@@ -549,3 +560,7 @@ msgstr ""
 "Этот параметр применим только к файлам SVG. Он контролирует масштаб "
 "изображения SVG. Масштаб по умолчанию (1.0) заставит импортированный SVG "
 "соответствовать исходному масштабу проекта."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

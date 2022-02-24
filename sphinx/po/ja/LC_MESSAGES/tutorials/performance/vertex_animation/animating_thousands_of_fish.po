@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,14 +345,14 @@ msgid ""
 "``Byte`` will take less memory and be faster, but you may see some visual "
 "artifacts."
 msgstr ""
-"``Color Format`` と ``Custom Data Format`` の両方について、\\ ``None``"
-"\\ 、\\ ``Byte``\\ 、および ``Float`` から選択できます。\\ ``None`` は、その"
-"データ(インスタンスごとの ``COLOR`` 変数または ``INSTANCE_CUSTOM`` のいずれ"
-"か)をシェーダーに渡さないことを意味します。\\ ``Byte`` は、渡す色を構成する各"
-"数値が8ビットで格納されることを意味し、\\ ``FLoat`` は、各数値が浮動小数点数"
-"(32ビット)で格納されることを意味します。\\ ``Float`` は遅くなりますが、より正"
-"確です。\\ ``Byte`` はより少ないメモリで高速になりますが、視覚的なアーティ"
-"ファクトが見られることがあります。"
+"``Color Format`` と ``Custom Data Format`` の両方について、\\ "
+"``None``\\ 、\\ ``Byte``\\ 、および ``Float`` から選択できます。\\ ``None`` "
+"は、そのデータ(インスタンスごとの ``COLOR`` 変数または ``INSTANCE_CUSTOM`` の"
+"いずれか)をシェーダーに渡さないことを意味します。\\ ``Byte`` は、渡す色を構成"
+"する各数値が8ビットで格納されることを意味し、\\ ``FLoat`` は、各数値が浮動小"
+"数点数(32ビット)で格納されることを意味します。\\ ``Float`` は遅くなりますが、"
+"より正確です。\\ ``Byte`` はより少ないメモリで高速になりますが、視覚的なアー"
+"ティファクトが見られることがあります。"
 
 msgid "Now, set ``instance_count`` to the number of fish you want to have."
 msgstr "さて、\\ ``Instance Count`` を持ちたい魚の数に設定してください。"
@@ -467,3 +467,7 @@ msgstr ""
 "次のチュートリアルでは、\\ :ref:`Particles <class_Particles>` を使用してGPUを"
 "活用し、インスタンス化の利点を享受しながら各魚を個別に移動する方法について説"
 "明します。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

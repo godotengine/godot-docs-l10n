@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Introduction to Godot"
-msgstr "CGS 노드 소개"
+msgstr "Godot 소개"
 
 msgid ""
 "This article is here to help you figure out whether Godot might be a good "
@@ -35,13 +34,16 @@ msgstr ""
 
 #, fuzzy
 msgid "What is Godot?"
-msgstr "리지드 바디(rigid body)란?"
+msgstr "Godot란?"
 
 msgid ""
 "Godot is a general-purpose 2D and 3D game engine designed to support all "
 "sorts of projects. You can use it to create games or applications you can "
 "then release on desktop or mobile, as well as on the web."
 msgstr ""
+"Godot는 모든 종류의 프로젝트를 지원하도록 설계된 범용 2D 및 3D 게임 엔진입니"
+"다. 이를 사용하여 게임이나 응용 프로그램을 만든 다음 데스크톱이나 모바일, 웹"
+"에서 출시할 수 있습니다."
 
 msgid ""
 "You can also create console games with it, although you either need strong "
@@ -69,7 +71,7 @@ msgstr ""
 msgid ""
 "Some examples of games created with Godot include Ex-Zodiac and Helms of "
 "Fury."
-msgstr ""
+msgstr "Godot로 만든 게임의 예로 Ex-Zodiac 및 Helms of Fury가 있습니다."
 
 msgid ""
 "As for applications, the open-source pixel art drawing program Pixelorama is "
@@ -77,7 +79,7 @@ msgid ""
 msgstr ""
 
 msgid "You can find many more examples in the official showcase videos:"
-msgstr ""
+msgstr "공식 쇼케이스 동영상에서 더 많은 예를 찾을 수 있습니다."
 
 msgid "`April 2020 desktop and console showcase`_"
 msgstr ""
@@ -104,6 +106,9 @@ msgid ""
 "experience. While there is always room for improvement, the user interface "
 "keeps getting refined."
 msgstr ""
+"팀은 기능이 풍부한 게임 에디터와 일관된 사용자 경험을 제공하기 위해 노력하고 "
+"있습니다. 항상 개선의 여지가 있지만, 유저 인터페이스는 계속해서 개선되고 있습"
+"니다."
 
 msgid ""
 "Of course, if you prefer, you can work with external programs. We officially "
@@ -111,6 +116,10 @@ msgid ""
 "code in VSCode_ and Emacs_ for GDScript and C#. We also support Visual "
 "Studio for C# on Windows."
 msgstr ""
+"물론 여러분이 원한다면 외부 프로그램으로 작업할 수도 있습니다. Blender_에서 "
+"설계된 3D 장면 가져오기를 공식적으로 지원하고 GDScript 및 C#용 VSCode_ 및 "
+"Emacs_의 코드에 대한 플러그인을 유지 관리합니다. 또한 Windows에서 C#용 "
+"Visual Studio를 지원합니다."
 
 #, fuzzy
 msgid "Programming languages"
@@ -130,7 +139,9 @@ msgstr ""
 msgid ""
 "Godot also supports a node-based visual programming language named :ref:"
 "`VisualScript <toc-learn-scripting-visual_script>`."
-msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
+msgstr ""
+"Godot는 또한 :ref:`VisualScript <toc-learn-scripting-visual_script>`라는 노"
+"드 기반 비주얼 프로그래밍 언어를 지원합니다."
 
 msgid ""
 "With the :ref:`GDNative <toc-tutorials-gdnative>` technology, you can also "
@@ -143,15 +154,21 @@ msgid ""
 "Of course, you can also directly add modules and features to the engine, as "
 "it's completely free and open-source."
 msgstr ""
+"물론 엔진에 모듈과 기능을 직접 추가할 수도 있습니다. 완전히 자유롭고 오픈 소"
+"스이기 때문입니다."
 
+#, fuzzy
 msgid ""
 "These are the five officially supported programming languages. The community "
 "maintains support for many more. For more information, see :ref:`GDNative "
 "third-party bindings <doc_what_is_gdnative_third_party_bindings>`."
 msgstr ""
+"다음은 공식적으로 지원되는 5가지 프로그래밍 언어입니다. 커뮤니티는 더 많은 것"
+"을 지원합니다. 자세한 내용은 :ref:`GDNative third-party bindings "
+"<doc_what_is_gdnative_third_party_bindings>`를 참조하세요."
 
 msgid "What do I need to know to use Godot?"
-msgstr "고도를 사용하려면 무엇을 알아야 하나요?"
+msgstr "Godot를 사용하려면 무엇을 알아야 하나요?"
 
 msgid ""
 "Godot is a feature-packed game engine. With its thousands of features, there "
@@ -160,31 +177,49 @@ msgid ""
 "lot from knowing how to think like a programmer first."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Godot relies on the object-oriented programming paradigm. Being comfortable "
 "with concepts such as classes and objects will help you code efficiently in "
 "it."
 msgstr ""
+"Godot는 객체 지향 프로그래밍 패러다임에 의존합니다. 클래스 및 객체와 같은 개"
+"념에 익숙해지면 효율적으로 코딩하는 데 도움이 됩니다."
 
+#, fuzzy
 msgid ""
 "If you are entirely new to programming, we recommend following the `CS50 "
 "open courseware`_ from Harvard University. It's a great free course that "
 "will teach you everything you need to know to be off to a good start. It "
 "will save you countless hours and hurdles learning any game engine afterward."
 msgstr ""
+"프로그래밍이 처음이라면 하버드 대학교의 `CS50 open courseware`_를 따르는 것"
+"이 좋습니다. 좋은 시작을 하기 위해 알아야 할 모든 것을 가르쳐 줄 훌륭한 무료 "
+"코스입니다. 나중에 게임 엔진을 배우는 데 드는 수많은 시간과 장애물을 절약할 "
+"수 있습니다."
 
 msgid ""
 "In CS50, you will learn multiple programming languages. Don't be afraid of "
 "that: programming languages have many similarities. The skills you learn "
 "with one language transfer well to others."
 msgstr ""
+"CS50에서는 여러 프로그래밍 언어를 배우게 됩니다. 그것을 두려워하지 마세요. 프"
+"로그래밍 언어는 많은 유사점을 가지고 있습니다. 한 언어로 배운 기술은 다른 언"
+"어로 잘 전달됩니다."
 
+#, fuzzy
 msgid ""
 "We will provide you with more Godot-specific learning resources in :ref:"
 "`doc_learning_new_features`."
 msgstr ""
+":ref:`doc_learning_new_features`에서 더 많은 Godot 관련 학습 자료를 제공하겠"
+"습니다."
 
 msgid ""
 "In the next part, you will get an overview of the engine's essential "
 "concepts."
-msgstr ""
+msgstr "다음 파트에서는 엔진의 필수 개념에 대한 개요를 살펴볼 것입니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

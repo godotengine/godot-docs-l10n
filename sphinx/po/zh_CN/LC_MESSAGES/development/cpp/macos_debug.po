@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Debugging on macOS"
-msgstr "在 macOS 上运行"
+msgstr "在 macOS 上调试"
 
-#, fuzzy
 msgid "Debugging Godot editor"
-msgstr "使用 gdb 调试编辑器"
+msgstr "调试 Godot 编辑器"
 
 msgid ""
 "Attaching a debugger to the signed macOS process requires the \"com.apple."
@@ -32,21 +30,28 @@ msgid ""
 "an official build of the editor it should be re-signed with the proper "
 "entitlements."
 msgstr ""
+"将调试器附加到具有签名的 macOS 进程上需要“com.apple.security.get-task-"
+"allow”授权，默认未启用，因为启用时 App 无法进行公证。如果你想要调试官方构建的"
+"编辑器，就需要使用正确的授权重新进行签名。"
 
 msgid ""
 "Create an ``editor.entitlements`` text file with the following contents:"
-msgstr ""
+msgstr "创建包含如下内容的 ``editor.entitlements`` 文本文件："
 
-#, fuzzy
 msgid "Then use the following command to re-sign the editor::"
-msgstr "您可以使用以下命令删除生成的导出模板:"
+msgstr "然后使用以下命令对编辑器进行重新签名： ::"
 
-#, fuzzy
 msgid "Debugging exported project"
-msgstr "调试项目"
+msgstr "调试导出的项目"
 
 msgid ""
 "To allow debugging, select the ``codesign\\debugging`` (``com.apple.security."
 "get-task-allow``) entitlement during the export. When it is selected, "
 "notarization is not supported and should be disabled."
 msgstr ""
+"要允许调试，请在导出时选择 ``codesign\\debugging``\\ （\\ ``com.apple."
+"security.get-task-allow``\\ ）授权。选中后不支持公证，所以应该将其禁用。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

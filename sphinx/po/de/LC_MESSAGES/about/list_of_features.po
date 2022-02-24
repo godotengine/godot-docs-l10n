@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1080,15 +1080,18 @@ msgstr "XR Unterstützung (AR und VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Direkte Unterstützung für ARKit auf iOS."
 
-msgid "Support for the OpenXR and OpenVR APIs."
+#, fuzzy
+msgid "Support for the OpenXR APIs."
 msgstr "Unterstützung für die OpenXR und OpenVR APIs."
 
 msgid ""
-"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
-"to plugins."
+"Includes support for popular headsets like the Meta Quest and the Valve "
+"Index."
 msgstr ""
-"Bekannte VR Headsets wie Oculus Quest und HTC Vive werden dank Plugins "
-"unterstützt."
+
+#, fuzzy
+msgid "Support for the OpenVR APIs."
+msgstr "Unterstützung für die OpenXR und OpenVR APIs."
 
 msgid "GUI system"
 msgstr "GUI System"
@@ -1362,3 +1365,7 @@ msgstr ""
 "Das `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ listet von der Community gewünschte Features auf, die "
 "möglicherweise in zukünftigen Godot-Versionen implementiert werden."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Übersetzungsformat"

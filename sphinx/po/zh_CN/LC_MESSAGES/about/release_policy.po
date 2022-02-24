@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
-"Godot 松散地遵循了\\ `语义版本学 <https://semver.org/>`__\\ ，采用了 ``major."
+"Godot 松散地遵循了\\ `语义化版本 <https://semver.org/>`__\\ ，采用了 ``major."
 "minor.patch`` 的版本系统，不过对每个术语的解释都根据游戏引擎的复杂性进行了调"
 "整："
 
@@ -180,6 +180,10 @@ msgstr "~2022（见下文）"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *当前开发重点（不稳定）。*"
 
+#, fuzzy
+msgid "unstable"
+msgstr "Enable"
+
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
@@ -190,6 +194,10 @@ msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
 msgstr "|supported| *Beta。*\\ 在开发过程中接收新功能以及错误修复。"
+
+#, fuzzy
+msgid "supported"
+msgstr "支持的文件"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -209,10 +217,12 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "2021 年 4 月"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
-msgstr ""
-"|supported| 接受对错误、安全和平台支持问题的修复，以及向后兼容的可用性增强。"
+msgstr "|partial| 只接受对安全和平台支持问题的修复。"
+
+#, fuzzy
+msgid "partial"
+msgstr "Spatial"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -224,6 +234,10 @@ msgid ""
 "|eol| No longer supported as fully superseded by the compatible 3.3 release "
 "(last update: 3.2.3)."
 msgstr "|eol| 不再支持，因为被兼容的 3.3 版本完全取代了（最后更新：3.2.3）。"
+
+#, fuzzy
+msgid "eol"
+msgstr "el"
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -320,6 +334,10 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
-"至于即将到来的 Godot 4.0，我们只能说，我们的目标是在 **2022 年** 发布，再近的"
-"预期就很难保证了。一旦 Godot 4.0 的主要功能最终确定下来，我们就会尽快发布 "
+"至于即将到来的 Godot 4.0，我们只能说，我们的目标是在 **2022 年**\\ 发布，再近"
+"的预期就很难保证了。一旦 Godot 4.0 的主要功能最终确定下来，我们就会尽快发布 "
 "Alpha 版本。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

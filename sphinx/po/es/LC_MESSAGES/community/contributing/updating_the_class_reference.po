@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,7 +126,6 @@ msgid ""
 "option. For example, if you're on 64-bit Linux, the command is::"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The XML files in doc/classes should then be up-to-date with current Godot "
 "Engine features. You can then check what changed using the ``git diff`` "
@@ -136,6 +135,10 @@ msgid ""
 msgstr ""
 "Los archivos XML en doc/clases deberian estar actualizados con las "
 "características actuales de Godot Engine. Puedes verificar que fue "
-"modificado utilizando el comando ``git diff``. Si existen modificaciones en "
-"otras clases además de la que planeas documentar, por favor realiza un "
-"commit de estas modificaciones antes de empezar a editar el template:"
+"modificado utilizando el comando ``git diff``. Sólo incluye cambios que sean "
+"relevantes a tu trabajo sobre la API en tus commits. Puedes descartar "
+"cambios en otros archivos XML usando ``git checkout``."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

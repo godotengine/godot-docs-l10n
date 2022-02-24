@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting for macOS"
-msgstr "Export pro PC"
+msgstr "Export pro macOS"
 
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
@@ -31,13 +30,12 @@ msgstr ""
 msgid "Requirements"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "To enable code signing and notarization, you must export from a computer "
 "running macOS with Xcode command line tools installed."
 msgstr ""
-"Aby bylo možné sestavit vaši hru pro iOS, musíte mít počítač se systémem "
-"macOS s nainstalovaným Xcode."
+"Chcete-li povolit podepisování kódu a ověření, musíte exportovat z počítače "
+"se systémem macOS a nainstalovanými nástroji příkazového řádku Xcode."
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -50,9 +48,8 @@ msgid ""
 "`Running Godot apps on macOS <doc_running_on_mac>` page for more info."
 msgstr ""
 
-#, fuzzy
 msgid "Code signing and notarization"
-msgstr "Integrace oken a operačního systému"
+msgstr "Podepisování kódů a ověření"
 
 msgid ""
 "By default, macOS will run only applications that are signed and notarized, "
@@ -109,13 +106,11 @@ msgid ""
 "exported app easier for the end users."
 msgstr ""
 
-#, fuzzy
 msgid "Signing Options"
-msgstr "Hledání doplňků"
+msgstr "Možnosti podepisování"
 
-#, fuzzy
 msgid "Option"
-msgstr "Optimalizace"
+msgstr "Možnost"
 
 msgid "Description"
 msgstr "Popis"
@@ -126,9 +121,8 @@ msgstr "Povolit"
 msgid "Enables code signing."
 msgstr ""
 
-#, fuzzy
 msgid "Identity"
-msgstr "Identifikátory"
+msgstr "Identita"
 
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
@@ -149,9 +143,8 @@ msgstr ""
 msgid "Enables \"Hardened Runtime\". Required for notarization."
 msgstr ""
 
-#, fuzzy
 msgid "Replace Existing Signature"
-msgstr "Nahradit v souborech"
+msgstr "Nahrazení stávajícího podpisu"
 
 msgid ""
 "Replaces existing signatures of the GDNative libraries and embedded helper "
@@ -166,9 +159,8 @@ msgstr ""
 msgid "Leave ``Identity`` option empty to use ad-hoc signature."
 msgstr ""
 
-#, fuzzy
 msgid "Notarization Options"
-msgstr "Možnosti animace"
+msgstr "Možnosti ověření"
 
 msgid "Enables automatic upload for notarization."
 msgstr ""
@@ -200,9 +192,8 @@ msgid ""
 "language=objc>`__ for more info."
 msgstr ""
 
-#, fuzzy
 msgid "Entitlements"
-msgstr "Test obsahu"
+msgstr "Nároky"
 
 msgid "Hardened Runtime Entitlements"
 msgstr ""
@@ -252,9 +243,8 @@ msgid ""
 "provided external add-ons."
 msgstr ""
 
-#, fuzzy
 msgid "Audio Input"
-msgstr "Audio sběrnice"
+msgstr "Zvukový vstup"
 
 msgid ""
 "Enable if you need to use the microphone or other audio input sources, if "
@@ -262,7 +252,6 @@ msgid ""
 "microphone_usage_description` option."
 msgstr ""
 
-#, fuzzy
 msgid "Camera"
 msgstr "**Kamera:**"
 
@@ -298,9 +287,8 @@ msgid ""
 "calendar_usage_description` option."
 msgstr ""
 
-#, fuzzy
 msgid "Photo Library"
-msgstr "Knihovna zdrojů (AssetLib)"
+msgstr "Knihovna fotografií"
 
 msgid ""
 "[3]_ Enable to allow access to the user's Photos library, if it's enabled "
@@ -353,23 +341,20 @@ msgid ""
 "To distribute an app through the App Store, you must enable the App Sandbox."
 msgstr ""
 
-#, fuzzy
 msgid "Enabled"
-msgstr "Povolit"
+msgstr "Povoleno"
 
 msgid "Enables App Sandbox."
 msgstr ""
 
-#, fuzzy
 msgid "Network Server"
-msgstr "Síťový profiler"
+msgstr "Síťový server"
 
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
 
-#, fuzzy
 msgid "Network Client"
-msgstr "Sítě"
+msgstr "Síťový klient"
 
 msgid "Enable to allow app to establish outgoing network connections."
 msgstr ""
@@ -396,9 +381,8 @@ msgstr ""
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 
-#, fuzzy
 msgid "Files Pictures [5]_"
-msgstr "Struktura souborů"
+msgstr "Obrázky souborů [5]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
@@ -415,9 +399,8 @@ msgstr ""
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
 
-#, fuzzy
 msgid "Files User Selected [5]_"
-msgstr "Smazat vybraný"
+msgstr "Soubory vybrané uživatelem [5]_"
 
 msgid ""
 "Allows read or write access to arbitrary folder. To gain access, a folder "
@@ -441,3 +424,7 @@ msgid ""
 "You can override default entitlements by selecting custom entitlements file, "
 "in this case all other entitlement are ignored."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

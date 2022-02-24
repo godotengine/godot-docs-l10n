@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,10 @@ msgstr ""
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
-msgstr "静态类型可用于变量, 常量, 函数, 参数, 和返回类型."
+msgstr "静态类型可用于变量、常量、函数、参数、返回类型。"
 
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr "从Godot 3.1开始, 可以使用类型化的GDScript."
+msgstr "从 Godot 3.1 开始，可以使用类型化的 GDScript。"
 
 msgid "A brief look at static typing"
 msgstr "静态类型简介"
@@ -62,9 +62,9 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
-"想象你正在编写一个库存系统. 您编写一个 ``Item`` 节点, 然后再编写一个 "
-"``Inventory`` . 要将项目添加到清单中, 使用代码的人员应始终将 ``Item`` 传递给 "
-"``Inventory.add`` 方法. 使用类型, 您可以强制执行以下操作:"
+"想象你正在编写背包系统。您编写一个 ``Item``\\ （道具）节点，然后再编写一个 "
+"``Inventory``\\ （背包）。要将道具添加到背包中，使用代码的人员应始终将 "
+"``Item`` 传递给 ``Inventory.add`` 方法。有了类型，您就可以强制执行以下操作："
 
 msgid ""
 "Another significant advantage of typed GDScript is the new **warning "
@@ -91,6 +91,10 @@ msgid ""
 msgstr ""
 "您之前可能已经将节点存储在变量中, 并输入了一个点, 但是没有代码自动补全建议:"
 
+#, fuzzy
+msgid "code completion options for dynamic"
+msgstr "强制完成（可选）"
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -98,6 +102,10 @@ msgid ""
 msgstr ""
 "这是因为动态代码. Godot无法知道您传递给函数的节点或值类型. 但是, 如果您明确地"
 "声明了类型, 则将从该节点类型获取所有公共方法和变量:"
+
+#, fuzzy
+msgid "code completion options for typed"
+msgstr "强制完成（可选）"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -143,15 +151,16 @@ msgstr ":ref:`内置类型 <doc_gdscript_builtin_types>`"
 
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
-msgstr "核心类和节点( ``Object``, ``Node``, ``Area2D``, ``Camera2D``, 等)"
+msgstr ""
+"核心类和节点（\\ ``Object``\\ 、\\ ``Node``\\ 、\\ ``Area2D``\\ 、\\ "
+"``Camera2D`` 等）"
 
-#, fuzzy
 msgid ""
 "Your own custom classes. Look at the new :ref:`class_name "
 "<doc_gdscript_basics_class_name>` feature to register types in the editor."
 msgstr ""
-"您自己定义的类. 查看新的 :ref:`class_name "
-"<doc_scripting_continued_class_name>` 特性, 以便在编辑器中注册类型."
+"您自己定义的类。查看新的 :ref:`class_name <doc_gdscript_basics_class_name>` "
+"特性，以便在编辑器中注册类型。"
 
 msgid ""
 "You don't need to write type hints for constants, as Godot sets it "
@@ -256,11 +265,11 @@ msgid ""
 "classes it extends. With dynamic GDScript, you also don't care about the "
 "node's type as long as it has the methods you need to call."
 msgstr ""
-"当您需要获得子节点时会发生这种情况. 让我们以一个计时器为例: 使用动态代码, 您"
-"可以使用 ``$Timer`` 获取节点.GDScript支持 `鸭子类型 <https://stackoverflow."
-"com/a/4205163/8125343>` __, 所以即使您的计时器是 ``Timer`` 类型, 它也扩展了 "
-"``Node`` 和 ``Object`` , 这两个类. 使用动态GDScript, 只要节点具有您需要调用的"
-"方法, 您也不必关心节点的类型."
+"当您需要获得子节点时会发生这种情况。让我们以计时器为例：使用动态代码，您可以"
+"使用 ``$Timer`` 获取节点。GDScript 支持\\ `鸭子类型 <https://stackoverflow."
+"com/a/4205163/8125343>`__\\ ，所以即使您的计时器是 ``Timer`` 类型，它也扩展"
+"了 ``Node`` 和 ``Object`` 这两个类。使用动态 GDScript，只要节点具有您需要调用"
+"的方法，您也不必关心节点的类型。"
 
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
@@ -271,6 +280,9 @@ msgstr ""
 "当您得到一个节点时, 您可以使用强制转换来告诉Godot, 您期望的类型: ``($Timer "
 "as Timer)`` , ``($Player as KinematicBody2D)`` 等.Godot将确保该类型有效, 如果"
 "是, 则行号在脚本编辑器的左侧变为绿色."
+
+msgid "Unsafe vs Safe Line"
+msgstr ""
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "不安全代码 (第 7 行) vs 安全代码 (第 6 行和第 8 行)"
@@ -398,3 +410,7 @@ msgstr ""
 "类型化的GDScript是一个强大的工具. 从Godot 3.1版开始可用, 它可以帮助您编写更多"
 "结构化的代码, 避免常见错误, 以及创建可伸缩的系统. 将来, 由于即将进行的编译器"
 "优化, 静态类型也将为您带来不错的性能提升."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

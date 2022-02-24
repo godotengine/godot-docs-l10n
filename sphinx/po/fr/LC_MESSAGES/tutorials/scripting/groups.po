@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,24 +37,21 @@ msgstr ""
 msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
-#, fuzzy
 msgid "Adding nodes to a group"
-msgstr "Ajouter des nœuds"
+msgstr "Ajouter des nœuds à un groupe"
 
-#, fuzzy
 msgid "There are two ways to add nodes to groups:"
-msgstr "Il y a deux façon de faire cela :"
+msgstr "Il existe deux façons d’ajouter des nœuds à des groupes :"
 
 msgid "Using the Node dock in the editor."
-msgstr "Utilisation du dock Node dans l'éditeur."
+msgstr "En utilisant le dock Node dans l'éditeur."
 
 msgid ""
 "Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Node dock"
-msgstr "Utilisation du module"
+msgstr "En utilisant le dock Node"
 
 msgid ""
 "You can add nodes in the current scene to groups using the Groups tab in the "
@@ -67,7 +64,7 @@ msgid ""
 msgstr ""
 
 msgid "You should now see the group appear."
-msgstr ""
+msgstr "Vous devriez voir maintenant le groupe apparaitre."
 
 msgid ""
 "In a complex project, you may end up with many groups or large scenes with "
@@ -81,7 +78,7 @@ msgid ""
 msgstr ""
 
 msgid "It has three columns:"
-msgstr ""
+msgstr "Il y a trois colonnes :"
 
 msgid "A list of groups used by nodes in the current scene."
 msgstr ""
@@ -90,7 +87,7 @@ msgid "A list of nodes that are not part of the selected group."
 msgstr ""
 
 msgid "A list of nodes in the group."
-msgstr ""
+msgstr "Une liste des nœuds dans le groupe."
 
 msgid ""
 "The fields at the bottom allow you to add new groups or filter nodes in the "
@@ -103,18 +100,17 @@ msgid ""
 "in particular."
 msgstr ""
 
-#, fuzzy
 msgid "Using code"
-msgstr "Utilisation de BBCode"
+msgstr "En utilisant le code"
 
-#, fuzzy
 msgid ""
 "You can also manage groups from scripts. The following code adds the node to "
 "which you attach the script to the ``guards`` group as soon as it enters the "
 "scene tree."
 msgstr ""
-"Et le second moyen est à partir du code. Le script suivant ajouterait le "
-"nœud actuel au groupe ``enemies`` dès qu'il apparaît dans l'arborescence."
+"Vous pouvez également gérer des groupes à partir de scripts. Le code suivant "
+"ajoute le nœud auquel vous attachez le script au groupe ``guards`` dès qu'il "
+"entre dans l'arbre de scène."
 
 msgid ""
 "Imagine you're creating an infiltration game. When an enemy spots the "
@@ -126,22 +122,20 @@ msgid ""
 "all enemies that the player was spotted."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The above code calls the function ``enter_alert_mode`` on every member of "
 "the group ``guards``."
 msgstr ""
-"Le code ci-dessus appelle la fonction ``player_was_discovered`` sur chaque "
-"membre du groupe ``enemies``."
+"Le code ci-dessus appelle la fonction ``enter_alert_mode`` sur chaque membre "
+"du groupe ``guards``."
 
-#, fuzzy
 msgid ""
 "To get the full list of nodes in the ``guards`` group as an array, you can "
 "call :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"Il est également possible d'obtenir la liste complète des nœuds ``enemies`` "
-"en appelant :ref:`SceneTree.get_nodes_in_group() "
+"Pour obtenir la liste complète des nœuds du groupe ``guards`` sous forme de "
+"tableau, vous pouvez appeler :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>` :"
 
 msgid ""
@@ -155,3 +149,7 @@ msgstr ""
 "les groupes. Elle permet de changer facilement de scène ou de les recharger, "
 "de quitter le jeu ou de le mettre en pause et de le remettre en pause. Elle "
 "fournit également des signaux utiles."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

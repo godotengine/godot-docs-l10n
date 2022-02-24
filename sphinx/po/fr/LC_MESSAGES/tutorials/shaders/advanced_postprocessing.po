@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,7 @@ msgid ""
 msgstr ""
 "Tout d'abord, prenons les coordonnée de l'espace écran et transformons les "
 "en coordonnées normalisées pour l'appareil (NDC). Les NDC vont de ``-1`` à "
-"``1``, comme les bornes de l'espace des coordonnées. Reconstruisez le NDC en "
+"``1``, comme les bornes des coordonnées de l'espace. Reconstruisez le NDC en "
 "utilisant ``SCREEN_UV`` pour les axes ``x`` et ``y``, et la valeur de "
 "profondeur pour ``z``."
 
@@ -323,3 +323,7 @@ msgstr ""
 "triangle n'est pas construit avant que la scène ne soit exécutée. Pour "
 "contourner ce problème, construisez un Mesh triangulaire dans un programme "
 "de modélisation et utilisez-le dans le MeshInstance à la place du ArrayMesh."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

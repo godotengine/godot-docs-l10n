@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,17 +87,16 @@ msgstr ""
 "<class_Vector2_method_linear_interpolate>` et :ref:`Vector3."
 "linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 
-#, fuzzy
 msgid ""
 "For cubic interpolation, there are also :ref:`Vector2.cubic_interpolate() "
 "<class_Vector2_method_cubic_interpolate>` and :ref:`Vector3."
 "cubic_interpolate() <class_Vector3_method_cubic_interpolate>`, which do a :"
 "ref:`Bezier <doc_beziers_and_curves>` style interpolation."
 msgstr ""
-"Pour l'interpolation cubique, il y a aussi :ref:`Vector2.cubic_interpolate() "
-"<class_Vector2_method_linear_interpolate>` et :ref:`Vector3."
-"cubic_interpolate() <class_Vector3_method_linear_interpolate>` qui font une "
-"interpolation de style :ref:`Bezier <doc_beziers_and_curves>`."
+"Pour l'interpolation cubique, il existe aussi :ref:`Vector2."
+"cubic_interpolate() <class_Vector2_method_cubic_interpolate>` et :ref:"
+"`Vector3.cubic_interpolate() <class_Vector3_method_cubic_interpolate>`, qui "
+"font une interpolation de style :ref:`Bezier <doc_beziers_and_curves>`."
 
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
@@ -155,3 +154,7 @@ msgstr ""
 "Ceci est utile pour adoucir les mouvements de la caméra, les alliés qui vous "
 "suivent (en s'assurant qu'ils restent à une certaine distance), et bien "
 "d'autres modèles de jeu courants."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

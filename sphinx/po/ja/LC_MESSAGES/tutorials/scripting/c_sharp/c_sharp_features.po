@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,12 +229,12 @@ msgid ""
 "``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
-"OSに応じて、\\ ``GODOT_X11``\\ 、\\ ``GODOT_WINDOWS``\\ 、\\ ``GODOT_OSX``"
-"\\ 、\\ ``GODOT_ANDROID``\\ 、\\ ``GODOT_HTML5``\\ 、または ``GODOT_SERVER`` "
-"のいずれか1つ。これらの名前は将来変更される可能性があります。これらは :ref:"
-"``OS <class_OS>`` シングルトンの ``get_name()`` メソッドから作成されますが、"
-"メソッドが返すすべての利用可能なOSが、Monoを搭載したGodotが実行できるOSという"
-"わけではありません。"
+"OSに応じて、\\ ``GODOT_X11``\\ 、\\ ``GODOT_WINDOWS``\\ 、\\ "
+"``GODOT_OSX``\\ 、\\ ``GODOT_ANDROID``\\ 、\\ ``GODOT_HTML5``\\ 、または "
+"``GODOT_SERVER`` のいずれか1つ。これらの名前は将来変更される可能性がありま"
+"す。これらは :ref:``OS <class_OS>`` シングルトンの ``get_name()`` メソッドか"
+"ら作成されますが、メソッドが返すすべての利用可能なOSが、Monoを搭載したGodotが"
+"実行できるOSというわけではありません。"
 
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
@@ -286,3 +286,7 @@ msgstr ""
 "明確にするために、これが `bomber demo <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/networking/multiplayer_bomber>`_ でどのように見える"
 "かの例を示します:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

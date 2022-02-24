@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Introduction to shaders"
-msgstr "Úvod do exportu"
+msgstr "Úvod do shaderů"
 
 msgid ""
 "This page explains what shaders are and will give you an overview of how "
@@ -63,9 +62,8 @@ msgid ""
 "pixel it has to draw. More on that below."
 msgstr ""
 
-#, fuzzy
 msgid "Shaders in Godot"
-msgstr "Nastavení Godot"
+msgstr "Shadery v Godotu"
 
 msgid ""
 "Godot provides a shading language based on the popular OpenGL Shading "
@@ -114,9 +112,8 @@ msgid ""
 "In Godot, all shaders need to specify their type in the first line, like so:"
 msgstr ""
 
-#, fuzzy
 msgid "Here are the available types:"
-msgstr "Typově existuje 6 vzorů:"
+msgstr "Zde jsou dostupné typy:"
 
 msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
 msgstr ":ref:`spatial <doc_spatial_shader>` pro 3D vykreslování."
@@ -183,10 +180,7 @@ msgid "Fragment processor"
 msgstr ""
 
 msgid ""
-"The ``fragment()`` processing function is used to set up the Godot material"
-msgstr ""
-
-msgid ""
+"The ``fragment()`` processing function is used to set up the Godot material "
 "parameters per pixel. This code runs on every visible pixel the object or "
 "primitive draws. It is only available in ``spatial`` and ``canvas_item`` "
 "shaders."
@@ -223,3 +217,7 @@ msgid ""
 "`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders "
 "<doc_spatial_shader>`, respectively."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

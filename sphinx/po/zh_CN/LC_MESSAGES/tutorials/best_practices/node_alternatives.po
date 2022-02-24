@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,9 +124,13 @@ msgid ""
 "usability front, but also improve performance if one plans to have many such "
 "Resources/Nodes in their scenes."
 msgstr ""
-"**优势** : 关于 :ref:`Resource <class_Resource>` 与传统数据存储方法相比的优"
-"势, :ref:`已经说了 <doc_resources>` 很多. 然而, 通过 ``Node`` 使用 "
-"``Resource`` 的上下文, 它们的主要优点是在属性检查器的兼容性方面. 虽然几乎和 "
-"``Object/Reference`` 一样轻量级, 它们仍然可以在属性检查器中显示和导出属性. 这"
-"使他们可以实现, 与可用性方面的子节点非常相似的目的, 而且如果计划在其场景中, "
-"拥有许多此类 ``Resource/Node``, 还可以提高性能."
+"**优势**\\ ：关于 :ref:`Resource <class_Resource>` 与传统数据存储方法相比的优"
+"势\\ :ref:`已经说了 <doc_resources>` 很多。然而，如果是通过 Node 使用 "
+"Resource，它们的主要优点是在“检查器”的兼容性方面。虽然几乎和 Object/"
+"Reference 一样轻量，它们仍然可以在“检查器”中显示并导出属性。这使他们可以实"
+"现，与可用性方面的子节点非常相似的目的，而且如果计划在其场景中拥有许多这种 "
+"Resource/Node，还可以提高性能。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

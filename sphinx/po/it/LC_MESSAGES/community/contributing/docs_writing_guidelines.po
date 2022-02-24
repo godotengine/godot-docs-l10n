@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#, fuzzy
 msgid "Docs writing guidelines"
-msgstr ""
+msgstr "Linee guida per la scrittura di documenti"
 
 msgid ""
 "The Godot community is rich and international. Users come from all around "
@@ -28,46 +29,60 @@ msgid ""
 "precise."
 msgstr ""
 
+#, fuzzy
 msgid "In summary, always try to:"
-msgstr ""
+msgstr "In sintesi, cerca sempre di:"
 
+#, fuzzy
 msgid "Use the direct voice"
-msgstr ""
+msgstr "Usare la voce diretta"
 
+#, fuzzy
 msgid "Use precise action verbs"
-msgstr ""
+msgstr "Usare verbi d'azione precisi"
 
+#, fuzzy
 msgid "Avoid verbs that end in -ing"
-msgstr ""
+msgstr "Evitare i verbi che finiscono in -ing"
 
+#, fuzzy
 msgid "Remove unnecessary adverbs and adjectives."
-msgstr ""
+msgstr "Rimuovere gli avverbi e gli aggettivi non necessari."
 
+#, fuzzy
 msgid ""
 "Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
 "however"
 msgstr ""
+"Metti al bando queste 8 parole: ovvio, semplice, basilare, facile, attuale, "
+"giusto, chiaro e comunque"
 
+#, fuzzy
 msgid "Use explicit references"
-msgstr ""
+msgstr "Usare riferimenti espliciti"
 
+#, fuzzy
 msgid "Use 's to show possession"
-msgstr ""
+msgstr "Usare 's per mostrare il possesso"
 
+#, fuzzy
 msgid "Use the Oxford comma"
-msgstr ""
+msgstr "Usare la virgola di Oxford"
 
+#, fuzzy
 msgid "There are 3 rules to describe classes:"
-msgstr ""
+msgstr "Ci sono 3 regole per descrivere le classi:"
 
+#, fuzzy
 msgid "Give an overview of the node in the brief description"
-msgstr ""
+msgstr "Fornisci una panoramica del nodo nella breve descrizione"
 
 msgid "Mention what methods return if it's useful"
 msgstr ""
 
+#, fuzzy
 msgid "Use \"if true\" to describe booleans"
-msgstr ""
+msgstr "Usare \"if true\" per descrivere i booleani"
 
 msgid ""
 "A technical writer's job is to pack as much information as possible into the "
@@ -80,8 +95,9 @@ msgid ""
 "on the types of documentation you can write in the official documentation."
 msgstr ""
 
+#, fuzzy
 msgid "7 rules for clear English"
-msgstr ""
+msgstr "7 regole per un inglese chiaro"
 
 msgid ""
 "Use the direct voice when possible. Take the classes, methods, and constants "
@@ -95,16 +111,21 @@ msgstr "Passivo:"
 msgid "Active:"
 msgstr "Attivo:"
 
+#, fuzzy
 msgid "**Don't** use the passive voice:"
-msgstr ""
+msgstr "**Non** usare la voce passiva:"
 
+#, fuzzy
 msgid "**Do** use the node's name as a noun:"
-msgstr ""
+msgstr "**Utilizza** il nome del nodo come sostantivo:"
 
+#, fuzzy
 msgid ""
 "Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
 "any expression you can replace with a single word."
 msgstr ""
+"Favorisci verbi precisi ma comuni rispetto a quelli generici come ``make``, "
+"``set``, e qualsiasi espressione che puoi sostituire con una sola parola."
 
 msgid ""
 "**Don't** repeat the method's name. It already states it sets the pivot "
@@ -121,11 +142,13 @@ msgid ""
 "moving\"."
 msgstr ""
 
+#, fuzzy
 msgid "**Don't** use the progressive form for instant changes."
-msgstr ""
+msgstr "**Non** utilizzare la forma progressiva per le modifiche istantanee."
 
+#, fuzzy
 msgid "**Do** use simple present, past, or future."
-msgstr ""
+msgstr "**Utilizza** presente semplice , passato o futuro."
 
 msgid ""
 "Exception: If the subject is not clear, replacing \"ing\" verbs is not an "
@@ -143,8 +166,9 @@ msgid ""
 "so you may use them: ``the remaining movement``, ``the missing file``, etc."
 msgstr ""
 
+#, fuzzy
 msgid "Remove unnecessary adverbs and adjectives"
-msgstr ""
+msgstr "Elimina gli avverbi e gli aggettivi non necessari"
 
 msgid ""
 "Write as few adjectives and adverbs as possible. Only use them if they add "
@@ -159,11 +183,13 @@ msgstr ""
 msgid "**Do** write short sentences in a simple, descriptive language:"
 msgstr ""
 
+#, fuzzy
 msgid "Ban these 8 words"
-msgstr ""
+msgstr "Metti al bando queste 8 parole"
 
+#, fuzzy
 msgid "**Don't** ever use these 8 banned words:"
-msgstr ""
+msgstr "**Non** usare mai queste 8 parole vietate:"
 
 msgid "obvious"
 msgstr "ovvio"
@@ -172,7 +198,7 @@ msgid "simple"
 msgstr "semplice"
 
 msgid "basic"
-msgstr "basico"
+msgstr "basilare"
 
 msgid "easy"
 msgstr "facile"
@@ -186,8 +212,9 @@ msgstr "solo"
 msgid "clear"
 msgstr "chiaro"
 
+#, fuzzy
 msgid "however (some uses)"
-msgstr ""
+msgstr "tuttavia (alcuni usi)"
 
 msgid ""
 "Game creation and programming aren't simple, and nothing's easy to someone "
@@ -517,3 +544,7 @@ msgid ""
 "The program pngquant must be installed locally as it's not available in "
 "Squoosh."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

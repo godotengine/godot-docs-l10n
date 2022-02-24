@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,13 +101,13 @@ msgstr ""
 "<class_PhysicsDirectSpaceState>` ."
 
 msgid "Use the following code in 2D:"
-msgstr "在2D中使用以下代码:"
+msgstr "在 2D 中使用以下代码："
 
 msgid "Or more directly:"
-msgstr "或者更直接:"
+msgstr "或者更直接："
 
 msgid "And in 3D:"
-msgstr "在3D中:"
+msgstr "在 3D 中："
 
 msgid "Raycast query"
 msgstr "Raycast 查询"
@@ -133,13 +133,13 @@ msgstr ""
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
-msgstr "发生碰撞时, ``result`` 字典包含以下数据:"
+msgstr "发生碰撞时，\\ ``result`` 字典包含以下数据："
 
 msgid "The data is similar in 3D space, using Vector3 coordinates."
-msgstr "使用Vector3坐标, 数据在3D空间中类似."
+msgstr "与 3D 空间类似，数据使用的是 Vector3 坐标。"
 
 msgid "Collision exceptions"
-msgstr "碰撞异常"
+msgstr "碰撞例外"
 
 msgid ""
 "A common use case for ray casting is to enable a character to gather data "
@@ -159,7 +159,7 @@ msgstr ""
 "除数组. 这是如何从KinematicBody2D或任何其他碰撞对象节点使用它的示例:"
 
 msgid "The exceptions array can contain objects or RIDs."
-msgstr "例外数组可以包含对象或RID."
+msgstr "例外数组可以包含对象或 RID。"
 
 msgid "Collision Mask"
 msgstr "碰撞遮罩"
@@ -221,5 +221,9 @@ msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
 msgstr ""
-"请记住, 在 ``_input()`` 期间, 空间可能被锁定, 所以实际上这个查询应该在 "
-"``_physics_process()`` 中运行."
+"请记住，在 ``_input()`` 期间空间可能被锁定，所以实践中应该在 "
+"``_physics_process()`` 中运行这个查询。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

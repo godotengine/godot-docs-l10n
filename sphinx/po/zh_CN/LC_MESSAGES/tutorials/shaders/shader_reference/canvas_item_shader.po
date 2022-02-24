@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,13 +72,13 @@ msgid "**blend_premul_alpha**"
 msgstr "**blend_premul_alpha**"
 
 msgid "Pre-multiplied alpha blend mode."
-msgstr "预乘alpha混合模式."
+msgstr "预乘 Alpha 混合模式。"
 
 msgid "**blend_disabled**"
 msgstr "**blend_disabled**"
 
 msgid "Disable blending, values (including alpha) are written as-is."
-msgstr "禁用混合, 值(包括透明通道)按原样编写."
+msgstr "禁用混合，值（包括 Alpha）会按原样写入。"
 
 msgid "**unshaded**"
 msgstr "**unshaded**"
@@ -243,7 +243,7 @@ msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
 msgid "Texture coordinates."
-msgstr "下一个坐标."
+msgstr "纹理坐标。"
 
 msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
@@ -275,9 +275,9 @@ msgid ""
 "the texture color in the ``COLOR`` built-in variable; to read the texture "
 "color for such nodes, use:"
 msgstr ""
-"某些节点(例如 :ref:`精灵 <class_Sprite>`)默认情况下显示纹理. 但是, 当自定义片"
-"段函数附加到这些节点时, 需要手工完成纹理的查找.Godot在 \"颜色\" 内置变量中不"
-"提供纹理颜色；要读取这些节点的纹理颜色, 请使用:"
+"某些节点（例如 :ref:`Sprite <class_Sprite>`\\ ）默认会显示纹理。但是，当自定"
+"义片段函数附加到这些节点时，就需要手工完成纹理的查找。Godot 在 ``COLOR`` 内置"
+"变量中不提供纹理颜色；要读取这些节点的纹理颜色，请使用："
 
 msgid ""
 "This differs from the behavior of the built-in normal map. If a normal map "
@@ -300,8 +300,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
-"像素中心的坐标. 在屏幕空间中. 如果 \"DEPTH\" 未被使用, 则 \"xy\" 指定窗口中的"
-"位置,\"z\" 表示片段深度. 原点在左下角."
+"像素中心的坐标。在屏幕空间中，\\ ``xy`` 表示窗口中的位置，如果没有用 "
+"``DEPTH``\\ ，则 ``z`` 表示片段深度。原点位于左下角。"
 
 msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
@@ -344,7 +344,7 @@ msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr "输入sampler2D **NORMAL_TEXTURE**"
 
 msgid "Default 2D normal texture."
-msgstr "默认2D普通纹理."
+msgstr "默认 2D 法线纹理。"
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
@@ -362,7 +362,7 @@ msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
 
 msgid "Coordinate for drawing points."
-msgstr "协调绘图点."
+msgstr "所绘制点的坐标。"
 
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr "输入sampler2D **SCREEN_TEXTURE**"
@@ -382,10 +382,11 @@ msgid ""
 "occur for that object; this can be useful when you only want the object "
 "visible where it is covered by light."
 msgstr ""
-"光照处理器功能在二维中与在三维中工作不同. 在画布组件着色时, 着色器为被绘制的"
-"对象调用一次, 然后每一束光接触场景中的物体一次. 如果您不希望该对象发生任何光"
-"传递, 请使用渲染_模式中的 \"无阴影 \". 如果您只想让光通过该对象, 使用渲染_模"
-"式中的\" 仅有_光照\"；当您只想让被光覆盖的对象可见时, 这是非常有用的."
+"光照处理器功能在 2D 中与在 3D 中工作不同。在 CanvasItem 着色器中，这个着色器"
+"会为被绘制的对象调用一次，然后再为每一束接触场景中该物体的光调用一次。如果您"
+"不希望该对象发生任何光传递，请使用 render_mode ``unshaded``\\ 。如果您只想让"
+"光通过该对象，使用 render_mode ``light_only``\\ ；当您只想让被光覆盖的对象可"
+"见时，这是非常有用的。"
 
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
@@ -474,3 +475,7 @@ msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
 msgstr "值从浅色纹理和输出颜色. 可以修改. 如果不使用, 则忽略光照函数."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

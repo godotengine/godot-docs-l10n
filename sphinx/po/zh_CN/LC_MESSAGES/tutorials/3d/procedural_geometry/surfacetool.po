@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,12 +42,13 @@ msgstr ""
 msgid "Attributes are added before each vertex is added:"
 msgstr "属性是在添加每个顶点之前添加的:"
 
+#, fuzzy
 msgid ""
 "When finished generating your geometry with the :ref:`SurfaceTool "
-"<class_surfacetool>` call ``commit()`` to finished generating the mesh. If "
-"an :ref:`ArrayMesh <class_ArrayMesh>` is passed to ``commit()`` then it "
-"appends a new surface to the end of the ArrayMesh. While if nothing is "
-"passed in, ``commit()`` returns an ArrayMesh."
+"<class_surfacetool>` call ``commit()`` to finish generating the mesh. If an :"
+"ref:`ArrayMesh <class_ArrayMesh>` is passed to ``commit()`` then it appends "
+"a new surface to the end of the ArrayMesh. While if nothing is passed in, "
+"``commit()`` returns an ArrayMesh."
 msgstr ""
 "当使用 :ref:`SurfaceTool <class_surfacetool>` 完成生成几何体后, 调用 "
 "``commit()`` 完成生成网格. 如果将一个 :ref:`ArrayMesh <class_ArrayMesh>` 传递"
@@ -106,3 +107,7 @@ msgstr ""
 "线, 在添加顶点时, 调用 ``add_smooth_group()`` . ``add_smooth_group()`` 需要在"
 "建立几何体时调用, 例如在调用 ``add_vertex()`` (如果没有索引)或 "
 "``add_index()`` (如果有索引)之前."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

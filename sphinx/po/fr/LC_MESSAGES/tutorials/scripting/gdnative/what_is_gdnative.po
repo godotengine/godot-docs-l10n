@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "What is GDNative?"
-msgstr "Qu'est-ce que c'est ?"
+msgstr "Qu'est-ce que GDNative ?"
 
 msgid "Introduction"
 msgstr "Introduction"
@@ -36,26 +35,24 @@ msgid ""
 "<doc_gdscript>`."
 msgstr ""
 
-#, fuzzy
 msgid "Differences between GDNative and C++ modules"
-msgstr "Différences entre GLES2 et GLES3"
+msgstr "Différences entre les modules GDNative et C++"
 
-#, fuzzy
 msgid ""
 "You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` "
 "to run C or C++ code in a Godot project."
 msgstr ""
-"Support :ref:`des modules C++ <doc_custom_modules_in_c++>` liés statiquement "
-"dans le binaire du moteur."
+"Vous pouvez utiliser les modules GDNative et les :ref:`modules C++ "
+"<doc_custom_modules_in_c++>` pour exécuter du code C ou C++ dans un projet "
+"Godot."
 
 msgid ""
 "They also both allow you to integrate third-party libraries into Godot. The "
 "one you should choose depends on your needs."
 msgstr ""
 
-#, fuzzy
 msgid "Advantages of GDNative"
-msgstr "Avantages"
+msgstr "Avantages de GDNative"
 
 msgid ""
 "Unlike modules, GDNative doesn't require compiling the engine's source code, "
@@ -67,7 +64,7 @@ msgid ""
 msgstr ""
 
 msgid "Also:"
-msgstr ""
+msgstr "Aussi :"
 
 msgid ""
 "GDNative is not limited to C and C++. Thanks to :ref:`third-party bindings "
@@ -89,7 +86,7 @@ msgid ""
 msgstr ""
 
 msgid "Advantages of C++ modules"
-msgstr ""
+msgstr "Avantages des modules C++"
 
 msgid ""
 "We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where "
@@ -118,9 +115,8 @@ msgid ""
 "lot of communication through the scripting API."
 msgstr ""
 
-#, fuzzy
 msgid "Supported languages"
-msgstr "Fichiers pris en charge"
+msgstr "Langages supportés"
 
 msgid ""
 "The Godot developers officially support the following language bindings for "
@@ -128,11 +124,10 @@ msgid ""
 msgstr ""
 
 msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
-msgstr ""
+msgstr "C++ :ref:`(tutoriel) <doc_gdnative_cpp_example>`"
 
-#, fuzzy
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
-msgstr ":ref:`Input, examples <doc_input_examples>`"
+msgstr "C :ref:`(tutoriel) <doc_gdnative_c_example>`"
 
 msgid ""
 "There are no plans to support additional languages with GDNative officially. "
@@ -141,27 +136,22 @@ msgid ""
 msgstr ""
 
 msgid "The bindings below are developed and maintained by the community:"
-msgstr ""
+msgstr "Ces liaisons sont développées et gérées par la communauté :"
 
-#, fuzzy
 msgid "`D <https://github.com/godot-d/godot-d>`__"
-msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+msgstr "`D <https://github.com/godot-d/godot-d>`__"
 
-#, fuzzy
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
-msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+msgstr "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
 
-#, fuzzy
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
-msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+msgstr "`Nim <https://github.com/pragmagic/godot-nim>`__"
 
-#, fuzzy
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
-msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+msgstr "`Python <https://github.com/touilleMan/godot-python>`__"
 
-#, fuzzy
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
-msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+msgstr "`Rust <https://github.com/godot-rust/godot-rust>`__"
 
 msgid ""
 "Not all bindings mentioned here may be production-ready. Make sure to "
@@ -169,3 +159,7 @@ msgid ""
 "Also, double-check whether the binding is compatible with the Godot version "
 "you're using."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

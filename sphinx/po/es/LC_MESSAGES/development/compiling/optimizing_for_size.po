@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,12 +138,96 @@ msgid ""
 "reduced by about 15%."
 msgstr ""
 
-msgid "Disabling advanced GUI nodes"
-msgstr ""
+#, fuzzy
+msgid "Disabling advanced GUI objects"
+msgstr "Deshabilitar objetos específicos"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+#, fuzzy
+msgid "FileDialog"
+msgstr "Ventana de Archivos"
+
+msgid "PopupMenu"
+msgstr ""
+
+#, fuzzy
+msgid "Tree"
+msgstr "Árbol de Escenas"
+
+#, fuzzy
+msgid "TextEdit"
+msgstr "Editor de Texto"
+
+msgid "TreeItem"
+msgstr ""
+
+#, fuzzy
+msgid "OptionButton"
+msgstr "Optimización"
+
+msgid "SpinBox"
+msgstr ""
+
+#, fuzzy
+msgid "ColorPicker"
+msgstr "Espacio de color"
+
+msgid "ColorPickerButton"
+msgstr ""
+
+#, fuzzy
+msgid "RichTextLabel"
+msgstr "BBCode en RichTextLabel"
+
+#, fuzzy
+msgid "RichTextEffect"
+msgstr "Efecto"
+
+#, fuzzy
+msgid "CharFXTransform"
+msgstr "Reestablecer Transformación"
+
+msgid "PopupDialog"
+msgstr ""
+
+#, fuzzy
+msgid "WindowDialog"
+msgstr "Windows"
+
+#, fuzzy
+msgid "AcceptDialog"
+msgstr "Ventana de Archivos"
+
+#, fuzzy
+msgid "ConfirmationDialog"
+msgstr "Configuración"
+
+#, fuzzy
+msgid "MarginContainer"
+msgstr "Margin Container"
+
+msgid "ViewportContainer"
+msgstr "ViewportContainer"
+
+#, fuzzy
+msgid "SplitContainer"
+msgstr "Split Container"
+
+#, fuzzy
+msgid "HSplitContainer"
+msgstr "Split Container"
+
+msgid "GraphNode"
+msgstr ""
+
+msgid "GraphEdit"
 msgstr ""
 
 msgid "Disabling unwanted modules"
@@ -181,3 +265,7 @@ msgstr ""
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

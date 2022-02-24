@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,21 @@ msgid ""
 "input actions, and code player movement. By the end, you'll have a playable "
 "character that moves in eight directions."
 msgstr ""
+"在接下来的两节课程中，我们将会设计玩家场景、注册自定义输入动作、编写玩家移动"
+"代码。在最后，你将会得到一个可以八方向移动的可游玩角色。"
 
 msgid ""
 "Create a new scene by going to the Scene menu in the top-left and clicking "
 "*New Scene*. Create a *KinematicBody* node as the root and name it *Player*."
 msgstr ""
+"创建一个新场景，在左上角的“场景”菜单中点击\\ *新建场景*\\ 即可。创建一个 "
+"*KinematicBody* 节点作为根节点，并将其命名为 *Player*\\ （玩家）。"
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -41,36 +49,54 @@ msgid ""
 "dictate their movement. You will see how we use the node's unique features "
 "when we code the jump and squash mechanics."
 msgstr ""
+"动力学实体（Kinematic Body）对应的是 2D 游戏教程中的区域（Area）和刚体"
+"（Rigid Body）。它与刚体类似，可以移动并与环境发生碰撞，但它的运动并不是由物"
+"理引擎控制的，完全掌控在你的手上。编写跳跃踩踏机制时，就会看到如何使用该节点"
+"的这一独一无二的特性。"
 
-#, fuzzy
 msgid ""
 "To learn more about the different physics node types, see the :ref:"
 "`doc_physics_introduction`."
 msgstr ""
-"本文假设您熟悉Godot中的各种物理体. 否则请先阅读 :ref:"
-"`doc_physics_introduction` ."
+"要学习更多关于不同物理节点类型的内容，请参阅 :ref:"
+"`doc_physics_introduction`\\ 。"
 
 msgid ""
 "For now, we're going to create a basic rig for our character's 3D model. "
 "This will allow us to rotate the model later via code while it plays an "
 "animation."
 msgstr ""
+"现在，我们将为角色的 3D 模型创建一个基本的装备。稍后我们将在播放动画时通过代"
+"码旋转模型。"
 
 msgid ""
 "Add a *Spatial* node as a child of *Player* and name it *Pivot*. Then, in "
 "the FileSystem dock, expand the ``art/`` folder by double-clicking it and "
 "drag and drop ``player.glb`` onto the *Pivot* node."
 msgstr ""
+"为 *Player* 添加一个 *Spatial* 节点作为子项，命名为 *Pivot*\\ （轴心）。然后"
+"在文件系统面板中，双击展开 ``art/`` 文件夹，将 ``player.glb`` 拖放到 *Pivot* "
+"节点上。"
 
 msgid "|image1|"
+msgstr "|image1|"
+
+#, fuzzy
+msgid "image1"
 msgstr "|image1|"
 
 msgid ""
 "This should instantiate the model as a child of *Pivot*. You can rename it "
 "to *Character*."
 msgstr ""
+"这样应该就会把这个模型实例化为 *Pivot* 的子项。你可以将其重命名为 "
+"*Character*\\ （角色）。"
 
 msgid "|image2|"
+msgstr "|image2|"
+
+#, fuzzy
+msgid "image2"
 msgstr "|image2|"
 
 msgid ""
@@ -80,6 +106,10 @@ msgid ""
 "designed the model in `Blender 3D <https://www.blender.org/>`__ and exported "
 "it to GLTF."
 msgstr ""
+"``.glb`` 文件包含基于开源的 GLTF 2.0 规范的 3D 场景数据。它们是一种现代的、强"
+"大的并替代 FBX 等专有格式的文件，Godot 也支持这种格式。为了制作这些文件，我们"
+"在 `Blender 3D <https://www.blender.org/>`__ 中设计了模型，并将其导出为 "
+"GLTF。"
 
 msgid ""
 "As with all kinds of physics nodes, we need a collision shape for our "
@@ -87,8 +117,15 @@ msgid ""
 "and add a *CollisionShape*. In the *Inspector*, assign a *SphereShape* to "
 "the *Shape* property. The sphere's wireframe appears below the character."
 msgstr ""
+"与所有类型的物理节点一样，我们需要一个碰撞形状，让我们的角色与环境碰撞。再次"
+"选择 *Player* 节点并添加 *CollisionShape*\\。在 *检查器* 中，将 "
+"*SphereShape* 分配给 *Shape* 属性。球体的线框显示在角色下方。"
 
 msgid "|image3|"
+msgstr "|image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "|image3|"
 
 msgid ""
@@ -97,20 +134,31 @@ msgid ""
 "dragging the orange dot in the viewport. My sphere has a radius of about "
 "``0.8`` meters."
 msgstr ""
+"它将是物理引擎用来与环境碰撞的形状，因此我们希望它更适合 3D 模型。通过拖动视"
+"口中的橙色点将其缩小一点。我的球体半径约为 ``0.8`` 米。"
 
 msgid ""
 "Then, move the shape up so its bottom roughly aligns with the grid's plane."
-msgstr ""
+msgstr "然后，向上移动形状，使其底部与网格平面大致对齐。"
 
 msgid "|image4|"
+msgstr "|image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "|image4|"
 
 msgid ""
 "You can toggle the model's visibility by clicking the eye icon next to the "
 "*Character* or the *Pivot* nodes."
 msgstr ""
+"您可以通过单击 *Character* 或 *Pivot* 节点旁边的眼睛图标来切换模型的可见性。"
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid "Save the scene as ``Player.tscn``."
@@ -119,7 +167,7 @@ msgstr "将场景保存为 ``Player.tscn``\\ 。"
 msgid ""
 "With the nodes ready, we can almost get coding. But first, we need to define "
 "some input actions."
-msgstr ""
+msgstr "节点准备就绪后，我们开始编写程序。但首先，我们需要定义一些输入动作。"
 
 msgid "Creating input actions"
 msgstr "创建输入事件"
@@ -144,6 +192,10 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
+#, fuzzy
+msgid "image6"
+msgstr "|image6|"
+
 msgid ""
 "At the top, there are multiple tabs. Click on *Input Map*. This window "
 "allows you to add new actions at the top; they are your labels. In the "
@@ -153,6 +205,10 @@ msgstr ""
 "签。下半部分可以为这些动作绑定按键。"
 
 msgid "|image7|"
+msgstr "|image7|"
+
+#, fuzzy
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
@@ -177,12 +233,20 @@ msgstr "要添加动作，可以在顶部的框中输入名称然后按回车键
 msgid "|image8|"
 msgstr "|image8|"
 
+#, fuzzy
+msgid "image8"
+msgstr "|image8|"
+
 msgid ""
 "Create the five actions. Your window should have them all listed at the "
 "bottom."
 msgstr "创建这五个动作。它们应该都会列在你窗口的底部。"
 
 msgid "|image9|"
+msgstr "|image9|"
+
+#, fuzzy
+msgid "image9"
 msgstr "|image9|"
 
 msgid ""
@@ -195,6 +259,10 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
+#, fuzzy
+msgid "image10"
+msgstr "|image10|"
+
 msgid ""
 "This option allows you to add a keyboard input. A popup appears and waits "
 "for you to press a key. Press the left arrow key and click *OK*."
@@ -205,10 +273,18 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
+#, fuzzy
+msgid "image11"
+msgstr "|image11|"
+
 msgid "Do the same for the A key."
 msgstr "请用 A 键重复此操作。"
 
 msgid "|image12|"
+msgstr "|image12|"
+
+#, fuzzy
+msgid "image12"
 msgstr "|image12|"
 
 msgid ""
@@ -218,6 +294,10 @@ msgstr ""
 "现在让我们为手柄左摇杆添加支持。再次点击“+”按钮，这一次选择\\ *摇杆轴*\\ 。"
 
 msgid "|image13|"
+msgstr "|image13|"
+
+#, fuzzy
+msgid "image13"
 msgstr "|image13|"
 
 msgid ""
@@ -234,6 +314,10 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
+#, fuzzy
+msgid "image14"
+msgstr "|image14|"
+
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
 "D, and the left joystick's right axis to ``move_right``. After binding all "
@@ -243,6 +327,10 @@ msgstr ""
 "``move_right``\\ 。全部绑定完后，你的界面应该类似这样。"
 
 msgid "|image15|"
+msgstr "|image15|"
+
+#, fuzzy
+msgid "image15"
 msgstr "|image15|"
 
 msgid ""
@@ -256,16 +344,28 @@ msgstr ""
 msgid "|image16|"
 msgstr "|image16|"
 
+#, fuzzy
+msgid "image16"
+msgstr "|image16|"
+
 msgid "Leave the default values and click the *Add* button."
 msgstr "请保持默认值，然后点击\\ *添加*\\ 按钮。"
 
 msgid "|image17|"
 msgstr "|image17|"
 
+#, fuzzy
+msgid "image17"
+msgstr "|image17|"
+
 msgid "Your jump input action should look like this."
 msgstr "你的跳跃输入动作应该看上去类似这样。"
 
 msgid "|image18|"
+msgstr "|image18|"
+
+#, fuzzy
+msgid "image18"
 msgstr "|image18|"
 
 msgid ""
@@ -277,3 +377,7 @@ msgstr ""
 
 msgid "In the next part, we'll code and test the player's movement."
 msgstr "在下一部分，我们将为玩家的移动进行编程和测试。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Godot's design philosophy"
 msgstr "Godotの設計哲学"
 
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
 msgstr "一通り学んだところで、Godotのデザインについて説明しましょう。"
 
@@ -47,12 +46,11 @@ msgstr ""
 "したエンジンがあるかどうかを知るには、自分で試してみて、その設計と制限を理解"
 "する必要があります。"
 
-#, fuzzy
 msgid ""
 "Please watch `Godot explained in 5 minutes <https://www.youtube.com/watch?"
 "v=KjX5llYZ5eQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"エンジンの機能の概要をお探しの場合は、Youtubeにある\\ `Discover Godot 3, the "
+"エンジンの機能の概要を知りたい場合は、Youtubeにある\\ `Discover Godot 3, the "
 "Free game engine <https://youtu.be/4v3qge-3CqQ>`_\\ (英語)をご覧ください。"
 
 msgid "Object-oriented design and composition"
@@ -112,6 +110,9 @@ msgid "|image0|"
 msgstr "\\ |image0|"
 
 #, fuzzy
+msgid "image0"
+msgstr "\\ |image0|"
+
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -120,27 +121,33 @@ msgid ""
 "nodes work independently from one another."
 msgstr ""
 "また、Godotにはノードと呼ばれるさまざまなタイプのオブジェクトがあり、それぞれ"
-"に特定の目的があります。ノードはツリーの一部であり、常に親からNodeクラスまで"
-"継承します。エンジンには衝突シェイプなどのコンポーネントもありますが、これら"
-"は例外であり、標準ではありません。"
+"に特定の目的を持っていることに注意してください。ノードはツリーの一部であり、"
+"常に親からNodeクラスまでを継承します。エンジンには、親の物理ボディが使用する"
+"コリジョンシェイプなどのノードがありますが、ほとんどのノードは互いに独立して"
+"動作します。"
 
 msgid ""
 "In other words, Godot's nodes do not work like components in some other game "
 "engines."
 msgstr ""
+"つまりGodotのノードは、他のゲームエンジンのコンポーネントのようには動作しな"
+"い、ということです。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
 #, fuzzy
+msgid "image1"
+msgstr "\\ |image1|"
+
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"SpriteはNode2D、CanvasItem、Nodeです。トランスフォームや、カスタムシェイプを"
-"描画してカスタムシェーダでレンダリングする機能など、3つの親クラスのすべてのプ"
-"ロパティと機能を備えています。"
+"スプライトは、Node2D、CanvasItem、Nodeの3つの要素を持っています。スプライト"
+"は、トランスフォームやカスタムシェイプの描画、カスタムシェーダーによるレンダ"
+"リングなど、3つの親クラスのすべてのプロパティと機能を備えています。"
 
 msgid "All-inclusive package"
 msgstr "オールインワン・パッケージ"
@@ -159,6 +166,10 @@ msgstr ""
 msgid "|image2|"
 msgstr "\\ |image2|"
 
+#, fuzzy
+msgid "image2"
+msgstr "\\ |image2|"
+
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
 "experience. You can still work with external programs as long as there is an "
@@ -171,28 +182,26 @@ msgstr ""
 "<https://github.com/vnen/godot-tiled-importer>`_\\ のようなプラグインを作成す"
 "るのもいいでしょう。"
 
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDScript "
 "and VisualScript, along with C#. They're designed for the needs of game "
 "developers and game designers, and they're tightly integrated in the engine "
 "and the editor."
 msgstr ""
-"それが、Godotが独自のプログラミング言語であるGDscriptとVisualScriptを、C#と一"
-"緒に提供している理由のひとつでもあります。これらはゲーム開発者やゲームデザイ"
-"ナーのニーズに合わせて設計されていて、エンジンとエディタに緊密に統合されてい"
-"ます。"
+"GodotがC#とともに独自のプログラミング言語であるGDScriptとVisualScriptを提供し"
+"ているのもそのためです。これらの言語は、ゲーム開発者やゲームデザイナーのニー"
+"ズに合わせて設計されており、エンジンやエディタにしっかりと統合されています。"
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
 "is also optimized for gameplay code with built-in types like Vectors and "
 "Colors."
 msgstr ""
-"GDScriptはPythonに似た文法で、コードがシンプルになりますが、型を検出でき、静"
-"的言語クオリティの自動補完を実現しています。さらにVectorやColorのような組み込"
-"み型により、ゲームプレイ用コードの性能は最適化されます。"
+"GDScriptでは、インデントベースの構文を使ってコードを書くことができ、しかも型"
+"を検出して静的型付け言語並の品質のオートコンプリートを提供します。また、ベク"
+"ターやカラーなどの組み込み型を使ったゲーム開発用のコードに最適化されていま"
+"す。"
 
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
@@ -204,6 +213,10 @@ msgstr ""
 "ドを作成できます。"
 
 msgid "|image3|"
+msgstr "\\ |image3|"
+
+#, fuzzy
+msgid "image3"
 msgstr "\\ |image3|"
 
 msgid ""
@@ -229,6 +242,10 @@ msgstr ""
 "参照してください。"
 
 msgid "|image4|"
+msgstr "\\ |image4|"
+
+#, fuzzy
+msgid "image4"
 msgstr "\\ |image4|"
 
 msgid ""
@@ -332,6 +349,10 @@ msgstr ""
 msgid "|image5|"
 msgstr "\\ |image5|"
 
+#, fuzzy
+msgid "image5"
+msgstr "\\ |image5|"
+
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
 "tools for its node-based programming system and for the rest of the "
@@ -356,6 +377,9 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"エディタは完全にC++で書かれており、静的にバイナリにコンパイルされています。つ"
+"まり、``project.godot``のファイルを持つような典型的なプロジェクトとしてイン"
+"ポートすることはできません。"
 
 msgid "Separate 2D and 3D engines"
 msgstr "2Dと3Dのエンジンを分割"
@@ -370,3 +394,7 @@ msgstr ""
 "シーンの基本単位はピクセルです。**\\ 描写エンジンは分離していますが、3D内で2D"
 "レンダーも、2D内で3Dレンダーも、3Dワールドの画面に2Dスプライトやインター"
 "フェースをオーバーレイすることもできます。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

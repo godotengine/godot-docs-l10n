@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,9 +36,9 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
-"在GDScript中, 存在全局 :ref:`preload <class_@GDScript_method_preload>` 方法. "
-"它尽可能早地加载资源, 以便提前进行 ``加载`` 操作, 并避免在执行性能敏感的代码"
-"时加载资源."
+"在 GDScript 中，存在全局 :ref:`preload <class_@GDScript_method_preload>` 方"
+"法。它尽可能早地加载资源，以便提前进行“加载”操作，并避免在执行性能敏感的代码"
+"时加载资源。"
 
 msgid ""
 "Its counterpart, the :ref:`load <class_@GDScript_method_load>` method, loads "
@@ -200,3 +200,7 @@ msgid ""
 msgstr ""
 "有关在运行时中, 可以交换场景的各种方式的示例, 请参见文档 :ref:`手动更改场景 "
 "<doc_change_scenes_manually>` ."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

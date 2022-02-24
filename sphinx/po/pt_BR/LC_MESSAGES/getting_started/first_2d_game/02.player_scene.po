@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,6 @@ msgstr ""
 "configure a propriedade ``Scale`` para ``(0.5, 0.5)``. Você pode encontrá-la "
 "no Inspetor na seção ``Node2D``."
 
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -171,12 +170,12 @@ msgid ""
 "cover the sprite:"
 msgstr ""
 "Finalmente, adicione um :ref:`CollisionShape2D <class_CollisionShape2D>` "
-"(forma de colisão 2D) como filho de ``Jogador``. Isso determina a \"caixa de "
-"acerto\" do jogador, ou seja, os limites da sua área de colisão. Para este "
-"personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é o que melhor se "
-"encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
-"\" -> \"Novo CapsuleShape2D\". Utilizando os dois manipuladores, "
-"redimensione a forma para cobrir o sprite:"
+"(forma de colisão 2D) como filho de ``Jogador``. Isso determina a "
+"\"hitbox\" (caixa de acerto) do jogador, ou seja, os limites da sua área de "
+"colisão. Para este personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é "
+"o que melhor se encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, "
+"clique em \"[vazio]\"\" -> \"Novo CapsuleShape2D\". Utilizando os dois "
+"manipuladores, redimensione a forma para cobrir o sprite:"
 
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr ""
@@ -190,3 +189,7 @@ msgid ""
 "it. Then, we'll set up collision detection to know when the player got hit "
 "by something."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

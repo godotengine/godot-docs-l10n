@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -350,8 +350,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 "Le choix des tuiles est contrôlé par des bitmasks. Les bitmasks peuvent être "
 "ajoutés en cliquant sur \"Bitmask\", puis en cliquant sur des parties des "
@@ -455,7 +455,7 @@ msgid "White: \"off\""
 msgstr "Blanc : \"off\""
 
 msgid "3x3 (minimal)"
-msgstr "3x3 (minimal)"
+msgstr "3x3 (minimum)"
 
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
@@ -668,3 +668,7 @@ msgid ""
 msgstr ""
 "Des outils comme copier, coller et remplir peuvent être trouvés dans le menu "
 "\"TileMap\" en haut à droite."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

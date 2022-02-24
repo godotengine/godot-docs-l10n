@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,11 +246,11 @@ msgid ""
 msgstr ""
 "transformには :ref:`class_Basis` (transform.basisサブプロパティ)があり、これ"
 "は3つの :ref:` class_Vector3` ベクトルで構成されています。これらは "
-"``transform.basis`` プロパティを介してアクセスされ、\\ ``transform.basis.x``"
-"\\ 、\\ ``transform.basis.y``\\ 、および ``transform.basis.z`` から直接アクセ"
-"スできます。各ベクトルは、軸が回転した方向を指しているため、ノードの総回転を"
-"効果的に表します。スケール(均一である限り)は、軸の長さから推測することもでき"
-"ます。\\ *basis* は3x3マトリックスとして解釈され、\\ ``transform.basis[x]"
+"``transform.basis`` プロパティを介してアクセスされ、\\ ``transform.basis."
+"x``\\ 、\\ ``transform.basis.y``\\ 、および ``transform.basis.z`` から直接ア"
+"クセスできます。各ベクトルは、軸が回転した方向を指しているため、ノードの総回"
+"転を効果的に表します。スケール(均一である限り)は、軸の長さから推測することも"
+"できます。\\ *basis* は3x3マトリックスとして解釈され、\\ ``transform.basis[x]"
 "[y]`` として使用することもできます。"
 
 msgid "A default basis (unmodified) is akin to:"
@@ -497,3 +497,7 @@ msgstr ""
 "Godotの `オンラインコミュニティ <https://godotengine.org/community> `_ でこの"
 "トピックに関するヘルプを依頼することを躊躇しないでください。十分に自信が持て"
 "たら、次は他の人を助けてください！"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

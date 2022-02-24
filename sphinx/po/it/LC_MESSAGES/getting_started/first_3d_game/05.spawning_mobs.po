@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Spawning monsters"
-msgstr "Generare Mobs"
+msgstr "Spawning mostri"
 
 msgid ""
 "In this part, we're going to spawn monsters along a path randomly. By the "
@@ -27,6 +27,10 @@ msgid ""
 msgstr ""
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -49,12 +53,20 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
+#, fuzzy
+msgid "image1"
+msgstr "|image1|"
+
 msgid ""
 "In the left menu, navigate down to *Display -> Window*. On the right, set "
 "the *Width* to ``720`` and the *Height* to ``540``."
 msgstr ""
 
 msgid "|image2|"
+msgstr "|image2|"
+
+#, fuzzy
+msgid "image2"
 msgstr "|image2|"
 
 #, fuzzy
@@ -84,6 +96,10 @@ msgid "|image3|"
 msgstr "|image3|"
 
 #, fuzzy
+msgid "image3"
+msgstr "|image3|"
+
+#, fuzzy
 msgid "Adding placeholder cylinders"
 msgstr "Tipi segnaposto"
 
@@ -96,10 +112,18 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
+#, fuzzy
+msgid "image4"
+msgstr "|image4|"
+
 msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
 msgstr ""
 
 msgid "|image5|"
+msgstr "|image5|"
+
+#, fuzzy
+msgid "image5"
 msgstr "|image5|"
 
 msgid ""
@@ -110,12 +134,20 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
+#, fuzzy
+msgid "image6"
+msgstr "|image6|"
+
 msgid ""
 "The grid is a bit distracting for me. You can toggle it by going to the "
 "*View* menu in the toolbar and clicking *View Grid*."
 msgstr ""
 
 msgid "|image7|"
+msgstr "|image7|"
+
+#, fuzzy
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
@@ -127,12 +159,20 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
+#, fuzzy
+msgid "image8"
+msgstr "|image8|"
+
 msgid ""
 "Place the cylinder so it's right outside the camera's view in the top-left "
 "corner."
 msgstr ""
 
 msgid "|image9|"
+msgstr "|image9|"
+
+#, fuzzy
+msgid "image9"
 msgstr "|image9|"
 
 msgid ""
@@ -151,10 +191,18 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
+#, fuzzy
+msgid "image10"
+msgstr "|image10|"
+
 msgid "Move them to the right by dragging the red X axis."
 msgstr ""
 
 msgid "|image11|"
+msgstr "|image11|"
+
+#, fuzzy
+msgid "image11"
 msgstr "|image11|"
 
 msgid ""
@@ -176,12 +224,20 @@ msgstr ""
 msgid "|image12|"
 msgstr "|image12|"
 
+#, fuzzy
+msgid "image12"
+msgstr "|image12|"
+
 msgid ""
 "In the *Inspector*, expand the *Material* section and assign a "
 "*SpatialMaterial* to slot *0*."
 msgstr ""
 
 msgid "|image13|"
+msgstr "|image13|"
+
+#, fuzzy
+msgid "image13"
 msgstr "|image13|"
 
 msgid ""
@@ -198,24 +254,34 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
+#, fuzzy
+msgid "image14"
+msgstr "|image14|"
+
 msgid ""
 "We can now use the cylinders as guides. Fold them in the *Scene* dock by "
 "clicking the grey arrow next to them. Moving forward, you can also toggle "
 "their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
+
+#, fuzzy
+msgid "image15"
+msgstr "|image15|"
 
 msgid ""
 "Add a *Path* node as a child of *Main*. In the toolbar, four icons appear. "
 "Click the *Add Point* tool, the icon with the green \"+\" sign."
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
+
+#, fuzzy
+msgid "image16"
+msgstr "|image16|"
 
 msgid "You can hover any icon to see a tooltip describing the tool."
 msgstr ""
@@ -226,17 +292,23 @@ msgid ""
 "off, you can click and drag on it to reposition it."
 msgstr ""
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
+
+#, fuzzy
+msgid "image17"
+msgstr "|image17|"
 
 #, fuzzy
 msgid "Your path should look like this."
 msgstr "Il tuo percorso dovrebbe assomigliare a questo."
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
+
+#, fuzzy
+msgid "image18"
+msgstr "|image18|"
 
 msgid ""
 "To sample random positions on it, we need a *PathFollow* node. Add a "
@@ -245,9 +317,12 @@ msgid ""
 "them for."
 msgstr ""
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|image19|"
+
+#, fuzzy
+msgid "image19"
+msgstr "|image19|"
 
 msgid "With that, we're ready to code the spawn mechanism."
 msgstr ""
@@ -284,25 +359,34 @@ msgid ""
 "from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
 msgstr ""
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|image20|"
+
+#, fuzzy
+msgid "image20"
+msgstr "|image20|"
 
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
 msgstr ""
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|image21|"
+
+#, fuzzy
+msgid "image21"
+msgstr "|image21|"
 
 msgid ""
 "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
 "*Autostart* so it automatically starts when we run the game."
 msgstr ""
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|image22|"
+
+#, fuzzy
+msgid "image22"
+msgstr "|image22|"
 
 msgid ""
 "Timers emit a ``timeout`` signal every time they reach the end of their "
@@ -316,17 +400,23 @@ msgid ""
 "double-click the ``timeout`` signal."
 msgstr ""
 
-#, fuzzy
 msgid "|image23|"
-msgstr "|image2|"
+msgstr "|image23|"
+
+#, fuzzy
+msgid "image23"
+msgstr "|image23|"
 
 #, fuzzy
 msgid "Connect it to the *Main* node."
 msgstr "Collegalo al nodo *Main*."
 
-#, fuzzy
 msgid "|image24|"
-msgstr "|image2|"
+msgstr "|image24|"
+
+#, fuzzy
+msgid "image24"
+msgstr "|image24|"
 
 msgid ""
 "This will take you back to the script, with a new empty "
@@ -367,11 +457,18 @@ msgid ""
 "spawn and move in a straight line."
 msgstr ""
 
-#, fuzzy
 msgid "|image25|"
-msgstr "|image2|"
+msgstr "|image25|"
+
+#, fuzzy
+msgid "image25"
+msgstr "|image25|"
 
 msgid ""
 "For now, they bump and slide against one another when their paths cross. "
 "We'll address this in the next part."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

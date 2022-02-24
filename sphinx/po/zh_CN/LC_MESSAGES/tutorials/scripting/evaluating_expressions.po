@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,51 +65,55 @@ msgstr "操作符"
 msgid "Notes"
 msgstr "注意"
 
-#, fuzzy
 msgid "Addition ``+``"
-msgstr "补充说明"
+msgstr "加 ``+``"
 
 msgid ""
-"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" world"
-"\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
+"Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
+"world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
+"还可以用于连接字符串和数组：\\ - ``\"hello\" + \" world\"`` = ``hello "
+"world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 
-#, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "减法"
+msgstr "减（\\ ``-``\\ ）"
 
-#, fuzzy
 msgid "Multiplication (``*``)"
-msgstr "multiplicative"
+msgstr "乘（\\ ``*``\\ ）"
 
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "除（\\ ``/``\\ ）"
 
 msgid ""
 "Performs and integer division if both operands are integers. If at least one "
 "of them is a floating-point number, returns a floating-point value."
 msgstr ""
+"两个操作数都是整数时执行整数除法。如果至少有一个是浮点数，就会返回浮点值。"
 
 msgid "Modulo (``%``)"
-msgstr ""
+msgstr "求余（\\ ``%``\\ ）"
 
 msgid "Returns the remainder of an integer division."
-msgstr ""
+msgstr "返回整数除法的余数。"
 
 msgid ""
 "Spaces around operators are optional. Also, keep in mind the usual `order of "
 "operations <https://en.wikipedia.org/wiki/Order_of_operations>`__ applies. "
 "Use parentheses to override the order of operations if needed."
 msgstr ""
+"操作符周围的空格是可选的。另外请记住，此处适用一般的\\ `运算次序 <https://zh."
+"wikipedia.org/zh-cn/%E9%81%8B%E7%AE%97%E6%AC%A1%E5%BA%8F>`__\\ 。必要时请使用"
+"括号来覆盖运算符的次序。"
 
 msgid ""
 "All the Variant types supported in Godot can be used: integers, floating-"
 "point numbers, strings, arrays, dictionaries, colors, vectors, …"
 msgstr ""
+"Godot 所支持的所有 Variant 类型都可以使用：整数、浮点数、字符串、数组、字典、"
+"颜色、向量……"
 
 msgid "Arrays and dictionaries can be indexed like in GDScript::"
-msgstr ""
+msgstr "数组与字典的索引方法与 GDScript 一致： ::"
 
 msgid "Passing variables to an expression"
 msgstr "向表达式传递变量"
@@ -119,12 +123,16 @@ msgid ""
 "available in the expression's \"context\" and will be substituted when used "
 "in the expression::"
 msgstr ""
+"你可以将变量传入表达式。这些变量就会进入这个表达式的“上下文”，在表达式中使用"
+"就会被替换： ::"
 
 msgid ""
 "Both the variable names and variable values **must** be specified as an "
 "array, even if you only define one variable. Also, variable names are **case-"
 "sensitive**."
 msgstr ""
+"变量的名称和变量的值都\\ **必须**\\ 以数组的形式指定，即便只定义一个变量也是"
+"如此。而且，变量名是\\ **大小写敏感**\\ 的。"
 
 msgid "Setting a base instance for the expression"
 msgstr "为表达式设置基础实例"
@@ -132,7 +140,7 @@ msgstr "为表达式设置基础实例"
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
 "expression has no base instance associated to it."
-msgstr ""
+msgstr "表达式默认的基础实例是 ``null``\\ 。这意味着该表达式没有关联基础实例。"
 
 msgid ""
 "When calling :ref:`Expression.execute() <class_Expression_method_execute>`, "
@@ -140,20 +148,23 @@ msgid ""
 "object instance such as ``self``, another script instance or even a "
 "singleton::"
 msgstr ""
+"调用 :ref:`Expression.execute() <class_Expression_method_execute>` 时，你可以"
+"将参数 ``base_instance`` 的值设为 ``self``\\ 、另一个脚本实例、单例等特定对象"
+"的实例： ::"
 
 msgid "Associating a base instance allows doing the following:"
-msgstr ""
+msgstr "关联基础实例可以实现以下功能："
 
 msgid "Reference the instance's constants (``const``) in the expression."
-msgstr ""
+msgstr "在表达式中引用实例的常量（\\ ``const``\\ ）。"
 
 msgid "Reference the instance's member variables (``var``) in the expression."
-msgstr ""
+msgstr "在表达式中引用实例的成员变量（\\ ``var``\\ ）。"
 
 msgid ""
 "Call methods defined in the instance and use their return values in the "
 "expression."
-msgstr ""
+msgstr "在表达式中调用定义在实例上的方法，并使用其返回值。"
 
 msgid ""
 "Setting a base instance to a value other than ``null`` allows referencing "
@@ -162,6 +173,9 @@ msgid ""
 "cheating in your game, or may even introduce security vulnerabilities if you "
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
+"将基础实例设为非 ``null`` 值，就可以引用常量、成员变量、调用定义在该实例的附"
+"加脚本中的方法。允许用户输入表达式可能会导致在你的游戏出现作弊，如果你允许任"
+"意客户的在其他玩家的设备上运行表达式的话，甚至还可能引入安全隐患。"
 
 msgid "Example script"
 msgstr "示例脚本"
@@ -191,3 +205,7 @@ msgid ""
 msgstr ""
 "然而，与 GDScript 不同，参数\\ **始终是必须的**\\ ，即使类参考中说明此参数为"
 "可选。不过，为表达式绑定了基础实例时，用户定义函数的参数没有此限制。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

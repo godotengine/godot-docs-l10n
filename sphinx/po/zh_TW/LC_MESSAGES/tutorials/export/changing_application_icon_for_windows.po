@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,11 @@ msgid ""
 msgstr ""
 "也可以使用這個 `ImageMagick <https://www.imagemagick.org/>`_ 指令來將 PNG 圖"
 "片轉換為對 hiDPI 友善的 ICO 檔案："
+
+msgid ""
+"Depending on which version of ImageMagick you installed, you might need to "
+"leave out the ``magick`` and run this command instead:"
+msgstr ""
 
 msgid ""
 "For the ICO file to effectively replace the default Godot icon, it must "
@@ -178,3 +183,7 @@ msgstr ""
 "若在 Windows 10 上圖示沒有正常顯示，請試試清除圖示快取。要清除快取，請開啟 **"
 "執行** 並呼叫指令 ``ie4uinit.exe -ClearIconCache`` 或 ``ie4uinit.exe -"
 "show`` 。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

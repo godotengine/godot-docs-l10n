@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,7 +188,7 @@ msgid ""
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
 "Il faut privilégier la conservation des données en interne (interne à une "
-"scène) puisque placer une dépendance à contexte externe, même faiblement "
+"scène) puisque placer une dépendance à un contexte externe, même faiblement "
 "couplé, signifie que le nœud s'attendra à ce que quelque chose arrive dans "
 "son environnement. Les philosophies de conception du projet devraient "
 "empêcher que cela ne se produise. Sinon, les contraintes inhérentes au code "
@@ -576,7 +576,6 @@ msgstr ""
 "dans une branche distincte du monde \"World\" peut contribuer à simplifier "
 "la gestion des connexions de jeu et similaires."
 
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "
@@ -602,3 +601,7 @@ msgstr ""
 "une relation de composition. Mais bien qu'on a toujours la possibilité de "
 "déplacer les nœuds, il est toujours préférable que ces déplacements soient "
 "évités par défaut."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

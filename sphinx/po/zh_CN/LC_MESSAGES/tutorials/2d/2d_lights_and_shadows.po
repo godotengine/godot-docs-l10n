@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,10 @@ msgid ""
 "downloaded from the Project Manager. Launch Godot and in the top bar select "
 "\"Templates\" and search for \"2D Lights and Shadows Demo\"."
 msgstr ""
-"本教程的所有资源都可以在github上的 `官方演示存储库 <https://github.com/"
-"godotengine/godot-demo-projects>`_ 中找到. 我建议您在开始之前下载它. 或者, 也"
-"可以在项目管理器中下载. 在启动Godot时在顶部栏中选择 \"模板(Templates)\" 选项"
-"卡并搜索 \"2D Lights and Shadows Demo\"."
+"本教程的所有资源都可以在 GitHub 上的\\ `官方演示仓库 <https://github.com/"
+"godotengine/godot-demo-projects>`_\\ 中找到。我建议您在开始之前下载。或者也可"
+"以在项目管理器中下载。在启动 Godot 时在顶部栏中选择“模板”选项卡并搜索“2D "
+"Lights and Shadows Demo”。"
 
 msgid "Setup"
 msgstr "场景布置"
@@ -122,13 +122,13 @@ msgstr ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 
 msgid ""
 ":ref:`CanvasModulate<class_CanvasModulate>` is used to darken the scene."
-msgstr ":ref:`CanvasModulate<class_CanvasModulate>` 用于使场景变暗."
+msgstr ":ref:`CanvasModulate<class_CanvasModulate>` 用于使场景变暗。"
 
 msgid ""
 ":ref:`Sprites <class_Sprite>` are used to display the textures for the light "
 "blobs, the background, and for the shadow casters."
 msgstr ""
-":ref:`Sprites <class_Sprite>` 用于显示灯泡, 背景和产生阴影的物体的纹理."
+":ref:`Sprites <class_Sprite>` 用于显示灯泡、背景和产生阴影的物体的纹理。"
 
 msgid ""
 ":ref:`Light2Ds <class_Light2D>` are used to light the scene. The way a light "
@@ -497,3 +497,7 @@ msgstr ""
 "您需要稍微调整设置以找到适合你项目的设置. 没有对每个人都正确的解决方案, 这就"
 "是Godot为什么提供如此多灵活性. 只要记住 ``filter`` 值越高, 阴影的计算成本也越"
 "高就行了."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

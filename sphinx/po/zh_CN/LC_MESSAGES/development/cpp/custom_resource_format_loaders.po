@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgid ""
 "again, the previous loaded Resource will be referenced. Naturally, loaded "
 "resources must be stateless."
 msgstr ""
-"``ResourceFormatLoader`` 是一个用来加载文件资源的工厂接口. 资源是基本容器. 当"
-"再次在同一文件路径上调用load时, 将引用先前加载的Resource. 自然, 加载的资源必"
-"须是无状态的."
+"ResourceFormatLoader 是一个用来加载文件资源的工厂接口。资源是基本容器。当再次"
+"对同一文件路径调用 load 时，将引用先前加载的 Resource。自然，加载的资源必须是"
+"无状态的。"
 
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
@@ -135,12 +135,12 @@ msgstr "注意事项"
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
-msgstr "一些库可能未定义某些通用例程, 例如IO处理. 因此, 需要Godot调用转换."
+msgstr "一些库可能未定义 IO 处理等通用例程。因此，需要 Godot 调用转换。"
 
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
-msgstr "例如, 下面是将 ``FileAccess`` 调用转换为 ``std::istream`` 的代码."
+msgstr "例如，下面是将 ``FileAccess`` 调用转换为 ``std::istream`` 的代码。"
 
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
@@ -176,7 +176,11 @@ msgid ""
 "Save a file called ``demo.json`` with the following contents and place it in "
 "the project's root folder:"
 msgstr ""
-"保存具有以下内容的名为 ``demo.json`` 的文件, 并将其放置在项目的根文件夹中:"
+"保存具有以下内容的名为 ``demo.json`` 的文件，并将其放置在项目的根文件夹中："
 
 msgid "Then attach the following script to any node::"
 msgstr "创建一个节点并附加下面的脚本： ::"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

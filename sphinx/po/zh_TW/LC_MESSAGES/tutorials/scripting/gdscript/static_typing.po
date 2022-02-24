@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,6 +90,9 @@ msgid ""
 "left with no autocomplete suggestions:"
 msgstr "如果之前有將節點保存在變數過，輸入句點時不會顯示自動補全建議："
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -97,6 +100,9 @@ msgid ""
 msgstr ""
 "這是因為 body 的定義是動態的，Godot 無法知道傳入函式的節點或數值的型別。若明"
 "確聲明型別，則自動補全提示會顯示節點中所有 Public 的方法與變數："
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -273,6 +279,9 @@ msgstr ""
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)`` …等。Godot 會確保該型"
 "別是否有效，而有效的話則會將腳本編輯器左邊的行號變成綠色。"
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "非安全行 (第 7 行) vs 安全行 (第 6 行與第 8 行)"
 
@@ -400,3 +409,7 @@ msgstr ""
 "型別定義的 GDScript 是強力的工具。自 Godot 3.1 版起提供，型別定義能讓使用者撰"
 "寫更有結構的程式碼、避免場景錯誤以及能建立延展性更高的系統。在未來，靜態型別"
 "也能得益於編譯器的最佳化而有更好的效能。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

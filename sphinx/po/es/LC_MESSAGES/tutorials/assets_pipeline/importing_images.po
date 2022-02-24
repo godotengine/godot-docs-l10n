@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,6 +198,13 @@ msgstr ""
 "En esta tabla, se describen cada una de las cuatro opciones junto con sus "
 "ventajas y desventajas (|good| = Mejor, |bad| = Peor):"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "y"
+
 msgid "Uncompressed"
 msgstr "Sin comprimir"
 
@@ -236,6 +243,10 @@ msgid "|bad| Large"
 msgstr "|bad| Grande"
 
 msgid "|regular| Small"
+msgstr "|regular| Pequeño"
+
+#, fuzzy
+msgid "regular"
 msgstr "|regular| Pequeño"
 
 msgid "|good| Very Small"
@@ -541,3 +552,7 @@ msgstr ""
 "Esta opción sólo se aplica a los archivos SVG. Controla la escala de la "
 "imagen SVG. La escala predeterminada (1.0) hará que el SVG importado "
 "coincida con la escala del diseño original."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid ""
 "not have such a guide yet."
 msgstr ""
 "本页面包含一份编码风格指南，Godot 本身的开发人员和贡献者都遵循该指南。因此，"
-"它的目标读者是希望为该项目做出贡献的人员，但是由于本文中提到的约定和准则被该"
+"它的目标读者是希望为该项目做出贡献的人员，但是由于本文中提到的约定和规范被该"
 "语言用户最广泛采用，所以我们建议你也这样做，尤其是如果你还没有这样的指南。"
 
 msgid ""
@@ -46,11 +46,11 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
-"本文绝不是关于如何遵循标准编码约定或最佳实践的详尽指南. 如果您不确定此处未涉"
-"及的方面, 请参阅更全面的文档, 例如 `C #编码约定 <https://docs.microsoft.com/"
-"en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ "
-"或 `框架设计指南 <https://docs.microsoft.com/en-us/dotnet/standard/design-"
-"guidelines/naming-guidelines>`_."
+"本文绝不是关于如何遵循标准编码约定或最佳实践的详尽指南。如果您不确定此处未涉"
+"及的方面，请参阅更全面的文档，例如 `C# 编码约定 <https://docs.microsoft.com/"
+"en-us/dotnet/csharp/programming-guide/inside-a-program/coding-"
+"conventions>`_\\ 或\\ `框架设计规范 <https://docs.microsoft.com/en-us/dotnet/"
+"standard/design-guidelines/naming-guidelines>`_\\ 。"
 
 msgid "Language specification"
 msgstr "语言规范"
@@ -75,7 +75,7 @@ msgid "Formatting"
 msgstr "格式"
 
 msgid "General guidelines"
-msgstr "一般性指导"
+msgstr "总体规范"
 
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
 msgstr "使用换行符( **LF** )来换行, 而不是 ``CRLF`` 或 ``CR``."
@@ -147,13 +147,13 @@ msgstr ""
 "入空白行以便于阅读."
 
 msgid "Avoid inserting a blank line:"
-msgstr "避免插入空白行:"
+msgstr "避免插入空白行："
 
 msgid "After ``{``, the opening brace."
-msgstr "在开括号 ``{`` 之后."
+msgstr "在开括号 ``{`` 之后。"
 
 msgid "Before ``}``, the closing brace."
-msgstr "在闭合括号 ``}`` 之前."
+msgstr "在闭合括号 ``}`` 之前。"
 
 msgid "After a comment block or a single-line comment."
 msgstr "在注释块或单行注释之后."
@@ -165,7 +165,7 @@ msgid "Using spaces"
 msgstr "使用空格"
 
 msgid "Insert a space:"
-msgstr "插入空格:"
+msgstr "插入一个空格："
 
 msgid "Around a binary and tertiary operator."
 msgstr "围绕二元和三元运算符."
@@ -201,10 +201,10 @@ msgstr "围绕一个lambda箭头."
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
-msgstr "在单行注释符号(``//``)之后, 并且如果在行末使用, 则在它之前."
+msgstr "在单行注释符号（\\ ``//``\\ ）之后，并且如果在行末使用，则在它之前。"
 
 msgid "Do not use a space:"
-msgstr "不要使用空格:"
+msgstr "不要使用空格："
 
 msgid "After type cast parentheses."
 msgstr "在类型转换括号后."
@@ -345,3 +345,7 @@ msgid ""
 "type, and use direct cast otherwise."
 msgstr ""
 "当值可能会成为另一种不同的类型, 请使用安全类型转换, 否则使用直接类型转换."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

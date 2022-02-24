@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Bug triage guidelines"
-msgstr "Bug 分类指南"
+msgstr "Bug 分类规范"
 
-#, fuzzy
 msgid ""
 "This page describes the typical workflow of the bug triage team aka bugsquad "
 "when handling issues and pull requests on Godot's `GitHub repository "
@@ -28,9 +27,10 @@ msgid ""
 "with the bugsquad, so do not hesitate to propose modifications to the "
 "following guidelines."
 msgstr ""
-"本页面描述了bug分类团队即bugsquad在处理问题和从Godot的 `GitHub <https://"
-"github.com/godotengine/godot>`_ 存储库上拉取请求时的典型工作流程. 它一定会与"
-"bugsquad一起发展, 所以不要犹豫对下面的指导方针提出修改."
+"本页面描述了 Bug 分类团队即 bugsquad（Bug 小队）在处理 Godot `GitHub "
+"<https://github.com/godotengine/godot>`_ 仓库的 Issue 和 Pull Request 时的典"
+"型工作流程。它一定会与 bugsquad 一起发展，所以请对下面的规范提出修改意见，不"
+"要犹豫。"
 
 msgid "Issues management"
 msgstr "问题管理"
@@ -63,9 +63,8 @@ msgstr ""
 "欢迎所有贡献者讨论任何问题, 如果在问题单上提及和/或讨论, 是与其他开发人员解决"
 "此问题的最佳方式."
 
-#, fuzzy
 msgid "For the time being, we do not use the project dashboard feature either."
-msgstr "目前, 我们也不使用项目仪表板功能."
+msgstr "目前，我们也不使用项目仪表板（Dashboard）功能。"
 
 msgid ""
 "As far as possible, we try to assign labels (and milestones, when relevant) "
@@ -76,7 +75,7 @@ msgid "Labels"
 msgstr "标签"
 
 msgid "The following labels are currently defined in the Godot repository:"
-msgstr "目前在Godot存储库中定义了以下标签:"
+msgstr "目前在Godot仓库中定义了以下标签:"
 
 msgid "**Categories:**"
 msgstr "**分类:**"
@@ -89,7 +88,7 @@ msgstr "*Archived*: 是另一个问题的副本, 或无效. 这样的问题也�
 msgid ""
 "*Breaks compat*: describes something that can only be fixed by breaking "
 "compatibility with existing projects."
-msgstr ""
+msgstr "*Breaks compat*\\ ：用于描述需要破坏已有项目兼容性才能修复的内容。"
 
 msgid "*Bug*: describes something that is not working properly."
 msgstr "*Bug*: 描述无法正常工作的内容."
@@ -98,11 +97,13 @@ msgid ""
 "*Cherrypick*: describes something that can be backported to a stable branch "
 "after being merged in the ``master`` branch."
 msgstr ""
+"*Cherrypick*\\ ：用于描述合并入 ``master`` 分支后还可以移植回稳定分支的内容。"
 
 msgid ""
 "*Crash:* describes a bug that causes the engine to crash. This label is only "
 "used for \"hard\" crashes, not freezes."
 msgstr ""
+"*Crash：*\\ 用于描述导致引擎崩溃的问题。这个标签仅适用于“硬”崩溃，卡死不算。"
 
 msgid ""
 "*Confirmed*: has been confirmed by at least one other contributor than the "
@@ -145,17 +146,23 @@ msgid ""
 "Please use `godot-proposals <https://github.com/godotengine/godot-"
 "proposals>`__ instead."
 msgstr ""
+"*Feature proposal*\\ ：用于描述实现新功能的愿望。请注意 Godot 主仓库不再接受"
+"功能请求。请换用 `godot-proposals <https://github.com/godotengine/godot-"
+"proposals>`__\\ 。"
 
 msgid ""
 "*For PR meeting*: the issue needs to be discussed in a pull request meeting. "
 "These meetings are public and are held on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_."
 msgstr ""
+"*For PR meeting*\\ ：该问题需要在拉取请求会议中进行讨论。会议是公开的，在 "
+"`Godot 贡献者聊天 <https://chat.godotengine.org/>`_\\ 中举行。"
 
+#, fuzzy
 msgid ""
-"*Junior job*: the issue is *assumed* to be an easy one to fix, which makes "
-"it a great fit for junior contributors who need to become familiar with the "
-"code base."
+"*Good first issue*: the issue is *assumed* to be an easy one to fix, which "
+"makes it a great fit for new contributors who need to become familiar with "
+"the code base."
 msgstr ""
 "*Junior job*: *假设* 是一个容易修复的问题, 这使得它非常适合需要熟悉代码库的初"
 "级贡献者."
@@ -164,11 +171,12 @@ msgid ""
 "*High priority:* the issue is particularly important as it can prevent "
 "people from releasing their projects or cause data loss."
 msgstr ""
+"*High priority：*\\ 该问题非常重要，可能导致人们无法发布他们的项目或造成数据"
+"丢失。"
 
-#, fuzzy
 msgid ""
 "*Needs work*: the pull request needs additional work before it can be merged."
-msgstr "*Needs rebase* : 该问题需要Git rebase才能合并."
+msgstr "*Needs work*\\ ：拉取请求需要额外处理才能进行合并。"
 
 msgid ""
 "*Needs testing*: the issue/pull request could not be completely tested and "
@@ -259,9 +267,8 @@ msgid ""
 "buildsystem or to compiler peculiarities."
 msgstr "*Buildsystem*: 与构建问题有关, 可以链接到SCons构建系统或编译器特性."
 
-#, fuzzy
 msgid "*Codestyle*: relates to the programming style used within the codebase."
-msgstr "本注释风格指南适用于Godot代码库中使用的所有编程语言."
+msgstr "*Codestyle*\\ ：与代码库所使用的编程风格有关。"
 
 msgid ""
 "*Core*: anything related to the core engine. It might be further split later "
@@ -279,58 +286,53 @@ msgstr "*GDNative*: 与GDNative模块有关."
 msgid "*GDScript*: relates to GDScript."
 msgstr "*GDScript*: 与GDScript有关."
 
-#, fuzzy
 msgid "*GUI*: relates to GUI (Control) nodes."
-msgstr "*Mono*: 与C# / Mono绑定有关."
+msgstr "*Mono*\\ ：与 GUI（Control）节点有关。"
 
 msgid "*Import*: relates to the resource import system."
-msgstr ""
+msgstr "*Import*\\ ：与资源导入系统有关。"
 
-#, fuzzy
 msgid "*Input*: relates to input system."
-msgstr "*GDScript*: 与GDScript有关."
+msgstr "*Input*\\ ：与输入系统有关。"
 
 msgid "*Mono*: relates to the C# / Mono bindings."
-msgstr "*Mono*: 与C# / Mono绑定有关."
+msgstr "*Mono*\\ ：与 C# / Mono 绑定有关。"
 
 msgid ""
 "*Navigation*: relates to the navigation system (including A* and navmeshes)."
-msgstr ""
+msgstr "*Navigation*\\ ：与导航系统（包括 A* 和导航网格）有关。"
 
 msgid "*Network*: relates to networking."
-msgstr "*Network*: 与网络有关."
+msgstr "*Network*\\ ：与网络有关。"
 
 msgid "*Physics*: relates to the physics engine (2D/3D)."
-msgstr "*Physics*: 与物理引擎(2D/3D)有关."
+msgstr "*Physics*\\ ：与物理引擎（2D/3D）有关。"
 
 msgid "*Plugin*: relates to problems encountered while writing plugins."
-msgstr "*Plugin*: 与编写插件时遇到的问题有关."
+msgstr "*Plugin*\\ ：与编写插件时遇到的问题有关。"
 
-#, fuzzy
 msgid "*Porting*: relates to some specific platforms or exporting projects."
-msgstr "*Porting*: 与某些特定平台有关."
+msgstr "*Porting*\\ ：与某些特定平台或导出项目有关。"
 
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
-msgstr "*Rendering*: 与2D和3D渲染引擎相关."
+msgstr "*Rendering*\\ ：与 2D 和 3D 渲染引擎有关。"
 
 msgid "*Shaders*: relates to the Godot shader language or visual shaders."
-msgstr ""
+msgstr "*Shaders*\\ ：与 Godot 着色器语言或可视化着色器有关。"
 
-#, fuzzy
 msgid "*Tests*: relates to unit tests."
-msgstr "*Network*: 与网络有关."
+msgstr "*Tests*\\ ：与单元测试有关。"
 
 msgid "*Thirdparty*: relates to third-party libraries used in Godot."
-msgstr ""
+msgstr "*Thirdparty*\\ ：与 Godot 所使用的第三方库有关。"
 
-#, fuzzy
 msgid ""
 "*VisualScript*: relates to issues with the visual scripting language (*not* "
 "visual shaders)."
-msgstr "*VisualScript*: 与可视化脚本语言的问题有关."
+msgstr "*VisualScript*\\ ：与可视化脚本语言有关（\\ *不是*\\ 可视化着色器）。"
 
 msgid "*XR*: relates to Augmented Reality or Virtual Reality."
-msgstr ""
+msgstr "*XR*\\ ：与增强现实（AR）或虚拟现实（VR）有关。"
 
 msgid ""
 "Issues would typically correspond to only one topic, though it's not "
@@ -372,45 +374,46 @@ msgstr ""
 msgid ""
 "*Bug*: Incorrect information in an existing page. Not to be used for "
 "*missing* information."
-msgstr ""
+msgstr "*Bug*\\ ：现有页面中的错误信息。请勿对\\ *缺失*\\ 信息使用。"
 
 msgid ""
 "*Class reference*: the issue is about the class reference, not a "
 "documentation page."
-msgstr ""
+msgstr "*Class reference*\\ ：类参考的问题，非文档页面。"
 
 msgid "*Enhancememnt*: new information to be added in an existing page."
-msgstr ""
+msgstr "*Enhancememnt*\\ ：为现有页面加入新信息。"
 
 msgid "*New page*: a new page to be created."
-msgstr ""
+msgstr "*New page*\\ ：创建新页面。"
 
-#, fuzzy
 msgid ""
 "*Hero wanted!*: contributions for issues with these labels are especially "
 "welcome. Note that this **doesn't** mean you can't work on issues without "
 "these labels."
 msgstr ""
-"*PR welcome / Hero wanted!*: 我们特别欢迎对带有这些标签的问题做出贡献。请注"
-"意，这 **并不** 意味着不能处理没有这些标签的问题。"
+"*Hero wanted!*\\ ：特别欢迎为具有这些标签的问题做贡献。请注意这\\ **并不意味"
+"着**\\ 你不能处理没有这些标签的问题。"
 
 msgid ""
 "*Organization*: The issue involves moving pages around or reorganizing "
 "content."
-msgstr ""
+msgstr "*Organization*\\ ：这个问题涉及移动页面或者重新组织内容。"
 
 msgid ""
 "*Redirect*: a redirection needs to be created in the Read the Docs backend. "
 "Only administrators can do this."
-msgstr ""
+msgstr "*Redirect*\\ ：需要在 Read the Docs 后端创建重定向。管理员才能实现。"
 
 msgid "*Topic:Mono*: the issue is about C# support in Godot."
-msgstr ""
+msgstr "*Topic:Mono*\\ ：问题与 Godot 中的 C# 支持有关。"
 
 msgid ""
 "*Topic:Website*: the issue relates to the Sphinx/Read the Docs frontend or "
 "backend, not the documentation contents."
 msgstr ""
+"*Topic:Website*\\ ：问题与 Sphinx/Read the Docs 前端或后端有关，与文档内容无"
+"关。"
 
 msgid "Milestones"
 msgstr "里程碑"
@@ -438,3 +441,7 @@ msgid ""
 msgstr ""
 "无论指定的里程碑如何, 贡献者都可以自由选择问题；如果针对一个不被认为是紧急的"
 "错误提出修复, 因此没有里程碑, 那么它可能仍然非常受欢迎."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,6 @@ msgid ""
 "constants were moved to the ``Error`` enum."
 msgstr ""
 
-#, fuzzy
 msgid "Special cases:"
 msgstr "Casi speciali:"
 
@@ -69,14 +68,16 @@ msgstr "``GD.SpKey``"
 msgid "``TYPE_*``"
 msgstr "``TYPE_*``"
 
+#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "enumeratore ``Variant.Type``"
 
 msgid "``OP_*``"
 msgstr "``OP_*``"
 
+#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "enumeratore ``Variant.Operator``"
 
 msgid "Math functions"
 msgstr "Funzioni Math"
@@ -103,7 +104,6 @@ msgid ""
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
 
-#, fuzzy
 msgid "Exceptions:"
 msgstr "Eccezioni:"
 
@@ -119,7 +119,6 @@ msgstr "``is_instance_valid(obj)``"
 msgid "``Object.IsInstanceValid(obj)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
-#, fuzzy
 msgid "Tips"
 msgstr "Suggerimenti"
 
@@ -198,7 +197,7 @@ msgid ""
 msgstr ""
 
 msgid "There are a few differences, though:"
-msgstr "Tuttavia, ci sono alcune differenze:"
+msgstr "Ci sono alcune differenze, però:"
 
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
@@ -219,8 +218,9 @@ msgid ""
 "sensitivity:"
 msgstr ""
 
+#, fuzzy
 msgid "Basis"
-msgstr "Base"
+msgstr "Basis"
 
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
@@ -258,8 +258,9 @@ msgstr "``get_rotation()``"
 msgid "``Rotation``"
 msgstr "``Rotation``"
 
+#, fuzzy
 msgid "Plane"
-msgstr "Piano"
+msgstr "Plane"
 
 msgid ""
 "The following method was converted to a property with a *slightly* different "
@@ -292,6 +293,7 @@ msgstr "``get_area()``"
 msgid "``Area``"
 msgstr "``Area``"
 
+#, fuzzy
 msgid "Quat"
 msgstr "Quat"
 
@@ -390,8 +392,9 @@ msgstr ""
 msgid "Dictionary"
 msgstr "Dizionario"
 
+#, fuzzy
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr ""
+msgstr "Usa ``Godot.Collections.Dictionary``."
 
 msgid ""
 "``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
@@ -464,3 +467,7 @@ msgstr "TODO"
 
 msgid "``inst2dict``"
 msgstr "``inst2dict``"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

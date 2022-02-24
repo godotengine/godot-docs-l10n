@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,6 +55,11 @@ msgid ""
 msgstr ""
 "Obrázek PNG je také možné převést na soubor ICO vhodný pro hiDPI pomocí "
 "tohoto příkazu `ImageMagick <https://www.imagemagick.org/>;`_:"
+
+msgid ""
+"Depending on which version of ImageMagick you installed, you might need to "
+"leave out the ``magick`` and run this command instead:"
+msgstr ""
 
 msgid ""
 "For the ICO file to effectively replace the default Godot icon, it must "
@@ -197,3 +202,7 @@ msgstr ""
 "Pokud se ikona nezobrazuje správně, zkuste ve Windows 10 vymazat mezipaměť "
 "ikon. Za tímto účelem otevřete dialogové okno **Spustit** a zadejte "
 "``ie4uinit.exe -ClearIconCache`` nebo ``ie4uinit.exe -show``."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

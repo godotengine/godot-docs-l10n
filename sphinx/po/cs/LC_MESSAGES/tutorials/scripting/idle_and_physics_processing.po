@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,21 +44,18 @@ msgid ""
 "physics engine, like moving a body that collides with the environment."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "You can activate idle processing by defining the ``_process()`` method in a "
 "script. You can turn it off and back on by calling :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
 msgstr ""
-"Volnoběžné zpracování je aktivováno, když je ve skriptu nalezena metoda: "
-"ref: `Node._process () <class_Node_method__process>`. Lze jej vypnout a "
-"zapnout pomocí funkce :ref:`Node.set_process () "
-"<class_Node_method_set_process>`."
+"Zpracování v nečinnosti můžete aktivovat definováním metody ``_process()`` "
+"ve skriptu. Můžete ji vypnout a znovu zapnout voláním :ref:`Node."
+"set_process() <class_Node_method_set_process>`."
 
 msgid "The engine calls this method every time it draws a frame:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Keep in mind that the frequency at which the engine calls ``_process()`` "
 "depends on your application's framerate, which varies over time and across "
@@ -76,7 +73,6 @@ msgid ""
 "speed value by ``delta`` to animate a moving object."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Physics processing works with a similar virtual function: "
 "``_physics_process()``. Use it for calculations that must happen before each "
@@ -93,7 +89,6 @@ msgstr ""
 "Interval můžete změnit z Nastavení projektu v části Fyzika -> Společné -> "
 "Fyzika Fps."
 
-#, fuzzy
 msgid ""
 "The function ``_process()`` is not synchronized with physics. Its rate "
 "depends on hardware and game optimization. It also runs after the physics "
@@ -103,7 +98,6 @@ msgstr ""
 "frekvence není konstantní a závisí na hardwaru a optimalizaci hry. U "
 "jednovláknových her je spouštěna až po dokončení fyzikálního kroku."
 
-#, fuzzy
 msgid ""
 "You can see the ``_process()`` function at work by creating a scene with a "
 "single Label node, with the following script attached to it:"
@@ -111,7 +105,10 @@ msgstr ""
 "Jednoduchý způsob, jak vidět funkci ``_process()`` při práci je vytvořit "
 "scénu s jediným Label uzlem s následujícím skriptem:"
 
-#, fuzzy
 msgid "When you run the scene, you should see a counter increasing each frame."
 msgstr ""
 "Ukáže nám to počítadlo, které se s každým dalším framem (snímkem) zvyšuje."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

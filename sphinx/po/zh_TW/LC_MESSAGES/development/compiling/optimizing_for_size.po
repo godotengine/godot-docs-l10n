@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,8 @@ msgstr ""
 "必須要禁用 Tools 才能使用該旗標，因為編輯器並非設計給不支援 3D 的情景。關閉 "
 "3D 支援後，二進位檔的大小約可以減少 15%。"
 
-msgid "Disabling advanced GUI nodes"
+#, fuzzy
+msgid "Disabling advanced GUI objects"
 msgstr "禁用進階 GUI 節點"
 
 msgid ""
@@ -161,6 +162,89 @@ msgid ""
 msgstr ""
 "大多數小型遊戲都不需要如 Tree, ItemList, TextEdit 或 GraphEdit 等的複雜 GUI "
 "控制。可以通過一個建置旗標來禁用："
+
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+#, fuzzy
+msgid "FileDialog"
+msgstr "檔案對話框"
+
+msgid "PopupMenu"
+msgstr ""
+
+#, fuzzy
+msgid "Tree"
+msgstr "\\ SceneTree"
+
+#, fuzzy
+msgid "TextEdit"
+msgstr "文字編輯器"
+
+msgid "TreeItem"
+msgstr ""
+
+#, fuzzy
+msgid "OptionButton"
+msgstr "最佳化"
+
+msgid "SpinBox"
+msgstr ""
+
+#, fuzzy
+msgid "ColorPicker"
+msgstr "顏色"
+
+msgid "ColorPickerButton"
+msgstr ""
+
+#, fuzzy
+msgid "RichTextLabel"
+msgstr "\\ ScoreLabel"
+
+#, fuzzy
+msgid "RichTextEffect"
+msgstr "效果"
+
+#, fuzzy
+msgid "CharFXTransform"
+msgstr "清除變換"
+
+msgid "PopupDialog"
+msgstr ""
+
+#, fuzzy
+msgid "WindowDialog"
+msgstr "Windows"
+
+#, fuzzy
+msgid "AcceptDialog"
+msgstr "檔案對話框"
+
+#, fuzzy
+msgid "ConfirmationDialog"
+msgstr "注意事項"
+
+#, fuzzy
+msgid "MarginContainer"
+msgstr "創建內容"
+
+msgid "ViewportContainer"
+msgstr ""
+
+#, fuzzy
+msgid "SplitContainer"
+msgstr "創建內容"
+
+#, fuzzy
+msgid "HSplitContainer"
+msgstr "創建內容"
+
+msgid "GraphNode"
+msgstr ""
+
+msgid "GraphEdit"
+msgstr ""
 
 msgid "Disabling unwanted modules"
 msgstr "禁用不需要的模組"
@@ -203,3 +287,7 @@ msgstr ""
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options` 。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,9 @@ msgid ""
 "around it. The :ref:`HTTPClient <class_HTTPClient>` class also supports "
 "HTTPS by using this same wrapper."
 msgstr ""
-"通常希望使用SSL连接进行通信, 这可以避免 ``中间人`` 攻击. Godot有一个连接包装"
-"器 :ref:`StreamPeerSSL <class_StreamPeerSSL>` , 它可以进行更安全的连接. :ref:"
-"`HTTPClient <class_HTTPClient>` 类也通过使用相同的包装器来支持HTTPS."
+"通常希望使用 SSL 连接进行通信，可以避免“中间人”攻击。Godot 有一个连接包装器 :"
+"ref:`StreamPeerSSL <class_StreamPeerSSL>`\\ ，它可以进行更安全的连接。\\ :"
+"ref:`HTTPClient <class_HTTPClient>` 类也通过使用相同的包装器来支持 HTTPS。"
 
 msgid ""
 "Godot includes SSL certificates from Mozilla, but you can provide your own "
@@ -117,3 +117,7 @@ msgid ""
 "Or pick any of the more specific certificates there if you are connecting to "
 "a specific one."
 msgstr "或者, 如果要连接到特定网站, 请选择任何更加具体的证书."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

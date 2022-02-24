@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,11 +204,12 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
-"これは\\ `既知のバグ <https://github.com/godotengine/godot/issues/13017>`__"
-"\\ です。これを解決するには、\\ **プロジェクト > プロジェクト設定**\\ を開"
-"き、\\ **Display > Window > Dpi > Allow Hidpi**\\ を有効にしてください。さら"
-"に、プロジェクトが\\ :ref:`複数の解像度 <doc_multiple_resolutions>`\\ に対応"
-"するように設定されていることを確認してください。"
+"これは\\ `既知のバグ <https://github.com/godotengine/godot/"
+"issues/13017>`__\\ です。これを解決するには、\\ **プロジェクト > プロジェクト"
+"設定**\\ を開き、\\ **Display > Window > Dpi > Allow Hidpi**\\ を有効にしてく"
+"ださい。さらに、プロジェクトが\\ :ref:`複数の解像度 "
+"<doc_multiple_resolutions>`\\ に対応するように設定されていることを確認してく"
+"ださい。"
 
 msgid ""
 "The project works when run from the editor, but fails to load some files "
@@ -247,3 +248,7 @@ msgstr ""
 "字で参照した場合、プロジェクトをエクスポートすると読み込みに失敗します。これ"
 "は、Windows のファイルシステムがデフォルトで大文字小文字を区別しないのに対"
 "し、仮想 PCK ファイルシステムは大文字小文字を区別しているためです。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

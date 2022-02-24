@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,13 +43,13 @@ msgid ""
 "any code, which means it should be OK to use the procedure described here "
 "and cross-compiling the binary."
 msgstr ""
-"尽管可以在Linux环境上为iOS进行编译, 但是Apple对要使用的工具(特别是硬件方面)有"
-"严格的限制, 几乎只允许将其产品用于开发. 因此, 这是 **非官方的** . 然而,`2010"
-"年苹果公司的声明 <http://www.apple.com/pr/library/2010/09/09Statement-by-"
-"Apple-on-App-Store-Review-Guidelines.html>`__ 表示放宽了一些 `应用程序商店审"
-"查指南 <https://developer.apple.com/app-store/review/guidelines/>`__ 以允许使"
-"用任何工具, 只要生成的二进制文件不下载任何代码, 这意味着可以使用此处描述的过"
-"程并交叉编译二进制文件."
+"尽管可以在 Linux 环境上为 iOS 进行编译，但是 Apple 对要使用的工具有严格的限制"
+"（特别是硬件方面），几乎只允许将其产品用于开发。因此，这是\\ **非官方的"
+"**\\ 。然而，\\ `2010 年 Apple 的声明 <http://www.apple.com/pr/"
+"library/2010/09/09Statement-by-Apple-on-App-Store-Review-Guidelines."
+"html>`__\\ 表示放宽了一些\\ `App Store 审核指南 <https://developer.apple.com/"
+"app-store/review/guidelines/>`__\\ ，允许使用任何工具，只要生成的二进制文件不"
+"下载任何代码，这意味着可以使用此处描述的过程并交叉编译二进制文件。"
 
 msgid "Requirements"
 msgstr "需求"
@@ -103,10 +103,10 @@ msgid "darling-dmg"
 msgstr "darling-dmg"
 
 msgid "Clone the repository on your machine:"
-msgstr "在你的计算机上克隆存储库:"
+msgstr "在你的机器上克隆该仓库："
 
 msgid "Build it:"
-msgstr "构建它:"
+msgstr "构建它："
 
 msgid "Preparing the SDK"
 msgstr "准备 SDK"
@@ -182,3 +182,7 @@ msgstr ""
 
 msgid "Then you will have iOS fat binaries in ``bin`` directory."
 msgstr "然后你将在 ``bin`` 目录下有iOS大的二进制文件."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

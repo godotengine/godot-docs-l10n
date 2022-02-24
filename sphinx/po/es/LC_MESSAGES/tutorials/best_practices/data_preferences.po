@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,10 +236,10 @@ msgstr ""
 "Godot implementa el Dictionary como un ``OrderedHashMap<Variant, Variant>``. "
 "El motor almacena un array pequeño (inicializado en 2^3, u 8 registros) de "
 "pares clave-valor. Cuando se intenta acceder a un valor, se provee una "
-"clave. Luego *hashea* la clave, es decir, la convierte a un número. El \"hash"
-"\" es usado para calcular el índice del array. Como array, el OHM puede "
-"hacer una consulta rápida del valor dentro de la \"tabla\" de claves mapeada "
-"a valores. Cuando el HashMap se llena, este incrementa su tamaño en "
+"clave. Luego *hashea* la clave, es decir, la convierte a un número. El "
+"\"hash\" es usado para calcular el índice del array. Como array, el OHM "
+"puede hacer una consulta rápida del valor dentro de la \"tabla\" de claves "
+"mapeada a valores. Cuando el HashMap se llena, este incrementa su tamaño en "
 "potencias de 2 (o sea, a 16, luego 32, etc.) y reconstruye la estructura."
 
 msgid ""
@@ -683,3 +683,7 @@ msgstr ""
 "`AnimationTree <class_AnimationTree>` brilla. Uno puede encontrar una guía "
 "en profundidad en usar el AnimationTree en AnimationTree :ref:"
 "`aquí<doc_animation_tree>`."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

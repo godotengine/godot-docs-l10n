@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 3D game"
-msgstr "Votre premier jeu"
+msgstr "Votre premier jeu 3D"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 3D "
 "game with Godot. By the end of the series, you will have a simple yet "
 "finished project of your own like the animated gif below."
 msgstr ""
+"Dans cette série de tutoriels étape par étape, vous allez créer votre "
+"premier jeu 3D complet avec Godot. À la fin de la série, vous aurez un "
+"projet simple mais terminé, comme le gif animé ci-dessous."
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -36,37 +42,48 @@ msgid ""
 "will both **recognize patterns** you learned in the previous tutorial and "
 "**build upon them** with new code and features."
 msgstr ""
+"Le jeu que nous allons coder ici est similaire à :ref:"
+"`doc_votre_premier_jeu_2d`, avec une particularité : vous pouvez maintenant "
+"sauter et votre but est d'écraser les ennemis. De cette façon, vous allez à "
+"la fois **reconnaître les schémas** que vous avez appris dans le tutoriel "
+"précédent et **vous appuyer sur eux** avec un nouveau code et de nouvelles "
+"fonctionnalités."
 
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Vous apprendrez :"
+msgstr "Vous allez apprendre à :"
 
 msgid "Work with 3D coordinates with a jumping mechanic."
-msgstr ""
+msgstr "Travailler avec des coordonnées 3D avec une mécanique de saut."
 
 msgid ""
 "Use kinematic bodies to move 3D characters and detect when and how they "
 "collide."
 msgstr ""
+"Utilisez des corps cinématiques pour déplacer des personnages 3D et détecter "
+"quand et comment ils entrent en collision."
 
 msgid ""
 "Use physics layers and a group to detect interactions with specific entities."
 msgstr ""
+"Utiliser des calques de physique et un groupe pour détecter les interactions "
+"avec des entités spécifiques."
 
 msgid ""
 "Code basic procedural gameplay by instancing monsters at regular time "
 "intervals."
 msgstr ""
+"Coder un gameplay procédural basique en instanciant des monstres à des "
+"intervalles réguliers."
 
 msgid "Design a movement animation and change its speed at run-time."
 msgstr ""
+"Concevoir une animation de mouvement et changer sa vitesse en temps réel."
 
 msgid "Draw a user interface on a 3D game."
-msgstr ""
+msgstr "Dessiner une interface utilisateur sur un jeu 3D."
 
-#, fuzzy
 msgid "And more."
-msgstr "Et plus..."
+msgstr "Et plus encore."
 
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
@@ -75,6 +92,12 @@ msgid ""
 "complete demo's source code here: `Squash the Creep source code <https://"
 "github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
 msgstr ""
+"Ce tutoriel est destiné aux débutants qui ont suivi la série \"Prise en "
+"main\" complète. Nous commencerons doucement avec des instructions "
+"détaillées, et nous les raccourcirons au fur et à mesure que nous ferons des "
+"étapes similaires. Si vous êtes un programmeur expérimenté, vous pouvez "
+"parcourir le code source complet de la démo ici : `Code source de Squash the "
+"Creep <https://github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
 
 msgid ""
 "You can follow this series without having done the 2D one. However, if "
@@ -82,12 +105,19 @@ msgid ""
 "code is always more complex and the 2D series will give you foundations to "
 "follow along more comfortably."
 msgstr ""
+"Vous pouvez suivre cette série sans avoir fait la série 2D. Cependant, si "
+"vous êtes nouveau dans le développement de jeux, nous vous recommandons de "
+"commencer par la 2D. Le code des jeux en 3D est toujours plus complexe et la "
+"série 2D vous donnera les bases pour suivre plus confortablement."
 
 msgid ""
 "We prepared some game assets so we can jump straight to the code. You can "
 "download them here: `Squash the Creeps assets <https://github.com/GDQuest/"
 "godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
+"Nous avons préparé quelques assets afin de pouvoir passer directement au "
+"code. Vous pouvez les télécharger ici : `Assets de Squash the Creeps "
+"<https://github.com/GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 
 msgid ""
 "We will first work on a basic prototype for the player's movement. We will "
@@ -96,7 +126,15 @@ msgid ""
 "game with some nice animation. We'll wrap up with the score and the retry "
 "screen."
 msgstr ""
+"Nous travaillerons d'abord sur un prototype basique pour le mouvement du "
+"joueur. Nous ajouterons ensuite les monstres que nous ferons apparaître "
+"aléatoirement autour de l'écran. Ensuite, nous implémenterons le saut et la "
+"mécanique d'écrasement avant de peaufiner le jeu avec de belles animations. "
+"Nous terminerons par le score et l'écran de nouvelle tentative."
+
+msgid "Contents"
+msgstr "Contenu"
 
 #, fuzzy
-msgid "Contents"
-msgstr "Test de contenu"
+msgid "Translation status"
+msgstr "Format de traduction"

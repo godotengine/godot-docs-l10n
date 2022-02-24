@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,10 @@ msgid ""
 "has a transform (translation, rotation, scale, etc.) that can be accessed as "
 "a :ref:`Transform2D <class_Transform2D>`."
 msgstr ""
-"正如前面教程 :ref:`doc_canvas_layers` 中提到的那样, 每个CanvasItem节点(要记得"
-"Node2D和基于Control的节点使用CanvasItem作为它们的公共根)将驻留在 *Canvas "
-"Layer* 中. 每个Canvas Layer都有一个变换(平移, 旋转, 缩放等), 可以作为 :ref:"
-"`Transform2D <class_Transform2D>` 进行访问."
+"正如前面教程 :ref:`doc_canvas_layers` 中提到的那样，每个 CanvasItem 节点（要"
+"记得 Node2D 和基于 Control 的节点都使用 CanvasItem 作为它们的公共根）将驻留"
+"在 *Canvas Layer* 中。每个 Canvas Layer 都有一个变换（平移、旋转、缩放等），"
+"可以作为 :ref:`Transform2D <class_Transform2D>` 进行访问。"
 
 msgid ""
 "Also covered in the previous tutorial, nodes are drawn by default in Layer "
@@ -166,3 +166,7 @@ msgid ""
 msgstr ""
 "通常需要将自定义输入事件提供给场景树. 有了上述知识, 要正确地做到这一点, 必须"
 "通过以下方式完成:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

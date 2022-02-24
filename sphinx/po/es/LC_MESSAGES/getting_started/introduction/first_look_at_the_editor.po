@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "First look at Godot's editor"
 msgstr "Una primera mirada al editor de Godot"
 
@@ -25,170 +24,177 @@ msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
 "to look at the different main screens and docks to help you situate yourself."
 msgstr ""
+"Esta pagina va a darte un pequeño vistazo a la interfaz de Godot. Nosotros "
+"vamos a ver diferentes pantallas principales y docks para ayudarte a "
+"orientarte."
 
 msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
+"Por un comprensible desglose de la interfaz del editor y como usarla por "
+"favor vea el :ref:`Editor manual <toc-learn-editor>`."
 
-#, fuzzy
 msgid "The Project manager"
-msgstr "Administrador de proyectos"
+msgstr "El administrador de proyectos"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab, \"Projects,\" you can manage existing projects, import or "
 "create new ones, and more."
 msgstr ""
 "Cuando inicies a Godot, la primera ventana que verás es la del Administrador "
-"de Proyectos. Como no tienes proyectos, aparecerá una ventana emergente que "
-"te preguntará si quieres abrir la biblioteca de assets, sólo tienes que "
-"hacer clic en cancelar, ya lo veremos más tarde."
+"de Proyectos. En la pestaña por defecto, \"Proyectos\", puedes administrar "
+"los proyectos existentes, importar o crear nuevos y más."
 
 msgid ""
 "At the top of the window, there is another tab named \"Templates\". You can "
 "search for demo projects in the open-source asset library, which includes "
 "many projects developed by the community."
 msgstr ""
+"Encima de la ventana, hay otro boton llamado \"Plantillas\". Tu puedes "
+"buscar por proyectos demo en la librería de assets de código abierto, el "
+"cual incluye muchos proyectos desarrollados por la comunidad."
 
 msgid ""
 "You can also change the editor's language using the drop-down menu to the "
 "right of the engine's version in the window's top-right corner. By default, "
 "it is in English (EN)."
 msgstr ""
+"Tu también puedes cambiar el idioma del editor usando el menú desplegable a "
+"la derecha del motor en parte de arriba a la derecha de la ventana. Por "
+"defecto, este esta en ingles (EN)."
 
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas."
 msgstr ""
+"Cuando abres un nuevo o un proyecto existente, la interfaz del editor "
+"aparece. Vamos a ver cuales son sus principales áreas."
 
 msgid ""
 "By default, it features **menus**, **main screens**, and playtest buttons "
 "along the window's top edge."
 msgstr ""
+"Por predeterminado, en las funciones **menu**,**pantalla principal**, y el "
+"botón de probar juego por el borde arriba de la ventana."
 
-#, fuzzy
 msgid ""
 "In the center is the **viewport** with its **toolbar** at the top, where "
 "you'll find tools to move, scale, or lock the scene's nodes."
 msgstr ""
-"En el centro, arriba, está la **Barra de herramientas**, donde se encuentran "
-"las herramientas para mover, escalar o bloquear objetos de la escena. Esta "
-"barra cambia en función de los distintos espacios de trabajo."
+"En el centro está el **viewport** con su **Barra de herramientas** arriba, "
+"allí es donde se encuentran las herramientas para mover, escalar o bloquear "
+"objetos de la escena."
 
 msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
 "window lies the **bottom panel**."
 msgstr ""
+"A los lados del viewport, se encuentran los **paneles empotrables**. En la "
+"parte inferior se encuentra el **panel inferior**."
 
 msgid ""
 "The toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar."
 msgstr ""
+"La barra de herramientas cambia en base al contexto del nodo seleccionado. "
+"Aquí está la barra de herramientas 2D."
 
 msgid "Below is the 3D one."
-msgstr ""
+msgstr "Aquí está la de 3D."
 
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "be it scripts, images, audio samples, and more."
 msgstr ""
+"Veamos los paneles empotrables. El panel *Sistema de archivos* lista los "
+"archivos del proyecto, como ser scripts, imágenes, muestras de audio y más."
 
 msgid "The **Scene** dock lists the active scene's nodes."
-msgstr ""
+msgstr "El panel **Escena**, lista los nodos de la escena activa."
 
 msgid "The **Inspector** allows you to edit the properties of a selected node."
-msgstr ""
+msgstr "El **Inspector** permite editar las propiedades del nodo seleccionado."
 
-#, fuzzy
 msgid ""
 "The **bottom panel**, situated below the viewport, is the host for the debug "
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"El **Panel inferior** es el contenedor de la consola de depuración, el "
-"editor de animaciones, el mezclador de audio... Estos elementos son anchos y "
-"pueden ocupar espacio valioso, es por eso que se encuentran ocultos por "
-"defecto."
+"El **panel inferior** es el contenedor de la consola de depuración, el "
+"editor de animaciones, el mezclador de audio y más. Estos elementos pueden "
+"ocupar espacio valioso, es por eso que se encuentran ocultos por defecto."
 
-#, fuzzy
 msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
 "animation editor opened."
-msgstr "Cuando haga clic en un recurso, verá más información sobre él."
+msgstr ""
+"Cuando haces clic en uno, se expande verticalmente. A continuación, puede "
+"ver el editor de animación abierto."
 
 msgid "The four main screens"
-msgstr ""
+msgstr "Los cuatro espacios de trabajo"
 
-#, fuzzy
 msgid ""
 "There are four main screen buttons centered at the top of the editor: 2D, "
 "3D, Script, and AssetLib."
 msgstr ""
-"Se pueden observar botones de cuatro espacios de trabajo en la parte "
-"superior: 2D, 3D, Script y AssetLib."
+"Hay cuatro botones de pantalla principal centrados en la parte superior del "
+"editor: 2D, 3D, Script y AssetLib."
 
-#, fuzzy
 msgid ""
 "You'll use the **2D screen** for all types of games. In addition to 2D "
 "games, the 2D screen is where you'll build your interfaces."
 msgstr ""
 "Utilizarás el **Espacio de trabajo 2D** para todo tipo de juegos. Además de "
-"los juegos en 2D, es allí donde construirás tus interfaces. Presiona :kbd:"
-"`Ctrl + F1` (ó :kbd:`Alt + 1` en macOS) para acceder a este espacio."
+"los juegos en 2D, es allí donde construirás tus interfaces."
 
-#, fuzzy
 msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
 msgstr ""
-"En el **Espacio de trabajo 3D**, se puede trabajar con mallas, luces y "
-"diseño de niveles para juegos 3D. Presione :kbd:`Ctrl + F2` (ó :kbd:`Alt + "
-"2` en macOS) para acceder a este modo."
+"En la **pantalla 3D**, puede trabajar con mallas, luces y niveles de diseño "
+"para juegos 3D."
 
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar. Clicking on it opens a list "
 "of options related to the 3D view."
 msgstr ""
-"Fijese en el botón perspectiva debajo de la barra de herramientas, este abre "
-"una lista de opciones relacionadas con la vista 3D."
+"Nota el botón perspectiva ubicado en la barra de herramientas. Este abre una "
+"lista de opciones relacionadas con la vista 3D."
 
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
 "screen**."
 msgstr ""
-"Lee :ref:`doc_introduction_to_3d` para mas detalles sobre **Espacio de "
+"Ver :ref:`doc_introduction_to_3d` para mas detalles sobre **Espacio de "
 "trabajo 3D**."
 
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
+"La \"pantalla de scripts\" es un editor completo con un depurador, "
+"autocompletado y referencia de código integrada."
 
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open-source add-ons, "
 "scripts, and assets to use in your projects."
 msgstr ""
-"Finalmente, **AssetLib** es la librería de add-ons, scripts y recursos "
-"gratuitos para utilizar en los proyectos."
+"Finalmente, **AssetLib** es la librería de add-ons, scripts y recursos de "
+"código abierto y gratuitos para utilizar en los proyectos."
 
-#, fuzzy
 msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Para aprender más sobre los shaders visuales, lea :ref:`doc_visual_shaders`."
+"Puedes aprender más sobre la asset library en :ref:`doc_what_is_assetlib`."
 
-#, fuzzy
 msgid "Integrated class reference"
-msgstr "Cómo escribir la referencia de la clase"
+msgstr "Referencia de clases integrada"
 
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Cómo escribir la referencia de la clase"
+msgstr "Godot viene incorporado con referencia de clases"
 
 msgid ""
 "You can search for information about a class, method, property, constant, or "
@@ -197,32 +203,44 @@ msgstr ""
 "Puedes buscar información sobre una clase, método, propiedad, constante o "
 "señal por alguno de los siguientes métodos:"
 
-#, fuzzy
 msgid ""
 "Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."
 msgstr ""
-"Presionar :kbd:`Ctrl + F` (o :kbd:`Cmd + F` en macOS) le permite buscar en "
-"la lista."
+"Presionando :kbd:`F1` (or :kbd:`Alt + Space` on macOS) en cualquier parte "
+"del editor."
 
 msgid ""
 "Clicking the \"Search Help\" button in the top-right of the Script main "
 "screen."
 msgstr ""
+"Presiona el botón de \"Buscar ayuda\" en la parte superior-derecha de la "
+"pantalla Script"
 
 msgid "Clicking on the Help menu and Search Help."
-msgstr ""
+msgstr "Presionando en Ayuda y Buscar en la Ayuda."
 
 msgid ""
 "Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
 "or built-in variable in the script editor."
 msgstr ""
+"Haciendo click mientras se presiona la tecla :kbd:`Ctrl` en el nombre de una "
+"clase, de una función o en una variable integrada en el editor de script."
 
 msgid ""
 "When you do any of these, a window pops up. Type to search for any item. You "
 "can also use it to browse available objects and methods."
 msgstr ""
+"Cuando haces una de estas cosas, aparecerá una ventana. Escribe para buscar "
+"por un item. También puedes usarla para revisar los objetos y métodos "
+"disponibles."
 
 msgid ""
 "Double-click on an item to open the corresponding page in the script main "
 "screen."
 msgstr ""
+"Doble click en un item abrirá la página correspondiente en la ventana de "
+"scripts."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

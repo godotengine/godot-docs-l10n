@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid ""
 msgstr "为一种体系结构打开命令提示符，然后运行 SCons 两次（每个目标一次）： ::"
 
 msgid "Repeat for the other architectures."
-msgstr "为其他架构重复上述过程."
+msgstr "为其他架构重复上述过程。"
 
 msgid ""
 "In the end your ``bin`` folder will have the ``.exe`` binaries with a name "
@@ -135,9 +135,9 @@ msgid ""
 "putting them along with the executable."
 msgstr ""
 "将其中一个复制到Godot源文件夹中的 ``misc/dist/uwp_template``, 并将二进制文件"
-"重命名为 ``godot.uwp.exe`` . 从在 ``winrt/10/src/Release_%arch%`` ( ``%arch"
-"%`` 可以是 ``Win32``, ``x64`` 或 ``ARM``)下的ANGLE源代码, 获取 ``libEGL."
-"dll`` 和 ``libGLESv2.dll``, 将它们与可执行文件放在一起."
+"重命名为 ``godot.uwp.exe`` . 从在 ``winrt/10/src/Release_%arch%`` "
+"( ``%arch%`` 可以是 ``Win32``, ``x64`` 或 ``ARM``)下的ANGLE源代码, 获取 "
+"``libEGL.dll`` 和 ``libGLESv2.dll``, 将它们与可执行文件放在一起."
 
 msgid ""
 "Add the files in the ``uwp_template`` folder to a ZIP. Rename the resulting "
@@ -248,8 +248,8 @@ msgid ""
 "To ease the workflow, you can open the \"Solution Properties\" and in the "
 "\"Configuration\" section untick the \"Build\" option for the app. You still "
 "have to build it at least once to generate some needed files, you can do so "
-"by right-clicking the project (*not* the solution) in the \"Solution Explorer"
-"\" and selecting \"Build\"."
+"by right-clicking the project (*not* the solution) in the \"Solution "
+"Explorer\" and selecting \"Build\"."
 msgstr ""
 "为了简化工作流程, 你可以打开 \"解决方案属性 \", 然后在\" 配置 \"部分中取消选"
 "中应用程序的\" 构建 \"选项. 你仍然必须至少构建一次以生成一些所需的文件, 你可"
@@ -264,3 +264,7 @@ msgstr ""
 "现在你可以直接运行该项目, 你的应用程序应该会打开. 你也可以使用 \"Debug\" 菜单"
 "中的 \"Start Without Debugging\" 选项(或按 :kbd:`Ctrl + F5` ), 以使其更快启"
 "动."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

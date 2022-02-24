@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,9 +90,9 @@ msgid ""
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
-"シーンシステムは、OSに独自のメインループ\\ :ref:`SceneTree <class_SceneTree>`"
-"\\ を提供します。これは自動的にインスタンス化され、シーンの実行時に設定される"
-"ので、余分な作業を行う必要はありません。"
+"シーンシステムは、OSに独自のメインループ\\ :ref:`SceneTree "
+"<class_SceneTree>`\\ を提供します。これは自動的にインスタンス化され、シーンの"
+"実行時に設定されるので、余分な作業を行う必要はありません。"
 
 msgid ""
 "It's important to know that this class exists because it has a few important "
@@ -178,7 +178,7 @@ msgid ""
 "``_enter_tree()`` and ``_ready()`` callbacks (as well as ``_exit_tree()``)."
 msgstr ""
 "つまり、前のチュートリアルで説明したように、 ``_enter_tree()`` と "
-"``_ready()``  (または ``_exit_tree()`` ) の コールバック が取得されます。"
+"``_ready()`` (または ``_exit_tree()`` ) の コールバック が取得されます。"
 
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
@@ -276,3 +276,7 @@ msgstr ""
 "ンド) での読み込みを備えた、適切な読み込み画面を作成することをお勧めします。"
 "これについては、自動読み込み(次の章を参照)と :ref:`doc_background_loading` を"
 "使用して手動で行う必要があります。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

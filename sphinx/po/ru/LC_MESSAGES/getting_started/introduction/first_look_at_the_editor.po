@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "First look at Godot's editor"
 msgstr "Первый взгляд на редактор Godot"
 
@@ -25,11 +24,15 @@ msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
 "to look at the different main screens and docks to help you situate yourself."
 msgstr ""
+"Эта страница даст краткий обзор интерфейса Godot. Мы рассмотрим различные "
+"основные экраны и панели, чтобы помочь вам сориентироваться."
 
 msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
+"Для всестороннего разбора интерфейса редактора и того, как им пользоваться, "
+"смотрите :ref:`Editor manual <toc-learn-editor>`."
 
 #, fuzzy
 msgid "The Project manager"
@@ -46,27 +49,37 @@ msgstr ""
 "запросом, хотите ли вы открыть библиотеку ресурсов - просто нажмите кнопку "
 "\"Отмена\", мы вернёмся к этому позже."
 
+#, fuzzy
 msgid ""
 "At the top of the window, there is another tab named \"Templates\". You can "
 "search for demo projects in the open-source asset library, which includes "
 "many projects developed by the community."
 msgstr ""
+"В верхней части окна есть друга вкладка, именуемая «Templates». Вы можете "
+"искать демонстрационные проекты в библиотеке ресурсов с открытым исходным "
+"кодом, которая включает в семя множество проектов, разработанных сообществом."
 
 msgid ""
 "You can also change the editor's language using the drop-down menu to the "
 "right of the engine's version in the window's top-right corner. By default, "
 "it is in English (EN)."
 msgstr ""
+"Вы также можете сменить язык редактора используя выпадающее меню справа от "
+"версии движка в правом верхнем углу окна. По умолчанию это английский (EN)."
 
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas."
 msgstr ""
+"Когда вы открываете новый или существующий проект, появляется интерфейс "
+"редактора. Давайте взглянем на основные области."
 
 msgid ""
 "By default, it features **menus**, **main screens**, and playtest buttons "
 "along the window's top edge."
 msgstr ""
+"По умолчанию он имеет **меню**, **основные экраны** и кнопку тестового "
+"запуска на верхнем крае окна."
 
 #, fuzzy
 msgid ""
@@ -82,25 +95,34 @@ msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
 "window lies the **bottom panel**."
 msgstr ""
+"По обе стороны от окна просмотра расположены **доки**. А в нижней части окна "
+"лежит **нижняя панель**."
 
 msgid ""
 "The toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar."
 msgstr ""
+"Изменения панели инструментов зависит от контекста и выбранного узла. Это "
+"панель инструментов для 2D."
 
 msgid "Below is the 3D one."
-msgstr ""
+msgstr "Ниже — для 3D."
 
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "be it scripts, images, audio samples, and more."
 msgstr ""
+"Давайте взглянем на доки. Панель **FileSystem** (**Файловая система**) "
+"содержит файлы вашего проекта, будь то скрипты, изображения, звуковые семплы "
+"или что-то иное."
 
 msgid "The **Scene** dock lists the active scene's nodes."
-msgstr ""
+msgstr "Панель **Scene** (**Сцена**) отображает активные узлы сцены."
 
 msgid "The **Inspector** allows you to edit the properties of a selected node."
 msgstr ""
+"**Inspector** (**Инспектор**) позволяет вам редактировать свойства "
+"выбранного узла."
 
 #, fuzzy
 msgid ""
@@ -116,9 +138,11 @@ msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
 "animation editor opened."
 msgstr ""
+"Когда вы нажимаете на один из них, он вертикально расширяется. Ниже вы "
+"можете увидеть открытый редактор анимации."
 
 msgid "The four main screens"
-msgstr ""
+msgstr "Четыре основных экрана"
 
 #, fuzzy
 msgid ""
@@ -162,10 +186,13 @@ msgstr ""
 "Прочитайте :ref:`doc_introduction_to_3d` для более подробной информации о "
 "**3D workspace**."
 
+#, fuzzy
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
+"Экран **Script** это полноценный редактор кода с отладчиком, богатым "
+"автодополнением и встроенной справкой по коду."
 
 #, fuzzy
 msgid ""
@@ -178,23 +205,22 @@ msgstr ""
 msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"Вы можете узнать больше о библиотеке ресурсов в статье :ref:"
+"`doc_what_is_assetlib`."
 
 #, fuzzy
 msgid "Integrated class reference"
 msgstr "Ссылка на атрибут"
 
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Ссылка на атрибут"
+msgstr "Godot поставляется со встроенным справочником классов."
 
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Чтобы найти информацию о классе, методе, свойстве, константе или сигнале, "
-"когда вы пишете скрипт нажмите кнопку \"Справка\" в верхнем правом углу окна "
-"редактора скриптов."
+"Вы можете найти информацию о классе, методе, свойстве, константе или сигнале "
+"одним из следующих способов:"
 
 #, fuzzy
 msgid ""
@@ -207,21 +233,34 @@ msgid ""
 "Clicking the \"Search Help\" button in the top-right of the Script main "
 "screen."
 msgstr ""
+"Нажав кнопку \"Search Help\" (\"Справка\") в правом верхнем углу экрана "
+"написания скриптов."
 
 msgid "Clicking on the Help menu and Search Help."
-msgstr ""
+msgstr "Нажатием на \"Справка\" в меню \"Справка\"."
 
 msgid ""
 "Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
 "or built-in variable in the script editor."
 msgstr ""
+"Нажатием в редакторе сценариев, пока зажата клавиша kbd:`Ctrl`, на имени "
+"класса, функции или встроенной переменной."
 
 msgid ""
 "When you do any of these, a window pops up. Type to search for any item. You "
 "can also use it to browse available objects and methods."
 msgstr ""
+"Когда вы совершаете любое из этих действий, появляется окно. Введите текст "
+"для поиска любого элемента. Вы также можете использовать его для просмотра "
+"доступных объектов и методов."
 
 msgid ""
 "Double-click on an item to open the corresponding page in the script main "
 "screen."
 msgstr ""
+"Двойное нажатие на элементе откроет соответствующую страницу в экране "
+"написания скриптов."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -356,8 +356,8 @@ msgstr ""
 "보시다시피, Godot의 ``print`` 함수와 마찬가지로 GDScript에서 함수는 기본적으"
 "로 전역 범위에 있기 때문에 ``Godot`` 네임스페이스의 일부분인 ``GD`` 클래스에"
 "서 사용할 수 있습니다. ``GD`` 클래스에서의 메서드 목록을 보려면, :ref:"
-"`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope <class_@globalscope>`"
-"\\ 에서 클래스 참조 페이지를 참고하세요."
+"`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope "
+"<class_@globalscope>`\\ 에서 클래스 참조 페이지를 참고하세요."
 
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
@@ -524,3 +524,7 @@ msgstr ""
 "다른 Mono 프로파일러로는 `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ 을 사용 할 수 있습니다. 해당 설명 - `here <https://github.com/"
 "godotengine/godot/pull/34382>`_."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

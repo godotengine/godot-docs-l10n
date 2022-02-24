@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -545,7 +545,7 @@ msgstr ""
 "une autre scène. C'est une classe avec qui il est bon de se familiariser."
 
 msgid "Preload"
-msgstr "Preload"
+msgstr "Précharger"
 
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
@@ -606,7 +606,7 @@ msgstr ""
 "séquence déconnectés est acceptable si tous ne sont pas utilisés."
 
 msgid "Iterator"
-msgstr "Iterator"
+msgstr "Itérateur"
 
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
@@ -629,7 +629,7 @@ msgid "When done, it goes via the \"exit\" sequence port."
 msgstr "Une fois terminé, il passe par le port de séquence \"sortie\"."
 
 msgid "Return"
-msgstr "Return"
+msgstr "Retour"
 
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
@@ -686,9 +686,9 @@ msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
-"C'est une forme plus primitive d'itération. La sortie de la séquence \"repeat"
-"\" sera appelée tant que la condition dans le port de données \"cond\" est "
-"remplie."
+"C'est une forme plus primitive d'itération. La sortie de la séquence "
+"\"repeat\" sera appelée tant que la condition dans le port de données "
+"\"cond\" est remplie."
 
 msgid "Functions"
 msgstr "Fonctions"
@@ -724,8 +724,8 @@ msgid ""
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
 "Ce sont les méthodes disponibles pour les types de base. Par exemple, si "
-"vous voulez un produit scalaire (dot-product), vous pouvez rechercher \"dot"
-"\" au lieu de la catégorie Vector3. Dans la plupart des cas, recherchez "
+"vous voulez un produit scalaire (dot-product), vous pouvez rechercher "
+"\"dot\" au lieu de la catégorie Vector3. Dans la plupart des cas, recherchez "
 "simplement dans liste des nœuds, ça devrait être plus rapide."
 
 msgid "Call"
@@ -885,3 +885,7 @@ msgid ""
 msgstr ""
 "Utilisez le mode séquencé, ce qui a plus de sens en cas de respect de "
 "l'ordre de traitement :"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

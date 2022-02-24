@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,8 +25,14 @@ msgid ""
 "game with Godot. By the end of the series, you will have a simple yet "
 "finished project of your own like the animated gif below."
 msgstr ""
+"在这个渐进式教程系列中，你将会使用 Godot 创建你的第一个完整 3D 游戏。在本系列"
+"最后，你会完成属于自己的简单项目，类似下面的 GIF 动画。"
 
 msgid "|image0|"
+msgstr "|image0|"
+
+#, fuzzy
+msgid "image0"
 msgstr "|image0|"
 
 msgid ""
@@ -35,32 +41,35 @@ msgid ""
 "will both **recognize patterns** you learned in the previous tutorial and "
 "**build upon them** with new code and features."
 msgstr ""
+"我们要编写的游戏和 :ref:`doc_your_first_2d_game` 差不多，但是：你可以跳起来"
+"了，并且目标是把敌人踩扁。这样，你既可以\\ **复习**\\ 之前教程中学到的内容，"
+"也可以\\ **以此为基础**\\ 编写新的代码和特性。"
 
 msgid "You will learn to:"
 msgstr "你将学到："
 
 msgid "Work with 3D coordinates with a jumping mechanic."
-msgstr ""
+msgstr "使用 3D 坐标和跳跃机制。"
 
 msgid ""
 "Use kinematic bodies to move 3D characters and detect when and how they "
 "collide."
-msgstr ""
+msgstr "使用运动学实体移动 3D 角色，检测何时何地发生了碰撞。"
 
 msgid ""
 "Use physics layers and a group to detect interactions with specific entities."
-msgstr ""
+msgstr "使用物理层和节点组，检测特定实体之间的交互。"
 
 msgid ""
 "Code basic procedural gameplay by instancing monsters at regular time "
 "intervals."
-msgstr ""
+msgstr "编写基础的程序玩法，按照固定的时间间隔实例化怪物。"
 
 msgid "Design a movement animation and change its speed at run-time."
-msgstr ""
+msgstr "设计移动动画，在运行时改变播放速度。"
 
 msgid "Draw a user interface on a 3D game."
-msgstr ""
+msgstr "在 3D 游戏中绘制用户界面。"
 
 msgid "And more."
 msgstr "以及更多。"
@@ -72,6 +81,10 @@ msgid ""
 "complete demo's source code here: `Squash the Creep source code <https://"
 "github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
 msgstr ""
+"本教程是为跟着入门系列一路过来的初学者准备的。开始时我们会慢一点，提供详尽的"
+"指导，后续类似的步骤则会简短一些。如果你是熟练的程序员，可以在这里查看完整的"
+"演示源码：\\ `Squash the Creep 源代码 <https://github.com/GDQuest/godot-3d-"
+"dodge-the-creeps/>`__\\ 。"
 
 msgid ""
 "You can follow this series without having done the 2D one. However, if "
@@ -79,12 +92,18 @@ msgid ""
 "code is always more complex and the 2D series will give you foundations to "
 "follow along more comfortably."
 msgstr ""
+"你可以在没有做过 2D 的情况下继续学习这个系列。但是，如果你是游戏开发新手，我"
+"们建议你从 2D 开始。3D 游戏代码总是比较复杂，而 2D 系列会给你打下基础，让你更"
+"轻松地跟上。"
 
 msgid ""
 "We prepared some game assets so we can jump straight to the code. You can "
 "download them here: `Squash the Creeps assets <https://github.com/GDQuest/"
 "godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
+"我们准备了一些游戏素材，这样我们就可以直接进入代码。你可以在这里下载：\\ "
+"`Squash the Creeps 素材 <https://github.com/GDQuest/godot-3d-dodge-the-"
+"creeps/releases/tag/1.1.0>`__\\ 。"
 
 msgid ""
 "We will first work on a basic prototype for the player's movement. We will "
@@ -93,6 +112,13 @@ msgid ""
 "game with some nice animation. We'll wrap up with the score and the retry "
 "screen."
 msgstr ""
+"我们将首先为玩家的移动制作一个基本的原型。然后，添加我们将在屏幕周围随机生成"
+"的怪物。之后，我们将实现跳跃和压扁机制，然后用一些漂亮的动画来完善游戏。我们"
+"将以分数和重玩屏幕结束。"
 
 msgid "Contents"
 msgstr "目录"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

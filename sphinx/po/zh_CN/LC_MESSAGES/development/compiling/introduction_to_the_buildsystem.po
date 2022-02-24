@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,10 +96,10 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
-"你可以参照平台相关的构建文档 :ref:`doc_compiling_for_android`, :ref:"
-"`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`, :ref:"
-"`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
-"`doc_compiling_for_windows` 和 :ref:`doc_compiling_for_x11`."
+"你可以参照平台相关的构建文档 :ref:`doc_compiling_for_android`、\\ :ref:"
+"`doc_compiling_for_ios`、\\ :ref:`doc_compiling_for_osx`、\\ :ref:"
+"`doc_compiling_for_uwp`、\\ :ref:`doc_compiling_for_web`、\\ :ref:"
+"`doc_compiling_for_windows`、\\ :ref:`doc_compiling_for_x11`。"
 
 msgid ""
 "Note that for **Windows/Visual Studio**, you need to use ``x86_x64 Cross "
@@ -150,7 +150,7 @@ msgstr ""
 "它使用一个核心, 这样您可以继续使用您的电脑的做其他事情 :)"
 
 msgid "Example for using 4 cores:"
-msgstr "使用 4 核的示例:"
+msgstr "使用 4 核的示例："
 
 msgid "Resulting binary"
 msgstr "生成的二进制文件"
@@ -355,14 +355,13 @@ msgstr ""
 "默认的 ``custom.py`` 文件可以在Godot引擎源的根部创建, 以初始化任何通过命令行"
 "传递的SCons构建选项:"
 
-#, fuzzy
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
-"你也可以在编译前禁用一些内置模块, 以节省一些构建引擎的时间, 更多细节见 :ref:"
-"`doc_optimizing_for_size` 页面."
+"你也可以在编译前禁用一些内置模块，节省一些构建引擎的时间。详情请参阅 :ref:"
+"`doc_optimizing_for_size` 页面。"
 
 msgid ""
 "You can use the online `Godot build options generator <https://godot-build-"
@@ -441,12 +440,12 @@ msgid ""
 "lines of the `version.py file in the Godot Git repository <https://github."
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
-"``version.txt`` 文件应包含相应的Godot版本标识符. 该文件用于在特定于版本的目录"
-"中安装导出模板, 以避免冲突. 例如, 如果您要为Godot 3.1.1构建导出模板, 则 "
-"``version.txt`` 文件的第一行应包含 ``3.1.1.stable`` (没有其他内容). 该版本标"
-"识符 `在Godot Git 存储库中的version.py 文件 <https://github.com/godotengine/"
-"godot/blob/master/version.py>`__ 的 ``major``, ``minor``, ``patch`` (如果存"
-"在)和 ``status`` 行."
+"``version.txt`` 文件应包含相应的 Godot 版本标识符。该文件用于在特定于版本的目"
+"录中安装导出模板，以避免冲突。例如，如果您要为 Godot 3.1.1 构建导出模板，则 "
+"``version.txt`` 文件的第一行应包含 ``3.1.1.stable``\\ （没有其他内容）。该版"
+"本标识符\\ `在 Godot Git 仓库库中的 version.py 文件 <https://github.com/"
+"godotengine/godot/blob/master/version.py>`__\\ 的 ``major``\\ 、\\ "
+"``minor``\\ 、\\ ``patch``\\ （如果存在）和 ``status`` 行。"
 
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
@@ -458,3 +457,7 @@ msgstr ""
 "如果要针对多个平台进行开发, 则macOS绝对是用于交叉编译的最方便的主机平台, 因为"
 "您可以针对几乎每个目标(UWP除外)进行交叉编译.Linux和Windows位居第二, 但是Linux"
 "的优势是易于设置."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

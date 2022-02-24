@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)."
 msgstr ""
-"`Android SDK <https://developer.android.com/studio/#command-tools>` _ "
-"(strumenti da riga di comando sono sufficienti)."
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ (gli "
+"strumenti a riga di comando sono sufficienti)."
 
 msgid "Required SDK components will be automatically installed."
 msgstr ""
@@ -191,16 +191,15 @@ msgid ""
 "names. The templates folder can be located in:"
 msgstr ""
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 
-#, fuzzy
 msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 
 msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
+"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 
 msgid ""
 "``<version>`` is of the form ``major.minor[.patch].status`` using values "
@@ -223,8 +222,9 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr "Risoluzione dei problemi"
 
+#, fuzzy
 msgid "Platform doesn't appear in SCons"
-msgstr ""
+msgstr "La piattaforma non appare in SCons"
 
 msgid ""
 "Double-check that you've set the ``ANDROID_SDK_ROOT`` environment variable. "
@@ -233,8 +233,9 @@ msgid ""
 "<doc_android_setting_up_the_buildsystem>` for more information."
 msgstr ""
 
+#, fuzzy
 msgid "Application not installed"
-msgstr ""
+msgstr "Applicazione non installata"
 
 msgid ""
 "Android might complain the application is not correctly installed. If so:"
@@ -256,8 +257,9 @@ msgid ""
 "should be presented there. Seek assistance if you can't figure it out."
 msgstr ""
 
+#, fuzzy
 msgid "Application exits immediately"
-msgstr ""
+msgstr "L'applicazione esce immediatamente"
 
 msgid ""
 "If the application runs but exits immediately, this might be due to one of "
@@ -282,3 +284,7 @@ msgstr ""
 
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,12 +138,93 @@ msgid ""
 "reduced by about 15%."
 msgstr ""
 
-msgid "Disabling advanced GUI nodes"
-msgstr ""
+#, fuzzy
+msgid "Disabling advanced GUI objects"
+msgstr "특정 오브젝트를 비활성화하기"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+msgid "FileDialog"
+msgstr ""
+
+msgid "PopupMenu"
+msgstr ""
+
+#, fuzzy
+msgid "Tree"
+msgstr "씬트리"
+
+#, fuzzy
+msgid "TextEdit"
+msgstr "편집기"
+
+msgid "TreeItem"
+msgstr ""
+
+#, fuzzy
+msgid "OptionButton"
+msgstr "최적화(Optimization)"
+
+msgid "SpinBox"
+msgstr ""
+
+#, fuzzy
+msgid "ColorPicker"
+msgstr "색깔"
+
+msgid "ColorPickerButton"
+msgstr ""
+
+#, fuzzy
+msgid "RichTextLabel"
+msgstr "ScoreLabel"
+
+msgid "RichTextEffect"
+msgstr ""
+
+#, fuzzy
+msgid "CharFXTransform"
+msgstr "변형 지우기"
+
+msgid "PopupDialog"
+msgstr ""
+
+#, fuzzy
+msgid "WindowDialog"
+msgstr "Windows"
+
+msgid "AcceptDialog"
+msgstr ""
+
+msgid "ConfirmationDialog"
+msgstr ""
+
+#, fuzzy
+msgid "MarginContainer"
+msgstr "맞춤 데이터 타입 생성하기"
+
+#, fuzzy
+msgid "ViewportContainer"
+msgstr "뷰포트"
+
+#, fuzzy
+msgid "SplitContainer"
+msgstr "뷰포트"
+
+#, fuzzy
+msgid "HSplitContainer"
+msgstr "뷰포트"
+
+msgid "GraphNode"
+msgstr ""
+
+msgid "GraphEdit"
 msgstr ""
 
 msgid "Disabling unwanted modules"
@@ -182,3 +263,7 @@ msgstr ""
 #, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_gui_containers`"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

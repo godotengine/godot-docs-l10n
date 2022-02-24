@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgid ""
 "constructor of its objects."
 msgstr ""
 "Es posible definir escenas completamente usando sólo scripts. Esto es en "
-"escencia lo que hace el editor de Godot, sólo que lo hace en el constructor C"
-"++ de sus objetos."
+"escencia lo que hace el editor de Godot, sólo que lo hace en el constructor "
+"C++ de sus objetos."
 
 msgid ""
 "But, choosing which one to use can be a dilemma. Creating script instances "
@@ -276,8 +276,8 @@ msgstr ""
 
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
-"instruction makes a call to the scripting API which leads to many \"lookups"
-"\" on the back-end to find the logic to execute."
+"instruction makes a call to the scripting API which leads to many "
+"\"lookups\" on the back-end to find the logic to execute."
 msgstr ""
 "El código de secuencia de comandos como este es mucho más lento que el "
 "código C++ del lado del motor. Cada instrucción realiza una llamada a la API "
@@ -332,3 +332,7 @@ msgstr ""
 "Si uno desea darle un nombre a una escena, también se puede hacer en 3.1 "
 "declarando una clase script y dándole la escena como constante, de este modo "
 "el script se vuelve un espacio de nombres:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

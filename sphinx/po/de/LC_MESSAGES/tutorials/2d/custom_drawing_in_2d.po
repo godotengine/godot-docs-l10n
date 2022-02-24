@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -386,14 +386,14 @@ msgid ""
 "program runs at the same speed on everybody's hardware."
 msgstr ""
 "Der Grund ist, dass Ihre GPU die Frames tatsächlich so schnell wie möglich "
-"anzeigt. Wir müssen das Zeichnen mit dieser Geschwindigkeit \"normalisieren"
-"\"; Um dies zu erreichen, müssen wir den Parameter ``delta`` der Funktion "
-"``_process()`` verwenden. ``delta`` enthält die Zeit, die zwischen den "
-"beiden zuletzt gerenderten Frames vergangen ist. Es ist im Allgemeinen klein "
-"(ungefähr 0,0003 Sekunden, dies hängt jedoch von Ihrer Hardware ab). Wenn "
-"Sie also ``delta`` zur Steuerung für das Zeichnen verwenden, stellen Sie "
-"sicher, dass Ihr Programm auf der Hardware aller Benutzer mit der gleichen "
-"Geschwindigkeit ausgeführt wird."
+"anzeigt. Wir müssen das Zeichnen mit dieser Geschwindigkeit "
+"\"normalisieren\"; Um dies zu erreichen, müssen wir den Parameter ``delta`` "
+"der Funktion ``_process()`` verwenden. ``delta`` enthält die Zeit, die "
+"zwischen den beiden zuletzt gerenderten Frames vergangen ist. Es ist im "
+"Allgemeinen klein (ungefähr 0,0003 Sekunden, dies hängt jedoch von Ihrer "
+"Hardware ab). Wenn Sie also ``delta`` zur Steuerung für das Zeichnen "
+"verwenden, stellen Sie sicher, dass Ihr Programm auf der Hardware aller "
+"Benutzer mit der gleichen Geschwindigkeit ausgeführt wird."
 
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
@@ -428,3 +428,7 @@ msgstr ""
 "Denken Sie daran, das Schlüsselwort \"tool\" oben im Skript zu verwenden "
 "(überprüfen Sie die Referenz :ref:`doc_gdscript` wenn Sie vergessen haben "
 "was dies bewirkt)."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Übersetzungsformat"

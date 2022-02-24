@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,42 +18,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Class reference writing guidelines"
-msgstr "类参考手册编写指南"
+msgstr "类参考编写规范"
 
 msgid ""
 "This page explains how to write the class reference. You will learn where to "
 "write new descriptions for the classes, methods, and properties for Godot's "
 "built-in node types."
 msgstr ""
+"本页面将介绍如何编写类参考手册。你会学到去哪里为 Godot 内置节点类型的类、方"
+"法、属性编写新的描述。"
 
 msgid ""
 "To learn to submit your changes to the Godot project using the Git version "
 "control system, see :ref:`doc_updating_the_class_reference`."
 msgstr ""
+"要学习如何使用 Git 版本控制系统向 Godot 项目提交你的修改，请参见 :ref:"
+"`doc_updating_the_class_reference`\\ 。"
 
 msgid ""
 "The reference for each class is contained in an XML file like the one below:"
-msgstr ""
+msgstr "每个类的参考文档都被包含在一个如下的 XML 文件中："
 
-#, fuzzy
 msgid ""
 "It starts with brief and long descriptions. In the generated docs, the brief "
 "description is always at the top of the page, while the long description "
 "lies below the list of methods, variables, and constants. You can find "
 "methods, member variables, constants, and signals in separate XML nodes."
 msgstr ""
-"每个类都有一个简述和一个长的描述. 简述始终位于页面顶部, 而完整描述位于方法, "
-"变量和常量列表下方. 方法, 成员变量, 常量和信号在不同的类别或XML节点中. 对于以"
-"上每个, 了解它们如何在Godot的源代码中工作, 并填写它们的 <description> ."
+"开头是简介和详细描述。在生成的文档中，顶部总是简介，详细描述会放在方法、变"
+"量、常量列表之后。可以看到方法、成员变量、常量、信号都在各自单独的 XML 节点"
+"中。"
 
 msgid ""
 "For each, you want to learn how they work in Godot's source code. Then, fill "
 "their documentation by completing or improving the text in these tags:"
 msgstr ""
+"你会想要在 Godot 的源代码中学习它们都有什么用。然后补全或者完善这些标签中的文"
+"本："
 
-#, fuzzy
 msgid "`<brief_description>`"
-msgstr "<brief_description></brief_description>"
+msgstr "`<brief_description>`"
 
 msgid "`<description>`"
 msgstr "`<description>`"
@@ -65,6 +69,8 @@ msgid ""
 "`<method>` (in its `<description>` tag; return types and arguments don't "
 "take separate documentation strings)"
 msgstr ""
+"`<method>`\\ （在其 `<description>` 标签中；返回类型和参数不带单独的文档字符"
+"串）"
 
 msgid "`<member>`"
 msgstr "`<member>`"
@@ -72,45 +78,44 @@ msgstr "`<member>`"
 msgid ""
 "`<signal>` (in its `<description>` tag; arguments don't take separate "
 "documentation strings)"
-msgstr ""
+msgstr "`<signal>`\\ （在其 `<description>` 标签中；参数不带单独的文档字符串）"
 
-#, fuzzy
 msgid ""
 "Write in a clear and simple language. Always follow the :ref:`writing "
 "guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
 "and easy to read. **Do not leave empty lines** in the descriptions: each "
 "line in the XML file will result in a new paragraph, even if it is empty."
 msgstr ""
-"用清晰简单的语言编写. 始终遵循 :ref:`撰写指南 <doc_docs_writing_guidelines>` "
-"以使你的描述简短易读. 在描述中 **不要留下空行** :XML文件中的每一行都将生成一"
-"个新段落."
+"用清晰简单的语言编写。始终遵循\\ :ref:`编写规范 "
+"<doc_docs_writing_guidelines>`\\ 以使你的描述简短易读。在描述中\\ **不要留下"
+"空行**\\ ：XML 文件中的每一行都将生成一个新段落，空行也是一样。"
 
 msgid "How to edit class XML"
 msgstr "如何编辑类 XML"
 
-#, fuzzy
 msgid ""
 "Edit the file for your chosen class in ``doc/classes/`` to update the class "
 "reference. The folder contains an XML file for each class. The XML lists the "
 "constants and methods you will find in the class reference. Godot generates "
 "and updates the XML automatically."
 msgstr ""
-"在 ``doc/classes/`` 中编辑所选类的文件以更新类参考手册. 该文件夹包含每个类的"
-"XML文件.XML列出了你在类参考手册中找到的常量和方法.Godot自动生成并更新XML."
+"如果你想要更新某个类的类参考手册，编辑 ``doc/classes/`` 中的对应文件即可。文"
+"件夹中包含了各个类的 XML 文件。在 XML 中，列出了类参考中的常量和方法。Godot "
+"会自动生成并更新这些 XML。"
 
 msgid ""
 "For some modules in the engine's source code, you'll find the XML files in "
 "the ``modules/<module_name>/doc_classes/`` directory instead."
 msgstr ""
+"游戏引擎中某些模块的 XML 文件在 ``modules/<模块名称>/doc_classes/`` 目录下。"
 
-#, fuzzy
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
 "that it doesn't change the indent style: you should use tabs for the XML and "
 "four spaces inside BBCode-style blocks. More on that below."
 msgstr ""
-"用你喜欢的文本编辑器编辑它. 如果你使用代码编辑器, 请确保它不会改变缩进样式:"
-"XML使用制表符, 而BBCode风格的块内使用4个空格. 下面有更多这方面的内容."
+"用你喜欢的文本编辑器编辑它。如果你使用代码编辑器，请确保它不会改变缩进样式："
+"XML 使用制表符，而 BBCode 风格的块内使用 4 个空格。下面有更多这方面的内容。"
 
 msgid ""
 "To check that the modifications you've made are correct in the generated "
@@ -118,21 +123,26 @@ msgid ""
 "rst``. This will convert the XML files to the online documentation's format "
 "and output errors if anything's wrong."
 msgstr ""
+"要检查你所做出的修改在生成后的文档中是否正确，请在 ``doc/`` 文件夹中执行命令 "
+"``make rst``\\ 。这样就会将 XML 文件转换为在线文档的格式，存在错误时会有错误"
+"报告。"
 
 msgid ""
 "Alternatively, you can build Godot and open the modified page in the built-"
 "in code reference. To learn how to compile the engine, read the :ref:"
 "`compilation guide <toc-devel-compiling>`."
 msgstr ""
+"你也可以自行构建 Godot 然后在内置的类参考手册中打开被修改的页面。引擎的编译方"
+"法请查看 :ref:`compilation guide <toc-devel-compiling>`\\ 。"
 
-#, fuzzy
 msgid ""
 "We recommend using a code editor that supports XML files like Vim, Atom, "
 "Visual Studio Code, Notepad++, or another to comfortably edit the file. You "
 "can also use their search feature to find classes and properties quickly."
 msgstr ""
-"使用代码编辑器, 如Vim, Atom, Code, Notepad ++或类似的编辑器, 快速编辑文件. 使"
-"用搜索功能快速查找类."
+"我们推荐使用 Vim、Atom、Visual Studio Code、Notepad++ 等支持 XML 的代码编辑"
+"器，或者其他能够方便编辑此类文件的编辑器。你还可以使用它们的搜索功能快速查找"
+"类和属性。"
 
 msgid "Improve formatting with BBCode style tags"
 msgstr "使用 BBCode 风格标签来改进格式"
@@ -162,13 +172,11 @@ msgstr "[Class]"
 msgid "Link a class"
 msgstr "链接到一个类"
 
-#, fuzzy
 msgid "Move the [Sprite]."
-msgstr "移动[Sprite]."
+msgstr "移动 [Sprite]。"
 
-#, fuzzy
 msgid "Move the :ref:`class_Sprite`."
-msgstr "移动 :ref:`class_Sprite`."
+msgstr "移动 :ref:`class_Sprite`\\ 。"
 
 msgid "[method methodname]"
 msgstr "[method methodname]"
@@ -177,11 +185,10 @@ msgid "Link to a method in this class"
 msgstr "链接到此类中的方法"
 
 msgid "Call [method hide]."
-msgstr "调用[method hide]."
+msgstr "调用 [method hide]。"
 
-#, fuzzy
 msgid "Call :ref:`hide <class_Spatial_method_hide>`."
-msgstr "参见 :ref:`hide <class_Spatial_method_hide>`."
+msgstr "调用 :ref:`hide <class_Spatial_method_hide>`\\ 。"
 
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
@@ -189,9 +196,8 @@ msgstr "[method Class.methodname]"
 msgid "Link to another class's method"
 msgstr "链接到另一个类的方法"
 
-#, fuzzy
 msgid "Call [method Node3D.hide]."
-msgstr "调用[method hide]."
+msgstr "调用 [method Node3D.hide]。"
 
 msgid "[member membername]"
 msgstr "[member membername]"
@@ -202,9 +208,8 @@ msgstr "链接到这个类的成员"
 msgid "Get [member scale]."
 msgstr "获得[member scale]."
 
-#, fuzzy
 msgid "Get :ref:`scale <class_Node2D_property_scale>`."
-msgstr "获得 :ref:`scale <class_Node2d_property_scale>`."
+msgstr "获取 :ref:`scale <class_Node2D_property_scale>`\\ 。"
 
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
@@ -224,9 +229,8 @@ msgstr "链接到此类中的信号"
 msgid "Emit [signal renamed]."
 msgstr "发射 [signal renamed]."
 
-#, fuzzy
 msgid "Emit :ref:`renamed <class_Node_signal_renamed>`."
-msgstr "发射 :ref:`renamed <class_Node_signal_renamed>`."
+msgstr "触发 :ref:`renamed <class_Node_signal_renamed>`\\ 。"
 
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
@@ -338,7 +342,7 @@ msgid ""
 "speed up your workflow."
 msgstr ""
 "请先写 GDScript 代码示例！你可以使用这个\\ `实验性的代码翻译工具 <https://"
-"github.com/HaSa1002/codetranslator>`\\ 来加速工作流程。"
+"github.com/HaSa1002/codetranslator>`_\\ 来加速工作流程。"
 
 msgid "The above will display as:"
 msgstr "上述内容将显示为："
@@ -378,13 +382,16 @@ msgid ""
 msgstr ""
 "没问题. 将其留下, 并在你请求提取更改时列出跳过的方法. 别的编写者会处理它."
 
-#, fuzzy
 msgid ""
 "You can still look at the methods' implementation in Godot's source code on "
 "GitHub. If you have doubts, feel free to ask on the `Q&A website <https://"
 "godotengine.org/qa/>`__ and `Godot Contributors Chat <https://chat."
 "godotengine.org/>`_."
 msgstr ""
-"你仍然可以在GitHub上查看Godot源代码中方法的实现. 此外, 如果你有疑问, 请随时"
-"在 `问答网站 <https://godotengine.org/qa/>`__ 和IRC(freenode, #godotengine)上"
-"询问."
+"你仍然可以在 GitHub 上查看 Godot 的源代码。如果你有疑问，请随时在\\ `问答网"
+"站 <https://godotengine.org/qa/>`__\\ 和 `Godot 贡献者聊天 <https://chat."
+"godotengine.org/>`_\\ 上提问。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

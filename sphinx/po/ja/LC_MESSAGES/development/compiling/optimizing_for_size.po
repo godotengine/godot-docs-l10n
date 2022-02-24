@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,8 @@ msgstr ""
 "には、まず tools を無効にする必要があります。3Dの無効化により、バイナリのサイ"
 "ズはおよそ15%減ります。"
 
-msgid "Disabling advanced GUI nodes"
+#, fuzzy
+msgid "Disabling advanced GUI objects"
 msgstr "高度なGUIノードの無効化"
 
 #, fuzzy
@@ -172,6 +173,89 @@ msgstr ""
 "ほとんどの小規模ゲームは、Tree、ItemList、TextEditorやGraphEditなどの複雑な"
 "GUIコントロールは必要としません。これらは、このビルド フラグにより無効化でき"
 "ます:"
+
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+#, fuzzy
+msgid "FileDialog"
+msgstr "ファイルダイアログ"
+
+msgid "PopupMenu"
+msgstr ""
+
+#, fuzzy
+msgid "Tree"
+msgstr "シーンツリー"
+
+#, fuzzy
+msgid "TextEdit"
+msgstr "テキストエディタ"
+
+msgid "TreeItem"
+msgstr ""
+
+#, fuzzy
+msgid "OptionButton"
+msgstr "最適化"
+
+msgid "SpinBox"
+msgstr ""
+
+#, fuzzy
+msgid "ColorPicker"
+msgstr "色空間"
+
+msgid "ColorPickerButton"
+msgstr ""
+
+#, fuzzy
+msgid "RichTextLabel"
+msgstr "RichTextLabelのBBCode"
+
+#, fuzzy
+msgid "RichTextEffect"
+msgstr "効果"
+
+#, fuzzy
+msgid "CharFXTransform"
+msgstr "トランスフォームをクリア"
+
+msgid "PopupDialog"
+msgstr ""
+
+#, fuzzy
+msgid "WindowDialog"
+msgstr "Windows"
+
+#, fuzzy
+msgid "AcceptDialog"
+msgstr "ファイルダイアログ"
+
+#, fuzzy
+msgid "ConfirmationDialog"
+msgstr "構成"
+
+#, fuzzy
+msgid "MarginContainer"
+msgstr "マージンコンテナ"
+
+msgid "ViewportContainer"
+msgstr "ビューポートコンテナ"
+
+#, fuzzy
+msgid "SplitContainer"
+msgstr "分割コンテナ"
+
+#, fuzzy
+msgid "HSplitContainer"
+msgstr "分割コンテナ"
+
+msgid "GraphNode"
+msgstr ""
+
+msgid "GraphEdit"
+msgstr ""
 
 msgid "Disabling unwanted modules"
 msgstr "不要なモジュールの無効化"
@@ -216,3 +300,7 @@ msgstr ""
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:'doc_overriding_build_options'。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,8 +54,8 @@ msgstr ""
 "**我们可以删除现有场景.** :ref:`SceneTree.change_scene() "
 "<class_SceneTree_method_change_scene>` 和 :ref:`SceneTree.change_scene_to() "
 "<class_SceneTree_method_change_scene_to>` 会立即删除当前场景. 不过开发者也可"
-"以删除主场景. 假设根节点的名字是 \"Main\", 可以执行 ``get_node(\"/root/Main"
-"\").free()`` 来删除整个场景."
+"以删除主场景. 假设根节点的名字是 \"Main\", 可以执行 ``get_node(\"/root/"
+"Main\").free()`` 来删除整个场景."
 
 msgid "Unloads memory."
 msgstr "卸载内存."
@@ -206,3 +206,7 @@ msgid ""
 msgstr ""
 "每个选项都有最合适的情况, 因此必须检查每个选项的效果并确定最适合其独特情况的"
 "路径."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

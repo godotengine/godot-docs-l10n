@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -561,7 +561,6 @@ msgstr "Ce qui permet de les régler ou de les lire :"
 msgid "State machine travel"
 msgstr "Voyage de la machine à état"
 
-#, fuzzy
 msgid ""
 "One of the nice features in Godot's ``StateMachine`` implementation is the "
 "ability to travel. The graph can be instructed to go from the current state "
@@ -570,10 +569,12 @@ msgid ""
 "state and the destination state, the graph teleports to the destination "
 "state."
 msgstr ""
-"Une des caractéristiques intéressantes de l'implémentation de la "
-"``StateMachine`` de Godot est la possibilité de voyager. On peut demander au "
-"graphique de passer de l'état actuel à un autre, en visitant tous les états "
-"intermédiaires. C'est fait via l'algorithme A\\*."
+"Une des fonctionnalités intéressantes de l'implémentation de Godot's "
+"``StateMachine`` est la possibilité de voyager. On peut demander au graphe "
+"d'aller de l'état actuel à un autre, tout en visitant tous les états "
+"intermédiaires. Ceci est fait via l'algorithme A\\*. En l'absence de toute "
+"transition entre l'état actuel et l'état de destination, le graphe se "
+"téléporte à l'état de destination."
 
 msgid ""
 "To use the travel ability, you should first retrieve the :ref:"
@@ -600,3 +601,7 @@ msgstr ""
 "La machine à états doit être en cours d'exécution avant que vous puissiez "
 "voyager. Assurez-vous d'appeler ``start()`` ou de choisir un nœud pour "
 "**Jouer automatiquement au chargement**."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

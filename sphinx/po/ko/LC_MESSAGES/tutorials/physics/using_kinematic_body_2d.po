@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,9 +284,9 @@ msgstr ""
 "새로운 Godot 사용자로부터 흔한 질문이 있습니다: \"어떻게 어떤 이동 함수를 사"
 "용하는 지를 결정하나요?\" 자주하는 대답은 ``move_and_slide()``\\ 를 사용하라"
 "는 것인데, \"더 쉽기\" 때문입니다, 그러나 반드시 그런 것은 아닙니다. 생각을 "
-"해보자면 ``move_and_slide()``\\ 는 특별한 경우, 그리고 ``move_and_collide()``"
-"\\ 는 더 일반적인 것입니다. 예를 들어 두 개의 코드 단문은 값은 콜리전 반응 결"
-"과가 나타납니다:"
+"해보자면 ``move_and_slide()``\\ 는 특별한 경우, 그리고 "
+"``move_and_collide()``\\ 는 더 일반적인 것입니다. 예를 들어 두 개의 코드 단문"
+"은 값은 콜리전 반응 결과가 나타납니다:"
 
 msgid ""
 "Anything you do with ``move_and_slide()`` can also be done with "
@@ -387,9 +387,9 @@ msgid ""
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
 "need to code whatever response we want from the collision."
 msgstr ""
-"이것은 *콜리전 응답*\\ 이 없기 때문에 발생한 것입니다. ``move_and_collide()``"
-"\\ 는 콜리전이 발생할 때 바디의 움직임을 멈춥니다. 콜리전로부터 원하는 어떤 "
-"응답이라도 코딩해야 합니다."
+"이것은 *콜리전 응답*\\ 이 없기 때문에 발생한 것입니다. "
+"``move_and_collide()``\\ 는 콜리전이 발생할 때 바디의 움직임을 멈춥니다. 콜리"
+"전로부터 원하는 어떤 응답이라도 코딩해야 합니다."
 
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
@@ -531,3 +531,7 @@ msgid ""
 msgstr ""
 "이를 통해 (벽 점프와 같은) 다른 기능들도 ``is_on_wall()``\\ 를 사용해 구현할 "
 "수 있습니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

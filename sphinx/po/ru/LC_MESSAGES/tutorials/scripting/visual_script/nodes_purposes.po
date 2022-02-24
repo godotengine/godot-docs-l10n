@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,9 +142,9 @@ msgid ""
 "happens by dragging the *Output* away."
 msgstr ""
 "Отключение требует немного больше практики. Отключение *Data Ports* "
-"(\"Портов данных\") происходит путем перетаскивания к *Input* (ко \"Входу"
-"\"), напротив, отключение *Sequence Ports* (\"Последовательных портов\") "
-"происходит путем перетаскивания к *Output* (к \"Выходу\")."
+"(\"Портов данных\") происходит путем перетаскивания к *Input* (ко "
+"\"Входу\"), напротив, отключение *Sequence Ports* (\"Последовательных "
+"портов\") происходит путем перетаскивания к *Output* (к \"Выходу\")."
 
 msgid ""
 "This may seem strange at first, but it happens because *Data Ports* are 1:N "
@@ -193,9 +193,9 @@ msgid ""
 "to as *member function*) on this node."
 msgstr ""
 "Одной из наиболее распространенных задач является доступ к узлам дерева сцен "
-"(опять же, не путать с *Visual Script Nodes* (\"Узлами Визуального Скрипта"
-"\")). Перетаскивание узла из дерева сцен на канву попросит вас *вызвать "
-"метод* (иногда называемый *функцией-членом*) в этом узле."
+"(опять же, не путать с *Visual Script Nodes* (\"Узлами Визуального "
+"Скрипта\")). Перетаскивание узла из дерева сцен на канву попросит вас "
+"*вызвать метод* (иногда называемый *функцией-членом*) в этом узле."
 
 msgid ""
 "While accessing properties is desired in most cases (more on that below), "
@@ -250,8 +250,8 @@ msgstr ""
 
 msgid "In this case, the value can be read from a *Data Port*."
 msgstr ""
-"В этом случае значение может быть прочитано из *Data Port* (\"Порта данных"
-"\")."
+"В этом случае значение может быть прочитано из *Data Port* (\"Порта "
+"данных\")."
 
 msgid "Variables"
 msgstr "Переменные"
@@ -544,7 +544,7 @@ msgstr ""
 "другой сцены. Это хороший класс для знакомства."
 
 msgid "Preload"
-msgstr "Предварительная загрузка"
+msgstr "Предзагрузить"
 
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
@@ -631,7 +631,7 @@ msgid "When done, it goes via the \"exit\" sequence port."
 msgstr "Когда это сделано, он проходит через последовательный порт \"Выход\"."
 
 msgid "Return"
-msgstr "Возвращение"
+msgstr "Возврат"
 
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
@@ -671,7 +671,7 @@ msgstr ""
 "функции сценария:"
 
 msgid "Switch"
-msgstr "Переключатель"
+msgstr "Множественный выбор"
 
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
@@ -782,7 +782,7 @@ msgstr ""
 "перетаскивании."
 
 msgid "Wait"
-msgstr "Ожидать"
+msgstr "Ждать"
 
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
@@ -796,7 +796,7 @@ msgstr ""
 "определённого количества времени перед продолжением исполнения."
 
 msgid "Yield"
-msgstr "Yield"
+msgstr "Приостановить"
 
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
@@ -884,3 +884,7 @@ msgid ""
 msgstr ""
 "Используйте последовательный режим, который имеет больше смысла в случае "
 "соблюдения порядка обработки:"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Translation format (формат перевода)"

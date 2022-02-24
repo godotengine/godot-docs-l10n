@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#, fuzzy
 msgid "2D movement overview"
-msgstr ""
+msgstr "Panoramica del movimento 2D"
 
 msgid "Introduction"
 msgstr "Introduzione"
@@ -82,8 +83,8 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
 "Se non hai esperienza di matematica vettoriale, o necessiti di un ripasso, "
-"puoi dare un'occhiata alla spiegazione sull'utilizzo dei vettori in Godot a :"
-"ref:`doc_vector_math`."
+"puoi dare un'occhiata alla spiegazione sull'utilizzo dei vettori in Godot "
+"in :ref:`doc_vector_math`."
 
 msgid ""
 "If the code above does nothing when you press the keys, double-check that "
@@ -92,7 +93,7 @@ msgid ""
 msgstr ""
 
 msgid "Rotation + movement"
-msgstr "Rotazione + movimento"
+msgstr "Rotazione + Movimento"
 
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
@@ -128,7 +129,7 @@ msgstr ""
 "funzioni trigonometriche."
 
 msgid "Rotation + movement (mouse)"
-msgstr "Rotazione + movimento (mouse)"
+msgstr "Rotazione + Movimento (mouse)"
 
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
@@ -151,9 +152,8 @@ msgstr ""
 "utilizzare questa funzione, si puo' ottenere lo stesso risultato impostando "
 "l'angolo come segue:"
 
-#, fuzzy
 msgid "Click-and-move"
-msgstr "Clicca e muovi (Click-and-move)"
+msgstr "Clicca e muovi"
 
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
@@ -170,19 +170,19 @@ msgid ""
 "moves slightly past the position and tries to move back, only to move too "
 "far and repeat."
 msgstr ""
-"Notare il controllo``length()`` che abbiamo impostato prima dello "
-"spostamento. Senza questo test, il corpo \"vibrerà\" appena raggiungerà la "
-"destinazione, in quanto lo spostamento sarà leggermente troppo e proverà a "
-"tornare indietro, ma ancora sarà superiore al necessario, tornerà indietro, "
-"a ripetizione."
+"Notate il controllo ``distance_to()`` che facciamo prima del movimento. "
+"Senza questo test, il corpo avrebbe un \"jitter\" al raggiungimento della "
+"posizione di destinazione, in quanto si sposta leggermente oltre la "
+"posizione e cerca di tornare indietro, solo per spostarsi troppo lontano e "
+"ripetere."
 
 #, fuzzy
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
-"Togliendo il commento a lla riga ``rotation`` provocherà anche la rotazione "
-"del personaggio nella direzione di movimento che preferisci."
+"Togliere il commento alla linea ``look_at()`` farà anche girare il corpo per "
+"puntare nella sua direzione di movimento, se preferite."
 
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
@@ -208,5 +208,9 @@ msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
-"Puoi scaricare questi progetti di esempio qui: :download:`2D_movement_demo."
+"Puoi scaricare questo progetto di esempio qui: :download:`2D_movement_demo."
 "zip <files/2D_movement_demo.zip>`"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "OpenXR plugin"
+msgstr "Carregando cenas"
+
+#, fuzzy
+msgid "Welcome to the Godot OpenXR documentation!"
+msgstr "Sobre a documentação"
+
+msgid "Introduction"
+msgstr "Introdução"
+
+#, fuzzy
+msgid ""
+"This is the documentation for the `Godot OpenXR plugin <https://github.com/"
+"GodotVR/godot_openxr>`__."
+msgstr ""
+"Você pode encontrar o projeto finalizado em`OpenVR GitHub repository "
+"<https://github.com/GodotVR/godot_openvr_fps>`_."
+
+msgid ""
+"The plugin is supported on Godot 3.4 and later. However, it does **not** "
+"support the upcoming Godot 4.0 release."
+msgstr ""
+
+msgid "Getting started"
+msgstr "Primeiros passos"
+
+msgid ""
+"To start a new project that supports OpenXR, start by opening up the Godot "
+"editor and creating a new project."
+msgstr ""
+
+msgid ""
+"Copy the plugin into this new project in the subfolder ``addons/godot_openxr/"
+"`` using your operating system's file manager. It is important that the "
+"plugin is placed in this **exact** location in your project folder."
+msgstr ""
+
+msgid ""
+"Back in Godot, create a new 3D scene and press the **Instance Child Scene** "
+"button (represented by a chain link icon) in the scene tree dock. Select the "
+"``addons/godot_openxr/scenes/first_person_controller_vr.tscn`` subscene and "
+"add it to your scene. Right-click the added node and select **Editable "
+"Children** to gain access to some of the nodes in this subscene:"
+msgstr ""
+
+msgid ""
+"This is the bare minimum you need. However, for good measure, we suggest "
+"adding a DirectionalLight node and a few MeshInstance nodes so you have "
+"something to see. If you add those to the hand nodes, you can visualize "
+"where your controllers are tracking."
+msgstr ""
+
+#, fuzzy
+msgid "Your scene should now look something like this:"
+msgstr "Sua cena final deve ser algo como isto:"
+
+msgid ""
+"Now you can press the **Run** button in the top-right corner of the editor "
+"to start your project and you should be able to look around."
+msgstr ""
+
+msgid "Next steps"
+msgstr "Próximos passos"
+
+msgid ""
+"To turn this simple scene into a proper game, the sky is the limit. Below, "
+"there are a few more topics specific to this plugin. However, the following "
+"resources are a good place to continue:"
+msgstr ""
+
+msgid ""
+":ref:`VR starter tutorial <doc_vr_starter_tutorial_part_one>` in the "
+"official documentation may focus on OpenVR, but almost everything there "
+"applies to OpenXR as well."
+msgstr ""
+
+msgid ""
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__ is a plugin "
+"that contains a set of handy sub scene to quickly implement locomotion, "
+"object interaction and UI elements in your XR experience."
+msgstr ""
+
+msgid ""
+"Please check the `Godot Engine community page <https://godotengine.org/"
+"community>`__ to find help from other Godot developers. The ``#xr`` channel "
+"on the Godot Discord has become a vibrant Godot XR community."
+msgstr ""
+
+#, fuzzy
+msgid "Plugin features"
+msgstr "Funcionalidades do C#"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

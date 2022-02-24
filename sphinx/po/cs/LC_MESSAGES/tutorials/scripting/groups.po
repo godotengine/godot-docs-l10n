@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,15 +37,11 @@ msgstr ""
 msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
-#, fuzzy
 msgid "Adding nodes to a group"
-msgstr "Přidávání souborů do projektu"
+msgstr "Přidání uzlů do skupiny"
 
-#, fuzzy
 msgid "There are two ways to add nodes to groups:"
-msgstr ""
-"Existují dva způsoby, jak navrhnout vaše uživatelské rozhraní v Godotu. "
-"Můžete:"
+msgstr "Uzly lze do skupin přidávat dvěma způsoby:"
 
 msgid "Using the Node dock in the editor."
 msgstr "Použití doku uzlu v editoru."
@@ -54,9 +50,8 @@ msgid ""
 "Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Node dock"
-msgstr "Použití webového editoru"
+msgstr "Použití doku uzlu"
 
 msgid ""
 "You can add nodes in the current scene to groups using the Groups tab in the "
@@ -105,18 +100,17 @@ msgid ""
 "in particular."
 msgstr ""
 
-#, fuzzy
 msgid "Using code"
-msgstr "Použití SceneTree"
+msgstr "Pomocí kódu"
 
-#, fuzzy
 msgid ""
 "You can also manage groups from scripts. The following code adds the node to "
 "which you attach the script to the ``guards`` group as soon as it enters the "
 "scene tree."
 msgstr ""
-"A druhý způsob je pomocí kódu. Následující skript by přidal aktuální uzel do "
-"skupiny ``nepřátelé`` , jakmile se objeví ve stromu scény."
+"Skupiny můžete spravovat také ze skriptů. Následující kód přidá uzel, ke "
+"kterému připojíte skript, do skupiny ``guards``, jakmile vstoupí do stromu "
+"scény."
 
 msgid ""
 "Imagine you're creating an infiltration game. When an enemy spots the "
@@ -128,15 +122,13 @@ msgid ""
 "all enemies that the player was spotted."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The above code calls the function ``enter_alert_mode`` on every member of "
 "the group ``guards``."
 msgstr ""
-"Výše uvedený kód volá funkci ``player_was_discovered`` pro každého člena "
-"skupiny ``nepřátelé``."
+"Výše uvedený kód volá funkci ``enter_alert_mode`` u každého člena skupiny "
+"``strážců``."
 
-#, fuzzy
 msgid ""
 "To get the full list of nodes in the ``guards`` group as an array, you can "
 "call :ref:`SceneTree.get_nodes_in_group() "
@@ -155,3 +147,7 @@ msgstr ""
 "metod pro práci se scénami, jejich hierarchií uzlů a skupinami. Umožňuje "
 "snadno přepínat scény nebo je znovu načítat, ukončovat hru nebo ji "
 "pozastavovat a rušit. Poskytuje také užitečné signály."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

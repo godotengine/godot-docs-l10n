@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,10 +86,11 @@ msgstr ""
 "エッジは、任意の2つの頂点間の接続です。エッジ配列の各エッジには、それが構成す"
 "る2つの頂点への参照と、それが含まれる最大2つの面が含まれます。"
 
+#, fuzzy
 msgid ""
 "A face is a triangle made up of three vertices and three corresponding "
 "edges. Each face in the face array contains a reference to the three "
-"triangles and three edges it is composed of."
+"vertices and three edges it is composed of."
 msgstr ""
 "面は、3つの頂点と3つの対応するエッジで構成される三角形です。面配列の各面に"
 "は、3つの三角形とそれが構成される3つのエッジへの参照が含まれています。"
@@ -129,3 +130,7 @@ msgid ""
 "normals and vertex colors."
 msgstr ""
 "以下は、新しい法線と頂点の色で完全な脈動するブロブを作成する完全な例です。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

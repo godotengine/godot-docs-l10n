@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,11 +63,13 @@ msgstr ""
 "Non dimenticare di impostare i nodi figli in modo che non possano essere "
 "selezionati, come hai fatto con la scena del Giocatore."
 
+#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
-"Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
-"``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
-"box. This will ensure the mobs do not collide with each other."
+"Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
+"ref:`CollisionObject2D <class_CollisionObject2D>` section, click the "
+"``Mask`` property and uncheck the first box. This will ensure the mobs do "
+"not collide with each other."
 msgstr ""
 "Nelle proprietà di :ref:`RigidBody2D <class_RigidBody2D>`, imposta ``Gravity "
 "Scale`` a ``0``, in modo che il nemico non cada verso il basso. Inoltre, "
@@ -85,7 +87,7 @@ msgstr ""
 "walk``. Ci sono due immagini per ogni animazione nella cartella grafica."
 
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr "Regolare \"Speed (FPS)\" su ```3`` per tutte le animazioni."
+msgstr "Regola \"Speed (FPS)\" su ``3`` per tutte le animazioni."
 
 #, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to \"On\"."
@@ -95,8 +97,8 @@ msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
-"Selezioneremo una di queste animazioni a caso in modo che i nemici abbiano "
-"una certa varietà."
+"Selezioneremo una di queste animazioni casualmente in modo che i nemici "
+"abbiano una certa varietà."
 
 #, fuzzy
 msgid ""
@@ -118,7 +120,7 @@ msgstr ""
 "nell'Inspector)."
 
 msgid "Save the scene."
-msgstr "Salva Scena."
+msgstr "Salva la scena."
 
 msgid "Enemy script"
 msgstr "Script del nemico"
@@ -182,3 +184,7 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

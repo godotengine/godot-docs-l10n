@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,10 +59,10 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"`單例模式 <https://zh.wikipedia.org/zh-tw/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC"
-"%8F>`_ 對於需要在不同場景間保存持續性資料這類常見問題來說是很實用的工具。在我"
-"們這個例子中就可以拿來在多個單例中重複使用相同的場景或類別，只要名稱不要衝突"
-"就好。"
+"`單例模式 <https://zh.wikipedia.org/zh-tw/"
+"%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F>`_ 對於需要在不同場景間保存持續性資料這"
+"類常見問題來說是很實用的工具。在我們這個例子中就可以拿來在多個單例中重複使用"
+"相同的場景或類別，只要名稱不要衝突就好。"
 
 msgid "Using this concept, you can create objects that:"
 msgstr "利用這個概念，我們可以做出像這樣的物件："
@@ -264,3 +264,7 @@ msgstr ""
 "另外，若載入時間沒有很長的話 (如小於 3 秒等)，也可以在場景更改前顯示一些 2D "
 "元素來製造出「載入磚 (Loading Plaque)」的效果。場景更改完後就可以將這些元素隱"
 "藏起來。這種做法可以用來讓玩家知道場景正在載入。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

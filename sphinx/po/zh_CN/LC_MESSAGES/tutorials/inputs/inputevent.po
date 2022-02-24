@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 "种类型的输入事件. 输入事件通过引擎传递, 可在多个位置接收, 具体位置取决于目的."
 
 msgid "Here is a quick example, closing your game if the escape key is hit:"
-msgstr "这里有一个简单的示例,Esc键被触发时关闭您的游戏:"
+msgstr "这里有一个简单的示例，按下 ESC 键时关闭您的游戏："
 
 msgid ""
 "However, it is cleaner and more flexible to use the provided :ref:`InputMap "
@@ -55,8 +55,8 @@ msgid ""
 "You can set up your InputMap under **Project > Project Settings > Input "
 "Map** and then use those actions like this:"
 msgstr ""
-"您可以在 **Project > Project Settings > Input Map** 下设置您的输入映射, 然后"
-"使用以下操作:"
+"您可以在\\ **项目 > 项目设置 > 按键映射**\\ 下设置您的输入映射，这些动作的使"
+"用方法如下："
 
 msgid "How does it work?"
 msgstr "它的工作原理是什么?"
@@ -160,11 +160,11 @@ msgid ""
 "relevant physics object (bodies receive this callback by default, but areas "
 "do not. This can be configured through :ref:`Area <class_Area>` properties)."
 msgstr ""
-"如果到目前为止没有人想要这个事件，并且 Viewport 中分配的 :ref:`摄像机 "
-"<class_Camera>` 启用了 :ref:`对象拾取 "
-"<class_viewport_property_physics_object_picking>` ，就会（从点击的射线方向）"
-"往物理世界中投射一条射线。（如果是根视图，则是在 :ref:`项目设置 "
-"<class_ProjectSettings_property_physics/common/enable_object_picking>` 中启"
+"如果到目前为止没有人想要这个事件，并且 Viewport 中分配的 :ref:`Camera "
+"<class_Camera>` 启用了\\ :ref:`对象拾取 "
+"<class_viewport_property_physics_object_picking>`\\ ，就会（从点击的射线方"
+"向）往物理世界中投射一条射线。（如果是根视图，则是在\\ :ref:`项目设置 "
+"<class_ProjectSettings_property_physics/common/enable_object_picking>`\\ 中启"
 "用。）如果这条射线命中了某个对象，就会调用相关物理对象的 :ref:"
 "`CollisionObject._input_event() <class_CollisionObject_method__input_event>` "
 "函数（物理实体默认接受这个回调，区域则不会。可以使用 :ref:`Area "
@@ -312,7 +312,7 @@ msgid ""
 msgstr "包含一般动作. 这些事件通常由程序员作为反馈生成. (以下更多内容)"
 
 msgid "Actions"
-msgstr "Actions"
+msgstr "动作"
 
 msgid ""
 "An InputEvent may or may not represent a pre-defined action. Actions are "
@@ -334,7 +334,7 @@ msgstr "输入要在运行时重新配置."
 
 msgid ""
 "Actions can be created from the Project Settings menu in the Actions tab."
-msgstr "可以从 ``操作`` 选项卡的 ``项目设置`` 菜单中创建操作."
+msgstr "动作可以在“项目设置”菜单的“动作”选项卡中创建。"
 
 msgid ""
 "Any event has the methods :ref:`InputEvent.is_action() "
@@ -372,3 +372,7 @@ msgstr ""
 "ref:`InputMap <class_InputMap>` 单例是在运行时重新分配或创建不同动作的理想选"
 "择. 这个单例不被保存(必须手动修改), 其状态从项目设置进行(project.godot). 所以"
 "任何这种类型的动态系统, 都需要以程序员认为最合适的方式来存储设置."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

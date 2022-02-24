@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,13 +100,12 @@ msgstr ""
 msgid "Creating nodes"
 msgstr "ノード作成"
 
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
-"コードからノードを作成するには、他のクラスベースのデータ型と同様に、\\ ``."
-"new()``\\ メソッドを呼び出します。例えば:"
+"コードからノードを作成するには、他のクラスベースのデータ型と同様に、\\ "
+"``new()``\\ メソッドを呼び出します。"
 
 msgid ""
 "You can store the newly created node's reference in a variable and call "
@@ -193,3 +192,7 @@ msgstr ""
 "この2段階のプロセスの利点は、パックされたシーンをロードして使用できる状態に保"
 "ち、必要なだけインスタンスを作成できることです。 これは、アクティブシーン内の"
 "複数の敵、弾丸、その他の存在をすばやくインスタンス化するのに特に便利です。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

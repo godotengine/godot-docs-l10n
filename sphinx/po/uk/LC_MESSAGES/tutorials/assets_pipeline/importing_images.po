@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,6 +196,13 @@ msgstr ""
 "У цій таблиці описаний кожен із чотирьох варіантів разом із їхніми "
 "перевагами та недоліками (|good| = краще, |bad| = гірше):"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "і"
+
 msgid "Uncompressed"
 msgstr "Без стиснення"
 
@@ -234,6 +241,10 @@ msgid "|bad| Large"
 msgstr "|bad| Багато"
 
 msgid "|regular| Small"
+msgstr "|regular| Мало"
+
+#, fuzzy
+msgid "regular"
 msgstr "|regular| Мало"
 
 msgid "|good| Very Small"
@@ -309,11 +320,12 @@ msgstr ""
 "При використанні текстури в якості карти нормалей, потрібні лише червоний та "
 "зелений канали. Звичні алгоритми стиснення текстури створюють спотворення, "
 "які не виглядають добре в картах нормалей, формат стиснення RGTC найкраще "
-"підходить для цих даних. Коли ця опція в положенні \"Enabled\" (\"Увімкнено"
-"\"), Godot імпортує зображення у вигляді стиснення RGTC. За замовчуванням "
-"встановлено значення \"Detect\" (\"Виявити\"), що означає, що якщо текстура "
-"коли-не-будь використовуватиметься як карта нормалей, вона буде змінена на "
-"\"Enabled\" (\"Увімкнено\") і автоматично імпортується."
+"підходить для цих даних. Коли ця опція в положенні "
+"\"Enabled\" (\"Увімкнено\"), Godot імпортує зображення у вигляді стиснення "
+"RGTC. За замовчуванням встановлено значення \"Detect\" (\"Виявити\"), що "
+"означає, що якщо текстура коли-не-будь використовуватиметься як карта "
+"нормалей, вона буде змінена на \"Enabled\" (\"Увімкнено\") і автоматично "
+"імпортується."
 
 msgid ""
 "Note that RGTC compression affects the resulting normal map image. You will "
@@ -534,3 +546,7 @@ msgstr ""
 "Цей параметр застосовується лише до файлів SVG. Він контролює масштаб "
 "зображення SVG. Шкала за замовчуванням (1.0) дозволить імпортованому SVG "
 "відповідати оригінальному масштабу проєкту."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Формат перекладу"

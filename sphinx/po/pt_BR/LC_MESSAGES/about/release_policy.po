@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,6 @@ msgstr ""
 "ramos estáveis na base do melhor esforço por tanto tempo quanto ainda "
 "existirem usuários ativos que necessitam de atualizações de manutenção."
 
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -170,12 +169,12 @@ msgid ""
 "new major version. This was the case for the 2.1 branch, and will be the "
 "case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
-"Toda vez que uma nova versão major é lançada, fazemos do ramo estável "
-"anterior um lançamento de suporte a longo termo, e fazemos nosso melhor para "
-"fornecer correções de problemas encontrados por usuários desse ramo que não "
-"podem portar projetos complexos para a nova versão major. Esse é o caso para "
-"o ramo 2.1, e será o caso para a versão 3.x mais recente quando o Godot 4.0 "
-"for lançado."
+"Toda vez que uma nova versão principal é lançada, tornamos a versão estável "
+"anterior um lançamento de suporte de longo prazo e fazemos nosso melhor para "
+"fornecer correções de problemas encontrados por usuários desta versão que "
+"não podem portar projetos complexos para a nova versão principal. Esse foi o "
+"caso da versão 2.1 e será o caso para a versão 3.x mais recente quando o "
+"Godot 4.0 for lançado."
 
 msgid ""
 "In a given minor release series, only the latest patch release receives "
@@ -200,20 +199,21 @@ msgstr "**Nível de suporte**"
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
-#, fuzzy
 msgid "~2022 (see below)"
-msgstr "~2021 (ver abaixo)"
+msgstr "~2022 (ver abaixo)"
 
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *Foco atual de desenvolvimento (instável).*"
 
 #, fuzzy
-msgid "Godot 3.5"
-msgstr "Godot 3.4"
+msgid "unstable"
+msgstr "Habilitar"
 
-#, fuzzy
+msgid "Godot 3.5"
+msgstr "Godot 3.5"
+
 msgid "Q1 2022"
-msgstr "2º ou 3º trimestre de 2021"
+msgstr "1º trimestre de 2022"
 
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
@@ -222,12 +222,15 @@ msgstr ""
 "|supported| *Beta.* Recebe novas funcionalidades, bem como correções de bugs "
 "enquanto estiver em desenvolvimento."
 
+#, fuzzy
+msgid "supported"
+msgstr "Arquivos suportados"
+
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
 
-#, fuzzy
 msgid "November 2021"
-msgstr "Dezembro de 2014"
+msgstr "Novembro de 2021"
 
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
@@ -242,11 +245,13 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "Abril de 2021"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|supported| Recebe correções de bugs, segurança e suporte de plataforma, bem "
-"como melhorias de usabilidade compatíveis com versões anteriores."
+"|partial| Recebe apenas correções de segurança e de suporte de plataforma."
+
+#, fuzzy
+msgid "partial"
+msgstr "Partículas"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -261,15 +266,18 @@ msgstr ""
 "|eol| Não é mais suportado como totalmente substituído pela compatível "
 "versão 3.3 (última atualização: 3.2.3)."
 
+msgid "eol"
+msgstr ""
+
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
 
 msgid "March 2019"
 msgstr "Março de 2019"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.1.2)."
-msgstr "|eol| Não recebe suporte. (última atualização: 3.0.6)."
+msgstr ""
+"|eol| Está versão já não é mais suportada. (última atualização: 3.1.2)."
 
 msgid "Godot 3.0"
 msgstr "Godot 3.0"
@@ -286,9 +294,9 @@ msgstr "Godot 2.1"
 msgid "July 2016"
 msgstr "Julho de 2016"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.1.6)."
-msgstr "|eol| Não recebe suporte. (última atualização: 3.0.6)."
+msgstr ""
+"|eol| Está versão já não é mais suportada. (última atualização: 2.1.6)."
 
 msgid "Godot 2.0"
 msgstr "Godot 2.0"
@@ -357,14 +365,17 @@ msgstr ""
 "ciclos de desenvolvimento potencialmente curtos, para fornecer correções "
 "para usuários do ramo estável atual para fins de produção."
 
-#, fuzzy
 msgid ""
 "As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
 "release, but any closer estimate is likely to be hard to uphold. Alpha "
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
-"Quanto à próxima versão 4.0, só podemos dizer com certeza que visamos um "
-"lançamento para **2021**, mas qualquer estimativa mais próxima será difícil "
+"Quanto ao futuro Godot 4.0, só podemos dizer com certeza que visamos um "
+"lançamento para **2022**, mas qualquer estimativa mais próxima será difícil "
 "de cumprir. Compilações alpha serão publicadas assim que as funcionalidades "
 "principais do Godot 4.0 estiverem finalizadas."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

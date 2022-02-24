@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,16 @@ msgstr ""
 msgid "Finishing up"
 msgstr "Pour terminer"
 
-#, fuzzy
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience."
 msgstr ""
 "Nous avons maintenant terminé toutes les fonctionnalités de notre jeu. Ci-"
 "dessous sont quelques étapes restantes pour ajouter un peu plus de \"jus\" "
-"pour améliorer l'expérience de jeu. N'hésitez pas à développer le gameplay "
-"avec vos propres idées."
+"pour améliorer l'expérience de jeu."
 
 msgid "Feel free to expand the gameplay with your own ideas."
-msgstr ""
+msgstr "N'hésitez pas à développer le gameplay avec vos propres idées."
 
 msgid "Background"
 msgstr "Arrière-plan"
@@ -111,15 +109,21 @@ msgid ""
 "In a previous lesson, we created four input actions to move the character. "
 "We will create a similar input action to map to the start button."
 msgstr ""
+"Dans une leçon précédente, nous avons créé quatre actions d'entrée pour "
+"déplacer le personnage. Nous allons créer une action d'entrée similaire pour "
+"l'associer au bouton de démarrage."
 
 msgid ""
-"Select \"Project\" -> \"Project Settings\" and then click on the \"Input Map"
-"\" tab. In the same way you created the movement input actions, create a new "
-"input action called ``start_game`` and add a key mapping for the :kbd:"
+"Select \"Project\" -> \"Project Settings\" and then click on the \"Input "
+"Map\" tab. In the same way you created the movement input actions, create a "
+"new input action called ``start_game`` and add a key mapping for the :kbd:"
 "`Enter` key."
 msgstr ""
+"Sélectionnez \"Projet\" -> \"Paramètres du projet...\" puis cliquez sur "
+"l'onglet \"Contrôles\". De la même manière que vous avez créé les actions "
+"d'entrée de mouvement, créez une nouvelle action d'entrée appelée "
+"``start_game`` et ajoutez un lien de touche pour la touche :kbd:`Enter`."
 
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -132,32 +136,43 @@ msgstr ""
 "cliquez sur l'élément \"Shortcut\". Une deuxième propriété *Shortcut* "
 "apparaîtra. Sélectionnez \"New InputEventAction\" et cliquez sur le nouveau "
 "\"InputEventAction\". Enfin, dans la propriété *Action*, tapez le nom "
-"``ui_select``. Il s'agit de l'événement d'entrée(input event) par défaut "
-"associé à la barre d'espace."
+"``start_game``."
 
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Enter` to start the game."
 msgstr ""
 "Maintenant, lorsque le bouton de démarrage apparaît, vous pouvez soit "
-"cliquer dessus, soit appuyer sur :kbd:`Space` pour démarrer le jeu."
+"cliquer dessus, soit appuyer sur :kbd:`Enter` pour démarrer le jeu."
 
 msgid "And with that, you completed your first 2D game in Godot."
-msgstr ""
+msgstr "Et avec ça, vous avez terminé votre premier jeu en 2D dans Godot."
 
 msgid ""
 "You got to make a player-controlled character, enemies that spawn randomly "
 "around the game board, count the score, implement a game over and replay, "
 "user interface, sounds, and more. Congratulations!"
 msgstr ""
+"Vous avez créer un personnage contrôlé par le joueur, des ennemis qui "
+"apparaissent de manière aléatoire sur le plateau de jeu, compté le score, "
+"mis en place une fonction de fin de partie et rejouer, une interface "
+"utilisateur, des sons, etc. Félicitations !"
 
 msgid ""
 "There's still much to learn, but you can take a moment to appreciate what "
 "you achieved."
 msgstr ""
+"Il y a encore beaucoup à apprendre, mais vous pouvez prendre un moment pour "
+"apprécier ce que vous avez réalisé."
 
 msgid ""
 "And when you're ready, you can move on to :ref:`doc_your_first_3d_game` to "
 "learn to create a complete 3D game from scratch, in Godot."
 msgstr ""
+"Et lorsque vous serez prêt, vous pourrez passer à :ref:"
+"`doc_your_first_3d_game` pour apprendre à créer un jeu 3D complet à partir "
+"de zéro, dans Godot."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

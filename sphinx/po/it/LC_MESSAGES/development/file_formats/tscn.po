@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,11 +105,9 @@ msgstr "``ext_resource``"
 msgid "``sub_resource``"
 msgstr "``sub_resource``"
 
-#, fuzzy
 msgid "``node``"
 msgstr "``node``"
 
-#, fuzzy
 msgid "``connection``"
 msgstr "``connection``"
 
@@ -119,34 +117,31 @@ msgid ""
 "example, a spatial node looks like:"
 msgstr ""
 
+#, fuzzy
 msgid "The scene tree"
-msgstr ""
+msgstr "L'albero della scena"
 
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example ``[node type="
-"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
+"its name, parent and (most of the time) a type. For example ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 
 msgid "Other valid keywords include:"
 msgstr ""
 
-#, fuzzy
 msgid "``instance``"
 msgstr "``instance``"
 
-#, fuzzy
 msgid "``instance_placeholder``"
 msgstr "``instance_placeholder``"
 
-#, fuzzy
 msgid "``owner``"
 msgstr "``owner``"
 
 msgid "``index`` (if two nodes have the same name)"
-msgstr ""
+msgstr "``index`` (se due nodi hanno lo stesso nome)"
 
-#, fuzzy
 msgid "``groups``"
 msgstr "``groups``"
 
@@ -189,23 +184,18 @@ msgstr ""
 msgid "``name``"
 msgstr "``name``"
 
-#, fuzzy
 msgid "``parent``"
 msgstr "``parent``"
 
-#, fuzzy
 msgid "``rest``"
 msgstr "``rest``"
 
-#, fuzzy
 msgid "``pose``"
 msgstr "``pose``"
 
-#, fuzzy
 msgid "``enabled``"
 msgstr "``enabled``"
 
-#, fuzzy
 msgid "``bound_children``"
 msgstr "``bound_children``"
 
@@ -273,8 +263,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
-"\" path=....]``, you would use ``ExtResource(3)``."
+"For example, to refer to the resource ``[ext_resource id=3 "
+"type=\"PackedScene\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 
 msgid ""
@@ -318,13 +308,12 @@ msgid ""
 "others can only be found by looking through Godot's source."
 msgstr ""
 
-#, fuzzy
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format ``surface"
-"\\Index={}``. Each surface is a set of vertices and a material."
+"ArrayMesh consists of several surfaces, each in the format "
+"``surface\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 
 msgid "TSCN files support two surface formats:"
@@ -333,15 +322,12 @@ msgstr ""
 msgid "For the old format, each surface has three essential keys:"
 msgstr ""
 
-#, fuzzy
 msgid "``primitive``"
 msgstr "``primitive``"
 
-#, fuzzy
 msgid "``arrays``"
 msgstr "``arrays``"
 
-#, fuzzy
 msgid "``morph_arrays``"
 msgstr "``morph_arrays``"
 
@@ -394,35 +380,30 @@ msgid ""
 "``loop`` and ``step`` applied to all the tracks."
 msgstr ""
 
+#, fuzzy
 msgid "``length`` and ``step`` are both durations in seconds."
-msgstr ""
+msgstr "``length`` e ``step`` sono entrambe durate in secondi."
 
 msgid ""
 "Each track is described by a list of key-value pairs in the format ``tracks/"
 "Id/Attribute``. Each track includes:"
 msgstr ""
 
-#, fuzzy
 msgid "``type``"
 msgstr "``type``"
 
-#, fuzzy
 msgid "``path``"
 msgstr "``path``"
 
-#, fuzzy
 msgid "``interp``"
 msgstr "``interp``"
 
-#, fuzzy
 msgid "``keys``"
 msgstr "``keys``"
 
-#, fuzzy
 msgid "``loop_wrap``"
 msgstr "``loop_wrap``"
 
-#, fuzzy
 msgid "``imported``"
 msgstr "``imported``"
 
@@ -434,11 +415,9 @@ msgstr ""
 msgid "``transform``"
 msgstr "``transform``"
 
-#, fuzzy
 msgid "``value``"
 msgstr "``value``"
 
-#, fuzzy
 msgid "``method``"
 msgstr "``method``"
 
@@ -453,16 +432,14 @@ msgid ""
 "an enum variable with one of the following values:"
 msgstr ""
 
-#, fuzzy
 msgid "``0`` (constant)"
 msgstr "``0`` (costante)"
 
-#, fuzzy
 msgid "``1`` (linear)"
 msgstr "``1`` (lineare)"
 
 msgid "``2`` (cubic)"
-msgstr ""
+msgstr "``2`` (cubico)"
 
 msgid ""
 "The ``keys`` correspond to the keyframes. It appears as a "
@@ -477,3 +454,7 @@ msgid ""
 "rotation quaternion (X, Y, Z, W) and finally a 3-number scale vector. The "
 "default transition in a Transform track is 1.0."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

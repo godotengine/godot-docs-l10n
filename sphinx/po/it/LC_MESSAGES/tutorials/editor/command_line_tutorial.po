@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,9 @@ msgstr "``--quiet``"
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
 
+#, fuzzy
 msgid "**Run options**"
-msgstr ""
+msgstr "**Opzioni di esecuzione**"
 
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
@@ -113,14 +114,16 @@ msgid ""
 "`doc_locales` for more details."
 msgstr ""
 
+#, fuzzy
 msgid "``--path <directory>``"
-msgstr ""
+msgstr "``--path <directory>``"
 
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
 
+#, fuzzy
 msgid "``-u``, ``--upwards``"
-msgstr ""
+msgstr "``-u``, ``--upwards``"
 
 msgid "Scan folders upwards for 'project.godot' file."
 msgstr ""
@@ -131,8 +134,9 @@ msgstr "``--main-pack <file>``"
 msgid "Path to a pack (.pck) file to load."
 msgstr ""
 
+#, fuzzy
 msgid "``--render-thread <mode>``"
-msgstr ""
+msgstr "``--render-thread <mode>``"
 
 msgid ""
 "Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
@@ -140,61 +144,71 @@ msgid ""
 "details."
 msgstr ""
 
+#, fuzzy
 msgid "``--remote-fs <address>``"
-msgstr ""
+msgstr "``--remote-fs <address>``"
 
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr ""
 
+#, fuzzy
 msgid "``--audio-driver <driver>``"
-msgstr ""
+msgstr "``--audio-driver <driver>``"
 
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 
+#, fuzzy
 msgid "``--video-driver <driver>``"
-msgstr ""
+msgstr "``--video-driver <driver>``"
 
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
 
+#, fuzzy
 msgid "**Display options**"
-msgstr ""
+msgstr "**Opzioni di visualizzazione**"
 
+#, fuzzy
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "``-f``, ``--fullscreen``"
 
 msgid "Request fullscreen mode."
 msgstr ""
 
+#, fuzzy
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "``-m``, ``--maximized``"
 
 msgid "Request a maximized window."
 msgstr ""
 
+#, fuzzy
 msgid "``-w``, ``--windowed``"
-msgstr ""
+msgstr "``-w``, ``--windowed``"
 
 msgid "Request windowed mode."
 msgstr ""
 
+#, fuzzy
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "``-t``, ``--always-on-top``"
 
 msgid "Request an always-on-top window."
 msgstr ""
 
+#, fuzzy
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <W>x<H>``"
 
 msgid "Request window resolution."
 msgstr ""
 
+#, fuzzy
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 msgid "Request window position."
 msgstr ""
@@ -211,8 +225,9 @@ msgstr "``--no-window``"
 msgid "Run with invisible window. Useful together with ``--script``."
 msgstr ""
 
+#, fuzzy
 msgid "**Debug options**"
-msgstr ""
+msgstr "**Opzioni di debug**"
 
 msgid ""
 "Debug options are only available in the editor and debug export templates "
@@ -220,14 +235,16 @@ msgid ""
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
 
+#, fuzzy
 msgid "``-d``, ``--debug``"
-msgstr ""
+msgstr "``-d``, ``--debug``"
 
 msgid "Debug (local stdout debugger)."
 msgstr ""
 
+#, fuzzy
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "``-b``, ``--breakpoints``"
 
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
@@ -240,8 +257,9 @@ msgstr "``--profiling``"
 msgid "Enable profiling in the script debugger."
 msgstr ""
 
+#, fuzzy
 msgid "``--remote-debug <address>``"
-msgstr ""
+msgstr "``--remote-debug <address>``"
 
 msgid "Remote debug (``<host/IP>:<port>`` address)."
 msgstr ""
@@ -258,14 +276,16 @@ msgstr "``--debug-navigation``"
 msgid "Show navigation polygons when running the scene."
 msgstr ""
 
+#, fuzzy
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "``--frame-delay <ms>``"
 
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
 
+#, fuzzy
 msgid "``--time-scale <scale>``"
-msgstr ""
+msgstr "``--time-scale <scale>``"
 
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
@@ -284,8 +304,9 @@ msgstr "``--disable-crash-handler``"
 msgid "Disable crash handler when supported by the platform code."
 msgstr ""
 
+#, fuzzy
 msgid "``--fixed-fps <fps>``"
-msgstr ""
+msgstr "``--fixed-fps <fps>``"
 
 msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
@@ -298,8 +319,9 @@ msgstr "``--print-fps``"
 msgid "Print the frames per second to the stdout."
 msgstr ""
 
+#, fuzzy
 msgid "**Standalone tools**"
-msgstr ""
+msgstr "**Strumenti autonomi**"
 
 msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
@@ -313,8 +335,9 @@ msgstr "``--check-only``"
 msgid "Only parse for errors and quit (use with ``--script``)."
 msgstr ""
 
+#, fuzzy
 msgid "``--export <target>``"
-msgstr ""
+msgstr "``--export <target>``"
 
 msgid ""
 "Export the project using the given export target. Export only main pack if "
@@ -322,16 +345,18 @@ msgid ""
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
+#, fuzzy
 msgid "``--export-debug <target>``"
-msgstr ""
+msgstr "``--export-debug <target>``"
 
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
+#, fuzzy
 msgid "``--doctool <path>``"
-msgstr ""
+msgstr "``--doctool <path>``"
 
 msgid ""
 "Dump the engine API reference to the given <path> in XML format, merging if "
@@ -363,8 +388,9 @@ msgid ""
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
 
+#, fuzzy
 msgid "``--test <test>``"
-msgstr ""
+msgstr "``--test <test>``"
 
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
@@ -539,3 +565,7 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

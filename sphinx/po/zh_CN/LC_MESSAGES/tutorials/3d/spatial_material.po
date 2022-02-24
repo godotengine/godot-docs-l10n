@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "Transparent flag (this one)"
 msgstr "透明标记(这一个)"
 
 msgid "Blend mode set to other than \"Mix\""
-msgstr "混合模式设置为 \"Mix(混合)\" 以外的模式"
+msgstr "混合模式设置为“Mix”（混合）以外的模式"
 
 msgid "Enabling distance or proximity fade"
 msgstr "启用距离或接近淡入淡出"
@@ -334,31 +334,32 @@ msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
 msgstr "**禁用:** 有时候blob很烦人. 消失吧！"
 
 msgid "Blend Mode"
-msgstr "Blend Mode(混合模式)"
+msgstr "Blend Mode（混合模式）"
 
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than *Mix* forces the object to go through the transparent pipeline."
 msgstr ""
-"控制材质的混合模式. 请记住,*Mix* 以外的任何模式都会强制对象通过透明管道."
+"控制材质的混合模式。请记住，\\ *Mix* 以外的任何模式都会强制对象通过透明管道。"
 
 msgid ""
 "**Mix:** Default blend mode, alpha controls how much the object is visible."
-msgstr "**Mix:** 默认混合模式,alpha控制对象可见的程度."
+msgstr "**Mix：**\\ （混合）默认混合模式，Alpha 控制对象可见的程度。"
 
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
-msgstr "**Add:** 物体添加性地混合, 非常适合耀斑或类似火焰的效果."
+msgstr ""
+"**Add：**\\ （添加）对象会进行添加性的混合，非常适合耀斑或类似火焰的效果。"
 
 msgid "**Sub:** Object is subtracted."
-msgstr "** Sub:** 物体被减去材质."
+msgstr "**Sub：**\\ （减去）对象会被减去。"
 
 msgid "**Mul:** Object is multiplied."
-msgstr "** Mul:** 物体被乘以材质."
+msgstr "**Mul：**\\ （正片叠底）对象会被乘以。"
 
 msgid "Cull Mode"
-msgstr "Cull Mode(剔除模式)"
+msgstr "Cull Mode（剔除模式）"
 
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
@@ -484,7 +485,8 @@ msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
-"当不需要 \"0\" 或 \"1\" 以外的透明度时, 可以设置阈值以防止对象渲染半透明像素."
+"当不需要 ``0`` 或 ``1`` 以外的透明度时，可以设置阈值以防止对象渲染半透明像"
+"素。"
 
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
@@ -555,8 +557,8 @@ msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
-"最小的内部反射率是 \"0.04\", 因此不可能使材质完全不反射, 就像在现实生活中一"
-"样."
+"最小的内部反射率是 ``0.04``\\ ，因此不可能使材质完全不产生反射，就像在现实生"
+"活中一样。"
 
 msgid "Roughness"
 msgstr "Roughness(粗糙度)"
@@ -863,3 +865,7 @@ msgid ""
 msgstr ""
 "可以更改对象的渲染顺序, 尽管这对于透明对象有用(或执行深度绘制但没有颜色绘制的"
 "不透明对象, 例如地板上的裂缝)."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

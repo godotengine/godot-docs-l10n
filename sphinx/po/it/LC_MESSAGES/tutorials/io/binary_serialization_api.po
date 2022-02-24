@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgid "2"
 msgstr "2"
 
 msgid "integer"
-msgstr "intero"
+msgstr "integer"
 
 msgid "3"
 msgstr "3"
@@ -140,12 +140,11 @@ msgid "14"
 msgstr "14"
 
 msgid "color"
-msgstr "colore"
+msgstr "color"
 
 msgid "15"
 msgstr "15"
 
-#, fuzzy
 msgid "node path"
 msgstr "node path"
 
@@ -164,7 +163,6 @@ msgstr "object"
 msgid "18"
 msgstr "18"
 
-#, fuzzy
 msgid "dictionary"
 msgstr "dictionary"
 
@@ -177,49 +175,42 @@ msgstr "array"
 msgid "20"
 msgstr "20"
 
-#, fuzzy
 msgid "raw array"
 msgstr "raw array"
 
 msgid "21"
 msgstr "21"
 
-#, fuzzy
 msgid "int array"
 msgstr "int array"
 
 msgid "22"
 msgstr "22"
 
-#, fuzzy
 msgid "real array"
 msgstr "real array"
 
 msgid "23"
 msgstr "23"
 
-#, fuzzy
 msgid "string array"
 msgstr "string array"
 
 msgid "24"
 msgstr "24"
 
-#, fuzzy
 msgid "vector2 array"
 msgstr "vector2 array"
 
 msgid "25"
 msgstr "25"
 
-#, fuzzy
 msgid "vector3 array"
 msgstr "vector3 array"
 
 msgid "26"
 msgstr "26"
 
-#, fuzzy
 msgid "color array"
 msgstr "color array"
 
@@ -244,9 +235,11 @@ msgstr "0: null"
 msgid "1: :ref:`bool<class_bool>`"
 msgstr "1: :ref:`bool<class_bool>`"
 
+#, fuzzy
 msgid "Offset"
 msgstr "Offset"
 
+#, fuzzy
 msgid "Len"
 msgstr "Len"
 
@@ -256,27 +249,31 @@ msgstr "Descrizione"
 msgid "Integer"
 msgstr "Numero intero"
 
-#, fuzzy
 msgid "0 for False, 1 for True"
 msgstr "0 per False, 1 per True"
 
 msgid "2: :ref:`int<class_int>`"
 msgstr "2: :ref:`int<class_int>`"
 
+#, fuzzy
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
 msgstr ""
+"Se non sono impostati flag (flags == 0), l'intero viene inviato come integer "
+"a 32 bit:"
 
+#, fuzzy
 msgid "32-bit signed integer"
-msgstr ""
+msgstr "Numero intero con segno a 32 bit"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
 
+#, fuzzy
 msgid "64-bit signed integer"
-msgstr ""
+msgstr "Numero intero con segno a 64 bit"
 
 msgid "3: :ref:`float<class_float>`"
 msgstr "3: :ref:`float<class_float>`"
@@ -312,8 +309,9 @@ msgstr "X"
 msgid "Bytes"
 msgstr "Bytes"
 
+#, fuzzy
 msgid "UTF-8 encoded string"
-msgstr ""
+msgstr "Stringa codificata UTF-8"
 
 msgid "This field is padded to 4 bytes."
 msgstr ""
@@ -332,8 +330,9 @@ msgstr "Coordinata successiva"
 msgid "6: :ref:`Rect2<class_rect2>`"
 msgstr "6: :ref:`Rect2<class_rect2>`"
 
+#, fuzzy
 msgid "X size"
-msgstr ""
+msgstr "Dimensione X"
 
 #, fuzzy
 msgid "Y size"
@@ -382,8 +381,9 @@ msgstr "Normale Y"
 msgid "Normal Z"
 msgstr "Normale Z"
 
+#, fuzzy
 msgid "Distance"
-msgstr "Distance"
+msgstr "Distanza"
 
 msgid "10: :ref:`Quat<class_quat>`"
 msgstr "10: :ref:`Quat<class_quat>`"
@@ -482,17 +482,20 @@ msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
 
+#, fuzzy
 msgid "For old format:"
-msgstr ""
+msgstr "Per il vecchio formato:"
 
 msgid "Padded to 4 bytes."
 msgstr ""
 
+#, fuzzy
 msgid "For new format:"
-msgstr ""
+msgstr "Per il nuovo formato:"
 
+#, fuzzy
 msgid "Sub-name count"
-msgstr ""
+msgstr "Conteggio dei sotto-nomi"
 
 msgid "Flags (absolute: val&1 != 0 )"
 msgstr ""
@@ -513,7 +516,6 @@ msgstr "X+4"
 msgid "Every name string is padded to 4 bytes."
 msgstr ""
 
-#, fuzzy
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (non supportato)"
 
@@ -524,8 +526,9 @@ msgstr "17: :ref:`Object<class_object>` (non supportato)"
 msgid "18: :ref:`Dictionary<class_dictionary>`"
 msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
+#, fuzzy
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
-msgstr ""
+msgstr "val&0x7FFFFFFF = elementi, val&0x80000000 = condiviso (bool)"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
@@ -594,7 +597,7 @@ msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 #, fuzzy
 msgid "Array length"
-msgstr "Vettore"
+msgstr "Lunghezza dell'array"
 
 msgid "8..8+length\\*8"
 msgstr "8..8+length\\*8"
@@ -628,3 +631,7 @@ msgstr "8..16+length\\*16"
 
 msgid "8..20+length\\*16"
 msgstr "8..20+length\\*16"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

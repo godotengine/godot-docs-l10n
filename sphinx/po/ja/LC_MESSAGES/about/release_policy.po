@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,6 +196,10 @@ msgstr "~2022年 (下記参照)"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| *現在の開発対象 (開発版)。*"
 
+#, fuzzy
+msgid "unstable"
+msgstr "有効"
+
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
@@ -206,6 +210,10 @@ msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
 "development."
 msgstr "|supported| *Beta.* 開発中の新機能やバグフィックスを含みます。"
+
+#, fuzzy
+msgid "supported"
+msgstr "サポートされている画像形式"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -226,11 +234,12 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "2021年 4月"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
-msgstr ""
-"|supported| バグ、セキュリティ、プラットフォームサポートの修正、および後方互"
-"換性のある使いやすさの向上が行われます。"
+msgstr "|partial| セキュリティとプラットフォームサポートの修正のみ行われます。"
+
+#, fuzzy
+msgid "partial"
+msgstr "\\ Spatial"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -244,6 +253,10 @@ msgid ""
 msgstr ""
 "|eol| 互換性のある3.3リリース (最終更新：3.2.3) に完全に置き換えられたため、"
 "サポート終了しました。"
+
+#, fuzzy
+msgid "eol"
+msgstr "\\ el"
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -347,3 +360,7 @@ msgstr ""
 "次期Godot 4.0については、\\ **2022**\\ 年のリリースを目指しているとしか言えま"
 "せんが、これ以上の見積もりは難しいと思われます。アルファビルドは、Godot 4.0の"
 "主な機能が確定した時点で公開される予定です。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

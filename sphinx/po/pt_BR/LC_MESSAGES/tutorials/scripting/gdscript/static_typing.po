@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,9 @@ msgstr ""
 "Você provavelmente armazenou um nó em uma variável antes e digitou um ponto "
 "para ficar sem sugestões de preenchimento automático:"
 
+msgid "code completion options for dynamic"
+msgstr ""
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -110,6 +113,9 @@ msgstr ""
 "valor você está passando para a função. Se você escrever o tipo "
 "explicitamente no entanto, você obterá todos os métodos e variáveis públicos "
 "do nó:"
+
+msgid "code completion options for typed"
+msgstr ""
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -302,6 +308,9 @@ msgstr ""
 "etc. O Godot irá verificar que o tipo funciona e, se funcionar, o número da "
 "linha ficará verde à esquerda do editor de script."
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Linha não segura (linha 7) vs Linhas Seguras (linha 6 e 8)"
 
@@ -445,3 +454,7 @@ msgstr ""
 "comuns, e a criar sistemas escaláveis. No futuro, a tipagem estática também "
 "te trará um bom aumento de desempenho graças às futuras otimizações do "
 "compilador."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de tradução"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 "PoolVector3Array、PoolIntArray 等）。"
 
 msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
+msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array 或 PoolVector2Array"
 
 msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
 msgstr "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
@@ -71,10 +71,10 @@ msgid "``ARRAY_COLOR`` = 3 | PoolColorArray"
 msgstr "``ARRAY_COLOR`` = 3 | PoolColorArray"
 
 msgid "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
-msgstr "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
+msgstr "``ARRAY_TEX_UV`` = 4 | PoolVector2Array 或 PoolVector3Array"
 
 msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
-msgstr "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
+msgstr "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array 或 PoolVector3Array"
 
 msgid ""
 "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of "
@@ -119,9 +119,9 @@ msgid ""
 "ref:`VisualServer <class_visualserver>` under :ref:`ArrayFormat "
 "<enum_visualserver_arrayformat>`."
 msgstr ""
-"最后一个参数是压缩标志, 指定哪些数组要用一半的比特数来存储. 这些值可以在 :"
-"ref:`VisualServer <class_visualserver>` 的classref中的 :ref:`ArrayFormat "
-"<enum_visualserver_arrayformat>` 下找到."
+"最后一个参数是压缩标志，指定哪些数组要用一半的比特数来存储。这些值可以在 :"
+"ref:`VisualServer <class_visualserver>` 的类参考中的 :ref:`ArrayFormat "
+"<enum_visualserver_arrayformat>` 下找到。"
 
 msgid ""
 "For normal usage you will find it is best to leave the last two parameters "
@@ -208,13 +208,17 @@ msgstr ""
 "言和引擎的教程将其转换为Godot."
 
 msgid "Saving"
-msgstr "保存中"
+msgstr "保存"
 
 msgid ""
 "Finally, Godot provides a single method to save ArrayMeshes using the :ref:"
 "`ResourceSaver <class_resourcesaver>` class. This is useful when you want to "
 "generate a mesh and then use it later without having to re-generate."
 msgstr ""
-"最后,Godot提供了一个单一的方法, 使用 :ref:`ResourceSaver "
-"<class_resourcesaver>` 类来保存ArrayMeshes. 当你想生成一个网格, 然后在以后使"
-"用它而不需要重新生成时, 这个方法很有用."
+"最后，Godot 提供了 :ref:`ResourceSaver <class_resourcesaver>` 类来保存 "
+"ArrayMesh。当你想生成一个网格，然后在以后使用它而不需要重新生成时，这个方法很"
+"有用。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

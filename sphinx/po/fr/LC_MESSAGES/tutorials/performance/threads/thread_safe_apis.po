@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,14 +127,13 @@ msgstr ""
 msgid "GDScript arrays, dictionaries"
 msgstr "Tableaux GDScript, dictionnaires"
 
-#, fuzzy
 msgid ""
 "In GDScript, reading and writing elements from multiple threads is OK, but "
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
-"En GDScript, la lecture et l'écriture d'éléments provenant de plusieurs "
-"threads est possible, mais tout ce qui modifie la taille du conteneur "
+"Dans GDScript, la lecture et l'écriture d'éléments à partir de plusieurs "
+"threads sont possibles, mais tout ce qui modifie la taille du conteneur "
 "(redimensionnement, ajout ou suppression d'éléments) nécessite le "
 "verrouillage d'un mutex."
 
@@ -161,3 +160,7 @@ msgstr ""
 "de plusieurs threads en même temps, il est donc plus facile d'utiliser "
 "**un** thread pour le chargement et la modification des ressources, puis le "
 "thread principal pour les ajouter."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Format de traduction"

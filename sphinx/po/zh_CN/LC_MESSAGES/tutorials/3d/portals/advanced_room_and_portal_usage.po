@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,10 +81,10 @@ msgid ""
 "move inside or outside the gameplay area (whether by moving themselves, or "
 "the camera moving) will receive callbacks to let them know of this change."
 msgstr ""
-"这个问题得以解决，门系统包含称为 **Gameplay Monitor** 的游戏监控子系统，可以"
-"从 :ref:`RoomManager<class_RoomManager>` 中打开或关闭。当开启时，任何在游戏区"
-"域内外移动的漫游对象都会收到回调（无论是通过移动自己，还是摄像机移动），让他"
-"们知道这一变化。"
+"这个问题是有解的，入口系统包含称为 **Gameplay Monitor** 的游戏监控子系统，可"
+"以从 :ref:`RoomManager<class_RoomManager>` 中打开或关闭。当开启时，任何在游戏"
+"区域内外移动的漫游对象都会收到回调（无论是通过移动自己，还是摄像机移动），让"
+"他们知道这一变化。"
 
 msgid ""
 "You can choose to either receive these callbacks as ``signals``, or as "
@@ -151,7 +151,7 @@ msgstr ""
 "RoomManager中启用\\ **Gameplay Monitor**\\ ，就会自动进行。"
 
 msgid "RoomGroups"
-msgstr "RoomGroups"
+msgstr "RoomGroup"
 
 msgid ""
 "A :ref:`RoomGroup<class_RoomGroup>` is a special node which allows you to "
@@ -217,8 +217,8 @@ msgstr ""
 
 msgid ""
 "It turns out there is a simpler way of handling this scenario. Godot "
-"supports *rooms **within** rooms* (we will call them **\"internal rooms"
-"\"**). That is, you can place a house within a terrain room, or even a "
+"supports *rooms **within** rooms* (we will call them **\"internal "
+"rooms\"**). That is, you can place a house within a terrain room, or even a "
 "building, or set of buildings, and even have exit portals in different "
 "terrain rooms!"
 msgstr ""
@@ -394,3 +394,7 @@ msgid ""
 msgstr ""
 "房子的外景放置在外部房间，从外面总是可以看到。只有当进入入口的可见视野时，内"
 "部才会被呈现出来。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

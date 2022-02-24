@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "ノードとリソース"
+msgstr "ノードとシーン"
 
 msgid ""
 "In :ref:`doc_key_concepts_overview`, we saw that a Godot game is a tree of "
 "scenes and that each scene is a tree of nodes. In this lesson, we explain a "
 "bit more about them. You will also create your first scene."
 msgstr ""
+":ref:`doc_key_concepts_overview`では、Godotゲームはシーンのツリーで構成され、"
+"各シーンはノードのツリーで構成されることを知りました。このレッスンでは、それ"
+"らについてもう少し詳しく説明します。また、最初のシーンを作成します。"
 
 msgid "Nodes"
 msgstr "ノード"
@@ -35,30 +37,27 @@ msgid ""
 "the ingredients in a recipe. There are dozens of kinds that can display an "
 "image, play a sound, represent a camera, and much more."
 msgstr ""
+"**ノードとは、ゲームの基礎的な構成要素のことです** 。ノードはレシピの材料のよ"
+"うなものです。ノードには、画像を表示したり、音を鳴らしたり、カメラを表現した"
+"りと、様々な種類があります。"
 
-#, fuzzy
 msgid "All nodes have the following attributes:"
-msgstr "次の注意事項があります:"
+msgstr "すべてのノードは以下の属性を持っています。"
 
-#, fuzzy
 msgid "A name."
-msgstr "``name``"
+msgstr "名前"
 
-#, fuzzy
 msgid "Editable properties."
-msgstr "編集できるプロパティを持つ。"
+msgstr "編集できるプロパティ"
 
-#, fuzzy
 msgid "They receive callbacks to update every frame."
-msgstr "毎フレームで処理するコールバックを受け取れる。"
+msgstr "毎フレーム、更新するためのコールバックを受け取ります。"
 
-#, fuzzy
 msgid "You can extend them with new properties and functions."
-msgstr "拡張できる(機能を追加するため)。"
+msgstr "新しいプロパティと関数を使用して拡張できます。"
 
-#, fuzzy
 msgid "You can add them to another node as a child."
-msgstr "ほかのノードを子に持てる。"
+msgstr "別のノードを子として追加できます。"
 
 msgid ""
 "The last attribute is key. **Together, nodes form a tree**, which is a "
@@ -68,6 +67,12 @@ msgid ""
 "node named \"Character\", a sprite node, a camera node, and a collision "
 "shape node."
 msgstr ""
+"最後の属性が重要です。 **ノードは集まってツリーを形成** し、プロジェクトを整"
+"理するための強力に作用します。異なるノードは異なる関数を持つため、それらを組"
+"み合わせると、より複雑な動作が生成されます。前に説明したよう"
+"に、\"Character\" という名前のキネマティックボディノード、スプライトノード、"
+"カメラノード、そしてコリジョンシェイプノードを使用して、カメラが追従する操作"
+"可能なキャラクターを構築できます。"
 
 msgid "Scenes"
 msgstr "シーン"
@@ -78,6 +83,10 @@ msgid ""
 "editor, where you can add them as a child of an existing node. In that case, "
 "the instance of the scene appears as a single node with its internals hidden."
 msgstr ""
+"このキャラクタのようにツリー内のノードを編成したものをシーンと呼びます。保存"
+"すると、シーンはエディタの新しいタイプのノードのように動作し、既存のノードの"
+"子として追加できます。シーンのインスタンスは、内部が非表示になっている単一の"
+"ノードとして表示されます。"
 
 msgid ""
 "Scenes allow you to structure your game's code however you want. You can "
@@ -85,8 +94,10 @@ msgid ""
 "character that runs and jumps, a life bar, a chest with which you can "
 "interact, and more."
 msgstr ""
+"シーンを使用すると、ゲームのコードを好きなように構成できます。 **ノードを構成"
+"** して、走ったりジャンプしたりするゲームキャラクター・ライフバー・操作できる"
+"チェストなど、独自で複雑なノードタイプを作成できます。"
 
-#, fuzzy
 msgid ""
 "The Godot editor essentially is a **scene editor**. It has plenty of tools "
 "for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
@@ -94,79 +105,86 @@ msgid ""
 "one as your application's **main scene**. This is the scene Godot will first "
 "load when you or a player runs the game."
 msgstr ""
-"基本的に、Godotエディタは\\ **シーンエディタ**\\ です。2Dおよび3Dのシーンや、"
-"ユーザーインターフェースを編集するツールを多く備えていますが、基礎としている"
-"のは、シーンやそれを構成するノードを編集するという概念だけです。"
+"Godotエディタは基本的に**シーンエディタ**です。2Dや3Dのシーンを編集するための"
+"ツールや、ユーザーインターフェースなどが充実しています。1つのGodotプロジェク"
+"トには、必要なだけのシーンを含めることができます。エンジンが最低限で必要とす"
+"るのは、アプリケーションの **メインシーン** の1つだけです。これは、あなたやプ"
+"レイヤーがゲームを実行したときに、Godotが最初にロードするシーンです。"
 
 msgid "On top of acting like nodes, scenes have the following attributes:"
-msgstr ""
+msgstr "ノードのように機能することに加えて、シーンには次の属性があります。"
 
 msgid "They always have one root node, like the \"Character\" in our example."
-msgstr ""
+msgstr "この例の「キャラクター」のように、常に1つのルートノードがあります。"
 
 msgid "You can save them to your hard drive and load them later."
-msgstr ""
+msgstr "ハードディスクに保存しておいて、後で読み込むことができます。"
 
 msgid ""
 "You can create as many instances of a scene as you'd like. You could have "
 "five or ten characters in your game, created from your Character scene."
 msgstr ""
+"シーンのインスタンスはいくつでも作成できます。5人でも10人でも、キャラクター"
+"シーンから、キャラクターをゲームに保持することが出来ます。"
 
-#, fuzzy
 msgid "Creating your first scene"
-msgstr "最初の武器を作成する"
+msgstr "最初のシーンを作る"
 
 msgid ""
 "Let's create our first scene with a single node. To do so, you will need to "
 "create a new project first. After opening the project, you should see an "
 "empty editor."
 msgstr ""
+"それでは、最初のシーンをノード1つだけで作成してみましょう。そのためには、まず"
+"新しいプロジェクトを作成する必要があります。プロジェクトを開くと、空のエディ"
+"タが表示されているはずです。"
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
 "Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" "
-"lets you select any node. It is equivalent to pressing the \"Add Child Node"
-"\" button. These presets are here for convenience; they are not mandatory."
+"lets you select any node. It is equivalent to pressing the \"Add Child "
+"Node\" button. These presets are here for convenience; they are not "
+"mandatory."
 msgstr ""
-"(ルートノードを持たない) 空のシーンの場合、素早くルートノードをシーンに追加す"
-"る方法がいくつかシーンドックにあります。例えば「2Dシーン」はNode2Dノードを、"
-"「3Dシーン」はSpatialノードを、「ユーザーインターフェイス」はControlノード"
-"を、そして「その他のノード」は好きなノード (この場合は「子ノードを追加」ボタ"
-"ンと一緒です) をそれぞれ追加します。また、星の形のアイコンを押すことで、お気"
-"に入りノードの表示と非表示を切り替えることができます。"
+"空のシーンでは、左側のシーン ドックに、ルート ノードをすばやく追加するための"
+"オプションがいくつか表示されます。「2D シーン」は Node2D ノードを追加し、"
+"「3D シーン」は空間ノードを追加し、「ユーザーインターフェイス」はコントロー"
+"ル ノードを追加し、「その他のノード」では任意のノードを選択できます。これは、"
+"「子ノードの追加」ボタンを押すことと同じです。これらのプリセットは便宜上ここ"
+"にあります。必須ではありません。"
 
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
 "text on the screen."
 msgstr ""
+"ここでは、Labelノードを1つシーンに追加します。このノードの役割は、スクリーン"
+"にテキストを描くことです。"
 
-#, fuzzy
 msgid ""
 "Press the \"Add Child Node\" button at the top left of the Scene dock to "
 "create a node. This button adds the chosen node as a child of the currently "
 "selected one or, in an empty scene, as the root."
 msgstr ""
-"これを行うためには、ラベルノードを追加する必要があります。シーンドックの左上"
-"にある「子ノードを追加する」ボタン(プラスアイコン)を押してください。このボタ"
-"ンが新規ノードをシーンに追加する主な方法です。選ばれたノードは常にいま選択中"
-"のノードの子ノード(空のシーンの場合はルートノードとして)として追加されます。"
+"シーンドックの左上にある「子ノードを追加」ボタンを押して、ノードを作成しま"
+"す。このボタンをクリックすると、選択したノードが現在選択されているノードの子"
+"として、または空のシーンにルートとして追加されます。"
 
-#, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
 "するとノード作成のダイアログが開いて、作成できるノードの長いリストが表示され"
-"ます:"
+"ます。"
 
 msgid "Select the Label node. You can type its name to filter down the list."
 msgstr ""
+"[Label] ノードを選択します。名前を入力して、リストを絞り込むことができます。"
 
-#, fuzzy
 msgid ""
 "Click on the Label node to select it and click the Create button at the "
 "bottom of the window."
-msgstr "すると、エディタウィンドウの下部に「TileSet」パネルが開きます。"
+msgstr ""
+"[ラベル]ノードをクリックして選択し、ウィンドウの下部にある[作成]ボタンをク"
+"リックします。"
 
 msgid ""
 "A lot happens when you add a scene's first node. The scene changes to the 2D "
@@ -175,62 +193,72 @@ msgid ""
 "the left, and the node's properties appear in the Inspector dock on the "
 "right."
 msgstr ""
+"シーンの最初のノードを追加すると、多くのことが起こります。[ラベル]が 2D ノー"
+"ド タイプであるため、シーンは 2D ワークスペースに変わります。ビューポートの左"
+"上隅に[ラベル]が表示されます。ノードは左側のシーン ドックに表示され、ノードの"
+"プロパティは右側のインスペクター ドックに表示されます。"
 
-#, fuzzy
 msgid "Changing a node's properties"
-msgstr "シグナルとプロパティ"
+msgstr "ノードのプロパティの変更"
 
-#, fuzzy
 msgid ""
 "The next step is to change the Label's \"Text\" property. Let's change it to "
 "\"Hello World\"."
 msgstr ""
 "次の一歩はLabelの「Text(テキスト)」プロパティを変更することです。「Hello "
-"world」に変えてみましょう:"
+"world」に変えてみましょう。"
 
 msgid ""
 "Head to the Inspector dock on the right of the viewport. Click inside the "
 "field below the Text property and type \"Hello World\"."
 msgstr ""
+"ビューポートの右側にあるインスペクター ドックに向かいます。Text プロパティの"
+"下のフィールドをクリックし、「Hello World」と入力します。"
 
 msgid "You will see the text draw in the viewport as you type."
-msgstr ""
+msgstr "入力すると、ビューポートにテキストが描画されるのがわかります。"
 
 msgid ""
 "You can move your Label node in the viewport by selecting the move tool in "
 "the toolbar."
 msgstr ""
+"ビューポート内のLabelノードを移動するには、ツールバーの移動ツールを選択しま"
+"す。"
 
 msgid ""
 "With the Label selected, click and drag anywhere in the viewport to move it "
 "to the center of the view delimited by the rectangle."
 msgstr ""
+"[ラベル]を選択した状態で、ビューポート内の任意の場所をクリックしてドラッグす"
+"ると、長方形で区切られたビューの中心に移動します。"
 
-#, fuzzy
 msgid "Running the scene"
-msgstr "ゲームの実行"
+msgstr "シーンの実行"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6`."
 msgstr ""
-"さて、シーンを実行する準備がすべて整いました！トップバーの[シーンを実行]ボタ"
-"ンを押します (または :kbd:`F6` を押します):"
+"さて、シーンを実行する準備がすべて整いました！トップバーの右の[シーンを実行]"
+"ボタンを押します (または :kbd:`F6` を押します)。"
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr ""
+"シーンを実行する必要があるため、ポップアップはシーンを保存するように案内しま"
+"す。"
 
 msgid ""
 "Click the Yes button, and in the file browser that appears, press the Save "
 "button to save it as \"Label.tscn\"."
 msgstr ""
+"[Yes]ボタンをクリックするとファイルブラウザーが開くので、\"Label.tscn\"と名前"
+"をつけ[保存]ボタンを押して保存しましょう。"
 
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
 "you to save files inside the project. The ``res://`` path at the top of the "
-"window represents the project's root directory and stands for \"resource path"
-"\". For more information about file paths in Godot, see :ref:"
+"window represents the project's root directory and stands for \"resource "
+"path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
 
@@ -238,9 +266,12 @@ msgid ""
 "The application should open in a new window and display the text \"Hello "
 "World\"."
 msgstr ""
+"アプリケーションが新しいウィンドウで開き、\"Hello World\"のテキストが表示され"
+"るはずです。"
 
 msgid "Close the window or press :kbd:`F8` to quit the running scene."
 msgstr ""
+"ウィンドウを閉じるか、 :kbd:`F8` を押すと、実行中のシーンを終了します。"
 
 #, fuzzy
 msgid ""
@@ -287,3 +318,7 @@ msgid ""
 "In the next part, we will discuss another key concept in games and in Godot: "
 "creating instances of a scene."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

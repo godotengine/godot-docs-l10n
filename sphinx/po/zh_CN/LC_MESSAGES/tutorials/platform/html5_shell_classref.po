@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -377,7 +377,7 @@ msgid "``true``"
 msgstr "``true``"
 
 msgid "The HTML DOM Canvas object to use."
-msgstr "要使用的HTML DOM Canvas对象."
+msgstr "要使用的 HTML DOM Canvas 对象。"
 
 msgid ""
 "By default, the first canvas element in the document will be used is none is "
@@ -390,7 +390,7 @@ msgstr "``null``"
 msgid ""
 "The name of the WASM file without the extension. (Set by Godot Editor export "
 "process)."
-msgstr "WASM文件的名称, 不含扩展名.(由Godot Editor导出过程设置)."
+msgstr "WASM 文件的名称，不含扩展名。（由 Godot 编辑器的导出过程设置）。"
 
 msgid "``\"\"``"
 msgstr "``\"\"``"
@@ -401,59 +401,60 @@ msgid ""
 msgstr "要加载的游戏pck的更换名称. 否则使用可执行文件名."
 
 msgid "Specify a language code to select the proper localization for the game."
-msgstr "指定语言代码, 为游戏选择合适的本地化."
+msgstr "指定语言代码，为游戏选择合适的本地化。"
 
 msgid ""
 "The browser locale will be used if none is specified. See complete list of :"
 "ref:`supported locales <doc_locales>`."
 msgstr ""
-"如果没有指定, 将使用浏览器的语言环境. 请参阅完整的 :ref:`supported locales "
-"<doc_locales>` ."
+"如果没有指定，将使用浏览器的区域设置。请参阅完整的\\ :ref:`支持的区域设置 "
+"<doc_locales>`\\ 列表。"
 
 msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
-msgstr "画布大小调整策略决定了Godot应该如何调整画布的大小."
+msgstr "画布大小调整策略决定了 Godot 应该如何调整画布的大小."
 
 msgid ""
 "``0`` means Godot won't do any resizing. This is useful if you want to "
 "control the canvas size from javascript code in your template."
 msgstr ""
-"``0`` 意味着Godot不做任何大小调整. 如果您想通过模板中的javascript代码来控制画"
-"布的大小, 这将很有用."
+"``0`` 意味着 Godot 不做任何大小调整。如果您想通过模板中的 javascript 代码来控"
+"制画布的大小，这将很有用。"
 
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
-"``1`` 意味着Godot在启动时, 以及通过引擎功能改变窗口大小时, 会调整画布的大小."
+"``1`` 意味着 Godot 在启动时，以及通过引擎功能改变窗口大小时，会调整画布的大"
+"小。"
 
 msgid ""
 "``2`` means Godot will adapt the canvas size to match the whole browser "
 "window."
-msgstr "``2`` 意味着Godot将调整画布的大小以匹配整个浏览器窗口."
+msgstr "``2`` 意味着 Godot 将调整画布的大小以匹配整个浏览器窗口。"
 
 msgid "``2``"
 msgstr "``2``"
 
 msgid "The arguments to be passed as command line arguments on startup."
-msgstr "启动时作为命令行参数传递的参数."
+msgstr "启动时作为命令行参数传递的参数。"
 
 msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
-msgstr "参见 :ref:`命令行教程 <doc_command_line_tutorial>` ."
+msgstr "请参阅\\ :ref:`命令行教程 <doc_command_line_tutorial>`\\ 。"
 
 msgid ""
 "**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
 "the ``--main-pack`` argument."
 msgstr ""
-"**Note** : :js:meth:`startGame <Engine.prototype.startGame>` 将始终添加 ``--"
-"main-pack`` 参数."
+"**注意**\\ ：\\ :js:meth:`startGame <Engine.prototype.startGame>` 将始终添加 "
+"``--main-pack`` 参数。"
 
 msgid "``[]``"
 msgstr "``[]``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
-msgstr "用于处理Godot的 ``OS.execute`` 调用的回调函数."
+msgstr "用于处理 Godot 的 ``OS.execute`` 调用的回调函数。"
 
 msgid ""
 "This is for example used in the Web Editor template to switch between "
@@ -473,13 +474,13 @@ msgstr "当Godot实例退出时, 用于通知的回调函数."
 msgid ""
 "**Note**: This function will not be called if the engine crashes or become "
 "unresponsive."
-msgstr "**注意** : 如果引擎崩溃或无响应, 该函数不会被调用."
+msgstr "**注意**\\ ：如果引擎崩溃或无响应，该函数不会被调用。"
 
 msgid "The status code returned by Godot on exit."
-msgstr "Godot退出时返回的状态码."
+msgstr "Godot 退出时返回的状态码。"
 
 msgid "A callback function for displaying download progress."
-msgstr "回调函数, 用于显示下载进度."
+msgstr "回调函数，用于显示下载进度。"
 
 msgid ""
 "The function is called once per frame while downloading files, so the usage "
@@ -516,7 +517,7 @@ msgid ""
 msgstr "用于处理标准输出流的回调函数. 这个方法通常应该只在调试页面使用."
 
 msgid "By default, ``console.log()`` is used."
-msgstr "默认情况下, 使用的是 \"console.log()\"."
+msgstr "默认情况下，使用的是 ``console.log()``\\ 。"
 
 msgid "A variadic number of arguments to be printed."
 msgstr "将要输出的可变数量的参数."
@@ -527,7 +528,11 @@ msgid ""
 msgstr "用于处理标准错误流的回调函数. 这个方法通常应该只在调试页面使用."
 
 msgid "By default, ``console.error()`` is used."
-msgstr "默认情况下, 使用 ``console.error()`` ."
+msgstr "默认情况下，使用的是 ``console.error()``\\ 。"
 
 msgid "A variadic number of arguments to be printed as errors."
 msgstr "将要输出的可变数量的参数."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

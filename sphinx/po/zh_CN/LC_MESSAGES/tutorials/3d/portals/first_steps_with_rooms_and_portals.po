@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,8 +196,8 @@ msgid ""
 "rooms<doc_rooms_and_portals_internal_rooms>`. You do not have to worry about "
 "these to start with."
 msgstr ""
-"但是有一个例外内部房间 :ref:`internal "
-"rooms<doc_rooms_and_portals_internal_rooms>` ，就不必担心这些。"
+"但\\ :ref:`内部房间 <doc_rooms_and_portals_internal_rooms>`\\ 是例外。初学时"
+"不必担心这些。"
 
 msgid "How do I create a room?"
 msgstr "如何创建房间？"
@@ -317,8 +317,8 @@ msgid ""
 "from both directions. The arrow is more important for ensuring that the "
 "portal links to the correct neighbouring room."
 msgstr ""
-"不要被这个箭头所迷惑。虽然箭头显示了入口的方向，但大多数入口都是\\ *双向的*"
-"\\ ，从两个方向都可以看到。箭头更为重要是确保入口连接到正确的邻近房间。"
+"不要被这个箭头所迷惑。虽然箭头显示了入口的方向，但大多数入口都是\\ *双向的"
+"*\\ ，从两个方向都可以看到。箭头更为重要是确保入口连接到正确的邻近房间。"
 
 msgid "Portal linking"
 msgstr "入口链接"
@@ -373,3 +373,7 @@ msgid ""
 "The next step is to look at the different types of objects that can be "
 "managed by the system."
 msgstr "下一步是查看可以由系统管理的不同类型的对象。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

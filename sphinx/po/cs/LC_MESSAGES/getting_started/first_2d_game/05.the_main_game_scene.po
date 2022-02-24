@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "The main game scene"
-msgstr "Testování scény"
+msgstr "Hlavní scéna hry"
 
 msgid ""
 "Now it's time to bring everything we did together into a playable game scene."
 msgstr ""
+"Nyní je čas všechno co jsme dosud udělali spojit do jedné hratelné scény."
 
-#, fuzzy
 msgid ""
 "Create a new scene and add a :ref:`Node <class_Node>` named ``Main``. Ensure "
 "you create a Node, **not** a Node2D. Click the \"Instance\" button and "
 "select your saved ``Player.tscn``."
 msgstr ""
-"Nyní je čas to všechno spojit. Vytvořte novou scénu a přidejte :ref:"
-"`Node<class_Node>` s názvem ``Main``. Klikněte na tlačítko \"Instance\" a "
-"vyberte uložený soubor ``Player.tscn``."
+"Vytvořte novou scénu a přidejte :ref:`Node<class_Node>` s názvem ``Main``. "
+"Ujistěte se, že vytváříte uzel, Node **nikoliv** uzel Node2D. Klikněte na "
+"tlačítko \"Instance\" a vyberte uložený soubor ``Player.tscn``."
 
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
@@ -162,12 +161,11 @@ msgid ""
 "generator generates different random numbers each time the game is run:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Klikněte na uzel ``Main`` a uvidíte vlastnost ``Mob`` v Inspektoru pod "
+"Klikněte na uzel ``Main`` a uvidíte vlastnost ``MobScene`` v Inspektoru pod "
 "\"Proměnné skriptu\"."
 
 msgid "You can assign this property's value in two ways:"
@@ -221,7 +219,6 @@ msgstr ""
 "``ScoreTimer`` a ``MobTimer``) do hlavního skriptu. ``StartTimer`` spustí "
 "další dva časovače. ``ScoreTimer`` zvýší skóre o 1."
 
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -234,7 +231,10 @@ msgstr ""
 "V ``_on_MobTimer_timeout ()`` vytvoříme instanci nepřítele, vybereme náhodné "
 "počáteční místo podél ``Path2D`` a dáme nepřítele do pohybu. Uzel "
 "``PathFollow2D`` se bude automaticky otáčet, jak následuje cestu, takže ji "
-"použijeme k výběru směru a polohy nepřátel."
+"použijeme k výběru směru a polohy nepřátel. Při vynoření nepřítele "
+"vybereme'náhodnou hodnotu mezi ``150.0`` a ``250.0`` pro to, jak rychle se "
+"budou jednotliví nepřátelé pohybovat (byla by nuda, kdyby se všichni "
+"pohybovali stejnou rychlostí)."
 
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
@@ -242,7 +242,6 @@ msgstr ""
 "Všimněte si, že do scény musí být přidána nová instance pomocí "
 "``add_child()``."
 
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, Godot uses *radians*, not "
 "degrees. Pi represents a half turn in radians, about ``3.1415`` (there is "
@@ -251,19 +250,20 @@ msgid ""
 "functions to convert between the two."
 msgstr ""
 "Proč ``PI``? Ve funkcích vyžadujících úhly používá GDScript *radiany*, "
-"nikoli stupně. Pokud se vám pracuje pohodlněji se stupni, budete muset "
-"použít převodní funkce ``deg2rad()`` a ``rad2deg()``."
+"nikoli stupně. Pí představuje půl otáčky v radiánech, přibližně ``3.1415`` "
+"(existuje také ``TAU``, který je roven ``2 * PI``).Pokud se vám pracuje "
+"pohodlněji se stupni, budete muset použít převodní funkce ``deg2rad()`` a "
+"``rad2deg()``."
 
 msgid "Testing the scene"
 msgstr "Testování scény"
 
-#, fuzzy
 msgid ""
 "Let's test the scene to make sure everything is working. Add this "
 "``new_game`` call to ``_ready()``:"
 msgstr ""
-"Vyzkoušejte scénu, abychom se ujistili, že vše funguje. Přidejte toto do "
-"``_ready()``:"
+"Vyzkoušejte scénu, abychom se ujistili, že vše funguje. Přidejte volání "
+"``new_game`` do ``_ready()``:"
 
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
@@ -292,3 +292,7 @@ msgid ""
 "What's our game lacking? Some user interface. In the next lesson, we'll add "
 "a title screen and display the player's score."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -255,9 +255,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
-"ShaderMaterials over StandardMaterial3Ds. With StandardMaterial3D, we could "
-"set these properties with a texture, or to a flat number. But with shaders "
-"we can set them based on any mathematical function that we can dream up."
+"ShaderMaterials over SpatialMaterials. With SpatialMaterial, we could set "
+"these properties with a texture, or to a flat number. But with shaders we "
+"can set them based on any mathematical function that we can dream up."
 msgstr ""
 "Y mezclarlo en ambos, ``ROUGHNESS`` y ``ALBEDO``. Este es el beneficio de "
 "los ShaderMaterials sobre los SpatialMaterials. Con los SpatialMaterials, "
@@ -474,3 +474,7 @@ msgstr ""
 "doc. También puedes ver tutoriales más avanzados en la sección :ref:`Shading "
 "section <toc-learn-features-shading>` y la sección :ref:`3D <toc-learn-"
 "features-3d>`."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato de traducción"

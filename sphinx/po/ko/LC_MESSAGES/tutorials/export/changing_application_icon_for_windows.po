@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,11 @@ msgid ""
 msgstr ""
 "다음 `ImageMagick <https://www.imagemagick.org/>`_ 명령문을 사용하면 PNG 이미"
 "지를 hiDPI 친화적인 ICO 파일로 변환할 수 있습니다:"
+
+msgid ""
+"Depending on which version of ImageMagick you installed, you might need to "
+"leave out the ``magick`` and run this command instead:"
+msgstr ""
 
 msgid ""
 "For the ICO file to effectively replace the default Godot icon, it must "
@@ -144,8 +149,8 @@ msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
-"Linux와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/>`_"
-"\\ 을 별도로 설치해야 합니다."
+"Linux와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/"
+">`_\\ 을 별도로 설치해야 합니다."
 
 msgid ""
 "You should now have everything in place to change the file icon. To do that, "
@@ -194,3 +199,7 @@ msgstr ""
 "만약 아이콘이 Windows 10에서 제대로 보이지 않는다면 **실행** 창에서 "
 "``ie4uinit.exe -ClearIconCache`` 또는 ``ie4uinit.exe -show`` 를 입력해 아이"
 "콘 캐시를 삭제해보십시오."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

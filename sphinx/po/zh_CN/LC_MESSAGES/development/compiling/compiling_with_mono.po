@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,8 +106,8 @@ msgid ""
 "directory. This path must be ``modules/mono/glue`` in the Godot directory::"
 msgstr ""
 "构建完成后，您需要运行带有参数 ``--generate-mono-glue`` 的编译后的可执行文"
-"件，后跟输出目录的路径。在 Godot 目录中，此路径必须是 ``modules/mono/glue``"
-"\\ ： ::"
+"件，后跟输出目录的路径。在 Godot 目录中，此路径必须是 ``modules/mono/"
+"glue``\\ ： ::"
 
 msgid ""
 "This command will tell Godot to generate the file ``modules/mono/glue/"
@@ -382,9 +382,9 @@ msgid ""
 msgstr ""
 "一旦你建立了Mono, 你就可以按照本页和 :ref:`Compiling for "
 "Android<doc_compiling_for_android>` 页面中描述的说明继续构建Godot. 请确保让"
-"SCons知道你刚刚构建的Mono运行时的位置, 例如. ``scons [...] mono_prefix="
-"\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (这个路径在你的系统上可"
-"能不同)."
+"SCons知道你刚刚构建的Mono运行时的位置, 例如. ``scons [...] "
+"mono_prefix=\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (这个路径在"
+"你的系统上可能不同)."
 
 msgid "Targeting iOS"
 msgstr "以 iOS 为目标平台"
@@ -539,8 +539,8 @@ msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
-"为了构建交叉编译器, 我们推荐使用这些 `build scripts <https://github.com/"
-"godotengine/godot-mono-builds>` _."
+"为了构建交叉编译器，我们推荐使用这些\\ `构建脚本 <https://github.com/"
+"godotengine/godot-mono-builds>`_\\ 。"
 
 msgid ""
 "After building them, copy the executable to the Godot AOT compilers "
@@ -599,3 +599,7 @@ msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
 msgstr "是否复制Godot编辑器所需的Mono框架程序集和配置文件."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

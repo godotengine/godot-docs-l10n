@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "C++ usage guidelines"
-msgstr "C++ 使用指南"
+msgstr "C++ 使用规范"
 
 msgid "Rationale"
 msgstr "解释"
@@ -38,18 +38,24 @@ msgid ""
 "contributors don't always have access to a full-featured IDE while reviewing "
 "code."
 msgstr ""
+"易于使用在线编辑器审核代码。这是因为引擎的贡献者在审核代码时并不总是可以使用"
+"完整的 IDE。"
 
 msgid ""
 "It makes the code easier to grasp for beginner contributors (who may not be "
 "professional C++ programmers). Godot's codebase is known to be easy to learn "
 "from, and we'd like to keep it that way."
 msgstr ""
+"易于让新手贡献者掌握代码（他们可能不是专业的 C++ 程序员）。Godot 的代码库是公"
+"认的易于学习，我们希望继续保持。"
 
 msgid ""
 "To get your pull request merged, it needs to follow the C++ usage guidelines "
-"outlined here. Of course, you can use features not allowed here in your own C"
-"++ modules or GDNative scripts."
+"outlined here. Of course, you can use features not allowed here in your own "
+"C++ modules or GDNative scripts."
 msgstr ""
+"要让你的拉取请求被合并，就需要遵守这里描述的 C++ 使用规范。当然，在你自己的 "
+"C++ 模块或 GDNative 脚本中是可以使用此处禁止的特性的。"
 
 msgid ""
 "Prior to Godot 4.0, the C++ standard used throughout the codebase was C++03, "
@@ -57,16 +63,20 @@ msgid ""
 "to the `3.x` branch rather than `master`, your code can't use C++17 "
 "features. Instead, your code must be able to be built with a C++14 compiler."
 msgstr ""
+"在 Godot 4.0 之前的版本中，代码库所使用的 C++ 标准曾是 C++03，外加一些 C++14 "
+"扩展。如果你是在为 `3.x` 分支提交拉取请求而不是 `master`\\ ，就不能使用 C+"
+"+17 的特性。请确保你的代码能够使用 C++14 编译器构建。"
 
 msgid ""
 "The guidelines below don't apply to third-party dependencies, although we "
 "generally favor small libraries instead of larger solutions. See also :ref:"
 "`doc_best_practices_for_engine_contributors`."
 msgstr ""
+"以下规范并不适用于第三方依赖，虽然我们一般倾向于使用小型的库而不是大型的解决"
+"方案。另请参阅 :ref:`doc_best_practices_for_engine_contributors`\\ 。"
 
-#, fuzzy
 msgid "See :ref:`doc_code_style_guidelines` for formatting guidelines."
-msgstr "详情见 :ref:`doc_running_code_in_the_editor`."
+msgstr "格式化规范请参阅 :ref:`doc_code_style_guidelines`\\ 。"
 
 msgid "Disallowed features"
 msgstr "禁用的特性"
@@ -136,8 +146,8 @@ msgid ""
 "to avoid having to decide on difficult edge cases. Thank you for your "
 "understanding."
 msgstr ""
-"为了避免需要在难以抉择的极端情况上下定论的情况发生，我们选择禁止 ``auto``"
-"\\ ，不允许特事特办。感谢您的理解。"
+"为了避免需要在难以抉择的极端情况上下定论的情况发生，我们选择禁止 "
+"``auto``\\ ，不允许特事特办。感谢您的理解。"
 
 msgid "Lambdas"
 msgstr "Lambda"
@@ -164,5 +174,9 @@ msgid ""
 "See :ref:`doc_code_style_guidelines_header_includes` for guidelines on "
 "sorting includes in C++ and Objective-C files."
 msgstr ""
-"C++ 和 Objective-C 文件中 include 的排序指南请参阅 :ref:"
+"C++ 和 Objective-C 文件中 include 的排序规范请参阅 :ref:"
 "`doc_code_style_guidelines_header_includes`\\ 。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 msgstr ""
 
 msgid "|image0|"
+msgstr "| image0 |"
+
+#, fuzzy
+msgid "image0"
 msgstr "| image0 |"
 
 msgid ""
@@ -62,12 +66,20 @@ msgstr ""
 msgid "|image1|"
 msgstr "| image1 |"
 
+#, fuzzy
+msgid "image1"
+msgstr "| image1 |"
+
 msgid ""
 "This should instantiate the model as a child of *Pivot*. You can rename it "
 "to *Character*."
 msgstr ""
 
 msgid "|image2|"
+msgstr "| image2 |"
+
+#, fuzzy
+msgid "image2"
 msgstr "| image2 |"
 
 msgid ""
@@ -88,6 +100,10 @@ msgstr ""
 msgid "|image3|"
 msgstr "| image3 |"
 
+#, fuzzy
+msgid "image3"
+msgstr "| image3 |"
+
 msgid ""
 "It will be the shape the physics engine uses to collide with the "
 "environment, so we want it to better fit the 3D model. Shrink it a bit by "
@@ -102,6 +118,10 @@ msgstr ""
 msgid "|image4|"
 msgstr "| image4 |"
 
+#, fuzzy
+msgid "image4"
+msgstr "| image4 |"
+
 msgid ""
 "You can toggle the model's visibility by clicking the eye icon next to the "
 "*Character* or the *Pivot* nodes."
@@ -111,17 +131,19 @@ msgid "|image5|"
 msgstr "| image5 |"
 
 #, fuzzy
+msgid "image5"
+msgstr "| image5 |"
+
 msgid "Save the scene as ``Player.tscn``."
-msgstr "Nakonec scénu uložte pod názvem ``sayhello.tscn``."
+msgstr "Uložte scénu jako ``Player.tscn``."
 
 msgid ""
 "With the nodes ready, we can almost get coding. But first, we need to define "
 "some input actions."
 msgstr ""
 
-#, fuzzy
 msgid "Creating input actions"
-msgstr "Vytváření ikon"
+msgstr "Vytváření vstupních akcí"
 
 msgid ""
 "To move the character, we will listen to the player's input, like pressing "
@@ -138,6 +160,10 @@ msgstr ""
 msgid "|image6|"
 msgstr ""
 
+#, fuzzy
+msgid "image6"
+msgstr "| image16 |"
+
 msgid ""
 "At the top, there are multiple tabs. Click on *Input Map*. This window "
 "allows you to add new actions at the top; they are your labels. In the "
@@ -146,6 +172,10 @@ msgstr ""
 
 msgid "|image7|"
 msgstr ""
+
+#, fuzzy
+msgid "image7"
+msgstr "| image17 |"
 
 msgid ""
 "Godot projects come with some predefined actions designed for user interface "
@@ -164,6 +194,10 @@ msgstr ""
 msgid "|image8|"
 msgstr ""
 
+#, fuzzy
+msgid "image8"
+msgstr "| image18 |"
+
 msgid ""
 "Create the five actions. Your window should have them all listed at the "
 "bottom."
@@ -172,6 +206,10 @@ msgstr ""
 msgid "|image9|"
 msgstr ""
 
+#, fuzzy
+msgid "image9"
+msgstr "| image19|"
+
 msgid ""
 "To bind a key or button to an action, click the \"+\" button to its right. "
 "Do this for ``move_left`` and in the drop-down menu, click *Key*."
@@ -179,6 +217,10 @@ msgstr ""
 
 msgid "|image10|"
 msgstr ""
+
+#, fuzzy
+msgid "image10"
+msgstr "| image1 |"
 
 msgid ""
 "This option allows you to add a keyboard input. A popup appears and waits "
@@ -189,11 +231,18 @@ msgid "|image11|"
 msgstr ""
 
 #, fuzzy
+msgid "image11"
+msgstr "| image1 |"
+
 msgid "Do the same for the A key."
-msgstr "Měřítko kořenového uzlu."
+msgstr "Udělejte totéž pro klávesu A."
 
 msgid "|image12|"
 msgstr ""
+
+#, fuzzy
+msgid "image12"
+msgstr "| image1 |"
 
 msgid ""
 "Let's now add support for a gamepad's left joystick. Click the \"+\" button "
@@ -202,6 +251,10 @@ msgstr ""
 
 msgid "|image13|"
 msgstr ""
+
+#, fuzzy
+msgid "image13"
+msgstr "| image1 |"
 
 msgid ""
 "The popup gives you two drop-down menus. On the left, you can select a "
@@ -214,15 +267,22 @@ msgstr ""
 msgid "|image14|"
 msgstr ""
 
+#, fuzzy
+msgid "image14"
+msgstr "| image1 |"
+
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
 "D, and the left joystick's right axis to ``move_right``. After binding all "
 "keys, your interface should look like this."
 msgstr ""
 
-#, fuzzy
 msgid "|image15|"
-msgstr "| image1 |"
+msgstr "| image15 |"
+
+#, fuzzy
+msgid "image15"
+msgstr "| image15 |"
 
 msgid ""
 "We have the ``jump`` action left to set up. Bind the Space key and the "
@@ -230,23 +290,32 @@ msgid ""
 "option in the menu."
 msgstr ""
 
-#, fuzzy
 msgid "|image16|"
-msgstr "| image1 |"
+msgstr "| image16 |"
+
+#, fuzzy
+msgid "image16"
+msgstr "| image16 |"
 
 msgid "Leave the default values and click the *Add* button."
 msgstr ""
 
-#, fuzzy
 msgid "|image17|"
-msgstr "| image1 |"
+msgstr "| image17 |"
+
+#, fuzzy
+msgid "image17"
+msgstr "| image17 |"
 
 msgid "Your jump input action should look like this."
 msgstr "Vstupní akce skoku by měla vypadat takto."
 
-#, fuzzy
 msgid "|image18|"
-msgstr "| image1 |"
+msgstr "| image18 |"
+
+#, fuzzy
+msgid "image18"
+msgstr "| image18 |"
 
 msgid ""
 "That's all the actions we need for this game. You can use this menu to label "
@@ -255,3 +324,7 @@ msgstr ""
 
 msgid "In the next part, we'll code and test the player's movement."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formát překladu"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,13 +214,13 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"``$`` is shorthand for ``get_node()``. So in the code above, ``"
-"$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
+"``$`` is shorthand for ``get_node()``. So in the code above, "
+"``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
 "``$`` on lyhenne ``get_node()`` syntaksille. Toisin sanoen, yllä olevassa "
-"koodissa ``$AnimatedSprite.play()`` on sama kuin ``get_node(\"AnimatedSprite"
-"\").play()``."
+"koodissa ``$AnimatedSprite.play()`` on sama kuin "
+"``get_node(\"AnimatedSprite\").play()``."
 
 #, fuzzy
 msgid ""
@@ -230,8 +230,8 @@ msgid ""
 msgstr ""
 "GDScriptissä, ``$`` palauttaa solmun, joka löytyy suhteellisesta polusta "
 "nykyiseen solmuun nähden, tai palauttaa ``null`` jos solmua ei löydy. Koska "
-"AnimatedSprite on nykyisen solmun alisolmu, voimme käyttää ``"
-"$AnimatedSprite`` syntaksia."
+"AnimatedSprite on nykyisen solmun alisolmu, voimme käyttää "
+"``$AnimatedSprite`` syntaksia."
 
 #, fuzzy
 msgid ""
@@ -359,9 +359,9 @@ msgid ""
 msgstr ""
 "Tämä määrittelee mukautetun signaalin nimeltä \"hit\", jonka laitamme "
 "pelaajamme lähettämään, kun se törmää viholliseen. Käytämme ``Area2D`` "
-"solmua tunnistamaan törmäyksen. Valitse ``Player`` solmu ja napsauta \"Solmu"
-"\" välilehteä Tarkastelijan vieressä nähdäksesi listan signaaleista, joita "
-"pelaaja voi lähettää:"
+"solmua tunnistamaan törmäyksen. Valitse ``Player`` solmu ja napsauta "
+"\"Solmu\" välilehteä Tarkastelijan vieressä nähdäksesi listan signaaleista, "
+"joita pelaaja voi lähettää:"
 
 #, fuzzy
 msgid ""
@@ -375,10 +375,10 @@ msgstr ""
 "Huomaa, että oma \"hit\" signaalimme on myös siellä! Koska viholliset "
 "tulevat olemaan ``RigidBody2D`` solmuja, haluamme ``body_entered( Object "
 "body )`` signaalin; se lähetetään kappaleen osuessa pelaajaan. Napsauta "
-"\"Yhdistä...\" ja sen jälkeen \"Yhdistä\" uudelleen \"Yhdistetään signaalia"
-"\" ikkunassa. Meidän ei tarvitse muuttaa mitään näistä asetuksista – Godot "
-"luo automaattisesti funktion pelaajasi skriptiin. Tätä funktiota kutsutaan "
-"aina, kun signaali lähetetään – se *käsittelee* signaalin."
+"\"Yhdistä...\" ja sen jälkeen \"Yhdistä\" uudelleen \"Yhdistetään "
+"signaalia\" ikkunassa. Meidän ei tarvitse muuttaa mitään näistä asetuksista "
+"– Godot luo automaattisesti funktion pelaajasi skriptiin. Tätä funktiota "
+"kutsutaan aina, kun signaali lähetetään – se *käsittelee* signaalin."
 
 msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
@@ -415,3 +415,7 @@ msgstr ""
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Muokkaa käyttöliittymää"

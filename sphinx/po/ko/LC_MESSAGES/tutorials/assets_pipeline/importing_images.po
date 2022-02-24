@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,6 +191,13 @@ msgstr ""
 "아래의 표에 상기 4가지 설정 모두의 장점과 단점이 정리되어 있습니다( |good| = "
 "최고, |bad| = 최악):"
 
+msgid "good"
+msgstr ""
+
+#, fuzzy
+msgid "bad"
+msgstr "그리고"
+
 msgid "Uncompressed"
 msgstr "압축하지 않음"
 
@@ -225,6 +232,10 @@ msgid "|bad| Large"
 msgstr "|bad| 거대함"
 
 msgid "|regular| Small"
+msgstr "|regular| 작음"
+
+#, fuzzy
+msgid "regular"
 msgstr "|regular| 작음"
 
 msgid "|good| Very Small"
@@ -514,3 +525,7 @@ msgid ""
 msgstr ""
 "이 옵션은 SVG 파일에만 적용됩니다. SVG 이미지의 크기를 조절합니다. 기본값 "
 "(1.0) 은 가져온 SVG 파일이 원본의 크기를 갖도록 합니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

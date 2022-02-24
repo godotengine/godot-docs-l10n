@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid ""
 msgstr ""
 "通常，当您使用 Godot 时，引擎会以相同的方式处理您可以看到的所有对象（\\ :ref:"
 "`VisualInstance<class_VisualInstance>`\\ ）。入口渲染器略有不同，因为它区分在"
-"您的游戏中具有的不同对象角色。它通过这种区分来定义 :ref:`Room<class_Room>`"
-"\\ ，并以最有效的方式渲染和处理。"
+"您的游戏中具有的不同对象角色。它通过这种区分来定义 :ref:"
+"`Room<class_Room>`\\ ，并以最有效的方式渲染和处理。"
 
 msgid "Portal mode"
 msgstr "入口的模式"
@@ -42,8 +42,8 @@ msgid ""
 "``PortalMode``. This determines how objects will behave in the portal system."
 msgstr ""
 "如果你在检查器中查看，Godot 中的每个 VisualInstance 都是从 :ref:"
-"`CullInstance<class_CullInstance>` 派生而来，你可以设置它的 ``PortalMode``"
-"\\ ，这决定了对象在入口系统中的行为方式。"
+"`CullInstance<class_CullInstance>` 派生而来，你可以设置它的 "
+"``PortalMode``\\ ，这决定了对象在入口系统中的行为方式。"
 
 msgid "STATIC"
 msgstr "STATIC"
@@ -311,3 +311,7 @@ msgid ""
 msgstr ""
 "祝贺！您现在已经掌握了使用房间和入口所需的中阶技术，已经可以使用这些来制作游"
 "戏，虽然还有更多功能。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

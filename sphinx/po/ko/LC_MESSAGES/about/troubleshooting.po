@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,8 +167,8 @@ msgid ""
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
 "리눅스에서 이 오버레이 사용을 중지하려면, ``nvidia-settings``\\ 을 열고, **X "
-"Screen 0 > OpenGL Setting**\\ 에서 **Enable Graphics API Visual Indicator**"
-"\\ 를 선택 취소합니다."
+"Screen 0 > OpenGL Setting**\\ 에서 **Enable Graphics API Visual "
+"Indicator**\\ 를 선택 취소합니다."
 
 msgid "The project window appears blurry, unlike the editor."
 msgstr "에디터와 달리 프로젝트 창이 흐릿하게 나타납니다."
@@ -187,10 +187,10 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
-"이 문제를 해결하려면 **프로젝트(Project) > 프로젝트 설정(Project Settings)**"
-"\\ 을 열고 **Display > Window > Dpi > Allow Hidpi**\\ 를 활성화합니다. 그 전"
-"에, 프로젝트가 :ref:`multiple resolutions <doc_multiple_resolutions>`\\ 를 지"
-"원하도록 설정되어 있는지 확인하세요."
+"이 문제를 해결하려면 **프로젝트(Project) > 프로젝트 설정(Project "
+"Settings)**\\ 을 열고 **Display > Window > Dpi > Allow Hidpi**\\ 를 활성화합"
+"니다. 그 전에, 프로젝트가 :ref:`multiple resolutions "
+"<doc_multiple_resolutions>`\\ 를 지원하도록 설정되어 있는지 확인하세요."
 
 msgid "The project window doesn't appear centered when I run the project."
 msgstr "프로젝트를 실행할 때 프로젝트 창이 가운데에 나타나지 않습니다."
@@ -243,3 +243,7 @@ msgstr ""
 "서 리소스를 참조하는 경우 프로젝트를 내보내면 리소스 로드가 실패합니다. 가상 "
 "PCK 파일 시스템은 대소 문자를 구분하지만, Windows의 파일 시스템은 기본적으로 "
 "대소 문자를 구분하지 않기 때문입니다."
+
+#, fuzzy
+msgid "Translation status"
+msgstr "번역 형식"

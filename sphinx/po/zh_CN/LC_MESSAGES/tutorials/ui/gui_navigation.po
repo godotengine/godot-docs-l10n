@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,8 +93,8 @@ msgstr ""
 "模式设置定义了节点如何被聚焦。\\ **All**\\ 意味着节点可以通过用鼠标点击，或用"
 "键盘或控制器选择而被关注。\\ **Click**\\ 意味着只能通过点击来关注。最后，\\ "
 "**None**\\ 意味着它根本不能被关注。不同的控件节点根据它们的典型使用方式有不同"
-"的默认设置，如， :ref:`Label <class_Label>` 节点默认设置为 \"None\"，而 :ref:"
-"`buttons <class_Button>` 则为 \"All\"。"
+"的默认设置，如，\\ :ref:`Label <class_Label>` 节点默认设置为“None”，而\\ :"
+"ref:`按钮 <class_Button>`\\ 则为“All”。"
 
 msgid ""
 "Make sure to properly configure your scenes for focus and navigation. If a "
@@ -127,3 +127,7 @@ msgid ""
 msgstr ""
 "现在，当场景启动，\"Start Button\" 节点被聚焦，键盘或控制器可以用来在它和其他"
 "UI元素之间进行导航。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

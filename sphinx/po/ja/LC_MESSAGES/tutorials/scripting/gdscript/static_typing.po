@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,6 +94,10 @@ msgstr ""
 "あなたはおそらく以前に変数にノードを格納していて、オートコンプリートの提案な"
 "しでピリオドが残るようにタイプしました:"
 
+#, fuzzy
+msgid "code completion options for dynamic"
+msgstr "強制的に完了(オプション)"
+
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
@@ -102,6 +106,10 @@ msgstr ""
 "これは動的コードによるものです。Godotは、関数に渡されているノードまたは値の型"
 "を認識できません。ただし型を明示的に記述すると、すべてのpublicメソッドと変数"
 "がノードから取得されます:"
+
+#, fuzzy
+msgid "code completion options for typed"
+msgstr "強制的に完了(オプション)"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -294,6 +302,9 @@ msgstr ""
 "そのタイプが機能することを確認し、機能する場合は、行番号がスクリプトエディタ"
 "の左側で緑に変わります。"
 
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "セーフ・ラインではない行(line 7)とセーフ・ライン (line 6 とline 8)"
 
@@ -433,3 +444,7 @@ msgstr ""
 "り、より構造化されたコードの記述、一般的なエラーの回避、スケーラブルシステム"
 "の作成に役立ちます。将来的には、コンパイラーの最適化によって静的型のパフォー"
 "マンスも大幅に向上するでしょう。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻訳形式"

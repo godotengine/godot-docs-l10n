@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgstr ""
 msgid "Alternatively, you can generate it yourself by using OpenSSL:"
 msgstr "或者，也可以通過 OpenSSL 來自行產生："
 
-msgid "This should output the following to ``godot.gdkey`` file:"
-msgstr "該指令會將下列內容輸出至 ``godot.gdkey`` 檔案中："
+msgid "The output in ``godot.gdkey`` should be similar to:"
+msgstr ""
 
 msgid ""
 "You can generate the key without redirecting the output to a file, but that "
@@ -86,3 +86,7 @@ msgid ""
 msgstr ""
 "若遇到類似下方的錯誤，這代表加密密鑰沒有被正確包含到 Godot 建置中。這代表 "
 "Godot 在匯出時有加密腳本，但執行階段無法讀取。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻譯格式"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
-"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
@@ -145,7 +145,7 @@ msgstr ""
 "funzionano con alcuni valori o caratteri."
 
 msgid "Placeholder types"
-msgstr "Tipi segnaposto"
+msgstr "Tipi di segnaposto"
 
 msgid ""
 "One and only one of these must always appear as the last character in a "
@@ -194,8 +194,8 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"Un numero **ottale intero**. Si aspetta un intero o numero reale (verrà "
-"troncato)."
+"Un numero **integrale ottale**. Si aspetta un integrale o un numero reale "
+"(sarà troncato)."
 
 msgid "``x``"
 msgstr "``x``"
@@ -204,7 +204,7 @@ msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"Un numero **esadecimale intero** con lettre **minuscole**. Si aspetta un "
+"Un numero **esadecimale intero** con lettere **minuscole**. Si aspetta un "
 "intero o numero reale (verrà troncato)."
 
 msgid "``X``"
@@ -214,14 +214,15 @@ msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"Un numero **esadecimale intero** con lettre **maiuscole**. Si aspetta un "
+"Un numero **esadecimale intero** con lettere **maiuscole**. Si aspetta un "
 "intero o numero reale (verrà troncato)."
 
 msgid "``f``"
 msgstr "``f``"
 
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr "Un numero **decimale reale**. Si aspetta un numero reale."
+msgstr ""
+"Un numero **decimale reale**. Si aspetta un integrale o un numero reale."
 
 msgid "Placeholder modifiers"
 msgstr "Modificatori segnaposto"
@@ -352,8 +353,8 @@ msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
-"Di seguito sono riportati alcuni esempi di utilizzo delle varie chiamate del "
-"metodo ''String.format''."
+"I seguenti sono alcuni esempi di come usare le varie invocazioni del metodo "
+"``String.format``."
 
 msgid "**Type**"
 msgstr "**Tipo**"
@@ -476,3 +477,7 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Ciao, Godette v3.11"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"

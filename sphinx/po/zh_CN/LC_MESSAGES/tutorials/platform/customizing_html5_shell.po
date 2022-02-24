@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,15 +27,15 @@ msgid ""
 "be directly controlled from the outside yet, such page allows to customize "
 "the initialization process for the engine."
 msgstr ""
-"虽然Web导出模板提供了一个默认的HTML页面，完全能够在没有任何进一步定制的情况下"
-"启动项目，但创建一个自定义的HTML页面可能是有益的。虽然游戏本身还不能轻易地从"
+"虽然 Web 导出模板提供了一个默认的 HTML 页面，完全能够在没有任何进一步定制的情"
+"况下启动项目，但创建自定义 HTML 页面可能是有益的。虽然游戏本身还不能轻易地从"
 "外部直接控制，但这样的页面允许自定义引擎的初始化过程。"
 
 msgid "Some use-cases where customizing the default page is useful include:"
-msgstr "自定义默认页面有用的一些用例包括:"
+msgstr "自定义默认页面在某些情况下非常有用，包括："
 
 msgid "Loading files from a different directory than the page;"
-msgstr "从其他目录加载文件；"
+msgstr "读取与该页面不同目录下的文件；"
 
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as the main pack;"
 msgstr "加载 ``.zip`` 文件而不是 ``.pck`` 文件作为主资源包；"
@@ -46,12 +46,12 @@ msgstr "从主资源包文件以外的目录中加载引擎文件；"
 msgid ""
 "Adding a click-to-play button so that games can be started in the fullscreen "
 "mode;"
-msgstr "添加一个 \"即点即玩\" 按钮, 使游戏可以在全屏模式下启动；"
+msgstr "添加“点击开始”按钮，使游戏可以在全屏模式下启动；"
 
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
-msgstr "在引擎启动之前加载一些额外的文件, 以便稍后在文件系统中可用；"
+msgstr "在引擎启动之前加载一些额外的文件，以便稍后在文件系统中可用；"
 
 msgid ""
 "Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` "
@@ -254,10 +254,10 @@ msgid ""
 "defines the name of the automatically started main pack. The :js:attr:"
 "`executable` override option can be used to override this value."
 msgstr ""
-"由于真正的可执行文件不存在于Web环境中，引擎只存储一个由加载的引擎文件的基本名"
-"称形成的虚拟文件名。这个值会影响 :ref:`OS.get_executable_path() "
+"由于真正的可执行文件不存在于 Web 环境中，引擎只存储一个由加载的引擎文件的基本"
+"名称形成的虚拟文件名。这个值会影响 :ref:`OS.get_executable_path() "
 "<class_OS_method_get_executable_path>` 方法的输出，并定义自动启动的主包的名"
-"称。:js:attr:`executable` 选项可以用来重写这个值。"
+"称。\\ :js:attr:`executable` 选项可以用来重写这个值。"
 
 msgid "Customizing the presentation"
 msgstr "自定义演示文稿"
@@ -337,3 +337,7 @@ msgid ""
 "When handling the engine output keep in mind, that it may not be desirable "
 "to print it out in the finished product."
 msgstr "在处理引擎输出时，请记住，在成品中打印出来可能是不可取的。"
+
+#, fuzzy
+msgid "Translation status"
+msgstr "翻译格式"

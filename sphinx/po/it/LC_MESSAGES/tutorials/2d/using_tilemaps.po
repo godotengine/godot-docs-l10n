@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 17:14+0100\n"
+"POT-Creation-Date: 2022-02-24 15:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Using TileMaps"
-msgstr "Usando un file"
+msgstr "Utilizzo di TileMaps"
 
 msgid "Introduction"
 msgstr "Introduzione"
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 
 msgid "Project setup"
-msgstr "Impostare il progetto"
+msgstr "Impostazione del progetto"
 
 msgid ""
 "This demo will use the following tiles taken from Kenney's \"Abstract "
@@ -56,8 +56,9 @@ msgid ""
 "`doc_import_images` for details."
 msgstr ""
 
+#, fuzzy
 msgid "TileMap node"
-msgstr ""
+msgstr "Nodo TileMap"
 
 msgid ""
 "Add a new :ref:`TileMap <class_TileMap>` node to the scene. By default, a "
@@ -70,8 +71,9 @@ msgid ""
 "adjust to customize your tilemap's behavior:"
 msgstr ""
 
+#, fuzzy
 msgid "``Cell Size``"
-msgstr ""
+msgstr "``Dimensione cella``"
 
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
@@ -103,8 +105,9 @@ msgid ""
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
 
+#, fuzzy
 msgid "``Custom Transform``"
-msgstr "``Trasformazione personalizzata``"
+msgstr "``Custom Transform``"
 
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
@@ -113,7 +116,7 @@ msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 
 msgid "Creating a TileSet"
-msgstr "Creazione di un TileSet"
+msgstr "Creare un TileSet"
 
 msgid ""
 "Once you've configured your tilemap, it's time to add a :ref:`TileSet "
@@ -156,8 +159,9 @@ msgid ""
 "use the node's lock button:"
 msgstr ""
 
+#, fuzzy
 msgid "Collision shapes"
-msgstr ""
+msgstr "Forme di collisione"
 
 msgid ""
 "If you're making a map that needs collisions - walls, floor, or other "
@@ -177,8 +181,9 @@ msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
 
+#, fuzzy
 msgid "Atlas tiles"
-msgstr ""
+msgstr "Atlas di tiles"
 
 msgid ""
 "Rather than adding individual tiles one at a time, you can define a group of "
@@ -224,7 +229,6 @@ msgid ""
 "priority 3 is 50% more likely to be selected than a tile with priority 2."
 msgstr ""
 
-#, fuzzy
 msgid "Autotiles"
 msgstr "Autotiles"
 
@@ -242,8 +246,8 @@ msgstr ""
 msgid ""
 "Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
 "\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
-"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
-"\", and shift-left-click sets an \"ignore\" bit."
+"mask. Left-clicking an area of the tile adds a bit, right-click removes "
+"\"off\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
 
 msgid ""
@@ -267,7 +271,6 @@ msgid ""
 "\"ignore\" bits are ignored."
 msgstr ""
 
-#, fuzzy
 msgid "2x2"
 msgstr "2x2"
 
@@ -309,14 +312,17 @@ msgstr ""
 msgid "Key:"
 msgstr "Chiave:"
 
+#, fuzzy
 msgid "Red: \"on\""
-msgstr ""
+msgstr "Rosso: \"attivo\""
 
+#, fuzzy
 msgid "White: \"off\""
-msgstr ""
+msgstr "Bianco: \"spento\""
 
+#, fuzzy
 msgid "3x3 (minimal)"
-msgstr ""
+msgstr "3x3 (minimo)"
 
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
@@ -357,8 +363,9 @@ msgid ""
 "art styles the missing tiles will not be noticeable."
 msgstr ""
 
+#, fuzzy
 msgid "Blue-checkered: \"ignore\""
-msgstr ""
+msgstr "A scacchi blu: \"ignora\""
 
 msgid "**Template - Top-down floor in 3/4 perspective:**"
 msgstr ""
@@ -366,11 +373,13 @@ msgstr ""
 msgid "Key (applies to the four templates below):"
 msgstr ""
 
+#, fuzzy
 msgid "Green: floor"
-msgstr ""
+msgstr "Verde: pavimento"
 
+#, fuzzy
 msgid "Cyan: wall"
-msgstr ""
+msgstr "Ciano: muro"
 
 msgid "Yellow: top of wall"
 msgstr ""
@@ -378,8 +387,9 @@ msgstr ""
 msgid "Grey: hidden due to overlap"
 msgstr ""
 
+#, fuzzy
 msgid "Transparent: air"
-msgstr ""
+msgstr "Trasparente: aria"
 
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr ""
@@ -401,7 +411,6 @@ msgid ""
 "size. This means the texture offset should be ``Vector2(0, -120)``:"
 msgstr ""
 
-#, fuzzy
 msgid "3x3"
 msgstr "3x3"
 
@@ -421,7 +430,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Disabling autotile"
-msgstr "Utilizzo degli spazi"
+msgstr "Disattivare l'autotile"
 
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
@@ -450,8 +459,9 @@ msgid ""
 "changes to take effect."
 msgstr ""
 
+#, fuzzy
 msgid "Tips and tricks"
-msgstr ""
+msgstr "Suggerimenti e trucchi"
 
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
@@ -472,3 +482,7 @@ msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+
+#, fuzzy
+msgid "Translation status"
+msgstr "Formato di traduzione"
