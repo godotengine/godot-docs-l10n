@@ -88,7 +88,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-02-24 15:04+0100\n"
-"PO-Revision-Date: 2022-02-24 13:09+0000\n"
+"PO-Revision-Date: 2022-03-07 21:59+0000\n"
 "Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -530,7 +530,7 @@ msgid ""
 msgstr ""
 "La sezione :ref:`sec-general` contiene questa introduzione così come "
 "informazioni sul sistema, la sua storia, la licenza applicata, gli autori, "
-"eccetera. La sezione contiene anche le :ref:`doc_faq`."
+"eccetera. Contiene inoltre le :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -631,8 +631,10 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot è un software Libre/Open Source disponibile sotto la `licenza MIT "
-"approvata dall'OSI <https://opensource.org/licenses/MIT>`_"
+"Godot è ` Software Libero e Open-Source <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ disponibile sotto la ` licenza approvata "
+"dalla OSI <https://opensource.org/licenses/MIT>`_. Questo significa che è "
+"libero come in \"discorso libero\" così come in \"birra gratis.\""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -806,8 +808,8 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"I linguaggi supportati ufficialmente per Godot sono GDScript, Visual "
-"Scripting, C# e C++. Vedere le sottocategorie per ogni linguaggio nella "
+"I linguaggi supportati ufficialmente da Godot sono GDScript, Visual "
+"Scripting, C# e C++. Vedi le sottocategorie per ogni linguaggio nella "
 "sezione :ref:`scripting <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:71
@@ -1062,9 +1064,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
-"FBX è supportato tramite l'Open Asset Import library. Tuttavia, FBX è "
-"proprietario, dacché raccomandiamo l'uso di altri formati elencati sopra, se "
-"adatti al vostro flusso di lavoro."
+"FBX è supportato tramite la libreria Open Asset Import. Tuttavia, FBX è "
+"proprietario, quindi ti consigliamo di utilizzare altri formati sopra "
+"elencati, se adatti al tuo flusso di lavoro."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -1170,7 +1172,7 @@ msgid ""
 "artificial intelligence functionality."
 msgstr ""
 "Godot non include intenzionalmente funzionalità che possono essere "
-"implementate da componenti aggiuntivi a meno che non siano utilizzate molto "
+"implementate da componenti aggiuntivi, a meno che non siano utilizzate molto "
 "spesso. Un esempio di questo sarebbe una funzionalità avanzata di "
 "intelligenza artificiale."
 
@@ -1769,8 +1771,8 @@ msgid ""
 msgstr ""
 "Godot fornisce il proprio sistema di casting del tipo, che può "
 "facoltativamente utilizzare il RTTI internamente. Disabilitare RTTI in "
-"Godot, significa che è possibile ottenere dimensioni binarie "
-"considerevolmente più piccole, con un costo di prestazioni ridotto."
+"Godot, significa che è possibile ottenere dimensioni dei file binari "
+"considerevolmente più piccoli, con un costo di prestazioni ridotto."
 
 #: ../../docs/about/faq.rst:446
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
@@ -1882,8 +1884,8 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
-"Si tratta di un \"bug noto <https://github.com/godotengine/godot/"
-"issues/23069>\" __ dei driver grafici Intel su Windows. L'aggiornamento alla "
+"Si tratta di un `bug noto <https://github.com/godotengine/godot/"
+"issues/23069>` __ dei driver grafici Intel su Windows. L'aggiornamento alla "
 "versione più recente del driver grafico *fornita da Intel* dovrebbe "
 "risolvere il problema."
 
@@ -1966,7 +1968,7 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
-"Questo è un problema noto <https://github.com/godotengine/godot/"
+"Questo è un `problema noto <https://github.com/godotengine/godot/"
 "issues/32990>`__ causato dall'applicazione di terze parti Stardock Fences su "
 "Windows. L'unica soluzione conosciuta è disabilitare Stardock Fences mentre "
 "si usa Godot."
@@ -2838,7 +2840,7 @@ msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
-"La maggior parte di questi effetti può essere regolata per prestazioni "
+"La maggior parte di questi effetti possono essere regolati per prestazioni "
 "migliori o per migliorare ulteriormente la qualità. Questo può essere utile "
 "quando si utilizza Godot per il rendering offline."
 
@@ -3488,20 +3490,19 @@ msgid "Support for ARKit on iOS out of the box."
 msgstr "Supporto per ARKit su iOS pronto all'uso."
 
 #: ../../docs/about/list_of_features.rst:491
-#, fuzzy
 msgid "Support for the OpenXR APIs."
-msgstr "Supporto per le API OpenXR e OpenVR."
+msgstr "Supporto per le API OpenXR."
 
 #: ../../docs/about/list_of_features.rst:493
 msgid ""
 "Includes support for popular headsets like the Meta Quest and the Valve "
 "Index."
 msgstr ""
+"Include il supporto per i visori più popolari come Meta Quest e Valve Index."
 
 #: ../../docs/about/list_of_features.rst:495
-#, fuzzy
 msgid "Support for the OpenVR APIs."
-msgstr "Supporto per le API OpenXR e OpenVR."
+msgstr "Supporto per le API OpenVR."
 
 #: ../../docs/about/list_of_features.rst:498
 msgid "GUI system"
@@ -3870,9 +3871,9 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
-"Questo documento contiene solo nuovi tutorial e non tutti i cambiamenti, "
-"molti tutorial sono stati sostanzialmente aggiornati ma non vengono "
-"riportate in questo documento."
+"Questo documento contiene solo nuovi tutorial, quindi non tutte le modifiche "
+"vengono riportate, molti di questi sono stati sostanzialmente aggiornati ma "
+"non vengono riportati in questo documento."
 
 #: ../../docs/about/docs_changelog.rst:15
 msgid "New tutorials since version 3.1"
@@ -4323,7 +4324,7 @@ msgid ""
 msgstr ""
 "La versione ``major`` è incrementata quando si verificano importanti rotture "
 "di compatibilità che implicano un significativo lavoro di conversione per "
-"spostare i progetti da una versione maggiore all'altra."
+"spostare i progetti da una versione major all'altra."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -5486,13 +5487,12 @@ msgstr ""
 "esempio di nodi di un personaggio."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:43
-#, fuzzy
 msgid ""
 "It is made of a ``KinematicBody2D`` node named \"Character\", a ``Sprite``, "
 "a ``Camera2D``, and a ``CollisionShape2D``."
 msgstr ""
 "È composto da un nodo ``KinematicBody2D`` chiamato \"Character\", un "
-"``Sprite``, un ``Camera2D``, e un ``CollisionShape2D``."
+"``Sprite``, un ``Camera2D`` e un ``CollisionShape2D``."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:46
 #, fuzzy
@@ -6730,9 +6730,9 @@ msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"Questo conduce a un sistema d'interfaccia affidabile e flessibile, dato che "
-"esso supporta l'editor stesso. Con lo ``strumento`` keyword, puoi eseguire "
-"qualsiasi codice di gioco nell'editor."
+"Questo conduce a un sistema d'interfaccia utente affidabile e flessibile, "
+"dato che esso supporta l'editor stesso. Con la keyword ``tool``, puoi "
+"eseguire qualsiasi codice di gioco nell'editor."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:158
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:46
@@ -9583,6 +9583,7 @@ msgstr ""
 "delle direzioni."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:400
+#, fuzzy
 msgid ""
 "A common mistake here is to type the names of the animations wrong. The "
 "animation names in the SpriteFrames panel must match what you type in the "
@@ -9591,8 +9592,8 @@ msgid ""
 msgstr ""
 "Un errore comune è quello di sbagliare i nomi delle animazioni. I nomi delle "
 "animazioni nel pannello SpriteFrames devono corrispondere a quello che si "
-"digita nel codice. Se avete chiamato l'animazione ```\"Walk\"```, dovete "
-"anche usare una \"W\" maiuscola nel codice."
+"digita nel codice. Se avete chiamato l'animazione ``\"Walk\"``, dovete anche "
+"usare una \"W\" maiuscola nel codice."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:405
 msgid ""
@@ -9671,15 +9672,16 @@ msgstr ""
 "segnale ``hit`` più di una volta."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:509
+#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 "Disabilitare la forma di collisione dell'area può causare un errore se si "
-"usa mentre il motore sta elaborando le collisioni. Usando "
-"```set_deferred()`` si dice a Godot di aspettare a disabilitare la forma di "
-"collisione, fino a quando non è sicuro farlo."
+"usa mentre il motore sta elaborando le collisioni. Usando ``set_deferred()`` "
+"si dice a Godot di aspettare a disabilitare la forma di collisione, fino a "
+"quando non è sicuro farlo."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:514
 msgid ""
@@ -9873,9 +9875,9 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the "
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
-"L'ultimo pezzo è quello di fare in modo che i mob si cancellino loro stessi "
-"quando escono dallo schermo. Collegare il segnale ``screen_exited()`` del "
-"nodo ``VisibilityNotifier2D` e aggiungere questo codice:"
+"L'ultimo pezzo è quello di fare in modo che i nemici si cancellino loro "
+"stessi quando escono dallo schermo. Collega il segnale ``screen_exited()`` "
+"del nodo ``VisibilityNotifier2D` e aggiungi questo codice:"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:176
 msgid "This completes the `Mob` scene."
@@ -9969,12 +9971,13 @@ msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:32
+#, fuzzy
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
 msgstr ""
-"Inoltre, imposta la proprietà ``One Shot`` di ``StartTimer``` su \"On\" e "
-"imposta la ``Position``` del nodo ``StartPosition`` su ``(240, 450)``."
+"Inoltre, imposta la proprietà ``One Shot`` di ``StartTimer`` su \"On\" e "
+"imposta la ``Position`` del nodo ``StartPosition`` su ``(240, 450)``."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:36
 msgid "Spawning mobs"
@@ -10050,9 +10053,9 @@ msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"Aggiungi uno script a `` Main``. Nella parte superiore dello script, "
-"utilizziamo `` export (PackedScene) `` per permetterci di scegliere la scena "
-"Mob che vogliamo istanziare."
+"Aggiungi uno script a `` Main``. Nella parte superiore, utilizziamo ``export "
+"(PackedScene)`` per permetterci di scegliere la scena Mob che vogliamo "
+"istanziare."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:152
 msgid ""
@@ -10066,7 +10069,7 @@ msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Clicca sul nodo ``Main``` e vedrai la proprietà ``Mob`` nell'Inspector sotto "
+"Clicca sul nodo ``Main`` e vedrai la proprietà ``Mob`` nell'Inspector sotto "
 "\"Script Variables\"."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:195
@@ -10099,6 +10102,7 @@ msgstr ""
 "dock Nodo."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:204
+#, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -10113,7 +10117,7 @@ msgstr ""
 "due volte sul segnale ``hit`` dalla lista (o fai un click con il mouse "
 "destro del mouse e seleziona \"Connetti...\"). In questo modo si aprirà la "
 "finestra di dialogo per la connessione del segnale. Vogliamo creare una "
-"nuova funzione chiamata ``game_over```, che gestirà ciò che deve accadere "
+"nuova funzione chiamata ``game_over``, che gestirà ciò che deve accadere "
 "quando un gioco finisce. Digitate \"game_over\" nella casella \"Receiver "
 "Method\" in fondo alla finestra di dialogo della connessione del segnale e "
 "cliccate su \"Connect\". Aggiungete il seguente codice alla nuova funzione, "
@@ -10189,9 +10193,9 @@ msgid ""
 "automatically when the game launches. Press the \"Play\" button and select "
 "``Main.tscn`` when prompted."
 msgstr ""
-"Assegniamo anche ``Main``` come nostra \"Scena principale\" - quella che "
+"Assegniamo anche ``Main`` come nostra \"Scena principale\" - quella che "
 "viene eseguita automaticamente al lancio del gioco. Premi il pulsante "
-"\"Play\" e seleziona ``Main.tscn``` quando richiesto."
+"\"Play\" e seleziona ``Main.tscn`` quando richiesto."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:439
 msgid ""
@@ -10273,10 +10277,10 @@ msgid ""
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
-"Il nodo di base per gli elementi dell'interfaccia utente è :ref:'Controllo "
-"<class_Control>'. Per creare l'interfaccia utente, useremo due tipi di :"
-"ref:'Controlla <class_Control>' nodi: :ref:'Label <class_Label>' e :"
-"ref:'Button <class_Button>'."
+"Il nodo di base per gli elementi dell'interfaccia utente è :ref:'Control "
+"<class_Control>'. Per creare l'interfaccia utente, useremo due tipi di nodi :"
+"ref:'Control <class_Control>': :ref:'Label <class_Label>' e :ref:'Button "
+"<class_Button>'."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:27
 msgid "Create the following as children of the ``HUD`` node:"
@@ -10603,8 +10607,8 @@ msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
-"La funzione ``call_group()``` chiama la funzione cosi denominata su ogni "
-"nodo di un gruppo - cosi facendo diciamo ad ogni mob di cancellarsi."
+"La funzione ``call_group()`` chiama la funzione cosi denominata su ogni nodo "
+"di un gruppo - cosi facendo diciamo ad ogni mob di cancellarsi."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:436
 msgid ""
@@ -26178,8 +26182,8 @@ msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
-"Questo è un semplice sistema che richiede poco tempo per venire usato. "
-"Inoltre costringe a gestire le risorse nel modo più corretto."
+"Questo è un semplice sistema che richiede poco tempo per abituarsi. Inoltre "
+"costringe a gestire le risorse nel modo più corretto."
 
 #: ../../docs/tutorials/assets_pipeline/import_process.rst:112
 msgid ""
@@ -48065,9 +48069,10 @@ msgid ""
 "projects/tree/master/3d/navmesh>`__. It can also be found in the asset "
 "library."
 msgstr ""
-"Per vedere un progetto d'esempio, vedi la demo di test del sistema "
-"operativo: https://github.com/godotengine/godot-demo-projects/tree/master/"
-"misc/os_test"
+"C'è un progetto ufficiale di esempio su come usare la navigazione 3D. Puoi "
+"trovare il repository ` qui <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/navmesh>`__. Si può anche trovare nella libreria "
+"delle risorse."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 #, fuzzy
@@ -50141,7 +50146,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:35
 #, fuzzy
 msgid "Screenshot of the Godot profiler"
-msgstr "Utilizzo del profiler Godot."
+msgstr "Screenshot del profiler di Godot"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:35
 msgid "Results of a profile of one of the demo projects."
@@ -55951,7 +55956,7 @@ msgid ""
 "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, "
 "``raw``, ``string_input``"
 msgstr ""
-"I valori supportati per ``KeyType`` sono ``string``, ``integer```, "
+"I valori supportati per ``KeyType`` sono ``string``, ``integer``, "
 "``boolean``, ``raw``, ``string_input``"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
@@ -64399,8 +64404,9 @@ msgstr ""
 "autocompletamento:"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:None
+#, fuzzy
 msgid "code completion options for dynamic"
-msgstr ""
+msgstr "opzioni di completamento del codice per la tipizzazione dinamica"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:65
 msgid ""
@@ -64413,8 +64419,9 @@ msgstr ""
 "esplicitamente, otterrai tutti i metodi pubblici e le variabili del nodo:"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:None
+#, fuzzy
 msgid "code completion options for typed"
-msgstr ""
+msgstr "opzioni di completamento del codice tipizzato"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:72
 msgid ""
@@ -65053,12 +65060,11 @@ msgid "``.``"
 msgstr "``.``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:140
-#, fuzzy
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
-"Prima di ``f```, imposta **precisione** a 0 cifre decimali. Può essere "
+"Prima di ``f``, imposta **precisione** a 0 cifre decimali. Può essere "
 "seguito da numeri per cambiare. Imbottito con zeri."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:143
@@ -65091,7 +65097,7 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
-"I caratteri ``.`` (*punto*), ``*`` (*asterisco*), ``-``` (*segno meno*) e le "
+"I caratteri ``.`` (*punto*), ``*`` (*asterisco*), ``-`` (*segno meno*) e le "
 "cifre (``0``-`9``) sono usati per il margine. Questo permette di stampare "
 "più valori allineati verticalmente come se fossero in una colonna, a "
 "condizione che venga usato un font a larghezza fissa."
@@ -65467,8 +65473,9 @@ msgid "There are three main ways to add functions in a script:"
 msgstr "Ci sono tre modi principali per aggiungere funzioni in uno script:"
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:56
+#, fuzzy
 msgid "Overriding a virtual function"
-msgstr ""
+msgstr "Sovrascrivere una funzione virtuale"
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -65493,16 +65500,19 @@ msgid "Finally, a canvas appears for this function, showing the override:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:76
+#, fuzzy
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
-"Poiché alcune funzioni si aspettano che restituiate un valore, aggiungeranno "
-"anche un nodo di ritorno dove si suppone che tale valore sia fornito:"
+"Poiché alcune funzioni si aspettano che tu restituisca un valore, "
+"aggiungeranno anche un nodo di ritorno in cui dovrebbe essere fornito tale "
+"valore:"
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:83
+#, fuzzy
 msgid "Connecting a signal to a function"
-msgstr ""
+msgstr "Collegare un segnale a una funzione"
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -65532,8 +65542,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:107
+#, fuzzy
 msgid "Creating a function manually"
-msgstr ""
+msgstr "Creare una funzione manualmente"
 
 #: ../../docs/tutorials/scripting/visual_script/getting_started.rst:109
 msgid ""
@@ -65729,7 +65740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
-msgstr ""
+msgstr "Accedere alle proprietà del nodo della scena"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -66282,8 +66293,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:503
+#, fuzzy
 msgid "Call API functions:"
-msgstr ""
+msgstr "Chiama le funzioni API:"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
@@ -66519,12 +66531,14 @@ msgid "In Rider:"
 msgstr "In Rider:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:107
+#, fuzzy
 msgid "Set **MSBuild version** to **.NET Core**."
-msgstr ""
+msgstr "Imposta **Versione MSBuild** su **.NET Core**."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:108
+#, fuzzy
 msgid "Install the **Godot support** plugin."
-msgstr ""
+msgstr "Installa il plugin **Supporto Godot**."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:113
 msgid ""
@@ -72690,13 +72704,13 @@ msgid ""
 msgstr ""
 "L'uso standard della funzione fragment è quello di impostare le proprietà "
 "del materiale che saranno usate per calcolare l'illuminazione. Per esempio, "
-"si impostano i valori per ```ROUGHNESS``, ``RIM``, o ``TRANSMISSION``` che "
+"si impostano i valori per ``ROUGHNESS``, ``RIM``, o ``TRANSMISSION`` che "
 "indicano alla funzione luce come le luci rispondono a quel frammento. Questo "
 "rende possibile il controllo di una complessa pipeline di shading senza che "
 "l'utente debba scrivere molto codice. Se non avete bisogno di questa "
 "funzionalità integrata, potete ignorarla e scrivere la vostra funzione di "
 "elaborazione delle luci e Godot la ottimizzerà. Per esempio, se non si "
-"scrive un valore su ```RIM``, Godot non calcolerà l'illuminazione del bordo. "
+"scrive un valore su ``RIM``, Godot non calcolerà l'illuminazione del bordo. "
 "Durante la compilazione, Godot controlla se ``RIM`` viene utilizzato; in "
 "caso contrario, taglia fuori tutto il codice corrispondente. Pertanto, non "
 "si sprecheranno i calcoli sugli effetti che non si usano."
@@ -76617,9 +76631,9 @@ msgstr ""
 "dimensione di 2), mentre le coordinate della texture sono all'interno di "
 "[0,1], quindi per normalizzare dividiamo per la dimensione del PlaneMesh 2.0 "
 "e aggiungiamo 0.5. ``texture()`` restituisce un ``vec4`` dei canali ``r, g, "
-"b, a``` nella posizione. Poiché la noise texture è in scala di grigi, tutti "
-"i valori sono gli stessi, quindi possiamo usare uno qualsiasi dei canali "
-"come altezza. In questo caso useremo il canale ``r``, o ``x``."
+"b, a`` nella posizione. Poiché la noise texture è in scala di grigi, tutti i "
+"valori sono gli stessi, quindi possiamo usare uno qualsiasi dei canali come "
+"altezza. In questo caso useremo il canale ``r``, o ``x``."
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:207
 msgid ""
@@ -81307,9 +81321,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/xr_primer.rst:127
-#, fuzzy
 msgid "See :ref:`doc_openxr_introduction`."
-msgstr ":ref:`doc_interpolation`"
+msgstr "Vedi :ref:`doc_openxr_introduzione`."
 
 #: ../../docs/tutorials/vr/xr_primer.rst:129
 #, fuzzy
@@ -81345,7 +81358,9 @@ msgstr "`Demo Godot Oculus <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgid ""
 "`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
 "OpenHMD, an open source API and drivers for headsets."
-msgstr "`Demo Godot Oculus <https://github.com/GodotVR/godot-oculus-demo>`_."
+msgstr ""
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supporta "
+"OpenHMD, un'API open source e driver per cuffie."
 
 #: ../../docs/tutorials/vr/xr_primer.rst:146
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
@@ -81466,7 +81481,7 @@ msgstr "Plugin dell'editor"
 #: ../../docs/tutorials/vr/openxr/index.rst:6
 #, fuzzy
 msgid "Welcome to the Godot OpenXR documentation!"
-msgstr "Cos'è la documentazione di Godot"
+msgstr "Benvenuto nella documentazione di Godot OpenXR!"
 
 #: ../../docs/tutorials/vr/openxr/index.rst:11
 #, fuzzy
@@ -81732,7 +81747,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/openxr/deploy_on_quest.rst:28
 #, fuzzy
 msgid "Setting up the export template"
-msgstr "Preparazione del progetto"
+msgstr "Impostare il modello di esportazione"
 
 #: ../../docs/tutorials/vr/openxr/deploy_on_quest.rst:30
 msgid ""
@@ -81850,7 +81865,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:42
 #, fuzzy
 msgid "There are two properties here:"
-msgstr "Ci sono 6 tipi di modelli:"
+msgstr "Ci sono due proprietà qui:"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:44
 msgid ""
@@ -97145,20 +97160,29 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:505
+#, fuzzy
 msgid ""
 "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
 "T``` on macOS)."
 msgstr ""
+"Premi ``:kbd:`Ctrl + Alt + T`` per alternare il (``:kbd:`Cmd + Alt + T`` su "
+"macOS)."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:506
+#, fuzzy
 msgid ""
 "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
 "editor."
 msgstr ""
+"Premi ``:kbd:`Spazio``` e tieni premuto il pulsante sinistro del mouse per "
+"eseguire una panoramica nell'editor 2D."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:507
+#, fuzzy
 msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
 msgstr ""
+"Premi``:kbd:`Shift + Freccia Su``` per spostare il nodo verso l'alto di 8 "
+"pixel."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:510
 msgid "Image contribution guidelines"
@@ -98974,7 +98998,7 @@ msgid ""
 msgstr ""
 "Puoi anche testare le modifiche ai riferimenti di classe allo stesso modo "
 "rinominando il file PO in modo simile e mettendolo nella cartella ``doc/"
-"translations/``` (`GitHub <https://github.com/godotengine/godot/tree/master/"
+"translations/`` (`GitHub <https://github.com/godotengine/godot/tree/master/"
 "doc/translations>`__)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:371
@@ -99063,10 +99087,9 @@ msgstr ""
 "Dai un nome alla tua immagine localizzata come quella originale, ma con il "
 "codice della lingua aggiunto prima dell'estensione, ad esempio "
 "``project_manager_first_open.png`` diventerebbe ``project_manager_first_open."
-"fr.png`` per la localizzazione francese."
+"it.png`` per la localizzazione italiana."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:410
-#, fuzzy
 msgid ""
 "Finally, on godot-docs-l10n_, recreate the same folder structure as for the "
 "original image in the ``images`` subfolder (`GitHub <https://github.com/"
@@ -99079,7 +99102,7 @@ msgstr ""
 "github.com/godotengine/godot-docs-l10n/tree/master/images>`_), e mettici la "
 "tua immagine tradotta. Nel nostro esempio, il risultato finale dovrebbe "
 "essere ``images/getting_started/step_by_step/img/project_manager_first_open."
-"fr.png``."
+"it.png``."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:416
 #, fuzzy

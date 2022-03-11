@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# acualesa0 <kidmnsiaa@interia.pl>, 2022.
 # Adam Jagoda <kontakt@lukasz.xyz>, 2020.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018-2019, 2021.
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
@@ -30,7 +31,7 @@
 # Jarek Karpiel <jarek.karpiel@gmail.com>, 2020-2021.
 # JHopen <jakub.hopen@gmail.com>, 2021.
 # Kamil Brzezinski <brzezinski.kamil@gmail.com>, 2021.
-# Katarzyna Twardowska <katarina.twardowska@gmail.com>, 2020.
+# Katarzyna Twardowska <katarina.twardowska@gmail.com>, 2020, 2022.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # Kolunio <kolunio15wie@gmail.com>, 2020.
 # Krzysztof Staroń <kisiel3141@gmail.com>, 2021-2022.
@@ -84,8 +85,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-02-24 15:04+0100\n"
-"PO-Revision-Date: 2022-02-20 11:48+0000\n"
-"Last-Translator: lewando54 <lewando54@gmail.com>\n"
+"PO-Revision-Date: 2022-03-07 21:59+0000\n"
+"Last-Translator: Katarzyna Twardowska <katarina.twardowska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -94,7 +95,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -252,9 +253,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Format tłumaczenia"
+msgstr "Status tłumaczenia"
 
 #: ../../docs/index.rst:63
 msgid ""
@@ -3048,7 +3048,7 @@ msgstr "Wyjście mono, stereo, 5.1 i 7.1."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "Niepozycyjny i pozycyjny playback w 2D i 3D."
 
 #: ../../docs/about/list_of_features.rst:360
 msgid "Optional Doppler effect in 2D and 3D."
@@ -3063,7 +3063,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:364
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
-msgstr ""
+msgstr "Słuchacz3D węzła by słuchać z innej pozycji niż kamera w 3D."
 
 #: ../../docs/about/list_of_features.rst:365
 msgid ""
@@ -3077,11 +3077,11 @@ msgstr "Wejście MIDI."
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "Brak wsparcia z wyniku MIDI ,jeszcze."
 
 #: ../../docs/about/list_of_features.rst:370
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**używane API:**"
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "*Windows:* WASAPI."
@@ -3121,7 +3121,7 @@ msgstr "WAV z opcjonalną kompresją IMA-ADPCM."
 
 #: ../../docs/about/list_of_features.rst:387
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:388
 msgid "MP3."
@@ -3154,6 +3154,7 @@ msgstr "Collada (.dae)."
 #: ../../docs/about/list_of_features.rst:397
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
+"Wavefront OBJ (tylko statyczne sceny, mogą być ładowane bezpośrednio w mesh)."
 
 #: ../../docs/about/list_of_features.rst:400
 #: ../../docs/tutorials/rendering/viewports.rst:38
@@ -3175,7 +3176,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "Użyj takiego samego codu ,by wspierać oba: klawiaturę i gamypad'y."
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "Keyboard input."
@@ -3186,6 +3187,8 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Klucze mogą być mapowane w modzie \"fizycznym\" ,by być niezależne od układu "
+"klawiatury."
 
 #: ../../docs/about/list_of_features.rst:411
 msgid "Mouse input."
@@ -26053,7 +26056,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:170
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:172
 msgid ""
@@ -36440,9 +36443,8 @@ msgid "scenes"
 msgstr "Sceny"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:44
-#, fuzzy
 msgid "shaders"
-msgstr "Typy Shaderów"
+msgstr "shadery"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:45
 msgid "models"
@@ -63000,7 +63002,7 @@ msgstr "Staje się:"
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "Dopóki"
+msgstr "While"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -66085,7 +66087,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr "Generuj"
+msgstr "Yield"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
