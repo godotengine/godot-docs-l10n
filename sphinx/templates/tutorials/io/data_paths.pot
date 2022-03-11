@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,100 +57,122 @@ msgid "To store persistent data files, like the player's save or settings, you w
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:38
-msgid "The ``user://`` prefix points to a different directory on the user's device. On mobile and consoles, this path is unique to the project. On desktop, the engine stores user files in ``~/.local/share/godot/app_userdata/Name`` on macOS and Linux, and ``%APPDATA%/Name`` on Windows. ``Name`` is based on the application name defined in the Project Settings, but you can override it on a per-platform basis using :ref:`feature tags <doc_feature_tags>`."
+msgid "The ``user://`` prefix points to a different directory on the user's device. On mobile and consoles, this path is unique to the project. On desktop, the engine stores user files in ``~/.local/share/godot/app_userdata/[project_name]`` on Linux, ``~/Library/Application Support/Godot/app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is based on the application name defined in the Project Settings, but you can override it on a per-platform basis using :ref:`feature tags <doc_feature_tags>`."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:45
+#: ../../docs/tutorials/io/data_paths.rst:46
 msgid "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on the device via IndexedDB. (Interaction with the main filesystem can still be performed through the :ref:`JavaScript <class_JavaScript>` singleton.)"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:50
+#: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Editor data paths"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:52
+#: ../../docs/tutorials/io/data_paths.rst:53
 msgid "The editor uses different paths for user data, user settings, and cache, depending on the platform. By default, these paths are:"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:56
+#: ../../docs/tutorials/io/data_paths.rst:57
 msgid "Type"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:56
+#: ../../docs/tutorials/io/data_paths.rst:57
 msgid "Location"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:58
+#: ../../docs/tutorials/io/data_paths.rst:59
 msgid "User data"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:58
-#: ../../docs/tutorials/io/data_paths.rst:62
-msgid "Windows: ``%APPDATA%\\Godot\\``"
-msgstr ""
-
 #: ../../docs/tutorials/io/data_paths.rst:59
-#: ../../docs/tutorials/io/data_paths.rst:63
-msgid "macOS: ``~/Library/Application Support/Godot/``"
+msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:60
-msgid "Linux: ``~/.local/share/godot/``"
+msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:62
-msgid "User settings"
+#: ../../docs/tutorials/io/data_paths.rst:61
+msgid "Linux: ``~/.local/share/godot/[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:63
+msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:63
+msgid "Windows: ``%APPDATA%\\[project_name]``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:64
-msgid "Linux: ``~/.config/godot/``"
+msgid "macOS: ``~/Library/Application Support/[project_name]``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:66
-msgid "Cache"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:66
-msgid "Windows: ``%TEMP%\\Godot\\``"
+#: ../../docs/tutorials/io/data_paths.rst:65
+msgid "Linux: ``~/.local/share/[project_name]``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:67
-msgid "macOS: ``~/Library/Caches/Godot/``"
+msgid "User settings"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:67
+msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:68
-msgid "Linux: ``~/.cache/godot/``"
+msgid "macOS: ``~/Library/Application Support/Godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:69
+msgid "Linux: ``~/.config/godot/``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:71
-msgid "**User data** contains export templates and project-specific data."
+msgid "Cache"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:71
+msgid "Windows: ``%TEMP%\\Godot\\``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:72
-msgid "**User settings** contains editor settings, text editor themes, script templates, etc."
+msgid "macOS: ``~/Library/Caches/Godot/``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:74
-msgid "**Cache** contains temporary data. It can safely be removed when Godot is closed."
+#: ../../docs/tutorials/io/data_paths.rst:73
+msgid "Linux: ``~/.cache/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:76
+msgid "**User data** contains export templates and project-specific data."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:77
-msgid "Godot complies with the `XDG Base Directory Specification <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__ on all platforms. You can override environment variables following the specification to change the editor and project data paths."
+msgid "**User settings** contains editor settings, text editor themes, script templates, etc."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:79
+msgid "**Cache** contains temporary data. It can safely be removed when Godot is closed."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:82
+msgid "Godot complies with the `XDG Base Directory Specification <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__ on all platforms. You can override environment variables following the specification to change the editor and project data paths."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:87
 msgid "If you use `Godot packaged as a Flatpak <https://flathub.org/apps/details/org.godotengine.Godot>`__, the editor data paths will be located in subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:90
+#: ../../docs/tutorials/io/data_paths.rst:95
 msgid "Self-contained mode"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:92
+#: ../../docs/tutorials/io/data_paths.rst:97
 msgid "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as the editor binary, Godot will enable *self-contained mode*. This mode makes Godot write all user data to a directory named ``editor_data/`` in the same directory as the editor binary. You can use it to create a portable installation of the editor."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:98
+#: ../../docs/tutorials/io/data_paths.rst:103
 msgid "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ uses self-contained mode by default."
 msgstr ""
 

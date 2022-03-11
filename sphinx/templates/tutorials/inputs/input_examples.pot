@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,55 +117,63 @@ msgid "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:213
-#: ../../docs/tutorials/inputs/input_examples.rst:251
+#: ../../docs/tutorials/inputs/input_examples.rst:264
 msgid "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of scancode constants."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:217
+#: ../../docs/tutorials/inputs/input_examples.rst:218
+msgid "Due to *keyboard ghosting*, not all key inputs may be registered at a given time if you press too many keys at once. Due to their location on the keyboard, certain keys are more prone to ghosting than others. Some keyboards feature antighosting at a hardware level, but this feature is generally not present on low-end keyboards and laptop keyboards."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:224
+msgid "As a result, it's recommended to use a default keyboard layout that is designed to work well on a keyboard without antighosting. See `this Gamedev Stack Exchange question <https://gamedev.stackexchange.com/a/109002>`__ for more information."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:230
 msgid "Keyboard modifiers"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:219
+#: ../../docs/tutorials/inputs/input_examples.rst:232
 msgid "Modifier properties are inherited from :ref:`InputEventWithModifiers <class_InputEventWithModifiers>`. This allows you to check for modifier combinations using boolean properties. Let's imagine you want one thing to happen when the :kbd:`T` is pressed, but something different when it's :kbd:`Shift + T`:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:255
+#: ../../docs/tutorials/inputs/input_examples.rst:268
 msgid "Mouse events"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:257
+#: ../../docs/tutorials/inputs/input_examples.rst:270
 msgid "Mouse events stem from the :ref:`InputEventMouse <class_InputEventMouse>` class, and are separated into two types: :ref:`InputEventMouseButton <class_InputEventMouseButton>` and :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`. Note that this means that all mouse events will contain a ``position`` property."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:263
+#: ../../docs/tutorials/inputs/input_examples.rst:276
 msgid "Mouse buttons"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:265
+#: ../../docs/tutorials/inputs/input_examples.rst:278
 msgid "Capturing mouse buttons is very similar to handling key events. :ref:`@GlobalScope_ButtonList <enum_@GlobalScope_ButtonList>` contains a list of ``BUTTON_*`` constants for each possible button, which will be reported in the event's ``button_index`` property. Note that the scrollwheel also counts as a button - two buttons, to be precise, with both ``BUTTON_WHEEL_UP`` and ``BUTTON_WHEEL_DOWN`` being separate events."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:300
+#: ../../docs/tutorials/inputs/input_examples.rst:313
 msgid "Mouse motion"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:302
+#: ../../docs/tutorials/inputs/input_examples.rst:315
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` events occur whenever the mouse moves. You can find the move's distance with the ``relative`` property."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:306
+#: ../../docs/tutorials/inputs/input_examples.rst:319
 msgid "Here's an example using mouse events to drag-and-drop a :ref:`Sprite <class_Sprite>` node:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:379
+#: ../../docs/tutorials/inputs/input_examples.rst:392
 msgid "Touch events"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:381
+#: ../../docs/tutorials/inputs/input_examples.rst:394
 msgid "If you are using a touchscreen device, you can generate touch events. :ref:`InputEventScreenTouch <class_InputEventScreenTouch>` is equivalent to a mouse click event, and :ref:`InputEventScreenDrag <class_InputEventScreenDrag>` works much the same as mouse motion."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/input_examples.rst:386
+#: ../../docs/tutorials/inputs/input_examples.rst:399
 msgid "To test your touch events on a non-touchscreen device, open Project Settings and go to the \"Input Devices/Pointing\" section. Enable \"Emulate Touch From Mouse\" and your project will interpret mouse clicks and motion as touch events."
 msgstr ""
 

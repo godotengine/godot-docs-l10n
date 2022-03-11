@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,171 +77,175 @@ msgid "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in 
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:39
-msgid "Under \"Theme Overrides/Fonts/Font\", choose \"New DynamicFont\""
+msgid "Under **Theme overrides > Fonts** click on the empty box and select \"New DynamicFont\""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:43
-msgid "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+msgid "Click on the \"DynamicFont\" you added, and under **Font > FontData**, choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:48
-msgid "Once you've done this on the ``ScoreLabel``, you can click the down arrow next to the Font property and choose \"Copy\", then \"Paste\" it in the same place on the other two Control nodes. Set \"Size\" property of the \"DynamicFont\" under \"Settings/Size\". A setting of ``64`` works well."
+msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:55
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:52
+msgid "Once you've done this on the ``ScoreLabel``, you can click the down arrow next to the Font property and choose \"Copy\", then \"Paste\" it in the same place on the other two Control nodes."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:56
 msgid "**Anchors and Margins:** ``Control`` nodes have a position and size, but they also have anchors and margins. Anchors define the origin - the reference point for the edges of the node. Margins update automatically when you move or resize a control node. They represent the distance from the control node's edges to its anchor."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:61
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:62
 msgid "Arrange the nodes as shown below. Click the \"Layout\" button to set a Control node's layout:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:66
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:67
 msgid "You can drag the nodes to place them manually, or for more precise placement, use the following settings:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:70
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:71
 msgid "ScoreLabel"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:72
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:73
 msgid "*Layout* : \"Top Wide\""
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:73
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:74
 msgid "*Text* : ``0``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:74
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:81
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:75
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:82
 msgid "*Align* : \"Center\""
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:77
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:79
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:81
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:82
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:83
 msgid "*Autowrap* : \"On\""
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:85
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:86
 msgid "StartButton"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:87
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:88
 msgid "*Text* : ``Start``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:88
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:89
 msgid "*Layout* : \"Center Bottom\""
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:89
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:90
 msgid "*Margin* :"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:91
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:92
 msgid "Top: ``-200``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:92
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:93
 msgid "Bottom: ``-100``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:94
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:95
 msgid "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One Shot`` property to \"On\"."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:97
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:98
 msgid "Now add this script to ``HUD``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:157
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:158
 msgid "The ``start_game`` signal tells the ``Main`` node that the button has been pressed."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:204
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:205
 msgid "This function is called when we want to display a message temporarily, such as \"Get Ready\"."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:255
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:256
 msgid "This function is called when the player loses. It will show \"Game Over\" for 2 seconds, then return to the title screen and, after a brief pause, show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:259
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:260
 msgid "When you need to pause for a brief time, an alternative to using a Timer node is to use the SceneTree's ``create_timer()`` function. This can be very useful to add delays such as in the above code, where we want to wait some time before showing the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:284
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:285
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:286
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:287
 msgid "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:332
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:333
 msgid "Connecting HUD to Main"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:334
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:335
 msgid "Now that we're done creating the ``HUD`` scene, go back to ``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:340
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:341
 msgid "Now we need to connect the ``HUD`` functionality to our ``Main`` script. This requires a few additions to the ``Main`` scene:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:343
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:344
 msgid "In the Node tab, connect the HUD's ``start_game`` signal to the ``new_game()`` function of the Main node by typing \"new_game\" in the \"Receiver Method\" in the \"Connect a Signal\" window. Verify that the green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:348
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:349
 msgid "In ``new_game()``, update the score display and show the \"Get Ready\" message:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:367
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:368
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:382
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:383
 msgid "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in sync with the changing score:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:398
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:399
 msgid "Now you're ready to play! Click the \"Play the Project\" button. You will be asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:402
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:403
 msgid "Removing old creeps"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:404
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:405
 msgid "If you play until \"Game Over\" and then start a new game right away, the creeps from the previous game may still be on the screen. It would be better if they all disappeared at the start of a new game. We just need a way to tell *all* the mobs to remove themselves. We can do this with the \"group\" feature."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:409
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:410
 msgid "In the ``Mob`` scene, select the root node and click the \"Node\" tab next to the Inspector (the same place where you find the node's signals). Next to \"Signals\", click \"Groups\" and you can type a new group name and click \"Add\"."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:415
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:416
 msgid "Now all mobs will be in the \"mobs\" group. We can then add the following line to the ``new_game()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:433
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:434
 msgid "The ``call_group()`` function calls the named function on every node in a group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:436
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:437
 msgid "The game's mostly done at this point. In the next and last part, we'll polish it a bit by adding a background, looping music, and some keyboard shortcuts."
 msgstr ""
 

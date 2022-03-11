@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,46 +77,50 @@ msgid "Use ``String`` instead of ``std::string``."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:59
-msgid "Use ``Vector`` instead of ``std::vector``. In some cases, ``List`` or ``LocalVector`` can be used as an alternative (ask core developers first)."
+msgid "Use ``Vector`` instead of ``std::vector``. In some cases, ``LocalVector`` can be used as an alternative (ask core developers first)."
 msgstr ""
 
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:61
 msgid "Use ``Array`` instead of ``std::array``."
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:64
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:65
+msgid "Godot also has a List datatype (which is a linked list). While List is already used in the codebase, it typically performs worse than other datatypes like Vector and Array. Therefore, List should be avoided in new code unless necessary."
+msgstr ""
+
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:70
 msgid "``auto`` keyword"
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:66
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:72
 msgid "Please don't use the ``auto`` keyword for type inference. While it can avoid repetition, it can also lead to confusing code:"
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:77
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:83
 msgid "Keep in mind hover documentation often isn't readily available for pull request reviewers. Most of the time, reviewers will use GitHub's online viewer to review pull requests."
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:81
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:87
 msgid "We chose to forbid ``auto`` instead of allowing it on a case-by-case basis to avoid having to decide on difficult edge cases. Thank you for your understanding."
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:85
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:91
 msgid "Lambdas"
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:87
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:93
 msgid "Lambdas should be used conservatively when they make code effectively faster or simpler, and do not impede readability. Please ask before using lambdas in a pull request."
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:92
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:98
 msgid "``#pragma once`` directive"
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:94
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:100
 msgid "To follow the existing style, please use standard ``#ifdef``-based include guards instead of ``#pragma once`` in new files."
 msgstr ""
 
-#: ../../docs/community/contributing/cpp_usage_guidelines.rst:99
+#: ../../docs/community/contributing/cpp_usage_guidelines.rst:105
 msgid "See :ref:`doc_code_style_guidelines_header_includes` for guidelines on sorting includes in C++ and Objective-C files."
 msgstr ""
 
