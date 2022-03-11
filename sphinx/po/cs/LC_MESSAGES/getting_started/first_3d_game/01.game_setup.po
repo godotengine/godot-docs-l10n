@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,9 +40,8 @@ msgstr ""
 msgid "|image1|"
 msgstr "| image1 |"
 
-#, fuzzy
 msgid "image1"
-msgstr "| image1 |"
+msgstr "image1"
 
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
@@ -54,9 +53,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "| image2 |"
 
-#, fuzzy
 msgid "image2"
-msgstr "| image2 |"
+msgstr "image2"
 
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr "Kliknutím na tlačítko *Import &; Edit* otevřete projekt v editoru."
@@ -64,9 +62,8 @@ msgstr "Kliknutím na tlačítko *Import &; Edit* otevřete projekt v editoru."
 msgid "|image3|"
 msgstr "| image3 |"
 
-#, fuzzy
 msgid "image3"
-msgstr "| image3 |"
+msgstr "image3"
 
 msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
@@ -76,9 +73,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "| image4 |"
 
-#, fuzzy
 msgid "image4"
-msgstr "| image4 |"
+msgstr "image4"
 
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
@@ -93,19 +89,19 @@ msgid ""
 "*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
 "top-left and double-click on *Node*. Name the node \"Main\". Alternatively, "
 "to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
-"on MacOS)."
+"on macOS)."
 msgstr ""
 
 msgid "|image5|"
 msgstr "| image5 |"
 
-#, fuzzy
 msgid "image5"
-msgstr "| image5 |"
+msgstr "image5"
 
+#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
-"on MacOS)."
+"on macOS)."
 msgstr ""
 "Uložte scénu jako ``Main.tscn`` stisknutím :kbd:`Ctrl + s` (:kbd:`Cmd + s` v "
 "systému MacOS)."
@@ -121,9 +117,8 @@ msgstr ""
 msgid "|image6|"
 msgstr ""
 
-#, fuzzy
 msgid "image6"
-msgstr "| image16 |"
+msgstr "image6"
 
 msgid ""
 "A warning sign next to the *CollisionShape* appears because we haven't "
@@ -134,9 +129,8 @@ msgstr ""
 msgid "|image7|"
 msgstr ""
 
-#, fuzzy
 msgid "image7"
-msgstr "| image17 |"
+msgstr "image7"
 
 msgid ""
 "To create a shape, with the *CollisionShape* selected, head to the "
@@ -147,9 +141,8 @@ msgstr ""
 msgid "|image8|"
 msgstr ""
 
-#, fuzzy
 msgid "image8"
-msgstr "| image18 |"
+msgstr "image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
@@ -167,9 +160,8 @@ msgstr ""
 msgid "|image9|"
 msgstr ""
 
-#, fuzzy
 msgid "image9"
-msgstr "| image19|"
+msgstr "image9"
 
 msgid ""
 "In 3D, translation and size units are in meters. The box's total size is "
@@ -187,9 +179,8 @@ msgstr ""
 msgid "|image10|"
 msgstr ""
 
-#, fuzzy
 msgid "image10"
-msgstr "| image1 |"
+msgstr "image10"
 
 msgid ""
 "In the *Inspector*, click on the field next to *Mesh* and create a "
@@ -199,9 +190,8 @@ msgstr ""
 msgid "|image11|"
 msgstr ""
 
-#, fuzzy
 msgid "image11"
-msgstr "| image1 |"
+msgstr "image11"
 
 msgid ""
 "Once again, it's too small by default. Click the cube icon to expand the "
@@ -213,9 +203,8 @@ msgstr ""
 msgid "|image12|"
 msgstr ""
 
-#, fuzzy
 msgid "image12"
-msgstr "| image1 |"
+msgstr "image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
@@ -225,16 +214,15 @@ msgstr ""
 msgid ""
 "We're going to move the ground down so we can see the floor grid. Select the "
 "*Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:"
-"`Cmd` on MacOS), and click and drag down on the Y axis. It's the green arrow "
+"`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
 "in the move gizmo."
 msgstr ""
 
 msgid "|image13|"
 msgstr ""
 
-#, fuzzy
 msgid "image13"
-msgstr "| image1 |"
+msgstr "image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
@@ -244,9 +232,8 @@ msgstr ""
 msgid "|image14|"
 msgstr ""
 
-#, fuzzy
 msgid "image14"
-msgstr "| image1 |"
+msgstr "image14"
 
 msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
@@ -256,9 +243,8 @@ msgstr ""
 msgid "|image15|"
 msgstr "| image15 |"
 
-#, fuzzy
 msgid "image15"
-msgstr "| image15 |"
+msgstr "image15"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
@@ -280,9 +266,8 @@ msgstr ""
 msgid "|image16|"
 msgstr "| image16 |"
 
-#, fuzzy
 msgid "image16"
-msgstr "| image16 |"
+msgstr "image16"
 
 msgid "At this point, your project should look like this."
 msgstr "V tomto okamžiku by váš projekt měl vypadat takto."
@@ -290,15 +275,13 @@ msgstr "V tomto okamžiku by váš projekt měl vypadat takto."
 msgid "|image17|"
 msgstr "| image17 |"
 
-#, fuzzy
 msgid "image17"
-msgstr "| image17 |"
+msgstr "image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "
 "scene and base movement."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formát překladu"
+msgstr "Stav překladu"

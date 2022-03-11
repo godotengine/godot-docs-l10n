@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,11 +202,10 @@ msgstr ""
 "et inconvénients (|bon| = Meilleur, |mauvais| = Pire) :"
 
 msgid "good"
-msgstr ""
+msgstr "bien"
 
-#, fuzzy
 msgid "bad"
-msgstr "et"
+msgstr "bad"
 
 msgid "Uncompressed"
 msgstr "Non compressé"
@@ -244,9 +243,8 @@ msgstr "|mauvais| Grand"
 msgid "|regular| Small"
 msgstr "|normal| Petit"
 
-#, fuzzy
 msgid "regular"
-msgstr "|normal| Petit"
+msgstr "regular"
 
 msgid "|good| Very Small"
 msgstr "|bon| Très petit"
@@ -339,11 +337,12 @@ msgstr ""
 "résultante. Vous devrez ajuster les shaders personnalisés qui utilisent la "
 "normal map pour en tenir compte."
 
+#, fuzzy
 msgid ""
-"Godot requires the normal map to use the X+, Y- and Z+ coordinates. In other "
-"words, if you've imported a material made to be used with another engine, "
-"you may have to convert the normal map so its Y axis is flipped. Otherwise, "
-"the normal map direction may appear to be inverted on the Y axis."
+"Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
+"known as OpenGL style. If you've imported a material made to be used with "
+"another engine it may be DirectX style, in which case the normal map needs "
+"to be converted so its Y axis is flipped."
 msgstr ""
 "Godot requiert que la normal map (carte de normales) utilise les coordonnées "
 "X+, Y- et Z+. En d'autres termes, si vous avez importé un matériau conçu "
@@ -562,6 +561,5 @@ msgstr ""
 "l'échelle de l'image SVG. L'échelle par défaut (1.0) fera en sorte que le "
 "SVG importé corresponde à l'échelle de conception originale."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Format de traduction"
+msgstr "État de la traduction"

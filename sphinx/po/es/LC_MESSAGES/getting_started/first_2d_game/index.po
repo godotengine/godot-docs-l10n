@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Tu primer juego"
+msgstr "Tu primer juego 2D"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 2D "
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"En esta serie de tutoriales paso a paso, crearás tu primer juego 2D completo "
+"con Godot. Al final de la serie, tendrás un juego propio simple pero "
+"completo, como la imagen de abajo."
 
 msgid "|image0|"
 msgstr "|imagen0|"
@@ -34,26 +36,21 @@ msgstr "|imagen0|"
 msgid "image0"
 msgstr "|imagen0|"
 
-#, fuzzy
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
 msgstr ""
-"Este tutorial te guiará en la creación de tu primer proyecto en Godot. "
-"Aprenderás cómo funciona el editor, estructurar un proyecto y construir un "
-"juego 2D."
+"Aprenderá cómo funciona el editor Godot, cómo estructurar un proyecto y "
+"construir un juego 2D."
 
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"Este proyecto es una introducción al motor Godot. Se asume que el lector "
-"posee alguna experiencia previa en programación. Si está empezando desde "
-"cero a programar, debería empezar aquí: :ref:`doc_scripting`. Si deseas "
-"utilizar C# en Godot, por favor también lea :ref:`doc_c_sharp` antes de "
-"continuar."
+"Este proyecto es una introducción al motor Godot. Se supone que ya tienes "
+"algo de experiencia en programación. Si eres completamente nuevo en la "
+"programación, debe comenzar aquí: :ref:`doc_scripting`."
 
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
@@ -63,26 +60,23 @@ msgstr ""
 "esquivar los enemigos tanto tiempo como sea posible. Aquí hay una vista "
 "previa del resultado final:"
 
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Aprenderás:"
+msgstr "Aprenderás a:"
 
 msgid "Create a complete 2D game with the Godot editor."
-msgstr ""
+msgstr "Crea un juego 2D completo con el editor de Godot."
 
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "Crear o importar un proyecto"
+msgstr "Estructurar un proyecto de juego sencillo."
 
-#, fuzzy
 msgid "Move the player character and change its sprite."
-msgstr "Mover el jugador a algún lugar en el árbol de escenas."
+msgstr "Mueve el jugador y cambia su sprite."
 
 msgid "Spawn random enemies."
-msgstr ""
+msgstr "Crea enemigos aleatorios."
 
 msgid "Count the score."
-msgstr ""
+msgstr "Cuenta la puntuación."
 
 msgid "And more."
 msgstr "Y más."
@@ -91,19 +85,20 @@ msgid ""
 "You'll find another series where you'll create a similar game but in 3D. We "
 "recommend you to start with this one, though."
 msgstr ""
+"Encontrarás otra serie donde crearás un juego similar pero en 3D. Sin "
+"embargo, le recomendamos que comience con este."
 
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**¿Por qué empezar con 2D?**"
 
-#, fuzzy
 msgid ""
 "3D games are much more complex than 2D ones. It would be best if you stuck "
 "to 2D until you understood the game development process and how to use Godot "
 "well."
 msgstr ""
-"**¿Por qué 2D?** Los juegos 3D son mucho más complejos que los 2D. Debes "
-"permanecer en 2D hasta que hayas adquirido un conocimiento suficiente del "
-"proceso de desarrollo de un videojuego y de cómo utilizar Godot."
+"Los juegos 3D son mucho más complejos que los 2D. Sería mejor si te "
+"mantuvieras en 2D hasta que entendieras el proceso de desarrollo del juego y "
+"cómo usar bien a Godot."
 
 msgid "You can find a completed version of this project at these locations:"
 msgstr ""
@@ -123,33 +118,33 @@ msgid ""
 "This step-by-step tutorial is intended for beginners who followed the "
 "complete :ref:`Getting Started <toc-learn-step_by_step>`."
 msgstr ""
+"Este tutorial paso a paso está destinado a principiantes que siguieron el :"
+"ref:`Getting Started <toc-learn-step_by_step>` completo."
 
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`__."
 msgstr ""
-"Además de esta documentación, tal vez quieras echar un vistazo a varios "
-"`proyectos de demostración <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Si eres un programador experimentado, puedes encontrar el código fuente "
+"completo de la demo aquí: `Proyectos de demostración de Godot <https://"
+"github.com/godotengine/godot-demo-projects>`__."
 
 msgid ""
 "We prepared some game assets you'll need to download so we can jump straight "
 "to the code."
 msgstr ""
+"Preparamos algunos assets del juego que necesitarás descargar para que "
+"podamos pasar directamente al código."
 
 msgid "You can download them by clicking the link below."
-msgstr ""
+msgstr "Puede descargarlos haciendo clic en el siguiente enlace."
 
-#, fuzzy
 msgid ":download:`dodge_assets.zip <files/dodge_assets.zip>`."
-msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
+msgstr ":descargar:`dodge_assets.zip <files/dodge_assets.zip>`."
 
-#, fuzzy
 msgid "Contents"
-msgstr "Prueba de contenido"
+msgstr "Contenido"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato de traducción"
+msgstr "Estado de traducción"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -288,6 +288,49 @@ msgid ""
 msgstr ""
 "雖然我們依然建議正式版本使用 GCC 來建置，因為 GCC 可以配合連結時期最佳化來編"
 "譯，產生的二進位執行檔也更小更快。"
+
+#, fuzzy
+msgid "Using Pyston for faster development"
+msgstr "使用 Clang 與 LLD 來更快速地開發"
+
+msgid ""
+"You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a "
+"JIT-enabled implementation of the Python language (which SCons is written "
+"in). It is currently only compatible with Linux. Pyston can speed up "
+"incremental builds significantly, often by a factor between 1.5× and 2×. "
+"Pyston can be combined with Clang and LLD to get even faster builds."
+msgstr ""
+
+msgid ""
+"Download the `latest portable Pyston release <https://github.com/pyston/"
+"pyston/releases/tag/pyston_2.3.2>`__."
+msgstr ""
+
+msgid ""
+"Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/"
+"opt/pyston/`` (create folders as needed)."
+msgstr ""
+
+msgid ""
+"Use ``cd`` to reach the extracted Pyston folder from a terminal, then run "
+"``./pyston -m pip install scons`` to install SCons within Pyston."
+msgstr ""
+
+msgid ""
+"To make SCons via Pyston easier to run, create a symbolic link of its "
+"wrapper script to a location in your ``PATH`` environment variable::"
+msgstr ""
+
+msgid ""
+"Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
+"arguments>`` to compile Godot."
+msgstr ""
+
+msgid ""
+"If you can't run ``pyston-scons`` after creating the symbolic link, make "
+"sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment "
+"variable."
+msgstr ""
 
 #, fuzzy
 msgid "Translation status"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,8 +79,9 @@ msgstr ""
 msgid "There are three main ways to add functions in a script:"
 msgstr "Ci sono tre modi principali per aggiungere funzioni in uno script:"
 
+#, fuzzy
 msgid "Overriding a virtual function"
-msgstr ""
+msgstr "Sovrascrivere una funzione virtuale"
 
 msgid ""
 "Most types of nodes and other types of objects in Godot contain virtual "
@@ -101,15 +102,18 @@ msgstr ""
 msgid "Finally, a canvas appears for this function, showing the override:"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
-"Poiché alcune funzioni si aspettano che restituiate un valore, aggiungeranno "
-"anche un nodo di ritorno dove si suppone che tale valore sia fornito:"
+"Poiché alcune funzioni si aspettano che tu restituisca un valore, "
+"aggiungeranno anche un nodo di ritorno in cui dovrebbe essere fornito tale "
+"valore:"
 
+#, fuzzy
 msgid "Connecting a signal to a function"
-msgstr ""
+msgstr "Collegare un segnale a una funzione"
 
 msgid ""
 "Nodes in a tree emit signals when something happens. Godot uses signals for "
@@ -134,8 +138,9 @@ msgid ""
 "signal will automatically be connected to it:"
 msgstr ""
 
+#, fuzzy
 msgid "Creating a function manually"
-msgstr ""
+msgstr "Creare una funzione manualmente"
 
 msgid ""
 "The last way to create functions is to do it manually. In general, this is "

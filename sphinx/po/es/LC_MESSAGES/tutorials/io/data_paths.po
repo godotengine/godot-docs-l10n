@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,10 +86,13 @@ msgstr ""
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "On mobile and consoles, this path is unique to the project. On desktop, the "
-"engine stores user files in ``~/.local/share/godot/app_userdata/Name`` on "
-"macOS and Linux, and ``%APPDATA%/Name`` on Windows. ``Name`` is based on the "
-"application name defined in the Project Settings, but you can override it on "
-"a per-platform basis using :ref:`feature tags <doc_feature_tags>`."
+"engine stores user files in ``~/.local/share/godot/app_userdata/"
+"[project_name]`` on Linux, ``~/Library/Application Support/Godot/"
+"app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%"
+"\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is "
+"based on the application name defined in the Project Settings, but you can "
+"override it on a per-platform basis using :ref:`feature tags "
+"<doc_feature_tags>`."
 msgstr ""
 "En algunos dispositivos (por ejemplo, móviles y consolas), esta ruta es "
 "única para el proyecto. En los sistemas operativos de escritorio, el motor "
@@ -125,17 +128,41 @@ msgstr "Localización"
 msgid "User data"
 msgstr "Datos de usuario"
 
+#, fuzzy
+msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
+msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+
+#, fuzzy
+msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
+msgstr "macOS: ``~/Library/Application Support/Godot/``"
+
+#, fuzzy
+msgid "Linux: ``~/.local/share/godot/[project_name]``"
+msgstr "Linux: ``~/.local/share/godot/``"
+
+msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
+msgstr ""
+
+#, fuzzy
+msgid "Windows: ``%APPDATA%\\[project_name]``"
+msgstr "Windows: ``%APPDATA%\\Godot\\``"
+
+#, fuzzy
+msgid "macOS: ``~/Library/Application Support/[project_name]``"
+msgstr "macOS: ``~/Library/Application Support/Godot/``"
+
+#, fuzzy
+msgid "Linux: ``~/.local/share/[project_name]``"
+msgstr "Linux: ``~/.local/share/godot/``"
+
+msgid "User settings"
+msgstr "Ajustes de usuario"
+
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\``"
 
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr "macOS: ``~/Library/Application Support/Godot/``"
-
-msgid "Linux: ``~/.local/share/godot/``"
-msgstr "Linux: ``~/.local/share/godot/``"
-
-msgid "User settings"
-msgstr "Ajustes de usuario"
 
 msgid "Linux: ``~/.config/godot/``"
 msgstr "Linux: ``~/.config/godot/``"
@@ -217,6 +244,5 @@ msgstr ""
 "El `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "utiliza el modo autónomo por defecto."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato de traducción"
+msgstr "Estado de traducción"

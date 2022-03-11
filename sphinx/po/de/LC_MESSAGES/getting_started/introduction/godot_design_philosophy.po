@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,10 @@ msgstr ""
 msgid "Godot's design philosophy"
 msgstr "Godots Design-Philosophie"
 
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
 msgstr ""
-"Jetzt, wo Sie Ihre Hände schmutzig gemacht haben, lassen sie uns über Godots "
-"Design sprechen."
+"Nun, da Sie sich einen Überblick verschafft haben, lassen Sie uns über "
+"Godot's Design sprechen."
 
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
@@ -52,14 +51,13 @@ msgstr ""
 "für Ihr Projekt gut geeignet ist, müssen Sie sie selbst ausprobieren und "
 "deren Design und Einschränkungen verstehen."
 
-#, fuzzy
 msgid ""
 "Please watch `Godot explained in 5 minutes <https://www.youtube.com/watch?"
 "v=KjX5llYZ5eQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"Bitte schauen Sie unter `Discover Godot 3, the Free game engine (englisch) "
-"<https://youtu.be/4v3qge-3CqQ>`_ nach, wenn Sie einen Überblick über die "
-"Funktionen der Engine suchen."
+"Bitte schauen Sie sich `Godot explained in 5 minutes <https://www.youtube."
+"com/watch?v=KjX5llYZ5eQ>`_ an, wenn Sie einen Überblick über die Funktionen "
+"der Engine suchen."
 
 msgid "Object-oriented design and composition"
 msgstr "Objektorientiertes Design und Komposition"
@@ -118,11 +116,9 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "|image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -141,15 +137,15 @@ msgid ""
 "In other words, Godot's nodes do not work like components in some other game "
 "engines."
 msgstr ""
+"Mit anderen Worten, Godot's Nodes funktionieren nicht wie Komponenten in "
+"einigen anderen Spiel-Engines."
 
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "|image1|"
+msgstr "image1"
 
-#, fuzzy
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
@@ -178,9 +174,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
@@ -194,7 +189,6 @@ msgstr ""
 "Sie können auch ein eigenes erstellen, wie z.B. den `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDScript "
 "and VisualScript, along with C#. They're designed for the needs of game "
@@ -206,7 +200,6 @@ msgstr ""
 "Bedürfnisse von Spieleentwicklern und -designern konzipiert und tief in die "
 "Engine und den Editor integriert."
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
@@ -230,9 +223,8 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "|image3|"
+msgstr "image3"
 
 msgid ""
 "*VisualScript is a node-based programming language that integrates well in "
@@ -259,9 +251,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
@@ -367,9 +358,8 @@ msgstr ""
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
@@ -397,6 +387,9 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"Der Editor ist vollständig in C++ geschrieben und wird statisch in die "
+"Binärdatei kompiliert. Das bedeutet, dass Sie ihn nicht wie ein typisches "
+"Projekt importieren können, das eine ``project.godot`` Datei hat."
 
 msgid "Separate 2D and 3D engines"
 msgstr "Separate 2D- und 3D-Engines"
@@ -412,6 +405,5 @@ msgstr ""
 "Sie 2D in 3D und 3D in 2D rendern sowie 2D-Sprites und -Benutzeroberflächen "
 "über Ihre 3D-Welt platzieren."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Übersetzungsformat"
+msgstr "Übersetzungsstatus"

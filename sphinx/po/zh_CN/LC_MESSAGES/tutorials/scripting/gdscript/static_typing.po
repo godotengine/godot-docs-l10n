@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,9 +91,8 @@ msgid ""
 msgstr ""
 "您之前可能已经将节点存储在变量中, 并输入了一个点, 但是没有代码自动补全建议:"
 
-#, fuzzy
 msgid "code completion options for dynamic"
-msgstr "强制完成（可选）"
+msgstr "动态类型的代码补全选项"
 
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
@@ -103,9 +102,8 @@ msgstr ""
 "这是因为动态代码. Godot无法知道您传递给函数的节点或值类型. 但是, 如果您明确地"
 "声明了类型, 则将从该节点类型获取所有公共方法和变量:"
 
-#, fuzzy
 msgid "code completion options for typed"
-msgstr "强制完成（可选）"
+msgstr "静态类型的代码补全选项"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -282,7 +280,7 @@ msgstr ""
 "是, 则行号在脚本编辑器的左侧变为绿色."
 
 msgid "Unsafe vs Safe Line"
-msgstr ""
+msgstr "不安全 vs 安全的行"
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "不安全代码 (第 7 行) vs 安全代码 (第 6 行和第 8 行)"
@@ -411,6 +409,5 @@ msgstr ""
 "结构化的代码, 避免常见错误, 以及创建可伸缩的系统. 将来, 由于即将进行的编译器"
 "优化, 静态类型也将为您带来不错的性能提升."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻译格式"
+msgstr "翻译状态"

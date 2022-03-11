@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,13 +95,20 @@ msgid "Use ``String`` instead of ``std::string``."
 msgstr "Usa ``or`` en lugar de ``||``."
 
 msgid ""
-"Use ``Vector`` instead of ``std::vector``. In some cases, ``List`` or "
-"``LocalVector`` can be used as an alternative (ask core developers first)."
+"Use ``Vector`` instead of ``std::vector``. In some cases, ``LocalVector`` "
+"can be used as an alternative (ask core developers first)."
 msgstr ""
 
 #, fuzzy
 msgid "Use ``Array`` instead of ``std::array``."
 msgstr "Usa ``or`` en lugar de ``||``."
+
+msgid ""
+"Godot also has a List datatype (which is a linked list). While List is "
+"already used in the codebase, it typically performs worse than other "
+"datatypes like Vector and Array. Therefore, List should be avoided in new "
+"code unless necessary."
+msgstr ""
 
 #, fuzzy
 msgid "``auto`` keyword"
@@ -146,6 +153,5 @@ msgid ""
 "sorting includes in C++ and Objective-C files."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato de traducción"
+msgstr "Estado de traducción"

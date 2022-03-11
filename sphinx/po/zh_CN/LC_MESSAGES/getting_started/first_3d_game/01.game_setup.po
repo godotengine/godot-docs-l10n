@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,9 +46,8 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "|image1|"
+msgstr "image1"
 
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
@@ -63,9 +62,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr "点击\\ *导入并编辑*\\ 在编辑器中打开该项目。"
@@ -73,9 +71,8 @@ msgstr "点击\\ *导入并编辑*\\ 在编辑器中打开该项目。"
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "|image3|"
+msgstr "image3"
 
 msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
@@ -87,9 +84,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
@@ -101,12 +97,13 @@ msgstr ""
 msgid "Setting up the playable area"
 msgstr "设置游玩区域"
 
+#, fuzzy
 msgid ""
 "We're going to create our main scene with a plain *Node* as its root. In the "
 "*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
 "top-left and double-click on *Node*. Name the node \"Main\". Alternatively, "
 "to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
-"on MacOS)."
+"on macOS)."
 msgstr ""
 "我们将以普通的 *Node* 作为其根创建主场景。在\\ *场景*\\ 面板中，单击左上角"
 "由“+”图标表示的\\ *添加节点*\\ 按钮，然后双击 *Node*\\ 。将节点命名为“Main”。"
@@ -116,13 +113,13 @@ msgstr ""
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
+#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
-"on MacOS)."
+"on macOS)."
 msgstr ""
 "按 :kbd:`Ctrl + s` 将场景保存为 ``Main.tscn``\\ （在 MacOS 上则是按 :kbd:"
 "`Cmd + s`\\ ）。"
@@ -142,9 +139,8 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 msgid ""
 "A warning sign next to the *CollisionShape* appears because we haven't "
@@ -157,9 +153,8 @@ msgstr ""
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid ""
 "To create a shape, with the *CollisionShape* selected, head to the "
@@ -172,9 +167,8 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
@@ -198,9 +192,8 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "In 3D, translation and size units are in meters. The box's total size is "
@@ -223,9 +216,8 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "In the *Inspector*, click on the field next to *Mesh* and create a "
@@ -237,9 +229,8 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 msgid ""
 "Once again, it's too small by default. Click the cube icon to expand the "
@@ -254,19 +245,19 @@ msgstr ""
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
 "in the viewport."
 msgstr "您应该会在视口中看到一个覆盖网格以及蓝色和红色轴的宽灰色平板。"
 
+#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. Select the "
 "*Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:"
-"`Cmd` on MacOS), and click and drag down on the Y axis. It's the green arrow "
+"`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
 "in the move gizmo."
 msgstr ""
 "我们要把地面往下移一点，这样才能看到地板网格。选中 *Ground* 节点，按住 :kbd:"
@@ -276,9 +267,8 @@ msgstr ""
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
@@ -290,9 +280,8 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
@@ -302,9 +291,8 @@ msgstr "将地面往下移动 ``1`` 米。视窗左下角的标签会显示你�
 msgid "|image15|"
 msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image15|"
+msgstr "image15"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
@@ -332,9 +320,8 @@ msgstr "在\\ *检查器*\\ 中，勾选复选框打开\\ *Shadow -> Enabled*\\ 
 msgid "|image16|"
 msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image16|"
+msgstr "image16"
 
 msgid "At this point, your project should look like this."
 msgstr "项目此时看起来是这个样子。"
@@ -342,15 +329,13 @@ msgstr "项目此时看起来是这个样子。"
 msgid "|image17|"
 msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image17|"
+msgstr "image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "
 "scene and base movement."
 msgstr "这就是我们的起点了。在下一部分中，我们将处理玩家场景与基础移动。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻译格式"
+msgstr "翻译状态"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,10 +70,13 @@ msgstr ""
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "On mobile and consoles, this path is unique to the project. On desktop, the "
-"engine stores user files in ``~/.local/share/godot/app_userdata/Name`` on "
-"macOS and Linux, and ``%APPDATA%/Name`` on Windows. ``Name`` is based on the "
-"application name defined in the Project Settings, but you can override it on "
-"a per-platform basis using :ref:`feature tags <doc_feature_tags>`."
+"engine stores user files in ``~/.local/share/godot/app_userdata/"
+"[project_name]`` on Linux, ``~/Library/Application Support/Godot/"
+"app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%"
+"\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is "
+"based on the application name defined in the Project Settings, but you can "
+"override it on a per-platform basis using :ref:`feature tags "
+"<doc_feature_tags>`."
 msgstr ""
 
 msgid ""
@@ -99,17 +102,35 @@ msgstr ""
 msgid "User data"
 msgstr ""
 
+msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
+msgstr ""
+
+msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
+msgstr ""
+
+msgid "Linux: ``~/.local/share/godot/[project_name]``"
+msgstr ""
+
+msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
+msgstr ""
+
+msgid "Windows: ``%APPDATA%\\[project_name]``"
+msgstr ""
+
+msgid "macOS: ``~/Library/Application Support/[project_name]``"
+msgstr ""
+
+msgid "Linux: ``~/.local/share/[project_name]``"
+msgstr ""
+
+msgid "User settings"
+msgstr "Käyttäjäasetukset"
+
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr ""
 
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr ""
-
-msgid "Linux: ``~/.local/share/godot/``"
-msgstr ""
-
-msgid "User settings"
-msgstr "Käyttäjäasetukset"
 
 msgid "Linux: ``~/.config/godot/``"
 msgstr ""

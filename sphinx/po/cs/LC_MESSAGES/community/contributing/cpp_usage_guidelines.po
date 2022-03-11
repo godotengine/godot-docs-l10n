@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 15:04+0100\n"
+"POT-Creation-Date: 2022-03-11 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,9 +61,8 @@ msgid ""
 "`doc_best_practices_for_engine_contributors`."
 msgstr ""
 
-#, fuzzy
 msgid "See :ref:`doc_code_style_guidelines` for formatting guidelines."
-msgstr "Více informací naleznete v :ref:`doc_running_code_in_the_editor`."
+msgstr "Pokyny pro formátování viz :ref:`doc_code_style_guidelines`."
 
 msgid "Disallowed features"
 msgstr "Zakázané funkce"
@@ -89,22 +88,26 @@ msgid ""
 "vector`` and the like. Instead, use Godot's datatypes as described below:"
 msgstr ""
 
-#, fuzzy
 msgid "Use ``String`` instead of ``std::string``."
-msgstr "Místo ``||``` použijte ``or``."
+msgstr "Použijte ``String`` místo ``std::string``."
 
 msgid ""
-"Use ``Vector`` instead of ``std::vector``. In some cases, ``List`` or "
-"``LocalVector`` can be used as an alternative (ask core developers first)."
+"Use ``Vector`` instead of ``std::vector``. In some cases, ``LocalVector`` "
+"can be used as an alternative (ask core developers first)."
 msgstr ""
 
-#, fuzzy
 msgid "Use ``Array`` instead of ``std::array``."
-msgstr "Místo ``||``` použijte ``or``."
+msgstr "Použijte ``Array`` místo ``std::array``."
 
-#, fuzzy
+msgid ""
+"Godot also has a List datatype (which is a linked list). While List is "
+"already used in the codebase, it typically performs worse than other "
+"datatypes like Vector and Array. Therefore, List should be avoided in new "
+"code unless necessary."
+msgstr ""
+
 msgid "``auto`` keyword"
-msgstr "klíčové slovo `onready`"
+msgstr "``auto`` klíčové slovo"
 
 msgid ""
 "Please don't use the ``auto`` keyword for type inference. While it can avoid "
@@ -145,6 +148,5 @@ msgid ""
 "sorting includes in C++ and Objective-C files."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formát překladu"
+msgstr "Stav překladu"
