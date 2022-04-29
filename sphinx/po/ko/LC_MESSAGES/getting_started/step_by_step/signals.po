@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Signal"
 msgstr "시그널"
 
 #, fuzzy
-msgid "Using Signals"
+msgid "Using signals"
 msgstr "바인딩 시그널"
 
 msgid ""
@@ -54,12 +54,18 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 msgid ""
-"We will now use a signal to make our Godot icon from last part move and stop "
-"by pressing a button."
+"We will now use a signal to make our Godot icon from the previous lesson (:"
+"ref:`doc_scripting_player_input`) move and stop by pressing a button."
 msgstr ""
 
 msgid "Scene setup"
 msgstr "씬 설정"
+
+msgid ""
+"To add a button to our game, we will create a new \"main\" scene which will "
+"include both a button and the ``Sprite.tscn`` scene that we scripted in "
+"previous lessons."
+msgstr ""
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr ""
@@ -103,6 +109,9 @@ msgstr ""
 #, fuzzy
 msgid "Your scene tree and viewport should look like this."
 msgstr "씬 트리는 다음과 같아야 합니다:"
+
+msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+msgstr ""
 
 #, fuzzy
 msgid "Connecting a signal in the editor"
@@ -216,9 +225,9 @@ msgstr ""
 "습니다."
 
 msgid ""
-"In the Scene dock, right-click on the Sprite node and add a new node. Search "
-"for Timer and add the corresponding node. Your scene should now look like "
-"this."
+"In the Scene dock, right-click on the Sprite node and add a new child node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
 msgstr ""
 
 msgid ""
@@ -244,6 +253,13 @@ msgid ""
 "To connect to a signal via code, you need to call the ``connect()`` method "
 "of the node you want to listen to. In this case, we want to listen to the "
 "Timer's \"timeout\" signal."
+msgstr ""
+
+msgid ""
+"We want to connect the signal when the scene is intantiated, and we can do "
+"that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
+"function, which is called automatically by the engine when a node is fully "
+"instantiated."
 msgstr ""
 
 msgid ""
@@ -277,8 +293,22 @@ msgid ""
 "is ``true``, it becomes ``false``, and vice-versa."
 msgstr ""
 
+#, fuzzy
+msgid "Complete script"
+msgstr "GDScript 예제"
+
+msgid ""
+"That's it for our little moving and blinking Godot icon demo! Here is the "
+"complete ``Sprite.gd`` file for reference."
+msgstr ""
+
 msgid "Custom signals"
 msgstr "커스텀 시그널"
+
+msgid ""
+"This section is a reference on how to define and use your own signals, and "
+"does not build upon the project created in previous lessons."
+msgstr ""
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "
@@ -360,6 +390,5 @@ msgstr ""
 "다음 섹션 :ref:`doc_your_first_game`\\ 에서는 다른 게임 구성 요소들을 여러 시"
 "그널을 사용해 연결함으로써 완전한 게임을 만들 것입니다."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "번역 형식"
+msgstr "번역 상태"

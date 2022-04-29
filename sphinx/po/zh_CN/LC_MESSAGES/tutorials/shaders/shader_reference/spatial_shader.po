@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,31 +154,31 @@ msgid "**specular_schlick_ggx**"
 msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
-msgstr "Schlick-GGX用于镜面反射(默认)."
+msgstr "镜面反射使用 Schlick-GGX（默认）。"
 
 msgid "**specular_blinn**"
 msgstr "**specular_blinn**"
 
 msgid "Blinn for specular (compatibility)."
-msgstr "Blinn for specular(兼容性)."
+msgstr "镜面反射使用 Blinn（兼容）。"
 
 msgid "**specular_phong**"
 msgstr "**specular_phong**"
 
 msgid "Phong for specular (compatibility)."
-msgstr "Phong for specular(兼容性)."
+msgstr "镜面反射使用 Phong（兼容）。"
 
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
 
 msgid "Toon for specular."
-msgstr "镜面的Toon卡通着色。"
+msgstr "镜面反射使用 Toon。"
 
 msgid "**specular_disabled**"
 msgstr "**specular_disabled**"
 
 msgid "Disable specular."
-msgstr "禁用镜面反射."
+msgstr "禁用镜面反射。"
 
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
@@ -561,7 +561,7 @@ msgstr "out float **SPECULAR**"
 
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
-msgstr "镜面. 默认为0.5, 最好不要修改, 除非你想改变IOR."
+msgstr "镜面反射。默认为 0.5，最好不要修改，除非你想改变 IOR。"
 
 msgid "Roughness (0..1)."
 msgstr "粗糙度(0..1)."
@@ -584,7 +584,7 @@ msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
 
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
-msgstr "小幅增加镜面团块. 如果使用,Godot计算清漆涂层."
+msgstr "小幅增加镜面反射斑点。如果使用，Godot 将计算清漆涂层。"
 
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr "out float **CLEARCOAT_GLOSS**"
@@ -596,7 +596,7 @@ msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
 msgid "For distorting the specular blob according to tangent space."
-msgstr "用于根据切线空间扭曲镜面斑点."
+msgstr "用于根据切线空间扭曲镜面反射斑点。"
 
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr "out vec2 **ANISOTROPY_FLOW**"
@@ -672,6 +672,14 @@ msgstr "in vec2 **POINT_COORD**"
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr "用POINT_SIZE绘制的点坐标."
 
+msgid ""
+"Shaders going through the transparent pipeline when ``ALPHA`` is written to "
+"may exhibit transparency sorting issues. Read the :ref:`transparency sorting "
+"section in the 3D rendering limitations page "
+"<doc_3d_rendering_limitations_transparency_sorting>` for more information "
+"and ways to avoid issues."
+msgstr ""
+
 msgid "Light built-ins"
 msgstr "内置灯光"
 
@@ -690,8 +698,8 @@ msgid ""
 "To write a light function, assign something to ``DIFFUSE_LIGHT`` or "
 "``SPECULAR_LIGHT``. Assigning nothing means no light is processed."
 msgstr ""
-"要写一个光照函数, 要给 ``DIFFUSE_LIGHT`` 或 ``SPECULAR_LIGHT`` 指定一些东西. "
-"不指定任何东西意味着不处理光照."
+"要写一个光照函数，要给 ``DIFFUSE_LIGHT`` 或 ``SPECULAR_LIGHT`` 指定一些东西。"
+"不指定任何东西意味着不处理光照。"
 
 msgid ""
 "The light function is called for every light in every pixel. It is called "
@@ -786,7 +794,7 @@ msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr "out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
-msgstr "镜面光效果."
+msgstr "镜面反射光效果。"
 
 msgid "Translation status"
 msgstr "翻译状态"

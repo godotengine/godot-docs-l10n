@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,14 +21,17 @@ msgid "Signal"
 msgstr "シグナル"
 
 #, fuzzy
-msgid "Using Signals"
-msgstr "バインディングシグナル"
+msgid "Using signals"
+msgstr "シグナルの使用"
 
 msgid ""
 "In this lesson, we will look at signals. They are messages that nodes emit "
 "when something specific happens to them, like a button being pressed. Other "
 "nodes can connect to that signal and call a function when the event occurs."
 msgstr ""
+"このレッスンでは、シグナルを見ていきます。これらは、ボタンが押された、など特"
+"定のことが起こったときにノードが発信するメッセージです。他のノードはシグナル"
+"に接続し、イベントが発生したときに関数を呼び出すことができます。"
 
 msgid ""
 "It is a delegation mechanism built into Godot that allows one game object to "
@@ -36,6 +39,10 @@ msgid ""
 "signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
+"これはGodotに組み込まれた委任メカニズムで、あるゲームオブジェクトが別のゲーム"
+"オブジェクトの変更に反応する際に、それらを相互参照させることなく反応できるよ"
+"うにするものです。シグナルを使うと、`結合度 <https://ja.wikipedia.org/wiki/"
+"%E7%B5%90%E5%90%88%E5%BA%A6>`_ を制限し、コードの柔軟性を保つことができます。"
 
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
@@ -43,26 +50,37 @@ msgid ""
 "want the bar to reflect the change. To do so, in Godot, you would use "
 "signals."
 msgstr ""
+"例えば、画面上にプレイヤーの体力を表すライフバーがあるとします。プレイヤーが"
+"ダメージを受けたり、回復薬を使ったりした場合には、その変化をバーに反映される"
+"ようにしたいとします。これを実現するために、Godotではシグナルを使用します。"
 
-#, fuzzy
 msgid ""
 "As mentioned in the introduction, signals are Godot's version of the "
 "observer pattern. You can learn more about it here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"オブザーバーパターンの詳細については、以下をご覧ください (英語): http://"
-"gameprogrammingpatterns.com/observer.html"
+"概要で述べたように、シグナルはGodotバージョンのobserverパターンです。詳しく"
+"は 次を参照ください: https://gameprogrammingpatterns.com/observer.html"
 
+#, fuzzy
 msgid ""
-"We will now use a signal to make our Godot icon from last part move and stop "
-"by pressing a button."
+"We will now use a signal to make our Godot icon from the previous lesson (:"
+"ref:`doc_scripting_player_input`) move and stop by pressing a button."
 msgstr ""
+"今度はシグナルを使って、前パートで作ったGodotのアイコンがボタンを押すことで動"
+"いたり止まったりするようにします。"
 
 msgid "Scene setup"
 msgstr "シーンの設定"
 
-msgid "Create a new scene by going to the menu Scene -> New Scene."
+msgid ""
+"To add a button to our game, we will create a new \"main\" scene which will "
+"include both a button and the ``Sprite.tscn`` scene that we scripted in "
+"previous lessons."
 msgstr ""
+
+msgid "Create a new scene by going to the menu Scene -> New Scene."
+msgstr "メニューの「シーン -> 新規シーン」で、新しいシーンを作成します。"
 
 msgid ""
 "In the Scene dock, click the 2D Scene button. This will add a Node2D as our "
@@ -105,6 +123,9 @@ msgstr ""
 
 msgid "Your scene tree and viewport should look like this."
 msgstr "シーンツリーとビューポートは次のようになります。"
+
+msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+msgstr ""
 
 #, fuzzy
 msgid "Connecting a signal in the editor"
@@ -217,9 +238,9 @@ msgstr ""
 "ンが行えます。\\ :kbd:`F2` (macOSでは :kbd:`Alt + 2`) を押すと開けます。"
 
 msgid ""
-"In the Scene dock, right-click on the Sprite node and add a new node. Search "
-"for Timer and add the corresponding node. Your scene should now look like "
-"this."
+"In the Scene dock, right-click on the Sprite node and add a new child node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
 msgstr ""
 
 msgid ""
@@ -245,6 +266,13 @@ msgid ""
 "To connect to a signal via code, you need to call the ``connect()`` method "
 "of the node you want to listen to. In this case, we want to listen to the "
 "Timer's \"timeout\" signal."
+msgstr ""
+
+msgid ""
+"We want to connect the signal when the scene is intantiated, and we can do "
+"that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
+"function, which is called automatically by the engine when a node is fully "
+"instantiated."
 msgstr ""
 
 msgid ""
@@ -278,8 +306,23 @@ msgid ""
 "is ``true``, it becomes ``false``, and vice-versa."
 msgstr ""
 
+#, fuzzy
+msgid "Complete script"
+msgstr "GDScriptの例"
+
+#, fuzzy
+msgid ""
+"That's it for our little moving and blinking Godot icon demo! Here is the "
+"complete ``Sprite.gd`` file for reference."
+msgstr "参考までに、\\ ``Sprite.gd``\\ ファイル全体は次のようになります。"
+
 msgid "Custom signals"
 msgstr "カスタムシグナル"
+
+msgid ""
+"This section is a reference on how to define and use your own signals, and "
+"does not build upon the project created in previous lessons."
+msgstr ""
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "
@@ -362,6 +405,5 @@ msgstr ""
 "次のセクション\\ :ref:`doc_your_first_game`\\ では、さまざまなゲームコンポー"
 "ネントを接続するシグナルのいくつかの使用法を含む、完全なゲームを構築します。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻訳形式"
+msgstr "翻訳ステータス"

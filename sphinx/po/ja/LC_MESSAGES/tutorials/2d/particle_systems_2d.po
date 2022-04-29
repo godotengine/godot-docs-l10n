@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "Time parameters"
 msgstr "時間パラメータ"
 
 msgid "Lifetime"
-msgstr "\\ Lifetime"
+msgstr "生存時間"
 
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
@@ -137,7 +137,7 @@ msgid "Lifetime: 4.0"
 msgstr "\\ Lifetime: 4.0"
 
 msgid "One Shot"
-msgstr "\\ One Shot"
+msgstr "単発"
 
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
@@ -147,7 +147,7 @@ msgstr ""
 "は二度と放出しません。"
 
 msgid "Preprocess"
-msgstr "\\ Preprocess"
+msgstr "前処理"
 
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
@@ -174,7 +174,7 @@ msgstr ""
 "に速くなります。"
 
 msgid "Explosiveness"
-msgstr "\\ Explosiveness"
+msgstr "爆発性"
 
 msgid ""
 "If lifetime is ``1`` and there are 10 particles, it means a particle will be "
@@ -199,7 +199,7 @@ msgstr ""
 "する場合に便利です。"
 
 msgid "Randomness"
-msgstr "\\ Randomness"
+msgstr "ランダム性"
 
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
@@ -437,7 +437,7 @@ msgid "Determines the initial scale of the particles."
 msgstr "パーティクルの初期スケールを決定します。"
 
 msgid "Color"
-msgstr "Color"
+msgstr "色"
 
 msgid "Used to change the color of the particles being emitted."
 msgstr "放出されるパーティクルの色を変更するために使用します。"
@@ -539,6 +539,5 @@ msgstr ""
 "画像を ``Point Texture`` または ``Color Texture`` に直接追加しないでくださ"
 "い。代わりに、常に「Load Emission Mask」メニューを使用する必要があります。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻訳形式"
+msgstr "翻訳ステータス"

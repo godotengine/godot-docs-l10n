@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,12 @@ msgstr ""
 
 msgid "Exporting for Android"
 msgstr "Android로 내보내기"
+
+msgid ""
+"This page describes how to export a Godot project to Android. If you're "
+"looking to compile export template binaries from source instead, read :ref:"
+"`doc_compiling_for_android`."
+msgstr ""
 
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
@@ -382,5 +388,19 @@ msgstr ""
 "를 확인하십시오."
 
 #, fuzzy
+msgid "Troubleshooting rendering issues"
+msgstr "문제 해결"
+
+msgid ""
+"To improve out-of-the-box performance on mobile devices, Godot automatically "
+"uses low-end-friendly settings by default on both Android and iOS."
+msgstr ""
+
+msgid ""
+"This can cause rendering issues that do not occur when running the project "
+"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
+"information."
+msgstr ""
+
 msgid "Translation status"
-msgstr "번역 형식"
+msgstr "번역 상태"

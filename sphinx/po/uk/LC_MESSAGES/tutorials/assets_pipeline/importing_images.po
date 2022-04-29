@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,7 +306,7 @@ msgstr ""
 "опцію \"Force RGBE\" (\"Формувати RGBE\")."
 
 msgid "Normal Map"
-msgstr "Normal Map (Карта нормалей)"
+msgstr "Нормальне картографування"
 
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
@@ -336,18 +336,16 @@ msgstr ""
 "Вам доведеться налаштувати спеціальні шейдери, які використовують карту "
 "нормалей, щоб врахувати це."
 
-#, fuzzy
 msgid ""
 "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
 "known as OpenGL style. If you've imported a material made to be used with "
 "another engine it may be DirectX style, in which case the normal map needs "
 "to be converted so its Y axis is flipped."
 msgstr ""
-"Godot вимагає звичайної карти, щоб використовувати координати X+, Y- та Z+. "
-"Іншими словами, якщо ви імпортували матеріал, призначений для використання з "
-"іншим редактором, можливо, вам доведеться перетворити звичайну карту, щоб її "
-"вісь Y перевернулася. В іншому випадку нормальний напрямок карти може "
-"здатися оберненим на осі Y."
+"Godot вимагає карти нормалей, які використовують координати X+, Y- та Z+ "
+"(так званий OpenGL стиль). Якщо ж ви імпортували матеріал, призначений для "
+"використання з іншим редактором (таким як DirectX), можливо, вам доведеться "
+"переробити карти нормалей так, щоб їх вісь Y перевернулась."
 
 msgid ""
 "More information about normal maps (including a coordinate order table for "
@@ -359,7 +357,7 @@ msgstr ""
 "Normal_Map_Technical_Details>`__."
 
 msgid "Flags"
-msgstr ""
+msgstr "Прапорці"
 
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
@@ -369,7 +367,7 @@ msgstr ""
 "вигляді текстури, залежно від випадку використання."
 
 msgid "Repeat"
-msgstr "Repeat (Повтор)"
+msgstr "Повторення"
 
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
@@ -384,7 +382,7 @@ msgid "Repeating can optionally be set to mirrored mode."
 msgstr "Повторення можна перевести в дзеркальний (mirrored) режим."
 
 msgid "Filter"
-msgstr "Filter (Фільтр)"
+msgstr "Фільтр"
 
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
@@ -398,7 +396,7 @@ msgstr ""
 "вимикають, коли розробляють піксельні ігри."
 
 msgid "Mipmaps"
-msgstr ""
+msgstr "Множинне відтворення"
 
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
@@ -432,7 +430,7 @@ msgstr ""
 "(менші версії текстури використовуються для віддалених об'єктів)."
 
 msgid "Anisotropic"
-msgstr ""
+msgstr "Анізотропний"
 
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
@@ -442,7 +440,7 @@ msgstr ""
 "параметр робить їх детальнішими, зменшуючи розмитість."
 
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #, fuzzy
 msgid ""
@@ -469,7 +467,7 @@ msgid ""
 msgstr ""
 
 msgid "Process"
-msgstr "Process (Процес)"
+msgstr "Обробка"
 
 msgid ""
 "Some special processes can be applied to images when imported as textures."
@@ -548,6 +546,5 @@ msgstr ""
 "зображення SVG. Шкала за замовчуванням (1.0) дозволить імпортованому SVG "
 "відповідати оригінальному масштабу проєкту."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Формат перекладу"
+msgstr "Стан перекладу"

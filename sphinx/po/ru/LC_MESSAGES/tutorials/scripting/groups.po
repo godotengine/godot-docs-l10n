@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,19 +38,26 @@ msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
 #, fuzzy
-msgid "Adding nodes to a group"
-msgstr "Создание узлов"
+msgid "Managing groups"
+msgstr "Управление соединениями"
+
+msgid ""
+"Groups are created by adding a node to a new group name, and likewise they "
+"are removed by removing all nodes from a given group."
+msgstr ""
 
 #, fuzzy
-msgid "There are two ways to add nodes to groups:"
+msgid "There are two ways to add/remove nodes to groups:"
 msgstr "Есть некоторые вещи, которые следует отметить:"
 
 #, fuzzy
-msgid "Using the Node dock in the editor."
-msgstr "Использование веб-редактора"
+msgid "During design, by using the Node dock in the editor."
+msgstr "Использование панели Узел в редакторе."
 
 msgid ""
-"Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
+"During execution, by calling :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
 msgstr ""
 
 #, fuzzy
@@ -151,11 +158,11 @@ msgid ""
 "you to switch scenes easily or reload them, quit the game or pause and "
 "unpause it. It also provides useful signals."
 msgstr ""
-"Класс :ref:`SceneTree <class_SceneTree>` предоставляет множество полезных "
-"методов, таких как взаимодействие со сценами, иерархия узлов и групп узлов. "
-"Он позволяет вам легко переключать сцены или перезагружать их, выходить из "
-"игры или делать паузу и продолжать далее. У него также есть интересные "
-"сигналы. Ознакомьтесь с ним, когда будет время!"
+"Класс :ref:`SceneTree <class_SceneTree>` предоставляет множество других "
+"полезных методов для взаимодействия со сценами, их иерархией узлов и "
+"группами. Он позволяет легко переключаться между сценами или перезагружать "
+"их, выходить из игры или ставить и снимать ее с паузы. Он также "
+"предоставляет полезные сигналы."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

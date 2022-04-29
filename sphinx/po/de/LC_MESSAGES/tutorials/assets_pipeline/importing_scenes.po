@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -336,10 +336,10 @@ msgid "The importer has several options, which will be discussed below:"
 msgstr "Der Importer hat mehrere Optionen, die im Folgenden erläutert werden:"
 
 msgid "Nodes"
-msgstr "Nodes (\"Knoten\")"
+msgstr "Nodes"
 
 msgid "Root Type"
-msgstr "Wurzel-Typ"
+msgstr "Wurzeltyp"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
@@ -349,19 +349,19 @@ msgstr ""
 "\"Räumlich\", aber das kann geändert werden."
 
 msgid "Root Name"
-msgstr "Wurzel-Name"
+msgstr "Wurzelname"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr "Erlaubt einem erzeugtem Wurzel Node einen spezifischen Namen zu geben."
 
 msgid "Root Scale"
-msgstr "Wurzel-Umfang"
+msgstr "Wurzelskalierung"
 
 msgid "The scale of the root node."
 msgstr "Die Rolle des Wurzel Node."
 
 msgid "Custom Script"
-msgstr "benutzerdefiniertes Skript"
+msgstr "Eigenes Skript"
 
 msgid ""
 "A special script to process the whole scene after import can be provided. "
@@ -456,7 +456,7 @@ msgstr ""
 "und **Material> Speicher** auf **Integriert* setzen, anstatt auf **Dateien**."
 
 msgid "Keep On Reimport"
-msgstr "Weiter reimportieren"
+msgstr "Bei Neuimport behalten"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -472,7 +472,7 @@ msgid "Meshes"
 msgstr "Meshes"
 
 msgid "Compress"
-msgstr "komprimiert"
+msgstr "Komprimieren"
 
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
@@ -573,11 +573,12 @@ msgstr ""
 msgid "Ensure Tangents"
 msgstr "Tangenten sicherstellen"
 
+#, fuzzy
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
-"source scene. Godot uses Mikktspace for this, but it's always better to have "
-"them generated in the exporter."
+"source scene. Godot uses `Mikktspace <http://www.mikktspace.com/>`__ for "
+"this, but it's always better to have them generated in the exporter."
 msgstr ""
 "Wenn Texturen mit normaler Zuordnung verwendet werden sollen, müssen Netze "
 "Tangentenarrays haben. Diese Option stellt sicher, dass diese generiert "
@@ -602,7 +603,7 @@ msgstr ""
 "arbeiten."
 
 msgid "Light Baking"
-msgstr "Beleuchtung brennen"
+msgstr "Light Baking"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "Gibt an, ob das Mesh in gebrannten LightMaps verwendet wird."
@@ -681,7 +682,7 @@ msgstr ""
 "Animationen kommen."
 
 msgid "Filter Script"
-msgstr "Filter Skript"
+msgstr "Skript filtern"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -804,7 +805,7 @@ msgstr ""
 "seiner Aktivierung beschädigt sein könnte."
 
 msgid "Clips"
-msgstr "Clips"
+msgstr "Animationsausschnitte"
 
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "

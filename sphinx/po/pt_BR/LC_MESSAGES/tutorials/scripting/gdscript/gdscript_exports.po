@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,13 +190,53 @@ msgstr ""
 "O script deve operar no modo de ``ferramenta`` para que os métodos acima "
 "possam funcionar dentro do editor."
 
+msgid "Properties"
+msgstr "Propriedades"
+
+msgid ""
+"To understand how to better use the sections below, you should understand "
+"how to make properties with advanced exports."
+msgstr ""
+
+msgid ""
+"The ``_get_property_list()`` function gets called by the inspector. You can "
+"override it for more advanced exports. You must return an ``Array`` with the "
+"contents of the properties for the function to work."
+msgstr ""
+
+#, fuzzy
+msgid "``name`` is the name of the property"
+msgstr "``name`` é o nome de uma categoria a ser adicionada ao inspetor;"
+
+msgid "``type`` is the type of the property from ``Variant.Type``."
+msgstr ""
+
+msgid ""
+"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
+"enum."
+msgstr ""
+
+#, fuzzy
+msgid "Attaching variables to properties"
+msgstr "Acessar variáveis locais ou propriedades:"
+
+msgid ""
+"To attach variables to properties (allowing the value of the property to be "
+"used in scripts), you need to create a variable with the exact same name as "
+"the property or else you may need to override the :ref:`_set() "
+"<class_Object_method__get_property_list>` and :ref:`_get() "
+"<class_Object_method__get_property_list>` methods. Attaching a variable to "
+"to a property also gives you the ability to give it a default state. ::"
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "Adicionando categorias de script"
 
+#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category."
+"Variables`` is one example of a built-in category. ::"
 msgstr ""
 "Para uma melhor distinção visual das propriedades, uma categoria especial de "
 "script pode ser incorporada ao inspetor para atuar como um separador. "
@@ -204,6 +244,11 @@ msgstr ""
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` é o nome de uma categoria a ser adicionada ao inspetor;"
+
+msgid ""
+"Every following property added after the category definition will be a part "
+"of the category."
+msgstr ""
 
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
@@ -219,7 +264,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "Agrupando propriedades"
 
-msgid "A list of properties with similar names can be grouped."
+#, fuzzy
+msgid "A list of properties with similar names can be grouped. ::"
 msgstr "Uma lista de propriedades com nomes semelhantes pode ser agrupada."
 
 msgid ""
@@ -229,11 +275,13 @@ msgstr ""
 "``name`` é o nome de um grupo que será exibido como uma lista de "
 "propriedades que pode ser recolhida;"
 
+#, fuzzy
 msgid ""
-"every successive property added after the group property will be collapsed "
-"and shortened as determined by the prefix defined via the ``hint_string`` "
-"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
-"this case."
+"Every following property added after the group property with the prefix "
+"(which determined by ``hint_string``) will be shortened. For instance, "
+"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
+"However, ``movement_speed`` won't be a part of the group and will not be "
+"shortened."
 msgstr ""
 "cada propriedade sucessiva adicionada após a propriedade do grupo será "
 "recolhida e encurtada conforme determinado pelo prefixo definido por meio da "
@@ -251,6 +299,5 @@ msgstr ""
 "ignorado, pois não será realmente usado para a lógica de script, mas deve "
 "ser definido de qualquer forma."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato de tradução"
+msgstr "Estado de tradução"

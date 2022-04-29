@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,8 @@ msgid ""
 "reference to the Sprite and Camera2D nodes to access them in your script."
 msgstr ""
 
-#, fuzzy
 msgid "To do so, you can use the following code."
-msgstr "Сцена Моба будет использовать следующие узлы:"
+msgstr "Для этого вы можете использовать следующий код."
 
 msgid ""
 "Note that you get nodes using their name, not their type. Above, \"Sprite\" "
@@ -71,9 +70,8 @@ msgid ""
 "UserInterface node."
 msgstr ""
 
-#, fuzzy
 msgid "To get the Tween node, you would use the following code."
-msgstr "Сцена Моба будет использовать следующие узлы:"
+msgstr "Чтобы получить узел Tween, используйте следующий код."
 
 msgid ""
 "As with file paths, you can use \"..\" to get a parent node. The best "
@@ -100,13 +98,12 @@ msgstr ""
 msgid "Creating nodes"
 msgstr "Создание узлов"
 
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
-"Чтобы создать узел из кода, вызовите метод ``.new()``, как и для любого "
-"другого типа данных на основе классов. Например:"
+"Чтобы создать узел из кода, вызовите его метод ``new()``, как для любого "
+"другого типа данных, основанного на классе."
 
 msgid ""
 "You can store the newly created node's reference in a variable and call "
@@ -153,9 +150,8 @@ msgid ""
 "happens in two steps:"
 msgstr ""
 
-#, fuzzy
 msgid "Loading the scene from the hard drive."
-msgstr "Загрузка ресурсов из кода"
+msgstr "Загрузка сцены с жесткого диска."
 
 #, fuzzy
 msgid ""
@@ -171,18 +167,16 @@ msgid ""
 "is only available with GDScript."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "At that point, ``scene`` is a packed scene resource, not a node. To create "
 "the actual node, you need to call :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>`. It returns a tree of nodes that you "
 "can as a child of your current node."
 msgstr ""
-"Но ``scene`` еще не является узлом. Она упакована в специальный пакет, "
-"называемый :ref:`PackedScene <class_PackedScene>`. Чтобы создать настоящий "
-"узел, необходимо вызвать функцию :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>`. Это вернет дерево узлов, которое можно "
-"добавить в активную сцену:"
+"В этот момент ``scene`` является ресурсом упакованной сцены, а не узлом. "
+"Чтобы создать настоящий узел, необходимо вызвать :ref:`PackedScene."
+"instance() <class_PackedScene_method_instance>`. Он возвращает дерево узлов, "
+"которые вы можете сделать дочерними по отношению к текущему узлу."
 
 #, fuzzy
 msgid ""

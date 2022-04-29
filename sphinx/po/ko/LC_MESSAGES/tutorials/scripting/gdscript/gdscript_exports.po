@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,13 +182,54 @@ msgstr ""
 "위의 방법이 에디터 안에서 작동할 수 있도록 스크립트는 ``툴(tool)`` 모드에서 "
 "작동해야 합니다."
 
+#, fuzzy
+msgid "Properties"
+msgstr "속성"
+
+msgid ""
+"To understand how to better use the sections below, you should understand "
+"how to make properties with advanced exports."
+msgstr ""
+
+msgid ""
+"The ``_get_property_list()`` function gets called by the inspector. You can "
+"override it for more advanced exports. You must return an ``Array`` with the "
+"contents of the properties for the function to work."
+msgstr ""
+
+#, fuzzy
+msgid "``name`` is the name of the property"
+msgstr "``name``\\ 은 인스펙터(Inspector)에 추가할 카테고리의 이름입니다."
+
+msgid "``type`` is the type of the property from ``Variant.Type``."
+msgstr ""
+
+msgid ""
+"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
+"enum."
+msgstr ""
+
+#, fuzzy
+msgid "Attaching variables to properties"
+msgstr "지역 변수나 속성을 접근:"
+
+msgid ""
+"To attach variables to properties (allowing the value of the property to be "
+"used in scripts), you need to create a variable with the exact same name as "
+"the property or else you may need to override the :ref:`_set() "
+"<class_Object_method__get_property_list>` and :ref:`_get() "
+"<class_Object_method__get_property_list>` methods. Attaching a variable to "
+"to a property also gives you the ability to give it a default state. ::"
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "스크립트 카테고리 추가"
 
+#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category."
+"Variables`` is one example of a built-in category. ::"
 msgstr ""
 "속성을 시각적으로 더 잘 구별하기 위해 특수한 스크립트 카테고리를 인스펙터"
 "(Inspector)에 삽입해서 구분자 역할을 할 수 있습니다. ``스크립트 변수(Script "
@@ -196,6 +237,11 @@ msgstr ""
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name``\\ 은 인스펙터(Inspector)에 추가할 카테고리의 이름입니다."
+
+msgid ""
+"Every following property added after the category definition will be a part "
+"of the category."
+msgstr ""
 
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
@@ -210,7 +256,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "속성 그루핑(Grouping)"
 
-msgid "A list of properties with similar names can be grouped."
+#, fuzzy
+msgid "A list of properties with similar names can be grouped. ::"
 msgstr "유사한 이름을 가진 속성 목록을 그룹화할 수 있습니다."
 
 msgid ""
@@ -218,11 +265,13 @@ msgid ""
 "collapsible list of properties;"
 msgstr "``name``\\ 은 축소 가능한 속성 목록으로 표시될 그룹의 이름입니다."
 
+#, fuzzy
 msgid ""
-"every successive property added after the group property will be collapsed "
-"and shortened as determined by the prefix defined via the ``hint_string`` "
-"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
-"this case."
+"Every following property added after the group property with the prefix "
+"(which determined by ``hint_string``) will be shortened. For instance, "
+"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
+"However, ``movement_speed`` won't be a part of the group and will not be "
+"shortened."
 msgstr ""
 "그룹 속성 뒤에 추가되는 모든 연속(successive) 속성은 ``hint_string`` 키를 통"
 "해 정의된 접두사에 따라 축소되고 단축됩니다. 예를 들어 위의 경우 "
@@ -238,6 +287,5 @@ msgstr ""
 "나타냅니다. 따라서 ``TYPE_NIL`` 타입은 실제로 스크립팅 로직에 사용되지 않기 "
 "때문에 무시할 수 있지만 어쨌든 정의해야 합니다."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "번역 형식"
+msgstr "번역 상태"

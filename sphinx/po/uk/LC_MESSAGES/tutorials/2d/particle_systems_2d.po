@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,6 @@ msgstr ""
 "вузол CPUParticles2D, натиснувши на вузол в інспекторі та вибравши пункт "
 "**Перетворити на CPUParticles2D** у меню **Частинки** на панелі інструментів."
 
-#, fuzzy
 msgid ""
 "The rest of this tutorial is going to use the Particles2D node. First, add a "
 "Particles2D node to your scene. After creating that node you will notice "
@@ -85,11 +84,11 @@ msgid ""
 "your Particles2D node in the scene dock. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
-"Далі тут буде використовуватися вузол Particles2D. Спочатку додайте вузол "
-"Particles2D до вашої сцени. Після створення цього вузла ви помітите, що була "
-"створена лише біла крапка, а поруч із вашим вузлом Particles2D в інспекторі "
-"є піктограма попередження. Це пов’язано з тим, що для роботи вузла потрібен "
-"ParticlesMaterial."
+"Решта частина цього уроку буде використовуватися вузол Particles2D. Спочатку "
+"додайте вузол Particles2D до вашої сцени. Після створення цього вузла ви "
+"помітите, що була створена лише біла крапка, а поруч із вашим вузлом "
+"Particles2D в інспекторі є піктограма попередження. Це пов’язано з тим, що "
+"для роботи вузла потрібен ParticlesMaterial."
 
 msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial (Матеріал Частинок)"
@@ -123,7 +122,7 @@ msgid "Time parameters"
 msgstr "Параметри часу"
 
 msgid "Lifetime"
-msgstr "Lifetime (Час життя)"
+msgstr "Строк служби"
 
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
@@ -139,7 +138,7 @@ msgid "Lifetime: 4.0"
 msgstr "Час життя: 4.0"
 
 msgid "One Shot"
-msgstr "One Shot (Один постріл)"
+msgstr "Один знімок"
 
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
@@ -149,7 +148,7 @@ msgstr ""
 "раз, і більше ніколи."
 
 msgid "Preprocess"
-msgstr "Preprocess (Попередня підготовка)"
+msgstr "preprocess()"
 
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
@@ -166,7 +165,7 @@ msgstr ""
 "вперше."
 
 msgid "Speed Scale"
-msgstr "Speed Scale (Шкала швидкості)"
+msgstr "Масштаб"
 
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
@@ -205,7 +204,7 @@ msgstr ""
 "вибухів або раптових викидів частинок:"
 
 msgid "Randomness"
-msgstr "Randomness (Випадковість)"
+msgstr "Випадковість"
 
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
@@ -215,7 +214,7 @@ msgstr ""
 "від ``0`` до ``1``. Формула для параметра випадковості:"
 
 msgid "Fixed FPS"
-msgstr "Fixed FPS (Фіксований FPS)"
+msgstr "Фіксована частота кадрів"
 
 msgid ""
 "This setting can be used to set the particle system to render at a fixed "
@@ -229,7 +228,7 @@ msgstr ""
 "уповільнює саму систему частинок."
 
 msgid "Fract Delta"
-msgstr ""
+msgstr "Фракт Дельта"
 
 msgid "This can be used to turn Fract Delta on or off."
 msgstr "Цим можна увімкнути або вимкнути Fract Delta."
@@ -238,7 +237,7 @@ msgid "Drawing parameters"
 msgstr "Параметри малювання"
 
 msgid "Visibility Rect"
-msgstr "Visibility Rect (Прямокутник видимості)"
+msgstr "Прямокутник видимості"
 
 msgid ""
 "The visibility rectangle controls the visibility of the particles on screen. "
@@ -303,7 +302,7 @@ msgstr ""
 "означає, що переміщення вузла, не вплине на вже випущені частинки:"
 
 msgid "Draw Order"
-msgstr "Draw Order (Порядок малювання)"
+msgstr "Порядок малювання"
 
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
@@ -319,7 +318,7 @@ msgid "ParticlesMaterial settings"
 msgstr "Параметри ParticlesMaterial (Матеріал Частинок)"
 
 msgid "Direction"
-msgstr "Direction (Напрямок)"
+msgstr "Напрямок"
 
 msgid ""
 "This is the base direction at which particles emit. The default is "
@@ -354,19 +353,19 @@ msgstr ""
 "параметр **Initial Velocity** *(Початкова швидкість)* повинен бути більше 0."
 
 msgid "Flatness"
-msgstr "Flatness (Рівність)"
+msgstr "Пласкість"
 
 msgid "This property is only useful for 3D particles."
 msgstr "Ця властивість корисна лише для 3D-частинок."
 
 msgid "Gravity"
-msgstr "Gravity (Тяжіння)"
+msgstr "Тяжіння"
 
 msgid "The gravity applied to every particle."
 msgstr "Гравітація, що застосовується до кожної частинки."
 
 msgid "Initial Velocity"
-msgstr "Initial Velocity (Початкова швидкість)"
+msgstr "Ініціалізувати"
 
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
@@ -378,7 +377,7 @@ msgstr ""
 "прискорень (як описано далі)."
 
 msgid "Angular Velocity"
-msgstr "Angular Velocity (Кутова швидкість)"
+msgstr "Кутова швидкість"
 
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr "Це початкова кутова швидкість, що застосовується до частинок."
@@ -393,7 +392,7 @@ msgstr ""
 "Швидкість, з якою частинки обертаються навколо свого центру (у градусах/с)."
 
 msgid "Orbit Velocity"
-msgstr "Orbit Velocity (Орбітальна швидкість)"
+msgstr "Орбітальний вид праворуч"
 
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "Використовується, щоб змусити частинки повертати відносно їх центру."
@@ -415,7 +414,7 @@ msgstr ""
 "Якщо негативне, вони поглинаються ним."
 
 msgid "Tangential Acceleration"
-msgstr ""
+msgstr "Tangential Acceleration (Дотичне прискорення)"
 
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
@@ -425,7 +424,7 @@ msgstr ""
 "радіальним прискоренням може принести хороші ефекти."
 
 msgid "Damping"
-msgstr "Damping (В’язкість)"
+msgstr "В’язкість"
 
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
@@ -437,7 +436,7 @@ msgstr ""
 "швидкістю, а потім припиняються в міру згасання."
 
 msgid "Angle"
-msgstr "Angle (Кут)"
+msgstr "Кут"
 
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
@@ -559,6 +558,5 @@ msgstr ""
 "Texture**. Натомість завжди слід використовувати меню **Завантажити маску "
 "випромінювання**."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Формат перекладу"
+msgstr "Стан перекладу"

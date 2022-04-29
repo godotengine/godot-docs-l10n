@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,19 +166,65 @@ msgid ""
 "from within the editor."
 msgstr "腳本必須為 ``tool`` 模式，才可在編輯器中使用上述方法。"
 
+#, fuzzy
+msgid "Properties"
+msgstr "屬性。"
+
+msgid ""
+"To understand how to better use the sections below, you should understand "
+"how to make properties with advanced exports."
+msgstr ""
+
+msgid ""
+"The ``_get_property_list()`` function gets called by the inspector. You can "
+"override it for more advanced exports. You must return an ``Array`` with the "
+"contents of the properties for the function to work."
+msgstr ""
+
+#, fuzzy
+msgid "``name`` is the name of the property"
+msgstr "``name`` 是要加入屬性面板中的分類名稱；"
+
+msgid "``type`` is the type of the property from ``Variant.Type``."
+msgstr ""
+
+msgid ""
+"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
+"enum."
+msgstr ""
+
+#, fuzzy
+msgid "Attaching variables to properties"
+msgstr "存取區域變數或屬性："
+
+msgid ""
+"To attach variables to properties (allowing the value of the property to be "
+"used in scripts), you need to create a variable with the exact same name as "
+"the property or else you may need to override the :ref:`_set() "
+"<class_Object_method__get_property_list>` and :ref:`_get() "
+"<class_Object_method__get_property_list>` methods. Attaching a variable to "
+"to a property also gives you the ability to give it a default state. ::"
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "新增腳本分類"
 
+#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category."
+"Variables`` is one example of a built-in category. ::"
 msgstr ""
 "為了在視覺上更好區分各個屬性，可以將一種特殊的腳本分類嵌入至屬性面板中，作為"
 "分割線使用。 ``Script Variables`` 就是一個內建分類的範例。"
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` 是要加入屬性面板中的分類名稱；"
+
+msgid ""
+"Every following property added after the category definition will be a part "
+"of the category."
+msgstr ""
 
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
@@ -193,7 +239,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "建立屬性群組"
 
-msgid "A list of properties with similar names can be grouped."
+#, fuzzy
+msgid "A list of properties with similar names can be grouped. ::"
 msgstr "可將名稱類似的屬性放在群組內。"
 
 msgid ""
@@ -201,11 +248,13 @@ msgid ""
 "collapsible list of properties;"
 msgstr "``name`` 是群組名稱，在屬性面板中可以展開摺疊，內包含了一組屬性列表；"
 
+#, fuzzy
 msgid ""
-"every successive property added after the group property will be collapsed "
-"and shortened as determined by the prefix defined via the ``hint_string`` "
-"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
-"this case."
+"Every following property added after the group property with the prefix "
+"(which determined by ``hint_string``) will be shortened. For instance, "
+"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
+"However, ``movement_speed`` won't be a part of the group and will not be "
+"shortened."
 msgstr ""
 "接下來所有新增的屬性都會被摺疊放在群組中，且會以 ``hint_string`` 索引鍵定義的"
 "前置字串來縮短名稱。例如， 在本例中 ``rotate_speed`` 會被縮短為 ``speed`` 。"

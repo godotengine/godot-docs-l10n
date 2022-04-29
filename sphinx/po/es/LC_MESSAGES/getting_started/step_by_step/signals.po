@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "Señal"
 
-msgid "Using Signals"
+#, fuzzy
+msgid "Using signals"
 msgstr "Usando Señales"
 
 msgid ""
@@ -64,15 +65,22 @@ msgstr ""
 "patrón observador. Puede obtener más información al respecto aquí: https://"
 "gameprogrammingpatterns.com/observer.htm"
 
+#, fuzzy
 msgid ""
-"We will now use a signal to make our Godot icon from last part move and stop "
-"by pressing a button."
+"We will now use a signal to make our Godot icon from the previous lesson (:"
+"ref:`doc_scripting_player_input`) move and stop by pressing a button."
 msgstr ""
 "Ahora usaremos una señal para hacer que nuestro ícono de Godot de la última "
 "parte se mueva y se detenga presionando un botón."
 
 msgid "Scene setup"
 msgstr "Configuración de la escena"
+
+msgid ""
+"To add a button to our game, we will create a new \"main\" scene which will "
+"include both a button and the ``Sprite.tscn`` scene that we scripted in "
+"previous lessons."
+msgstr ""
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "Cree una nueva escena yendo al menú Escenas -> Nueva escena."
@@ -127,6 +135,9 @@ msgstr ""
 
 msgid "Your scene tree and viewport should look like this."
 msgstr "Tu árbol de escenas y el viewport deberían verse así."
+
+msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+msgstr ""
 
 msgid "Connecting a signal in the editor"
 msgstr "Conexión de una señal en el editor"
@@ -281,10 +292,11 @@ msgstr ""
 "parte superior de la ventana o presionar :kbd:`Ctrl + F1` (:kbd:`Alt + 1` en "
 "macOS)."
 
+#, fuzzy
 msgid ""
-"In the Scene dock, right-click on the Sprite node and add a new node. Search "
-"for Timer and add the corresponding node. Your scene should now look like "
-"this."
+"In the Scene dock, right-click on the Sprite node and add a new child node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
 msgstr ""
 "En la Escena dock, haz clic derecho en el nodo del Sprite y añade un nuevo "
 "nodo. Busca un Timer y añade el nodo correspondiente. Tu escena debería "
@@ -306,9 +318,8 @@ msgstr ""
 msgid "We need to do two operations to connect the nodes via code:"
 msgstr "Debemos hacer dos operaciones para conectar los nodos con código:"
 
-#, fuzzy
 msgid "Get a reference to the Timer from the Sprite."
-msgstr "Obtener una referencia al Temporizador del \"Sprite\"."
+msgstr "Obtenga una referencia al Timer del Sprite."
 
 msgid "Call the Timer's ``connect()`` method."
 msgstr "Ejecuta el método ``connect()`` del temporizador."
@@ -321,6 +332,13 @@ msgstr ""
 "Para conectar una señal con código, debes ejecutar el método ``connect()`` "
 "del nodo al cual quieras escuchar. En este caso, queremos escuchar la señal "
 "\"timeout\" del temporizador."
+
+msgid ""
+"We want to connect the signal when the scene is intantiated, and we can do "
+"that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
+"function, which is called automatically by the engine when a node is fully "
+"instantiated."
+msgstr ""
 
 msgid ""
 "To get a reference to a node relative to the current one, we use the method :"
@@ -370,8 +388,23 @@ msgstr ""
 "nodo. La línea ``visible = not visible``alterna el valor. Si ``visible`` es "
 "``true``, se vuelve ``false``, y vice-versa."
 
+#, fuzzy
+msgid "Complete script"
+msgstr "Ejemplo de GDScript"
+
+#, fuzzy
+msgid ""
+"That's it for our little moving and blinking Godot icon demo! Here is the "
+"complete ``Sprite.gd`` file for reference."
+msgstr "Aquí está el archivo ``Sprite.gd`` completo como referencia."
+
 msgid "Custom signals"
 msgstr "Señales personalizadas"
+
+msgid ""
+"This section is a reference on how to define and use your own signals, and "
+"does not build upon the project created in previous lessons."
+msgstr ""
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "

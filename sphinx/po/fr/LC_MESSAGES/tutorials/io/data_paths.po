@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,6 @@ msgstr ""
 "d'exécution, le système de fichiers du projet sera probablement en lecture "
 "seule."
 
-#, fuzzy
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "On mobile and consoles, this path is unique to the project. On desktop, the "
@@ -99,14 +98,16 @@ msgid ""
 "override it on a per-platform basis using :ref:`feature tags "
 "<doc_feature_tags>`."
 msgstr ""
-"Le préfixe ``user://`` pointe vers un répertoire différent sur le "
-"périphérique de l’utilisateur. Sur les mobiles et les consoles, ce chemin "
-"est unique au projet. Sur les appareils de bureau, le moteur stocke les "
-"fichiers utilisateur dans ``~/.local/share/godot/app_userdata/Name`` sur "
-"macOS et Linux, et ``%APPDATA%/Name`` sur Windows. ``Name`` est basé sur le "
-"nom de l'application défini dans les paramètres du projet, mais vous pouvez "
-"le remplacer par plateforme en utilisant :ref:`feature tags "
-"<doc_feature_tags>`."
+"Le préfixe ``user://`` pointe vers un répertoire différent sur l’appareil de "
+"l’utilisateur. Sur les mobiles et les consoles, ce chemin est unique au "
+"projet. Sur les appareils de bureau, le moteur stocke les fichiers "
+"utilisateur dans ``~/.local/share/godot/app_userdata/[project_name]`` sur "
+"Linux, ``~/Library/Application Support/Godot/app_userdata/[project_name]`` "
+"sur macOS (depuis Catalina) et ``%APPDATA%"
+"\\Godot\\app_userdata\\[project_name]`` sur Windows. ``[project_name]`` est "
+"basé sur le nom de l'application défini dans les paramètres du projet, mais "
+"vous pouvez le remplacer sur une base par plateforme en utilisant :ref:"
+"`feature tags <doc_feature_tags>`."
 
 msgid ""
 "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
@@ -133,41 +134,33 @@ msgid "Type"
 msgstr "Type"
 
 msgid "Location"
-msgstr "Emplacement"
+msgstr "Localisation"
 
 msgid "User data"
 msgstr "Données utilisateur"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr ""
-"Windows : ``C:"
-"\\Users\\[username]\\AppData\\Roaming\\Godot\\script_templates``"
+msgstr "Windows : ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
-msgstr "macOS : ``~/Library/Application Support/Godot/``"
+msgstr "macOS : ``~/Library/Application Support/Godot/[project_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/[project_name]``"
-msgstr "Linux : ``~/.local/share/godot/``"
+msgstr "Linux : ``~/.local/share/godot/[project_name]``"
 
 msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
 msgstr ""
+"Données utilisateur (lorsque le paramètre du projet ``use_custom_user_dir`` "
+"est ``true``)"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr ""
-"Windows : ``C:"
-"\\Users\\[username]\\AppData\\Roaming\\Godot\\app_userdata\\[Name]``"
+msgstr "Windows : ``%APPDATA%\\[project_name]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr "macOS : ``~/Library/Application Support/Godot/``"
+msgstr "macOS : ``~/Library/Application Support/[project_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr "Linux : ``~/.local/share/godot/``"
+msgstr "Linux : ``~/.local/share/[project_name]``"
 
 msgid "User settings"
 msgstr "Réglages utilisateur"

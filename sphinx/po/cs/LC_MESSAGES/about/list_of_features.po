@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Tato stránka si klade za cíl vypsat všechny funkce, které Godot v současné "
 "době podporuje."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -101,8 +102,9 @@ msgstr "**Vlastnosti:**"
 msgid "Scene tree editor."
 msgstr "Editor stromů scény."
 
-msgid "Script editor."
-msgstr "Editor skriptů."
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "Vestavěný editor motivů."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -162,16 +164,25 @@ msgstr ""
 "Pluginy pro rozšíření funkcí editoru lze stáhnout z :ref:`library library "
 "<doc_what_is_assetlib>` ."
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
 "Vytvořte si vlastní pluginy pomocí GDScript a přidejte nové funkce nebo "
 "urychlete pracovní postup."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr ""
+"Stáhněte si projekty z knihovny zdroju ve Správci projektů a obratem je "
+"importujte."
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr ""
 "Stáhněte si projekty z knihovny zdroju ve Správci projektů a obratem je "
 "importujte."
@@ -209,8 +220,8 @@ msgstr "AnimatedSprite jako pomocník při vytváření animovaných spritů."
 msgid "Parallax layers."
 msgstr "Paralaxní vrstvy."
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "Podpora Pseudo-3D automatickým několikanásobným duplikováním vrstvy."
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "2D osvětlení s normálními mapami."
@@ -311,8 +322,14 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D grafika"
 
-msgid "HDR rendering with sRGB."
-msgstr "HDR vykreslování s sRGB."
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "Import animací je ve výchozím nastavení povolen."
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "LDR vykreslování pro větší kompatibilitu."
@@ -330,30 +347,35 @@ msgstr "**Kamera:**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Perspektivní, ortografické a komutované kamery."
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**Vykreslování založené na fyzice**"
 
 msgid "Follows the Disney PBR model."
 msgstr "Následuje model Disney PBR."
 
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
+
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "Používá roughness-metallic postup s podporou ORM textury."
+
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
 
 msgid "Normal mapping."
 msgstr "Normální mapování."
 
-msgid ""
-"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
-"distance."
+msgid "Detail mapping for the albedo and normal maps."
 msgstr ""
-"*GLES3:* Parallax / reliéfní mapování s automatickou úrovní detailů na "
-"základě vzdálenosti."
-
-msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr "*GLES3:* Podpovrchový rozptyl a propustnost."
-
-msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr "*GLES3:* Blízké vyblednutí (měkké částice)."
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
@@ -367,6 +389,25 @@ msgstr ""
 "Dithering lze určit na základě počtu pixelů nebo na základě jednotlivých "
 "objektů."
 
+msgid ""
+"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
+"distance."
+msgstr ""
+"*GLES3:* Parallax / reliéfní mapování s automatickou úrovní detailů na "
+"základě vzdálenosti."
+
+msgid "*GLES3:* Sub-surface scattering and transmittance."
+msgstr "*GLES3:* Podpovrchový rozptyl a propustnost."
+
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
+msgid "*GLES3:* Proximity fade (soft particles)."
+msgstr "*GLES3:* Blízké vyblednutí (měkké částice)."
+
 msgid "**Real-time lighting:**"
 msgstr "**Osvětlení v reálném čase:**"
 
@@ -378,6 +419,21 @@ msgstr "Všesměrová světla."
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Bodová světla s nastavitelným úhlem kužele a útlumem."
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr ""
+"Dithering lze určit na základě počtu pixelů nebo na základě jednotlivých "
+"objektů."
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**Mapování stínů:**"
@@ -425,23 +481,24 @@ msgstr "*GLES3:* GI sondy (pomalejší, v reálném čase). Podporuje odrazy."
 msgid "**Reflections:**"
 msgstr "**Odrazy:**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "*GLES3:* Odrazy založené na Voxelu (při použití sond GI)."
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "Rychle vytvořené odrazy nebo pomalé odrazy v reálném čase pomocí "
 "ReflectionProbe. Korekci paralaxe lze volitelně povolit."
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "*GLES3:* Odrazy místa na obrazovce."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr "Odrazové techniky lze pro větší přesnost a škálovatelnost kombinovat."
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* Odrazy založené na Voxelu (při použití sond GI)."
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* Odrazy místa na obrazovce."
 
 msgid "**Sky:**"
 msgstr "**Obloha:**"
@@ -521,6 +578,16 @@ msgstr "Nejbližší, bilineární, trilineární nebo anizotropní filtrování
 msgid "**Texture compression:**"
 msgstr "**Komprese textur:**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "*GLES3:* S3TC (není podporován na mobilních / webových platformách)."
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (doporučeno při použití vykreslovacího modulu GLES2)."
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
 "*GLES3:* BPTC pro vysoce kvalitní kompresi (není podporováno v systému "
@@ -528,12 +595,6 @@ msgstr ""
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (není podporováno v systému MacOS)."
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (doporučeno při použití vykreslovacího modulu GLES2)."
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "*GLES3:* S3TC (není podporován na mobilních / webových platformách)."
 
 msgid "**Anti-aliasing:**"
 msgstr "**Anti aliasing:**"
@@ -544,9 +605,26 @@ msgstr "Vícenásobné vyhlazování (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Rychlé přibližné vyhlazování (FXAA)."
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "Výkon"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "Většina z těchto efektů může být upravena pro lepší výkon nebo pro další "
 "zlepšení kvality. To může být užitečné při použití Godota pro offline "
@@ -579,6 +657,10 @@ msgstr "Uzel PathFollow3D, aby uzly sledovaly Path3D."
 
 msgid "3D geometry helper class."
 msgstr "Pomocná třída 3D geometrie."
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "3D fyzika"
@@ -757,8 +839,10 @@ msgstr ""
 "Podpora re-routable :ref:`audio bus <doc_audio_buses>` a efekty s tucty "
 "efektů v ceně."
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "Uzel Listener3D k poslechu z jiné polohy než kamera ve 3D."
 
 msgid ""
@@ -823,7 +907,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`_ (přímý "
 "export z Blenderu)."
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX (experimentální)."
 
 msgid "Collada (.dae)."
@@ -831,6 +916,12 @@ msgstr "Collada (dae)."
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr "Wavefront OBJ (pouze statické scény, lze načíst přímo jako síť)."
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
 
 msgid "Input"
 msgstr "Vstup"
@@ -1021,6 +1112,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "Analyzujte vlastní argumenty příkazového řádku."
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "Mobilní systémy"
 
@@ -1094,9 +1192,13 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "Trees (Stromy) (mohou být také použity k reprezentaci tabulky)."
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 "Kontejnery (vodorovné, svislé, mřížkové, středové, okrajové, tahové "
 "rozdělovače, ...)."
@@ -1156,7 +1258,10 @@ msgstr "Vygenerujte motiv na základě aktuálního nastavení motivu editoru."
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr "Procedurální vektorové tematizace pomocí :ref:`class_StyleBoxFlat`."
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+#, fuzzy
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr "Podporuje zaoblené / zkosené rohy, vržené stíny a šířku okraje."
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1174,6 +1279,11 @@ msgstr "Animace"
 
 msgid "Direct kinematics and inverse kinematics."
 msgstr "Přímá kinematika a inverzní kinematika."
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
+msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr "Podpora animace libovolnévlastnosti s přizpůsobitelnou interpolací."
@@ -1221,7 +1331,8 @@ msgstr ""
 "Čtení a zápis konfiguračních souborů ve stylu INI pomocí :"
 "ref:'class_ConfigFile'."
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+#, fuzzy
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
 "Může (de) serializovat jakýkoli datový typ Godota, včetně Vector, Color, ..."
 
@@ -1254,15 +1365,18 @@ msgstr ""
 ":ref:`Nízkoúrovňový přístup k serverům <doc_using_servers>`, který umožňuje "
 "obejít režii stromu scény, když je to potřeba."
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "Rozhraní příkazového řádku pro automatizaci."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "Export a nasazení projekty pomocí platforem kontinuální integrace."
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`Skripty pro dokončení <https://github.com/godotengine/godot/tree/master/"
 "misc/dist/shell>`_ jsou k dispozici pro Bash, zsh a fish."

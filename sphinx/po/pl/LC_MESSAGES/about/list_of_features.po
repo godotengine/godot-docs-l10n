@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Ta strona ma na celu wyszczególnienie wszystkich funkcji aktualnie "
 "obsługiwanych przez Godot."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -101,8 +102,9 @@ msgstr "**Funkcje**"
 msgid "Scene tree editor."
 msgstr "Edytor edytor hierarchii węzłów."
 
-msgid "Script editor."
-msgstr "Edytor skryptów."
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "Wbudowany edytor motywów."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -162,16 +164,25 @@ msgstr ""
 "Wtyczki edytora można pobrać z :ref:'biblioteki zasobów "
 "<doc_what_is_assetlib>', aby rozszerzyć funkcjonalność edytora."
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
 "Twórz własne wtyczki używając GDScript, aby dodać nowe funkcje lub "
 "przyspieszyć przepływ pracy."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr ""
+"Pobieraj projekty z biblioteki zasobów w menadżerze projektów i importuj je "
+"bezpośrednio."
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr ""
 "Pobieraj projekty z biblioteki zasobów w menadżerze projektów i importuj je "
 "bezpośrednio."
@@ -210,8 +221,8 @@ msgstr ""
 msgid "Parallax layers."
 msgstr "Płótna."
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "Wsparcie dla pseudo-3D dzięki automatycznemu powielaniu warstwy."
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "Oświetlenie 2D z mapowaniem normalnych."
@@ -313,8 +324,14 @@ msgstr ""
 msgid "3D graphics"
 msgstr "Grafika 3D"
 
-msgid "HDR rendering with sRGB."
-msgstr "Renderowanie HDR z sRGB."
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "Domyślnie funkcja importowania animacji jest włączona."
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "Renderowanie LDR dla większej kompatybilności."
@@ -333,19 +350,47 @@ msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr ""
 "Kamery perspektywiczne, ortograficzne oraz z przesuniętą bryłą widzenia."
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**Renderowanie oparte na fizyce:**"
 
 msgid "Follows the Disney PBR model."
 msgstr "Naśladuje model PBR Disneya."
+
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 "Wykorzystuje przepływ pracy zbudowany wokół skali metaliczność-chropowatość "
 "z obsługą tekstur ORM."
 
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
+
 msgid "Normal mapping."
 msgstr "Mapowanie normalnych."
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr ""
+
+msgid ""
+"Distance fade which can use alpha blending or dithering to avoid going "
+"through the transparent pipeline."
+msgstr ""
+"Zanikanie odległości, które może wykorzystywać mieszanie alfa lub "
+"rozpraszanie, aby uniknąć przechodzenia przez potok przezroczystości."
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "Dithering można określić na podstawie co-piksel lub co-obiekt."
 
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
@@ -357,18 +402,14 @@ msgstr ""
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "*GLES3: * Przepuszczalność i rozpraszanie podpowierzchniowe."
 
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "*GLES3:* Zanikanie odległościowe (miękkie cząsteczki)."
-
-msgid ""
-"Distance fade which can use alpha blending or dithering to avoid going "
-"through the transparent pipeline."
-msgstr ""
-"Zanikanie odległości, które może wykorzystywać mieszanie alfa lub "
-"rozpraszanie, aby uniknąć przechodzenia przez potok przezroczystości."
-
-msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr "Dithering można określić na podstawie co-piksel lub co-obiekt."
 
 msgid "**Real-time lighting:**"
 msgstr "**Oświetlenie w czasie rzeczywistym:**"
@@ -381,6 +422,19 @@ msgstr "Wielokierunkowe światła."
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Światła punktowe z modyfikowalnym kątem stożka i osłabianiem."
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "Dithering można określić na podstawie co-piksel lub co-obiekt."
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**Mapowanie cieni**"
@@ -437,18 +491,13 @@ msgstr ""
 msgid "**Reflections:**"
 msgstr "**Odbicia:**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "*GLES3:* Odbicia oparte na wokselach (gdy używane są sondy GI)."
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "Szybkie generowane odbicia lub wolne odbicia w czasie rzeczywistym przy "
 "użyciu ReflectionProbe. Opcjonalnie można włączyć korekcję paralaksy."
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "*GLES3:* refleksje w obrębie ekranu."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
@@ -456,6 +505,12 @@ msgid ""
 msgstr ""
 "Techniki odbicia mogą być za sobą łączone w celu osiągnięcia większej "
 "dokładności."
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* Odbicia oparte na wokselach (gdy używane są sondy GI)."
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* refleksje w obrębie ekranu."
 
 msgid "**Sky:**"
 msgstr "**Niebo:**"
@@ -538,6 +593,17 @@ msgstr "Filtrowanie, bliskie, dwuliniowe, trójliniowe lub anizotropiczne."
 msgid "**Texture compression:**"
 msgstr "**Kompresja tekstur:**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr ""
+"*GLES3:* S3TC (nie wspierane w zastosowaniach mobilnych oraz internetowych)."
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (rekomendowane przy użyciu renderowania GLES2)."
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
 "*GLES3:* BPTC dla wysokiej jakości kompresji (nie wspierane w systemie "
@@ -545,13 +611,6 @@ msgstr ""
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (nie wspierane w systemie macOS)."
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (rekomendowane przy użyciu renderowania GLES2)."
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
-"*GLES3:* S3TC (nie wspierane w zastosowaniach mobilnych oraz internetowych)."
 
 msgid "**Anti-aliasing:**"
 msgstr "**Wygładzanie krawędzi:**"
@@ -562,9 +621,26 @@ msgstr "Wielopróbkowe wygładzanie krawędzi (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Szybki aproksymacyjny antyaliasing (FXAA)."
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "Wydajność"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "Większość tych efektów może być dostosowana by poprawić wydajność lub "
 "poprawić jakość grafiki. Może być to pomocne gdy używasz Godota do "
@@ -598,6 +674,10 @@ msgstr ""
 
 msgid "3D geometry helper class."
 msgstr "Klasa pomocnicza geometrii 3D."
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "Fizyka 3D"
@@ -762,7 +842,7 @@ msgid ""
 msgstr ""
 
 msgid "Audio"
-msgstr "Dźwięk"
+msgstr "Audio"
 
 msgid "Mono, stereo, 5.1 and 7.1 output."
 msgstr "Wyjście mono, stereo, 5.1 i 7.1."
@@ -778,14 +858,18 @@ msgid ""
 "with dozens of effects included."
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "Słuchacz3D węzła by słuchać z innej pozycji niż kamera w 3D."
 
 msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Wejście audio do nagrywania z mikrofonów w czasie rzeczywistym, przy użyciu "
+"klasy AudioEffectCapture."
 
 msgid "MIDI input."
 msgstr "Wejście MIDI."
@@ -803,7 +887,7 @@ msgid "*macOS:* CoreAudio."
 msgstr ""
 
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio lub ALSA."
 
 msgid "Import"
 msgstr "Zaimportuj"
@@ -842,7 +926,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ "
 "(bezpośredni eksport z Blendera)."
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX (eksperymentalne)."
 
 msgid "Collada (.dae)."
@@ -852,8 +937,15 @@ msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
 "Wavefront OBJ (tylko statyczne sceny, mogą być ładowane bezpośrednio w mesh)."
 
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
+
+#, fuzzy
 msgid "Input"
-msgstr "Wejście"
+msgstr "Input"
 
 msgid ""
 "Input mapping system using hardcoded input events or remappable input "
@@ -1018,6 +1110,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "Wywoływanie własnych komend wiersza poleceń."
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "Na telefonie"
 
@@ -1086,9 +1185,12 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr ""
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 
 msgid "Controls can be rotated and scaled."
@@ -1139,7 +1241,9 @@ msgstr ""
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ""
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr ""
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1154,6 +1258,11 @@ msgid "Animation"
 msgstr "Animacja"
 
 msgid "Direct kinematics and inverse kinematics."
+msgstr ""
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
 msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
@@ -1196,7 +1305,7 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
 
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1221,16 +1330,19 @@ msgid ""
 "bypassing the scene tree's overhead when needed."
 msgstr ""
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "Interfejs wiersza poleceń pozwalający na automatyzację."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 "Wyeksportuj i postaw projekty używając ciągłych platform integracyjnych."
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`Autouzupełnianie <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ dostępne dla powłok Bash, zsh i fish."

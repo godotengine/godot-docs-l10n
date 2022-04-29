@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "信号"
 
-msgid "Using Signals"
+#, fuzzy
+msgid "Using signals"
 msgstr "使用信号"
 
 msgid ""
@@ -59,15 +60,22 @@ msgstr ""
 "正如引言中提到的，信号是 Godot 版本的观察者模式。您可以在此处了解有关它的更多"
 "信息：https://gameprogrammingpatterns.com/observer.html"
 
+#, fuzzy
 msgid ""
-"We will now use a signal to make our Godot icon from last part move and stop "
-"by pressing a button."
+"We will now use a signal to make our Godot icon from the previous lesson (:"
+"ref:`doc_scripting_player_input`) move and stop by pressing a button."
 msgstr ""
 "现在，我们将使用一个信号来使最后一部分的 Godot 图标移动，并通过按下按钮来停"
 "止。"
 
 msgid "Scene setup"
 msgstr "场景设置"
+
+msgid ""
+"To add a button to our game, we will create a new \"main\" scene which will "
+"include both a button and the ``Sprite.tscn`` scene that we scripted in "
+"previous lessons."
+msgstr ""
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "通过转到菜单“场景 -> 新建场景”来创建新场景。"
@@ -92,12 +100,12 @@ msgstr ""
 "择“添加子节点”。"
 
 msgid "Search for the Button node type and add it."
-msgstr "寻找并添加按钮（Button）节点类型。"
+msgstr "寻找并添加 Button 节点类型。"
 
 msgid ""
 "The node is small by default. Click and drag on the bottom-right handle of "
 "the Button in the viewport to resize it."
-msgstr "按钮默认大小为“小”。点击并拖拽按钮右下角的手柄在视窗中重新设置大小。"
+msgstr "该节点默认比较小。在视区中，点击并拖拽该按钮右下角的手柄来调整大小。"
 
 msgid ""
 "If you don't see the handles, ensure the select tool is active in the "
@@ -113,7 +121,10 @@ msgid ""
 msgstr "你也可以通过在检查器中编辑 Text 属性在 Button 上写一个标签。"
 
 msgid "Your scene tree and viewport should look like this."
-msgstr "您的场景树和视窗应该是类似这样的。"
+msgstr "您的场景树和视区应该是类似这样的。"
+
+msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+msgstr ""
 
 msgid "Connecting a signal in the editor"
 msgstr "在编辑器中连接信号"
@@ -247,10 +258,11 @@ msgstr ""
 "回到 2D 工作区。你可以点击窗口顶部的“2D”文字，或者按 :kbd:`Ctrl + F1`\\ "
 "（macOS 上则是 :kbd:`Alt + 1`）。"
 
+#, fuzzy
 msgid ""
-"In the Scene dock, right-click on the Sprite node and add a new node. Search "
-"for Timer and add the corresponding node. Your scene should now look like "
-"this."
+"In the Scene dock, right-click on the Sprite node and add a new child node. "
+"Search for Timer and add the corresponding node. Your scene should now look "
+"like this."
 msgstr ""
 "在“场景”面板中，右键点击 Sprite 节点并添加新节点。找到 Timer 并添加对应节点。"
 "你的场景现在应该类似这样。"
@@ -280,6 +292,13 @@ msgid ""
 msgstr ""
 "要使用代码来连接信号，你需要调用所需监听节点的 ``connect()`` 方法。这里我们要"
 "监听的是 Timer 的“timeout”信号。"
+
+msgid ""
+"We want to connect the signal when the scene is intantiated, and we can do "
+"that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
+"function, which is called automatically by the engine when a node is fully "
+"instantiated."
+msgstr ""
 
 msgid ""
 "To get a reference to a node relative to the current one, we use the method :"
@@ -324,8 +343,23 @@ msgstr ""
 "visible`` 行切换该值。如果 ``visible`` 是 ``true``\\ ，它就会变成 "
 "``false``\\ ，反之亦然。"
 
+#, fuzzy
+msgid "Complete script"
+msgstr "示例脚本"
+
+#, fuzzy
+msgid ""
+"That's it for our little moving and blinking Godot icon demo! Here is the "
+"complete ``Sprite.gd`` file for reference."
+msgstr "这是完整的 ``Sprite.gd`` 文件，仅供参考。"
+
 msgid "Custom signals"
 msgstr "自定义信号"
+
+msgid ""
+"This section is a reference on how to define and use your own signals, and "
+"does not build upon the project created in previous lessons."
+msgstr ""
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "

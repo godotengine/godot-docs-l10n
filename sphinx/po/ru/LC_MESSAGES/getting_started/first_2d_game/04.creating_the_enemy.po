@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating the enemy"
-msgstr "Создание скелета"
+msgstr "Создание врага"
 
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
@@ -63,7 +62,6 @@ msgstr ""
 "Не забудьте настроить дочерние узлы, чтобы они не могли быть выбраны, как вы "
 "это делали со сценой игрока."
 
-#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
@@ -89,7 +87,6 @@ msgstr ""
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "Установите \"Speed (FPS)\" на ``3`` для всех анимаций."
 
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to \"On\"."
 msgstr "Установите свойство ``Playing`` в инспекторе на \"Вкл\"."
 
@@ -100,7 +97,6 @@ msgstr ""
 "Мы выберем одну из этих анимаций случайным образом, так что мобы будут иметь "
 "некоторое разнообразие."
 
-#, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -124,9 +120,8 @@ msgstr "Сохраните сцену."
 msgid "Enemy script"
 msgstr "Скрипт врага"
 
-#, fuzzy
 msgid "Add a script to the ``Mob`` like this:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr "Добавьте скрипт к ``Mob`` вот так:"
 
 #, fuzzy
 msgid ""
@@ -182,6 +177,9 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+"Теперь, когда игрок и враги готовы, в следующей части мы перенесём их на "
+"новую сцену. Мы заставим врагов появляться случайно по границам экрана и "
+"двигаться вперёд, сделав наш проект играбельным."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

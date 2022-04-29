@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,38 +24,44 @@ msgstr "Что это?"
 msgid "Introduction"
 msgstr "Введение"
 
+#, fuzzy
 msgid ""
 "**GDNative** is a Godot-specific technology that lets the engine interact "
 "with native `shared libraries <https://en.wikipedia.org/wiki/"
 "Library_(computing)#Shared_libraries>`__ at run-time. You can use it to run "
 "native code without compiling it with the engine."
 msgstr ""
+"**GDNative** - это специфическая для Godot технология, позволяющая движку "
+"взаимодействовать с нативными библиотеками <https://en.wikipedia.org/wiki/"
+"Library_(computing)#Shared_libraries>`__ во время выполнения. Вы можете "
+"использовать ее для запуска нативного кода без компиляции в движке."
 
 msgid ""
 "GDNative is *not* a scripting language and has no relation to :ref:`GDScript "
 "<doc_gdscript>`."
 msgstr ""
+"GDNative *не* является скриптовым языком и не имеет отношения к :ref:"
+"`GDScript <doc_gdscript>`."
 
-#, fuzzy
 msgid "Differences between GDNative and C++ modules"
-msgstr "Отличия между GLES2 и GLES3"
+msgstr "Различия между GDNative и модулями C++"
 
-#, fuzzy
 msgid ""
 "You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` "
 "to run C or C++ code in a Godot project."
 msgstr ""
-"Поддержка :ref:`модулей C++ <doc_custom_modules_in_c++>`, статически "
-"связанных с двоичным файлом движка."
+"Вы можете использовать как GDNative, так и :ref:`C++ модули "
+"<doc_custom_modules_in_c++>` для запуска C или C++ кода в проекте Godot."
 
 msgid ""
 "They also both allow you to integrate third-party libraries into Godot. The "
 "one you should choose depends on your needs."
 msgstr ""
+"Они также позволяют интегрировать в Godot библиотеки сторонних "
+"разработчиков. Выбор того или иного варианта зависит от ваших потребностей."
 
-#, fuzzy
 msgid "Advantages of GDNative"
-msgstr "Преимущества"
+msgstr "Преимущества GDNative"
 
 msgid ""
 "Unlike modules, GDNative doesn't require compiling the engine's source code, "
@@ -65,21 +71,34 @@ msgid ""
 "you'd like to distribute as an add-on in the :ref:`asset library "
 "<doc_what_is_assetlib>`."
 msgstr ""
+"В отличие от модулей, GDNative не требует компиляции исходного кода движка, "
+"что облегчает распространение вашей работы. Он дает вам доступ к большинству "
+"API, доступных для GDScript C#, позволяя вам разрабатывать игровую логику с "
+"полным контролем над производительностью. Это идеальный вариант, если вам "
+"нужен высокопроизводительный код, который вы хотели бы распространять в "
+"качестве дополнения в :ref:`библиотеке ассетов <doc_what_is_assetlib>`."
 
 msgid "Also:"
-msgstr ""
+msgstr "А также:"
 
 msgid ""
 "GDNative is not limited to C and C++. Thanks to :ref:`third-party bindings "
 "<doc_what_is_gdnative_third_party_bindings>`, you can use it with many other "
 "languages."
 msgstr ""
+"GDNative не ограничивается C и C++. Благодаря :ref:` "
+"биндингам<doc_what_is_gdnative_third_party_bindings>`, вы можете "
+"использовать его со множеством других языков."
 
 msgid ""
 "You can use the same compiled GDNative library in the editor and exported "
 "project. With C++ modules, you have to recompile all the export templates "
 "you plan to use if you require its functionality at run-time."
 msgstr ""
+"Вы можете использовать одну и ту же скомпилированную библиотеку GDNative в "
+"редакторе и экспортируемом проекте. С модулями C++ вам придется "
+"перекомпилировать все шаблоны экспорта, которые вы планируете использовать, "
+"если вам потребуется их функциональность во время выполнения."
 
 msgid ""
 "GDNative only requires you to compile your library, not the whole engine. "
@@ -87,88 +106,121 @@ msgid ""
 "Every time you change a module, you need to recompile the engine. Even with "
 "incremental builds, this process is slower than using GDNative."
 msgstr ""
+"GDNative требует компиляции только вашей библиотеки, а не всего движка. Это "
+"отличается от модулей C++, которые статически компилируются в движок. Каждый "
+"раз, когда вы изменяете модуль, вам нужно перекомпилировать движок. Даже при "
+"инкрементных сборках этот процесс происходит медленнее, чем при "
+"использовании GDNative."
 
 msgid "Advantages of C++ modules"
-msgstr ""
+msgstr "Преимущества модулей C++"
 
-#, fuzzy
 msgid ""
 "We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where "
 "GDNative isn't enough:"
 msgstr ""
-"Поддержка :ref:`модулей C++ <doc_custom_modules_in_c++>`, статически "
-"связанных с двоичным файлом движка."
+"Мы рекомендуем использовать :ref:`C++ модули <doc_custom_modules_in_c++>` в "
+"случаях, когда GDNative недостаточно':"
 
+#, fuzzy
 msgid ""
 "C++ modules provide deeper integration into the engine. GDNative's access is "
 "limited to what the scripting API exposes."
 msgstr ""
+"Модули C++ обеспечивают более глубокую интеграцию в движок. Доступ GDNative "
+"ограничен тем, что предоставляет API для сценариев."
 
+#, fuzzy
 msgid ""
 "You can use C++ modules to provide additional features in a project without "
 "carrying native library files around. This extends to exported projects."
 msgstr ""
+"Вы можете использовать модули C++ для реализации дополнительных возможностей "
+"в проекте, не используя файлы нативных библиотек. Это распространяется и на "
+"экспортируемые проекты."
 
 msgid ""
 "C++ modules are supported on all platforms. In contrast, GDNative isn't "
 "supported on HTML5 and the Universal Windows Platform (UWP) yet."
 msgstr ""
+"Модули C++ поддерживаются на всех платформах. В противоположность этому, "
+"GDNative пока не поддерживается на HTML5 и Universal Windows Platform (UWP)."
 
 msgid ""
 "C++ modules can be faster than GDNative, especially when the code requires a "
 "lot of communication through the scripting API."
 msgstr ""
+"Модули C++ могут быть быстрее, чем GDNative, особенно если код требует "
+"значительного взаимодействия через API сценариев."
 
-#, fuzzy
 msgid "Supported languages"
-msgstr "Поддерживаемые файлы"
+msgstr "Поддерживаемые языки"
 
 msgid ""
 "The Godot developers officially support the following language bindings for "
 "GDNative:"
 msgstr ""
+"Разработчики Godot официально поддерживают следующие языковые привязки для "
+"GDNative:"
 
 msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
-msgstr ""
+msgstr "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
 
-#, fuzzy
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
-msgstr ":ref:`doc_input_examples`"
+msgstr "C :ref:`(tutorial) <doc_gdnative_c_example>`"
 
 msgid ""
 "There are no plans to support additional languages with GDNative officially. "
 "That said, the community offers several bindings for other languages (see "
 "below)."
 msgstr ""
+"Официальная поддержка дополнительных языков в GDNative не планируется. Тем "
+"не менее, сообщество предлагает несколько привязок для других языков (см. "
+"ниже)."
 
 msgid "The bindings below are developed and maintained by the community:"
-msgstr ""
+msgstr "Приведенные ниже привязки разработаны и поддерживаются сообществом:"
 
-#, fuzzy
 msgid "`D <https://github.com/godot-d/godot-d>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`D <https://github.com/godot-d/godot-d>`__"
 
-#, fuzzy
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
 
-#, fuzzy
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Nim <https://github.com/pragmagic/godot-nim>`__"
 
-#, fuzzy
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Python <https://github.com/touilleMan/godot-python>`__"
 
-#, fuzzy
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Rust <https://github.com/godot-rust/godot-rust>`__"
 
 msgid ""
 "Not all bindings mentioned here may be production-ready. Make sure to "
 "research options thoroughly before starting a project with one of those. "
 "Also, double-check whether the binding is compatible with the Godot version "
 "you're using."
+msgstr ""
+"Не все упомянутые здесь привязки могут быть готовыми для использования в "
+"продакшене. Прежде чем начинать проект с одним из них, тщательно изучите "
+"возможные варианты. Также проверьте, совместима ли привязка с версией Godot, "
+"которую вы используете."
+
+msgid "Version compatibility"
+msgstr ""
+
+msgid ""
+":ref:`Unlike Godot itself <doc_release_policy>`, GDNative has stricter "
+"version compatibility requirements as it relies on low-level *ptrcalls* to "
+"function."
+msgstr ""
+
+msgid ""
+"GDNative add-ons compiled for a given Godot version are only guaranteed to "
+"work with the same minor release series. For example, a GDNative add-on "
+"compiled for Godot 3.4 will only work with Godot 3.4, 3.4.1, 3.4.2… but not "
+"Godot 3.3 or 3.5."
 msgstr ""
 
 msgid "Translation status"

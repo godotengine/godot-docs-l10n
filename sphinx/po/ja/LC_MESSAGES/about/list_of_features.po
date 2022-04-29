@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "このページでは、Godotが現在サポートしているすべての機能をリストアップすること"
 "を目的としています。"
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -102,8 +103,9 @@ msgstr "**機能:**"
 msgid "Scene tree editor."
 msgstr "シーンツリー エディタ。"
 
-msgid "Script editor."
-msgstr "スクリプト エディタ。"
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "内蔵テーマエディタ。"
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -161,16 +163,25 @@ msgstr ""
 ":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
 "ダウンロードして、エディタの機能を拡張することができます。"
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
 "GDScript を使用して独自のプラグインを作成し、新しい機能を追加したり、ワークフ"
 "ローを高速化したりすることができます。"
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr ""
+"プロジェクトマネージャのアセットライブラリからプロジェクトをダウンロードし"
+"て、直接インポートします。"
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr ""
 "プロジェクトマネージャのアセットライブラリからプロジェクトをダウンロードし"
 "て、直接インポートします。"
@@ -208,8 +219,8 @@ msgstr "アニメーションするスプライトを作るのに役立つAnimat
 msgid "Parallax layers."
 msgstr "視差レイヤー。"
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "自動でレイヤーを何層か複製する疑似3Dのサポート。"
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "法線マップを用いた2Dライティング。"
@@ -310,8 +321,14 @@ msgstr "衝突ポリゴン (手動で描いたり、エディタ内でスプラ�
 msgid "3D graphics"
 msgstr "3Dグラフィックス"
 
-msgid "HDR rendering with sRGB."
-msgstr "sRGBでHDRレンダリング。"
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "アニメーションのインポート(Import)はデフォルトで有効になっています。"
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "互換性を高めるためのLDRレンダリング。"
@@ -329,29 +346,35 @@ msgstr "**カメラ:**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透視投影、平行投影、視錐台オフセットカメラ。"
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**物理ベースレンダリング:**"
 
 msgid "Follows the Disney PBR model."
 msgstr "ディズニーPBRモデルに準拠。"
 
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
+
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "ORMテクスチャに対応するラフネスメタリック用ワークフローを使用。"
+
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
 
 msgid "Normal mapping."
 msgstr "法線マップ。"
 
-msgid ""
-"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
-"distance."
+msgid "Detail mapping for the albedo and normal maps."
 msgstr ""
-"*GLES3:* 距離に応じて自動レベルのディテールを持つ視差 / リリーフマッピング。"
-
-msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr "*GLES3:* サブサーフェス・スキャタリングおよび透過。"
-
-msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr "*GLES3:* 近接フェード (ソフトパーティクル)。"
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
@@ -362,6 +385,24 @@ msgstr ""
 
 msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr "ディザリングは、ピクセル単位またはオブジェクト単位で決定可能。"
+
+msgid ""
+"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
+"distance."
+msgstr ""
+"*GLES3:* 距離に応じて自動レベルのディテールを持つ視差 / リリーフマッピング。"
+
+msgid "*GLES3:* Sub-surface scattering and transmittance."
+msgstr "*GLES3:* サブサーフェス・スキャタリングおよび透過。"
+
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
+msgid "*GLES3:* Proximity fade (soft particles)."
+msgstr "*GLES3:* 近接フェード (ソフトパーティクル)。"
 
 msgid "**Real-time lighting:**"
 msgstr "**リアルタイム照明:**"
@@ -374,6 +415,19 @@ msgstr "全方位ライト。"
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "コーンの角度および減衰量を調整できるスポットライト。"
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "ディザリングは、ピクセル単位またはオブジェクト単位で決定可能。"
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**シャドウマッピング:**"
@@ -425,23 +479,24 @@ msgstr "*GLES3:* GIプローブ (低速、セミリアルタイム)。反射を�
 msgid "**Reflections:**"
 msgstr "**反射:**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "*GLES3:* ボクセルベースの反射 (GIプローブ使用時)。"
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "ReflectionProbe を使用した高速ベイクド反射または低速リアルタイム反射。オプ"
 "ションで視差補正を有効にすることができます。"
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "*GLES3:* スクリーンスペース リフレクション。"
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr "反射技術は、高い精度とスケーラビリティを共に混在させることができます。"
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* ボクセルベースの反射 (GIプローブ使用時)。"
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* スクリーンスペース リフレクション。"
 
 msgid "**Sky:**"
 msgstr "**空:**"
@@ -520,17 +575,21 @@ msgstr "ニアレスト、バイリニア、トリリニア、または異方性
 msgid "**Texture compression:**"
 msgstr "**テクスチャ圧縮:**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "*GLES3:* S3TC (モバイル / Webプラットフォームでは未対応)。"
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (GLES2レンダラー使用時に推奨)。"
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr "*GLES3:* 高品質圧縮のためのBPTC (macOSには未対応)。"
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (macOSには未対応)。"
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (GLES2レンダラー使用時に推奨)。"
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "*GLES3:* S3TC (モバイル / Webプラットフォームでは未対応)。"
 
 msgid "**Anti-aliasing:**"
 msgstr "**アンチエイリアシング:**"
@@ -541,9 +600,26 @@ msgstr "マルチサンプル アンチエイリアシング (MSAA)。"
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "高速近似アンチエイリアス(FXAA)。"
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "パフォーマンス"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "これらエフェクトのほぼ全ては、より良いパフォーマンス、もしくはクオリティー改"
 "善のために調整できます。これはGodotをオフラインレンダリングで使用する際に役立"
@@ -573,6 +649,10 @@ msgstr "ノードを Path3D に追従させるためのノードである PathFo
 
 msgid "3D geometry helper class."
 msgstr "3Dジオメトリ用ヘルパークラス。"
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "3D物理"
@@ -753,8 +833,10 @@ msgstr ""
 "再ルーティング可能な :ref:`オーディオバス <doc_audio_buses>` と数十種類のエ"
 "フェクトをサポートしています。"
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "3Dでカメラとは異なる位置からリッスンするListener3Dノード。"
 
 msgid ""
@@ -819,7 +901,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (Blenderから"
 "直接エクスポート)。"
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX(実験的)。"
 
 msgid "Collada (.dae)."
@@ -827,6 +910,12 @@ msgstr "Collada(.dae)。"
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr "Wavefront OBJ (静的シーンのみ、メッシュとして直接ロード可能)。"
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
 
 msgid "Input"
 msgstr "入力"
@@ -1014,6 +1103,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "カスタムのコマンドライン引数をパース。"
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "モバイル"
 
@@ -1032,18 +1128,16 @@ msgstr "XR (ARおよびVR) に対応"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "iOSのARKitをすぐに使える状態で対応。"
 
-#, fuzzy
 msgid "Support for the OpenXR APIs."
-msgstr "OpenXRおよびOpenVR APIに対応。"
+msgstr "OpenXR APIに対応。"
 
 msgid ""
 "Includes support for popular headsets like the Meta Quest and the Valve "
 "Index."
-msgstr ""
+msgstr "Meta Quest や Valve Index のような人気のあるヘッドセットに対応。"
 
-#, fuzzy
 msgid "Support for the OpenVR APIs."
-msgstr "OpenXRおよびOpenVR APIに対応。"
+msgstr "OpenVR APIに対応。"
 
 msgid "GUI system"
 msgstr "GUIシステム"
@@ -1087,9 +1181,13 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "ツリー (表の表現にも使えます)。"
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 "コンテナ (水平、垂直、グリッド、中央、マージン、ドラッグ可能なスプリッ"
 "タ、...)。"
@@ -1149,7 +1247,10 @@ msgstr ""
 "ref:`class_StyleBoxFlat` を使用したプロシージャルなベクターベースのテーマ設"
 "定。"
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+#, fuzzy
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr "角丸・面取り、ドロップシャドウ、ボーダーごとの幅に対応。"
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1167,6 +1268,11 @@ msgstr "アニメーション"
 
 msgid "Direct kinematics and inverse kinematics."
 msgstr "ダイレクトキネマティクスとインバースキネマティクス。"
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
+msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
@@ -1215,7 +1321,8 @@ msgid ""
 msgstr ""
 "ref:`class_ConfigFile` を使用した、INIスタイルの設定ファイルの読み書き。"
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+#, fuzzy
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr "Vector、Colorなど、あらゆるGodotデータ型は(デ)シリアライズできます。"
 
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1246,7 +1353,9 @@ msgstr ""
 ":ref:`サーバーへの低レベルのアクセス 。 <doc_using_servers>` これにより、必要"
 "に応じてシーンツリーのオーバーヘッドを回避することができます。"
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "自動化のためのコマンドライン用インターフェイス。"
 
 msgid "Export and deploy projects using continuous integration platforms."
@@ -1254,9 +1363,10 @@ msgstr ""
 "継続的インテグレーション(CI)のプラットフォームを利用したプロジェクトのエクス"
 "ポートとデプロイ。"
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "Bash、zsh、fish 用の\\ `自動補完スクリプト <https://github.com/godotengine/"
 "godot/tree/master/misc/dist/shell>`__\\ あり。"
@@ -1309,6 +1419,5 @@ msgstr ""
 "proposals>`__ には、コミュニティから求められている今後の Godot リリースで実装"
 "される可能性のある機能が掲載されています。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻訳形式"
+msgstr "翻訳ステータス"

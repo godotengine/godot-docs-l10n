@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgid "Your Particles2D node should now be emitting white points downward."
 msgstr "Ihr Particles2D-Node sollte jetzt weiße Punkte nach unten senden."
 
 msgid "Texture"
-msgstr "Texturen"
+msgstr "Textur"
 
 msgid ""
 "A particle system uses a single texture (in the future this might be "
@@ -127,7 +127,7 @@ msgid "Time parameters"
 msgstr "Zeitparameter"
 
 msgid "Lifetime"
-msgstr "Lebensdauer"
+msgstr "Lebenszeit"
 
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
@@ -153,7 +153,7 @@ msgstr ""
 "Partikel einmal und dann nie wieder aus."
 
 msgid "Preprocess"
-msgstr "Vorverarbeitung"
+msgstr "Vorbearbeitung"
 
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
@@ -170,7 +170,7 @@ msgstr ""
 "tatsächlich gezeichnet wird."
 
 msgid "Speed Scale"
-msgstr "Geschwindigkeitsskala"
+msgstr "Geschwindigkeitsskalierung"
 
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
@@ -221,7 +221,7 @@ msgstr ""
 "bestimmen lautet:"
 
 msgid "Fixed FPS"
-msgstr "feste FPS"
+msgstr "Feste FPS"
 
 msgid ""
 "This setting can be used to set the particle system to render at a fixed "
@@ -236,7 +236,7 @@ msgstr ""
 "verlangsamt."
 
 msgid "Fract Delta"
-msgstr "Fract Delta"
+msgstr "Delta-Bruchteil"
 
 msgid "This can be used to turn Fract Delta on or off."
 msgstr "Dies kann verwendet werden, um Fract Delta ein oder auszuschalten."
@@ -245,7 +245,7 @@ msgid "Drawing parameters"
 msgstr "Zeichnungsparameter"
 
 msgid "Visibility Rect"
-msgstr "sichtbares Recheck"
+msgstr "Sichtbarkeitsrechteck"
 
 msgid ""
 "The visibility rectangle controls the visibility of the particles on screen. "
@@ -290,7 +290,7 @@ msgstr ""
 "Particles2D Node ändern."
 
 msgid "Local Coords"
-msgstr "Lokale Koordinaten"
+msgstr "Lokale Koordination"
 
 msgid ""
 "By default this option is on, and it means that the space that particles are "
@@ -310,7 +310,7 @@ msgstr ""
 "nicht betroffen:"
 
 msgid "Draw Order"
-msgstr "Zeichnungsreihenfolge"
+msgstr "Zeichenreihenfolge"
 
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
@@ -350,7 +350,7 @@ msgstr ""
 "bewegen."
 
 msgid "Spread"
-msgstr "Ausbreitung"
+msgstr "Streuung"
 
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
@@ -364,19 +364,19 @@ msgstr ""
 "Parameter \"Anfangsgeschwindigkeit\" größer als 0 sein."
 
 msgid "Flatness"
-msgstr "Ebenheit"
+msgstr "Flachheit"
 
 msgid "This property is only useful for 3D particles."
 msgstr "Diese Eigenschaft ist nur für 3D-Partikel nützlich."
 
 msgid "Gravity"
-msgstr "Gravitation"
+msgstr "Schwerkraft"
 
 msgid "The gravity applied to every particle."
 msgstr "Die Schwerkraft, die auf jedes Teilchen angewendet wird."
 
 msgid "Initial Velocity"
-msgstr "Anfangsgeschwindigkeit"
+msgstr "Anfängliche Geschwindigkeit"
 
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
@@ -407,7 +407,7 @@ msgstr ""
 "ihr Zentrum drehen (in Grad/Sek.)."
 
 msgid "Orbit Velocity"
-msgstr "Umlaufgeschwindigkeit"
+msgstr "Orbitgeschwindigkeit"
 
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""

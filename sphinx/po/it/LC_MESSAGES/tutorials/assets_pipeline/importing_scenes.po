@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,32 +254,28 @@ msgstr ""
 msgid "Nodes"
 msgstr "Nodi"
 
-#, fuzzy
 msgid "Root Type"
-msgstr "Tipo radice"
+msgstr "Tipo di Root"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
 
-#, fuzzy
 msgid "Root Name"
-msgstr "Nome della radice"
+msgstr "Nome Root"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr ""
 
-#, fuzzy
 msgid "Root Scale"
-msgstr "Scala della radice"
+msgstr "Scala Root"
 
 msgid "The scale of the root node."
 msgstr "La scala del nodo radice."
 
-#, fuzzy
 msgid "Custom Script"
-msgstr "Script personalizzato"
+msgstr "Script Personalizzato"
 
 msgid ""
 "A special script to process the whole scene after import can be provided. "
@@ -298,7 +294,7 @@ msgid ""
 msgstr ""
 
 msgid "Storage"
-msgstr "Archiviazione"
+msgstr "Memorizzazione"
 
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
@@ -347,7 +343,7 @@ msgid ""
 msgstr ""
 
 msgid "Keep On Reimport"
-msgstr ""
+msgstr "Mantieni Alla Reimportazione"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -356,7 +352,7 @@ msgid ""
 msgstr ""
 
 msgid "Meshes"
-msgstr "Meshes"
+msgstr "Mesh"
 
 msgid "Compress"
 msgstr "Comprimi"
@@ -440,15 +436,14 @@ msgid ""
 "exactly where they should be."
 msgstr ""
 
-#, fuzzy
 msgid "Ensure Tangents"
-msgstr "Garantire le tangenti"
+msgstr "Garantisci Tangenti"
 
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
-"source scene. Godot uses Mikktspace for this, but it's always better to have "
-"them generated in the exporter."
+"source scene. Godot uses `Mikktspace <http://www.mikktspace.com/>`__ for "
+"this, but it's always better to have them generated in the exporter."
 msgstr ""
 
 msgid ""
@@ -463,7 +458,7 @@ msgid ""
 msgstr ""
 
 msgid "Light Baking"
-msgstr ""
+msgstr "Baking Luce"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr ""
@@ -484,9 +479,8 @@ msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
 "Per maggiori informazioni sul light baking vedi :ref:`doc_baked_lightmaps`."
 
-#, fuzzy
 msgid "External Files"
-msgstr "File esterni"
+msgstr "File Esterni"
 
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
@@ -523,9 +517,8 @@ msgid ""
 "result in shaky animations."
 msgstr ""
 
-#, fuzzy
 msgid "Filter Script"
-msgstr "Filtro Script"
+msgstr "Filtra Script"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -602,7 +595,7 @@ msgid ""
 msgstr ""
 
 msgid "Clips"
-msgstr "Clips"
+msgstr "Clip"
 
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
@@ -807,6 +800,5 @@ msgid ""
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato di traduzione"
+msgstr "Stato della traduzione"

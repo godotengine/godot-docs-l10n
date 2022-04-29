@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,19 +39,28 @@ msgstr "向分组中的所有节点发送通知。"
 msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr "这个功能可以用来组织大型场景、对代码解耦。"
 
-msgid "Adding nodes to a group"
-msgstr "将节点加入分组"
+#, fuzzy
+msgid "Managing groups"
+msgstr "管理连接"
 
-msgid "There are two ways to add nodes to groups:"
+msgid ""
+"Groups are created by adding a node to a new group name, and likewise they "
+"are removed by removing all nodes from a given group."
+msgstr ""
+
+#, fuzzy
+msgid "There are two ways to add/remove nodes to groups:"
 msgstr "将节点加入分组有两种方法："
 
-msgid "Using the Node dock in the editor."
+#, fuzzy
+msgid "During design, by using the Node dock in the editor."
 msgstr "使用编辑器的“节点”停靠面板。"
 
 msgid ""
-"Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
+"During execution, by calling :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
 msgstr ""
-"调用 :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`\\ 。"
 
 msgid "Using the Node dock"
 msgstr "使用节点面板"

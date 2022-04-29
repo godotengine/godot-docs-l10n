@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,13 +185,53 @@ msgstr ""
 "Skript musí pracovat v režimu ``tool``, aby výše uvedené metody mohly "
 "fungovat v editoru."
 
+msgid "Properties"
+msgstr "Vlastnosti"
+
+msgid ""
+"To understand how to better use the sections below, you should understand "
+"how to make properties with advanced exports."
+msgstr ""
+
+msgid ""
+"The ``_get_property_list()`` function gets called by the inspector. You can "
+"override it for more advanced exports. You must return an ``Array`` with the "
+"contents of the properties for the function to work."
+msgstr ""
+
+#, fuzzy
+msgid "``name`` is the name of the property"
+msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
+
+msgid "``type`` is the type of the property from ``Variant.Type``."
+msgstr ""
+
+msgid ""
+"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
+"enum."
+msgstr ""
+
+#, fuzzy
+msgid "Attaching variables to properties"
+msgstr "Přidání rozhraní pro úpravu vlastností"
+
+msgid ""
+"To attach variables to properties (allowing the value of the property to be "
+"used in scripts), you need to create a variable with the exact same name as "
+"the property or else you may need to override the :ref:`_set() "
+"<class_Object_method__get_property_list>` and :ref:`_get() "
+"<class_Object_method__get_property_list>` methods. Attaching a variable to "
+"to a property also gives you the ability to give it a default state. ::"
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "Přidání kategorií skriptu"
 
+#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category."
+"Variables`` is one example of a built-in category. ::"
 msgstr ""
 "Pro lepší vizuální rozlišení vlastností lze do inspektora vložit speciální "
 "kategorii skriptu, která slouží jako oddělovač. Příkladem takové kategorie "
@@ -199,6 +239,11 @@ msgstr ""
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
+
+msgid ""
+"Every following property added after the category definition will be a part "
+"of the category."
+msgstr ""
 
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
@@ -214,7 +259,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "Seskupování vlastností"
 
-msgid "A list of properties with similar names can be grouped."
+#, fuzzy
+msgid "A list of properties with similar names can be grouped. ::"
 msgstr "Seznam vlastností s podobnými názvy lze seskupit."
 
 msgid ""
@@ -224,11 +270,13 @@ msgstr ""
 "``name`` je název skupiny, která bude zobrazena jako skládací seznam "
 "vlastností;"
 
+#, fuzzy
 msgid ""
-"every successive property added after the group property will be collapsed "
-"and shortened as determined by the prefix defined via the ``hint_string`` "
-"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
-"this case."
+"Every following property added after the group property with the prefix "
+"(which determined by ``hint_string``) will be shortened. For instance, "
+"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
+"However, ``movement_speed`` won't be a part of the group and will not be "
+"shortened."
 msgstr ""
 "každá další vlastnost přidaná za vlastnost skupiny bude sbalena a zkrácena "
 "podle prefixu definovaného pomocí klíče ``hint_string``. Například "

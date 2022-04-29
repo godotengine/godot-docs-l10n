@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,9 @@ msgstr ""
 msgid "Godot's design philosophy"
 msgstr "Философия дизайна Godot"
 
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
-msgstr "Теперь, когда вы \"набили руку\", давайте поговорим о дизайне Godot."
+msgstr ""
+"Теперь, когда вы \"набили свою руку\", давайте поговорим о дизайне Godot."
 
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
@@ -49,7 +49,6 @@ msgstr ""
 "движок для вашего проекта, его необходимо попробовать самостоятельно и "
 "понять его архитектуру и ограничения."
 
-#, fuzzy
 msgid ""
 "Please watch `Godot explained in 5 minutes <https://www.youtube.com/watch?"
 "v=KjX5llYZ5eQ>`_ if you're looking for an overview of the engine's features."
@@ -113,11 +112,9 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "|image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -128,31 +125,32 @@ msgstr ""
 "Также обратите внимание, что Godot предлагает множество различных типов "
 "объектов, называемых узлами, каждый из которых имеет определенную цель. Узлы "
 "являются частью дерева и всегда наследуют от своих родителей вплоть до "
-"класса **Узел** (**Node**). Хотя движок поддерживает такие компоненты как "
-"формы столкновения, они скорее являются исключением, нежели нормой."
+"класса **Узел** (**Node**). Хоть в движке и есть некоторые узлы, такие как "
+"формы столкновения, которые будут использоваться родительским физическим "
+"телом, большинство узлов работают независимо друг от друга."
 
 msgid ""
 "In other words, Godot's nodes do not work like components in some other game "
 "engines."
 msgstr ""
+"Другими словами, узлы Godot работают не так, как компоненты некоторых других "
+"игровых движков."
 
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "|image1|"
+msgstr "image1"
 
-#, fuzzy
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
 "Sprite наследуется от классов Node2D, CanvasItem и Node. Благодаря этому он "
-"имеет их свойства и особенности, что позволяет ему, к примеру, выполнять "
-"преобразования, отрисовывать произвольные фигуры или визуализировать "
-"сторонние шейдеры."
+"обладает их свойствами и особенностями, что позволяет ему, к примеру, "
+"выполнять преобразования или же отрисовывать произвольные фигуры и "
+"визуализировать их при помощи сторонних шейдеров."
 
 msgid "All-inclusive package"
 msgstr "Полный пакет"
@@ -172,9 +170,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
@@ -188,7 +185,6 @@ msgstr ""
 "например, `Tiled Map Importer <https://github.com/vnen/godot-tiled-"
 "importer>`__."
 
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDScript "
 "and VisualScript, along with C#. They're designed for the needs of game "
@@ -196,20 +192,19 @@ msgid ""
 "and the editor."
 msgstr ""
 "Отчасти поэтому Godot предлагает свои собственные языки программирования "
-"GDscript и VisualScript наряду с C#. Они разработаны для нужд разработчиков "
-"и геймдизайнеров и тесно интегрированы в движок и редактор."
+"GDScript и VisualScript вместе с C#. Они разработаны для нужд разработчиков "
+"и геймдизайнеров, а также тесно интегрированы в движок и редактор."
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
 "is also optimized for gameplay code with built-in types like Vectors and "
 "Colors."
 msgstr ""
-"GDscript позволяет писать простой код, используя Python-подобный синтаксис, "
-"он обнаруживает типы и предлагает качественное автоматическое завершение "
-"статического языка. Он также оптимизирован для игрового кода со встроенными "
-"типами, такими как векторы и цвета."
+"GDScript позволяет вам писать код с использованием синтаксиса на основе "
+"отступов, но при этом он определяет типы и предлагает качественное "
+"автозаполнение для статического языка. К тому же, он оптимизирован для "
+"игрового кода с уже встроенными типами, такими как векторы и цвета."
 
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
@@ -223,9 +218,8 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "|image3|"
+msgstr "image3"
 
 msgid ""
 "*VisualScript is a node-based programming language that integrates well in "
@@ -253,9 +247,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
@@ -359,9 +352,8 @@ msgstr ""
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
@@ -389,6 +381,9 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"Редактор полностью написан на C++ и статически скомпилирован в бинарный "
+"файл. Это означает, что вы не можете импортировать его как обычный проект с "
+"файлом ``project.godot``."
 
 msgid "Separate 2D and 3D engines"
 msgstr "Отдельные 2D и 3D движки"

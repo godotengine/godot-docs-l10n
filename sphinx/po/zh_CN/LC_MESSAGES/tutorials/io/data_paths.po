@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,6 @@ msgstr ""
 "径前缀，而不是 ``res://``\\ 。这是因为游戏运行时，项目的文件系统很可能是只读"
 "的。"
 
-#, fuzzy
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "On mobile and consoles, this path is unique to the project. On desktop, the "
@@ -92,10 +91,12 @@ msgid ""
 "<doc_feature_tags>`."
 msgstr ""
 "``user://`` 前缀指向的是用户设备上的另一个目录。在移动设备和主机上，对项目来"
-"说此路径是唯一的。在桌面操作系统上，引擎在 macOS 和 Linux 上会把用户文件存储"
-"在 ``~/.local/share/godot/app_userdata/名称`` 路径，在 Windows 上则是 "
-"``%APPDATA%/名称``\\ 。\\ ``名称`` 取自“项目设置”中定义的应用程序名称，但它可"
-"被\\ :ref:`特性标签 <doc_feature_tags>`\\ 针对不同的平台进行覆盖。"
+"说此路径是唯一的。在桌面平台，引擎存储用户文件的位置在 Linux 上是 ``~/.local/"
+"share/godot/app_userdata/[项目名称]``\\ ，在 macOS（Catalina 及后续版本）上"
+"是 ``~/Library/Application Support/Godot/app_userdata/[项目名称]``\\ ，在 "
+"Windows 上则是 ``%APPDATA%\\Godot\\app_userdata\\[项目名称]``\\ 。\\ ``[项目"
+"名称]`` 取自“项目设置”中定义的应用程序名称，但它可被\\ :ref:`特性标签 "
+"<doc_feature_tags>`\\ 针对不同的平台进行覆盖。"
 
 msgid ""
 "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
@@ -125,32 +126,26 @@ msgstr "位置"
 msgid "User data"
 msgstr "用户数据"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows：\\ ``%APPDATA%\\Godot\\app_userdata\\[项目名称]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
-msgstr "macOS：\\ ``~/Library/Application Support/Godot/``"
+msgstr "macOS：\\ ``~/Library/Application Support/Godot/[项目名称]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/[project_name]``"
-msgstr "Linux：\\ ``~/.local/share/godot/``"
+msgstr "Linux：\\ ``~/.local/share/godot/[项目名称]``"
 
 msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
-msgstr ""
+msgstr "用户数据（项目设置 ``use_custom_user_dir`` 为 ``true`` 时）"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr "Windows：\\ ``%APPDATA%\\Godot\\``"
+msgstr "Windows：\\ ``%APPDATA%\\[项目名称]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr "macOS：\\ ``~/Library/Application Support/Godot/``"
+msgstr "macOS：\\ ``~/Library/Application Support/Godot/[项目名称]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr "Linux：\\ ``~/.local/share/godot/``"
+msgstr "Linux：\\ ``~/.local/share/godot/[项目名称]``"
 
 msgid "User settings"
 msgstr "用户设置"

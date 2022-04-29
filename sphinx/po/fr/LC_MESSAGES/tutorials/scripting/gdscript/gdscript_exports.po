@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,13 +194,53 @@ msgstr ""
 "Le script doit fonctionner en mode ``tool`` pour que les méthodes ci-dessus "
 "puissent fonctionner dans l'éditeur."
 
+msgid "Properties"
+msgstr "Propriétés"
+
+msgid ""
+"To understand how to better use the sections below, you should understand "
+"how to make properties with advanced exports."
+msgstr ""
+
+msgid ""
+"The ``_get_property_list()`` function gets called by the inspector. You can "
+"override it for more advanced exports. You must return an ``Array`` with the "
+"contents of the properties for the function to work."
+msgstr ""
+
+#, fuzzy
+msgid "``name`` is the name of the property"
+msgstr "``name`` est le nom d'une catégorie à ajouter à l'inspecteur ;"
+
+msgid "``type`` is the type of the property from ``Variant.Type``."
+msgstr ""
+
+msgid ""
+"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
+"enum."
+msgstr ""
+
+#, fuzzy
+msgid "Attaching variables to properties"
+msgstr "Accédez aux variables ou propriétés locales :"
+
+msgid ""
+"To attach variables to properties (allowing the value of the property to be "
+"used in scripts), you need to create a variable with the exact same name as "
+"the property or else you may need to override the :ref:`_set() "
+"<class_Object_method__get_property_list>` and :ref:`_get() "
+"<class_Object_method__get_property_list>` methods. Attaching a variable to "
+"to a property also gives you the ability to give it a default state. ::"
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "Ajout de catégories de script"
 
+#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category."
+"Variables`` is one example of a built-in category. ::"
 msgstr ""
 "Pour une meilleure distinction visuelle des propriétés, une catégorie "
 "d'écriture spéciale peut être intégrée à l'inspecteur pour servir de "
@@ -208,6 +248,11 @@ msgstr ""
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` est le nom d'une catégorie à ajouter à l'inspecteur ;"
+
+msgid ""
+"Every following property added after the category definition will be a part "
+"of the category."
+msgstr ""
 
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
@@ -223,7 +268,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "Groupement des propriétés"
 
-msgid "A list of properties with similar names can be grouped."
+#, fuzzy
+msgid "A list of properties with similar names can be grouped. ::"
 msgstr "Une liste de propriétés ayant des noms similaires peut être groupée."
 
 msgid ""
@@ -233,11 +279,13 @@ msgstr ""
 "``name`` est le nom d'un groupe qui va s'afficher sous forme de liste "
 "pliable de propriétés ;"
 
+#, fuzzy
 msgid ""
-"every successive property added after the group property will be collapsed "
-"and shortened as determined by the prefix defined via the ``hint_string`` "
-"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
-"this case."
+"Every following property added after the group property with the prefix "
+"(which determined by ``hint_string``) will be shortened. For instance, "
+"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
+"However, ``movement_speed`` won't be a part of the group and will not be "
+"shortened."
 msgstr ""
 "chaque propriété successive ajoutée après la propriété de groupe sera "
 "réduite et raccourcie comme déterminé par le préfixe défini via la clé "

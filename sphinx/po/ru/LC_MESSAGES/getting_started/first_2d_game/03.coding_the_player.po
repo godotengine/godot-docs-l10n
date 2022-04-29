@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,8 @@ msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
+"Если вы впервые столкнулись с GDScript, пожалуйста, прочтите :ref:"
+"`doc_scripting` перед продолжением."
 
 msgid "Start by declaring the member variables this object will need:"
 msgstr ""
@@ -145,20 +147,20 @@ msgid "Repeat these steps to add three more mappings:"
 msgstr ""
 
 msgid "``move_left`` mapped to the left arrow key."
-msgstr ""
+msgstr "``move_left`` соответствует стрелке влево."
 
 msgid "``move_up`` mapped to the up arrow key."
-msgstr ""
+msgstr "``move_up`` соответствует стрелке вверх."
 
 msgid "And ``move_down`` mapped to the down arrow key."
-msgstr ""
+msgstr "А ``move_down`` соответствует стрелке вниз."
 
 #, fuzzy
 msgid "Your input map tab should look like this:"
 msgstr "Ваша сцена должна выглядеть так:"
 
 msgid "Click the \"Close\" button to close the project settings."
-msgstr ""
+msgstr "Нажмите кнопку \"Закрыть\" чтобы закрыть настройки проекта."
 
 msgid ""
 "We only mapped one key to each input action, but you can map multiple keys, "
@@ -209,7 +211,6 @@ msgstr ""
 "ссылке :ref:`doc_vector_math`. Ее полезно знать, но она не понадобится для "
 "остальной части этого урока."
 
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
@@ -261,13 +262,13 @@ msgstr ""
 "Благодаря использованию этого значения скорость движения будет постоянной "
 "даже при изменении частоты кадров."
 
-#, fuzzy
 msgid ""
 "Click \"Play Scene\" (:kbd:`F6`, :kbd:`Cmd + R` on macOS) and confirm you "
 "can move the player around the screen in all directions."
 msgstr ""
-"Нажмите \"Запустить сцену\" (``F6``) и удостоверьтесь, что вы можете "
-"перемещать игрока по экрану во всех направлениях."
+"Нажмите \"Запустить сцену\" (:kbd:`F6`, :kbd:`Cmd + R` on macOS) и "
+"удостоверьтесь, что вы можете перемещать игрока по экрану во всех "
+"направлениях."
 
 msgid "If you get an error in the \"Debugger\" panel that says"
 msgstr "Если вы получаете ошибку в панели \"Отладчик\", которая говорит"
@@ -279,7 +280,6 @@ msgstr ""
 "``Попытка вызова функции 'play' в основании 'null instance' на нулевом "
 "экземпляре``"
 
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
@@ -292,7 +292,6 @@ msgstr ""
 msgid "Choosing animations"
 msgstr "Выбор анимации"
 
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -425,7 +424,7 @@ msgstr ""
 "перезагрузки игрока при запуске новой игры."
 
 msgid "With the player working, we'll work on the enemy in the next lesson."
-msgstr ""
+msgstr "Теперь, когда игрок работает, мы займёмся врагом в следующем уроке."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

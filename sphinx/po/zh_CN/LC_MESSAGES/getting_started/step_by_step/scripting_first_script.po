@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,11 +74,11 @@ msgstr ""
 msgid ""
 "You can create Sprite nodes automatically by dragging and dropping images on "
 "the viewport."
-msgstr "您可以通过将图像拖放到视窗上来自动创建 Sprite 节点。"
+msgstr "您可以通过将图像拖放到视区上来自动创建 Sprite 节点。"
 
 msgid ""
 "Then, click and drag the icon in the viewport to center it in the game view."
-msgstr "然后，点击并拖动视窗中的图标，使其在游戏视图中居中。"
+msgstr "然后，点击并拖动视区中的图标，使其在游戏视图中居中。"
 
 msgid "Creating a new script"
 msgstr "新建脚本"
@@ -90,8 +90,9 @@ msgstr ""
 "在场景面板的 Sprite 上点击右键并选择“附加脚本”，来将一个新的脚本附加到我们的"
 "节点上。"
 
+#, fuzzy
 msgid ""
-"The Attach node Script window appears. It allows you to select the script's "
+"The Attach Node Script window appears. It allows you to select the script's "
 "language and file path, among other options."
 msgstr "弹出“附加节点脚本”窗口。你可以选择脚本的语言和文件路径，以及其他选项。"
 
@@ -103,9 +104,10 @@ msgstr ""
 "把模板从默认改为空Empty，得到一个干净的脚本。其他选项保持默认，然后点击创建按"
 "钮来生成脚本。"
 
+#, fuzzy
 msgid ""
-"The Script workspace should appear with your new file open and the following "
-"line of code:"
+"The Script workspace should appear with your new ``Sprite.gd`` file open and "
+"the following line of code:"
 msgstr "此时将显示“Script”工作区，并打开新文件并显示以下代码行："
 
 msgid ""
@@ -352,10 +354,18 @@ msgstr ""
 "使用这样的方法不会考虑与墙壁和地面的碰撞。在 :ref:`doc_your_first_2d_game` "
 "中，你会学到另一种移动对象的方法，可以检测碰撞。"
 
+#, fuzzy
 msgid ""
-"Our node currently moves by itself. In the next part, we'll use player input "
-"to control it."
+"Our node currently moves by itself. In the next part :ref:"
+"`doc_scripting_player_input`, we'll use player input to control it."
 msgstr "我们的节点目前是自行移动的。在下一部分中，我们会让玩家的输入来控制它。"
+
+#, fuzzy
+msgid "Complete script"
+msgstr "示例脚本"
+
+msgid "Here is the complete ``Sprite.gd`` file for reference."
+msgstr "这是完整的 ``Sprite.gd`` 文件，仅供参考。"
 
 msgid "Translation status"
 msgstr "翻译状态"

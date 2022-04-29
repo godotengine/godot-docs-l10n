@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Running Godot apps on macOS"
+msgstr "在 macOS 上运行 Godot 应用"
+
+msgid ""
+"This page covers running Godot projects on macOS. If you haven't exported "
+"your project yet, read :ref:`doc_exporting_for_macos` first."
+msgstr ""
+
+msgid ""
+"By default, macOS will run only applications that are signed and notarized."
+msgstr "默认情况下，macOS 只会运行签名并公证后的应用程序。"
+
+msgid ""
+"Depending on the way a macOS app is signed and distributed, the following "
+"scenarios are possible:"
+msgstr "根据 macOS 应用签名和分发方法的不同，可能出现下列情况："
+
+msgid "App is signed, notarized and distributed via App Store"
+msgstr "App 已签名并公证，通过 App Store 分发"
+
+msgid ""
+"App developers need to join the Apple Developer Program, and configure "
+"signing and notarization options during export, then upload the app to the "
+"App Store."
+msgstr ""
+"App 开发者需要加入 Apple 开发者计划，然后在导出时配置签名和公证选项，最后将 "
+"App 上传到 App Store。"
+
+msgid ""
+"The app should run out of the box, without extra user interaction required."
+msgstr "App 应该是可以开箱即用的，无需额外的用户交互。"
+
+msgid "App is signed, notarized and distributed outside App Store"
+msgstr "App 已签名并公证，在 App Store 外分发"
+
+msgid ""
+"App developers need to join the Apple Developer Program, and configure "
+"signing and notarization options during export, then distribute the app as "
+"\".DMG\" or \".ZIP\" archive."
+msgstr ""
+"App 开发者需要加入 Apple 开发者计划，然后在导出时配置签名和公证选项，最后将 "
+"App 以“.DMG”或“.ZIP”归档文件的形式分发。"
+
+msgid ""
+"When you run the app for the first time, the following dialog is displayed:"
+msgstr "首次运行该 App 时，会出现如下对话框："
+
+msgid "Click ``Open`` to start the app."
+msgstr "单击 ``打开`` 启动应用。"
+
+msgid ""
+"If you see the following warning dialog, your Mac is set up to allow apps "
+"only from the App Store."
+msgstr ""
+"如果你看到了如下的警告对话框，那么你的 Mac 是被设置成了只允许来自 App Store "
+"的应用。"
+
+msgid ""
+"To allow third-party apps, open ``System Preferences``, click ``Security & "
+"Privacy``, then click ``General``, unlock settings, and select ``App Store "
+"and identified developers``."
+msgstr ""
+"要允许第三方程序，请打开 ``系统设置``\\ ，点击 ``安全性与隐私``\\ ，然后点击 "
+"``通用``\\ ，解锁设置，然后选择 ``App Store 和被认可的开发者``\\ 。"
+
+msgid "App is signed (including ad-hoc signatures) but not notarized"
+msgstr "应用已签名（包括 Ad-hoc 签名）但未公证"
+
+msgid ""
+"App developer used self-signed certificate or ad-hoc signing (default Godot "
+"behavior for exported project)."
+msgstr "应用开发者使用了自签名证书或 Ad-hoc 签名（Godot 导出项目的默认行为）。"
+
+msgid "To run this app, you can temporarily override Gatekeeper:"
+msgstr "要运行此应用，你可以临时覆盖 Gatekeeper："
+
+msgid ""
+"Either open ``System Preferences``, click ``Security & Privacy``, then click "
+"``General``, and click ``Open Anyway``."
+msgstr ""
+"可以打开 ``系统设置``\\ ，点击 ``安全性与隐私``\\ ，然后点击 ``通用``\\ ，然"
+"后点击 ``仍然打开``\\ 。"
+
+msgid ""
+"Or, right-click (Control-click) on the app icon in the Finder window and "
+"select ``Open`` from the menu."
+msgstr ""
+"也可以在访达窗口中右键单击（Control-单击）应用图标，选择菜单中的 ``打开"
+"``\\ 。"
+
+msgid "Then click ``Open`` in the confirmation dialog."
+msgstr "然后在确认对话框中单击 ``打开``\\ 。"
+
+msgid "Enter your password if you're prompted."
+msgstr "如出现提示就输入密码。"
+
+msgid "App is not-signed, executable is linker-signed"
+msgstr "App 未签名，可执行文件由链接器签名"
+
+msgid "App is built using official export templates, but it is not signed."
+msgstr "App 使用官方导出模板构建，但未签名。"
+
+msgid ""
+"To run this app, you should remove the quarantine extended file attribute "
+"manually:"
+msgstr "要运行这个 App，你应该手动移除“隔离”（quarantine）扩展文件属性："
+
+msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
+msgstr ""
+"打开 ``Terminal.app``\\ （按 ``Cmd + 空格``\\ ，输入 ``Terminal``\\ ）。"
+
+msgid "Navigate to the folder containing the target application."
+msgstr "切换到包含目标应用程序的文件夹。"
+
+msgid ""
+"Use the ``cd path_to_the_app_folder`` command, e.g. ``cd ~/Downloads/`` if "
+"it's in the ``Downloads`` folder."
+msgstr ""
+"使用 ``cd 到_App_文件夹的路径`` 命令，例如在 ``Downloads`` 文件夹中的话就是 "
+"``cd ~/Downloads/``\\ 。"
+
+msgid ""
+"Run the command ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
+"(including quotation marks and ``.app`` extension)."
+msgstr ""
+"执行命令 ``xattr -dr com.apple.quarantine \"未签名游戏.app\"``\\ （包括引号"
+"和“.app”扩展名）。"
+
+msgid ""
+"Neither app not executable is signed (relevant for Apple Silicon macs only)"
+msgstr "App 和可执行文件都没有签名（仅适用于 Apple Slilicon 的 Mac）"
+
+msgid ""
+"App is built using custom export templates, compiled using OSXCross, and it "
+"is not signed at all."
+msgstr "App 使用自定义导出模板构建，使用 OSXCross 编译，完全没有签名。"
+
+msgid "To run this app, you can ad-hoc sign it yourself:"
+msgstr "要运行这个 App，你可以自己进行 Ad-hoc 签名："
+
+msgid ""
+"Install ``Xcode`` for the App Store, start it and confirm command line tools "
+"installation."
+msgstr "从 App Store 安装 ``Xcode``\\ ，运行并确认安装命令行工具。"
+
+msgid "Run the following commands:"
+msgstr "运行以下命令："
+
+msgid ""
+"``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` (including "
+"quotation marks and \".app\" extension)."
+msgstr ""
+"``xattr -dr com.apple.quarantine \"未签名游戏.app\"``\\ （包括引号和“.app”扩"
+"展名）。"
+
+msgid ""
+"``codesign -s - --force --deep \"Unsigned Game.app\"`` (including quotation "
+"marks and \".app\" extension)."
+msgstr ""
+"``codesign -s - --force --deep \"未签名游戏.app\"``\\ （包括引号和“.app”扩展"
+"名）。"
+
+msgid "Translation status"
+msgstr "翻译状态"

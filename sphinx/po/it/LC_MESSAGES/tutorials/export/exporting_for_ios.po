@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,12 @@ msgstr ""
 #, fuzzy
 msgid "Exporting for iOS"
 msgstr "Esportazione per iOS"
+
+msgid ""
+"This page describes how to export a Godot project to iOS. If you're looking "
+"to compile export template binaries from source instead, read :ref:"
+"`doc_compiling_for_ios`."
+msgstr ""
 
 msgid ""
 "These are the steps to load a Godot project in Xcode. This allows you to "
@@ -172,5 +178,19 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Troubleshooting rendering issues"
+msgstr "Test e segnalazione di problemi"
+
+msgid ""
+"To improve out-of-the-box performance on mobile devices, Godot automatically "
+"uses low-end-friendly settings by default on both Android and iOS."
+msgstr ""
+
+msgid ""
+"This can cause rendering issues that do not occur when running the project "
+"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
+"information."
+msgstr ""
+
 msgid "Translation status"
-msgstr "Formato di traduzione"
+msgstr "Stato della traduzione"

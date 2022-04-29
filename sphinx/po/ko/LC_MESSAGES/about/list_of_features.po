@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,9 +24,10 @@ msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
 "이 페이지의 목표는 현재 Godot가 지원하는 모든 기능을 나열하는 것입니다."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -99,8 +100,9 @@ msgstr "**기능:**"
 msgid "Scene tree editor."
 msgstr "씬 트리 에디터."
 
-msgid "Script editor."
-msgstr "스크립트 에디터."
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "내장 테마 에디터."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -160,16 +162,25 @@ msgstr ""
 "에디터 기능 확장을 위한 플러그인은 :ref:`애셋 라이브러리 "
 "<doc_what_is_assetlib>`\\ 에서 다운로드받을 수 있습니다."
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
 "GDScript로 여러분만의 플러그인을 만들어 새로운 기능을 추가하거나 워크플로를 "
 "빠르게 만들 수 있습니다."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr ""
+"프로젝트 매니저(Project Manager)의 애셋 라이브러리(Asset Library)에서 프로젝"
+"트를 다운로드받거나 직접 가져올 수 있습니다."
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr ""
 "프로젝트 매니저(Project Manager)의 애셋 라이브러리(Asset Library)에서 프로젝"
 "트를 다운로드받거나 직접 가져올 수 있습니다."
@@ -205,8 +216,8 @@ msgstr "애니메이션 스프라이트 제작 도우미 AnimatedSprite."
 msgid "Parallax layers."
 msgstr "패럴랙스 레이어."
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "레이어를 여러 번 자동으로 복제해 의사 3D 지원."
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "노멀 맵을 통한 2D 라이팅."
@@ -302,8 +313,14 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D 그래픽"
 
-msgid "HDR rendering with sRGB."
-msgstr "sRGB를 사용한 HDR 렌더링."
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "애니메이션 가져오기는 기본적으로 활성화되어 있습니다."
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "더 나은 호환성의 LDR 렌더링."
@@ -323,19 +340,47 @@ msgstr ""
 "투시(perspective), 직교(orthographic) 및 프러스텀 오프셋(frustum-offset) 카메"
 "라."
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**물리 기반 렌더링**"
 
 msgid "Follows the Disney PBR model."
 msgstr "디즈니의 PBR 모델을 따릅니다."
+
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 "ORM 텍스처를 지원하는 러프니스-메탈릭(roughness-metallic) 워크플로를 사용합니"
 "다."
 
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
+
 msgid "Normal mapping."
 msgstr "노멀 매핑."
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr ""
+
+msgid ""
+"Distance fade which can use alpha blending or dithering to avoid going "
+"through the transparent pipeline."
+msgstr ""
+"투명 파이프라인을 통과하는 것을 피하기 위해 알파 블렌딩이나 디더링(dithering)"
+"을 사용할 수 있는 디스턴스 페이드(distance face)."
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "디더링은 픽셀 또는 객체별로 적용할 수 있습니다."
 
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
@@ -347,18 +392,14 @@ msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr ""
 "*GLES3:* 서브서피스 스캐터링(sub-surface scattering) 및 투과(transmittance)."
 
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "*GLES3:* 근접(Proximity) 페이드(가벼운 파티클)."
-
-msgid ""
-"Distance fade which can use alpha blending or dithering to avoid going "
-"through the transparent pipeline."
-msgstr ""
-"투명 파이프라인을 통과하는 것을 피하기 위해 알파 블렌딩이나 디더링(dithering)"
-"을 사용할 수 있는 디스턴스 페이드(distance face)."
-
-msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr "디더링은 픽셀 또는 객체별로 적용할 수 있습니다."
 
 msgid "**Real-time lighting:**"
 msgstr "**실시간 조명:**"
@@ -372,6 +413,19 @@ msgstr "전방위 조명(Omnidirectional lights)."
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "원뿔 모양의 각도와 감쇠(attenuation)를 조정할 수 있는 스포트라이트."
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "디더링은 픽셀 또는 객체별로 적용할 수 있습니다."
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**그림자 매핑**"
@@ -424,23 +478,24 @@ msgstr "*GLES3:* GI 프로브 (느리지만 준실시간). 반사를 지원합�
 msgid "**Reflections:**"
 msgstr "**반사(Reflections)**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "*GLES3:* 복셀 기반 반사 (GI 프로브 사용중에만 가능)."
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "빠르게 베이크된 반사 또는 ReflectionProbe를 이용한 느린 실시간 반사. 시차 보"
 "정을 선택적으로 활성화할 수 있습니다."
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "*GLES3:* 스크린 공간 반사."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr "반사 기술은 더 높은 정확도를 위해 혼합해서 사용할 수 있습니다."
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* 복셀 기반 반사 (GI 프로브 사용중에만 가능)."
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* 스크린 공간 반사."
 
 msgid "**Sky:**"
 msgstr "**하늘:**"
@@ -522,17 +577,21 @@ msgstr "근접, 이중선형, 삼중선형 또는 비등방성 필터링."
 msgid "**Texture compression:**"
 msgstr "**텍스처 압축:**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "*GLES3:* S3TC (모바일/웹 플랫폼은 지원하지 않음)."
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (GLES2 렌더러에 적합)."
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr "*GLES3:* 고품질 압축을 위한 BPTC (macOS에서는 지원하지 않음)."
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (macOS에서는 지원하지 않음)."
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (GLES2 렌더러에 적합)."
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "*GLES3:* S3TC (모바일/웹 플랫폼은 지원하지 않음)."
 
 msgid "**Anti-aliasing:**"
 msgstr "**안티 앨리어싱:**"
@@ -543,9 +602,26 @@ msgstr "다중 샘플링 안티앨리어싱 (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "고속 근사 안티앨리어싱 (FXAA)."
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "성능"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "이 효과들의 대부분은 더 나은 성능 또는 더 나은 품질을 위해 조정할 수 있습니"
 "다. 이는 Godot를 오프라인 렌더링에 사용할 때 유용합니다."
@@ -574,6 +650,10 @@ msgstr "노드가 Path3D 경로를 따라가도록 하는 PathFollow3D 노드."
 
 msgid "3D geometry helper class."
 msgstr "3D 기하 도우미 클래스."
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "3D 물리(Physics)"
@@ -742,8 +822,10 @@ msgstr ""
 "수십 개의 효과가 포함되고 재 라우팅 가능한 :ref:`오디오 버스 "
 "<doc_audio_buses>` 및 효과 지원."
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "3D 공간에서 카메라와 다른 위치에서의 소리를 듣기 위한 Listenr3D 노드."
 
 msgid ""
@@ -806,7 +888,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (Blender에"
 "서 바로 내보내기)."
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX (실험 기능)."
 
 msgid "Collada (.dae)."
@@ -814,6 +897,12 @@ msgstr "Collada (.dae)."
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr "Wavefront OBJ (정적 씬에서만 가능, 메시로 직접 로드할 수 있습니다)."
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
 
 msgid "Input"
 msgstr "입력"
@@ -998,6 +1087,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "맞춤형 명령줄 인수 파싱."
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "모바일"
 
@@ -1016,18 +1112,17 @@ msgstr "XR 지원 (AR 및 VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "iOS의 ARKit을 기본 지원."
 
-#, fuzzy
 msgid "Support for the OpenXR APIs."
-msgstr "OpenXR 및 OpenVR API 지원."
+msgstr "OpenXR API 지원."
 
 msgid ""
 "Includes support for popular headsets like the Meta Quest and the Valve "
 "Index."
 msgstr ""
+"Meta Quest나 Valve Index와 같은 유명한 기기들에 대한 지원을 포함합니다."
 
-#, fuzzy
 msgid "Support for the OpenVR APIs."
-msgstr "OpenXR 및 OpenVR API 지원."
+msgstr "OpenVR API 지원."
 
 msgid "GUI system"
 msgstr "GUI 시스템"
@@ -1073,9 +1168,13 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "트리(Tree) (테이블을 표현할 때에도 사용 가능)."
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 "컨테이너(Container) (수평, 수직, 그리드, center, margin, draggable "
 "splitter, ...)."
@@ -1128,7 +1227,10 @@ msgstr "현재 에디터 테마 세팅에 기반해 테마 생성 가능."
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ":ref:`class_StyleBoxFlat`\\ 를 사용한 벡터 기반 절차적 테마."
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+#, fuzzy
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr "둥근 모서리와 굽은 모서리, 그림자 및 테두리별 너비 지원."
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1146,6 +1248,11 @@ msgstr "애니메이션"
 
 msgid "Direct kinematics and inverse kinematics."
 msgstr "직접 운동학(direct kinematics)과 역 운동학(inverse kinematics)."
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
+msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
@@ -1190,7 +1297,8 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ":ref:`class_ConfigFile`\\ 을 이용해 INI 스타일 설정 파일 읽고 쓰기."
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+#, fuzzy
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr "벡터, 컬러를 포함한 모든 Godot 데이터 타입을 (역)직렬화할 수 있습니다."
 
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1221,15 +1329,18 @@ msgstr ""
 "필요할 때 씬 트리의 오버헤드를 무시할 수 있는 :ref:`서버에 대한 낮은 수준의 "
 "접근 <doc_using_servers>`."
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "자동화를 위한 명령줄 인터페이스."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "지속적인 통합 플랫폼을 사용해 프로젝트를 내보내고 배포합니다."
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`완성된 스크립트 <https://github.com/godotengine/godot/tree/master/misc/dist/"
 "shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
@@ -1281,6 +1392,5 @@ msgstr ""
 "뮤니티가 요청한 기능과 향후 Godot 릴리스에서 구현될 수 있는 기능 목록이 있습"
 "니다."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "번역 형식"
+msgstr "번역 상태"

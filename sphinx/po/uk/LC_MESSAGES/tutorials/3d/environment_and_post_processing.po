@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Environment and post-processing"
-msgstr "Змінні середовища"
+msgstr "Середовище та пост-обробка"
 
 msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a new post-"
@@ -36,9 +35,8 @@ msgid ""
 "once used in one of the following locations in order of priority:"
 msgstr ""
 
-#, fuzzy
 msgid "Camera node"
-msgstr "Фотоапарат"
+msgstr "Вузол камери"
 
 msgid ""
 "An Environment can be set to a camera. It will have priority over any other "
@@ -50,9 +48,8 @@ msgid ""
 "in general it's a better idea to use the option below."
 msgstr ""
 
-#, fuzzy
 msgid "WorldEnvironment node"
-msgstr "Середовище"
+msgstr "СвітСередовище вузол"
 
 msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
@@ -66,7 +63,7 @@ msgid ""
 msgstr ""
 
 msgid "Default environment"
-msgstr ""
+msgstr "Середовище за замовчуванням"
 
 msgid ""
 "A default environment can be set, which acts as a fallback when no "
@@ -80,9 +77,8 @@ msgid ""
 "disk before referencing it here."
 msgstr ""
 
-#, fuzzy
 msgid "Environment options"
-msgstr "Середовище"
+msgstr "Опції середовища"
 
 msgid ""
 "Following is a detailed description of all environment options and how they "
@@ -123,7 +119,7 @@ msgid ""
 msgstr ""
 
 msgid "Ambient Light"
-msgstr ""
+msgstr "Збільшити відступ"
 
 msgid ""
 "Ambient (as defined here) is a type of light that affects every piece of "
@@ -204,30 +200,68 @@ msgid ""
 msgstr ""
 
 msgid "Tonemap"
-msgstr ""
+msgstr "Переспрямування"
 
 msgid "*This feature is only available when using the GLES3 backend.*"
+msgstr "*Ця функція доступна лише при використанні обробника GLES3.*"
+
+msgid ""
+"Selects the tonemapping curve that will be applied to the scene, from a list "
+"of standard curves used in the film and game industry. Tonemapping operators "
+"other than Linear are used to make light and dark areas more homogeneous, "
+"while also avoiding clipping of bright highlights."
+msgstr ""
+
+#, fuzzy
+msgid "The tone mapping options are:"
+msgstr "Хоча основними недоліками є:"
+
+msgid "**Mode:** The tone mapping mode to use."
 msgstr ""
 
 msgid ""
-"Selects the tone-mapping curve that will be applied to the scene, from a "
-"short list of standard curves used in the film and game industry. Tone "
-"mapping can make light and dark areas more homogeneous, even though the "
-"result is not that strong. Tone mapping options are:"
+"**Linear:** The default tonemapping mode. This is the fastest and simplest "
+"tonemapping operator, but it causes bright lighting to look blown out, with "
+"noticeable clipping in the output colors."
 msgstr ""
 
 msgid ""
-"**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
+"**Reinhardt:** Performs a variation on rendered pixels' colors by this "
+"formula: ``color = color / (1 + color)``. This avoids clipping bright "
+"highlights, but the resulting image can look a bit dull."
+msgstr ""
+
+msgid ""
+"**Filmic:** This avoids clipping bright highlights, with a resulting image "
+"that usually looks more vivid than Reinhardt."
+msgstr ""
+
+msgid ""
+"**ACES Fitted:** Academy Color Encoding System tonemapper. ACES Fitted is "
+"slightly more expensive than other options, but it handles bright lighting "
+"in a more realistic fashion by desaturating it as it becomes brighter. ACES "
+"typically has a more contrasted output compared to Reinhardt and Filmic. "
+"ACES is the recommended option when aiming for photorealistic visuals."
+msgstr ""
+
+msgid ""
+"**ACES:** *Deprecated (will be removed in Godot 4.0).* Behaves like ACES, "
+"but doesn't desaturate lighting as it becomes brighter (which is less "
+"realistic). It's recommended to use ACES Fitted instead of ACES."
 msgstr ""
 
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
-"over time."
+"over time (default: ``1.0``). Higher values result in an overall brighter "
+"appearance. If the scene appears too dark as a result of a tonemapping "
+"operator or whitepoint change, try increasing this value slightly."
 msgstr ""
 
 msgid ""
-"**White:** Tone mapping white, which simulates where in the scale white is "
-"located (by default 1.0)."
+"**White:** Tone mapping whitepoint, which simulates where in the scale white "
+"is located (default: ``1.0``). For photorealistic lighting, recommended "
+"values are between ``6.0`` and ``8.0``. Higher values result in less blown "
+"out highlights, but make the scene appear slightly darker as a whole."
 msgstr ""
 
 msgid "Auto Exposure (HDR)"
@@ -461,7 +495,7 @@ msgid ""
 msgstr ""
 
 msgid "Glow"
-msgstr "Німб"
+msgstr "Сяйво"
 
 msgid ""
 "In photography and film, when light amount exceeds the maximum supported by "
@@ -570,6 +604,5 @@ msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Формат перекладу"
+msgstr "Стан перекладу"

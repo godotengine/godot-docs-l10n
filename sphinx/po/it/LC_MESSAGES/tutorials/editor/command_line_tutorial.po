@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,6 @@ msgstr "Riferimento riga di comando"
 msgid "**General options**"
 msgstr "**Opzioni generali**"
 
-#, fuzzy
 msgid "Command"
 msgstr "Comando"
 
@@ -430,16 +429,18 @@ msgid ""
 "project as either the first argument, like this:"
 msgstr ""
 
+#, fuzzy
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Oppure usando l'argomento ``--path``:"
 
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
 
+#, fuzzy
 msgid "Creating a project"
-msgstr ""
+msgstr "Creare un progetto"
 
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
@@ -449,8 +450,9 @@ msgstr ""
 msgid "The project can now be opened with Godot."
 msgstr ""
 
+#, fuzzy
 msgid "Running the editor"
-msgstr ""
+msgstr "Eseguire l'editor"
 
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
@@ -463,8 +465,9 @@ msgid ""
 "same code with that scene as argument."
 msgstr ""
 
+#, fuzzy
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Cancellare una scena"
 
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
@@ -472,8 +475,9 @@ msgid ""
 "scene or else an error will be thrown upon opening."
 msgstr ""
 
+#, fuzzy
 msgid "Running the game"
-msgstr ""
+msgstr "Esecuzione del gioco"
 
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
@@ -530,8 +534,9 @@ msgid ""
 "directory."
 msgstr ""
 
+#, fuzzy
 msgid "Running a script"
-msgstr ""
+msgstr "Eseguire uno script"
 
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
@@ -539,14 +544,17 @@ msgid ""
 "assets or custom import/export."
 msgstr ""
 
+#, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
-msgstr ""
+msgstr "Lo script deve ereditare da ``SceneTree`` o ``MainLoop``."
 
+#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr ""
+msgstr "Ecco un semplice esempio di ``sayhello.gd`` di come funziona:"
 
+#, fuzzy
 msgid "And how to run it:"
-msgstr ""
+msgstr "E come eseguirlo:"
 
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
@@ -566,6 +574,5 @@ msgid ""
 "follows:"
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato di traduzione"
+msgstr "Stato della traduzione"

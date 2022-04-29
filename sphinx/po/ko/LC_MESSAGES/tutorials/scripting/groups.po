@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,20 +37,26 @@ msgstr ""
 msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
-#, fuzzy
-msgid "Adding nodes to a group"
-msgstr "노드 추가하기"
+msgid "Managing groups"
+msgstr ""
+
+msgid ""
+"Groups are created by adding a node to a new group name, and likewise they "
+"are removed by removing all nodes from a given group."
+msgstr ""
 
 #, fuzzy
-msgid "There are two ways to add nodes to groups:"
+msgid "There are two ways to add/remove nodes to groups:"
 msgstr "이렇게 하고 싶어하는 몇 가지 이유가 있습니다:"
 
 #, fuzzy
-msgid "Using the Node dock in the editor."
+msgid "During design, by using the Node dock in the editor."
 msgstr "편집기 실행하기"
 
 msgid ""
-"Calling :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`."
+"During execution, by calling :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
 msgstr ""
 
 #, fuzzy
@@ -158,6 +164,5 @@ msgstr ""
 "니다. 심지어 흥미로운 시그널도 함께 제공됩니다. 시간이 된다면 한번 확인해보세"
 "요!"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "번역 형식"
+msgstr "번역 상태"

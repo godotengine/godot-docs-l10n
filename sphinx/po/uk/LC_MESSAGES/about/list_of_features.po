@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Ця сторінка створена щоб показати всі особливості, що підтримуються рушієм "
 "на даний момент."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -101,8 +102,9 @@ msgstr "**Особливості:**"
 msgid "Scene tree editor."
 msgstr "Дерево сцени."
 
-msgid "Script editor."
-msgstr "Редактор скриптів."
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "Вбудований редактор тем."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -162,16 +164,25 @@ msgstr ""
 "Плагіни редактора можна завантажити з: ref: `бібліотека активів "
 "<doc_what_is_assetlib>` для розширення функціональності редактора."
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
 "Створіть власні плагіни за допомогою GDScript, щоб додати нові функції або "
 "прискорити ваш робочий процес."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr ""
+"Завантажте проєкти з бібліотеки об’єктів в менеджері проєктів та імпортуйте "
+"їх безпосередньо."
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr ""
 "Завантажте проєкти з бібліотеки об’єктів в менеджері проєктів та імпортуйте "
 "їх безпосередньо."
@@ -212,8 +223,8 @@ msgstr "AnimatedSprite як помічник для створення анім�
 msgid "Parallax layers."
 msgstr "Шари паралакса."
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "Псевдо-3D підтримка шляхом автоматичного дублювання шару кілька разів."
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "2D освітлення з картами нормалей."
@@ -318,8 +329,14 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D графіка"
 
-msgid "HDR rendering with sRGB."
-msgstr "HDR рендер з sRGB."
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "Імпорт анімації є включений за замовчуванням."
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "LDR рендер для більшої сумісності."
@@ -337,18 +354,46 @@ msgstr "**Камера:**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Перспективні, ортографічні та фрустум-офсетні камери."
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**Фізично достовірний рендер:**"
 
 msgid "Follows the Disney PBR model."
 msgstr "Наслідує модель Disney PBR."
 
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
+
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 "Використовує шорстко-металевий робочий процес із підтримкою ORM-текстур."
 
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
+
 msgid "Normal mapping."
 msgstr "Normal Map (Карта нормалей)."
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr ""
+
+msgid ""
+"Distance fade which can use alpha blending or dithering to avoid going "
+"through the transparent pipeline."
+msgstr ""
+"Затухання з відстаню, яке може використовувати альфа-змішування або "
+"відтіняння, щоб уникнути проходження прозорого трубопроводу."
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
 
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
@@ -360,18 +405,14 @@ msgstr ""
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "* GLES3: * Розсіювання та підповерхневе пропускання."
 
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "*GLES3:* Ближнє затухання (м'які частинки)."
-
-msgid ""
-"Distance fade which can use alpha blending or dithering to avoid going "
-"through the transparent pipeline."
-msgstr ""
-"Затухання з відстаню, яке може використовувати альфа-змішування або "
-"відтіняння, щоб уникнути проходження прозорого трубопроводу."
-
-msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
 
 msgid "**Real-time lighting:**"
 msgstr "**Освітлення в режимі реального часу:**"
@@ -384,6 +425,19 @@ msgstr "Всебічне світло."
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Точкове світло з регульованим кутом конуса і загасанням."
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**Карта затінень:**"
@@ -419,11 +473,16 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Підтримує запікання лише непрямого освітлення або запікання як прямого, так "
+"і непрямого освітлення. Режим запікання можна налаштувати залежно від "
+"світла, щоб забезпечити гібридні налаштування запікання."
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Підтримує освітлення динамічних об'єктів за допомогою автоматичної системи "
+"на основі октрі дерева. Розміщення датчика вручну не потрібне."
 
 msgid "Lightmaps are baked on the CPU."
 msgstr "Карти освітлення запечені на CPU."
@@ -436,19 +495,14 @@ msgstr ""
 msgid "**Reflections:**"
 msgstr "**Відображення:**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "*GLES3:* Відображення на основі вокселів (при використанні зондів GI)."
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "Швидке запечене відображення, або повільне в реальному часі з використанням "
 "ReflectionProbe (Зонд Відображення). Опціонально можна увімкнути параллаксну "
 "корекцію."
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "*GLES3:* Відображення в просторі екрана."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
@@ -456,6 +510,12 @@ msgid ""
 msgstr ""
 "Техніки відображення можна змішувати для більшої точності або "
 "масштабованості."
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* Відображення на основі вокселів (при використанні зондів GI)."
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* Відображення в просторі екрана."
 
 msgid "**Sky:**"
 msgstr "**Небо:**"
@@ -516,6 +576,8 @@ msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Додаткове видалення смуг для уникнення кольорових смуг (діє, коли "
+"ввімкнено рендеринг HDR)."
 
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
@@ -542,18 +604,22 @@ msgstr "Найближнє, білінійне, трилінійне та ані
 msgid "**Texture compression:**"
 msgstr "**Стиснення текстур:**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "*GLES3:* S3TC (не підтримується на мобільних/Web платформах)."
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (рекомендується при використанні рендера GLES2)."
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
 "*GLES3:* BPTC для високоякісного стиснення (не підтримується на macOS)."
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "*GLES3:* ETC2 (не підтримується на macOS)."
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (рекомендується при використанні рендера GLES2)."
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "*GLES3:* S3TC (не підтримується на мобільних/Web платформах)."
 
 msgid "**Anti-aliasing:**"
 msgstr "**Згладжування:**"
@@ -564,9 +630,26 @@ msgstr "Багатовибіркове згладжування (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Швидке приблизне згладжування (FXAA)."
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "Швидкодія"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "Більшість із цих ефектів можна скорегувати для покращення роботи, або "
 "подальшого підвищення якості. Це може бути корисно при використанні Godot "
@@ -601,6 +684,10 @@ msgstr "Вузол PathFollow3D, щоб заставити вузли рухат
 
 msgid "3D geometry helper class."
 msgstr "Допоміжний клас 3D-геометрії."
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "3D фізика"
@@ -637,12 +724,11 @@ msgstr "*2D:* Користувацькі вершинні, фрагментні 
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Користувацькі вершинні, фрагментні, світлові та шейдери неба."
 
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-"Текстові шейдери, що використовують :ref:`мову шейдерів, натхненну GLSL "
+"Текстові шейдери, що використовують :ref:`мову шейдерів, на зразок GLSL "
 "<doc_shading_language>`."
 
 msgid "Visual shader editor."
@@ -697,9 +783,8 @@ msgstr ""
 ":ref:`Використання потоків <doc_using_multiple_threads>` для виконання "
 "асинхронних дій, або використання декількох ядер процесора."
 
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
@@ -785,8 +870,10 @@ msgstr ""
 "Підтримка перенаправлення :ref:`аудіо шин<doc_audio_buses>` і ефектів з "
 "десятками включених ефектів."
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "Вузол Listener3D для прослуховування з іншої позиції, ніж камера в 3D."
 
 msgid ""
@@ -851,7 +938,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (прямий "
 "експорт з Blender)."
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX (експериментально)."
 
 msgid "Collada (.dae)."
@@ -862,8 +950,14 @@ msgstr ""
 "Wavefront OBJ (тільки статичні сцени, можуть бути завантажені безпосередньо "
 "як меш (сітка))."
 
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
+
 msgid "Input"
-msgstr "Вхід"
+msgstr "Введення"
 
 msgid ""
 "Input mapping system using hardcoded input events or remappable input "
@@ -1056,6 +1150,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "Аналіз користувацьких аргументів командного рядка."
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "Мобільний"
 
@@ -1066,7 +1167,7 @@ msgid "Support for advertisements using third-party modules."
 msgstr "Підтримка реклами з використанням сторонніх модулів."
 
 msgid "Support for subview embedding on Android."
-msgstr ""
+msgstr "Підтримка вбудовування підвиду на Android."
 
 msgid "XR support (AR and VR)"
 msgstr "Підтримка XR (AR та VR)"
@@ -1074,7 +1175,6 @@ msgstr "Підтримка XR (AR та VR)"
 msgid "Support for ARKit on iOS out of the box."
 msgstr "Підтримка ARKit на iOS із коробки."
 
-#, fuzzy
 msgid "Support for the OpenXR APIs."
 msgstr "Підтримка API OpenXR та OpenVR."
 
@@ -1082,8 +1182,8 @@ msgid ""
 "Includes support for popular headsets like the Meta Quest and the Valve "
 "Index."
 msgstr ""
+"Включає підтримку популярних гарнітур, таких як Meta Quest і Valve Index."
 
-#, fuzzy
 msgid "Support for the OpenVR APIs."
 msgstr "Підтримка API OpenXR та OpenVR."
 
@@ -1131,9 +1231,13 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "Дерева (також можуть використовуватися для створення таблиць)."
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 "Контейнери (горизонтальні, вертикальні, сітка, центер, поле, перетягуваний "
 "сплітер (дільник), ...)."
@@ -1194,7 +1298,10 @@ msgstr "Створення тем на основі налаштувань по�
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr "Процедурні векторні теми за допомогою :ref:`class_StyleBoxFlat`."
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+#, fuzzy
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr "Підтримка закруглених/скошених кутів, тіней та ширини меж."
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1212,6 +1319,11 @@ msgstr "Анімація"
 
 msgid "Direct kinematics and inverse kinematics."
 msgstr "Пряма кінематика та зворотна кінематика."
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
+msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
@@ -1262,7 +1374,8 @@ msgstr ""
 "Читання і запис конфігураційних файлів INI-стилю з допомогою :ref:"
 "`class_ConfigFile`."
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+#, fuzzy
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
 "Можливість (де)серіалізувати будь-який тип даних Godot, включаючи Vector, "
 "Color, ..."
@@ -1296,7 +1409,9 @@ msgstr ""
 ":ref:`Низькорівневий доступ до серверів <doc_using_servers>`, що дозволяє "
 "обійти накладні витрати дерева сцени, коли це потрібно."
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "Інтерфейс командного рядка для автоматизації."
 
 msgid "Export and deploy projects using continuous integration platforms."
@@ -1304,9 +1419,10 @@ msgstr ""
 "Експорт та розгортання проєктів за допомогою платформ безперервної "
 "інтеграції."
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`Скрипти завершення <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ доступні для Bash, zsh і fish."
@@ -1350,16 +1466,14 @@ msgstr ""
 "Відкритий процес розробки за допомогою :ref:`благодійності "
 "<doc_ways_to_contribute>`."
 
-#, fuzzy
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"
 "proposals>`__ lists features that have been requested by the community and "
 "may be implemented in future Godot releases."
 msgstr ""
-"`Дорожня карта (план розробки)<https://github.com/godotengine/godot-roadmap> "
-"`__ репозиторій документації функцій, які були узгоджені і можуть бути "
+"У `сховищі пропозицій Godot <https://github.com/godotengine/godot-"
+"proposals>`__ перелічено функції, які просить спільнота і які можуть бути "
 "реалізовані в майбутніх випусках Godot."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Формат перекладу"
+msgstr "Стан перекладу"

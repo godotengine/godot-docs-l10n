@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Ваша первая игра"
+msgstr "Ваша первая 2D игра"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 2D "
@@ -30,19 +29,16 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "|image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
 msgstr ""
-"Этот урок поможет вам сделать свой первый проект в Godot. Вы узнаете, как "
-"работает редактор Godot, как структурировать проект и как построить 2D-игру."
+"Вы узнаете, как работает редактор Godot, как структурировать проект и как "
+"построить 2D-игру."
 
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
@@ -50,9 +46,7 @@ msgid ""
 msgstr ""
 "Этот проект представляет собой введение в движок Godot. Предполагается, что "
 "у вас уже есть некоторый опыт программирования. Если вы новичок в "
-"программировании, вам следует начать здесь: :ref:`doc_scripting`. Если вы "
-"хотите использовать C# в Godot, прочтите также :ref:`doc_c_sharp`, прежде "
-"чем продолжить."
+"программировании, вам следует начать здесь: :ref:`doc_scripting`."
 
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
@@ -62,30 +56,26 @@ msgstr ""
 "избегать врагов как можно дольше. Вот предварительная демонстрация "
 "финального результата:"
 
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Вы узнаете:"
+msgstr "Вы научитесь:"
 
 msgid "Create a complete 2D game with the Godot editor."
-msgstr ""
+msgstr "Создавать законченную 2D игру в Godot editor."
 
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "Создание или импортирование проекта"
+msgstr "Структурировать простой проект игры."
 
-#, fuzzy
 msgid "Move the player character and change its sprite."
-msgstr "Переместите игрока в другое место в дереве."
+msgstr "Перемещать персонажа игрока и изменять его спрайт."
 
 msgid "Spawn random enemies."
-msgstr ""
+msgstr "Порождать случайных врагов."
 
 msgid "Count the score."
-msgstr ""
+msgstr "Подсчитывать очки."
 
-#, fuzzy
 msgid "And more."
-msgstr "И многое другое!"
+msgstr "И многому другому."
 
 msgid ""
 "You'll find another series where you'll create a similar game but in 3D. We "
@@ -93,23 +83,20 @@ msgid ""
 msgstr ""
 
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**Почему стоит начинать с 2D?**"
 
-#, fuzzy
 msgid ""
 "3D games are much more complex than 2D ones. It would be best if you stuck "
 "to 2D until you understood the game development process and how to use Godot "
 "well."
 msgstr ""
-"**Почему 2D?** 3D-игры намного сложнее, чем 2D. Вам следует придерживаться "
-"2D, пока вы не получите хорошее представление о процессе разработки игр и о "
-"том, как использовать Godot."
+"3D-игры намного сложнее, чем 2D. Вам следует придерживаться 2D, пока вы не "
+"получите хорошее представление о процессе разработки игр и о том, как "
+"использовать Godot."
 
-msgid "You can find a completed version of this project at these locations:"
+#, fuzzy
+msgid "You can find a completed version of this project at this location:"
 msgstr "Вы можете найти завершённую версию этого проекта по этим ссылкам:"
-
-msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
@@ -122,23 +109,24 @@ msgid ""
 "complete :ref:`Getting Started <toc-learn-step_by_step>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`__."
 msgstr ""
-"В дополнение к этой документации Вы также можете посмотреть на различные "
-"`демонстрационные проекты Godot <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Если вы опытный программист, можете посмотреть исходные коды готовых "
+"демонстрационных проектов: `Godot demo projects <https://github.com/"
+"godotengine/godot-demo-projects>`_."
 
 msgid ""
 "We prepared some game assets you'll need to download so we can jump straight "
 "to the code."
 msgstr ""
+"Мы подготовили немного игровых ресурсов, вам нужно скачать их, чтобы мы "
+"перешли сразу к коду."
 
 msgid "You can download them by clicking the link below."
-msgstr ""
+msgstr "Вы можете загрузить их по ссылке ниже."
 
 #, fuzzy
 msgid ":download:`dodge_assets.zip <files/dodge_assets.zip>`."

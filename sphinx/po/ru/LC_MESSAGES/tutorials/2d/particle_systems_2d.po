@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgid "Time parameters"
 msgstr "Параметры времени"
 
 msgid "Lifetime"
-msgstr "Продолжительность жизни"
+msgstr "Время жизни"
 
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
@@ -140,7 +140,7 @@ msgid "Lifetime: 4.0"
 msgstr "Продолжительность жизни: 4,0"
 
 msgid "One Shot"
-msgstr "Один снимок"
+msgstr "Одноразовый"
 
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
@@ -150,7 +150,7 @@ msgstr ""
 "частицы один раз, а затем никогда больше."
 
 msgid "Preprocess"
-msgstr "Предварительная обработка"
+msgstr "Предобработка"
 
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
@@ -167,7 +167,7 @@ msgstr ""
 "первый раз."
 
 msgid "Speed Scale"
-msgstr "Шкала скорости"
+msgstr "Масштаб скорости"
 
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
@@ -239,7 +239,7 @@ msgid "Drawing parameters"
 msgstr "Параметры отрисовки"
 
 msgid "Visibility Rect"
-msgstr "Прямоугольник видимости"
+msgstr "Видимый прямоугольник"
 
 msgid ""
 "The visibility rectangle controls the visibility of the particles on screen. "
@@ -342,7 +342,7 @@ msgstr ""
 "испускаются вправо, а затем падают вниз из-за силы тяжести."
 
 msgid "Spread"
-msgstr "Распространение"
+msgstr "Разброс"
 
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
@@ -356,19 +356,19 @@ msgstr ""
 "параметр ``Initial Velocity`` должен быть больше 0."
 
 msgid "Flatness"
-msgstr "Flatness"
+msgstr "Плоскостность"
 
 msgid "This property is only useful for 3D particles."
 msgstr "Это свойство полезно только для 3D-частиц."
 
 msgid "Gravity"
-msgstr "Gravity"
+msgstr "Гравитация"
 
 msgid "The gravity applied to every particle."
 msgstr "Гравитация применяется к каждой частице."
 
 msgid "Initial Velocity"
-msgstr "Initial Velocity"
+msgstr "Начальная скорость"
 
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
@@ -380,7 +380,7 @@ msgstr ""
 "тяжести или других ускорений (как описано ниже)."
 
 msgid "Angular Velocity"
-msgstr "Angular Velocity"
+msgstr "Угловая скорость"
 
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
@@ -397,7 +397,7 @@ msgstr ""
 "центров (в градусах/сек)."
 
 msgid "Orbit Velocity"
-msgstr "Orbit Velocity"
+msgstr "Орбитальная скорость"
 
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "Orbit Velocity используется для вращения частиц вокруг своего центра."

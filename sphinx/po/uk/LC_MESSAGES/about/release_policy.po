@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,6 @@ msgstr ""
 "у них є активні користувачі, які потребують оновлення технічного "
 "обслуговування."
 
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -180,6 +179,10 @@ msgid ""
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"У певній серії незначних випусків підтримується лише останній випуск "
+"виправлення. Якщо у вас виникла проблема з використанням старішого випуску "
+"виправлення, оновіть його до останнього випуску виправлення цієї серії та "
+"перевірте його ще раз, перш ніж повідомляти про проблему на GitHub."
 
 msgid "**Version**"
 msgstr "**Версія**"
@@ -199,16 +202,14 @@ msgstr "~ 2022 (див. нижче)"
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|unstable| * Поточний фокус розвитку (нестабільний). *"
 
-#, fuzzy
 msgid "unstable"
-msgstr "Увімкнути"
+msgstr "нестабільний"
 
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
-#, fuzzy
 msgid "Q2 2022"
-msgstr "Q1 2022"
+msgstr "Q2 2022"
 
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
@@ -217,16 +218,14 @@ msgstr ""
 "|supported| *Бета.* Отримує нові функції, а також виправлення помилок під "
 "час розробки."
 
-#, fuzzy
 msgid "supported"
-msgstr "Підтримувані файли"
+msgstr "підтримується"
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
 
-#, fuzzy
 msgid "November 2021"
-msgstr "Грудень 2014"
+msgstr "Листопад 2021"
 
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
@@ -241,15 +240,12 @@ msgstr "Godot 3.3"
 msgid "April 2021"
 msgstr "Квітень 2021"
 
-#, fuzzy
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
-"|supported| Отримує виправлення помилок, безпеки та підтримки платформ, а "
-"також покращені зручності використання зі зворотною сумісністю."
+"|supported| Отримує лише виправлення проблем безпеки та підтримки платформи."
 
-#, fuzzy
 msgid "partial"
-msgstr "Частинки"
+msgstr "Часткова"
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -264,9 +260,8 @@ msgstr ""
 "|eol| Більше не підтримується оскільки повністю замінено сумісним випуском "
 "3.3 (останнє оновлення: 3.2.3)."
 
-#, fuzzy
 msgid "eol"
-msgstr "el"
+msgstr "не підтримується"
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -323,8 +318,8 @@ msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
 msgstr ""
-"** Легенда: ** |supported| Повна підтримка - |partial| Часткова підтримка - |"
-"eol| Без підтримки (завершено) - |unstable| Версія в розробці"
+"** Примітка: ** |supported| Повна підтримка - |partial| Часткова підтримка - "
+"|eol| Без підтримки (завершено) - |unstable| Версія в розробці"
 
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
@@ -374,6 +369,5 @@ msgstr ""
 "Альфа-збірки будуть опубліковані, як тільки будуть завершені основні функції "
 "для Godot 4.0."
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Формат перекладу"
+msgstr "Стан перекладу"

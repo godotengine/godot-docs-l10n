@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "本頁列出了目前 Godot 所支援的所有功能。"
 #, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -96,8 +96,9 @@ msgstr "**功能：**"
 msgid "Scene tree editor."
 msgstr "場景樹編輯器。"
 
-msgid "Script editor."
-msgstr "腳本編輯器。"
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "內建主題編輯器。"
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -153,14 +154,21 @@ msgstr ""
 "可以從 :ref:`素材庫 <doc_what_is_assetlib>` 中下載編輯器外掛來擴充編輯器的功"
 "能。"
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr "使用 GDScript 來自行建立外掛，以增加新功能或加速你的工作流程。"
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
+msgstr "在專案管理員中從素材庫中下載專案，並直接匯入。"
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
 msgstr "在專案管理員中從素材庫中下載專案，並直接匯入。"
 
 msgid "2D graphics"
@@ -194,8 +202,8 @@ msgstr "使用 AnimatedSprite 協助建立動畫化的 Sprite。"
 msgid "Parallax layers."
 msgstr "視差圖層。"
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr "通過自動複製多次圖層來產生假 3D 效果 (Psuedo-3D)。"
+msgid "Pseudo-3D support including preview in the editor."
+msgstr ""
 
 msgid "2D lighting with normal maps."
 msgstr "使用一般映射的 2D 光照。"
@@ -289,8 +297,14 @@ msgstr "碰撞幾何 (可手動繪製或從編輯器中自 Sprite 產生)。"
 msgid "3D graphics"
 msgstr "3D 圖形"
 
-msgid "HDR rendering with sRGB."
-msgstr "以 sRGB 進行 HDR 算繪。"
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "預設有開啟動畫匯入。"
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
+msgstr ""
 
 msgid "LDR rendering for greater compatibility."
 msgstr "為提供最佳相容性，以 LDR 進行算繪。"
@@ -308,17 +322,43 @@ msgstr "**相機：**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透視法、正視投影與錐臺偏移相機。"
 
-msgid "**Physically-based rendering:**"
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
 msgstr "**基於物理的算繪：**"
 
 msgid "Follows the Disney PBR model."
 msgstr "依照 Disney PBR 模型。"
 
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
+msgstr ""
+
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "使用支援 ORM 紋理的粗糙金屬 (Roughness-metallic) 工作流程。"
 
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
+msgstr ""
+
 msgid "Normal mapping."
 msgstr "法線映射。"
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr ""
+
+msgid ""
+"Distance fade which can use alpha blending or dithering to avoid going "
+"through the transparent pipeline."
+msgstr "距離淡化可使用 Alpha 混合或晃動以避免穿過透明管線。"
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "晃動可依像素級別或物件級別來判斷。"
 
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
@@ -328,16 +368,14 @@ msgstr "**GLES3:** 依據距離自動判斷精細等級的視差/浮雕映射。
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "**GLES3:** 次表面散射與透射。"
 
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "**GLES3:** 臨近淡化 (軟粒子)。"
-
-msgid ""
-"Distance fade which can use alpha blending or dithering to avoid going "
-"through the transparent pipeline."
-msgstr "距離淡化可使用 Alpha 混合或晃動以避免穿過透明管線。"
-
-msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr "晃動可依像素級別或物件級別來判斷。"
 
 msgid "**Real-time lighting:**"
 msgstr "**即時光照：**"
@@ -350,6 +388,19 @@ msgstr "全向光照。"
 
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "有可調整圓錐角與衰減的聚光。"
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "晃動可依像素級別或物件級別來判斷。"
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
+msgstr ""
 
 msgid "**Shadow mapping:**"
 msgstr "**陰影映射：**"
@@ -397,23 +448,24 @@ msgstr "**GLES3:** GI 探查 (較慢，半即時)。支援反射。"
 msgid "**Reflections:**"
 msgstr "**反射：**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "**GLES3:** 基於 Voxel 的反射 (使用 GI 探查時)。"
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
 "使用 ReflectionProbe 來快速烘焙反射或較慢的即時反射。可選擇性開啟平行矯正。"
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr "**GLES3:** 螢幕空間反射。"
 
 #, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr "可混合使用多個反射技術以取得更高的精確度。"
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "**GLES3:** 基於 Voxel 的反射 (使用 GI 探查時)。"
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "**GLES3:** 螢幕空間反射。"
 
 msgid "**Sky:**"
 msgstr "**天空:**"
@@ -488,17 +540,21 @@ msgstr "最近、雙線性、三線性或各向異性過濾。"
 msgid "**Texture compression:**"
 msgstr "**紋理壓縮：**"
 
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
+msgstr ""
+
+#, fuzzy
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "**GLES3:** S3TC (在行動裝置與網頁平台上不支援)。"
+
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr "ETC1 (使用 GLES2 算繪引擎時建議使用)。"
+
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr "**GLES3:** BPTC 以獲得高品質壓縮 (在 macOS 上不支援)。"
 
 msgid "*GLES3:* ETC2 (not supported on macOS)."
 msgstr "**GLES3:** ETC2 (在 macOS 上不支援)。"
-
-msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (使用 GLES2 算繪引擎時建議使用)。"
-
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "**GLES3:** S3TC (在行動裝置與網頁平台上不支援)。"
 
 msgid "**Anti-aliasing:**"
 msgstr "**抗鋸齒：**"
@@ -510,9 +566,26 @@ msgstr "多採樣抗鋸齒 (MSAA)。"
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "多採樣抗鋸齒 (MSAA)。"
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "效能"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 "這些效果中大多數都可以調整為更佳效能或進一步提升品質。這些調整有助於在離線算"
 "繪下使用 Godot。"
@@ -540,6 +613,10 @@ msgstr "使用 PathFollow3D 節點來使節點跟隨 Path3D。"
 
 msgid "3D geometry helper class."
 msgstr "3D 集合 Helper 類別。"
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
+msgstr ""
 
 msgid "3D physics"
 msgstr "3D 物理"
@@ -706,8 +783,10 @@ msgstr ""
 "支援可重新導向的 :ref:`音訊匯流排 <doc_audio_buses>` 與特效，並包含數十種特"
 "效。"
 
+#, fuzzy
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr "Listener3D 節點可用於在 3D 空間中以與相機的位置進行監聽。"
 
 msgid ""
@@ -755,7 +834,7 @@ msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis。"
 
 msgid "MP3."
-msgstr ""
+msgstr "MP3。"
 
 msgid "*3D scenes:*"
 msgstr "**3D 場景:**"
@@ -770,7 +849,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (直接從 "
 "Blender 中匯出)。"
 
-msgid "FBX (experimental)."
+#, fuzzy
+msgid "FBX (experimental, static meshes only)."
 msgstr "FBX (實驗性)。"
 
 msgid "Collada (.dae)."
@@ -778,6 +858,12 @@ msgstr "Collada (.dae)。"
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr "Wavefront OBJ (僅可使用靜態場景，可直接載入為網格)。"
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
 
 msgid "Input"
 msgstr "輸入"
@@ -950,6 +1036,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "解析自定命令行引數。"
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr "行動平台"
 
@@ -1022,9 +1115,13 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "樹狀圖 (也可以用於顯示表格)。"
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr "Container (水平、垂直、網格、置中、可拖曳的分割線…等)。"
 
 msgid "Controls can be rotated and scaled."
@@ -1075,7 +1172,10 @@ msgstr "通過目前的編輯器佈景主題設定來產生佈景主題。"
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr "使用 :ref:`class_StyleBoxFlat` 來製作基於向量的佈景主題。"
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+#, fuzzy
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr "支援圓角與斜角、陰影，與每個邊都可調整的寬度。"
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1091,6 +1191,11 @@ msgstr "動畫"
 
 msgid "Direct kinematics and inverse kinematics."
 msgstr "正向運動學與反向運動學。"
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
+msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr "支援以可客製化的插值算法來動畫化任何屬性。"
@@ -1133,7 +1238,8 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr "可通過 :ref:`class_ConfigFile` 來讀寫 INI 格式的組態設定檔。"
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+#, fuzzy
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr "可序列化或復原序列化任何 Godot 資料型別，包含 Vector, Color…等。"
 
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1163,15 +1269,20 @@ msgid ""
 msgstr ""
 ":ref:`低階伺服器存取 <doc_using_servers>` 可在需要時繞過場景樹的一些瓶頸。"
 
-msgid "Command line interface for automation."
-msgstr "可用於自動化的命令行介面。"
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
+msgstr ""
+"更多有關命令行引數的資訊，請參考 :ref:`命令行教學 "
+"<doc_command_line_tutorial>` 。"
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "通過持續整合 (CI, Continuous Integration) 平台來匯出與部署專案。"
 
+#, fuzzy
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "可用於 Bash, ZSH 與 Fish 的 `自動補全腳本 <https://github.com/godotengine/"
 "godot/tree/master/misc/dist/shell>`__ 。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,17 @@ msgstr ""
 "Tämän sivun tarkoitus on luetella kaikki ne ominaisuudet joita Godot tällä "
 "hetkellä tukee."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Tällä sivulla luetellaan Godotin nykyisen vakaan version (3.3) tukemat "
+"ominaisuudet. `Lisäominaisuuksia <https://docs.godotengine.org/en/latest/"
+"about/list_of_features.html>`__ on saatavilla uusimmassa kehitysversiossa "
+"(4.0)."
 
 msgid "Features"
 msgstr "Ominaisuudet"
@@ -45,27 +50,29 @@ msgid "Windows 7 and later (64-bit and 32-bit)."
 msgstr "Windows 7 ja tuoreemmat (64- ja 32-bittiset)."
 
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 ja uudempi (64-bittinen, x86 ja ARM)."
 
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bittinen ja 32-bittinen, x86 ja ARM)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Binäärit on linkitetty staattisesti ja ne voivat toimia millä tahansa "
+"jakelulla jos ne on käännetty riittävän vanhalla perusjakelulla."
 
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Viralliset binäärit on käännetty Ubuntu 14.04:lle."
 
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 WebAssemblyn kautta (Firefox, Chrome, Edge, Opera)."
 
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Viedyt projektit:**"
 
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 ja uudempi."
 
 msgid "iOS 10.0 and later."
 msgstr "iOS 10.0 ja uudemmat."
@@ -77,66 +84,78 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Headless Linux- ja macOS-palvelimet "
+"<doc_exporting_for_dedicated_servers>`."
 
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot pyrkii olemaan mahdollisimman alustariippumaton, ja se voidaan siirtää "
+"uusille alustoille suhteellisen helposti."
 
 msgid "Editor"
 msgstr "Editori"
 
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Ominaisuusmerkintä**"
+msgstr "**Ominaisuudet:**"
 
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Kohtauspuu muokkain."
 
-msgid "Script editor."
-msgstr "Skriptieditori."
+#, fuzzy
+msgid "Built-in script editor."
+msgstr "Sisäänrakennettu teemaeditori."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Tuki :ref:`ulkoisille komentosarjamuokkaimille <doc_external_editor>` kuten "
+"Visual Studio Code tai Vim."
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debuggeri <doc_debugger_panel>`."
 
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Säikeiden virheenkorjausta ei ole vielä tuettu."
 
 msgid "Performance monitoring tools."
 msgstr "Suorituskyvyn seurantatyökalut."
 
 msgid "Live script reloading."
-msgstr ""
+msgstr "Skriptin uudelleenlataus."
 
 msgid "Live scene editing."
-msgstr ""
+msgstr "Live-kohtauksen muokkaus."
 
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Muutokset näkyvät muokkaimessa ja säilyvät käynnissä olevan projektin "
+"sulkemisen jälkeen."
 
 msgid "Remote inspector."
-msgstr ""
+msgstr "Etätarkastaja."
 
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Muutokset eivät näy muokkaimessa eikä niitä säilytetä käynnissä olevan "
+"projektin sulkemisen jälkeen."
 
 msgid "Live camera replication."
 msgstr "Kameran reaaliaikainen replikointi."
 
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Siirrä muokkaimen sisäistä kameraa ja katso tulos käynnissä olevassa "
+"projektissa."
 
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Käytä muokkainta kymmenillä yhteisön tuottamilla kielillä."
 
 msgid "**Plugins:**"
 msgstr "**Liitännäiset:**"
@@ -145,53 +164,72 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Muokkaimen laajennuksia voi ladata :ref:`asset-kirjastosta "
+"<doc_what_is_assetlib>` muokkaimen toimintojen laajentamiseksi."
 
+#, fuzzy
 msgid ""
-"Create your own plugins using GDScript to add new features or speed up your "
-"workflow."
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
+"Luo omia lisäosia GDScriptin avulla lisätäksesi uusia ominaisuuksia tai "
+"nopeuttaaksesi työnkulkuasi."
 
+#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
-"them directly."
+"them directly. features or speed up your workflow."
 msgstr ""
+"Lataa projekteja projektinhallinnassa olevasta asset-kirjastosta ja tuo ne "
+"suoraan."
+
+#, fuzzy
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the project manager and import them directly."
+msgstr ""
+"Lataa projekteja projektinhallinnassa olevasta asset-kirjastosta ja tuo ne "
+"suoraan."
 
 msgid "2D graphics"
 msgstr "2d grafiikka"
 
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Kaksi renderöintilaitetta käytettävissä:**"
 
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"OpenGL ES 3.0 -renderöijä (käyttää OpenGL 3.3:a työpöytäympäristöissä)."
 
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Huippuluokan visuaalinen ilme. Suositellaan työpöydille."
 
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"OpenGL ES 2.0 -renderöijä (käyttää OpenGL 2.1:tä työpöytäympäristöissä)."
 
 msgid "Recommended on mobile and Web platforms."
 msgstr "Suositeltu mobiili- ja web alustoille."
 
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Sprite-, monikulmio-- ja viivarenderöinti."
 
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Korkean tason työkalut viivojen ja monikulmioiden piirtämiseen, kuten "
+"Polygon2D ja Line2D."
 
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite apuvälineenä animoitujen spritejen luomiseen."
 
 msgid "Parallax layers."
-msgstr ""
+msgstr "Parallax-kerrokset."
 
-msgid "Pseudo-3D support by automatically duplicating a layer several times."
+msgid "Pseudo-3D support including preview in the editor."
 msgstr ""
 
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "2D-valaistus normaalikartoilla."
 
 msgid "Hard or soft shadows."
 msgstr "Kovat tai pehmeät varjot."
@@ -200,25 +238,35 @@ msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Kirjaisimien renderöinti bittikarttojen avulla (BitmapFont) tai rasterointi "
+"FreeTypea käyttäen (DynamicFont)."
 
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "Bittikarttakirjaisimet voidaan viedä BMFontin kaltaisilla työkaluilla."
 
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
+"DynamicFont tukee yksivärisiä kirjaisimia sekä värillisiä kirjaimia (esim. "
+"emoji-kirjoituksia varten). Tuetut formaatit ovat TTF, OTF ja WOFF1."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont tukee valinnaisia kirjaimien ääriviivoja, joiden leveys ja väri "
+"ovat säädettävissä."
 
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Tuki kirjasinten ylinäytteenotolle, jotta kirjaimet pysyvät terävinä "
+"korkeammilla resoluutioilla."
 
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
+"GPU-pohjaiset partikkelit, joissa on tuki mukautetuille "
+"partikkelivarjostimille."
 
 msgid "CPU-based particles."
 msgstr "CPU-pohjaiset partikkelit."
@@ -227,184 +275,252 @@ msgid "2D tools"
 msgstr "2D työkalut"
 
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2D-kamera, jossa on sisäänrakennettu tasoitus ja vetomarginaali."
 
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Path2D-solmu, joka edustaa polkua 2D-avaruudessa."
 
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Voidaan piirtää muokkaimessa tai luoda proseduraalisesti."
 
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "PathFollow2D-solmu, jolla saat solmut seuraamaan Path2D:tä."
 
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2D-geometrian apuluokka."
 
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Line2D-solmu teksturoitujen 2D-viivojen piirtämiseen."
 
-#, fuzzy
 msgid "2D physics"
-msgstr "Fysiikkamallinnus"
+msgstr "2D-fysiikka"
 
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "Fysiikkaominaisuudet"
+msgstr "**Fysiikan rungot:**"
 
 msgid "Static bodies."
 msgstr "Staattiset kappaleet."
 
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Jäykät rungot."
 
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Kinemaattiset rungot."
 
 msgid "Joints."
-msgstr ""
+msgstr "Nivelet."
 
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Alueet, joilla havaitaan sinne saapuvat tai sieltä poistuvat rungot."
 
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Törmäyskappaleet"
+msgstr "**Törmäystunnistus:**"
 
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Sisäänrakennetut muodot: viiva, laatikko, ympyrä, kapseli."
 
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Törmäyspolygonit (voidaan piirtää manuaalisesti tai luoda spriteistä "
+"muokkaimessa)."
 
 msgid "3D graphics"
 msgstr "3D grafiikka"
 
-msgid "HDR rendering with sRGB."
+#, fuzzy
+msgid "Optional HDR rendering with sRGB (enabled by default)."
+msgstr "HDR renderöinti sRGB:llä."
+
+msgid ""
+"Uses an optional depth prepass (enabled by default) to reduce the cost of "
+"overdraw, which speeds up complex scene rendering."
 msgstr ""
 
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "LDR-renderöinti parantaa yhteensopivuutta."
 
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Kaikki ominaisuudet eivät ole käytettävissä. Ominaisuudet, jotka ovat "
+"käytettävissä vain OpenGL ES 3.0 -renderöijää käytettäessä, on merkitty alla "
+"*GLES3*."
 
 msgid "**Camera:**"
 msgstr "**Kamera:**"
 
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Perspektiivikamerat, ortografiset kamerat ja frustum-offset-kamerat."
 
-msgid "**Physically-based rendering:**"
-msgstr ""
+#, fuzzy
+msgid "**Physically-based rendering (built-in material features):**"
+msgstr "**Fyysisesti perustuva renderointi:**"
 
 msgid "Follows the Disney PBR model."
+msgstr "Seuraa Disney PBR -mallia."
+
+msgid ""
+"Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
+"shading modes."
+msgstr ""
+
+msgid ""
+"Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
 msgstr ""
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
+msgstr "Käyttää karheusmetallia ja tukee ORM-tekstuureja."
+
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance"
 msgstr ""
 
 msgid "Normal mapping."
 msgstr "Normaalimäppäys."
 
-msgid ""
-"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
-"distance."
-msgstr ""
-
-msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
-
-msgid "*GLES3:* Proximity fade (soft particles)."
+msgid "Detail mapping for the albedo and normal maps."
 msgstr ""
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Etäisyyshäivytys, joka voi käyttää alfa-sekoitusta tai sekoitusta "
+"välttääkseen läpinäkyvän putken läpi kulkemisen."
 
 msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "Sekoitus voidaan määrittää pikseli- tai objektikohtaisesti."
+
+msgid ""
+"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
+"distance."
 msgstr ""
+"*GLES3:* Parallaksia/reliefikartoitus automaattisella etäisyyteen "
+"perustuvalla tarkkuustasolla."
+
+msgid "*GLES3:* Sub-surface scattering and transmittance."
+msgstr "*GLES3:* Pinnanalainen sironta ja läpäisy."
+
+msgid ""
+"*GLES3:* Refraction with support for material roughness (resulting in blurry "
+"refraction). On GLES2, refraction is still functional but lacks support for "
+"material roughness."
+msgstr ""
+
+msgid "*GLES3:* Proximity fade (soft particles)."
+msgstr "*GLES3:* Läheisyyden haalistuminen (pehmeät hiukkaset)."
 
 msgid "**Real-time lighting:**"
 msgstr "**Reaaliaikainen valaistus:**"
 
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Suuntavalot (aurinko/kuu). Jopa 4 per kohtaus."
 
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Monisuuntaiset valot."
 
 msgid "Spot lights with adjustable cone angle and attenuation."
+msgstr "Kohdevalot, joissa on säädettävä kartiokulma ja vaimennus."
+
+#, fuzzy
+msgid "Specular energy can be adjusted on a per-light basis."
+msgstr "Sekoitus voidaan määrittää pikseli- tai objektikohtaisesti."
+
+msgid ""
+"*GLES3:* Lighting is done with a single-pass forward approach. By default, "
+"up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
+"If needed, this limit can be increased at the cost of increased shader "
+"compilation times and lower performance. GLES2 uses a multi-pass forward "
+"approach to lighting, which doesn't have a limit on the number of lights but "
+"is slower with many lights."
 msgstr ""
 
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**Varjokartoitus:**"
 
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*Suuntavalo:* Ortogonaalinen (nopein), PSSM 2-split ja 4-split. Tukee "
+"sekoitusta jakojen välillä."
 
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* Kaksoisparaboloidi (nopea) tai kuutiokartta (hitaampi mutta "
+"tarkempi). Tukee värillisiä projektoritekstuureja panoraamojen muodossa."
 
 msgid "*SpotLight:* Single texture."
 msgstr "*SpotLight:* Yksi tekstuuri."
 
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Maailmanlaajuinen valaistus epäsuoralla valaistuksella:**"
 
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
+"Paistetut valokartat (nopea, mutta niitä ei voi päivittää suorituksen "
+"aikana)."
 
 msgid ""
 "Supports baking indirect light only or baking both direct and indirect "
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Tukee vain epäsuoran valon tai sekä suoran, että epäsuoran valaistuksen "
+"paistamista. Paistotilaa voidaan säätää valaisinkohtaisesti hybridivalojen "
+"paistoasetusten mahdollistamiseksi."
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Tukee dynaamisten kohteiden valaistusta automaattisella "
+"kahdeksikkopohjaisella järjestelmällä. Manuaalista anturin sijoittelua ei "
+"tarvita."
 
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Valokartat paistetaan suorittimella."
 
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
+"*GLES3:* GI-anturit (hitaampi, puolireaaliaikainen). Tukee heijastuksia."
 
 msgid "**Reflections:**"
 msgstr "**Heijastukset:**"
 
-msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
-
+#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
-"Parallax correction can optionally be enabled."
+"Parallax box correction can optionally be enabled."
 msgstr ""
-
-msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+"Nopeat paistetut heijastukset tai hitaat reaaliaikaiset heijastukset "
+"käyttämällä ReflectionProbea. Parallaksikorjaus voidaan ottaa valinnaisesti "
+"käyttöön."
 
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
+"Heijastustekniikoita voidaan sekoittaa yhteen tarkkuuden tai skaalautuvuuden "
+"lisäämiseksi."
+
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr "*GLES3:* Voxel-pohjaiset heijastukset (kun käytetään GI-anturimia)."
+
+msgid "*GLES3:* Screen-space reflections."
+msgstr "*GLES3:* Näyttötilan heijastukset."
 
 msgid "**Sky:**"
 msgstr "**Taivas:**"
 
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Panoraamataivas (HDRI:n avulla)."
 
 msgid "Procedural sky."
 msgstr "Proseduraalinen taivas."
@@ -413,77 +529,90 @@ msgid "**Fog:**"
 msgstr "**Sumu:**"
 
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Syvyyssumu, jossa on säädettävä vaimennuskäyrä."
 
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "Korkeussumu (lattia tai katto) säädettävällä vaimennuksella."
 
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Tuki automaattiselle syvyyssumuvärille kameran suunnasta riippuen "
+"(vastaamaan auringon väriä)."
 
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "Valinnainen läpäisykyky, jotta valot näkyvät paremmin sumussa."
 
 msgid "**Particles:**"
 msgstr "**Partikkelit:**"
 
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
+"*GLES3:* GPU-pohjaiset hiukkaset, jotka tukevat mukautettuja "
+"hiukkasvarjostimia."
 
 msgid "**Post-processing:**"
 msgstr "**Jälkikäsittely:**"
 
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Tonemapping (Lineaarinen, Reinhard, Filmic, ACES)."
 
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
+"*GLES3:* Automaattiset valotuksen säädöt näyttöikkunan kirkkauden "
+"perusteella."
 
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Syväterävyys läheltä ja kaukaa."
 
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "*GLES3:* Ruututilan ambient-peitto."
 
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Valinnainen kaistanpoisto värinauhan välttämiseksi (tehokas, kun "
+"HDR-hahmonnus on käytössä)."
 
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"Hehku/kukinta valinnaisella bicubic-skaalaustoiminnolla ja useilla "
+"sekoitustiloilla: Näyttö, Pehmeä valo, Lisää, Korvaa."
 
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Värikorjaus yhdellä ulottuvuudella."
 
 msgid "Brightness, contrast and saturation adjustments."
+msgstr "Kirkkauden, kontrastin ja kylläisyyden säädöt."
+
+msgid "**Texture filtering:**"
+msgstr "**Tekstuurisuodatus:**"
+
+msgid "Nearest, bilinear, trilinear or anisotropic filtering."
+msgstr "Lähin, bilineaarinen, trilineaarinen tai anisotrooppinen suodatus."
+
+msgid "**Texture compression:**"
+msgstr "**Tekstuurin pakkaus:**"
+
+msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
 
 #, fuzzy
-msgid "**Texture filtering:**"
-msgstr "**Ominaisuusmerkintä**"
-
-msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
-
-msgid "**Texture compression:**"
-msgstr ""
-
-msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
-
-msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgid "S3TC (only supported on desktop platforms)."
+msgstr "Huippuluokan visuaalinen ilme. Suositellaan työpöydille."
 
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (suositellaan käytettäessä GLES2-renderöijää)."
 
-msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
+msgstr "*GLES3:* BPTC korkealaatuista pakkausta varten (ei tueta macOS:ssä)."
+
+msgid "*GLES3:* ETC2 (not supported on macOS)."
+msgstr "*GLES3:* ETC2 (ei tuettu macOS:ssä)."
 
 msgid "**Anti-aliasing:**"
 msgstr ""
@@ -495,9 +624,25 @@ msgstr "Moninäytteinen antialiasointi (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Moninäytteinen antialiasointi (MSAA)."
 
+#, fuzzy
+msgid "**Performance:**"
+msgstr "Muoto"
+
 msgid ""
-"Most of these effects can be adjusted for better performance or to further "
-"improve quality. This can be helpful when using Godot for offline rendering."
+"Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
+"Supports gameplay notifications with primary and secondary visibility to "
+"disable AI/physics processing for nodes that don't need it."
+msgstr ""
+
+msgid ""
+"Real-time occluder spheres. Not as effective as rooms and portals (and "
+"doesn't support gameplay notifications), but easier to set up."
+msgstr ""
+
+msgid ""
+"Most of the effects listed above can be adjusted for better performance or "
+"to further improve quality. This can be helpful when using Godot for offline "
+"rendering."
 msgstr ""
 
 #, fuzzy
@@ -525,6 +670,10 @@ msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr ""
 
 msgid "3D geometry helper class."
+msgstr ""
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file from the editor."
 msgstr ""
 
 #, fuzzy
@@ -683,7 +832,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Listener3D node to listen from a position different than the camera in 3D."
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
 msgstr ""
 
 msgid ""
@@ -749,13 +899,19 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (suora "
 "vienti Blenderistä)."
 
-msgid "FBX (experimental)."
+msgid "FBX (experimental, static meshes only)."
 msgstr ""
 
 msgid "Collada (.dae)."
 msgstr ""
 
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
+msgstr ""
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
 msgstr ""
 
 msgid "Input"
@@ -922,6 +1078,13 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "Komentoriviargumenttien jäsennys."
 
+msgid ""
+":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
+"downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
+"Any binary can be used without a window using the ``--no-window`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
 msgid "Mobile"
 msgstr ""
 
@@ -992,9 +1155,12 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr ""
 
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
 msgid ""
-"Containers (horizontal, vertical, grid, center, margin, draggable "
-"splitter, ...)."
+"Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
+"draggable splitter, ...)."
 msgstr ""
 
 msgid "Controls can be rotated and scaled."
@@ -1043,7 +1209,9 @@ msgstr ""
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ""
 
-msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
 msgstr ""
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -1058,6 +1226,11 @@ msgid "Animation"
 msgstr "Animaatio"
 
 msgid "Direct kinematics and inverse kinematics."
+msgstr ""
+
+msgid ""
+":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
+"code."
 msgstr ""
 
 msgid "Support for animating any property with customizable interpolation."
@@ -1101,7 +1274,7 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
 
-msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
 
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1126,15 +1299,17 @@ msgid ""
 "bypassing the scene tree's overhead when needed."
 msgstr ""
 
-msgid "Command line interface for automation."
+#, fuzzy
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr "Komentorivikäyttöliittymä automointia varten."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 msgid ""
-"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
-"dist/shell>`__ are available for Bash, zsh and fish."
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 
 msgid ""
@@ -1173,6 +1348,5 @@ msgid ""
 "may be implemented in future Godot releases."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "Muokkaa käyttöliittymää"
+msgstr "Käännöksen tila"

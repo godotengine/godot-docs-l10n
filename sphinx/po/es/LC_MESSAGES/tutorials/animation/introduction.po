@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,8 +195,9 @@ msgstr ""
 msgid "Our scene setup"
 msgstr "Nuestra configuración de la escena"
 
+#, fuzzy
 msgid ""
-"AnimationPlayer inherits from Node instead of Node2D or Node3D, which means "
+"AnimationPlayer inherits from Node instead of Node2D or Spatial, which means "
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
@@ -374,13 +375,11 @@ msgstr ""
 "El modo de actualización de una pista le indica a Godot cuándo actualizar "
 "los valores de la propiedad. Este puede ser:"
 
-#, fuzzy
 msgid "**Continuous:** Update the property on each frame."
-msgstr "Continuo: Actualiza la propiedad en cada frame"
+msgstr "**Continuo:** Actualiza la propiedad en cada frame."
 
-#, fuzzy
 msgid "**Discrete:** Only update the property on keyframes."
-msgstr "Discreto: Sólo se actualiza la propiedad en fotogramas clave"
+msgstr "**Discreto:** Sólo se actualiza la propiedad en fotogramas clave."
 
 msgid ""
 "**Trigger:** Only update the property on keyframes or triggers. Triggers are "

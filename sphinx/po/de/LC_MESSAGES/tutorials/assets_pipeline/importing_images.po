@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgid "Import options are vast:"
 msgstr "Die Importmöglichkeiten sind riesig:"
 
 msgid "Detect 3D"
-msgstr "Detect 3D"
+msgstr "3D erkennen"
 
 msgid ""
 "This option makes Godot be aware of when a texture (which is imported for 2D "
@@ -289,7 +289,7 @@ msgid "|bad| Slow"
 msgstr "|bad| Langsam"
 
 msgid "HDR Mode"
-msgstr "HDR Mode"
+msgstr "HDR-Modus"
 
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
@@ -312,7 +312,7 @@ msgstr ""
 "der Texturen gewährleistet, aktivieren Sie die Option \"Force RGBE\"."
 
 msgid "Normal Map"
-msgstr "Normal Map (Karte)"
+msgstr "Normal-Map"
 
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
@@ -375,7 +375,7 @@ msgstr ""
 "als Textur je nach Anwendungsfall umgeschaltet werden können."
 
 msgid "Repeat"
-msgstr "Repeat (Wiederhole)"
+msgstr "Wiederholen"
 
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
@@ -406,7 +406,7 @@ msgstr ""
 "Spiele erstellt."
 
 msgid "Mipmaps"
-msgstr "MipMaps"
+msgstr "Mipmaps"
 
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
@@ -452,9 +452,8 @@ msgstr ""
 "diese Option dafür, dass sie mehr Details aufweisen, indem die Unschärfe "
 "reduziert wird."
 
-#, fuzzy
 msgid "sRGB"
-msgstr "ist sRGB"
+msgstr "sRGB"
 
 #, fuzzy
 msgid ""
@@ -488,7 +487,7 @@ msgstr ""
 "aktiviertem sRGB in 3D und die Kopie mit deaktiviertem sRGB in 2D."
 
 msgid "Process"
-msgstr "Prozess"
+msgstr "Verarbeiten"
 
 msgid ""
 "Some special processes can be applied to images when imported as textures."
@@ -497,7 +496,7 @@ msgstr ""
 "Texturen importiert werden."
 
 msgid "Fix Alpha Border"
-msgstr "Alpha-Grenze fixieren"
+msgstr "Alpharand beheben"
 
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
@@ -543,7 +542,7 @@ msgstr ""
 "Option, damit sie wieder richtig aussehen."
 
 msgid "Invert Color"
-msgstr "Farbe invertieren"
+msgstr "Farben invertieren"
 
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "

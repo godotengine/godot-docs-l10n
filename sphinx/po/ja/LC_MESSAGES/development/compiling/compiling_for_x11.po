@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,12 @@ msgstr ""
 
 msgid "Compiling for X11 (Linux, \\*BSD)"
 msgstr "X11のコンパイル (Linux、\\*BSD)"
+
+msgid ""
+"This page describes how to compile Linux editor and export template binaries "
+"from source. If you're looking to export your project to Linux instead, "
+"read :ref:`doc_exporting_for_linux`."
+msgstr ""
 
 msgid "Requirements"
 msgstr "必要条件"
@@ -62,6 +68,10 @@ msgstr "*任意* - libudev (``udev=yes`` でのビルドに)。"
 
 msgid "*Optional* - yasm (for WebM SIMD optimizations)."
 msgstr "*任意* - yasm (WebM SIMD最適化のため)。"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
 
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
@@ -346,6 +356,5 @@ msgid ""
 "variable."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻訳形式"
+msgstr "翻訳ステータス"

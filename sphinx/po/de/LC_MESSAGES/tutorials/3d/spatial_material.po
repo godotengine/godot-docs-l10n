@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,7 @@ msgstr ""
 "Überlagern von Schatten auf einen Kamera-Feed in AR."
 
 msgid "Unshaded"
-msgstr "nicht schattiert"
+msgstr "Unschattiert"
 
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
@@ -151,7 +151,7 @@ msgstr ""
 "alle Schattierungen entfernt und reine, unbeleuchtete Farben angezeigt."
 
 msgid "Vertex Lighting"
-msgstr "Vertex Beleuchtung"
+msgstr "Vertexbeleuchtung"
 
 msgid ""
 "Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
@@ -222,7 +222,7 @@ msgstr ""
 "werden (siehe unten)."
 
 msgid "World Triplanar"
-msgstr "Dreiflächige Welt"
+msgstr "Welt triplanar"
 
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
@@ -234,7 +234,7 @@ msgstr ""
 "berechnet. Mit dieser Option funktioniert Triplanar im Raum."
 
 msgid "Fixed Size"
-msgstr "feste Größe"
+msgstr "Feste Größe"
 
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
@@ -246,7 +246,7 @@ msgstr ""
 "Renderpriorität) und einige Arten von Werbetafeln nützlich."
 
 msgid "Do Not Receive Shadows"
-msgstr "Keine Schatten empfangen"
+msgstr "Empfange keine Schatten"
 
 msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
@@ -265,7 +265,7 @@ msgstr ""
 "beleuchten würde."
 
 msgid "Ensure Correct Normals"
-msgstr "Stellen Sie sicher, dass die Normals korrekt sind"
+msgstr "Korrekte Normalen sicherstellen"
 
 msgid "Fixes normals when non-uniform scaling is used."
 msgstr ""
@@ -291,7 +291,7 @@ msgstr ""
 "verwendet."
 
 msgid "Is sRGB"
-msgstr "ist sRGB"
+msgstr "Ist sRGB"
 
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
@@ -311,7 +311,7 @@ msgstr ""
 "viele Aspekte des Renderns zu optimieren:"
 
 msgid "Diffuse Mode"
-msgstr "Diffuser Modus"
+msgstr "Diffusmodus"
 
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
@@ -347,7 +347,7 @@ msgid ""
 msgstr ""
 
 msgid "Specular Mode"
-msgstr "spiegelnder Modus"
+msgstr "Spiegelndmodus"
 
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
@@ -376,7 +376,7 @@ msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
 msgstr "**Disabled:** Manchmal ist der Blob im Weg. Weg da!"
 
 msgid "Blend Mode"
-msgstr "Übergangs-Modus"
+msgstr "Mischmodus"
 
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
@@ -401,7 +401,7 @@ msgid "**Mul:** Object is multiplied."
 msgstr "**Mul:** Objekt wird multipliziert."
 
 msgid "Cull Mode"
-msgstr "Ausschneid-Modus"
+msgstr "Aushöhlungsmodus"
 
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
@@ -434,7 +434,7 @@ msgid ""
 msgstr ""
 
 msgid "Depth Draw Mode"
-msgstr "Tiefenzeichnungsmodus"
+msgstr "Tiefenzeichenmodus"
 
 msgid "Specifies when depth rendering must take place."
 msgstr "Gibt an, wann das Tiefenrendern stattfinden muss."
@@ -476,7 +476,7 @@ msgid "When drawing points, specify the point size in pixels."
 msgstr "Geben Sie beim Zeichnen von Punkten die Punktgröße in Pixel an."
 
 msgid "Billboard Mode"
-msgstr "Billboard Modus"
+msgstr "Plakatwandmodus"
 
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
@@ -513,13 +513,13 @@ msgstr ""
 "Die oben genannten Optionen sind nur für Partikel Billboards aktiviert."
 
 msgid "Billboard Keep Scale"
-msgstr "Billboard Skalierung beibehalten"
+msgstr "Plakatwand Verhältnis beibehalten"
 
 msgid "Enables scaling a mesh in billboard mode."
 msgstr "Ermöglicht die Skalierung eines Mesh im Billboard-Modus."
 
 msgid "Grow"
-msgstr "Wachsen"
+msgstr "Wachstum"
 
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
@@ -531,7 +531,7 @@ msgid ""
 msgstr ""
 
 msgid "Use Alpha Scissor"
-msgstr "Alpha-Schere verwenden"
+msgstr "Alphaschere verwenden"
 
 msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
@@ -556,7 +556,7 @@ msgstr ""
 "nachstehend ausführlich beschrieben:"
 
 msgid "Albedo"
-msgstr "Albedo (Hauptfarbe)"
+msgstr "Albedo"
 
 msgid ""
 "*Albedo* is the base color for the material, on which all the other settings "
@@ -621,7 +621,7 @@ msgstr ""
 "erstellen."
 
 msgid "Roughness"
-msgstr "Unebenheit"
+msgstr "Rauheit"
 
 msgid ""
 "*Roughness* affects the way reflection happens. A value of ``0`` makes it a "
@@ -636,7 +636,7 @@ msgstr ""
 "richtigen Kombination von *Metallisch* und *Unebenheit* erzielt werden."
 
 msgid "Emission"
-msgstr "Ausstrahlung"
+msgstr "Emission"
 
 msgid ""
 "*Emission* specifies how much light is emitted by the material (keep in mind "
@@ -689,7 +689,7 @@ msgstr ""
 "wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 msgid "Rim"
-msgstr "Rim"
+msgstr "Umrandung"
 
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
@@ -733,7 +733,7 @@ msgstr ""
 "der über dem vorhandenen Material hinzugefügt wird."
 
 msgid "Anisotropy"
-msgstr "Anisotropie (Richtungsabhängigkeit)"
+msgstr "Anisotropie"
 
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
@@ -743,7 +743,7 @@ msgid ""
 msgstr ""
 
 msgid "Ambient Occlusion"
-msgstr "Umgebungsokklusion (Umgebungsbedingte Verdeckung)"
+msgstr "Umgebungsverdeckung"
 
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
@@ -766,7 +766,7 @@ msgid ""
 msgstr ""
 
 msgid "Subsurface Scattering"
-msgstr "Streuung unter der Oberfläche"
+msgstr "Subsurface-Streuung"
 
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
@@ -805,7 +805,7 @@ msgstr ""
 "Weise wie die Brechung im wirklichen Leben."
 
 msgid "Detail"
-msgstr "Detail"
+msgstr "Details"
 
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
