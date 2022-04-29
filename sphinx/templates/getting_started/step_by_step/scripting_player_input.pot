@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,27 +21,27 @@ msgid "Listening to player input"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_player_input.rst:10
-msgid "Building upon the previous lesson, let's look at another important feature of any game: giving control to the player. To add this, we need to modify our code."
+msgid "Building upon the previous lesson :ref:`doc_scripting_first_script`, let's look at another important feature of any game: giving control to the player. To add this, we need to modify our ``Sprite.gd`` code."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:15
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:16
 msgid "You have two main tools to process the player's input in Godot:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:17
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:18
 msgid "The built-in input callbacks, mainly ``_unhandled_input()``. Like ``_process()``, it's a built-in virtual function that Godot calls every time the player presses a key. It's the tool you want to use to react to events that don't happen every frame, like pressing :kbd:`Space` to jump. To learn more about input callbacks, see :ref:`doc_inputevent`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:22
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:23
 msgid "The ``Input`` singleton. A singleton is a globally accessible object. Godot provides access to several in scripts. It's the right tool to check for input every frame."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:26
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:27
 msgid "We're going to use the ``Input`` singleton here as we need to know if the player wants to turn or move every frame."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:29
-msgid "For turning, we should use a new variable: ``direction``. Update the top of the ``_process()`` function like so, up to the line where we increment the sprite's ``rotation``."
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:30
+msgid "For turning, we should use a new variable: ``direction``. In our ``_process()`` function, replace the ``rotation += angular_speed * delta`` line with the code below."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_player_input.rst:45
@@ -80,44 +80,48 @@ msgstr ""
 msgid "To only move when pressing a key, we need to modify the code that calculates the velocity. Replace the line starting with ``var velocity`` with the code below."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:86
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:84
 msgid "We initialize the ``velocity`` with a value of ``Vector2.ZERO``, another constant of the built-in ``Vector`` type representing a 2D vector of length 0."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:89
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:87
 msgid "If the player presses the \"ui_up\" action, we then update the velocity's value, causing the sprite to move forward."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:92
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:91
+msgid "Complete script"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:93
 msgid "Here is the complete ``Sprite.gd`` file for reference."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:118
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:119
 msgid "If you run the scene, you should now be able to rotate with the left and right arrow keys and move forward by pressing :kbd:`Up`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:124
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:125
 msgid "Summary"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:126
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:127
 msgid "In summary, every script in Godot represents a class and extends one of the engine's built-in classes. The node types your classes inherit from give you access to properties like ``rotation`` and ``position`` in our sprite's case. You also inherit many functions, which we didn't get to use in this example."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:131
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:132
 msgid "In GDScript, the variables you put at the top of the file are your class's properties, also called member variables. Besides variables, you can define functions, which, for the most part, will be your classes' methods."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:135
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:136
 msgid "Godot provides several virtual functions you can define to connect your class with the engine. These include ``_process()``, to apply changes to the node every frame, and ``_unhandled_input()``, to receive input events like key and button presses from the users. There are quite a few more."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:140
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:141
 msgid "The ``Input`` singleton allows you to react to the players' input anywhere in your code. In particular, you'll get to use it in the ``_process()`` loop."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:143
-msgid "In the next lesson, we'll build upon the relationship between scripts and nodes by having our nodes trigger code in scripts."
+#: ../../docs/getting_started/step_by_step/scripting_player_input.rst:144
+msgid "In the next lesson :ref:`doc_signals`, we'll build upon the relationship between scripts and nodes by having our nodes trigger code in scripts."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

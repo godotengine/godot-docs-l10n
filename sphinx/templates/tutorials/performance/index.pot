@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,64 +16,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/performance/index.rst:2
+#: ../../docs/tutorials/performance/index.rst:4
 msgid "Optimization"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:5
+#: ../../docs/tutorials/performance/index.rst:7
 msgid "Introduction"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:7
+#: ../../docs/tutorials/performance/index.rst:9
 msgid "Godot follows a balanced performance philosophy. In the performance world, there are always trade-offs, which consist of trading speed for usability and flexibility. Some practical examples of this are:"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:11
+#: ../../docs/tutorials/performance/index.rst:13
 msgid "Rendering large amounts of objects efficiently is easy, but when a large scene must be rendered, it can become inefficient. To solve this, visibility computation must be added to the rendering. This makes rendering less efficient, but at the same time, fewer objects are rendered. Therefore, the overall rendering efficiency is improved."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:17
+#: ../../docs/tutorials/performance/index.rst:19
 msgid "Configuring the properties of every material for every object that needs to be rendered is also slow. To solve this, objects are sorted by material to reduce the costs. At the same time, sorting has a cost."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:21
+#: ../../docs/tutorials/performance/index.rst:23
 msgid "In 3D physics, a similar situation happens. The best algorithms to handle large amounts of physics objects (such as SAP) are slow at insertion/removal of objects and raycasting. Algorithms that allow faster insertion and removal, as well as raycasting, will not be able to handle as many active objects."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:27
+#: ../../docs/tutorials/performance/index.rst:29
 msgid "And there are many more examples of this! Game engines strive to be general-purpose in nature. Balanced algorithms are always favored over algorithms that might be fast in some situations and slow in others, or algorithms that are fast but are more difficult to use."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:32
+#: ../../docs/tutorials/performance/index.rst:34
 msgid "Godot is not an exception to this. While it is designed to have backends swappable for different algorithms, the default backends prioritize balance and flexibility over performance."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:36
+#: ../../docs/tutorials/performance/index.rst:38
 msgid "With this clear, the aim of this tutorial section is to explain how to get the maximum performance out of Godot. While the tutorials can be read in any order, it is a good idea to start from :ref:`doc_general_optimization`."
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:41
+#: ../../docs/tutorials/performance/index.rst:43
 msgid "Common"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:51
+#: ../../docs/tutorials/performance/index.rst:53
 msgid "CPU"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:60
+#: ../../docs/tutorials/performance/index.rst:62
 msgid "GPU"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:70
+#: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:82
+#: ../../docs/tutorials/performance/index.rst:81
 msgid "3D"
 msgstr ""
 
-#: ../../docs/tutorials/performance/index.rst:90
-msgid "Multi-threading --"
+#: ../../docs/tutorials/performance/index.rst:91
+msgid "Multi-threading"
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,131 +20,135 @@ msgstr ""
 msgid "Exporting for Universal Windows Platform"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:6
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:8
+msgid "This page describes how to export a Godot project to UWP. If you're looking to compile export template binaries from source instead, read :ref:`doc_compiling_for_uwp`."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:12
 msgid "There's no extra requirement to export an ``.appx`` package that can be installed as a Windows App or submitted to the Windows Store. Exporting UWP packages also works from any platform, not only from Windows."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:10
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:16
 msgid "However, if you want to install and run the app, you need to sign it with a trusted signature. Godot supports automatic signing of packages with external tools."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:14
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:20
 msgid "Also, make sure the Publisher Name you set when exporting the package matches the name used on the certificate."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:18
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:24
 msgid "Limitations on Xbox One"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:20
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:26
 msgid "As described in the `UWP documentation <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:25
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:31
 msgid "Submitted as an \"App\""
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:23
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:29
 msgid "available memory is 1GB"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:24
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:30
 msgid "share of 2-4 CPU cores"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:25
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:31
 msgid "shared access of GPU power (45%)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:30
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:36
 msgid "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www.xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:28
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:34
 msgid "available memory is 5GB"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:29
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:35
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:30
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:36
 msgid "exclusive access to GPU power (100%)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:32
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:38
 msgid "Exceeding these memory limitations will cause allocation failures and the application will crash."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:35
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:41
 msgid "Creating a signing certificate"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:37
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:43
 msgid "This requires the ``MakeCert.exe`` and ``Pvk2Pfx.exe`` tools, which come with the Windows SDK. If you use Visual Studio, you can open one of its Developer Prompts, since it comes with these tools and they can be located in the path."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:41
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:47
 msgid "You can get more detailed instructions from `Microsoft's documentation <https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx>`__."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:44
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:50
 msgid "First, run ``MakeCert`` to create a private key::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:48
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:54
 msgid "Where ``publisherName`` matches the Publisher Name of your package and ``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:51
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:57
 msgid "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx.exe``::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:55
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:61
 msgid "If you don't specify a password with ``/po`` argument, the PFX will have the same password as the private key."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:58
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:64
 msgid "You will also need to trust this certificate in order to be able to install your app. Open the Command Prompt as Administrator and run the following command::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:64
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:70
 msgid "Setting up automatic signing"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:66
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:72
 msgid "To setup automatic signing on export you need to go to Editor Settings > Export > Uwp. From there you need to click on the folder for ``Signtool``, and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:72
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:78
 msgid "After setting that up close the editor settings, go to Project > Export, and select the UWP preset. Under the ``Signing`` options click on the folder next to ``Certificate`` and go to the certificate file. Then enter the pfxPassword in the password field."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:79
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:85
 msgid "Your project will now be automatically signed on export."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:81
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:87
 msgid "If you want to sign an exported app manually run ``SignTool.exe`` and use the following command."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:84
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:90
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:87
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:93
 msgid "Installing the package"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:89
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:95
 msgid "As of the Windows 10 Anniversary Update, you are able to install packages simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:92
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:98
 msgid "It's also possible to install by using the ``Add-AppxPackage`` PowerShell cmdlet."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_uwp.rst:94
+#: ../../docs/tutorials/export/exporting_for_uwp.rst:100
 msgid "If you want to update your already installed app, you must update the version number on the new package or first uninstall the previous package."
 msgstr ""
 

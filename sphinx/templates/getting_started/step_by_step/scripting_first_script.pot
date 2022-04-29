@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "To create and attach a new script to our node, right-click on Sprite in t
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:78
-msgid "The Attach node Script window appears. It allows you to select the script's language and file path, among other options."
+msgid "The Attach Node Script window appears. It allows you to select the script's language and file path, among other options."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:81
@@ -77,7 +77,7 @@ msgid "Change the Template from Default to Empty to start with a clean file. Lea
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:86
-msgid "The Script workspace should appear with your new file open and the following line of code:"
+msgid "The Script workspace should appear with your new ``Sprite.gd`` file open and the following line of code:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:94
@@ -188,28 +188,36 @@ msgstr ""
 msgid "Let's now make the node move. Add the following two lines to the ``_process()`` function, ensuring the new lines are indented the same way as the one before them."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:234
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:235
 msgid "As we already saw, the ``var`` keyword defines a new variable. If you put it at the top of the script, it defines a property of the class. Inside a function, it defines a local variable: it only exists within the function's scope."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:238
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:239
 msgid "We define a local variable named ``velocity``, a 2D vector representing both a direction and a speed. To make the node move forward, we start from the Vector2 class's constant Vector2.UP, a vector pointing up, and rotate it by calling the ``Vector2.rotated()`` method. This expression, ``Vector2.UP.rotated(rotation)``, is a vector pointing forward relative to our icon. Multiplied by our ``speed`` property, it gives us a velocity we can use to move the node forward."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:245
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:246
 msgid "We add ``velocity * delta`` to the node's ``position`` to move it. The position itself is of type :ref:`Vector2 <class_Vector2>`, a built-in type in Godot representing a 2D vector."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:249
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:250
 msgid "Run the scene to see the Godot head run in circles."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:253
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:254
 msgid "Moving a node like that does not take into account colliding with walls or the floor. In :ref:`doc_your_first_2d_game`, you will learn another approach to moving objects while detecting collisions."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:257
-msgid "Our node currently moves by itself. In the next part, we'll use player input to control it."
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:258
+msgid "Our node currently moves by itself. In the next part :ref:`doc_scripting_player_input`, we'll use player input to control it."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:262
+msgid "Complete script"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_first_script.rst:264
+msgid "Here is the complete ``Sprite.gd`` file for reference."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,22 +97,38 @@ msgid "Godot has a server handling low-level translation management called the :
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:110
-msgid "Command line"
+msgid "Testing translations"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:112
-msgid "Language can be tested when running Godot from the command line. For example, to test a game in French, the following argument can be supplied:"
+msgid "You may want to test a project's translation before releasing it. Godot provides two ways to do this."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:121
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:115
+msgid "First, in the Project Settings, under **Input Devices > Locale**, there is a **Test** property. Set this property to the locale code of the language you want to test. Godot will run the project with that locale when the project is run (either from the editor or when exported)."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:120
+msgid "..image:: img/locale_test.png"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:122
+msgid "Keep in mind that since this is a project setting, it will show up in version control when it is set to a non-empty value. Therefore, it should be set back to an empty value before committing changes to version control."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:126
+msgid "Translations can also be tested when running Godot from the command line. For example, to test a game in French, the following argument can be supplied:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:135
 msgid "Translating the project name"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:123
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:137
 msgid "The project name becomes the app name when exporting to different operating systems and platforms. To specify the project name in more than one language, create a new setting ``application/name`` in the **Project Settings** and append the locale identifier to it. For instance, for Spanish, this would be ``application/name_es``:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:131
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:145
 msgid "If you are unsure about the language code to use, refer to the :ref:`list of locale codes <doc_locales>`."
 msgstr ""
 

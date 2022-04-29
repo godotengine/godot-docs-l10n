@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,141 +16,145 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/export/running_on_mac.rst:4
+#: ../../docs/tutorials/export/running_on_macos.rst:4
 msgid "Running Godot apps on macOS"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:6
+#: ../../docs/tutorials/export/running_on_macos.rst:8
+msgid "This page covers running Godot projects on macOS. If you haven't exported your project yet, read :ref:`doc_exporting_for_macos` first."
+msgstr ""
+
+#: ../../docs/tutorials/export/running_on_macos.rst:11
 msgid "By default, macOS will run only applications that are signed and notarized."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:8
+#: ../../docs/tutorials/export/running_on_macos.rst:13
 msgid "Depending on the way a macOS app is signed and distributed, the following scenarios are possible:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:11
+#: ../../docs/tutorials/export/running_on_macos.rst:16
 msgid "App is signed, notarized and distributed via App Store"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:15
+#: ../../docs/tutorials/export/running_on_macos.rst:20
 msgid "App developers need to join the Apple Developer Program, and configure signing and notarization options during export, then upload the app to the App Store."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:17
+#: ../../docs/tutorials/export/running_on_macos.rst:22
 msgid "The app should run out of the box, without extra user interaction required."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:20
+#: ../../docs/tutorials/export/running_on_macos.rst:25
 msgid "App is signed, notarized and distributed outside App Store"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:24
+#: ../../docs/tutorials/export/running_on_macos.rst:29
 msgid "App developers need to join the Apple Developer Program, and configure signing and notarization options during export, then distribute the app as \".DMG\" or \".ZIP\" archive."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:26
-#: ../../docs/tutorials/export/running_on_mac.rst:47
-#: ../../docs/tutorials/export/running_on_mac.rst:74
-#: ../../docs/tutorials/export/running_on_mac.rst:95
+#: ../../docs/tutorials/export/running_on_macos.rst:31
+#: ../../docs/tutorials/export/running_on_macos.rst:52
+#: ../../docs/tutorials/export/running_on_macos.rst:79
+#: ../../docs/tutorials/export/running_on_macos.rst:100
 msgid "When you run the app for the first time, the following dialog is displayed:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:30
+#: ../../docs/tutorials/export/running_on_macos.rst:35
 msgid "Click ``Open`` to start the app."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:32
+#: ../../docs/tutorials/export/running_on_macos.rst:37
 msgid "If you see the following warning dialog, your Mac is set up to allow apps only from the App Store."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:36
+#: ../../docs/tutorials/export/running_on_macos.rst:41
 msgid "To allow third-party apps, open ``System Preferences``, click ``Security & Privacy``, then click ``General``, unlock settings, and select ``App Store and identified developers``."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:41
+#: ../../docs/tutorials/export/running_on_macos.rst:46
 msgid "App is signed (including ad-hoc signatures) but not notarized"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:45
+#: ../../docs/tutorials/export/running_on_macos.rst:50
 msgid "App developer used self-signed certificate or ad-hoc signing (default Godot behavior for exported project)."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:51
+#: ../../docs/tutorials/export/running_on_macos.rst:56
 msgid "To run this app, you can temporarily override Gatekeeper:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:53
+#: ../../docs/tutorials/export/running_on_macos.rst:58
 msgid "Either open ``System Preferences``, click ``Security & Privacy``, then click ``General``, and click ``Open Anyway``."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:57
+#: ../../docs/tutorials/export/running_on_macos.rst:62
 msgid "Or, right-click (Control-click) on the app icon in the Finder window and select ``Open`` from the menu."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:61
+#: ../../docs/tutorials/export/running_on_macos.rst:66
 msgid "Then click ``Open`` in the confirmation dialog."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:65
+#: ../../docs/tutorials/export/running_on_macos.rst:70
 msgid "Enter your password if you're prompted."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:68
+#: ../../docs/tutorials/export/running_on_macos.rst:73
 msgid "App is not-signed, executable is linker-signed"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:72
+#: ../../docs/tutorials/export/running_on_macos.rst:77
 msgid "App is built using official export templates, but it is not signed."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:78
+#: ../../docs/tutorials/export/running_on_macos.rst:83
 msgid "To run this app, you should remove the quarantine extended file attribute manually:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:80
-#: ../../docs/tutorials/export/running_on_mac.rst:103
+#: ../../docs/tutorials/export/running_on_macos.rst:85
+#: ../../docs/tutorials/export/running_on_macos.rst:108
 msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:82
-#: ../../docs/tutorials/export/running_on_mac.rst:105
+#: ../../docs/tutorials/export/running_on_macos.rst:87
+#: ../../docs/tutorials/export/running_on_macos.rst:110
 msgid "Navigate to the folder containing the target application."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:84
-#: ../../docs/tutorials/export/running_on_mac.rst:107
+#: ../../docs/tutorials/export/running_on_macos.rst:89
+#: ../../docs/tutorials/export/running_on_macos.rst:112
 msgid "Use the ``cd path_to_the_app_folder`` command, e.g. ``cd ~/Downloads/`` if it's in the ``Downloads`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:86
+#: ../../docs/tutorials/export/running_on_macos.rst:91
 msgid "Run the command ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` (including quotation marks and ``.app`` extension)."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:89
+#: ../../docs/tutorials/export/running_on_macos.rst:94
 msgid "Neither app not executable is signed (relevant for Apple Silicon macs only)"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:93
+#: ../../docs/tutorials/export/running_on_macos.rst:98
 msgid "App is built using custom export templates, compiled using OSXCross, and it is not signed at all."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:99
+#: ../../docs/tutorials/export/running_on_macos.rst:104
 msgid "To run this app, you can ad-hoc sign it yourself:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:101
+#: ../../docs/tutorials/export/running_on_macos.rst:106
 msgid "Install ``Xcode`` for the App Store, start it and confirm command line tools installation."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:109
+#: ../../docs/tutorials/export/running_on_macos.rst:114
 msgid "Run the following commands:"
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:111
+#: ../../docs/tutorials/export/running_on_macos.rst:116
 msgid "``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` (including quotation marks and \".app\" extension)."
 msgstr ""
 
-#: ../../docs/tutorials/export/running_on_mac.rst:113
+#: ../../docs/tutorials/export/running_on_macos.rst:118
 msgid "``codesign -s - --force --deep \"Unsigned Game.app\"`` (including quotation marks and \".app\" extension)."
 msgstr ""
 

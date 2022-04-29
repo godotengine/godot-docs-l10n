@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,15 @@ msgstr ""
 msgid "Exporting for Linux"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_linux.rst:6
+#: ../../docs/tutorials/export/exporting_for_linux.rst:8
+msgid "This page describes how to export a Godot project to Linux. If you're looking to compile editor or export template binaries from source instead, read :ref:`doc_compiling_for_x11`."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:12
 msgid "The simplest way to distribute a game for PC is to copy the executable (``godot``), compress the folder and send it to someone else. However, this is often not desired."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_linux.rst:10
+#: ../../docs/tutorials/export/exporting_for_linux.rst:16
 msgid "Godot offers a more elegant approach for PC distribution when using the export system. When exporting for Linux, the exporter takes all the project files and creates a ``data.pck`` file. This file is bundled with a specially optimized binary that is smaller, faster and does not contain the editor and debugger."
 msgstr ""
 

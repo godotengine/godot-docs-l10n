@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,15 +185,23 @@ msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:450
-msgid "Tools"
+msgid "Antialiased drawing"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:452
-msgid "Drawing your own nodes might also be desired while running them in the editor to use as a preview or visualization of some feature or behavior."
+msgid "Godot offers method parameters in :ref:`draw_line<class_CanvasItem_method_draw_line>` to enable antialiasing, but it doesn't work reliably in all situations (for instance, on mobile/web platforms, or when HDR is enabled). There is also no ``antialiased`` parameter available in :ref:`draw_polygon<class_CanvasItem_method_draw_polygon>`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:456
-msgid "Remember to use the \"tool\" keyword at the top of the script (check the :ref:`doc_gdscript` reference if you forgot what this does)."
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
+msgid "As a workaround, install and use the `Antialiased Line2D add-on <https://github.com/godot-extended-libraries/godot-antialiased-line2d>`__ (which also supports antialiased Polygon2D drawing). Note that this add-on relies on high-level nodes, rather than low-level ``_draw()`` functions."
+msgstr ""
+
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:464
+msgid "Tools"
+msgstr ""
+
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
+msgid "Drawing your own nodes might also be desired while running them in the editor. This can be used as a preview or visualization of some feature or behavior. See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

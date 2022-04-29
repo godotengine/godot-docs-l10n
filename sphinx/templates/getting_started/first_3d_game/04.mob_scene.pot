@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgstr ""
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:322
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:322
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:318
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:318
 msgid "image0"
 msgstr ""
 
@@ -49,8 +49,8 @@ msgstr ""
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:323
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:323
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:319
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:319
 msgid "image1"
 msgstr ""
 
@@ -62,8 +62,8 @@ msgstr ""
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:324
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:324
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:320
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:320
 msgid "image2"
 msgstr ""
 
@@ -75,8 +75,8 @@ msgstr ""
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:321
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:321
 msgid "image3"
 msgstr ""
 
@@ -92,8 +92,8 @@ msgstr ""
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:322
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:322
 msgid "image4"
 msgstr ""
 
@@ -129,8 +129,8 @@ msgstr ""
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:323
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:323
 msgid "image5"
 msgstr ""
 
@@ -142,8 +142,8 @@ msgstr ""
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:324
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:324
 msgid "image6"
 msgstr ""
 
@@ -163,8 +163,8 @@ msgstr ""
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
 msgid "image7"
 msgstr ""
 
@@ -185,73 +185,73 @@ msgid "The function will take a ``start_position``, the mob's spawn position, an
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:149
-msgid "We first position the mob at ``start_position``. Then, we turn it towards the player using the ``look_at()`` method and randomize the angle by rotating a random amount around the Y axis. Below, ``rand_range()`` outputs a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
+msgid "We position the mob at ``start_position`` and turn it towards the player using the ``look_at_from_position()`` method, and randomize the angle by rotating a random amount around the Y axis. Below, ``rand_range()`` outputs a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:177
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:175
 msgid "We then calculate a random speed using ``rand_range()`` once again and we use it to calculate the velocity."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:180
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:178
 msgid "We start by creating a 3D vector pointing forward, multiply it by our ``random_speed``, and finally rotate it using the ``Vector3`` class's ``rotated()`` method."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:212
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:210
 msgid "Leaving the screen"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:214
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:212
 msgid "We still have to destroy the mobs when they leave the screen. To do so, we'll connect our *VisibilityNotifier* node's ``screen_exited`` signal to the *Mob*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:217
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:215
 msgid "Head back to the 3D viewport by clicking on the *3D* label at the top of the editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:220
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:218
 msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
 msgid "image8"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:220
 msgid "Select the *VisibilityNotifier* node and on the right side of the interface, navigate to the *Node* dock. Double-click the *screen_exited()* signal."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:225
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:223
 msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
 msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:225
 msgid "Connect the signal to the *Mob*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
 msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
 msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:231
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
 msgid "This will take you back to the script editor and add a new function for you, ``_on_VisibilityNotifier_screen_exited()``. From it, call the ``queue_free()`` method. This will destroy the mob instance when the *VisibilityNotifier* \\'s box leaves the screen."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:251
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:249
 msgid "Our monster is ready to enter the game! In the next part, you will spawn monsters in the game level."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:254
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:252
 msgid "Here is the complete ``Mob.gd`` script for reference."
 msgstr ""
 

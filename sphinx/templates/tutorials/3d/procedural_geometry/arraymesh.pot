@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:27
-msgid "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of groups of 4 ints"
+msgid "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of groups of 4 ints. Each group lists indexes of 4 bones that affects a given vertex."
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:28
-msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats"
+msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats. Each float lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a given vertex."
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29

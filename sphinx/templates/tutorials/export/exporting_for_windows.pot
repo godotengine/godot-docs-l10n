@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 15:14+0100\n"
+"POT-Creation-Date: 2022-04-29 17:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,31 +20,35 @@ msgstr ""
 msgid "Exporting for Windows"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:6
+#: ../../docs/tutorials/export/exporting_for_windows.rst:8
+msgid "This page describes how to export a Godot project to Windows. If you're looking to compile editor or export template binaries from source instead, read :ref:`doc_compiling_for_windows`."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:12
 msgid "The simplest way to distribute a game for PC is to copy the executable (``godot.exe``), compress the folder and send it to someone else. However, this is often not desired."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:10
+#: ../../docs/tutorials/export/exporting_for_windows.rst:16
 msgid "Godot offers a more elegant approach for PC distribution when using the export system. When exporting for Windows, the exporter takes all the project files and creates a ``data.pck`` file. This file is bundled with a specially optimized binary that is smaller, faster and does not contain the editor and debugger."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:16
+#: ../../docs/tutorials/export/exporting_for_windows.rst:22
 msgid "Requirements"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:18
+#: ../../docs/tutorials/export/exporting_for_windows.rst:24
 msgid "To enable code signing, you must have the ``Windows 10 SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:19
+#: ../../docs/tutorials/export/exporting_for_windows.rst:25
 msgid "Download the Godot export templates. Use the Godot menu: ``Editor > Manage Export Templates``."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:23
+#: ../../docs/tutorials/export/exporting_for_windows.rst:29
 msgid "If you export for Windows with embedded PCK files, you will not be able to sign the program as it will break."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:26
+#: ../../docs/tutorials/export/exporting_for_windows.rst:32
 msgid "On Windows, PCK embedding is also known to cause false positives in antivirus programs. Therefore, it's recommended to avoid using it unless you're distributing your project via Steam as it bypasses code signing and antivirus checks."
 msgstr ""
 
