@@ -6,24 +6,27 @@
 # Billy SU <g4691821@gmail.com>, 2020.
 # BinotaLIU <me@binota.org>, 2020-2021.
 # Bluesir Bruce <a5566740293@gmail.com>, 2019.
-# Chia-Hsiang Cheng <cche0109@student.monash.edu>, 2021.
+# Chia-Hsiang Cheng <cche0109@student.monash.edu>, 2021-2022.
 # Chih Wei Chien <dppss92132@gmail.com>, 2020.
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
 # cnieFIT <dtotncq@gmail.com>, 2019.
 # Daniel Liu <lbtdata314@gmail.com>, 2019.
 # Donald Zhan <ron81018@gmail.com>, 2021.
 # Eric K <eric900601@gmail.com>, 2019-2020.
+# Haoyu Qiu <timothyqiu32@gmail.com>, 2022.
 # ken l <macauhome@gmail.com>, 2018.
 # Kenneth Lo <closer.tw@gmail.com>, 2019.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
 # Matt <chchwy@gmail.com>, 2018.
 # MintSoda <lionlxh@qq.com>, 2020.
+# Number18 <secretemail7730@gmail.com>, 2022.
 # Otis Kao <momoslim@gmail.com>, 2019.
 # Qing <icinriiq@gmail.com>, 2018.
 # RainSlide <RainSlide@outlook.com>, 2020.
 # ray90514 <ray90514@hotmail.com>, 2020-2021.
 # TH Lin <tlin40@jhu.edu>, 2021.
 # Y CHAN <yktmobile0040@gmail.com>, 2020.
+# 曹恩逢 <nelson22768384@gmail.com>, 2022.
 # 鄭惟中 <biglionlion06@gmail.com>, 2020.
 # 馬宏銘 <honeming2@gmail.com>, 2021.
 # 黃家信 <peterhuang1kimo@gmail.com>, 2021.
@@ -33,7 +36,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2021-12-02 20:24+0000\n"
+"PO-Revision-Date: 2022-04-20 11:33+0000\n"
 "Last-Translator: Chia-Hsiang Cheng <cche0109@student.monash.edu>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
@@ -42,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -87,7 +90,6 @@ msgstr ""
 "整列表。"
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -95,9 +97,9 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"此文件為目前穩定版本 3.3 分支的文件。在找 **開發** 分支的文件嗎？ `請瀏覽這"
+"此文件為目前穩定版本 3.4 分支的文件。在找 **開發** 分支的文件嗎？ `請瀏覽這"
 "裡 (英文) <https://docs.godotengine.org/en/latest>`_。 你也可以瀏覽上一個穩定"
-"版本 `3.2 <https://docs.godotengine.org/en/3.2>`_ 分支的文件。"
+"版本 `3.3 <https://docs.godotengine.org/en/3.3>`_ 分支的文件。"
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -650,7 +652,7 @@ msgstr "Windows（與 UWP）"
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
-msgstr "Android"
+msgstr "安卓"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/tutorials/export/exporting_basics.rst:382
@@ -2759,7 +2761,7 @@ msgstr "Ogg Vorbis。"
 
 #: ../../docs/about/list_of_features.rst:388
 msgid "MP3."
-msgstr ""
+msgstr "MP3。"
 
 #: ../../docs/about/list_of_features.rst:390
 msgid "*3D scenes:*"
@@ -4345,7 +4347,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:101
 msgid "FreeType"
-msgstr ""
+msgstr "FreeType"
 
 #: ../../docs/about/complying_with_licenses.rst:103
 msgid ""
@@ -4369,7 +4371,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:114
 msgid "ENet"
-msgstr ""
+msgstr "ENet"
 
 #: ../../docs/about/complying_with_licenses.rst:116
 msgid ""
@@ -4383,7 +4385,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:129
 msgid "MBedTLS"
-msgstr ""
+msgstr "MBedTLS"
 
 #: ../../docs/about/complying_with_licenses.rst:131
 msgid ""
@@ -5809,9 +5811,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "節點與資源"
+msgstr "節點與場景"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -9215,7 +9216,7 @@ msgstr "**Align** ：「Center」"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
-msgstr "\\ Message"
+msgstr "訊息"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -17032,7 +17033,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "次表面散射"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -18073,7 +18074,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:129
 msgid "Quality"
-msgstr ""
+msgstr "品質"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:131
 msgid ""
@@ -22412,9 +22413,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:122
-#, fuzzy
 msgid "Portal Active"
-msgstr "主動句："
+msgstr "入口生效"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:124
 msgid ""
@@ -31781,7 +31781,7 @@ msgstr "**通用選項**"
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr "指令"
+msgstr "Command"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
@@ -39272,7 +39272,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:192
 msgid "Clipboard"
-msgstr ""
+msgstr "剪貼簿"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:194
 msgid ""
@@ -50300,7 +50300,7 @@ msgstr "更多有關光照烘焙的資訊，請參考 :ref:`doc_baked_lightmaps`
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr "\\ SceneTree"
+msgstr "場景樹"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -52602,7 +52602,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "算繪"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -60269,8 +60269,9 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:138
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:643
+#, fuzzy
 msgid "Function"
-msgstr ""
+msgstr "函式"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:140
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
@@ -63064,7 +63065,7 @@ msgstr "改成："
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "\\ While"
+msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -66202,7 +66203,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr "\\ Yield"
+msgstr "產生"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -66220,7 +66221,7 @@ msgstr "與 Yield 相同，但會等待到指定訊號送出。"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr "Index - 索引"
+msgstr "索引"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
@@ -69670,9 +69671,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "測試"
+msgstr "設定"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -91842,7 +91842,7 @@ msgstr "\\ Object"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:15
 msgid "Control"
-msgstr "\\ Control"
+msgstr "Control"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"
@@ -100060,8 +100060,9 @@ msgid "Effect"
 msgstr "效果"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
+#, fuzzy
 msgid "Result"
-msgstr "結果"
+msgstr "搜尋結果"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
 msgid "[Class]"

@@ -9,6 +9,7 @@
 # Jakub Janšta <jansta.ja@gmail.com>, 2021.
 # Jakub Smetana <kubiceks76@gmail.com>, 2018.
 # jakub zukal <jakubzukal@email.cz>, 2018.
+# JoeMoos <josephmoose13@gmail.com>, 2022.
 # Josef Kuchař <josef.kuchar267@gmail.com>, 2018.
 # kubajz22 <til.jakubesko@seznam.cz>, 2020.
 # Luboš Nečas <lubosnecas506@seznam.cz>, 2019.
@@ -33,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2022-03-11 04:53+0000\n"
+"PO-Revision-Date: 2022-04-10 17:09+0000\n"
 "Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
@@ -177,7 +178,6 @@ msgstr ""
 "nemůžete najít to, co hledáte v dokumentaci, tak nám dejte vědět!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -188,8 +188,7 @@ msgstr ""
 "Ohlašte problém (issue) nebo zašlete řešení (pull request) na `GitHub "
 "<https://github.com/godotengine/godot-docs/issues>`_ , pomozte nám `přeložit "
 "dokumentaci <https://hosted.weblate.org/engage/godot-engine/>`_ do vašeho "
-"jazyka nebo si s námi promluvte buď na ``#documentation`` kanálu na `Discord "
-"<https://discord.gg/zH7NUgz>`_ , nebo na ``#documentation`` kanálu na `Godot "
+"jazyka nebo si s námi promluvte na ``#documentation`` kanálu na `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:61
@@ -4308,9 +4307,8 @@ msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Q2 2022"
-msgstr "Q1 2022"
+msgstr "Q2 2022"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -9489,27 +9487,28 @@ msgstr ""
 "použít toto písmo, proveďte následující:"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:39
-#, fuzzy
 msgid ""
 "Under **Theme overrides > Fonts** click on the empty box and select \"New "
 "DynamicFont\""
-msgstr "V části \"Přepsání motivu/Písma/Písmo\" zvolte \"Nový DynamicFont\""
+msgstr ""
+"V části \"Přepsání motivu/Písma/Písmo\" klikněte na prázdné pole a zvolte "
+"\"Nový DynamicFont\""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:43
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
 "choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
 msgstr ""
-"Klikněte na přidaný \"DynamicFont\" a v části \"Font/Font Data\" zvolte "
+"Klikněte na přidaný \"DynamicFont\" a v části \"Font > FontData\" zvolte "
 "\"Load\" a vyberte soubor \"Xolonium-Regular.ttf\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:48
 msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
 msgstr ""
+"Nastavte \"Velikost\" vlastnost \"DynamicFont\" pod \"Nastavení/Velikost\" . "
+"Dobře funguje nastavení ``64``."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:52
-#, fuzzy
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
@@ -9517,8 +9516,7 @@ msgid ""
 msgstr ""
 "Jakmile to uděláte v ``ScoreLabel``, můžete kliknout na šipku dolů vedle "
 "vlastnosti Font a zvolit \"Kopírovat\", pak \"Vložit\" na stejné místo na "
-"ostatních dvou řídících uzlech.Nastavte \"Velikost\" vlastnost "
-"\"DynamicFont\" pod \"Nastavení/Velikost\" . Dobře funguje nastavení ``64``."
+"ostatních dvou řídících uzlech."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:56
 msgid ""
@@ -10086,13 +10084,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:48
-#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on macOS)."
 msgstr ""
 "Uložte scénu jako ``Main.tscn`` stisknutím :kbd:`Ctrl + s` (:kbd:`Cmd + s` v "
-"systému MacOS)."
+"systému macOS)."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:50
 msgid ""
@@ -17048,18 +17045,17 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:378
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:125
-#, fuzzy
 msgid ""
 "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
 "known as OpenGL style. If you've imported a material made to be used with "
 "another engine it may be DirectX style, in which case the normal map needs "
 "to be converted so its Y axis is flipped."
 msgstr ""
-"Godot vyžaduje, aby normálová mapa používala souřadnice X+, Y- a Z+. Jinými "
-"slovy, pokud jste importovali materiál vytvořený pro použití v jiném enginu, "
-"možná budete muset normálovou mapu převést tak, aby byla její osa Y "
-"převrácená. V opačném případě se může zdát, že směr normálové mapy je na ose "
-"Y převrácený."
+"Godot vyžaduje, aby normálová mapa používala souřadnice X+, Y- a Z+, toto je "
+"známé jako styl OpenGL. Jinými slovy, pokud jste importovali materiál "
+"vytvořený pro použití v jiném enginu, možná budete muset normálovou mapu "
+"převést tak, aby byla její osa Y převrácená. V opačném případě se může zdát, "
+"že směr normálové mapy je na ose Y převrácený tzv. DirectX styl."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:383
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:130
@@ -18102,7 +18098,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
 msgid "Reflections"
-msgstr ""
+msgstr "Odrazy"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:83
 msgid ""
@@ -22835,26 +22831,28 @@ msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
 msgstr ""
+"Uzel :ref:`class_AnimationPlayer` umožňuje vytvářet animace složité i "
+"jednoduché."
 
 #: ../../docs/tutorials/animation/introduction.rst:9
 msgid "In this guide you learn to:"
-msgstr ""
+msgstr "V tomto průvodci se naučíte:"
 
 #: ../../docs/tutorials/animation/introduction.rst:11
 msgid "Work with the Animation Panel"
-msgstr ""
+msgstr "Pracovat s animačním panelem"
 
 #: ../../docs/tutorials/animation/introduction.rst:12
 msgid "Animate any property of any node"
-msgstr ""
+msgstr "Animovat libovolnou vlastnost libovolného uzlu"
 
 #: ../../docs/tutorials/animation/introduction.rst:13
 msgid "Create a simple animation"
-msgstr ""
+msgstr "vytvořit jednoduchou animaci"
 
 #: ../../docs/tutorials/animation/introduction.rst:14
 msgid "Call functions with the powerful Call Function Tracks"
-msgstr ""
+msgstr "zavolat funkce pomocí mocného povelu Call Funciton Tracks"
 
 #: ../../docs/tutorials/animation/introduction.rst:16
 msgid ""
@@ -22863,16 +22861,22 @@ msgid ""
 "materials, and so on. You can also modify values of script variables and "
 "call any function."
 msgstr ""
+"V Godotu můžete animovat cokoli, co je k dispozici v Inspektoru, například "
+"transformace uzlů, sprity, prvky uživatelského rozhraní, částice, "
+"viditelnost a barvu materiálů atd. Můžete také měnit hodnoty proměnných "
+"skriptu a zavolat libovolnou funkce."
 
 #: ../../docs/tutorials/animation/introduction.rst:22
 msgid "Create an AnimationPlayer node"
-msgstr ""
+msgstr "Vytvoření uzlu AnimationPlayer"
 
 #: ../../docs/tutorials/animation/introduction.rst:24
 msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
+"Pro použití animačních nástrojů musíme nejprve vytvořit uzel :ref:"
+"`class_AnimationPlayer`."
 
 #: ../../docs/tutorials/animation/introduction.rst:27
 msgid ""
@@ -22880,84 +22884,97 @@ msgid ""
 "AnimationPlayer node can hold multiple animations, that can automatically "
 "transition to one another."
 msgstr ""
+"Typ uzlu AnimationPlayer je datový kontejner pro vaše animace. Jeden uzel "
+"AnimationPlayer může obsahovat více animací, které mohou automaticky "
+"přecházet jedna do druhé."
 
 #: ../../docs/tutorials/animation/introduction.rst:34
 msgid "The AnimationPlayer node"
-msgstr ""
+msgstr "Uzel AnimationPlayer"
 
 #: ../../docs/tutorials/animation/introduction.rst:36
 msgid ""
 "After creating one click on the AnimationPlayer node in the Node tab to open "
 "the Animation Panel at the bottom of the viewport."
 msgstr ""
+"Po vytvoření klikněte na uzel AnimationPlayer na kartě Uzel, čímž se otevře "
+"panel animace v dolní části průhledu."
 
 #: ../../docs/tutorials/animation/introduction.rst:42
 msgid "The animation panel position"
-msgstr ""
+msgstr "Umístění panelu animace"
 
 #: ../../docs/tutorials/animation/introduction.rst:44
 msgid "It consists of four parts:"
-msgstr ""
+msgstr "Skládá se ze čtyř částí:"
 
 #: ../../docs/tutorials/animation/introduction.rst:49
 msgid "The animation panel"
-msgstr ""
+msgstr "Panel animací"
 
 #: ../../docs/tutorials/animation/introduction.rst:51
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
-msgstr ""
+msgstr "ovládání animací (tj. přidávání, načítání, ukládání a mazání animací)"
 
 #: ../../docs/tutorials/animation/introduction.rst:52
 msgid "The tracks listing"
-msgstr ""
+msgstr "seznam stop"
 
 #: ../../docs/tutorials/animation/introduction.rst:53
 msgid "The timeline with keyframes"
-msgstr ""
+msgstr "Časová osa s klíčovými snímky"
 
 #: ../../docs/tutorials/animation/introduction.rst:54
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
 msgstr ""
+"Ovládací prvky časové osy a stop, kde můžete například zvětšovat časovou osu "
+"či upravovat stopy."
 
 #: ../../docs/tutorials/animation/introduction.rst:58
 msgid "Computer animation relies on keyframes"
-msgstr ""
+msgstr "Počítačová animace se opírá o klíčové snímky"
 
 #: ../../docs/tutorials/animation/introduction.rst:60
 msgid "A keyframe defines the value of a property at a certain point in time."
-msgstr ""
+msgstr "Klíčový snímek definuje hodnotu vlastnosti v určitém časovém okamžiku."
 
 #: ../../docs/tutorials/animation/introduction.rst:62
 msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
 "keyframes indicates that the value hasn't changed."
 msgstr ""
+"Kosočtverce představují klíčové snímky na časové ose. Čára mezi dvěma "
+"klíčovými snímky znamená, že se jeho hodnota nezměnila."
 
 #: ../../docs/tutorials/animation/introduction.rst:68
 msgid "Keyframes in Godot"
-msgstr ""
+msgstr "Klíčové snímky v aplikaci Godot"
 
 #: ../../docs/tutorials/animation/introduction.rst:70
 msgid ""
 "The engine interpolates values between keyframes, resulting in a gradual "
 "change in values over time."
 msgstr ""
+"Motor interpoluje hodnoty mezi klíčovými snímky, což vede k postupné změně "
+"jejich hodnot v čase."
 
 #: ../../docs/tutorials/animation/introduction.rst:76
 msgid "Two keyframes are all it takes to obtain a smooth motion"
-msgstr ""
+msgstr "K dosažení plynulého pohybu stačí dva klíčové snímky"
 
 #: ../../docs/tutorials/animation/introduction.rst:78
 msgid ""
 "The timeline lets you insert keyframes and change their timing. It also "
 "defines how long the animation is."
 msgstr ""
+"Časová osa umožňuje vkládat klíčové snímky a měnit jejich pozici v čase. "
+"Určuje také délku animace."
 
 #: ../../docs/tutorials/animation/introduction.rst:84
 msgid "The timeline in the animation panel"
-msgstr ""
+msgstr "Časová osa na panelu animace"
 
 #: ../../docs/tutorials/animation/introduction.rst:86
 msgid ""
@@ -22965,10 +22982,13 @@ msgid ""
 "tracks reference node properties. Their name or id is a path to the node and "
 "the affected property."
 msgstr ""
+"Každý řádek panelu animace je animační stopa. Hodnotové (Value) a "
+"transformační (Transform) stopy odkazují na vlastnosti uzlů. Jejich název "
+"nebo id představuje cestu k uzlu společně se jménem interpolované vlastnosti."
 
 #: ../../docs/tutorials/animation/introduction.rst:93
 msgid "Example of Normal animation tracks"
-msgstr ""
+msgstr "Příklad hodnotové animační stopy"
 
 #: ../../docs/tutorials/animation/introduction.rst:97
 msgid ""
@@ -22977,24 +22997,31 @@ msgid ""
 "\"Play from beginning\" button |Play from beginning| (or pressing :kbd:"
 "`Shift + D` on keyboard) to see the changes instantly."
 msgstr ""
+"Pokud animujete nesprávnou vlastnost, můžete ji kdykoli upravit poklepáním "
+"na cestu stopy a zadáním cesty nové. Přehrajte animaci pomocí tlačítka "
+"\"Přehrát od začátku\" |Přehrát od začátku| (nebo stisknutím :kbd:`Shift + "
+"D` na klávesnici) a okamžitě uvidíte změny."
 
 #: ../../docs/tutorials/animation/introduction.rst:380
 msgid "Play from beginning"
-msgstr ""
+msgstr "Přehrávání od začátku"
 
 #: ../../docs/tutorials/animation/introduction.rst:103
 msgid "Tutorial: Creating a simple animation"
-msgstr ""
+msgstr "Tutoriál: Vytvoření jednoduché animace"
 
 #: ../../docs/tutorials/animation/introduction.rst:108
 msgid ""
 "For this tutorial, we'll create a Sprite node with an AnimationPlayer as its "
 "child. We will animate the sprite to move between two points on the screen."
 msgstr ""
+"V tomto tutoriálu vytvoříme uzel Sprite, jehož potomkem bude "
+"AnimationPlayer. Sprite budeme animovat tak, aby se pohyboval mezi dvěma "
+"body na obrazovce."
 
 #: ../../docs/tutorials/animation/introduction.rst:114
 msgid "Our scene setup"
-msgstr ""
+msgstr "Naše nastavení scény"
 
 #: ../../docs/tutorials/animation/introduction.rst:118
 msgid ""
@@ -23002,12 +23029,17 @@ msgid ""
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
+"AnimationPlayer dědí z Node ne z Node2D nebo Node3D, což znamená, že "
+"odvozené uzly nebudou dědit transformace od rodičovských uzlů, právě protože "
+"v hierarchii rodičů je přítomen pouze prostý Node."
 
 #: ../../docs/tutorials/animation/introduction.rst:122
 msgid ""
 "Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
 "a child of an AnimationPlayer node."
 msgstr ""
+"Proto se nedoporučuje přidávat uzly s 2D/3D transformací jako potomky uzlu "
+"AnimationPlayer."
 
 #: ../../docs/tutorials/animation/introduction.rst:125
 msgid ""
@@ -23016,6 +23048,10 @@ msgid ""
 "the sprite's texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
+"Sprite obsahuje texturu obrázku. Tento sprite animujeme tak, aby se "
+"pohyboval mezi dvěma body na obrazovce. Pro tento tutoriál použijte jako "
+"texturu spritu výchozí ikonu Godot'a. Jako výchozí pozici zvolte levý okraj "
+"obrazovky a přesuňte tam sprite."
 
 #: ../../docs/tutorials/animation/introduction.rst:130
 msgid ""
@@ -23023,6 +23059,9 @@ msgid ""
 "animation editor. From the list select \"New\" (|Add Animation|) to add a "
 "new animation. And Enter a name for the animation in the dialog box."
 msgstr ""
+"Vyberte uzel AnimationPlayer a klikněte na tlačítko \"Animation\" v editoru "
+"animací. V seznamu vyberte možnost \"New\" (|Add Animation|) pro přidání "
+"nové animace. A v dialogovém okně zadejte název animace."
 
 #: ../../docs/tutorials/animation/introduction.rst:381
 msgid "Add Animation"
@@ -36180,9 +36219,8 @@ msgstr ""
 "editoru:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:107
-#, fuzzy
 msgid "Resource options"
-msgstr "Cesta ke zdroji"
+msgstr "Možnosti zdrojů"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:109
 msgid ""
@@ -39047,7 +39085,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:192
 msgid "Clipboard"
-msgstr ""
+msgstr "Schránka"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:194
 msgid ""
@@ -45574,7 +45612,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "Vektorová matematika"
 
 #: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
@@ -65880,7 +65918,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr ""
+msgstr "Počkat"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -66307,7 +66345,6 @@ msgstr ""
 "fungoval."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:130
-#, fuzzy
 msgid ""
 "To configure a project for debugging open the Godot project folder in VS "
 "Code. Go to the Run tab and click on **Add Configuration...**. Select **C# "
@@ -66317,9 +66354,12 @@ msgid ""
 "when you start the debugger in VS Code, your Godot project will run."
 msgstr ""
 "Chcete-li nakonfigurovat projekt pro ladění, otevřete složku projektu Godot "
-"ve VS Code. Přejděte na kartu Spustit a klikněte na **vytvořte soubor launch."
-"json**. Z rozbalovací nabídky vyberte **C# Godot**. Nyní se při spuštění "
-"ladicího programu ve VS Code spustí váš projekt Godot."
+"ve VS Code. Přejděte na kartu Spustit a klikněte na **Přidat konfiguraci..."
+"**. Z rozbalovací nabídky vyberte **C# Godot**. Otevřete následně nově "
+"vytvořené soubory ``tasks.json`` a ``launch.json`` . Změňte cesty pro "
+"spustitelný soubor v ``launch.json`` a pro spouštěný příkaz v ``tasks.json`` "
+"na cestu ke k vašemu spustitelnému souboru Godota. Když nyní zahájíte ladění "
+"ve VS Code, provede se pro váš aktuální projekt Godot."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:138
 msgid "Visual Studio (Windows only)"
@@ -66493,7 +66533,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:249
 msgid "Current gotchas and known issues"
-msgstr ""
+msgstr "Aktuální problémy a známé potíže"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:251
 msgid ""
@@ -66503,23 +66543,35 @@ msgid ""
 "a look over the official `issue tracker for Mono issues <https://github.com/"
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
+"Jelikož je podpora jazyka C# v systému Godot poměrně nová, je potřeba "
+"vyřešit některé problémy růstu a další trochu doladit. Níže je uveden seznam "
+"nejdůležitějších problémů, o kterých byste měli vědět, když se ponoříte do "
+"jazyka C# v Godotu, ale pokud máte pochybnosti, podívejte se také na "
+"oficiální `issue tracker pro problémy Mono <https://github.com/godotengine/"
+"godot/labels/topic%3Amono>`_."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:257
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
+"Psaní zásuvných modulů editoru je možné, ale v současné době je poměrně "
+"složité."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:258
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"Stav se v současné době neukládá a neobnovuje při načítání za chodu, s "
+"výjimkou exportovaných proměnných."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:260
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Připojené skripty C# by měly odkazovat na třídu, jejíž název odpovídá názvu "
+"souboru."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:262
 msgid ""
@@ -66530,6 +66582,12 @@ msgid ""
 "is expecting the original ``snake_case`` version ``add_child``. However, you "
 "can use any custom properties or methods without this limitation."
 msgstr ""
+"Existují některé metody, například ``Get()``/``Set()``, ``Call()``/"
+"``CallDeferred()`` a způsob připojení signálu ``Connect()``, které jsou "
+"založeny na Godotově ``snake_case`` konvencí pojmenování API. Takže při "
+"použití např. ``CallDeferred(\"AddChild\")``, ``AddChild`` nebude fungovat, "
+"protože API očekává původní ``snake_case`` verzi ``add_child``. Můžete však "
+"používat libovolné vlastní vlastnosti nebo metody bez tohoto omezení."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:270
 msgid ""
@@ -66537,10 +66595,13 @@ msgid ""
 "and macOS), Android, HTML5, and iOS. The only platform not supported yet is "
 "UWP."
 msgstr ""
+"Export projektů Mono je podporován pro desktopové platformy (Linux, Windows "
+"a macOS), Android, HTML5 a iOS. Jedinou platformou, která zatím není "
+"podporována, je UWP."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:274
 msgid "Performance of C# in Godot"
-msgstr ""
+msgstr "Výkon C# v Godot"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:276
 msgid ""
@@ -66552,10 +66613,18 @@ msgid ""
 "scripting workloads. C# is faster, but requires some expensive marshalling "
 "when talking to Godot."
 msgstr ""
+"Podle některých předběžných `benchmarků <https://github.com/cart/godot3-"
+"bunnymark>`_ je výkon jazyka C# v Godotu - ačkoli se obecně pohybuje ve "
+"stejném řádu - v některých naivních případech zhruba **~4×** vyšší než výkon "
+"jazyka GDScript. C++ je stále o něco rychlejší; specifika se budou lišit "
+"podle případu použití. GDScript je pravděpodobně dostatečně rychlý pro "
+"většinu obecných skriptovacích úloh. Jazyk C# je rychlejší, ale při "
+"komunikaci se systémem Godot vyžaduje nákladný marshalling (převod objektů "
+"c# do formátu vhodného pro Godot."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:284
 msgid "Using NuGet packages in Godot"
-msgstr ""
+msgstr "Používání balíčků NuGet v Godot"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:286
 msgid ""
@@ -66564,16 +66633,22 @@ msgid ""
 "They can also be added manually by adding the package reference in the ``."
 "csproj`` file located in the project root:"
 msgstr ""
+"`Balíčky NuGet <https://www.nuget.org/>`_ lze instalovat a používat s "
+"Godotem stejně jako s jakýmkoli jiným projektem v jazyce C#. Mnoho IDE umí "
+"balíčky přidávat přímo. Lze je také přidat ručně vložením odkazu na balíček "
+"do souboru ``.csproj`` umístěného v kořenovém adresáři projektu:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:300
 msgid ""
 "As of Godot 3.2.3, Godot automatically downloads and sets up newly added "
 "NuGet packages the next time it builds the project."
 msgstr ""
+"Od Godot 3.2.3 Godot automaticky stahuje a nastavuje nově přidané balíčky "
+"NuGet při následném sestavení projektu."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:304
 msgid "Profiling your C# code"
-msgstr ""
+msgstr "Profilování kódu C#"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:306
 msgid ""
@@ -66581,6 +66656,9 @@ msgid ""
 "profiler/>`_ is available for Linux and macOS. Due to a Mono change, it does "
 "not work on Windows currently."
 msgstr ""
+"`Profilovač protokolu Mono <https://www.mono-project.com/docs/debug+profile/"
+"profile/profiler/>`_ je k dispozici pro systémy Linux a MacOS. Kvůli změně v "
+"systému Mono v současné době nefunguje ve Windows."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:307
 msgid ""
@@ -66588,6 +66666,9 @@ msgid ""
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
+"Externí profiler Mono, například `JetBrains dotTrace <https://www.jetbrains."
+"com/profiler/>`_, lze použít, jak je popsáno `zde <https://github.com/"
+"godotengine/godot/pull/34382>`_."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:4
 msgid "C# features"
@@ -71733,7 +71814,6 @@ msgstr ""
 "> Nastavení projektu** a přepněte na kartu **AutoLoad**."
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:62
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -71741,7 +71821,7 @@ msgid ""
 "manipulated using the up/down arrow keys. Like regular scenes, the engine "
 "will read these nodes in top-to-bottom order."
 msgstr ""
-"Zde můžete přidat libovolný počet scén nebo scénářů. Každá položka v seznamu "
+"Zde můžete přidat libovolný počet scén nebo skriptů. Každá položka v seznamu "
 "vyžaduje jméno, které je uzlu přiřazeno jako vlastnost ``name``. Pořadí "
 "položek při jejich přidávání do globálního stromu scén lze měnit pomocí "
 "kláves se šipkami nahoru/dolů."
@@ -86348,9 +86428,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:233
-#, fuzzy
 msgid "Using Pyston for faster development"
-msgstr "Úvod do vývoje editoru"
+msgstr "Použití Pystonu pro rychlejší vývoj"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:235
 msgid ""

@@ -20,7 +20,7 @@
 # TheAdvis <juhamk91@gmail.com>, 2020.
 # TheFinnishArmy <thefinnisharmy@gmail.com>, 2019.
 # Touko Jaakkola <grulps@gmail.com>, 2019.
-# Tuomas Lähteenmäki <lahtis@gmail.com>, 2019-2020.
+# Tuomas Lähteenmäki <lahtis@gmail.com>, 2019-2020, 2022.
 # Ville Pennala <vilihu@gmail.com>, 2018.
 #
 msgid ""
@@ -28,8 +28,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2022-01-15 05:31+0000\n"
-"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
+"PO-Revision-Date: 2022-03-17 22:54+0000\n"
+"Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -37,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -122,8 +122,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Toistaisesti käännökset ovat saatavilla vain \"latest\" (kehitys) -haarassa, "
-"mutta sen käyttö sopii viimeisimmän vakaan Godot-julkaisun opetteluun."
+"Toistaisesti käännökset ovat saatavilla vain \"viimeisemmässä\" (kehitys) -"
+"haarassa, mutta sen käyttö sopii viimeisimmän vakaan Godot-julkaisun "
+"opetteluun."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -134,7 +135,7 @@ msgid ""
 "documentation has to offer."
 msgstr ""
 "Tervetuloa Godot Enginen viralliseen dokumentaatioon. Godot Engine on vapaa "
-"ja avoimen lähdekoodin yhteisön tekemä 2D ja 3D pelimoottori! Jos olet "
+"ja avoimen lähdekoodin yhteisön tekemä 2D- ja 3D-pelimoottori! Jos olet "
 "ensimmäistä kertaa täällä, kannattaa lukea :ref:`esittelysivu "
 "<doc_about_intro>`, joka antaa yleiskatsauksen tämän dokumentaation "
 "sisällöstä."
@@ -158,7 +159,7 @@ msgid ""
 msgstr ""
 "Voit myös `ladata HTML kopion <https://nightly.link/godotengine/godot-docs/"
 "workflows/build_offline_docs/3.3/godot-docs-html.zip>`lukeaksesi offline-"
-"tilassa (päivittyy joka maanantai). Pura ZIP arkisto ja avaa ylätason``index."
+"tilassa (päivittyy joka maanantai). Pura ZIP arkisto ja avaa ylätaso``index."
 "html`` selaimessa."
 
 #: ../../docs/index.rst:45
@@ -176,7 +177,6 @@ msgstr ""
 "kertomalla siitä meille!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -184,21 +184,20 @@ msgid ""
 "talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_!"
 msgstr ""
-"Luo ongelmaraportti tai pull request `GitHub repositoryyn <https://github."
-"com/godotengine/godot-docs/issues>`_, auta meitä `kääntämällä dokumentaatio "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ omalle kielellesi, tai "
+"Luo ongelmaraportti tai muutospyyntö `GitHub repositoryyn <https://github."
+"com/godotengine/godot-docs/issues>`, auta meitä `kääntämällä dokumentaatiota "
+"<https://hosted.weblate.org/engage/godot-engine/>` omalle kielellesi tai "
 "keskustele kanssamme joko ``#documentation`` kanavalla `Discordissa <https://"
 "discord.gg/zH7NUgz>`_, tai ``#godotengine-doc`` IRC-kanavalla `irc.freenode."
-"net <http://webchat.freenode.net/?channels=#godotengine-doc>`_ palvelimella!"
+"net <http://webchat.freenode.net/?channels=#godotengine-doc>` palvelimella!"
 
 #: ../../docs/index.rst:61
 msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Muokkaa käyttöliittymää"
+msgstr "Käännöksen tila"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -299,7 +298,7 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "Tervetuloa Godot Enginen viralliseen dokumentaatioon. Godot Engine on "
-"yhteisön ohjaama, ilmainen avoimen lähdekoodin 2D ja 3D pelimoottori! Tämän "
+"yhteisön ohjaama, ilmainen avoimen lähdekoodin 2D-a 3D-pelimoottori! Tämän "
 "puheen takaa löydät tehokkaan ja käyttäjäystävällisen työkalun, jolla voit "
 "kehittää minkälaisen pelin tahansa, mille tahansa alustalle, ilman "
 "minkäänlaisia käyttörajoituksia."
@@ -348,7 +347,7 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Pelimoottori on monimutkainen työkalu, joten on vaikeaa esitellä Godot "
+"Pelimoottori on monimutkainen työkalu, joten on vaikeaa esitellä Godotia "
 "muutamalla sanalla. Tässä on pikainen yhteenveto, jota voit vapaasti "
 "uudelleenkäyttää jos tarvitset lyhyen selostuksen Godot Enginestä."
 
@@ -361,7 +360,7 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine on ominaisuuksia täynnä oleva, monialustainen pelimoottori 2D "
+"Godot Engine on ominaisuuksia täynnä oleva, monialustainen pelimoottori 2D-"
 "ja 3D-pelien tekemiseen yhdistetyllä käyttöliittymällä. Se tarjoaa kattavan "
 "määrän yleisimpiä työkaluja, joten käyttäjät voivat keskittyä pelien "
 "tekemiseen ilman että pyörää tarvitsee keksiä uudelleen. Pelit voidaan jakaa "
@@ -424,10 +423,10 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Voit osallistua Godotin dokumentointiin avaamalla aiheen (issue) tai "
-"lähettämällä korjauksia muutospyyntönä (pull request) sen GitHub sivulla "
-"`source repository <https://github.com/godotengine/godot-docs>`_, tai "
+"lähettämällä korjauksia muutospyyntönä (pull request) GitHub sivulla "
+"`lähdekoodivarasto <https://github.com/godotengine/godot-docs>`_, tai "
 "kääntämällä sitä omalle kielellesi sivulla `Hosted Weblate <https://hosted."
-"weblate.org/projects/godot-engine/godot-docs/>`_."
+"weblate.org/projects/godot-engine/godot-docs/>`ohjelmiston avulla."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -518,7 +517,7 @@ msgid ""
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
 "Viimeiseksi, :ref:`sec-class-ref` sisältää Godotin API-referenssin, joka on "
-"myös suoraan saatavilla moottorin skriptieditorissa. Se luodaan "
+"myös suoraan saatavilla moottorin skriptimuokkaimessa. Se luodaan "
 "lähdetiedostosta automaattisesti, joten luotuja dokumentaatiotiedostoja ei "
 "ole tarkoitus muokata. Katso yksityiskohdat :ref:"
 "`doc_updating_the_class_reference`."
@@ -695,8 +694,8 @@ msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Sekä 32-bittinen että 64-bittinen ovat tuettuja silloin, kun siinä on "
-"mieltä, 64-bittinen on oletus."
+"Sekä 32- että 64-bittisiä binääritiedostoja tuetaan jos se on järkevää, "
+"oletuksena on käytössä 64-bittinen versio."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -748,8 +747,8 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Jos olet vasta aloittelemassa joko Godotin käyttöä tai pelikehitystä "
-"yleisesti, on suositeltua opetella ja käyttää GDScript-kieltä, sillä se on "
+"Jos olet vasta aloittelemassa joko Godotin käyttöä tai peliohjelmointia "
+"yleisesti on suositeltua opetella ja käyttää GDScript-kieltä, sillä se on "
 "Godotin natiivikieli. Vaikka skriptikielet tahtovat olla pitkässä juoksussa "
 "suorituskyvyltään heikompia kuin matalan tason kielet, prototyypitykseen, "
 "Minimum Viable Product (MVP) kehitykseen ja Time-To-Market (TTM) "
@@ -1360,7 +1359,7 @@ msgstr ""
 "godotengine/godot/issues>`_. Etsi ongelma, joka herättää sinussa "
 "vastakaikua, ja etene sitten `How to Contribute <https://github.com/"
 "godotengine/godot/blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ "
-"oppaaseen oppiaksesi kuinka haaroitat, muokkaat ja lähetät Pull Requestin "
+"oppaaseen oppiaksesi kuinka haaroitat, muokkaat ja lähetät muutospyynnön "
 "(PR) muutoksistasi."
 
 #: ../../docs/about/faq.rst:323
@@ -1368,7 +1367,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Minulla on loistava idea Godotiin. Kuinka voin jakaa sen?"
 
 #: ../../docs/about/faq.rst:325
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1380,16 +1378,16 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Voi olla houkuttelevaa haluta tuoda Godotiin ideoita, jotka johtavat "
-"valtaviin ydinosien muutoksiin, matkivat toista pelimoottoria jollain tapaa "
-"tai vaihtoehtoisia työskentelytapoja, joita toivoisit editoriin "
-"rakennettavan. Nämä ovat upeita ideoita ja olemme kiitollisia, että "
-"edistämässä on mukana näin motivoituneita ihmisiä, mutta Godotin painopiste "
-"on ja tulee aina olemaan siinä ydintoiminnallisuudessa, joka on linjattu "
-"`etenemissuunnitelmassa <https://github.com/godotengine/godot-roadmap/blob/"
-"master/ROADMAP.md>`_, `bugien liiskaamisessa ja ongelmien hoitamisessa "
-"<https://github.com/godotengine/godot/issues>`_, sekä Godotin "
-"yhteisöjäsenten välisissä keskusteluissa."
+"Saattaa olla houkuttelevaa haluta tuoda Godotiin ideoita, kuten sellaisia, "
+"jotka johtavat massiivisiin ydinmuutoksiin, jonkinlaiseen jäljittelyyn "
+"toisen pelimoottorin toiminnasta tai vaihtoehtoisiin työnkulkuihin, jotka "
+"haluaisit sisällyttää muokkaimeen. Nämä ovat hienoja ideoita ja olemme "
+"kiitollisia siitä, että näin motivoituneet ihmiset haluavat osallistua, "
+"mutta Godot keskittyy ja tulee aina keskittymään ydintoimintoihin, jotka on "
+"hahmoteltu `etenemissuunnitelmassa <https://github.com/godotengine/godot-"
+"roadmap/blob/master/ROADMAP.md>`, `vikojen korjaamiseen ja ongelmien "
+"ratkaisemiseen <https://github.com/godotengine/godot/issues>` ja Godot-"
+"yhteisön jäsenten välisiin keskusteluihin."
 
 #: ../../docs/about/faq.rst:334
 msgid ""
@@ -1533,6 +1531,10 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"Jos haluat käyttää renderöintikirjastoa, tutustu sen sijaan vakiintuneeseen "
+"renderöintimoottoriin. Pidä mielessä, että renderöintimoottoreilla on "
+"yleensä pienemmät yhteisöt kuin Godotilla. Tämä vaikeuttaa vastausten "
+"löytämistä kysymyksiisi."
 
 #: ../../docs/about/faq.rst:393
 msgid "What user interface toolkit does Godot use?"
@@ -1547,6 +1549,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot ei käytä tavallista :abbr:'GUI (Graafinen käyttöliittymä)' "
+"työkalupakkia, kuten GTK, Qt tai wxWidgets. Sen sijaan Godot käyttää omaa "
+"käyttöliittymätyökalusarjaansa, joka on renderoitu OpenGL ES: llä tai "
+"Vulkanilla. Tämä työkalupakki näkyy ohjaussolmujen muodossa, joita käytetään "
+"muokkaimen hahmontamiseen (joka on kirjoitettu C ++-muodossa). Näitä "
+"ohjaussolmuja voidaan käyttää myös minkä tahansa Godotin tukeman "
+"komentosarjakielen projekteissa."
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -1556,6 +1565,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Tämä mukautettu työkalupakki mahdollistaa laitteistokiihdytyksen "
+"hyödyntämisen ja yhtenäisen ulkoasun kaikilla alustoilla. Lisäksi sen ei "
+"tarvitse käsitellä LGPL-lisenssisäännöksiä, jotka liittyvät GTK:hon tai Qt:"
+"hen. Lopuksi tämä tarkoittaa, että Godot \"syö omaa koiranruokaansa\" koska "
+"editori itsessään on yksi Godot'n käyttöliittymäjärjestelmän "
+"monimutkaisimmista käyttäjistä."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1563,6 +1578,10 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Tätä mukautettua käyttöliittymätyökalupakettia :ref:`ei voi käyttää "
+"kirjastona <doc_faq_use_godot_as_library>`, mutta voit silti :ref:`käyttää "
+"Godotia muiden kuin pelisovellusten luomiseen käyttämällä editoria "
+"<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:415
 msgid "Why does Godot not use STL (Standard Template Library)?"
@@ -1613,12 +1632,16 @@ msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Suurille matriiseille käytetään yhdistettyä muistia, joka voidaan liittää "
+"joko valmiiksi varattuun puskuriin tai virtuaalimuistiin."
 
 #: ../../docs/about/faq.rst:425
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Käytämme omaa merkkijono-tyyppiä, koska STL:n tarjoama tyyppi on liian "
+"yksinkertainen ja siitä puuttuu kunnollinen kansainvälistämistuki."
 
 #: ../../docs/about/faq.rst:428
 msgid "Why does Godot not use exceptions?"
@@ -1654,6 +1677,10 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot tarjoaa oman tyypinvalintajärjestelmänsä, joka voi valinnaisesti "
+"käyttää RTTI:tä sisäisesti. RTTI:n poistaminen käytöstä Godotissa tarkoittaa "
+"sitä, että voidaan saavuttaa huomattavasti pienempiä binäärikokoja, mutta "
+"suorituskyky on hieman heikompi."
 
 #: ../../docs/about/faq.rst:446
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
@@ -1667,6 +1694,9 @@ msgid ""
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Vaikka Godot pyrkii sisäisesti käyttämään välimuistin koherenssia "
+"mahdollisimman hyvin monissa raskaissa suorituskykytehtävissä, uskomme, että "
+"useimpia käyttäjiä ei oikeastaan tarvitse pakottaa käyttämään DoD-käytäntöjä."
 
 #: ../../docs/about/faq.rst:452
 msgid ""
@@ -1676,6 +1706,11 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD on enimmäkseen välimuistin koherenssioptimointi, jolla voidaan saavuttaa "
+"merkittäviä suorituskykyparannuksia vain, kun käsitellään kymmeniä tuhansia "
+"objekteja (joita käsitellään joka kehys ja joita ei juurikaan muuteta). "
+"Toisin sanoen, jos siirrät muutamaa sataa spriteä tai vihollista ruutua "
+"kohden, DoD ei auta sinua ja sinun pitäisi harkita erilaista optimointitapaa."
 
 #: ../../docs/about/faq.rst:459
 msgid ""
@@ -1691,6 +1726,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Jos tarvitaan peliä, jonka on todella käsiteltävä näin suuri määrä "
+"objekteja, suosittelemme käyttämään C++:a ja GDNativea suorituskykyisiin "
+"osiin ja GDScriptiä (tai C#:a) muuhun peliin."
 
 #: ../../docs/about/faq.rst:467
 msgid "How can I support Godot development or contribute?"
@@ -1734,12 +1772,16 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Katso :ref:`doc_using_the_web_editor` Godot-editorin HTML5-versiota "
+"koskevista varoituksista."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Kaikki, mitä teen editorissa tai projektinhallinnassa, näyttää viivästyneen "
+"yhdellä kehyksellä."
 
 #: ../../docs/about/troubleshooting.rst:16
 msgid ""
@@ -1747,6 +1789,9 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"Tämä on `tuttu vika <https://github.com/godotengine/godot/issues/23069>`__ "
+"Intelin grafiikkaohjaimissa Windowsissa. Intelin * toimittaman * uusimpaan "
+"grafiikkaohjaimen versioon * päivittämisen pitäisi korjata ongelma."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
@@ -1763,12 +1808,16 @@ msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"Ruudukko katoaa ja verkot muuttuvat mustiksi, kun käännän 3D-kameraa "
+"muokkaimessa."
 
 #: ../../docs/about/troubleshooting.rst:27
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"Tämä on `tuttu vika <https://github.com/godotengine/godot/issues/30330>`__ "
+"Intelin grafiikkaohjaimissa Windowsissa."
 
 #: ../../docs/about/troubleshooting.rst:30
 msgid ""
@@ -1784,6 +1833,8 @@ msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Jos käytät tietokonetta, jossa voit vaihtaa näytönohjaimen, kuten NVIDIA "
+"Optimus, voit käyttää Godotia erillisellä näytönohjaimella."
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
@@ -1798,11 +1849,19 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Tämä on `tuttu vika <https://github.com/godotengine/godot/issues/20566>`__ "
+"Windowsissa, kun on liitetty tiettyjä USB-lisälaitteita. Erityisesti "
+"Corsair'in iCUE-ohjelmisto näyttää aiheuttavan vian. Kokeile päivittää USB-"
+"lisälaitteiden' ajurit niiden uusimpaan versioon. Jos vika jatkuu, sinun on "
+"irrotettava vialliset oheislaitteet ennen editorin avaamista. Sen jälkeen "
+"voit liittää oheislaitteet uudelleen."
 
 #: ../../docs/about/troubleshooting.rst:47
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Tarkastajan ja solmun telakoiden editorin työkaluvihjeet vilkkuvat, kun ne "
+"näytetään."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -1811,10 +1870,16 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Tämä on `tuttu ongelma <https://github.com/godotengine/godot/"
+"issues/32990>`__, jonka aiheuttaa kolmannen osapuolen Stardock Fences -"
+"sovellus Windowsissa. Ainoa tunnettu kiertotapa on poistaa Stardock Fences "
+"käytöstä Godotia käytettäessä."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
+"Godot-muokkain näyttää jähmettyneeltä, kun olet napsauttanut "
+"järjestelmäkonsolia."
 
 #: ../../docs/about/troubleshooting.rst:56
 msgid ""
@@ -1824,40 +1889,57 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"Kun käytät Godotia Windowsissa, kun järjestelmäkonsoli on käytössä, voit "
+"vahingossa ottaa käyttöön *valintatilan* klikkaamalla komentoikkunan "
+"sisällä. Tämä Windows-kohtainen käyttäytyminen pysäyttää sovelluksen, jotta "
+"voit valita tekstiä järjestelmäkonsolin sisällä. Godot ei voi ohittaa tätä "
+"järjestelmäkohtaista käyttäytymistä."
 
 #: ../../docs/about/troubleshooting.rst:61
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Voit ratkaista tämän valitsemalla järjestelmän konsoli-ikkunan ja "
+"poistumalla valintatilasta painamalla Enter-näppäintä."
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Projektinhallinta- ja muokkain-ikkunan vasempaan yläkulmaan ilmestyy teksti, "
+"kuten \"NO DC\"."
 
 #: ../../docs/about/troubleshooting.rst:67
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Tämä johtuu siitä, että NVIDIA-näytönohjain lisää peittokuvan tietojen "
+"näyttämiseksi."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Jos haluat poistaa tämän päällekkäisyyden käytöstä Windowsissa, palauta "
+"grafiikkaohjaimen asetukset NVIDIAn ohjauspaneelin oletusarvoihin."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Voit poistaa tämän päällekkäisyyden käytöstä Linuxissa avaamalla ``nvidia-"
+"settings``, siirtymällä kohtaan **X Screen 0 > OpenGL-asetukset** ja "
+"poistamalla sen jälkeen valintaruudun **Enable Graphics API Visual "
+"Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "Projekti-ikkuna näyttää epäselvältä, toisin kuin editori."
 
 #: ../../docs/about/troubleshooting.rst:78
 msgid ""
@@ -1865,6 +1947,10 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"Toisin kuin muokkaimessa, projektia ei ole oletusarvoisesti merkitty DPI-"
+"tunnistavaksi. Tämä on tehty suorituskyvyn parantamiseksi, erityisesti "
+"integroidulla grafiikalla, jossa 3D-kohtausten renderöinti hiDPI:llä on "
+"hidasta."
 
 #: ../../docs/about/troubleshooting.rst:82
 msgid ""
@@ -1872,6 +1958,10 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Voit ratkaista tämän avaamalla **Projekti > Projektin asetukset** ja "
+"ottamalla käyttöön **Näyttö > Ikkuna > Dpi > Salli Hidpi**. Varmista "
+"lisäksi, että projektisi on määritetty tukemaan :ref:`monen resoluutio "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:87
 msgid "The project window doesn't appear centered when I run the project."
@@ -1884,12 +1974,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Tämä on `tuttu virhe <https://github.com/godotengine/godot/issues/13017>`__. "
+"Voit ratkaista tämän avaamalla **Projekti > Projektin asetukset** ja "
+"ottamalla käyttöön **Näyttö > Ikkuna > Dpi > Salli Hidpi**. Varmista "
+"lisäksi, että projektisi on määritetty tukemaan :ref:`monen resoluutio "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:95
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Projekti toimii, kun se ajetaan muokkaimesta, mutta se ei lataa joitakin "
+"tiedostoja, kun se ajetaan viedystä kopiosta."
 
 #: ../../docs/about/troubleshooting.rst:97
 msgid ""
@@ -1900,6 +1997,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"Tämä johtuu yleensä siitä, että unohdit määrittää suodattimen muille kuin "
+"resurssitiedostoille Vienti-valintaikkunassa. Oletusarvoisesti Godot "
+"sisällyttää PCK-tiedostoon vain todelliset *resurssit*. Joitakin yleisesti "
+"käytettyjä tiedostoja, kuten JSON-tiedostoja, ei pidetä resursseina. Jos "
+"esimerkiksi lataat ``test.json`` vietyyn projektiin, sinun on määriteltävä "
+"``*.json`` ei-resurssien vientisuodattimeen. Katso lisätietoja kohdasta :ref:"
+"`doc_exporting_projects_export_mode`."
 
 #: ../../docs/about/troubleshooting.rst:104
 msgid ""
@@ -1910,6 +2014,12 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"Windowsissa tämä voi johtua myös :ref:`case sensitivity "
+"<doc_project_organization_case_sensitivity>` -ongelmista. Jos viittaat "
+"resurssiin skriptissäsi isolla alkukirjaimella kuin tiedostojärjestelmässä, "
+"lataus epäonnistuu kun viet projektin. Tämä johtuu siitä, että virtuaalinen "
+"PCK-tiedostojärjestelmä on kirjainherkkä, kun taas Windows'n "
+"tiedostojärjestelmä ei ole oletusarvoisesti kirjainherkkä."
 
 #: ../../docs/about/list_of_features.rst:4
 msgid "List of features"
@@ -1928,6 +2038,10 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Tällä sivulla luetellaan Godotin nykyisen vakaan version (3.3) tukemat "
+"ominaisuudet. `Lisäominaisuuksia <https://docs.godotengine.org/en/latest/"
+"about/list_of_features.html>`__ on saatavilla uusimmassa kehitysversiossa "
+"(4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
@@ -1947,33 +2061,35 @@ msgstr "Windows 7 ja tuoreemmat (64- ja 32-bittiset)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 ja uudempi (64-bittinen, x86 ja ARM)."
 
 #: ../../docs/about/list_of_features.rst:24
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bittinen ja 32-bittinen, x86 ja ARM)."
 
 #: ../../docs/about/list_of_features.rst:26
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Binäärit on linkitetty staattisesti ja ne voivat toimia millä tahansa "
+"jakelulla jos ne on käännetty riittävän vanhalla perusjakelulla."
 
 #: ../../docs/about/list_of_features.rst:28
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Viralliset binäärit on käännetty Ubuntu 14.04:lle."
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 WebAssemblyn kautta (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Viedyt projektit:**"
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 ja uudempi."
 
 #: ../../docs/about/list_of_features.rst:35
 msgid "iOS 10.0 and later."
@@ -1988,12 +2104,16 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Headless Linux- ja macOS-palvelimet "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot pyrkii olemaan mahdollisimman alustariippumaton, ja se voidaan siirtää "
+"uusille alustoille suhteellisen helposti."
 
 #: ../../docs/about/list_of_features.rst:43
 #: ../../docs/tutorials/editor/external_editor.rst:34
@@ -2004,13 +2124,12 @@ msgstr "Editori"
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:90
 #: ../../docs/about/list_of_features.rst:355
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Ominaisuusmerkintä**"
+msgstr "**Ominaisuudet:**"
 
 #: ../../docs/about/list_of_features.rst:47
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Kohtauspuu muokkain."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "Script editor."
@@ -2021,14 +2140,16 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Tuki :ref:`ulkoisille komentosarjamuokkaimille <doc_external_editor>` kuten "
+"Visual Studio Code tai Vim."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debuggeri <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Säikeiden virheenkorjausta ei ole vielä tuettu."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Performance monitoring tools."
@@ -2036,27 +2157,31 @@ msgstr "Suorituskyvyn seurantatyökalut."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid "Live script reloading."
-msgstr ""
+msgstr "Skriptin uudelleenlataus."
 
 #: ../../docs/about/list_of_features.rst:56
 msgid "Live scene editing."
-msgstr ""
+msgstr "Live-kohtauksen muokkaus."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Muutokset näkyvät muokkaimessa ja säilyvät käynnissä olevan projektin "
+"sulkemisen jälkeen."
 
 #: ../../docs/about/list_of_features.rst:60
 msgid "Remote inspector."
-msgstr ""
+msgstr "Etätarkastaja."
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Muutokset eivät näy muokkaimessa eikä niitä säilytetä käynnissä olevan "
+"projektin sulkemisen jälkeen."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Live camera replication."
@@ -2065,10 +2190,12 @@ msgstr "Kameran reaaliaikainen replikointi."
 #: ../../docs/about/list_of_features.rst:66
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Siirrä muokkaimen sisäistä kameraa ja katso tulos käynnissä olevassa "
+"projektissa."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Käytä muokkainta kymmenillä yhteisön tuottamilla kielillä."
 
 #: ../../docs/about/list_of_features.rst:70
 msgid "**Plugins:**"
@@ -2079,18 +2206,24 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Muokkaimen laajennuksia voi ladata :ref:`asset-kirjastosta "
+"<doc_what_is_assetlib>` muokkaimen toimintojen laajentamiseksi."
 
 #: ../../docs/about/list_of_features.rst:74
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Luo omia lisäosia GDScriptin avulla lisätäksesi uusia ominaisuuksia tai "
+"nopeuttaaksesi työnkulkuasi."
 
 #: ../../docs/about/list_of_features.rst:75
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Lataa projekteja projektinhallinnassa olevasta asset-kirjastosta ja tuo ne "
+"suoraan."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "2D graphics"
@@ -2099,22 +2232,24 @@ msgstr "2d grafiikka"
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:147
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Kaksi renderöintilaitetta käytettävissä:**"
 
 #: ../../docs/about/list_of_features.rst:82
 #: ../../docs/about/list_of_features.rst:149
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"OpenGL ES 3.0 -renderöijä (käyttää OpenGL 3.3:a työpöytäympäristöissä)."
 
 #: ../../docs/about/list_of_features.rst:84
 #: ../../docs/about/list_of_features.rst:151
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Huippuluokan visuaalinen ilme. Suositellaan työpöydille."
 
 #: ../../docs/about/list_of_features.rst:86
 #: ../../docs/about/list_of_features.rst:154
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"OpenGL ES 2.0 -renderöijä (käyttää OpenGL 2.1:tä työpöytäympäristöissä)."
 
 #: ../../docs/about/list_of_features.rst:88
 #: ../../docs/about/list_of_features.rst:156
@@ -2123,28 +2258,30 @@ msgstr "Suositeltu mobiili- ja web alustoille."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Sprite-, monikulmio-- ja viivarenderöinti."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Korkean tason työkalut viivojen ja monikulmioiden piirtämiseen, kuten "
+"Polygon2D ja Line2D."
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite apuvälineenä animoitujen spritejen luomiseen."
 
 #: ../../docs/about/list_of_features.rst:97
 msgid "Parallax layers."
-msgstr ""
+msgstr "Parallax-kerrokset."
 
 #: ../../docs/about/list_of_features.rst:99
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "Pseudo-3D-tuki monistamalla kerros automaattisesti useita kertoja."
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "2D-valaistus normaalikartoilla."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Hard or soft shadows."
@@ -2155,30 +2292,40 @@ msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Kirjaisimien renderöinti bittikarttojen avulla (BitmapFont) tai rasterointi "
+"FreeTypea käyttäen (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:107
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "Bittikarttakirjaisimet voidaan viedä BMFontin kaltaisilla työkaluilla."
 
 #: ../../docs/about/list_of_features.rst:108
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
+"DynamicFont tukee yksivärisiä kirjaisimia sekä värillisiä kirjaimia (esim. "
+"emoji-kirjoituksia varten). Tuetut formaatit ovat TTF, OTF ja WOFF1."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont tukee valinnaisia kirjaimien ääriviivoja, joiden leveys ja väri "
+"ovat säädettävissä."
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Tuki kirjasinten ylinäytteenotolle, jotta kirjaimet pysyvät terävinä "
+"korkeammilla resoluutioilla."
 
 #: ../../docs/about/list_of_features.rst:113
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
+"GPU-pohjaiset partikkelit, joissa on tuki mukautetuille "
+"partikkelivarjostimille."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:228
@@ -2191,39 +2338,37 @@ msgstr "2D työkalut"
 
 #: ../../docs/about/list_of_features.rst:119
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2D-kamera, jossa on sisäänrakennettu tasoitus ja vetomarginaali."
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Path2D-solmu, joka edustaa polkua 2D-avaruudessa."
 
 #: ../../docs/about/list_of_features.rst:122
 #: ../../docs/about/list_of_features.rst:269
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Voidaan piirtää muokkaimessa tai luoda proseduraalisesti."
 
 #: ../../docs/about/list_of_features.rst:123
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "PathFollow2D-solmu, jolla saat solmut seuraamaan Path2D:tä."
 
 #: ../../docs/about/list_of_features.rst:125
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2D-geometrian apuluokka."
 
 #: ../../docs/about/list_of_features.rst:126
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Line2D-solmu teksturoitujen 2D-viivojen piirtämiseen."
 
 #: ../../docs/about/list_of_features.rst:129
-#, fuzzy
 msgid "2D physics"
-msgstr "Fysiikkamallinnus"
+msgstr "2D-fysiikka"
 
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:277
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "Fysiikkaominaisuudet"
+msgstr "**Fysiikan rungot:**"
 
 #: ../../docs/about/list_of_features.rst:133
 #: ../../docs/about/list_of_features.rst:279
@@ -2233,38 +2378,39 @@ msgstr "Staattiset kappaleet."
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:280
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Jäykät rungot."
 
 #: ../../docs/about/list_of_features.rst:135
 #: ../../docs/about/list_of_features.rst:281
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Kinemaattiset rungot."
 
 #: ../../docs/about/list_of_features.rst:136
 #: ../../docs/about/list_of_features.rst:283
 msgid "Joints."
-msgstr ""
+msgstr "Nivelet."
 
 #: ../../docs/about/list_of_features.rst:137
 #: ../../docs/about/list_of_features.rst:286
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Alueet, joilla havaitaan sinne saapuvat tai sieltä poistuvat rungot."
 
 #: ../../docs/about/list_of_features.rst:139
 #: ../../docs/about/list_of_features.rst:288
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Törmäyskappaleet"
+msgstr "**Törmäystunnistus:**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Sisäänrakennetut muodot: viiva, laatikko, ympyrä, kapseli."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Törmäyspolygonit (voidaan piirtää manuaalisesti tai luoda spriteistä "
+"muokkaimessa)."
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "3D graphics"
@@ -2272,17 +2418,20 @@ msgstr "3D grafiikka"
 
 #: ../../docs/about/list_of_features.rst:152
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "HDR renderöinti sRGB:llä."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "LDR-renderöinti parantaa yhteensopivuutta."
 
 #: ../../docs/about/list_of_features.rst:158
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Kaikki ominaisuudet eivät ole käytettävissä. Ominaisuudet, jotka ovat "
+"käytettävissä vain OpenGL ES 3.0 -renderöijää käytettäessä, on merkitty alla "
+"*GLES3*."
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "**Camera:**"
@@ -2290,19 +2439,19 @@ msgstr "**Kamera:**"
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Perspektiivikamerat, ortografiset kamerat ja frustum-offset-kamerat."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Fyysisesti perustuva renderointi:**"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Seuraa Disney PBR -mallia."
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "Käyttää karheusmetallia ja tukee ORM-tekstuureja."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "Normal mapping."
@@ -2313,24 +2462,28 @@ msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3:* Parallaksia/reliefikartoitus automaattisella etäisyyteen "
+"perustuvalla tarkkuustasolla."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "*GLES3:* Pinnanalainen sironta ja läpäisy."
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:* Läheisyyden haalistuminen (pehmeät hiukkaset)."
 
 #: ../../docs/about/list_of_features.rst:173
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Etäisyyshäivytys, joka voi käyttää alfa-sekoitusta tai sekoitusta "
+"välttääkseen läpinäkyvän putken läpi kulkemisen."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "Sekoitus voidaan määrittää pikseli- tai objektikohtaisesti."
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "**Real-time lighting:**"
@@ -2338,31 +2491,35 @@ msgstr "**Reaaliaikainen valaistus:**"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Suuntavalot (aurinko/kuu). Jopa 4 per kohtaus."
 
 #: ../../docs/about/list_of_features.rst:180
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Monisuuntaiset valot."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Kohdevalot, joissa on säädettävä kartiokulma ja vaimennus."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**Varjokartoitus:**"
 
 #: ../../docs/about/list_of_features.rst:185
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*Suuntavalo:* Ortogonaalinen (nopein), PSSM 2-split ja 4-split. Tukee "
+"sekoitusta jakojen välillä."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* Kaksoisparaboloidi (nopea) tai kuutiokartta (hitaampi mutta "
+"tarkempi). Tukee värillisiä projektoritekstuureja panoraamojen muodossa."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*SpotLight:* Single texture."
@@ -2370,11 +2527,13 @@ msgstr "*SpotLight:* Yksi tekstuuri."
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Maailmanlaajuinen valaistus epäsuoralla valaistuksella:**"
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
+"Paistetut valokartat (nopea, mutta niitä ei voi päivittää suorituksen "
+"aikana)."
 
 #: ../../docs/about/list_of_features.rst:195
 msgid ""
@@ -2382,20 +2541,27 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Tukee vain epäsuoran valon tai sekä suoran, että epäsuoran valaistuksen "
+"paistamista. Paistotilaa voidaan säätää valaisinkohtaisesti hybridivalojen "
+"paistoasetusten mahdollistamiseksi."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
 msgstr ""
+"Tukee dynaamisten kohteiden valaistusta automaattisella "
+"kahdeksikkopohjaisella järjestelmällä. Manuaalista anturin sijoittelua ei "
+"tarvita."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Valokartat paistetaan suorittimella."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
+"*GLES3:* GI-anturit (hitaampi, puolireaaliaikainen). Tukee heijastuksia."
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Reflections:**"
@@ -2403,23 +2569,28 @@ msgstr "**Heijastukset:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "*GLES3:* Voxel-pohjaiset heijastukset (kun käytetään GI-anturimia)."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"Nopeat paistetut heijastukset tai hitaat reaaliaikaiset heijastukset "
+"käyttämällä ReflectionProbea. Parallaksikorjaus voidaan ottaa valinnaisesti "
+"käyttöön."
 
 #: ../../docs/about/list_of_features.rst:209
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* Näyttötilan heijastukset."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
+"Heijastustekniikoita voidaan sekoittaa yhteen tarkkuuden tai skaalautuvuuden "
+"lisäämiseksi."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Sky:**"
@@ -2427,7 +2598,7 @@ msgstr "**Taivas:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Panoraamataivas (HDRI:n avulla)."
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "Procedural sky."
@@ -2439,21 +2610,23 @@ msgstr "**Sumu:**"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Syvyyssumu, jossa on säädettävä vaimennuskäyrä."
 
 #: ../../docs/about/list_of_features.rst:220
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "Korkeussumu (lattia tai katto) säädettävällä vaimennuksella."
 
 #: ../../docs/about/list_of_features.rst:221
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Tuki automaattiselle syvyyssumuvärille kameran suunnasta riippuen "
+"(vastaamaan auringon väriä)."
 
 #: ../../docs/about/list_of_features.rst:223
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "Valinnainen läpäisykyky, jotta valot näkyvät paremmin sumussa."
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "**Particles:**"
@@ -2462,6 +2635,8 @@ msgstr "**Partikkelit:**"
 #: ../../docs/about/list_of_features.rst:227
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
+"*GLES3:* GPU-pohjaiset hiukkaset, jotka tukevat mukautettuja "
+"hiukkasvarjostimia."
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "**Post-processing:**"
@@ -2469,64 +2644,69 @@ msgstr "**Jälkikäsittely:**"
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Tonemapping (Lineaarinen, Reinhard, Filmic, ACES)."
 
 #: ../../docs/about/list_of_features.rst:233
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
+"*GLES3:* Automaattiset valotuksen säädöt näyttöikkunan kirkkauden "
+"perusteella."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Syväterävyys läheltä ja kaukaa."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "*GLES3:* Ruututilan ambient-peitto."
 
 #: ../../docs/about/list_of_features.rst:236
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
 msgstr ""
+"*GLES3:* Valinnainen kaistanpoisto värinauhan välttämiseksi (tehokas, kun "
+"HDR-hahmonnus on käytössä)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"Hehku/kukinta valinnaisella bicubic-skaalaustoiminnolla ja useilla "
+"sekoitustiloilla: Näyttö, Pehmeä valo, Lisää, Korvaa."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Värikorjaus yhdellä ulottuvuudella."
 
 #: ../../docs/about/list_of_features.rst:240
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Kirkkauden, kontrastin ja kylläisyyden säädöt."
 
 #: ../../docs/about/list_of_features.rst:242
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**Ominaisuusmerkintä**"
+msgstr "**Tekstuurisuodatus:**"
 
 #: ../../docs/about/list_of_features.rst:244
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Lähin, bilineaarinen, trilineaarinen tai anisotrooppinen suodatus."
 
 #: ../../docs/about/list_of_features.rst:246
 msgid "**Texture compression:**"
-msgstr ""
+msgstr "**Tekstuurin pakkaus:**"
 
 #: ../../docs/about/list_of_features.rst:248
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* BPTC korkealaatuista pakkausta varten (ei tueta macOS:ssä)."
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (ei tuettu macOS:ssä)."
 
 #: ../../docs/about/list_of_features.rst:250
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (suositellaan käytettäessä GLES2-renderöijää)."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
@@ -3870,7 +4050,7 @@ msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/about/release_policy.rst:4
 msgid "Godot release policy"
-msgstr ""
+msgstr "Godotin julkaisukäytäntö"
 
 #: ../../docs/about/release_policy.rst:6
 msgid ""
@@ -3879,6 +4059,10 @@ msgid ""
 "happen depends on the choices of core contributors, and the needs of the "
 "community at a given time."
 msgstr ""
+"Godotin julkaisupolitiikka on jatkuvassa kehityksessä. Alla kuvatun on "
+"tarkoitus antaa yleiskuva siitä mitä on odotettavissa, mutta se mitä todella "
+"tapahtuu riippuu keskeisten tekijöiden valinnoista ja yhteisön tarpeista "
+"tiettynä ajankohtana."
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
@@ -3965,6 +4149,11 @@ msgid ""
 "In particular, the 3.2 stable branch received a number of new features in "
 "3.2.2 which would have warranted a ``minor`` version increment."
 msgstr ""
+"Kuten johdannossa mainittiin. Godotin julkaisukäytäntö kehittyy ja aiemmat "
+"Godot-julkaisut eivät välttämättä ole noudattaneet edellä mainittuja "
+"sääntöjä kirjaimellisesti. Erityisesti 3.2:n vakaa haara sai 3.2.2:ssa "
+"useita uusia ominaisuuksia, jotka olisivat oikeuttaneet ``minor``-version "
+"lisäyksen."
 
 #: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
@@ -5793,9 +5982,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Skenet ja solmut"
+msgstr "Solmut ja Kohtaukset"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -5869,7 +6057,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:51
-#, fuzzy
 msgid ""
 "The Godot editor essentially is a **scene editor**. It has plenty of tools "
 "for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
@@ -5877,9 +6064,12 @@ msgid ""
 "one as your application's **main scene**. This is the scene Godot will first "
 "load when you or a player runs the game."
 msgstr ""
-"Pohjimmiltaan Godotin editori on **skene-editori**. Siinä on runsaasti "
-"työkaluja 2D- ja 3D-skenejen sekä käyttöliittymien editointiin, mutta "
-"editori pohjautuu skenejen ja solmujen editoinnin periaatteeseen."
+"Godot-editori on pohjimmiltaan ** kohtauseditori **. Siinä on paljon "
+"työkaluja 2D- ja 3D-kohtausten muokkaamiseen, sekä käyttöliittymiin. Godot-"
+"projekti voi sisältää niin monta näistä kohtauksista kuin tarvitset. "
+"Moottori vaatii vain yhden, koska sovelluksesi **päänäkymä**. Tämä on "
+"kohtaus, jonka Godot lataa ensimmäisen kerran kun sinä tai pelaaja suoritat "
+"pelin."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:57
 msgid "On top of acting like nodes, scenes have the following attributes:"
@@ -7111,6 +7301,9 @@ msgid ""
 "the floor. In :ref:`doc_your_first_2d_game`, you will learn another approach "
 "to moving objects while detecting collisions."
 msgstr ""
+"Solmun siirtämisessä tällä tavoin ei oteta huomioon seiniin tai lattiaan "
+"törmäämistä. Kohdassa :ref:`doc_your_your_first_2d_game` opit toisenlaisen "
+"lähestymistavan objektien liikuttamiseen ja törmäysten havaitsemiseen."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:257
 msgid ""
@@ -7669,19 +7862,16 @@ msgstr ""
 "pelaaja on kerännyt kolikon."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:339
-#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
 "2D game and put everything you learned so far into practice."
 msgstr ""
-"Seuraavassa osiossa, :ref:`doc_your_first_game`, rakennamme kokonaisen "
-"pelin, jossa signaaleja käytetään monin eri tavoin yhdistämään pelin eri "
-"komponentteja."
+"Seuraavassa osiossa, :ref:`doc_your_your_first_2d_game`, luot täydellisen 2D-"
+"pelin ja laitat kaiken tähän mennessä oppimasi käytäntöön."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:4
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen 2D-pelisi"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:6
 msgid ""
@@ -7689,6 +7879,9 @@ msgid ""
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"Tässä vaiheittaisessa opetussarjassa luot ensimmäisen kokonaisen 2D-pelisi "
+"Godotilla. Sarjan loppuun mennessä sinulla on yksinkertainen mutta valmis "
+"peli, kuten alla olevassa kuvassa."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:12
 #, fuzzy
@@ -9633,7 +9826,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:67
 msgid "And with that, you completed your first 2D game in Godot."
-msgstr ""
+msgstr "Näin sait valmiiksi ensimmäisen 2D-pelisi Godotissa."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:71
 msgid ""
@@ -9653,11 +9846,12 @@ msgid ""
 "And when you're ready, you can move on to :ref:`doc_your_first_3d_game` to "
 "learn to create a complete 3D game from scratch, in Godot."
 msgstr ""
+"Ja kun olet valmis, voit siirtyä kohtaan :ref:`doc_your_first_3d_game` "
+"oppiaksesi luomaan täydellisen 3D-pelin tyhjästä Godotissa."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:4
-#, fuzzy
 msgid "Your first 3D game"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen 3D-pelisi"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:6
 msgid ""
@@ -9665,6 +9859,9 @@ msgid ""
 "game with Godot. By the end of the series, you will have a simple yet "
 "finished project of your own like the animated gif below."
 msgstr ""
+"Tässä vaiheittaisessa opetussarjassa luot ensimmäisen täydellisen 3D-pelisi "
+"Godotilla. Sarjan loppuun mennessä sinulla on yksinkertainen mutta valmis "
+"projekti, kuten alla oleva animoitu gif."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:12
 msgid ""
@@ -9673,6 +9870,11 @@ msgid ""
 "will both **recognize patterns** you learned in the previous tutorial and "
 "**build upon them** with new code and features."
 msgstr ""
+"Peli, jota koodaamme tässä, on samanlainen kuin :ref:"
+"`doc_your_your_first_2d_game`, mutta siinä on eräs käänne: voit nyt hypätä "
+"ja tavoitteesi on murskata hiipparit. Näin sekä **tunnistat edellisessä "
+"opetusohjelmassa oppimasi mallit** että **rakennat niiden päälle** uutta "
+"koodia ja ominaisuuksia."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:19
 msgid "Work with 3D coordinates with a jumping mechanic."
@@ -12569,6 +12771,8 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:272
 msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
+"Sen jälkeen olet saanut valmiiksi ensimmäisen kokonaisen 3D-pelisi "
+"koodauksen."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:274
 #, fuzzy
@@ -12600,6 +12804,8 @@ msgid ""
 "You can pat yourself on the back for having completed your first 3D game "
 "with Godot."
 msgstr ""
+"Voit taputtaa itseäsi selkään, kun olet saanut ensimmäisen 3D-pelisi "
+"valmiiksi Godotilla."
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:9
 msgid ""
@@ -14487,6 +14693,11 @@ msgid ""
 "can be any background you choose. For this style of shadow it is most likely "
 "to be a floor texture."
 msgstr ""
+"Lisää ensin :ref:`Sprite <class_Sprite>` ja aseta sen tekstuuri "
+"`taustakuvaksi <https://raw.githubusercontent.com/godotengine/godot-demo-"
+"projects/master/2d/lights_and_shadows/background.png>`_. Pelissäsi tämä voi "
+"olla mikä tahansa haluamasi tausta. Tämän tyylisessä varjossa se on "
+"todennäköisesti lattiatekstuuri."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""
@@ -25299,7 +25510,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:170
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:172
 msgid ""
@@ -31734,7 +31945,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid "Open Scene"
-msgstr "Avaa skene"
+msgstr "Avoin kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid ":kbd:`Ctrl + O`"
@@ -31750,7 +31961,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid "Close Scene"
-msgstr "Sulje skene"
+msgstr "Sulje kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -31766,7 +31977,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid "Reopen Closed Scene"
-msgstr "Avaa uudelleen suljettu skene"
+msgstr "Avaa suljettu kohtaus uudelleen"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:49
 #: ../../docs/tutorials/editor/default_key_mapping.rst:319
@@ -31784,7 +31995,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:51
 msgid "Save Scene"
-msgstr "Tallenna skene"
+msgstr "Tallenna kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:51
 msgid ":kbd:`Ctrl + S`"
@@ -31817,7 +32028,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid "Save All Scenes"
-msgstr "Tallenna kaikki skenet"
+msgstr "Tallenna kaikki kohtaukset"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:55
 #: ../../docs/tutorials/editor/default_key_mapping.rst:323
@@ -31997,7 +32208,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:77
 msgid "Pause Scene"
-msgstr "Keskeytä skene"
+msgstr "Pysäytä kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:77
 msgid ":kbd:`F7`"
@@ -32030,7 +32241,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:81
 msgid "Play Scene"
-msgstr "Pelaa skeneä"
+msgstr "Toista kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:81
 msgid ":kbd:`F6`"
@@ -32047,7 +32258,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid "Play Custom Scene"
-msgstr "Valitse ja käynnistä skene"
+msgstr "Toista mukautettu kohtaus"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -34544,13 +34755,12 @@ msgstr ""
 "kuitenkin tehdä joitakin muutoksia pelin toimintatapaan."
 
 #: ../../docs/tutorials/export/exporting_basics.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_2d_game` before continuing with this tutorial."
 msgstr ""
-"Jos et ole vielä tehnyt \"Dodge the Creeps\" peliä itse, ole hyvä ja lue :"
-"ref:`doc_your_first_game` ennen kuin jatkat tämän ohjeen parissa."
+"Jos et ole vielä tehnyt \"Dodge the Creeps\" -peliä, lue :ref:"
+"`doc_your_your_first_2d_game` ennen kuin jatkat tämän ohjeen parissa."
 
 #: ../../docs/tutorials/export/exporting_basics.rst:23
 msgid "Preparing the project"
@@ -35168,7 +35378,7 @@ msgstr "Vie kaikki projektin resurssit"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
-msgstr "Vie valitut skenet (ja riippuvuudet)"
+msgstr "Vie valitut kohtaukset (ja riippuvuudet)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
@@ -35394,7 +35604,7 @@ msgstr "skenet"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "varjostin"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:45
 msgid "models"
@@ -42658,6 +42868,11 @@ msgid ""
 "included in the next Godot version by opening a pull request on the linked "
 "repository."
 msgstr ""
+"Jos painikkeet on kartoitettu väärin, se voi johtua virheellisestä "
+"kartoituksesta `SDL-peliohjaimen tietokannasta <https://github.com/gabomdq/"
+"SDL_GameControllerDB>`__. Voit antaa päivitetyn kartoituksen "
+"sisällytettäväksi seuraavaan Godot-versioon avaamalla muutospyynnön "
+"linkitettyyn arkistoon."
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:201
 msgid ""
@@ -48746,7 +48961,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr "SkenePuu"
+msgstr "Skenaariot"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -51954,6 +52169,8 @@ msgid ""
 "See the :ref:`doc_your_first_2d_game` for an example of using Area2D in a "
 "game."
 msgstr ""
+"Esimerkki Area2D:n käyttämisestä pelissä on kohdassa :"
+"ref:'doc_your_first_2d_game'."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:101
 msgid "Area influence"
@@ -55042,9 +55259,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "value"
-msgstr "Arvo"
+msgstr "arvo"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 #, fuzzy
@@ -55659,6 +55875,9 @@ msgid ""
 "feel free to `open an issue or pull request <https://github.com/godotengine/"
 "godot-docs>`_ to add your company to the list above."
 msgstr ""
+"Jos yrityksesi tarjoaa Godot-pelien porttaus- ja/tai julkaisupalveluja, voit "
+"vapaasti `avata ongelman tai muutospyynnön <https://github.com/godotengine/"
+"godot-docs>`_ lisätäksesi yrityksesi yllä olevaan luetteloon."
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
@@ -61255,7 +61474,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "Kun"
+msgstr "Sillä aikaa"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -63001,7 +63220,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "avain"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -63978,7 +64197,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr "Väistä"
+msgstr "Odottaa"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -64974,7 +65193,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
-msgstr ""
+msgstr "Yksinkertaiset"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:151
 msgid ""
@@ -77036,6 +77255,12 @@ msgid ""
 "diagonal scrollbars, at least it will be good to know how to create these "
 "controls easily from script."
 msgstr ""
+"Silti niitä ei ole koskaan tarpeeksi. Omien mukautettujen ohjausobjektien "
+"luominen, jotka toimivat juuri haluamallasi tavalla on lähes jokaisen "
+"graafisen ohjelmoijan pakkomielle. Godot tarjoaa niitä paljon, mutta ne "
+"eivät ehkä toimi juuri niin kuin haluat. Ennen kuin otat yhteyttä "
+"kehittäjiin muutospyynnöllä diagonaalisten vierityspalkkien tukemiseksi on "
+"ainakin hyvä tietää miten nämä ohjaimet luodaan helposti komentosarjasta."
 
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:19
 msgid ""
@@ -78729,6 +78954,20 @@ msgid ""
 "scale. For instance, setting this to a value of 10 changes our coordinate "
 "system so 10 units = 1 meter."
 msgstr ""
+"Ensimmäiset ovat yksikkömme. Tavallisissa 3D-peleissä sinun ei tarvitse "
+"miettiä paljon yksiköitä. Kunhan kaikki on samassa mittakaavassa, 1 yksikkö "
+"kertaa 1 yksikkö kertaa 1 yksikkö kokoinen laatikko voi olla minkä tahansa "
+"kokoinen, kädessä pidettävistä kuutioista aina rakennuksen kokoiseen "
+"laatikkoon. AR:ssa ja VR:ssä tämä muuttuu, koska virtuaalimaailman asiat on "
+"yhdistetty reaalimaailman asioihin. Jos astut 1 metrin eteenpäin "
+"todellisessa maailmassa, mutta liikut vain 1 cm eteenpäin "
+"virtuaalimaailmassa, sinulla on ongelma. Sama pätee ohjainten sijaintiin; "
+"jos ne eivät näy oikeassa suhteellisessa tilassa, pelaajan immersio katkeaa. "
+"Useimmat VR-alustat, myös AR/VR-palvelimemme, olettavat, että 1 yksikkö = 1 "
+"metri. AR/VR-palvelimella on kuitenkin ominaisuus, joka on kätevästi "
+"näkyvissä myös ARVROrigin-solmussa nimeltä world scale. Esimerkiksi "
+"asettamalla sen arvoksi 10 muutamme koordinaattijärjestelmäämme siten, että "
+"10 yksikköä = 1 metri."
 
 #: ../../docs/tutorials/vr/xr_primer.rst:173
 msgid ""
@@ -79694,6 +79933,9 @@ msgid ""
 "complete :ref:`doc_your_first_2d_game`, if you are new to Godot and/or game "
 "development."
 msgstr ""
+"Vaikka tämä opetusohjelma sopii aloittelijoille, on erittäin suositeltavaa "
+"suorittaa :ref:`doc_your_your_first_2d_game`, jos olet uusi Godotissa ja/tai "
+"peliohjelmoinnissa."
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:34
 msgid ""
@@ -82932,6 +83174,8 @@ msgid ""
 "should follow the instructions from the :ref:`Pull Request workflow "
 "<doc_pr_workflow>`."
 msgstr ""
+"Jos käännät käännöksiä tehdessäsi lisäyksiä tai muutospyyntöjä, noudata :ref:"
+"`Pull Request workflow <doc_pr_workflow>`:n ohjeita."
 
 #: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
@@ -87255,6 +87499,8 @@ msgid ""
 "When opening a pull request, make sure to remove this snippet as well as the "
 "include if it wasn't there previously."
 msgstr ""
+"Kun avaat muutospyynnön, varmista, että poistat tämän pätkän sekä include-"
+"osan, jos se ei ollut siellä aiemmin."
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
 #, fuzzy
@@ -89923,6 +90169,9 @@ msgid ""
 "to add optimized icons to ``editor/icons`` in the main repository. Recompile "
 "the engine to make it pick up new icons for classes."
 msgstr ""
+"Jos osallistut itse moottoriin, sinun on tehtävä muutospyyntö lisätä "
+"optimoidut kuvakkeet päävaraston ''editor/icons'' -kohtaan. Käännä moottori "
+"uudelleen, jotta se poimii uusia kuvakkeita luokille."
 
 #: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
@@ -89931,6 +90180,10 @@ msgid ""
 "don't need to make a separate pull request for your icons to be available "
 "within the editor as they can be self-contained."
 msgstr ""
+"On myös mahdollista luoda mukautettuja kuvakkeita moduulin sisällä. Jos luot "
+"oman moduulin etkä aio integroida sitä Godotiin, sinun ei tarvitse tehdä "
+"erillistä muutospyyntöä, jotta kuvakkeesi ovat saatavilla muokkaimessa, "
+"koska ne voivat olla itsenäisiä."
 
 #: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
@@ -90962,6 +91215,13 @@ msgid ""
 "tutorials) and its translations. The following sections will cover each of "
 "those \"direct\" ways of contributing to the engine."
 msgstr ""
+"**Osallistu moottorin kehitykseen.** Tämä voi tapahtua antamalla koodia "
+"muutospyyntöjen kautta, testaamalla kehityskuvat tai suoraan git *master* -"
+"haarat, raportoimalla virheistä tai ehdottamalla parannuksia "
+"ongelmanseurantaan, parantamalla virallista dokumentaatiota (sekä "
+"luokkaviittauksia että opetusohjelmia) ja sen käännöksiä. Seuraavissa "
+"kohdissa käsitellään kutakin näistä \"suorista\" tavoista osallistua "
+"moottoriin."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:40
 msgid ""
@@ -91000,6 +91260,13 @@ msgid ""
 "called \"pull request\" (PR), i.e. a proposal to directly merge one or more "
 "Git commits (patches) into the main development branch."
 msgstr ""
+"Näin ollen jokaisella on oikeus muuttaa `Godotin lähdekoodia <https://github."
+"com/godotengine/godot>`_ ja lähettää nämä muutokset takaisin tuotantovirran "
+"ylävirtaan kuuluvalle projektille korjauksen muodossa (tekstitiedosto, jossa "
+"muutokset kuvataan valmiina sovellettavaksi) tai - käyttämässämme "
+"nykyaikaisessa työnkulussa - niin sanotun \"muutospyynnön\" (PR) kautta, eli "
+"ehdotus yhden tai useamman Git-komennon (patch) yhdistämisestä suoraan "
+"pääkehityshaaraan."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
@@ -91060,6 +91327,12 @@ msgid ""
 "meantime, as it is expected that in an open source project like Godot, there "
 "is going to be way more contributions than people validating them."
 msgstr ""
+"Kaikkien muutospyyntöjen on käytävä läpi tarkistusprosessi ennen kuin ne "
+"hyväksytään. Muutosten laajuudesta riippuen voi kestää jonkin aikaa, ennen "
+"kuin moottorin muutetusta osasta vastaava ylläpitäjä antaa lausuntonsa. "
+"Arvostamme kaikkia avustajiamme ja pyydämme heitä olemaan kärsivällisiä "
+"sillä odotettavissa on, että Godotin kaltaisessa avoimen lähdekoodin "
+"projektissa on paljon enemmän avustajia kuin niiden vahvistajia."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:105
 msgid ""
@@ -91222,6 +91495,13 @@ msgid ""
 "`doc_updating_the_class_reference` and :ref:"
 "`doc_class_reference_writing_guidelines` for more details."
 msgstr ""
+"**Luokkaviittaus.** Tämä on dokumentaatio koko Godot API:lle, sellaisena "
+"kuin se näkyy GDScriptille ja muille skriptikielille. Siihen voi tutustua "
+"offline-tilassa, suoraan Godot'n koodieditorissa tai verkossa osoitteessa :"
+"ref:`Godot API <toc-class-ref>`. Jos haluat osallistua luokkaviittaukseen, "
+"sinun on muokattava luokkaa vastaavaa XML-tiedostoa ja tehtävä "
+"muutosehdotus. Katso lisätietoja :ref:`doc_updating_the_class_reference` ja :"
+"ref:`doc_class_reference_writing_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:205
 msgid ""
@@ -91232,6 +91512,12 @@ msgid ""
 "<https://github.com/godotengine/godot-docs>`_ GitHub repository. See :ref:"
 "`doc_contributing_to_the_documentation` for more details."
 msgstr ""
+"**Ohjeita ja moottorin dokumentaatio ja sen käännökset.** Tämä on nyt "
+"lukemasi osa, joka on jaettu HTML-muodossa. Sen sisältö on tuotettu "
+"tavallisista tekstitiedostoista reStructured Text (rst) -muodossa, johon "
+"voit osallistua muutospyynnöillä `godot-docs <https://github.com/godotengine/"
+"godot-docs>`_ GitHub-tietovarastossa. Katso :ref:"
+"`doc_contributing_to_the_documentation` lisätietoja."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:213
 #, fuzzy
@@ -91620,7 +91906,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:4
 msgid "Pull request workflow"
-msgstr ""
+msgstr "Muutospyynnön työnkulku"
 
 #: ../../docs/community/contributing/pr_workflow.rst:8
 msgid ""
@@ -91632,6 +91918,14 @@ msgid ""
 "a *pull* from one of their fork's branches to one branch of the original "
 "(often named *upstream*) repository."
 msgstr ""
+"Godotin käyttämä niin sanottu \"PR-työnkulku\" on yleinen monissa Git-"
+"projekteissa, ja sen pitäisi olla tuttu veteraaneille vapaiden ohjelmistojen "
+"tekijöille. Ajatuksena on, että vain pieni osa (jos ollenkaan) sitoutuu "
+"suoraan *master*-haaraan. Sen sijaan avustajat * haarukoivat* projektin (ts. "
+"luovat siitä kopion, jota he voivat muokata haluamallaan tavalla) ja "
+"pyytävät sitten GitHubin käyttöliittymän avulla *pull* yhdestä "
+"haarautumishaarastaan alkuperäisen (usein *upstream* nimellä varustetun) "
+"arkiston yhteen haaraan."
 
 #: ../../docs/community/contributing/pr_workflow.rst:16
 msgid ""
@@ -91641,6 +91935,11 @@ msgid ""
 "the core developers, and its commit(s) will become part of the target branch "
 "(usually the *master* branch)."
 msgstr ""
+"Tuloksena syntyvä *kutsupyyntö* (PR) voi sitten tulla muiden tekijöiden "
+"tarkasteltavaksi ja he voivat hyväksyä sen, hylätä sen tai useimmiten pyytää "
+"tekemään muutoksia. Kun PR on hyväksytty joku ydinkehittäjistä voi sulauttaa "
+"sen ja sen toimituksesta (toimituksista) tulee osa kohdehaaraa (yleensä "
+"*master*-haaraa)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:22
 msgid ""

@@ -45,6 +45,7 @@
 # Maciej <WriteToFeniks@gmail.com>, 2019-2020.
 # Marek Malaria <to.tylko.dla.kont@gmail.com>, 2021.
 # Mateusz Grzonka <alpinus4@gmail.com>, 2020.
+# Mateusz Zdrzałek <matjozohd@gmail.com>, 2022.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019-2020.
 # Michal Biesiada <blade-14@o2.pl>, 2021.
@@ -77,6 +78,7 @@
 # Tomasz Piechocki <t.piechocki@yahoo.com>, 2021.
 # Tomek <kobewi4e@gmail.com>, 2018-2022.
 # wieslaw.mlynarski Wiesław <wieslaw.mlynarski@gmail.com>, 2020.
+# Wodorek <Krol.w94@gmail.com>, 2022.
 # Zamulacz <mcichocki@protonmail.com>, 2019.
 # ᅚc <silenltypl@gmail.com>, 2018.
 #
@@ -85,8 +87,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2022-03-07 21:59+0000\n"
-"Last-Translator: Katarzyna Twardowska <katarina.twardowska@gmail.com>\n"
+"PO-Revision-Date: 2022-04-08 07:29+0000\n"
+"Last-Translator: Wodorek <Krol.w94@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -3039,7 +3041,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/index.rst:2
 #: ../../docs/tutorials/export/exporting_for_web.rst:161
 msgid "Audio"
-msgstr "Dźwięk"
+msgstr "Audio"
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "Mono, stereo, 5.1 and 7.1 output."
@@ -3069,6 +3071,8 @@ msgid ""
 "Audio input to record microphones with real-time access using the "
 "AudioEffectCapture class."
 msgstr ""
+"Wejście audio do nagrywania z mikrofonów w czasie rzeczywistym, przy użyciu "
+"klasy AudioEffectCapture."
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "MIDI input."
@@ -3092,7 +3096,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:374
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio lub ALSA."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid "Import"
@@ -3158,8 +3162,9 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:400
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:112
+#, fuzzy
 msgid "Input"
-msgstr "Wejście"
+msgstr "Input"
 
 #: ../../docs/about/list_of_features.rst:402
 msgid ""
@@ -6188,7 +6193,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
 msgid "Nodes and Scenes"
-msgstr "Węzły i Sceny"
+msgstr "Węzły i sceny"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -9730,7 +9735,7 @@ msgstr "*Wyrównanie*: \"Wyśrodkowany\""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
-msgstr "Message"
+msgstr "Wiadomość"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -14430,7 +14435,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr "Skaluj"
+msgstr "Skala"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -17598,7 +17603,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Rozpraszanie podpowierzchniowe"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -31744,7 +31749,7 @@ msgstr "Właściwości węzła"
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr ""
+msgstr "Command"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:35
 #, fuzzy
@@ -33881,9 +33886,8 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:217
-#, fuzzy
 msgid "Text Editor"
-msgstr "Edytor"
+msgstr "Edytor tekstu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
@@ -38992,7 +38996,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:192
 msgid "Clipboard"
-msgstr ""
+msgstr "Schowek"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:194
 msgid ""
@@ -39900,7 +39904,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr "Języki"
+msgstr "Ustawienia regionalne"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -69644,9 +69648,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "Ciągi tekstowe"
+msgstr "Ustawienia"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""

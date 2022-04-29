@@ -20,6 +20,7 @@
 # Efruz Yıldırır <efruzyildirir@gmail.com>, 2020.
 # ege1212 <owlphp@gmail.com>, 2019.
 # Ege Esin <ege_e@icloud.com>, 2021.
+# Emir Tunahan Alim <emrtnhalim@gmail.com>, 2022.
 # Emre Altinagac <emrealtinagac@gmail.com>, 2019-2020.
 # Ferhat Geçdoğan <ferhatgectao@gmail.com>, 2022.
 # furkan atalar <fatalar55@gmail.com>, 2020-2021.
@@ -43,6 +44,7 @@
 # Mutlu ORAN <mutlu.oran66@gmail.com>, 2020.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
 # Halil Üneş <halilunes@gmail.com>, 2018.
+# Oğuz Batur Sarıöz <sariozbatur@gmail.com>, 2022.
 # Oğuz Ersen <oguzersen@protonmail.com>, 2019-2021.
 # Oğuzhan Özdemir <ozdemiroguzhan0@gmail.com>, 2018.
 # Ömer YAZICIOĞLU <oyazicioglu@gmail.com>, 2019.
@@ -61,7 +63,7 @@
 # Ufuk Ardıç <ufukrdc@gmail.com>, 2021.
 # Vedat Günel <gunel15@itu.edu.tr>, 2020.
 # Yusuf Osman YILMAZ <wolfkan4219@gmail.com>, 2020.
-# Yusuf Yavuzyigit <yusufyavuzyigit25@gmail.com>, 2021.
+# Yusuf Yavuzyigit <yusufyavuzyigit25@gmail.com>, 2021-2022.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
 #
 msgid ""
@@ -69,8 +71,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2022-01-30 07:17+0000\n"
-"Last-Translator: Ferhat Geçdoğan <ferhatgectao@gmail.com>\n"
+"PO-Revision-Date: 2022-03-30 19:07+0000\n"
+"Last-Translator: Yusuf Yavuzyigit <yusufyavuzyigit25@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -78,7 +80,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -237,9 +239,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Koşul"
+msgstr "Çeviri Durumu"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -676,7 +677,7 @@ msgstr "Godot hangi platformları destekler?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**Editörler için.**"
+msgstr "**Editör için.**"
 
 #: ../../docs/about/faq.rst:38
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:59
@@ -1604,6 +1605,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Bu özel araç seti, donanım hızlandırmasından yararlanmayı ve tüm "
+"platformlarda tutarlı bir görünüme sahip olmayı mümkün kılar. Bunun da "
+"ötesinde, GTK veya Qt ile birlikte gelen LGPL lisanslama uyarılarıyla "
+"uğraşmak zorunda değildir. Son olarak, bu, editörün kendisi Godot'nun UI "
+"sisteminin en karmaşık kullanıcılarından biri olduğu için Godot'nun \"kendi "
+"köpek mamasını yediği\" anlamına gelir."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
@@ -1611,6 +1618,10 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Bu özel UI araç takımı :ref:`bir kitaplık olarak kullanılamaz "
+"<doc_faq_use_godot_as_library>`, ancak yine de :ref:`Godot'u "
+"<doc_faq_non_game_applications> düzenleyicisini kullanarak oyun dışı "
+"uygulamalar oluşturmak için kullanabilirsiniz."
 
 #: ../../docs/about/faq.rst:415
 msgid "Why does Godot not use STL (Standard Template Library)?"
@@ -1892,6 +1903,8 @@ msgstr ""
 msgid ""
 "Editor tooltips in the Inspector and Node docks blink when they're displayed."
 msgstr ""
+"Denetçi ve Düğüm yuvalarındaki düzenleyici araç ipuçları, "
+"görüntülendiklerinde yanıp söner."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
@@ -1900,6 +1913,10 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"Bu, Windows'ta üçüncü taraf Stardock Fences uygulamasının neden olduğu "
+"<https://github.com/godotengine/godot/issues/32990>'__ bilinen bir sorundur. "
+"Bilinen tek geçici çözüm, Godot kullanırken Stardock Fences'i devre dışı "
+"bırakmaktır."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -2127,6 +2144,8 @@ msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
 msgstr ""
+":ref:`Başsız Linux ve macOS sunucuları "
+"<doc_exporting_for_dedicated_servers>`."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid ""
@@ -2564,6 +2583,9 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Yalnızca dolaylı ışığı pişirmeyi veya hem doğrudan hem de dolaylı "
+"aydınlatmayı pişirmeyi destekler. Pişirme modu, hibrit hafif pişirme "
+"kurulumlarına izin vermek için ışık bazında ayarlanabilir."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid ""
@@ -4610,13 +4632,12 @@ msgstr ""
 "ana özellikleri tamamlanır tamamlanmaz alfa yapıları yayınlanacaktır."
 
 #: ../../docs/about/complying_with_licenses.rst:4
-#, fuzzy
 msgid "Complying with licenses"
-msgstr "İçerik Oluşturma"
+msgstr "Lisanslara Uyma"
 
 #: ../../docs/about/complying_with_licenses.rst:7
 msgid "What are licenses?"
-msgstr ""
+msgstr "Lisanslar nelerdir?"
 
 #: ../../docs/about/complying_with_licenses.rst:9
 msgid ""
@@ -4625,6 +4646,10 @@ msgid ""
 "contributor that submits code to the project does it under this same license "
 "and keeps ownership of the contribution."
 msgstr ""
+"Godot, `MIT Lisansı <https://opensource.org/licenses/MIT>`_ altında "
+"oluşturulur ve dağıtılır. Projeye kod gönderen her katılımcı bunu aynı "
+"lisans altında yaptığından ve katkının mülkiyetini elinde tuttuğundan, tek "
+"sahibi yoktur."
 
 #: ../../docs/about/complying_with_licenses.rst:14
 msgid ""
@@ -4633,6 +4658,10 @@ msgid ""
 "it). Your game or project can have a different license, but it still needs "
 "to comply with the original one."
 msgstr ""
+"Lisans, sizin (veya şirketinizin) yazılımı (ve onunla yapılan oyunlar dahil "
+"türev projeleri) kullanması ve dağıtması için yasal gerekliliktir. Oyununuz "
+"veya projeniz farklı bir lisansa sahip olabilir, ancak yine de orijinaliyle "
+"uyumlu olması gerekir."
 
 #: ../../docs/about/complying_with_licenses.rst:20
 #: ../../docs/tutorials/export/exporting_for_mac.rst:10
@@ -4649,27 +4678,31 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:23
 msgid "Requirements"
-msgstr ""
+msgstr "Gereklilikler"
 
 #: ../../docs/about/complying_with_licenses.rst:22
 msgid ""
 "In the case of the MIT license, the only requirement is to include the "
 "license text somewhere in your game or derivative project."
 msgstr ""
+"MIT lisansı söz konusu olduğunda, tek gereklilik lisans metnini oyununuzda "
+"veya türev projenizde bir yere eklemektir."
 
 #: ../../docs/about/complying_with_licenses.rst:25
 msgid "This text reads as follows:"
-msgstr ""
+msgstr "Bu metin şöyledir:"
 
 #: ../../docs/about/complying_with_licenses.rst:27
 msgid "This game uses Godot Engine, available under the following license:"
-msgstr ""
+msgstr "Bu oyun, aşağıdaki lisans altında bulunan Godot Engine'i kullanır:"
 
 #: ../../docs/about/complying_with_licenses.rst:29
 msgid ""
 "Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur. Copyright (c) "
 "2014-2021 Godot Engine contributors."
 msgstr ""
+"Telif Hakkı (c) 2007-2021 Juan Linietsky, Ariel Manzur. Telif hakkı (c) "
+"2014-2021 Godot Engine'e katkıda bulunanlar."
 
 #: ../../docs/about/complying_with_licenses.rst:32
 #: ../../docs/about/complying_with_licenses.rst:122
@@ -6184,9 +6217,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Sahneler ve düğümler"
+msgstr "Düğüm ve Sahneler"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -25442,7 +25474,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:170
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:172
 msgid ""
@@ -37888,8 +37920,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:192
+#, fuzzy
 msgid "Clipboard"
-msgstr ""
+msgstr "Pano"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:194
 msgid ""
@@ -61237,7 +61270,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "İken"
+msgstr "While"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -97077,18 +97110,24 @@ msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Fizik & Yapay Zeka) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:59
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (Artırılmış Gerçeklik & Sanal Gerçeklik) <https://www.youtube."
+"com/channel/UCrbLJYzJjDf2p-vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:64
 msgid ""
 "`awesome-godot: A curated list of free/libre plugins, scripts and add-ons "
 "<https://github.com/godotengine/awesome-godot>`_"
 msgstr ""
+"`awesome-godot: Ücretsiz pluginler, scriptler ve eklentiler listesi <https://"
+"github.com/godotengine/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:65
 msgid ""

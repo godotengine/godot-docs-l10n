@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alby90 <alberto_formica@hotmail.com>, 2020.
+# Alessandro Casalino <alessandro.casalino93@gmail.com>, 2022.
 # Alessandro Tomarchio <Alessandro.tomarchio01@gmail.com>, 2019.
 # Alessandro Zoppi <alessandro.zoppi@live.it>, 2019.
 # Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
@@ -38,8 +39,10 @@
 # iRadEntertainment <devitadario@gmail.com>, 2020.
 # Jacopo Farina <jacopo1.farina@gmail.com>, 2020.
 # J. Lavoie <j.lavoie@net-c.ca>, 2020.
+# jp.owo.Manda <admin@alterbaum.net>, 2022.
 # Jusef Azzolina <rosarioazzolina33@gmail.com>, 2021.
 # Katia Piazza <gydey@ridiculousglitch.com>, 2019.
+# keisuke matsushita <mtstksk@gmail.com>, 2022.
 # Leonardo Calamita <linkindayd@gmail.com>, 2020.
 # Lorenzo Cerqua <lorenzocerqua@tutanota.com>, 2020-2021.
 # Luana Pau <ezhael@gmail.com>, 2018.
@@ -88,8 +91,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-03-11 15:14+0100\n"
-"PO-Revision-Date: 2022-03-07 21:59+0000\n"
-"Last-Translator: Mirko <miknsop@gmail.com>\n"
+"PO-Revision-Date: 2022-04-03 19:42+0000\n"
+"Last-Translator: Federico Caprini <caprinifede@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -240,7 +243,6 @@ msgstr ""
 "facendocelo sapere!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -252,7 +254,6 @@ msgstr ""
 "<https://github.com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la "
 "documentazione <https://hosted.weblate.org/engage/godot-engine/>`_ nella tua "
 "lingua, o rimani in contatto con noi sia sul canale della ``#documentation`` "
-"su `Discord <https://discord.gg/zH7NUgz>`_, o sul canale ``#documentation`` "
 "su `Chat Contributori Godot <https://chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:61
@@ -260,9 +261,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Formato di traduzione"
+msgstr "Stato della traduzione"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -785,9 +785,10 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Ci sono inoltre lavori fatti da terzi che permettono a Godot di funzionare "
-"su alcune console. Nulla di tutto questo però è incluso di default negli "
-"script di compilazione o nei template per l'export."
+"Inoltre, c'è un po' di lavoro non ufficiale di terze parti che viene fatto "
+"sulla compilazione per alcune console. Tuttavia, niente di tutto ciò è "
+"incluso negli script di compilazione o nei modelli di esportazione di "
+"default in questo momento."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
@@ -1629,7 +1630,6 @@ msgid "What user interface toolkit does Godot use?"
 msgstr "Quale toolkit di interfaccia utente usa Godot?"
 
 #: ../../docs/about/faq.rst:395
-#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1639,15 +1639,13 @@ msgid ""
 "language supported by Godot."
 msgstr ""
 "Godot non usa un toolkit standard :abbr:`GUI (Graphical User Interface)` "
-"come GTK, Qt o wxWidgets. Invece, Godot usa il proprio toolkit di "
-"interfaccia utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è "
-"esposto sotto forma di nodi Control, che sono usati per visualizzare "
-"l'editor (che è scritto in C++). Questi nodi Control possono anche essere "
-"utilizzati in progetti da qualsiasi linguaggio di scripting supportato da "
-"Godot."
+"come GTK, Qt o wxWidgets. Invece, usa il proprio toolkit di interfaccia "
+"utente, renderizzato usando OpenGL ES o Vulkan. Questo toolkit è esposto "
+"sotto forma di nodi Control, che sono usati per visualizzare l'editor (che è "
+"scritto in C++). Questi nodi Control possono anche essere utilizzati nei "
+"progetti da qualsiasi linguaggio di scripting supportato da Godot."
 
 #: ../../docs/about/faq.rst:402
-#, fuzzy
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
 "and have a consistent appearance across all platforms. On top of that, it "
@@ -2303,7 +2301,6 @@ msgid "**Plugins:**"
 msgstr "**Plugins:**"
 
 #: ../../docs/about/list_of_features.rst:72
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
@@ -2320,7 +2317,6 @@ msgstr ""
 "velocizzare il tuo flusso di lavoro."
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
@@ -2561,7 +2557,6 @@ msgstr ""
 "ORM."
 
 #: ../../docs/about/list_of_features.rst:169
-#, fuzzy
 msgid "Normal mapping."
 msgstr "Normal mapping."
 
@@ -3217,7 +3212,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:112
 msgid "Input"
-msgstr "Ingresso"
+msgstr "Input"
 
 #: ../../docs/about/list_of_features.rst:402
 msgid ""
@@ -4169,7 +4164,7 @@ msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid "GUI"
-msgstr "GUI"
+msgstr "Interfaccia Grafica"
 
 #: ../../docs/about/docs_changelog.rst:161
 msgid ":ref:`doc_gui_containers`"
@@ -4369,9 +4364,9 @@ msgid ""
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
-"Perciò aggiornare a una nuova versione minor è consigliato a tutti gli "
-"utenti, ma sarà necessario del collaudo per assicurarsi che il progetto si "
-"comporti come previsto con ogni nuova versione minor."
+"L'aggiornamento a una nuova versione minore è quindi raccomandato a tutti "
+"gli utenti, ma è necessario fare alcuni test per assicurarti che il tuo "
+"progetto si comporti ancora come previsto in una nuova versione minore."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -4446,7 +4441,6 @@ msgstr ""
 "hanno bisogno di aggiornamenti di manutenzione."
 
 #: ../../docs/about/release_policy.rst:77
-#, fuzzy
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
 "a long-term supported release, and do our best to provide fixes for issues "
@@ -4454,12 +4448,12 @@ msgid ""
 "new major version. This was the case for the 2.1 branch, and will be the "
 "case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
-"Ogni volta che viene rilasciata una nuova versione maggiore, rendiamo il "
-"ramo stabile precedente una versione a supporto a lungo termine, e ci "
-"impegniamo al massimo per correggere problemi riscontrati da utenti di quel "
-"ramo che non possono convertire progetti complessi alla nuova versione "
-"maggiore. Questo è il caso del ramo 2.1, e sarà il caso per l'ultimo ramo "
-"stabile 3.x una volta che sarà rilasciato Godot 4.0."
+"Ogni volta che viene rilasciata una nuova versione maggiore, rendiamo quella "
+"precedente una versione con supporto a lungo termine, e ci impegniamo al "
+"massimo per correggere i problemi riscontrati da utenti che non possono "
+"convertire progetti complessi alla nuova versione maggiore. Questo è il caso "
+"della versione 2.1, e sarà il caso per l'ultima versione stabile 3.x una "
+"volta che sarà rilasciato Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:83
 #, fuzzy
@@ -4501,16 +4495,15 @@ msgstr "| unstable | *Focus attuale dello sviluppo (instabile).*"
 #: ../../docs/about/release_policy.rst:120
 #, fuzzy
 msgid "unstable"
-msgstr "Abilita"
+msgstr "instabile"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Godot 3.5"
 msgstr "Godot 3.5"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Q2 2022"
-msgstr "Q1 2022"
+msgstr "Q2 2022"
 
 #: ../../docs/about/release_policy.rst:93
 msgid ""
@@ -4523,7 +4516,7 @@ msgstr ""
 #: ../../docs/about/release_policy.rst:117
 #, fuzzy
 msgid "supported"
-msgstr "File supportati"
+msgstr "supportato"
 
 #: ../../docs/about/release_policy.rst:96
 msgid "Godot 3.4"
@@ -4558,7 +4551,7 @@ msgstr ""
 #: ../../docs/about/release_policy.rst:118
 #, fuzzy
 msgid "partial"
-msgstr "Spatial"
+msgstr "parziale"
 
 #: ../../docs/about/release_policy.rst:101
 msgid "Godot 3.2"
@@ -4579,7 +4572,7 @@ msgstr ""
 #: ../../docs/about/release_policy.rst:119
 #, fuzzy
 msgid "eol"
-msgstr "el"
+msgstr "eol"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "Godot 3.1"
@@ -4694,12 +4687,12 @@ msgid ""
 "very short development cycles, to provide users of the current stable branch "
 "with the latest bug fixes for their production needs."
 msgstr ""
-"Rilasci di manutenzione (patch) saranno rilasciati quando ce n'è bisogno, "
-"con cicli di sviluppo potenzialmente molto corti, per dare agli utenti "
-"dell'attuale ramo stabile le ultime correzioni implementate."
+"I rilasci di manutenzione (patch) saranno rilasciati quando necessario con "
+"cicli di sviluppo potenzialmente molto brevi, per fornire agli utenti della "
+"versione stabile corrente le ultime correzioni di bug per le loro esigenze "
+"di produzione."
 
 #: ../../docs/about/release_policy.rst:147
-#, fuzzy
 msgid ""
 "As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
 "release, but any closer estimate is likely to be hard to uphold. Alpha "
@@ -4720,7 +4713,6 @@ msgid "What are licenses?"
 msgstr "Cosa sono le licenze?"
 
 #: ../../docs/about/complying_with_licenses.rst:9
-#, fuzzy
 msgid ""
 "Godot is created and distributed under the `MIT License <https://opensource."
 "org/licenses/MIT>`_. It doesn't have a sole owner either, as every "
@@ -4733,7 +4725,6 @@ msgstr ""
 "e mantiene la proprietà del contributo."
 
 #: ../../docs/about/complying_with_licenses.rst:14
-#, fuzzy
 msgid ""
 "The license is the legal requirement for you (or your company) to use and "
 "distribute the software (and derivative projects, including games made with "
@@ -4763,7 +4754,6 @@ msgid "Requirements"
 msgstr "Requisiti"
 
 #: ../../docs/about/complying_with_licenses.rst:22
-#, fuzzy
 msgid ""
 "In the case of the MIT license, the only requirement is to include the "
 "license text somewhere in your game or derivative project."
@@ -4809,7 +4799,6 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:34
 #: ../../docs/about/complying_with_licenses.rst:124
-#, fuzzy
 msgid ""
 "The above copyright notice and this permission notice shall be included in "
 "all copies or substantial portions of the Software."
@@ -4837,15 +4826,14 @@ msgstr ""
 "CONNESSIONE CON IL SOFTWARE O L'USO O ALTRI RAPPORTI NEL SOFTWARE."
 
 #: ../../docs/about/complying_with_licenses.rst:40
-#, fuzzy
 msgid ""
 "Your games do not need to be under the same license. You are free to release "
 "your Godot projects under any license and to create commercial games with "
 "the engine."
 msgstr ""
-"Non è necessario che i vostri giochi siano sotto la stessa licenza. Sei "
-"libero di rilasciare i tuoi progetti Godot sotto qualsiasi licenza e di "
-"creare giochi commerciali con il motore."
+"Non è necessario che i tuoi giochi siano sotto la stessa licenza. Sei libero "
+"di rilasciare i tuoi progetti Godot sotto qualsiasi licenza e di creare "
+"giochi commerciali con il motore."
 
 #: ../../docs/about/complying_with_licenses.rst:45
 msgid "Inclusion"
@@ -4883,7 +4871,6 @@ msgid "Licenses screen"
 msgstr "Schermata delle licenze"
 
 #: ../../docs/about/complying_with_licenses.rst:61
-#, fuzzy
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
@@ -4913,7 +4900,6 @@ msgid "Accompanying file"
 msgstr "File di accompagnamento"
 
 #: ../../docs/about/complying_with_licenses.rst:73
-#, fuzzy
 msgid ""
 "If the game is distributed on desktop platforms, a file containing the "
 "license can be added to the software that is installed to the user PC."
@@ -4927,7 +4913,6 @@ msgid "Printed manual"
 msgstr "Manuale stampato"
 
 #: ../../docs/about/complying_with_licenses.rst:79
-#, fuzzy
 msgid ""
 "If the game includes printed manuals, license text can be included there."
 msgstr ""
@@ -4972,7 +4957,6 @@ msgstr ""
 "librerie elencate di seguito."
 
 #: ../../docs/about/complying_with_licenses.rst:98
-#, fuzzy
 msgid "Here's a list of libraries requiring attribution:"
 msgstr "Ecco un elenco di librerie che richiedono l'attribuzione:"
 
@@ -4981,7 +4965,6 @@ msgid "FreeType"
 msgstr "FreeType"
 
 #: ../../docs/about/complying_with_licenses.rst:103
-#, fuzzy
 msgid ""
 "Godot uses `FreeType <https://www.freetype.org/>`_ to render fonts. Its "
 "license requires attribution, so the following text must be included "
@@ -4992,7 +4975,6 @@ msgstr ""
 "seguente testo deve essere incluso insieme alla licenza Godot:"
 
 #: ../../docs/about/complying_with_licenses.rst:107
-#, fuzzy
 msgid ""
 "Portions of this software are copyright © <year> The FreeType Project (www."
 "freetype.org).  All rights reserved."
@@ -5017,7 +4999,6 @@ msgid "ENet"
 msgstr "ENet"
 
 #: ../../docs/about/complying_with_licenses.rst:116
-#, fuzzy
 msgid ""
 "Godot includes the `ENet <http://enet.bespin.org/>`_ library to handle high-"
 "level multiplayer. ENet has similar licensing terms as Godot:"
@@ -5112,7 +5093,6 @@ msgstr ""
 "consigli per sfruttare al meglio il tuo tempo di apprendimento."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:4
-#, fuzzy
 msgid "Introduction to Godot"
 msgstr "Introduzione a Godot"
 
@@ -5138,7 +5118,6 @@ msgstr ""
 "funzionalità in questa serie introduttiva."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
-#, fuzzy
 msgid "What is Godot?"
 msgstr "Cos'è Godot?"
 
@@ -5177,7 +5156,6 @@ msgstr ""
 "ref:`doc_consoles`."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:30
-#, fuzzy
 msgid "What can the engine do?"
 msgstr "Cosa può fare il motore?"
 
@@ -5226,7 +5204,6 @@ msgid "`April 2020 mobile showcase`_"
 msgstr "`Aprile 2020 mobile showcase`_"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:53
-#, fuzzy
 msgid "How does it work and look?"
 msgstr "Come funziona e come appare?"
 
@@ -5268,7 +5245,6 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:73
 #: ../../docs/tutorials/scripting/index.rst:12
-#, fuzzy
 msgid "Programming languages"
 msgstr "Linguaggi di programmazione"
 
@@ -5336,7 +5312,6 @@ msgstr ""
 "<doc_what_is_gdnative_third_party_bindings>`."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:99
-#, fuzzy
 msgid "What do I need to know to use Godot?"
 msgstr "Cosa devo sapere per usare Godot?"
 
@@ -6138,6 +6113,14 @@ msgid ""
 "question, be sure to look for existing answers that might solve your problem "
 "on this website or using your preferred search engine."
 msgstr ""
+"Il miglior posto per fare domande e trovarne di già risposte è il sito "
+"ufficiale `Domande e Risposte <https://godotengine.org/qa/>`_. Queste "
+"risposte appaiono nei risultati del motore di ricerca e vengono salvate, "
+"permettendo altri utenti di beneficiare dalle discussioni sulla piattaforma. "
+"Appena hai fatto una domanda lì, puoi usare il suo link in altre piattaforme "
+"social. Prima di fare una domanda, assicurati di controllare risposte già "
+"esistenti che potrebbero risolvere il tuo problema su questo sito o "
+"utilizzando il tuo motore di ricerca preferito."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:95
 msgid ""
@@ -6145,6 +6128,9 @@ msgid ""
 "faster and better. When asking questions, we recommend including the "
 "following information:"
 msgstr ""
+"Formulare bene le tue domande e provvedendone i dettagli aiuterà gli altri a "
+"darti risposte migliori e più veloci. Raccomandiamo di includere le seguenti "
+"informazioni quando si fa una domanda:"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:99
 msgid ""
@@ -6153,16 +6139,27 @@ msgid ""
 "work, there may be a different, easier solution that accomplishes the same "
 "goal."
 msgstr ""
+"**Descrivi il tuo obbiettivo**. Dovresti spiegare cosa stai cercando di "
+"ottenere tenendo in conto il design. Se stai avendo problemi nel far "
+"funzionare una soluzione, potrebbero esserci diverse, più semplici soluzioni "
+"che raggiungono lo stesso obbiettivo."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:104
+#, fuzzy
 msgid ""
 "If there is an error involved, **share the exact error message**. You can "
 "copy the exact error message in the editor's Debugger bottom panel by "
 "clicking the Copy Error icon. Knowing what it says can help community "
 "members better identify how you triggered the error."
 msgstr ""
+"Se un errore è involto, **condividi l'esatto messaggio d'errore**. Puoi "
+"copiare l'esatto messaggio d'errore dalla parte bassa del pannello del "
+"Debugger premendo l'icona della funzione Copia Errore. Sapere quello che "
+"dice può aiutare i membri della comunità ad identificare il come hai "
+"generato quell'errore."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:109
+#, fuzzy
 msgid ""
 "If there is code involved, **share a code sample**. Other users won't be "
 "able to help you fix a problem without seeing your code. Share the code as "
@@ -6170,27 +6167,44 @@ msgid ""
 "chat box, or use a website like `Pastebin <https://pastebin.com/>`_ to share "
 "long files."
 msgstr ""
+"Se c'è del codice involto, **condividi un esempio del codice**. Gli altri "
+"utenti non saranno capaci di aiutarti senza vedere il tuo codice. Condividi "
+"il codice direttamente come testo. Per farlo, puoi copiare ed incollare una "
+"piccola sezione di codice in una chat box, oppure usare un sito come "
+"`Pastebin <https://pastebin.com/>`_ per condividere lunghi file."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:115
+#, fuzzy
 msgid ""
 "**Share a screenshot** of your *Scene* dock along with your written code. "
 "Most of the code you write affects nodes in your scenes. As a result, you "
 "should think of those scenes as part of your source code."
 msgstr ""
+"**Condividi una cattura dello schermo** della tua *Scena* insieme al tuo "
+"codice. La maggior parte del codice che hai scritto influisce sui nodi della "
+"tua scena. Come risultato, dovresti pensare a tali scene come parte del tuo "
+"codice sorgente."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:121
+#, fuzzy
 msgid ""
 "Also, please don't take a picture with your phone, the low quality and "
 "screen reflections can make it hard to understand the image. Your operating "
 "system should have a built-in tool to take screenshots with the :kbd:`PrtSc` "
 "(Print Screen) key."
 msgstr ""
+"Inoltre, per favore non fare foto col tuo telefono, la bassa qualità e i "
+"riflessi dello schermo rendono difficile comprendere l'immagine. Il tuo "
+"sistema operativo dovrebbe avere uno strumento integrato per catturare lo "
+"schermo con il pulsante :kdb:`PrtSc` (Stampa Schermo)."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:126
 msgid ""
 "Alternatively, you can use a program like `ShareX <https://getsharex.com/>`_ "
 "on Windows or `FlameShot <https://flameshot.org/>`_ on Linux."
 msgstr ""
+"Alternativamente, puoi usare un programma come `ShareX <https://getsharex."
+"com/>`_ su Windows oppure `FlameShot <https://flameshot.org/>`_ su Linux."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:129
 msgid ""
@@ -6199,12 +6213,18 @@ msgid ""
 "obsproject.com/>`_ and `Screen to GIF <https://www.screentogif.com/>`_ to "
 "capture your screen."
 msgstr ""
+"Condividere un video dell'esecuzione del tuo gioco può davvero essere "
+"**utile per risolvere i problemi del tuo gioco**. Puoi usare programmi come "
+"`OBS Studio <https://obsproject.com/>`_ e `Screen to GIF <https://www."
+"screentogif.com/>`_ per registrare il tuo schermo."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:134
 msgid ""
 "You can then use a service like `streamable <https://streamable.com/>`_ or a "
 "cloud provider to upload and share your videos for free."
 msgstr ""
+"Puoi usare servizi come `streamable <https://streamable.com/>`_ o un cloud "
+"provider per condividere gratuitamente i tuoi video."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:137
 msgid ""
@@ -6212,6 +6232,9 @@ msgid ""
 "you're using. The answer can be different as available features and the "
 "interface evolve rapidly."
 msgstr ""
+"Se non stai usando la versione stabile di Godot, per favore menziona la "
+"versione che stai usando. La risposta può essere differente in base alle "
+"caratteristiche a disposizione e l'evoluzione continua dell'interfaccia."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:141
 msgid ""
@@ -6219,6 +6242,9 @@ msgid ""
 "you're looking for. They will save time both to you and the persons helping "
 "you."
 msgstr ""
+"Seguire queste linee guida massimizzerà le probabilità di ricevere la "
+"risposta che stai cercando. Risparmieranno tempo sia a the che alle persone "
+"che ti stanno aiutando."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:145
 #, fuzzy
@@ -6226,6 +6252,7 @@ msgid "Community tutorials"
 msgstr "Tutorial della comunità"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:147
+#, fuzzy
 msgid ""
 "This manual aims to provide a comprehensive reference of Godot's features. "
 "Aside from the 2D and 3D getting started series, it does not contain "
@@ -6234,6 +6261,12 @@ msgid ""
 "see :ref:`doc_community_tutorials`, which lists content made by the Godot "
 "community."
 msgstr ""
+"Questo manuale punta a provvedere una comprensiva risorsa per le "
+"caratteristiche di Godot. Oltre alla serie per iniziare con 2D e 3D, non "
+"contiene alcun tutorial per implementare specifici generi di giovo. Se stai "
+"cercando un tutorial per creare un role-playing game, un platformer, o "
+"altri, per favore dai uno sguardo a :ref:`doc_community_tutorials`, la quale "
+"raggruppa dei contenuti creati dalla Community di Godot."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:4
 msgid "Godot's design philosophy"
@@ -6788,6 +6821,9 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"L'editor è completamente scritto in C++ ed è compilato statisticamente "
+"nell'eseguibile. Questo significa che non puoi importarlo come un progetto "
+"tipico avente un file ``project.godot``."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:176
 msgid "Separate 2D and 3D engines"
@@ -6824,7 +6860,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
 msgid "Nodes and Scenes"
-msgstr "Nodi e scene"
+msgstr "Nodi e Scene"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -14187,7 +14223,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
-#, fuzzy
 msgid "``Quadrant``"
 msgstr "``Quadrant``"
 
@@ -14445,9 +14480,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:219
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
 #: ../../docs/tutorials/2d/using_tilemaps.rst:265
-#, fuzzy
 msgid "Key:"
-msgstr "Chiave:"
+msgstr "Legenda:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
@@ -14822,7 +14856,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
-#, fuzzy
 msgid "Explosiveness"
 msgstr "Esplosività"
 
@@ -14957,7 +14990,6 @@ msgid "ParticlesMaterial settings"
 msgstr "Impostazioni di ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
 msgstr "Direzione"
 
@@ -14976,7 +15008,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
-#, fuzzy
 msgid "Spread"
 msgstr "Propagazione"
 
@@ -14989,7 +15020,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
-#, fuzzy
 msgid "Flatness"
 msgstr "Piattezza"
 
@@ -15078,7 +15108,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
-#, fuzzy
 msgid "Damping"
 msgstr "Smorzamento"
 
@@ -16655,7 +16684,6 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
-#, fuzzy
 msgid "Environment"
 msgstr "Ambiente"
 
@@ -16964,7 +16992,6 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 #: ../../docs/tutorials/math/interpolation.rst:4
-#, fuzzy
 msgid "Interpolation"
 msgstr "Interpolazione"
 
@@ -17756,7 +17783,6 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:306
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
-#, fuzzy
 msgid "Parameters"
 msgstr "Parametri"
 
@@ -18232,9 +18258,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
-#, fuzzy
 msgid "Subsurface Scattering"
-msgstr "Diffusione subsuperficiale"
+msgstr "Subsurface Scattering"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -19191,7 +19216,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
-#, fuzzy
 msgid "Reflections"
 msgstr "Riflessi"
 
@@ -19548,7 +19572,6 @@ msgid "The modes are:"
 msgstr "Le modalità sono:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
-#, fuzzy
 msgid "Disabled"
 msgstr "Disabilitato"
 
@@ -19566,7 +19589,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:185
-#, fuzzy
 msgid "Indirect"
 msgstr "Indiretto"
 
@@ -21012,7 +21034,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
-#, fuzzy
 msgid "Amount"
 msgstr "Quantità"
 
@@ -21911,7 +21932,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:209
-#, fuzzy
 msgid "Saving"
 msgstr "Salvare"
 
@@ -22644,7 +22664,6 @@ msgstr ""
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:92
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:43
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:119
-#, fuzzy
 msgid "Portals"
 msgstr "Portali"
 
@@ -22850,7 +22869,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:44
-#, fuzzy
 msgid "Autoplace"
 msgstr "Autoplace"
 
@@ -23001,7 +23019,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/using_objects_in_rooms_and_portals.rst:91
-#, fuzzy
 msgid "Lighting"
 msgstr "Illuminazione"
 
@@ -23145,7 +23162,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:53
-#, fuzzy
 msgid "RoomGroups"
 msgstr "RoomGroups"
 
@@ -23615,7 +23631,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:96
-#, fuzzy
 msgid "RoomManager"
 msgstr "RoomManager"
 
@@ -23675,9 +23690,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:122
-#, fuzzy
 msgid "Portal Active"
-msgstr "Portale attivo"
+msgstr "Portale Attivo"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:124
 msgid ""
@@ -23714,7 +23728,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:137
-#, fuzzy
 msgid "Multimeshes"
 msgstr "Multimeshes"
 
@@ -25737,9 +25750,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:130
-#, fuzzy
 msgid "Transition"
-msgstr "Transition"
+msgstr "Transizione"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:132
 msgid ""
@@ -26294,7 +26306,6 @@ msgid "Import options are vast:"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:51
-#, fuzzy
 msgid "Detect 3D"
 msgstr "Rileva 3D"
 
@@ -26308,7 +26319,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
-#, fuzzy
 msgid "Compression"
 msgstr "Compressione"
 
@@ -26362,8 +26372,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:101
+#, fuzzy
 msgid "good"
-msgstr ""
+msgstr "good"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:99
 #, fuzzy
@@ -26554,7 +26565,6 @@ msgid "|bad| Slow"
 msgstr "|male| Lento"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:106
-#, fuzzy
 msgid "HDR Mode"
 msgstr "Modalità HDR"
 
@@ -26699,7 +26709,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:186
 msgid "Process"
-msgstr "Processo"
+msgstr "Processa"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:188
 msgid ""
@@ -26708,7 +26718,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:191
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Aggiusta Bordo Alfa"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 msgid ""
@@ -26748,9 +26758,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:212
-#, fuzzy
 msgid "Invert Color"
-msgstr "Inverti colore"
+msgstr "Inverti Colore"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:214
 msgid ""
@@ -27455,9 +27464,8 @@ msgid "The importer has several options, which will be discussed below:"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:146
-#, fuzzy
 msgid "Root Type"
-msgstr "Tipo radice"
+msgstr "Tipo di Root"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:148
 msgid ""
@@ -27466,27 +27474,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:151
-#, fuzzy
 msgid "Root Name"
-msgstr "Nome della radice"
+msgstr "Nome Root"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:153
 msgid "Allows setting a specific name to the generated root node."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:156
-#, fuzzy
 msgid "Root Scale"
-msgstr "Scala della radice"
+msgstr "Scala Root"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:158
 msgid "The scale of the root node."
 msgstr "La scala del nodo radice."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:161
-#, fuzzy
 msgid "Custom Script"
-msgstr "Script personalizzato"
+msgstr "Script Personalizzato"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:163
 msgid ""
@@ -27512,7 +27517,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:268
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:366
 msgid "Storage"
-msgstr "Archiviazione"
+msgstr "Memorizzazione"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:186
 msgid ""
@@ -27569,7 +27574,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:223
 msgid "Keep On Reimport"
-msgstr ""
+msgstr "Mantieni Alla Reimportazione"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:225
 msgid ""
@@ -27580,7 +27585,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:230
 msgid "Meshes"
-msgstr "Meshes"
+msgstr "Mesh"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:233
 msgid "Compress"
@@ -27682,9 +27687,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:260
-#, fuzzy
 msgid "Ensure Tangents"
-msgstr "Garantire le tangenti"
+msgstr "Garantisci Tangenti"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:262
 msgid ""
@@ -27709,7 +27713,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:277
 msgid "Light Baking"
-msgstr ""
+msgstr "Baking Luce"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:279
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -27736,9 +27740,8 @@ msgstr ""
 "Per maggiori informazioni sul light baking vedi :ref:`doc_baked_lightmaps`."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:288
-#, fuzzy
 msgid "External Files"
-msgstr "File esterni"
+msgstr "File Esterni"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:290
 msgid ""
@@ -27783,9 +27786,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:319
-#, fuzzy
 msgid "Filter Script"
-msgstr "Filtro Script"
+msgstr "Filtra Script"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:321
 msgid ""
@@ -27875,7 +27877,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:378
 msgid "Clips"
-msgstr "Clips"
+msgstr "Clip"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:380
 msgid ""
@@ -32160,7 +32162,6 @@ msgstr "**Opzioni generali**"
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:133
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
-#, fuzzy
 msgid "Command"
 msgstr "Comando"
 
@@ -32640,8 +32641,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:179
+#, fuzzy
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Oppure usando l'argomento ``--path``:"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:185
 msgid ""
@@ -32650,8 +32652,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:192
+#, fuzzy
 msgid "Creating a project"
-msgstr ""
+msgstr "Creare un progetto"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:195
 msgid ""
@@ -32664,8 +32667,9 @@ msgid "The project can now be opened with Godot."
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:210
+#, fuzzy
 msgid "Running the editor"
-msgstr ""
+msgstr "Eseguire l'editor"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:212
 msgid ""
@@ -32681,8 +32685,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:228
+#, fuzzy
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Cancellare una scena"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:230
 msgid ""
@@ -32692,8 +32697,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:239
+#, fuzzy
 msgid "Running the game"
-msgstr ""
+msgstr "Esecuzione del gioco"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:241
 msgid ""
@@ -32764,8 +32770,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:302
+#, fuzzy
 msgid "Running a script"
-msgstr ""
+msgstr "Eseguire uno script"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:304
 msgid ""
@@ -32775,16 +32782,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:308
+#, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
-msgstr ""
+msgstr "Lo script deve ereditare da ``SceneTree`` o ``MainLoop``."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:310
+#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr ""
+msgstr "Ecco un semplice esempio di ``sayhello.gd`` di come funziona:"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:321
+#, fuzzy
 msgid "And how to run it:"
-msgstr ""
+msgstr "E come eseguirlo:"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:328
 msgid ""
@@ -32808,12 +32818,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:4
+#, fuzzy
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Usare un editor di testo esterno"
 
 #: ../../docs/tutorials/editor/external_editor.rst:6
+#, fuzzy
 msgid "This page explains how to code using an external text editor."
 msgstr ""
+"In questa pagina viene illustrato come eseguire il codice utilizzando un "
+"editor di testo esterno."
 
 #: ../../docs/tutorials/editor/external_editor.rst:8
 msgid ""
@@ -32835,49 +32849,53 @@ msgid "Field in Exec Flags"
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:20
+#, fuzzy
 msgid "Is replaced with"
-msgstr ""
+msgstr "Viene sostituito con"
 
 #: ../../docs/tutorials/editor/external_editor.rst:22
 msgid "``{project}``"
 msgstr "``{project}``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:22
+#, fuzzy
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Il percorso assoluto alla cartella del progetto"
 
 #: ../../docs/tutorials/editor/external_editor.rst:24
 msgid "``{file}``"
 msgstr "``{file}``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:24
+#, fuzzy
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Il percorso assoluto al file"
 
 #: ../../docs/tutorials/editor/external_editor.rst:26
 msgid "``{col}``"
 msgstr "``{col}``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:26
+#, fuzzy
 msgid "The column number of the error"
-msgstr ""
+msgstr "Il numero di colonna dell'errore"
 
 #: ../../docs/tutorials/editor/external_editor.rst:28
 msgid "``{line}``"
 msgstr "``{line}``"
 
 #: ../../docs/tutorials/editor/external_editor.rst:28
+#, fuzzy
 msgid "The line number of the error"
-msgstr ""
+msgstr "Il numero di riga dell'errore"
 
 #: ../../docs/tutorials/editor/external_editor.rst:31
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:34
-#, fuzzy
 msgid "Exec Flags"
-msgstr "Bandiere di esecuzione"
+msgstr "Esegui Flag"
 
 #: ../../docs/tutorials/editor/external_editor.rst:36
 msgid "Geany/Kate"
@@ -32945,8 +32963,9 @@ msgid "Official editor plugins"
 msgstr "Plugin ufficiali per l'editor"
 
 #: ../../docs/tutorials/editor/external_editor.rst:56
+#, fuzzy
 msgid "We have official plugins for the following code editors:"
-msgstr ""
+msgstr "Abbiamo plugin ufficiali per i seguenti editor di codice:"
 
 #: ../../docs/tutorials/editor/external_editor.rst:58
 msgid ""
@@ -32963,8 +32982,9 @@ msgid "cheatsheet, cheat sheet, shortcut"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:7
+#, fuzzy
 msgid "Default editor shortcuts"
-msgstr ""
+msgstr "Scorciatoie predefinite dell'editor"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:8
 msgid ""
@@ -34243,7 +34263,7 @@ msgstr "``spatial_editor/4_viewports``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:217
 msgid "Text Editor"
-msgstr "Editor di testo"
+msgstr "Editor di Testo"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
@@ -35179,7 +35199,7 @@ msgstr "``debugger/continue``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:394
 msgid "File Dialog"
-msgstr "Finestra di dialogo File"
+msgstr "Finestra di Dialogo del File"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
@@ -37497,7 +37517,6 @@ msgstr "Plugin Android"
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:49
 #: ../../docs/tutorials/export/exporting_for_mac.rst:72
-#, fuzzy
 msgid "Option"
 msgstr "Opzione"
 
@@ -37512,7 +37531,6 @@ msgid "Enables code signing."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:53
-#, fuzzy
 msgid "Identity"
 msgstr "Identità"
 
@@ -37595,7 +37613,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:80
-#, fuzzy
 msgid "Apple Team ID"
 msgstr "ID Apple Team"
 
@@ -37690,7 +37707,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:107
-#, fuzzy
 msgid "Camera"
 msgstr "Telecamera"
 
@@ -37796,7 +37812,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_mac.rst:140
-#, fuzzy
 msgid "Enabled"
 msgstr "Abilitato"
 
@@ -39412,7 +39427,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:192
-#, fuzzy
 msgid "Clipboard"
 msgstr "Appunti"
 
@@ -45429,7 +45443,6 @@ msgstr "Offset"
 #: ../../docs/tutorials/io/binary_serialization_api.rst:471
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
-#, fuzzy
 msgid "Len"
 msgstr "Len"
 
@@ -49402,9 +49415,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "Commenti"
+msgstr "Comune"
 
 #: ../../docs/tutorials/performance/index.rst:51
 msgid "CPU"
@@ -52824,9 +52836,8 @@ msgstr ""
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:53
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
-#, fuzzy
 msgid "Rendering"
-msgstr "Rendering"
+msgstr "Renderer"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -54417,9 +54428,8 @@ msgid "The exceptions array can contain objects or RIDs."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
-#, fuzzy
 msgid "Collision Mask"
-msgstr "Maschera di collisione"
+msgstr "Maschera di Collisione"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -60612,7 +60622,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:138
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:643
 msgid "Function"
-msgstr "Funzione"
+msgstr "Funzioni"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:140
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
@@ -65979,7 +65989,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
-#, fuzzy
 msgid "Action"
 msgstr "Azione"
 
@@ -66067,9 +66076,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:299
-#, fuzzy
 msgid "Preload"
-msgstr "Preload"
+msgstr "Pre-carica"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -81686,8 +81694,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/passthrough.rst:4
+#, fuzzy
 msgid "Passthrough"
-msgstr ""
+msgstr "Passthrough"
 
 #: ../../docs/tutorials/vr/openxr/passthrough.rst:8
 msgid "Only available in versions **1.1.1 and later** of the OpenXR plugin."
@@ -82050,12 +82059,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:94
+#, fuzzy
 msgid "Palm"
-msgstr ""
+msgstr "Palmo"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:95
+#, fuzzy
 msgid "Wrist"
-msgstr ""
+msgstr "Polso"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:96
 msgid "Thumb_Metacarpal"
@@ -98249,7 +98260,7 @@ msgstr "Effetto"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Result"
-msgstr "Risultato"
+msgstr "Risultati"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
 msgid "[Class]"
@@ -100090,10 +100101,14 @@ msgstr ""
 "channels=#godotengine>`_"
 
 #: ../../docs/community/channels.rst:31
+#, fuzzy
 msgid ""
 "IRC is less active than Discord. Please stick around to get an answer, as it "
 "may take several hours for someone to see and answer your questions."
 msgstr ""
+"IRC è meno attivo di Discord. Per favore rimani attivo per ricevere una "
+"risposta, in quanto potrebbero volerci alcune ore per far sì che qualcuno "
+"veda le tue domande e le tue risposte."
 
 #: ../../docs/community/channels.rst:35
 msgid "Other chats"
