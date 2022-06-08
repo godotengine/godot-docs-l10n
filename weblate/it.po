@@ -91,8 +91,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-04-29 17:56+0200\n"
-"PO-Revision-Date: 2022-04-03 19:42+0000\n"
-"Last-Translator: Federico Caprini <caprinifede@gmail.com>\n"
+"PO-Revision-Date: 2022-06-02 17:53+0000\n"
+"Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -100,7 +100,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -2131,7 +2131,6 @@ msgstr ""
 "supportate da Godot."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -2139,7 +2138,7 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Questa pagina elenca le funzionalità supportate dall'attuale versione "
-"stabile di Godot (3.3). `Altre funzionalità <https://docs.godotengine.org/en/"
+"stabile di Godot (3.4). `Altre funzionalità <https://docs.godotengine.org/en/"
 "latest/about/list_of_features.html>` __ sono disponibili nell'ultima "
 "versione in sviluppo (4.0)."
 
@@ -2233,9 +2232,8 @@ msgid "Scene tree editor."
 msgstr "Editor dell'albero delle scene."
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Editor di temi integrato."
+msgstr "Editor di script integrato."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2312,12 +2310,11 @@ msgstr ""
 "Contenuti <doc_what_is_assetlib>` per estenderne le funzionalità."
 
 #: ../../docs/about/list_of_features.rst:74
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
-"Crea i tuoi plugin usando GDScript per aggiungere nuove funzionalità o "
-"velocizzare il tuo flusso di lavoro."
+":ref:`Crea i tuoi plugin <doc_making_plugins>` usando GDScript per "
+"aggiungerne di nuovi"
 
 #: ../../docs/about/list_of_features.rst:75
 #, fuzzy
@@ -2326,7 +2323,7 @@ msgid ""
 "them directly. features or speed up your workflow."
 msgstr ""
 "Scarica i progetti dalla libreria dei Contenuti nel project manager e "
-"importali direttamente."
+"importali direttamente. funzionalità o velocizza il tuo flusso di lavoro."
 
 #: ../../docs/about/list_of_features.rst:77
 #, fuzzy
@@ -2334,8 +2331,8 @@ msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"Scarica i progetti dalla libreria dei Contenuti nel project manager e "
-"importali direttamente."
+":ref:`Scarica i progetti dalla libreria dei Contenuti "
+"<doc_using_assetlib_editor>` nel project manager e importali direttamente."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "2D graphics"
@@ -2387,7 +2384,7 @@ msgstr "Livelli di parallasse."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Supporto pseudo-3D, compresa l'anteprima nell'editor."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid "2D lighting with normal maps."
@@ -2531,13 +2528,18 @@ msgstr "Grafica 3D"
 #: ../../docs/about/list_of_features.rst:155
 #, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "Rendering HDR con sRGB."
+msgstr ""
+"Rendering HDR opzionale con sRGB (abilitato per impostazione predefinita)."
 
 #: ../../docs/about/list_of_features.rst:156
+#, fuzzy
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
 "overdraw, which speeds up complex scene rendering."
 msgstr ""
+"Utilizza un prepass di profondità opzionale (abilitato per impostazione "
+"predefinita) per ridurre il costo dell'overdraw, velocizzando il rendering "
+"di scene complesse."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid "LDR rendering for greater compatibility."
@@ -2563,22 +2565,29 @@ msgstr "Telecamere prospettiche, ortografiche e troncoconiche."
 #: ../../docs/about/list_of_features.rst:170
 #, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "**Rendering basato sulla fisica:**"
+msgstr ""
+"**Rendering basato sulla fisica (funzionalità dei materiali integrati):**"
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Follows the Disney PBR model."
 msgstr "Segue il modello Disney PBR."
 
 #: ../../docs/about/list_of_features.rst:173
+#, fuzzy
 msgid ""
 "Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
 "shading modes."
 msgstr ""
+"Supporta le modalità di ombreggiatura Lambert, Lambert Wrap (mezzo Lambert), "
+"Oren-Nayar e Toon diffuse."
 
 #: ../../docs/about/list_of_features.rst:174
+#, fuzzy
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
 msgstr ""
+"Supporta le modalità di ombreggiatura Schlick-GGX, Blinn, Phong, Toon e "
+"Disabled specular."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
@@ -2587,18 +2596,22 @@ msgstr ""
 "ORM."
 
 #: ../../docs/about/list_of_features.rst:176
+#, fuzzy
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance"
 msgstr ""
+"Utilizza l'occlusione speculare dell'orizzonte (modello Filament) per "
+"migliorare l'aspetto del materiale"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Normal mapping."
 msgstr "Normal mapping."
 
 #: ../../docs/about/list_of_features.rst:178
+#, fuzzy
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "Mappatura dettagliata per le mappe di albedo e normal maps."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
@@ -2625,11 +2638,15 @@ msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "*GLES3:* Diffusione e trasmittanza sotto la superficie."
 
 #: ../../docs/about/list_of_features.rst:184
+#, fuzzy
 msgid ""
 "*GLES3:* Refraction with support for material roughness (resulting in blurry "
 "refraction). On GLES2, refraction is still functional but lacks support for "
 "material roughness."
 msgstr ""
+"*GLES3:* Rifrazione con supporto per la rugosità del materiale (con "
+"conseguente rifrazione sfocata). Su GLES2, la rifrazione è ancora funzionale "
+"ma manca il supporto per la rugosità del materiale."
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "*GLES3:* Proximity fade (soft particles)."
@@ -2654,9 +2671,10 @@ msgstr "Faretti con angolo del cono e attenuazione regolabili."
 #: ../../docs/about/list_of_features.rst:193
 #, fuzzy
 msgid "Specular energy can be adjusted on a per-light basis."
-msgstr "Il dithering può essere determinato per pixel o per oggetto."
+msgstr "L'energia speculare può essere regolata in base alla luce."
 
 #: ../../docs/about/list_of_features.rst:194
+#, fuzzy
 msgid ""
 "*GLES3:* Lighting is done with a single-pass forward approach. By default, "
 "up to 32 omni light and 32 spot lights can be displayed per mesh resource. "
@@ -2665,6 +2683,13 @@ msgid ""
 "approach to lighting, which doesn't have a limit on the number of lights but "
 "is slower with many lights."
 msgstr ""
+"*GLES3:* L'illuminazione viene eseguita con un approccio a singolo passaggio "
+"in avanti. Per impostazione predefinita, è possibile visualizzare fino a 32 "
+"luci omnidirezionali e 32 luci spot per risorsa mesh. Se necessario, questo "
+"limite può essere aumentato al costo di un aumento dei tempi di compilazione "
+"degli shader e di una riduzione delle prestazioni. GLES2 utilizza un "
+"approccio multi-pass forward all'illuminazione, che non ha un limite al "
+"numero di luci ma è più lento con molte luci."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "**Shadow mapping:**"
@@ -2864,13 +2889,16 @@ msgid "**Texture compression:**"
 msgstr "**Compressione delle texture:**"
 
 #: ../../docs/about/list_of_features.rst:265
+#, fuzzy
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
+"WebP lossless o lossy (non risparmia VRAM, riduce solo le dimensioni di "
+"archiviazione)."
 
 #: ../../docs/about/list_of_features.rst:266
 #, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
-msgstr "*GLES3:* S3TC (non supportato su piattaforme mobile/Web)."
+msgstr "S3TC (supportato solo su piattaforme desktop)."
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "ETC1 (recommended when using the GLES2 renderer)."
@@ -2898,22 +2926,29 @@ msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Antialiasing approssimativo veloce (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:276
-#, fuzzy
 msgid "**Performance:**"
-msgstr "Prestazioni"
+msgstr "**Prestazioni:**"
 
 #: ../../docs/about/list_of_features.rst:278
+#, fuzzy
 msgid ""
 "Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
 "Supports gameplay notifications with primary and secondary visibility to "
 "disable AI/physics processing for nodes that don't need it."
 msgstr ""
+"Eliminazione dell'occlusione con :ref:`rooms and portals "
+"<doc_rooms_and_portals>`. Supporta le notifiche di gioco con visibilità "
+"primaria e secondaria per disabilitare l'elaborazione dell'IA/fisica per i "
+"nodi che non ne hanno bisogno."
 
 #: ../../docs/about/list_of_features.rst:281
+#, fuzzy
 msgid ""
 "Real-time occluder spheres. Not as effective as rooms and portals (and "
 "doesn't support gameplay notifications), but easier to set up."
 msgstr ""
+"Sfere occludenti in tempo reale. Non è efficace come le stanze e i portali "
+"(e non supporta le notifiche di gioco), ma è più facile da configurare."
 
 #: ../../docs/about/list_of_features.rst:286
 #, fuzzy
@@ -2962,9 +2997,12 @@ msgid "3D geometry helper class."
 msgstr "Classe di supporto per la geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:302
+#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
 msgstr ""
+"Supporto per l'esportazione della scena corrente come file glTF 2.0 "
+"dall'editor."
 
 #: ../../docs/about/list_of_features.rst:305
 msgid "3D physics"
@@ -3206,8 +3244,8 @@ msgid ""
 "Listener2D and Listener3D nodes to listen from a position different than the "
 "camera."
 msgstr ""
-"Nodo Listener3D per ascoltare da una posizione diversa da quella della "
-"telecamera in 3D."
+"Nodi Listener2D e Listener3D per ascoltare da una posizione diversa dalla "
+"telecamera."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid ""
@@ -3292,7 +3330,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:425
 #, fuzzy
 msgid "FBX (experimental, static meshes only)."
-msgstr "FBX (sperimentale)."
+msgstr "FBX (sperimentali, solo mesh statiche)."
 
 #: ../../docs/about/list_of_features.rst:426
 msgid "Collada (.dae)."
@@ -3305,11 +3343,15 @@ msgstr ""
 "come mesh)."
 
 #: ../../docs/about/list_of_features.rst:429
+#, fuzzy
 msgid ""
 "3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
 "tangents on import, which ensures consistency with other 3D applications "
 "such as Blender."
 msgstr ""
+"Le mesh 3D utilizzano `Mikktspace <http://www.mikktspace.com/>`__ per "
+"generare le tangenti all'importazione, il che garantisce la coerenza con "
+"altre applicazioni 3D come Blender."
 
 #: ../../docs/about/list_of_features.rst:433
 #: ../../docs/tutorials/rendering/viewports.rst:38
@@ -3562,12 +3604,18 @@ msgid "Parse custom command line arguments."
 msgstr "Analizza gli argomenti personalizzati della riga di comando."
 
 #: ../../docs/about/list_of_features.rst:512
+#, fuzzy
 msgid ""
 ":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be "
 "downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. "
 "Any binary can be used without a window using the ``--no-window`` :ref:"
 "`command line argument <doc_command_line_tutorial>`."
 msgstr ""
+":ref:`I binari di headless/server <doc_exporting_for_dedicated_servers>` "
+"possono essere scaricati per Linux e :ref:`compilati per macOS "
+"<doc_compiling_for_osx>`. Qualsiasi binario può essere usato senza finestra "
+"usando l'opzione ``--no-window`` :ref:`argomento della linea di comando "
+"<doc_command_line_tutorial>`."
 
 #: ../../docs/about/list_of_features.rst:518
 msgid "Mobile"
@@ -3667,8 +3715,9 @@ msgstr ""
 "Trees (Alberi) (possono essere utilizzati anche per rappresentare tabelle)."
 
 #: ../../docs/about/list_of_features.rst:550
+#, fuzzy
 msgid "Color picker with RGB and HSV modes."
-msgstr ""
+msgstr "Selezionatore di colori con modalità RGB e HSV."
 
 #: ../../docs/about/list_of_features.rst:551
 #, fuzzy
@@ -3676,8 +3725,8 @@ msgid ""
 "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
 "draggable splitter, ...)."
 msgstr ""
-"Contenitori (orizzontale, verticale, griglia, centrato, margine, divisore "
-"trascinabile, ...)."
+"Contenitori (orizzontale, verticale, griglia, flusso, centro, margine, "
+"rapporto di aspetto, splitter trascinabile, ...)."
 
 #: ../../docs/about/list_of_features.rst:552
 msgid "Controls can be rotated and scaled."
@@ -3756,7 +3805,8 @@ msgid ""
 "Supports rounded/beveled corners, drop shadows, per-border widths and "
 "antialiasing."
 msgstr ""
-"Supporta angoli arrotondati/smussati, ombreggiature e spessori per bordo."
+"Supporta angoli arrotondati/smussati, ombreggiature, larghezza dei bordi e "
+"antialiasing."
 
 #: ../../docs/about/list_of_features.rst:578
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -3783,10 +3833,13 @@ msgid "Direct kinematics and inverse kinematics."
 msgstr "Cinematica diretta e cinematica inversa."
 
 #: ../../docs/about/list_of_features.rst:587
+#, fuzzy
 msgid ""
 ":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
 "code."
 msgstr ""
+":ref:`Tween <class_Tween>` nodo per eseguire facilmente animazioni "
+"procedurali tramite codice."
 
 #: ../../docs/about/list_of_features.rst:588
 msgid "Support for animating any property with customizable interpolation."
@@ -3855,7 +3908,7 @@ msgstr ""
 #, fuzzy
 msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
-"Può (de)serializzare qualsiasi tipo di dati Godot, compresi Vector, "
+"Può (de)serializzare qualsiasi tipo di dato di Godot, compresi Vector2/3, "
 "Color, ..."
 
 #: ../../docs/about/list_of_features.rst:610
@@ -3897,7 +3950,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
-msgstr "Interfaccia da linea di comando per l'automazione."
+msgstr ""
+":ref:`Interfaccia della riga di comando <doc_command_line_tutorial>` per "
+"l'automazione."
 
 #: ../../docs/about/list_of_features.rst:623
 msgid "Export and deploy projects using continuous integration platforms."
@@ -4587,17 +4642,16 @@ msgstr ""
 "volta che sarà rilasciato Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:83
-#, fuzzy
 msgid ""
 "In a given minor release series, only the latest patch release receives "
 "support. If you experience an issue using an older patch release, please "
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
-"In una data serie di rilasci minori, solo l'ultimo rilascio della patch "
-"riceve supporto. Se si verifica un problema utilizzando una vecchia release "
-"della patch, si prega di aggiornare all'ultima release della patch di quella "
-"serie e testare di nuovo prima di segnalare un problema su GitHub."
+"In una determinata serie di versioni minori, solo l'ultima riceve il "
+"supporto. Se si riscontra un problema utilizzando una versione di patch più "
+"vecchia, si prega di aggiornare a quella più recente di quella serie e di "
+"eseguire nuovamente il test prima di segnalare un problema su GitHub."
 
 #: ../../docs/about/release_policy.rst:89
 msgid "**Version**"
@@ -4701,7 +4755,6 @@ msgstr ""
 "3.3 compatibile (ultimo aggiornamento: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:119
-#, fuzzy
 msgid "eol"
 msgstr "eol"
 
@@ -4868,16 +4921,24 @@ msgstr ""
 "comunque essere conforme a quella originale."
 
 #: ../../docs/about/complying_with_licenses.rst:21
+#, fuzzy
 msgid ""
 "In your project's credits screen, remember to also list third-party notices "
 "for assets you're using, such as textures, models, sounds, music and fonts."
 msgstr ""
+"Nella schermata dei crediti del progetto, ricordati di elencare anche gli "
+"avvisi di terze parti per le risorse utilizzate, come texture, modelli, "
+"suoni, musica e font."
 
 #: ../../docs/about/complying_with_licenses.rst:24
+#, fuzzy
 msgid ""
 "Free assets in particular often come with licenses that require attribution. "
 "Double-check their license before using those assets in a project."
 msgstr ""
+"Le risorse gratuite, in particolare, sono spesso dotate di licenze che "
+"richiedono l'attribuzione. Prima di utilizzare tali risorse in un progetto, "
+"controlla due volte la loro licenza."
 
 #: ../../docs/about/complying_with_licenses.rst:28
 #: ../../docs/tutorials/export/exporting_for_macos.rst:16
@@ -5157,7 +5218,7 @@ msgstr "Copyright (c) 2002-2020 Lee Salzman"
 
 #: ../../docs/about/complying_with_licenses.rst:140
 msgid "mbed TLS"
-msgstr ""
+msgstr "mbed TLS"
 
 #: ../../docs/about/complying_with_licenses.rst:142
 #, fuzzy
@@ -5206,19 +5267,28 @@ msgstr ""
 "autorizzazioni e le limitazioni ai sensi della Licenza."
 
 #: ../../docs/about/complying_with_licenses.rst:159
+#, fuzzy
 msgid ""
 "Keep in mind that Godot 2.x and 3.0 use `OpenSSL <https://www.openssl.org>`_ "
 "1.x instead. This old OpenSSL version used the OpenSSL license, not the "
 "Apache 2 license as the latest version of OpenSSL currently uses (as of "
 "April 2022)."
 msgstr ""
+"Tieni presente che Godot 2.x e 3.0 utilizzano invece `OpenSSL <https://www."
+"openssl.org>`_ 1.x. Questa vecchia versione di OpenSSL utilizzava la licenza "
+"OpenSSL, non la licenza Apache 2 come l'ultima versione di OpenSSL (a "
+"partire da aprile 2022)."
 
 #: ../../docs/about/complying_with_licenses.rst:165
+#, fuzzy
 msgid ""
 "If you exported your project using a :ref:`custom build with specific "
 "modules disabled <doc_optimizing_for_size>`, you don't need to list the "
 "disabled modules' licenses in your exported project."
 msgstr ""
+"Se hai esportato il progetto usando un :ref:`custom build with specific "
+"modules disabled <doc_optimizing_for_size>`, non è necessario elencare le "
+"licenze dei moduli disabilitati'nel progetto esportato."
 
 #: ../../docs/getting_started/introduction/index.rst:8
 #, fuzzy
@@ -6397,7 +6467,6 @@ msgstr ""
 "che ti stanno aiutando."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:145
-#, fuzzy
 msgid "Community tutorials"
 msgstr "Tutorial della comunità"
 
@@ -6553,9 +6622,8 @@ msgstr "|image0|"
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:534
 #: ../../docs/community/asset_library/using_assetlib.rst:187
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:211
-#, fuzzy
 msgid "image0"
-msgstr "|image0|"
+msgstr "image0"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:52
 #, fuzzy
@@ -6605,9 +6673,8 @@ msgstr "|image1|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:453
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:535
 #: ../../docs/community/asset_library/using_assetlib.rst:188
-#, fuzzy
 msgid "image1"
-msgstr "|image1|"
+msgstr "image1"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:63
 #, fuzzy
@@ -6663,9 +6730,8 @@ msgstr "|image2|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:454
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:536
 #: ../../docs/community/asset_library/using_assetlib.rst:189
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:77
 msgid ""
@@ -6741,9 +6807,8 @@ msgstr "|image3|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:455
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:537
 #: ../../docs/community/asset_library/using_assetlib.rst:190
-#, fuzzy
 msgid "image3"
-msgstr "|image3|"
+msgstr "image3"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:97
 msgid ""
@@ -6795,9 +6860,8 @@ msgstr "|image4|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:456
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:538
 #: ../../docs/community/asset_library/using_assetlib.rst:191
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:108
 msgid ""
@@ -6939,9 +7003,8 @@ msgstr "|image5|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:457
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:539
 #: ../../docs/community/asset_library/using_assetlib.rst:192
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:160
 msgid ""
@@ -7374,7 +7437,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
-#, fuzzy
 msgid "In practice"
 msgstr "In pratica"
 
@@ -8358,7 +8420,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:271
 #, fuzzy
 msgid "Complete script"
-msgstr "Esempio di GDScript"
+msgstr "Script completo"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:264
 #: ../../docs/getting_started/step_by_step/scripting_player_input.rst:93
@@ -8529,7 +8591,6 @@ msgid "Signal"
 msgstr "Segnale"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
-#, fuzzy
 msgid "Using signals"
 msgstr "Utilizzo dei segnali"
 
@@ -8967,9 +9028,8 @@ msgstr ""
 "gioco."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:4
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Il tuo primo gioco"
+msgstr "Il tuo primo gioco 2D"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:6
 msgid ""
@@ -9011,9 +9071,8 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:22
 #: ../../docs/getting_started/first_3d_game/index.rst:17
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Imparerete:"
+msgstr "Imparerai a:"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:24
 msgid "Create a complete 2D game with the Godot editor."
@@ -9048,7 +9107,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:35
-#, fuzzy
 msgid "**Why start with 2D?**"
 msgstr "**Perché iniziare con il 2D?**"
 
@@ -10129,10 +10187,10 @@ msgid ""
 "container for handling game logic. It does not require 2D functionality "
 "itself.)"
 msgstr ""
-"Ora è il momento di mettere tutto insieme. Creare una nuova scena e "
-"aggiungere un :ref:`Node <class_Node_Node>`` chiamato ``Main``. Assicuratevi "
-"di creare un Nodo, **non** un Node2D. Clicca il pulsante \"Instance\" e "
-"seleziona il tuo ``Player.tscn`` salvato."
+"Crea una nuova scena e aggiungi un :ref:`Node <class_Node>` chiamato "
+"``Main``. (Il motivo per cui usiamo Node invece di Node2D è che questo nodo "
+"sarà un contenitore per la gestione della logica di gioco. Non richiede la "
+"funzionalità 2D in sé.)"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:12
 msgid ""
@@ -11205,9 +11263,8 @@ msgstr "|image6|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:540
 #: ../../docs/community/asset_library/using_assetlib.rst:193
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:58
 msgid ""
@@ -11237,9 +11294,8 @@ msgstr "|image7|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:541
 #: ../../docs/community/asset_library/using_assetlib.rst:194
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:63
 msgid ""
@@ -11269,9 +11325,8 @@ msgstr "|image8|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:542
 #: ../../docs/community/asset_library/using_assetlib.rst:195
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:69
 msgid ""
@@ -11307,9 +11362,8 @@ msgstr "|image9|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:543
 #: ../../docs/community/asset_library/using_assetlib.rst:196
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:82
 msgid ""
@@ -11345,9 +11399,8 @@ msgstr "|image10|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:544
 #: ../../docs/community/asset_library/using_assetlib.rst:197
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:92
 msgid ""
@@ -11370,9 +11423,8 @@ msgstr "|image11|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:545
 #: ../../docs/community/asset_library/using_assetlib.rst:198
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:97
 msgid ""
@@ -11397,9 +11449,8 @@ msgstr "|image12|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:546
 #: ../../docs/community/asset_library/using_assetlib.rst:199
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:104
 msgid ""
@@ -11430,9 +11481,8 @@ msgstr "|image13|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:547
 #: ../../docs/community/asset_library/using_assetlib.rst:200
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:115
 msgid ""
@@ -11455,9 +11505,8 @@ msgstr "|image14|"
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:548
 #: ../../docs/community/asset_library/using_assetlib.rst:201
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:120
 msgid ""
@@ -11478,9 +11527,8 @@ msgstr "|image15|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:351
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:549
-#, fuzzy
 msgid "image15"
-msgstr "|image15|"
+msgstr "image15"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:127
 msgid ""
@@ -11515,9 +11563,8 @@ msgstr "|image16|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:352
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:550
-#, fuzzy
 msgid "image16"
-msgstr "|image16|"
+msgstr "image16"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:141
 #, fuzzy
@@ -11537,9 +11584,8 @@ msgstr "|image17|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:353
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:469
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:551
-#, fuzzy
 msgid "image17"
-msgstr "|image17|"
+msgstr "image17"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:145
 msgid ""
@@ -11762,9 +11808,8 @@ msgstr "|image18|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:470
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:552
-#, fuzzy
 msgid "image18"
-msgstr "|image18|"
+msgstr "image18"
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:154
 msgid ""
@@ -12487,9 +12532,8 @@ msgstr "|image19|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:355
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:471
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:553
-#, fuzzy
 msgid "image19"
-msgstr "|image19|"
+msgstr "image19"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:147
 msgid "With that, we're ready to code the spawn mechanism."
@@ -12542,9 +12586,8 @@ msgstr "|image20|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:356
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:472
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:554
-#, fuzzy
 msgid "image20"
-msgstr "|image20|"
+msgstr "image20"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:199
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
@@ -12559,9 +12602,8 @@ msgstr "|image21|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:473
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:555
-#, fuzzy
 msgid "image21"
-msgstr "|image21|"
+msgstr "image21"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:203
 msgid ""
@@ -12578,9 +12620,8 @@ msgstr "|image22|"
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:474
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:556
-#, fuzzy
 msgid "image22"
-msgstr "|image22|"
+msgstr "image22"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:208
 msgid ""
@@ -12603,9 +12644,8 @@ msgstr "|image23|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:475
-#, fuzzy
 msgid "image23"
-msgstr "|image23|"
+msgstr "image23"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:218
 #, fuzzy
@@ -12617,9 +12657,8 @@ msgid "|image24|"
 msgstr "|image24|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:360
-#, fuzzy
 msgid "image24"
-msgstr "|image24|"
+msgstr "image24"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:222
 msgid ""
@@ -12675,9 +12714,8 @@ msgid "|image25|"
 msgstr "|image25|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:361
-#, fuzzy
 msgid "image25"
-msgstr "|image25|"
+msgstr "image25"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:333
 msgid ""
@@ -12889,7 +12927,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:174
-#, fuzzy
 msgid "Squashing monsters"
 msgstr "Schiacciare i mostri"
 
@@ -13942,7 +13979,6 @@ msgid "And the *Mob*'s script."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/going_further.rst:4
-#, fuzzy
 msgid "Going further"
 msgstr "Andare oltre"
 
@@ -14335,7 +14371,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
-#, fuzzy
 msgid "Using TileMaps"
 msgstr "Utilizzo di TileMaps"
 
@@ -14373,7 +14408,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
-#, fuzzy
 msgid "TileMap node"
 msgstr "Nodo TileMap"
 
@@ -15029,9 +15063,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
-#, fuzzy
 msgid "Preprocess"
-msgstr "Pre-elaborazione"
+msgstr "Preprocesso"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -16207,7 +16240,6 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 #: ../../docs/tutorials/math/beziers_and_curves.rst:233
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:17
-#, fuzzy
 msgid "Drawing"
 msgstr "Disegnare"
 
@@ -17042,7 +17074,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
-#, fuzzy
 msgid "Cameras"
 msgstr "Telecamere"
 
@@ -17801,7 +17832,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:135
 msgid "Flags"
-msgstr "Bandiere"
+msgstr "Flags"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
 msgid ""
@@ -17970,8 +18001,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:131
+#, fuzzy
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "Disattiva la luce ambientale"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid ""
@@ -20032,7 +20064,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:312
-#, fuzzy
 msgid "Atlas"
 msgstr "Atlas"
 
@@ -21846,8 +21877,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:46
+#, fuzzy
 msgid "What a Mesh is"
-msgstr ""
+msgstr "Che cos'è una mesh"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:48
 msgid ""
@@ -23420,7 +23452,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/advanced_room_and_portal_usage.rst:40
-#, fuzzy
 msgid "VisbilityNotifiers / VisibilityEnablers"
 msgstr "VisbilityNotifiers / VisibilityEnablers"
 
@@ -24590,7 +24621,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:181
-#, fuzzy
 msgid "Animation length"
 msgstr "Lunghezza dell'animazione"
 
@@ -24615,11 +24645,11 @@ msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:194
+#, fuzzy
 msgid "Yay! Our animation runs:"
-msgstr ""
+msgstr "Evviva! La nostra animazione funziona:"
 
 #: ../../docs/tutorials/animation/introduction.rst:199
-#, fuzzy
 msgid "The animation"
 msgstr "L'animazione"
 
@@ -25203,7 +25233,6 @@ msgid "To solve these problems we'll use Godot's skeletons."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
-#, fuzzy
 msgid "Skeletons"
 msgstr "Scheletri"
 
@@ -25978,7 +26007,6 @@ msgid "Following is a short description of available nodes:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:76
-#, fuzzy
 msgid "Blend2 / Blend3"
 msgstr "Blend2 / Blend3"
 
@@ -26670,7 +26698,7 @@ msgstr "good"
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:99
 #, fuzzy
 msgid "bad"
-msgstr "e"
+msgstr "bad"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:84
 msgid "Uncompressed"
@@ -26793,7 +26821,7 @@ msgstr "|regolare| Piccolo"
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:103
 #, fuzzy
 msgid "regular"
-msgstr "|regolare| Piccolo"
+msgstr "regular"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:88
 msgid "|good| Very Small"
@@ -32816,7 +32844,6 @@ msgid "Only parse for errors and quit (use with ``--script``)."
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:139
-#, fuzzy
 msgid "``--export <target>``"
 msgstr "``--export <target>``"
 
@@ -32828,7 +32855,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:141
-#, fuzzy
 msgid "``--export-debug <target>``"
 msgstr "``--export-debug <target>``"
 
@@ -32839,7 +32865,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:143
-#, fuzzy
 msgid "``--doctool <path>``"
 msgstr "``--doctool <path>``"
 
@@ -33080,7 +33105,7 @@ msgstr "Lo script deve ereditare da ``SceneTree`` o ``MainLoop``."
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:310
 #, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "Ecco un semplice esempio di ``sayhello.gd`` di come funziona:"
+msgstr "Ecco un semplice esempio ``sayhello.gd`` che mostra il funzionamento:"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:321
 #, fuzzy
@@ -36307,7 +36332,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:28
 msgid "..img:: img/configure_profile.png"
-msgstr ""
+msgstr "..img:: img/configure_profile.png"
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:30
 msgid ""
@@ -36320,7 +36345,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:36
 msgid "..img:: img/node_features.png"
-msgstr ""
+msgstr "..img:: img/node_features.png"
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:39
 #, fuzzy
@@ -36881,12 +36906,10 @@ msgstr ""
 "com/godotengine/godot/issues>``_."
 
 #: ../../docs/tutorials/export/exporting_projects.rst:4
-#, fuzzy
 msgid "Exporting projects"
-msgstr "Esportazione dei progetti"
+msgstr "Esportazione di progetti"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
 msgstr "Perché esportare?"
 
@@ -36905,7 +36928,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:20
-#, fuzzy
 msgid "On PC"
 msgstr "Su PC"
 
@@ -36934,7 +36956,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:38
-#, fuzzy
 msgid "On mobile"
 msgstr "Su dispositivi mobili"
 
@@ -40481,7 +40502,7 @@ msgstr ""
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:110
 #, fuzzy
 msgid "Testing translations"
-msgstr "Importazione di traduzioni"
+msgstr "Test delle traduzioni"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:112
 msgid ""
@@ -40499,7 +40520,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:120
 msgid "..image:: img/locale_test.png"
-msgstr ""
+msgstr "..image:: img/locale_test.png"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:122
 msgid ""
@@ -45202,38 +45223,32 @@ msgid "User data"
 msgstr "Dati utente"
 
 #: ../../docs/tutorials/io/data_paths.rst:59
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:60
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
-msgstr "macOS: ``~/Library/Application Support/Godot/``"
+msgstr "macOS: ``~/Library/Application Support/Godot/[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:61
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/[project_name]``"
-msgstr "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``~/.local/share/godot/[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:63
 msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:63
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\``"
+msgstr "Windows: ``%APPDATA%\\[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:64
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr "macOS: ``~/Library/Application Support/Godot/``"
+msgstr "macOS: ``~/Library/Application Support/[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:65
-#, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``~/.local/share/[project_name]``"
 
 #: ../../docs/tutorials/io/data_paths.rst:67
 msgid "User settings"
@@ -45244,12 +45259,10 @@ msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:68
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr "macOS: ``~/Library/Application Support/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:69
-#, fuzzy
 msgid "Linux: ``~/.config/godot/``"
 msgstr "Linux: ``~/.config/godot/``"
 
@@ -45263,12 +45276,10 @@ msgid "Windows: ``%TEMP%\\Godot\\``"
 msgstr "Windows: ``%TEMP%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:72
-#, fuzzy
 msgid "macOS: ``~/Library/Caches/Godot/``"
 msgstr "macOS: ``~/Library/Caches/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:73
-#, fuzzy
 msgid "Linux: ``~/.cache/godot/``"
 msgstr "Linux: ``~/.cache/godot/``"
 
@@ -45895,9 +45906,8 @@ msgstr "1: :ref:`bool<class_bool>`"
 #: ../../docs/tutorials/io/binary_serialization_api.rst:471
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
-#, fuzzy
 msgid "Offset"
-msgstr "Offset"
+msgstr "Scostamento"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -48628,9 +48638,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:60
-#, fuzzy
 msgid "Official example project"
-msgstr "Esempio di progetto"
+msgstr "Esempio di progetto ufficiale"
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:62
 #, fuzzy
@@ -50143,7 +50152,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/general_optimization.rst:120
 #, fuzzy
 msgid "Profilers"
-msgstr "Profiler"
+msgstr "Profilatori"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:122
 msgid ""
@@ -50293,8 +50302,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/general_optimization.rst:206
+#, fuzzy
 msgid "The process is thus:"
-msgstr ""
+msgstr "Il processo è quindi:"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:208
 msgid "Profile / Identify bottleneck."
@@ -50351,7 +50361,6 @@ msgstr ""
 
 #: ../../docs/tutorials/performance/general_optimization.rst:238
 #: ../../docs/tutorials/performance/batching.rst:515
-#, fuzzy
 msgid "Appendix"
 msgstr "Appendice"
 
@@ -52877,7 +52886,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:308
-#, fuzzy
 msgid "rendering/batching/options"
 msgstr "rendering/batching/options"
 
@@ -52911,7 +52919,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:325
-#, fuzzy
 msgid "rendering/batching/parameters"
 msgstr "rendering/batching/parameters"
 
@@ -52956,7 +52963,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:355
-#, fuzzy
 msgid "rendering/batching/lights"
 msgstr "rendering/batching/lights"
 
@@ -52976,7 +52982,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:369
-#, fuzzy
 msgid "rendering/batching/debug"
 msgstr "rendering/batching/debug"
 
@@ -52998,7 +53003,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:384
-#, fuzzy
 msgid "rendering/batching/precision"
 msgstr "rendering/batching/precision"
 
@@ -55479,9 +55483,8 @@ msgid ":ref:`class_CapsuleShape`"
 msgstr ":ref:`class_CapsuleShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
-#, fuzzy
 msgid ":ref:`class_CylinderShape`"
-msgstr ":ref:`class_CapsuleShape`"
+msgstr ":ref:`class_CylinderShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:35
 msgid ""
@@ -55923,7 +55926,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/android/android_plugin.rst:106
 #, fuzzy
 msgid "**binary**:"
-msgstr "**binary**:"
+msgstr "**binario**:"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:108
 msgid ""
@@ -56726,7 +56729,6 @@ msgid "On success:"
 msgstr "In caso di successo:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:158
-#, fuzzy
 msgid "``request_product_info``"
 msgstr "``request_product_info``"
 
@@ -56741,7 +56743,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:191
-#, fuzzy
 msgid "``restore_purchases``"
 msgstr "``restore_purchases``"
 
@@ -57000,7 +57001,6 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
-#, fuzzy
 msgid "void"
 msgstr "void"
 
@@ -57715,7 +57715,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:78
 #, fuzzy
 msgid "Starting the project"
-msgstr "Preparazione del progetto"
+msgstr "Avvio del progetto"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:79
 msgid ""
@@ -58076,30 +58076,30 @@ msgstr "Impostazioni"
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:29
 #, fuzzy
 msgid "Desktop default"
-msgstr "Gioco desktop"
+msgstr "Desktop predefinito"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:29
 #, fuzzy
 msgid "Mobile default"
-msgstr "Infisso (predefinito)"
+msgstr "Mobile predefinito"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:31
 msgid "``rendering/quality/directional_shadow/size``"
-msgstr ""
+msgstr "``rendering/quality/directional_shadow/size``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:31
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:45
 msgid "4096"
-msgstr ""
+msgstr "4096"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:31
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:45
 msgid "2048"
-msgstr ""
+msgstr "2048"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "``rendering/quality/intended_usage/framebuffer_allocation``"
-msgstr ""
+msgstr "``rendering/quality/intended_usage/framebuffer_allocation``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "3D Without Effects"
@@ -58107,7 +58107,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
 msgid "``rendering/quality/lightmapping/use_bicubic_sampling``"
-msgstr ""
+msgstr "``rendering/quality/lightmapping/use_bicubic_sampling``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:37
@@ -58116,37 +58116,36 @@ msgstr ""
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:43
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:53
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:55
-#, fuzzy
 msgid "``false``"
-msgstr "``if x else``"
+msgstr "``false``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:37
 msgid "``rendering/quality/reflections/high_quality_ggx``"
-msgstr ""
+msgstr "``rendering/quality/reflections/high_quality_ggx``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:39
 msgid "``rendering/quality/shading/force_blinn_over_ggx``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_blinn_over_ggx``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:41
 msgid "``rendering/quality/shading/force_lambert_over_burley``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_lambert_over_burley``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:43
 msgid "``rendering/quality/shading/force_vertex_shading``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_vertex_shading``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:45
 msgid "``rendering/quality/shadow_atlas/size``"
-msgstr ""
+msgstr "``rendering/quality/shadow_atlas/size``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
 msgid "``rendering/quality/shadows/filter_mode``"
-msgstr ""
+msgstr "``rendering/quality/shadows/filter_mode``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
 msgid "PCF5"
-msgstr ""
+msgstr "PCF5"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:49
 msgid "*GLES3 only:* ``rendering/gles3/shaders/max_simultaneous_compiles``"
@@ -58157,14 +58156,12 @@ msgid "*GLES3 only:* ``rendering/gles3/shaders/shader_cache_size_mb``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:51
-#, fuzzy
 msgid "512"
-msgstr "12"
+msgstr "512"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:51
-#, fuzzy
 msgid "128"
-msgstr "12"
+msgstr "128"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:53
 msgid "*GLES3 only:* ``rendering/quality/depth/hdr``"
@@ -58583,7 +58580,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:392
-#, fuzzy
 msgid "Going beyond"
 msgstr "Andare oltre"
 
@@ -60548,7 +60544,6 @@ msgid "Desktop game"
 msgstr "Gioco desktop"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:275
-#, fuzzy
 msgid "**Non-pixel art:**"
 msgstr "**Non-pixel art:**"
 
@@ -61140,12 +61135,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:62
+#, fuzzy
 msgid "Subsurface scattering"
-msgstr ""
+msgstr "Diffusione sottosuperficiale"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:65
+#, fuzzy
 msgid "Depth mapping"
-msgstr ""
+msgstr "Mappatura della profondità"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:67
 msgid "When using SpatialMaterials they will not even appear in the editor."
@@ -61210,7 +61207,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:90
 #, fuzzy
 msgid "Adjustment"
-msgstr "Correzioni"
+msgstr "Aggiustamento"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:93
 msgid "GIProbes"
@@ -62301,8 +62298,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:372
+#, fuzzy
 msgid "**Escape sequence**"
-msgstr ""
+msgstr "** Sequenza di fuga**"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:372
 #, fuzzy
@@ -64603,8 +64601,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:195
+#, fuzzy
 msgid "Trailing comma"
-msgstr ""
+msgstr "Virgola finale"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:197
 msgid ""
@@ -65092,8 +65091,9 @@ msgstr ""
 "opzionale<doc_gdscript_static_typing>`."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:790
+#, fuzzy
 msgid "Declared types"
-msgstr ""
+msgstr "Tipi dichiarati"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:792
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
@@ -65105,8 +65105,9 @@ msgid "To declare the return type of a function, use ``-> <type>``:"
 msgstr "Per dichiarare il tipo di ritorno di una funzione, usa ``-> <tipo> ``:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:805
+#, fuzzy
 msgid "Inferred types"
-msgstr ""
+msgstr "Tipi dedotti"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:807
 #, fuzzy
@@ -66866,7 +66867,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:331
-#, fuzzy
 msgid "Condition"
 msgstr "Condizione"
 
@@ -68937,8 +68937,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:98
+#, fuzzy
 msgid "Version compatibility"
-msgstr ""
+msgstr "Compatibilità delle versioni"
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:100
 msgid ""
@@ -70699,9 +70700,8 @@ msgid "This is a useful feature to organize large scenes and decouple code."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:17
-#, fuzzy
 msgid "Managing groups"
-msgstr "Gestione delle connessioni"
+msgstr "Gestione dei gruppi"
 
 #: ../../docs/tutorials/scripting/groups.rst:19
 msgid ""
@@ -70929,8 +70929,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:97
+#, fuzzy
 msgid "Syntactic sugar"
-msgstr ""
+msgstr "Zucchero sintattico"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:99
 msgid ""
@@ -71219,8 +71220,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:111
+#, fuzzy
 msgid "Accessing fields"
-msgstr ""
+msgstr "Accesso ai campi"
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:114
 msgid "Accessing C# fields from GDScript"
@@ -71576,7 +71578,7 @@ msgstr "Note"
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 #, fuzzy
 msgid "Addition ``+``"
-msgstr "Note aggiuntive"
+msgstr "Addizione ``+``"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:36
 msgid ""
@@ -71587,12 +71589,12 @@ msgstr ""
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:40
 #, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "Sottrazione"
+msgstr "Sottrazione (``-``)"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:42
 #, fuzzy
 msgid "Multiplication (``*``)"
-msgstr "moltiplicativo"
+msgstr "Moltiplicazione (``*``)"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:44
 #, fuzzy
@@ -71606,7 +71608,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:47
-#, fuzzy
 msgid "Modulo (``%``)"
 msgstr "Modulo (``%``)"
 
@@ -73390,8 +73391,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:73
+#, fuzzy
 msgid "Shader types"
-msgstr ""
+msgstr "Tipi di shader"
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:75
 msgid ""
@@ -73689,8 +73691,9 @@ msgid "**float**"
 msgstr "**float**"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:49
+#, fuzzy
 msgid "Floating-point scalar."
-msgstr ""
+msgstr "Scalare a virgola mobile."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:51
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:600
@@ -74077,7 +74080,6 @@ msgid "relational"
 msgstr "relazionale"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:314
-#, fuzzy
 msgid "**<, >, <=, >=**"
 msgstr "**<, >, <=, >=**"
 
@@ -74983,8 +74985,9 @@ msgid "mat_type **inverse** (mat_type m)"
 msgstr "mat_type **inverse** (mat_type m)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:773
+#, fuzzy
 msgid "Inverse matrix"
-msgstr ""
+msgstr "Matrice inversa"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:775
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
@@ -75554,8 +75557,9 @@ msgstr "Integrato"
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:318
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:54
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:55
+#, fuzzy
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:55
@@ -75635,8 +75639,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:193
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:320
+#, fuzzy
 msgid "in vec2 **VIEWPORT_SIZE**"
-msgstr ""
+msgstr "in vec2 **VIEWPORT_SIZE**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:193
@@ -75645,8 +75650,9 @@ msgid "Size of viewport (in pixels)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:143
+#, fuzzy
 msgid "inout mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:143
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:198
@@ -75657,8 +75663,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:200
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:329
+#, fuzzy
 msgid "in mat4 **INV_CAMERA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **INV_CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:200
@@ -75667,8 +75674,9 @@ msgid "World space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:147
+#, fuzzy
 msgid "inout mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:147
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:204
@@ -75680,8 +75688,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:149
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:202
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:331
+#, fuzzy
 msgid "in mat4 **CAMERA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:149
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:202
@@ -75690,16 +75699,18 @@ msgid "View space to world space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:151
+#, fuzzy
 msgid "inout mat4 **MODELVIEW_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:151
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:153
+#, fuzzy
 msgid "inout mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:153
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:206
@@ -75708,16 +75719,18 @@ msgid "Clip space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:155
+#, fuzzy
 msgid "inout vec3 **VERTEX**"
-msgstr ""
+msgstr "inout vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:155
 msgid "Vertex in local coordinates."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:157
+#, fuzzy
 msgid "out vec4  **POSITION**"
-msgstr ""
+msgstr "out vec4  **POSITION**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:157
 msgid "If written to, overrides final vertex position."
@@ -75726,8 +75739,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:159
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:214
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:171
+#, fuzzy
 msgid "inout vec3 **NORMAL**"
-msgstr ""
+msgstr "inout vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:159
 msgid "Normal in local coordinates."
@@ -75735,8 +75749,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:216
+#, fuzzy
 msgid "inout vec3 **TANGENT**"
-msgstr ""
+msgstr "inout vec3 **TANGENT**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
 msgid "Tangent in local coordinates."
@@ -75744,8 +75759,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:218
+#, fuzzy
 msgid "inout vec3 **BINORMAL**"
-msgstr ""
+msgstr "inout vec3 **BINORMAL**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
 msgid "Binormal in local coordinates."
@@ -75753,8 +75769,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:242
+#, fuzzy
 msgid "out float **ROUGHNESS**"
-msgstr ""
+msgstr "out float **ROUGHNESS**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
 msgid "Roughness for vertex lighting."
@@ -75762,16 +75779,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:132
+#, fuzzy
 msgid "inout vec2 **UV**"
-msgstr ""
+msgstr "inout vec2 **UV**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
 msgid "UV main channel."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
+#, fuzzy
 msgid "inout vec2 **UV2**"
-msgstr ""
+msgstr "inout vec2 **UV2**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
 msgid "UV secondary channel."
@@ -75780,8 +75799,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:228
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:349
+#, fuzzy
 msgid "in bool **OUTPUT_IS_SRGB**"
-msgstr ""
+msgstr "in bool **OUTPUT_IS_SRGB**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:228
@@ -75795,8 +75815,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:134
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:180
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:67
+#, fuzzy
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "inout vec4 **COLOR**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:174
 msgid "Color from vertices."
@@ -75804,16 +75825,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:176
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:140
+#, fuzzy
 msgid "inout float **POINT_SIZE**"
-msgstr ""
+msgstr "inout float **POINT_SIZE**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:176
 msgid "Point size for point rendering."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:178
+#, fuzzy
 msgid "in int **INSTANCE_ID**"
-msgstr ""
+msgstr "in int **INSTANCE_ID**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:178
 msgid "Instance ID for instancing."
@@ -75821,8 +75844,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:180
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:122
+#, fuzzy
 msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr ""
+msgstr "in vec4 **INSTANCE_CUSTOM**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:180
 msgid "Instance custom data (for particles, mostly)."
@@ -75846,8 +75870,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:322
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:167
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:220
+#, fuzzy
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "in vec4 **FRAGCOORD**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:195
 msgid ""
@@ -75859,23 +75884,27 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:198
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:327
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:116
+#, fuzzy
 msgid "in mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:204
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:333
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:120
+#, fuzzy
 msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:206
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:335
+#, fuzzy
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:208
+#, fuzzy
 msgid "in vec3 **VERTEX**"
-msgstr ""
+msgstr "in vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:208
 msgid "Vertex that comes from vertex function (default, in view space)."
@@ -75883,16 +75912,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343
+#, fuzzy
 msgid "in vec3 **VIEW**"
-msgstr ""
+msgstr "in vec3 **VIEW**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
 msgid "Vector from camera to fragment position (in view space)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
+#, fuzzy
 msgid "in bool **FRONT_FACING**"
-msgstr ""
+msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
 msgid "``true`` if current face is front face."
@@ -75912,16 +75943,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:220
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:173
+#, fuzzy
 msgid "out vec3 **NORMALMAP**"
-msgstr ""
+msgstr "out vec3 **NORMALMAP**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:220
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:222
+#, fuzzy
 msgid "out float **NORMALMAP_DEPTH**"
-msgstr ""
+msgstr "out float **NORMALMAP_DEPTH**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:222
 msgid "Depth from variable above. Defaults to 1.0."
@@ -75931,8 +75964,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:339
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:178
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:227
+#, fuzzy
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "in vec2 **UV**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:224
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:339
@@ -75941,8 +75975,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:226
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:341
+#, fuzzy
 msgid "in vec2 **UV2**"
-msgstr ""
+msgstr "in vec2 **UV2**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:226
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:341
@@ -75951,16 +75986,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:230
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:229
+#, fuzzy
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "in vec4 **COLOR**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:230
 msgid "COLOR that comes from vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:232
+#, fuzzy
 msgid "out vec3 **ALBEDO**"
-msgstr ""
+msgstr "out vec3 **ALBEDO**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:232
 msgid "Albedo (default white)."
@@ -75968,8 +76005,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:234
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:356
+#, fuzzy
 msgid "out float **ALPHA**"
-msgstr ""
+msgstr "out float **ALPHA**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:234
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:356
@@ -75979,16 +76017,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:236
+#, fuzzy
 msgid "out float **ALPHA_SCISSOR**"
-msgstr ""
+msgstr "out float **ALPHA_SCISSOR**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:236
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
+#, fuzzy
 msgid "out float **METALLIC**"
-msgstr ""
+msgstr "out float **METALLIC**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
 #, fuzzy
@@ -75996,8 +76036,9 @@ msgid "Metallic (0..1)."
 msgstr "Metallico (0..1)."
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:240
+#, fuzzy
 msgid "out float **SPECULAR**"
-msgstr ""
+msgstr "out float **SPECULAR**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:240
 msgid ""
@@ -76010,16 +76051,18 @@ msgid "Roughness (0..1)."
 msgstr "Ruvidità (0..1)."
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:244
+#, fuzzy
 msgid "out float **RIM**"
-msgstr ""
+msgstr "out float **RIM**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:244
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:246
+#, fuzzy
 msgid "out float **RIM_TINT**"
-msgstr ""
+msgstr "out float **RIM_TINT**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:246
 msgid ""
@@ -76028,40 +76071,45 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:248
+#, fuzzy
 msgid "out float **CLEARCOAT**"
-msgstr ""
+msgstr "out float **CLEARCOAT**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:248
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:250
+#, fuzzy
 msgid "out float **CLEARCOAT_GLOSS**"
-msgstr ""
+msgstr "out float **CLEARCOAT_GLOSS**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:250
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:252
+#, fuzzy
 msgid "out float **ANISOTROPY**"
-msgstr ""
+msgstr "out float **ANISOTROPY**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:252
 msgid "For distorting the specular blob according to tangent space."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:254
+#, fuzzy
 msgid "out vec2 **ANISOTROPY_FLOW**"
-msgstr ""
+msgstr "out vec2 **ANISOTROPY_FLOW**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:254
 msgid "Distortion direction, use with flowmaps."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:256
+#, fuzzy
 msgid "out float **SSS_STRENGTH**"
-msgstr ""
+msgstr "out float **SSS_STRENGTH**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:256
 msgid ""
@@ -76070,8 +76118,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:258
+#, fuzzy
 msgid "out vec3 **TRANSMISSION**"
-msgstr ""
+msgstr "out vec3 **TRANSMISSION**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:258
 msgid ""
@@ -76080,24 +76129,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:260
+#, fuzzy
 msgid "out vec3 **EMISSION**"
-msgstr ""
+msgstr "out vec3 **EMISSION**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:260
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:262
+#, fuzzy
 msgid "out float **AO**"
-msgstr ""
+msgstr "out float **AO**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:262
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:264
+#, fuzzy
 msgid "out float **AO_LIGHT_AFFECT**"
-msgstr ""
+msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:264
 msgid "How much AO affects lights (0..1; default 0)."
@@ -76124,8 +76176,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:270
+#, fuzzy
 msgid "out float **DEPTH**"
-msgstr ""
+msgstr "out float **DEPTH**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:270
 msgid "Custom depth value (0..1)."
@@ -76134,8 +76187,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:272
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:195
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:243
+#, fuzzy
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:272
 msgid "Screen UV coordinate for current pixel."
@@ -76144,8 +76198,9 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:274
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:199
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:245
+#, fuzzy
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "in vec2 **POINT_COORD**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:274
 msgid "Point Coordinate for drawing points with POINT_SIZE."
@@ -76413,8 +76468,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:124
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:201
+#, fuzzy
 msgid "in bool **AT_LIGHT_PASS**"
-msgstr ""
+msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:124
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:201
@@ -77174,9 +77230,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:4
-#, fuzzy
 msgid "Your first 3D shader"
-msgstr "Il tuo primo shader"
+msgstr "Il tuo primo shader 3D"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:6
 msgid ""
@@ -77644,9 +77699,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:4
-#, fuzzy
 msgid "Your second 3D shader"
-msgstr "Il tuo primo shader"
+msgstr "Il tuo secondo shader 3D"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:6
 msgid ""
@@ -77961,8 +78015,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:313
+#, fuzzy
 msgid "Now it looks much better."
-msgstr ""
+msgstr "Ora sembra molto meglio."
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:317
 msgid ""
@@ -79159,8 +79214,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:250
+#, fuzzy
 msgid "Floating-point numbers"
-msgstr ""
+msgstr "Numeri a virgola mobile"
 
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:252
 msgid ""
@@ -80703,8 +80759,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_navigation.rst:59
+#, fuzzy
 msgid "Necessary code"
-msgstr ""
+msgstr "Codice necessario"
 
 #: ../../docs/tutorials/ui/gui_navigation.rst:61
 msgid ""
@@ -80859,7 +80916,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:77
-#, fuzzy
 msgid "**StyleBox**"
 msgstr "**StyleBox**"
 
@@ -81066,8 +81122,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:210
+#, fuzzy
 msgid "Beyond controls"
-msgstr ""
+msgstr "Oltre i controlli"
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:212
 msgid ""
@@ -81309,8 +81366,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:22
+#, fuzzy
 msgid "Using BBCode"
-msgstr ""
+msgstr "Utilizzo di BBCode"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:24
 msgid ""
@@ -81520,8 +81578,9 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:83
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:85
+#, fuzzy
 msgid "**resized image**"
-msgstr ""
+msgstr "**immagine ridimensionata**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:83
 msgid "``[img=<width>]{path}[/img]``"
@@ -82843,111 +82902,108 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:94
-#, fuzzy
 msgid "Palm"
-msgstr "Palmo"
+msgstr "Palm"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:95
-#, fuzzy
 msgid "Wrist"
-msgstr "Polso"
+msgstr "Wrist"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:96
 msgid "Thumb_Metacarpal"
-msgstr ""
+msgstr "Thumb_Metacarpal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:97
 msgid "Thumb_Proximal"
-msgstr ""
+msgstr "Thumb_Proximal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:98
 msgid "Thumb_Distal"
-msgstr ""
+msgstr "Thumb_Distal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:99
 msgid "Thumb_Tip"
-msgstr ""
+msgstr "Thumb_Tip"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:100
 msgid "Index_Metacarpal"
-msgstr ""
+msgstr "Index_Metacarpal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:101
 msgid "Index_Proximal"
-msgstr ""
+msgstr "Index_Proximal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:102
 msgid "Index_Intermediate"
-msgstr ""
+msgstr "Index_Intermediate"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:103
 msgid "Index_Distal"
-msgstr ""
+msgstr "Index_Distal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:104
-#, fuzzy
 msgid "Index_Tip"
-msgstr "Indice"
+msgstr "Index_Tip"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:105
 msgid "Middle_Metacarpal"
-msgstr ""
+msgstr "Middle_Metacarpal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:106
 msgid "Middle_Proximal"
-msgstr ""
+msgstr "Middle_Proximal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:107
 msgid "Middle_Intermediate"
-msgstr ""
+msgstr "Middle_Intermediate"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:108
 msgid "Middle_Distal"
-msgstr ""
+msgstr "Middle_Distal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:109
 msgid "Middle_Tip"
-msgstr ""
+msgstr "Middle_Tip"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:110
 msgid "Ring_Metacarpal"
-msgstr ""
+msgstr "Ring_Metacarpal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:111
 msgid "Ring_Proximal"
-msgstr ""
+msgstr "Ring_Proximal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:112
 msgid "Ring_Intermediate"
-msgstr ""
+msgstr "Ring_Intermediate"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:113
 msgid "Ring_Distal"
-msgstr ""
+msgstr "Ring_Distal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:114
 msgid "Ring_Tip"
-msgstr ""
+msgstr "Ring_Tip"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:115
 msgid "Little_Metacarpal"
-msgstr ""
+msgstr "Little_Metacarpal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:116
 msgid "Little_Proximal"
-msgstr ""
+msgstr "Little_Proximal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:117
 msgid "Little_Intermediate"
-msgstr ""
+msgstr "Little_Intermediate"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:118
 msgid "Little_Distal"
-msgstr ""
+msgstr "Little_Distal"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:119
 msgid "Little_Tip"
-msgstr ""
+msgstr "Little_Tip"
 
 #: ../../docs/tutorials/vr/openxr/handtracking.rst:121
 msgid ""
@@ -83393,8 +83449,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:101
+#, fuzzy
 msgid "To summarize:"
-msgstr ""
+msgstr "Per riassumere:"
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:103
 msgid ""
@@ -85521,8 +85578,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:354
+#, fuzzy
 msgid "Pistol finished"
-msgstr ""
+msgstr "Pistola finita"
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:359
 msgid ""
@@ -85702,8 +85760,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:532
+#, fuzzy
 msgid "Shotgun finished"
-msgstr ""
+msgstr "Fucile finito"
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:534
 msgid ""
@@ -86059,8 +86118,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:769
+#, fuzzy
 msgid "Bomb finished"
-msgstr ""
+msgstr "Bomba finita"
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:771
 msgid ""
@@ -86278,8 +86338,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:900
+#, fuzzy
 msgid "Sword finished"
-msgstr ""
+msgstr "Spada finita"
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:904
 msgid ""
@@ -89522,110 +89583,98 @@ msgstr ""
 "essere disabilitati utilizzando un flag di compilazione:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:123
+#, fuzzy
 msgid "This is everything that will be disabled:"
-msgstr ""
+msgstr "Questo è tutto ciò che sarà disabilitato:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:125
-#, fuzzy
 msgid "FileDialog"
-msgstr "Finestra di dialogo File"
+msgstr "FileDialog"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:126
 msgid "PopupMenu"
-msgstr ""
+msgstr "PopupMenu"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:127
-#, fuzzy
 msgid "Tree"
-msgstr "SceneTree"
+msgstr "Tree"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:128
-#, fuzzy
 msgid "TextEdit"
-msgstr "Editor di testo"
+msgstr "TextEdit"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:129
 msgid "TreeItem"
-msgstr ""
+msgstr "TreeItem"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:130
-#, fuzzy
 msgid "OptionButton"
-msgstr "Opzione"
+msgstr "OptionButton"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:131
 msgid "SpinBox"
-msgstr ""
+msgstr "SpinBox"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:132
-#, fuzzy
 msgid "ColorPicker"
-msgstr "Colore"
+msgstr "ColorPicker"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:133
 msgid "ColorPickerButton"
-msgstr ""
+msgstr "ColorPickerButton"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:134
-#, fuzzy
 msgid "RichTextLabel"
-msgstr "ScoreLabel"
+msgstr "RichTextLabel"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:135
-#, fuzzy
 msgid "RichTextEffect"
-msgstr "Effetto"
+msgstr "RichTextEffect"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:136
-#, fuzzy
 msgid "CharFXTransform"
-msgstr "Azzera la trasformazione"
+msgstr "CharFXTransform"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:137
 msgid "PopupDialog"
-msgstr ""
+msgstr "PopupDialog"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:138
-#, fuzzy
 msgid "WindowDialog"
-msgstr "Windows"
+msgstr "WindowDialog"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:139
-#, fuzzy
 msgid "AcceptDialog"
-msgstr "Finestra di dialogo File"
+msgstr "AcceptDialog"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:140
-#, fuzzy
 msgid "ConfirmationDialog"
-msgstr "Conﬁgurazione"
+msgstr "ConfirmationDialog"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:141
-#, fuzzy
 msgid "MarginContainer"
-msgstr "PanelContainer"
+msgstr "MarginContainer"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:143
-#, fuzzy
 msgid "SplitContainer"
-msgstr "ScrollContainer"
+msgstr "SplitContainer"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:144
-#, fuzzy
 msgid "HSplitContainer"
-msgstr "ScrollContainer"
+msgstr "HSplitContainer"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:145
 msgid "GraphNode"
-msgstr ""
+msgstr "GraphNode"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:146
 msgid "GraphEdit"
-msgstr ""
+msgstr "GraphEdit"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:149
+#, fuzzy
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "Disabilitare i moduli indesiderati"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:151
 msgid "**Space savings:** Very low to moderate depending on modules"
@@ -90232,7 +90281,6 @@ msgstr "Eseguibile"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
-#, fuzzy
 msgid "**scons**"
 msgstr "**scons**"
 
@@ -90264,7 +90312,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
-#, fuzzy
 msgid "Qt Creator"
 msgstr "Qt Creator"
 
@@ -90302,8 +90349,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
+#, fuzzy
 msgid "Finish the import."
-msgstr ""
+msgstr "Termina l'importazione."
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
 msgid ""
@@ -92412,14 +92460,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:550
-#, fuzzy
 msgid "Summing up"
 msgstr "Riassumendo"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:552
-#, fuzzy
 msgid "Remember to:"
-msgstr "Ricorda di:"
+msgstr "Ricordati di:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:554
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
@@ -92605,7 +92651,6 @@ msgid "Adding a custom VoIP protocol."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
-#, fuzzy
 msgid "And more..."
 msgstr "E altro ancora..."
 
@@ -99304,7 +99349,6 @@ msgid "*See below.*"
 msgstr "*Vedi sotto.*"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:152
-#, fuzzy
 msgid "[codeblocks] [/codeblocks]"
 msgstr "[codeblocks] [/codeblocks]"
 
@@ -99314,7 +99358,6 @@ msgid "[codeblock] for multiple languages"
 msgstr "[codeblock] per più linguaggi"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:154
-#, fuzzy
 msgid "[gdscript] [/gdscript]"
 msgstr "[gdscript] [/gdscript]"
 
@@ -99324,7 +99367,6 @@ msgid "GDScript codeblock tab in codeblocks"
 msgstr "Scheda GDScript codeblock in codeblock"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:156
-#, fuzzy
 msgid "[csharp] [/csharp]"
 msgstr "[csharp] [/csharp]"
 

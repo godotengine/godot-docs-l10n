@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Ignas Kaveckas <ignas.kaveckas@gmail.com>, 2022.
 # Ignas Kiela <ignaskiela@super.lt>, 2018.
 # Ignotas Gražys <ignotas.gr@gmail.com>, 2020.
 # Kornelijus <kornelijus.github@gmail.com>, 2018.
@@ -14,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-04-29 17:56+0200\n"
-"PO-Revision-Date: 2021-12-18 14:25+0000\n"
-"Last-Translator: Lukas Hamm <ideallygrey@tuta.io>\n"
+"PO-Revision-Date: 2022-05-28 23:50+0000\n"
+"Last-Translator: Ignas Kaveckas <ignas.kaveckas@gmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/lt/>\n"
 "Language: lt\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 4.10\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -57,9 +58,8 @@ msgid "Class reference"
 msgstr "Klasės nuoroda"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Godot Docs – *master* šaka"
+msgstr "Godot dokumentacija – *3.4* šaka"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -78,21 +78,33 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
+"Čia yra stabiliosios 3.4 šakos dokumentacija. Ieškote dokumentacijos "
+"dabartinei **development** šakai? `Pažiūrėkite čia <https://docs.godotengine."
+"org/en/latest>` _. Taip pat galite panaršyti dabartinę `3.3 <https://docs."
+"godotengine.org/en/3.3>` _ šakos dokumentaciją."
 
 #: ../../docs/index.rst:18
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Ši dokumentacija yra išversta bendruomenės narių `Weblate svetainėje "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_ iš "
+"`originalo anglų kalba <https://docs.godotengine.org/en/latest>`_."
 
 #: ../../docs/index.rst:22
+#, fuzzy
 msgid ""
 "Depending on the translation effort's completion level, you may find "
 "paragraphs or whole pages which are still in English. You can help the "
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"Priklausant nuo vertimo būsenos tikėtina, kad rasite paragrafus ar puslapius "
+"anglų kalba. Galite pagelbėti bendruomenei pateikdami naujus vertimus arba "
+"patikrindami jau esančius Weblate svetainėje."
 
 #: ../../docs/index.rst:27
 msgid ""
@@ -100,8 +112,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Kol kas lokalizuoti vertimai yra prieinami tik „latest“ (kūrimui) skyriui, "
-"bet vis dėlto turėtų būti tinkami išmokti naudotis stabiliais Godot "
+"Šiuo metu lokalizuoti vertimai yra prieinami tik „latest“ (vystomoje) "
+"šakoje, bet vis dėlto turėtų būti tinkami išmokti naudotis stabiliais Godot "
 "leidimais."
 
 #: ../../docs/index.rst:31
@@ -137,6 +149,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/index.rst:45
+#, fuzzy
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -144,6 +157,10 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine yra atviro kodo projektas, sukurtas savanorių bendruomenės "
+"pastangomis. Dokumentacijos komanda visada gali pasinaudoti jūsų "
+"atsiliepimais pamokų ir klasių žinynui patobulinimui. Jei kažko nesuprantate "
+"ar negalite rasti dokumentacijoje, padėkite ją tobulinti pranešdami mums!"
 
 #: ../../docs/index.rst:52
 msgid ""
@@ -156,11 +173,11 @@ msgstr ""
 
 #: ../../docs/index.rst:61
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
 msgid "Translation status"
-msgstr ""
+msgstr "Vertimo statusas"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -279,7 +296,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Prieš pradedant"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -306,9 +323,9 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Žaidimų variklis yra sudėtingas įrankis, todėl sunku keliais žodžiais "
-"pristatyti Godot. Bet čia yra musų oficialus pristatimas kurį galite laisvai "
-"panaudoti jei jums reikia trumpo aprašymo apie Godot Engine."
+"Žaidimų variklis yra sudėtingas įrankis, todėl sunku pristatyti Godot "
+"keliais žodžiais. Štai santrauka, kurią galite laisvai panaudoti prireikus "
+"trumpo Godot Engine aprašymo."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -1602,7 +1619,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:48
 #, fuzzy
 msgid "Built-in script editor."
-msgstr "Atverti skriptų editorių"
+msgstr "Įmontuotas skriptų editorius."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2487,7 +2504,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "Import"
-msgstr ""
+msgstr "Importuoti"
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -5439,9 +5456,8 @@ msgid "All nodes have the following attributes:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:23
-#, fuzzy
 msgid "A name."
-msgstr "Veiksmo pavadinimas"
+msgstr "Pavadinimas."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:24
 msgid "Editable properties."
@@ -11272,9 +11288,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:12
-#, fuzzy
 msgid "We'll start with an introduction to using the animation editor."
-msgstr "Įvadas"
+msgstr "Pradėsime su pristatymu apie animacijų rengyklės naudojimą."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:15
 #, fuzzy
@@ -24042,7 +24057,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 msgid "Description"
-msgstr ""
+msgstr "Aprašymas"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:86
 msgid "Stored as raw pixels"
@@ -53733,7 +53748,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:240
 msgid "Properties"
-msgstr ""
+msgstr "Savybės"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -53838,7 +53853,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "value"
-msgstr ""
+msgstr "reikšmė"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
@@ -59005,7 +59020,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr ""
+msgstr "Konstantos"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:659
 msgid ""
@@ -77469,9 +77484,10 @@ msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
 #: ../../docs/tutorials/vr/xr_primer.rst:150
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`Godot Oculus demonstracija <https://github.com/GodotVR/godot-oculus-"
+"demo>`__."
 
 #: ../../docs/tutorials/vr/xr_primer.rst:151
 msgid ""
@@ -77562,16 +77578,16 @@ msgid "OpenXR plugin"
 msgstr "Priedai"
 
 #: ../../docs/tutorials/vr/openxr/index.rst:6
-#, fuzzy
 msgid "Welcome to the Godot OpenXR documentation!"
-msgstr "Apie dokumentaciją"
+msgstr "Sveiki atvykę į Godot OpenXR dokumentaciją!"
 
 #: ../../docs/tutorials/vr/openxr/index.rst:11
-#, fuzzy
 msgid ""
 "This is the documentation for the `Godot OpenXR plugin <https://github.com/"
 "GodotVR/godot_openxr>`__."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"Čia – `Godot OpenXR papildinio <https://github.com/GodotVR/godot_openxr>`__ "
+"dokumentacija."
 
 #: ../../docs/tutorials/vr/openxr/index.rst:13
 msgid ""
@@ -78538,7 +78554,9 @@ msgstr ""
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`__."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"Galite rasti baigtą projektą `OpenVR GitHub repozitorijoje <https://github."
+"com/GodotVR/godot_openvr_fps>`__."
 
 #: ../../docs/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
@@ -87332,9 +87350,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:480
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "Apie dokumentaciją"
+msgstr "Dabar galime sugeneruoti dokumentaciją:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
 msgid ""

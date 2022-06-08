@@ -6,7 +6,7 @@
 # Daris C. Mondigo <mondigodc@gmail.com>, 2018.
 # Jethro Parker <lionbearjet@hotmail.com>, 2020.
 # Joshua Dela Cruz <onihaegaming@gmail.com>, 2019.
-# Marco Santos <enum.scima@gmail.com>, 2019.
+# Marco Santos <enum.scima@gmail.com>, 2019, 2022.
 # Napstaguy04 <brokenscreen3@gmail.com>, 2021.
 # Prince Merluza <zero.bash@gmail.com>, 2018.
 # Sven Sorupia <stsorupia@gmail.com>, 2021.
@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-04-29 17:56+0200\n"
-"PO-Revision-Date: 2021-11-19 09:53+0000\n"
-"Last-Translator: Napstaguy04 <brokenscreen3@gmail.com>\n"
+"PO-Revision-Date: 2022-05-15 09:39+0000\n"
+"Last-Translator: Marco Santos <enum.scima@gmail.com>\n"
 "Language-Team: Filipino <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fil/>\n"
 "Language: fil\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -43,11 +43,11 @@ msgstr "Magsimula"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr "Mga tutorial"
+msgstr "Mga Tutorial"
 
 #: ../../docs/index.rst:114
 msgid "Development"
-msgstr "Pagbuo"
+msgstr "Pag-develop"
 
 #: ../../docs/index.rst:125
 msgid "Community"
@@ -59,19 +59,18 @@ msgstr "Sanggunian ng Class"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.4* branch"
-msgstr "Dokumentasyon ng Godot - sangay *3.4*"
+msgstr "Godot Docs - *3.4* branch"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Ang dokumentasyon ng Godot ay maaring makita sa iba't-ibang mga wika at "
-"bersyon. I-expand ang \"Read the Docs\" na panel sa ibaba ng sidebar para "
-"makita ang listahan."
+"Mababasa ang dokumentasyon ng Godot sa maraming mga wika at bersyon. "
+"Palawakin ang \"Read the Docs\" panel sa baba ng sidebar para makita ang "
+"listahan."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -79,9 +78,11 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Ito ang dokumentasyon para sa development (master) branch. Hinahanap ang "
-"dokumentasyon para sa kasalukuyang **stable** na branch? `Tingnan ito "
-"<https://docs.godotengine.org/en/stable>`_."
+"Ito ang dokumentasyon para sa stable na 3.4 branch. Hinahanap ang "
+"dokumentasyon ng kasalukuyang **development** branch? `Tingnan mo ito "
+"<https://docs.godotengine.org/en/latest>`_.\n"
+"Maba-browse mo rin ang dokumentasyon para sa kasalukuyang stable na `3.3 "
+"<https://docs.godotengine.org/en/3.3>`_ branch."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -583,7 +584,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/tutorials/export/exporting_basics.rst:382
@@ -1613,7 +1614,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/external_editor.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:197
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:93
@@ -2454,7 +2455,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/index.rst:2
 #: ../../docs/tutorials/export/exporting_for_web.rst:167
 msgid "Audio"
-msgstr ""
+msgstr "Tunog"
 
 #: ../../docs/about/list_of_features.rst:387
 msgid "Mono, stereo, 5.1 and 7.1 output."
@@ -2579,7 +2580,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:112
 msgid "Input"
-msgstr ""
+msgstr "Input"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid ""
@@ -2979,7 +2980,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/animation.rst:2
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "Animation"
-msgstr ""
+msgstr "Animation"
 
 #: ../../docs/about/list_of_features.rst:586
 msgid "Direct kinematics and inverse kinematics."
@@ -3170,7 +3171,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
@@ -3412,7 +3413,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/index.rst:81
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
@@ -3430,7 +3431,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:246
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Pisika"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
@@ -4497,7 +4498,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdnative/gdnative_cpp_example.rst:559
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
-msgstr ""
+msgstr "Mga Signal"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:72
 msgid ""
@@ -8456,7 +8457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
-msgstr ""
+msgstr "Mensahe"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -12928,7 +12929,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr ""
+msgstr "Iskala"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -15999,7 +16000,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Subsurface Scattering"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -17039,7 +17040,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:129
 msgid "Quality"
-msgstr ""
+msgstr "Kalidad"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:131
 msgid ""
@@ -17531,7 +17532,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:114
 #: ../../docs/tutorials/rendering/viewports.rst:133
 msgid "Capture"
-msgstr ""
+msgstr "I-capture"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:327
 msgid ""
@@ -17567,7 +17568,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:571
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:344
 msgid ""
@@ -23923,7 +23924,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
 msgid "Compression"
-msgstr ""
+msgstr "Compression"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 msgid ""
@@ -29683,7 +29684,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr ""
+msgstr "Command"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
@@ -30106,7 +30107,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:158
 msgid "Path"
-msgstr ""
+msgstr "Daan"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:160
 msgid ""
@@ -31286,7 +31287,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "Insert Key"
-msgstr ""
+msgstr "Magpasok ng Key"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid ":kbd:`Ins`"
@@ -32458,7 +32459,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:333
 #: ../../docs/development/compiling/compiling_for_ios.rst:79
 msgid "Run"
-msgstr ""
+msgstr "Patakbuhin"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid ":kbd:`Ctrl + Shift + X`"
@@ -36754,7 +36755,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:198
 msgid "Clipboard"
-msgstr ""
+msgstr "Clipboard"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:200
 msgid ""
@@ -37680,7 +37681,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Lokal"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -49907,7 +49908,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "Pagre-render"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -53744,7 +53745,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:240
 msgid "Properties"
-msgstr ""
+msgstr "Mga Property"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -53850,7 +53851,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "value"
-msgstr ""
+msgstr "value"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
@@ -57656,7 +57657,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:138
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:643
 msgid "Function"
-msgstr ""
+msgstr "Function"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:140
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
@@ -59016,7 +59017,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr ""
+msgstr "Mga Constant"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:659
 msgid ""
@@ -62625,7 +62626,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Gawain"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -62949,7 +62950,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
@@ -65963,7 +65964,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -66135,7 +66136,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
 msgid "Settings"
-msgstr ""
+msgstr "Pagsasaayos"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -66255,7 +66256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:51
 msgid ""
@@ -86926,7 +86927,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:15
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"
@@ -86947,7 +86948,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Mga Module"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -93815,7 +93816,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Result"
-msgstr ""
+msgstr "Resulta"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
 msgid "[Class]"

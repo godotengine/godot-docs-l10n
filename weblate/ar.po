@@ -27,6 +27,7 @@
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018-2020.
 # Omar Salam <omar-ma-salam@outlook.com>, 2019.
 # osama-su <osamaahmed.sus@gmail.com>, 2020.
+# Oussama otadev <G138007291@taalim.ma>, 2022.
 # Rached Noureddine <rached.noureddine@gmail.com>, 2018.
 # Raeed Mazin <raidth3@gmail.com>, 2021.
 # spiderx0x <legendofdarks@gmail.com>, 2019.
@@ -45,8 +46,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-04-29 17:56+0200\n"
-"PO-Revision-Date: 2022-03-17 22:54+0000\n"
-"Last-Translator: Mr.k <mineshtine28546271@gmail.com>\n"
+"PO-Revision-Date: 2022-06-08 06:47+0000\n"
+"Last-Translator: Oussama otadev <G138007291@taalim.ma>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -55,7 +56,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -1664,11 +1665,15 @@ msgstr ""
 "Data oriented Design)؟"
 
 #: ../../docs/about/faq.rst:448
+#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"في حين أن Godot داخليا لكثير من مهام الأداء الثقيلة يحاول استخدام تماسك "
+"ذاكرة التخزين المؤقت قدر الإمكان ، نعتقد أن معظم المستخدمين لا يحتاجون حقا "
+"إلى إجبارهم على استخدام ممارسات التصميم المُوجه بالبيانات."
 
 #: ../../docs/about/faq.rst:452
 msgid ""
@@ -1678,6 +1683,11 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"التصميم المُوجه بالبيانات هو في الغالب تحسين تماسك ذاكرة التخزين المؤقت التي "
+"يمكن أن تحصل فقط على تحسينات كبيرة في الأداء عند التعامل مع عشرات الآلاف من "
+"الكائنات (التي تتم معالجتها في كل إطار مع القليل من التعديل). كما هو الحال. "
+"فإذا كنت تنقل بضع مئات من العفاريت أو الأعداء لكل إطار ، فلن يساعدك التصميم "
+"المُوجه بالبيانات ، ويجب أن تفكر في نهج مختلف للتحسين."
 
 #: ../../docs/about/faq.rst:459
 msgid ""
@@ -1776,6 +1786,8 @@ msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"هذا هو \"<https://github.com/godotengine/godot/issues/30330> من الأخطاء "
+"المعروفة\" __ على برامج تشغيل رسومات Intel على Windows."
 
 #: ../../docs/about/troubleshooting.rst:30
 msgid ""
@@ -1821,6 +1833,9 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"هذه \"مشكلة معروفة <https://github.com/godotengine/godot/issues/32990>\" __ "
+"ناجمة عن تطبيق Stardock Fences التابع لجهة خارجية على Windows. الحل الوحيد "
+"المعروف هو تعطيل Stardock Fences أثناء استخدام Godot."
 
 #: ../../docs/about/troubleshooting.rst:54
 msgid "The Godot editor appears frozen after clicking the system console."
@@ -1834,6 +1849,10 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"عند تشغيل Godot على Windows مع تمكين وحدة تحكم النظام ، يمكنك تمكين * وضع "
+"التحديد * عن طريق الخطأ بالنقر داخل نافذة الأوامر. يقوم هذا السلوك الخاص ب "
+"Windows بإيقاف التطبيق مؤقتا للسماح لك بتحديد نص داخل وحدة تحكم النظام. لا "
+"يمكن لغودوت تجاوز هذا السلوك الخاص بالنظام."
 
 #: ../../docs/about/troubleshooting.rst:61
 msgid ""
