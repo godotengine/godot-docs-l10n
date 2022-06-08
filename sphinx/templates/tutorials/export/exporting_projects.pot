@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,58 +145,86 @@ msgid "In production, it is useful to automate builds, and Godot supports this w
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:148
-msgid "This will export to ``some_name.exe``, assuming there is a preset called \"Windows Desktop\" and the template can be found. (The export preset name must be written within quotes if it contains spaces or special characters.) The output path is relative to the project path or absolute; it does not respect the directory the command was invoked from."
+msgid "This will export to ``some_name.exe``, assuming there is a preset called \"Windows Desktop\" and the template can be found. (The export preset name must be written within quotes if it contains spaces or special characters.) The output path is *relative to the project path* or *absolute*; **it does not respect the directory the command was invoked from**."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:154
-msgid "You can also configure it to export *only* the PCK or ZIP file, allowing a single exported main pack file to be used with multiple Godot executables. When doing so, the export preset name must still be specified on the command line:"
+msgid "The output file extension should match the one used by the Godot export process:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:156
+msgid "Windows: ``.exe``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:157
+msgid "macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* macOS). ``.app`` is not supported directly, although the generated ZIP archive contains an ``.app`` bundle."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:159
+msgid "Linux: Any extension (including none). ``.x86_64`` is typically used for 64-bit x86 binaries."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:160
+msgid "HTML5: ``.zip``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:161
+msgid "Android: ``.apk``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:162
-msgid "It is often useful to combine the ``--export`` flag with the ``--path`` flag, so that you do not need to ``cd`` to the project folder before running the command:"
+msgid "iOS: ``.zip``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:164
+msgid "You can also configure it to export *only* the PCK or ZIP file, allowing a single exported main pack file to be used with multiple Godot executables. When doing so, the export preset name must still be specified on the command line:"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:172
-msgid "See :ref:`doc_command_line_tutorial` for more information about using Godot from the command line."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_projects.rst:176
-msgid "PCK versus ZIP pack file formats"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_projects.rst:178
-msgid "Each format has its upsides and downsides. PCK is the default and recommended format for most use cases, but you may want to use a ZIP archive instead depending on your needs."
+msgid "It is often useful to combine the ``--export`` flag with the ``--path`` flag, so that you do not need to ``cd`` to the project folder before running the command:"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:182
-msgid "**PCK format:**"
+msgid "See :ref:`doc_command_line_tutorial` for more information about using Godot from the command line."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:184
-msgid "Uncompressed format. Larger file size, but faster to read/write."
+#: ../../docs/tutorials/export/exporting_projects.rst:186
+msgid "PCK versus ZIP pack file formats"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:185
-msgid "Not readable and writable using tools normally present on the user's operating system, even though there are `third-party tools <https://github.com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_projects.rst:190
-msgid "**ZIP format:**"
+#: ../../docs/tutorials/export/exporting_projects.rst:188
+msgid "Each format has its upsides and downsides. PCK is the default and recommended format for most use cases, but you may want to use a ZIP archive instead depending on your needs."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:192
+msgid "**PCK format:**"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:194
+msgid "Uncompressed format. Larger file size, but faster to read/write."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:195
+msgid "Not readable and writable using tools normally present on the user's operating system, even though there are `third-party tools <https://github.com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:200
+msgid "**ZIP format:**"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:202
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:193
+#: ../../docs/tutorials/export/exporting_projects.rst:203
 msgid "Readable and writable using tools normally present on the user's operating system. This can be useful to make modding easier (see also :ref:`doc_exporting_pcks`)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:198
+#: ../../docs/tutorials/export/exporting_projects.rst:208
 msgid "Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, when using a ZIP file as a pack file, the exported binary will not try to use it automatically. Therefore, you have to create a *launcher script* that the player can double-click or run from a terminal to launch the project::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:210
+#: ../../docs/tutorials/export/exporting_projects.rst:220
 msgid "Save the launcher script and place it in the same folder as the exported binary. On Linux, make sure to give executable permissions to the launcher script using the command ``chmod +x launch.sh``."
 msgstr ""
 

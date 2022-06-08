@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,15 +84,19 @@ msgstr ""
 msgid "Alternatively, you can build the documentation by running the sphinx-build program manually:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:86
+#: ../../docs/community/contributing/building_the_manual.rst:85
+msgid "You can also specify a list of files to build, which can greatly speed up compilation:"
+msgstr ""
+
+#: ../../docs/community/contributing/building_the_manual.rst:92
 msgid "Building with Sphinx and virtualenv"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:88
+#: ../../docs/community/contributing/building_the_manual.rst:94
 msgid "If you want your Sphinx installation scoped to the project, you can install sphinx-build using virtualenv. To do so, run this command from this repository's root folder:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:98
+#: ../../docs/community/contributing/building_the_manual.rst:104
 msgid "Then, run ``make html`` as shown above."
 msgstr ""
 

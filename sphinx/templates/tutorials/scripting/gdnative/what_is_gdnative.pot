@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,70 +85,70 @@ msgid "You can use C++ modules to provide additional features in a project witho
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:57
-msgid "C++ modules are supported on all platforms. In contrast, GDNative isn't supported on HTML5 and the Universal Windows Platform (UWP) yet."
+msgid "C++ modules are supported on all platforms. In contrast, GDNative has only limited support on HTML5 (cannot be used together with multi-threading), and is not supported on Universal Windows Platform (UWP)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:59
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:60
 msgid "C++ modules can be faster than GDNative, especially when the code requires a lot of communication through the scripting API."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:63
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:64
 msgid "Supported languages"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:65
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:66
 msgid "The Godot developers officially support the following language bindings for GDNative:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:68
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:69
 msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:69
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:70
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:73
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:74
 msgid "There are no plans to support additional languages with GDNative officially. That said, the community offers several bindings for other languages (see below)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:79
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:80
 msgid "The bindings below are developed and maintained by the community:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:84
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:85
 msgid "`D <https://github.com/godot-d/godot-d>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:85
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:86
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:86
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:87
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:87
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:88
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:88
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:89
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:92
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:93
 msgid "Not all bindings mentioned here may be production-ready. Make sure to research options thoroughly before starting a project with one of those. Also, double-check whether the binding is compatible with the Godot version you're using."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:98
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:99
 msgid "Version compatibility"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:100
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:101
 msgid ":ref:`Unlike Godot itself <doc_release_policy>`, GDNative has stricter version compatibility requirements as it relies on low-level *ptrcalls* to function."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:103
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:104
 msgid "GDNative add-ons compiled for a given Godot version are only guaranteed to work with the same minor release series. For example, a GDNative add-on compiled for Godot 3.4 will only work with Godot 3.4, 3.4.1, 3.4.2… but not Godot 3.3 or 3.5."
 msgstr ""
 
