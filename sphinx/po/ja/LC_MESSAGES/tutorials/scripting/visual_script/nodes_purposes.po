@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -558,8 +558,9 @@ msgstr ""
 "フロー制御ノードを使用すると、通常は特定の条件に応じて、実行によって異なる分"
 "岐を取ることができます。"
 
+#, fuzzy
 msgid "Condition"
-msgstr ""
+msgstr "コンディション"
 
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
@@ -605,7 +606,7 @@ msgstr ""
 "ノードを追加します。Returnノードは、関数を強制的に終了します。"
 
 msgid "Sequence"
-msgstr ""
+msgstr "シーケンス"
 
 msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
@@ -641,8 +642,9 @@ msgid ""
 "at the same time."
 msgstr "スイッチノードは条件ノードに似ていますが、同時に多くの値に一致します。"
 
+#, fuzzy
 msgid "While"
-msgstr ""
+msgstr "一方"
 
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "

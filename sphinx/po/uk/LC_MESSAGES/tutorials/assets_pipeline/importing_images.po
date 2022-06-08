@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,6 +92,8 @@ msgid ""
 "WebP (``.webp``) - WebP files support transparency and can be compressed "
 "lossily or losslessly. The precision is limited to 8 bits per channel."
 msgstr ""
+"WebP (``.webp``) - файли WebP підтримують прозорість і можуть бути стиснуті "
+"з втратою якості, або без. Точність лімітована 8 бітами на канал."
 
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
@@ -206,13 +208,11 @@ msgstr "і"
 msgid "Uncompressed"
 msgstr "Без стиснення"
 
-#, fuzzy
 msgid "Compress Lossless"
-msgstr "Стиснення без втрат (PNG)"
+msgstr "Стиснення без втрат"
 
-#, fuzzy
 msgid "Compress Lossy"
-msgstr "Стиснення з втратами (WebP)"
+msgstr "Стиснення з втратами"
 
 msgid "Compress VRAM"
 msgstr "Стиснення VRAM"
@@ -223,13 +223,11 @@ msgstr "Опис"
 msgid "Stored as raw pixels"
 msgstr "Зберігається як сирі пікселі"
 
-#, fuzzy
 msgid "Stored as Lossless WebP / PNG"
-msgstr "Стиснення без втрат (PNG)"
+msgstr "Зберігається як стиснуте без втрат WebP / PNG"
 
-#, fuzzy
 msgid "Stored as Lossy WebP"
-msgstr "Зберігається як WebP"
+msgstr "Зберігається як стиснуте з втратами WebP"
 
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
 msgstr "Зберігається як S3TC/BC, або PVRTC/ETC, залежно від платформи"
@@ -243,9 +241,8 @@ msgstr "|bad| Багато"
 msgid "|regular| Small"
 msgstr "|regular| Мало"
 
-#, fuzzy
 msgid "regular"
-msgstr "|regular| Мало"
+msgstr "regular"
 
 msgid "|good| Very Small"
 msgstr "|good| Дуже Мало"
@@ -442,7 +439,6 @@ msgstr ""
 msgid "sRGB"
 msgstr "sRGB"
 
-#, fuzzy
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -451,20 +447,26 @@ msgid ""
 msgstr ""
 "Godot використовує лінійний кольоровий простір під час візуалізації 3D. Для "
 "текстур, зіставлених з альбедо або каналами деталей, потрібно ввімкнути цю "
-"опцію, щоб кольори виглядали правильно. Якщо встановити режим \"Виявлення\", "
-"текстура буде позначена як SRGB при використанні в каналах альбедо."
+"опцію, щоб кольори виглядали правильно. Якщо встановити режим **Виявлення**, "
+"текстура буде позначена як sRGB при використанні в каналах альбедо."
 
 msgid ""
 "Since the texture will have its data modified when sRGB is enabled, this "
 "means using the same texture in both 2D and 3D will make the texture display "
 "with incorrect colors in either 2D or 3D."
 msgstr ""
+"Оскільки дані текстури будуть змінені, коли ввімкнено sRGB, це означає, що "
+"використання однієї й тієї ж текстури в 2D і 3D призведе до того, що "
+"текстура буде відображатися з неправильними кольорами в 2D, або 3D."
 
 msgid ""
 "To work around this, make a copy of the texture on the filesystem and enable "
 "sRGB on one of the copies only. Use the copy with sRGB enabled in 3D, and "
 "the copy with sRGB disabled in 2D."
 msgstr ""
+"Щоб обійти це, зробіть копію текстури у файловій системі та ввімкніть sRGB "
+"лише на одній із копій. Використовуйте копію з увімкненим sRGB у 3D і копію "
+"з вимкненим sRGB у 2D."
 
 msgid "Process"
 msgstr "Обробка"
@@ -476,7 +478,7 @@ msgstr ""
 "вигляді текстур."
 
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Виправити прозору рамку"
 
 msgid ""
 "This puts pixels of the same surrounding color in transition from "

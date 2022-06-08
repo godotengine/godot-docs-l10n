@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,16 +21,15 @@ msgid "List of features"
 msgstr "特性列表"
 
 msgid "This page aims to list all features currently supported by Godot."
-msgstr "这一页旨在罗列所有的现在被 Godot 支持的功能特性."
+msgstr "这个页面旨在罗列所有的现在被 Godot 支持的功能特性。"
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"这个页面列出了当前稳定版本的 Godot（3.3）所支持的特性。最新的开发版本（4.0）"
+"这个页面列出了当前稳定版本的 Godot（3.4）所支持的特性。最新的开发版本（4.0）"
 "提供\\ `更多特性 <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`_\\ 。"
 
@@ -97,9 +96,8 @@ msgstr "**特性：**"
 msgid "Scene tree editor."
 msgstr "场景树编辑器。"
 
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "内置主题编辑器。"
+msgstr "内置脚本编辑器。"
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -155,22 +153,21 @@ msgstr ""
 "可以从\\ :ref:`素材库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
 "功能。"
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
-msgstr "使用 GDScript 创建您自己的插件，从而添加新功能或加快工作流程。"
+msgstr "使用 GDScript :ref:`自己创建插件 <doc_making_plugins>` 来新建"
 
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly. features or speed up your workflow."
-msgstr "从项目管理器中的素材库下载项目，然后直接导入。"
+msgstr "从项目管理器的素材库中下载项目并直接导入。为工作流添加功能或进行提速。"
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
-msgstr "从项目管理器中的素材库下载项目，然后直接导入。"
+msgstr ""
+"在项目管理器中，\\ :ref:`从素材库下载项目 <doc_using_assetlib_editor>`\\ 并直"
+"接导入。"
 
 msgid "2D graphics"
 msgstr "2D 图形"
@@ -204,7 +201,7 @@ msgid "Parallax layers."
 msgstr "视差层。"
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "伪 3D 支持，可在编辑器中进行预览。"
 
 msgid "2D lighting with normal maps."
 msgstr "带法线贴图的 2D 光照。"
@@ -298,14 +295,14 @@ msgstr "碰撞多边形（可以被人工绘制或在编辑器中从一个 Sprit
 msgid "3D graphics"
 msgstr "3D 图形"
 
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "默认情况下启用动画导入."
+msgstr "可选的 HDR 渲染，使用 sRGB（默认启用）。"
 
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
 "overdraw, which speeds up complex scene rendering."
 msgstr ""
+"使用可选的深度预处理（默认启用），减少重复绘制的消耗，加速复杂场景的渲染。"
 
 msgid "LDR rendering for greater compatibility."
 msgstr "兼容性更高的 LDR 渲染。"
@@ -323,9 +320,8 @@ msgstr "**摄像机：**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透视、正交以及视锥偏移摄像机。"
 
-#, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "**基于物理的渲染：**"
+msgstr "**基于物理的渲染（内置材质特性）：**"
 
 msgid "Follows the Disney PBR model."
 msgstr "遵循迪士尼 PBR 模型。"
@@ -334,10 +330,11 @@ msgid ""
 "Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
 "shading modes."
 msgstr ""
+"支持 Lambert、Lambert Wrap（半 Lambert）、Oren-Nayar、Toon 漫反射着色模式。"
 
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
-msgstr ""
+msgstr "支持 Schlick-GGX、Blinn、Phong、Toon、Disabled 镜面反射着色模式。"
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "使用粗糙度金属度工作流，支持 ORM 纹理。"
@@ -345,13 +342,13 @@ msgstr "使用粗糙度金属度工作流，支持 ORM 纹理。"
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance"
-msgstr ""
+msgstr "使用地平线镜面反射遮蔽（Filament 模型）提升材质外观"
 
 msgid "Normal mapping."
 msgstr "法线贴图。"
 
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "反照率及法线贴图的细节贴图。"
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
@@ -374,6 +371,8 @@ msgid ""
 "refraction). On GLES2, refraction is still functional but lacks support for "
 "material roughness."
 msgstr ""
+"*GLES3：*\\ 支持材质粗糙度的折射（达到模糊折射的效果）。在 GLES2 中，折射仍然"
+"有小，但不支持材质粗糙度。"
 
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "*GLES3：*\\ 近距离衰减（软粒子）。"
@@ -390,9 +389,8 @@ msgstr "全向光。"
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "可调整锥角和衰减的聚光。"
 
-#, fuzzy
 msgid "Specular energy can be adjusted on a per-light basis."
-msgstr "抖动可以根据每个像素或每个对象来确定。"
+msgstr "可以单独调整各个光源的镜面反射能量。"
 
 msgid ""
 "*GLES3:* Lighting is done with a single-pass forward approach. By default, "
@@ -402,6 +400,10 @@ msgid ""
 "approach to lighting, which doesn't have a limit on the number of lights but "
 "is slower with many lights."
 msgstr ""
+"*GLES3：*\\ 光照使用单遍向前的做法。默认情况下，每个网格资源最多可显示 32 个"
+"全向光源和 32 个聚光光源。需要时可以放宽这个限制，但会增加着色器编译时长、降"
+"低性能。GLES2 的光照使用多遍向前的做法，对光源的数量没有限制，但在数量较多时"
+"会比较慢。"
 
 msgid "**Shadow mapping:**"
 msgstr "**阴影贴图：**"
@@ -450,12 +452,11 @@ msgstr "*GLES3：*\\ GI 探针（较慢，半实时）。支持反射。"
 msgid "**Reflections:**"
 msgstr "**反射：**"
 
-#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax box correction can optionally be enabled."
 msgstr ""
-"使用 ReflectionProbe 实现较快的烘焙反射或较慢的实时反射。可以选择启用视差校"
+"使用 ReflectionProbe 实现较快的烘焙反射或较慢的实时反射。可以选择启用视差盒校"
 "正。"
 
 msgid ""
@@ -544,11 +545,10 @@ msgid "**Texture compression:**"
 msgstr "**纹理压缩：**"
 
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
-msgstr ""
+msgstr "无损或有损 WebP（不会节省 VRAM；仅减少存储大小）。"
 
-#, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
-msgstr "*GLES3：*\\ S3TC（移动/Web 平台不支持）。"
+msgstr "S3TC（仅支持桌面平台）。"
 
 msgid "ETC1 (recommended when using the GLES2 renderer)."
 msgstr "ETC1（建议在使用 GLES2 渲染器时使用）。"
@@ -568,29 +568,29 @@ msgstr "多采样抗锯齿（MSAA）。"
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "快速近似抗锯齿（FXAA）。"
 
-#, fuzzy
 msgid "**Performance:**"
-msgstr "性能"
+msgstr "**性能：**"
 
 msgid ""
 "Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
 "Supports gameplay notifications with primary and secondary visibility to "
 "disable AI/physics processing for nodes that don't need it."
 msgstr ""
+"使用\\ :ref:`房间与入口 <doc_rooms_and_portals>`\\ 实现遮挡剔除。支持游戏通"
+"知，根据主次两级可见性来禁用不需要的节点的 AI/物理处理。"
 
 msgid ""
 "Real-time occluder spheres. Not as effective as rooms and portals (and "
 "doesn't support gameplay notifications), but easier to set up."
-msgstr ""
+msgstr "实时遮挡球。效率不及房间与入口（也不支持游戏通知），但更易使用。"
 
-#, fuzzy
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
 "to further improve quality. This can be helpful when using Godot for offline "
 "rendering."
 msgstr ""
-"这些效果中的大多数都可以调整以获得更好的性能或进一步提高质量. 这在使用Godot进"
-"行脱机渲染时非常有用."
+"上述效果中的大多数都可以进行调整，从而提升性能、提高质量。这在使用 Godot 进行"
+"脱机渲染时非常有用。"
 
 msgid "3D tools"
 msgstr "3D 工具"
@@ -618,7 +618,7 @@ msgstr "3D 几何体辅助类。"
 
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
-msgstr ""
+msgstr "支持在编辑器中将当前场景导出为 glTF 2.0 文件。"
 
 msgid "3D physics"
 msgstr "3D 物理学"
@@ -768,24 +768,23 @@ msgid "Audio"
 msgstr "音频"
 
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr "单声道, 立体声, 5.1和7.1输出."
+msgstr "单声道、立体声、5.1 和 7.1 输出。"
 
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr "2D和3D的非定位和定位播放."
+msgstr "2D 和 3D 的非定位和定位播放。"
 
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr "选择2D或3D的多普勒效应."
+msgstr "选择 2D 或 3D 的多普勒效应。"
 
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr "支持重路由 :ref:`音频总线 <doc_audio_buses>` 以及大量其它效果."
 
-#, fuzzy
 msgid ""
 "Listener2D and Listener3D nodes to listen from a position different than the "
 "camera."
-msgstr "Listener3D 节点从不同于 3D 摄像机的位置进行侦听."
+msgstr "Listener2D 和 Listener3D 节点从不同于摄像机的位置进行侦听。"
 
 msgid ""
 "Audio input to record microphones with real-time access using the "
@@ -847,9 +846,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ （直接从 "
 "Blender 导出）。"
 
-#, fuzzy
 msgid "FBX (experimental, static meshes only)."
-msgstr "FBX（实验性）。"
+msgstr "FBX（实验性，仅支持静态网格）。"
 
 msgid "Collada (.dae)."
 msgstr "Collada（.dae）。"
@@ -862,6 +860,8 @@ msgid ""
 "tangents on import, which ensures consistency with other 3D applications "
 "such as Blender."
 msgstr ""
+"在导入时使用 `Mikktspace <http://www.mikktspace.com/>`__ 为 3D 网格生成切线，"
+"保证与 Blender 等其他 3D 应用的一致性。"
 
 msgid "Input"
 msgstr "输入"
@@ -1037,6 +1037,10 @@ msgid ""
 "Any binary can be used without a window using the ``--no-window`` :ref:"
 "`command line argument <doc_command_line_tutorial>`."
 msgstr ""
+"可以下载 Linux 的\\ :ref:`无头/服务器二进制文件 "
+"<doc_exporting_for_dedicated_servers>`\\ ，也可以\\ :ref:`为 macOS 编译 "
+"<doc_compiling_for_osx>`\\ 。任何二进制文件都可以使用 ``--no-window`` :ref:`"
+"命令行参数 <doc_command_line_tutorial>`\\ 关闭窗口使用。"
 
 msgid "Mobile"
 msgstr "移动端"
@@ -1109,13 +1113,12 @@ msgid "Trees (can also be used to represent tables)."
 msgstr "树状图（也可用于显示表格）。"
 
 msgid "Color picker with RGB and HSV modes."
-msgstr ""
+msgstr "支持 RGB 及 HSV 模式的取色器。"
 
-#, fuzzy
 msgid ""
 "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
 "draggable splitter, ...)."
-msgstr "容器（水平、垂直、网格、居中、边距、可拖拽分割器……）。"
+msgstr "容器（水平、垂直、网格、流式、居中、边距、比例、可拖拽分割器……）。"
 
 msgid "Controls can be rotated and scaled."
 msgstr "控件可以旋转和缩放。"
@@ -1165,11 +1168,10 @@ msgstr "根据当前的编辑器主题设置生成主题。"
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr "使用 :ref:`class_StyleBoxFlat` 进行基于向量的程序式主题设计。"
 
-#, fuzzy
 msgid ""
 "Supports rounded/beveled corners, drop shadows, per-border widths and "
 "antialiasing."
-msgstr "支持圆角/斜角、阴影和每边框宽度。"
+msgstr "支持圆角/斜角、阴影、每边框宽度、抗锯齿。"
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
 msgstr "使用 :ref:`class_StyleBoxTexture` 进行基于纹理的主题设计。"
@@ -1188,7 +1190,7 @@ msgstr "正向运动学与反向运动学."
 msgid ""
 ":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
 "code."
-msgstr ""
+msgstr "使用 :ref:`Tween <class_Tween>` 节点通过代码轻松执行程序式动画。"
 
 msgid "Support for animating any property with customizable interpolation."
 msgstr "支持为任何属性制作动画, 可自定义插值."
@@ -1230,9 +1232,8 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr "使用 :ref:`class_ConfigFile` 读写 INI 样式的配置文件."
 
-#, fuzzy
 msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
-msgstr "可以（反）序列化任何 Godot 数据类型，包括 Vector、Color 等。"
+msgstr "可以（反）序列化任何 Godot 数据类型，包括 Vector2/3、Color 等。"
 
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr "使用 :ref:`class_XMLParser` 读取 XML 文件。"
@@ -1262,20 +1263,18 @@ msgstr ""
 ":ref:`对服务器的低级别访问 <doc_using_servers>`\\ ，能够在必要时绕过场景树的"
 "开销。"
 
-#, fuzzy
 msgid ""
 ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
-msgstr "请参阅\\ :ref:`命令行教程 <doc_command_line_tutorial>`\\ 。"
+msgstr "使用\\ :ref:`命令行接口 <doc_command_line_tutorial>`\\ 进行自动化。"
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "使用持续集成平台导出和部署项目."
 
-#, fuzzy
 msgid ""
 "`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
 "misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"适用于Bash、zsh 和 fish 的\\ `自动补全脚本 <https://github.com/godotengine/"
+"适用于 Bash、zsh 和 fish 的 `Shell 补全脚本 <https://github.com/godotengine/"
 "godot/tree/master/misc/dist/shell>`_\\ 。"
 
 msgid ""

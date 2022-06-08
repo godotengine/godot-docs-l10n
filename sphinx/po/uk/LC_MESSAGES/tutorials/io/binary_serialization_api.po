@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Binary serialization API"
-msgstr ""
+msgstr "API бінарної серіалізації"
 
 msgid "Introduction"
 msgstr "Вступ"
@@ -30,20 +30,31 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
+"Godot має простий API серіалізації на основі Variant. Він використовується "
+"для ефективного перетворення типів даних у масив байтів. Цей API "
+"використовується в функціях ``get_var`` і ``store_var`` з :ref:`class_File`, "
+"а також API пакетів для :ref:`class_PacketPeer`. Цей формат *не* "
+"використовується для бінарних сцен і ресурсів."
 
 msgid "Packet specification"
-msgstr ""
+msgstr "Специфікація пакетів"
 
+#, fuzzy
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
+"Пакет призначений для того, щоб завжди вкладатися в 4 байти. Усі значення "
+"малоендіанові закодовані. Всі пакети мають 4-байтовий заголовок, що "
+"представляє ціле число, що вказує тип даних."
 
 msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
 msgstr ""
+"Для визначення типу використовуються найнижчі значення двох байтів, тоді як "
+"найбільше значення двох байтів містить мітки:"
 
 msgid "Type"
 msgstr "Тип"
@@ -55,7 +66,7 @@ msgid "0"
 msgstr ""
 
 msgid "null"
-msgstr "null"
+msgstr "нуль"
 
 msgid "1"
 msgstr "1"
@@ -67,13 +78,13 @@ msgid "2"
 msgstr "2"
 
 msgid "integer"
-msgstr ""
+msgstr "ціле число"
 
 msgid "3"
 msgstr "3"
 
 msgid "float"
-msgstr "float"
+msgstr "десяткове число"
 
 msgid "4"
 msgstr "4"
@@ -84,6 +95,7 @@ msgstr "текст"
 msgid "5"
 msgstr "5"
 
+#, fuzzy
 msgid "vector2"
 msgstr "Вектор"
 
@@ -96,6 +108,7 @@ msgstr ""
 msgid "7"
 msgstr "7"
 
+#, fuzzy
 msgid "vector3"
 msgstr "Вектор"
 
@@ -109,7 +122,7 @@ msgid "9"
 msgstr "9"
 
 msgid "plane"
-msgstr ""
+msgstr "площина"
 
 msgid "10"
 msgstr "10"
@@ -133,7 +146,7 @@ msgid "13"
 msgstr ""
 
 msgid "transform"
-msgstr ""
+msgstr "3д перетворення"
 
 msgid "14"
 msgstr ""
@@ -145,7 +158,7 @@ msgid "15"
 msgstr ""
 
 msgid "node path"
-msgstr ""
+msgstr "шлях вузла"
 
 msgid "16"
 msgstr ""
@@ -157,31 +170,31 @@ msgid "17"
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "об'єкт"
 
 msgid "18"
 msgstr ""
 
 msgid "dictionary"
-msgstr ""
+msgstr "словник"
 
 msgid "19"
 msgstr ""
 
 msgid "array"
-msgstr ""
+msgstr "масив"
 
 msgid "20"
 msgstr "20"
 
 msgid "raw array"
-msgstr ""
+msgstr "необроблений масив"
 
 msgid "21"
 msgstr ""
 
 msgid "int array"
-msgstr ""
+msgstr "масив з цілих чисел"
 
 msgid "22"
 msgstr ""
@@ -193,25 +206,25 @@ msgid "23"
 msgstr ""
 
 msgid "string array"
-msgstr ""
+msgstr "масив з текстів"
 
 msgid "24"
 msgstr ""
 
 msgid "vector2 array"
-msgstr ""
+msgstr "масив з vector2"
 
 msgid "25"
 msgstr ""
 
 msgid "vector3 array"
-msgstr ""
+msgstr "масив з vector3"
 
 msgid "26"
 msgstr ""
 
 msgid "color array"
-msgstr ""
+msgstr "масив з кольорів"
 
 msgid "27"
 msgstr ""
@@ -219,6 +232,7 @@ msgstr ""
 msgid "max"
 msgstr "макс."
 
+#, fuzzy
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
 "packet. Note that this assumes Godot is compiled with single-precision "
@@ -227,9 +241,15 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
+"Нижче наведено фактичний вміст пакета, який варіюється для кожного типу "
+"пакета. Зауважте, що це передбачає, що Godot скомпільований за "
+"замовчуванням, з одноточковими десятковими. Якщо Godot був скомпільований з "
+"подвійними точними десятковими, довжина полів \"Float\" в структурах даних "
+"повинна бути 8, а зміщення повинно бути ``(offset - 4) * 2 + 4``. Сам тип "
+"\"float\" завжди використовує подвійну точність."
 
 msgid "0: null"
-msgstr "0: null"
+msgstr "0: нуль"
 
 msgid "1: :ref:`bool<class_bool>`"
 msgstr ""
@@ -238,7 +258,7 @@ msgid "Offset"
 msgstr "Зміщення"
 
 msgid "Len"
-msgstr "<title>LEN</title>"
+msgstr "Довжина"
 
 msgid "Description"
 msgstr "Опис"
@@ -247,77 +267,81 @@ msgid "Integer"
 msgstr "Integer (ціле)"
 
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 для False, 1 для True"
 
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "2: :ref:`цілі числа (int)<class_int>`"
 
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
 msgstr ""
+"Якщо мітки не встановлені (flags == 0), ціле число надсилається як 32-"
+"розрядне ціле число:"
 
-#, fuzzy
 msgid "32-bit signed integer"
-msgstr "Ціле число зі знаком."
+msgstr "Ціле число помічене, як 32-розрядне"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
+"Якщо встановлена мітка ``ENCODE_FLAG_64`` (``flags & 1 == 1``), ціле число "
+"надсилається, як 64-розрядне ціле число:"
 
-#, fuzzy
 msgid "64-bit signed integer"
-msgstr "Підписаний, 64-розрядний Integer"
+msgstr "Ціле число відмічене, як 64-розрядне"
+
+msgid "3: :ref:`float<class_float>`"
+msgstr "3: :ref:`десяткові<class_float>`"
 
 #, fuzzy
-msgid "3: :ref:`float<class_float>`"
-msgstr ":ref:`float <class_float>`"
-
 msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
 msgstr ""
+"Якщо мітка не встановлена (flags == 0), десяткове число надсилається, як 32 "
+"розрядне з одинарною точністю"
 
 msgid "Float"
 msgstr ""
 
 msgid "IEEE 754 single-precision float"
-msgstr ""
+msgstr "Десяткове число одинарної точності стандарту IEEE 754"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
+"Якщо встановлена мітка ``ENCODE_FLAG_64`` (``flags & 1 == 1``), десяткове "
+"число надсилається, як 64 - розрядне десяткове число подвійної точності:"
 
 msgid "IEEE 754 double-precision float"
-msgstr ""
+msgstr "Десяткове число подвійної точності стандарту IEEE 754"
 
 msgid "4: :ref:`String<class_string>`"
 msgstr ""
 
 msgid "String length (in bytes)"
-msgstr ""
+msgstr "Довжина тексту (в байтах)"
 
 msgid "X"
 msgstr "X"
 
 msgid "Bytes"
-msgstr "Байтів"
+msgstr "Байти"
 
 msgid "UTF-8 encoded string"
-msgstr ""
+msgstr "Текст закодований в UTF-8"
 
 msgid "This field is padded to 4 bytes."
-msgstr ""
+msgstr "Це поле вміщує до 4 байт."
 
 msgid "5: :ref:`Vector2<class_vector2>`"
 msgstr ""
 
-#, fuzzy
 msgid "X coordinate"
 msgstr "Координата X"
 
-#, fuzzy
 msgid "Y coordinate"
 msgstr "Координата Y"
 
@@ -325,15 +349,14 @@ msgid "6: :ref:`Rect2<class_rect2>`"
 msgstr ""
 
 msgid "X size"
-msgstr ""
+msgstr "Розмір по X"
 
 msgid "Y size"
-msgstr ""
+msgstr "Розмір по Y"
 
 msgid "7: :ref:`Vector3<class_vector3>`"
 msgstr ""
 
-#, fuzzy
 msgid "Z coordinate"
 msgstr "Координата Z"
 
@@ -342,33 +365,39 @@ msgstr ""
 
 msgid "The X component of the X column vector, accessed via [0][0]"
 msgstr ""
+"Компонент X вектора стовпця X, доступ до якого здійснюється через [0][0]"
 
 msgid "The Y component of the X column vector, accessed via [0][1]"
 msgstr ""
+"Компонент Y вектора стовпця X, доступ до якого здійснюється через [0][1]"
 
 msgid "The X component of the Y column vector, accessed via [1][0]"
 msgstr ""
+"Компонент X вектора стовпця Y, доступ до якого здійснюється через [1][0]"
 
 msgid "The Y component of the Y column vector, accessed via [1][1]"
 msgstr ""
+"Компонент Y вектора стовпця Y, доступ до якого здійснюється через [1][1]"
 
 msgid "The X component of the origin vector, accessed via [2][0]"
 msgstr ""
+"Компонент X оригінального вектора, доступ до якого здійснюється через [2][0]"
 
 msgid "The Y component of the origin vector, accessed via [2][1]"
 msgstr ""
+"Компонент Y оригінального вектора, доступ до якого здійснюється через [2][1]"
 
 msgid "9: :ref:`Plane<class_plane>`"
 msgstr ""
 
 msgid "Normal X"
-msgstr "Звичайний (1024x768)"
+msgstr "Нормаль по осі X"
 
 msgid "Normal Y"
-msgstr ""
+msgstr "Нормаль по осі Y"
 
 msgid "Normal Z"
-msgstr ""
+msgstr "Нормаль по осі Z"
 
 msgid "Distance"
 msgstr "Відстань"
@@ -392,34 +421,39 @@ msgid "11: :ref:`AABB<class_aabb>`"
 msgstr ""
 
 msgid "Z size"
-msgstr ""
+msgstr "Розмір по Z"
 
 msgid "12: :ref:`Basis<class_basis>`"
 msgstr ""
 
 msgid "The Z component of the X column vector, accessed via [0][2]"
 msgstr ""
+"Компонент Z вектора стовпця X, доступ до якого здійснюється через [0][2]"
 
 msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr ""
+"Компонент Z вектора стовпця Y, доступ до якого здійснюється через [1][2]"
 
 msgid "28"
 msgstr ""
 
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr ""
+"X компонент вектора стовпця Z, доступ до якого здійснюється через [2][0]"
 
 msgid "32"
 msgstr ""
 
 msgid "The Y component of the Z column vector, accessed via [2][1]"
 msgstr ""
+"Компонент Y вектора стовпця Z, доступ до якого здійснюється через [2][1]"
 
 msgid "36"
 msgstr ""
 
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
+"Компонент Z вектора стовпця Z, доступ до якого здійснюється через [2][2]"
 
 msgid "13: :ref:`Transform<class_transform>`"
 msgstr ""
@@ -429,33 +463,37 @@ msgstr ""
 
 msgid "The X component of the origin vector, accessed via [3][0]"
 msgstr ""
+"Компонент X оригінального вектора, доступ до якого здійснюється через [3][0]"
 
 msgid "44"
 msgstr ""
 
 msgid "The Y component of the origin vector, accessed via [3][1]"
 msgstr ""
+"Компонент Y оригінального вектора, доступ до якого здійснюється через [3][1]"
 
 msgid "48"
 msgstr ""
 
 msgid "The Z component of the origin vector, accessed via [3][2]"
 msgstr ""
+"Компонент Z оригінального вектора, доступ до якого здійснюється через [3][2]"
 
 msgid "14: :ref:`Color<class_color>`"
 msgstr ""
 
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "Червоний (зазвичай 0..1, може бути вище 1 для дуже яскравих кольорів)"
 
 msgid "Green (typically 0..1, can be above 1 for overbright colors)"
 msgstr ""
+"Зелений (як правило, 0..1, може бути вище 1 для дуже яскравих кольорів)"
 
 msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "Синій (зазвичай 0..1, може бути вище 1 для дуже яскравих кольорів)"
 
 msgid "Alpha (0..1)"
-msgstr "альфа"
+msgstr "Альфа (0..1)"
 
 msgid "15: :ref:`NodePath<class_nodepath>`"
 msgstr ""
@@ -463,43 +501,44 @@ msgstr ""
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
+"Довжина тексту, або новий формат (val&0x80000000!=0 і "
+"NameCount=val&0x7FFFFFFF)"
 
 msgid "For old format:"
-msgstr ""
+msgstr "Для старого формату:"
 
 msgid "Padded to 4 bytes."
-msgstr ""
+msgstr "Вміщає до 4 байт."
 
 msgid "For new format:"
-msgstr ""
+msgstr "Для нового формату:"
 
 msgid "Sub-name count"
-msgstr ""
+msgstr "Кількість під-імен"
 
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr ""
+msgstr "Мітки (абсолютні: val&1 != 0 )"
 
 msgid "For each Name and Sub-Name"
-msgstr ""
+msgstr "Для кожного Імені та Під-Імені"
 
 msgid "X+0"
 msgstr "X+0"
 
-#, fuzzy
 msgid "String length"
-msgstr "Довжина рядка"
+msgstr "Довжина тексту"
 
 msgid "X+4"
 msgstr "X+4"
 
 msgid "Every name string is padded to 4 bytes."
-msgstr ""
+msgstr "Кожний текст імені вкладається в 4 байти."
 
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr ""
+msgstr "16: :ref:`RID<class_rid>` (не підтримується)"
 
 msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr ""
+msgstr "17: :ref:`Object<class_object>` не підтримується)"
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
 msgstr ""
@@ -511,6 +550,8 @@ msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
+"Відповідно вся кількість \"елементів\", пар ключа і значення, один за одним "
+"використовують той самий формат."
 
 msgid "19: :ref:`Array<class_array>`"
 msgstr ""
@@ -519,94 +560,95 @@ msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr ""
+"Відповідно, для кількості \"елементів\", значень один за одним, "
+"використовується той самий формат."
 
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
 msgstr ""
 
 msgid "Array length (Bytes)"
-msgstr ""
+msgstr "Довжина масиву (Байти)"
 
 msgid "8..8+length"
-msgstr "Довжина"
+msgstr "8..8+довжина"
 
 msgid "Byte"
 msgstr "Байт"
 
 msgid "Byte (0..255)"
-msgstr "Байт"
+msgstr "Байт (0..255)"
 
 msgid "The array data is padded to 4 bytes."
-msgstr ""
+msgstr "Дані масиву вкладаються в 4 байти."
 
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
 msgstr ""
 
 msgid "Array length (Integers)"
-msgstr ""
+msgstr "Довжина масиву (цілі числа)"
 
 msgid "8..8+length\\*4"
-msgstr "Довжина"
+msgstr "8..8+довжина\\*4"
 
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
 msgstr ""
 
 msgid "Array length (Floats)"
-msgstr ""
+msgstr "Довжина масиву (Десяткові числа)"
 
 msgid "32-bits IEEE 754 float"
-msgstr ""
+msgstr "32-розрядне десяткове число формату IEEE 754"
 
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
 msgstr ""
 
 msgid "Array length (Strings)"
-msgstr ""
+msgstr "Довжина масиву (Текст)"
 
 msgid "For each String:"
-msgstr ""
+msgstr "Для кожного Тексту:"
 
 msgid "Every string is padded to 4 bytes."
-msgstr ""
+msgstr "Кожен текст вкладається в 4 байти."
 
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 msgstr ""
 
-#, fuzzy
 msgid "Array length"
-msgstr "ArrayMesh"
+msgstr "Довжина масиву"
 
 msgid "8..8+length\\*8"
-msgstr "Довжина"
+msgstr "8..8+довжина\\*8"
 
 msgid "8..12+length\\*8"
-msgstr "Довжина"
+msgstr "8..12+довжина\\*8"
 
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 msgstr ""
 
 msgid "8..8+length\\*12"
-msgstr "Довжина"
+msgstr "8..8+довжина\\*12"
 
 msgid "8..12+length\\*12"
-msgstr "Довжина"
+msgstr "8..12+довжина\\*12"
 
 msgid "8..16+length\\*12"
-msgstr "Довжина"
+msgstr "8..16+довжина\\*12"
 
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 msgstr ""
 
 msgid "8..8+length\\*16"
-msgstr "Довжина"
+msgstr "8..8+довжина\\*16"
 
 msgid "8..12+length\\*16"
-msgstr "Довжина"
+msgstr "8..12+довжина\\*16"
 
 msgid "8..16+length\\*16"
-msgstr "Довжина"
+msgstr "8..16+довжина\\*16"
 
 msgid "8..20+length\\*16"
-msgstr "Довжина"
+msgstr "8..20+довжина\\*16"
 
 msgid "Translation status"
 msgstr "Стан перекладу"

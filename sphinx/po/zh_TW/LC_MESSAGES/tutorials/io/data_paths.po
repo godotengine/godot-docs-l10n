@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid "Path separators"
 msgstr ""
 
 msgid ""
-"To as many platforms as possible, Godot only accepts UNIX-style path "
-"separators (``/``). These work on all platforms, including Windows."
+"To make supporting multiple platforms easier, Godot only accepts UNIX-style "
+"path separators (``/``). These work on all platforms, **including Windows**."
 msgstr ""
 
 msgid ""
@@ -54,7 +54,7 @@ msgid ""
 "You can access any file relative to it by writing paths starting with "
 "``res://``, which stands for resources. For example, you can access an image "
 "file ``character.png`` located in the project's root folder in code with the "
-"following path: ``res://some_texture.png``."
+"following path: ``res://character.png``."
 msgstr ""
 
 #, fuzzy
@@ -70,28 +70,11 @@ msgstr ""
 
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
-"On mobile and consoles, this path is unique to the project. On desktop, the "
-"engine stores user files in ``~/.local/share/godot/app_userdata/"
-"[project_name]`` on Linux, ``~/Library/Application Support/Godot/"
-"app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%"
-"\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is "
-"based on the application name defined in the Project Settings, but you can "
-"override it on a per-platform basis using :ref:`feature tags "
-"<doc_feature_tags>`."
+"Unlike ``res://``, the directory pointed at by ``user://`` is *guaranteed* "
+"to be writable to, even in an exported project."
 msgstr ""
 
-msgid ""
-"On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
-"the device via IndexedDB. (Interaction with the main filesystem can still be "
-"performed through the :ref:`JavaScript <class_JavaScript>` singleton.)"
-msgstr ""
-
-msgid "Editor data paths"
-msgstr ""
-
-msgid ""
-"The editor uses different paths for user data, user settings, and cache, "
-"depending on the platform. By default, these paths are:"
+msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
 msgstr ""
 
 msgid "Type"
@@ -108,11 +91,12 @@ msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 msgstr "Windows：``%APPDATA%\\Godot\\script_templates\\``"
 
 #, fuzzy
-msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
+msgid ""
+"macOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
 msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
 
 #, fuzzy
-msgid "Linux: ``~/.local/share/godot/[project_name]``"
+msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
 msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
@@ -128,6 +112,39 @@ msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
 
 #, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
+msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
+
+msgid ""
+"``[project_name]`` is based on the application name defined in the Project "
+"Settings, but you can override it on a per-platform basis using :ref:"
+"`feature tags <doc_feature_tags>`."
+msgstr ""
+
+msgid ""
+"On mobile platforms, this path is unique to the project and is not "
+"accessible by other applications for security reasons."
+msgstr ""
+
+msgid ""
+"On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
+"the device via IndexedDB. (Interaction with the main filesystem can still be "
+"performed through the :ref:`JavaScript <class_JavaScript>` singleton.)"
+msgstr ""
+
+msgid "Editor data paths"
+msgstr ""
+
+msgid ""
+"The editor uses different paths for user data, user settings, and cache, "
+"depending on the platform. By default, these paths are:"
+msgstr ""
+
+#, fuzzy
+msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
+msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
+
+#, fuzzy
+msgid "Linux: ``~/.local/share/godot/[project_name]``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
 #, fuzzy
@@ -195,6 +212,15 @@ msgstr ""
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
+msgstr ""
+
+msgid ""
+"Self-contained mode is not supported in exported projects yet. To read and "
+"write files relative to the executable path, use :ref:`OS."
+"get_executable_path() <class_OS_method_get_executable_path>`. Note that "
+"writing files in the executable path only works if the executable is placed "
+"in a writable location (i.e. **not** Program Files or another directory that "
+"is read-only for regular users)."
 msgstr ""
 
 #, fuzzy

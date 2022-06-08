@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,8 +246,9 @@ msgstr ""
 msgid "Built-in"
 msgstr "Integrato"
 
+#, fuzzy
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 msgid "Global time, in seconds."
 msgstr ""
@@ -305,124 +306,144 @@ msgid ""
 "value can be used as desired."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **VIEWPORT_SIZE**"
-msgstr ""
+msgstr "in vec2 **VIEWPORT_SIZE**"
 
 msgid "Size of viewport (in pixels)."
 msgstr ""
 
+#, fuzzy
 msgid "inout mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **WORLD_MATRIX**"
 
 msgid "Model space to world space transform."
 msgstr ""
 
+#, fuzzy
 msgid "in mat4 **INV_CAMERA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **INV_CAMERA_MATRIX**"
 
 msgid "World space to view space transform."
 msgstr ""
 
+#, fuzzy
 msgid "inout mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **PROJECTION_MATRIX**"
 
 msgid "View space to clip space transform."
 msgstr ""
 
+#, fuzzy
 msgid "in mat4 **CAMERA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **CAMERA_MATRIX**"
 
 msgid "View space to world space transform."
 msgstr ""
 
+#, fuzzy
 msgid "inout mat4 **MODELVIEW_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
+#, fuzzy
 msgid "inout mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
 
 msgid "Clip space to view space transform."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec3 **VERTEX**"
-msgstr ""
+msgstr "inout vec3 **VERTEX**"
 
 msgid "Vertex in local coordinates."
 msgstr ""
 
+#, fuzzy
 msgid "out vec4  **POSITION**"
-msgstr ""
+msgstr "out vec4  **POSITION**"
 
 msgid "If written to, overrides final vertex position."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec3 **NORMAL**"
-msgstr ""
+msgstr "inout vec3 **NORMAL**"
 
 msgid "Normal in local coordinates."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec3 **TANGENT**"
-msgstr ""
+msgstr "inout vec3 **TANGENT**"
 
 msgid "Tangent in local coordinates."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec3 **BINORMAL**"
-msgstr ""
+msgstr "inout vec3 **BINORMAL**"
 
 msgid "Binormal in local coordinates."
 msgstr ""
 
+#, fuzzy
 msgid "out float **ROUGHNESS**"
-msgstr ""
+msgstr "out float **ROUGHNESS**"
 
 msgid "Roughness for vertex lighting."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec2 **UV**"
-msgstr ""
+msgstr "inout vec2 **UV**"
 
 msgid "UV main channel."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec2 **UV2**"
-msgstr ""
+msgstr "inout vec2 **UV2**"
 
 msgid "UV secondary channel."
 msgstr ""
 
+#, fuzzy
 msgid "in bool **OUTPUT_IS_SRGB**"
-msgstr ""
+msgstr "in bool **OUTPUT_IS_SRGB**"
 
 msgid ""
 "``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
 "``false`` in GLES3)."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "inout vec4 **COLOR**"
 
 msgid "Color from vertices."
 msgstr ""
 
+#, fuzzy
 msgid "inout float **POINT_SIZE**"
-msgstr ""
+msgstr "inout float **POINT_SIZE**"
 
 msgid "Point size for point rendering."
 msgstr ""
 
+#, fuzzy
 msgid "in int **INSTANCE_ID**"
-msgstr ""
+msgstr "in int **INSTANCE_ID**"
 
 msgid "Instance ID for instancing."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr ""
+msgstr "in vec4 **INSTANCE_CUSTOM**"
 
 msgid "Instance custom data (for particles, mostly)."
 msgstr ""
@@ -438,8 +459,9 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "in vec4 **FRAGCOORD**"
 
 msgid ""
 "Coordinate of pixel center in screen space. ``xy`` specifies  position in "
@@ -447,29 +469,35 @@ msgid ""
 "lower-left."
 msgstr ""
 
+#, fuzzy
 msgid "in mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "in mat4 **WORLD_MATRIX**"
 
+#, fuzzy
 msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **PROJECTION_MATRIX**"
 
+#, fuzzy
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
+#, fuzzy
 msgid "in vec3 **VERTEX**"
-msgstr ""
+msgstr "in vec3 **VERTEX**"
 
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr ""
 
+#, fuzzy
 msgid "in vec3 **VIEW**"
-msgstr ""
+msgstr "in vec3 **VIEW**"
 
 msgid "Vector from camera to fragment position (in view space)."
 msgstr ""
 
+#, fuzzy
 msgid "in bool **FRONT_FACING**"
-msgstr ""
+msgstr "in bool **FRONT_FACING**"
 
 msgid "``true`` if current face is front face."
 msgstr ""
@@ -483,65 +511,75 @@ msgstr ""
 msgid "Binormal that comes from vertex function."
 msgstr ""
 
+#, fuzzy
 msgid "out vec3 **NORMALMAP**"
-msgstr ""
+msgstr "out vec3 **NORMALMAP**"
 
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr ""
 
+#, fuzzy
 msgid "out float **NORMALMAP_DEPTH**"
-msgstr ""
+msgstr "out float **NORMALMAP_DEPTH**"
 
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "in vec2 **UV**"
 
 msgid "UV that comes from vertex function."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **UV2**"
-msgstr ""
+msgstr "in vec2 **UV2**"
 
 msgid "UV2 that comes from vertex function."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "in vec4 **COLOR**"
 
 msgid "COLOR that comes from vertex function."
 msgstr ""
 
+#, fuzzy
 msgid "out vec3 **ALBEDO**"
-msgstr ""
+msgstr "out vec3 **ALBEDO**"
 
 msgid "Albedo (default white)."
 msgstr ""
 
+#, fuzzy
 msgid "out float **ALPHA**"
-msgstr ""
+msgstr "out float **ALPHA**"
 
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
 msgstr ""
 
+#, fuzzy
 msgid "out float **ALPHA_SCISSOR**"
-msgstr ""
+msgstr "out float **ALPHA_SCISSOR**"
 
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
+#, fuzzy
 msgid "out float **METALLIC**"
-msgstr ""
+msgstr "out float **METALLIC**"
 
 #, fuzzy
 msgid "Metallic (0..1)."
 msgstr "Metallico (0..1)."
 
+#, fuzzy
 msgid "out float **SPECULAR**"
-msgstr ""
+msgstr "out float **SPECULAR**"
 
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
@@ -551,74 +589,85 @@ msgstr ""
 msgid "Roughness (0..1)."
 msgstr "Ruvidità (0..1)."
 
+#, fuzzy
 msgid "out float **RIM**"
-msgstr ""
+msgstr "out float **RIM**"
 
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
+#, fuzzy
 msgid "out float **RIM_TINT**"
-msgstr ""
+msgstr "out float **RIM_TINT**"
 
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr ""
 
+#, fuzzy
 msgid "out float **CLEARCOAT**"
-msgstr ""
+msgstr "out float **CLEARCOAT**"
 
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
+#, fuzzy
 msgid "out float **CLEARCOAT_GLOSS**"
-msgstr ""
+msgstr "out float **CLEARCOAT_GLOSS**"
 
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
+#, fuzzy
 msgid "out float **ANISOTROPY**"
-msgstr ""
+msgstr "out float **ANISOTROPY**"
 
 msgid "For distorting the specular blob according to tangent space."
 msgstr ""
 
+#, fuzzy
 msgid "out vec2 **ANISOTROPY_FLOW**"
-msgstr ""
+msgstr "out vec2 **ANISOTROPY_FLOW**"
 
 msgid "Distortion direction, use with flowmaps."
 msgstr ""
 
+#, fuzzy
 msgid "out float **SSS_STRENGTH**"
-msgstr ""
+msgstr "out float **SSS_STRENGTH**"
 
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr ""
 
+#, fuzzy
 msgid "out vec3 **TRANSMISSION**"
-msgstr ""
+msgstr "out vec3 **TRANSMISSION**"
 
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr ""
 
+#, fuzzy
 msgid "out vec3 **EMISSION**"
-msgstr ""
+msgstr "out vec3 **EMISSION**"
 
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr ""
 
+#, fuzzy
 msgid "out float **AO**"
-msgstr ""
+msgstr "out float **AO**"
 
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr ""
 
+#, fuzzy
 msgid "out float **AO_LIGHT_AFFECT**"
-msgstr ""
+msgstr "out float **AO_LIGHT_AFFECT**"
 
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
@@ -639,20 +688,23 @@ msgid ""
 "using INV_PROJECTION."
 msgstr ""
 
+#, fuzzy
 msgid "out float **DEPTH**"
-msgstr ""
+msgstr "out float **DEPTH**"
 
 msgid "Custom depth value (0..1)."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 msgid "Screen UV coordinate for current pixel."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "in vec2 **POINT_COORD**"
 
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr ""

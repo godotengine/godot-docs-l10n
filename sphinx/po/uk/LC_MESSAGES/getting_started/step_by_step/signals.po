@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Signal"
 msgstr "Сигнал"
 
-#, fuzzy
 msgid "Using signals"
 msgstr "Використання сигналів"
 
@@ -65,13 +64,12 @@ msgstr ""
 "Детальніше про шаблон спостерігач можна прочитати тут: https://"
 "gameprogrammingpatterns.com/observer.html"
 
-#, fuzzy
 msgid ""
 "We will now use a signal to make our Godot icon from the previous lesson (:"
 "ref:`doc_scripting_player_input`) move and stop by pressing a button."
 msgstr ""
 "Тепер ми будемо використовувати сигнал, для керування рухом іконки Godot з "
-"останньої частини."
+"попереднього уроку (:ref:`doc_scripting_player_input`)."
 
 msgid "Scene setup"
 msgstr "Налаштування сцени"
@@ -81,6 +79,8 @@ msgid ""
 "include both a button and the ``Sprite.tscn`` scene that we scripted in "
 "previous lessons."
 msgstr ""
+"Щоб додати кнопку до нашої гри ми створимо нову сцену \"main\", яка буде "
+"містити і кнопку, і сцену ``Sprite.tscn``, створену в попередніх уроках."
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "Створіть нову сцену перейшовши до меню Сцена -> Нова Сцена."
@@ -139,6 +139,8 @@ msgstr "Ваше дерево сцени та область перегляду 
 
 msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
 msgstr ""
+"Збережіть вашу новостворену сцену. Ви можете її запустити натиснувши :kbd:"
+"`F6`."
 
 msgid "Connecting a signal in the editor"
 msgstr "Підключення сигналів в редакторі"
@@ -288,7 +290,6 @@ msgstr ""
 "верхній частині вікна або скористатися клавішами :kbd:`Ctrl + F1` (:kbd:`Alt "
 "+ 1` на macOS)."
 
-#, fuzzy
 msgid ""
 "In the Scene dock, right-click on the Sprite node and add a new child node. "
 "Search for Timer and add the corresponding node. Your scene should now look "
@@ -330,12 +331,17 @@ msgstr ""
 "``connect()`` з вузла, який ви хочете прослухати. У цьому випадку ми хочемо "
 "прослухати сигнал Таймера \"timeout\"."
 
+#, fuzzy
 msgid ""
-"We want to connect the signal when the scene is intantiated, and we can do "
+"We want to connect the signal when the scene is instantiated, and we can do "
 "that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
 "function, which is called automatically by the engine when a node is fully "
 "instantiated."
 msgstr ""
+"Ми хочемо підключити сигнал, одразу після створення екземпляра сцени, і ми "
+"можемо зробити це за допомогою вбудованої функції :ref:`Node._ready() "
+"<class_Node_method__ready>`, яка автоматично викликається рушієм, щойно "
+"вузол повністю створено."
 
 msgid ""
 "To get a reference to a node relative to the current one, we use the method :"
@@ -383,15 +389,15 @@ msgstr ""
 "not visible`` перемикає значення. Якщо ``visible`` є ``true``, то стає "
 "``false``, і навпаки."
 
-#, fuzzy
 msgid "Complete script"
-msgstr "Зразок GDScript"
+msgstr "Завершений скрипт"
 
-#, fuzzy
 msgid ""
 "That's it for our little moving and blinking Godot icon demo! Here is the "
 "complete ``Sprite.gd`` file for reference."
-msgstr "Ось повний файл ``Sprite.gd`` для порівняння."
+msgstr ""
+"Ось і все для нашої маленької рухомої і миготливої іконки Godot! Ось повний "
+"файл ``Sprite.gd`` для порівняння."
 
 msgid "Custom signals"
 msgstr "Власні сигнали"
@@ -400,6 +406,8 @@ msgid ""
 "This section is a reference on how to define and use your own signals, and "
 "does not build upon the project created in previous lessons."
 msgstr ""
+"Цей розділ пояснює, як визначити і використовувати власні сигнали, і не має "
+"відношення до проекту, створеного на попередніх уроках."
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "

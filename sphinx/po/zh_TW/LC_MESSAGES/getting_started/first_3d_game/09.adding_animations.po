@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Character animation"
-msgstr "Sprite 動畫"
+msgstr "角色動畫"
 
 msgid ""
 "In this final lesson, we'll use Godot's built-in animation tools to make our "
@@ -412,6 +411,8 @@ msgid ""
 "We can make the character arc when jumping using the following line of code. "
 "Add it at the end of ``_physics_process()``."
 msgstr ""
+"我們提到樞紐(Pivot)可以在動畫之上疊加變換(transforms)。我們可以用下面這行程式"
+"碼使角色在跳躍時產生弧線。將其添加到 ``_physics_process()`` 的最後。"
 
 #, fuzzy
 msgid "Animating the mobs"

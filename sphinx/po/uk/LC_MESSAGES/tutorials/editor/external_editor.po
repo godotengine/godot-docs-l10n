@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,22 +20,20 @@ msgstr ""
 msgid "Using an external text editor"
 msgstr "Використання зовнішнього текстового редактора"
 
-#, fuzzy
 msgid "This page explains how to code using an external text editor."
-msgstr "Використання зовнішнього текстового редактора"
+msgstr ""
+"Ця сторінка пояснює, як писати код з допомогою зовнішнього текстового "
+"редактора."
 
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
 "Editor Settings -> Text Editor -> External``"
 msgstr ""
 "Godot можна використовувати із зовнішнім текстовим редактором, таким як "
-"Sublime Text, або Visual Studio Code. Щоб включити зовнішній текстовий "
-"редактор, перейдіть до відповідних налаштувань редактора за допомогою: "
-"``Editor -> Editor Settings -> Text Editor -> External``"
+"Sublime Text, або Visual Studio Code. Перейдіть до відповідних параметрів "
+"редактора: ``Editor -> Editor Settings -> Text Editor -> External``"
 
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command-line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
@@ -118,32 +116,31 @@ msgstr "``\"+call cursor({line}, {col})\" {file}``"
 msgid "Emacs"
 msgstr ""
 
-#, fuzzy
 msgid "``emacs +{line}:{col} {file}``"
-msgstr "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
 
-#, fuzzy
 msgid ""
 "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
 "Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "Для коду Visual Studio вам потрібно буде вказати на файл ``code.cmd``."
+msgstr ""
+"Для Visual Studio Code вам потрібно буде вказати на файл ``code.cmd``. Для "
+"Emacs, ви можете викликати ``emacsclient`` замість ``emacs``, якщо ви "
+"використовуєте режим сервера."
 
-#, fuzzy
 msgid "Official editor plugins"
-msgstr "Офіційний плагін Git"
+msgstr "Офіційні плагіни редактора"
 
 msgid "We have official plugins for the following code editors:"
-msgstr ""
+msgstr "Ми маємо офіційні плагіни для наступних редакторів коду:"
 
-#, fuzzy
 msgid ""
 "`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 
-#, fuzzy
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 
 msgid "Translation status"
 msgstr "Стан перекладу"

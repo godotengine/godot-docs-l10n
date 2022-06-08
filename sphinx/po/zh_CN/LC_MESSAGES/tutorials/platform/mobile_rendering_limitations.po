@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Mobile rendering limitations"
-msgstr "3D 渲染的局限性"
+msgstr "移动设备渲染限制"
 
 msgid ""
 "The general :ref:`doc_3d_rendering_limitations` also apply to mobile "
 "platforms."
-msgstr ""
+msgstr "常规的 :ref:`doc_3d_rendering_limitations` 也适用于移动平台。"
 
 msgid ""
 "To improve out-of-the-box performance on mobile devices, Godot automatically "
@@ -32,6 +31,9 @@ msgid ""
 "configured by project settings with a ``.mobile`` :ref:`feature tag "
 "<doc_feature_tags>` suffix."
 msgstr ""
+"为了在移动设备上提升初始性能，Godot 在 Android 和 iOS 上默认会自动使用对低端"
+"设备友好的设置。这些设置是通过在项目设置中使用 ``.mobile`` :ref:`特性标签 "
+"<doc_feature_tags>`\\ 后缀实现的。"
 
 msgid ""
 "One of the most notable changes on mobile that will affect 3D projects is "
@@ -41,6 +43,10 @@ msgid ""
 "good. This can be disabled in the Project Settings at a performance cost "
 "(see below)."
 msgstr ""
+"在移动平台上，会影响 3D 项目的最明显区别就是光照是按顶点计算的，而不是按像"
+"素。这样会大幅提升性能，但可能会破坏部分场景的渲染，尤其是在网格细分程度不够"
+"时，顶点光照就没有那么好看。可以在“项目设置”中禁用，代价是牺牲性能（见下"
+"文）。"
 
 msgid ""
 "When using GLES2, some custom shaders may break when exporting to Android. "
@@ -50,77 +56,76 @@ msgid ""
 "setting, but this has a significant performance cost and won't work on all "
 "devices."
 msgstr ""
+"使用 GLES2 时，有些自定义着色器可能会在导出到 Android 时出问题。原因是默认会"
+"为了提升性能而使用较低的着色器精度。通过启用 ``rendering/gles2/compatibility/"
+"enable_high_float.Android`` 项目设置，你可以强制所有着色器计算都使用高精度，"
+"但这会带来显著的性能开销，无法在所有设备上正常工作。"
 
-#, fuzzy
 msgid "The following project settings have mobile-specific overrides:"
-msgstr "这个节点有如下属性可供设置："
+msgstr "以下项目设置有专门的移动平台覆盖项："
 
-#, fuzzy
 msgid "Setting"
-msgstr "Settings（设置）"
+msgstr "设置"
 
-#, fuzzy
 msgid "Desktop default"
-msgstr "桌面游戏"
+msgstr "桌面默认"
 
-#, fuzzy
 msgid "Mobile default"
-msgstr "中缀(默认)"
+msgstr "移动默认"
 
 msgid "``rendering/quality/directional_shadow/size``"
-msgstr ""
+msgstr "``rendering/quality/directional_shadow/size``"
 
 msgid "4096"
-msgstr ""
+msgstr "4096"
 
 msgid "2048"
-msgstr ""
+msgstr "2048"
 
 msgid "``rendering/quality/intended_usage/framebuffer_allocation``"
-msgstr ""
+msgstr "``rendering/quality/intended_usage/framebuffer_allocation``"
 
 msgid "3D"
 msgstr "3D"
 
 msgid "3D Without Effects"
-msgstr ""
+msgstr "3D Without Effects（3D 不带特效）"
 
 msgid "``rendering/quality/lightmapping/use_bicubic_sampling``"
-msgstr ""
+msgstr "``rendering/quality/lightmapping/use_bicubic_sampling``"
 
 msgid "``true``"
 msgstr "``true``"
 
-#, fuzzy
 msgid "``false``"
-msgstr "``if x else``"
+msgstr "``false``"
 
 msgid "``rendering/quality/reflections/high_quality_ggx``"
-msgstr ""
+msgstr "``rendering/quality/reflections/high_quality_ggx``"
 
 msgid "``rendering/quality/shading/force_blinn_over_ggx``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_blinn_over_ggx``"
 
 msgid "``rendering/quality/shading/force_lambert_over_burley``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_lambert_over_burley``"
 
 msgid "``rendering/quality/shading/force_vertex_shading``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_vertex_shading``"
 
 msgid "``rendering/quality/shadow_atlas/size``"
-msgstr ""
+msgstr "``rendering/quality/shadow_atlas/size``"
 
 msgid "``rendering/quality/shadows/filter_mode``"
-msgstr ""
+msgstr "``rendering/quality/shadows/filter_mode``"
 
 msgid "PCF5"
-msgstr ""
+msgstr "PCF5"
 
 msgid "Disabled"
 msgstr "Disabled（禁用）"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/max_simultaneous_compiles``"
-msgstr ""
+msgstr "*仅限 GLES3：*\\ ``rendering/gles3/shaders/max_simultaneous_compiles``"
 
 msgid "2"
 msgstr "2"
@@ -129,27 +134,28 @@ msgid "1"
 msgstr "1"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/shader_cache_size_mb``"
-msgstr ""
+msgstr "*仅限 GLES3：*\\ ``rendering/gles3/shaders/shader_cache_size_mb``"
 
-#, fuzzy
 msgid "512"
-msgstr "12"
+msgstr "512"
 
-#, fuzzy
 msgid "128"
-msgstr "12"
+msgstr "128"
 
 msgid "*GLES3 only:* ``rendering/quality/depth/hdr``"
-msgstr ""
+msgstr "*仅限 GLES3：*\\ ``rendering/quality/depth/hdr``"
 
 msgid ""
 "*GLES3 only:* ``rendering/quality/reflections/texture_array_reflections``"
 msgstr ""
+"*仅限 GLES3：*\\ ``rendering/quality/reflections/texture_array_reflections``"
 
 msgid ""
 "See the :ref:`ProjectSettings class documentation <class_ProjectSettings>` "
 "for more information on those setting overrides."
 msgstr ""
+"关于设置覆盖项的更多信息，请参阅 :ref:`ProjectSettings 类文档 "
+"<class_ProjectSettings>`\\ 。"
 
 msgid ""
 "If you're only targeting mobile platforms in your project, consider changing "
@@ -157,17 +163,23 @@ msgid ""
 "get a preview that is closer to the mobile appearance when running the "
 "project on a desktop platform (as well as within the editor)."
 msgstr ""
+"如果你的项目仅以移动平台为目标，请考虑将项目设置中的值改为与移动平台覆盖项一"
+"致。这样，在桌面平台运行项目时，就会得到与移动平台更接近的预览（从编辑器中运"
+"行也一样）。"
 
 msgid ""
 "Due to driver bugs, GLES3 support on Android and iOS can be poor, especially "
 "on old or low-end devices. Therefore, it is recommended to use the GLES2 "
 "renderer when targeting mobile platforms (especially Android)."
 msgstr ""
+"由于驱动问题，Android 和 iOS 上对的 GLES3 支持不太好，尤其是在较旧或低端设备"
+"上。因此建议在以移动平台为目标时使用 GLES2 渲染器（尤其是 Android）。"
 
 msgid ""
 "You can change the rendering backend in the Project Settings (**Rendering > "
 "Quality > Driver > Driver Name**)."
 msgstr ""
+"可以在“项目设置”中修改渲染后端（\\ **渲染 > 质量 > 驱动 > 驱动名称**\\ ）。"
 
 msgid "Translation status"
 msgstr "翻译状态"

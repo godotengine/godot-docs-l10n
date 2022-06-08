@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,8 +117,9 @@ msgstr ""
 msgid "Built-in"
 msgstr "Integrato"
 
+#, fuzzy
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 msgid ""
 "Global time since the engine has started, in seconds (always positive). It's "
@@ -182,8 +183,9 @@ msgstr "**y**: Fase durante la vita (da 0 a 1)."
 msgid "**z**: Animation frame."
 msgstr "**z**: frame di animazione."
 
+#, fuzzy
 msgid "in mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "in mat4 **WORLD_MATRIX**"
 
 msgid "Image space to view space transform."
 msgstr ""
@@ -195,20 +197,23 @@ msgstr "in mat4 **EXTRA_MATRIX**"
 msgid "Extra transform."
 msgstr "Trasformazione extra."
 
+#, fuzzy
 msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **PROJECTION_MATRIX**"
 
 msgid "View space to clip space transform."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr ""
+msgstr "in vec4 **INSTANCE_CUSTOM**"
 
 msgid "Instance custom data."
 msgstr ""
 
+#, fuzzy
 msgid "in bool **AT_LIGHT_PASS**"
-msgstr ""
+msgstr "in bool **AT_LIGHT_PASS**"
 
 msgid "``true`` if this is a light pass."
 msgstr ""
@@ -227,15 +232,17 @@ msgid ""
 "size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
 msgstr ""
 
+#, fuzzy
 msgid "inout vec2 **UV**"
-msgstr ""
+msgstr "inout vec2 **UV**"
 
 #, fuzzy
 msgid "Texture coordinates."
 msgstr "Coordinate della texture."
 
+#, fuzzy
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "inout vec4 **COLOR**"
 
 msgid "Color from vertex primitive."
 msgstr ""
@@ -248,8 +255,9 @@ msgid ""
 "automatically after the fragment function."
 msgstr ""
 
+#, fuzzy
 msgid "inout float **POINT_SIZE**"
-msgstr ""
+msgstr "inout float **POINT_SIZE**"
 
 msgid "Point size for point drawing."
 msgstr ""
@@ -274,8 +282,9 @@ msgid ""
 "and overwriting ``NORMAL``."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "in vec4 **FRAGCOORD**"
 
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
@@ -283,14 +292,16 @@ msgid ""
 "lower-left."
 msgstr ""
 
+#, fuzzy
 msgid "inout vec3 **NORMAL**"
-msgstr ""
+msgstr "inout vec3 **NORMAL**"
 
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr ""
 
+#, fuzzy
 msgid "out vec3 **NORMALMAP**"
-msgstr ""
+msgstr "out vec3 **NORMALMAP**"
 
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
@@ -303,8 +314,9 @@ msgstr "inout float **NORMALMAP_DEPTH**"
 msgid "Normalmap depth for scaling."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "in vec2 **UV**"
 
 msgid "UV from vertex function."
 msgstr ""
@@ -327,8 +339,9 @@ msgstr "in sampler2D **NORMAL_TEXTURE**"
 msgid "Default 2D normal texture."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr ""
@@ -339,8 +352,9 @@ msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
+#, fuzzy
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "in vec2 **POINT_COORD**"
 
 msgid "Coordinate for drawing points."
 msgstr ""
@@ -380,8 +394,9 @@ msgstr ""
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr ""
 
+#, fuzzy
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "in vec4 **COLOR**"
 
 msgid ""
 "Input Color. This is the output of the fragment function (with final "

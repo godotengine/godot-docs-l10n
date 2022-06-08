@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,7 +344,7 @@ msgid "Nodes"
 msgstr "Узлы"
 
 msgid "Root Type"
-msgstr "Root Type (тип корня)"
+msgstr "Тип ветви"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
@@ -354,19 +354,19 @@ msgstr ""
 "его можно изменить."
 
 msgid "Root Name"
-msgstr "Root Name (имя корня)"
+msgstr "Имя ветви"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr "Позволяет задать определенное имя для сгенерированного корневого узла."
 
 msgid "Root Scale"
-msgstr "Основной, \"коренной\" масштаб"
+msgstr "Расширение ветки"
 
 msgid "The scale of the root node."
 msgstr "Масштаб корневого узла."
 
 msgid "Custom Script"
-msgstr "Custom Script (пользовательский скрипт)"
+msgstr "Пользовательский Скрипт"
 
 msgid ""
 "A special script to process the whole scene after import can be provided. "
@@ -390,7 +390,6 @@ msgstr ""
 "конечном итоге будет использована, должна быть возвращена. Она может быть "
 "другой."
 
-#, fuzzy
 msgid "Storage"
 msgstr "Хранилище"
 
@@ -460,7 +459,7 @@ msgstr ""
 "**Material > Storage** на **Built-In** вместо **Files**."
 
 msgid "Keep On Reimport"
-msgstr "Keep On Reimport"
+msgstr "Продолжить пересылку"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -473,7 +472,7 @@ msgstr ""
 "виде файлов."
 
 msgid "Meshes"
-msgstr "Меши"
+msgstr "Сетка"
 
 msgid "Compress"
 msgstr "Сжатие"
@@ -577,7 +576,7 @@ msgstr ""
 "вершинам, которые не будут точно там, где они должны быть."
 
 msgid "Ensure Tangents"
-msgstr "Ensure Tangents"
+msgstr "Проверить соприкосновение"
 
 #, fuzzy
 msgid ""
@@ -608,7 +607,7 @@ msgstr ""
 "мешами вместо сцен."
 
 msgid "Light Baking"
-msgstr "Light Baking (запекание источников освещения)"
+msgstr "запекание света"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "Используется ли сетка в запеченных световых картах или нет."
@@ -635,7 +634,7 @@ msgstr ""
 "`doc_baked_lightmaps`."
 
 msgid "External Files"
-msgstr "External Files (внешние файлы)"
+msgstr "Внесение файлов"
 
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
@@ -688,7 +687,7 @@ msgstr ""
 "для их редактирования. В противном случае анимация может дрожать."
 
 msgid "Filter Script"
-msgstr "Filter Script (скрипт фильтра)"
+msgstr "Фильтр сценариев"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -793,7 +792,7 @@ msgstr ""
 "сохранять их после повторного импорта."
 
 msgid "Optimizer"
-msgstr "Оптимизатор"
+msgstr "Оптимизировать"
 
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "

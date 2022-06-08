@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Mobile rendering limitations"
-msgstr "Limitations du rendu 3D"
+msgstr "Limitations du rendu sur mobile"
 
 msgid ""
 "The general :ref:`doc_3d_rendering_limitations` also apply to mobile "
@@ -55,72 +54,69 @@ msgstr ""
 msgid "The following project settings have mobile-specific overrides:"
 msgstr "Les propriétés suivantes peuvent être définies sur ce nœud :"
 
-#, fuzzy
 msgid "Setting"
 msgstr "Paramètres"
 
-#, fuzzy
 msgid "Desktop default"
-msgstr "Jeu d'ordinateur de bureau"
+msgstr "Par défaut pour les ordinateur de bureau"
 
-#, fuzzy
 msgid "Mobile default"
-msgstr "Infixe (par défaut)"
+msgstr "Par défaut pour les mobiles"
 
 msgid "``rendering/quality/directional_shadow/size``"
-msgstr ""
+msgstr "``rendering/quality/directional_shadow/size``"
 
 msgid "4096"
-msgstr ""
+msgstr "4096"
 
 msgid "2048"
-msgstr ""
+msgstr "2048"
 
 msgid "``rendering/quality/intended_usage/framebuffer_allocation``"
-msgstr ""
+msgstr "``rendering/quality/intended_usage/framebuffer_allocation``"
 
 msgid "3D"
 msgstr "3D"
 
 msgid "3D Without Effects"
-msgstr ""
+msgstr "3D sans effet"
 
 msgid "``rendering/quality/lightmapping/use_bicubic_sampling``"
-msgstr ""
+msgstr "``rendering/quality/lightmapping/use_bicubic_sampling``"
 
 msgid "``true``"
 msgstr "``true``"
 
-#, fuzzy
 msgid "``false``"
-msgstr "``if x else``"
+msgstr "``false``"
 
 msgid "``rendering/quality/reflections/high_quality_ggx``"
-msgstr ""
+msgstr "``rendering/quality/reflections/high_quality_ggx``"
 
 msgid "``rendering/quality/shading/force_blinn_over_ggx``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_blinn_over_ggx``"
 
 msgid "``rendering/quality/shading/force_lambert_over_burley``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_lambert_over_burley``"
 
 msgid "``rendering/quality/shading/force_vertex_shading``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_vertex_shading``"
 
 msgid "``rendering/quality/shadow_atlas/size``"
-msgstr ""
+msgstr "``rendering/quality/shadow_atlas/size``"
 
 msgid "``rendering/quality/shadows/filter_mode``"
-msgstr ""
+msgstr "``rendering/quality/shadows/filter_mode``"
 
 msgid "PCF5"
-msgstr ""
+msgstr "PCF5"
 
 msgid "Disabled"
 msgstr "Désactivée"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/max_simultaneous_compiles``"
 msgstr ""
+"*GLES3 seulement :* ``rendering/gles3/shaders/max_simultaneous_compiles``"
 
 msgid "2"
 msgstr "2"
@@ -129,22 +125,22 @@ msgid "1"
 msgstr "1"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/shader_cache_size_mb``"
-msgstr ""
+msgstr "*GLES3 seulement :* ``rendering/gles3/shaders/shader_cache_size_mb``"
 
-#, fuzzy
 msgid "512"
-msgstr "12"
+msgstr "512"
 
-#, fuzzy
 msgid "128"
-msgstr "12"
+msgstr "128"
 
 msgid "*GLES3 only:* ``rendering/quality/depth/hdr``"
-msgstr ""
+msgstr "*GLES3 seulement :* ``rendering/quality/depth/hdr``"
 
 msgid ""
 "*GLES3 only:* ``rendering/quality/reflections/texture_array_reflections``"
 msgstr ""
+"*GLES3 seulement :* ``rendering/quality/reflections/"
+"texture_array_reflections``"
 
 msgid ""
 "See the :ref:`ProjectSettings class documentation <class_ProjectSettings>` "

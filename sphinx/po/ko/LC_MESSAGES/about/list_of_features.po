@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,14 +24,13 @@ msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
 "이 페이지의 목표는 현재 Godot가 지원하는 모든 기능을 나열하는 것입니다."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"이 페이지는 현재 stable 버전 Godot (3.3)이 지원하는 기능들을 나열하고 있으"
+"이 페이지는 현재 stable 버전 Godot (3.4)이 지원하는 기능들을 나열하고 있으"
 "며, latest development 버전(4.0)에서는 `더 많은 기능들 <https://docs."
 "godotengine.org/ko/latest/about/list_of_features.html>`__\\ 을 제공합니다."
 
@@ -100,9 +99,8 @@ msgstr "**기능:**"
 msgid "Scene tree editor."
 msgstr "씬 트리 에디터."
 
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "내장 테마 에디터."
+msgstr "내장 스크립트 에디터."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -162,28 +160,25 @@ msgstr ""
 "에디터 기능 확장을 위한 플러그인은 :ref:`애셋 라이브러리 "
 "<doc_what_is_assetlib>`\\ 에서 다운로드받을 수 있습니다."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
-"GDScript로 여러분만의 플러그인을 만들어 새로운 기능을 추가하거나 워크플로를 "
-"빠르게 만들 수 있습니다."
+"새로운 플러그인을 추가하기 위해 GDScript를 사용하여 :ref:`자신의 플러그인 생"
+"성 <doc_making_plugins>`"
 
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly. features or speed up your workflow."
 msgstr ""
-"프로젝트 매니저(Project Manager)의 애셋 라이브러리(Asset Library)에서 프로젝"
-"트를 다운로드받거나 직접 가져올 수 있습니다."
+"프로젝트 매니저의 애셋 라이브러리에서 프로젝트를 다운로드하고 직접 가져옵니"
+"다. 기능을 제공하거나 워크플로 속도를 높일 수 있습니다."
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"프로젝트 매니저(Project Manager)의 애셋 라이브러리(Asset Library)에서 프로젝"
-"트를 다운로드받거나 직접 가져올 수 있습니다."
+"프로젝트 매니저의 :ref:`애셋 라이브러리에서 프로젝트를 다운로드"
+"<doc_using_assetlib_editor>`하고 직접 가져옵니다."
 
 msgid "2D graphics"
 msgstr "2D 그래픽"
@@ -313,9 +308,8 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D 그래픽"
 
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "애니메이션 가져오기는 기본적으로 활성화되어 있습니다."
+msgstr "sRGB를 사용한 선택적 HDR 렌더링(기본적으로 활성화됨)."
 
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
@@ -340,9 +334,8 @@ msgstr ""
 "투시(perspective), 직교(orthographic) 및 프러스텀 오프셋(frustum-offset) 카메"
 "라."
 
-#, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "**물리 기반 렌더링**"
+msgstr "**물리 기반 렌더링 (내장된 매터리얼 기능)**"
 
 msgid "Follows the Disney PBR model."
 msgstr "디즈니의 PBR 모델을 따릅니다."
@@ -478,7 +471,6 @@ msgstr "*GLES3:* GI 프로브 (느리지만 준실시간). 반사를 지원합�
 msgid "**Reflections:**"
 msgstr "**반사(Reflections)**"
 
-#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax box correction can optionally be enabled."
@@ -580,9 +572,8 @@ msgstr "**텍스처 압축:**"
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
 
-#, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
-msgstr "*GLES3:* S3TC (모바일/웹 플랫폼은 지원하지 않음)."
+msgstr "S3TC (모바일/웹 플랫폼은 지원하지 않음)."
 
 msgid "ETC1 (recommended when using the GLES2 renderer)."
 msgstr "ETC1 (GLES2 렌더러에 적합)."
@@ -602,9 +593,8 @@ msgstr "다중 샘플링 안티앨리어싱 (MSAA)."
 msgid "Fast approximate antialiasing (FXAA)."
 msgstr "고속 근사 안티앨리어싱 (FXAA)."
 
-#, fuzzy
 msgid "**Performance:**"
-msgstr "성능"
+msgstr "**성능:**"
 
 msgid ""
 "Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
@@ -617,7 +607,6 @@ msgid ""
 "doesn't support gameplay notifications), but easier to set up."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
 "to further improve quality. This can be helpful when using Godot for offline "
@@ -822,11 +811,11 @@ msgstr ""
 "수십 개의 효과가 포함되고 재 라우팅 가능한 :ref:`오디오 버스 "
 "<doc_audio_buses>` 및 효과 지원."
 
-#, fuzzy
 msgid ""
 "Listener2D and Listener3D nodes to listen from a position different than the "
 "camera."
-msgstr "3D 공간에서 카메라와 다른 위치에서의 소리를 듣기 위한 Listenr3D 노드."
+msgstr ""
+"카메라 외의 위치에서 듣기 위해 사용할 수 있는 Listener2D와 Listener3D 노드."
 
 msgid ""
 "Audio input to record microphones with real-time access using the "
@@ -888,9 +877,8 @@ msgstr ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (Blender에"
 "서 바로 내보내기)."
 
-#, fuzzy
 msgid "FBX (experimental, static meshes only)."
-msgstr "FBX (실험 기능)."
+msgstr "FBX (실험 기능, 정적 메시 전용)."
 
 msgid "Collada (.dae)."
 msgstr "Collada (.dae)."
@@ -1171,13 +1159,12 @@ msgstr "트리(Tree) (테이블을 표현할 때에도 사용 가능)."
 msgid "Color picker with RGB and HSV modes."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
 "draggable splitter, ...)."
 msgstr ""
-"컨테이너(Container) (수평, 수직, 그리드, center, margin, draggable "
-"splitter, ...)."
+"컨테이너(Container) (수평, 수직, 그리드, 플로우, 센터, 마진, 비율 고정, 드래"
+"그 가능한 스플리터, ...)."
 
 msgid "Controls can be rotated and scaled."
 msgstr "컨트롤(Control)은 회전하거나 크기를 키울 수 있습니다."
@@ -1227,11 +1214,11 @@ msgstr "현재 에디터 테마 세팅에 기반해 테마 생성 가능."
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ":ref:`class_StyleBoxFlat`\\ 를 사용한 벡터 기반 절차적 테마."
 
-#, fuzzy
 msgid ""
 "Supports rounded/beveled corners, drop shadows, per-border widths and "
 "antialiasing."
-msgstr "둥근 모서리와 굽은 모서리, 그림자 및 테두리별 너비 지원."
+msgstr ""
+"둥근 모서리와 굽은 모서리, 그림자 및 테두리별 너비와 안티에일리어싱 지원."
 
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
 msgstr ":ref:`class_StyleBoxTexture`\\ 를 사용한 텍스트 기반 테마."
@@ -1297,9 +1284,9 @@ msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ":ref:`class_ConfigFile`\\ 을 이용해 INI 스타일 설정 파일 읽고 쓰기."
 
-#, fuzzy
 msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
-msgstr "벡터, 컬러를 포함한 모든 Godot 데이터 타입을 (역)직렬화할 수 있습니다."
+msgstr ""
+"벡터2/3, 컬러를 포함한 모든 Godot 데이터 타입을 (역)직렬화할 수 있습니다."
 
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr ":ref:`class_XMLParser`\\ 을 이용한 XML 파일 읽기."
@@ -1329,21 +1316,19 @@ msgstr ""
 "필요할 때 씬 트리의 오버헤드를 무시할 수 있는 :ref:`서버에 대한 낮은 수준의 "
 "접근 <doc_using_servers>`."
 
-#, fuzzy
 msgid ""
 ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
-msgstr "자동화를 위한 명령줄 인터페이스."
+msgstr "자동화를 위한 :ref:`명령줄 인터페이스 <doc_command_line_tutorial>` ."
 
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "지속적인 통합 플랫폼을 사용해 프로젝트를 내보내고 배포합니다."
 
-#, fuzzy
 msgid ""
 "`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
 "misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`완성된 스크립트 <https://github.com/godotengine/godot/tree/master/misc/dist/"
-"shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
+"`명령줄 자동완성 스크립트 <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
 
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "

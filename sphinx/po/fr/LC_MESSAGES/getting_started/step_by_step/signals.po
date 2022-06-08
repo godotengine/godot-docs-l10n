@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "Signaux"
 
-#, fuzzy
 msgid "Using signals"
-msgstr "Utilisation de signaux"
+msgstr "Utiliser les signaux"
 
 msgid ""
 "In this lesson, we will look at signals. They are messages that nodes emit "
@@ -82,6 +81,9 @@ msgid ""
 "include both a button and the ``Sprite.tscn`` scene that we scripted in "
 "previous lessons."
 msgstr ""
+"Pour ajouter un bouton dans votre jeu, nous allons créer une nouvelle scène "
+"\"principale\" qui contiendra à la fois un bouton et la scène ``Sprite."
+"tscn`` à laquelle nous avons ajouté un script lors des précédents leçons."
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr ""
@@ -144,6 +146,7 @@ msgstr ""
 
 msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
 msgstr ""
+"Enregistrer votre nouvelle scène créée. Vous pouvez la lancer avec :kbd:`F6`."
 
 msgid "Connecting a signal in the editor"
 msgstr "Connecter un signal dans l'éditeur"
@@ -343,7 +346,7 @@ msgstr ""
 "écouter le signal \"timeout\" du Timer."
 
 msgid ""
-"We want to connect the signal when the scene is intantiated, and we can do "
+"We want to connect the signal when the scene is instantiated, and we can do "
 "that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
 "function, which is called automatically by the engine when a node is fully "
 "instantiated."
@@ -397,9 +400,8 @@ msgstr ""
 "nœud. La ligne ``visible = not visible`` inverse la valeur. Si ``visible`` "
 "est ``true``, il devient ``false``, et vice-versa."
 
-#, fuzzy
 msgid "Complete script"
-msgstr "Exemple de script"
+msgstr "Script en entier"
 
 #, fuzzy
 msgid ""

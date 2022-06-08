@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,10 @@ msgstr ""
 msgid "Path separators"
 msgstr "Séparateurs de chemin"
 
+#, fuzzy
 msgid ""
-"To as many platforms as possible, Godot only accepts UNIX-style path "
-"separators (``/``). These work on all platforms, including Windows."
+"To make supporting multiple platforms easier, Godot only accepts UNIX-style "
+"path separators (``/``). These work on all platforms, **including Windows**."
 msgstr ""
 "Afin de supporter le plus grand nombre de plateformes possible, Godot "
 "n'accepte que les séparateurs de chemin de style UNIX (``/``). Ceux-ci "
@@ -60,11 +61,12 @@ msgstr ""
 "fichier texte ``project.godot``, même si ce fichier est vide. Le dossier qui "
 "contient ce fichier est le dossier racine de votre projet."
 
+#, fuzzy
 msgid ""
 "You can access any file relative to it by writing paths starting with "
 "``res://``, which stands for resources. For example, you can access an image "
 "file ``character.png`` located in the project's root folder in code with the "
-"following path: ``res://some_texture.png``."
+"following path: ``res://character.png``."
 msgstr ""
 "Vous pouvez accéder à n'importe quel fichier de manière relative à celui-ci "
 "en écrivant des chemins commençant par ``res://``, qui représente les "
@@ -89,25 +91,58 @@ msgstr ""
 
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
-"On mobile and consoles, this path is unique to the project. On desktop, the "
-"engine stores user files in ``~/.local/share/godot/app_userdata/"
-"[project_name]`` on Linux, ``~/Library/Application Support/Godot/"
-"app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%"
-"\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is "
-"based on the application name defined in the Project Settings, but you can "
-"override it on a per-platform basis using :ref:`feature tags "
-"<doc_feature_tags>`."
+"Unlike ``res://``, the directory pointed at by ``user://`` is *guaranteed* "
+"to be writable to, even in an exported project."
 msgstr ""
-"Le préfixe ``user://`` pointe vers un répertoire différent sur l’appareil de "
-"l’utilisateur. Sur les mobiles et les consoles, ce chemin est unique au "
-"projet. Sur les appareils de bureau, le moteur stocke les fichiers "
-"utilisateur dans ``~/.local/share/godot/app_userdata/[project_name]`` sur "
-"Linux, ``~/Library/Application Support/Godot/app_userdata/[project_name]`` "
-"sur macOS (depuis Catalina) et ``%APPDATA%"
-"\\Godot\\app_userdata\\[project_name]`` sur Windows. ``[project_name]`` est "
-"basé sur le nom de l'application défini dans les paramètres du projet, mais "
-"vous pouvez le remplacer sur une base par plateforme en utilisant :ref:"
+
+msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
+msgstr ""
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Location"
+msgstr "Localisation"
+
+msgid "User data"
+msgstr "Données utilisateur"
+
+msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
+msgstr "Windows : ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
+
+#, fuzzy
+msgid ""
+"macOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
+msgstr "macOS : ``~/Library/Application Support/Godot/[project_name]``"
+
+#, fuzzy
+msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
+msgstr "Linux : ``~/.local/share/godot/[project_name]``"
+
+msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
+msgstr ""
+"Données utilisateur (lorsque le paramètre du projet ``use_custom_user_dir`` "
+"est ``true``)"
+
+msgid "Windows: ``%APPDATA%\\[project_name]``"
+msgstr "Windows : ``%APPDATA%\\[project_name]``"
+
+msgid "macOS: ``~/Library/Application Support/[project_name]``"
+msgstr "macOS : ``~/Library/Application Support/[project_name]``"
+
+msgid "Linux: ``~/.local/share/[project_name]``"
+msgstr "Linux : ``~/.local/share/[project_name]``"
+
+msgid ""
+"``[project_name]`` is based on the application name defined in the Project "
+"Settings, but you can override it on a per-platform basis using :ref:"
 "`feature tags <doc_feature_tags>`."
+msgstr ""
+
+msgid ""
+"On mobile platforms, this path is unique to the project and is not "
+"accessible by other applications for security reasons."
+msgstr ""
 
 msgid ""
 "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
@@ -130,37 +165,11 @@ msgstr ""
 "paramètres utilisateur et le cache en fonction de la plate-forme. Par "
 "défaut, ces chemins sont :"
 
-msgid "Type"
-msgstr "Type"
-
-msgid "Location"
-msgstr "Localisation"
-
-msgid "User data"
-msgstr "Données utilisateur"
-
-msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr "Windows : ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-
 msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
 msgstr "macOS : ``~/Library/Application Support/Godot/[project_name]``"
 
 msgid "Linux: ``~/.local/share/godot/[project_name]``"
 msgstr "Linux : ``~/.local/share/godot/[project_name]``"
-
-msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
-msgstr ""
-"Données utilisateur (lorsque le paramètre du projet ``use_custom_user_dir`` "
-"est ``true``)"
-
-msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr "Windows : ``%APPDATA%\\[project_name]``"
-
-msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr "macOS : ``~/Library/Application Support/[project_name]``"
-
-msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr "Linux : ``~/.local/share/[project_name]``"
 
 msgid "User settings"
 msgstr "Réglages utilisateur"
@@ -252,6 +261,15 @@ msgid ""
 msgstr ""
 "La version `Steam de Godot <https://store.steampowered.com/app/404790/>`__ "
 "utilise le mode autonome par défaut."
+
+msgid ""
+"Self-contained mode is not supported in exported projects yet. To read and "
+"write files relative to the executable path, use :ref:`OS."
+"get_executable_path() <class_OS_method_get_executable_path>`. Note that "
+"writing files in the executable path only works if the executable is placed "
+"in a writable location (i.e. **not** Program Files or another directory that "
+"is read-only for regular users)."
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"
