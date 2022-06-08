@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2022-04-29 17:56+0200\n"
+"POT-Creation-Date: 2022-06-08 13:53+0200\n"
 "PO-Revision-Date: 2022-04-08 07:29+0000\n"
 "Last-Translator: Napstaguy04 <brokenscreen3@gmail.com>\n"
 "Language-Team: Tagalog <https://hosted.weblate.org/projects/godot-engine/"
@@ -603,13 +603,14 @@ msgstr "Ano-anung mga platform ang sinusuportahan ng Godot?"
 msgid "**For the editor:**"
 msgstr "**Para sa editor:**"
 
-#: ../../docs/about/faq.rst:38
+#: ../../docs/about/faq.rst:38 ../../docs/about/faq.rst:200
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:335
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
+#: ../../docs/about/faq.rst:211
 #: ../../docs/tutorials/editor/default_key_mapping.rst:27
 #: ../../docs/tutorials/editor/default_key_mapping.rst:92
 #: ../../docs/tutorials/editor/default_key_mapping.rst:145
@@ -624,7 +625,6 @@ msgstr "Windows"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:464
 #: ../../docs/tutorials/editor/default_key_mapping.rst:481
 #: ../../docs/tutorials/editor/default_key_mapping.rst:516
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:231
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:84
 msgid "macOS"
 msgstr "macOS"
@@ -908,10 +908,124 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:187
-msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
+msgid ""
+"How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
 
 #: ../../docs/about/faq.rst:189
+msgid ""
+"Since you don't need to actually install Godot on your system to run it, "
+"this means desktop integration is not performed automatically. There are two "
+"ways to overcome this. You can install Godot from `Steam <https://store."
+"steampowered.com/app/404790/Godot_Engine/>`__ (all platforms), `Scoop "
+"<https://scoop.sh/>`__ (Windows), `Homebrew <https://brew.sh/>`__ (macOS) or "
+"`Flathub <https://flathub.org/apps/details/org.godotengine.Godot>`__ "
+"(Linux). This will automatically perform the required steps for desktop "
+"integration."
+msgstr ""
+
+#: ../../docs/about/faq.rst:197
+msgid ""
+"Alternatively, you can manually perform the steps that an installer would do "
+"for you:"
+msgstr ""
+
+#: ../../docs/about/faq.rst:202
+msgid ""
+"Move the Godot executable to a stable location (i.e. outside of your "
+"Downloads folder), so you don't accidentally move it and break the shortcut "
+"in the future."
+msgstr ""
+
+#: ../../docs/about/faq.rst:204
+msgid "Right-click the Godot executable and choose **Create Shortcut**."
+msgstr ""
+
+#: ../../docs/about/faq.rst:205
+msgid ""
+"Move the created shortcut to ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs``. This is the user-wide location for shortcuts that will "
+"appear in the Start menu. You can also pin Godot in the task bar by right-"
+"clicking the executable and choosing **Pin to Task Bar**."
+msgstr ""
+
+#: ../../docs/about/faq.rst:213
+msgid ""
+"Drag the extracted Godot application to ``/Applications/Godot.app``, then "
+"drag it to the Dock if desired. Spotlight will be able to find Godot as long "
+"as it's in ``/Applications`` or ``~/Applications``."
+msgstr ""
+
+#: ../../docs/about/faq.rst:218
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
+msgid "Linux"
+msgstr ""
+
+#: ../../docs/about/faq.rst:220
+msgid ""
+"Move the Godot binary to a stable location (i.e. outside of your Downloads "
+"folder), so you don't accidentally move it and break the shortcut in the "
+"future."
+msgstr ""
+
+#: ../../docs/about/faq.rst:222
+msgid ""
+"Rename and move the Godot binary to a location present in your ``PATH`` "
+"environment variable. This is typically ``/usr/local/bin/godot`` or ``/usr/"
+"bin/godot``. Doing this requires administrator privileges, but this also "
+"allows you to :ref:`run the Godot editor from a terminal "
+"<doc_command_line_tutorial>` by entering ``godot``."
+msgstr ""
+
+#: ../../docs/about/faq.rst:228
+msgid ""
+"If you cannot move the Godot editor binary to a protected location, you can "
+"keep the binary somewhere in your home directory, and modify the ``Path=`` "
+"line in the ``.desktop`` file linked below to contain the full *absolute* "
+"path to the Godot binary."
+msgstr ""
+
+#: ../../docs/about/faq.rst:233
+msgid ""
+"Save `this .desktop file <https://raw.githubusercontent.com/godotengine/"
+"godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ to ``$HOME/."
+"local/share/applications/``. If you have administrator privileges, you can "
+"also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
+"the shortcut available for all users."
+msgstr ""
+
+#: ../../docs/about/faq.rst:239
+#, fuzzy
+msgid "Is the Godot editor a portable application?"
+msgstr "Maari bang makagawa ng hindi panlarong mga aplication gamit ng Godot?"
+
+#: ../../docs/about/faq.rst:241
+msgid ""
+"In its default configuration, Godot is *semi-portable*. Its executable can "
+"run from any location (including non-writable locations) and never requires "
+"administrator privileges."
+msgstr ""
+
+#: ../../docs/about/faq.rst:245
+msgid ""
+"However, configuration files will be written to the user-wide configuration "
+"or data directory. This is usually a good approach, but this means "
+"configuration files will not carry across machines if you copy the folder "
+"containing the Godot executable. See :ref:`doc_data_paths` for more "
+"information."
+msgstr ""
+
+#: ../../docs/about/faq.rst:250
+msgid ""
+"If *true* portable operation is desired (e.g. for use on an USB stick), "
+"follow the steps in :ref:`doc_data_paths_self_contained_mode`."
+msgstr ""
+
+#: ../../docs/about/faq.rst:254
+msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:256
 msgid ""
 "Godot aims for cross-platform compatibility and open standards first and "
 "foremost. OpenGL and Vulkan are the technologies that are both open and "
@@ -920,7 +1034,7 @@ msgid ""
 "macOS, and more."
 msgstr ""
 
-#: ../../docs/about/faq.rst:195
+#: ../../docs/about/faq.rst:262
 msgid ""
 "Since Godot only has a few people working on its renderer, we would prefer "
 "having fewer rendering backends to maintain. On top of that, using a single "
@@ -928,31 +1042,31 @@ msgid ""
 "specific issues."
 msgstr ""
 
-#: ../../docs/about/faq.rst:200
+#: ../../docs/about/faq.rst:267
 msgid ""
 "In the long term, we may develop a Direct3D 12 renderer for Godot (mainly "
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
 
-#: ../../docs/about/faq.rst:205
+#: ../../docs/about/faq.rst:272
 msgid "Why does Godot aim to keep its core feature set small?"
 msgstr ""
 "Bakit ibig ng Godot na panatilihin na maliit ang kalahatan ng mga tampok "
 "nito?"
 
-#: ../../docs/about/faq.rst:207
+#: ../../docs/about/faq.rst:274
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
 
-#: ../../docs/about/faq.rst:211
+#: ../../docs/about/faq.rst:278
 msgid "There are several reasons for this:"
 msgstr "May mga dahilan kung bakit ganito:"
 
-#: ../../docs/about/faq.rst:213
+#: ../../docs/about/faq.rst:280
 msgid ""
 "**Code maintenance and surface for bugs.** Every time we accept new code in "
 "the Godot repository, existing contributors often take the reponsibility of "
@@ -963,7 +1077,7 @@ msgid ""
 "checked for regressions keeps increasing over time."
 msgstr ""
 
-#: ../../docs/about/faq.rst:221
+#: ../../docs/about/faq.rst:288
 msgid ""
 "**Ease of contribution.** By keeping the codebase small and tidy, it can "
 "remain fast and easy to compile from source. This makes it easier for new "
@@ -971,7 +1085,7 @@ msgid ""
 "high-end hardware."
 msgstr ""
 
-#: ../../docs/about/faq.rst:226
+#: ../../docs/about/faq.rst:293
 msgid ""
 "**Keeping the binary size small for the editor.** Not everyone has a fast "
 "Internet connection. Ensuring that everyone can download the Godot editor, "
@@ -979,7 +1093,7 @@ msgid ""
 "developers in all countries."
 msgstr ""
 
-#: ../../docs/about/faq.rst:231
+#: ../../docs/about/faq.rst:298
 msgid ""
 "**Keeping the binary size small for export templates.** This directly "
 "impacts the size of projects exported with Godot. On mobile and web "
@@ -989,7 +1103,7 @@ msgid ""
 "usage caps are often in effect in those countries."
 msgstr ""
 
-#: ../../docs/about/faq.rst:238
+#: ../../docs/about/faq.rst:305
 msgid ""
 "For all the reasons above, we have to be selective of what we can accept as "
 "core functionality in Godot. This is why we are aiming to move some core "
@@ -1001,13 +1115,13 @@ msgid ""
 "project.)"
 msgstr ""
 
-#: ../../docs/about/faq.rst:247
+#: ../../docs/about/faq.rst:314
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:249
+#: ../../docs/about/faq.rst:316
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -1018,7 +1132,7 @@ msgid ""
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
 
-#: ../../docs/about/faq.rst:257
+#: ../../docs/about/faq.rst:324
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -1026,7 +1140,7 @@ msgid ""
 "YFov."
 msgstr ""
 
-#: ../../docs/about/faq.rst:261
+#: ../../docs/about/faq.rst:328
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -1036,14 +1150,14 @@ msgid ""
 "will take and the longer the time it will take for loading."
 msgstr ""
 
-#: ../../docs/about/faq.rst:269
+#: ../../docs/about/faq.rst:336
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
 
-#: ../../docs/about/faq.rst:273
+#: ../../docs/about/faq.rst:340
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1051,18 +1165,18 @@ msgid ""
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 
-#: ../../docs/about/faq.rst:278
+#: ../../docs/about/faq.rst:345
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
 
-#: ../../docs/about/faq.rst:282
+#: ../../docs/about/faq.rst:349
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "At yan lang! Gagana na dapat ang laro mo sa maraming resolutions."
 
-#: ../../docs/about/faq.rst:284
+#: ../../docs/about/faq.rst:351
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -1070,32 +1184,32 @@ msgid ""
 "the App Store or Google Play."
 msgstr ""
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:357
 msgid "How can I extend Godot?"
 msgstr "Paano ko mapalaki pa ang Godot?"
 
-#: ../../docs/about/faq.rst:292
+#: ../../docs/about/faq.rst:359
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:363
 msgid "Also, see the official blog posts on these topics:"
 msgstr "Tingnan din ang opisyal na lathalain sa mga paksang ito:"
 
-#: ../../docs/about/faq.rst:298
+#: ../../docs/about/faq.rst:365
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
 
-#: ../../docs/about/faq.rst:299
+#: ../../docs/about/faq.rst:366
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr ""
 
-#: ../../docs/about/faq.rst:301
+#: ../../docs/about/faq.rst:368
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -1103,11 +1217,11 @@ msgid ""
 "another third-party library integrates with Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:307
+#: ../../docs/about/faq.rst:374
 msgid "When is the next release of Godot out?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:376
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
@@ -1115,11 +1229,11 @@ msgstr ""
 "Kung handa na! Tingnan ang :ref:"
 "`doc_release_policy_when_is_next_release_out` sa karagdagang kaalaman."
 
-#: ../../docs/about/faq.rst:313
+#: ../../docs/about/faq.rst:380
 msgid "I would like to contribute! How can I get started?"
 msgstr "Gusto kong magkontribute! Paano ko sisimulan?"
 
-#: ../../docs/about/faq.rst:315
+#: ../../docs/about/faq.rst:382
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
@@ -1127,7 +1241,7 @@ msgstr ""
 "Astig! Bilang isang open-source na proyekto, nabubuhay ang Godot sa mga "
 "inobasyon at ambisyon ng mga developer katulad mo."
 
-#: ../../docs/about/faq.rst:318
+#: ../../docs/about/faq.rst:385
 msgid ""
 "The first place to get started is in the `issues <https://github.com/"
 "godotengine/godot/issues>`_. Find an issue that resonates with you, then "
@@ -1136,11 +1250,11 @@ msgid ""
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
 
-#: ../../docs/about/faq.rst:323
+#: ../../docs/about/faq.rst:390
 msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Meron akong magandang idea para sa Godot. Paano ko ito maibabahagi?"
 
-#: ../../docs/about/faq.rst:325
+#: ../../docs/about/faq.rst:392
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1153,7 +1267,7 @@ msgid ""
 "community members."
 msgstr ""
 
-#: ../../docs/about/faq.rst:334
+#: ../../docs/about/faq.rst:401
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
@@ -1161,42 +1275,42 @@ msgstr ""
 "Karamihan ng mga developers sa komunidad ng Godot ay mas interesado pang "
 "malaman ang mga bagay tulad ng:"
 
-#: ../../docs/about/faq.rst:337
+#: ../../docs/about/faq.rst:404
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
 
-#: ../../docs/about/faq.rst:339
+#: ../../docs/about/faq.rst:406
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
 "Ang mga tampok na gusto mong madagdag dahil kailangan mo sa proyekto mo."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:408
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr "Mga konseptong mahirap unawain habang pinagaaralan ang software."
 
-#: ../../docs/about/faq.rst:342
+#: ../../docs/about/faq.rst:409
 msgid "The parts of your workflow you would like to see optimized."
 msgstr ""
 
-#: ../../docs/about/faq.rst:343
+#: ../../docs/about/faq.rst:410
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
 
-#: ../../docs/about/faq.rst:345
+#: ../../docs/about/faq.rst:412
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
 
-#: ../../docs/about/faq.rst:349
+#: ../../docs/about/faq.rst:416
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -1205,17 +1319,17 @@ msgid ""
 "improving developer experiences as a whole."
 msgstr ""
 
-#: ../../docs/about/faq.rst:355
+#: ../../docs/about/faq.rst:422
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
 
-#: ../../docs/about/faq.rst:361
+#: ../../docs/about/faq.rst:428
 msgid "Is it possible to use Godot to create non-game applications?"
 msgstr "Maari bang makagawa ng hindi panlarong mga aplication gamit ng Godot?"
 
-#: ../../docs/about/faq.rst:363
+#: ../../docs/about/faq.rst:430
 msgid ""
 "Yes! Godot features an extensive built-in UI system, and its small "
 "distribution size can make it a suitable alternative to frameworks like "
@@ -1225,7 +1339,7 @@ msgstr ""
 "system, at ang maliit na distribution size nito ay pwedeng maging "
 "alternatibong framework katulod ng Electron o Qt."
 
-#: ../../docs/about/faq.rst:366
+#: ../../docs/about/faq.rst:433
 msgid ""
 "When creating a non-game application, make sure to enable :ref:`low-"
 "processor mode <class_ProjectSettings_property_application/run/"
@@ -1236,7 +1350,7 @@ msgstr ""
 "low_processor_mode>` sa Project Settings para hindi magastos sa pag-gamit ng "
 "CPU at GPU."
 
-#: ../../docs/about/faq.rst:370
+#: ../../docs/about/faq.rst:437
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
@@ -1245,18 +1359,18 @@ msgstr ""
 "ng *mobile* application dahil hindi pa supportado ang low-processor mode sa "
 "mga mobile platform."
 
-#: ../../docs/about/faq.rst:373
+#: ../../docs/about/faq.rst:440
 msgid ""
 "Check out `Material Maker <https://github.com/RodZill4/material-maker>`__ "
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:380
+#: ../../docs/about/faq.rst:447
 msgid "Is it possible to use Godot as a library?"
 msgstr "Possible bang gamitin ang Godot bilang library?"
 
-#: ../../docs/about/faq.rst:382
+#: ../../docs/about/faq.rst:449
 msgid ""
 "Godot is meant to be used with its editor. We recommend you give it a try, "
 "as it will most likely save you time in the long term. There are no plans to "
@@ -1264,7 +1378,7 @@ msgid ""
 "convoluted and difficult to use for casual users."
 msgstr ""
 
-#: ../../docs/about/faq.rst:387
+#: ../../docs/about/faq.rst:454
 msgid ""
 "If you want to use a rendering library, look into using an established "
 "rendering engine instead. Keep in mind rendering engines usually have "
@@ -1272,11 +1386,11 @@ msgid ""
 "find answers to your questions."
 msgstr ""
 
-#: ../../docs/about/faq.rst:393
+#: ../../docs/about/faq.rst:460
 msgid "What user interface toolkit does Godot use?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:395
+#: ../../docs/about/faq.rst:462
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -1286,7 +1400,7 @@ msgid ""
 "language supported by Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:402
+#: ../../docs/about/faq.rst:469
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
 "and have a consistent appearance across all platforms. On top of that, it "
@@ -1295,31 +1409,31 @@ msgid ""
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
 
-#: ../../docs/about/faq.rst:408
+#: ../../docs/about/faq.rst:475
 msgid ""
 "This custom UI toolkit :ref:`can't be used as a library "
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
 
-#: ../../docs/about/faq.rst:415
+#: ../../docs/about/faq.rst:482
 msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:417
+#: ../../docs/about/faq.rst:484
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:421
+#: ../../docs/about/faq.rst:488
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
 
-#: ../../docs/about/faq.rst:422
+#: ../../docs/about/faq.rst:489
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -1327,29 +1441,29 @@ msgid ""
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
 
-#: ../../docs/about/faq.rst:423
+#: ../../docs/about/faq.rst:490
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
 
-#: ../../docs/about/faq.rst:424
+#: ../../docs/about/faq.rst:491
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
 
-#: ../../docs/about/faq.rst:425
+#: ../../docs/about/faq.rst:492
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
 
-#: ../../docs/about/faq.rst:428
+#: ../../docs/about/faq.rst:495
 msgid "Why does Godot not use exceptions?"
 msgstr "Bakit di-gumagamit ng exceptions ang Godot?"
 
-#: ../../docs/about/faq.rst:430
+#: ../../docs/about/faq.rst:497
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -1361,35 +1475,35 @@ msgstr ""
 "(na pwedeng ma-trace kahit sa script), gayunpaman susubukan nitong irecover "
 "sa pinakamaganda at ligtas na paraan at magpatuloy."
 
-#: ../../docs/about/faq.rst:435
+#: ../../docs/about/faq.rst:502
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
 
-#: ../../docs/about/faq.rst:439
+#: ../../docs/about/faq.rst:506
 msgid "Why does Godot not enforce RTTI?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:441
+#: ../../docs/about/faq.rst:508
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
 
-#: ../../docs/about/faq.rst:446
+#: ../../docs/about/faq.rst:513
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:448
+#: ../../docs/about/faq.rst:515
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
 
-#: ../../docs/about/faq.rst:452
+#: ../../docs/about/faq.rst:519
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -1398,13 +1512,13 @@ msgid ""
 "help you, and you should consider a different approach to optimization."
 msgstr ""
 
-#: ../../docs/about/faq.rst:459
+#: ../../docs/about/faq.rst:526
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
 
-#: ../../docs/about/faq.rst:462
+#: ../../docs/about/faq.rst:529
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -1414,26 +1528,26 @@ msgstr ""
 "rekomendasyon ay gumamit ng C++ at GDNative para sa mga bahagi na mabilis "
 "ang performance at GDScript (o C#) para sa natitirang bahagi ng laro."
 
-#: ../../docs/about/faq.rst:467
+#: ../../docs/about/faq.rst:534
 msgid "How can I support Godot development or contribute?"
 msgstr "Paano ko masusuportahan ang development ng Godot o makibahagi?"
 
-#: ../../docs/about/faq.rst:469
+#: ../../docs/about/faq.rst:536
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Tumingin sa :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:472
+#: ../../docs/about/faq.rst:539
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Sino ang mga nagtratrabaho sa Godot? Paano ko ba makontact kayo?"
 
-#: ../../docs/about/faq.rst:474
+#: ../../docs/about/faq.rst:541
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:178
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:180
 #: ../../docs/tutorials/platform/android/android_plugin.rst:162
 #: ../../docs/development/compiling/compiling_for_windows.rst:245
 #: ../../docs/development/compiling/compiling_for_android.rst:204
@@ -5203,7 +5317,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/index.rst:70
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:159
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:403
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:318
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:336
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:345
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:464
@@ -5247,7 +5361,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:148
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:160
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:404
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:319
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:337
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:346
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:465
@@ -5294,7 +5408,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:149
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:161
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:405
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:320
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:347
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:466
@@ -5353,7 +5467,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:150
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:162
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:406
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:321
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:339
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:348
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:467
@@ -5397,7 +5511,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:151
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:163
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:407
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:322
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:340
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:349
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:468
@@ -5503,7 +5617,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:152
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:164
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:408
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:323
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:350
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:469
@@ -7217,7 +7331,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:226
 msgid ""
-"We want to connect the signal when the scene is intantiated, and we can do "
+"We want to connect the signal when the scene is instantiated, and we can do "
 "that using the :ref:`Node._ready() <class_Node_method__ready>` built-in "
 "function, which is called automatically by the engine when a node is fully "
 "instantiated."
@@ -9066,7 +9180,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:153
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:165
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:409
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:324
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:342
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:351
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
@@ -9097,7 +9211,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:154
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:166
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:410
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:343
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:352
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
@@ -9116,7 +9230,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:67
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:102
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:382
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:218
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:225
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:71
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:196
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:73
@@ -9128,7 +9242,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:155
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:167
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:411
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:333
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:344
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:353
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
@@ -9155,7 +9269,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:78
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:106
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:387
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:223
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:230
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:76
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:85
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:69
@@ -9166,7 +9280,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:156
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:168
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:412
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:345
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:543
@@ -9192,7 +9306,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:90
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:111
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:398
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:234
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:86
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:117
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:86
@@ -9203,7 +9317,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:157
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:169
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:413
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:346
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:544
@@ -10044,18 +10158,28 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:142
 msgid ""
+"You may see a warning in GDScript that the return value from "
+"``move_and_slide()`` is unused. This is expected. You can simply ignore the "
+"warning or, if you want to hide it entirely, add the comment ``# warning-"
+"ignore:return_value_discarded`` just above the ``move_and_slide(velocity)`` "
+"line. To read more about the GDScript warning system, see :ref:"
+"`doc_gdscript_warning_system`."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:149
+msgid ""
 "We need to define another function to calculate the start velocity. This "
 "function will turn the monster towards the player and randomize both its "
 "angle of motion and its velocity."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:146
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:153
 msgid ""
 "The function will take a ``start_position``, the mob's spawn position, and "
 "the ``player_position`` as its arguments."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:149
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:156
 msgid ""
 "We position the mob at ``start_position`` and turn it towards the player "
 "using the ``look_at_from_position()`` method, and randomize the angle by "
@@ -10063,47 +10187,47 @@ msgid ""
 "a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:175
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:182
 msgid ""
 "We then calculate a random speed using ``rand_range()`` once again and we "
 "use it to calculate the velocity."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:178
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:185
 msgid ""
 "We start by creating a 3D vector pointing forward, multiply it by our "
 "``random_speed``, and finally rotate it using the ``Vector3`` class's "
 "``rotated()`` method."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:210
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:217
 msgid "Leaving the screen"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:212
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:219
 msgid ""
 "We still have to destroy the mobs when they leave the screen. To do so, "
 "we'll connect our *VisibilityNotifier* node's ``screen_exited`` signal to "
 "the *Mob*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:215
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
 msgid ""
 "Head back to the 3D viewport by clicking on the *3D* label at the top of the "
 "editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:220
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
 msgid ""
 "Select the *VisibilityNotifier* node and on the right side of the interface, "
 "navigate to the *Node* dock. Double-click the *screen_exited()* signal."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:225
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:232
 msgid "Connect the signal to the *Mob*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:236
 msgid ""
 "This will take you back to the script editor and add a new function for you, "
 "``_on_VisibilityNotifier_screen_exited()``. From it, call the "
@@ -10111,13 +10235,13 @@ msgid ""
 "*VisibilityNotifier* \\'s box leaves the screen."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:249
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:256
 msgid ""
 "Our monster is ready to enter the game! In the next part, you will spawn "
 "monsters in the game level."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:252
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:259
 msgid "Here is the complete ``Mob.gd`` script for reference."
 msgstr ""
 
@@ -12019,7 +12143,8 @@ msgid "Obtaining each transform can be achieved with the following functions:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
-#: ../../docs/tutorials/io/data_paths.rst:57
+#: ../../docs/tutorials/io/data_paths.rst:45
+#: ../../docs/tutorials/io/data_paths.rst:73
 #: ../../docs/tutorials/io/binary_serialization_api.rst:29
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -17581,7 +17706,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:278
 msgid ""
-"**Quality:** Three bake quality modes are provided: Low, Medium, High, and "
+"**Quality:** Four bake quality modes are provided: Low, Medium, High, and "
 "Ultra. Higher quality takes more time, but result in a better-looking "
 "lightmap with less noise. The difference is especially noticeable with "
 "emissive materials or areas that get little to no direct lighting."
@@ -25230,7 +25355,8 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:197
 #: ../../docs/tutorials/export/exporting_for_macos.rst:115
-#: ../../docs/tutorials/io/data_paths.rst:57
+#: ../../docs/tutorials/io/data_paths.rst:45
+#: ../../docs/tutorials/io/data_paths.rst:73
 msgid "Location"
 msgstr ""
 
@@ -34205,11 +34331,46 @@ msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
 "must be written within quotes if it contains spaces or special characters.) "
-"The output path is relative to the project path or absolute; it does not "
-"respect the directory the command was invoked from."
+"The output path is *relative to the project path* or *absolute*; **it does "
+"not respect the directory the command was invoked from**."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:154
+msgid ""
+"The output file extension should match the one used by the Godot export "
+"process:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:156
+msgid "Windows: ``.exe``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:157
+msgid ""
+"macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* "
+"macOS). ``.app`` is not supported directly, although the generated ZIP "
+"archive contains an ``.app`` bundle."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:159
+msgid ""
+"Linux: Any extension (including none). ``.x86_64`` is typically used for 64-"
+"bit x86 binaries."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:160
+msgid "HTML5: ``.zip``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:161
+msgid "Android: ``.apk``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:162
+msgid "iOS: ``.zip``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:164
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
 "single exported main pack file to be used with multiple Godot executables. "
@@ -34217,61 +34378,61 @@ msgid ""
 "line:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:162
+#: ../../docs/tutorials/export/exporting_projects.rst:172
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, so that you do not need to ``cd`` to the project folder before running "
 "the command:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:172
+#: ../../docs/tutorials/export/exporting_projects.rst:182
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more information about using Godot "
 "from the command line."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:176
+#: ../../docs/tutorials/export/exporting_projects.rst:186
 msgid "PCK versus ZIP pack file formats"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:178
+#: ../../docs/tutorials/export/exporting_projects.rst:188
 msgid ""
 "Each format has its upsides and downsides. PCK is the default and "
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:182
+#: ../../docs/tutorials/export/exporting_projects.rst:192
 msgid "**PCK format:**"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:184
+#: ../../docs/tutorials/export/exporting_projects.rst:194
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:185
+#: ../../docs/tutorials/export/exporting_projects.rst:195
 msgid ""
 "Not readable and writable using tools normally present on the user's "
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:190
+#: ../../docs/tutorials/export/exporting_projects.rst:200
 msgid "**ZIP format:**"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:192
+#: ../../docs/tutorials/export/exporting_projects.rst:202
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:193
+#: ../../docs/tutorials/export/exporting_projects.rst:203
 msgid ""
 "Readable and writable using tools normally present on the user's operating "
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:198
+#: ../../docs/tutorials/export/exporting_projects.rst:208
 msgid ""
 "Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, "
 "when using a ZIP file as a pack file, the exported binary will not try to "
@@ -34279,7 +34440,7 @@ msgid ""
 "the player can double-click or run from a terminal to launch the project::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:210
+#: ../../docs/tutorials/export/exporting_projects.rst:220
 msgid ""
 "Save the launcher script and place it in the same folder as the exported "
 "binary. On Linux, make sure to give executable permissions to the launcher "
@@ -41531,36 +41692,37 @@ msgstr ""
 msgid ""
 "Note that more specialized devices such as steering wheels, rudder pedals "
 "and `HOTAS <https://en.wikipedia.org/wiki/HOTAS>`__ are less tested and may "
-"not always work as expected. If you have access to one of those devices, "
-"don't hesitate to `report bugs on GitHub <https://github.com/godotengine/"
-"godot/blob/master/CONTRIBUTING.md#reporting-bugs>`__."
+"not always work as expected. Overriding force feedback for those devices is "
+"also not implemented yet. If you have access to one of those devices, don't "
+"hesitate to `report bugs on GitHub <https://github.com/godotengine/godot/"
+"blob/master/CONTRIBUTING.md#reporting-bugs>`__."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:16
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:18
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:6
 msgid "In this guide, you will learn:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:18
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:20
 msgid ""
 "**How to write your input logic to support both keyboard and controller "
 "inputs.**"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:19
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:21
 msgid "**How controllers can behave differently from keyboard/mouse input.**"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:20
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:22
 msgid "**Troubleshooting issues with controllers in Godot.**"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:23
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:25
 msgid "Supporting universal input"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:25
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:27
 msgid ""
 "Thanks to Godot's input action system, Godot makes it possible to support "
 "both keyboard and controller input without having to write separate code "
@@ -41569,74 +41731,74 @@ msgid ""
 "to specified key and controller inputs."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:31
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:33
 msgid ""
 "Input actions are explained in detail on the :ref:`doc_inputevent` page."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:35
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:37
 msgid ""
 "Unlike keyboard input, supporting both mouse and controller input for an "
 "action (such as looking around in a first-person game) will require "
 "different code paths since these have to be handled separately."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:40
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
 msgid "Which Input singleton method should I use?"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:42
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
 msgid "There are 3 ways to get input in an analog-aware way:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:44
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:46
 msgid ""
 "When you have two axes (such as joystick or WASD movement) and want both "
 "axes to behave as a single input, use ``Input.get_vector()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:74
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:76
 msgid ""
 "When you have one axis that can go both ways (such as a throttle on a flight "
 "stick), or when you want to handle separate axes individually, use ``Input."
 "get_axis()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:95
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:97
 msgid ""
 "For other types of analog input, such as handling a trigger or handling one "
 "direction at a time, use ``Input.get_action_strength()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:109
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:111
 msgid ""
 "For non-analog digital/boolean input (only \"pressed\" or \"not pressed\" "
 "values), such as controller buttons, mouse buttons or keyboard keys, use "
 "``Input.is_action_pressed()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:125
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:127
 msgid ""
 "In Godot versions before 3.4, such as 3.3, ``Input.get_vector()`` and "
 "``Input.get_axis()`` aren't available. Only ``Input.get_action_strength()`` "
 "and ``Input.is_action_pressed()`` are available in Godot 3.3."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:130
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:132
 msgid "Differences between keyboard/mouse and controller input"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:132
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:134
 msgid ""
 "If you're used to handling keyboard and mouse input, you may be surprised by "
 "how controllers handle specific situations."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:136
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
 msgid "Dead zone"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:140
 msgid ""
 "Unlike keyboards and mice, controllers offer axes with *analog* inputs. The "
 "upside of analog inputs is that they offer additional flexibility for "
@@ -41649,7 +41811,7 @@ msgid ""
 "faulty controllers."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:147
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:149
 msgid ""
 "Let's take a racing game as a real-world example. Thanks to analog inputs, "
 "we can steer the car slowly in one direction or another. However, without a "
@@ -41662,7 +41824,7 @@ msgid ""
 "drifting, but is low enough to not ignore actual input from the player."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:157
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:159
 msgid ""
 "Godot features a built-in dead zone system to tackle this problem. The "
 "default value is ``0.2``, but you can increase it or decrease it on a per-"
@@ -41671,11 +41833,11 @@ msgid ""
 "calculate the average deadzone value from all of the actions in the vector."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:164
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:166
 msgid "\"Echo\" events"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:166
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:168
 msgid ""
 "Unlike keyboard input, holding down a controller button such as a D-pad "
 "direction will **not** generate repeated input events at fixed intervals "
@@ -41683,7 +41845,7 @@ msgid ""
 "sends \"echo\" events for controller input in the first place."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:171
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:173
 msgid ""
 "If you want controller buttons to send echo events, you will have to "
 "generate :ref:`class_InputEvent` objects by code and parse them using :ref:"
@@ -41692,29 +41854,29 @@ msgid ""
 "`class_Timer` node."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:182
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:184
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
 "com/godotengine/godot/issues?"
 "q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:187
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
 msgid "My controller isn't recognized by Godot."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:191
 msgid ""
 "First, check that your controller is recognized by other applications. You "
 "can use the `Gamepad Tester <https://gamepad-tester.com/>`__ website to "
 "confirm that your controller is recognized."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:194
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:196
 msgid "My controller has incorrectly mapped buttons or axes."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:196
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:198
 msgid ""
 "If buttons are incorrectly mapped, this may be due to an erroneous mapping "
 "from the `SDL game controller database <https://github.com/gabomdq/"
@@ -41723,7 +41885,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:201
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:203
 msgid ""
 "There are many ways to create mappings. One option is to use the mapping "
 "wizard in the `official Joypads demo <https://godotengine.org/asset-library/"
@@ -41732,7 +41894,7 @@ msgid ""
 "before running Godot:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:222
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:224
 msgid ""
 "To test mappings on non-desktop platforms or to distribute your project with "
 "additional controller mappings, you can add them by calling :ref:`Input."
@@ -41740,21 +41902,11 @@ msgid ""
 "in a script's ``_ready()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:228
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:230
 msgid "My controller works on a given platform, but not on another platform."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
-msgid ""
-"Controllers are currently only supported on x86-based Macs. This means "
-"controllers won't work on Macs featuring ARM processors such as the Apple M1."
-msgstr ""
-
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:237
-msgid "Linux"
-msgstr ""
-
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:239
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:235
 msgid ""
 "Prior to Godot 3.3, official Godot binaries were compiled with udev support "
 "but self-compiled binaries were compiled *without* udev support unless "
@@ -41762,12 +41914,12 @@ msgid ""
 "hotplugging support unavailable in self-compiled binaries."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:245
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:241
 #: ../../docs/tutorials/platform/platform_html5.rst:4
 msgid "HTML5"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:247
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:243
 msgid ""
 "HTML5 controller support is often less reliable compared to \"native\" "
 "platforms. The quality of controller support tends to vary wildly across "
@@ -41775,7 +41927,7 @@ msgid ""
 "different browser if they can't get their controller to work."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:252
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:248
 msgid ""
 "Also, note that `controller support was significantly improved <https://"
 "github.com/godotengine/godot/pull/45078>`__ in Godot 3.3 and later."
@@ -42058,8 +42210,8 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:13
 msgid ""
-"To as many platforms as possible, Godot only accepts UNIX-style path "
-"separators (``/``). These work on all platforms, including Windows."
+"To make supporting multiple platforms easier, Godot only accepts UNIX-style "
+"path separators (``/``). These work on all platforms, **including Windows**."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:16
@@ -42084,7 +42236,7 @@ msgid ""
 "You can access any file relative to it by writing paths starting with "
 "``res://``, which stands for resources. For example, you can access an image "
 "file ``character.png`` located in the project's root folder in code with the "
-"following path: ``res://some_texture.png``."
+"following path: ``res://character.png``."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:32
@@ -42102,114 +42254,140 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:38
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
-"On mobile and consoles, this path is unique to the project. On desktop, the "
-"engine stores user files in ``~/.local/share/godot/app_userdata/"
-"[project_name]`` on Linux, ``~/Library/Application Support/Godot/"
-"app_userdata/[project_name]`` on macOS (since Catalina) and ``%APPDATA%"
-"\\Godot\\app_userdata\\[project_name]`` on Windows. ``[project_name]`` is "
-"based on the application name defined in the Project Settings, but you can "
-"override it on a per-platform basis using :ref:`feature tags "
-"<doc_feature_tags>`."
+"Unlike ``res://``, the directory pointed at by ``user://`` is *guaranteed* "
+"to be writable to, even in an exported project."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:46
+#: ../../docs/tutorials/io/data_paths.rst:42
+msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:47
+#: ../../docs/tutorials/io/data_paths.rst:75
+msgid "User data"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:47
+#: ../../docs/tutorials/io/data_paths.rst:75
+msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:48
+msgid ""
+"macOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:49
+msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+#: ../../docs/tutorials/io/data_paths.rst:79
+msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+#: ../../docs/tutorials/io/data_paths.rst:79
+msgid "Windows: ``%APPDATA%\\[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:52
+#: ../../docs/tutorials/io/data_paths.rst:80
+msgid "macOS: ``~/Library/Application Support/[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:53
+#: ../../docs/tutorials/io/data_paths.rst:81
+msgid "Linux: ``~/.local/share/[project_name]``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:56
+msgid ""
+"``[project_name]`` is based on the application name defined in the Project "
+"Settings, but you can override it on a per-platform basis using :ref:"
+"`feature tags <doc_feature_tags>`."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:59
+msgid ""
+"On mobile platforms, this path is unique to the project and is not "
+"accessible by other applications for security reasons."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:62
 msgid ""
 "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
 "the device via IndexedDB. (Interaction with the main filesystem can still be "
 "performed through the :ref:`JavaScript <class_JavaScript>` singleton.)"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:51
+#: ../../docs/tutorials/io/data_paths.rst:67
 msgid "Editor data paths"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:53
+#: ../../docs/tutorials/io/data_paths.rst:69
 msgid ""
 "The editor uses different paths for user data, user settings, and cache, "
 "depending on the platform. By default, these paths are:"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:59
-msgid "User data"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:59
-msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:60
+#: ../../docs/tutorials/io/data_paths.rst:76
 msgid "macOS: ``~/Library/Application Support/Godot/[project_name]``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:61
+#: ../../docs/tutorials/io/data_paths.rst:77
 msgid "Linux: ``~/.local/share/godot/[project_name]``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:63
-msgid "User data (when ``use_custom_user_dir`` project setting is ``true``)"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:63
-msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:64
-msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:65
-msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr ""
-
-#: ../../docs/tutorials/io/data_paths.rst:67
+#: ../../docs/tutorials/io/data_paths.rst:83
 msgid "User settings"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:67
+#: ../../docs/tutorials/io/data_paths.rst:83
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:68
+#: ../../docs/tutorials/io/data_paths.rst:84
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:69
+#: ../../docs/tutorials/io/data_paths.rst:85
 msgid "Linux: ``~/.config/godot/``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:71
+#: ../../docs/tutorials/io/data_paths.rst:87
 msgid "Cache"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:71
+#: ../../docs/tutorials/io/data_paths.rst:87
 msgid "Windows: ``%TEMP%\\Godot\\``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:72
+#: ../../docs/tutorials/io/data_paths.rst:88
 msgid "macOS: ``~/Library/Caches/Godot/``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:73
+#: ../../docs/tutorials/io/data_paths.rst:89
 msgid "Linux: ``~/.cache/godot/``"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:76
+#: ../../docs/tutorials/io/data_paths.rst:92
 msgid "**User data** contains export templates and project-specific data."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:77
+#: ../../docs/tutorials/io/data_paths.rst:93
 msgid ""
 "**User settings** contains editor settings, text editor themes, script "
 "templates, etc."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:79
+#: ../../docs/tutorials/io/data_paths.rst:95
 msgid ""
 "**Cache** contains temporary data. It can safely be removed when Godot is "
 "closed."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:82
+#: ../../docs/tutorials/io/data_paths.rst:98
 msgid ""
 "Godot complies with the `XDG Base Directory Specification <https://"
 "specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__ on "
@@ -42217,18 +42395,18 @@ msgid ""
 "specification to change the editor and project data paths."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:87
+#: ../../docs/tutorials/io/data_paths.rst:103
 msgid ""
 "If you use `Godot packaged as a Flatpak <https://flathub.org/apps/details/"
 "org.godotengine.Godot>`__, the editor data paths will be located in "
 "subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:95
+#: ../../docs/tutorials/io/data_paths.rst:111
 msgid "Self-contained mode"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:97
+#: ../../docs/tutorials/io/data_paths.rst:113
 msgid ""
 "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
 "the editor binary, Godot will enable *self-contained mode*. This mode makes "
@@ -42237,10 +42415,20 @@ msgid ""
 "installation of the editor."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:103
+#: ../../docs/tutorials/io/data_paths.rst:119
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:124
+msgid ""
+"Self-contained mode is not supported in exported projects yet. To read and "
+"write files relative to the executable path, use :ref:`OS."
+"get_executable_path() <class_OS_method_get_executable_path>`. Note that "
+"writing files in the executable path only works if the executable is placed "
+"in a writable location (i.e. **not** Program Files or another directory that "
+"is read-only for regular users)."
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:4
@@ -55994,11 +56182,11 @@ msgid ""
 "use ``new()`` instead of ``instance()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:64
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:88
 msgid "Interacting with the inspector"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:66
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:90
 msgid ""
 "To interact with the inspector dock, your ``MyInspectorPlugin.gd`` script "
 "must extend the :ref:`class_EditorInspectorPlugin` class. This class "
@@ -56006,18 +56194,18 @@ msgid ""
 "properties."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:70
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:94
 msgid ""
 "To have any effect at all, the script must implement the ``can_handle()`` "
 "method. This function is called for each edited :ref:`class_Object` and must "
 "return ``true`` if this plugin should handle the object or its properties."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:74
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:98
 msgid "This includes any :ref:`class_Resource` attached to the object."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:76
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:100
 msgid ""
 "You can implement four other methods to add controls to the inspector at "
 "specific positions. The ``parse_begin()`` and ``parse_end()`` methods are "
@@ -56026,7 +56214,7 @@ msgid ""
 "layout by calling ``add_custom_control()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:82
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:106
 msgid ""
 "As the editor parses the object, it calls the ``parse_category()`` and "
 "``parse_property()`` methods. There, in addition to "
@@ -56035,11 +56223,11 @@ msgid ""
 "methods to specifically add :ref:`class_EditorProperty`-based controls."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:115
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:171
 msgid "Adding an interface to edit properties"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:117
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:173
 msgid ""
 "The :ref:`class_EditorProperty` class is a special type of :ref:"
 "`class_Control` that can interact with the inspector dock's edited objects. "
@@ -56047,31 +56235,31 @@ msgid ""
 "complex scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:121
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:177
 msgid ""
 "There are three essential parts to the script extending :ref:"
 "`class_EditorProperty`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:124
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:180
 msgid ""
 "You must define the ``_init()`` method to set up the control nodes' "
 "structure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:127
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:183
 msgid ""
 "You should implement the ``update_property()`` to handle changes to the data "
 "from the outside."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:130
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:186
 msgid ""
 "A signal must be emitted at some point to inform the inspector that the "
 "control has changed the property using ``emit_changed``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:133
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:189
 msgid ""
 "You can display your custom widget in two ways. Use just the default "
 "``add_child()`` method to display it to the right of the property name, and "
@@ -56079,7 +56267,7 @@ msgid ""
 "the name."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:185
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:307
 msgid ""
 "Using the example code above you should be able to make a custom widget that "
 "replaces the default :ref:`class_SpinBox` control for integers with a :ref:"
@@ -64821,66 +65009,67 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:57
 msgid ""
-"C++ modules are supported on all platforms. In contrast, GDNative isn't "
-"supported on HTML5 and the Universal Windows Platform (UWP) yet."
+"C++ modules are supported on all platforms. In contrast, GDNative has only "
+"limited support on HTML5 (cannot be used together with multi-threading), and "
+"is not supported on Universal Windows Platform (UWP)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:59
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:60
 msgid ""
 "C++ modules can be faster than GDNative, especially when the code requires a "
 "lot of communication through the scripting API."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:63
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:64
 msgid "Supported languages"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:65
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:66
 msgid ""
 "The Godot developers officially support the following language bindings for "
 "GDNative:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:68
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:69
 msgid "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:69
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:70
 msgid "C :ref:`(tutorial) <doc_gdnative_c_example>`"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:73
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:74
 msgid ""
 "There are no plans to support additional languages with GDNative officially. "
 "That said, the community offers several bindings for other languages (see "
 "below)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:79
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:80
 msgid "The bindings below are developed and maintained by the community:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:84
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:85
 msgid "`D <https://github.com/godot-d/godot-d>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:85
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:86
 msgid "`Kotlin <https://github.com/utopia-rise/godot-kotlin>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:86
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:87
 msgid "`Nim <https://github.com/pragmagic/godot-nim>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:87
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:88
 msgid "`Python <https://github.com/touilleMan/godot-python>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:88
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:89
 msgid "`Rust <https://github.com/godot-rust/godot-rust>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:92
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:93
 msgid ""
 "Not all bindings mentioned here may be production-ready. Make sure to "
 "research options thoroughly before starting a project with one of those. "
@@ -64888,18 +65077,18 @@ msgid ""
 "you're using."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:98
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:99
 msgid "Version compatibility"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:100
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:101
 msgid ""
 ":ref:`Unlike Godot itself <doc_release_policy>`, GDNative has stricter "
 "version compatibility requirements as it relies on low-level *ptrcalls* to "
 "function."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:103
+#: ../../docs/tutorials/scripting/gdnative/what_is_gdnative.rst:104
 msgid ""
 "GDNative add-ons compiled for a given Godot version are only guaranteed to "
 "work with the same minor release series. For example, a GDNative add-on "
@@ -69447,9 +69636,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:113
 msgid ""
-"For matrices, use the ``m[row][column]`` indexing syntax to access each "
+"For matrices, use the ``m[column][row]`` indexing syntax to access each "
 "scalar, or ``m[idx]`` to access a vector by row index. For example, for "
-"accessing the y position of an object in a mat4 you  use ``m[3][1]``."
+"accessing the y position of an object in a mat4 you use ``m[3][1]``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:118
@@ -93672,18 +93861,24 @@ msgid ""
 "program manually:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:86
+#: ../../docs/community/contributing/building_the_manual.rst:85
+msgid ""
+"You can also specify a list of files to build, which can greatly speed up "
+"compilation:"
+msgstr ""
+
+#: ../../docs/community/contributing/building_the_manual.rst:92
 msgid "Building with Sphinx and virtualenv"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:88
+#: ../../docs/community/contributing/building_the_manual.rst:94
 msgid ""
 "If you want your Sphinx installation scoped to the project, you can install "
 "sphinx-build using virtualenv. To do so, run this command from this "
 "repository's root folder:"
 msgstr ""
 
-#: ../../docs/community/contributing/building_the_manual.rst:98
+#: ../../docs/community/contributing/building_the_manual.rst:104
 msgid "Then, run ``make html`` as shown above."
 msgstr ""
 
