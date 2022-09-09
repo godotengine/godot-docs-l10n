@@ -3,9 +3,15 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # André Silva <andre.olivais@gmail.com>, 2021.
+# Baiterson <baiter160@gmail.com>, 2022.
 # DeeJayLSP <djlsplays@gmail.com>, 2020-2021.
 # Diogo Gomes <dgomes@graphnode.com>, 2022.
+# Esdras Caleb Oliveira Silva <acheicaleb@gmail.com>, 2022.
+# Gabriel Cavalcante <gscavalcante@gmail.com>, 2022.
 # João Lopes <linux-man@hotmail.com>, 2020-2021.
+# Lucas Campos <lucas@lcmps.dev>, 2022.
+# Nathan Soares <eu@nathan.com.br>, 2022.
+# Rafael Testa <rafael1testa@gmail.com>, 2022.
 # Renu <ifpilucas@gmail.com>, 2022.
 # ssantos <ssantos@web.de>, 2021-2022.
 #
@@ -14,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2022-04-28 11:08+0000\n"
-"Last-Translator: Diogo Gomes <dgomes@graphnode.com>\n"
+"PO-Revision-Date: 2022-08-25 13:03+0000\n"
+"Last-Translator: Baiterson <baiter160@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pt/>\n"
 "Language: pt\n"
@@ -23,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -163,7 +169,6 @@ msgstr ""
 "nos a melhorar a documentação a informar-nos!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -171,12 +176,12 @@ msgid ""
 "talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_!"
 msgstr ""
-"Submeta um problema ou solicitação no `Repositório do GitHub <https://github."
-"com/godotengine/godot-docs/issues>`, ajude-nos a `traduzir a documentação em "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ para o seu idioma, ou "
-"fale conosco sobre qualquer coisa no canal ``#documentation`` do `Discord "
-"<https://discord.gg/zH7NUgz>`_, ou no canal ``#documentation`` do `Chat de "
-"Contribuidores do Godot em <https://chat.godotengine.org/>´!"
+"Submeta um problema ou pull request no `Repositório do GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`, ajude-nos a `traduzir a "
+"documentação em <https://hosted.weblate.org/engage/godot-engine/>`_ para o "
+"seu idioma, ou fale conosco sobre qualquer coisa no canal ``#documentation`` "
+"do `Discord <https://discord.gg/zH7NUgz>`_, ou no canal ``#documentation`` "
+"do `Chat de Contribuidores do Godot em <https://chat.godotengine.org/>´!"
 
 #: ../../docs/index.rst:61
 msgid "weblate_widget"
@@ -561,13 +566,12 @@ msgid "In short:"
 msgstr "Resumindo:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
 "Está livre para descarregarr e usar Godot para qualquer propósito, pessoal, "
-"sem lucro, comercial, ou qualquer outro."
+"sem fins lucrativos, comercial, ou qualquer outro."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -806,7 +810,6 @@ msgstr ""
 "confira nosso guia `GDScript: <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -816,7 +819,7 @@ msgstr ""
 "Há várias razões para usar o GDScript - especialmente quando está a criar "
 "protótipos, em estágios alfa/beta do seu projeto, ou não está a criar o "
 "próximo título AAA--mas a razão mais importante é a **redução geral da "
-"complexidade.**"
+"complexidade**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -1042,6 +1045,8 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Como instalo o editor Godot no meu sistema (para integração com a area de "
+"trabalho)?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1054,12 +1059,22 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Como você não precisa realmente instalar o Godot em seu sistema para executá-"
+"lo, isso significa que a integração da área de trabalho não é realizada "
+"automaticamente. Existem duas maneiras de superar isso. Você pode instalar "
+"Godot de `Steam <https://store.steampowered.com/app/404790/Godot_Engine/>`__ "
+"(todas as plataformas), `Scoop <https://scoop.sh/>`__ (Windows), `Homebrew "
+"<https://brew.sh/>`__ (macOS) ou `Flathub <https://flathub.org/apps/details/"
+"org.godotengine.Godot>`__ (Linux). Isso executará automaticamente as etapas "
+"necessárias para a integração da área de trabalho."
 
 #: ../../docs/about/faq.rst:197
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Como alternativa, você pode executar manualmente as etapas que um instalador "
+"faria por você:"
 
 #: ../../docs/about/faq.rst:202
 msgid ""
@@ -1067,10 +1082,15 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Mova o executável Godot para um local estável (ou seja, fora da sua pasta "
+"Downloads), para que você não o mova acidentalmente e quebre o atalho no "
+"futuro."
 
 #: ../../docs/about/faq.rst:204
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Clique com o botão direito do mouse no executável Godot e escolha **Criar "
+"atalho**."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1079,6 +1099,11 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Mova o atalho criado para ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs``. Este é o local de todo o usuário para os atalhos que "
+"aparecerão no menu Iniciar. Você também pode fixar Godot na barra de tarefas "
+"clicando com o botão direito do mouse no executável e escolhendo **Pin to "
+"Task Bar**."
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1086,11 +1111,14 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Arraste o aplicativo Godot extraído para ``/Applications/Godot.app``, então "
+"arraste-o para o Dock se desejar. O Spotlight será capaz de encontrar Godot "
+"desde que esteja em ``/Applications`` ou ``~/Applications``."
 
 #: ../../docs/about/faq.rst:218
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../docs/about/faq.rst:220
 msgid ""
@@ -1098,6 +1126,9 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Mova o binário Godot para um local estável (ou seja, fora da sua pasta "
+"Downloads), para que você não o mova acidentalmente e quebre o atalho no "
+"futuro."
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -1107,6 +1138,11 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Renomeie e mova o binário Godot para um local presente em sua variável de "
+"ambiente ``PATH``. Normalmente é ``/usr/local/bin/godot`` ou ``/usr/bin/"
+"godot``. Fazer isso requer privilégios de administrador, mas também permite "
+"que você :ref:`execute o editor Godot a partir de um terminal "
+"<doc_command_line_tutorial>` digitando ``godot``."
 
 #: ../../docs/about/faq.rst:228
 msgid ""
@@ -1115,6 +1151,10 @@ msgid ""
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Se você não pode mover o binário do editor Godot para um local protegido, "
+"você pode manter o binário em algum lugar em seu diretório pessoal, e "
+"modificar a linha ``Path=`` no arquivo ``.desktop`` linkado abaixo para "
+"conter o * completo caminho absoluto* para o binário Godot."
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -1124,11 +1164,16 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"Salve `este arquivo .desktop <https://raw.githubusercontent.com/godotengine/"
+"godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ em ``$HOME/."
+"local/ compartilhar/aplicativos/``. Se você tem privilégios de "
+"administrador, você também pode salvar o arquivo ``.desktop`` em ``/usr/"
+"local/share/applications`` para tornar o atalho disponível para todos os "
+"usuários."
 
 #: ../../docs/about/faq.rst:239
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr "É possível utilizar a Godot para criar aplicações que não sejam jogos?"
+msgstr "Godot é um aplicativo portátil?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -1136,6 +1181,9 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"Em sua configuração padrão, Godot é *semi-portátil*. Seu executável pode ser "
+"executado em qualquer local (incluindo locais não graváveis) e nunca requer "
+"privilégios de administrador."
 
 #: ../../docs/about/faq.rst:245
 msgid ""
@@ -1145,12 +1193,19 @@ msgid ""
 "containing the Godot executable. See :ref:`doc_data_paths` for more "
 "information."
 msgstr ""
+"No entanto, os arquivos de configuração serão gravados na configuração de "
+"todo o usuário ou no diretório de dados. Esta é geralmente uma boa "
+"abordagem, mas isso significa que os arquivos de configuração não serão "
+"transportados pelas máquinas se você copiar a pasta que contém o executável "
+"Godot. Veja :ref:`doc_data_paths` para mais informações."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "If *true* portable operation is desired (e.g. for use on an USB stick), "
 "follow the steps in :ref:`doc_data_paths_self_contained_mode`."
 msgstr ""
+"Se a operação portátil *true* for desejada (por exemplo, para uso em um "
+"pendrive), siga as etapas em :ref:`doc_data_paths_self_contained_mode`."
 
 #: ../../docs/about/faq.rst:254
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
@@ -1699,11 +1754,10 @@ msgstr ""
 "<doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:482
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr ""
 "Por que Godot não usa STL (Standard Template Library, ou Biblioteca de "
-"Modelos Padrão)"
+"Modelos Padrão)?"
 
 #: ../../docs/about/faq.rst:484
 msgid ""
@@ -2146,7 +2200,6 @@ msgstr ""
 "Esta página visa listar todos os recursos atualmente suportados pelo Godot."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -2154,7 +2207,7 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Esta página lista funcionalidades suportadas pela atual versão estável do "
-"Godot (3.3). `Mais funcionalidades <https://docs.godotengine.org/en/latest/"
+"Godot (3.4). `Mais funcionalidades <https://docs.godotengine.org/en/latest/"
 "about/list_of_features.html>`__ estão disponíveis na versão de "
 "desenvolvimento mais recente (4.0)."
 
@@ -2248,9 +2301,8 @@ msgid "Scene tree editor."
 msgstr "Editor de árvore de cena."
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Editor de temas embutido."
+msgstr "Editor de scripts embutido."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2335,7 +2387,6 @@ msgstr ""
 "funcionalidades ou para acelerar o seu trabalho."
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly. features or speed up your workflow."
@@ -2343,7 +2394,6 @@ msgstr ""
 "Baixe projetos a partir da biblioteca de assets e importe-os diretamente."
 
 #: ../../docs/about/list_of_features.rst:77
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
@@ -2402,7 +2452,7 @@ msgstr "Camadas de parallax."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Suporte pseudo-3D incluindo visualização no editor."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid "2D lighting with normal maps."
@@ -2426,13 +2476,12 @@ msgstr ""
 "Fontes em bitmap podem ser exportadas a utilizar ferramentas como BMFont."
 
 #: ../../docs/about/list_of_features.rst:111
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
 "DynamicFont suporta fontes monocrómaticas bem como coloridas. Os formatos "
-"suportados são TTF e OTF."
+"suportados são TTF e OTF e WOFF1."
 
 #: ../../docs/about/list_of_features.rst:113
 msgid ""
@@ -2544,15 +2593,16 @@ msgid "3D graphics"
 msgstr "Gráficos 3D"
 
 #: ../../docs/about/list_of_features.rst:155
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "A importação de animações é ativada por padrão."
+msgstr "Renderização opcional de HDR com sRGB (habilitado por padrão)."
 
 #: ../../docs/about/list_of_features.rst:156
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
 "overdraw, which speeds up complex scene rendering."
 msgstr ""
+"Usa uma pré-passagem de profundidade opcional (ativada por padrão) para "
+"reduzir o custo de overdraw, o que acelera a renderização de cenas complexas."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid "LDR rendering for greater compatibility."
@@ -2575,9 +2625,9 @@ msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Câmaras em perspetiva, ortográfica e deslocamento de tronco."
 
 #: ../../docs/about/list_of_features.rst:170
-#, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "**Renderização baseada em física:**"
+msgstr ""
+"**Renderização baseada em física (funcionalidade de material integrada):**"
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Follows the Disney PBR model."
@@ -2588,11 +2638,15 @@ msgid ""
 "Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
 "shading modes."
 msgstr ""
+"Suporta os modos de sombreamento difuso Lambert, Lambert Wrap (meio "
+"Lambert), Oren-Nayar e Toon."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
 msgstr ""
+"Suporta os modos de sombreamento especular Schlick-GGX, Blinn, Phong, Toon e "
+"Desativado."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
@@ -2604,6 +2658,8 @@ msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance"
 msgstr ""
+"Usa oclusão especular do horizonte (modelo de filamento) para melhorar a "
+"aparência do material"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Normal mapping."
@@ -2611,7 +2667,7 @@ msgstr "Mapeamento Normal."
 
 #: ../../docs/about/list_of_features.rst:178
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "Mapeamento detalhado para os mapas albedo e normal."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
@@ -2643,6 +2699,9 @@ msgid ""
 "refraction). On GLES2, refraction is still functional but lacks support for "
 "material roughness."
 msgstr ""
+"*GLES3:* Refração com suporte para rugosidade do material (resultando em "
+"refração borrada). No GLES2, a refração ainda é funcional, mas não tem "
+"suporte para a rugosidade do material."
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "*GLES3:* Proximity fade (soft particles)."
@@ -2678,6 +2737,12 @@ msgid ""
 "approach to lighting, which doesn't have a limit on the number of lights but "
 "is slower with many lights."
 msgstr ""
+"*GLES3:* A iluminação é feita com uma abordagem de passagem única. Por "
+"padrão, até 32 luzes omni e 32 luzes spot podem ser exibidas por recurso de "
+"malha. Se necessário, esse limite pode ser aumentado ao custo de maiores "
+"tempos de compilação do sombreador e menor desempenho. GLES2 usa uma "
+"abordagem multi-pass forward para iluminação, que não tem limite no número "
+"de luzes, mas é mais lenta com muitas luzes."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "**Shadow mapping:**"
@@ -2753,11 +2818,12 @@ msgstr ""
 "usar ReflectionProbe. A correção de paralaxe pode ser ativada opcionalmente."
 
 #: ../../docs/about/list_of_features.rst:225
-#, fuzzy
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
-msgstr "Técnicas de reflexão podem ser combinadas para maior precisão."
+msgstr ""
+"Técnicas de reflexão podem ser combinadas para maior precisão, ou "
+"escalabilidade."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -2878,9 +2944,10 @@ msgstr "**Compressão de Textura:**"
 #: ../../docs/about/list_of_features.rst:265
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
+"WebP sem perdas ou com perdas (não salva VRAM; apenas reduz o tamanho do "
+"armazenamento)."
 
 #: ../../docs/about/list_of_features.rst:266
-#, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
 msgstr "*GLES3:* S3TC (não é compatível com as plataformas móveis/Web)."
 
@@ -2906,14 +2973,12 @@ msgid "Multi-sample antialiasing (MSAA)."
 msgstr "Antisserrilhado (MSAA) de várias amostras."
 
 #: ../../docs/about/list_of_features.rst:274
-#, fuzzy
 msgid "Fast approximate antialiasing (FXAA)."
-msgstr "Antisserrilhado (MSAA) de várias amostras."
+msgstr "Antisserrilhado aproximado rápido (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:276
-#, fuzzy
 msgid "**Performance:**"
-msgstr "Desempenho"
+msgstr "**Desempenho:**"
 
 #: ../../docs/about/list_of_features.rst:278
 msgid ""
@@ -2921,23 +2986,27 @@ msgid ""
 "Supports gameplay notifications with primary and secondary visibility to "
 "disable AI/physics processing for nodes that don't need it."
 msgstr ""
+"Seleção de oclusão com :ref:`salas e portais <doc_rooms_and_portals>`. "
+"Suporta notificações de jogabilidade com visibilidade primária e secundária "
+"para desabilitar o processamento de IA/física para nós que não precisam dele."
 
 #: ../../docs/about/list_of_features.rst:281
 msgid ""
 "Real-time occluder spheres. Not as effective as rooms and portals (and "
 "doesn't support gameplay notifications), but easier to set up."
 msgstr ""
+"Esferas oclusoras em tempo real. Não é tão eficaz quanto salas e portais (e "
+"não suporta notificações de jogabilidade), mas é mais fácil de configurar."
 
 #: ../../docs/about/list_of_features.rst:286
-#, fuzzy
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
 "to further improve quality. This can be helpful when using Godot for offline "
 "rendering."
 msgstr ""
-"A maioria desses efeitos pode ser ajustada para melhor desempenho ou para "
-"melhorar ainda mais a qualidade. Isso pode ser útil ao usar o Godot para "
-"renderização offline."
+"A maioria desses efeitos acima pode ser ajustada para melhor desempenho ou "
+"para melhorar ainda mais a qualidade. Isso pode ser útil ao usar o Godot "
+"para renderização offline."
 
 #: ../../docs/about/list_of_features.rst:291
 msgid "3D tools"
@@ -2978,7 +3047,7 @@ msgstr "Classe auxiliar de geometria 3D."
 #: ../../docs/about/list_of_features.rst:302
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
-msgstr ""
+msgstr "Suporte para exportar a cena atual como um arquivo glTF 2.0 do editor."
 
 #: ../../docs/about/list_of_features.rst:305
 msgid "3D physics"
@@ -2998,11 +3067,8 @@ msgid "Ragdolls."
 msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:320
-#, fuzzy
 msgid "Built-in shapes: cuboid, sphere, capsule, cylinder."
-msgstr ""
-"Formas previamente construídas: cubo, esfera, cápsula, cilindro (apenas com "
-"física de projétil)."
+msgstr "Formas integradas: cubo, esfera, cápsula, cilindro."
 
 #: ../../docs/about/list_of_features.rst:321
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -3029,13 +3095,12 @@ msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr "*3D:* Shaders customizados para vértices, fragmentos, luzes e céu."
 
 #: ../../docs/about/list_of_features.rst:329
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-"Shaders baseados em texto a usar uma `linguagem de shader inspirada em GLSL "
-"<doc_shading_language>`."
+"Shaders baseados em texto usando uma :ref:`linguagem de shader inspirada em "
+"GLSL <doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:330
 msgid "Visual shader editor."
@@ -3106,9 +3171,8 @@ msgstr ""
 "assíncronas ou fazer uso de múltiplos núcleos de processador."
 
 #: ../../docs/about/list_of_features.rst:353
-#, fuzzy
 msgid ":ref:`C#: <toc-learn-scripting-C#>`"
-msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -3218,11 +3282,12 @@ msgstr ""
 "efeitos com dezenas de efeitos inclusos."
 
 #: ../../docs/about/list_of_features.rst:394
-#, fuzzy
 msgid ""
 "Listener2D and Listener3D nodes to listen from a position different than the "
 "camera."
-msgstr "Node Listener3D para escutar de uma posição diferente da câmara em 3D."
+msgstr ""
+"Nodos Listener2D e Listener3D servem para ouvir de uma posição diferente da "
+"câmera."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid ""
@@ -3306,9 +3371,8 @@ msgstr ""
 "direta do Blender)."
 
 #: ../../docs/about/list_of_features.rst:425
-#, fuzzy
 msgid "FBX (experimental, static meshes only)."
-msgstr "FBX (experimental)."
+msgstr "FBX (experimental, apenas para modelos estáticos)."
 
 #: ../../docs/about/list_of_features.rst:426
 msgid "Collada (.dae)."
@@ -3326,6 +3390,9 @@ msgid ""
 "tangents on import, which ensures consistency with other 3D applications "
 "such as Blender."
 msgstr ""
+"As malhas 3D usam o `Mikktspace <http://www.mikktspace.com/>`__ para gerar "
+"tangentes na importação, o que garante consistência com outros aplicativos "
+"3D, como o Blender."
 
 #: ../../docs/about/list_of_features.rst:433
 #: ../../docs/tutorials/rendering/viewports.rst:38
@@ -3579,6 +3646,11 @@ msgid ""
 "Any binary can be used without a window using the ``--no-window`` :ref:"
 "`command line argument <doc_command_line_tutorial>`."
 msgstr ""
+":ref:`Headless/binários de servidor <doc_exporting_for_dedicated_servers>` "
+"podem ser baixados para Linux e :ref:`compilado para macOS "
+"<doc_compiling_for_osx>`. Qualquer binário pode ser usado sem uma janela "
+"usando o argumento ``--no-window`` :ref:`command line "
+"<doc_command_line_tutorial>`."
 
 #: ../../docs/about/list_of_features.rst:518
 msgid "Mobile"
@@ -3605,20 +3677,20 @@ msgid "Support for ARKit on iOS out of the box."
 msgstr "Suporte ao ARKit no iOS quando pronto para uso."
 
 #: ../../docs/about/list_of_features.rst:528
-#, fuzzy
 msgid "Support for the OpenXR APIs."
-msgstr "Suporte às API's de OpenXR e OpenVR."
+msgstr "Suporte às API's de OpenXR."
 
 #: ../../docs/about/list_of_features.rst:530
 msgid ""
 "Includes support for popular headsets like the Meta Quest and the Valve "
 "Index."
 msgstr ""
+"Inclui suporte para fones de ouvido populares como o Meta Quest e o Valve "
+"Index."
 
 #: ../../docs/about/list_of_features.rst:532
-#, fuzzy
 msgid "Support for the OpenVR APIs."
-msgstr "Suporte às API's de OpenXR e OpenVR."
+msgstr "Suporte às API's de OpenVR."
 
 #: ../../docs/about/list_of_features.rst:535
 msgid "GUI system"
@@ -3678,16 +3750,15 @@ msgstr "Trees (podem também ser usadas para representar tabelas)."
 
 #: ../../docs/about/list_of_features.rst:550
 msgid "Color picker with RGB and HSV modes."
-msgstr ""
+msgstr "Seletor de cores com modos RGB e HSV."
 
 #: ../../docs/about/list_of_features.rst:551
-#, fuzzy
 msgid ""
 "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
 "draggable splitter, ...)."
 msgstr ""
-"Contentores (horizontais, verticais, em grid, centralizados, com margem, "
-"divisórias arrastáveis, ...)."
+"Containers (horizontais, verticais, em grid, centralizados, fluxo, com "
+"margem, divisórias arrastáveis, divisores...)."
 
 #: ../../docs/about/list_of_features.rst:552
 msgid "Controls can be rotated and scaled."
@@ -3797,6 +3868,8 @@ msgid ""
 ":ref:`Tween <class_Tween>` node to easily perform procedural animations by "
 "code."
 msgstr ""
+":ref:`Tween <class_Tween>` para realizar facilmente animações procedurais "
+"por código."
 
 #: ../../docs/about/list_of_features.rst:588
 msgid "Support for animating any property with customizable interpolation."
@@ -4735,7 +4808,7 @@ msgstr "|eol| Não recebe suporte. (última atualização: 3.0.6)."
 
 #: ../../docs/about/release_policy.rst:119
 msgid "eol"
-msgstr ""
+msgstr "eol"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "Godot 3.1"
@@ -4907,12 +4980,17 @@ msgid ""
 "In your project's credits screen, remember to also list third-party notices "
 "for assets you're using, such as textures, models, sounds, music and fonts."
 msgstr ""
+"Na tela de créditos do seu projeto, lembre-se de listar também os avisos de "
+"terceiros para os ativos que você está usando, como texturas, modelos, sons, "
+"músicas e fontes."
 
 #: ../../docs/about/complying_with_licenses.rst:24
 msgid ""
 "Free assets in particular often come with licenses that require attribution. "
 "Double-check their license before using those assets in a project."
 msgstr ""
+"Os ativos gratuitos, em particular, geralmente vêm com licenças que exigem "
+"atribuição. Verifique sua licença antes de usar esses ativos em um projeto."
 
 #: ../../docs/about/complying_with_licenses.rst:28
 #: ../../docs/tutorials/export/exporting_for_macos.rst:16
@@ -4994,6 +5072,13 @@ msgid ""
 "FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
 "IN THE SOFTWARE."
 msgstr ""
+"O SOFTWARE É FORNECIDO \"COMO ESTÁ\", SEM GARANTIA DE QUALQUER TIPO, "
+"EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE "
+"COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. EM "
+"NENHUMA HIPÓTESE O AUTORES OU TITULARES DE DIREITOS AUTORAIS SÃO "
+"RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTROS RESPONSABILIDADE, SEJA "
+"EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTE DE, FORA DE OU EM "
+"CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO PROGRAMAS."
 
 #: ../../docs/about/complying_with_licenses.rst:48
 msgid ""
@@ -5094,6 +5179,9 @@ msgid ""
 "license`` in your game documentation or credits would be an acceptable way "
 "to satisfy the license terms."
 msgstr ""
+"Os desenvolvedores da Godot Engine consideram que um link para ``godotengine."
+"org/license`` na documentação do seu jogo ou créditos seria uma forma "
+"aceitável de cumprir os termos da licença."
 
 #: ../../docs/about/complying_with_licenses.rst:97
 msgid "Third-party licenses"
@@ -6648,7 +6736,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
 #, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Cenas e nós"
+msgstr "Nós e Cenas"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -100969,3 +101057,5 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Uma lista de recursos escolhida por Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"

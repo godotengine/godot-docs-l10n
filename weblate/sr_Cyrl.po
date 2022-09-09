@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# M <translateosp@kurozy.xyz>, 2022.
 # Алексић Владица <vlajkousk@gmail.com>, 2021.
 # Младен Габић <cupakabra@protonmail.com>, 2020.
 #
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2021-11-07 22:23+0000\n"
-"Last-Translator: Алексић Владица <vlajkousk@gmail.com>\n"
+"PO-Revision-Date: 2022-07-28 01:44+0000\n"
+"Last-Translator: M <translateosp@kurozy.xyz>\n"
 "Language-Team: Serbian (cyrillic) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/sr_Cyrl/>\n"
 "Language: sr_Cyrl\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -36,9 +37,8 @@ msgid "Getting started"
 msgstr "Почетна"
 
 #: ../../docs/index.rst:84
-#, fuzzy
 msgid "Tutorials"
-msgstr "Подучавања"
+msgstr "Туторијали"
 
 #: ../../docs/index.rst:114
 msgid "Development"
@@ -53,9 +53,8 @@ msgid "Class reference"
 msgstr "Референце Класа"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.4* branch"
-msgstr "Годот Докс - *3.2* грана"
+msgstr "Годот Докс - *3.4* грана"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -66,7 +65,6 @@ msgstr ""
 "\"Прочитај документацију\" панел на дну траке са стране да видиш листу."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -74,10 +72,10 @@ msgid ""
 "documentation for the current stable `3.3 <https://docs.godotengine.org/"
 "en/3.3>`_ branch."
 msgstr ""
-"Ово је документација за стабилну 3.2 грану. Потребна ти је документација "
+"Ово је документација за стабилну 3.4 грану. Потребна ти је документација "
 "тренутне **развојне** гране? `Погледај овде <https://docs.godotengine.org/en/"
-"latest>`_. Такође можеш да прегледаш документацију  претходне стабилне `3.1 "
-"<https://docs.godotengine.org/en/3.1>`_ гране."
+"latest>`_. Такође можеш да прегледаш документацију претходне стабилне `3.3 "
+"<https://docs.godotengine.org/en/3.3>`_ гране."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -141,6 +139,10 @@ msgid ""
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
+"Такође можете да 'преузмете ХТМЛ цопy < https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip "
+">'__ за читање ван мреже (ажурирано сваког понедељка). Издвојите ЗИП архиву, "
+"а затим отворите \"index.html'' у Веб прегледачу."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -174,11 +176,11 @@ msgstr ""
 
 #: ../../docs/index.rst:61
 msgid "weblate_widget"
-msgstr ""
+msgstr "вебплејт_виџет"
 
 #: ../../docs/<rst_epilog>:0
 msgid "Translation status"
-msgstr ""
+msgstr "Статус превода"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -588,26 +590,33 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"За све детаље погледајте датотеке 'ЦОПYРИГХТ.тxт <https://github.com/"
+"godotengine/godot/blob/master/COPYRIGHT.txt >'_ као и датотеке 'ЛИЦЕНЦА.тxт "
+"< https://github.com/godotengine/godot/blob/master/LICENSE.txt >'_ и "
+"'LOGO_LICENSE.тxт < https://github.com/godotengine/godot/blob/master/"
+"LOGO_LICENSE.md >'_ у складишту Годоа."
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"Такође , погледајте 'страницу лиценце на Годот сајту < https://godotengine."
+"org/license >'_."
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Које платформе подржава Годот?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**За уредника:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/about/faq.rst:200
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:335
 msgid "Windows"
-msgstr ""
+msgstr "Виндовс"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/about/faq.rst:211
@@ -627,49 +636,53 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:516
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:84
 msgid "macOS"
-msgstr ""
+msgstr "макОС"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Линуx, \\*БСД)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**За извоз ваших игара:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Виндовс (и УВП)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/tutorials/export/exporting_basics.rst:326
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
 msgid "Android"
-msgstr ""
+msgstr "Андроид"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/tutorials/export/exporting_basics.rst:382
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:96
 #: ../../docs/development/compiling/compiling_with_mono.rst:329
 msgid "iOS"
-msgstr ""
+msgstr "иОС"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Веб"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"И 32-битне и 64-битне бинарне датотеке су подржане тамо где то има смисла, а "
+"64 су подразумеване."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Неки корисници такође пријављују изградњу и успешно коришћење Годоа на АРМ "
+"системима са Линуксом, као што је Расбери Пај."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -677,16 +690,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Поред тога, ради се и на неким незваничним радовима трећих страна на "
+"изградњи неких конзола. Међутим, ништа од овога тренутно није укључено у "
+"подразумеване скрипте за израду или извоз предложака."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Више о овоме потражите у одељцима на :ref:`exporting <toc-learn-workflow-"
+"export>` и :ref:`compiling Godot yourself <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Који програмски језици су подржани у Годоу?"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -2689,7 +2707,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "Import"
-msgstr ""
+msgstr "Увези"
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -5620,7 +5638,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
 msgid "Nodes and Scenes"
-msgstr ""
+msgstr "Чворови и Сцене"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -17569,7 +17587,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "Печење"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -24454,7 +24472,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:170
 msgid "sRGB"
-msgstr ""
+msgstr "сРГБ"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:172
 msgid ""
@@ -26222,7 +26240,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Мрежа"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -34475,7 +34493,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "сенке"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:45
 msgid "models"
@@ -42756,7 +42774,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:59
 msgid "color"
-msgstr ""
+msgstr "боја"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:61
 msgid "15"
@@ -54062,9 +54080,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
-msgstr "Увод"
+msgstr "функџија"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
@@ -60455,7 +60472,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:455
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr ""
+msgstr "Док"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:457
 msgid "while() loops are the same everywhere:"
@@ -63191,7 +63208,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr ""
+msgstr "Принос"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -64177,7 +64194,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
-msgstr ""
+msgstr "Синглтони"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:151
 msgid ""

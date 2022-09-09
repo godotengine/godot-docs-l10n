@@ -13,6 +13,7 @@
 # Carlo Ciarrocchi <carlo.ciarrocchi2@gmail.com>, 2019.
 # cento <a.cento@icloud.com>, 2018.
 # Christian Biffi <creixx@virgilio.it>, 2019.
+# conecat <ilgrandemax190@gmail.com>, 2022.
 # coronabond <coronabond@airmail.cc>, 2022.
 # Damiano Guida <damiano.guida22@gmail.com>, 2020-2021.
 # Daniele Basso <tiziodcaio@gmail.com>, 2021.
@@ -48,6 +49,7 @@
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Luca De Filippo <luca.defilippo@translationcommons.org>, 2021.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
+# Luca Poli <l.poli@pm.me>, 2022.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
 # Marco Galli <mrcgll98@gmail.com>, 2019-2021.
 # Marco Mastio <marco.mastio@gmail.com>, 2020.
@@ -91,7 +93,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2022-06-02 17:53+0000\n"
+"PO-Revision-Date: 2022-08-23 03:39+0000\n"
 "Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -100,7 +102,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -186,7 +188,7 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Al momento, le traduzioni localizzate sono disponibili solo per il versione "
+"Al momento, le traduzioni localizzate sono disponibili solo per la versione "
 "\"latest\" (development), ma dovrebbero essere adatte per imparare come "
 "usare le versioni stabili di Godot."
 
@@ -1124,6 +1126,8 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Come installo l'editor di Godot sul mio Sistema Operativo (per "
+"l'integrazione col desktop)?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1136,12 +1140,22 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Visto che non devi installare Godot sul tuo sistema per usarlo, "
+"l'integrazione col desktop non è automatica. Ci sono due modi per superare "
+"questo problema. È possibile installare Godot da `Steam <https://store."
+"steampowered.com/app/404790/Godot_Engine/>`__ (tutte le piattaforme), `Scoop "
+"<https://scoop.sh/>`__ (Windows), `Homebrew <https://brew.sh/>`__ (macOS) or "
+"`Flathub <https://flathub.org/apps/details/org.godotengine.Godot>`__ "
+"(Linux). Questo eseguirà automaticamente i passaggi necessari per "
+"l'integrazione col desktop."
 
 #: ../../docs/about/faq.rst:197
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Alternativamente, puoi eseguire manualmente i passaggi che un installer "
+"eseguirebbe per te:"
 
 #: ../../docs/about/faq.rst:202
 msgid ""
@@ -1149,18 +1163,29 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Sposta l'eseguibile di Godot in una posizione stabile (cioè fuori della "
+"cartella Download), così da non spostarlo accidentalmente e rompere il "
+"collegamento in futuro."
 
 #: ../../docs/about/faq.rst:204
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Fai clic con il pulsante destro sull'eseguibile di Godot e scegli **Crea "
+"collegamento**."
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Move the created shortcut to ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
 "Menu\\Programs``. This is the user-wide location for shortcuts that will "
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Sposta il collegamento creato in ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs``. Questa è la posizione a livello di utente per le "
+"scorciatoie che appariranno nel menu Start. Puoi anche bloccare Godot nella "
+"barra delle applicazioni facendo clic con il pulsante destro sull'eseguibile "
+"e scegliendo **Aggiungi alla barra delle applicazioni**."
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1168,6 +1193,10 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Trascina l'applicazione Godot estratta su ``/Applicazioni/Godot.app``, "
+"quindi trascinala sul Dock se lo desideri. Spotlight sarà in grado di "
+"trovare Godot fintanto che si trova in ``/Applicazioni`` o in ``~/"
+"Applicazioni``."
 
 #: ../../docs/about/faq.rst:218
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
@@ -1180,6 +1209,9 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Sposta l'eseguibile di Godot in una posizione stabile (cioè al di fuori "
+"della cartella Download), in modo da non spostarlo accidentalmente e rompere "
+"il collegamento in futuro."
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -1189,16 +1221,27 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Rinomina e sposta l'eseguibile di Godot in una posizione presente nella tua "
+"variabile d'ambiente ``PATH``. Di solito è ``/usr/local/bin/godot`` o ``/usr/"
+"bin/godot``. Questo metodo richiede i privilegi d'amministratore, ma ti "
+"pemette di :ref:`eseguire Godot da un terminale <doc_command_line_tutorial>` "
+"scrivendo``godot``."
 
 #: ../../docs/about/faq.rst:228
+#, fuzzy
 msgid ""
 "If you cannot move the Godot editor binary to a protected location, you can "
 "keep the binary somewhere in your home directory, and modify the ``Path=`` "
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Se non puoi spostare il binario dell'editor Godot in una posizione protetta, "
+"puoi tenerlo da qualche parte nella tua home directory e modificare la riga "
+"``Path=`` nel file ``.desktop`` collegato di seguito per contenere l'intero "
+"percorso *assoluto*del binario Godot."
 
 #: ../../docs/about/faq.rst:233
+#, fuzzy
 msgid ""
 "Save `this .desktop file <https://raw.githubusercontent.com/godotengine/"
 "godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ to ``$HOME/."
@@ -1206,12 +1249,16 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"Salva `questo file .desktop <https://raw.githubusercontent.com/godotengine/"
+"godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ in ``$HOME/."
+"local/ condividi/applicazioni/``. Se hai i privilegi d'amministratore, puoi "
+"anche salvare il file ``.desktop`` in ``/usr/local/share/applications`` per "
+"rendere il collegamento disponibile per tutti gli utenti."
 
 #: ../../docs/about/faq.rst:239
 #, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr ""
-"È possibile utilizzare Godot per creare applicazioni che non siano giochi?"
+msgstr "L'editor Godot è un'applicazione portatile?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -1219,8 +1266,12 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"Nella configurazione di default, Godot è *semi-portatile*. Il suo eseguibile "
+"può partire da ogni luogo (incluso luoghi non scrivibili) e non richiede mai "
+"privilegi di amministratore."
 
 #: ../../docs/about/faq.rst:245
+#, fuzzy
 msgid ""
 "However, configuration files will be written to the user-wide configuration "
 "or data directory. This is usually a good approach, but this means "
@@ -1228,12 +1279,21 @@ msgid ""
 "containing the Godot executable. See :ref:`doc_data_paths` for more "
 "information."
 msgstr ""
+"Tuttavia, i file di configurazione verranno scritti nella configurazione a "
+"livello di utente o nella directory dei dati. Questo di solito è un buon "
+"approccio, ma questo significa che i file di configurazione non verranno "
+"trasferiti tra le macchine se si copia la cartella contenente l'eseguibile "
+"Godot. Vedi :ref:`doc_data_paths` per maggiori informazioni."
 
 #: ../../docs/about/faq.rst:250
+#, fuzzy
 msgid ""
 "If *true* portable operation is desired (e.g. for use on an USB stick), "
 "follow the steps in :ref:`doc_data_paths_self_contained_mode`."
 msgstr ""
+"Se si desidera *vere* operazioni portatili (ad esempio per l'uso su una "
+"chiavetta USB), seguire i passaggi in :ref:"
+"`doc_data_paths_self_contained_mode`."
 
 #: ../../docs/about/faq.rst:254
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
@@ -4793,7 +4853,6 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "| unstable | *Focus attuale dello sviluppo (instabile).*"
 
 #: ../../docs/about/release_policy.rst:120
-#, fuzzy
 msgid "unstable"
 msgstr "instabile"
 
@@ -4814,7 +4873,6 @@ msgstr ""
 "sviluppo."
 
 #: ../../docs/about/release_policy.rst:117
-#, fuzzy
 msgid "supported"
 msgstr "supportato"
 
@@ -4849,7 +4907,6 @@ msgstr ""
 "piattaforma."
 
 #: ../../docs/about/release_policy.rst:118
-#, fuzzy
 msgid "partial"
 msgstr "parziale"
 
@@ -7170,12 +7227,17 @@ msgstr ""
 "le interfacce 2D nel tuo mondo 3D."
 
 #: ../../docs/getting_started/step_by_step/index.rst:4
+#, fuzzy
 msgid ""
 "This series builds upon the :ref:`Introduction to Godot <toc-learn-"
 "introduction>` and will get you started with the editor and the engine. You "
 "will learn more about nodes and scenes, code your first classes with "
 "GDScript, use signals to make nodes communicate with one another, and more."
 msgstr ""
+"Questa serie si basa su :ref:`Introduzione a Godot <toc-learn-introduzione>` "
+"e ti consentirà di iniziare con l'editor e il motore. Imparerai di più su "
+"nodi e scene, codificherai le tue prime classi con GDScript, utilizzerai i "
+"segnali per far comunicare i nodi tra loro e altro ancora."
 
 #: ../../docs/getting_started/step_by_step/index.rst:9
 msgid ""
@@ -7205,9 +7267,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:21
-#, fuzzy
 msgid "All nodes have the following attributes:"
-msgstr "Riempire il modulo con le seguenti impostazioni:"
+msgstr "Tutti i nodi hanno i seguenti attributi:"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:23
 msgid "A name."
@@ -7281,10 +7342,11 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:59
 msgid "They always have one root node, like the \"Character\" in our example."
 msgstr ""
+"Essi hanno sempre un nodo radice, come il \"Personaggio\" nel nostro esempio."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:60
 msgid "You can save them to your hard drive and load them later."
-msgstr ""
+msgstr "Puoi salvarli sul tuo disco fisso e caricarli in seguito."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:61
 msgid ""
@@ -7869,7 +7931,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:7
-#, fuzzy
 msgid "Scripting languages"
 msgstr "Linguaggi di scripting"
 
@@ -13297,7 +13358,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:110
 #, fuzzy
 msgid "Ending the game"
-msgstr "Modifica dell'animazione"
+msgstr "Terminare il gioco"
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:112
 msgid ""
@@ -13345,16 +13406,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:153
+#, fuzzy
 msgid "Starting with ``Main.gd``."
-msgstr ""
+msgstr "A partire da ``Main.gd``."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:226
+#, fuzzy
 msgid "Next is ``Mob.gd``."
-msgstr ""
+msgstr "Il prossimo è ``Mob.gd``."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:309
+#, fuzzy
 msgid "Finally, the longest script, ``Player.gd``."
-msgstr ""
+msgstr "Infine, lo script più lungo, ``Player.gd``."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:462
 msgid "See you in the next lesson to add the score and the retry option."
@@ -13363,7 +13427,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:4
 #, fuzzy
 msgid "Score and replay"
-msgstr "ScoreLabel"
+msgstr "Punteggio e replay"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:6
 msgid ""
@@ -13482,8 +13546,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:88
+#, fuzzy
 msgid "Keeping track of the score"
-msgstr ""
+msgstr "Tenere traccia del punteggio"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:90
 msgid ""
@@ -13570,7 +13635,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:188
 #, fuzzy
 msgid "Retrying the game"
-msgstr "Testare la scena"
+msgstr "Riprovare il gioco"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:190
 msgid ""
@@ -13677,9 +13742,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:308
-#, fuzzy
 msgid "Adding music"
-msgstr "Aggiungere musica"
+msgstr "Aggiungere la musica"
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:310
 msgid ""
@@ -14659,7 +14723,6 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/physics/physics_introduction.rst:62
-#, fuzzy
 msgid "Collision shapes"
 msgstr "Forme di collisione"
 
@@ -14845,21 +14908,18 @@ msgstr "Legenda:"
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
 #: ../../docs/tutorials/2d/using_tilemaps.rst:267
-#, fuzzy
 msgid "Red: \"on\""
 msgstr "Rosso: \"attivo\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 #: ../../docs/tutorials/2d/using_tilemaps.rst:255
 #: ../../docs/tutorials/2d/using_tilemaps.rst:268
-#, fuzzy
 msgid "White: \"off\""
 msgstr "Bianco: \"spento\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
-#, fuzzy
 msgid "3x3 (minimal)"
-msgstr "3x3 (minimo)"
+msgstr "3x3 (minimale)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:229
 msgid ""
@@ -14909,7 +14969,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:269
-#, fuzzy
 msgid "Blue-checkered: \"ignore\""
 msgstr "A scacchi blu: \"ignora\""
 
@@ -14922,12 +14981,10 @@ msgid "Key (applies to the four templates below):"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:278
-#, fuzzy
 msgid "Green: floor"
 msgstr "Verde: pavimento"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:279
-#, fuzzy
 msgid "Cyan: wall"
 msgstr "Ciano: muro"
 
@@ -14940,7 +14997,6 @@ msgid "Grey: hidden due to overlap"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:282
-#, fuzzy
 msgid "Transparent: air"
 msgstr "Trasparente: aria"
 
@@ -15251,7 +15307,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
-#, fuzzy
 msgid "Fixed FPS"
 msgstr "FPS fisso"
 
@@ -15428,7 +15483,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:241
 #, fuzzy
 msgid "Orbit Velocity"
-msgstr "Velocità dell'orbita"
+msgstr "Velocità orbitale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:243
 msgid "Orbit velocity is used to make particles turn around their center."
@@ -15645,7 +15700,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
-#, fuzzy
 msgid "8-way movement"
 msgstr "Movimento a 8 direzioni"
 
@@ -16923,7 +16977,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "Introduzione al 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -16967,7 +17021,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
-#, fuzzy
 msgid "3D content"
 msgstr "Contenuto 3D"
 
@@ -16981,7 +17034,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
-#, fuzzy
 msgid "DCC-created models"
 msgstr "Modelli creati da DCC"
 
@@ -17038,7 +17090,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
-msgstr ""
+msgstr "2D in 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
@@ -17091,7 +17143,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
-#, fuzzy
 msgid "Coordinate system"
 msgstr "Sistema di coordinate"
 
@@ -17121,12 +17172,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
+#, fuzzy
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** è i lati"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:146
+#, fuzzy
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** è su/giù"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 #, fuzzy
@@ -17161,7 +17214,6 @@ msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
-#, fuzzy
 msgid "View menu"
 msgstr "Visualizza menu"
 
@@ -17302,7 +17354,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
-#, fuzzy
 msgid "Axis order"
 msgstr "Ordine degli assi"
 
@@ -17524,7 +17575,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
-#, fuzzy
 msgid "Precision errors"
 msgstr "Errori di precisione"
 
@@ -17563,7 +17613,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
-#, fuzzy
 msgid "Obtaining information"
 msgstr "Ottenere informazioni"
 
@@ -18165,7 +18214,6 @@ msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:155
-#, fuzzy
 msgid "Is sRGB"
 msgstr "È sRGB"
 
@@ -18630,7 +18678,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:423
-#, fuzzy
 msgid "Ambient Occlusion"
 msgstr "Occlusione ambientale"
 
@@ -19014,7 +19061,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:91
-#, fuzzy
 msgid "Directional light"
 msgstr "Luce direzionale"
 
@@ -19142,7 +19188,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:167
-#, fuzzy
 msgid "Omni light"
 msgstr "Luce omnidirezionale"
 
@@ -19358,7 +19403,6 @@ msgstr ""
 #: ../../docs/tutorials/3d/gi_probes.rst:36
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:48
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:62
-#, fuzzy
 msgid "Setting up"
 msgstr "Impostare"
 
@@ -19588,7 +19632,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:61
-#, fuzzy
 msgid "Adding lights"
 msgstr "Aggiunta di luci"
 
@@ -19655,7 +19698,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/gi_probes.rst:111
 #, fuzzy
 msgid "Tweaking"
-msgstr "Aggiustare"
+msgstr "Ottimizzazione"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:113
 msgid "GI Probes support a few parameters for tweaking:"
@@ -19773,7 +19816,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:37
-#, fuzzy
 msgid "Visual comparison"
 msgstr "Confronto visivo"
 
@@ -20057,9 +20099,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
-#, fuzzy
 msgid "Baking"
-msgstr "Pre calcolato"
+msgstr "Baking"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -20124,9 +20165,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:276
-#, fuzzy
 msgid "Tweaks"
-msgstr "Aggiustare"
+msgstr "Ritocchi"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:278
 msgid ""
@@ -20346,7 +20386,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
-#, fuzzy
 msgid "WorldEnvironment node"
 msgstr "Nodo WorldEnvironment"
 
@@ -20479,7 +20518,6 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:113
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:87
-#, fuzzy
 msgid "Fog"
 msgstr "Nebbia"
 
@@ -21201,9 +21239,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:19
-#, fuzzy
 msgid "Example project"
-msgstr "Progetto di esempio"
+msgstr "Progetto d'esempio"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
@@ -22018,7 +22055,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:54
-#, fuzzy
 msgid "Surfaces"
 msgstr "Superfici"
 
@@ -22854,7 +22890,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/introduction_to_rooms_and_portals.rst:32
-#, fuzzy
 msgid "Some caveats"
 msgstr "Alcuni avvertimenti"
 
@@ -22965,9 +23000,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:38
-#, fuzzy
 msgid "Rooms"
-msgstr "Camere"
+msgstr "Stanze"
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:41
 #, fuzzy
@@ -22992,7 +23026,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:48
-#, fuzzy
 msgid "Why convex?"
 msgstr "Perché convesso?"
 
@@ -23014,7 +23047,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/first_steps_with_rooms_and_portals.rst:57
-#, fuzzy
 msgid "Why non-overlapping?"
 msgstr "Perché non sovrapponibili?"
 
@@ -23841,7 +23873,6 @@ msgid "Editing Rooms and Portals"
 msgstr "Modifica di stanze e portali"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:5
-#, fuzzy
 msgid "Example SceneTree"
 msgstr "Esempio di SceneTree"
 
@@ -23926,7 +23957,6 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:36
 #: ../../docs/development/cpp/object_class.rst:139
-#, fuzzy
 msgid "For example:"
 msgstr "Per esempio:"
 
@@ -24499,8 +24529,9 @@ msgid "Animate any property of any node"
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:13
+#, fuzzy
 msgid "Create a simple animation"
-msgstr ""
+msgstr "Crea una semplice animazione"
 
 #: ../../docs/tutorials/animation/introduction.rst:14
 msgid "Call functions with the powerful Call Function Tracks"
@@ -25026,7 +25057,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction.rst:362
-#, fuzzy
 msgid "Select AudioStreamPlayer"
 msgstr "Seleziona AudioStreamPlayer"
 
@@ -25099,7 +25129,6 @@ msgstr "Animazione Cutout"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:7
 #: ../../docs/tutorials/inputs/inputevent.rst:7
-#, fuzzy
 msgid "What is it?"
 msgstr "Che cos'è?"
 
@@ -25185,7 +25214,6 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:51
 #: ../../docs/tutorials/shaders/shader_materials.rst:24
-#, fuzzy
 msgid "And much more!"
 msgstr "E molto altro!"
 
@@ -27229,7 +27257,6 @@ msgid "Importing audio samples"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Supported files"
 msgstr "File supportati"
 
@@ -27267,60 +27294,68 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:28
+#, fuzzy
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "Ecco un grafico comparativo."
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
 msgid "Format"
 msgstr "Formato"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
+#, fuzzy
 msgid "1 second of audio"
-msgstr ""
+msgstr "1 secondo di audio"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:33
+#, fuzzy
 msgid "WAV 24-bit, 96 kHz, stereo"
-msgstr ""
+msgstr "WAV 24-bit, 96 kHz, stereo"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:33
 msgid "576 KB"
 msgstr "576 KB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:35
+#, fuzzy
 msgid "WAV 16-bit, 44 kHz, mono"
-msgstr ""
+msgstr "WAV 16-bit, 44 kHz, mono"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:35
 msgid "88 KB"
 msgstr "88 KB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:37
+#, fuzzy
 msgid "WAV 16-bit, IMA-ADPCM, mono"
-msgstr ""
+msgstr "WAV 16-bit, IMA-ADPCM, mono"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:37
 msgid "22 KB"
 msgstr "22 KB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:39
+#, fuzzy
 msgid "MP3 192 Kb/s, stereo"
-msgstr ""
+msgstr "MP3 192 Kb/s, stereo"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:39
 msgid "24 KB"
 msgstr "24 KB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:41
+#, fuzzy
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr ""
+msgstr "Ogg Vorbis 128 Kb/s, stereo"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:41
 msgid "16 KB"
 msgstr "16 KB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:43
+#, fuzzy
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr ""
+msgstr "Ogg Vorbis 96 Kb/s, stereo"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:43
 msgid "12 KB"
@@ -28108,7 +28143,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:252
-#, fuzzy
 msgid "Additional info:"
 msgstr "Informazioni aggiuntive:"
 
@@ -28930,7 +28964,6 @@ msgid "Mesh"
 msgstr "Mesh"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:5
-#, fuzzy
 msgid "Modifiers"
 msgstr "Modificatori"
 
@@ -37244,9 +37277,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:156
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Esempio Windows:"
+msgstr "Windows: ``.exe``"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:157
 msgid ""
@@ -37463,7 +37495,6 @@ msgid "models"
 msgstr "modelli"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
 msgstr "textures"
 
@@ -37753,7 +37784,6 @@ msgid "Running on an editor build"
 msgstr "In esecuzione su una build dell'editor"
 
 #: ../../docs/tutorials/export/feature_tags.rst:60
-#, fuzzy
 msgid "**standalone**"
 msgstr "**standalone**"
 
@@ -39407,8 +39437,9 @@ msgstr ""
 "variant=openjdk8&jvmVariant=hotspot>'__."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:52
+#, fuzzy
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "Crea un debug.keystore"
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:54
 msgid ""
@@ -45060,8 +45091,9 @@ msgid "Usage is generally as follows"
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:29
+#, fuzzy
 msgid "Obtaining a ResourceInteractiveLoader"
-msgstr ""
+msgstr "Ottenere un ResourceInteractiveLoader"
 
 #: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
@@ -45449,7 +45481,6 @@ msgid "Linux: ``~/.config/godot/``"
 msgstr "Linux: ``~/.config/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:87
-#, fuzzy
 msgid "Cache"
 msgstr "Cache"
 
@@ -50372,12 +50403,10 @@ msgstr ""
 "`ArrayMesh <doc_arraymesh>`."
 
 #: ../../docs/tutorials/performance/general_optimization.rst:134
-#, fuzzy
 msgid "Principles"
 msgstr "Principi"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:136
-#, fuzzy
 msgid "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ said:"
 msgstr ""
 "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ ha detto:"
@@ -50652,7 +50681,6 @@ msgid "Still, Godot is designed to work around this problem."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:27
-#, fuzzy
 msgid "Servers"
 msgstr "Server"
 
@@ -51038,7 +51066,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:127
-#, fuzzy
 msgid "Caches"
 msgstr "Caches"
 
@@ -51192,7 +51219,6 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:224
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
-#, fuzzy
 msgid "SceneTree"
 msgstr "SceneTree"
 
@@ -51829,7 +51855,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/optimizing_3d_performance.rst:1
-#, fuzzy
 msgid "optimization"
 msgstr "ottimizzazione"
 
@@ -53216,7 +53241,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:402
-#, fuzzy
 msgid "Diagnostics"
 msgstr "Diagnostica"
 
@@ -53232,12 +53256,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:412
+#, fuzzy
 msgid "Reading a diagnostic"
-msgstr ""
+msgstr "Lettura di una diagnosi"
 
 #: ../../docs/tutorials/performance/batching.rst:437
+#, fuzzy
 msgid "This is a typical diagnostic."
-msgstr ""
+msgstr "Si tratta di una diagnosi tipica."
 
 #: ../../docs/tutorials/performance/batching.rst:439
 msgid ""
@@ -54525,7 +54551,6 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:36
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:184
 #: ../../docs/development/compiling/compiling_with_mono.rst:124
-#, fuzzy
 msgid "Examples"
 msgstr "Esempi"
 
@@ -56369,8 +56394,9 @@ msgid "Full example:"
 msgstr "Esempio completo:"
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:96
+#, fuzzy
 msgid "Purchase an item"
-msgstr ""
+msgstr "Acquistare un articolo"
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:98
 msgid ""
@@ -56399,9 +56425,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:142
-#, fuzzy
 msgid "Consumables"
-msgstr "Oggetti consumabili"
+msgstr "Consumabili"
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:144
 msgid ""
@@ -56428,12 +56453,12 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/index.rst:2
 #, fuzzy
 msgid "iOS plugins"
-msgstr "Plugin dell'editor"
+msgstr "Plugin per iOS"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:4
 #, fuzzy
 msgid "Creating iOS plugins"
-msgstr "Creazione dei poligoni"
+msgstr "Creare plugin per iOS"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:6
 msgid ""
@@ -56854,7 +56879,6 @@ msgid "The following methods are available and documented below:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:116
-#, fuzzy
 msgid "``purchase``"
 msgstr "``purchase``"
 
@@ -57522,7 +57546,6 @@ msgstr ":js:attr:`canvasResizePolicy`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:290
-#, fuzzy
 msgid "Array.<string>"
 msgstr "Array.<string>"
 
@@ -58294,8 +58317,9 @@ msgid "``rendering/quality/intended_usage/framebuffer_allocation``"
 msgstr "``rendering/quality/intended_usage/framebuffer_allocation``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
+#, fuzzy
 msgid "3D Without Effects"
-msgstr ""
+msgstr "3D senza effetti"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
 msgid "``rendering/quality/lightmapping/use_bicubic_sampling``"
@@ -61364,7 +61388,6 @@ msgid "Auto exposure"
 msgstr "Esposizione automatica"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:79
-#, fuzzy
 msgid "Tonemapping"
 msgstr "Tonemapping"
 
@@ -64057,9 +64080,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:52
-#, fuzzy
 msgid "Variables & assignment"
-msgstr "Variabili & assegnazione"
+msgstr "Variabili e assegnazione"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -64748,7 +64770,6 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:226
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:256
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:280
-#, fuzzy
 msgid "**Good**:"
 msgstr "**Bene**:"
 
@@ -64772,7 +64793,6 @@ msgstr "**Bene**:"
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:234
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:264
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:286
-#, fuzzy
 msgid "**Bad**:"
 msgstr "**Male**:"
 
@@ -64972,7 +64992,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:453
 #, fuzzy
 msgid "Quotes"
-msgstr "Citazioni"
+msgstr "Virgolette"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:455
 msgid ""
@@ -64994,14 +65014,12 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:479
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:492
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:503
-#, fuzzy
 msgid "**Good**::"
 msgstr "**Bene**::"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:484
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:496
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:511
-#, fuzzy
 msgid "**Bad**::"
 msgstr "**Male**::"
 
@@ -67092,7 +67110,6 @@ msgid "When done, it goes via the \"exit\" sequence port."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:351
-#, fuzzy
 msgid "Return"
 msgstr "Ritorno"
 
@@ -68409,7 +68426,6 @@ msgid "``Area``"
 msgstr "``Area``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:273
-#, fuzzy
 msgid "Quat"
 msgstr "Quat"
 
@@ -68448,7 +68464,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:296
-#, fuzzy
 msgid "``Array``"
 msgstr "``Array``"
 
@@ -68457,7 +68472,6 @@ msgid "``Godot.Collections.Array``"
 msgstr "``Godot.Collections.Array``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:297
-#, fuzzy
 msgid "``PoolIntArray``"
 msgstr "``PoolIntArray``"
 
@@ -68466,7 +68480,6 @@ msgid "``int[]``"
 msgstr "``int[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:298
-#, fuzzy
 msgid "``PoolByteArray``"
 msgstr "``PoolByteArray``"
 
@@ -68475,7 +68488,6 @@ msgid "``byte[]``"
 msgstr "``byte[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:299
-#, fuzzy
 msgid "``PoolFloatArray``"
 msgstr "``PoolFloatArray``"
 
@@ -68484,7 +68496,6 @@ msgid "``float[]``"
 msgstr "``float[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:300
-#, fuzzy
 msgid "``PoolStringArray``"
 msgstr "``PoolStringArray``"
 
@@ -68493,7 +68504,6 @@ msgid "``String[]``"
 msgstr "``String[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:301
-#, fuzzy
 msgid "``PoolColorArray``"
 msgstr "``PoolColorArray``"
 
@@ -68502,7 +68512,6 @@ msgid "``Color[]``"
 msgstr "``Color[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:302
-#, fuzzy
 msgid "``PoolVector2Array``"
 msgstr "``PoolVector2Array``"
 
@@ -68511,7 +68520,6 @@ msgid "``Vector2[]``"
 msgstr "``Vector2[]``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:303
-#, fuzzy
 msgid "``PoolVector3Array``"
 msgstr "``PoolVector3Array``"
 
@@ -70542,7 +70550,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:119
-#, fuzzy
 msgid "Shapes"
 msgstr "Forme"
 
@@ -74502,8 +74509,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:566
+#, fuzzy
 msgid "Full list of hints below:"
-msgstr ""
+msgstr "Elenco completo dei suggerimenti di seguito:"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:569
 msgid "Hint"
@@ -74899,7 +74907,6 @@ msgid "vec_type **roundEven** (vec_type x)"
 msgstr "vec_type **roundEven** (vec_type x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:701
-#, fuzzy
 msgid "Round to the nearest even number"
 msgstr "Arrotonda al numero pari più vicino"
 
@@ -76547,8 +76554,9 @@ msgid "Specular light result."
 msgstr "Risultato di luce speculare."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:4
+#, fuzzy
 msgid "CanvasItem shaders"
-msgstr ""
+msgstr "Shaders CanvasItem"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:6
 msgid ""
@@ -76969,8 +76977,9 @@ msgid "**keep_data**"
 msgstr "**keep_data**"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:32
+#, fuzzy
 msgid "Do not clear previous data on restart."
-msgstr ""
+msgstr "Non cancellare i dati precedenti al riavvio."
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:34
 msgid "**disable_force**"
@@ -78271,8 +78280,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_materials.rst:17
+#, fuzzy
 msgid "Create procedural textures."
-msgstr ""
+msgstr "Crea texture procedurali."
 
 #: ../../docs/tutorials/shaders/shader_materials.rst:18
 msgid "Create complex texture blending effects."
@@ -78919,7 +78929,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:81
-#, fuzzy
 msgid "Macros"
 msgstr "Macros"
 
@@ -78943,14 +78952,12 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:98
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
-#, fuzzy
 msgid "Variable"
 msgstr "Variabile"
 
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:98
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
-#, fuzzy
 msgid "Equivalent"
 msgstr "Equivalente"
 
@@ -79055,7 +79062,6 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:116
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:197
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:250
-#, fuzzy
 msgid "Coordinates"
 msgstr "Coordinate"
 
@@ -79096,7 +79102,6 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:143
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:216
-#, fuzzy
 msgid "Types"
 msgstr "Tipi"
 
@@ -82730,7 +82735,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/passthrough.rst:4
-#, fuzzy
 msgid "Passthrough"
 msgstr "Passthrough"
 
@@ -89607,7 +89611,7 @@ msgstr ""
 #: ../../docs/community/contributing/cpp_usage_guidelines.rst:7
 #, fuzzy
 msgid "Rationale"
-msgstr "Ragione"
+msgstr "Razionale"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:11
 msgid ""
@@ -91135,7 +91139,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:121
-#, fuzzy
 msgid "Microbenchmarking"
 msgstr "Microbenchmarking"
 
@@ -93211,8 +93214,9 @@ msgid "Adding support for more audio formats"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:36
+#, fuzzy
 msgid "Create an AudioStream"
-msgstr ""
+msgstr "Crea un AudioStream"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:38
 msgid ""
@@ -93231,8 +93235,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:123
+#, fuzzy
 msgid "Create an AudioStreamPlayback"
-msgstr ""
+msgstr "Crea un AudioStreamPlayback"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:125
 msgid ""
@@ -94143,13 +94148,14 @@ msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
 msgstr ""
 
 #: ../../docs/development/file_formats/index.rst:2
+#, fuzzy
 msgid "Godot file formats"
-msgstr ""
+msgstr "Formati dei file Godot"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:4
 #, fuzzy
 msgid "GDScript grammar"
-msgstr "GDScript"
+msgstr "Grammatica GDScript"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:6
 msgid ""
@@ -94167,8 +94173,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:4
+#, fuzzy
 msgid "TSCN file format"
-msgstr ""
+msgstr "Formato del file TSCN"
 
 #: ../../docs/development/file_formats/tscn.rst:6
 msgid ""
@@ -94199,7 +94206,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:23
 #, fuzzy
 msgid "File structure"
-msgstr "Struttura dei file"
+msgstr "Struttura del file"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 msgid "There are five main sections inside the TSCN file:"
@@ -97409,7 +97416,6 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:328
 #: ../../docs/community/contributing/code_style_guidelines.rst:351
-#, fuzzy
 msgid "**Example:**"
 msgstr "**Esempio**"
 
@@ -97420,7 +97426,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:338
-#, fuzzy
 msgid "**Bad:**"
 msgstr "**Male:**"
 
@@ -97612,7 +97617,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/content_guidelines.rst:10
 msgid "We want to achieve two goals:"
-msgstr ""
+msgstr "Vogliamo raggiungere due obiettivi:"
 
 #: ../../docs/community/contributing/content_guidelines.rst:12
 msgid ""
@@ -101326,6 +101331,12 @@ msgid ""
 "learn-godot-gdscript>`_  or `in the browser <https://gdquest.github.io/learn-"
 "gdscript>`_."
 msgstr ""
+"Il tutorial di GDQuest *Impara GDScript da zero* è un tutorial interattivo "
+"completamente gratuito e open source, che viene utilizzato dai principianti "
+"per imparare il linguaggio di programmazione GDScript che Godot offre. È "
+"disponibile come un ` applicazione <https://gdquest.itch.io/learn-godot-"
+"gdscript>`_ , oppure ` nel browser <https://gdquest.github.io/learn-"
+"gdscript>`_."
 
 #: ../../docs/community/tutorials.rst:21
 msgid ""

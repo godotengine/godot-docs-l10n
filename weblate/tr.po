@@ -11,6 +11,7 @@
 # Anton Semchenko <semchenkoanton@protonmail.com>, 2019.
 # Batuhan D <blazkbatuhan123@gmail.com>, 2020.
 # Berkay Düzenli <mberkayduzenli@gmail.com>, 2020-2021.
+# bsr <bsndrn16@gmail.com>, 2022.
 # Burkan Boğaz <bogazburkan@gmail.com>, 2019.
 # Can Delibaş <candelibas96@gmail.com>, 2018.
 # Cannur Daşkıran <canndask@gmail.com>, 2020-2021.
@@ -22,6 +23,7 @@
 # Ege Esin <ege_e@icloud.com>, 2021.
 # Emir Tunahan Alim <emrtnhalim@gmail.com>, 2022.
 # Emre Altinagac <emrealtinagac@gmail.com>, 2019-2020.
+# Emre <mr.inkaya@gmail.com>, 2022.
 # Ferhat Geçdoğan <ferhatgectao@gmail.com>, 2022.
 # furkan atalar <fatalar55@gmail.com>, 2020-2021.
 # Gökay Okyay <gokayokyay@hotmail.com>, 2020.
@@ -29,7 +31,9 @@
 # Güner Acet <kurama632@gmail.com>, 2019.
 # Hakan AKSÜZEK <hknkszk@gmail.com>, 2020.
 # HALİL ATAŞ <halillatass@gmail.com>, 2019.
-# H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2019.
+# Halil Üneş <halilunes@gmail.com>, 2018.
+# Hasan Hüseyin Cihangir <hashusfb@gmail.com>, 2022.
+# H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018-2019.
 # İlker Civelek <ilkercivelek34@gmail.com>, 2018.
 # inci <incialien@gmail.com>, 2022.
 # Kaan Genç <kaan@kaangenc.me>, 2020.
@@ -41,10 +45,9 @@
 # monolifed <monolifed@gmail.com>, 2018.
 # Muhammet Mustafa Tozlu <m.mustafatozlu@gmail.com>, 2019.
 # Musa Umut Yelkenci <musaumut.yelkenci@gmail.com>, 2021.
+# Mustafa Said Ağca <m.said.agca@gmail.com>, 2022.
 # Mustafa Turhan <odunluzikkim@gmail.com>, 2019.
 # Mutlu ORAN <mutlu.oran66@gmail.com>, 2020.
-# H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
-# Halil Üneş <halilunes@gmail.com>, 2018.
 # Oğuz Batur Sarıöz <sariozbatur@gmail.com>, 2022.
 # Oğuz Ersen <oguzersen@protonmail.com>, 2019-2021.
 # Oğuzhan Özdemir <ozdemiroguzhan0@gmail.com>, 2018.
@@ -62,7 +65,9 @@
 # The Recon <reconmovyie@gmail.com>, 2021.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 # Ufuk Ardıç <ufukrdc@gmail.com>, 2021.
+# Ümid Quliyev <lucifer25x@protonmail.com>, 2022.
 # Vedat Günel <gunel15@itu.edu.tr>, 2020.
+# Yekez <yasintonge@gmail.com>, 2022.
 # Yusuf Osman YILMAZ <wolfkan4219@gmail.com>, 2020.
 # Yusuf Yavuzyigit <yusufyavuzyigit25@gmail.com>, 2021-2022.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
@@ -72,8 +77,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2022-05-28 23:50+0000\n"
-"Last-Translator: inci <incialien@gmail.com>\n"
+"PO-Revision-Date: 2022-08-17 20:03+0000\n"
+"Last-Translator: bsr <bsndrn16@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -81,7 +86,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -125,7 +130,6 @@ msgstr ""
 "görmek için sol alt taraftaki \"Dokümantasyon Oku\" panelini genişlet."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.4 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -136,7 +140,7 @@ msgstr ""
 "Bu, kararlı 3.4 dalının belgeleridir. Mevcut **geliştirme** dalının "
 "belgelerini mi arıyorsunuz? `Buraya bir göz atın <https://docs.godotengine."
 "org/en/latest>`_. Ayrıca mevcut kararlı `3.3 <https://docs.godotengine.org/"
-"en/3.3>`_ şubesinin belgelerine de göz atabilirsiniz."
+"en/3.3>`_ dalının belgelerine de göz atabilirsiniz."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -1084,11 +1088,14 @@ msgstr ""
 "topluluğa ait ve sizin gibi hırslı insanların katkılarıyla büyüyor."
 
 #: ../../docs/about/faq.rst:187
+#, fuzzy
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Godot editörünü sistemime nasıl kurabilirim (masaüstü entegrasyonu için)?"
 
 #: ../../docs/about/faq.rst:189
+#, fuzzy
 msgid ""
 "Since you don't need to actually install Godot on your system to run it, "
 "this means desktop integration is not performed automatically. There are two "
@@ -1099,50 +1106,82 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Godot'u çalıştırmak için sisteminize yüklemeniz gerekmediğinden, bu masaüstü "
+"entegrasyonunun otomatik olarak gerçekleştirilmediği anlamına gelir. Bunun "
+"üstesinden gelmenin iki yolu vardır. Godot'u `Steam <https://store."
+"steampowered.com/app/404790/Godot_Engine/>`__ (tüm platformlar), `Scoop "
+"<https://scoop.sh/>`__ (Windows), `Homebrew <https://brew.sh/>`__ (macOS) "
+"veya `Flathub <https://flathub.org/apps/details/org.godotengine.Godot>`__ "
+"(Linux) adreslerinden yükleyebilirsiniz. Bu, masaüstü entegrasyonu için "
+"gerekli adımları otomatik olarak gerçekleştirecektir."
 
 #: ../../docs/about/faq.rst:197
+#, fuzzy
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Alternatif olarak, bir yükleyicinin sizin için yapacağı adımları manuel "
+"olarak gerçekleştirebilirsiniz:"
 
 #: ../../docs/about/faq.rst:202
+#, fuzzy
 msgid ""
 "Move the Godot executable to a stable location (i.e. outside of your "
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Godot çalıştırılabilir dosyasını sabit bir konuma (yani İndirilenler "
+"klasörünüzün dışına) taşıyın, böylece ileride yanlışlıkla taşıyıp kısayolu "
+"bozmazsınız."
 
 #: ../../docs/about/faq.rst:204
+#, fuzzy
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Godot çalıştırılabilir dosyasına sağ tıklayın ve **Kısayol Oluştur** öğesini "
+"seçin."
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Move the created shortcut to ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
 "Menu\\Programs``. This is the user-wide location for shortcuts that will "
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Oluşturulan kısayolu ''%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs'' konumuna taşıyın. Bu, Başlat menüsünde görünecek kısayollar "
+"için kullanıcı genelinde kullanılan konumdur. Godot'yu görev çubuğuna, "
+"yürütülebilir dosyayı sağ tıklatıp **Görev Çubuğuna Sabitle**'yi seçerek de "
+"sabitleyebilirsiniz."
 
 #: ../../docs/about/faq.rst:213
+#, fuzzy
 msgid ""
 "Drag the extracted Godot application to ``/Applications/Godot.app``, then "
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Ayıklanan Godot uygulamasını ``/Applications/Godot.app`` adresine "
+"sürükleyin, ardından isterseniz Dock'a sürükleyin. Spotlight, Godot'u ``/"
+"Applications`` veya ``~/Applications`` içinde olduğu sürece bulabilecektir."
 
 #: ../../docs/about/faq.rst:218
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../docs/about/faq.rst:220
+#, fuzzy
 msgid ""
 "Move the Godot binary to a stable location (i.e. outside of your Downloads "
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Godot ikili dosyasını sabit bir konuma taşıyın (örneğin İndirilenler "
+"klasörünüzün dışına), böylece ileride yanlışlıkla taşıyıp kısayolu "
+"bozmazsınız."
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -4337,8 +4376,9 @@ msgid ":ref:`doc_animation_tree`"
 msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:159
+#, fuzzy
 msgid "GUI"
-msgstr "GUI"
+msgstr "Grafiksel Kullanıcı Arayüzü"
 
 #: ../../docs/about/docs_changelog.rst:161
 msgid ":ref:`doc_gui_containers`"
@@ -14258,7 +14298,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr ""
+msgstr "Rastgelelik"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
@@ -16890,7 +16930,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:135
 msgid "Flags"
-msgstr ""
+msgstr "Bayraklar"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
 msgid ""
@@ -17067,7 +17107,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:137
 msgid "Ensure Correct Normals"
-msgstr ""
+msgstr "Doğru Normalleri Sağla"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
 msgid "Fixes normals when non-uniform scaling is used."
@@ -17110,7 +17150,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
 msgid "Parameters"
-msgstr ""
+msgstr "Parametreler"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:163
 msgid ""
@@ -17576,7 +17616,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Yüzeyaltı Saçılması"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -17586,8 +17626,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:458
+#, fuzzy
 msgid "Transmission"
-msgstr ""
+msgstr "Aktarma"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:460
 msgid ""
@@ -18520,7 +18561,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
 msgid "Reflections"
-msgstr ""
+msgstr "Yansımalar"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:83
 msgid ""
@@ -18957,7 +18998,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "İşleniyor"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -20150,7 +20191,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:194
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "Materyaller"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
@@ -20357,7 +20398,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
-msgstr ""
+msgstr "Miktar"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
@@ -22990,8 +23031,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:122
+#, fuzzy
 msgid "Portal Active"
-msgstr ""
+msgstr "Portal Aktif"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:124
 msgid ""
@@ -25031,9 +25073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:130
-#, fuzzy
 msgid "Transition"
-msgstr "Koşul"
+msgstr "Geçiş"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:132
 msgid ""
@@ -25537,8 +25578,9 @@ msgid "Import options are vast:"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:51
+#, fuzzy
 msgid "Detect 3D"
-msgstr ""
+msgstr "3D Algıla"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:53
 msgid ""
@@ -25778,7 +25820,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:106
 msgid "HDR Mode"
-msgstr ""
+msgstr "HDR Modu"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:108
 msgid ""
@@ -25796,8 +25838,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:114
+#, fuzzy
 msgid "Normal Map"
-msgstr ""
+msgstr "Normal Haritası"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:116
 msgid ""
@@ -25825,7 +25868,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:140
 msgid "Repeat"
-msgstr ""
+msgstr "Tekrar Et"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:142
 msgid ""
@@ -25841,7 +25884,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:147
 #: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
-msgstr ""
+msgstr "Filtre"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:149
 msgid ""
@@ -25853,7 +25896,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:152
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmap'ler"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:154
 msgid ""
@@ -25885,7 +25928,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:165
 msgid "Anisotropic"
-msgstr ""
+msgstr "Eşyönsüz"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:167
 msgid ""
@@ -25920,8 +25963,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:186
+#, fuzzy
 msgid "Process"
-msgstr ""
+msgstr "Rötuş"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:188
 msgid ""
@@ -25929,8 +25973,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:191
+#, fuzzy
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Alfa Sınırını Düzelt"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 msgid ""
@@ -25969,8 +26014,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:212
+#, fuzzy
 msgid "Invert Color"
-msgstr ""
+msgstr "Rengi Ters Çevir"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:214
 msgid ""
@@ -26668,7 +26714,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:146
 msgid "Root Type"
-msgstr ""
+msgstr "Kök Türü"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:148
 msgid ""
@@ -26678,16 +26724,15 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:151
 msgid "Root Name"
-msgstr ""
+msgstr "Kök İsmi"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:153
 msgid "Allows setting a specific name to the generated root node."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:156
-#, fuzzy
 msgid "Root Scale"
-msgstr "Yerel"
+msgstr "Kök Ölçeği"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:158
 msgid "The scale of the root node."
@@ -26695,7 +26740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:161
 msgid "Custom Script"
-msgstr ""
+msgstr "Özel Betik"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:163
 msgid ""
@@ -26720,7 +26765,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:268
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:366
 msgid "Storage"
-msgstr ""
+msgstr "Depolama"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:186
 msgid ""
@@ -26778,7 +26823,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:223
 msgid "Keep On Reimport"
-msgstr ""
+msgstr "Yeniden İçe Aktarmaya Devam Et"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:225
 msgid ""
@@ -26789,11 +26834,11 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:230
 msgid "Meshes"
-msgstr ""
+msgstr "Örgüler"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:233
 msgid "Compress"
-msgstr ""
+msgstr "Sıkıştırma"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:235
 msgid ""
@@ -26890,8 +26935,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:260
+#, fuzzy
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Eğri Tanjantını Değiştir"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:262
 msgid ""
@@ -26915,8 +26961,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:277
+#, fuzzy
 msgid "Light Baking"
-msgstr ""
+msgstr "Işık-Haritalarını Pişir"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:279
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -26942,7 +26989,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:288
 msgid "External Files"
-msgstr ""
+msgstr "Harici Dosyalar"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:290
 msgid ""
@@ -26989,7 +27036,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:319
 msgid "Filter Script"
-msgstr ""
+msgstr "Betik Süz"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:321
 msgid ""
@@ -27068,7 +27115,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:372
 msgid "Optimizer"
-msgstr ""
+msgstr "En İyileştirici"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:374
 msgid ""
@@ -27079,7 +27126,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:378
 msgid "Clips"
-msgstr ""
+msgstr "Klipler"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:380
 msgid ""
@@ -33403,9 +33450,8 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:217
-#, fuzzy
 msgid "Text Editor"
-msgstr "Düzenleyici"
+msgstr "Metin Editörü"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
@@ -34342,7 +34388,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:394
 msgid "File Dialog"
-msgstr ""
+msgstr "Dosya Diyaloğu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
@@ -34491,7 +34537,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:425
 msgid "FileSystem Dock"
-msgstr "Dosya Sistemi"
+msgstr "Dosya Sistemi Rıhtımı"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "Copy Path"
@@ -36788,9 +36834,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:113
-#, fuzzy
 msgid "Camera"
-msgstr "**Kamera:**"
+msgstr "Kamera"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:113
 msgid ""
@@ -38412,7 +38457,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:7
 #: ../../docs/tutorials/performance/threads/using_multiple_threads.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "İş parçacıkları"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:135
 msgid ""
@@ -38530,7 +38575,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:198
-#, fuzzy
 msgid "Clipboard"
 msgstr "Pano"
 
@@ -44500,7 +44544,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
 msgid "Offset"
-msgstr ""
+msgstr "Kaydırma"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -44813,7 +44857,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:230
 msgid "Distance"
-msgstr ""
+msgstr "Mesafe"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:234
 msgid "10: :ref:`Quat<class_quat>`"
@@ -60429,7 +60473,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:297
 msgid "Strings"
-msgstr ""
+msgstr "Dizgiler"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:299
 msgid "``\"\"\"Hello\"\"\"``"
@@ -62158,8 +62202,9 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:455
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:384
+#, fuzzy
 msgid "While"
-msgstr "While"
+msgstr "Sürece"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:457
 msgid "while() loops are the same everywhere:"
@@ -64917,7 +64962,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr "Yield"
+msgstr "Verim"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -65919,7 +65964,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
-msgstr ""
+msgstr "Tekil kalıp"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:151
 msgid ""
@@ -66025,7 +66070,7 @@ msgstr "Koşul"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:243
 msgid "Plane"
-msgstr ""
+msgstr "Uçak"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:245
 msgid ""
@@ -66191,7 +66236,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"
-msgstr ""
+msgstr "Varyant"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -68288,7 +68333,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr "Kesitçi"
+msgstr "Profil Oluşturucu"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:51
 msgid ""
@@ -69385,7 +69430,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:302
 msgid "Operator"
-msgstr ""
+msgstr "Operatör"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:81
@@ -89190,7 +89235,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:15
 msgid "Control"
-msgstr ""
+msgstr "Kontrol Tuşu"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"

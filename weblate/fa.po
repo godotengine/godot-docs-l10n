@@ -2,7 +2,8 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# Ahmad Maftoun <CarCedo.Pro@gmail.com>, 2020.
+# Ahmad Maftoun <CarCedo.Pro@gmail.com>, 2020, 2022.
+# Ali Jafari <ali.jafari.sn@gmail.com>, 2022.
 # Ali Khomami P <a.khomami@outlook.com>, 2019.
 # Alireza Firouzi <pikhosh@gmail.com>, 2019.
 # Amir Hossein Mafi <theotheramir@gmail.com>, 2018.
@@ -15,10 +16,13 @@
 # hdteav <hdteav@gmail.com>, 2019.
 # ihaveapiece <ihaveapiecemail@gmail.com>, 2020.
 # ItzMiad44909858f5774b6d <maidggg@gmail.com>, 2020.
+# John Smith <pkafsharix@gmail.com>, 2022.
 # Kianoosh Safapour <kianoosh.safapour@gmail.com>, 2019.
 # Kiarash Bahrami <kbbtc1337@gmail.com>, 2019-2020.
+# LordProfo (Nima) <nimaentity30@gmail.com>, 2022.
 # Mahdi <sadisticwarlock@gmail.com>, 2018.
 # M.bagher Ansari <ansarimbagher@gmail.com>, 2020.
+# Mitsuha Miamizu <mitsuha.miamizu4444@gmail.com>, 2022.
 # mohamad por <mohamad24xx@gmail.com>, 2020.
 # MoriExplain <mrmortezw@gmail.com>, 2020.
 # MSKF <walkingdeadstudio@outlook.com>, 2020.
@@ -35,8 +39,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2022-04-03 13:13+0000\n"
-"Last-Translator: Giga hertz <gigahertzyt@gmail.com>\n"
+"PO-Revision-Date: 2022-09-09 13:34+0000\n"
+"Last-Translator: John Smith <pkafsharix@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
 "Language: fa\n"
@@ -44,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -73,7 +77,7 @@ msgstr "جامعه"
 
 #: ../../docs/index.rst:136
 msgid "Class reference"
-msgstr "مرجع کلاس"
+msgstr "کلاس منبع"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.4* branch"
@@ -202,9 +206,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "شرط"
+msgstr "وضعیت ترجمه"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -569,13 +572,12 @@ msgid "In short:"
 msgstr "به طور خلاصه:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"شما می توانید گودوت را برای هر منظور، شخصی، غیرانتفاعی، تجاری یا موارد دیگری "
-"بارگیری و استفاده کنید."
+"شما می توانید گودوت را برای هر منظور، شخصی، غیرانتفاعی، تجاری یا موارد دیگر,"
+"بصورت رایگان بارگیری و استفاده کنید."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -1032,6 +1034,8 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"چگونه میتوانم ویرایشگر گودوت را بر روی سیستم خودم نصب کنم (برای ادغام "
+"دسکتاپ)؟"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1057,10 +1061,13 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"فایل اجرایی گودو را به یک مکان  پایدار منتقل کنید.(به بیان دیگر،بیرون از "
+"پوشه دانلود ها). بنابراین شما در آینده به طور تصادفی آن را جابجا نمیکنید و  "
+"فایل میانبر خراب نمیشود."
 
 #: ../../docs/about/faq.rst:204
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
-msgstr ""
+msgstr "روی فایل اجرایی Godot راست کلیک کرده و Create Shortcut را بزنید."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1069,6 +1076,12 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"میانبر ساخته شده را به مسیر:\n"
+"%LOCALAPPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\n"
+"انتقال دهید.این، مکان میانبرهای برنامه هاییست که در منوی استارت نشان داده "
+"میشوند.\n"
+"همچنین میتوانید با راست کلیک کردن روی فایل اجرایی، آنرا در نوار "
+"وظیفه(Taskbar) خود پین کنید."
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1080,7 +1093,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:218
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "لینوکس"
 
 #: ../../docs/about/faq.rst:220
 msgid ""
@@ -1088,6 +1101,9 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"فایل باینری گودو را به یک مکان پایدار انتقال دهید(به بیان دیگر،بیرون از پوشه "
+"دانلودها).بنابراین شما در آینده به طور تصادفی آن را جابجا نمیکنید و فایل "
+"میانبر خراب نمیشود."
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -1114,12 +1130,16 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"این فایل « `https://raw.githubusercontent.com/godotengine/godot/3.x/misc/"
+"dist/linux/org.godotengine.Godot.desktop` » را در مسیر : `$HOME/.local/share/"
+"applications/` ذخیره کنید .و اگر شما دسترسی مدیر (administrator) دارید، آنرا "
+"در این مسیر `/usr/local/share/applications` ذخیره کنید تا میانبر برای همه "
+"کاربران در دسترس باشد."
 
 #: ../../docs/about/faq.rst:239
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
 msgstr ""
-"آیا امکان دارد که از گودوت برای ایجاد انواع دیگر نرم افزار (که بازی نیستند) "
+"آیا امکان دارد که از گودو برای ایجاد انواع دیگر نرم افزار (که بازی نیستند) "
 "هم استفاده کنیم؟"
 
 #: ../../docs/about/faq.rst:241
@@ -1128,6 +1148,9 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"در پیکربندی پیش فرض، گودو *نیمه قابل حمل* است. فایل اجرایی آن می‌تواند از هر "
+"مکانی (از جمله مکان‌های غیرقابل نوشتن) اجرا شود و هرگز به امتیازات "
+"مدیر(administrator) نیاز ندارد."
 
 #: ../../docs/about/faq.rst:245
 msgid ""
@@ -2208,9 +2231,8 @@ msgid "Scene tree editor."
 msgstr "ادیتور درختی."
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "ویرایشگر اسکریپت."
+msgstr "ویرایشگر اسکریپت سرخود."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2293,12 +2315,12 @@ msgstr ""
 "دی اسکریپت پلاگین‌های خود را ایجاد کنید."
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly. features or speed up your workflow."
 msgstr ""
-"پروژه‌ها را از asset library از داخل project manager مستقیم دریافت کنید."
+"پروژه‌ها را از ProjectManager>AssetLibrary مستقیم دریافت کنید.ویژگی ها و سرعت "
+"بخشیدن به گردش کار شما."
 
 #: ../../docs/about/list_of_features.rst:77
 #, fuzzy
@@ -3216,7 +3238,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:112
 msgid "Input"
-msgstr ""
+msgstr "ورودی"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid ""
@@ -7568,7 +7590,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:6
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:1
 msgid "Signal"
-msgstr "سیگنال‌"
+msgstr "سیگنال"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 #, fuzzy
@@ -9228,7 +9250,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
-msgstr ""
+msgstr "پیام"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -12761,11 +12783,11 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 msgid "Type"
-msgstr ""
+msgstr "تایپ"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr ""
+msgstr "تبدیل"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -13769,7 +13791,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr ""
+msgstr "مقیاس"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -16842,7 +16864,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:447
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "پراکندگی زیر سطحی"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -17882,7 +17904,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:129
 msgid "Quality"
-msgstr ""
+msgstr "کیفیت"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:131
 msgid ""
@@ -24791,7 +24813,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
 msgid "Compression"
-msgstr ""
+msgstr "فشرده‌سازی"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 msgid ""
@@ -25979,7 +26001,7 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:45
 #: ../../docs/tutorials/io/data_paths.rst:73
 msgid "Location"
-msgstr "Location"
+msgstr "مکان"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:199
 msgid ""
@@ -26953,7 +26975,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:167
 msgid "Skeleton"
-msgstr ""
+msgstr "اسکلت"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -30569,7 +30591,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr ""
+msgstr "دستور"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
@@ -32631,9 +32653,8 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:217
-#, fuzzy
 msgid "Text Editor"
-msgstr "ویرایشگر"
+msgstr "ویرایشگر متن"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
@@ -33516,7 +33537,7 @@ msgstr "ویرایشگر"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 #: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid "Copy Selection"
-msgstr "کپی برگزیده"
+msgstr "کپی انتخاب"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 msgid "``editor/copy_output``"
@@ -33577,7 +33598,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
-msgstr ""
+msgstr "به عقب بازگردید"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "``file_dialog/go_back``"
@@ -33585,7 +33606,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:401
 msgid "Go Forward"
-msgstr ""
+msgstr "جلو بروید"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:401
 msgid "``file_dialog/go_forward``"
@@ -33593,7 +33614,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:403
 msgid "Go Up"
-msgstr ""
+msgstr "بالا بروید"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:403
 msgid "``file_dialog/go_up``"
@@ -33601,7 +33622,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:405
 msgid "Refresh"
-msgstr ""
+msgstr "تازه‌سازی"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:405
 msgid "``file_dialog/refresh``"
@@ -33609,7 +33630,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:407
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "تغییر فایل‌های پنهان"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:407
 msgid ":kbd:`Ctrl + H`"
@@ -33625,7 +33646,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:409
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "تغییر موارد دلخواه"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:409
 msgid "``file_dialog/toggle_favorite``"
@@ -33633,7 +33654,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:411
 msgid "Toggle Mode"
-msgstr ""
+msgstr "تغییر حالت"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:411
 msgid ":kbd:`Alt + V`"
@@ -33671,7 +33692,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:417
 msgid "Focus Path"
-msgstr ""
+msgstr "مسیر تمرکز"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:417
 #: ../../docs/tutorials/editor/default_key_mapping.rst:432
@@ -33686,7 +33707,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:419
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "انتقال موارد دلخواه به بالا"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:419
 #: ../../docs/tutorials/editor/default_key_mapping.rst:455
@@ -33704,7 +33725,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:421
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "انتقال موارد دلخواه به پایین"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:421
 #: ../../docs/tutorials/editor/default_key_mapping.rst:457
@@ -33726,7 +33747,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "Copy Path"
-msgstr ""
+msgstr "کپی کردن مسیر"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "``filesystem_dock/copy_path``"
@@ -33921,7 +33942,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:491
 #, fuzzy
 msgid "Transpose"
-msgstr "شرط"
+msgstr "جا‌به‌جا کردن"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:491
 msgid "``tile_map_editor/transpose``"
@@ -33977,7 +33998,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "Select"
-msgstr ""
+msgstr "انتخاب"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`M`"
@@ -34950,17 +34971,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "پیکربندی پروژه"
+msgstr "صدور همه منابع در پروژه"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
+msgstr "صدور صحنه های انتخاب شده (و وابستگی ها)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
-msgstr ""
+msgstr "صدور منابع انتخاب شده (و وابستگی ها)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:118
 msgid ""
@@ -37740,7 +37760,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:198
 msgid "Clipboard"
-msgstr ""
+msgstr "کلیپ‌بورد"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:200
 msgid ""
@@ -43286,7 +43306,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:29
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:147
 msgid "Value"
-msgstr ""
+msgstr "مقدار"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:31
 msgid "0"
@@ -50967,7 +50987,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "رندر کردن"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -58775,7 +58795,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:138
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:643
 msgid "Function"
-msgstr ""
+msgstr "تابع"
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:140
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
@@ -63006,8 +63026,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:151
+#, fuzzy
 msgid "Padding"
-msgstr ""
+msgstr "لایه گذاری"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -63779,7 +63800,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "عمل"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -64104,7 +64125,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "ایندکس"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
@@ -67307,9 +67328,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "شروع"
+msgstr "تنظیمات"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -67429,7 +67449,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr ""
+msgstr "پروفایلر"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:51
 msgid ""
@@ -83146,7 +83166,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
-msgstr ""
+msgstr "هدف"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -87575,7 +87595,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "بردار"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -88218,7 +88238,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "ماژول‌ها"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -95140,7 +95160,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Result"
-msgstr ""
+msgstr "نتیجه"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
 msgid "[Class]"

@@ -15,6 +15,7 @@
 # Luboš Nečas <lubosnecas506@seznam.cz>, 2019.
 # markidak <markidak@gmail.com>, 2020.
 # Martin Novák <maidx@seznam.cz>, 2019.
+# Mirinek <mirek.nozicka77@gmail.com>, 2022.
 # Miroslav Kotalík <mikotalik@seznam.cz>, 2019.
 # Ondrej Pavelka <ondrej.pavelka@outlook.com>, 2020.
 # ProfJack <profjackcz@gmail.com>, 2021.
@@ -34,8 +35,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-06-08 13:53+0200\n"
-"PO-Revision-Date: 2022-04-10 17:09+0000\n"
-"Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
+"PO-Revision-Date: 2022-08-29 04:21+0000\n"
+"Last-Translator: Mirinek <mirek.nozicka77@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -43,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -1086,7 +1087,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:218
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../docs/about/faq.rst:220
 msgid ""
@@ -1122,9 +1123,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:239
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr "Je možné použít Godot k vytváření jiných než herních aplikací?"
+msgstr "Je editor Godot přenosná aplikace?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -2124,7 +2124,6 @@ msgstr ""
 "době podporuje."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -2132,7 +2131,7 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Na této stránce jsou uvedeny funkce podporované aktuální stabilní verzí "
-"Godota (3.3). `Další funkce <https://docs.godotengine.org/en/latest/about/"
+"Godota (3.4). `Další funkce <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`_ jsou k dispozici v nejnovější vývojové verzi (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
@@ -2224,9 +2223,8 @@ msgid "Scene tree editor."
 msgstr "Editor stromů scény."
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Vestavěný editor motivů."
+msgstr "Vestavěný editor skriptů."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2301,30 +2299,27 @@ msgstr ""
 "<doc_what_is_assetlib>` ."
 
 #: ../../docs/about/list_of_features.rst:74
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
 msgstr ""
-"Vytvořte si vlastní pluginy pomocí GDScript a přidejte nové funkce nebo "
-"urychlete pracovní postup."
+":ref:`Vytvořte si vlastní pluginy <doc_making_plugins>` pomocí GDScriptu a "
+"přidejte nové"
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly. features or speed up your workflow."
 msgstr ""
 "Stáhněte si projekty z knihovny zdroju ve Správci projektů a obratem je "
-"importujte."
+"importujte. Vylepšete nebo zrychlete svoje pracovní postupy."
 
 #: ../../docs/about/list_of_features.rst:77
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"Stáhněte si projekty z knihovny zdroju ve Správci projektů a obratem je "
-"importujte."
+":ref:`Stáhněte si projekty z knihovny aktiv <doc_using_assetlib_editor>` ve "
+"správci projektů a obratem je naimportujte."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "2D graphics"
@@ -2514,9 +2509,9 @@ msgid "3D graphics"
 msgstr "3D grafika"
 
 #: ../../docs/about/list_of_features.rst:155
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "Import animací je ve výchozím nastavení povolen."
+msgstr ""
+"Volitelné vykreslování HDR v režimu sRGB (ve výchozím nastavení povoleno)."
 
 #: ../../docs/about/list_of_features.rst:156
 msgid ""
@@ -2545,9 +2540,8 @@ msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Perspektivní, ortografické a komutované kamery."
 
 #: ../../docs/about/list_of_features.rst:170
-#, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "**Vykreslování založené na fyzice**"
+msgstr "**Fyzikální vykreslování (vestavěné materiálové funkce):**"
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Follows the Disney PBR model."
@@ -2636,11 +2630,8 @@ msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Bodová světla s nastavitelným úhlem kužele a útlumem."
 
 #: ../../docs/about/list_of_features.rst:193
-#, fuzzy
 msgid "Specular energy can be adjusted on a per-light basis."
-msgstr ""
-"Dithering lze určit na základě počtu pixelů nebo na základě jednotlivých "
-"objektů."
+msgstr "Zrcadlovou energii lze nastavit pro každé světlo zvlášť."
 
 #: ../../docs/about/list_of_features.rst:194
 msgid ""
@@ -2710,7 +2701,6 @@ msgid "**Reflections:**"
 msgstr "**Odrazy:**"
 
 #: ../../docs/about/list_of_features.rst:223
-#, fuzzy
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax box correction can optionally be enabled."
@@ -2837,9 +2827,8 @@ msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:266
-#, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
-msgstr "*GLES3:* S3TC (není podporován na mobilních / webových platformách)."
+msgstr "S3TC (podporováno pouze na platformách pro stolní počítače)."
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "ETC1 (recommended when using the GLES2 renderer)."
@@ -2868,9 +2857,8 @@ msgid "Fast approximate antialiasing (FXAA)."
 msgstr "Rychlé přibližné vyhlazování (FXAA)."
 
 #: ../../docs/about/list_of_features.rst:276
-#, fuzzy
 msgid "**Performance:**"
-msgstr "Výkon"
+msgstr "**Výkon:**"
 
 #: ../../docs/about/list_of_features.rst:278
 msgid ""
@@ -2886,7 +2874,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:286
-#, fuzzy
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
 "to further improve quality. This can be helpful when using Godot for offline "
@@ -3165,11 +3152,11 @@ msgstr ""
 "efektů v ceně."
 
 #: ../../docs/about/list_of_features.rst:394
-#, fuzzy
 msgid ""
 "Listener2D and Listener3D nodes to listen from a position different than the "
 "camera."
-msgstr "Uzel Listener3D k poslechu z jiné polohy než kamera ve 3D."
+msgstr ""
+"Uzel Listener2D (Listener3D) k poslechu z jiné polohy než kamera ve 2D (3D)."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid ""
@@ -3252,9 +3239,8 @@ msgstr ""
 "export z Blenderu)."
 
 #: ../../docs/about/list_of_features.rst:425
-#, fuzzy
 msgid "FBX (experimental, static meshes only)."
-msgstr "FBX (experimentální)."
+msgstr "FBX (experimentální, pouze statické sítě)."
 
 #: ../../docs/about/list_of_features.rst:426
 msgid "Collada (.dae)."
@@ -3620,13 +3606,12 @@ msgid "Color picker with RGB and HSV modes."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:551
-#, fuzzy
 msgid ""
 "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, "
 "draggable splitter, ...)."
 msgstr ""
-"Kontejnery (vodorovné, svislé, mřížkové, středové, okrajové, tahové "
-"rozdělovače, ...)."
+"Kontejnery (vodorovné, svislé, mřížkové, průtokové, středové, okrajové, "
+"poměrové, tahové rozdělovače, ...)."
 
 #: ../../docs/about/list_of_features.rst:552
 msgid "Controls can be rotated and scaled."
@@ -3698,11 +3683,11 @@ msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr "Procedurální vektorové tematizace pomocí :ref:`class_StyleBoxFlat`."
 
 #: ../../docs/about/list_of_features.rst:576
-#, fuzzy
 msgid ""
 "Supports rounded/beveled corners, drop shadows, per-border widths and "
 "antialiasing."
-msgstr "Podporuje zaoblené / zkosené rohy, vržené stíny a šířku okraje."
+msgstr ""
+"Podporuje zaoblené / zkosené rohy, vržené stíny a šířku okraje a vyhlazování."
 
 #: ../../docs/about/list_of_features.rst:578
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
@@ -3793,10 +3778,10 @@ msgstr ""
 "ref:'class_ConfigFile'."
 
 #: ../../docs/about/list_of_features.rst:608
-#, fuzzy
 msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
-"Může (de) serializovat jakýkoli datový typ Godota, včetně Vector, Color, ..."
+"Může (de) serializovat jakýkoli datový typ Godota, včetně Vector2/3, "
+"Color, ..."
 
 #: ../../docs/about/list_of_features.rst:610
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -3834,17 +3819,17 @@ msgstr ""
 "obejít režii stromu scény, když je to potřeba."
 
 #: ../../docs/about/list_of_features.rst:621
-#, fuzzy
 msgid ""
 ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
-msgstr "Rozhraní příkazového řádku pro automatizaci."
+msgstr ""
+":ref:`Rozhraní příkazového řádku <doc_command_line_tutorial>` pro "
+"automatizaci."
 
 #: ../../docs/about/list_of_features.rst:623
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr "Export a nasazení projekty pomocí platforem kontinuální integrace."
 
 #: ../../docs/about/list_of_features.rst:624
-#, fuzzy
 msgid ""
 "`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
 "misc/dist/shell>`__ are available for Bash, zsh and fish."
@@ -4619,8 +4604,9 @@ msgstr ""
 "3.3 (poslední aktualizace: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:119
+#, fuzzy
 msgid "eol"
-msgstr ""
+msgstr "eol"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "Godot 3.1"
@@ -4757,7 +4743,7 @@ msgstr "Dodržování licencí"
 
 #: ../../docs/about/complying_with_licenses.rst:7
 msgid "What are licenses?"
-msgstr ""
+msgstr "Co jsou Licence?"
 
 #: ../../docs/about/complying_with_licenses.rst:9
 msgid ""
@@ -4801,8 +4787,9 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_web.rst:14
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:24
+#, fuzzy
 msgid "Requirements"
-msgstr ""
+msgstr "Nároky"
 
 #: ../../docs/about/complying_with_licenses.rst:30
 msgid ""
@@ -4891,6 +4878,7 @@ msgstr "Obrazovka licencí"
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
+"Některé hry mají speciální menu (často v nastavení) pro zobrazení licencí."
 
 #: ../../docs/about/complying_with_licenses.rst:72
 msgid "Output log"
@@ -4935,8 +4923,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:97
+#, fuzzy
 msgid "Third-party licenses"
-msgstr ""
+msgstr "Licence třetích stran"
 
 #: ../../docs/about/complying_with_licenses.rst:99
 msgid ""
@@ -4977,8 +4966,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:125
+#, fuzzy
 msgid "ENet"
-msgstr ""
+msgstr "ENet"
 
 #: ../../docs/about/complying_with_licenses.rst:127
 msgid ""
@@ -4987,12 +4977,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:131
+#, fuzzy
 msgid "Copyright (c) 2002-2020 Lee Salzman"
-msgstr ""
+msgstr "Copyright (c) 2002-2020 Lee Salzman"
 
 #: ../../docs/about/complying_with_licenses.rst:140
+#, fuzzy
 msgid "mbed TLS"
-msgstr ""
+msgstr "mbed TLS"
 
 #: ../../docs/about/complying_with_licenses.rst:142
 msgid ""
@@ -5098,8 +5090,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:30
+#, fuzzy
 msgid "What can the engine do?"
-msgstr ""
+msgstr "Co tento Engine dokáže?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:32
 msgid ""
@@ -5126,11 +5119,12 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:49
 msgid "`April 2020 desktop and console showcase`_"
-msgstr ""
+msgstr "`Ukázka toho nejlepšího za Duben 2020 na počítač a konzole`_"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:50
+#, fuzzy
 msgid "`April 2020 mobile showcase`_"
-msgstr ""
+msgstr "`Ukázka toho nejlepšího za Duben 2020 na mobil`_"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:53
 msgid "How does it work and look?"
@@ -5168,8 +5162,9 @@ msgid "Programming languages"
 msgstr "Programovací jazyky"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:75
+#, fuzzy
 msgid "Let's talk about the available programming languages."
-msgstr ""
+msgstr "Pojďme se podívat na dostupné programovací jazyky."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:77
 msgid ""
@@ -7473,13 +7468,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:78
-#, fuzzy
 msgid ""
 "The Attach Node Script window appears. It allows you to select the script's "
 "language and file path, among other options."
 msgstr ""
 "Otevře se dialogové okno pro vytvoření skriptu. Toto dialogové okno umožňuje "
-"nastavit jazyk skriptu, název třídy a další relevantní možnosti."
+"nastavit jazyk skriptu, cestu k souboru, název třídy a další relevantní "
+"možnosti."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:81
 msgid ""
@@ -7719,9 +7714,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:262
 #: ../../docs/getting_started/step_by_step/scripting_player_input.rst:91
 #: ../../docs/getting_started/step_by_step/signals.rst:271
-#, fuzzy
 msgid "Complete script"
-msgstr "Příklad skriptu"
+msgstr "Kompletní skript"
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:264
 #: ../../docs/getting_started/step_by_step/scripting_player_input.rst:93
@@ -7892,7 +7886,6 @@ msgid "Signal"
 msgstr "Signál"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
-#, fuzzy
 msgid "Using signals"
 msgstr "Používání signálů"
 
@@ -8406,9 +8399,8 @@ msgstr ""
 "Godot."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:40
-#, fuzzy
 msgid "You can find a completed version of this project at this location:"
-msgstr "Dokončenou verzi tohoto projektu naleznete na těchto místech:"
+msgstr "Dokončenou verzi tohoto projektu najdete na této adrese:"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:42
 msgid "https://github.com/godotengine/godot-demo-projects"
@@ -9399,16 +9391,16 @@ msgstr ""
 "Nyní je čas všechno co jsme dosud udělali spojit do jedné hratelné scény."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:8
-#, fuzzy
 msgid ""
 "Create a new scene and add a :ref:`Node <class_Node>` named ``Main``. (The "
 "reason we are using Node instead of Node2D is because this node will be a "
 "container for handling game logic. It does not require 2D functionality "
 "itself.)"
 msgstr ""
-"Vytvořte novou scénu a přidejte :ref:`Node<class_Node>` s názvem ``Main``. "
-"Ujistěte se, že vytváříte uzel, Node **nikoliv** uzel Node2D. Klikněte na "
-"tlačítko \"Instance\" a vyberte uložený soubor ``Player.tscn``."
+"Vytvořte novou scénu a přidejte :ref:`Node <class_Node>` s názvem ``Main``. "
+"(Důvod, proč používáme Node místo Node2D, je ten, že tento uzel bude "
+"kontejnerem pro zpracování herní logiky. Sám o sobě 2D funkcionalitu "
+"nevyžaduje.)"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:12
 msgid ""
@@ -15520,7 +15512,6 @@ msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:450
-#, fuzzy
 msgid "Antialiased drawing"
 msgstr "**Anti aliasing:**"
 
@@ -18571,7 +18562,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:129
 msgid "Quality"
-msgstr ""
+msgstr "Kvalita"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:131
 msgid ""
@@ -19380,9 +19371,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:147
-#, fuzzy
 msgid "The tone mapping options are:"
-msgstr "Hlavními nevýhodami jsou:"
+msgstr "Možnosti mapování tónů jsou následující:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid "**Mode:** The tone mapping mode to use."
@@ -23449,15 +23439,14 @@ msgid "Our scene setup"
 msgstr "Naše nastavení scény"
 
 #: ../../docs/tutorials/animation/introduction.rst:118
-#, fuzzy
 msgid ""
 "AnimationPlayer inherits from Node instead of Node2D or Spatial, which means "
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
-"AnimationPlayer dědí z Node ne z Node2D nebo Node3D, což znamená, že "
-"odvozené uzly nebudou dědit transformace od rodičovských uzlů, právě protože "
-"v hierarchii rodičů je přítomen pouze prostý Node."
+"AnimationPlayer dědí z Node ne z Node2D nebo Node2D nebo Spatial, což "
+"znamená, že odvozené uzly nebudou dědit transformace od rodičovských uzlů, "
+"právě protože v hierarchii rodičů je přítomen pouze prostý Node."
 
 #: ../../docs/tutorials/animation/introduction.rst:122
 msgid ""
@@ -27213,7 +27202,6 @@ msgid "Ensure Tangents"
 msgstr "Zajistit tangenty"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:262
-#, fuzzy
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -27222,8 +27210,8 @@ msgid ""
 msgstr ""
 "Pokud se mají používat textury s normálovým mapováním, musí mít sítě pole "
 "tečen (tangent). Tato volba zajistí, že budou vygenerována, pokud nejsou "
-"přítomna ve zdrojové scéně. Godot k tomu používá Mikktspace, ale vždy je "
-"lepší nechat je vygenerovat v exportéru."
+"přítomna ve zdrojové scéně. Godot k tomu používá`Mikktspace <http://www."
+"mikktspace.com/>`__ , ale vždy je lepší nechat je vygenerovat v exportéru."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:270
 msgid ""
@@ -32016,6 +32004,7 @@ msgstr "**Obecné možnosti**"
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:133
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
+#, fuzzy
 msgid "Command"
 msgstr "Příkaz"
 
@@ -35964,9 +35953,8 @@ msgstr ""
 "editor. To však zatím není implementováno."
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:4
-#, fuzzy
 msgid "Managing editor features"
-msgstr "Učení se novým funkcím"
+msgstr "Správa funkcí editoru"
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:9
 msgid ""
@@ -35987,9 +35975,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:21
-#, fuzzy
 msgid "Creating a profile"
-msgstr "Vytvoření spritu"
+msgstr "Vytvoření profilu"
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:23
 msgid ""
@@ -36017,9 +36004,8 @@ msgid "..img:: img/node_features.png"
 msgstr ""
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:39
-#, fuzzy
 msgid "Sharing a profile"
-msgstr "Použití souboru"
+msgstr "Sdílení profilu"
 
 #: ../../docs/tutorials/editor/managing_editor_features.rst:41
 msgid ""
@@ -36790,7 +36776,6 @@ msgstr ""
 "exportu. Základní volání příkazu by bylo následující:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:148
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -36801,8 +36786,8 @@ msgstr ""
 "Tím se provede export do souboru ``nějaké_jméno.exe`` za předpokladu, že "
 "existuje předvolba s názvem \"Windows Desktop\" a šablonu lze nalézt. (Název "
 "předvolby exportu musí být zapsán v uvozovkách, pokud obsahuje mezery nebo "
-"speciální znaky). Výstupní cesta je relativní k cestě projektu nebo "
-"absolutní; nerespektuje adresář, ze kterého byl příkaz vyvolán."
+"speciální znaky). Výstupní cesta je *relativní k cestě projektu* nebo "
+"*absolutní* ; **nerespektuje adresář, ze kterého byl příkaz vyvolán**."
 
 #: ../../docs/tutorials/export/exporting_projects.rst:154
 msgid ""
@@ -36811,9 +36796,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:156
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Příklad pro Windows:"
+msgstr "Windows: ``.exe``"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:157
 msgid ""
@@ -38944,9 +38928,8 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_ios.rst:109
 #: ../../docs/tutorials/export/exporting_for_android.rst:174
-#, fuzzy
 msgid "Troubleshooting rendering issues"
-msgstr "Odstraňování problémů"
+msgstr "Řešení problémů s vykreslováním"
 
 #: ../../docs/tutorials/export/exporting_for_ios.rst:111
 #: ../../docs/tutorials/export/exporting_for_android.rst:176
@@ -40298,9 +40281,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:110
-#, fuzzy
 msgid "Testing translations"
-msgstr "Importování překladů"
+msgstr "Testování překladů"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:112
 msgid ""
@@ -55016,9 +54998,8 @@ msgid ":ref:`class_CapsuleShape`"
 msgstr ":ref:`class_CapsuleShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
-#, fuzzy
 msgid ":ref:`class_CylinderShape`"
-msgstr ":ref:`class_CapsuleShape`"
+msgstr ":ref:`class_CylinderShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:35
 msgid ""
@@ -57464,9 +57445,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:4
-#, fuzzy
 msgid "Mobile rendering limitations"
-msgstr "Omezení jazyka shaderu"
+msgstr "Omezení vykreslování v mobilních zařízeních"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:8
 msgid ""
@@ -57507,7 +57487,6 @@ msgid "The following project settings have mobile-specific overrides:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:29
-#, fuzzy
 msgid "Setting"
 msgstr "Nastavení"
 
@@ -57516,9 +57495,8 @@ msgid "Desktop default"
 msgstr ""
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:29
-#, fuzzy
 msgid "Mobile default"
-msgstr "Infix (výchozí)"
+msgstr "Výchozí nastavení pro mobilní zařízení"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:31
 msgid "``rendering/quality/directional_shadow/size``"
@@ -57553,9 +57531,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:43
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:53
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:55
-#, fuzzy
 msgid "``false``"
-msgstr "``if x else``"
+msgstr "``false``"
 
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:37
 msgid "``rendering/quality/reflections/high_quality_ggx``"
@@ -63483,7 +63460,6 @@ msgid "GDScript:"
 msgstr "GDScript:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:166
-#, fuzzy
 msgid ""
 "In GDScript, only base types (int, float, String and PoolArray types) are "
 "passed by value to functions (value is copied). Everything else (instances, "
@@ -63493,7 +63469,7 @@ msgid ""
 "from :ref:`class_Object`."
 msgstr ""
 "V jazyce GDScript se funkcím předávají hodnotou pouze základní typy (int, "
-"float, string a vektorové typy) (hodnota se kopíruje). Vše ostatní "
+"float, string a typy PoolArray) (hodnota se kopíruje). Vše ostatní "
 "(instance, pole, slovníky atd.) se předává odkazem. Třídy, které dědí :ref:"
 "`class_Reference` (výchozí, pokud není nic zadáno), budou automaticky "
 "uvolněny, pokud se nepoužívají, ale je povolena i ruční správa paměti, pokud "
@@ -64016,9 +63992,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:260
-#, fuzzy
 msgid "``name`` is the name of the property"
-msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
+msgstr "``name`` je název vlastnosti"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:262
 msgid "``type`` is the type of the property from ``Variant.Type``."
@@ -64031,9 +64006,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:267
-#, fuzzy
 msgid "Attaching variables to properties"
-msgstr "Přidání rozhraní pro úpravu vlastností"
+msgstr "Připojení proměnných k vlastnostem"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:269
 msgid ""
@@ -64050,15 +64024,14 @@ msgid "Adding script categories"
 msgstr "Přidání kategorií skriptu"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:294
-#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category. ::"
 msgstr ""
 "Pro lepší vizuální rozlišení vlastností lze do inspektora vložit speciální "
-"kategorii skriptu, která slouží jako oddělovač. Příkladem takové kategorie "
-"jsou vestavěné ``Script Variables``."
+"kategorii skriptu, která slouží jako oddělovač. ``Script Variables`` je "
+"jedním z příkladů zabudované kategorie ::"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:314
 msgid "``name`` is the name of a category to be added to the inspector;"
@@ -64087,9 +64060,8 @@ msgid "Grouping properties"
 msgstr "Seskupování vlastností"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:326
-#, fuzzy
 msgid "A list of properties with similar names can be grouped. ::"
-msgstr "Seznam vlastností s podobnými názvy lze seskupit."
+msgstr "Seznam vlastností s podobnými názvy lze seskupit. ::"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:352
 msgid ""
@@ -64100,7 +64072,6 @@ msgstr ""
 "vlastností;"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:355
-#, fuzzy
 msgid ""
 "Every following property added after the group property with the prefix "
 "(which determined by ``hint_string``) will be shortened. For instance, "
@@ -64108,9 +64079,10 @@ msgid ""
 "However, ``movement_speed`` won't be a part of the group and will not be "
 "shortened."
 msgstr ""
-"každá další vlastnost přidaná za vlastnost skupiny bude sbalena a zkrácena "
-"podle prefixu definovaného pomocí klíče ``hint_string``. Například "
-"``rotate_speed`` bude v tomto případě zkrácena na ``speed``."
+"Každá následující vlastnost přidaná za vlastnost skupiny s předponou (která "
+"je určena ``hint_string``) bude zkrácena. Například ``rotate_speed`` bude v "
+"tomto případě zkrácen na ``speed``. Avšak ``movement_speed`` nebude'součástí "
+"skupiny a nebude zkrácena."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:361
 msgid ""
@@ -70613,14 +70585,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/groups.rst:22
-#, fuzzy
 msgid "There are two ways to add/remove nodes to groups:"
-msgstr "Uzly lze do skupin přidávat dvěma způsoby:"
+msgstr "Existují dva způsoby přidávání/odebírání uzlů do skupin:"
 
 #: ../../docs/tutorials/scripting/groups.rst:24
-#, fuzzy
 msgid "During design, by using the Node dock in the editor."
-msgstr "Použití doku uzlu v editoru."
+msgstr "Během návrhu pomocí doku uzlu v editoru."
 
 #: ../../docs/tutorials/scripting/groups.rst:25
 msgid ""
@@ -91582,7 +91552,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Moduly"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
