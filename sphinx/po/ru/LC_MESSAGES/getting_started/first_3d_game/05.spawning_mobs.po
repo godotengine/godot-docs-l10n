@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,8 @@ msgid ""
 "In this part, we're going to spawn monsters along a path randomly. By the "
 "end, you will have monsters roaming the game board."
 msgstr ""
+"В этой части мы будем порождать монстров по пути случайным образом. К концу "
+"у вас будут монстры, бродящие по игровому полю."
 
 msgid "|image0|"
 msgstr "|image0|"
@@ -36,12 +38,17 @@ msgid ""
 "Double-click on ``Main.tscn`` in the *FileSystem* dock to open the *Main* "
 "scene."
 msgstr ""
+"Дважды щёлкните на ``Main.tscn`` в панели *FileSystem*, чтобы открыть сцену "
+"*Main*."
 
 msgid ""
 "Before drawing the path, we're going to change the game resolution. Our game "
 "has a default window size of ``1024x600``. We're going to set it to "
 "``720x540``, a nice little box."
 msgstr ""
+"Прежде чем рисовать путь, мы изменим разрешение игры. Наша игра имеет размер "
+"окна по умолчанию ``1024x600``. Мы установим его на ``720x540``, маленькую "
+"красивую рамку."
 
 #, fuzzy
 msgid "Go to *Project -> Project Settings*."
@@ -59,6 +66,8 @@ msgid ""
 "In the left menu, navigate down to *Display -> Window*. On the right, set "
 "the *Width* to ``720`` and the *Height* to ``540``."
 msgstr ""
+"В левом меню перейдите вниз к *Display -> Window*. Справа установите "
+"значение *Width* на ``720`` и значение *Height* на ``540``."
 
 msgid "|image2|"
 msgstr "|image2|"
@@ -74,12 +83,17 @@ msgid ""
 "Like you did in the 2D game tutorial, you're going to design a path and use "
 "a *PathFollow* node to sample random locations on it."
 msgstr ""
+"Как и в учебнике по 2D-играм, вы собираетесь спроектировать путь и "
+"использовать узел *PathFollow* для выборки случайных мест на нём."
 
 msgid ""
 "In 3D though, it's a bit more complicated to draw the path. We want it to be "
 "around the game view so monsters appear right outside the screen. But if we "
 "draw a path, we won't see it from the camera preview."
 msgstr ""
+"Однако в 3D рисовать путь немного сложнее. Мы хотим, чтобы он был вокруг "
+"игрового вида, чтобы монстры появлялись прямо за экраном. Но если мы "
+"нарисуем путь, мы не увидим его из предварительного просмотра камеры."
 
 msgid ""
 "To find the view's limits, we can use some placeholder meshes. Your viewport "
@@ -88,6 +102,11 @@ msgid ""
 "split the view into two. Select the *Camera* node and click the *Preview* "
 "checkbox in the bottom viewport."
 msgstr ""
+"Чтобы определить границы вида, мы можем использовать некоторые сетки. Ваш "
+"экран всё ещё должен быть разделён на две части, с предварительным "
+"просмотром камеры в нижней части. Если это не так, нажмите :kbd:`Ctrl + 2` (:"
+"kbd:`Cmd + 2` на macOS), чтобы разделить вид на две части. Выберите узел "
+"*Camera* и установите флажок *Preview* в нижнем окне просмотра."
 
 msgid "|image3|"
 msgstr "|image3|"
@@ -104,6 +123,10 @@ msgid ""
 "*Main* node and name it *Cylinders*. We'll use it to group the cylinders. As "
 "a child of it, add a *MeshInstance* node."
 msgstr ""
+"Давайте добавим сетки-заполнители. Добавьте новый узел *Spatial* в качестве "
+"дочернего узла *Main* и назовите его *Cylinders*. Мы будем использовать его "
+"для группировки цилиндров. В качестве дочернего узла добавьте узел "
+"*MeshInstance*."
 
 msgid "|image4|"
 msgstr "|image4|"
@@ -112,7 +135,7 @@ msgid "image4"
 msgstr "image4"
 
 msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
-msgstr ""
+msgstr "В инспекторе назначьте *CylinderMesh* свойству *Mesh*."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -124,50 +147,56 @@ msgid ""
 "Set the top viewport to the top orthogonal view using the menu in the "
 "viewport's top-left corner. Alternatively, you can press the keypad's 7 key."
 msgstr ""
+"Установите верхний экран на ортогональный вид сверху с помощью меню в левом "
+"верхнем углу экрана. Также можно нажать клавишу **7** на клавиатуре."
 
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 msgid ""
 "The grid is a bit distracting for me. You can toggle it by going to the "
 "*View* menu in the toolbar and clicking *View Grid*."
 msgstr ""
+"Для меня сетка немного отвлекает. Вы можете переключить её, перейдя в меню "
+"*View* на панели инструментов и выбрав *View Grid*."
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid ""
 "You now want to move the cylinder along the ground plane, looking at the "
 "camera preview in the bottom viewport. I recommend using grid snap to do so. "
 "You can toggle it by clicking the magnet icon in the toolbar or pressing Y."
 msgstr ""
+"Теперь нужно переместить цилиндр вдоль плоскости земли, глядя на "
+"предварительный просмотр камеры в нижнем окне просмотра. Я рекомендую "
+"использовать для этого привязку к сетке. Её можно переключить, нажав на "
+"значок магнита на панели инструментов или нажав **Y**."
 
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "Place the cylinder so it's right outside the camera's view in the top-left "
 "corner."
 msgstr ""
+"Поместите цилиндр так, чтобы он находился прямо за пределами обзора камеры в "
+"левом верхнем углу."
 
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "We're going to create copies of the mesh and place them around the game "
@@ -176,136 +205,159 @@ msgid ""
 "*Duplicate*. Move the copy down along the blue Z axis until it's right "
 "outside the camera's preview."
 msgstr ""
+"Мы собираемся создать копии сетки и разместить их вокруг игровой области. "
+"Нажмите :kbd:`Ctrl + D` (:kbd:`Cmd + D` на macOS), чтобы продублировать "
+"узел. Вы также можете щёлкнуть узел правой кнопкой мыши в панели *Scene* и "
+"выбрать *Duplicate*. Переместите копию вниз вдоль синей оси Z, пока она не "
+"окажется прямо за пределами предварительного просмотра камеры."
 
 msgid ""
 "Select both cylinders by pressing the :kbd:`Shift` key and clicking on the "
 "unselected one and duplicate them."
 msgstr ""
+"Выберите оба цилиндра, нажав клавишу :kbd:`Shift` и щёлкнув по невыбранному "
+"цилиндру продублируйте их."
 
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid "Move them to the right by dragging the red X axis."
-msgstr ""
+msgstr "Переместите их вправо, перетащив красную ось X."
 
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 msgid ""
 "They're a bit hard to see in white, aren't they? Let's make them stand out "
 "by giving them a new material."
 msgstr ""
+"Их немного трудно разглядеть в белом цвете, не так ли? Давайте выделим их, "
+"придав им новый материал."
 
 msgid ""
 "In 3D, materials define a surface's visual properties like its color, how it "
 "reflects light, and more. We can use them to change the color of a mesh."
 msgstr ""
+"В 3D, материалы определяют визуальные свойства поверхности, такие как цвет, "
+"отражение света и многое другое. Мы можем использовать их для изменения "
+"цвета сетки."
 
 msgid ""
 "We can update all four cylinders at once. Select all the mesh instances in "
 "the *Scene* dock. To do so, you can click on the first one and Shift click "
 "on the last one."
 msgstr ""
+"Мы можем обновить все четыре цилиндра одновременно. Выберите все экземпляры "
+"сетки в панели *Scene*. Для этого щёлкните на первом из них и щёлкните с "
+"зажатым Shift на последнем."
 
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "In the *Inspector*, expand the *Material* section and assign a "
 "*SpatialMaterial* to slot *0*."
 msgstr ""
+"В инспекторе, раскройте раздел *Material* и назначьте *SpatialMaterial* в "
+"слот *0*."
 
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "Click the sphere icon to open the material resource. You get a preview of "
 "the material and a long list of sections filled with properties. You can use "
 "these to create all sorts of surfaces, from metal to rock or water."
 msgstr ""
+"Щёлкните значок сферы, чтобы открыть ресурс материала. Вы получите "
+"предварительный просмотр материала и длинный список разделов, заполненных "
+"свойствами. С их помощью можно создавать всевозможные поверхности, от "
+"металла до камня или воды."
 
 msgid ""
 "Expand the *Albedo* section and set the color to something that contrasts "
 "with the background, like a bright orange."
 msgstr ""
+"Разверните раздел *Albedo* и установите цвет, контрастирующий с фоном, "
+"например, ярко-оранжевый."
 
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "We can now use the cylinders as guides. Fold them in the *Scene* dock by "
 "clicking the grey arrow next to them. Moving forward, you can also toggle "
 "their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
+"Теперь мы можем использовать цилиндры в качестве направляющих. Сложите их в "
+"панели *Scene*, нажав на серую стрелку рядом с ними. Продвигаясь вперёд, вы "
+"также можете переключить их видимость, нажав на значок глаза рядом с "
+"*Цилиндрами*."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "image15"
 
 msgid ""
 "Add a *Path* node as a child of *Main*. In the toolbar, four icons appear. "
 "Click the *Add Point* tool, the icon with the green \"+\" sign."
 msgstr ""
+"Добавьте узел *Path* в качестве дочернего узла *Main*. На панели "
+"инструментов появятся четыре значка. Щёлкните инструмент *Add Point* "
+"(добавить точку) - значок с зелёным знаком \"+\"."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "image16"
 
 msgid "You can hover any icon to see a tooltip describing the tool."
 msgstr ""
+"Наведя курсор на любой значок, можно увидеть всплывающую подсказку с "
+"описанием инструмента."
 
 msgid ""
 "Click in the center of each cylinder to create a point. Then, click the "
 "*Close Curve* icon in the toolbar to close the path. If any point is a bit "
 "off, you can click and drag on it to reposition it."
 msgstr ""
+"Щёлкните в центре каждого цилиндра, чтобы создать точку. Затем нажмите на "
+"значок *Close Curve* (Закрыть кривую) на панели инструментов, чтобы закрыть "
+"контур. Если какая-либо точка немного смещена, можно щёлкнуть и перетащить "
+"её, чтобы изменить положение."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "image17"
 
 msgid "Your path should look like this."
 msgstr "Ваш путь должен выглядеть следующим образом."
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
-#, fuzzy
 msgid "image18"
-msgstr "|image1|"
+msgstr "image18"
 
 msgid ""
 "To sample random positions on it, we need a *PathFollow* node. Add a "
@@ -313,6 +365,10 @@ msgid ""
 "and *SpawnLocation*, respectively. It's more descriptive of what we'll use "
 "them for."
 msgstr ""
+"Для выборки случайных позиций на нём нам нужен узел *PathFollow*. Добавьте "
+"узел *PathFollow* в качестве дочернего узла *Path*. Переименуйте эти два "
+"узла в *SpawnPath* и *SpawnLocation* соответственно. Это более точно "
+"описывает то, для чего мы будем их использовать."
 
 #, fuzzy
 msgid "|image19|"
@@ -323,7 +379,7 @@ msgid "image19"
 msgstr "|image1|"
 
 msgid "With that, we're ready to code the spawn mechanism."
-msgstr ""
+msgstr "После этого мы готовы к написанию кода механизма порождения."
 
 #, fuzzy
 msgid "Spawning monsters randomly"
@@ -337,23 +393,33 @@ msgid ""
 "We first export a variable to the *Inspector* so that we can assign ``Mob."
 "tscn`` or any other monster to it."
 msgstr ""
+"Сначала мы экспортируем переменную в инспекторе, чтобы мы могли присвоить ей "
+"``Mob.tscn`` или любого другого монстра."
 
 msgid ""
 "Then, as we're going to spawn the monsters procedurally, we want to "
 "randomize numbers every time we play the game. If we don't do that, the "
 "monsters will always spawn following the same sequence."
 msgstr ""
+"Затем, поскольку мы собираемся порождать монстров процедурно, мы хотим "
+"случайно вычислять числа каждый раз, когда играем в игру. Если этого не "
+"сделать, монстры всегда будут появляться в одной и той же последовательности."
 
 msgid ""
 "We want to spawn mobs at regular time intervals. To do this, we need to go "
 "back to the scene and add a timer. Before that, though, we need to assign "
 "the ``Mob.tscn`` file to the ``mob_scene`` property."
 msgstr ""
+"Мы хотим порождать мобов через регулярные промежутки времени. Для этого нам "
+"нужно вернуться на сцену и добавить таймер. Но перед этим нам нужно "
+"назначить файл ``Mob.tscn`` свойству ``mob_scene``."
 
 msgid ""
 "Head back to the 3D screen and select the *Main* node. Drag ``Mob.tscn`` "
 "from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
 msgstr ""
+"Вернитесь на 3D-экран и выберите узел *Main*. Перетащите ``Mob.tscn`` из "
+"панели *FileSystem* в слот *Mob Scene* в инспекторе."
 
 #, fuzzy
 msgid "|image20|"
@@ -365,6 +431,8 @@ msgstr "|image2|"
 
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
 msgstr ""
+"Добавьте новый узел *Timer* как дочерний узел *Main*. Назовите его "
+"*MobTimer*."
 
 #, fuzzy
 msgid "|image21|"
@@ -378,6 +446,8 @@ msgid ""
 "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
 "*Autostart* so it automatically starts when we run the game."
 msgstr ""
+"В инспекторе установите *Wait Time* на ``0.5`` секунд и включите "
+"*Autostart*, чтобы он автоматически запускался, когда мы запустим игру."
 
 #, fuzzy
 msgid "|image22|"
@@ -393,11 +463,17 @@ msgid ""
 "a cycle. We can connect to this signal from the *Main* node to spawn "
 "monsters every ``0.5`` seconds."
 msgstr ""
+"Таймеры издают сигнал ``timeout`` каждый раз, когда они достигают конца "
+"своего времени ожидания (*Wait Time*). По умолчанию они перезапускаются "
+"автоматически, испуская сигнал в цикле. Мы можем подключиться к этому "
+"сигналу из узла *Main*, чтобы порождать монстров каждые ``0.5`` секунды."
 
 msgid ""
 "With the *MobTimer* still selected, head to the *Node* dock on the right and "
 "double-click the ``timeout`` signal."
 msgstr ""
+"Когда *MobTimer* всё ещё выбран, перейдите в панель *Node* справа и дважды "
+"щёлкните по сигналу ``timeout``."
 
 #, fuzzy
 msgid "|image23|"
@@ -422,24 +498,27 @@ msgid ""
 "This will take you back to the script, with a new empty "
 "``_on_MobTimer_timeout()`` function."
 msgstr ""
+"Это вернёт вас к скрипту с новой пустой функцией ``_on_MobTimer_timeout()``."
 
 msgid "Let's code the mob spawning logic. We're going to:"
-msgstr ""
+msgstr "Давайте напишем логику порождения мобов. Мы собираемся:"
 
 #, fuzzy
 msgid "Instantiate the mob scene."
 msgstr "Создать и добавить новую комнату."
 
 msgid "Sample a random position on the spawn path."
-msgstr ""
+msgstr "Выборка случайной позиции на пути порождения."
 
 msgid "Get the player's position."
-msgstr ""
+msgstr "Получить позицию игрока."
 
 msgid ""
 "Call the mob's ``initialize()`` method, passing it the random position and "
 "the player's position."
 msgstr ""
+"Вызовите метод ``initialize()`` моба, передав ему случайную позицию и "
+"позицию игрока."
 
 #, fuzzy
 msgid "Add the mob as a child of the *Main* node."
@@ -449,14 +528,18 @@ msgid ""
 "Above, ``randf()`` produces a random value between ``0`` and ``1``, which is "
 "what the *PathFollow* node's ``unit_offset`` expects."
 msgstr ""
+"Выше, ``randf()`` выдаёт случайное значение между ``0`` и ``1``, что и "
+"ожидает узел *PathFollow* узла ``unit_offset``."
 
 msgid "Here is the complete ``Main.gd`` script so far, for reference."
-msgstr ""
+msgstr "Вот, для справки, полный скрипт ``Main.gd``."
 
 msgid ""
 "You can test the scene by pressing :kbd:`F6`. You should see the monsters "
 "spawn and move in a straight line."
 msgstr ""
+"Вы можете протестировать сцену, нажав :kbd:`F6`. Вы должны увидеть, что "
+"монстры появляются и движутся по прямой линии."
 
 #, fuzzy
 msgid "|image25|"
@@ -470,6 +553,8 @@ msgid ""
 "For now, they bump and slide against one another when their paths cross. "
 "We'll address this in the next part."
 msgstr ""
+"Пока что они сталкиваются и скользят друг по другу, когда их пути "
+"пересекаются. Мы рассмотрим это в следующей части."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

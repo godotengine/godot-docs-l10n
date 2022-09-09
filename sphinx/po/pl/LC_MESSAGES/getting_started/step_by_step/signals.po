@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"It is a delegation mechanism built into Godot that allows one game object to "
-"react to a change in another without them referencing one another. Using "
-"signals limits `coupling <https://en.wikipedia.org/wiki/"
+"Signals are a delegation mechanism built into Godot that allows one game "
+"object to react to a change in another without them referencing one another. "
+"Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
 
@@ -103,14 +103,15 @@ msgstr ""
 
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
-"Inspector."
+"Inspector. Enter \"Toggle motion\"."
 msgstr ""
 
-#, fuzzy
 msgid "Your scene tree and viewport should look like this."
-msgstr "Drzewo sceny powinno tak wyglądać:"
+msgstr "Drzewo sceny i jej podgląd powinny wyglądać tak jak tu."
 
-msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+msgid ""
+"Save your newly created scene. You can then run it with :kbd:`F6`. At the "
+"moment, the button will be visible, but nothing will happen if you press it."
 msgstr ""
 
 #, fuzzy
@@ -153,11 +154,11 @@ msgstr ""
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
-"the window's bottom-right by clicking the radio button."
+"the window's bottom-right by clicking the Advanced button."
 msgstr ""
 
 msgid ""
-"Click the connect button to complete the signal connection and jump to the "
+"Click the Connect button to complete the signal connection and jump to the "
 "Script workspace. You should see the new method with a connection icon in "
 "the left margin."
 msgstr ""
@@ -192,15 +193,14 @@ msgid ""
 "following code, which we saw two lessons ago:"
 msgstr ""
 
-#, fuzzy
 msgid "Your complete ``Sprite.gd`` code should look like the following."
-msgstr "Drzewo sceny powinno tak wyglądać:"
+msgstr "Kompletny kod ``Sprite.gd`` powinien wyglądać tak jak poniżej."
 
-#, fuzzy
 msgid ""
 "Run the scene now and click the button to see the sprite start and stop."
 msgstr ""
-"Uruchom scenę i naciśnij przycisk. Powinieneś otrzymać następujący wynik:"
+"Uruchom teraz scenę i kliknij przycisk, aby zobaczyć, jak duszek rusza się "
+"i zatrzymuje."
 
 #, fuzzy
 msgid "Connecting a signal via code"
@@ -293,6 +293,11 @@ msgid ""
 "is ``true``, it becomes ``false``, and vice-versa."
 msgstr ""
 
+msgid ""
+"If you run the scene now, you will see that the sprite blinks on and off, at "
+"one second intervals."
+msgstr ""
+
 #, fuzzy
 msgid "Complete script"
 msgstr "Przykład GDScript"
@@ -327,9 +332,9 @@ msgid ""
 "and you can connect to them like any other."
 msgstr ""
 
-#, fuzzy
 msgid "To emit a signal in your scripts, call ``emit_signal()``."
-msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji ``emit_signal``:"
+msgstr ""
+"Aby wyemitować sygnał w Twoich skryptach, użyj funkcji ``emit_signal()``."
 
 #, fuzzy
 msgid ""

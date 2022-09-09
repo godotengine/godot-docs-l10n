@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgstr ""
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
 "structure which stores the executable, libraries and all the project files. "
-"This bundle is packed in a ZIP archive or DMG disk image (only supported "
-"when exporting for macOS)."
+"This bundle can be exported as is, packed in a ZIP archive or DMG disk image "
+"(only supported when exporting from a computer running macOS)."
 msgstr ""
 
 msgid "Requirements"
@@ -39,11 +39,15 @@ msgstr "Требования"
 
 #, fuzzy
 msgid ""
-"To enable code signing and notarization, you must export from a computer "
-"running macOS with Xcode command line tools installed."
+"To enable code signing with Apple Developer ID and notarization, you must "
+"export from a computer running macOS with Xcode command line tools installed."
 msgstr ""
 "Чтобы собрать игру для iOS, вы должны иметь компьютер с операционной "
 "системой MacOS с установленным Xcode."
+
+msgid ""
+"Ad-hoc code signing is supported on all platforms, without additional tools."
+msgstr ""
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -51,6 +55,11 @@ msgid ""
 msgstr ""
 "Загрузите шаблоны экспорта Godot. Используйте меню Godot: ``Editor > Manage "
 "Export Templates``."
+
+msgid ""
+"A valid and unique ``Bundle identifier`` should be set in the "
+"``Application`` section of the export options."
+msgstr ""
 
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
@@ -64,18 +73,26 @@ msgid "Code signing and notarization"
 msgstr "Окна и интеграция в ОС"
 
 msgid ""
-"By default, macOS will run only applications that are signed and notarized, "
-"if you use any other signing configuration see :ref:`Running Godot apps on "
+"By default, macOS will run only applications that are signed and notarized. "
+"If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
 
 msgid ""
-"To notarize an app you mast have a valid `Apple Developer ID Certificate "
-"<https://developer.apple.com/>`__."
+"To notarize an app, you **must** have a valid `Apple Developer ID "
+"Certificate <https://developer.apple.com/>`__."
 msgstr ""
 
 msgid "If you have an Apple Developer ID Certificate"
 msgstr ""
+
+#, fuzzy
+msgid ""
+"Export your project from a computer running macOS with Xcode command line "
+"tools installed."
+msgstr ""
+"Чтобы собрать игру для iOS, вы должны иметь компьютер с операционной "
+"системой MacOS с установленным Xcode."
 
 msgid ""
 "Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
@@ -113,9 +130,11 @@ msgid "If you do not have an Apple Developer ID Certificate"
 msgstr ""
 
 msgid ""
-"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty, in "
-"this case Godot will use a ad-hoc signature, which will make running an "
-"exported app easier for the end users."
+"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty (when "
+"exporting from a computer running macOS, on other platforms this option is "
+"hidden). In this case Godot will use a ad-hoc signature, which will make "
+"running an exported app easier for the end users, see the :ref:`Running "
+"Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 
 #, fuzzy
@@ -141,7 +160,7 @@ msgstr "Идентификаторы"
 
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
-"macOS key chain. [1]_"
+"macOS keychain. [1]_ [2]_"
 msgstr ""
 
 msgid "Timestamp"
@@ -149,13 +168,13 @@ msgstr ""
 
 msgid ""
 "Requests a timestamp server to authenticate the time of signing. Required "
-"for notarization."
+"for notarization. [2]_"
 msgstr ""
 
 msgid "Hardened Runtime"
 msgstr ""
 
-msgid "Enables \"Hardened Runtime\". Required for notarization."
+msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
 msgstr ""
 
 #, fuzzy
@@ -172,7 +191,16 @@ msgid ""
 "``Timestamp``."
 msgstr ""
 
+msgid ""
+"The ``Hardened Runtime`` and ``Timestamp`` options are incompatible with ad-"
+"hoc signing and will be ignored."
+msgstr ""
+
 msgid "Leave ``Identity`` option empty to use ad-hoc signature."
+msgstr ""
+
+msgid ""
+"This option is visible only when exporting from a computer running macOS."
 msgstr ""
 
 #, fuzzy
@@ -200,13 +228,18 @@ msgstr ""
 msgid "Apple Team ID"
 msgstr ""
 
-msgid "Team ID if your Apple ID belongs to multiple teams"
+msgid "Team ID, if your Apple ID belongs to multiple teams"
 msgstr ""
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://developer.apple."
 "com/documentation/security/notarizing_macos_software_before_distribution?"
 "language=objc>`__ for more info."
+msgstr ""
+
+msgid ""
+"Notarization is supported when exporting from a computer running macOS, "
+"these options are hidden on other platforms."
 msgstr ""
 
 #, fuzzy
@@ -226,7 +259,7 @@ msgstr ""
 msgid "Entitlement"
 msgstr "Окружение"
 
-msgid "Allow JIT Code Execution [2]_"
+msgid "Allow JIT Code Execution [3]_"
 msgstr ""
 
 msgid ""
@@ -235,7 +268,7 @@ msgid ""
 "according to the add-on documentation."
 msgstr ""
 
-msgid "Allow Unsigned Executable Memory [2]_"
+msgid "Allow Unsigned Executable Memory [3]_"
 msgstr ""
 
 msgid ""
@@ -245,7 +278,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Allow DYLD Environment Variables [2]_"
+msgid "Allow DYLD Environment Variables [3]_"
 msgstr "Функции и Переменные"
 
 msgid ""
@@ -294,7 +327,7 @@ msgid "Address Book"
 msgstr ""
 
 msgid ""
-"[3]_ Enable to allow access contacts in the user's address book, if it's "
+"[4]_ Enable to allow access contacts in the user's address book, if it's "
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
@@ -303,7 +336,7 @@ msgid "Calendars"
 msgstr ""
 
 msgid ""
-"[3]_ Enable to allow access to the user's calendar, if it's enabled you "
+"[4]_ Enable to allow access to the user's calendar, if it's enabled you "
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
@@ -313,7 +346,7 @@ msgid "Photo Library"
 msgstr "Библиотека ресурсов"
 
 msgid ""
-"[3]_ Enable to allow access to the user's Photos library, if it's enabled "
+"[4]_ Enable to allow access to the user's Photos library, if it's enabled "
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
@@ -321,14 +354,14 @@ msgstr ""
 msgid "Apple Events"
 msgstr ""
 
-msgid "[3]_ Enable to allow app to send Apple events to other apps."
+msgid "[4]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
 
 msgid "Debugging"
 msgstr "Отладка"
 
 msgid ""
-"[4]_ You can temporarily enable this entitlement to use native debugger "
+"[5]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
@@ -399,33 +432,35 @@ msgid ""
 "required to use wireless controllers."
 msgstr ""
 
-msgid "Files Downloads [5]_"
+msgid "Files Downloads [6]_"
 msgstr ""
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 
 #, fuzzy
-msgid "Files Pictures [5]_"
+msgid "Files Pictures [6]_"
 msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
 
-msgid "Files Music [5]_"
-msgstr ""
+#, fuzzy
+msgid "Files Music [6]_"
+msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr ""
 
-msgid "Files Movies [5]_"
-msgstr ""
+#, fuzzy
+msgid "Files Movies [6]_"
+msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
 
 #, fuzzy
-msgid "Files User Selected [5]_"
+msgid "Files User Selected [6]_"
 msgstr "Удалить выделенное"
 
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,6 +99,12 @@ msgid "Changing the file icon"
 msgstr "更改檔案圖示"
 
 msgid ""
+"In Godot 3.5 and later, you can change the file icon without external tools "
+"using `godoticon <https://github.com/pkowal1982/godoticon>`__. Changing the "
+"file icon this way should work for executables containing an embedded PCK."
+msgstr ""
+
+msgid ""
 "There are `known issues <https://github.com/godotengine/godot/"
 "issues/33466>`__ when changing the application icon in executables that "
 "embed a PCK file. It's recommended to avoid using rcedit for now if you "
@@ -184,6 +190,5 @@ msgstr ""
 "執行** 並呼叫指令 ``ie4uinit.exe -ClearIconCache`` 或 ``ie4uinit.exe -"
 "show`` 。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

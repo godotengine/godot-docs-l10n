@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,9 +226,11 @@ msgstr "숫자 지정자에서, 숫자가 양수라면 **+ 부호를 표시합�
 msgid "Integer"
 msgstr "정수(Integer)"
 
+#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
-"``0`` in an integer placeholder. When used after ``.``, see ``.``."
+"``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
+"if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
 "**패딩** 를 설정합니다. 정수 플레이스 홀더에서 정수가 ``0`` 으로 시작한다면 "
 "그곳을 0이나 공백으로 채웁니다. ``.`` 뒤에서 쓰는 경우는, ``.`` 를 참고하세"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,8 +150,15 @@ msgstr ""
 "Se você não precisa de nenhum desses arquivos, tudo bem usar glTF binários."
 
 msgid ""
-"Blender does not export emissive textures with the glTF file. If your model "
-"uses one, it must be brought in separately."
+"Blend shape animations cannot be imported - they require manual animation "
+"within Godot."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Blender versions older than 3.2 do not export emissive textures with the "
+"glTF file. If your model uses one and you're using an older version of "
+"Blender, it must be brought in separately."
 msgstr ""
 "O Blender não exporta texturas emissivas com o arquivo glTF. Se o seu modelo "
 "usa uma, ela deve ser trazida separadamente."
@@ -586,7 +593,7 @@ msgstr ""
 "estarem exatamente onde deveriam estar."
 
 msgid "Ensure Tangents"
-msgstr "Garantir tangentes"
+msgstr "Garantir Tangentes"
 
 #, fuzzy
 msgid ""
@@ -617,7 +624,7 @@ msgstr ""
 "diretamente com malhas em vez de cenas."
 
 msgid "Light Baking"
-msgstr "Gerando e Gravando Iluminação"
+msgstr "Bake de Mapa de Luz"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "Se a malha é ou não usada em lightmaps previamente calculados."
@@ -695,7 +702,7 @@ msgstr ""
 "usados para editá-los. Não fazer isso pode resultar em animações instáveis."
 
 msgid "Filter Script"
-msgstr "Script de filtro"
+msgstr "Filtrar Script"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -1090,4 +1097,4 @@ msgstr ""
 "sufixo ``loop`` ou ``cycle``."
 
 msgid "Translation status"
-msgstr "Estado de tradução"
+msgstr "Estado da Tradução"

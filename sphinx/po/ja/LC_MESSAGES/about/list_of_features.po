@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "このページでは、Godotが現在サポートしているすべての機能をリストアップすること"
 "を目的としています。"
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -148,6 +149,9 @@ msgstr "実行時カメラ複製。"
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr "エディタ内のカメラを移動し、実行プロジェクトで結果を確認してください。"
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "コミュニティによって翻訳された数十の言語にてエディタを使用できます。"
 
@@ -161,19 +165,13 @@ msgstr ""
 ":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
 "ダウンロードして、エディタの機能を拡張することができます。"
 
+#, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
 msgstr ""
 "GDScript を使用して新しい :ref:`独自のプラグインを作成する "
 "<doc_making_plugins>`"
-
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr ""
-"プロジェクトマネージャのアセットライブラリからプロジェクトをダウンロードし、"
-"直接インポートすることができます。 機能の追加、あるいは、ワークフローを高速化"
-"することができます。"
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
@@ -235,9 +233,10 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
 "ビットマップフォントはBMFontといったツールを使うことでエクスポート可能。"
 
+#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "ダイナミックフォントは、モノクロフォントと色付きフォントをサポート(例えば絵文"
 "字のための)。対応形式は TTF と OTF とWOFF1です。"
@@ -545,22 +544,6 @@ msgstr "**ポストプロセッシング:**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "トーンマッピング (Linear、Reinhard、Filmic、ACES)。"
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr "*GLES3:* ビューポートの明るさに応じた自動露出調整。"
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "*GLES3:* 近 / 遠距離の被写界深度。"
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* スクリーンスペース アンビエントオクルージョン。"
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-"*GLES3:* カラーバンディングを回避するためのオプションのデバンディング (HDRレ"
-"ンダリングが有効になっている場合に有効)。"
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -573,6 +556,23 @@ msgstr "一次元rampを用いた色補正。"
 
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "明るさ、コントラスト、彩度の調整。"
+
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr "*GLES3:* ビューポートの明るさに応じた自動露出調整。"
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "*GLES3:* 近 / 遠距離の被写界深度。"
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "*GLES3:* スクリーンスペース アンビエントオクルージョン。"
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
+"*GLES3:* カラーバンディングを回避するためのオプションのデバンディング (HDRレ"
+"ンダリングが有効になっている場合に有効)。"
 
 msgid "**Texture filtering:**"
 msgstr "**テクスチャ フィルタリング:**"
@@ -621,9 +621,11 @@ msgstr ""
 "グ。プライマリおよびセカンダリの可視性を持つゲームプレイ通知に対応し、AI/物理"
 "処理を必要としないノードの処理を無効化します。"
 
+#, fuzzy
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 "リアルタイムのオクルーダースフィア(\" occluder spheres\")。ルームやポータルほ"
 "ど効果的ではなく、（ゲームプレイの通知もサポートしていません）、しかしセット"
@@ -827,6 +829,20 @@ msgstr ""
 "コミュニティにより保守されているD言語、Kotlin、Nim、Rust のバインディングが提"
 "供されています。"
 
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
+
 msgid "Audio"
 msgstr "オーディオ"
 
@@ -994,13 +1010,13 @@ msgstr "ナビゲーション"
 msgid "A* algorithm in 2D and 3D."
 msgstr "2Dと3DのA*アルゴリズム。"
 
-msgid "Navigation meshes."
-msgstr "ナビゲーションメッシュ。"
+msgid "Navigation meshes with dynamic obstacle avoidance."
+msgstr ""
 
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr "Godot 4.0で予定されている動的障害物回避のサポート。"
-
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "エディタからナビゲーションメッシュを生成します。"
 
 msgid "Networking"

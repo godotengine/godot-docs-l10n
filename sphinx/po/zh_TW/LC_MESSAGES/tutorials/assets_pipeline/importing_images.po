@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgid "Import options are vast:"
 msgstr "有許多匯入選項："
 
 msgid "Detect 3D"
-msgstr "Detect 3d 選項"
+msgstr "偵測3D"
 
 msgid ""
 "This option makes Godot be aware of when a texture (which is imported for 2D "
@@ -261,7 +261,7 @@ msgid "|bad| Slow"
 msgstr "|bad| 慢"
 
 msgid "HDR Mode"
-msgstr "HDR 模式"
+msgstr "HDR模式"
 
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
@@ -280,7 +280,7 @@ msgid ""
 msgstr "若希望能讓 Godot 確保完全支援各種紋理，請開啟「Force RGBE」選項。"
 
 msgid "Normal Map"
-msgstr "法線映射"
+msgstr "法線貼圖"
 
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
@@ -331,7 +331,7 @@ msgid ""
 msgstr "依據使用情況，匯入圖片為紋理時有許多可調整的設定。"
 
 msgid "Repeat"
-msgstr "Repeat - 重複"
+msgstr "重覆"
 
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
@@ -345,7 +345,7 @@ msgid "Repeating can optionally be set to mirrored mode."
 msgstr "重複選項也可設定為 Mirrored (鏡像) 模式。"
 
 msgid "Filter"
-msgstr "Filter - 過濾"
+msgstr "篩選"
 
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
@@ -358,7 +358,7 @@ msgstr ""
 "(Pixel Perfect) 遊戲時則大多會禁用。"
 
 msgid "Mipmaps"
-msgstr "\\ Mipmaps"
+msgstr "Mipmap"
 
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
@@ -391,7 +391,7 @@ msgstr ""
 "件)。"
 
 msgid "Anisotropic"
-msgstr "各向異性"
+msgstr "異向性"
 
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
@@ -401,7 +401,7 @@ msgstr ""
 "節。"
 
 msgid "sRGB"
-msgstr ""
+msgstr "sRGB"
 
 #, fuzzy
 msgid ""
@@ -427,14 +427,14 @@ msgid ""
 msgstr ""
 
 msgid "Process"
-msgstr "Process - 處理"
+msgstr "處理"
 
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "匯入為紋理貼圖後可套用某些特殊處理至圖片上。"
 
 msgid "Fix Alpha Border"
-msgstr "Fix Alpha Border - 修正 Alpha 邊界"
+msgstr "修正Alpha邊界"
 
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
@@ -474,7 +474,7 @@ msgstr ""
 "該選項可使這些檔案正確顯示。"
 
 msgid "Invert Color"
-msgstr "Invert Color - 色彩反轉"
+msgstr "翻轉顏色"
 
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
@@ -498,6 +498,5 @@ msgstr ""
 "該選項只會套用於 SVG 檔。用於控制 SVG 圖像的縮放。預設的縮放為 (1.0)，會使匯"
 "入的 SVG 保持原始大小。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,9 +83,8 @@ msgid ""
 "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
 msgstr ""
 
-#, fuzzy
 msgid "HDR"
-msgstr "HUD"
+msgstr "HDR"
 
 msgid ""
 "GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
@@ -226,7 +225,11 @@ msgstr ""
 msgid "Blend shapes"
 msgstr "Formas de colisão"
 
-msgid "Blend shapes are not supported in GLES2."
+msgid ""
+"In GLES2, blend shapes are implemented on the CPU instead of the GPU. "
+"Accordingly, they may not perform as well as blend shapes in GLES3. To avoid "
+"performance issues when using blend shapes in GLES2, try to minimize the "
+"number of blend shapes that are updated each frame."
 msgstr ""
 
 msgid "Shading language"
@@ -347,4 +350,4 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado de tradução"
+msgstr "Estado da Tradução"

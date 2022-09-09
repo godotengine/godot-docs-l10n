@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -420,7 +420,7 @@ msgid "Class"
 msgstr "Classe"
 
 msgid "Operator"
-msgstr ""
+msgstr "Operador"
 
 msgid "1 (highest)"
 msgstr ""
@@ -669,7 +669,7 @@ msgstr ""
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
-"uniform is used."
+"uniform is used, and how the editor should allow users to modify it."
 msgstr ""
 
 msgid ""
@@ -687,7 +687,7 @@ msgstr ""
 msgid "hint_color"
 msgstr ""
 
-msgid "Used as color"
+msgid "Used as color."
 msgstr ""
 
 msgid "**int, float**"
@@ -696,25 +696,25 @@ msgstr ""
 msgid "hint_range(min, max[, step])"
 msgstr ""
 
-msgid "Used as range (with min/max/step)"
+msgid "Restricted to values in a range (with min/max/step)."
 msgstr ""
 
 msgid "hint_albedo"
 msgstr ""
 
-msgid "Used as albedo color, default white"
+msgid "Used as albedo color, default white."
 msgstr ""
 
 msgid "hint_black_albedo"
 msgstr ""
 
-msgid "Used as albedo color, default black"
+msgid "Used as albedo color, default black."
 msgstr ""
 
 msgid "hint_normal"
 msgstr ""
 
-msgid "Used as normalmap"
+msgid "Used as normalmap."
 msgstr ""
 
 msgid "hint_white"
@@ -795,7 +795,7 @@ msgstr ":ref:`Shaders Spatial <doc_spatial_shader>`"
 
 #, fuzzy
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
-msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: Para renderização 2D."
+msgstr ":ref:`Sombreadores de itens de tela <doc_canvas_item_shader>`"
 
 #, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
@@ -1386,4 +1386,4 @@ msgid "Sum of absolute derivative in ``x`` and ``y``"
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado de tradução"
+msgstr "Estado da Tradução"

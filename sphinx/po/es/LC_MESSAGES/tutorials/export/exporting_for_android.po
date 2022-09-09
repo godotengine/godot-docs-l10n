@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,18 @@ msgstr ""
 "Exportar para Android tiene menos requisitos que compilar Godot para "
 "Android. Los siguientes pasos detallan lo que se necesita para configurar el "
 "motor y el SDK de Android."
+
+#, fuzzy
+msgid "Install OpenJDK 11"
+msgstr "Instalar OpenJDK 8"
+
+#, fuzzy
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
+msgstr ""
+"Descargue e instale `OpenJDK 8 <https://adopopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>` __."
 
 msgid "Download the Android SDK"
 msgstr "Descargar el SDK de Android"
@@ -69,7 +81,8 @@ msgstr "Android SDK Platform-Tools versión 30.0.5 o posterior"
 msgid "Android SDK Build-Tools version 30.0.3"
 msgstr "Android SDK Build-Tools versión 30.0.3"
 
-msgid "Android SDK Platform 29"
+#, fuzzy
+msgid "Android SDK Platform 31"
 msgstr "Android SDK Platform 29"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -78,8 +91,8 @@ msgstr "Herramientas de línea de comandos del SDK de Android (más reciente)"
 msgid "CMake version 3.10.2.4988404"
 msgstr "CMake versión 3.10.2.4988404"
 
-msgid "NDK version 21.4.7075529"
-msgstr "NDK versión 21.4.7075529"
+msgid "NDK version r23c (23.2.8568313)"
+msgstr ""
 
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
@@ -103,18 +116,6 @@ msgid ""
 msgstr ""
 "Si está usando Linux, ** no use un SDK de Android proporcionado por los "
 "repositorios de su distribución, ya que a menudo estará desactualizado **."
-
-#, fuzzy
-msgid "Install OpenJDK 11"
-msgstr "Instalar OpenJDK 8"
-
-#, fuzzy
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
-msgstr ""
-"Descargue e instale `OpenJDK 8 <https://adopopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>` __."
 
 msgid "Create a debug.keystore"
 msgstr "Crear un debug.keystore"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,9 +232,11 @@ msgstr "数値指定子で、正の場合は\\ **+記号を表示**\\ します�
 msgid "Integer"
 msgstr "整数"
 
+#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
-"``0`` in an integer placeholder. When used after ``.``, see ``.``."
+"``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
+"if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
 "**パディング**\\ を設定します。 整数プレースホルダ内で整数が ``0`` で始まる場"
 "合は、スペースまたはゼロでパディングされます。後に ``.`` を使用する場合"

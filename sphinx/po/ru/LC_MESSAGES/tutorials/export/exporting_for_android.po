@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,18 @@ msgstr ""
 "Экспорт для Android имеет меньше требований, чем компиляция Godot для "
 "Android. В следующих шагах подробно описано, что необходимо для настройки "
 "Android SDK и движка."
+
+#, fuzzy
+msgid "Install OpenJDK 11"
+msgstr "Установите OpenJDK 8"
+
+#, fuzzy
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
+msgstr ""
+"Скачайте и установите `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__."
 
 msgid "Download the Android SDK"
 msgstr "Загрузите Android SDK"
@@ -68,7 +80,8 @@ msgstr "Инструменты сборки Android SDK версии 30.0.5 ил
 msgid "Android SDK Build-Tools version 30.0.3"
 msgstr "Инструменты сборки Android SDK версии 30.0.3"
 
-msgid "Android SDK Platform 29"
+#, fuzzy
+msgid "Android SDK Platform 31"
 msgstr "Платформа Android SDK 29"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -77,8 +90,8 @@ msgstr "Инструменты Android SDK для командной строк�
 msgid "CMake version 3.10.2.4988404"
 msgstr "CMake версии 3.10.2.4988404"
 
-msgid "NDK version 21.4.7075529"
-msgstr "NDK версии 21.4.7075529"
+msgid "NDK version r23c (23.2.8568313)"
+msgstr ""
 
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
@@ -102,18 +115,6 @@ msgid ""
 msgstr ""
 "Если вы используете Linux, **не используйте Android SDK, предоставляемый "
 "репозиториями вашего дистрибутива, поскольку он часто будет устаревшим**."
-
-#, fuzzy
-msgid "Install OpenJDK 11"
-msgstr "Установите OpenJDK 8"
-
-#, fuzzy
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
-msgstr ""
-"Скачайте и установите `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__."
 
 msgid "Create a debug.keystore"
 msgstr "Создайте debug.keystore"

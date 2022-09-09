@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -520,7 +520,7 @@ msgstr ""
 "「done」連接埠。若不是全部的連接埠都有用到的話，也可以不連接序列埠。"
 
 msgid "Iterator"
-msgstr "Iterator 迭代器"
+msgstr "迭代器"
 
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
@@ -541,7 +541,7 @@ msgid "When done, it goes via the \"exit\" sequence port."
 msgstr "迭代結束後將跑到「exit」序列埠。"
 
 msgid "Return"
-msgstr "Return 回傳"
+msgstr "返回"
 
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
@@ -551,7 +551,7 @@ msgstr ""
 "可以強制函式結束。"
 
 msgid "Sequence"
-msgstr "Sequance 序列"
+msgstr "序列"
 
 msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
@@ -575,15 +575,16 @@ msgid ""
 msgstr "也可以將引數轉換為腳本，用來製作完整的腳本屬性與方法："
 
 msgid "Switch"
-msgstr "Switch 切換"
+msgstr "切換"
 
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr "Switch 節點與 Condition 節點類似，但 Switch 節點會一次配對多個值。"
 
+#, fuzzy
 msgid "While"
-msgstr ""
+msgstr "當"
 
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
@@ -678,7 +679,7 @@ msgstr ""
 "時候正確設定。"
 
 msgid "Wait"
-msgstr "Wait 等待"
+msgstr "等待"
 
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
@@ -766,6 +767,5 @@ msgid ""
 "processing order:"
 msgstr "使用序列模式，就可以更妥善處理執行順序："
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

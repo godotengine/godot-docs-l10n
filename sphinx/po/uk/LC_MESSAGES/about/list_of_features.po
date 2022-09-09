@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Ця сторінка створена щоб показати всі особливості, що підтримуються рушієм "
 "на даний момент."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -149,6 +150,9 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
 "Перемістіть камеру в редакторі та перегляньте зміни в робочому проєкті."
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Використовуйте редактор на десятках мов, що надаються спільнотою."
 
@@ -162,18 +166,13 @@ msgstr ""
 "З :ref:`бібліотеки активів <doc_what_is_assetlib>` можна завантажити плагіни "
 "для розширення функціональності редактора."
 
+#, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
 msgstr ""
 "Ви можете :ref:`створити власні плагіни<doc_making_plugins>` за допомогою "
 "GDScript"
-
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr ""
-"Завантажуйте проекти з бібліотеки активів в менеджері проектів та імпортуйте "
-"їх безпосередньо в свою роботу, щоб прискорити робочий процес."
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
@@ -239,9 +238,10 @@ msgstr ""
 "Растрові шрифти можна експортувати за допомогою таких інструментів, як "
 "BMFont."
 
+#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont підтримує однотонні шрифти, а також кольорові шрифти. "
 "Підтримувані формати - TTF, OTF і WOFF1."
@@ -553,7 +553,7 @@ msgstr ""
 
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
-"Необов’язковий коефіцієнт пропускання, щоб зробити світлоі більш помітним в "
+"Необов’язковий коефіцієнт пропускання, щоб зробити світло помітнішим у "
 "тумані."
 
 msgid "**Particles:**"
@@ -570,24 +570,6 @@ msgstr "**Пост-обробка:**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Замалювання (Linear, Reinhard, Filmic, ACES)."
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
-"*GLES3:* Автоматичне регулювання експозиції на основі яскравості вікна "
-"перегляду."
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "*GLES3:* Близька і дальня глибина різкості."
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* Перепона навколишнього світу в екранному просторі."
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-"*GLES3:* Додаткове видалення смуг для уникнення кольорових смуг (діє, коли "
-"ввімкнено рендеринг HDR)."
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -603,6 +585,25 @@ msgstr ""
 
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "Регулювання яскравості, контрасту та насиченості."
+
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr ""
+"*GLES3:* Автоматичне регулювання експозиції на основі яскравості вікна "
+"перегляду."
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "*GLES3:* Близька і дальня глибина різкості."
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "*GLES3:* Перепона навколишнього світу в екранному просторі."
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
+"*GLES3:* Додаткове видалення смуг для уникнення кольорових смуг (діє, коли "
+"ввімкнено рендеринг HDR)."
 
 msgid "**Texture filtering:**"
 msgstr "**Фільтрування текстур:**"
@@ -652,9 +653,11 @@ msgstr ""
 "Підтримує сповіщення про геймплей з первинною та вторинною видимістю, щоб "
 "вимкнути обробку ШІ/фізики для вузлів, які цього не потребують."
 
+#, fuzzy
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 "Сфери оклюдерів у реальному часі. Не такі ефективні, як кімнати та портали "
 "(і не підтримують сповіщення про геймплей), але простіші в налаштуванні."
@@ -864,6 +867,20 @@ msgid ""
 msgstr ""
 "Підтримуються прив’язки D, Kotlin, Python, Nim та Rust, надані спільнотою."
 
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
+
 msgid "Audio"
 msgstr "Аудіо"
 
@@ -1036,13 +1053,13 @@ msgstr "Навігація"
 msgid "A* algorithm in 2D and 3D."
 msgstr "Алгоритм A* в 2D і 3D."
 
-msgid "Navigation meshes."
-msgstr "Навігаційні меші (сітки)."
+msgid "Navigation meshes with dynamic obstacle avoidance."
+msgstr ""
 
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr "Підтримка динамічного уникнення перешкод, запланована в Godot 4.0."
-
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "Створення навігаційних мешів (сіток) в редакторі."
 
 msgid "Networking"
@@ -1373,7 +1390,7 @@ msgstr ""
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
 msgstr ""
-"Текстові формати зручні для читання та більш зручні для контролю версій."
+"Текстові формати зручні для читання та ще зручніші для контролю версій."
 
 msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""

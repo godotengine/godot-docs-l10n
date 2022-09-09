@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,11 @@ msgstr "本頁列出了目前 Godot 所支援的所有功能。"
 #, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"本頁列出了目前 Godot 穩定版 (3.2) 中所支援的功能。 最新的開發版 (4.0) 中還有 "
+"本頁列出了目前 Godot 穩定版 (3.4) 中所支援的功能。 最新的開發版 (4.0) 中還有 "
 "`更多功能 <https://docs.godotengine.org/zh_TW/latest/about/list_of_features."
 "html>`__ 。"
 
@@ -96,9 +96,8 @@ msgstr "**功能：**"
 msgid "Scene tree editor."
 msgstr "場景樹編輯器。"
 
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "內建主題編輯器。"
+msgstr "內建腳本編輯器。"
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -141,6 +140,9 @@ msgstr "即時相機複製。"
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "在編輯器中使用數十種由社群支援的語言。"
 
@@ -156,14 +158,9 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
-msgstr "使用 GDScript 來自行建立外掛，以增加新功能或加速你的工作流程。"
-
-#, fuzzy
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr "在專案管理員中從素材庫中下載專案，並直接匯入。"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
+msgstr "使用 GDScript :ref:`自己建立插件<doc_making_plugins>` 來新增"
 
 #, fuzzy
 msgid ""
@@ -224,7 +221,7 @@ msgstr "點陣圖字體可使用如 BMFont 等工具來匯出。"
 #, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr "DynamicFont 支援單色字體與彩色字體。支援的格式有 TTF 與 OTF。"
 
 msgid ""
@@ -505,20 +502,6 @@ msgstr "**後處理：**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "色調映射 (線性, Reinhard, Filmic, ACES)。"
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr "**GLES3:** 基於檢視區亮度自動調整曝光。"
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "**GLES3:** 近景深或遠景深。"
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "**GLES3:** 螢幕空間週遭遮擋。"
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -530,6 +513,21 @@ msgstr "使用單維漸變進行色彩校正。"
 
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "亮度、對比度與飽和度調整。"
+
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr "**GLES3:** 基於檢視區亮度自動調整曝光。"
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "**GLES3:** 近景深或遠景深。"
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "**GLES3:** 螢幕空間週遭遮擋。"
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
 
 msgid "**Texture filtering:**"
 msgstr "**紋理過濾：**"
@@ -577,8 +575,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 
 #, fuzzy
@@ -764,6 +763,20 @@ msgid ""
 "community."
 msgstr "由社群維護的 D, Kotlin, Python, Nim 與 Rust 繫結。"
 
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
+
 msgid "Audio"
 msgstr "音訊"
 
@@ -920,13 +933,13 @@ msgstr "導航"
 msgid "A* algorithm in 2D and 3D."
 msgstr "2D 與 3D 的 A* 演算法。"
 
-msgid "Navigation meshes."
-msgstr "導航網格"
+msgid "Navigation meshes with dynamic obstacle avoidance."
+msgstr ""
 
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr "預計於 Godot 4.0 中支援動態障礙躲避。"
-
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "在編輯器中產生導航網格。"
 
 msgid "Networking"
@@ -968,7 +981,7 @@ msgid ""
 msgstr "支援在 NAT 下架設伺服器時通過 UPnP 來繞過需要連接埠轉發的需求。"
 
 msgid "Internationalization"
-msgstr "國際化"
+msgstr "在地化"
 
 msgid "Full support for Unicode including emoji."
 msgstr "完整支援包含 Emoji 在內的 Unicode。"
@@ -1331,6 +1344,5 @@ msgstr ""
 "`Roadmap <https://github.com/godotengine/godot-roadmap>`__ Repository 中的文"
 "件說明了經討論同意且可能在未來版本中實作的功能。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

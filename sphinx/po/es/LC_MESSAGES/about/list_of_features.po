@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Esta pagina tiene como objetivo, enumerar las características actuales "
 "compatibles con Godot."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -152,6 +153,9 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
 "Mueve la cámara en el editor y mira el resultado en el proyecto ejecutándose."
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Usa el editor en docenas de lenguajes contribuidos por la comunidad."
 
@@ -165,27 +169,21 @@ msgstr ""
 "Los plugins del editor se pueden descargar de la :ref:`librería de assets "
 "<doc_what_is_assetlib>` para extender la funcionalidad del editor."
 
+#, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
 msgstr ""
 ":ref:` Crea tus propios plugins <doc_making_plugins>` usando GDScript para "
 "añadir nuevos"
 
-#, fuzzy
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr ""
-"Descarga proyectos desde la librería de assets en el administrador del "
-"proyecto e impórtalos directamente."
-
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"Descarga proyectos desde la librería de assets en el administrador del "
-"proyecto e impórtalos directamente."
+":ref:`Descarga proyectos desde la librería de assets "
+"<doc_using_assetlib_editor>` en el administrador de proyecto e impórtalos "
+"directamente."
 
 msgid "2D graphics"
 msgstr "Gráficos 2D"
@@ -223,7 +221,7 @@ msgid "Parallax layers."
 msgstr "Capas de parallax."
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Compatibilidad con pseudo-3D, incluida la vista previa en el editor."
 
 msgid "2D lighting with normal maps."
 msgstr "Iluminación 2D con mapas normales."
@@ -242,9 +240,10 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
 "Fuentes de Bitmap pueden ser exportadas usando herramientas como BMFont."
 
+#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont soporta fuentes monocromáticas así como fuentes coloridas (p. "
 "ej. para emoji). Los formatos soportados son TTF, OTF y WOFF1."
@@ -327,14 +326,17 @@ msgstr ""
 msgid "3D graphics"
 msgstr "Gráficos 3D"
 
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "La importación de animaciones está activada de forma predeterminada."
+msgstr ""
+"Renderizado HDR opcional con sRGB (habilitado de forma predeterminada)."
 
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
 "overdraw, which speeds up complex scene rendering."
 msgstr ""
+"Utiliza un paso previo de profundidad opcional (habilitado de forma "
+"predeterminada) para reducir el costo de sobredibujado, lo que acelera la "
+"representación de escenas complejas."
 
 msgid "LDR rendering for greater compatibility."
 msgstr "Renderización LDR para una mayor compatibilidad."
@@ -353,9 +355,10 @@ msgstr "**Cámara:**"
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Cámaras de perspectiva, ortográficas y offset troncocónicas."
 
-#, fuzzy
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr "** Representación basada en la física: **"
+msgstr ""
+"**Representación basada en la física (características de material "
+"integradas):**"
 
 msgid "Follows the Disney PBR model."
 msgstr "Sigue el modelo Disney PBR."
@@ -364,10 +367,14 @@ msgid ""
 "Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
 "shading modes."
 msgstr ""
+"Admite los modos de sombreado difuso Lambert, Lambert Wrap (medio Lambert), "
+"Oren-Nayar y Toon."
 
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
 msgstr ""
+"Admite los modos de sombreado especular Schlick-GGX, Blinn, Phong, Toon y "
+"Disabled."
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
@@ -557,24 +564,6 @@ msgstr "**Postprocesamiento:**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Mapeo de tonos (Linear, Reinhard, Filmic, ACES)."
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
-"*GLES3:* Ajustes de exposición automáticos basados en el brillo de la "
-"ventana gráfica."
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "*GLES3:* Profundidad de campo cercana y lejana."
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* Oclusión ambiental del espacio en pantalla."
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-"*GLES3:* \"Debanding\" opcional para evitar las bandas de color (efectivo "
-"cuando se activa el renderizado HDR)."
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -588,6 +577,25 @@ msgstr "Corrección de color mediante rampa unidimensional."
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "Ajustes de brillo, contraste y saturación."
 
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr ""
+"*GLES3:* Ajustes de exposición automáticos basados en el brillo de la "
+"ventana gráfica."
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "*GLES3:* Profundidad de campo cercana y lejana."
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "*GLES3:* Oclusión ambiental del espacio en pantalla."
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
+"*GLES3:* \"Debanding\" opcional para evitar las bandas de color (efectivo "
+"cuando se activa el renderizado HDR)."
+
 msgid "**Texture filtering:**"
 msgstr "**Filtrado de texturas:**"
 
@@ -599,10 +607,11 @@ msgstr "**Compresión de textura:**"
 
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
+"WebP con o sin pérdida (no ahorra VRAM; sólo reduce el tamaño de "
+"almacenamiento)."
 
-#, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
-msgstr "*GLES3:* S3TC (no compatible con plataformas móviles / web)."
+msgstr "S3TC (sólo compatible en plataformas de escritorio)."
 
 msgid "ETC1 (recommended when using the GLES2 renderer)."
 msgstr "ETC1 (recomendado cuando se utiliza el renderizador GLES2)."
@@ -625,17 +634,22 @@ msgstr "Antialiasing aproximado rápido (FXAA)."
 
 #, fuzzy
 msgid "**Performance:**"
-msgstr "Rendimiento"
+msgstr "**Rendimiento:**"
 
 msgid ""
 "Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. "
 "Supports gameplay notifications with primary and secondary visibility to "
 "disable AI/physics processing for nodes that don't need it."
 msgstr ""
+"Occlusion culling con :ref:`cuartos y portales <doc_rooms_and_portals>`. Es "
+"compatible con notificaciones de gameplay de visibilidad primaria y "
+"secundaria para deshabilitar la IA/cálculo físico para nodos que no los "
+"necesitan."
 
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 
 #, fuzzy
@@ -680,6 +694,8 @@ msgstr "Clase auxiliar de geometría 3D."
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
 msgstr ""
+"Soporte para exportar la escena actual como un archivo glTF 2.0 desde el "
+"editor."
 
 msgid "3D physics"
 msgstr "Física 3D"
@@ -847,6 +863,20 @@ msgid ""
 msgstr ""
 "Se mantuvieron los enlaces D, Kotlin, Python, Nim y Rust proporcionados por "
 "la comunidad."
+
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
 
 msgid "Audio"
 msgstr "Audio"
@@ -1022,13 +1052,13 @@ msgstr "Navegación"
 msgid "A* algorithm in 2D and 3D."
 msgstr "Algoritmo A estrella en 2D y 3D."
 
-msgid "Navigation meshes."
-msgstr "Mallas de navegación."
+msgid "Navigation meshes with dynamic obstacle avoidance."
+msgstr ""
 
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr "Soporte para la evasión de obstáculos dinámicos planeado en Godot 4.0."
-
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "Generar mallas de navegación desde el editor."
 
 msgid "Networking"

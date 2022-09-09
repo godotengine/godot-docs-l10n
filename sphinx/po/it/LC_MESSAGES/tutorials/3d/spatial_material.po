@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,10 +35,11 @@ msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
 msgstr ""
 
 msgid ""
-"There are three ways to add a ``SpatialMaterial`` to an object. It can be "
-"added in the *Material* property of the mesh. It can be added in the "
-"*Material* property of the node using the mesh (such as a MeshInstance "
-"node), or in the *Material Override* property of the node using the mesh."
+"There are 4 ways to add a ``SpatialMaterial`` to an object. It can be added "
+"in the *Material* property of the mesh. It can be added in the *Material* "
+"property of the node using the mesh (such as a MeshInstance node), the "
+"*Material Override* property of the node using the mesh, and the *Material "
+"Overlay*."
 msgstr ""
 
 msgid ""
@@ -49,6 +50,12 @@ msgid ""
 "Override* property of the node, it will only be used by that node. It will "
 "also override the regular material property of the node and the material "
 "property of the mesh."
+msgstr ""
+
+msgid ""
+"The *Material Overlay* property will render a material **over** the current "
+"one being used by the mesh. As an example, this can be used to put a "
+"transparent shield effect on a mesh."
 msgstr ""
 
 msgid "Flags"
@@ -220,7 +227,6 @@ msgstr ""
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
 
-#, fuzzy
 msgid "Is sRGB"
 msgstr "È sRGB"
 
@@ -574,6 +580,16 @@ msgid ""
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
 
+msgid ""
+"The effect is extremely subtle in Godot 3 releases, and may require specific "
+"lighting or looking at a material a specific way to notice a difference. "
+"This can be seen in the image below where clearcoat is turned on in the "
+"right."
+msgstr ""
+
+msgid "The effect will be more noticeable in Godot 4."
+msgstr ""
+
 msgid "Anisotropy"
 msgstr "Anisotropia"
 
@@ -584,7 +600,6 @@ msgid ""
 "flowmaps."
 msgstr ""
 
-#, fuzzy
 msgid "Ambient Occlusion"
 msgstr "Occlusione ambientale"
 

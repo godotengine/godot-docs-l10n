@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,14 @@ msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
+msgstr ""
+
+msgid "Install OpenJDK 11"
+msgstr "Instalace sady OpenJDK 11"
+
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
 msgstr ""
 
 msgid "Download the Android SDK"
@@ -61,7 +69,7 @@ msgstr ""
 msgid "Android SDK Build-Tools version 30.0.3"
 msgstr ""
 
-msgid "Android SDK Platform 29"
+msgid "Android SDK Platform 31"
 msgstr ""
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -70,7 +78,7 @@ msgstr ""
 msgid "CMake version 3.10.2.4988404"
 msgstr ""
 
-msgid "NDK version 21.4.7075529"
+msgid "NDK version r23c (23.2.8568313)"
 msgstr ""
 
 msgid ""
@@ -87,14 +95,6 @@ msgstr ""
 msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
-msgstr ""
-
-msgid "Install OpenJDK 11"
-msgstr "Instalace sady OpenJDK 11"
-
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
 msgstr ""
 
 msgid "Create a debug.keystore"
@@ -294,9 +294,8 @@ msgid ""
 "information."
 msgstr ""
 
-#, fuzzy
 msgid "Troubleshooting rendering issues"
-msgstr "Odstraňování problémů"
+msgstr "Řešení problémů s vykreslováním"
 
 msgid ""
 "To improve out-of-the-box performance on mobile devices, Godot automatically "

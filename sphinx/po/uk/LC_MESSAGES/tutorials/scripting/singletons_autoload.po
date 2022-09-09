@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,12 @@ msgstr ""
 "архітектури синглтона. За потреби користувач може інсталювати його більше "
 "одного разу."
 
+msgid ""
+"If you're creating an autoload as part of an editor plugin, consider :ref:"
+"`registering it automatically in the Project Settings "
+"<doc_making_plugins_autoload>` when the plugin is enabled."
+msgstr ""
+
 msgid "AutoLoad"
 msgstr "Автозавантаження"
 
@@ -165,6 +171,11 @@ msgstr ""
 "подивитесь на дерево запущеної сцени, ви побачите, що автоматично "
 "з'являються і завантажені вузли:"
 
+msgid ""
+"Autoloads must **not** be removed using ``free()`` or ``queue_free()`` at "
+"runtime, or the engine will crash."
+msgstr ""
+
 msgid "Custom scene switcher"
 msgstr "Користувацький перемикач сцени"
 
@@ -178,7 +189,7 @@ msgstr ""
 "Цей урок продемонструє побудову перемикача сцени за допомогою автоматичного "
 "завантаження. Для базового перемикача сцен можна скористатися методом :ref:"
 "`SceneTree.change_scene() <class_SceneTree_method_change_scene>` (детальніше "
-"дивіться :ref:`doc_scene_tree`). Однак якщо вам потрібна більш складна "
+"дивіться :ref:`doc_scene_tree`). Однак, якщо вам потрібна складніша "
 "поведінка при зміні сцен, цей метод забезпечує більше функціональності."
 
 msgid ""

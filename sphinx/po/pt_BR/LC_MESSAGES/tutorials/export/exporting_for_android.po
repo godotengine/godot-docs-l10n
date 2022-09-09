@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,19 @@ msgstr ""
 "Exportar para Android possui menos requisitos do que compilar o Godot para "
 "Android. Os passos seguintes detalham o que é necessário para configurar o "
 "Android SDK e o motor."
+
+#, fuzzy
+msgid "Install OpenJDK 11"
+msgstr "Instale o OpenJDK 8"
+
+#, fuzzy
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
+msgstr ""
+"Baixe e instale o `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vão "
+"funcionar."
 
 msgid "Download the Android SDK"
 msgstr "Baixe o Android SDK"
@@ -71,7 +84,7 @@ msgid "Android SDK Build-Tools version 30.0.3"
 msgstr "Android SDK Platform-Tools versão 30.0.5 ou posterior"
 
 #, fuzzy
-msgid "Android SDK Platform 29"
+msgid "Android SDK Platform 31"
 msgstr "Plataforma Android SDK"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -80,8 +93,8 @@ msgstr "Android SDK Command-line Tools (o mais recente)"
 msgid "CMake version 3.10.2.4988404"
 msgstr "CMake versão 3.10.2.4988404"
 
-msgid "NDK version 21.4.7075529"
-msgstr "NDK versão 21.4.7075529"
+msgid "NDK version r23c (23.2.8568313)"
+msgstr ""
 
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
@@ -105,19 +118,6 @@ msgid ""
 msgstr ""
 "Se você estiver usando Linux, **não use um SDK do Android fornecido pelos "
 "repositórios de sua distribuição, pois geralmente estará desatualizado**."
-
-#, fuzzy
-msgid "Install OpenJDK 11"
-msgstr "Instale o OpenJDK 8"
-
-#, fuzzy
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
-msgstr ""
-"Baixe e instale o `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vão "
-"funcionar."
 
 msgid "Create a debug.keystore"
 msgstr "Crie um debug.keystore"
@@ -428,4 +428,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado de tradução"
+msgstr "Estado da Tradução"

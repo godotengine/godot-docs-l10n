@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,11 @@ msgstr ""
 "定のことが起こったときにノードが発信するメッセージです。他のノードはシグナル"
 "に接続し、イベントが発生したときに関数を呼び出すことができます。"
 
+#, fuzzy
 msgid ""
-"It is a delegation mechanism built into Godot that allows one game object to "
-"react to a change in another without them referencing one another. Using "
-"signals limits `coupling <https://en.wikipedia.org/wiki/"
+"Signals are a delegation mechanism built into Godot that allows one game "
+"object to react to a change in another without them referencing one another. "
+"Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
 "これはGodotに組み込まれた委任メカニズムで、あるゲームオブジェクトが別のゲーム"
@@ -123,15 +124,19 @@ msgstr ""
 msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr "ボタンをクリック＆ドラッグし、図の近くへ動かします。"
 
+#, fuzzy
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
-"Inspector."
+"Inspector. Enter \"Toggle motion\"."
 msgstr "インスペクター上のTextプロパティでラベル名をつけることができます。"
 
 msgid "Your scene tree and viewport should look like this."
 msgstr "シーンツリーとビューポートは次のようになります。"
 
-msgid "Save your newly created scene. You can then run it with :kbd:`F6`."
+#, fuzzy
+msgid ""
+"Save your newly created scene. You can then run it with :kbd:`F6`. At the "
+"moment, the button will be visible, but nothing will happen if you press it."
 msgstr "作成したシーンを保存します。 :kbd:`F6`で実行します。"
 
 msgid "Connecting a signal in the editor"
@@ -183,18 +188,20 @@ msgstr ""
 "す。簡易モードではスクリプトが付随しているノードにのみ接続でき、そのノードに"
 "新しいコールバック関数を作成します。"
 
+#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
-"the window's bottom-right by clicking the radio button."
+"the window's bottom-right by clicking the Advanced button."
 msgstr ""
 "高度な設定(\"Advanced\")では、任意のノードと任意のビルトイン関数に接続し、"
 "コールバックに引数を追加し、オプションを設定することができます。ウィンドウの"
 "右下にあるラジオボタンをクリックすることで、モードを切り替えることができま"
 "す。"
 
+#, fuzzy
 msgid ""
-"Click the connect button to complete the signal connection and jump to the "
+"Click the Connect button to complete the signal connection and jump to the "
 "Script workspace. You should see the new method with a connection icon in "
 "the left margin."
 msgstr ""
@@ -379,6 +386,11 @@ msgstr ""
 "\\ ``visible``\\ のプロパティはブール値で、ノードの可視性を制御します。\\ "
 "``visible = not visible``\\ の行で値を反転します。\\ ``visible``\\ が \\ "
 "``true``\\ なら、\\ ``false``\\ に、また逆の場合も同様です。"
+
+msgid ""
+"If you run the scene now, you will see that the sprite blinks on and off, at "
+"one second intervals."
+msgstr ""
 
 msgid "Complete script"
 msgstr "完全なスクリプト"

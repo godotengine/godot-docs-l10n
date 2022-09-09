@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,23 +45,28 @@ msgstr ""
 msgid "Managing groups"
 msgstr "Gestion des groupes"
 
+#, fuzzy
 msgid ""
 "Groups are created by adding a node to a new group name, and likewise they "
 "are removed by removing all nodes from a given group."
 msgstr ""
+"Les groupes sont créés en ajoutant un nœud à un nouveau nom de groupe, et de "
+"même manière, ils sont supprimés en enlevant tous les nœuds du groupe."
 
 msgid "There are two ways to add/remove nodes to groups:"
 msgstr "Il existe deux façons d’ajouter/retirer des nœuds à des groupes :"
 
-#, fuzzy
 msgid "During design, by using the Node dock in the editor."
-msgstr "En utilisant le dock Node dans l'éditeur."
+msgstr "Durant le design, en utilisant le dock Nœud dans l'éditeur."
 
 msgid ""
 "During execution, by calling :ref:`Node.add_to_group() "
 "<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
 "<class_Node_method_remove_from_group>`."
 msgstr ""
+"Durant l'exécution, en appelant :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` ou :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
 
 msgid "Using the Node dock"
 msgstr "En utilisant le dock Node"

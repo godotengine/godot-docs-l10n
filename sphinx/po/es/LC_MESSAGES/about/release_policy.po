@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,20 +203,20 @@ msgstr "**Nivel de soporte**"
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
-msgid "~2022 (see below)"
-msgstr "~2021 (ver abajo)"
+#, fuzzy
+msgid "Q4 2022"
+msgstr "Q2 2022"
 
-msgid "|unstable| *Current focus of development (unstable).*"
+#, fuzzy
+msgid "|unstable| *Alpha.* Current focus of development (unstable)."
 msgstr "\"inestable\" *Enfoque actual del desarrollo (inestable).*"
 
 msgid "unstable"
 msgstr "inestable"
 
-msgid "Godot 3.5"
+#, fuzzy
+msgid "Godot 3.6"
 msgstr "Godot 3.5"
-
-msgid "Q2 2022"
-msgstr "Q2 2022"
 
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
@@ -228,11 +228,11 @@ msgstr ""
 msgid "supported"
 msgstr "Archivos soportados"
 
-msgid "Godot 3.4"
-msgstr "Godot 3.4"
+msgid "Godot 3.5"
+msgstr "Godot 3.5"
 
-msgid "November 2021"
-msgstr "Noviembre de 2021"
+msgid "August 2022"
+msgstr ""
 
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
@@ -242,11 +242,11 @@ msgstr ""
 "soporte de plataforma, así como mejoras de usabilidad compatibles con "
 "versiones anteriores."
 
-msgid "Godot 3.3"
-msgstr "Godot 3.3"
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
 
-msgid "April 2021"
-msgstr "Abril de 2021"
+msgid "November 2021"
+msgstr "Noviembre de 2021"
 
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
@@ -256,21 +256,32 @@ msgstr ""
 msgid "partial"
 msgstr "parcial"
 
-msgid "Godot 3.2"
-msgstr "Godot 3.2"
+msgid "Godot 3.3"
+msgstr "Godot 3.3"
 
-msgid "January 2020"
-msgstr "Enero de 2020"
+msgid "April 2021"
+msgstr "Abril de 2021"
 
+#, fuzzy
 msgid ""
-"|eol| No longer supported as fully superseded by the compatible 3.3 release "
-"(last update: 3.2.3)."
+"|eol| No longer supported as fully superseded by the compatible 3.4 release "
+"(last update: 3.3.4)."
 msgstr ""
 "|eol| Ya no recibe soporte, ya que ha sido sustituido con la versión 3.3 "
 "compatible (Ultima actualización: 3.2.3)."
 
 msgid "eol"
 msgstr "eol"
+
+msgid "Godot 3.2"
+msgstr "Godot 3.2"
+
+msgid "January 2020"
+msgstr "Enero de 2020"
+
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.2.3)."
+msgstr "|eol| Esta versión ya no es soportada (última actualización: 3.1.2)."
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -341,27 +352,21 @@ msgstr ""
 msgid "When is the next release out?"
 msgstr "¿Cuándo sale el próximo lanzamiento?"
 
+#, fuzzy
 msgid ""
-"While Godot contributors aren't working under any deadlines, we have "
-"historically had one major or minor release per year, with several "
-"maintenance updates between each."
+"While Godot contributors aren't working under any deadlines, we strive to "
+"publish minor releases relatively frequently, with an average of two 3.x "
+"minor releases per year since Godot 3.3."
 msgstr ""
 "Mientras que los colaboradores de Godot no trabajan bajo ninguna fecha "
 "limite, historicamente tenemos un lanzamiento mayor o menor por año con "
 "varias actualizaciones de mantenimiento entre ellas."
 
+#, fuzzy
 msgid ""
-"Starting with Godot 3.3, we aim to accelerate our development cycles for "
-"minor releases, so you can expect a new minor release every 3 to 6 months."
-msgstr ""
-"Empezando con Godot 3.3, nosotros apuntamos a acelerar nuestros ciclos de "
-"desarrollo para lanzamientos menores, por lo que puedes esperar un "
-"lanzamiento menor cada 3 o 6 meses."
-
-msgid ""
-"Maintenance (patch) releases will be released as needed with potentially "
-"very short development cycles, to provide users of the current stable branch "
-"with the latest bug fixes for their production needs."
+"Maintenance (patch) releases are released as needed with potentially very "
+"short development cycles, to provide users of the current stable branch with "
+"the latest bug fixes for their production needs."
 msgstr ""
 "Los lanzamientos de mantenimiento (parches) van a ser lanzados cuando sean "
 "necesitados por un ciclo de desarrollo potencialmente corto, para proveer a "
@@ -369,15 +374,12 @@ msgstr ""
 "para sus necesidades de producción."
 
 msgid ""
-"As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
-"release, but any closer estimate is likely to be hard to uphold. Alpha "
-"builds will be published as soon as the main features for Godot 4.0 are "
-"finalized."
+"As for the upcoming Godot 4.0, as of August 2022, we are aiming for a *beta* "
+"release in Q3 2022, and possibly a stable release by Q4 2022 (but experience "
+"has shown time and time again that such estimates tend to be overly "
+"optimistic). `Follow the Godot blog <https://godotengine.org/news>`__ for "
+"the latest updates."
 msgstr ""
-"En cuanto al próximo Godot 4.0, sólo podemos decir que nuestro objetivo es "
-"un lanzamiento en **2022**, pero es probable que cualquier estimación más "
-"cercana sea difícil de mantener. Las compilaciones alfa se publicarán tan "
-"pronto como se finalicen las características principales de Godot 4.0."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,32 +59,30 @@ msgid ""
 msgstr ""
 
 msgid "What can the engine do?"
-msgstr "엔진이 무엇을 할 수 있습니까?"
+msgstr "Godot 엔진으로 무엇을 할 수 있습니까?"
 
 msgid ""
 "Godot was initially developed in-house by an Argentinan game studio. Its "
 "development started in 2001, and the engine was rewritten and improved "
 "tremendously since its open-source release in 2014."
 msgstr ""
+"Godot 는 2001년 Argentinan 게임 스튜디오에서 사내 엔진으로 처음 개발 되기 시"
+"작했고, 2014년 오픈소스로 개발 방식이 변경된 이후 많은 발전과 코드 업데이트"
+"가 이루어졌습니다."
 
 msgid ""
 "Some examples of games created with Godot include Ex-Zodiac and Helms of "
 "Fury."
-msgstr "Godot로 만든 게임의 예로 Ex-Zodiac 및 Helms of Fury가 있습니다."
+msgstr "Godot로 만든 게임의 예로는 Ex-Zodiac 및 Helms of Fury 가 있습니다."
 
 msgid ""
 "As for applications, the open-source pixel art drawing program Pixelorama is "
 "powered by Godot, and so is the voxel RPG creator RPG in a box."
 msgstr ""
 
-msgid "You can find many more examples in the official showcase videos:"
-msgstr "공식 쇼케이스 동영상에서 더 많은 예를 찾을 수 있습니다."
-
-msgid "`April 2020 desktop and console showcase`_"
-msgstr ""
-
-msgid "`April 2020 mobile showcase`_"
-msgstr ""
+#, fuzzy
+msgid "You can find many more examples in the `official showcase videos`_."
+msgstr "아래 공식 쇼케이스 동영상에서 더 많은 예를 찾아보실 수 있습니다:"
 
 #, fuzzy
 msgid "How does it work and look?"
@@ -117,12 +115,11 @@ msgid ""
 msgstr ""
 "물론 여러분이 원한다면 외부 프로그램으로 작업할 수도 있습니다. Blender_에서 "
 "설계된 3D 장면 가져오기를 공식적으로 지원하고 GDScript 및 C#용 VSCode_ 및 "
-"Emacs_의 코드에 대한 플러그인을 유지 관리합니다. 또한 Windows에서 C#용 "
-"Visual Studio를 지원합니다."
+"Emacs_의 코드에 대한 플러그인을 유지 관리하고 있습니다. 또한 Windows에서 C#"
+"용 Visual Studio를 공식적으로 지원하고 있습니다."
 
-#, fuzzy
 msgid "Programming languages"
-msgstr "디자인 언어"
+msgstr "프로그래밍 언어"
 
 msgid "Let's talk about the available programming languages."
 msgstr "사용 가능한 프로그래밍 언어에 대해 이야기해 봅시다."
@@ -134,13 +131,12 @@ msgid ""
 "in the games industry. These are the two main scripting languages we support."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Godot also supports a node-based visual programming language named :ref:"
 "`VisualScript <toc-learn-scripting-visual_script>`."
 msgstr ""
-"Godot는 또한 :ref:`VisualScript <toc-learn-scripting-visual_script>`라는 노"
-"드 기반 비주얼 프로그래밍 언어를 지원합니다."
+"Godot는 또한 노드 기반 비주얼 프로그래밍 언어인 :ref:`VisualScript <toc-"
+"learn-scripting-visual_script>`를 지원합니다."
 
 msgid ""
 "With the :ref:`GDNative <toc-tutorials-gdnative>` technology, you can also "
@@ -156,15 +152,15 @@ msgstr ""
 "물론 엔진에 모듈과 기능을 직접 추가할 수도 있습니다. 완전히 자유롭고 오픈 소"
 "스이기 때문입니다."
 
-#, fuzzy
 msgid ""
 "These are the five officially supported programming languages. The community "
 "maintains support for many more. For more information, see :ref:`GDNative "
 "third-party bindings <doc_what_is_gdnative_third_party_bindings>`."
 msgstr ""
-"다음은 공식적으로 지원되는 5가지 프로그래밍 언어입니다. 커뮤니티는 더 많은 것"
-"을 지원합니다. 자세한 내용은 :ref:`GDNative third-party bindings "
-"<doc_what_is_gdnative_third_party_bindings>`를 참조하세요."
+"다음은 공식적으로 지원되는 5가지 프로그래밍 언어입니다. 더 많은 언어들에대한 "
+"지원이 Godot 커뮤니티에서 개발 및 유지 되고 있습니다. 자세한 내용은 :ref:"
+"`GDNative third-party bindings <doc_what_is_gdnative_third_party_bindings>`"
+"를 참조하세요."
 
 msgid "What do I need to know to use Godot?"
 msgstr "Godot를 사용하려면 무엇을 알아야 하나요?"

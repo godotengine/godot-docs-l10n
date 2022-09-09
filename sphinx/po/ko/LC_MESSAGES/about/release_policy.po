@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,20 +185,20 @@ msgstr "**지원 수준**"
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
-msgid "~2022 (see below)"
-msgstr "~2022년(이하 참조)"
+#, fuzzy
+msgid "Q4 2022"
+msgstr "2022년 2분기"
 
-msgid "|unstable| *Current focus of development (unstable).*"
+#, fuzzy
+msgid "|unstable| *Alpha.* Current focus of development (unstable)."
 msgstr "|unstable| *현재 개발 중 (unstable).*"
 
 msgid "unstable"
 msgstr "불안정"
 
-msgid "Godot 3.5"
+#, fuzzy
+msgid "Godot 3.6"
 msgstr "Godot 3.5"
-
-msgid "Q2 2022"
-msgstr "2022년 2분기"
 
 msgid ""
 "|supported| *Beta.* Receives new features as well as bug fixes while under "
@@ -208,11 +208,11 @@ msgstr "|supported| *베타.* 개발 중에 새로운 기능과 버그 수정을
 msgid "supported"
 msgstr "지원됨"
 
-msgid "Godot 3.4"
-msgstr "Godot 3.4"
+msgid "Godot 3.5"
+msgstr "Godot 3.5"
 
-msgid "November 2021"
-msgstr "2021년 11월"
+msgid "August 2022"
+msgstr ""
 
 msgid ""
 "|supported| Receives fixes for bugs, security and platform support issues, "
@@ -221,11 +221,11 @@ msgstr ""
 "|supported| 버그, 보안 및 플랫폼 지원 문제에 대한 수정 사항과 이전 버전과의 "
 "호환성 향상 지원을 받습니다."
 
-msgid "Godot 3.3"
-msgstr "Godot 3.3"
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
 
-msgid "April 2021"
-msgstr "2021년 4월"
+msgid "November 2021"
+msgstr "2021년 11월"
 
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
@@ -235,20 +235,31 @@ msgstr ""
 msgid "partial"
 msgstr "부분적"
 
+msgid "Godot 3.3"
+msgstr "Godot 3.3"
+
+msgid "April 2021"
+msgstr "2021년 4월"
+
+#, fuzzy
+msgid ""
+"|eol| No longer supported as fully superseded by the compatible 3.4 release "
+"(last update: 3.3.4)."
+msgstr ""
+"|eol| 호환되는 3.3버전으로 완전히 대체되어 지원 종료(마지막 업데이트 3.2.3)."
+
+msgid "eol"
+msgstr "지원 종료"
+
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
 
 msgid "January 2020"
 msgstr "2020년 1월"
 
-msgid ""
-"|eol| No longer supported as fully superseded by the compatible 3.3 release "
-"(last update: 3.2.3)."
-msgstr ""
-"|eol| 호환되는 3.3버전으로 완전히 대체되어 지원 종료(마지막 업데이트 3.2.3)."
-
-msgid "eol"
-msgstr "지원 종료"
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.2.3)."
+msgstr "|eol| 지원 종료(마지막 업데이트 : 3.1.2)."
 
 msgid "Godot 3.1"
 msgstr "Godot 3.1"
@@ -318,41 +329,33 @@ msgstr ""
 msgid "When is the next release out?"
 msgstr "다음 버전은 언제 출시되나요?"
 
+#, fuzzy
 msgid ""
-"While Godot contributors aren't working under any deadlines, we have "
-"historically had one major or minor release per year, with several "
-"maintenance updates between each."
+"While Godot contributors aren't working under any deadlines, we strive to "
+"publish minor releases relatively frequently, with an average of two 3.x "
+"minor releases per year since Godot 3.3."
 msgstr ""
 "Godot 기여자들이 마감 기한을 정해두고 일하는 것은 아니지만 지금까지 매년 1회 "
 "메이저 또는 마이너 버전을 출시했고 그 사이에도 몇 차례 유지 보수 업데이트를 "
 "실시했습니다."
 
+#, fuzzy
 msgid ""
-"Starting with Godot 3.3, we aim to accelerate our development cycles for "
-"minor releases, so you can expect a new minor release every 3 to 6 months."
-msgstr ""
-"Godot 3.3부터는 마이너 릴리스(release)의 개발 사이클을 앞당기는 것을 목표로 "
-"하고 있습니다. 그래서 3개월에서 6개월마다 새로운 마이너 릴리스 출시를 기대할 "
-"수 있습니다."
-
-msgid ""
-"Maintenance (patch) releases will be released as needed with potentially "
-"very short development cycles, to provide users of the current stable branch "
-"with the latest bug fixes for their production needs."
+"Maintenance (patch) releases are released as needed with potentially very "
+"short development cycles, to provide users of the current stable branch with "
+"the latest bug fixes for their production needs."
 msgstr ""
 "유지 보수(패치) 릴리스는 잠재적으로 매우 짧은 개발 주기로 필요에 따라 릴리스"
 "되어 현재 안정적인 분기의 사용자에게 생산 요구 사항에 대한 최신 버그 수정을 "
 "제공합니다."
 
 msgid ""
-"As for the upcoming Godot 4.0, we can only say that we aim for a **2022** "
-"release, but any closer estimate is likely to be hard to uphold. Alpha "
-"builds will be published as soon as the main features for Godot 4.0 are "
-"finalized."
+"As for the upcoming Godot 4.0, as of August 2022, we are aiming for a *beta* "
+"release in Q3 2022, and possibly a stable release by Q4 2022 (but experience "
+"has shown time and time again that such estimates tend to be overly "
+"optimistic). `Follow the Godot blog <https://godotengine.org/news>`__ for "
+"the latest updates."
 msgstr ""
-"다가오는 Godot 4.0에 관해서는 **2022**\\ 년 릴리스를 목표로 한다고 말할 수 있"
-"지만 더 가까운 추정은 유지하기 어려울 것입니다. 알파 빌드는 Godot 4.0의 주요 "
-"기능이 완성되는 대로 게시될 것입니다."
 
 msgid "Translation status"
 msgstr "번역 상태"

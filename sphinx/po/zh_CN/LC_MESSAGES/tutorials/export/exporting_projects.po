@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,6 @@ msgstr ""
 "行参数来支持它. 从命令行导出仍需要导出预设来定义导出参数. 该命令的基本调用将"
 "是:"
 
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -235,37 +234,39 @@ msgid ""
 msgstr ""
 "假设有一个名为“Windows Desktop”的预设，并且可以找到模板，它将导出为 "
 "``some_name.exe``\\ （如果导出预设的名字中存在空格或特殊字符，就必须放在引号"
-"里）。输出路径相对于项目路径或绝对路径；它不遵命令被调用时的目录。"
+"里）。输出路径是\\ *相对于项目的路径*\\ 或者\\ *绝对路径*\\ ；\\ **它使用的不"
+"是命令被调用时的目录**\\ 。"
 
-#, fuzzy
 msgid ""
 "The output file extension should match the one used by the Godot export "
 "process:"
-msgstr "WASM 文件的名称，不含扩展名。（由 Godot 编辑器的导出过程设置）。"
+msgstr "输出的文件扩展名应该与 Godot 导出过程所使用的相匹配："
 
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Windows示例:"
+msgstr "Windows：\\ ``.exe``"
 
 msgid ""
 "macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* "
 "macOS). ``.app`` is not supported directly, although the generated ZIP "
 "archive contains an ``.app`` bundle."
 msgstr ""
+"macOS：\\ ``.zip``\\ （所有平台均可导出）或 ``.dmg``\\ （只能\\ *从* macOS 导"
+"出）。不直接支持 ``.app`` ，不过生成的 ZIP 压缩包中包含了 ``.app`` 捆绑包。"
 
 msgid ""
 "Linux: Any extension (including none). ``.x86_64`` is typically used for 64-"
 "bit x86 binaries."
 msgstr ""
+"Linux：任意扩展名（没有也行）。64 位 x86 二进制文件通常使用 ``.x86_64``\\ 。"
 
 msgid "HTML5: ``.zip``"
-msgstr ""
+msgstr "HTML5：\\ ``.zip``"
 
 msgid "Android: ``.apk``"
-msgstr ""
+msgstr "Android：\\ ``.apk``"
 
 msgid "iOS: ``.zip``"
-msgstr ""
+msgstr "iOS：\\ ``.zip``"
 
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "

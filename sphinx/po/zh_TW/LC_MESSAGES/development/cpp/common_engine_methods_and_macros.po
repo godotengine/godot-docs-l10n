@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,10 +60,10 @@ msgid "This is mainly useful when printing numbers directly."
 msgstr "該方法通常適用於直接印出數字。"
 
 msgid "Internationalize a string"
-msgstr "國際化字串"
+msgstr "在地化字串"
 
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "在 Godot 的程式碼中有兩種方法來進行國際化："
+msgstr "在 Godot 的程式碼中有兩種方法來進行在地化："
 
 msgid ""
 "``TTR()``: **Editor (\"tools\") translations** will only be processed in the "
@@ -87,7 +87,7 @@ msgid ""
 "To insert placeholders in localizable strings, wrap the localization macro "
 "in a ``vformat()`` call as follows:"
 msgstr ""
-"若要在可翻譯字串內插入預留位置，請如下範例以 ``vformat()`` 呼叫包住國際化巨"
+"若要在可翻譯字串內插入預留位置，請如下範例以 ``vformat()`` 呼叫包住在地化巨"
 "集："
 
 msgid ""
@@ -218,6 +218,5 @@ msgstr ""
 "直接在錯誤巨集中回傳。有關可用的錯誤代碼列表，請參考 `core/error_list.h "
 "<https://github.com/godotengine/godot/blob/master/core/error_list.h>`__ 。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

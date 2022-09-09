@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -777,10 +777,11 @@ msgstr ""
 "el shader. Debe coincidir *exactamente* con el nombre del uniforme en el "
 "shader o de lo contrario no será reconocido."
 
+#, fuzzy
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
-"uniform is used."
+"uniform is used, and how the editor should allow users to modify it."
 msgstr ""
 "Cualquier tipo GLSL excepto *void* puede ser un uniform. Adicionalmente, "
 "Godot provee shader hints opcionales para hacer que el compilador entienda "
@@ -805,7 +806,8 @@ msgstr "Hint"
 msgid "hint_color"
 msgstr "hint_color"
 
-msgid "Used as color"
+#, fuzzy
+msgid "Used as color."
 msgstr "Usado como color"
 
 msgid "**int, float**"
@@ -814,25 +816,29 @@ msgstr "**int, float**"
 msgid "hint_range(min, max[, step])"
 msgstr "hint_range(min, max[, step])"
 
-msgid "Used as range (with min/max/step)"
+#, fuzzy
+msgid "Restricted to values in a range (with min/max/step)."
 msgstr "Se utiliza como rango (con mín./máx./paso)"
 
 msgid "hint_albedo"
 msgstr "hint_albedo"
 
-msgid "Used as albedo color, default white"
+#, fuzzy
+msgid "Used as albedo color, default white."
 msgstr "Usado como color de albedo, blanco por defecto"
 
 msgid "hint_black_albedo"
 msgstr "hint_black_albedo"
 
-msgid "Used as albedo color, default black"
+#, fuzzy
+msgid "Used as albedo color, default black."
 msgstr "Usado como color de albedo, negro por defecto"
 
 msgid "hint_normal"
 msgstr "hint_normal"
 
-msgid "Used as normalmap"
+#, fuzzy
+msgid "Used as normalmap."
 msgstr "Usado como normalmap"
 
 msgid "hint_white"

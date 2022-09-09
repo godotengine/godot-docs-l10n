@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,8 +174,10 @@ msgstr "``is_instance_valid(obj)``"
 msgid "``owner``"
 msgstr "Center"
 
-msgid "``index`` (if two nodes have the same name)"
-msgstr "``index`` (se dois nós tiverem o mesmo nome)"
+msgid ""
+"``index`` (sets the order of appearance in the tree. If absent, inherited "
+"nodes will take precedence over plain ones)"
+msgstr ""
 
 #, fuzzy
 msgid "``groups``"
@@ -427,6 +429,10 @@ msgstr ""
 msgid "Vertex positions array"
 msgstr "Processo de importação"
 
+#, fuzzy
+msgid "Normals array"
+msgstr "Variáveis Locais"
+
 msgid "Tangents array"
 msgstr ""
 
@@ -544,4 +550,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado de tradução"
+msgstr "Estado da Tradução"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,16 @@ msgid ""
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_osx`."
 msgstr ""
+"Cette page explique comment exporter un projet Godot vers macOS. Si vous "
+"cherchez à compiler l’éditeur ou les binaires du modèle d'exportation depuis "
+"le code source, voyez plutôt :ref:`doc_compiling_for_osx`."
 
+#, fuzzy
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
 "structure which stores the executable, libraries and all the project files. "
-"This bundle is packed in a ZIP archive or DMG disk image (only supported "
-"when exporting for macOS)."
+"This bundle can be exported as is, packed in a ZIP archive or DMG disk image "
+"(only supported when exporting from a computer running macOS)."
 msgstr ""
 "Les apps macOS sont exportées sous forme d'un ensemble ``.app``, un dossier "
 "à la structure spécifique qui stocke l'exécutable, les bibliothèques et tous "
@@ -41,13 +45,18 @@ msgstr ""
 msgid "Requirements"
 msgstr "Pré-requis"
 
+#, fuzzy
 msgid ""
-"To enable code signing and notarization, you must export from a computer "
-"running macOS with Xcode command line tools installed."
+"To enable code signing with Apple Developer ID and notarization, you must "
+"export from a computer running macOS with Xcode command line tools installed."
 msgstr ""
 "Pour activer la signature du code et la notarisation, vous devez exporter à "
 "partir d'un ordinateur fonctionnant sous macOS avec les outils de ligne de "
 "commande Xcode installés."
+
+msgid ""
+"Ad-hoc code signing is supported on all platforms, without additional tools."
+msgstr ""
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -56,7 +65,11 @@ msgstr ""
 "Téléchargez les modèles d'exportation Godot. Utilisez le menu Godot : "
 "``Editor > Manage Export Templates``."
 
-#, fuzzy
+msgid ""
+"A valid and unique ``Bundle identifier`` should be set in the "
+"``Application`` section of the export options."
+msgstr ""
+
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
 "Gatekeeper if they are downloaded from unknown sources, see the :ref:"
@@ -65,7 +78,7 @@ msgid ""
 msgstr ""
 "Les projets exportés sans signature de code et sans notarisation seront "
 "bloqués par Gatekeeper s'ils sont téléchargés à partir de sources inconnues, "
-"voir la page :ref:`Running Godot apps on macOS <doc_running_on_mac>` pour "
+"voir la page :ref:`Running Godot apps on macOS <doc_running_on_macos>` pour "
 "plus d'informations."
 
 msgid "Code signing and notarization"
@@ -73,24 +86,34 @@ msgstr "Signature et notarisation du code"
 
 #, fuzzy
 msgid ""
-"By default, macOS will run only applications that are signed and notarized, "
-"if you use any other signing configuration see :ref:`Running Godot apps on "
+"By default, macOS will run only applications that are signed and notarized. "
+"If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
 "Par défaut, macOS n'exécutera que les applications signées et notariées. Si "
 "vous utilisez une autre configuration de signature, consultez :ref:"
-"`L'exécution des applications Godot sur macOS <doc_running_on_mac>` pour des "
-"solutions de contournement."
+"`L'exécution des applications Godot sur macOS <doc_running_on_macos>` pour "
+"des solutions de contournement."
 
+#, fuzzy
 msgid ""
-"To notarize an app you mast have a valid `Apple Developer ID Certificate "
-"<https://developer.apple.com/>`__."
+"To notarize an app, you **must** have a valid `Apple Developer ID "
+"Certificate <https://developer.apple.com/>`__."
 msgstr ""
 "Pour notariser une application, vous devez disposer d'un `Apple Developer ID "
 "Certificate <https://developer.apple.com/>`__ valide."
 
 msgid "If you have an Apple Developer ID Certificate"
 msgstr "Si vous avez un Apple Developer ID Certificate"
+
+#, fuzzy
+msgid ""
+"Export your project from a computer running macOS with Xcode command line "
+"tools installed."
+msgstr ""
+"Pour activer la signature du code et la notarisation, vous devez exporter à "
+"partir d'un ordinateur fonctionnant sous macOS avec les outils de ligne de "
+"commande Xcode installés."
 
 msgid ""
 "Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
@@ -144,10 +167,13 @@ msgstr ""
 msgid "If you do not have an Apple Developer ID Certificate"
 msgstr "Si vous ne disposez pas d'un Apple Developer ID Certificate"
 
+#, fuzzy
 msgid ""
-"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty, in "
-"this case Godot will use a ad-hoc signature, which will make running an "
-"exported app easier for the end users."
+"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty (when "
+"exporting from a computer running macOS, on other platforms this option is "
+"hidden). In this case Godot will use a ad-hoc signature, which will make "
+"running an exported app easier for the end users, see the :ref:`Running "
+"Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 "Gardez l'option ``Code Signing`` activée et laissez l'option ``Identity`` "
 "vide, dans ce cas Godot utilisera une signature ad-hoc, ce qui facilitera "
@@ -169,21 +195,23 @@ msgid "Enables code signing."
 msgstr "Active la signature du code."
 
 msgid "Identity"
-msgstr "Identity"
+msgstr "Identité"
 
+#, fuzzy
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
-"macOS key chain. [1]_"
+"macOS keychain. [1]_ [2]_"
 msgstr ""
 "Le \"Full Name\" ou \"Common Name\" de l'identité de signature, stocké dans "
 "la key chain macOS. [1]_"
 
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "Horodatage"
 
+#, fuzzy
 msgid ""
 "Requests a timestamp server to authenticate the time of signing. Required "
-"for notarization."
+"for notarization. [2]_"
 msgstr ""
 "Demande à un serveur d'horodatage d'authentifier l'heure de la signature. "
 "Requis pour la notarisation."
@@ -191,11 +219,12 @@ msgstr ""
 msgid "Hardened Runtime"
 msgstr "Hardened Runtime"
 
-msgid "Enables \"Hardened Runtime\". Required for notarization."
+#, fuzzy
+msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
 msgstr "Active le \"Hardened Runtime\". Requis pour la notarisation."
 
 msgid "Replace Existing Signature"
-msgstr "Replace Existing Signature"
+msgstr "Remplacer la signature existante"
 
 msgid ""
 "Replaces existing signatures of the GDNative libraries and embedded helper "
@@ -211,8 +240,17 @@ msgstr ""
 "Pour authentifier une application, vous devez activer les fonctions "
 "``Hardened Runtime`` et ``Timestamp``."
 
+msgid ""
+"The ``Hardened Runtime`` and ``Timestamp`` options are incompatible with ad-"
+"hoc signing and will be ignored."
+msgstr ""
+
 msgid "Leave ``Identity`` option empty to use ad-hoc signature."
 msgstr "Laissez l'option ``Identity`` vide pour utiliser une signature ad-hoc."
+
+msgid ""
+"This option is visible only when exporting from a computer running macOS."
+msgstr ""
 
 msgid "Notarization Options"
 msgstr "Options de notarisation"
@@ -221,13 +259,13 @@ msgid "Enables automatic upload for notarization."
 msgstr "Active le téléchargement automatique pour la notarisation."
 
 msgid "Apple ID Name"
-msgstr "Apple ID Name"
+msgstr "Nom Apple ID"
 
 msgid "Apple ID account name (email address)"
 msgstr "Nom du compte Apple ID (adresse e-mail)"
 
 msgid "Apple ID Password"
-msgstr "Apple ID Password"
+msgstr "Mot de passe Apple ID"
 
 msgid ""
 "Apple ID app-specific password. See `Using app-specific passwords <https://"
@@ -242,7 +280,8 @@ msgstr ""
 msgid "Apple Team ID"
 msgstr "Apple Team ID"
 
-msgid "Team ID if your Apple ID belongs to multiple teams"
+#, fuzzy
+msgid "Team ID, if your Apple ID belongs to multiple teams"
 msgstr "ID d'équipe, si votre ID Apple appartient à plusieurs équipes"
 
 msgid ""
@@ -254,6 +293,11 @@ msgstr ""
 "apple.com/documentation/security/"
 "notarizing_macos_software_before_distribution?language=objc>`__ pour plus "
 "d'informations."
+
+msgid ""
+"Notarization is supported when exporting from a computer running macOS, "
+"these options are hidden on other platforms."
+msgstr ""
 
 msgid "Entitlements"
 msgstr "Droits"
@@ -274,7 +318,8 @@ msgstr ""
 msgid "Entitlement"
 msgstr "Droit"
 
-msgid "Allow JIT Code Execution [2]_"
+#, fuzzy
+msgid "Allow JIT Code Execution [3]_"
 msgstr "Autoriser l'exécution de code JIT [2]_"
 
 msgid ""
@@ -287,7 +332,8 @@ msgstr ""
 "auto-modifiant, activez-les conformément à la documentation du module "
 "complémentaire."
 
-msgid "Allow Unsigned Executable Memory [2]_"
+#, fuzzy
+msgid "Allow Unsigned Executable Memory [3]_"
 msgstr "Autoriser la mémoire exécutable non signée [2]_"
 
 msgid ""
@@ -300,7 +346,8 @@ msgstr ""
 "dynamique ou auto-modifiant, activez-les conformément à la documentation du "
 "module complémentaire."
 
-msgid "Allow DYLD Environment Variables [2]_"
+#, fuzzy
+msgid "Allow DYLD Environment Variables [3]_"
 msgstr "Allow DYLD Environment Variables [2]_"
 
 msgid ""
@@ -314,7 +361,7 @@ msgstr ""
 "conformément à la documentation du module complémentaire."
 
 msgid "Disable Library Validation"
-msgstr "Désactiver la validation des bibliothèques"
+msgstr "Désactiver la validation des librairies"
 
 msgid ""
 "Allows app to load arbitrary libraries and frameworks. Enabled it if you are "
@@ -327,7 +374,7 @@ msgstr ""
 "modules complémentaires externes fournis par l'utilisateur."
 
 msgid "Audio Input"
-msgstr "Audio Input"
+msgstr "Entrée Audio"
 
 msgid ""
 "Enable if you need to use the microphone or other audio input sources, if "
@@ -340,7 +387,7 @@ msgstr ""
 "microphone_usage_description`."
 
 msgid "Camera"
-msgstr "Camera"
+msgstr "Caméra"
 
 msgid ""
 "Enable if you need to use the camera, if it's enabled you should also "
@@ -364,10 +411,11 @@ msgstr ""
 "location_usage_description`."
 
 msgid "Address Book"
-msgstr "Carnet d'adresses"
+msgstr "Carnet d'Adresses"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access contacts in the user's address book, if it's "
+"[4]_ Enable to allow access contacts in the user's address book, if it's "
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
@@ -376,10 +424,11 @@ msgstr ""
 "d'utilisation dans l'option `privacy/address_book_usage_description`."
 
 msgid "Calendars"
-msgstr "Calendriers"
+msgstr "Calendrier"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access to the user's calendar, if it's enabled you "
+"[4]_ Enable to allow access to the user's calendar, if it's enabled you "
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
@@ -390,8 +439,9 @@ msgstr ""
 msgid "Photo Library"
 msgstr "Bibliothèque photos"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access to the user's Photos library, if it's enabled "
+"[4]_ Enable to allow access to the user's Photos library, if it's enabled "
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
@@ -402,7 +452,8 @@ msgstr ""
 msgid "Apple Events"
 msgstr "Événements Apple"
 
-msgid "[3]_ Enable to allow app to send Apple events to other apps."
+#, fuzzy
+msgid "[4]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
 "[3]_ Activez pour permettre à l'application d'envoyer des événements Apple à "
 "d'autres applications."
@@ -410,8 +461,9 @@ msgstr ""
 msgid "Debugging"
 msgstr "Débogage"
 
+#, fuzzy
 msgid ""
-"[4]_ You can temporarily enable this entitlement to use native debugger "
+"[5]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
@@ -467,13 +519,13 @@ msgstr ""
 "Sandbox."
 
 msgid "Enabled"
-msgstr "Enabled"
+msgstr "Activé"
 
 msgid "Enables App Sandbox."
 msgstr "Active l'App Sandbox."
 
 msgid "Network Server"
-msgstr "Network Server"
+msgstr "Serveur réseau"
 
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
@@ -481,7 +533,7 @@ msgstr ""
 "réseau entrantes."
 
 msgid "Network Client"
-msgstr "Network Client"
+msgstr "Client réseau"
 
 msgid "Enable to allow app to establish outgoing network connections."
 msgstr ""
@@ -508,7 +560,8 @@ msgstr ""
 "Activer pour permettre à l'application d'interagir avec les périphériques "
 "Bluetooth. Ce droit est nécessaire pour utiliser les contrôleurs sans fil."
 
-msgid "Files Downloads [5]_"
+#, fuzzy
+msgid "Files Downloads [6]_"
 msgstr "Fichiers « Téléchargements » [5]_"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
@@ -516,7 +569,8 @@ msgstr ""
 "Autorise l'accès en lecture et écriture au dossier « Téléchargements » de "
 "l'utilisateur."
 
-msgid "Files Pictures [5]_"
+#, fuzzy
+msgid "Files Pictures [6]_"
 msgstr "Fichiers « Photos » [5]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
@@ -524,7 +578,8 @@ msgstr ""
 "Autorise l'accès en lecture et écriture au dossier « Photos » de "
 "l'utilisateur."
 
-msgid "Files Music [5]_"
+#, fuzzy
+msgid "Files Music [6]_"
 msgstr "Fichiers « Musique » [5]_"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
@@ -532,7 +587,8 @@ msgstr ""
 "Autorise l'accès en lecture et écriture au dossier « Musique » de "
 "l'utilisateur."
 
-msgid "Files Movies [5]_"
+#, fuzzy
+msgid "Files Movies [6]_"
 msgstr "Fichiers « Films » [5]_"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
@@ -540,7 +596,8 @@ msgstr ""
 "Autorise l'accès en lecture et écriture au dossier « Films » de "
 "l'utilisateur."
 
-msgid "Files User Selected [5]_"
+#, fuzzy
+msgid "Files User Selected [6]_"
 msgstr "Fichiers sélectionnés par l'utilisateur [5]_"
 
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,8 +135,15 @@ msgstr ""
 "有需要這兩種情況的話，則用 glTF 二進位檔即可。"
 
 msgid ""
-"Blender does not export emissive textures with the glTF file. If your model "
-"uses one, it must be brought in separately."
+"Blend shape animations cannot be imported - they require manual animation "
+"within Godot."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Blender versions older than 3.2 do not export emissive textures with the "
+"glTF file. If your model uses one and you're using an older version of "
+"Blender, it must be brought in separately."
 msgstr ""
 "Blender 匯出的 glTF 檔不包含放射紋理 (Emissive Texture)。若模型使用放射紋理，"
 "則必須分開匯入。"
@@ -288,7 +295,7 @@ msgid "Nodes"
 msgstr "節點"
 
 msgid "Root Type"
-msgstr "Root Type - 根型別"
+msgstr "根型別"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
@@ -296,19 +303,19 @@ msgid ""
 msgstr "預設情況下，匯入場景的根節點是「Spatial」，但可修改為不同型別。"
 
 msgid "Root Name"
-msgstr "Root Name - 根名稱"
+msgstr "根名稱"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr "可以指定產生的根節點名稱。"
 
 msgid "Root Scale"
-msgstr "Root Scale - 根縮放"
+msgstr "根縮放"
 
 msgid "The scale of the root node."
 msgstr "根節點的縮放 (Scale)。"
 
 msgid "Custom Script"
-msgstr "Custom Script - 自定腳本"
+msgstr "自訂腳本"
 
 msgid ""
 "A special script to process the whole scene after import can be provided. "
@@ -330,7 +337,7 @@ msgstr ""
 "須回傳最終要被使用的場景。回傳的可以是不同場景。"
 
 msgid "Storage"
-msgstr "Storage - 儲存"
+msgstr "儲存"
 
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
@@ -349,7 +356,7 @@ msgid "Materials"
 msgstr "材質"
 
 msgid "Location"
-msgstr "Location - 位置"
+msgstr "位置"
 
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
@@ -388,7 +395,7 @@ msgstr ""
 "Dock，並選擇 **Material > Storage** ，將 **Files** 改為 **Built-In**。"
 
 msgid "Keep On Reimport"
-msgstr "Keep On Reimport - 重新匯入時保留"
+msgstr "保持或重新匯入"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -399,10 +406,10 @@ msgstr ""
 "不會再匯入材質。該選項僅在材質保存為檔案時出現。"
 
 msgid "Meshes"
-msgstr "Meshes - 網格"
+msgstr "網格"
 
 msgid "Compress"
-msgstr "Compress - 壓縮"
+msgstr "壓縮"
 
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
@@ -487,7 +494,7 @@ msgstr ""
 "或是頂點不在應在的位置上。"
 
 msgid "Ensure Tangents"
-msgstr "Ensure Tangents - 確保切線"
+msgstr "確保切線"
 
 #, fuzzy
 msgid ""
@@ -513,7 +520,7 @@ msgid ""
 msgstr "該選項主要是提供給偏好直接處理網格而不是場景的使用者。"
 
 msgid "Light Baking"
-msgstr "Light Baking - 光照烘焙"
+msgstr "光照烘焙"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "即網格是否用於烘焙的光照圖中。"
@@ -535,7 +542,7 @@ msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr "更多有關光照烘焙的資訊，請參考 :ref:`doc_baked_lightmaps` 。"
 
 msgid "External Files"
-msgstr "External Files - 外部檔案"
+msgstr "額外檔案"
 
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
@@ -578,7 +585,7 @@ msgstr ""
 "樣子匯入，請設定編輯時用的 FPS。若未設定則可能導致動畫不穩定。"
 
 msgid "Filter Script"
-msgstr "Filter Script - 過濾腳本"
+msgstr "篩選腳本"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -667,7 +674,7 @@ msgstr ""
 "後，在動畫中新增的自定軌道也能被保留。"
 
 msgid "Optimizer"
-msgstr "Optimizer - 最佳化工具"
+msgstr "最佳化器"
 
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
@@ -678,7 +685,7 @@ msgstr ""
 "持開啟最佳化工具，除非遇到動畫疑似因為最佳化而損壞的情況。"
 
 msgid "Clips"
-msgstr "Clips - 剪輯"
+msgstr "動畫片段"
 
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
@@ -928,6 +935,5 @@ msgstr ""
 "在 Blender 中，需要使用 NLA 編輯器，並以 ``loop`` 或 ``cycle`` 前置或後置詞來"
 "命名動作。"
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

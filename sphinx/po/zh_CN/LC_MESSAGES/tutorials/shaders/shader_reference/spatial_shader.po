@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,109 +46,109 @@ msgid "**blend_mix**"
 msgstr "**blend_mix**"
 
 msgid "Mix blend mode (alpha is transparency), default."
-msgstr "混合混合模式(alpha是透明度), 默认."
+msgstr "混合混合模式（Alpha 为透明度），默认。"
 
 msgid "**blend_add**"
 msgstr "**blend_add**"
 
 msgid "Additive blend mode."
-msgstr "添加剂混合模式."
+msgstr "叠加混合模式。"
 
 msgid "**blend_sub**"
 msgstr "**blend_sub**"
 
 msgid "Subtractive blend mode."
-msgstr "减法混合模式."
+msgstr "减法混合模式。"
 
 msgid "**blend_mul**"
 msgstr "**blend_mul**"
 
 msgid "Multiplicative blend mode."
-msgstr "乘法混合模式."
+msgstr "乘法混合模式。"
 
 msgid "**depth_draw_opaque**"
 msgstr "**depth_draw_opaque**"
 
 msgid "Only draw depth for opaque geometry (not transparent)."
-msgstr "仅绘制不透明几何体的深度(不透明)."
+msgstr "仅绘制不透明几何体的深度（不透明）。"
 
 msgid "**depth_draw_always**"
 msgstr "**depth_draw_always**"
 
 msgid "Always draw depth (opaque and transparent)."
-msgstr "始终绘制深度(不透明和透明)."
+msgstr "始终绘制深度（不透明和透明）。"
 
 msgid "**depth_draw_never**"
 msgstr "**depth_draw_never**"
 
 msgid "Never draw depth."
-msgstr "永远不要画深度."
+msgstr "不绘制深度。"
 
 msgid "**depth_draw_alpha_prepass**"
 msgstr "**depth_draw_alpha_prepass**"
 
 msgid "Do opaque depth pre-pass for transparent geometry."
-msgstr "对透明几何体进行不透明的深度预传."
+msgstr "对透明几何体进行不透明的深度处理。"
 
 msgid "**depth_test_disable**"
 msgstr "**depth_test_disable**"
 
 msgid "Disable depth testing."
-msgstr "禁用深度测试."
+msgstr "禁用深度测试。"
 
 msgid "**cull_front**"
 msgstr "**cull_front**"
 
 msgid "Cull front-faces."
-msgstr "剔除正面."
+msgstr "剔除正面。"
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
 
 msgid "Cull back-faces (default)."
-msgstr "剔除背面(默认)."
+msgstr "剔除背面（默认）。"
 
 msgid "**cull_disabled**"
 msgstr "**cull_disabled**"
 
 msgid "Culling disabled (double sided)."
-msgstr "剔除禁用(双面)."
+msgstr "禁用剔除（双面）。"
 
 msgid "**unshaded**"
 msgstr "**unshaded**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
-msgstr "结果只是反射. 材质中不会发生照明/阴影."
+msgstr "结果只使用反照率。材质中不会发生照明/阴影。"
 
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
 msgid "Lambert shading for diffuse (default)."
-msgstr "漫反射的Lambert着色(默认)."
+msgstr "漫反射使用 Lambert 着色（默认）。"
 
 msgid "**diffuse_lambert_wrap**"
 msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
-msgstr "Lambert包(取决于粗糙度)用于漫射."
+msgstr "漫反射使用 Lambert 环绕（受粗糙度影响）。"
 
 msgid "**diffuse_oren_nayar**"
 msgstr "**diffuse_oren_nayar**"
 
 msgid "Oren Nayar for diffuse."
-msgstr "Oren Nayar弥漫."
+msgstr "漫反射使用 Oren Nayar。"
 
 msgid "**diffuse_burley**"
 msgstr "**diffuse_burley**"
 
 msgid "Burley (Disney PBS) for diffuse."
-msgstr "Burley(迪士尼PBS)弥漫."
+msgstr "漫反射使用 Burley（迪士尼 PBS）。"
 
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
 
 msgid "Toon shading for diffuse."
-msgstr "漫反射的Toon卡通着色。"
+msgstr "漫反射使用卡通着色。"
 
 msgid "**specular_schlick_ggx**"
 msgstr "**specular_schlick_ggx**"
@@ -184,31 +184,31 @@ msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
 
 msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
-msgstr "VERTEX/NORMAL/等. 需要在顶点函数中手动进行转换."
+msgstr "VERTEX/NORMAL 等需要在顶点函数中手动进行转换。"
 
 msgid "**world_vertex_coords**"
 msgstr "**world_vertex_coords**"
 
 msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
-msgstr "VERTEX/NORMAL/等. 是以世界坐标而不是局部坐标修改的."
+msgstr "VERTEX/NORMAL 等是以世界坐标而不是局部坐标修改的。"
 
 msgid "**ensure_correct_normals**"
 msgstr "**ensure_correct_normals**"
 
 msgid "Use when non-uniform scale is applied to mesh."
-msgstr "当对网格应用非均匀尺度时."
+msgstr "当对网格应用非均匀尺度时。"
 
 msgid "**vertex_lighting**"
 msgstr "**vertex_lighting**"
 
 msgid "Use vertex-based lighting."
-msgstr "使用基于顶点的照明."
+msgstr "使用基于顶点的照明。"
 
 msgid "**shadows_disabled**"
 msgstr "**specular_disabled**"
 
 msgid "Disable computing shadows in shader."
-msgstr "在着色器中禁用阴影计算."
+msgstr "在着色器中禁用阴影计算。"
 
 msgid "**ambient_light_disabled**"
 msgstr "**ambient_light_disabled**"
@@ -440,6 +440,14 @@ msgstr "in vec4 **INSTANCE_CUSTOM**"
 msgid "Instance custom data (for particles, mostly)."
 msgstr "实例自定义数据(主要用于粒子)."
 
+msgid ""
+"``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and "
+"``INV_CAMERA_MATRIX`` and is better suited when floating point issues may "
+"arise. For example, if the object is very far away from the world origin, "
+"you may run into floating point issues when using the seperated "
+"``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
+msgstr ""
+
 msgid "Fragment built-ins"
 msgstr "片段内置"
 
@@ -452,6 +460,15 @@ msgid ""
 msgstr ""
 "Godot片段处理器函数的默认用法是设置对象的材质属性, 并让内置渲染器处理最终的阴"
 "影. 但是, 你无需使用所有这些属性, 如果你不写入它们,Godot将优化掉相应的功能."
+
+msgid "Below are examples of common variables calculated using the built-ins:"
+msgstr ""
+
+msgid ""
+"A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
+"origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
+"``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
+msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
@@ -720,6 +737,12 @@ msgid ""
 msgstr ""
 "如果你想把这些光照加在一起，请使用 ``+=`` 运算符将光线添加到 "
 "``DIFFUSE_LIGHT`` 函数中，不要覆盖它。"
+
+msgid ""
+"In GLES2, lights will always be added together even if you override "
+"``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
+"multiple passes (one for each light), unlike GLES3."
+msgstr ""
 
 msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,6 +93,12 @@ msgstr ""
 "Godot는 오토로드를 싱글톤 디자인 패턴에 따르는 \"진정한\" 싱글톤으로 만들지 "
 "않습니다. 원한다면 사용자가 두 번 이상 인스턴스화할 수 있습니다."
 
+msgid ""
+"If you're creating an autoload as part of an editor plugin, consider :ref:"
+"`registering it automatically in the Project Settings "
+"<doc_making_plugins_autoload>` when the plugin is enabled."
+msgstr ""
+
 msgid "AutoLoad"
 msgstr "오토로드"
 
@@ -152,6 +158,11 @@ msgstr ""
 "오토로드 오브젝트(스크립트 및/또는 씬)는 씬 트리의 다른 노드와 마찬가지 방식"
 "으로 접근할 수 있습니다. 실제로 실행 중인 씬 트리를 보면 오토로드된 노드가 나"
 "타난 것을 볼 수 있습니다:"
+
+msgid ""
+"Autoloads must **not** be removed using ``free()`` or ``queue_free()`` at "
+"runtime, or the engine will crash."
+msgstr ""
 
 msgid "Custom scene switcher"
 msgstr "커스텀 씬 전환기"

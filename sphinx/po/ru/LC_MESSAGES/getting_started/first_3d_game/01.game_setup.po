@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,9 @@ msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
 "There, you will find the art assets and music we'll use in the game."
 msgstr ""
+"Начальный проект содержит иконку и две папки: ``art/`` and ``fonts/``. В них "
+"Вы найдёте инструменты для рисования и музыки, которые мы будем использовать "
+"в игре."
 
 msgid "|image4|"
 msgstr "|image4|"
@@ -93,11 +96,14 @@ msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
 "belong to these models, and a music track."
 msgstr ""
+"Здесь имеются две 3D-модели ``player.glb`` and ``mob.glb``, некоторые "
+"материалы, которые принадлежат этим моделям, и музыкальный трек."
 
 #, fuzzy
 msgid "Setting up the playable area"
 msgstr "Настройка вашего проекта"
 
+#, fuzzy
 msgid ""
 "We're going to create our main scene with a plain *Node* as its root. In the "
 "*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
@@ -105,6 +111,11 @@ msgid ""
 "to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
 "on macOS)."
 msgstr ""
+"Мы собираемся создать нашу главную сцену с помощью простого *Узла*, как его "
+"root. В панели *Сцена* нажмите на кнопку *Добавить Узел*, представленную в "
+"виде иконки \"+\" в верхнем левом углу и дважды нажмите на *Узел*. Назовите "
+"узел \"Главный\". Либо же добавьте узел к сцене, Вы можете нажать :kbd:`Ctrl "
+"+ a` (или :kbd:`Cmd + a` на macOS)."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -128,44 +139,55 @@ msgid ""
 "collision area. With the *Main* node selected, add a *StaticBody* node, then "
 "a *CollisionShape*. Rename the *StaticBody* as *Ground*."
 msgstr ""
+"Мы начнём с добавления пола, который предотвратит игроков от падения. Чтобы "
+"создать такие статические коллайдеры, как пол, стены или потолок, Вы можете "
+"использовать узлы *StaticBody*. Им необходимы дочерние узлы "
+"*CollisionShape*, чтобы определить область столкновения. С помощью "
+"выбранного узла *Main* добавьте узел *StaticBody*, затем *CollisionShape*. "
+"Переименуйте *StaticBody* как *Ground*."
 
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 msgid ""
 "A warning sign next to the *CollisionShape* appears because we haven't "
 "defined its shape. If you click the icon, a popup appears to give you more "
 "information."
 msgstr ""
+"Предупреждающая надпись рядом с *CollisionShape* появляется, потому что мы "
+"не определились с формой. Если Вы нажмёте на иконку, появится всплывающее "
+"окно, которое предоставит Вам больше информации."
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
+#, fuzzy
 msgid ""
 "To create a shape, with the *CollisionShape* selected, head to the "
 "*Inspector* and click the *[empty]* field next to the *Shape* property. "
 "Create a new *Box Shape*."
 msgstr ""
+"Чтобы создать фигуру с выбранным *CollisionShape*, откройте *Inspector* и "
+"нажмите на поле *[empty]* рядом с параметрами *Shape*"
 
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
 "reliable to block even fast-moving objects."
 msgstr ""
+"Форма коробки идеальна для плоской поверхности и стен. Её толщина делает её "
+"надёжной в качестве преграды для быстро двигающихся объектов."
 
 msgid ""
 "A box's wireframe appears in the viewport with three orange dots. You can "
@@ -174,108 +196,137 @@ msgid ""
 "the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y "
 "axis, and ``30`` for the Z axis."
 msgstr ""
+"Каркас коробки появляется в окне просмотра с тремя оранжевыми точками. Вы "
+"можете нажать на них и перетащить для того, чтобы отредактировать экстенты "
+"фигуры в интерактивном режиме. Мы также можем с точностью настроить масштаб "
+"в инспекторе. Нажмите на *BoxShape*, чтобы расширить источник. Установите её "
+"*Extents* на ``30`` по оси X , ``1`` по оси Y, и на ``30`` по оси Z."
 
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
+#, fuzzy
 msgid ""
 "In 3D, translation and size units are in meters. The box's total size is "
 "twice its extents: ``60`` by ``60`` meters on the ground plane and ``2`` "
 "units tall. The ground plane is defined by the X and Z axes, while the Y "
 "axis represents the height."
 msgstr ""
+"В 3D все единицы измерения употребляются в метрах. Общий размер коробки в "
+"два раза превышает размеры её экстентов: ``60`` к ``60`` метрам на плоской "
+"поверхности и ``2``единицы в высоту. Плоская поверхность определена осями X "
+"и Y, в то время как ось Y определяет высоту."
 
+#, fuzzy
 msgid ""
 "Collision shapes are invisible. We need to add a visual floor that goes "
 "along with it. Select the *Ground* node and add a *MeshInstance* as its "
 "child."
 msgstr ""
+"Фигуры столкновения являются невидимыми. Нам необходимо добавить видимый "
+"пол, который сочетается с ними. Выберите узел *Ground* и добавьте "
+"*MeshInstance*, как его дочерний узел."
 
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "In the *Inspector*, click on the field next to *Mesh* and create a "
 "*CubeMesh* resource to create a visible cube."
 msgstr ""
+"Нажмите на поле *Mesh* в *Inspector* и создайте источник *CubeMesh*, чтобы "
+"сделать видимый куб."
 
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
+#, fuzzy
 msgid ""
 "Once again, it's too small by default. Click the cube icon to expand the "
 "resource and set its *Size* to ``60``, ``2``, and ``60``. As the cube "
 "resource works with a size rather than extents, we need to use these values "
 "so it matches our collision shape."
 msgstr ""
+"Ещё раз, он слишком мал по умолчанию. Нажмите на иконку куба, чтобы "
+"расширить ресурс и установите его *Size* на ``60``, ``2``, и ``60``. Так как "
+"ресурс куба работает с размером, а не с экстентами, нам необходимо "
+"использовать эти объёмы так, чтобы они совпали с нашими фигурами "
+"столкновения."
 
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
 "in the viewport."
 msgstr ""
+"Вы должны видеть широкую серую панель, которая покрывает сетку, и синие с "
+"красными оси в окне просмотра."
 
+#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. Select the "
 "*Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:"
 "`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
 "in the move gizmo."
 msgstr ""
+"Мы собираемся переместить поверхность вниз, чтобы мы могли видеть сетку "
+"пола. Выберите узел *Ground*, зажмите клавишу :kbd:`Ctrl`, чтобы повернуть "
+"сетку, щелкая по кнопке (:kbd:`Cmd` на macOS), нажмите и перетащите вниз на "
+"ось Y. Это зелёная стрелка в движении гизмо."
 
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
 "the *Select Mode* is active in the toolbar above the view."
 msgstr ""
+"Если Вы не видите манипулятор 3D-объектов, как на картинке сверху, убедитесь "
+"в том, что *Select Mode* находится в активном состоянии на панели "
+"инструментов сверху."
 
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
 "viewport tells you how much you're translating the node."
 msgstr ""
+"Переместите поверхность вниз на ``1`` метр. Ярлык в нижнем левом углу окна "
+"просмотра говорит Вам о том, насколько Вы преобразуете узел."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "image15"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
 "move the *Ground* node, **not** the *MeshInstance* or the *CollisionShape*."
 msgstr ""
+"Перемещение узла *Ground* вниз сдвигает оба дочерних узла вместе с ним. "
+"Убедитесь в том, что Вы перемещаете узел *Ground*, а не *MeshInstance* or "
+"the *CollisionShape*."
 
 msgid ""
 "Let's add a directional light so our scene isn't all grey. Select the *Main* "
@@ -284,34 +335,37 @@ msgid ""
 "arrow and click and drag on the red arc to rotate it around the X axis, "
 "until the ground is lit."
 msgstr ""
+"Давайте добавим направленный свет так, чтобы наша сцена не была полностью "
+"серой. Выберите узел *Main* и добавьте *DirectionalLight*, как его дочерний "
+"узел. Нам необходимо передвинуть и провернуть его. Переместите его вверх, "
+"нажав и перетащив зелёную стрелку манипулятора на красную арку и прокрутив "
+"ее вокруг оси X, до тех пор пока поверхность не будет освещена."
 
 msgid ""
 "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
-msgstr ""
+msgstr "В *Inspector* включите *Shadow -> Enabled*, нажав на переключатель."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "image16"
 
 msgid "At this point, your project should look like this."
 msgstr "На данном этапе ваш проект должен выглядеть следующим образом."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "
 "scene and base movement."
 msgstr ""
+"Это наш отправной пункт. В следующей части мы будем работать с сценой игрока "
+"и основами передвижений."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

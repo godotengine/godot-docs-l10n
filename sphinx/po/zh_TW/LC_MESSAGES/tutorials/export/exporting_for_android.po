@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,16 @@ msgid ""
 msgstr ""
 "匯出至 Android 的需求比為 Android 編譯 Godot 還來得少。下列為設定 SDK 與 "
 "Godot 所需的詳細步驟。"
+
+#, fuzzy
+msgid "Install OpenJDK 11"
+msgstr "安裝 OpenJDK"
+
+#, fuzzy
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
+msgstr "下載並安裝 `OpenJDK <https://adoptopenjdk.net/index.html`__ 。"
 
 msgid "Download the Android SDK"
 msgstr "下載 Android SDK"
@@ -70,7 +80,7 @@ msgid "Android SDK Build-Tools version 30.0.3"
 msgstr ""
 
 #, fuzzy
-msgid "Android SDK Platform 29"
+msgid "Android SDK Platform 31"
 msgstr "\\ Android SDK Platform"
 
 #, fuzzy
@@ -80,7 +90,7 @@ msgstr "安裝 Android SDK (命令行版本)"
 msgid "CMake version 3.10.2.4988404"
 msgstr ""
 
-msgid "NDK version 21.4.7075529"
+msgid "NDK version r23c (23.2.8568313)"
 msgstr ""
 
 msgid ""
@@ -102,16 +112,6 @@ msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
-
-#, fuzzy
-msgid "Install OpenJDK 11"
-msgstr "安裝 OpenJDK"
-
-#, fuzzy
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
-msgstr "下載並安裝 `OpenJDK <https://adoptopenjdk.net/index.html`__ 。"
 
 msgid "Create a debug.keystore"
 msgstr "建立 debug.keystore"
@@ -384,6 +384,5 @@ msgid ""
 "information."
 msgstr ""
 
-#, fuzzy
 msgid "Translation status"
-msgstr "翻譯格式"
+msgstr "翻譯狀態"

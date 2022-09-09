@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,9 +24,10 @@ msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
 "이 페이지의 목표는 현재 Godot가 지원하는 모든 기능을 나열하는 것입니다."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -147,6 +148,9 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
 "에디터 안에서 카메라를 움직여 프로젝트 실행 중에 결과를 볼 수 있습니다."
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "커뮤니티 참여로 지원되는 수십 가지 언어로 에디터를 사용할 수 있습니다."
 
@@ -160,18 +164,13 @@ msgstr ""
 "에디터 기능 확장을 위한 플러그인은 :ref:`애셋 라이브러리 "
 "<doc_what_is_assetlib>`\\ 에서 다운로드받을 수 있습니다."
 
+#, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
 msgstr ""
 "새로운 플러그인을 추가하기 위해 GDScript를 사용하여 :ref:`자신의 플러그인 생"
 "성 <doc_making_plugins>`"
-
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr ""
-"프로젝트 매니저의 애셋 라이브러리에서 프로젝트를 다운로드하고 직접 가져옵니"
-"다. 기능을 제공하거나 워크플로 속도를 높일 수 있습니다."
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
@@ -212,7 +211,7 @@ msgid "Parallax layers."
 msgstr "패럴랙스 레이어."
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Pseudo-3D지원 (에디터 시점 포함)"
 
 msgid "2D lighting with normal maps."
 msgstr "노멀 맵을 통한 2D 라이팅."
@@ -230,9 +229,10 @@ msgstr ""
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr "비트맵 글꼴은 BMFont와 같은 툴로 내보낼 수 있습니다."
 
+#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont는 색상이 있는 글꼴 (예: 이모지(emoji)) 뿐만 아니라 흑백 글꼴도 지"
 "원합니다. TTF와 OTF 형식을 지원합니다."
@@ -531,22 +531,6 @@ msgstr "**포스트 프로세싱**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "톤 매핑(선형, Reinhard, 필름, ACES)."
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr "*GLES3:* 뷰포트 밝기에 기초한 자동 노출 보정."
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "*GLES3:* 가깝거나 먼 피사계 심도(DOF: Depth Of Field)."
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* 스크린 공간 앰비언트 어클루전(ambient occlusion)."
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-"*GLES3:* 컬러 밴딩(color banding)을 피하기 위한 디밴딩(HDR 렌더링이 활성화된 "
-"경우 효과적입니다)."
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -559,6 +543,23 @@ msgstr "1차원 램프를 사용한 색상 교정."
 
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "밝기, 대비 및 채도 조정."
+
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr "*GLES3:* 뷰포트 밝기에 기초한 자동 노출 보정."
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "*GLES3:* 가깝거나 먼 피사계 심도(DOF: Depth Of Field)."
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "*GLES3:* 스크린 공간 앰비언트 어클루전(ambient occlusion)."
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
+"*GLES3:* 컬러 밴딩(color banding)을 피하기 위한 디밴딩(HDR 렌더링이 활성화된 "
+"경우 효과적입니다)."
 
 msgid "**Texture filtering:**"
 msgstr "**텍스처 필터링:**"
@@ -603,8 +604,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 
 msgid ""
@@ -792,6 +794,20 @@ msgid ""
 "community."
 msgstr "커뮤니티에 의해 유지되는 D, Kotlin, Python, Nim, Rust 바인딩."
 
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
+
 msgid "Audio"
 msgstr "오디오"
 
@@ -891,6 +907,9 @@ msgid ""
 "tangents on import, which ensures consistency with other 3D applications "
 "such as Blender."
 msgstr ""
+"3D 메시는 `Mikktspace <http://www.mikktspace.com/>`__를 사용하여 임포트 시 탄"
+"젠트를 생성하고, 블렌더(Blender)와 같은 3D 어플리케이션과의 일관성을 확보합니"
+"다."
 
 msgid "Input"
 msgstr "입력"
@@ -953,13 +972,13 @@ msgstr "네비게이션"
 msgid "A* algorithm in 2D and 3D."
 msgstr "2D와 3D에서의 A* 알고리즘."
 
-msgid "Navigation meshes."
-msgstr "네비게이션 메시."
+msgid "Navigation meshes with dynamic obstacle avoidance."
+msgstr ""
 
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr "동적 장애물 회피 기능은 Godot 4.0에서 지원할 예정."
-
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "에디터에서 네비게이션 메시 생성."
 
 msgid "Networking"

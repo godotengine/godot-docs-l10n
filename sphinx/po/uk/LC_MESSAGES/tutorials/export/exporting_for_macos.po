@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,12 @@ msgstr ""
 "хочете замість цього скомпілювати редактор, або експортувати шаблони "
 "бінарних файлів з джерела, прочитайте :ref:`doc_compiling_for_osx`."
 
+#, fuzzy
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
 "structure which stores the executable, libraries and all the project files. "
-"This bundle is packed in a ZIP archive or DMG disk image (only supported "
-"when exporting for macOS)."
+"This bundle can be exported as is, packed in a ZIP archive or DMG disk image "
+"(only supported when exporting from a computer running macOS)."
 msgstr ""
 "Програми macOS експортуються як пакет ``.app``, це тека з певною структурою, "
 "яка зберігає виконуваний файл, бібліотеки та всі файли проекту. Цей пакет "
@@ -43,13 +44,18 @@ msgstr ""
 msgid "Requirements"
 msgstr "Вимоги"
 
+#, fuzzy
 msgid ""
-"To enable code signing and notarization, you must export from a computer "
-"running macOS with Xcode command line tools installed."
+"To enable code signing with Apple Developer ID and notarization, you must "
+"export from a computer running macOS with Xcode command line tools installed."
 msgstr ""
 "Щоб увімкнути підписи та нотаріальне засвідчення коду, ви повинні виконувати "
 "експорт з комп’ютера під керуванням macOS із встановленими інструментами "
 "командного рядка Xcode."
+
+msgid ""
+"Ad-hoc code signing is supported on all platforms, without additional tools."
+msgstr ""
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -57,6 +63,11 @@ msgid ""
 msgstr ""
 "Завантаження шаблонів експорту Godot. Використовуйте меню Godot: **Редактор> "
 "Керування шаблонами експортування**."
+
+msgid ""
+"A valid and unique ``Bundle identifier`` should be set in the "
+"``Application`` section of the export options."
+msgstr ""
 
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
@@ -72,9 +83,10 @@ msgstr ""
 msgid "Code signing and notarization"
 msgstr "Підпис та нотаріальне засвідчення коду"
 
+#, fuzzy
 msgid ""
-"By default, macOS will run only applications that are signed and notarized, "
-"if you use any other signing configuration see :ref:`Running Godot apps on "
+"By default, macOS will run only applications that are signed and notarized. "
+"If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
 "За замовчуванням macOS запускатиме лише підписані та нотаріально завірені "
@@ -82,15 +94,25 @@ msgstr ""
 "обхідний шлях на сторінці :ref:`Запуск додатків Godot на macOS "
 "<doc_running_on_macos>`."
 
+#, fuzzy
 msgid ""
-"To notarize an app you mast have a valid `Apple Developer ID Certificate "
-"<https://developer.apple.com/>`__."
+"To notarize an app, you **must** have a valid `Apple Developer ID "
+"Certificate <https://developer.apple.com/>`__."
 msgstr ""
 "Щоб нотаріально засвідчити додаток, ви повинні мати дійсний `Сертифікат "
 "Apple Developer ID <https://developer.apple.com/>`__."
 
 msgid "If you have an Apple Developer ID Certificate"
 msgstr "Якщо у вас є сертифікат Apple Developer ID"
+
+#, fuzzy
+msgid ""
+"Export your project from a computer running macOS with Xcode command line "
+"tools installed."
+msgstr ""
+"Щоб увімкнути підписи та нотаріальне засвідчення коду, ви повинні виконувати "
+"експорт з комп’ютера під керуванням macOS із встановленими інструментами "
+"командного рядка Xcode."
 
 msgid ""
 "Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
@@ -143,10 +165,13 @@ msgstr ""
 msgid "If you do not have an Apple Developer ID Certificate"
 msgstr "Якщо у вас немає сертифіката Apple Developer ID"
 
+#, fuzzy
 msgid ""
-"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty, in "
-"this case Godot will use a ad-hoc signature, which will make running an "
-"exported app easier for the end users."
+"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty (when "
+"exporting from a computer running macOS, on other platforms this option is "
+"hidden). In this case Godot will use a ad-hoc signature, which will make "
+"running an exported app easier for the end users, see the :ref:`Running "
+"Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 "Залиште ``Code Signing`` увімкненим і ``Identity`` пустим, у цьому випадку "
 "Godot буде використовувати спеціальний підпис, що полегшить для кінцевих "
@@ -170,9 +195,10 @@ msgstr "Вмикає підписування коду."
 msgid "Identity"
 msgstr "Профіль"
 
+#, fuzzy
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
-"macOS key chain. [1]_"
+"macOS keychain. [1]_ [2]_"
 msgstr ""
 "\"Повне ім'я\", або \"Загальне ім'я\", посвідчення підпису, зберігаються в "
 "ланцюжку ключів macOS. [1]_"
@@ -180,9 +206,10 @@ msgstr ""
 msgid "Timestamp"
 msgstr "Часова позначка"
 
+#, fuzzy
 msgid ""
 "Requests a timestamp server to authenticate the time of signing. Required "
-"for notarization."
+"for notarization. [2]_"
 msgstr ""
 "Запит на сервер часової позначки для автентифікації часу на час підписання. "
 "Необхідний для нотаріального засвідчення."
@@ -190,7 +217,8 @@ msgstr ""
 msgid "Hardened Runtime"
 msgstr "Стійке середовище виконання"
 
-msgid "Enables \"Hardened Runtime\". Required for notarization."
+#, fuzzy
+msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
 msgstr "Вмикає \"Hardened Runtime\". Необхідний для нотаріального посвідчення."
 
 msgid "Replace Existing Signature"
@@ -209,10 +237,19 @@ msgid ""
 msgstr ""
 "Для засвідчення ви повинні увімкнути ``Hardened Runtime`` та ``Timestamp``."
 
+msgid ""
+"The ``Hardened Runtime`` and ``Timestamp`` options are incompatible with ad-"
+"hoc signing and will be ignored."
+msgstr ""
+
 msgid "Leave ``Identity`` option empty to use ad-hoc signature."
 msgstr ""
 "Залиште параметр ``Identity`` порожнім, щоб використовувати спеціальний "
 "підпис."
+
+msgid ""
+"This option is visible only when exporting from a computer running macOS."
+msgstr ""
 
 msgid "Notarization Options"
 msgstr "Параметри нотаріального засвідчення"
@@ -241,7 +278,8 @@ msgstr ""
 msgid "Apple Team ID"
 msgstr ""
 
-msgid "Team ID if your Apple ID belongs to multiple teams"
+#, fuzzy
+msgid "Team ID, if your Apple ID belongs to multiple teams"
 msgstr "Ідентифікатор команди, якщо ваш Apple ID належить кільком командам"
 
 msgid ""
@@ -253,6 +291,11 @@ msgstr ""
 "забезпечення macOS перед розповсюдженням <https://developer.apple.com/"
 "documentation/security/notarizing_macos_software_before_distribution?"
 "language=objc>`__."
+
+msgid ""
+"Notarization is supported when exporting from a computer running macOS, "
+"these options are hidden on other platforms."
+msgstr ""
 
 msgid "Entitlements"
 msgstr "Права"
@@ -273,7 +316,8 @@ msgstr ""
 msgid "Entitlement"
 msgstr "Дозволи"
 
-msgid "Allow JIT Code Execution [2]_"
+#, fuzzy
+msgid "Allow JIT Code Execution [3]_"
 msgstr "Дозволити виконання коду JIT [2]_"
 
 msgid ""
@@ -285,7 +329,8 @@ msgstr ""
 "використовуються додаткові компоненти з динамічним, або само-змінюваним, "
 "рідним кодом, увімкніть їх відповідно до додаткової документації."
 
-msgid "Allow Unsigned Executable Memory [2]_"
+#, fuzzy
+msgid "Allow Unsigned Executable Memory [3]_"
 msgstr "Дозволити Unsigned Executable Memory [2]_"
 
 msgid ""
@@ -297,7 +342,8 @@ msgstr ""
 "Якщо використовуються додаткові компоненти з динамічним або само-змінюваним "
 "рідним кодом, увімкніть їх відповідно до додаткової документації."
 
-msgid "Allow DYLD Environment Variables [2]_"
+#, fuzzy
+msgid "Allow DYLD Environment Variables [3]_"
 msgstr "Дозволити DYLD Environment Variables [2]_"
 
 msgid ""
@@ -361,8 +407,9 @@ msgstr ""
 msgid "Address Book"
 msgstr "Адресна книга"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access contacts in the user's address book, if it's "
+"[4]_ Enable to allow access contacts in the user's address book, if it's "
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
@@ -373,8 +420,9 @@ msgstr ""
 msgid "Calendars"
 msgstr "Календарі"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access to the user's calendar, if it's enabled you "
+"[4]_ Enable to allow access to the user's calendar, if it's enabled you "
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
@@ -383,29 +431,32 @@ msgstr ""
 "параметрі `privacy/calendar_usage_description`."
 
 msgid "Photo Library"
-msgstr "Бібліотека фото"
+msgstr "Бібліотека світлин"
 
+#, fuzzy
 msgid ""
-"[3]_ Enable to allow access to the user's Photos library, if it's enabled "
+"[4]_ Enable to allow access to the user's Photos library, if it's enabled "
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
-"[3]_ Увімкніть, щоб дозволити доступ до бібліотеки фотографій користувача, "
-"якщо він включений, ви також повинні надати повідомлення про використання в "
-"параметрі `privacy/photos_library_usage_description`."
+"[3]_ Увімкніть, щоб дозволити доступ до бібліотеки світлин користувача, якщо "
+"ввімкнено, ви також повинні надати повідомлення про використання в параметрі "
+"`privacy/photos_library_usage_description`."
 
 msgid "Apple Events"
 msgstr "Події Apple"
 
-msgid "[3]_ Enable to allow app to send Apple events to other apps."
+#, fuzzy
+msgid "[4]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
 "[3]_ Увімкніть, щоб дозволити програмі надсилати події Apple в інші програми."
 
 msgid "Debugging"
 msgstr "Діагностика"
 
+#, fuzzy
 msgid ""
-"[4]_ You can temporarily enable this entitlement to use native debugger "
+"[5]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
@@ -497,32 +548,37 @@ msgstr ""
 "Увімкніть, щоб дозволити програмі взаємодіяти з пристроями Bluetooth. Цей "
 "дозвіл необхідний для використання бездротових контролерів."
 
-msgid "Files Downloads [5]_"
+#, fuzzy
+msgid "Files Downloads [6]_"
 msgstr "Завантаження файлів [5]_"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 "Надає доступ для читання, або запису, папки користувача \"Завантаження\"."
 
-msgid "Files Pictures [5]_"
+#, fuzzy
+msgid "Files Pictures [6]_"
 msgstr "Файли Зображень [5]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr "Дозволяє читати, або записувати, папку користувача \"Зображення\"."
 
-msgid "Files Music [5]_"
+#, fuzzy
+msgid "Files Music [6]_"
 msgstr "Файли Музики [5]_"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr "Дозволяє читати, або записувати, папку користувача \"Музика\"."
 
-msgid "Files Movies [5]_"
+#, fuzzy
+msgid "Files Movies [6]_"
 msgstr "Файли фільмів [5]_"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr "Дозволяє читати, або записувати, папку користувача \"Фільми\"."
 
-msgid "Files User Selected [5]_"
+#, fuzzy
+msgid "Files User Selected [6]_"
 msgstr "Файли вибрані користувачем [5]_"
 
 msgid ""

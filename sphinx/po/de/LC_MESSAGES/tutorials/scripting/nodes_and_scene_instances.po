@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,8 @@ msgid ""
 "reference to the Sprite and Camera2D nodes to access them in your script."
 msgstr ""
 
-#, fuzzy
 msgid "To do so, you can use the following code."
-msgstr "Führen Sie folgenden Code aus, um ein Interface zu aktivieren:"
+msgstr "Dazu kannst du den folgenden Code verwenden."
 
 msgid ""
 "Note that you get nodes using their name, not their type. Above, \"Sprite\" "
@@ -71,9 +70,9 @@ msgid ""
 "UserInterface node."
 msgstr ""
 
-#, fuzzy
 msgid "To get the Tween node, you would use the following code."
-msgstr "Führen Sie folgenden Code aus, um ein Interface zu aktivieren:"
+msgstr ""
+"Um den Tween-Knoten zu erhalten, müssen Sie den folgenden Code verwenden."
 
 msgid ""
 "As with file paths, you can use \"..\" to get a parent node. The best "
@@ -100,13 +99,12 @@ msgstr ""
 msgid "Creating nodes"
 msgstr "Nodes erstellen"
 
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
-"Um einen Node im Code zu erstellen, rufe die Methode ``.new()`` auf, genau "
-"wie für jeden anderen klassenbasierten Datentyp auch. Zum Beispiel:"
+"Um einen Node im Code zu erstellen, rufe die Methode ``new()`` auf, genau "
+"wie für jeden anderen klassenbasierten Datentyp auch."
 
 msgid ""
 "You can store the newly created node's reference in a variable and call "
@@ -171,7 +169,6 @@ msgid ""
 "is only available with GDScript."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "At that point, ``scene`` is a packed scene resource, not a node. To create "
 "the actual node, you need to call :ref:`PackedScene.instance() "
@@ -181,8 +178,8 @@ msgstr ""
 "``scene`` ist noch kein Node. Er ist in einer speziellen Ressource verpackt :"
 "ref:`PackedScene <class_PackedScene>`. Um den tatsächlichen Node zu "
 "erstellen, muss die Funktion :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>` aufgerufen werden. Dies gibt die "
-"Struktur der Nodes zurück, die der aktiven Szene hinzugefügt werden können:"
+"<class_PackedScene_method_instance>` aufgerufen werden. Es gibt einen Baum "
+"von Knoten zurück, die Sie als Kind des aktuellen Knotens verwenden können."
 
 #, fuzzy
 msgid ""

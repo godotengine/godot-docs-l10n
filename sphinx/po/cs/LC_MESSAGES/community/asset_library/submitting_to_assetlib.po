@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,8 +43,9 @@ msgid ""
 "requirements, and also consider following the recommendations."
 msgstr ""
 
+#, fuzzy
 msgid "Requirements"
-msgstr ""
+msgstr "Nároky"
 
 msgid ""
 "Generally speaking, most assets people submit to the asset library are "
@@ -129,13 +130,15 @@ msgid ""
 "giving extra instructions to Git, such as specifying line endings and "
 "listing files not required for your asset to function with the ``export-"
 "ignore`` directive. This directive removes such files from the resulting ZIP "
-"file and prevents them from being downloaded by the asset library users. For "
-"a typical plugin **.gitattributes** may look like this:"
+"file, preventing them from being downloaded by the asset library users. "
+"These are common examples of **.gitattributes**:"
 msgstr ""
 
-msgid ""
-"Other types of assets may require a different configuration (e.g. a project "
-"template requires **project.godot**)."
+#, fuzzy
+msgid "Projects / Templates"
+msgstr "Vyhledání šablon"
+
+msgid "Addons / Asset Packs"
 msgstr ""
 
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,8 +95,16 @@ msgstr ""
 "Die Platzhalter in jedem Textfeld beschreiben wie die Erstellung der Dateien "
 "und der Konfiguration-Werte des Plugins beeinflusst werden."
 
-msgid "To continue with the example, use the following values::"
+#, fuzzy
+msgid "To continue with the example, use the following values:"
 msgstr "Um mit dem Beispiel fortzufahren nutze die folgenden Werte:"
+
+msgid ""
+"Unchecking the ``Activate now?`` option in C# is always required because, "
+"like every other C# script, the EditorPlugin script needs to be compiled "
+"which requires building the project. After building the project the plugin "
+"can be enabled in the ``Plugins`` tab of ``Project Settings``."
+msgstr ""
 
 msgid "You should end up with a directory structure like this:"
 msgstr "Die Verzeichnisstruktur sollte am Ende so aussehen:"
@@ -334,6 +342,28 @@ msgstr ""
 "Sie können Ihre eigenen Plugins erstellen, um sich selbst zu helfen, und "
 "diese in der Bestandsbibliothek <https://godotengine.org/asset-library/> "
 "freigeben, damit die Benutzer von Ihrer Arbeit profitieren können."
+
+#, fuzzy
+msgid "Registering autoloads/singletons in plugins"
+msgstr "registrieren und einloggen"
+
+msgid ""
+"It is possible for editor plugins to automatically register :ref:`autoloads "
+"<doc_singletons_autoload>` when the plugin is enabled. This also includes "
+"unregistering the autoload when the plugin is disabled."
+msgstr ""
+
+msgid ""
+"This makes setting up plugins faster for users, as they no longer have to "
+"manually add autoloads to their project settings if your editor plugin "
+"requires the use of an autoload."
+msgstr ""
+
+#, fuzzy
+msgid "Use the following code to register a singleton from an editor plugin:"
+msgstr ""
+"Mit den folgenden Befehlen können Sie die generierten Exportvorlagen "
+"entfernen:"
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

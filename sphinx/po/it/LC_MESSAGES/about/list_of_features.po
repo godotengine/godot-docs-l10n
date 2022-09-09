@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,10 @@ msgstr ""
 "Questa pagina ha lo scopo di elencare tutte le funzionalità attualmente "
 "supportate da Godot."
 
+#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
-"(3.4). `More features <https://docs.godotengine.org/en/latest/about/"
+"(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
@@ -153,6 +154,9 @@ msgstr ""
 "Spostare la telecamera dell'editor e vedi il risultato nel progetto in "
 "esecuzione."
 
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Usa l'editor in svariate lingue fornite dalla community."
 
@@ -166,19 +170,13 @@ msgstr ""
 "I plug-in dell'editor possono essere scaricati da: ref: `Libreria dei "
 "Contenuti <doc_what_is_assetlib>` per estenderne le funzionalità."
 
+#, fuzzy
 msgid ""
-":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
 msgstr ""
 ":ref:`Crea i tuoi plugin <doc_making_plugins>` usando GDScript per "
 "aggiungerne di nuovi"
-
-#, fuzzy
-msgid ""
-"Download projects from the asset library in the project manager and import "
-"them directly. features or speed up your workflow."
-msgstr ""
-"Scarica i progetti dalla libreria dei Contenuti nel project manager e "
-"importali direttamente. funzionalità o velocizza il tuo flusso di lavoro."
 
 #, fuzzy
 msgid ""
@@ -242,9 +240,10 @@ msgstr ""
 "I caratteri bitmap possono essere esportati utilizzando strumenti come "
 "BMFont."
 
+#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
-"emoji). Supported formats are TTF, OTF and WOFF1."
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont supporta sia font monocromatici che colorati (ad esempio per le "
 "emoji). I formati supportati sono TTF, OTF e WOFF1."
@@ -587,24 +586,6 @@ msgstr "**Post-elaborazione:**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Tonemapping (Lineare, Reinhard, Filmico, ACES)."
 
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
-"*GLES3:* Regolazione automatica dell'esposizione in base alla luminosità "
-"della finestra di visualizzazione."
-
-msgid "*GLES3:* Near and far depth of field."
-msgstr "*GLES3:* Profondità di campo vicina e lontana."
-
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* Occlusione ambientale dello spazio dello schermo."
-
-msgid ""
-"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
-"rendering is enabled)."
-msgstr ""
-"*GLES3:* debanding opzionale per evitare le bande di colore (efficace quando "
-"il rendering HDR è abilitato)."
-
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
@@ -617,6 +598,25 @@ msgstr "Correzione del colore utilizzando una rampa unidimensionale."
 
 msgid "Brightness, contrast and saturation adjustments."
 msgstr "Regolazione della luminosità, contrasto e saturazione."
+
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr ""
+"*GLES3:* Regolazione automatica dell'esposizione in base alla luminosità "
+"della finestra di visualizzazione."
+
+msgid "*GLES3:* Near and far depth of field."
+msgstr "*GLES3:* Profondità di campo vicina e lontana."
+
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr "*GLES3:* Occlusione ambientale dello spazio dello schermo."
+
+msgid ""
+"*GLES3:* Optional debanding to avoid color banding (effective when HDR "
+"rendering is enabled)."
+msgstr ""
+"*GLES3:* debanding opzionale per evitare le bande di colore (efficace quando "
+"il rendering HDR è abilitato)."
 
 msgid "**Texture filtering:**"
 msgstr "**Filtraggio delle texture:**"
@@ -672,8 +672,9 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Real-time occluder spheres. Not as effective as rooms and portals (and "
-"doesn't support gameplay notifications), but easier to set up."
+"Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
+"and portals (and doesn't support gameplay notifications), but easier to set "
+"up."
 msgstr ""
 "Sfere occludenti in tempo reale. Non è efficace come le stanze e i portali "
 "(e non supporta le notifiche di gioco), ma è più facile da configurare."
@@ -887,6 +888,20 @@ msgstr ""
 "Supporto per i bindings per D, Kotlin, Python, Nim e Rust forniti dalla "
 "comunità."
 
+msgid ""
+"`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
+"creating new projects using visual scripting in Godot is not recommended. "
+"Future Godot 4.x releases may have VisualScript reimplemented as an "
+"extension."
+msgstr ""
+
+msgid ""
+"While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
+"out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
+"intend to migrate your project to Godot 4."
+msgstr ""
+
 msgid "Audio"
 msgstr "Audio"
 
@@ -1063,14 +1078,13 @@ msgstr "Navigazione"
 msgid "A* algorithm in 2D and 3D."
 msgstr "Algoritmo A* in 2D e 3D."
 
-msgid "Navigation meshes."
-msgstr "Mesh di navigazione."
-
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
+msgid "Navigation meshes with dynamic obstacle avoidance."
 msgstr ""
-"Supporto per l'evitamento dinamico degli ostacoli pianificato in Godot 4.0."
 
-msgid "Generate navigation meshes from the editor."
+#, fuzzy
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
 msgstr "Genera mesh di navigazione dall'editor."
 
 msgid "Networking"

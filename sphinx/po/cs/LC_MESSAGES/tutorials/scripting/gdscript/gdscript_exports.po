@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,9 +199,8 @@ msgid ""
 "contents of the properties for the function to work."
 msgstr ""
 
-#, fuzzy
 msgid "``name`` is the name of the property"
-msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
+msgstr "``name`` je název vlastnosti"
 
 msgid "``type`` is the type of the property from ``Variant.Type``."
 msgstr ""
@@ -211,9 +210,8 @@ msgid ""
 "enum."
 msgstr ""
 
-#, fuzzy
 msgid "Attaching variables to properties"
-msgstr "Přidání rozhraní pro úpravu vlastností"
+msgstr "Připojení proměnných k vlastnostem"
 
 msgid ""
 "To attach variables to properties (allowing the value of the property to be "
@@ -224,18 +222,37 @@ msgid ""
 "to a property also gives you the ability to give it a default state. ::"
 msgstr ""
 
+#, fuzzy
+msgid "Adding default values for properties"
+msgstr "Připojení proměnných k vlastnostem"
+
+msgid ""
+"To define default values for advanced exports, you need to override the "
+"``property_can_revert()`` and ``property_get_revert()`` methods."
+msgstr ""
+
+msgid ""
+"The ``property_can_revert()`` method takes the name of a property and must "
+"return ``true`` if the property can be reverted. This will enable the Revert "
+"button next to the property in the inspector."
+msgstr ""
+
+msgid ""
+"The ``property_get_revert()`` method takes the name of a property and must "
+"return the default value for that property."
+msgstr ""
+
 msgid "Adding script categories"
 msgstr "Přidání kategorií skriptu"
 
-#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category. ::"
 msgstr ""
 "Pro lepší vizuální rozlišení vlastností lze do inspektora vložit speciální "
-"kategorii skriptu, která slouží jako oddělovač. Příkladem takové kategorie "
-"jsou vestavěné ``Script Variables``."
+"kategorii skriptu, která slouží jako oddělovač. ``Script Variables`` je "
+"jedním z příkladů zabudované kategorie ::"
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` je název kategorie, která má být přidána do inspektora;"
@@ -259,9 +276,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "Seskupování vlastností"
 
-#, fuzzy
 msgid "A list of properties with similar names can be grouped. ::"
-msgstr "Seznam vlastností s podobnými názvy lze seskupit."
+msgstr "Seznam vlastností s podobnými názvy lze seskupit. ::"
 
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
@@ -270,7 +286,6 @@ msgstr ""
 "``name`` je název skupiny, která bude zobrazena jako skládací seznam "
 "vlastností;"
 
-#, fuzzy
 msgid ""
 "Every following property added after the group property with the prefix "
 "(which determined by ``hint_string``) will be shortened. For instance, "
@@ -278,9 +293,10 @@ msgid ""
 "However, ``movement_speed`` won't be a part of the group and will not be "
 "shortened."
 msgstr ""
-"každá další vlastnost přidaná za vlastnost skupiny bude sbalena a zkrácena "
-"podle prefixu definovaného pomocí klíče ``hint_string``. Například "
-"``rotate_speed`` bude v tomto případě zkrácena na ``speed``."
+"Každá následující vlastnost přidaná za vlastnost skupiny s předponou (která "
+"je určena ``hint_string``) bude zkrácena. Například ``rotate_speed`` bude v "
+"tomto případě zkrácen na ``speed``. Avšak ``movement_speed`` nebude'součástí "
+"skupiny a nebude zkrácena."
 
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "

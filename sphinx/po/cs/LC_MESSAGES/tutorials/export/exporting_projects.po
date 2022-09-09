@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,7 +246,6 @@ msgstr ""
 "příkazového řádku stále vyžaduje předvolbu exportu, která definuje parametry "
 "exportu. Základní volání příkazu by bylo následující:"
 
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. (The export preset name "
@@ -257,17 +256,16 @@ msgstr ""
 "Tím se provede export do souboru ``nějaké_jméno.exe`` za předpokladu, že "
 "existuje předvolba s názvem \"Windows Desktop\" a šablonu lze nalézt. (Název "
 "předvolby exportu musí být zapsán v uvozovkách, pokud obsahuje mezery nebo "
-"speciální znaky). Výstupní cesta je relativní k cestě projektu nebo "
-"absolutní; nerespektuje adresář, ze kterého byl příkaz vyvolán."
+"speciální znaky). Výstupní cesta je *relativní k cestě projektu* nebo "
+"*absolutní* ; **nerespektuje adresář, ze kterého byl příkaz vyvolán**."
 
 msgid ""
 "The output file extension should match the one used by the Godot export "
 "process:"
 msgstr ""
 
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Příklad pro Windows:"
+msgstr "Windows: ``.exe``"
 
 msgid ""
 "macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* "

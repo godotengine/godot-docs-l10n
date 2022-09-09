@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,11 @@ msgstr ""
 msgid "Blend shapes"
 msgstr "충돌 모양"
 
-msgid "Blend shapes are not supported in GLES2."
+msgid ""
+"In GLES2, blend shapes are implemented on the CPU instead of the GPU. "
+"Accordingly, they may not perform as well as blend shapes in GLES3. To avoid "
+"performance issues when using blend shapes in GLES2, try to minimize the "
+"number of blend shapes that are updated each frame."
 msgstr ""
 
 msgid "Shading language"
@@ -326,25 +330,25 @@ msgid ""
 msgstr ""
 
 msgid "Variable / Render Mode"
-msgstr ""
+msgstr "변수 / 렌더 모드"
 
 msgid "``ensure_correct_normals``"
-msgstr ""
+msgstr "``ensure_correct_normals``"
 
 msgid "``INSTANCE_ID``"
-msgstr ""
+msgstr "``INSTANCE_ID``"
 
 msgid "``DEPTH``"
-msgstr ""
+msgstr "``DEPTH``"
 
 msgid "``ANISOTROPY``"
-msgstr ""
+msgstr "``ANISOTROPY``"
 
 msgid "``ANISOTROPY_FLOW``"
-msgstr ""
+msgstr "``ANISOTROPY_FLOW``"
 
 msgid "``SSS_STRENGTH``"
-msgstr ""
+msgstr "``SSS_STRENGTH``"
 
 msgid "Translation status"
 msgstr "번역 상태"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,6 +109,16 @@ msgstr "macOS"
 
 msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
+
+#, fuzzy
+msgid ":ref:`Web <doc_using_the_web_editor>`"
+msgstr ""
+":ref:`Tworzenie kodu działającego w edytorze "
+"<doc_running_code_in_the_editor>`"
+
+#, fuzzy
+msgid "Android (experimental)"
+msgstr "Android"
 
 msgid "**For exporting your games:**"
 msgstr "**Eksport gier dla:**"
@@ -654,11 +664,12 @@ msgstr ""
 "internet nie jest łatwo dostępny. W dodatku, w efekcie tego, w krajach tych "
 "często obowiązują ścisłe limity użycia danych."
 
+#, fuzzy
 msgid ""
 "For all the reasons above, we have to be selective of what we can accept as "
 "core functionality in Godot. This is why we are aiming to move some core "
 "functionality to officially supported add-ons in future versions of Godot. "
-"In terms of binary size, this also has the advance of making you pay only "
+"In terms of binary size, this also has the advantage of making you pay only "
 "for what you actually use in your project. (In the meantime, you can :ref:"
 "`compile custom export templates with unused features disabled "
 "<doc_optimizing_for_size>` to optimize the distribution size of your "

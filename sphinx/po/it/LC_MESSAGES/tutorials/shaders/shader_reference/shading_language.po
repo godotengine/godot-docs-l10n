@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -660,7 +660,7 @@ msgstr ""
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
-"uniform is used."
+"uniform is used, and how the editor should allow users to modify it."
 msgstr ""
 
 msgid ""
@@ -669,8 +669,9 @@ msgid ""
 "Godot's 3D engine renders in linear color space."
 msgstr ""
 
+#, fuzzy
 msgid "Full list of hints below:"
-msgstr ""
+msgstr "Elenco completo dei suggerimenti di seguito:"
 
 msgid "Hint"
 msgstr "Suggerimento"
@@ -678,7 +679,7 @@ msgstr "Suggerimento"
 msgid "hint_color"
 msgstr "hint_color"
 
-msgid "Used as color"
+msgid "Used as color."
 msgstr ""
 
 #, fuzzy
@@ -688,25 +689,25 @@ msgstr "**int, float**"
 msgid "hint_range(min, max[, step])"
 msgstr ""
 
-msgid "Used as range (with min/max/step)"
+msgid "Restricted to values in a range (with min/max/step)."
 msgstr ""
 
 msgid "hint_albedo"
 msgstr "hint_albedo"
 
-msgid "Used as albedo color, default white"
+msgid "Used as albedo color, default white."
 msgstr ""
 
 msgid "hint_black_albedo"
 msgstr "hint_black_albedo"
 
-msgid "Used as albedo color, default black"
+msgid "Used as albedo color, default black."
 msgstr ""
 
 msgid "hint_normal"
 msgstr "hint_normal"
 
-msgid "Used as normalmap"
+msgid "Used as normalmap."
 msgstr ""
 
 msgid "hint_white"
@@ -979,7 +980,6 @@ msgstr "Arrotonda"
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr "vec_type **roundEven** (vec_type x)"
 
-#, fuzzy
 msgid "Round to the nearest even number"
 msgstr "Arrotonda al numero pari più vicino"
 

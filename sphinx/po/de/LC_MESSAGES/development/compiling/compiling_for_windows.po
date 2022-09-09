@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,12 +84,11 @@ msgstr ""
 msgid "Setting up SCons"
 msgstr "SCons einrichten"
 
-#, fuzzy
 msgid ""
 "To install SCons, open the command prompt and run the following command::"
 msgstr ""
 "Um SCons zu installieren, öffnen Sie die Eingabeaufforderung und führen Sie "
-"den folgenden Befehl aus."
+"den folgenden Befehl aus::"
 
 msgid ""
 "If you are prompted with the message ``Defaulting to user installation "
@@ -239,13 +238,21 @@ msgid ""
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-msgid "Development in Visual Studio or other IDEs"
+#, fuzzy
+msgid "Development in Visual Studio"
 msgstr "Entwicklung in Visual Studio oder anderen IDEs"
 
 msgid ""
-"For most projects, using only scripting is enough but when development in C+"
-"+ is needed, for creating modules or extending the engine, working with an "
-"IDE is usually desirable."
+"Using an IDE is not required to compile Godot, as SCons takes care of "
+"everything. But if you intend to do engine development or debugging of the "
+"engine's C++ code, you may be interested in configuring a code editor or an "
+"IDE."
+msgstr ""
+
+msgid ""
+"Folder-based editors don't require any particular setup to start working "
+"with Godot's codebase. To edit projects with Visual Studio they need to be "
+"set up as a solution."
 msgstr ""
 
 msgid ""
@@ -258,13 +265,10 @@ msgid ""
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-msgid ""
-"If you need to edit the build commands, they are located in \"Godot\" "
-"project settings, NMAKE sheet. SCons is called at the end of the commands. "
-"If you make a mistake, copy the command from one of the other build "
-"configurations (debug, release_debug, release) or architectures (Win32/x64); "
-"they are equivalent."
+#, fuzzy
+msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
 msgstr ""
+"SCons 3.0+ (siehe :ref:`doc_compiling_for_windows` für weitere Details)."
 
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr "Cross-Compilierung für Windows von anderen Betriebssystemen"

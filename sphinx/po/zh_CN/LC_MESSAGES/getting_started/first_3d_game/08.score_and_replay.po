@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,15 +174,30 @@ msgstr "|image8|"
 msgid "image8"
 msgstr "image8"
 
+#, fuzzy
 msgid ""
-"This one expects a font file like the ones you have on your computer. Two "
-"common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
+"This one expects a font file like the ones you have on your computer. "
+"DynamicFont supports the following formats:"
 msgstr ""
 "这里需要的是一个字体文件，就是你电脑上用的那种。TrueType 字体（TTF）和 "
 "OpenType 字体（OTF）是两种常见的字体文件格式。"
 
+#, fuzzy
+msgid "TrueType (``.ttf``)"
+msgstr "Truevision Targa（\\ ``.tga``\\ ）"
+
+msgid "OpenType (``.otf``)"
+msgstr ""
+
+msgid "Web Open Font Format 1 (``.woff``)"
+msgstr ""
+
+msgid "Web Open Font Format 2 (``.woff2``, since Godot 3.5)"
+msgstr ""
+
+#, fuzzy
 msgid ""
-"In the *FileSystem* dock, Expand the ``fonts`` directory and click and drag "
+"In the *FileSystem* dock, expand the ``fonts`` directory and click and drag "
 "the ``Montserrat-Medium.ttf`` file we included in the project onto the *Font "
 "Data*. The text will reappear in the theme preview."
 msgstr ""

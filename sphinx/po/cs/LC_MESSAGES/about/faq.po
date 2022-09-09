@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,6 +110,14 @@ msgstr "macOS"
 
 msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
+
+#, fuzzy
+msgid ":ref:`Web <doc_using_the_web_editor>`"
+msgstr ":ref:`doc_running_code_in_the_editor`"
+
+#, fuzzy
+msgid "Android (experimental)"
+msgstr "Doplněk pro Android"
 
 msgid "**For exporting your games:**"
 msgstr "**Pro export vašich her:**"
@@ -481,7 +489,7 @@ msgid ""
 msgstr ""
 
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 msgid ""
 "Move the Godot binary to a stable location (i.e. outside of your Downloads "
@@ -512,9 +520,8 @@ msgid ""
 "the shortcut available for all users."
 msgstr ""
 
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr "Je možné použít Godot k vytváření jiných než herních aplikací?"
+msgstr "Je editor Godot přenosná aplikace?"
 
 msgid ""
 "In its default configuration, Godot is *semi-portable*. Its executable can "
@@ -640,11 +647,12 @@ msgstr ""
 "mnoho zemí, kde není snadno dostupný vysokorychlostní internet. Navíc v "
 "těchto zemích často platí přísné limity pro využívání dat."
 
+#, fuzzy
 msgid ""
 "For all the reasons above, we have to be selective of what we can accept as "
 "core functionality in Godot. This is why we are aiming to move some core "
 "functionality to officially supported add-ons in future versions of Godot. "
-"In terms of binary size, this also has the advance of making you pay only "
+"In terms of binary size, this also has the advantage of making you pay only "
 "for what you actually use in your project. (In the meantime, you can :ref:"
 "`compile custom export templates with unused features disabled "
 "<doc_optimizing_for_size>` to optimize the distribution size of your "

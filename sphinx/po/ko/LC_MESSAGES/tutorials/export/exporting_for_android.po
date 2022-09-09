@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,15 @@ msgid ""
 msgstr ""
 "Android로 내보내는 작업은 Android용으로 Godot를 컴파일하는 것보다 간단합니"
 "다. 다음은 Android SDK와 엔진 설정에 필요한 작업들입니다."
+
+msgid "Install OpenJDK 11"
+msgstr "OpenJDK 11 설치하기"
+
+msgid ""
+"Download and install  `OpenJDK 11 <https://adoptium.net/?"
+"variant=openjdk11>`__."
+msgstr ""
+"`OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__ 을 설치합니다."
 
 msgid "Download the Android SDK"
 msgstr "Android SDK 다운로드하기"
@@ -68,7 +77,8 @@ msgstr "Android SDK Platform-Tools 30.0.5 버전 또는 이상"
 msgid "Android SDK Build-Tools version 30.0.3"
 msgstr "Android SDK Build-Tools 30.0.3 버전"
 
-msgid "Android SDK Platform 29"
+#, fuzzy
+msgid "Android SDK Platform 31"
 msgstr "Android SDK Platform 29"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -77,8 +87,8 @@ msgstr "최신 버전의 Android SDK Command-line Tools"
 msgid "CMake version 3.10.2.4988404"
 msgstr "CMake 3.10.2.4988404 버전"
 
-msgid "NDK version 21.4.7075529"
-msgstr "NDK 21.4.7075529 버전"
+msgid "NDK version r23c (23.2.8568313)"
+msgstr ""
 
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
@@ -101,15 +111,6 @@ msgid ""
 msgstr ""
 "Linux를 사용중이라면 **사용중인 Linux 배포판 저장소의 Android SDK는 너무 오래"
 "됐을 확률이 높으므로 사용하지 마십시오**."
-
-msgid "Install OpenJDK 11"
-msgstr "OpenJDK 11 설치하기"
-
-msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
-msgstr ""
-"`OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__ 을 설치합니다."
 
 msgid "Create a debug.keystore"
 msgstr "debug.keystore 만들기"

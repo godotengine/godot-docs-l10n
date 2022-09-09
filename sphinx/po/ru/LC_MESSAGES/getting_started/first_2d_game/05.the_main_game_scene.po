@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgstr ""
 "Итак, настало время перенести всё, что мы сделали вместе, на играбельную "
 "игровую сцену."
 
-#, fuzzy
 msgid ""
 "Create a new scene and add a :ref:`Node <class_Node>` named ``Main``. (The "
 "reason we are using Node instead of Node2D is because this node will be a "
@@ -34,13 +33,17 @@ msgid ""
 "itself.)"
 msgstr ""
 "Создайте новую сцену и добавьте :ref:`Node <class_Node>` с именем ``Main``. "
-"Убедитесь, что вы создаете Node, а **не** Node2D. Нажмите кнопку "
-"\"Instance\" и выберите сохраненный файл ``Player.tscn``."
+"(Причиной, по которой мы используем Node, а не Node2D, является то, что узел "
+"будет контейнером для обработки игровой логики. Это не требует именно "
+"двумерного функционала.)"
 
+#, fuzzy
 msgid ""
 "Click the **Instance** button (represented by a chain link icon) and select "
 "your saved ``Player.tscn``."
 msgstr ""
+"Нажмите на кнопку **Instance** (представленную в иконке ссылки) и выберите "
+"Ваш сохраненный ``Player.tscn``."
 
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
@@ -171,6 +174,9 @@ msgid ""
 "We also add a call to ``randomize()`` here so that the random number "
 "generator generates different random numbers each time the game is run:"
 msgstr ""
+"Мы также добавляем здесь вызов ``randomize()``, чтобы случайный генератор "
+"чисел генерировал различные случайные числа каждый раз, когда запускается "
+"игра :"
 
 #, fuzzy
 msgid ""
@@ -183,9 +189,10 @@ msgstr ""
 msgid "You can assign this property's value in two ways:"
 msgstr "Значение этого свойства можно присвоить двумя способами:"
 
+#, fuzzy
 msgid ""
-"Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
-"property ."
+"Drag ``Mob.tscn`` from the \"FileSystem\" dock and drop it in the **Mob "
+"Scene** property."
 msgstr ""
 "Перетащите ``Mob.tscn`` из панели \"Файловая система\" в свойство ``Mob``."
 
@@ -289,10 +296,14 @@ msgstr ""
 "которая запускается автоматически при запуске игры. Нажмите кнопку \"Play\" "
 "и выберите ``Main.tscn`` при появлении запроса."
 
+#, fuzzy
 msgid ""
 "If you had already set another scene as the \"Main Scene\", you can right "
 "click ``Main.tscn`` in the FileSystem dock and select \"Set As Main Scene\"."
 msgstr ""
+"Если Вы уже настроили другую сцену как \"Главную Сцену\", Вы можете нажать "
+"правой кнопкой мыши на ``Main.tscn``в панели Файловой системы и выбрать "
+"\"Установить в качестве Главной Сцены\"."
 
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "

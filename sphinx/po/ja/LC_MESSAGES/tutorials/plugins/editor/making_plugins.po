@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,8 +93,16 @@ msgstr ""
 "各フィールドのプレースホルダーテキストは、プラグインによるファイルの作成と構"
 "成ファイルの値にどのように影響するかを説明しています。"
 
-msgid "To continue with the example, use the following values::"
+#, fuzzy
+msgid "To continue with the example, use the following values:"
 msgstr "例を続行するには、次の値を使用します:"
+
+msgid ""
+"Unchecking the ``Activate now?`` option in C# is always required because, "
+"like every other C# script, the EditorPlugin script needs to be compiled "
+"which requires building the project. After building the project the plugin "
+"can be enabled in the ``Plugins`` tab of ``Project Settings``."
+msgstr ""
 
 msgid "You should end up with a directory structure like this:"
 msgstr "次のようなディレクトリ構造になるはずです:"
@@ -384,6 +392,27 @@ msgstr ""
 "自分でプラグインを作成して自分自身を助け、\\ `Asset Library <https://"
 "godotengine.org/asset-library/>`_ で共有して、人々があなたの仕事から利益を得"
 "られるようにすることができます。"
+
+#, fuzzy
+msgid "Registering autoloads/singletons in plugins"
+msgstr "登録とログイン"
+
+msgid ""
+"It is possible for editor plugins to automatically register :ref:`autoloads "
+"<doc_singletons_autoload>` when the plugin is enabled. This also includes "
+"unregistering the autoload when the plugin is disabled."
+msgstr ""
+
+msgid ""
+"This makes setting up plugins faster for users, as they no longer have to "
+"manually add autoloads to their project settings if your editor plugin "
+"requires the use of an autoload."
+msgstr ""
+
+#, fuzzy
+msgid "Use the following code to register a singleton from an editor plugin:"
+msgstr ""
+"次のコマンドを使用して、生成されたエクスポートテンプレートを削除できます:"
 
 msgid "Translation status"
 msgstr "翻訳ステータス"
