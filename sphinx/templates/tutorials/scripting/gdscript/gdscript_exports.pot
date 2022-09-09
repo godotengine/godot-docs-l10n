@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,42 +141,58 @@ msgid "To attach variables to properties (allowing the value of the property to 
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:292
-msgid "Adding script categories"
+msgid "Adding default values for properties"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:294
+msgid "To define default values for advanced exports, you need to override the ``property_can_revert()`` and ``property_get_revert()`` methods."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:296
+msgid "The ``property_can_revert()`` method takes the name of a property and must return ``true`` if the property can be reverted. This will enable the Revert button next to the property in the inspector."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:298
+msgid "The ``property_get_revert()`` method takes the name of a property and must return the default value for that property."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:320
+msgid "Adding script categories"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:322
 msgid "For better visual distinguishing of properties, a special script category can be embedded into the inspector to act as a separator. ``Script Variables`` is one example of a built-in category. ::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:314
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:342
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:316
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:344
 msgid "Every following property added after the category definition will be a part of the category."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:319
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:347
 msgid "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as a script category specifically, so the type ``TYPE_NIL`` can be ignored as it won't be actually used for the scripting logic, yet it must be defined anyway."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:324
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:352
 msgid "Grouping properties"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:326
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:354
 msgid "A list of properties with similar names can be grouped. ::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:352
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:380
 msgid "``name`` is the name of a group which is going to be displayed as collapsible list of properties;"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:355
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:383
 msgid "Every following property added after the group property with the prefix (which determined by ``hint_string``) will be shortened. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in this case. However, ``movement_speed`` won't be a part of the group and will not be shortened."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:361
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:389
 msgid "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a script group specifically, so the type ``TYPE_NIL`` can be ignored as it won't be actually used for the scripting logic, yet it must be defined anyway."
 msgstr ""
 

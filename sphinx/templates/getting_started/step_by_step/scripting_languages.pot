@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "**Scripts attach to a node and extend its behavior**. This means that scr
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:16
-msgid "For example, take a game where a Camera2D node follows a ship. The Camera2D node follows its parent by default. Imagine you want it to shake when the player takes damage. As this feature is not built-into Godot, you would attach a script to it and code the camera shake."
+msgid "For example, take a game where a Camera2D node follows a ship. The Camera2D node follows its parent by default. Imagine you want the camera to shake when the player takes damage. As this feature is not built into Godot, you would attach a script to the Camera2D node and code the shake."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:24
@@ -37,7 +37,7 @@ msgid "Available scripting languages"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:26
-msgid "Godot offers **five gameplay programming languages**: GDScript, C#, VisualScript, and C++ and C via its GDNative technology. There are more :ref:`community-supported languages <doc_what_is_gdnative_third_party_bindings>`, but these are the official ones."
+msgid "Godot offers **five gameplay programming languages**: GDScript, C#, VisualScript, and, via its GDNative technology, C and C++. There are more :ref:`community-supported languages <doc_what_is_gdnative_third_party_bindings>`, but these are the official ones."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:31
@@ -48,151 +48,161 @@ msgstr ""
 msgid "We provide this flexibility to answer the needs of different game projects and developers."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:41
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:42
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:144
+msgid "`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, creating new projects using visual scripting in Godot is not recommended. Future Godot 4.x releases may have VisualScript reimplemented as an extension."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:46
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:148
+msgid "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead, especially if you intend to migrate your project to Godot 4."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:51
 msgid "Which language should I use?"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:43
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:53
 msgid "If you're a beginner, we recommend to **start with GDScript**. We made this language specifically for Godot and the needs of game developers. It has a lightweight and straightforward syntax and provides the tightest integration with Godot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:50
-msgid "For C#, you will need an external code editor like `VSCode <https://code.visualstudio.com/>`_ or Visual Studio. While C# support is now mature, you will also find fewer learning resources for it compared to GDScript. That's why we recommend C# mainly to users who already have experience with the language."
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:60
+msgid "For C#, you will need an external code editor like `VSCode <https://code.visualstudio.com/>`_ or Visual Studio. While C# support is now mature, you will find fewer learning resources for it compared to GDScript. That's why we recommend C# mainly to users who already have experience with the language."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:56
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:66
 msgid "Let's look at each language's features, as well as its pros and cons."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:59
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:69
 msgid "GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:61
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:71
 msgid ":ref:`GDScript<doc_gdscript>` is an `object-oriented <https://en.wikipedia.org/wiki/Object-oriented_programming>`_ and `imperative <https://en.wikipedia.org/wiki/Imperative_programming>`_ programming language built for Godot. It's made by and for game developers to save you time coding games. Its features include:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:67
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:77
 msgid "A simple syntax that leads to short files."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:68
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:78
 msgid "Blazing fast compilation and loading times."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:69
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:79
 msgid "Tight editor integration, with code completion for nodes, signals, and more information from the scene it's attached to."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:71
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:81
 msgid "Built-in vector and transform types, making it efficient for heavy use of linear algebra, a must for games."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:73
-msgid "Supports multiple threads as efficiently as statically typed languages. This is one of the features we couldn't provide easily with a third-party language like Lua or Python."
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:83
+msgid "Supports multiple threads as efficiently as statically typed languages."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:76
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:84
 msgid "No `garbage collection <https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>`_, as this feature eventually gets in the way when creating games. The engine counts references and manages the memory for you in most cases by default, but you can also control memory if you need to."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:81
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:89
 msgid "`Gradual typing <https://en.wikipedia.org/wiki/Gradual_typing>`_. Variables have dynamic types by default, but you also can use type hints for strong type checks."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:85
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:93
 msgid "GDScript looks like Python as you structure your code blocks using indentations, but it doesn't work the same way in practice. It's inspired by multiple languages, including Squirrel, Lua, and Python."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:91
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:99
 msgid "Why don't we use Python or Lua directly?"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:93
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:101
 msgid "Years ago, Godot used Python, then Lua. Both languages' integration took a lot of work and had severe limitations. For example, threading support was a big challenge with Python."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:97
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:105
 msgid "Developing a dedicated language doesn't take us more work and we can tailor it to game developers' needs. We're now working on performance optimizations and features that would've been difficult to offer with third-party languages."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:103
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:111
 msgid ".NET / C#"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:105
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:113
 msgid "As Microsoft's `C# <https://en.wikipedia.org/wiki/C_Sharp_(programming_language)>`_ is a favorite amongst game developers, we officially support it. C# is a mature and flexible language with tons of libraries written for it. We could add support for it thanks to a generous donation from Microsoft."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:113
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:121
 msgid "C# offers a good tradeoff between performance and ease of use, although you should be aware of its garbage collector."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:116
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:124
 msgid "You must use the Mono edition of the Godot editor to script in C#. You can download it on the Godot website's `download <https://godotengine.org/download/>`_ page."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:120
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:128
 msgid "Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in theory, you can use any third-party .NET library or framework in Godot, as well as any Common Language Infrastructure-compliant programming language, such as F#, Boo, or ClojureCLR. However, C# is the only officially supported .NET option."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:125
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:133
 msgid "GDScript code itself doesn't execute as fast as compiled C# or C++. However, most script code calls functions written with fast algorithms in C++ code inside the engine. In many cases, writing gameplay logic in GDScript, C#, or C++ won't have a significant impact on performance."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:132
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:140
 msgid "VisualScript"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:134
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:152
 msgid ":ref:`Visual Scripting<doc_what_is_visual_script>` is a graph-based visual programming language where you connect blocks. It can be a great tool for non-programmers like game designers and artists."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:140
-msgid "You can use other languages to create custom blocks that are specific to your game. For example, to script AIs, quests, or dialogues. That's where the strength of VisualScript lies."
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:158
+msgid "You can use other languages to create custom blocks that are specific to your game, for example, to script AIs, quests, or dialogues. That's where the strength of VisualScript lies."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:144
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:162
 msgid "While it provides all the basic building blocks you need to code complete games, we do not recommend to use VisualScript this way. Programming everything with it is slow compared to using other programming languages."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:150
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:168
 msgid "For more information, see :ref:`Getting started with VisualScript <doc_getting_started_visual_script>`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:154
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:172
 msgid "C and C++ via GDNative"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:156
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:174
 msgid "GDNative allows you to write game code in C or C++ without needing to recompile or even restart Godot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:161
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:179
 msgid "You can use any version of the language or mix compiler brands and versions for the generated shared libraries, thanks to our use of an internal C API Bridge."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:164
-msgid "This language is the best choice for performance. You don't need to use it throughout an entire game, as you can write other parts in GDScript, C#, or VisualScript."
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:182
+msgid "GDNative is the best choice for performance. You don't need to use it throughout an entire game, as you can write other parts in GDScript, C#, or VisualScript."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:168
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:186
 msgid "When working with GDNative, the available types, functions, and properties closely resemble Godot's actual C++ API."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:172
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:190
 msgid "Summary"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:174
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:192
 msgid "Scripts are files containing code that you attach to a node to extend its functionality."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:177
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:195
 msgid "Godot supports five official scripting languages, offering you flexibility between performance and ease of use."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_languages.rst:180
+#: ../../docs/getting_started/step_by_step/scripting_languages.rst:198
 msgid "You can mix languages, for instance, to implement demanding algorithms with C or C++ and write most of the game logic with GDScript or C#."
 msgstr ""
 

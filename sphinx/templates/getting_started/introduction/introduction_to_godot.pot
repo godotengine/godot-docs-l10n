@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,86 +61,78 @@ msgid "As for applications, the open-source pixel art drawing program Pixelorama
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:47
-msgid "You can find many more examples in the official showcase videos:"
-msgstr ""
-
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:49
-msgid "`April 2020 desktop and console showcase`_"
+msgid "You can find many more examples in the `official showcase videos`_."
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:50
-msgid "`April 2020 mobile showcase`_"
-msgstr ""
-
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:53
 msgid "How does it work and look?"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:55
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:52
 msgid "Godot comes with a fully-fledged game editor with integrated tools to answer the most common needs. It includes a code editor, an animation editor, a tilemap editor, a shader editor, a debugger, a profiler, and more."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:61
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:58
 msgid "The team strives to offer a feature-rich game editor with a consistent user experience. While there is always room for improvement, the user interface keeps getting refined."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:65
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:62
 msgid "Of course, if you prefer, you can work with external programs. We officially support importing 3D scenes designed in Blender_ and maintain plugins to code in VSCode_ and Emacs_ for GDScript and C#. We also support Visual Studio for C# on Windows."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:73
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:70
 msgid "Programming languages"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:75
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:72
 msgid "Let's talk about the available programming languages."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:77
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:74
 msgid "You can code your games using :ref:`GDScript <toc-learn-scripting-gdscript>`, a Godot-specific and tightly integrated language with a lightweight syntax, or :ref:`C# <toc-learn-scripting-C#>`, which is popular in the games industry. These are the two main scripting languages we support."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:82
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:79
 msgid "Godot also supports a node-based visual programming language named :ref:`VisualScript <toc-learn-scripting-visual_script>`."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:85
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:82
 msgid "With the :ref:`GDNative <toc-tutorials-gdnative>` technology, you can also write gameplay or high-performance algorithms in C or C++ without recompiling the engine. You can use this technology to integrate third-party libraries and other Software Development Kits (SDK) in the engine."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:90
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:87
 msgid "Of course, you can also directly add modules and features to the engine, as it's completely free and open-source."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:93
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:90
 msgid "These are the five officially supported programming languages. The community maintains support for many more. For more information, see :ref:`GDNative third-party bindings <doc_what_is_gdnative_third_party_bindings>`."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:99
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:96
 msgid "What do I need to know to use Godot?"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:101
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:98
 msgid "Godot is a feature-packed game engine. With its thousands of features, there is a lot to learn. To make the most of it, you need good programming foundations. While we try to make the engine accessible, you will benefit a lot from knowing how to think like a programmer first."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:106
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:103
 msgid "Godot relies on the object-oriented programming paradigm. Being comfortable with concepts such as classes and objects will help you code efficiently in it."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:109
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:106
 msgid "If you are entirely new to programming, we recommend following the `CS50 open courseware`_ from Harvard University. It's a great free course that will teach you everything you need to know to be off to a good start. It will save you countless hours and hurdles learning any game engine afterward."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:114
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:111
 msgid "In CS50, you will learn multiple programming languages. Don't be afraid of that: programming languages have many similarities. The skills you learn with one language transfer well to others."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:118
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:115
 msgid "We will provide you with more Godot-specific learning resources in :ref:`doc_learning_new_features`."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/introduction_to_godot.rst:121
+#: ../../docs/getting_started/introduction/introduction_to_godot.rst:118
 msgid "In the next part, you will get an overview of the engine's essential concepts."
 msgstr ""
 

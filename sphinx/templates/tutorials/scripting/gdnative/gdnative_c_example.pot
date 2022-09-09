@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "If you plan to use Git for your GDNative project, you can also add ``godo
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:75
-msgid "The ``godot-headers`` repository has different branches. As Godot evolves, so does GDNative. While we try to preserve compatibility between version, you should always build your GDNative module against headers matching the Godot stable branch (e.g. ``3.1``) and ideally actual release (e.g. ``3.1.1-stable``) that you use. GDNative modules built against older versions of the Godot headers *may* work with newer versions of the engine, but not the other way around."
+msgid "The ``godot-headers`` repository has different branches. As Godot evolves, so does GDNative. While we try to preserve compatibility between version, you should always build your GDNative module against headers matching the Godot stable branch (e.g. ``3.4``) and ideally actual release (e.g. ``3.4.4-stable``) that you use. GDNative modules built against older versions of the Godot headers *may* work with newer versions of the engine, but not the other way around."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:83
@@ -85,11 +85,11 @@ msgid "The ``master`` branch of the ``godot-headers`` repository is kept in line
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:87
-msgid "If you want to write a GDNative module for a stable version of Godot, look at the available Git tags (with ``git tags``) for the one matching your engine version. In the ``godot-headers`` repository, such tags are prefixed with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for use with Godot 3.1.1. In your cloned repository, you can do:"
+msgid "If you want to write a GDNative module for a stable version of Godot, look at the available Git tags (with ``git tags``) for the one matching your engine version. In the ``godot-headers`` repository, such tags are prefixed with ``godot-``, so you can e.g. checkout the ``godot-3.4.4-stable`` tag for use with Godot 3.4.4. In your cloned repository, you can do:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:97
-msgid "If a tag matching your stable release is missing for any reason, you can fall back to the matching stable branch (e.g. ``3.1``), which you would also check out with ``git checkout 3.1``."
+msgid "If a tag matching your stable release is missing for any reason, you can fall back to the matching stable branch (e.g. ``3.4``), which you would also check out with ``git checkout 3.4``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:101

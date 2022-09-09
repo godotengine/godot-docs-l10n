@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Using the ArrayMesh"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:6
-msgid "This tutorial will present the basics of using an :ref:`ArrayMesh <class_arraymesh>`"
+msgid "This tutorial will present the basics of using an :ref:`ArrayMesh <class_arraymesh>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:8
@@ -29,135 +29,200 @@ msgid "To do so, we will use the function :ref:`add_surface_from_arrays() <class
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:11
-msgid "The first is the ``PrimitiveType``, this is an OpenGL concept that instructs the GPU how to arrange the primitive based on the vertices given whether it is triangles, lines, points, etc. A complete list can be found under the :ref:`Mesh <class_mesh>` class reference page."
+msgid "The first parameter is the ``PrimitiveType``, an OpenGL concept that instructs the GPU how to arrange the primitive based on the vertices given, i.e. whether they represent triangles, lines, points, etc. See :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` for the options available."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:16
-msgid "The second is the actual Array that stores the mesh information. The array is a normal Godot array that is constructed with empty brackets ``[]``. It stores a ``Pool**Array`` (e.g. PoolVector3Array, PoolIntArray, etc.) for each type of information."
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:15
+msgid "The second parameter, ``arrays``, is the actual Array that stores the mesh information. The array is a normal Godot array that is constructed with empty brackets ``[]``. It stores a ``Pool**Array`` (e.g. PoolVector3Array, PoolIntArray, etc.) for each type of information that will be used to build the surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:20
-msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:21
-msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:22
-msgid "``ARRAY_TANGENT`` = 2 | PoolRealArray of groups of 4 floats. First 3 floats determine the tangent, and the last the binormal direction as -1 or 1."
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:24
-msgid "``ARRAY_COLOR`` = 3 | PoolColorArray"
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:25
-msgid "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:26
-msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:27
-msgid "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of groups of 4 ints. Each group lists indexes of 4 bones that affects a given vertex."
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:28
-msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats. Each float lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a given vertex."
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:19
+msgid "The possible elements of ``arrays`` are listed below, together with the position they must have within ``arrays``. See also :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29
-msgid "``ARRAY_INDEX`` = 8 | PoolIntArray"
+msgid "Index"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:30
+msgid "Mesh.ArrayType Enum"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:31
-msgid "The Array of vertices is always required. All the others are optional and will only be used if included."
+msgid "Array type"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:33
-msgid "Each array needs to have the same number of elements as the vertex array except for the index array. For arrays like tangents, an element is a group of 4 floats. So the array size will be four times the size of the vertex array size, but they will have the same number of elements"
+msgid "0"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:34
+msgid "``ARRAY_VERTEX``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:35
+msgid ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array <class_PoolVector2Array>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:37
-msgid "The index array is unique."
+msgid "1"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:38
+msgid "``ARRAY_NORMAL``"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:39
-msgid "The third parameter is an array of blendshapes for the Mesh to use. While this tutorial does not cover using blendshapes, it is possible to specify them when creating a surface from arrays."
+msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:41
+msgid "2"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:42
-msgid "The last parameter is the compress flags which specifies which arrays to store with half as many bits. The values can be found in the classref for :ref:`VisualServer <class_visualserver>` under :ref:`ArrayFormat <enum_visualserver_arrayformat>`."
+msgid "``ARRAY_TANGENT``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:45
-msgid "For normal usage you will find it is best to leave the last two parameters empty."
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:43
+msgid ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. First 3 floats determine the tangent, and the last the binormal direction as -1 or 1."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:46
+msgid "3"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:47
+msgid "``ARRAY_COLOR``"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:48
-msgid "ArrayMesh"
+msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:50
-msgid "Add an :ref:`ArrayMesh <class_arraymesh>` to a MeshInstance. Normally, adding an ArrayMesh in the editor is not useful, but in this case it allows as to access the ArrayMesh from code without creating one."
+msgid "4"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:51
+msgid "``ARRAY_TEX_UV``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:52
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:56
+msgid ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array <class_PoolVector3Array>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:54
-msgid "Next, add a script to the MeshInstance."
+msgid "5"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:56
-msgid "Under ``_ready()``, create a new Array."
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:55
+msgid "``ARRAY_TEX_UV2``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:58
+msgid "6"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:59
+msgid "``ARRAY_BONES``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:60
+msgid ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats or :ref:`PoolIntArray <class_PoolIntArray>` of groups of 4 ints. Each group lists indexes of 4 bones that affects a given vertex."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:62
+msgid "7"
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:63
-msgid "This will be the array that we keep our surface information in, it will hold all the arrays of data that the surface needs. Godot will expect it to be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
+msgid "``ARRAY_WEIGHTS``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:73
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:64
+msgid ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. Each float lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a given vertex."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:66
+msgid "8"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:67
+msgid "``ARRAY_INDEX``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:68
+msgid ":ref:`PoolIntArray <class_PoolIntArray>`"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:70
+msgid "The array of vertices (at index 0) is always required. The index array is optional and will only be used if included. We won't use it in this tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:72
+msgid "All the other arrays carry information about the vertices. They are also optional and will only be used if included. Some of these arrays (e.g. ``ARRAY_COLOR``) use one entry per vertex to provide extra information about vertices. They must have the same size as the vertex array. Other arrays (e.g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These must be exactly four times larger than the vertex array."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:76
+msgid "For normal usage, the last two parameters in :ref:`add_surface_from_arrays() <class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:79
+msgid "ArrayMesh"
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:81
+msgid "In the editor, create a :ref:`MeshInstance <class_meshinstance>` and add an :ref:`ArrayMesh <class_arraymesh>` to it in the Inspector. Normally, adding an ArrayMesh in the editor is not useful, but in this case it allows us to access the ArrayMesh from code without creating one."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:85
+msgid "Next, add a script to the MeshInstance."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:87
+msgid "Under ``_ready()``, create a new Array."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:94
+msgid "This will be the array that we keep our surface information in - it will hold all the arrays of data that the surface needs. Godot will expect it to be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:104
 msgid "Next create the arrays for each data type you will use."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:83
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:114
 msgid "Once you have filled your data arrays with your geometry you can create a mesh by adding each array to ``surface_array`` and then committing to the mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:96
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:127
 msgid "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any primitive type available from mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:99
-msgid "Put together the full code looks like:"
-msgstr ""
-
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:130
-msgid "The code that goes in the middle can be whatever you want. Below we will present some example code that could go in the middle."
+msgid "Put together, the full code looks like:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:134
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:161
+msgid "The code that goes in the middle can be whatever you want. Below we will present some example code for generating a sphere."
+msgstr ""
+
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:165
 msgid "Generating geometry"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:136
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:167
 msgid "Here is sample code for generating a sphere. Although the code is presented in GDScript, there is nothing Godot specific about the approach to generating it. This implementation has nothing in particular to do with ArrayMeshes and is just a generic approach to generating a sphere. If you are having trouble understanding it or want to learn more about procedural geometry in general, you can use any tutorial that you find online."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:203
-msgid "Combined with the code above, this code will generate a sphere."
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:205
-msgid "When it comes to generating geometry with the ArrayMesh you need to understand what goes in each array and then you can follow tutorials for any language/engine and convert it into Godot."
-msgstr ""
-
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:209
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:235
 msgid "Saving"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:211
-msgid "Finally, Godot provides a single method to save ArrayMeshes using the :ref:`ResourceSaver <class_resourcesaver>` class. This is useful when you want to generate a mesh and then use it later without having to re-generate."
+#: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:237
+msgid "Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to save the ArrayMesh. This is useful when you want to generate a mesh and then use it later without having to re-generate it."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

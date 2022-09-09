@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,130 +49,114 @@ msgid "In the Godot editor, open the **Export** window from the **Project** menu
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_ios.rst:28
-msgid "The following export options are required. Leaving any blank will cause the exporter to throw an error:"
+msgid "The **App Store Team ID** and (Bundle) **Identifier** options in the **Application** category are required. Leaving them blank will cause the exporter to throw an error."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_ios.rst:31
-msgid "In the **Application** category * **App Store Team ID** and (Bundle) **Identifier**"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_ios.rst:33
-msgid "Everything in the **Required Icons** category"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_ios.rst:34
-msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_ios.rst:35
-msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_ios.rst:37
 msgid "After you click **Export Project**, there are still two important options left:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:39
+#: ../../docs/tutorials/export/exporting_for_ios.rst:33
 msgid "**Path** is an empty folder that will contain the exported Xcode project files."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:40
+#: ../../docs/tutorials/export/exporting_for_ios.rst:34
 msgid "**File** will be the name of the Xcode project and several project specific files and directories."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:44
+#: ../../docs/tutorials/export/exporting_for_ios.rst:38
 msgid "This tutorial uses **exported_xcode_project_name**, but you will use your project's name. When you see **exported_xcode_project_name** in the following steps, replace it with the name you used instead."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:48
+#: ../../docs/tutorials/export/exporting_for_ios.rst:42
 msgid "Avoid using spaces when you choose your **exported_xcode_project_name** as this can lead to corruption in your XCode project file."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:51
+#: ../../docs/tutorials/export/exporting_for_ios.rst:45
 msgid "When the export completes, the output folder should look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:55
+#: ../../docs/tutorials/export/exporting_for_ios.rst:49
 msgid "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy like any other iOS app."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:59
+#: ../../docs/tutorials/export/exporting_for_ios.rst:53
 msgid "Active development considerations"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:61
+#: ../../docs/tutorials/export/exporting_for_ios.rst:55
 msgid "The above method creates an exported project that you can build for release, but you have to re-export every time you make a change in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:64
+#: ../../docs/tutorials/export/exporting_for_ios.rst:58
 msgid "While developing, you can speed this process up by linking your Godot project files directly into your app."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:67
+#: ../../docs/tutorials/export/exporting_for_ios.rst:61
 msgid "In the following example:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:69
+#: ../../docs/tutorials/export/exporting_for_ios.rst:63
 msgid "**exported_xcode_project_name** is the name of the exported iOS application (as above)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:70
+#: ../../docs/tutorials/export/exporting_for_ios.rst:64
 msgid "**godot_project_to_export** is the name of the Godot project."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:72
+#: ../../docs/tutorials/export/exporting_for_ios.rst:66
 msgid "**godot_project_to_export** must not be the same as **exported_xcode_project_name** to prevent signing issues in Xcode."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:76
+#: ../../docs/tutorials/export/exporting_for_ios.rst:70
 msgid "Steps to link a Godot project folder to Xcode"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:78
+#: ../../docs/tutorials/export/exporting_for_ios.rst:72
 msgid "Start from an exported iOS project (follow the steps above)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:79
+#: ../../docs/tutorials/export/exporting_for_ios.rst:73
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:83
+#: ../../docs/tutorials/export/exporting_for_ios.rst:77
 msgid "3. In the dialog, make sure **Create folder references** is selected. This means you will be able to continue to edit your Godot project in its current location."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:88
+#: ../../docs/tutorials/export/exporting_for_ios.rst:82
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:89
+#: ../../docs/tutorials/export/exporting_for_ios.rst:83
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:93
+#: ../../docs/tutorials/export/exporting_for_ios.rst:87
 msgid "6. Open **exported_xcode_project_name-Info.plist** and add a string property named **godot_path** (this is the real key name) with a value **godot_project_to_export** (this is the name of your project)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:99
+#: ../../docs/tutorials/export/exporting_for_ios.rst:93
 msgid "That's it! You can now edit your project in the Godot editor and build it in Xcode when you want to run it on a device."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:103
+#: ../../docs/tutorials/export/exporting_for_ios.rst:97
 msgid "Plugins for iOS"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:105
+#: ../../docs/tutorials/export/exporting_for_ios.rst:99
 msgid "Special iOS plugins can be used in Godot. Check out the :ref:`doc_plugins_for_ios` page."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:109
+#: ../../docs/tutorials/export/exporting_for_ios.rst:103
 msgid "Troubleshooting rendering issues"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:111
+#: ../../docs/tutorials/export/exporting_for_ios.rst:105
 msgid "To improve out-of-the-box performance on mobile devices, Godot automatically uses low-end-friendly settings by default on both Android and iOS."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_ios.rst:114
+#: ../../docs/tutorials/export/exporting_for_ios.rst:108
 msgid "This can cause rendering issues that do not occur when running the project on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more information."
 msgstr ""
 

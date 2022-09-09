@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,47 +284,59 @@ msgstr ""
 msgid "Textures using PVRTC compression are supported"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:90
+#: ../../docs/tutorials/export/feature_tags.rst:91
+msgid "With the exception of texture compression feature tags, default feature tags are **immutable**. This means that they will *not* change depending on run-time conditions. For example, ``OS.has_feature(\"mobile\")`` will return ``false`` when running a project exported to HTML5 on a mobile device."
+msgstr ""
+
+#: ../../docs/tutorials/export/feature_tags.rst:96
+msgid "To check whether a project exported to HTML5 is running on a mobile device, :ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's user agent."
+msgstr ""
+
+#: ../../docs/tutorials/export/feature_tags.rst:101
 msgid "Custom features"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:92
+#: ../../docs/tutorials/export/feature_tags.rst:103
 msgid "It is possible to add custom features to a build; use the relevant field in the *export preset* used to generate it:"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:98
+#: ../../docs/tutorials/export/feature_tags.rst:110
+msgid "Custom feature tags are only used when running the exported project (including with :ref:`doc_one-click_deploy`). They are **not used** when running the project from the editor, even if the export preset marked as **Runnable** for your current platform has custom feature tags defined."
+msgstr ""
+
+#: ../../docs/tutorials/export/feature_tags.rst:116
 msgid "Overriding project settings"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:100
+#: ../../docs/tutorials/export/feature_tags.rst:118
 msgid "Features can be used to override specific configuration values in the *Project Settings*. This allows you to better customize any configuration when doing a build."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:103
+#: ../../docs/tutorials/export/feature_tags.rst:121
 msgid "In the following example, a different icon is added for the demo build of the game (which was customized in a special export preset, which, in turn, includes only demo levels)."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:108
+#: ../../docs/tutorials/export/feature_tags.rst:126
 msgid "After overriding, a new field is added for this specific configuration:"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:114
+#: ../../docs/tutorials/export/feature_tags.rst:132
 msgid "When using the :ref:`project settings \"override.cfg\" functionality <class_ProjectSettings>` (which is unrelated to feature tags), remember that feature tags still apply. Therefore, make sure to *also* override the setting with the desired feature tag(s) if you want them to override base project settings on all platforms and configurations."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:122
+#: ../../docs/tutorials/export/feature_tags.rst:140
 msgid "Default overrides"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:124
+#: ../../docs/tutorials/export/feature_tags.rst:142
 msgid "There are already a lot of settings that come with overrides by default; they can be found in many sections of the project settings."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:130
+#: ../../docs/tutorials/export/feature_tags.rst:148
 msgid "Customizing the build"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:132
+#: ../../docs/tutorials/export/feature_tags.rst:150
 msgid "Feature tags can be used to customize a build process too, by writing a custom **ExportPlugin**. They are also used to specify which shared library is loaded and exported in **GDNative**."
 msgstr ""
 

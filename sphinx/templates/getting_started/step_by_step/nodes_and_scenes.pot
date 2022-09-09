@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,15 +101,15 @@ msgid "Let's create our first scene with a single node. To do so, you will need 
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:73
-msgid "In an empty scene, the Scene dock on the left shows several options to add a root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a Spatial node, \"User Interface\" adds a Control node, and \"Other Node\" lets you select any node. It is equivalent to pressing the \"Add Child Node\" button. These presets are here for convenience; they are not mandatory."
+msgid "In an empty scene, the Scene dock on the left shows several options to add a root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a Spatial node, and \"User Interface\" adds a Control node. These presets are here for convenience; they are not mandatory. \"Other Node\" lets you select any node to be the root node. In an empty scene, \"Other Node\" is equivalent to pressing the \"Add Child Node\" button at the top-left of the Scene dock, which usually adds a new node as a child of the currently selected node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:79
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:81
 msgid "We're going to add a single Label node to our scene. Its function is to draw text on the screen."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:82
-msgid "Press the \"Add Child Node\" button at the top left of the Scene dock to create a node. This button adds the chosen node as a child of the currently selected one or, in an empty scene, as the root."
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:84
+msgid "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:88
@@ -157,7 +157,7 @@ msgid "Running the scene"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:132
-msgid "Everything's ready to run the scene! Press the Play Scene button in the top-right of the screen or press :kbd:`F6`."
+msgid "Everything's ready to run the scene! Press the Play Scene button in the top-right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:137
@@ -189,7 +189,7 @@ msgid "Setting the main scene"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:167
-msgid "To run our test scene, we used the Play Scene button. Another button next to it allows you to set and run the project's main scene. You can press :kbd:`F5` to do so."
+msgid "To run our test scene, we used the Play Scene button. Another button next to it allows you to set and run the project's main scene. You can press :kbd:`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:173

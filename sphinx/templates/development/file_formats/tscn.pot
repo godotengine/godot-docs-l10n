@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,7 +127,7 @@ msgid "``owner``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:82
-msgid "``index`` (if two nodes have the same name)"
+msgid "``index`` (sets the order of appearance in the tree. If absent, inherited nodes will take precedence over plain ones)"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:83
@@ -175,7 +175,7 @@ msgid "``pose``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:177
-#: ../../docs/development/file_formats/tscn.rst:397
+#: ../../docs/development/file_formats/tscn.rst:398
 msgid "``enabled``"
 msgstr ""
 
@@ -312,122 +312,126 @@ msgid "Vertex positions array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:346
-msgid "Tangents array"
+msgid "Normals array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:347
-msgid "Vertex colors array"
+msgid "Tangents array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:348
-msgid "UV array 1"
+msgid "Vertex colors array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:349
-msgid "UV array 2"
+msgid "UV array 1"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:350
-msgid "Bone indexes array"
+msgid "UV array 2"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:351
-msgid "Bone weights array"
+msgid "Bone indexes array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:352
+msgid "Bone weights array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:353
 msgid "Vertex indexes array"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:354
+#: ../../docs/development/file_formats/tscn.rst:355
 msgid "``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` without the vertex indexes array."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:357
+#: ../../docs/development/file_formats/tscn.rst:358
 msgid "An example of ArrayMesh:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:381
+#: ../../docs/development/file_formats/tscn.rst:382
 msgid "Animation"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:383
+#: ../../docs/development/file_formats/tscn.rst:384
 msgid "An animation resource consists of tracks. Besides, it has ``length``, ``loop`` and ``step`` applied to all the tracks."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:386
+#: ../../docs/development/file_formats/tscn.rst:387
 msgid "``length`` and ``step`` are both durations in seconds."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:388
+#: ../../docs/development/file_formats/tscn.rst:389
 msgid "Each track is described by a list of key-value pairs in the format ``tracks/Id/Attribute``. Each track includes:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:391
+#: ../../docs/development/file_formats/tscn.rst:392
 msgid "``type``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:392
+#: ../../docs/development/file_formats/tscn.rst:393
 msgid "``path``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:393
+#: ../../docs/development/file_formats/tscn.rst:394
 msgid "``interp``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:394
+#: ../../docs/development/file_formats/tscn.rst:395
 msgid "``keys``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:395
+#: ../../docs/development/file_formats/tscn.rst:396
 msgid "``loop_wrap``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:396
+#: ../../docs/development/file_formats/tscn.rst:397
 msgid "``imported``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:399
+#: ../../docs/development/file_formats/tscn.rst:400
 msgid "The ``type`` must be the first attribute of each track. The value of ``type`` can be:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:402
+#: ../../docs/development/file_formats/tscn.rst:403
 msgid "``transform``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:403
+#: ../../docs/development/file_formats/tscn.rst:404
 msgid "``value``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:404
+#: ../../docs/development/file_formats/tscn.rst:405
 msgid "``method``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:406
+#: ../../docs/development/file_formats/tscn.rst:407
 msgid "The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the path to the animated node or attribute, relative to the root node defined in the AnimationPlayer."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:410
+#: ../../docs/development/file_formats/tscn.rst:411
 msgid "The ``interp`` is the method to interpolate frames from the keyframes. It is an enum variable with one of the following values:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:413
+#: ../../docs/development/file_formats/tscn.rst:414
 msgid "``0`` (constant)"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:414
+#: ../../docs/development/file_formats/tscn.rst:415
 msgid "``1`` (linear)"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:415
+#: ../../docs/development/file_formats/tscn.rst:416
 msgid "``2`` (cubic)"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:417
+#: ../../docs/development/file_formats/tscn.rst:418
 msgid "The ``keys`` correspond to the keyframes. It appears as a ``PoolRealArray()``, but may have a different structure for tracks with different types."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:420
+#: ../../docs/development/file_formats/tscn.rst:421
 msgid "A Transform track uses every 12 real numbers in the ``keys`` to describe a keyframe. The first number is the timestamp. The second number is the transition followed by a 3-number translation vector, followed by a 4-number rotation quaternion (X, Y, Z, W) and finally a 3-number scale vector. The default transition in a Transform track is 1.0."
 msgstr ""
 

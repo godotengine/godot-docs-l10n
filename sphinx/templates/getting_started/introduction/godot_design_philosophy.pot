@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,8 +64,8 @@ msgstr ""
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:183
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:183
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:194
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:194
 msgid "image0"
 msgstr ""
 
@@ -81,8 +81,8 @@ msgstr ""
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:184
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:184
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:195
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:195
 msgid "image1"
 msgstr ""
 
@@ -102,8 +102,8 @@ msgstr ""
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:185
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:185
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:196
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:196
 msgid "image2"
 msgstr ""
 
@@ -127,8 +127,8 @@ msgstr ""
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:186
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:186
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:197
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:197
 msgid "image3"
 msgstr ""
 
@@ -144,8 +144,8 @@ msgstr ""
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:187
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:187
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:198
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:198
 msgid "image4"
 msgstr ""
 
@@ -153,76 +153,84 @@ msgstr ""
 msgid "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage states and transitions visually.*"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:112
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:114
+msgid "`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, creating new projects using visual scripting in Godot is not recommended. Future Godot 4.x releases may have VisualScript reimplemented as an extension."
+msgstr ""
+
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:118
+msgid "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead, especially if you intend to migrate your project to Godot 4."
+msgstr ""
+
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:123
 msgid "Open source"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:114
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:125
 msgid "Godot offers a fully open source codebase under the **MIT license**. This means all the technologies that ship with it have to be Free (as in freedom) as well. For the most part, they're developed from the ground up by contributors."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:119
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:130
 msgid "Anyone can plug in proprietary tools for the needs of their projects — they just won't ship with the engine. This may include Google AdMob, or FMOD. Any of these can come as third-party plugins instead."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:124
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:135
 msgid "On the other hand, an open codebase means you can **learn from and extend the engine** to your heart's content. You can also debug games easily, as Godot will print errors with a stack trace, even if they come from the engine itself."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:130
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:141
 msgid "This **does not affect the work you do with Godot** in any way: there's no strings attached to the engine or anything you make with it."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:134
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:145
 msgid "Community-driven"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:136
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:147
 msgid "**Godot is made by its community, for the community, and for all game creators out there.** It's the needs of the users and open discussions that drive the core updates. New features from the core developers often focus on what will benefit the most users first."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:141
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:152
 msgid "That said, although a handful of core developers work on it full-time, the project has over 600 contributors at the time of writing. Benevolent programmers work on features they may need themselves, so you'll see improvements in all corners of the engine at the same time in every major release."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:148
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:159
 msgid "The Godot editor is a Godot game"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:150
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:161
 msgid "The Godot editor runs on the game engine. It uses the engine's own UI system, it can hot-reload code and scenes when you test your projects, or run game code in the editor. This means you can **use the same code** and scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:155
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:166
 msgid "This leads to a reliable and flexible UI system, as it powers the editor itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:158
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:169
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:188
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:188
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:199
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:199
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:160
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:171
 msgid "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI tools for its node-based programming system and for the rest of the interface.*"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:164
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:175
 msgid "Put the ``tool`` keyword at the top of any GDScript file and it will run in the editor. This lets you import and export plugins, create plugins like custom level editors, or create scripts with the same nodes and API you use in your projects."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:171
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:182
 msgid "The editor is fully written in C++ and is statically compiled into the binary. This means you can't import it as a typical project that would have a ``project.godot`` file."
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:176
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:187
 msgid "Separate 2D and 3D engines"
 msgstr ""
 
-#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:178
+#: ../../docs/getting_started/introduction/godot_design_philosophy.rst:189
 msgid "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base unit for 2D scenes is pixels.** Even though the engines are separate, you can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over your 3D world."
 msgstr ""
 

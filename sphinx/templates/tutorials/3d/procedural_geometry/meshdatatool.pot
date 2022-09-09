@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,43 +33,43 @@ msgid "MeshDataTool can only be used on Meshes that use the PrimitiveType ``Mesh
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:16
-msgid "As an example, let's walk through the process of deforming the mesh generated in the :ref:`ArrayMesh tutorial <doc_arraymesh>`."
+msgid "We initialize the MeshDataTool from an ArrayMesh by calling ``create_from_surface()``. If there is already data initialized in the MeshDataTool, calling ``create_from_surface()`` will clear it for you. Alternatively, you can call ``clear()`` yourself before re-using the MeshDataTool."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:18
-msgid "Assume the mesh is stored in an ArrayMesh named ``mesh``. We then initialize the MeshDataTool from ``mesh`` by calling ``create_from_surface()``. If there is already data initialized in the MeshDataTool calling ``create_from_surface()`` will clear it for you. Alternatively, you can call ``clear()`` yourself before re-using the MeshDataTool"
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:19
+msgid "In the examples below, assume an ArrayMesh called ``mesh`` has already been created. See :ref:`ArrayMesh tutorial <doc_arraymesh>` for an example of mesh generation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:29
-msgid "``create_from_surface()`` uses the vertex arrays from the ArrayMesh to calculate two additional arrays, one for edges and one for faces."
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:27
+msgid "``create_from_surface()`` uses the vertex arrays from the ArrayMesh to calculate two additional arrays, one for edges and one for faces, for a total of three arrays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:32
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:30
 msgid "An edge is a connection between any two vertices. Each edge in the edge array contains a reference to the two vertices it is composed of, and up to two faces that it is contained within."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:35
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:33
 msgid "A face is a triangle made up of three vertices and three corresponding edges. Each face in the face array contains a reference to the three vertices and three edges it is composed of."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:38
-msgid "The vertex array contains edges, faces, normals, color, tangent, uv, uv2, bones, and weight information connected with each vertex."
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:36
+msgid "The vertex array contains edge, face, normal, color, tangent, uv, uv2, bone, and weight information connected with each vertex."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:41
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:39
 msgid "To access information from these arrays you use a function of the form ``get_****()``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:51
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:49
 msgid "What you choose to do with these functions is up to you. A common use case is to iterate over all vertices and transform them in some way:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:62
-msgid "Finally, ``commit_to_surface()`` adds a new surface to the ArrayMesh. So if you are dynamically updating an existing ArrayMesh, first delete the existing surface before adding a new one."
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:60
+msgid "These modifications are not done in place on the ArrayMesh. If you are dynamically updating an existing ArrayMesh, first delete the existing surface before adding a new one using :ref:`commit_to_surface() <class_meshdatatool_method_commit_to_surface>`:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:71
-msgid "Below is a complete example that creates a pulsing blob complete with new normals and vertex colors."
+#: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:69
+msgid "Below is a complete example that turns a spherical mesh called ``mesh`` into a randomly deformed blob complete with updated normals and vertex colors. See :ref:`ArrayMesh tutorial <doc_arraymesh>` for how to generate the base mesh."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,54 +21,62 @@ msgid "Compiling with script encryption key"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:8
-msgid "The export dialog gives you the option to encrypt your scripts with an 256bit AES key, when releasing your game. This will make sure your scripts are not stored in plain text and can not easily be ripped by some script kiddie. Of course the key needs to be stored in the binary, but if it's compiled, optimized and without symbols, it would take some effort to find it."
+msgid "The export dialog gives you the option to encrypt your scripts with a 256-bit AES key when releasing your project. This will make sure your scripts are not stored in plain text and can not easily be ripped by some script kiddie."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:14
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:12
+msgid "Of course, the key needs to be stored in the binary, but if it's compiled, optimized and without symbols, it would take some effort to find it."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:15
 msgid "For this to work, you need to build the export templates from source, with that same key."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:20
+msgid "This will **not** work if you use official, precompiled export templates. It is absolutely **required** to compile your own export templates to use PCK encryption."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:25
 msgid "Step by step"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:20
-msgid "Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from `this service <https://asecuritysite.com/encryption/keygen>`_."
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:27
+msgid "Generate a 256-bit AES key in hexadecimal format. You can use the aes-256-cbc variant from `this service <https://asecuritysite.com/encryption/keygen>`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:23
-msgid "Alternatively, you can generate it yourself by using OpenSSL:"
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:30
+msgid "Alternatively, you can generate it yourself using `OpenSSL <https://www.openssl.org/>`__ command-line tools:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:37
 msgid "The output in ``godot.gdkey`` should be similar to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:35
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:44
 msgid "You can generate the key without redirecting the output to a file, but that way you can minimize the risk of exposing the key."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:38
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:47
 msgid "Set this key as environment variable in the console that you will use to compile Godot, like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:54
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:63
 msgid "Compile Godot export templates and set them as custom export templates in the export preset options."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:57
-msgid "Set the encryption key in the ``Script`` tab of the export preset:"
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:66
+msgid "Set the encryption key in the **Script** tab of the export preset:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:61
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:70
 msgid "Export the project. The game should run with encrypted scripts now."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:64
-msgid "Possible Errors"
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:73
+msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:66
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:75
 msgid "If you get an error like below, it means the key wasn't properly included in your Godot build. Godot is encrypting the scripts during export, but can't read them at runtime."
 msgstr ""
 

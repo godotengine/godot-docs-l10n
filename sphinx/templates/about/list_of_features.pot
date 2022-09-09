@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:10
-msgid "This page lists features supported by the current stable version of Godot (3.4). `More features <https://docs.godotengine.org/en/latest/about/list_of_features.html>`__ are available in the latest development version (4.0)."
+msgid "This page lists features supported by the current stable version of Godot (3.5). `More features <https://docs.godotengine.org/en/latest/about/list_of_features.html>`__ are available in the latest development version (4.0)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:93
-#: ../../docs/about/list_of_features.rst:385
+#: ../../docs/about/list_of_features.rst:395
 msgid "**Features:**"
 msgstr ""
 
@@ -151,23 +151,23 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:68
+msgid "Built-in offline class reference documentation."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:69
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:70
+#: ../../docs/about/list_of_features.rst:71
 msgid "**Plugins:**"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:72
+#: ../../docs/about/list_of_features.rst:73
 msgid "Editor plugins can be downloaded from the :ref:`asset library <doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:74
-msgid ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new"
-msgstr ""
-
 #: ../../docs/about/list_of_features.rst:75
-msgid "Download projects from the asset library in the project manager and import them directly. features or speed up your workflow."
+msgid ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new features or speed up your workflow."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:77
@@ -240,7 +240,7 @@ msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:111
-msgid "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for emoji). Supported formats are TTF, OTF and WOFF1."
+msgid "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:113
@@ -256,7 +256,7 @@ msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:117
-#: ../../docs/about/list_of_features.rst:245
+#: ../../docs/about/list_of_features.rst:244
 msgid "CPU-based particles."
 msgstr ""
 
@@ -540,7 +540,7 @@ msgstr ""
 msgid "**Particles:**"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:244
+#: ../../docs/about/list_of_features.rst:245
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 
@@ -553,31 +553,31 @@ msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:250
-msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:251
-msgid "*GLES3:* Near and far depth of field."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:252
-msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:253
-msgid "*GLES3:* Optional debanding to avoid color banding (effective when HDR rendering is enabled)."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:254
 msgid "Glow/bloom with optional bicubic upscaling and several blend modes available: Screen, Soft Light, Add, Replace."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:256
+#: ../../docs/about/list_of_features.rst:252
 msgid "Color correction using an one-dimensional ramp."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:257
+#: ../../docs/about/list_of_features.rst:253
 msgid "Brightness, contrast and saturation adjustments."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:254
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:255
+msgid "*GLES3:* Near and far depth of field."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:256
+msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:257
+msgid "*GLES3:* Optional debanding to avoid color banding (effective when HDR rendering is enabled)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:259
@@ -633,7 +633,7 @@ msgid "Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`. 
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:281
-msgid "Real-time occluder spheres. Not as effective as rooms and portals (and doesn't support gameplay notifications), but easier to set up."
+msgid "Real-time occluder shapes (sphere and polygon). Not as effective as rooms and portals (and doesn't support gameplay notifications), but easier to set up."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:286
@@ -828,591 +828,595 @@ msgstr ""
 msgid "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the community."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:383
-msgid "Audio"
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:387
-msgid "Mono, stereo, 5.1 and 7.1 output."
+#: ../../docs/about/list_of_features.rst:384
+msgid "`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, creating new projects using visual scripting in Godot is not recommended. Future Godot 4.x releases may have VisualScript reimplemented as an extension."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:388
-msgid "Non-positional and positional playback in 2D and 3D."
+msgid "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead, especially if you intend to migrate your project to Godot 4."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:390
-msgid "Optional Doppler effect in 2D and 3D."
+#: ../../docs/about/list_of_features.rst:393
+msgid "Audio"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:392
-msgid "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects with dozens of effects included."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:394
-msgid "Listener2D and Listener3D nodes to listen from a position different than the camera."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:395
-msgid "Audio input to record microphones with real-time access using the AudioEffectCapture class."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:396
-msgid "MIDI input."
+#: ../../docs/about/list_of_features.rst:397
+msgid "Mono, stereo, 5.1 and 7.1 output."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:398
-msgid "No support for MIDI output yet."
+msgid "Non-positional and positional playback in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:400
-msgid "**APIs used:**"
+msgid "Optional Doppler effect in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:402
-msgid "*Windows:* WASAPI."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:403
-msgid "*macOS:* CoreAudio."
+msgid "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects with dozens of effects included."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:404
-msgid "*Linux:* PulseAudio or ALSA."
+msgid "Listener2D and Listener3D nodes to listen from a position different than the camera."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:407
-msgid "Import"
+#: ../../docs/about/list_of_features.rst:405
+msgid "Audio input to record microphones with real-time access using the AudioEffectCapture class."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:409
-msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
+#: ../../docs/about/list_of_features.rst:406
+msgid "MIDI input."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:411
-msgid "**Formats:**"
+#: ../../docs/about/list_of_features.rst:408
+msgid "No support for MIDI output yet."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:410
+msgid "**APIs used:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:412
+msgid "*Windows:* WASAPI."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:413
-msgid "*Images:* See :ref:`doc_import_images`."
+msgid "*macOS:* CoreAudio."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:414
-msgid "*Audio:*"
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:416
-msgid "WAV with optional IMA-ADPCM compression."
+msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:417
-msgid "Ogg Vorbis."
+msgid "Import"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:418
-msgid "MP3."
+#: ../../docs/about/list_of_features.rst:419
+msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:420
-msgid "*3D scenes:*"
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:422
-msgid "glTF 2.0 *(recommended)*."
+#: ../../docs/about/list_of_features.rst:421
+msgid "**Formats:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:423
-msgid "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct export from Blender)."
+msgid "*Images:* See :ref:`doc_import_images`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:425
-msgid "FBX (experimental, static meshes only)."
+#: ../../docs/about/list_of_features.rst:424
+msgid "*Audio:*"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:426
-msgid "Collada (.dae)."
+msgid "WAV with optional IMA-ADPCM compression."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:427
-msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
+msgid "Ogg Vorbis."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:429
-msgid "3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate tangents on import, which ensures consistency with other 3D applications such as Blender."
+#: ../../docs/about/list_of_features.rst:428
+msgid "MP3."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:430
+msgid "*3D scenes:*"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:432
+msgid "glTF 2.0 *(recommended)*."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:433
-msgid "Input"
+msgid "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct export from Blender)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:435
-msgid "Input mapping system using hardcoded input events or remappable input actions."
+msgid "FBX (experimental, static meshes only)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:436
+msgid "Collada (.dae)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:437
-msgid "Axis values can be mapped to two different actions with a configurable deadzone."
+msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:438
-msgid "Use the same code to support both keyboards and gamepads."
+#: ../../docs/about/list_of_features.rst:439
+msgid "3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate tangents on import, which ensures consistency with other 3D applications such as Blender."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:440
-msgid "Keyboard input."
+#: ../../docs/about/list_of_features.rst:443
+msgid "Input"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:442
-msgid "Keys can be mapped in \"physical\" mode to be independent of the keyboard layout."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:444
-msgid "Mouse input."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:446
-msgid "The mouse cursor can be visible, hidden, captured or confined within the window."
+#: ../../docs/about/list_of_features.rst:445
+msgid "Input mapping system using hardcoded input events or remappable input actions."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:447
-msgid "When captured, raw input will be used on Windows and Linux to sidestep the OS' mouse acceleration settings."
+msgid "Axis values can be mapped to two different actions with a configurable deadzone."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:448
+msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:450
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:451
-msgid "Pen/tablet input with pressure support."
+msgid "Keyboard input."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:452
-msgid "Gamepad, keyboard and mouse input support are also available on Android."
+msgid "Keys can be mapped in \"physical\" mode to be independent of the keyboard layout."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:455
-msgid "Navigation"
+#: ../../docs/about/list_of_features.rst:454
+msgid "Mouse input."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:456
+msgid "The mouse cursor can be visible, hidden, captured or confined within the window."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:457
-msgid "A* algorithm in 2D and 3D."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:458
-msgid "Navigation meshes."
+msgid "When captured, raw input will be used on Windows and Linux to sidestep the OS' mouse acceleration settings."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:460
-msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
+msgid "Gamepad input (up to 8 simultaneous controllers)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:461
+msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:462
-msgid "Generate navigation meshes from the editor."
+msgid "Gamepad, keyboard and mouse input support are also available on Android."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:465
-msgid "Networking"
+msgid "Navigation"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:467
-msgid "Low-level TCP networking using StreamPeer and TCP_Server."
+msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:468
-msgid "Low-level UDP networking using PacketPeer and UDPServer."
+msgid "Navigation meshes with dynamic obstacle avoidance."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:469
-msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:470
-msgid "High-level HTTP requests using HTTPRequest."
+msgid "Generate navigation meshes from the editor or at run-time (including from an exported project)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:472
-msgid "Supports HTTPS out of the box using bundled certificates."
+msgid "Networking"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:474
-msgid "High-level multiplayer API using UDP and ENet."
+msgid "Low-level TCP networking using StreamPeer and TCP_Server."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:475
+msgid "Low-level UDP networking using PacketPeer and UDPServer."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:476
-msgid "Automatic replication using remote procedure calls (RPCs)."
+msgid "Low-level HTTP requests using HTTPClient."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:477
-msgid "Supports unreliable, reliable and ordered transfers."
+msgid "High-level HTTP requests using HTTPRequest."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:479
-msgid "WebSocket client and server, available on all platforms."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:480
-msgid "WebRTC client and server, available on all platforms."
+msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:481
-msgid "Support for UPnP to sidestep the requirement to forward ports when hosting a server behind a NAT."
+msgid "High-level multiplayer API using UDP and ENet."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:485
-msgid "Internationalization"
+#: ../../docs/about/list_of_features.rst:483
+msgid "Automatic replication using remote procedure calls (RPCs)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:484
+msgid "Supports unreliable, reliable and ordered transfers."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:486
+msgid "WebSocket client and server, available on all platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:487
-msgid "Full support for Unicode including emoji."
+msgid "WebRTC client and server, available on all platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:488
-msgid "Store localization strings using :ref:`CSV <doc_internationalizing_games>` or :ref:`gettext <doc_localization_using_gettext>`."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:490
-msgid "Use localized strings in your project automatically in GUI elements or by using the ``tr()`` function."
+msgid "Support for UPnP to sidestep the requirement to forward ports when hosting a server behind a NAT."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:492
-msgid "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
+msgid "Internationalization"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:494
+msgid "Full support for Unicode including emoji."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:495
-msgid "Windowing and OS integration"
+msgid "Store localization strings using :ref:`CSV <doc_internationalizing_games>` or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:497
-msgid "Move, resize, minimize, and maximize the window spawned by the project."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:498
-msgid "Change the window title and icon."
+msgid "Use localized strings in your project automatically in GUI elements or by using the ``tr()`` function."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:499
-msgid "Request attention (will cause the title bar to blink on most platforms)."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:500
-msgid "Fullscreen mode."
+msgid "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:502
-msgid "Doesn't use exclusive fullscreen, so the screen resolution can't be changed this way. Use a Viewport with a different resolution instead."
+msgid "Windowing and OS integration"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:504
+msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:505
-msgid "Borderless window (fullscreen or non-fullscreen)."
+msgid "Change the window title and icon."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:506
-msgid "Ability to keep the window always on top."
+msgid "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:507
-msgid "Transparent window with per-pixel transparency."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:508
-msgid "Global menu integration on macOS."
+msgid "Fullscreen mode."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:509
-msgid "Execute commands in a blocking or non-blocking manner."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:510
-msgid "Open file paths and URLs using default or custom protocol handlers (if registered on the system)."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:511
-msgid "Parse custom command line arguments."
+msgid "Doesn't use exclusive fullscreen, so the screen resolution can't be changed this way. Use a Viewport with a different resolution instead."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:512
-msgid ":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. Any binary can be used without a window using the ``--no-window`` :ref:`command line argument <doc_command_line_tutorial>`."
+msgid "Borderless window (fullscreen or non-fullscreen)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:513
+msgid "Ability to keep the window always on top."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:514
+msgid "Transparent window with per-pixel transparency."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:515
+msgid "Global menu integration on macOS."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:516
+msgid "Execute commands in a blocking or non-blocking manner."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:517
+msgid "Open file paths and URLs using default or custom protocol handlers (if registered on the system)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:518
-msgid "Mobile"
+msgid "Parse custom command line arguments."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:520
-msgid "In-app purchases on Android and iOS."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:521
-msgid "Support for advertisements using third-party modules."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:522
-msgid "Support for subview embedding on Android."
+#: ../../docs/about/list_of_features.rst:519
+msgid ":ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`. Any binary can be used without a window using the ``--no-window`` :ref:`command line argument <doc_command_line_tutorial>`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:525
-msgid "XR support (AR and VR)"
+msgid "Mobile"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:527
-msgid "Support for ARKit on iOS out of the box."
+msgid "In-app purchases on Android and iOS."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:528
-msgid "Support for the OpenXR APIs."
+msgid "Support for advertisements using third-party modules."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:530
-msgid "Includes support for popular headsets like the Meta Quest and the Valve Index."
+#: ../../docs/about/list_of_features.rst:529
+msgid "Support for subview embedding on Android."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:532
-msgid "Support for the OpenVR APIs."
+msgid "XR support (AR and VR)"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:534
+msgid "Support for ARKit on iOS out of the box."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:535
-msgid "GUI system"
+msgid "Support for the OpenXR APIs."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:537
-msgid "Godot's GUI is built using the same Control nodes used to make games in Godot. The editor UI can easily be extended in many ways using add-ons."
+msgid "Includes support for popular headsets like the Meta Quest and the Valve Index."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:540
-msgid "**Nodes:**"
+#: ../../docs/about/list_of_features.rst:539
+msgid "Support for the OpenVR APIs."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:542
-msgid "Buttons."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:543
-msgid "Checkboxes, check buttons, radio buttons."
+msgid "GUI system"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:544
-msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:545
-msgid "Dropdown menus using PopupMenu and OptionButton."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:546
-msgid "Scrollbars."
+msgid "Godot's GUI is built using the same Control nodes used to make games in Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:547
-msgid "Labels."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:548
-msgid "RichTextLabel for :ref:`text formatted using BBCode <doc_bbcode_in_richtextlabel>`."
+msgid "**Nodes:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:549
-msgid "Trees (can also be used to represent tables)."
+msgid "Buttons."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:550
-msgid "Color picker with RGB and HSV modes."
+msgid "Checkboxes, check buttons, radio buttons."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:551
-msgid "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, draggable splitter, ...)."
+msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:552
-msgid "Controls can be rotated and scaled."
+msgid "Dropdown menus using PopupMenu and OptionButton."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:553
+msgid "Scrollbars."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:554
-msgid "**Sizing:**"
+msgid "Labels."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:555
+msgid "RichTextLabel for :ref:`text formatted using BBCode <doc_bbcode_in_richtextlabel>`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:556
-msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
+msgid "Trees (can also be used to represent tables)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:557
-msgid "Containers to place GUI elements automatically following certain rules."
+msgid "Color picker with RGB and HSV modes."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:558
+msgid "Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, draggable splitter, ...)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:559
-msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ""
-
-#: ../../docs/about/list_of_features.rst:560
-msgid ":ref:`Grid <class_GridContainer>` layouts."
+msgid "Controls can be rotated and scaled."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:561
-msgid ":ref:`Margin <class_MarginContainer>` and :ref:`centered <class_CenterContainer>` layouts."
+msgid "**Sizing:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:563
-msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
+msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:565
-msgid "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
+#: ../../docs/about/list_of_features.rst:564
+msgid "Containers to place GUI elements automatically following certain rules."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:566
-msgid "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
+msgid ":ref:`Stack <class_BoxContainer>` layouts."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:567
+msgid ":ref:`Grid <class_GridContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:568
-msgid "**Theming:**"
+msgid ":ref:`Margin <class_MarginContainer>` and :ref:`centered <class_CenterContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:570
-msgid "Built-in theme editor."
+msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:572
+msgid "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:573
+msgid "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:575
+msgid "**Theming:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:577
+msgid "Built-in theme editor."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:579
 msgid "Generate a theme based on the current editor theme settings."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:574
+#: ../../docs/about/list_of_features.rst:581
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:576
+#: ../../docs/about/list_of_features.rst:583
 msgid "Supports rounded/beveled corners, drop shadows, per-border widths and antialiasing."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:578
+#: ../../docs/about/list_of_features.rst:585
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:580
+#: ../../docs/about/list_of_features.rst:587
 msgid "Godot's small distribution size can make it a suitable alternative to frameworks like Electron or Qt."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:584
+#: ../../docs/about/list_of_features.rst:591
 msgid "Animation"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:586
+#: ../../docs/about/list_of_features.rst:593
 msgid "Direct kinematics and inverse kinematics."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:587
+#: ../../docs/about/list_of_features.rst:594
 msgid ":ref:`Tween <class_Tween>` node to easily perform procedural animations by code."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:588
+#: ../../docs/about/list_of_features.rst:595
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:589
+#: ../../docs/about/list_of_features.rst:596
 msgid "Support for calling methods in animation tracks."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:590
+#: ../../docs/about/list_of_features.rst:597
 msgid "Support for playing sounds in animation tracks."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:591
+#: ../../docs/about/list_of_features.rst:598
 msgid "Support for Bézier curves in animation."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:594
+#: ../../docs/about/list_of_features.rst:601
 msgid "File formats"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:596
+#: ../../docs/about/list_of_features.rst:603
 msgid "Scenes and resources can be saved in :ref:`text-based <doc_tscn_file_format>` or binary formats."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:598
+#: ../../docs/about/list_of_features.rst:605
 msgid "Text-based formats are human-readable and more friendly to version control."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:599
+#: ../../docs/about/list_of_features.rst:606
 msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:601
+#: ../../docs/about/list_of_features.rst:608
 msgid "Read and write text or binary files using :ref:`class_File`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:603
+#: ../../docs/about/list_of_features.rst:610
 msgid "Can optionally be compressed or encrypted."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:605
+#: ../../docs/about/list_of_features.rst:612
 msgid "Read and write :ref:`class_JSON` files."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:606
+#: ../../docs/about/list_of_features.rst:613
 msgid "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:608
+#: ../../docs/about/list_of_features.rst:615
 msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:610
+#: ../../docs/about/list_of_features.rst:617
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:611
+#: ../../docs/about/list_of_features.rst:618
 msgid "Pack game data into a PCK file (custom format optimized for fast seeking), into a ZIP archive, or directly into the executable for single-file distribution."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:613
+#: ../../docs/about/list_of_features.rst:620
 msgid ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by the engine to support mods and DLCs."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:617
+#: ../../docs/about/list_of_features.rst:624
 msgid "Miscellaneous"
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:619
+#: ../../docs/about/list_of_features.rst:626
 msgid ":ref:`Low-level access to servers <doc_using_servers>` which allows bypassing the scene tree's overhead when needed."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:621
+#: ../../docs/about/list_of_features.rst:628
 msgid ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:623
+#: ../../docs/about/list_of_features.rst:630
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:624
+#: ../../docs/about/list_of_features.rst:631
 msgid "`Shell completion scripts <https://github.com/godotengine/godot/tree/master/misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:627
+#: ../../docs/about/list_of_features.rst:634
 msgid "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked into the engine binary."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:629
+#: ../../docs/about/list_of_features.rst:636
 msgid "Engine and editor written in C++03."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:631
+#: ../../docs/about/list_of_features.rst:638
 msgid "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, Clang and MSVC. MinGW is also supported."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:633
+#: ../../docs/about/list_of_features.rst:640
 msgid "Friendly towards packagers. In most cases, system libraries can be used instead of the ones provided by Godot. The build system doesn't download anything. Builds can be fully reproducible."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:636
+#: ../../docs/about/list_of_features.rst:643
 msgid "Godot 4.0 will be written in C++17."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:638
+#: ../../docs/about/list_of_features.rst:645
 msgid "Licensed under the permissive MIT license."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:640
+#: ../../docs/about/list_of_features.rst:647
 msgid "Open developement process with :ref:`contributions welcome <doc_ways_to_contribute>`."
 msgstr ""
 
-#: ../../docs/about/list_of_features.rst:644
+#: ../../docs/about/list_of_features.rst:651
 msgid "The `Godot proposals repository <https://github.com/godotengine/godot-proposals>`__ lists features that have been requested by the community and may be implemented in future Godot releases."
 msgstr ""
 

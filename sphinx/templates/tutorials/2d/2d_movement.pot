@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,27 +108,27 @@ msgstr ""
 msgid "This last example uses only the mouse to control the character. Clicking on the screen will cause the player to move to the target location."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
+#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid "Note the ``distance_to()`` check we make prior to movement. Without this test, the body would \"jitter\" upon reaching the target position, as it moves slightly past the position and tries to move back, only to move too far and repeat."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:348
+#: ../../docs/tutorials/2d/2d_movement.rst:353
 msgid "Uncommenting the ``look_at()`` line will also turn the body to point in its direction of motion if you prefer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:351
+#: ../../docs/tutorials/2d/2d_movement.rst:356
 msgid "This technique can also be used as the basis of a \"following\" character. The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:355
+#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid "Summary"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:357
+#: ../../docs/tutorials/2d/2d_movement.rst:362
 msgid "You may find these code samples useful as starting points for your own projects. Feel free to use them and experiment with them to see what you can make."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:360
+#: ../../docs/tutorials/2d/2d_movement.rst:365
 msgid "You can download this sample project here: :download:`2D_movement_demo.zip <files/2D_movement_demo.zip>`"
 msgstr ""
 

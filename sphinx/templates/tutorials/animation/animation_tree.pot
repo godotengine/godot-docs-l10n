@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
-msgid "With :ref:`AnimationPlayer <class_AnimationPlayer>`, Godot has one of the most flexible animation systems that you can find in any game engine. The ability to animate pretty much any property in any node or resource, as well as having dedicated transform, bezier, function calling, audio and sub-animation tracks, is pretty much unique."
+msgid "With :ref:`AnimationPlayer <class_AnimationPlayer>`, Godot has one of the most flexible animation systems that you can find in any game engine. The ability to animate almost any property in any node or resource, as well as having dedicated transform, bezier, function calling, audio and sub-animation tracks, is pretty much unique."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:13
@@ -213,11 +213,11 @@ msgid "StateMachine"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
-msgid "This node is a relatively simple state machine. Root nodes can be created and connected via lines. States are connected via *Transitions*, which are connections with special properties. Transitions are uni-directional, but two can be used to connect in both ways."
+msgid "This node acts as a state machine with root nodes as states. Root nodes can be created and connected via lines. States are connected via *Transitions*, which are connections with special properties. Transitions are uni-directional, but two can be used to connect in both directions."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:171
-msgid "There are many types of transitions:"
+msgid "There are many types of transition:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:175
@@ -253,11 +253,11 @@ msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:188
-msgid "*Priority* is used together with the ``travel()`` function from code (more on this later). When travelling from a state to another, give more priority to this node."
+msgid "*Priority* is used together with the ``travel()`` function from code (more on this later). Lower priority transitions are preferred when travelling through the tree."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:189
-msgid "*Disabled* allows to disable this transition (it will not be used during travel or auto advance)."
+msgid "*Disabled* toggles disabling this transition (when disabled, it will not be used during travel or auto advance)."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
@@ -281,7 +281,7 @@ msgid "This can be fed to functions such as :ref:`KinematicBody.move_and_slide <
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:216
-msgid "There is also a tool node, ``RootMotionView``, that can be placed in a scene and will act as a custom floor for your character and animations (this node is normally disabled during the game)."
+msgid "There is also a tool node, ``RootMotionView``, that can be placed in a scene and will act as a custom floor for your character and animations (this node is disabled by default during the game)."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:223
@@ -293,7 +293,7 @@ msgid "After building the tree and previewing it, the only question remaining is
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:227
-msgid "Keep in mind that the animation nodes are just resources and, as such, they are shared between all the instances. Setting values in the nodes directly will affect all instances of the scene that uses this ``AnimationTree``. This has some cool use cases, though, e.g. you can copy and paste parts of your animation tree, or reuse nodes with a complex layout (such as a state machine or blend space) in different animation trees."
+msgid "Keep in mind that the animation nodes are just resources and, as such, they are shared between all instances using them. Setting values in the nodes directly will affect all instances of the scene that uses this ``AnimationTree``. This is generally undesirable, but does have some cool use cases, e.g. you can copy and paste parts of your animation tree, or reuse nodes with a complex layout (such as a state machine or blend space) in different animation trees."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:232
@@ -317,18 +317,18 @@ msgid "State machine travel"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:261
-msgid "One of the nice features in Godot's ``StateMachine`` implementation is the ability to travel. The graph can be instructed to go from the current state to another one, while visiting all the intermediate ones. This is done via the A\\* algorithm. In the absence of any transition between the current state and the destination state, the graph teleports to the destination state."
+msgid "One of the nice features in Godot's ``StateMachine`` implementation is the ability to travel. The graph can be instructed to go from the current state to another one, while visiting all the intermediate ones. This is done via the A\\* algorithm. In the absence of any viable set of transitions starting at the current state and finishing at the destination state, the graph teleports to the destination state."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:265
+#: ../../docs/tutorials/animation/animation_tree.rst:266
 msgid "To use the travel ability, you should first retrieve the :ref:`AnimationNodeStateMachinePlayback <class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` node (it is exported as a property)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:278
+#: ../../docs/tutorials/animation/animation_tree.rst:279
 msgid "Once retrieved, it can be used by calling one of the many functions it offers:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:289
+#: ../../docs/tutorials/animation/animation_tree.rst:290
 msgid "The state machine must be running before you can travel. Make sure to either call ``start()`` or choose a node to **Autoplay on Load**."
 msgstr ""
 

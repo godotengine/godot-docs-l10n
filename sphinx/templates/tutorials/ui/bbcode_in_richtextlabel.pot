@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.4\n"
+"Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 13:53+0200\n"
+"POT-Creation-Date: 2022-09-09 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -465,71 +465,75 @@ msgstr ""
 msgid "You can extend the :ref:`class_RichTextEffect` resource type to create your own custom BBCode tags. You begin by extending the :ref:`class_RichTextEffect` resource type. Add the ``tool`` prefix to your GDScript file if you wish to have these custom effects run within the editor itself. The RichTextLabel does not need to have a script attached, nor does it need to be running in ``tool`` mode. The new effect will be activable in the Inspector through the **Custom Effects** property."
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:226
-msgid "There is only one function that you need to extend: ``_process_custom_fx(char_fx)``. Optionally, you can also provide a custom BBCode identifier simply by adding a member name ``bbcode``. The code will check the ``bbcode`` property automatically or will use the name of the file to determine what the BBCode tag should be."
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:228
+msgid "If the custom effect is not registered within the RichTextLabel's **Custom Effects** property, no effect will be visible and the original tag will be left as-is."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:232
-msgid "``_process_custom_fx``"
-msgstr ""
-
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:234
-msgid "This is where the logic of each effect takes place and is called once per character during the draw phase of text rendering. This passes in a :ref:`class_CharFXTransform` object, which holds a few variables to control how the associated character is rendered:"
+msgid "There is only one function that you need to extend: ``_process_custom_fx(char_fx)``. Optionally, you can also provide a custom BBCode identifier simply by adding a member name ``bbcode``. The code will check the ``bbcode`` property automatically or will use the name of the file to determine what the BBCode tag should be."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:238
-msgid "``identity`` specifies which custom effect is being processed. You should use that for code flow control."
+msgid "``_process_custom_fx``"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:240
-msgid "``relative_index`` tells you how far into a given custom effect block you are in as an index."
-msgstr ""
-
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:242
-msgid "``absolute_index`` tells you how far into the entire text you are as an index."
-msgstr ""
-
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:243
-msgid "``elapsed_time`` is the total amount of time the text effect has been running."
+msgid "This is where the logic of each effect takes place and is called once per character during the draw phase of text rendering. This passes in a :ref:`class_CharFXTransform` object, which holds a few variables to control how the associated character is rendered:"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:244
-msgid "``visible`` will tell you whether the character is visible or not and will also allow you to hide a given portion of text."
+msgid "``identity`` specifies which custom effect is being processed. You should use that for code flow control."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:246
-msgid "``offset`` is an offset position relative to where the given character should render under normal circumstances."
+msgid "``relative_index`` tells you how far into a given custom effect block you are in as an index."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:248
-msgid "``color`` is the color of a given character."
+msgid "``absolute_index`` tells you how far into the entire text you are as an index."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:249
-msgid "Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` with an optional default value to retrieve each parameter, if specified by the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in its ` `env`` Dictionary. See below for more usage examples."
+msgid "``elapsed_time`` is the total amount of time the text effect has been running."
+msgstr ""
+
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:250
+msgid "``visible`` will tell you whether the character is visible or not and will also allow you to hide a given portion of text."
+msgstr ""
+
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:252
+msgid "``offset`` is an offset position relative to where the given character should render under normal circumstances."
+msgstr ""
+
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:254
+msgid "``color`` is the color of a given character."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:255
+msgid "Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` with an optional default value to retrieve each parameter, if specified by the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in its ` `env`` Dictionary. See below for more usage examples."
+msgstr ""
+
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:261
 msgid "The last thing to note about this function is that it is necessary to return a boolean ``true`` value to verify that the effect processed correctly. This way, if there's a problem with rendering a given character, it will back out of rendering custom effects entirely until the user fixes whatever error cropped up in their custom effect logic."
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:260
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:266
 msgid "Here are some examples of custom effects:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:263
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:269
 msgid "Ghost"
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:286
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:292
 msgid "Pulse"
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:313
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:319
 msgid "Matrix"
 msgstr ""
 
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:348
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:354
 msgid "This will add a few new BBCode commands, which can be used like so:"
 msgstr ""
 
