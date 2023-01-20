@@ -6,6 +6,7 @@
 # Daniel Kříž <Daniel.kriz@protonmail.com>, 2020.
 # David Husička <davidek251@seznam.cz>, 2020.
 # David Kubeš <kubesdavid@email.cz>, 2019.
+# Dominik Strnad <domi.str@seznam.cz>, 2022.
 # Jakub Janšta <jansta.ja@gmail.com>, 2021.
 # Jakub Smetana <kubiceks76@gmail.com>, 2018.
 # jakub zukal <jakubzukal@email.cz>, 2018.
@@ -18,6 +19,7 @@
 # Mirinek <mirek.nozicka77@gmail.com>, 2022.
 # Miroslav Kotalík <mikotalik@seznam.cz>, 2019.
 # Ondrej Pavelka <ondrej.pavelka@outlook.com>, 2020.
+# Ondřej Pavelka <flamekick97@gmail.com>, 2022-2023.
 # ProfJack <profjackcz@gmail.com>, 2021.
 # Reiqy <kvetny.michal@gmail.com>, 2020.
 # SharpCat <mix9k846@gmail.com>, 2019.
@@ -35,8 +37,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-09-09 16:03+0200\n"
-"PO-Revision-Date: 2022-08-29 04:21+0000\n"
-"Last-Translator: Mirinek <mirek.nozicka77@gmail.com>\n"
+"PO-Revision-Date: 2023-01-06 09:59+0000\n"
+"Last-Translator: Ondřej Pavelka <flamekick97@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -44,7 +46,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -76,9 +78,8 @@ msgid "Class reference"
 msgstr "Dokumentace tříd"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Godot Dokumentace – *3.4* větev"
+msgstr "Godot Dokumentace – *3.5* větev"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -90,16 +91,15 @@ msgstr ""
 "zobrazení seznamu."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the 3.5 branch. Looking for the documentation "
 "of the current **development** branch? `Have a look here <https://docs."
 "godotengine.org/en/latest>`_. You can also browse the documentation for the "
 "current stable `3.4 <https://docs.godotengine.org/en/3.4>`_ branch."
 msgstr ""
-"Zde je dokumentace pro stabilní 3.3 větev. Hledáte dokumentaci pro aktuální "
-"**development** větev? Podívejte se `zde <https://docs.godotengine.org/en/"
-"latest>`_. Také můžete prohlížet dokumentaci pro předešlou stabilní `3.3 "
+"Zde je dokumentace pro stabilní 3.5 větev. Hledáte dokumentaci pro aktuální "
+"**development** větev? Podívejte se zde `<https://docs.godotengine.org/en/"
+"latest>`_. Také můžete prohlížet dokumentaci pro předešlou stabilní `3.4 "
 "<https://docs.godotengine.org/en/3.2>`_ větev."
 
 #: ../../docs/index.rst:18
@@ -140,10 +140,10 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Vítejete v officialní dokumentaci `Godot Engine <https://godotengine."
-"org>`__, svobodném a open source komunitou poháněném 2D a 3D herním enginu! "
-"Jste-li zde poprvé, doporučujeme prečíst si :ref:`introduction page "
-"<doc_about_intro>` pro lepší představu co tato dokumentace nabízí."
+"Vítejte v oficiální dokumentaci `Godot Engine <https://godotengine.org>`__, "
+"svobodném a open-source komunitou řízeném 2D a 3D herním enginu! Jste-li zde "
+"poprvé, doporučujeme prečíst si :ref:`introduction page <doc_about_intro>` "
+"pro lepší představu, co tato dokumentace nabízí."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -353,8 +353,8 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Herní engine je komplexní nástroj, tudíž je těžké prezentovat Godot pár "
-"slovy. Zde je krátký přehled, který múžete kdykoliv použít když potřebujete "
+"Herní engine je komplexní nástroj, a proto je těžké představit Godot pár "
+"slovy. Zde je krátký přehled, který můžete volně použít , potřebujete-li "
 "rychlý zápis o Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
@@ -674,9 +674,8 @@ msgid ":ref:`Web <doc_using_the_web_editor>`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Doplněk pro Android"
+msgstr "Android (experimentální)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -5088,6 +5087,7 @@ msgid ""
 "This series will introduce you to Godot and give you an overview of its "
 "features."
 msgstr ""
+"Tato série vás uvede do enginu Godot a poskytne vám přehled o jeho funkcích."
 
 #: ../../docs/getting_started/introduction/index.rst:11
 msgid ""
@@ -5096,6 +5096,10 @@ msgid ""
 "engine's most essential concepts, run you through the editor's interface, "
 "and give you tips to make the most of your time learning it."
 msgstr ""
+"Na následujících stránkách dostanete odpovědi na otázky jako \"Je Godot pro "
+"mě? nebo \"K čemu můžu Godot použít?\" Potom si představíme nejzákladnější "
+"pojmy enginu, provedeme vás rozhraním editoru a dáme vám pár tipů, jak "
+"nejlépe využít váš čas učením."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:4
 msgid "Introduction to Godot"
@@ -5108,12 +5112,18 @@ msgid ""
 "a feel for what you can achieve with it and answer questions such as \"what "
 "do I need to know to get started?\"."
 msgstr ""
+"Tento článek je zde, aby vám pomohl zjistit, zda by pro vás Godot mohl být "
+"vhodný. Představíme si některé široké funkce enginu, abyste měli představu o "
+"tom, čeho s ním můžete dosáhnout a odpovíme na otázky jako „co potřebuji "
+"vědět, abych mohl začít?“."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:11
 msgid ""
 "This is by no means an exhaustive overview. We will introduce many more "
 "features in this getting started series."
 msgstr ""
+"V žádném případě se nejedná o vyčerpávající přehled. V této sérii Začínáme "
+"si představíme mnoho dalších funkcí."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
 msgid "What is Godot?"
@@ -5125,12 +5135,17 @@ msgid ""
 "sorts of projects. You can use it to create games or applications you can "
 "then release on desktop or mobile, as well as on the web."
 msgstr ""
+"Godot je univerzální 2D a 3D herní engine navržený pro podporu nejrůznějších "
+"projektů. Můžete ho použít k vytváření her nebo aplikací, které pak můžete "
+"vydat na desktop nebo mobilní telefon, stejně tak jako na web."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:21
 msgid ""
 "You can also create console games with it, although you either need strong "
 "programming skills or a developer to port the game for you."
 msgstr ""
+"Můžete s ním vytvořit také hry pro konzole, ačkoli budete potřebovat značné "
+"programátorské dovednosti nebo vývojáře, který vám hru přenese za vás."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
 msgid ""
@@ -5139,6 +5154,9 @@ msgid ""
 "you use, though, releasing games on consoles is always a lot of work. You "
 "can read more on that here: :ref:`doc_consoles`."
 msgstr ""
+"Tým Godot enginu nemůže poskytovat export open-source projektů kvůli "
+"licenčním podmínkám, stanoveným výrobci konzolí. Bez ohledu na engine, který "
+"použijete, znamená vydávání her pro konzole vždy hodně práce."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:30
 #, fuzzy
@@ -5151,12 +5169,16 @@ msgid ""
 "development started in 2001, and the engine was rewritten and improved "
 "tremendously since its open-source release in 2014."
 msgstr ""
+"Godot byl původně vyvinut Argentinským herním studiem. Jeho vývoj začal v "
+"roce 2001 a jeho engine byl přepsán a vylepšen od doby, kdy byl uvolněn jako "
+"open-source roku 2014."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:36
 msgid ""
 "Some examples of games created with Godot include Ex-Zodiac and Helms of "
 "Fury."
 msgstr ""
+"Nějaké příklady her vytvořených s Godot zahrnují Ex-Zodiac a Helms of Fury."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:42
 msgid ""
@@ -5293,7 +5315,7 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:8
 msgid "Overview of Godot's key concepts"
-msgstr ""
+msgstr "Přehled Godot klíčových konceptů"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:10
 msgid ""
@@ -5302,6 +5324,10 @@ msgid ""
 "together into **scenes**. You can then wire these nodes so they can "
 "communicate using **signals**."
 msgstr ""
+"Každý herní engine se točí kolem abstrakcí, které používáte k tvorbě vašich "
+"aplikací. V Godot je hra **strom (tree)** **uzlů (nodes)**, které "
+"seskupujete dohromady do **scén**. Tyto uzly potom můžete propojit, takže "
+"mohou komunikovat pomocí **signálů**."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:15
 msgid ""
@@ -5309,6 +5335,9 @@ msgid ""
 "briefly to give you a sense of how the engine works. In the getting started "
 "series, you will get to use them in practice."
 msgstr ""
+"Toto jsou čtyři základní koncepty, které se zde naučíte. Krátce se na ně "
+"podíváme, abyste měli představu, jak engine funguje. V sérii Začínáme je "
+"využijete v praxi."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:20
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:38
@@ -5323,12 +5352,18 @@ msgid ""
 "level, or anything you can think of. Godot's scenes are flexible; they fill "
 "the role of both prefabs and scenes in some other game engines."
 msgstr ""
+"V Godot rozložíte vaši hru na znovupoužitelné scény. Scéna může být postava, "
+"zbraň, menu v uživatelském rozhraní, samostatný dům, celá úroveň nebo "
+"cokoliv vás jen napadne. Scény v Godot jsou přizpůsobivé; plní roli jak "
+"prefabrikátů, tak scén jako v některých jiných herních enginech."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:29
 msgid ""
 "You can also nest scenes. For example, you can put your character in a "
 "level, and drag and drop a scene as a child of it."
 msgstr ""
+"Také můžete scény vnořovat. Například můžete vložit postavu do úrovně a "
+"přetáhnout scénu jako její dítě (child)."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:35
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:13
@@ -5344,18 +5379,25 @@ msgid ""
 "building blocks that you arrange into trees. Here's an example of a "
 "character's nodes."
 msgstr ""
+"Scéna je složena z jednoho nebo více **uzlů**. Uzly jsou nejmenší stavební "
+"bloky vaší hry, které uspořádáváte do stromů. Zde je příklad uzlů postavy "
+"hráče."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:43
 msgid ""
 "It is made of a ``KinematicBody2D`` node named \"Character\", a ``Sprite``, "
 "a ``Camera2D``, and a ``CollisionShape2D``."
 msgstr ""
+"Je tvořena uzlem ``KinematicBody2D`` jménem \"Character\", ``Sprite``, "
+"``Camera2D``, a ``CollisionShape2D``."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:46
 msgid ""
 "The node names end with \"2D\" because this is a 2D scene. Their 3D "
 "counterpart have names that end with \"3D\"."
 msgstr ""
+"Názvy uzlů končí s \"2D\", protože toto je 2D scéna. Jejich 3D protějšek má "
+"jména s \"3D\" na konci."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:49
 msgid ""
@@ -5363,6 +5405,9 @@ msgid ""
 "tree of nodes as a scene, it then shows as a single node, with its internal "
 "structure hidden in the editor."
 msgstr ""
+"Všimněte si jak uzly a scény vypadají v editoru stejně. Když uložíte strom "
+"uzlů jako scénu, zobrazí se potom jako jeden uzel se skrytou vnitřní "
+"strukturou v editoru."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:53
 msgid ""
@@ -5370,11 +5415,14 @@ msgid ""
 "extend to build more powerful ones. 2D, 3D, or user interface, you will do "
 "most things with these nodes."
 msgstr ""
+"Godot poskytuje rozsáhlou knihovnu základních typů uzlů, které můžete "
+"kombinovat a rozšiřovat pro stavění mocnějších uzlů. 2D, 3D nebo uživatelské "
+"rozhraní, s těmito uzly uděláte většinu věcí."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:60
 #: ../../docs/development/file_formats/tscn.rst:71
 msgid "The scene tree"
-msgstr ""
+msgstr "Stromová struktura scén"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:62
 msgid ""
@@ -5383,6 +5431,10 @@ msgid ""
 "of nodes. But it's easier to think of your game in terms of scenes as they "
 "can represent characters, weapons, doors, or your user interface."
 msgstr ""
+"Všechny vaše herní scény se dají dohromady ve **stromové struktuře**, "
+"doslova stromu scén. A scény jsou stromy uzlů, stromová struktura je také "
+"stromem uzlů. Ale jednodušší je přemýšlet o vaší hře ve smyslu scén, jak "
+"mohou představovat postavy, zbraně, dveře nebo uživatelské rozhraní."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:70
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:1409
@@ -5399,6 +5451,9 @@ msgid ""
 "nodes communicate without hard-wiring them in code. It gives you a lot of "
 "flexibility in how you structure your scenes."
 msgstr ""
+"Uzly vysílají signály, když nastane nějaká událost (event). Tato funkce vám "
+"umožní, aby uzly komunikovali, aniž by byly natvrdo propojeny v kódu. To vám "
+"poskytuje mnoho možností jak strukturovat scény."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:78
 msgid ""
@@ -5414,6 +5469,9 @@ msgid ""
 "signal to run code in reaction to this event, like starting the game or "
 "opening a menu."
 msgstr ""
+"Například tlačítka (buttons) vyšlou signál, když jsou stisknuty. K tomuto "
+"kódu můžete připojit kód k reakci na událost jako je zahájení hry nebo "
+"otevření menu."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:85
 msgid ""
@@ -5421,6 +5479,9 @@ msgid ""
 "character or monster entered a given area, and much more. You can also "
 "define new signals tailored to your game."
 msgstr ""
+"Ostatní vestavěné signály vám mohou říct, když dva objekty kolidovali, když "
+"postava nebo příšera vstoupí do určité zóny a mnohem více. Také si můžete "
+"definovat nové signály, ušité na míru vaší hře."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:90
 #: ../../docs/getting_started/step_by_step/instancing.rst:212
@@ -5439,6 +5500,8 @@ msgid ""
 "Nodes, scenes, the scene tree, and signals are four core concepts in Godot "
 "that you will manipulate all the time."
 msgstr ""
+"Uzly, scény, stromová struktura scén a signály jsou čtyři základní koncepty, "
+"se kterými budete v Godot manipulovat pořád."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:95
 msgid ""
@@ -5447,12 +5510,18 @@ msgid ""
 "signals to make nodes react to events in other nodes or different scene tree "
 "branches."
 msgstr ""
+"Uzly jsou nejmenší stavební bloky vaší hry. Můžete je kombinovat pro "
+"vytvoření scén, které můžete kombinovat a zanořovat ve stromové struktuře "
+"scén. Potom můžete použít signály pro reakci uzlů na události v ostatních "
+"uzlech nebo větvích stromu scén."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:99
 msgid ""
 "After this short breakdown, you probably have many questions. Bear with us "
 "as you will get many answers throughout the getting started series."
 msgstr ""
+"Po tomto krátkém rozboru máte nejspíš mnoho otázek. Zůstaňte s námi, protože "
+"během série Začínáme se vám dostane mnoho odpovědí."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:40
@@ -5464,12 +5533,16 @@ msgid ""
 "This page will give you a brief overview of Godot's interface. We're going "
 "to look at the different main screens and docks to help you situate yourself."
 msgstr ""
+"Tato stránka vám dá stručný přehled o rozhraní Godot. Podíváme se na různé "
+"hlavní obrazovky a doky, abyste se lépe zorientovali."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:15
 msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <toc-learn-editor>`."
 msgstr ""
+"Pro podrobnější rozbor uživatelského rozhraní a jak ho používat navštivte: :"
+"ref:`Editor manual <toc-learn-editor>`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:19
 msgid "The Project manager"
@@ -5492,6 +5565,9 @@ msgid ""
 "projects, templates, and completed projects, including many that are "
 "developed by the community."
 msgstr ""
+"V horní části okna je další karta pojmenovaná \"Asset Library Projects\". V "
+"open-source knihovně assetů můžete vyhledávat ukázkové projekty, šablony a "
+"dokončené projekty, včetně těch vyvíjených komunitou."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:33
 msgid ""
@@ -5499,18 +5575,25 @@ msgid ""
 "right of the engine's version in the window's top-right corner. By default, "
 "it is in English (EN)."
 msgstr ""
+"Také můžete změnit jazyk editoru pomocí rozbalovací nabídky napravo od verze "
+"enginu v pravém horním rohu. Ve výchozím nastavení je v anglickém jazyce "
+"(EN)."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:42
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas."
 msgstr ""
+"Když otevřete nový nebo existující projekt, objeví se rozhraní editoru. "
+"Podívejme se na jeho hlavní oblasti."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:47
 msgid ""
 "By default, it features **menus**, **main screens**, and playtest buttons "
 "along the window's top edge."
 msgstr ""
+"Ve výchozím nastavení obsahuje **nabídky**, **hlavní obrazovky** a tlačítka "
+"pro spouštění a testování projektu podél horního okraje okna."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:52
 msgid ""
@@ -5525,30 +5608,36 @@ msgid ""
 "On either side of the viewport sit the **docks**. And at the bottom of the "
 "window lies the **bottom panel**."
 msgstr ""
+"Na obou stranách od výřezu leží **doky**. A na spodu okna leží **spodní "
+"panel**."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:60
 msgid ""
 "The toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar."
 msgstr ""
+"Panel nástrojů se mění v souvislosti s vybraným uzlem. Zde je panel nástrojů "
+"pro 2D."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:64
 msgid "Below is the 3D one."
-msgstr ""
+msgstr "Níže pro 3D."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:68
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "be it scripts, images, audio samples, and more."
 msgstr ""
+"Podívejme se na doky. Dok **Souborový systém (FileSystem)** obsahuje seznam "
+"souborů projektu, ať už jsou to skripty, obrázky, zvukové nahrávky a další."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:73
 msgid "The **Scene** dock lists the active scene's nodes."
-msgstr ""
+msgstr "Dok **Scéna** obsahuje seznam uzlů aktivní scény."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:77
 msgid "The **Inspector** allows you to edit the properties of a selected node."
-msgstr ""
+msgstr "**Inspektor** vám umožňuje upravovat vlastnosti vybraného uzlu."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:81
 msgid ""
@@ -5556,19 +5645,21 @@ msgid ""
 "console, the animation editor, the audio mixer, and more. They can take "
 "precious space, that's why they're folded by default."
 msgstr ""
-"**Dolní Panel**, situovaný pod výřezem, hostí ladicí konzoly, editor "
-"animace, audio mixer ... Tyto panely sou široké a mohou zabírat drahocenný "
-"prostor. To je důvod, proč jsou ve výchozím nastavení složeny."
+"**Dolní Panel**, situovaný pod výřezem, hostí ladicí konzoli, editor "
+"animace, audio mixer a další. Tyto panely mohou zabírat drahocenný prostor, "
+"proto jsou ve výchozím nastavení složeny."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:87
 msgid ""
 "When you click on one, it expands vertically. Below, you can see the "
 "animation editor opened."
 msgstr ""
+"Když na jeden kliknete, roztáhne se svisle. Níže vidíte otevřený editor "
+"animace."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:92
 msgid "The four main screens"
-msgstr ""
+msgstr "Čtyři hlavní obrazovky"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:94
 msgid ""
@@ -5616,6 +5707,8 @@ msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
+"Obrazovka **Script** je kompletní editor kódu s debuggerem, bohatým "
+"automatickým dokončováním a vestavěnými referencemi kódu."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:120
 msgid ""
@@ -5650,34 +5743,43 @@ msgstr ""
 msgid ""
 "Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."
 msgstr ""
+"Stisknutím :kbd:`F1` (nebo :kbd:`Alt + Space` na macOS) kdekoliv v editoru."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:137
 msgid ""
 "Clicking the \"Search Help\" button in the top-right of the Script main "
 "screen."
 msgstr ""
+"Kliknutím na tlačítko \"Hledat v dokumentaci\" vpravo nahoře hlavní "
+"obrazovky Script."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:138
 msgid "Clicking on the Help menu and Search Help."
-msgstr ""
+msgstr "Kliknutím na Nápověda v menu a Hledat v dokumentaci."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:139
 msgid ""
 "Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
 "or built-in variable in the script editor."
 msgstr ""
+"Při držení klávesy :kbd:`Ctrl` kliknutím na jméno třídy, jméno funkce nebo "
+"vestavěné proměnné v editoru scriptů."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:145
 msgid ""
 "When you do any of these, a window pops up. Type to search for any item. You "
 "can also use it to browse available objects and methods."
 msgstr ""
+"Když něco z toho uděláte, vyskočí okno. Pište pro vyhledání libovolné "
+"položky. Můžete jej také použít k procházení dostupných objektů a metod."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:150
 msgid ""
 "Double-click on an item to open the corresponding page in the script main "
 "screen."
 msgstr ""
+"Dvojitým poklepáním na položku se otevře odpovídající stránka v hlavní "
+"obrazovce skriptu."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:8
 msgid "Learning new features"
@@ -6479,6 +6581,9 @@ msgid ""
 "the ingredients in a recipe. There are dozens of kinds that can display an "
 "image, play a sound, represent a camera, and much more."
 msgstr ""
+"**Uzly jsou základní stavební kameny vaší hry**. Jsou něco jako ingredience "
+"v receptu. Existují desítky druhů uzlů, které mohou zobrazit obrázek, "
+"přehrát zvuk, představovat kameru a mnohem více."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:21
 msgid "All nodes have the following attributes:"
@@ -8375,6 +8480,9 @@ msgid ""
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"V této sérii krok za krokem tutoriálů si vytvoříte vaši první kompletní 2D "
+"hru pomocí Godot. Na konci série budete mít jednoduchou, ale kompletní "
+"vlastní hru, jako je na obrázku níže."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:12
 msgid ""
@@ -14369,7 +14477,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
-msgstr ""
+msgstr "Pořadí vykreslování"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -14402,7 +14510,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
-msgstr ""
+msgstr "Rozšířit"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid ""
@@ -14441,7 +14549,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid "Angular Velocity"
-msgstr ""
+msgstr "Úhlová rychlost"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:230
 msgid "Angular velocity is the initial angular velocity applied to particles."
@@ -14495,7 +14603,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Damping"
-msgstr ""
+msgstr "Tlumení"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid ""
@@ -14506,7 +14614,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Angle"
-msgstr ""
+msgstr "Úhel"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:280
 msgid ""
@@ -16159,7 +16267,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:18
 msgid "Cameras"
-msgstr ""
+msgstr "Kamery"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
@@ -22101,9 +22209,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/occluders.rst:118
-#, fuzzy
 msgid "Some guidelines:"
-msgstr "Pokyny pro obsah"
+msgstr "Pokyny pro obsah:"
 
 #: ../../docs/tutorials/3d/occluders.rst:120
 msgid ""
@@ -23465,7 +23572,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:122
 msgid "Portal Active"
-msgstr ""
+msgstr "Aktivní portál"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:124
 msgid ""
@@ -33834,7 +33941,7 @@ msgstr "Příklady příznaků příkazového řádku pro různé editory :"
 
 #: ../../docs/tutorials/editor/external_editor.rst:34
 msgid "Exec Flags"
-msgstr "Příznaky příkazového řádku"
+msgstr "Parametry spuštění"
 
 #: ../../docs/tutorials/editor/external_editor.rst:36
 msgid "Geany/Kate"
@@ -34839,7 +34946,7 @@ msgstr "``spatial_editor/freelook_toggle``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:149
 msgid "Freelook Left"
-msgstr "Volný pohled doleva"
+msgstr "Levý volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:149
 #: ../../docs/tutorials/editor/default_key_mapping.rst:497
@@ -34852,7 +34959,7 @@ msgstr "``spatial_editor/freelook_left``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:151
 msgid "Freelook Right"
-msgstr "Volný pohled doprava"
+msgstr "Pravý volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:151
 msgid ":kbd:`D`"
@@ -34864,7 +34971,7 @@ msgstr "``spatial_editor/freelook_right``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:153
 msgid "Freelook Forward"
-msgstr "Volný pohled vpřed"
+msgstr "Přední volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:153
 msgid "``spatial_editor/freelook_forward``"
@@ -34872,7 +34979,7 @@ msgstr "``spatial_editor/freelook_forward``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:155
 msgid "Freelook Backwards"
-msgstr "Volný pohled dozadu"
+msgstr "Zadní volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:155
 msgid "``spatial_editor/freelook_backwards``"
@@ -34880,7 +34987,7 @@ msgstr "``spatial_editor/freelook_backwards``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:157
 msgid "Freelook Up"
-msgstr "Volný pohled nahoru"
+msgstr "Horní volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:157
 msgid "``spatial_editor/freelook_up``"
@@ -34888,7 +34995,7 @@ msgstr "``spatial_editor/freelook_up``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:159
 msgid "Freelook Down"
-msgstr "Volný pohled dolů"
+msgstr "Dolní volný pohled"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:159
 msgid "``spatial_editor/freelook_down``"
@@ -34896,7 +35003,7 @@ msgstr "``spatial_editor/freelook_down``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:161
 msgid "Freelook Speed Modifier"
-msgstr "Rychlost volného pohledu"
+msgstr "Modifikátor rychlosti volného pohybu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:161
 msgid ":kbd:`Shift`"
@@ -34908,7 +35015,7 @@ msgstr "``spatial_editor/freelook_speed_modifier``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:163
 msgid "Freelook Slow Modifier"
-msgstr "Zpomalení volného pohledu"
+msgstr "Modifikátor zpomalení volného pohybu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:163
 msgid ":kbd:`Alt`"
@@ -35215,7 +35322,7 @@ msgstr "``spatial_editor/4_viewports``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:217
 msgid "Text Editor"
-msgstr "Textový editor"
+msgstr "Editor textu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
@@ -38986,7 +39093,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:124
 msgid "Camera"
-msgstr "**Kamera:**"
+msgstr "Kamera"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:124
 msgid ""
@@ -47391,6 +47498,9 @@ msgid ""
 "Godot uses them extensively. Developing a good understanding of vector math "
 "is essential to becoming a strong game developer."
 msgstr ""
+"Tento tutoriál je krátký a praktický úvod do lineární algebry s uplatněním "
+"ve vývoji her. Lineární algebra se zabývá vektory a jejich využitím. Vektory "
+"mají mnoho uplatnění ve vývoji ve 2D i 3D a Godot je značně používá."
 
 #: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
@@ -47398,10 +47508,13 @@ msgid ""
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
+"Tento tutoriál **není** oficiální učebnice lineární algebry. My se pouze "
+"podíváme na uplatnění pro vývoj her. Pro širší pohled na matematiku "
+"navštivte https://www.khanacademy.org/math/linear-algebra"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr ""
+msgstr "Soustavy souřadnic (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -47409,6 +47522,9 @@ msgid ""
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
+"Ve 2D prostoru jsou souřadnice definovány pomocí vodorovné osy (``x``) "
+"svislé osy (``y``) . Konkrétní pozice ve 2D prostoru je zapsána jako dvojice "
+"hodnot , např. ``(4, 3)``."
 
 #: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
@@ -47417,6 +47533,9 @@ msgid ""
 "in math class. However, this is common in most computer graphics "
 "applications."
 msgstr ""
+"Pokud začínáte s počítačovou grafikou, může se zdát zvláštní, že kladná část "
+"osy ``y`` směřuje **dolů** místo nahoru, jak jste se učili na hodině "
+"matematiky. Ve většině aplikací počítačové grafiky je to však běžné."
 
 #: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
@@ -47425,6 +47544,10 @@ msgid ""
 "from the ``(0, 0)`` point, or **origin**. Draw an arrow pointing from the "
 "origin to the point:"
 msgstr ""
+"Libovolná pozice ve 2D rovině může být takto vyjádřena dvojicí čísel. "
+"Nicméně o pozici ``(4, 3)`` můžeme uvažovat jako o **odklonu (offset)** od "
+"bodu ``(0, 0)`` neboli **počátku (origin)**. Nakreslíme šipku směřující od "
+"počátku k našemu bodu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
@@ -47434,6 +47557,10 @@ msgid ""
 "is a **position vector** - it denotes a position in space, relative to the "
 "origin."
 msgstr ""
+"Tohle je **vektor**. Vektor vyjadřuje mnoho užitečných informací. Kromě "
+"toho, že nám sděluje polohu bodu ``(4, 3)``, můžeme o něm uvažovat jako o "
+"úhlu ``θ`` a délce (nebo velikosti) ``m``. Šipka je v tomto případě "
+"**polohový vektor** - označuje polohu v prostoru vzhledem k počátku."
 
 #: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
@@ -47441,6 +47568,9 @@ msgid ""
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
+"Velmi důležitým bodem ke zvážení ohledně vektorů, je že představují pouze "
+"**relativní** směr a velikost. Neexistuje žádný koncept pozice vektoru. "
+"Následující dva vektory jsou totožné:"
 
 #: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
@@ -47448,10 +47578,13 @@ msgid ""
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
+"Oba vektory představují bod 4 jednotky vpravo a 3 jednotky pod nějakým "
+"počátečním bodem. Nezáleží na tom, kde v rovině vektor nakreslíte, vždy "
+"představuje relativní směr a velikost."
 
 #: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector operations"
-msgstr ""
+msgstr "Operace s vektory"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
@@ -47461,6 +47594,11 @@ msgid ""
 "corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to "
 "the right and 300 pixels down, use the following code:"
 msgstr ""
+"K odkazování na vektor můžete použít kteroukoli metodu (souřadnice x a y "
+"nebo úhel a velikost), ale programátoři obvykle používají pohodlnější "
+"souřadnicový zápis. Např. v Godot se počátek nachází v levém horním rohu "
+"obrazovky, takže pro umístění 2D uzlu pojmenovaného ``Node2D`` 400 pixelů "
+"vpravo a 300 pixelů dolů, použijeme následující kód:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
@@ -47468,67 +47606,76 @@ msgid ""
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
 "rules discussed in this article apply to both types."
 msgstr ""
+"Godot podporuje oba :ref:`Vector2 <class_Vector2>` a :ref:`Vector3 "
+"<class_Vector3>` pro použití ve 2D, respektive 3D. Pro oba typy platí stejná "
+"matematická pravidla popsaná v tomto článku."
 
 #: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
-msgstr ""
+msgstr "Přistupování k částem vektoru"
 
 #: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
-msgstr ""
+msgstr "K jednotlivým složkám vektoru lze přistupovat přímo podle jména."
 
 #: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
-msgstr ""
+msgstr "Sčítání vektorů"
 
 #: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
+"Při sčítání nebo odečítání dvou vektorů se sčítají odpovídající složky:"
 
 #: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr ""
+"To můžeme znázornit také graficky přičtením druhého vektoru na konec prvního:"
 
 #: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
-msgstr ""
+msgstr "Všimněte si, že součet ``a + b`` dává stejný výsledek jako ``b + a``."
 
 #: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Násobení skalárem"
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr ""
+"Vektory představují směr i velikost. Hodnota představující pouze velikost se "
+"nazývá **skalár**."
 
 #: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
-msgstr ""
+msgstr "Vektor může být násoben **skalárem**:"
 
 #: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr ""
+"Násobení vektoru skalárem nezmění jeho směr, pouze velikost. Takto "
+"**škálujete** vektor."
 
 #: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
-msgstr ""
+msgstr "Praktické aplikace"
 
 #: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
-msgstr ""
+msgstr "Podívejme se na dvě běžná použití sčítání a odčítání vektorů."
 
 #: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
-msgstr ""
+msgstr "Pohyb"
 
 #: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
@@ -47539,16 +47686,23 @@ msgid ""
 "ship moves each step. We can find the position for step 2 by adding the "
 "velocity to the current position."
 msgstr ""
+"Vektor může představovat **libovolné** množství velikosti a směru. Typické "
+"příklady jsou: pozice, rychlost, zrychlení a síla. Na tomto obrázku má "
+"kosmická loď v kroku 1 vektor pozice ``(1,3)`` a vektor rychlosti ``(2,1)``. "
+"Vektor rychlosti vyjadřuje jak daleko se loď posune každý krok. Pozici pro "
+"krok 2 najdeme přičtením rychlosti k aktuální pozici."
 
 #: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
 msgstr ""
+"Rychlost měří **změnu** pozice za jednotku času. Novou pozici nalezneme "
+"přičtením rychlosti k předchozí pozici."
 
 #: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
-msgstr ""
+msgstr "Směřování k cíli"
 
 #: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
@@ -47556,14 +47710,16 @@ msgid ""
 "robot. Subtracting the tank's position from the robot's position gives the "
 "vector pointing from the tank to the robot."
 msgstr ""
+"V tomto scénáři máte tank, který chce namířit svou věž na robota. Odečtením "
+"pozice tanku od pozice robota dostaneme vektor směřující od tanku k robotovi."
 
 #: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
-msgstr ""
+msgstr "K nalezení vektoru směřujícího od ``A`` do ``B`` použijeme ``B - A``."
 
 #: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
-msgstr ""
+msgstr "Jednotkové vektory"
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
@@ -47571,10 +47727,13 @@ msgid ""
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
+"Vektor o **velikosti** ``1`` se nazývá **jednotkový vektor**. Někdy se také "
+"označují jako **směrové vektory** nebo **normály** Jednotkové vektory jsou "
+"užitečné, když potřebujete ponechat směr."
 
 #: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
-msgstr ""
+msgstr "Normalizace"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
@@ -47583,6 +47742,10 @@ msgid ""
 "magnitude. Because this is such a common operation, ``Vector2`` and "
 "``Vector3`` provide a method for normalizing:"
 msgstr ""
+"**Normalizování** vektoru znamená snížení jeho délky na ``1`` při zachování "
+"jeho směru. Toho dosáhneme vydělením každé složky velikostí vektoru. Protože "
+"je to běžná operace, ``Vector2`` a ``Vector3`` poskytují metodu pro "
+"normalizování:"
 
 #: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
@@ -47590,10 +47753,12 @@ msgid ""
 "normalize a vector of length ``0``. Attempting to do so will result in an "
 "error."
 msgstr ""
+"Protože normalizování zahrnuje dělení délkou vektoru, nemůžete normalizovat "
+"vektor o délce ``0``. Takový pokus způsobí chybu."
 
 #: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
-msgstr ""
+msgstr "Odraz"
 
 #: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
@@ -47602,12 +47767,17 @@ msgid ""
 "They are commonly used for lighting, collisions, and other operations "
 "involving surfaces."
 msgstr ""
+"Běžným použitím jednotkových vektorů je indikace **normál**. Normálové "
+"vektory jsou jednotkové vektory kolmé k povrchu, určující jeho směr. Běžně "
+"se používají pro osvětlení, kolize a další operace zahrnující povrchy."
 
 #: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
+"Představme si například, že máme pohybující se míč, který chceme odrazit od "
+"zdi nebo jiného předmětu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
@@ -47618,11 +47788,16 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
+"Normála roviny má hodnotu ``(0, -1)``, protože se jedná o vodorovnou rovinu. "
+"Když míč narazí, jeho zbývající pohyb (množství zbylé po dopadu na rovinu) "
+"se odrazí pomocí normály. V Godot, třída :ref:`Vector2 <class_Vector2>` k "
+"tomu má metodu ``bounce()``. Zde je GDScript příklad výše uvedeného diagramu "
+"pomocí :ref:`KinematicBody2D <class_KinematicBody2D>`:"
 
 #: ../../docs/tutorials/math/vector_math.rst:251
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:754
 msgid "Dot product"
-msgstr ""
+msgstr "Skalární součin"
 
 #: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
@@ -47631,10 +47806,14 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
+"**Skalární součin** je jeden z nejdůležitějších pojmů vektorové matematiky, "
+"ale často je nepochopen. Skalární součin je operace dvou vektorů, která "
+"vrací **skalár**. Oproti vektoru, který obsahuje velikost a směr, je hodnota "
+"skaláru pouze velikost."
 
 #: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
-msgstr ""
+msgstr "Vzorec pro skalární součin má dvě běžné formy:"
 
 #: ../../docs/tutorials/math/vector_math.rst:262
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:273
@@ -47646,6 +47825,8 @@ msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"Ve většině případů je však nejjednodušší použít vestavěnou metodu. Všimněte "
+"si, že na pořadí těchto dvou vektorů nezáleží:"
 
 #: ../../docs/tutorials/math/vector_math.rst:280
 msgid ""
@@ -47653,16 +47834,21 @@ msgid ""
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
+"Skalární součin je nejvíc užitečný, při použití s jednotkovými vektory, "
+"takže první vzorec je redukován pouze na ``cosθ``. To znamená, že skalární "
+"součin něco vypovídá o úhlu mezi dvěma vektory:"
 
 #: ../../docs/tutorials/math/vector_math.rst:286
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
+"Při použití jednotkových vektorů bude výsledek vždy mezi ``-1`` (180°) a "
+"``1`` (0°)."
 
 #: ../../docs/tutorials/math/vector_math.rst:290
 msgid "Facing"
-msgstr ""
+msgstr "Směřování"
 
 #: ../../docs/tutorials/math/vector_math.rst:292
 msgid ""
@@ -47671,6 +47857,9 @@ msgid ""
 "zombies ``A`` and ``B``. Assuming a zombie's field of view is **180°**, can "
 "they see the player?"
 msgstr ""
+"Tuto skutečnost můžeme využít ke zjištění, zda objekt směřuje k jinému "
+"objektu. Na schématu níže se hráč ``P`` snaží vyhnout zombiím ``A`` a ``B``. "
+"Mohou vidět hráče při předpokladu, že zorné pole zombií je **180°**?"
 
 #: ../../docs/tutorials/math/vector_math.rst:298
 msgid ""
@@ -47681,15 +47870,21 @@ msgid ""
 "to do this called ``direction_to``. If the angle between this vector and the "
 "facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
+"Zelené šipky ``fA`` a ``fB`` jsou **jednotkové vektory** představující směr "
+"zraku zombie a modré půlkruhy představují zorné pole zraku. Pro zombii ``A`` "
+"nalezneme směrový vektor ``AP`` , ukazující na hráče pomocí ``P - A`` a "
+"normalizujeme ho, Godot má k tomu ovšem pomocnou metodu nazvanou "
+"``direction_to``. Pokud je úhel mezi tímto vektorem a vektorem směru zraku "
+"menší než 90°, potom zombie může vidět hráče."
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "In code it would look like this:"
-msgstr ""
+msgstr "V kódu by to vypadalo takto:"
 
 #: ../../docs/tutorials/math/vector_math.rst:324
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:756
 msgid "Cross product"
-msgstr ""
+msgstr "Vektorový součin"
 
 #: ../../docs/tutorials/math/vector_math.rst:326
 msgid ""
@@ -47699,14 +47894,18 @@ msgid ""
 "two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
+"Stejně jako skalární součin, tak i **vektorový součin** je operací dvou "
+"vektorů. Výsledkem vektorového součiny je však vektor se směrem kolmým na "
+"oba vektory. Jeho velikost závisí na jejich vzájemném úhlu. Pokud jsou dva "
+"vektory rovnoběžné, výsledkem jejich vektorového součinu bude nulový vektor."
 
 #: ../../docs/tutorials/math/vector_math.rst:335
 msgid "The cross product is calculated like this:"
-msgstr ""
+msgstr "Vektorový součin se vypočítá nějak takto:"
 
 #: ../../docs/tutorials/math/vector_math.rst:354
 msgid "With Godot, you can use the built-in method:"
-msgstr ""
+msgstr "V Godot můžeme použít vestavěnou metodu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:365
 msgid ""
@@ -47714,10 +47913,12 @@ msgid ""
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
+"U vektorového součinu záleží na pořadí. ``a.cross(b)`` nedává stejný "
+"výsledek jako ``b.cross(a)``. Výsledné vektory mají **opačné** směry."
 
 #: ../../docs/tutorials/math/vector_math.rst:370
 msgid "Calculating normals"
-msgstr ""
+msgstr "Výpočet normál"
 
 #: ../../docs/tutorials/math/vector_math.rst:372
 msgid ""
@@ -47726,14 +47927,18 @@ msgid ""
 "subtraction to find two edges ``AB`` and ``AC``. Using the cross product, "
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
+"Jedním z běžných užití vektorového součinu je nalezení normály roviny plochy "
+"nebo roviny ve 3D prostoru. Pokud máme trojúhelník ``ABC``, můžeme rozdílem "
+"vektorů najít dvě strany ``AB`` and ``AC``. Pomocí vektorového součinu ``AB "
+"x AC`` dostaneme vektor kolmý k oběma: normálu povrchu."
 
 #: ../../docs/tutorials/math/vector_math.rst:377
 msgid "Here is a function to calculate a triangle's normal:"
-msgstr ""
+msgstr "Zde je funkce pro výpočet normály trojúhelníku:"
 
 #: ../../docs/tutorials/math/vector_math.rst:401
 msgid "Pointing to a target"
-msgstr ""
+msgstr "Ukazování k cíli"
 
 #: ../../docs/tutorials/math/vector_math.rst:403
 msgid ""
@@ -47743,6 +47948,11 @@ msgid ""
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
+"Ve výše uvedené části o skalárním součinu jsme viděli, jak nalezneme úhel "
+"mezi dvěma vektory. Ve 3D však tato informace nestačí. Potřebujeme také "
+"vědět, kolem které osy se otáčet. Můžeme to zjistit výpočtem vektorového "
+"součinu aktuálního směru a cílového směru. Výsledným kolmým vektorem je osa "
+"rotace."
 
 #: ../../docs/tutorials/math/vector_math.rst:411
 #: ../../docs/tutorials/math/vectors_advanced.rst:589
@@ -47754,6 +47964,8 @@ msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
+"Další informace o použití vektorové matematiky v Godot naleznete v "
+"následujících článcích:"
 
 #: ../../docs/tutorials/math/vector_math.rst:415
 msgid ":ref:`doc_vectors_advanced`"
@@ -47766,11 +47978,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced vector math"
-msgstr ""
+msgstr "Pokročilá vektorová matematika"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "Roviny"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -47780,6 +47992,11 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Skalární součin má jinou zajímavou vlastnost s jednotkovými vektory. "
+"Představte si, že kolmice na tento vektor (a skrz počátek) projde rovinou. "
+"Roviny rozdělují celý prostor na kladný (nad rovinou) a záporný (pod "
+"rovinou) a (na rozdíl od všeobecné domněnky), můžete použít jejich "
+"matematické operace i ve 2D:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -47800,10 +48017,16 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"Je to tak jednoduché, jak to vypadá. Rovina prochází počátkem a její plocha "
+"je kolmá na jednotkový vektor (nebo *normálu*). Strana směřující k vektoru "
+"je kladný poloprostor, zatímco druhá strana je záporný poloprostor. Ve 3D je "
+"to úplně stejné, kromě toho, že rovina je nekonečná plocha (představte si "
+"nekonečný plochý list papíru, který můžete orientovat a je přišpendlený k "
+"počátku) místo přímky."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
-msgstr ""
+msgstr "Vzdálenost k rovině"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:35
 msgid ""
@@ -47812,20 +48035,26 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"Nyní, když je zřejmé co je rovina, se podíváme zpět na skalární součin. "
+"Skalární součin mezi **jednotkovým vektorem** a nějakým **bodem v prostoru** "
+"(ano, tentokrát děláme skalární součin mezi vektorem a pozicí), vrátí "
+"**vzdálenost od bodu k rovině**:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
 msgstr ""
+"Ale ne jen absolutní vzdálenost, pokud se bod nachází v záporném "
+"poloprostoru, vzdálenost bude také záporná:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "To nám umožňuje říct, na které straně roviny se bod nachází."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr ""
+msgstr "Pryč od počátku"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
@@ -47833,6 +48062,9 @@ msgid ""
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"Vím, na co myslíte! Zatím je to pěkné, ale *skutečné* roviny jsou všude v "
+"prostoru, nejen že procházejí počátkem. Chcete reálnou *rovinu* v akci a "
+"chcete ji *hned*."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
@@ -47840,6 +48072,9 @@ msgid ""
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"Pamatujte, že roviny nejen rozdělují prostor na dvě části, ale mají také "
+"*polaritu*. To znamená, že je možné mít dokonale se překrývající roviny, ale "
+"jejich záporné a kladné poloprostory jsou přehozeny."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
@@ -47847,12 +48082,17 @@ msgid ""
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"S ohledem na to, popíšeme celou roviny jako **normálu** *N* a skalár "
+"**vzdálenost od počátku** *D*. Naše rovina je tedy zastoupena N a D. "
+"Například:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"Pro 3D matematiku poskytuje Godot vestavěný typ :ref:`Plane <class_Plane>`, "
+"který se o to postará."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""
@@ -50557,7 +50797,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/webrtc.rst:4
 #: ../../docs/tutorials/networking/webrtc.rst:21
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../docs/tutorials/networking/webrtc.rst:7
 msgid "HTML5, WebSocket, WebRTC"
@@ -55645,7 +55885,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Kolizní maska"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -72421,7 +72661,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:119
 msgid "Shapes"
-msgstr ""
+msgstr "Tvary"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:121
 msgid ""
@@ -80765,8 +81005,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:67
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:223
+#, fuzzy
 msgid "Main"
-msgstr ""
+msgstr "Hlavní"
 
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:69
 msgid ""

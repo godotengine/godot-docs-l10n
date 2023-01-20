@@ -3,18 +3,22 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adrian Paun <adipaun97@protonmail.com>, 2018.
+# Andres Ene <grassiscomplex420@gmail.com>, 2022.
 # arydevy <arydev7@gmail.com>, 2020.
 # Calin Sopterean <csopterean@gmail.com>, 2018.
+# Claudiu Ceia <claudiu.ceia@gmail.com>, 2022.
 # EVOKZH <avip.ady@gmail.com>, 2020.
 # f0roots <f0rootss@gmail.com>, 2020.
 # Filip <filipanton@tutanota.com>, 2020.
 # FlooferLand <yunaflarf@gmail.com>, 2022.
 # Gigel2 <mihalacher02@gmail.com>, 2020.
 # Grigore Antoniuc <grisa181@gmail.com>, 2018.
+# Ilie Adrian Avramescu <himark1977@protonmail.com>, 2022.
 # Levente Szalontai <szalontai.levente@gmail.com>, 2021.
 # Marincia Cătălin <catalinmarincia@gmail.com>, 2020.
 # N3mEee <n3mebusiness@gmail.com>, 2021.
 # Psynt <nichita@cadvegra.com>, 2022.
+# Random Videos <istudordanadenis@gmail.com>, 2023.
 # Rotated <rotated.dev@gmail.com>, 2022.
 # sebiTCR <Ssebi832@outlook.com>, 2022.
 # Teodor <teo.virghi@yahoo.ro>, 2020.
@@ -24,8 +28,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-09-09 16:03+0200\n"
-"PO-Revision-Date: 2022-07-09 21:12+0000\n"
-"Last-Translator: Rotated <rotated.dev@gmail.com>\n"
+"PO-Revision-Date: 2023-01-17 13:55+0000\n"
+"Last-Translator: Random Videos <istudordanadenis@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ro/>\n"
 "Language: ro\n"
@@ -34,7 +38,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -66,7 +70,6 @@ msgid "Class reference"
 msgstr "Referință clasă"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
 msgstr "Documentație Godot - ramura *3.4* *master*"
 
@@ -80,7 +83,6 @@ msgstr ""
 "lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the 3.5 branch. Looking for the documentation "
 "of the current **development** branch? `Have a look here <https://docs."
@@ -174,7 +176,6 @@ msgstr ""
 "în documentație, ajută-ne să facem documentația mai bună anunțându-ne!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -191,12 +192,11 @@ msgstr ""
 
 #: ../../docs/index.rst:61
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Animație"
+msgstr "Status Traducere"
 
 #: ../../docs/index.rst:62
 msgid ""
@@ -302,27 +302,27 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Bine ai venit la documentația oficială a Godot Engine, game engine-ul 2D și "
-"3D gratuit, open source și dezvoltat de către comunitate! În spatele acestei "
-"povestioare, tu vei găsi o unealtă puternică însă în același timp pretenoasă "
-"cu utilizatorul pe care o poți folosi pentru a dezvolta orice tip de joc, "
-"pentru orice platformă și fără absolut nicio restricție de folosire."
+"Bine ai venit la documentația oficială a Godot Engine, motorul de jocuri 2D "
+"și 3D gratuit, open source și dezvoltat de către comunitate! În spatele "
+"acestei povestioare, tu vei găsi o unealtă puternică însă în același timp "
+"prietenoasă cu utilizatorul pe care o poți folosi pentru a dezvolta orice "
+"tip de joc, pentru orice platformă și fără absolut nicio restricție de "
+"folosire."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Această pagină încearcă să realizeze o prezentare generală a engine-ului și "
-"a conținutului acestei documentații, în așa fel încât să știi de unde să "
+"Această pagină încearcă să realizeze o prezentare generală a motorului și a "
+"conținutului acestei documentații, în așa fel încât să știi de unde să "
 "pornești dacă ești un începător sau unde să cauți dacă ai nevoie de info "
 "despre o caracteristică anume."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr "inainte sa incepem"
+msgstr "Înainte sa începem"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -330,6 +330,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Pagina :ref:` Tutoriale și resurse <doc_community_tutorials>`` enumeră "
+"tutoriale video realizate de către comunitate. Dacă preferați video în locul "
+"textului, ar putea merita să le aruncați o privire."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -337,10 +340,14 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"În cazul în care aveți probleme cu unul dintre tutoriale sau cu proiectul "
+"dumneavoastră, puteți găsi ajutor pe diversele :ref:`Canale ale comunității "
+"<doc_community_channels>`, în special în comunitatea Godot Discord, Q&A și "
+"IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "Despre Godot Engine"
+msgstr "Despre Motorul Godot"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -444,12 +451,10 @@ msgstr ""
 "community\"."
 
 #: ../../docs/about/introduction.rst:77
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organizare a documentației"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
@@ -466,11 +471,10 @@ msgid ""
 "also contains the :ref:`doc_faq`."
 msgstr ""
 "Secțiunea :ref:`sec-general` conține această introducere și de asemenea "
-"informații despre engine, istoria sa, licența sa, autorii, etc. De asemenea "
+"informații despre motor, istoria sa, licența sa, autorii, etc. De asemenea "
 "conține :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -479,12 +483,11 @@ msgid ""
 msgstr ""
 "Secțiunea :ref:`sec-learn` este principalul *raison d'être* (motiv de "
 "existență) al acestui document, conținând toate informațiile necesare despre "
-"engine pentru a putea crea jocuri. Începe cu tutorialul :ref:`Pas cu pas "
-"<toc-learn-step_by_step>` ce ar trebui să fie punctul de pornire pentru toți "
+"motor pentru a putea crea jocuri. Începe cu tutorialul :ref:`Pas cu pas <toc-"
+"learn-step_by_step>` ce ar trebui să fie punctul de pornire pentru toți "
 "utilizatorii noi."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
@@ -562,48 +565,49 @@ msgid ""
 msgstr "Ce pot să fac cu Godot?Cât de mult costă?Care sunt termenii licenței?"
 
 #: ../../docs/about/faq.rst:12
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot este software de tip Free/Libre Open Source disponibil prin "
-"intermediul unei licențe de tip MIT <https://opensource.org/licenses/MIT>`_ "
-"MIT."
+"Godot este `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ disponibil sub licența `OSI-aprobată "
+"<https://opensource.org/licenses/MIT>`_ MIT. Acest lucru înseamnă că este "
+"liber ca în \"free speech\", precum și în \"free beer\"."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
 msgstr "Pe scurt:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Esti liber sa descarci Godot pentru orce motiv personal,non profit,comercial"
+"Sunteți liber să descărcați și să utilizați Godot în orice scop: personal, "
+"non-profit, comercial sau de altă natură."
 
 #: ../../docs/about/faq.rst:17
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "Poți modifica,(re)distribui și remixa Godot după pofta inimii"
+msgstr ""
+"Sunteți liber să modificați, distribuiți, redistribuiți și remixați Godot "
+"după bunul plac, din orice motiv, atât în scopuri necomerciale, cât și "
+"comerciale."
 
 #: ../../docs/about/faq.rst:19
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Tot conținutul documentației se află sub protecția licenței permisive "
-"Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/"
-"licenses/by/3.0/>`_) , cu atribuiri catre \"Juan Linietsky, Ariel Manzur și "
-"comunitatea Godot Engine\"."
+"Întregul conținut al acestei documentații însoțitoare este publicat sub "
+"licența permisivă Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>`_), cu atribuirea către \"Juan "
+"Linietsky, Ariel Manzur și comunitatea Godot Engine\"."
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -611,9 +615,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"Logo-urile si icon-urile sânt generate sub aceeași licență Creative Commons. "
-"Notați că unele biblioteci terțe incluse in codul sursă Godot pot avea "
-"licențe diferite."
+"Logo-urile și pictogramele sunt, în general, sub aceeași licență Creative "
+"Commons. Rețineți că unele biblioteci terțe incluse în codul sursă al Godot "
+"pot avea licențe diferite."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -623,14 +627,13 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Pentru detalii complete vedeți fișierele `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_,  `LICENSE.txt <https://"
-"github.com/godotengine/godot/blob/master/LICENSE.txt>`_ și `LOGO_LICENSE.txt "
-"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ pe "
-"repozitul Godot."
+"Pentru detalii complete, consultați fișierele `COPYRIGHT.txt <https://github."
+"com/godotengine/godot/blob/master/COPYRIGHT.txt>`_, precum și `LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ și "
+"`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
+"LOGO_LICENSE.md>`_ din depozitul Godot."
 
 #: ../../docs/about/faq.rst:31
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -677,14 +680,12 @@ msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:41
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr "Animație asistată"
+msgstr ":ref:`Web <doc_folosind_editorul_web>``"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (experimentală)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -714,7 +715,6 @@ msgid "Web"
 msgstr "Web"
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
@@ -727,19 +727,19 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"De asemenea, unii utilizatori raportează că au construit și utilizat Godot "
+"cu succes pe sisteme bazate pe ARM cu Linux, cum ar fi Raspberry Pi."
 
 #: ../../docs/about/faq.rst:59
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Unii utilizatori raportează compilarea și utilizarea lui Godot cu succes pe "
-"sisteme bazate pe arhitectura ARM cu sistem de exploatare Linux, ca "
-"Raspberry Pi. Există și unele lucrări terțe având ca scop funcționarea lui "
-"Godot pe unele console de joc. Totuși, aceste adăugări nu sunt incluse în "
-"script-urile de compilare de baza sau în modelele de exportare."
+"În plus, există unele lucrări neoficiale ale unor terți care se fac pentru a "
+"construi pentru unele console. Cu toate acestea, în acest moment, nimic din "
+"toate acestea nu este inclus în scripturile de compilare sau în șabloanele "
+"de export implicite."
 
 #: ../../docs/about/faq.rst:63
 msgid ""
@@ -751,7 +751,6 @@ msgstr ""
 "Godot<toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:67
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
 msgstr "Ce limbaje de programare sunt suportate de către Godot ?"
 
@@ -774,6 +773,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Dacă sunteți la început fie cu Godot, fie cu dezvoltarea de jocuri în "
+"general, GDScript este limbajul recomandat pentru a învăța și a utiliza, "
+"deoarece este nativ pentru Godot. În timp ce limbajele de scripting tind să "
+"fie mai puțin performante decât limbajele de nivel inferior pe termen lung, "
+"pentru prototipuri, dezvoltarea de produse minim viabile (MVP) și "
+"concentrarea asupra timpului de introducere pe piață (TTM), GDScript vă va "
+"oferi o modalitate rapidă, prietenoasă și capabilă de a vă dezvolta jocurile."
 
 #: ../../docs/about/faq.rst:80
 msgid ""
@@ -785,6 +791,14 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Rețineți că suportul pentru C# este încă relativ nou și, ca atare, este "
+"posibil să întâmpinați unele probleme pe parcurs. Comunitatea noastră de "
+"dezvoltare prietenoasă și harnică este întotdeauna gata să abordeze noile "
+"probleme pe măsură ce apar, dar, întrucât acesta este un proiect open-"
+"source, vă recomandăm să faceți mai întâi câteva verificări de sine "
+"stătătoare. Căutarea prin discuțiile de pe `open issues <https://github.com/"
+"godotengine/godot/issues>`_ este o modalitate excelentă de a începe "
+"rezolvarea problemelor."
 
 #: ../../docs/about/faq.rst:87
 msgid ""
@@ -794,9 +808,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Sunt unele lucrări în desfășurare, de exemplu, pentru suportul non-oficial "
-"al limbajelor `Python <https://github.com/touilleMan/godot-python>`_ și `Nim "
-"<https://github.com/pragmagic/godot-nim>`_."
+"În ceea ce privește limbile noi, suportul este posibil prin intermediul unor "
+"terțe părți care utilizează facilitățile GDNative / NativeScript / "
+"PluginScript. (A se vedea întrebarea despre plugin-uri de mai jos.) În "
+"prezent se lucrează, de exemplu, la legături neoficiale pentru Godot la "
+"`Python <https://github.com/touilleMan/godot-python>`_ și `Nim <https://"
+"github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:95
 msgid "What is GDScript and why should I use it?"
@@ -812,6 +829,14 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript este limbajul de scripting integrat în Godot. Acesta a fost "
+"construit de la zero pentru a maximiza potențialul Godot în cea mai mică "
+"cantitate de cod, permițând atât dezvoltatorilor începători, cât și celor "
+"experți să valorifice cât mai repede posibil punctele forte ale Godot. Dacă "
+"ați mai scris vreodată ceva într-un limbaj precum Python, atunci vă veți "
+"simți ca acasă. Pentru exemple, istoric și o prezentare completă a puterii "
+"pe care v-o oferă GDScript, consultați :ref:`GDScript scripting guide "
+"<doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -820,6 +845,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity**."
 msgstr ""
+"Există mai multe motive pentru a utiliza GDScript - în special atunci când "
+"creați prototipuri, când vă aflați în etapele alfa/beta ale proiectului "
+"dumneavoastră sau când nu creați următorul titlu AAA - dar cel mai important "
+"motiv este **reducerea complexității** generale."
 
 #: ../../docs/about/faq.rst:108
 msgid ""
@@ -833,9 +862,17 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Intenția inițială de a crea un limbaj de scripting personalizat și strâns "
+"integrat pentru Godot a fost dublă: în primul rând, reduce timpul necesar "
+"pentru a începe să funcționeze cu Godot, oferind dezvoltatorilor o "
+"modalitate rapidă de a se expune motorului, cu accent pe productivitate; în "
+"al doilea rând, reduce povara generală a întreținerii, atenuează "
+"dimensionalitatea problemelor și permite dezvoltatorilor motorului să se "
+"concentreze pe eliminarea erorilor și pe îmbunătățirea funcțiilor legate de "
+"nucleul motorului - în loc să petreacă mult timp încercând să facă să "
+"funcționeze un set mic de funcții incrementale într-un set mare de limbaje."
 
 #: ../../docs/about/faq.rst:116
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -847,14 +884,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Mai pe scurt, credem ca complexitatea suplimentară atât de partea "
-"dumneavoastră (când învățați Godot și GDScript) cât și a noastră "
-"(întreținere), ce oferă o experiența integrata și fără disfuncționalități "
-"este preferabilă atragerii unor utilizatori suplimentari prin folosirea unor "
-"limbaje mai familiare ce ar rezulta într-o experiență mai rea. Înțelegem "
-"voința dumneavoastră de a folosi un alt limbaj în Godot (vedeți mai sus "
-"lista limbajelor suportate), dar vă incurajăm să încercați GDScript și "
-"vedeți singuri avantajele oferite de acesta."
+"Deoarece Godot este un proiect open-source, a fost imperativ de la început "
+"să se acorde prioritate unei experiențe mai integrate și mai continue decât "
+"atragerii de utilizatori suplimentari prin susținerea unor limbaje de "
+"programare mai familiare - mai ales atunci când susținerea acestor limbaje "
+"mai familiare ar duce la o experiență mai proastă. Înțelegem dacă preferați "
+"să folosiți un alt limbaj în Godot (consultați lista de opțiuni acceptate de "
+"mai sus). Acestea fiind spuse, dacă nu ați încercat GDScript, încercați-l "
+"pentru **trei zile**. La fel ca și Godot, odată ce veți vedea cât de "
+"puternic este și cât de rapidă devine dezvoltarea dumneavoastră, credem că "
+"GDScript vă va cuceri."
 
 #: ../../docs/about/faq.rst:125
 msgid ""
@@ -862,10 +901,13 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Mai multe informații despre cum să vă familiarizați cu GDScript sau cu "
+"limbajele tipizate dinamic pot fi găsite în tutorialul :ref:"
+"`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:129
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Care au fost motivațiile care au stat la baza creării GDScript?"
 
 #: ../../docs/about/faq.rst:131
 msgid ""
@@ -875,23 +917,36 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"În primele zile, motorul folosea limbajul de scripting `Lua <https://www.lua."
+"org>`__. Lua este rapid, dar crearea de legături cu un sistem orientat pe "
+"obiecte (prin utilizarea de fallback-uri) era complexă și lentă și necesita "
+"o cantitate enormă de cod. După câteva experimente cu `Python <https://www."
+"python.org>``__, acesta s-a dovedit, de asemenea, dificil de încorporat."
 
 #: ../../docs/about/faq.rst:137
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Principalele motive pentru a crea un limbaj de scripting personalizat pentru "
+"Godot au fost:"
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
+"Suport slab pentru threading în majoritatea mașinilor virtuale de script, "
+"iar Godot utilizează thread-uri (Lua, Python, Squirrel, JavaScript, "
+"ActionScript etc.)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
+"Suport slab pentru extinderea claselor în majoritatea mașinilor virtuale de "
+"script, iar adaptarea la modul în care funcționează Godot este foarte "
+"ineficientă (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:143
 msgid ""
@@ -900,6 +955,10 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
+"Multe limbaje existente au interfețe oribile pentru legarea la C++, ceea ce "
+"duce la o cantitate mare de cod, bug-uri, blocaje și ineficiență generală "
+"(Lua, Python, Squirrel, JavaScript etc.) Am vrut să ne concentrăm pe un "
+"motor grozav, nu pe o cantitate mare de integrări."
 
 #: ../../docs/about/faq.rst:146
 msgid ""
@@ -907,26 +966,34 @@ msgid ""
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
+"Nu există tipuri de vectori nativi (vector3, matrix4 etc.), ceea ce duce la "
+"o performanță foarte redusă atunci când se utilizează tipuri personalizate "
+"(Lua, Python, Squirrel, JavaScript, ActionScript etc.)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
+"Colectorul de gunoi duce la blocaje sau la o utilizare inutil de mare a "
+"memoriei (Lua, Python, JavaScript, ActionScript etc.)."
 
 #: ../../docs/about/faq.rst:151
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
+"Dificultatea de a se integra cu editorul de cod pentru a oferi completare de "
+"cod, editare live etc. (toate). Acest lucru este bine susținut de GDScript."
 
 #: ../../docs/about/faq.rst:155
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr ""
+"GDScript a fost conceput pentru a reduce problemele de mai sus și nu numai."
 
 #: ../../docs/about/faq.rst:158
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Ce tipuri de formate de modele 3D acceptă Godot?"
 
 #: ../../docs/about/faq.rst:160
 msgid ""
@@ -935,10 +1002,14 @@ msgid ""
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
+"Godot acceptă Collada prin intermediul exportatorului `OpenCollada <https://"
+"github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, "
+"3DSMax). Dacă folosiți Blender, aruncați o privire la propriul nostru "
+"`Better Collada Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:163
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Începând cu Godot 3.0, este acceptat glTF."
 
 #: ../../docs/about/faq.rst:165
 msgid ""
@@ -946,11 +1017,17 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX este acceptat prin intermediul bibliotecii Open Asset Import. Cu toate "
+"acestea, FBX este un format proprietar, așa că vă recomandăm să folosiți "
+"alte formate enumerate mai sus, dacă acestea sunt potrivite pentru fluxul "
+"dvs. de lucru."
 
 #: ../../docs/about/faq.rst:169
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"Va fi [inserați SDK-ul închis, cum ar fi FMOD, GameWorks, etc.] acceptat în "
+"Godot?"
 
 #: ../../docs/about/faq.rst:171
 msgid ""
@@ -959,6 +1036,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Scopul Godot este de a crea un motor gratuit și cu sursă deschisă, cu "
+"licență MIT, care să fie modular și extensibil. Nu există niciun plan pentru "
+"comunitatea de dezvoltare a motorului de bază care să susțină SDK-uri terțe, "
+"cu sursă închisă/proprietare, deoarece integrarea cu acestea ar fi contrară "
+"eticii Godot."
 
 #: ../../docs/about/faq.rst:176
 msgid ""
@@ -966,12 +1048,18 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Acestea fiind spuse, deoarece Godot este open-source și modular, nimic nu vă "
+"împiedică pe dumneavoastră sau pe oricine altcineva interesat să adăugați "
+"aceste biblioteci ca un modul și să vă livrați jocul cu ele - fie ca open-"
+"source, fie ca closed-source."
 
 #: ../../docs/about/faq.rst:180
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"Pentru a vedea cum se poate oferi în continuare suport pentru SDK-ul ales de "
+"dvs., consultați întrebarea de mai jos referitoare la Plugin-uri."
 
 #: ../../docs/about/faq.rst:183
 msgid ""
@@ -980,11 +1068,17 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Dacă cunoașteți un SDK al unei terțe părți care nu este susținut de Godot, "
+"dar care oferă integrare gratuită și cu sursă deschisă, luați în considerare "
+"posibilitatea de a începe lucrul de integrare. Godot nu aparține unei "
+"singure persoane; el aparține comunității și se dezvoltă odată cu "
+"contribuitorii ambițioși ai comunității, precum dumneavoastră."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Cum instalez editorul Godot pe sistemul meu (pentru integrarea pe desktop)?"
 
 #: ../../docs/about/faq.rst:191
 msgid ""
@@ -997,12 +1091,22 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Deoarece nu este nevoie să instalați Godot pe sistem pentru a-l rula, acest "
+"lucru înseamnă că integrarea desktopului nu este realizată automat. Există "
+"două modalități de a depăși acest aspect. Puteți instala Godot din `Steam "
+"<https://store.steampowered.com/app/404790/Godot_Engine/>`__ (toate "
+"platformele), `Scoop <https://scoop.sh/>`__ (Windows), `Homebrew <https://"
+"brew.sh/>`__ (macOS) sau `Flathub <https://flathub.org/apps/details/org."
+"godotengine.Godot>`__ (Linux). Aceasta va efectua automat pașii necesari "
+"pentru integrarea pe desktop."
 
 #: ../../docs/about/faq.rst:199
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Alternativ, puteți efectua manual pașii pe care un program de instalare i-ar "
+"face în locul dumneavoastră:"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -1010,10 +1114,14 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Mutați executabilul Godot într-o locație stabilă (de exemplu, în afara "
+"dosarului Descărcări), astfel încât să nu îl mutați din greșeală și să nu "
+"stricați comanda rapidă în viitor."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Faceți clic dreapta pe executabilul Godot și alegeți **Create Shortcut**."
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1022,6 +1130,11 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Mutați comanda rapidă creată în ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs``. Aceasta este locația la nivel de utilizator pentru "
+"scurtăturile care vor apărea în meniul Start. Puteți, de asemenea, să fixați "
+"Godot în bara de activități făcând clic dreapta pe executabil și alegând "
+"**Pin to Task Bar**."
 
 #: ../../docs/about/faq.rst:215
 msgid ""
@@ -1029,11 +1142,14 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Trageți aplicația Godot extrasă în ``/Aplications/Godot.app``, apoi trageți-"
+"o în Dock, dacă doriți. Spotlight va putea găsi Godot atâta timp cât se află "
+"în ``/Applications`` sau ``~/Applications``."
 
 #: ../../docs/about/faq.rst:220
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -1041,6 +1157,9 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Mutați binarul Godot într-o locație stabilă (de exemplu, în afara dosarului "
+"Descărcări), astfel încât să nu îl mutați accidental și să nu stricați "
+"comanda rapidă în viitor."
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -1050,6 +1169,12 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Redenumiți și mutați binarul Godot într-o locație prezentă în variabila de "
+"mediu ``PATH``. Aceasta este de obicei ``/usr/local/bin/godot`` sau ``/usr/"
+"bin/godot``. Pentru a face acest lucru este nevoie de privilegii de "
+"administrator, dar acest lucru vă permite, de asemenea, să :ref:`executați "
+"editorul Godot de pe un terminal <doc_command_line_tutorial>`` introducând "
+"``godot``."
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1058,6 +1183,10 @@ msgid ""
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Dacă nu puteți muta binarul editorului Godot într-o locație protejată, "
+"puteți păstra binarul undeva în directorul dvs. personal și modificați linia "
+"``Path=`` din fișierul ``.desktop`` legat mai jos pentru a conține calea "
+"completă *absolută* către binarul Godot."
 
 #: ../../docs/about/faq.rst:235
 msgid ""
@@ -1067,10 +1196,16 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"Salvați `acest fișier .desktop <https://raw.githubusercontent.com/"
+"godotengine/godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ în "
+"``$HOME/.local/share/applications/``. Dacă aveți privilegii de "
+"administrator, puteți salva, de asemenea, fișierul ``.desktop`` în ``/usr/"
+"local/share/applications`` pentru a face scurtătura disponibilă pentru toți "
+"utilizatorii."
 
 #: ../../docs/about/faq.rst:241
 msgid "Is the Godot editor a portable application?"
-msgstr ""
+msgstr "Este editorul Godot o aplicație portabilă?"
 
 #: ../../docs/about/faq.rst:243
 msgid ""
@@ -1078,6 +1213,9 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"În configurația sa implicită, Godot este *semiportabil*. Executabilul său "
+"poate fi rulat din orice locație (inclusiv locații care nu pot fi scrise) și "
+"nu necesită niciodată privilegii de administrator."
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1087,16 +1225,25 @@ msgid ""
 "containing the Godot executable. See :ref:`doc_data_paths` for more "
 "information."
 msgstr ""
+"Cu toate acestea, fișierele de configurare vor fi scrise în directorul de "
+"configurare sau de date la nivel de utilizator. Aceasta este de obicei o "
+"abordare bună, dar înseamnă că fișierele de configurare nu vor fi "
+"transportate de la o mașină la alta dacă copiați dosarul care conține "
+"executabilul Godot. Consultați :ref:`doc_data_paths` pentru mai multe "
+"informații."
 
 #: ../../docs/about/faq.rst:252
 msgid ""
 "If *true* portable operation is desired (e.g. for use on an USB stick), "
 "follow the steps in :ref:`doc_data_paths_self_contained_mode`."
 msgstr ""
+"Dacă se dorește o funcționare cu adevărat portabilă (de exemplu, pentru "
+"utilizarea pe un stick USB), urmați pașii din :ref:"
+"`doc_data_paths_self_contained_mode`."
 
 #: ../../docs/about/faq.rst:256
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "De ce folosește Godot Vulkan sau OpenGL în loc de Direct3D?"
 
 #: ../../docs/about/faq.rst:258
 msgid ""
@@ -1106,6 +1253,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot urmărește în primul rând compatibilitatea între platforme și "
+"standardele deschise. OpenGL și Vulkan sunt tehnologiile care sunt atât "
+"deschise, cât și disponibile (aproape) pe toate platformele. Datorită "
+"acestei decizii de proiectare, un proiect dezvoltat cu Godot pe Windows va "
+"funcționa din start pe Linux, macOS și nu numai."
 
 #: ../../docs/about/faq.rst:264
 msgid ""
@@ -1114,6 +1266,10 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Deoarece Godot are doar câteva persoane care lucrează la sistemul de redare, "
+"am prefera să avem mai puține backend-uri de redare de întreținut. În plus, "
+"utilizarea unei singure API pe toate platformele permite o mai mare "
+"coerență, cu mai puține probleme specifice fiecărei platforme."
 
 #: ../../docs/about/faq.rst:269
 msgid ""
@@ -1121,10 +1277,13 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Pe termen lung, este posibil să dezvoltăm un renderizator Direct3D 12 pentru "
+"Godot (în principal pentru Xbox), dar Vulkan și OpenGL vor rămâne backend-"
+"urile de redare implicite pe toate platformele, inclusiv Windows."
 
 #: ../../docs/about/faq.rst:274
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "De ce Godot urmărește să mențină un set mic de caracteristici de bază?"
 
 #: ../../docs/about/faq.rst:276
 msgid ""
@@ -1132,11 +1291,14 @@ msgid ""
 "ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot nu include în mod intenționat caracteristici care pot fi implementate "
+"prin suplimente, cu excepția cazului în care sunt folosite foarte des. Un "
+"exemplu în acest sens ar fi funcționalitatea inteligenței artificiale "
+"avansate."
 
 #: ../../docs/about/faq.rst:280
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "Nu există restricții in folosirea Godot"
+msgstr "Există mai multe motive pentru acest lucru:"
 
 #: ../../docs/about/faq.rst:282
 msgid ""
@@ -1148,6 +1310,14 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Întreținerea codului și identificarea erorilor.** De fiecare dată când "
+"acceptăm cod nou în depozitul Godot, contribuitorii existenți își asumă "
+"adesea responsabilitatea de a-l întreține. Unii contribuitori nu rămân "
+"întotdeauna prin preajmă după ce li se integrează codul, ceea ce ne poate "
+"îngreuna sarcina de a menține codul în cauză. Acest lucru poate duce la "
+"caracteristici prost întreținute, cu bug-uri care nu sunt niciodată "
+"rezolvate. În plus, \"suprafața API\" care trebuie să fie testată și "
+"verificată pentru regresii continuă să crească în timp."
 
 #: ../../docs/about/faq.rst:290
 msgid ""
@@ -1156,6 +1326,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Facilitatea contribuției.** Păstrând baza de cod mică și ordonată, aceasta "
+"poate rămâne rapidă și ușor de compilat din sursă. Acest lucru face ca noii "
+"contribuitori să poată începe mai ușor să lucreze cu Godot, fără a le cere "
+"să achiziționeze hardware de înaltă performanță."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1164,6 +1338,10 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**Menținerea dimensiunii binare mici pentru editor.** Nu toată lumea are o "
+"conexiune rapidă la internet. Asigurarea faptului că toată lumea poate "
+"descărca editorul Godot, îl poate extrage și îl poate rula în mai puțin de 5 "
+"minute face ca Godot să fie mai accesibil dezvoltatorilor din toate țările."
 
 #: ../../docs/about/faq.rst:300
 msgid ""
@@ -1174,6 +1352,14 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**Menținerea unei dimensiuni mici a dimensiunii binare pentru șabloanele de "
+"export.** Acest lucru are un impact direct asupra dimensiunii proiectelor "
+"exportate cu Godot. Pe platformele mobile și web, menținerea dimensiunilor "
+"mici ale fișierelor este primordială pentru a asigura instalarea și "
+"încărcarea rapidă pe dispozitive cu putere redusă. Din nou, există multe "
+"țări în care internetul de mare viteză nu este disponibil cu ușurință. În "
+"plus, în aceste țări sunt adesea în vigoare plafoane stricte de utilizare a "
+"datelor."
 
 #: ../../docs/about/faq.rst:307
 msgid ""
@@ -1186,12 +1372,23 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Din toate motivele de mai sus, trebuie să fim selectivi cu privire la ceea "
+"ce putem accepta ca funcționalitate de bază în Godot. Acesta este motivul "
+"pentru care ne propunem să mutăm o parte din funcționalitatea de bază în add-"
+"on-uri acceptate oficial în versiunile viitoare ale Godot. În ceea ce "
+"privește dimensiunea binarelor, acest lucru are și avantajul de a vă face să "
+"plătiți doar pentru ceea ce utilizați efectiv în proiectul dumneavoastră. "
+"(Între timp, puteți :ref:`compila șabloane de export personalizate cu "
+"funcționalitățile neutilizate dezactivate <doc_optimizing_for_size>`` pentru "
+"a optimiza dimensiunea de distribuție a proiectului dvs.)"
 
 #: ../../docs/about/faq.rst:316
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Cum ar trebui create activele pentru a gestiona rezoluții și rapoarte de "
+"aspect multiple?"
 
 #: ../../docs/about/faq.rst:318
 msgid ""
@@ -1203,6 +1400,14 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Această întrebare apare des și probabil că se datorează neînțelegerii create "
+"de Apple atunci când a dublat inițial rezoluția dispozitivelor sale. Aceasta "
+"i-a făcut pe oameni să creadă că a avea aceleași active în rezoluții "
+"diferite este o idee bună, așa că mulți au continuat pe această cale. Acest "
+"lucru a funcționat inițial până la un punct și numai pentru dispozitivele "
+"Apple, dar apoi au fost create mai multe dispozitive Android și Apple cu "
+"rezoluții și rapoarte de aspect diferite, cu o gamă foarte largă de "
+"dimensiuni și DPI-uri."
 
 #: ../../docs/about/faq.rst:326
 msgid ""
@@ -1211,6 +1416,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"Cea mai obișnuită și corectă modalitate de a realiza acest lucru este de a "
+"utiliza o singură rezoluție de bază pentru joc și de a gestiona doar "
+"diferite rapoarte de aspect ale ecranului. Acest lucru este necesar mai ales "
+"pentru 2D, deoarece în 3D este doar o chestiune de XFov sau YFov al camerei."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
@@ -1221,6 +1430,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Alegeți o singură rezoluție de bază pentru jocul dumneavoastră. Chiar dacă "
+"există dispozitive care ajung până la 2K și dispozitive care coboară până la "
+"400p, scalarea hardware obișnuită a dispozitivului dvs. se va ocupa de acest "
+"lucru cu costuri de performanță mici sau chiar deloc. Cele mai frecvente "
+"alegeri sunt fie aproape de 1080p (1920x1080), fie 720p (1280x720). Rețineți "
+"că, cu cât rezoluția este mai mare, cu atât activele dvs. sunt mai mari, cu "
+"atât mai multă memorie vor ocupa și cu atât mai mult timp va dura încărcarea."
 
 #: ../../docs/about/faq.rst:338
 msgid ""
@@ -1228,6 +1444,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"Folosiți opțiunile de întindere din Godot; întinderea 2D, păstrând ratele de "
+"aspect, funcționează cel mai bine. Consultați tutorialul :ref:"
+"`doc_multiple_resolutions` pentru a afla cum să realizați acest lucru."
 
 #: ../../docs/about/faq.rst:342
 msgid ""
@@ -1236,6 +1455,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Stabiliți o rezoluție minimă și apoi decideți dacă doriți ca jocul să se "
+"întindă pe verticală sau pe orizontală pentru diferite rapoarte de aspect "
+"sau dacă există un singur raport de aspect și doriți să apară în schimb bare "
+"negre. Acest lucru este explicat și în :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:347
 msgid ""
@@ -1243,10 +1466,15 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Pentru interfețele utilizator, utilizați :ref:`anchoring "
+"<doc_size_and_anchors>` pentru a determina unde trebuie să stea și să se "
+"deplaseze comenzile. Dacă interfețele de utilizare sunt mai complexe, luați "
+"în considerare posibilitatea de a învăța despre Containers."
 
 #: ../../docs/about/faq.rst:351
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr ""
+"Și asta e tot! Jocul dvs. ar trebui să funcționeze în mai multe rezoluții."
 
 #: ../../docs/about/faq.rst:353
 msgid ""
@@ -1255,10 +1483,14 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"Dacă se dorește ca jocul dvs. să funcționeze și pe dispozitive vechi cu "
+"ecrane mici (cu o lățime mai mică de 300 de pixeli), puteți utiliza opțiunea "
+"de export pentru a micșora imaginile și a seta această construcție pentru a "
+"fi utilizată pentru anumite dimensiuni de ecran în App Store sau Google Play."
 
 #: ../../docs/about/faq.rst:359
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Cum îl pot extinde pe Godot?"
 
 #: ../../docs/about/faq.rst:361
 msgid ""
@@ -1266,20 +1498,26 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"Pentru extinderea Godot, cum ar fi crearea de plugin-uri Godot Editor sau "
+"adăugarea de suport pentru limbi suplimentare, aruncați o privire la :ref:"
+"`EditorPlugins <doc_making_plugins>` și la scripturile de instrumente."
 
 #: ../../docs/about/faq.rst:365
 msgid "Also, see the official blog posts on these topics:"
 msgstr ""
+"De asemenea, consultați postările de pe blogul oficial pe aceste subiecte:"
 
 #: ../../docs/about/faq.rst:367
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`O privire la arhitectura GDNative <https://godotengine.org/article/look-"
+"gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:368
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative este aici! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:370
 msgid ""
@@ -1288,26 +1526,35 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"Puteți, de asemenea, să aruncați o privire la implementarea GDScript, la "
+"modulele Godot, precum și la `, suportul neoficial Python <https://github."
+"com/touilleMan/godot-python>`_ pentru Godot. Acesta ar fi un bun punct de "
+"plecare pentru a vedea cum se integrează o altă bibliotecă terță parte cu "
+"Godot."
 
 #: ../../docs/about/faq.rst:376
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "Când va fi lansată următoarea versiune a lui Godot?"
 
 #: ../../docs/about/faq.rst:378
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"Când este gata! Pentru mai multe informații, consultați :ref:"
+"`doc_release_policy_when_is_next_release_out`."
 
 #: ../../docs/about/faq.rst:382
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Aș dori să contribui și eu! Cum pot să încep?"
 
 #: ../../docs/about/faq.rst:384
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Minunat! Fiind un proiect open-source, Godot prosperă datorită inovației și "
+"ambiției dezvoltatorilor ca tine."
 
 #: ../../docs/about/faq.rst:387
 msgid ""
@@ -1317,10 +1564,16 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"Primul loc pentru a începe este `issues <https://github.com/godotengine/"
+"godot/issues>`_. Găsiți o problemă care vă interesează, apoi treceți la "
+"ghidul `Cum să contribuiți <https://github.com/godotengine/godot/blob/master/"
+"CONTRIBUTING.md#contributing-pull-requests>`_ pentru a afla cum să faceți "
+"furculiță, să modificați și să trimiteți o cerere de extragere (PR) cu "
+"modificările dumneavoastră."
 
 #: ../../docs/about/faq.rst:392
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "Am o idee grozavă pentru Godot. Cum pot să o împărtășesc?"
 
 #: ../../docs/about/faq.rst:394
 msgid ""
@@ -1334,39 +1587,59 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Ar putea fi tentant să doriți să aduceți idei la Godot, cum ar fi cele care "
+"duc la schimbări masive în nucleu, un fel de imitație a ceea ce face un alt "
+"motor de joc sau fluxuri de lucru alternative pe care ați dori să le "
+"integrați în editor. Acestea sunt grozave și suntem recunoscători că există "
+"oameni atât de motivați care doresc să contribuie, dar Godot se concentrează "
+"și se va concentra întotdeauna pe funcționalitatea de bază, așa cum este "
+"descrisă în `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
+"master/ROADMAP.md>`_, `strivirea bug-urilor și rezolvarea problemelor "
+"<https://github.com/godotengine/godot/issues>`_, precum și conversațiile "
+"dintre membrii comunității Godot."
 
 #: ../../docs/about/faq.rst:403
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"Cei mai mulți dezvoltatori din comunitatea Godot vor fi mai interesați să "
+"învețe despre lucruri precum:"
 
 #: ../../docs/about/faq.rst:406
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Experiența dvs. în utilizarea software-ului și problemele pe care le aveți "
+"(ne interesează acest lucru mult mai mult decât ideile de îmbunătățire a "
+"acestuia)."
 
 #: ../../docs/about/faq.rst:408
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Caracteristicile pe care ați dori să le vedeți implementate pentru că aveți "
+"nevoie de ele pentru proiectul dumneavoastră."
 
 #: ../../docs/about/faq.rst:410
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
+"Conceptele care au fost dificil de înțeles în timpul învățării programului."
 
 #: ../../docs/about/faq.rst:411
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Părțile fluxului de lucru pe care ați dori să le optimizați."
 
 #: ../../docs/about/faq.rst:412
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"Părțile în care ați ratat tutoriale clare sau în care documentația nu a fost "
+"clară."
 
 #: ../../docs/about/faq.rst:414
 msgid ""
@@ -1374,6 +1647,10 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Vă rugăm să nu simt ca ideile tale pentru Godot sunt nedorite. În schimb, "
+"încercați să le reformulați mai întâi ca o problemă, astfel încât "
+"dezvoltatorii și comunitatea să aibă o bază funcțională pe care să vă bazați "
+"ideile."
 
 #: ../../docs/about/faq.rst:418
 msgid ""
@@ -1383,16 +1660,25 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Un mod bun de a aborda împărtășirea ideilor și problemelor cu comunitatea "
+"este sub forma unui set de povestiri ale utilizatorilor. Explicați ce "
+"încercați să faceți, ce comportament vă așteptați să se întâmple și apoi ce "
+"comportament s-a întâmplat de fapt. Încadrarea problemelor și ideilor în "
+"acest mod va ajuta întreaga comunitate să rămână concentrată pe "
+"îmbunătățirea experiențelor dezvoltatorilor în ansamblu."
 
 #: ../../docs/about/faq.rst:424
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"Puncte bonus dacă aduceți capturi de ecran, cifre concrete, cazuri de "
+"testare sau exemple de proiecte (dacă este cazul)."
 
 #: ../../docs/about/faq.rst:430
 msgid "Is it possible to use Godot to create non-game applications?"
 msgstr ""
+"Este posibil să folosiți Godot pentru a crea aplicații care nu sunt jocuri?"
 
 #: ../../docs/about/faq.rst:432
 msgid ""
@@ -1400,6 +1686,9 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"Da! Godot dispune de un sistem extins de interfață de utilizator încorporat, "
+"iar dimensiunea mică a distribuției sale poate fi o alternativă potrivită la "
+"cadre precum Electron sau Qt."
 
 #: ../../docs/about/faq.rst:435
 msgid ""
@@ -1407,12 +1696,19 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"Atunci când creați o aplicație care nu este un joc, asigurați-vă că "
+"activați :ref:`modul de procesor redus "
+"<class_ProjectSettings_property_application/run/low_processor_mode>` în "
+"setările proiectului pentru a reduce utilizarea CPU și GPU."
 
 #: ../../docs/about/faq.rst:439
 msgid ""
 "That said, we wouldn't recommend using Godot to create a *mobile* "
 "application since low-processor mode isn't supported on mobile platforms yet."
 msgstr ""
+"Acestea fiind spuse, nu vă recomandăm să utilizați Godot pentru a crea o "
+"aplicație mobilă ** , deoarece modul cu procesor redus nu este încă acceptat "
+"pe platformele mobile."
 
 #: ../../docs/about/faq.rst:442
 msgid ""
@@ -1420,10 +1716,13 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"Consultați `Material Maker <https://github.com/RodZill4/material-maker>`__ "
+"și `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ pentru "
+"exemple de aplicații open source realizate cu Godot."
 
 #: ../../docs/about/faq.rst:449
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "Este posibil să folosiți Godot ca bibliotecă?"
 
 #: ../../docs/about/faq.rst:451
 msgid ""
@@ -1432,6 +1731,11 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot este conceput pentru a fi utilizat împreună cu editorul său. Vă "
+"recomandăm să îl încercați, deoarece, cel mai probabil, vă va economisi timp "
+"pe termen lung. Nu există planuri de a face Godot utilizabil ca bibliotecă, "
+"deoarece ar face restul motorului mai complicat și mai dificil de utilizat "
+"pentru utilizatorii ocazionali."
 
 #: ../../docs/about/faq.rst:456
 msgid ""
@@ -1440,10 +1744,14 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"Dacă doriți să folosiți o bibliotecă de randare, încercați să folosiți în "
+"schimb un motor de randare stabilit. Rețineți că motoarele de randare au de "
+"obicei comunități mai mici în comparație cu Godot. Acest lucru va face mai "
+"dificilă găsirea răspunsurilor la întrebările dumneavoastră."
 
 #: ../../docs/about/faq.rst:462
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Ce set de instrumente de interfață utilizator folosește Godot?"
 
 #: ../../docs/about/faq.rst:464
 msgid ""
@@ -1454,6 +1762,13 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot nu folosește un set de instrumente standard :abbr:`GUI (Graphical User "
+"Interface)` cum ar fi GTK, Qt sau wxWidgets. În schimb, Godot utilizează "
+"propriul set de instrumente de interfață utilizator, redat folosind OpenGL "
+"ES sau Vulkan. Acest set de instrumente este expus sub formă de noduri de "
+"control, care sunt utilizate pentru a reda editorul (care este scris în C+"
+"+). Aceste noduri de control pot fi, de asemenea, utilizate în proiecte din "
+"orice limbaj de scripting acceptat de Godot."
 
 #: ../../docs/about/faq.rst:471
 msgid ""
@@ -1463,6 +1778,12 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"Acest set de instrumente personalizat permite să beneficieze de accelerarea "
+"hardware și să aibă un aspect coerent pe toate platformele. În plus, nu "
+"trebuie să facă față restricțiilor legate de licențierea LGPL care vin cu "
+"GTK sau Qt. În cele din urmă, acest lucru înseamnă că Godot își \"mănâncă "
+"propria mâncare de câine\", deoarece editorul în sine este unul dintre cei "
+"mai complecși utilizatori ai sistemului de interfață utilizator al Godot."
 
 #: ../../docs/about/faq.rst:477
 msgid ""
@@ -1470,10 +1791,14 @@ msgid ""
 "<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
 "non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
+"Acest set de instrumente de interfață personalizată :ref:`nu poate fi "
+"folosit ca bibliotecă <doc_faq_use_godot_as_library>``, dar puteți totuși :"
+"ref:`utiliza Godot pentru a crea aplicații care nu sunt jocuri, folosind "
+"editorul <doc_faq_non_game_applications>``."
 
 #: ../../docs/about/faq.rst:484
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr ""
+msgstr "De ce Godot nu folosește STL (Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:486
 msgid ""
@@ -1481,12 +1806,17 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"La fel ca multe alte biblioteci (Qt, de exemplu), Godot nu utilizează STL. "
+"Credem că STL este o bibliotecă excelentă pentru scopuri generale, dar am "
+"avut cerințe speciale pentru Godot."
 
 #: ../../docs/about/faq.rst:490
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Șabloanele STL creează simboluri foarte mari, ceea ce are ca rezultat binari "
+"de depanare uriași. În schimb, folosim câteva șabloane cu nume foarte scurte."
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -1495,28 +1825,39 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"Majoritatea containerelor noastre răspund unor nevoi speciale, cum ar fi "
+"Vector, care utilizează copierea la scriere și pe care îl folosim pentru a "
+"transmite date, sau sistemul RID, care necesită un timp de acces O(1) pentru "
+"performanță. De asemenea, implementările noastre de hash map sunt concepute "
+"pentru a se integra perfect cu tipurile de motoare interne."
 
 #: ../../docs/about/faq.rst:492
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Containerele noastre au încorporată o funcție de urmărire a memoriei, care "
+"ajută la o mai bună urmărire a utilizării memoriei."
 
 #: ../../docs/about/faq.rst:493
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Pentru matricele mari, folosim memoria comună, care poate fi mapată fie pe o "
+"memorie tampon prealocată, fie pe memorie virtuală."
 
 #: ../../docs/about/faq.rst:494
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Utilizăm tipul nostru personalizat de String, deoarece cel furnizat de STL "
+"este prea simplu și nu are un suport adecvat pentru internaționalizare."
 
 #: ../../docs/about/faq.rst:497
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "De ce nu folosește Godot excepții?"
 
 #: ../../docs/about/faq.rst:499
 msgid ""
@@ -1525,16 +1866,21 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Credem că jocurile nu ar trebui să se blocheze, indiferent de situație. În "
+"cazul în care se întâmplă o situație neașteptată, Godot va imprima o eroare "
+"(care poate fi urmărită chiar și până la script), dar apoi va încerca să se "
+"redreseze cât mai grațios posibil și să continue."
 
 #: ../../docs/about/faq.rst:504
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"În plus, excepțiile cresc semnificativ dimensiunea binară a executabilului."
 
 #: ../../docs/about/faq.rst:508
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "De ce Godot nu aplică RTTI?"
 
 #: ../../docs/about/faq.rst:510
 msgid ""
@@ -1542,10 +1888,15 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot oferă propriul său sistem de tip-casting, care poate utiliza opțional "
+"RTTI în mod intern. Dezactivarea RTTI în Godot înseamnă că se pot obține "
+"dimensiuni binare considerabil mai mici, cu un mic cost de performanță."
 
 #: ../../docs/about/faq.rst:515
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"De ce Godot nu obligă utilizatorii să implementeze DoD (Data oriented "
+"Design)?"
 
 #: ../../docs/about/faq.rst:517
 msgid ""
@@ -1553,6 +1904,10 @@ msgid ""
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"În timp ce Godot încearcă, în mod intern, pentru o mulțime de sarcini de "
+"înaltă performanță, să utilizeze cât mai bine posibil coerența cache-ului, "
+"credem că majoritatea utilizatorilor nu au nevoie să fie forțați să "
+"utilizeze practicile DoD."
 
 #: ../../docs/about/faq.rst:521
 msgid ""
@@ -1562,12 +1917,21 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD este, în principal, o optimizare a coerenței cache-ului, care vă poate "
+"aduce îmbunătățiri semnificative ale performanței doar atunci când aveți de-"
+"a face cu zeci de mii de obiecte (care sunt procesate în fiecare cadru cu "
+"puține modificări). Adică, dacă mutați câteva sute de sprites sau inamici pe "
+"cadru, DoD nu vă va ajuta și ar trebui să luați în considerare o altă "
+"abordare a optimizării."
 
 #: ../../docs/about/faq.rst:528
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Marea majoritate a jocurilor nu au nevoie de acest lucru, iar Godot oferă "
+"ajutoare practice pentru a face treaba în majoritatea cazurilor în care este "
+"necesar."
 
 #: ../../docs/about/faq.rst:531
 msgid ""
@@ -1575,10 +1939,14 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Dacă este nevoie de un joc care trebuie să proceseze o cantitate atât de "
+"mare de obiecte, recomandarea noastră este să folosiți C++ și GDNative "
+"pentru părțile de înaltă performanță și GDScript (sau C#) pentru restul "
+"jocului."
 
 #: ../../docs/about/faq.rst:536
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Cum pot sprijini dezvoltarea Godot sau contribui la ea?"
 
 #: ../../docs/about/faq.rst:538
 msgid "See :ref:`doc_ways_to_contribute`."
@@ -1586,13 +1954,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:541
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "Cine lucrează la Godot? Cum pot să vă contactez?"
 
 #: ../../docs/about/faq.rst:543
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"A se vedea pagina corespunzătoare de pe site-ul `Godot <https://godotengine."
+"org/contact>`_."
 
 #: ../../docs/about/troubleshooting.rst:4
 #: ../../docs/tutorials/export/one-click_deploy.rst:63
@@ -1616,6 +1986,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Consultați :ref:`doc_using_the_web_editor` pentru avertismente specifice "
+"versiunii HTML5 a editorului Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -2886,7 +3258,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:112
 msgid "Input"
-msgstr ""
+msgstr "Intrare (Input)"
 
 #: ../../docs/about/list_of_features.rst:445
 msgid ""
@@ -3482,7 +3854,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 #, fuzzy
@@ -3748,7 +4120,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/index.rst:81
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
@@ -8846,7 +9218,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
 msgid "Message"
-msgstr ""
+msgstr "Mesaj"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -12365,11 +12737,11 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr ""
+msgstr "Transformă"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -13376,7 +13748,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr ""
+msgstr "Scară"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -17514,7 +17886,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:129
 msgid "Quality"
-msgstr ""
+msgstr "Calitate"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:131
 msgid ""
@@ -17853,7 +18225,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "Coacere"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -18042,7 +18414,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:576
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "Date"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:344
 msgid ""
@@ -19291,7 +19663,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
-msgstr ""
+msgstr "Cantitate"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
@@ -20037,7 +20409,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "Indice"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:30
 msgid "Mesh.ArrayType Enum"
@@ -25332,7 +25704,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
 msgid "Compression"
-msgstr ""
+msgstr "Compresie"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 msgid ""
@@ -25622,7 +25994,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:147
 #: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
-msgstr ""
+msgstr "Filtru:"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:149
 msgid ""
@@ -26460,8 +26832,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:156
+#, fuzzy
 msgid "Root Name"
-msgstr ""
+msgstr "Nume rădăcină"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:158
 msgid "Allows setting a specific name to the generated root node."
@@ -26469,7 +26842,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:161
 msgid "Root Scale"
-msgstr ""
+msgstr "Dimensiune Radacina"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:163
 msgid "The scale of the root node."
@@ -26502,7 +26875,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:273
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:371
 msgid "Storage"
-msgstr ""
+msgstr "Stochare"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:191
 msgid ""
@@ -26522,7 +26895,7 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:72
 #: ../../docs/tutorials/io/data_paths.rst:121
 msgid "Location"
-msgstr ""
+msgstr "Locație"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:204
 msgid ""
@@ -26861,7 +27234,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:383
 msgid "Clips"
-msgstr ""
+msgstr "Clipuri"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:385
 msgid ""
@@ -31126,7 +31499,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr ""
+msgstr "Comandă"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:35
 msgid "``-h``, ``--help``, ``/?``"
@@ -32578,7 +32951,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 #: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid "Scale Mode"
-msgstr ""
+msgstr "Mod Redimensionare"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 #: ../../docs/tutorials/editor/default_key_mapping.rst:155
@@ -32605,7 +32978,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Utilizează Snap Inteligent"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid ":kbd:`Shift + S`"
@@ -32617,7 +32990,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Utilizează Snap Grilă"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid ":kbd:`Shift + G`"
@@ -32717,7 +33090,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "Previzualizare Scară Canvas"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -39332,7 +39705,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Local"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -44031,7 +44404,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:29
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:147
 msgid "Value"
-msgstr ""
+msgstr "Valoare"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:31
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:346
@@ -51673,7 +52046,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "Randare"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -68960,9 +69333,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "Se Testează"
+msgstr "Setări"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -69082,7 +69454,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:51
 msgid ""
@@ -90103,7 +90475,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Module"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -97016,7 +97388,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Result"
-msgstr ""
+msgstr "Rezultat"
 
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:128
 msgid "[Class]"

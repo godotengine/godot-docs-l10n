@@ -6,6 +6,8 @@
 # Adam Jagoda <kontakt@lukasz.xyz>, 2020.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018-2019, 2021.
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
+# Adam Palinkiewicz <pogromca.ap@gmail.com>, 2022.
+# Adrians <adrianspl@o2.pl>, 2022.
 # Aleksandra Granacka <agranacka96@gmail.com>, 2020-2021.
 # A M <augim3@gmail.com>, 2021.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
@@ -22,8 +24,10 @@
 # Dawid Skubij <davidsd@tlen.pl>, 2022.
 # Dominik Mielcarek <fogbpl@gmail.com>, 2020.
 # Dominik Szaradowski <d.szaradowski@gmail.com>, 2020.
+# Filip Gliszczyński <filipgliszczynski@gmail.com>, 2022.
 # Filip Glura <mcmr.slendy@gmail.com>, 2020-2021.
 # Garreciq <adamzygiel@gmail.com>, 2020-2021.
+# gnu-ewm <gnu.ewm@protonmail.com>, 2023.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # Igor Kordiukiewicz <igorkordiukiewicz@gmail.com>, 2022.
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
@@ -44,8 +48,10 @@
 # Maciej Cywiński <cyvvilek@gmail.com>, 2020.
 # Maciej Krzyżanowski <krzmaciek@gmail.com>, 2020-2021.
 # Maciej <WriteToFeniks@gmail.com>, 2019-2020.
+# Marcel Marusiak <marcel.marusiak@gmail.com>, 2022.
 # Marek Malaria <to.tylko.dla.kont@gmail.com>, 2021.
 # Mateusz Grzonka <alpinus4@gmail.com>, 2020.
+# Mateusz Żak <matisgramy@gmail.com>, 2023.
 # Mateusz Zdrzałek <matjozohd@gmail.com>, 2022.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019-2020.
@@ -61,8 +67,10 @@
 # piotrekpajak <araneo@protonmail.com>, 2018.
 # Piotr Grodzki <ziemniakglados@gmail.com>, 2020.
 # Piotr <promantix@gmail.com>, 2022.
+# Piotr Ślusarz <piotrekslusarz@outlook.com>, 2022.
 # Piotr Szyszko <alkazam86@gmail.com>, 2020.
 # Pixel Zone - Godot Engine Tutorials <karoltomaszewskimusic@gmail.com>, 2020-2022.
+# ppelikan <ppelikan@gmail.com>, 2023.
 # Przemyslaw Osmanski <przemek-o@soft-system.pl>, 2020.
 # Przemysław Pierzga <przemyslawpierzga@gmail.com>, 2019-2020.
 # Pytek1 <bpieniak1@gmail.com>, 2018.
@@ -77,7 +85,7 @@
 # Suchy  Talerz <kacperkubis06@gmail.com>, 2021-2022.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
 # Tomasz Piechocki <t.piechocki@yahoo.com>, 2021.
-# Tomek <kobewi4e@gmail.com>, 2018-2022.
+# Tomek <kobewi4e@gmail.com>, 2018-2023.
 # wieslaw.mlynarski Wiesław <wieslaw.mlynarski@gmail.com>, 2020.
 # Wodorek <Krol.w94@gmail.com>, 2022.
 # Zamulacz <mcichocki@protonmail.com>, 2019.
@@ -88,8 +96,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-09-09 16:03+0200\n"
-"PO-Revision-Date: 2022-07-10 14:38+0000\n"
-"Last-Translator: Dawid Skubij <davidsd@tlen.pl>\n"
+"PO-Revision-Date: 2023-01-19 15:56+0000\n"
+"Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -98,7 +106,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -130,9 +138,8 @@ msgid "Class reference"
 msgstr "Referencja klas"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Dokumentacja Godot - wersja *3.4*"
+msgstr "Dokumentacja Godot - wersja *3.5*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -143,17 +150,16 @@ msgstr ""
 "Rozwiń panel \"Czytaj Dokumenty\" na dole menu, aby dotrzeć do listy."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the 3.5 branch. Looking for the documentation "
 "of the current **development** branch? `Have a look here <https://docs."
 "godotengine.org/en/latest>`_. You can also browse the documentation for the "
 "current stable `3.4 <https://docs.godotengine.org/en/3.4>`_ branch."
 msgstr ""
-"To jest dokumentacja dla gałęzi stabilnej 3.4. Szukasz dokumentacji dla "
-"aktualnej gałęzi **rozwojowej**?. `Sprawdź tutaj <http://docs.godotengine."
-"org/en/latest>`_. Możesz także przejrzeć dokumentację poprzedniej stabilnej "
-"gałęzi `3.3 <https://docs.godotengine.org/en/3.1>`_."
+"To jest dokumentacja dla gałęzi 3.5. Szukasz dokumentacji dla aktualnej "
+"gałęzi **rozwojowej**?. `Zajrzyj tutaj <http://docs.godotengine.org/en/"
+"latest>`_. Możesz także przejrzeć dokumentację poprzedniej stabilnej gałęzi "
+"`3.3 <https://docs.godotengine.org/en/3.1>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -738,9 +744,8 @@ msgstr ""
 "<doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (eksperymentalne)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -1128,6 +1133,8 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Jak mogę zainstalować edytor Godot'a na moim systemie (dla integracji z "
+"pulpitem)?"
 
 #: ../../docs/about/faq.rst:191
 msgid ""
@@ -1140,12 +1147,22 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Ponieważ nie musisz instalować Godota na swoim urządzeniu, aby móc go "
+"uruchamiać, integracja desktopowa nie jest wykonywana automatycznie. Są dwa "
+"sposoby na obejście tego. Możesz zainstalować Godota przy pomocy instalatora "
+"ze `Steam <https://store.steampowered.com/app/404790/Godot_Engine/>`__ (dla "
+"wszystkich platform), `Scoop <https://scoop.sh/>`__ (dla Windows), `Homebrew "
+"<https://brew.sh/>`__ (dla macOS) or `Flathub <https://flathub.org/apps/"
+"details/org.godotengine.Godot>`__ (dla Linux). Instalator sam wykona "
+"wszystkie kroki potrzebne dla integracji desktopowej."
 
 #: ../../docs/about/faq.rst:199
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Ewentualnie, możesz samemu wykonać wszystkie czynności, które miał wykonać "
+"za ciebie instalator:"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -1153,10 +1170,15 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Przenieś plik wykonywalny Godot'a do stabilnej lokalizacji (tj. poza folder "
+"Pobrane), aby przez przypadek nie przenieść go w przyszłości, co mogłoby "
+"uszkodzić wszystkie utworzone do niego skróty."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Kliknij prawym przyciskiem myszy na plik wykonywalny Godot i wybierz opcję "
+"**Utwórz skrót**."
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1165,13 +1187,18 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Przenieś utworzony skrót do ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
+"Menu\\Programs``. Jest to miejsce, z którego system Windows pobiera skróty, "
+"które pojawią się w menu Start. Możesz również przypiąć Godot'a do paska "
+"zadań poprzez kliknięcie prawym przyciskiem myszy na plik wykonywalny i "
+"wybranie opcji **Przypnij do paska zadań**."
 
 #: ../../docs/about/faq.rst:215
 msgid ""
 "Drag the extracted Godot application to ``/Applications/Godot.app``, then "
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
-msgstr ""
+msgstr "\n"
 
 #: ../../docs/about/faq.rst:220
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
@@ -1184,6 +1211,8 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Przenieś pliki binarne Godot'a w bezpieczną lokalizację (np. poza folder "
+"\"Pobrane\"), by niechcący ich nie usunąć albo przenieść w przyszłości."
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -1193,6 +1222,11 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Zmień nazwę i przenieś pliki binarne Godot'a do lokalizacji widocznej w "
+"twojej wartości ``PATH`` środowiska. Wartość ta to zazwyczaj ``/usr/local/"
+"bin/godot`` lub ``/usr/bin/godot``. Do zrobienia tego potrzebne są "
+"uprawnienia administratora, ale to również pozwoli Ci do uruchomienia "
+"edytora przy użyciu terminala."
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1201,6 +1235,10 @@ msgid ""
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Jeśli nie możesz przenieść plików binarnych edytora do bezpiecznej "
+"lokalizacji, możesz je trzymać gdzieś w folderze domowym i później "
+"zmodyfikować wartość ``Path=`` w pliku poniżej ``.desktop``, który jest ma "
+"przechowywać całą (bezwzględną) ścieżką do plików binarnych Godot'a."
 
 #: ../../docs/about/faq.rst:235
 msgid ""
@@ -1210,12 +1248,15 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"Zapisz plik `plik.desktop  <https://raw.githubusercontent.com/godotengine/"
+"godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>` to ``$HOME/.local/"
+"share/applications/``. Jeśli posiadasz uprawnienia administratora możesz "
+"rownież zapisać plik ``.desktop`` w lokalizacji ``/usr/local/share/"
+"applications`` by skrót był dostępny dla wszystkich użytkowników."
 
 #: ../../docs/about/faq.rst:241
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr ""
-"Czy jest możliwe używać Godota do tworzenia aplikacji nie będących grami?"
+msgstr "Czy edytor Godot jest aplikacją przenośną?"
 
 #: ../../docs/about/faq.rst:243
 msgid ""
@@ -1223,6 +1264,9 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"W domyślnej konfiguracji Godot jest *częściowo przenośny*. Jego plik "
+"wykonywalny może działać z dowolnej lokalizacji (w tym z lokalizacji tylko "
+"do odczytu) i nigdy nie wymaga uprawnień administratora."
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1232,12 +1276,20 @@ msgid ""
 "containing the Godot executable. See :ref:`doc_data_paths` for more "
 "information."
 msgstr ""
+"Jednakże pliki konfiguracyjne będą zapisywane w katalogu konfiguracji "
+"użytkownika lub w katalogu danych. Zwykle jest to dobre podejście, ale "
+"oznacza to, że pliki konfiguracyjne nie będą przenoszone między komputerami, "
+"jeśli skopiujesz folder zawierający plik wykonywalny Godota. Zobacz :ref:"
+"`doc_data_paths`, aby uzyskać więcej informacji."
 
 #: ../../docs/about/faq.rst:252
 msgid ""
 "If *true* portable operation is desired (e.g. for use on an USB stick), "
 "follow the steps in :ref:`doc_data_paths_self_contained_mode`."
 msgstr ""
+"Jeśli wymagane jest *prawdziwe* działanie jako aplikacja przenośna (np. do "
+"użycia na pendrive'ie), postępuj zgodnie z instrukcjami w :ref:"
+"`doc_data_paths_self_contained_mode`."
 
 #: ../../docs/about/faq.rst:256
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
@@ -2233,7 +2285,6 @@ msgstr ""
 "obsługiwanych przez Godot."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -2241,9 +2292,9 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Ta strona zawiera listę funkcji wspieranych przez obecną stabilną wersję "
-"Godota (3.2). `Więcej funkcji <https://docs.godotengine.org/en/latest/about/"
-"list_of_features.html>`__ jest dostępnych w najnowszej wersji deweloperskiej "
-"(4.0)."
+"Godota (3.5). `Szerszy zakres funkcjonalności <https://docs.godotengine.org/"
+"en/latest/about/list_of_features.html>`__ jest dostępny w najnowszej wersji "
+"deweloperskiej (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
@@ -2333,9 +2384,8 @@ msgid "Scene tree editor."
 msgstr "Edytor edytor hierarchii węzłów."
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Wbudowany edytor motywów."
+msgstr "Wbudowany edytor skryptów."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2394,8 +2444,9 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr "Ruszanie kamerą w edytorze wpływa na kamerę w uruchomionym projekcie."
 
 #: ../../docs/about/list_of_features.rst:68
+#, fuzzy
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Wbudowane odwołania do klas w dokumentacji offline."
 
 #: ../../docs/about/list_of_features.rst:69
 msgid "Use the editor in dozens of languages contributed by the community."
@@ -2414,22 +2465,20 @@ msgstr ""
 "<doc_what_is_assetlib>', aby rozszerzyć funkcjonalność edytora."
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Twórz swoje własne wtyczki <doc_making_plugins>` wykorzystując "
-"GDScript, by dodać nowe"
+"GDScript, by dodać nowe funkcjonalności lub przyspieszyć swoją pracę."
 
 #: ../../docs/about/list_of_features.rst:77
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"Pobieraj projekty z biblioteki zasobów w menadżerze projektów i importuj je "
-"bezpośrednio."
+":ref:`Pobieraj projekty z biblioteki zasobów <doc_using_assetlib_editor>` w "
+"menadżerze projektów i importuj je bezpośrednio."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "2D graphics"
@@ -2482,7 +2531,7 @@ msgstr "Płótna."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Obsługa pseudo-3D wraz z podglądem w edytorze."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid "2D lighting with normal maps."
@@ -2507,13 +2556,12 @@ msgstr ""
 "jak BMFont."
 
 #: ../../docs/about/list_of_features.rst:111
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont obsługuje zarówno czcionki monochromatyczne, jak i kolorowe (np. "
-"emotikony ). Obsługiwane formaty to TTF, OTF oraz WOFF1."
+"emotikony). Obsługiwane formaty to TTF, OTF, WOFF1 oraz WOFF1."
 
 #: ../../docs/about/list_of_features.rst:113
 msgid ""
@@ -2622,9 +2670,8 @@ msgid "3D graphics"
 msgstr "Grafika 3D"
 
 #: ../../docs/about/list_of_features.rst:155
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "Domyślnie funkcja importowania animacji jest włączona."
+msgstr "Opcjonalne renderowanie HDR z sRGB (domyślnie włączone)."
 
 #: ../../docs/about/list_of_features.rst:156
 msgid ""
@@ -2690,8 +2737,9 @@ msgid "Normal mapping."
 msgstr "Mapowanie normalnych."
 
 #: ../../docs/about/list_of_features.rst:178
+#, fuzzy
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "Szczegółowe mapowanie dla albedo I normal mapsów."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
@@ -2955,8 +3003,11 @@ msgid "**Texture compression:**"
 msgstr "**Kompresja tekstur:**"
 
 #: ../../docs/about/list_of_features.rst:265
+#, fuzzy
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
+"Bezstratny lub stratny WebP (nie oszczędza VRAM; tylko redukuje rozmiar "
+"składowania)"
 
 #: ../../docs/about/list_of_features.rst:266
 #, fuzzy
@@ -3057,9 +3108,10 @@ msgid "3D geometry helper class."
 msgstr "Klasa pomocnicza geometrii 3D."
 
 #: ../../docs/about/list_of_features.rst:302
+#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
-msgstr ""
+msgstr "Wsparcie dla eksportu aktualnej sceny jako plik glTF 2.0 z edytora"
 
 #: ../../docs/about/list_of_features.rst:305
 msgid "3D physics"
@@ -3261,10 +3313,13 @@ msgid "Use any build system and language features you wish."
 msgstr "Użyj dowolnego systemu budowy i funkcji języków."
 
 #: ../../docs/about/list_of_features.rst:380
+#, fuzzy
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
 msgstr ""
+"Wspierane bindingi języków D, Kotlin, Python, Nim i Rust są udostępnione "
+"dzięki społeczności."
 
 #: ../../docs/about/list_of_features.rst:384
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:114
@@ -3438,10 +3493,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:447
+#, fuzzy
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"Wartości osi mogą być przypisane do różnych akcji z ustawialnym deadzonem."
 
 #: ../../docs/about/list_of_features.rst:448
 msgid "Use the same code to support both keyboards and gamepads."
@@ -3464,10 +3521,13 @@ msgid "Mouse input."
 msgstr "Mysz."
 
 #: ../../docs/about/list_of_features.rst:456
+#, fuzzy
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"Kursor myszy może być widoczny, schowany, złapany lub ograniczony w obrębie "
+"okna."
 
 #: ../../docs/about/list_of_features.rst:457
 msgid ""
@@ -3480,8 +3540,9 @@ msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:461
+#, fuzzy
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "Wejście pióra/tabletach graficznego z obsługą nacisku."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid ""
@@ -3495,7 +3556,7 @@ msgstr "Nawigacja"
 
 #: ../../docs/about/list_of_features.rst:467
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "Algorytm A* w 2D i 3D"
 
 #: ../../docs/about/list_of_features.rst:468
 msgid "Navigation meshes with dynamic obstacle avoidance."
@@ -3516,43 +3577,47 @@ msgstr "Sieć"
 
 #: ../../docs/about/list_of_features.rst:474
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "Nisko poziomowe połączenie TCP z użyciem StreamPeer i TCP_Server."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "Nisko poziomowe połączenie UDP z użyciem PacketPeer i UPDServer."
 
 #: ../../docs/about/list_of_features.rst:476
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "Nisko poziomowe żądania HTTP z użyciem HTTPClient."
 
 #: ../../docs/about/list_of_features.rst:477
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "Wysoko poziomowe żądania z użyciem HTTPRequest."
 
 #: ../../docs/about/list_of_features.rst:479
+#, fuzzy
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "Wspiera HTTPS bez problemu z użyciem pakietowanych certyfikatów."
 
 #: ../../docs/about/list_of_features.rst:481
 msgid "High-level multiplayer API using UDP and ENet."
 msgstr "Wysokopoziomowe API multiplayer dzięki UDP i ENet."
 
 #: ../../docs/about/list_of_features.rst:483
+#, fuzzy
 msgid "Automatic replication using remote procedure calls (RPCs)."
 msgstr ""
+"Automatyczna replikacja z użyciem zdalnych wezwań proceduralnych (ang. RPC)."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "Wspiera zawodne, niezawodne i zamówione transfery."
 
 #: ../../docs/about/list_of_features.rst:486
+#, fuzzy
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "Klient WebSocket i serwer, jest dostępny na wszystkich platformach."
 
 #: ../../docs/about/list_of_features.rst:487
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "Klient WebRTC i serwer, jest dostępny na wszystkich platformach."
 
 #: ../../docs/about/list_of_features.rst:488
 msgid ""
@@ -3566,8 +3631,9 @@ msgid "Internationalization"
 msgstr "Umiędzynarodowienie"
 
 #: ../../docs/about/list_of_features.rst:494
+#, fuzzy
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "Pełne wsparcie dla Unicode wraz z emocji."
 
 #: ../../docs/about/list_of_features.rst:495
 msgid ""
@@ -8475,13 +8541,12 @@ msgstr ""
 "powinieneś zacząć od: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:19
-#, fuzzy
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible."
 msgstr ""
-"Gra nazywa się \"Dodge the Creeps!\" Twoja postać musi się poruszać i unikać "
-"wrogów jak najdłużej. Poniżej znajduje się końcowy efekt:"
+"Gra nazywa się \"Dodge the Creeps!\" Twoja postać musi się przemieszczać i "
+"unikać wrogów tak długo, jak to możliwe."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:22
 #: ../../docs/getting_started/first_3d_game/index.rst:17
@@ -14121,7 +14186,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
 #: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Key:"
-msgstr ""
+msgstr "Klucz:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
@@ -14246,7 +14311,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid ""
@@ -22575,9 +22640,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/occluders.rst:104
-#, fuzzy
 msgid "Some ideas:"
-msgstr "Wydajność"
+msgstr "Kilka pomysłów:"
 
 #: ../../docs/tutorials/3d/occluders.rst:106
 msgid "Build your levels to take advantage of occlusion."
@@ -22617,9 +22681,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/occluders.rst:118
-#, fuzzy
 msgid "Some guidelines:"
-msgstr "Styl pisania kodu źródłowego Godota"
+msgstr "Kilka wytycznych:"
 
 #: ../../docs/tutorials/3d/occluders.rst:120
 msgid ""
@@ -26646,11 +26709,11 @@ msgid "Playback limitations"
 msgstr "Ograniczenia"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:141
-#, fuzzy
 msgid ""
 "There are several limitations with the current implementation of video "
 "playback in Godot:"
-msgstr "Jest kilka ograniczeń w eksporcie glTF."
+msgstr ""
+"W obecnej implementacji odtwarzania wideo w Godocie jest kilka ograniczeń:"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:143
 msgid "Seeking a video to a certain point is not supported."
@@ -27414,7 +27477,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:152
 msgid "Mipmaps"
-msgstr "Minimapy"
+msgstr "Mipmapy"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:154
 msgid ""
@@ -27495,7 +27558,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:186
 msgid "Process"
-msgstr "Przetwarzaj"
+msgstr "Przetwarzanie"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:188
 #, fuzzy
@@ -27507,7 +27570,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:191
 msgid "Fix Alpha Border"
-msgstr "Napraw granicę Alpha(Przeźroczystości)"
+msgstr "Popraw obramowanie alfa"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 #, fuzzy
@@ -27553,9 +27616,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:212
-#, fuzzy
 msgid "Invert Color"
-msgstr "Kolor wierzchołka"
+msgstr "Odwróć kolor"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:214
 msgid ""
@@ -28370,7 +28432,7 @@ msgstr "Importer ma kilka możliwości, które zostaną omówione poniżej:"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:151
 msgid "Root Type"
-msgstr "Typ głównego węzła"
+msgstr "Typ korzenia"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:153
 msgid ""
@@ -28382,16 +28444,15 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:156
 msgid "Root Name"
-msgstr "Nazwa głównego węzła"
+msgstr "Nazwa korzenia"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:158
 msgid "Allows setting a specific name to the generated root node."
 msgstr "Umożliwia ustawienie konkretnej nazwy wygenerowanego węzła głównego."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:161
-#, fuzzy
 msgid "Root Scale"
-msgstr "Nazwa głównego węzła"
+msgstr "Skala korzenia"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:163
 msgid "The scale of the root node."
@@ -28491,9 +28552,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:228
-#, fuzzy
 msgid "Keep On Reimport"
-msgstr "Zachowaj przy ponownym imporcie"
+msgstr "Zachowaj po reimporcie"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:230
 msgid ""
@@ -28511,7 +28571,7 @@ msgstr "Siatki"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:238
 msgid "Compress"
-msgstr "Kompresja"
+msgstr "Skompresuj"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:240
 msgid ""
@@ -28609,7 +28669,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:265
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Zapewnij styczne"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:267
 msgid ""
@@ -28635,9 +28695,8 @@ msgstr ""
 "scenami."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:282
-#, fuzzy
 msgid "Light Baking"
-msgstr "Wypalanie"
+msgstr "Wypalanie światła"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:284
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -28665,7 +28724,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:293
 msgid "External Files"
-msgstr "Zewnętrzne pliki"
+msgstr "Pliki zewnętrzne"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:295
 msgid ""
@@ -28712,7 +28771,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:324
 msgid "Filter Script"
-msgstr ""
+msgstr "Skrypt filtra"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:326
 msgid ""
@@ -33917,7 +33976,7 @@ msgstr "Przykłady flagi Exec dla różnych edytorów:"
 
 #: ../../docs/tutorials/editor/external_editor.rst:34
 msgid "Exec Flags"
-msgstr "Flagi Exec"
+msgstr "Parametry uruchomienia"
 
 #: ../../docs/tutorials/editor/external_editor.rst:36
 #, fuzzy
@@ -36234,9 +36293,8 @@ msgid "``debugger/continue``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:394
-#, fuzzy
 msgid "File Dialog"
-msgstr "Deskryptor plików"
+msgstr "Dialog plików"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
@@ -38968,9 +39026,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:157
-#, fuzzy
 msgid "Enabled"
-msgstr "Włącz"
+msgstr "Włączony"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:157
 msgid "Enables App Sandbox."
@@ -55889,7 +55946,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Maska kolizji"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -57410,9 +57467,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:40
-#, fuzzy
 msgid "Typical example"
-msgstr "Na przykład:"
+msgstr "Typowy przykład"
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:42
 msgid ""
@@ -97290,53 +97346,61 @@ msgid ""
 "Everyone is most welcome to contribute to Godot. Here are some ways in which "
 "you can contribute to the project:"
 msgstr ""
+"Każdy jest mile widziany przy wsparciu Godota. Tutaj jest kilka sposobów, na "
+"które możesz wesprzeć projekt:"
 
 #: ../../docs/community/contributing/index.rst:7
 msgid ""
 "Improving the engine by fixing bugs, coding new features, or refining "
 "existing ones."
 msgstr ""
+"Ulepszanie silnika poprzez naprawę błędów, programownaie nowych "
+"funkcjonalności, lub udoskonalanie istniejących."
 
 #: ../../docs/community/contributing/index.rst:8
 msgid ""
 "Writing or proofreading documentation. You can contribute both to this "
 "reference manual or the code reference."
 msgstr ""
+"Pisanie lub korektę dokumentacji. Możesz wesprzeć zarówno ten podręcznik jak "
+"i referencję kodu."
 
 #: ../../docs/community/contributing/index.rst:10
 msgid ""
 "Translating the editor or documentation from English to other languages."
-msgstr ""
+msgstr "Tłumaczenie edytora lub dokumentacji z angielskiego na inne języki."
 
 #: ../../docs/community/contributing/index.rst:11
-#, fuzzy
 msgid ""
 "Reporting issues or `writing detailed proposals <https://github.com/"
 "godotengine/godot-proposals/>`__."
 msgstr ""
-"Skopiuj to repozytorium: `<https://github.com/godotengine/godot-cpp>`__."
+"Raportowanie problemów lub `pisanie szczegółowych propozycji <https://github."
+"com/godotengine/godot-proposals/>`__."
 
 #: ../../docs/community/contributing/index.rst:17
 msgid ""
 "You would like to contribute but you don't know how or what to do? You can "
 "get answers below."
 msgstr ""
+"Chciałbyś wspierać, ale nie wiesz jak lub co robić? Poniżej możesz otrzymać "
+"odpowiedzi."
 
 #: ../../docs/community/contributing/index.rst:29
-#, fuzzy
 msgid "Contributing to the engine"
-msgstr "Wspieranie dokumentacji"
+msgstr "Wspieranie silnika"
 
 #: ../../docs/community/contributing/index.rst:31
 msgid ""
 "The guides below explain how to contribute to the engine's core. You will "
 "learn about the code style, the contribution workflow, and more."
 msgstr ""
+"Poniższe wskazówki wyjaśniają jak współtworzyć rdzeń silnika. Nauczysz się "
+"o stylu programowania, przebiegu współpracy i jeszcze więcej."
 
 #: ../../docs/community/contributing/index.rst:49
-#, fuzzy
 msgid "Writing documentation"
-msgstr "Wspieranie dokumentacji"
+msgstr "Pisanie dokumentacji"
 
 #: ../../docs/community/contributing/index.rst:51
 msgid ""
@@ -97401,11 +97465,11 @@ msgid ""
 "working *pro bono* on their free time, out of personal interest and for the "
 "love of creating a libre engine of exceptional quality."
 msgstr ""
-"Godot Engine jest projektem nienastawionym na zysk, skupioną wokół idei "
-"wolnego oprogramowania. Prawie wszyscy (oprócz głównego dewelopera Juana, "
-"więcej na ten temat poniżej) deweloperzy pracują *pro bono* w swoim czasie "
-"wolnym, z osobistego zainteresowania i z miłości do tworzenia wolnego i "
-"otwartego silnika wyjątkowej jakości."
+"Godot Engine jest projektem non profit, kierowanym przez społeczność, wolnym "
+"i otwarto-źródłowym. Prawie wszyscy (oprócz głównego dewelopera Juana, "
+"więcej na ten temat poniżej) deweloperzy pracują *pro bono* w swoim czasie "
+"wolnym, z osobistego zainteresowania i z miłości do tworzenia wolnego "
+"i otwartego silnika o wyjątkowej jakości."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:11
 msgid ""
@@ -97415,13 +97479,12 @@ msgid ""
 "positive to the engine, regardless of their skill set:"
 msgstr ""
 "Oznacza to, że aby dobrze się rozwijać, Godot potrzebuje jak największej "
-"liczby użytkowników zaangażowanych w pracę przy silnika. Istnieje wiele "
-"sposobów, aby pomóc w realizacji tak dużego projektu, dzięki czemu każdy "
-"będzie mógł wnieść coś pozytywnego do silnika, niezależnie od swoich "
+"liczby użytkowników zaangażowanych we wspieranie silnika. Istnieje wiele "
+"sposobów, aby pomóc w tak dużym projekcie, dzięki czemu każdy będzie mógł "
+"wnieść do silnika coś pozytywnego, niezależnie od zestawu swoich "
 "umiejętności:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:16
-#, fuzzy
 msgid ""
 "**Be part of the community.** The best way to contribute to Godot and help "
 "it become ever better is simply to use the engine and promote it by word-of-"
@@ -97431,15 +97494,15 @@ msgid ""
 "helps spread the word about our great engine, which has no marketing budget "
 "and can therefore only rely on its community to become more mainstream."
 msgstr ""
-"**Stań się częścią społeczności.** Najlepszym sposobem, aby przyczynić się "
-"do rozwoju Godota i pomóc mu stać się jeszcze lepszym jest po prostu "
-"używanie go i promowanie go poprzez przekaz słowny, wyświetlanie jego loga "
-"na ekranie startowym, na blogach, w samouczkach, materiałach wideo lub "
-"rozmawianie o nim na wydarzeniach związanych z ideą wolnego oprogramowania. "
-"Ważne jest również wsparcie w Q&A, na IRC, forach, Discordzie, itp. Dołącz "
-"do nas! Bycie użytkownikiem i orędownikiem pomaga rozpowszechniać informacje "
-"na temat naszego wspaniałego silnika, który nie ma budżetu na marketing i "
-"dlatego może polegać tylko na swojej społeczności, aby stać się bardziej "
+"**Bądź częścią społeczności.** Najlepszym sposobem, aby przyczynić się do "
+"rozwoju Godota i pomóc mu stać się jeszcze lepszym jest po prostu używanie "
+"silnika i promowanie go ustnie, w napisach końcowych lub ekranie powitalnym "
+"Twoich gier, w postach na blogu, poradnikach, materiałach wideo, demach, na "
+"wydarzeniach związanych z gamedevem lub wolnym oprogramowaniem, poprzez "
+"wsparcie w Q&A, na forach, Czacie Wspierających, Discordzie, itp. Dołącz do "
+"nas! Bycie użytkownikiem i zwolennikiem pomaga rozpowszechniać informacje na "
+"temat naszego wspaniałego silnika, który nie ma budżetu na marketing "
+"i dlatego może polegać tylko na swojej społeczności, aby stać się bardziej "
 "popularnym."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:25
@@ -97451,13 +97514,13 @@ msgid ""
 "will draw attention to Godot. So keep working on your awesome projects, each "
 "new game increases our credibility on the gamedev market!"
 msgstr ""
-"**Twórz gry.** Nie jest tajemnicą, że aby przekonać nowych użytkowników, a w "
-"szczególności branżę, że Godot jest ważnym graczem na rynku, potrzebujemy "
-"świetnych gier z Godotem. Wiemy, że silnik ma duży potencjał, zarówno dla "
-"gier 2D jak i 3D, ale biorąc pod uwagę jego młody wiek wciąż brakuje nam "
-"dużych wydawnictw, którzy zwrócą uwagę na Godota. Kontynuuj więc pracę nad "
-"swoimi wspaniałymi projektami, każda nowa gra zwiększa naszą wiarygodność na "
-"rynku gier!"
+"**Twórz gry.** Nie jest tajemnicą, że aby przekonać nowych użytkowników, "
+"a w szczególności ogólnie pojętą branżę, że Godot jest istotnym graczem na "
+"rynku, potrzebujemy świetnych gier zrobionych w Godocie. Wiemy, że silnik ma "
+"duży potencjał, zarówno dla gier 2D jak i 3D, ale biorąc pod uwagę jego "
+"młody, wiek wciąż brakuje nam dużych produkcji, które zwrócą uwagę na "
+"Godota. Kontynuuj więc prace nad Twoimi wspaniałymi projektami, każda nowa "
+"gra zwiększa naszą wiarygodność na rynku gier!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:32
 msgid ""
@@ -97468,16 +97531,14 @@ msgid ""
 "tutorials) and its translations. The following sections will cover each of "
 "those \"direct\" ways of contributing to the engine."
 msgstr ""
-"**Zaangażuj się w rozwój silnika.** Może to być poprzez dodawanie kodu "
-"poprzez pull requesty, testowanie wydań deweloperskich lub programu "
-"kompilowanego bezpośrednio z git *master*, zgłaszanie błędów lub sugerowanie "
-"ulepszeń w issue trackeru, ulepszanie oficjalnej dokumentacji (zarówno "
-"dokumentacji klas, jak i samouczków) oraz jej tłumaczeń. W kolejnych "
-"sekcjach omówiono każdy z tych \"bezpośrednich\" sposobów przyczyniania się "
-"do wspierania silnika."
+"**Zaangażuj się w rozwój silnika.** Może to być poprzez dodawanie kodu przez "
+"pull requesty, testowanie wydań deweloperskich lub bezpośrednio gałęzi "
+"*master* z gita, zgłaszanie błędów lub sugerowanie ulepszeń w issue "
+"trackerze, ulepszanie oficjalnej dokumentacji (zarówno referencji klas jak "
+"i poradników) oraz jej tłumaczeń. Kolejne sekcje obejmują każdy z tych "
+"\"bezpośrednich\" sposobów wspierania silnika."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:40
-#, fuzzy
 msgid ""
 "**Donate.** Godot is a non-profit project, but it can still benefit from "
 "user donations for many things. Apart from usual expenses such as hosting "
@@ -97491,18 +97552,18 @@ msgid ""
 "some money to the project, check `our website <https://godotengine.org/"
 "donate>`_ for details."
 msgstr ""
-"**Wesprzyj finansowo.** Godot jest projektem non-profit, ale nadal może "
-"korzystać z darowizn od użytkowników. Poza zwykłymi wydatkami, takimi jak "
-"koszty hostingu lub materiały promocyjne na imprezach, w razie potrzeby "
-"wykorzystujemy również darowizny na zakup sprzętu (np. użyliśmy darowizny na "
-"zakup Macbooka Pro w celu wdrożenia obsługi Retina/HiDPI i innych funkcji "
-"związanych z macOS). Co najważniejsze, pieniądze z darowizn przeznaczyliśmy "
-"również na zatrudnienie głównych programistów, aby mogli oni pracować przy "
-"silniku na pełnym etacie. Nawet przy niskich miesięcznych płacach "
-"potrzebujemy stałego dochodu z darowizn, aby nadal to robić, co do tej pory "
-"było bardzo korzystne dla projektu. Więc jeśli chcesz przekazać trochę "
-"pieniędzy na projekt, sprawdź `naszą stronę <https://godotengine.org/"
-"donate>`_ by znaleźć więcej szczegółów."
+"**Wesprzyj finansowo.** Godot jest projektem non profit, ale do wielu rzeczy "
+"nadal może korzystać z darowizn od użytkowników. Poza zwykłymi wydatkami, "
+"takimi jak koszty hostingu lub materiały promocyjne na wydarzeniach, w razie "
+"potrzeby wykorzystujemy również pieniądze z darowizn do nabycia sprzętu (np. "
+"użyliśmy darowizn na zakup MacBooka Pro w celu wdrożenia obsługi Retina/"
+"HiDPI i różnych innych funkcji związanych z macOS). Co najważniejsze, "
+"pieniądze z darowizn przeznaczyliśmy również na zatrudnienie kluczowych "
+"deweloperów, aby mogli oni pracować przy silniku na pełnym etacie. Nawet "
+"przy niskich miesięcznych płacach, potrzebujemy stałego dochodu z darowizn, "
+"aby nadal tak robić, co do tej pory było dla projektu bardzo korzystne. "
+"Jeśli więc chcesz przekazać trochę pieniędzy na projekt, sprawdź `naszą "
+"stronę <https://godotengine.org/donate>`_, aby znaleźć więcej szczegółów."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
@@ -97516,11 +97577,11 @@ msgid ""
 "open source software <https://en.wikipedia.org/wiki/Free_and_open-"
 "source_software>`_."
 msgstr ""
-"Możliwość studiowania, używania, modyfikowania i redystrybucji modyfikacji "
-"kodu źródłowego silnika są podstawowymi prawami, które daje wam licencja "
-"Godota `MIT <https://tldrlegal.com/license/mit-license>`_, czyniąc go "
-"`wolnym i otwartym oprogramowaniem <https://en.wikipedia.org/wiki/"
-"Free_and_open-source_software>`_."
+"Możliwość studiowania, używania, modyfikacji i redystrybucji modyfikacji "
+"kodu źródłowego silnika to fundamentalne prawa, które daje Ci licencja `MIT "
+"<https://tldrlegal.com/license/mit-license>`_ Godota, czyniąc go `wolnym i "
+"otwartym oprogramowaniem <https://pl.wikipedia.org/wiki/"
+"Wolne_i_otwarte_oprogramowanie>`_."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:61
 msgid ""
@@ -97531,10 +97592,17 @@ msgid ""
 "called \"pull request\" (PR), i.e. a proposal to directly merge one or more "
 "Git commits (patches) into the main development branch."
 msgstr ""
+"Skoro tak, to każdy jest uprawniony do modyfikacji `kodu źródłowego Godota "
+"<https://github.com/godotengine/godot>`_, oraz wysyłania tych modyfikacji "
+"z powrotem do pierwotnego projektu, w formie patcha (pliku tekstowego "
+"opisującego zmiany w gotowy do zastosowania sposób), lub - we współczesnym "
+"cyklu pracy, który wykorzystujemy - przez tak zwany \"pull request\" (PR), "
+"np. propozycję bezpośredniego połączenia jednego lub więcej commitów Gita "
+"(patchy) z główną gałęzią deweloperską."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
-msgstr "Pisanie kodu silnika ma dwie duże zalety:"
+msgstr "Pisanie oficjalnych zmian w kodzie silnika ma dwie duże zalety:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:70
 msgid ""
@@ -97546,49 +97614,54 @@ msgid ""
 "in some cases it might still be relevant to keep your changes only for your "
 "own project, if they are too specific."
 msgstr ""
+"Twój własny kod będzie zrewidowany i ulepszony przez innych deweloperów "
+"i będzie dalej utrzymywany już bezpośrednio w głównym projekcie, więc nie "
+"będziesz musiał ponownie aplikować swoich własnych zmian za każdym razem, "
+"kiedy przenosisz się do nowszej wersji. Z drugiej strony wiąże się to "
+"z odpowiedzialnością, jako że Twoje zmiany muszą być wystarczająco ogólne, "
+"aby były przydatne dla wszystkich użytkowników, a nie tylko dla Twojego "
+"projektu; więc w pewnych wypadkach wciąż może być właściwe zachowanie swoich "
+"zmian tylko do własnego projektu, jeśli są one zbyt specyficzne."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:78
-#, fuzzy
 msgid ""
 "The whole community will benefit from your work, and other contributors will "
 "behave the same way, contributing code that will be beneficial to you. At "
 "the time of this writing, more than 1000 developers have contributed code "
 "changes to the engine!"
 msgstr ""
-"Cała społeczność odniesie korzyści z twojej pracy, a inni programiści będą "
-"zachowywać się w ten sam sposób, tworząc kod z korzyścią dla ciebie. W "
-"czasie pisania tego tekstu, ponad 300 programistów wprowadziło zmiany w "
-"kodzie do silnika!"
+"Cała społeczność odniesie korzyści z twojej pracy, a inni wspierający będą "
+"zachowywać się w ten sam sposób, tworząc kod, który będzie korzystny dla "
+"ciebie. W czasie pisania tego tekstu, zmiany w kodzie silnika wprowadziło "
+"ponad 1000 deweloperów!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:83
-#, fuzzy
 msgid ""
 "To ensure good collaboration and overall quality, the Godot developers "
 "enforce some rules for code contributions, for example regarding the style "
 "to use in the C++ code (indentation, brackets, etc.) or the Git and PR "
 "workflow."
 msgstr ""
-"Aby zapewnić dobrą współpracę i ogólną jakość, twórcy oprogramowania Godot "
-"wprowadzają pewne zasady dotyczące pisania kodu, na przykład dotyczące stylu "
-"pisania kodu C++ (wcięcia, nawiasy itp.) lub pracy z git i PR."
+"Aby zapewnić dobrą współpracę i ogólną jakość, twórcy Godota narzucają pewne "
+"zasady dotyczące pisania kodu, na przykład odnośnie stylu używanego w C++ "
+"(wcięcia, nawiasy itp.) lub sposobu pracy z Git i PR."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
-#, fuzzy
 msgid ""
 "A good place to start is by searching for issues tagged as `good first issue "
 "<https://github.com/godotengine/godot/issues?"
 "q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22>`_ on GitHub."
 msgstr ""
-"Niezłym miejscem do rozpoczęcia może być problem oznaczony jako `junior jobs "
-"<https://github.com/godotengine/godot/issues?q=jest%3Aissue+ "
-"jest%3Aopen+label%3A%22junior+job%22>`na GitHubie."
+"Dobry sposób, aby zacząć to wyszukanie na GitHubie problemów oznaczonych "
+"jako `good first issue <https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22>`_."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:91
 msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
 msgstr ""
-"Techniczne szczegóły na temat przepływu pracy PR są opisane w odrębnej "
+"Szczegóły techniczne na temat sposobu pracy z PR nakreślone są w odrębnej "
 "sekcji, :ref:`doc_pr_workflow`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:94
@@ -97597,7 +97670,8 @@ msgid ""
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
 msgstr ""
 "Szczegóły na temat wytycznych stylu kodu oraz narzędzia ``clang-format`` "
-"używanego do egzekwowania ich są opisane w :ref:`doc_code_style_guidelines`."
+"używanego do ich egzekwowania są nakreślone w sekcji :ref:"
+"`doc_code_style_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:98
 msgid ""
@@ -97608,6 +97682,13 @@ msgid ""
 "meantime, as it is expected that in an open source project like Godot, there "
 "is going to be way more contributions than people validating them."
 msgstr ""
+"Wszystkie pull requesty, zanim zostaną zaakceptowane, muszą przejść przez "
+"proces rewizji. Zależnie od zakresu zmian, dokonanie przeglądu osobie "
+"odpowiedzialnej za zmodyfikowaną część silnika może zająć trochę czasu. "
+"Tymczasem cenimy wszystkich naszych wspierających i prosimy ich "
+"o cierpliwość, ponieważ można się spodziewać, że w projekcie otwarto-"
+"źródłowym, takim jak Godot, będzie dużo więcej wspierających, niż ludzi ich "
+"sprawdzających."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:105
 msgid ""
@@ -97619,16 +97700,25 @@ msgid ""
 "discussed with other contributors on the `Godot Contributors Chat <https://"
 "chat.godotengine.org/>`_."
 msgstr ""
+"Aby upewnić się, że Twój czas i wysiłek nie pójdzie na marne, zaleca się "
+"najpierw zweryfikować pomysł przed jego implementacją i umieścić go do "
+"recenzji jako PR. W tym celu Godot posiada `system propozycji <https://"
+"github.com/godotengine/godot-proposals>`_. Zachęca się do jego użycia w celu "
+"zaplanowania zmian i omówienia ich ze społecznością. Na `Czacie "
+"Wspierających Godota <https://chat.godotengine.org/>`_ można także "
+"przedyskutować z innymi wspierającymi szczegóły implementacyjne."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:111
 msgid ""
 "Proposals are only required when working on an enhancement or a new feature. "
 "Bug reports are sufficient for fixing issues."
 msgstr ""
+"Propozycje są wymagane tylko w przypadku pracy nad udoskonaleniami i nową "
+"funkcjonalnością. W celu naprawy problemów wystarczą zgłoszenia błędów."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:115
 msgid "Testing and reporting issues"
-msgstr "Testowanie i zgłaszanie problemów"
+msgstr "Testowanie i zgłaszanie problemów"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:117
 msgid ""
@@ -97637,10 +97727,10 @@ msgid ""
 "to report issues discovered in stable releases, so that they can be fixed in "
 "the development branch and in future maintenance releases."
 msgstr ""
-"Innym sposobem na udoskonalenie silnika jest testowanie niestabilnych wersji "
-"programu i zgłaszanie problemów. Pomocne jest również zgłaszanie problemów "
-"wykrytych w stabilnych wersjach, tak aby można je było naprawić w przyszłych "
-"wersjach."
+"Innym świetnym sposobem na udoskonalenie silnika jest testowanie wersji "
+"rozwojowych lub gałęzi rozwojowej i zgłaszanie problemów. Pomocne jest "
+"również zgłaszanie problemów wykrytych w stabilnych wersjach, tak aby "
+"w gałęzi rozwojowej i przyszłych wersjach użytkowych można je było naprawić."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:123
 msgid "Testing development versions"
@@ -97648,15 +97738,15 @@ msgstr "Testowanie wersji deweloperskich"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:125
 msgid "To help with the testing, you have several possibilities:"
-msgstr "Masz wiele możliwości by pomóc z testowaniem:"
+msgstr "Masz kilka możliwości by pomóc z testowaniem:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:127
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
 msgstr ""
-"Skompiluj sam silnik ze źródła, postępując zgodnie z instrukcjami zawartymi "
-"na stronie :ref:`Kompilowanie <toc-devel-compiling>` dla twojej platformy."
+"Skompiluj samodzielnie silnik ze źródła, postępując zgodnie z instrukcjami "
+"dla Twojej platformy na stronie :ref:`Kompilowanie <toc-devel-compiling>`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:130
 msgid ""
@@ -97665,8 +97755,8 @@ msgid ""
 "candidate (RC) builds."
 msgstr ""
 "Testuj oficjalne przedpremierowe wydania tuż po ich ogłoszeniu (zazwyczaj na "
-"blogu i innych platformach społecznościowych), takie jak alfa, beta i "
-"kandydaci do wydania (RC)."
+"blogu i innych platformach społecznościowych), takie jak kompilacje alfa, "
+"beta i kandydaci do wydania (RC)."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:133
 msgid ""
@@ -97675,10 +97765,10 @@ msgid ""
 "use official binaries or to compile yourself though, to be sure about the "
 "provenance of your binaries."
 msgstr ""
-"Testuj tylko \"zaufane\" kompilacje; po prostu zapytaj członków społeczności "
-"o wiarygodnych dostawców. Jeśli to tylko możliwe, najlepiej jest użyć "
-"oficjalnych plików binarnych lub skompilować się samemu, aby mieć pewność co "
-"do ich bezpieczeństwa."
+"Testuj \"zaufane\" nieoficjalne kompilacje gałęzi rozwojowej; po prostu "
+"zapytaj członków społeczności o wiarygodnych dostawców. Jeśli to tylko "
+"możliwe, najlepiej jest użyć oficjalnych plików binarnych lub jednak "
+"skompilować samemu, aby mieć pewność ich pochodzenia."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:138
 msgid ""
@@ -97687,23 +97777,26 @@ msgid ""
 "especially when using some niche features of the engine which might get less "
 "testing by the developers."
 msgstr ""
+"Jak wspomniano poprzednio, dobrze jest także mieć oczy szeroko otwarte na "
+"potencjalne błędy, które wciąż mogą być obecne w stabilnych wersjach, "
+"zwłaszcza podczas używania jakichś niszowych funkcjonalności silnika, które "
+"mogą być słabiej przetestowane przez deweloperów."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:144
 msgid "Filing an issue on GitHub"
 msgstr "Zgłaszanie problemu na GitHubie"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:146
-#, fuzzy
 msgid ""
 "Godot uses `GitHub's issue tracker <https://github.com/godotengine/godot/"
 "issues>`_ for bug reports and enhancement suggestions. You will need a "
 "GitHub account to be able to open a new issue there, and click on the **New "
 "issue** button."
 msgstr ""
-"Godot używa `systemu zgłaszania błędów GitHuba <https://github.com/"
-"godotengine/godot/issues>`_ do zgłaszania błędów i sugestii ulepszeń. "
-"Będziesz potrzebował konta GitHub, aby otworzyć tam nowe zgłoszenie błędu, a "
-"poprzez kliknięcie na przycisk \"New issue\"."
+"Godot, do zgłaszania błędów i sugerowania ulepszeń wykorzystuje `narzędzie "
+"na GitHubie do śledzenia problemów <https://github.com/godotengine/godot/"
+"issues>`_. Aby być w stanie otworzyć tam nowe zgłoszenie problemu i kliknąć "
+"w przycisk **New issue**, będziesz potrzebował konta GitHub."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:150
 msgid ""
@@ -97714,13 +97807,13 @@ msgid ""
 "developers to then help make the diagnosis of the issue you met, so that the "
 "actual cause of the bug can be identified and addressed."
 msgstr ""
-"Zgłaszając błąd, należy pamiętać, że proces ten jest podobny do wizyty u "
-"lekarza. Zauważyłeś *symptomy*, które sprawiają, że myślisz, że coś może być "
-"nie tak (silnik się zacina lub wyłącza, niektóre funkcje nie działają "
-"zgodnie z oczekiwaniami itp.). Zadaniem zespołu zajmującego się znajdowaniem "
-"i opisywaniem błędów i programistów jest pomoc w postawieniu diagnozy "
-"problemu, z którym się zetknęliście, tak aby można było zidentyfikować i "
-"zająć się faktyczną przyczyną błędu."
+"Zgłaszając błąd, powinieneś pamiętać, że proces ten jest podobny do wizyty "
+"u lekarza. Zauważyłeś *symptomy*, które sprawiają, że myślisz, że coś może "
+"być nie tak (silnik się zacina lub wyłącza, niektóre funkcje nie działają "
+"zgodnie z oczekiwaniami, itp.). Zadaniem zespołu zajmującego się "
+"znajdowaniem błędów oraz deweloperów jest pomoc w postawieniu diagnozy "
+"problemu, z którym się spotkałeś, tak aby można było zidentyfikować i zająć "
+"się faktyczną przyczyną błędu."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:157
 msgid ""
@@ -97729,10 +97822,10 @@ msgid ""
 "and hopefully fix it. Here are some of the most important infos that you "
 "should always provide:"
 msgstr ""
-"Dlatego powinieneś zawsze zadawać sobie pytanie: jakie istotne informacje "
-"należy podać, aby inni użytkownicy Godot mogli zrozumieć błąd, "
-"zidentyfikować go i, miejmy nadzieję, naprawić. Oto kilka z najważniejszych "
-"informacji, które należy zawsze podawać:"
+"Dlatego zawsze powinieneś zadawać sobie pytanie: jakie istotne informacje "
+"należy przekazać, aby inni wspierający Godota mogli zrozumieć błąd, "
+"zidentyfikować go oraz, miejmy nadzieję, naprawić. Oto kilka "
+"z najważniejszych informacji, które zawsze powinieneś podać:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:162
 msgid ""
@@ -97741,10 +97834,11 @@ msgid ""
 "bugs related to OS interfaces, such as file management, input, window "
 "management, audio, etc."
 msgstr ""
-"**System operacyjny**Czasami błędy są specyficzne dla danego systemu, tzn. "
-"występują tylko w systemie Windows lub tylko w systemie Linux itp. Jest to "
-"szczególnie istotne dla wszystkich błędów związanych z interfejsami OS, "
-"takimi jak zarządzanie plikami, wejściami, okienkami, dźwiękiem itp."
+"**System operacyjny** Czasami błędy są specyficzne dla danego systemu, tzn. "
+"zdarzają się tylko w Windowsie, lub tylko w Linuxie, itp. Jest to "
+"szczególnie istotne dla wszystkich błędów związanych z interfejsami systemu "
+"operacyjnego, takimi jak zarządzanie plikami, wejście, zarządzanie oknami, "
+"dźwięk, itp."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:167
 msgid ""
@@ -97752,12 +97846,11 @@ msgid ""
 "certain processors, graphic cards, etc. If you are able to, it can be "
 "helpful to include information on your hardware."
 msgstr ""
-"**Sprzęt.** Czasami błędy są specyficzne dla sprzętu, tzn. występują tylko "
-"na niektórych procesorach, kartach graficznych itp. Jeśli jesteś w stanie, "
-"pomocne może być umieszczenie informacji o twoim sprzęcie."
+"**Sprzęt.** Czasami błędy są specyficzne dla sprzętu, tzn. zdarzają się "
+"tylko na niektórych procesorach, kartach graficznych, itp. Jeśli jesteś "
+"w stanie, pomocne może być umieszczenie informacji o Twoim sprzęcie."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:171
-#, fuzzy
 msgid ""
 "**Godot version.** This is a must-have. Some issues might be relevant in the "
 "current stable release, but fixed in the development branch, or the other "
@@ -97765,14 +97858,13 @@ msgid ""
 "experiencing a known issue fixed in a later version, so knowing this from "
 "the start helps to speed up the diagnosis."
 msgstr ""
-"**Wersja Godota.** Jest to niezbędne. Niektóre problemy mogą być występować "
-"w aktualnym stabilnym wydaniu, ale naprawione w deweloperskim wydaniu lub na "
-"odwrót. Możesz również używać przestarzałej wersji Godota i doświadczać "
-"znanego problemu, który został naprawiony w późniejszej wersji, więc wiedza "
-"o tym od samego początku pomaga przyspieszyć diagnozę."
+"**Wersja Godota.** Jest to niezbędne. Niektóre problemy mogą być istotne "
+"w aktualnym stabilnym wydaniu, ale naprawione w gałęzi deweloperskiej, lub "
+"na odwrót. Możesz również używać przestarzałej wersji Godota i doświadczać "
+"znanego problemu naprawionego w późniejszej wersji, więc wiedza o tym od "
+"samego początku pomaga przyspieszyć diagnozę."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:177
-#, fuzzy
 msgid ""
 "**How to reproduce the bug.** In the majority of cases, bugs are "
 "reproducible, i.e. it is possible to trigger them reliably by following some "
@@ -97785,27 +97877,27 @@ msgid ""
 "thousands of issues in the tracker, and developers can only dedicate little "
 "time to each issue."
 msgstr ""
-"**Jak odtworzyć problem.**W większości przypadków błędy są powtarzalne, tzn. "
-"możliwe jest ich powtórzenie poprzez wykonanie pewnych czynności. Prosimy "
-"zawsze opisywać te kroki jak najdokładniej, tak aby każdy mógł spróbować "
-"odtworzyć problem i go potwierdzić. Najlepiej stworzyć projekt "
-"demonstracyjny, który odtwarza ten problem bez konieczności wykonywania "
-"kroków, spakuj go i dołączy do zgłoszenia problemu (można to zrobić "
-"przeciągając i upuszczając). Nawet jeśli uważasz, że problem jest trywialny "
-"do odtworzenia, dodanie minimalnego projektu, który pozwala odtworzyć to "
-"duża wartość dodana. Należy pamiętać, że zgłoszone są tysiące problemów, a "
-"programiści mogą poświęcić niewiele czasu na każdy z nich."
+"**Jak odtworzyć błąd.** W większości przypadków, błędy są powtarzalne, tzn. "
+"możliwe jest ich odtworzenie za każdym razem po wykonaniu pewnych czynności. "
+"Prosimy zawsze jak najdokładniej opisywać te czynności, tak aby każdy mógł "
+"spróbować odtworzyć problem i go potwierdzić. Idealnie jest utworzyć projekt "
+"demonstracyjny, który od razu odtwarza dany problem, spakować go i dołączyć "
+"do zgłoszenia (można to zrobić przeciągając i upuszczając). Nawet jeśli "
+"uważasz, że problem jest trywialny do odtworzenia, dodanie minimalnego "
+"projektu, który każdemu pozwala go odtworzyć to duża wartość dodana. Musisz "
+"pamiętać, że zgłoszone są tysiące problemów, a deweloperzy mogą poświęcić "
+"niewiele czasu na każdy z nich."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:188
-#, fuzzy
 msgid ""
 "When you click the **New issue** button, you should be presented with a text "
 "area prefilled with our issue template. Please try to follow it so that all "
 "issues are consistent and provide the required information."
 msgstr ""
-"Po kliknięciu na przycisk \"New issue\", powinieneś otrzymać pole tekstowe, "
-"które powinien być wypełniony naszym szablonem. Proszę postarać się go "
-"przestrzegać, aby wszystkie kwestie były spójne i podać wymagane informacje."
+"Kiedy klikniesz przycisk **New issue**, powinieneś otrzymać pole tekstowe, "
+"wstępnie wypełnione naszym szablonem problemu. Proszę postarać się go "
+"przestrzegać, tak, aby wszystkie zgłoszenia były spójne i dostarczały "
+"wymaganych informacji."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:193
 #: ../../docs/community/contributing/contributing_to_the_documentation.rst:4
@@ -97815,10 +97907,9 @@ msgstr "Wspieranie dokumentacji"
 #: ../../docs/community/contributing/ways_to_contribute.rst:195
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
-msgstr "W Godocie istnieją dwa oddzielne zasoby zwane \"dokumentacją\":"
+msgstr "W Godocie istnieją dwa oddzielne zasoby zwane \"dokumentacją\":"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:197
-#, fuzzy
 msgid ""
 "**The class reference.** This is the documentation for the complete Godot "
 "API as exposed to GDScript and the other scripting languages. It can be "
@@ -97828,15 +97919,15 @@ msgid ""
 "`doc_updating_the_class_reference` and :ref:"
 "`doc_class_reference_writing_guidelines` for more details."
 msgstr ""
-"**Dokumentacja klas** Jest to dokumentacja dla całego Godot API dla GDScript "
-"i innych języków skryptowych. Można się z nim zapoznać w trybie offline, "
-"bezpośrednio w edytorze kodu Godota lub online pod adresem :ref:`Godot API "
-"<toc classs-ref>`. Aby wesprzeć tę dokumentację, musisz edytować `doc/base/"
-"classes.xml` w repozytorium git Godota oraz stworzyć pull requesty. Zobacz :"
-"ref:`doc_updating_the_class_reference` aby uzyskać więcej informacji."
+"**Referencja klas** Jest to dokumentacja całego API Godota dostępnego dla "
+"GDScript i innych języków skryptowych. Można do niej sięgać offline, "
+"bezpośrednio w edytorze kodu Godota, lub online pod adresem :ref:`Godot API "
+"<toc-class-ref>`. Aby wesprzeć referencję klas, musisz edytować "
+"odpowiadający klasie plik XML i zrobić pull request. Po więcej szczegółów "
+"zajrzyj do sekcji :ref:`doc_updating_the_class_reference` i :ref:"
+"`doc_class_reference_writing_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:205
-#, fuzzy
 msgid ""
 "**The tutorials and engine documentation and its translations.** This is the "
 "part you are reading now, which is distributed in the HTML format. Its "
@@ -97845,18 +97936,16 @@ msgid ""
 "<https://github.com/godotengine/godot-docs>`_ GitHub repository. See :ref:"
 "`doc_contributing_to_the_documentation` for more details."
 msgstr ""
-"**Poradniki i dokumentacja oraz ich tłumaczenie** To jest ta część, którą "
-"teraz czytasz, a która jest rozpowszechniana w formatach HTML, PDF i EPUB. "
-"Jego zawartość jest generowana z plików tekstowych w formacie reStructured "
-"Text (rst), do których można się przyczynić poprzez pobieranie żądań z "
-"repozytorium `godot-docs <https://github.com/godotengine/godot-docs>`_ "
-"GitHuba. Więcej szczegółów można znaleźć w dokumencie :ref:"
-"`doc_documentation_guidelines`."
+"**Poradniki i dokumentacja silnika oraz ich tłumaczenia** To ta część, którą "
+"teraz czytasz, a która jest rozpowszechniana w formacie HTML. Jej zawartość "
+"jest generowana z plików tekstowych w formacie reStructured Text (rst), do "
+"których rozwoju możesz się przyczynić poprzez pull requesty w repozytorium "
+"GitHuba `godot-docs <https://github.com/godotengine/godot-docs>`_. Po więcej "
+"szczegółów zajrzyj do sekcji :ref:`doc_documentation_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:213
-#, fuzzy
 msgid "Contributing translations"
-msgstr "Importowanie tłumaczeń"
+msgstr "Wspieranie tłumaczeń"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:215
 msgid ""
@@ -97864,14 +97953,16 @@ msgid ""
 "resources in their native language instead of English, our community helps "
 "translate both the Godot editor and its documentation in many languages."
 msgstr ""
-"By uczynić Godot dostępnym dla wszystkich, włączając użytkowników, którzy "
-"mogą woleć zasoby w swoim ojczystym języku a nie angielskim, nasza "
-"społeczność pomaga tłumaczyć zarówno edytor jaki i jego dokumentację na "
-"wiele języków."
+"By uczynić Godota dostępnym dla wszystkich, włączając użytkowników, którzy "
+"mogą preferować zasoby w swoim ojczystym języku a nie w angielskim, nasza "
+"społeczność pomaga tłumaczyć na wiele języków zarówno edytor Godota jaki "
+"i jego dokumentację."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:219
 msgid "See :ref:`doc_editor_and_docs_localization` for more details."
-msgstr "Tu znajdziesz więcej :ref:`doc_editor_and_docs_localization`."
+msgstr ""
+"Więcej szczegółów znajdziesz w sekcji :ref:"
+"`doc_editor_and_docs_localization`."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:4
 msgid "Best practices for engine contributors"
@@ -97886,24 +97977,24 @@ msgid ""
 "common misunderstandings and bad practices during the process of "
 "contributing code to the project."
 msgstr ""
-"Godot posiada wielu użytkowników, którzy są w stanie go rozwijać, zważywszy "
-"na to, że projekt sam w sobie jest skierowany głównie do użytkowników "
-"potrafiących programować. Mimo to nie wszyscy są na tym samym poziomie "
-"doświadczenia w pracy z dużymi projektami lub w inżynierii oprogramowania, "
-"co może prowadzić do częstych nieporozumień i korzystania ze złych praktyk "
+"Godot posiada dużą ilość użytkowników, którzy są w stanie go rozwijać, "
+"zważywszy na to, że projekt sam w sobie jest skierowany głównie do "
+"użytkowników z umiejętnością programowania. Mimo to, nie wszyscy są na tym "
+"samym poziomie doświadczenia w pracy z dużymi projektami lub w inżynierii "
+"oprogramowania, co może prowadzić do częstych nieporozumień i złych praktyk "
 "podczas rozwijania kodu projektu."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:18
-#, fuzzy
 msgid ""
 "The scope of this document is to be a list of best practices for "
 "contributors to follow, as well as to create a language they can use to "
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
-"Zakres tego dokumentu to lista najlepszych praktyk dla rozwijających kod, a "
-"także tworzenie języka, którego mogą oni używać w sytuacjach, które "
-"pojawiają się w takcie publikowania zmian."
+"Zakres tego dokumentu to lista najlepszych praktyk do zastosowania dla "
+"rozwijających kod, jak i do tworzenie języka, którego mogą używać "
+"w odniesieniu do powszechnych sytuacji, które powstają w procesie oddawania "
+"ich zmian."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:22
 msgid ""
@@ -97911,9 +98002,9 @@ msgid ""
 "development, our intention is to just restrict to situations that are most "
 "common in our project."
 msgstr ""
-"Podczas gdy niektórzy mogą uznać za dobry pomysł by rozszerzyć to na ogólne "
-"wytwarzanie oprogramowania, naszym zamiarem jest ograniczenie tego do "
-"sytuacji najczęściej napotykanych w naszym projekcie."
+"Podczas, gdy niektórzy mogą uznać za pożyteczne rozszerzenie tego na ogólne "
+"wytwarzanie oprogramowania, naszym zamiarem jest ograniczenie się tylko do "
+"sytuacji najczęściej spotykanych w naszym projekcie."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:26
 msgid ""
@@ -97921,10 +98012,9 @@ msgid ""
 "new features. To abstract this idea, we will call them *Solutions*, because "
 "they always seek to solve something that can be described as a *Problem*."
 msgstr ""
-"Wsparciem są zazwyczaj poprawki błędów, rozszerzenia lub nowe "
-"funkcjonalności. By uogólnić to pojęcie, nazwiemy je *Rozwiązaniami*, "
-"ponieważ ich celem jest zawsze rozwiązanie czegoś co może być określone jako "
-"*Problem*."
+"Wsparcie najczęściej jest klasyfikowane jako naprawa błędów, ulepszenia lub "
+"nowe funkcjonalności. By uogólnić to pojęcie, nazwiemy je *Rozwiązaniami*, "
+"ponieważ zawsze starają się rozwiązać coś, co można określić jako *Problem*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
 msgid "Best Practices"
@@ -97932,20 +98022,20 @@ msgstr "Najlepsze praktyki"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr "#1: Najpierw problem"
+msgstr "#1: Problem jest zawsze na pierwszym miejscu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
-#, fuzzy
 msgid ""
 "Many contributors are extremely creative and just enjoy the process of "
 "designing abstract data structures, creating nice user interfaces, or simply "
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may or may not be solving any real problems."
 msgstr ""
-"Duża część wspierających jest niesamowicie kreatywna i po prostu uwielbia "
-"projektować abstrakcyjne struktury danych, tworzyć piękne interfejsy "
-"użytkowania, lub po prostu kocha programować. Jednakże, jakkolwiek ich "
-"pomysły mogą być niesamowite, niekoniecznie rozwiązują istniejące problemy."
+"Wielu wspierających jest niesamowicie kreatywnych i po prostu uwielbiaja "
+"proces projektowania abstrakcyjnych struktur danych, tworzenia ładnych "
+"interfejsów użytkowania, lub po prostu kocha programować. Jakkolwiek by nie "
+"było, wpadają na świetne pomysły, które mogą, ale wcale nie muszą "
+"rozwiązywać jakichkolwiek rzeczywistych problemów."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:43
 msgid ""
@@ -97955,21 +98045,24 @@ msgid ""
 "Avoiding the addition of anything unnecessary is always considered a good "
 "practice in software development."
 msgstr ""
-"Są one nazywane *Rozwiązanie poszukujące problemu*. W idealnym świecie nie "
-"byłyby one problemem, jednak w rzeczywistości kod zajmuje czas do napisania, "
-"miejsce do trzymania jako źródło czy kompilacja i wymaga utrzymywania gdy "
-"już zostanie napisany. Unikanie dodawanie czegokolwiek zbędnego jest zawsze "
-"uznawane za dobrą praktykę w rozwoju oprogramowania."
+"Zwykle nazywa się je *Rozwiązaniami w poszukiwaniu problemu*. W idealnym "
+"świecie nie byłyby one szkodliwe, jednak w rzeczywistości kod wymaga czasu "
+"na napisanie, zajmuje miejsce jako źródło i binaria oraz wymaga "
+"utrzymywania, gdy już będzie istniał. Unikanie dodawania czegokolwiek, co "
+"niepotrzebne, w rozwoju oprogramowania zawsze jest uznawane za dobrą "
+"praktykę."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr "#2: By rozwiązać problem, musi on najpierw istnieć"
+msgstr "#2: By rozwiązać problem, najpierw musi on istnieć"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
 "This is a variation of the previous practice. Adding anything unnecessary is "
 "not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
+"Jest to odmiana poprzedniej praktyki. Dodawanie czegokolwiek niepotrzebnego "
+"nie jest dobrym pomysłem, ale co stanowi o tym, co jest potrzebne a co nie?"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
 msgid ""
@@ -97980,6 +98073,13 @@ msgid ""
 "to proceed, or in order to achieve greater productivity. In this case, *a "
 "solution is needed*."
 msgstr ""
+"Odpowiedzią na to pytanie jest to, że problem, zanim zostanie faktycznie "
+"rozwiązany, musi *istnieć*. Nie może być to spekulacja lub przekonanie. "
+"Użytkownik musi używać oprogramowania zgodnie z przeznaczeniem aby utworzyć "
+"coś, czego *potrzebuje*. W procesie tym, użytkownik może się natknąć na "
+"jakiś problem, który wymaga rozwiązania w celu przejścia przez niego, lub "
+"w celu osiągnięcia większej produktywności. W tym wypadku, *potrzeba "
+"rozwiązania*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:63
 msgid ""
@@ -97987,14 +98087,18 @@ msgid ""
 "to be ready to solve them by the time they appear is called *\"Future "
 "proofing\"* and its characterized by lines of thought such as:"
 msgstr ""
+"Wiara w to, że w przyszłości mogą powstać problemy, oraz że oprogramowanie "
+"musi być gotowe do ich rozwiązania zanim się pojawią nazywa się "
+"*\"Zabezpieczeniem na przyszłość\"* i charakteryzuje się sposobami myślenia "
+"takimi jak:"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:67
 msgid "I think it would be useful for users to..."
-msgstr ""
+msgstr "Myślę, że użytkownikom przydałoby się..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
 msgid "I think users will eventually need to..."
-msgstr ""
+msgstr "Myślę, że koniec końców użytkownicy będą potrzebować..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
 msgid ""
@@ -98003,10 +98107,14 @@ msgid ""
 "be written but never used, or that is considerably more complex to use and "
 "maintain than it needs to be."
 msgstr ""
+"Ogólnie uważa się to za zły nawyk, ponieważ próba rozwiązania problemów, "
+"które obecnie *właściwie nie istnieją*, często prowadzi do powstania kodu, "
+"który będzie napisany ale nigdy nie będzie użyty, lub który jest znacznie "
+"bardziej skomplikowany w użyciu i utrzymaniu niż powinien być."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
-msgstr ""
+msgstr "#3: Problem musi być złożony lub częsty"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
@@ -98015,12 +98123,19 @@ msgid ""
 "solve problems for you, so it helps you to make games better and faster, but "
 "it won't make the *entire game* for you. A line must be drawn somewhere."
 msgstr ""
+"Oprogramownaie jest zaprojektowane w celu rozwiązania problemów, ale nie "
+"możemy spodziewać się rozwiązania *każdego problemu, jaki tylko istnieje pod "
+"słońcem*. Godot, jako silnik gry, rozwiąże za Ciebie problemy, pomoże Ci "
+"więc robić gry lepiej i szybciej, ale nie zrobi *całej gry* za Ciebie. "
+"Gdzieś trzeba poprowadzić granicę."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:85
 msgid ""
 "Whether a problem is worth solving is determined by the difficulty the user "
 "has to work around it. This difficulty can be expressed as:"
 msgstr ""
+"To, czy problem jest warty rozwiązywania, określone jest przez trud, z jakim "
+"użytkownik musi nad nim pracować. Trud ten można wyrazić jako:"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
 msgid "The complexity of the problem"
@@ -98028,7 +98143,7 @@ msgstr "Złożoność problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
-msgstr "Częstotliwość pojawiania się problemu"
+msgstr "Częstotliwość występowania problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""
@@ -98037,6 +98152,11 @@ msgid ""
 "user to work around, offering such a solution is unnecessary and it's up to "
 "the user to do it."
 msgstr ""
+"Jeśli problem jest *zbyt złożony* do rozwiązania dla większości "
+"użytkowników, to oprogramownaie musi oferować przygotowane na niego "
+"rozwiązanie. Podobnie, jeśli problem jest dla użytkowników łatwy do "
+"obejścia, oferowanie takiego rozwiązania jest niepotrzebne i to do "
+"użytkownika należy jego opracowanie."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:96
 msgid ""
@@ -98045,6 +98165,10 @@ msgid ""
 "an annoyance. In this case, the software must offer a solution to simplify "
 "this use case."
 msgstr ""
+"Wyjątkiem jest jednak, kiedy użytkownik natyka się na ten problem *na tyle "
+"często*, że konieczność robienia za każdym razem prostego rozwiązania staje "
+"się irytująca. W tym wypadku, oprogramowanie musi oferować rozwiązanie do "
+"uproszczenia tego przypadku użycia."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:100
 msgid ""
@@ -98053,10 +98177,14 @@ msgid ""
 "difficult. This is why discussing with other developers (next point) is "
 "always advised."
 msgstr ""
+"Z naszego doświadczenia, w większości przypadków rozróżnienie, kiedy problem "
+"jest złożony lub częsty jest oczywiste, ale mogą powstać przypadki, "
+"w których poprowadzenie tej linii jest trudne. To dlatego zawsze zaleca się "
+"dyskusje z innymi deweloperami (następny punkt)."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
-msgstr ""
+msgstr "#4: Rozwiązanie musi być przedyskutowane z innymi"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""
@@ -98064,6 +98192,9 @@ msgid ""
 "immersed in their project, so they will naturally try to solve the problem "
 "from their perspective, thinking only about their use case."
 msgstr ""
+"To częsty przypadek, że kiedy użytkownicy natykają się na problemy, są "
+"zanurzeni tylko w swoim projekcie, więc naturalnie próbują rozwiązać ten "
+"problem ze swojej perspektywy, myśląc wyłącznie o swoim przypadku użycia."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:111
 msgid ""
@@ -98071,6 +98202,9 @@ msgid ""
 "cases that developers are often aware of, so they are often biased towards "
 "their own requirements."
 msgstr ""
+"Z tego powodu, rozwiązania zaproponowane przez użytkownika nie zawsze biorą "
+"pod uwagę inne przypadki wykorzystania, których inni deweloperzy są "
+"świadomi, więc często są stronniczy na rzecz swoich własnych wymagań."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:117
 msgid ""
@@ -98080,6 +98214,11 @@ msgid ""
 "that applies to a wider range of known problems, and leave the rest of the "
 "solution up to the user."
 msgstr ""
+"Dla deweloperów, perspektywa jest inna. Mogą uważać problem użytkownika za "
+"zbyt wyjątkowy, by uzasadnić rozwiązanie (zamiast obejścia przez "
+"użytkownika), albo może zasugerują częściowe (zazwyczaj prostsze lub na "
+"niższym poziomie) rozwiązanie, które ma zastosowanie do szerszego zakresu "
+"znanych problemów, a resztę rozwiązania pozostawią użytkownikowi."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:123
 msgid ""
@@ -98087,6 +98226,9 @@ msgid ""
 "the actual problems with the other developers or contributors, so a better "
 "agreement on implementation can be reached."
 msgstr ""
+"W każdym przypadku, przed porwaniem się na wsparcie, ważne jest, aby "
+"przedyskutować rzeczywiste problemy z innymi deweloperami lub wspierającymi, "
+"dzięki czemu można osiągnąć lepsze porozumienie w sprawie implementacji."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:127
 msgid ""
@@ -98094,6 +98236,10 @@ msgid ""
 "(agreed by the other contributors), who talks to users directly and has the "
 "most knowledge to implement a solution directly."
 msgstr ""
+"Jedyny wyjątek, w tym przypadku, jest wtedy, kiedy jakiś obszar kodu ma "
+"wyraźnego właściciela (uzgodnionego przez innych wspierających), który "
+"rozmawia bezpośrednio z użytkownikami i ma największą wiedzę, aby "
+"bezpośrednio zaimplementować rozwiązanie."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:131
 msgid ""
@@ -98102,10 +98248,14 @@ msgid ""
 "may not be accepted if they make something too difficult to use or if they "
 "add too much complexity to the codebase."
 msgstr ""
+"Filozofią Godota jest, również, faworyzować łatwość użycia i utrzymania "
+"ponad absolutną wydajność. Optymalizacje wydajności będą wzięte pod uwagę, "
+"ale nie mogą być zaakceptowane, jeśli czynią coś zbyt trudnym w użyciu lub "
+"dodają zbyt dużo zawiłości do bazy kodu."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:137
 msgid "#5: To each problem, its own solution"
-msgstr ""
+msgstr "#5: Do każdego problemu, jego własne rozwiązanie"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:139
 msgid ""

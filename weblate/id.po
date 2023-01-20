@@ -4,6 +4,7 @@
 #
 # Abid Febriansyah <abid.febri027@gmail.com>, 2020.
 # Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020-2021.
+# adfriz <aditiyaafrizal2@gmail.com>, 2023.
 # Alficiro <alfiboy2003@gmail.com>, 2019, 2021.
 # Azizkhasyi 11 <azizkhasyi11@gmail.com>, 2021.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
@@ -21,7 +22,8 @@
 # Hanz <hanzhaxors@gmail.com>, 2021.
 # Helmi Hibatullah <helmihibatullah393@gmail.com>, 2022.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
-# Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>, 2021.
+# Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>, 2021, 2023.
+# ilkompendek <aryantid.cs@gmail.com>, 2022.
 # Jacque Fresco <aidter@use.startmail.com>, 2021.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
@@ -48,8 +50,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2022-09-09 16:03+0200\n"
-"PO-Revision-Date: 2022-07-31 18:34+0000\n"
-"Last-Translator: ProgrammerIndonesia 44 <elo.jhy@gmail.com>\n"
+"PO-Revision-Date: 2023-01-17 13:54+0000\n"
+"Last-Translator: Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -57,7 +59,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: ../../docs/index.rst:64
 msgid "General"
@@ -89,9 +91,8 @@ msgid "Class reference"
 msgstr "Referensi Kelas"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Dokumentasi Godot – cabang *3.4*"
+msgstr "Dokumentasi Godot – Versi *3.5*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -102,17 +103,16 @@ msgstr ""
 "\"Baca Dokumen\" di bagian bawah bilah sisi untuk melihat daftar."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the 3.5 branch. Looking for the documentation "
 "of the current **development** branch? `Have a look here <https://docs."
 "godotengine.org/en/latest>`_. You can also browse the documentation for the "
 "current stable `3.4 <https://docs.godotengine.org/en/3.4>`_ branch."
 msgstr ""
-"Ini adalah dokumentasi untuk cabang 3.4 stabil. Mencari dokumentasi cabang "
+"Ini adalah dokumentasi untuk rilis 3.5. Sedang mencari dokumentasi rilis "
 "**pengembangan** saat ini? `Lihat di sini <https://docs.godotengine.org/en/"
-"latest>`_. Anda juga dapat menelusuri dokumentasi untuk cabang `3.3 <https://"
-"docs.godotengine.org/en/3.3>`_ stabil saat ini."
+"latest>`_. Anda juga dapat mengunjungi dokumentasi untuk rilis `3.4 <https://"
+"docs.godotengine.org/en/3.3>`_ saat ini."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -206,7 +206,7 @@ msgid ""
 "talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_!"
 msgstr ""
-"Sampaikan isu atau permintaan pull request di `repositori GitHub <https://"
+"Sampaikan isu atau permintaan penarikan di `repositori GitHub <https://"
 "github.com/godotengine/godot-docs/issues>`_, bantu kami `menerjemahkan "
 "dokumentasi <https://hosted.weblate.org/engage/godot-engine/>`_ ke bahasa "
 "Anda, atau diskusikan dengan kami di ``#documentation`` channel `Godot "
@@ -648,8 +648,8 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Untuk informasi lebih detail, sialhkan lihat `COPYRIGHT.txt <https://github."
-"com/godotengine/godot/blob/master/COPYRIGHT.txt>`_ lalu  `LICENSE.txt "
+"Untuk informasi lebih detail, silakan lihat `COPYRIGHT.txt <https://github."
+"com/godotengine/godot/blob/master/COPYRIGHT.txt>`_ lalu `LICENSE.txt "
 "<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ dan "
 "`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
 "LOGO_LICENSE.md>`_ di repositori Godot."
@@ -706,7 +706,6 @@ msgid ":ref:`Web <doc_using_the_web_editor>`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
 msgstr "Android"
 
@@ -796,8 +795,8 @@ msgid ""
 msgstr ""
 "Jika baru mulai belajar baik itu Godot atau game development secara umum, "
 "GDScript adalah bahasa yang direkomendasikan untuk dipelajari dan digunakan "
-"karena murni untuk Godot.  Meskipun scripting language memiliki performa "
-"yang lebih rendah di bandingkan bahasa tingkat rendah (C/C++), namun untuk "
+"karena murni untuk Godot. Meskipun scripting language memiliki performa yang "
+"lebih rendah di bandingkan bahasa tingkat rendah (C/C++), namun untuk "
 "prototyping, mengembangkan Minimum Viable Products (MVP), dan fokus mengejar "
 "Time-To-Market(TTM), GDScript akan memberikan jalur yang lebih cepat, "
 "bersahabat, dan cakap untuk mengembangkan game."
@@ -818,7 +817,7 @@ msgstr ""
 "baru yang muncul, namun karena ini adalah project open-source, kami "
 "merekomendasikan Anda untuk mencoba mencari solusinya sendiri terlebih "
 "dahulu. Pencarian di forum diskusi pada bagian open issues <https://github."
-"com/godotengine/godot/issues>`_  di Github bisa menjadi cara terbaik untuk "
+"com/godotengine/godot/issues>`_ di Github bisa menjadi cara terbaik untuk "
 "memulai troubleshooting."
 
 #: ../../docs/about/faq.rst:87
@@ -832,12 +831,12 @@ msgstr ""
 "Untuk bahasa pemrograman lain, dukungan bisa diadakan via pihak ketiga "
 "dengan fasilitas GDNative / NativeScript / PluginScript. (Lihat pertanyaan "
 "tentang plugin dibawah.) hal ini sedang dalam pengerjaan, contohnya, pada "
-"unofficial binding untuk Godot ke  `Python <https://github.com/touilleMan/"
+"unofficial binding untuk Godot ke `Python <https://github.com/touilleMan/"
 "godot-python>`_ dan `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:95
 msgid "What is GDScript and why should I use it?"
-msgstr "Apa itu GDScript dan kenapa saya ingin menggunakanya?"
+msgstr "Apa itu GDScript dan kenapa saya harus menggunakanya?"
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -849,13 +848,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
-"GDScript adalah bahasa scripting terintegritas milik Godot. bahasa ini "
+"GDScript adalah bahasa scripting terintegritasi milik Godot. bahasa ini "
 "dibangun dari awal untuk memaksimalkan potensi yang dimiliki Godot dengan "
 "pengkodean yang minimal, memungkinkan developer pemula dan ahli untuk "
 "mempergunakan kemapuan Godot secepat mungkin. jika anda pernah menulis "
 "apapun dalam bahasa seperti Python anda akan mudah terbiasa dengan GDScript. "
 "cek disini `GDScript scripting guide <gdscript_basics>`_ untuk contoh, "
-"sejarah, dan  gambaran tentang apa yang disediakan oleh GDScript,."
+"sejarah, dan gambaran tentang apa yang disediakan oleh GDScript,."
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -1001,8 +1000,9 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Sulitnya untuk megintegrasikan code editor agar menyediakan code completion, "
-"live editing, dll (semuanya itu). Hal ini didukung dengan baik oleh GDScript"
+"Sulitnya untuk mengintegrasikan code editor agar menyediakan code "
+"completion, live editing, dll (semuanya itu). Hal ini didukung dengan baik "
+"oleh GDScript."
 
 #: ../../docs/about/faq.rst:155
 msgid "GDScript was designed to curtail the issues above, and more."
@@ -1108,12 +1108,19 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Karena kamu tidak perlu menginstall Godot pada sistem mu, integrasi desktop "
+"tidak dilakukan secara otomatis. Ada dua cara untuk menyelesaikan ini. Kamu "
+"bisa menginstall Godot dari `Steam <https://store.steampowered.com/"
+"app/404790/Godot_Engine/>`__ (semua platforms), `Scoop <https://scoop.sh/"
+">`__ (Windows), `Homebrew <https://brew.sh/>`__ (macOS) or `Flathub <https://"
+"flathub.org/apps/details/org.godotengine.Godot>`__ (Linux). Cara ini akan "
+"melakukan langkah-langkah instalasi yang dibutuhkan untuk integrasi desktop."
 
 #: ../../docs/about/faq.rst:199
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
-msgstr ""
+msgstr "Atau, kamu bisa menginstall secara manual melalui installer:"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -1121,10 +1128,13 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Letakkan Godot.exe ke lokasi yang kamu inginkan (contoh, selain folder "
+"Downloads), sehingga kamu tidak memindahkan atau menghapus Godot secara "
+"tidak sengaja."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
-msgstr ""
+msgstr "Klik-kanan Godot.exe dan pilih **Buat Shortcut**."
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1133,6 +1143,11 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Pindahkan `shortcut yang telah dibuat ke ``%LOCALAPPDATA%"
+"\\Microsoft\\Windows\\Start Menu\\Programs``. Lokasi ini adalah lokasi file "
+"`shortcut, yang akan muncul di Start Menu, berada. Kamu juga bisa memasang "
+"Godot di `taskbar dengan meng-klik kanan file aplikasi dan pilih **Pin to "
+"Task Bar**."
 
 #: ../../docs/about/faq.rst:215
 msgid ""
@@ -1140,6 +1155,9 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Taruh aplikasi Godot yang sudah di-ekstrak ke ``/Applications/Godot.app`` "
+"Lalu, taruh ke Dock jika diinginkan. Spotlight bisa menemukan Godot selama "
+"berada di ``/Applications`` atau ``~/Applications``."
 
 #: ../../docs/about/faq.rst:220
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
@@ -1152,6 +1170,9 @@ msgid ""
 "folder), so you don't accidentally move it and break the shortcut in the "
 "future."
 msgstr ""
+"Pindahkan binari Godot ke lokasi stabil (misal diluar folder Downloads), "
+"agar tidak terjadi ketidaksengajaan saat memindahkan dan merusak jalan "
+"pintas di masa mendatang."
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -1371,7 +1392,7 @@ msgstr ""
 "memiliki aset yang sama pada resolusi yang berbeda adalah ide yang baik, "
 "jadi banyak yang mengikuti jalan tersebut. Awalnya hal tersebut bekerja pada "
 "suatu titik tertentu dan hanya perangkat Apple, tetapi kemudian perangkat "
-"Android dan Apple dengan resolusi dan aspek rasio yang berbeda diciptakan,  "
+"Android dan Apple dengan resolusi dan aspek rasio yang berbeda diciptakan, "
 "dengan jangkauan ukuran dan DPI yang sangat luas."
 
 #: ../../docs/about/faq.rst:326
@@ -1381,10 +1402,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"Cara yang paling umum dan tepat untuk mencapai ini  adalah, sebagai "
-"gantinya, gunakan satu resolusi dasar untuk gim dan hanya tangani resolusi "
-"dan aspek rasio yang berbeda. Hal ini sangat diperlukan untuk 2D, karena "
-"dalam 3D itu hanya masalah dari XFov atau YFov Kamera."
+"Cara yang paling umum dan tepat untuk mencapai ini adalah, gunakan satu "
+"resolusi dasar untuk gim dan hanya tangani resolusi dan aspek rasio yang "
+"berbeda. Hal ini sangat diperlukan untuk 2D, karena dalam 3D itu hanya "
+"masalah dari XFov atau YFov Kamera."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
@@ -66449,12 +66470,17 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
+"Node data berurusan dengan segala macam akses ke informasi. Informasi apa "
+"pun di Godot diakses melalui node-node ini, jadi mereka adalah beberapa yang "
+"paling penting untuk digunakan dan cukup beragam."
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
 msgstr ""
+"Ada banyak jenis nodes yang menarik di sini, jadi penjelasan singkatnya akan "
+"menyusul:"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
@@ -66467,10 +66493,14 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
+"Action node sangat penting ketika berhadapan dengan input dari perangkat. "
+"Anda dapat membaca lebih lanjut tentang action di (@TODO ACTION TUTE LINK). "
+"Dalam contoh di bawah ini, kontrol dipindahkan ke kanan ketika aksi "
+"\"move_right\" ditekan."
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr ""
+msgstr "Engine Singleton"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -66540,6 +66570,9 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTree memungkinkan untuk banyak hal tingkat rendah, seperti mengatur "
+"opsi peregangan, memanggil grup, membuat timer, atau bahkan memuat scene "
+"lain. Ini adalah Class yang bagus untuk membiasakan diri."
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
